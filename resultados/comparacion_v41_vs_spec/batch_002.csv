@@ -1,0 +1,31 @@
+mapping_id,claim_a_id,claim_b_id,categoria,contradiccion_interna,confianza,cita_v41,ubicacion_v41,cita_spec,ubicacion_spec,accion_propuesta,locus_objetivo,observaciones
+M-00031,CA-00491,CB-00119,COMPATIBLE_NO_EDIT,false,media,The following requirements apply to all YMYL pages:,body[436,"When Q4 includes 'Bajar de peso', a YMYL health disclaimer modal is shown before rendering the result, with the medical reviewer signature. Q4 = 'Mejorar mi est",spec §3.2,No change to Rule 14 YMYL prose; trigger now Q4=Bajar de peso,Rule 14,YMYL content rules preserved (§6 Part4 Rules1-15)
+M-00032,CA-00493,,COMPATIBLE_NO_EDIT,false,baja,"Health disclaimer - before recommendations are shown, the user must see a disclaimer stating that the information is orientational and does not substitute a medical consultation.",body[438,,,No change identified,(general),flagged questionnaire-adjacent; no edit
+M-00033,CA-00501,,COMPATIBLE_NO_EDIT,false,media,User acquisition and routing,body[446]/Heading4,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00034,CA-00502,,COMPATIBLE_NO_EDIT,false,media,Rule 15 - Mapping search queries to pages,body[447,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00035,CA-00503,,COMPATIBLE_NO_EDIT,false,media,"When a user runs a search engine query related to Sports World, the site must take them to the page that best answers that query.",body[448,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00036,CA-00504,,COMPATIBLE_NO_EDIT,false,media,Query type,table@body[450]/r[0]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00037,CA-00505,,COMPATIBLE_NO_EDIT,false,media,Examples,table@body[450]/r[0]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00038,CA-00506,,COMPATIBLE_NO_EDIT,false,media,Landing page,table@body[450]/r[0]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00039,CA-00507,,COMPATIBLE_NO_EDIT,false,media,Pure brand search,table@body[450]/r[2]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00040,CA-00508,,COMPATIBLE_NO_EDIT,false,media,"sports world,( sports world mexico)",table@body[450]/r[2]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00041,CA-00509,,COMPATIBLE_NO_EDIT,false,media,Home,table@body[450]/r[2]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00042,CA-00510,,COMPATIBLE_NO_EDIT,false,media,Brand + specific,table@body[450]/r[3]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00043,CA-00511,,COMPATIBLE_NO_EDIT,false,media,"sports world polanco,",table@body[450]/r[3]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00044,CA-00512,,COMPATIBLE_NO_EDIT,false,media,The specific club's page,table@body[450]/r[3]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00045,CA-00513,,COMPATIBLE_NO_EDIT,false,media,location,table@body[450]/r[4]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00046,CA-00514,,COMPATIBLE_NO_EDIT,false,media,sports world antara,table@body[450]/r[4]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00047,CA-00515,,COMPATIBLE_NO_EDIT,false,media,Gym near me,table@body[450]/r[5]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00048,CA-00516,,COMPATIBLE_NO_EDIT,false,media,"gimnasio cerca de mi,",table@body[450]/r[5]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00049,CA-00517,,COMPATIBLE_NO_EDIT,false,media,Closest club via geolocation,table@body[450]/r[5]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00050,CA-00518,,COMPATIBLE_NO_EDIT,false,media,If location,table@body[450]/r[5]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00051,CA-00519,,COMPATIBLE_NO_EDIT,false,media,gimnasio polanco,table@body[450]/r[6]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00052,CA-00520,,COMPATIBLE_NO_EDIT,false,media,"cannot be detected, lands on Home with the",table@body[450]/r[6]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00053,CA-00521,,COMPATIBLE_NO_EDIT,false,media,club-search flow already open.,table@body[450]/r[7]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00054,CA-00522,,COMPATIBLE_NO_EDIT,false,media,Amenity+location,table@body[450]/r[9]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00055,CA-00523,,COMPATIBLE_NO_EDIT,false,media,"alberca cdmx ,(yoga estudio",table@body[450]/r[9]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00056,CA-00524,,COMPATIBLE_NO_EDIT,false,media,Theamenityhub,table@body[450]/r[9]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00057,CA-00525,,COMPATIBLE_NO_EDIT,false,media,polanco),table@body[450]/r[11]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00058,CA-00526,,COMPATIBLE_NO_EDIT,false,media,Specific class,table@body[450]/r[12]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00059,CA-00527,,COMPATIBLE_NO_EDIT,false,media,"body pump , spinning cdmx ,",table@body[450]/r[12]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00060,CA-00528,,COMPATIBLE_NO_EDIT,false,media,That class's page,table@body[450]/r[12]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes

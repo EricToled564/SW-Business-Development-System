@@ -1,0 +1,31 @@
+mapping_id,claim_a_id,claim_b_id,categoria,contradiccion_interna,confianza,cita_v41,ubicacion_v41,cita_spec,ubicacion_spec,accion_propuesta,locus_objetivo,observaciones
+M-00061,CA-00529,,COMPATIBLE_NO_EDIT,false,media,pilates reformer,table@body[450]/r[13]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00062,CA-00530,,COMPATIBLE_NO_EDIT,false,media,Personal goal,table@body[450]/r[15]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00063,CA-00531,,COMPATIBLE_NO_EDIT,false,media,"tonificar ,( ganar masa",table@body[450]/r[15]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00064,CA-00532,,COMPATIBLE_NO_EDIT,false,media,Corresponding goal hub,table@body[450]/r[15]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00065,CA-00533,,COMPATIBLE_NO_EDIT,false,media,muscular1(primeros pasos en,table@body[450]/r[16]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00066,CA-00534,,COMPATIBLE_NO_EDIT,false,media,el gym),table@body[450]/r[17]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00067,CA-00535,,COMPATIBLE_NO_EDIT,false,media,Weight loss,table@body[450]/r[19]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00068,CA-00536,,COMPATIBLE_NO_EDIT,false,media,"bajar de peso,( perder peso",table@body[450]/r[19]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00069,CA-00537,,COMPATIBLE_NO_EDIT,false,media,Bajar de peso hub,table@body[450]/r[19]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00070,CA-00538,,COMPATIBLE_NO_EDIT,false,media,gym1(GLP-1 ozempic,table@body[450]/r[20]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00071,CA-00539,,COMPATIBLE_NO_EDIT,false,media,gimnasio),table@body[450]/r[21]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00072,CA-00540,,COMPATIBLE_NO_EDIT,false,media,Rehabilitation,table@body[450]/r[23]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00073,CA-00541,,COMPATIBLE_NO_EDIT,false,media,(rehabilitaci6n rodilla,table@body[450]/r[23]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00074,CA-00542,,COMPATIBLE_NO_EDIT,false,media,Rehabilitation hub,table@body[450]/r[23]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00075,CA-00543,,COMPATIBLE_NO_EDIT,false,media,gym1 ejercicio post lesion,table@body[450]/r[24]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00076,CA-00544,,COMPATIBLE_NO_EDIT,false,media,Children/ family,table@body[450]/r[25]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00077,CA-00545,,COMPATIBLE_NO_EDIT,false,media,"gimnasio para ninos,",table@body[450]/r[25]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00078,CA-00546,,COMPATIBLE_NO_EDIT,false,media,FitKidz,table@body[450]/r[25]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00079,CA-00547,,COMPATIBLE_NO_EDIT,false,media,"actividades familia,",table@body[450]/r[26]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00080,CA-00548,,COMPATIBLE_NO_EDIT,false,media,FitKidz,table@body[450]/r[27]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00081,CA-00549,,COMPATIBLE_NO_EDIT,false,media,Personal Training,table@body[450]/r[28]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00082,CA-00550,,COMPATIBLE_NO_EDIT,false,media,"entrenador personal,",table@body[450]/r[28]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00083,CA-00551,,COMPATIBLE_NO_EDIT,false,media,Personal Training,table@body[450]/r[28]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00084,CA-00552,,COMPATIBLE_NO_EDIT,false,media,personal trainer cdmx,table@body[450]/r[29]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00085,CA-00553,,COMPATIBLE_NO_EDIT,false,media,Pricing and,table@body[450]/r[30]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00086,CA-00554,,COMPATIBLE_NO_EDIT,false,media,"precio sports world,",table@body[450]/r[30]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00087,CA-00555,,COMPATIBLE_NO_EDIT,false,media,Memberships hub,table@body[450]/r[30]/c[2,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00088,CA-00556,,COMPATIBLE_NO_EDIT,false,media,memberships,table@body[450]/r[31]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00089,CA-00557,,COMPATIBLE_NO_EDIT,false,media,uniclub vs allclub,table@body[450]/r[31]/c[1,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
+M-00090,CA-00558,,COMPATIBLE_NO_EDIT,false,media,Fitness information,table@body[450]/r[32]/c[0,,,No change; general routing prose unaffected,Rule 16/17,prose not tied to specific codes
