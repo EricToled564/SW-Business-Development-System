@@ -26,3 +26,9 @@ def cell_set_text(tc, text):
     ps=tc.findall(W+'p')
     for p in ps[1:]: tc.remove(p)
     set_para_text(ps[0], text)
+
+def strip_drawings(p):
+    MC='{http://schemas.openxmlformats.org/markup-compatibility/2006}'
+    for r in p.findall(W+'r'):
+        if r.find(W+'drawing') is not None or r.find(MC+'AlternateContent') is not None:
+            p.remove(r)
