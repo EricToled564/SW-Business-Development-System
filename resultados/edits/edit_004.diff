@@ -1,0 +1,6 @@
+510,511c510,511
+< Pt (goal) > P9 (location) > P4 (movement type)
+< Concretely: for the example query, the user lands on the (Bajar de peso) hub (Pl wins) with P9 pre-filled to(Polanco). P4 is not pre-filled because the goal-driven landing overrides the class-driven landing.
+---
+> Q4 (goal) > Q16 (location) > class-driven goal pre-mark (the movement-aligned goal inferred from a class search)
+> Concretely: for the example query, the user lands on the Bajar de peso hub (Q4 wins) with Q16 pre-filled to Polanco. The class-driven goal pre-mark is not applied because the goal-driven landing overrides the class-driven landing.
