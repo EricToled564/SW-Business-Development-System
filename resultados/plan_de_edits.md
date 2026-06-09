@@ -85,3 +85,11 @@ Derived from CONSOLIDADO. One git commit per edit (Phase 6). Order is execution 
 
 ## Sections that stay byte-identical (verified in Phase 7)
 Part 1, Part 2, Part 3 (except new pages/subsection), Part 4 Rules 1-15 & 22-31 (text) & 34-37, Part 5 (non-questionnaire cells), Part 6 (except abandon mid-flow & YMYL), Appendix A, Appendix B, Appendix C (pending Decision A), Appendix D (other code systems).
+
+## E16 — Appendix C glossary (Decision A)
+- **Action:** Rewrite 9 questionnaire-stale terms to v4.2 (Q-codes / 16+3 counts); add new terms (LISS/MICT/HIIT/SIT, individual-training subgroup, gender concordance, XOR, Estética corporal). Other ~98 entries untouched.
+- **Source mappings:** 17 (REQUIERE_REEMPLAZO + NUEVA)
+
+## E17 — Appendix D closing line (Decision B)
+- **Action:** "End of UX Specification v4.1. Confidential." → "End of UX Specification v4.2. Confidential."
+- **Source mappings:** 1
