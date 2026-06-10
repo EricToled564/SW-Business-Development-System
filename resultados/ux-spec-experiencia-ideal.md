@@ -128,7 +128,7 @@ flowchart TD
 ### 4.2 Cuestionario (`questionnaire`, Q1–Q19)
 
 - **Propósito:** cualificar y personalizar; recolectar los datos del lead.
-- **Estructura:** 16 preguntas base **Q1–Q16** (de las cuales **Q11** es condicional por pausa, dentro del set base) + condicionales **Q12b** (embarazo/posparto, si Q2=Mujer) y **Q14b** (hijos <12) + optativas del path de peso **Q17–Q19**. Total real **14–21** según ruta (ver tabla normativa de conteo en la Parte Técnica).
+- **Estructura:** 16 preguntas base **Q1–Q16** (de las cuales **Q11** es condicional por pausa, dentro del set base) + condicionales **Q12b** (embarazo/posparto, si Q2=Mujer) y **Q14b** (hijos <12) + optativas del path de peso **Q17–Q19**. Total real **14–21** según ruta (la **tabla normativa de conteo por ruta** queda **pendiente** de resolver C5 contigo — Fase 3).
 - **Un paso por pantalla**, barra de progreso, botón "Continuar" deshabilitado hasta responder.
 - **Estados interactivos:** opción `default / hover / focus-visible / selected / disabled`; botón `default / hover / active / disabled / loading`.
 - **Validación inline (en tiempo real):**
