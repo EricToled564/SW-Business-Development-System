@@ -63,3 +63,19 @@ Added the spec sections that were missing from the initial v4.2 build:
 - Appendix D: block flags, subgroup IDs, suppression reason codes, class-card slot IDs; rule range bumped to Rule 1-43.
 
 Non-modification (§10) preserved: 60 baseline sections remain byte-identical.
+
+## v6 alignment to demo (Addendum v6, full alignment)
+
+Aligned the document to sw_experiencia_ideal_demo_v6_FINAL.jsx (the declared source of truth):
+- Questionnaire: Q3 reworded, Q4 → 6 goals, Q5 reordered, Q12 drops Embarazo, new Q12b (pregnancy/postpartum) + Q14b (kids<12), Q17 new options.
+- 6-goal subgroup model: Q4→subgroup mapping and Block 2 cardio presentation rewritten to demo accessible copy; Block 1 = six accessible names; ACSM detail kept as internal protocol reference.
+- Brand Voice: 19 banned technical terms + accessible replacements + verbatim LLM system-prompt prohibitions and YMYL restrictions.
+- YMYL: Rule 14b contraindications matrix (5 conditions, Q12/Q12b/Q17 mapping, 25-class hard filter, GLP-1 info exception, Otra/Otro advisor message, research basis).
+- Contact-capture step (Rule 32b) + LFPDPPP privacy coverage (Appendix A).
+- Appendix G (Advisor Brief) + Appendix H (single LLM call schema, adaptive YMYL context, recursive sanitization).
+- Appendix F: client visual architecture, contextual safety copy, rejected elements, FitKidz three-state (40-club flag), two-page split + print CSS.
+- Appendix D: Q12b/Q14b sub-codes, contraindication keys, contact fields, flow phases, advisor-brief LLM keys, FitKidz flag.
+
+Mandatory Part B cross-section audit: resultados/v6_cross_section_audit.md.
+Flagged for Eric (not auto-invented): F.1 ambiguous goal-name remap (Ganar fuerza, Mejorar condición y aguante); F.2 aerobic ACSM taxonomy purge vs keep-as-internal; F.3 14 ficha why-rewrites (no doc locus, Bucket 1).
+§10: 59 sections byte-identical; only new protected change = Appendix A/Rule 36, authorized by Addendum §7.1/§12.
