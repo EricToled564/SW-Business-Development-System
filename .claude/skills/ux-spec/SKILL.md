@@ -1,6 +1,6 @@
 ---
 name: ux-spec
-description: Genera documentos de especificaciones de Experiencia de Usuario (UX specs) completos y estandarizados. Úsalo cuando el usuario pida crear, redactar o estructurar un "UX spec", "documento de especificaciones UX", "spec de pantalla", "handoff de diseño", "design rationale" o documentación de diseño para una funcionalidad/pantalla/flujo. Especializado además en specs orientados a captación de leads cualificados (lead capture) para gimnasios premium y productos de conversión.
+description: Genera documentos de especificaciones de Experiencia de Usuario (UX specs) completos y estandarizados. Usa este skill siempre que el usuario quiera crear, redactar, estructurar o mejorar un "UX spec", "documento de especificaciones UX", "spec de pantalla", "handoff de diseño", "design rationale", o documentar la experiencia/flujo/pantalla de una funcionalidad — aunque no diga literalmente "UX spec". Cubre también specs de captación de leads cualificados (lead capture, formularios, landing de conversión, calculadoras interactivas, bots de cualificación), en particular para gimnasios premium. No lo uses para implementar código de UI ni para diseño puramente visual sin documentación.
 ---
 
 # Generador de Documentos de Especificaciones UX

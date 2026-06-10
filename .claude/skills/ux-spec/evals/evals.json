@@ -1,0 +1,29 @@
+{
+  "skill_name": "ux-spec",
+  "evals": [
+    {
+      "id": 0,
+      "name": "gym-lead-capture-landing",
+      "prompt": "Estamos lanzando la nueva landing de captación de leads para nuestra red de gimnasios premium 'IronClub'. La página tiene un hero con foto de las instalaciones, un formulario de contacto, una 'Calculadora de Objetivos Fitness' interactiva y un bot que califica leads 24/7. El objetivo es subir los leads cualificados un 25% este trimestre. Necesito el documento de especificaciones UX completo para pasárselo a desarrollo. Stack: React + Tailwind.",
+      "expected_output": "Un documento markdown de UX spec que incluya: design rationale con cadena por-qué/quién/qué/cómo y meta SMART, persona/journey, perfilado progresivo, lógica de la calculadora (árbol de decisión), lead scoring/enrutamiento, directrices del bot (CUI), matriz de edge cases, accesibilidad WCAG/POUR, tokens, validación inline y componentes para A/B testing.",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 1,
+      "name": "general-checkout-screen-spec",
+      "prompt": "Necesito documentar la experiencia de la pantalla de checkout (pago) de nuestra tienda online antes de pasarla a los ingenieros. Quiero que quede claro el comportamiento ante errores de pago y carritos vacíos. ¿Me ayudas a redactar la especificación?",
+      "expected_output": "Un UX spec de pantalla general con design rationale, especificación por componente con dimensiones precisas y estados interactivos, una matriz de edge cases (carrito vacío, error de pago, etc.), accesibilidad POUR, validación de entrada y criterios de aceptación.",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 2,
+      "name": "design-md-for-ai-agents",
+      "prompt": "Quiero un spec de diseño para la pantalla de onboarding de nuestra app, pero en un formato que pueda leer un agente de IA que genera el código de UI, para que respete nuestros colores de marca y no alucine valores. ¿Cómo lo estructuro?",
+      "expected_output": "Un documento DESIGN.md con front matter YAML que contiene los design tokens (color, tipografía, espaciado, radios) y un cuerpo en markdown con la racionalidad/roles semánticos, además de reglas para el agente (p. ej. validación de contraste WCAG AA).",
+      "files": [],
+      "assertions": []
+    }
+  ]
+}
