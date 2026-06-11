@@ -1,0 +1,65 @@
+[
+ {
+  "id": "structure-10-sections-in-order",
+  "src_lang": "es",
+  "tgt_lang": "en",
+  "title": "Structure (10 sections, in order)",
+  "body": "| Section | Content | Source |\n| --- | --- | --- |\n| Client banner | \"Visita confirmada\" + \"{firstName}, te esperamos en {club}.\" + day · hour · address | Hardcoded (Q1 + club + appointment) |\n| Brief header | \"Brief de visita guiada · confidencial\" + \"{fullName} · Nivel {Q9}\" + chips (Q2, visita con hijos, preferencia alberca/piso/ambas) + date | Hardcoded |\n| §1 Perfil del lead | Grid 2×4: Objetivo (Q4[0]) · Motivación (Q3) · Experiencia deseada (Q6+Q13) · Disponibilidad (Q8+Q7) · Historial (Q10+Q11) · Ritmo (Q5) · Formato (Q13) · Salud (Q12+Q12b+Q17). Nota: \"Validar nivel e intensidad antes de recomendar una actividad.\" | Hardcoded |\n| §2 Logística de la cita | Club + Ubicación (distancia min) + Acompañantes | Hardcoded |\n| §3 Qué validar | 5 preguntas numeradas | LLM-generated |\n| §4 Ruta recomendada | 4 pasos numerados, título + 1 línea | LLM-generated |\n| §5 Propuesta recomendada | Oferta principal + complemento/alternativa | LLM-generated |\n| §6 Prioridades de cierre | 3 viñetas | LLM-generated |\n| §7 Notas y banderas | Lista de flags (ver abajo) + línea \"Experiencia ideal calculada\" | Hardcoded |\n| Guion de cierre sugerido | Quote box, primera persona | LLM-generated |\n| Registro del asesor / Footer | 4 cajas vacías (llena el asesor) + \"USO INTERNO · Datos declarados por el lead; validar antes de formular recomendaciones.\" | Hardcoded |"
+ },
+ {
+  "id": "7-notas-y-banderas-flag-logic",
+  "src_lang": "es",
+  "tgt_lang": "en",
+  "title": "§7 Notas y banderas — flag logic",
+  "body": "| Flag | Trigger | Severity | Copy template |\n| --- | --- | --- | --- |\n| FitKidz family | isFamily && hasKidsUnder12 | warn | Familia con hijos <12 → ofrecer demo de FitKidz en la visita. |\n| Principiante | Q9 = Principiante | warn | Nivel principiante. Tour del club obligatorio antes de cualquier sesión. |\n| Pausa | Q10 includes pausa | warn | Reactivación tras pausa. Recomendar primera sesión conservadora. |\n| Embarazo | Q12b = Sí, embarazada | warn | Embarazada. Clases con impacto/kicks/saltos ya filtradas. Validar trimestre y autorización médica. |\n| Posparto | Q12b = Sí, posparto reciente | warn | Posparto reciente. Clases con impacto/abdominal ya filtradas. Validar evolución con criterio clínico. |\n| Bariátrica | Q17 includes Cirugía bariátrica | warn | Cirugía bariátrica. Clases de alto impacto y carga pesada ya filtradas. Validar tiempo post-operatorio. |\n| GLP-1 | Q17 includes GLP-1 | info | En tratamiento GLP-1. Priorizar fuerza para preservar masa muscular. |\n| Condiciones específicas | Q12 has non-Ninguna items | warn | Condiciones declaradas: {list}. Validar autorización médica si aplica. |\n| Alberca note | resolver returned alberca_note | warn | the alberca_note string |\n| Solo formato | Q13 = Solo/Sola, a mi ritmo | info | Lead busca formato individual. No presionar venta de pack de clases grupales. |\n| Experiencia calculada | always | info | Experiencia ideal calculada: Bloque 1 — {subgrupo} · Bloque 2 — {máquina, duración} · Bloque 3 — {top2 OR Personal Training}. |\n\nSeverity drives style: warn = red ⚠ + black text; info = gray middot + gray text."
+ },
+ {
+  "id": "appendix-h-single-llm-call-schema-and-ymyl-aware-prompt",
+  "src_lang": "en",
+  "tgt_lang": "es",
+  "title": "Appendix H - Single LLM Call — Schema and YMYL-Aware Prompt",
+  "body": "One LLM call fires when the questionnaire completes and returns BOTH the client copy and the asesor-brief content. There are NOT separate calls. (Modelo y parámetros: `anexo-ingenieria-crm.md` R12.) The same call populates result.llm with all keys below."
+ },
+ {
+  "id": "output-json-schema-single-call",
+  "src_lang": "es",
+  "tgt_lang": "en",
+  "title": "Output JSON schema (single call)",
+  "body": "> Conforme al demo v6 (`callClaude`): estas claves coinciden con la implementación. El **flujo completo** (resolveBlocks Q6-aware, rankClasses, banderas, `stripQCodes`) está en «Flujo de aplicación del cuestionario». **Precedencia:** catálogos acordados (51 clases, cuestionario oficial).\n\n{\n\n\"hook\": \"máx 30 palabras, 1-2 frases\",\n\n\"plan_argument\": \"máx 45 palabras, por qué la combinación encaja, cierra con personalización\",\n\n\"intent_line\": \"máx 18 palabras, modo de acompañamiento + contexto de visita\",\n\n\"infrastructure_argument\": \"máx 55 palabras, SW como red de 49 clubes + club específico\",\n\n\"class_1_connector\": \"máx 15 palabras, empieza con 'Porque mencionaste que', cita respuesta — OMITIDO si no hay clases\",\n\n\"class_2_connector\": \"máx 15 palabras, distinto del 1 — OMITIDO si no hay clases\",\n\n\"validation_questions\": [\"exactamente 5 strings, máx 18 palabras c/u\"],\n\n\"visit_route\": [{\"title\":\"string\",\"description\":\"máx 18 palabras\"}, \"... (exactamente 4 objetos)\"],\n\n\"proposal\": {\"main\":\"máx 35 palabras\",\"complement\":\"máx 30 palabras\"},\n\n\"closing_priorities\": [\"exactamente 3 strings, máx 12 palabras c/u\"],\n\n\"closing_script\": \"máx 60 palabras, primera persona del asesor al lead\"\n\n}"
+ },
+ {
+  "id": "adaptive-context",
+  "src_lang": "en",
+  "tgt_lang": "es",
+  "title": "Adaptive context",
+  "body": "Before composing the user prompt, the backend builds flags from the answers: hasMedical, isPregnant, isPostpartum, onGLP1, onBariatric, isFamily, hasKids, isSolo, isPrincipiante, fromOtherGym, fromPause, fromSedentary, wantsAquatic, wantsDry. When hasMedical is true, the prompt appends a \"⚠ CONDICIONES MÉDICAS / TRATAMIENTOS DECLARADOS:\" block listing the specific conditions, with an explicit reminder that contraindicated classes are pre-filtered and the asesor handles individual block-protocol adjustment with clinical criterion. The verbatim system-prompt prohibitions are in Appendix E."
+ },
+ {
+  "id": "sanitization-and-fallback",
+  "src_lang": "en",
+  "tgt_lang": "es",
+  "title": "Sanitization and fallback",
+  "body": "A recursive sanitize() walks strings, arrays and nested objects to strip any leaked Q-codes from the LLM output. If the LLM returns malformed JSON or omits required keys, the BriefingScreen and the result page render with safe fallbacks (empty arrays / empty strings): the user-facing Experiencia Ideal page still renders its hardcoded sections without crashing. A separate banned-terms strip is not yet implemented (see open dependencies).\n\nEnd of UX Specification v4.2. Confidential."
+ },
+ {
+  "id": "intro-design",
+  "src_lang": "es",
+  "tgt_lang": "en",
+  "title": "(intro)",
+  "body": "---\nmeta:\n  product: \"Sports World — Experiencia Ideal\"\n  source: \"sw_experiencia_ideal_demo_v6_FINAL.jsx\"\n  lang: \"es-MX\"\ntokens:\n  color:\n    brand:\n      primary: \"#E6282A\"      # rojo de marca — SOLO fondos de botón/acento, NUNCA texto pequeño (no pasa AA)\n      primaryText: \"#C81E20\"  # variante oscura para TEXTO en rojo (~5.5:1 sobre blanco, AA)\n    text:\n      ink: \"#1D1D1B\"\n      muted: \"#6B6B68\"\n      disabled: \"#A8A8A6\"\n    border:\n      default: \"#E5E5E3\"\n    surface:\n      base: \"#F5F5F4\"\n      white: \"#FFFFFF\"\n    block:\n      strength: \"#EEF5FF\"     # Bloque 01 — pesas\n      cardio: \"#EDF8F1\"       # Bloque 02 — cardio\n      classes: \"#F3F4F6\"      # Bloque 03 — clases\n    cta:\n      bannerBg: \"#FFF4F4\"\n      bannerBorder: \"#F3B9BC\"\n    safety:\n      bg: \"#FFF6E7\"           # sección YMYL de seguridad\n  type:\n    fontFamily: \"'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\"\n    heading: { family: \"Montserrat\", weight: 900, lineHeight: 1.2 }\n    body: { family: \"Montserrat\", weight: 400, lineHeight: 1.5 }\n  space: { xs: 4, sm: 8, md: 16, lg: 24, xl: 40 }\n  radius: { sm: 4, md: 8, lg: 16 }\n  breakpoints: { mobile: 360, tablet: 768, laptop: 1024, desktop: 1440 }\ncontrast:\n  min_ratio_aa: 4.5\n  min_ratio_aa_large: 3.0\n  flagged:\n    - pair: \"brand.primary (#E6282A) on surface.white (#FFFFFF)\"\n      ratio: 4.47\n      rule: \"FALLA texto normal (<4.5). Solo válido en texto >=18.66px bold o >=24px, o como fondo.\"\n    - pair: \"brand.primary on surface.base (#F5F5F4)\"\n      ratio: 4.09\n      rule: \"FALLA. No usar rojo de texto sobre superficie base.\"\n    - pair: \"brand.primary on text.ink (#1D1D1B)\"\n      ratio: 3.78\n      rule: \"FALLA. Usar blanco o variante clara, no rojo.\"\n    - pair: \"white on brand.primary (#E6282A)\"\n      ratio: 4.47\n      rule: \"FALLA a 15px regular. El texto del boton debe ser >=18.66px bold.\"\n    - pair: \"brand.primaryText (#C81E20) on white\"\n      ratio: 5.5\n      rule: \"PASA AA. Esta es la variante a usar para CUALQUIER texto rojo.\"\n---"
+ },
+ {
+  "id": "filosof-a-de-dise-o-experiencia-ideal",
+  "src_lang": "es",
+  "tgt_lang": "en",
+  "title": "Filosofía de diseño — Experiencia Ideal",
+  "body": "El **primario** (`#E6282A`, rojo Sports World) es el color de **acción y conversión**.\nÚsalo solo como **fondo** de CTA (con texto blanco ≥18.66px bold).\n**Nunca** lo uses para texto pequeño: su contraste real es **4.47:1 sobre blanco**,\n**4.09:1 sobre la superficie base** y **3.78:1 sobre la card negra** — los tres\n**fallan** WCAG AA para texto normal. Para cualquier **texto** en rojo usa la\nvariante oscura **`#C81E20` (`brand.primaryText`, ~5.5:1, AA)**.\n\nLa **tinta** (`#1D1D1B`) es el texto principal; el **muted** (`#6B6B68`) es para\ntexto secundario y ayudas. El sistema es **claro y sobrio**: superficies casi\nblancas, mucho aire, y el rojo como única señal de \"haz clic aquí\".\n\nLos **tres bloques de color** traducen una idea: el entrenamiento tiene tres\ncomponentes, y cada uno tiene su propio espacio mental.\n- `block.strength` azul → pesas (Bloque 01).\n- `block.cardio` verde → cardio (Bloque 02).\n- `block.classes` gris → clases (Bloque 03).\nSon fondos suaves; el texto encima siempre es tinta `#1D1D1B`.\n\nEl **ámbar de seguridad** (`#FFF6E7`) marca la sección sensible (condiciones\nmédicas, embarazo, tratamientos). Siempre acompañado de icono \"!\" y texto:\nla información de seguridad **no se comunica solo con color**."
+ },
+ {
+  "id": "reglas-para-agentes-de-ia",
+  "src_lang": "es",
+  "tgt_lang": "en",
+  "title": "Reglas para agentes de IA",
+  "body": "- Antes de generar UI, valida cada par texto/fondo contra `contrast.min_ratio_aa`\n (4.5:1) o `min_ratio_aa_large` (3:1 para ≥ 24px o ≥ 18.66px bold).\n Si un par incumple, **interrumpe** y reporta en JSON `{ \"violacion\": \"<token> sobre <token>\", \"ratio\": <n> }`.\n- El **acento rojo** se reserva para acciones de conversión. No lo uses en texto.\n- Respeta la escala `space` (múltiplos de 4) y `radius`; no inventes valores intermedios.\n- Idioma fijo `es-MX`; aplica concordancia de género cuando Q2 = Mujer; si Q2 = \"Prefiero no mencionarlo\", usa el default masculino.\n- **Prohibido jerga técnica** en copy de cara al usuario (hipertrofia, Zone 2, HIIT,\n VO2max, RPE, 1RM, déficit calórico…). Usa lenguaje accesible\n (\"crecimiento muscular\", \"ritmo conversacional\", \"intervalos al máximo\").\n- Restricciones **YMYL**: con condición médica / embarazo / tratamiento, no\n diagnostiques ni prescribas intensidades; remite a la validación del Asesor.\n\n---"
+ }
+]
