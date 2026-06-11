@@ -376,7 +376,7 @@ Rules are numbered globally so they can be referenced unambiguously.
 |   |   | Adopted YMYL as canonical term. Refined cross-linking, schema markup, FitKidz IA, |
 |   |   | tap targets. Removed all references to employee photographs (visual-asset rules live in |
 |   |   | the partner brief). Added search-query precedence rule. Added stale-plan refresh and<br>explicit accessibility floor. |
-| 4.2 | Jun 2026 | Adaptive questionnaire redesigned: 10->16 base questions + 3 WL optionals + 1 conditional; new individual-training pages; Rule 38 added; hub Tonificar renamed to Estética corporal. |
+| 4.2 | Jun 2026 | Adaptive questionnaire redesigned: 10->16 base questions + 3 WL optionals + 3 conditionals (Q11, Q12b, Q14b); new individual-training pages; Rule 38 added; hub Tonificar renamed to Estética corporal. |
 
 
 ##### A note on language
@@ -1158,7 +1158,7 @@ The standard questionnaire collects 16 base questions, coded Q1 to Q16. Three ar
 | Q14 | ¿Con quién nos visitas en el club? | Single-select, required | Solo/Sola, es mi momento · Con mi amigo/a · Con mi pareja · Yo y mis hijos · La familia completa |
 | Q14b | ¿Uno o más de tus hijos tiene menos de 12 años? | Single-select, conditional (visible if Q14 = "Yo y mis hijos" or "La familia completa") | Sí · No |
 | Q15 | ¿Buscas el gimnasio cerca de tu casa o de tu trabajo? | Single-select, required | Cerca de mi casa · Cerca de mi trabajo · Ambos · No me importa |
-| Q16 | ¿Dónde queda? | Two fields, exactly one required (XOR) | Campo A: Código postal (5 dígitos numéricos) · Campo B: Colonia (texto libre). Al menos uno debe estar presente; ambos es aceptable. |
+| Q16 | ¿Dónde queda? | Two fields, at least one required (OR) | Campo A: Código postal (5 dígitos numéricos) · Campo B: Colonia con autocompletado SEPOMEX (devuelve CP + colonia + estado para desambiguar a escala nacional); texto libre solo como fallback (ver edge case 6.3). Al menos uno debe estar presente; ambos es aceptable. |
 
 Gender concordance (Q3, Q13, Q14). If Q2 = Mujer, render feminine forms ("Desconectada", "Renovada", "Confiada", "conmigo misma", "Sola", "Acompañada"). Otherwise the masculine default applies.
 
@@ -1479,7 +1479,7 @@ Every user who completes the questionnaire receives a combined personalized plan
 
 Each block is default ON. A block is set OFF only when an explicit suppression condition applies. The system is auditable: any reviewer can predict which blocks the user sees by reading their questionnaire answers.
 
-Block 1 (Pesas) suppression: Q6 = "En la alberca" (exclusive aquatic preference) sets it OFF. Q12 containing any condition flagged in the subgroup ficha as an absolute contraindication sets it OFF. Otherwise ON, with subgroup per the Q4 mapping in Part 3.
+Block 1 (Pesas) suppression: Q6 = "En la alberca" (exclusive aquatic preference) sets it OFF ONLY when the resolved ideal club has a pool; if the club has no pool, Block 1 stays ON (see edge case "aquatic preference but the ideal club has no pool"). Q12 containing any condition flagged in the subgroup ficha as an absolute contraindication sets it OFF. Otherwise ON, with subgroup per the Q4 mapping in Part 3.
 
 Block 2 (Aeróbico) suppression: a Q12 unstabilized cardiovascular condition without clearance restricts it to Cardio suave (LISS) only, or OFF. Otherwise ON, with subgroup per the Q4 mapping in Part 3 and user-facing presentation per Part 5.
 
@@ -1569,7 +1569,7 @@ No questionnaire·single-club city
 
 14 standard questions
 
-(10 if weight loss)
+(17 if weight loss)
 
 visita  guiada]
 
@@ -1592,11 +1592,11 @@ State
 
 14 standard questions
 
-(10 if weight loss)
+(17 if weight loss)
 
 14 standard questions
 
-(10 if weight loss)
+(17 if weight loss)
 
 Already complete
 
