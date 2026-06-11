@@ -7,7 +7,7 @@ tokens:
   color:
     brand:
       primary: "#E6282A"      # rojo de marca — SOLO fondos de botón/acento, NUNCA texto pequeño (no pasa AA)
-      primaryText: "#C81E20"  # variante oscura para TEXTO en rojo (~5.5:1 sobre blanco, AA) — usar esta en kickers/links
+      primaryText: "#C81E20"  # variante oscura para TEXTO en rojo (~5.5:1 sobre blanco, AA)
     text:
       ink: "#1D1D1B"
       muted: "#6B6B68"
@@ -27,30 +27,28 @@ tokens:
     safety:
       bg: "#FFF6E7"           # sección YMYL de seguridad
   type:
-    # Fuente única de verdad = Appendix F (Montserrat). Arial era un error de este YAML.
     fontFamily: "'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
-    heading: { family: "Montserrat", weight: 900, lineHeight: 1.2 }  # headlines 900; kickers/tags 600-700
-    body:    { family: "Montserrat", weight: 400, lineHeight: 1.5 }  # body 400-500
+    heading: { family: "Montserrat", weight: 900, lineHeight: 1.2 }
+    body: { family: "Montserrat", weight: 400, lineHeight: 1.5 }
   space: { xs: 4, sm: 8, md: 16, lg: 24, xl: 40 }
   radius: { sm: 4, md: 8, lg: 16 }
   breakpoints: { mobile: 360, tablet: 768, laptop: 1024, desktop: 1440 }
 contrast:
   min_ratio_aa: 4.5
   min_ratio_aa_large: 3.0
-  # Ratios reales medidos (corrige la etiqueta previa errónea de 4.0):
   flagged:
     - pair: "brand.primary (#E6282A) on surface.white (#FFFFFF)"
       ratio: 4.47
-      rule: "FALLA texto normal (<4.5). Solo válido en texto ≥18.66px bold o ≥24px, o como fondo."
+      rule: "FALLA texto normal (<4.5). Solo válido en texto >=18.66px bold o >=24px, o como fondo."
     - pair: "brand.primary on surface.base (#F5F5F4)"
       ratio: 4.09
       rule: "FALLA. No usar rojo de texto sobre superficie base."
-    - pair: "brand.primary on text.ink (#1D1D1B)  (kicker en card negra)"
+    - pair: "brand.primary on text.ink (#1D1D1B)"
       ratio: 3.78
       rule: "FALLA. Usar blanco o variante clara, no rojo."
-    - pair: "white on brand.primary (#E6282A)  (texto del CTA)"
+    - pair: "white on brand.primary (#E6282A)"
       ratio: 4.47
-      rule: "FALLA a 15px regular. El texto del botón debe ser ≥18.66px bold."
+      rule: "FALLA a 15px regular. El texto del boton debe ser >=18.66px bold."
     - pair: "brand.primaryText (#C81E20) on white"
       ratio: 5.5
       rule: "PASA AA. Esta es la variante a usar para CUALQUIER texto rojo."
@@ -83,16 +81,16 @@ la información de seguridad **no se comunica solo con color**.
 ## Reglas para agentes de IA
 
 - Antes de generar UI, valida cada par texto/fondo contra `contrast.min_ratio_aa`
-  (4.5:1) o `min_ratio_aa_large` (3:1 para ≥ 24px o ≥ 18.66px bold).
-  Si un par incumple, **interrumpe** y reporta en JSON `{ "violacion": "<token> sobre <token>", "ratio": <n> }`.
+ (4.5:1) o `min_ratio_aa_large` (3:1 para ≥ 24px o ≥ 18.66px bold).
+ Si un par incumple, **interrumpe** y reporta en JSON `{ "violacion": "<token> sobre <token>", "ratio": <n> }`.
 - El **acento rojo** se reserva para acciones de conversión. No lo uses en texto.
 - Respeta la escala `space` (múltiplos de 4) y `radius`; no inventes valores intermedios.
 - Idioma fijo `es-MX`; aplica concordancia de género cuando Q2 = Mujer; si Q2 = "Prefiero no mencionarlo", usa el default masculino.
 - **Prohibido jerga técnica** en copy de cara al usuario (hipertrofia, Zone 2, HIIT,
-  VO2max, RPE, 1RM, déficit calórico…). Usa lenguaje accesible
-  ("crecimiento muscular", "ritmo conversacional", "intervalos al máximo").
+ VO2max, RPE, 1RM, déficit calórico…). Usa lenguaje accesible
+ ("crecimiento muscular", "ritmo conversacional", "intervalos al máximo").
 - Restricciones **YMYL**: con condición médica / embarazo / tratamiento, no
-  diagnostiques ni prescribas intensidades; remite a la validación del Asesor.
+ diagnostiques ni prescribas intensidades; remite a la validación del Asesor.
 
 ---
 
@@ -100,7 +98,7 @@ la información de seguridad **no se comunica solo con color**.
 
 > Contenido de diseño completo del documento técnico `01_UX_Specification_v4_2_10.docx`: **Appendix E — Brand Voice and Tone** y **Appendix F — Experiencia Ideal HTML Reference Template** (arquitectura visual, plantilla HTML verbatim, variantes de supresión, sección de seguridad, FitKidz, división en dos páginas). Transcripción fiel.
 
-### Appendix E -  Brand Voice and Tone
+### Appendix E - Brand Voice and Tone
 
 This guide governs all LLM-generated copy on the Experiencia Ideal result page - hooks, plan arguments, intent lines, connectors and infrastructure arguments - and is referenced by Rules 38 to 43. Question copy, option text and the examples below are production Spanish (MX).
 
@@ -194,7 +192,7 @@ The hero plan argument explains why the combined plan is most powerful for the u
 The infrastructure paragraph states what makes Sports World structurally suited to deliver the plan. It is 1 to 2 sentences, 55 words or fewer; cites at least one verifiable differentiator (49 clubs across 13 states, the proprietary class-to-objective classification, infrastructure consistency across all clubs); names the user's specific club and references which of the plan's classes are programmed there in the user's Q7 schedule; never compares directly to named competitors; and never claims what cannot be verified.
 
 
-### Appendix F -  Experiencia Ideal HTML Reference Template
+### Appendix F - Experiencia Ideal HTML Reference Template
 
 This is the authoritative shape of the rendered Experiencia Ideal report for the happy-path user (Sofía: Mujer, Intermedio, Estética corporal, Q6 = Ambas, Q13 = Acompañada, club Polanco). Slot tokens in braces are placeholders; their data sources are documented in the experiencia-ideal matrix in Part 5. Only the hook, plan argument, intent line, infrastructure argument and per-class connectors are LLM-generated, each governed by Appendix E; all other content is sourced from the backend or fichas.
 
