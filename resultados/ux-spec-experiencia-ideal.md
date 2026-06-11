@@ -999,38 +999,90 @@ The Clases recomendadas block (Block 3) applies a hard contraindication filter b
 | posparto | Posparto reciente (<6 meses) | Q12b = "Sí, posparto reciente (últimos 6 meses)" |
 | bariatrica | Cirugía bariátrica | Q17 includes "Cirugía bariátrica" |
 
-Filtered-class counts across the **51-class canonical catalog (49 dry + 2 aquatic; cliente, jun 2026)**: lesion 17 · cardiovascular 14 · embarazo 21 · posparto 21 · bariatrica 16. The contraindicated classes and the condition(s) that exclude them (l = lesion, c = cardiovascular, e = embarazo, p = posparto, b = bariatrica); classes not listed have no contraindication:
-> ⚠️ **Verificar (M3):** la matriz incluye 3 nombres que NO están en el catálogo canónico de 51 del cliente — `DANZA AEREA`, `INTERVAL`, `FLYBOARD`. Pueden ser clases retiradas o renombradas (¿`DANZA AEREA`→`AERO DANCE`?). Hasta confirmarlo NO se borran sus contraindicaciones (seguridad YMYL); al resolverlo hay que re-derivar los conteos 17/14/21/21/16.
+Matriz de contraindicaciones reorganizada por beneficio sobre el catálogo canónico de 51 clases (ver tabla siguiente). Las 3 clases que no estaban en el catálogo final (DANZA AEREA, INTERVAL, FLYBOARD) fueron eliminadas.
 
 
 
-| Class | l | c | e | p | b |
-| --- | --- | --- | --- | --- | --- |
-| CORE |   |   | X | X | X |
-| CX WORX |   |   | X | X | X |
-| FUNTRAC |   |   | X | X | X |
-| KINETIC CHAIN | X | X | X | X | X |
-| BODY ATTACK | X | X | X | X | X |
-| BODY COMBAT | X | X | X | X | X |
-| BODY STEP | X |   |   | X |   |
-| POWER CYCLING |   | X |   |   |   |
-| POWER JUMP | X | X | X | X | X |
-| RPM |   | X |   |   |   |
-| STEP | X |   |   | X |   |
-| STRONG NATION | X | X | X | X | X |
-| ZUMBA STEP | X |   | X | X | X |
-| AEROYOGA | X | X | X | X | X |
-| ASHTANGA YOGA |   |   | X |   |   |
-| DANZA AEREA | X | X | X | X | X |
-| BELLY DANCE |   |   | X |   |   |
-| JAZZ | X |   | X | X |   |
-| SH'BAM | X | X | X | X | X |
-| URBAN DANCE | X |   | X | X |   |
-| ALPHA TRAINER | X | X | X | X | X |
-| GRIT | X | X | X | X | X |
-| TRAINT BOOST | X | X | X | X | X |
-| INTERVAL | X | X | X | X | X |
-| FLYBOARD |   |   | X | X |   |
+Catálogo canónico **51 clases** (49 secas + 2 acuáticas: AQUA ZUMBA, SWIM TRAINERS), reorganizado por **beneficio** (grupo) y **contraindicación**. Columnas: **l** lesión · **c** cardiovascular · **e** embarazo · **p** posparto · **b** bariátrica. **●** = contraindicada. **Fuente:** `clínico` = decisión original del cliente (matriz previa); `inferido` = derivado por tipo de movimiento (este pase), **PENDIENTE de validación médica (MD) antes de producción** por ser YMYL.
+
+> Conteos de clases contraindicadas (catálogo de 51): **lesión 21 · cardiovascular 16 · embarazo 38 · posparto 34 · bariátrica 20**. (Suben respecto a 17/14/21/21/16 porque se completaron las clases antes no listadas; los nuevos valores son mayormente `inferido` y requieren ratificación médica.)
+
+**Fuerza, core y tonificación (8)**
+
+| Clase | l | c | e | p | b | Fuente |
+| --- | :-: | :-: | :-: | :-: | :-: | --- |
+| BODY PUMP |  |  | ● | ● | ● | inferido |
+| CORE |  |  | ● | ● | ● | clínico |
+| CX WORX |  |  | ● | ● | ● | clínico |
+| FUNTRAC |  |  | ● | ● | ● | clínico |
+| KINETIC CHAIN | ● | ● | ● | ● | ● | clínico |
+| KINETIC PUMP |  |  | ● | ● | ● | inferido |
+| TONE |  |  | ● | ● |  | inferido |
+| TOTAL BARRE |  |  | ● | ● | ● | inferido |
+
+**Cardio, combate, cycling y step (12)**
+
+| Clase | l | c | e | p | b | Fuente |
+| --- | :-: | :-: | :-: | :-: | :-: | --- |
+| BODY ATTACK | ● | ● | ● | ● | ● | clínico |
+| BODY COMBAT | ● | ● | ● | ● | ● | clínico |
+| BODY STEP | ● |  |  | ● |  | clínico |
+| CYCLING |  | ● |  |  |  | inferido |
+| INDBIKE |  | ● |  |  |  | inferido |
+| POWER CYCLING |  | ● |  |  |  | clínico |
+| POWER JUMP | ● | ● | ● | ● | ● | clínico |
+| RACE WALKER |  | ● |  |  |  | inferido |
+| RPM |  | ● |  |  |  | clínico |
+| STEP | ● |  |  | ● |  | clínico |
+| STRONG NATION | ● | ● | ● | ● | ● | clínico |
+| ZUMBA STEP | ● |  | ● | ● | ● | clínico |
+
+**Mente-cuerpo, yoga, pilates y stretch (13)**
+
+| Clase | l | c | e | p | b | Fuente |
+| --- | :-: | :-: | :-: | :-: | :-: | --- |
+| AEROYOGA | ● | ● | ● | ● | ● | clínico |
+| ASHTANGA YOGA |  |  | ● |  |  | clínico |
+| BALL PILATES |  |  | ● | ● | ● | inferido |
+| BODY BALANCE |  |  | ● |  |  | inferido |
+| HATHA YOGA |  |  | ● |  |  | inferido |
+| KINETIC BALL |  |  | ● | ● |  | inferido |
+| MAT PILATES |  |  | ● | ● | ● | inferido |
+| NATURAL MOTION |  |  | ● |  |  | inferido |
+| REFORMER PILATES |  |  | ● | ● | ● | inferido |
+| STRETCH |  |  |  |  |  | inferido |
+| TAI CHI |  |  |  |  |  | inferido |
+| VINYASA YOGA |  |  | ● |  |  | inferido |
+| YOGA RESTAURATIVA |  |  |  |  |  | inferido |
+
+**Baile (14)**
+
+| Clase | l | c | e | p | b | Fuente |
+| --- | :-: | :-: | :-: | :-: | :-: | --- |
+| AERO DANCE | ● |  | ● | ● |  | inferido |
+| AQUA ZUMBA |  |  |  |  |  | inferido |
+| BAILE DE SALÓN |  |  |  |  |  | inferido |
+| BELLY DANCE |  |  | ● |  |  | clínico |
+| BODY JAM | ● |  | ● | ● |  | inferido |
+| FIT DANCE | ● |  | ● | ● |  | inferido |
+| JAZZ | ● |  | ● | ● |  | clínico |
+| POUND |  |  | ● | ● |  | inferido |
+| RITMOS LATINOS | ● |  | ● | ● |  | inferido |
+| SENSUAL DANCE |  |  | ● | ● |  | inferido |
+| SH'BAM | ● | ● | ● | ● | ● | clínico |
+| URBAN DANCE | ● |  | ● | ● |  | clínico |
+| ZUMBA FITNESS | ● |  | ● | ● |  | inferido |
+| ZUMBA TONING | ● |  | ● | ● |  | inferido |
+
+**Alta intensidad, atletismo y acuática (4)**
+
+| Clase | l | c | e | p | b | Fuente |
+| --- | :-: | :-: | :-: | :-: | :-: | --- |
+| ALPHA TRAINER | ● | ● | ● | ● | ● | clínico |
+| GRIT | ● | ● | ● | ● | ● | clínico |
+| SWIM TRAINERS |  | ● |  |  |  | inferido |
+| TRAINT BOOST | ● | ● | ● | ● | ● | clínico |
+
 
 
 ##### Out of the matrix — contextual messaging only (no class filtered)
@@ -2020,7 +2072,7 @@ The Block 2 card does NOT use the technical ACSM names (LISS, MICT, HIIT, SIT) i
 | Mejorar mi salud cardiovascular | Caminadora, bicicleta, elíptica o remo | 35 a 45 min · ritmo conversacional 3-4 días + 1 día con intervalos al máximo · sesión principal del día | Tu motor cardiovascular es la prioridad. Varios días a ritmo conversacional construyen la base; un día con intervalos eleva el techo. Esta combinación es la que más reduce mortalidad. |
 | Recuperarme de una lesión o dolor crónico | Bicicleta reclinada, elíptica o caminadora muy suave | 15 a 25 min · ritmo conversacional muy ligero · antes de pesas como activación, o sesión corta | Cardio de bajo impacto que activa la circulación y las articulaciones sin sumar carga a la zona lesionada. Tu entrenador adapta la intensidad según tu evolución. |
 
-The machine list is a recommendation, not a constraint; the user can substitute any equivalent machine in the club. The timing instruction is always relative to the primary Q4 goal; when Q4 has two selections, use the more restrictive guidance (priority for the goal that demands more recovery: Recuperarme de una lesión o dolor crónico, Aumentar masa muscular, Mejorar mi desempeño atlético, Mejorar mi estética corporal, Bajar de peso, Mejorar mi salud cardiovascular). Group HIIT classes with an instructor (any catalog entry whose name includes HIIT, Spinning HIIT, Cycle HIIT, and similar) go exclusively to Block 3, never to Block 2.
+The machine list is a recommendation, not a constraint; the user can substitute any equivalent machine in the club. The timing instruction is always relative to the primary Q4 goal; when Q4 has two selections, use the more restrictive guidance (priority for the goal that demands more recovery: Recuperarme de una lesión o dolor crónico, Aumentar masa muscular, Mejorar mi desempeño atlético, Mejorar mi estética corporal, Bajar de peso, Mejorar mi salud cardiovascular). High-intensity interval group classes from the canonical catalog (GRIT, TRAINT BOOST, ALPHA TRAINER, STRONG NATION, POWER JUMP) go exclusively to Block 3, never to Block 2.
 
 
 ##### Block 1 -  Pesas individual user-facing presentation
