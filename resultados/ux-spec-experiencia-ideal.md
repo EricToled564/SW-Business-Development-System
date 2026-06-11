@@ -1251,7 +1251,7 @@ Concretely: for the example query, the user lands on the Bajar de peso hub (Q4 w
 
 - The (Diseiia  tu experiencia) questionnaire
 
-#### Rule 18 - The base questionnaire (16 questions)
+#### Rule 18 - The base questionnaire (15 base + 6 conditional)
 
 Per the official questionnaire, there are 15 base questions always shown (Q1–Q10, Q12, Q13, Q14, Q15, Q16) plus six conditional questions: Q11 (only if Q10 = "Regreso después de una pausa"), Q12b (only if Q2 = Mujer), Q14b (only if Q14 = "Yo y mis hijos" or "La familia completa"), and the weight-loss conditionals Q17, Q18, Q19 (only if Q4 includes "Bajar de peso", see Rule 19). Visible count ranges 15–21 (normative table below). Pregnancy is not an option inside Q12 — captured separately in Q12b. Question copy is production Spanish (MX); type descriptors are engineering notes. All pre-filled answers remain editable.
 
@@ -1660,128 +1660,28 @@ If the new club's catalog cannot produce a viable Block 3 set, the system displa
 
 Each matrix crosses the user state with the contextual menu and the questionnaire. Matrices assume the global rules from Part 4 are already applied. The header (Rules 1-2) and the BES widget (Rule 3) are always visible and are not repeated in each matrix.
 
-5.1-Home
+##### 5.1 — Home
 
-State	Questionnaire	Contextual menu
-
-No questionnaire· no inferred location • pure brand search
-
-No questionnaire· no inferred location • search with goal
-
-No questionnaire· with inferred location
-
-Questionnaire complete (always outside the flow on home)
-
-15 standard questions (18 if weight loss)
-
-16 questions, Q4 pre-filled and editable (19 if weight loss)
-
-16 questions, Q15 and Q16 pre-filled and editable (19 if weight loss)
-
-Already complete
-
-experiencia]·(Agenda tu visita guiada]
-
-experiencia]·(Agenda tu visita guiada]
-
-Tu Club ideal ·( Diseña tu experiencia]·(Agenda tu visita guiada]
-
-visita  guiada]
-
+| State | Questionnaire | Contextual menu |
+| --- | --- | --- |
+| No questionnaire · no inferred location · pure brand search | 15 standard questions (18 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · no inferred location · search with goal | 15 questions, Q4 pre-filled and editable (18 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · with inferred location | 15 questions, Q15 and Q16 pre-filled and editable (18 if weight loss) | Tu Club ideal · Diseña tu experiencia · Agenda tu visita guiada |
+| Questionnaire complete (always outside the flow on home) | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
 
 ##### - Individual club
 
-By landing on a specific club page, the club is already identified. Q15 and Q16 are omitted from the questionnaire.
+By landing on a specific club page the club is already identified, so Q15 and Q16 are omitted (13 base questions; 16 if weight loss). City size changes the Tu Club ideal / Otros clubes buttons.
 
-State	Questionnaire	Contextual menu
-
-No questionnaire·single-club city
-
-13 standard questions
-
-(16 if weight loss)
-
-visita  guiada]
-
-·(Agenda tu
-
-No questionnaire·city with up to 3 clubs
-
-No questionnaire • city with more than 3 clubs (( CIUDAD-ZMVM))
-
-Complete, inside the flow
-
-Complete, outside the flow· single-club city
-
-Complete, outside the flow • city with up to 3 clubs
-
-Complete, outside the flow • city with more than 3 clubs
-
-- -  Amenity
-State
-
-13 standard questions
-
-(16 if weight loss)
-
-13 standard questions
-
-(16 if weight loss)
-
-Already complete
-
-Already complete
-
-Already complete
-
-Already complete
-
-Questionnaire
-
-tu experiencia]·[Agenda tu visita guiada]
-
-experiencia]·[Agenda tu visita guiada]
-
-tu  visita guiada]
-
-Volver a tu experiencia ideal· Otros clubes en el	area •[Agenda tu visita guiada]
-
-Contextual menu
-
-No questionnaire • no club selected • no inferred location
-
-No questionnaire • no club selected • with inferred location
-
-No questionnaire· with club selected
-
-15 standard questions (18 if weight loss)
-
-16 questions, Q15 and Q16 pre-filled and editable (19 if weight loss)
-
-15 standard questions (18 if weight loss)
-
-experiencia]·[Agenda tu visita
-
-guiada]
-
-experiencia]·[Agenda tu visita
-
-guiada]
-
-State	Questionnaire	Contextual menu
-
-Complete, inside the flow
-
-Complete, outside the flow
-
-Already complete
-
-Already complete
-
-(Volver a tu experiencia ideal]·(Agenda tu visita  guiada]
-
-(Volver a tu experiencia ideal]·(Agenda tu visita  guiada]
-
+| State | Questionnaire | Contextual menu |
+| --- | --- | --- |
+| No questionnaire · single-club city | 13 standard questions (16 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · city with up to 3 clubs | 13 standard questions (16 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · city with more than 3 clubs (CIUDAD-ZMVM) | 13 standard questions (16 if weight loss) | Tu Club ideal · Diseña tu experiencia · Agenda tu visita guiada |
+| Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
+| Complete, outside the flow · single-club city | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
+| Complete, outside the flow · city with up to 3 clubs | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
+| Complete, outside the flow · city with more than 3 clubs | Already complete | Volver a tu experiencia ideal · Otros clubes en el área · Agenda tu visita guiada |
 
 ##### -  Premium Les Mills class
 
@@ -1799,284 +1699,72 @@ Landing on a class pre-marks Q4 (the movement-aligned goal) from the class's dis
 
 ##### - Regular class
 
-Behavior identical to Premium Les Mills class.
-
-State	Questionnaire	Contextual menu
-
-No questionnaire·no club selected • no inferred location
-
-No questionnaire·no club selected· with inferred location
-
-No questionnaire·with club selected
-
-Complete, inside the flow
-
-Complete, outside the flow
-
-16 questions, Q4 pre-filled and editable (19 if weight loss)
-
-16 questions, Q4, Q15 and Q16 pre-filled and editable (19 if weight loss)
-
-16 questions, Q4 pre-filled and editable (19 if weight loss)
-
-Already complete
-
-Already complete
-
-experiencia]·(Agenda tu visita guiada]
-
-experiencia]·(Agenda tu visita guiada]
-
-(Volver a tu experiencia ideal]·(Agenda tu visita guiada]
-
-(volver a tu experiencia ideal]·(Agenda tu visita guiada]
-
-- -  FitKidz
-FitKidz has special behavior: when the user has no club identified, the system forces them through the Tu Club ideal flow before showing class-specific content. Once they have a club, the Clases FitKidz disponibles button appears with the club's schedule. Landing on FitKidz
-
-Landing pre-fills Q14 (companion) with the family option. The user can confirm or change.
-
-State	Questionnaire	Contextual menu
-
-No questionnaire·
-
-The system forces the
-
-flow before	•
-
-no club selected • no inferred location
-
-No questionnaire· no club selected • with inferred location
-
-showing FitKidz content. If the user invokes[ Diseña
-
-tu experiencia, it is 16 questions with Q14 pre-
-
-filled and editable (19 if weight loss).
-
-The system surfaces up to 3 proposed clubs per the geographic rules, each with its 3 buttons ([ Conoce el	club)· Agenda una visita guiada • [Clases FitKidz disponibles  para tu
-
-familia) with schedules). If the user invokes Diseña tu experiencia, it is 16 questions with Q14, Q15 and Q16 pre-filled and editable (19 if weight loss).
-
-[Diseña tu experiencia) •[ Agenda tu	visita guiada)
-
-• [Diseña tu experiencia) •[ Agenda tu	visita guiada)
-
-No questionnaire·	The system surfaces up to 3 proposed clubs per the with club selected	geographic rules. If the user invokes [ Diseña tu
-
-experiencia), it is 16 questions with Q14 pre-filled and editable (19 if weight loss).
-
-Complete, inside	Already complete. The system shows the clubs and the flow	 FitKidz classes that match the plan, with schedules.
-
-Complete, outside	Already complete. the flow
-
-[clases  FitKidz
-
-d ispon ibles) •[ Diseña tu experiencia)· [Agenda tu visita guiada)
-
-[volver a tu experiencia ideal)· [Clases FitKidz disponibles) •[ Agenda tu	visita guiada)
-
-[Volver a tu experiencia ideal)· [Clases FitKidz disponibles) •[ Agenda tu	visita guiada)
-
+Behavior identical to Premium Les Mills class (same 5-state matrix above; landing pre-marks Q4 from the class discipline).
 
 ##### - Goal hub
 
 Applies to all 5 hubs (Primeros Pasos, Salud y Bienestar, Estética corporal, Ganar Fuerza, Rehabilitación). Landing pre-marks Q4 with the hub's goal. The YMYL health-disclaimer modal is shown only on the weight-loss path (Q4 = Bajar de peso), not on the rehabilitation hub.
 
-State	Questionnaire	Contextual menu
+| State | Questionnaire | Contextual menu |
+| --- | --- | --- |
+| No questionnaire · no club selected · no inferred location | 15 questions, Q4 pre-filled and editable (18 if user switches to weight loss) | Artículos o información útil (if any) · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · no club selected · with inferred location | 15 questions, Q4, Q15 and Q16 pre-filled and editable (18 if weight loss) | Artículos o información útil (if any) · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · with club selected | 15 questions, Q4 pre-filled and editable (18 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada |
+| Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
+| Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
 
-No questionnaire· no club selected • no inferred location
+**Bajar de peso hub (YMYL).** Landing pre-marks Q4 = Bajar de peso, which automatically activates the weight-loss conditionals (Q17–Q19), so the count is always 18. A health-disclaimer modal appears before the result. This page always has Journal articles tagged bajar-de-peso, so the Artículos button always appears.
 
-No questionnaire· no club selected· with inferred location
-
-No questionnaire· with club selected
-
-Complete, inside the flow
-
-Complete, outside the flow
-
-16 questions with Q4 pre-filled and editable (19 if user switches to weight loss)
-
-16 questions with Q4, Q15 and Q16 pre-filled and editable (19 if user switches to weight loss)
-
-16 questions with Q4 pre-filled and editable (19 if user switches to weight loss)
-
-Already complete
-
-Already complete
-
-información útil) (if any)·( Disefia
-
-tu experiencia)·(Agenda tu visita guiada)
-
-info rmación  útil) (if any)·( Disefia
-
-tu experiencia)·(Agenda tu visita guiada)
-
-Of
-
-5.8-
-
-Landing pre-marks Q4 =
-
-hub (YMYL)
-
-, which automatically activates the weight-loss optionals (Q17 to Q19).  A
-
-health-disclaimer modal appears before the result. This page always has Journal articles tagged
-
-with  bajar-de-peso, so the	button always appears.
-
-State	Questionnaire	Contextual menu
-
-No questionnaire • no club selected • no inferred location
-
-No questionnaire • no club selected • with inferred location
-
-No questionnaire· with club selected
-
-Complete, inside the flow
-
-19 questions with Q4 pre-filled and editable
-
-19 questions with Q4, Q15 and Q16 pre-filled and editable
-
-19 questions with Q4 pre-filled and editable
-
-Already complete
-
-info rmación útil]•( Diseña tu experiencia]·(Agenda tu visita guiada]
-
-información útil]•( Diseña tu experiencia]·(Agenda tu visita guiada)
-
-visita  guiada)
-
-Complete, outside the flow	Already complete
-
+| State | Questionnaire | Contextual menu |
+| --- | --- | --- |
+| No questionnaire · no club selected · no inferred location | 18 questions with Q4 pre-filled and editable | Artículos o información útil · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · no club selected · with inferred location | 18 questions with Q4, Q15 and Q16 pre-filled and editable | Artículos o información útil · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · with club selected | 18 questions with Q4 pre-filled and editable | Diseña tu experiencia · Agenda tu visita guiada |
+| Complete, inside / outside the flow | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
 
 ##### -  Personal Training
 
 Landing pre-marks Q13 = Acompañado/Acompañada. The user can confirm or change.
 
-State	Questionnaire	Contextual menu
+| State | Questionnaire | Contextual menu |
+| --- | --- | --- |
+| No questionnaire · no club selected · no inferred location | 15 questions with Q13 pre-filled and editable (18 if weight loss) | Artículos o información útil (if any) · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · no club selected · with inferred location | 15 questions with Q13, Q15 and Q16 pre-filled and editable (18 if weight loss) | Artículos o información útil (if any) · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · with club selected | 15 questions with Q13 pre-filled and editable (18 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada |
+| Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
+| Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
 
-No questionnaire·no club selected • no inferred location
+**Memberships.** Landing on memberships does not allow inferring questionnaire variables. Per Rule 22, the page has no online checkout — conversion goes through Agenda tu visita guiada.
 
-No questionnaire·no club selected· with inferred location
-
-No questionnaire·with club selected
-
-Complete, inside the flow
-
-Complete, outside the flow
-
-16 questions with Q13 pre-filled and editable (19 if weight loss)
-
-16 questions with Q13, Q15 and Q16 pre-filled and editable (19 if weight loss)
-
-16 questions with Q13 pre-filled and editable (19 if weight loss)
-
-Already complete
-
-Already complete
-
-información útil] (ifany) ·[Diseña tu experiencia ]·[ Agenda tu visita guiada]
-
-info rmación útil] (if any)·[ Diseña tu experiencia ]·[ Agenda tu visita guiada]
-
-(if
-
-- -  Memberships
-Landing on memberships does not allow inferring questionnaire variables. Per Rule 22, the page does not include online checkout- conversion goes through Agenda tu	visita  guiada.
-
-State	Questionnaire	Contextual menu
-
-No questionnaire·no club selected • no inferred location
-
-No questionnaire·no club selected· with inferred location
-
-No questionnaire·with club selected
-
-Complete, inside the flow
-
-Complete, outside the flow
-
-15 standard questions (18 if weight loss)
-
-16 questions with Q15 and Q16 pre-filled and editable (19 if weight loss)
-
-15 standard questions (18 if weight loss)
-
-Already complete
-
-Already complete
-
-Tu Club ideal •( Diseña tu experiencia]·( Agenda tu visita guiada]
-
-Tu Club ideal •( Diseña tu experiencia]·( Agenda tu visita guiada]
-
-(Volver a tu experiencia ideal]·(Agenda tu visita guiada]
-
-(volver a tu experiencia ideal]·(Agenda tu visita guiada]
-
+| State | Questionnaire | Contextual menu |
+| --- | --- | --- |
+| No questionnaire · no club selected · no inferred location | 15 standard questions (18 if weight loss) | Tu Club ideal · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · no club selected · with inferred location | 15 questions with Q15 and Q16 pre-filled and editable (18 if weight loss) | Tu Club ideal · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · with club selected | 15 standard questions (18 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada |
+| Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
+| Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
 
 ##### - Journal article
 
 Landing on an article does not allow inferring questionnaire variables.
 
-State	Questionnaire	Contextual menu
+| State | Questionnaire | Contextual menu |
+| --- | --- | --- |
+| No questionnaire · no club selected · no inferred location | 15 standard questions (18 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · no club selected · with inferred location | 15 questions with Q15 and Q16 pre-filled and editable (18 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire · with club selected | 15 standard questions (18 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada |
+| Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
+| Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Agenda tu visita guiada |
 
-No questionnaire· no club selected • no inferred location
+##### -  BES (when reached via the fallback URL)
 
-No questionnaire· no club selected· with inferred location
+BES is normally reached via the global widget (Rule 3), which overlays the current page. The dedicated URL exists as a fallback for non-JavaScript users and as a deep-linkable destination. When reached via /bes, the page is server-rendered with the same chat interface in a non-floating layout.
 
-No questionnaire· with club selected
-
-Complete, inside the flow
-
-Complete, outside the flow
-
-15 standard questions (18 if weight loss)
-
-16 questions with Q15 and Q16 pre-filled and editable (19 if weight loss)
-
-15 standard questions (18 if weight loss)
-
-Already complete
-
-Already complete
-
-experiencia]·( Agenda tu visita guiada]
-
-experiencia]·( Agenda tu visita guiada]
-
-(Volver a tu experiencia ideal]·( Agenda tu visita guiada]
-
-(volver a tu experiencia ideal]·(Agenda tu visita guiada]
-
-
-##### -  BES (when reached via the	fallback URL)
-
-BES is normally reached via the global widget (Rule 3), which overlays the current page. The
-
-dedicated URL	exists as a fallback for non-JavaScript users and as a deep-linkable
-
-destination. When reached via /bes, thepage is server-rendered with the same chat interface as a non-floating layout.
-
-State	Behavior
-
-No questionnaire	The assistant answers questions. If(BES) detects a personalization intent, it offers to open the questionnaire; the user decides. Always-available action: "Hablar con un asesor humano" (Talk to a human asesor).
-
-Complete, inside the flow
-
-The assistant answers while keeping the plan context. ( Vol ve r a tu expe riencia  ideal]is always visible.
-
-Complete, outside the flow
-
-Theassistantrespondsfreely. visible.
-
-isalways
-
+| State | Behavior |
+| --- | --- |
+| No questionnaire | The assistant answers questions. If BES detects a personalization intent, it offers to open the questionnaire; the user decides. Always-available action: "Hablar con un asesor humano". |
+| Complete, inside the flow | The assistant answers while keeping the experience context. "Volver a tu experiencia ideal" is always visible. |
+| Complete, outside the flow | The assistant responds freely. "Volver a tu experiencia ideal" is always visible. |
 
 ##### entrenamiento-con-pesas-individual (and subpages)
 
@@ -2085,7 +1773,7 @@ Individual weight-training page (class page type). Per Rule 38, Q13 pre-marks So
 
 | State | Questionnaire | Contextual menu |
 | --- | --- | --- |
-| No questionnaire | 16 questions, Q13 pre-marked Solo/Sola and Q4 pre-marked per subpage, both editable (19 if weight loss) | Tu rutina individual · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire | 15 questions, Q13 pre-marked Solo/Sola and Q4 pre-marked per subpage, both editable (18 if weight loss) | Tu rutina individual · Diseña tu experiencia · Agenda tu visita guiada |
 | Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 | Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 
@@ -2099,7 +1787,7 @@ Individual aerobic-training page (class page type). Per Rule 38, Q13 pre-marks S
 
 | State | Questionnaire | Contextual menu |
 | --- | --- | --- |
-| No questionnaire | 16 questions, Q13 pre-marked Solo/Sola and Q4 pre-marked per subpage, both editable (19 if weight loss) | Tu rutina individual · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire | 15 questions, Q13 pre-marked Solo/Sola and Q4 pre-marked per subpage, both editable (18 if weight loss) | Tu rutina individual · Diseña tu experiencia · Agenda tu visita guiada |
 | Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 | Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 
