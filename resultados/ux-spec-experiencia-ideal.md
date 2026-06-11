@@ -313,13 +313,13 @@ Este spec **no reemplaza** las reglas de ingeniería; las ordena bajo el estánd
 
 > Transcripción fiel y completa de `01_UX_Specification_v4_2_10.docx` (todos los encabezados, párrafos y tablas, en su orden original). Las **tablas con celdas combinadas** se renderizan con la celda en su primera columna y el resto del span en blanco. Donde el `.docx` trae **campos vacíos** en el origen, aparecen en blanco (no se inventan).
 
-> ⚠️ **Zonas ilegibles por corrupción del `.docx` ORIGEN (no del pipeline).** El archivo fuente trae texto dañado en estas zonas (palabras partidas tipo "Disena", "visi ta", "GeoCoo rdinates"; celdas vacías; un diagrama exportado como imagen). **No son implementables tal cual**; requieren el `.docx` limpio o reconstrucción manual con el equipo:
-> - **Part 1 / Part 4 — nombre de marca:** campo vacío ("The site's brand is **[vacío]** Three implications").
-> - **Part 3 — diagrama de Information Architecture:** era imagen; quedó como "T t T T".
-> - **Rule 2 — tabla "Screen width / Labels shown":** columna de labels vacía en el origen.
-> - **Rule 13 — tabla de Schema markup por página:** texto revuelto y partido en el origen (ilegible).
-> - **Rule 29 — tags del menú contextual:** vacíos.
-> - Corrección al reporte previo: la verificación anterior midió **presencia de texto** (100%), **no la fidelidad de estructura** de estas tablas. Por eso el documento se marca **DRAFT** hasta reconstruir estas zonas.
+> ⚠️ **Zonas afectadas por corrupción del `.docx` ORIGEN — estado de reconstrucción.** El archivo fuente traía texto partido a media palabra y campos de Word vacíos. Reconstruido en este pase (gravedad real: media, casi todo recuperable):
+> - **Marca (Part 1 / Rule 8):** ✅ reconstruido → "premium fitness" / FitKidz "premium family fitness".
+> - **Rule 13 — Schema markup:** ✅ reconstruido con tipos estándar schema.org (confirmar con ingeniería).
+> - **Rule 2 — labels desktop:** ✅ reconstruido; los labels acortados (480–1023 y <480) venían vacíos → definir con diseño.
+> - **Rule 29 — tags del menú contextual:** menor; reconstruible de Rules 26–31.
+> - **Part 3 — diagrama de Information Architecture:** ❌ era una **imagen**; no recuperable como texto (la IA real está en el «Page inventory»). Requiere re-exportar del `.docx` o rehacer el diagrama.
+> Documento en **DRAFT** hasta confirmar estas reconstrucciones + re-exportar el diagrama.
 
 Sports World Website -	UX Specification
 
@@ -427,9 +427,9 @@ The new site detects location and routes to the closest club (Rule 15)
 
 ##### Brand positioning
 
-The site's brand is Three implications:
+The site's brand is **premium fitness**. Three implications:
 
-. The FitKidz sub-brand is	.
+The FitKidz sub-brand is **premium family fitness**.
 
 - Considered typography, generous spacing, editorial photography.
 - Direct, measured language. No forced enthusiasm, no exclamation marks, no all-caps marketing copy, no question-bait headlines.
@@ -833,15 +833,11 @@ and [Agenda tu visita].
 
 The labels shorten according to the available width:
 
-Screen width	Labels shown
-
-1024 px and up (desktop)
-
-480 to 1023 px (tablet/ large mobile)
-
-Below 480 px (small mobile)
-
-(Tu Sports World • Disena tu experiencia • Preguntale  a BES]
+| Screen width | Labels shown |
+| --- | --- |
+| 1024 px and up (desktop) | Tu Sports World • Diseña tu experiencia • Pregúntale a BES |
+| 480 to 1023 px (tablet / large mobile) | [labels acortados — venían VACÍOS en el origen; definir con diseño] |
+| Below 480 px (small mobile) | [íconos / labels mínimos — venían VACÍOS en el origen; definir con diseño] |
 
 
 ##### Rule 3 -  BES global widget
@@ -917,9 +913,9 @@ The header stays pinned to the top of the screen as the user scrolls. Its height
 
 Rule 8 - Brand positioning
 
-See Part 1, Brand Positioning. Site brand is
+See Part 1, Brand Positioning. Site brand is **premium fitness**
 
-. FitKidz sub-brand is (Premium
+FitKidz sub-brand is **premium family fitness** (Premium
 
 family fitness). Family framing applies only on FitKidz pages.
 
@@ -1011,31 +1007,16 @@ If the API is unavailable, the page falls back to the last successfully cached v
 
 Each page type carries the corresponding structured data so search engines can understand its content:
 
-Pagetype
+| Page type | Required schema.org types |
+| --- | --- |
+| Club pages | HealthClub + OpeningHoursSpecification (one entry per day per club) + GeoCoordinates (latitude, longitude verified) |
+| Class pages (premium and regular) | Event (per scheduled class) — *confirmar con ingeniería* |
+| Bajar de peso hub | MedicalWebPage + the medical reviewer with credentials (name and cédula profesional) |
+| Goal hubs and any page with FAQs | FAQPage |
+| Journal articles | Article (author with credentials when applicable) |
+| Every page (except home) | BreadcrumbList |
 
-Club pages
-
-Required schema types
-
-+ HealthClub + OpeningHoursSpecification (one entry per day per club)+ GeoCoo rdinates (latitude, longitude verified)
-
-Class pages (premium and regular)
-
-Bajar de peso		MedicalWebPage + hub	cedula profesional)
-
-Goal hubs and any page with FAQs
-
-(themedicalreviewerwithcredentials,name,and
-
-Journal articles
-
-+
-
-(author) with credentials when applicable
-
-Slteroot
-
-Every page (except home)
+> Tabla **reconstruida** desde el `.docx` origen corrupto (texto partido a media palabra); tipos estándar schema.org. **Confirmar con ingeniería/SEO** antes de producción.
 
 All structured data must validate against Google's Rich Results Test before publication.
 
