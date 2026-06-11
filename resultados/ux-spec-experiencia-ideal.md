@@ -999,14 +999,16 @@ The Clases recomendadas block (Block 3) applies a hard contraindication filter b
 | posparto | Posparto reciente (<6 meses) | Q12b = "Sí, posparto reciente (últimos 6 meses)" |
 | bariatrica | Cirugía bariátrica | Q17 includes "Cirugía bariátrica" |
 
-Filtered-class counts across the 56-class catalog (52 dry + 4 aquatic): lesion 17 · cardiovascular 14 · embarazo 21 · posparto 21 · bariatrica 16. The contraindicated classes and the condition(s) that exclude them (l = lesion, c = cardiovascular, e = embarazo, p = posparto, b = bariatrica); classes not listed have no contraindication:
+Filtered-class counts across the **51-class canonical catalog (49 dry + 2 aquatic; cliente, jun 2026)**: lesion 17 · cardiovascular 14 · embarazo 21 · posparto 21 · bariatrica 16. The contraindicated classes and the condition(s) that exclude them (l = lesion, c = cardiovascular, e = embarazo, p = posparto, b = bariatrica); classes not listed have no contraindication:
+> ⚠️ **Verificar (M3):** la matriz incluye 3 nombres que NO están en el catálogo canónico de 51 del cliente — `DANZA AEREA`, `INTERVAL`, `FLYBOARD`. Pueden ser clases retiradas o renombradas (¿`DANZA AEREA`→`AERO DANCE`?). Hasta confirmarlo NO se borran sus contraindicaciones (seguridad YMYL); al resolverlo hay que re-derivar los conteos 17/14/21/21/16.
+
 
 
 | Class | l | c | e | p | b |
 | --- | --- | --- | --- | --- | --- |
 | CORE |   |   | X | X | X |
 | CX WORX |   |   | X | X | X |
-| FUN TRAC |   |   | X | X | X |
+| FUNTRAC |   |   | X | X | X |
 | KINETIC CHAIN | X | X | X | X | X |
 | BODY ATTACK | X | X | X | X | X |
 | BODY COMBAT | X | X | X | X | X |
@@ -1021,12 +1023,12 @@ Filtered-class counts across the 56-class catalog (52 dry + 4 aquatic): lesion 1
 | ASHTANGA YOGA |   |   | X |   |   |
 | DANZA AEREA | X | X | X | X | X |
 | BELLY DANCE |   |   | X |   |   |
-| JAZZ 90 | X |   | X | X |   |
-| SH BAM | X | X | X | X | X |
+| JAZZ | X |   | X | X |   |
+| SH'BAM | X | X | X | X | X |
 | URBAN DANCE | X |   | X | X |   |
 | ALPHA TRAINER | X | X | X | X | X |
-| GRIT DEMO | X | X | X | X | X |
-| TRAINT BOOST DEMO | X | X | X | X | X |
+| GRIT | X | X | X | X | X |
+| TRAINT BOOST | X | X | X | X | X |
 | INTERVAL | X | X | X | X | X |
 | FLYBOARD |   |   | X | X |   |
 
