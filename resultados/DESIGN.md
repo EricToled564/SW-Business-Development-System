@@ -87,7 +87,7 @@ la información de seguridad **no se comunica solo con color**.
   Si un par incumple, **interrumpe** y reporta en JSON `{ "violacion": "<token> sobre <token>", "ratio": <n> }`.
 - El **acento rojo** se reserva para acciones de conversión. No lo uses en texto.
 - Respeta la escala `space` (múltiplos de 4) y `radius`; no inventes valores intermedios.
-- Idioma fijo `es-MX`; aplica concordancia de género cuando el género del usuario = Mujer.
+- Idioma fijo `es-MX`; aplica concordancia de género cuando Q2 = Mujer; si Q2 = "Prefiero no mencionarlo", usa el default masculino.
 - **Prohibido jerga técnica** en copy de cara al usuario (hipertrofia, Zone 2, HIIT,
   VO2max, RPE, 1RM, déficit calórico…). Usa lenguaje accesible
   ("crecimiento muscular", "ritmo conversacional", "intervalos al máximo").

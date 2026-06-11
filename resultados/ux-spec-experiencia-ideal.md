@@ -94,6 +94,7 @@ flowchart TD
   G[Google / SEO] --> H[Hub temático<br/>ej. Perder Peso]
   H --> W[welcome]
   W --> Q[questionnaire Q1–Q19 · adaptativo]
+  Q -->|Q10=pausa| Q11n[Q11 duración de la pausa]
   Q -->|Q2=Mujer| Q12b[Q12b embarazo/posparto]
   Q -->|Q14 con hijos| Q14b[Q14b hijos &lt;12]
   Q -->|abandono| EXIT([Sale — se mide drop-off])
@@ -136,7 +137,7 @@ flowchart TD
   - Q8 días / Q7 horarios: multiselección, ≥ 1.
   - Q16 CP **o** zona (XOR): CP = 5 dígitos numéricos.
 - **Contenido (UX writing):** preguntas en español MX, voz activa, sin jerga. Concordancia de género si Q2=Mujer (Q3, Q13, Q14).
-- **Requisito no funcional:** transición entre preguntas < 100 ms; estado persistido en cliente para no perder respuestas al recargar.
+- **Requisito no funcional:** transición entre preguntas < 100 ms; estado persistido en cliente para no perder respuestas al recargar (solo tras aceptar el aviso de privacidad, ver edge case 6.5).
 
 ### 4.3 Resultado — Experiencia Ideal (`result`)
 
@@ -1152,7 +1153,7 @@ The standard questionnaire collects 16 base questions, coded Q1 to Q16. Three ar
 | Q9 | ¿Cuál es tu nivel de entrenamiento? | Single-select, required | Principiante · Intermedio · Avanzado |
 | Q10 | ¿Vienes de otro gimnasio? | Single-select, required | Sí, vengo de otro gimnasio · Nunca he ido a un gimnasio · Regreso después de una pausa |
 | Q11 | ¿Qué tan larga fue la pausa? | Single-select, conditional (visible if Q10 = Regreso después de una pausa) | Menos de 3 meses · Entre 3 y 12 meses · Más de un año |
-| Q12 | ¿Tienes alguna condición médica? | Multi-select, required | Ninguna · Lesión o dolor articular/muscular · Condición cardiovascular o de presión · Otra, la comento en el club  (helper: "Solo condiciones médicas. Embarazo no es una condición" — pregnancy moved to Q12b) |
+| Q12 | ¿Tienes alguna condición médica? | Multi-select, required | Ninguna · Lesión o dolor articular/muscular · Condición cardiovascular o de presión · Otra, la comento en el club  (helper: "Solo condiciones médicas. El embarazo lo preguntamos por separado en la siguiente pantalla." — pregnancy moved to Q12b) |
 | Q12b | ¿Estás embarazada o en posparto reciente? | Single-select, conditional (visible if Q2 = Mujer) | Sí, embarazada · Sí, posparto reciente (últimos 6 meses) · No |
 | Q13 | ¿Prefieres entrenar solo o acompañado? | Single-select, required | Solo/Sola, a mi ritmo · Acompañado/Acompañada, en clases o grupo · Me da igual |
 | Q14 | ¿Con quién nos visitas en el club? | Single-select, required | Solo/Sola, es mi momento · Con mi amigo/a · Con mi pareja · Yo y mis hijos · La familia completa |
