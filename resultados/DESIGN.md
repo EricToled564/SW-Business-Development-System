@@ -115,7 +115,7 @@ Verdad sobre motivación inflada: decimos lo que el plan logra realmente, no lo 
 
 #### Approved vocabulary
 
-construir · sostener · consolidar · mantener · recuperar · ajustar · combinar · clarificar · ritmo · constancia · consistencia · decisión · momento · forma · figura · fuerza · aguante · base · repetición · semana · sesión · objetivo · resultado · trabajo · entrenamiento. · crecimiento muscular · ritmo conversacional · intervalos al máximo · intervalos cortos al máximo · técnica controlada · fuerza sostenida en posturas · conciencia corporal · saltos explosivos · cuerpo completo · centro del cuerpo · patrones de movimiento · pérdida de grasa.
+construir · sostener · consolidar · mantener · recuperar · ajustar · combinar · clarificar · ritmo · constancia · consistencia · decisión · momento · forma · figura · fuerza · aguante · base · repetición · semana · sesión · objetivo · resultado · trabajo · entrenamiento · crecimiento muscular · ritmo conversacional · intervalos al máximo · intervalos cortos al máximo · técnica controlada · fuerza sostenida en posturas · conciencia corporal · saltos explosivos · cuerpo completo · centro del cuerpo · patrones de movimiento · pérdida de grasa.
 
 
 #### Forbidden vocabulary
@@ -141,7 +141,7 @@ RESTRICCIONES YMYL: si el lead tiene condición médica, embarazo/posparto, o tr
 | Q3 selection | Approved hook example |
 | --- | --- |
 | Desconectado/a del trabajo y la rutina | El día se queda en la puerta. Lo que entrenas aquí es tuyo, y el cuerpo lo agradece cuando sales. |
-| Renovado/a y de buen ánimo | La energía no se finge: se construye con movimiento. Entrenar temprano cambia cómo llegas al resto del día. |
+| Renovado/a y de buen ánimo | La energía no se finge: se construye con movimiento. Cada sesión cambia cómo llegas al resto de tu día. |
 | Confiado/a en que mi cuerpo no me va a fallar | La confianza en tu cuerpo se gana con constancia, calibrada a tu punto de partida. No es fuerza máxima: es base sostenida. |
 | Más a gusto conmigo mismo/a | Sentirte mejor contigo no llega de golpe. Se construye en cada sesión sostenida y en cada semana que vuelves. |
 | Parte de una comunidad saludable | Entrenar acompañado sostiene la constancia. En el club hay gente en el mismo camino, a tu ritmo, sin competir. |
@@ -172,10 +172,11 @@ The conector_personal is the only zone where the LLM has prose-generation freedo
 
 | Q13 | Q14 | Intent line template |
 | --- | --- | --- |
-| Solo/Sola, a mi ritmo | Solo/Sola, es mi momento | Tu espacio para entrenar a tu propio ritmo, lejos del ruido del día. |
+| Solo/Sola, a mi ritmo | Solo/Sola | Tu espacio para entrenar a tu propio ritmo, lejos del ruido del día. |
 | Solo/Sola, a mi ritmo | Con mi amigo/a | Tu Experiencia Ideal es individual; tu amigo/a tiene la suya, en el mismo club. |
 | Solo/Sola, a mi ritmo | Con mi pareja / La familia completa | Tu rutina personal en un club donde tu familia también encuentra lo suyo. |
-| Acompañado/a, en clases o grupo | Solo/Sola, es mi momento | Tu momento sola, con la opción de clases en grupo cuando lo decidas. |
+| Solo/Sola, a mi ritmo | Yo y mis hijos | Tu rutina a tu ritmo mientras tus hijos tienen FitKidz en el mismo club. |
+| Acompañado/a, en clases o grupo | Solo/Sola | Tu momento sola, con la opción de clases en grupo cuando lo decidas. |
 | Acompañado/a, en clases o grupo | Con mi amigo/a | Entrenar acompañada de tu amigo/a en las clases que escogiste. |
 | Acompañado/a, en clases o grupo | Con mi pareja | Clases y rutina con tu pareja, en el mismo horario. |
 | Acompañado/a, en clases o grupo | Yo y mis hijos / La familia completa | Tu rutina en grupo mientras tus hijos tienen FitKidz en el mismo club. |
@@ -184,7 +185,7 @@ The conector_personal is the only zone where the LLM has prose-generation freedo
 
 #### Plan-argument rules (hero paragraph)
 
-The hero plan argument explains why the combined plan is most powerful for the user's Q4. It is 1 to 2 sentences, 45 words or fewer; names the three blocks explicitly using their user-facing labels (Hipertrofia / Caminadora o bicicleta / clases by name), not abstract "ejercicios"; closes affirming personalization - "No es una experiencia genérica: es la combinación que tus respuestas pidieron" (or an approved variant); and uses no superlatives (el mejor, la única forma, lo más efectivo).
+The hero plan argument explains why the combined plan is most powerful for the user's Q4. It is 1 to 2 sentences, 45 words or fewer; names the three blocks explicitly using their user-facing labels (Rutina por grupos musculares / Caminadora o bicicleta / clases by name), not abstract "ejercicios"; closes affirming personalization - "No es una experiencia genérica: es la combinación que tus respuestas pidieron" (or an approved variant); and uses no superlatives (el mejor, la única forma, lo más efectivo).
 
 
 #### Infrastructure-argument rules
@@ -226,15 +227,17 @@ Secondary: Reiniciar cuestionario
 
 #### Hard constraints
 
-One viewport on desktop (800 px or less on 1280-wide screens). Three screen heights or fewer on mobile (2700 px or less on 900-tall viewports); reference rendered total around 1,350 px. No exclamation marks. All factual content (subgroup names, prescription summaries, class names, benefits, match reasons, club name, distance, features, machine recommendations) is sourced from the backend or fichas. Brand tokens: Pantone Black C #1D1D1B, Pantone 485C #E6282A (accent only), Pantone Bright White; Montserrat (900 headlines, 600-700 kickers/tags, 400-500 body).
+Página 1 fits in one desktop viewport (800 px or less on 1280-wide screens); Página 2 continues below per the Two-page split. Three screen heights or fewer on mobile (2700 px or less on 900-tall viewports); reference rendered total around 1,350 px. No exclamation marks. All factual content (subgroup names, prescription summaries, class names, benefits, match reasons, club name, distance, features, machine recommendations) is sourced from the backend or fichas. Brand tokens: Pantone Black C #1D1D1B, Pantone 485C #E6282A (accent only), Pantone Bright White; Montserrat (900 headlines, 600-700 kickers/tags, 400-500 body).
 
 
 #### Suppression variants
 
-Block 1 OFF (Q6 = alberca): the Block 1 card is not rendered; hero argument - "Combinamos cardio para sostener definición y dos clases grupales que mantienen la motivación cinco días a la semana"; the infrastructure paragraph emphasizes the pool. Block 3 OFF (Q13 = solo): the Block 3 card is hidden; hero argument - "Combinamos pesas para construir forma y cardio para sostener definición, en tu propio ritmo, sin clases grupales"; the contextual menu renames Clases recomendadas to Tu rutina individual. Block 1 and Block 3 both OFF: only Block 2 renders, with the hero restricted to the aquatic-aerobic narrative. All three OFF: system error per Rule 39, rendering the asesor handoff card.
+Block 1 aquatic variant (Q6 = alberca, club with pool — per unified Rule 39 logic, Block 1 is NOT suppressed): the Block 1 card renders the aquatic subgroup; hero argument names the aquatic strength work plus cardio and group classes; the infrastructure paragraph emphasizes the pool. (Legacy "Block 1 OFF" wording superseded by demo v6.) Block 3 OFF (Q13 = solo): the Block 3 card is hidden; hero argument - "Combinamos pesas para construir forma y cardio para sostener definición, en tu propio ritmo, sin clases grupales"; the contextual menu renames Clases recomendadas to Tu rutina individual. Block 1 and Block 3 both OFF: only Block 2 renders, with the hero restricted to the aquatic-aerobic narrative. All three OFF: system error per Rule 39, rendering the asesor handoff card.
 
 
 #### Embedded HTML reference (verbatim)
+
+> ⚠️ **SUPERSEDED (audit C2).** La definición AUTORITATIVA de la página de resultado es la tabla «Visual architecture (client view)» (arquitectura v6: barra roja 4px, 4 summary cards, banner CTA rosa, bloques azul/verde/gris #EEF5FF/#EDF8F1/#F3F4F6, club+familia, sección seguridad ámbar) — implementada por el demo JSX. Este HTML es la referencia COMPACTA legada: conserva valor como semántica/CSS base, pero donde difiera de la tabla v6 (colores de bloque uniformes, sin summary cards/banner/seguridad) **gana la tabla v6**. Los colores de bloque v6 deben añadirse al :root.
 
 <!DOCTYPE html>
 
@@ -258,7 +261,7 @@ body { font-family:'Montserrat',sans-serif; color:var(--black); background:var(-
 
 .page { flex:1; max-width:1080px; margin:0 auto; width:100%; padding:1.75rem 2rem 2rem; display:flex; flex-direction:column; gap:1.25rem; }
 
-.hero__kicker { font-size:.6875rem; letter-spacing:.22em; text-transform:uppercase; color:var(--red); font-weight:700; margin-bottom:.5rem; }
+.hero__kicker { font-size:.6875rem; letter-spacing:.22em; text-transform:uppercase; color:#C81E20; font-weight:700; margin-bottom:.5rem; } /* audit C1: #E6282A 4.47:1 falla AA a 11px */
 
 .hero__name { font-size:2.25rem; font-weight:900; line-height:1.05; letter-spacing:-.02em; margin-bottom:.625rem; }
 
@@ -274,7 +277,7 @@ body { font-family:'Montserrat',sans-serif; color:var(--black); background:var(-
 
 .club { background:var(--black); color:var(--white); border-radius:6px; padding:1.25rem 1.5rem; display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; align-items:start; }
 
-.club__kicker { font-size:.625rem; letter-spacing:.22em; text-transform:uppercase; color:var(--red); font-weight:700; margin-bottom:.375rem; }
+.club__kicker { font-size:.625rem; letter-spacing:.22em; text-transform:uppercase; color:var(--white); opacity:.85; font-weight:700; margin-bottom:.375rem; } /* audit C1: rojo/negro 3.78:1 falla */
 
 .club__name { font-size:1.375rem; font-weight:900; line-height:1.1; margin-bottom:.375rem; }
 
@@ -306,7 +309,7 @@ body { font-family:'Montserrat',sans-serif; color:var(--black); background:var(-
 
 .block__why { font-size:.8125rem; color:var(--gray-4); margin-bottom:.875rem; flex:1; line-height:1.45; }
 
-.block__action { font-size:.75rem; color:var(--red); font-weight:700; text-decoration:none; border-bottom:1px solid var(--red); padding-bottom:2px; align-self:flex-start; }
+.block__action { font-size:.75rem; color:#C81E20; font-weight:700; text-decoration:none; border-bottom:1px solid #C81E20; align-self:flex-start; min-height:44px; display:inline-flex; align-items:center; } /* audit L3+C1: target ≥44px, rojo AA */
 
 .classes__list { flex:1; margin-bottom:.875rem; }
 
@@ -320,9 +323,9 @@ body { font-family:'Montserrat',sans-serif; color:var(--black); background:var(-
 
 .cta { text-align:center; padding-top:.875rem; border-top:1px solid var(--gray-2); }
 
-.cta__button { display:inline-block; background:var(--red); color:var(--white); font-size:.9375rem; font-weight:700; padding:.875rem 2.25rem; border:none; cursor:pointer; border-radius:4px; text-decoration:none; }
+.cta__button { display:inline-block; background:var(--red); color:var(--white); font-size:1.1875rem; font-weight:700; padding:.875rem 2.25rem; border:none; cursor:pointer; border-radius:4px; text-decoration:none; } /* audit C1: blanco/rojo pasa AA solo ≥18.66px bold → 19px */
 
-.cta__secondary { margin-top:.875rem; display:flex; justify-content:center; gap:1.5rem; font-size:.75rem; }
+.cta__secondary { margin-top:.875rem; display:flex; justify-content:center; gap:1.5rem; font-size:.75rem; } .cta__secondary a { min-height:44px; display:inline-flex; align-items:center; } /* audit L3 */
 
 .cta__secondary a { color:var(--gray-4); text-decoration:none; font-weight:500; }
 
@@ -496,8 +499,8 @@ The client Experiencia Ideal page incorporates these visual elements (LLM-person
 | --- | --- | --- |
 | Top bar rojo | Top of page | 4px bar, #E6282A |
 | Brand box | Header right | "SPORTS WORLD" (800) + "Tu experiencia, a tu medida" (gray) |
-| Summary cards (4) | Below header | Tu objetivo (Q4[0]) · Tu nivel (Q9) · Tu horario (Q8+Q7[0]) · Entrenas con (mapped from Q14: A tu ritmo / Con tus hijos / Con tu familia) |
-| CTA-row | Between summary and plan-cards | Pink banner (#FFF4F4 / #F3B9BC): "Conoce el club y valida tu experiencia con un Asesor…" + red button AGENDAR VISITA GUIADA |
+| Summary cards (4) | Below header | Tu objetivo (Q4[0]) · Tu nivel (Q9) · Tu horario (Q8+Q7[0]) · Entrenas con (mapped from Q14: A tu ritmo / Con tu amigo/a / Con tu pareja / Con tus hijos / Con tu familia) |
+| CTA-row | Between summary and plan-cards | Pink banner (#FFF4F4 / #F3B9BC): "Conoce el club y valida tu experiencia con un Asesor…" + red button "Agendar visita guiada" (pill rojo; sin all-caps por Rule 9) |
 | Plan-cards with colors | Three bloque cards | 01 blue (#EEF5FF) · 02 green (#EDF8F1) · 03 gray (#F3F4F6). PT fallback uses dark background. |
 | Section title + numbered circle | Above plan-cards | Black circle "1" + "Tres componentes para una experiencia equilibrada" |
 | Two-col club + family | Below plan-cards | Club in dark card + Beneficio familiar in green card when applicable |

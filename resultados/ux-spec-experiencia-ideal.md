@@ -95,7 +95,7 @@ flowchart TD
  H --> W[welcome]
  W --> Q[questionnaire Q1–Q19 · adaptativo]
  Q -->|Q10=pausa| Q11n[Q11 duración de la pausa]
- Q -->|Q2=Mujer| Q12b[Q12b embarazo/posparto]
+ Q -->|Q2≠Hombre| Q12b[Q12b embarazo/posparto]
  Q -->|Q14 con hijos| Q14b[Q14b hijos &lt;12]
  Q -->|abandono| EXIT([Sale — se mide drop-off])
  Q --> L[loading<br/>1 llamada LLM]
@@ -176,10 +176,13 @@ flowchart TD
 | Condición | Disparador | Comportamiento de la UI | Mensaje |
 |---|---|---|---|
 | Estado vacío (sin clases válidas) | Todas las clases contraindicadas | Bloque 3 muestra Personal Training como alternativa | "Tu Asesor define el detalle en la visita." |
+| Queda exactamente 1 clase viable (audit L8; real en pabellón-bosques y triángulo-tecamachalco para embarazo) | Filtros dejan 1 clase | Card única + Personal Training como segundo slot | "Esta clase encaja contigo; tu Asesor complementa el resto en la visita." |
 | Error de servidor / timeout LLM | 5xx o latencia alta | Render con fallback seguro; opción de reintento | "No pudimos generar tu experiencia. Reintentar." |
 | JSON malformado del LLM | Parse falla | Página renderiza secciones hardcodeadas; arrays vacíos | — (silencioso) |
 | Texto extremadamente largo | Nombre/club muy largos | Wrap + `text-overflow: ellipsis` en chips | — |
 | Conexión lenta | Latencia alta | Skeleton en `loading` + spinner; sin bloqueo | — |
+| Fase `loading` (llamada LLM) — NFR (audit L4) | Siempre | Skeleton inmediato (0s); mensaje "Estamos armando tu experiencia…" a los ~5s; timeout con reintento a los ~15s (fallback Rule 39 si reintento falla) | "Esto está tomando más de lo normal. Reintentar." |
+| Error de red en `contact_capture`/`schedule` (audit F13) | Falla el submit | Datos retenidos en cliente; botón pasa a "Reintentar" sin perder lo escrito; tras 2 fallos, ofrece WhatsApp/BES como canal alterno | "No pudimos enviar tus datos. Reintentar." |
 | Sin cobertura de club cerca | CP/zona sin club | Muestra otros clubes + nota TooFar | "El club más cercano está a {distancia}." |
 | Embarazo / posparto / lesión / bariátrica | Q12/Q12b/Q17 | Filtro duro de clases + mensaje de seguridad | Copy contextual de seguridad (§4.3) |
 | FitKidz sin nombres de clase (10 clubes) | Estado B | Sección roja genérica, sin chips | "Tu Asesor te compartirá las actividades para tus hijos." |
@@ -217,7 +220,7 @@ flowchart TD
 > Estándar del proyecto: **WCAG 2.2 AA** (gate axe-core bloqueante), mapeo preventivo. Nota: la **EAA es legislación de la UE**; Sports World opera solo en México, así que el marco aplicable es WCAG 2.2 AA + riesgo legal local, no la EAA.
 
 ### Perceptible
-- **Contraste:** validar cada token de texto sobre su fondo ≥ **4.5:1** (texto normal) / **3:1** (grande). Riesgo conocido: rojo `#E6282A` sobre blanco da ~4.0:1 → **no usarlo para texto pequeño**, solo para fondos de botón con texto blanco o para iconografía grande. `[ACCIÓN: validar con linter de contraste]`
+- **Contraste:** validar cada token de texto sobre su fondo ≥ **4.5:1** (texto normal) / **3:1** (grande). Ratios reales medidos del rojo `#E6282A`: 4.47:1 sobre blanco, 4.09:1 sobre `#F5F5F4`, 3.78:1 sobre `#1D1D1B` — los tres **fallan** AA para texto normal. Para texto en rojo usar `#C81E20` (~5.5:1). El blanco sobre rojo solo pasa a ≥18.66px bold (ver tokens DESIGN.md).
 - **No solo color:** el estado "seleccionado" de una opción usa **borde + check**, no solo color. La sección de seguridad usa **icono "!" + texto**, no solo el ámbar.
 - **Alt text:** toda imagen de hub/club lleva `alt` descriptivo (sintaxis: "{tipo} en {club}, {acción}").
 
@@ -301,6 +304,23 @@ El cuestionario único es un riesgo de abandono. **Instrumentar drop-off por pre
 
 ---
 
+## Apéndice — Preguntas abiertas al cliente (datos; auditoría 2026-06-11)
+
+Estas preguntas BLOQUEAN el gate médico (F11) y deben resolverse con Sports World antes de congelar la matriz. Ninguna se resuelve internamente.
+
+| ID | Pregunta | Dato |
+| --- | --- | --- |
+| D1 🔴 | ¿Cuál es la disponibilidad por club de TONE, TAI CHI, AERO DANCE, SENSUAL DANCE, **ALPHA TRAINER** y **SWIM TRAINERS**? (sin columna en la matriz fuente; hoy `rankClasses` las descarta siempre) | ¿O se documentan "en catálogo, sin programación actual"? |
+| D2 🔴 | Sin SWIM TRAINERS, la única acuática programada es AQUA ZUMBA (31 clubes) → el top 2 acuático es imposible. ¿Se programa SWIM TRAINERS o se acepta render de 1 card + PT (edge L8)? | Flujo Q6=alberca |
+| D3 🟠 | 14 clubes CON alberca no ofrecen AQUA ZUMBA (barranca, cumbres, la-rioja, león, metepec, palmas, paseo-interlomas, terraza-coapa, pedregal, san-jerónimo, san-pedro, puebla, bernardo-quintana, culiacán). ¿Programación pendiente o estado esperado? | Edge alberca |
+| D4 🟠 | 5 clubes ofrecen AQUA ZUMBA SIN flag de alberca (amores, antara, anzures, reforma, roma). ¿Flag mal o clase mal asignada? | Contradicción de la fuente |
+| D5 🟡 | 6 columnas no oficiales en la matriz sin destino: BEAT N BIKE (2), INTRINITY (1), BOX 1 (2), INICIACIÓN TKD (3), ECROSS (3), FÚTBOL (3). ¿Incorporar con ficha+contraindicaciones o excluir? | Catálogo |
+| D6 🟡 | Confirmar 3 mapeos SUPUESTOS: AE YOGA→AEROYOGA (2 clubes) · HATHA YOGA 90→HATHA YOGA (4) · VINYASA YOGA 90→VINYASA YOGA (6) | Catálogo |
+| D7 🟠 | FitKidz: la matriz trae 21 actividades infantiles; el spec declara 34. ¿Faltan 13 columnas o se corrige el número? | Rule 11 / Rule 30 |
+| D8 🟠 | 4 de los 10 amenity hubs sin fuente de datos: sauna/vapor, regaderas/lockers, café, estacionamiento. ¿De dónde salen? | 145 páginas firmadas |
+| F10 🟡 | kids_classes de los 10 clubes State-B (pregunta rastreada con Gabriela) | FitKidz Estado B |
+| F14 🟡 | Confirmar schema Event para las 51 páginas de clase (tabla Rule 13 reconstruida de origen corrupto) | SEO |
+
 ## Apéndice — Trazabilidad con el documento técnico
 
 Este spec **no reemplaza** las reglas de ingeniería; las ordena bajo el estándar UX. Se conservan y referencian: cuestionario Q1–Q19 (Rule 18/19), modelo de 6 subgrupos (mapeo Q4), filtro de contraindicaciones YMYL (Rule 14b), captura de contacto (Rule 32b), brief del asesor (Appendix G) y llamada única al LLM (Appendix H) del documento `01_UX_Specification_v4_2_10.docx`.
@@ -362,22 +382,13 @@ Rules are numbered globally so they can be referenced unambiguously.
 
 | Version | Date | Description |
 | --- | --- | --- |
-| 1.0 | Feb | Initial draft (sitemap + header rules) |
-| | 2026 | |
-| 2.0 | Mar | Added questionnaire and contextual menu logic |
-| | 2026 | |
-| 3.0 | May | Added per-page matrices for the 12 page types |
-| | 2026 | |
+| 1.0 | Feb 2026 | Initial draft (sitemap + header rules). |
+| 2.0 | Mar 2026 | Added questionnaire and contextual menu logic. |
+| 3.0 | May 2026 | Added per-page matrices for the 12 page types. |
 | 4.0 | May 2026 | Restructured to industry UX Specification format. Added Project Fundamentals, Conventions, Edge Cases & Error States. Tightened glossary. |
-| 4.1 | May | Strict-adherence revision applying industry best practices (UXmatters / NN/G / |
-| | 2026 | Atlassian). Corrected brand positioning to Premium fitness (with( Premium |
-| | | family fitness ]only on FitKidz). Declared mobile-first as the methodology. |
-| | | Restructured BES as a global floating widget with /bes as fallback URL, not a destination page. Added BES + WhatsApp reminder behavior with consent. Added |
-| | | explicit membership-no-checkout rule. Enumerated the 4 live data points per club. |
-| | | Adopted YMYL as canonical term. Refined cross-linking, schema markup, FitKidz IA, |
-| | | tap targets. Removed all references to employee photographs (visual-asset rules live in |
-| | | the partner brief). Added search-query precedence rule. Added stale-plan refresh and<br>explicit accessibility floor. |
-| 4.2 | Jun 2026 | Adaptive questionnaire redesigned: 10->15 base questions + 6 conditionals (Q11, Q12b, Q14b, Q17, Q18, Q19); new individual-training pages; Rule 38 added; hub Tonificar renamed to Estética corporal. |
+| 4.1 | May 2026 | Strict-adherence revision applying industry best practices (UXmatters / NN/G / Atlassian). Corrected brand positioning to Premium fitness (Premium family fitness only on FitKidz). Declared mobile-first as the methodology. Restructured BES as a global floating widget with /bes as fallback URL. Added BES + WhatsApp reminder behavior with consent. Added explicit membership-no-checkout rule. Enumerated the 4 live data points per club. Adopted YMYL as canonical term. Refined cross-linking, schema markup, FitKidz IA, tap targets. Removed references to employee photographs. Added search-query precedence rule, stale-plan refresh and explicit accessibility floor. |
+| 4.2 | Jun 2026 | Adaptive questionnaire redesigned: 10→15 base questions + 6 conditionals (Q11, Q12b, Q14b, Q17, Q18, Q19); new individual-training pages; Rule 38 added; hub Tonificar renamed to Estética corporal. |
+| 4.3 | Jun 2026 | Consolidation pass per exhaustive audit (2026-06-11): unified Q6=alberca logic (aquatic variant, never suppress Block 1), single Block 3 ranking algorithm (Rule 40 + Q6 filter + no-apto drop), Q12b gating moved to Q2 ≠ Hombre (YMYL safety), health-data consent moment defined at Q12, template contrast/touch-target fixes, six-subgroup bridge table, pre-fill dedupe, loading NFR, open client-data questions annexed. |
 
 
 ##### A note on language
@@ -439,7 +450,7 @@ The FitKidz sub-brand is **premium family fitness**.
 
 ##### Methodology: mobile-first
 
-The site is designed and engineered mobile-first as a methodology, not as a responsive afterthought. Every layout, interaction, and rule in this specification is to be implemented starting from the mobile viewport (375 px) and progressively enhanced upward to tablet (768 px) and desktop (1280 px and above). The opposite - designing desktop and "making it responsive" later- is non-conformant.
+The site is designed and engineered mobile-first as a methodology, not as a responsive afterthought. Every layout, interaction, and rule in this specification is to be implemented starting from the mobile viewport and progressively enhanced upward. El ÚNICO sistema de breakpoints es el de los tokens (DESIGN.md): mobile 360 · tablet 768 · laptop 1024 · desktop 1440 (audit C11; la media query de 720px del template legado debe migrar a 768). The opposite - designing desktop and "making it responsive" later- is non-conformant.
 
 Where this specification describes a desktop-only behavior (such as interactions in Rule
 
@@ -735,7 +746,7 @@ Catálogo oficial del cliente. Tres familias de entrenamiento individual; cada u
 
 > **Regla de precedencia (cliente):** donde el demo contradiga los catálogos acordados (**51 clases**, **cuestionario oficial**) **prevalece lo acordado** y se ajusta el flujo. Contradicciones ya resueltas a favor de lo acordado: catálogo = **51 clases** (NO 56 — `DANZA AEREA`, `FLYBOARD`, `INTERVAL`, `FULL BODY`, `GIMNASIA DE GRUPOS`, `ACUAEROBICS` quedan fuera); **Q18** = peso actual · estatura · **cintura** (no "edad"). Mapeo de nombres crudos del demo → canónicos: `FUN TRAC`→FUNTRAC · `KINETICS BALL`→KINETIC BALL · `SH BAM`→SH'BAM · `JAZZ 90`→JAZZ · `GRIT DEMO`→GRIT · `TRAINT BOOST DEMO`→TRAINT BOOST · `HAWAIANO`→RITMOS LATINOS · `FIT Y DANCE`→FIT DANCE · `ACUAZUMBA`→AQUA ZUMBA.
 
-**1. Flujo del cuestionario (`getQuestions`).** 15 base + 6 condicionales (ver tabla normativa). Disparadores: Q11 si Q10 = "Regreso después de una pausa"; Q12b si Q2 = "Mujer"; Q14b si Q14 ∈ {"Yo y mis hijos","La familia completa"}; Q17/Q18/Q19 si Q4 incluye "Bajar de peso". Conjugación de género en Q3, Q13, Q14 cuando Q2 = Mujer.
+**1. Flujo del cuestionario (`getQuestions`).** 15 base + 6 condicionales (ver tabla normativa). Disparadores: Q11 si Q10 = "Regreso después de una pausa"; Q12b si Q2 ≠ "Hombre" (audit L1 — incluye "Prefiero no mencionarlo", con fraseo neutro); Q14b si Q14 ∈ {"Yo y mis hijos","La familia completa"}; Q17/Q18/Q19 si Q4 incluye "Bajar de peso". Conjugación de género en Q3, Q13, Q14 cuando Q2 = Mujer.
 
 **2. Resolución de bloques (`resolveBlocks`, Q6-aware).** Objetivo primario = primer Q4 seleccionado.
 - **Q6 = "En la alberca"** → si el club tiene Alberca: Block 1 y Block 2 usan las **variantes acuáticas**; si no tiene alberca: bloques secos + nota "este club no tiene alberca; revisa otros clubes cerca".
@@ -751,7 +762,7 @@ Catálogo oficial del cliente. Tres familias de entrenamiento individual; cada u
 2. **Filtro Q6**: "En la alberca" → solo acuáticas; "En piso" → solo secas.
 3. **Filtro Q9 nivel**: la clase debe incluir el nivel del usuario.
 4. **Filtro duro de contraindicaciones** (Q12, Q12b, Q17 → claves l/c/e/p/b): excluye clases contraindicadas (matriz de 51).
-5. **Score por Q4** (`profiles`): top3 = +3, apto = +1, **no apto = se descarta** ese objetivo (si es "no apto" en cualquier Q4 elegido, queda fuera). Multi-Q4 acumula.
+5. **Score por Q4** (`profiles`): top3 = +3, apto = +1, **no apto = descarta la clase**. Multi-Q4 acumula. **Nota (C8):** el algoritmo canónico es Rule 40 (añade desempates Q3 +2, Q5 +1, Q7 +1/+0.5); esta implementación del demo debe extenderse para igualarlo.
 6. Orden por score desc + alfabético → **top 2** + "también encajan" (3–5).
 
 **5. Llamada única al LLM (`callClaude`) — produce el reporte del cliente Y el brief del asesor** (1 sola llamada, Claude Sonnet, `max_tokens` 2000). System-prompt: prohíbe "plan" (usar "tu experiencia ideal"/"rutina"), códigos Qn y jerga técnica; reglas YMYL (no diagnosticar/prescribir; el asesor valida con criterio clínico). Defense-in-depth: `stripQCodes` recursivo borra cualquier Qn que el LLM filtre.
@@ -1000,7 +1011,7 @@ Matriz de contraindicaciones reorganizada por beneficio sobre el catálogo canó
 
 
 
-Catálogo canónico **51 clases** (49 secas + 2 acuáticas: AQUA ZUMBA, SWIM TRAINERS), reorganizado por **beneficio** (grupo) y **contraindicación**. Columnas: **l** lesión · **c** cardiovascular · **e** embarazo · **p** posparto · **b** bariátrica. **●** = contraindicada. **Fuente:** `clínico` = decisión original del cliente (matriz previa); `inferido` = derivado por tipo de movimiento (este pase), **PENDIENTE de validación médica (MD) antes de producción** por ser YMYL.
+Catálogo canónico **51 clases** (49 secas + 2 acuáticas: AQUA ZUMBA, SWIM TRAINERS — ⚠️ audit D1/D2: en la matriz de programación por club actual SOLO AQUA ZUMBA tiene asignación; SWIM TRAINERS y otras 5 oficiales sin datos de disponibilidad, ver «Preguntas abiertas al cliente»), reorganizado por **beneficio** (grupo) y **contraindicación**. Columnas: **l** lesión · **c** cond_cardiovascular (condición médica Q12 — NO confundir con el objetivo Q4 "Mejorar mi salud cardiovascular": CYCLING/INDBIKE son ★ para el objetivo y ● para la condición; audit M5) · **e** embarazo · **p** posparto · **b** bariátrica. **●** = contraindicada. **Fuente:** `clínico` = decisión original del cliente (matriz previa); `inferido` = derivado por tipo de movimiento (este pase), **PENDIENTE de validación médica (MD) antes de producción** por ser YMYL.
 
 > Conteos de clases contraindicadas (catálogo de 51): **lesión 21 · cardiovascular 16 · embarazo 38 · posparto 34 · bariátrica 20**. (Suben respecto a 17/14/21/21/16 porque se completaron las clases antes no listadas; los nuevos valores son mayormente `inferido` y requieren ratificación médica.)
 
@@ -1143,7 +1154,7 @@ Catálogo canónico **51 clases** (49 secas + 2 acuáticas: AQUA ZUMBA, SWIM TRA
 
 GLP-1 (Ozempic, Wegovy, Mounjaro): no classes are filtered. The research-based clinical recommendation is to PRIORITIZE strength to preserve muscle mass during treatment. A soft info message renders: "Durante tu tratamiento con GLP-1, priorizar clases de fuerza preserva tu masa muscular mientras bajas grasa. Tu Asesor lo confirma en la visita guiada."
 
-"Otra, la comento en el club" (Q12) and "Otro tratamiento médico para peso" (Q17): open-ended responses trigger an asesor-review soft message: "Mencionaste una condición o tratamiento médico. Tu plan de clases grupales ya excluye las clases contraindicadas, y tu Asesor ajusta los protocolos de pesas y cardio individual en la visita guiada según tu criterio clínico."
+"Otra, la comento en el club" (Q12) and "Otro tratamiento médico para peso" (Q17): open-ended responses trigger an asesor-review soft message: "Mencionaste una condición o tratamiento médico. Tu selección de clases grupales ya excluye las clases contraindicadas, y tu Asesor ajusta los protocolos de pesas y cardio individual en la visita guiada según tu criterio clínico."
 
 Research basis. The matrix is built from a research v2 protocol (7 search queries, 1 verbatim fetch from Les Mills official 2026, 16 verbatim quotes from 9 professional sources: ACOG Committee Opinion 2020, Les Mills official, ASMBS/PMC6147093, ACSM, Cleveland Clinic, NASM, Mount Sinai, Heart Foundation NZ, Obesity Action Coalition). Epistemic labels: [QUOTED] for Les Mills classes covered by official pregnancy modifications; [DERIVED] for non-Les Mills classes classified by dominant movement category; [INFERRED] for subgroups and aquatic blocks from physiological principles. Full audit: research_contraindicaciones_audit.md. Sports-medicine MD validation is **required (blocking gate)** before production YMYL deployment (see open dependencies).
 
@@ -1224,8 +1235,8 @@ Per the official questionnaire, there are 15 base questions always shown (Q1–Q
 | Q9 | ¿Cuál es tu nivel de entrenamiento? | Single-select, required | Principiante · Intermedio · Avanzado |
 | Q10 | ¿Vienes de otro gimnasio? | Single-select, required | Sí, vengo de otro gimnasio · Nunca he ido a un gimnasio · Regreso después de una pausa |
 | Q11 | ¿Qué tan larga fue la pausa? | Single-select, conditional (visible if Q10 = Regreso después de una pausa) | Menos de 3 meses · Entre 3 y 12 meses · Más de un año |
-| Q12 | ¿Tienes alguna condición médica? | Multi-select, required | Ninguna · Lesión o dolor articular/muscular · Condición cardiovascular o de presión · Otra, la comento en el club (helper: "Solo condiciones médicas. Embarazo no es una condición." — pregnancy captured separately in Q12b) |
-| Q12b | ¿Estás embarazada o en posparto reciente? | Single-select, conditional (visible if Q2 = Mujer) | Sí, embarazada · Sí, posparto reciente (últimos 6 meses) · No |
+| Q12 | ¿Tienes alguna condición médica? | Multi-select, required | Ninguna · Lesión o dolor articular/muscular · Condición cardiovascular o de presión · Otra, la comento en el club (helper cuando Q2 ≠ Hombre: "Solo condiciones médicas. Embarazo no es una condición." (lo pregunta Q12b después); helper cuando Q2 = Hombre: "Solo condiciones médicas." — pregnancy captured separately in Q12b) |
+| Q12b | ¿Estás embarazada o en posparto reciente? | Single-select, conditional (**visible unless Q2 = Hombre** — incluye "Prefiero no mencionarlo", audit L1: la privacidad de género no puede eliminar el screening médico; con "Prefiero no mencionarlo" se usa fraseo neutro "¿Aplica para ti alguna de estas situaciones?") | Sí, embarazo · Sí, posparto reciente (últimos 6 meses) · No |
 | Q13 | ¿Prefieres entrenar solo o acompañado? | Single-select, required | Solo/Sola, a mi ritmo · Acompañado/Acompañada, en clases o grupo · Me da igual |
 | Q14 | ¿Con quién nos visitas en el club? | Single-select, required | Solo/Sola · Con mi amigo/a · Con mi pareja · Yo y mis hijos · La familia completa |
 | Q14b | ¿Uno o más de tus hijos tiene menos de 12 años? | Single-select, conditional (visible if Q14 = "Yo y mis hijos" or "La familia completa") | Sí · No |
@@ -1248,7 +1259,7 @@ When the user marks Q4 = Bajar de peso, three optional questions (Q17 to Q19) ar
 | Q18 | Tus datos físicos actuales | Numeric, 3 fields, required | Peso actual kg (30–300) · Estatura cm (120–230) · Cintura cm (40–200). Ayuda: "Esta información permite construir un plan seguro. Se almacena bajo consentimiento LFPDPPP." |
 | Q19 | ¿Cuál es tu objetivo de cambio? | Single-select, required | 1 a 3 kilos · 3 a 6 kilos · 6 a 10 kilos · 10 a 15 kilos · Más de 15 kilos · Sin un número específico. Ayuda: "Sin promesas clínicas — los rangos son referencia, no compromiso." |
 
-Before the result is rendered, a YMYL health-disclaimer modal is shown, carrying the medical reviewer's signature (see Rule 14). This applies only to the weight-loss path. Including these optionals, the visible question count is 19 (Path C), or 20 when the pause follow-up Q11 is also active (Path D), per Rule 32.
+Before the result is rendered, a YMYL health-disclaimer modal is shown, carrying the medical reviewer's signature (see Rule 14). This applies only to the weight-loss path. For visible-question counts per path, the normative count table (Rule 32) is the single source: base 15, +3 on the weight-loss path (18), plus the other conditionals as applicable.
 
 
 ##### Rule 20 - Question pre-filling based on landing page
@@ -1266,7 +1277,7 @@ When the user lands on a specific page, the system pre-fills the questions it ca
 | Goal hub — Primeros Pasos | Q9 pre-marks "Principiante". | |
 | Goal hub — Salud y Bienestar | Q4 pre-marks "Mejorar mi salud cardiovascular". | |
 | Goal hub — Estética corporal | Q4 pre-marks "Mejorar mi estética corporal". | Renamed from Tonificar. |
-| Goal hub — Ganar Fuerza | Q4 pre-marks "Mejorar mi desempeño atlético". | |
+| Goal hub — Ganar Fuerza | Q4 pre-marks "Aumentar masa muscular" (audit L7: el hub habla de fuerza, no de potencia explosiva). | |
 | Goal hub — Rehabilitación | Q4 pre-marks "Recuperarme de una lesión o dolor". | |
 | YMYL hub — Bajar de peso | Q4 pre-marks "Bajar de peso", which activates Q17 to Q19. | |
 | Personal Training | Q13 pre-marks "Acompañado/Acompañada". | |
@@ -1505,7 +1516,7 @@ respected for animations.
 
 ##### Rule 38 - Individual-training pre-fill and result behavior when the user trains alone
 
-The site offers two top-level individual-training experiences, entrenamiento-con-pesas-individual and entrenamiento-aerobico-individual, each with four subgroups derived from current ACSM consensus (see Part 3, Individual-training subgroup taxonomy). When the user lands on any page within these two trees, Q13 pre-marks "Solo, a mi ritmo" (rendered "Sola" if Q2 = Mujer), and Q4 pre-marks the goal that corresponds to the subgroup landed on, per the mapping in Rule 20.
+The site offers two top-level individual-training experiences, entrenamiento-con-pesas-individual and entrenamiento-aerobico-individual, each mapping to six subgroups — one per Q4 goal, with the official names of the Catálogo oficial (see Part 3 and the bridge table below) — grounded in ACSM consensus. When the user lands on any page within these two trees, Q13 pre-marks "Solo, a mi ritmo" (rendered "Sola" if Q2 = Mujer), and Q4 pre-marks the goal that corresponds to the subgroup landed on, per the mapping in Rule 20.
 
 When Q13 = "Solo, a mi ritmo" (or "Sola, a mi ritmo") in the final answer, the user's Experiencia Ideal result page does not recommend group classes. Instead it recommends: (1) the individual weight-training subgroup or subgroups that match Q4 per the table in Part 3, Individual-training subgroup taxonomy; (2) the individual aerobic-training subgroup or subgroups that match Q4 per the same table. If Q4 contains two selections, the recommended set is the union of both rows, deduplicated.
 
@@ -1516,15 +1527,28 @@ The class catalog is suppressed for this user state. The contextual menu (Rules 
 
 Every user who completes the questionnaire receives a combined personalized plan composed of three structured blocks, presented in this order:
 
-1. Entrenamiento con pesas individual - one of the four subgroups in Part 3.
+1. Entrenamiento con pesas individual - one of the six official subgroups (Part 3, Catálogo oficial).
 
-2. Entrenamiento aeróbico individual - one of the four subgroups in Part 3, with user-facing presentation per Part 5 (machine, duration, and when relative to pesas), not the technical ACSM name.
+2. Entrenamiento aeróbico individual - one of the six official subgroups (Part 3, Catálogo oficial), with user-facing presentation per Part 5 (machine, duration, and when relative to pesas), not the technical ACSM name.
+
+> **Tabla puente — protocolo técnico (fichas ACSM) ↔ nombre oficial (cierra C5):**
+>
+> | Protocolo técnico (ficha) | Nombre oficial (Bloque 1) | Nombre oficial (Bloque 2) |
+> | --- | --- | --- |
+> | Fuerza (strength) | Fuerza integral con pesas / Fuerza de mantenimiento (según Q4) | — |
+> | Hipertrofia | Rutina por grupos musculares / Desarrollo muscular progresivo (según Q4) | — |
+> | Potencia | Potencia y velocidad | — |
+> | Resistencia muscular | Fuerza guiada en máquinas | — |
+> | LISS | — | Cardio ligero de mantenimiento / Recuperación activa de bajo impacto |
+> | MICT | — | Cardio continuo moderado / Base aeróbica 80/20 |
+> | HIIT | — | Cardio moderado con intervalos / Intervalos intensos 4×4 |
+> | SIT | — | (componente de Intervalos intensos 4×4, fase sprint) |
 
 3. Clases recomendadas - two top group classes with explanation, plus collapsible additional classes.
 
 Each block is default ON. A block is set OFF only when an explicit suppression condition applies. The system is auditable: any reviewer can predict which blocks the user sees by reading their questionnaire answers.
 
-Block 1 (Pesas) suppression: Q6 = "En la alberca" (exclusive aquatic preference) sets it OFF ONLY when the resolved ideal club has a pool; if the club has no pool, Block 1 stays ON (see edge case "aquatic preference but the ideal club has no pool"). Q12 containing any condition flagged in the subgroup ficha as an absolute contraindication sets it OFF. Otherwise ON, with subgroup per the Q4 mapping in Part 3.
+Block 1 (Pesas) — Q6 NEVER suppresses Block 1 (lógica única, adoptada del demo v6 y propagada a Appendix F y Part 5): when Q6 = "En la alberca" AND the resolved club has a pool, Block 1 renders its AQUATIC variant (e.g., "Fuerza acuática con equipo" per the Catálogo oficial); if the club has no pool, Block 1 renders the dry variant with the no-pool note (edge case "aquatic preference but the ideal club has no pool"). The ONLY suppression trigger is Q12 containing a condition flagged in the subgroup ficha as an absolute contraindication. Otherwise ON, with subgroup per the Q4 mapping in Part 3.
 
 Block 2 (Aeróbico) suppression: a Q12 unstabilized cardiovascular condition without clearance restricts it to Cardio suave (LISS) only, or OFF. Otherwise ON, with subgroup per the Q4 mapping in Part 3 and user-facing presentation per Part 5.
 
@@ -1539,7 +1563,7 @@ The system returns flags block_1_on, block_2_on and block_3_on. The frontend ren
 
 When Block 3 is ON, class selection executes in the backend before the LLM is invoked. The LLM does not generate, rank, or filter classes. The LLM only selects, from validated fichas, the benefit IDs and match-reason IDs to display per class.
 
-The algorithm runs in order: (1) candidate set - the full catalog of the user's ideal club, resolved from Q15 and Q16; (2) Q4 compatibility filter - keep classes whose ficha lists the Q4 goal in aplica_a_objetivos; (3) Q9 level filter - keep classes whose ficha lists Q9 in aplica_a_nivel; (4) Q12 contraindication filter - remove classes whose ficha lists any Q12 selection in contraindicaciones; (5) Q7 schedule preference - sort by overlap with the user's time-window selections; (6) final ranking by score - Q4 match (primary +3, secondary +1), Q3 match (+2), Q5 match (+1), Q7 overlap (full +1, partial +0.5), sorted descending with alphabetic tie-break; (7) partitioning into top_2, tambien_encajan (3 to 5) and resto.
+This is the SINGLE authoritative ranking algorithm (audit C8: unifies Rule 40 with the demo v6 flow). It runs in order: (1) candidate set - the full catalog of the user's ideal club, resolved from Q15 and Q16; (2) **Q6 setting filter** - "En la alberca" keeps only aquatic classes; "En piso / área seca" keeps only dry classes; "Ambas" / "Lo que mi entrenador recomiende" keep all; (3) Q4 compatibility filter - keep classes whose ficha lists the Q4 goal; **any "no apto" against any selected Q4 goal drops the class outright**; (4) Q9 level filter - keep classes whose ficha lists Q9; (5) contraindication hard filter (Q12, Q12b, Q17 → keys l/c/e/p/b) - remove contraindicated classes; (6) final ranking by score - Q4 match (top3 +3, apto +1), Q3 match (+2), Q5 match (+1), Q7 schedule overlap (full +1, partial +0.5), sorted descending with alphabetic tie-break; (7) partitioning into top_2, tambien_encajan (3 to 5) and resto. The demo v6 implementation must add the Q3/Q5/Q7 tiebreaker scoring to match this rule.
 
 The LLM receives top_2 and tambien_encajan with full fichas. It selects beneficios_seleccionados (one or two benefit IDs per class) and razon_de_match_id (one ID matching the user's primary Q4), and produces a conector_personal (15 words or fewer) referencing the user's questionnaire answers verbatim. No factual content is generated by the LLM in this block.
 
@@ -1688,11 +1712,11 @@ Individual weight-training page (class page type). Per Rule 38, Q13 pre-marks So
 
 | State | Questionnaire | Contextual menu |
 | --- | --- | --- |
-| No questionnaire | 15 questions, Q13 pre-marked Solo/Sola and Q4 pre-marked per subpage, both editable (18 if weight loss) | Tu rutina individual · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire | 15 questions, Q13 pre-marked Solo/Sola and Q4 pre-marked per subpage, both editable (18 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada (audit L6: "Tu rutina individual" solo existe con resultado generado) |
 | Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 | Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 
-Subpage Q4 pre-mark (Rule 20): Fuerza pre-marks Mejorar mi desempeño atlético; Hipertrofia pre-marks Mejorar mi estética corporal; Potencia pre-marks Mejorar mi desempeño atlético; Resistencia muscular pre-marks Mejorar mi salud cardiovascular.
+Subpage Q4 pre-mark (Rule 20, dedupe per audit C9): Fuerza pre-marks **Aumentar masa muscular**; Hipertrofia pre-marks Mejorar mi estética corporal; Potencia pre-marks Mejorar mi desempeño atlético; Resistencia muscular pre-marks Mejorar mi salud cardiovascular. Nota de coherencia landing→resultado: el pre-fill es editable; el resultado se deriva del Q4 final, por lo que puede diferir de la subpágina visitada — comportamiento intencional, documentado aquí.
 
 
 ##### entrenamiento-aerobico-individual (and subpages)
@@ -1702,11 +1726,11 @@ Individual aerobic-training page (class page type). Per Rule 38, Q13 pre-marks S
 
 | State | Questionnaire | Contextual menu |
 | --- | --- | --- |
-| No questionnaire | 15 questions, Q13 pre-marked Solo/Sola and Q4 pre-marked per subpage, both editable (18 if weight loss) | Tu rutina individual · Diseña tu experiencia · Agenda tu visita guiada |
+| No questionnaire | 15 questions, Q13 pre-marked Solo/Sola and Q4 pre-marked per subpage, both editable (18 if weight loss) | Diseña tu experiencia · Agenda tu visita guiada (audit L6: "Tu rutina individual" solo existe con resultado generado) |
 | Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 | Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 
-Subpage Q4 pre-mark (Rule 20): LISS no pre-mark; MICT pre-marks Mejorar mi salud cardiovascular; HIIT pre-marks Mejorar mi estética corporal; SIT pre-marks Mejorar mi salud cardiovascular.
+Subpage Q4 pre-mark (Rule 20, dedupe per audit C9): LISS no pre-mark; MICT pre-marks Mejorar mi salud cardiovascular; HIIT pre-marks Mejorar mi estética corporal; SIT pre-marks **Mejorar mi desempeño atlético**.
 
 
 ##### experiencia-ideal - the Experiencia Ideal result page
@@ -1716,7 +1740,7 @@ Reached only after the questionnaire is complete. It renders the combined three-
 
 | Block | Default | Suppression condition | Backend flag |
 | --- | --- | --- | --- |
-| 01 Pesas individual | ON | Q6 = En la alberca; or Q12 contains a subgroup-ficha absolute contraindication | block_1_on |
+| 01 Pesas individual | ON (dry or aquatic variant per Q6 + club pool, Rule 39) | ONLY: Q12 contains a subgroup-ficha absolute contraindication | block_1_on |
 | 02 Cardio individual | ON | Q12 unstabilized cardiovascular without clearance (restrict to Cardio suave, or OFF) | block_2_on |
 | 03 Clases recomendadas | ON | Q13 = Solo/Sola, a mi ritmo (per Rule 38) | block_3_on |
 
@@ -1884,7 +1908,7 @@ The site captures personal data at four moments: questionnaire, plan-delivery si
 
 - At every capture point, the user must see the privacy notice and give explicit consent before any data is stored. Compliance with the Mexican LFPDPPP (Ley Federal de Protección de Datos Personales en Posesión de los Particulares) is mandatory.
 - Data is stored in the client's system, not in separate web-side systems.
-- Health data (weight, height, medical conditions, medication use) requires additional, specific consent.
+- Health data (weight, height, medical conditions, medication use) requires additional, specific consent. **Momento de UI (audit L2):** el consentimiento específico de datos de salud se captura como checkbox obligatorio EN la pantalla de Q12, ANTES de que el usuario pueda responder Q12/Q12b/Q17/Q18 — no después. El health-disclaimer modal pre-resultado es adicional, no sustituto.
 - WhatsApp reminder consent (Rule 3.2) is captured separately from the general privacy consent, with explicit opt-in.
 - The user can request deletion of their data at any time, and the request is honored within the timeframes set by the applicable regulation.
 Contact-capture data (LFPDPPP). The contact-capture step (Rule 32b) collects apellido, número de celular and correo electrónico. Purpose limitation: these data are used únicamente to coordinate the visita guiada (scheduling and club details) and are not shared with third parties, consistent with the on-screen disclaimer "Tus datos se usan únicamente para coordinar tu visita guiada. No los compartimos con terceros." They are stored as result.contact and transferred to CRM under the same consent basis as the questionnaire answers.
@@ -2026,7 +2050,7 @@ Verdad sobre motivación inflada: decimos lo que el plan logra realmente, no lo 
 
 ##### Approved vocabulary
 
-construir · sostener · consolidar · mantener · recuperar · ajustar · combinar · clarificar · ritmo · constancia · consistencia · decisión · momento · forma · figura · fuerza · aguante · base · repetición · semana · sesión · objetivo · resultado · trabajo · entrenamiento. · crecimiento muscular · ritmo conversacional · intervalos al máximo · intervalos cortos al máximo · técnica controlada · fuerza sostenida en posturas · conciencia corporal · saltos explosivos · cuerpo completo · centro del cuerpo · patrones de movimiento · pérdida de grasa.
+construir · sostener · consolidar · mantener · recuperar · ajustar · combinar · clarificar · ritmo · constancia · consistencia · decisión · momento · forma · figura · fuerza · aguante · base · repetición · semana · sesión · objetivo · resultado · trabajo · entrenamiento · crecimiento muscular · ritmo conversacional · intervalos al máximo · intervalos cortos al máximo · técnica controlada · fuerza sostenida en posturas · conciencia corporal · saltos explosivos · cuerpo completo · centro del cuerpo · patrones de movimiento · pérdida de grasa.
 
 
 ##### Forbidden vocabulary
@@ -2052,7 +2076,7 @@ RESTRICCIONES YMYL: si el lead tiene condición médica, embarazo/posparto, o tr
 | Q3 selection | Approved hook example |
 | --- | --- |
 | Desconectado/a del trabajo y la rutina | El día se queda en la puerta. Lo que entrenas aquí es tuyo, y el cuerpo lo agradece cuando sales. |
-| Renovado/a y de buen ánimo | La energía no se finge: se construye con movimiento. Entrenar temprano cambia cómo llegas al resto del día. |
+| Renovado/a y de buen ánimo | La energía no se finge: se construye con movimiento. Cada sesión cambia cómo llegas al resto de tu día. |
 | Confiado/a en que mi cuerpo no me va a fallar | La confianza en tu cuerpo se gana con constancia, calibrada a tu punto de partida. No es fuerza máxima: es base sostenida. |
 | Más a gusto conmigo mismo/a | Sentirte mejor contigo no llega de golpe. Se construye en cada sesión sostenida y en cada semana que vuelves. |
 | Parte de una comunidad saludable | Entrenar acompañado sostiene la constancia. En el club hay gente en el mismo camino, a tu ritmo, sin competir. |
@@ -2083,10 +2107,11 @@ The conector_personal is the only zone where the LLM has prose-generation freedo
 
 | Q13 | Q14 | Intent line template |
 | --- | --- | --- |
-| Solo/Sola, a mi ritmo | Solo/Sola, es mi momento | Tu espacio para entrenar a tu propio ritmo, lejos del ruido del día. |
+| Solo/Sola, a mi ritmo | Solo/Sola | Tu espacio para entrenar a tu propio ritmo, lejos del ruido del día. |
 | Solo/Sola, a mi ritmo | Con mi amigo/a | Tu Experiencia Ideal es individual; tu amigo/a tiene la suya, en el mismo club. |
 | Solo/Sola, a mi ritmo | Con mi pareja / La familia completa | Tu rutina personal en un club donde tu familia también encuentra lo suyo. |
-| Acompañado/a, en clases o grupo | Solo/Sola, es mi momento | Tu momento sola, con la opción de clases en grupo cuando lo decidas. |
+| Solo/Sola, a mi ritmo | Yo y mis hijos | Tu rutina a tu ritmo mientras tus hijos tienen FitKidz en el mismo club. |
+| Acompañado/a, en clases o grupo | Solo/Sola | Tu momento sola, con la opción de clases en grupo cuando lo decidas. |
 | Acompañado/a, en clases o grupo | Con mi amigo/a | Entrenar acompañada de tu amigo/a en las clases que escogiste. |
 | Acompañado/a, en clases o grupo | Con mi pareja | Clases y rutina con tu pareja, en el mismo horario. |
 | Acompañado/a, en clases o grupo | Yo y mis hijos / La familia completa | Tu rutina en grupo mientras tus hijos tienen FitKidz en el mismo club. |
@@ -2095,7 +2120,7 @@ The conector_personal is the only zone where the LLM has prose-generation freedo
 
 ##### Plan-argument rules (hero paragraph)
 
-The hero plan argument explains why the combined plan is most powerful for the user's Q4. It is 1 to 2 sentences, 45 words or fewer; names the three blocks explicitly using their user-facing labels (Hipertrofia / Caminadora o bicicleta / clases by name), not abstract "ejercicios"; closes affirming personalization - "No es una experiencia genérica: es la combinación que tus respuestas pidieron" (or an approved variant); and uses no superlatives (el mejor, la única forma, lo más efectivo).
+The hero plan argument explains why the combined plan is most powerful for the user's Q4. It is 1 to 2 sentences, 45 words or fewer; names the three blocks explicitly using their user-facing labels (Rutina por grupos musculares / Caminadora o bicicleta / clases by name), not abstract "ejercicios"; closes affirming personalization - "No es una experiencia genérica: es la combinación que tus respuestas pidieron" (or an approved variant); and uses no superlatives (el mejor, la única forma, lo más efectivo).
 
 
 ##### Infrastructure-argument rules
@@ -2137,15 +2162,17 @@ Secondary: Reiniciar cuestionario
 
 ##### Hard constraints
 
-One viewport on desktop (800 px or less on 1280-wide screens). Three screen heights or fewer on mobile (2700 px or less on 900-tall viewports); reference rendered total around 1,350 px. No exclamation marks. All factual content (subgroup names, prescription summaries, class names, benefits, match reasons, club name, distance, features, machine recommendations) is sourced from the backend or fichas. Brand tokens: Pantone Black C #1D1D1B, Pantone 485C #E6282A (accent only), Pantone Bright White; Montserrat (900 headlines, 600-700 kickers/tags, 400-500 body).
+Página 1 fits in one desktop viewport (800 px or less on 1280-wide screens); Página 2 continues below per the Two-page split. Three screen heights or fewer on mobile (2700 px or less on 900-tall viewports); reference rendered total around 1,350 px. No exclamation marks. All factual content (subgroup names, prescription summaries, class names, benefits, match reasons, club name, distance, features, machine recommendations) is sourced from the backend or fichas. Brand tokens: Pantone Black C #1D1D1B, Pantone 485C #E6282A (accent only), Pantone Bright White; Montserrat (900 headlines, 600-700 kickers/tags, 400-500 body).
 
 
 ##### Suppression variants
 
-Block 1 OFF (Q6 = alberca): the Block 1 card is not rendered; hero argument - "Combinamos cardio para sostener definición y dos clases grupales que mantienen la motivación cinco días a la semana"; the infrastructure paragraph emphasizes the pool. Block 3 OFF (Q13 = solo): the Block 3 card is hidden; hero argument - "Combinamos pesas para construir forma y cardio para sostener definición, en tu propio ritmo, sin clases grupales"; the contextual menu renames Clases recomendadas to Tu rutina individual. Block 1 and Block 3 both OFF: only Block 2 renders, with the hero restricted to the aquatic-aerobic narrative. All three OFF: system error per Rule 39, rendering the asesor handoff card.
+Block 1 aquatic variant (Q6 = alberca, club with pool — per unified Rule 39 logic, Block 1 is NOT suppressed): the Block 1 card renders the aquatic subgroup; hero argument names the aquatic strength work plus cardio and group classes; the infrastructure paragraph emphasizes the pool. (Legacy "Block 1 OFF" wording superseded by demo v6.) Block 3 OFF (Q13 = solo): the Block 3 card is hidden; hero argument - "Combinamos pesas para construir forma y cardio para sostener definición, en tu propio ritmo, sin clases grupales"; the contextual menu renames Clases recomendadas to Tu rutina individual. Block 1 and Block 3 both OFF: only Block 2 renders, with the hero restricted to the aquatic-aerobic narrative. All three OFF: system error per Rule 39, rendering the asesor handoff card.
 
 
 ##### Embedded HTML reference (verbatim)
+
+> ⚠️ **SUPERSEDED (audit C2).** La definición AUTORITATIVA de la página de resultado es la tabla «Visual architecture (client view)» (arquitectura v6: barra roja 4px, 4 summary cards, banner CTA rosa, bloques azul/verde/gris #EEF5FF/#EDF8F1/#F3F4F6, club+familia, sección seguridad ámbar) — implementada por el demo JSX. Este HTML es la referencia COMPACTA legada: conserva valor como semántica/CSS base, pero donde difiera de la tabla v6 (colores de bloque uniformes, sin summary cards/banner/seguridad) **gana la tabla v6**. Los colores de bloque v6 deben añadirse al :root.
 
 <!DOCTYPE html>
 
@@ -2169,7 +2196,7 @@ body { font-family:'Montserrat',sans-serif; color:var(--black); background:var(-
 
 .page { flex:1; max-width:1080px; margin:0 auto; width:100%; padding:1.75rem 2rem 2rem; display:flex; flex-direction:column; gap:1.25rem; }
 
-.hero__kicker { font-size:.6875rem; letter-spacing:.22em; text-transform:uppercase; color:var(--red); font-weight:700; margin-bottom:.5rem; }
+.hero__kicker { font-size:.6875rem; letter-spacing:.22em; text-transform:uppercase; color:#C81E20; font-weight:700; margin-bottom:.5rem; } /* audit C1: #E6282A 4.47:1 falla AA a 11px */
 
 .hero__name { font-size:2.25rem; font-weight:900; line-height:1.05; letter-spacing:-.02em; margin-bottom:.625rem; }
 
@@ -2185,7 +2212,7 @@ body { font-family:'Montserrat',sans-serif; color:var(--black); background:var(-
 
 .club { background:var(--black); color:var(--white); border-radius:6px; padding:1.25rem 1.5rem; display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; align-items:start; }
 
-.club__kicker { font-size:.625rem; letter-spacing:.22em; text-transform:uppercase; color:var(--red); font-weight:700; margin-bottom:.375rem; }
+.club__kicker { font-size:.625rem; letter-spacing:.22em; text-transform:uppercase; color:var(--white); opacity:.85; font-weight:700; margin-bottom:.375rem; } /* audit C1: rojo/negro 3.78:1 falla */
 
 .club__name { font-size:1.375rem; font-weight:900; line-height:1.1; margin-bottom:.375rem; }
 
@@ -2217,7 +2244,7 @@ body { font-family:'Montserrat',sans-serif; color:var(--black); background:var(-
 
 .block__why { font-size:.8125rem; color:var(--gray-4); margin-bottom:.875rem; flex:1; line-height:1.45; }
 
-.block__action { font-size:.75rem; color:var(--red); font-weight:700; text-decoration:none; border-bottom:1px solid var(--red); padding-bottom:2px; align-self:flex-start; }
+.block__action { font-size:.75rem; color:#C81E20; font-weight:700; text-decoration:none; border-bottom:1px solid #C81E20; align-self:flex-start; min-height:44px; display:inline-flex; align-items:center; } /* audit L3+C1: target ≥44px, rojo AA */
 
 .classes__list { flex:1; margin-bottom:.875rem; }
 
@@ -2231,9 +2258,9 @@ body { font-family:'Montserrat',sans-serif; color:var(--black); background:var(-
 
 .cta { text-align:center; padding-top:.875rem; border-top:1px solid var(--gray-2); }
 
-.cta__button { display:inline-block; background:var(--red); color:var(--white); font-size:.9375rem; font-weight:700; padding:.875rem 2.25rem; border:none; cursor:pointer; border-radius:4px; text-decoration:none; }
+.cta__button { display:inline-block; background:var(--red); color:var(--white); font-size:1.1875rem; font-weight:700; padding:.875rem 2.25rem; border:none; cursor:pointer; border-radius:4px; text-decoration:none; } /* audit C1: blanco/rojo pasa AA solo ≥18.66px bold → 19px */
 
-.cta__secondary { margin-top:.875rem; display:flex; justify-content:center; gap:1.5rem; font-size:.75rem; }
+.cta__secondary { margin-top:.875rem; display:flex; justify-content:center; gap:1.5rem; font-size:.75rem; } .cta__secondary a { min-height:44px; display:inline-flex; align-items:center; } /* audit L3 */
 
 .cta__secondary a { color:var(--gray-4); text-decoration:none; font-weight:500; }
 
@@ -2407,8 +2434,8 @@ The client Experiencia Ideal page incorporates these visual elements (LLM-person
 | --- | --- | --- |
 | Top bar rojo | Top of page | 4px bar, #E6282A |
 | Brand box | Header right | "SPORTS WORLD" (800) + "Tu experiencia, a tu medida" (gray) |
-| Summary cards (4) | Below header | Tu objetivo (Q4[0]) · Tu nivel (Q9) · Tu horario (Q8+Q7[0]) · Entrenas con (mapped from Q14: A tu ritmo / Con tus hijos / Con tu familia) |
-| CTA-row | Between summary and plan-cards | Pink banner (#FFF4F4 / #F3B9BC): "Conoce el club y valida tu experiencia con un Asesor…" + red button AGENDAR VISITA GUIADA |
+| Summary cards (4) | Below header | Tu objetivo (Q4[0]) · Tu nivel (Q9) · Tu horario (Q8+Q7[0]) · Entrenas con (mapped from Q14: A tu ritmo / Con tu amigo/a / Con tu pareja / Con tus hijos / Con tu familia) |
+| CTA-row | Between summary and plan-cards | Pink banner (#FFF4F4 / #F3B9BC): "Conoce el club y valida tu experiencia con un Asesor…" + red button "Agendar visita guiada" (pill rojo; sin all-caps por Rule 9) |
 | Plan-cards with colors | Three bloque cards | 01 blue (#EEF5FF) · 02 green (#EDF8F1) · 03 gray (#F3F4F6). PT fallback uses dark background. |
 | Section title + numbered circle | Above plan-cards | Black circle "1" + "Tres componentes para una experiencia equilibrada" |
 | Two-col club + family | Below plan-cards | Club in dark card + Beneficio familiar in green card when applicable |
@@ -2437,7 +2464,7 @@ Explicitly NOT adopted from the reference preview: the wording "Plan recomendado
 
 ##### FitKidz availability — three-state render
 
-FitKidz availability per club is a boolean flag amenidades.includes('FitKidz'), separate from the kids_classes catalog. 40 of the 49 clubs offer FitKidz (matches the official CSV); the old logic kids_classes.length>0 wrongly returned 30. Render states: State A (30 clubs, offers FitKidz + named kids classes) → red section with class chips and "Conoce FitKidz →". State B (10 clubs, offers FitKidz + kids_classes empty) → red section, generic copy "Este club ofrece FitKidz. Tu Asesor te compartirá el detalle de actividades y horarios disponibles para tus hijos en tu visita guiada.", no chips. State C (rare) → gray section "Este club no ofrece FitKidz. Otros clubes cerca de ti sí lo tienen — revisa la lista de otros clubes."
+FitKidz availability per club is a boolean flag amenidades.includes('FitKidz'), separate from the kids_classes catalog. 40 of the 49 clubs offer FitKidz (matches the official CSV); the old logic kids_classes.length>0 wrongly returned 30. Render states: State A (30 clubs, offers FitKidz + named kids classes) → red section with class chips and "Conoce FitKidz →". State B (10 clubs, offers FitKidz + kids_classes empty) → red section, generic copy "Este club ofrece FitKidz. Tu Asesor te compartirá el detalle de actividades y horarios disponibles para tus hijos en tu visita guiada.", no chips. State C (9 de 49 clubes = 18%, audit D9 — flujo normal, no excepcional: amores, antara, anzures, apodaca, condesa, pabellón-bosques, reforma, roma, triángulo-tecamachalco) → gray section "Este club no ofrece FitKidz. Otros clubes cerca de ti sí lo tienen — revisa la lista de otros clubes."
 
 The 10 State-B club tags: pedregal, felix-cuevas, miguel-angel-de-quevedo, san-jeronimo, zona-esmeralda, san-pedro, puebla, bernardo-quintana, esfera-queretaro, culiacan. Resolver dependency: when Q14 ∈ {"Yo y mis hijos", "La familia completa"} and Q14b = "Sí", the resolver treats FitKidz as a required amenity and picks from the 40-club universe (clubMeetsAmenity uses the flag, not kids_classes.length). The 10 State-B clubs have authoritative FitKidz availability but incomplete kids_classes data; the open client question to Gabriela for the missing kids class names is tracked in open dependencies.
 
