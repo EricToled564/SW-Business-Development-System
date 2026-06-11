@@ -1110,10 +1110,9 @@ questionnaire variables from what they searched:
 - Location (Q15 and Q16) - only if the search contained a specific location.
 The following inferences are not drawn:
 
-- A class search does not fill in the goal, because the same class can serve multiple goals.
+- A class search (external query) does not fill in the goal, because the same class can serve multiple goals. (Landing on a class hub still pre-marks Q4 per Rule 20.)
 - An amenity search does not fill in movement preference (Q5 or Q6), because amenity preference does not determine training style.
-- Landing on FitKidz does not fill in companion (Q14), because the user may be researching the program for their kids while planning to train solo.
-- Landing on Personal Training does not fill in companion preference (Q13), because the user may simply be browsing.
+- Scope note: Rule 16 governs ONLY inference from the external search query. Landing-page pre-fills are governed by Rule 20 and Rule 20 is authoritative where they overlap: FitKidz landing pre-fills Q14, Personal Training landing pre-fills Q13, and class/goal-hub landing pre-marks Q4.
 - Landing on the Bajar de peso hub does not force the weight-loss optionals; those optionals
 only activate when the user actually marks Q4 = Bajar de peso in the questionnaire.
 
@@ -1142,7 +1141,7 @@ The standard questionnaire collects 16 base questions, coded Q1 to Q16. Three ar
 
 | Code | Question (ES MX) | Type | Options / Field |
 | --- | --- | --- | --- |
-| Q1 | Nombre completo | Text, required | Campo de texto libre |
+| Q1 | Nombre (de pila) | Text, required | Solo el nombre de pila; el apellido se pide al agendar (contact_capture). Sistema construye nombre completo como {Q1} {apellido}. |
 | Q2 | Género | Single-select, required | Hombre · Mujer · Prefiero no mencionarlo |
 | Q3 | ¿Qué quieres sentir al salir del club? | Single-select, required | Desconectado/a del trabajo y la rutina · Renovado/a y de buen ánimo · Parte de una comunidad saludable · Confiado/a en que mi cuerpo no me va a fallar · Más a gusto conmigo mismo/a (feminine forms if Q2 = Mujer) |
 | Q4 | ¿Qué buscas? | Multi-select, max 2, required | Bajar de peso · Mejorar mi estética corporal y definición muscular · Aumentar masa muscular · Mejorar mi desempeño atlético · Mejorar mi salud cardiovascular · Recuperarme de una lesión o dolor crónico |
@@ -1165,6 +1164,8 @@ Gender concordance (Q3, Q13, Q14). If Q2 = Mujer, render feminine forms ("Descon
 
 
 ##### Rule 19 - The weight-loss optionals (Q17 to Q19)
+
+> Aclaración (C-audit M6): "optionals" = **condicionales del path de peso**: solo aparecen si Q4 = Bajar de peso, pero **una vez en ese path son obligatorias** (no se pueden saltar). El descriptor de tipo "required" es correcto.
 
 When the user marks Q4 = Bajar de peso, three optional questions (Q17 to Q19) are appended after Q16. They are shown for no other goal; in particular, Q4 = Mejorar mi estética corporal does not trigger them.
 
@@ -2348,7 +2349,7 @@ Page types. 11 in scope (numbered 1-11), see Section 3.1. BES is implemented as 
 
 ##### Questionnaire codes.
 
-- Q1 (name), Q2 (gender), Q3 (emotion), Q4 (goal), Q5 (pace), Q6 (setting), Q7 (time), Q8 (days), Q9 (level), Q10 (gym history), Q11 (pause length, conditional on Q10), Q12 (medical, with conditional Embarazo option when Q2 = Mujer), Q13 (companion self, gender-concordant), Q14 (companion visit, gender-concordant), Q15 (geography intent), Q16 (location, XOR código postal / colonia).
+- Q1 (name), Q2 (gender), Q3 (emotion), Q4 (goal), Q5 (pace), Q6 (setting), Q7 (time), Q8 (days), Q9 (level), Q10 (gym history), Q11 (pause length, conditional on Q10), Q12 (medical; pregnancy/postpartum is NOT inside Q12 — captured separately in Q12b when Q2 = Mujer), Q13 (companion self, gender-concordant), Q14 (companion visit, gender-concordant), Q15 (geography intent), Q16 (location, XOR código postal / colonia).
 - Weight-loss optionals, visible when Q4 includes Bajar de peso, add Q17 (current health), Q18 (physical data), Q19 (change goal). The legacy P-series (P1 to P10) and its weight-loss variant (P10-WL, P11-WL, P12-WL) are retired permanently per the code-immutability principle and are not reassigned.
 Cityclassificationcodes.  CIUDAD-1,  CIUDAD-POCOS,	.See Rule 24.
 
@@ -2802,7 +2803,7 @@ Fixed disclaimer line below the body: "Esta recomendación orienta la selección
 
 ##### Rejected elements (do not regress)
 
-Explicitly NOT adopted from the reference preview: the wording "Plan recomendado" (use "experiencia ideal"/"tu experiencia"); generic block descriptions ("Fuerza adaptada / Movimientos controlados"); the generic "Clase guiada" placeholder (use LLM-picked top 2 with personalized connectors); the static brand-name placeholder block (all personalization derives from Q1-Q17 + the LLM call).
+Explicitly NOT adopted from the reference preview: the wording "Plan recomendado" (use "experiencia ideal"/"tu experiencia"); generic block descriptions ("Fuerza adaptada / Movimientos controlados"); the generic "Clase guiada" placeholder (use LLM-picked top 2 with personalized connectors); the static brand-name placeholder block (all personalization derives from Q1-Q19 + the LLM call).
 
 
 ##### FitKidz availability — three-state render
