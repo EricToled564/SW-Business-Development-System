@@ -26,7 +26,7 @@
   - *Secundario:* el **Asesor** (ventas) que recibe el brief y agenda la visita guiada; el **agente de voz** que responde y coordina.
   - *Fuera de escena:* entrenadores que definen ejercicios en la primera sesión; equipo de marketing/SEO que gobierna los hubs.
 - **Qué (comportamiento medible / Jobs to be Done).** El visitante debe: **encontrar** el sitio en Google → **completar** el cuestionario Experiencia Ideal → **dejar** sus datos de contacto → **agendar** la visita guiada. Se mide con: tráfico orgánico, tasa de finalización del cuestionario, leads cualificados y tiempo de primera respuesta.
-- **Cómo (táctica/UI).** Arquitectura de **hubs SEO** (páginas indexables de alto volumen) que alimentan el flujo **Experiencia Ideal**: un cuestionario guiado **adaptativo** (14–21 preguntas según género, pausa, hijos y path de peso) que entrega una recomendación personalizada (Bloque 1 pesas · Bloque 2 cardio · Bloque 3 clases) + captura de contacto + brief para el asesor + agente de voz.
+- **Cómo (táctica/UI).** Arquitectura de **hubs SEO** (páginas indexables de alto volumen) que alimentan el flujo **Experiencia Ideal**: un cuestionario guiado **adaptativo** (15–21 preguntas según género, pausa, hijos y path de peso) que entrega una recomendación personalizada (Bloque 1 pesas · Bloque 2 cardio · Bloque 3 clases) + captura de contacto + brief para el asesor + agente de voz.
 
 ### 1.2 Justificación macro (estrategia de negocio)
 
@@ -36,7 +36,7 @@ El motor de crecimiento es **SEO de estructura**, no publicidad pagada. Hoy el s
 
 | Decisión | Por qué esta y no otra |
 |---|---|
-| **Cuestionario único guiado** (adaptativo, 14–21 preguntas) en vez de formulario corto | Es una **herramienta interactiva de valor** (calculadora de "experiencia ideal"): el usuario entrega datos a cambio de una recomendación personalizada, lo que mitiga el rebote de los formularios largos. *Riesgo:* sigue siendo largo → se mide abandono por pregunta (ver §10) y se evalúa perfilado progresivo si el abandono supera el umbral. |
+| **Cuestionario único guiado** (adaptativo, 15–21 preguntas) en vez de formulario corto | Es una **herramienta interactiva de valor** (calculadora de "experiencia ideal"): el usuario entrega datos a cambio de una recomendación personalizada, lo que mitiga el rebote de los formularios largos. *Riesgo:* sigue siendo largo → se mide abandono por pregunta (ver §10) y se evalúa perfilado progresivo si el abandono supera el umbral. |
 | **Rojo de marca `#E6282A`** reservado a CTA y acentos | Señala acción/conversión; nunca se usa en bloques de texto para no diluir la jerarquía. |
 | **Tres bloques de color** (azul/verde/gris) para la recomendación | Segmentan cognitivamente los tres componentes del entrenamiento; reducen carga al separar "qué hago con pesas / cardio / clases". |
 | **Captura de contacto DESPUÉS del resultado** | El usuario ya recibió valor (su recomendación); pedir datos en ese momento maximiza la conversión y la calidad del lead. |
@@ -129,7 +129,7 @@ flowchart TD
 ### 4.2 Cuestionario (`questionnaire`, Q1–Q19)
 
 - **Propósito:** cualificar y personalizar; recolectar los datos del lead.
-- **Estructura:** 16 preguntas base **Q1–Q16** (de las cuales **Q11** es condicional por pausa, dentro del set base) + condicionales **Q12b** (embarazo/posparto, si Q2=Mujer) y **Q14b** (hijos <12) + optativas del path de peso **Q17–Q19**. Total real **14–21** según ruta (la **tabla normativa de conteo por ruta** queda **pendiente** de resolver C5 contigo — Fase 3).
+- **Estructura (cuestionario oficial):** **15 preguntas base** siempre visibles (Q1–Q10, Q12, Q13, Q14, Q15, Q16) + **6 condicionales**: **Q11** (si Q10=pausa), **Q12b** (si Q2=Mujer), **Q14b** (hijos <12) y **Q17–Q19** (si Q4 incluye Bajar de peso). Total real **15–21** según ruta (ver tabla normativa de conteo en la Parte Técnica).
 - **Un paso por pantalla**, barra de progreso, botón "Continuar" deshabilitado hasta responder.
 - **Estados interactivos:** opción `default / hover / focus-visible / selected / disabled`; botón `default / hover / active / disabled / loading`.
 - **Validación inline (en tiempo real):**
@@ -377,7 +377,7 @@ Rules are numbered globally so they can be referenced unambiguously.
 |   |   | Adopted YMYL as canonical term. Refined cross-linking, schema markup, FitKidz IA, |
 |   |   | tap targets. Removed all references to employee photographs (visual-asset rules live in |
 |   |   | the partner brief). Added search-query precedence rule. Added stale-plan refresh and<br>explicit accessibility floor. |
-| 4.2 | Jun 2026 | Adaptive questionnaire redesigned: 10->16 base questions + 3 WL optionals + 3 conditionals (Q11, Q12b, Q14b); new individual-training pages; Rule 38 added; hub Tonificar renamed to Estética corporal. |
+| 4.2 | Jun 2026 | Adaptive questionnaire redesigned: 10->15 base questions + 6 conditionals (Q11, Q12b, Q14b, Q17, Q18, Q19); new individual-training pages; Rule 38 added; hub Tonificar renamed to Estética corporal. |
 
 
 ##### A note on language
@@ -1191,12 +1191,12 @@ Concretely: for the example query, the user lands on the Bajar de peso hub (Q4 w
 
 #### Rule 18 - The base questionnaire (16 questions)
 
-The standard questionnaire collects 16 base questions, coded Q1 to Q16. Three are conditional within the base set: Q11 is shown only when Q10 = "Regreso después de una pausa"; Q12b (pregnancy or postpartum) is shown only when Q2 = Mujer; and Q14b (children under 12) is shown only when Q14 = "Yo y mis hijos" or "La familia completa". Pregnancy is no longer an option inside Q12 — it is captured separately in Q12b. The weight-loss optionals (Q17 to Q19) are defined in Rule 19. Question copy is production Spanish (MX); type descriptors are engineering notes. All pre-filled answers remain editable.
+Per the official questionnaire, there are 15 base questions always shown (Q1–Q10, Q12, Q13, Q14, Q15, Q16) plus six conditional questions: Q11 (only if Q10 = "Regreso después de una pausa"), Q12b (only if Q2 = Mujer), Q14b (only if Q14 = "Yo y mis hijos" or "La familia completa"), and the weight-loss conditionals Q17, Q18, Q19 (only if Q4 includes "Bajar de peso", see Rule 19). Visible count ranges 15–21 (normative table below). Pregnancy is not an option inside Q12 — captured separately in Q12b. Question copy is production Spanish (MX); type descriptors are engineering notes. All pre-filled answers remain editable.
 
 
 | Code | Question (ES MX) | Type | Options / Field |
 | --- | --- | --- | --- |
-| Q1 | Nombre (de pila) | Text, required | Solo el nombre de pila; el apellido se pide al agendar (contact_capture). Sistema construye nombre completo como {Q1} {apellido}. |
+| Q1 | ¿Cómo te llamas? | Text, required | Texto libre. Placeholder: "Tu nombre completo". |
 | Q2 | Género | Single-select, required | Hombre · Mujer · Prefiero no mencionarlo |
 | Q3 | ¿Qué quieres sentir al salir del club? | Single-select, required | Desconectado/a del trabajo y la rutina · Renovado/a y de buen ánimo · Parte de una comunidad saludable · Confiado/a en que mi cuerpo no me va a fallar · Más a gusto conmigo mismo/a (feminine forms if Q2 = Mujer) |
 | Q4 | ¿Qué buscas? | Multi-select, max 2, required | Bajar de peso · Mejorar mi estética corporal y definición muscular · Aumentar masa muscular · Mejorar mi desempeño atlético · Mejorar mi salud cardiovascular · Recuperarme de una lesión o dolor crónico |
@@ -1207,13 +1207,13 @@ The standard questionnaire collects 16 base questions, coded Q1 to Q16. Three ar
 | Q9 | ¿Cuál es tu nivel de entrenamiento? | Single-select, required | Principiante · Intermedio · Avanzado |
 | Q10 | ¿Vienes de otro gimnasio? | Single-select, required | Sí, vengo de otro gimnasio · Nunca he ido a un gimnasio · Regreso después de una pausa |
 | Q11 | ¿Qué tan larga fue la pausa? | Single-select, conditional (visible if Q10 = Regreso después de una pausa) | Menos de 3 meses · Entre 3 y 12 meses · Más de un año |
-| Q12 | ¿Tienes alguna condición médica? | Multi-select, required | Ninguna · Lesión o dolor articular/muscular · Condición cardiovascular o de presión · Otra, la comento en el club  (helper: "Solo condiciones médicas. El embarazo lo preguntamos por separado en la siguiente pantalla." — pregnancy moved to Q12b) |
+| Q12 | ¿Tienes alguna condición médica? | Multi-select, required | Ninguna · Lesión o dolor articular/muscular · Condición cardiovascular o de presión · Otra, la comento en el club  (helper: "Solo condiciones médicas. Embarazo no es una condición." — pregnancy captured separately in Q12b) |
 | Q12b | ¿Estás embarazada o en posparto reciente? | Single-select, conditional (visible if Q2 = Mujer) | Sí, embarazada · Sí, posparto reciente (últimos 6 meses) · No |
 | Q13 | ¿Prefieres entrenar solo o acompañado? | Single-select, required | Solo/Sola, a mi ritmo · Acompañado/Acompañada, en clases o grupo · Me da igual |
-| Q14 | ¿Con quién nos visitas en el club? | Single-select, required | Solo/Sola, es mi momento · Con mi amigo/a · Con mi pareja · Yo y mis hijos · La familia completa |
+| Q14 | ¿Con quién nos visitas en el club? | Single-select, required | Solo/Sola · Con mi amigo/a · Con mi pareja · Yo y mis hijos · La familia completa |
 | Q14b | ¿Uno o más de tus hijos tiene menos de 12 años? | Single-select, conditional (visible if Q14 = "Yo y mis hijos" or "La familia completa") | Sí · No |
 | Q15 | ¿Buscas el gimnasio cerca de tu casa o de tu trabajo? | Single-select, required | Cerca de mi casa · Cerca de mi trabajo · Ambos · No me importa |
-| Q16 | ¿Dónde queda? | Two fields, at least one required (OR) | Campo A: Código postal (5 dígitos numéricos) · Campo B: Colonia con autocompletado SEPOMEX (devuelve CP + colonia + estado para desambiguar a escala nacional); texto libre solo como fallback (ver edge case 6.3). Al menos uno debe estar presente; ambos es aceptable. |
+| Q16 | ¿Dónde queda? | Two fields, at least one required (OR) | Helper: "Llena uno: código postal o colonia." Campo A: Código postal (5 dígitos) · Campo B: Colonia (autocompletado SEPOMEX en implementación → CP + colonia + estado; texto libre como fallback, edge case 6.3). Al menos uno debe estar presente; ambos es aceptable. |
 
 Gender concordance (Q3, Q13, Q14). If Q2 = Mujer, render feminine forms ("Desconectada", "Renovada", "Confiada", "conmigo misma", "Sola", "Acompañada"). Otherwise the masculine default applies.
 
@@ -1227,8 +1227,8 @@ When the user marks Q4 = Bajar de peso, three optional questions (Q17 to Q19) ar
 
 | Code | Question (ES MX) | Type | Options / Field |
 | --- | --- | --- | --- |
-| Q17 | ¿Estás tomando algún tratamiento para bajar de peso? | Multi-select, conditional (visible if Q4 includes Bajar de peso) | GLP-1 (Ozempic, Wegovy, Mounjaro) · Cirugía bariátrica · Acompañamiento nutricional con especialista · Otro tratamiento médico para peso · Ninguno |
-| Q18 | Tus datos físicos actuales | Numeric, 3 fields, required | Peso kg (30–300) · Altura cm (120–230) · Edad años (15–90). Ayuda: "Esta información permite construir un plan seguro. Se almacena bajo consentimiento LFPDPPP." |
+| Q17 | ¿Estás tomando algún tratamiento para bajar de peso? | Multi-select, conditional (visible if Q4 includes Bajar de peso) | GLP-1 (Ozempic, Wegovy, Mounjaro) · Cirugía bariátrica · Acompañamiento nutricional con especialista · Otro tratamiento médico para peso · Ninguno. Helper: "Solo tratamientos activos. Las condiciones médicas ya las anotaste antes." |
+| Q18 | Tus datos físicos actuales | Numeric, 3 fields, required | Peso actual kg (30–300) · Estatura cm (120–230) · Cintura cm (40–200). Ayuda: "Esta información permite construir un plan seguro. Se almacena bajo consentimiento LFPDPPP." |
 | Q19 | ¿Cuál es tu objetivo de cambio? | Single-select, required | 1 a 3 kilos · 3 a 6 kilos · 6 a 10 kilos · 10 a 15 kilos · Más de 15 kilos · Sin un número específico. Ayuda: "Sin promesas clínicas — los rangos son referencia, no compromiso." |
 
 Before the result is rendered, a YMYL health-disclaimer modal is shown, carrying the medical reviewer's signature (see Rule 14). This applies only to the weight-loss path. Including these optionals, the visible question count is 19 (Path C), or 20 when the pause follow-up Q11 is also active (Path D), per Rule 32.
@@ -1455,7 +1455,20 @@ The user completed the questionnaire and reached this page by clicking a button 
 
 The user completed the questionnaire previously but reached this page through a different path (external search, internal navigation, etc.).
 
-When the user has completed the questionnaire, they always have a club identified - the questionnaire questions that identify the club (Q15 and Q16) are part of the 16 base questions. The number of visible questions depends on the path: 16 base questions (Path A), 17 when the pause follow-up Q11 is active (Path B), 19 with the weight-loss optionals Q17 to Q19 (Path C), or 20 with both the pause follow-up and the weight-loss optionals (Path D).
+When the user has completed the questionnaire, they always have a club identified - the questionnaire questions that identify the club (Q15 and Q16) are part of the 15 base questions. Visible-question count by path (base 15 plus conditionals): 15 with no conditionals; +1 if Q11 (pause); +1 if Q12b (Q2 = Mujer); +1 if Q14b (children <12); +3 if Q17–Q19 (Q4 includes Bajar de peso). Range 15–21. See the normative count table below.
+
+> **Tabla normativa de conteo de preguntas (cierra C5):**
+
+| Condición activa | Se añade | Δ |
+| --- | --- | :-: |
+| Base — siempre visible | Q1–Q10, Q12, Q13, Q14, Q15, Q16 | **15** |
+| Q10 = "Regreso después de una pausa" | + Q11 | +1 |
+| Q2 = Mujer | + Q12b | +1 |
+| Q14 ∈ {"Yo y mis hijos", "La familia completa"} | + Q14b | +1 |
+| Q4 incluye "Bajar de peso" | + Q17, Q18, Q19 | +3 |
+| **Mínimo** (sin condicionales) | | **15** |
+| **Máximo** (todas activas) | | **21** |
+
 
 
 ##### Rule 32b -  Contact-capture step (between result and scheduling)
@@ -1597,7 +1610,7 @@ No questionnaire· with inferred location
 
 Questionnaire complete (always outside the flow on home)
 
-16 standard questions (19 if weight loss)
+15 standard questions (18 if weight loss)
 
 16 questions, Q4 pre-filled and editable (19 if weight loss)
 
@@ -1622,9 +1635,9 @@ State	Questionnaire	Contextual menu
 
 No questionnaire·single-club city
 
-14 standard questions
+13 standard questions
 
-(17 if weight loss)
+(16 if weight loss)
 
 visita  guiada]
 
@@ -1645,13 +1658,13 @@ Complete, outside the flow • city with more than 3 clubs
 - -  Amenity
 State
 
-14 standard questions
+13 standard questions
 
-(17 if weight loss)
+(16 if weight loss)
 
-14 standard questions
+13 standard questions
 
-(17 if weight loss)
+(16 if weight loss)
 
 Already complete
 
@@ -1679,11 +1692,11 @@ No questionnaire • no club selected • with inferred location
 
 No questionnaire· with club selected
 
-16 standard questions (19 if weight loss)
+15 standard questions (18 if weight loss)
 
 16 questions, Q15 and Q16 pre-filled and editable (19 if weight loss)
 
-16 standard questions (19 if weight loss)
+15 standard questions (18 if weight loss)
 
 experiencia]·[Agenda tu visita
 
@@ -1939,11 +1952,11 @@ Complete, inside the flow
 
 Complete, outside the flow
 
-16 standard questions (19 if weight loss)
+15 standard questions (18 if weight loss)
 
 16 questions with Q15 and Q16 pre-filled and editable (19 if weight loss)
 
-16 standard questions (19 if weight loss)
+15 standard questions (18 if weight loss)
 
 Already complete
 
@@ -1974,11 +1987,11 @@ Complete, inside the flow
 
 Complete, outside the flow
 
-16 standard questions (19 if weight loss)
+15 standard questions (18 if weight loss)
 
 16 questions with Q15 and Q16 pre-filled and editable (19 if weight loss)
 
-16 standard questions (19 if weight loss)
+15 standard questions (18 if weight loss)
 
 Already complete
 
@@ -2280,7 +2293,7 @@ Mexican professional license number. Required visible on YMYL pages for the medi
 
 (External-search inference]
 
-Design your experience. The 16-question base questionnaire (19 with the weight-loss optionals) that captures user information to build a personalized plan.
+Design your experience. The 15-question base questionnaire (18 with the weight-loss optionals) that captures user information to build a personalized plan.
 
 When the system deduces information about the user (goal, location) from the words the user typed into the search engine before reaching the site.
 
@@ -2372,7 +2385,7 @@ Name of the side drawer on the site, containing the 8 main hubs of classic navig
 
 Web Content Accessibility Guidelines, version 2.2, level AA. Mandatory for every page on this site (Rule 35).
 
-Version of the questionnaire that activates when the user answers Q4 = Bajar de peso. 19 questions in total (the base 16 plus the weight-loss optionals Q17 to Q19); includes a health-disclaimer modal before the result.
+Version of the questionnaire that activates when the user answers Q4 = Bajar de peso. 18 questions in total (the base 15 plus the weight-loss optionals Q17 to Q19); includes a health-disclaimer modal before the result.
 
 Your Money or Your Life - Google search-quality terminology for content that could affect a user's health or finances. Sports World's [ Bajar de peso )hub, rehabilitation hub, and some Journal articles are YMYL. Triggers Rule 14.
 
