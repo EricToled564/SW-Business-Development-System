@@ -1158,6 +1158,63 @@ Catálogo canónico **51 clases** (49 secas + 2 acuáticas: AQUA ZUMBA, SWIM TRA
 | SWIM TRAINERS |  | ● |  |  |  | inferido |
 | TRAINT BOOST | ● | ● | ● | ● | ● | clínico |
 
+**Fichas de clases grupales (Block 3) — perfil por objetivo Q4 + nivel.** Leyenda: ★ top (prioridad) · ✓ apto · — no apto (se descarta para ese objetivo). Nivel: P/I/A. 💧 acuática. Mapeado del demo a las 51 canónicas (nombres crudos del demo reconciliados; 6 no-canónicas descartadas).
+
+| Clase | Nivel | Bajar peso | Estética/def. | Masa | Desempeño | Cardiovascular | Lesión |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| AERO DANCE | PI | ✓ | ✓ | — | — | ✓ | — |
+| AEROYOGA | PIA | — | ✓ | — | — | ✓ | ✓ |
+| ALPHA TRAINER | IA | ✓ | ✓ | ★ | ★ | ✓ | — |
+| AQUA ZUMBA 💧 | PI | ✓ | ✓ | — | — | ✓ | ✓ |
+| ASHTANGA YOGA | IA | — | ✓ | — | ✓ | ✓ | — |
+| BAILE DE SALÓN | PI | — | — | — | — | ✓ | ✓ |
+| BALL PILATES | PIA | — | ✓ | — | — | ✓ | ✓ |
+| BELLY DANCE | PI | ✓ | ✓ | — | — | ✓ | — |
+| BODY ATTACK | IA | ✓ | ✓ | — | ★ | ✓ | — |
+| BODY BALANCE | PIA | — | ✓ | — | — | ✓ | ✓ |
+| BODY COMBAT | PIA | ★ | ✓ | — | ✓ | ★ | — |
+| BODY JAM | IA | ✓ | ✓ | — | ✓ | ✓ | — |
+| BODY PUMP | PIA | ★ | ★ | ★ | ✓ | ✓ | — |
+| BODY STEP | IA | ✓ | ✓ | — | ✓ | ✓ | — |
+| CORE | PIA | ✓ | ✓ | ✓ | ✓ | — | — |
+| CX WORX | PIA | ✓ | ★ | ✓ | ✓ | — | — |
+| CYCLING | PIA | ✓ | ✓ | — | ✓ | ★ | ✓ |
+| FIT DANCE | PI | ✓ | ✓ | — | — | ✓ | — |
+| FUNTRAC | PIA | ✓ | ✓ | ✓ | ✓ | ✓ | — |
+| GRIT | A | ✓ | ✓ | ✓ | ★ | ✓ | — |
+| HATHA YOGA | PIA | — | ✓ | — | — | ✓ | ★ |
+| INDBIKE | PIA | ★ | ✓ | — | ✓ | ★ | ✓ |
+| JAZZ | IA | — | ✓ | — | — | ✓ | — |
+| KINETIC BALL | PIA | — | ✓ | — | — | ✓ | ✓ |
+| KINETIC CHAIN | IA | ✓ | ✓ | ★ | ✓ | — | — |
+| KINETIC PUMP | PIA | ✓ | ★ | ✓ | ✓ | ✓ | — |
+| MAT PILATES | PIA | — | ✓ | — | — | ✓ | ★ |
+| NATURAL MOTION | PIA | — | ✓ | — | ✓ | ✓ | ✓ |
+| POUND | PI | ✓ | ✓ | — | — | ✓ | — |
+| POWER CYCLING | IA | ✓ | ✓ | — | ✓ | ✓ | — |
+| POWER JUMP | IA | ✓ | ✓ | — | ✓ | ✓ | — |
+| RACE WALKER | PI | ✓ | ✓ | — | — | ✓ | ✓ |
+| REFORMER PILATES | PIA | — | ✓ | — | — | ✓ | ✓ |
+| RITMOS LATINOS | PI | ✓ | ✓ | — | — | ✓ | — |
+| RPM | IA | ✓ | ✓ | — | ✓ | ✓ | — |
+| SENSUAL DANCE | PI | — | ✓ | — | — | ✓ | — |
+| SH'BAM | PIA | ✓ | ✓ | — | ✓ | ✓ | — |
+| STEP | PIA | ✓ | ✓ | — | — | ✓ | — |
+| STRETCH | PIA | — | — | — | — | — | ✓ |
+| STRONG NATION | IA | ✓ | ✓ | — | ✓ | ✓ | — |
+| SWIM TRAINERS 💧 | PIA | ✓ | ✓ | — | ✓ | ✓ | ★ |
+| TAI CHI | PIA | — | — | — | — | ✓ | ✓ |
+| TONE | PIA | ✓ | ✓ | ✓ | — | ✓ | — |
+| TOTAL BARRE | PIA | ✓ | ✓ | ✓ | — | ✓ | — |
+| TRAINT BOOST | IA | ✓ | ✓ | ✓ | ✓ | ✓ | — |
+| URBAN DANCE | IA | ✓ | ✓ | — | ✓ | ✓ | — |
+| VINYASA YOGA | IA | ✓ | ✓ | — | ✓ | ✓ | — |
+| YOGA RESTAURATIVA | PIA | — | — | — | — | — | ✓ |
+| ZUMBA FITNESS | PI | ✓ | ✓ | — | — | ✓ | — |
+| ZUMBA STEP | PI | ✓ | ✓ | — | — | ✓ | — |
+| ZUMBA TONING | PI | ✓ | ✓ | — | — | ✓ | — |
+
+
 
 
 ##### Out of the matrix — contextual messaging only (no class filtered)
