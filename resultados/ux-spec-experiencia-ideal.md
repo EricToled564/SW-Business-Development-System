@@ -14,6 +14,33 @@
 
 ---
 
+## Resumen ejecutivo
+
+**Los problemas que motivan el rediseño** (documentados como objetivos firmados):
+
+1. El sitio aparece en menos del 1% de las búsquedas "gym para bajar de peso" → hub **`/bajar-de-peso/`** con contenido YMYL y firma médica visible (cédula profesional, Rule 14).
+2. Queda fuera del top 100 en búsquedas como "yoga cerca de mí" → **una página dedicada por clase**: 51 adultas (7 Les Mills + 44 regulares) + hub FitKidz con 34 infantiles (Part 3).
+3. "Gym near me" aterriza en home en lugar del club más cercano → detección de ubicación y **ruteo al club más cercano** (tabla de routing, Rule 15).
+4. *(Operacional)* El usuario llena un formulario y pasan días sin contacto del asesor → **BES 24/7** resuelve dudas operativas en el momento (Rule 3); el Asesor humano entra cuando aporta valor real. Primera respuesta <1 min.
+
+**Tres activos que ningún competidor reúne:** **49** clubes en 13 estados (32 en la zona metro del Valle de México, 17 en el resto del país) · catálogo de **51+34** clases · y el activo único: **cada clase clasificada por su contribución exacta a cada objetivo del usuario** (fichas del anexo clínico; gate de validación médica).
+
+**La tesis del proyecto:** conocer profundamente al usuario es lo que permite proponerle *la experiencia ideal*.
+
+`CUESTIONARIO → CONOCIMIENTO → EXPERIENCIA IDEAL → LEAD CALIFICADO`
+
+**El prospecto llega por una de cuatro puertas** — home (1) · club (49) · clase/amenidad (61) · objetivo (6 hubs) — y todas conducen al mismo destino: **«Diseña tu experiencia»**, el cuestionario oficial de **15 preguntas base + 6 condicionales** (Q1–Q19, 15–21 visibles). Cada puerta carga información implícita y el sistema la usa (Rule 16/20): aterrizar en un club **omite Q15/Q16** (quedan 13; 16 en el path de peso); aterrizar en una clase o un hub de objetivo **pre-marca Q4**; el path de peso agrega Q17–Q19 y el **modal YMYL** antes del resultado. El usuario no ve menús: ve recomendaciones (menú contextual por estado, Rules 23–31).
+
+**El resultado es un documento editorial personalizado, no una lista:** hook que conecta con su motivación (Q3) + tarjetas resumen + card **Club Ideal** solo con datos verificables (Rule 42) + **tres bloques** — 01 Fuerza · 02 Cardio · 03 Clases del catálogo real del club resuelto, filtradas por el filtro duro de contraindicaciones YMYL — con conectores "Porque mencionaste que…". **Honra la decisión del usuario:** si cambia el club, recalcula; si cambia una clase, reordena (Rule 41); nunca bloquea, nunca insiste.
+
+**BES** no es un FAQ: es el knowledge hub completo del club con capacidad de acción en el chat (precios, promos, horarios, schedule de clases, membresías, agendar la visita), por texto o voz. Lo sensible **no lo ejecuta directo**: cancelaciones, congelamientos y reembolsos se capturan, abren ticket en CRM y conectan con el Asesor (Rule 3.1). Recordatorios de visita por WhatsApp a 24 h y 2 h (Rule 3.2).
+
+**El cierre de valor: la guía del Asesor.** Cada lead llega al club con el brief de Appendix G — **5 preguntas de validación**, **ruta de visita de 4 pasos** (conectar con su objetivo · tour enfocado · resolver el bloqueador · cerrar con siguiente paso), propuesta principal + complemento, **3 prioridades de cierre** y un guion de cierre ≤60 palabras — priorizado por banderas (familia/hijos, condición médica, viene de otro gimnasio, principiante, regreso de pausa). El Asesor convierte **sin re-preguntar nada** de lo que el usuario ya respondió: ése es el valor real para los 49 equipos de venta.
+
+**Metas firmadas:** duplicar el tráfico orgánico (**80,000 → 160,000 visitas/mes en 3 meses**) · **2x leads cualificados** · primera respuesta **<1 min, 24/7**.
+
+---
+
 ## 1. Racionalidad del Diseño (Design Rationale)
 
 ### 1.1 Cadena de razonamiento (Por qué → Quién → Qué → Cómo)
