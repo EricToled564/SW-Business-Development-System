@@ -15,6 +15,22 @@ for f in files:
 
 missing = [s['id'] for s in raw if s['id'] not in trans]
 
+def format_design_frontmatter(body, lang):
+    """The DESIGN.md YAML front matter must render as a code block, not flattened prose."""
+    if '```' in body:
+        return body  # already fenced (idempotent)
+    b = body.strip()
+    if b.startswith('---'):
+        b = b[3:]
+        if b.rstrip().endswith('---'):
+            b = b.rstrip()[:-3]
+    intro = ("Machine-readable design tokens (DTCG/YAML). They are the source of the color, type, "
+             "spacing and contrast values; the body of the document explains them in prose below."
+             if lang == 'en' else
+             "Tokens de diseño en formato legible por máquina (DTCG/YAML). Son la fuente de los valores "
+             "de color, tipografía, espaciado y contraste; el cuerpo del documento los explica en prosa abajo.")
+    return intro + "\n\n```yaml\n" + b.strip() + "\n```"
+
 # EN-side patches for sections whose ORIGINAL language is English (annotation
 # notes translated for the English edition in resultados/en/)
 enpatch_path = os.path.join(HERE, '_enpatch.json')
@@ -25,8 +41,15 @@ for s in raw:
     src = s['lang']                      # original language of this section
     tgt = 'en' if src == 'es' else 'es'  # translated language
     tr = trans.get(s['id'], {})
-    title = {src: s['title'], tgt: tr.get('title', '')}
-    body  = {src: s['body'],  tgt: tr.get('body', '')}
+    s_title, s_body = s['title'], s['body']
+    tr_title, tr_body = tr.get('title', ''), tr.get('body', '')
+    if s['id'] == 'intro-design':
+        s_title = 'Tokens de diseño' if s_title in ('(intro)', '') else s_title
+        tr_title = 'Design tokens' if tr_title in ('(intro)', '') else tr_title
+        s_body = format_design_frontmatter(s_body, src)
+        tr_body = format_design_frontmatter(tr_body, tgt) if tr_body else tr_body
+    title = {src: s_title, tgt: tr_title}
+    body  = {src: s_body,  tgt: tr_body}
     if src == 'en' and s['id'] in enpatch:
         title['en'] = enpatch[s['id']].get('title', title['en'])
         body['en']  = enpatch[s['id']].get('body',  body['en'])
