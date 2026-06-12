@@ -9,6 +9,7 @@
 | Stack de salida | Next.js + React + TypeScript + Tailwind · SSR/ISR · CMS desacoplado |
 | Herramienta de handoff | `[POR DEFINIR — enlazar Figma inspect]` |
 | Documentos del paquete | `DESIGN.md` (tokens + lineamientos premium) · `anexo-clinico.md` · `anexo-contenido-prompts.md` · `anexo-ingenieria-crm.md` |
+| Prototipo de referencia | `sw_experiencia_ideal_demo_v6_FINAL.jsx` — implementación funcional del flujo cuestionario→resultado→brief; donde difiera de este documento, gobierna este documento |
 
 > **Cómo leer este documento.** Las secciones 1–12 siguen el orden estándar de un spec UX: del porqué (negocio) al qué (arquitectura, flujos, pantallas) y al cómo se verifica (edge cases, accesibilidad, aceptación, métricas). Las reglas conservan su número estable (`Rule N`) para referencia cruzada con el código y los anexos; el **Apéndice G** indexa cada regla con su sección. El copy de interfaz citado entre comillas es verbatim y en es-MX.
 
@@ -23,7 +24,7 @@
 - **2. Personas y customer journey**
   - 2.1 Personas
   - 2.2 Customer journey — el embudo que conecta las tres metas
-  - 2.3 Insights del research que informan el diseño
+  - 2.3 Hallazgos del estudio de usuarios que informan el diseño
 - **3. Arquitectura de información y SEO**
   - 3.1 Inventario de páginas
   - 3.2 Detalle por tipo de página
@@ -212,7 +213,7 @@ deben permanecer idénticos en el código, el copy del CMS y los archivos de dis
 
 ## 2. Personas y customer journey
 
-> Los arquetipos vienen del research del cliente (`Consumer Journey — Sports World`); aquí se expresan sobre la **maquinaria real del sitio**, porque para eso existe: las **155 páginas firmadas** (§3) son la red que captura sus búsquedas en Google (de ahí sale el 80,000→160,000), **«Diseña tu experiencia»** (Q1–Q19) es el instrumento que los convierte en lead cualificado, y el **brief del Asesor** (Apéndice G) es lo que el negocio recibe a cambio. Donde el research usa marcos propios (funnel de 8 fases, "10 preguntas", Help Center, member portal), este spec usa sus estructuras normativas: cuestionario Q1–Q19, fases del flujo y tipos de página de la §3.
+> Los arquetipos provienen del estudio de usuarios de Sports World (*Consumer Journey*); aquí se expresan sobre la maquinaria real del sitio: las **155 páginas** (§3) son la red que captura sus búsquedas en Google (de ahí sale el 80,000→160,000), **«Diseña tu experiencia»** (Q1–Q19) es el instrumento que los convierte en lead cualificado, y el **brief del Asesor** (Apéndice G) es lo que el negocio recibe a cambio.
 
 ### 2.1 Personas
 
@@ -276,11 +277,11 @@ journey
 
 Las fases técnicas exactas (welcome · questionnaire · loading · result · contact_capture · schedule · briefing · error) y todas las bifurcaciones están en **§4** y **§5**.
 
-### 2.3 Insights del research que informan el diseño
+### 2.3 Hallazgos del estudio de usuarios que informan el diseño
 
-Cada insight del research se conecta con una regla/sección **ya acordada** (no introduce un marco nuevo):
+Cada hallazgo del estudio de usuarios se atiende con una regla o sección específica de este documento:
 
-| Insight del journey | Dónde se atiende en el spec |
+| Hallazgo del estudio | Dónde se atiende en este documento |
 | --- | --- |
 | Las puertas de entrada revelan intención | Pre-fill por aterrizaje (Rule 20) + inferencia de búsqueda (Rule 16); el hub `/bajar-de-peso/` es la puerta de mayor volumen y pre-marca Q4 (activa Q17–Q19) |
 | Invitación no bloqueante, persistente como botón | «Diseña tu experiencia» en header (Rule 1) y menú contextual mientras el cuestionario esté incompleto (Rule 27); al completarlo cambia a «Volver a tu experiencia ideal» (Rule 28) |
@@ -289,7 +290,6 @@ Cada insight del research se conecta con una regla/sección **ya acordada** (no 
 | Meseta silenciosa (sem. 4–6) y regreso tras ausencia = mayor churn | **Fuera del alcance del sitio** (retención/CRM post-venta); se anota como dependencia, no se diseña aquí |
 | Benchmarks: NPS 47.3 · retención 66.4% · 50% churn a 6 meses (sector) | Contexto de §12; el sitio impacta **captación**, no la retención post-venta |
 
-> **Nota de alcance.** El research describe "10 preguntas, 1 minuto" y artefactos de otros proyectos (Help Center, app, member portal). El instrumento normativo es el **cuestionario oficial de 15+6 (Rule 18)**; el Help Center está fuera de alcance (Rule 37 — lo cubre BES); app y portal son proyectos aparte. La meta de tiempo de completado se mide contra el instrumento oficial (riesgo de abandono, §12.3).
 
 ---
 
@@ -322,7 +322,7 @@ Total de páginas firmadas: 1 + 49 + 10 + 7 + 44 + 1 + 5 + 1 + 1 + 6 + 20 + 10 =
 
 > El alcance de este spec es de **155 páginas** (los 12 tipos de la tabla).
 
-BES. El asistente conversacional es un widget global flotante presente en cada página (Rule 3). También expone una URL de fallback para usuarios sin JavaScript y para deep-linking. BES se entrega como un workstream aparte con su propia especificación; este documento cubre solo sus puntos de integración e interfaces de comportamiento con el resto del sitio.
+BES. El asistente conversacional es un widget global flotante presente en cada página (Rule 3). También expone una URL de fallback para usuarios sin JavaScript y para deep-linking. BES se entrega como un proyecto aparte con su propia especificación; este documento cubre solo sus puntos de integración e interfaces de comportamiento con el resto del sitio.
 
 ### 3.2 Detalle por tipo de página
 
@@ -504,7 +504,7 @@ Los siguientes temas quedan intencionalmente fuera del alcance de esta especific
 - viven en el paquete de assets de marca entregado al partner en la Semana 1.
 
 - Proceso del proyecto (gates de aprobación, calendario de entregables, capacidades del proveedor, términos comerciales) - viven en el brief del partner.
-- Reglas de producción de contenido (scoring anti-contenido-duplicado, detalles del registro del español-MX más allá de los CTAs, criterios de selección de artículos del Journal) - viven en el brief del workstream de contenido.
+- Reglas de producción de contenido (scoring anti-contenido-duplicado, detalles del registro del español-MX más allá de los CTAs, criterios de selección de artículos del Journal) - viven en la guía del equipo de contenido.
 
 ---
 
@@ -613,7 +613,7 @@ El prellenado siempre es editable por el usuario.
 
 ### 4.5 Pipeline de la aplicación (cuestionario → resultado → brief)
 
-> **Normativo vs. referencia.** Los catálogos oficiales (51 clases; cuestionario Q1–Q19) son **normativos**; el demo `sw_experiencia_ideal_demo_v6_FINAL.jsx` es **referencia de implementación**. Donde difieran, gobierna este documento. En particular: catálogo = **51 clases** (`DANZA AEREA`, `FLYBOARD`, `INTERVAL`, `FULL BODY`, `GIMNASIA DE GRUPOS` y `ACUAEROBICS` no existen en el catálogo); **Q18** captura peso · estatura · **cintura**. Mapeo de nombres del demo → canónicos: `FUN TRAC`→FUNTRAC · `KINETICS BALL`→KINETIC BALL · `SH BAM`→SH'BAM · `JAZZ 90`→JAZZ · `GRIT DEMO`→GRIT · `TRAINT BOOST DEMO`→TRAINT BOOST · `HAWAIANO`→RITMOS LATINOS · `FIT Y DANCE`→FIT DANCE · `ACUAZUMBA`→AQUA ZUMBA.
+> El catálogo oficial de 51 clases y el cuestionario Q1–Q19 son **normativos**. El **prototipo de referencia** (`sw_experiencia_ideal_demo_v6_FINAL.jsx`, ver portada) implementa este flujo; donde difiera, gobierna este documento. En particular: el catálogo es de **51 clases** (`DANZA AEREA`, `FLYBOARD`, `INTERVAL`, `FULL BODY`, `GIMNASIA DE GRUPOS` y `ACUAEROBICS` no existen en él) y **Q18** captura peso · estatura · **cintura**. Mapeo de nombres del prototipo → canónicos: `FUN TRAC`→FUNTRAC · `KINETICS BALL`→KINETIC BALL · `SH BAM`→SH'BAM · `JAZZ 90`→JAZZ · `GRIT DEMO`→GRIT · `TRAINT BOOST DEMO`→TRAINT BOOST · `HAWAIANO`→RITMOS LATINOS · `FIT Y DANCE`→FIT DANCE · `ACUAZUMBA`→AQUA ZUMBA.
 
 **1. Flujo del cuestionario (`getQuestions`).** 15 base + 6 condicionales (ver tabla normativa). Disparadores: Q11 si Q10 = "Regreso después de una pausa"; Q12b si Q2 ≠ "Hombre"; Q14b si Q14 ∈ {"Yo y mis hijos","La familia completa"}; Q17/Q18/Q19 si Q4 incluye "Bajar de peso". Conjugación de género en Q3, Q13, Q14 cuando Q2 = Mujer.
 
@@ -631,7 +631,7 @@ El prellenado siempre es editable por el usuario.
 2. **Filtro Q6**: "En la alberca" → solo acuáticas; "En piso" → solo secas.
 3. **Filtro Q9 nivel**: la clase debe incluir el nivel del usuario.
 4. **Filtro duro de contraindicaciones** (Q12, Q12b, Q17 → claves l/c/e/p/b): excluye clases contraindicadas (matriz de 51).
-5. **Score por Q4** (`profiles`): top3 = +3, apto = +1, **no apto = descarta la clase**. Multi-Q4 acumula. **Nota (C8):** el algoritmo canónico es Rule 40 (añade desempates Q3 +2, Q5 +1, Q7 +1/+0.5); esta implementación del demo debe extenderse para igualarlo.
+5. **Score por Q4** (`profiles`): top3 = +3, apto = +1, **no apto = descarta la clase**. Multi-Q4 acumula. El algoritmo canónico es Rule 40 (añade los desempates Q3 +2, Q5 +1, Q7 +1/+0.5); el prototipo de referencia debe extenderse para igualarlo.
 6. Orden por score desc + alfabético → **top 2** + "también encajan" (3–5).
 
 **5. Llamada única al LLM (`callClaude`) — produce el reporte del cliente Y el brief del asesor** (1 sola llamada; modelo y parámetros en `anexo-ingenieria-crm.md` R12). System-prompt: prohíbe "plan" (usar "tu experiencia ideal"/"rutina"), códigos Qn y jerga técnica; reglas YMYL (no diagnosticar/prescribir; el asesor valida con criterio clínico). Defense-in-depth: `stripQCodes` recursivo borra cualquier Qn que el LLM filtre.
@@ -1081,7 +1081,7 @@ Antes de renderizar el resultado, se muestra un modal de aviso de salud YMYL, qu
 
 #### Q4 admite hasta dos objetivos (Rule 21)
 
-Q4 (objetivo) es siempre multiselección con un máximo de dos objetivos. El usuario puede elegir una o dos de las seis opciones de objetivo, en cualquier combinación. Ya no existe una excepción específica para bajar de peso: queda retirado el comportamiento del legacy P1 de selección única salvo pérdida de peso. Cuando se seleccionan dos objetivos, la página de resultado y las recomendaciones de entrenamiento individual usan la unión de los mapeos de ambos objetivos, deduplicada, según la Rule 38 y §3.3.
+Q4 (objetivo) es siempre multiselección con un máximo de dos objetivos. El usuario puede elegir una o dos de las seis opciones de objetivo, en cualquier combinación. No existe ninguna excepción por objetivo: Q4 es multiselección con máximo dos en todos los casos. Cuando se seleccionan dos objetivos, la página de resultado y las recomendaciones de entrenamiento individual usan la unión de los mapeos de ambos objetivos, deduplicada, según la Rule 38 y §3.3.
 
 ### 5.17 Resultado — la página Experiencia Ideal
 
@@ -1118,7 +1118,7 @@ Cada usuario que completa el cuestionario recibe un plan personalizado combinado
 
 Cada bloque está ON por defecto. Un bloque se pone OFF solo cuando aplica una condición de supresión explícita. El sistema es auditable: cualquier revisor puede predecir qué bloques ve el usuario leyendo sus respuestas del cuestionario.
 
-Bloque 1 (Pesas) — Q6 NUNCA suprime el Bloque 1 (lógica única, adoptada del demo v6 y propagada a Apéndice F y §5): cuando Q6 = "En la alberca" Y el club resuelto tiene alberca, el Bloque 1 muestra su variante ACUÁTICA (p. ej., "Fuerza acuática con equipo" según el Catálogo oficial); si el club no tiene alberca, el Bloque 1 muestra la variante en seco con la nota de sin alberca (caso límite "preferencia acuática pero el club ideal no tiene alberca"). El ÚNICO disparador de supresión es que Q12 contenga una condición marcada en la ficha del subgrupo como contraindicación absoluta. En caso contrario ON, con subgrupo según el mapeo de Q4 en §3.
+Bloque 1 (Pesas) — Q6 NUNCA suprime el Bloque 1: cuando Q6 = "En la alberca" Y el club resuelto tiene alberca, el Bloque 1 muestra su variante ACUÁTICA (p. ej., "Fuerza acuática con equipo" según el Catálogo oficial); si el club no tiene alberca, el Bloque 1 muestra la variante en seco con la nota de sin alberca (caso límite "preferencia acuática pero el club ideal no tiene alberca"). El ÚNICO disparador de supresión es que Q12 contenga una condición marcada en la ficha del subgrupo como contraindicación absoluta. En caso contrario ON, con subgrupo según el mapeo de Q4 en §3.
 
 Supresión del Bloque 2 (Aeróbico): una condición cardiovascular no estabilizada en Q12 sin autorización médica lo restringe a solo Cardio suave (LISS), o lo pone OFF. En caso contrario ON, con subgrupo según el mapeo de Q4 en §3 y presentación de cara al usuario según §5.
 
@@ -1156,7 +1156,7 @@ Base de investigación: `research_contraindicaciones_audit.md` (protocolo v2, 9 
 
 Cuando el Bloque 3 está ON, la selección de clases se ejecuta en el backend antes de invocar al LLM. El LLM no genera, ordena ni filtra clases. El LLM solo selecciona, a partir de fichas validadas, los IDs de beneficio y los IDs de razón de match a mostrar por clase.
 
-Este es el ÚNICO algoritmo de ranking con autoridad. Se ejecuta en este orden: (1) conjunto de candidatas - el catálogo completo del club ideal del usuario, resuelto a partir de Q15 y Q16; (2) **filtro de entorno Q6** - "En la alberca" conserva solo clases acuáticas; "En piso / área seca" conserva solo clases en seco; "Ambas" / "Lo que mi entrenador recomiende" conservan todas; (3) filtro de compatibilidad Q4 - conservar las clases cuya ficha lista el objetivo de Q4; **cualquier "no apto" frente a cualquier objetivo Q4 seleccionado descarta la clase de inmediato**; (4) filtro de nivel Q9 - conservar las clases cuya ficha lista Q9; (5) filtro duro de contraindicaciones (Q12, Q12b, Q17 → claves l/c/e/p/b) - eliminar las clases contraindicadas; (6) ranking final por puntuación - coincidencia con Q4 (top3 +3, apto +1), coincidencia con Q3 (+2), coincidencia con Q5 (+1), solapamiento de horario Q7 (completo +1, parcial +0.5), ordenado de forma descendente con desempate alfabético; (7) partición en top_2, tambien_encajan (3 a 5) y resto. La implementación del demo v6 debe añadir la puntuación de desempate Q3/Q5/Q7 para ajustarse a esta regla.
+Este es el ÚNICO algoritmo de ranking con autoridad. Se ejecuta en este orden: (1) conjunto de candidatas - el catálogo completo del club ideal del usuario, resuelto a partir de Q15 y Q16; (2) **filtro de entorno Q6** - "En la alberca" conserva solo clases acuáticas; "En piso / área seca" conserva solo clases en seco; "Ambas" / "Lo que mi entrenador recomiende" conservan todas; (3) filtro de compatibilidad Q4 - conservar las clases cuya ficha lista el objetivo de Q4; **cualquier "no apto" frente a cualquier objetivo Q4 seleccionado descarta la clase de inmediato**; (4) filtro de nivel Q9 - conservar las clases cuya ficha lista Q9; (5) filtro duro de contraindicaciones (Q12, Q12b, Q17 → claves l/c/e/p/b) - eliminar las clases contraindicadas; (6) ranking final por puntuación - coincidencia con Q4 (top3 +3, apto +1), coincidencia con Q3 (+2), coincidencia con Q5 (+1), solapamiento de horario Q7 (completo +1, parcial +0.5), ordenado de forma descendente con desempate alfabético; (7) partición en top_2, tambien_encajan (3 a 5) y resto. El prototipo de referencia debe añadir la puntuación de desempate Q3/Q5/Q7 para cumplir esta regla.
 
 El LLM recibe top_2 y tambien_encajan con las fichas completas. Selecciona beneficios_seleccionados (uno o dos IDs de beneficio por clase) y razon_de_match_id (un ID que coincide con el Q4 primario del usuario), y produce un conector_personal (15 palabras o menos) que hace referencia literal a las respuestas del cuestionario del usuario. El LLM no genera ningún contenido factual en este bloque.
 
@@ -1380,7 +1380,7 @@ Disparador: block_1_on, block_2_on y block_3_on son todos false (Rule 39). Compo
 
 ## 7. Sistema de diseño, tokens y redacción
 
-> **Alcance (propiedad del diseño).** Esta sección define **restricciones** (tokens de marca + mínimos de accesibilidad) y los **lineamientos de estilo premium**, no el diseño gráfico final. La creación de las opciones visuales (layouts a alta fidelidad, componentes, retícula, fotografía, micro-interacciones) es **entregable del equipo de desarrollo/diseño**. Los **lineamientos de estilo premium** —la vara de aprobación— viven en `DESIGN.md`. Todo lo "visual" que aparezca en este spec (arquitectura visual por pantalla, Apéndice F HTML/CSS) es **referencia ilustrativa no vinculante** derivada del demo.
+> **Alcance (propiedad del diseño).** Esta sección define **restricciones** (tokens de marca + mínimos de accesibilidad) y los **lineamientos de estilo premium**, no el diseño gráfico final. La creación de las opciones visuales (layouts a alta fidelidad, componentes, retícula, fotografía, micro-interacciones) es **entregable del equipo de desarrollo/diseño**. Los **lineamientos de estilo premium** —la vara de aprobación— viven en `DESIGN.md`. Todo lo "visual" que aparezca en este spec (arquitectura visual por pantalla, Apéndice F HTML/CSS) es **referencia ilustrativa no vinculante** derivada del prototipo de referencia.
 
 - **Guía de estilo y lineamientos premium:** ver `DESIGN.md` (alcance, lineamientos de estilo premium, tokens + reglas para agentes de IA).
 - **Tokens (DTCG/JSON):** paleta de los **activos de marca del cliente** (no inventada). Son restricciones, no propuestas de diseño:
@@ -1503,7 +1503,7 @@ A todas las páginas YMYL les aplican estos requisitos:
 
 - **Fuente de verdad:** demo `sw_experiencia_ideal_demo_v6_FINAL.jsx` (comportamiento) + este spec (racionalidad) + `DESIGN.md` (tokens). Handoff visual: `[POR DEFINIR — Figma inspect]`.
 - **Activos:** iconos vectoriales (SVG), exportables; logotipo "SPORTS WORLD" (peso 800).
-- **Riesgo de Design Drift mitigado por:** tokens centralizados (`DESIGN.md`) y componentes respaldados por código (el demo es la referencia funcional).
+- **Riesgo de Design Drift mitigado por:** tokens centralizados (`DESIGN.md`) y componentes respaldados por código (el prototipo de referencia es la implementación funcional).
 
 ---
 
@@ -1683,7 +1683,7 @@ Principio de inmutabilidad de códigos. Ninguno de los códigos anteriores se re
 
 ## Apéndice F — Plantilla de referencia de la página de resultado
 
-> **Alcance (referencia visual no vinculante).** Este apéndice es una **referencia ilustrativa** de **estructura de contenido, slots y semántica** — **no** es el diseño gráfico prescrito. Crear las opciones de diseño visual (layout a alta fidelidad, componentes, retícula, escala tipográfica, fotografía, micro-interacciones) es **entregable del equipo de diseño/desarrollo**, guiado por los **lineamientos de estilo premium** de `DESIGN.md`. Lo vinculante aquí es *qué* bloques de contenido existen y *qué* dicen; *cómo* se ven lo diseña el equipo de diseño. El HTML/CSS de abajo es referencia legada del demo.
+> **Alcance (referencia visual no vinculante).** Este apéndice es una **referencia ilustrativa** de **estructura de contenido, slots y semántica** — **no** es el diseño gráfico prescrito. Crear las opciones de diseño visual (layout a alta fidelidad, componentes, retícula, escala tipográfica, fotografía, micro-interacciones) es **entregable del equipo de diseño/desarrollo**, guiado por los **lineamientos de estilo premium** de `DESIGN.md`. Lo vinculante aquí es *qué* bloques de contenido existen y *qué* dicen; *cómo* se ven lo diseña el equipo de diseño. El HTML/CSS de abajo es una referencia anterior del prototipo.
 
 Esta es la forma autoritativa del reporte de Experiencia Ideal renderizado para el usuario del happy path (Sofía: Mujer, Intermedio, Estética corporal, Q6 = Ambas, Q13 = Acompañada, club Polanco). Los tokens de slot entre llaves son placeholders; sus fuentes de datos están documentadas en la matriz experiencia-ideal de la §5. Solo el hook, el argumento del plan, la intent line, el argumento de infraestructura y los conectores por clase son generados por el LLM, cada uno regido por el Apéndice E; todo el demás contenido proviene del backend o de las fichas.
 
@@ -1719,7 +1719,7 @@ La Página 1 cabe en un solo viewport de escritorio (800 px o menos en pantallas
 
 ### Variantes de supresión
 
-Variante acuática del Block 1 (Q6 = alberca, club con alberca — según la lógica unificada de la Rule 39, el Block 1 NO se suprime): la tarjeta del Block 1 renderiza el subgrupo acuático; el argumento hero nombra el trabajo de fuerza acuático más el cardio y las clases grupales; el párrafo de infraestructura enfatiza la alberca. (El texto heredado «Block 1 OFF» queda reemplazado por el demo v6.) Block 3 OFF (Q13 = solo): la tarjeta del Block 3 se oculta; argumento hero - "Combinamos pesas para construir forma y cardio para sostener definición, en tu propio ritmo, sin clases grupales"; el menú contextual renombra Clases recomendadas a Tu rutina individual. Block 1 y Block 3 ambos OFF: solo se renderiza el Block 2, con el hero restringido a la narrativa aeróbica acuática. Los tres OFF: error del sistema según la Rule 39, renderizando la tarjeta de handoff al asesor.
+Variante acuática del Block 1 (Q6 = alberca, club con alberca — según la lógica unificada de la Rule 39, el Block 1 NO se suprime): la tarjeta del Block 1 renderiza el subgrupo acuático; el argumento hero nombra el trabajo de fuerza acuático más el cardio y las clases grupales; el párrafo de infraestructura enfatiza la alberca. Block 3 OFF (Q13 = solo): la tarjeta del Block 3 se oculta; argumento hero - "Combinamos pesas para construir forma y cardio para sostener definición, en tu propio ritmo, sin clases grupales"; el menú contextual renombra Clases recomendadas a Tu rutina individual. Block 1 y Block 3 ambos OFF: solo se renderiza el Block 2, con el hero restringido a la narrativa aeróbica acuática. Los tres OFF: error del sistema según la Rule 39, renderizando la tarjeta de handoff al asesor.
 
 ### Arquitectura visual (vista del cliente)
 
@@ -1778,7 +1778,7 @@ Ambas páginas se dividen en Página 1 y Página 2 con un separador digital "Pá
 
 ### HTML de referencia (legado, no vinculante)
 
-> ⚠️ **SUPERSEDED.** La definición AUTORITATIVA de la página de resultado es la tabla «Visual architecture (client view)» (arquitectura v6: barra roja 4px, 4 summary cards, banner CTA rosa, bloques azul/verde/gris #EEF5FF/#EDF8F1/#F3F4F6, club+familia, sección seguridad ámbar) — implementada por el demo JSX. Este HTML es la referencia COMPACTA legada: conserva valor como semántica/CSS base, pero donde difiera de la tabla v6 (colores de bloque uniformes, sin summary cards/banner/seguridad) **gana la tabla v6**. Los colores de bloque v6 deben añadirse al :root.
+> ⚠️ **Referencia anterior.** La definición autoritativa de la página de resultado es la tabla «Arquitectura visual (vista del cliente)» de arriba (barra roja de 4 px, 4 tarjetas resumen, banner CTA rosa, bloques azul/verde/gris #EEF5FF/#EDF8F1/#F3F4F6, club + familia, sección de seguridad ámbar), implementada por el prototipo de referencia. El HTML siguiente es una referencia compacta más antigua: vale como semántica y CSS base, pero donde difiera de esa tabla, **gana la tabla**. Los colores de bloque deben añadirse al `:root`.
 
 <!DOCTYPE html>
 
@@ -2074,7 +2074,7 @@ Una sola llamada al LLM se dispara cuando se completa el cuestionario y devuelve
 
 ### Esquema JSON de salida (una sola llamada)
 
-> Conforme al demo v6 (`callClaude`): estas claves coinciden con la implementación. El **flujo completo** (resolveBlocks Q6-aware, rankClasses, banderas, `stripQCodes`) está en «Flujo de aplicación del cuestionario». **Precedencia:** catálogos acordados (51 clases, cuestionario oficial).
+> Estas claves coinciden con la implementación del prototipo de referencia (`callClaude`). El **flujo completo** (resolveBlocks, rankClasses, banderas, `stripQCodes`) está en §4.5. Los catálogos oficiales (51 clases; cuestionario Q1–Q19) son normativos.
 
 {
 

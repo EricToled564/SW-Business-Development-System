@@ -84,7 +84,7 @@ Catálogo canónico **51 clases** (49 secas + 2 acuáticas: AQUA ZUMBA, SWIM TRA
 | SWIM TRAINERS | | ● | | | | inferido |
 | TRAINT BOOST | ● | ● | ● | ● | ● | clínico |
 
-**Fichas de clases grupales (Block 3) — perfil por objetivo Q4 + nivel.** Leyenda: ★ top (prioridad) · ✓ apto · — no apto (se descarta para ese objetivo). Nivel: P/I/A. 💧 acuática. Mapeado del demo a las 51 canónicas (nombres crudos del demo reconciliados; 6 no-canónicas descartadas).
+**Fichas de clases grupales (Block 3) — perfil por objetivo Q4 + nivel.** Leyenda: ★ top (prioridad) · ✓ apto · — no apto (se descarta para ese objetivo). Nivel: P/I/A. 💧 acuática. Los nombres de clase están normalizados al catálogo canónico de 51 (las variantes de escritura del prototipo de referencia quedaron reconciliadas; 6 clases fuera del catálogo se descartaron).
 
 | Clase | Nivel | Bajar peso | Estética/def. | Masa | Desempeño | Cardiovascular | Lesión |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |

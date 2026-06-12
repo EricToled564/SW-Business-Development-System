@@ -84,7 +84,7 @@ Canonical catalog **51 classes** (49 dry + 2 aquatic: AQUA ZUMBA, SWIM TRAINERS 
 | SWIM TRAINERS | | ● | | | | inferido |
 | TRAINT BOOST | ● | ● | ● | ● | ● | clínico |
 
-**Group class profiles (Block 3) — profile by goal Q4 + level.** Legend: ★ top (priority) · ✓ suitable · — not suitable (discarded for that goal). Level: P/I/A. 💧 aquatic. Demo mapped to the 51 canonical ones (raw demo names reconciled; 6 non-canonical ones discarded).
+**Group class profiles (Block 3) — profile by goal Q4 + level.** Legend: ★ top (priority) · ✓ suitable · — not suitable (discarded for that goal). Level: P/I/A. 💧 aquatic. Class names are normalized to the canonical 51-class catalog (the reference prototype's spelling variants were reconciled; 6 non-catalog classes were discarded).
 
 | Class | Level | Lose weight | Aesthetics/def. | Mass | Performance | Cardiovascular | Injury |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |

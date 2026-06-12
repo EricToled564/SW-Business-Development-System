@@ -90,7 +90,7 @@ This document **does not impose the graphic design**. Creating the visual option
 | The verbatim **copy** and brand voice | Composition, photography and illustration |
 | The **premium style guidelines** (below) as the approval bar | The proposals that meet those guidelines |
 
-> Therefore, everything "visual" that appears in the spec (the per-screen *visual architecture v6* and **Appendix F HTML/CSS**) is a **NON-binding illustrative reference**, derived from the demo, to convey intent and semantics — **not** a design to copy. What is binding is: tokens (brand + accessibility) + content structure + these premium guidelines.
+> Therefore, everything "visual" that appears in the spec (the per-screen *visual architecture v6* and **Appendix F HTML/CSS**) is a **NON-binding illustrative reference**, derived from the reference prototype, to convey intent and semantics — **not** a design to copy. What is binding is: tokens (brand + accessibility) + content structure + these premium guidelines.
 
 ## Premium style guidelines (the bar we are aiming for)
 

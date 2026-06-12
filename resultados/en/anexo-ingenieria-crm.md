@@ -4,12 +4,12 @@
 
 ## R12 — LLM call parameters (they expire; engineering)
 
-- Model (demo v6): Claude Sonnet (`claude-sonnet-4-20250514`). `max_tokens`: 2000. A single call that returns client copy + Asesor brief.
+- Model (reference prototype): Claude Sonnet (`claude-sonnet-4-20250514`). `max_tokens`: 2000. A single call that returns client copy + Asesor brief.
 - The **JSON schema** (exact keys) remains in the spec (Appendix H) as the interface contract.
 
 ## R13 — Sanitization (implementation; the requirement lives in the spec)
 
-Spec requirement: no Qn code reaches the user. Reference implementation (demo v6): `stripQCodes` with regex over "(Qn)", " en Qn", " para Qn", " según Qn", "Qn" + whitespace collapsing; recursive `sanitize()` over strings/arrays/objects of the parsed JSON.
+Spec requirement: no Qn code reaches the user. Reference implementation (prototype): `stripQCodes` with regex over "(Qn)", " en Qn", " para Qn", " según Qn", "Qn" + whitespace collapsing; recursive `sanitize()` over strings/arrays/objects of the parsed JSON.
 
 ## R14 — Lead scoring and routing (CRM/sales; [ASSUMPTION, validate weights with data])
 

@@ -92,7 +92,7 @@ Este documento **no impone el diseño gráfico**. La creación de las opciones v
 | El **copy** verbatim y la voz de marca | Composición, fotografía e ilustración |
 | Los **lineamientos de estilo premium** (abajo) como vara de aprobación | Las propuestas que cumplen esos lineamientos |
 
-> Por eso, todo lo "visual" que aparece en el spec (la *arquitectura visual v6* por pantalla y el **Appendix F HTML/CSS**) es **referencia ilustrativa NO vinculante**, derivada del demo, para comunicar intención y semántica — **no** un diseño a copiar. Lo vinculante es: tokens (marca + accesibilidad) + estructura de contenido + estos lineamientos premium.
+> Por eso, todo lo "visual" que aparece en el spec (la *arquitectura visual v6* por pantalla y el **Appendix F HTML/CSS**) es **referencia ilustrativa NO vinculante**, derivada del prototipo de referencia, para comunicar intención y semántica — **no** un diseño a copiar. Lo vinculante es: tokens (marca + accesibilidad) + estructura de contenido + estos lineamientos premium.
 
 ## Lineamientos de estilo premium (la vara que buscamos)
 

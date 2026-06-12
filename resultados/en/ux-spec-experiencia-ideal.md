@@ -9,6 +9,7 @@
 | Target stack | Next.js + React + TypeScript + Tailwind · SSR/ISR · headless CMS |
 | Handoff tool | `[TBD — link Figma inspect]` |
 | Package documents | `DESIGN.md` (tokens + premium guidelines) · `anexo-clinico.md` · `anexo-contenido-prompts.md` · `anexo-ingenieria-crm.md` |
+| Reference prototype | `sw_experiencia_ideal_demo_v6_FINAL.jsx` — working implementation of the questionnaire→result→brief flow; where it differs from this document, this document governs |
 
 > **How to read this document.** Sections 1–12 follow the standard order of a UX spec: from the why (business) to the what (architecture, flows, screens) and how it is verified (edge cases, accessibility, acceptance, metrics). Rules keep their stable number (`Rule N`) for cross-reference with code and annexes; the **rule index** at the end maps each rule to its section. Interface copy quoted in guillemets is verbatim es-MX.
 
@@ -23,7 +24,7 @@
 - **2. Personas and customer journey**
   - 2.1 Personas
   - 2.2 Customer journey — the funnel that connects the three goals
-  - 2.3 Research insights that inform the design
+  - 2.3 User-research findings that inform the design
 - **3. Information architecture and SEO**
   - 3.1 Page inventory
   - 3.2 Detail by page type
@@ -210,7 +211,7 @@ must remain identical in code, copy CMS, and design files.
 
 ## 2. Personas and customer journey
 
-> The archetypes come from the client's research (`Consumer Journey — Sports World`); here they are expressed on top of the **site's real machinery**, because that is what it exists for: the **155 signed pages** (§3) are the net that captures their Google searches (that is where the 80,000→160,000 comes from), **«Diseña tu experiencia»** (Q1–Q19) is the instrument that turns them into a qualified lead, and the **Asesor brief** (Appendix G) is what the business receives in return. Where the research uses its own frameworks (8-phase funnel, "10 questions", Help Center, member portal), this spec uses its normative structures: questionnaire Q1–Q19, flow phases and the page types of §3.
+> The archetypes come from Sports World's user research (*Consumer Journey*); here they are expressed on top of the site's real machinery: the **155 pages** (§3) are the net that captures their Google searches (that is where the 80,000→160,000 comes from), **«Diseña tu experiencia»** (Q1–Q19) is the instrument that turns them into a qualified lead, and the **Asesor brief** (Appendix G) is what the business receives in return.
 
 ### 2.1 Personas
 
@@ -274,11 +275,11 @@ journey
 
 The exact technical phases (welcome · questionnaire · loading · result · contact_capture · schedule · briefing · error) and every branch live in **§4** and **§5**.
 
-### 2.3 Research insights that inform the design
+### 2.3 User-research findings that inform the design
 
-Every research insight connects to a rule/section **already agreed** (it introduces no new framework):
+Each user-research finding is addressed by a specific rule or section of this document:
 
-| Journey insight | Where the spec handles it |
+| Research finding | Where this document handles it |
 | --- | --- |
 | Entry doors reveal intent | Landing pre-fill (Rule 20) + search inference (Rule 16); the `/bajar-de-peso/` hub is the highest-volume door and pre-marks Q4 (activating Q17–Q19) |
 | Non-blocking invitation, persistent as a button | «Diseña tu experiencia» in the header (Rule 1) and in the contextual menu while the questionnaire is incomplete (Rule 27); once completed it switches to «Volver a tu experiencia ideal» (Rule 28) |
@@ -287,7 +288,6 @@ Every research insight connects to a rule/section **already agreed** (it introdu
 | Silent plateau (weeks 4–6) and returns after an absence = highest churn | **Outside the site's scope** (post-sale retention/CRM); logged as a dependency, not designed here |
 | Benchmarks: NPS 47.3 · retention 66.4% · 50% churn at 6 months (industry) | §10 context; the site impacts **acquisition**, not post-sale retention |
 
-> **Scope note.** The research describes "10 questions, 1 minute" and artifacts from other projects (Help Center, app, member portal). The normative instrument is the **official 15+6 questionnaire (Rule 18)**; the Help Center is out of scope (Rule 37 — BES covers it); app and portal are separate projects. The completion-time target is measured against the official instrument (abandonment risk, §12.3).
 
 ---
 
@@ -322,7 +322,7 @@ BES. The conversational assistant is a global floating widget present on every p
 
 also exposes a fallback URL for users without JavaScript and for deep-linking. BES is
 
-delivered as a separate workstream with its own specification; this document covers only its integration points and behavioral interfaces with the rest of the site.
+delivered as a separate project with its own specification; this document covers only its integration points and behavioral interfaces with the rest of the site.
 
 ### 3.2 Detail by page type
 
@@ -504,7 +504,7 @@ The following subjects are intentionally out of scope of this specification.They
 - these live in the brand asset pack delivered to the partner in Week 1.
 
 - Project process (approval gates, deliverable schedule, vendor capabilities, commercial terms) -these live in the partner brief.
-- Content production rules (anti-duplicate-content scoring, Spanish-MX register details beyond CTAs, Journal article selection criteria) - these live in the content workstream brief.
+- Content production rules (anti-duplicate-content scoring, Spanish-MX register details beyond CTAs, Journal article selection criteria) - these live in the content team's guide.
 
 ---
 
@@ -617,7 +617,7 @@ Pre-fill is always editable by the user.
 
 ### 4.5 Application pipeline (questionnaire → result → brief)
 
-> **Precedence rule (client):** wherever the demo contradicts the agreed catalogs (**51 classes**, **official questionnaire**), **the agreed material prevails** and the flow is adjusted. Contradictions already resolved in favor of the agreed material: catalog = **51 classes** (NOT 56 — `DANZA AEREA`, `FLYBOARD`, `INTERVAL`, `FULL BODY`, `GIMNASIA DE GRUPOS`, `ACUAEROBICS` are excluded); **Q18** = current weight · height · **waist** (not "age"). Mapping of raw demo names → canonical: `FUN TRAC`→FUNTRAC · `KINETICS BALL`→KINETIC BALL · `SH BAM`→SH'BAM · `JAZZ 90`→JAZZ · `GRIT DEMO`→GRIT · `TRAINT BOOST DEMO`→TRAINT BOOST · `HAWAIANO`→RITMOS LATINOS · `FIT Y DANCE`→FIT DANCE · `ACUAZUMBA`→AQUA ZUMBA.
+> The official 51-class catalog and the Q1–Q19 questionnaire are **normative**. The **reference prototype** (`sw_experiencia_ideal_demo_v6_FINAL.jsx`, see the cover table) implements this flow; where it differs, this document governs. In particular: the catalog has **51 classes** (`DANZA AEREA`, `FLYBOARD`, `INTERVAL`, `FULL BODY`, `GIMNASIA DE GRUPOS` and `ACUAEROBICS` do not exist in it) and **Q18** captures weight · height · **waist**. Prototype name mapping → canonical: `FUN TRAC`→FUNTRAC · `KINETICS BALL`→KINETIC BALL · `SH BAM`→SH'BAM · `JAZZ 90`→JAZZ · `GRIT DEMO`→GRIT · `TRAINT BOOST DEMO`→TRAINT BOOST · `HAWAIANO`→RITMOS LATINOS · `FIT Y DANCE`→FIT DANCE · `ACUAZUMBA`→AQUA ZUMBA.
 
 **1. Questionnaire flow (`getQuestions`).** 15 base + 6 conditional (see the normative table). Triggers: Q11 if Q10 = "Regreso después de una pausa"; Q12b if Q2 ≠ "Hombre"; Q14b if Q14 ∈ {"Yo y mis hijos","La familia completa"}; Q17/Q18/Q19 if Q4 includes "Bajar de peso". Gender conjugation in Q3, Q13, Q14 when Q2 = Mujer.
 
@@ -635,7 +635,7 @@ Pre-fill is always editable by the user.
 2. **Q6 filter**: "En la alberca" → aquatic only; "En piso" → dry only.
 3. **Q9 level filter**: the class must include the user's level.
 4. **Hard contraindication filter** (Q12, Q12b, Q17 → keys l/c/e/p/b): excludes contraindicated classes (matrix of 51).
-5. **Score by Q4** (`profiles`): top3 = +3, apto = +1, **not apto = the class is discarded**. Multi-Q4 accumulates. **Note (C8):** the canonical algorithm is Rule 40 (adds tiebreakers Q3 +2, Q5 +1, Q7 +1/+0.5); this demo implementation must be extended to match it.
+5. **Score by Q4** (`profiles`): top3 = +3, apto = +1, **not apto = the class is discarded**. Multi-Q4 accumulates. The canonical algorithm is Rule 40 (adds tiebreakers Q3 +2, Q5 +1, Q7 +1/+0.5); this demo implementation must be extended to match it.
 6. Order by score desc + alphabetical → **top 2** + "también encajan" (3–5).
 
 **5. Single LLM call (`callClaude`) — produces the client report AND the asesor brief** (1 single call; model and parameters in `anexo-ingenieria-crm.md` R12). System prompt: forbids "plan" (use "tu experiencia ideal"/"rutina"), Qn codes and technical jargon; YMYL rules (no diagnosing/prescribing; the asesor validates with clinical judgment). Defense-in-depth: a recursive `stripQCodes` deletes any Qn the LLM leaks.
@@ -1084,7 +1084,7 @@ Before the result is rendered, a YMYL health-disclaimer modal is shown, carrying
 
 #### Q4 allows up to two goals (Rule 21)
 
-Q4 (goal) is always multi-select with a maximum of two goals. The user may choose one or two of the six goal options, in any combination. There is no longer a weight-loss-specific exception: the former single-select-unless-weight-loss behavior of legacy P1 is retired. When two goals are selected, the result page and the individual-training recommendations use the union of both goals' mappings, deduplicated, per Rule 38 and §3, Individual-training subgroup taxonomy.
+Q4 (goal) is always multi-select with a maximum of two goals. The user may choose one or two of the six goal options, in any combination. There is no per-goal exception: Q4 is multi-select with a maximum of two in all cases. When two goals are selected, the result page and the individual-training recommendations use the union of both goals' mappings, deduplicated, per Rule 38 and §3, Individual-training subgroup taxonomy.
 
 ### 5.17 Result — the Experiencia Ideal page
 
@@ -1121,7 +1121,7 @@ Every user who completes the questionnaire receives a combined personalized plan
 
 Each block is default ON. A block is set OFF only when an explicit suppression condition applies. The system is auditable: any reviewer can predict which blocks the user sees by reading their questionnaire answers.
 
-Block 1 (Pesas) — Q6 NEVER suppresses Block 1 (lógica única, adoptada del demo v6 y propagada a Appendix F y §5): when Q6 = "En la alberca" AND the resolved club has a pool, Block 1 renders its AQUATIC variant (e.g., "Fuerza acuática con equipo" per the Catálogo oficial); if the club has no pool, Block 1 renders the dry variant with the no-pool note (edge case "aquatic preference but the ideal club has no pool"). The ONLY suppression trigger is Q12 containing a condition flagged in the subgroup ficha as an absolute contraindication. Otherwise ON, with subgroup per the Q4 mapping in §3.
+Block 1 (Pesas) — Q6 NEVER suppresses Block 1: when Q6 = "En la alberca" AND the resolved club has a pool, Block 1 renders its AQUATIC variant (e.g., "Fuerza acuática con equipo" per the Catálogo oficial); if the club has no pool, Block 1 renders the dry variant with the no-pool note (edge case "aquatic preference but the ideal club has no pool"). The ONLY suppression trigger is Q12 containing a condition flagged in the subgroup ficha as an absolute contraindication. Otherwise ON, with subgroup per the Q4 mapping in §3.
 
 Block 2 (Aeróbico) suppression: a Q12 unstabilized cardiovascular condition without clearance restricts it to Cardio suave (LISS) only, or OFF. Otherwise ON, with subgroup per the Q4 mapping in §3 and user-facing presentation per §5.
 
@@ -1159,7 +1159,7 @@ Research basis: see `research_contraindicaciones_audit.md` (protocol v2, 9 profe
 
 When Block 3 is ON, class selection executes in the backend before the LLM is invoked. The LLM does not generate, rank, or filter classes. The LLM only selects, from validated fichas, the benefit IDs and match-reason IDs to display per class.
 
-This is the SINGLE authoritative ranking algorithm. It runs in order: (1) candidate set - the full catalog of the user's ideal club, resolved from Q15 and Q16; (2) **Q6 setting filter** - "En la alberca" keeps only aquatic classes; "En piso / área seca" keeps only dry classes; "Ambas" / "Lo que mi entrenador recomiende" keep all; (3) Q4 compatibility filter - keep classes whose ficha lists the Q4 goal; **any "no apto" against any selected Q4 goal drops the class outright**; (4) Q9 level filter - keep classes whose ficha lists Q9; (5) contraindication hard filter (Q12, Q12b, Q17 → keys l/c/e/p/b) - remove contraindicated classes; (6) final ranking by score - Q4 match (top3 +3, apto +1), Q3 match (+2), Q5 match (+1), Q7 schedule overlap (full +1, partial +0.5), sorted descending with alphabetic tie-break; (7) partitioning into top_2, tambien_encajan (3 to 5) and resto. The demo v6 implementation must add the Q3/Q5/Q7 tiebreaker scoring to match this rule.
+This is the SINGLE authoritative ranking algorithm. It runs in order: (1) candidate set - the full catalog of the user's ideal club, resolved from Q15 and Q16; (2) **Q6 setting filter** - "En la alberca" keeps only aquatic classes; "En piso / área seca" keeps only dry classes; "Ambas" / "Lo que mi entrenador recomiende" keep all; (3) Q4 compatibility filter - keep classes whose ficha lists the Q4 goal; **any "no apto" against any selected Q4 goal drops the class outright**; (4) Q9 level filter - keep classes whose ficha lists Q9; (5) contraindication hard filter (Q12, Q12b, Q17 → keys l/c/e/p/b) - remove contraindicated classes; (6) final ranking by score - Q4 match (top3 +3, apto +1), Q3 match (+2), Q5 match (+1), Q7 schedule overlap (full +1, partial +0.5), sorted descending with alphabetic tie-break; (7) partitioning into top_2, tambien_encajan (3 to 5) and resto. The reference prototype must add the Q3/Q5/Q7 tiebreaker scoring to comply with this rule.
 
 The LLM receives top_2 and tambien_encajan with full fichas. It selects beneficios_seleccionados (one or two benefit IDs per class) and razon_de_match_id (one ID matching the user's primary Q4), and produces a conector_personal (15 words or fewer) referencing the user's questionnaire answers verbatim. No factual content is generated by the LLM in this block.
 
@@ -1383,7 +1383,7 @@ Trigger: block_1_on, block_2_on and block_3_on are all false (Rule 39). Behavior
 
 ## 7. Design system, tokens and writing
 
-> **Scope (design ownership).** This section defines **constraints** (brand tokens + accessibility minimums) and the **premium style guidelines**, not the final graphic design. Creating the visual options (hi-fi layouts, components, grid, photography, micro-interactions) is a **deliverable of the development/design team**. The **premium style guidelines** —the approval bar— live in `DESIGN.md`. Everything "visual" that appears in this spec (per-screen visual architecture, Appendix F HTML/CSS) is a **non-binding illustrative reference** derived from the demo.
+> **Scope (design ownership).** This section defines **constraints** (brand tokens + accessibility minimums) and the **premium style guidelines**, not the final graphic design. Creating the visual options (hi-fi layouts, components, grid, photography, micro-interactions) is a **deliverable of the development/design team**. The **premium style guidelines** —the approval bar— live in `DESIGN.md`. Everything "visual" that appears in this spec (per-screen visual architecture, Appendix F HTML/CSS) is a **non-binding illustrative reference** derived from the reference prototype.
 
 - **Style guide and premium guidelines:** see `DESIGN.md` (scope, premium style guidelines, tokens + rules for AI agents).
 - **Tokens (DTCG/JSON):** palette from the **client's brand assets** (not invented). They are constraints, not design proposals:
@@ -1504,7 +1504,7 @@ These requirements apply to all YMYL pages:
 
 - **Source of truth:** demo `sw_experiencia_ideal_demo_v6_FINAL.jsx` (behavior) + this spec (rationale) + `DESIGN.md` (tokens). Visual handoff: `[TO BE DEFINED — Figma inspect]`.
 - **Assets:** vector icons (SVG), exportable; "SPORTS WORLD" logo (weight 800).
-- **Design Drift risk mitigated by:** centralized tokens (`DESIGN.md`) and code-backed components (the demo is the functional reference).
+- **Design Drift risk mitigated by:** centralized tokens (`DESIGN.md`) and code-backed components (the reference prototype is the functional implementation).
 
 ---
 
@@ -1684,7 +1684,7 @@ Code immutability principle. None of the codes above are reassigned if an elemen
 
 ## Appendix F — Result page reference template
 
-> **Scope (non-binding visual reference).** This appendix is an **illustrative reference** for **content structure, slots and semantics** — it is **not** the prescribed graphic design. Creating the visual design options (hi-fi layout, components, grid, type scale, photography, micro-interactions) is the **design/development team's deliverable**, guided by the **premium style guidelines** in `DESIGN.md`. What is binding here is *which* content blocks exist and *what* they say; *how* they look is the design team's to design. The HTML/CSS below is legacy reference from the demo.
+> **Scope (non-binding visual reference).** This appendix is an **illustrative reference** for **content structure, slots and semantics** — it is **not** the prescribed graphic design. Creating the visual design options (hi-fi layout, components, grid, type scale, photography, micro-interactions) is the **design/development team's deliverable**, guided by the **premium style guidelines** in `DESIGN.md`. What is binding here is *which* content blocks exist and *what* they say; *how* they look is the design team's to design. The HTML/CSS below is an earlier reference from the prototype.
 
 This is the authoritative **content shape** of the rendered Experiencia Ideal report for the happy-path user (Sofía: Mujer, Intermedio, Estética corporal, Q6 = Ambas, Q13 = Acompañada, club Polanco). Slot tokens in braces are placeholders; their data sources are documented in the experiencia-ideal matrix in §5. Only the hook, plan argument, intent line, infrastructure argument and per-class connectors are LLM-generated, each governed by `anexo-contenido-prompts.md`; all other content is sourced from the backend or fichas.
 
@@ -1720,7 +1720,7 @@ Página 1 fits in one desktop viewport (800 px or less on 1280-wide screens); P�
 
 ### Suppression variants
 
-Block 1 aquatic variant (Q6 = alberca, club with pool — per unified Rule 39 logic, Block 1 is NOT suppressed): the Block 1 card renders the aquatic subgroup; hero argument names the aquatic strength work plus cardio and group classes; the infrastructure paragraph emphasizes the pool. (Legacy "Block 1 OFF" wording superseded by demo v6.) Block 3 OFF (Q13 = solo): the Block 3 card is hidden; hero argument - "Combinamos pesas para construir forma y cardio para sostener definición, en tu propio ritmo, sin clases grupales"; the contextual menu renames Clases recomendadas to Tu rutina individual. Block 1 and Block 3 both OFF: only Block 2 renders, with the hero restricted to the aquatic-aerobic narrative. All three OFF: system error per Rule 39, rendering the asesor handoff card.
+Block 1 aquatic variant (Q6 = alberca, club with pool — per unified Rule 39 logic, Block 1 is NOT suppressed): the Block 1 card renders the aquatic subgroup; hero argument names the aquatic strength work plus cardio and group classes; the infrastructure paragraph emphasizes the pool. Block 3 OFF (Q13 = solo): the Block 3 card is hidden; hero argument - "Combinamos pesas para construir forma y cardio para sostener definición, en tu propio ritmo, sin clases grupales"; the contextual menu renames Clases recomendadas to Tu rutina individual. Block 1 and Block 3 both OFF: only Block 2 renders, with the hero restricted to the aquatic-aerobic narrative. All three OFF: system error per Rule 39, rendering the asesor handoff card.
 
 ### Visual architecture (client view)
 
@@ -1753,7 +1753,7 @@ Fixed disclaimer line below the body: "Esta recomendación orienta la selección
 
 ### Rejected elements (do not regress)
 
-Explicitly NOT adopted from the reference preview: the wording "Plan recomendado" (use "experiencia ideal"/"tu experiencia"); generic block descriptions ("Fuerza adaptada / Movimientos controlados"); the generic "Clase guiada" placeholder (use LLM-picked top 2 with personalized connectors); the static brand-name placeholder block (all personalization derives from Q1-Q19 + the LLM call).
+Explicitly NOT adopted from the earlier reference: the wording "Plan recomendado" (use "experiencia ideal"/"tu experiencia"); generic block descriptions ("Fuerza adaptada / Movimientos controlados"); the generic "Clase guiada" placeholder (use LLM-picked top 2 with personalized connectors); the static brand-name placeholder block (all personalization derives from Q1-Q19 + the LLM call).
 
 ### FitKidz — three-state render
 
@@ -1777,9 +1777,9 @@ Both pages split into Página 1 and Página 2 with a digital "Página 2" separat
 
 }
 
-### Reference HTML (legacy, non-binding)
+### Reference HTML (earlier version, non-binding)
 
-> ⚠️ **SUPERSEDED.** The AUTHORITATIVE definition of the result page is the «Visual architecture (client view)» table (architecture v6: 4px red bar, 4 summary cards, pink CTA banner, blue/green/gray blocks #EEF5FF/#EDF8F1/#F3F4F6, club+family, amber safety section) — implemented by the JSX demo. This HTML is the legacy COMPACT reference: it retains value as base semantics/CSS, but wherever it differs from the v6 table (uniform block colors, no summary cards/banner/safety) **the v6 table wins**. The v6 block colors must be added to :root.
+> ⚠️ **Earlier reference.** The authoritative definition of the result page is the «Visual architecture (client view)» table above (4 px red bar, 4 summary cards, pink CTA banner, blue/green/gray blocks #EEF5FF/#EDF8F1/#F3F4F6, club + family, amber safety section), implemented by the reference prototype. The HTML below is an older compact reference: it retains value as base semantics/CSS, but wherever it differs from that table, **the table wins**. The block colors must be added to `:root`.
 
 <!DOCTYPE html>
 
@@ -2075,7 +2075,7 @@ One LLM call fires when the questionnaire completes and returns BOTH the client 
 
 ### Output JSON schema (single call)
 
-> Conforme al demo v6 (`callClaude`): estas claves coinciden con la implementación. El **flujo completo** (resolveBlocks Q6-aware, rankClasses, banderas, `stripQCodes`) está en «Flujo de aplicación del cuestionario». **Precedencia:** catálogos acordados (51 clases, cuestionario oficial).
+> These keys match the reference prototype's implementation (`callClaude`). The **full flow** (resolveBlocks, rankClasses, flags, `stripQCodes`) is in §4.5. The official catalogs (51 classes; Q1–Q19 questionnaire) are normative.
 
 {
 
