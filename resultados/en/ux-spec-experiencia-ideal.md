@@ -316,7 +316,7 @@ The site has 12 canonical page types in scope plus the BES conversational assist
 
 Total signed pages: 1 + 49 + 10 + 7 + 44 + 1 + 5 + 1 + 1 + 6 + 20 + 10 = **155 pages**.
 
-> The signed scope of this spec is **155 pages** (the 12 types in the table). Type 12 (individual training) extends the original contract figure (145); the increase is formalized via contract amendment without conditioning this scope.
+> The scope of this spec is **155 pages** (the 12 types in the table).
 
 BES. The conversational assistant is a global floating widget present on every page (Rule 3). It
 
@@ -841,9 +841,9 @@ Cross-cutting rule: "Agenda tu visita guiada" (conversion) and "Pregúntale a BE
 - **Metadata:** `<title>` ≤ 60 chars, `meta description` ≤ 155 chars, canonical, Open Graph; `lang="es-MX"`.
 - **Pagination:** club/class listings with logical `rel=next/prev` and clean URLs `/clubes/cdmx/pagina-2`; avoids duplicate content via canonical.
 - **Primary CTA:** red button `#E6282A` → starts `welcome`.
-- **Only `/bajar-de-peso/` (contractual, Annex Two I.3.k):** slot for the **45–60 s institutional video** (licensed music + voice-over). Deferred loading (`poster` + lazy) so it does not break the LCP budget; never autoplay with audio.
-- **Images (contractual, Annex Two I.3.g):** serve in **AVIF/WebP** with responsive `srcset`; photos come from the client's image bank (~650 retouched) + ~150 AI-generated.
-- **Non-functional requirement:** **LCP < 2.5 s**, **CLS < 0.1**, **INP < 200 ms** (Core Web Vitals — they affect SEO ranking; thresholds signed in Annex Two I.3.e).
+- **Only `/bajar-de-peso/`:** slot for the **45–60 s institutional video** (licensed music + voice-over). Deferred loading (`poster` + lazy) so it does not break the LCP budget; never autoplay with audio.
+- **Images:** serve in **AVIF/WebP** with responsive `srcset`; photos come from the client's image bank (~650 retouched) + ~150 AI-generated.
+- **Non-functional requirement:** **LCP < 2.5 s**, **CLS < 0.1**, **INP < 200 ms** (Core Web Vitals — they affect SEO ranking).
 
 ### 5.6 Home — behavior matrix
 
@@ -1383,7 +1383,7 @@ Trigger: block_1_on, block_2_on and block_3_on are all false (Rule 39). Behavior
 
 ## 7. Design system, tokens and writing
 
-> **Scope (design ownership).** This section defines **constraints** (brand tokens + accessibility minimums) and the **premium style guidelines**, not the final graphic design. Creating the visual options (hi-fi layouts, components, grid, photography, micro-interactions) is a **deliverable of the development/design team** (Anexo Dos I.3.a). The **premium style guidelines** —the approval bar— live in `DESIGN.md`. Everything "visual" that appears in this spec (per-screen visual architecture, Appendix F HTML/CSS) is a **non-binding illustrative reference** derived from the demo.
+> **Scope (design ownership).** This section defines **constraints** (brand tokens + accessibility minimums) and the **premium style guidelines**, not the final graphic design. Creating the visual options (hi-fi layouts, components, grid, photography, micro-interactions) is a **deliverable of the development/design team**. The **premium style guidelines** —the approval bar— live in `DESIGN.md`. Everything "visual" that appears in this spec (per-screen visual architecture, Appendix F HTML/CSS) is a **non-binding illustrative reference** derived from the demo.
 
 - **Style guide and premium guidelines:** see `DESIGN.md` (scope, premium style guidelines, tokens + rules for AI agents).
 - **Tokens (DTCG/JSON):** palette from the **client's brand assets** (not invented). They are constraints, not design proposals:
@@ -1520,10 +1520,10 @@ These questions BLOCK the medical gate (F11) and must be resolved with Sports Wo
 | D4 🟠 | 5 clubs offer AQUA ZUMBA WITHOUT the pool flag (amores, antara, anzures, reforma, roma). Wrong flag or misassigned class? | Source contradiction |
 | D5 🟡 | 6 unofficial columns in the matrix with no destination: BEAT N BIKE (2), INTRINITY (1), BOX 1 (2), INICIACIÓN TKD (3), ECROSS (3), FÚTBOL (3). Incorporate with a class sheet+contraindications or exclude? | Catalog |
 | D6 🟡 | Confirm 3 ASSUMED mappings: AE YOGA→AEROYOGA (2 clubs) · HATHA YOGA 90→HATHA YOGA (4) · VINYASA YOGA 90→VINYASA YOGA (6) | Catalog |
-| D7 🟠 | FitKidz: the matrix contains 21 children's activities; **the contract signs 34** (Annex Two I.1, level 06) → the correct number is 34; the client must complete the 13 missing matrix columns | Rule 11 / Rule 30 |
+| D7 🟠 | FitKidz: the matrix contains 21 children's activities; the correct number is **34** (FitKidz); the client must complete the 13 missing matrix columns | Rule 11 / Rule 30 |
 | D8 🟠 | 4 of the 10 amenity hubs have no data source: sauna/steam room, showers/lockers, café, parking. Where do they come from? | 155 signed pages |
 | F10 🟡 | kids_classes for the 10 State-B clubs (question tracked with Gabriela) | FitKidz State B |
-| F14 ✅ | **Resolved by contract** (Annex Two I.2.h): class-page schema = **Course** (Rule 13 updated); per-session Event remains an optional engineering complement | SEO |
+| F14 ✅ | **Resolved:** class-page schema = **Course** (Rule 13); per-session `Event` remains an optional engineering complement | SEO |
 
 ---
 
@@ -1684,7 +1684,7 @@ Code immutability principle. None of the codes above are reassigned if an elemen
 
 ## Appendix F — Result page reference template
 
-> **Scope (non-binding visual reference).** This appendix is an **illustrative reference** for **content structure, slots and semantics** — it is **not** the prescribed graphic design. Creating the visual design options (hi-fi layout, components, grid, type scale, photography, micro-interactions) is the **design/development team's deliverable** (Anexo Dos I.3.a), guided by the **premium style guidelines** in `DESIGN.md`. What is binding here is *which* content blocks exist and *what* they say; *how* they look is the design team's to design. The HTML/CSS below is legacy reference from the demo.
+> **Scope (non-binding visual reference).** This appendix is an **illustrative reference** for **content structure, slots and semantics** — it is **not** the prescribed graphic design. Creating the visual design options (hi-fi layout, components, grid, type scale, photography, micro-interactions) is the **design/development team's deliverable**, guided by the **premium style guidelines** in `DESIGN.md`. What is binding here is *which* content blocks exist and *what* they say; *how* they look is the design team's to design. The HTML/CSS below is legacy reference from the demo.
 
 This is the authoritative **content shape** of the rendered Experiencia Ideal report for the happy-path user (Sofía: Mujer, Intermedio, Estética corporal, Q6 = Ambas, Q13 = Acompañada, club Polanco). Slot tokens in braces are placeholders; their data sources are documented in the experiencia-ideal matrix in §5. Only the hook, plan argument, intent line, infrastructure argument and per-class connectors are LLM-generated, each governed by `anexo-contenido-prompts.md`; all other content is sourced from the backend or fichas.
 

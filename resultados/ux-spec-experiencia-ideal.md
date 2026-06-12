@@ -320,7 +320,7 @@ El sitio tiene 12 tipos de página canónicos en alcance, más el asistente conv
 
 Total de páginas firmadas: 1 + 49 + 10 + 7 + 44 + 1 + 5 + 1 + 1 + 6 + 20 + 10 = **155 páginas**.
 
-> **Precedencia (regla del cliente).** Lo acordado en estos documentos tiene mayor autoridad que cualquier otro documento, **incluidos los entregables del contrato**. El contrato (Anexo Dos I.1) fija una arquitectura limitativa de **145** páginas; las **2 páginas de entrenamiento individual + 8 subpáginas de subgrupo** que el spec agrega son **páginas firmadas autoritativas**, elevando el total a **155**. Esta cifra prevalece sobre la del contrato; la ampliación se formaliza mediante convenio modificatorio como mero trámite, sin condicionar el alcance del spec.
+> El alcance de este spec es de **155 páginas** (los 12 tipos de la tabla).
 
 BES. El asistente conversacional es un widget global flotante presente en cada página (Rule 3). También expone una URL de fallback para usuarios sin JavaScript y para deep-linking. BES se entrega como un workstream aparte con su propia especificación; este documento cubre solo sus puntos de integración e interfaces de comportamiento con el resto del sitio.
 
@@ -838,9 +838,9 @@ Regla transversal: «Agenda tu visita guiada» (conversión) y «Pregúntale a B
 - **Metadatos:** `<title>` ≤ 60 car., `meta description` ≤ 155 car., canonical, Open Graph; `lang="es-MX"`.
 - **Paginación:** listados de clubes/clases con `rel=next/prev` lógico y URLs limpias `/clubes/cdmx/pagina-2`; evita contenido duplicado con canonical.
 - **CTA principal:** botón rojo `#E6282A` → inicia `welcome`.
-- **Solo `/bajar-de-peso/` (contractual, Anexo Dos I.3.k):** slot para el **video institucional de 45–60 s** (música licenciada + voz en off). Carga diferida (`poster` + lazy) para no romper el presupuesto de LCP; nunca autoplay con audio.
-- **Imágenes (contractual, Anexo Dos I.3.g):** servir en **AVIF/WebP** con `srcset` responsivo; las fotos provienen del banco del cliente (~650 tratadas) + ~150 generadas por IA.
-- **Requisito no funcional:** **LCP < 2.5 s**, **CLS < 0.1**, **INP < 200 ms** (Core Web Vitals — afectan ranking SEO; umbrales firmados en Anexo Dos I.3.e).
+- **Solo `/bajar-de-peso/`:** slot para el **video institucional de 45–60 s** (música licenciada + voz en off). Carga diferida (`poster` + lazy) para no romper el presupuesto de LCP; nunca autoplay con audio.
+- **Imágenes:** servir en **AVIF/WebP** con `srcset` responsivo; las fotos provienen del banco del cliente (~650 tratadas) + ~150 generadas por IA.
+- **Requisito no funcional:** **LCP < 2.5 s**, **CLS < 0.1**, **INP < 200 ms** (Core Web Vitals — afectan ranking SEO).
 
 ### 5.6 Home — matriz de comportamiento
 
@@ -1380,7 +1380,7 @@ Disparador: block_1_on, block_2_on y block_3_on son todos false (Rule 39). Compo
 
 ## 7. Sistema de diseño, tokens y redacción
 
-> **Alcance (propiedad del diseño).** Esta sección define **restricciones** (tokens de marca + mínimos de accesibilidad) y los **lineamientos de estilo premium**, no el diseño gráfico final. La creación de las opciones visuales (layouts a alta fidelidad, componentes, retícula, fotografía, micro-interacciones) es **entregable del equipo de desarrollo/diseño** (Anexo Dos I.3.a). Los **lineamientos de estilo premium** —la vara de aprobación— viven en `DESIGN.md`. Todo lo "visual" que aparezca en este spec (arquitectura visual por pantalla, Apéndice F HTML/CSS) es **referencia ilustrativa no vinculante** derivada del demo.
+> **Alcance (propiedad del diseño).** Esta sección define **restricciones** (tokens de marca + mínimos de accesibilidad) y los **lineamientos de estilo premium**, no el diseño gráfico final. La creación de las opciones visuales (layouts a alta fidelidad, componentes, retícula, fotografía, micro-interacciones) es **entregable del equipo de desarrollo/diseño**. Los **lineamientos de estilo premium** —la vara de aprobación— viven en `DESIGN.md`. Todo lo "visual" que aparezca en este spec (arquitectura visual por pantalla, Apéndice F HTML/CSS) es **referencia ilustrativa no vinculante** derivada del demo.
 
 - **Guía de estilo y lineamientos premium:** ver `DESIGN.md` (alcance, lineamientos de estilo premium, tokens + reglas para agentes de IA).
 - **Tokens (DTCG/JSON):** paleta de los **activos de marca del cliente** (no inventada). Son restricciones, no propuestas de diseño:
@@ -1519,10 +1519,10 @@ Estas preguntas BLOQUEAN el gate médico (F11) y deben resolverse con Sports Wor
 | D4 🟠 | 5 clubes ofrecen AQUA ZUMBA SIN flag de alberca (amores, antara, anzures, reforma, roma). ¿Flag mal o clase mal asignada? | Contradicción de la fuente |
 | D5 🟡 | 6 columnas no oficiales en la matriz sin destino: BEAT N BIKE (2), INTRINITY (1), BOX 1 (2), INICIACIÓN TKD (3), ECROSS (3), FÚTBOL (3). ¿Incorporar con ficha+contraindicaciones o excluir? | Catálogo |
 | D6 🟡 | Confirmar 3 mapeos SUPUESTOS: AE YOGA→AEROYOGA (2 clubes) · HATHA YOGA 90→HATHA YOGA (4) · VINYASA YOGA 90→VINYASA YOGA (6) | Catálogo |
-| D7 🟠 | FitKidz: la matriz trae 21 actividades infantiles; **el contrato firma 34** (Anexo Dos I.1, nivel 06) → el número correcto es 34; el cliente debe completar las 13 columnas faltantes de la matriz | Rule 11 / Rule 30 |
+| D7 🟠 | FitKidz: la matriz trae 21 actividades infantiles; el número correcto es **34** (FitKidz); el cliente debe completar las 13 columnas faltantes de la matriz | Rule 11 / Rule 30 |
 | D8 🟠 | 4 de los 10 amenity hubs sin fuente de datos: sauna/vapor, regaderas/lockers, café, estacionamiento. ¿De dónde salen? | 155 páginas firmadas |
 | F10 🟡 | kids_classes de los 10 clubes State-B (pregunta rastreada con Gabriela) | FitKidz Estado B |
-| F14 ✅ | **Resuelto por contrato** (Anexo Dos I.2.h): schema de páginas de clase = **Course** (Rule 13 actualizada); Event por sesión queda como complemento opcional de ingeniería | SEO |
+| F14 ✅ | **Resuelto:** schema de páginas de clase = **Course** (Rule 13); `Event` por sesión queda como complemento opcional de ingeniería | SEO |
 
 ---
 
@@ -1683,7 +1683,7 @@ Principio de inmutabilidad de códigos. Ninguno de los códigos anteriores se re
 
 ## Apéndice F — Plantilla de referencia de la página de resultado
 
-> **Alcance (referencia visual no vinculante).** Este apéndice es una **referencia ilustrativa** de **estructura de contenido, slots y semántica** — **no** es el diseño gráfico prescrito. Crear las opciones de diseño visual (layout a alta fidelidad, componentes, retícula, escala tipográfica, fotografía, micro-interacciones) es **entregable del equipo de diseño/desarrollo** (Anexo Dos I.3.a), guiado por los **lineamientos de estilo premium** de `DESIGN.md`. Lo vinculante aquí es *qué* bloques de contenido existen y *qué* dicen; *cómo* se ven lo diseña el equipo de diseño. El HTML/CSS de abajo es referencia legada del demo.
+> **Alcance (referencia visual no vinculante).** Este apéndice es una **referencia ilustrativa** de **estructura de contenido, slots y semántica** — **no** es el diseño gráfico prescrito. Crear las opciones de diseño visual (layout a alta fidelidad, componentes, retícula, escala tipográfica, fotografía, micro-interacciones) es **entregable del equipo de diseño/desarrollo**, guiado por los **lineamientos de estilo premium** de `DESIGN.md`. Lo vinculante aquí es *qué* bloques de contenido existen y *qué* dicen; *cómo* se ven lo diseña el equipo de diseño. El HTML/CSS de abajo es referencia legada del demo.
 
 Esta es la forma autoritativa del reporte de Experiencia Ideal renderizado para el usuario del happy path (Sofía: Mujer, Intermedio, Estética corporal, Q6 = Ambas, Q13 = Acompañada, club Polanco). Los tokens de slot entre llaves son placeholders; sus fuentes de datos están documentadas en la matriz experiencia-ideal de la §5. Solo el hook, el argumento del plan, la intent line, el argumento de infraestructura y los conectores por clase son generados por el LLM, cada uno regido por el Apéndice E; todo el demás contenido proviene del backend o de las fichas.
 
