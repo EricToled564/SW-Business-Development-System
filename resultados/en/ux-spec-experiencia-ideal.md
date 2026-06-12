@@ -326,7 +326,7 @@ delivered as a separate workstream with its own specification; this document cov
 
 ### 3.2 Detail by page type
 
-- The 5 goal hubs are: first steps, health and wellness, body aesthetics, build strength, rehabilitation.
+- The 5 goal hubs (type 7, `/perfiles/`) are: first steps, health and wellness, body aesthetics, build strength, rehabilitation. The weight-loss hub is a separate type (type 8) because of its YMYL classification.
 - The 5 membership plans are: UniClub, AllClub, Black Pass, Pink Plan, and the 21-Day Promo.
 - The 10 amenity hubs are: pool, INTENZ (functional training zone), FitKidz, boxing ring, climbing wall, courts, sauna and steam room, showers and locker rooms, cafe, and parking.
 - "FitKidz" appears both as a page type (the parent hub) and as one of the 10 amenities. The FitKidz hub is the fully-built page; the FitKidz amenity entry is a pointer that links to it.
@@ -334,6 +334,19 @@ delivered as a separate workstream with its own specification; this document cov
 - Architecture diagram: *(visual diagram — Week-1 design deliverable; the «Page inventory» above is the authoritative content)*
 
 The diagram above is a textual approximation. The design team produces the formal IA diagram as a Week-1 deliverable. Anti-orphan rule: every page must be reachable from at least two other pages. The cross-linking matrix is enforced by Rule 10.
+
+> **Goal hubs and Q4 goals — relationship, not equivalence.** Goal hubs are SEO landing pages named for search intent; they are **not** a 1:1 copy of the questionnaire's 6 Q4 goals. This is the exact relationship (pre-fill per Rule 20):
+>
+> | Goal hub (page type) | Q4 goal it pre-marks |
+> | --- | --- |
+> | Weight loss (type 8, YMYL) | Bajar de peso |
+> | Salud y Bienestar | Mejorar mi salud cardiovascular |
+> | Estética corporal | Mejorar mi estética corporal |
+> | Ganar Fuerza | Aumentar masa muscular |
+> | Rehabilitación | Recuperarme de una lesión o dolor |
+> | Primeros Pasos | None: pre-marks Q9 = Principiante (serves any goal for first-timers) |
+>
+> The sixth Q4 goal, **Mejorar mi desempeño atlético**, has no dedicated goal hub: it is served by the individual-training pages (Potencia and SIT subpages, §3.3) and is reachable from the Ganar Fuerza hub. That is why there are **5 goal hubs + 1 weight hub** for **6 Q4 goals**: the correspondence is intentional, not a counting error.
 
 ### 3.3 Individual training: subgroup taxonomy
 
@@ -597,7 +610,7 @@ When the user lands on a specific page, the system pre-fills the questions it ca
 | YMYL hub — Bajar de peso | Q4 pre-marks "Bajar de peso", which activates Q17 to Q19. | |
 | Personal Training | Q13 pre-marks "Acompañado/Acompañada". | |
 | Memberships, Journal | None. | |
-| entrenamiento-con-pesas-individual (and subpages) | Q13 pre-marks "Solo, a mi ritmo" (or "Sola" if Q2 = Mujer). Subpages pre-mark Q4: Fuerza → "Mejorar mi desempeño atlético"; Hipertrofia → "Mejorar mi estética corporal"; Potencia → "Mejorar mi desempeño atlético"; Resistencia muscular → "Mejorar mi salud cardiovascular". | New. |
+| entrenamiento-con-pesas-individual (and subpages) | Q13 pre-marks "Solo, a mi ritmo" (or "Sola" if Q2 = Mujer). Subpages pre-mark Q4: Fuerza → "Aumentar masa muscular"; Hipertrofia → "Mejorar mi estética corporal"; Potencia → "Mejorar mi desempeño atlético"; Resistencia muscular → "Mejorar mi salud cardiovascular". | New. |
 | entrenamiento-aerobico-individual (and subpages) | Q13 pre-marks "Solo, a mi ritmo" (or "Sola" if Q2 = Mujer). Subpages pre-mark Q4: LISS → no pre-mark; MICT → "Mejorar mi salud cardiovascular"; HIIT → "Mejorar mi estética corporal"; SIT → "Mejorar mi salud cardiovascular". | New. |
 
 Pre-fill is always editable by the user.
@@ -988,7 +1001,7 @@ Individual weight-training page (class page type). Per Rule 38, Q13 pre-marks So
 | Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 | Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 
-Subpage Q4 pre-mark (Rule 20, dedupe per): Fuerza pre-marks **Aumentar masa muscular**; Hipertrofia pre-marks Mejorar mi estética corporal; Potencia pre-marks Mejorar mi desempeño atlético; Resistencia muscular pre-marks Mejorar mi salud cardiovascular. Landing→result consistency note: the pre-fill is editable; the result derives from the final Q4, so it may differ from the visited subpage — intentional behavior, documented here.
+Subpage Q4 pre-mark (Rule 20, deduplicado): Fuerza pre-marks **Aumentar masa muscular**; Hipertrofia pre-marks Mejorar mi estética corporal; Potencia pre-marks Mejorar mi desempeño atlético; Resistencia muscular pre-marks Mejorar mi salud cardiovascular. Landing→result consistency note: the pre-fill is editable; the result derives from the final Q4, so it may differ from the visited subpage — intentional behavior, documented here.
 
 #### Individual aerobic training — matrix
 
@@ -1001,7 +1014,7 @@ Individual aerobic-training page (class page type). Per Rule 38, Q13 pre-marks S
 | Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 | Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 
-Subpage Q4 pre-mark (Rule 20, dedupe per): LISS no pre-mark; MICT pre-marks Mejorar mi salud cardiovascular; HIIT pre-marks Mejorar mi estética corporal; SIT pre-marks **Mejorar mi desempeño atlético**.
+Subpage Q4 pre-mark (Rule 20, deduplicado): LISS no pre-mark; MICT pre-marks Mejorar mi salud cardiovascular; HIIT pre-marks Mejorar mi estética corporal; SIT pre-marks **Mejorar mi desempeño atlético**.
 
 ### 5.15 BES via fallback URL — matrix
 

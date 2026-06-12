@@ -326,7 +326,7 @@ BES. El asistente conversacional es un widget global flotante presente en cada p
 
 ### 3.2 Detalle por tipo de página
 
-- Los 5 hubs de objetivo son: primeros pasos, salud y bienestar, estética corporal, ganar fuerza, rehabilitación.
+- Los 5 hubs de objetivo (tipo 7, `/perfiles/`) son: primeros pasos, salud y bienestar, estética corporal, ganar fuerza, rehabilitación. El hub de bajar de peso es un tipo aparte (tipo 8) por su clasificación YMYL.
 - Los 5 planes de membresía son: UniClub, AllClub, Black Pass, Pink Plan y la Promo de 21 días.
 - Los 10 hubs de amenidades son: alberca, INTENZ (zona de entrenamiento funcional), FitKidz, ring de box, muro de escalada, canchas, sauna y vapor, regaderas y vestidores, cafetería y estacionamiento.
 - «FitKidz» aparece tanto como tipo de página (el hub padre) como una de las 10 amenidades. El hub de FitKidz es la página completamente construida; la entrada de FitKidz como amenidad es un apuntador que enlaza a ella.
@@ -334,6 +334,19 @@ BES. El asistente conversacional es un widget global flotante presente en cada p
 - Diagrama de arquitectura: *(diagrama visual — entregable de diseño Semana 1; el «Page inventory» de arriba es el contenido autoritativo)*
 
 El diagrama anterior es una aproximación textual. El equipo de diseño produce el diagrama formal de IA como entregable de la Semana 1. Regla anti-huérfanos: toda página debe ser alcanzable desde al menos otras dos páginas. La matriz de enlaces cruzados se aplica mediante la Rule 10.
+
+> **Hubs de objetivo y objetivos Q4 — relación, no equivalencia.** Los hubs de objetivo son páginas de aterrizaje SEO nombradas por intención de búsqueda; **no** son una copia 1:1 de los 6 objetivos Q4 del cuestionario. Esta es la relación exacta (pre-llenado por Rule 20):
+>
+> | Hub de objetivo (tipo de página) | Objetivo Q4 que pre-marca |
+> | --- | --- |
+> | Bajar de peso (tipo 8, YMYL) | Bajar de peso |
+> | Salud y Bienestar | Mejorar mi salud cardiovascular |
+> | Estética corporal | Mejorar mi estética corporal |
+> | Ganar Fuerza | Aumentar masa muscular |
+> | Rehabilitación | Recuperarme de una lesión o dolor |
+> | Primeros Pasos | Ninguno: pre-marca Q9 = Principiante (sirve a cualquier objetivo para quien empieza) |
+>
+> El sexto objetivo Q4, **Mejorar mi desempeño atlético**, no tiene hub de objetivo dedicado: se atiende desde las páginas de entrenamiento individual (subpáginas Potencia y SIT, §3.3) y es alcanzable desde el hub Ganar Fuerza. Por eso hay **5 hubs de objetivo + 1 hub de peso** para **6 objetivos Q4**: la correspondencia es intencional, no un error de conteo.
 
 ### 3.3 Entrenamiento individual: taxonomía de subgrupos
 
@@ -593,7 +606,7 @@ Cuando el usuario aterriza en una página específica, el sistema prellena las p
 | Hub YMYL — Bajar de peso | Q4 pre-marca "Bajar de peso", lo que activa Q17 a Q19. | |
 | Personal Training | Q13 pre-marca "Acompañado/Acompañada". | |
 | Membresías, Journal | Ninguno. | |
-| entrenamiento-con-pesas-individual (y subpáginas) | Q13 pre-marca "Solo, a mi ritmo" (o "Sola" si Q2 = Mujer). Las subpáginas pre-marcan Q4: Fuerza → "Mejorar mi desempeño atlético"; Hipertrofia → "Mejorar mi estética corporal"; Potencia → "Mejorar mi desempeño atlético"; Resistencia muscular → "Mejorar mi salud cardiovascular". | Nuevo. |
+| entrenamiento-con-pesas-individual (y subpáginas) | Q13 pre-marca "Solo, a mi ritmo" (o "Sola" si Q2 = Mujer). Las subpáginas pre-marcan Q4: Fuerza → "Aumentar masa muscular"; Hipertrofia → "Mejorar mi estética corporal"; Potencia → "Mejorar mi desempeño atlético"; Resistencia muscular → "Mejorar mi salud cardiovascular". | Nuevo. |
 | entrenamiento-aerobico-individual (y subpáginas) | Q13 pre-marca "Solo, a mi ritmo" (o "Sola" si Q2 = Mujer). Las subpáginas pre-marcan Q4: LISS → sin pre-marca; MICT → "Mejorar mi salud cardiovascular"; HIIT → "Mejorar mi estética corporal"; SIT → "Mejorar mi salud cardiovascular". | Nuevo. |
 
 El prellenado siempre es editable por el usuario.
@@ -985,7 +998,7 @@ Individual weight-training page (class page type). Per Rule 38, Q13 pre-marks So
 | Complete, inside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 | Complete, outside the flow | Already complete | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 
-Subpage Q4 pre-mark (Rule 20, dedupe per): Fuerza pre-marks **Aumentar masa muscular**; Hipertrofia pre-marks Mejorar mi estética corporal; Potencia pre-marks Mejorar mi desempeño atlético; Resistencia muscular pre-marks Mejorar mi salud cardiovascular. Nota de coherencia landing→resultado: el pre-fill es editable; el resultado se deriva del Q4 final, por lo que puede diferir de la subpágina visitada — comportamiento intencional, documentado aquí.
+Subpage Q4 pre-mark (Rule 20, deduplicado): Fuerza pre-marks **Aumentar masa muscular**; Hipertrofia pre-marks Mejorar mi estética corporal; Potencia pre-marks Mejorar mi desempeño atlético; Resistencia muscular pre-marks Mejorar mi salud cardiovascular. Nota de coherencia landing→resultado: el pre-fill es editable; el resultado se deriva del Q4 final, por lo que puede diferir de la subpágina visitada — comportamiento intencional, documentado aquí.
 
 #### Entrenamiento aeróbico individual — matriz
 
@@ -998,7 +1011,7 @@ Página de entrenamiento aeróbico individual (tipo de página de clase). Según
 | Completo, dentro del flujo | Ya completo | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 | Completo, fuera del flujo | Ya completo | Volver a tu experiencia ideal · Tu rutina individual · Agenda tu visita guiada |
 
-Premarcado de Q4 por subpágina (Rule 20, dedupe según): LISS sin premarcado; MICT premarca Mejorar mi salud cardiovascular; HIIT premarca Mejorar mi estética corporal; SIT premarca **Mejorar mi desempeño atlético**.
+Premarcado de Q4 por subpágina (Rule 20, deduplicado): LISS sin premarcado; MICT premarca Mejorar mi salud cardiovascular; HIIT premarca Mejorar mi estética corporal; SIT premarca **Mejorar mi desempeño atlético**.
 
 ### 5.15 BES vía URL de fallback — matriz
 
