@@ -47,83 +47,65 @@ El motor de crecimiento es **SEO de estructura**, no publicidad pagada. Hoy el s
 
 ## 2. Personas y Customer Journey
 
-> **Fuente autoritativa:** `Consumer Journey — Sports World` (documento anexo del cliente; research secundario profundo: reputación + comportamiento del usuario en fitness premium MX). Benchmarks: NPS Sports World 47.3 (Q3 2025, máximo del año) · Smart Fit recibe 8× visitas por cada 1 de SW (PREDIK) · retención mediana anual del sector 66.4% (HFA 2025) · 50% de los nuevos socios del sector cancelan en los primeros 6 meses (IHRSA).
+> Audiencia y comportamiento del documento `Consumer Journey — Sports World` (research del cliente), **adaptados a la estructura y al flujo acordados de este spec** (cuestionario Q1–Q19, 6 objetivos Q4, fases `welcome→…→briefing`, 11 tipos de página de Part 3). Donde el journey usa marcos propios (funnel de 8 fases, "10 preguntas", Help Center, member portal, app), **prevalece lo acordado**; del journey se toman los **arquetipos**, las **4 puertas de entrada** y los **insights accionables**.
 
-### 2.1 Los dos arquetipos CORE primarios (una columna vertebral, divergencias tácticas)
+### 2.1 Personas
 
-El journey tiene la **misma columna para ambos** — 8 fases idénticas, mismos touchpoints, mismo cuestionario adaptativo. Las divergencias son **tácticas** (qué enfatizar por fase, qué amenidades pesan, qué dolores dominan, qué tono usar), no estructurales.
+Los dos arquetipos CORE son **quién** es el usuario (segmentación por contexto de vida); el **objetivo Q4** que eligen en el cuestionario es **qué** buscan. Los dos ejes conviven: un mismo arquetipo puede elegir distintos Q4.
 
 **P1 — Family Wellbeing Manager ("Family CWO") · CORE Prioridad 1 · dueño del LTV (3x–4x la membresía individual).**
-35–50 años · NSE AB/C+ · casado/a · 1–2 hijos de 4–12 · zonas de alta densidad (Del Valle, Polanco, Satélite, Interlomas, Pedregal). *"Vivo manejando a los niños. Si pago un club, que me devuelva tiempo, no que me quite más."*
-- **JTBD:** la tarde desaparece en el carpool (3–4 h fragmentadas); si paga un club, quiere **recuperar tiempo** — entrenar mientras los hijos están seguros y aprendiendo en FitKidz, sin esperar en el coche ni coordinar tres ubicaciones. El club es el **centro de operaciones de la tarde familiar**.
-- **Moat fit: MÁXIMO** — FitKidz resuelve la logística post-escuela; alberca esencial para el desarrollo de los hijos; costo de cambio alto (cambiar = reorganizar la tarde familiar).
-- **Comportamiento:** búsqueda local con foco en hijos ("gym con alberca para niños en [zona]", "natación niños cerca de [escuela]") desde la geografía de la escuela/casa. Tolera fricción reputacional, pero **cualquier incidente de seguridad infantil es bloqueo absoluto**. Decisión **lenta: 1–3 semanas** (consulta a la pareja y a otros padres); revisa reseñas "[club] kids".
+35–50 años · NSE AB/C+ · 1–2 hijos de 4–12 · zonas de alta densidad (Del Valle, Polanco, Satélite, Interlomas, Pedregal). JTBD: *"que el club me devuelva tiempo"* — entrenar mientras los hijos están seguros en FitKidz, sin coordinar tres ubicaciones.
+- **Puerta de entrada típica (Rule 16/20):** búsqueda local con foco en hijos ("gym con alberca para niños en [zona]", "natación niños cerca de [escuela]") → aterriza en página de **club** o de **amenidad** (FitKidz/alberca).
+- **Señales típicas en el cuestionario:** Q4 = Bajar de peso · Mejorar mi salud cardiovascular · Recuperarme de una lesión; Q6 suele incluir alberca; Q14 = "Yo y mis hijos" (→ Q14b).
+- **Lo que la Experiencia Ideal debe lograr:** resaltar FitKidz + alberca del club resuelto y un brief que no re-pregunte la logística familiar. Bloqueo absoluto: cualquier señal de inseguridad infantil. Decisión lenta (1–3 semanas; consulta a la pareja).
 
 **P2 — Urban Hybrid Executive ("Third Spacer") · CORE Prioridad 2 · justifica el precio premium.**
-28–45 años · profesional independiente o corporativo con esquema híbrido/remoto · vive o trabaja en zona con club legacy (Antara, Reforma, Polanco, Santa Fe, Interlomas). *"Si arranco el día sin moverme, llego plano a todo lo demás."*
-- **JTBD:** necesita un **tercer espacio** entre la casa (chica para una jornada completa) y la oficina — donde romper el día, entrenar, bañarse en condiciones premium y resolver la transición trabajo→resto de la vida. El club es **infraestructura de su día híbrido**.
-- **Moat fit: ALTO** — amenidades extendidas (vapor, sauna, toallas, internet, lobby/coworking) ausentes en low-cost y boutiques; multiclub (club cerca de casa o de la oficina según el día). Estrategia: monetizar tiempo-en-sitio.
-- **Comportamiento:** búsqueda hiperlocal o por amenidad ("gym con vapor en Polanco", "club con coworking"); decisión más rápida que el Family CWO; revisa 5–15 reseñas del club específico antes de decidir; exige confirmación rápida (WhatsApp).
+28–45 años · profesional híbrido/remoto · vive o trabaja cerca de un club legacy (Antara, Reforma, Polanco, Santa Fe, Interlomas). JTBD: un **tercer espacio** para romper el día, entrenar y bañarse en condiciones premium.
+- **Puerta de entrada típica:** búsqueda hiperlocal o por amenidad ("gym con vapor en Polanco", "club con coworking") → aterriza en página de **club** o de **amenidad**.
+- **Señales típicas en el cuestionario:** Q4 = Mejorar mi desempeño atlético · Aumentar masa muscular · Mejorar mi estética corporal; Q7 temprano o post-trabajo.
+- **Lo que la Experiencia Ideal debe lograr:** confirmación rápida (agente de voz/WhatsApp), énfasis en amenidades (vapor/sauna/coworking) y multiclub. Decisión más rápida; revisa 5–15 reseñas del club antes de decidir.
 
-**Secundarias:** P3 Asesor (recibe el brief con banderas; convierte la visita sin re-preguntar) · P4 Agente de voz/BES (atiende 24/7, agenda, transfiere a humano).
+**P3 — Asesor (secundaria, interna).** Recibe el brief con banderas y convierte la visita sin re-preguntar lo ya respondido (Appendix G).
+**P4 — Agente de voz / BES (secundaria, sistema).** Atiende 24/7, agenda y transfiere a humano.
 
-### 2.2 El journey — 8 fases × 6 capas
+### 2.2 Customer Journey — el flujo Experiencia Ideal (de Google a la visita guiada)
 
-| Fase | Qué pasa | Divergencia táctica |
-| --- | --- | --- |
-| **F1 Trigger** | Reconoce un costo físico (dolor de espalda, agotamiento, aviso médico) y decide cambiar | CWO: caos logístico post-escuela · Exec: aislamiento del home office, tercer espacio |
-| **F2 Initial consideration** | Busca en Google con intención local; aterriza por una de **4 puertas** (home, club específico, amenidad/clase, página de objetivo) y recibe la invitación **no bloqueante** al cuestionario | CWO: geografía escuela/casa · Exec: geografía oficina ("50% de visitantes SW viven en la zona; 19% trabajan en ella" — PREDIK) |
-| **F3 Active evaluation** | Con cuestionario: ve clubes/amenidades/clases **filtrados a su perfil**; lee reseñas Google del club sugerido; compara precio vs Smart Fit ("93% dice que las reseñas influyen") | CWO: filtra por seguridad infantil/FitKidz/alberca/limpieza · Exec: saturación pico, instructores, vestidores, internet |
-| **F4 Tour request** | Agenda por sitio (Path B), BES (Path A) o llamada; cita confirmada **en tiempo real vía API** con el sistema de reservas del cliente | CWO: franja 4–7 PM, pide ir con un hijo · Exec: temprano o post-trabajo, confirmación por WhatsApp |
-| **F5 Conversion** | Tour, opciones de membresía, decisión; firma el mismo día o regresa en 1–7 días | CWO consulta a la pareja; Exec decide más rápido |
-| **F6 Onboarding (1–90d)** | Primera clase, primera reserva en app, bienvenida real | Identidad "persona que entrena" frágil; la app tiene problemas documentados de estabilidad al reservar |
-| **F7 Habit (3–12m)** | Reservas recurrentes, pausas, variedad | **Meseta silenciosa** (semanas 4–6): mayor churn del sector |
-| **F8 Loyalty loop** | Renueva, refiere, expande (familia, multiclub, upgrade) | CWO: expansión familiar · Exec: multiclub/PT |
-
-**Curva emocional:** pico de decisión en F4–F5 → **valle de churn en F6–F7** (meseta silenciosa) → lealtad consolidada en F8.
+El journey de este spec es el **flujo on-site acordado**, no el funnel de 8 fases del sector. Ambos arquetipos recorren las **mismas fases**; las divergencias son tácticas (qué se enfatiza).
 
 ```mermaid
 journey
- title Consumer Journey — 8 fases (curva emocional)
- section Decidir
- F1 Trigger: 1: CWO, Exec
- F2 Consideración (4 puertas + cuestionario): 3: CWO, Exec
- F3 Evaluación (reseñas, comparación): 3: CWO, Exec
- section Pico de decisión
- F4 Tour (API en tiempo real): 5: CWO, Exec
- F5 Conversión (firma): 5: CWO, Exec
- section Valle de churn
- F6 Onboarding (1a clase, app): 2: CWO, Exec
- F7 Hábito (meseta semanas 4-6): 1: CWO, Exec
- section Lealtad
- F8 Loyalty loop (renueva, refiere, expande): 5: CWO, Exec
+ title Experiencia Ideal — de la búsqueda a la visita guiada
+ section Descubrir (SEO · 4 puertas)
+ Busca local en Google: 3: CWO, Executive
+ Aterriza en hub/club/amenidad (pre-fill Rule 20): 4: CWO, Executive
+ section Cualificar (Experiencia Ideal)
+ Invitación no bloqueante al cuestionario (1x sesión): 3: CWO, Executive
+ Responde Q1-Q19 adaptativo: 3: CWO, Executive
+ Recibe recomendación personalizada: 5: CWO, Executive
+ section Convertir
+ Deja datos de contacto: 4: CWO, Executive
+ Agenda la visita (confirmacion en tiempo real): 5: CWO, Executive
+ section Cerrar (humano)
+ Asesor recibe el brief y atiende: 5: Asesor
+ Agente de voz confirma la cita: 5: BES
 ```
 
-### 2.3 Moments of Truth — donde se decide quedarse o irse
+Las fases técnicas exactas (welcome · questionnaire · loading · result · contact_capture · schedule · briefing · error) y todas las bifurcaciones están en **§3** y **§4**.
 
-| MoT | Fase | Momento | Riesgo / intervención |
-| --- | --- | --- | --- |
-| 01 | F2 | **El cuestionario en el landing** — primera intervención del sistema. Pop-up **no bloqueante**, solo **1 vez por sesión activa**; si lo cierra, queda visible como botón discreto | Invitar sin interrumpir; cada puerta de entrada revela intención (pre-fill por Rule 20) |
-| 02 | F3 | **El review-check del club específico** — lee 5–15 reseñas Google del club sugerido | Reseñas polarizadas = parálisis; menciones recientes de mantenimiento/staff apático = se va a investigar otro |
-| 03 | F4–F5 | **Primer contacto del asesor** + consistencia entre 49 clubes (show rate sector 60–75%, close 30–45%) | Depende de: qué tan preparado llega el asesor (→ brief, Appendix G), que no se sienta venta, y velocidad de confirmación (resuelta por API en tiempo real) |
-| 04 | F6 | **Primera clase y primera reserva en app** | Identidad frágil: clase intimidante, instructor que no nota al nuevo, app que falla al reservar o recepción fría → membresía tambalea desde el día 1 |
-| 05 | F7 | **La meseta silenciosa (semanas 4–6)** — el momento de mayor churn del sector | Intervenir proactivamente: explicar que la meseta es NORMAL, recalibrar programa, sesión gratis con PT — o el churn empieza ese día |
-| 06 | F7 | **El regreso tras el primer pico de trabajo** (ausencia de 1–2+ semanas) | Si nadie nota la ausencia ni facilita el regreso, empieza la consideración silenciosa de cancelar |
+### 2.3 Insights del consumer journey que informan el diseño
 
-### 2.4 Mapeo journey → arquitectura del sitio
+Cada insight del research se conecta con una regla/sección **ya acordada** (no introduce un marco nuevo):
 
-| Fase | Necesidad informacional | Sección/página | CTA |
-| --- | --- | --- | --- |
-| F1 | Saber que existe una opción premium accesible | (branding upstream — fuera del alcance del sitio) | — |
-| F2 | Confirmar tipo de club, ubicaciones, rango de precio | Home · perfiles GMB (49) · Club detail (entrada SEO local) | Localizador "Encuentra tu club" |
-| F3 | Validar club específico: fotos reales, horarios, clases, reseñas, amenidades | Club detail (49) · Class detail · Membership · Help Center | "Agenda tu visita" (primario) · "Diseña tu experiencia" (secundario) |
-| F4 | Confirmar cita, recordatorios, llegar preparado | Path A (BES) · Path B (booking directo) · plantillas WhatsApp | Confirmación del tour |
-| F5 | Firmar con expectativas claras de los primeros 30 días | (en club, mayormente off-site) + Help Center «Tu primera visita» | — |
-| F6 | Reservar 1a clase, entender la app, bienvenida real | App · Help Center «Tu primera visita» · member portal | Reserva de clase |
-| F7 | Reservas recurrentes, pausas, variedad | App · Class detail · Personal Training · Help Center «Soy socio» | Reserva · Freeze · PT |
-| F8 | Renovar, referir, expandir | Member portal · FitKidz hub · Memberships | Upgrade / referidos |
+| Insight del journey | Dónde se atiende en el spec |
+| --- | --- |
+| Las 4 puertas de entrada revelan intención | Pre-fill por aterrizaje (Rule 16/20); el hub SEO de "perder peso" es la puerta de objetivo |
+| Invitación no bloqueante, 1×/sesión, persistente como botón | Comportamiento de invocación del cuestionario (Rule 27) |
+| El review-check del club específico decide la conversión | Página de club (Part 3) con fotos reales, horarios, clases, reseñas y amenidades; Club Ideal (Rule 42) |
+| Consistencia del asesor entre 49 clubes + confirmación rápida | Brief del asesor (Appendix G) + agenda en tiempo real (fase `schedule`, API del cliente) |
+| Meseta silenciosa (sem. 4–6) y regreso tras ausencia = mayor churn | **Fuera del alcance del sitio** (retención/CRM post-venta); se anota como dependencia, no se diseña aquí |
+| Benchmarks: NPS 47.3 · retención 66.4% · 50% churn a 6 meses (sector) | Contexto de §10; el sitio impacta **captación**, no la retención post-venta |
 
-> **Nota de precedencia:** el documento de journey describe un instrumento de "10 preguntas, 1 minuto". El **cuestionario oficial acordado (15 base + 6 condicionales, Rule 18)** prevalece; del journey se adoptan la lógica adaptativa por puerta de entrada, el pop-up no bloqueante (1×/sesión, persistente como botón) y los Moments of Truth. La meta de tiempo-de-completado debe medirse contra el instrumento oficial (riesgo de abandono ya documentado en §10.3).
+> **Precedencia.** El journey describe "10 preguntas, 1 minuto" y artefactos de otra workstream (Help Center, app, member portal). Prevalece lo acordado: **cuestionario oficial 15+6 (Rule 18)**; Help Center fuera de alcance (Rule 37 — lo cubre BES); app/portal son workstreams aparte. La meta de tiempo de completado se mide contra el instrumento oficial (riesgo de abandono, §10.3).
 
 ---
 
