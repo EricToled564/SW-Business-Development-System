@@ -1,6 +1,6 @@
 # Engineering and CRM annex — Experiencia Ideal
 
-> Relocated from the UX Spec per the 2026-06-11 audit (R12–R14). Implementation decisions that expire and sales logic with no UI behavior.
+> Implementation decisions that expire (model, parameters) and sales logic with no UI behavior. The UX Spec references this annex.
 
 ## R12 — LLM call parameters (they expire; engineering)
 

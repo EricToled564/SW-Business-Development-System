@@ -127,9 +127,9 @@ El estilo objetivo es **"fitness premium"**: confianza, claridad y aire — más
 
 ---
 
-## Referencias (única copia, sin duplicación — audit R1/R2)
+## Referencias (única copia por contenido)
 
-La duplicación previa de Appendix E/F en este archivo causó drift entre documentos (audit C13). Única copia autoritativa de cada pieza:
+Cada pieza de contenido tiene exactamente una copia autoritativa (duplicarla entre documentos genera divergencia):
 
 | Contenido | Vive en |
 | --- | --- |

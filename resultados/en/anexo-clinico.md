@@ -1,12 +1,12 @@
 # Clinical Annex — Experiencia Ideal (owner: medical validation MD)
 
-> Relocated from the UX Spec by audit 2026-06-11 (R6–R9). **Blocking gate:** sports medicine validation BEFORE production (YMYL). The spec retains the contract (hard filter of 5 keys l/c/e/p/b, Rule 40, Rule 14b) and references this annex as the single source of clinical data. Version it as CSV/JSON with MD signature.
+> This annex is the **single source of the project's clinical data**: the UX Spec defines the behavior (hard filter of 5 keys l/c/e/p/b, Rules 14b and 40) and takes its data from here. **Blocking gate:** a sports-medicine physician must validate this content BEFORE production (it is YMYL content). Version it as CSV/JSON with the physician's signature.
 
 ## 1. Contraindication matrix + profiles by goal (51 canonical classes)
 
-Canonical catalog **51 classes** (49 dry + 2 aquatic: AQUA ZUMBA, SWIM TRAINERS — ⚠️ audit D1/D2: in the current per-club scheduling matrix ONLY AQUA ZUMBA has an assignment; SWIM TRAINERS and 5 other official ones have no availability data, see «Open questions to the client»), reorganized by **benefit** (group) and **contraindication**. Columns: **l** injury · **c** cond_cardiovascular (medical condition Q12 — do NOT confuse with goal Q4 "Improve my cardiovascular health": CYCLING/INDBIKE are ★ for the goal and ● for the condition; audit M5) · **e** pregnancy · **p** postpartum · **b** bariatric. **●** = contraindicated. **Source:** `clínico` = client's original decision (prior matrix); `inferido` = derived by movement type (this pass), **PENDING medical validation (MD) before production** because it is YMYL.
+Canonical catalog **51 classes** (49 dry + 2 aquatic: AQUA ZUMBA, SWIM TRAINERS — ⚠️ pending client data: in the current per-club scheduling matrix ONLY AQUA ZUMBA has an assignment; SWIM TRAINERS and 5 other official classes have no availability data (see «Pending client inputs», §10.1 of the spec)), reorganized by **benefit** (group) and **contraindication**. Columns: **l** injury · **c** cond_cardiovascular (medical condition Q12 — do NOT confuse with goal Q4 "Improve my cardiovascular health": CYCLING/INDBIKE are ★ for the goal and ● for the condition) · **e** pregnancy · **p** postpartum · **b** bariatric. **●** = contraindicated. **Source:** `clínico` = client's original decision (prior matrix); `inferido` = derived by movement type (this pass), **PENDING medical validation (MD) before production** because it is YMYL.
 
-> Counts of contraindicated classes (catalog of 51): **injury 21 · cardiovascular 16 · pregnancy 38 · postpartum 34 · bariatric 20**. (They rise relative to 17/14/21/21/16 because the classes not previously listed were completed; the new values are mostly `inferido` and require medical ratification.)
+> Counts of contraindicated classes (catalog of 51): **injury 21 · cardiovascular 16 · pregnancy 38 · postpartum 34 · bariatric 20**. (Most values marked `inferido` require medical ratification before production.)
 
 **Strength, core and toning (8)**
 

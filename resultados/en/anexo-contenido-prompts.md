@@ -1,6 +1,6 @@
 # Content and prompts annex — Experiencia Ideal (owner: content)
 
-> Relocated from the UX Spec per the 2026-06-11 audit (R10–R11). Sole authoritative copy of the Brand Voice Guide and of the verbatim system-prompt prohibitions (including the "plan" one). The spec keeps the contract: LLM generation zones + word limits + reference to this annex. Apply automated forbidden-vocabulary linting on the LLM output (F9).
+> Sole authoritative copy of the Brand Voice Guide and of the verbatim system-prompt prohibitions (including the "plan" one). The UX Spec defines the LLM generation zones and their word limits, and references this annex as the source of voice. Apply automated forbidden-vocabulary linting on the LLM output.
 
 ### Appendix E - Brand Voice and Tone
 

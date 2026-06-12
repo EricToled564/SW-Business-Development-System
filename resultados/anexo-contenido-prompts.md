@@ -1,6 +1,6 @@
 # Anexo de contenido y prompts — Experiencia Ideal (owner: contenido)
 
-> Reubicado del UX Spec por auditoría 2026-06-11 (R10–R11). Única copia autoritativa del Brand Voice Guide y de las prohibiciones verbatim del system prompt (incluida la de "plan"). El spec conserva el contrato: zonas de generación LLM + límites de palabras + referencia a este anexo. Aplicar lint automatizado de vocabulario prohibido sobre la salida del LLM (F9).
+> Única copia autoritativa del Brand Voice Guide y de las prohibiciones verbatim del system prompt (incluida la de "plan"). El UX Spec define las zonas de generación del LLM y sus límites de palabras, y referencia este anexo como fuente de la voz. Aplicar lint automatizado de vocabulario prohibido sobre la salida del LLM.
 
 ### Appendix E - Brand Voice and Tone
 

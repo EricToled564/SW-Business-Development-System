@@ -125,9 +125,9 @@ The target style is **"premium fitness"**: confidence, clarity and air — close
 
 ---
 
-## References (single copy, no duplication — audit R1/R2)
+## References (single copy per piece of content)
 
-The prior duplication of Appendix E/F in this file caused drift between documents (audit C13). Single authoritative copy of each piece:
+Each piece of content has exactly one authoritative copy (duplicating it across documents creates divergence):
 
 | Content | Lives in |
 | --- | --- |

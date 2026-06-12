@@ -1,6 +1,6 @@
 # Anexo de ingeniería y CRM — Experiencia Ideal
 
-> Reubicado del UX Spec por auditoría 2026-06-11 (R12–R14). Decisiones de implementación que caducan y lógica de ventas sin comportamiento de UI.
+> Decisiones de implementación que caducan (modelo, parámetros) y lógica de ventas sin comportamiento de UI. El UX Spec referencia este anexo.
 
 ## R12 — Parámetros de la llamada LLM (caducan; ingeniería)
 - Modelo (demo v6): Claude Sonnet (`claude-sonnet-4-20250514`). `max_tokens`: 2000. Una sola llamada que devuelve copy del cliente + brief del asesor.
