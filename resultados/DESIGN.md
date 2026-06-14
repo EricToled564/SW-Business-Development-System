@@ -1,7 +1,7 @@
 ---
 meta:
   product: "Sports World — Experiencia Ideal"
-  source: "sw_experiencia_ideal_demo_v6_FINAL.jsx"
+  source: "experiencia-ideal-v5 source-of-truth package"
   lang: "es-MX"
 tokens:
   color:
@@ -92,7 +92,16 @@ Este documento **no impone el diseño gráfico**. La creación de las opciones v
 | El **copy** verbatim y la voz de marca | Composición, fotografía e ilustración |
 | Los **lineamientos de estilo premium** (abajo) como vara de aprobación | Las propuestas que cumplen esos lineamientos |
 
-> Por eso, todo lo "visual" que aparece en el spec (la *arquitectura visual v6* por pantalla y el **Appendix F HTML/CSS**) es **referencia ilustrativa NO vinculante**, derivada del prototipo de referencia, para comunicar intención y semántica — **no** un diseño a copiar. Lo vinculante es: tokens (marca + accesibilidad) + estructura de contenido + estos lineamientos premium.
+> Por eso, todo lo "visual" que aparece en el spec (la *arquitectura visual v6* por pantalla y el **Apéndice F HTML/CSS**) es **referencia ilustrativa NO vinculante**, derivada del prototipo de referencia, para comunicar intención y semántica — **no** un diseño a copiar. Lo vinculante es: tokens (marca + accesibilidad) + estructura de contenido + estos lineamientos premium.
+
+## Jerarquía normativa de diseño
+
+Este documento gobierna tokens, contraste, accesibilidad visual y lineamientos premium. No gobierna comportamiento, flujos, reglas clínicas, CRM ni prompts. Si hay tensión entre documentos:
+
+- `ux-spec-experiencia-ideal.md` decide comportamiento, estados, arquitectura de información y estructura de contenido.
+- `DESIGN.md` decide restricciones visuales, tokens y criterios de calidad premium.
+- El prototipo `sw_experiencia_ideal_demo_v6_FINAL.jsx` es referencia visual/funcional histórica, no fuente normativa.
+- Cualquier composición final de alta fidelidad debe cumplir este archivo y el UX Spec; si no cumple ambos, no está lista para handoff.
 
 ## Lineamientos de estilo premium (la vara que buscamos)
 
@@ -134,7 +143,7 @@ Cada pieza de contenido tiene exactamente una copia autoritativa (duplicarla ent
 | Contenido | Vive en |
 | --- | --- |
 | Brand Voice Guide completo (vocabularios, reglas, hooks, prohibiciones del prompt) | `anexo-contenido-prompts.md` |
-| Arquitectura visual v6 de la página de resultado (estructura de contenido autoritativa; HTML/CSS = referencia **ilustrativa no vinculante**, ver «Alcance» arriba) | `ux-spec-experiencia-ideal.md`, Appendix F |
+| Arquitectura visual v6 de la página de resultado (estructura de contenido autoritativa; HTML/CSS = referencia **ilustrativa no vinculante**, ver «Alcance» arriba) | `ux-spec-experiencia-ideal.md`, Apéndice F |
 | Matriz de contraindicaciones + fichas + 18 sub-clases | `anexo-clinico.md` (gate MD) |
 | Parámetros LLM, sanitización, lead scoring | `anexo-ingenieria-crm.md` |
 | Comportamiento (reglas, matrices, edge cases, flujo) | `ux-spec-experiencia-ideal.md` |

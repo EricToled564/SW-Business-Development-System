@@ -8,6 +8,14 @@ Catálogo canónico **51 clases** (49 secas + 2 acuáticas: AQUA ZUMBA, SWIM TRA
 
 > Conteos de clases contraindicadas (catálogo de 51): **lesión 21 · cardiovascular 16 · embarazo 38 · posparto 34 · bariátrica 20**. (Suben respecto a 17/14/21/21/16 porque se completaron las clases antes no listadas; los nuevos valores son mayormente `inferido` y requieren ratificación médica.)
 
+> **Doble eje — leer con cuidado (condición ≠ objetivo).** Dos columnas tienen un nombre que coincide con un objetivo Q4 pero significan lo opuesto:
+> - **Cardiovascular:** aquí **c** es la *condición médica* (Q12: el usuario YA la tiene → se excluye la clase). En las fichas de abajo, "Cardiovascular" es el *objetivo* Q4 "Mejorar mi salud cardiovascular". Por eso una clase puede ser ● para la condición y ★ para el objetivo (p. ej. CYCLING/INDBIKE).
+> - **Lesión:** igual. La columna **l** es la *condición* (Q12: el usuario YA tiene una lesión → se excluye la clase). En las fichas, "Lesión" es el *objetivo* "Recuperarme de una lesión o dolor crónico" (lo elige quien quiere recuperarse, sin que necesariamente haya marcado una lesión activa en Q12). Una clase puede ser ● para la condición y ✓ para el objetivo.
+>
+> El filtro duro (Rule 14b/40 del UX Spec) opera **solo sobre la condición** (Q12/Q12b/Q17); las fichas operan sobre el **objetivo** (Q4). Son ejes independientes: por eso pueden coexistir un ● y un ✓ en la misma clase, sin contradicción.
+
+> ⚠️ **Revisión MD — AEROYOGA.** Es el único caso del catálogo contraindicado para la *condición* lesión (l ●) y a la vez apto (✓) para el *objetivo* de recuperación. Bajo el doble eje es consistente (solo aplica a quien NO marcó lesión en Q12), pero por ser yoga aéreo con inversiones y suspensión el revisor médico debe confirmar si procede como objetivo de recuperación o si la ficha debe cambiar a "—".
+
 **Fuerza, core y tonificación (8)**
 
 | Clase | l | c | e | p | b | Fuente |
@@ -148,8 +156,9 @@ Catálogo canónico **51 clases** (49 secas + 2 acuáticas: AQUA ZUMBA, SWIM TRA
 ## 2. Prescripciones técnicas ACSM por subgrupo (no user-facing)
 Protocolos internos de los subgrupos de entrenamiento individual: dosis exacta (series, repeticiones, %1RM, descansos), equipo y fuentes. **No se muestran al usuario** — el sitio presenta solo los nombres oficiales y el copy accesible; el entrenador aplica el protocolo en la primera sesión. Sujetos al mismo gate de validación médica que la matriz de clases.
 
+> **Cómo se relacionan estos protocolos con los 6 nombres de cara al usuario.** Esta sección documenta los **protocolos técnicos** (4 de pesas: Fuerza, Hipertrofia, Potencia, Resistencia muscular; 4 aeróbicos: LISS, MICT, HIIT, SIT) que son las subpáginas de entrenamiento individual. Los **6 nombres de Bloque 1** y los **6 de Bloque 2** que ve el usuario (§3) se derivan de estos protocolos según el objetivo Q4. La correspondencia exacta protocolo ↔ nombre oficial vive en la **«Tabla puente»** del UX Spec (§5.17) y está pendiente de confirmación MD; aquí se documenta el protocolo, no el nombre comercial.
 
-##### entrenamiento-con-pesas-individual (ACSM Position Stand 2026)
+### entrenamiento-con-pesas-individual (ACSM Position Stand 2026)
 
 Fuerza — URL slug: /entrenamiento-con-pesas-individual/fuerza
 
@@ -216,7 +225,7 @@ Ideal user profile: Principiantes absolutos · usuarios que regresan después de
 Cautions: Verificar técnica básica antes de subir volumen · si hay dolor agudo, derivar a Personal Training supervisado en lugar de individual · embarazadas deben consultar antes de empezar.
 
 
-##### entrenamiento-aerobico-individual (ACSM/ESSA Joint Statement 2024)
+### entrenamiento-aerobico-individual (ACSM/ESSA Joint Statement 2024)
 
 LISS — Low-Intensity Steady State — URL slug: /entrenamiento-aerobico-individual/liss
 
@@ -285,11 +294,15 @@ Cautions: No apto para principiantes ni intermedios sin base · contraindicado e
 
 
 
-## 3. Catálogo oficial — 18 sub-clases de entrenamiento individual (mapeos `inferido` pendientes de confirmación del cliente)
+## 3. Catálogo oficial — 18 sub-clases de entrenamiento individual (mapeos `inferido` pendientes de confirmación del cliente y validación MD)
 
 
 
-Catálogo oficial del cliente. Tres familias de entrenamiento individual; cada una con 6 sub-clases. Se entregan en Block 1 (fuerza), Block 2 (cardio) y un **nuevo Block acuático** (gated por Q6).
+Catálogo oficial del cliente. Tres familias de entrenamiento individual; cada una con 6 sub-clases. Se entregan como variantes de los bloques de la Experiencia Ideal:
+
+- Block 1 usa la familia **Fuerza y desarrollo muscular** en experiencia seca, o una variante acuática compatible cuando Q6 = "En la alberca" y el club tiene alberca.
+- Block 2 usa la familia **Cardio y resistencia** en experiencia seca, o una variante acuática compatible cuando Q6 = "En la alberca" y el club tiene alberca.
+- El **catálogo acuático** no crea un cuarto bloque ni apaga Block 1. Es la fuente de variantes acuáticas para Block 1 y Block 2, gobernadas por Rule 39 del UX Spec.
 
 **Bloque 1 — Fuerza y desarrollo muscular** (Block 1, mapeo Q4 arriba):
 
@@ -313,7 +326,7 @@ Catálogo oficial del cliente. Tres familias de entrenamiento individual; cada u
 | Base aeróbica 80/20 | Salud cardiovascular · intermedio/avanzado | inferido |
 | Recuperación activa de bajo impacto | Recuperación de lesión · cualquier nivel | inferido |
 
-**Bloque acuático — Entrenamiento acuático** (NUEVO; se activa cuando Q6 = "En la alberca" o "Ambas" y el club resuelto tiene alberca; ver Rule 39 / edge case alberca):
+**Variantes acuáticas — Entrenamiento acuático** (NUEVO; se activan cuando Q6 = "En la alberca" o "Ambas" y el club resuelto tiene alberca; ver Rule 39 / edge case alberca):
 
 | Sub-clase | Perfil (Q4, acuático) | Fuente mapeo |
 | --- | --- | --- |
@@ -324,6 +337,12 @@ Catálogo oficial del cliente. Tres familias de entrenamiento individual; cada u
 | Fuerza combinada: agua y gimnasio | Q6 = "Ambas" (combina seco + agua) | inferido |
 | Movilidad y recuperación acuática | Recuperarme de una lesión o dolor crónico | inferido |
 
-> **Pendiente de confirmación (cliente):** los mapeos `inferido` de Bloque 2 y del Bloque acuático son propuesta por nombre/intensidad; el Bloque 1 ya estaba mapeado. El Bloque acuático introduce dependencia con Q6 — al elegir "En la alberca" el plan se arma con estas sub-clases en vez del Block 2 seco; con "Ambas" puede combinar (Fuerza combinada: agua y gimnasio).
+> **Desempate cuando dos sub-clases acuáticas sirven el mismo objetivo Q4.** La selección es determinista: gana una sola sub-clase por objetivo, usando Q9 (nivel) y Q5 (ritmo) como desempate.
+> - **Desempeño atlético:** "Trote acuático por intervalos" por defecto; "Potencia y velocidad acuática" **solo si Q9 = Avanzado**.
+> - **Bajar de peso / salud cardiovascular:** "Nado continuo moderado" por defecto; si Q5 = "Intenso, que me rete" y Q9 ≠ Principiante, "Trote acuático por intervalos".
+> - **Estética / masa muscular:** "Fuerza acuática con equipo".
+> - **Recuperación:** "Movilidad y recuperación acuática".
+> - **Q6 = "Ambas":** "Fuerza combinada: agua y gimnasio" (combina seco + agua).
 
+> **Pendiente de confirmación (cliente + MD):** los mapeos `inferido` de Bloque 2 y de las variantes acuáticas son propuesta por nombre/intensidad; el Bloque 1 seco ya estaba mapeado. Q6 nunca suprime Block 1 por sí mismo. Al elegir "En la alberca", si el club tiene alberca, Block 1 y Block 2 renderizan variantes acuáticas compatibles con el objetivo; si el club no tiene alberca, ambos bloques renderizan variantes secas con la nota de no-alberca definida en Rule 39. Con "Ambas", el sistema puede combinar seco + agua, priorizando siempre seguridad clínica y disponibilidad real del club.
 
