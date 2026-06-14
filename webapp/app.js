@@ -14,6 +14,19 @@
   const tocEl=$('#toc'), artEl=$('#article'), searchEl=$('#search'), srEl=$('#searchResults');
 
   marked.setOptions({ gfm:true, breaks:false, headerIds:false, mangle:false });
+  let MERMAID_N = 0;
+  if (window.mermaid) mermaid.initialize({ startOnLoad:false, theme:'neutral', securityLevel:'loose' });
+  function renderMermaid(root){
+    if(!window.mermaid) return;
+    root.querySelectorAll('code.language-mermaid').forEach(code=>{
+      const div=document.createElement('div');
+      div.className='mermaid'; div.id='mmd-'+(MERMAID_N++);
+      div.textContent=code.textContent;
+      (code.closest('pre')||code).replaceWith(div);
+    });
+    const nodes=root.querySelectorAll('.mermaid');
+    if(nodes.length){ try{ mermaid.run({ nodes }); }catch(e){ /* leave source visible */ } }
+  }
 
   function t(k){ return (UI[lang]||UI.es)[k] || k; }
   function pick(field, sec){ // field: 'title' | 'body'
@@ -45,6 +58,7 @@
     const badge = (title.orig||body.orig) ? `<span class="lang-badge" title="shown in source language">${lang==='es'?'EN':'ES'} ${t('orig')}</span>` : '';
     const md = '# '+ (title.text||'') + ' ' + '\n\n' + (body.text||'');
     artEl.innerHTML = marked.parse(md);
+    renderMermaid(artEl);
     // append badge to first heading
     const h=artEl.querySelector('h1'); if(h && badge) h.insertAdjacentHTML('beforeend',' '+badge);
     document.title = (title.text||'Docs')+' · Sports World Dev Docs';

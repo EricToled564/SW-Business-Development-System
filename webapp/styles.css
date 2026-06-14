@@ -109,3 +109,15 @@ body{font-family:var(--font);color:var(--ink);background:var(--surface);line-hei
   #menuToggle{display:inline-block}
 }
 @media(min-width:901px){#menuToggle{display:none}}
+
+/* Mermaid flow diagrams */
+.markdown-body .mermaid{
+  margin:1.25rem 0;
+  padding:1rem;
+  background:var(--surface,#fff);
+  border:1px solid var(--border,#e5e5e3);
+  border-radius:8px;
+  overflow-x:auto;
+  text-align:center;
+}
+.markdown-body .mermaid svg{max-width:100%;height:auto}
