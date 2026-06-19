@@ -2,6 +2,8 @@
 
 Instrumento de captura. **Solo las respuestas confirmadas aquí se convierten en reglas** (`01-reglas-de-negocio.md`). Lo que no se conteste o no esté seguro queda como `[POR DEFINIR]` hasta la compuerta de validación (Fase 2). No se importa nada de documentos previos.
 
+> **Estado (2026-06-19):** los 10 dominios fueron poblados extrayendo la lógica del set canónico (spec v4.2 + anexos) y la Propuesta SEO. **Las respuestas consolidadas y trazables viven en `01-reglas-de-negocio.md`.** Este cuestionario queda como índice de cobertura; lo que sigue abierto son los conflictos REC-01…REC-06 y los `[POR DEFINIR]` listados allí.
+
 Cómo se trabaja: vamos **dominio por dominio**, yo guío con preguntas y tú/SMEs responden. Cada pregunta tiene su `Respuesta:` para registrar. Una pregunta puede contestarse «aplica / no aplica / por definir».
 
 Leyenda de prioridad: 🔴 bloqueante para empezar el spec · 🟠 importante · 🟡 afina detalle.

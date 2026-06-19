@@ -13,8 +13,8 @@ Esta carpeta contiene la **V1 del UX de Sports World «Experiencia Ideal»**, co
 
 | Documento | Estado |
 | --- | --- |
-| `00-intake-reglas-de-negocio.md` | **En curso** — captura guiada de la lógica y reglas de negocio |
-| `01-reglas-de-negocio.md` | Pendiente — base de reglas validada (cimiento del spec) |
+| `00-intake-reglas-de-negocio.md` | Completo — índice de cobertura de los 10 dominios |
+| `01-reglas-de-negocio.md` | **Poblada** — base de reglas trazable (F1 Propuesta SEO + F2 spec v4.2); pendiente resolver REC-01…06 y validación |
 | `ux-spec-experiencia-ideal.md` | Pendiente — spec maestro |
 | `anexo-clinico.md` · `anexo-contenido.md` · `anexo-ingenieria-crm.md` | Pendientes — anexos |
 | `DESIGN.md` | Pendiente — tokens y lineamientos |
