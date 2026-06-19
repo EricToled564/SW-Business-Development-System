@@ -14,7 +14,7 @@ Estados: ✅ confirmada · 🟡 confirmada-pendiente-de-auditoría/ratificación
 
 | # | Tema | F1 (Propuesta SEO) | F2 (Spec v4.2) | Acción |
 | --- | --- | --- | --- | --- |
-| REC-01 | **Alcance de páginas** | +500 entregables; **392 hubs de amenidad** (Yoga, Box, Alberca, Spinning…); club pages 49+ | **155 páginas** indexables; **10 amenidades**; 49 clubes; 51 clases; etc. | ⚠️ Decidir qué alcance gobierna la V1 del UX. ¿El spec describe el sitio de 155 (F2) y la expansión SEO de 392 es una fase posterior, o la V1 ya contempla los 392 hubs? |
+| REC-01 | **Alcance / entregables** | +500 entregables; **392 hubs de amenidad** | **155 páginas**; **10 amenidades**; 49 clubes; 51 clases | ✅ **RESUELTO:** la **arquitectura gobierna**. La V1 define la arquitectura de información (base: el sitio "Experiencia Ideal" del spec v4.2); los **entregables y conteos (+500, 392 hubs) son derivados de esa arquitectura, a definir/calcular después** — no son alcance fijo de entrada. Las cifras de F1 quedan como estimación/contexto. |
 | REC-02 | **Línea base de tráfico** | ~79,100/mes (−28% YoY) | 80,000 → 160,000 en 3 meses (spec:L143) | 🟡 Cifras casi idénticas; usar la de auditoría cuando exista. |
 | REC-03 | **FitKidz: nº de actividades** | — | Matriz clínica lista 21; texto correcto **34** (spec:L1559, D7 pendiente) | 🟡 Ratificar 34 y completar matriz. |
 | REC-04 | **Conteo de clases** | — | 51 (7 Premium + 44) ↔ "49 secas + 2 acuáticas" (clin:L6) | 🟡 Confirmar marco canónico (51 vs 49+2). |
@@ -36,7 +36,7 @@ Estados: ✅ confirmada · 🟡 confirmada-pendiente-de-auditoría/ratificación
 | RN-D1-07 | Keywords de amenidades en Top 10 | ~180 | 350–500 | F1 | 🟡 |
 | RN-D1-08 | Páginas de club indexadas | 0 de 49 | 49 de 49 | F1·F2 | 🟡 |
 | RN-D1-09 | Tasa de agenda de visita guiada | [SUPUESTO 12%] | [SUPUESTO ≥20%] | F2(spec:L1591) | 🟡 |
-| RN-D1-10 | Entregables totales del proyecto | — | +500 | F1 | 🟡 |
+| RN-D1-10 | Entregables totales del proyecto | — | +500 *(estimación F1; el conteo real se **deriva de la arquitectura**, no es alcance fijo — REC-01)* | F1 | 🟡 |
 
 **RN-D1-11 · Revenue proyectado anual (modelo paramétrico por conversión).** 1% ≈ $37.6M · **1.5% ≈ $56.4M MXN (base)** · 2.5% ≈ $94.1M · con Paid+IA 4% ≈ $150.5M. *F1 · 🟡.*
 **RN-D1-12 · Tiempos.** Opción A 14 sem · Opción B 10 sem; mismo alcance. *F1 · 🟡.*
@@ -73,7 +73,7 @@ Estados: ✅ confirmada · 🟡 confirmada-pendiente-de-auditoría/ratificación
 - **RN-D4-05** Cajón estructural **«Tu Sports World» = 8 hubs**: Clubes · Clases · Amenidades · Perfiles · Bajar de peso · FitKidz · Membresías · Diario (Rule 4). Los 3 elementos de acción del header NO van en el panel. *F2(spec:L706-721) · ✅*
 - **RN-D4-06** **Header (Rule 1)** = Logo · Tu Sports World · Diseña tu experiencia · Pregúntale a BES · **Agenda tu visita (pill rojo)**. Los elementos 2-4 son 3 rutas paralelas; el 5 es la única conversión. *F2(spec:L665-672) · ✅*
 - **RN-D4-07** Inventario de tipos de página (F2): 49 clubes · 51 clases · 5 hubs objetivo · 1 hub bajar-de-peso (YMYL) · 10 amenidades · FitKidz · Personal Training · 10 entrenamiento individual · 6 membresías · 20 artículos Journal · Home. *F2(spec:L257) · 🟡 (REC-01)*
-- **RN-D4-08** (F1) Bloques de ejecución: (1) técnico SSR/links/schema · (2) contenido 49 clubes · (3) hubs de amenidad (**392 págs** según F1) · (4) Paid Media + automatización IA. *F1 · ⚠️ (REC-01)*
+- **RN-D4-08** (F1) Bloques de ejecución: (1) técnico SSR/links/schema · (2) contenido 49 clubes · (3) hubs de amenidad · (4) Paid Media + automatización IA. El conteo de hubs (392 en F1) **se deriva de la arquitectura** que defina esta V1; no es alcance fijo. *F1 · 🟡 (REC-01 resuelto)*
 
 ## D5 · Navegación contextual y estados
 
