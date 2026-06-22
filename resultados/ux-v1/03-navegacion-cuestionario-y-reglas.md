@@ -1,344 +1,284 @@
-# Navegación, cuestionario y reglas de negocio de la Experiencia Ideal
+# Arquitectura de Experiencia — Sports World México
+## Navegación, cuestionario, menús dinámicos y reglas de negocio · Versión 1.0
 
-Sports World · Documento normativo de comportamiento, navegación y lógica de negocio del sitio web
-
----
-
-## 1. Filosofía de navegación
-
-El sitio de Sports World no es un catálogo: es un **instrumento de cualificación** presentado como una experiencia de contenido. Toda su arquitectura existe para llevar a una persona —desde donde sea que entre— a diseñar su experiencia ideal de entrenamiento y, con ello, convertirse en un lead que el equipo comercial pueda cerrar sin volver a preguntarle nada.
-
-De esa intención se desprenden cuatro convicciones que gobiernan cada decisión de navegación:
-
-1. **Todos los caminos llevan al mismo lugar.** No importa por qué puerta entre el usuario; la navegación lo orienta siempre hacia «Diseña tu experiencia».
-2. **Una sola acción de conversión.** El sitio no vende en línea ni dispersa la intención en múltiples llamados a la acción que compiten entre sí. Hay un único acto de conversión —agendar una visita guiada— y está disponible en todo momento.
-3. **El sistema nunca pierde al usuario.** La navegación es sensible al contexto: cambia según lo que el usuario ya hizo, la página en la que está y el club que le corresponde. Nunca lo deja en un callejón sin salida ni le vuelve a pedir lo que ya dio.
-4. **La verdad por encima de la persuasión.** La navegación no engaña ni presiona. Ofrece la acción correcta en el momento correcto y deja que el valor entregado —una recomendación personalizada y segura— haga el trabajo de convencer.
+Documento génesis. Define, de forma normativa y autónoma, por qué existe la experiencia ideal, cómo se navega, el papel del cuestionario como única fuente de personalización, la mecánica de los menús dinámicos y cada una de las reglas de negocio que gobiernan la experiencia del usuario, de principio a fin.
 
 ---
 
-## 2. Principios de navegación
+## 0 · Objetivos
 
-Los siguientes principios son normativos. Cualquier pantalla, componente o flujo del sitio debe poder justificarse contra ellos.
+### 0.0 Por qué existe este proyecto
 
-**P1 — Cuatro puertas, un destino.** El prospecto llega por una de cuatro puertas: la página de inicio, una de las páginas de club, una página de clase o de amenidad, o uno de los hubs de objetivo. Las cuatro convergen en «Diseña tu experiencia». Ninguna puerta es un destino final en sí misma; todas son rampas hacia el cuestionario.
+Sports World opera una red física premium —cuarenta y nueve clubes en México— pero su presencia digital no refleja la escala de esa infraestructura. La marca la encuentra quien ya la conoce, y la pierde quien no. Las personas que buscan una solución de acondicionamiento físico que Sports World genuinamente ofrece rara vez la descubren, porque Sports World no aparece en esas búsquedas. El resultado es una fuga sostenida de clientes nuevos en el momento exacto en que están listos para inscribirse.
 
-**P2 — Una sola acción de conversión.** Agendar una visita guiada es el único acto de conversión del sitio. No existe checkout transaccional, no se vende membresía en línea y no compiten varios CTAs por la atención. Esta acción está siempre presente y siempre alcanzable en un solo toque.
+La experiencia ideal existe para cerrar esa brecha en el punto de decisión. Su propósito es convertir la demanda que sí llega a Sports World en visitas agendadas y cualificadas: tomar a una persona que llega buscando una solución, entender qué quiere realmente, ubicarla en el club correcto con la combinación de entrenamiento correcta, y entregar un brief completo al asesor que cerrará la visita. La experiencia es la superficie de conversión que transforma la visibilidad de búsqueda recuperada en leads agendados.
 
-**P3 — Tres rutas paralelas más una conversión en el header.** El encabezado ofrece, además del logo, tres rutas de exploración paralelas —recorrer el sitio por su estructura, diseñar la experiencia y preguntarle al asistente— y una única acción de conversión. Las tres rutas son equivalentes en jerarquía; la conversión es de otra naturaleza y se distingue visualmente.
+### 0.1 Los tres bloqueadores de leads
 
-**P4 — Un elemento, un solo lugar a la vez.** Ningún elemento de navegación se duplica. Cada botón vive en exactamente un sitio según el estado del usuario. Si un botón pertenece al encabezado, no se repite en el cuerpo de la página; si un botón del menú contextual cambia según el estado, aparece en una sola de sus formas a la vez.
+El producto se diseña como respuesta directa a tres formas concretas en que Sports World pierde hoy a un prospecto listo para inscribirse. Cada una es una intención real que Sports World puede satisfacer físicamente, pero que no captura digitalmente.
 
-**P5 — Navegación sensible al contexto.** El menú que rodea el contenido no es fijo: se compone en función de tres ejes —qué tan avanzado va el usuario en el cuestionario, en qué tipo de página se encuentra y cuál es el club que le corresponde—. La misma página muestra opciones distintas a usuarios en estados distintos.
+**Bloqueador 1 — La vertical ignorada (bajar de peso).** Una persona busca "gimnasio para perder peso" —la intención de mayor volumen de la industria del fitness en México— y Sports World aparece en una fracción ínfima de esas búsquedas. La persona se va con un competidor porque, digitalmente, nada le dijo que Sports World podía ayudarla. La experiencia ideal responde tratando "bajar de peso" como un objetivo funcional de primera clase, con su propia rama de cuestionario, su manejo consciente de tratamientos y una recomendación a la medida: quien llega con esa intención recibe un camino concreto y personalizado en lugar de silencio.
 
-**P6 — Estado persistente y reanudable.** El sistema recuerda lo que el usuario ya respondió y en qué punto va. Si abandona y regresa, puede continuar donde se quedó. El estado solo se conserva una vez que el usuario aceptó el aviso de privacidad; antes de eso, nada se guarda.
+**Bloqueador 2 — La demanda desatendida (amenidades y disciplinas).** Una persona busca "yoga cerca de mí" y, aunque Sports World tiene instructores y estudios de yoga premium, queda fuera de los primeros resultados y termina en un estudio boutique. El patrón se repite con entrenamiento funcional, artes marciales y otras disciplinas que Sports World ofrece pero no hace visibles. La experiencia ideal responde cruzando el objetivo declarado de la persona con el catálogo real de clases de cada club, de modo que una disciplina que Sports World sí ofrece se vuelve una parte visible y recomendada de la experiencia ideal, en lugar de una capacidad invisible.
 
-**P7 — Primero el móvil.** La experiencia se diseña y se redacta pensando primero en el teléfono. La densidad, los tamaños táctiles y la jerarquía se resuelven para móvil y luego se expanden a pantallas mayores.
+**Bloqueador 3 — El laberinto del clic extra (intención geográfica).** Una persona busca "gimnasio cerca de mí" y, en vez de ser llevada a su club más cercano, aterriza en una página de inicio genérica. Cada clic adicional cuesta retención, y Sports World gana el clic pero pierde la visita por agotamiento. La experiencia ideal responde resolviendo a la persona directamente hacia un club recomendado específico según su ubicación, y encaminándola a un siguiente paso concreto —la visita guiada—, colapsando el laberinto en un único camino personalizado.
 
-**P8 — Cero huérfanos, cero enlaces rotos.** Toda página es alcanzable desde la estructura del sitio y enlaza de vuelta a ella. No hay páginas huérfanas ni enlaces internos rotos. Toda página de club, clase, amenidad y objetivo se sirve de forma rastreable e indexable, con su HTML disponible sin depender de la ejecución de scripts en el cliente.
+### 0.2 Los objetivos del usuario
 
-**P9 — La geografía determina las opciones.** Lo que el sitio ofrece en materia de clubes depende de cuántos clubes hay en la ciudad o zona del usuario. Una ciudad con un solo club no muestra las mismas opciones que la zona metropolitana del Valle de México.
+La experiencia personaliza alrededor de los objetivos de la propia persona. Esos objetivos no son abiertos: están completamente acotados por las opciones de respuesta de dos preguntas del cuestionario. La persona tiene exactamente **cinco objetivos emocionales** posibles y exactamente **seis objetivos funcionales** posibles. Nada de lo que la persona quiere cae fuera de estas once opciones; el cuestionario se acota deliberadamente para que toda recomendación se mapee a un objetivo conocido.
 
-**P10 — La conversión no exige el cuestionario, pero lo intercala.** El usuario puede pedir agendar su visita en cualquier momento, incluso sin haber respondido el cuestionario. Si lo hace, el cuestionario se presenta como paso prerrequisito antes de confirmar la cita: la visita siempre se agenda con la información suficiente para que el Asesor llegue preparado.
+**Los cinco objetivos emocionales** responden a qué quiere *sentir* la persona al salir del club, y fijan el tono de la copia personalizada sin alterar qué club, qué bloques ni qué clases se recomiendan:
 
----
+1. Desconectarse del trabajo y la rutina —la experiencia se lee como un escape y un reinicio mental—.
+2. Sentirse renovada y de buen ánimo —energizante y que levanta el ánimo—.
+3. Ser parte de una comunidad saludable —énfasis en clases grupales, espacios compartidos y pertenencia—.
+4. Sentir confianza en que su cuerpo no le va a fallar —énfasis en resiliencia y capacidad—.
+5. Sentirse más a gusto consigo misma —aceptación personal y bienestar, no validación externa—.
 
-## 3. El encabezado y el cajón estructural
+**Los seis objetivos funcionales** responden a qué quiere *lograr* físicamente la persona. La pregunta admite hasta dos selecciones; la primera es el **objetivo principal** y gobierna toda resolución determinista del sistema, y la segunda, si existe, es un **objetivo secundario** que solo diversifica el ranking de clases:
 
-### 3.1 El encabezado
+1. Bajar de peso —además, abre la rama de peso del cuestionario y el manejo de contenido sensible a la salud—.
+2. Mejorar la estética corporal y la definición muscular.
+3. Aumentar masa muscular.
+4. Mejorar el desempeño atlético.
+5. Mejorar la salud cardiovascular.
+6. Recuperarse de una lesión o dolor crónico.
 
-El encabezado está presente en todas las páginas y en todos los estados. Contiene cinco elementos, en este orden:
-
-1. **El logotipo**, que regresa a la página de inicio.
-2. **«Tu Sports World»**, que abre el cajón con la estructura del sitio.
-3. **«Diseña tu experiencia»**, que inicia el cuestionario.
-4. **«Pregúntale a BES»**, que abre el asistente conversacional.
-5. **«Agenda tu visita»**, un botón en forma de píldora roja, anclado a la derecha.
-
-Los elementos 2, 3 y 4 son tres rutas de exploración paralelas. El elemento 5 es la única acción de conversión y por eso se trata visualmente distinto: es la única superficie roja del encabezado y no compite con nada.
-
-**Regla R1 — El botón de conversión nunca se degrada.** «Agenda tu visita» se mantiene como botón con texto en todas las resoluciones; no se reduce a un ícono ni se esconde detrás de un menú. Debe poder alcanzarse siempre en un solo toque, en cualquier página y cualquier estado. Al presionarlo, lleva al flujo de agendado; si el usuario aún no completó el cuestionario, este se presenta como paso previo antes de confirmar la cita.
-
-### 3.2 El cajón «Tu Sports World»
-
-«Tu Sports World» es el **único menú estructural** del sitio. Abre un cajón con los ocho hubs que organizan todo el contenido:
-
-1. **Clubes** — las cuarenta y nueve ubicaciones, distribuidas en trece estados.
-2. **Clases** — el catálogo de clases para adultos: cincuenta y una en total, de las cuales siete son clases premium y cuarenta y cuatro son regulares.
-3. **Amenidades** — las diez amenidades: alberca, zona de entrenamiento funcional, FitKidz, ring de box, muro de escalada, canchas, sauna y vapor, regaderas y vestidores, cafetería y estacionamiento.
-4. **Perfiles** — los cinco hubs de objetivo: primeros pasos, salud y bienestar, estética corporal, ganar fuerza y rehabilitación.
-5. **Bajar de peso** — un hub aparte, tratado como contenido sensible a la salud.
-6. **FitKidz** — la submarca infantil, que reúne treinta y cuatro actividades organizadas por rango de edad y disciplina, sin páginas individuales por actividad.
-7. **Membresías** — el hub de planes y sus cinco planes: UniClub, AllClub, Black Pass, Pink Plan y la promoción de veintiún días.
-8. **Diario** — el contenido editorial del sitio.
-
-**Regla R2 — El cajón solo contiene estructura.** Las tres acciones del encabezado —«Diseña tu experiencia», «Pregúntale a BES» y «Agenda tu visita»— no aparecen dentro del cajón. El cajón es para navegar la estructura del sitio; las acciones viven en el encabezado y no se duplican.
+El objetivo principal selecciona de forma determinista el subgrupo de pesas, el subgrupo de cardio, los pesos del ranking de clases grupales, el conjunto de clases ideales que se usa al resolver el club y el arco narrativo de la copia personalizada. Los dos ejes son independientes y complementarios: el emocional dice *por qué* está aquí la persona y el funcional dice *qué* quiere lograr su cuerpo. Juntos acotan todo el espacio de lo que la experiencia debe personalizar.
 
 ---
 
-## 4. El papel del cuestionario
+## 1 · Principios de navegación
 
-### 4.1 Por qué el cuestionario es la columna vertebral
+### 1.1 Experiencia de página única con máquina de estados por fases
 
-El cuestionario «Diseña tu experiencia» es el corazón del sitio. Es el mecanismo que convierte a un visitante anónimo en una persona conocida, y a una persona conocida en un lead cualificado. La cadena que articula toda la experiencia es:
+La experiencia ideal es una aplicación de página única que progresa a través de una secuencia fija de fases. Durante el flujo que va del cuestionario al brief, la persona nunca navega a otra dirección. Toda la progresión la gobierna una sola variable de estado —la fase— y el renderizador despacha la pantalla correcta según su valor. No hay enrutador, no hay enlaces profundos y no hay historial del botón "atrás" del navegador: el retroceso es explícito y lo manejan botones dentro de cada fase.
 
-> **Cuestionario → Conocimiento → Experiencia Ideal → Lead Cualificado.**
+Esta decisión es deliberada y garantiza cuatro cosas: que la persona no pueda aterrizar por accidente en el resultado sin haber completado el cuestionario; que no pueda marcar como favorito ni compartir un estado intermedio; que el brief del asesor no pueda alcanzarse sin pasar antes por la captura de contacto y la agenda; y que todos los datos capturados durante la sesión vivan únicamente en memoria.
 
-El usuario responde; el sistema lo conoce; con ese conocimiento construye una experiencia de entrenamiento a su medida; y esa experiencia, al traducirse en una visita agendada, produce un lead que el Asesor puede cerrar sin re-preguntar nada.
+### 1.2 Las siete fases
 
-Todo lo demás del sitio —las páginas de club, de clase, de amenidad, los hubs de objetivo— existe para alimentar este cuestionario o para dar contexto a su resultado.
+La máquina de estados tiene exactamente siete fases, ejecutadas en este orden bajo condiciones normales:
 
-### 4.2 Estructura general
+1. **Bienvenida.** Pantalla de introducción con el logotipo de Sports World, una propuesta de valor de una línea y una sola acción primaria ("Comenzar"). No hay más entrada del usuario que el botón de inicio.
+2. **Cuestionario.** Se renderiza al iniciar. El motor del cuestionario avanza una pregunta a la vez; cada pregunta es una pantalla autocontenida con su encabezado, su entrada, su texto de ayuda y sus botones de avanzar y retroceder. El orden de las opciones es libre, pero la secuencia de preguntas es lineal, sujeta a la ramificación condicional.
+3. **Carga.** Se dispara al enviar la última pregunta. Una animación corre mientras el resolver calcula la recomendación —recuperando los datos de clubes y clases— y la llamada al modelo de lenguaje se completa de forma asíncrona. La persona no puede interactuar durante esta fase.
+4. **Resultado.** La página de la experiencia ideal. Es la pantalla más extensa y el entregable principal para el lead. La persona llega aquí una vez que el resolver y el modelo de lenguaje regresan con éxito. El contenido se organiza en dos páginas visualmente separadas.
+5. **Captura de contacto.** Se dispara al presionar "Agendar visita guiada". Un formulario obligatorio de tres campos —apellido, celular y correo— bloquea el avance hasta que los tres pasan validación. La persona puede regresar al resultado con una flecha.
+6. **Agenda.** Se dispara al enviar datos de contacto válidos. Un calendario expone los días disponibles de las próximas dos semanas, con franjas horarias predefinidas. La persona elige una combinación, confirma y avanza.
+7. **Entrega del brief.** Fase terminal. Muestra dos páginas visualmente separadas: la primera es la confirmación de la cita —pensada para que el lead la capture y la recuerde— y la segunda es el brief del asesor —pensado para que el asesor lo lea antes de la visita—. La persona puede reiniciar el cuestionario o volver a la agenda para modificar la cita.
 
-El cuestionario consta de **quince preguntas base que siempre se muestran y seis preguntas condicionales** que aparecen solo cuando se cumplen ciertos disparadores. Según el camino del usuario, verá entre quince y veintiuna preguntas.
+Existe una sola fase auxiliar fuera de la secuencia principal: el **estado de error**, que se dispara si la llamada al modelo de lenguaje falla; muestra un botón de reintento y un enlace para reiniciar, y al reintentar con éxito la persona vuelve al resultado.
 
-**Regla R3 — Una pregunta por pantalla.** Cada pregunta ocupa su propia pantalla, con una barra de progreso. El botón «Continuar» permanece deshabilitado hasta que la pregunta esté respondida. La transición entre preguntas es inmediata, por debajo de cien milisegundos, para que el flujo se sienta ligero.
+Las fases son exclusivas: solo una se renderiza en cualquier momento. La pantalla se desmonta por completo en cada transición; no hay fundidos ni estados superpuestos.
 
-### 4.3 El banco de preguntas
+### 1.3 Avance universal, retroceso condicional
 
-Las preguntas base, en orden:
+El avance es universal: toda fase tiene una acción primaria que lleva a la siguiente. El retroceso es selectivo y sigue reglas precisas. Desde la bienvenida no hay retroceso, por ser el punto de entrada. Desde el cuestionario, "Atrás" regresa a la pregunta anterior; si esa pregunta era condicional y ya no aplica —porque la persona cambió una respuesta que la disparaba—, el motor la salta y aterriza en la anterior aplicable. Desde la carga no hay retroceso, porque no es interrumpible. Desde el resultado no hay retroceso: la persona no puede volver a modificar sus respuestas; el único reinicio es el enlace "Reiniciar cuestionario" al pie del resultado, que descarta todo el estado y regresa a la bienvenida. Desde la captura de contacto, "Volver" regresa al resultado y los datos ya capturados se conservan si la persona avanza de nuevo. Desde la agenda, el retroceso regresa a la captura de contacto. Desde la entrega del brief, el retroceso regresa a la agenda, y "Terminar" cierra la sesión tras una confirmación.
 
-- **Cómo te llamas.** Campo de texto, obligatorio, con al menos dos caracteres.
-- **Género.** Selección única entre Hombre, Mujer y «Prefiero no mencionarlo».
-- **Qué quieres sentir al salir del club.** Selección única entre cinco opciones de sensación —desconexión, ánimo renovado, comunidad, confianza en el propio cuerpo, sentirse a gusto consigo mismo—.
-- **Qué buscas.** Selección múltiple de hasta dos opciones entre: bajar de peso, mejorar la estética y la definición muscular, aumentar masa muscular, mejorar el desempeño atlético, mejorar la salud cardiovascular y recuperarse de una lesión o dolor crónico. Esta es la pregunta que más condiciona el resultado.
-- **Qué ritmo va contigo.** Selección única entre suave y controlado, moderado y constante, o intenso.
-- **Dónde prefieres entrenar.** Selección única entre piso o área seca, alberca, ambas, o lo que recomiende el entrenador.
-- **En qué horario prefieres entrenar.** Selección múltiple entre seis franjas horarias.
-- **Qué días prefieres entrenar.** Selección múltiple de lunes a domingo.
-- **Cuál es tu nivel de entrenamiento.** Selección única entre principiante, intermedio y avanzado.
-- **Vienes de otro gimnasio.** Selección única entre venir de otro gimnasio, no haber ido nunca, o regresar después de una pausa.
-- **Tienes alguna condición médica.** Selección múltiple entre ninguna, lesión o dolor articular o muscular, condición cardiovascular o de presión, u otra que se comentará en el club.
-- **Prefieres entrenar solo o acompañado.** Selección única.
-- **Con quién nos visitas en el club.** Selección única entre solo, con un amigo, con la pareja, con los hijos, o la familia completa.
-- **Cerca de tu casa o de tu trabajo.** Selección única.
-- **Dónde queda.** Dos campos —código postal de cinco dígitos o colonia— de los cuales basta llenar uno.
+Bloquear el retroceso desde el resultado es intencional. La recomendación se calcula una sola vez, de forma determinista; modificar las respuestas después de ver el resultado obligaría a recalcular —una operación costosa— o a mostrar un resultado obsoleto —algo engañoso—. Además, el contrato mental de la persona es "respondo preguntas y veo mi recomendación"; reabrir las respuestas erosiona la autoridad percibida de esa recomendación.
 
-Las preguntas condicionales:
+### 1.4 Sin autenticación, sin persistencia
 
-- **Qué tan larga fue la pausa.** Aparece solo si la persona indicó que regresa después de una pausa.
-- **Estás embarazada o en posparto reciente.** Aparece a menos que el género declarado sea Hombre; incluye también a quien prefirió no mencionar su género. El embarazo nunca es una opción dentro de la pregunta de condiciones médicas: se captura exclusivamente aquí.
-- **Si uno o más de tus hijos tiene menos de doce años.** Aparece solo si la persona indicó que visita el club con sus hijos o con la familia completa.
-- **Si estás tomando algún tratamiento para bajar de peso.** Selección múltiple entre tratamientos con análogos de GLP-1, cirugía bariátrica, acompañamiento nutricional, otro tratamiento médico, o ninguno. Aparece solo en el camino de bajar de peso.
-- **Tus datos físicos actuales.** Peso, estatura y cintura, con rangos válidos de treinta a trescientos kilogramos, ciento veinte a doscientos treinta centímetros y cuarenta a doscientos centímetros. Aparece solo en el camino de bajar de peso.
-- **Cuál es tu objetivo de cambio.** Rangos de kilos o «sin un número específico». Aparece solo en el camino de bajar de peso.
+La experiencia no requiere autenticación. No hay inicio de sesión, no hay creación de cuenta y no hay rastreo del usuario mediante identificadores persistentes. Toda la sesión vive únicamente en la memoria del navegador: no se usan almacenamiento local, de sesión, en base de datos del navegador ni cookies. Ningún píxel de analítica se dispara hasta la fase de captura de contacto, momento en el cual los datos capturados se transmiten al sistema comercial mediante una sola petición segura. Cerrar la pestaña descarta todas las respuestas, los bloques calculados, la copia generada, el brief y la selección de cita; la persona debe empezar de nuevo desde la bienvenida.
 
-### 4.4 Reglas del cuestionario
-
-**Regla R4 — La pregunta de objetivo siempre admite hasta dos opciones.** No hay excepciones por objetivo: la persona puede elegir uno o dos. Cuando elige dos, el sistema combina ambos mapeos y elimina duplicados.
-
-**Regla R5 — El camino de bajar de peso activa tres preguntas obligatorias.** Cuando entre los objetivos está «bajar de peso», se activan las tres preguntas del camino de peso —tratamiento, datos físicos y objetivo de cambio—. Mejorar la estética no las activa. Una vez activadas, son obligatorias: el usuario no puede saltarlas.
-
-**Regla R6 — El embarazo se captura por separado y con tacto.** La pregunta de condiciones médicas nunca lista el embarazo como condición. El embarazo y el posparto se preguntan en su propia pantalla, que aparece para todas las personas salvo quienes declararon ser hombres. Cuando la persona prefirió no mencionar su género, esta pantalla usa un fraseo neutral; la privacidad de género nunca elimina el tamizaje médico necesario para la seguridad.
-
-**Regla R7 — Inferencia desde la búsqueda.** Cuando el usuario llega desde un buscador externo, el sistema solo infiere dos cosas: el objetivo, si la búsqueda lo expresa de forma explícita, y la ubicación, si la búsqueda nombra un lugar específico. No infiere objetivo a partir de una búsqueda de clase —una misma clase sirve a muchos objetivos—, no infiere preferencia de ritmo ni de entorno a partir de una búsqueda de amenidad, y la navegación interna no infiere nada. Cuando hay señales en conflicto, el objetivo tiene prioridad sobre la ubicación, y la ubicación sobre cualquier objetivo derivado de una clase.
-
-**Regla R8 — Pre-llenado según la página de aterrizaje.** El sitio pre-llena respuestas según la página por la que entró la persona, para no preguntarle lo que el contexto ya revela:
-
-- Desde la página de inicio no se pre-llena nada, salvo la ubicación si la búsqueda la traía.
-- Desde una página de club se omiten por completo las dos preguntas de ubicación, porque el club ya está determinado.
-- Desde una página de amenidad no se pre-llena nada.
-- Desde una página de clase se pre-marca el objetivo alineado con el movimiento de esa clase.
-- Desde FitKidz se pre-marca que la persona visita el club con sus hijos.
-- Desde el hub de primeros pasos se pre-marca el nivel principiante.
-- Desde el hub de salud y bienestar se pre-marca el objetivo de salud cardiovascular.
-- Desde el hub de estética corporal se pre-marca el objetivo de estética.
-- Desde el hub de ganar fuerza se pre-marca el objetivo de masa muscular.
-- Desde el hub de rehabilitación se pre-marca el objetivo de recuperación de lesión.
-- Desde el hub de bajar de peso se pre-marca ese objetivo, lo que activa las tres preguntas del camino de peso.
-- Desde Personal Training se pre-marca la preferencia de entrenar acompañado.
-- Desde las páginas de entrenamiento individual se pre-marca la preferencia de entrenar solo, y el objetivo correspondiente a la subpágina visitada.
-
-**Regla R9 — Todo pre-llenado es editable.** Ninguna respuesta pre-llenada queda bloqueada. El usuario puede cambiar cualquiera. El resultado se calcula a partir de las respuestas finales, de modo que puede diferir de la página por la que entró; esto es intencional.
-
-**Regla R10 — Validación cercana y no punitiva.** Cada campo valida lo justo: el nombre debe tener al menos dos caracteres; las preguntas de horario y de días requieren al menos una selección; en la pregunta de ubicación basta un código postal de cinco dígitos o una colonia; los datos físicos deben caer dentro de sus rangos. Los errores aparecen en línea, inmediatamente debajo del campo afectado, con el mismo tono del resto del sitio. Ningún error impide editar otros campos. Al intentar avanzar con errores, la pantalla lleva el foco al primero.
-
-**Regla R11 — Concordancia de género en el lenguaje.** Cuando el género declarado es Mujer, las opciones y textos que llevan género se expresan en femenino —«desconectada», «renovada», «confiada», «sola», «acompañada»—. En cualquier otro caso se usa la forma masculina por defecto.
-
-**Regla R12 — El estado parcial solo se guarda con consentimiento.** El progreso del cuestionario se conserva en el dispositivo únicamente después de que la persona acepta el aviso de privacidad. Si no lo acepta, no se guarda nada. Cuando vuelve, el sistema ofrece retomar desde la última pregunta respondida.
-
-**Regla R13 — Compuerta de salud antes del resultado.** En el camino de bajar de peso, antes de mostrar el resultado, se presenta un aviso de salud con la firma del profesional que respalda el contenido. Si la persona no lo acepta, recibe una experiencia genérica y no clínica —que nombra los componentes de forma general, sin intensidades, duraciones ni contenido médico— y se le explica por qué. No se captura ningún dato adicional a lo ya ingresado.
-
-**Regla R14 — Perfilado progresivo ante el abandono.** El sistema mide el abandono pregunta por pregunta. Si la proporción de personas que completan de la primera a la última pregunta cae por debajo del umbral establecido, el cuestionario se divide en dos etapas: una primera con lo mínimo viable —nombre, objetivo y zona— suficiente para entregar una recomendación preliminar, y una segunda con el detalle, antes de agendar.
+Los datos de contacto, una vez enviados, son lo único que persiste más allá de la sesión, y persisten solo del lado del servidor —en el registro del sistema comercial—, nunca en el navegador. Esta decisión es deliberada: el producto es una herramienta de recomendación de un solo disparo con un momento de acción fuerte —agendar la visita—. La persistencia introduciría el riesgo de mostrar recomendaciones obsoletas a quien regresa con preferencias o contexto médico ya cambiados, y exigiría una infraestructura legal de gestión de consentimiento mayor a la que el caso de uso justifica.
 
 ---
 
-## 5. Los menús dinámicos
+## 2 · El cuestionario como única fuente de personalización
 
-### 5.1 El modelo de estados
+### 2.1 Rol y propósito
 
-La experiencia distingue tres estados del usuario, y de ellos depende casi todo el comportamiento del menú contextual:
+El cuestionario es el único mecanismo por el cual la persona alimenta al motor de personalización. Cada componente posterior —el resolver que elige el club, el selector que elige los subgrupos de entrenamiento, el rankeador que elige las mejores clases grupales, el modelo de lenguaje que escribe la copia personalizada y el generador del brief que escribe la guía del asesor— consume las respuestas del cuestionario como única fuente de verdad sobre la persona.
 
-1. **Sin cuestionario.** La persona aún no ha completado «Diseña tu experiencia».
-2. **Cuestionario completo, dentro del flujo.** La persona terminó el cuestionario y está navegando su experiencia ideal.
-3. **Cuestionario completo, fuera del flujo.** La persona terminó el cuestionario pero se fue a explorar otras páginas del sitio.
+El cuestionario no es un formulario de marketing: es un instrumento de captación de grado clínico. Cada pregunta tiene un papel específico en el algoritmo de recomendación. Quitar o saltar una pregunta degradaría la recomendación; agregar una pregunta opcional que no alimente el algoritmo diluiría la percepción de que cada pregunta importa.
 
-**Regla R15 — Quien completa el cuestionario siempre tiene un club.** En el momento en que el cuestionario se completa, el usuario tiene necesariamente un club identificado. No existe el estado «cuestionario completo sin club».
+### 2.2 Taxonomía de preguntas
 
-### 5.2 El menú contextual y sus tres ejes
+El cuestionario se compone de tres categorías.
 
-Alrededor del contenido de cada página vive un **menú contextual** que no es fijo. Se compone a partir de tres ejes: el estado del cuestionario, el tipo de página desde la que llega la persona, y el club que le corresponde.
+**Las quince preguntas base** se hacen siempre, en el mismo orden, a toda persona: el nombre, que ancla el trato en primera persona; el género, que rige la concordancia gramatical de toda la copia y habilita la pregunta de embarazo; qué quiere sentir al salir, que ancla el tono emocional; los objetivos, hasta dos, que seleccionan los subgrupos de pesas y cardio, los pesos del ranking de clases y el arco narrativo, y que habilitan la rama de peso; el ritmo, que modula los descriptores de intensidad del cardio e influye en el ranking; el modo —piso seco o alberca—, que conmuta entre los catálogos seco y acuático; las franjas horarias y los días, que se capturan para el brief y el modelo de lenguaje pero no filtran el catálogo; el nivel, que filtra las clases candidatas por nivel mínimo; el historial —si viene de otro gimnasio, nunca ha ido, o regresa de una pausa—, que alimenta banderas del brief y habilita la pregunta de duración de la pausa; las condiciones médicas, que filtran el catálogo de clases mediante la matriz de contraindicaciones; el acompañamiento, que conmuta el tercer bloque entre clases grupales y Personal Training; con quién visita el club, que rige el mensaje de FitKidz y, cuando aplica, vuelve a FitKidz una amenidad requerida de la experiencia; cerca de qué busca —casa, trabajo, ambos o sin preferencia—, que ancla la geografía del resolver; y dónde queda, el código postal o la colonia que el resolver usa como entrada geográfica.
 
-**Regla R16 — Composición del menú por estado.** El botón de experiencia que aparece depende del estado:
+**Las seis preguntas condicionales** se hacen solo si una respuesta previa las dispara: la duración de la pausa, cuando la persona indica que regresa después de una pausa; el estado de embarazo o posparto, cuando el género declarado es Mujer, que filtra clases con impacto, trabajo abdominal o posición supina; la presencia de hijos menores de doce años, cuando la persona visita con sus hijos o la familia completa, que rige el mensaje familiar de FitKidz y vuelve a FitKidz una amenidad requerida; y las tres preguntas de la rama de peso —tratamientos activos para bajar de peso, datos físicos actuales y objetivo de cambio—, que se disparan cuando entre los objetivos está "bajar de peso".
 
-- **Sin cuestionario**, el menú ofrece «Diseña tu experiencia», y —cuando la geografía lo amerita— «Tu Club ideal», además de «Agenda tu visita guiada», los artículos útiles si los hay, y los botones propios de la página.
-- **Completo, dentro del flujo**, el menú muestra los botones propios de la página y no ofrece «Diseña tu experiencia» ni duplica «Volver a tu experiencia ideal».
-- **Completo, fuera del flujo**, el menú ofrece «Volver a tu experiencia ideal», los artículos útiles si los hay, y los botones propios de la página.
+**Los tres campos de contacto posteriores al cuestionario** se capturan en una sola pantalla, después de mostrar la recomendación y antes del calendario: apellido, celular y correo. No forman parte del cuestionario porque no influyen en la recomendación; se piden en el momento preciso en que la persona expresa la intención de agendar y, por tanto, tiene una razón para compartir su contacto.
 
-**Regla R17 — La conversión, siempre presente.** En el menú contextual de toda página y en todo estado aparece «Agenda tu visita guiada». Es la acción de conversión y no tiene excepciones. Esto es consistente con el botón rojo del encabezado: la conversión está disponible por dos vías que nunca desaparecen.
+### 2.3 Tipos de entrada y reglas de validación
 
-**Regla R18 — «Diseña tu experiencia» mientras el cuestionario esté incompleto.** Mientras el usuario no haya completado el cuestionario, «Diseña tu experiencia» aparece en el menú contextual de cada página. Una vez completo, deja de aparecer en el menú contextual, aunque el botón permanece en el encabezado.
+El motor admite seis tipos de entrada. **Texto libre** de una línea, para el nombre y la colonia, válido con al menos un carácter, con autoenfoque y envío con Enter. **Selección única**, en tarjetas grandes; el autoavance está deshabilitado a propósito —la persona debe tocar "Siguiente"— para evitar avances accidentales en preguntas médicas y mantener un ritmo constante. **Selección múltiple**, en tarjetas tipo casilla; la pregunta de objetivos tiene un límite duro de dos selecciones, impuesto visual y lógicamente. **Días**, una variante compacta de selección múltiple para los días de la semana. **Ubicación**, exclusiva de la pregunta de dónde queda: dos modos —código postal de cinco dígitos o colonia en texto libre de al menos tres caracteres—, de los cuales basta llenar uno. **Datos físicos**, exclusiva de esa pregunta: tres entradas numéricas —peso en kilogramos, estatura en centímetros y cintura en centímetros— válidas dentro de rangos plausibles —peso de treinta a doscientos cincuenta, estatura de cien a doscientos treinta, cintura de cuarenta a doscientos—; los valores fuera de rango muestran un error en línea y bloquean el envío.
 
-**Regla R19 — «Volver a tu experiencia ideal» cuando ya hay resultado.** Una vez que el usuario completó el cuestionario, «Volver a tu experiencia ideal» aparece en el menú contextual y reemplaza a «Diseña tu experiencia». Cada uno de los dos vive en un solo lugar a la vez.
+Los mensajes de error son siempre específicos y accionables. El cuestionario nunca muestra un genérico "campo requerido": muestra qué está mal y qué hacer. El apellido exige al menos dos letras; el celular, exactamente diez dígitos; el correo, un formato válido.
 
-**Regla R20 — «Tu Club ideal» fuera de las páginas de club.** «Tu Club ideal» aparece cuando la persona está en una página que no es la de un club individual y aún no está dentro de su flujo de experiencia ideal. Al presionarlo, si no hay ubicación inferida, presenta las dos preguntas de ubicación; si hay ubicación inferida, las muestra pre-llenadas para confirmar.
+### 2.4 Las dos preguntas de control
 
-**Regla R21 — «Artículos o información útil» cuando hay coincidencia.** Cuando la persona aterriza en una página y existe al menos un artículo del Diario con una etiqueta que coincide con esa página, el menú muestra «Artículos o información útil». Si no hay artículos etiquetados para esa página, el botón no aparece.
+Dos preguntas tienen una influencia desproporcionada porque cambian la *estructura* de la recomendación, no solo sus parámetros: los objetivos y el modo.
 
-### 5.3 La lógica geográfica
+Los **objetivos** son la pregunta de control primaria. El primer objetivo seleccionado determina cuál de los seis subgrupos de pesas se elige, cuál de los seis subgrupos de cardio —con su máquina y su perfil de intensidad—, los pesos del ranking de clases, el arco narrativo de la copia, si se abre o no la rama de peso, y la prioridad de contraindicaciones dentro de la matriz. El segundo objetivo, si existe, tiene un papel acotado: actúa como criterio de desempate en el ranking de clases y se menciona en la copia como motivador secundario, pero no cambia el subgrupo de pesas ni el de cardio, que se eligen de forma determinista a partir del objetivo principal.
 
-La oferta de navegación entre clubes depende de cuántos clubes hay en la ciudad o zona de la persona. El sistema distingue tres situaciones:
-
-- **Ciudad con un solo club.** No se ofrece navegación a «otros clubes»: no hay otros.
-- **Ciudad con dos o tres clubes.** Identificado el club, se ofrece «Otros clubes en tu ciudad», que muestra los uno o dos restantes.
-- **Zona metropolitana del Valle de México, con más de tres clubes** —treinta y dos clubes en total—. Identificado el club, se ofrece «Otros clubes en el área», con dos caminos: ver los clubes dentro de un radio de diez kilómetros, o elegir otra ubicación. Si no hay club ni ubicación inferida, se presentan las preguntas de ubicación.
-
-**Regla R22 — «Otros clubes» solo en páginas de club.** La navegación a otros clubes aparece únicamente en las páginas de club, y su forma exacta la determina el tamaño de la ciudad según lo anterior.
-
-**Regla R23 — En la página de club se omiten las preguntas de ubicación.** Cuando la persona diseña su experiencia desde una página de club, las dos preguntas de ubicación se omiten, porque el club ya está determinado. El conteo de preguntas baja en consecuencia. Cambiar de club re-evalúa únicamente el componente de clases del resultado.
-
-**Regla R24 — La geografía nunca auto-selecciona un club lejano.** Cuando la búsqueda permite inferir una ubicación pero no hay club cercano, la persona aterriza en la página de inicio con un aviso neutral y dos alternativas; el sistema no auto-selecciona un club distante. Cuando la geolocalización es denegada, la persona llega a la página de inicio en modo de captura de «Tu Club ideal», sin que se le insista repetidamente.
+El **modo** es el conmutador estructural. Determina si la persona recibe el catálogo en seco —pesas y cardio en máquinas— o el catálogo acuático —fuerza en agua y cardio en alberca—. Sus cuatro opciones se resuelven así: "en piso / área seca" entrega exclusivamente el catálogo seco; "en la alberca" entrega exclusivamente el catálogo acuático, con un caso especial para el objetivo de masa muscular que fuerza una recomendación híbrida; "ambas" entrega el catálogo seco con una nota que menciona las opciones acuáticas como complemento; y "lo que mi entrenador recomiende" cede al criterio del resolver, que elige acuático para los objetivos de recuperación de lesión y salud cardiovascular, y seco para el resto, sin informar de la decisión en la copia visible pero dejándola anotada en el brief.
 
 ---
 
-## 6. Las reglas de negocio a lo largo de la experiencia
+## 3 · Menús dinámicos y ramificación condicional
 
-Esta sección describe, etapa por etapa, cada regla de negocio que se aplica durante la experiencia del usuario, desde que descubre el sitio hasta que se convierte en un lead en manos del Asesor.
+### 3.1 Reglas de ramificación
 
-### 6.1 Descubrimiento y entrada
+El motor evalúa la condición de cada pregunta en el momento de renderizarla. Si la condición es falsa, la pregunta se salta por completo y el motor avanza a la siguiente; no es un patrón de "oculto pero enviado": la respuesta saltada queda indefinida y todo el código posterior debe tratarla como tal.
 
-**Regla R25 — Indexabilidad como condición de existencia.** Toda página de club, clase, amenidad y objetivo debe entregarse al buscador como HTML rastreable, sin depender de la ejecución de scripts en el cliente. Una página que el buscador no puede leer, para efectos de descubrimiento, no existe.
+Cuando la persona retrocede y cambia una respuesta previa que ya no dispara una condicional posterior, la respuesta posterior se conserva en el estado pero se ignora al enviar. Por ejemplo: si alguien indica que regresa de una pausa, avanza y responde su duración, y luego retrocede y cambia a que viene de otro gimnasio, la duración se conserva en memoria pero no se transmite al resolver ni aparece en el brief; si más tarde vuelve a indicar que regresa de una pausa, la pregunta de duración se le hace de nuevo con su valor previo preseleccionado.
 
-**Regla R26 — Integridad de enlazado.** El sitio no tiene enlaces internos rotos ni páginas huérfanas. Cada página enlaza hacia y desde la estructura, de modo que tanto la persona como el buscador puedan recorrerla sin toparse con vacíos.
+### 3.2 Conjugación dinámica de la copia por género
 
-**Regla R27 — Una sola colonia o un solo código postal bastan para ubicar.** Para resolver el club que corresponde, el sistema acepta un código postal de cinco dígitos o el nombre de una colonia; con autocompletado cuando es posible y texto libre como respaldo. No exige dirección completa.
+La concordancia gramatical del español se respeta en todo el cuestionario y en las pantallas de resultado. El género declarado rige la conjugación de varias opciones y del trato en pantallas posteriores: la forma masculina cuando el género es Hombre, la femenina cuando es Mujer, y la terminación doble **o/a** cuando la persona prefiere no mencionarlo —por ejemplo, "desconectado/a", "renovado/a", "confiado/a", "solo/a", "acompañado/a"—. La terminación doble mantiene la copia inclusiva sin asumir un género, y es visible para la persona en las opciones renderizadas.
 
-### 6.2 La generación de la Experiencia Ideal
+Más allá del cuestionario, el resultado y el brief usan el *primer nombre* —la primera palabra del nombre capturado— para el saludo y el anclaje emocional, y el *nombre completo* —nombre más apellido— para el encabezado formal del brief.
 
-El resultado del cuestionario es la **Experiencia Ideal**: una página construida específicamente para esa persona. Solo es alcanzable después de completar el cuestionario; quien intente llegar sin haberlo respondido es dirigido a «Diseña tu experiencia».
+### 3.3 Límite dinámico de dos objetivos
 
-**Regla R28 — Orden del resultado.** La Experiencia Ideal se presenta siempre en el mismo orden: un encabezado con un gancho y un argumento que nombra los tres componentes; cuatro tarjetas de resumen —objetivo, nivel, horario y con quién entrena—; la tarjeta de «Tu Club Ideal»; los tres componentes de entrenamiento; la sección de seguridad cuando aplica; y la nota legal.
+La pregunta de objetivos admite hasta dos selecciones y la interfaz impone el límite de forma reactiva. Sin selecciones, todas las opciones están habilitadas y "Siguiente" deshabilitado, con la ayuda "selecciona al menos uno". Con una selección, todas siguen habilitadas, "Siguiente" se habilita y la opción elegida se marca como "objetivo principal". Con dos selecciones, las opciones no elegidas se deshabilitan y la ayuda invita a tocar una seleccionada para cambiarla. Tocar una tercera no hace nada; tocar una ya elegida la deselecciona y libera capacidad. El orden de selección se conserva: el primer toque es el objetivo principal y el segundo el secundario; la persona puede intercambiarlos deseleccionando y reseleccionando.
 
-**Regla R29 — Tres componentes, encendidos por defecto.** El entrenamiento se arma con tres componentes: pesas, cardio y clases. Cada uno está encendido por defecto y solo se apaga ante una supresión explícita. El sistema es auditable: a partir de las respuestas, siempre es posible predecir qué componentes se encienden y por qué.
+### 3.4 El resolver dinámico: ubicación más experiencia ideal
 
-**Regla R30 — El componente de pesas.** Está encendido por defecto y la preferencia de entorno nunca lo apaga. Su única causa de supresión es una condición médica marcada como contraindicación absoluta para ese tipo de trabajo. Toma una variante acuática cuando la persona prefiere la alberca y el club tiene alberca; si el club no la tiene, toma la variante en seco y se acompaña de una nota. Su nombre visible es uno de seis, según el objetivo principal —fuerza integral, rutina por grupos musculares, desarrollo muscular progresivo, potencia y velocidad, fuerza de mantenimiento, o fuerza guiada en máquinas—. Nunca lista equipos en el texto visible y cierra recordando que el entrenador define los ejercicios y el peso en la primera sesión.
+El resolver de club es determinista y calcula su resultado sin más latencia visible que la recuperación de datos. Toma la ubicación de la persona más una descripción calculada de su **experiencia ideal**, y aplica un árbol de decisión por radio cuya prioridad es entregar la experiencia ideal por encima de minimizar la distancia.
 
-**Regla R31 — El componente de cardio.** Está encendido por defecto. Una condición cardiovascular no estabilizada y sin autorización médica lo restringe a cardio suave o lo apaga. No usa nombres técnicos en el texto visible: muestra la máquina sugerida, la duración, el momento respecto a las pesas y una razón en lenguaje llano. La máquina es una sugerencia, no una restricción. Cuando hay dos objetivos, la guía adopta la del más restrictivo, priorizando la recuperación. Las clases de intervalos de alta intensidad pertenecen al componente de clases, nunca a este.
-
-**Regla R32 — El componente de clases.** Está encendido por defecto. Se apaga cuando la persona declara que prefiere entrenar sola; en ese caso, el espacio se renombra «Tu rutina individual» y recomienda en su lugar las subclases de entrenamiento individual correspondientes al objetivo. El entorno declarado filtra el catálogo: quien prefiere la alberca ve solo clases acuáticas; quien prefiere el área seca, solo clases en seco; quien elige ambas o deja que el entrenador decida, ve todas.
-
-**Regla R33 — La preferencia de entorno gobierna los tres componentes en conjunto.** Cuando la persona prefiere la alberca y su club la tiene, pesas y cardio toman variantes acuáticas; si el club no la tiene, ambas quedan en seco con una nota que señala el club con alberca más cercano. Cuando elige ambas, pesas queda en seco y cardio ofrece alternativa acuática si el club la tiene. Cuando deja la decisión al entrenador, todo queda en seco y se aclara que el entrenador define el entorno en la primera sesión.
-
-**Regla R34 — La tarjeta «Tu Club Ideal».** Se presenta entre el encabezado del resultado y los tres componentes. Todo su contenido es verificable: el nombre del club más cercano según la ubicación de la persona —o una alternativa por ciudad cuando la ubicación no importa—; la distancia expresada en minutos de traslado; la dirección de catálogo; una línea de intención que combina con quién y cómo entrena la persona; exactamente cuatro características verificables del club; y un enlace para ver otros clubes cercanos. Si algún dato no puede resolverse, ese elemento se omite; nunca se inventa.
-
-**Regla R35 — Cambio de clases y de club.** La persona puede cambiar las clases recomendadas; al hacerlo, se reemplaza solo esa tarjeta y se vuelve a redactar el texto de esa clase, sin regenerar las demás. No puede elegir una clase fuera del catálogo de su club. Si elige una clase poco alineada con su objetivo, se le señala con suavidad, pero se respeta su elección. La persona también puede cambiar de club: se le muestran los clubes adicionales dentro de un radio configurable, ordenados por distancia; al elegir uno nuevo, se actualiza la tarjeta de club y se re-evalúa el componente de clases con el catálogo del nuevo club, mientras pesas y cardio permanecen, por ser independientes del club. Todo cambio se conserva en la sesión y se registra como anulación manual.
-
-**Regla R36 — FitKidz en tres estados.** La disponibilidad de FitKidz es una característica del club, presente en cuarenta de los cuarenta y nueve. Cuando el club tiene FitKidz y clases infantiles nombradas, se muestra la sección con esas clases. Cuando tiene FitKidz pero sin clases listadas, se muestra una sección que indica que el Asesor compartirá el detalle en la visita. Cuando el club no tiene FitKidz, se muestra una sección que remite a otros clubes cercanos que sí lo ofrecen. Cuando la persona visita con sus hijos y al menos uno es menor de doce años, FitKidz se trata como una amenidad requerida y el club se elige entre los que la tienen.
-
-### 6.3 Seguridad clínica y contenido sensible a la salud
-
-**Regla R37 — El filtro de seguridad corre antes de recomendar.** Antes de ordenar y seleccionar clases, el sistema aplica un filtro duro de seguridad sobre cinco condiciones: lesión, condición cardiovascular, embarazo, posparto y cirugía bariátrica. Estas se derivan de las respuestas de condiciones médicas, de embarazo o posparto, y de tratamiento. Las clases contraindicadas para la condición de la persona quedan excluidas antes de cualquier ranking y nunca se nombran en el texto que ve el usuario.
-
-**Regla R38 — El filtro opera sobre la condición, no sobre el objetivo.** La exclusión por seguridad depende exclusivamente de la condición declarada; la selección por afinidad depende del objetivo. Son ejes independientes: una misma clase puede quedar excluida por una condición y, en ausencia de esa condición, ser idónea para un objetivo.
-
-**Regla R39 — Los tratamientos para bajar de peso tienen tratamiento diferenciado.** Un tratamiento con análogos de GLP-1 no excluye clases: prioriza el trabajo de fuerza para preservar masa muscular y se acompaña de un mensaje informativo que aclara que el Asesor lo confirma en la visita. La cirugía bariátrica excluye clases de alto impacto y carga elevada. Cuando la persona declara «otra» condición u «otro» tratamiento médico, no se aplica un filtro automático: se genera un mensaje que indica que el Asesor ajustará los protocolos con criterio clínico.
-
-**Regla R40 — Los datos de salud solo excluyen y preparan, nunca diagnostican.** La información de salud se usa para dos cosas: excluir las clases grupales contraindicadas y preparar el brief del Asesor. Nunca se usa para diagnosticar. El Asesor valida clínicamente en la visita guiada.
-
-**Regla R41 — Las prescripciones técnicas son internas.** Las prescripciones de series, repeticiones, cargas y descansos son internas; no se muestran al usuario. Están sujetas a la misma validación profesional que el resto del contenido sensible a la salud.
-
-**Regla R42 — Validación profesional obligatoria y bloqueante.** El contenido sensible a la salud —el hub de bajar de peso, el de rehabilitación, los artículos de nutrición y rehabilitación, y el catálogo clínico de contraindicaciones— debe ser validado por un médico del deporte antes de publicarse. Esta validación es bloqueante: nada de este contenido llega a producción sin la firma profesional.
-
-**Regla R43 — Requisitos de toda página sensible a la salud.** Cada una de estas páginas lleva tres cosas: la firma profesional visible, con nombre y cédula; un aviso de salud antes de las recomendaciones, que aclara que la información orienta y no sustituye la valoración médica; y la ausencia total de promesas numéricas: nunca se afirma que la persona bajará una cierta cantidad de kilos en un cierto tiempo.
-
-**Regla R44 — La sección de seguridad del resultado se adapta a la condición.** Al pie del resultado, la sección de seguridad cambia su texto según la situación de la persona —tratamiento con GLP-1, GLP-1 junto con otra condición, otra condición médica, o ninguna— y siempre cierra con la misma aclaración: la recomendación orienta la selección de servicios disponibles y no sustituye una valoración médica.
-
-### 6.4 Selección y orden de las clases
-
-**Regla R45 — La selección de clases ocurre antes de redactar.** El sistema elige y ordena las clases en el servidor, antes de generar cualquier texto. La redacción no genera, ordena ni filtra clases; solo selecciona identificadores de beneficio y de razón de coincidencia y escribe un conector breve.
-
-**Regla R46 — El orden de la selección.** El proceso es: partir del catálogo del club resuelto; filtrar por entorno según la preferencia; filtrar por compatibilidad con el objetivo, descartando de inmediato cualquier clase marcada como no apta para alguno de los objetivos elegidos; filtrar por nivel; aplicar el filtro duro de contraindicaciones; calcular una puntuación de afinidad; y partir el resultado en las dos mejores, las que también encajan, y el resto.
-
-**Regla R47 — La puntuación de afinidad.** Una clase suma por coincidir con el objetivo, con la sensación buscada y con el ritmo, y por traslapar con los horarios disponibles —traslape pleno o parcial—. Cuando hay dos objetivos, las coincidencias se acumulan. El empate se resuelve por orden alfabético.
-
-**Regla R48 — Casos límite de la selección.** Si todas las clases quedan contraindicadas, el componente de clases ofrece Personal Training como alternativa. Si solo una clase resulta viable, se muestra esa y se complementa con Personal Training. Si en el nuevo club elegido no hay clases viables en los horarios de la persona, se le advierte y se le ofrecen alternativas o volver al club anterior.
-
-### 6.5 Captura y conversión del lead
-
-**Regla R49 — La captura de contacto va entre el resultado y la agenda.** Los datos de contacto se piden después de entregar el resultado y antes de permitir agendar. No se puede avanzar a elegir fecha y hora sin haberlos proporcionado. Se piden tres: apellido —con al menos dos caracteres—, celular —exactamente diez dígitos— y correo electrónico válido. Se pide el contacto solo después de que el resultado ya entregó valor.
-
-**Regla R50 — La agenda y su retorno.** En la pantalla de agenda, la persona elige día y hora; el botón de regreso la lleva de vuelta a la captura de contacto, no al resultado. La confirmación ocurre en tiempo real. Si el sistema de agenda no responde, se entra en modo degradado: se captura el lead y se promete una llamada manual dentro de un día hábil.
-
-**Regla R51 — Los recordatorios de visita.** Cuando la persona agenda, se programan dos recordatorios por mensajería: uno veinticuatro horas antes y otro dos horas antes de la cita. Sin consentimiento explícito para esa mensajería, no se envía ningún mensaje y el recordatorio recae en el correo electrónico.
-
-**Regla R52 — La venta no ocurre en el sitio.** El sitio no tiene checkout. La ruta de conversión desde una página de membresía es agendar la visita guiada, que captura el lead y lo enruta. La venta de la membresía ocurre en persona en el club o por teléfono, nunca en línea.
-
-### 6.6 Calificación y enrutamiento del lead
-
-**Regla R53 — La puntuación del lead.** Cada lead recibe una puntuación a partir de señales: completar el contacto y agendar suma cuarenta; un objetivo de alta intención —bajar de peso o masa muscular— suma veinte; venir de otro gimnasio suma quince; un objetivo de cambio definido suma diez; un nivel intermedio o avanzado suma cinco; quien solo curioseó sin agendar no suma. Estos valores son la calibración inicial y se ajustan con el tiempo.
-
-**Regla R54 — El enrutamiento por puntuación.** Un lead con sesenta o más es caliente y se enruta de inmediato al Asesor y al asistente. Entre treinta y cincuenta y nueve, agenda estándar con recordatorio. Por debajo de treinta, nutrición por correo y retargeting.
-
-**Regla R55 — Agendar es siempre caliente.** Todo lead que completó su contacto y agendó una visita se enruta siempre como caliente, sin importar su puntuación. La puntuación solo sirve para priorizar a quienes no agendaron.
-
-**Regla R56 — La puntuación nunca castiga una bandera clínica.** El enrutamiento nunca reduce la atención de leads con banderas clínicas, embarazo o posparto, cirugía bariátrica, tratamiento con GLP-1 o lesión. La puntuación no se usa para negar seguimiento a nadie.
-
-**Regla R57 — Lo que el sistema debe registrar.** De cada lead se registran, en campos separados, la puntuación total, las señales que sumaron, el club resuelto, la puerta de entrada, las banderas críticas y si la persona agendó.
-
-**Regla R58 — El brief del Asesor.** Cada lead produce un brief para el Asesor que reúne: el perfil de la persona, la logística de su visita, exactamente cinco preguntas de validación, una ruta de visita de cuatro pasos —conectar con su objetivo, recorrido enfocado, resolver su bloqueador y cerrar con el siguiente paso—, una propuesta con un elemento principal y uno complementario, exactamente tres prioridades de cierre, las notas y banderas, y un guion de cierre breve. El brief se escribe en primera persona, del Asesor hacia la persona.
-
-**Regla R59 — El Asesor no vuelve a preguntar.** El propósito del brief es que el Asesor convierta la visita sin re-preguntar ninguna de las respuestas que la persona ya dio. Su métrica es exactamente esa.
-
-**Regla R60 — Las banderas del brief.** El brief marca, con su nivel de atención, situaciones como familia con FitKidz, persona principiante, regreso de una pausa, embarazo, posparto, cirugía bariátrica, tratamiento con GLP-1, una condición médica específica, una nota sobre alberca, o la preferencia de entrenar sola —que advierte no presionar la venta de un paquete de clases grupales—.
-
-### 6.7 Voz, contenido y el asistente conversacional
-
-**Regla R61 — La voz de la marca.** El sitio habla como un entrenador adulto: directo, cercano, sin promesas vacías ni paternalismo. Usa la segunda persona, frases cortas, párrafos que no rebasan las sesenta palabras y verbos concretos. No usa signos de exclamación, anglicismos ni promesas en kilos, tallas, plazos o métricas clínicas inventadas.
-
-**Regla R62 — Lo que el texto nunca dice.** El texto visible nunca usa la palabra «plan» —el entregable es la experiencia ideal—; nunca muestra los códigos internos de las preguntas; nunca recurre a clichés de gimnasio ni a jerga técnica —hipertrofia, intervalos de máxima intensidad por su sigla, consumo máximo de oxígeno, esfuerzo percibido, repetición máxima, déficit calórico, propiocepción y semejantes— sino a lenguaje accesible.
-
-**Regla R63 — La verificación del contenido generado.** Todo texto generado pasa por una verificación que bloquea: la fuga de códigos de pregunta, la aparición de la palabra «plan» o de vocabulario prohibido, el exceso médico —diagnósticos, garantías clínicas, prescripción de intensidad, promesas de pérdida de peso o afirmaciones sobre calorías—, las violaciones de longitud, la falta de un formato requerido, y cualquier afirmación sobre clubes, horarios, amenidades, precios o competidores que no provenga del sistema. Cuando un campo falla, se reemplaza solo ese campo por una alternativa segura; nunca se deja al usuario sin su resultado.
-
-**Regla R64 — El asistente conversacional.** El asistente es un widget flotante presente en todas las páginas. Responde preguntas operativas —horarios, precios, clases, membresías—, agenda visitas y conoce el contexto de la página. Funciona por texto de forma predeterminada, con opción de voz, y tiene una dirección de respaldo para cuando no hay scripts.
-
-**Regla R65 — Lo que el asistente no hace.** El asistente no ejecuta cancelaciones, congelamientos, cambios de plan ni reembolsos: capta la solicitud, hace una verificación básica de identidad, abre un caso y ofrece un Asesor humano. No responde preguntas profundas de salud: remite al hub correspondiente con firma médica. No promete resultados. Para todo lo que está fuera de su alcance, transfiere a una persona; nunca inventa una respuesta.
-
-**Regla R66 — La mensajería instantánea es solo para recordatorios.** El canal de mensajería se usa exclusivamente para los recordatorios de visita, con plantilla y previo consentimiento; no para ventas ni para cambios de cuenta.
-
-### 6.8 Estados del sistema, persistencia y casos límite
-
-**Regla R67 — Las fases de la experiencia.** La experiencia transita por fases bien definidas: bienvenida, cuestionario, carga, resultado, captura de contacto, agenda y entrega del brief, además de un estado de error. Cada transición es predecible.
-
-**Regla R68 — La carga y sus tiempos.** Durante la generación del resultado se muestra de inmediato una estructura de carga; a los pocos segundos, un mensaje que indica que se está armando la experiencia; y si tarda demasiado, una opción de reintento. Si el reintento falla, se entra en el comportamiento de respaldo.
-
-**Regla R69 — La degradación con gracia.** Ante un error del servidor o una demora excesiva, el sistema muestra un respaldo seguro y ofrece reintentar. Si el texto generado llega mal formado, la página se arma con sus secciones fijas y deja vacíos los campos que no pudieron generarse, sin pantallas en blanco.
-
-**Regla R70 — El único caso sin componentes.** Si los tres componentes quedaran apagados, el sistema lanza un error controlado y muestra una tarjeta de transferencia a un Asesor humano, conservando las respuestas y adjuntándolas al lead. Es el único caso en que el resultado no muestra ningún componente de entrenamiento.
-
-**Regla R71 — La caducidad del resultado.** Si un resultado se generó hace más de sesenta días, se muestra un aviso no bloqueante que pregunta si el objetivo sigue siendo el mismo. Si la persona lo ignora, el resultado permanece sin cambios.
-
-### 6.9 Privacidad y accesibilidad transversales
-
-**Regla R72 — El marco de privacidad.** El tratamiento de datos se rige por la legislación mexicana de protección de datos personales en posesión de los particulares. Se capturan datos en cuatro momentos —el cuestionario, el registro de entrega del resultado, la agenda de la visita y la conversación con el asistente— y en cada uno la persona ve un aviso de privacidad y otorga su consentimiento antes de cualquier almacenamiento.
-
-**Regla R73 — El consentimiento reforzado para datos de salud.** Los datos de salud —peso, estatura, condiciones médicas y medicamentos— son sensibles y requieren un consentimiento específico adicional. Ese consentimiento se otorga mediante una casilla obligatoria en la pantalla de condiciones médicas, antes de responder esa pregunta y las del camino de peso. El consentimiento para la mensajería de recordatorios se capta por separado, con aceptación explícita.
-
-**Regla R74 — Los datos de contacto, acotados a su fin.** El apellido, el celular y el correo se usan únicamente para coordinar la visita guiada y no se comparten con terceros. Se transfieren al sistema comercial bajo la misma base de consentimiento que las respuestas del cuestionario.
-
-**Regla R75 — La accesibilidad como piso, no como añadido.** Todas las páginas cumplen el estándar de accesibilidad de nivel doble A en su versión vigente, verificado de forma automática como condición bloqueante. El contraste de texto cumple las proporciones mínimas; el rojo de marca se reserva para fondos de acción y no para texto pequeño, que usa una variante de mayor contraste. Ninguna información depende solo del color: el estado seleccionado se marca con borde y palomita, y la sección de seguridad combina ícono y texto. Los blancos táctiles respetan los tamaños mínimos en móvil. Se respeta la preferencia de movimiento reducido. La operación por teclado es completa, con foco visible. El idioma se declara como español de México, los cambios dinámicos se anuncian a los lectores de pantalla y cada pregunta se estructura como un grupo con su leyenda.
+La experiencia ideal tiene dos partes calculadas. La primera son las **clases ideales**: el conjunto de clases alineadas con los objetivos de la persona, calculado antes de elegir el club; un club "cumple" el lado de clases cuando ofrece al menos una de ellas, y cuando la persona entrena sola esta condición se satisface de forma vacía. La segunda son las **amenidades de la experiencia**, a lo sumo dos, cada una requerida solo bajo su disparador: la **alberca**, cuando el modo es "en la alberca", y **FitKidz**, cuando la persona visita con su familia y tiene hijos menores de doce años. Estas son las únicas amenidades que participan en la selección del club; el cuestionario no pregunta por ninguna otra, así que ninguna otra puede ser un requisito. Es crucial entender que la alberca y FitKidz no son filtros ciegos que descarten clubes en silencio: forman parte de la prueba de "cumple la experiencia" dentro del árbol de radio, diseñada para hacer explícito el compromiso a la persona —ofrecer el club que cumple, explicar la distancia y aun así mostrar los clubes cercanos que no cumplen como alternativas—.
 
 ---
 
-## 7. Síntesis
+## 4 · Reglas de negocio
 
-La navegación de Sports World es, en el fondo, una sola idea ejecutada con disciplina: **conducir a cada persona, por el camino más corto y más honesto, desde su intención hasta una visita agendada con todo el contexto necesario para cerrarla.** El cuestionario es la columna que sostiene esa idea; los menús dinámicos son la forma en que el sitio se adapta a cada persona sin perderla; y las reglas de negocio descritas aquí son las que garantizan que, en cada paso, el sistema haga lo correcto: personalizar sin inventar, recomendar sin poner en riesgo, capturar sin presionar y entregar al equipo comercial un lead que ya se siente comprendido.
+Esta sección enumera cada regla que afecta la recomendación, la copia visible, el brief del asesor o la máquina de estados. Cada regla se describe con su disparador, su mecanismo y su efecto observable.
+
+### 4.1 Resolución de club — árbol de radio que prioriza la experiencia
+
+Al enviar la última pregunta, la carga comienza con el mensaje "buscando tu club ideal". El principio rector es que **la experiencia ideal gana sobre la cercanía**: el sistema no elige sin más el club más próximo, sino el que entrega la experiencia ideal de la persona, y usa la distancia solo para desempatar o cuando ningún club cercano cumple.
+
+Un club **cumple la experiencia** cuando satisface ambos lados: el de clases —ofrece al menos una de las clases ideales, condición vacía si la persona entrena sola— y el de amenidades —tiene todas las amenidades requeridas, que son a lo sumo la alberca y FitKidz, cada una solo bajo su disparador—.
+
+El proceso es el siguiente. Primero se computa la experiencia ideal —las clases ideales y las amenidades requeridas—. Luego se geocodifica la ubicación a coordenadas mediante una búsqueda en cuatro niveles —código postal directo, sinónimo de colonia, colonia aproximada y, como último recurso, el centroide—. Después se puntúan todos los clubes por distancia desde ese ancla y se etiqueta cada uno según si cumple o no la experiencia. Finalmente se aplica el árbol de decisión con un radio base de **diez kilómetros**:
+
+- **Dos o más clubes dentro de diez kilómetros cumplen la experiencia:** decide la distancia; se elige el más cercano de los que cumplen.
+- **Exactamente un club dentro de diez kilómetros cumple:** se ofrece ese club, aun si no es el más cercano en términos absolutos; la persona puede cambiarlo, pero cambiar a uno que no cumple muestra una nota de que no incluye todas las clases ideales.
+- **Ningún club dentro de diez kilómetros cumple:** se expande el radio —veinte, treinta kilómetros, sin tope— hasta encontrar uno que cumpla; se ofrece primero ese club más lejano y se señala la distancia, y además se anexan los tres clubes más cercanos dentro del radio original como alternativas, cada una marcada como que no incluye las clases o amenidades ideales.
+- **Ningún club en ningún lugar cumple** —por ejemplo, una amenidad requerida no existe en ningún club alcanzable, o la clase ideal no existe en ninguna parte—: se recurre al club más cercano en términos absolutos y se señala un encaje parcial.
+
+La copia de la tarjeta de club y una nota ámbar opcional se adaptan al modo resuelto. Cuando varios cumplen, la tarjeta dice que el club tiene las clases ideales y es el más cercano de los que las ofrecen, sin nota. Cuando solo uno cumple, dice que es el club cerca de la persona que reúne las clases ideales, sin nota. Cuando hubo que expandir el radio, dice que es el club que sí reúne las clases ideales, con una nota ámbar: "Está un poco más lejos que otras opciones, pero es el más cercano que ofrece las clases ideales para tu objetivo. Abajo te dejamos también los clubes más cercanos a ti." Cuando ninguno cumple, dice que es el club más cercano a la ubicación, con la nota: "Ningún club cercano reúne todas las clases ideales para tu objetivo. Tu Asesor te ayuda a armar la mejor experiencia posible aquí en la visita guiada."
+
+Cada club del panel "Ver otros clubes cerca de ti" lleva una marca de si cumple la experiencia; los que no cumplen muestran una subnota ámbar: "No incluye todas las clases ideales para tu objetivo." Así el compromiso queda explícito al momento de elegir.
+
+Cuando la persona elige un club alternativo, el sistema recalcula los tres bloques de entrenamiento contra el catálogo del club elegido, vuelve a correr el rankeador de clases y reevalúa si el club elegido cumple la experiencia: si sigue cumpliendo, la copia dice que lo eligió y reúne las clases ideales; si no cumple, aparece una nota ámbar de que no incluye todas las clases ideales pero que puede entrenar ahí y el asesor le ayudará a ajustar la experiencia en la visita. El cambio siempre se permite. El modelo de lenguaje no se vuelve a llamar al cambiar de club, porque su copia no depende del club más allá del nombre y la dirección. Con independencia del modo, si el club resuelto supera los cincuenta kilómetros se marca como demasiado lejos y una nota invita a reconsiderar las alternativas.
+
+### 4.2 Selección del bloque de pesas
+
+Completado el cuestionario, el selector toma el objetivo principal y el modo y elige uno de doce subgrupos —seis en seco y seis acuáticos—. En seco: bajar de peso da "Fuerza integral con pesas"; estética da "Rutina por grupos musculares"; masa muscular da "Desarrollo muscular progresivo"; desempeño da "Potencia y velocidad"; salud cardiovascular da "Fuerza de mantenimiento"; recuperación de lesión da "Fuerza guiada en máquinas". En agua: bajar de peso da "Trote acuático por intervalos"; estética da "Fuerza acuática con equipo"; masa muscular da "Fuerza combinada: agua y gimnasio"; desempeño da "Potencia y velocidad acuática"; salud da "Nado continuo moderado"; lesión da "Movilidad y recuperación acuática".
+
+El nombre del subgrupo se muestra como título de la tarjeta de pesas, acompañado de un texto explicativo en español llano que nunca contiene jerga técnica. La tarjeta nunca lista equipos. El caso de masa muscular en modo acuático es el único subgrupo de pesas que exige de forma explícita una sesión complementaria en seco: su texto aclara que el agua no permite cargar suficiente peso para hacer crecer músculo de forma significativa, que si el objetivo principal es ganar músculo la rutina combina alberca con días en piso, y que el entrenador define el balance; el brief lo señala como una bandera de sesiones híbridas a validar.
+
+### 4.3 Selección del bloque de cardio
+
+De estructura idéntica al de pesas —seis subgrupos en seco, seis acuáticos, elegidos por el objetivo principal y el modo—. En seco: bajar de peso da "Cardio continuo moderado" en caminadora, bicicleta o elíptica, de treinta y cinco a cuarenta y cinco minutos; estética da "Cardio moderado con intervalos", de veinticinco a treinta y cinco minutos; masa muscular da "Cardio ligero de mantenimiento" en caminadora suave o bicicleta, de quince a veinticinco minutos; desempeño da "Intervalos intensos 4×4" en bicicleta, remo o caminadora, de treinta a cuarenta minutos; salud da "Base aeróbica 80/20", de treinta y cinco a cuarenta y cinco minutos; lesión da "Recuperación activa de bajo impacto" en bicicleta reclinada, elíptica o caminadora muy suave, de quince a veinticinco minutos. Los subgrupos acuáticos se determinan por el mismo eje de objetivo, con modalidades y duraciones de alberca; en el caso de masa muscular en modo acuático, la tarjeta incluye una línea de alternativa acuática de sesión corta para no comprometer el trabajo de fuerza.
+
+La tarjeta muestra el nombre del subgrupo como título, la máquina con la duración y el momento respecto a las pesas como subtítulo, y la razón como cuerpo. La persona nunca ve metas numéricas crudas como porcentajes de frecuencia cardiaca o repeticiones máximas.
+
+### 4.4 Selección de clases grupales
+
+Esta regla corre cuando el cuestionario está completo y la persona quiere clases grupales —es decir, eligió entrenar acompañada o le da igual—. Si eligió entrenar sola, la regla no corre y el tercer bloque se convierte en Personal Training.
+
+El rankeador de clases corre dos veces con propósitos distintos. La **primera vez**, durante la resolución del club, computa el conjunto de clases que la persona idealmente recibiría a lo largo de todo el catálogo, para sesgar la selección del club hacia uno que de hecho las ofrezca; es la verificación de que las clases ideales están disponibles antes de fijar el club. La **segunda vez**, ya elegido el club, computa las dos mejores clases reales de su catálogo.
+
+El árbol de la selección final tiene cinco filtros secuenciales y un paso de puntuación. Primero, la **intersección con el catálogo**: solo sobreviven las clases que el club realmente ofrece; es la compuerta dura de disponibilidad. Segundo, el **filtro de modo**: en alberca solo clases acuáticas, en piso solo clases en seco, y en ambas o a criterio del entrenador, todas. Tercero, el **filtro de nivel**: solo clases cuyos niveles permitidos incluyen el nivel de la persona, de modo que un principiante nunca ve una clase restringida a niveles superiores. Cuarto, el **filtro de contraindicaciones**: se descartan las clases contraindicadas bajo cualquier condición activa; es el filtro duro de seguridad, y las clases removidas nunca aparecen ni se nombran. Quinto, la **puntuación contra los objetivos y el descarte de las no aptas**: por cada objetivo seleccionado, una clase calificada como de las mejores para ese objetivo suma tres, una clase apta suma uno, y una clase no apta veta la clase por completo; una sola calificación de "no apta" contra cualquier objetivo elegido descarta la clase, sin importar qué tan bien puntúe para el otro, garantizando que nunca se muestre una clase que choque activamente con una meta declarada; se conserva la clase solo si no está vetada y su puntuación es mayor a cero.
+
+Existe un paso adicional de puntuación, aplicable solo cuando la persona está en tratamiento con análogos de GLP-1: el ajuste de prioridad de fuerza descrito más adelante, que añade puntos a las clases de fuerza y resta a las de resistencia de alta intensidad para que las dos clases mostradas reflejen la guía clínica de preservar masa muscular. Es el único ajuste de puntuación fuera de la matriz de objetivos, y cuando la persona no está en ese tratamiento es inocuo.
+
+Por último, las clases sobrevivientes se ordenan por puntuación descendente y, en empate, alfabéticamente; las dos primeras son las recomendadas y las siguientes tres alimentan el panel de alternativas. La tarjeta del tercer bloque muestra el resultado: con dos clases, ambas con su nombre, un conector escrito por el modelo de lenguaje y una descripción, más los accesos a "Cambiar mis clases" y "Ver todas las del club"; con una sola clase, esa clase y el selector de alternativas; con ninguna, un mensaje que reconoce que no se encontraron clases que encajen con el objetivo y el nivel en ese club e invita a considerar Personal Training o explorar otros clubes, con su botón correspondiente. Como la verificación previa sesga la elección del club hacia uno con clases alineadas, el caso vacío es raro en la práctica; cuando ocurre, encaminar a Personal Training es el desenlace correcto y seguro.
+
+### 4.5 Regla del modo acuático
+
+Cuando el modo es "en la alberca", el catálogo de pesas pasa de seco a acuático, el de cardio pasa de máquinas a alberca, y el rankeador conserva solo clases acuáticas del catálogo del club. El modo **no actúa como un filtro ciego que descarte clubes en silencio**: la alberca participa en la selección del club como una amenidad requerida que sesga al resolver hacia un club con alberca —expandiendo el radio si hace falta—, mientras los clubes sin alberca permanecen siempre visibles como alternativas marcadas. El modo determina, además, el tipo de entrenamiento para el club que finalmente se resuelva. El selector verifica si el club resuelto tiene alberca: si la tiene, entrega los bloques acuáticos del objetivo principal; si no la tiene, entrega los bloques en seco y añade una nota —"Este club no tiene alberca. Revisa otros clubes cerca de ti — varios sí ofrecen entrenamiento acuático."—. Cuando el club resuelto tiene alberca, la persona ve una recomendación plenamente acuática y el brief incluye la marca de preferencia de alberca; el manejo especial de masa muscular en modo acuático aplica solo cuando el club tiene alberca.
+
+### 4.6 Regla del modo individual
+
+Cuando la persona elige entrenar sola, el tercer bloque de clases grupales se reemplaza por una tarjeta de Personal Training y el rankeador se omite por completo. La tarjeta se muestra en tono oscuro, titulada "Personal Training", con la copia "Decidiste entrenar a tu ritmo, sin clases grupales. Personal Training te asigna un entrenador dedicado en tus horarios." y su botón. El brief recibe la bandera de que el lead busca formato individual y de no presionar la venta de un paquete de clases grupales. Cuando la persona responde que le da igual, el motor opta por clases grupales y el brief anota que el acompañamiento está abierto y conviene explorar ambos formatos en la visita.
+
+### 4.7 Regla de disponibilidad de FitKidz
+
+Cuando la persona visita con sus hijos o con la familia completa y tiene al menos un hijo menor de doce años, el disparador rige el *mensaje* de FitKidz en el resultado y, como se estableció en el resolver, vuelve a FitKidz una amenidad requerida de la experiencia que sesga la selección del club hacia uno que la ofrezca —expandiendo el radio si hace falta—. **No actúa como un filtro ciego que descarte clubes en silencio**: los clubes sin FitKidz permanecen siempre visibles como alternativas marcadas y la persona puede elegir uno. La tarjeta de beneficio familiar se renderiza según si el club resuelto ofrece FitKidz, en tres estados. En el primero, el club ofrece FitKidz y tiene clases infantiles documentadas: la tarjeta muestra el conteo de actividades y hasta seis etiquetas con sus nombres. En el segundo, el club ofrece FitKidz pero su catálogo infantil está vacío o incompleto: la tarjeta muestra una copia genérica —"Este club ofrece FitKidz. Tu Asesor te compartirá el detalle de actividades y horarios disponibles para tus hijos en tu visita guiada."— sin etiquetas. En el tercero, el club no ofrece FitKidz: la tarjeta muestra un respaldo en gris que remite a otros clubes cercanos que sí lo tienen. Cuando el disparador no se cumple, la tarjeta de beneficio familiar no se renderiza y la tarjeta de club ocupa todo el ancho de la sección.
+
+### 4.8 Filtro duro de contraindicaciones
+
+Cuando la persona declara una o más condiciones o tratamientos activos —a través de las condiciones médicas, el embarazo o posparto, o los tratamientos de peso—, entra en operación la matriz de contraindicaciones: una tabla determinista de cincuenta y una clases por cinco condiciones. La matriz marca una clase como contraindicada para una condición según indicadores dominantes de movimiento. La condición de **lesión** filtra clases con alto impacto, carga pliométrica o superficies inestables, y remueve diecisiete clases. La **cardiovascular** filtra clases con intervalos sostenidos de alta intensidad, posición supina o patrones de fuerza propensos a la maniobra de Valsalva, y remueve catorce. El **embarazo** filtra clases con impacto, patadas, posición supina después del primer trimestre y trabajo abdominal intenso, y remueve veintiuna. El **posparto** filtra esas mismas más la fuerza de alta carga hasta una evaluación del piso pélvico, y remueve veintiuna. La **bariátrica** filtra clases de alto impacto y carga elevada durante el primer año posoperatorio, y remueve dieciséis.
+
+Las clases filtradas no aparecen en el tercer bloque ni en el selector de alternativas. La copia visible nunca menciona qué clases se filtraron ni por qué: hacerlo alarmaría a la persona con un encuadre clínico en una superficie de marketing o la invitaría a desafiar el filtro, lo que anularía su propósito. El brief sí captura las condiciones activas y anota que las clases contraindicadas están prefiltradas.
+
+La matriz se construye a partir de fuentes profesionales de medicina del deporte, ginecología, cirugía bariátrica y cardiología, y cada par clase-condición se etiqueta internamente según su base epistémica —citado directamente de la fuente, derivado de la categoría dominante de movimiento, o inferido desde primeros principios fisiológicos cuando ninguna fuente aborda la clase directamente—. La matriz no se expone a la persona en ninguna forma; se usa internamente para filtrar y se incluye como metadato del brief para la validación clínica posterior por un profesional de medicina del deporte.
+
+### 4.9 Regla de priorización por GLP-1
+
+Cuando la persona declara un tratamiento con análogos de GLP-1, el sistema **no** filtra clases: la guía clínica es priorizar el trabajo de fuerza para preservar masa muscular durante el estado catabólico que inducen estos fármacos, no restringir modalidades. El efecto es doble. En la copia, la sección de seguridad usa un texto específico —si es GLP-1 solo, "Durante tu tratamiento con GLP-1, priorizamos clases de fuerza para preservar tu masa muscular mientras bajas grasa. Tu Asesor confirma el detalle clínico en la visita guiada."; si es GLP-1 con otra condición, "Tu experiencia incluye prioridad en clases de fuerza para preservar tu masa muscular durante tu tratamiento. Las clases con impacto o restricciones específicas ya están filtradas. Tu Asesor confirma el detalle en la visita guiada."—. En el ranking, se aplica un ajuste —más dos puntos a las clases orientadas a fuerza y menos uno a las de resistencia de alta intensidad— de modo que las dos clases mostradas reflejen la prioridad de fuerza. Este ajuste es el único de su tipo y constituye la fuente única de sus valores. El brief lleva la bandera informativa de tratamiento con GLP-1 y de priorizar fuerza para preservar masa muscular.
+
+### 4.10 Regla de revisión por asesor ante respuesta abierta
+
+Cuando la persona marca una condición no especificada —"otra, la comento en el club"— o un tratamiento de peso no especificado —"otro tratamiento médico"—, el sistema no puede aplicar un filtro determinista porque desconoce la condición concreta. En su lugar produce un mensaje suave de revisión por asesor y deja la incógnita en el brief. La copia de la sección de seguridad cambia a: "Mencionaste una condición o tratamiento médico. Tu experiencia ideal ya excluye las clases contraindicadas por las condiciones declaradas, y tu Asesor ajusta los protocolos de pesas y cardio individual en la visita guiada según tu criterio clínico." El brief lleva una bandera de advertencia para capturar el detalle y validar contraindicaciones específicas antes de recomendar.
+
+### 4.11 Compuerta de captura de contacto
+
+Al presionar "Agendar visita guiada" en el resultado, la fase pasa a la captura de contacto: un formulario de tres campos —apellido, número de celular y correo electrónico— cuyo botón de continuar permanece deshabilitado hasta que los tres pasan validación. El apellido exige al menos dos letras; el celular, exactamente diez dígitos; el correo, un formato válido. Los errores se muestran debajo del campo correspondiente al perder el foco, no en cada pulsación, para evitar mostrarlos de forma prematura. Al enviar con éxito, los datos de contacto se guardan en el estado del resultado y la fase avanza a la agenda; esos datos se renderizan en la sección de logística y contacto del brief, y el nombre completo en su encabezado. La pantalla muestra una divulgación de privacidad —"Tus datos se usan únicamente para coordinar tu visita guiada. No los compartimos con terceros."—, que es el primer momento de consentimiento de la persona.
+
+### 4.12 Copia contextual de la sección de seguridad
+
+La sección de seguridad —"Antes de comenzar"— se renderiza en toda página de resultado, en su segunda página, y su cuerpo se adapta al contexto médico evaluando cuatro casos mutuamente excluyentes en orden: GLP-1 con otra condición; GLP-1 solo; otra condición médica sin GLP-1 —"Con base en lo que compartiste, esta recomendación prioriza opciones controladas y evita actividades contraindicadas. Las clases con impacto o restricciones específicas ya están filtradas. Informa al personal del club sobre cualquier indicación de tu profesional de salud."—; y, por defecto, sin condición declarada —"Con base en lo que compartiste, esta recomendación se ajusta a tu nivel y disponibilidad. Si tienes alguna indicación médica antes de comenzar, coméntala con tu Asesor en la visita guiada."—. La sección se presenta con fondo cálido, un ícono de atención y una línea de aviso fija debajo: "Esta recomendación orienta la selección de servicios disponibles y no sustituye una valoración médica." Su prominencia visual se calibra para notarse sin alarmar.
+
+### 4.13 Regla de doble página: vistas de cliente y de asesor
+
+Tanto el resultado como la entrega del brief se renderizan en dos páginas visualmente separadas. El contenido se divide con un separador punteado; en vista digital el separador es visible, y en impresión se oculta y se fuerza un salto de página, produciendo dos hojas.
+
+En el resultado del cliente, la primera página lleva la barra superior, el encabezado personalizado, la sección de dos columnas con el club y el beneficio familiar, el panel de otros clubes cuando se expande, las cuatro tarjetas de resumen y la fila de conversión con "Agendar visita guiada"; la segunda página lleva el rótulo "Tu combinación recomendada", las tres tarjetas de bloque, los paneles de cambiar y ver todas las clases cuando se expanden, la sección de seguridad, el argumento de infraestructura, la conversión de cierre con el reinicio y el pie legal. El orden de la primera página pone el club primero a propósito: tras responar el cuestionario, la primera pregunta cognitiva de la persona es "¿dónde voy a entrenar?".
+
+En el brief del asesor, la primera página lleva el banner de confirmación para el lead, el encabezado con nombre completo, nivel, etiquetas y fecha, el perfil del lead y la logística y contacto; la segunda página lleva qué validar, la ruta recomendada de la visita, la propuesta, las prioridades de cierre, las notas y banderas, el guion de cierre y el registro del asesor.
+
+### 4.14 Regla de una sola llamada al modelo de lenguaje
+
+Se hace exactamente una llamada al modelo, que devuelve un único objeto con la copia del cliente y el contenido del brief. La llamada se dispara una sola vez por sesión y su respuesta se cachea y se reutiliza en el resultado y en el brief. La copia del cliente incluye el gancho —hasta treinta palabras—, el argumento de la combinación —hasta cuarenta y cinco—, la línea de intención —hasta dieciocho—, el argumento de infraestructura —hasta cincuenta y cinco— y los conectores de cada clase —hasta quince cada uno, distintos entre sí y omitidos cuando no hay clases grupales—. El brief incluye exactamente cinco preguntas de validación —hasta dieciocho palabras cada una—, una ruta de visita de exactamente cuatro pasos con título y descripción —hasta dieciocho—, una propuesta con elemento principal —hasta treinta y cinco— y complemento —hasta treinta—, exactamente tres prioridades de cierre —hasta doce cada una— y un guion de cierre —hasta sesenta, en primera persona del asesor hacia el lead—.
+
+Antes de componer la instrucción, el sistema computa un conjunto de banderas a partir de las respuestas —si hay contexto médico, embarazo, posparto, tratamiento con GLP-1 o bariátrica, si es familia con hijos, si entrena sola, si es principiante, su historial de gimnasio y su preferencia de modo—. Cuando hay contexto médico, la instrucción incluye un bloque que enumera las condiciones declaradas y recuerda que las clases contraindicadas ya están prefiltradas y que el asesor ajusta el protocolo individual con criterio clínico.
+
+Si la llamada falla, el sistema pasa al estado de error con un botón de reintento. Si el reintento tiene éxito, la persona continúa con normalidad. Si los reintentos fallan de forma repetida, la persona aún puede avanzar: el resultado renderiza el contenido determinista —bloques, club, clases, seguridad— y el brief renderiza solo sus secciones fijas, omitiendo las generadas por el modelo sin mostrar error.
+
+### 4.15 Restricciones YMYL y saneamiento de la salida
+
+Cada llamada al modelo impone tres capas de restricción. La primera es de **vocabulario prohibido**: nunca la palabra "plan" en ninguna forma, nunca los códigos internos de las preguntas, nunca jerga técnica —como hipertrofia, intervalos de máxima intensidad por su sigla, consumo máximo de oxígeno, esfuerzo percibido, repetición máxima o déficit calórico— y nunca clichés de marketing ni promesas de resultados. La segunda es de **restricciones de contenido sensible a la salud**: cuando la persona tiene cualquier condición, embarazo, posparto o tratamiento activo, el modelo no diagnostica, no recomienda intensidades específicas, no sugiere que la persona "puede hacer todo" y siempre afirma que el asesor valida con criterio clínico en la visita. La tercera es de **saneamiento de la salida**: aun con las restricciones de instrucción, el modelo a veces filtra códigos de pregunta en la prosa, así que un saneador recursivo recorre toda la respuesta, elimina cualquier código residual y las palabras puente que lo rodean, normaliza los espacios dobles y quita la puntuación colgante, operando sobre textos, listas y objetos anidados para que ningún campo escape a la limpieza.
+
+La instrucción incluye además un vocabulario aprobado de verbos y sustantivos accesibles —construir, sostener, consolidar, mantener, recuperar, ajustar, ritmo, constancia, fuerza, aguante, base, experiencia, rutina, combinación, crecimiento muscular, técnica controlada, conciencia corporal, entre otros—. El efecto es que la persona recibe una copia cálida, profesional y libre de terminología clínica que confundiría a un lector no especialista, y el asesor recibe un contenido preciso, sin relleno y que difiere de forma explícita al criterio clínico cuando hay contexto médico.
+
+---
+
+## 5 · Integración de datos y fuentes de verdad
+
+La experiencia es tan exacta como los datos que la sostienen. La recomendación cruza el perfil de la persona con dos cuerpos de datos operativos —la red de clubes y el catálogo de clases— y escribe el lead capturado en el sistema comercial. El sistema nunca es dueño de los datos operativos: la información de clubes, de clases y los registros de leads viven en los sistemas de registro de Sports World; la experiencia lee de ellos y escribe en ellos, sin mantener una copia maestra paralela que pueda desincronizarse de la realidad.
+
+### 5.1 Categorías de datos
+
+Hay tres categorías. La de **lead y contacto** es la que el sistema produce: el nombre completo, el celular, el correo, el perfil completo derivado del cuestionario —objetivos, nivel, modo, disponibilidad, banderas de contexto médico—, el club resuelto, la combinación de entrenamiento recomendada, el brief generado y la cita agendada; fluye hacia afuera de la experiencia, hacia el sistema comercial, como un nuevo lead cualificado. La de **datos de club** es la red de cuarenta y nueve clubes: nombre comercial, dirección, coordenadas, las amenidades que ofrece —en particular si tiene alberca y si tiene FitKidz, las dos que participan en la experiencia—, el catálogo infantil donde aplique, el estado operativo y los datos de contacto del club. La de **datos de clase** es el catálogo: la lista maestra de disciplinas y, por club, qué clases ofrece, el nivel que exige cada una y el horario en que se imparte; la disponibilidad de clase —si una clase aún se imparte, a qué horas y en qué clubes— es el dato más volátil del sistema.
+
+### 5.2 Tiempo real frente a periódico
+
+No todos los datos necesitan la misma frescura. Forzar todo a tiempo real añadiría costo y fragilidad sin beneficio; dejar que los datos volátiles se vuelvan obsoletos produciría recomendaciones que mandan al lead a un club por una clase que ya no existe.
+
+Deben ser en **tiempo real**: la escritura del lead, que al confirmar la visita debe registrarse en el sistema comercial de inmediato, como una sola escritura en el momento de la captura —es la única escritura obligatoria en tiempo real del sistema, porque una escritura demorada arriesga perder el lead o dejar al asesor sin brief—; el estado operativo del club, porque recomendar un club cerrado es una falla dura visible para el lead, de modo que el resolver no debe ofrecer un club que no esté operando; y la disponibilidad y el horario de las clases en el momento en que corre el rankeador, porque una recomendación construida sobre un horario obsoleto manda al lead a una clase cancelada o reprogramada, la falla de datos obsoletos más dañina, pues se manifiesta como una promesa rota durante la visita.
+
+Pueden ser **periódicos**: la base del directorio de clubes —nombres, direcciones, coordenadas y las marcas de amenidad—, que cambia rara vez; el catálogo infantil de FitKidz por club, que cambia con poca frecuencia y que, donde está incompleto, ya degrada con gracia a un mensaje genérico; y la lista maestra de disciplinas con el nivel que cada una exige, que es estable, porque lo que cambia a menudo es dónde y cuándo se imparte cada clase, y esa parte volátil ya es la porción de tiempo real.
+
+### 5.3 Implicaciones para el flujo de recomendación
+
+El resolver y el rankeador operan sobre una instantánea consistente de datos de clubes y clases, ensamblada en el momento en que la persona completa el cuestionario. Las porciones de tiempo real deben reflejar el estado en vivo de ese momento; las periódicas pueden venir de la sincronización más reciente. En concreto: el árbol de resolución de club debe excluir los clubes que no estén operando, con estado operativo en vivo; la intersección con el catálogo del rankeador debe reflejar la disponibilidad en vivo de las clases del club resuelto, de modo que una clase cancelada o ya no ofrecida en el club no aparezca como ideal. Conviene precisar que este filtro en vivo es sobre el estado operativo de la clase —cancelada, descontinuada, no programada actualmente en el club—, **no** sobre si el horario de la clase coincide con la disponibilidad declarada por la persona: las franjas y los días se capturan para el brief y nunca filtran el catálogo; la conciliación de horario contra la disponibilidad del lead ocurre con el asesor durante la visita. Finalmente, la escritura del lead debe completarse en tiempo real antes de mostrar la pantalla de confirmación, para que el brief esté disponible en el instante en que se agenda la visita.
+
+### 5.4 Dependencias abiertas
+
+Los sistemas de registro precisos, sus métodos de acceso y sus contratos de datos son propiedad de Sports World y no se definen aquí. Para volver operativas las porciones en tiempo real hace falta que el equipo técnico de Sports World provea el sistema comercial y el contrato de escritura para crear un lead cualificado —qué campos, en qué formato, a qué destino—, el sistema de registro del directorio de clubes y cómo expone el estado operativo en vivo, y el sistema de registro de la programación de clases y cómo expone su disponibilidad y horario en vivo. Hasta que esos contratos se definan, la experiencia opera contra una instantánea sincronizada. La arquitectura se diseña para que reemplazar la instantánea por lecturas en vivo requiera cambiar solo la capa de datos, no la lógica de recomendación: el resolver, el selector de bloques y el rankeador consumen la misma forma de datos sin importar si llegó en vivo o por sincronización periódica.
+
+---
+
+## 6 · Síntesis
+
+La experiencia ideal es una sola idea ejecutada con disciplina: tomar a una persona que llega buscando una solución, entenderla a través de un cuestionario de grado clínico, ubicarla en el club que de verdad le entrega su experiencia ideal, armarle una combinación de entrenamiento segura y a su medida, y entregar al asesor un brief que le permita cerrar la visita sin volver a preguntar nada. La navegación por fases asegura que nadie llegue al resultado sin haberse dejado conocer; los menús dinámicos —la ramificación condicional, la concordancia de género, el límite de objetivos y el resolver— adaptan el sistema a cada persona sin perderla; y las reglas de negocio garantizan que, en cada paso, el sistema haga lo correcto: personalizar sin inventar, recomendar sin poner en riesgo, capturar sin presionar y convertir una búsqueda en una visita agendada con todo el contexto necesario para cerrarla.
