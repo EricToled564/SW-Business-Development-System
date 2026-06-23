@@ -1546,6 +1546,7 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
           <p style={{ color: BRAND.red, letterSpacing: "0.22em", fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", marginBottom: "0.5rem" }}>Visita confirmada</p>
           <h1 style={{ fontSize: "1.75rem", fontWeight: 900, lineHeight: 1.15, letterSpacing: "-0.01em", marginBottom: "0.625rem" }}>{firstName}, te esperamos en {club.nombre}.</h1>
           <p style={{ fontSize: "0.9375rem", color: "#D4D4D4", lineHeight: 1.5 }}>{dayStr} · {appointment.hour} · {club.direccion}</p>
+          <p style={{ fontSize: "0.8125rem", color: BRAND.red, lineHeight: 1.5, marginTop: "0.875rem", fontWeight: 600 }}>{firstName} recibe esta confirmación y los detalles de su visita por WhatsApp y por correo.</p>
         </section>
 
         <section style={{ background: BRAND.white, border: "1px solid " + BRAND.gray2, borderRadius: "6px", padding: "1.75rem" }}>
@@ -1565,6 +1566,8 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
               <p style={{ fontWeight: 700, color: BRAND.black }}>{appointment.hour}</p>
             </div>
           </div>
+
+          <p style={{ fontSize: "0.75rem", color: BRAND.gray4, lineHeight: 1.5, marginTop: "0.875rem", fontStyle: "italic" }}>Este reporte de lead se envía por correo al equipo de {club.nombre} para que el asesor prepare la visita.</p>
 
           <div style={sectionDividerStyle}>
             <SectionTitle num="1" label="Perfil del lead" />

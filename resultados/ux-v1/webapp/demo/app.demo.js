@@ -4482,7 +4482,15 @@ function BriefingScreen({
       color: "#D4D4D4",
       lineHeight: 1.5
     }
-  }, dayStr, " · ", appointment.hour, " · ", club.direccion)), /*#__PURE__*/React.createElement("section", {
+  }, dayStr, " · ", appointment.hour, " · ", club.direccion), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.8125rem",
+      color: BRAND.red,
+      lineHeight: 1.5,
+      marginTop: "0.875rem",
+      fontWeight: 600
+    }
+  }, firstName, " recibe esta confirmación y los detalles de su visita por WhatsApp y por correo.")), /*#__PURE__*/React.createElement("section", {
     style: {
       background: BRAND.white,
       border: "1px solid " + BRAND.gray2,
@@ -4553,7 +4561,15 @@ function BriefingScreen({
       fontWeight: 700,
       color: BRAND.black
     }
-  }, appointment.hour))), /*#__PURE__*/React.createElement("div", {
+  }, appointment.hour))), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.75rem",
+      color: BRAND.gray4,
+      lineHeight: 1.5,
+      marginTop: "0.875rem",
+      fontStyle: "italic"
+    }
+  }, "Este reporte de lead se envía por correo al equipo de ", club.nombre, " para que el asesor prepare la visita."), /*#__PURE__*/React.createElement("div", {
     style: sectionDividerStyle
   }, /*#__PURE__*/React.createElement(SectionTitle, {
     num: "1",
