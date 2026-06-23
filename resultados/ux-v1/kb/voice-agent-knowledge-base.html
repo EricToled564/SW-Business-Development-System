@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Sports World UX — Base de Conocimiento para Agente de Voz (TI)</title>
+<style>
+  body{font-family:'Liberation Sans',Arial,sans-serif;color:#1d1d1b;font-size:11pt;line-height:1.45;margin:2.2cm 2cm}
+  h1{font-size:20pt;color:#c81e20;margin:0 0 2pt}
+  .sub{color:#6b6b68;font-size:10pt;margin:0 0 14pt}
+  h2{font-size:14pt;border-bottom:2px solid #e6282a;padding-bottom:3px;margin:20pt 0 8pt;color:#1d1d1b}
+  h3{font-size:11.5pt;margin:12pt 0 3pt;color:#1d1d1b}
+  p{margin:4pt 0}
+  table{border-collapse:collapse;width:100%;margin:6pt 0;font-size:9.5pt}
+  th,td{border:1px solid #cfcfcd;padding:4px 6px;text-align:left;vertical-align:top}
+  th{background:#f0f0ee}
+  code{font-family:'Liberation Mono',monospace;background:#f3f4f6;padding:0 3px}
+  .kw{color:#6b6b68;font-size:9pt}
+  .q{font-weight:bold}
+  ul{margin:4pt 0 4pt 16pt;padding:0}
+  li{margin:2pt 0}
+  .note{background:#fff6e7;border-left:3px solid #f3b9bc;padding:6px 10px;margin:8pt 0}
+</style>
+</head>
+<body>
+
+<h1>Sports World México · UX — Base de Conocimiento</h1>
+<p class="sub">Documento de referencia para un <b>agente de voz (ElevenLabs)</b> que ayuda al personal de TI a ubicar información dentro de la documentación del proyecto. Idioma: español de México. Versión 1.0.</p>
+
+<h2>0 · Cómo debe usar este documento el agente</h2>
+<p>Este documento es la base de conocimiento del agente. Cada respuesta debe: (1) responder en español de México, breve y claro; (2) citar el <b>documento</b> y la <b>sección</b> exacta donde está el detalle (por ejemplo: «está en el documento <i>Execution Plan</i>, sección §5»); (3) si la pregunta toca datos de usuario, captura de leads o contenido de salud, recordar que requiere validación; (4) si no encuentra la respuesta aquí, ofrecer escalar con el líder del proyecto en lugar de inventar.</p>
+<p class="kw">Palabras clave del documento: documentación UX, Sports World, dónde encontrar, ubicar sección, TI, sistemas, CRM, servidor, BES, despliegue, soporte, entregables.</p>
+
+<h2>1 · Los cinco documentos del set</h2>
+<table>
+<tr><th>ID</th><th>Documento (EN)</th><th>Nombre (ES)</th><th>Qué cubre</th></tr>
+<tr><td><code>experience</code></td><td>Experience Architecture</td><td>Arquitectura de Experiencia</td><td>Navegación, máquina de 7 fases, cuestionario (Q1–Q19), menús dinámicos, reglas de negocio (§4.1–§4.15), integración de datos (§5).</td></tr>
+<tr><td><code>technical</code></td><td>Technical Strategy</td><td>Estrategia Técnica</td><td>Stack, datos, SEO/datos estructurados, app de contenido visual, agente BES, método de desarrollo, controles de calidad, integraciones y seguridad.</td></tr>
+<tr><td><code>execution</code></td><td>Execution Plan</td><td>Plan de Ejecución</td><td>Equipo (4 equipos + líder), calendario de 8 semanas, dependencias de Sports World, especificación del servidor.</td></tr>
+<tr><td><code>site</code></td><td>Site Architecture</td><td>Arquitectura del Sitio</td><td>Las 148 páginas en 11 niveles, versión móvil/escritorio, objetivos de calidad, CMS sin código.</td></tr>
+<tr><td><code>deliverables</code></td><td>Deliverables, Support &amp; Operations</td><td>Entregables, Soporte y Operación</td><td>Entregables, migración segura de DNS/correo, soporte 24/7 y SLA, bolsa de horas, estabilización.</td></tr>
+</table>
+<p class="kw">Palabras clave: cuántos documentos, qué documento, lista de documentos, secciones.</p>
+
+<h2>2 · Índice temático — ¿dónde encuentro…? (tema → documento → sección)</h2>
+<table>
+<tr><th>Tema / pregunta</th><th>Documento</th><th>Sección</th></tr>
+<tr><td>Especificación del servidor (CPU, RAM, disco)</td><td>Execution Plan</td><td>§5</td></tr>
+<tr><td>API del CRM / crear o actualizar lead</td><td>Technical Strategy · Execution Plan · Experience</td><td>§8 · §4.1 · §5.2</td></tr>
+<tr><td>Datos de clubes y clases (lectura)</td><td>Technical · Execution</td><td>§2/§8 · §4.2</td></tr>
+<tr><td>Google Business (49 listados) y su dependencia de tiempo</td><td>Technical · Execution · Deliverables</td><td>§3 · §4.3 · §1.5</td></tr>
+<tr><td>Migración del sitio sin afectar el correo (DNS, MX, 301)</td><td>Deliverables</td><td>§2</td></tr>
+<tr><td>Soporte 24/7, severidades y SLA</td><td>Deliverables</td><td>§3</td></tr>
+<tr><td>Cuotas mensuales (Opción A / Opción B)</td><td>Deliverables</td><td>§3.4</td></tr>
+<tr><td>Bolsa de horas para mejoras</td><td>Deliverables</td><td>§5</td></tr>
+<tr><td>Etapa de estabilización posterior al lanzamiento</td><td>Deliverables</td><td>§6</td></tr>
+<tr><td>BES (agente de voz y texto): ASR, LLM, TTS, canal</td><td>Technical Strategy</td><td>§5</td></tr>
+<tr><td>Número telefónico y WhatsApp para BES</td><td>Execution Plan</td><td>§4.5</td></tr>
+<tr><td>Stack y versiones (Next.js 16, React 19, Node 20.9…)</td><td>Technical · Site</td><td>§1 · (stack)</td></tr>
+<tr><td>Core Web Vitals y accesibilidad (WCAG 2.2 AA)</td><td>Site · Technical</td><td>(calidad) · §7</td></tr>
+<tr><td>CMS para editar textos/imágenes sin programar</td><td>Site Architecture</td><td>(CMS)</td></tr>
+<tr><td>Las 148 páginas / niveles del sitio</td><td>Site Architecture</td><td>(inventario)</td></tr>
+<tr><td>Cuestionario y sus preguntas (Q1–Q19)</td><td>Experience</td><td>§2.2</td></tr>
+<tr><td>Resolución del club (árbol por radio de 10 km)</td><td>Experience</td><td>§4.1</td></tr>
+<tr><td>Bloques de entrenamiento 01/02/03</td><td>Experience</td><td>§4.2–§4.6</td></tr>
+<tr><td>Contraindicaciones, YMYL, GLP-1, embarazo/posparto</td><td>Experience</td><td>§4.8–§4.10</td></tr>
+<tr><td>Captura de contacto y agenda de la visita</td><td>Experience</td><td>§4.11 · §1.2</td></tr>
+<tr><td>Escritura al CRM (idempotente, al confirmar la cita)</td><td>Experience</td><td>§5.2</td></tr>
+<tr><td>Seguridad de integración (webhooks/HMAC, HTTPS/HSTS)</td><td>Technical Strategy</td><td>§8</td></tr>
+<tr><td>CI/CD, entornos y compuertas de calidad</td><td>Technical Strategy</td><td>§7 · §8</td></tr>
+<tr><td>Método de desarrollo (Claude Code + Codex)</td><td>Technical Strategy</td><td>§6</td></tr>
+<tr><td>Estructura del equipo (4 equipos + líder)</td><td>Execution Plan</td><td>§2</td></tr>
+<tr><td>Calendario de 8 semanas (Semana 1 a 8)</td><td>Execution Plan</td><td>§3</td></tr>
+<tr><td>Lista completa de dependencias de Sports World</td><td>Execution Plan</td><td>§4</td></tr>
+</table>
+
+<h2>3 · Preguntas frecuentes de TI (respuestas autocontenidas)</h2>
+
+<h3>¿Qué servidor necesita Sports World?</h3>
+<p>Un servidor propio con <b>Linux</b>, aproximadamente <b>8 núcleos virtuales (vCPU)</b>, <b>16 GB de RAM</b>, <b>80 GB de SSD</b>, certificado <b>HTTPS</b> y ancho de banda para el pico. Está dimensionado para picos de hasta <b>cinco veces</b> el promedio por hora; se valida con una prueba de carga en la Semana 7. Es un servidor virtual de gama media; no requiere hardware dedicado. Detalle en <i>Execution Plan</i>, §5. <span class="kw">(servidor, hosting, requisitos, CPU, RAM, disco, especificación)</span></p>
+
+<h3>¿Qué necesita el proyecto de mi equipo de sistemas?</h3>
+<p>Una lista corta, la mayoría una sola vez: (1) <b>API del CRM</b> para crear o actualizar un lead; (2) <b>datos de clubes y clases</b> por API o exportación programada; (3) <b>propiedad de la cuenta de Google Business</b> y cooperación con la verificación de Google (inicia en la Semana 1); (4) <b>acceso al dominio y a analítica</b> cerca del lanzamiento; (5) un <b>número telefónico y el WhatsApp Business</b> para BES; (6) el <b>servidor</b>. Todo lo demás lo entrega el equipo del proyecto. Detalle en <i>Execution Plan</i>, §4. <span class="kw">(dependencias, qué se necesita, integraciones, accesos)</span></p>
+
+<h3>¿Cómo se conecta el sistema al CRM?</h3>
+<p>Hay <b>una sola escritura en tiempo real</b>: crear (o actualizar) un lead calificado vía la API del CRM. Ocurre al <b>confirmar la cita</b> e incluye los datos de contacto, el perfil, el club y la fecha/hora. Es <b>idempotente por sesión</b>: si la persona cambia la cita, se actualiza el mismo registro, no se duplica. Detalle en <i>Technical Strategy</i> §8 y <i>Experience</i> §5.2. <span class="kw">(CRM, API, lead, escritura, integración)</span></p>
+
+<h3>¿La migración del sitio afecta el correo corporativo?</h3>
+<p>No. La migración toca <b>únicamente</b> los registros DNS del sitio web y deja intactos los registros de correo (<b>MX</b>) y demás servicios. Se hace inventario previo de DNS, se baja el TTL 24 horas antes, se conservan <b>redirecciones 301</b> y se confirma que el correo sigue funcionando justo después. Detalle en <i>Deliverables</i>, §2. <span class="kw">(DNS, correo, MX, migración, dominio, 301)</span></p>
+
+<h3>¿Qué incluye el soporte 24/7 y cuáles son los SLA?</h3>
+<p>Soporte técnico del sitio y del sistema, 24/7/365, con <b>primer respondedor de voz</b>, <b>escalamiento por gravedad</b> y <b>tickets de ocurrencia</b>. Tiempos propuestos (a acordar): <b>Crítico</b> 15–30 min / resolución 4 h; <b>Alto</b> 1 h / 8 h hábiles; <b>Medio</b> 4 h hábiles / 2 días hábiles; <b>Bajo</b> 1 día hábil. Reporte mensual de tickets. Detalle en <i>Deliverables</i>, §3. <span class="kw">(soporte, SLA, severidad, tickets, 24/7)</span></p>
+
+<h3>¿Cuánto cuesta el servicio mensual?</h3>
+<p>Dos opciones: <b>Opción A — $35,000 MXN/mes</b> (Sports World edita su contenido en el CMS y Final Upgrade da el soporte técnico 24/7) u <b>Opción B — $55,000 MXN/mes</b> (Final Upgrade además ejecuta las actualizaciones de contenido). Ambas incluyen el soporte 24/7. Detalle en <i>Deliverables</i>, §3.4. <span class="kw">(precio, cuota, mensualidad, opción A, opción B, costo)</span></p>
+
+<h3>¿Qué es la bolsa de horas?</h3>
+<p>Tiempo técnico mensual para <b>mejoras</b> (nuevas funciones, optimizaciones, contenido), distinto del soporte (que atiende fallas). Rango propuesto <b>40 a 80 horas/mes</b>, mensual y no acumulable, con reporte de horas consumidas. Detalle en <i>Deliverables</i>, §5. <span class="kw">(horas, mejoras, mantenimiento evolutivo)</span></p>
+
+<h3>¿Qué es la etapa de estabilización?</h3>
+<p>Periodo de <b>2 a 4 semanas</b> tras el lanzamiento con atención reforzada; los ajustes derivados del lanzamiento se corrigen sin consumir la bolsa de horas, y se confirman las integraciones en vivo. Detalle en <i>Deliverables</i>, §6. <span class="kw">(estabilización, post-lanzamiento, hypercare)</span></p>
+
+<h3>¿Qué es BES y cómo funciona técnicamente?</h3>
+<p>Es el <b>agente de voz y texto</b> (llamadas y WhatsApp/chat). Se arma en 4 capas: <b>reconocimiento de voz (ASR)</b>, <b>razonamiento (LLM)</b> con la misma lógica de clubes/clases/leads que el sitio, <b>síntesis de voz (TTS)</b> en español de México, y <b>capa de canal/orquestación</b> (telefonía, WhatsApp, chat). Meta de latencia por debajo de ~900 ms y escalamiento limpio a un humano. Escribe los leads al mismo CRM que el sitio. Detalle en <i>Technical Strategy</i>, §5. <span class="kw">(BES, agente de voz, ASR, TTS, LLM, WhatsApp, latencia)</span></p>
+
+<h3>¿Dónde se aloja BES?</h3>
+<p>Es una <b>carga de trabajo separada</b> del sitio, con su propio perfil de recursos. Si comparte el mismo servidor, hay que <b>aumentar CPU y memoria</b>. La decisión de alojamiento está <b>por definir</b>. Nota en <i>Execution Plan</i>, §5. <span class="kw">(BES hosting, servidor BES, recursos)</span></p>
+
+<h3>¿Cuántas páginas tiene el sitio y cómo se organizan?</h3>
+<p><b>148 páginas</b> en <b>11 niveles</b>: home (1), clubes (49), hubs de amenidades (10), clases premium (7), clases individuales (47), hub FitKidz (1), hubs de perfil (5), hub bajar de peso (1), hub personal training (1), membresías (6), blog SEO (20). Inventario completo en <i>Site Architecture</i>. <span class="kw">(148 páginas, niveles, arquitectura del sitio, inventario)</span></p>
+
+<h3>¿Cómo se edita el contenido sin programar?</h3>
+<p>Con un <b>CMS sin código</b>, recomendado headless y auto-alojado en el servidor de Sports World (por ejemplo Payload o Strapi). Permite editar textos y reemplazar imágenes desde una interfaz visual. Detalle en <i>Site Architecture</i> (sección del CMS). <span class="kw">(CMS, editar, sin código, Payload, Strapi)</span></p>
+
+<h3>¿Con qué tecnología está construido el sitio?</h3>
+<p><b>Next.js 16</b> (App Router) con <b>SSR e ISR</b>, <b>React 19</b> con React Compiler, <b>TypeScript</b> estricto, <b>Tailwind CSS v4</b>, fuentes variables auto-alojadas, <b>Node.js 20.9+</b> y caché agresiva. El renderizado en servidor es el requisito técnico más importante (corrige que el sitio anterior no fuera legible por Google). Detalle en <i>Technical Strategy</i>, §1. <span class="kw">(stack, Next.js, React, Node, SSR, tecnología)</span></p>
+
+<h3>¿Cómo se asegura la calidad en cada cambio?</h3>
+<p>Compuertas automáticas (CI/CD): pruebas, rendimiento (Core Web Vitals), accesibilidad (axe-core), enlaces de previsualización y verificación de datos estructurados. Si una compuerta falla, el cambio no se publica. Detalle en <i>Technical Strategy</i>, §7. <span class="kw">(CI/CD, calidad, pruebas, accesibilidad, Core Web Vitals)</span></p>
+
+<h2>4 · Datos clave de referencia rápida</h2>
+<table>
+<tr><th>Dato</th><th>Valor</th><th>Fuente</th></tr>
+<tr><td>Clubes en la red</td><td>49</td><td>varios</td></tr>
+<tr><td>Páginas del sitio</td><td>148 (11 niveles)</td><td>Site</td></tr>
+<tr><td>Tráfico actual → meta</td><td>~80,000 → ~160,000 visitas/mes</td><td>Execution §5</td></tr>
+<tr><td>Pico de tráfico de diseño</td><td>hasta 5× el promedio por hora</td><td>Execution §5</td></tr>
+<tr><td>Servidor</td><td>Linux · ~8 vCPU · ~16 GB RAM · ~80 GB SSD · HTTPS</td><td>Execution §5</td></tr>
+<tr><td>Runtime</td><td>Node.js 20.9+</td><td>Technical §1</td></tr>
+<tr><td>Escrituras al CRM</td><td>1 (crear/actualizar lead, al confirmar cita, idempotente)</td><td>Experience §5.2</td></tr>
+<tr><td>Latencia objetivo de BES</td><td>&lt; ~900 ms</td><td>Technical §5</td></tr>
+<tr><td>Soporte</td><td>24/7/365, primer respondedor de voz + escalamiento</td><td>Deliverables §3</td></tr>
+<tr><td>Cuota mensual</td><td>A: $35,000 MXN · B: $55,000 MXN</td><td>Deliverables §3.4</td></tr>
+<tr><td>Bolsa de horas</td><td>40–80 h/mes (propuesta)</td><td>Deliverables §5</td></tr>
+<tr><td>Estabilización</td><td>2–4 semanas post-lanzamiento</td><td>Deliverables §6</td></tr>
+<tr><td>Duración del proyecto</td><td>8 semanas a lanzamiento</td><td>Execution §3</td></tr>
+<tr><td>Listados de Google Business</td><td>49 (1 por club), inician Semana 1</td><td>Deliverables §1.5</td></tr>
+</table>
+
+<h2>5 · Glosario</h2>
+<ul>
+<li><b>BES</b> — agente de inteligencia artificial de voz y texto (llamadas y WhatsApp/chat) que atiende prospectos y captura leads. (Technical §5)</li>
+<li><b>Prospecto</b> — la persona que recorre la experiencia. <b>Lead</b> — el registro capturado que se escribe en el CRM. (Experience)</li>
+<li><b>Resolver / motor de asignación de club</b> — lógica determinista que elige el club ideal por radio de distancia y "experiencia que cumple". (Experience §4.1)</li>
+<li><b>FitKidz</b> — submarca infantil; amenidad que puede condicionar la elección del club. (Experience §4.7)</li>
+<li><b>YMYL</b> — contenido sensible a la salud que exige validación profesional y sin promesas. (Experience §4.8)</li>
+<li><b>GLP-1</b> — tratamiento para bajar de peso (Ozempic, Wegovy, Mounjaro); prioriza fuerza, no filtra clases. (Experience §4.9)</li>
+<li><b>SSR / ISR</b> — renderizado en servidor / regeneración incremental; clave para SEO. (Technical §1)</li>
+<li><b>Core Web Vitals</b> — métricas de rendimiento (LCP, INP, CLS). (Site)</li>
+<li><b>CRM</b> — sistema de clientes de Sports World; recibe los leads vía API. (Technical §8)</li>
+<li><b>CMS</b> — panel para editar contenido sin programar (headless, auto-alojado). (Site)</li>
+</ul>
+
+<div class="note">Este documento resume y <b>localiza</b>; el detalle normativo vive en cada documento citado. Si una respuesta no está aquí, el agente debe escalar con el líder del proyecto.</div>
+
+</body>
+</html>
