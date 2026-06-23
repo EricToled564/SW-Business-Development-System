@@ -1,0 +1,24 @@
+494,495c494,495
+< Goal (Pt)- only if the search contained an explicit goal (tone, build strength, health and wellness, first steps, recovery, weight loss).
+< Location (P9) - only if the search contained a specific location.
+---
+> Goal (Q4) - only if the search contained an explicit goal (weight loss, body aesthetics, strength, conditioning and endurance, injury or pain recovery).
+> Location (Q15 and Q16) - only if the search contained a specific location.
+498,504c498,502
+< An amenity search does not fill in movement preference (P4), because amenity* preference.
+< Landing on FitKidz does not fill in composition (P2), because the user may be researching the program for their kids while planning to train solo.
+< Landing on Personal Training does not fill in format (PS), because the user may simply be browsing.
+< Landing on thehub does not force the 12-question variant- that variant
+< Ba jarde peso
+< only activates when the user actually marks P1 =in the questionnaire.
+< Bajar de peso
+---
+> An amenity search does not fill in movement preference (Q5 or Q6), because amenity preference does not determine training style.
+> Landing on FitKidz does not fill in companion (Q14), because the user may be researching the program for their kids while planning to train solo.
+> Landing on Personal Training does not fill in companion preference (Q13), because the user may simply be browsing.
+> Landing on the Bajar de peso hub does not force the weight-loss optionals; those optionals
+> only activate when the user actually marks Q4 = Bajar de peso in the questionnaire.
+508c506
+< location through that flow, the location populates P9 automatically. This is not search inference
+---
+> location through that flow, the location populates Q16 automatically. This is not search inference

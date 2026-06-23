@@ -1,0 +1,12 @@
+149c149
+< Questionnaire - the number of questions presented after pre-filling. If a question is omitted entirely (the special Individual Club case for PS and P9), it does not count. If a question is pre-filled but editable, it still counts as a visible question.
+---
+> Questionnaire - the number of questions presented after pre-filling. If a question is omitted entirely (the special Individual Club case for Q15 and Q16), it does not count. If a question is pre-filled but editable, it still counts as a visible question.
+1325c1325
+< The club identified by the system as the best fit for the user, either because the user picked it explicitly, because the external search identified it, or because questionnaire questions PS and P9 led to it.
+---
+> The club identified by the system as the best fit for the user, either because the user picked it explicitly, because the external search identified it, or because questionnaire questions Q15 and Q16 led to it.
+1348c1348
+< Pl, P2, P3, ...
+---
+> Q1, Q2, Q3, ...

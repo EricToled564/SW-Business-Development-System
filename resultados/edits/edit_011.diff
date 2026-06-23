@@ -1,0 +1,6 @@
+# edit 011 — create Rule 38 (text-only diff; insertion before Part 5 heading)
+757a761,764
+> Rule 38 - Individual-training pre-fill and result behavior when the user trains alone
+> The site offers two top-level individual-training experiences, entrenamiento-con-pesas-individual and entrenamiento-aerobico-individual, each with four subgroups derived from current ACSM consensus (see Part 3, Individual-training subgroup taxonomy). When the user lands on any page within these two trees, Q13 pre-marks "Solo, a mi ritmo" (rendered "Sola" if Q2 = Mujer), and Q4 pre-marks the goal that corresponds to the subgroup landed on, per the mapping in Rule 20.
+> When Q13 = "Solo, a mi ritmo" (or "Sola, a mi ritmo") in the final answer, the user's Experiencia Ideal result page does not recommend group classes. Instead it recommends: (1) the individual weight-training subgroup or subgroups that match Q4 per the table in Part 3; (2) the individual aerobic-training subgroup or subgroups that match Q4. If Q4 contains two selections, the recommended set is the union of both rows, deduplicated.
+> The class catalog is suppressed for this user state. The contextual menu (Rules 22-31) reflects this: where it would normally show "Clases recomendadas", it instead shows "Tu rutina individual".

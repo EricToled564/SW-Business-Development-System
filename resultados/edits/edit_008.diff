@@ -1,0 +1,6 @@
+614,615c614,615
+< body[628]	Rule 21-Dual-goal selection only when one of them is weight loss
+< body[629]	P1 (goal) is single-select except when the user wants to add Ba jarde peso as a second goal. In that case, two goals can be selected: the primary one plus Ba jarde peso. In every other combination, P1 remains single-select.
+---
+> body[628]	Rule 21 - Goal selection allows up to two goals
+> body[629]	Q4 (goal) is always multi-select with a maximum of two goals. The user may choose one or two of the five goal options, in any combination. There is no longer a weight-loss-specific exception: the former single-select-unless-weight-loss behavior of legacy P1 is retired. When two goals are selected, the result page and the individual-training recommendations use the union of both goals' mappings, deduplicated, per Rule 38 and Part 3, Individual-training subgroup taxonomy.

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sports World — Experiencia Ideal · Dev Docs</title>
+<meta name="description" content="Documentación estructurada de la Experiencia Ideal (UX spec + Design system) para equipos de desarrollo. Bilingüe ES/EN." />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#content">Saltar al contenido</a>
+
+<header class="topbar">
+  <button id="menuToggle" class="icon-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <div class="brand">
+    <span class="brand-mark">SPORTS WORLD</span>
+    <span class="brand-sub" data-i18n="subtitle">Experiencia Ideal · Dev Docs</span>
+  </div>
+  <div class="topbar-actions">
+    <div class="search-wrap">
+      <input id="search" type="search" autocomplete="off"
+             placeholder="Buscar…" aria-label="Buscar en la documentación" />
+      <div id="searchResults" class="search-results" role="listbox" hidden></div>
+    </div>
+    <div class="lang-switch" role="group" aria-label="Idioma / Language">
+      <button data-lang="es" class="lang-btn active">ES</button>
+      <button data-lang="en" class="lang-btn">EN</button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <nav id="sidebar" class="sidebar" aria-label="Temario">
+    <div class="sidebar-head">
+      <span data-i18n="toc">Temario</span>
+      <div class="doc-filter" role="group" aria-label="Documento">
+        <button data-doc="all" class="doc-btn active" data-i18n="all">Todo</button>
+        <button data-doc="experiencia" class="doc-btn">Experiencia</button>
+        <button data-doc="design" class="doc-btn">Design</button>
+        <button data-doc="anexos" class="doc-btn">Anexos</button>
+      </div>
+    </div>
+    <ul id="toc" class="toc"></ul>
+  </nav>
+  <div id="overlay" class="overlay" hidden></div>
+
+  <main id="content" class="content" tabindex="-1">
+    <article id="article" class="article markdown-body">
+      <p class="loading" data-i18n="loading">Cargando documentación…</p>
+    </article>
+    <nav class="pager" aria-label="Navegación entre secciones">
+      <button id="prevBtn" class="pager-btn" hidden>‹ <span data-i18n="prev">Anterior</span></button>
+      <button id="nextBtn" class="pager-btn" hidden><span data-i18n="next">Siguiente</span> ›</button>
+    </nav>
+    <footer class="content-foot">
+      <span data-i18n="source">Fuente</span>: <code>resultados/v1/</code> — paquete GENESIS v1 ·
+      Sports World © 2026
+    </footer>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

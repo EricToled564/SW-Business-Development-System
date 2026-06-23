@@ -1,0 +1,143 @@
+804,806c804,806
+< 10 standard questions (12 if weight loss)
+< 10 questions, P1 pre-filled and editable (12 if weight loss)
+< 10 questions, PS and P9 pre-filled and editable (12 if weight loss)
+---
+> 16 standard questions (19 if weight loss)
+> 16 questions, Q4 pre-filled and editable (19 if weight loss)
+> 16 questions, Q15 and Q16 pre-filled and editable (19 if weight loss)
+817c817
+< By landing on a specific club page, the club is already identified. PB and P9 are omitted from the questionnaire.
+---
+> By landing on a specific club page, the club is already identified. Q15 and Q16 are omitted from the questionnaire.
+821c821
+< 8 standard questions
+---
+> 14 standard questions
+833c833
+< 8 standard questions
+---
+> 14 standard questions
+835c835
+< 8 standard questions
+---
+> 14 standard questions
+857,859c857,859
+< 10 standard questions (12 if weight loss)
+< 10 questions, PS and P9 pre-filled and editable (12 if weight loss)
+< 10 standard questions (12 if weight loss)
+---
+> 16 standard questions (19 if weight loss)
+> 16 questions, Q15 and Q16 pre-filled and editable (19 if weight loss)
+> 16 standard questions (19 if weight loss)
+876c876
+< Landing on a class pre-fills P4 (movement type) with the class's discipline. The user can confirm or change.
+---
+> Landing on a class pre-marks Q4 (the movement-aligned goal) from the class's discipline. The user can confirm or change.
+881c881
+< 10 questions, P4 pre-filled and
+---
+> 16 questions, Q4 pre-filled and
+884c884
+< editable (12 if weight loss)
+---
+> editable (19 if weight loss)
+889c889
+< 10 questions, P4, PB and P9 pre-
+---
+> 16 questions, Q4, Q15 and Q16 pre-
+892c892
+< filled and editable (12 if weight loss)
+---
+> filled and editable (19 if weight loss)
+895c895
+< 10 questions, P4 pre-filled and
+---
+> 16 questions, Q4 pre-filled and
+898c898
+< editable (12 if weight loss)
+---
+> editable (19 if weight loss)
+918,920c918,920
+< 10 questions, P4 pre-filled and editable (12 if weight loss)
+< 10 questions, P4, PB and P9 pre-filled and editable (12 if weight loss)
+< 10 questions, P4 pre-filled and editable (12 if weight loss)
+---
+> 16 questions, Q4 pre-filled and editable (19 if weight loss)
+> 16 questions, Q4, Q15 and Q16 pre-filled and editable (19 if weight loss)
+> 16 questions, Q4 pre-filled and editable (19 if weight loss)
+932,933c932
+< pre-fills P2 (composition) with family or. The user can confirm or change.
+< kids
+---
+> Landing pre-fills Q14 (companion) with the family option. The user can confirm or change.
+943,944c942,943
+< tu expe riencia1it is10 questions with P2 pre-
+< filled and editable (12 if weight loss).
+---
+> tu experiencia, it is 16 questions with Q14 pre-
+> filled and editable (19 if weight loss).
+946c945
+< f amil ia) with schedules). If the user invokes Disena tu experiencia, it is10 questions with P2, PB and P9 pre-filled and editable (12 if weight loss).
+---
+> familia) with schedules). If the user invokes Disena tu experiencia, it is 16 questions with Q14, Q15 and Q16 pre-filled and editable (19 if weight loss).
+951c950
+< expe riencia ), it is10 questions with P2 pre-filled and editable (12 if weight loss).
+---
+> experiencia), it is 16 questions with Q14 pre-filled and editable (19 if weight loss).
+960c959
+< Applies to all 5 hubs (first steps, health and wellness, tone, build strength, rehabilitation). Landing pre-fills P1 with the hub's goal. If the goal is rehabilitation, the questionnaire includes a health-disclaimer modal before the result.
+---
+> Applies to all 5 hubs (Primeros Pasos, Salud y Bienestar, Estética corporal, Ganar Fuerza, Rehabilitación). Landing pre-marks Q4 with the hub's goal. The YMYL health-disclaimer modal is shown only on the weight-loss path (Q4 = Bajar de peso), not on the rehabilitation hub.
+967,969c966,968
+< 10 questions with P1 pre-filled and editable (12 if user switches to weight loss)
+< 10 questions with P1, P8 and P9 pre-filled and editable (12 if user switches to weight loss)
+< 10 questions with P1 pre-filled and editable (12 if user switches to weight loss)
+---
+> 16 questions with Q4 pre-filled and editable (19 if user switches to weight loss)
+> 16 questions with Q4, Q15 and Q16 pre-filled and editable (19 if user switches to weight loss)
+> 16 questions with Q4 pre-filled and editable (19 if user switches to weight loss)
+985c984
+< Landing pre-fills Pl =
+---
+> Landing pre-marks Q4 =
+987c986
+< , which automatically activates the 12-question variant. A
+---
+> , which automatically activates the weight-loss optionals (Q17 to Q19). A
+999,1001c998,1000
+< 12 questions with Pl pre-filled and editable
+< 12 questions with Pl, PS and P9 pre-filled and editable
+< 12 questions with Pl pre-filled and editable
+---
+> 19 questions with Q4 pre-filled and editable
+> 19 questions with Q4, Q15 and Q16 pre-filled and editable
+> 19 questions with Q4 pre-filled and editable
+1015c1014
+< Landing pre-fills PS= Con personal trainer. Theuser can confirm or change.
+---
+> Landing pre-marks Q13 = Acompañado/Acompañada. The user can confirm or change.
+1022,1024c1021,1023
+< 10 questions with PS pre-filled and editable (12 if weight loss)
+< 10 questions with PS, P8 and P9 pre-filled and editable (12 if weight loss)
+< 10 questions with PS pre-filled and editable (12 if weight loss)
+---
+> 16 questions with Q13 pre-filled and editable (19 if weight loss)
+> 16 questions with Q13, Q15 and Q16 pre-filled and editable (19 if weight loss)
+> 16 questions with Q13 pre-filled and editable (19 if weight loss)
+1046,1048c1045,1047
+< 10 standard questions (12 if weight loss)
+< 10 questions with P8 and P9 pre-filled and editable (12 if weight loss)
+< 10 standard questions (12 if weight loss)
+---
+> 16 standard questions (19 if weight loss)
+> 16 questions with Q15 and Q16 pre-filled and editable (19 if weight loss)
+> 16 standard questions (19 if weight loss)
+1064,1066c1063,1065
+< 10 standard questions (12 if weight loss)
+< 10 questions with P8 and P9 pre-filled and editable (12 if weight loss)
+< 10 standard questions (12 if weight loss)
+---
+> 16 standard questions (19 if weight loss)
+> 16 questions with Q15 and Q16 pre-filled and editable (19 if weight loss)
+> 16 standard questions (19 if weight loss)

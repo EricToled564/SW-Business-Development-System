@@ -1,0 +1,28 @@
+584,590c584,602
+< Rule 19 - The 12-question variant for weight loss
+< When the user answers Pl= Ba jardepeso, thequestionnaire switches to its 12-question variant. The variant:
+< Replaces PlO with P10-WL, with options specific to a weight-loss profile (includes GLP-1, bariatric surgery, ongoing medical care, pregnancy, hypertension, diabetes).
+< Adds P11-WL • Current physical data - a screen with three numeric inputs in a single question: weight (kg), height (cm), age.
+< Adds P12-WL • Change goal - single-select with options expressed as kilo ranges, no clinical absolutes.
+< Shows a health disclaimer modal before presenting the result, with the signature of the medical reviewer backing the content.
+< The full variant is 12 questions: Pl, P2, P3, P4, PS, P6, P7, PB, P9, PlO-WL, Pll-WL, P12-WL.
+---
+> Rule 19 - The weight-loss optionals (Q17 to Q19)
+> When the user marks Q4 = Bajar de peso, three optional questions (Q17 to Q19) are appended after Q16. They are shown for no other goal; in particular, Q4 = Mejorar mi estética corporal does not trigger them.
+> Code
+> Question (ES MX)
+> Type
+> Options / Field
+> Q17
+> Cuéntanos sobre tu salud actual
+> Multi-select, optional
+> Tomo medicamentos GLP-1 (Ozempic, Wegovy, Mounjaro) · He tenido cirugía bariátrica · Estoy bajo tratamiento médico actualmente · Estoy embarazada o en posparto (visible solo si Q2 = Mujer) · Tengo hipertensión · Tengo diabetes · Ninguna de las anteriores (exclusiva)
+> Q18
+> Tus datos físicos actuales
+> Numeric, 3 fields, required
+> Peso kg (30–300) · Altura cm (120–230) · Edad años (15–90). Ayuda: "Esta información permite construir un plan seguro. Se almacena bajo consentimiento LFPDPPP."
+> Q19
+> ¿Cuál es tu objetivo de cambio?
+> Single-select, required
+> 1 a 3 kilos · 3 a 6 kilos · 6 a 10 kilos · 10 a 15 kilos · Más de 15 kilos · Sin un número específico. Ayuda: "Sin promesas clínicas — los rangos son referencia, no compromiso."
+> Before the result is rendered, a YMYL health-disclaimer modal is shown, carrying the medical reviewer's signature (see Rule 14). This applies only to the weight-loss path. Including these optionals, the visible question count is 19 (Path C), or 20 when the pause follow-up Q11 is also active (Path D), per Rule 32.

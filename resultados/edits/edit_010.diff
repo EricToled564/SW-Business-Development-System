@@ -1,0 +1,10 @@
+663,664c663,664
+< No location inferredThe system prompts the user with questionnaire questions PS and P9 (geography intent: home, work, school, other; then city/ neighborhood/ ZIP).
+< Location inferred from The system presents PS and P9 pre-filled with the inferred location. The user external searchcan confirm or change.
+---
+> No location inferredThe system prompts the user with questionnaire questions Q15 and Q16 (geography intent: home, work, school, other; then city/ neighborhood/ ZIP).
+> Location inferred from The system presents Q15 and Q16 pre-filled with the inferred location. The user external searchcan confirm or change.
+701c701
+< The system prompts P8 and P9 from the questionnaire to identify the club.
+---
+> The system prompts Q15 and Q16 from the questionnaire to identify the club.
