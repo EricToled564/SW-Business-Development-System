@@ -1340,7 +1340,8 @@ function ScheduleScreen({ data, onConfirm, onBack }) {
 
   const preferredDayIndices = new Set((answers.Q8 || []).map(c => Q8_TO_DAY_INDEX[c]).filter(x => x !== undefined));
   const franjas = answers.Q7 || ["Tarde (17:00–20:00)"];
-  const hourSlots = franjas.flatMap(f => HOUR_SLOTS[f] || []);
+  // Mostrar TODOS los horarios del día, sin filtrar por la preferencia del usuario.
+  const hourSlots = Object.values(HOUR_SLOTS).flat();
   const canConfirm = selectedDay !== null && selectedHour !== null;
 
   const handleConfirm = () => {
@@ -1378,7 +1379,7 @@ function ScheduleScreen({ data, onConfirm, onBack }) {
 
         <section style={{ marginTop: "2rem" }}>
           <p style={{ fontSize: "0.6875rem", letterSpacing: "0.18em", textTransform: "uppercase", color: BRAND.gray4, fontWeight: 700, marginBottom: "0.75rem" }}>Hora</p>
-          <p style={{ fontSize: "0.75rem", color: BRAND.gray4, marginBottom: "0.625rem" }}>Franjas según tu preferencia: {franjas.join(" · ")}</p>
+          <p style={{ fontSize: "0.75rem", color: BRAND.gray4, marginBottom: "0.625rem" }}>Elige el horario que más te convenga. Marcaste como preferida: {franjas.join(" · ")}.</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(80px, 1fr))", gap: "0.5rem" }}>
             {hourSlots.map(h => (
               <button key={h} onClick={() => setSelectedHour(h)} style={{ padding: "0.625rem 0.5rem", borderRadius: "4px", border: selectedHour === h ? "2px solid " + BRAND.red : "1px solid " + BRAND.gray2, background: selectedHour === h ? BRAND.red : BRAND.white, color: selectedHour === h ? BRAND.white : BRAND.black, cursor: "pointer", fontFamily: "inherit", fontWeight: 700, fontSize: "0.875rem" }}>{h}</button>

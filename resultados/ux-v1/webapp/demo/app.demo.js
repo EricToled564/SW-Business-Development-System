@@ -3868,7 +3868,8 @@ function ScheduleScreen({
   }
   const preferredDayIndices = new Set((answers.Q8 || []).map(c => Q8_TO_DAY_INDEX[c]).filter(x => x !== undefined));
   const franjas = answers.Q7 || ["Tarde (17:00–20:00)"];
-  const hourSlots = franjas.flatMap(f => HOUR_SLOTS[f] || []);
+  // Mostrar TODOS los horarios del día, sin filtrar por la preferencia del usuario.
+  const hourSlots = Object.values(HOUR_SLOTS).flat();
   const canConfirm = selectedDay !== null && selectedHour !== null;
   const handleConfirm = () => {
     if (!canConfirm) return;
@@ -4002,7 +4003,7 @@ function ScheduleScreen({
       color: BRAND.gray4,
       marginBottom: "0.625rem"
     }
-  }, "Franjas según tu preferencia: ", franjas.join(" · ")), /*#__PURE__*/React.createElement("div", {
+  }, "Elige el horario que más te convenga. Marcaste como preferida: ", franjas.join(" · "), "."), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "grid",
       gridTemplateColumns: "repeat(auto-fill, minmax(80px, 1fr))",
