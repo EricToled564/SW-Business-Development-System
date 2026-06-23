@@ -1771,7 +1771,7 @@ function getQuestions(answers) {
   }, {
     id: "Q13",
     type: "single",
-    label: "¿Prefieres entrenar solo o acompañado?",
+    label: isWoman ? "¿Prefieres entrenar sola o acompañada?" : "¿Prefieres entrenar solo o acompañado?",
     options: [solo_self, acomp_self, "Me da igual"]
   }, {
     id: "Q14",

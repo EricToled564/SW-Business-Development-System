@@ -435,7 +435,7 @@ function getQuestions(answers) {
     { id: "Q11", type: "single", label: "¿Qué tan larga fue la pausa?", options: ["Menos de 3 meses", "Entre 3 y 12 meses", "Más de un año"], condition: (a) => a.Q10 === "Regreso después de una pausa" },
     { id: "Q12", type: "multi", label: "¿Tienes alguna condición médica?", helper: "Solo condiciones médicas. Embarazo no es una condición.", options: ["Ninguna", "Lesión o dolor articular/muscular", "Condición cardiovascular o de presión", "Otra, la comento en el club"] },
     { id: "Q12b", type: "single", label: answers.Q2 === "Prefiero no mencionarlo" ? "¿Aplica para ti embarazo o posparto reciente?" : "¿Estás embarazada o en posparto reciente?", options: ["Sí, embarazada", "Sí, posparto reciente (últimos 6 meses)", "No"], condition: (a) => a.Q2 !== "Hombre" },
-    { id: "Q13", type: "single", label: "¿Prefieres entrenar solo o acompañado?", options: [solo_self, acomp_self, "Me da igual"] },
+    { id: "Q13", type: "single", label: isWoman ? "¿Prefieres entrenar sola o acompañada?" : "¿Prefieres entrenar solo o acompañado?", options: [solo_self, acomp_self, "Me da igual"] },
     { id: "Q14", type: "single", label: "¿Con quién nos visitas en el club?", options: [solo_visit, "Con mi amigo/a", "Con mi pareja", "Yo y mis hijos", "La familia completa"] },
     { id: "Q14b", type: "single", label: "¿Uno o más de tus hijos tiene menos de 12 años?", options: ["Sí", "No"], condition: (a) => a.Q14 === "Yo y mis hijos" || a.Q14 === "La familia completa" },
     { id: "Q15", type: "single", label: "¿Buscas el gimnasio cerca de tu casa o de tu trabajo?", options: ["Cerca de mi casa", "Cerca de mi trabajo", "Ambos", "No me importa"] },
