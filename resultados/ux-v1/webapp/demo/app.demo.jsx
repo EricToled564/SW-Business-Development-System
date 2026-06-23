@@ -1,4 +1,4 @@
-import { useState } from "react";
+const { useState } = React;
 
 const BRAND = { black: "#1D1D1B", red: "#E6282A", white: "#FFFFFF", gray1: "#F5F5F4", gray2: "#E5E5E3", gray3: "#A8A8A6", gray4: "#6B6B68" };
 
@@ -1708,7 +1708,7 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
   );
 }
 
-export default function App() {
+function App() {
   const [phase, setPhase] = useState("welcome");
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState({});
@@ -1795,3 +1795,6 @@ export default function App() {
     </div>
   );
 }
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
