@@ -1,9 +1,7 @@
 # Sports World México · Experience Architecture · V1.0
 ## Navigation, Questionnaire, Dynamic Menus & Business Rules
 
-Foundational document. It defines, on its own and in normative terms, why the *experiencia ideal* exists, how it is navigated, the role of the questionnaire as the single source of personalization, how the dynamic menus work, and every business rule that governs the user experience from end to end. It is one pillar of the UX specs set: the site it lives inside is described in `02-site-architecture.md`, and the technology, build, and operation around it in `03`–`05`.
-
-> Note on provenance: this document tracks the authoritative source faithfully. A small set of fixes applied beyond the source (for residual safety/consistency issues) is listed exhaustively in `CHANGELOG-mis-cambios.md`.
+Foundational document. It defines, on its own and in normative terms, why the *experiencia ideal* exists, how it is navigated, the role of the questionnaire as the single source of personalization, how the dynamic menus work, and every business rule that governs the user experience from end to end. It is written to be read on its own: a reader — whether on the Sports World side or an external supplier — needs no other document to understand and build the experience described here. It is the authoritative specification of that experience.
 
 ---
 
