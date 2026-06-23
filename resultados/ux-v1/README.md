@@ -1,25 +1,32 @@
-# Experiencia Ideal — UX V1 (sala limpia · única fuente de la verdad)
+# Sports World México · UX Specs (UX V1)
 
-Esta carpeta contiene la **V1 del UX de Sports World «Experiencia Ideal»**, construida desde cero. A partir de su cierre, es la **única fuente de la verdad** de la lógica de negocio, la navegación y la experiencia del consumidor en el sitio web.
+This folder is the single source of truth for the Sports World México digital experience — V1.0. The set is written in English and is organized so each document can be read on its own, while together they form one coherent specification: the experience logic, the site architecture, the technology and build method, the execution plan, and what Sports World receives and operates afterward.
 
-## Principios de la sala limpia
+## How the set fits together
 
-1. **Cero herencia.** Ningún contenido se copia de documentos previos. La verdad de negocio entra solo por el intake validado (`00-intake-reglas-de-negocio.md`).
-2. **Sin referencias externas.** No se citan otras versiones, prototipos, demos, auditorías ni research. Si un dato no está confirmado, se marca `[POR DEFINIR]`.
-3. **Reglas antes que pantallas.** Primero se blinda la lógica (base de reglas), luego se redacta el spec a partir de ella. Toda afirmación del spec es trazable a una regla con ID.
-4. **Idioma:** español de México (es-MX). La arquitectura queda lista para una edición bilingüe posterior.
+The experience has two layers that share the same club/class data and the same lead capture, so they tell one story:
 
-## Documentos planeados
+- **The content & SEO site** — the 148 pages that make Sports World discoverable and give every club, class, and amenity its own place on Google (`02-site-architecture.md`).
+- **The ideal-experience flow** — the personalized journey that turns an anonymous visitor into a scheduled, qualified lead (`01-experience-architecture.md`).
 
-| Documento | Estado |
+Everything else — how it is built, by whom, in what order, and what happens after launch — is the delivery and operations layer (`03`, `04`, `05`).
+
+## Documents
+
+| Document | What it covers |
 | --- | --- |
-| `00-intake-reglas-de-negocio.md` | Completo — índice de cobertura de los 10 dominios |
-| `01-reglas-de-negocio.md` | **Poblada** — base de reglas trazable (F1 Propuesta SEO + F2 spec v4.2); pendiente resolver REC-01…06 y validación |
-| `ux-spec-experiencia-ideal.md` | Pendiente — spec maestro |
-| `anexo-clinico.md` · `anexo-contenido.md` · `anexo-ingenieria-crm.md` | Pendientes — anexos |
-| `DESIGN.md` | Pendiente — tokens y lineamientos |
-| `diagrama-de-flujo.md` | Pendiente — flujos Mermaid |
+| `01-experience-architecture.md` | Navigation principles, the questionnaire as the single source of personalization, dynamic menus, the full business-rule set, and the data the experience relies on. |
+| `02-site-architecture.md` | The 148-page information architecture (11 levels, full inventory with slugs), the mobile + desktop delivery, quality targets, and the no-code CMS. |
+| `03-technical-strategy.md` | Technology stack, AI-assisted development with human supervision, the automated safety gates, the BES voice & text agent, and the integrations. |
+| `04-execution-plan.md` | Team structure, the eight-week schedule, the dependencies on Sports World (kept to a minimum), and the server specification. |
+| `05-deliverables-support-operations.md` | What Sports World receives, the email-safe site migration, the 24/7 support model and SLA, the improvement-hours pool, and the post-launch stabilization. |
 
-## Fase actual
+## Single underlying assumption
 
-**Fase 1 — Captura exhaustiva de lógica y reglas de negocio.** Se responde el intake; lo confirmado se promueve a `01-reglas-de-negocio.md`; lo no confirmado permanece `[POR DEFINIR]` hasta la compuerta de validación (Fase 2).
+One assumption underpins the integration: **Sports World exposes an API for its customer system (CRM).** Everything else the project needs, the delivery team provides.
+
+## Conventions
+
+- Language: English (the set is intended for Sports World leadership, the Sports World systems/IT team, and any external supplier).
+- Spanish, México (es-MX) applies to user-facing product copy, which is quoted verbatim where it appears.
+- Where a value is not yet confirmed, it is marked `[TO BE DEFINED]` rather than guessed.
