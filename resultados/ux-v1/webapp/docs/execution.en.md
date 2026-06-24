@@ -158,7 +158,7 @@ These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#c
 
 - **Weekly executive report** on progress, KPIs, and risks (Annex Two, Sections I.2 and IV).
 - **Checkpoints**, brief and periodic, among the four leaders and with Sports World at each milestone.
-- **Change control.** Any deliverable not expressly included is subject to an amending agreement. A change requested by the client on an **already-approved** section or item, or arising from the client delivering a section below the contract standards, is quoted separately (Clause Three Bis). Changes that do **not** modify something already approved and do not breach standards are a **neutral zone** and are not charged to either party.
+- **Change control.** Any deliverable not expressly included is subject to an amending agreement. A change requested by the client on an **already-approved** section or item is quoted separately (Clause Three Bis) and its delay is attributable to the client. If rework arises from **the provider** having delivered a section below the contract standards, **the provider absorbs it** (at no cost or stand-by). All other client-requested changes are a **neutral zone**: they only extend timelines, with no charge.
 - **Stand-by for client delays.** If a delay attributable to Sports World stops the team, the stand-by days are charged at USD $350/day (Clause Nine), and the term extends day by day.
 - **Channels.** Coordination and incidents through the agreed channels (e.g. Slack and email), with a single owner on the client side.
 

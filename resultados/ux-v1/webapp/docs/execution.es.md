@@ -158,7 +158,7 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 
 - **Reporte ejecutivo semanal** del avance, los KPIs y los riesgos (Anexo Dos, Secciones I.2 y IV).
 - **Puntos de control** breves y periódicos entre los cuatro líderes y con Sports World en cada hito.
-- **Control de cambios.** Todo entregable no comprendido expresamente es materia de convenio modificatorio. Un cambio solicitado por el cliente sobre una sección o ítem **ya aprobado**, o derivado de que el cliente entregue una sección por debajo de los estándares del contrato, se cotiza aparte (Cláusula Tercera Bis). Los cambios que **no** modifican algo ya aprobado y no incumplen estándares son **zona neutral** y no se imputan a ninguna parte.
+- **Control de cambios.** Todo entregable no comprendido expresamente es materia de convenio modificatorio. Un cambio solicitado por el cliente sobre una sección o ítem **ya aprobado** se cotiza aparte (Cláusula Tercera Bis) y su retraso es imputable al cliente. Si un retrabajo deriva de que **el proveedor** entregó una sección por debajo de los estándares del contrato, lo **absorbe el proveedor** (sin costo ni stand-by). Los demás cambios solicitados por el cliente son **zona neutral**: solo extienden plazos, sin cargo.
 - **Stand-by por atrasos del cliente.** Si un atraso imputable a Sports World detiene al equipo, se cobran los días de stand-by a USD $350/día (Cláusula Novena), y el plazo se extiende día por día.
 - **Canales.** Coordinación e incidentes por los canales acordados (p. ej. Slack y correo), con responsable único del lado del cliente.
 

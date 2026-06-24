@@ -15,37 +15,37 @@ Esta sección concentra, en un solo tablero de seguimiento, **todo lo que Sports
 
 [[APORTACIONES:sistemas]]
 
-### Detalle: qué se necesita y por qué (reducido al mínimo)
+### Detalle de las aportaciones de sistemas
 
-El plan está diseñado para que la participación técnica interna de Sports World sea pequeña y concentrada. El equipo de entrega construye por su cuenta todo lo que puede. A continuación, la explicación legible de cada aportación de sistemas —no hay nada requerido más allá de esto y de lo catalogado en el Anexo Uno.
+La participación técnica de Sports World se ha acotado al mínimo indispensable. El proveedor (Final Upgrade) desarrolla por su cuenta todo lo que está a su alcance; los insumos que se enumeran a continuación constituyen, en su totalidad, lo requerido del lado de Sports World, en congruencia con el Anexo Uno del Contrato.
 
-#### La única dependencia central: la API del CRM
-El único supuesto sobre el que descansa el plan es que Sports World proporciona una API para su sistema de clientes (CRM). El equipo necesita la forma de conectarse (endpoint y credenciales, entregadas de manera segura —nunca por correo electrónico en texto plano) y la instrucción para una operación: **crear (o actualizar) un lead calificado**, con los campos que lleva (nombre, teléfono, email, el perfil, el club elegido, la visita agendada). La operación es idempotente por sesión: si el prospecto modifica la cita y la vuelve a confirmar, se actualiza el mismo registro en lugar de duplicarlo (ver **[Arquitectura de Experiencia · §5.2](#experience:52-tiempo-real-vs-peridico)**). Esta es la única escritura en tiempo real que hace la experiencia; con ella disponible, todo el flujo de captación de leads se construye sin más participación interna.
+#### API del sistema de clientes (CRM) — dependencia central
+Sports World proveerá una interfaz de programación (API) de su sistema de clientes (CRM) que permita **crear o actualizar un prospecto calificado**, con sus campos: nombre, teléfono, correo electrónico, perfil, club seleccionado y visita agendada. Deberá entregar el punto de conexión (endpoint) y las credenciales correspondientes por un canal seguro (gestor de contraseñas), nunca por correo electrónico en texto plano. La operación será **idempotente por sesión**: si el prospecto modifica y reconfirma su cita, el registro existente se actualiza sin generar duplicados. Ésta constituye la única escritura en tiempo real de la solución; disponible ella, el flujo de captación de prospectos se implementa sin participación adicional de Sports World.
 
 #### Acceso de lectura a los datos de clubes y clases
-Para recomendar el club y las clases correctas, la experiencia necesita información actual de clubes y clases. El equipo necesita una de las siguientes opciones, en orden de preferencia: (1) una API de lectura o feed de datos para detalles de clubes, amenidades y catálogo/horarios de clases —ideal, porque mantiene el sitio automáticamente al día; o (2) si no existe una API, una exportación estructurada (una hoja de cálculo bien formada o un archivo de datos) de la misma información, actualizada en un calendario acordado. En cualquier caso, el equipo se encarga de la integración; el rol de Sports World es exponer o proporcionar los datos, no construir nada.
+Para la recomendación de club y de clases, Sports World habilitará el acceso a su información vigente de clubes y clases mediante una de las siguientes modalidades, en orden de preferencia: (i) una API de lectura o feed de datos —clubes, amenidades y catálogo/horarios de clases—, modalidad preferente por mantener la información actualizada de forma automática; o (ii) en ausencia de API, una exportación estructurada (archivo de datos u hoja de cálculo correctamente formada) de la misma información, actualizada conforme a un calendario acordado. En ambos casos la integración corresponde al proveedor; la responsabilidad de Sports World se limita a exponer o proporcionar los datos.
 
 #### Titularidad en Google para las 49 fichas
-Esta es la dependencia con la restricción más honesta, señalada con anticipación porque tiene un tiempo de espera real. Google no permite que se creen automáticamente fichas completamente nuevas a través de sus herramientas. Crear y verificar 49 fichas requiere que Sports World sea titular (o conceda la administración) de la cuenta de Google Business de la marca, la verificación propia de Google de cada ubicación (que Google controla y que toma tiempo) y la aprobación de acceso programático (que Google otorga en su propio calendario, típicamente semanas). El equipo gestiona todo el proceso; la titularidad de la cuenta y la verificación de Google están fuera del control de cualquiera salvo de Google y de Sports World. **Esta es la dependencia más sensible al tiempo de todo el proyecto y debe iniciarse en la Semana 1.**
+Sports World será titular —o concederá la administración— de la cuenta de Google Business de la marca. La creación y verificación de 49 fichas está sujeta a procesos que Google controla y que requieren tiempo: la verificación de cada ubicación y la aprobación del acceso programático, que Google otorga conforme a sus propios plazos (habitualmente semanas). El proveedor gestiona el proceso en su totalidad; la titularidad de la cuenta y la verificación dependen exclusivamente de Google y de Sports World. **Por su tiempo de espera, ésta es la dependencia más sensible del cronograma y deberá iniciarse en la Semana 1.**
 
-#### Acceso al dominio y a la publicación
-Para poner el nuevo sitio en vivo, el equipo necesita, cerca del lanzamiento: acceso para apuntar la dirección del sitio web (DNS) al nuevo sitio, y acceso a las cuentas de búsqueda y analítica (Google Search Console, Google Analytics) para poder medir el rendimiento del nuevo sitio y enviar sus páginas a Google. Estos se necesitan una sola vez, cerca del lanzamiento, y el equipo guía a Sports World paso a paso a través de ellos.
+#### Accesos de dominio y publicación (próximos al lanzamiento)
+En la cercanía del lanzamiento, Sports World otorgará: el acceso para redireccionar el dominio (DNS) al nuevo sitio y el acceso a las cuentas de analítica y búsqueda (Google Analytics y Google Search Console) para la medición del desempeño y el envío de páginas a indexación. Estos accesos se requieren por una sola vez, próximos al lanzamiento, con el acompañamiento del proveedor.
 
-#### WhatsApp Business y escalación para BES
-La operación de BES se limita al **canal web** del sitio; BES no opera por teléfono ni como chat conversacional de WhatsApp. De Sports World se necesita: el número oficial de **WhatsApp Business** de la marca para el envío automatizado de los **2 recordatorios** (24 h y 2 h antes de la visita) y, para la **escalación a un operador humano**, la estrategia que defina Sports World —transferencia por SIP a un número/cola, operador de WhatsApp, o devolución de llamada agendada en el CRM (Anexo Uno D.9)—, con los responsables del lado humano. El equipo construye y configura el agente; el rol de Sports World es proporcionar el número y autorizar su uso.
+#### WhatsApp Business y estrategia de escalación de BES
+La operación de BES se limita al **canal web** del sitio; no opera por telefonía ni como chat conversacional de WhatsApp. Sports World proporcionará el número oficial de **WhatsApp Business** de la marca para el envío automatizado de los **dos recordatorios de visita** (24 y 2 horas antes) y definirá la **estrategia de escalación a operador humano** —transferencia por SIP a un número o cola, operador de WhatsApp, o devolución de llamada agendada en el CRM (Anexo Uno, Bloque D)—, designando a los responsables correspondientes. La construcción y configuración del agente corresponden al proveedor.
 
-#### El servidor
-El sitio corre en el servidor propio de Sports World; la especificación dimensionada (procesador, memoria, almacenamiento y runtime) está en **[Plan de Ejecución · §4](#execution:4-el-servidor-donde-corre-el-sitio)**. De Sports World se necesita el servidor conforme a esa especificación, con acceso seguro para que el equipo lo configure.
+#### Servidor del sitio
+Sports World proveerá un servidor bajo su control, conforme a la especificación técnica del proyecto (aproximadamente 8 vCPU, 16 GB de RAM, 80 GB de SSD y Node.js 20.9 o superior), con acceso seguro para su configuración por el proveedor. La especificación detallada y su justificación constan en el **[Plan de Ejecución · §4](#execution:4-el-servidor-donde-corre-el-sitio)**. BES no reside en este servidor: opera en las plataformas gestionadas de sus proveedores.
 
-#### Resumen de lo que se le pide a Sports World
-1. La API del CRM para crear un lead (dependencia central, usada tanto por el sitio web como por BES).
-2. Datos de clubes y clases, por API o exportación programada (usados por ambos).
-3. Titularidad de la cuenta de Google Business y cooperación con la verificación de Google (iniciar en la Semana 1).
-4. Acceso al dominio y a la analítica cerca del lanzamiento.
-5. El número oficial de WhatsApp Business para los recordatorios de BES y la estrategia de escalación a humano, con autorización para usarlos.
-6. Un servidor que cumpla la especificación de Plan de Ejecución §4, con acceso seguro para que el equipo lo configure.
+#### Resumen de insumos a cargo de Sports World
+1. API del CRM para crear o actualizar prospectos (dependencia central).
+2. Acceso a los datos de clubes y clases (API o exportación programada).
+3. Titularidad de la cuenta de Google Business y cooperación con la verificación (inicio en la Semana 1).
+4. Accesos de dominio y de analítica, próximos al lanzamiento.
+5. Número oficial de WhatsApp Business y estrategia de escalación de BES.
+6. Servidor conforme a la especificación técnica, con acceso seguro para su configuración.
 
-Todo lo demás lo entrega el equipo del proyecto.
+Cualquier insumo no enumerado en este apartado ni en el Anexo Uno se entiende a cargo del proveedor.
 
 ## 2 · Aportaciones de marketing
 
