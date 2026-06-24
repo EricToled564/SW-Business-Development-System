@@ -109,7 +109,7 @@ Un solo servidor de este tamaño maneja 160,000 visitas al mes con picos de cinc
 
 Estos números son una estimación de ingeniería sólida. La forma de convertir la estimación en una garantía es una breve prueba de carga antes del lanzamiento —simulando 160,000 visitas al mes con el pico de cinco veces y midiendo la CPU y la memoria realmente utilizadas. El equipo la ejecuta como parte de la calidad previa al lanzamiento (Semana 7) y ajusta la especificación al alza o a la baja según el resultado medido.
 
-> **Nota sobre BES:** la especificación anterior cubre **únicamente el sitio web**. BES es una carga de trabajo separada con su propio runtime y perfil de recursos. Si BES corre en este mismo servidor o en uno separado es una decisión pendiente; si comparte este servidor, el procesador y la memoria anteriores deben incrementarse para tomarlo en cuenta. Esto se confirma cuando se defina el enfoque de hosting de BES.
+> **Nota sobre BES:** la especificación anterior cubre **únicamente el sitio web**. **BES no reside en este servidor**: corre en la **plataforma de su proveedor de voz (ElevenLabs)** y en los demás servicios gestionados que lo componen (reconocimiento de voz, modelo de razonamiento y orquestación). Por lo tanto, el servidor del sitio **no** debe incrementarse para alojar a BES. Los **costos de operación de BES** (plataforma de voz, interfaz del modelo de razonamiento y hospedaje de la lógica) los cubre directamente **EL CLIENTE** a esos proveedores (Contrato, Cláusula Sexta Bis).
 
 ## 5 · Hitos y aprobaciones a cargo de Sports World
 

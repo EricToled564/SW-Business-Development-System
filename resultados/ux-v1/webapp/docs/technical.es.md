@@ -73,6 +73,8 @@ Por debajo, el agente se ensambla a partir de cuatro capas, todas operando dentr
 
 **Dos métricas de latencia, que no deben confundirse.** (1) El **objetivo conversacional de BES** —el tiempo total para que la conversación se sienta humana— es **por debajo de ~900 ms** (estándar reconocido de la industria). (2) Ese objetivo solo es alcanzable si las **APIs de Sports World** cumplen su propio SLA: p95 **< 500 ms** en lecturas y **< 800 ms** en escrituras (Anexo Uno D.7). La primera es responsabilidad del agente; la segunda, de las APIs del cliente. Los componentes exactos se eligen al inicio frente a tres requisitos: voz natural en español-México, esa latencia conversacional, y el traspaso limpio a un asesor humano.
 
+**Dónde corre BES.** BES **no reside en el servidor del sitio**: se ejecuta en las **plataformas gestionadas de sus proveedores** —la voz en **ElevenLabs**, además del reconocimiento de voz, el modelo de razonamiento y la capa de orquestación—. Por eso el dimensionamiento del servidor del sitio (Plan de Ejecución §4) no incluye a BES, y los **costos de operación de BES los cubre directamente Sports World** a esos proveedores (Contrato, Cláusula Sexta Bis).
+
 ## 6 · La migración del sitio actual al nuevo (sin interrumpir el correo ni perder posicionamiento)
 
 La migración es un entregable técnico de primer orden (Anexo Dos I.2 e I.3) y la fase de mayor riesgo del proyecto, porque el DNS no solo apunta al sitio: también enruta el **correo corporativo (registros MX)** y, potencialmente, otros servicios. El método protege todo eso de forma explícita. La vista de entregable está en **[Entregables · §2](#deliverables:2-migrar-el-sitio-actual-al-nuevo-protegiendo-el-correo-y-el-dns)**; el método técnico es el siguiente:
