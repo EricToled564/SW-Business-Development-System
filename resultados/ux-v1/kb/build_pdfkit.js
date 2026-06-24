@@ -20,6 +20,7 @@ const DOCS = [
   { src: SRC + "/seguridad.es.md", kind: "md", title: "Seguridad del sitio — Protección de datos personales", out: "10-seguridad-del-sitio.es.pdf" },
   { src: SRC + "/aportaciones.es.md", kind: "md", title: "Status de Entregables Sports World — Sistemas y Marketing", out: "11-status-entregables-sports-world.es.pdf" },
   { src: SRC + "/glosario.es.md", kind: "md", title: "Glosario — Términos técnicos y de negocio", out: "12-glosario.es.pdf" },
+  { src: SRC + "/roi.es.md", kind: "md", title: "Calculadora de ROI — Modelo de cohortes con churn", out: "14-calculadora-roi.es.pdf" },
   // NOTA: 'voice-agent-knowledge-base.html' quedó obsoleto (contenido previo a las
   // correcciones de esta sesión). Excluido del build; no se sube a la KB.
 ];
