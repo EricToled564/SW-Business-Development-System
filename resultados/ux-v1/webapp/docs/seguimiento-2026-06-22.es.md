@@ -23,6 +23,20 @@ Esta página da seguimiento a **cada duda y punto abierto** planteado en la reun
 | 14 | Mobile First explícito en el contrato (10) | ✅ | Declarado expresamente: prioridad móvil y ~70% del tráfico desde móvil. | Contrato Cláusula Primera; Anexo A.1; Arquitectura de Experiencia (UX) |
 | 15 | Riesgos: dependencias de API, migración, ambigüedad, costos IA, propiedad/mantenimiento, datos en tiempo real (12) | ✅ | Cubiertos por: dependencias del cliente y suspensión de plazos; límite de responsabilidad; fuerza mayor; PI/continuidad; plan de migración DNS; costos variables de IA. | Contrato Cláusulas Sexta, Décima Segunda, Décima Primera, Séptima; Anexo A.3; Cláusula Sexta Bis |
 
+## Puntos del equipo de sistemas (minuta §13) y su tratamiento
+
+| Punto | Estatus | Cómo se cubrió | Dónde está |
+|---|---|---|---|
+| Análisis del sitio actual con KPIs a mejorar | ✅ | Auditoría técnica con diagnóstico y KPIs técnicos comprometidos vs. objetivos comerciales. | Contrato Anexo Dos I.2 y Sección V; Auditoría inicial del sitio |
+| Porcentajes mínimos de mejora | 🟡 | KPIs técnicos con meta (0→49 crawleables, 136→0, schema 0→49) comprometidos; los % de tráfico/cobertura se señalan como alcanzables, no garantizados (la Cláusula Primera excluye garantía numérica). Falta fijar, en su caso, mínimos comprometidos por escrito. | Contrato Anexo Dos Sección V; Cláusula Primera (I–III) |
+| Horarios y SLAs de atención | ✅ | Soporte por Slack y correo en horario hábil (IV-a) y 24/7 para la plataforma de capacitación (IV-b); SLAs de latencia/disponibilidad de las APIs a cargo de SW. | Contrato Anexo Dos IV; Anexo Uno B.8/B.9, D.7 |
+| Entregables del proyecto (explícitos) | ✅ | Entregables limitativos por servicio (I–IV). | Contrato Anexo Dos |
+| Uso de la infraestructura de Sports World | ✅ | El sistema opera sobre infraestructura de SW; el proveedor se adapta e integra con la infraestructura actual. | Contrato Cláusula Cuarta; Anexo Uno (Bloques A–D) |
+| Bolsas de horas / cupos de mejora | ✅ | Cupos mensuales de intervención (3 simples + 1 compleja) con definiciones y excedentes facturables. | Contrato Anexo Dos IV.1 |
+| Etapa de "estabilización" | ✅ | Lanzamiento en firme con monitoreo activo 48 h; mantenimiento continuo bajo iguala. | Contrato Anexo Dos I.3 (q) y IV |
+| Adaptarse e integrarse a la infraestructura actual | ✅ | Obligación expresa de adaptación/integración; requisitos técnicos como prerrequisito en el Anexo Uno. | Contrato Cláusula Cuarta; Anexo Uno |
+| ¿Los retrasos solo impactan tiempo, no penalización económica? | ✅ | **Sí.** Los retrasos de cualquier parte extienden los plazos día por día, sin penalización económica, salvo los supuestos expresamente pactados (terminación anticipada de igualas) y los daños por rescisión no subsanada. | Contrato Cláusula Novena |
+
 ## Pendientes de Sports World (para cerrar antes del kickoff)
 
 - 🔴 Confirmar **en qué sistema reside** la información operativa (clubes, clases, horarios, amenidades, contacto). *(Punto 2)*
@@ -34,4 +48,5 @@ Esta página da seguimiento a **cada duda y punto abierto** planteado en la reun
 
 ## Pendiente comercial (Final Upgrade ↔ Sports World)
 
-- Definir el **monto de la contraprestación del proyecto** y el **calendario de pagos** (anticipo y pagos contra gates), conforme a la cotización del proyecto. En el Contrato quedan señalados como campos por completar.
+- La **cotización ya está integrada** en el Contrato (Cláusula Segunda): contraprestación única **$129,357 USD / $2,302,550 MXN** sin IVA (**$3,000,862 MXN** inversión total con IVA a 6 meses de iguala), e igualas **$25,400 + $22,000 MXN/mes**. Falta definir el **calendario de pagos** (anticipo y % por gate) en la Cláusula Tercera.
+- **Conciliar 145 vs 148 páginas y 9 vs 8 semanas:** el objeto y el Anexo Dos del contrato indican 145 páginas y 9 semanas; el Mapa del Sitio y el Resumen del web app indican 148 páginas y 8 semanas. Debe unificarse una sola cifra antes de firma.
