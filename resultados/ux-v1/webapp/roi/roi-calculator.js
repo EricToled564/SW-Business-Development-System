@@ -9,7 +9,8 @@
 (function () {
   "use strict";
 
-  // Revenue de referencia GSW 2025 (dato público citado en la auditoría): $2,185M MXN.
+  // Revenue de referencia GSW (parámetro CONFIGURABLE; pendiente de confirmar con el dato
+  // oficial de Sports World — no proviene de la auditoría). Ajustar antes de usar con el cliente.
   const GSW_REVENUE_2025 = 2185000000;
 
   const I18N = {

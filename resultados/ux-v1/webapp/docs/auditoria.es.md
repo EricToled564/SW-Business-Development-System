@@ -127,4 +127,4 @@ Universo de 6,912 keywords unbranded limpias (de 20,003 totales, tras remover br
 
 El sitio actual gana donde habla (head terms pos 2–6) y desaparece donde calla. Con un fix técnico (SSR para hacer crawleables las 49+ páginas de club, 116 redirects 301, corrección de las 20 URLs con backslash, schema, H1/meta), hubs semánticos por amenidad + ubicación, y un agente de IA que cierra la conversión, el objetivo es llevar la cobertura del mercado unbranded del **31.1% actual a 55–65%** y generar entre **+40,000 y +80,000 visitas orgánicas mensuales** sostenidas.
 
-> Fuente de los datos: Semrush (base de datos México, febrero–marzo 2026), Semrush Site Audit (100 páginas) y Keyword Gap (marzo 2026). Tablas completas en el Anexo Técnico del documento "El Gigante Invisible".
+> Fuente de los datos: Semrush (base de datos México, febrero–marzo 2026), Semrush Site Audit (100 páginas) y Keyword Gap (marzo 2026).
