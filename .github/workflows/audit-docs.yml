@@ -1,0 +1,44 @@
+name: Auditoría de documentación
+
+on:
+  push:
+    branches: [main, claude/serene-cray-06lv41]
+    paths:
+      - "resultados/ux-v1/webapp/docs/**"
+      - "resultados/ux-v1/webapp/app.js"
+      - "resultados/ux-v1/kb/build_pdfkit.js"
+      - "resultados/ux-v1/tools/audit-docs.js"
+      - ".github/workflows/audit-docs.yml"
+  pull_request:
+    paths:
+      - "resultados/ux-v1/webapp/docs/**"
+      - "resultados/ux-v1/webapp/app.js"
+      - "resultados/ux-v1/tools/audit-docs.js"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Ejecutar auditoría de documentación
+        working-directory: resultados/ux-v1
+        run: node tools/audit-docs.js
+
+      - name: Publicar reporte como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-report
+          path: resultados/ux-v1/tools/audit-report.md
+          if-no-files-found: ignore
