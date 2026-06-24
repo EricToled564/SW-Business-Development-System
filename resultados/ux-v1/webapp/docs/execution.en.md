@@ -37,7 +37,7 @@ The project is executed with four teams, each with a leader, all coordinated by 
 | Structured data / schema | A | C | R | I | I | I |
 | 49 Google Business listings | A | I | R | I | I | R (ownership) |
 | Visual content at scale | A | C | I | R | I | C (brand) |
-| CRM integration / data / bookings | A | R | I | I | C | R (API/data) |
+| CRM and operational data integration | A | R | I | I | C | R (API/data) |
 | BES agent | A | C | C | I | R | R (knowledge base) |
 | Migration and cutover | R/A | R | C | I | I | C (access) |
 | Milestone approvals | A | C | C | C | C | R (decides) |
@@ -147,10 +147,10 @@ These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#c
 | Risk | Prob. | Impact | Mitigation | Owner |
 |---|---|---|---|---|
 | Google Business verification drags on (controlled by Google) | High | Medium | Start in W1; the rest of the project is independent; the listings can finalize close to launch without stalling the site. | Overall ldr. |
-| CRM/booking APIs do not meet their SLA (p95 <500/<800 ms) | Medium | High | SLA owned by SW (Annex One D.7); sync-tolerant architecture; graceful degradation. | T4 / T1 |
+| The CRM API does not meet its SLA (p95 <500/<800 ms) | Medium | High | SLA owned by SW (Annex One D.5); sync-tolerant architecture; graceful degradation. | T4 / T1 |
 | Client delays on Annex One or on approvals | Medium | High | Dependencies front-loaded into W1; 48 h windows agreed (I.4); the term extends day by day and stand-by applies ($350 USD/day, Clause Nine). | Overall ldr. / SW |
 | Quality/availability of club and class data | Medium | Medium | Preferred read API; fallback to structured export with an agreed calendar; automatic validation. | T1 / SW |
-| BES knowledge base out of date | Medium | Medium | Minimum weekly update (Annex One D.8); automatic retraining. | SW / T4 |
+| BES knowledge base out of date | Medium | Medium | Minimum weekly update (Annex One D.6); automatic retraining. | SW / T4 |
 | Scope creep | Medium | Medium | Change control (§8): anything not agreed is an amending agreement; changes to already-approved sections are quoted (Clause Three Bis). | Overall ldr. |
 | Migration breaks email or another DNS service | Low | High | Prior DNS inventory; only the site records are touched; low TTL 24 h beforehand; fast rollback; post-cutover verification. | T1 |
 
@@ -164,6 +164,6 @@ These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#c
 
 ## 9 · Assumptions and out of scope
 
-- **Central assumption:** Sports World exposes an API for the CRM and for bookings, and delivers 100% of the Annex One requirements; the 8-week count runs from that delivery.
+- **Central assumption:** Sports World exposes an API for the CRM and delivers 100% of the Annex One requirements; the 8-week count runs from that delivery.
 - **Out of scope (unless an amending agreement):** any page beyond the 148 (Annex Two I.1); operation of BES by telephony or as a WhatsApp conversational chat (its operation is limited to the web channel; see Technical Strategy §5); media budget; and any service not enumerated in the Annexes.
 - **Not guaranteed:** search rankings, traffic volumes, or conversion rates: they depend on external factors (search engine algorithms, market). What is committed are the technical KPIs of §6.

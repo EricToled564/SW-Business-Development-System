@@ -30,7 +30,7 @@ De conformidad con las Declaraciones que anteceden, las Partes están de acuerdo
 
 **I. Rediseño integral del sitio web sportsworld.com.mx con enfoque en posicionamiento orgánico.** Nuevo sitio institucional bajo el dominio sportsworld.com.mx, integrado por **148 (ciento cuarenta y ocho) páginas**, conforme al alcance, la arquitectura y los entregables del Anexo Dos, con diseño **Mobile First** (≈70% del tráfico es móvil). Plazo de entrega: **8 (ocho) semanas**, conforme al cómputo de esta Cláusula y a las aprobaciones del Anexo Dos. EL CLIENTE reconoce que las posiciones específicas por palabra clave y los volúmenes de tráfico dependen de factores ajenos a EL PRESTADOR (entre ellos los algoritmos de los buscadores); EL PRESTADOR **no garantiza** posiciones específicas por palabra clave ni volúmenes de tráfico. Lo comprometido son los KPIs verificables del Anexo Dos, Sección IV (incluida la cobertura de keywords unbranded).
 
-**II. Desarrollo e integración del agente de voz conversacional "BES".** Agente "BES" integrado al sitio, con voz sintética natural en español de México e interacción bidireccional por voz y texto, entrenado con la base de conocimiento de EL CLIENTE. Su operación bajo este Contrato se limita al **canal web** del sitio y al envío automatizado, vía **WhatsApp**, de **2 (dos) mensajes recordatorios** (24 horas y 2 horas antes de la visita agendada). Quedan excluidas las interacciones de venta por WhatsApp como canal de entrada y cualquier canal distinto al sitio web. Los **costos de operación** de "BES" (plataforma de voz, interfaz del modelo de razonamiento y hospedaje de la lógica) los cubre directamente EL CLIENTE a los proveedores correspondientes y no constituyen ingreso de EL PRESTADOR (ver Cláusula Sexta Bis). EL PRESTADOR **no garantiza** tasas de conversión, cierres ni volúmenes de agendamiento.
+**II. Desarrollo e integración del agente de voz conversacional "BES".** Agente "BES" integrado al sitio, con voz sintética natural en español de México e interacción bidireccional por voz y texto, entrenado con la base de conocimiento de EL CLIENTE. Su operación bajo este Contrato se limita al **canal web** del sitio y al envío automatizado, vía **WhatsApp**, de **2 (dos) mensajes recordatorios** (24 horas y 2 horas antes de la visita solicitada). La visita guiada **no se reserva ni se verifica disponibilidad**: el día y horario elegidos por el usuario, dentro del horario de atención del club, se envían por correo al club como requerimiento. Quedan excluidas las interacciones de venta por WhatsApp como canal de entrada y cualquier canal distinto al sitio web. Los **costos de operación** de "BES" (plataforma de voz, interfaz del modelo de razonamiento y hospedaje de la lógica) los cubre directamente EL CLIENTE a los proveedores correspondientes y no constituyen ingreso de EL PRESTADOR (ver Cláusula Sexta Bis). EL PRESTADOR **no garantiza** tasas de conversión, cierres ni volúmenes de agendamiento.
 
 **III. Servicios recurrentes de hospedaje, mantenimiento y soporte técnico.** Mediante una **iguala mensual** conforme a la **Opción A elegida por EL CLIENTE** (Cláusula Segunda), que comprende hospedaje, mantenimiento técnico (seguridad, dependencias y desempeño), mantenimiento de "BES", operación de la sección de administración y del tablero, reporte mensual y **soporte con primer respondiente por agente de voz disponible 24/7 (veinticuatro horas, los siete días) y escalamiento a soporte humano en horario hábil**. La iguala incluye una **bolsa de mejora de hasta 8 (ocho) horas mensuales, no acumulables**; los excedentes se facturan conforme a tarifas. Plazo mínimo inicial **6 (seis) meses**; concluido éste, cualquiera de las Partes podrá darla por terminada con aviso por escrito de al menos **60 (sesenta) días naturales**.
 
@@ -155,36 +155,28 @@ El presente Anexo Uno forma parte integrante e inseparable del Contrato y enumer
 
 - **0.1** Existencia, identificación y responsabilidades del API gateway corporativo (define si autenticación, límites de tasa y bitácora residen en el gateway o en cada aplicación).
 - **0.2** Confirmación de ambiente de pruebas separado del productivo en el CRM a la medida.
-- **0.3** Confirmación de interfaz de programación documentada y notificaciones salientes del sistema de reservas.
-- **0.4** Identificación del proveedor de telefonía y conmutador (PBX) de los 49 clubes.
-- **0.5** Sistema de identidad o inicio de sesión único (Okta, Azure AD, Auth0 u otro).
-- **0.6** Herramienta de comunicación de incidentes (Statuspage, Slack, Teams u otra).
-- **0.7** Calendario de mantenimientos planeados del CRM y del sistema de reservas durante el proyecto.
-- **0.8** Confirmación de compromisos paralelos del equipo de CRM durante las semanas del proyecto.
+- **0.3** Identificación del proveedor de telefonía y conmutador (PBX) de los 49 clubes.
+- **0.4** Sistema de identidad o inicio de sesión único (Okta, Azure AD, Auth0 u otro).
+- **0.5** Herramienta de comunicación de incidentes (Statuspage, Slack, Teams u otra).
+- **0.6** Calendario de mantenimientos planeados del CRM durante el proyecto.
+- **0.7** Confirmación de compromisos paralelos del equipo de CRM durante las semanas del proyecto.
 
 ## Bloque A — Documentación, ambiente de pruebas y responsable único (día 1)
 
 - **A.1** Especificación **OpenAPI 3.1** del CRM (creación/actualización de prospecto, consulta de miembro, datos de clubes y membresías; con esquemas, errores y ejemplos). *Responsable: líder técnico CRM.*
 - **A.2** Credenciales del ambiente de pruebas del CRM, vía bóveda compartida. *Responsable: líder IT y Seguridad.*
-- **A.3** Esquemas reales (JSON) de ≥3 clubes y 5 clases para los 4 datos en vivo (horarios; teléfono y correo; catálogo de clases; horarios y días de cada clase). *Responsable: líder técnico CRM.*
-- **A.4** Especificación **OpenAPI 3.1** del sistema de reservas. *Responsable: líder técnico reservas.*
-- **A.5** Credenciales del ambiente de pruebas del sistema de reservas. *Responsable: líder IT y Seguridad.*
-- **A.6** Nominación del **responsable único del proyecto (Project Owner técnico)** con autoridad sobre IT, seguridad, legal y operación (nombre, correo, móvil, disponibilidad y suplente). *Responsable: Dirección de EL CLIENTE.*
-- **A.7** Tabla de personas vinculadas secundarias (seguridad, legal, operación, PBX, proveedor del agente actual). *Responsable: responsable único.*
+- **A.3** Esquemas reales (JSON) de ≥3 clubes y 5 clases para los datos en vivo (horarios; teléfono y correo; catálogo de clases; horarios y días de cada clase). *Responsable: líder técnico CRM.*
+- **A.4** Nominación del **responsable único del proyecto (Project Owner técnico)** con autoridad sobre IT, seguridad, legal y operación (nombre, correo, móvil, disponibilidad y suplente). *Responsable: Dirección de EL CLIENTE.*
+- **A.5** Tabla de personas vinculadas secundarias (seguridad, legal, operación, PBX). *Responsable: responsable único.*
 
 ## Bloque B — Credenciales productivas e integraciones (fin de la semana 2)
 
 - **B.1** Credenciales **productivas del CRM**, limitadas a los puntos de acceso que consume EL PRESTADOR, en cuenta de servicio dedicada (no personal), vía bóveda compartida. *Responsable: líder IT y Seguridad.*
-- **B.2** Credenciales **productivas del sistema de reservas**, en cuenta de servicio dedicada, vía bóveda compartida. *Responsable: líder IT y Seguridad.*
-- **B.3** Esquema de **autenticación del CRM** (OAuth 2.1 con credenciales de cliente, mTLS, o llave de acceso con alcance y rotación). *Responsable: líder técnico CRM y Seguridad.*
-- **B.4** Esquema de **autenticación del sistema de reservas** (mismo formato que B.3). *Responsable: líder técnico reservas y Seguridad.*
-- **B.5** Soporte de **llave de idempotencia** (Idempotency-Key / UUID) en el punto de acceso de creación de prospecto, para que llamadas repetidas no generen duplicados. *Responsable: líder técnico CRM.*
-- **B.6** **Webhooks salientes del sistema de reservas** (`tour_booking.confirmed`, `tour_booking.cancelled`, `tour_booking.no_show`) con firma **HMAC-SHA256**, identificador único de evento, marca de tiempo, reintentos con espera incremental y rotación dual de claves. *Responsable: líder técnico reservas.*
-- **B.7** **Webhooks salientes del CRM** (`lead.qualified`, `membership.activated`), con las mismas reglas de firma, deduplicación y reintentos. *Responsable: líder técnico CRM.*
-- **B.8** **SLAs documentados de la API del CRM** (percentil 95 de latencia y disponibilidad mensual) para creación de prospecto, consulta de miembro y catálogos de clubes, clases y membresías. *Responsable: líder técnico CRM.*
-- **B.9** **SLAs documentados de la API de reservas** (percentil 95) para consulta de disponibilidad, creación y cancelación de reservación. *Responsable: líder técnico reservas.*
-- **B.10** **Política de límites de tasa del CRM** (peticiones por minuto/hora, ráfagas, código HTTP y cabecera `Retry-After`). *Responsable: líder técnico CRM.*
-- **B.11** **Política de límites de tasa del sistema de reservas** (mismo formato que B.10). *Responsable: líder técnico reservas.*
+- **B.2** Esquema de **autenticación del CRM** (OAuth 2.1 con credenciales de cliente, mTLS, o llave de acceso con alcance y rotación). *Responsable: líder técnico CRM y Seguridad.*
+- **B.3** Soporte de **llave de idempotencia** (Idempotency-Key / UUID) en el punto de acceso de creación de prospecto, para que llamadas repetidas no generen duplicados. *Responsable: líder técnico CRM.*
+- **B.4** **Webhooks salientes del CRM** (`lead.qualified`, `membership.activated`) con firma **HMAC-SHA256**, identificador único de evento, marca de tiempo, deduplicación y reintentos con espera incremental. *Responsable: líder técnico CRM.*
+- **B.5** **SLAs documentados de la API del CRM** (percentil 95 de latencia y disponibilidad mensual) para creación de prospecto, consulta de miembro y catálogos de clubes, clases y membresías. *Responsable: líder técnico CRM.*
+- **B.6** **Política de límites de tasa del CRM** (peticiones por minuto/hora, ráfagas, código HTTP y cabecera `Retry-After`). *Responsable: líder técnico CRM.*
 
 ## Bloque C — Acceso a ambiente productivo (semana 4)
 
@@ -202,12 +194,10 @@ El presente Anexo Uno forma parte integrante e inseparable del Contrato y enumer
 - **D.1** Punto de acceso de **consulta de miembro** por teléfono o correo (devuelve datos básicos del socio —nombre, club principal, tipo de membresía, estado— o "no encontrado"). *Responsable: líder técnico CRM.*
 - **D.2** Punto de acceso de **búsqueda de club por amenidad** (alberca, spa, sauna u otra). *Responsable: líder técnico CRM.*
 - **D.3** Punto de acceso de **búsqueda de club por geolocalización** (código postal o coordenadas, ordenado por cercanía con distancia). *Responsable: líder técnico CRM.*
-- **D.4** Punto de acceso de **consulta de disponibilidad de visitas guiadas** por club. *Responsable: líder técnico reservas.*
-- **D.5** Punto de acceso de **creación de reservación de visita guiada** (devuelve identificador y confirmación). *Responsable: líder técnico reservas.*
-- **D.6** Punto de acceso de **creación de prospecto** (el mismo de B.5, compartido con el sitio, con garantía de no duplicación). *Responsable: líder técnico CRM.*
-- **D.7** **SLA de latencia** específico para BES: percentil 95 < **500 ms** para D.1–D.4 y < **800 ms** para D.5–D.6. *Responsable: líderes técnicos CRM y reservas.*
-- **D.8** **Acceso a la base de conocimiento** de "BES" (catálogo de membresías con precios y términos; clases con descripciones; políticas de cancelación y congelamiento; información operativa por club), con actualización semanal mínima durante el proyecto. *Responsable: líder técnico CRM y Mercadotecnia operativa.*
-- **D.9** **Estrategia de escalación a operador humano** documentada (transferencia por SIP con número/cola de destino; WhatsApp con operador; o devolución de llamada agendada en el CRM), con responsables del lado humano. *Responsable: responsable único.*
+- **D.4** Punto de acceso de **creación de prospecto** (el mismo de B.3, compartido con el sitio, con garantía de no duplicación). El día y horario de visita elegidos por el usuario se registran como parte del prospecto y se envían por correo al club; **no se verifica disponibilidad ni se crea reservación en sistema alguno**. *Responsable: líder técnico CRM.*
+- **D.5** **SLA de latencia** específico para BES: percentil 95 < **500 ms** para las consultas D.1–D.3 y < **800 ms** para la creación de prospecto (D.4). *Responsable: líder técnico CRM.*
+- **D.6** **Acceso a la base de conocimiento** de "BES" (catálogo de membresías con precios y términos; clases con descripciones; políticas de cancelación y congelamiento; información operativa por club, incluido el horario de atención de cada club), con actualización semanal mínima durante el proyecto. *Responsable: líder técnico CRM y Mercadotecnia operativa.*
+- **D.7** **Estrategia de escalación a operador humano** documentada (transferencia por SIP con número/cola de destino; WhatsApp con operador; o devolución de llamada agendada en el CRM), con responsables del lado humano. *Responsable: responsable único.*
 
 ## Bloque E — Aportaciones de marketing y marca (a cargo del cliente)
 
@@ -272,7 +262,7 @@ Auditoría técnica con diagnóstico; reconstrucción de la arquitectura de las 
 
 ### I.3 Componente "Diseño, contenido visual y desarrollo"
 
-Sistema de diseño a partir de los activos de marca, propagado como plantillas; desarrollo sobre **Next.js, React, TypeScript y Tailwind** con **SSR e ISR** y **CMS desacoplado**; integración en vivo de los 4 datos por API; **webhooks** hacia el CRM y reservas; umbrales **Core Web Vitals (LCP < 2.5 s, INP < 200 ms, CLS < 0.1)**; **WCAG 2.2 AA**; imágenes AVIF/WebP responsivas; tratamiento de ~**650 fotografías** del banco de EL CLIENTE; ~**150 imágenes nuevas** por IA; **12 animaciones** de 10 s; **1 video institucional** de 45–60 s para "Bajar de Peso"; sección de administración no-code; **tablero ejecutivo** en tiempo real; migración con 301 y corrección de los 136 enlaces rotos; migración de DNS con TTL reducido 24 horas antes; y lanzamiento en firme con monitoreo activo 48 horas, seguido de una **etapa de estabilización de 2 a 4 semanas** con atención reforzada y corrección de los ajustes derivados del tráfico real, sin consumir la bolsa de horas de mejora.
+Sistema de diseño a partir de los activos de marca, propagado como plantillas; desarrollo sobre **Next.js, React, TypeScript y Tailwind** con **SSR e ISR** y **CMS desacoplado**; integración en vivo de los datos operativos por API; **webhooks** hacia el CRM; umbrales **Core Web Vitals (LCP < 2.5 s, INP < 200 ms, CLS < 0.1)**; **WCAG 2.2 AA**; imágenes AVIF/WebP responsivas; tratamiento de ~**650 fotografías** del banco de EL CLIENTE; ~**150 imágenes nuevas** por IA; **12 animaciones** de 10 s; **1 video institucional** de 45–60 s para "Bajar de Peso"; sección de administración no-code; **tablero ejecutivo** en tiempo real; migración con 301 y corrección de los 136 enlaces rotos; migración de DNS con TTL reducido 24 horas antes; y lanzamiento en firme con monitoreo activo 48 horas, seguido de una **etapa de estabilización de 2 a 4 semanas** con atención reforzada y corrección de los ajustes derivados del tráfico real, sin consumir la bolsa de horas de mejora.
 
 ### I.4 Cronograma de 8 semanas y aprobaciones a cargo de EL CLIENTE
 
@@ -287,7 +277,7 @@ Los atrasos imputables a EL CLIENTE extienden, día por día, el plazo a cargo d
 
 ## Sección II — Entregables del Servicio II (agente "BES")
 
-Agente integrado al sitio con voz natural en español de México e interacción por voz y texto; respuesta a preguntas frecuentes (ubicaciones, horarios, precios, clases y amenidades por club); identificación del club más cercano; recomendación de clases por objetivo; **captura de prospectos** (nombre, correo, teléfono, club de interés y horario) aterrizados en el CRM; **escalamiento a operador humano**; advertencias **YMYL**; **agendamiento de visitas guiadas** con **2 recordatorios por WhatsApp** (24 h y 2 h antes); y **resumen del prospecto enviado por correo al club** con información personalizada para el asesor. Entrenamiento con la base de conocimiento completa (49 clubes, clases, membresías y políticas), **reentrenamiento automático**, y desarrollo en 4 semanas más 2 de pruebas con tráfico real, dentro de las 8 semanas del proyecto.
+Agente integrado al sitio con voz natural en español de México e interacción por voz y texto; respuesta a preguntas frecuentes (ubicaciones, horarios, precios, clases y amenidades por club); identificación del club más cercano; recomendación de clases por objetivo; **captura de prospectos** (nombre, correo, teléfono, club de interés y horario) aterrizados en el CRM; **escalamiento a operador humano**; advertencias **YMYL**; **registro de la visita guiada solicitada** —día y horario elegidos por el usuario dentro del horario de atención del club, enviados por correo al club, **sin verificación de disponibilidad ni reservación en sistema alguno**— con **2 recordatorios por WhatsApp** (24 h y 2 h antes); y **resumen del prospecto enviado por correo al club** con información personalizada para el asesor. Entrenamiento con la base de conocimiento completa (49 clubes, clases, membresías y políticas), **reentrenamiento automático**, y desarrollo en 4 semanas más 2 de pruebas con tráfico real, dentro de las 8 semanas del proyecto.
 
 ## Sección III — Entregables del Servicio III (servicios recurrentes)
 

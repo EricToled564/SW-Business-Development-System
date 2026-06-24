@@ -31,7 +31,7 @@ Glosario único y compartido por toda la documentación del proyecto. Cada docum
 | **ISR** | Regeneración incremental estática; técnica de Next.js que actualiza páginas generadas sin reconstruir todo el sitio. |
 | **JSON-LD** | Formato en que se inserta el schema markup en el código de la página. |
 | **KPI** | Indicador clave de desempeño; métrica con la que se mide el avance hacia un objetivo. |
-| **latencia (conversacional vs SLA de API)** | Dos métricas distintas que no deben confundirse: la *latencia conversacional* de BES —el tiempo total para que la conversación se sienta humana, objetivo < 900 ms— y el *SLA de latencia de las APIs de Sports World* —percentil 95 < 500 ms en lectura y < 800 ms en escritura (Anexo Uno D.7)—. La primera es responsabilidad del agente; la segunda, de las APIs del cliente. |
+| **latencia (conversacional vs SLA de API)** | Dos métricas distintas que no deben confundirse: la *latencia conversacional* de BES —el tiempo total para que la conversación se sienta humana, objetivo < 900 ms— y el *SLA de latencia de las APIs de Sports World* —percentil 95 < 500 ms en lectura y < 800 ms en la creación de prospecto (Anexo Uno D.5)—. La primera es responsabilidad del agente; la segunda, de las APIs del cliente. |
 | **lead / prospecto** | Persona que muestra interés y es capturada como contacto comercial. En este proyecto se usan como sinónimos. |
 | **LFPDPPP** | Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México). |
 | **LLM (modelo de lenguaje)** | Sistema de IA entrenado para procesar y generar lenguaje natural; el "razonamiento" del agente. |

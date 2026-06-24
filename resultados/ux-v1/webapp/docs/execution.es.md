@@ -37,7 +37,7 @@ El proyecto se ejecuta con cuatro equipos, cada uno con un líder, todos coordin
 | Datos estructurados / schema | A | C | R | I | I | I |
 | 49 fichas de Google Business | A | I | R | I | I | R (titularidad) |
 | Contenido visual a escala | A | C | I | R | I | C (marca) |
-| Integración CRM / datos / reservas | A | R | I | I | C | R (API/datos) |
+| Integración CRM y datos operativos | A | R | I | I | C | R (API/datos) |
 | Agente BES | A | C | C | I | R | R (base de conocimiento) |
 | Migración y cutover | R/A | R | C | I | I | C (accesos) |
 | Aprobaciones de hito | A | C | C | C | C | R (decide) |
@@ -147,10 +147,10 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 | Riesgo | Prob. | Impacto | Mitigación | Dueño |
 |---|---|---|---|---|
 | Verificación de Google Business se alarga (la controla Google) | Alta | Medio | Iniciar en S1; el resto del proyecto es independiente; las fichas pueden finalizar cerca del lanzamiento sin frenar el sitio. | Líder gral. |
-| APIs de CRM/reservas no cumplen su SLA (p95 <500/<800 ms) | Media | Alto | SLA a cargo de SW (Anexo Uno D.7); arquitectura tolerante a sincronización; degradación elegante. | E4 / E1 |
+| La API del CRM no cumple su SLA (p95 <500/<800 ms) | Media | Alto | SLA a cargo de SW (Anexo Uno D.5); arquitectura tolerante a sincronización; degradación elegante. | E4 / E1 |
 | Atrasos del cliente en el Anexo Uno o en aprobaciones | Media | Alto | Dependencias front-loaded a S1; ventanas de 48 h pactadas (I.4); el plazo se extiende día por día y aplica stand-by ($350 USD/día, Cláusula Novena). | Líder gral. / SW |
 | Calidad/disponibilidad de datos de clubes y clases | Media | Medio | API de lectura preferente; fallback a exportación estructurada con calendario acordado; validación automática. | E1 / SW |
-| Base de conocimiento de BES desactualizada | Media | Medio | Actualización semanal mínima (Anexo Uno D.8); reentrenamiento automático. | SW / E4 |
+| Base de conocimiento de BES desactualizada | Media | Medio | Actualización semanal mínima (Anexo Uno D.6); reentrenamiento automático. | SW / E4 |
 | Cambios de alcance (scope creep) | Media | Medio | Control de cambios (§8): lo no pactado es convenio modificatorio; los cambios sobre secciones ya aprobadas se cotizan (Cláusula Tercera Bis). | Líder gral. |
 | Migración rompe correo u otro servicio del DNS | Baja | Alto | Inventario DNS previo; solo se tocan registros del sitio; TTL bajo 24 h antes; rollback rápido; verificación post-cutover. | E1 |
 
@@ -164,6 +164,6 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 
 ## 9 · Supuestos y fuera de alcance
 
-- **Supuesto central:** Sports World expone una API para el CRM y para reservas, y entrega el 100% de los requerimientos del Anexo Uno; el cómputo de las 8 semanas corre a partir de esa entrega.
+- **Supuesto central:** Sports World expone una API para el CRM y entrega el 100% de los requerimientos del Anexo Uno; el cómputo de las 8 semanas corre a partir de esa entrega.
 - **Fuera de alcance (salvo convenio modificatorio):** cualquier página adicional a las 148 (Anexo Dos I.1); operación de BES por telefonía o como chat conversacional de WhatsApp (su operación se limita al canal web; ver Estrategia Técnica §5); presupuesto de medios; y cualquier servicio no enumerado en los Anexos.
 - **No se garantizan** posiciones de búsqueda, volúmenes de tráfico ni tasas de conversión: dependen de factores externos (algoritmos de buscadores, mercado). Lo comprometido son los KPIs técnicos de la §6.
