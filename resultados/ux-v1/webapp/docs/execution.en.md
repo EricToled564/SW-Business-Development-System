@@ -124,7 +124,7 @@ The project advances through four approval gates; each corresponds to the schedu
 
 ## 6 · Committed technical KPIs and launch acceptance criteria
 
-These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#contrato:seccin-iv-kpis-y-calculadora-de-roi-estrategia-comercial)** —they depend on the provider and are verifiable. What is not guaranteed, by contrast, are the specific positions per keyword or the traffic volumes, which depend on external factors.
+These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#contrato:seccin-iv-kpis-comprometidos-estrategia-comercial)** —they depend on the provider and are verifiable. What is not guaranteed, by contrast, are the specific positions per keyword or the traffic volumes, which depend on external factors.
 
 | Committed KPI | Baseline | Goal | Verification |
 |---|---|---|---|

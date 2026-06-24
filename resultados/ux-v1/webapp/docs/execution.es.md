@@ -124,7 +124,7 @@ El proyecto avanza por cuatro compuertas de aprobación; cada una corresponde al
 
 ## 6 · KPIs técnicos comprometidos y criterios de aceptación del lanzamiento
 
-Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](#contrato:seccin-iv-kpis-y-calculadora-de-roi-estrategia-comercial)** —dependen del proveedor y son verificables—. No se garantizan, en cambio, las posiciones específicas por palabra clave ni los volúmenes de tráfico, que dependen de factores externos.
+Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](#contrato:seccin-iv-kpis-comprometidos-estrategia-comercial)** —dependen del proveedor y son verificables—. No se garantizan, en cambio, las posiciones específicas por palabra clave ni los volúmenes de tráfico, que dependen de factores externos.
 
 | KPI comprometido | Línea base | Meta | Verificación |
 |---|---|---|---|

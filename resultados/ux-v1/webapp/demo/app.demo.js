@@ -3882,12 +3882,12 @@ function ScheduleScreen({
     });
   };
   return /*#__PURE__*/React.createElement("div", {
-    className: "min-h-screen flex flex-col",
+    className: "h-[100dvh] flex flex-col overflow-hidden",
     style: {
       background: BRAND.white
     }
   }, /*#__PURE__*/React.createElement("div", {
-    className: "max-w-3xl mx-auto w-full px-6 py-10"
+    className: "max-w-3xl mx-auto w-full px-6 pt-6 pb-4 flex-1 overflow-y-auto min-h-0"
   }, /*#__PURE__*/React.createElement("button", {
     onClick: onBack,
     style: {
@@ -4026,11 +4026,15 @@ function ScheduleScreen({
       fontWeight: 700,
       fontSize: "0.875rem"
     }
-  }, h)))), /*#__PURE__*/React.createElement("div", {
+  }, h))))), /*#__PURE__*/React.createElement("div", {
+    className: "shrink-0",
     style: {
-      marginTop: "2.5rem",
-      paddingTop: "1.5rem",
       borderTop: "1px solid " + BRAND.gray2,
+      background: BRAND.white
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "max-w-3xl mx-auto w-full px-6 py-4",
+    style: {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
@@ -4115,12 +4119,12 @@ function ContactCaptureScreen({
     transition: "border-color 0.15s"
   });
   return /*#__PURE__*/React.createElement("div", {
-    className: "min-h-screen flex flex-col",
+    className: "h-[100dvh] flex flex-col overflow-hidden",
     style: {
       background: BRAND.white
     }
   }, /*#__PURE__*/React.createElement("div", {
-    className: "px-6 pt-6 pb-4 max-w-xl mx-auto w-full flex-1 flex flex-col"
+    className: "px-6 pt-6 pb-4 max-w-xl mx-auto w-full flex-1 flex flex-col overflow-y-auto min-h-0"
   }, /*#__PURE__*/React.createElement("p", {
     style: {
       color: BRAND.red,
@@ -4231,7 +4235,7 @@ function ContactCaptureScreen({
       lineHeight: 1.5
     }
   }, "Tus datos se usan únicamente para coordinar tu visita guiada. No los compartimos con terceros.")), /*#__PURE__*/React.createElement("div", {
-    className: "px-6 py-5",
+    className: "px-6 py-5 shrink-0",
     style: {
       background: BRAND.gray1,
       borderTop: "1px solid " + BRAND.gray2

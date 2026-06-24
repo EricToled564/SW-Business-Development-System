@@ -15,11 +15,12 @@ Punto de entrada al conjunto documental. Cada documento es **autónomo** (puede 
 | 6 | [**Entregables, Soporte y Operación**](#deliverables) | Entregables, migración, soporte (24/7 por agente de voz + humano en horario hábil), bolsa de horas y estabilización. | Dirección, TI |
 | 7 | [**Seguridad del sitio**](#seguridad) | Protección de datos personales: minimización y no retención (los datos viven brevemente; sin respaldo tras copiarse al CRM). | TI, Legal, negocio |
 | 8 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en todo el conjunto. | Todos |
-| 9 | [**Contrato**](#contrato) (+ Anexo Uno y Anexo Dos) | Marco mercantil: objeto, contraprestación, forma de pago, PI, datos personales, anexos de aportaciones (Anexo Uno) y entregables/KPIs/ROI (Anexo Dos). | Dirección, Legal |
+| 9 | [**Contrato**](#contrato) (+ Anexo Uno y Anexo Dos) | Marco mercantil: objeto, contraprestación, forma de pago, PI, datos personales, anexos de aportaciones (Anexo Uno) y entregables/KPIs (Anexo Dos). | Dirección, Legal |
 | 10 | [**Aportaciones de Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. | TI, Marketing, PMO |
 | 11 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
 | 12 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
 | 13 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
+| — | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
 | — | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del flujo de experiencia ideal. | Negocio, dirección |
 
 ## Localizador rápido (¿dónde está cada tema?)
@@ -36,7 +37,8 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | Precio, forma de pago y stand-by | [Contrato · Cláusulas (Segunda, Tercera y Novena)](#contrato:clusulas) |
 | Soporte, SLA, bolsa de 8 horas y estabilización | [Entregables · §3 Soporte 24/7](#deliverables:3-el-sistema-de-soporte-247) · [Contrato · Anexo Dos Sección III](#contrato:seccin-iii-entregables-del-servicio-iii-servicios-recurrentes) |
 | Aportaciones de SW (sistemas y marketing) | [Aportaciones de Sports World](#aportaciones) · [Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) |
-| KPIs y calculadora de ROI | [Contrato · Anexo Dos Sección IV](#contrato:seccin-iv-kpis-y-calculadora-de-roi-estrategia-comercial) |
+| KPIs comprometidos | [Contrato · Anexo Dos Sección IV](#contrato:seccin-iv-kpis-comprometidos-estrategia-comercial) |
+| Calculadora de ROI | [Calculadora de ROI](#roi) |
 | Datos personales y seguridad | [Seguridad del sitio](#seguridad:proteccin-de-los-datos-personales-minimizacin-y-no-retencin) · [Contrato · Cláusulas (Sexta Ter y Décima Primera)](#contrato:clusulas) |
 | Diagnóstico SEO y línea base | [Auditoría inicial · El Gigante Invisible](#auditoria:el-gigante-invisible-diagnstico-de-captura-de-demanda-digital) |
 | Definición de términos | [Glosario](#glosario) |

@@ -292,7 +292,7 @@ Bajo la iguala mensual (Opción A elegida por EL CLIENTE; Cláusula Segunda): ho
 | Medio | Problema que afecta parte del sitio sin impedir su uso. | 4 horas hábiles | 2 días hábiles |
 | Bajo | Incidencia menor o consulta. | 1 día hábil | Según lo planeado |
 
-## Sección IV — KPIs y calculadora de ROI (estrategia comercial)
+## Sección IV — KPIs comprometidos (estrategia comercial)
 
 Los siguientes son los **KPIs comprometidos** del proyecto: dependen de EL PRESTADOR y son verificables. Línea base: auditoría inicial (Semrush, marzo 2026).
 
@@ -305,9 +305,5 @@ Los siguientes son los **KPIs comprometidos** del proyecto: dependen de EL PREST
 | Core Web Vitals (LCP / INP / CLS) | fuera de umbral | < 2.5 s / < 200 ms / < 0.1 | PageSpeed Insights |
 | **Cobertura de keywords unbranded** | 31.1% | 55–65% | Semrush |
 | Código de fixes entregado | — | 100% | Entregable verificable |
-
-**Calculadora de ROI (ilustrativa; no constituye garantía).** Modelo paramétrico: **Revenue incremental anual = A × 12 × B × C × D** (A: tráfico incremental mensual; B: tasa visita→consulta; C: tasa consulta→asociado; D: ingreso anual por asociado).
-
-[[ROI]]
 
 > Leído que fue el presente Contrato y sus Anexos Uno y Dos, las Partes los firman al margen y al calce, por duplicado, en la Ciudad de México, en la fecha de firma del Contrato.

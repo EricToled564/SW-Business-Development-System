@@ -1353,8 +1353,8 @@ function ScheduleScreen({ data, onConfirm, onBack }) {
   };
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ background: BRAND.white }}>
-      <div className="max-w-3xl mx-auto w-full px-6 py-10">
+    <div className="h-[100dvh] flex flex-col overflow-hidden" style={{ background: BRAND.white }}>
+      <div className="max-w-3xl mx-auto w-full px-6 pt-6 pb-4 flex-1 overflow-y-auto min-h-0">
         <button onClick={onBack} style={{ background: "none", border: "none", color: BRAND.gray4, fontSize: "0.8125rem", cursor: "pointer", padding: 0, marginBottom: "1.25rem" }}>← Volver</button>
         <p style={{ color: BRAND.red, letterSpacing: "0.22em", fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase" }}>Agenda tu visita guiada</p>
         <h1 className="mt-3" style={{ fontWeight: 900, fontSize: "2rem", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "0.5rem" }}>Elige día y hora.</h1>
@@ -1390,7 +1390,9 @@ function ScheduleScreen({ data, onConfirm, onBack }) {
           </div>
         </section>
 
-        <div style={{ marginTop: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid " + BRAND.gray2, display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
+      </div>
+      <div className="shrink-0" style={{ borderTop: "1px solid " + BRAND.gray2, background: BRAND.white }}>
+        <div className="max-w-3xl mx-auto w-full px-6 py-4" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
           <div style={{ fontSize: "0.875rem", color: BRAND.gray4 }}>
             {canConfirm ? <><strong style={{ color: BRAND.black }}>{DAY_LABEL_FULL[selectedDay.getDay()]} {selectedDay.getDate()} {MONTH_SHORT[selectedDay.getMonth()]}</strong> · <strong style={{ color: BRAND.black }}>{selectedHour}</strong></> : "Elige un día y una hora para continuar."}
           </div>
@@ -1432,8 +1434,8 @@ function ContactCaptureScreen({ data, onContinue, onBack }) {
   });
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ background: BRAND.white }}>
-      <div className="px-6 pt-6 pb-4 max-w-xl mx-auto w-full flex-1 flex flex-col">
+    <div className="h-[100dvh] flex flex-col overflow-hidden" style={{ background: BRAND.white }}>
+      <div className="px-6 pt-6 pb-4 max-w-xl mx-auto w-full flex-1 flex flex-col overflow-y-auto min-h-0">
         <p style={{ color: BRAND.red, letterSpacing: "0.22em", fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase" }}>Antes de agendar</p>
         <h2 className="mt-4" style={{ fontWeight: 900, fontSize: "1.625rem", lineHeight: 1.15, letterSpacing: "-0.015em", color: BRAND.black }}>{firstName}, necesitamos un par de datos para confirmar tu visita.</h2>
         <p className="mt-2" style={{ color: BRAND.gray4, fontSize: "0.875rem", lineHeight: 1.5 }}>Tu Advisor te contactará para coordinar el horario y enviarte los detalles del club.</p>
@@ -1459,7 +1461,7 @@ function ContactCaptureScreen({ data, onContinue, onBack }) {
         <p className="mt-6" style={{ fontSize: "0.6875rem", color: BRAND.gray4, lineHeight: 1.5 }}>Tus datos se usan únicamente para coordinar tu visita guiada. No los compartimos con terceros.</p>
       </div>
 
-      <div className="px-6 py-5" style={{ background: BRAND.gray1, borderTop: "1px solid " + BRAND.gray2 }}>
+      <div className="px-6 py-5 shrink-0" style={{ background: BRAND.gray1, borderTop: "1px solid " + BRAND.gray2 }}>
         <div className="max-w-xl mx-auto w-full flex items-center justify-between gap-3">
           <button onClick={onBack} style={{ background: "none", border: "none", color: BRAND.gray4, fontSize: "0.875rem", cursor: "pointer", padding: "0.5rem 0", fontFamily: "inherit" }}>← Volver</button>
           <button onClick={handleSubmit} disabled={!allValid && (touched.lastName || touched.phone || touched.email)} style={{ background: allValid ? BRAND.red : BRAND.gray3, color: BRAND.white, fontSize: "0.9375rem", fontWeight: 700, padding: "0.875rem 2rem", borderRadius: "4px", border: "none", cursor: allValid ? "pointer" : "not-allowed", fontFamily: "inherit", transition: "background 0.15s" }}>Continuar</button>
