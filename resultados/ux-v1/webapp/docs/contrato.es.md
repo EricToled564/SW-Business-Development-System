@@ -172,12 +172,17 @@ El presente Anexo Uno forma parte integrante e inseparable del Contrato y enumer
 
 ## Bloque B — Credenciales productivas e integraciones (fin de la semana 2)
 
-- **B.1 / B.2** Credenciales productivas del CRM y del sistema de reservas (cuenta de servicio dedicada).
-- **B.3 / B.4** Esquema de autenticación del CRM y de reservas (OAuth 2.1, mTLS o llave con alcance y rotación).
-- **B.5** Llave de **idempotencia** en creación de prospecto (evita duplicados).
-- **B.6 / B.7** Notificaciones salientes (**webhooks**) de reservas (`tour_booking.*`) y del CRM (`lead.qualified`, `membership.activated`), con firma **HMAC-SHA256**, reintentos y rotación dual de claves.
-- **B.8 / B.9** SLAs (percentil 95 de latencia y disponibilidad) de los puntos de acceso del CRM y de reservas.
-- **B.10 / B.11** Política de límites de tasa del CRM y de reservas.
+- **B.1** Credenciales **productivas del CRM**, limitadas a los puntos de acceso que consume EL PRESTADOR, en cuenta de servicio dedicada (no personal), vía bóveda compartida. *Responsable: líder IT y Seguridad.*
+- **B.2** Credenciales **productivas del sistema de reservas**, en cuenta de servicio dedicada, vía bóveda compartida. *Responsable: líder IT y Seguridad.*
+- **B.3** Esquema de **autenticación del CRM** (OAuth 2.1 con credenciales de cliente, mTLS, o llave de acceso con alcance y rotación). *Responsable: líder técnico CRM y Seguridad.*
+- **B.4** Esquema de **autenticación del sistema de reservas** (mismo formato que B.3). *Responsable: líder técnico reservas y Seguridad.*
+- **B.5** Soporte de **llave de idempotencia** (Idempotency-Key / UUID) en el punto de acceso de creación de prospecto, para que llamadas repetidas no generen duplicados. *Responsable: líder técnico CRM.*
+- **B.6** **Webhooks salientes del sistema de reservas** (`tour_booking.confirmed`, `tour_booking.cancelled`, `tour_booking.no_show`) con firma **HMAC-SHA256**, identificador único de evento, marca de tiempo, reintentos con espera incremental y rotación dual de claves. *Responsable: líder técnico reservas.*
+- **B.7** **Webhooks salientes del CRM** (`lead.qualified`, `membership.activated`), con las mismas reglas de firma, deduplicación y reintentos. *Responsable: líder técnico CRM.*
+- **B.8** **SLAs documentados de la API del CRM** (percentil 95 de latencia y disponibilidad mensual) para creación de prospecto, consulta de miembro y catálogos de clubes, clases y membresías. *Responsable: líder técnico CRM.*
+- **B.9** **SLAs documentados de la API de reservas** (percentil 95) para consulta de disponibilidad, creación y cancelación de reservación. *Responsable: líder técnico reservas.*
+- **B.10** **Política de límites de tasa del CRM** (peticiones por minuto/hora, ráfagas, código HTTP y cabecera `Retry-After`). *Responsable: líder técnico CRM.*
+- **B.11** **Política de límites de tasa del sistema de reservas** (mismo formato que B.10). *Responsable: líder técnico reservas.*
 
 ## Bloque C — Acceso a ambiente productivo (semana 4)
 
@@ -192,10 +197,15 @@ El presente Anexo Uno forma parte integrante e inseparable del Contrato y enumer
 
 ## Bloque D — Puntos de acceso para el agente "BES" (en paralelo a A, B y C)
 
-- **D.1** Consulta de miembro por teléfono o correo. **D.2** Búsqueda de club por amenidad. **D.3** Búsqueda de club por geolocalización. **D.4** Disponibilidad de visitas guiadas por club. **D.5** Creación de reservación de visita guiada. **D.6** Creación de prospecto (compartido con el sitio, sin duplicación).
-- **D.7** Latencia: percentil 95 < **500 ms** (D.1–D.4) y < **800 ms** (D.5–D.6).
-- **D.8** Acceso a la base de conocimiento de "BES" (membresías con precios, clases, políticas e información por club), actualizada semanalmente.
-- **D.9** Estrategia de escalación a operador humano (SIP, WhatsApp con operador o devolución de llamada agendada).
+- **D.1** Punto de acceso de **consulta de miembro** por teléfono o correo (devuelve datos básicos del socio —nombre, club principal, tipo de membresía, estado— o "no encontrado"). *Responsable: líder técnico CRM.*
+- **D.2** Punto de acceso de **búsqueda de club por amenidad** (alberca, spa, sauna u otra). *Responsable: líder técnico CRM.*
+- **D.3** Punto de acceso de **búsqueda de club por geolocalización** (código postal o coordenadas, ordenado por cercanía con distancia). *Responsable: líder técnico CRM.*
+- **D.4** Punto de acceso de **consulta de disponibilidad de visitas guiadas** por club. *Responsable: líder técnico reservas.*
+- **D.5** Punto de acceso de **creación de reservación de visita guiada** (devuelve identificador y confirmación). *Responsable: líder técnico reservas.*
+- **D.6** Punto de acceso de **creación de prospecto** (el mismo de B.5, compartido con el sitio, con garantía de no duplicación). *Responsable: líder técnico CRM.*
+- **D.7** **SLA de latencia** específico para BES: percentil 95 < **500 ms** para D.1–D.4 y < **800 ms** para D.5–D.6. *Responsable: líderes técnicos CRM y reservas.*
+- **D.8** **Acceso a la base de conocimiento** de "BES" (catálogo de membresías con precios y términos; clases con descripciones; políticas de cancelación y congelamiento; información operativa por club), con actualización semanal mínima durante el proyecto. *Responsable: líder técnico CRM y Mercadotecnia operativa.*
+- **D.9** **Estrategia de escalación a operador humano** documentada (transferencia por SIP con número/cola de destino; WhatsApp con operador; o devolución de llamada agendada en el CRM), con responsables del lado humano. *Responsable: responsable único.*
 
 ## Bloque E — Aportaciones de marketing y marca (a cargo del cliente)
 
@@ -206,6 +216,8 @@ El presente Anexo Uno forma parte integrante e inseparable del Contrato y enumer
 - **E.5** **Responsable de Marketing/Marca facultado** para aprobar wireframes, prototipo, plantillas, contenido y territorio visual. *Responsable: Dirección de Mercadotecnia y Marca.*
 - **E.6** **Presupuesto de medios**, en su caso (no incluido en la contraprestación salvo pacto expreso). *Responsable: Mercadotecnia y Marca.*
 - **E.7** **Avisos de privacidad y textos legales** vigentes de la marca, validados por el área legal. *Responsable: Asuntos legales con Mercadotecnia y Marca.*
+
+> **Cédula de control.** El seguimiento de cada requerimiento de este Anexo Uno —con su **fecha límite, responsable nominado y estatus (entregado / no entregado)**, y un semáforo de vencimiento— se lleva en la sección **Aportaciones de Sports World** del web app del proyecto, dividida en *Sistemas* y *Marketing*. El cómputo de plazos del Contrato corre a partir de la entrega del 100% de estos requerimientos.
 
 ---
 
