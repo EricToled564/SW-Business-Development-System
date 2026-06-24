@@ -679,7 +679,7 @@ Genera JSON con estas claves exactas:
 
 function Welcome({ onStart }) {
   return (
-    <div className="min-h-screen flex flex-col justify-center px-6 py-10" style={{ background: BRAND.black, color: BRAND.white }}>
+    <div className="min-h-full flex flex-col justify-center px-6 py-10" style={{ background: BRAND.black, color: BRAND.white }}>
       <div className="max-w-xl mx-auto w-full">
         <p style={{ color: BRAND.red, letterSpacing: "0.22em", fontSize: "0.7rem", fontWeight: 700 }}>DISEÑA TU EXPERIENCIA</p>
         <h1 className="mt-4" style={{ fontWeight: 900, fontSize: "2.5rem", lineHeight: 1.05, letterSpacing: "-0.02em" }}>Tu experiencia ideal comienza conociéndonos mejor.</h1>
@@ -734,12 +734,12 @@ function QuestionRenderer({ question, value, onChange, onNext, onBack, isFirst, 
   const onEnterBlur = (e) => { if (e.key === "Enter") { e.preventDefault(); e.target.blur(); } };
 
   return (
-    <div className={"flex flex-col " + (hasInput ? "min-h-[100dvh]" : "h-[100dvh] overflow-hidden")} style={{ background: BRAND.white }}>
+    <div className={"flex-1 min-h-0 flex flex-col " + (hasInput ? "" : "overflow-hidden")} style={{ background: BRAND.white }}>
       <div className="px-6 pt-4 pb-3 max-w-xl mx-auto w-full flex-1 flex flex-col min-h-0">
         <h2 className="mt-1" style={{ fontWeight: 900, fontSize: "1.375rem", lineHeight: 1.15, letterSpacing: "-0.015em", color: BRAND.black }}>{question.label}</h2>
         {question.helper && <p className="mt-1" style={{ color: BRAND.gray4, fontSize: "0.875rem" }}>{question.helper}</p>}
 
-        <div className={"mt-3 flex-1 " + (hasInput ? "" : "overflow-y-auto min-h-0")}>
+        <div className={"mt-3 " + (hasInput ? "" : "flex-1 overflow-y-auto min-h-0")}>
           {question.type === "text" && (
             <input type="text" value={value || ""} onChange={(e) => onChange(e.target.value)} onKeyDown={onEnterBlur} placeholder={question.placeholder} className="w-full px-4 py-3 rounded outline-none" style={{ background: BRAND.gray1, color: BRAND.black, fontSize: "1rem", border: "1px solid " + BRAND.gray2 }} />
           )}
@@ -831,7 +831,7 @@ function QuestionRenderer({ question, value, onChange, onNext, onBack, isFirst, 
 
 function Loading({ msg }) {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6" style={{ background: BRAND.white }}>
+    <div className="min-h-full flex flex-col items-center justify-center px-6" style={{ background: BRAND.white }}>
       <div className="flex flex-col items-center max-w-xs text-center">
         <div className="w-12 h-12 rounded-full border-4 animate-spin" style={{ borderColor: BRAND.gray2, borderTopColor: BRAND.red }}></div>
         <p className="mt-6 font-bold" style={{ color: BRAND.black, fontSize: "1.125rem" }}>{msg}</p>
@@ -1305,7 +1305,7 @@ function ResultPage({ data, onRestart, onSchedule }) {
 
 function ErrorScreen({ msg, onRetry, onRestart }) {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6" style={{ background: BRAND.white }}>
+    <div className="min-h-full flex flex-col items-center justify-center px-6" style={{ background: BRAND.white }}>
       <div className="max-w-md text-center">
         <p style={{ color: BRAND.red, fontSize: "0.7rem", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 700 }}>Algo no funcionó</p>
         <h2 className="mt-4" style={{ fontSize: "1.5rem", fontWeight: 900, lineHeight: 1.15 }}>No pudimos armar tu experiencia ideal en este momento.</h2>
@@ -1358,7 +1358,7 @@ function ScheduleScreen({ data, onConfirm, onBack }) {
   };
 
   return (
-    <div className="h-[100dvh] flex flex-col overflow-hidden" style={{ background: BRAND.white }}>
+    <div className="h-full flex flex-col overflow-hidden" style={{ background: BRAND.white }}>
       <div className="max-w-3xl mx-auto w-full px-6 pt-6 pb-4 flex-1 overflow-y-auto min-h-0">
         <button onClick={onBack} style={{ background: "none", border: "none", color: BRAND.gray4, fontSize: "0.8125rem", cursor: "pointer", padding: 0, marginBottom: "1.25rem" }}>← Volver</button>
         <p style={{ color: BRAND.red, letterSpacing: "0.22em", fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase" }}>Agenda tu visita guiada</p>
@@ -1444,7 +1444,7 @@ function ContactCaptureScreen({ data, onContinue, onBack }) {
   // Layout desplazable (min-h, sin overflow-hidden) para que el botón "Continuar"
   // siga siendo accesible cuando el teclado del móvil cubre la parte baja.
   return (
-    <div className="min-h-[100dvh] flex flex-col" style={{ background: BRAND.white }}>
+    <div className="min-h-full flex flex-col" style={{ background: BRAND.white }}>
       <div className="px-6 pt-6 pb-4 max-w-xl mx-auto w-full flex-1 flex flex-col">
         <p style={{ color: BRAND.red, letterSpacing: "0.22em", fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase" }}>Antes de agendar</p>
         <h2 className="mt-4" style={{ fontWeight: 900, fontSize: "1.625rem", lineHeight: 1.15, letterSpacing: "-0.015em", color: BRAND.black }}>{firstName}, necesitamos un par de datos para confirmar tu visita.</h2>
@@ -1555,7 +1555,7 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
   flags.push({ severity: "info", text: blockSummary });
 
   return (
-    <div className="min-h-screen" style={{ background: BRAND.gray1, paddingTop: "2.5rem", paddingBottom: "3rem" }}>
+    <div className="min-h-full" style={{ background: BRAND.gray1, paddingTop: "2.5rem", paddingBottom: "3rem" }}>
       <div className="max-w-3xl mx-auto px-6">
         <section style={{ background: BRAND.black, color: BRAND.white, borderRadius: "6px", padding: "1.5rem 1.75rem", marginBottom: "1.5rem" }}>
           <p style={{ color: BRAND.red, letterSpacing: "0.22em", fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", marginBottom: "0.5rem" }}>Visita confirmada</p>
@@ -1820,7 +1820,7 @@ function App() {
   if (phase === "briefing" && result && appointment) return <BriefingScreen data={result} appointment={appointment} onRestart={reset} onBack={() => setPhase("schedule")} />;
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ background: BRAND.white }}>
+    <div className="h-full flex flex-col overflow-hidden" style={{ background: BRAND.white }}>
       <ProgressBar current={step} total={questions.length} />
       <div className="px-6 pt-3 max-w-xl mx-auto w-full">
         <p style={{ fontSize: "0.6875rem", letterSpacing: "0.2em", textTransform: "uppercase", color: BRAND.gray4, fontWeight: 600 }}>Pregunta {step + 1} de {questions.length}</p>

@@ -1,9 +1,21 @@
 /* Calculadora de ROI — Sports World. Widget autónomo, sin dependencias.
-   Modelo paramétrico (El Gigante Invisible §7.2): Revenue incremental anual = A × 12 × B × C × D
+   Modelo de acumulación de cohortes con churn (no es revenue anual ÷ 12):
+
    - A: tráfico orgánico incremental mensual (visitas/mes)
    - B: tasa visita → consulta (%)        [dato interno de SW]
    - C: tasa consulta → asociado (%)       [dato interno de SW]
-   - D: ingreso anual por asociado (MXN)
+   - D: ingreso anual por asociado (MXN)   → valor mensual = D ÷ 12
+   - churn: % de baja, aplicado UNA sola vez a cada lote de asociados nuevos,
+            un mes después del inicio de su membresía.
+
+   Asociados nuevos por mes:  m = A × B × C
+   Cada lote, tras su primer mes, queda en m × (1 − churn).
+   Asociados activos en el mes n:  activos(n) = m + m×(1−churn)×(n−1)
+   Revenue del mes n:  activos(n) × (D ÷ 12)
+   El revenue mensual NO es constante durante el primer año: se construye mes a
+   mes hasta alcanzar, en el mes 12, el régimen que se sostiene del mes 13 en
+   adelante. La tabla muestra esa construcción de valor.
+
    Expuesto como window.mountROICalculator(container, lang).
 */
 (function () {
@@ -12,33 +24,41 @@
   const I18N = {
     es: {
       title: "Calculadora de ROI",
-      intro: "Ajusta las variables para estimar el impacto en ingresos. El tráfico incremental (A) es el objetivo del proyecto; las tasas B y C son datos internos de Sports World (los valores precargados son referencias de la industria, no compromisos).",
+      intro: "Ajusta las variables para estimar el impacto en ingresos. El revenue incremental NO aparece completo desde el mes 1: se construye mes a mes a medida que se acumulan los lotes de asociados nuevos y el churn erosiona cada lote. La tabla muestra esa construcción durante el primer año.",
       a: "A · Tráfico orgánico incremental", aUnit: "visitas/mes",
       b: "B · Visita → consulta", c: "C · Consulta → asociado",
       d: "D · Ingreso anual por asociado", dUnit: "MXN",
+      churnLabel: "Churn (baja del lote, una vez)",
       presets: "Escenarios de la tasa visita→consulta (B):",
       pPess: "Pesimista 1.0%", pCons: "Conservador 1.5%", pVoice: "Con agente IA 2.5%", pPaid: "Con paid + IA 4.0%",
-      outMembers: "Nuevos asociados / año", outRevenue: "Revenue incremental anual",
-      outMonthly: "Revenue incremental mensual",
-      churnTitle: "Efecto anti-churn (adicional)",
-      churn: "Recuperar la visibilidad también protege a los socios actuales que buscan “gym cerca de mí” o actividades y hoy encuentran competidores. Cada punto de churn prevenido representa socios retenidos y su ingreso anual asociado (ajusta D para estimarlo).",
-      disclaimer: "Estimación basada en el modelo paramétrico de la propuesta. Las tasas B y C las calibra Sports World con sus datos reales; los objetivos comerciales son alcanzables, no comprometidos contractualmente.",
-      formula: "Revenue incremental anual = A × 12 × B × C × D",
+      outNew: "Nuevos asociados / mes", outActive: "Asociados activos (mes 12)",
+      outSteady: "Revenue mensual en régimen (mes 13+)", outYear1: "Revenue acumulado año 1",
+      tableTitle: "Construcción del valor mes a mes (primer año)",
+      thMonth: "Mes", thNew: "Nuevos", thActive: "Activos", thRev: "Revenue del mes",
+      tfYear: "Año 1 · acumulado",
+      formula: "Nuevos/mes = A × B × C · cada lote queda en (1 − churn) tras un mes · Revenue del mes = activos × (D ÷ 12)",
+      churnTitle: "Cómo se aplica el churn",
+      churn: "El churn se aplica una sola vez a cada lote de asociados nuevos, un mes después del inicio de su membresía. Ejemplo con 90 nuevos/mes y churn 20%: mes 1 = 90; mes 2 = 90×0.80 + 90 = 162; mes 3 = 162 + 72 = 234; y así hasta el mes 12. El revenue mensual se estabiliza a partir del mes 13.",
+      disclaimer: "Estimación basada en un modelo paramétrico e ilustrativo. Las tasas B y C y el churn los calibra Sports World con sus datos reales; los objetivos comerciales son alcanzables, no comprometidos contractualmente.",
     },
     en: {
       title: "ROI calculator",
-      intro: "Adjust the variables to estimate revenue impact. Incremental traffic (A) is the project objective; rates B and C are Sports World internal data (the preloaded values are industry references, not commitments).",
+      intro: "Adjust the variables to estimate revenue impact. Incremental revenue does NOT appear in full from month 1: it builds month by month as cohorts of new members accumulate and churn erodes each cohort. The table shows that build-up over the first year.",
       a: "A · Incremental organic traffic", aUnit: "visits/mo",
       b: "B · Visit → enquiry", c: "C · Enquiry → member",
       d: "D · Annual revenue per member", dUnit: "MXN",
+      churnLabel: "Churn (cohort drop, once)",
       presets: "Visit→enquiry rate scenarios (B):",
       pPess: "Pessimistic 1.0%", pCons: "Conservative 1.5%", pVoice: "With AI agent 2.5%", pPaid: "With paid + AI 4.0%",
-      outMembers: "New members / year", outRevenue: "Incremental annual revenue",
-      outMonthly: "Incremental monthly revenue",
-      churnTitle: "Anti-churn effect (additional)",
-      churn: "Recovering visibility also protects current members who search “gym near me” or activities and today find competitors. Each churn point prevented represents retained members and their associated annual revenue (adjust D to estimate it).",
-      disclaimer: "Estimate based on the proposal's parametric model. Rates B and C are calibrated by Sports World with real data; commercial objectives are achievable, not contractually committed.",
-      formula: "Incremental annual revenue = A × 12 × B × C × D",
+      outNew: "New members / month", outActive: "Active members (month 12)",
+      outSteady: "Steady monthly revenue (month 13+)", outYear1: "Year-1 cumulative revenue",
+      tableTitle: "Month-by-month value build-up (first year)",
+      thMonth: "Month", thNew: "New", thActive: "Active", thRev: "Revenue for the month",
+      tfYear: "Year 1 · cumulative",
+      formula: "New/mo = A × B × C · each cohort settles at (1 − churn) after one month · Revenue for the month = active × (D ÷ 12)",
+      churnTitle: "How churn is applied",
+      churn: "Churn is applied once to each cohort of new members, one month after their membership starts. Example with 90 new/month and 20% churn: month 1 = 90; month 2 = 90×0.80 + 90 = 162; month 3 = 162 + 72 = 234; and so on through month 12. Monthly revenue stabilizes from month 13 onward.",
+      disclaimer: "Estimate based on an illustrative parametric model. Rates B and C and churn are calibrated by Sports World with real data; commercial objectives are achievable, not contractually committed.",
     },
   };
 
@@ -47,7 +67,7 @@
 
   window.mountROICalculator = function (container, lang) {
     const t = I18N[lang === "en" ? "en" : "es"];
-    const state = { A: 80000, B: 1.5, C: 30, D: 24000 };
+    const state = { A: 80000, B: 1.5, C: 30, D: 24000, churn: 20 };
 
     container.innerHTML =
       '<div class="roi">' +
@@ -57,14 +77,17 @@
           row("B", t.b, "%", 0.5, 6, 0.1, state.B, (v) => v.toFixed(1)) +
           row("C", t.c, "%", 5, 60, 1, state.C, (v) => v.toFixed(0)) +
           row("D", t.d + " (" + t.dUnit + ")", "", 5000, 60000, 100, state.D, fmtInt) +
+          row("churn", t.churnLabel, "%", 0, 50, 1, state.churn, (v) => v.toFixed(0)) +
         '</div>' +
         '<div class="roi-presets"><span>' + t.presets + '</span>' +
           btn("1.0", t.pPess) + btn("1.5", t.pCons) + btn("2.5", t.pVoice) + btn("4.0", t.pPaid) +
         '</div>' +
         '<div class="roi-out">' +
-          out("members", t.outMembers) + out("revenue", t.outRevenue) +
-          out("monthly", t.outMonthly) +
+          out("new", t.outNew) + out("active", t.outActive) +
+          out("steady", t.outSteady) + out("year1", t.outYear1) +
         '</div>' +
+        '<div class="roi-table-wrap"><p class="roi-table-title">' + t.tableTitle + '</p>' +
+          '<div class="roi-table-scroll" data-roi-table></div></div>' +
         '<div class="roi-formula"><code>' + t.formula + '</code></div>' +
         '<div class="roi-churn"><strong>' + t.churnTitle + '</strong><p>' + t.churn + '</p></div>' +
         '<p class="roi-disc">' + t.disclaimer + '</p>' +
@@ -78,15 +101,38 @@
     function btn(v, label) { return '<button class="roi-preset" data-b="' + v + '">' + label + '</button>'; }
     function out(id, label) { return '<div class="roi-card"><span class="roi-card-label">' + label + '</span><span class="roi-card-num" data-out="' + id + '">—</span></div>'; }
 
-    const unitFor = { A: t.aUnit, B: "%", C: "%", D: "" };
-    const fmtFor = { A: fmtInt, B: (v) => v.toFixed(1), C: (v) => v.toFixed(0), D: fmtInt };
+    const unitFor = { A: t.aUnit, B: "%", C: "%", D: "", churn: "%" };
+    const fmtFor = { A: fmtInt, B: (v) => v.toFixed(1), C: (v) => v.toFixed(0), D: fmtInt, churn: (v) => v.toFixed(0) };
 
     function recompute() {
-      const members = state.A * 12 * (state.B / 100) * (state.C / 100);
-      const revenue = members * state.D;
-      container.querySelector('[data-out="members"]').textContent = fmtInt(members);
-      container.querySelector('[data-out="revenue"]').textContent = fmtMXN(revenue);
-      container.querySelector('[data-out="monthly"]').textContent = fmtMXN(revenue / 12);
+      const m = state.A * (state.B / 100) * (state.C / 100); // nuevos asociados / mes
+      const valueMonthly = state.D / 12;                     // valor mensual por asociado
+      const retained = m * (1 - state.churn / 100);          // tamaño del lote tras su primer mes
+
+      let cumYear1 = 0;
+      const rows = [];
+      for (let n = 1; n <= 12; n++) {
+        const active = m + retained * (n - 1); // lote n fresco + lotes previos ya con churn
+        const rev = active * valueMonthly;
+        cumYear1 += rev;
+        rows.push({ n, nuevos: m, active, rev });
+      }
+      const active12 = rows[11].active;
+      const steadyMonthly = active12 * valueMonthly; // régimen sostenido del mes 13 en adelante
+
+      container.querySelector('[data-out="new"]').textContent = fmtInt(m);
+      container.querySelector('[data-out="active"]').textContent = fmtInt(active12);
+      container.querySelector('[data-out="steady"]').textContent = fmtMXN(steadyMonthly);
+      container.querySelector('[data-out="year1"]').textContent = fmtMXN(cumYear1);
+
+      let html = '<table class="roi-table"><thead><tr>' +
+        '<th>' + t.thMonth + '</th><th>' + t.thNew + '</th><th>' + t.thActive + '</th><th>' + t.thRev + '</th>' +
+        '</tr></thead><tbody>';
+      for (const r of rows) {
+        html += '<tr><td>' + r.n + '</td><td>' + fmtInt(r.nuevos) + '</td><td>' + fmtInt(r.active) + '</td><td>' + fmtMXN(r.rev) + '</td></tr>';
+      }
+      html += '</tbody><tfoot><tr><td colspan="3">' + t.tfYear + '</td><td>' + fmtMXN(cumYear1) + '</td></tr></tfoot></table>';
+      container.querySelector('[data-roi-table]').innerHTML = html;
     }
 
     container.addEventListener("input", (e) => {

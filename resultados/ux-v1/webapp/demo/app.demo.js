@@ -2070,7 +2070,7 @@ function Welcome({
   onStart
 }) {
   return /*#__PURE__*/React.createElement("div", {
-    className: "min-h-screen flex flex-col justify-center px-6 py-10",
+    className: "min-h-full flex flex-col justify-center px-6 py-10",
     style: {
       background: BRAND.black,
       color: BRAND.white
@@ -2197,7 +2197,7 @@ function QuestionRenderer({
     }
   };
   return /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-col " + (hasInput ? "min-h-[100dvh]" : "h-[100dvh] overflow-hidden"),
+    className: "flex-1 min-h-0 flex flex-col " + (hasInput ? "" : "overflow-hidden"),
     style: {
       background: BRAND.white
     }
@@ -2219,7 +2219,7 @@ function QuestionRenderer({
       fontSize: "0.875rem"
     }
   }, question.helper), /*#__PURE__*/React.createElement("div", {
-    className: "mt-3 flex-1 " + (hasInput ? "" : "overflow-y-auto min-h-0")
+    className: "mt-3 " + (hasInput ? "" : "flex-1 overflow-y-auto min-h-0")
   }, question.type === "text" && /*#__PURE__*/React.createElement("input", {
     type: "text",
     value: value || "",
@@ -2424,7 +2424,7 @@ function Loading({
   msg
 }) {
   return /*#__PURE__*/React.createElement("div", {
-    className: "min-h-screen flex flex-col items-center justify-center px-6",
+    className: "min-h-full flex flex-col items-center justify-center px-6",
     style: {
       background: BRAND.white
     }
@@ -3796,7 +3796,7 @@ function ErrorScreen({
   onRestart
 }) {
   return /*#__PURE__*/React.createElement("div", {
-    className: "min-h-screen flex flex-col items-center justify-center px-6",
+    className: "min-h-full flex flex-col items-center justify-center px-6",
     style: {
       background: BRAND.white
     }
@@ -3896,7 +3896,7 @@ function ScheduleScreen({
     });
   };
   return /*#__PURE__*/React.createElement("div", {
-    className: "h-[100dvh] flex flex-col overflow-hidden",
+    className: "h-full flex flex-col overflow-hidden",
     style: {
       background: BRAND.white
     }
@@ -4150,7 +4150,7 @@ function ContactCaptureScreen({
   // Layout desplazable (min-h, sin overflow-hidden) para que el botón "Continuar"
   // siga siendo accesible cuando el teclado del móvil cubre la parte baja.
   return /*#__PURE__*/React.createElement("div", {
-    className: "min-h-[100dvh] flex flex-col",
+    className: "min-h-full flex flex-col",
     style: {
       background: BRAND.white
     }
@@ -4484,7 +4484,7 @@ function BriefingScreen({
     text: blockSummary
   });
   return /*#__PURE__*/React.createElement("div", {
-    className: "min-h-screen",
+    className: "min-h-full",
     style: {
       background: BRAND.gray1,
       paddingTop: "2.5rem",
@@ -5171,7 +5171,7 @@ function App() {
     onBack: () => setPhase("schedule")
   });
   return /*#__PURE__*/React.createElement("div", {
-    className: "min-h-screen flex flex-col",
+    className: "h-full flex flex-col overflow-hidden",
     style: {
       background: BRAND.white
     }
