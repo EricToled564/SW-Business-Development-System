@@ -14,7 +14,7 @@ El proyecto entrega cuatro frentes a la vez, ejecutados por cuatro equipos coord
 - **El contenido visual a escala** — el tratamiento de ~650 fotografías del banco del cliente, ~150 imágenes nuevas por IA, 12 animaciones y 1 video institucional, vía la aplicación a la medida (**[Estrategia Técnica · §4](#technical:4-contenido-visual-a-escala)**).
 - **BES, el agente de voz y texto con IA** — el agente conversacional **integrado al sitio web (canal web)**, conectado a la misma lógica de club/clase y a la misma captación de leads que el sitio, que además envía 2 recordatorios automatizados por WhatsApp (**[Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
 
-Estas cuatro áreas son interdependientes: el sitio necesita el contenido y las imágenes; el contenido necesita la estructura del sitio; las imágenes necesitan los layouts; y BES necesita la misma lógica que usa el sitio para dar la misma respuesta por cualquier vía. Se ejecutan en paralelo, con puntos de control compartidos, bajo un único coordinador general.
+Estas cuatro áreas son interdependientes: el sitio necesita el contenido y las imágenes; el contenido necesita la estructura del sitio; las imágenes necesitan los layouts; y BES requiere la misma lógica que utiliza el sitio para entregar la misma respuesta por cualquier vía. Se ejecutan en paralelo, con puntos de control compartidos, bajo un único coordinador general.
 
 ## 2 · Estructura del equipo y modelo de gobierno
 
@@ -76,7 +76,7 @@ Corre de la Semana 1 a la Semana 8, con los cuatro equipos en paralelo y las dep
 - *Web:* páginas restantes y flujo completo de experiencia ideal; integración de datos completa; endurecer rendimiento y accesibilidad.
 - *SEO:* artículos de apoyo, datos estructurados finalizados, optimización de Google Business completa.
 - *Visual:* colocar todas las imágenes restantes.
-- *BES:* cobertura conversacional completa; afinar calidad de voz y velocidad; pruebas con tráfico real (Sección II del contrato: 4 semanas de desarrollo + 2 de pruebas); confirmar que los leads de BES llegan al CRM idénticos a los del sitio.
+- *BES:* cobertura conversacional completa; ajustar la calidad de voz y la velocidad; pruebas con tráfico real (Sección II del contrato: 4 semanas de desarrollo + 2 de pruebas); confirmar que los leads de BES llegan al CRM idénticos a los del sitio.
 - **Criterio de salida (fin S6):** todas las páginas completas; sitio revisable en enlace de vista previa; BES manejando conversaciones reales en el sitio (voz y texto).
 
 **Semana 7 — Pase de calidad y congelamiento previo al lanzamiento.**
@@ -92,7 +92,7 @@ Corre de la Semana 1 a la Semana 8, con los cuatro equipos en paralelo y las dep
 - **🚦 Aprobación 4 (S8):** lanzamiento en firme. **Ventana: mismo día hábil.**
 - **Criterio de salida:** criterios de aceptación del lanzamiento (§6) cumplidos; inicia la etapa de estabilización de 2 a 4 semanas.
 
-**El riesgo de cronograma a vigilar.** La verificación de las fichas de Google Business la controla Google, no el proyecto (ver **[Aportaciones de Sports World](#aportaciones:titularidad-en-google-para-las-49-fichas)**). Se inicia en la Semana 1 porque puede tardar semanas; si se alarga, las fichas se finalizan cerca del lanzamiento, pero como el resto del proyecto es independiente de ellas, no detiene el sitio ni el contenido (ver el registro de riesgos, §7).
+**El riesgo de cronograma a vigilar.** La verificación de las fichas de Google Business está bajo control de Google, no del proyecto (ver **[Aportaciones de Sports World](#aportaciones:titularidad-en-google-para-las-49-fichas)**). Se inicia en la Semana 1 porque puede tardar semanas; si se alarga, las fichas se finalizan cerca del lanzamiento, pero, dado que el resto del proyecto es independiente de ellas, no detiene el sitio ni el contenido (ver el registro de riesgos, §7).
 
 ## 4 · El servidor donde corre el sitio
 
@@ -100,14 +100,14 @@ El sitio web corre en el propio servidor de Sports World. La especificación est
 
 - **Sistema operativo:** Linux (cualquier distribución mainstream actual).
 - **Runtime:** Node.js 20.9 o posterior, que el framework requiere; el equipo lo instala y configura.
-- **Procesador:** aproximadamente 8 núcleos de CPU virtuales. Un pico de cinco veces es principalmente un evento de procesador —la parte dinámica del sitio y la optimización de imágenes al vuelo consumen CPU, y durante un repunte muchas se ejecutan a la vez; ocho núcleos dan el margen para absorber eso sin que las solicitudes se encolen. Con tráfico normal el sitio se apoya en el caché, así que la mayoría de las vistas se sirven desde caché y los núcleos quedan libres para el trabajo dinámico y los picos.
-- **Memoria:** aproximadamente 16 GB de RAM. Bajo un pico de cinco veces, muchas solicitudes se ejecutan de forma concurrente, el caché trabaja a tope y varias operaciones de imagen ocurren a la vez —todo lo cual consume memoria; 16 GB proporcionan un margen real y protegen contra el peor modo de falla, quedarse sin memoria durante un repunte.
+- **Procesador:** aproximadamente 8 núcleos de CPU virtuales. Un pico de cinco veces es principalmente un evento de procesador —la parte dinámica del sitio y la optimización de imágenes al vuelo consumen CPU, y durante un repunte muchas se ejecutan de forma simultánea; ocho núcleos brindan el margen para absorberlo sin que las solicitudes se encolen. Con tráfico normal el sitio se apoya en el caché, de modo que la mayoría de las vistas se sirven desde caché y los núcleos quedan disponibles para el trabajo dinámico y los picos.
+- **Memoria:** aproximadamente 16 GB de RAM. Bajo un pico de cinco veces, muchas solicitudes se ejecutan de forma concurrente, el caché opera a plena capacidad y varias operaciones de imagen ocurren de forma simultánea —todo lo cual consume memoria; 16 GB proporcionan un margen real y protegen contra el peor modo de falla: quedarse sin memoria durante un repunte.
 - **Almacenamiento:** aproximadamente 80 GB de SSD —espacio amplio para la aplicación, un caché de imágenes generoso, logs (que crecen más rápido durante los picos) y respaldos.
 - **Red y seguridad:** un certificado HTTPS estándar, los puertos web normales abiertos y suficiente ancho de banda de salida para servir el tráfico pico.
 
-Un solo servidor de este tamaño maneja 160,000 visitas al mes con picos de cinco veces cómodamente, porque el caché agresivo absorbe la carga rutinaria y el margen de 8 núcleos / 16 GB absorbe los repuntes. Esto se cubre con un servidor virtual estándar de gama media de cualquier proveedor de hosting mainstream —no requiere hardware dedicado ni de gama alta. Si el tráfico más adelante crece muy por encima de la meta, la misma arquitectura escala agregando una segunda instancia detrás de un balanceador de carga simple; esa es una optimización futura, no un requisito de lanzamiento.
+Un solo servidor de este tamaño atiende con holgura 160,000 visitas al mes con picos de cinco veces, porque el caché agresivo absorbe la carga rutinaria y el margen de 8 núcleos / 16 GB absorbe los repuntes. Esto se cubre con un servidor virtual estándar de gama media de cualquier proveedor de hosting mainstream —no requiere hardware dedicado ni de gama alta. Si más adelante el tráfico crece muy por encima de la meta, la misma arquitectura escala agregando una segunda instancia detrás de un balanceador de carga simple; se trata de una optimización futura, no de un requisito de lanzamiento.
 
-Estos números son una estimación de ingeniería sólida. La forma de convertir la estimación en una garantía es una breve prueba de carga antes del lanzamiento —simulando 160,000 visitas al mes con el pico de cinco veces y midiendo la CPU y la memoria realmente utilizadas. El equipo la ejecuta como parte de la calidad previa al lanzamiento (Semana 7) y ajusta la especificación al alza o a la baja según el resultado medido.
+Estas cifras constituyen una estimación de ingeniería sólida. La vía para convertir la estimación en una garantía es una breve prueba de carga antes del lanzamiento —simulando 160,000 visitas al mes con el pico de cinco veces y midiendo la CPU y la memoria realmente utilizadas. El equipo la ejecuta como parte de la calidad previa al lanzamiento (Semana 7) y ajusta la especificación al alza o a la baja según el resultado medido.
 
 > **Nota sobre BES:** la especificación anterior cubre **únicamente el sitio web**. **BES no reside en este servidor**: corre en la **plataforma de su proveedor de voz (ElevenLabs)** y en los demás servicios gestionados que lo componen (reconocimiento de voz, modelo de razonamiento y orquestación). Por lo tanto, el servidor del sitio **no** debe incrementarse para alojar a BES. Los **costos de operación de BES** (plataforma de voz, interfaz del modelo de razonamiento y hospedaje de la lógica) los cubre directamente **EL CLIENTE** a esos proveedores (Contrato, Cláusula Sexta Bis).
 

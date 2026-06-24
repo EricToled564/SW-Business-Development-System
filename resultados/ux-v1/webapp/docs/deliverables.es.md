@@ -1,17 +1,17 @@
 # Sports World México · Entregables, Soporte y Operación · V1.0
 ## Lo que recibe Sports World, cómo se entrega y cómo opera después
 
-Documento fundacional. Enumera, a detalle, todo lo que recibe Sports World — el sitio web, el contenido, las fichas de Google, el contenido visual, el agente BES — además de la migración del sitio y los servicios que continúan después del lanzamiento: estabilización, soporte 24/7 y la bolsa de horas de mejora. Se lee por sí solo y responde, de forma directa, los puntos que planteó el equipo de TI de Sports World.
+Documento fundacional. Enumera, en detalle, todo lo que recibe Sports World — el sitio web, el contenido, las fichas de Google, el contenido visual, el agente BES — además de la migración del sitio y los servicios que continúan después del lanzamiento: estabilización, soporte 24/7 y la bolsa de horas de mejora. Es autoexplicativo y responde, de forma directa, los puntos planteados por el equipo de TI de Sports World.
 
 ## 1 · Lo que recibe Sports World (entrega única)
 
-Al cierre del proyecto, Sports World es propietario de lo siguiente. Todo ello queda como propiedad de Sports World.
+Al cierre del proyecto, Sports World adquiere la propiedad de lo siguiente. Todos estos componentes quedan en propiedad de Sports World.
 
 - **El sitio web completo** — rápido y optimizado para buscadores, construido a partir de plantillas aprobadas: el home, una página para cada uno de los 49 clubes, los hubs de amenidades y objetivos, y el flujo de experiencia ideal que convierte a un visitante anónimo en un lead agendado y cualificado. El inventario completo de 148 páginas está en Mapa del Sitio; la tecnología en Estrategia Técnica. Se entrega alojado en el servidor propio de Sports World.
 - **El sitio en dos versiones, móvil y escritorio** — un único código responsivo mobile-first, con las metas de calidad medibles (Core Web Vitals, optimización de imágenes, WCAG 2.2 AA) verificadas en cada cambio.
 - **El panel de contenido no-code (CMS)** — para editar texto y reemplazar imágenes sin programar, recomendado como un CMS headless autoalojado en el servidor propio de Sports World (Mapa del Sitio).
 - **Todo el contenido escrito optimizado y los datos estructurados** — las páginas por club, los hubs de amenidades y objetivos, los artículos de apoyo, y el schema markup JSON-LD que permite a Google entender cada servicio en cada ubicación.
-- **Las 49 fichas de Google Business** — creadas y optimizadas, una por club, para que cada ubicación quede correctamente representada en Google Search y Maps. (Dependencia honesta: Google no permite crear nuevas fichas de forma automática; su verificación es controlada por Google y está sujeta a tiempos, razón por la cual el proceso inicia en la Semana 1 — ver Aportaciones de Sports World.)
+- **Las 49 fichas de Google Business** — creadas y optimizadas, una por club, para que cada ubicación quede correctamente representada en Google Search y Maps. (Dependencia a considerar: Google no permite crear nuevas fichas de forma automática; su verificación es controlada por Google y está sujeta a plazos, razón por la cual el proceso inicia en la Semana 1 — ver Aportaciones de Sports World.)
 - **El contenido visual alineado a la marca** — un conjunto completo en los 49 clubes y las páginas de apoyo, producido mediante la aplicación a la medida.
 - **BES, el agente de voz y texto** — integrado al sitio web (canal web), capturando leads en el mismo CRM con las mismas respuestas que el sitio; envía 2 recordatorios automatizados por WhatsApp (24 h y 2 h antes de la visita) y el resumen del prospecto por correo al club. No opera por teléfono ni como chat conversacional de WhatsApp.
 - **La migración completa del sitio** — del sitio actual al nuevo, protegiendo el correo corporativo y cualquier otra función ligada al DNS (§2).
@@ -21,17 +21,17 @@ Al cierre del proyecto, Sports World es propietario de lo siguiente. Todo ello q
 
 El proyecto se hace cargo de mover el sitio actual al nuevo, asegurando en todo momento que nada más ligado al DNS — sobre todo el correo corporativo — se vea afectado.
 
-**Qué se protege.** El DNS no solo apunta al sitio web: también enruta el correo corporativo y, potencialmente, otros servicios (subdominios de apps, reservaciones, etc.). La migración del sitio web toca únicamente los registros que apuntan al sitio, y deja intactos los registros de correo (MX) y todo lo relacionado con el correo corporativo, así como cualquier otro servicio ligado al dominio que no sea el sitio web.
+**Qué se protege.** El DNS no solo apunta al sitio web: también enruta el correo corporativo y, potencialmente, otros servicios (subdominios de aplicaciones, reservaciones, entre otros). La migración del sitio web modifica únicamente los registros que apuntan al sitio, y deja intactos los registros de correo (MX) y todo lo relacionado con el correo corporativo, así como cualquier otro servicio ligado al dominio distinto del sitio web.
 
-**Cómo se protege.** Antes de migrar, se levanta un inventario completo de los registros DNS actuales, identificando cuáles son del sitio web y cuáles son de correo y otros servicios. Solo se migran los registros del sitio web; los registros de correo y demás no se modifican. El time-to-live (TTL) de los registros del sitio web se reduce 24 horas antes del cambio, para que la transición sea rápida y reversible. Se mantiene un conjunto de redirecciones 301 para que las direcciones del sitio anterior lleven a las nuevas, de modo que no se pierda el posicionamiento ganado ni ningún visitante llegue a una página inexistente. El cambio se ejecuta en coordinación con Sports World, e inmediatamente después se confirma que el correo corporativo y los demás servicios siguen funcionando sin interrupción. La meta es explícita: la migración del sitio web es invisible para el correo corporativo y para cualquier otra función del dominio.
+**Cómo se protege.** Antes de migrar, se levanta un inventario completo de los registros DNS actuales, identificando cuáles son del sitio web y cuáles son de correo y otros servicios. Solo se migran los registros del sitio web; los registros de correo y demás no se modifican. El time-to-live (TTL) de los registros del sitio web se reduce 24 horas antes del cambio, para que la transición sea rápida y reversible. Se mantiene un conjunto de redirecciones 301 para que las direcciones del sitio anterior conduzcan a las nuevas, de modo que no se pierda el posicionamiento alcanzado ni ningún visitante llegue a una página inexistente. El cambio se ejecuta en coordinación con Sports World, e inmediatamente después se confirma que el correo corporativo y los demás servicios siguen funcionando sin interrupción. La meta es explícita: la migración del sitio web es invisible para el correo corporativo y para cualquier otra función del dominio.
 
 ## 3 · El sistema de soporte 24/7
 
 El proyecto incluye un sistema de soporte con **primer respondiente por agente de voz disponible 24/7** y **escalamiento a soporte humano en horario hábil**, provisto por el equipo de Final Upgrade como un servicio continuo posterior a la entrega, por el cual Sports World paga una cuota mensual.
 
-**Qué tipo de soporte es.** Es soporte técnico para el sitio y el sistema entregados — es decir, soporte para Sports World cuando algo falla en el sitio o sus integraciones. No es soporte a usuario final (prospectos o socios); la atención de cara al prospecto la manejan el sitio y el agente BES.
+**Qué tipo de soporte es.** Es soporte técnico para el sitio y el sistema entregados — es decir, soporte para Sports World cuando se presenta una falla en el sitio o sus integraciones. No es soporte a usuario final (prospectos o socios); la atención de cara al prospecto la atienden el sitio y el agente BES.
 
-**Cómo funciona: primer respondiente más escalamiento.** Cuando Sports World reporta una incidencia, el primer punto de contacto es un agente de voz que recibe el reporte, lo clasifica y lo resuelve si es de primer nivel o lo escala. Si el problema requiere intervención humana, se escala a un equipo técnico, con el nivel de escalamiento dependiendo de la severidad. Cada incidencia genera un ticket de ocurrencia, de modo que tanto Sports World como el equipo tienen visibilidad del estatus, el historial y la resolución de cada reporte.
+**Cómo funciona: primer respondiente más escalamiento.** Cuando Sports World reporta una incidencia, el primer punto de contacto es un agente de voz que recibe el reporte, lo clasifica y lo resuelve si es de primer nivel o lo escala. Si el problema requiere intervención humana, se escala a un equipo técnico, en función de la severidad. Cada incidencia genera un ticket de ocurrencia, de modo que tanto Sports World como el equipo tienen visibilidad del estatus, el historial y la resolución de cada reporte.
 
 **Horarios y niveles de servicio (SLA).** El **primer respondiente por agente de voz** opera 24 horas al día, 7 días a la semana, 365 días al año; la **intervención humana procede en horario hábil** según la severidad. Los tiempos de respuesta se proponen por severidad, siguiendo el estándar típico de la industria para soporte de misión crítica. **Estos tiempos son una propuesta a acordar con Sports World**, ajustados a la criticidad que Sports World defina para el sitio:
 
@@ -50,7 +50,7 @@ El soporte incluye, en cualquier caso: **primer respondiente por agente de voz 2
 
 Más allá del soporte 24/7 (que atiende las fallas), el servicio mensual incluye una bolsa de horas de mejora — tiempo de trabajo técnico que Sports World puede destinar a evolucionar el sitio: nuevas funcionalidades, ajustes, optimizaciones, nuevo contenido, o cualquier mejora que el negocio necesite con el tiempo.
 
-**Por qué existe.** El soporte 24/7 atiende lo que falla; la bolsa de horas atiende lo que se va a mejorar o agregar. Son cosas distintas: corregir un bug es soporte; agregar una nueva sección o funcionalidad es una mejora evolutiva. Separarlas evita el conflicto común de confundir un bug (corregido sin costo bajo soporte) con una nueva funcionalidad (que consume horas de mejora).
+**Por qué existe.** El soporte 24/7 atiende lo que falla; la bolsa de horas atiende lo que se mejora o se agrega. Son conceptos distintos: corregir un defecto es soporte; agregar una nueva sección o funcionalidad es una mejora evolutiva. Separarlos evita el conflicto frecuente de confundir un defecto (corregido sin costo bajo soporte) con una nueva funcionalidad (que consume horas de mejora).
 
 **Cantidad propuesta.** La bolsa de mejora se fija en **8 horas por mes**, mensuales y no acumulables. Las horas que excedan dicha bolsa se facturan conforme a las tarifas acordadas con Sports World.
 
@@ -60,7 +60,7 @@ Más allá del soporte 24/7 (que atiende las fallas), el servicio mensual incluy
 
 Una vez liberado el proyecto (lanzado el sitio), se contempla una etapa de estabilización — un periodo posterior al lanzamiento con atención reforzada, durante el cual el equipo vigila el sitio de cerca bajo condiciones reales y corrige cualquier ajuste que surja del tráfico real.
 
-**Qué es y para qué sirve.** Por bien probado que esté un sitio antes del lanzamiento, la exposición al tráfico real, a los dispositivos reales de los usuarios y a las integraciones en vivo siempre revela ajustes finos. La etapa de estabilización es el periodo en el que esos ajustes se atienden de inmediato, antes de pasar a la operación normal de soporte mensual.
+**Qué es y para qué sirve.** Por exhaustivas que sean las pruebas previas al lanzamiento, la exposición al tráfico real, a los dispositivos reales de los usuarios y a las integraciones en vivo siempre revela ajustes finos. La etapa de estabilización es el periodo en el que esos ajustes se atienden de inmediato, antes de pasar a la operación normal de soporte mensual.
 
 **Duración propuesta.** Siguiendo el estándar de la industria, se propone una etapa de estabilización de **2 a 4 semanas** después del lanzamiento. **Esta duración es una propuesta a acordar** con Sports World.
 

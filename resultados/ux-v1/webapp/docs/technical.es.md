@@ -37,7 +37,7 @@ La arquitectura está construida para que la lógica de recomendación no depend
 
 El objetivo de negocio (llevar la cobertura unbranded del 31.1% al 55–65%) se sostiene en una capa técnica concreta:
 
-- **Datos estructurados (schema markup) en JSON-LD**, generados en el render de cada página y validables contra los **Rich Results** de Google, por tipo de página: **HealthClub** y **LocalBusiness** para las páginas de club —con coordenadas GPS verificadas, horarios y teléfono—, **Course** para las páginas de clase, **FAQPage** para las secciones de preguntas frecuentes y **BreadcrumbList** para la navegación. Esto es lo que le indica a Google que Sports World genuinamente ofrece cada servicio en cada ubicación.
+- **Datos estructurados (schema markup) en JSON-LD**, generados en el render de cada página y validables contra los **Rich Results** de Google, por tipo de página: **HealthClub** y **LocalBusiness** para las páginas de club —con coordenadas GPS verificadas, horarios y teléfono—, **Course** para las páginas de clase, **FAQPage** para las secciones de preguntas frecuentes y **BreadcrumbList** para la navegación. Esto es lo que le confirma a Google que Sports World efectivamente ofrece cada servicio en cada ubicación.
 - **Arquitectura y enlazado** de las 148 páginas con jerarquía, rutas limpias y enlazado interno (el inventario completo está en **[Mapa del Sitio](#site)**), más los **hubs semánticos** por amenidad y por ubicación que el sitio anterior no tenía.
 - **Producción de contenido a escala con control editorial.** **Seis plantillas maestras** para contenido asistido por IA en español de México; las 148 páginas con contenido único; revisión humana por especialistas de SEO antes de publicar, de modo que el volumen no se logre a costa de la precisión ni de la voz de marca.
 - **Estándar reforzado YMYL para salud.** La matriz de beneficios de las **54 clases para adultos cruzada con los 5 perfiles** se valida contra literatura médica, y el hub **"Bajar de Peso"** se publica con la firma del médico designado por Sports World (cédula vigente visible). El modelo de lenguaje que asiste el contenido opera bajo restricciones YMYL y saneamiento (ver **[Arquitectura de Experiencia · §4.15](#experience:415-restricciones-ymyl-del-llm-y-saneamiento)**).
@@ -49,10 +49,10 @@ El objetivo de negocio (llevar la cobertura unbranded del 31.1% al 55–65%) se 
 El contenido visual combina tres fuentes, no una sola, conforme al alcance contractual (Anexo Dos I.3):
 
 - **Tratamiento de ~650 fotografías del banco de Sports World** —normalización de estilo, recorte, resolución y formato— para que el material existente conviva con una sola identidad visual.
-- **~150 imágenes nuevas producidas por IA** mediante una **aplicación a la medida** construida para este proyecto, que aplica automáticamente un **estilo artístico consistente** en todo el resultado y la **resolución correcta** para cada uso (hero, cards, thumbnails), de modo que las imágenes sean nítidas donde lo necesitan y ligeras donde la velocidad importa.
+- **~150 imágenes nuevas producidas por IA** mediante una **aplicación a la medida** construida para este proyecto, que aplica automáticamente un **estilo artístico consistente** en todo el resultado y la **resolución correcta** para cada uso (hero, cards, thumbnails), de modo que las imágenes resulten nítidas donde se requiere y ligeras donde prima la velocidad.
 - **12 animaciones de 10 segundos** y **1 video institucional de 45–60 segundos** para el hub "Bajar de Peso".
 
-Todo el material se entrega en **AVIF/WebP responsivos**. Este pipeline automatizado y supervisado es lo que hace viable producir el contenido visual de 49 clubes y cientos de páginas en el tiempo disponible: reemplaza miles de ediciones manuales sin sacrificar consistencia. El motor interno de la aplicación se confirma al inicio del proyecto; aquí se describe por su función.
+Todo el material se entrega en **AVIF/WebP responsivos**. Este pipeline automatizado y supervisado es lo que hace viable producir el contenido visual de 49 clubes y cientos de páginas en el tiempo disponible: sustituye miles de ediciones manuales sin sacrificar consistencia. El motor interno de la aplicación se confirma al inicio del proyecto; aquí se describe por su función.
 
 Además del contenido de cara al público, el proyecto entrega un **tablero ejecutivo en tiempo real** para Sports World —tráfico, captura de leads y avance del proyecto— de modo que la dirección vea el desempeño sin depender de reportes manuales.
 
@@ -64,7 +64,7 @@ Por debajo, el agente se ensambla a partir de cuatro capas, todas operando dentr
 
 - **Reconocimiento de voz (ASR):** convierte el habla del usuario en el sitio en texto en tiempo real (por ejemplo, Deepgram). Solo modo voz.
 - **Razonamiento (un modelo de lenguaje):** entiende lo que el prospecto quiere, decide cómo responder y usa la **misma lógica de clubes, clases y leads que impulsa el sitio** (por ejemplo, Claude o un modelo equivalente de frontera), de modo que la respuesta sea consistente con la del sitio. Es la capa compartida entre el modo voz y el modo texto.
-- **Síntesis de voz (TTS):** convierte la respuesta en voz natural en español-México, con una calidad que no suena robótica (por ejemplo, ElevenLabs). Solo modo voz.
+- **Síntesis de voz (TTS):** convierte la respuesta en voz natural en español-México, con una calidad que evita el efecto robótico (por ejemplo, ElevenLabs). Solo modo voz.
 - **Capa de orquestación (en el sitio):** integra el agente al sitio web, gestiona el flujo de cada conversación de voz y texto, dispara los 2 recordatorios automatizados por WhatsApp y el resumen por correo al club, y ejecuta el traspaso a un humano cuando se requiere (por ejemplo, Vapi o Retell para la orquestación conversacional).
 
 **Base de conocimiento (RAG).** BES no inventa sus respuestas: además de leer los datos operativos en vivo, consulta una base de conocimiento —catálogo de membresías con precios y términos, clases con descripciones, políticas de cancelación y congelamiento, e información operativa por club— que Sports World mantiene con actualización semanal mínima durante el proyecto (Anexo Uno D.6). Escribe los leads en el mismo CRM y por la misma API que el sitio (D.4), de modo que BES y el sitio nunca se contradigan y un lead capturado por BES llegue al pipeline exactamente igual que uno del sitio.
@@ -87,15 +87,15 @@ La migración es un entregable técnico de primer orden (Anexo Dos I.2 e I.3) y 
 
 ## 7 · Cómo se construye: desarrollo asistido por IA con supervisión humana
 
-El proyecto se construye con agentes de IA de programación bajo supervisión humana continua. Este es el método que permite un cronograma comprimido de ocho semanas sin sacrificar la calidad. No es "la IA escribe el sitio sin vigilancia": un ingeniero senior define cada objetivo, los agentes hacen el trabajo pesado y un humano revisa y aprueba cada resultado antes de que salga a producción.
+El proyecto se construye con agentes de IA de programación bajo supervisión humana continua. Este es el método que permite un cronograma comprimido de ocho semanas sin sacrificar la calidad. No se trata de que "la IA escriba el sitio sin supervisión": un ingeniero senior define cada objetivo, los agentes ejecutan el grueso del trabajo y un responsable humano revisa y aprueba cada resultado antes de que salga a producción.
 
-Se usan dos agentes complementarios. **Claude Code** para la implementación —escribir y modificar el código, ejecutar pruebas y corregir fallos, en el propio entorno del proyecto bajo el control directo del ingeniero—. **Codex** como revisor independiente —un segundo agente, distinto, que revisa el plan y la implementación en busca de huecos, errores y debilidades que el agente que implementa podría pasar por alto—. Usar dos agentes distintos es deliberado: el que escribe el código no es el que lo califica, igual que un segundo ingeniero revisando el trabajo de un colega, pero a velocidad de IA.
+Se usan dos agentes complementarios. **Claude Code** para la implementación —escribir y modificar el código, ejecutar pruebas y corregir fallos, en el propio entorno del proyecto bajo el control directo del ingeniero—. **Codex** como revisor independiente —un segundo agente, distinto, que revisa el plan y la implementación en busca de vacíos, errores y debilidades que el agente que implementa podría pasar por alto—. Emplear dos agentes distintos es una decisión deliberada: quien escribe el código no es quien lo evalúa, de forma análoga a un segundo ingeniero que revisa el trabajo de un colega, pero a velocidad de IA.
 
 Cada pieza de trabajo significativa sigue el mismo ciclo de cinco pasos, con un humano en los puntos de decisión: **investigar y planear** (el plan se escribe antes de cualquier código, y el humano lo aprueba), **implementar** (Claude Code escribe el código en piezas pequeñas y revisables), **revisar** (Codex revisa de forma independiente contra el plan y los requisitos), **verificar con evidencia** (el trabajo debe mostrar prueba de que funciona —la salida de las pruebas, el resultado renderizado, una puntuación de rendimiento medida— no una mera afirmación) y **publicar** (solo tras la aprobación humana, a través de los controles de calidad automatizados). La supervisión nunca es opcional, y es más estricta para todo lo que toca datos de usuario, captura de leads o contenido relacionado con la salud.
 
 ## 8 · Controles de calidad en cada cambio
 
-La calidad se aplica automáticamente, no se deja a la memoria. Cada cambio al sitio pasa por un conjunto de controles antes de poder salir a producción:
+La calidad se aplica de forma automática; no queda librada a la memoria. Cada cambio al sitio pasa por un conjunto de controles antes de poder salir a producción:
 
 - **Pruebas automatizadas** que confirman que la funcionalidad existente sigue operando.
 - **Verificaciones de rendimiento** (Core Web Vitals) en cada cambio, contra los umbrales del §1.
@@ -103,7 +103,7 @@ La calidad se aplica automáticamente, no se deja a la memoria. Cada cambio al s
 - **Verificaciones de preparación para búsqueda** que confirman que los datos estructurados y la estructura de página siguen siendo correctos.
 - **Enlaces de vista previa** para que cualquier revisor —incluido Sports World— vea exactamente cómo luce un cambio antes de publicarse (es el mecanismo de las aprobaciones del **[Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente)**).
 
-Si algún control falla, el cambio no se publica hasta corregirse. Esto es lo que evita que un ritmo de ocho semanas acumule defectos ocultos.
+Si algún control falla, el cambio no se publica hasta corregirse. Este mecanismo evita que un ritmo de ocho semanas acumule defectos ocultos.
 
 ## 9 · Entornos, entrega continua y seguridad
 

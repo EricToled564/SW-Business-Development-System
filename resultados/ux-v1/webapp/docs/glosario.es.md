@@ -1,7 +1,7 @@
 # Sports World México · Glosario · V1.0
 ## Glosario maestro de términos técnicos y de negocio del proyecto
 
-Glosario único y compartido por toda la documentación del proyecto. Cada documento puede usar estos términos asumiendo esta definición común. Ordenado alfabéticamente.
+Glosario único y compartido por toda la documentación del proyecto. Cada documento puede emplear estos términos conforme a esta definición común. Ordenado alfabéticamente.
 
 | Término | Definición |
 |---|---|
@@ -11,7 +11,7 @@ Glosario único y compartido por toda la documentación del proyecto. Cada docum
 | **AVIF / WebP** | Formatos de imagen comprimidos que optimizan el desempeño del sitio sin pérdida significativa de calidad. |
 | **BES** | Agente conversacional de inteligencia artificial del proyecto, por voz y texto, **integrado al sitio web (canal web)**; de cara al prospecto califica, agenda y captura leads (y envía 2 recordatorios automatizados por WhatsApp), y en su rol interno asiste con la documentación. No opera por teléfono ni como chat conversacional de WhatsApp. |
 | **branded / unbranded / non-branded** | Búsquedas *con marca* (incluyen "Sports World") vs *sin marca* (genéricas, p. ej. "gimnasio cerca de mí"). La cobertura unbranded mide la presencia en búsquedas genéricas. |
-| **CDN (red de distribución de contenido)** | Red que entrega el sitio desde servidores cercanos al usuario para acelerar la carga (p. ej. Cloudflare). |
+| **CDN (red de distribución de contenido)** | Red que entrega el sitio desde servidores cercanos al usuario para acelerar la carga (por ejemplo, Cloudflare). |
 | **CFDI** | Comprobante Fiscal Digital por Internet; la factura electrónica con validez fiscal ante el SAT en México. |
 | **CI / CD (integración y entrega continuas)** | Flujo automatizado que prueba e implementa los cambios de código de forma segura y repetible. |
 | **CMS (desacoplado / headless / no-code)** | Sistema de gestión de contenido. *Desacoplado* o *headless*: la administración opera separada de la presentación. *No-code*: la interfaz permite editar texto e imágenes sin programar. En este proyecto los tres términos describen el mismo CMS. |
@@ -25,8 +25,8 @@ Glosario único y compartido por toda la documentación del proyecto. Cada docum
 | **HMAC / HMAC-SHA256** | Firma criptográfica que autentica un mensaje (p. ej. un webhook) y garantiza que no fue alterado. |
 | **HSTS** | Política de seguridad que obliga al navegador a conectarse al sitio siempre por HTTPS. |
 | **HTTP / HTTPS** | Protocolo de transferencia de la web; HTTPS es su versión cifrada mediante certificado TLS/SSL, obligatoria para proteger los datos en tránsito. |
-| **hub** | Página concentradora que agrupa un tema (una amenidad, un objetivo, una categoría de clase) para capturar búsquedas de alta intención. |
-| **idempotencia (Idempotency-Key)** | Propiedad por la que repetir la misma operación (con la misma llave) no genera duplicados; clave para no crear leads repetidos. |
+| **hub** | Página concentradora que agrupa un tema (una amenidad, un objetivo o una categoría de clase) para capturar búsquedas de alta intención. |
+| **idempotencia (Idempotency-Key)** | Propiedad por la cual repetir la misma operación (con la misma llave) no genera duplicados; resulta esencial para no crear leads repetidos. |
 | **iguala** | Cuota mensual fija por los servicios recurrentes (hospedaje, mantenimiento y soporte). |
 | **ISR** | Regeneración incremental estática; técnica de Next.js que actualiza páginas generadas sin reconstruir todo el sitio. |
 | **JSON-LD** | Formato en que se inserta el schema markup en el código de la página. |
@@ -34,7 +34,7 @@ Glosario único y compartido por toda la documentación del proyecto. Cada docum
 | **latencia (conversacional vs SLA de API)** | Dos métricas distintas que no deben confundirse: la *latencia conversacional* de BES —el tiempo total para que la conversación se sienta humana, objetivo < 900 ms— y el *SLA de latencia de las APIs de Sports World* —percentil 95 < 500 ms en lectura y < 800 ms en la creación de prospecto (Anexo Uno D.5)—. La primera es responsabilidad del agente; la segunda, de las APIs del cliente. |
 | **lead / prospecto** | Persona que muestra interés y es capturada como contacto comercial. En este proyecto se usan como sinónimos. |
 | **LFPDPPP** | Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México). |
-| **LLM (modelo de lenguaje)** | Sistema de IA entrenado para procesar y generar lenguaje natural; el "razonamiento" del agente. |
+| **LLM (modelo de lenguaje)** | Sistema de IA entrenado para procesar y generar lenguaje natural; constituye el "razonamiento" del agente. |
 | **mTLS / OAuth 2.1** | Esquemas de autenticación entre sistemas (TLS mutuo y autorización por tokens) para integraciones seguras. |
 | **OpenAPI 3.1** | Estándar para documentar una API (endpoints, esquemas, errores y ejemplos) en un archivo legible por máquina. |
 | **PBX (conmutador)** | Central telefónica que opera las líneas de los clubes. |

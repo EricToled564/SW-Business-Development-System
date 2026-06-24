@@ -1,17 +1,17 @@
 # Sports World México · Mapa del Sitio · V1.0
 ## Las 148 páginas, entrega móvil + escritorio y el CMS sin código
 
-Documento fundacional. Define la arquitectura de información del sitio: los tipos de página, su organización en niveles y el inventario completo de las 148 páginas con sus direcciones. Se lee por sí solo y es un pilar del conjunto de UX specs.
+Documento fundacional. Define la arquitectura de información del sitio: los tipos de página, su organización en niveles y el inventario completo de las 148 páginas con sus direcciones. Es un documento autónomo y constituye uno de los pilares del conjunto de UX specs.
 
 ## Cómo se relaciona esto con la experiencia ideal
 
-El sitio tiene dos capas que conviven. La primera es el **sitio de contenido y SEO**: las 148 páginas que hacen que Sports World aparezca en búsquedas y le dan a cada club, clase y amenidad su propio lugar en Google. La segunda es el **flujo de experiencia ideal**: el recorrido personalizado que convierte a un visitante anónimo en un prospecto agendado, cuya navegación, cuestionario y reglas de negocio se especifican en el documento **Arquitectura de Experiencia (UX)**. Ambas capas comparten los mismos datos de clubes y clases y la misma captación de leads, de modo que cuentan una sola historia.
+El sitio se compone de dos capas complementarias. La primera es el **sitio de contenido y SEO**: las 148 páginas que posicionan a Sports World en búsquedas y otorgan a cada club, clase y amenidad un lugar propio en Google. La segunda es el **flujo de experiencia ideal**: el recorrido personalizado que convierte a un visitante anónimo en un prospecto agendado, cuya navegación, cuestionario y reglas de negocio se especifican en el documento **Arquitectura de Experiencia (UX)**. Ambas capas comparten los mismos datos de clubes y clases y la misma captación de leads, de modo que comunican un mensaje unificado.
 
-Una aclaración, para no confundir las capas: el flujo de experiencia ideal usa solo **dos amenidades** para resolver el club —la alberca y FitKidz— porque son las únicas por las que pregunta. Las amenidades listadas abajo como hubs (alberca, INTENZ, ring de box, etc.) son **páginas de SEO**, no criterios de resolución de club. Son cosas distintas que cumplen propósitos distintos.
+Conviene precisar la distinción entre ambas capas: el flujo de experiencia ideal emplea solo **dos amenidades** para resolver el club —la alberca y FitKidz—, pues son las únicas por las que pregunta. Las amenidades listadas más adelante como hubs (alberca, INTENZ, ring de box, etc.) son **páginas de SEO**, no criterios de resolución de club. Cumplen propósitos distintos.
 
 ## Las dos versiones: móvil y escritorio
 
-El sitio se entrega en **dos versiones, móvil y escritorio**, con un enfoque **mobile-first**: está diseñado primero para el teléfono y se expande a escritorio, nunca al revés. Es un único sitio responsivo —una sola base de código— que se adapta a ambos y se ve y funciona bien como una experiencia móvil pulida y como una experiencia de escritorio pulida. La razón es simple: la audiencia llega abrumadoramente desde el teléfono, así que diseñar primero para ese caso garantiza la mejor experiencia para la mayoría.
+El sitio se entrega en **dos versiones, móvil y escritorio**, con un enfoque **mobile-first**: se diseña primero para el teléfono y luego se expande a escritorio, nunca a la inversa. Es un único sitio responsivo —una sola base de código— que se adapta a ambos formatos y ofrece una experiencia pulida tanto en móvil como en escritorio. El motivo es claro: la audiencia accede mayoritariamente desde el teléfono, por lo que diseñar primero para ese caso asegura la mejor experiencia para la mayoría de los usuarios.
 
 **Objetivos de calidad, medibles y verificados en cada cambio:**
 - **Core Web Vitals:** LCP < 2.5s en móvil (percentil 75), INP < 200ms, CLS < 0.1.
@@ -20,15 +20,15 @@ El sitio se entrega en **dos versiones, móvil y escritorio**, con un enfoque **
 
 ## El panel de actualización sin código (CMS)
 
-Sports World recibe un **panel de administración de contenido que permite actualizar texto e imágenes sin programar**. El personal de Sports World edita el texto del sitio y reemplaza imágenes desde una interfaz visual, y lo que guarda se refleja en el sitio publicado.
+Sports World recibe un **panel de administración de contenido que permite actualizar texto e imágenes sin programar**. El personal de Sports World edita el texto del sitio y reemplaza imágenes desde una interfaz visual, y cada cambio guardado se refleja en el sitio publicado.
 
-Recomendación técnica (una propuesta, no una decisión cerrada): dado el requisito de que todo viva en la infraestructura de Sports World, se sugiere un **CMS headless con edición visual, alojado en el propio servidor de Sports World** —por ejemplo Payload o Strapi, ambos autoalojables en Node.js junto al sitio. El sitio consume el contenido del CMS a través de su API; al guardar un cambio, la página se revalida mediante `cacheTag` e ISR. Esto mantiene tanto el sitio como su panel dentro de la infraestructura de Sports World, sin dependencia de un servicio externo. La elección final del CMS se confirma al inicio del proyecto.
+Recomendación técnica (una propuesta, no una decisión definitiva): dado el requisito de que todo resida en la infraestructura de Sports World, se sugiere un **CMS headless con edición visual, alojado en el propio servidor de Sports World** —por ejemplo Payload o Strapi, ambos autoalojables en Node.js junto al sitio—. El sitio consume el contenido del CMS a través de su API; al guardar un cambio, la página se revalida mediante `cacheTag` e ISR. De este modo, tanto el sitio como su panel permanecen dentro de la infraestructura de Sports World, sin dependencia de un servicio externo. La elección final del CMS se confirma al inicio del proyecto.
 
 ---
 
 ## Las 148 páginas, por nivel
 
-El sitio está organizado en **11 niveles de arquitectura**. A continuación, el inventario completo con cada dirección (slug).
+El sitio está organizado en **11 niveles de arquitectura**. A continuación se presenta el inventario completo con cada dirección (slug).
 
 ### Nivel 01 — Home (1 página)
 1. **Home** — `/`
@@ -176,7 +176,7 @@ Las 44 clases grupales individuales más las 3 modalidades de entrenamiento pers
 114. Individual aquatic — `/clases/acuaticos-individual/`
 
 ### Nivel 06 — Hub de FitKidz (1 página)
-115. **Hub de FitKidz** — `/fitkidz/`. Un único hub que agrupa, con anclas internas, las clases infantiles por edad (FitKidz, Junior, Teens), por disciplina (acuáticas, deportes de equipo, artes marciales, danza, acondicionamiento funcional) y por club.
+115. **Hub de FitKidz** — `/fitkidz/`. Un único hub que agrupa, mediante anclas internas, las clases infantiles por edad (FitKidz, Junior, Teens), por disciplina (acuáticas, deportes de equipo, artes marciales, danza, acondicionamiento funcional) y por club.
 
 ### Nivel 07 — Hubs de perfil de usuario (5 páginas)
 Patrón: `/perfiles/[perfil]/`.
@@ -207,4 +207,4 @@ Un hub más 5 planes. Patrón: `/membresias/` y `/membresias/[plan]/`.
 
 ---
 
-> Total: **148 páginas** distribuidas en 11 niveles. El detalle de cada plantilla, sus componentes y su comportamiento se desarrolla en los pilares de diseño y comportamiento del conjunto de UX specs.
+> Total: **148 páginas** distribuidas en 11 niveles. El detalle de cada plantilla, sus componentes y su comportamiento se desarrolla en los pilares de diseño y de comportamiento del conjunto de UX specs.

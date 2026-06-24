@@ -1,7 +1,7 @@
 # Sports World México · Índice de documentos
 ## Mapa y localizador de toda la documentación del proyecto
 
-Punto de entrada al conjunto documental. Cada documento es **autónomo** (se lee por sí solo); este índice indica qué contiene cada uno, para quién es y dónde buscar cada tema.
+Punto de entrada al conjunto documental. Cada documento es **autónomo** (puede leerse de forma independiente); este índice indica qué contiene cada uno, a quién está dirigido y dónde consultar cada tema.
 
 ## Documentos del proyecto
 
@@ -17,14 +17,14 @@ Punto de entrada al conjunto documental. Cada documento es **autónomo** (se lee
 | 8 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en todo el conjunto. | Todos |
 | 9 | [**Contrato**](#contrato) (+ Anexo Uno y Anexo Dos) | Marco mercantil: objeto, contraprestación, forma de pago, PI, datos personales, anexos de aportaciones (Anexo Uno) y entregables/KPIs/ROI (Anexo Dos). | Dirección, Legal |
 | 10 | [**Aportaciones de Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. | TI, Marketing, PMO |
-| 11 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captura de demanda (datos Semrush). | Negocio, SEO, TI |
+| 11 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
 | 12 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
 | 13 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
 | — | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del flujo de experiencia ideal. | Negocio, dirección |
 
 ## Localizador rápido (¿dónde está cada tema?)
 
-Cada ubicación es un enlace directo: lleva al documento y salta a la sección exacta.
+Cada ubicación es un enlace directo: abre el documento y salta a la sección exacta.
 
 | Tema | Documento · ubicación |
 |---|---|

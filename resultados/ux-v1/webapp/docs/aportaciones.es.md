@@ -1,7 +1,7 @@
 # Aportaciones de Sports World · V1.1
 ## Lo que Sports World entrega para que el proyecto arranque y avance
 
-> Documento del proyecto · Confidencial. Tablero de seguimiento de las aportaciones a cargo de Sports World; el detalle contractual de cada requerimiento vive en el **[Contrato › Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)** (Bloques 0, A, B, C, D para sistemas; Bloque E para marketing).
+> Documento del proyecto · Confidencial. Tablero de seguimiento de las aportaciones a cargo de Sports World; el detalle contractual de cada requerimiento se establece en el **[Contrato › Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)** (Bloques 0, A, B, C, D para sistemas; Bloque E para marketing).
 
 Esta sección concentra, en un solo tablero de seguimiento, **todo lo que Sports World debe aportar** —dividido en **Sistemas** y **Marketing**—. Cada entregable tiene **responsable**, **fecha límite** y **status** (entregado / no entregado), con un **semáforo** que se calcula solo:
 
@@ -9,7 +9,7 @@ Esta sección concentra, en un solo tablero de seguimiento, **todo lo que Sports
 - 🟡 **Por vencer** — no entregado y faltan **2 días o menos**.
 - 🟢 **En tiempo / Entregado** — con holgura mayor a 2 días, sin fecha, o ya entregado.
 
-> El status y la fecha límite son editables y se guardan en este navegador. El detalle contractual de cada requerimiento vive en el **Contrato › Anexo Uno**.
+> El status y la fecha límite son editables y se guardan en este navegador. El detalle contractual de cada requerimiento se establece en el **Contrato › Anexo Uno**.
 
 ## 1 · Aportaciones de sistemas
 
