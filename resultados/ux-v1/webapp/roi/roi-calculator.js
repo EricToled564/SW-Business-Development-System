@@ -9,9 +9,9 @@
 (function () {
   "use strict";
 
-  // Revenue de referencia GSW (parámetro CONFIGURABLE; pendiente de confirmar con el dato
-  // oficial de Sports World — no proviene de la auditoría). Ajustar antes de usar con el cliente.
-  const GSW_REVENUE_2025 = 2185000000;
+  // Revenue de referencia GSW (dato de Sports World): supera los $24,000 millones MXN.
+  // Si tienes la cifra exacta, ajústala aquí.
+  const GSW_REVENUE_2025 = 24000000000;
 
   const I18N = {
     es: {
@@ -25,7 +25,7 @@
       outMembers: "Nuevos asociados / año", outRevenue: "Revenue incremental anual",
       outMonthly: "Revenue incremental mensual", outPct: "% del revenue GSW 2025",
       churnTitle: "Efecto anti-churn (adicional)",
-      churn: "Recuperar la visibilidad también protege a los socios actuales que buscan “gym cerca de mí” o actividades y hoy encuentran competidores. Cada punto de churn prevenido ≈ 1,045 socios × $20,900 ≈ $21.8M MXN de revenue protegido.",
+      churn: "Recuperar la visibilidad también protege a los socios actuales que buscan “gym cerca de mí” o actividades y hoy encuentran competidores. Cada punto de churn prevenido representa socios retenidos y su ingreso anual asociado (ajusta D para estimarlo).",
       disclaimer: "Estimación basada en el modelo paramétrico de la propuesta. Las tasas B y C las calibra Sports World con sus datos reales; los objetivos comerciales son alcanzables, no comprometidos contractualmente.",
       formula: "Revenue incremental anual = A × 12 × B × C × D",
     },
@@ -40,7 +40,7 @@
       outMembers: "New members / year", outRevenue: "Incremental annual revenue",
       outMonthly: "Incremental monthly revenue", outPct: "% of GSW 2025 revenue",
       churnTitle: "Anti-churn effect (additional)",
-      churn: "Recovering visibility also protects current members who search “gym near me” or activities and today find competitors. Each churn point prevented ≈ 1,045 members × $20,900 ≈ $21.8M MXN of protected revenue.",
+      churn: "Recovering visibility also protects current members who search “gym near me” or activities and today find competitors. Each churn point prevented represents retained members and their associated annual revenue (adjust D to estimate it).",
       disclaimer: "Estimate based on the proposal's parametric model. Rates B and C are calibrated by Sports World with real data; commercial objectives are achievable, not contractually committed.",
       formula: "Incremental annual revenue = A × 12 × B × C × D",
     },
