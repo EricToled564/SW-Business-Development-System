@@ -17,7 +17,7 @@ Esta sección concentra, en un solo tablero de seguimiento, **todo lo que Sports
 
 ### Detalle de las aportaciones de sistemas
 
-La participación técnica de Sports World se ha acotado al mínimo indispensable. El proveedor (Final Upgrade) desarrolla por su cuenta todo lo que está a su alcance; los insumos que se enumeran a continuación constituyen, en su totalidad, lo requerido del lado de Sports World, en congruencia con el Anexo Uno del Contrato.
+La participación técnica requerida de Sports World se ha acotado al mínimo indispensable. El proveedor ejecuta, bajo su propia responsabilidad, la totalidad de los componentes a su cargo; los insumos enumerados a continuación constituyen, de forma limitativa, lo que corresponde aportar a Sports World, en congruencia con el Anexo Uno del Contrato.
 
 #### API del sistema de clientes (CRM) — dependencia central
 Sports World proveerá una interfaz de programación (API) de su sistema de clientes (CRM) que permita **crear o actualizar un prospecto calificado**, con sus campos: nombre, teléfono, correo electrónico, perfil, club seleccionado y visita agendada. Deberá entregar el punto de conexión (endpoint) y las credenciales correspondientes por un canal seguro (gestor de contraseñas), nunca por correo electrónico en texto plano. La operación será **idempotente por sesión**: si el prospecto modifica y reconfirma su cita, el registro existente se actualiza sin generar duplicados. Ésta constituye la única escritura en tiempo real de la solución; disponible ella, el flujo de captación de prospectos se implementa sin participación adicional de Sports World.
