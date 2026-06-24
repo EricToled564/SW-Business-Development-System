@@ -15,8 +15,6 @@ Esta sección concentra, en un solo tablero de seguimiento, **todo lo que Sports
 
 [[APORTACIONES:sistemas]]
 
-*Resumen (referencia, por si el tablero no carga):* respuestas de descubrimiento (Bloque 0); OpenAPI y sandbox del CRM y de reservas, esquemas JSON reales y responsable único (Bloque A); credenciales productivas, autenticación, idempotencia, webhooks firmados, SLAs y límites de tasa (Bloque B); accesos a hospedaje, dominio, CDN, repositorio, CMS y ventana de cutover (Bloque C); y los puntos de acceso, latencia, base de conocimiento y escalación de BES (Bloque D). Detalle en **Contrato › Anexo Uno**.
-
 ### Detalle: qué se necesita y por qué (reducido al mínimo)
 
 El plan está diseñado para que la participación técnica interna de Sports World sea pequeña y concentrada. El equipo de entrega construye por su cuenta todo lo que puede. A continuación, la explicación legible de cada aportación de sistemas —no hay nada requerido más allá de esto y de lo catalogado en el Anexo Uno.
@@ -53,4 +51,14 @@ Todo lo demás lo entrega el equipo del proyecto.
 
 [[APORTACIONES:marketing]]
 
-*Resumen (referencia, por si el tablero no carga):* brand book, activos visuales con derechos, contenido y copys vigentes, accesos a Google Business / GA4 / Search Console / herramienta SEO / redes, responsable de marca facultado, presupuesto de medios (si aplica) y avisos de privacidad (Bloque E del Anexo Uno).
+### Detalle: qué aporta marketing
+
+Lo que Sports World aporta del lado de marketing y marca (Anexo Uno, Bloque E):
+
+- **Brand book:** logotipos vectoriales, paleta de color, tipografías con licencia, reglas de uso y tono de voz.
+- **Activos visuales** con derechos de uso vigentes (o autorización para producirlos a la medida).
+- **Contenido y copys vigentes** de clubes, amenidades, promociones, membresías y tarifas.
+- **Accesos** a Google Business Profile, Google Analytics 4, Search Console, la herramienta SEO y las redes sociales.
+- **Responsable de marca facultado** para aprobar wireframes, prototipo, plantillas, contenido y territorio visual.
+- **Presupuesto de medios**, en su caso (no incluido en la contraprestación salvo pacto expreso).
+- **Avisos de privacidad y textos legales** vigentes de la marca, validados por el área legal.
