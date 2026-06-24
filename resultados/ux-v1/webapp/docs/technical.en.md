@@ -60,6 +60,13 @@ In addition to the public-facing content, the project delivers a **real-time exe
 
 BES is an AI conversational agent **of voice and text, integrated into the website**: its operation is limited to the site's **web channel**, with natural synthetic voice in Mexican Spanish and bidirectional interaction by voice and text. It serves prospects in natural language within the site, resolves common questions, guides them toward the right club and the guided tour, and captures qualified leads —the same result produced by the site's form, but through conversation—. In addition, it sends **2 automated WhatsApp reminders** (24 h and 2 h before the visit) and the **prospect summary by email to the club**. **It does not operate by phone or as a WhatsApp conversational chat** (that scope is excluded in the Contract, Clause One II).
 
+**Conversational flow.** BES's responsibility is to **apply the questionnaire and deliver the ideal experience** to any prospect who wishes it, or to **assist with the request for a guided tour** at a club the user has already chosen. In either case, BES tells the prospect it needs **a minute of their time** to complete the questionnaire and offers two modes:
+
+1. **Question by question.** BES poses each question and presents the user with the answer options.
+2. **Pre-filled questionnaire to confirm.** BES presents the questionnaire with the answers that could already be **inferred** —from the user's own statements or from the page they arrive from— shown pre-loaded, and asks the user to **confirm** them; if any is not confirmed, BES offers the normal answer options.
+
+At the end, BES **reconfirms the ideal club** and proceeds to request the **date and time of the visit** and the necessary **contact details** (last name, mobile, and email). **Only once the visit is confirmed**, BES informs the prospect that their **ideal experience has been emailed** to them and that their **preferences have been communicated to the advisor** who will attend them during the guided tour. Finally, BES asks whether there is anything else it can help with: if so, it continues; otherwise, it ends the conversation.
+
 Underneath, the agent is assembled from four layers, all operating within the site:
 
 - **Speech recognition (ASR):** converts the user's speech on the site into text in real time (for example, Deepgram). Voice mode only.

@@ -60,6 +60,13 @@ Además del contenido de cara al público, el proyecto entrega un **tablero ejec
 
 BES es un agente conversacional de IA **de voz y texto, integrado al sitio web**: su operación se limita al **canal web** del sitio, con voz sintética natural en español de México e interacción bidireccional por voz y texto. Atiende a los prospectos en lenguaje natural dentro del sitio, resuelve preguntas comunes, los guía hacia el club correcto y la visita guiada, y captura leads cualificados —el mismo resultado que produce el formulario del sitio, pero a través de la conversación—. Además, envía **2 recordatorios automatizados por WhatsApp** (24 h y 2 h antes de la visita) y el **resumen del prospecto por correo al club**. **No opera por teléfono ni como chat conversacional de WhatsApp** (ese alcance está excluido en el Contrato, Cláusula Primera II).
 
+**Flujo conversacional.** La responsabilidad de BES es **aplicar el cuestionario y entregar la experiencia ideal** al prospecto que así lo desee, o bien **asistirle con la solicitud de una visita guiada** en un club que el usuario ya tenga elegido. En ambos casos, BES informa al prospecto que requiere **un minuto de su tiempo** para completar el cuestionario y le ofrece dos modalidades:
+
+1. **Pregunta por pregunta.** BES plantea cada pregunta y le presenta al usuario las opciones de respuesta.
+2. **Cuestionario pre-llenado para confirmar.** BES presenta el cuestionario con las respuestas que ya pudieron **inferirse** —por declaraciones del propio usuario o por la página desde la que llega— mostradas pre-cargadas, y le pide al usuario que las **confirme**; si no confirma alguna, BES le ofrece las opciones de respuesta normales.
+
+Al concluir, BES **reconfirma el club ideal** y procede a solicitar la **fecha y hora de la visita** y los **datos de contacto** necesarios (apellido, celular y correo). **Solo una vez confirmada la visita**, BES informa al prospecto que su **experiencia ideal se le ha enviado por correo** y que sus **preferencias se han comunicado al asesor** que lo atenderá durante la visita guiada. Por último, BES pregunta si hay algo más en lo que pueda ayudar: de ser así, continúa; en caso contrario, concluye la conversación.
+
 Por debajo, el agente se ensambla a partir de cuatro capas, todas operando dentro del sitio:
 
 - **Reconocimiento de voz (ASR):** convierte el habla del usuario en el sitio en texto en tiempo real (por ejemplo, Deepgram). Solo modo voz.
