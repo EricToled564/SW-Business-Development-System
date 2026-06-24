@@ -8,20 +8,20 @@ Punto de entrada al conjunto documental. Cada documento es **autónomo** (puede 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
 | 1 | [**Resumen Ejecutivo**](#resumen) | Visión de conjunto: problema, objetivos, arquitectura, BES, negocio, las 8 semanas y KPIs. | Dirección, negocio |
-| 2 | [**Arquitectura de Experiencia (UX)**](#experience) | El flujo de experiencia ideal: navegación, fases, cuestionario, menús dinámicos, reglas de negocio y datos. | Producto, UX, desarrollo |
-| 3 | [**Estrategia Técnica**](#technical) | Stack, agente BES, integraciones, seguridad, método de desarrollo y calidad. | Sistemas / TI |
-| 4 | [**Plan de Ejecución**](#execution) | Estructura del equipo, cronograma de 8 semanas, dependencias de SW y servidor. | Dirección, TI, PMO |
-| 5 | [**Mapa del Sitio**](#site) | Las 148 páginas por nivel, entrega móvil + escritorio y el CMS sin código. | UX, SEO, contenido |
-| 6 | [**Entregables, Soporte y Operación**](#deliverables) | Entregables, migración, soporte (24/7 por agente de voz + humano en horario hábil), bolsa de horas y estabilización. | Dirección, TI |
-| 7 | [**Seguridad del sitio**](#seguridad) | Protección de datos personales: minimización y no retención (los datos viven brevemente; sin respaldo tras copiarse al CRM). | TI, Legal, negocio |
-| 8 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en todo el conjunto. | Todos |
-| 9 | [**Contrato**](#contrato) (+ Anexo Uno y Anexo Dos) | Marco mercantil: objeto, contraprestación, forma de pago, PI, datos personales, anexos de aportaciones (Anexo Uno) y entregables/KPIs (Anexo Dos). | Dirección, Legal |
-| 10 | [**Aportaciones de Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. | TI, Marketing, PMO |
+| 2 | [**Arquitectura de Experiencia (UX)**](#experience) | El flujo de experiencia ideal y el **mapa del sitio** (las 148 páginas): navegación, fases, cuestionario, menús dinámicos, reglas de negocio, datos y arquitectura de información. | Producto, UX, desarrollo, SEO |
+| 3 | [**Estrategia Técnica**](#technical) | Stack, agente BES, integraciones, migración, seguridad, método de desarrollo y calidad. | Sistemas / TI |
+| 4 | [**Plan de Ejecución**](#execution) | Estructura del equipo, gobierno, cronograma de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios. | Dirección, TI, PMO |
+| 5 | [**Seguridad del sitio**](#seguridad) | Protección de datos personales: minimización y no retención (los datos viven brevemente; sin respaldo tras copiarse al CRM). | TI, Legal, negocio |
+| 6 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en todo el conjunto. | Todos |
+| 7 | [**Contrato**](#contrato) | Marco mercantil: objeto, contraprestación, forma de pago, propiedad intelectual y datos personales. | Dirección, Legal |
+| 7a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques y con responsables. | Dirección, TI, Legal |
+| 7b | [**Anexo Dos · Entregables, soporte y operación**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
+| 8 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
+| 9 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
+| 10 | [**Status de Entregables Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. El detalle contractual vive en el Anexo Uno. | TI, Marketing, PMO |
 | 11 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
-| 12 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
-| 13 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
-| — | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
-| — | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del flujo de experiencia ideal. | Negocio, dirección |
+| 12 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
+| 13 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del flujo de experiencia ideal. | Negocio, dirección |
 
 ## Localizador rápido (¿dónde está cada tema?)
 
@@ -29,14 +29,14 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 
 | Tema | Documento · ubicación |
 |---|---|
-| Las 148 páginas y su desglose | [Mapa del Sitio · por nivel](#site:las-148-pginas-por-nivel) · [Contrato · Anexo Dos I.1](#contrato:i1-arquitectura-del-sitio-148-pginas) |
+| Las 148 páginas y su desglose | [Arquitectura de Experiencia · Mapa del sitio](#experience:6-mapa-del-sitio) · [Contrato · Anexo Dos I.1](#contrato:i1-arquitectura-del-sitio-148-pginas) |
 | Cuestionario y flujo del prospecto | [Arquitectura de Experiencia · §2 Cuestionario](#experience:2-el-cuestionario-como-nica-fuente-de-personalizacin) |
 | Agente BES (web; voz/texto, recordatorios WhatsApp) | [Estrategia Técnica · §5 BES](#technical:5-bes-el-agente-de-voz-y-texto) · [Contrato · Cláusulas](#contrato:clusulas) · [Anexo Dos Sección II](#contrato:seccin-ii-entregables-del-servicio-ii-agente-bes) |
 | Integración con CRM (API, webhook) | [Estrategia Técnica · §2 Integraciones](#technical:2-los-cuatro-datos-y-las-integraciones-con-sports-world) · [Contrato · Anexo Uno Bloque A](#contrato:bloque-a-documentacin-ambiente-de-pruebas-y-responsable-nico-da-1) · [Bloque B](#contrato:bloque-b-credenciales-productivas-e-integraciones-fin-de-la-semana-2) · [Bloque D](#contrato:bloque-d-puntos-de-acceso-para-el-agente-bes-en-paralelo-a-a-b-y-c) |
 | Cronograma de 8 semanas y gates | [Plan de Ejecución · §3 Cronograma](#execution:3-el-cronograma-de-ocho-semanas) · [Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente) |
 | Precio, forma de pago y stand-by | [Contrato · Cláusulas (Segunda, Tercera y Novena)](#contrato:clusulas) |
-| Soporte, SLA, bolsa de 8 horas y estabilización | [Entregables · §3 Soporte 24/7](#deliverables:3-el-sistema-de-soporte-247) · [Contrato · Anexo Dos Sección III](#contrato:seccin-iii-entregables-del-servicio-iii-servicios-recurrentes) |
-| Aportaciones de SW (sistemas y marketing) | [Aportaciones de Sports World](#aportaciones) · [Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) |
+| Soporte, SLA, bolsa de 8 horas y estabilización | [Contrato · Anexo Dos Sección III](#contrato:seccin-iii-entregables-del-servicio-iii-servicios-recurrentes) |
+| Aportaciones de SW (sistemas y marketing) | [Status de Entregables Sports World](#aportaciones) · [Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) |
 | KPIs comprometidos | [Contrato · Anexo Dos Sección IV](#contrato:seccin-iv-kpis-comprometidos-estrategia-comercial) |
 | Calculadora de ROI | [Calculadora de ROI](#roi) |
 | Datos personales y seguridad | [Seguridad del sitio](#seguridad:proteccin-de-los-datos-personales-minimizacin-y-no-retencin) · [Contrato · Cláusulas (Sexta Ter y Décima Primera)](#contrato:clusulas) |

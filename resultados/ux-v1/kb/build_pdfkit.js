@@ -13,14 +13,12 @@ const DOCS = [
   { src: SRC + "/experience.es.md", kind: "md", title: "UX Architecture Specs — Arquitectura de Experiencia", out: "01-arquitectura-de-experiencia.es.pdf" },
   { src: SRC + "/technical.es.md", kind: "md", title: "Estrategia Técnica", out: "02-estrategia-tecnica.es.pdf" },
   { src: SRC + "/execution.es.md", kind: "md", title: "Plan de Ejecución", out: "03-plan-de-ejecucion.es.pdf" },
-  { src: SRC + "/site.es.md", kind: "md", title: "Mapa del Sitio (148 páginas)", out: "04-mapa-del-sitio.es.pdf" },
-  { src: SRC + "/deliverables.es.md", kind: "md", title: "Entregables, Soporte y Operación", out: "05-entregables-soporte-operacion.es.pdf" },
   { src: SRC + "/contrato.es.md", kind: "md", title: "Contrato de Prestación de Servicios — Cláusulas + Anexos A y B", out: "06-contrato.es.pdf" },
   { src: SRC + "/auditoria.es.md", kind: "md", title: "Auditoría inicial del sitio — El Gigante Invisible", out: "07-auditoria-inicial.es.pdf" },
   { src: SRC + "/minuta-2026-06-22.es.md", kind: "md", title: "Minuta — Reunión 22 de junio de 2026", out: "08-minuta-2026-06-22.es.pdf" },
   { src: SRC + "/seguimiento-2026-06-22.es.md", kind: "md", title: "Seguimiento — Reunión 22 de junio de 2026", out: "09-seguimiento-2026-06-22.es.pdf" },
   { src: SRC + "/seguridad.es.md", kind: "md", title: "Seguridad del sitio — Protección de datos personales", out: "10-seguridad-del-sitio.es.pdf" },
-  { src: SRC + "/aportaciones.es.md", kind: "md", title: "Aportaciones de Sports World — Sistemas y Marketing", out: "11-aportaciones-de-sports-world.es.pdf" },
+  { src: SRC + "/aportaciones.es.md", kind: "md", title: "Status de Entregables Sports World — Sistemas y Marketing", out: "11-status-entregables-sports-world.es.pdf" },
   { src: SRC + "/glosario.es.md", kind: "md", title: "Glosario — Términos técnicos y de negocio", out: "12-glosario.es.pdf" },
   // NOTA: 'voice-agent-knowledge-base.html' quedó obsoleto (contenido previo a las
   // correcciones de esta sesión). Excluido del build; no se sube a la KB.
@@ -174,8 +172,8 @@ function make(d) {
   let raw = fs.readFileSync(d.src, "utf8");
   raw = raw.replace(/<!--[\s\S]*?-->/g, "");  // quita comentarios HTML (p. ej. directivas audit-ignore)
   // Interactive-only markers render as a static note in the PDF.
-  raw = raw.replace(/\[\[ROI\]\]/g, "_(Calculadora de ROI interactiva — disponible en el web app: Contrato › Entregables y KPIs.)_");
-  raw = raw.replace(/\[\[APORTACIONES:[^\]]+\]\]/g, "_(Tablero de aportaciones con semáforo de estatus — disponible en el web app: Contrato › Aportaciones de Sports World.)_");
+  raw = raw.replace(/\[\[ROI\]\]/g, "_(Calculadora de ROI interactiva — disponible en el web app, sección «Calculadora de ROI».)_");
+  raw = raw.replace(/\[\[APORTACIONES:[^\]]+\]\]/g, "_(Tablero de aportaciones con semáforo de estatus — disponible en el web app, sección «Status de Entregables Sports World».)_");
   const blocks = d.kind === "md" ? mdBlocks(raw) : htmlBlocks(raw);
   const doc = new PDFDocument({ size: "LETTER", margins: { top: M, bottom: M, left: M, right: M }, bufferPages: true, autoFirstPage: true });
   doc.info.Title = d.title; doc.info.Author = "Final Upgrade AI"; doc.info.Subject = "Documentación UX Sports World (es-MX) — KB para agente de voz";

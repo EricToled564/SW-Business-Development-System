@@ -1,7 +1,7 @@
 # Sports World México · Execution Plan · V2.0
 ## Teams, governance, the eight-week schedule with exit criteria, milestones, risks, and acceptance criteria
 
-Foundational document. It describes **how the project is delivered** over eight weeks: the four parallel workstreams, the team structure and governance model, the week-by-week schedule **with verifiable exit criteria**, the approval milestones owned by Sports World, the server, the committed technical KPIs, the risk register, and change control. The contributions required from the Sports World systems team —deliberately kept to a minimum— are detailed in **[Sports World Contributions](#aportaciones:1-aportaciones-de-sistemas)**. It stands on its own.
+Foundational document. It describes **how the project is delivered** over eight weeks: the four parallel workstreams, the team structure and governance model, the week-by-week schedule **with verifiable exit criteria**, the approval milestones owned by Sports World, the server, the committed technical KPIs, the risk register, and change control. The contributions required from the Sports World systems team —deliberately kept to a minimum— are detailed in the **[Contract · Annex One](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. It stands on its own.
 
 **Guiding principle.** The 8-week count runs from the delivery of 100% of the Annex One requirements; delays attributable to Sports World extend the timeline day for day (and trigger the stand-by of Clause Nine). For this reason the plan **front-loads** all dependencies to Week 1.
 
@@ -9,7 +9,7 @@ Foundational document. It describes **how the project is delivered** over eight 
 
 The project delivers four workstreams at once, executed by four coordinated teams across the same eight weeks:
 
-- **The website** — a fast, search-optimized site built from approved design templates: the home, a page for each of the 49 clubs, the amenity and goal hubs, and the ideal experience flow that converts an anonymous visitor into a qualified, scheduled lead. Full inventory in **[Site Map](#site)** (148 pages).
+- **The website** — a fast, search-optimized site built from approved design templates: the home, a page for each of the 49 clubs, the amenity and goal hubs, and the ideal experience flow that converts an anonymous visitor into a qualified, scheduled lead. Full inventory in **[Experience Architecture · Site map](#experience:6-mapa-del-sitio)** (148 pages).
 - **The SEO foundation and written content** — the search strategy and all optimized content, plus the creation and optimization of the 49 Google Business profiles (one per club).
 - **Visual content at scale** — the treatment of ~650 photographs from the client's bank, ~150 new AI images, 12 animations, and 1 institutional video, via the custom application (**[Technical Strategy · §4](#technical:4-contenido-visual-a-escala)**).
 - **BES, the AI voice and text agent** — the conversational agent **integrated into the website (web channel)**, connected to the same club/class logic and the same lead capture as the site, which additionally sends 2 automated reminders via WhatsApp (**[Technical Strategy · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
@@ -46,7 +46,7 @@ The overall leader runs brief, recurring control points where the four leaders s
 
 ## 3 · The eight-week schedule
 
-It runs from Week 1 to Week 8, with the four teams in parallel and the Sports World dependencies front-loaded to Week 1 (detail in **[Sports World Contributions](#aportaciones:1-aportaciones-de-sistemas)**). Each week closes with a verifiable **exit criterion**: if it is not met, the project does not advance to the next phase.
+It runs from Week 1 to Week 8, with the four teams in parallel and the Sports World dependencies front-loaded to Week 1 (detail in **[Contract · Annex One](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**). Each week closes with a verifiable **exit criterion**: if it is not met, the project does not advance to the next phase.
 
 **Week 1 — Foundations and kickoff of dependencies.**
 - *Leader:* confirm the CRM API, the club/class data source, and WhatsApp Business for BES reminders; **immediately initiate ownership and verification of Google Business** (the longest path).
@@ -92,7 +92,7 @@ It runs from Week 1 to Week 8, with the four teams in parallel and the Sports Wo
 - **🚦 Approval 4 (W8):** firm launch. **Window: same business day.**
 - **Exit criterion:** launch acceptance criteria (§6) met; the 2-to-4-week stabilization stage begins.
 
-**The schedule risk to watch.** Verification of the Google Business profiles is under Google's control, not the project's (see **[Sports World Contributions](#aportaciones:titularidad-en-google-para-las-49-fichas)**). It is initiated in Week 1 because it can take weeks; if it runs long, the profiles are finalized close to launch, but, since the rest of the project is independent of them, it does not stop the site or the content (see the risk register, §7).
+**The schedule risk to watch.** Verification of the Google Business profiles is under Google's control, not the project's (see **[Contract · Annex One](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**). It is initiated in Week 1 because it can take weeks; if it runs long, the profiles are finalized close to launch, but, since the rest of the project is independent of them, it does not stop the site or the content (see the risk register, §7).
 
 ## 4 · The server where the site runs
 

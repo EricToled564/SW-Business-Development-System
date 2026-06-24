@@ -1,7 +1,7 @@
 # Sports World México · Plan de Ejecución · V2.0
 ## Equipos, gobierno, el cronograma de ocho semanas con criterios de salida, hitos, riesgos y criterios de aceptación
 
-Documento fundacional. Describe **cómo se entrega** el proyecto en ocho semanas: los cuatro frentes de trabajo en paralelo, la estructura del equipo y el modelo de gobierno, el cronograma semana a semana **con criterios de salida verificables**, los hitos de aprobación a cargo de Sports World, el servidor, los KPIs técnicos comprometidos, el registro de riesgos y el control de cambios. Las aportaciones que se requieren del equipo de sistemas de Sports World —deliberadamente reducidas al mínimo— se detallan en **[Aportaciones de Sports World](#aportaciones:1-aportaciones-de-sistemas)**. Se lee por sí solo.
+Documento fundacional. Describe **cómo se entrega** el proyecto en ocho semanas: los cuatro frentes de trabajo en paralelo, la estructura del equipo y el modelo de gobierno, el cronograma semana a semana **con criterios de salida verificables**, los hitos de aprobación a cargo de Sports World, el servidor, los KPIs técnicos comprometidos, el registro de riesgos y el control de cambios. Las aportaciones que se requieren del equipo de sistemas de Sports World —deliberadamente reducidas al mínimo— se detallan en el **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. Se lee por sí solo.
 
 **Principio rector.** El cómputo de las 8 semanas corre a partir de la entrega del 100% de los requerimientos del Anexo Uno; los atrasos imputables a Sports World extienden el plazo día por día (y activan el stand-by de la Cláusula Novena). Por eso el plan **adelanta (front-load)** todas las dependencias a la Semana 1.
 
@@ -9,7 +9,7 @@ Documento fundacional. Describe **cómo se entrega** el proyecto en ocho semanas
 
 El proyecto entrega cuatro frentes a la vez, ejecutados por cuatro equipos coordinados a lo largo de las mismas ocho semanas:
 
-- **El sitio web** — un sitio rápido y optimizado para búsqueda, construido a partir de plantillas de diseño aprobadas: el home, una página para cada uno de los 49 clubes, los hubs de amenidades y objetivos, y el flujo de experiencia ideal que convierte a un visitante anónimo en un lead calificado y agendado. Inventario completo en **[Mapa del Sitio](#site)** (148 páginas).
+- **El sitio web** — un sitio rápido y optimizado para búsqueda, construido a partir de plantillas de diseño aprobadas: el home, una página para cada uno de los 49 clubes, los hubs de amenidades y objetivos, y el flujo de experiencia ideal que convierte a un visitante anónimo en un lead calificado y agendado. Inventario completo en **[Arquitectura de Experiencia · Mapa del sitio](#experience:6-mapa-del-sitio)** (148 páginas).
 - **La base de SEO y el contenido escrito** — la estrategia de búsqueda y todo el contenido optimizado, más la creación y optimización de las 49 fichas de Google Business (una por club).
 - **El contenido visual a escala** — el tratamiento de ~650 fotografías del banco del cliente, ~150 imágenes nuevas por IA, 12 animaciones y 1 video institucional, vía la aplicación a la medida (**[Estrategia Técnica · §4](#technical:4-contenido-visual-a-escala)**).
 - **BES, el agente de voz y texto con IA** — el agente conversacional **integrado al sitio web (canal web)**, conectado a la misma lógica de club/clase y a la misma captación de leads que el sitio, que además envía 2 recordatorios automatizados por WhatsApp (**[Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
@@ -46,7 +46,7 @@ El líder general ejecuta puntos de control breves y periódicos donde los cuatr
 
 ## 3 · El cronograma de ocho semanas
 
-Corre de la Semana 1 a la Semana 8, con los cuatro equipos en paralelo y las dependencias de Sports World adelantadas a la Semana 1 (detalle en **[Aportaciones de Sports World](#aportaciones:1-aportaciones-de-sistemas)**). Cada semana cierra con un **criterio de salida** verificable: si no se cumple, no se avanza a la siguiente fase.
+Corre de la Semana 1 a la Semana 8, con los cuatro equipos en paralelo y las dependencias de Sports World adelantadas a la Semana 1 (detalle en **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**). Cada semana cierra con un **criterio de salida** verificable: si no se cumple, no se avanza a la siguiente fase.
 
 **Semana 1 — Cimientos y arranque de dependencias.**
 - *Líder:* confirmar API del CRM, fuente de datos de club/clase y WhatsApp Business para los recordatorios de BES; **iniciar de inmediato la titularidad y verificación de Google Business** (el camino más largo).
@@ -92,7 +92,7 @@ Corre de la Semana 1 a la Semana 8, con los cuatro equipos en paralelo y las dep
 - **🚦 Aprobación 4 (S8):** lanzamiento en firme. **Ventana: mismo día hábil.**
 - **Criterio de salida:** criterios de aceptación del lanzamiento (§6) cumplidos; inicia la etapa de estabilización de 2 a 4 semanas.
 
-**El riesgo de cronograma a vigilar.** La verificación de las fichas de Google Business está bajo control de Google, no del proyecto (ver **[Aportaciones de Sports World](#aportaciones:titularidad-en-google-para-las-49-fichas)**). Se inicia en la Semana 1 porque puede tardar semanas; si se alarga, las fichas se finalizan cerca del lanzamiento, pero, dado que el resto del proyecto es independiente de ellas, no detiene el sitio ni el contenido (ver el registro de riesgos, §7).
+**El riesgo de cronograma a vigilar.** La verificación de las fichas de Google Business está bajo control de Google, no del proyecto (ver **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**). Se inicia en la Semana 1 porque puede tardar semanas; si se alarga, las fichas se finalizan cerca del lanzamiento, pero, dado que el resto del proyecto es independiente de ellas, no detiene el sitio ni el contenido (ver el registro de riesgos, §7).
 
 ## 4 · El servidor donde corre el sitio
 

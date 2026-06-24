@@ -292,6 +292,12 @@ Bajo la iguala mensual (Opción A elegida por EL CLIENTE; Cláusula Segunda): ho
 | Medio | Problema que afecta parte del sitio sin impedir su uso. | 4 horas hábiles | 2 días hábiles |
 | Bajo | Incidencia menor o consulta. | 1 día hábil | Según lo planeado |
 
+Los tiempos se miden desde la apertura del ticket de ocurrencia. **Reporte mensual:** al cierre de cada mes EL PRESTADOR entrega un reporte de los tickets atendidos (severidad, tiempo de respuesta y resolución) y de las horas de mejora consumidas, con el detalle de cada tarea.
+
+**Estabilización posterior al lanzamiento.** Tras el lanzamiento en firme se ejecuta una etapa de estabilización de **2 a 4 semanas** con atención reforzada: EL PRESTADOR monitorea el sitio bajo tráfico real y corrige los ajustes derivados de la exposición real (dispositivos, integraciones en vivo) **sin consumir la bolsa de horas**; confirmadas las integraciones en vivo (captura de leads al CRM, datos de clubes y clases, fichas de Google y BES), el sitio pasa a operación normal bajo la iguala. La distinción es expresa: durante la estabilización los ajustes de lanzamiento se corrigen sin costo; concluida ésta, las nuevas mejoras consumen la bolsa de horas y las fallas se atienden bajo el SLA anterior.
+
+**Migración del sitio (entrega única, dentro del Servicio I).** La puesta en marcha incluye la migración del sitio actual al nuevo protegiendo el correo y el DNS: inventario previo de los registros DNS (separando los del sitio de los de correo —MX— y otros servicios); migración únicamente de los registros del sitio, sin tocar el correo; reducción del TTL 24 horas antes del cambio para una transición rápida y reversible; conjunto de **redirecciones 301** que cubre los 136 enlaces rotos para no perder posicionamiento; y confirmación, inmediatamente después del cutover, de que el correo corporativo y los demás servicios del dominio siguen operando.
+
 ## Sección IV — KPIs comprometidos (estrategia comercial)
 
 Los siguientes son los **KPIs comprometidos** del proyecto: dependen de EL PRESTADOR y son verificables. Línea base: auditoría inicial (Semrush, marzo 2026).

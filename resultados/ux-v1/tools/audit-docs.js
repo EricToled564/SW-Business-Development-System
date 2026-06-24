@@ -196,7 +196,7 @@ const docIds = new Set(DOCS.map((d) => d.id));
 function checkFileIntegrity() {
   const registeredEsFiles = new Set();
   for (const d of DOCS) {
-    if (d.type === "embed") continue;
+    if (d.type === "embed" || d.type === "ref") continue;
     const esFile = `${d.id}.es.md`;
     registeredEsFiles.add(esFile);
     if (!fs.existsSync(path.join(DOCS_DIR, esFile)))
@@ -364,7 +364,7 @@ checkFileIntegrity();
 const glossary = glossaryInfo();
 
 for (const d of DOCS) {
-  if (d.type === "embed") continue;
+  if (d.type === "embed" || d.type === "ref") continue;
   for (const lang of ["es", "en"]) {
     const text = readDoc(d.id, lang);
     if (!text) continue;
