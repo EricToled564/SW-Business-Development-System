@@ -44,7 +44,7 @@ El objetivo de negocio (llevar la cobertura unbranded del 31.1% al 55–65%) se 
 - **Producción de contenido a escala con control editorial.** **Seis plantillas maestras** para contenido asistido por IA en español de México; las 148 páginas con contenido único; revisión humana por especialistas de SEO antes de publicar, de modo que el volumen no se logre a costa de la precisión ni de la voz de marca.
 - **Estándar reforzado YMYL para salud.** La matriz de beneficios de las **54 clases para adultos cruzada con los 5 perfiles** se valida contra literatura médica, y el hub **"Bajar de Peso"** se publica con la firma del médico designado por Sports World (cédula vigente visible). El modelo de lenguaje que asiste el contenido opera bajo restricciones YMYL y saneamiento (ver **[Arquitectura de Experiencia · §4.15](#experience:415-restricciones-ymyl-del-llm-y-saneamiento)**).
 - **Las 49 fichas de Google Business** se crean y optimizan mediante la herramienta oficial (**Google Business Profile API, con OAuth 2.0**, el esquema que esa API de Google requiere). Para las más de 10 ubicaciones se usa la verificación masiva por hoja de cálculo que Google ofrece a las cadenas. **Restricción honesta**, documentada en el plan: la API gestiona y optimiza fichas existentes, pero **no crea nuevas**; una ficha nueva requiere la verificación propia de Google —que Google controla y que toma tiempo— más la aprobación del acceso a la API, que Google otorga a lo largo de semanas. Por eso el proceso inicia en la Semana 1 (**[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**).
-- **Medición.** Configuración de Google Search Console y GA4 desde el inicio, y reporte ejecutivo semanal.
+- **Medición.** Configuración de Google Search Console y GA4 desde el inicio; **instrumentación de eventos** en el sitio (tiempo en página, punto de salida y conversión tráfico → visita agendada); **funnel de resultados y dashboard** (ver §10); y reporte ejecutivo semanal.
 
 ## 4 · Contenido visual a escala
 
@@ -56,7 +56,7 @@ El contenido visual combina tres fuentes, no una sola, conforme al alcance contr
 
 Todo el material se entrega en **AVIF/WebP responsivos**. Este pipeline automatizado y supervisado es lo que hace viable producir el contenido visual de 49 clubes y cientos de páginas en el tiempo disponible: sustituye miles de ediciones manuales sin sacrificar consistencia. El motor interno de la aplicación se confirma al inicio del proyecto; aquí se describe por su función.
 
-Además del contenido de cara al público, el proyecto entrega un **tablero ejecutivo en tiempo real** para Sports World —tráfico, captura de leads y avance del proyecto— de modo que la dirección vea el desempeño sin depender de reportes manuales.
+Además del contenido de cara al público, el proyecto entrega un **funnel de conversión y un dashboard ejecutivo en tiempo real** para Sports World, de modo que la dirección vea el desempeño sin depender de reportes manuales (detalle en **§10**).
 
 ## 5 · BES, el agente de voz y texto
 
@@ -121,3 +121,29 @@ Si algún control falla, el cambio no se publica hasta corregirse. Este mecanism
 - **Seguridad de integración:** las integraciones entrantes se protegen con **verificación de firma (HMAC en webhooks)**, **HTTPS con HSTS** y **rotación de secretos**. Las credenciales se entregan por un canal seguro (un gestor de contraseñas), **nunca por correo en texto plano** (Anexo Uno B y C).
 - **Protección de datos personales:** el sitio aplica **minimización y no retención** —los datos del prospecto viven brevemente y no se respaldan en el entorno del sitio una vez copiados al CRM—. El detalle y el marco legal (LFPDPPP) están en **[Seguridad del sitio](#seguridad)**.
 - **Propiedad:** todo el código, el contenido y los activos quedan en propiedad de Sports World, operando en su propia infraestructura.
+
+## 10 · Funnel de resultados y dashboard de medición
+
+El proyecto entrega un **funnel de conversión de punta a punta** y un **dashboard ejecutivo en tiempo real** que miden el **resultado real** del proyecto, no solo el tráfico. El funnel tiene cuatro etapas:
+
+1. **Tráfico** — visitas al sitio (orgánico, directo, campañas), por fuente y por página.
+2. **Visita guiada agendada** — el prospecto completa el flujo y agenda su visita (lead capturado). Métrica clave: **conversión tráfico → visita agendada**.
+3. **Visita guiada proporcionada** — el prospecto efectivamente asistió a la visita en el club. Métrica: **conversión agendada → proporcionada**.
+4. **Nueva membresía** — la visita se convirtió en alta. Métrica: **conversión proporcionada → nueva membresía**.
+
+**Fuentes de datos (dos, integradas en el dashboard):**
+
+- **Google (GA4 + Search Console), conectado a las cuentas necesarias de Sports World (Anexo Uno E.4):** tráfico y comportamiento on-page. El sitio se **instrumenta con eventos** para medir **tiempo en página**, **página y punto de salida** del usuario, y la **conversión tráfico → visita agendada**.
+- **CRM (vía el middleware de EL PRESTADOR):** las dos etapas que solo el CRM conoce —**visita agendada → visita proporcionada** y **visita proporcionada → nueva membresía**—, ligadas al mismo prospecto (idempotencia por sesión) para cerrar el funnel de extremo a extremo.
+
+**Dashboard.** Panel ejecutivo en tiempo real para la dirección de Sports World: las cuatro etapas del funnel con sus tasas de conversión, tráfico por fuente, tiempo en página y puntos de salida, y el avance del proyecto. Requiere que el CRM exponga (catálogo del Anexo Uno) el **estado de la visita guiada** (agendada / proporcionada) y la **activación de membresía** asociada al prospecto.
+
+## 11 · Captación unificada de leads (sitio, BES y consola interna)
+
+Para que **todos los canales capturen los leads de la misma forma** y lleguen al CRM con el mismo formato, el proyecto entrega **tres puntos de entrada al mismo cuestionario y a la misma escritura idempotente**:
+
+1. **Sitio público** — el visitante completa por sí mismo el flujo de experiencia ideal.
+2. **BES** — el agente aplica el cuestionario por voz/texto en el canal web.
+3. **Consola interna (uso exclusivo de personal autorizado)** — una sección **de acceso restringido** que permite a **operadores telefónicos, asesores de club y cualquier persona autorizada** aplicar el **mismo cuestionario** a cualquier cliente potencial (p. ej., durante una llamada o en el club) y **registrar el lead en el CRM**.
+
+Los tres usan la **misma lógica de recomendación, el mismo cuestionario y la misma escritura idempotente por sesión** hacia el CRM (vía el middleware), de modo que un lead capturado por el personal llegue al pipeline **idéntico** a uno del sitio o de BES —sin duplicados, con el mismo perfil, club y visita—. Esto **armoniza la captación de leads** en toda la operación. El acceso a la consola es solo para **personal autorizado**; la lista de personas la define Sports World.

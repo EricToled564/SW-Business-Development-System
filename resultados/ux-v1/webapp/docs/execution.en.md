@@ -9,7 +9,7 @@ Foundational document. It describes **how the project is delivered** over eight 
 
 The project delivers four workstreams at once, executed by four coordinated teams across the same eight weeks:
 
-- **The website** — a fast, search-optimized site built from approved design templates: the home, a page for each of the 49 clubs, the amenity and goal hubs, and the ideal experience flow that converts an anonymous visitor into a qualified, scheduled lead. Full inventory in **[Experience Architecture · Site map](#experience:6-mapa-del-sitio)** (148 pages). It includes the **middleware layer** that integrates the CRM (data, prices, geolocation), the **pricing engine** by club / city / national, and the **no-code panel (CMS)** to edit content, images, and club coordinates (rates are extracted automatically from the CRM).
+- **The website** — a fast, search-optimized site built from approved design templates: the home, a page for each of the 49 clubs, the amenity and goal hubs, and the ideal experience flow that converts an anonymous visitor into a qualified, scheduled lead. Full inventory in **[Experience Architecture · Site map](#experience:6-mapa-del-sitio)** (148 pages). It includes the **middleware layer** that integrates the CRM (data, prices, geolocation), the **pricing engine** by club / city / national, and the **no-code panel (CMS)** to edit content, images, and club coordinates (rates are extracted automatically from the CRM). It also delivers the **results funnel and dashboard** (traffic → scheduled visit → provided visit → new membership; Google for traffic/on-page and the CRM for the final stages) and the **internal lead-capture console** for authorized personnel, which uses the same questionnaire and the same write to the CRM.
 - **The SEO foundation and written content** — the search strategy and all optimized content, plus the creation and optimization of the 49 Google Business profiles (one per club).
 - **Visual content at scale** — the treatment of ~650 photographs from the client's bank, ~150 new AI images, 12 animations, and 1 institutional video, via the custom application (**[Technical Strategy · §4](#technical:4-contenido-visual-a-escala)**).
 - **BES, the AI voice and text agent** — the conversational agent **integrated into the website (web channel)**, connected to the same club/class logic and the same lead capture as the site, which additionally sends 2 automated reminders via WhatsApp (**[Technical Strategy · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
@@ -40,6 +40,7 @@ The project is executed with four teams, each with a leader, all coordinated by 
 | CRM integration via **middleware** (data, prices, geo) | A | R | I | I | C | R (standard API + data) |
 | BES agent | A | C | C | I | R | R (knowledge base) |
 | Migration and cutover | R/A | R | C | I | I | C (access) |
+| Funnel, dashboard, and internal capture console | A | R | C | I | C | C (Google access + CRM data) |
 | Milestone approvals | A | C | C | C | C | R (decides) |
 
 The overall leader runs brief, recurring control points where the four leaders synchronize on the shared dependencies; the schedule in §3 sequences them in the correct order.
