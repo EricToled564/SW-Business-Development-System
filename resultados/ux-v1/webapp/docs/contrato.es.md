@@ -245,7 +245,14 @@ Sobre la base anterior, EL CLIENTE pondrá a disposición —vía su API estánd
 - **E.1** **Lineamientos de marca / brand book:** logotipos vectoriales, paleta (HEX/RGB/CMYK), tipografías con licencia, reglas de uso y tono de voz. *Responsable: Mercadotecnia y Marca.*
 - **E.2** **Activos visuales** con derechos de uso vigentes (o autorización para producir a la medida). *Responsable: Mercadotecnia y Marca.*
 - **E.3** **Contenido y copys vigentes** (clubes, amenidades, promociones, membresías, políticas y tarifas) para alimentar a "BES" y el sitio. *Responsable: Mercadotecnia y Marca.*
-- **E.4** **Accesos a cuentas de marketing y analítica:** Google Business Profile, Google Analytics 4, Google Search Console, herramienta SEO (Semrush u otra) y redes sociales. *Responsable: Mercadotecnia y Marca con líder IT.*
+- **E.4** **Accesos a los recursos de Google necesarios para la medición, el funnel y el dashboard (cuenta y API):**
+  - **Google Analytics 4 (GA4):** propiedad y acceso de administración, con la **Data API** habilitada — para tráfico, **tiempo en página**, **punto de salida** y la conversión **tráfico → visita agendada**.
+  - **Google Search Console (GSC):** propiedad verificada y acceso a la **Search Console API** — para desempeño orgánico (impresiones, clics, consultas y posiciones) y envío de páginas a indexación.
+  - **Google Business Profile (GBP):** titularidad o administración de la cuenta de las **49 fichas** (vistas, llamadas, indicaciones).
+  - **Google Tag Manager (GTM):** contenedor, en su caso, para desplegar la **instrumentación de eventos** del sitio.
+  - **Google Ads:** en su caso, si hay **campañas pagadas**, para medir el tráfico de pago dentro del funnel.
+
+  Adicionalmente, herramienta **SEO** (Semrush u otra) y **redes sociales**. *Responsable: Mercadotecnia y Marca con líder IT.*
 - **E.5** **Responsable de Marketing/Marca facultado** para aprobar wireframes, prototipo, plantillas, contenido y territorio visual. *Responsable: Dirección de Mercadotecnia y Marca.*
 - **E.6** **Presupuesto de medios**, en su caso (no incluido en la contraprestación salvo pacto expreso). *Responsable: Mercadotecnia y Marca.*
 - **E.7** **Avisos de privacidad y textos legales** vigentes de la marca, validados por el área legal. *Responsable: Asuntos legales con Mercadotecnia y Marca.*
