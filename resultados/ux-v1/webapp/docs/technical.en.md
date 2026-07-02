@@ -147,3 +147,39 @@ So that **all channels capture leads the same way** and reach the CRM in the sam
 3. **Internal console (authorized-personnel use only)** — a **restricted-access** section that lets **phone operators, club advisors, and any authorized person** apply the **same questionnaire** to any potential client (e.g., during a call or at the club) and **register the lead in the CRM**.
 
 All three use the **same recommendation logic, the same questionnaire, and the same per-session idempotent write** to the CRM (via the middleware), so that a lead captured by staff reaches the pipeline **identically** to one from the site or BES —no duplicates, with the same profile, club, and visit—. This **harmonizes lead capture** across the entire operation. Access to the console is for **authorized personnel only**; Sports World defines the list of people.
+
+## 12 · Sports World HTTP RESTful API standards
+
+> **Client reference document (reproduced in full).** It is the basis on which the PROVIDER's middleware consumes Sports World's standard API (see §2). The specific list of services is defined during the project (requirements → proposal → adjustments).
+
+The HTTP RESTful API is designed under a scalable and modular architecture with the goal of facilitating integration between different platforms.
+
+### Basic design principles
+- **Client-Server model:** Separates the user interface from data storage, improving the portability and scalability of the system.
+- **Stateless:** The server does not store the context of previous requests; each request must contain all the information necessary for its processing.
+- **Cache:** Responses must be explicitly defined as cacheable to optimize performance and reduce latency.
+- **Uniform Interface:** Standardizes interaction through resource identification, manipulation via representations, and descriptive messages.
+
+### Conventions and best practices
+Optimization of HTTP protocol usage following these guidelines:
+
+- **Descriptive URIs:** Use of plural nouns (e.g., `/usuarios`) avoiding the use of verbs in the path.
+- **HTTP methods:**
+  - **GET:** Reading data.
+  - **POST:** Creating resources.
+  - **PUT:** Full update.
+  - **PATCH:** Partial modification.
+  - **DELETE:** Deleting resources.
+- **Status codes:**
+  - **200 OK:** Successful operation.
+  - **201 Created:** Resource generated.
+  - **400 Bad Request:** Error in the request syntax.
+  - **401 Unauthorized:** Invalid credentials.
+  - **404 Not Found:** Nonexistent resource.
+  - **500 Internal Server Error:** Failure in server processing.
+- **Data exchange:** The JSON standard is used via the `Content-Type: application/json` header.
+
+### Architecture and security
+- **Version control:** Implementation of versioning in the URI to guarantee backward compatibility (e.g., `/v1/usuarios`).
+- **Security:** Mandatory use of HTTPS and authorization protocols such as Bearer Token, OAuth 2.0, or JWT tokens. A bearer token is a digital security credential that grants access to protected resources in an API. Its key concept is simple: whoever holds the token ("bears it") gains access without needing to prove additional identity.
+- **Documentation:** Use of OpenAPI / Swagger to generate interactive interfaces that facilitate consuming the endpoints. A tool that works on the standard is Postman, which will be a viable option for documentation.

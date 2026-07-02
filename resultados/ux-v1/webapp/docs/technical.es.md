@@ -147,3 +147,39 @@ Para que **todos los canales capturen los leads de la misma forma** y lleguen al
 3. **Consola interna (uso exclusivo de personal autorizado)** — una sección **de acceso restringido** que permite a **operadores telefónicos, asesores de club y cualquier persona autorizada** aplicar el **mismo cuestionario** a cualquier cliente potencial (p. ej., durante una llamada o en el club) y **registrar el lead en el CRM**.
 
 Los tres usan la **misma lógica de recomendación, el mismo cuestionario y la misma escritura idempotente por sesión** hacia el CRM (vía el middleware), de modo que un lead capturado por el personal llegue al pipeline **idéntico** a uno del sitio o de BES —sin duplicados, con el mismo perfil, club y visita—. Esto **armoniza la captación de leads** en toda la operación. El acceso a la consola es solo para **personal autorizado**; la lista de personas la define Sports World.
+
+## 12 · Estándares del API HTTP RESTful de Sports World
+
+> **Documento de referencia del cliente (reproducido de forma íntegra).** Es la base sobre la que el middleware de EL PRESTADOR consume el API estándar de Sports World (ver §2). El listado específico de servicios se define durante el proyecto (requerimientos → propuesta → ajustes).
+
+La API HTTP RESTful está diseñada bajo una arquitectura escalable y modular con el objetivo de facilitar la integración entre distintas plataformas.
+
+### Principios básicos de diseño
+- **Modelo Cliente-Servidor:** Separa la interfaz de usuario del almacenamiento de datos, mejorando la portabilidad y la escalabilidad del sistema.
+- **Sin estado (Stateless):** El servidor no almacena el contexto de las peticiones previas; cada solicitud debe contener toda la información necesaria para su procesamiento.
+- **Caché:** Las respuestas deben definirse explícitamente como almacenables en caché para optimizar el rendimiento y reducir la latencia.
+- **Interfaz Uniforme:** Estandariza la interacción mediante la identificación de recursos, manipulación a través de representaciones y mensajes descriptivos.
+
+### Convenciones y buenas prácticas
+Optimización del uso del protocolo HTTP siguiendo estos lineamientos:
+
+- **URIs descriptivas:** Empleo de sustantivos en plural (ej. `/usuarios`) evitando el uso de verbos en la ruta.
+- **Métodos HTTP:**
+  - **GET:** Lectura de datos.
+  - **POST:** Creación de recursos.
+  - **PUT:** Actualización integral.
+  - **PATCH:** Modificación parcial.
+  - **DELETE:** Eliminación de recursos.
+- **Códigos de estado:**
+  - **200 OK:** Operación exitosa.
+  - **201 Created:** Recurso generado.
+  - **400 Bad Request:** Error en la sintaxis de la petición.
+  - **401 Unauthorized:** Credenciales inválidas.
+  - **404 Not Found:** Recurso inexistente.
+  - **500 Internal Server Error:** Falla en el procesamiento del servidor.
+- **Intercambio de datos:** Se utiliza el estándar JSON mediante el encabezado `Content-Type: application/json`.
+
+### Arquitectura y seguridad
+- **Control de versiones:** Implementación de versionamiento en la URI para garantizar la retrocompatibilidad (ej. `/v1/usuarios`).
+- **Seguridad:** Uso obligatorio de HTTPS y protocolos de autorización como Bearer Token, OAuth 2.0 o Tokens JWT. Un bearer token (o token al portador) es una credencial de seguridad digital que otorga acceso a recursos protegidos en una API. Su concepto clave es simple: quien tiene el token ("lo porta"), obtiene acceso sin necesidad de demostrar identidad adicional.
+- **Documentación:** Empleo de OpenAPI / Swagger para generar interfaces interactivas que faciliten el consumo de los endpoints. Una herramienta que trabaja sobre el estándar es Postman, la cual será una opción viable para la documentación.
