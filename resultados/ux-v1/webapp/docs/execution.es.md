@@ -9,7 +9,7 @@ Documento fundacional. Describe **cómo se entrega** el proyecto en ocho semanas
 
 El proyecto entrega cuatro frentes a la vez, ejecutados por cuatro equipos coordinados a lo largo de las mismas ocho semanas:
 
-- **El sitio web** — un sitio rápido y optimizado para búsqueda, construido a partir de plantillas de diseño aprobadas: el home, una página para cada uno de los 49 clubes, los hubs de amenidades y objetivos, y el flujo de experiencia ideal que convierte a un visitante anónimo en un lead calificado y agendado. Inventario completo en **[Arquitectura de Experiencia · Mapa del sitio](#experience:6-mapa-del-sitio)** (148 páginas).
+- **El sitio web** — un sitio rápido y optimizado para búsqueda, construido a partir de plantillas de diseño aprobadas: el home, una página para cada uno de los 49 clubes, los hubs de amenidades y objetivos, y el flujo de experiencia ideal que convierte a un visitante anónimo en un lead calificado y agendado. Inventario completo en **[Arquitectura de Experiencia · Mapa del sitio](#experience:6-mapa-del-sitio)** (148 páginas). Incluye la **capa de middleware** que integra el CRM (datos, precios, geolocalización), el **motor de precios** por club / ciudad / nacional, y el **panel sin código (CMS)** para editar contenido, coordenadas de clubes y tarifas.
 - **La base de SEO y el contenido escrito** — la estrategia de búsqueda y todo el contenido optimizado, más la creación y optimización de las 49 fichas de Google Business (una por club).
 - **El contenido visual a escala** — el tratamiento de ~650 fotografías del banco del cliente, ~150 imágenes nuevas por IA, 12 animaciones y 1 video institucional, vía la aplicación a la medida (**[Estrategia Técnica · §4](#technical:4-contenido-visual-a-escala)**).
 - **BES, el agente de voz y texto con IA** — el agente conversacional **integrado al sitio web (canal web)**, conectado a la misma lógica de club/clase y a la misma captación de leads que el sitio, que además envía 2 recordatorios automatizados por WhatsApp (**[Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
@@ -37,7 +37,7 @@ El proyecto se ejecuta con cuatro equipos, cada uno con un líder, todos coordin
 | Datos estructurados / schema | A | C | R | I | I | I |
 | 49 fichas de Google Business | A | I | R | I | I | R (titularidad) |
 | Contenido visual a escala | A | C | I | R | I | C (marca) |
-| Integración CRM y datos operativos | A | R | I | I | C | R (API/datos) |
+| Integración CRM vía **middleware** (datos, precios, geo) | A | R | I | I | C | R (API estándar + datos) |
 | Agente BES | A | C | C | I | R | R (base de conocimiento) |
 | Migración y cutover | R/A | R | C | I | I | C (accesos) |
 | Aprobaciones de hito | A | C | C | C | C | R (decide) |
@@ -147,7 +147,7 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 | Riesgo | Prob. | Impacto | Mitigación | Dueño |
 |---|---|---|---|---|
 | Verificación de Google Business se alarga (la controla Google) | Alta | Medio | Iniciar en S1; el resto del proyecto es independiente; las fichas pueden finalizar cerca del lanzamiento sin frenar el sitio. | Líder gral. |
-| La API del CRM no cumple su SLA (p95 <500/<800 ms) | Media | Alto | SLA a cargo de SW (Anexo Uno D.5); arquitectura tolerante a sincronización; degradación elegante. | E4 / E1 |
+| La API del CRM no cumple su SLA (p95 <500/<800 ms) | Media | Alto | **Middleware de EL PRESTADOR** con caché de lecturas, reintentos y tolerancia a sincronización; SW solo expone su API estándar (Anexo Uno D.5); degradación elegante. | E1 / E4 |
 | Atrasos del cliente en el Anexo Uno o en aprobaciones | Media | Alto | Dependencias front-loaded a S1; ventanas de 48 h pactadas (I.4); el plazo se extiende día por día y aplica stand-by ($350 USD/día, Cláusula Novena). | Líder gral. / SW |
 | Calidad/disponibilidad de datos de clubes y clases | Media | Medio | API de lectura preferente; fallback a exportación estructurada con calendario acordado; validación automática. | E1 / SW |
 | Base de conocimiento de BES desactualizada | Media | Medio | Actualización semanal mínima (Anexo Uno D.6); reentrenamiento automático. | SW / E4 |
@@ -164,6 +164,6 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 
 ## 9 · Supuestos y fuera de alcance
 
-- **Supuesto central:** Sports World expone una API para el CRM y entrega el 100% de los requerimientos del Anexo Uno; el cómputo de las 8 semanas corre a partir de esa entrega.
+- **Supuesto central:** Sports World **expone su API estándar del CRM y los datos del catálogo** (estatus de clubes, coordenadas, amenidades, clases, horarios, tarifas, descuentos/promociones) del Anexo Uno; la integración a la medida la resuelve el **middleware de EL PRESTADOR**. El cómputo de las 8 semanas corre a partir de la entrega del 100% de esos requerimientos.
 - **Fuera de alcance (salvo convenio modificatorio):** cualquier página adicional a las 148 (Anexo Dos I.1); operación de BES por telefonía o como chat conversacional de WhatsApp (su operación se limita al canal web; ver Estrategia Técnica §5); presupuesto de medios; y cualquier servicio no enumerado en los Anexos.
 - **No se garantizan** posiciones de búsqueda, volúmenes de tráfico ni tasas de conversión: dependen de factores externos (algoritmos de buscadores, mercado). Lo comprometido son los KPIs técnicos de la §6.

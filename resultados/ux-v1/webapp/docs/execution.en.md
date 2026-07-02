@@ -9,7 +9,7 @@ Foundational document. It describes **how the project is delivered** over eight 
 
 The project delivers four workstreams at once, executed by four coordinated teams across the same eight weeks:
 
-- **The website** — a fast, search-optimized site built from approved design templates: the home, a page for each of the 49 clubs, the amenity and goal hubs, and the ideal experience flow that converts an anonymous visitor into a qualified, scheduled lead. Full inventory in **[Experience Architecture · Site map](#experience:6-mapa-del-sitio)** (148 pages).
+- **The website** — a fast, search-optimized site built from approved design templates: the home, a page for each of the 49 clubs, the amenity and goal hubs, and the ideal experience flow that converts an anonymous visitor into a qualified, scheduled lead. Full inventory in **[Experience Architecture · Site map](#experience:6-mapa-del-sitio)** (148 pages). It includes the **middleware layer** that integrates the CRM (data, prices, geolocation), the **pricing engine** by club / city / national, and the **no-code panel (CMS)** to edit content, club coordinates, and rates.
 - **The SEO foundation and written content** — the search strategy and all optimized content, plus the creation and optimization of the 49 Google Business profiles (one per club).
 - **Visual content at scale** — the treatment of ~650 photographs from the client's bank, ~150 new AI images, 12 animations, and 1 institutional video, via the custom application (**[Technical Strategy · §4](#technical:4-contenido-visual-a-escala)**).
 - **BES, the AI voice and text agent** — the conversational agent **integrated into the website (web channel)**, connected to the same club/class logic and the same lead capture as the site, which additionally sends 2 automated reminders via WhatsApp (**[Technical Strategy · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
@@ -37,7 +37,7 @@ The project is executed with four teams, each with a leader, all coordinated by 
 | Structured data / schema | A | C | R | I | I | I |
 | 49 Google Business profiles | A | I | R | I | I | R (ownership) |
 | Visual content at scale | A | C | I | R | I | C (brand) |
-| CRM integration and operational data | A | R | I | I | C | R (API/data) |
+| CRM integration via **middleware** (data, prices, geo) | A | R | I | I | C | R (standard API + data) |
 | BES agent | A | C | C | I | R | R (knowledge base) |
 | Migration and cutover | R/A | R | C | I | I | C (access) |
 | Milestone approvals | A | C | C | C | C | R (decides) |
@@ -147,7 +147,7 @@ These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#c
 | Risk | Prob. | Impact | Mitigation | Owner |
 |---|---|---|---|---|
 | Google Business verification runs long (controlled by Google) | High | Medium | Initiate in W1; the rest of the project is independent; profiles can be finalized close to launch without holding up the site. | Overall leader |
-| The CRM API fails its SLA (p95 <500/<800 ms) | Medium | High | SLA owned by SW (Annex One D.5); architecture tolerant to synchronization; graceful degradation. | T4 / T1 |
+| The CRM API fails its SLA (p95 <500/<800 ms) | Medium | High | **PROVIDER middleware** with read caching, retries, and synchronization tolerance; SW only exposes its standard API (Annex One D.5); graceful degradation. | T1 / T4 |
 | Client delays on Annex One or on approvals | Medium | High | Dependencies front-loaded to W1; 48 h windows agreed (I.4); the timeline extends day for day and stand-by applies (USD $350/day, Clause Nine). | Overall leader / SW |
 | Quality/availability of club and class data | Medium | Medium | Read API preferred; fallback to structured export with an agreed schedule; automatic validation. | T1 / SW |
 | BES knowledge base outdated | Medium | Medium | Minimum weekly update (Annex One D.6); automatic retraining. | SW / T4 |
@@ -164,6 +164,6 @@ These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#c
 
 ## 9 · Assumptions and out of scope
 
-- **Core assumption:** Sports World exposes an API for the CRM and delivers 100% of the Annex One requirements; the 8-week count runs from that delivery.
+- **Core assumption:** Sports World **exposes its standard CRM API and the catalog data** (club status, coordinates, amenities, classes, schedules, rates, discounts/promotions) of Annex One; the custom integration is resolved by the **PROVIDER's middleware**. The 8-week count runs from the delivery of 100% of those requirements.
 - **Out of scope (except by amending agreement):** any page beyond the 148 (Annex Two I.1); operation of BES by telephony or as a WhatsApp conversational chat (its operation is limited to the web channel; see Technical Strategy §5); media budget; and any service not listed in the Annexes.
 - **Not guaranteed:** search positions, traffic volumes, or conversion rates: they depend on external factors (search engine algorithms, market). What is committed are the technical KPIs of §6.
