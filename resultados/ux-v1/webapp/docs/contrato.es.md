@@ -151,6 +151,25 @@ Leído que fue por las Partes y enteradas de su contenido y alcance legal, firma
 
 El presente Anexo Uno forma parte integrante e inseparable del Contrato y enumera, de manera limitativa, los insumos, accesos, datos, credenciales y definiciones que EL CLIENTE deberá entregar a EL PRESTADOR para iniciar y ejecutar los Servicios. Los plazos a cargo de EL PRESTADOR comienzan a correr a partir de la entrega del **100%** de los requerimientos aquí enunciados; cualquier entrega parcial, incompleta o inválida no se considerará entregada para el cómputo de plazos y extenderá, día por día, los plazos a cargo de EL PRESTADOR, sin responsabilidad para éste.
 
+## Criterio general de interpretación técnica ("o similares")
+
+Los prerrequisitos técnicos específicos que se enuncian en este Anexo —estándares, versiones, esquemas de autenticación, formatos, nombres y firmas de los puntos de acceso— son **de referencia y orientativos**. La infraestructura y las interfaces reales de EL CLIENTE pueden diferir de las aquí citadas; en consecuencia, cada requerimiento se entenderá **satisfecho por cualquier tecnología, estándar, versión o componente equivalente o similar** ("o similares") que cumpla la misma función y nivel de servicio, sin necesidad de convenio modificatorio.
+
+**Naturaleza del API — desarrollo a la medida.** Los servicios de integración se proveerán como un **desarrollo a la medida** conforme a las necesidades del proyecto. Por ello, este Contrato cita únicamente los **estándares y buenas prácticas generales** del **API HTTP RESTful de Sports World** (descritos enseguida), y no un contrato de datos cerrado. El **listado específico** de información y servicios requeridos se definirá **durante el avance del proyecto** mediante el siguiente procedimiento, que no altera por sí mismo el precio ni el plazo salvo pacto expreso: (i) EL PRESTADOR entrega el **listado de requerimientos** de información y servicios; (ii) EL CLIENTE presenta una **propuesta** de implementación sobre su API; y (iii) ambas partes acuerdan los **ajustes correspondientes**. Este ciclo se ejecuta de forma temprana para no afectar el cómputo de plazos (ver Bloques A y B).
+
+**Vías de implementación (a definir en la propuesta).** Para cubrir las necesidades del sitio y de "BES" se requiere un **flujo de trabajo a la medida** sobre el CRM. Dicho flujo podrá implementarse, según lo que resulte más eficiente y se acuerde entre las partes, por cualquiera de estas vías: **(a)** **desarrollo a la medida dentro del CRM**, a cargo de EL CLIENTE; o **(b)** una **capa de middleware (integración) a cargo de EL PRESTADOR**, que consuma el API HTTP RESTful estándar de EL CLIENTE y exponga hacia el sitio y "BES" exactamente los servicios necesarios —idempotencia, caché, reintentos, mapeo y normalización de datos, búsquedas por amenidad y por geolocalización, y conformación de la latencia objetivo—. La vía (b) minimiza el desarrollo a cargo de EL CLIENTE (que se limitaría a exponer su API estándar), sin que ello implique costo adicional salvo pacto expreso.
+
+### Estándares y buenas prácticas generales del API HTTP RESTful de Sports World
+
+Arquitectura escalable y modular orientada a facilitar la integración entre plataformas, conforme a:
+
+- **Principios de diseño:** modelo **cliente-servidor** (separa interfaz y almacenamiento, mejorando portabilidad y escalabilidad); **sin estado** (cada petición contiene toda la información necesaria; el servidor no conserva el contexto de peticiones previas); **caché** (las respuestas se definen explícitamente como almacenables en caché para optimizar el rendimiento y reducir la latencia); e **interfaz uniforme** (identificación de recursos, manipulación mediante representaciones y mensajes descriptivos).
+- **Convenciones HTTP:** URIs descriptivas con sustantivos en plural (p. ej. `/usuarios`, evitando verbos en la ruta); métodos **GET** (lectura), **POST** (creación), **PUT** (actualización integral), **PATCH** (modificación parcial) y **DELETE** (eliminación); códigos de estado estándar (**200** OK, **201** Created, **400** Bad Request, **401** Unauthorized, **404** Not Found, **500** Internal Server Error); e intercambio de datos en **JSON** (`Content-Type: application/json`).
+- **Versionado y seguridad:** versionamiento en la URI para garantizar la retrocompatibilidad (p. ej. `/v1/usuarios`); uso obligatorio de **HTTPS**; y autorización mediante **Bearer Token, OAuth 2.0 o JWT** (o esquema equivalente, con alcance y rotación).
+- **Documentación:** **OpenAPI / Swagger** para generar interfaces interactivas de consumo; **Postman** es una opción válida de documentación.
+
+Los puntos de acceso, esquemas de autenticación y niveles de servicio enunciados en los Bloques A, B y D se interpretan sobre esta base general y quedan sujetos al procedimiento de definición conjunta antes descrito.
+
 ## Bloque 0 — Respuestas de descubrimiento (entrega previa al inicio)
 
 - **0.1** Existencia, identificación y responsabilidades del API gateway corporativo (define si autenticación, límites de tasa y bitácora residen en el gateway o en cada aplicación).
@@ -163,7 +182,7 @@ El presente Anexo Uno forma parte integrante e inseparable del Contrato y enumer
 
 ## Bloque A — Documentación, ambiente de pruebas y responsable único (día 1)
 
-- **A.1** Especificación **OpenAPI 3.1** del CRM (creación/actualización de prospecto, consulta de miembro, datos de clubes y membresías; con esquemas, errores y ejemplos). *Responsable: líder técnico CRM.*
+- **A.1** Documentación del API del CRM en **OpenAPI / Swagger** (o colección **Postman** equivalente), de referencia, cubriendo los servicios de creación/actualización de prospecto, consulta de miembro y datos de clubes, clases y membresías, con esquemas, errores y ejemplos. El detalle definitivo de puntos de acceso se precisa conforme al listado de requerimientos. *Responsable: líder técnico CRM.*
 - **A.2** Credenciales del ambiente de pruebas del CRM, vía bóveda compartida. *Responsable: líder IT y Seguridad.*
 - **A.3** Esquemas reales (JSON) de ≥3 clubes y 5 clases para los datos en vivo (horarios; teléfono y correo; catálogo de clases; horarios y días de cada clase). *Responsable: líder técnico CRM.*
 - **A.4** Nominación del **responsable único del proyecto (Project Owner técnico)** con autoridad sobre IT, seguridad, legal y operación (nombre, correo, móvil, disponibilidad y suplente). *Responsable: Dirección de EL CLIENTE.*
@@ -172,9 +191,9 @@ El presente Anexo Uno forma parte integrante e inseparable del Contrato y enumer
 ## Bloque B — Credenciales productivas e integraciones (fin de la semana 2)
 
 - **B.1** Credenciales **productivas del CRM**, limitadas a los puntos de acceso que consume EL PRESTADOR, en cuenta de servicio dedicada (no personal), vía bóveda compartida. *Responsable: líder IT y Seguridad.*
-- **B.2** Esquema de **autenticación del CRM** (OAuth 2.1 con credenciales de cliente, mTLS, o llave de acceso con alcance y rotación). *Responsable: líder técnico CRM y Seguridad.*
-- **B.3** Soporte de **llave de idempotencia** (Idempotency-Key / UUID) en el punto de acceso de creación de prospecto, para que llamadas repetidas no generen duplicados. *Responsable: líder técnico CRM.*
-- **B.4** **Webhooks salientes del CRM** (`lead.qualified`, `membership.activated`) con firma **HMAC-SHA256**, identificador único de evento, marca de tiempo, deduplicación y reintentos con espera incremental. *Responsable: líder técnico CRM.*
+- **B.2** Esquema de **autenticación del CRM**: **Bearer Token, OAuth 2.0/2.1, JWT, mTLS o llave de acceso equivalente**, con alcance y rotación. *Responsable: líder técnico CRM y Seguridad.*
+- **B.3** Soporte de **idempotencia** (llave de idempotencia / UUID, o mecanismo equivalente de deduplicación) en el servicio de creación de prospecto, para que llamadas repetidas no generen duplicados. *Responsable: líder técnico CRM.* *(Si la integración se implementa por middleware de EL PRESTADOR —vía (b) del criterio general—, la idempotencia podrá resolverse en esa capa.)*
+- **B.4** **Notificación de eventos** relevantes (p. ej. prospecto calificado, membresía activada): **webhooks salientes** firmados (HMAC-SHA256 o firma equivalente) con identificador único de evento, marca de tiempo, deduplicación y reintentos con espera incremental **si el API los expone**; en su defecto, un **mecanismo equivalente de consulta (polling)** acordado entre las partes. *Responsable: líder técnico CRM.*
 - **B.5** **SLAs documentados de la API del CRM** (percentil 95 de latencia y disponibilidad mensual) para creación de prospecto, consulta de miembro y catálogos de clubes, clases y membresías. *Responsable: líder técnico CRM.*
 - **B.6** **Política de límites de tasa del CRM** (peticiones por minuto/hora, ráfagas, código HTTP y cabecera `Retry-After`). *Responsable: líder técnico CRM.*
 
@@ -195,7 +214,7 @@ El presente Anexo Uno forma parte integrante e inseparable del Contrato y enumer
 - **D.2** Punto de acceso de **búsqueda de club por amenidad** (alberca, spa, sauna u otra). *Responsable: líder técnico CRM.*
 - **D.3** Punto de acceso de **búsqueda de club por geolocalización** (código postal o coordenadas, ordenado por cercanía con distancia). *Responsable: líder técnico CRM.*
 - **D.4** Punto de acceso de **creación de prospecto** (el mismo de B.3, compartido con el sitio, con garantía de no duplicación). El día y horario de visita elegidos por el usuario se registran como parte del prospecto y se envían por correo al club; **no se verifica disponibilidad ni se crea reservación en sistema alguno**. *Responsable: líder técnico CRM.*
-- **D.5** **SLA de latencia** específico para BES: percentil 95 < **500 ms** para las consultas D.1–D.3 y < **800 ms** para la creación de prospecto (D.4). *Responsable: líder técnico CRM.*
+- **D.5** **SLA de latencia** objetivo para BES (de referencia, a confirmar en la propuesta): percentil 95 < **500 ms** para las consultas D.1–D.3 y < **800 ms** para la creación de prospecto (D.4). Este objetivo es alcanzable mediante caché de lecturas y/o la capa de middleware de EL PRESTADOR; el CRM debe sostener un nivel de servicio que lo haga viable. *Responsable: líder técnico CRM.*
 - **D.6** **Acceso a la base de conocimiento** de "BES" (catálogo de membresías con precios y términos; clases con descripciones; políticas de cancelación y congelamiento; información operativa por club, incluido el horario de atención de cada club), con actualización semanal mínima durante el proyecto. *Responsable: líder técnico CRM y Mercadotecnia operativa.*
 - **D.7** **Estrategia de escalación a operador humano** documentada (transferencia por SIP con número/cola de destino; WhatsApp con operador; o devolución de llamada agendada en el CRM), con responsables del lado humano. *Responsable: responsable único.*
 
