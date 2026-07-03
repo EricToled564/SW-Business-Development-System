@@ -3,29 +3,35 @@
 
 Punto de entrada al conjunto documental. Cada documento es **autónomo** (puede leerse de forma independiente); este índice indica qué contiene cada uno, a quién está dirigido y dónde consultar cada tema.
 
-La documentación se organiza en **dos proyectos**, cada uno con su propio grupo de documentos: **Proyecto A · Rediseño Web** (la plataforma central: sitio, cuestionario, BES, CRM, funnel) y **Proyecto B · Business Development System** (extiende la captación a WhatsApp — alcance y costo aparte).
+La documentación se organiza en **tres bloques**: los **documentos generales**, comunes a todo el sistema; los **exclusivos del Proyecto A · Rediseño Web**; y los **exclusivos del Proyecto B · Business Development System**.
 
-## Proyecto A · Rediseño Web
+## Documentos Generales (ambos proyectos)
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
-| 1 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo (sitio + BDS), con capítulo central dedicado al rediseño web: problema, objetivos, arquitectura, BES, negocio, las 8 semanas y KPIs. | Dirección, negocio |
-| 2 | [**Arquitectura de Experiencia (UX)**](#experience) | El flujo de experiencia ideal y el **mapa del sitio** (las 148 páginas): navegación, fases, cuestionario, menús dinámicos, reglas de negocio, datos y arquitectura de información. | Producto, UX, desarrollo, SEO |
-| 3 | [**Estrategia Técnica**](#technical) | Stack, agente BES, **integración por middleware** y datos del CRM, migración, seguridad, método y calidad, **funnel de resultados y dashboard (§10)**, **captación unificada de leads (§11)** y los **estándares del API del cliente (§12)**. | Sistemas / TI |
-| 4 | [**Plan de Ejecución**](#execution) | Estructura del equipo, gobierno, cronograma de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios. | Dirección, TI, PMO |
-| 5 | [**Seguridad del sitio**](#seguridad) | Protección de datos personales: minimización y no retención (los datos viven brevemente; sin respaldo tras copiarse al CRM). | TI, Legal, negocio |
-| 6 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en todo el conjunto. | Todos |
-| 7 | [**Contrato**](#contrato) | Marco mercantil: objeto, contraprestación, forma de pago, propiedad intelectual y datos personales. | Dirección, Legal |
-| 7a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques y con responsables. | Dirección, TI, Legal |
-| 7b | [**Anexo Dos · Entregables, soporte y operación**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
-| 8 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
-| 9 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
-| 10 | [**Status de Entregables Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. El detalle contractual vive en el Anexo Uno. | TI, Marketing, PMO |
-| 11 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
-| 12 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
-| 13 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del flujo de experiencia ideal. | Negocio, dirección |
+| 1 | [**Índice de documentos**](#indice) | Este mapa: qué contiene cada documento, a quién está dirigido y dónde consultar cada tema. | Todos |
+| 2 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo — Proyecto A y Proyecto B —, con eje en el cuestionario y la experiencia única, y una sección especial dedicada al Rediseño Web. | Dirección, negocio |
+| 3 | [**Contrato**](#contrato) | Marco mercantil de **ambos proyectos**: objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Primera Bis— la separación y contraprestación adicional del Proyecto B (BDS). | Dirección, Legal |
+| 3a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques y con responsables. | Dirección, TI, Legal |
+| 3b | [**Anexo Dos · Entregables, soporte y operación**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
+| 4 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en toda la documentación, de ambos proyectos. | Todos |
+| 5 | [**Plan de Ejecución**](#execution) | Estructura del equipo, gobierno, cronograma de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios — el marco de gobierno de **ambos proyectos**. | Dirección, TI, PMO |
 
-## Proyecto B · Business Development System (BDS — alcance y costo aparte)
+## Proyecto A · Rediseño Web (exclusivos)
+
+| # | Documento | Propósito | Audiencia |
+|---|---|---|---|
+| 6 | [**Arquitectura de Experiencia (UX)**](#experience) | El flujo de experiencia ideal y el **mapa del sitio** (las 148 páginas): navegación, fases, cuestionario, menús dinámicos, reglas de negocio, datos y arquitectura de información. | Producto, UX, desarrollo, SEO |
+| 7 | [**Estrategia Técnica**](#technical) | Stack, agente BES, **integración por middleware** y datos del CRM, migración, seguridad, método y calidad, **funnel de resultados y dashboard (§10)**, **captación unificada de leads (§11)** y los **estándares del API del cliente (§12)**. | Sistemas / TI |
+| 8 | [**Seguridad del sitio**](#seguridad) | Protección de datos personales: minimización y no retención (los datos viven brevemente; sin respaldo tras copiarse al CRM). El BDS sigue estos mismos principios por referencia. | TI, Legal, negocio |
+| 9 | [**Status de Entregables Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. El detalle contractual vive en el Anexo Uno. | TI, Marketing, PMO |
+| 10 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
+| 11 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
+| 12 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del flujo de experiencia ideal. | Negocio, dirección |
+| 13 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
+| 14 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
+
+## Proyecto B · Business Development System (BDS — exclusivos, alcance y costo aparte)
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|

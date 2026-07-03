@@ -1,7 +1,7 @@
 # Sports World México · Resumen Ejecutivo · V1.0
-## Una nueva arquitectura digital para las 49 experiencias de Sports World
+## Un cuestionario, una experiencia ideal: la captación digital de Sports World en todo canal
 
-Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación digital que la marca requiere: rastreable por Google, centrada en el usuario que busca y operada con inteligencia artificial al servicio del socio. Este documento ofrece la visión de conjunto; cada afirmación se desarrolla a detalle en los documentos que lo acompañan: Arquitectura de Experiencia, Estrategia Técnica, Mapa del Sitio, Auditoría inicial y Contrato.
+El eje de **todo** el proyecto —Proyecto A y Proyecto B— es uno solo: **un cuestionario y una experiencia ideal**, aplicados de la misma forma sin importar el canal por el que llegue el prospecto. Este documento da la visión de conjunto de ambos proyectos y dedica, además, una **sección especial al Rediseño Web**: su implementación insignia. Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación digital que la marca requiere: rastreable por Google, centrada en el usuario que busca y operada con inteligencia artificial al servicio del socio. Cada afirmación se desarrolla a detalle en los documentos que lo acompañan: Arquitectura de Experiencia, Estrategia Técnica, Mapa del Sitio, Auditoría inicial y Contrato.
 
 | Ficha | |
 |---|---|
@@ -11,16 +11,16 @@ Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación di
 | **Estabilización posterior** | 2 a 4 semanas |
 | **Documento** | Resumen Ejecutivo · Junio 2026 · Confidencial |
 
-## El sistema completo: captación multicanal en tiempo real
+## El sistema completo: un cuestionario, una experiencia ideal, todo canal
 
-Sports World necesita atender al prospecto en **cualquier canal** donde muestre interés. El sistema completo son dos proyectos complementarios, que comparten el mismo cuestionario, la misma experiencia ideal y la misma escritura al CRM:
+Sports World necesita atender al prospecto en **cualquier canal** donde muestre interés. Lo que hace a esto un solo sistema —y no dos sistemas paralelos— es que **el cuestionario y la experiencia ideal son únicos**: se aplican una sola vez, se definen una sola vez, y cada canal solo cambia **quién** los aplica y **por dónde** llegan:
 
-- **Proyecto A · Rediseño Web (este documento).** La plataforma central: el sitio de 148 páginas rastreable por Google, el cuestionario de experiencia ideal, el agente BES por voz y texto en el sitio, la integración con el CRM vía middleware y el funnel/dashboard de medición. Es la base técnica que reutilizan los demás canales.
-- **Proyecto B · Business Development System (alcance y costo aparte).** Extiende esa misma base a **WhatsApp**: leads de campañas atendidos por **operadores humanos** en tiempo real, con **BES por WhatsApp (solo texto)** de respaldo 24/7, más la **consola interna** para asesores y walk-ins. Ver **[BDS · Resumen Ejecutivo](#bds-resumen)**.
+- **Proyecto A · Rediseño Web.** El canal donde nace y se implementa el cuestionario: el sitio de 148 páginas rastreable por Google, el agente BES por voz y texto, la integración con el CRM vía middleware y el funnel/dashboard de medición. Su **sección especial** está más adelante en este mismo documento.
+- **Proyecto B · Business Development System (alcance y costo aparte).** Extiende el **mismo** cuestionario y la **misma** experiencia ideal a **WhatsApp**: leads de campañas atendidos por **operadores humanos** en tiempo real, con **BES por WhatsApp (solo texto)** de respaldo 24/7, más la **consola interna** para asesores y walk-ins. Ver **[BDS · Resumen Ejecutivo](#bds-resumen)**.
 
-El resto de este documento es el **capítulo central del proyecto — el Rediseño Web (Proyecto A)** — que hace posible todo lo demás.
+A continuación, la **sección especial del Rediseño Web (Proyecto A)** — su implementación insignia.
 
-## Capítulo central · Rediseño Web (Proyecto A)
+## Sección especial · Rediseño Web (Proyecto A)
 
 ### 1 · El punto de partida
 
