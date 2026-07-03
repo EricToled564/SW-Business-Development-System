@@ -28,6 +28,19 @@ Completar los módulos no es lo mismo que vender mejor en el club. El programa s
 
 Los Niveles 1 y 2 se obtienen directamente de la plataforma de módulos y del agente de role-play, y están disponibles desde el lanzamiento. Los Niveles 3 y 4 **dependen de las métricas reales del CRM** y solo pueden reportarse una vez calibrada la línea base — es la razón por la que el programa no compromete metas de conversión antes de esa calibración.
 
+## Catálogo de KPIs del programa
+
+Los indicadores se organizan en cuatro familias, alineadas a los cuatro niveles de evaluación. Las dos primeras miden el **programa** y están activas desde el lanzamiento; las dos últimas miden el **negocio** y se activan tras la calibración de la línea base.
+
+| Familia | Indicadores | Fuente | Se activa |
+|---|---|---|---|
+| **Adopción y avance** (Fase 1) | % de asesores activos en la plataforma · módulos acreditados por nivel · tiempo a certificación de Fase 1 · calificación de acreditación por módulo | Plataforma de módulos | Desde el lanzamiento |
+| **Dominio y práctica** (Fase 2) | Puntaje de readiness por sesión y su tendencia · % del equipo certificado · cumplimiento del refuerzo de días 7/30/90 · adherencia a la cadencia semanal de mantenimiento | Agente de role-play y motor adaptativo | Desde el lanzamiento |
+| **Comportamiento en operación** (Nivel 3) | Uso de la herramienta de clasificación con prospectos reales · llamadas de hito ejecutadas vs. programadas · bases pasadas trabajadas bajo protocolo | CRM | Tras calibración de línea base |
+| **Resultado comercial** (Nivel 4) | Conversión por etapa del funnel (contacto → cita → asistencia → cierre), comparando cohortes certificadas vs. no certificadas · retención temprana de los socios inscritos por asesores certificados | CRM | Tras calibración; metas fijadas con Sports World |
+
+Cada familia se lee en los tres niveles de agregación del dashboard (club, ciudad, nacional), de modo que un indicador rezagado se pueda atribuir a un asesor, a un club o a una región — no a un promedio nacional que esconde el detalle.
+
 ## Por qué la línea base se calibra antes de comprometer KPIs
 
 Las 15 entrevistas de campo reportan una **variabilidad de hasta 40 veces** entre las tasas de conversión autorreportadas por los propios asesores:

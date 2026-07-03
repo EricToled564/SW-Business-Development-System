@@ -46,12 +46,12 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
-| C1 | [**Academia · Resumen Ejecutivo**](#academia-resumen) | El problema (habilitación no estandarizada) y la solución en dos fases, validadas con entrevistas de campo. | Dirección, RH, Comercial |
+| C1 | [**Academia · Resumen Ejecutivo**](#academia-resumen) | Por qué existe el proyecto, objetivos esperados, cómo se ejecuta (dos fases + sistema operativo), medición del éxito y riesgos con mitigación. | Dirección, RH, Comercial |
 | C2 | [**Academia · Contenido y taxonomía**](#academia-contenido) | Taxonomía maestra del cliente, los siete componentes del programa y la segmentación por tipo de club. | Comercial, Marketing |
 | C3 | [**Academia · Fases del programa**](#academia-fases) | Principios de diseño instruccional, Fase 1 (módulos por niveles) y Fase 2 (role-play con agente de voz + refuerzo espaciado). | Comercial, RH |
 | C4 | [**Academia · Producción del curso**](#academia-produccion) | Anatomía de un módulo, mecánicas de interactividad reutilizables y producción 100% con IA sin costo por módulo. | Marketing, Comercial, TI |
 | C5 | [**Academia · Estrategia Técnica**](#academia-tecnica) | Separación total de la plataforma y la web, agente de voz de role-play, motor de aprendizaje continuo, dashboard club/ciudad/nacional y costo de las plataformas de IA. | Sistemas / TI |
-| C6 | [**Academia · Medición**](#academia-medicion) | Dashboard de readiness, evaluación en cuatro niveles y calibración con el CRM. | Dirección, Comercial |
+| C6 | [**Academia · Medición**](#academia-medicion) | Dashboard de readiness, evaluación en cuatro niveles, catálogo de KPIs por familia y calibración con el CRM. | Dirección, Comercial |
 | C7 | [**Academia · Addendum contractual**](#academia-anexo) | Alcance, entregables y contraprestación adicional del Proyecto C. | Dirección, Legal |
 
 ## Localizador rápido (¿dónde está cada tema?)
