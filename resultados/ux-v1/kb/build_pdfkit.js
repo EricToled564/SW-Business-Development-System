@@ -27,6 +27,12 @@ const DOCS = [
   { src: SRC + "/bds-tecnica.es.md", kind: "md", title: "BDS — Estrategia Técnica", out: "18-bds-tecnica.es.pdf" },
   { src: SRC + "/bds-medicion.es.md", kind: "md", title: "BDS — Medición y funnel", out: "19-bds-medicion.es.pdf" },
   { src: SRC + "/bds-anexo.es.md", kind: "md", title: "BDS — Addendum contractual", out: "20-bds-anexo.es.pdf" },
+  { src: SRC + "/academia-resumen.es.md", kind: "md", title: "Academia SW — Resumen Ejecutivo", out: "21-academia-resumen.es.pdf" },
+  { src: SRC + "/academia-contenido.es.md", kind: "md", title: "Academia SW — Contenido y taxonomía", out: "22-academia-contenido.es.pdf" },
+  { src: SRC + "/academia-fases.es.md", kind: "md", title: "Academia SW — Fases del programa", out: "23-academia-fases.es.pdf" },
+  { src: SRC + "/academia-tecnica.es.md", kind: "md", title: "Academia SW — Estrategia Técnica", out: "24-academia-tecnica.es.pdf" },
+  { src: SRC + "/academia-medicion.es.md", kind: "md", title: "Academia SW — Medición", out: "25-academia-medicion.es.pdf" },
+  { src: SRC + "/academia-anexo.es.md", kind: "md", title: "Academia SW — Addendum contractual", out: "26-academia-anexo.es.pdf" },
   // NOTA: 'voice-agent-knowledge-base.html' quedó obsoleto (contenido previo a las
   // correcciones de esta sesión). Excluido del build; no se sube a la KB.
 ];

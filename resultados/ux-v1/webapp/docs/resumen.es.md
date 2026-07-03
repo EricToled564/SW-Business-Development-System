@@ -1,7 +1,7 @@
 # Sports World México · Resumen Ejecutivo · V1.0
 ## Un cuestionario, una experiencia ideal: la captación digital de Sports World en todo canal
 
-El eje de **todo** el proyecto —Proyecto A y Proyecto B— es uno solo: **un cuestionario y una experiencia ideal**, aplicados de la misma forma sin importar el canal por el que llegue el prospecto. Este documento da la visión de conjunto de ambos proyectos y desarrolla, además, el **Rediseño Web** con mayor detalle: su implementación insignia. Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación digital que la marca requiere: rastreable por Google, centrada en el usuario que busca y operada con inteligencia artificial al servicio del socio. Cada afirmación se desarrolla a detalle en los documentos que lo acompañan: Arquitectura de Experiencia, Estrategia Técnica, Mapa del Sitio, Auditoría inicial y Contrato.
+El eje de **todo** el proyecto —Proyecto A, Proyecto B y Proyecto C— es uno solo: **un cuestionario y una experiencia ideal**, aplicados de la misma forma sin importar el canal por el que llegue el prospecto, y enseñados de la misma forma a quien los aplica. Este documento da la visión de conjunto de los tres proyectos y desarrolla, además, el **Rediseño Web** con mayor detalle: su implementación insignia. Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación digital que la marca requiere: rastreable por Google, centrada en el usuario que busca y operada con inteligencia artificial al servicio del socio. Cada afirmación se desarrolla a detalle en los documentos que lo acompañan: Arquitectura de Experiencia, Estrategia Técnica, Mapa del Sitio, Auditoría inicial y Contrato.
 
 | Ficha | |
 |---|---|
@@ -13,10 +13,11 @@ El eje de **todo** el proyecto —Proyecto A y Proyecto B— es uno solo: **un c
 
 ## El sistema completo: un cuestionario, una experiencia ideal, todo canal
 
-Sports World necesita atender al prospecto en **cualquier canal** donde muestre interés. Lo que hace a esto un solo sistema —y no dos sistemas paralelos— es que **el cuestionario y la experiencia ideal son únicos**: se aplican una sola vez, se definen una sola vez, y cada canal solo cambia **quién** los aplica y **por dónde** llegan:
+Sports World necesita atender al prospecto en **cualquier canal** donde muestre interés, y necesita que quien lo atiende —sitio, WhatsApp o asesor en el club— lo haga con el mismo criterio. Lo que hace a esto un solo sistema —y no tres sistemas paralelos— es que **el cuestionario y la experiencia ideal son únicos**: se aplican una sola vez, se definen una sola vez, se enseñan una sola vez, y cada proyecto solo cambia **quién** los aplica, **por dónde** llegan o **cómo se practican**:
 
 - **Proyecto A · Rediseño Web.** El canal donde nace y se implementa el cuestionario: el sitio de 148 páginas rastreable por Google, el agente BES por voz y texto, la integración con el CRM vía middleware y el funnel/dashboard de medición. Se desarrolla más adelante en este mismo documento.
 - **Proyecto B · Business Development System (alcance y costo aparte).** Extiende el **mismo** cuestionario y la **misma** experiencia ideal a **WhatsApp**: leads de campañas atendidos por **operadores humanos** en tiempo real, con **BES por WhatsApp (solo texto)** de respaldo 24/7, más la **consola interna** para asesores y walk-ins. Ver **[BDS · Resumen Ejecutivo](#bds-resumen)**.
+- **Proyecto C · Academia Sports World (alcance y costo aparte).** Enseña y **entrena la práctica** de ese mismo cuestionario y esa misma experiencia ideal a los 200 asesores, en dos fases: módulos interactivos y role-play con agente de voz. Ver **[Academia · Resumen Ejecutivo](#academia-resumen)**.
 
 A continuación, el desarrollo del **Rediseño Web (Proyecto A)** — su implementación insignia.
 
@@ -132,7 +133,33 @@ El indicador rector es el **tiempo al primer contacto**. El BDS extiende el mism
 
 El BDS es un **alcance independiente**: su contratación no modifica el Proyecto A ni su precio. La contraprestación adicional es de **USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**, pactada en el **[Addendum del BDS](#bds-anexo)**. En tanto no se suscriba dicho Addendum, el Proyecto B no genera obligación ni costo para ninguna de las Partes.
 
+## Academia Sports World (Proyecto C)
+
+> **Alcance y costo aparte** de los Proyectos A y B (Contrato · Cláusula Primera Bis; detalle en el **[Addendum de la Academia](#academia-anexo)**).
+
+### 13 · El problema: la habilitación del asesor no está estandarizada
+
+Quince entrevistas de campo con líderes regionales y asesores (13 clubes, cinco regiones, mayo 2026) confirman que **no existe un sistema único y formal de incorporación**: cada líder capacita según su propia experiencia y estilo, sin visibilidad comparable entre clubes. El síntoma es una **variabilidad de hasta 40 veces** entre las tasas de conversión reportadas por los propios asesores — evidencia de que las mejores prácticas ya existen dentro de la organización, solo no están sistematizadas.
+
+### 14 · La solución: un sistema formal de habilitación en dos fases
+
+La Academia sustituye la capacitación informal por un **programa único y replicable** para los 200 asesores, construido con rigor de diseño instruccional —microaprendizaje, práctica deliberada, evaluación en cuatro niveles y refuerzo espaciado—, en dos fases:
+
+- **Fase 1 · Módulos interactivos.** Contenido e-learning por niveles sobre la taxonomía maestra del cliente y los siete componentes del programa, validados en campo. El asesor no avanza de nivel sin acreditar el anterior.
+- **Fase 2 · Role-play con agente de voz.** El asesor practica la conversación de venta completa contra un agente de IA que simula al cliente, con dificultad que se adapta a su historial, y certifica con refuerzo espaciado a 7, 30 y 90 días. Reutiliza el mismo motor conversacional de BES (Estrategia Técnica del sitio, §5), en un rol distinto.
+
+Detalle completo en **[Academia · Resumen Ejecutivo](#academia-resumen)**, **[Contenido y taxonomía](#academia-contenido)** y **[Fases del programa](#academia-fases)**.
+
+### 15 · Qué mide la Academia
+
+El **dashboard de readiness** consolida, para los 200 asesores, el avance de módulos (Fase 1) y el desempeño de role-play (Fase 2). El programa se evalúa en cuatro niveles —reacción, aprendizaje, comportamiento real y resultado comercial—, calibrando la línea base con las métricas reales del CRM antes de comprometer KPIs de conversión. Detalle en **[Academia · Medición](#academia-medicion)**.
+
+### 16 · Lo comercial
+
+La Academia es un **alcance independiente**: su contratación no modifica el Proyecto A ni el Proyecto B. La contraprestación adicional está **[por definir]**, se pacta en el **[Addendum de la Academia](#academia-anexo)**. En tanto no se suscriba dicho Addendum, el Proyecto C no genera obligación ni costo para ninguna de las Partes.
+
 ## Próximo paso
 
 **Proyecto A:** aprobar esta propuesta, cerrar el kickoff con la firma del checklist de dependencias y arrancar las ocho semanas. A partir de ahí, el calendario corre.
 **Proyecto B (BDS):** cerrar el alcance y el listado de requerimientos y suscribir el Addendum; a partir de la firma, el Equipo 5 (BDS) arranca según lo descrito en el **[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
+**Proyecto C (Academia):** validar con Sports World la taxonomía maestra, los siete componentes y la segmentación por club; cerrar el listado de requerimientos y suscribir el Addendum.

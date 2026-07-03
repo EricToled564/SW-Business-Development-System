@@ -3,20 +3,20 @@
 
 Punto de entrada al conjunto documental. Cada documento es **autónomo** (puede leerse de forma independiente); este índice indica qué contiene cada uno, a quién está dirigido y dónde consultar cada tema.
 
-La documentación se organiza en **tres bloques**: los **documentos generales**, comunes a todo el sistema; los **exclusivos del Proyecto A · Rediseño Web**; y los **exclusivos del Proyecto B · Business Development System**.
+La documentación se organiza en **cuatro bloques**: los **documentos generales**, comunes a todo el sistema; y los **exclusivos** de cada uno de los tres proyectos — **Proyecto A · Rediseño Web**, **Proyecto B · Business Development System** y **Proyecto C · Academia Sports World**.
 
-## Documentos Generales (ambos proyectos)
+## Documentos Generales (los tres proyectos)
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
 | 1 | [**Índice de documentos**](#indice) | Este mapa: qué contiene cada documento, a quién está dirigido y dónde consultar cada tema. | Todos |
-| 2 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo, con eje en el cuestionario y la experiencia única, y una sección especial para cada proyecto: Rediseño Web (Proyecto A) y Business Development System (Proyecto B). | Dirección, negocio |
-| 3 | [**Contrato**](#contrato) | Marco mercantil de **ambos proyectos**: objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Primera Bis— la separación y contraprestación adicional del Proyecto B (BDS). | Dirección, Legal |
+| 2 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo, con eje en el cuestionario y la experiencia única, y una sección para cada proyecto: Rediseño Web (Proyecto A), Business Development System (Proyecto B) y Academia Sports World (Proyecto C). | Dirección, negocio |
+| 3 | [**Contrato**](#contrato) | Marco mercantil de **los tres proyectos**: objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Primera Bis— la separación y contraprestación adicional de los Proyectos B (BDS) y C (Academia). | Dirección, Legal |
 | 3a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques y con responsables. | Dirección, TI, Legal |
 | 3b | [**Anexo Dos · Entregables, soporte y operación**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
-| 4 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en toda la documentación, de ambos proyectos. | Todos |
-| 5 | [**Plan de Ejecución**](#execution) | Marco de gobierno de **ambos proyectos**: para el Proyecto A, cronograma comprometido de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios; para el Proyecto B (BDS), el quinto equipo, sus tareas y dependencias (§10) — su calendario se fija al firmar el Addendum. | Dirección, TI, PMO |
-| 6 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del cuestionario y la experiencia ideal — el motor único que comparten ambos proyectos. | Negocio, dirección |
+| 4 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en toda la documentación, de los tres proyectos. | Todos |
+| 5 | [**Plan de Ejecución**](#execution) | Marco de gobierno de **ambos proyectos** con calendario propio (A y B): para el Proyecto A, cronograma comprometido de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios; para el Proyecto B (BDS), el quinto equipo, sus tareas y dependencias (§10) — su calendario se fija al firmar el Addendum. | Dirección, TI, PMO |
+| 6 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del cuestionario y la experiencia ideal — el motor único que comparten los tres proyectos. | Negocio, dirección |
 
 ## Proyecto A · Rediseño Web (exclusivos)
 
@@ -41,6 +41,17 @@ La documentación se organiza en **tres bloques**: los **documentos generales**,
 | B4 | [**BDS · Estrategia Técnica**](#bds-tecnica) | WhatsApp Business API, BES por WhatsApp (texto), consola de operadores. | Sistemas / TI |
 | B5 | [**BDS · Medición y funnel**](#bds-medicion) | Speed-to-lead por canal y operador, hasta nueva membresía. | Dirección, Sistemas |
 | B6 | [**BDS · Addendum contractual**](#bds-anexo) | Alcance, entregables y contraprestación adicional del Proyecto B. | Dirección, Legal |
+
+## Proyecto C · Academia Sports World (exclusivos, alcance y costo aparte)
+
+| # | Documento | Propósito | Audiencia |
+|---|---|---|---|
+| C1 | [**Academia · Resumen Ejecutivo**](#academia-resumen) | El problema (habilitación no estandarizada) y la solución en dos fases, validadas con entrevistas de campo. | Dirección, RH, Comercial |
+| C2 | [**Academia · Contenido y taxonomía**](#academia-contenido) | Taxonomía maestra del cliente, los siete componentes del programa y la segmentación por tipo de club. | Comercial, Marketing |
+| C3 | [**Academia · Fases del programa**](#academia-fases) | Principios de diseño instruccional, Fase 1 (módulos por niveles) y Fase 2 (role-play con agente de voz + refuerzo espaciado). | Comercial, RH |
+| C4 | [**Academia · Estrategia Técnica**](#academia-tecnica) | Plataforma de módulos, agente de voz de role-play y motor de selección adaptativa (reutiliza el stack de BES). | Sistemas / TI |
+| C5 | [**Academia · Medición**](#academia-medicion) | Dashboard de readiness, evaluación en cuatro niveles y calibración con el CRM. | Dirección, Comercial |
+| C6 | [**Academia · Addendum contractual**](#academia-anexo) | Alcance, entregables y contraprestación adicional del Proyecto C. | Dirección, Legal |
 
 ## Localizador rápido (¿dónde está cada tema?)
 
@@ -70,5 +81,10 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | **Brief del asesor** (documento personalizado del comprador potencial, con sugerencias de venta) | [Arquitectura de Experiencia · §1.2, fase `briefing`](#experience:12-las-siete-fases) · [BDS · Resumen](#bds-resumen) · [BDS · Flujo](#bds-flujo) |
 | **Speed-to-lead / tiempo al primer contacto** | [BDS · Medición y funnel](#bds-medicion) |
 | **BES por WhatsApp (solo texto)** | [BDS · Estrategia Técnica](#bds-tecnica) · [Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto) |
-| **Separación de proyectos A/B y costo adicional** | [Contrato · Cláusula Primera Bis](#contrato:clusulas) · [BDS · Addendum](#bds-anexo) |
+| **Separación de proyectos A/B/C y costo adicional** | [Contrato · Cláusula Primera Bis](#contrato:clusulas) · [BDS · Addendum](#bds-anexo) · [Academia · Addendum](#academia-anexo) |
+| **Academia SW · capacitación y práctica de asesores** (Proyecto C) | [Academia · Resumen](#academia-resumen) · [Contenido y taxonomía](#academia-contenido) · [Fases](#academia-fases) |
+| **Taxonomía maestra del cliente** (objetivos y dimensiones de decisión) | [Academia · Contenido y taxonomía](#academia-contenido) |
+| **Principios de diseño instruccional** (microlearning, práctica deliberada, refuerzo espaciado) | [Academia · Fases del programa](#academia-fases:principios-de-diseo-instruccional) |
+| **Agente de voz de role-play y motor de selección adaptativa** | [Academia · Estrategia Técnica](#academia-tecnica) |
+| **Dashboard de readiness y evaluación en cuatro niveles** | [Academia · Medición](#academia-medicion:evaluacin-en-cuatro-niveles) |
 | Definición de términos | [Glosario](#glosario) |
