@@ -27,7 +27,7 @@ El detalle funcional y técnico consta en los documentos del módulo Academia: *
 
 ## 4 · Aportaciones a cargo de EL CLIENTE
 
-- Validación de la taxonomía maestra, los siete componentes y la segmentación por tipo de club, antes de la producción de contenido.
+- Validación del mapeo de la taxonomía del cuestionario (ya aprobada) a los siete componentes, y de la segmentación por tipo de club, antes de la producción de contenido.
 - Mínimo aprobatorio de acreditación por módulo (Fase 1).
 - Métricas reales del CRM por asesor, para calibrar la línea base del programa.
 - Colaboración del equipo de marketing para el módulo de inteligencia competitiva por club.
@@ -37,7 +37,7 @@ El detalle funcional y técnico consta en los documentos del módulo Academia: *
 
 - **Monto: [por definir].** Se pacta al suscribir este Addendum y **es adicional** a la contraprestación del Contrato (Proyecto A) y a la del Addendum del BDS (Proyecto B).
 - Podrá estructurarse como **pago único de implementación** más, en su caso, un **recurrente** por actualización de contenido y operación del agente de voz — a definir con EL CLIENTE.
-- **Plazo de entrega: [por definir]**, sujeto al cierre de la validación de la taxonomía maestra y del listado de requerimientos.
+- **Plazo de entrega: [por definir]**, sujeto al cierre de la validación del mapeo de la taxonomía y del listado de requerimientos.
 
 ## 6 · Naturaleza y garantías
 

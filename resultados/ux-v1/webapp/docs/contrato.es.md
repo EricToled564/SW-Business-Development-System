@@ -1,5 +1,5 @@
-# Sports World · Contrato de Prestación de Servicios Profesionales · V2.1
-## Rediseño web + SEO · Agente de voz "BES" · Servicios recurrentes
+# Sports World · Contrato de Prestación de Servicios Profesionales · V2.2
+## Proyecto A (Rediseño web + SEO + "BES" + Servicios recurrentes) — con los Proyectos B (BDS) y C (Academia) incorporados en este Contrato, activables por Addendum
 
 CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES (**"CONTRATO"**) QUE CELEBRAN, POR UNA PARTE, **OPERADORA Y ADMINISTRADORA SW, S.A. DE C.V.** (EN LO SUCESIVO **"SPORTS WORLD"** o **"EL CLIENTE"**), REPRESENTADA EN ESTE ACTO POR **HADI MICHEL IBRAHIM IBRAHIM**; Y POR LA OTRA PARTE, **LIVE STREAMING SERVICES MEXICO, S.A. DE C.V.** (EN LO SUCESIVO EL **"PROVEEDOR"** o **"EL PRESTADOR"**, comercialmente *Final Upgrade AI*), REPRESENTADA POR **ERIC TOLEDANO DE JESÚS LOZANO**, DE CONFORMIDAD CON LAS SIGUIENTES DECLARACIONES Y CLÁUSULAS:
 
@@ -34,15 +34,27 @@ De conformidad con las Declaraciones que anteceden, las Partes están de acuerdo
 
 **III. Servicios recurrentes de hospedaje, mantenimiento y soporte técnico.** Mediante una **iguala mensual** conforme a la **Opción A elegida por EL CLIENTE** (Cláusula Segunda), que comprende hospedaje, mantenimiento técnico (seguridad, dependencias y desempeño), mantenimiento de "BES", operación de la sección de administración y del tablero, reporte mensual y **soporte con primer respondiente por agente de voz disponible 24/7 (veinticuatro horas, los siete días) y escalamiento a soporte humano en horario hábil**. La iguala incluye una **bolsa de mejora de hasta 8 (ocho) horas mensuales, no acumulables**; los excedentes se facturan conforme a tarifas. Plazo mínimo inicial **6 (seis) meses**; concluido éste, cualquiera de las Partes podrá darla por terminada con aviso por escrito de al menos **60 (sesenta) días naturales**.
 
-**PRIMERA BIS. Proyectos y alcances (Proyecto A, Proyecto B y Proyecto C).** Las Partes reconocen que la relación comprende **tres proyectos claramente diferenciados**:
+**PRIMERA BIS. Proyectos y alcances (Proyecto A, Proyecto B y Proyecto C).** Las Partes reconocen que la relación comercial comprende **tres proyectos**, cuyo objeto y alcance se incorporan al cuerpo del presente Contrato en esta Cláusula, en la Primera Ter (Proyecto B) y en la Primera Cuáter (Proyecto C), y cuya contraprestación consolidada consta en la **Cláusula Segunda**. El **Proyecto A** —apartados I, II y III de la Cláusula Primera— es exigible desde la firma del presente Contrato. Los **Proyectos B y C quedan incorporados en su objeto, alcance y precio desde ahora**, pero **no generan obligación ni costo para ninguna de las Partes sino hasta la suscripción del Addendum respectivo** que los active; dicho Addendum **detalla** —sin modificar— el alcance operativo, las exclusiones y las aportaciones a cargo de EL CLIENTE ya pactados en esta Cláusula, en la Primera Ter, en la Primera Cuáter y en la Segunda.
 
-- **Proyecto A — Rediseño Web + SEO + "BES" (canal web) + Servicios recurrentes:** es el alcance de los apartados I, II y III de esta Cláusula, con la contraprestación de la Cláusula Segunda. **Es el único alcance y precio que regula el presente Contrato.**
-- **Proyecto B — Business Development System (BDS):** sistema de **captación y conversión de leads multicanal en tiempo real** —landing de campañas, atención por **operadores humanos vía WhatsApp**, **"BES" por WhatsApp (solo texto)** como respaldo, y la **consola interna de captación**—, orientado a reducir el **tiempo al primer contacto**. El Proyecto B **no está incluido** en el alcance ni en el precio del presente Contrato; su alcance, entregables y **contraprestación adicional** se pactan en un **Anexo (Addendum) por separado**, por **USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**. En tanto no se suscriba dicho Anexo, el Proyecto B no genera obligación ni costo para ninguna de las Partes.
-- **Proyecto C — Academia Sports World:** sistema formal de **capacitación y práctica** para el equipo comercial, en dos fases —módulos interactivos de e-learning por niveles, y un agente conversacional de IA por voz para practicar la conversación de venta mediante role-play, con evaluación y dashboard de readiness—. El Proyecto C **no está incluido** en el alcance ni en el precio del presente Contrato ni en el del Proyecto B; su alcance, entregables y **contraprestación adicional** se pactan en un **Anexo (Addendum) por separado** [**monto por definir**]. En tanto no se suscriba dicho Anexo, el Proyecto C no genera obligación ni costo para ninguna de las Partes.
+**PRIMERA TER. Objeto y alcance del Proyecto B — Business Development System (BDS).**
+
+**IV. Sistema de captación y conversión de leads multicanal en tiempo real.** EL PRESTADOR desarrolla e integra para EL CLIENTE un sistema (el **"BDS"**) que reduce el **tiempo al primer contacto** atendiendo a los prospectos en **WhatsApp** y en la **consola interna**, con el **mismo cuestionario de experiencia ideal y la misma escritura al CRM del Proyecto A**, mediante: **(i)** landing de campañas con el cuestionario de experiencia ideal; **(ii)** integración con **WhatsApp Business API** (número oficial de EL CLIENTE) para mensajería bidireccional, plantillas y multiagente; **(iii)** **"BES" sobre WhatsApp (solo texto)** como respaldo automático 24/7, con escalación a operador humano; **(iv)** consola de operadores/asesores (rol de operador sobre la consola interna del Proyecto A); **(v)** capa de enrutamiento en tiempo real (human-first → "BES" de respaldo → escalación); y **(vi)** funnel y medición del BDS, integrado al dashboard del Proyecto A. Quedan **excluidas** la **telefonía** y la **voz por WhatsApp**. El detalle funcional, las exclusiones específicas y las aportaciones a cargo de EL CLIENTE constan en el **Addendum del BDS**, documento que desarrolla —sin modificar— el alcance aquí pactado. **Plazo de entrega:** [por definir], sujeto al cierre del listado de requerimientos conforme al Addendum. **Contraprestación:** Cláusula Segunda, Sección B.
+
+**PRIMERA CUÁTER. Objeto y alcance del Proyecto C — Academia Sports World.**
+
+**V. Sistema formal de capacitación y práctica para el equipo comercial.** EL PRESTADOR desarrolla e implementa para EL CLIENTE un sistema de capacitación y práctica (la **"Academia"**) para los 200 (doscientos) asesores comerciales de EL CLIENTE, en dos fases: **(i) módulos interactivos** de aprendizaje por niveles, sobre la taxonomía maestra del cliente ya utilizada en el cuestionario del Proyecto A y los componentes de venta validados con EL CLIENTE; y **(ii) un agente conversacional de inteligencia artificial por voz** para la práctica de la conversación de venta mediante simulación (*role-play*), con evaluación de desempeño y un dashboard de *readiness* agregado por asesor, club, ciudad y a nivel nacional. El detalle funcional, las exclusiones específicas y las aportaciones a cargo de EL CLIENTE constan en el **Addendum de la Academia**, documento que desarrolla —sin modificar— el alcance aquí pactado. **Plazo de entrega:** [por definir], sujeto al cierre de la validación de la taxonomía maestra y del listado de requerimientos conforme al Addendum. **Contraprestación:** Cláusula Segunda, Sección C.
 
 **SEGUNDA. Contraprestación.**
 
-*Contraprestación única (pago no recurrente):*
+*Resumen consolidado de la contraprestación de los tres proyectos:*
+
+| Proyecto | Contraprestación | Exigibilidad |
+|---|---|---|
+| **A — Rediseño Web** (Sección A) | USD $81,000.00 sin IVA (único) + iguala mensual de $35,000 MXN (Opción A elegida) | Desde la firma de este Contrato |
+| **B — Business Development System** (Sección B) | USD $4,850.00 más IVA | Desde la firma del Addendum del BDS (Primera Ter) |
+| **C — Academia Sports World** (Sección C) | [por definir] | Desde la firma del Addendum de la Academia (Primera Cuáter) |
+
+*Sección A — Proyecto A (Rediseño Web). Contraprestación única (pago no recurrente):*
 
 | Componente | USD sin IVA | MXN sin IVA |
 |---|---|---|
@@ -61,6 +73,10 @@ De conformidad con las Declaraciones que anteceden, las Partes están de acuerdo
 
 Conforme a la **Opción A elegida**, la iguala mensual es de **$35,000 MXN ($40,600 con IVA)** y EL CLIENTE administra sus propios contenidos en el CMS; el soporte, el mantenimiento y la bolsa de 8 horas se prestan por igual. La Contraprestación es fija e incluye el valor de todos los Servicios y de los servicios relacionados necesarios para cumplir el objeto, sin ajustes salvo servicios adicionales pactados por escrito.
 
+*Sección B — Proyecto B (Business Development System).* La contraprestación adicional del Proyecto B (Primera Ter) es de **USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**, **exigible únicamente a partir de la suscripción del Addendum del BDS**. Podrá estructurarse como pago único de implementación más, en su caso, un recurrente por operación y mantenimiento del BDS, conforme se defina con EL CLIENTE en dicho Addendum. Es adicional e independiente de la contraprestación de la Sección A; su falta de pago no afecta la vigencia del Proyecto A.
+
+*Sección C — Proyecto C (Academia Sports World).* La contraprestación adicional del Proyecto C (Primera Cuáter) es **[monto por definir]**, **exigible únicamente a partir de la suscripción del Addendum de la Academia**. Podrá estructurarse como pago único de implementación más, en su caso, un recurrente por actualización de contenido y operación del agente de voz, conforme se defina con EL CLIENTE en dicho Addendum. Es adicional e independiente de la contraprestación de las Secciones A y B; su falta de pago no afecta la vigencia de los Proyectos A ni B.
+
 **TERCERA. Forma de Pago.** **No habrá anticipos.** La contraprestación única se cubre en **dos pagos**, por secciones entregadas y aprobadas por escrito por EL CLIENTE, contra Comprobante Fiscal Digital por Internet (CFDI) con IVA desglosado y transferencia a la cuenta de la que EL PRESTADOR sea único titular:
 
 | Pago | Momento | % | MXN sin IVA |
@@ -78,7 +94,7 @@ Sin anticipo: un pago parcial del 50% en la Semana 4 (contra la sección entrega
 
 **SEXTA. Obligaciones de Sports World.** Pagar la Contraprestación conforme a las Cláusulas Segunda y Tercera; entregar en tiempo y forma la totalidad de los **requerimientos y aportaciones (sistemas y marketing) del Anexo Uno**; designar al responsable único del proyecto (Project Owner) y al responsable de Marketing/Marca; y cubrir directamente los costos de operación de IA y voz. El incumplimiento o retraso de EL CLIENTE en sus aportaciones extiende, día por día, los plazos a cargo de EL PRESTADOR, sin responsabilidad para éste.
 
-**SEXTA BIS. Costos de operación a cargo del Cliente.** Las funciones de inteligencia artificial y voz del agente "BES" conllevan **costos de operación que EL CLIENTE paga directamente a los proveedores** (plataforma de voz, modelo de razonamiento y hospedaje de la lógica). **No están comprendidos en la contraprestación única ni en la iguala mensual.** Son estimaciones de referencia (tipo de cambio $17.80):
+**SEXTA BIS. Costos de operación a cargo del Cliente.** Las funciones de inteligencia artificial y voz del agente "BES" conllevan **costos de operación que EL CLIENTE paga directamente a los proveedores** (plataforma de voz, modelo de razonamiento y hospedaje de la lógica). **No están comprendidos en la contraprestación única ni en la iguala mensual.** El **mismo esquema** —costo de operación a cargo directo de EL CLIENTE con los proveedores, no comprendido en la contraprestación del Addendum respectivo— aplica al agente de voz de práctica del Proyecto C (Academia), una vez activado dicho proyecto conforme a la Primera Cuáter; su estimación de costo consta en el Addendum de la Academia. Son estimaciones de referencia para "BES" (tipo de cambio $17.80):
 
 | Concepto | Estimado |
 |---|---|

@@ -145,7 +145,7 @@ Quince entrevistas de campo con líderes regionales y asesores (13 clubes, cinco
 
 La Academia sustituye la capacitación informal por un **programa único y replicable** para los 200 asesores, construido con rigor de diseño instruccional —microaprendizaje, práctica deliberada, evaluación en cuatro niveles y refuerzo espaciado—, en dos fases:
 
-- **Fase 1 · Módulos interactivos.** Contenido e-learning por niveles sobre la taxonomía maestra del cliente y los siete componentes del programa, validados en campo. El asesor no avanza de nivel sin acreditar el anterior.
+- **Fase 1 · Módulos interactivos.** Contenido e-learning por niveles sobre la misma taxonomía de objetivos del cliente ya aprobada en el cuestionario (Proyecto A) y los siete componentes del programa, validados en campo. El asesor no avanza de nivel sin acreditar el anterior.
 - **Fase 2 · Role-play con agente de voz.** El asesor practica la conversación de venta completa contra un agente de IA que simula al cliente, con dificultad que se adapta a su historial, y certifica con refuerzo espaciado a 7, 30 y 90 días. Reutiliza el mismo motor conversacional de BES (Estrategia Técnica del sitio, §5), en un rol distinto.
 
 Detalle completo en **[Academia · Resumen Ejecutivo](#academia-resumen)**, **[Contenido y taxonomía](#academia-contenido)** y **[Fases del programa](#academia-fases)**.
@@ -162,4 +162,4 @@ La Academia es un **alcance independiente**: su contratación no modifica el Pro
 
 **Proyecto A:** aprobar esta propuesta, cerrar el kickoff con la firma del checklist de dependencias y arrancar las ocho semanas. A partir de ahí, el calendario corre.
 **Proyecto B (BDS):** cerrar el alcance y el listado de requerimientos y suscribir el Addendum; a partir de la firma, el Equipo 5 (BDS) arranca según lo descrito en el **[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
-**Proyecto C (Academia):** validar con Sports World la taxonomía maestra, los siete componentes y la segmentación por club; cerrar el listado de requerimientos y suscribir el Addendum.
+**Proyecto C (Academia):** validar con Sports World el mapeo de la taxonomía del cuestionario a los siete componentes y la segmentación por club; cerrar el listado de requerimientos y suscribir el Addendum.
