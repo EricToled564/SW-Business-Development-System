@@ -16,18 +16,18 @@ La documentación se organiza en **tres bloques**: los **documentos generales**,
 | 3b | [**Anexo Dos · Entregables, soporte y operación**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
 | 4 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en toda la documentación, de ambos proyectos. | Todos |
 | 5 | [**Plan de Ejecución**](#execution) | Marco de gobierno de **ambos proyectos**: para el Proyecto A, cronograma comprometido de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios; para el Proyecto B (BDS), el quinto equipo, sus tareas y dependencias (§10) — su calendario se fija al firmar el Addendum. | Dirección, TI, PMO |
+| 6 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del cuestionario y la experiencia ideal — el motor único que comparten ambos proyectos. | Negocio, dirección |
 
 ## Proyecto A · Rediseño Web (exclusivos)
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
-| 6 | [**Arquitectura de Experiencia (UX)**](#experience) | El flujo de experiencia ideal y el **mapa del sitio** (las 148 páginas): navegación, fases, cuestionario, menús dinámicos, reglas de negocio, datos y arquitectura de información. | Producto, UX, desarrollo, SEO |
-| 7 | [**Estrategia Técnica**](#technical) | Stack, agente BES, **integración por middleware** y datos del CRM, migración, seguridad, método y calidad, **funnel de resultados y dashboard (§10)**, **captación unificada de leads (§11)** y los **estándares del API del cliente (§12)**. | Sistemas / TI |
-| 8 | [**Seguridad del sitio**](#seguridad) | Protección de datos personales: minimización y no retención (los datos viven brevemente; sin respaldo tras copiarse al CRM). El BDS sigue estos mismos principios por referencia. | TI, Legal, negocio |
-| 9 | [**Status de Entregables Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. El detalle contractual vive en el Anexo Uno. | TI, Marketing, PMO |
-| 10 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
-| 11 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
-| 12 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del flujo de experiencia ideal. | Negocio, dirección |
+| 7 | [**Arquitectura de Experiencia (UX)**](#experience) | El flujo de experiencia ideal y el **mapa del sitio** (las 148 páginas): navegación, fases, cuestionario, menús dinámicos, reglas de negocio, datos y arquitectura de información. | Producto, UX, desarrollo, SEO |
+| 8 | [**Estrategia Técnica**](#technical) | Stack, agente BES, **integración por middleware** y datos del CRM, migración, seguridad, método y calidad, **funnel de resultados y dashboard (§10)**, **captación unificada de leads (§11)** y los **estándares del API del cliente (§12)**. | Sistemas / TI |
+| 9 | [**Seguridad del sitio**](#seguridad) | Protección de datos personales: minimización y no retención (los datos viven brevemente; sin respaldo tras copiarse al CRM). El BDS sigue estos mismos principios por referencia. | TI, Legal, negocio |
+| 10 | [**Status de Entregables Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. El detalle contractual vive en el Anexo Uno. | TI, Marketing, PMO |
+| 11 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
+| 12 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
 | 13 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
 | 14 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
 
