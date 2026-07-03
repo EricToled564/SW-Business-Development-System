@@ -43,19 +43,19 @@
 
   // type: "doc" (markdown + optional pdf) | "placeholder" (audit/demo)
   const DOCS = [
-    { id: "indice", type: "doc", group: "generales", pdf: "13-indice-de-documentos.es.pdf",
+    { id: "indice", type: "doc", group: "generales", red: true, pdf: "13-indice-de-documentos.es.pdf",
       title: { es: "Índice de documentos", en: "Document Index" } },
-    { id: "resumen", type: "doc", group: "generales", pdf: "00-resumen-ejecutivo.es.pdf",
+    { id: "resumen", type: "doc", group: "generales", red: true, pdf: "00-resumen-ejecutivo.es.pdf",
       title: { es: "Resumen Ejecutivo", en: "Executive Summary" } },
-    { id: "contrato", type: "doc", group: "generales", pdf: "06-contrato.es.pdf",
+    { id: "contrato", type: "doc", group: "generales", red: true, pdf: "06-contrato.es.pdf",
       title: { es: "Contrato", en: "Contract" } },
-    { id: "anexo-uno", type: "ref", group: "generales", ref: "contrato", anchor: "anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente",
+    { id: "anexo-uno", type: "ref", group: "generales", red: true, ref: "contrato", anchor: "anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente",
       title: { es: "Anexo Uno · Aportaciones de SW", en: "Annex One · Sports World Contributions" } },
-    { id: "anexo-dos", type: "ref", group: "generales", ref: "contrato", anchor: "anexo-dos-entregables-especficos-de-los-servicios",
+    { id: "anexo-dos", type: "ref", group: "generales", red: true, ref: "contrato", anchor: "anexo-dos-entregables-especficos-de-los-servicios",
       title: { es: "Anexo Dos · Entregables, soporte y operación", en: "Annex Two · Deliverables, support & operations" } },
-    { id: "glosario", type: "doc", group: "generales", pdf: "12-glosario.es.pdf",
+    { id: "glosario", type: "doc", group: "generales", red: true, pdf: "12-glosario.es.pdf",
       title: { es: "Glosario", en: "Glossary" } },
-    { id: "execution", type: "doc", group: "generales", pdf: "03-plan-de-ejecucion.es.pdf",
+    { id: "execution", type: "doc", group: "generales", red: true, pdf: "03-plan-de-ejecucion.es.pdf",
       title: { es: "Plan de Ejecución", en: "Execution Plan" } },
     { id: "demo", type: "embed", group: "generales", red: true, src: "demo/index.html",
       title: { es: "Demo Cuestionario Inteligente", en: "Smart Questionnaire Demo" } },
@@ -91,15 +91,15 @@
       title: { es: "Academia · Medición", en: "Academy · Measurement" } },
     { id: "academia-anexo", type: "doc", group: "academia", pdf: "26-academia-anexo.es.pdf",
       title: { es: "Academia · Addendum contractual", en: "Academy · Contract Addendum" } },
-    { id: "aportaciones", type: "doc", group: "proyectoA", red: true,
+    { id: "aportaciones", type: "doc", group: "proyectoA",
       title: { es: "Status de Entregables Sports World", en: "Sports World Deliverables Status" } },
     { id: "minuta-2026-06-22", type: "doc", group: "proyectoA", pdf: "08-minuta-2026-06-22.es.pdf",
       title: { es: "Minuta · 22 jun 2026", en: "Minutes · Jun 22, 2026" } },
-    { id: "seguimiento-2026-06-22", type: "doc", group: "proyectoA", red: true, pdf: "09-seguimiento-2026-06-22.es.pdf",
+    { id: "seguimiento-2026-06-22", type: "doc", group: "proyectoA", pdf: "09-seguimiento-2026-06-22.es.pdf",
       title: { es: "Seguimiento · 22 jun 2026", en: "Follow-up · Jun 22, 2026" } },
     { id: "auditoria", type: "doc", group: "proyectoA", pdf: "07-auditoria-inicial.es.pdf",
       title: { es: "Auditoría inicial del sitio", en: "Initial site audit" } },
-    { id: "roi", type: "doc", group: "proyectoA", red: true,
+    { id: "roi", type: "doc", group: "proyectoA",
       title: { es: "Calculadora de ROI", en: "ROI Calculator" } },
   ];
   const GROUP_ORDER = ["generales", "proyectoA", "bds", "academia"];
@@ -194,13 +194,15 @@
   /* ---------- UI ---------- */
   function t() { return I18N[lang]; }
 
+  const GROUP_TITLE_RED = ["proyectoA", "bds", "academia"];
+
   function renderSidebar() {
     const groups = {};
     DOCS.forEach((d) => { (groups[d.group] = groups[d.group] || []).push(d); });
     let html = "";
     GROUP_ORDER.forEach((g) => {
       if (!groups[g]) return;
-      html += '<div class="nav-group"><h4>' + t().groups[g] + "</h4>";
+      html += '<div class="nav-group"><h4' + (GROUP_TITLE_RED.includes(g) ? ' class="group-title-red"' : "") + ">" + t().groups[g] + "</h4>";
       groups[g].forEach((d) => {
         html += '<a class="nav-item' + (d.red ? " nav-red" : "") + (d.id === currentDoc ? " active" : "") + '" data-doc="' + d.id + '" href="#' + d.id + '">' + d.title[lang] + "</a>";
       });
