@@ -32,6 +32,16 @@ La Academia **no define una taxonomía nueva**: enseña la **misma taxonomía de
 
 **Principio no negociable:** el programa **no** enseña a vender longevidad o *healthspan* por default —motivador que no existe como opción en Q3 ni en Q4—. Ninguno de los 15 asesores y líderes entrevistados lo mencionó espontáneamente; el programa enseña a clasificar y vender lo que el cuestionario ya captura como el objetivo real del cliente, no un narrativo universal impuesto.
 
+## Validación con benchmarks de la industria
+
+La taxonomía Q3/Q4 no es una construcción aislada de Sports World: coincide con cómo la industria global del fitness mide a este mismo cliente.
+
+- La **Health & Fitness Association** (antes IHRSA) reporta que los tres motivadores principales del consumidor de fitness son **estar activo (46%), bienestar mental (35%) y pérdida de peso (32%)** — los mismos ejes que ya cubren Q3 (estado de ánimo, bienestar) y Q4 (pérdida de peso, salud).
+- La tipología académica de clientes de fitness (*Segmentation in Sport Services: A Typology of Fitness Customers*) documenta segmentos equivalentes a los dos ejes de Q3/Q4: clientes que buscan "pertenecer" (socialización), "cambiar su cuerpo" (estética/peso) y "rendir" (desempeño) — validación independiente de que un eje emocional y un eje funcional capturan el espacio real de motivación del socio de gimnasio.
+- En español, la tipología de usuarios de centros deportivos de Martínez-Cevallos et al. (Universitat de València) identifica los mismos cinco criterios: salud, estética, socialización, desempeño y ocio.
+
+Esto no cambia la taxonomía —sigue siendo exactamente la del cuestionario del Proyecto A—, pero confirma que **no es una simplificación propia de Sports World**: es consistente con cómo la industria global segmenta al mismo cliente.
+
 ### Dimensiones de decisión — por qué elige Sports World (transversales a cualquier objetivo)
 
 Estas palancas no son objetivos del cliente sino criterios de elección frente a la competencia; el programa construye un argumento por palanca y el asesor lo activa según el caso.
@@ -42,6 +52,7 @@ Estas palancas no son objetivos del cliente sino criterios de elección frente a
 | **Amenidades** | Alberca, sauna, vapor, toallas, vestidores, paramédicos, wifi estable. |
 | **Ubicación y red multi-club** | Cercanía a casa o trabajo; posibilidad de cambiar de club al moverse en la ciudad. |
 | **Precio y costo-beneficio** | Objeción presente en el 100% de las entrevistas de campo — es la palanca de cierre o de pérdida. |
+| **Estatus e identidad aspiracional** | Cliente que busca pertenecer a un espacio premium, no solo resolver una necesidad funcional — el mismo patrón que distingue a las cadenas premium (p. ej. Equinox) de las de bajo costo en el mercado internacional. |
 
 ## Los siete componentes del programa
 
@@ -50,10 +61,23 @@ Los primeros seis provienen del workshop de discovery con líderes regionales y 
 1. **Clasificación de objetivos del cliente.** Eje central del programa. Ningún asesor entrevistado describe hoy un sistema estructurado para clasificar el objetivo real del cliente; la conversación se construye sobre preguntas logísticas, no motivacionales. El programa enseña a clasificar con la **misma taxonomía Q3/Q4 del cuestionario** (arriba), en dos versiones — ver **[Fases del programa · Dos momentos de discovery](#academia-fases)**.
 2. **No longevidad por default.** Vender lo que el cliente quiere, no un narrativo universal (ver taxonomía arriba).
 3. **Justificación de valor del ecosistema.** Prioridad #1: la objeción de precio aparece en el 100% de las entrevistas. Incluye un **módulo de inteligencia competitiva por club** (construido con el equipo de marketing de Sports World), porque el argumento frente a Smart Fit no es el mismo que frente a Sportium o Nelson Vargas — depende de la competencia local de cada zona.
-4. **Hospitalidad consultiva.** Formaliza el patrón "ven, conoce el club sin compromiso, con ropa deportiva, usa las instalaciones", observado como buena práctica espontánea en 6 de las 15 entrevistas.
-5. **Seguimiento de hito y reactivación.** Sistema único que integra la llamada de hito a noventa días con la reactivación de bases pasadas — varios asesores ya trabajan estas bases sin protocolo formal; un sistema integrado duplica la cobertura con el mismo esfuerzo de diseño.
+4. **Hospitalidad consultiva.** Formaliza el patrón "ven, conoce el club sin compromiso, con ropa deportiva, usa las instalaciones", observado como buena práctica espontánea en 6 de las 15 entrevistas. Consistente con evidencia de la industria: la interacción temprana del staff con el socio nuevo se asocia con retención hasta **2.3 veces mayor** en el sector fitness (Health & Fitness Association, prácticas de coaching de ventas).
+5. **Seguimiento de hito y reactivación.** Sistema único que integra la llamada de hito a noventa días con la reactivación de bases pasadas — varios asesores ya trabajan estas bases sin protocolo formal; un sistema integrado duplica la cobertura con el mismo esfuerzo de diseño. Este componente se enfoca en **asistencia real**, no solo en actitud del socio — ver **[Dimensión adicional: segmentación conductual](#academia-contenido:dimensin-adicional-segmentacin-conductual-para-retencin)** abajo.
 6. **Alfabetización digital de la app.** Prioridad baja, confirmada en campo (una sola mención espontánea de la app SW como argumento de venta entre los 15 entrevistados). Se ubica al final de la secuencia de módulos.
 7. **Disciplina operativa del día comercial.** Componente incorporado a partir del campo: los asesores con horarios estructurados —bloques fijos para llamadas, seguimientos, bases y administración— reportan las tasas de conversión más altas. Este componente se **valida con la métrica real del CRM** antes de finalizar su diseño (ver **[Medición](#academia-medicion)**).
+
+## Dimensión adicional: segmentación conductual para retención
+
+Los ejes Q3/Q4 clasifican **por qué el cliente llegó**; para el componente 5 (seguimiento de hito y reactivación) la industria aporta un segundo eje, conductual, sobre **qué tan en riesgo está de cancelar**. Un estudio académico de 2024 (Yeomans, Karg & Nguyen, *Managing Sport and Leisure*) cruza actitud (compromiso declarado) con conducta (asistencia real) en socios de gimnasio y encuentra cuatro perfiles con tasas de cancelación muy distintas:
+
+| Perfil (actitud × conducta) | Tasa de cancelación observada | Implicación para el asesor |
+|---|---|---|
+| Comprometidos y asistentes | ~4.6% | Bajo riesgo; foco en reactivación de referidos, no de retención. |
+| Regulares deliberados | ~7.0% | Asistencia constante aunque el discurso sea menos entusiasta; no requiere alerta. |
+| Casuales insatisfechos | ~21.3% | Asisten poco y lo expresan; candidatos claros para la llamada de hito. |
+| Entusiastas ausentes | ~23.7% | Dicen estar comprometidos pero **no asisten** — el perfil de mayor riesgo, y el más fácil de pasar por alto si el asesor solo escucha el discurso del socio. |
+
+El hallazgo operativo para la Academia: **la asistencia real predice la cancelación mejor que la actitud declarada**. Por eso el componente 5 prioriza la llamada de hito y la reactivación **sobre datos de uso real de la app/control de acceso**, no sobre la percepción del asesor en la última conversación — un socio que dice estar satisfecho pero dejó de asistir es, según esta evidencia, el que más urge contactar.
 
 ## Segmentación del contenido por tipo de club
 
@@ -72,4 +96,4 @@ La segmentación se **valida con Sports World antes de la producción de conteni
 
 ## Fuente de estos hallazgos
 
-La **taxonomía Q3/Q4** no proviene del workshop ni de las entrevistas: es la que ya está **aprobada y en producción** en el cuestionario del Proyecto A (**[Arquitectura de Experiencia · §0.2](#experience:02-objetivos-del-prospecto)**); el campo únicamente confirmó que sus categorías cubren lo que asesores y líderes describen. Los componentes 1–6 y las dimensiones de decisión provienen del workshop de discovery con líderes regionales; el componente 7 y la segmentación por tipo de club emergieron de las **15 entrevistas de validación de campo** (mayo 2026, 13 clubes en CDMX, Aguascalientes, Hermosillo, Puebla y Jerez) con asesores y líderes comerciales.
+La **taxonomía Q3/Q4** no proviene del workshop ni de las entrevistas: es la que ya está **aprobada y en producción** en el cuestionario del Proyecto A (**[Arquitectura de Experiencia · §0.2](#experience:02-objetivos-del-prospecto)**); el campo únicamente confirmó que sus categorías cubren lo que asesores y líderes describen. Los componentes 1–6 y las dimensiones de decisión provienen del workshop de discovery con líderes regionales; el componente 7 y la segmentación por tipo de club emergieron de las **15 entrevistas de validación de campo** (mayo 2026, 13 clubes en CDMX, Aguascalientes, Hermosillo, Puebla y Jerez) con asesores y líderes comerciales. La validación con benchmarks de la industria y la dimensión conductual de retención provienen de investigación externa (Health & Fitness Association / IHRSA, *Segmentation in Sport Services*, Martínez-Cevallos et al., y Yeomans, Karg & Nguyen 2024) — evidencia independiente que confirma el diseño, no una fuente que lo reemplace.

@@ -46,7 +46,7 @@ _Sin hallazgos._
 - **bds-medicion.es**: 100%
 - **bds-anexo.es**: $4,850.00
 - **academia-resumen.es**: 0.5%, 100%, 20%
-- **academia-contenido.es**: 100%
+- **academia-contenido.es**: 100%, 21.3%, 23.7%, 32%, 35%, 4.6%, 46%, 7.0%
 - **academia-produccion.es**: 100%
 - **academia-tecnica.es**: $0.001, $0.003, $0.10, $0.20, $1,090, $1,400, $11,910, $13,710, $150, $17.80, $19,400, $24,920, $360, $50, $515, $6,410, $670, $770, $9,170, 100%, 3,000, 4,550, 50%, 6,060, 75%
 - **academia-medicion.es**: 0.5%, 10%, 20%, 30%, 50%, 90%, 99%
