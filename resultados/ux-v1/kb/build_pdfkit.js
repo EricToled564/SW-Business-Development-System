@@ -21,6 +21,12 @@ const DOCS = [
   { src: SRC + "/aportaciones.es.md", kind: "md", title: "Status de Entregables Sports World — Sistemas y Marketing", out: "11-status-entregables-sports-world.es.pdf" },
   { src: SRC + "/glosario.es.md", kind: "md", title: "Glosario — Términos técnicos y de negocio", out: "12-glosario.es.pdf" },
   { src: SRC + "/roi.es.md", kind: "md", title: "Calculadora de ROI — Modelo de cohortes con churn", out: "14-calculadora-roi.es.pdf" },
+  { src: SRC + "/bds-resumen.es.md", kind: "md", title: "BDS — Resumen Ejecutivo", out: "15-bds-resumen.es.pdf" },
+  { src: SRC + "/bds-flujo.es.md", kind: "md", title: "BDS — Flujo de conversión", out: "16-bds-flujo.es.pdf" },
+  { src: SRC + "/bds-canales.es.md", kind: "md", title: "BDS — Canales, enrutamiento y SLA", out: "17-bds-canales.es.pdf" },
+  { src: SRC + "/bds-tecnica.es.md", kind: "md", title: "BDS — Estrategia Técnica", out: "18-bds-tecnica.es.pdf" },
+  { src: SRC + "/bds-medicion.es.md", kind: "md", title: "BDS — Medición y funnel", out: "19-bds-medicion.es.pdf" },
+  { src: SRC + "/bds-anexo.es.md", kind: "md", title: "BDS — Addendum contractual", out: "20-bds-anexo.es.pdf" },
   // NOTA: 'voice-agent-knowledge-base.html' quedó obsoleto (contenido previo a las
   // correcciones de esta sesión). Excluido del build; no se sube a la KB.
 ];

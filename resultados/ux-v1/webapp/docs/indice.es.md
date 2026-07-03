@@ -23,6 +23,17 @@ Punto de entrada al conjunto documental. Cada documento es **autónomo** (puede 
 | 12 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
 | 13 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del flujo de experiencia ideal. | Negocio, dirección |
 
+### Business Development System (BDS · Proyecto B — alcance y costo aparte)
+
+| # | Documento | Propósito | Audiencia |
+|---|---|---|---|
+| B1 | [**BDS · Resumen Ejecutivo**](#bds-resumen) | El problema (speed-to-lead) y la solución de captación multicanal en tiempo real. | Dirección, Sistemas |
+| B2 | [**BDS · Flujo de conversión**](#bds-flujo) | Recorrido end-to-end y árbol de enrutamiento (operador → BES → asesor). | Sistemas, Operación |
+| B3 | [**BDS · Canales y enrutamiento**](#bds-canales) | Reglas human-first, respaldo con BES, horarios y SLA de contacto. | Operación, Sistemas |
+| B4 | [**BDS · Estrategia Técnica**](#bds-tecnica) | WhatsApp Business API, BES por WhatsApp (texto), consola de operadores. | Sistemas / TI |
+| B5 | [**BDS · Medición y funnel**](#bds-medicion) | Speed-to-lead por canal y operador, hasta nueva membresía. | Dirección, Sistemas |
+| B6 | [**BDS · Addendum contractual**](#bds-anexo) | Alcance, entregables y contraprestación adicional del Proyecto B. | Dirección, Legal |
+
 ## Localizador rápido (¿dónde está cada tema?)
 
 Cada ubicación es un enlace directo: abre el documento y salta a la sección exacta.
@@ -46,4 +57,8 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | Calculadora de ROI | [Calculadora de ROI](#roi) |
 | Datos personales y seguridad | [Seguridad del sitio](#seguridad:proteccin-de-los-datos-personales-minimizacin-y-no-retencin) · [Contrato · Cláusulas (Sexta Ter y Décima Primera)](#contrato:clusulas) |
 | Diagnóstico SEO y línea base | [Auditoría inicial · El Gigante Invisible](#auditoria:el-gigante-invisible-diagnstico-de-captura-de-demanda-digital) |
+| **BDS · captación multicanal en tiempo real** (Proyecto B) | [BDS · Resumen](#bds-resumen) · [Flujo](#bds-flujo) · [Canales y SLA](#bds-canales) · [Técnica](#bds-tecnica) |
+| **Speed-to-lead / tiempo al primer contacto** | [BDS · Medición y funnel](#bds-medicion) |
+| **BES por WhatsApp (solo texto)** | [BDS · Estrategia Técnica](#bds-tecnica) · [Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto) |
+| **Separación de proyectos A/B y costo adicional** | [Contrato · Cláusula Primera Bis](#contrato:clusulas) · [BDS · Addendum](#bds-anexo) |
 | Definición de términos | [Glosario](#glosario) |
