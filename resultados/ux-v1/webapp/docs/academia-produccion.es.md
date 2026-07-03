@@ -5,7 +5,7 @@
 
 ## La anatomía de un módulo (8–12 minutos)
 
-Cada módulo de la Fase 1 sigue **la misma estructura de seis bloques**, sin importar el componente que enseñe. Esto no es una limitación: es lo que hace posible producir los ~13 módulos base (Niveles 1–4, **[Fases del programa](#academia-fases)**) más las variantes de segmentación por club (**[Contenido y taxonomía · Segmentación](#academia-contenido)**) sin rediseñar cada uno desde cero.
+Cada módulo de la Fase 1 sigue **la misma estructura de seis bloques**, sin importar el componente que enseñe. Esto no es una limitación: es lo que hace posible producir los 7 módulos base (Niveles 1–4, **[Fases del programa](#academia-fases)**) más las variantes de segmentación por club (**[Contenido y taxonomía · Segmentación](#academia-contenido)**) — alrededor de 13 piezas en total — sin rediseñar cada una desde cero.
 
 | Bloque | Duración | Qué hace | Por qué |
 |---|---|---|---|
@@ -29,7 +29,7 @@ La interactividad **no se programa módulo por módulo**: se construye **una sol
 
 Construir estos cuatro tipos de interacción es una **inversión única** al inicio del proyecto; producir cada módulo adicional después es, en esencia, **escribir el guion y cargarlo**, no desarrollar una experiencia nueva.
 
-## Impacto visual con producción 100% IA, sin costo por módulo
+## Impacto visual con producción 100% IA, con costo marginal mínimo por módulo
 
 El requisito de **mantener impacto visual sin disparar el costo** se resuelve con el mismo principio que la interactividad: **invertir una vez en los activos reutilizables, no en cada módulo.**
 

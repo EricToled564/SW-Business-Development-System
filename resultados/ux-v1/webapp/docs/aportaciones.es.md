@@ -9,6 +9,8 @@ Tablero operativo de seguimiento de **todo lo que Sports World debe aportar** 鈥
 
 > El status y la fecha l铆mite son editables y se guardan en este navegador.
 
+Este tablero cubre las aportaciones del **Anexo Uno (Proyecto A)**. Las aportaciones de los Proyectos B y C se activan al firmar su Addendum respectivo y constan en **[BDS 路 Addendum 路 搂4](#bds-anexo:4-aportaciones-a-cargo-de-el-cliente)** y **[Academia 路 Addendum 路 搂4](#academia-anexo:4-aportaciones-a-cargo-de-el-cliente)**.
+
 ## Sistemas
 
 [[APORTACIONES:sistemas]]

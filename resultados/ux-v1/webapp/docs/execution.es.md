@@ -1,7 +1,7 @@
-# Sports World México · Plan de Ejecución · V2.1
-## Equipos, gobierno y cronograma de ambos proyectos: Rediseño Web (comprometido, 8 semanas) y BDS (marco de ejecución)
+# Sports World México · Plan de Ejecución · V2.2
+## Equipos, gobierno y cronograma de los tres proyectos: Rediseño Web (comprometido, 8 semanas), BDS y Academia (marcos de ejecución)
 
-Documento fundacional y **general a ambos proyectos**. Para el **Proyecto A · Rediseño Web** describe **cómo se entrega** en ocho semanas: los cuatro frentes de trabajo en paralelo, la estructura del equipo y el modelo de gobierno, el cronograma semana a semana **con criterios de salida verificables**, los hitos de aprobación a cargo de Sports World, el servidor, los KPIs técnicos comprometidos, el registro de riesgos y el control de cambios (§§1–9). Para el **Proyecto B · Business Development System (BDS)** —alcance y costo aparte— define el **quinto equipo, sus tareas y sus dependencias** (§10); su calendario exacto se fija al firmar el Addendum ([BDS · Addendum](#bds-anexo)). Las aportaciones que se requieren del equipo de sistemas de Sports World —deliberadamente reducidas al mínimo— se detallan en el **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. Se lee por sí solo.
+Documento fundacional y **general a los tres proyectos**. Para el **Proyecto A · Rediseño Web** describe **cómo se entrega** en ocho semanas: los cuatro frentes de trabajo en paralelo, la estructura del equipo y el modelo de gobierno, el cronograma semana a semana **con criterios de salida verificables**, los hitos de aprobación a cargo de Sports World, el servidor, los KPIs técnicos comprometidos, el registro de riesgos y el control de cambios (§§1–9). Para el **Proyecto B · Business Development System (BDS)** —alcance y costo aparte— define el **quinto equipo, sus tareas y sus dependencias** (§10); su calendario exacto se fija al firmar el Addendum ([BDS · Addendum](#bds-anexo)). Para el **Proyecto C · Academia Sports World** —alcance y costo aparte— define el **marco de arranque, el equipo y las dependencias** (§11); su plazo de 10 semanas corre desde la firma de su Addendum ([Academia · Addendum](#academia-anexo)). Las aportaciones que se requieren del equipo de sistemas de Sports World —deliberadamente reducidas al mínimo— se detallan en el **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. Se lee por sí solo.
 
 **Principio rector.** El cómputo de las 8 semanas corre a partir de la entrega del 100% de los requerimientos del Anexo Uno; los atrasos imputables a Sports World extienden el plazo día por día (y activan el stand-by de la Cláusula Novena). Por eso el plan **adelanta (front-load)** todas las dependencias a la Semana 1.
 
@@ -129,7 +129,7 @@ El proyecto avanza por cuatro compuertas de aprobación; cada una corresponde al
 
 ## 6 · KPIs técnicos comprometidos y criterios de aceptación del lanzamiento
 
-Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](#contrato:seccin-iv-kpis-comprometidos-estrategia-comercial)** —dependen del proveedor y son verificables—. No se garantizan, en cambio, las posiciones específicas por palabra clave ni los volúmenes de tráfico, que dependen de factores externos.
+Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](#contrato:seccin-iv-kpis-comprometidos-estrategia-comercial)** —dependen del proveedor y son verificables— (la tabla del contrato incluye además **Core Web Vitals** y la **entrega del código de fixes**, cubiertos en el checklist de abajo). No se garantizan, en cambio, las posiciones específicas por palabra clave ni los volúmenes de tráfico, que dependen de factores externos.
 
 | KPI comprometido | Línea base | Meta | Verificación |
 |---|---|---|---|
@@ -140,7 +140,7 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 | Cobertura de keywords unbranded | 31.1% | 55–65% | Semrush |
 
 **Checklist de aceptación del lanzamiento (Semana 8).** Todo debe estar en verde para dar por cumplido el lanzamiento:
-- Los cuatro KPIs técnicos anteriores en su meta.
+- Los cuatro KPIs técnicos de corrección anteriores en su meta (la **cobertura de keywords unbranded** se verifica después del lanzamiento, con Semrush, conforme al Anexo Dos).
 - **Core Web Vitals** dentro de umbral (LCP < 2.5 s, INP < 200 ms, CLS < 0.1) y **WCAG 2.2 AA** verificados.
 - Las 148 páginas publicadas y crawleables; las 49 fichas de Google Business enviadas y en optimización.
 - **Captación de leads de extremo a extremo** al CRM, desde el sitio y desde BES, sin duplicados (idempotencia).
@@ -170,7 +170,7 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 ## 9 · Supuestos y fuera de alcance
 
 - **Supuesto central:** Sports World **expone su API estándar del CRM y los datos del catálogo** (estatus de clubes, coordenadas, amenidades, clases, horarios, tarifas, descuentos/promociones) del Anexo Uno; la integración a la medida la resuelve el **middleware de EL PRESTADOR**. El cómputo de las 8 semanas corre a partir de la entrega del 100% de esos requerimientos.
-- **Fuera de alcance del Proyecto A (salvo convenio modificatorio):** cualquier página adicional a las 148 (Anexo Dos I.1); operación de BES por **telefonía** o por **voz en WhatsApp** (excluidas); la operación conversacional de BES por **WhatsApp (solo texto)**, los operadores humanos y la capa de enrutamiento en tiempo real corresponden al **Business Development System (Proyecto B)** —costo y calendario propios, **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)** y **[BDS · Addendum](#bds-anexo)**—; presupuesto de medios; y cualquier servicio no enumerado en los Anexos.
+- **Fuera de alcance del Proyecto A (salvo convenio modificatorio):** cualquier página adicional a las 148 (Anexo Dos I.1); operación de BES por **telefonía** o por **voz en WhatsApp** (excluidas); la operación conversacional de BES por **WhatsApp (solo texto)**, los operadores humanos y la capa de enrutamiento en tiempo real corresponden al **Business Development System (Proyecto B)** —costo y calendario propios, **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)** y **[BDS · Addendum](#bds-anexo)**—; el **sistema de capacitación y práctica con role-play de voz** para asesores corresponde a la **Academia (Proyecto C)** —costo y plazo propios, **[§11](#execution:11-proyecto-c-academia-marco-de-ejecucin)** y **[Academia · Addendum](#academia-anexo)**—; presupuesto de medios; y cualquier servicio no enumerado en los Anexos.
 - **No se garantizan** posiciones de búsqueda, volúmenes de tráfico ni tasas de conversión: dependen de factores externos (algoritmos de buscadores, mercado). Lo comprometido son los KPIs técnicos de la §6.
 
 ## 10 · Proyecto B (BDS): marco de ejecución
@@ -213,3 +213,33 @@ El BDS **no reescribe** el motor de captación: reutiliza el cuestionario y la e
 | Aprobación de plantillas de WhatsApp Business tardada (a cargo del proveedor de mensajería) | Media | Medio | Enviar las plantillas a revisión en cuanto se firme el Addendum, en paralelo a la integración técnica. | E5 |
 | Dotación y capacitación de operadores humanos | Media | Medio | Definir plantilla, horarios y lista de personal autorizado desde la Fase de preparación; "BES" cubre huecos de cobertura mientras se completa la dotación. | SW / E5 |
 | Dependencia de componentes del Proyecto A (consola, middleware) no disponibles a tiempo | Baja | Medio | El Equipo 5 integra a partir de que esos componentes están operativos (§10.2); no bloquea ni es bloqueado por el cronograma de lanzamiento del sitio (§3). | Líder gral. |
+
+## 11 · Proyecto C (Academia): marco de ejecución
+
+El **Proyecto C (Academia Sports World)** tiene **plazo propio de 10 semanas**, que corre desde la firma de su Addendum y el cierre de la validación de la taxonomía y del listado de requerimientos (**[Academia · Addendum · §5](#academia-anexo:5-contraprestacin-adicional)**). Igual que con el BDS, lo que se define desde ahora es el equipo, la secuencia y las dependencias, para que el arranque sea inmediato en cuanto se suscriba.
+
+### 11.1 · Equipo 6 — Academia
+
+| Frente | Responsable | Alcance principal |
+|---|---|---|
+| Equipo 6 — Academia | Líder Academia (coordinado por el líder general) | Producción de las lecciones por niveles y sus variantes por club, plataforma de módulos interactivos, agente de voz de role-play, dashboard de readiness. Detalle en **[Academia · Estrategia Técnica](#academia-tecnica)**. |
+
+### 11.2 · Dependencias
+
+- **Con el Proyecto A:** la Fase 2 (role-play) reutiliza el motor conversacional de BES que construye el Equipo 4; en el cronograma de la §3, BES queda con cobertura total en las Semanas 5–6. La **Fase 1 (lecciones y plataforma) no depende de BES** y arranca desde la firma del Addendum. Si el Addendum se firma antes de la disponibilidad del motor, la Fase 2 se computa desde esa disponibilidad (**[Academia · Addendum · §5](#academia-anexo:5-contraprestacin-adicional)**).
+- **De Sports World:** validación del mapeo de la taxonomía y de la segmentación por club, mínimo aprobatorio, métricas del CRM por asesor y servidor propio de la plataforma (**[Academia · Addendum · §4](#academia-anexo:4-aportaciones-a-cargo-de-el-cliente)**).
+
+### 11.3 · Secuencia de trabajo (dentro de las 10 semanas)
+
+1. **Validación.** Cierre del mapeo de la taxonomía a los siete componentes y de la segmentación por tipo de club, con Sports World.
+2. **Producción de la Fase 1.** Lecciones por niveles y plataforma de módulos, desplegada en el servidor del cliente.
+3. **Fase 2.** Escenarios de role-play sobre el motor de BES ya operativo; calibración de la línea base con el CRM.
+4. **Despliegue.** Arranque por grupos, con calendario por región a definir con Sports World, y activación del dashboard de readiness.
+
+### 11.4 · Riesgos propios de la Academia
+
+| Riesgo | Prob. | Impacto | Mitigación | Dueño |
+|---|---|---|---|---|
+| Addendum sin firmar / validación sin cerrar | Media | Alto | El Proyecto C no genera obligación ni costo hasta la firma; la validación de la taxonomía es la primera actividad de la secuencia y el plazo corre desde su cierre. | SW / Líder gral. |
+| Motor de BES no disponible al llegar a la Fase 2 (si el Addendum se firma muy temprano) | Baja | Medio | La Fase 1 avanza sin restricción; la Fase 2 se computa desde la disponibilidad del motor (§11.2). | Líder gral. |
+| Aportaciones del cliente tardías (servidor, métricas del CRM, colaboración de marketing) | Media | Medio | Aportaciones enumeradas desde el Addendum §4; su atraso extiende el plazo día por día (Contrato, Cláusula Sexta). | SW / E6 |

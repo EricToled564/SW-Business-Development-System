@@ -32,7 +32,7 @@ El detalle funcional y técnico consta en los documentos del módulo BDS: **[Flu
 
 - **Monto: USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**, por la implementación del alcance descrito en la sección 2. Es **adicional** a la contraprestación del Contrato (Proyecto A).
 - Podrá estructurarse como **pago único de implementación** más, en su caso, un **recurrente** por operación/mantenimiento del BDS —a definir con EL CLIENTE—.
-- **Plazo de entrega: [por definir]** al cierre del alcance y del listado de requerimientos.
+- **Plazo de entrega: [por definir]** al cierre del alcance y del listado de requerimientos. Los componentes del Proyecto A que el BDS reutiliza (consola, middleware, cuestionario) quedan operativos desde las Semanas 3–6 de su cronograma (**[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**), por lo que el arranque del BDS no depende del lanzamiento del sitio.
 
 ## 6 · Naturaleza y garantías
 

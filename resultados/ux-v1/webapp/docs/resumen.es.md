@@ -1,13 +1,13 @@
 # Sports World México · Resumen Ejecutivo · V1.0
 ## Un cuestionario, una experiencia ideal: la captación digital de Sports World en todo canal
 
-El eje de **todo** el proyecto —Proyecto A, Proyecto B y Proyecto C— es uno solo: **un cuestionario y una experiencia ideal**, aplicados de la misma forma sin importar el canal por el que llegue el prospecto, y enseñados de la misma forma a quien los aplica. Este documento da la visión de conjunto de los tres proyectos y desarrolla, además, el **Rediseño Web** con mayor detalle: su implementación insignia. Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación digital que la marca requiere: rastreable por Google, centrada en el usuario que busca y operada con inteligencia artificial al servicio del socio. Cada afirmación se desarrolla a detalle en los documentos que lo acompañan: Arquitectura de Experiencia, Estrategia Técnica, Mapa del Sitio, Auditoría inicial y Contrato.
+El eje de **todo** el proyecto —Proyecto A, Proyecto B y Proyecto C— es uno solo: **un cuestionario y una experiencia ideal**, aplicados de la misma forma sin importar el canal por el que llegue el prospecto, y enseñados de la misma forma a quien los aplica. Este documento da la visión de conjunto de los tres proyectos y desarrolla, además, el **Rediseño Web** con mayor detalle: su implementación insignia. Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación digital que la marca requiere: rastreable por Google, centrada en el usuario que busca y operada con inteligencia artificial al servicio del socio. Cada afirmación se desarrolla a detalle en los documentos que lo acompañan: Arquitectura de Experiencia (incluido el Mapa del Sitio), Estrategia Técnica, Plan de Ejecución, Auditoría inicial, el Contrato y los módulos BDS y Academia.
 
 | Ficha | |
 |---|---|
 | **Cliente** | Grupo Sports World |
 | **Agencia** | Final Upgrade AI |
-| **Timeline** | 8 semanas (del kickoff al go-live) |
+| **Timeline** | 8 semanas el Proyecto A (kickoff → go-live) · 10 semanas el Proyecto C · Proyecto B por Addendum |
 | **Estabilización posterior** | 2 a 4 semanas |
 | **Documento** | Resumen Ejecutivo · Junio 2026 · Confidencial |
 
@@ -16,7 +16,7 @@ El eje de **todo** el proyecto —Proyecto A, Proyecto B y Proyecto C— es uno 
 Sports World necesita atender al prospecto en **cualquier canal** donde muestre interés, y necesita que quien lo atiende —sitio, WhatsApp o asesor en el club— lo haga con el mismo criterio. Lo que hace a esto un solo sistema —y no tres sistemas paralelos— es que **el cuestionario y la experiencia ideal son únicos**: se aplican una sola vez, se definen una sola vez, se enseñan una sola vez, y cada proyecto solo cambia **quién** los aplica, **por dónde** llegan o **cómo se practican**:
 
 - **Proyecto A · Rediseño Web.** El canal donde nace y se implementa el cuestionario: el sitio de 148 páginas rastreable por Google, el agente BES por voz y texto, la integración con el CRM vía middleware y el funnel/dashboard de medición. Se desarrolla más adelante en este mismo documento.
-- **Proyecto B · Business Development System (alcance y costo aparte).** Extiende el **mismo** cuestionario y la **misma** experiencia ideal a **WhatsApp**: leads de campañas atendidos por **operadores humanos** en tiempo real, con **BES por WhatsApp (solo texto)** de respaldo 24/7, más la **consola interna** para asesores y walk-ins. Ver **[BDS · Resumen Ejecutivo](#bds-resumen)**.
+- **Proyecto B · Business Development System (alcance y costo aparte).** Extiende el **mismo** cuestionario y la **misma** experiencia ideal a **WhatsApp**: leads de campañas atendidos por **operadores humanos** en tiempo real, con **BES por WhatsApp (solo texto)** de respaldo 24/7, más el **rol de operador sobre la consola interna del Proyecto A** para asesores y walk-ins. Ver **[BDS · Resumen Ejecutivo](#bds-resumen)**.
 - **Proyecto C · Academia Sports World (alcance y costo aparte).** Enseña y **entrena la práctica** de ese mismo cuestionario y esa misma experiencia ideal a los 200 asesores, en dos fases: módulos interactivos y role-play con agente de voz. Ver **[Academia · Resumen Ejecutivo](#academia-resumen)**.
 
 A continuación, el desarrollo del **Rediseño Web (Proyecto A)** — su implementación insignia.
@@ -43,7 +43,7 @@ Cinco metas que el nuevo sitio debe cumplir desde el día uno.
 - **Indexación total.** Cada club, cada amenidad, cada clase y cada objetivo con su propia página rastreable en Google. Pasar de cero páginas de club indexables a 49+ más todos sus perfiles.
 - **Aterrizaje local directo.** Quien busca "gimnasio cerca de mí" aterriza en la ficha del club más cercano, no en la página de inicio.
 - **Captura de las verticales de mayor demanda.** Hubs semánticos por amenidad y por objetivo de usuario, para establecer presencia en las búsquedas de alta intención que hoy se pierden.
-- **Agendamiento digital sin fricción.** De la búsqueda a la visita confirmada en pocos pasos, con BES como asistente que califica, agenda y prepara al asesor.
+- **Agendamiento digital sin fricción.** De la búsqueda a la solicitud de visita enviada al club en pocos pasos, con BES como asistente que califica, agenda y prepara al asesor.
 - **Control del negocio.** Un panel de contenido no-code que permite a Sports World actualizar horarios, precios, amenidades y contenido sin depender de la agencia ni tocar código.
 
 ### 3 · La nueva arquitectura
@@ -76,7 +76,7 @@ Este recorrido resuelve tres obstáculos concretos del sitio actual:
 
 ### 5 · BES · el asistente digital
 
-BES no vende: **agenda, califica e informa**. Resuelve preguntas frecuentes sobre horarios, precios, ubicaciones y amenidades con los datos reales del sistema —los mismos que muestra el sitio—, opera **por voz y texto**: en el **sitio (Proyecto A)** por el **canal web (voz y texto)** y, como parte del **Business Development System (Proyecto B, Anexo aparte)**, también por **WhatsApp (solo texto)**. Envía **2 recordatorios automatizados por WhatsApp** (24 h y 2 h antes de la visita), transfiere a un agente humano cuando el usuario lo solicita, y siempre entrega al asesor del club un dossier del prospecto por correo antes de la cita. No opera por telefonía ni por voz en WhatsApp. Calidad objetivo: voz natural en español de México y tiempo de respuesta por debajo de los 900 ms para mantener una conversación fluida.
+BES no vende: **agenda, califica e informa**. Resuelve preguntas frecuentes sobre horarios, precios, ubicaciones y amenidades con los datos reales del sistema —los mismos que muestra el sitio—, opera **por voz y texto**: en el **sitio (Proyecto A)** por el **canal web (voz y texto)** y, como parte del **Business Development System (Proyecto B, Addendum aparte)**, también por **WhatsApp (solo texto)**. Envía **2 recordatorios automatizados por WhatsApp** (24 h y 2 h antes de la visita), transfiere a un agente humano cuando el usuario lo solicita, y siempre entrega al asesor del club un brief del prospecto por correo antes de la cita. No opera por telefonía ni por voz en WhatsApp. Calidad objetivo: voz natural en español de México y tiempo de respuesta por debajo de los 900 ms para mantener una conversación fluida.
 
 ### 6 · Lo que cambia para el negocio
 
@@ -104,7 +104,11 @@ La verificación de Google Business es el único elemento de ruta crítica y se 
 
 ### 8 · KPIs de corrección del Rediseño Web
 
-Nos comprometemos con los **KPIs técnicos de corrección** —que dependen solo de nosotros y son 100% verificables: 49+ páginas de club rastreables (de 0), 116 enlaces rotos → 0, 20 URLs con backslash → 0, schema JSON-LD por club (de 0). Señalamos como **objetivos comerciales alcanzables —no comprometidos**, porque dependen de Google y del embudo interno de Sports World: cobertura unbranded 31.1% → 55–65% (benchmark David Lloyd Clubs: 31% → 74%) y tráfico mensual promedio 80,000 → 160,000. El detalle, junto con la **calculadora de ROI** interactiva, vive en el Contrato › Anexo Dos, Sección IV (KPIs y calculadora de ROI).
+Nos comprometemos con los **KPIs verificables del Contrato › Anexo Dos, Sección IV**: 49 de 49 páginas de club rastreables (de 0), 116 enlaces rotos → 0, 20 URLs con backslash → 0, schema JSON-LD en los 49 clubes, 11 páginas sin H1 → 0, Core Web Vitals en umbral y la **cobertura de keywords unbranded 31.1% → 55–65%** (benchmark David Lloyd Clubs: 31% → 74%). Señalamos como **objetivo comercial alcanzable —no comprometido**, porque depende de Google y del embudo interno de Sports World: el tráfico mensual promedio 80,000 → 160,000. El detalle vive en el Contrato › Anexo Dos, Sección IV; la **calculadora de ROI** interactiva, en su documento propio (**[Calculadora de ROI](#roi)**).
+
+### Lo comercial (Proyecto A)
+
+Contraprestación única de **USD $81,000 sin IVA** (MXN $1,441,800; $1,672,488 con IVA), **sin anticipos**: 50% contra la sección entregada y aprobada en la Semana 4 y 50% tras la aprobación total del proyecto. Los servicios recurrentes se prestan mediante la **iguala mensual de la Opción A elegida: $35,000 MXN/mes ($40,600 con IVA)**, con bolsa de mejora de 8 horas mensuales y plazo mínimo de 6 meses. Detalle en el **[Contrato · Cláusulas Segunda y Tercera](#contrato)**.
 
 ## Business Development System (Proyecto B)
 
@@ -152,7 +156,7 @@ Detalle completo en **[Academia · Resumen Ejecutivo](#academia-resumen)**, **[C
 
 ### 15 · Qué mide la Academia
 
-El **dashboard de readiness** consolida, para los 200 asesores, el avance de módulos (Fase 1) y el desempeño de role-play (Fase 2). El programa se evalúa en cuatro niveles —reacción, aprendizaje, comportamiento real y resultado comercial—, calibrando la línea base con las métricas reales del CRM antes de comprometer KPIs de conversión. Detalle en **[Academia · Medición](#academia-medicion)**.
+El **dashboard de readiness** consolida, para los 200 asesores, el avance de módulos (Fase 1) y el desempeño de role-play (Fase 2). El programa se evalúa en cuatro niveles —reacción, aprendizaje, comportamiento real y resultado comercial—, calibrando la línea base con las métricas reales del CRM antes de comprometer KPIs de conversión. El ejercicio de campo también identificó cuatro **habilitadores operativos** a cargo de Sports World; tres de ellos —canal de WhatsApp estable, cualificación de leads al origen y velocidad de respuesta al lead digital— son precisamente el objeto del **Proyecto B (BDS)**: contratado el BDS, quedan resueltos por diseño. Detalle en **[Academia · Medición](#academia-medicion)**.
 
 ### 16 · Lo comercial
 
@@ -162,4 +166,6 @@ La Academia es un **alcance independiente**: su contratación no modifica el Pro
 
 **Proyecto A:** aprobar esta propuesta, cerrar el kickoff con la firma del checklist de dependencias y arrancar las ocho semanas. A partir de ahí, el calendario corre.
 **Proyecto B (BDS):** cerrar el alcance y el listado de requerimientos y suscribir el Addendum; a partir de la firma, el Equipo 5 (BDS) arranca según lo descrito en el **[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
-**Proyecto C (Academia):** validar con Sports World el mapeo de la taxonomía del cuestionario a los siete componentes y la segmentación por club; cerrar el listado de requerimientos y suscribir el Addendum. A partir de la firma corren las **10 semanas** de desarrollo y entrega.
+**Proyecto C (Academia):** validar con Sports World el mapeo de la taxonomía del cuestionario a los siete componentes y la segmentación por club; cerrar el listado de requerimientos y suscribir el Addendum. A partir de la firma corren las **10 semanas** de desarrollo y entrega, con el marco de arranque del **[Plan de Ejecución · §11](#execution:11-proyecto-c-academia-marco-de-ejecucin)**.
+
+**Escenario recomendado si los tres se firman en el kickoff:** el Proyecto A corre sus 8 semanas; el Equipo 5 (BDS) integra sobre los componentes del sitio desde que están operativos (Semanas 3–6) y lanza junto con él; la Academia valida su taxonomía en paralelo, produce la Fase 1 desde la firma y activa la Fase 2 cuando el motor de BES está disponible — el sistema completo queda en operación en un horizonte del orden de **12 semanas**, no de 26.

@@ -3,7 +3,7 @@
 
 ## Por qué existe este proyecto
 
-**En el mercado mexicano del fitness, una cadena premium no gana la guerra de precio — gana la conversación de venta.** El terreno del precio bajo ya tiene dueños (Smart Fit y los operadores de bajo costo); lo que Sports World vende es un ecosistema —amenidades, red multi-club, comunidad, entrenamiento supervisado— cuyo valor **no se explica solo: alguien tiene que venderlo, de forma consultiva, frente a un cliente que llega con la comparación de precio en la mano**. Las entrevistas de campo lo confirman: la objeción de precio aparece en el 100% de las conversaciones que los asesores describen (**[Contenido y taxonomía](#academia-contenido)**). El asesor comercial es, literalmente, el punto donde el posicionamiento premium se convierte —o no— en una membresía.
+**En el mercado mexicano del fitness, una cadena premium no gana la guerra de precio — gana la conversación de venta.** El terreno del precio bajo ya tiene dueños (Smart Fit y los operadores de bajo costo); lo que Sports World vende es un ecosistema —amenidades, red multi-club, comunidad, entrenamiento supervisado— cuyo valor **no se explica solo: alguien tiene que venderlo, de forma consultiva, frente a un cliente que llega con la comparación de precio en la mano**. Las entrevistas de campo lo confirman: la objeción de precio aparece en el 100% de las entrevistas de campo (**[Contenido y taxonomía](#academia-contenido)**). El asesor comercial es, literalmente, el punto donde el posicionamiento premium se convierte —o no— en una membresía.
 
 Ese activo crítico opera hoy sin sistema. Las entrevistas de campo con líderes regionales y asesores (15 entrevistas, 13 clubes, mayo 2026) confirman que **no existe un proceso único y formal de incorporación ni de desarrollo**: cada líder regional capacita según su propia experiencia y estilo personal.
 
@@ -27,7 +27,7 @@ El objetivo estratégico es convertir la habilitación comercial en una **capaci
 
 ## Cómo lo vamos a hacer
 
-Las entrevistas identificaron **dos fallas independientes**, no una — por eso el programa tiene dos fases, cada una diseñada para resolver una de ellas, más una rutina operativa que las sostiene en el tiempo. El asesor lo vive como un recorrido de **cuatro etapas: aprender, certificarse, reforzar y mantener** (**[Fases del programa](#academia-fases)**).
+Las entrevistas identificaron **dos fallas independientes**, no una — por eso el programa tiene dos fases, cada una diseñada para resolver una de ellas; la segunda incluye, después de la certificación, la rutina de repasos y práctica permanente que sostiene el aprendizaje en el tiempo. El asesor lo vive como un recorrido de **cuatro etapas: aprender, certificarse, reforzar y mantener** (**[Fases del programa](#academia-fases)**).
 
 - **Fase 1 · Módulos interactivos — resuelve la falla de criterio.** Ningún asesor entrevistado describe un método estructurado para identificar qué busca realmente el cliente; la conversación se construye sobre preguntas logísticas, no motivacionales. La Fase 1 entrega **lecciones digitales cortas —de 8 a 12 minutos— organizadas en cuatro niveles**, sobre la misma taxonomía de objetivos del cliente que usa el cuestionario del sitio y los siete componentes de venta validados en campo; el siguiente nivel no se abre hasta aprobar el anterior. Ver **[Fases del programa](#academia-fases)** y **[Contenido y taxonomía](#academia-contenido)**.
 - **Fase 2 · Role-play con agente de voz — resuelve la falla de práctica.** Conocer la teoría no basta si la primera vez que el asesor la aplica es en vivo, con un prospecto real, sin ensayo previo ni corrección. En la Fase 2 el asesor **ensaya la conversación de venta completa hablando con una inteligencia artificial que actúa como el cliente** —con los perfiles y objeciones reales observados en campo—, con dificultad que se ajusta al historial de cada asesor, corrección específica e inmediata, y un **puntaje de preparación (readiness)** por sesión. Usa la misma tecnología de voz ya construida para BES, en un rol distinto: no atiende al prospecto real, **entrena al asesor**. Ver **[Fases del programa](#academia-fases)** y **[Estrategia Técnica de la Academia](#academia-tecnica)**.
@@ -57,11 +57,15 @@ El programa se evalúa respondiendo **cuatro preguntas, en orden de exigencia**:
 
 | Riesgo | Mitigación de diseño |
 |---|---|
-| **Abandono de la práctica** — el programa corre la misma suerte que la capacitación informal actual. | La rutina no depende de la voluntad individual: el sistema programa y asigna automáticamente la sesión semanal de cada asesor, ningún nivel se abre sin aprobar el anterior, y el cumplimiento es visible para el líder regional en el tablero (**[Estrategia Técnica de la Academia · §4 y §6](#academia-tecnica)**). |
+| **Abandono de la práctica** — el programa corre la misma suerte que la capacitación informal actual. | La rutina no depende de la voluntad individual: el sistema programa y asigna automáticamente la sesión semanal de cada asesor, ningún nivel se abre sin aprobar el anterior, y el cumplimiento es visible para el líder regional en el tablero (**[Estrategia Técnica de la Academia · §4, §6 y §7](#academia-tecnica)**). |
 | **Lo aprendido se olvida** después de certificar. | Repasos programados en los días 7, 30 y 90 más la práctica semanal permanente — el repaso está calendarizado, no es opcional ni espontáneo (**[Fases del programa](#academia-fases)**). |
-| **El asesor no puede aplicar lo aprendido** por límites de infraestructura u operación. | Los habilitadores operativos identificados en campo (estabilidad del canal de WhatsApp, cualificación de leads al origen, velocidad de respuesta, convenios) están documentados, asignados a Sports World y explícitamente fuera del alcance del programa — se gestionan en paralelo, no se ignoran (**[Medición · Nota](#academia-medicion)**). |
+| **El asesor no puede aplicar lo aprendido** por límites de infraestructura u operación. | Los habilitadores operativos identificados en campo (estabilidad del canal de WhatsApp, cualificación de leads al origen, velocidad de respuesta, convenios) están documentados y explícitamente fuera del alcance del programa. **Tres de los cuatro son el objeto del [Proyecto B (BDS)](#bds-resumen)** — contratado el BDS, quedan resueltos por diseño; el cuarto (convenios) se gestiona en paralelo por Sports World (**[Medición · Nota](#academia-medicion)**). |
 | **Expectativas de impacto desalineadas** con la realidad del funnel. | Ninguna meta de conversión se compromete antes de calibrar la línea base contra el CRM; el impacto se lee comparando a los asesores certificados contra los que aún no se certifican (**[Medición](#academia-medicion)**). |
 | **El contenido se desactualiza** frente a un mercado competitivo que cambia por plaza. | Motor de aprendizaje continuo que propone nuevos escenarios a partir de las sesiones acumuladas, con validación conjunta antes de producción, y módulo de inteligencia competitiva por club construido con el equipo de marketing (**[Estrategia Técnica de la Academia · §5](#academia-tecnica)**, **[Contenido y taxonomía](#academia-contenido)**). |
+
+## Inversión y plazo
+
+**$850,000.00 MXN más IVA**, con **10 semanas de desarrollo y entrega** desde la firma del Addendum y el cierre de la validación de la taxonomía y los requerimientos — equivalente a **$4,250 MXN por asesor** para instalar una capacidad permanente de la organización, no un curso que caduca. Los costos de operación de las plataformas de IA del agente de práctica corren por cuenta de Sports World, con estimación mensual documentada. Detalle en el **[Addendum contractual](#academia-anexo)** y en la **[Estrategia Técnica de la Academia · §8](#academia-tecnica)**.
 
 ## Documentos de este módulo
 
@@ -69,7 +73,7 @@ El programa se evalúa respondiendo **cuatro preguntas, en orden de exigencia**:
 |---|---|
 | [**Contenido y taxonomía**](#academia-contenido) | La taxonomía maestra del cliente, los componentes del programa validados en campo y la segmentación por tipo de club |
 | [**Fases del programa**](#academia-fases) | Fase 1 (módulos interactivos por niveles) y Fase 2 (role-play con agente de voz) |
-| [**Producción del curso**](#academia-produccion) | Anatomía de un módulo, mecánicas de interactividad reutilizables y producción 100% con IA sin costo por módulo |
+| [**Producción del curso**](#academia-produccion) | Anatomía de un módulo, mecánicas de interactividad reutilizables y producción 100% con IA con costo marginal mínimo por módulo |
 | [**Estrategia Técnica**](#academia-tecnica) | La plataforma de módulos interactivos y la arquitectura del agente de voz de role-play (reutiliza el stack de BES) |
 | [**Medición**](#academia-medicion) | Dashboard de readiness, calibración con el CRM y KPIs del programa |
 | [**Addendum contractual**](#academia-anexo) | Alcance, entregables y contraprestación adicional |

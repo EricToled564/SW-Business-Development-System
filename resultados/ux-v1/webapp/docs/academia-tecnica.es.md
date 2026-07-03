@@ -26,7 +26,7 @@ En síntesis: el **contenido y los datos de la Academia viven en infraestructura
 - Contenido e-learning por los cuatro niveles descritos en **[Fases del programa](#academia-fases)**: video/texto, ejemplos de campo y evaluación de acreditación por módulo.
 - **Progresión con gate:** el asesor no accede al siguiente nivel sin acreditar el anterior (mínimo aprobatorio a definir con Sports World).
 - **Capa de adaptación por club:** el Nivel 4 sirve una variante de contenido según el segmento del club del asesor (**[Contenido y taxonomía · Segmentación](#academia-contenido)**), sin duplicar el resto del contenido base.
-- Registra el avance de cada asesor (módulos completados, calificación de acreditación, fecha) para alimentar el dashboard de readiness.
+- Registra el avance de cada asesor (módulos completados, calificación de acreditación, fecha) para alimentar el dashboard de readiness, e incluye una **encuesta breve de reacción** al cierre de cada nivel (Nivel 1 de la evaluación, **[Medición](#academia-medicion)**).
 
 ## 3 · Agente de voz de role-play (Fase 2)
 
@@ -35,7 +35,7 @@ En síntesis: el **contenido y los datos de la Academia viven en infraestructura
 - **Guion por escenario:** cada sesión carga el perfil de cliente (objetivo del cliente, dimensión de decisión dominante, objeción de precio, y variante de club cuando aplica) sobre la misma base de conocimiento (RAG) de clubes, clases y precios que ya usa BES, para que las objeciones que plantea el agente sean consistentes con la realidad operativa del club del asesor.
 - **Dos entregables al finalizar la sesión, no uno:**
   1. **Retroalimentación en tiempo real** — en cuanto termina la conversación, el asesor ve de inmediato en qué momento exacto perdió el hilo (por ejemplo: clasificó mal el objetivo, no articuló el comparativo competitivo local, omitió la hospitalidad consultiva) y qué debió decir en su lugar.
-  2. **Reporte de la sesión** — un documento de desempeño, por sesión y acumulado, que consolida el puntaje de readiness, la evolución respecto a sesiones anteriores y las áreas de oportunidad vigentes; alimenta el dashboard de readiness y la guía de coaching del líder regional.
+  2. **Reporte de la sesión** — un documento de desempeño, por sesión y acumulado, que consolida el puntaje de readiness, la evolución respecto a sesiones anteriores y las áreas de oportunidad vigentes; alimenta el dashboard de readiness, cuya vista por asesor sirve al líder regional como guía de coaching. La sesión cierra con una **valoración breve de utilidad** por parte del asesor (Nivel 1 de la evaluación, **[Medición](#academia-medicion)**).
 - **Objetivo de latencia conversacional:** el mismo estándar ya definido para BES, por debajo de ~900 ms, para que la práctica se sienta como una conversación real (**[Estrategia Técnica del sitio · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
 - Corre en las **plataformas gestionadas de sus proveedores** (no en el servidor del sitio ni en el de la Academia), igual que BES.
 
@@ -89,9 +89,9 @@ Igual que BES (**[Estrategia Técnica del sitio · §5](#technical:5-bes-el-agen
 |---|---|---|---|---|---|
 | Conservador | ~50% | ~430 | ~3,000 | $360 – $770 | $6,410 – $13,710 |
 | Medio | ~75% | ~650 | ~4,550 | $515 – $1,090 | $9,170 – $19,400 |
-| Optimista | ~100% | ~865 | ~6,060 | $670 – $1,400 | $11,910 – $24,920 |
+| Optimista | ~100% | ~865 | ~6,060 | $670 – $1,400 | $11,930 – $24,920 |
 
-Estos escenarios **no incluyen** las sesiones de certificación inicial (§6), que se concentran en las primeras semanas de cada cohorte de asesores certificándose y se estiman aparte una vez definido el calendario de despliegue por región. EL PRESTADOR entregará a EL CLIENTE, igual que para BES, **monitoreo de consumo y un reporte mensual**.
+Estos escenarios cubren la práctica semanal de mantenimiento; los tres repasos de los días 7, 30 y 90 añaden, por asesor certificado, un volumen marginal (~3 sesiones de 5–8 minutos repartidas en 90 días) ya absorbido por los rangos de la tabla. Los escenarios **no incluyen** las sesiones de certificación inicial (§6), que se concentran en las primeras semanas de cada cohorte de asesores certificándose y se estiman aparte una vez definido el calendario de despliegue por región. EL PRESTADOR entregará a EL CLIENTE, igual que para BES, **monitoreo de consumo y un reporte mensual**.
 
 ## Seguridad y datos
 

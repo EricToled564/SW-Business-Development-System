@@ -68,6 +68,7 @@ const KNOWN_FIGURES = new Set([
   "4,850", "4850", "4,850.00", "4850.00", // contraprestación adicional del Addendum BDS (Proyecto B)
   "850,000", "850000", "850,000.00", "850000.00", // contraprestación adicional del Addendum Academia (Proyecto C, MXN)
   "986,000", "986000", "986,000.00", "986000.00", // Academia con IVA 16% (850,000 × 1.16)
+  "4,250", "4250", // costo por asesor de la Academia (850,000 / 200)
   // alcance y plazos
   "8", "148", "49", "2", "4", "1", "15", "30", "365",
   // infraestructura / tráfico

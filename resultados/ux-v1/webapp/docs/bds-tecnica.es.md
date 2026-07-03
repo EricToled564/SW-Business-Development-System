@@ -42,6 +42,16 @@ Lo nuevo del BDS son las cuatro piezas siguientes.
 - Gestiona **colas** por club/zona, **asignación**, **rebote** por no-respuesta y **escalación** con contexto.
 - Emite los **eventos** que alimentan el **[funnel del BDS](#bds-medicion)** (lead generado, primer contacto, cuestionario, agenda, etc.).
 
+## Costos de operación a cargo del cliente
+
+Igual que en el Proyecto A (Contrato, Cláusula Sexta Bis), la operación del BDS conlleva costos que Sports World cubre directamente a los proveedores, no comprendidos en la contraprestación del Addendum:
+
+- **Cuotas de WhatsApp Business API** — Meta cobra por conversación según su categoría (marketing, utilidad, servicio) y país; el volumen depende de las campañas y del tráfico de leads.
+- **Consumo de "BES" por WhatsApp** — el modelo de razonamiento opera bajo el mismo esquema de costo directo ya establecido para el canal web.
+- **Plantilla de operadores humanos** — costo interno de Sports World (personal propio); se dimensiona con el volumen de leads y los horarios de atención al cerrar el listado de requerimientos.
+
+EL PRESTADOR entrega, igual que para BES, monitoreo de consumo y reporte mensual de los dos primeros conceptos.
+
 ## Seguridad y datos
 
 - Mismos principios del Proyecto A: **HTTPS**, credenciales por canal seguro, **minimización y no retención** de datos personales una vez copiados al CRM (**[Seguridad del sitio](#seguridad)**).

@@ -9,7 +9,7 @@ El programa tiene **dos fases contractuales** —Fase 1 (lecciones interactivas)
 
 | Etapa | Qué hace el asesor | Cómo se completa | Herramienta |
 |---|---|---|---|
-| **1 · Aprender** (Fase 1) | Toma 7 lecciones digitales cortas —de 8 a 12 minutos cada una— organizadas en cuatro niveles, entre turnos y sin salir de la operación. | Aprueba la evaluación de cada nivel; el siguiente nivel no se abre hasta aprobar el anterior. | Plataforma de lecciones |
+| **1 · Aprender** (Fase 1) | Toma 7 lecciones digitales cortas —los "módulos interactivos" de la Fase 1, de 8 a 12 minutos cada uno— organizadas en cuatro niveles, entre turnos y sin salir de la operación. | Acredita cada lección; el nivel se aprueba al acreditar todas las suyas, y el siguiente nivel no se abre hasta aprobar el anterior. | Plataforma de módulos interactivos |
 | **2 · Certificarse** (Fase 2) | Ensaya la conversación de venta completa, hablando por voz con una inteligencia artificial que actúa como cliente. Repite cada tipo de caso hasta dominarlo. | Alcanza el puntaje de preparación (*readiness*) aprobatorio en los siete componentes del programa. | Agente de voz |
 | **3 · Reforzar** (Fase 2) | Recibe tres repasos breves ya calendarizados: a los 7, 30 y 90 días de haberse certificado. | Completa los tres repasos sosteniendo su puntaje. | Agente de voz |
 | **4 · Mantener** (Fase 2) | Practica una sesión corta por semana, que el sistema le asigna automáticamente sobre su punto más débil del momento. | No se "aprueba" una vez: es permanente. El objetivo es sostener el nivel en el tiempo. | Agente de voz |
@@ -83,7 +83,7 @@ Pasado el día 90, el asesor entra a una **rutina permanente de mantenimiento**:
 
 ## Qué se reutiliza (sin duplicar)
 
-- El **motor conversacional de BES** —reconocimiento de voz, modelo de razonamiento, síntesis de voz y orquestación— ya construido para el Proyecto A: **[Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto)**. La Academia usa la misma tecnología en un **rol distinto**: interpreta al cliente para entrenar al asesor, no atiende al prospecto real.
+- El **motor conversacional de BES** —reconocimiento de voz, modelo de razonamiento, síntesis de voz y orquestación— ya construido para el Proyecto A: **[Estrategia Técnica del sitio · §5](#technical:5-bes-el-agente-de-voz-y-texto)**. La Academia usa la misma tecnología en un **rol distinto**: interpreta al cliente para entrenar al asesor, no atiende al prospecto real.
 - El **principio de dos momentos de descubrimiento** se apoya en el mismo motor de cuestionario ya documentado para el Proyecto A: **[Arquitectura de Experiencia · §2](#experience:2-el-cuestionario-como-nica-fuente-de-personalizacin)**.
 
 Lo que la Academia **agrega** es el contenido de lecciones por niveles, el motor que elige el caso de práctica según las debilidades de cada asesor, los escenarios de role-play, el calendario de repasos y la capa de evaluación y preparación (readiness) — detallados en la **[Estrategia Técnica de la Academia](#academia-tecnica)**.
