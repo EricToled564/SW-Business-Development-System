@@ -1,7 +1,7 @@
 # Academia SW · Estrategia Técnica
 ## Cómo se construye la plataforma de módulos y el agente de voz de role-play
 
-> **Proyecto C (Academia).** Describe la arquitectura técnica de las dos fases: la plataforma de módulos interactivos y el agente de voz que interpreta al cliente en el role-play. Alcance y costo aparte (Contrato · Cláusula Primera Bis; **[Addendum](#academia-anexo)**).
+> **Proyecto C (Academia).** Describe la arquitectura técnica de las dos fases: la plataforma de módulos interactivos y el agente de voz que interpreta al cliente en el role-play.
 
 ## Principio de reutilización
 

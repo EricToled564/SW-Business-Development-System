@@ -1,8 +1,6 @@
 # Academia SW · Addendum contractual
 ## Alcance, entregables y contraprestación adicional del Proyecto C
 
-> **Anexo separado al Contrato.** La **Academia Sports World (Proyecto C)** **no** forma parte del alcance ni del precio del Contrato del sitio (Proyecto A) ni del Addendum del Business Development System (Proyecto B). Su contratación se formaliza mediante el presente **Addendum**, con **contraprestación adicional** (Contrato · **Cláusula Primera Bis**).
-
 ## 1 · Objeto
 
 EL PRESTADOR desarrolla e implementa para EL CLIENTE un **sistema formal de capacitación y práctica** para los 200 asesores comerciales (la "Academia"), en dos fases: módulos interactivos de e-learning por niveles, y un agente conversacional de IA por voz para practicar la conversación de venta mediante role-play, con evaluación y dashboard de readiness.

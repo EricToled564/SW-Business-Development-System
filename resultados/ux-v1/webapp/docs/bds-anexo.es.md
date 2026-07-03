@@ -1,8 +1,6 @@
 # BDS · Addendum contractual
 ## Alcance, entregables y contraprestación adicional del Proyecto B
 
-> **Anexo separado al Contrato.** El **Business Development System (Proyecto B)** **no** forma parte del alcance ni del precio del Contrato del sitio (Proyecto A). Su contratación se formaliza mediante el presente **Addendum**, con **contraprestación adicional** (Contrato · **Cláusula Primera Bis**). El precio del Proyecto A permanece intacto.
-
 ## 1 · Objeto
 
 EL PRESTADOR desarrolla e integra para EL CLIENTE un **sistema de captación y conversión de leads multicanal en tiempo real** (el "BDS"), que reduce el **tiempo al primer contacto** atendiendo a los prospectos en **WhatsApp** y en la **consola interna**, con el mismo cuestionario de experiencia ideal y la misma escritura al CRM del Proyecto A.

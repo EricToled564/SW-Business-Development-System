@@ -1,7 +1,7 @@
 # BDS · Estrategia Técnica
 ## Cómo se construye el sistema de captación multicanal
 
-> **Proyecto B (BDS).** Describe la arquitectura técnica que agrega **WhatsApp, operadores humanos y enrutamiento en tiempo real** sobre el núcleo ya construido (cuestionario, experiencia ideal, middleware/CRM). Alcance y costo aparte (Contrato · Cláusula Primera Bis; [Addendum](#bds-anexo)).
+> **Proyecto B (BDS).** Describe la arquitectura técnica que agrega **WhatsApp, operadores humanos y enrutamiento en tiempo real** sobre el núcleo ya construido (cuestionario, experiencia ideal, middleware/CRM).
 
 ## Principio de reutilización
 

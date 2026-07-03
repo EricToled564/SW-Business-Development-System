@@ -1,8 +1,6 @@
 # Academia Sports World (Proyecto C) · Resumen Ejecutivo
 ## Sistema formal de capacitación y práctica para los 200 asesores
 
-> **Proyecto C.** Documento de la **Academia Sports World**, alcance **separado** de los proyectos del sitio (Proyecto A) y del Business Development System (Proyecto B), con **contraprestación adicional** (Contrato · Cláusula Primera Bis; detalle en el **[Addendum de la Academia](#academia-anexo)**).
-
 ## El problema: la habilitación del asesor no está estandarizada
 
 Las entrevistas de campo con líderes regionales y asesores (15 entrevistas, 13 clubes, mayo 2026) confirman que hoy **no existe un sistema único y formal de incorporación**: cada líder regional capacita "con generosidad", según su propia experiencia y estilo personal.

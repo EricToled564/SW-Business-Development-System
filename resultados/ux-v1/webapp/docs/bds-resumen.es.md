@@ -1,8 +1,6 @@
 # Business Development System (BDS) · Resumen Ejecutivo
 ## Captación y conversión de leads multicanal en tiempo real
 
-> **Proyecto B.** Documento del **Business Development System**, alcance **separado** del proyecto del sitio (Proyecto A) y con **contraprestación adicional** (Contrato · Cláusula Primera Bis; detalle en el **[Addendum del BDS](#bds-anexo)**).
-
 ## El problema: los leads se enfrían
 
 Hoy la mayor fuente de leads de Sports World son las **campañas en redes sociales**. El recorrido actual es:

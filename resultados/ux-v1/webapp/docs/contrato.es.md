@@ -1,5 +1,5 @@
 # Sports World · Contrato de Prestación de Servicios Profesionales · V2.2
-## Proyecto A (Rediseño web + SEO + "BES" + Servicios recurrentes) — con los Proyectos B (BDS) y C (Academia) incorporados en este Contrato, activables por Addendum
+## Rediseño web + SEO · Agente de voz "BES" · Servicios recurrentes
 
 CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES (**"CONTRATO"**) QUE CELEBRAN, POR UNA PARTE, **OPERADORA Y ADMINISTRADORA SW, S.A. DE C.V.** (EN LO SUCESIVO **"SPORTS WORLD"** o **"EL CLIENTE"**), REPRESENTADA EN ESTE ACTO POR **HADI MICHEL IBRAHIM IBRAHIM**; Y POR LA OTRA PARTE, **LIVE STREAMING SERVICES MEXICO, S.A. DE C.V.** (EN LO SUCESIVO EL **"PROVEEDOR"** o **"EL PRESTADOR"**, comercialmente *Final Upgrade AI*), REPRESENTADA POR **ERIC TOLEDANO DE JESÚS LOZANO**, DE CONFORMIDAD CON LAS SIGUIENTES DECLARACIONES Y CLÁUSULAS:
 
