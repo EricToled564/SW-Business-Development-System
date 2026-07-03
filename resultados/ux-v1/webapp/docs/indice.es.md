@@ -15,7 +15,7 @@ La documentación se organiza en **tres bloques**: los **documentos generales**,
 | 3a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques y con responsables. | Dirección, TI, Legal |
 | 3b | [**Anexo Dos · Entregables, soporte y operación**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
 | 4 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en toda la documentación, de ambos proyectos. | Todos |
-| 5 | [**Plan de Ejecución**](#execution) | Estructura del equipo, gobierno, cronograma de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios — el marco de gobierno de **ambos proyectos**. | Dirección, TI, PMO |
+| 5 | [**Plan de Ejecución**](#execution) | Marco de gobierno de **ambos proyectos**: para el Proyecto A, cronograma comprometido de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios; para el Proyecto B (BDS), el quinto equipo, sus tareas y dependencias (§10) — su calendario se fija al firmar el Addendum. | Dirección, TI, PMO |
 
 ## Proyecto A · Rediseño Web (exclusivos)
 
@@ -66,6 +66,7 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | Datos personales y seguridad | [Seguridad del sitio](#seguridad:proteccin-de-los-datos-personales-minimizacin-y-no-retencin) · [Contrato · Cláusulas (Sexta Ter y Décima Primera)](#contrato:clusulas) |
 | Diagnóstico SEO y línea base | [Auditoría inicial · El Gigante Invisible](#auditoria:el-gigante-invisible-diagnstico-de-captura-de-demanda-digital) |
 | **BDS · captación multicanal en tiempo real** (Proyecto B) | [BDS · Resumen](#bds-resumen) · [Flujo](#bds-flujo) · [Canales y SLA](#bds-canales) · [Técnica](#bds-tecnica) |
+| **BDS · equipo, tareas y dependencias** (marco de ejecución) | [Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin) · [BDS · Addendum](#bds-anexo) |
 | **Brief del asesor** (documento personalizado del comprador potencial, con sugerencias de venta) | [Arquitectura de Experiencia · §1.2, fase `briefing`](#experience:12-las-siete-fases) · [BDS · Resumen](#bds-resumen) · [BDS · Flujo](#bds-flujo) |
 | **Speed-to-lead / tiempo al primer contacto** | [BDS · Medición y funnel](#bds-medicion) |
 | **BES por WhatsApp (solo texto)** | [BDS · Estrategia Técnica](#bds-tecnica) · [Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto) |

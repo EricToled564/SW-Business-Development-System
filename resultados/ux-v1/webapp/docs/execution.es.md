@@ -1,7 +1,7 @@
-# Sports World México · Plan de Ejecución · V2.0
-## Equipos, gobierno, el cronograma de ocho semanas con criterios de salida, hitos, riesgos y criterios de aceptación
+# Sports World México · Plan de Ejecución · V2.1
+## Equipos, gobierno y cronograma de ambos proyectos: Rediseño Web (comprometido, 8 semanas) y BDS (marco de ejecución)
 
-Documento fundacional. Describe **cómo se entrega** el proyecto en ocho semanas: los cuatro frentes de trabajo en paralelo, la estructura del equipo y el modelo de gobierno, el cronograma semana a semana **con criterios de salida verificables**, los hitos de aprobación a cargo de Sports World, el servidor, los KPIs técnicos comprometidos, el registro de riesgos y el control de cambios. Las aportaciones que se requieren del equipo de sistemas de Sports World —deliberadamente reducidas al mínimo— se detallan en el **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. Se lee por sí solo.
+Documento fundacional y **general a ambos proyectos**. Para el **Proyecto A · Rediseño Web** describe **cómo se entrega** en ocho semanas: los cuatro frentes de trabajo en paralelo, la estructura del equipo y el modelo de gobierno, el cronograma semana a semana **con criterios de salida verificables**, los hitos de aprobación a cargo de Sports World, el servidor, los KPIs técnicos comprometidos, el registro de riesgos y el control de cambios (§§1–9). Para el **Proyecto B · Business Development System (BDS)** —alcance y costo aparte— define el **quinto equipo, sus tareas y sus dependencias** (§10); su calendario exacto se fija al firmar el Addendum ([BDS · Addendum](#bds-anexo)). Las aportaciones que se requieren del equipo de sistemas de Sports World —deliberadamente reducidas al mínimo— se detallan en el **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. Se lee por sí solo.
 
 **Principio rector.** El cómputo de las 8 semanas corre a partir de la entrega del 100% de los requerimientos del Anexo Uno; los atrasos imputables a Sports World extienden el plazo día por día (y activan el stand-by de la Cláusula Novena). Por eso el plan **adelanta (front-load)** todas las dependencias a la Semana 1.
 
@@ -15,6 +15,8 @@ El proyecto entrega cuatro frentes a la vez, ejecutados por cuatro equipos coord
 - **BES, el agente de voz y texto con IA** — el agente conversacional **integrado al sitio web (canal web)**, conectado a la misma lógica de club/clase y a la misma captación de leads que el sitio, que además envía 2 recordatorios automatizados por WhatsApp (**[Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
 
 Estas cuatro áreas son interdependientes: el sitio necesita el contenido y las imágenes; el contenido necesita la estructura del sitio; las imágenes necesitan los layouts; y BES requiere la misma lógica que utiliza el sitio para entregar la misma respuesta por cualquier vía. Se ejecutan en paralelo, con puntos de control compartidos, bajo un único coordinador general.
+
+**Un quinto frente, aparte de los cuatro anteriores: el Proyecto B (Business Development System).** No forma parte del alcance ni del calendario comprometido de ocho semanas —tiene **costo y plazo propios**, definidos al firmar su Addendum (**[BDS · Addendum](#bds-anexo)**)—, pero **reutiliza** el cuestionario, el middleware/CRM y la consola interna que el Proyecto A construye, por lo que buena parte de su trabajo solo puede arrancar una vez que esos componentes están operativos. El detalle de su equipo, tareas y dependencias está en la **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
 
 ## 2 · Estructura del equipo y modelo de gobierno
 
@@ -44,6 +46,8 @@ El proyecto se ejecuta con cuatro equipos, cada uno con un líder, todos coordin
 | Aprobaciones de hito | A | C | C | C | C | R (decide) |
 
 El líder general ejecuta puntos de control breves y periódicos donde los cuatro líderes se sincronizan sobre las dependencias compartidas; el cronograma de la §3 los secuencia en el orden correcto.
+
+> Al firmarse el Addendum del Proyecto B, se suma un **quinto equipo — BDS**, bajo el mismo líder general. Su estructura, tareas y dependencias con estos cuatro equipos están en la **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
 
 ## 3 · El cronograma de ocho semanas
 
@@ -166,5 +170,46 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 ## 9 · Supuestos y fuera de alcance
 
 - **Supuesto central:** Sports World **expone su API estándar del CRM y los datos del catálogo** (estatus de clubes, coordenadas, amenidades, clases, horarios, tarifas, descuentos/promociones) del Anexo Uno; la integración a la medida la resuelve el **middleware de EL PRESTADOR**. El cómputo de las 8 semanas corre a partir de la entrega del 100% de esos requerimientos.
-- **Fuera de alcance (salvo convenio modificatorio):** cualquier página adicional a las 148 (Anexo Dos I.1); operación de BES por **telefonía** o por **voz en WhatsApp** (excluidas); la operación conversacional de BES por **WhatsApp (solo texto)** corresponde al **Business Development System (Proyecto B, Anexo aparte)**, fuera del alcance de este proyecto (Proyecto A); presupuesto de medios; y cualquier servicio no enumerado en los Anexos.
+- **Fuera de alcance del Proyecto A (salvo convenio modificatorio):** cualquier página adicional a las 148 (Anexo Dos I.1); operación de BES por **telefonía** o por **voz en WhatsApp** (excluidas); la operación conversacional de BES por **WhatsApp (solo texto)**, los operadores humanos y la capa de enrutamiento en tiempo real corresponden al **Business Development System (Proyecto B)** —costo y calendario propios, **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)** y **[BDS · Addendum](#bds-anexo)**—; presupuesto de medios; y cualquier servicio no enumerado en los Anexos.
 - **No se garantizan** posiciones de búsqueda, volúmenes de tráfico ni tasas de conversión: dependen de factores externos (algoritmos de buscadores, mercado). Lo comprometido son los KPIs técnicos de la §6.
+
+## 10 · Proyecto B (BDS): marco de ejecución
+
+A diferencia del Proyecto A, el **Proyecto B (BDS)** no tiene aquí un calendario de semanas comprometido: su **plazo de entrega se fija al firmar el Addendum**, una vez cerrados el alcance y el listado de requerimientos (**[BDS · Addendum · §5](#bds-anexo:5-contraprestacin-adicional)**). Lo que sí se define desde ahora es el **equipo, las tareas y las dependencias**, para que el arranque sea inmediato en cuanto se suscriba.
+
+### 10.1 · Equipo 5 — BDS
+
+| Frente | Responsable | Alcance principal |
+|---|---|---|
+| Equipo 5 — BDS | Líder BDS (coordinado por el líder general) | Integración de WhatsApp Business API, "BES" por WhatsApp, consola de operadores, capa de enrutamiento en tiempo real y el funnel del BDS. Detalle funcional en **[BDS · Estrategia Técnica](#bds-tecnica)**. |
+
+**Matriz de responsabilidad (RACI) — tareas del BDS.** R = ejecuta · A = rinde cuentas · C = consultado · I = informado.
+
+| Entregable | Líder gral. | E5 BDS | E1 Web | E4 BES | Sports World |
+|---|---|---|---|---|---|
+| Integración WhatsApp Business API (mensajería, plantillas, multiagente) | A | R | I | I | R (número oficial + plantillas) |
+| "BES" sobre WhatsApp (solo texto) | A | R | I | C (misma base de conocimiento) | C (aprueba plantillas) |
+| Consola de operadores (rol operador sobre la consola ya existente) | A | R | C (consola base, §11 Estrategia Técnica) | I | R (plantilla, horarios y lista de operadores) |
+| Capa de enrutamiento en tiempo real (colas, asignación, rebote, escalación) | A | R | I | I | C (horarios de atención) |
+| Funnel y medición del BDS (integrado al dashboard) | A | R | C (dashboard base) | I | C (accesos) |
+| Aprobación de alcance y firma del Addendum | A | C | I | I | R (decide) |
+
+### 10.2 · Dependencias con el Proyecto A
+
+El BDS **no reescribe** el motor de captación: reutiliza el cuestionario y la experiencia ideal, el middleware y la escritura idempotente al CRM, y la consola interna que entrega el Equipo 1 — Web. En el cronograma de la §3, esos componentes quedan operativos entre las **Semanas 3 y 6** (integración de la API del CRM y consola interna); el Equipo 5 puede comenzar a integrar sobre ellos a partir de ese punto, sin esperar al lanzamiento del sitio (Semana 8).
+
+### 10.3 · Secuencia de trabajo (por fases, no por semanas)
+
+1. **Preparación.** Sports World entrega el número oficial de WhatsApp Business y somete las plantillas de mensaje a aprobación; se define la plantilla de operadores, sus horarios y la lista de personal autorizado.
+2. **Integración.** Se conecta la WhatsApp Business API; se habilita el rol de operador en la consola interna; se construye la capa de enrutamiento (human-first → "BES" de respaldo → escalación).
+3. **Validación.** Pruebas de extremo a extremo por los tres caminos (operador humano, "BES" por WhatsApp, walk-in en consola) contra el CRM real, sin duplicados; el funnel del BDS visible en el dashboard.
+4. **Lanzamiento y estabilización.** BDS en operación; monitoreo activo; ajuste de las reglas de enrutamiento con datos reales de volumen y disponibilidad.
+
+### 10.4 · Riesgos propios del BDS
+
+| Riesgo | Prob. | Impacto | Mitigación | Dueño |
+|---|---|---|---|---|
+| Addendum sin firmar / alcance sin cerrar | Media | Alto | El Proyecto B no genera obligación ni costo hasta la firma (**[BDS · Addendum](#bds-anexo)**); el arranque técnico depende de esa firma. | SW / Líder gral. |
+| Aprobación de plantillas de WhatsApp Business tardada (a cargo del proveedor de mensajería) | Media | Medio | Enviar las plantillas a revisión en cuanto se firme el Addendum, en paralelo a la integración técnica. | E5 |
+| Dotación y capacitación de operadores humanos | Media | Medio | Definir plantilla, horarios y lista de personal autorizado desde la Fase de preparación; "BES" cubre huecos de cobertura mientras se completa la dotación. | SW / E5 |
+| Dependencia de componentes del Proyecto A (consola, middleware) no disponibles a tiempo | Baja | Medio | El Equipo 5 integra a partir de que esos componentes están operativos (§10.2); no bloquea ni es bloqueado por el cronograma de lanzamiento del sitio (§3). | Líder gral. |

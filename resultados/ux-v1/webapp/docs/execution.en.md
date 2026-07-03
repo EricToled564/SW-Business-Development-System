@@ -1,7 +1,7 @@
-# Sports World México · Execution Plan · V2.0
-## Teams, governance, the eight-week schedule with exit criteria, milestones, risks, and acceptance criteria
+# Sports World México · Execution Plan · V2.1
+## Teams, governance, and schedule for both projects: Website Redesign (committed, 8 weeks) and BDS (execution framework)
 
-Foundational document. It describes **how the project is delivered** over eight weeks: the four parallel workstreams, the team structure and governance model, the week-by-week schedule **with verifiable exit criteria**, the approval milestones owned by Sports World, the server, the committed technical KPIs, the risk register, and change control. The contributions required from the Sports World systems team —deliberately kept to a minimum— are detailed in the **[Contract · Annex One](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. It stands on its own.
+Foundational document, **general to both projects**. For **Project A · Website Redesign** it describes **how the project is delivered** over eight weeks: the four parallel workstreams, the team structure and governance model, the week-by-week schedule **with verifiable exit criteria**, the approval milestones owned by Sports World, the server, the committed technical KPIs, the risk register, and change control (§§1–9). For **Project B · Business Development System (BDS)** —separate scope and cost— it defines the **fifth team, its tasks, and its dependencies** (§10); its exact schedule is set upon signing the Addendum ([BDS · Addendum](#bds-anexo)). The contributions required from the Sports World systems team —deliberately kept to a minimum— are detailed in the **[Contract · Annex One](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. It stands on its own.
 
 **Guiding principle.** The 8-week count runs from the delivery of 100% of the Annex One requirements; delays attributable to Sports World extend the timeline day for day (and trigger the stand-by of Clause Nine). For this reason the plan **front-loads** all dependencies to Week 1.
 
@@ -15,6 +15,8 @@ The project delivers four workstreams at once, executed by four coordinated team
 - **BES, the AI voice and text agent** — the conversational agent **integrated into the website (web channel)**, connected to the same club/class logic and the same lead capture as the site, which additionally sends 2 automated reminders via WhatsApp (**[Technical Strategy · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
 
 These four areas are interdependent: the site needs the content and images; the content needs the site structure; the images need the layouts; and BES requires the same logic the site uses to deliver the same answer through any channel. They run in parallel, with shared control points, under a single overall coordinator.
+
+**A fifth workstream, separate from the four above: Project B (Business Development System).** It is not part of the scope or the committed eight-week schedule —it has its **own cost and timeline**, set upon signing its Addendum (**[BDS · Addendum](#bds-anexo)**)— but it **reuses** the questionnaire, the middleware/CRM, and the internal console that Project A builds, so much of its work can only start once those components are operational. Its team, tasks, and dependencies are detailed in **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
 
 ## 2 · Team structure and governance model
 
@@ -44,6 +46,8 @@ The project is executed with four teams, each with a leader, all coordinated by 
 | Milestone approvals | A | C | C | C | C | R (decides) |
 
 The overall leader runs brief, recurring control points where the four leaders synchronize on the shared dependencies; the schedule in §3 sequences them in the correct order.
+
+> Once the Project B Addendum is signed, a **fifth team — BDS** joins, under the same overall leader. Its structure, tasks, and dependencies with these four teams are in **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
 
 ## 3 · The eight-week schedule
 
@@ -166,5 +170,46 @@ These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#c
 ## 9 · Assumptions and out of scope
 
 - **Core assumption:** Sports World **exposes its standard CRM API and the catalog data** (club status, coordinates, amenities, classes, schedules, rates, discounts/promotions) of Annex One; the custom integration is resolved by the **PROVIDER's middleware**. The 8-week count runs from the delivery of 100% of those requirements.
-- **Out of scope (except by amending agreement):** any page beyond the 148 (Annex Two I.1); operation of BES by **telephony** or by **voice on WhatsApp** (excluded); BES's conversational operation over **WhatsApp (text only)** belongs to the **Business Development System (Project B, separate Addendum)**, outside the scope of this project (Project A); media budget; and any service not listed in the Annexes.
+- **Out of scope for Project A (except by amending agreement):** any page beyond the 148 (Annex Two I.1); operation of BES by **telephony** or by **voice on WhatsApp** (excluded); BES's conversational operation over **WhatsApp (text only)**, the human operators, and the real-time routing layer belong to the **Business Development System (Project B)** —its own cost and schedule, **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)** and **[BDS · Addendum](#bds-anexo)**—; media budget; and any service not listed in the Annexes.
 - **Not guaranteed:** search positions, traffic volumes, or conversion rates: they depend on external factors (search engine algorithms, market). What is committed are the technical KPIs of §6.
+
+## 10 · Project B (BDS): Execution Framework
+
+Unlike Project A, **Project B (BDS)** does not have a committed week-by-week schedule here: its **delivery timeline is set upon signing the Addendum**, once the scope and requirements list are closed (**[BDS · Addendum · §5](#bds-anexo:5-contraprestacin-adicional)**). What is defined now is the **team, tasks, and dependencies**, so that work can start immediately once it is signed.
+
+### 10.1 · Team 5 — BDS
+
+| Workstream | Owner | Primary scope |
+|---|---|---|
+| Team 5 — BDS | BDS leader (coordinated by the overall leader) | WhatsApp Business API integration, "BES" over WhatsApp, operator console, real-time routing layer, and the BDS funnel. Functional detail in **[BDS · Technical Strategy](#bds-tecnica)**. |
+
+**Responsibility matrix (RACI) — BDS tasks.** R = executes · A = accountable · C = consulted · I = informed.
+
+| Deliverable | Overall leader | T5 BDS | T1 Web | T4 BES | Sports World |
+|---|---|---|---|---|---|
+| WhatsApp Business API integration (messaging, templates, multi-agent) | A | R | I | I | R (official number + templates) |
+| "BES" over WhatsApp (text only) | A | R | I | C (same knowledge base) | C (approves templates) |
+| Operator console (operator role on the existing console) | A | R | C (base console, Technical Strategy §11) | I | R (roster, schedules, and authorized personnel list) |
+| Real-time routing layer (queues, assignment, bounce, escalation) | A | R | I | I | C (business hours) |
+| BDS funnel and measurement (integrated into the dashboard) | A | R | C (base dashboard) | I | C (access) |
+| Scope approval and Addendum signature | A | C | I | I | R (decides) |
+
+### 10.2 · Dependencies with Project A
+
+The BDS does **not** rewrite the capture engine: it reuses the questionnaire and ideal experience, the middleware and the idempotent CRM write, and the internal console delivered by Team 1 — Web. In the §3 schedule, those components become operational between **Weeks 3 and 6** (CRM API integration and internal console); Team 5 can start integrating on top of them from that point on, without waiting for the site launch (Week 8).
+
+### 10.3 · Work sequence (by phase, not by week)
+
+1. **Preparation.** Sports World provides the official WhatsApp Business number and submits message templates for approval; the operator roster, their business hours, and the authorized personnel list are defined.
+2. **Integration.** The WhatsApp Business API is connected; the operator role is enabled on the internal console; the routing layer is built (human-first → "BES" backup → escalation).
+3. **Validation.** End-to-end tests across all three paths (human operator, "BES" over WhatsApp, walk-in on the console) against the real CRM, without duplicates; the BDS funnel visible on the dashboard.
+4. **Launch and stabilization.** BDS in operation; active monitoring; routing rules tuned with real volume and availability data.
+
+### 10.4 · Risks specific to the BDS
+
+| Risk | Prob. | Impact | Mitigation | Owner |
+|---|---|---|---|---|
+| Addendum not yet signed / scope not closed | Medium | High | Project B generates no obligation or cost until signature (**[BDS · Addendum](#bds-anexo)**); technical kickoff depends on that signature. | SW / Overall leader |
+| WhatsApp Business template approval delayed (owned by the messaging provider) | Medium | Medium | Submit templates for review as soon as the Addendum is signed, in parallel with technical integration. | T5 |
+| Staffing and training of human operators | Medium | Medium | Define roster, business hours, and authorized personnel list from the Preparation phase; "BES" covers coverage gaps while staffing is completed. | SW / T5 |
+| Dependency on Project A components (console, middleware) not ready in time | Low | Medium | Team 5 integrates once those components are operational (§10.2); it neither blocks nor is blocked by the site's launch schedule (§3). | Overall leader |

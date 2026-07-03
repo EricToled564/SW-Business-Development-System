@@ -79,7 +79,7 @@ const VALID_MARKERS = new Set(["ROI", "APORTACIONES:sistemas", "APORTACIONES:mar
 // Documentos que son la FUENTE DE REGISTRO de cifras financieras: sus montos
 // (contraprestación, IVA, escenarios de costo) se consideran trazables por
 // definición y se listan en el libro mayor, pero no disparan aviso de trazabilidad.
-const FINANCIAL_SOURCE_DOCS = new Set(["contrato"]);
+const FINANCIAL_SOURCE_DOCS = new Set(["contrato", "bds-anexo"]);
 
 // Siglas TÉCNICAS que, si se usan en algún documento, DEBEN estar en el glosario.
 // Lista curada a propósito: evita el ruido de palabras en mayúsculas del español,

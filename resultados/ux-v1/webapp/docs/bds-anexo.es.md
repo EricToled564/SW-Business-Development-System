@@ -32,7 +32,7 @@ El detalle funcional y técnico consta en los documentos del módulo BDS: **[Flu
 
 ## 5 · Contraprestación adicional
 
-- **Monto: [por definir].** Se pacta al suscribir este Addendum y **es adicional** a la contraprestación del Contrato (Proyecto A).
+- **Monto: USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**, por la implementación del alcance descrito en la sección 2. Es **adicional** a la contraprestación del Contrato (Proyecto A).
 - Podrá estructurarse como **pago único de implementación** más, en su caso, un **recurrente** por operación/mantenimiento del BDS —a definir con EL CLIENTE—.
 - **Plazo de entrega: [por definir]** al cierre del alcance y del listado de requerimientos.
 
