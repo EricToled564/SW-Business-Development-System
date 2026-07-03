@@ -33,6 +33,7 @@ const DOCS = [
   { src: SRC + "/academia-tecnica.es.md", kind: "md", title: "Academia SW — Estrategia Técnica", out: "24-academia-tecnica.es.pdf" },
   { src: SRC + "/academia-medicion.es.md", kind: "md", title: "Academia SW — Medición", out: "25-academia-medicion.es.pdf" },
   { src: SRC + "/academia-anexo.es.md", kind: "md", title: "Academia SW — Addendum contractual", out: "26-academia-anexo.es.pdf" },
+  { src: SRC + "/academia-produccion.es.md", kind: "md", title: "Academia SW — Producción del curso", out: "27-academia-produccion.es.pdf" },
   // NOTA: 'voice-agent-knowledge-base.html' quedó obsoleto (contenido previo a las
   // correcciones de esta sesión). Excluido del build; no se sube a la KB.
 ];

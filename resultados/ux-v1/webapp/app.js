@@ -83,6 +83,8 @@
       title: { es: "Academia · Contenido y taxonomía", en: "Academy · Content & Taxonomy" } },
     { id: "academia-fases", type: "doc", group: "academia", pdf: "23-academia-fases.es.pdf",
       title: { es: "Academia · Fases del programa", en: "Academy · Program Phases" } },
+    { id: "academia-produccion", type: "doc", group: "academia", pdf: "27-academia-produccion.es.pdf",
+      title: { es: "Academia · Producción del curso", en: "Academy · Course Production" } },
     { id: "academia-tecnica", type: "doc", group: "academia", pdf: "24-academia-tecnica.es.pdf",
       title: { es: "Academia · Estrategia Técnica", en: "Academy · Technical Strategy" } },
     { id: "academia-medicion", type: "doc", group: "academia", pdf: "25-academia-medicion.es.pdf",

@@ -13,7 +13,7 @@ Consolida, para los 200 asesores, dos tipos de evidencia:
 | **Fase 2 · Role-play con agente de voz** | Sesiones completadas, dificultad alcanzada, puntaje de readiness por sesión y tendencia | Agente de voz de role-play (**[Estrategia Técnica de la Academia · §2](#academia-tecnica)**) |
 | **Refuerzo post-certificación** | Cumplimiento de las micro-sesiones de día 7, 30 y 90, y variación del puntaje de readiness respecto a la certificación (retención del aprendizaje en el tiempo) | Motor de selección adaptativa (**[Estrategia Técnica de la Academia · §3](#academia-tecnica)**) |
 
-El dashboard permite a los líderes regionales ver, por asesor y por club, quién está listo para operar de forma autónoma y quién requiere refuerzo — reemplazando el criterio informal actual por evidencia consistente entre clubes y regiones.
+El dashboard permite a los líderes regionales ver, por asesor y por club, quién está listo para operar de forma autónoma y quién requiere refuerzo — reemplazando el criterio informal actual por evidencia consistente entre clubes y regiones. Se agrega en **tres niveles**: por club, por ciudad y a nivel nacional (detalle en **[Estrategia Técnica de la Academia · §7](#academia-tecnica)**), para que la dirección comercial compare el nivel de habilitación entre clubes, ciudades y regiones, no solo entre asesores individuales.
 
 ## Evaluación en cuatro niveles
 

@@ -29,7 +29,7 @@ El asesor avanza por una secuencia fija de módulos e-learning de **microaprendi
 | **Nivel 3 · Retención y contexto** | 2 módulos | Seguimiento de hito y reactivación · Alfabetización digital de la app |
 | **Nivel 4 · Adaptación por club** | 1 módulo (variantes) | Capa de adaptación por segmento de club — el asesor recibe la variante correspondiente a su club |
 
-Cada módulo incluye el contenido teórico, ejemplos y citas reales de campo (anonimizadas o atribuidas según se acuerde con Sports World), y una evaluación de acreditación breve. El **dashboard de readiness** (ver **[Medición](#academia-medicion)**) muestra, por asesor y por club, el avance a través de los cuatro niveles.
+Cada módulo incluye el contenido teórico, ejemplos y citas reales de campo (anonimizadas o atribuidas según se acuerde con Sports World), y una evaluación de acreditación breve. La estructura exacta de un módulo —los seis bloques que lo componen y cómo se logra que sea interactivo sin desarrollo a la medida por módulo— está en **[Producción del curso](#academia-produccion)**. El **dashboard de readiness** (ver **[Medición](#academia-medicion)**) muestra, por asesor y por club, el avance a través de los cuatro niveles.
 
 ### Los dos momentos de discovery (herramienta maestra de clasificación)
 
@@ -44,11 +44,11 @@ Al acreditar la Fase 1, el asesor practica la conversación de venta completa co
 
 ### El ciclo de práctica deliberada
 
-1. **Selección adaptativa del escenario.** El sistema no asigna escenarios al azar ni idénticos para todos: cruza el **historial de readiness** del asesor (qué componente domina, en cuál falla con más frecuencia) para priorizar el tipo de objeción y perfil de cliente que ese asesor específico necesita practicar más.
+1. **Selección adaptativa y aleatoria del personaje.** El sistema no asigna un guion fijo ni idéntico para todos: cruza el **historial de readiness** del asesor (qué componente domina, en cuál falla con más frecuencia) para acotar el universo de personajes a sus áreas de oportunidad, y **dentro de ese subconjunto elige uno al azar** — el asesor practica su debilidad real, sin poder memorizar un guion. Detalle técnico en **[Estrategia Técnica de la Academia · §3–4](#academia-tecnica)**.
 2. **La conversación.** El agente de voz sostiene la conversación de venta de principio a fin: apertura, clasificación del objetivo (aplicando la herramienta maestra), manejo de la objeción de precio con el argumento de valor del ecosistema, invitación a la hospitalidad consultiva y cierre.
 3. **Evaluación específica, no binaria.** El agente no solo califica "aprobado/reprobado": identifica **en qué momento exacto** de la conversación el asesor perdió el hilo —clasificó mal el objetivo, no articuló el comparativo competitivo local, omitió la invitación a hospitalidad consultiva— contra la rúbrica de los siete componentes del programa.
-4. **Retroalimentación inmediata y reintento dirigido.** El asesor recibe la retroalimentación al finalizar la sesión (no días después) y repite el mismo tipo de escenario hasta demostrar dominio, antes de que el sistema le asigne el siguiente nivel de dificultad.
-5. **Puntaje de readiness.** Cada sesión completada alimenta el **dashboard de readiness** del asesor (ver **[Medición](#academia-medicion)**).
+4. **Retroalimentación inmediata y reporte.** Al finalizar la sesión (no días después), el asesor recibe dos entregables: **retroalimentación en tiempo real** sobre dónde perdió el hilo, y un **reporte de la sesión** con su puntaje y su evolución acumulada. Repite el mismo tipo de escenario hasta demostrar dominio, antes de que el sistema le asigne el siguiente nivel de dificultad.
+5. **Puntaje de readiness.** Cada sesión completada alimenta el **dashboard de readiness** del asesor, agregado también por club, ciudad y a nivel nacional (ver **[Medición](#academia-medicion)**).
 
 **Progresión de dificultad.** Los escenarios avanzan de objeciones simples a combinadas (por ejemplo, precio **y** competencia local en la misma conversación), y de un solo objetivo del cliente a casos ambiguos que requieren que el asesor clasifique correctamente antes de argumentar. La dificultad de partida y el ritmo de avance se ajustan por asesor, no son iguales para todo el equipo.
 
@@ -63,6 +63,8 @@ La certificación en la Fase 2 **no es el final del programa**: sin repaso, el d
 | **Día 90** | Alineado con la llamada de hito a noventa días (componente 5): repaso de seguimiento y reactivación, justo cuando el asesor lo aplica en campo con sus primeros socios de ese cohorte. |
 
 Este calendario de refuerzo es el mismo mecanismo, aplicado al asesor, que el componente 5 aplica al socio: **ningún aprendizaje ni ninguna relación se sostiene sin un sistema de seguimiento programado.**
+
+**Más allá del día 90:** una vez certificado, el asesor entra a una **cadencia de mantenimiento continua** —no solo los tres hitos de refuerzo—, con una sesión breve por semana para sostener el dominio en el tiempo. La cadencia propuesta y su costo asociado están en **[Estrategia Técnica de la Academia · §6 y §8](#academia-tecnica)**.
 
 ## Qué se reutiliza (sin duplicar)
 

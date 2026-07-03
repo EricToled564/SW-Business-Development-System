@@ -35,6 +35,7 @@ Ambas fases comparten la misma taxonomía y el mismo criterio de evaluación: lo
 |---|---|
 | [**Contenido y taxonomía**](#academia-contenido) | La taxonomía maestra del cliente, los componentes del programa validados en campo y la segmentación por tipo de club |
 | [**Fases del programa**](#academia-fases) | Fase 1 (módulos interactivos por niveles) y Fase 2 (role-play con agente de voz) |
+| [**Producción del curso**](#academia-produccion) | Anatomía de un módulo, mecánicas de interactividad reutilizables y producción 100% con IA sin costo por módulo |
 | [**Estrategia Técnica**](#academia-tecnica) | La plataforma de módulos interactivos y la arquitectura del agente de voz de role-play (reutiliza el stack de BES) |
 | [**Medición**](#academia-medicion) | Dashboard de readiness, calibración con el CRM y KPIs del programa |
 | [**Addendum contractual**](#academia-anexo) | Alcance, entregables y contraprestación adicional |

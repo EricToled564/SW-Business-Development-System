@@ -49,9 +49,10 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | C1 | [**Academia · Resumen Ejecutivo**](#academia-resumen) | El problema (habilitación no estandarizada) y la solución en dos fases, validadas con entrevistas de campo. | Dirección, RH, Comercial |
 | C2 | [**Academia · Contenido y taxonomía**](#academia-contenido) | Taxonomía maestra del cliente, los siete componentes del programa y la segmentación por tipo de club. | Comercial, Marketing |
 | C3 | [**Academia · Fases del programa**](#academia-fases) | Principios de diseño instruccional, Fase 1 (módulos por niveles) y Fase 2 (role-play con agente de voz + refuerzo espaciado). | Comercial, RH |
-| C4 | [**Academia · Estrategia Técnica**](#academia-tecnica) | Plataforma de módulos, agente de voz de role-play y motor de selección adaptativa (reutiliza el stack de BES). | Sistemas / TI |
-| C5 | [**Academia · Medición**](#academia-medicion) | Dashboard de readiness, evaluación en cuatro niveles y calibración con el CRM. | Dirección, Comercial |
-| C6 | [**Academia · Addendum contractual**](#academia-anexo) | Alcance, entregables y contraprestación adicional del Proyecto C. | Dirección, Legal |
+| C4 | [**Academia · Producción del curso**](#academia-produccion) | Anatomía de un módulo, mecánicas de interactividad reutilizables y producción 100% con IA sin costo por módulo. | Marketing, Comercial, TI |
+| C5 | [**Academia · Estrategia Técnica**](#academia-tecnica) | Separación total de la plataforma y la web, agente de voz de role-play, motor de aprendizaje continuo, dashboard club/ciudad/nacional y costo de las plataformas de IA. | Sistemas / TI |
+| C6 | [**Academia · Medición**](#academia-medicion) | Dashboard de readiness, evaluación en cuatro niveles y calibración con el CRM. | Dirección, Comercial |
+| C7 | [**Academia · Addendum contractual**](#academia-anexo) | Alcance, entregables y contraprestación adicional del Proyecto C. | Dirección, Legal |
 
 ## Localizador rápido (¿dónde está cada tema?)
 
@@ -86,5 +87,8 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | **Taxonomía maestra del cliente** (objetivos y dimensiones de decisión) | [Academia · Contenido y taxonomía](#academia-contenido) |
 | **Principios de diseño instruccional** (microlearning, práctica deliberada, refuerzo espaciado) | [Academia · Fases del programa](#academia-fases:principios-de-diseo-instruccional) |
 | **Agente de voz de role-play y motor de selección adaptativa** | [Academia · Estrategia Técnica](#academia-tecnica) |
+| **Estructura del módulo, interactividad y producción con IA** | [Academia · Producción del curso](#academia-produccion) |
+| **Separación de la plataforma de la Academia y el servidor del sitio** | [Academia · Estrategia Técnica · §1](#academia-tecnica:1-separacin-total-de-la-plataforma-de-la-academia-y-el-sitio-web) |
+| **Costo de las plataformas de IA para Sports World** (BES y Academia) | [Estrategia Técnica del sitio · §5](#technical:5-bes-el-agente-de-voz-y-texto) · [Contrato · Cláusula Sexta Bis](#contrato:clusulas) · [Academia · Estrategia Técnica · §8](#academia-tecnica) |
 | **Dashboard de readiness y evaluación en cuatro niveles** | [Academia · Medición](#academia-medicion:evaluacin-en-cuatro-niveles) |
 | Definición de términos | [Glosario](#glosario) |
