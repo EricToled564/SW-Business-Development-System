@@ -8,7 +8,7 @@
 La Academia **no construye un motor conversacional nuevo**: reutiliza la arquitectura ya definida para BES en el Proyecto A.
 
 - **Motor conversacional (ASR + razonamiento + TTS + orquestación)** — **[Estrategia Técnica del sitio · §5](#technical:5-bes-el-agente-de-voz-y-texto)**.
-- **Motor de cuestionario** (base del principio de "dos momentos de discovery") — **[Arquitectura de Experiencia · §2](#experience:2-el-cuestionario-como-nica-fuente-de-personalizacin)**.
+- **Motor de cuestionario** (base del principio de los "dos momentos para descubrir el objetivo del cliente") — **[Arquitectura de Experiencia · §2](#experience:2-el-cuestionario-como-nica-fuente-de-personalizacin)**.
 
 Lo nuevo de la Academia son las piezas descritas a continuación.
 

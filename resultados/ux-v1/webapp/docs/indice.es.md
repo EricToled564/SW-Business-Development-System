@@ -48,7 +48,7 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 |---|---|---|---|
 | C1 | [**Academia · Resumen Ejecutivo**](#academia-resumen) | Por qué existe el proyecto, objetivos esperados, cómo se ejecuta (dos fases + sistema operativo), medición del éxito y riesgos con mitigación. | Dirección, RH, Comercial |
 | C2 | [**Academia · Contenido y taxonomía**](#academia-contenido) | Taxonomía maestra del cliente, los siete componentes del programa y la segmentación por tipo de club. | Comercial, Marketing |
-| C3 | [**Academia · Fases del programa**](#academia-fases) | Principios de diseño instruccional, Fase 1 (módulos por niveles) y Fase 2 (role-play con agente de voz + refuerzo espaciado). | Comercial, RH |
+| C3 | [**Academia · Fases del programa**](#academia-fases) | El recorrido del asesor en cuatro etapas: aprender (lecciones por niveles), certificarse (role-play con agente de voz), reforzar (repasos a 7/30/90 días) y mantener (práctica semanal). | Comercial, RH |
 | C4 | [**Academia · Producción del curso**](#academia-produccion) | Anatomía de un módulo, mecánicas de interactividad reutilizables y producción 100% con IA sin costo por módulo. | Marketing, Comercial, TI |
 | C5 | [**Academia · Estrategia Técnica**](#academia-tecnica) | Separación total de la plataforma y la web, agente de voz de role-play, motor de aprendizaje continuo, dashboard club/ciudad/nacional y costo de las plataformas de IA. | Sistemas / TI |
 | C6 | [**Academia · Medición**](#academia-medicion) | Dashboard de readiness, evaluación en cuatro niveles, catálogo de KPIs por familia y calibración con el CRM. | Dirección, Comercial |
@@ -85,7 +85,7 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | **Separación de proyectos A/B/C y costo adicional** | [Contrato · Cláusula Primera Bis](#contrato:clusulas) · [BDS · Addendum](#bds-anexo) · [Academia · Addendum](#academia-anexo) |
 | **Academia SW · capacitación y práctica de asesores** (Proyecto C) | [Academia · Resumen](#academia-resumen) · [Contenido y taxonomía](#academia-contenido) · [Fases](#academia-fases) |
 | **Taxonomía maestra del cliente** (objetivos y dimensiones de decisión) | [Academia · Contenido y taxonomía](#academia-contenido) |
-| **Principios de diseño instruccional** (microlearning, práctica deliberada, refuerzo espaciado) | [Academia · Fases del programa](#academia-fases:principios-de-diseo-instruccional) |
+| **Principios de diseño instruccional** (lecciones cortas, práctica hasta dominar, repasos programados) | [Academia · Fases del programa](#academia-fases:principios-de-diseo-instruccional) |
 | **Agente de voz de role-play y motor de selección adaptativa** | [Academia · Estrategia Técnica](#academia-tecnica) |
 | **Estructura del módulo, interactividad y producción con IA** | [Academia · Producción del curso](#academia-produccion) |
 | **Separación de la plataforma de la Academia y el servidor del sitio** | [Academia · Estrategia Técnica · §1](#academia-tecnica:1-separacin-total-de-la-plataforma-de-la-academia-y-el-sitio-web) |
