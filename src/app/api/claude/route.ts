@@ -5,7 +5,7 @@
 export const dynamic = "force-dynamic";
 
 const ALLOWED_ORIGINS = [
-  "https://erictoled.github.io", // GitHub Pages (demo en producción)
+  "https://erictoled564.github.io", // GitHub Pages (demo en producción, repo actual)
   "http://localhost:8080",
   "http://127.0.0.1:8080",
 ];

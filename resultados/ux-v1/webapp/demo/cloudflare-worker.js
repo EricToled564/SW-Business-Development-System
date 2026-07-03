@@ -15,7 +15,7 @@
 //   wrangler secret put ANTHROPIC_API_KEY   # pega la key cuando lo pida
 
 const ALLOWED_ORIGINS = [
-  "https://erictoled.github.io",   // GitHub Pages (producción)
+  "https://erictoled564.github.io", // GitHub Pages (producción, repo actual)
   "http://localhost:8080",          // desarrollo local
   "http://127.0.0.1:8080",
 ];
