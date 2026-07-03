@@ -11,7 +11,18 @@ Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación di
 | **Estabilización posterior** | 2 a 4 semanas |
 | **Documento** | Resumen Ejecutivo · Junio 2026 · Confidencial |
 
-## 1 · El punto de partida
+## El sistema completo: captación multicanal en tiempo real
+
+Sports World necesita atender al prospecto en **cualquier canal** donde muestre interés. El sistema completo son dos proyectos complementarios, que comparten el mismo cuestionario, la misma experiencia ideal y la misma escritura al CRM:
+
+- **Proyecto A · Rediseño Web (este documento).** La plataforma central: el sitio de 148 páginas rastreable por Google, el cuestionario de experiencia ideal, el agente BES por voz y texto en el sitio, la integración con el CRM vía middleware y el funnel/dashboard de medición. Es la base técnica que reutilizan los demás canales.
+- **Proyecto B · Business Development System (alcance y costo aparte).** Extiende esa misma base a **WhatsApp**: leads de campañas atendidos por **operadores humanos** en tiempo real, con **BES por WhatsApp (solo texto)** de respaldo 24/7, más la **consola interna** para asesores y walk-ins. Ver **[BDS · Resumen Ejecutivo](#bds-resumen)**.
+
+El resto de este documento es el **capítulo central del proyecto — el Rediseño Web (Proyecto A)** — que hace posible todo lo demás.
+
+## Capítulo central · Rediseño Web (Proyecto A)
+
+### 1 · El punto de partida
 
 Sports World es una marca sólida que hoy resulta **invisible donde el cliente la busca**. La auditoría inicial (Semrush, marzo 2026; 6,900 keywords unbranded analizadas) lo resume así: el sitio destaca en los términos de marca —posiciones 2–6— y desaparece en todo lo demás. Estos son los números que el nuevo sitio debe revertir desde el día uno.
 
@@ -24,7 +35,7 @@ Sports World es una marca sólida que hoy resulta **invisible donde el cliente l
 | **31.1%** | Cobertura de keywords unbranded (2,148 de 6,900). |
 | **95.23%** | Proporción del tráfico concentrada en apenas 2 URLs (home + /clubes). |
 
-## 2 · Los objetivos del rediseño
+### 2 · Los objetivos del rediseño
 
 Cinco metas que el nuevo sitio debe cumplir desde el día uno.
 
@@ -34,7 +45,7 @@ Cinco metas que el nuevo sitio debe cumplir desde el día uno.
 - **Agendamiento digital sin fricción.** De la búsqueda a la visita confirmada en pocos pasos, con BES como asistente que califica, agenda y prepara al asesor.
 - **Control del negocio.** Un panel de contenido no-code que permite a Sports World actualizar horarios, precios, amenidades y contenido sin depender de la agencia ni tocar código.
 
-## 3 · La nueva arquitectura
+### 3 · La nueva arquitectura
 
 148 páginas organizadas en once niveles jerárquicos, con enfoque mobile-first. Cada cifra representa páginas que hoy no existen o presentan deficiencias, y su ejecución solo es viable con producción asistida por inteligencia artificial sobre plantillas previamente aprobadas.
 
@@ -52,7 +63,7 @@ Cinco metas que el nuevo sitio debe cumplir desde el día uno.
 | 20 | Blog inicial | Contenido de apoyo para captura semántica. |
 | **148** | **Total** | |
 
-## 4 · Cómo lo vive el usuario
+### 4 · Cómo lo vive el usuario
 
 La arquitectura está diseñada para que cada recorrido termine en cita agendada, no en abandono. Un prospecto que busca una solución concreta aterriza en la página correcta, responde un cuestionario breve que personaliza su recorrido, recibe una recomendación con el club y las clases más adecuadas para su perfil, y agenda su visita, todo en una sola sesión: **bienvenida → cuestionario → resultado → captura de contacto → agendado → briefing para el asesor**.
 
@@ -62,11 +73,11 @@ Este recorrido resuelve tres obstáculos concretos del sitio actual:
 - **Las amenidades y disciplinas sin cobertura**, invisibles para quien busca por actividad.
 - **La latencia geográfica**: cada clic adicional para localizar el club cercano cuesta entre 20% y 40% de retención.
 
-## 5 · BES · el asistente digital
+### 5 · BES · el asistente digital
 
 BES no vende: **agenda, califica e informa**. Resuelve preguntas frecuentes sobre horarios, precios, ubicaciones y amenidades con los datos reales del sistema —los mismos que muestra el sitio—, opera **por voz y texto**: en el **sitio (Proyecto A)** por el **canal web (voz y texto)** y, como parte del **Business Development System (Proyecto B, Anexo aparte)**, también por **WhatsApp (solo texto)**. Envía **2 recordatorios automatizados por WhatsApp** (24 h y 2 h antes de la visita), transfiere a un agente humano cuando el usuario lo solicita, y siempre entrega al asesor del club un dossier del prospecto por correo antes de la cita. No opera por telefonía ni por voz en WhatsApp. Calidad objetivo: voz natural en español de México y tiempo de respuesta por debajo de los 900 ms para mantener una conversación fluida.
 
-## 6 · Lo que cambia para el negocio
+### 6 · Lo que cambia para el negocio
 
 La calidad técnica importa porque se traduce en resultados comerciales. Cuatro vectores medibles:
 
@@ -75,7 +86,7 @@ La calidad técnica importa porque se traduce en resultados comerciales. Cuatro 
 - **Inclusión sin fricción.** El sitio cumple los estándares internacionales de accesibilidad WCAG 2.2 AA, lo que amplía el mercado potencial y protege legalmente la plataforma.
 - **El equipo de Sports World mantiene el control.** El panel no-code permite actualizar contenido sin tocar código ni depender de la agencia.
 
-## 7 · Las ocho semanas
+### 7 · Las ocho semanas
 
 Del kickoff al go-live en ocho semanas, con cuatro equipos trabajando en paralelo —web, SEO/contenido, contenido visual a escala y el agente BES— y puntos de control firmados por Sports World. No se avanza sin cerrar previamente cada gate.
 
@@ -90,7 +101,7 @@ Del kickoff al go-live en ocho semanas, con cuatro equipos trabajando en paralel
 
 La verificación de Google Business es el único elemento de ruta crítica y se inicia en la Semana 1 precisamente porque depende de tiempos de Google; ningún otro trabajo queda bloqueado por ella.
 
-## 8 · KPIs y próximos pasos
+### 8 · KPIs y próximos pasos
 
 Nos comprometemos con los **KPIs técnicos de corrección** —que dependen solo de nosotros y son 100% verificables: 49+ páginas de club rastreables (de 0), 116 enlaces rotos → 0, 20 URLs con backslash → 0, schema JSON-LD por club (de 0). Señalamos como **objetivos comerciales alcanzables —no comprometidos**, porque dependen de Google y del embudo interno de Sports World: cobertura unbranded 31.1% → 55–65% (benchmark David Lloyd Clubs: 31% → 74%) y tráfico mensual promedio 80,000 → 160,000. El detalle, junto con la **calculadora de ROI** interactiva, vive en el Contrato › Anexo Dos, Sección IV (KPIs y calculadora de ROI).
 

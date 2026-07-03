@@ -3,7 +3,7 @@
 const fs = require("fs");
 const PDFDocument = require("pdfkit");
 
-const BASE = "/home/user/Final-Upgrade-Webpage/resultados/ux-v1";
+const BASE = require("path").resolve(__dirname, "..");
 const SRC = BASE + "/webapp/docs";
 const KB = BASE + "/kb";
 

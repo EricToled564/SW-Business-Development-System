@@ -25,6 +25,8 @@ El **BDS** reemplaza el "formulario + llamada tardía" por un **engagement inmed
 
 En los cuatro caminos, el común denominador es el mismo: **un cuestionario → una experiencia ideal → una escritura idempotente al CRM**. El BDS **no crea un flujo nuevo**: extiende el que ya existe a **WhatsApp, operadores humanos y tiempo real**.
 
+El BDS se apoya en tres piezas, ninguna nueva: **aplicar el cuestionario**, **construir la experiencia ideal** del prospecto y, con ese mismo resultado, **entregar al asesor un documento personalizado del comprador potencial** —su perfil, sus intereses y objetivos, con sugerencias concretas de cómo conducir la venta en la visita—. Es el mismo **brief del asesor** ya definido en **[Arquitectura de Experiencia · §1.2, fase `briefing`](#experience:12-las-siete-fases)**: el BDS lo entrega sin importar si el cuestionario lo aplicó un operador humano, "BES" por WhatsApp o el asesor mismo en la consola.
+
 ## Por qué funciona
 
 - **Velocidad:** el contacto ocurre en **segundos/minutos**, no en horas ni días — el factor que más mueve la conversión.

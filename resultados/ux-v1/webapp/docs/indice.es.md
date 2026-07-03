@@ -3,11 +3,13 @@
 
 Punto de entrada al conjunto documental. Cada documento es **autónomo** (puede leerse de forma independiente); este índice indica qué contiene cada uno, a quién está dirigido y dónde consultar cada tema.
 
-## Documentos del proyecto
+La documentación se organiza en **dos proyectos**, cada uno con su propio grupo de documentos: **Proyecto A · Rediseño Web** (la plataforma central: sitio, cuestionario, BES, CRM, funnel) y **Proyecto B · Business Development System** (extiende la captación a WhatsApp — alcance y costo aparte).
+
+## Proyecto A · Rediseño Web
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
-| 1 | [**Resumen Ejecutivo**](#resumen) | Visión de conjunto: problema, objetivos, arquitectura, BES, negocio, las 8 semanas y KPIs. | Dirección, negocio |
+| 1 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo (sitio + BDS), con capítulo central dedicado al rediseño web: problema, objetivos, arquitectura, BES, negocio, las 8 semanas y KPIs. | Dirección, negocio |
 | 2 | [**Arquitectura de Experiencia (UX)**](#experience) | El flujo de experiencia ideal y el **mapa del sitio** (las 148 páginas): navegación, fases, cuestionario, menús dinámicos, reglas de negocio, datos y arquitectura de información. | Producto, UX, desarrollo, SEO |
 | 3 | [**Estrategia Técnica**](#technical) | Stack, agente BES, **integración por middleware** y datos del CRM, migración, seguridad, método y calidad, **funnel de resultados y dashboard (§10)**, **captación unificada de leads (§11)** y los **estándares del API del cliente (§12)**. | Sistemas / TI |
 | 4 | [**Plan de Ejecución**](#execution) | Estructura del equipo, gobierno, cronograma de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios. | Dirección, TI, PMO |
@@ -23,7 +25,7 @@ Punto de entrada al conjunto documental. Cada documento es **autónomo** (puede 
 | 12 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
 | 13 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del flujo de experiencia ideal. | Negocio, dirección |
 
-### Business Development System (BDS · Proyecto B — alcance y costo aparte)
+## Proyecto B · Business Development System (BDS — alcance y costo aparte)
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
@@ -58,6 +60,7 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | Datos personales y seguridad | [Seguridad del sitio](#seguridad:proteccin-de-los-datos-personales-minimizacin-y-no-retencin) · [Contrato · Cláusulas (Sexta Ter y Décima Primera)](#contrato:clusulas) |
 | Diagnóstico SEO y línea base | [Auditoría inicial · El Gigante Invisible](#auditoria:el-gigante-invisible-diagnstico-de-captura-de-demanda-digital) |
 | **BDS · captación multicanal en tiempo real** (Proyecto B) | [BDS · Resumen](#bds-resumen) · [Flujo](#bds-flujo) · [Canales y SLA](#bds-canales) · [Técnica](#bds-tecnica) |
+| **Brief del asesor** (documento personalizado del comprador potencial, con sugerencias de venta) | [Arquitectura de Experiencia · §1.2, fase `briefing`](#experience:12-las-siete-fases) · [BDS · Resumen](#bds-resumen) · [BDS · Flujo](#bds-flujo) |
 | **Speed-to-lead / tiempo al primer contacto** | [BDS · Medición y funnel](#bds-medicion) |
 | **BES por WhatsApp (solo texto)** | [BDS · Estrategia Técnica](#bds-tecnica) · [Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto) |
 | **Separación de proyectos A/B y costo adicional** | [Contrato · Cláusula Primera Bis](#contrato:clusulas) · [BDS · Addendum](#bds-anexo) |

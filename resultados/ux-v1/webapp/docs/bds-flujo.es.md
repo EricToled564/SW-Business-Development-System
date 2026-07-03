@@ -17,10 +17,10 @@ Un lead puede entrar al BDS por cualquiera de estos orígenes, y **todos converg
 1. **Entrada.** El lead llega por uno de los cuatro orígenes.
 2. **Enrutamiento en tiempo real.** El sistema decide **quién atiende** según disponibilidad y horario (árbol de decisión más abajo).
 3. **Cuestionario.** El operador humano, "BES" o el asesor **aplican el mismo cuestionario** de experiencia ideal.
-4. **Experiencia ideal.** Se genera la recomendación (club, clases, plan) con los datos reales del CRM (vía el middleware).
+4. **Experiencia ideal.** Se genera la recomendación (club, clases, plan) con los datos reales del CRM (vía el middleware) y el **brief del asesor** —documento personalizado del comprador potencial, con sugerencias de venta— por la misma fase `briefing` ya documentada en **[Arquitectura de Experiencia · §1.2](#experience:12-las-siete-fases)**.
 5. **Agenda.** Se **agenda la visita guiada en el momento** (día y hora dentro del horario de atención del club).
 6. **Escritura al CRM.** El lead cualificado —perfil, club, visita— se registra en el CRM por la **misma escritura idempotente** que usa el sitio (sin duplicados).
-7. **Confirmación y recordatorios.** El prospecto recibe la confirmación; se disparan los **2 recordatorios por WhatsApp** (24 h y 2 h antes).
+7. **Confirmación y recordatorios.** El prospecto recibe la confirmación; se disparan los **2 recordatorios por WhatsApp** (24 h y 2 h antes); el asesor asignado recibe el **brief del comprador potencial** antes de la visita.
 8. **Medición.** Cada transición alimenta el **funnel del BDS** (ver [Medición](#bds-medicion)).
 
 ## El árbol de enrutamiento (human-first con respaldo de "BES")

@@ -8,6 +8,7 @@
 El BDS **no reescribe** el motor de captación: consume los mismos componentes del Proyecto A.
 
 - **Motor de cuestionario y experiencia ideal** — **[Arquitectura de Experiencia · §2](#experience:2-el-cuestionario-como-nica-fuente-de-personalizacin)**.
+- **Brief del asesor** (documento personalizado del comprador potencial con sugerencias de venta) — misma fase `briefing`, **[Arquitectura de Experiencia · §1.2](#experience:12-las-siete-fases)**.
 - **Middleware y escritura idempotente al CRM** — **[Estrategia Técnica · §2](#technical:2-los-cuatro-datos-y-las-integraciones-con-sports-world)**.
 - **Consola interna de captación** — **[Estrategia Técnica · §11](#technical:11-captacin-unificada-de-leads-sitio-bes-y-consola-interna)**.
 
