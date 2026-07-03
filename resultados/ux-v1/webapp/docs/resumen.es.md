@@ -64,7 +64,7 @@ Este recorrido resuelve tres obstáculos concretos del sitio actual:
 
 ## 5 · BES · el asistente digital
 
-BES no vende: **agenda, califica e informa**. Resuelve preguntas frecuentes sobre horarios, precios, ubicaciones y amenidades con los datos reales del sistema —los mismos que muestra el sitio—, opera **por voz y texto dentro del sitio web (canal web)**, envía **2 recordatorios automatizados por WhatsApp** (24 h y 2 h antes de la visita), transfiere a un agente humano cuando el usuario lo solicita, y siempre entrega al asesor del club un dossier del prospecto por correo antes de la cita. No opera por teléfono ni como chat conversacional de WhatsApp. Calidad objetivo: voz natural en español de México y tiempo de respuesta por debajo de los 900 ms para mantener una conversación fluida.
+BES no vende: **agenda, califica e informa**. Resuelve preguntas frecuentes sobre horarios, precios, ubicaciones y amenidades con los datos reales del sistema —los mismos que muestra el sitio—, opera **por voz y texto**: en el **sitio (Proyecto A)** por el **canal web (voz y texto)** y, como parte del **Business Development System (Proyecto B, Anexo aparte)**, también por **WhatsApp (solo texto)**. Envía **2 recordatorios automatizados por WhatsApp** (24 h y 2 h antes de la visita), transfiere a un agente humano cuando el usuario lo solicita, y siempre entrega al asesor del club un dossier del prospecto por correo antes de la cita. No opera por telefonía ni por voz en WhatsApp. Calidad objetivo: voz natural en español de México y tiempo de respuesta por debajo de los 900 ms para mantener una conversación fluida.
 
 ## 6 · Lo que cambia para el negocio
 

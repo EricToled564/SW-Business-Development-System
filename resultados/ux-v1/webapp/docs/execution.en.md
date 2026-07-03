@@ -166,5 +166,5 @@ These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#c
 ## 9 · Assumptions and out of scope
 
 - **Core assumption:** Sports World **exposes its standard CRM API and the catalog data** (club status, coordinates, amenities, classes, schedules, rates, discounts/promotions) of Annex One; the custom integration is resolved by the **PROVIDER's middleware**. The 8-week count runs from the delivery of 100% of those requirements.
-- **Out of scope (except by amending agreement):** any page beyond the 148 (Annex Two I.1); operation of BES by telephony or as a WhatsApp conversational chat (its operation is limited to the web channel; see Technical Strategy §5); media budget; and any service not listed in the Annexes.
+- **Out of scope (except by amending agreement):** any page beyond the 148 (Annex Two I.1); operation of BES by **telephony** or by **voice on WhatsApp** (excluded); BES's conversational operation over **WhatsApp (text only)** belongs to the **Business Development System (Project B, separate Addendum)**, outside the scope of this project (Project A); media budget; and any service not listed in the Annexes.
 - **Not guaranteed:** search positions, traffic volumes, or conversion rates: they depend on external factors (search engine algorithms, market). What is committed are the technical KPIs of §6.
