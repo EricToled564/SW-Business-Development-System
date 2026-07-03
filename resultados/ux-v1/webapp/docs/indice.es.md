@@ -40,7 +40,7 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | B3 | [**BDS · Canales y enrutamiento**](#bds-canales) | Reglas human-first, respaldo con BES, horarios y SLA de contacto. | Operación, Sistemas |
 | B4 | [**BDS · Estrategia Técnica**](#bds-tecnica) | WhatsApp Business API, BES por WhatsApp (texto), consola de operadores. | Sistemas / TI |
 | B5 | [**BDS · Medición y funnel**](#bds-medicion) | Speed-to-lead por canal y operador, hasta nueva membresía. | Dirección, Sistemas |
-| B6 | [**BDS · Addendum contractual**](#bds-anexo) | Alcance, entregables y contraprestación adicional del Proyecto B. | Dirección, Legal |
+| B6 | [**BDS · Addendum contractual**](#bds-anexo) | Alcance, entregables y contraprestación adicional del Proyecto B (USD $4,850.00 más IVA). | Dirección, Legal |
 
 ## Proyecto C · Academia Sports World (exclusivos, alcance y costo aparte)
 
@@ -52,7 +52,7 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | C4 | [**Academia · Producción del curso**](#academia-produccion) | Anatomía de un módulo, mecánicas de interactividad reutilizables y producción 100% con IA sin costo por módulo. | Marketing, Comercial, TI |
 | C5 | [**Academia · Estrategia Técnica**](#academia-tecnica) | Separación total de la plataforma y la web, agente de voz de role-play, motor de aprendizaje continuo, dashboard club/ciudad/nacional y costo de las plataformas de IA. | Sistemas / TI |
 | C6 | [**Academia · Medición**](#academia-medicion) | Dashboard de readiness, evaluación en cuatro niveles, catálogo de KPIs por familia y calibración con el CRM. | Dirección, Comercial |
-| C7 | [**Academia · Addendum contractual**](#academia-anexo) | Alcance, entregables y contraprestación adicional del Proyecto C. | Dirección, Legal |
+| C7 | [**Academia · Addendum contractual**](#academia-anexo) | Alcance, entregables, contraprestación adicional ($850,000.00 MXN más IVA) y plazo de 10 semanas del Proyecto C. | Dirección, Legal |
 
 ## Localizador rápido (¿dónde está cada tema?)
 

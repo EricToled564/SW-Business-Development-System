@@ -156,10 +156,10 @@ El **dashboard de readiness** consolida, para los 200 asesores, el avance de mó
 
 ### 16 · Lo comercial
 
-La Academia es un **alcance independiente**: su contratación no modifica el Proyecto A ni el Proyecto B. La contraprestación adicional está **[por definir]**, se pacta en el **[Addendum de la Academia](#academia-anexo)**. En tanto no se suscriba dicho Addendum, el Proyecto C no genera obligación ni costo para ninguna de las Partes.
+La Academia es un **alcance independiente**: su contratación no modifica el Proyecto A ni el Proyecto B. La contraprestación adicional es de **$850,000.00 MXN más IVA**, con un **plazo de desarrollo y entrega de 10 semanas** a partir de la firma del **[Addendum de la Academia](#academia-anexo)** y del cierre de la validación de la taxonomía y los requerimientos. En tanto no se suscriba dicho Addendum, el Proyecto C no genera obligación ni costo para ninguna de las Partes.
 
 ## Próximo paso
 
 **Proyecto A:** aprobar esta propuesta, cerrar el kickoff con la firma del checklist de dependencias y arrancar las ocho semanas. A partir de ahí, el calendario corre.
 **Proyecto B (BDS):** cerrar el alcance y el listado de requerimientos y suscribir el Addendum; a partir de la firma, el Equipo 5 (BDS) arranca según lo descrito en el **[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
-**Proyecto C (Academia):** validar con Sports World el mapeo de la taxonomía del cuestionario a los siete componentes y la segmentación por club; cerrar el listado de requerimientos y suscribir el Addendum.
+**Proyecto C (Academia):** validar con Sports World el mapeo de la taxonomía del cuestionario a los siete componentes y la segmentación por club; cerrar el listado de requerimientos y suscribir el Addendum. A partir de la firma corren las **10 semanas** de desarrollo y entrega.

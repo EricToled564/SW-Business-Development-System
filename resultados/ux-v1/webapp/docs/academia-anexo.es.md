@@ -33,9 +33,9 @@ El detalle funcional y técnico consta en los documentos del módulo Academia: *
 
 ## 5 · Contraprestación adicional
 
-- **Monto: [por definir].** Se pacta al suscribir este Addendum y **es adicional** a la contraprestación del Contrato (Proyecto A) y a la del Addendum del BDS (Proyecto B).
-- Podrá estructurarse como **pago único de implementación** más, en su caso, un **recurrente** por actualización de contenido y operación del agente de voz — a definir con EL CLIENTE.
-- **Plazo de entrega: [por definir]**, sujeto al cierre de la validación del mapeo de la taxonomía y del listado de requerimientos.
+- **Monto: $850,000.00 (ochocientos cincuenta mil pesos 00/100 M.N.) más IVA** —$986,000.00 con IVA al 16%—, por la implementación del alcance descrito en la sección 2. **Es adicional** a la contraprestación del Contrato (Proyecto A) y a la del Addendum del BDS (Proyecto B) (Contrato, Cláusula Segunda, Sección C).
+- El **calendario de pagos** se pacta al suscribir este Addendum; adicionalmente podrá convenirse un **recurrente** por actualización de contenido y operación del agente de voz — a definir con EL CLIENTE.
+- **Plazo de desarrollo y entrega: 10 (diez) semanas**, contadas a partir de la firma de este Addendum y del cierre de la validación del mapeo de la taxonomía y del listado de requerimientos. El retraso de EL CLIENTE en las aportaciones de la sección 4 extiende el plazo día por día (Contrato, Cláusula Sexta).
 
 ## 6 · Naturaleza y garantías
 
