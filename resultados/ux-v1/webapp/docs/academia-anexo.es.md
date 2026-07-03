@@ -25,7 +25,7 @@ El detalle funcional y técnico consta en los documentos del módulo Academia: *
 
 ## 4 · Aportaciones a cargo de EL CLIENTE
 
-- Validación del mapeo de la taxonomía del cuestionario (ya aprobada) a los siete componentes, y de la segmentación por tipo de club, antes de la producción de contenido.
+- Validación del mapeo de la taxonomía del cuestionario a los siete componentes, y de la segmentación por tipo de club, antes de la producción de contenido.
 - Mínimo aprobatorio de acreditación por módulo (Fase 1).
 - Métricas reales del CRM por asesor, para calibrar la línea base del programa.
 - Colaboración del equipo de marketing para el módulo de inteligencia competitiva por club.

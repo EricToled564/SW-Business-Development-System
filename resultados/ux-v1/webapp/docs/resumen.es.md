@@ -145,7 +145,7 @@ Quince entrevistas de campo con líderes regionales y asesores (13 clubes, cinco
 
 La Academia sustituye la capacitación informal por un **programa único y replicable** para los 200 asesores, construido con rigor de diseño instruccional —microaprendizaje, práctica deliberada, evaluación en cuatro niveles y refuerzo espaciado—, en dos fases:
 
-- **Fase 1 · Módulos interactivos.** Contenido e-learning por niveles sobre la misma taxonomía de objetivos del cliente ya aprobada en el cuestionario (Proyecto A) y los siete componentes del programa, validados en campo. El asesor no avanza de nivel sin acreditar el anterior.
+- **Fase 1 · Módulos interactivos.** Contenido e-learning por niveles sobre la misma taxonomía de objetivos del cliente que usa el cuestionario (Proyecto A) y los siete componentes del programa, validados en campo. El asesor no avanza de nivel sin acreditar el anterior.
 - **Fase 2 · Role-play con agente de voz.** El asesor practica la conversación de venta completa contra un agente de IA que simula al cliente, con dificultad que se adapta a su historial, y certifica con refuerzo espaciado a 7, 30 y 90 días. Reutiliza el mismo motor conversacional de BES (Estrategia Técnica del sitio, §5), en un rol distinto.
 
 Detalle completo en **[Academia · Resumen Ejecutivo](#academia-resumen)**, **[Contenido y taxonomía](#academia-contenido)** y **[Fases del programa](#academia-fases)**.
