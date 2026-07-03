@@ -10,7 +10,7 @@ La documentación se organiza en **tres bloques**: los **documentos generales**,
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
 | 1 | [**Índice de documentos**](#indice) | Este mapa: qué contiene cada documento, a quién está dirigido y dónde consultar cada tema. | Todos |
-| 2 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo — Proyecto A y Proyecto B —, con eje en el cuestionario y la experiencia única, y una sección especial dedicada al Rediseño Web. | Dirección, negocio |
+| 2 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo, con eje en el cuestionario y la experiencia única, y una sección especial para cada proyecto: Rediseño Web (Proyecto A) y Business Development System (Proyecto B). | Dirección, negocio |
 | 3 | [**Contrato**](#contrato) | Marco mercantil de **ambos proyectos**: objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Primera Bis— la separación y contraprestación adicional del Proyecto B (BDS). | Dirección, Legal |
 | 3a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques y con responsables. | Dirección, TI, Legal |
 | 3b | [**Anexo Dos · Entregables, soporte y operación**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |

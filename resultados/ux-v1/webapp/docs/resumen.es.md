@@ -101,8 +101,38 @@ Del kickoff al go-live en ocho semanas, con cuatro equipos trabajando en paralel
 
 La verificación de Google Business es el único elemento de ruta crítica y se inicia en la Semana 1 precisamente porque depende de tiempos de Google; ningún otro trabajo queda bloqueado por ella.
 
-### 8 · KPIs y próximos pasos
+### 8 · KPIs de corrección del Rediseño Web
 
 Nos comprometemos con los **KPIs técnicos de corrección** —que dependen solo de nosotros y son 100% verificables: 49+ páginas de club rastreables (de 0), 116 enlaces rotos → 0, 20 URLs con backslash → 0, schema JSON-LD por club (de 0). Señalamos como **objetivos comerciales alcanzables —no comprometidos**, porque dependen de Google y del embudo interno de Sports World: cobertura unbranded 31.1% → 55–65% (benchmark David Lloyd Clubs: 31% → 74%) y tráfico mensual promedio 80,000 → 160,000. El detalle, junto con la **calculadora de ROI** interactiva, vive en el Contrato › Anexo Dos, Sección IV (KPIs y calculadora de ROI).
 
-**Próximo paso:** aprobar esta propuesta, cerrar el kickoff con la firma del checklist de dependencias y arrancar las ocho semanas. A partir de ahí, el calendario corre.
+## Sección especial · Business Development System (Proyecto B)
+
+> **Alcance y costo aparte** del Rediseño Web (Contrato · Cláusula Primera Bis; detalle en el **[Addendum del BDS](#bds-anexo)**).
+
+### 9 · El problema: los leads se enfrían
+
+Hoy la mayor fuente de leads de Sports World son las **campañas en redes sociales**. El recorrido actual es: el usuario ve un anuncio, llena un **formulario**, la solicitud se enruta al club que indicó como más cercano, y **un asesor decide cuándo llamar** — con frecuencia, horas o más de un día después. El resultado es una **conversión muy baja**. La causa raíz no es la calidad del lead: es el **tiempo al primer contacto** (*speed-to-lead*). Un lead contactado en minutos y otro contactado al día siguiente no son el mismo lead: el segundo ya perdió el impulso, comparó opciones o se olvidó.
+
+### 10 · La solución: atender en tiempo real, en el canal del usuario
+
+El BDS reemplaza el "formulario + llamada tardía" por un **engagement inmediato en WhatsApp**, aplicando **el mismo cuestionario** de experiencia ideal, bajo un modelo **human-first con IA de respaldo**:
+
+- El anuncio lleva a una **landing con el cuestionario**, no a un formulario pasivo.
+- El lead se enruta **primero a un operador humano por WhatsApp**, en tiempo real.
+- Si **no hay operador disponible** o es **fuera de horario**, **"BES" por WhatsApp (solo texto)** atiende, aplica el cuestionario y agenda.
+- Los **asesores de club** atienden a los leads "de la calle" (walk-in) con la **misma consola interna** del Proyecto A.
+
+En los cuatro caminos, el común denominador es el mismo: **un cuestionario → una experiencia ideal → una escritura idempotente al CRM**. El BDS no crea un flujo nuevo: extiende el que ya existe a **WhatsApp, operadores humanos y tiempo real**. Al aplicarse el cuestionario, el mismo motor que arma la experiencia ideal genera también el **brief del asesor** —perfil del comprador potencial, sus intereses y sugerencias concretas de cómo conducir la venta— sin importar quién lo atendió. Detalle completo en **[BDS · Resumen Ejecutivo](#bds-resumen)** y **[BDS · Flujo de conversión](#bds-flujo)**.
+
+### 11 · Qué mide el BDS
+
+El indicador rector es el **tiempo al primer contacto**. El BDS extiende el mismo funnel/dashboard del Proyecto A con sus propias etapas: **lead generado → primer contacto → cuestionario aplicado → visita agendada → visita proporcionada → nueva membresía**, medido por canal (operador humano vs. "BES") y por horario. Detalle en **[BDS · Medición y funnel](#bds-medicion)**.
+
+### 12 · Lo comercial
+
+El BDS es un **alcance independiente**: su contratación no modifica el Proyecto A ni su precio. La contraprestación adicional es de **USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**, pactada en el **[Addendum del BDS](#bds-anexo)**. En tanto no se suscriba dicho Addendum, el Proyecto B no genera obligación ni costo para ninguna de las Partes.
+
+## Próximo paso
+
+**Proyecto A:** aprobar esta propuesta, cerrar el kickoff con la firma del checklist de dependencias y arrancar las ocho semanas. A partir de ahí, el calendario corre.
+**Proyecto B (BDS):** cerrar el alcance y el listado de requerimientos y suscribir el Addendum; a partir de la firma, el Equipo 5 (BDS) arranca según lo descrito en el **[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
