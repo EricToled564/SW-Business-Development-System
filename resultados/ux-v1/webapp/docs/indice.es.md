@@ -16,7 +16,8 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | 3b | [**Anexo Dos · Entregables específicos de los servicios**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
 | 4 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en toda la documentación, de los tres proyectos. | Todos |
 | 5 | [**Plan de Ejecución**](#execution) | Marco de gobierno de **los tres proyectos**: para el Proyecto A, cronograma comprometido de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios; para el Proyecto B (BDS), el quinto equipo, sus tareas y dependencias (§10); para el Proyecto C (Academia), el marco de arranque y sus dependencias (§11) — los plazos de B (8 semanas, en paralelo al A) y C (10 semanas) corren desde la firma de su Addendum. | Dirección, TI, PMO |
-| 6 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del cuestionario y la experiencia ideal — el motor único que comparten los tres proyectos. | Negocio, dirección |
+| 6 | [**Gastos Operativos Variables**](#gastos-operativos) | Estimación mensual de los costos de plataformas a cargo de Sports World (IA, voz, WhatsApp, hospedaje) en tres escenarios de tráfico e interacciones, con tarifas verificadas y totales en USD y MXN. | Dirección, Finanzas |
+| 7 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del cuestionario y la experiencia ideal — el motor único que comparten los tres proyectos. | Negocio, dirección |
 
 ## Proyecto A · Rediseño Web (exclusivos)
 

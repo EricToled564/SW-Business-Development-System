@@ -57,6 +57,8 @@
       title: { es: "Glosario", en: "Glossary" } },
     { id: "execution", type: "doc", group: "generales", red: true, pdf: "03-plan-de-ejecucion.es.pdf",
       title: { es: "Plan de Ejecución", en: "Execution Plan" } },
+    { id: "gastos-operativos", type: "doc", group: "generales", red: true, pdf: "28-gastos-operativos.es.pdf",
+      title: { es: "Gastos Operativos Variables", en: "Variable Operating Costs" } },
     { id: "demo", type: "embed", group: "generales", red: true, src: "demo/index.html",
       title: { es: "Demo Cuestionario Inteligente", en: "Smart Questionnaire Demo" } },
     { id: "experience", type: "doc", group: "proyectoA", pdf: "01-arquitectura-de-experiencia.es.pdf",
