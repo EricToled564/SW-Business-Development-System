@@ -1,7 +1,7 @@
 # Sports World · Gastos Operativos Variables · V1.1
 ## Estimación mensual de las plataformas a cargo de Sports World — desglose por componente y tres escenarios
 
-> **Documento general (los tres proyectos).** Consolida los **costos de operación variables** que Sports World cubre directamente a los proveedores de IA, voz y mensajería (Contrato, Cláusula Sexta Bis), con el **desglose completo de cómo se llega a cada cifra**. Tarifas verificadas en **julio de 2026** contra las fuentes indicadas al final; todas las equivalencias al **tipo de cambio contractual fijo de $17.80 MXN por USD**.
+> **Documento general (los tres proyectos) · Informativo, no contractual.** El Contrato únicamente asigna estos gastos a Sports World (Cláusula Sexta Bis) y pacta como única contraprestación recurrente la iguala; la **estimación** vive aquí. Este documento consolida los **costos de operación variables** que Sports World cubre directamente a los proveedores de IA, voz y mensajería, con el **desglose completo de cómo se llega a cada cifra**. Tarifas verificadas en **julio de 2026** contra las fuentes indicadas al final; todas las equivalencias al **tipo de cambio contractual fijo de $17.80 MXN por USD**.
 
 ## Qué cubre este documento (y qué no)
 
@@ -18,7 +18,7 @@
 | **ElevenLabs** — plataforma de voz conversacional (plan Business) | ~$0.08 USD/min efectivo ($1.42 MXN); excedente $0.08 USD/min; alternativas (Vapi, Retell) $0.10 – $0.13 USD/min todo incluido | Página oficial de pricing, corroborada en 4 fuentes 2026 |
 | **WhatsApp Business API — México** (Meta, cobro **por mensaje** desde julio 2025) | Respuestas en ventana de 24 h: **gratis** · plantilla *utility*: $0.0080 USD · *marketing*: $0.0305 USD · margen del intermediario (BSP): +$0.003 – $0.010 por mensaje | Modelo confirmado (Twilio/Meta); tarifas México cruzadas en 3 fuentes 2026 |
 
-**Consistencia con el Contrato:** la banda contractual de $0.10 – $0.20 USD por minuto de voz (Sexta Bis) sigue siendo la **cota superior**; este documento usa $0.08 – $0.13 USD/min (tarifas verificadas 2026).
+**Bandas de planeación:** para la voz se usa $0.08 – $0.13 USD/min (tarifas verificadas 2026); como margen prudente de presupuestación puede tomarse una cota superior de $0.20 USD/min.
 
 ## Los motores de volumen: supuestos por escenario
 
@@ -80,8 +80,7 @@ Sumando la **iguala fija recompuesta** ($49,880 MXN con IVA; USD $2,802.25) a lo
 ## Notas
 
 - Los variables se pagan **directamente a los proveedores**, en su mayoría facturados en USD y sin IVA mexicano (proveedores extranjeros); la iguala se muestra con IVA. Los totales son órdenes de magnitud para presupuestación, no cotizaciones cerradas.
-- La banda contractual de la Sexta Bis ($200–$1,200 USD según escenario, modelo todo-voz) permanece como **cota superior contractual**; este desglose la refina con el supuesto 30% voz / 70% texto y el BDS 100% texto.
-- EL PRESTADOR entrega **monitoreo de consumo y reporte mensual** de todos estos conceptos (Sexta Bis; **[BDS · Estrategia Técnica](#bds-tecnica)**; **[Academia · §8](#academia-tecnica)**).
+- El Contrato (Cláusula Sexta Bis) **asigna** estos gastos a Sports World e incluye el compromiso de **monitoreo de consumo y reporte mensual**; las cifras de este documento son estimaciones de planeación y pueden actualizarse sin modificar el Contrato.
 - Los supuestos de volumen del BDS, el % de voz y la duración media de conversación se **recalibran con datos reales** a los 60–90 días.
 
 ## Fuentes de las tarifas (julio 2026)
