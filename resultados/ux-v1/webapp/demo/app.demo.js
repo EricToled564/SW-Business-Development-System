@@ -1569,6 +1569,10 @@ function resolveClubOffline(q15, q16, opts) {
     if (direct) return rankFromAnchor(direct.lat, direct.lng, null, null, experienceAmenities, preferClasses);
   }
   if (cpInput.length === 5) {
+    // Ancla exacta por código postal individual (índice GeoNames); el centroide
+    // por prefijo queda como respaldo para CPs fuera de la zona de clubes.
+    const cpGeo = typeof window !== "undefined" && window.CP_MX && window.CP_MX[cpInput] || null;
+    if (cpGeo) return rankFromAnchor(cpGeo[0], cpGeo[1], null, null, experienceAmenities, preferClasses);
     const prefix = cpInput.slice(0, 2);
     if (CP_CENTROIDS[prefix]) {
       const [lat, lng] = CP_CENTROIDS[prefix];
