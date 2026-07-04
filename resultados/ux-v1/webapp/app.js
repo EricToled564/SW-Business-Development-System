@@ -260,7 +260,7 @@
 
     if (doc.type === "embed") {
       elDoc.innerHTML = '<div class="embed-wrap"><iframe class="embed-frame" src="' + doc.src +
-        '?v=20260704b" title="' + doc.title[lang] + '"></iframe></div>';
+        '?v=20260704c" title="' + doc.title[lang] + '"></iframe></div>';
       elToc.innerHTML = "";
       // Fijar la altura del iframe a la ventana REALMENTE visible (window.innerHeight),
       // no a 100vh/100dvh: dentro de un iframe esas unidades son poco fiables en móvil

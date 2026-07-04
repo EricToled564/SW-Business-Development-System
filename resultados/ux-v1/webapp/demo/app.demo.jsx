@@ -156,51 +156,90 @@ function normalizeTxt(s) {
 function editDistance(a, b) {
   const m = a.length, n = b.length;
   if (Math.abs(m - n) > 2) return 3;
-  const dp = Array.from({ length: m + 1 }, (_, i) => [i].concat(Array(n).fill(0)));
-  for (let j = 1; j <= n; j++) dp[0][j] = j;
-  for (let i = 1; i <= m; i++) for (let j = 1; j <= n; j++) {
-    dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  let prev = new Array(n + 1), curr = new Array(n + 1);
+  for (let j = 0; j <= n; j++) prev[j] = j;
+  for (let i = 1; i <= m; i++) {
+    curr[0] = i;
+    let rowMin = i;
+    for (let j = 1; j <= n; j++) {
+      curr[j] = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      if (curr[j] < rowMin) rowMin = curr[j];
+    }
+    if (rowMin > 2) return 3;
+    const tmp = prev; prev = curr; curr = tmp;
   }
-  return dp[m][n];
+  return prev[n];
 }
 const NORM_SYNONYMS = (() => {
   const out = {};
   Object.keys(NEIGHBORHOOD_SYNONYMS).forEach(k => { out[normalizeTxt(k)] = NEIGHBORHOOD_SYNONYMS[k]; });
   return out;
 })();
-// Catálogo de colonias sugeribles: colonias reales de los 49 clubes + zonas comunes (sinónimos)
+// Catálogo de colonias sugeribles: colonias de los 49 clubes + zonas comunes + catálogo abierto
+// de asentamientos a ≤20 km de un club (GeoNames, cargado como window.COLONIAS_MX).
 const COLONIA_OPTIONS = (() => {
   const byKey = {};
+  const list = [];
+  const push = (opt) => { if (!byKey[opt.key]) { byKey[opt.key] = opt; list.push(opt); } };
   CLUBS.forEach(c => {
-    const key = normalizeTxt(c.colonia);
-    if (!byKey[key]) byKey[key] = { label: c.colonia, sub: c.municipio, key };
+    push({ label: c.colonia, sub: c.municipio, key: normalizeTxt(c.colonia), lat: c.lat, lng: c.lng });
   });
   Object.keys(NEIGHBORHOOD_SYNONYMS).forEach(name => {
     const key = normalizeTxt(name);
     const label = name.charAt(0).toUpperCase() + name.slice(1);
-    if (!byKey[key]) byKey[key] = { label, sub: "zona", key };
+    if (!byKey[key]) push({ label, sub: "zona", key });
     else if (/[áéíóúñ]/.test(name) && !/[áéíóúñ]/.test(byKey[key].label)) byKey[key].label = label;
   });
-  return Object.values(byKey).sort((a, b) => a.label.localeCompare(b.label, "es"));
+  const ds = (typeof window !== "undefined" && window.COLONIAS_MX) || [];
+  const provs = (typeof window !== "undefined" && window.COLONIAS_MX_PROV) || [];
+  ds.forEach(r => {
+    push({ label: r[0], sub: provs[r[1]] || "", key: normalizeTxt(r[0]), lat: r[2], lng: r[3] });
+  });
+  return list;
 })();
 function coloniaSuggestions(inputRaw, limit) {
   const q = normalizeTxt(inputRaw);
+  const lim = limit || 6;
   if (q.length < 2) return [];
   const scored = [];
-  for (const opt of COLONIA_OPTIONS) {
+  for (let i = 0; i < COLONIA_OPTIONS.length; i++) {
+    const opt = COLONIA_OPTIONS[i];
     let score = -1;
     if (opt.key === q) score = 0;
     else if (opt.key.startsWith(q)) score = 1;
     else if (opt.key.split(" ").some(w => w.startsWith(q))) score = 2;
-    else if (opt.key.includes(q)) score = 3;
-    else if (q.length >= 4) {
-      const d = Math.min(editDistance(q, opt.key), ...opt.key.split(" ").map(w => editDistance(q, w)));
-      if (d <= (q.length >= 6 ? 2 : 1)) score = 4 + d;
-    }
-    if (score >= 0) scored.push([score, opt]);
+    else if (q.length >= 4 && opt.key.includes(q)) score = 3;
+    if (score >= 0) scored.push([score, i, opt]);
   }
-  scored.sort((a, b) => a[0] - b[0] || a[1].label.localeCompare(b[1].label, "es"));
-  return scored.slice(0, limit || 6).map(x => x[1]);
+  if (scored.length < lim && q.length >= 4) {
+    const maxD = q.length >= 6 ? 2 : 1;
+    const q0 = q.charCodeAt(0), q1 = q.length > 1 ? q.charCodeAt(1) : -1;
+    let found = 0;
+    for (let i = 0; i < COLONIA_OPTIONS.length && found < 40; i++) {
+      const opt = COLONIA_OPTIONS[i];
+      let already = false;
+      for (const s of scored) { if (s[2] === opt) { already = true; break; } }
+      if (already) continue;
+      const k = opt.key;
+      // pre-filtro barato: la primera o segunda letra deben coincidir con la del texto
+      const k0 = k.charCodeAt(0), k1 = k.length > 1 ? k.charCodeAt(1) : -1;
+      if (k0 !== q0 && k1 !== q0 && k0 !== q1) continue;
+      let d = 3;
+      if (Math.abs(k.length - q.length) <= maxD) d = editDistance(q, k);
+      if (d > maxD && k.indexOf(" ") >= 0) {
+        const words = k.split(" ");
+        for (const w of words) {
+          if (Math.abs(w.length - q.length) > maxD) continue;
+          const dw = editDistance(q, w);
+          if (dw < d) d = dw;
+          if (d === 0) break;
+        }
+      }
+      if (d <= maxD) { scored.push([4 + d, i, opt]); found++; }
+    }
+  }
+  scored.sort((a, b) => a[0] - b[0] || Math.abs(a[2].label.length - q.length) - Math.abs(b[2].label.length - q.length) || a[1] - b[1]);
+  return scored.slice(0, lim).map(x => x[2]);
 }
 
 // ─── Campo de colonia con sugerencias (estilo autocompletado), tolerante a acentos y typos ───
@@ -221,13 +260,16 @@ function ColoniaAutocomplete({ value, onCommit, onEnterBlur }) {
       {showList && (
         <div style={{ position: "absolute", top: "100%", left: 0, right: 0, zIndex: 30, background: BRAND.white, border: "1px solid " + BRAND.gray2, borderRadius: "0 0 8px 8px", boxShadow: "0 8px 20px rgba(0,0,0,0.10)", maxHeight: "13rem", overflowY: "auto" }}>
           {sugs.map(s => (
-            <div key={s.key}
+            <div key={s.key + (s.sub || "")}
               onMouseDown={(e) => { e.preventDefault(); onCommit(s.label); setFocus(false); }}
               style={{ padding: "0.6rem 1rem", cursor: "pointer", fontSize: "0.95rem", color: BRAND.black, borderBottom: "1px solid " + BRAND.gray1 }}>
               {s.label} <span style={{ color: BRAND.gray4, fontSize: "0.8rem" }}>· {s.sub}</span>
             </div>
           ))}
         </div>
+      )}
+      {focus && sugs.length === 0 && normalizeTxt(value).length >= 3 && (
+        <p style={{ marginTop: "0.375rem", fontSize: "0.75rem", color: BRAND.gray4 }}>No encontramos esa colonia — verifica la escritura o continúa con tu código postal.</p>
       )}
     </div>
   );
@@ -298,18 +340,9 @@ function resolveClubOffline(q15, q16, opts) {
       if (synMatch) return rankFromAnchor(synMatch.lat, synMatch.lng, null, null, experienceAmenities, preferClasses);
     }
   }
-  if (colInput && colInput.length >= 4) {
-    const fuzzy = CLUBS.find(c => {
-      const cc = normalizeTxt(c.colonia);
-      return cc.includes(colInput) || colInput.includes(cc);
-    });
-    if (fuzzy) return rankFromAnchor(fuzzy.lat, fuzzy.lng, null, null, experienceAmenities, preferClasses);
-    let bestClub = null, bestD = 3;
-    for (const c of CLUBS) {
-      const d = editDistance(colInput, normalizeTxt(c.colonia));
-      if (d < bestD) { bestD = d; bestClub = c; }
-    }
-    if (bestClub && bestD <= (colInput.length >= 6 ? 2 : 1)) return rankFromAnchor(bestClub.lat, bestClub.lng, null, null, experienceAmenities, preferClasses);
+  if (colInput && colInput.length >= 3) {
+    const sug = coloniaSuggestions(colInput, 5).find(s => typeof s.lat === "number");
+    if (sug) return rankFromAnchor(sug.lat, sug.lng, null, null, experienceAmenities, preferClasses);
   }
   if (cpInput) {
     const direct = CLUBS.find(c => c.cp === cpInput);
