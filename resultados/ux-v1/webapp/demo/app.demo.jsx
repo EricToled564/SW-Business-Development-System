@@ -787,8 +787,8 @@ function Welcome({ onStart }) {
 function ProgressBar({ current, total }) {
   const pct = ((current + 1) / total) * 100;
   return (
-    <div className="w-full" style={{ background: BRAND.gray2, height: "3px" }}>
-      <div style={{ background: BRAND.red, height: "3px", width: pct + "%", transition: "width 0.3s" }} />
+    <div className="w-full" style={{ background: BRAND.gray2, height: "5px" }}>
+      <div style={{ background: BRAND.red, height: "5px", width: pct + "%", transition: "width 0.3s" }} />
     </div>
   );
 }
@@ -1935,8 +1935,9 @@ function App() {
   return (
     <div className="h-full flex flex-col overflow-hidden" style={{ background: BRAND.white }}>
       <ProgressBar current={step} total={questions.length} />
-      <div className="px-6 pt-3 max-w-xl mx-auto w-full">
+      <div className="px-6 pt-3 max-w-xl mx-auto w-full" style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between" }}>
         <p style={{ fontSize: "0.6875rem", letterSpacing: "0.2em", textTransform: "uppercase", color: BRAND.gray4, fontWeight: 600 }}>Pregunta {step + 1} de {questions.length}</p>
+        <p style={{ fontSize: "0.75rem", color: BRAND.red, fontWeight: 800 }}>{Math.round(((step + 1) / questions.length) * 100)}% completado</p>
       </div>
       <QuestionRenderer question={currentQ} value={answers[currentQ.id]} onChange={setAnswer} onNext={advance} onBack={goBack} isFirst={step === 0} isLast={step === questions.length - 1} />
     </div>

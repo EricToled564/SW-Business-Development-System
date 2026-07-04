@@ -2261,12 +2261,12 @@ function ProgressBar({
     className: "w-full",
     style: {
       background: BRAND.gray2,
-      height: "3px"
+      height: "5px"
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       background: BRAND.red,
-      height: "3px",
+      height: "5px",
       width: pct + "%",
       transition: "width 0.3s"
     }
@@ -5350,7 +5350,12 @@ function App() {
     current: step,
     total: questions.length
   }), /*#__PURE__*/React.createElement("div", {
-    className: "px-6 pt-3 max-w-xl mx-auto w-full"
+    className: "px-6 pt-3 max-w-xl mx-auto w-full",
+    style: {
+      display: "flex",
+      alignItems: "baseline",
+      justifyContent: "space-between"
+    }
   }, /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: "0.6875rem",
@@ -5359,7 +5364,13 @@ function App() {
       color: BRAND.gray4,
       fontWeight: 600
     }
-  }, "Pregunta ", step + 1, " de ", questions.length)), /*#__PURE__*/React.createElement(QuestionRenderer, {
+  }, "Pregunta ", step + 1, " de ", questions.length), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.75rem",
+      color: BRAND.red,
+      fontWeight: 800
+    }
+  }, Math.round((step + 1) / questions.length * 100), "% completado")), /*#__PURE__*/React.createElement(QuestionRenderer, {
     question: currentQ,
     value: answers[currentQ.id],
     onChange: setAnswer,
