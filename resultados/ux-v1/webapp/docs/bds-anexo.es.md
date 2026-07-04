@@ -30,7 +30,7 @@ El detalle funcional y técnico consta en los documentos del módulo BDS: **[Flu
 
 ## 5 · Contraprestación adicional
 
-- **Monto: USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**, por la implementación del alcance descrito en la sección 2. Es **adicional** a la contraprestación del Contrato (Proyecto A).
+- **Monto: USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA** —equivalente a **MXN $86,330.00** al tipo de cambio contractual de $17.80—, por la implementación del alcance descrito en la sección 2. Es **adicional** a la contraprestación del Contrato (Proyecto A).
 - Podrá estructurarse como **pago único de implementación** más, en su caso, un **recurrente** por operación/mantenimiento del BDS —a definir con EL CLIENTE—.
 - **Plazo de desarrollo y entrega: 8 (ocho) semanas**, contadas a partir de la firma de este Addendum y del cierre del alcance y del listado de requerimientos. El Proyecto B **se ejecuta en paralelo al Proyecto A**, sin modificar su cronograma: los componentes que reutiliza (consola, middleware, cuestionario) quedan operativos desde las Semanas 3–6 del cronograma del sitio (**[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**), por lo que el arranque del BDS no depende del lanzamiento del sitio. El retraso de EL CLIENTE en las aportaciones de la sección 4 extiende el plazo día por día (Contrato, Cláusula Sexta).
 

@@ -69,6 +69,15 @@ const KNOWN_FIGURES = new Set([
   "850,000", "850000", "850,000.00", "850000.00", // contraprestación adicional del Addendum Academia (Proyecto C, MXN)
   "986,000", "986000", "986,000.00", "986000.00", // Academia con IVA 16% (850,000 × 1.16)
   "4,250", "4250", // costo por asesor de la Academia (850,000 / 200)
+  // equivalencias bimoneda al tipo de cambio contractual fijo 17.80
+  "86,330", "86330", "86,330.00", "86330.00",   // 4,850 USD → MXN
+  "47,752.81", "47752.81",                       // 850,000 MXN → USD
+  "1,966.29", "1966.29", "3,089.89", "3089.89",  // igualas 35,000 / 55,000 MXN → USD
+  "40,500", "40500", "40,500.00", "40500.00",    // pago parcial 720,900 MXN → USD
+  "6,230", "6230", "6,230.00", "6230.00",        // stand-by 350 USD → MXN
+  "238.76",                                       // 4,250 MXN por asesor → USD
+  "1,434,680", "1434680",                         // traffic cost 80,600 USD → MXN
+  "17.80",                                        // tipo de cambio contractual fijo
   // alcance y plazos
   "8", "148", "49", "2", "4", "1", "15", "30", "365",
   // infraestructura / tráfico

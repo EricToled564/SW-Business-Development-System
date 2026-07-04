@@ -108,7 +108,7 @@ Nos comprometemos con los **KPIs verificables del Contrato › Anexo Dos, Secci�
 
 ### Lo comercial (Proyecto A)
 
-Contraprestación única de **USD $81,000 sin IVA** (MXN $1,441,800; $1,672,488 con IVA), **sin anticipos**: 50% contra la sección entregada y aprobada en la Semana 4 y 50% tras la aprobación total del proyecto. Los servicios recurrentes se prestan mediante la **iguala mensual de la Opción A elegida: $35,000 MXN/mes ($40,600 con IVA)**, con bolsa de mejora de 8 horas mensuales y plazo mínimo de 6 meses. Detalle en el **[Contrato · Cláusulas Segunda y Tercera](#contrato)**.
+Contraprestación única de **USD $81,000 sin IVA** (MXN $1,441,800; $1,672,488 con IVA), **sin anticipos**: 50% contra la sección entregada y aprobada en la Semana 4 y 50% tras la aprobación total del proyecto. Los servicios recurrentes se prestan mediante la **iguala mensual de la Opción A elegida: $35,000 MXN/mes (USD $1,966.29); $40,600 MXN con IVA**, con bolsa de mejora de 8 horas mensuales y plazo mínimo de 6 meses. Detalle en el **[Contrato · Cláusulas Segunda y Tercera](#contrato)**.
 
 ## Business Development System (Proyecto B)
 
@@ -135,7 +135,7 @@ El indicador rector es el **tiempo al primer contacto**. El BDS extiende el mism
 
 ### 12 · Lo comercial
 
-El BDS es un **alcance independiente**: su contratación no modifica el Proyecto A ni su precio. La contraprestación adicional es de **USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**, con un **plazo de desarrollo y entrega de 8 semanas** desde la firma del **[Addendum del BDS](#bds-anexo)**, ejecutado **en paralelo al Proyecto A**. En tanto no se suscriba dicho Addendum, el Proyecto B no genera obligación ni costo para ninguna de las Partes.
+El BDS es un **alcance independiente**: su contratación no modifica el Proyecto A ni su precio. La contraprestación adicional es de **USD $4,850.00 más IVA (MXN $86,330.00 al tipo de cambio contractual de $17.80)**, con un **plazo de desarrollo y entrega de 8 semanas** desde la firma del **[Addendum del BDS](#bds-anexo)**, ejecutado **en paralelo al Proyecto A**. En tanto no se suscriba dicho Addendum, el Proyecto B no genera obligación ni costo para ninguna de las Partes.
 
 ## Academia Sports World (Proyecto C)
 
@@ -160,7 +160,29 @@ El **dashboard de readiness** consolida, para los 200 asesores, el avance de mó
 
 ### 16 · Lo comercial
 
-La Academia es un **alcance independiente**: su contratación no modifica el Proyecto A ni el Proyecto B. La contraprestación adicional es de **$850,000.00 MXN más IVA**, con un **plazo de desarrollo y entrega de 10 semanas** a partir de la firma del **[Addendum de la Academia](#academia-anexo)** y del cierre de la validación de la taxonomía y los requerimientos. En tanto no se suscriba dicho Addendum, el Proyecto C no genera obligación ni costo para ninguna de las Partes.
+La Academia es un **alcance independiente**: su contratación no modifica el Proyecto A ni el Proyecto B. La contraprestación adicional es de **$850,000.00 MXN más IVA (USD $47,752.81 al tipo de cambio contractual de $17.80)**, con un **plazo de desarrollo y entrega de 10 semanas** a partir de la firma del **[Addendum de la Academia](#academia-anexo)** y del cierre de la validación de la taxonomía y los requerimientos. En tanto no se suscriba dicho Addendum, el Proyecto C no genera obligación ni costo para ninguna de las Partes.
+
+## Inversión: los tres proyectos en una tabla
+
+Todas las equivalencias entre dólares y pesos se calculan al **tipo de cambio contractual fijo de $17.80 MXN por USD** (Contrato, Cláusula Segunda).
+
+| Proyecto | Inversión (pago único) | Recurrente | Plazo | Exigible |
+|---|---|---|---|---|
+| **A · Rediseño Web** | USD $81,000 sin IVA (MXN $1,441,800; $1,672,488 con IVA) | Iguala mensual Opción A: $35,000 MXN (USD $1,966.29); $40,600 MXN con IVA — mínimo 6 meses | 8 semanas | Desde la firma del Contrato |
+| **B · Business Development System** | USD $4,850.00 más IVA (MXN $86,330.00) | Posible recurrente por operación, a definir en el Addendum | 8 semanas, en paralelo al A | Desde la firma de su Addendum |
+| **C · Academia Sports World** | $850,000.00 MXN más IVA (USD $47,752.81); $986,000.00 MXN con IVA | Posible recurrente por actualización de contenido, a definir en el Addendum | 10 semanas | Desde la firma de su Addendum |
+
+Los **costos de operación** de las plataformas de IA, voz y mensajería corren por cuenta de Sports World directamente con los proveedores, con monitoreo y reporte mensual (Contrato, Cláusula Sexta Bis).
+
+## El Plan de Ejecución, en resumen
+
+Un solo modelo de gobierno para los tres proyectos, con un líder general y seis equipos:
+
+- **Proyecto A (8 semanas, comprometido).** Cuatro equipos en paralelo —web, SEO/contenido, contenido visual y BES— con gates firmados por Sports World en cada etapa (pilar → 50% → completitud → visto bueno → lanzamiento) y estabilización posterior de 2 a 4 semanas.
+- **Proyecto B (8 semanas, en paralelo al A).** El Equipo 5 integra WhatsApp Business API, BES por WhatsApp y el rol de operador de la consola sobre los componentes del sitio, que quedan operativos desde las Semanas 3–6 — no espera al lanzamiento.
+- **Proyecto C (10 semanas).** El Equipo 6 valida la taxonomía con Sports World, produce las lecciones de la Fase 1 desde la firma y activa el role-play de la Fase 2 cuando el motor de BES está disponible.
+
+Detalle completo en el **[Plan de Ejecución](#execution)**: §§1–9 el Proyecto A, §10 el B, §11 el C.
 
 ## Próximo paso
 

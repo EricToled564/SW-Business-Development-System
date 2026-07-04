@@ -79,9 +79,9 @@ Igual que BES (**[Estrategia Técnica del sitio · §5](#technical:5-bes-el-agen
 
 | Concepto | Estimado |
 |---|---|
-| Plataforma de voz (tipo ElevenLabs) | $0.10 – $0.20 USD por minuto de conversación |
-| Modelo de razonamiento (LLM) | $0.001 – $0.003 USD por interacción |
-| Hospedaje de la lógica del agente | $50 – $150 USD por mes según volumen |
+| Plataforma de voz (tipo ElevenLabs) | $0.10 – $0.20 USD por minuto de conversación ($1.78 – $3.56 MXN) |
+| Modelo de razonamiento (LLM) | $0.001 – $0.003 USD por interacción ($0.02 – $0.05 MXN) |
+| Hospedaje de la lógica del agente | $50 – $150 USD por mes ($890 – $2,670 MXN) según volumen |
 
 *Escenarios mensuales, según el porcentaje de asesores que cumple la práctica semanal de mantenimiento (§6):*
 

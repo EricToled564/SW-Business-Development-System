@@ -153,7 +153,7 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 |---|---|---|---|---|
 | Verificación de Google Business se alarga (la controla Google) | Alta | Medio | Iniciar en S1; el resto del proyecto es independiente; las fichas pueden finalizar cerca del lanzamiento sin frenar el sitio. | Líder gral. |
 | La API del CRM no cumple su SLA (p95 <500/<800 ms) | Media | Alto | **Middleware de EL PRESTADOR** con caché de lecturas, reintentos y tolerancia a sincronización; SW solo expone su API estándar (Anexo Uno D.5); degradación elegante. | E1 / E4 |
-| Atrasos del cliente en el Anexo Uno o en aprobaciones | Media | Alto | Dependencias front-loaded a S1; ventanas de 48 h pactadas (I.4); el plazo se extiende día por día y aplica stand-by ($350 USD/día, Cláusula Novena). | Líder gral. / SW |
+| Atrasos del cliente en el Anexo Uno o en aprobaciones | Media | Alto | Dependencias front-loaded a S1; ventanas de 48 h pactadas (I.4); el plazo se extiende día por día y aplica stand-by ($350 USD/día; $6,230 MXN, Cláusula Novena). | Líder gral. / SW |
 | Calidad/disponibilidad de datos de clubes y clases | Media | Medio | API de lectura preferente; fallback a exportación estructurada con calendario acordado; validación automática. | E1 / SW |
 | Base de conocimiento de BES desactualizada | Media | Medio | Actualización semanal mínima (Anexo Uno D.6); reentrenamiento automático. | SW / E4 |
 | Cambios de alcance (scope creep) | Media | Medio | Control de cambios (§8): lo no pactado es convenio modificatorio; los cambios sobre secciones ya aprobadas se cotizan (Cláusula Tercera Bis). | Líder gral. |
@@ -164,7 +164,7 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 - **Reporte ejecutivo semanal** del avance, los KPIs y los riesgos (Anexo Dos, Secciones I.2 y IV).
 - **Puntos de control** breves y periódicos entre los cuatro líderes y con Sports World en cada hito.
 - **Control de cambios.** Todo entregable no comprendido expresamente es materia de convenio modificatorio. Un cambio solicitado por el cliente sobre una sección o ítem **ya aprobado** se cotiza aparte (Cláusula Tercera Bis) y su retraso es imputable al cliente. Si un retrabajo deriva de que **el proveedor** entregó una sección por debajo de los estándares del contrato, lo **absorbe el proveedor** (sin costo ni stand-by). Los demás cambios solicitados por el cliente son **zona neutral**: solo extienden plazos, sin cargo.
-- **Stand-by por atrasos del cliente.** Si un atraso imputable a Sports World detiene al equipo, se cobran los días de stand-by a USD $350/día (Cláusula Novena), y el plazo se extiende día por día.
+- **Stand-by por atrasos del cliente.** Si un atraso imputable a Sports World detiene al equipo, se cobran los días de stand-by a USD $350/día ($6,230 MXN, Cláusula Novena), y el plazo se extiende día por día.
 - **Canales.** Coordinación e incidentes por los canales acordados (p. ej. Slack y correo), con responsable único del lado del cliente.
 
 ## 9 · Supuestos y fuera de alcance

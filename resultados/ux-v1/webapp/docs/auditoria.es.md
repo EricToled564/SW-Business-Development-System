@@ -11,7 +11,7 @@ Sports World atrae a un público amplio por la fuerza de su marca, pero pierde a
 |---|---|---|
 | Tráfico branded | 161,400 | +4.41% ↑ |
 | Tráfico non-branded | 79,100 | −28.18% ↓↓ |
-| Traffic cost (valor económico) | $80,600 USD | −25.3% |
+| Traffic cost (valor económico) | $80,600 USD ($1,434,680 MXN) | −25.3% |
 | Concentración de tráfico | 95.23% en 2 URLs | Homepage + /clubes |
 | Cobertura unbranded | 31.1% (2,148/6,900) | 69% del mercado sin atender |
 

@@ -153,7 +153,7 @@ These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#c
 |---|---|---|---|---|
 | Google Business verification runs long (controlled by Google) | High | Medium | Initiate in W1; the rest of the project is independent; profiles can be finalized close to launch without holding up the site. | Overall leader |
 | The CRM API fails its SLA (p95 <500/<800 ms) | Medium | High | **PROVIDER middleware** with read caching, retries, and synchronization tolerance; SW only exposes its standard API (Annex One D.5); graceful degradation. | T1 / T4 |
-| Client delays on Annex One or on approvals | Medium | High | Dependencies front-loaded to W1; 48 h windows agreed (I.4); the timeline extends day for day and stand-by applies (USD $350/day, Clause Nine). | Overall leader / SW |
+| Client delays on Annex One or on approvals | Medium | High | Dependencies front-loaded to W1; 48 h windows agreed (I.4); the timeline extends day for day and stand-by applies (USD $350/day; MXN $6,230, Clause Nine). | Overall leader / SW |
 | Quality/availability of club and class data | Medium | Medium | Read API preferred; fallback to structured export with an agreed schedule; automatic validation. | T1 / SW |
 | BES knowledge base outdated | Medium | Medium | Minimum weekly update (Annex One D.6); automatic retraining. | SW / T4 |
 | Scope creep | Medium | Medium | Change control (§8): anything not agreed is an amending agreement; changes to already-approved sections are quoted (Clause Three Bis). | Overall leader |
@@ -164,7 +164,7 @@ These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#c
 - **Weekly executive report** on progress, KPIs, and risks (Annex Two, Sections I.2 and IV).
 - **Control points** brief and recurring among the four leaders and with Sports World at each milestone.
 - **Change control.** Any deliverable not expressly included is a matter for an amending agreement. A change requested by the client on an **already-approved** section or item is quoted separately (Clause Three Bis), and its delay is attributable to the client. If rework arises from **the provider** delivering a section below the contract's standards, **the provider absorbs it** (at no cost and no stand-by). Other changes requested by the client are a **neutral zone**: they only extend timelines, at no charge.
-- **Stand-by for client delays.** If a delay attributable to Sports World halts the team, stand-by days are charged at USD $350/day (Clause Nine), and the timeline extends day for day.
+- **Stand-by for client delays.** If a delay attributable to Sports World halts the team, stand-by days are charged at USD $350/day (MXN $6,230, Clause Nine), and the timeline extends day for day.
 - **Channels.** Coordination and incidents through the agreed channels (e.g., Slack and email), with a single owner on the client's side.
 
 ## 9 · Assumptions and out of scope

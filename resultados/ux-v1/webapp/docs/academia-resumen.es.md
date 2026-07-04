@@ -65,7 +65,7 @@ El programa se evalúa respondiendo **cuatro preguntas, en orden de exigencia**:
 
 ## Inversión y plazo
 
-**$850,000.00 MXN más IVA**, con **10 semanas de desarrollo y entrega** desde la firma del Addendum y el cierre de la validación de la taxonomía y los requerimientos — equivalente a **$4,250 MXN por asesor** para instalar una capacidad permanente de la organización, no un curso que caduca. Los costos de operación de las plataformas de IA del agente de práctica corren por cuenta de Sports World, con estimación mensual documentada. Detalle en el **[Addendum contractual](#academia-anexo)** y en la **[Estrategia Técnica de la Academia · §8](#academia-tecnica)**.
+**$850,000.00 MXN más IVA (USD $47,752.81 al tipo de cambio contractual de $17.80)**, con **10 semanas de desarrollo y entrega** desde la firma del Addendum y el cierre de la validación de la taxonomía y los requerimientos — equivalente a **$4,250 MXN (USD $238.76) por asesor** para instalar una capacidad permanente de la organización, no un curso que caduca. Los costos de operación de las plataformas de IA del agente de práctica corren por cuenta de Sports World, con estimación mensual documentada. Detalle en el **[Addendum contractual](#academia-anexo)** y en la **[Estrategia Técnica de la Academia · §8](#academia-tecnica)**.
 
 ## Documentos de este módulo
 

@@ -46,13 +46,13 @@ De conformidad con las Declaraciones que anteceden, las Partes están de acuerdo
 
 **SEGUNDA. Contraprestación.**
 
-*Resumen consolidado de la contraprestación de los tres proyectos:*
+*Resumen consolidado de la contraprestación de los tres proyectos. Para efectos de este Contrato, todas las equivalencias entre dólares y pesos se calculan al **tipo de cambio contractual fijo de $17.80 MXN por USD**:*
 
 | Proyecto | Contraprestación | Exigibilidad |
 |---|---|---|
-| **A — Rediseño Web** (Sección A) | USD $81,000.00 sin IVA (único) + iguala mensual de $35,000 MXN (Opción A elegida) | Desde la firma de este Contrato |
-| **B — Business Development System** (Sección B) | USD $4,850.00 más IVA | Desde la firma del Addendum del BDS (Primera Ter) |
-| **C — Academia Sports World** (Sección C) | $850,000.00 MXN más IVA ($986,000.00 con IVA) | Desde la firma del Addendum de la Academia (Primera Cuáter) |
+| **A — Rediseño Web** (Sección A) | USD $81,000.00 sin IVA (MXN $1,441,800.00), único + iguala mensual de $35,000 MXN (USD $1,966.29), Opción A elegida | Desde la firma de este Contrato |
+| **B — Business Development System** (Sección B) | USD $4,850.00 más IVA (MXN $86,330.00) | Desde la firma del Addendum del BDS (Primera Ter) |
+| **C — Academia Sports World** (Sección C) | $850,000.00 MXN más IVA (USD $47,752.81); $986,000.00 MXN con IVA | Desde la firma del Addendum de la Academia (Primera Cuáter) |
 
 *Sección A — Proyecto A (Rediseño Web). Contraprestación única (pago no recurrente):*
 
@@ -68,21 +68,21 @@ De conformidad con las Declaraciones que anteceden, las Partes están de acuerdo
 
 | Opción | Precio | Quién ejecuta los cambios |
 |---|---|---|
-| **A — Cliente autónomo (elegida)** | **$35,000 MXN/mes ($40,600 con IVA)** | EL CLIENTE, directo en el CMS |
-| B — FUPAI ejecuta (no elegida) | $55,000 MXN/mes ($63,800 con IVA) | EL PRESTADOR, cupo de 3 intervenciones simples o 1 compleja al mes, más la bolsa de 8 horas |
+| **A — Cliente autónomo (elegida)** | **$35,000 MXN/mes (USD $1,966.29); $40,600 MXN con IVA** | EL CLIENTE, directo en el CMS |
+| B — FUPAI ejecuta (no elegida) | $55,000 MXN/mes (USD $3,089.89); $63,800 MXN con IVA | EL PRESTADOR, cupo de 3 intervenciones simples o 1 compleja al mes, más la bolsa de 8 horas |
 
-Conforme a la **Opción A elegida**, la iguala mensual es de **$35,000 MXN ($40,600 con IVA)** y EL CLIENTE administra sus propios contenidos en el CMS; el soporte, el mantenimiento y la bolsa de 8 horas se prestan por igual. La Contraprestación es fija e incluye el valor de todos los Servicios y de los servicios relacionados necesarios para cumplir el objeto, sin ajustes salvo servicios adicionales pactados por escrito.
+Conforme a la **Opción A elegida**, la iguala mensual es de **$35,000 MXN (USD $1,966.29 al tipo de cambio contractual de $17.80); $40,600 MXN con IVA** y EL CLIENTE administra sus propios contenidos en el CMS; el soporte, el mantenimiento y la bolsa de 8 horas se prestan por igual. La Contraprestación es fija e incluye el valor de todos los Servicios y de los servicios relacionados necesarios para cumplir el objeto, sin ajustes salvo servicios adicionales pactados por escrito.
 
-*Sección B — Proyecto B (Business Development System).* La contraprestación adicional del Proyecto B (Primera Ter) es de **USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**, por la implementación de los entregables de la Primera Ter en el plazo de **8 (ocho) semanas** ahí pactado, en paralelo al Proyecto A, **exigible únicamente a partir de la suscripción del Addendum del BDS**. Podrá estructurarse como pago único de implementación más, en su caso, un recurrente por operación y mantenimiento del BDS, conforme se defina con EL CLIENTE en dicho Addendum. Es adicional e independiente de la contraprestación de la Sección A; su falta de pago no afecta la vigencia del Proyecto A.
+*Sección B — Proyecto B (Business Development System).* La contraprestación adicional del Proyecto B (Primera Ter) es de **USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA** —equivalente a **MXN $86,330.00** al tipo de cambio contractual de $17.80—, por la implementación de los entregables de la Primera Ter en el plazo de **8 (ocho) semanas** ahí pactado, en paralelo al Proyecto A, **exigible únicamente a partir de la suscripción del Addendum del BDS**. Podrá estructurarse como pago único de implementación más, en su caso, un recurrente por operación y mantenimiento del BDS, conforme se defina con EL CLIENTE en dicho Addendum. Es adicional e independiente de la contraprestación de la Sección A; su falta de pago no afecta la vigencia del Proyecto A.
 
-*Sección C — Proyecto C (Academia Sports World).* La contraprestación adicional del Proyecto C (Primera Cuáter) es de **$850,000.00 (ochocientos cincuenta mil pesos 00/100 M.N.) más IVA** —$986,000.00 con IVA al 16%—, por la implementación de los entregables de la Primera Cuáter en el plazo de **10 (diez) semanas** ahí pactado, **exigible únicamente a partir de la suscripción del Addendum de la Academia**. El calendario de pagos se pacta en dicho Addendum; adicionalmente podrá convenirse un recurrente por actualización de contenido y operación del agente de voz. Es adicional e independiente de la contraprestación de las Secciones A y B; su falta de pago no afecta la vigencia de los Proyectos A ni B. Los costos de operación de las plataformas de IA del agente de práctica quedan a cargo directo de EL CLIENTE (Cláusula Sexta Bis).
+*Sección C — Proyecto C (Academia Sports World).* La contraprestación adicional del Proyecto C (Primera Cuáter) es de **$850,000.00 (ochocientos cincuenta mil pesos 00/100 M.N.) más IVA** —equivalente a **USD $47,752.81** al tipo de cambio contractual de $17.80; $986,000.00 MXN con IVA al 16%—, por la implementación de los entregables de la Primera Cuáter en el plazo de **10 (diez) semanas** ahí pactado, **exigible únicamente a partir de la suscripción del Addendum de la Academia**. El calendario de pagos se pacta en dicho Addendum; adicionalmente podrá convenirse un recurrente por actualización de contenido y operación del agente de voz. Es adicional e independiente de la contraprestación de las Secciones A y B; su falta de pago no afecta la vigencia de los Proyectos A ni B. Los costos de operación de las plataformas de IA del agente de práctica quedan a cargo directo de EL CLIENTE (Cláusula Sexta Bis).
 
 **TERCERA. Forma de Pago.** **No habrá anticipos.** La contraprestación única se cubre en **dos pagos**, por secciones entregadas y aprobadas por escrito por EL CLIENTE, contra Comprobante Fiscal Digital por Internet (CFDI) con IVA desglosado y transferencia a la cuenta de la que EL PRESTADOR sea único titular:
 
-| Pago | Momento | % | MXN sin IVA |
-|---|---|---|---|
-| Pago parcial | Semana 4, contra la aprobación de la sección entregada (50% del sitio) | 50% | $720,900.00 |
-| Pago final | Después de la Semana 8, una vez obtenida la **aprobación total del proyecto** | 50% | $720,900.00 |
+| Pago | Momento | % | MXN sin IVA | USD sin IVA |
+|---|---|---|---|---|
+| Pago parcial | Semana 4, contra la aprobación de la sección entregada (50% del sitio) | 50% | $720,900.00 | $40,500.00 |
+| Pago final | Después de la Semana 8, una vez obtenida la **aprobación total del proyecto** | 50% | $720,900.00 | $40,500.00 |
 
 Sin anticipo: un pago parcial del 50% en la Semana 4 (contra la sección entregada y aprobada) y el pago final del 50% tras la aprobación total del proyecto. **Entrega condicionada al pago total:** EL CLIENTE acepta que **el código fuente y los repositorios finales no se entregarán hasta que haya liquidado el pago total del proyecto**; en tanto, EL PRESTADOR los conserva en garantía, sin perjuicio de la operación del sitio ya lanzado. El incumplimiento de pago de una parcialidad ya aprobada faculta a EL PRESTADOR a suspender las entregas subsecuentes hasta regularizarlo. La **iguala mensual se causa a partir del lanzamiento en firme del sitio (Semana 8)** —fecha desde la cual se computa el plazo mínimo de 6 (seis) meses— y se factura por mes vencido.
 
@@ -98,9 +98,9 @@ Sin anticipo: un pago parcial del 50% en la Semana 4 (contra la sección entrega
 
 | Concepto | Estimado |
 |---|---|
-| Plataforma de voz (tipo ElevenLabs) | $0.10 – $0.20 USD por minuto de conversación |
-| Modelo de razonamiento (LLM) | $0.001 – $0.003 USD por interacción |
-| Hospedaje de la lógica del agente | $50 – $150 USD por mes según volumen |
+| Plataforma de voz (tipo ElevenLabs) | $0.10 – $0.20 USD por minuto de conversación ($1.78 – $3.56 MXN) |
+| Modelo de razonamiento (LLM) | $0.001 – $0.003 USD por interacción ($0.02 – $0.05 MXN) |
+| Hospedaje de la lógica del agente | $50 – $150 USD por mes ($890 – $2,670 MXN) según volumen |
 
 *Escenarios mensuales (solo canal web):*
 
@@ -120,7 +120,7 @@ EL PRESTADOR entregará a EL CLIENTE el monitoreo de consumo y un reporte mensua
 
 **NOVENA. Incumplimiento, retrasos y stand-by.** Ante un incumplimiento, la parte afectada notificará a la incumplida, que contará con **5 (cinco) días naturales** para subsanar; de no hacerlo, la afectada podrá rescindir de pleno derecho, sin declaración judicial previa. El efecto de los retrasos se rige por lo siguiente:
 
-a) **Retrasos imputables a EL CLIENTE.** Cuando el retraso sea imputable a EL CLIENTE (por ejemplo, falta o demora en las aportaciones del Anexo Uno o en las aprobaciones del Anexo Dos), además de extenderse los plazos día por día, EL CLIENTE pagará a EL PRESTADOR los **días de stand-by del equipo** a razón de **USD $350.00 (trescientos cincuenta dólares 00/100) por cada día de stand-by**.
+a) **Retrasos imputables a EL CLIENTE.** Cuando el retraso sea imputable a EL CLIENTE (por ejemplo, falta o demora en las aportaciones del Anexo Uno o en las aprobaciones del Anexo Dos), además de extenderse los plazos día por día, EL CLIENTE pagará a EL PRESTADOR los **días de stand-by del equipo** a razón de **USD $350.00 (trescientos cincuenta dólares 00/100) por cada día de stand-by** (MXN $6,230.00 al tipo de cambio contractual de $17.80).
 
 b) **Retrasos imputables a EL PRESTADOR.** Cuando el retraso sea imputable a EL PRESTADOR, éste lo absorbe: corrige sin costo adicional para EL CLIENTE y sin cargo de stand-by, extendiéndose el plazo lo necesario, sin perjuicio de la regla de subsanación y rescisión anterior.
 
