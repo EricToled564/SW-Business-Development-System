@@ -149,6 +149,93 @@ const NEIGHBORHOOD_SYNONYMS = {
   "san jerónimo": ["san jerónimo lídice"],
 };
 
+// ─── Normalización (acentos/mayúsculas) y tolerancia a errores de dedo ───
+function normalizeTxt(s) {
+  return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, " ").trim();
+}
+function editDistance(a, b) {
+  const m = a.length, n = b.length;
+  if (Math.abs(m - n) > 2) return 3;
+  const dp = Array.from({ length: m + 1 }, (_, i) => [i].concat(Array(n).fill(0)));
+  for (let j = 1; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++) for (let j = 1; j <= n; j++) {
+    dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  }
+  return dp[m][n];
+}
+const NORM_SYNONYMS = (() => {
+  const out = {};
+  Object.keys(NEIGHBORHOOD_SYNONYMS).forEach(k => { out[normalizeTxt(k)] = NEIGHBORHOOD_SYNONYMS[k]; });
+  return out;
+})();
+// Catálogo de colonias sugeribles: colonias reales de los 49 clubes + zonas comunes (sinónimos)
+const COLONIA_OPTIONS = (() => {
+  const byKey = {};
+  CLUBS.forEach(c => {
+    const key = normalizeTxt(c.colonia);
+    if (!byKey[key]) byKey[key] = { label: c.colonia, sub: c.municipio, key };
+  });
+  Object.keys(NEIGHBORHOOD_SYNONYMS).forEach(name => {
+    const key = normalizeTxt(name);
+    const label = name.charAt(0).toUpperCase() + name.slice(1);
+    if (!byKey[key]) byKey[key] = { label, sub: "zona", key };
+    else if (/[áéíóúñ]/.test(name) && !/[áéíóúñ]/.test(byKey[key].label)) byKey[key].label = label;
+  });
+  return Object.values(byKey).sort((a, b) => a.label.localeCompare(b.label, "es"));
+})();
+function coloniaSuggestions(inputRaw, limit) {
+  const q = normalizeTxt(inputRaw);
+  if (q.length < 2) return [];
+  const scored = [];
+  for (const opt of COLONIA_OPTIONS) {
+    let score = -1;
+    if (opt.key === q) score = 0;
+    else if (opt.key.startsWith(q)) score = 1;
+    else if (opt.key.split(" ").some(w => w.startsWith(q))) score = 2;
+    else if (opt.key.includes(q)) score = 3;
+    else if (q.length >= 4) {
+      const d = Math.min(editDistance(q, opt.key), ...opt.key.split(" ").map(w => editDistance(q, w)));
+      if (d <= (q.length >= 6 ? 2 : 1)) score = 4 + d;
+    }
+    if (score >= 0) scored.push([score, opt]);
+  }
+  scored.sort((a, b) => a[0] - b[0] || a[1].label.localeCompare(b[1].label, "es"));
+  return scored.slice(0, limit || 6).map(x => x[1]);
+}
+
+// ─── Campo de colonia con sugerencias (estilo autocompletado), tolerante a acentos y typos ───
+function ColoniaAutocomplete({ value, onCommit, onEnterBlur }) {
+  const [focus, setFocus] = useState(false);
+  const sugs = focus ? coloniaSuggestions(value, 6) : [];
+  const exact = sugs.length === 1 && normalizeTxt(sugs[0].label) === normalizeTxt(value);
+  const showList = focus && sugs.length > 0 && !exact;
+  return (
+    <div style={{ position: "relative" }}>
+      <input type="text" value={value || ""} autoComplete="off"
+        onChange={(e) => onCommit(e.target.value)}
+        onFocus={() => setFocus(true)}
+        onBlur={() => setTimeout(() => setFocus(false), 150)}
+        onKeyDown={onEnterBlur} placeholder="Ej. Polanco"
+        className="w-full mt-1 px-4 py-3 rounded outline-none"
+        style={{ background: BRAND.gray1, color: BRAND.black, fontSize: "1rem", border: "1px solid " + BRAND.gray2 }} />
+      {showList && (
+        <div style={{ position: "absolute", top: "100%", left: 0, right: 0, zIndex: 30, background: BRAND.white, border: "1px solid " + BRAND.gray2, borderRadius: "0 0 8px 8px", boxShadow: "0 8px 20px rgba(0,0,0,0.10)", maxHeight: "13rem", overflowY: "auto" }}>
+          {sugs.map(s => (
+            <div key={s.key}
+              onMouseDown={(e) => { e.preventDefault(); onCommit(s.label); setFocus(false); }}
+              style={{ padding: "0.6rem 1rem", cursor: "pointer", fontSize: "0.95rem", color: BRAND.black, borderBottom: "1px solid " + BRAND.gray1 }}>
+              {s.label} <span style={{ color: BRAND.gray4, fontSize: "0.8rem" }}>· {s.sub}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Dominios de correo más comunes en México para el pre-llenado del email
+const EMAIL_DOMAINS = ["gmail.com", "hotmail.com", "outlook.com", "yahoo.com.mx", "icloud.com", "live.com.mx"];
+
 function kmToMinutes(km) {
   return Math.max(1, Math.round(km * 2.8));
 }
@@ -195,27 +282,34 @@ function resolveClubOffline(q15, q16, opts) {
   const preferClasses = opts.preferClasses || [];
   const experienceAmenities = opts.experienceAmenities || [];
 
-  const colInput = (q16.colonia || "").trim().toLowerCase();
+  const colInput = normalizeTxt(q16.colonia);
   const cpInput = (q16.cp || "").trim();
 
   // Resolve the anchor coordinates from the location input, then run the
   // radius-based experience-first decision tree from that anchor.
+  // El matching de colonia ignora acentos/mayúsculas y tolera errores de dedo.
   if (colInput) {
-    const direct = CLUBS.find(c => c.colonia.toLowerCase() === colInput);
+    const direct = CLUBS.find(c => normalizeTxt(c.colonia) === colInput);
     if (direct) return rankFromAnchor(direct.lat, direct.lng, null, null, experienceAmenities, preferClasses);
   }
-  if (colInput && NEIGHBORHOOD_SYNONYMS[colInput]) {
-    for (const targetColonia of NEIGHBORHOOD_SYNONYMS[colInput]) {
-      const synMatch = CLUBS.find(c => c.colonia.toLowerCase() === targetColonia);
+  if (colInput && NORM_SYNONYMS[colInput]) {
+    for (const targetColonia of NORM_SYNONYMS[colInput]) {
+      const synMatch = CLUBS.find(c => normalizeTxt(c.colonia) === normalizeTxt(targetColonia));
       if (synMatch) return rankFromAnchor(synMatch.lat, synMatch.lng, null, null, experienceAmenities, preferClasses);
     }
   }
   if (colInput && colInput.length >= 4) {
     const fuzzy = CLUBS.find(c => {
-      const cc = c.colonia.toLowerCase();
+      const cc = normalizeTxt(c.colonia);
       return cc.includes(colInput) || colInput.includes(cc);
     });
     if (fuzzy) return rankFromAnchor(fuzzy.lat, fuzzy.lng, null, null, experienceAmenities, preferClasses);
+    let bestClub = null, bestD = 3;
+    for (const c of CLUBS) {
+      const d = editDistance(colInput, normalizeTxt(c.colonia));
+      if (d < bestD) { bestD = d; bestClub = c; }
+    }
+    if (bestClub && bestD <= (colInput.length >= 6 ? 2 : 1)) return rankFromAnchor(bestClub.lat, bestClub.lng, null, null, experienceAmenities, preferClasses);
   }
   if (cpInput) {
     const direct = CLUBS.find(c => c.cp === cpInput);
@@ -799,9 +893,9 @@ function QuestionRenderer({ question, value, onChange, onNext, onBack, isFirst, 
               <p style={{ color: BRAND.gray4, fontSize: "0.75rem", textAlign: "center" }}>o</p>
               <div>
                 <label style={{ fontSize: "0.75rem", color: BRAND.gray4, letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 600 }}>Colonia</label>
-                <input type="text" value={(value || {}).colonia || ""} onChange={(e) => onChange({ ...(value || {}), colonia: e.target.value })} onKeyDown={onEnterBlur} placeholder="Ej. Polanco" className="w-full mt-1 px-4 py-3 rounded outline-none" style={{ background: BRAND.gray1, color: BRAND.black, fontSize: "1rem", border: "1px solid " + BRAND.gray2 }} />
+                <ColoniaAutocomplete value={(value || {}).colonia || ""} onCommit={(txt) => onChange({ ...(value || {}), colonia: txt })} onEnterBlur={onEnterBlur} />
               </div>
-              <p style={{ color: BRAND.gray4, fontSize: "0.7rem" }}>Ingresa un código postal de 5 dígitos o una colonia de al menos 3 letras.</p>
+              <p style={{ color: BRAND.gray4, fontSize: "0.7rem" }}>Ingresa un código postal de 5 dígitos, o escribe tu colonia y elige una sugerencia — no importan acentos ni errores de dedo.</p>
             </div>
           )}
 
@@ -1422,8 +1516,20 @@ function ContactCaptureScreen({ data, onContinue, onBack }) {
   const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
   const allValid = lastNameValid && phoneValid && emailValid;
 
+  // Sugerencias de dominio: sin "@" ofrece los más comunes; con "@" parcial, completa el dominio.
+  const emailSuggestions = (() => {
+    const v = email.trim();
+    if (!v || /\s/.test(v)) return [];
+    const at = v.indexOf("@");
+    const local = at === -1 ? v : v.slice(0, at);
+    if (!local || local.length < 2) return [];
+    const domPart = at === -1 ? "" : v.slice(at + 1).toLowerCase();
+    const doms = EMAIL_DOMAINS.filter(d => d.startsWith(domPart) && d !== domPart);
+    return (at === -1 ? doms.slice(0, 4) : doms).map(d => local + "@" + d);
+  })();
+
   const lastNameError = touched.lastName && !lastNameValid ? "Ingresa tu apellido (mínimo 2 letras)" : null;
-  const phoneError = touched.phone && !phoneValid ? "Ingresa un número de 10 dígitos" : null;
+  const phoneError = touched.phone && !phoneValid ? "El número debe tener exactamente 10 dígitos (llevas " + phoneDigits.length + ")" : null;
   const emailError = touched.email && !emailValid ? "Ingresa un correo electrónico válido" : null;
 
   const handleSubmit = () => {
@@ -1458,12 +1564,19 @@ function ContactCaptureScreen({ data, onContinue, onBack }) {
           </div>
           <div>
             <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: BRAND.black, marginBottom: "0.375rem", letterSpacing: "0.02em" }}>Número de celular</label>
-            <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} onBlur={() => setTouched(t => ({ ...t, phone: true }))} onKeyDown={onKey} placeholder="10 dígitos · ejemplo: 5512345678" style={inputStyle(!!phoneError)} maxLength={15} />
+            <input type="tel" inputMode="numeric" value={phone} onChange={(e) => setPhone(e.target.value.replace(/\D/g, "").slice(0, 10))} onBlur={() => setTouched(t => ({ ...t, phone: true }))} onKeyDown={onKey} placeholder="10 dígitos · ejemplo: 5512345678" style={inputStyle(!!phoneError)} maxLength={10} />
             {phoneError && <p style={{ color: BRAND.red, fontSize: "0.75rem", marginTop: "0.25rem" }}>{phoneError}</p>}
           </div>
           <div>
             <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: BRAND.black, marginBottom: "0.375rem", letterSpacing: "0.02em" }}>Correo electrónico</label>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} onBlur={() => setTouched(t => ({ ...t, email: true }))} onKeyDown={onKeyLast} placeholder="tu@correo.com" style={inputStyle(!!emailError)} />
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} onBlur={() => setTouched(t => ({ ...t, email: true }))} onKeyDown={onKeyLast} placeholder="tu@correo.com" style={inputStyle(!!emailError)} autoComplete="email" />
+            {emailSuggestions.length > 0 && (
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.375rem", marginTop: "0.375rem" }}>
+                {emailSuggestions.map(s => (
+                  <button key={s} type="button" onMouseDown={(e) => { e.preventDefault(); setEmail(s); }} style={{ background: BRAND.gray1, border: "1px solid " + BRAND.gray2, color: BRAND.black, fontSize: "0.75rem", padding: "0.3rem 0.65rem", borderRadius: "999px", cursor: "pointer", fontFamily: "inherit" }}>{s}</button>
+                ))}
+              </div>
+            )}
             {emailError && <p style={{ color: BRAND.red, fontSize: "0.75rem", marginTop: "0.25rem" }}>{emailError}</p>}
           </div>
         </div>
