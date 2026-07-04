@@ -78,6 +78,7 @@ const KNOWN_FIGURES = new Set([
   "238.76",                                       // 4,250 MXN por asesor → USD
   "1,434,680", "1434680",                         // traffic cost 80,600 USD → MXN
   "17.80",                                        // tipo de cambio contractual fijo
+  "43,000", "43000", "49,880", "49880", "2,415.73", "2415.73", // iguala recompuesta (sin hospedaje + bolsa 8 h)
   // alcance y plazos
   "8", "148", "49", "2", "4", "1", "15", "30", "365",
   // infraestructura / tráfico

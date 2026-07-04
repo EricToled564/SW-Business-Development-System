@@ -1,76 +1,91 @@
-# Sports World · Gastos Operativos Variables · V1.0
-## Estimación mensual de las plataformas a cargo de Sports World — tres escenarios de tráfico e interacciones
+# Sports World · Gastos Operativos Variables · V1.1
+## Estimación mensual de las plataformas a cargo de Sports World — desglose por componente y tres escenarios
 
-> **Documento general (los tres proyectos).** Consolida en un solo lugar los **costos de operación variables** que Sports World cubre directamente a los proveedores de IA, voz y mensajería (Contrato, Cláusula Sexta Bis), estimados bajo tres escenarios de tráfico e interacciones. Tarifas verificadas en **julio de 2026** contra las fuentes indicadas al final; todas las equivalencias al **tipo de cambio contractual fijo de $17.80 MXN por USD**.
+> **Documento general (los tres proyectos).** Consolida los **costos de operación variables** que Sports World cubre directamente a los proveedores de IA, voz y mensajería (Contrato, Cláusula Sexta Bis), con el **desglose completo de cómo se llega a cada cifra**. Tarifas verificadas en **julio de 2026** contra las fuentes indicadas al final; todas las equivalencias al **tipo de cambio contractual fijo de $17.80 MXN por USD**.
 
 ## Qué cubre este documento (y qué no)
 
-- **Cubre (variable, a cargo de Sports World):** la plataforma de voz de BES (web) y del agente de role-play de la Academia, el modelo de razonamiento (LLM) de los tres proyectos, las cuotas de mensajería de WhatsApp Business API (recordatorios del Proyecto A y conversaciones del BDS), el hospedaje de la lógica de los agentes y el servidor propio de la plataforma de la Academia.
-- **No cubre (fijo, ya pactado):** la **iguala mensual** de $35,000 MXN (USD $1,966.29); $40,600 MXN con IVA — que incluye el hospedaje del sitio, mantenimiento y soporte — se suma al final para mostrar el pago mensual total.
-- **No cubre (fuera de este cálculo):** la nómina de los operadores humanos del BDS (personal propio de Sports World), el presupuesto de pauta publicitaria, las licencias del CRM y las sesiones de certificación inicial de la Academia (se estiman aparte al definir el calendario de despliegue por región — [Estrategia Técnica de la Academia · §8](#academia-tecnica)).
+- **Cubre (variable, a cargo de Sports World):** la generación de la experiencia ideal y del brief del asesor con la API de Claude, la plataforma de voz de BES (canal web) y del agente de role-play de la Academia, el modelo de razonamiento (LLM) conversacional de BES en todos los canales, y las cuotas de mensajería de WhatsApp Business API.
+- **Hospedaje: sin costo de proveedor externo.** Toda la infraestructura de hospedaje —el servidor del sitio, la lógica de los agentes y la plataforma de la Academia— **la proporciona Sports World en infraestructura propia**, por lo que no aparece en este cálculo.
+- **Fijo (se suma al final):** la **iguala mensual recompuesta** de $43,000 MXN (USD $2,415.73); $49,880 MXN con IVA — mantenimiento, soporte 24/7 y bolsa de mejora de 8 horas; el hospedaje ya no forma parte de ella (Contrato, Cláusula Segunda).
+- **Fuera de este cálculo:** la nómina de los operadores humanos del BDS, el presupuesto de pauta, las licencias del CRM y las sesiones de certificación inicial de la Academia (**[Estrategia Técnica de la Academia · §8](#academia-tecnica)**).
 
 ## Tarifas de referencia verificadas (julio 2026)
 
 | Plataforma | Tarifa vigente | Verificación |
 |---|---|---|
-| **Plataforma de voz conversacional** (tipo ElevenLabs, plan Business) | $990 USD/mes con 12,375 minutos incluidos (~$0.08 USD/min efectivo; $1.42 MXN); excedente $0.08 USD/min. Alternativas (Vapi, Retell): $0.10 – $0.15 USD/min todo incluido | Página oficial de pricing, corroborada en 4 fuentes 2026 |
-| **Modelo de razonamiento (LLM)** — gama económica (Claude Haiku 4.5) | $1.00 USD entrada / $5.00 USD salida por millón de tokens → ~$0.002 – $0.01 USD por conversación típica | **Documento oficial de pricing de Anthropic (verificado directo)** |
-| **Reconocimiento de voz (ASR)** streaming (Deepgram Nova-3) | $0.0058 – $0.0077 USD por minuto | Página oficial, corroborada en 2 fuentes 2026 |
-| **WhatsApp Business API — México** (Meta, cobro **por mensaje** desde julio 2025) | Respuestas dentro de la ventana de 24 h: **gratis** · plantilla *utility*: $0.0080 USD · *marketing*: $0.0305 USD · *authentication*: $0.0207 USD · margen del proveedor intermediario (BSP): +$0.003 – $0.010 por mensaje | Modelo confirmado (Twilio/Meta); tarifas México cruzadas en 3 fuentes 2026 |
-| **Hospedaje de la lógica de los agentes** | $50 – $150 USD/mes ($890 – $2,670 MXN) según volumen | Cláusula Sexta Bis (rango vigente) |
-| **Servidor propio de la Academia** (aportación de Sports World) | $24 – $90 USD/mes ($427 – $1,602 MXN) — VPS de 2–4 vCPU / 4–8 GB (DigitalOcean, Fly.io o equivalente) | Comparativas de proveedores 2026 |
+| **Claude API (Anthropic)** — gama económica (Claude Haiku 4.5) | $1.00 USD entrada / $5.00 USD salida por millón de tokens | **Documento oficial de pricing de Anthropic (verificado directo)** |
+| **ElevenLabs** — plataforma de voz conversacional (plan Business) | ~$0.08 USD/min efectivo ($1.42 MXN); excedente $0.08 USD/min; alternativas (Vapi, Retell) $0.10 – $0.13 USD/min todo incluido | Página oficial de pricing, corroborada en 4 fuentes 2026 |
+| **WhatsApp Business API — México** (Meta, cobro **por mensaje** desde julio 2025) | Respuestas en ventana de 24 h: **gratis** · plantilla *utility*: $0.0080 USD · *marketing*: $0.0305 USD · margen del intermediario (BSP): +$0.003 – $0.010 por mensaje | Modelo confirmado (Twilio/Meta); tarifas México cruzadas en 3 fuentes 2026 |
 
-**Consistencia con el Contrato:** la banda de referencia contractual de $0.10 – $0.20 USD por minuto de voz (Sexta Bis) sigue siendo válida como **cota superior**; las tarifas verificadas en 2026 sitúan el costo efectivo en la parte baja de esa banda (~$0.08 – $0.13 USD/min).
+**Consistencia con el Contrato:** la banda contractual de $0.10 – $0.20 USD por minuto de voz (Sexta Bis) sigue siendo la **cota superior**; este documento usa $0.08 – $0.13 USD/min (tarifas verificadas 2026).
 
 ## Los motores de volumen: supuestos por escenario
 
 | Variable de volumen (mensual) | Conservador | Realista | Optimista |
 |---|---|---|---|
-| Tráfico del sitio (visitas) | 80,000 (actual) | 120,000 | 160,000 (meta del Proyecto A) |
-| Conversaciones con BES web (voz y texto) | ~600 | ~1,000 | ~1,500 |
-| Visitas agendadas (2 recordatorios WhatsApp c/u) | ~300 | ~600 | ~1,000 |
-| Leads del BDS por campañas | ~1,000 | ~2,500 | ~5,000 |
-| Plantillas *utility* fuera de ventana (BDS, ~2 por lead) | ~2,000 | ~5,000 | ~10,000 |
+| Tráfico del sitio (visitas) | 80,000 (actual) | 120,000 | 160,000 (meta) |
+| Conversaciones con BES web | ~600 | ~1,000 | ~1,500 |
+| — de las cuales **por voz (30%)** | ~180 | ~300 | ~450 |
+| — de las cuales **por texto (70%)** | ~420 | ~700 | ~1,050 |
+| Cuestionarios completados en el sitio (experiencia ideal generada) | ~900 | ~1,800 | ~3,200 |
+| Leads del BDS por campañas de redes sociales (**100% texto**) | ~1,000 | ~2,500 | ~5,000 |
+| — con cuestionario aplicado (experiencia ideal + brief) | ~500 | ~1,250 | ~2,500 |
+| — atendidos por "BES" texto como respaldo (~60%) | ~600 | ~1,500 | ~3,000 |
+| Visitas agendadas (2 recordatorios *utility* c/u) | ~300 | ~600 | ~1,000 |
 | Plantillas *marketing* (reactivación de bases) | 0 | ~1,000 | ~2,000 |
 | Adherencia a la práctica semanal de la Academia | ~50% | ~75% | ~100% |
 
-Los volúmenes de BES web y de la Academia son los mismos de los escenarios ya pactados (Contrato, Sexta Bis; [Estrategia Técnica de la Academia · §8](#academia-tecnica)); los del BDS y los recordatorios son supuestos de diseño **a calibrar con datos reales** en los primeros 60–90 días de operación.
+Los volúmenes de BES web y de la Academia provienen de los escenarios ya pactados (Sexta Bis; **[Academia · §8](#academia-tecnica)**); los del BDS y los recordatorios son supuestos de diseño **a calibrar con datos reales** en los primeros 60–90 días.
+
+## El desglose: cómo se calcula cada componente
+
+**1 · Claude API — experiencia ideal + brief del asesor.** Cada cuestionario completado dispara dos generaciones: la experiencia ideal para el prospecto y el brief para el asesor. Con Claude Haiku 4.5, cada par consume ~8,000–12,000 tokens de entrada (contexto RAG + respuestas) y ~2,500–3,500 de salida → **$0.02 – $0.04 USD por prospecto**. Volumen = cuestionarios del sitio + leads BDS con cuestionario aplicado.
+
+**2 · ElevenLabs — voz de BES web (solo el 30% de las interacciones).** Solo las conversaciones por voz pagan plataforma de voz; las de texto no. Duración media supuesta: **4 minutos** por conversación de voz → minutos = conversaciones de voz × 4, a **$0.08 – $0.13 USD/min** (incluye reconocimiento y síntesis de voz de la plataforma).
+
+**3 · Claude API — LLM conversacional de BES (todos los canales).** Todas las conversaciones de BES usan el LLM, sean de voz o de texto: las del canal web (600/1,000/1,500) y las del BDS por WhatsApp (**100% texto**, ~60% de los leads). Conversación típica multi-turno con contexto RAG → **$0.01 – $0.03 USD por conversación**.
+
+**4 · WhatsApp Business API.** Recordatorios del Proyecto A: 2 plantillas *utility* por visita agendada × $0.0080. BDS: ~2 plantillas *utility* fuera de ventana por lead × $0.0080 (las respuestas dentro de la ventana de 24 h son gratis) + plantillas *marketing* de reactivación × $0.0305 + margen del BSP.
+
+**5 · Academia — role-play de voz.** Se toman sin cambio los escenarios ya publicados en la **[Estrategia Técnica de la Academia · §8](#academia-tecnica)** (voz + LLM, según adherencia del 50/75/100%).
 
 ## Estimación mensual por componente (USD, sin IVA)
 
-| Componente | Conservador | Realista | Optimista |
-|---|---|---|---|
-| BES web — voz + LLM (Sexta Bis) | $200 – $500 | $350 – $800 | $550 – $1,200 |
-| Hospedaje de la lógica de los agentes | $50 – $150 | $50 – $150 | $50 – $150 |
-| Recordatorios WhatsApp del Proyecto A (*utility*) | ~$5 | ~$10 | ~$16 |
-| BDS — WhatsApp (*utility* + *marketing* + margen BSP) + LLM de "BES" texto | $30 – $50 | $105 – $140 | $210 – $270 |
-| Academia — role-play de voz ([§8](#academia-tecnica)) | $360 – $770 | $515 – $1,090 | $670 – $1,400 |
-| Servidor propio de la Academia | $24 – $90 | $24 – $90 | $24 – $90 |
-| **Total variable (USD)** | **$670 – $1,565** | **$1,055 – $2,280** | **$1,520 – $3,125** |
-| **Total variable (MXN al 17.80)** | **$11,930 – $27,860** | **$18,780 – $40,580** | **$27,060 – $55,625** |
+| # | Componente | Conservador | Realista | Optimista |
+|---|---|---|---|---|
+| 1 | Claude API — experiencia ideal + brief (1,400 / 3,050 / 5,700 prospectos × $0.02–0.04) | $28 – $56 | $61 – $122 | $114 – $228 |
+| 2 | ElevenLabs — voz BES web (720 / 1,200 / 1,800 min × $0.08–0.13) | $58 – $94 | $96 – $156 | $144 – $234 |
+| 3 | Claude API — LLM de BES web, voz y texto (600 / 1,000 / 1,500 conv. × $0.01–0.03) | $6 – $18 | $10 – $30 | $15 – $45 |
+| 4 | Claude API — LLM de "BES" texto en BDS (600 / 1,500 / 3,000 conv. × $0.01–0.03) | $6 – $18 | $15 – $45 | $30 – $90 |
+| 5 | WhatsApp — recordatorios A + *utility* y *marketing* BDS + margen BSP | $26 – $36 | $90 – $105 | $177 – $197 |
+| 6 | Academia — role-play de voz (**[§8](#academia-tecnica)**) | $360 – $770 | $515 – $1,090 | $670 – $1,400 |
+| | **Total variable (USD)** | **$485 – $990** | **$785 – $1,550** | **$1,150 – $2,195** |
+| | **Total variable (MXN al 17.80)** | **$8,635 – $17,620** | **$13,975 – $27,590** | **$20,470 – $39,070** |
+
+Nótese que la Academia es el componente dominante del gasto variable (~70% del total): es el único donde **toda** la interacción es por voz y con 200 usuarios recurrentes.
 
 ## Pago mensual total de Sports World por escenario
 
-Sumando la **iguala fija** de los servicios recurrentes del Proyecto A ($40,600 MXN con IVA) a los variables anteriores:
+Sumando la **iguala fija recompuesta** ($49,880 MXN con IVA; USD $2,802.25) a los variables anteriores:
 
 | Escenario | Variables (MXN) | Iguala con IVA (MXN) | **Pago mensual total (MXN)** | Equivalente (USD) |
 |---|---|---|---|---|
-| **Conservador** | $11,930 – $27,860 | $40,600 | **$52,530 – $68,460** | $2,951 – $3,846 |
-| **Realista** | $18,780 – $40,580 | $40,600 | **$59,380 – $81,180** | $3,336 – $4,561 |
-| **Optimista** | $27,060 – $55,625 | $40,600 | **$67,660 – $96,225** | $3,801 – $5,406 |
+| **Conservador** | $8,635 – $17,620 | $49,880 | **$58,515 – $67,500** | $3,287 – $3,792 |
+| **Realista** | $13,975 – $27,590 | $49,880 | **$63,855 – $77,470** | $3,587 – $4,352 |
+| **Optimista** | $20,470 – $39,070 | $49,880 | **$70,350 – $88,950** | $3,952 – $4,997 |
 
-**Lectura ejecutiva:** aun en el escenario optimista —el sitio duplicando su tráfico, 5,000 leads mensuales del BDS y los 200 asesores practicando cada semana—, el gasto operativo variable total se mantiene por debajo de **$56,000 MXN al mes**, y el desembolso mensual completo de Sports World (variables + iguala) queda en un rango de **$68,000 – $96,000 MXN**. El costo variable crece de forma aproximadamente lineal con el uso: más gasto variable significa, por construcción, más tráfico, más leads atendidos y más asesores entrenados.
+**Lectura ejecutiva:** con el hospedaje en infraestructura propia y solo el 30% de las interacciones de BES web por voz, el gasto variable baja de forma importante respecto a un modelo todo-voz: aun en el escenario optimista se mantiene por debajo de **$40,000 MXN al mes**, y el desembolso mensual completo (variables + iguala) queda entre **$70,000 y $89,000 MXN**. El costo crece de forma aproximadamente lineal con el uso: más gasto variable significa más tráfico, más leads atendidos y más asesores entrenados.
 
 ## Notas
 
-- Los variables se pagan **directamente a los proveedores**, en su mayoría facturados en USD y **sin IVA mexicano** (proveedores extranjeros); la iguala se muestra con IVA. Los totales son órdenes de magnitud para presupuestación, no cotizaciones cerradas.
-- EL PRESTADOR entrega **monitoreo de consumo y reporte mensual** de todos estos conceptos (Contrato, Sexta Bis; [BDS · Estrategia Técnica](#bds-tecnica); [Estrategia Técnica de la Academia · §8](#academia-tecnica)).
-- Los supuestos de volumen del BDS y los recordatorios se **recalibran con datos reales** a los 60–90 días, junto con la cadencia de la Academia.
+- Los variables se pagan **directamente a los proveedores**, en su mayoría facturados en USD y sin IVA mexicano (proveedores extranjeros); la iguala se muestra con IVA. Los totales son órdenes de magnitud para presupuestación, no cotizaciones cerradas.
+- La banda contractual de la Sexta Bis ($200–$1,200 USD según escenario, modelo todo-voz) permanece como **cota superior contractual**; este desglose la refina con el supuesto 30% voz / 70% texto y el BDS 100% texto.
+- EL PRESTADOR entrega **monitoreo de consumo y reporte mensual** de todos estos conceptos (Sexta Bis; **[BDS · Estrategia Técnica](#bds-tecnica)**; **[Academia · §8](#academia-tecnica)**).
+- Los supuestos de volumen del BDS, el % de voz y la duración media de conversación se **recalibran con datos reales** a los 60–90 días.
 
 ## Fuentes de las tarifas (julio 2026)
 
 - **Anthropic (LLM):** documento oficial de pricing de la API de Claude — verificado directo.
 - **ElevenLabs (voz):** página oficial de pricing de la Agents Platform, corroborada por 4 análisis independientes de 2026 (Flexprice, Cekura, CostBench, centro de ayuda de ElevenLabs).
 - **Meta / WhatsApp Business API:** modelo por mensaje vigente desde el 1 de julio de 2025 (confirmado por el aviso oficial de Twilio) y tarifas para México cruzadas en 3 fuentes de 2026 (Simla, Chat2desk MX, Grow Flow).
-- **Deepgram (ASR):** página oficial de pricing, corroborada por 2 comparativas de 2026.
-- **Hosting (VPS):** precios publicados de DigitalOcean, Fly.io, Render y Railway (comparativas 2026).

@@ -48,7 +48,7 @@ Esta página da seguimiento a **cada duda y punto abierto** planteado en la reun
 
 ## Cierre comercial (Final Upgrade ↔ Sports World)
 
-- ✅ **Cotización integrada** en el Contrato (Cláusula Segunda), web-only: contraprestación única **$81,000 USD / $1,441,800 MXN** sin IVA (**$1,672,488 MXN** con IVA); iguala mensual elegida **Opción A $35,000 MXN ($40,600 con IVA)**.
+- ✅ **Cotización integrada** en el Contrato (Cláusula Segunda), web-only: contraprestación única **$81,000 USD / $1,441,800 MXN** sin IVA (**$1,672,488 MXN** con IVA); iguala mensual elegida **Opción A $43,000 MXN ($49,880 con IVA)** — recompuesta: hospedaje en infraestructura del cliente y bolsa de 8 horas incorporada al cálculo.
 - ✅ **Forma de pago** (Cláusula Tercera): **sin anticipo**; **50% en la Semana 4** (contra la sección entregada y aprobada) y **50% final tras la aprobación total** (Semana 8). El **código fuente y los repositorios finales se entregan únicamente tras el pago total** (Cláusula Séptima).
 - ✅ **Costos operativos** a cargo de SW (Cláusula Sexta Bis): voz, LLM y hospedaje del agente, con escenarios conservador/medio/optimista.
 - ✅ **Stand-by por retrasos del cliente:** USD $350/día ($6,230 MXN, Cláusula Novena).
