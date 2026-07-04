@@ -17,6 +17,7 @@
 | **Claude API (Anthropic)** — gama económica (Claude Haiku 4.5) | $1.00 USD entrada / $5.00 USD salida por millón de tokens | **Documento oficial de pricing de Anthropic (verificado directo)** |
 | **ElevenLabs** — plataforma de voz conversacional (plan Business) | ~$0.08 USD/min efectivo ($1.42 MXN); excedente $0.08 USD/min; alternativas (Vapi, Retell) $0.10 – $0.13 USD/min todo incluido | Página oficial de pricing, corroborada en 4 fuentes 2026 |
 | **WhatsApp Business API — México** (Meta, cobro **por mensaje** desde julio 2025) | Respuestas en ventana de 24 h: **gratis** · plantilla *utility*: $0.0080 USD · *marketing*: $0.0305 USD · margen del intermediario (BSP): +$0.003 – $0.010 por mensaje | Modelo confirmado (Twilio/Meta); tarifas México cruzadas en 3 fuentes 2026 |
+| **Google Maps Platform** (Places Autocomplete para direcciones + Routes API para distancias por ruta real) | Nivel Essentials: **10,000 llamadas gratis al mes por SKU**; excedente ~$2 – $40 USD por 1,000 según SKU y volumen | Página oficial de pricing de Google, corroborada en fuentes 2026 |
 
 **Bandas de planeación:** para la voz se usa $0.08 – $0.13 USD/min (tarifas verificadas 2026); como margen prudente de presupuestación puede tomarse una cota superior de $0.20 USD/min.
 
@@ -64,6 +65,8 @@ Los volúmenes de BES web y de la Academia provienen de los escenarios ya pactad
 | | **Total variable (MXN al 17.80)** | **$8,635 – $17,620** | **$13,975 – $27,590** | **$20,470 – $39,070** |
 
 Nótese que la Academia es el componente dominante del gasto variable (~70% del total): es el único donde **toda** la interacción es por voz y con 200 usuarios recurrentes.
+
+**Google Maps Platform** (autocompletado de direcciones y distancias por ruta con tráfico, decisión de producción del sitio): con los volúmenes de estos escenarios (~900 – 3,200 cuestionarios/mes) opera **dentro del tramo gratuito de 10,000 llamadas mensuales por SKU** o apenas por encima; se monitorea junto con el resto de los conceptos y no altera los totales de la tabla.
 
 ## Pago mensual total de Sports World por escenario
 

@@ -278,6 +278,40 @@ function ColoniaAutocomplete({ value, onCommit, onEnterBlur }) {
 // Dominios de correo más comunes en México para el pre-llenado del email
 const EMAIL_DOMAINS = ["gmail.com", "hotmail.com", "outlook.com", "yahoo.com.mx", "icloud.com", "live.com.mx"];
 
+// ─── Distancias por ruta real (Google Routes API) ───
+// Si hay API key configurada (window.DEMO_GMAPS_KEY), los minutos del resultado se
+// refinan con tiempos de manejo reales (computeRouteMatrix, tráfico consciente).
+// Sin key, o si la llamada falla, se conserva la heurística de línea recta.
+async function refineDistancesWithGoogle(clubResult) {
+  const key = (typeof window !== "undefined" && window.DEMO_GMAPS_KEY) || "";
+  if (!key || !clubResult || !clubResult._anchor) return clubResult;
+  try {
+    const destinos = [clubResult.principal].concat(clubResult.otros || []);
+    const coords = destinos.map(c => { const k = CLUBS.find(x => "Sports World " + x.nombre === c.nombre || x.tag === c.tag); return k ? { latitude: k.lat, longitude: k.lng } : null; });
+    if (coords.some(c => !c)) return clubResult;
+    const resp = await fetch("https://routes.googleapis.com/distanceMatrix/v2:computeRouteMatrix", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Goog-Api-Key": key, "X-Goog-FieldMask": "originIndex,destinationIndex,duration,distanceMeters,condition" },
+      body: JSON.stringify({
+        origins: [{ waypoint: { location: { latLng: { latitude: clubResult._anchor.lat, longitude: clubResult._anchor.lng } } } }],
+        destinations: coords.map(ll => ({ waypoint: { location: { latLng: ll } } })),
+        travelMode: "DRIVE",
+        routingPreference: "TRAFFIC_AWARE"
+      })
+    });
+    if (!resp.ok) return clubResult;
+    const rows = await resp.json();
+    (Array.isArray(rows) ? rows : []).forEach(r => {
+      if (!r || r.condition === "ROUTE_NOT_FOUND" || !r.duration) return;
+      const c = destinos[r.destinationIndex];
+      const secs = parseInt(String(r.duration).replace("s", ""), 10);
+      if (c && isFinite(secs) && secs > 0) { c.distancia_min = Math.max(1, Math.round(secs / 60)); c.distancia_por_ruta = true; }
+    });
+    if (Array.isArray(clubResult.otros)) clubResult.otros.sort((a, b) => (a.distancia_min || 999) - (b.distancia_min || 999));
+    return clubResult;
+  } catch (e) { return clubResult; }
+}
+
 function kmToMinutes(km) {
   return Math.max(1, Math.round(km * 2.8));
 }
@@ -375,6 +409,11 @@ function clubMeetsExperience(club, experienceAmenities, preferClasses) {
 }
 
 function rankFromAnchor(lat, lng, knownClub, knownDistMin, experienceAmenities, preferClasses) {
+  const r = rankFromAnchorCore(lat, lng, knownClub, knownDistMin, experienceAmenities, preferClasses);
+  if (r) r._anchor = { lat, lng };
+  return r;
+}
+function rankFromAnchorCore(lat, lng, knownClub, knownDistMin, experienceAmenities, preferClasses) {
   preferClasses = preferClasses || [];
   experienceAmenities = Array.isArray(experienceAmenities) ? experienceAmenities : (experienceAmenities ? [experienceAmenities] : []);
 
@@ -1932,6 +1971,7 @@ export default function App() {
       }
       const clubResult = await resolveClub(answers.Q15, answers.Q16, resolveOpts);
       if (!clubResult) throw new Error("No pudimos resolver tu ubicación. Verifica el CP o la colonia.");
+      await refineDistancesWithGoogle(clubResult);
       const club = clubResult.principal;
       const otrosClubes = clubResult.otros;
       const experienceContext = clubResult.experienceContext || null;

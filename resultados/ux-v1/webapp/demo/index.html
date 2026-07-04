@@ -43,7 +43,10 @@
 <body>
   <!-- Proxy autónomo en Vercel: el demo llama aquí y la API key vive como env var en Vercel.
        El navegador nunca ve la llave; ningún visitante necesita pegar nada. -->
-  <script>window.DEMO_PROXY_URL = "https://sw-claude-proxy.eric-bfb.workers.dev";</script>
+  <script>window.DEMO_PROXY_URL = "https://sw-claude-proxy.eric-bfb.workers.dev";
+  // API key de Google Maps (Routes API) para distancias por ruta real con tráfico.
+  // Vacío = el demo usa la heurística de línea recta. En producción se restringe por referrer.
+  window.DEMO_GMAPS_KEY = "";</script>
 
   <!-- Bring-your-own-key: solo se usa si NO hay proxy configurado arriba. -->
   <div id="keybar">
@@ -82,7 +85,7 @@
     })();
   </script>
 
-  <script src="colonias-mx.js?v=20260704d"></script>
-  <script src="app.demo.js?v=20260704d"></script>
+  <script src="colonias-mx.js?v=20260704e"></script>
+  <script src="app.demo.js?v=20260704e"></script>
 </body>
 </html>
