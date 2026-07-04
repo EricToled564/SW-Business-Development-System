@@ -7,7 +7,7 @@ El eje de **todo** el proyecto —Proyecto A, Proyecto B y Proyecto C— es uno 
 |---|---|
 | **Cliente** | Grupo Sports World |
 | **Agencia** | Final Upgrade AI |
-| **Timeline** | 8 semanas el Proyecto A (kickoff → go-live) · 10 semanas el Proyecto C · Proyecto B por Addendum |
+| **Timeline** | 8 semanas el Proyecto A (kickoff → go-live) · 8 semanas el Proyecto B (en paralelo al A) · 10 semanas el Proyecto C |
 | **Estabilización posterior** | 2 a 4 semanas |
 | **Documento** | Resumen Ejecutivo · Junio 2026 · Confidencial |
 
@@ -135,7 +135,7 @@ El indicador rector es el **tiempo al primer contacto**. El BDS extiende el mism
 
 ### 12 · Lo comercial
 
-El BDS es un **alcance independiente**: su contratación no modifica el Proyecto A ni su precio. La contraprestación adicional es de **USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**, pactada en el **[Addendum del BDS](#bds-anexo)**. En tanto no se suscriba dicho Addendum, el Proyecto B no genera obligación ni costo para ninguna de las Partes.
+El BDS es un **alcance independiente**: su contratación no modifica el Proyecto A ni su precio. La contraprestación adicional es de **USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA**, con un **plazo de desarrollo y entrega de 8 semanas** desde la firma del **[Addendum del BDS](#bds-anexo)**, ejecutado **en paralelo al Proyecto A**. En tanto no se suscriba dicho Addendum, el Proyecto B no genera obligación ni costo para ninguna de las Partes.
 
 ## Academia Sports World (Proyecto C)
 
@@ -165,7 +165,7 @@ La Academia es un **alcance independiente**: su contratación no modifica el Pro
 ## Próximo paso
 
 **Proyecto A:** aprobar esta propuesta, cerrar el kickoff con la firma del checklist de dependencias y arrancar las ocho semanas. A partir de ahí, el calendario corre.
-**Proyecto B (BDS):** cerrar el alcance y el listado de requerimientos y suscribir el Addendum; a partir de la firma, el Equipo 5 (BDS) arranca según lo descrito en el **[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
+**Proyecto B (BDS):** cerrar el alcance y el listado de requerimientos y suscribir el Addendum; a partir de la firma corren sus **8 semanas** de desarrollo y entrega, en paralelo al Proyecto A, con el Equipo 5 (BDS) según lo descrito en el **[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
 **Proyecto C (Academia):** validar con Sports World el mapeo de la taxonomía del cuestionario a los siete componentes y la segmentación por club; cerrar el listado de requerimientos y suscribir el Addendum. A partir de la firma corren las **10 semanas** de desarrollo y entrega, con el marco de arranque del **[Plan de Ejecución · §11](#execution:11-proyecto-c-academia-marco-de-ejecucin)**.
 
 **Escenario recomendado si los tres se firman en el kickoff:** el Proyecto A corre sus 8 semanas; el Equipo 5 (BDS) integra sobre los componentes del sitio desde que están operativos (Semanas 3–6) y lanza junto con él; la Academia valida su taxonomía en paralelo, produce la Fase 1 desde la firma y activa la Fase 2 cuando el motor de BES está disponible — el sistema completo queda en operación en un horizonte del orden de **12 semanas**, no de 26.
