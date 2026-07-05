@@ -48,11 +48,12 @@ En síntesis: el **contenido y los datos de la Academia viven en infraestructura
 
 ## 5 · Motor de aprendizaje continuo
 
-El sistema **no se queda estático** una vez lanzado: usa el propio historial de conversaciones de role-play, agregado y sin datos de prospectos reales (§3, §7), para evolucionar con el tiempo.
+El sistema **no se queda estático** una vez lanzado: evoluciona con el uso. **Qué ve y qué no ve el sistema:** el sistema **nunca accede a las conversaciones reales entre asesores y clientes** — esas conversaciones no se graban, no pasan por ninguna plataforma del proyecto y **no se integran al CRM en ningún momento**; el CRM registra datos de etapa (lead, cita, visita, membresía), no conversaciones. Las únicas fuentes de aprendizaje son:
 
-- **Detección de patrones nuevos.** Conforme se acumulan sesiones, el motor identifica objeciones o combinaciones de objeciones que aparecen con frecuencia creciente pero no estaban cubiertas en el guion inicial —por ejemplo, una objeción de un competidor nuevo en una plaza— y las propone como candidatas a nuevos escenarios.
-- **Calibración de la rúbrica de evaluación.** Si un patrón de respuesta del asesor se asocia consistentemente con mejor desempeño posterior en el CRM (Nivel 3 de evaluación, **[Medición](#academia-medicion)**), el criterio de evaluación se ajusta para reconocerlo con mayor peso.
-- **Gobernanza del cambio.** Todo ajuste al guion o a la rúbrica pasa por una revisión periódica con Sports World antes de entrar en producción — el motor **propone**, Sports World y EL PRESTADOR **validan**. Esto evita que el sistema derive hacia patrones no deseados sin supervisión.
+- **Las sesiones de práctica (internas al sistema).** El historial de role-play —asesor contra cliente simulado, agregado y sin datos de prospectos reales (§3, §7)— muestra dónde falla cada asesor, qué escenarios resultan demasiado fáciles o difíciles y qué componente rebota más en el equipo.
+- **Las métricas de resultado del CRM (números, no conversaciones).** Si un patrón de desempeño en la práctica se asocia consistentemente con mejores resultados de conversión por asesor (Nivel 3 de evaluación, **[Medición](#academia-medicion)**), la rúbrica se ajusta para reconocerlo con mayor peso. Es una correlación entre puntajes de práctica y cifras de etapa del CRM — no requiere ni utiliza contenido de conversación alguno.
+- **El reporte humano del campo.** Las objeciones nuevas del mercado (un competidor nuevo en una plaza, una promoción rival) **no las detecta el sistema por sí solo**, porque no escucha el campo: entran por un **canal formal de reporte** de líderes regionales y asesores, y se convierten en candidatas a nuevos escenarios.
+- **Gobernanza del cambio.** Todo escenario o ajuste de rúbrica —incluidos los propuestos por reporte de campo— pasa por revisión con Sports World y por la misma certificación que los escenarios iniciales antes de entrar en producción: el sistema y el campo **proponen**, Sports World y EL PRESTADOR **validan**. Esto evita que el sistema derive hacia patrones no deseados sin supervisión.
 
 ## 6 · Frecuencia de práctica y duración estimada
 
