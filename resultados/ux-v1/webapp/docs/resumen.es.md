@@ -104,7 +104,7 @@ La verificación de Google Business es el único elemento de ruta crítica y se 
 
 ### 8 · KPIs de corrección del Rediseño Web
 
-Nos comprometemos con los **KPIs verificables del Contrato › Anexo Dos, Sección IV**: 49 de 49 páginas de club rastreables (de 0), 116 enlaces rotos → 0, 20 URLs con backslash → 0, schema JSON-LD en los 49 clubes, 11 páginas sin H1 → 0, Core Web Vitals en umbral y la **cobertura de keywords unbranded 31.1% → 55–65%** (benchmark David Lloyd Clubs: 31% → 74%). Señalamos como **objetivo comercial alcanzable —no comprometido**, porque depende de Google y del embudo interno de Sports World: el tráfico mensual promedio 80,000 → 160,000. El detalle vive en el Contrato › Anexo Dos, Sección IV; la **calculadora de ROI** interactiva, en su documento propio (**[Calculadora de ROI](#roi)**).
+Nos comprometemos con los **KPIs verificables del Contrato › Anexo Dos, Sección IV**: 49 de 49 páginas de club rastreables (de 0), 116 enlaces rotos → 0, 20 URLs con backslash → 0, schema JSON-LD en los 49 clubes, 11 páginas sin H1 → 0, Core Web Vitals en umbral y la **cobertura de keywords unbranded 31.1% → 55–65%** (benchmark David Lloyd Clubs: 31% → 74%). Adicionalmente, el **Contrato · Anexo Cuatro** recoge los **targets comerciales post-lanzamiento** —aspiracionales, no vinculantes—: tráfico mensual 80,000 → 120,000–160,000, cuestionarios y visitas agendadas por mes, con el compromiso del proveedor de acompañar su consecución dentro de la iguala, dado que dependen también de la inversión en pauta y del embudo interno de Sports World. El detalle vive en el Contrato › Anexo Dos, Sección IV; la **calculadora de ROI** interactiva, en su documento propio (**[Calculadora de ROI](#roi)**).
 
 ### Lo comercial (Proyecto A)
 
