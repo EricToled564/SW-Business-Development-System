@@ -83,7 +83,7 @@ La máquina de estados de fases tiene exactamente siete valores, ejecutados en e
 
 1. **`welcome`** — Pantalla de introducción estática con el wordmark de Sports World, una propuesta de valor de una línea y una única acción primaria ("Comenzar"). Sin entrada más allá del botón de inicio.
 2. **`questionnaire`** — Se renderiza cuando el prospecto hace clic en "Comenzar". El motor del cuestionario presenta una pregunta a la vez, avanzando el índice `step`. Cada pregunta es una pantalla autocontenida con su propio encabezado, entrada, texto de apoyo y botones Siguiente/Atrás. El cuestionario es no lineal en el orden de las opciones pero lineal en la secuencia de preguntas (sujeto a ramificación condicional —ver §3).
-3. **`loading`** — Se dispara cuando el prospecto envía la pregunta final. Una animación de spinner corre mientras el resolver computa la recomendación (recuperando los datos de club y clases descritos en §5) y la llamada a la API del modelo de lenguaje se completa de forma asíncrona. El prospecto no puede interactuar durante esta fase. Duración promedio: 4–8 segundos según la latencia de red.
+3. **`loading`** — Se dispara cuando el prospecto envía la pregunta final. Una animación de spinner corre mientras el resolver calcula la recomendación (recuperando los datos de club y clases descritos en §5) y la llamada a la API del modelo de lenguaje se completa de forma asíncrona. El prospecto no puede interactuar durante esta fase. Duración promedio: 4–8 segundos según la latencia de red.
 4. **`result`** — La página de la *experiencia ideal*. El prospecto aterriza aquí una vez que el resolver retorna exitosamente. (El modelo de lenguaje normalmente también retorna; si falla repetidamente, el prospecto igual llega a `result` en el modo de respaldo descrito en §4.14.) Es la pantalla más larga por volumen de contenido y el entregable principal para el prospecto. Contiene dos páginas de contenido separadas visualmente (ver §4.13).
 5. **`contact_capture`** — Se dispara cuando el prospecto hace clic en "AGENDAR VISITA GUIADA" en la pantalla de resultado. Un formulario obligatorio de tres campos (apellido, teléfono celular, correo) bloquea el avance hasta que los tres pasen la validación. El prospecto puede regresar a `result` mediante una flecha de retroceso. (Ver §4.11.)
 6. **`schedule`** — Se dispara cuando el prospecto envía datos de contacto válidos. Un widget de calendario presenta los próximos 14 días con franjas horarias predefinidas **dentro del horario de atención del club**. El prospecto elige una combinación, confirma y avanza. **No se verifica disponibilidad ni se crea una reservación**: la fecha y hora elegidas se registran como el *requerimiento de visita* del prospecto —se incluyen en el lead escrito al CRM y se envían por correo al club, que confirma y coordina la visita.
@@ -105,7 +105,7 @@ La navegación hacia adelante es universal: cada fase tiene una acción primaria
 - Desde `schedule` → "← Cambiar datos de contacto" regresa a `contact_capture`.
 - Desde `briefing` → "← Cambiar fecha u hora" regresa a `schedule`. "Terminar" cierra la sesión (regresa a `welcome` tras una confirmación). Si el prospecto cambia la cita y vuelve a confirmar, el registro del lead se actualiza en su lugar en vez de duplicarse (ver §5.2).
 
-Bloquear la navegación hacia atrás desde `result` es intencional, por dos razones. Primera, el copy generado por el modelo se computa una sola vez y de forma determinista; cambiar las entradas tras ver la salida forzaría ya sea un recómputo (una llamada costosa al modelo de lenguaje) o una pantalla obsoleta y engañosa. Cambiar de club desde el panel de alternativas es distinto: recomputa los tres bloques y vuelve a correr el ranker, pero eso es un recómputo acotado al club, no una reapertura de las respuestas del cuestionario (ver §4.1). Segunda, el contrato mental del prospecto es simple —responder las preguntas, ver la recomendación— y reabrir las respuestas socavaría la autoridad de esa recomendación.
+Bloquear la navegación hacia atrás desde `result` es intencional, por dos razones. Primera, el copy generado por el modelo se calcula una sola vez y de forma determinista; cambiar las entradas tras ver la salida forzaría ya sea un recómputo (una llamada costosa al modelo de lenguaje) o una pantalla obsoleta y engañosa. Cambiar de club desde el panel de alternativas es distinto: recalcula los tres bloques y vuelve a correr el ranker, pero eso es un recómputo acotado al club, no una reapertura de las respuestas del cuestionario (ver §4.1). Segunda, el contrato mental del prospecto es simple —responder las preguntas, ver la recomendación— y reabrir las respuestas socavaría la autoridad de esa recomendación.
 
 ## 1.4 Sin autenticación, sin persistencia
 
@@ -258,9 +258,9 @@ El orden de selección se preserva: el primer toque se convierte en `Q4[0]` (pri
 
 ## 3.4 Resolver dinámico a partir de Q15 + Q16 + experiencia ideal
 
-El resolver de club es determinista y computa su resultado sin ninguna latencia de cara al usuario más allá de la recuperación de datos. Toma la ubicación del prospecto más una descripción computada de la **experiencia ideal**, y aplica un árbol de decisión basado en radio cuya prioridad es entregar la experiencia ideal por encima de minimizar la distancia. El resolver opera sobre la instantánea de datos de club y clases descrita en §5 —en vivo para las porciones volátiles (estado operativo, disponibilidad y horario de clases), periódica para las porciones estables (línea base del directorio, banderas de amenidades).
+El resolver de club es determinista y calcula su resultado sin ninguna latencia de cara al usuario más allá de la recuperación de datos. Toma la ubicación del prospecto más una descripción calculada de la **experiencia ideal**, y aplica un árbol de decisión basado en radio cuya prioridad es entregar la experiencia ideal por encima de minimizar la distancia. El resolver opera sobre la instantánea de datos de club y clases descrita en §5 —en vivo para las porciones volátiles (estado operativo, disponibilidad y horario de clases), periódica para las porciones estables (línea base del directorio, banderas de amenidades).
 
-La experiencia ideal tiene dos partes computadas:
+La experiencia ideal tiene dos partes calculadas:
 1. **Clases ideales** (`preferClasses`) — el conjunto de clases alineadas con los objetivos Q4 del prospecto, computado antes de elegir el club (ver §4.4). Un club "cumple" el lado de clases de la experiencia cuando ofrece al menos una de estas.
 2. **Amenidades de experiencia** — a lo sumo dos, cada una requerida solo bajo su disparador: **alberca** (cuando el modo de entrenamiento resuelto es acuático, §2.4) y **FitKidz** (cuando Q14 ∈ {familia} y Q14b = "Sí"). El cuestionario no pregunta por ninguna otra cosa relacionada con amenidades, por lo que ninguna otra amenidad puede ser jamás un requisito.
 
@@ -284,7 +284,7 @@ Esta sección enumera cada regla de negocio que afecta la recomendación, el cop
 
 Estas dos amenidades no son filtros ciegos que descartan clubes en silencio. Son parte de la prueba de "cumple la experiencia" dentro del árbol de radio, que está diseñado para hacer explícita la disyuntiva al prospecto: ofrecer el club calificado, explicar la distancia y aun así mostrar clubes cercanos no calificados como alternativas. Ninguna otra amenidad es jamás un requisito.
 
-**Paso 0 — Computar la experiencia ideal.** Antes de tocar el catálogo, el sistema computa `preferClasses` (las clases ideales, §4.4) y las amenidades de experiencia requeridas (alberca y/o FitKidz, según los disparadores anteriores).
+**Paso 0 — Calcular la experiencia ideal.** Antes de tocar el catálogo, el sistema calcula `preferClasses` (las clases ideales, §4.4) y las amenidades de experiencia requeridas (alberca y/o FitKidz, según los disparadores anteriores).
 
 **Paso 1 — Geocodificar la ubicación** (Q16) hacia coordenadas ancla mediante la búsqueda de cuatro niveles (código postal directo → sinónimo de colonia → colonia difusa → respaldo por centroide).
 
@@ -330,7 +330,7 @@ CASE (d) — no club anywhere meets the experience (e.g., a required amenity
 
 **El panel de alternativas.** Cada club en "Ver otros clubes cerca de ti" lleva una bandera `meetsExperience`. Los clubes que no cumplen la experiencia renderizan una pequeña sublínea ámbar: "No incluye todas las clases ideales para tu objetivo." Esto hace explícita la disyuntiva en el momento de elegir.
 
-**Override del usuario y re-resolución.** Cuando el prospecto elige un club alternativo, el sistema recomputa los tres bloques de entrenamiento contra el catálogo del club elegido y vuelve a correr el ranker de clases. También reevalúa si el club elegido cumple la experiencia:
+**Override del usuario y re-resolución.** Cuando el prospecto elige un club alternativo, el sistema recalcula los tres bloques de entrenamiento contra el catálogo del club elegido y vuelve a correr el ranker de clases. También reevalúa si el club elegido cumple la experiencia:
 - **`override_meets`** — el club elegido sí cumple la experiencia; el copy del porqué se convierte en "lo elegiste y reúne las clases ideales para tu objetivo."
 - **`override_partial`** — el club elegido no cumple la experiencia; aparece una nota ámbar: "Este club no incluye todas las clases ideales para tu objetivo. Aun así puedes entrenar aquí; tu Advisor te ayuda a ajustar tu experiencia en la visita." El cambio siempre está permitido.
 
@@ -396,8 +396,8 @@ El modelo de lenguaje **no** se vuelve a llamar en el override —su copy no dep
 **Disparador:** el cuestionario está completo *y* el prospecto quiere clases grupales —es decir, Q13 se resuelve a la opción **grupal** (opción 2) sin importar su conjugación de género (`Acompañado` / `Acompañada` / `Acompañado/a`, en clases o grupo), o Q13 = "Me da igual". El enrutamiento compara la clave de opción neutra en género, no la cadena conjugada mostrada. Si el prospecto eligió la opción solo, esta regla no se ejecuta y el Bloque 03 se convierte en Personal Training (§4.6).
 
 El ranker de clases corre **dos veces** en el ciclo de vida, con propósitos distintos:
-- **Primera corrida — durante la resolución de club (verificación previa de clases preferidas, §4.1 Paso 0).** Aquí la lógica del ranker computa el conjunto de clases que el prospecto *idealmente recibiría*, a través de todo el catálogo, para sesgar la selección de club hacia un club que efectivamente las ofrezca. Esta es la verificación de que las clases ideales están disponibles antes de fijar el club.
-- **Segunda corrida — después de elegir el club (ranking final, esta sección).** Aquí el ranker computa las 2 mejores clases reales a partir del catálogo real del club elegido.
+- **Primera corrida — durante la resolución de club (verificación previa de clases preferidas, §4.1 Paso 0).** Aquí la lógica del ranker calcula el conjunto de clases que el prospecto *idealmente recibiría*, a través de todo el catálogo, para sesgar la selección de club hacia un club que efectivamente las ofrezca. Esta es la verificación de que las clases ideales están disponibles antes de fijar el club.
+- **Segunda corrida — después de elegir el club (ranking final, esta sección).** Aquí el ranker calcula las 2 mejores clases reales a partir del catálogo real del club elegido.
 
 El árbol de decisión para el ranking final tiene cinco filtros secuenciales seguidos de un paso de puntuación:
 
@@ -442,7 +442,7 @@ for each surviving class:
 ```
 Una sola calificación "no apto" contra **cualquier** objetivo seleccionado veta la clase por completo, sin importar qué tan bien puntúe para el otro objetivo. Esto garantiza que al prospecto nunca se le muestre una clase que entre en conflicto activo con una de sus metas declaradas.
 
-**Paso 5b — Aplicar el ajuste de puntuación GLP-1 (solo si está activo).** Cuando el prospecto está en tratamiento GLP-1 (Q17), la puntuación computada en el Paso 5 recibe el ajuste de prioridad de fuerza definido en §4.9 (un bono a las clases orientadas a fuerza y una penalización a las clases de resistencia de alta intensidad), de modo que las 2 mejores que se muestran reflejen la guía clínica de preservar la masa muscular. Este es el *único* ajuste de puntuación fuera de la matriz de objetivos, y su especificación completa —incluidas las listas exactas de clases y los valores de puntos— vive en §4.9 para mantener la justificación clínica en un solo lugar. Cuando el prospecto no está en tratamiento GLP-1, este paso es una operación nula.
+**Paso 5b — Aplicar el ajuste de puntuación GLP-1 (solo si está activo).** Cuando el prospecto está en tratamiento GLP-1 (Q17), la puntuación calculada en el Paso 5 recibe el ajuste de prioridad de fuerza definido en §4.9 (un bono a las clases orientadas a fuerza y una penalización a las clases de resistencia de alta intensidad), de modo que las 2 mejores que se muestran reflejen la guía clínica de preservar la masa muscular. Este es el *único* ajuste de puntuación fuera de la matriz de objetivos, y su especificación completa —incluidas las listas exactas de clases y los valores de puntos— vive en §4.9 para mantener la justificación clínica en un solo lugar. Cuando el prospecto no está en tratamiento GLP-1, este paso es una operación nula.
 
 **Paso 6 — Ordenar y seccionar.**
 ```
@@ -617,7 +617,7 @@ El esquema completo de salida JSON:
 }
 ```
 
-**Contexto adaptativo por prospecto:** antes de componer el prompt, el sistema computa un conjunto de banderas a partir de las respuestas del cuestionario:
+**Contexto adaptativo por prospecto:** antes de componer el prompt, el sistema calcula un conjunto de banderas a partir de las respuestas del cuestionario:
 - `hasMedical` — verdadero si se declara cualquier condición o tratamiento.
 - `isPregnant` / `isPostpartum` — derivadas de Q12b.
 - `onGLP1` / `onBariatric` — derivadas de Q17.
