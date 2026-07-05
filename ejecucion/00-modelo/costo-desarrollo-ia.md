@@ -34,6 +34,18 @@ pesados conviene correrlos antes.
    completas + agentes de QA): ~40–60 M tokens de entrada / 8–12 M de salida en Sonnet 5 y Haiku
    4.5, con caching y Batch API → **$300 – $1,000 USD** según iteraciones.
 
+## Matriz de asignación de tareas por modelo (y costo segregado)
+
+| Tarea | Modelo | Por qué | Costo estimado (8 semanas) |
+|---|---|---|---|
+| Arquitectura del sistema de diseño y del generador de páginas; **revisión adversarial de cada gate** (S2/S4/S6/S7); diseño del plan de BES; decisiones difíciles de revertir | **Fable 5** (API/créditos, $10/$50, caching −90%) | Máxima capacidad donde el error cuesta semanas | **$150 – $300 USD** |
+| Producción por lotes (148 páginas), integraciones middleware/CMS/consola, sesiones interactivas diarias de Claude Code, redacción de borradores SEO | **Sonnet 5** ($2/$10 intro; asiento cubre lo interactivo) | Caballo de batalla: calidad alta a 1/5 del costo de Fable | **$120 – $250 USD** (porción API) |
+| QA masivo (enlaces, schema, axe, glosario), validaciones mecánicas, clasificaciones | **Haiku 4.5** ($1/$5) | Verificación barata y paralela | **$30 – $80 USD** |
+| Uso interactivo diario (todas las sesiones) | Asientos **Max 20x** | Tarifa plana, sin sorpresas | **$400 – $800 USD** (1–2 asientos × 2 meses) |
+
+**Regla de escalamiento:** todo corre en el modelo más barato que pase el presupuesto de calidad;
+se sube de modelo solo cuando el QA rebota dos veces o la decisión es de arquitectura. Nunca al revés.
+
 ## Escenarios (total de las 8 semanas)
 
 | Escenario | Asientos Max 20x (2 meses) | API por lotes | **Total USD** | **Total MXN** | % de la contraprestación (USD $81,000) |
