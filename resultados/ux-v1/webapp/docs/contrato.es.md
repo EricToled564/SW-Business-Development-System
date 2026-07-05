@@ -409,7 +409,7 @@ El hospedaje del sitio y de las plataformas del proyecto corre en la **infraestr
 - **F.7** **Ventanas de mantenimiento** del servidor coordinadas previamente con EL PRESTADOR.
 - **F.8** **Monitoreo básico de recursos** (procesador, memoria, disco y red).
 
-> **Responsabilidad.** La disponibilidad, capacidad y continuidad de esta infraestructura son **responsabilidad de EL CLIENTE**; sus fallas, indisponibilidades o insuficiencias **no son imputables a EL PRESTADOR** ni computan en contra de los niveles de servicio (SLA) del **Anexo Cinco**, y sus efectos en plazos y aprobaciones se rigen por las Cláusulas Décima (No aprobación final del proyecto, inciso b), Décima Tercera y Décima Quinta.
+> **Responsabilidad.** La disponibilidad, capacidad y continuidad de esta infraestructura son **responsabilidad de EL CLIENTE**; sus fallas, indisponibilidades o insuficiencias **no son imputables a EL PRESTADOR** ni se contabilizan en contra de los niveles de servicio (SLA) del **Anexo Cinco**, y sus efectos en plazos y aprobaciones se rigen por las Cláusulas Décima (No aprobación final del proyecto, inciso b), Décima Tercera y Décima Quinta.
 
 > **Cédula de control.** El seguimiento de cada requerimiento de este Anexo Uno —con su **fecha límite, responsable nominado y estatus (entregado / no entregado)**, y un semáforo de vencimiento— se lleva en la sección **Aportaciones de Sports World** del web app del proyecto, dividida en *Sistemas* y *Marketing*. Los plazos del Contrato se contarán a partir de la entrega del 100% de estos requerimientos.
 

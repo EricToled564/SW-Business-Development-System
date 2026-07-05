@@ -226,7 +226,7 @@ El **Proyecto C (Academia Sports World)** tiene **plazo propio de 10 semanas**, 
 
 ### 11.2 · Dependencias
 
-- **Con el Proyecto A:** la Fase 2 (role-play) reutiliza el motor conversacional de BES que construye el Equipo 4; en el cronograma de la §3, BES queda con cobertura total en las Semanas 5–6. La **Fase 1 (lecciones y plataforma) no depende de BES** y arranca desde la firma del Addendum. Si el Addendum se firma antes de la disponibilidad del motor, la Fase 2 se computa desde esa disponibilidad (**[Academia · Addendum · §5](#academia-anexo:5-contraprestacin-adicional)**).
+- **Con el Proyecto A:** la Fase 2 (role-play) reutiliza el motor conversacional de BES que construye el Equipo 4; en el cronograma de la §3, BES queda con cobertura total en las Semanas 5–6. La **Fase 1 (lecciones y plataforma) no depende de BES** y arranca desde la firma del Addendum. Si el Addendum se firma antes de la disponibilidad del motor, el plazo de la Fase 2 se contará a partir de esa disponibilidad (**[Academia · Addendum · §5](#academia-anexo:5-contraprestacin-adicional)**).
 - **De Sports World:** validación del mapeo de la taxonomía y de la segmentación por club, mínimo aprobatorio, métricas del CRM por asesor y servidor propio de la plataforma (**[Academia · Addendum · §4](#academia-anexo:4-aportaciones-a-cargo-de-el-cliente)**).
 
 ### 11.3 · Secuencia de trabajo (dentro de las 10 semanas)
@@ -241,5 +241,5 @@ El **Proyecto C (Academia Sports World)** tiene **plazo propio de 10 semanas**, 
 | Riesgo | Prob. | Impacto | Mitigación | Dueño |
 |---|---|---|---|---|
 | Addendum sin firmar / validación sin cerrar | Media | Alto | El Proyecto C no genera obligación ni costo hasta la firma; la validación de la taxonomía es la primera actividad de la secuencia y el plazo corre desde su cierre. | SW / Líder gral. |
-| Motor de BES no disponible al llegar a la Fase 2 (si el Addendum se firma muy temprano) | Baja | Medio | La Fase 1 avanza sin restricción; la Fase 2 se computa desde la disponibilidad del motor (§11.2). | Líder gral. |
+| Motor de BES no disponible al llegar a la Fase 2 (si el Addendum se firma muy temprano) | Baja | Medio | La Fase 1 avanza sin restricción; el plazo de la Fase 2 se cuenta desde la disponibilidad del motor (§11.2). | Líder gral. |
 | Aportaciones del cliente tardías (servidor, métricas del CRM, colaboración de marketing) | Media | Medio | Aportaciones enumeradas desde el Addendum §4; su atraso extiende el plazo día por día (Contrato, Cláusula Décima Tercera). | SW / E6 |
