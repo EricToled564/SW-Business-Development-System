@@ -108,7 +108,7 @@ Nos comprometemos con los **KPIs verificables del Contrato › Anexo Dos, Secci�
 
 ### Lo comercial (Proyecto A)
 
-Contraprestación única de **USD $81,000 sin IVA** (MXN $1,441,800; $1,672,488 con IVA) en **dos exhibiciones de 50%**: la factura de cada mitad se entrega al iniciar sus trabajos y el pago es exigible contra la entrega aprobada del 50% de los entregables (Semana 4) y contra la entrega total, respectivamente. Los servicios recurrentes se prestan mediante la **iguala mensual de la Opción A elegida: $43,000 MXN/mes (USD $2,415.73); $49,880 MXN con IVA**, con bolsa de mejora de 8 horas mensuales y plazo mínimo de 6 meses; incluye el mantenimiento del BDS una vez activado, el hospedaje corre en la infraestructura que proporciona Sports World, se causa por mes vencido, se factura al cierre de cada mes y se paga a 30 días naturales de entregada la factura. Detalle en el **[Contrato · Cláusulas Segunda y Tercera](#contrato)**.
+Contraprestación única de **USD $81,000 sin IVA** (MXN $1,441,800; $1,672,488 con IVA) en **dos exhibiciones de 50%**: la factura de cada mitad se entrega al iniciar sus trabajos y el pago es exigible contra la entrega aprobada del 50% de los entregables (Semana 4) y contra la entrega total, respectivamente. Los servicios recurrentes se prestan mediante la **iguala mensual de $43,000 MXN/mes (USD $2,415.73); $49,880 MXN con IVA**, con bolsa de mejora de 8 horas mensuales y plazo mínimo de 6 meses; incluye el mantenimiento del BDS una vez activado, el hospedaje corre en la infraestructura que proporciona Sports World, se causa por mes vencido, se factura al cierre de cada mes y se paga a 30 días naturales de entregada la factura. Detalle en el **[Contrato · Cláusulas Segunda y Tercera](#contrato)**.
 
 ## Business Development System (Proyecto B)
 
@@ -168,7 +168,7 @@ Todas las equivalencias entre dólares y pesos se calculan al **tipo de cambio c
 
 | Proyecto | Inversión (pago único) | Recurrente | Plazo | Exigible |
 |---|---|---|---|---|
-| **A · Rediseño Web** | USD $81,000 sin IVA (MXN $1,441,800; $1,672,488 con IVA), en dos exhibiciones de 50% | Iguala mensual Opción A: $43,000 MXN (USD $2,415.73); $49,880 MXN con IVA — mínimo 6 meses, incluye mantenimiento del BDS | 8 semanas | Desde la firma del Contrato |
+| **A · Rediseño Web** | USD $81,000 sin IVA (MXN $1,441,800; $1,672,488 con IVA), en dos exhibiciones de 50% | Iguala mensual: $43,000 MXN (USD $2,415.73); $49,880 MXN con IVA — mínimo 6 meses, incluye mantenimiento del BDS | 8 semanas | Desde la firma del Contrato |
 | **B · Business Development System** | USD $4,850.00 más IVA (MXN $86,330.00), en dos exhibiciones de 50% | Sin iguala propia: mantenimiento incluido en la iguala del Proyecto A | 8 semanas, en paralelo al A | Desde la firma de su Addendum |
 | **C · Academia Sports World** | $850,000.00 MXN más IVA (USD $47,752.81); $986,000.00 MXN con IVA, en dos exhibiciones de 50% | Iguala de mantenimiento **opcional**: $18,500 MXN más IVA ($21,460 con IVA) — se decide al firmar el Addendum | 10 semanas | Desde la firma de su Addendum |
 
