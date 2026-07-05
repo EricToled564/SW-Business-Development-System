@@ -14,7 +14,7 @@
 | Claude Haiku 4.5 | $1.00 | $5.00 | QA masivo, validaciones, agentes mecánicos |
 | Claude Sonnet 5 | $2.00 / $10.00 (intro **hasta 31-ago-2026**; después $3/$15) | — | Producción por lotes (148 páginas), integraciones |
 | Claude Opus 4.8 | $5.00 | $25.00 | Revisión adversarial de arquitectura (puntual) |
-| Claude Fable 5 | según página oficial al abrir la cuenta | — | Orquestación interactiva (cubierto por asiento de suscripción, no por API) |
+| Claude Fable 5 | $10.00 | $50.00 | Sólo revisiones de máxima criticidad; caching −90% en entrada. **Sale de las suscripciones el 7-jul-2026** (temporal; después vía créditos de uso o API) |
 
 Palancas de costo publicadas: **Batch API −50%**, **prompt caching** (lecturas a 0.1× — las 49
 fichas comparten plantilla y catálogo: el contexto se cachea una vez por lote). Ojo con el
@@ -23,9 +23,13 @@ pesados conviene correrlos antes.
 
 ## Modelo de consumo (8 semanas)
 
-1. **Orquestación interactiva** (Tech Lead dirigiendo sesiones de Claude Code con Fable 5):
-   se paga por **suscripción** (asiento Max 20x, $200 USD/mes), no por token — es la forma más
-   barata de uso interactivo intensivo.
+1. **Orquestación interactiva** (Tech Lead dirigiendo sesiones de Claude Code): se paga por
+   **suscripción** (asiento Max 20x, $200 USD/mes), no por token. **Nota de disponibilidad:**
+   Fable 5 sale de las suscripciones el 7-jul-2026 (Anthropic lo declara temporal, regresa cuando
+   haya capacidad); mientras tanto la orquestación diaria corre en **Sonnet 5 / Opus 4.8** —incluidos
+   en el asiento— y Fable 5 se reserva, vía créditos de uso o API ($10/$50 por MTok), para las
+   revisiones puntuales de arquitectura. Prever **$50–$200 USD adicionales en total** por ese
+   concepto en las 8 semanas; los escenarios de abajo lo absorben dentro del rango de API.
 2. **Producción programática por lotes** (workflows: generar + verificar 148 páginas, 2–3 pasadas
    completas + agentes de QA): ~40–60 M tokens de entrada / 8–12 M de salida en Sonnet 5 y Haiku
    4.5, con caching y Batch API → **$300 – $1,000 USD** según iteraciones.
