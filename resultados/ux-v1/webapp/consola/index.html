@@ -18,15 +18,18 @@ a{color:#e6282a}.small{font-size:11px;color:#6b6b68}
 </style></head><body>
 <header><h1>Consola de Ejecución · Proyecto A</h1>
 <label class="small" style="color:#ccc">Kickoff <input type="date" id="kick"></label>
-<button onclick="exportar()">Exportar estado (JSON)</button>
+<button onclick="exportar()">Publicar corte</button>
 <span class="small" style="color:#ccc" id="resumen"></span></header>
 <div class="wrap"><div id="alertas"></div><table id="tabla"></table>
-<p class="small">Estados guardados en este navegador. «Exportar» genera el JSON para commitear el estado oficial.
-Subir entregable abre GitHub (carpeta <code>ejecucion/entregables/&lt;id&gt;/</code>); GitHub registra quién y cuándo.</p></div>
+<div class="alert" style="border-color:#1d1d1b"><b style="color:#1d1d1b">Cómo se usa (3 pasos):</b>
+1) Cada quien encuentra su fila, baja sus <b>⬇ inputs</b> y trabaja. 2) Al terminar, clic en <b>⬆ subir</b>: se abre GitHub,
+arrastra su archivo y presiona el botón verde — listo, queda registrado quién y cuándo. 3) Cambia su <b>Estado</b> a
+"entregado". El coordinador presiona <b>Publicar corte</b> una vez al día para que todos vean el mismo tablero.</div></div>
 <script>
 const REPO="https://github.com/EricToled564/SW-Business-Development-System";
 const LS="sw-consola-v1", ESTADOS=["pendiente","en curso","entregado","aprobado"];
 let st=JSON.parse(localStorage.getItem(LS)||"{}");
+fetch("estado.json?t="+Date.now()).then(r=>r.json()).then(base=>{st=Object.assign({},base,st);render();}).catch(()=>{});
 const kickEl=document.getElementById("kick");
 kickEl.value=st._kickoff||KICKOFF_DEFAULT;
 kickEl.onchange=()=>{st._kickoff=kickEl.value;save();};
@@ -62,6 +65,8 @@ function render(){
  document.getElementById("resumen").textContent=ap+"/"+TABLERO.length+" entregados · "+Math.round(ap/TABLERO.length*100)+"%";
 }
 function exportar(){const blob=new Blob([JSON.stringify(st,null,2)],{type:"application/json"});
- const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="estado-tablero.json";a.click();}
+ const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="estado.json";a.click();
+ setTimeout(()=>window.open(REPO+"/upload/main/resultados/ux-v1/webapp/consola","_blank"),600);
+ alert("Se descargó estado.json. En la pestaña de GitHub que se abrió, arrástralo y presiona el botón verde: el tablero queda actualizado para todo el equipo en ~1 minuto.");}
 render();
 </script></body></html>
