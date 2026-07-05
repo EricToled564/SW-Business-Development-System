@@ -66,7 +66,7 @@ function render(){
 }
 function exportar(){const blob=new Blob([JSON.stringify(st,null,2)],{type:"application/json"});
  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="estado.json";a.click();
- setTimeout(()=>window.open(REPO+"/upload/main/resultados/ux-v1/webapp/consola","_blank"),600);
+ setTimeout(()=>window.open(REPO+"/upload/main/ejecucion/consola","_blank"),600);
  alert("Se descargó estado.json. En la pestaña de GitHub que se abrió, arrástralo y presiona el botón verde: el tablero queda actualizado para todo el equipo en ~1 minuto.");}
 render();
 </script></body></html>

@@ -25,7 +25,7 @@ diseñas la arquitectura, las pruebas e2e y decides qué se acepta. **El plan:**
 CRM del cliente → S3 middleware → S4 **gate 50%** (captura de leads viva) → S6 BES con
 cobertura total + consola → **gate Completitud** → S7 **Visto Bueno** → S8 **go-live**.
 
-**Tablero:** https://erictoled564.github.io/SW-Business-Development-System/consola/
+**Tablero:** (pendiente: se publicará desde el repositorio interno separado)
 
 ## 2 · Tu sección
 

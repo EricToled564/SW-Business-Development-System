@@ -22,7 +22,7 @@ Lighthouse ≥ 95, Core Web Vitals en verde, WCAG 2.2 AA, 0 enlaces rotos.
 **El plan:** S1 setup + sistema visual → S2 **gate Pilar** → S3–S4 lotes y **gate 50%** →
 S5–S6 **gate Completitud** → S7 **Visto Bueno** → S8 **go-live**.
 
-**Tablero:** https://erictoled564.github.io/SW-Business-Development-System/consola/
+**Tablero:** (pendiente: se publicará desde el repositorio interno separado)
 
 ## 2 · Tu sección
 

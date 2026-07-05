@@ -20,7 +20,7 @@ Estándar no negociable: Lighthouse ≥ 95 (incluido SEO), CWV en verde, schema 
 rotos. **El plan:** S1 setup → S2 **gate Pilar** → S3–S4 **gate 50%** → S5–S6 clases/blog y
 **gate Completitud** → S7 QA final + migración de URLs → S8 **go-live**.
 
-**Tablero:** https://erictoled564.github.io/SW-Business-Development-System/consola/
+**Tablero:** (pendiente: se publicará desde el repositorio interno separado)
 
 ## 2 · Tu sección
 

@@ -28,7 +28,7 @@ mejora por tres vías: las sesiones de práctica internas, esas métricas numér
 humano gobernado donde los asesores reportan objeciones nuevas de campo que pasan por la misma
 certificación que los escenarios iniciales.
 
-**Tablero:** https://erictoled564.github.io/SW-Business-Development-System/consola/
+**Tablero:** (pendiente: se publicará desde el repositorio interno separado)
 
 ## 2 · Tu sección
 

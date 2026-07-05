@@ -23,7 +23,7 @@ dimensiones comparadas.
 specs, curan y firman gates. **El plan:** S1 sistema visual → S2 **gate Pilar** → S3–S4
 **gate 50%** → S5–S6 **gate Completitud** → S7 **Visto Bueno** → S8 **go-live**.
 
-**Tablero:** https://erictoled564.github.io/SW-Business-Development-System/consola/
+**Tablero:** (pendiente: se publicará desde el repositorio interno separado)
 
 ## 2 · Tu sección
 

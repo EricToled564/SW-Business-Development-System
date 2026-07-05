@@ -25,7 +25,7 @@ reales asesor–cliente**; el sistema aprende solo de las sesiones de práctica 
 métricas de resultado del CRM (números, no conversaciones) y de un canal humano gobernado de
 reporte de campo.
 
-**Tablero:** https://erictoled564.github.io/SW-Business-Development-System/consola/
+**Tablero:** (pendiente: se publicará desde el repositorio interno separado)
 
 ## 2 · Tu sección
 

@@ -13,10 +13,10 @@ de clase mundial. **Objetivo declarado: la mejor página de fitness de México.*
 | `03-coordinacion/` | Calendario de 8 semanas, handoffs entre roles y rituales |
 | `04-plantillas/` | Spec de página, brief de encargo, checklist de QA |
 
-**Tablero de ejecución (consola web, sin instalación):**
-https://erictoled564.github.io/SW-Business-Development-System/consola/ — cada líder ve su fila,
-sus fechas, descarga sus inputs y sube sus entregables; el código vive en
-`resultados/ux-v1/webapp/consola/`.
+**Tablero de ejecución (consola web):** el código vive en `ejecucion/consola/` — cada líder
+ve su fila, sus fechas, descarga sus inputs y sube sus entregables. **No se publica en el
+sitio del cliente:** se publicará desde el repositorio interno separado del equipo (pendiente
+de crear), para no mezclar el depósito de documentos del cliente con el sistema interno.
 
 **Fuente única de la verdad:** los documentos de `resultados/ux-v1/webapp/docs/` (Arquitectura de
 Experiencia, Estrategia Técnica, Plan de Ejecución, Anexo Dos). Nada de lo que está aquí los

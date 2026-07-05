@@ -25,7 +25,7 @@ Estándar no negociable: Lighthouse ≥ 95, Core Web Vitals en verde, WCAG 2.2 A
 S3–S4 lotes masivos y **gate 50%** → S5–S6 clases, BES y **gate Completitud** → S7 QA final y
 **Visto Bueno** → S8 **go-live**.
 
-**Tablero:** https://erictoled564.github.io/SW-Business-Development-System/consola/
+**Tablero:** (pendiente: se publicará desde el repositorio interno separado)
 
 ## 2 · Tu sección
 
