@@ -9,9 +9,14 @@ de clase mundial. **Objetivo declarado: la mejor página de fitness de México.*
 |---|---|
 | `00-modelo/` | El modelo operativo AI-first y los presupuestos de calidad (gates) |
 | `01-orquestacion/` | Cómo se orquesta Claude Code: guía, skills reutilizables |
-| `02-freelancers/` | Perfiles del equipo, encargos y qué NO hacen (lo hace la IA) |
+| `02-freelancers/` | Perfiles del equipo, encargos, **briefs por líder** (`briefs/`) y **descripciones de puesto Upwork** (`upwork/`) |
 | `03-coordinacion/` | Calendario de 8 semanas, handoffs entre roles y rituales |
 | `04-plantillas/` | Spec de página, brief de encargo, checklist de QA |
+
+**Tablero de ejecución (consola web, sin instalación):**
+https://erictoled564.github.io/SW-Business-Development-System/consola/ — cada líder ve su fila,
+sus fechas, descarga sus inputs y sube sus entregables; el código vive en
+`resultados/ux-v1/webapp/consola/`.
 
 **Fuente única de la verdad:** los documentos de `resultados/ux-v1/webapp/docs/` (Arquitectura de
 Experiencia, Estrategia Técnica, Plan de Ejecución, Anexo Dos). Nada de lo que está aquí los
