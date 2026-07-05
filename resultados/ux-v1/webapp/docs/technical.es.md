@@ -15,7 +15,7 @@ El sitio se construye sobre la generación actual del framework profesional más
 - **Tailwind CSS v4** sobre un conjunto reducido de **tokens de diseño de marca** (color, tipografía, espaciado), de modo que cada página sea consistente y fiel a la marca por construcción. Estos tokens nacen del brand book que aporta Sports World (Anexo Uno E.1).
 - **Fuentes web variables, autoalojadas** (`next/font`), para una tipografía rápida y fiel a la marca, sin llamadas a terceros.
 - **Node.js 20.9 o posterior** como runtime (requerido por Next.js 16). La especificación dimensionada del servidor está en **[Plan de Ejecución · §4](#execution:4-el-servidor-donde-corre-el-sitio)**.
-- **Caché agresivo** (`'use cache'`, `cacheLife`, `cacheTag`) para servir la mayoría de las vistas desde caché y reservar el cómputo para el trabajo dinámico y los picos de tráfico.
+- **Caché agresivo** (`'use cache'`, `cacheLife`, `cacheTag`) para servir la mayoría de las vistas desde caché y reservar la capacidad de procesamiento para el trabajo dinámico y los picos de tráfico.
 - **CMS desacoplado (headless) autoalojado** en el servidor de Sports World —por ejemplo Payload o Strapi, sobre Node.js junto al sitio—, de modo que el panel de edición no-code viva en la infraestructura de Sports World, sin dependencia de un servicio externo. Al guardar un cambio, la página se revalida con `cacheTag` e ISR. La elección final se confirma al inicio (detalle en **[Arquitectura de Experiencia · CMS](#experience:el-panel-de-actualizacin-sin-cdigo-cms)**).
 - **Alojamiento en el servidor propio de Sports World**, no en una plataforma de terceros, para que el sitio permanezca por completo bajo el control y la propiedad de Sports World.
 

@@ -47,4 +47,4 @@ Para que el costo se mantenga bajo en el tiempo, la inversión inicial se concen
 2. El **avatar y la voz sintética** del presentador.
 3. El **sistema visual (brand kit)** de plantillas, paleta y estilo de motion graphics.
 
-Una vez construidos estos tres activos, el costo de cada módulo adicional —incluidas las variantes de segmentación por club (**[Contenido y taxonomía](#academia-contenido)**) y cualquier actualización futura— se reduce a **contenido (guion) más cómputo de generación**, no a producción audiovisual tradicional. Esto es lo que hace viable escalar de los módulos base a las variantes por segmento y a futuras actualizaciones sin que el costo crezca en la misma proporción.
+Una vez construidos estos tres activos, el costo de cada módulo adicional —incluidas las variantes de segmentación por club (**[Contenido y taxonomía](#academia-contenido)**) y cualquier actualización futura— se reduce a **contenido (guion) más el procesamiento de generación**, no a producción audiovisual tradicional. Esto es lo que hace viable escalar de los módulos base a las variantes por segmento y a futuras actualizaciones sin que el costo crezca en la misma proporción.
