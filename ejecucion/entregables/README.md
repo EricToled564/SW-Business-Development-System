@@ -1,0 +1,1 @@
+# Entregables\n\nCada entregable se sube a su carpeta `<id>/` (los ids están en `consola/tablero.js`). GitHub registra autor, fecha y versión de cada archivo.\n

@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Consola de Ejecución · SW Proyecto A</title>
+<script src="tablero.js"></script>
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#f5f5f4;color:#1d1d1b}
+header{background:#1d1d1b;color:#fff;padding:14px 20px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+header h1{font-size:16px;margin:0}header input{padding:4px}
+.wrap{padding:16px;max-width:1100px;margin:auto}
+.alert{background:#fff;border-left:5px solid #e6282a;padding:10px 14px;margin:8px 0;border-radius:4px}
+.alert.warn{border-color:#e6a700}.alert b{color:#e6282a}.alert.warn b{color:#a97e00}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:13px;margin-top:12px}
+th,td{padding:8px 10px;border-bottom:1px solid #e5e5e3;text-align:left;vertical-align:top}
+th{background:#1d1d1b;color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.dot{font-size:15px}.tag{background:#eee;border-radius:99px;padding:1px 8px;font-size:11px}
+button,select{font:inherit;padding:4px 8px;cursor:pointer}
+a{color:#e6282a}.small{font-size:11px;color:#6b6b68}
+</style></head><body>
+<header><h1>Consola de Ejecución · Proyecto A</h1>
+<label class="small" style="color:#ccc">Kickoff <input type="date" id="kick"></label>
+<button onclick="exportar()">Exportar estado (JSON)</button>
+<span class="small" style="color:#ccc" id="resumen"></span></header>
+<div class="wrap"><div id="alertas"></div><table id="tabla"></table>
+<p class="small">Estados guardados en este navegador. «Exportar» genera el JSON para commitear el estado oficial.
+Subir entregable abre GitHub (carpeta <code>ejecucion/entregables/&lt;id&gt;/</code>); GitHub registra quién y cuándo.</p></div>
+<script>
+const REPO="https://github.com/EricToled564/SW-Business-Development-System";
+const LS="sw-consola-v1", ESTADOS=["pendiente","en curso","entregado","aprobado"];
+let st=JSON.parse(localStorage.getItem(LS)||"{}");
+const kickEl=document.getElementById("kick");
+kickEl.value=st._kickoff||KICKOFF_DEFAULT;
+kickEl.onchange=()=>{st._kickoff=kickEl.value;save();};
+function save(){localStorage.setItem(LS,JSON.stringify(st));render();}
+function fecha(sem){const d=new Date(kickEl.value+"T12:00");d.setDate(d.getDate()+sem*7);return d;}
+function done(id){return ["entregado","aprobado"].includes(st[id]||"pendiente");}
+function descendientes(id){let n=0;TABLERO.forEach(t=>{if(t.deps.includes(id)){n+=1+descendientes(t.id);}});return n;}
+function render(){
+ const hoy=new Date(), alertas=[], rows=[];
+ TABLERO.forEach(t=>{
+  const e=st[t.id]||"pendiente", f=fecha(t.sem), dias=Math.ceil((f-hoy)/864e5);
+  const bloqueadoPor=t.deps.filter(d=>!done(d));
+  let dot="🟢", nota="en tiempo";
+  if(done(t.id)){dot=e==="aprobado"?"✅":"📦";nota=e;}
+  else if(dias<0){dot="🔴";nota="vencido "+(-dias)+"d";}
+  else if(dias<=3){dot="🟡";nota="vence en "+dias+"d";}
+  if(!done(t.id)&&bloqueadoPor.length&&dias<=7)
+   alertas.push({w:0,html:"<b>BLOQUEADO:</b> «"+t.n+"» vence en "+dias+"d y espera: "+bloqueadoPor.join(", ")});
+  if(!done(t.id)&&dias<0){
+   const dep=descendientes(t.id);
+   alertas.push({w:dep,html:"<b>CUELLO DE BOTELLA:</b> «"+t.n+"» ("+t.rol+") vencido hace "+(-dias)+"d — frena <b>"+dep+"</b> entregable(s) aguas abajo"});
+  }
+  rows.push("<tr><td class='dot'>"+dot+"</td><td><b>"+t.n+"</b><div class='small'>"+nota+" · S"+t.sem+" · "+f.toISOString().slice(0,10)+(bloqueadoPor.length?" · ⛔ espera: "+bloqueadoPor.join(", "):"")+"</div></td>"
+  +"<td><span class='tag'>"+t.rol+"</span></td>"
+  +"<td><select onchange=\"st['"+t.id+"']=this.value;save()\">"+ESTADOS.map(x=>"<option"+(x===e?" selected":"")+">"+x+"</option>").join("")+"</select></td>"
+  +"<td>"+(t.inputs.map(i=>"<a href='"+REPO+"/blob/main/"+i+"' target='_blank'>⬇ input</a>").join(" ")||"—")
+  +" <a href='"+REPO+"/upload/main/ejecucion/entregables/"+t.id+"' target='_blank'>⬆ subir</a></td></tr>");
+ });
+ alertas.sort((a,b)=>b.w-a.w);
+ document.getElementById("alertas").innerHTML=alertas.length?alertas.map(a=>"<div class='alert"+(a.html.includes("BLOQUEADO")?" warn":"")+"'>"+a.html+"</div>").join(""):"<div class='alert' style='border-color:#3a9d5d'>Sin cuellos de botella ni bloqueos próximos ✅</div>";
+ document.getElementById("tabla").innerHTML="<tr><th></th><th>Entregable</th><th>Rol</th><th>Estado</th><th>Archivos</th></tr>"+rows.join("");
+ const ap=TABLERO.filter(t=>done(t.id)).length;
+ document.getElementById("resumen").textContent=ap+"/"+TABLERO.length+" entregados · "+Math.round(ap/TABLERO.length*100)+"%";
+}
+function exportar(){const blob=new Blob([JSON.stringify(st,null,2)],{type:"application/json"});
+ const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="estado-tablero.json";a.click();}
+render();
+</script></body></html>
