@@ -1,6 +1,6 @@
 // Tablero de entregables del Proyecto A — editar aquí (fuente de la verdad del plan).
 // deps = ids que deben estar ENTREGADOS antes; semana = fin comprometido (desde kickoff).
-window.KICKOFF_DEFAULT = "2026-07-14";
+window.KICKOFF_DEFAULT = "2026-07-17";
 window.TABLERO = [
  {id:"anexo-uno", n:"Checklist Anexo Uno firmado (aportaciones cliente)", rol:"Cliente", sem:1, deps:[], inputs:["resultados/ux-v1/webapp/docs/aportaciones.es.md"]},
  {id:"setup", n:"Repo + CI + presupuesto de calidad activo", rol:"Tech Lead", sem:1, deps:[], inputs:["ejecucion/00-modelo/gates-de-calidad.md"]},
