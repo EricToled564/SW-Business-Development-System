@@ -108,11 +108,11 @@ Nos comprometemos con los **KPIs verificables del Contrato › Anexo Dos, Secci�
 
 ### Lo comercial (Proyecto A)
 
-Contraprestación única de **USD $81,000 sin IVA** (MXN $1,441,800; $1,672,488 con IVA) en **dos exhibiciones de 50%**: la factura de cada mitad se entrega al iniciar sus trabajos y el pago es exigible contra la entrega aprobada del 50% de los entregables (Semana 4) y contra la entrega total, respectivamente. Los servicios recurrentes se prestan mediante la **iguala mensual de $43,000 MXN/mes (USD $2,415.73); $49,880 MXN con IVA**, con bolsa de mejora de 8 horas mensuales y plazo mínimo de 6 meses; incluye el mantenimiento del BDS una vez activado, el hospedaje corre en la infraestructura que proporciona Sports World, se causa por mes vencido, se factura al cierre de cada mes y se paga a 30 días naturales de entregada la factura. Detalle en el **[Contrato · Cláusulas Segunda y Tercera](#contrato)**.
+Contraprestación única de **USD $81,000 sin IVA** (MXN $1,441,800; $1,672,488 con IVA) en **dos exhibiciones de 50%**: la factura de cada mitad se entrega al iniciar sus trabajos y el pago es exigible contra la entrega aprobada del 50% de los entregables (Semana 4) y contra la entrega total, respectivamente. Los servicios recurrentes se prestan mediante la **iguala mensual de $43,000 MXN/mes (USD $2,415.73); $49,880 MXN con IVA**, con bolsa de mejora de 8 horas mensuales y plazo mínimo de 6 meses; incluye el mantenimiento del BDS una vez activado, el hospedaje corre en la infraestructura que proporciona Sports World, se causa por mes vencido, se factura al cierre de cada mes y se paga a 30 días naturales de entregada la factura. Detalle en el **[Contrato · Cláusulas Octava y Novena](#contrato)**.
 
 ## Business Development System (Proyecto B)
 
-> **Alcance y costo aparte** del Rediseño Web (Contrato · Cláusula Primera Bis; detalle en el **[Addendum del BDS](#bds-anexo)**).
+> **Alcance y costo aparte** del Rediseño Web (Contrato · Cláusula Segunda; detalle en el **[Addendum del BDS](#bds-anexo)**).
 
 ### 9 · El problema: los leads se enfrían
 
@@ -139,7 +139,7 @@ El BDS es un **alcance independiente**: su contratación no modifica el Proyecto
 
 ## Academia Sports World (Proyecto C)
 
-> **Alcance y costo aparte** de los Proyectos A y B (Contrato · Cláusula Primera Bis; detalle en el **[Addendum de la Academia](#academia-anexo)**).
+> **Alcance y costo aparte** de los Proyectos A y B (Contrato · Cláusula Segunda; detalle en el **[Addendum de la Academia](#academia-anexo)**).
 
 ### 13 · El problema: la habilitación del asesor no está estandarizada
 
@@ -164,7 +164,7 @@ La Academia es un **alcance independiente**: su contratación no modifica el Pro
 
 ## Inversión: los tres proyectos en una tabla
 
-Todas las equivalencias entre dólares y pesos se calculan al **tipo de cambio contractual fijo de $17.80 MXN por USD** (Contrato, Cláusula Segunda).
+Todas las equivalencias entre dólares y pesos se calculan al **tipo de cambio contractual fijo de $17.80 MXN por USD** (Contrato, Cláusula Octava).
 
 | Proyecto | Inversión (pago único) | Recurrente | Plazo | Exigible |
 |---|---|---|---|---|
@@ -172,7 +172,7 @@ Todas las equivalencias entre dólares y pesos se calculan al **tipo de cambio c
 | **B · Business Development System** | USD $4,850.00 más IVA (MXN $86,330.00), en dos exhibiciones de 50% | Sin iguala propia: mantenimiento incluido en la iguala del Proyecto A | 8 semanas, en paralelo al A | Desde la firma de su Addendum |
 | **C · Academia Sports World** | $850,000.00 MXN más IVA (USD $47,752.81); $986,000.00 MXN con IVA, en dos exhibiciones de 50% | Iguala de mantenimiento **opcional**: $18,500 MXN más IVA ($21,460 con IVA) — se decide al firmar el Addendum | 10 semanas | Desde la firma de su Addendum |
 
-**Los precios de B y C asumen su aprobación simultánea al Proyecto A**; de diferirse alguno, su precio se recalcula antes de firmar el Addendum (Contrato, Cláusula Segunda). Los **costos de operación** de las plataformas de IA, voz y mensajería corren por cuenta de Sports World directamente con los proveedores, con monitoreo y reporte mensual (Contrato, Cláusula Sexta Bis). La estimación mensual completa, en tres escenarios de tráfico e interacciones, está en **[Gastos Operativos Variables](#gastos-operativos)**.
+**Los precios de B y C asumen su aprobación simultánea al Proyecto A**; de diferirse alguno, su precio se recalcula antes de firmar el Addendum (Contrato, Cláusula Octava). Los **costos de operación** de las plataformas de IA, voz y mensajería corren por cuenta de Sports World directamente con los proveedores, con monitoreo y reporte mensual (Contrato, Cláusula Décima Cuarta). La estimación mensual completa, en tres escenarios de tráfico e interacciones, está en **[Gastos Operativos Variables](#gastos-operativos)**.
 
 ## El Plan de Ejecución, en resumen
 

@@ -44,7 +44,7 @@ Lo nuevo del BDS son las cuatro piezas siguientes.
 
 ## Costos de operación a cargo del cliente
 
-Igual que en el Proyecto A (Contrato, Cláusula Sexta Bis), la operación del BDS conlleva costos que Sports World cubre directamente a los proveedores, no comprendidos en la contraprestación del Addendum:
+Igual que en el Proyecto A (Contrato, Cláusula Décima Cuarta), la operación del BDS conlleva costos que Sports World cubre directamente a los proveedores, no comprendidos en la contraprestación del Addendum:
 
 - **Cuotas de WhatsApp Business API** — Meta cobra por conversación según su categoría (marketing, utilidad, servicio) y país; el volumen depende de las campañas y del tráfico de leads.
 - **Consumo de "BES" por WhatsApp** — el modelo de razonamiento opera bajo el mismo esquema de costo directo ya establecido para el canal web.

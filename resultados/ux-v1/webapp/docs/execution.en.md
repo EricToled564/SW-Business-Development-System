@@ -3,7 +3,7 @@
 
 Foundational document, **general to the three projects**. For **Project A · Website Redesign** it describes **how the project is delivered** over eight weeks: the four parallel workstreams, the team structure and governance model, the week-by-week schedule **with verifiable exit criteria**, the approval milestones owned by Sports World, the server, the committed technical KPIs, the risk register, and change control (§§1–9). For **Project B · Business Development System (BDS)** —separate scope and cost— it defines the **fifth team, its tasks, and its dependencies** (§10); its own 8-week term runs from the signing of its Addendum, in parallel with Project A ([BDS · Addendum](#bds-anexo)). For **Project C · Sports World Academy** —separate scope and cost— it defines the **start-up framework, team, and dependencies** (§11); its own 10-week term runs from the signing of its Addendum ([Academy · Addendum](#academia-anexo)). The contributions required from the Sports World systems team —deliberately kept to a minimum— are detailed in the **[Contract · Annex One](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. It stands on its own.
 
-**Guiding principle.** The 8-week count runs from the delivery of 100% of the Annex One requirements; delays attributable to Sports World extend the timeline day for day (and trigger the stand-by of Clause Nine). For this reason the plan **front-loads** all dependencies to Week 1.
+**Guiding principle.** The 8-week count runs from the delivery of 100% of the Annex One requirements; delays attributable to Sports World extend the timeline day for day (and trigger the stand-by of Clause Fifteen). For this reason the plan **front-loads** all dependencies to Week 1.
 
 ## 1 · What is being built, in parallel
 
@@ -114,11 +114,11 @@ A single server of this size comfortably handles 160,000 visits per month with f
 
 These figures constitute a solid engineering estimate. The path to turning the estimate into a guarantee is a brief load test before launch —simulating 160,000 visits per month with the five-times peak and measuring the CPU and memory actually used. The team runs it as part of pre-launch quality (Week 7) and adjusts the specification up or down according to the measured result.
 
-> **Note on BES:** the specification above covers **only the website**. **BES does not reside on this server**: it runs on the **platform of its voice provider (ElevenLabs)** and on the other managed services that compose it (speech recognition, reasoning model, and orchestration). Therefore, the site's server should **not** be increased to host BES. The **BES operating costs** (voice platform, reasoning model interface, and hosting of the logic) are covered directly by **THE CLIENT** to those providers (Contract, Clause Six Bis).
+> **Note on BES:** the specification above covers **only the website**. **BES does not reside on this server**: it runs on the **platform of its voice provider (ElevenLabs)** and on the other managed services that compose it (speech recognition, reasoning model, and orchestration). Therefore, the site's server should **not** be increased to host BES. The **BES operating costs** (voice platform, reasoning model interface, and hosting of the logic) are covered directly by **THE CLIENT** to those providers (Contract, Clause Fourteen).
 
 ## 5 · Milestones and approvals owned by Sports World
 
-The project advances through four approval gates; each corresponds to the schedule of the **[Contract · Annex Two I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente)**. The response windows are client obligations: a delay in an approval extends, day for day, the timeline owned by the provider (and triggers the stand-by of Clause Nine).
+The project advances through four approval gates; each corresponds to the schedule of the **[Contract · Annex Two I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente)**. The response windows are client obligations: a delay in an approval extends, day for day, the timeline owned by the provider (and triggers the stand-by of Clause Fifteen).
 
 | Approval | Milestone | Timing | Response window | Exit criterion (definition of "done") |
 |---|---|---|---|---|
@@ -153,18 +153,18 @@ These are the **committed KPIs** of the **[Contract · Annex Two, Section IV](#c
 |---|---|---|---|---|
 | Google Business verification runs long (controlled by Google) | High | Medium | Initiate in W1; the rest of the project is independent; profiles can be finalized close to launch without holding up the site. | Overall leader |
 | The CRM API fails its SLA (p95 <500/<800 ms) | Medium | High | **PROVIDER middleware** with read caching, retries, and synchronization tolerance; SW only exposes its standard API (Annex One D.5); graceful degradation. | T1 / T4 |
-| Client delays on Annex One or on approvals | Medium | High | Dependencies front-loaded to W1; 48 h windows agreed (I.4); the timeline extends day for day and stand-by applies (USD $350/day; MXN $6,230, Clause Nine). | Overall leader / SW |
+| Client delays on Annex One or on approvals | Medium | High | Dependencies front-loaded to W1; 48 h windows agreed (I.4); the timeline extends day for day and stand-by applies (USD $350/day; MXN $6,230, Clause Fifteen). | Overall leader / SW |
 | Quality/availability of club and class data | Medium | Medium | Read API preferred; fallback to structured export with an agreed schedule; automatic validation. | T1 / SW |
 | BES knowledge base outdated | Medium | Medium | Minimum weekly update (Annex One D.6); automatic retraining. | SW / T4 |
-| Scope creep | Medium | Medium | Change control (§8): anything not agreed is an amending agreement; changes to already-approved sections are quoted (Clause Three Bis). | Overall leader |
+| Scope creep | Medium | Medium | Change control (§8): anything not agreed is an amending agreement; changes to already-approved sections are quoted (Clause Ten). | Overall leader |
 | Migration breaks email or another DNS service | Low | High | Prior DNS inventory; only the site's records are touched; low TTL 24 h beforehand; quick rollback; post-cutover verification. | T1 |
 
 ## 8 · Governance: change control, reporting, and stand-by
 
 - **Weekly executive report** on progress, KPIs, and risks (Annex Two, Sections I.2 and IV).
 - **Control points** brief and recurring among the four leaders and with Sports World at each milestone.
-- **Change control.** Any deliverable not expressly included is a matter for an amending agreement. A change requested by the client on an **already-approved** section or item is quoted separately (Clause Three Bis), and its delay is attributable to the client. If rework arises from **the provider** delivering a section below the contract's standards, **the provider absorbs it** (at no cost and no stand-by). Other changes requested by the client are a **neutral zone**: they only extend timelines, at no charge.
-- **Stand-by for client delays.** If a delay attributable to Sports World halts the team, stand-by days are charged at USD $350/day (MXN $6,230, Clause Nine), and the timeline extends day for day.
+- **Change control.** Any deliverable not expressly included is a matter for an amending agreement. A change requested by the client on an **already-approved** section or item is quoted separately (Clause Ten), and its delay is attributable to the client. If rework arises from **the provider** delivering a section below the contract's standards, **the provider absorbs it** (at no cost and no stand-by). Other changes requested by the client are a **neutral zone**: they only extend timelines, at no charge.
+- **Stand-by for client delays.** If a delay attributable to Sports World halts the team, stand-by days are charged at USD $350/day (MXN $6,230, Clause Fifteen), and the timeline extends day for day.
 - **Channels.** Coordination and incidents through the agreed channels (e.g., Slack and email), with a single owner on the client's side.
 
 ## 9 · Assumptions and out of scope
@@ -242,4 +242,4 @@ The BDS does **not** rewrite the capture engine: it reuses the questionnaire and
 |---|---|---|---|---|
 | Addendum unsigned / validation not closed | Medium | High | Project C generates no obligation or cost until signature; the taxonomy validation is the first activity in the sequence and the term runs from its closing. | SW / Overall leader |
 | BES engine not available when Phase 2 starts (if the Addendum is signed very early) | Low | Medium | Phase 1 proceeds without restriction; Phase 2 is counted from the engine's availability (§11.2). | Overall leader |
-| Late client contributions (server, CRM metrics, marketing collaboration) | Medium | Medium | Contributions enumerated from Addendum §4; their delay extends the term day for day (Contract, Clause Six). | SW / T6 |
+| Late client contributions (server, CRM metrics, marketing collaboration) | Medium | Medium | Contributions enumerated from Addendum §4; their delay extends the term day for day (Contract, Clause Thirteen). | SW / T6 |

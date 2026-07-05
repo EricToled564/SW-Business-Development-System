@@ -48,4 +48,4 @@ Es importante no confundir dos conceptos distintos:
 - Los **avisos de privacidad, el consentimiento y la atención de los derechos ARCO** son responsabilidad de Sports World; el sitio y BES despliegan los avisos y los mecanismos de consentimiento que Sports World apruebe.
 - Ante cualquier vulneración de seguridad, el prestador **notifica de inmediato** a Sports World, indicando el alcance y las acciones tomadas.
 
-Este enfoque está reflejado contractualmente en la **Cláusula Sexta Ter (Seguridad y minimización de datos personales)** y en la **Cláusula Décima Primera (Información Confidencial y Datos Personales)** del Contrato.
+Este enfoque está reflejado contractualmente en la **Cláusula Décima Octava (Seguridad y minimización de datos personales)** y en la **Cláusula Décima Séptima (Confidencialidad y Datos Personales)** del Contrato.

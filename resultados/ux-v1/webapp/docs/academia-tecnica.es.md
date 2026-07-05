@@ -76,7 +76,7 @@ Esta cadencia es la que alimenta la estimación de costo de la sección 8. Se re
 
 ## 8 · Costo de las plataformas de IA para Sports World
 
-Igual que BES (**[Estrategia Técnica del sitio · §5](#technical:5-bes-el-agente-de-voz-y-texto)**; Contrato, Cláusula Sexta Bis), el agente de voz de role-play **no tiene costo de operación incluido en la contraprestación del Addendum**: los costos de la plataforma de voz, el modelo de razonamiento y el hospedaje de la lógica del agente los cubre **EL CLIENTE directamente a los proveedores**. Con las tarifas de referencia del documento **[Gastos Operativos Variables](#gastos-operativos)** (tipo de cambio contractual $17.80) y la cadencia propuesta en la sección 6, para **200 asesores**:
+Igual que BES (**[Estrategia Técnica del sitio · §5](#technical:5-bes-el-agente-de-voz-y-texto)**; Contrato, Cláusula Décima Cuarta), el agente de voz de role-play **no tiene costo de operación incluido en la contraprestación del Addendum**: los costos de la plataforma de voz, el modelo de razonamiento y el hospedaje de la lógica del agente los cubre **EL CLIENTE directamente a los proveedores**. Con las tarifas de referencia del documento **[Gastos Operativos Variables](#gastos-operativos)** (tipo de cambio contractual $17.80) y la cadencia propuesta en la sección 6, para **200 asesores**:
 
 | Concepto | Estimado |
 |---|---|

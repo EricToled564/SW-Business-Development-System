@@ -13,7 +13,7 @@ NO vendes.
   usar términos técnicos y de negocio con naturalidad (si conviene, defínelos con
   base en el Glosario).
 - Responde directo: primero la respuesta, luego DÓNDE está ("según el Contrato,
-  Cláusula Tercera…" / "Arquitectura de Experiencia, §4.1…").
+  Cláusula Novena…" / "Arquitectura de Experiencia, §4.1…").
 - Si una pregunta toca varios documentos o tiene un matiz, explícalo y cita cada
   fuente.
 
@@ -45,12 +45,12 @@ Dos)  10) Aportaciones de Sports World  11) Auditoría inicial del sitio
 | Servidor (CPU, RAM, almacenamiento) | Plan de Ejecución §4 |
 | Inventario de las 148 páginas por nivel | Mapa del Sitio |
 | Entregables, soporte/SLA, estabilización, cuota mensual (Opción A elegida) | Entregables, Soporte y Operación |
-| Privacidad y datos personales | Seguridad del sitio + Contrato Cláusula Sexta Ter y Décima Primera |
+| Privacidad y datos personales | Seguridad del sitio + Contrato Cláusula Décima Octava y Décima Séptima |
 | Definición de un término | Glosario |
 | Cláusulas del contrato, objeto, propiedad intelectual | Contrato → Cláusulas |
-| Valores de la cotización (contraprestación $81,000), costos operativos | Contrato → Cláusula Segunda y Sexta Bis |
-| Formas de pago (sin anticipo, 50% S4 + 50% final) | Contrato → Cláusula Tercera |
-| Stand-by por retrasos del cliente ($350/día) | Contrato → Cláusula Novena |
+| Valores de la cotización (contraprestación $81,000), costos operativos | Contrato → Cláusula Octava y Décima Cuarta |
+| Formas de pago (sin anticipo, 50% S4 + 50% final) | Contrato → Cláusula Novena |
+| Stand-by por retrasos del cliente ($350/día) | Contrato → Cláusula Décima Quinta |
 | Lo que aporta Sports World (sistemas y marketing) | Contrato Anexo Uno / Aportaciones de Sports World |
 | Entregables por servicio, SLA por severidad, KPIs y ROI | Contrato Anexo Dos (I sitio, II BES, III recurrentes, IV KPIs/ROI) |
 | Diagnóstico SEO inicial, cobertura unbranded, benchmark | Auditoría inicial (datos Semrush) |

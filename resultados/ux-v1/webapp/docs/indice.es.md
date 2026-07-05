@@ -11,7 +11,7 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 |---|---|---|---|
 | 1 | [**Índice de documentos**](#indice) | Este mapa: qué contiene cada documento, a quién está dirigido y dónde consultar cada tema. | Todos |
 | 2 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo, con eje en el cuestionario y la experiencia única, y una sección para cada proyecto: Rediseño Web (Proyecto A), Business Development System (Proyecto B) y Academia Sports World (Proyecto C). | Dirección, negocio |
-| 3 | [**Contrato**](#contrato) | Marco mercantil de **los tres proyectos**: objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Primera Bis— la separación y contraprestación adicional de los Proyectos B (BDS) y C (Academia). | Dirección, Legal |
+| 3 | [**Contrato**](#contrato) | Marco mercantil de **los tres proyectos**: objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Segunda— la separación y contraprestación adicional de los Proyectos B (BDS) y C (Academia). | Dirección, Legal |
 | 3a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques y con responsables. | Dirección, TI, Legal |
 | 3b | [**Anexo Dos · Entregables específicos de los servicios**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
 | 4 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en toda la documentación, de los tres proyectos. | Todos |
@@ -71,25 +71,25 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | **Captación de leads** (sitio, BES y consola interna) | [Estrategia Técnica · §11](#technical:11-captacin-unificada-de-leads-sitio-bes-y-consola-interna) |
 | Recursos de **Google** a conectar (GA4, GSC, GBP, GTM, Ads) | [Contrato · Anexo Uno E.4](#contrato:bloque-e-aportaciones-de-marketing-y-marca-a-cargo-del-cliente) |
 | Cronograma de 8 semanas y gates | [Plan de Ejecución · §3 Cronograma](#execution:3-el-cronograma-de-ocho-semanas) · [Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente) |
-| Precio, forma de pago y stand-by | [Contrato · Cláusulas (Segunda, Tercera y Novena)](#contrato:clusulas) |
+| Precio, forma de pago y stand-by | [Contrato · Cláusulas (Octava, Novena y Décima Quinta)](#contrato:clusulas) |
 | Soporte, SLA, bolsa de 8 horas y estabilización | [Contrato · Anexo Dos Sección III](#contrato:seccin-iii-entregables-del-servicio-iii-servicios-recurrentes) |
 | Aportaciones de SW (sistemas y marketing) | [Status de Entregables Sports World](#aportaciones) · [Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) |
 | KPIs comprometidos | [Contrato · Anexo Dos Sección IV](#contrato:seccin-iv-kpis-comprometidos-estrategia-comercial) |
 | Calculadora de ROI | [Calculadora de ROI](#roi) |
-| Datos personales y seguridad | [Seguridad del sitio](#seguridad:proteccin-de-los-datos-personales-minimizacin-y-no-retencin) · [Contrato · Cláusulas (Sexta Ter y Décima Primera)](#contrato:clusulas) |
+| Datos personales y seguridad | [Seguridad del sitio](#seguridad:proteccin-de-los-datos-personales-minimizacin-y-no-retencin) · [Contrato · Cláusulas (Décima Octava y Décima Séptima)](#contrato:clusulas) |
 | Diagnóstico SEO y línea base | [Auditoría inicial · El Gigante Invisible](#auditoria:el-gigante-invisible-diagnstico-de-captura-de-demanda-digital) |
 | **BDS · captación multicanal en tiempo real** (Proyecto B) | [BDS · Resumen](#bds-resumen) · [Flujo](#bds-flujo) · [Canales y SLA](#bds-canales) · [Técnica](#bds-tecnica) |
 | **BDS · equipo, tareas y dependencias** (marco de ejecución) | [Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin) · [BDS · Addendum](#bds-anexo) |
 | **Brief del asesor** (documento personalizado del comprador potencial, con sugerencias de venta) | [Arquitectura de Experiencia · §1.2, fase `briefing`](#experience:12-las-siete-fases) · [BDS · Resumen](#bds-resumen) · [BDS · Flujo](#bds-flujo) |
 | **Speed-to-lead / tiempo al primer contacto** | [BDS · Medición y funnel](#bds-medicion) |
 | **BES por WhatsApp (solo texto)** | [BDS · Estrategia Técnica](#bds-tecnica) · [Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto) |
-| **Separación de proyectos A/B/C y costo adicional** | [Contrato · Cláusula Primera Bis](#contrato:clusulas) · [BDS · Addendum](#bds-anexo) · [Academia · Addendum](#academia-anexo) |
+| **Separación de proyectos A/B/C y costo adicional** | [Contrato · Cláusula Segunda](#contrato:clusulas) · [BDS · Addendum](#bds-anexo) · [Academia · Addendum](#academia-anexo) |
 | **Academia SW · capacitación y práctica de asesores** (Proyecto C) | [Academia · Resumen](#academia-resumen) · [Contenido y taxonomía](#academia-contenido) · [Fases](#academia-fases) |
 | **Taxonomía maestra del cliente** (objetivos y dimensiones de decisión) | [Academia · Contenido y taxonomía](#academia-contenido) |
 | **Principios de diseño instruccional** (lecciones cortas, práctica hasta dominar, repasos programados) | [Academia · Fases del programa](#academia-fases:principios-de-diseo-instruccional) |
 | **Agente de voz de role-play y motor de selección adaptativa** | [Academia · Estrategia Técnica](#academia-tecnica) |
 | **Estructura del módulo, interactividad y producción con IA** | [Academia · Producción del curso](#academia-produccion) |
 | **Separación de la plataforma de la Academia y el servidor del sitio** | [Academia · Estrategia Técnica · §1](#academia-tecnica:1-separacin-total-de-la-plataforma-de-la-academia-y-el-sitio-web) |
-| **Costo de las plataformas de IA para Sports World** (BES y Academia) | [Estrategia Técnica del sitio · §5](#technical:5-bes-el-agente-de-voz-y-texto) · [Contrato · Cláusula Sexta Bis](#contrato:clusulas) · [Academia · Estrategia Técnica · §8](#academia-tecnica) |
+| **Costo de las plataformas de IA para Sports World** (BES y Academia) | [Estrategia Técnica del sitio · §5](#technical:5-bes-el-agente-de-voz-y-texto) · [Contrato · Cláusula Décima Cuarta](#contrato:clusulas) · [Academia · Estrategia Técnica · §8](#academia-tecnica) |
 | **Dashboard de readiness y evaluación en cuatro niveles** | [Academia · Medición](#academia-medicion:evaluacin-en-cuatro-niveles) |
 | Definición de términos | [Glosario](#glosario) |

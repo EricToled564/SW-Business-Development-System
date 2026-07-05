@@ -3,7 +3,7 @@
 
 Documento fundacional y **general a los tres proyectos**. Para el **Proyecto A · Rediseño Web** describe **cómo se entrega** en ocho semanas: los cuatro frentes de trabajo en paralelo, la estructura del equipo y el modelo de gobierno, el cronograma semana a semana **con criterios de salida verificables**, los hitos de aprobación a cargo de Sports World, el servidor, los KPIs técnicos comprometidos, el registro de riesgos y el control de cambios (§§1–9). Para el **Proyecto B · Business Development System (BDS)** —alcance y costo aparte— define el **quinto equipo, sus tareas y sus dependencias** (§10); su plazo de 8 semanas corre desde la firma de su Addendum, en paralelo al Proyecto A ([BDS · Addendum](#bds-anexo)). Para el **Proyecto C · Academia Sports World** —alcance y costo aparte— define el **marco de arranque, el equipo y las dependencias** (§11); su plazo de 10 semanas corre desde la firma de su Addendum ([Academia · Addendum](#academia-anexo)). Las aportaciones que se requieren del equipo de sistemas de Sports World —deliberadamente reducidas al mínimo— se detallan en el **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. Se lee por sí solo.
 
-**Principio rector.** El cómputo de las 8 semanas corre a partir de la entrega del 100% de los requerimientos del Anexo Uno; los atrasos imputables a Sports World extienden el plazo día por día (y activan el stand-by de la Cláusula Novena). Por eso el plan **adelanta (front-load)** todas las dependencias a la Semana 1.
+**Principio rector.** El cómputo de las 8 semanas corre a partir de la entrega del 100% de los requerimientos del Anexo Uno; los atrasos imputables a Sports World extienden el plazo día por día (y activan el stand-by de la Cláusula Décima Quinta). Por eso el plan **adelanta (front-load)** todas las dependencias a la Semana 1.
 
 ## 1 · Qué se está construyendo, en paralelo
 
@@ -114,11 +114,11 @@ Un solo servidor de este tamaño atiende con holgura 160,000 visitas al mes con 
 
 Estas cifras constituyen una estimación de ingeniería sólida. La vía para convertir la estimación en una garantía es una breve prueba de carga antes del lanzamiento —simulando 160,000 visitas al mes con el pico de cinco veces y midiendo la CPU y la memoria realmente utilizadas. El equipo la ejecuta como parte de la calidad previa al lanzamiento (Semana 7) y ajusta la especificación al alza o a la baja según el resultado medido.
 
-> **Nota sobre BES:** la especificación anterior cubre **únicamente el sitio web**. **BES no reside en este servidor**: corre en la **plataforma de su proveedor de voz (ElevenLabs)** y en los demás servicios gestionados que lo componen (reconocimiento de voz, modelo de razonamiento y orquestación). Por lo tanto, el servidor del sitio **no** debe incrementarse para alojar a BES. Los **costos de operación de BES** (plataforma de voz, interfaz del modelo de razonamiento y hospedaje de la lógica) los cubre directamente **EL CLIENTE** a esos proveedores (Contrato, Cláusula Sexta Bis).
+> **Nota sobre BES:** la especificación anterior cubre **únicamente el sitio web**. **BES no reside en este servidor**: corre en la **plataforma de su proveedor de voz (ElevenLabs)** y en los demás servicios gestionados que lo componen (reconocimiento de voz, modelo de razonamiento y orquestación). Por lo tanto, el servidor del sitio **no** debe incrementarse para alojar a BES. Los **costos de operación de BES** (plataforma de voz, interfaz del modelo de razonamiento y hospedaje de la lógica) los cubre directamente **EL CLIENTE** a esos proveedores (Contrato, Cláusula Décima Cuarta).
 
 ## 5 · Hitos y aprobaciones a cargo de Sports World
 
-El proyecto avanza por cuatro compuertas de aprobación; cada una corresponde al cronograma del **[Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente)**. Las ventanas de respuesta son obligaciones del cliente: un atraso en una aprobación extiende, día por día, el plazo a cargo del proveedor (y activa el stand-by de la Cláusula Novena).
+El proyecto avanza por cuatro compuertas de aprobación; cada una corresponde al cronograma del **[Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente)**. Las ventanas de respuesta son obligaciones del cliente: un atraso en una aprobación extiende, día por día, el plazo a cargo del proveedor (y activa el stand-by de la Cláusula Décima Quinta).
 
 | Aprobación | Hito | Momento | Ventana de respuesta | Criterio de salida (definición de "hecho") |
 |---|---|---|---|---|
@@ -153,18 +153,18 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 |---|---|---|---|---|
 | Verificación de Google Business se alarga (la controla Google) | Alta | Medio | Iniciar en S1; el resto del proyecto es independiente; las fichas pueden finalizar cerca del lanzamiento sin frenar el sitio. | Líder gral. |
 | La API del CRM no cumple su SLA (p95 <500/<800 ms) | Media | Alto | **Middleware de EL PRESTADOR** con caché de lecturas, reintentos y tolerancia a sincronización; SW solo expone su API estándar (Anexo Uno D.5); degradación elegante. | E1 / E4 |
-| Atrasos del cliente en el Anexo Uno o en aprobaciones | Media | Alto | Dependencias front-loaded a S1; ventanas de 48 h pactadas (I.4); el plazo se extiende día por día y aplica stand-by ($350 USD/día; $6,230 MXN, Cláusula Novena). | Líder gral. / SW |
+| Atrasos del cliente en el Anexo Uno o en aprobaciones | Media | Alto | Dependencias front-loaded a S1; ventanas de 48 h pactadas (I.4); el plazo se extiende día por día y aplica stand-by ($350 USD/día; $6,230 MXN, Cláusula Décima Quinta). | Líder gral. / SW |
 | Calidad/disponibilidad de datos de clubes y clases | Media | Medio | API de lectura preferente; fallback a exportación estructurada con calendario acordado; validación automática. | E1 / SW |
 | Base de conocimiento de BES desactualizada | Media | Medio | Actualización semanal mínima (Anexo Uno D.6); reentrenamiento automático. | SW / E4 |
-| Cambios de alcance (scope creep) | Media | Medio | Control de cambios (§8): lo no pactado es convenio modificatorio; los cambios sobre secciones ya aprobadas se cotizan (Cláusula Tercera Bis). | Líder gral. |
+| Cambios de alcance (scope creep) | Media | Medio | Control de cambios (§8): lo no pactado es convenio modificatorio; los cambios sobre secciones ya aprobadas se cotizan (Cláusula Décima). | Líder gral. |
 | Migración rompe correo u otro servicio del DNS | Baja | Alto | Inventario DNS previo; solo se tocan registros del sitio; TTL bajo 24 h antes; rollback rápido; verificación post-cutover. | E1 |
 
 ## 8 · Gobierno: control de cambios, reporte y stand-by
 
 - **Reporte ejecutivo semanal** del avance, los KPIs y los riesgos (Anexo Dos, Secciones I.2 y IV).
 - **Puntos de control** breves y periódicos entre los cuatro líderes y con Sports World en cada hito.
-- **Control de cambios.** Todo entregable no comprendido expresamente es materia de convenio modificatorio. Un cambio solicitado por el cliente sobre una sección o ítem **ya aprobado** se cotiza aparte (Cláusula Tercera Bis) y su retraso es imputable al cliente. Si un retrabajo deriva de que **el proveedor** entregó una sección por debajo de los estándares del contrato, lo **absorbe el proveedor** (sin costo ni stand-by). Los demás cambios solicitados por el cliente son **zona neutral**: solo extienden plazos, sin cargo.
-- **Stand-by por atrasos del cliente.** Si un atraso imputable a Sports World detiene al equipo, se cobran los días de stand-by a USD $350/día ($6,230 MXN, Cláusula Novena), y el plazo se extiende día por día.
+- **Control de cambios.** Todo entregable no comprendido expresamente es materia de convenio modificatorio. Un cambio solicitado por el cliente sobre una sección o ítem **ya aprobado** se cotiza aparte (Cláusula Décima) y su retraso es imputable al cliente. Si un retrabajo deriva de que **el proveedor** entregó una sección por debajo de los estándares del contrato, lo **absorbe el proveedor** (sin costo ni stand-by). Los demás cambios solicitados por el cliente son **zona neutral**: solo extienden plazos, sin cargo.
+- **Stand-by por atrasos del cliente.** Si un atraso imputable a Sports World detiene al equipo, se cobran los días de stand-by a USD $350/día ($6,230 MXN, Cláusula Décima Quinta), y el plazo se extiende día por día.
 - **Canales.** Coordinación e incidentes por los canales acordados (p. ej. Slack y correo), con responsable único del lado del cliente.
 
 ## 9 · Supuestos y fuera de alcance
@@ -242,4 +242,4 @@ El **Proyecto C (Academia Sports World)** tiene **plazo propio de 10 semanas**, 
 |---|---|---|---|---|
 | Addendum sin firmar / validación sin cerrar | Media | Alto | El Proyecto C no genera obligación ni costo hasta la firma; la validación de la taxonomía es la primera actividad de la secuencia y el plazo corre desde su cierre. | SW / Líder gral. |
 | Motor de BES no disponible al llegar a la Fase 2 (si el Addendum se firma muy temprano) | Baja | Medio | La Fase 1 avanza sin restricción; la Fase 2 se computa desde la disponibilidad del motor (§11.2). | Líder gral. |
-| Aportaciones del cliente tardías (servidor, métricas del CRM, colaboración de marketing) | Media | Medio | Aportaciones enumeradas desde el Addendum §4; su atraso extiende el plazo día por día (Contrato, Cláusula Sexta). | SW / E6 |
+| Aportaciones del cliente tardías (servidor, métricas del CRM, colaboración de marketing) | Media | Medio | Aportaciones enumeradas desde el Addendum §4; su atraso extiende el plazo día por día (Contrato, Cláusula Décima Tercera). | SW / E6 |

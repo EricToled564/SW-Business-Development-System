@@ -1,13 +1,13 @@
 # Sports World · Gastos Operativos Variables · V1.2
 ## Estimación mensual de las plataformas a cargo de Sports World — desglose por componente y tres escenarios
 
-> **Documento general (los tres proyectos) · Anexo Tres del Contrato, de carácter informativo.** El Contrato asigna estos gastos a Sports World (Cláusula Sexta Bis) y pacta como contraprestación recurrente únicamente las igualas; este Anexo presenta los **valores aproximados** para planeación: no modifican la contraprestación ni generan obligación de pago al proveedor, y su recalibración no requiere convenio modificatorio. Este documento consolida los **costos de operación variables** que Sports World cubre directamente a los proveedores de IA, voz y mensajería, con el **desglose completo de cómo se llega a cada cifra**. Tarifas verificadas en **julio de 2026** contra las fuentes indicadas al final; todas las equivalencias al **tipo de cambio contractual fijo de $17.80 MXN por USD**.
+> **Documento general (los tres proyectos) · Anexo Tres del Contrato, de carácter informativo.** El Contrato asigna estos gastos a Sports World (Cláusula Décima Cuarta) y pacta como contraprestación recurrente únicamente las igualas; este Anexo presenta los **valores aproximados** para planeación: no modifican la contraprestación ni generan obligación de pago al proveedor, y su recalibración no requiere convenio modificatorio. Este documento consolida los **costos de operación variables** que Sports World cubre directamente a los proveedores de IA, voz y mensajería, con el **desglose completo de cómo se llega a cada cifra**. Tarifas verificadas en **julio de 2026** contra las fuentes indicadas al final; todas las equivalencias al **tipo de cambio contractual fijo de $17.80 MXN por USD**.
 
 ## Qué cubre este documento (y qué no)
 
 - **Cubre (variable, a cargo de Sports World):** la generación de la experiencia ideal y del brief del asesor con la API de Claude, la plataforma de voz de BES (canal web) y del agente de role-play de la Academia, el modelo de razonamiento (LLM) conversacional de BES en todos los canales, y las cuotas de mensajería de WhatsApp Business API.
 - **Hospedaje: sin costo de proveedor externo.** Toda la infraestructura de hospedaje —el servidor del sitio, la lógica de los agentes y la plataforma de la Academia— **la proporciona Sports World en infraestructura propia**, por lo que no aparece en este cálculo.
-- **Fijo (se suma al final):** la **iguala mensual del Proyecto A** de $43,000 MXN (USD $2,415.73); $49,880 MXN con IVA — mantenimiento del sitio y de BES (incluido el BDS una vez activado), soporte 24/7 y bolsa de mejora de 8 horas (desglose en el Contrato, Cláusula Segunda). Si Sports World contrata la **iguala opcional de mantenimiento de la Academia** ($18,500 MXN más IVA; $21,460 MXN con IVA), se suma a los totales.
+- **Fijo (se suma al final):** la **iguala mensual del Proyecto A** de $43,000 MXN (USD $2,415.73); $49,880 MXN con IVA — mantenimiento del sitio y de BES (incluido el BDS una vez activado), soporte 24/7 y bolsa de mejora de 8 horas (desglose en el Contrato, Cláusula Octava). Si Sports World contrata la **iguala opcional de mantenimiento de la Academia** ($18,500 MXN más IVA; $21,460 MXN con IVA), se suma a los totales.
 - **Fuera de este cálculo:** la nómina de los operadores humanos del BDS, el presupuesto de pauta, las licencias del CRM y las sesiones de certificación inicial de la Academia (**[Estrategia Técnica de la Academia · §8](#academia-tecnica)**).
 
 ## Tarifas de referencia verificadas (julio 2026)
@@ -37,7 +37,7 @@
 | Plantillas *marketing* (reactivación de bases) | 0 | ~1,000 | ~2,000 |
 | Adherencia a la práctica semanal de la Academia | ~50% | ~75% | ~100% |
 
-Los volúmenes de BES web y de la Academia provienen de los escenarios ya pactados (Sexta Bis; **[Academia · §8](#academia-tecnica)**); los del BDS y los recordatorios son supuestos de diseño **a calibrar con datos reales** en los primeros 60–90 días.
+Los volúmenes de BES web y de la Academia provienen de los escenarios ya pactados (Cláusula Décima Cuarta; **[Academia · §8](#academia-tecnica)**); los del BDS y los recordatorios son supuestos de diseño **a calibrar con datos reales** en los primeros 60–90 días.
 
 ## El desglose: cómo se calcula cada componente
 
@@ -83,7 +83,7 @@ Sumando la **iguala fija del Proyecto A** ($49,880 MXN con IVA; USD $2,802.25) a
 ## Notas
 
 - Los variables se pagan **directamente a los proveedores**, en su mayoría facturados en USD y sin IVA mexicano (proveedores extranjeros); la iguala se muestra con IVA. Los totales son órdenes de magnitud para presupuestación, no cotizaciones cerradas.
-- El Contrato (Cláusula Sexta Bis) **asigna** estos gastos a Sports World e incluye el compromiso de **monitoreo de consumo y reporte mensual**; las cifras de este documento son estimaciones de planeación y pueden actualizarse sin modificar el Contrato.
+- El Contrato (Cláusula Décima Cuarta) **asigna** estos gastos a Sports World e incluye el compromiso de **monitoreo de consumo y reporte mensual**; las cifras de este documento son estimaciones de planeación y pueden actualizarse sin modificar el Contrato.
 - Los supuestos de volumen del BDS, el % de voz y la duración media de conversación se **recalibran con datos reales** a los 60–90 días.
 
 ## Fuentes de las tarifas (julio 2026)
