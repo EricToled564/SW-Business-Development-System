@@ -325,6 +325,8 @@ Sobre la base anterior, EL CLIENTE pondrá a disposición —vía su API estánd
 
 > **Frecuencia de actualización.** En **tiempo real** se consultan los **precios** y las **clases por club (horarios y fechas)**. **Una vez al día** se sincronizan el **estatus del club**, los **horarios de atención** y las **amenidades**.
 
+> **Vía alternativa para el dato de membresías nuevas.** Si el dato de activación de membresías nuevas no reside en el CRM, EL CLIENTE entregará periódicamente —con corte **semanal o mensual, según la disponibilidad de su operación**— la **base de membresías nuevas**, para su cruce con los prospectos del funnel **dentro de la infraestructura de EL CLIENTE** (el servidor del **Bloque F** de este Anexo). La conciliación se realiza por **nombre y apellido**, con el **código postal** como dato de verificación, y el dashboard presenta **únicamente resultados agregados**; en congruencia con la **Cláusula Décima Octava** (seguridad y minimización), los datos personales de dicha base **no residen en sistemas de EL PRESTADOR**.
+
 > **Nota de geolocalización.** De inicio, las **coordenadas de los 49 clubes se incorporan directamente en el código** (semilla), y se habilita un **procedimiento manual y sin código** para agregarlas o modificarlas desde el panel de edición del sitio (CMS) —capacidad incluida en el alcance (Anexo Dos)—. Las coordenadas provistas por el CRM son una fuente válida para dicha semilla y para sus actualizaciones.
 
 > **Nota de tarifas, descuentos y promociones.** Las tarifas se **extraen automáticamente del CRM** (no se capturan ni editan en el CMS). El motor de precios del sitio **aplica precios por club** y, cuando el CRM las define por **ciudad** o a nivel **nacional**, permite **(i)** tomar precios por club, **(ii)** tomar precios por ciudad o nacionales y **replicarlos por club**, o **(iii)** una combinación de ambos. La misma lógica aplica a **descuentos y promociones** y a los **precios de amenidades y servicios** (p. ej. *Personal Trainer*, *FitKidz*). El detalle del entregable consta en el Anexo Dos.
@@ -395,6 +397,8 @@ Sobre la base anterior, EL CLIENTE pondrá a disposición —vía su API estánd
 - **E.5** **Responsable de Marketing/Marca facultado** para aprobar wireframes, prototipo, plantillas, contenido y territorio visual. *Responsable: Dirección de Mercadotecnia y Marca.*
 - **E.6** **Presupuesto de medios**, en su caso (no incluido en la contraprestación salvo pacto expreso). *Responsable: Mercadotecnia y Marca.*
 - **E.7** **Avisos de privacidad y textos legales** vigentes de la marca, validados por el área legal. *Responsable: Asuntos legales con Mercadotecnia y Marca.*
+- **E.8** **Acceso al Meta Business Manager de EL CLIENTE:** las **cuentas publicitarias** (Meta Ads) y el **activo de WhatsApp Business**, para medir el **tráfico, el alcance y los clics** de las campañas dentro del funnel y el dashboard del proyecto. *Responsable: Mercadotecnia y Marca con líder IT.*
+- **E.9** **Acceso de lectura a TikTok Ads**, en su caso, cuando existan campañas en esa plataforma, para medir el tráfico, el alcance y los clics de las campañas dentro del funnel y el dashboard del proyecto. *Responsable: Mercadotecnia y Marca.*
 
 ## Bloque F — Servidor e infraestructura de hospedaje proporcionada por EL CLIENTE
 

@@ -136,7 +136,7 @@ The project delivers an **end-to-end conversion funnel** and a **real-time execu
 - **Google (GA4 + Search Console), connected to Sports World's necessary accounts (Annex One E.4):** traffic and on-page behavior. The site is **instrumented with events** to measure **time on page**, the user's **exit page/point**, and the **traffic → scheduled-visit conversion**.
 - **CRM (via the PROVIDER's middleware):** the two stages only the CRM knows —**scheduled visit → provided visit** and **provided visit → new membership**—, tied to the same prospect (per-session idempotency) to close the funnel end to end.
 
-**Dashboard.** A real-time executive panel for Sports World management: the four funnel stages with their conversion rates, traffic by source, time on page and exit points, and project progress. It requires the CRM to expose (Annex One catalog) the **guided-visit status** (scheduled / provided) and the **membership activation** associated with the prospect.
+**Dashboard.** A real-time executive panel for Sports World management: the four funnel stages with their conversion rates, traffic by source, time on page and exit points, and project progress. It requires the CRM to expose (Annex One catalog) the **guided-visit status** (scheduled / provided) and the **membership activation** associated with the prospect. If the new-membership data does not reside in the CRM, the **alternative path** agreed in the **[Contract · Annex One](#contrato:datos-y-servicios-que-el-cliente-expone-desde-el-crm)** applies: Sports World periodically delivers the new-memberships base and the matching runs inside its own infrastructure (Block F server), with the dashboard presenting aggregated results only.
 
 ## 11 · Unified lead capture (site, BES, and internal console)
 

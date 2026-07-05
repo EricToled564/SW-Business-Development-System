@@ -24,6 +24,7 @@ Glosario único y compartido por toda la documentación del proyecto. Cada docum
 | **color (RGB / HEX / CMYK)** | Modelos para especificar color: RGB (rojo-verde-azul) y su notación HEX (hexadecimal) para pantalla y web, y CMYK para impresión. Forman parte del brand book. |
 | **Core Web Vitals (LCP, INP, CLS)** | Métricas de Google sobre la experiencia de carga (LCP), de interacción (INP) y de estabilidad visual (CLS). Metas: LCP < 2.5 s, INP < 200 ms, CLS < 0.1. |
 | **CRM** | Sistema de gestión de relaciones con prospectos y clientes de Sports World; sistema de registro único de los leads. |
+| **CTR (tasa de clics)** | Proporción de clics respecto de las visualizaciones de un anuncio o resultado; métrica de campaña que el dashboard reporta por origen (Meta, TikTok, web). |
 | **DNS** | Sistema de nombres de dominio; traduce sportsworld.com.mx a las direcciones de red y enruta también el correo (registros MX). |
 | **ERP** | Sistema de planificación de recursos empresariales; software que integra la operación interna (finanzas, inventario, membresías, etc.) de la organización. |
 | **funnel (embudo)** | Secuencia de etapas por las que avanza un prospecto (lead → contacto → cuestionario → visita → membresía); el dashboard lo mide etapa por etapa para ubicar dónde se pierde a los prospectos. |
@@ -44,6 +45,7 @@ Glosario único y compartido por toda la documentación del proyecto. Cada docum
 | **lead / prospecto** | Persona que muestra interés y es capturada como contacto comercial. En este proyecto se usan como sinónimos. |
 | **LFPDPPP** | Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México). |
 | **LLM (modelo de lenguaje)** | Sistema de IA entrenado para procesar y generar lenguaje natural; constituye el "razonamiento" del agente. |
+| **Meta Business Manager** | Plataforma de Meta donde Sports World administra sus cuentas publicitarias y el activo de WhatsApp Business; su acceso permite medir tráfico, alcance y clics de las campañas dentro del funnel, y en él se completa la verificación del negocio requerida por la WhatsApp Business API. |
 | **middleware** | Capa de integración de EL PRESTADOR entre el sitio/BES y el CRM de Sports World: traduce, deduplica (idempotencia) y escribe los leads sin exponer el CRM al navegador. Es la vía de implementación adoptada para la integración. |
 | **Mobile First** | Criterio de diseño que prioriza la experiencia en el teléfono móvil (≈70% del tráfico del sitio) y escala después a escritorio. |
 | **mTLS / OAuth 2.1** | Esquemas de autenticación entre sistemas (TLS mutuo y autorización por tokens) para integraciones seguras. |

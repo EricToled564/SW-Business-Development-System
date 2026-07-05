@@ -25,6 +25,7 @@
       { id: "sD",  t: "Puntos de acceso para BES (consulta de miembro, club por amenidad y geolocalización, creación de prospecto)", r: "Líder técnico CRM" },
       { id: "sD8", t: "Acceso a la base de conocimiento de BES (membresías, clases, políticas, horario de atención)", r: "Líder técnico CRM / Marketing operativa" },
       { id: "sD9", t: "Estrategia de escalación a operador humano (SIP / WhatsApp / callback)", r: "Responsable único" },
+      { id: "sF",  t: "Servidor e infraestructura de hospedaje (Bloque F: runtime, HTTPS, acceso de despliegue, staging, respaldos, monitoreo)", r: "Líder IT" },
     ],
     marketing: [
       { id: "mE1", t: "Lineamientos de marca / brand book (logos vectoriales, paleta, tipografías, tono)", r: "Mercadotecnia y Marca" },
@@ -34,6 +35,8 @@
       { id: "mE5", t: "Responsable de Marketing/Marca facultado para aprobar (wireframes, prototipo, contenido)", r: "Dirección de Mercadotecnia" },
       { id: "mE6", t: "Presupuesto de medios, en su caso (no incluido en la contraprestación salvo pacto)", r: "Mercadotecnia y Marca" },
       { id: "mE7", t: "Avisos de privacidad y textos legales vigentes de la marca", r: "Asuntos legales / Marketing" },
+      { id: "mE8", t: "Acceso al Meta Business Manager (cuentas publicitarias y activo de WhatsApp Business)", r: "Mercadotecnia y Marca / IT" },
+      { id: "mE9", t: "Acceso de lectura a TikTok Ads, cuando existan campañas en esa plataforma", r: "Mercadotecnia y Marca" },
     ],
   };
 

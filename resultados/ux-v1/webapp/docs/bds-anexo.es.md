@@ -24,7 +24,7 @@ El detalle funcional y técnico consta en los documentos del módulo BDS: **[Flu
 
 ## 4 · Aportaciones a cargo de EL CLIENTE
 
-- **Número oficial de WhatsApp Business** y aprobación de las plantillas de mensaje.
+- **Infraestructura de WhatsApp requerida:** **un (1) número oficial de WhatsApp Business a nombre de EL CLIENTE**, operando sobre la **WhatsApp Business API** (Cloud API o a través de un proveedor autorizado, BSP), con la **verificación del negocio en el Meta Business Manager** completada y las **plantillas de mensaje aprobadas**. **Un solo número es suficiente para la atribución por campaña:** los anuncios de clic-a-WhatsApp de Meta entregan, junto con el primer mensaje del prospecto, la **referencia del anuncio y la campaña de origen**, con la que el funnel registra el origen de cada conversación sin necesidad de números separados por campaña (**[Medición](#bds-medicion)**).
 - **Plantilla de operadores**, sus **horarios de atención** y la **lista de personal autorizado** de la consola.
 - Acceso al **API estándar del CRM** (ya cubierto por el middleware del Proyecto A) para la escritura de leads y las etapas de visita proporcionada y membresía del funnel.
 

@@ -2,7 +2,7 @@
 
 _Generado por `tools/audit-docs.js`._
 
-**Resumen:** 0 errores · 0 avisos · 29 documentos · 69 términos de glosario.
+**Resumen:** 0 errores · 0 avisos · 29 documentos · 71 términos de glosario.
 
 ## archivos (0 errores, 0 avisos)
 

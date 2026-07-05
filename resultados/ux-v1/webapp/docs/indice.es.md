@@ -11,26 +11,29 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 |---|---|---|---|
 | 1 | [**Índice de documentos**](#indice) | Este mapa: qué contiene cada documento, a quién está dirigido y dónde consultar cada tema. | Todos |
 | 2 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo, con eje en el cuestionario y la experiencia única, y una sección para cada proyecto: Rediseño Web (Proyecto A), Business Development System (Proyecto B) y Academia Sports World (Proyecto C). | Dirección, negocio |
-| 3 | [**Contrato**](#contrato) | Marco mercantil de **los tres proyectos**: objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Segunda— la separación y contraprestación adicional de los Proyectos B (BDS) y C (Academia). | Dirección, Legal |
-| 3a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques y con responsables. | Dirección, TI, Legal |
+| 3 | [**Contrato**](#contrato) | Marco mercantil de **los tres proyectos** (**V4.1**, 25 cláusulas y Anexos Uno a Cinco): objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Segunda— la separación y contraprestación adicional de los Proyectos B (BDS) y C (Academia). | Dirección, Legal |
+| 3a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques (0, A–F) y con responsables; incluye el servidor e infraestructura de hospedaje del Bloque F. | Dirección, TI, Legal |
 | 3b | [**Anexo Dos · Entregables específicos de los servicios**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
+| 3c | [**Anexo Tres · Gastos variables (informativo)**](#contrato:anexo-tres-gastos-variables-de-operacin-informativo) | Estimación informativa de los gastos variables de operación a cargo del cliente, por escenario; su contenido íntegro vive en el documento Gastos Operativos Variables. | Dirección, Finanzas |
+| 3d | [**Anexo Cuatro · Targets comerciales**](#contrato:anexo-cuatro-targets-comerciales-post-lanzamiento-aspiracionales-no-vinculantes) | Targets comerciales post-lanzamiento, aspiracionales y no vinculantes, con sus condiciones habilitadoras y el compromiso de acompañamiento. | Dirección, negocio |
+| 3e | [**Anexo Cinco · Niveles de servicio (SLA)**](#contrato:anexo-cinco-protocolo-de-niveles-de-servicio-gestin-de-incidencias-y-continuidad) | Severidades y SLA del soporte, protocolo de incidencias y crisis, reporte mensual de tickets y estabilización post-lanzamiento. | Dirección, TI, Legal |
 | 4 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en toda la documentación, de los tres proyectos. | Todos |
 | 5 | [**Plan de Ejecución**](#execution) | Marco de gobierno de **los tres proyectos**: para el Proyecto A, cronograma comprometido de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios; para el Proyecto B (BDS), el quinto equipo, sus tareas y dependencias (§10); para el Proyecto C (Academia), el marco de arranque y sus dependencias (§11) — los plazos de B (8 semanas, en paralelo al A) y C (10 semanas) corren desde la firma de su Addendum. | Dirección, TI, PMO |
-| 6 | [**Gastos Operativos Variables**](#gastos-operativos) | Estimación mensual de los costos de plataformas a cargo de Sports World (IA, voz, WhatsApp, hospedaje) en tres escenarios de tráfico e interacciones, con tarifas verificadas y totales en USD y MXN. | Dirección, Finanzas |
+| 6 | [**Gastos Operativos Variables**](#gastos-operativos) | Estimación mensual (**V1.2**; contenido del **Anexo Tres** del Contrato, informativo) de los costos de plataformas a cargo de Sports World (IA, voz, WhatsApp — el hospedaje corre en infraestructura propia del cliente, sin costo de proveedor externo) en tres escenarios de tráfico e interacciones, con tarifas verificadas y totales en USD y MXN. | Dirección, Finanzas |
 | 7 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del cuestionario y la experiencia ideal — el motor único que comparten los tres proyectos. | Negocio, dirección |
 
 ## Proyecto A · Rediseño Web (exclusivos)
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
-| 7 | [**Arquitectura de Experiencia (UX)**](#experience) | El flujo de experiencia ideal y el **mapa del sitio** (las 148 páginas): navegación, fases, cuestionario, menús dinámicos, reglas de negocio, datos y arquitectura de información. | Producto, UX, desarrollo, SEO |
-| 8 | [**Estrategia Técnica**](#technical) | Stack, agente BES, **integración por middleware** y datos del CRM, migración, seguridad, método y calidad, **funnel de resultados y dashboard (§10)**, **captación unificada de leads (§11)** y los **estándares del API del cliente (§12)**. | Sistemas / TI |
-| 9 | [**Seguridad del sitio**](#seguridad) | Protección de datos personales: minimización y no retención (los datos viven brevemente; sin respaldo tras copiarse al CRM). El BDS sigue estos mismos principios por referencia. | TI, Legal, negocio |
-| 10 | [**Status de Entregables Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. El detalle contractual vive en el Anexo Uno. | TI, Marketing, PMO |
-| 11 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
-| 12 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
-| 13 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
-| 14 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
+| 8 | [**Arquitectura de Experiencia (UX)**](#experience) | El flujo de experiencia ideal y el **mapa del sitio** (las 148 páginas): navegación, fases, cuestionario, menús dinámicos, reglas de negocio, datos y arquitectura de información. | Producto, UX, desarrollo, SEO |
+| 9 | [**Estrategia Técnica**](#technical) | Stack, agente BES, **integración por middleware** y datos del CRM, migración, seguridad, método y calidad, **funnel de resultados y dashboard (§10)**, **captación unificada de leads (§11)** y los **estándares del API del cliente (§12)**. | Sistemas / TI |
+| 10 | [**Seguridad del sitio**](#seguridad) | Protección de datos personales: minimización y no retención (los datos viven brevemente; sin respaldo tras copiarse al CRM). El BDS sigue estos mismos principios por referencia. | TI, Legal, negocio |
+| 11 | [**Status de Entregables Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. El detalle contractual vive en el Anexo Uno. | TI, Marketing, PMO |
+| 12 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
+| 13 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
+| 14 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
+| 15 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
 
 ## Proyecto B · Business Development System (BDS — exclusivos, alcance y costo aparte)
 
@@ -40,7 +43,7 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | B2 | [**BDS · Flujo de conversión**](#bds-flujo) | Recorrido end-to-end y árbol de enrutamiento (operador → BES → asesor). | Sistemas, Operación |
 | B3 | [**BDS · Canales y enrutamiento**](#bds-canales) | Reglas human-first, respaldo con BES, horarios y SLA de contacto. | Operación, Sistemas |
 | B4 | [**BDS · Estrategia Técnica**](#bds-tecnica) | WhatsApp Business API, BES por WhatsApp (texto), consola de operadores. | Sistemas / TI |
-| B5 | [**BDS · Medición y funnel**](#bds-medicion) | Speed-to-lead por canal y operador, hasta nueva membresía. | Dirección, Sistemas |
+| B5 | [**BDS · Medición y funnel**](#bds-medicion) | Speed-to-lead por canal y operador, atribución de origen por campaña (Meta/TikTok) y funnel hasta nueva membresía. | Dirección, Sistemas |
 | B6 | [**BDS · Addendum contractual**](#bds-anexo) | Alcance, entregables, contraprestación adicional (USD $4,850.00 más IVA; MXN $86,330.00) y plazo de 8 semanas en paralelo al Proyecto A. | Dirección, Legal |
 
 ## Proyecto C · Academia Sports World (exclusivos, alcance y costo aparte)
@@ -69,10 +72,13 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | Datos del CRM y **precios** (por club / ciudad / nacional) | [Estrategia Técnica · §2](#technical:2-los-cuatro-datos-y-las-integraciones-con-sports-world) · [Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) · [Anexo Dos I.3](#contrato:i3-componente-diseo-contenido-visual-y-desarrollo) |
 | **Funnel de resultados y dashboard** | [Estrategia Técnica · §10](#technical:10-funnel-de-resultados-y-dashboard-de-medicin) · [Contrato · Anexo Dos I.3](#contrato:i3-componente-diseo-contenido-visual-y-desarrollo) |
 | **Captación de leads** (sitio, BES y consola interna) | [Estrategia Técnica · §11](#technical:11-captacin-unificada-de-leads-sitio-bes-y-consola-interna) |
-| Recursos de **Google** a conectar (GA4, GSC, GBP, GTM, Ads) | [Contrato · Anexo Uno E.4](#contrato:bloque-e-aportaciones-de-marketing-y-marca-a-cargo-del-cliente) |
+| Recursos de **Google, Meta y TikTok** a conectar (GA4, GSC, GBP, GTM, Google Ads; Meta Business Manager y WhatsApp Business; TikTok Ads) | [Contrato · Anexo Uno E.4, E.8 y E.9](#contrato:bloque-e-aportaciones-de-marketing-y-marca-a-cargo-del-cliente) |
 | Cronograma de 8 semanas y gates | [Plan de Ejecución · §3 Cronograma](#execution:3-el-cronograma-de-ocho-semanas) · [Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente) |
 | Precio, forma de pago y stand-by | [Contrato · Cláusulas (Octava, Novena y Décima Quinta)](#contrato:clusulas) |
-| Soporte, SLA, bolsa de 8 horas y estabilización | [Contrato · Anexo Dos Sección III](#contrato:seccin-iii-entregables-del-servicio-iii-servicios-recurrentes) |
+| Soporte, SLA, bolsa de 8 horas y estabilización | [Contrato · Anexo Dos Sección III](#contrato:seccin-iii-entregables-del-servicio-iii-servicios-recurrentes) · [Contrato · Anexo Cinco](#contrato:anexo-cinco-protocolo-de-niveles-de-servicio-gestin-de-incidencias-y-continuidad) |
+| Gastos variables de operación (estimación por escenario) | [Gastos Operativos Variables](#gastos-operativos) · [Contrato · Anexo Tres](#contrato:anexo-tres-gastos-variables-de-operacin-informativo) |
+| Targets comerciales post-lanzamiento (aspiracionales) | [Contrato · Anexo Cuatro](#contrato:anexo-cuatro-targets-comerciales-post-lanzamiento-aspiracionales-no-vinculantes) |
+| Servidor e infraestructura de hospedaje del cliente | [Contrato · Anexo Uno, Bloque F](#contrato:bloque-f-servidor-e-infraestructura-de-hospedaje-proporcionada-por-el-cliente) |
 | Aportaciones de SW (sistemas y marketing) | [Status de Entregables Sports World](#aportaciones) · [Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) |
 | KPIs comprometidos | [Contrato · Anexo Dos Sección IV](#contrato:seccin-iv-kpis-comprometidos-estrategia-comercial) |
 | Calculadora de ROI | [Calculadora de ROI](#roi) |
@@ -82,6 +88,7 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | **BDS · equipo, tareas y dependencias** (marco de ejecución) | [Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin) · [BDS · Addendum](#bds-anexo) |
 | **Brief del asesor** (documento personalizado del comprador potencial, con sugerencias de venta) | [Arquitectura de Experiencia · §1.2, fase `briefing`](#experience:12-las-siete-fases) · [BDS · Resumen](#bds-resumen) · [BDS · Flujo](#bds-flujo) |
 | **Speed-to-lead / tiempo al primer contacto** | [BDS · Medición y funnel](#bds-medicion) |
+| **Atribución de origen por campaña** (Meta/TikTok → membresía) | [BDS · Medición y funnel](#bds-medicion:atribucin-de-origen-del-anuncio-a-la-membresa) · [Contrato · Anexo Uno, Bloque E](#contrato:bloque-e-aportaciones-de-marketing-y-marca-a-cargo-del-cliente) |
 | **BES por WhatsApp (solo texto)** | [BDS · Estrategia Técnica](#bds-tecnica) · [Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto) |
 | **Separación de proyectos A/B/C y costo adicional** | [Contrato · Cláusula Segunda](#contrato:clusulas) · [BDS · Addendum](#bds-anexo) · [Academia · Addendum](#academia-anexo) |
 | **Academia SW · capacitación y práctica de asesores** (Proyecto C) | [Academia · Resumen](#academia-resumen) · [Contenido y taxonomía](#academia-contenido) · [Fases](#academia-fases) |

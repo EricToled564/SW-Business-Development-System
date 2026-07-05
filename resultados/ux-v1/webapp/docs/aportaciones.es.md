@@ -1,7 +1,7 @@
 # Status de Entregables Sports World
 ## Tablero de seguimiento de las aportaciones a cargo de Sports World
 
-Tablero operativo de seguimiento de **todo lo que Sports World debe aportar** —dividido en **Sistemas** y **Marketing**—. El detalle contractual y la descripción de cada requerimiento se establecen, de forma exhaustiva, en el **[Contrato › Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)** (Bloques 0, A, B, C, D para sistemas; Bloque E para marketing). Esta sección no repite ese detalle: concentra únicamente el **seguimiento** de cada aportación —responsable, fecha límite y status (entregado / no entregado)— con un **semáforo** que se calcula solo:
+Tablero operativo de seguimiento de **todo lo que Sports World debe aportar** —dividido en **Sistemas** y **Marketing**—. El detalle contractual y la descripción de cada requerimiento se establecen, de forma exhaustiva, en el **[Contrato › Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)** (Bloques 0, A, B, C, D y F para sistemas; Bloque E para marketing). Esta sección no repite ese detalle: concentra únicamente el **seguimiento** de cada aportación —responsable, fecha límite y status (entregado / no entregado)— con un **semáforo** que se calcula solo:
 
 - 🔴 **Vencido** — no entregado y la fecha límite ya pasó (igual o anterior a hoy).
 - 🟡 **Por vencer** — no entregado y faltan **2 días o menos**.
