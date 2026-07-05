@@ -37,5 +37,6 @@ El detalle funcional y técnico consta en los documentos del módulo BDS: **[Flu
 
 ## 6 · Naturaleza y garantías
 
+- **Condición de precio:** el precio del BDS asume su **aprobación simultánea al Proyecto A**; de no aprobarse en forma simultánea, deberá recalcularse antes de la firma de este Addendum (Contrato, Cláusula Segunda, Sección IV).
 - El BDS es un **alcance independiente**; su suscripción no modifica el Proyecto A. En tanto no se firme este Addendum, el Proyecto B **no genera obligación ni costo** para ninguna de las Partes.
 - EL PRESTADOR **no garantiza** tasas de conversión ni volúmenes de agendamiento o de membresías: dependen de factores comerciales y de mercado. Lo comprometido es la **funcionalidad** del sistema y su **medición**.

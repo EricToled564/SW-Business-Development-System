@@ -1,7 +1,7 @@
-# Sports World · Gastos Operativos Variables · V1.1
+# Sports World · Gastos Operativos Variables · V1.2
 ## Estimación mensual de las plataformas a cargo de Sports World — desglose por componente y tres escenarios
 
-> **Documento general (los tres proyectos) · Informativo, no contractual.** El Contrato únicamente asigna estos gastos a Sports World (Cláusula Sexta Bis) y pacta como única contraprestación recurrente la iguala; la **estimación** vive aquí. Este documento consolida los **costos de operación variables** que Sports World cubre directamente a los proveedores de IA, voz y mensajería, con el **desglose completo de cómo se llega a cada cifra**. Tarifas verificadas en **julio de 2026** contra las fuentes indicadas al final; todas las equivalencias al **tipo de cambio contractual fijo de $17.80 MXN por USD**.
+> **Documento general (los tres proyectos) · Anexo Tres del Contrato, de carácter informativo.** El Contrato asigna estos gastos a Sports World (Cláusula Sexta Bis) y pacta como contraprestación recurrente únicamente las igualas; este Anexo presenta los **valores aproximados** para planeación: no modifican la contraprestación ni generan obligación de pago al proveedor, y su recalibración no requiere convenio modificatorio. Este documento consolida los **costos de operación variables** que Sports World cubre directamente a los proveedores de IA, voz y mensajería, con el **desglose completo de cómo se llega a cada cifra**. Tarifas verificadas en **julio de 2026** contra las fuentes indicadas al final; todas las equivalencias al **tipo de cambio contractual fijo de $17.80 MXN por USD**.
 
 ## Qué cubre este documento (y qué no)
 

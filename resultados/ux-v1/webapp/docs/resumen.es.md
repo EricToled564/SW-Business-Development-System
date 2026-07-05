@@ -172,7 +172,7 @@ Todas las equivalencias entre dólares y pesos se calculan al **tipo de cambio c
 | **B · Business Development System** | USD $4,850.00 más IVA (MXN $86,330.00), en dos exhibiciones de 50% | Sin iguala propia: mantenimiento incluido en la iguala del Proyecto A | 8 semanas, en paralelo al A | Desde la firma de su Addendum |
 | **C · Academia Sports World** | $850,000.00 MXN más IVA (USD $47,752.81); $986,000.00 MXN con IVA, en dos exhibiciones de 50% | Iguala de mantenimiento **opcional**: $18,500 MXN más IVA ($21,460 con IVA) — se decide al firmar el Addendum | 10 semanas | Desde la firma de su Addendum |
 
-Los **costos de operación** de las plataformas de IA, voz y mensajería corren por cuenta de Sports World directamente con los proveedores, con monitoreo y reporte mensual (Contrato, Cláusula Sexta Bis). La estimación mensual completa, en tres escenarios de tráfico e interacciones, está en **[Gastos Operativos Variables](#gastos-operativos)**.
+**Los precios de B y C asumen su aprobación simultánea al Proyecto A**; de diferirse alguno, su precio se recalcula antes de firmar el Addendum (Contrato, Cláusula Segunda). Los **costos de operación** de las plataformas de IA, voz y mensajería corren por cuenta de Sports World directamente con los proveedores, con monitoreo y reporte mensual (Contrato, Cláusula Sexta Bis). La estimación mensual completa, en tres escenarios de tráfico e interacciones, está en **[Gastos Operativos Variables](#gastos-operativos)**.
 
 ## El Plan de Ejecución, en resumen
 
