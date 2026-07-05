@@ -3,7 +3,7 @@ import { useState } from "react";
 const BRAND = { black: "#1D1D1B", red: "#E6282A", white: "#FFFFFF", gray1: "#F5F5F4", gray2: "#E5E5E3", gray3: "#A8A8A6", gray4: "#6B6B68" };
 
 // ─── 49 Sports World clubs: [nombre, tag, estado, municipio, colonia, calle, cp, lat, lng] ───
-const CLUBS_RAW = [["Amores (Av. Coyoacan)","amores","CDMX","Benito Juárez","Del Valle","Av. Coyoacán #1622","",19.3654787,-99.172393],["Antara","antara","CDMX","Miguel Hidalgo","Granada","Av. Ejército Nacional","",19.4393015,-99.2023987],["Anzures","anzures","CDMX","Miguel Hidalgo","Anzures","Leibnitz #117","",19.4294612,-99.1779442],["Cumbres","cumbres","Nuevo León","Monterrey","Bosques de las Cumbres","Paseo de los Leones #3228","",25.7279816,-100.3954653],["Hermosillo","hermosillo","Sonora","Hermosillo","Bachoco","Blvd. José María Morelos 355","83148",29.1209068,-110.948964],["La Rioja","la-rioja","Jalisco","Tlajomulco de Zúñiga","La Rioja","López Mateos #7000","",20.5705507,-103.4568064],["Plaza Mayor","leon","Guanajuato","León","Valle del Campestre","Blvd. Juan Alonso de Torres #2002","",21.156274,-101.695017],["Pabellón Bosques","pabellon-bosques","CDMX","Cuajimalpa","Lomas de Vista Hermosa","Av. Prolongación Bosques de Reforma #1813","",19.382277,-99.2676637],["Las Ánimas","puebla","Puebla","Puebla","Las Ánimas","Diagonal 39 Pte. #3515","",19.0435536,-98.2345772],["Reforma Rhin","reforma","CDMX","Cuauhtémoc","—","Paseo de la Reforma #243","",19.429759,-99.1638454],["Roma","roma","CDMX","Cuauhtémoc","Roma Norte","Av. Monterrey #133","",19.4161418,-99.1642424],["Sonata","sonata","Puebla","San Andrés Cholula","Lomas de Angelópolis II","Paseo Sinfonía #4","",18.9937027,-98.2779125],["Triángulo Tecamachalco","triangulo-tecamachalco","Estado de México","Huixquilucan","Tecamachalco","Av. de los Bosques Lotes 1–16","",19.4111548,-99.2508061],["Plaza Sol","veracruz","Veracruz","Boca del Río","Mocambo","Blvd. Manuel Ávila Camacho #5256","",19.1405101,-96.1028237],["Condesa","condesa","CDMX","Cuauhtémoc","Hipódromo Condesa","Sonora #180","",19.4135251,-99.1677298],["Félix Cuevas","felix-cuevas","CDMX","Benito Juárez","Tlacoquemécatl","Av. Félix Cuevas #374","",19.3731237,-99.1730279],["Altavista","altavista","CDMX","Álvaro Obregón","San Ángel","Blvd. Adolfo López Mateos #380","",19.347455948346873,-99.20354015],["Satélite","satelite","Estado de México","Naucalpan","Boulevares","Blvd. Manuel Ávila Camacho #3228-9","",19.4975684,-99.2379087],["Patriotismo","patriotismo","CDMX","Benito Juárez","San Pedro de los Pinos","Patriotismo #229","",19.396114,-99.1808769],["Espacio Interlomas","interlomas","Estado de México","Huixquilucan","Jesús del Monte","Av. Jesús del Monte #37","",19.3951913,-99.2892166],["Metepec","metepec","Estado de México","Metepec","Coaxustenco","Av. Leona Vicario #501","",19.2608094,-99.6138447],["Oasis Coyoacan","miguel-angel-de-quevedo","CDMX","Coyoacán","Romero de Terreros","Av. Universidad #1778","",19.3426373,-99.1464945],["Obrero Mundial","obrero-mundial","CDMX","Benito Juárez","Narvarte","Obrero Mundial #196","",19.4019033,-99.1596941],["Palmas","palmas","CDMX","Miguel Hidalgo","Lomas de Chapultepec","Av. Paseo de las Palmas #525","",19.430221,-99.212727],["Acora Pedregal","pedregal","CDMX","Coyoacán","Jardines del Pedregal","Ladera #16","",19.3054947,-99.2025277],["San Jeronimo","san-jeronimo","CDMX","Magdalena Contreras","San Jerónimo Lídice","Blvd. Adolfo Ruiz Cortines #3307","",19.3246038,-99.2162598],["Santa Fe","santa-fe","CDMX","Cuajimalpa","Santa Fe","Vasco de Quiroga #3880","",19.3614516,-99.277659],["Patio Universidad","universidad","CDMX","Benito Juárez","Xoco","Av. Universidad #1046","3330",19.3658033,-99.1673465],["Xola","xola","CDMX","Benito Juárez","Del Valle","Av. Juárez 202","3100",19.3970983,-99.1660815],["Zona Esmeralda","zona-esmeralda","Estado de México","Atizapán","Valle Escondido","Vía Dr. Jiménez Cantú Mz A-2 Lt 3","",19.57278,-99.302142],["Torre Manacar","manacar","CDMX","Benito Juárez","Insurgentes Mixcoac","Av. Insurgentes Sur #1457","",19.3685229,-99.1811178],["Lindavista","lindavista","CDMX","Gustavo A. Madero","Capultitlán","Av. Fortuna #334","",19.4834707,-99.1331203],["Cabo Norte","cabo-norte","Yucatán","Mérida","—","Av. #24","",21.0591928,-89.5953549],["Portal San Ángel","barranca","CDMX","Álvaro Obregón","Los Alpes","Av. Revolución 1267","1010",19.361142,-99.189553],["Juriquilla","juriquilla","Querétaro","Querétaro","El Salitre","Anillo Vial Fray Junípero Serra 21260","76127",20.6764453,-100.4319057],["Bernardo Quintana","bernardo-quintana","Querétaro","Querétaro","Arboledas","Av. Bernardo Quintana #518","",20.6123874,-100.3828834],["Crater","crater","CDMX","Álvaro Obregón","Jardines del Pedregal","Cráter #811","",19.3163223,-99.2110617],["Patio Tlalpan","patio-tlalpan","CDMX","Tlalpan","Santa Úrsula Xitla","Av. Insurgentes Sur #4177","14420",19.2840897,-99.1766476],["Paseo Interlomas","paseo-interlomas","Estado de México","Huixquilucan","Green House","Privada #7","",19.3986468,-99.2834724],["Plaza Tlalne","tlalnepantla","Estado de México","Tlalnepantla","San Lorenzo Industrial","Sor Juana Inés de la Cruz #280","",19.5389568,-99.2045833],["Saltillo","saltillo","Coahuila","Saltillo","Ex Hacienda San José","Blvd. Eulalio Gutiérrez T. #2275","",25.4615279,-100.9502845],["Esfera","esfera-queretaro","Querétaro","Querétaro","La Granja","Autopista Celaya–Querétaro #5501","",20.57369,-100.4066119],["Plaza Almanara","torreon","Coahuila","Torreón","—","Periférico Raúl López Sánchez S/N","",25.583705,-103.4081399],["Altaria","aguascalientes","Aguascalientes","Aguascalientes","Trojes de Alonso","Blvd. A. Zacatecas Norte #849","",21.92401965,102.2921939196555],["Punto MAQ","parque-san-andres","CDMX","Coyoacán","Parque San Andrés","Av. Miguel Ángel de Quevedo #1144","",19.3425479,-99.1464584],["Nave 01 Apodaca","apodaca","Nuevo León","Apodaca","Industrial Milimex","Carretera Miguel Alemán #120","",25.7533685,-100.1971046],["Coapa","terraza-coapa","CDMX","Tlalpan","Villa Coapa","Calzada Acoxpa #610","",19.294831,-99.129631],["Plaza Cinepolis","culiacan","Sinaloa","Culiacán","Recursos Hidráulicos","Blvd. Culiacán 450 Pte.","80100",24.7991558,-107.4215631],["San Pedro","san-pedro","Nuevo León","San Pedro Garza García","Del Valle","Calz. del Valle #351","66220",25.6555376,-100.3609302]];
+const CLUBS_RAW = [["Amores (Av. Coyoacan)","amores","CDMX","Benito Juárez","Del Valle","Av. Coyoacán #1622","",19.3654787,-99.172393],["Antara","antara","CDMX","Miguel Hidalgo","Granada","Av. Ejército Nacional","",19.4393015,-99.2023987],["Anzures","anzures","CDMX","Miguel Hidalgo","Anzures","Leibnitz #117","",19.4294612,-99.1779442],["Cumbres","cumbres","Nuevo León","Monterrey","Bosques de las Cumbres","Paseo de los Leones #3228","",25.7279816,-100.3954653],["Hermosillo","hermosillo","Sonora","Hermosillo","Bachoco","Blvd. José María Morelos 355","83148",29.1209068,-110.948964],["La Rioja","la-rioja","Jalisco","Tlajomulco de Zúñiga","La Rioja","López Mateos #7000","",20.5705507,-103.4568064],["Plaza Mayor","leon","Guanajuato","León","Valle del Campestre","Blvd. Juan Alonso de Torres #2002","",21.156274,-101.695017],["Pabellón Bosques","pabellon-bosques","CDMX","Cuajimalpa","Lomas de Vista Hermosa","Av. Prolongación Bosques de Reforma #1813","",19.382277,-99.2676637],["Las Ánimas","puebla","Puebla","Puebla","Las Ánimas","Diagonal 39 Pte. #3515","",19.0435536,-98.2345772],["Reforma Rhin","reforma","CDMX","Cuauhtémoc","—","Paseo de la Reforma #243","",19.429759,-99.1638454],["Roma","roma","CDMX","Cuauhtémoc","Roma Norte","Av. Monterrey #133","",19.4161418,-99.1642424],["Sonata","sonata","Puebla","San Andrés Cholula","Lomas de Angelópolis II","Paseo Sinfonía #4","",18.9937027,-98.2779125],["Triángulo Tecamachalco","triangulo-tecamachalco","Estado de México","Huixquilucan","Tecamachalco","Av. de los Bosques Lotes 1–16","",19.4111548,-99.2508061],["Plaza Sol","veracruz","Veracruz","Boca del Río","Mocambo","Blvd. Manuel Ávila Camacho #5256","",19.1405101,-96.1028237],["Condesa","condesa","CDMX","Cuauhtémoc","Hipódromo Condesa","Sonora #180","",19.4135251,-99.1677298],["Félix Cuevas","felix-cuevas","CDMX","Benito Juárez","Tlacoquemécatl","Av. Félix Cuevas #374","",19.3731237,-99.1730279],["Altavista","altavista","CDMX","Álvaro Obregón","San Ángel","Blvd. Adolfo López Mateos #380","",19.347455948346873,-99.20354015],["Satélite","satelite","Estado de México","Naucalpan","Boulevares","Blvd. Manuel Ávila Camacho #3228-9","",19.4975684,-99.2379087],["Patriotismo","patriotismo","CDMX","Benito Juárez","San Pedro de los Pinos","Patriotismo #229","",19.396114,-99.1808769],["Espacio Interlomas","interlomas","Estado de México","Huixquilucan","Jesús del Monte","Av. Jesús del Monte #37","",19.3951913,-99.2892166],["Metepec","metepec","Estado de México","Metepec","Coaxustenco","Av. Leona Vicario #501","",19.2608094,-99.6138447],["Oasis Coyoacan","miguel-angel-de-quevedo","CDMX","Coyoacán","Romero de Terreros","Av. Universidad #1778","",19.3426373,-99.1464945],["Obrero Mundial","obrero-mundial","CDMX","Benito Juárez","Narvarte","Obrero Mundial #196","",19.4019033,-99.1596941],["Palmas","palmas","CDMX","Miguel Hidalgo","Lomas de Chapultepec","Av. Paseo de las Palmas #525","",19.430221,-99.212727],["Acora Pedregal","pedregal","CDMX","Coyoacán","Jardines del Pedregal","Ladera #16","",19.3054947,-99.2025277],["San Jeronimo","san-jeronimo","CDMX","Magdalena Contreras","San Jerónimo Lídice","Blvd. Adolfo Ruiz Cortines #3307","",19.3246038,-99.2162598],["Santa Fe","santa-fe","CDMX","Cuajimalpa","Santa Fe","Vasco de Quiroga #3880","",19.3614516,-99.277659],["Patio Universidad","universidad","CDMX","Benito Juárez","Xoco","Av. Universidad #1046","3330",19.3658033,-99.1673465],["Xola","xola","CDMX","Benito Juárez","Del Valle","Av. Juárez 202","3100",19.3970983,-99.1660815],["Zona Esmeralda","zona-esmeralda","Estado de México","Atizapán","Valle Escondido","Vía Dr. Jiménez Cantú Mz A-2 Lt 3","",19.57278,-99.302142],["Torre Manacar","manacar","CDMX","Benito Juárez","Insurgentes Mixcoac","Av. Insurgentes Sur #1457","",19.3685229,-99.1811178],["Lindavista","lindavista","CDMX","Gustavo A. Madero","Capultitlán","Av. Fortuna #334","",19.4834707,-99.1331203],["Cabo Norte","cabo-norte","Yucatán","Mérida","—","Av. #24","",21.0591928,-89.5953549],["Portal San Ángel","barranca","CDMX","Álvaro Obregón","Los Alpes","Av. Revolución 1267","1010",19.361142,-99.189553],["Juriquilla","juriquilla","Querétaro","Querétaro","El Salitre","Anillo Vial Fray Junípero Serra 21260","76127",20.6764453,-100.4319057],["Bernardo Quintana","bernardo-quintana","Querétaro","Querétaro","Arboledas","Av. Bernardo Quintana #518","",20.6123874,-100.3828834],["Crater","crater","CDMX","Álvaro Obregón","Jardines del Pedregal","Cráter #811","",19.3163223,-99.2110617],["Patio Tlalpan","patio-tlalpan","CDMX","Tlalpan","Santa Úrsula Xitla","Av. Insurgentes Sur #4177","14420",19.2840897,-99.1766476],["Paseo Interlomas","paseo-interlomas","Estado de México","Huixquilucan","Green House","Privada #7","",19.3986468,-99.2834724],["Plaza Tlalne","tlalnepantla","Estado de México","Tlalnepantla","San Lorenzo Industrial","Sor Juana Inés de la Cruz #280","",19.5389568,-99.2045833],["Saltillo","saltillo","Coahuila","Saltillo","Ex Hacienda San José","Blvd. Eulalio Gutiérrez T. #2275","",25.4615279,-100.9502845],["Esfera","esfera-queretaro","Querétaro","Querétaro","La Granja","Autopista Celaya–Querétaro #5501","",20.57369,-100.4066119],["Plaza Almanara","torreon","Coahuila","Torreón","—","Periférico Raúl López Sánchez S/N","",25.583705,-103.4081399],["Altaria","aguascalientes","Aguascalientes","Aguascalientes","Trojes de Alonso","Blvd. A. Zacatecas Norte #849","",21.92401965,-102.2921939196555],["Punto MAQ","parque-san-andres","CDMX","Coyoacán","Parque San Andrés","Av. Miguel Ángel de Quevedo #1144","",19.3425479,-99.1464584],["Nave 01 Apodaca","apodaca","Nuevo León","Apodaca","Industrial Milimex","Carretera Miguel Alemán #120","",25.7533685,-100.1971046],["Coapa","terraza-coapa","CDMX","Tlalpan","Villa Coapa","Calzada Acoxpa #610","",19.294831,-99.129631],["Plaza Cinepolis","culiacan","Sinaloa","Culiacán","Recursos Hidráulicos","Blvd. Culiacán 450 Pte.","80100",24.7991558,-107.4215631],["San Pedro","san-pedro","Nuevo León","San Pedro Garza García","Del Valle","Calz. del Valle #351","66220",25.6555376,-100.3609302]];
 const CLUBS = CLUBS_RAW.map(r => ({ nombre: r[0], tag: r[1], estado: r[2], municipio: r[3], colonia: r[4], calle: r[5], cp: r[6], lat: r[7], lng: r[8] }));
 
 // ─── Per-club catalog (amenities + adult classes + kids classes) from sw_matriz_clubes_clases_completa.xlsx ───
@@ -128,6 +128,36 @@ function haversineKm(lat1, lng1, lat2, lng2) {
   const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(a));
 }
+
+// ─── Zonas urbanas (ciudad / área metropolitana) para el filtro geográfico ───
+// Cada zona se define por centro y radio; un punto pertenece a la zona más cercana
+// cuyo radio lo cubra. Se usa igual para el ancla del usuario y para cada club,
+// de modo que "tu ciudad" significa lo mismo en ambos lados de la comparación.
+const CITY_ZONES = [
+  { id: "zmvm", nombre: "Ciudad de México y zona metropolitana", lat: 19.40, lng: -99.14, radioKm: 45 },
+  { id: "toluca", nombre: "Toluca y zona metropolitana", lat: 19.2926, lng: -99.6557, radioKm: 30 },
+  { id: "monterrey", nombre: "Monterrey y zona metropolitana", lat: 25.6866, lng: -100.3161, radioKm: 45 },
+  { id: "saltillo", nombre: "Saltillo", lat: 25.4232, lng: -101.0053, radioKm: 30 },
+  { id: "laguna", nombre: "Torreón y La Laguna", lat: 25.5428, lng: -103.4068, radioKm: 35 },
+  { id: "guadalajara", nombre: "Guadalajara y zona metropolitana", lat: 20.6597, lng: -103.3496, radioKm: 35 },
+  { id: "leon", nombre: "León", lat: 21.1250, lng: -101.6859, radioKm: 30 },
+  { id: "queretaro", nombre: "Querétaro y zona metropolitana", lat: 20.5888, lng: -100.3899, radioKm: 30 },
+  { id: "puebla", nombre: "Puebla y zona metropolitana", lat: 19.0414, lng: -98.2063, radioKm: 30 },
+  { id: "veracruz", nombre: "Veracruz–Boca del Río", lat: 19.1738, lng: -96.1342, radioKm: 30 },
+  { id: "merida", nombre: "Mérida y zona metropolitana", lat: 20.9674, lng: -89.5926, radioKm: 35 },
+  { id: "culiacan", nombre: "Culiacán", lat: 24.8091, lng: -107.3940, radioKm: 30 },
+  { id: "hermosillo", nombre: "Hermosillo", lat: 29.0729, lng: -110.9559, radioKm: 30 },
+  { id: "aguascalientes", nombre: "Aguascalientes", lat: 21.8853, lng: -102.2916, radioKm: 30 },
+];
+function cityZoneOf(lat, lng) {
+  let best = null, bestDist = Infinity;
+  for (const z of CITY_ZONES) {
+    const d = haversineKm(lat, lng, z.lat, z.lng);
+    if (d <= z.radioKm && d < bestDist) { best = z; bestDist = d; }
+  }
+  return best;
+}
+const FUERA_DE_CIUDAD_KM = 25;
 
 // Common CDMX neighborhood synonyms → match value against actual club colonia
 const NEIGHBORHOOD_SYNONYMS = {
@@ -423,52 +453,67 @@ function rankFromAnchorCore(lat, lng, knownClub, knownDistMin, experienceAmeniti
   }).sort((a, b) => a.distance_km - b.distance_km);
   if (allScored.length === 0) return null;
 
+  // ─── Filtro geográfico por ciudad ───
+  // (a) Si la ciudad del usuario tiene 1+ clubes: solo se consideran clubes de esa ciudad
+  //     (si es exactamente 1, no hay sección de alternativas).
+  // (b) Si su ciudad no tiene ningún club: el más cercano + 2 siguientes, marcando
+  //     "fuera de tu ciudad" cuando quedan a más de FUERA_DE_CIUDAD_KM km.
+  const userZone = cityZoneOf(lat, lng);
+  const zoneScored = userZone ? allScored.filter(c => { const z = cityZoneOf(c.lat, c.lng); return z && z.id === userZone.id; }) : [];
+  const inZone = zoneScored.length > 0;
+  const pool = inZone ? zoneScored : allScored;
+  const buildEntry = (c, distMin) => ({
+    ...buildClubResult(c, distMin != null ? distMin : kmToMinutes(c.distance_km)),
+    meetsExperience: c._meetsExperience,
+    distancia_km: Math.round(c.distance_km * 10) / 10,
+    fuera_de_ciudad: !inZone && c.distance_km > FUERA_DE_CIUDAD_KM,
+  });
+
   if (knownClub) {
     const chosen = allScored.find(c => c.tag === knownClub.tag) || { ...knownClub, distance_km: 0, _meetsExperience: clubMeetsExperience(knownClub, experienceAmenities, preferClasses) };
-    const otros = allScored.filter(c => c.tag !== chosen.tag).slice(0, 5);
+    const otros = (inZone ? zoneScored.filter(c => c.tag !== chosen.tag).slice(0, 5) : allScored.filter(c => c.tag !== chosen.tag).slice(0, 2));
     return {
-      principal: { ...buildClubResult(chosen, knownDistMin != null ? knownDistMin : kmToMinutes(chosen.distance_km)), tooFar: chosen.distance_km > 50, meetsExperience: chosen._meetsExperience },
-      otros: otros.map(c => ({ ...buildClubResult(c, kmToMinutes(c.distance_km)), meetsExperience: c._meetsExperience })),
-      experienceContext: { mode: chosen._meetsExperience ? "override_meets" : "override_partial", experienceAmenities },
+      principal: { ...buildEntry(chosen, knownDistMin != null ? knownDistMin : null), tooFar: chosen.distance_km > 50 },
+      otros: otros.map(c => buildEntry(c)),
+      experienceContext: { mode: chosen._meetsExperience ? "override_meets" : "override_partial", experienceAmenities, userZone: userZone ? userZone.nombre : null, clubesEnCiudad: zoneScored.length },
     };
   }
 
   const RADIUS_KM = 10;
-  const inRadius = allScored.filter(c => c.distance_km <= RADIUS_KM);
+  const inRadius = pool.filter(c => c.distance_km <= RADIUS_KM);
   const meetingInRadius = inRadius.filter(c => c._meetsExperience);
+  const OTROS_LIMIT = inZone ? 5 : 2;
 
   let principal, otros, mode;
 
   if (meetingInRadius.length >= 2) {
     principal = meetingInRadius[0];
-    const rest = allScored.filter(c => c.tag !== principal.tag).slice(0, 5);
-    otros = rest;
+    otros = pool.filter(c => c.tag !== principal.tag).slice(0, OTROS_LIMIT);
     mode = "multiple_meet";
   } else if (meetingInRadius.length === 1) {
     principal = meetingInRadius[0];
-    const rest = allScored.filter(c => c.tag !== principal.tag).slice(0, 5);
-    otros = rest;
+    otros = pool.filter(c => c.tag !== principal.tag).slice(0, OTROS_LIMIT);
     mode = "single_meets";
   } else {
-    const firstMeeting = allScored.find(c => c._meetsExperience);
+    const firstMeeting = pool.find(c => c._meetsExperience);
     if (firstMeeting) {
       principal = firstMeeting;
       const nearbyNonMeeting = inRadius.filter(c => c.tag !== principal.tag).slice(0, 3);
-      const extra = allScored.filter(c => c.tag !== principal.tag && !nearbyNonMeeting.some(n => n.tag === c.tag)).slice(0, Math.max(0, 5 - nearbyNonMeeting.length));
-      otros = [...nearbyNonMeeting, ...extra].slice(0, 5);
+      const extra = pool.filter(c => c.tag !== principal.tag && !nearbyNonMeeting.some(n => n.tag === c.tag)).slice(0, Math.max(0, OTROS_LIMIT - nearbyNonMeeting.length));
+      otros = [...nearbyNonMeeting, ...extra].slice(0, OTROS_LIMIT);
       mode = "expanded_radius";
     } else {
-      principal = allScored[0];
-      otros = allScored.filter(c => c.tag !== principal.tag).slice(0, 5);
+      principal = pool[0];
+      otros = pool.filter(c => c.tag !== principal.tag).slice(0, OTROS_LIMIT);
       mode = "none_meet";
     }
   }
 
   const principalDist = (knownDistMin !== null && knownDistMin !== undefined) ? knownDistMin : kmToMinutes(principal.distance_km);
   return {
-    principal: { ...buildClubResult(principal, principalDist), tooFar: principal.distance_km > 50, meetsExperience: principal._meetsExperience },
-    otros: otros.map(c => ({ ...buildClubResult(c, kmToMinutes(c.distance_km)), meetsExperience: c._meetsExperience })),
-    experienceContext: { mode, experienceAmenities, radiusKm: RADIUS_KM, principalDistanceKm: Math.round(principal.distance_km * 10) / 10 },
+    principal: { ...buildEntry(principal, principalDist), tooFar: principal.distance_km > 50 },
+    otros: otros.map(c => buildEntry(c)),
+    experienceContext: { mode, experienceAmenities, radiusKm: RADIUS_KM, principalDistanceKm: Math.round(principal.distance_km * 10) / 10, userZone: userZone ? userZone.nombre : null, clubesEnCiudad: zoneScored.length },
   };
 }
 
@@ -699,13 +744,27 @@ function resolveBlocks(answers, clubTag) {
     block2 = Q4_TO_BLOCK_2[primaryGoal];
   }
 
+  // ─── Segundo objetivo de Q4: se desarrolla también, no solo el primero ───
+  const secondaryGoal = (answers.Q4 || [])[1] || null;
+  if (secondaryGoal && secondaryGoal !== primaryGoal) {
+    const useAquaticTables = mode === "aquatic" && clubHasAlberca;
+    const sec1 = (useAquaticTables ? AQUATIC_BLOCK_1 : Q4_TO_BLOCK_1)[secondaryGoal];
+    const sec2 = (useAquaticTables ? AQUATIC_BLOCK_2 : Q4_TO_BLOCK_2)[secondaryGoal];
+    if (block1 && sec1) block1 = { ...block1, objetivo_secundario: secondaryGoal, secundario_line: `Tu segundo objetivo — ${secondaryGoal.toLowerCase()}: ${sec1.why_template}` };
+    if (block2 && sec2) block2 = { ...block2, objetivo_secundario: secondaryGoal, secundario_line: `Tu segundo objetivo — ${secondaryGoal.toLowerCase()}: ${sec2.why}` };
+  }
+
   const showBlock3 = !isSolo;
   const ranked = showBlock3 ? rankClasses(answers, clubTag) : { top: [], tambien: [] };
 
   return { block1, block2, top2: ranked.top, showBlock3, alberca_note };
 }
 
-async function callClaude(answers, clubData, block1, block2, top2, hasBlock3) {
+async function callClaude(answers, clubData, block1, block2, top2, hasBlock3, extras) {
+  extras = extras || {};
+  const contact = extras.contact || null;
+  const otrosClubes = Array.isArray(extras.otros) ? extras.otros : [];
+  const geoCtx = extras.experienceContext || null;
   const sys = `Eres editor de copy para Sports World México. Voz: cálido pero sobrio (Equinox/Third Space). Segunda persona "tú" cuando hablas al cliente. Para el brief al advisor, voz informativa y directa. Sin exclamaciones. Sin anglicismos. Sin promesas en kilos/talla/tiempo.
 
 PROHIBIDO ABSOLUTO:
@@ -716,6 +775,10 @@ PROHIBIDO ABSOLUTO:
 Siempre referirte a la sesión personalizada como "tu experiencia ideal" o "tu experiencia" o "rutina".
 
 VOCABULARIO APROBADO: construir, sostener, consolidar, mantener, recuperar, ajustar, ritmo, constancia, forma, figura, fuerza, aguante, base, experiencia, rutina, combinación.
+
+REGLA GEOGRÁFICA: solo puedes mencionar los clubes listados en el CONTEXTO GEOGRÁFICO del mensaje. NUNCA inventes ni insinúes que existen otros clubes cercanos al lead. Si el club recomendado queda fuera de la ciudad del lead, reconócelo con honestidad y sin exagerar la cercanía.
+
+REGLA DE OBJETIVOS: si el lead declaró dos objetivos, el copy y el brief desarrollan AMBOS de forma explícita (qué aporta la experiencia a cada uno), no solo el primero.
 
 RESTRICCIONES YMYL: si el lead tiene condición médica, embarazo/posparto, o tratamiento médico, NO diagnostiques, NO recomiendes intensidades específicas, NO sugieras que el lead "puede hacer todo" — siempre menciona que el advisor valida con criterio clínico en la visita guiada.
 
@@ -730,7 +793,12 @@ FORMATO: SOLO un objeto JSON válido. Sin preámbulo. Sin markdown.`;
   const onGLP1 = q17.includes("GLP-1 (Ozempic, Wegovy, Mounjaro)");
   const onBariatric = q17.includes("Cirugía bariátrica");
   const isFamily = answers.Q14 === "Yo y mis hijos" || answers.Q14 === "La familia completa";
+  const withPartner = answers.Q14 === "Con mi pareja";
+  const familyLike = isFamily || withPartner; // menciona familia, pareja o hijos
   const hasKids = answers.Q14b === "Sí";
+  const wantsMulticlub = answers.Q15 === "Ambos"; // club cerca de casa Y del trabajo
+  const primaryGoal = (answers.Q4 || [])[0] || "";
+  const secondaryGoal = (answers.Q4 || [])[1] || null;
   const isSolo = String(answers.Q13 || "").includes("a mi ritmo");
   const isPrincipiante = answers.Q9 === "Principiante";
   const fromOtherGym = answers.Q10 && answers.Q10.toLowerCase().includes("otro gimnasio");
@@ -748,13 +816,32 @@ FORMATO: SOLO un objeto JSON válido. Sin preámbulo. Sin markdown.`;
 
   const medicalContext = hasMedical ? `\n\n⚠ CONDICIONES MÉDICAS / TRATAMIENTOS DECLARADOS:${q12.filter(c => c !== "Ninguna").map(c => `\n- ${c}`).join("")}${isPregnant ? "\n- Embarazada (las clases con impacto/kicks/saltos ya están filtradas del bloque grupal)" : ""}${isPostpartum ? "\n- Posparto reciente últimos 6 meses (las clases con impacto/abdominales ya están filtradas)" : ""}${onGLP1 ? "\n- En tratamiento GLP-1 (Ozempic/Wegovy/Mounjaro). Recomendación clínica documentada: priorizar fuerza para preservar masa muscular." : ""}${onBariatric ? "\n- Cirugía bariátrica (clases de alto impacto y carga pesada ya filtradas)" : ""}\n\nIMPORTANTE: el bloque grupal ya excluye automáticamente las clases contraindicadas. El advisor ajusta los protocolos de pesas y cardio individual en la visita con criterio clínico.` : "";
 
+  const geoLines = (() => {
+    const lines = [];
+    const zoneName = geoCtx && geoCtx.userZone ? geoCtx.userZone : null;
+    const enCiudad = geoCtx ? geoCtx.clubesEnCiudad : null;
+    lines.push(`- Ciudad del lead: ${zoneName || "sin club de la red en su ciudad"}${typeof enCiudad === "number" ? ` · clubes de la red en su ciudad: ${enCiudad}` : ""}`);
+    lines.push(`- Club recomendado: ${clubData.nombre} · ${clubData.direccion} · ${clubData.distancia_min} min${clubData.fuera_de_ciudad ? ` · ⚠ a ${clubData.distancia_km} km, FUERA de la ciudad del lead` : ""}`);
+    if (otrosClubes.length > 0) {
+      lines.push(`- Alternativas mostradas al lead (las ÚNICAS que puedes mencionar): ${otrosClubes.map(c => `${c.nombre} (${c.distancia_min} min${c.fuera_de_ciudad ? `, a ${c.distancia_km} km, fuera de su ciudad` : ""})`).join("; ")}`);
+    } else {
+      lines.push("- No se muestran clubes alternativos: NO menciones ni insinúes otros clubes cercanos.");
+    }
+    return lines.join("\n");
+  })();
+
   const user = `Genera el copy para esta persona Y el brief para el advisor.
+
+DATOS DE CONTACTO DEL PROSPECTO (el brief del asesor SIEMPRE abre con este bloque; la app lo muestra al inicio del reporte):
+- Nombre completo: ${answers.Q1}${contact && contact.lastName ? " " + contact.lastName : ""}
+- Teléfono (10 dígitos): ${contact && contact.phone ? contact.phone : "—"}
+- Correo: ${contact && contact.email ? contact.email : "—"}
 
 DATOS DEL LEAD:
 - Nombre: ${answers.Q1}
 - Género: ${answers.Q2}
 - Sentir al salir: ${answers.Q3}
-- Objetivos: ${(answers.Q4 || []).join(", ")}
+- Objetivo principal: ${primaryGoal}${secondaryGoal ? `\n- Objetivo secundario: ${secondaryGoal} — DEBE desarrollarse también en el copy y en el brief, con el mismo peso argumental que el principal` : ""}
 - Ritmo preferido: ${answers.Q5}
 - Dónde entrena: ${answers.Q6}
 - Días disponibles: ${(answers.Q8 || []).join(", ")}
@@ -762,7 +849,10 @@ DATOS DEL LEAD:
 - Nivel auto-reportado: ${answers.Q9}
 - Historial: ${answers.Q10}${answers.Q11 ? " (pausa: " + answers.Q11 + ")" : ""}
 - Acompañamiento: ${answers.Q13}
-- Visita con: ${answers.Q14}${hasKids ? " · hijos<12: sí" : ""}${medicalContext}
+- Visita con: ${answers.Q14}${hasKids ? " · hijos<12: sí" : ""}${familyLike ? `\n- Perfil familiar: el lead visita el club ${withPartner ? "con su pareja" : isFamily && answers.Q14 === "Yo y mis hijos" ? "con sus hijos" : "con su familia"}. La experiencia ideal Y el brief DEBEN mencionar la membresía familiar (una sola membresía que cubre a los acompañantes)${isFamily && hasKids ? " e incluir FitKidz: las actividades para niños dentro del club mientras el lead entrena" : ""}.` : ""}${wantsMulticlub ? "\n- Ubicación: quiere el club cerca de su casa Y de su trabajo. La experiencia ideal Y el brief DEBEN ofrecer explícitamente la membresía Multiclub (acceso a toda la red para entrenar cerca de casa y de la oficina)." : ""}${medicalContext}
+
+CONTEXTO GEOGRÁFICO (usa SOLO estos clubes; no inventes otros):
+${geoLines}
 
 EXPERIENCIA IDEAL CALCULADA:
 - Bloque 1 (individual): ${block1.subgrupo}
@@ -772,10 +862,10 @@ EXPERIENCIA IDEAL CALCULADA:
 Genera JSON con estas claves exactas:
 {
   "hook": "máx 30 palabras · 1-2 frases · conecta con el sentir al salir · cálido pero sobrio",
-  "plan_argument": "máx 45 palabras · explica por qué la combinación es buena para los objetivos · cierra con frase sobre personalización · usa 'experiencia' o 'rutina', no 'plan'",
+  "plan_argument": "máx ${secondaryGoal ? "55" : "45"} palabras · explica por qué la combinación es buena para ${secondaryGoal ? "AMBOS objetivos (desarrolla el principal Y el secundario, cada uno con su argumento)" : "el objetivo"} · cierra con frase sobre personalización · usa 'experiencia' o 'rutina', no 'plan'",
   "intent_line": "máx 18 palabras · refleja el modo de acompañamiento y con quién visita",
-  "infrastructure_argument": "máx 55 palabras · cita Sports World como red de 49 clubes con clasificación por objetivo · menciona el club específico"${connectorKeys},
-  "validation_questions": ["array de exactamente 5 preguntas que el advisor debe validar con el lead antes de recomendar. Cada pregunta máx 18 palabras. Voz: profesional, no clínica. Prioridades de selección: (1) historial deportivo si viene de otro gimnasio${hasMedical ? ", (2) condiciones médicas específicas (validar autorización, trimestre si embarazo, tiempo en tratamiento si GLP-1)" : ""}${wantsAquatic ? ", comodidad real en el agua" : ""}${isFamily && hasKids ? ", servicios necesarios para los hijos durante la visita" : ""}${isPrincipiante ? ", primera experiencia en gimnasio y posibles reservas" : ""}${fromPause ? ", motivo de la pausa y duración real" : ""}, formato de entrenamiento preferido (grupal vs individual), confirmar habitualidad de la franja horaria seleccionada."],
+  "infrastructure_argument": "máx 55 palabras · cita Sports World como red de 49 clubes con clasificación por objetivo · menciona el club específico · respeta la REGLA GEOGRÁFICA: no menciones clubes que no estén en el contexto geográfico${wantsMulticlub ? " · menciona la membresía Multiclub para entrenar cerca de casa y del trabajo" : ""}"${connectorKeys},
+  "validation_questions": ["array de exactamente 5 preguntas que el advisor debe validar con el lead antes de recomendar. Cada pregunta máx 18 palabras. Voz: profesional, no clínica. Prioridades de selección: (1) historial deportivo si viene de otro gimnasio${hasMedical ? ", (2) condiciones médicas específicas (validar autorización, trimestre si embarazo, tiempo en tratamiento si GLP-1)" : ""}${secondaryGoal ? ", cómo prioriza sus dos objetivos declarados" : ""}${wantsAquatic ? ", comodidad real en el agua" : ""}${isFamily && hasKids ? ", servicios necesarios para los hijos durante la visita" : ""}${withPartner ? ", interés de la pareja en entrenar con membresía familiar" : ""}${wantsMulticlub ? ", qué clubes le quedan cerca de casa y de la oficina para la membresía Multiclub" : ""}${isPrincipiante ? ", primera experiencia en gimnasio y posibles reservas" : ""}${fromPause ? ", motivo de la pausa y duración real" : ""}, formato de entrenamiento preferido (grupal vs individual), confirmar habitualidad de la franja horaria seleccionada."],
   "visit_route": [
     {"title": "Conectar con su objetivo", "description": "máx 18 palabras · qué confirmar específicamente sobre objetivos y motivación"},
     {"title": "Tour enfocado", "description": "máx 18 palabras · qué mostrar primero según preferencia ${tourFocus}${isFamily && hasKids ? " + zona FitKidz" : ""}"},
@@ -783,10 +873,10 @@ Genera JSON con estas claves exactas:
     {"title": "Cerrar con siguiente paso", "description": "máx 18 palabras · qué cerrar (membresía + beneficio vigente + fecha concreta)"}
   ],
   "proposal": {
-    "main": "máx 35 palabras · oferta principal de membresía + qué incluye específicamente según preferencia del lead${isPrincipiante ? " + mencionar inducción inicial" : ""}${hasMedical ? " + mencionar acompañamiento con criterio clínico" : ""}",
-    "complement": "máx 30 palabras · complemento (Personal Training si solo o principiante) + alternativa secundaria si aplica"
+    "main": "máx 40 palabras · oferta principal de membresía${wantsMulticlub ? " · DEBE ser la membresía Multiclub (acceso a toda la red, para entrenar cerca de casa y del trabajo)" : familyLike ? " · DEBE ser la membresía familiar (cubre a " + (withPartner ? "su pareja" : "su familia") + (isFamily && hasKids ? " e incluye FitKidz para los hijos" : "") + ")" : ""} + qué incluye específicamente según preferencia del lead${isPrincipiante ? " + mencionar inducción inicial" : ""}${hasMedical ? " + mencionar acompañamiento con criterio clínico" : ""}",
+    "complement": "máx 30 palabras · complemento (Personal Training si solo o principiante${familyLike && wantsMulticlub ? "; menciona la membresía familiar como complemento" : ""}) + alternativa secundaria si aplica"
   },
-  "closing_priorities": ["array de exactamente 3 prioridades que el advisor debe cerrar. Cada una máx 12 palabras. Incluye: (1) explicar qué incluye la membresía con claridad${isFamily && hasKids ? ", (2) resolver FitKidz antes de hablar de precio" : hasMedical ? ", (2) acordar acompañamiento clínico antes de hablar de precio" : ", (2) resolver la objeción específica del lead antes de precio"}, (3) acordar fecha concreta de inicio."],
+  "closing_priorities": ["array de exactamente 3 prioridades que el advisor debe cerrar. Cada una máx 12 palabras. Incluye: (1) explicar qué incluye la membresía${wantsMulticlub ? " Multiclub" : familyLike ? " familiar" : ""} con claridad${isFamily && hasKids ? ", (2) resolver FitKidz antes de hablar de precio" : hasMedical ? ", (2) acordar acompañamiento clínico antes de hablar de precio" : ", (2) resolver la objeción específica del lead antes de precio"}, (3) acordar fecha concreta de inicio."],
   "closing_script": "máx 60 palabras · guion sugerido para el advisor en primera persona, dirigido al lead. Plantilla: 'Por lo que me compartiste, la mejor forma de comenzar es con [experiencia centrada en X según preferencia], [acompañamiento adecuado al nivel/formato], y [solución al bloqueador clave]. Revisemos lo que te permite iniciar esta misma semana.' Tono cálido pero directo."
 }`;
 
@@ -1034,14 +1124,21 @@ function ResultPage({ data, onRestart, onSchedule }) {
   const experienceContext = active.experienceContext;
 
   const isFamily = answers.Q14 === "Yo y mis hijos" || answers.Q14 === "La familia completa";
+  const withPartner = answers.Q14 === "Con mi pareja";
+  const familyLike = isFamily || withPartner;
   const showFitkidz = isFamily && answers.Q14b === "Sí";
+  const wantsMulticlub = answers.Q15 === "Ambos";
 
   const handleSelectClub = (newClubTag) => {
     const rawClub = CLUBS.find(c => c.tag === newClubTag);
     if (!rawClub) return;
     const newClubResult = buildClubResult(rawClub, 0);
     const otrosEntry = otrosClubes.find(c => c.tag === newClubTag);
-    if (otrosEntry) newClubResult.distancia_min = otrosEntry.distancia_min;
+    if (otrosEntry) {
+      newClubResult.distancia_min = otrosEntry.distancia_min;
+      newClubResult.distancia_km = otrosEntry.distancia_km;
+      newClubResult.fuera_de_ciudad = otrosEntry.fuera_de_ciudad;
+    }
     newClubResult.meetsExperience = otrosEntry && otrosEntry.meetsExperience !== undefined ? otrosEntry.meetsExperience : true;
     const blocks = resolveBlocks(answers, newClubTag);
     const newOtros = [
@@ -1140,12 +1237,12 @@ function ResultPage({ data, onRestart, onSchedule }) {
     experienceNote = "Ningún club cercano reúne todas las clases ideales para tu objetivo. Tu Advisor te ayuda a armar la mejor experiencia posible aquí en la visita guiada.";
   }
 
-  const objetivoLabel = (answers.Q4 && answers.Q4[0]) || "Tu experiencia";
+  const objetivoLabel = (answers.Q4 && answers.Q4.length > 0) ? answers.Q4.join(" + ") : "Tu experiencia";
   const nivelLabel = answers.Q9 || "—";
   const diasLabel = (answers.Q8 || []).join(" · ");
   const franjaLabel = (answers.Q7 || [])[0] ? (answers.Q7[0]).split(" ")[0] : "";
   const horarioLabel = diasLabel + (franjaLabel ? " · " + franjaLabel.toLowerCase() : "");
-  const entrenasConLabel = answers.Q14 === "Yo y mis hijos" ? "Con tus hijos" : answers.Q14 === "La familia completa" ? "Con tu familia" : "A tu ritmo";
+  const entrenasConLabel = answers.Q14 === "Yo y mis hijos" ? "Con tus hijos" : answers.Q14 === "La familia completa" ? "Con tu familia" : answers.Q14 === "Con mi pareja" ? "Con tu pareja" : answers.Q14 === "Con mi amigo/a" ? "Con tu amigo/a" : "A tu ritmo";
 
   // ── Safety section copy: §4.12 five mutually-exclusive cases, first match wins ──
   const q12arr = answers.Q12 || [];
@@ -1186,11 +1283,14 @@ function ResultPage({ data, onRestart, onSchedule }) {
             </div>
           </header>
 
-          <section style={{ display: "grid", gridTemplateColumns: showFitkidz ? "1.12fr 0.88fr" : "1fr", gap: "1rem" }} className="two-col">
+          <section style={{ display: "grid", gridTemplateColumns: (showFitkidz || familyLike) ? "1.12fr 0.88fr" : "1fr", gap: "1rem" }} className="two-col">
             <article style={{ background: BRAND.black, color: BRAND.white, borderRadius: "6px", padding: "1.5rem", minHeight: "200px" }}>
               <p style={{ fontSize: "0.6875rem", letterSpacing: "0.2em", textTransform: "uppercase", color: BRAND.red, fontWeight: 800, marginBottom: "0.5rem" }}>Tu club recomendado</p>
               <h2 style={{ fontSize: "1.5rem", fontWeight: 900, lineHeight: 1.1, marginBottom: "0.375rem" }}>{club.nombre}</h2>
-              <p style={{ fontSize: "0.8125rem", color: "#D3D3D3", marginBottom: "0.875rem" }}>A {club.distancia_min} min de tu ubicación · {club.direccion}</p>
+              <p style={{ fontSize: "0.8125rem", color: "#D3D3D3", marginBottom: club.fuera_de_ciudad ? "0.375rem" : "0.875rem" }}>A {club.distancia_min} min de tu ubicación · {club.direccion}</p>
+              {club.fuera_de_ciudad && (
+                <p style={{ fontSize: "0.75rem", color: "#FFD9A0", lineHeight: 1.4, marginBottom: "0.875rem", borderLeft: "3px solid #F0BC54", paddingLeft: "0.625rem" }}>⚠ A {club.distancia_km} km — fuera de tu ciudad. Es el club de la red más cercano a tu zona.</p>
+              )}
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
                 <div>
                   <p style={{ fontSize: "0.75rem", color: "#DEDEDE", lineHeight: 1.45, marginBottom: "0.75rem" }}><strong>Por qué lo recomendamos:</strong> {whyRecommendCopy}</p>
@@ -1198,7 +1298,9 @@ function ResultPage({ data, onRestart, onSchedule }) {
                     <p style={{ fontSize: "0.7rem", color: "#FFD9A0", lineHeight: 1.4, marginBottom: "0.75rem", borderLeft: "3px solid #F0BC54", paddingLeft: "0.625rem" }}>{experienceNote}</p>
                   )}
                   <p style={{ fontSize: "0.75rem", fontStyle: "italic", borderLeft: "3px solid " + BRAND.red, paddingLeft: "0.625rem", lineHeight: 1.4, color: "#FFFFFF" }}>{llm.intent_line}</p>
-                  <button onClick={() => setShowOtros(!showOtros)} style={{ display: "inline-block", marginTop: "0.875rem", fontSize: "0.7rem", color: BRAND.white, fontWeight: 600, borderBottom: "1px solid " + BRAND.red, background: "none", border: "none", borderBottomColor: BRAND.red, cursor: "pointer", padding: 0, paddingBottom: "2px" }}>{showOtros ? "Ocultar otros clubes" : "Ver otros clubes cerca de ti →"}</button>
+                  {otrosClubes && otrosClubes.length > 0 && (
+                    <button onClick={() => setShowOtros(!showOtros)} style={{ display: "inline-block", marginTop: "0.875rem", fontSize: "0.7rem", color: BRAND.white, fontWeight: 600, borderBottom: "1px solid " + BRAND.red, background: "none", border: "none", borderBottomColor: BRAND.red, cursor: "pointer", padding: 0, paddingBottom: "2px" }}>{showOtros ? "Ocultar otros clubes" : "Ver otros clubes cerca de ti →"}</button>
+                  )}
                 </div>
                 <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                   {club.amenidades.map((a, i) => (
@@ -1222,6 +1324,7 @@ function ResultPage({ data, onRestart, onSchedule }) {
                     ))}
                   </div>
                 )}
+                <p style={{ fontSize: "0.75rem", color: "#215F3F", fontWeight: 700, lineHeight: 1.45, marginTop: "0.875rem", borderTop: "1px solid #CDE6D6", paddingTop: "0.625rem" }}>Pregunta por la membresía familiar: una sola membresía para toda tu familia, con acceso a FitKidz para tus hijos.</p>
               </article>
             )}
 
@@ -1229,9 +1332,27 @@ function ResultPage({ data, onRestart, onSchedule }) {
               <article style={{ background: BRAND.gray1, border: "1px solid " + BRAND.gray2, borderRadius: "6px", padding: "1.5rem", minHeight: "200px" }}>
                 <p style={{ fontSize: "0.6875rem", letterSpacing: "0.18em", textTransform: "uppercase", color: BRAND.gray4, fontWeight: 800, marginBottom: "0.5rem" }}>FitKidz no disponible aquí</p>
                 <p style={{ fontSize: "0.8125rem", color: BRAND.gray4, lineHeight: 1.5 }}>Este club no ofrece FitKidz. Otros clubes cerca sí lo tienen — revisa la lista de otros clubes.</p>
+                <p style={{ fontSize: "0.75rem", color: BRAND.black, fontWeight: 700, lineHeight: 1.45, marginTop: "0.875rem" }}>Aun así, la membresía familiar cubre a toda tu familia con una sola membresía. Tu Advisor te muestra el detalle en la visita.</p>
+              </article>
+            )}
+
+            {familyLike && !showFitkidz && (
+              <article style={{ background: "#EDF8F1", border: "1px solid #CDE6D6", borderRadius: "6px", padding: "1.5rem", minHeight: "200px" }}>
+                <p style={{ fontSize: "0.6875rem", letterSpacing: "0.18em", textTransform: "uppercase", color: "#215F3F", fontWeight: 800, marginBottom: "0.5rem" }}>Membresía familiar</p>
+                <h2 style={{ fontSize: "1.25rem", fontWeight: 900, lineHeight: 1.15, marginBottom: "0.5rem" }}>{withPartner ? "Entrenar en pareja, con una sola membresía" : "Toda tu familia, con una sola membresía"}</h2>
+                <p style={{ fontSize: "0.8125rem", color: "#3D4B43", lineHeight: 1.45 }}>{withPartner ? "Como nos visitas con tu pareja, la membresía familiar les da acceso a ambos con un solo contrato." : "Como nos visitas en familia, la membresía familiar cubre a todos con un solo contrato."} Tu Advisor te muestra el detalle y los beneficios en la visita guiada.</p>
               </article>
             )}
           </section>
+
+          {wantsMulticlub && (
+            <section style={{ background: BRAND.black, borderRadius: "4px", padding: "1rem 1.25rem", marginTop: "0.875rem", display: "flex", alignItems: "flex-start", gap: "0.75rem" }}>
+              <span style={{ color: BRAND.red, fontWeight: 900, fontSize: "1.125rem", lineHeight: 1 }}>◆</span>
+              <p style={{ fontSize: "0.8125rem", color: BRAND.white, lineHeight: 1.5, margin: 0 }}>
+                <strong style={{ color: BRAND.white }}>Membresía Multiclub para ti.</strong> Como buscas entrenar cerca de tu casa y de tu trabajo, la membresía Multiclub te da acceso a todos los clubes de la red: entrena en el que te quede mejor cada día. Tu Advisor te la presenta en la visita.
+              </p>
+            </section>
+          )}
 
           {showOtros && otrosClubes && otrosClubes.length > 0 && (
             <section style={{ background: BRAND.gray1, borderRadius: "4px", padding: "1.125rem 1.25rem", marginTop: "0.875rem" }}>
@@ -1242,6 +1363,9 @@ function ResultPage({ data, onRestart, onSchedule }) {
                     <div style={{ flex: 1 }}>
                       <p style={{ fontSize: "0.875rem", fontWeight: 700, marginBottom: "0.125rem", color: BRAND.black }}>{c.nombre}</p>
                       <p style={{ fontSize: "0.75rem", color: BRAND.gray4, lineHeight: 1.4 }}>{c.direccion}</p>
+                      {c.fuera_de_ciudad && (
+                        <p style={{ fontSize: "0.7rem", color: "#9A6B00", fontWeight: 700, lineHeight: 1.4, marginTop: "0.25rem" }}>⚠ A {c.distancia_km} km — fuera de tu ciudad</p>
+                      )}
                       {c.meetsExperience === false && (
                         <p style={{ fontSize: "0.7rem", color: "#9A6B00", lineHeight: 1.4, marginTop: "0.25rem" }}>No incluye todas las clases ideales para tu objetivo</p>
                       )}
@@ -1306,7 +1430,10 @@ function ResultPage({ data, onRestart, onSchedule }) {
                 <span style={{ fontSize: "0.6875rem", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 800, color: BRAND.gray4 }}>{resolveTrainingMode(answers) === "aquatic" ? "Acuático" : "Fuerza"}</span>
               </div>
               <h3 style={{ fontSize: "1.125rem", fontWeight: 900, lineHeight: 1.15, marginBottom: "0.5rem" }}>{block1.subgrupo}</h3>
-              <p style={{ fontSize: "0.8125rem", color: "#39414A", marginBottom: "0.625rem", flex: 1, lineHeight: 1.45 }}>{block1.why_template}</p>
+              <p style={{ fontSize: "0.8125rem", color: "#39414A", marginBottom: block1.secundario_line ? "0.5rem" : "0.625rem", flex: block1.secundario_line ? "none" : 1, lineHeight: 1.45 }}>{block1.why_template}</p>
+              {block1.secundario_line && (
+                <p style={{ fontSize: "0.75rem", color: "#1F4E79", fontWeight: 600, marginBottom: "0.625rem", flex: 1, lineHeight: 1.4, borderLeft: "2px solid #1F4E79", paddingLeft: "0.5rem" }}>{block1.secundario_line}</p>
+              )}
               <a href="#" style={{ fontSize: "0.75rem", color: BRAND.red, fontWeight: 700, borderBottom: "1px solid " + BRAND.red, paddingBottom: "2px", alignSelf: "flex-start", textDecoration: "none" }}>Ver más →</a>
             </article>
 
@@ -1317,7 +1444,10 @@ function ResultPage({ data, onRestart, onSchedule }) {
               </div>
               <h3 style={{ fontSize: "1.125rem", fontWeight: 900, lineHeight: 1.15, marginBottom: "0.5rem" }}>{block2.subgrupo || block2.maquina}</h3>
               <p style={{ fontSize: "0.75rem", color: BRAND.black, fontWeight: 600, marginBottom: "0.5rem", lineHeight: 1.4 }}>{block2.maquina} · {block2.duracion} · {block2.cuando}</p>
-              <p style={{ fontSize: "0.8125rem", color: "#39414A", marginBottom: block2.alternativa_acuatica ? "0.5rem" : "0.625rem", flex: block2.alternativa_acuatica ? "none" : 1, lineHeight: 1.45 }}>{block2.why}</p>
+              <p style={{ fontSize: "0.8125rem", color: "#39414A", marginBottom: (block2.alternativa_acuatica || block2.secundario_line) ? "0.5rem" : "0.625rem", flex: (block2.alternativa_acuatica || block2.secundario_line) ? "none" : 1, lineHeight: 1.45 }}>{block2.why}</p>
+              {block2.secundario_line && (
+                <p style={{ fontSize: "0.75rem", color: "#1F4E79", fontWeight: 600, marginBottom: block2.alternativa_acuatica ? "0.5rem" : "0.625rem", flex: block2.alternativa_acuatica ? "none" : 1, lineHeight: 1.4, borderLeft: "2px solid #1F4E79", paddingLeft: "0.5rem" }}>{block2.secundario_line}</p>
+              )}
               {block2.alternativa_acuatica && (
                 <p style={{ fontSize: "0.75rem", color: BRAND.red, fontWeight: 600, marginBottom: "0.625rem", flex: 1, lineHeight: 1.4, borderLeft: "2px solid " + BRAND.red, paddingLeft: "0.5rem" }}>{block2.alternativa_acuatica}</p>
               )}
@@ -1628,9 +1758,9 @@ function ContactCaptureScreen({ data, onContinue, onBack }) {
   return (
     <div className="min-h-full flex flex-col" style={{ background: BRAND.white }}>
       <div className="px-6 pt-6 pb-4 max-w-xl mx-auto w-full flex-1 flex flex-col">
-        <p style={{ color: BRAND.red, letterSpacing: "0.22em", fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase" }}>Antes de agendar</p>
-        <h2 className="mt-4" style={{ fontWeight: 900, fontSize: "1.625rem", lineHeight: 1.15, letterSpacing: "-0.015em", color: BRAND.black }}>{firstName}, necesitamos un par de datos para confirmar tu visita.</h2>
-        <p className="mt-2" style={{ color: BRAND.gray4, fontSize: "0.875rem", lineHeight: 1.5 }}>Tu Advisor te contactará para coordinar el horario y enviarte los detalles del club.</p>
+        <p style={{ color: BRAND.red, letterSpacing: "0.22em", fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase" }}>Un último paso</p>
+        <h2 className="mt-4" style={{ fontWeight: 900, fontSize: "1.625rem", lineHeight: 1.15, letterSpacing: "-0.015em", color: BRAND.black }}>{firstName}, necesitamos un par de datos para preparar tu experiencia.</h2>
+        <p className="mt-2" style={{ color: BRAND.gray4, fontSize: "0.875rem", lineHeight: 1.5 }}>Con ellos armamos tu experiencia ideal y tu Advisor te contacta para coordinar tu visita y enviarte los detalles del club.</p>
 
         <div className="mt-8 flex flex-col gap-4">
           <div>
@@ -1688,7 +1818,10 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
   const hasUnrevealed = (answers.Q12 || []).includes("Otra, la comento en el club") || (answers.Q17 || []).includes("Otro tratamiento médico para peso");
   const conditions = (answers.Q12 || []).filter(c => c !== "Ninguna" && c !== "Otra, la comento en el club");
   const isFamily = answers.Q14 === "Yo y mis hijos" || answers.Q14 === "La familia completa";
+  const withPartner = answers.Q14 === "Con mi pareja";
+  const familyLike = isFamily || withPartner;
   const hasKidsUnder12 = answers.Q14b === "Sí";
+  const wantsMulticlub = answers.Q15 === "Ambos";
 
   const dayStr = `${DAY_LABEL_FULL[appointment.day.getDay()]} ${appointment.day.getDate()} ${MONTH_SHORT[appointment.day.getMonth()]} ${appointment.day.getFullYear()}`;
   const firstName = (answers.Q1 || "").split(" ")[0];
@@ -1696,6 +1829,9 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
   const headerChips = [];
   if (answers.Q2) headerChips.push(answers.Q2);
   if (isFamily && hasKidsUnder12) headerChips.push("Visita con hijos");
+  else if (withPartner) headerChips.push("Visita con pareja");
+  else if (isFamily) headerChips.push("Visita en familia");
+  if (wantsMulticlub) headerChips.push("Multiclub casa+trabajo");
   if (resolveTrainingMode(answers) === "aquatic") headerChips.push("Preferencia: alberca");
   else if (answers.Q6 === "En piso / área seca") headerChips.push("Preferencia: piso seco");
   else if (answers.Q6 === "Ambas") headerChips.push("Alberca + piso seco");
@@ -1728,6 +1864,9 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
 
   const flags = [];
   if (showFitkidz) flags.push({ severity: "warn", text: "Familia con hijos <12 → ofrecer demo de FitKidz en la visita." });
+  if (familyLike) flags.push({ severity: "warn", text: `Perfil familiar (visita ${withPartner ? "con pareja" : answers.Q14 === "Yo y mis hijos" ? "con hijos" : "con la familia completa"}) → presentar la membresía familiar${showFitkidz ? " con FitKidz incluido" : ""}.` });
+  if (wantsMulticlub) flags.push({ severity: "warn", text: "Quiere el club cerca de casa Y del trabajo → ofrecer la membresía Multiclub (acceso a toda la red)." });
+  if (club.fuera_de_ciudad) flags.push({ severity: "warn", text: `El club queda a ${club.distancia_km} km, fuera de la ciudad del lead (su ciudad no tiene club de la red). Validar disposición al traslado.` });
   if (answers.Q9 === "Principiante") flags.push({ severity: "warn", text: "Nivel principiante. Tour del club obligatorio antes de cualquier sesión." });
   if (answers.Q10 && answers.Q10.toLowerCase().includes("pausa")) flags.push({ severity: "warn", text: "Reactivación tras pausa. Recomendar primera sesión conservadora." });
   if (isPregnant) flags.push({ severity: "warn", text: "Embarazada. Clases con impacto/kicks/saltos ya filtradas. Validar trimestre y autorización médica." });
@@ -1774,9 +1913,21 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
           <p style={{ fontSize: "0.75rem", color: BRAND.gray4, lineHeight: 1.5, marginTop: "0.875rem", fontStyle: "italic" }}>Este reporte de lead se envía por correo al equipo de {club.nombre} para que el asesor prepare la visita.</p>
 
           <div style={sectionDividerStyle}>
-            <SectionTitle num="1" label="Perfil del lead" />
+            <SectionTitle num="1" label="Datos de contacto del prospecto" />
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }} className="brief-grid">
+              <div style={{ gridColumn: "span 2 / span 2", border: "1px solid " + BRAND.gray2, borderLeft: "3px solid " + BRAND.red, borderRadius: "4px", padding: "0.75rem 0.875rem", background: BRAND.white }}>
+                <p style={{ fontSize: "0.625rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700, color: BRAND.gray4, marginBottom: "0.375rem" }}>Nombre completo</p>
+                <p style={{ fontSize: "1.0625rem", fontWeight: 900, color: BRAND.black, lineHeight: 1.2 }}>{fullName}</p>
+              </div>
+              <FieldBox label="Teléfono" value={formatPhone(contact && contact.phone)} />
+              <FieldBox label="Correo electrónico" value={(contact && contact.email) || "—"} />
+            </div>
+          </div>
+
+          <div style={sectionDividerStyle}>
+            <SectionTitle num="2" label="Perfil del lead" />
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginBottom: "0.75rem" }} className="brief-grid">
-              <FieldBox label="Objetivo" value={(answers.Q4 || [])[0]} sub={answers.Q4 && answers.Q4.length > 1 ? "+ " + (answers.Q4.length - 1) + " objetivo" + (answers.Q4.length > 2 ? "s" : "") + " secundario" + (answers.Q4.length > 2 ? "s" : "") : null} />
+              <FieldBox label={answers.Q4 && answers.Q4.length > 1 ? "Objetivos" : "Objetivo"} value={(answers.Q4 || []).join(" · ")} sub={answers.Q4 && answers.Q4.length > 1 ? "Principal: " + answers.Q4[0] + " · Secundario: " + answers.Q4[1] : null} />
               <FieldBox label="Motivación" value={answers.Q3} />
               <FieldBox label="Experiencia deseada" value={answers.Q6 + (answers.Q13 ? " · " + answers.Q13.split(",")[0] : "")} />
               <FieldBox label="Disponibilidad" value={(answers.Q8 || []).join(" · ")} sub={(answers.Q7 || []).join(" · ")} />
@@ -1789,7 +1940,7 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
           </div>
 
           <div style={sectionDividerStyle}>
-            <SectionTitle num="2" label="Logística y contacto" />
+            <SectionTitle num="3" label="Logística" />
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }} className="brief-grid">
               <div style={{ gridColumn: "span 2 / span 2", border: "1px solid " + BRAND.gray2, borderRadius: "4px", padding: "0.75rem 0.875rem", background: BRAND.white }}>
                 <p style={{ fontSize: "0.625rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700, color: BRAND.gray4, marginBottom: "0.375rem" }}>Club</p>
@@ -1800,9 +1951,7 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
                 <p style={{ fontSize: "0.8125rem", color: BRAND.black, lineHeight: 1.4 }}>{club.direccion}</p>
                 <p style={{ fontSize: "0.75rem", color: BRAND.gray4, marginTop: "0.25rem" }}>Aprox. {club.distancia_min} min desde la ubicación del lead</p>
               </div>
-              <FieldBox label="Acompañantes" value={isFamily && hasKidsUnder12 ? "Hijos <12 años" : isFamily ? "Familia" : "Visita individual"} />
-              <FieldBox label="Teléfono" value={formatPhone(contact && contact.phone)} />
-              <FieldBox label="Email" value={(contact && contact.email) || "—"} />
+              <FieldBox label="Acompañantes" value={isFamily && hasKidsUnder12 ? "Hijos <12 años" : isFamily ? "Familia" : withPartner ? "Pareja" : "Visita individual"} />
             </div>
           </div>
 
@@ -1812,7 +1961,7 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
 
           {validationQuestions.length > 0 && (
             <div style={sectionDividerStyle}>
-              <SectionTitle num="3" label="Qué validar" />
+              <SectionTitle num="4" label="Qué validar" />
               <ol style={{ display: "flex", flexDirection: "column", gap: "0.625rem", paddingLeft: 0, margin: 0, listStyle: "none" }}>
                 {validationQuestions.map((q, i) => (
                   <li key={i} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
@@ -1826,7 +1975,7 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
 
           {visitRoute.length > 0 && (
             <div style={sectionDividerStyle}>
-              <SectionTitle num="4" label="Ruta recomendada para la visita" />
+              <SectionTitle num="5" label="Ruta recomendada para la visita" />
               <ol style={{ display: "flex", flexDirection: "column", gap: "0.875rem", paddingLeft: 0, margin: 0, listStyle: "none" }}>
                 {visitRoute.map((step, i) => (
                   <li key={i} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
@@ -1843,7 +1992,7 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
 
           {(proposal.main || proposal.complement) && (
             <div style={sectionDividerStyle}>
-              <SectionTitle num="5" label="Propuesta recomendada" />
+              <SectionTitle num="6" label="Propuesta recomendada" />
               {proposal.main && (
                 <div style={{ border: "1px solid " + BRAND.gray2, borderLeft: "3px solid " + BRAND.red, borderRadius: "4px", padding: "0.875rem 1rem", background: BRAND.white, marginBottom: "0.625rem" }}>
                   <p style={{ fontSize: "0.625rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700, color: BRAND.red, marginBottom: "0.375rem" }}>Oferta principal</p>
@@ -1861,7 +2010,7 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
 
           {closingPriorities.length > 0 && (
             <div style={sectionDividerStyle}>
-              <SectionTitle num="6" label="Prioridades de cierre" />
+              <SectionTitle num="7" label="Prioridades de cierre" />
               <ul style={{ display: "flex", flexDirection: "column", gap: "0.5rem", paddingLeft: 0, margin: 0, listStyle: "none" }}>
                 {closingPriorities.map((p, i) => (
                   <li key={i} style={{ display: "flex", gap: "0.5rem", alignItems: "flex-start" }}>
@@ -1875,7 +2024,7 @@ function BriefingScreen({ data, appointment, onRestart, onBack }) {
 
           {flags.length > 0 && (
             <div style={sectionDividerStyle}>
-              <SectionTitle num="7" label="Notas y banderas" />
+              <SectionTitle num="8" label="Notas y banderas" />
               <ul style={{ display: "flex", flexDirection: "column", gap: "0.5rem", paddingLeft: 0, margin: 0, listStyle: "none" }}>
                 {flags.map((f, i) => (
                   <li key={i} style={{ display: "flex", gap: "0.5rem", alignItems: "flex-start" }}>
@@ -1938,12 +2087,13 @@ export default function App() {
   const [loadingMsg, setLoadingMsg] = useState("Armando tu experiencia ideal");
   const [result, setResult] = useState(null);
   const [appointment, setAppointment] = useState(null);
+  const [contact, setContact] = useState(null);
   const [error, setError] = useState(null);
 
   const questions = getQuestions(answers);
   const currentQ = questions[step];
 
-  const reset = () => { setPhase("welcome"); setStep(0); setAnswers({}); setResult(null); setAppointment(null); setError(null); };
+  const reset = () => { setPhase("welcome"); setStep(0); setAnswers({}); setResult(null); setAppointment(null); setContact(null); setError(null); };
   const setAnswer = (val) => setAnswers({ ...answers, [currentQ.id]: val });
 
   const advance = async () => {
@@ -1951,6 +2101,16 @@ export default function App() {
       setStep(step + 1);
       return;
     }
+    // Los datos de contacto se capturan ANTES de generar la experiencia y el brief,
+    // para que el reporte del asesor siempre incluya nombre, teléfono y correo.
+    if (!contact) {
+      setPhase("contact_capture");
+      return;
+    }
+    await runResolve(contact);
+  };
+
+  const runResolve = async (contactData) => {
     setPhase("loading");
     try {
       setLoadingMsg("Buscando tu club ideal");
@@ -1989,9 +2149,9 @@ export default function App() {
       const onGLP1 = isOnGLP1(answers);
 
       setLoadingMsg("Generando tu experiencia ideal");
-      const llm = await callClaude(answers, club, block1 || { subgrupo: "Acuático" }, block2, top2, showBlock3);
+      const llm = await callClaude(answers, club, block1 || { subgrupo: "Acuático" }, block2, top2, showBlock3, { contact: contactData, otros: otrosClubes, experienceContext });
 
-      setResult({ answers, llm, block1, block2, top2, club, otrosClubes, showBlock3, showFitkidz, alberca_note, needsAdvisorReview, onGLP1, experienceContext });
+      setResult({ answers, llm, block1, block2, top2, club, otrosClubes, showBlock3, showFitkidz, alberca_note, needsAdvisorReview, onGLP1, experienceContext, contact: contactData });
       setPhase("result");
     } catch (e) {
       setError(e.message || String(e));
@@ -2004,9 +2164,9 @@ export default function App() {
   if (phase === "welcome") return <Welcome onStart={() => { setPhase("questionnaire"); setStep(0); }} />;
   if (phase === "loading") return <Loading msg={loadingMsg} />;
   if (phase === "error") return <ErrorScreen msg={error} onRetry={() => { setPhase("questionnaire"); setStep(questions.length - 1); }} onRestart={reset} />;
-  if (phase === "result" && result) return <ResultPage data={result} onRestart={reset} onSchedule={() => setPhase("contact_capture")} />;
-  if (phase === "contact_capture" && result) return <ContactCaptureScreen data={result} onContinue={(contact) => { setResult({ ...result, contact }); setPhase("schedule"); }} onBack={() => setPhase("result")} />;
-  if (phase === "schedule" && result) return <ScheduleScreen data={result} onConfirm={(appt) => { setAppointment(appt); setPhase("briefing"); }} onBack={() => setPhase("contact_capture")} />;
+  if (phase === "contact_capture") return <ContactCaptureScreen data={{ answers }} onContinue={(c) => { setContact(c); runResolve(c); }} onBack={() => setPhase("questionnaire")} />;
+  if (phase === "result" && result) return <ResultPage data={result} onRestart={reset} onSchedule={() => setPhase("schedule")} />;
+  if (phase === "schedule" && result) return <ScheduleScreen data={result} onConfirm={(appt) => { setAppointment(appt); setPhase("briefing"); }} onBack={() => setPhase("result")} />;
   if (phase === "briefing" && result && appointment) return <BriefingScreen data={result} appointment={appointment} onRestart={reset} onBack={() => setPhase("schedule")} />;
 
   return (
