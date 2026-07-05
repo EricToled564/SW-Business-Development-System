@@ -7,7 +7,7 @@
 
 - **Cubre (variable, a cargo de Sports World):** la generación de la experiencia ideal y del brief del asesor con la API de Claude, la plataforma de voz de BES (canal web) y del agente de role-play de la Academia, el modelo de razonamiento (LLM) conversacional de BES en todos los canales, y las cuotas de mensajería de WhatsApp Business API.
 - **Hospedaje: sin costo de proveedor externo.** Toda la infraestructura de hospedaje —el servidor del sitio, la lógica de los agentes y la plataforma de la Academia— **la proporciona Sports World en infraestructura propia**, por lo que no aparece en este cálculo.
-- **Fijo (se suma al final):** la **iguala mensual recompuesta** de $43,000 MXN (USD $2,415.73); $49,880 MXN con IVA — mantenimiento, soporte 24/7 y bolsa de mejora de 8 horas; el hospedaje ya no forma parte de ella (Contrato, Cláusula Segunda).
+- **Fijo (se suma al final):** la **iguala mensual del Proyecto A** de $43,000 MXN (USD $2,415.73); $49,880 MXN con IVA — mantenimiento del sitio y de BES (incluido el BDS una vez activado), soporte 24/7 y bolsa de mejora de 8 horas (desglose en el Contrato, Cláusula Segunda). Si Sports World contrata la **iguala opcional de mantenimiento de la Academia** ($18,500 MXN más IVA; $21,460 MXN con IVA), se suma a los totales.
 - **Fuera de este cálculo:** la nómina de los operadores humanos del BDS, el presupuesto de pauta, las licencias del CRM y las sesiones de certificación inicial de la Academia (**[Estrategia Técnica de la Academia · §8](#academia-tecnica)**).
 
 ## Tarifas de referencia verificadas (julio 2026)
@@ -70,7 +70,7 @@ Nótese que la Academia es el componente dominante del gasto variable (~70% del 
 
 ## Pago mensual total de Sports World por escenario
 
-Sumando la **iguala fija recompuesta** ($49,880 MXN con IVA; USD $2,802.25) a los variables anteriores:
+Sumando la **iguala fija del Proyecto A** ($49,880 MXN con IVA; USD $2,802.25) a los variables anteriores (si se contrata la iguala opcional de la Academia, agregar $21,460 MXN con IVA a cada total):
 
 | Escenario | Variables (MXN) | Iguala con IVA (MXN) | **Pago mensual total (MXN)** | Equivalente (USD) |
 |---|---|---|---|---|
