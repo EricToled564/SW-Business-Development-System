@@ -1,6 +1,10 @@
 # Academia SW · Addendum contractual
 ## Alcance, entregables y contraprestación adicional del Proyecto C
 
+> **Iguala mensual de mantenimiento de la Academia — $18,500 MXN más IVA ($21,460 con IVA). Incluye:** mantenimiento de la plataforma de módulos interactivos, actualización de la biblioteca de escenarios y perfiles certificados del *role-play*, mantenimiento del dashboard de *readiness* con reporte mensual, y soporte en horario hábil.
+>
+> **EL CLIENTE contrata la iguala (marcar a mano al firmar): ☐ SÍ  ☐ NO**
+
 ## 1 · Objeto
 
 EL PRESTADOR desarrolla e implementa para EL CLIENTE un **sistema formal de capacitación y práctica** para los 200 asesores comerciales (la "Academia"), en dos fases: módulos interactivos de e-learning por niveles, y un agente conversacional de IA por voz para practicar la conversación de venta mediante role-play, con evaluación y dashboard de readiness.
