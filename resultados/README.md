@@ -7,6 +7,7 @@ Este paquete contiene los documentos Markdown que gobiernan la siguiente fase de
 | Documento | Rol normativo |
 | --- | --- |
 | `ux-spec-experiencia-ideal.md` | Fuente principal de comportamiento, flujos, estados, arquitectura de información, edge cases, privacidad, acceptance criteria y métricas. |
+| `ux-spec-agente-whatsapp.md` | Especificación del canal WhatsApp conversacional (texto): agente ElevenLabs Chat Mode + servicio Experiencia Ideal reutilizado, máquina de estados, cuestionario Q1–Q19 por texto con % de avance, correos al lead y al club, recordatorios por plantilla 24 h/2 h. Homogenizado con el canal web. |
 | `anexo-clinico.md` | Fuente única de datos clínicos, contraindicaciones, fichas por objetivo y mapeos de entrenamiento individual. Requiere validación MD antes de producción YMYL. |
 | `anexo-contenido-prompts.md` | Fuente única de voz, tono, prohibiciones del prompt, lint de salida LLM, ejemplos aprobados y fallbacks. |
 | `anexo-ingenieria-crm.md` | Decisiones de implementación que caducan, parámetros LLM, saneamiento, defaults de lead scoring y observabilidad CRM. |
