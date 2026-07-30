@@ -14,6 +14,12 @@ La fuente de la verdad contractual son los **PDFs oficiales entregados por el cl
 
 Estos tres PDFs son también los que sirve la app (`resultados/ux-v1/kb/06-contrato.es.pdf`, `20-bds-anexo.es.pdf`, `26-academia-anexo.es.pdf` y sus copias en `webapp/kb/`). **No se regeneran** con `kb/build_pdfkit.js`: el generador los excluye expresamente para que ningún build futuro los sobrescriba.
 
+> Nota: en la app los tres documentos se muestran **sin número de versión** en el título; el versionado vive únicamente en esta carpeta.
+
+## Registro de cambios oficial (referencia)
+
+- `oficiales/contrato-v4.2-con-notas-de-cambios.pdf` — **copia de trabajo del cliente** del Contrato V4.2 con el **registro de cambios V4.1 → V4.2** (34 cambios documentados con ubicación y hallazgo de origen) y la lista de pendientes previos al envío. Es la referencia oficial de qué cambió entre versiones; **de uso interno, no se publica en la app ni se envía al cliente final**. Verificado: el cuerpo contractual de esta copia es idéntico al de `contrato-v4.2-cliente.pdf` (solo difieren encabezados/pies de página y la sección final de registro de cambios).
+
 ## Versiones anteriores (retiradas de la app)
 
 Copias de la última versión previa, tal como estaban en la app antes de la actualización a V4.2/V1.1 (PDF generado + markdown fuente):

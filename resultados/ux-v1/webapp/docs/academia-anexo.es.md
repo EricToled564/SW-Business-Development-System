@@ -1,5 +1,5 @@
 # Academia SW · Addendum contractual
-## Alcance, entregables y contraprestación adicional del Proyecto C · V1.1 (alineado al Contrato V4.2)
+## Alcance, entregables y contraprestación adicional del Proyecto C
 
 ADDENDUM AL CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES Y CONSULTORÍA (EL **"CONTRATO"**) CELEBRADO ENTRE **OPERADORA Y ADMINISTRADORA SW, S.A. DE C.V.** (**"EL CLIENTE"**) Y **LIVE STREAMING SERVICES MEXICO, S.A. DE C.V.** (**"EL PRESTADOR"**, comercialmente *Final Upgrade AI*), DE FECHA [●], QUE SUSCRIBEN LAS MISMAS PARTES, POR CONDUCTO DE SUS APODERADOS LEGALES, PARA ACTIVAR EL PROYECTO C EN LOS TÉRMINOS YA PACTADOS EN LAS CLÁUSULAS SEGUNDA, QUINTA Y OCTAVA, SECCIÓN C, DEL CONTRATO. Los términos con mayúscula inicial no definidos aquí tienen el significado que les asigna el Contrato.
 

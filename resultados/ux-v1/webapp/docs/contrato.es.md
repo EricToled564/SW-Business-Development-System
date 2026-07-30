@@ -1,4 +1,4 @@
-# Sports World · Contrato de Prestación de Servicios Profesionales y Consultoría · V4.2
+# Sports World · Contrato de Prestación de Servicios Profesionales y Consultoría
 ## Rediseño web + SEO · Agente de voz "BES" · Servicios recurrentes · Proyectos B (BDS) y C (Academia) activables por Addendum
 
 CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES Y CONSULTORÍA (**"CONTRATO"**) QUE CELEBRAN, POR UNA PARTE, **OPERADORA Y ADMINISTRADORA SW, S.A. DE C.V.** (EN LO SUCESIVO **"EL CLIENTE"**), REPRESENTADA EN ESTE ACTO POR **HADI MICHEL IBRAHIM IBRAHIM**; Y POR LA OTRA PARTE, **LIVE STREAMING SERVICES MEXICO, S.A. DE C.V.** (EN LO SUCESIVO EL **"PROVEEDOR"** o **"EL PRESTADOR"**, comercialmente *Final Upgrade AI*), REPRESENTADA POR **ERIC TOLEDANO DE JESÚS LOZANO**, DE CONFORMIDAD CON LAS SIGUIENTES DECLARACIONES Y CLÁUSULAS:
