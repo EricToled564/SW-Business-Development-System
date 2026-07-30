@@ -1,5 +1,7 @@
 # BDS · Addendum contractual
-## Alcance, entregables y contraprestación adicional del Proyecto B
+## Alcance, entregables y contraprestación adicional del Proyecto B · V1.1 (alineado al Contrato V4.2)
+
+ADDENDUM AL CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES Y CONSULTORÍA (EL **"CONTRATO"**) CELEBRADO ENTRE **OPERADORA Y ADMINISTRADORA SW, S.A. DE C.V.** (**"EL CLIENTE"**) Y **LIVE STREAMING SERVICES MEXICO, S.A. DE C.V.** (**"EL PRESTADOR"**, comercialmente *Final Upgrade AI*), DE FECHA [●], QUE SUSCRIBEN LAS MISMAS PARTES, POR CONDUCTO DE SUS APODERADOS LEGALES, PARA ACTIVAR EL PROYECTO B EN LOS TÉRMINOS YA PACTADOS EN LAS CLÁUSULAS SEGUNDA, CUARTA Y OCTAVA, SECCIÓN B, DEL CONTRATO. Los términos con mayúscula inicial no definidos aquí tienen el significado que les asigna el Contrato.
 
 ## 1 · Objeto
 
@@ -19,7 +21,7 @@ El detalle funcional y técnico consta en los documentos del módulo BDS: **[Flu
 ## 3 · Exclusiones
 
 - **Telefonía** y **voz por WhatsApp** (el BDS opera por **texto** en WhatsApp).
-- **Costos de operación** de "BES" (plataforma del modelo de razonamiento, mensajería WhatsApp de los proveedores) y las **cuotas de WhatsApp Business API**, que cubre EL CLIENTE directamente a los proveedores.
+- **Costos de operación** de "BES" (plataforma del modelo de razonamiento, mensajería WhatsApp de los proveedores) y las **cuotas de WhatsApp Business API**, que cubre EL CLIENTE directamente a los proveedores (Contrato, Cláusula Décima Cuarta).
 - Cualquier servicio no enumerado en la sección 2.
 
 ## 4 · Aportaciones a cargo de EL CLIENTE
@@ -30,13 +32,21 @@ El detalle funcional y técnico consta en los documentos del módulo BDS: **[Flu
 
 ## 5 · Contraprestación adicional
 
-- **Monto: USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA** —equivalente a **MXN $86,330.00** al tipo de cambio contractual de $17.80—, por la implementación del alcance descrito en la sección 2. Es **adicional** a la contraprestación del Contrato (Proyecto A).
-- Se paga en **dos exhibiciones de 50% (USD $2,425.00 más IVA cada una; MXN $43,165.00)**: la factura de cada mitad se entrega al iniciar sus trabajos y el pago es exigible contra la entrega aprobada de la mitad de los entregables y contra la entrega total, respectivamente (Contrato, Cláusula Novena).
-- El BDS **no genera iguala propia**: su mantenimiento y soporte quedan incluidos, sin costo adicional, en la iguala mensual del Proyecto A (Contrato, Cláusula Octava, Sección A).
-- **Plazo de desarrollo y entrega: 8 (ocho) semanas**, contadas a partir de la firma de este Addendum y del cierre del alcance y del listado de requerimientos. El Proyecto B **se ejecuta en paralelo al Proyecto A**, sin modificar su cronograma: los componentes que reutiliza (consola, middleware, cuestionario) quedan operativos desde las Semanas 3–6 del cronograma del sitio (**[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**), por lo que el arranque del BDS no depende del lanzamiento del sitio. El retraso de EL CLIENTE en las aportaciones de la sección 4 extiende el plazo día por día (Contrato, Cláusula Décima Tercera).
+- **Monto: USD $4,850.00 (cuatro mil ochocientos cincuenta dólares 00/100) más IVA** —equivalente a **MXN $86,330.00** al tipo de cambio contractual de $17.80; total con IVA **MXN $100,142.80**—, por la implementación del alcance descrito en la sección 2. Es **adicional** a la contraprestación del Contrato (Proyecto A).
+- Se paga en **dos exhibiciones de 50% (USD $2,425.00 más IVA cada una; MXN $43,165.00; con IVA MXN $50,071.40)**: la factura de cada mitad se entrega al iniciar sus trabajos y el pago es exigible una vez que EL CLIENTE **apruebe por escrito** la mitad de los entregables y la totalidad del proyecto, respectivamente, **o se actualice la aceptación tácita prevista en la Cláusula Décima del Contrato, lo que ocurra primero**; cada exhibición se paga dentro de los **10 (diez) días naturales** siguientes a su exigibilidad, con el interés moratorio pactado para pagos vencidos (Contrato, Cláusula Novena).
+- El BDS **no genera iguala propia**: su mantenimiento y soporte quedan incluidos, sin costo adicional, en la iguala mensual del Proyecto A (Contrato, Cláusulas Cuarta y Sexta, y Cláusula Octava, Sección A).
+- **Plazo de desarrollo y entrega: 8 (ocho) semanas**, contadas a partir de la firma de este Addendum y del cierre del **listado de requerimientos**. El Proyecto B **se ejecuta en paralelo al Proyecto A**, sin modificar su cronograma: los componentes que reutiliza (consola, middleware, cuestionario) quedan operativos desde las Semanas 3–6 del cronograma del sitio (**[Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**), por lo que el arranque del BDS no depende del lanzamiento del sitio. El retraso de EL CLIENTE en las aportaciones de la sección 4 extiende el plazo día por día y, cuando proceda, causa el cargo de stand-by (Contrato, Cláusulas Décima Tercera y Décima Quinta).
 
 ## 6 · Naturaleza y garantías
 
-- **Condición de precio:** el precio del BDS asume su **aprobación simultánea al Proyecto A**; de no aprobarse en forma simultánea, deberá recalcularse antes de la firma de este Addendum (Contrato, Cláusula Octava, Sección IV).
+- **Condición de precio:** el precio del BDS asume su **aprobación simultánea al Proyecto A**; de no aprobarse en forma simultánea, deberá recalcularse antes de la firma de este Addendum, mediante propuesta por escrito de EL PRESTADOR con un **ajuste máximo del 15% (quince por ciento)** (Contrato, Cláusula Octava, Sección IV).
 - El BDS es un **alcance independiente**; su suscripción no modifica el Proyecto A. En tanto no se firme este Addendum, el Proyecto B **no genera obligación ni costo** para ninguna de las Partes.
 - EL PRESTADOR **no garantiza** tasas de conversión ni volúmenes de agendamiento o de membresías: dependen de factores comerciales y de mercado. Lo comprometido es la **funcionalidad** del sistema y su **medición**; los targets aspiracionales no vinculantes y el compromiso de acompañamiento constan en el **Contrato · Anexo Cuatro**.
+
+## 7 · Disposiciones finales
+
+- **Naturaleza del Addendum.** Este Addendum detalla —sin modificar— el alcance, las exclusiones y las aportaciones ya pactados en el Contrato (Cláusulas Segunda y Cuarta); en caso de contradicción, prevalece el cuerpo del Contrato (Cláusula Vigésima Tercera, inciso e).
+- **Aprobación de entregables.** La aprobación de los entregables del Proyecto B se rige por la **Cláusula Décima** del Contrato, incluida la aceptación tácita ahí prevista y sus efectos sobre la exigibilidad de los pagos.
+- **Propiedad intelectual.** Aplica la **Cláusula Décima Sexta** del Contrato: el motor conversacional base de "BES", los frameworks de middleware y demás Componentes Preexistentes permanecen en titularidad de EL PRESTADOR, licenciados a EL CLIENTE únicamente según se incorporen en los entregables; la titularidad del desarrollo específico del BDS se transfiere conforme a dicha Cláusula.
+- **Datos personales y seguridad.** La **Cláusula Décima Octava** del Contrato aplica al Proyecto B desde su activación, sin necesidad de pacto adicional.
+- **Continuidad del Contrato.** En todo lo no previsto expresamente en este Addendum rigen las cláusulas del Contrato, incluida su legislación aplicable y jurisdicción (Cláusula Vigésima Quinta).

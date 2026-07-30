@@ -11,7 +11,7 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 |---|---|---|---|
 | 1 | [**Índice de documentos**](#indice) | Este mapa: qué contiene cada documento, a quién está dirigido y dónde consultar cada tema. | Todos |
 | 2 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo, con eje en el cuestionario y la experiencia única, y una sección para cada proyecto: Rediseño Web (Proyecto A), Business Development System (Proyecto B) y Academia Sports World (Proyecto C). | Dirección, negocio |
-| 3 | [**Contrato**](#contrato) | Marco mercantil de **los tres proyectos** (**V4.1**, 25 cláusulas y Anexos Uno a Cinco): objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Segunda— la separación y contraprestación adicional de los Proyectos B (BDS) y C (Academia). | Dirección, Legal |
+| 3 | [**Contrato**](#contrato) | Marco mercantil de **los tres proyectos** (**V4.2**, 25 cláusulas y Anexos Uno a Cinco): objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Segunda— la separación y contraprestación adicional de los Proyectos B (BDS) y C (Academia). | Dirección, Legal |
 | 3a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques (0, A–F) y con responsables; incluye el servidor e infraestructura de hospedaje del Bloque F. | Dirección, TI, Legal |
 | 3b | [**Anexo Dos · Entregables específicos de los servicios**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
 | 3c | [**Anexo Tres · Gastos variables (informativo)**](#contrato:anexo-tres-gastos-variables-de-operacin-informativo) | Estimación informativa de los gastos variables de operación a cargo del cliente, por escenario; su contenido íntegro vive en el documento Gastos Operativos Variables. | Dirección, Finanzas |
@@ -44,7 +44,7 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | B3 | [**BDS · Canales y enrutamiento**](#bds-canales) | Reglas human-first, respaldo con BES, horarios y SLA de contacto. | Operación, Sistemas |
 | B4 | [**BDS · Estrategia Técnica**](#bds-tecnica) | WhatsApp Business API, BES por WhatsApp (texto), consola de operadores. | Sistemas / TI |
 | B5 | [**BDS · Medición y funnel**](#bds-medicion) | Speed-to-lead por canal y operador, atribución de origen por campaña (Meta/TikTok) y funnel hasta nueva membresía. | Dirección, Sistemas |
-| B6 | [**BDS · Addendum contractual**](#bds-anexo) | Alcance, entregables, contraprestación adicional (USD $4,850.00 más IVA; MXN $86,330.00) y plazo de 8 semanas en paralelo al Proyecto A. | Dirección, Legal |
+| B6 | [**BDS · Addendum contractual**](#bds-anexo) | Alcance, entregables, contraprestación adicional (USD $4,850.00 más IVA; MXN $86,330.00) y plazo de 8 semanas en paralelo al Proyecto A (**V1.1**, alineado al Contrato V4.2). | Dirección, Legal |
 
 ## Proyecto C · Academia Sports World (exclusivos, alcance y costo aparte)
 
@@ -56,7 +56,7 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | C4 | [**Academia · Producción del curso**](#academia-produccion) | Anatomía de un módulo, mecánicas de interactividad reutilizables y producción 100% con IA con costo marginal mínimo por módulo. | Marketing, Comercial, TI |
 | C5 | [**Academia · Estrategia Técnica**](#academia-tecnica) | Separación total de la plataforma y la web, agente de voz de role-play, motor de aprendizaje continuo, dashboard club/ciudad/nacional y costo de las plataformas de IA. | Sistemas / TI |
 | C6 | [**Academia · Medición**](#academia-medicion) | Dashboard de readiness, evaluación en cuatro niveles, catálogo de KPIs por familia y calibración con el CRM. | Dirección, Comercial |
-| C7 | [**Academia · Addendum contractual**](#academia-anexo) | Alcance, entregables, contraprestación adicional ($850,000.00 MXN más IVA; USD $47,752.81) y plazo de 10 semanas del Proyecto C. | Dirección, Legal |
+| C7 | [**Academia · Addendum contractual**](#academia-anexo) | Alcance, entregables, contraprestación adicional ($850,000.00 MXN más IVA; USD $47,752.81) y plazo de 10 semanas del Proyecto C (**V1.1**, alineado al Contrato V4.2). | Dirección, Legal |
 
 ## Localizador rápido (¿dónde está cada tema?)
 
