@@ -36,6 +36,17 @@ Sports World es una marca sólida que hoy resulta **invisible donde el cliente l
 | **31.1%** | Cobertura de keywords unbranded (2,148 de 6,900). |
 | **95.23%** | Proporción del tráfico concentrada en apenas 2 URLs (home + /clubes). |
 
+### La validación de campo: lo que la operación comercial confirmó
+
+El diagnóstico digital se validó **con la voz de la propia operación**: un [workshop discovery con los líderes regionales](#workshop-discovery) —con un cuestionario previo que cubrió a **157 de los 200 asesores de la red (78.5%)**— y [15 entrevistas de campo](#entrevistas-campo) con asesores y líderes comerciales en **13 clubes de cinco regiones del país**. El campo confirmó, del lado humano, lo mismo que la auditoría encontró del lado digital — y cada hallazgo tiene su respuesta en el diseño del proyecto:
+
+| Lo que el campo documentó | Cómo lo resuelve el proyecto |
+|---|---|
+| **No existe un discovery estructurado**: ninguno de los 15 entrevistados tiene un sistema para clasificar el objetivo real del cliente; la pérdida de leads ocurre en el **primer contacto**, cuando el asesor intenta cerrar antes de entender | El **cuestionario de experiencia ideal es ese discovery**, estandarizado en todo canal: llega aplicado antes de que el asesor hable, y el **brief automático** le entrega el perfil, los objetivos y cómo conducir la venta. |
+| **La objeción de precio es universal** (15 de 15): el asesor no logra articular el valor del ecosistema frente a competencia más barata | El sitio articula el **valor por objetivo del usuario, en lenguaje del consumidor**; la experiencia ideal personalizada conecta cada objetivo con los clubes, clases y amenidades que lo sirven. |
+| **El seguimiento corre en WhatsApp personal, que se bloquea** a los 50–60 mensajes/día — y 8 de 15 asesores piden leads mejor cualificados como su prioridad #1 | El prospecto llega **ya validado y con visita agendada** (el grueso del seguimiento desaparece); los recordatorios los envía el sistema por el **número oficial de WhatsApp Business** (Proyecto B), y el número del prospecto queda **validado por el propio canal**. |
+| **La conversión reportada varía 40×** entre asesores (0.5% a 20%), sin línea base verificable | El **funnel de medición de punta a punta** establece por primera vez la línea base real por club y por canal desde el CRM. |
+
 ### 2 · Los objetivos del rediseño
 
 Cinco metas que el nuevo sitio debe cumplir desde el día uno.
