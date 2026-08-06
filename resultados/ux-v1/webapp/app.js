@@ -61,6 +61,8 @@
       title: { es: "Gastos Operativos Variables", en: "Variable Operating Costs" } },
     { id: "demo", type: "embed", group: "generales", red: true, src: "demo/index.html",
       title: { es: "Demo Cuestionario Inteligente", en: "Smart Questionnaire Demo" } },
+    { id: "presentacion-sistemas", type: "embed", group: "generales", red: true, src: "presentacion/index.html",
+      title: { es: "Presentación · Sesión con Sistemas", en: "Deck · IT Review Session" } },
     { id: "experience", type: "doc", group: "proyectoA", pdf: "01-arquitectura-de-experiencia.es.pdf",
       title: { es: "Arquitectura de Experiencia (UX)", en: "Experience Architecture (UX)" } },
     { id: "technical", type: "doc", group: "proyectoA", pdf: "02-estrategia-tecnica.es.pdf",
