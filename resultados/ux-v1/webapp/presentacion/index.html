@@ -7,8 +7,8 @@
 <title>Sports World · Sesión de revisión con Sistemas — Proyectos A y B</title>
 <style>
   :root{
-    --ink:#16181D; --paper:#FAFAF8; --night:#0B0F1E; --night-2:#12172B;
-    --accent:#E6154D; --muted:#6B7080; --line:#E3E1DB; --line-dark:#252B42;
+    --ink:#16181D; --paper:#FAF9F6; --night:#0B0F1E;
+    --accent:#E6154D; --muted:#6B7080; --line:#E4E1DA; --line-dark:#242A41;
     --serif:"Cambria","Georgia","Times New Roman",serif;
     --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
   }
@@ -16,7 +16,7 @@
   html,body{height:100%}
   body{font-family:var(--sans);background:var(--night);color:var(--ink);overflow:hidden}
   .deck{position:relative;width:100vw;height:100vh;height:100dvh}
-  .slide{position:absolute;inset:0;display:none;flex-direction:column;padding:clamp(28px,5vh,64px) clamp(28px,6vw,96px);overflow:hidden}
+  .slide{position:absolute;inset:0;display:none;flex-direction:column;padding:clamp(26px,4.6vh,58px) clamp(28px,6vw,96px);overflow:hidden}
   .slide.active{display:flex}
   @media (prefers-reduced-motion: no-preference){
     .slide.active{animation:fadein .35s ease}
@@ -25,33 +25,63 @@
   .light{background:var(--paper);color:var(--ink)}
   .dark{background:var(--night);color:var(--paper)}
   .dark .kicker{color:var(--accent)}
-  .kicker{font-size:clamp(11px,1.3vh,14px);letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:clamp(10px,2vh,22px)}
-  h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,7.2vh,84px);line-height:1.04;letter-spacing:-.01em}
-  h2{font-family:var(--serif);font-weight:700;font-size:clamp(24px,4.6vh,48px);line-height:1.08;margin-bottom:clamp(14px,2.6vh,30px)}
-  .sub{font-size:clamp(14px,2vh,19px);color:var(--muted);max-width:60ch;line-height:1.5}
-  .dark .sub{color:#9AA1B5}
-  .body-wrap{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0}
-  .foot{display:flex;justify-content:space-between;align-items:baseline;font-size:clamp(10px,1.3vh,12px);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:auto;padding-top:14px}
+
+  /* numeral tipográfico de fondo */
+  .bgnum{position:absolute;right:clamp(4px,3vw,48px);top:-4vh;font-family:var(--serif);font-weight:700;font-size:clamp(160px,44vh,420px);line-height:1;color:rgba(22,24,29,.05);z-index:0;user-select:none;pointer-events:none}
+  .dark .bgnum{color:rgba(250,249,246,.045)}
+  .z{position:relative;z-index:1}
+
+  .kicker{font-size:clamp(11px,1.3vh,14px);letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  h1{font-family:var(--serif);font-weight:700;font-size:clamp(36px,8vh,92px);line-height:1.03;letter-spacing:-.01em}
+  h2{font-family:var(--serif);font-weight:700;font-size:clamp(23px,4.4vh,46px);line-height:1.08}
+  .lead{font-size:clamp(13px,1.9vh,17px);color:var(--muted);line-height:1.55;margin-top:clamp(10px,2vh,20px)}
+  .dark .lead{color:#9AA1B5}
+  .foot{display:flex;justify-content:space-between;align-items:baseline;font-size:clamp(10px,1.3vh,12px);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:auto;padding-top:12px;position:relative;z-index:1}
   .dark .foot{color:#5A6078}
 
-  /* stat grid */
-  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,2.4vh,28px) clamp(18px,3vw,44px)}
-  .stat .n{font-family:var(--serif);font-size:clamp(30px,6.4vh,72px);font-weight:700;line-height:1;color:var(--ink)}
+  /* Arquetipo A — título arriba, contenido centrado */
+  .top-head{margin-bottom:clamp(14px,2.6vh,28px);position:relative;z-index:1}
+  .top-head .kicker{display:block;margin-bottom:clamp(8px,1.4vh,16px)}
+  .body-wrap{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0;position:relative;z-index:1}
+
+  /* Arquetipo B — título lateral (revista) */
+  .side{flex:1;display:grid;grid-template-columns:minmax(230px,31%) 1fr;gap:clamp(24px,4.5vw,70px);min-height:0;position:relative;z-index:1;align-items:start;padding-top:clamp(6px,2vh,22px)}
+  .side .head .kicker{display:block;margin-bottom:clamp(8px,1.4vh,16px)}
+  .side .content{align-self:center;min-width:0}
+
+  /* Arquetipo C — declaración (portada/cierre/producto) */
+  .statement{flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(10px,4vh,40px);position:relative;z-index:1}
+
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,2.4vh,26px) clamp(18px,3vw,44px)}
+  .stat .n{font-family:var(--serif);font-size:clamp(26px,5.4vh,60px);font-weight:700;line-height:1;color:var(--ink)}
   .dark .stat .n{color:var(--paper)}
   .stat .n em{font-style:normal;color:var(--accent)}
-  .stat .l{font-size:clamp(11px,1.55vh,15px);color:var(--muted);margin-top:6px;line-height:1.35;max-width:30ch}
+  .stat .l{font-size:clamp(11px,1.5vh,14px);color:var(--muted);margin-top:6px;line-height:1.35;max-width:30ch}
   .dark .stat .l{color:#9AA1B5}
+  .hero-stat .n{font-size:clamp(70px,17vh,180px);letter-spacing:-.02em}
+  .hero-stat .l{font-size:clamp(13px,1.9vh,17px);max-width:24ch}
 
-  /* cards row */
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2.4vw,30px)}
-  .card{border-top:1px solid var(--line);padding-top:clamp(10px,1.8vh,18px)}
-  .dark .card{border-color:var(--line-dark)}
-  .card .num{font-family:var(--serif);font-size:clamp(18px,3vh,28px);color:var(--accent);font-weight:700}
-  .card h3{font-size:clamp(15px,2.2vh,21px);margin:6px 0 8px;line-height:1.2}
-  .card p{font-size:clamp(12px,1.75vh,16px);line-height:1.5;color:#3D4250}
-  .dark .card p{color:#B8BECF}
+  /* bandas numeradas */
+  .bands{display:flex;flex-direction:column}
+  .band{display:grid;grid-template-columns:clamp(64px,9vw,120px) 1fr;gap:clamp(14px,2.6vw,34px);padding:clamp(12px,2.4vh,24px) 0;border-top:1px solid var(--line);align-items:start}
+  .dark .band{border-color:var(--line-dark)}
+  .band:last-child{border-bottom:1px solid var(--line)}
+  .dark .band:last-child{border-color:var(--line-dark)}
+  .band .bn{font-family:var(--serif);font-weight:700;font-size:clamp(30px,6.4vh,64px);line-height:.95;color:var(--accent)}
+  .band h3{font-size:clamp(15px,2.3vh,21px);margin-bottom:6px;line-height:1.2}
+  .band p{font-size:clamp(12px,1.8vh,16px);line-height:1.5;color:#3D4250;max-width:100ch}
+  .dark .band p{color:#B8BECF}
 
-  /* tables */
+  /* panel dividido */
+  .halves{flex:1;display:grid;grid-template-columns:1fr 1fr;min-height:0;position:relative;z-index:1;gap:0}
+  .half{padding:clamp(18px,3.4vh,36px) clamp(18px,3vw,42px);display:flex;flex-direction:column;justify-content:center}
+  .half + .half{border-left:1px solid var(--line-dark)}
+  .half .big{font-family:var(--serif);font-weight:700;font-size:clamp(48px,11vh,120px);color:var(--accent);line-height:1}
+  .half h3{font-size:clamp(17px,2.6vh,24px);margin:10px 0 10px;color:var(--paper);line-height:1.2}
+  .half p{font-size:clamp(12.5px,1.85vh,16.5px);line-height:1.55;color:#B8BECF;max-width:52ch}
+
+  /* tablas */
   table{width:100%;border-collapse:collapse}
   th{font-size:clamp(10px,1.35vh,12.5px);letter-spacing:.14em;text-transform:uppercase;text-align:left;color:var(--muted);font-weight:600;padding:0 14px 8px 0;border-bottom:1px solid var(--ink)}
   td{font-size:clamp(12px,1.8vh,16.5px);line-height:1.42;padding:clamp(6px,1.15vh,12px) 14px clamp(6px,1.15vh,12px) 0;border-bottom:1px solid var(--line);vertical-align:top}
@@ -60,11 +90,19 @@
   .tight td{font-size:clamp(11px,1.6vh,14.5px);padding:clamp(5px,.95vh,9px) 12px clamp(5px,.95vh,9px) 0}
 
   .two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,64px)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2.4vw,30px)}
+  .card{border-top:1px solid var(--line);padding-top:clamp(10px,1.8vh,18px)}
+  .dark .card{border-color:var(--line-dark)}
+  .card .num{font-family:var(--serif);font-size:clamp(18px,3vh,28px);color:var(--accent);font-weight:700}
+  .card h3{font-size:clamp(15px,2.2vh,21px);margin:6px 0 8px;line-height:1.2}
+  .card p{font-size:clamp(12px,1.75vh,16px);line-height:1.5;color:#3D4250}
+  .dark .card p{color:#B8BECF}
+
   .list{list-style:none}
   .list li{font-size:clamp(12.5px,1.85vh,17px);line-height:1.5;padding:clamp(6px,1.2vh,12px) 0;border-bottom:1px solid var(--line);display:flex;gap:14px}
   .dark .list li{border-color:var(--line-dark)}
   .list .b{color:var(--accent);font-family:var(--serif);font-weight:700;min-width:1.4em}
-  .note{font-size:clamp(11px,1.55vh,14px);color:var(--muted);margin-top:clamp(10px,2vh,20px);line-height:1.5;max-width:90ch}
+  .note{font-size:clamp(11px,1.55vh,14px);color:var(--muted);margin-top:clamp(10px,2vh,20px);line-height:1.5;max-width:96ch}
 
   .btn{display:inline-block;align-self:flex-start;margin-top:clamp(14px,2.5vh,26px);padding:12px 24px;border:1px solid var(--accent);color:var(--paper);text-decoration:none;font-size:clamp(12px,1.7vh,15px);letter-spacing:.1em;text-transform:uppercase}
   .btn:hover{background:var(--accent);color:#fff}
@@ -77,142 +115,178 @@
   .pager{position:fixed;bottom:14px;right:20px;font-size:11px;letter-spacing:.18em;color:#888;z-index:10;font-family:var(--sans)}
   .tap{position:fixed;top:0;bottom:0;width:18%;z-index:5;cursor:pointer}
   .tap.prev{left:0}.tap.next{right:0}
-  @media (max-width:820px){
+  @media (max-width:880px){
     .stats,.cards{grid-template-columns:1fr 1fr}
-    .two-col{grid-template-columns:1fr}
+    .two-col,.side,.halves{grid-template-columns:1fr}
+    .half + .half{border-left:none;border-top:1px solid var(--line-dark)}
     .slide{overflow-y:auto}
+    .bgnum{display:none}
   }
 </style>
 </head>
 <body>
 <div class="deck" id="deck">
 
-<!-- 1 · Portada -->
+<!-- 1 · Portada — declaración -->
 <section class="slide dark">
-  <div class="body-wrap">
-    <div class="kicker">Final Upgrade AI · Sesión de trabajo</div>
-    <h1>Sports World.<br>Revisión con Sistemas.</h1>
-    <p class="sub" style="margin-top:22px">Proyecto A · Rediseño Web con enfoque en posicionamiento orgánico y el agente BES.<br>Proyecto B · Business Development System.</p>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1">
+    <span class="kicker">Final Upgrade AI</span>
+    <span class="kicker" style="color:#5A6078">Agosto 2026</span>
   </div>
-  <div class="foot"><span>Confidencial · Documento de trabajo</span><span>Agosto 2026</span></div>
+  <div class="statement">
+    <h1>Sports World.<br>Revisión con <em style="font-style:normal;color:var(--accent)">Sistemas</em>.</h1>
+    <p class="lead" style="max-width:64ch">Proyecto A · Rediseño Web con enfoque en posicionamiento orgánico y el agente BES.&ensp;·&ensp;Proyecto B · Business Development System.</p>
+  </div>
+  <div class="foot"><span>Confidencial · Documento de trabajo</span><span>Sesión de trabajo</span></div>
 </section>
 
-<!-- 2 · Agenda -->
+<!-- 2 · Agenda — título lateral -->
 <section class="slide light">
-  <div class="kicker">Sesión de revisión · Sports World — Sistemas</div>
-  <h2>Agenda</h2>
-  <div class="body-wrap">
-    <ul class="list">
-      <li><span class="b">1</span><span><strong>Contexto, diagnóstico y objetivos del proyecto.</strong>&ensp;El diagnóstico que dio origen, la solución que proponemos y los resultados esperados.</span></li>
-      <li><span class="b">2</span><span><strong>Alcance funcional y entregables.</strong>&ensp;Páginas por club, integraciones, CMS, el agente BES y los criterios de validación.</span></li>
-      <li><span class="b">3</span><span><strong>Observaciones al contrato.</strong>&ensp;Las once observaciones identificadas, con la cláusula exacta que resuelve cada una.</span></li>
-      <li><span class="b">4</span><span><strong>Avances y siguientes pasos.</strong>&ensp;Lo construido a la fecha, las decisiones requeridas y los responsables.</span></li>
-    </ul>
-  </div>
-  <div class="foot"><span>Sports World · Sistemas</span><span>Final Upgrade AI</span></div>
-</section>
-
-<!-- 3 · Semrush, la fuente -->
-<section class="slide light">
-  <div class="kicker">1 · Diagnóstico — La fuente de los datos</div>
-  <h2>Semrush: la fuente del diagnóstico.</h2>
-  <div class="body-wrap">
-    <div class="cards">
-      <div class="card"><div class="num">Qué es</div><h3>La plataforma de referencia de inteligencia SEO</h3><p>Empresa pública (NYSE: SEMR) que opera una de las bases de datos de búsqueda más grandes del mundo: más de 25 mil millones de keywords en más de 140 bases geográficas, actualizadas continuamente. Es la herramienta estándar de la industria del marketing digital.</p></div>
-      <div class="card"><div class="num">Para qué sirve</div><h3>Medir posiciones, demanda y salud técnica</h3><p>Registra qué posición ocupa cada sitio en Google por cada búsqueda, estima cuánto se busca cada término por país, compara la cobertura contra los competidores y audita los errores técnicos de un sitio mediante rastreo. Con ella se construyó la línea base del proyecto y con ella se verificarán los KPIs.</p></div>
-      <div class="card"><div class="num">Confiabilidad</div><h3>Datos duros donde importa</h3><p>Las posiciones en Google y los errores técnicos (enlaces rotos, páginas sin H1, rendering) son observaciones directas — datos duros, reproducibles por cualquiera. Los volúmenes de búsqueda son estimaciones estadísticas, confiables en lo direccional. Por eso los KPIs del contrato se verifican con Semrush y con herramientas del propio Google (Search Console, PageSpeed, Rich Results Test).</p></div>
+  <div class="side">
+    <div class="head">
+      <span class="kicker">Sports World — Sistemas</span>
+      <h2>Agenda</h2>
+      <p class="lead">Los cuatro puntos propuestos por el equipo de Sistemas, en su orden.</p>
     </div>
-    <p class="note">Para este diagnóstico: base de datos México, más de 20,000 keywords analizadas y 100 páginas rastreadas (febrero–marzo de 2026). La misma herramienta medirá la línea base y el avance post-lanzamiento — la vara no cambia.</p>
+    <div class="content">
+      <div class="bands">
+        <div class="band"><div class="bn">1</div><div><h3>Contexto, diagnóstico y objetivos del proyecto</h3><p>El diagnóstico que dio origen, la solución que proponemos y los resultados esperados.</p></div></div>
+        <div class="band"><div class="bn">2</div><div><h3>Alcance funcional y entregables</h3><p>Páginas por club, integraciones, CMS, el agente BES y los criterios de validación.</p></div></div>
+        <div class="band"><div class="bn">3</div><div><h3>Observaciones al contrato</h3><p>Las once observaciones identificadas, con la cláusula exacta que resuelve cada una.</p></div></div>
+        <div class="band"><div class="bn">4</div><div><h3>Avances y siguientes pasos</h3><p>Lo construido a la fecha, las decisiones requeridas y los responsables.</p></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>Sesión de revisión</span><span>Final Upgrade AI</span></div>
+</section>
+
+<!-- 3 · Semrush — título lateral -->
+<section class="slide light">
+  <div class="bgnum">S</div>
+  <div class="side">
+    <div class="head">
+      <span class="kicker">1 · Diagnóstico — La fuente</span>
+      <h2>Semrush: la fuente del diagnóstico.</h2>
+      <p class="lead">Base de datos México · más de 20,000 keywords analizadas · 100 páginas rastreadas (febrero–marzo 2026). La misma herramienta medirá el avance post-lanzamiento — la vara no cambia.</p>
+    </div>
+    <div class="content">
+      <div class="bands">
+        <div class="band"><div class="bn" style="font-size:clamp(15px,2.2vh,20px);padding-top:6px">QUÉ ES</div><div><h3>La plataforma de referencia de inteligencia SEO</h3><p>Empresa pública (NYSE: SEMR) que opera una de las bases de datos de búsqueda más grandes del mundo: más de 25 mil millones de keywords en más de 140 bases geográficas. El estándar de la industria del marketing digital.</p></div></div>
+        <div class="band"><div class="bn" style="font-size:clamp(15px,2.2vh,20px);padding-top:6px">PARA QUÉ</div><div><h3>Medir posiciones, demanda y salud técnica</h3><p>Registra qué posición ocupa cada sitio en Google por cada búsqueda, estima la demanda por país, compara contra competidores y audita errores técnicos por rastreo. Con ella se construyó la línea base y se verificarán los KPIs.</p></div></div>
+        <div class="band"><div class="bn" style="font-size:clamp(15px,2.2vh,20px);padding-top:6px">CONFIABLE</div><div><h3>Datos duros donde importa</h3><p>Posiciones y errores técnicos son observaciones directas — reproducibles por cualquiera. Los volúmenes de búsqueda son estimaciones estadísticas, confiables en lo direccional. Los KPIs se verifican además con herramientas del propio Google (Search Console, PageSpeed, Rich Results Test).</p></div></div>
+      </div>
+    </div>
   </div>
   <div class="foot"><span>Auditoría inicial · Depósito de documentos</span><span>03</span></div>
 </section>
 
-<!-- 4 · Diagnóstico digital -->
+<!-- 4 · Diagnóstico — stat héroe -->
 <section class="slide dark">
-  <div class="kicker">1 · Diagnóstico — El Gigante Invisible</div>
-  <h2>Marca fuerte.<br>Invisible donde el cliente busca.</h2>
+  <div class="top-head">
+    <span class="kicker">1 · Diagnóstico — El Gigante Invisible</span>
+    <h2>Marca fuerte. Invisible donde el cliente busca.</h2>
+  </div>
   <div class="body-wrap">
-    <div class="stats">
-      <div class="stat"><div class="n"><em>0</em> de 49</div><div class="l">páginas de club rastreables por Google hoy</div></div>
-      <div class="stat"><div class="n">31.1%</div><div class="l">cobertura del mercado unbranded (2,148 de 6,900 keywords)</div></div>
-      <div class="stat"><div class="n">−28.18%</div><div class="l">caída anual del tráfico orgánico no-marca</div></div>
-      <div class="stat"><div class="n">~1.23M</div><div class="l">búsquedas mensuales de alta intención sin capturar</div></div>
-      <div class="stat"><div class="n">95.23%</div><div class="l">del tráfico concentrado en solo 2 URLs</div></div>
-      <div class="stat"><div class="n">136</div><div class="l">enlaces rotos y URLs malformadas</div></div>
+    <div class="two-col" style="align-items:center">
+      <div class="stat hero-stat">
+        <div class="n"><em>0</em><span style="font-size:.38em"> de 49</span></div>
+        <div class="l">páginas de club rastreables por Google hoy</div>
+      </div>
+      <div class="stats" style="grid-template-columns:1fr 1fr">
+        <div class="stat"><div class="n">31.1%</div><div class="l">cobertura del mercado unbranded</div></div>
+        <div class="stat"><div class="n">−28.18%</div><div class="l">caída anual del tráfico no-marca</div></div>
+        <div class="stat"><div class="n">~1.23M</div><div class="l">búsquedas/mes de alta intención sin capturar</div></div>
+        <div class="stat"><div class="n">95.23%</div><div class="l">del tráfico en solo 2 URLs</div></div>
+      </div>
     </div>
-    <p class="note" style="color:#9AA1B5">Referencia de industria: David Lloyd Clubs (Reino Unido) partió de la misma cobertura (~31%), llegó a ~74% con la misma estrategia y ganó +19% en membresías.</p>
+    <p class="note" style="color:#9AA1B5">Más 136 enlaces rotos y URLs malformadas. Referencia de industria: David Lloyd Clubs (Reino Unido) partió de la misma cobertura (~31%), llegó a ~74% con la misma estrategia y ganó +19% en membresías.</p>
   </div>
   <div class="foot"><span>Auditoría inicial · Depósito de documentos</span><span>04</span></div>
 </section>
 
-<!-- 5 · Tres causas -->
+<!-- 5 · Tres causas — bandas -->
 <section class="slide light">
-  <div class="kicker">1 · Diagnóstico</div>
-  <h2>Las tres causas del problema.</h2>
+  <div class="bgnum">3</div>
+  <div class="top-head">
+    <span class="kicker">1 · Diagnóstico</span>
+    <h2>Las tres causas del problema.</h2>
+  </div>
   <div class="body-wrap">
-    <div class="cards">
-      <div class="card"><div class="num">01</div><h3>Los clubes no son detectados</h3><p>El sitio se renderiza en el navegador (client-side); Googlebot no lo ejecuta igual. Las 49 fichas de club no existen para Google, y quien busca "gimnasio cerca de mí" aterriza en el home genérico — cada clic adicional pierde una porción significativa de los leads.</p></div>
-      <div class="card"><div class="num">02</div><h3>Cero referencia a bajar de peso</h3><p>Es la intención número uno de la industria — 932,300 búsquedas al mes — y el motivo principal de inscripción. Sports World tiene el producto completo; el sitio cubre el 0.02% de ese universo.</p></div>
-      <div class="card"><div class="num">03</div><h3>La navegación no conecta objetivos con oferta</h3><p>La gente busca resultados — masa muscular, tonificar, rehabilitación — pero la información vive enterrada en descripciones de clases, en jerga de fitness. El sitio es un catálogo enorme, difícil de navegar.</p></div>
+    <div class="bands">
+      <div class="band"><div class="bn">01</div><div><h3>Los clubes no son detectados</h3><p>El sitio se renderiza en el navegador (client-side); Googlebot no lo ejecuta igual. Las 49 fichas de club no existen para Google, y quien busca "gimnasio cerca de mí" aterriza en el home genérico — cada clic adicional pierde una porción significativa de los leads.</p></div></div>
+      <div class="band"><div class="bn">02</div><div><h3>Cero referencia a bajar de peso</h3><p>Es la intención número uno de la industria — 932,300 búsquedas al mes — y el motivo principal de inscripción. Sports World tiene el producto completo; el sitio cubre el 0.02% de ese universo.</p></div></div>
+      <div class="band"><div class="bn">03</div><div><h3>La navegación no conecta objetivos con oferta</h3><p>La gente busca resultados — masa muscular, tonificar, rehabilitación — pero la información vive enterrada en descripciones de clases, en jerga de fitness. El sitio es un catálogo enorme, difícil de navegar.</p></div></div>
     </div>
   </div>
   <div class="foot"><span>Auditoría inicial</span><span>05</span></div>
 </section>
 
-<!-- 6 · Validación de campo -->
+<!-- 6 · Validación de campo — título lateral con stats -->
 <section class="slide light">
-  <div class="kicker">1 · Diagnóstico — Validación de campo</div>
-  <h2>La operación confirmó el diagnóstico.</h2>
-  <div class="body-wrap">
-    <div class="stats" style="grid-template-columns:repeat(4,1fr)">
-      <div class="stat"><div class="n">157<span style="font-size:.45em">/200</span></div><div class="l">asesores cubiertos por el cuestionario pre-workshop (78.5%)</div></div>
-      <div class="stat"><div class="n">15</div><div class="l">entrevistas individuales: 6 líderes y 9 asesores</div></div>
-      <div class="stat"><div class="n">13</div><div class="l">clubes en cinco regiones del país</div></div>
-      <div class="stat"><div class="n"><em>40×</em></div><div class="l">variabilidad en la conversión reportada entre asesores (0.5%–20%)</div></div>
+  <div class="side">
+    <div class="head">
+      <span class="kicker">1 · Diagnóstico — Validación de campo</span>
+      <h2>La operación confirmó el diagnóstico.</h2>
+      <div class="stats" style="grid-template-columns:1fr 1fr;margin-top:clamp(14px,2.6vh,26px)">
+        <div class="stat"><div class="n">157<span style="font-size:.45em">/200</span></div><div class="l">asesores cubiertos (78.5%)</div></div>
+        <div class="stat"><div class="n"><em>40×</em></div><div class="l">variabilidad en conversión reportada</div></div>
+        <div class="stat"><div class="n">15</div><div class="l">entrevistas: 6 líderes, 9 asesores</div></div>
+        <div class="stat"><div class="n">13</div><div class="l">clubes, cinco regiones</div></div>
+      </div>
     </div>
-    <ul class="list" style="margin-top:clamp(14px,2.6vh,28px)">
-      <li><span class="b">·</span><span>Ninguno de los 15 entrevistados tiene un método para identificar el objetivo real del cliente — la pérdida ocurre en el <strong>primer contacto</strong>, cuando el asesor intenta cerrar antes de entender.</span></li>
-      <li><span class="b">·</span><span>La objeción de <strong>precio</strong> aparece en las 15 entrevistas, sin excepción: el valor del ecosistema no se logra articular.</span></li>
-      <li><span class="b">·</span><span>El 99% del seguimiento corre por <strong>WhatsApp personal</strong>, que se bloquea a los 50–60 mensajes por día. 8 de 15 piden leads mejor cualificados como su prioridad número uno.</span></li>
-    </ul>
-    <p class="note"><strong>Un mismo patrón atraviesa ambos diagnósticos:</strong> ni el sitio ni la operación entienden el objetivo del cliente ni le responden con precisión. Eso, exactamente, es lo que el proyecto construye — y se presenta a continuación.</p>
+    <div class="content">
+      <ul class="list">
+        <li><span class="b">·</span><span>Ninguno de los 15 entrevistados tiene un método para identificar el objetivo real del cliente — la pérdida ocurre en el <strong>primer contacto</strong>, cuando el asesor intenta cerrar antes de entender.</span></li>
+        <li><span class="b">·</span><span>La objeción de <strong>precio</strong> aparece en las 15 entrevistas, sin excepción: el valor del ecosistema no se logra articular.</span></li>
+        <li><span class="b">·</span><span>El 99% del seguimiento corre por <strong>WhatsApp personal</strong>, que se bloquea a los 50–60 mensajes por día. 8 de 15 piden leads mejor cualificados como su prioridad número uno.</span></li>
+      </ul>
+      <p class="note"><strong>Un mismo patrón atraviesa ambos diagnósticos:</strong> ni el sitio ni la operación entienden el objetivo del cliente ni le responden con precisión. Eso, exactamente, es lo que el proyecto construye — y se presenta a continuación.</p>
+    </div>
   </div>
   <div class="foot"><span>Workshop discovery + Reporte de entrevistas · Depósito</span><span>06</span></div>
 </section>
 
-<!-- 7 · La solución: la experiencia ideal -->
+<!-- 7 · La solución — declaración -->
 <section class="slide dark">
-  <div class="kicker">1 · La solución</div>
-  <h2>Un producto: la experiencia ideal.</h2>
-  <div class="body-wrap">
-    <p class="sub" style="max-width:80ch;margin-bottom:clamp(14px,2.6vh,26px)"><strong style="color:var(--paper)">Convertimos la infraestructura de Sports World — 49 clubes, sus clases y sus amenidades — en una experiencia ideal que cubre exactamente lo que el usuario quiere.</strong> Cuando el prospecto ve, con precisión, que el club tiene justo lo que busca, la decisión de visitarlo se vuelve mucho más simple y directa. Un solo producto, con dos caras:</p>
-    <div class="two-col">
-      <div class="card"><div class="num">→ Al consumidor</div><h3 style="color:var(--paper)">La garantía de que tenemos justo lo que necesita</h3><p>La experiencia ideal usa nuestra infraestructura — los datos vivos de los 49 clubes, sus clases y sus amenidades — para responderle con precisión: este es tu club, estas son tus clases, esto es lo que Sports World tiene para tus objetivos.</p></div>
+  <div class="bgnum">1</div>
+  <div class="statement" style="justify-content:center">
+    <span class="kicker" style="display:block;margin-bottom:clamp(10px,2vh,20px)">1 · La solución</span>
+    <h2 style="font-size:clamp(28px,5.6vh,60px);max-width:22ch">Un producto: la experiencia ideal.</h2>
+    <p class="lead" style="max-width:78ch;font-size:clamp(14px,2.1vh,19px)"><strong style="color:var(--paper)">Convertimos la infraestructura de Sports World — 49 clubes, sus clases y sus amenidades — en una experiencia ideal que cubre exactamente lo que el usuario quiere.</strong> Cuando el prospecto ve, con precisión, que el club tiene justo lo que busca, la decisión de visitarlo se vuelve mucho más simple y directa.</p>
+    <div class="two-col" style="margin-top:clamp(16px,3vh,32px)">
+      <div class="card"><div class="num">→ Al consumidor</div><h3 style="color:var(--paper)">La garantía de que tenemos justo lo que necesita</h3><p>La experiencia ideal usa los datos vivos de los 49 clubes, sus clases y sus amenidades para responderle con precisión: este es tu club, estas son tus clases, esto es lo que Sports World tiene para tus objetivos.</p></div>
       <div class="card"><div class="num">→ A la fuerza de ventas</div><h3 style="color:var(--paper)">Un documento hiperpersonalizado para cerrar</h3><p>El mismo motor produce el brief del asesor: el perfil del prospecto, sus objetivos declarados, sus intereses y las sugerencias concretas de cómo conducir la venta — antes de que el prospecto pise el club.</p></div>
     </div>
   </div>
   <div class="foot"><span>Arquitectura de Experiencia · Depósito</span><span>07</span></div>
 </section>
 
-<!-- 8 · El instrumento: el cuestionario -->
+<!-- 8 · El instrumento — bandas oscuras -->
 <section class="slide dark">
-  <div class="kicker">1 · La solución — cómo se produce</div>
-  <h2>El instrumento: un cuestionario de objetivos.</h2>
-  <div class="body-wrap">
-    <ul class="list">
-      <li><span class="b">·</span><span><strong>Qué pregunta:</strong> los objetivos del prospecto — qué busca lograr, con quién entrena, dónde vive y trabaja — en <strong>lenguaje del consumidor</strong>, nunca en jerga de fitness. Toma alrededor de un minuto.</span></li>
-      <li><span class="b">·</span><span><strong>Menús adaptativos:</strong> se adapta a la puerta de entrada — omite lo que la página de origen ya reveló (la geografía si llegó a la ficha de un club, la disciplina si llegó a una clase, el objetivo si llegó a un hub de perfil) y ajusta su copy y sus opciones dinámicamente.</span></li>
-      <li><span class="b">·</span><span><strong>Se aplica una sola vez, en cualquier canal</strong> — el sitio, el agente BES, WhatsApp (Proyecto B) o la consola interna del asesor — y el resolver elige el club que <strong>cumple la experiencia ideal</strong>; la distancia solo desempata.</span></li>
-      <li><span class="b">·</span><span><strong>Con las respuestas, la IA redacta</strong> — en el momento, sobre los datos verificados del club elegido — la experiencia ideal del prospecto y el brief del asesor. Nada es plantilla genérica: cada texto se genera para esa persona.</span></li>
-    </ul>
+  <div class="side">
+    <div class="head">
+      <span class="kicker">1 · La solución — Cómo se produce</span>
+      <h2>El instrumento: un cuestionario de objetivos.</h2>
+      <p class="lead">Un minuto del prospecto. Todo lo demás lo hace el sistema.</p>
+    </div>
+    <div class="content">
+      <div class="bands">
+        <div class="band"><div class="bn">01</div><div><h3 style="color:var(--paper)">Pregunta objetivos, no fichas técnicas</h3><p>Qué busca lograr, con quién entrena, dónde vive y trabaja — en lenguaje del consumidor, nunca en jerga de fitness.</p></div></div>
+        <div class="band"><div class="bn">02</div><div><h3 style="color:var(--paper)">Menús adaptativos</h3><p>Omite lo que la página de origen ya reveló — la geografía si llegó a la ficha de un club, la disciplina si llegó a una clase, el objetivo si llegó a un hub de perfil — y ajusta su copy y sus opciones dinámicamente.</p></div></div>
+        <div class="band"><div class="bn">03</div><div><h3 style="color:var(--paper)">Una sola vez, en cualquier canal</h3><p>El sitio, el agente BES, WhatsApp (Proyecto B) o la consola interna del asesor. El resolver elige el club que cumple la experiencia ideal; la distancia solo desempata.</p></div></div>
+        <div class="band"><div class="bn">04</div><div><h3 style="color:var(--paper)">La IA redacta el resultado</h3><p>Con las respuestas y los datos verificados del club elegido, redacta en el momento la experiencia ideal del prospecto y el brief del asesor. Nada es plantilla genérica: cada texto se genera para esa persona.</p></div></div>
+      </div>
+    </div>
   </div>
   <div class="foot"><span>Arquitectura de Experiencia · Depósito</span><span>08</span></div>
 </section>
 
-<!-- 9 · Cómo resuelve lo del campo -->
+<!-- 9 · Contra los hallazgos -->
 <section class="slide light">
-  <div class="kicker">1 · La solución — contra los hallazgos de campo</div>
-  <h2>La experiencia ideal responde cada hallazgo.</h2>
+  <div class="top-head">
+    <span class="kicker">1 · La solución — Contra los hallazgos de campo</span>
+    <h2>La experiencia ideal responde cada hallazgo.</h2>
+  </div>
   <div class="body-wrap">
     <table class="tight">
       <tr><th style="width:44%">Lo que el campo documentó</th><th>Cómo lo resuelve la experiencia ideal</th></tr>
@@ -226,24 +300,33 @@
   <div class="foot"><span>Entrevistas de campo · Depósito</span><span>09</span></div>
 </section>
 
-<!-- 10 · Los canales -->
-<section class="slide dark">
-  <div class="kicker">1 · La solución — los canales que la entregan</div>
-  <h2>Dos proyectos, una sola experiencia.</h2>
-  <div class="body-wrap">
-    <div class="two-col">
-      <div class="card"><div class="num">A</div><h3 style="color:var(--paper)">Rediseño Web · 8 semanas</h3><p>Sitio de 148 páginas rastreable por Google (SSR), el agente BES por voz y texto en el canal web, integración con el CRM vía middleware, y el funnel con dashboard de medición de punta a punta.</p></div>
-      <div class="card"><div class="num">B</div><h3 style="color:var(--paper)">Business Development System · 8 semanas, en paralelo</h3><p>La misma experiencia ideal extendida a WhatsApp: leads de campañas atendidos por operadores humanos en tiempo real, con BES de respaldo 24/7 — ataca la causa raíz de la baja conversión: el tiempo al primer contacto.</p></div>
-    </div>
-    <p class="note" style="color:#9AA1B5">En todos los caminos el resultado es el mismo: experiencia ideal para el prospecto, escritura idempotente al CRM y brief automático al asesor.</p>
+<!-- 10 · Canales — panel dividido -->
+<section class="slide dark" style="padding-left:0;padding-right:0">
+  <div class="top-head" style="padding:0 clamp(28px,6vw,96px)">
+    <span class="kicker">1 · La solución — Los canales que la entregan</span>
+    <h2>Dos proyectos, una sola experiencia.</h2>
   </div>
-  <div class="foot"><span>Resumen ejecutivo · Depósito</span><span>10</span></div>
+  <div class="halves">
+    <div class="half">
+      <div class="big">A</div>
+      <h3>Rediseño Web · 8 semanas</h3>
+      <p>Sitio de 148 páginas rastreable por Google (SSR), el agente BES por voz y texto en el canal web, integración con el CRM vía middleware, y el funnel con dashboard de medición de punta a punta.</p>
+    </div>
+    <div class="half">
+      <div class="big">B</div>
+      <h3>Business Development System · 8 semanas, en paralelo</h3>
+      <p>La misma experiencia ideal extendida a WhatsApp: leads de campañas atendidos por operadores humanos en tiempo real, con BES de respaldo 24/7 — ataca la causa raíz de la baja conversión: el tiempo al primer contacto.</p>
+    </div>
+  </div>
+  <div class="foot" style="padding-left:clamp(28px,6vw,96px);padding-right:clamp(28px,6vw,96px)"><span>En todos los caminos: experiencia ideal + escritura idempotente al CRM + brief al asesor</span><span>10</span></div>
 </section>
 
 <!-- 11 · Resultados esperados -->
 <section class="slide light">
-  <div class="kicker">1 · Resultados esperados</div>
-  <h2>Lo comprometido es verificable.</h2>
+  <div class="top-head">
+    <span class="kicker">1 · Resultados esperados</span>
+    <h2>Lo comprometido es verificable.</h2>
+  </div>
   <div class="body-wrap">
     <table class="tight">
       <tr><th>KPI comprometido</th><th>Línea base</th><th>Meta</th><th>Verificación</th></tr>
@@ -259,31 +342,27 @@
   <div class="foot"><span>Contrato · Anexo Dos, Sección IV</span><span>11</span></div>
 </section>
 
-<!-- 12 · Alcance: 148 páginas -->
+<!-- 12 · 148 páginas — título lateral -->
 <section class="slide light">
-  <div class="kicker">2 · Alcance — Las 148 páginas</div>
-  <h2>Una ficha por club, porque ahí decide el prospecto.</h2>
-  <div class="body-wrap">
-    <div class="two-col">
-      <div>
-        <table class="tight">
-          <tr><th>Componente</th><th style="text-align:right">Páginas</th></tr>
-          <tr><td>Fichas de club — datos vivos del CRM, schema HealthClub, agendado</td><td style="text-align:right"><strong>49</strong></td></tr>
-          <tr><td>Páginas de clase (7 premium + 47 individuales)</td><td style="text-align:right"><strong>54</strong></td></tr>
-          <tr><td>Hubs de amenidad</td><td style="text-align:right"><strong>10</strong></td></tr>
-          <tr><td>Perfiles de objetivo + bajar de peso (YMYL con firma médica) + PT</td><td style="text-align:right"><strong>7</strong></td></tr>
-          <tr><td>Membresías (hub + 5 planes)</td><td style="text-align:right"><strong>6</strong></td></tr>
-          <tr><td>Home + FitKidz + blog inicial</td><td style="text-align:right"><strong>22</strong></td></tr>
-          <tr><td><strong>Total</strong></td><td style="text-align:right"><strong>148</strong></td></tr>
-        </table>
-      </div>
-      <div>
-        <ul class="list">
-          <li><span class="b">·</span><span><strong>Hoy:</strong> client-side rendering, 95% del tráfico en 2 URLs, sin datos estructurados, contenido editable solo por desarrollo.</span></li>
-          <li><span class="b">·</span><span><strong>Nuevo:</strong> SSR + ISR, jerarquía y enlazado interno, schema por tipo de página, 6 plantillas maestras con contenido único y revisión editorial humana.</span></li>
-          <li><span class="b">·</span><span>Quien busca localmente <strong>aterriza directo en la ficha de su club</strong> — cada paso adicional del recorrido pierde 10–30% de los usuarios (benchmark internacional; rango de trabajo 20–40% por clic en móvil local).</span></li>
-        </ul>
-      </div>
+  <div class="bgnum">148</div>
+  <div class="side">
+    <div class="head">
+      <span class="kicker">2 · Alcance — Las 148 páginas</span>
+      <h2>Una ficha por club, porque ahí decide el prospecto.</h2>
+      <p class="lead">Quien busca localmente aterriza directo en la ficha de su club — cada paso adicional pierde 10–30% de los usuarios (benchmark internacional; rango de trabajo 20–40% por clic en móvil local).</p>
+    </div>
+    <div class="content">
+      <table class="tight">
+        <tr><th>Componente</th><th style="text-align:right">Páginas</th></tr>
+        <tr><td>Fichas de club — datos vivos del CRM, schema HealthClub, agendado</td><td style="text-align:right"><strong>49</strong></td></tr>
+        <tr><td>Páginas de clase (7 premium + 47 individuales)</td><td style="text-align:right"><strong>54</strong></td></tr>
+        <tr><td>Hubs de amenidad</td><td style="text-align:right"><strong>10</strong></td></tr>
+        <tr><td>Perfiles de objetivo + bajar de peso (YMYL con firma médica) + PT</td><td style="text-align:right"><strong>7</strong></td></tr>
+        <tr><td>Membresías (hub + 5 planes)</td><td style="text-align:right"><strong>6</strong></td></tr>
+        <tr><td>Home + FitKidz + blog inicial</td><td style="text-align:right"><strong>22</strong></td></tr>
+        <tr><td><strong>Total</strong></td><td style="text-align:right"><strong>148</strong></td></tr>
+      </table>
+      <p class="note"><strong>Hoy:</strong> client-side rendering, 95% del tráfico en 2 URLs, sin datos estructurados. <strong>Nuevo:</strong> SSR + ISR, jerarquía y enlazado interno, schema por tipo de página, 6 plantillas maestras con contenido único y revisión editorial humana.</p>
     </div>
   </div>
   <div class="foot"><span>Arquitectura de Experiencia · Anexo Dos I.1</span><span>12</span></div>
@@ -291,8 +370,10 @@
 
 <!-- 13 · Integraciones -->
 <section class="slide light">
-  <div class="kicker">2 · Alcance — Integraciones</div>
-  <h2>Un solo supuesto: su API estándar.</h2>
+  <div class="top-head">
+    <span class="kicker">2 · Alcance — Integraciones</span>
+    <h2>Un solo supuesto: su API estándar.</h2>
+  </div>
   <div class="body-wrap">
     <div class="two-col">
       <ul class="list">
@@ -312,8 +393,10 @@
 
 <!-- 14 · CMS -->
 <section class="slide light">
-  <div class="kicker">2 · Alcance — El CMS</div>
-  <h2>El contenido lo administra Sports World.</h2>
+  <div class="top-head">
+    <span class="kicker">2 · Alcance — El CMS</span>
+    <h2>El contenido lo administra Sports World.</h2>
+  </div>
   <div class="body-wrap">
     <div class="cards">
       <div class="card"><div class="num">Sí</div><h3>Lo que SW edita directo, sin código</h3><p>Textos y contenido de cualquier página, imágenes, coordenadas de cada club. Al guardar, la página publicada se actualiza sola — sin despliegues ni intervención técnica. CMS headless autoalojado en el servidor de Sports World.</p></div>
@@ -325,23 +408,23 @@
   <div class="foot"><span>Cláusulas Sexta y Octava · Anexo Dos III</span><span>14</span></div>
 </section>
 
-<!-- 15 · BES -->
+<!-- 15 · BES — título lateral -->
 <section class="slide light">
-  <div class="kicker">2 · Alcance — El agente BES</div>
-  <h2>BES: la experiencia ideal, conversando.</h2>
-  <div class="body-wrap">
-    <div class="two-col">
-      <ul class="list">
-        <li><span class="b">1</span><span><strong>Lleva al usuario a concluir su experiencia ideal, asistido:</strong> aplica el cuestionario conversando, resuelve las dudas en el camino para que el proceso no se abandone, y cierra con la <strong>visita agendada</strong>.</span></li>
-        <li><span class="b">2</span><span><strong>Resuelve cualquier duda del club</strong> — horarios, precios, clases, amenidades — con datos reales (nunca inventa), y escala a un humano cuando se lo piden.</span></li>
-        <li><span class="b">3</span><span><strong>Atiende el clic de publicidad en tiempo real:</strong> quien llega de un anuncio no deja sus datos para esperar una llamada — <strong>agenda su visita ahí mismo</strong>, en el sitio (A) o por WhatsApp (B). Junto con el brief al asesor, el mayor potencial de ventas adicionales del sistema.</span></li>
-        <li><span class="b">4</span><span><strong>Prepara el cierre:</strong> genera el brief del asesor, envía la experiencia ideal por correo al prospecto y los 2 recordatorios por WhatsApp (24 h y 2 h antes) por el número oficial.</span></li>
-      </ul>
-      <ul class="list">
-        <li><span class="b">·</span><span><strong>Tres puertas al mismo cuestionario:</strong> el sitio público (autoservicio), BES (voz y texto) y la consola interna de acceso restringido — operadores y asesores lo aplican en llamada o walk-in. Un lead llega al CRM idéntico sin importar el canal.</span></li>
-        <li><span class="b">·</span><span>Exclusiones expresas: telefonía y voz por WhatsApp; el canal conversacional de WhatsApp es el Proyecto B.</span></li>
-        <li><span class="b">·</span><span>Latencia conversacional objetivo <strong>&lt; 900 ms</strong>, viable si el API del cliente sostiene p95 &lt; 500 ms en lecturas y &lt; 800 ms en escritura. BES corre en las plataformas de sus proveedores, no en el servidor del sitio.</span></li>
-      </ul>
+  <div class="bgnum">B</div>
+  <div class="side">
+    <div class="head">
+      <span class="kicker">2 · Alcance — El agente BES</span>
+      <h2>BES: la experiencia ideal, conversando.</h2>
+      <p class="lead"><strong>Tres puertas al mismo cuestionario:</strong> el sitio público (autoservicio), BES (voz y texto) y la consola interna de acceso restringido. Un lead llega al CRM idéntico sin importar el canal.</p>
+      <p class="lead">Latencia conversacional objetivo &lt; 900 ms, viable si el API del cliente sostiene p95 &lt; 500 ms en lecturas y &lt; 800 ms en escritura. Exclusiones: telefonía y voz por WhatsApp.</p>
+    </div>
+    <div class="content">
+      <div class="bands">
+        <div class="band"><div class="bn">01</div><div><h3>Concluye la experiencia ideal, asistido</h3><p>Aplica el cuestionario conversando, resuelve las dudas en el camino para que el proceso no se abandone, y cierra con la visita agendada.</p></div></div>
+        <div class="band"><div class="bn">02</div><div><h3>Resuelve cualquier duda del club</h3><p>Horarios, precios, clases, amenidades — con datos reales (nunca inventa), y escala a un humano cuando se lo piden.</p></div></div>
+        <div class="band"><div class="bn">03</div><div><h3>Atiende el clic de publicidad en tiempo real</h3><p>Quien llega de un anuncio no deja sus datos para esperar una llamada — agenda su visita ahí mismo, en el sitio (A) o por WhatsApp (B). Junto con el brief al asesor, el mayor potencial de ventas adicionales del sistema.</p></div></div>
+        <div class="band"><div class="bn">04</div><div><h3>Prepara el cierre</h3><p>Genera el brief del asesor, envía la experiencia ideal por correo al prospecto y los 2 recordatorios por WhatsApp (24 h y 2 h antes) por el número oficial.</p></div></div>
+      </div>
     </div>
   </div>
   <div class="foot"><span>Estrategia Técnica §5, §11</span><span>15</span></div>
@@ -349,8 +432,10 @@
 
 <!-- 16 · Validación de entregables -->
 <section class="slide light">
-  <div class="kicker">2 · Alcance</div>
-  <h2>Criterios de validación de los entregables.</h2>
+  <div class="top-head">
+    <span class="kicker">2 · Alcance</span>
+    <h2>Criterios de validación de los entregables.</h2>
+  </div>
   <div class="body-wrap">
     <div class="two-col">
       <div>
@@ -375,8 +460,10 @@
 
 <!-- 17 · Contrato I -->
 <section class="slide light">
-  <div class="kicker">3 · Contrato — Observaciones 1 a 6</div>
-  <h2>Cada observación, resuelta en cláusula.</h2>
+  <div class="top-head">
+    <span class="kicker">3 · Contrato — Observaciones 1 a 6</span>
+    <h2>Cada observación, resuelta en cláusula.</h2>
+  </div>
   <div class="body-wrap">
     <table class="tight">
       <tr><th style="width:34%">Observación</th><th>Dónde y cómo queda resuelta</th></tr>
@@ -393,8 +480,10 @@
 
 <!-- 18 · Contrato II -->
 <section class="slide light">
-  <div class="kicker">3 · Contrato — Observaciones 7 a 11</div>
-  <h2>Propiedad, datos y economía.</h2>
+  <div class="top-head">
+    <span class="kicker">3 · Contrato — Observaciones 7 a 11</span>
+    <h2>Propiedad, datos y economía.</h2>
+  </div>
   <div class="body-wrap">
     <table class="tight">
       <tr><th style="width:34%">Observación</th><th>Dónde y cómo queda resuelta</th></tr>
@@ -409,27 +498,35 @@
   <div class="foot"><span>Contrato · Depósito de documentos</span><span>18</span></div>
 </section>
 
-<!-- 19 · Avances -->
+<!-- 19 · Avances — título lateral -->
 <section class="slide light">
-  <div class="kicker">4 · Avances</div>
-  <h2>Lo que ya está construido.</h2>
-  <div class="body-wrap">
-    <ul class="list">
-      <li><span class="b">A</span><span><strong>Documentación completa y auditada</strong> — el depósito en línea: auditoría, arquitectura de experiencia (mapa de las 148 páginas), estrategia técnica (middleware, migración DNS, BES, funnel), plan de ejecución, seguridad, gastos variables, los 5 documentos del BDS, contrato con cinco anexos, glosario e índice.</span></li>
-      <li><span class="b">B</span><span><strong>Contrato madurado con Sistemas</strong> — estándares del API reproducidos íntegros, middleware que evita desarrollos a la medida en el CRM, criterio "o similares", SLA de latencia, régimen de datos y servidor del cliente.</span></li>
-      <li><span class="b">C</span><span><strong>Demo funcional del cuestionario y la experiencia ideal</strong> — lógica y estructura completas: cuestionario adaptativo, motor de recomendación de club, experiencia ideal por IA, brief del asesor con contacto, reglas de membresía familiar y Multiclub. Verificable en el depósito.</span></li>
-      <li><span class="b">D</span><span><strong>Validaciones de Marketing Digital</strong> aplicadas y verificables en el demo.</span></li>
-      <li><span class="b">E</span><span><strong>Workshop discovery</strong> con líderes regionales — 157 de 200 asesores cubiertos.</span></li>
-      <li><span class="b">F</span><span><strong>15 entrevistas de campo</strong> en 13 clubes de cinco regiones — reporte completo en el depósito.</span></li>
-    </ul>
+  <div class="bgnum">6</div>
+  <div class="side">
+    <div class="head">
+      <span class="kicker">4 · Avances</span>
+      <h2>Lo que ya está construido.</h2>
+      <p class="lead">Seis frentes entregados y verificables en el depósito de documentos, antes de la firma.</p>
+    </div>
+    <div class="content">
+      <ul class="list">
+        <li><span class="b">A</span><span><strong>Documentación completa y auditada</strong> — auditoría, arquitectura de experiencia (mapa de las 148 páginas), estrategia técnica, plan de ejecución, seguridad, gastos variables, los 5 documentos del BDS, contrato con cinco anexos, glosario e índice.</span></li>
+        <li><span class="b">B</span><span><strong>Contrato madurado con Sistemas</strong> — estándares del API íntegros, middleware sin desarrollos a la medida, criterio "o similares", SLA de latencia, régimen de datos, servidor del cliente.</span></li>
+        <li><span class="b">C</span><span><strong>Demo funcional</strong> del cuestionario y la experiencia ideal — recomendación de club, experiencia por IA, brief del asesor, reglas de membresía. Verificable en el depósito.</span></li>
+        <li><span class="b">D</span><span><strong>Validaciones de Marketing Digital</strong> aplicadas y verificables en el demo.</span></li>
+        <li><span class="b">E</span><span><strong>Workshop discovery</strong> con líderes regionales — 157 de 200 asesores cubiertos.</span></li>
+        <li><span class="b">F</span><span><strong>15 entrevistas de campo</strong> en 13 clubes de cinco regiones — reporte completo en el depósito.</span></li>
+      </ul>
+    </div>
   </div>
   <div class="foot"><span>Depósito de documentos · Sección Entrevistas de Campo</span><span>19</span></div>
 </section>
 
 <!-- 20 · Decisiones -->
 <section class="slide light">
-  <div class="kicker">4 · Siguientes pasos</div>
-  <h2>Siete decisiones destraban el arranque.</h2>
+  <div class="top-head">
+    <span class="kicker">4 · Siguientes pasos</span>
+    <h2>Siete decisiones destraban el arranque.</h2>
+  </div>
   <div class="body-wrap">
     <table class="tight">
       <tr><th style="width:52%">Decisión</th><th>Responsable</th></tr>
@@ -446,15 +543,18 @@
   <div class="foot"><span>Anexo Uno · Cláusula Décima Tercera</span><span>20</span></div>
 </section>
 
-<!-- 21 · Cierre -->
+<!-- 21 · Cierre — declaración -->
 <section class="slide dark">
-  <div class="body-wrap">
-    <div class="kicker">Cierre</div>
-    <h1>La documentación está.<br>El demo funciona.<br>El contrato responde.</h1>
-    <p class="sub" style="margin-top:22px">Todo el detalle vive en el depósito de documentos del proyecto.<br>Final Upgrade AI · eric@finalupgrade.ai</p>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1">
+    <span class="kicker">Cierre</span>
+    <span class="kicker" style="color:#5A6078">Gracias</span>
+  </div>
+  <div class="statement">
+    <h1 style="font-size:clamp(30px,6.6vh,76px)">La documentación está.<br>El demo funciona.<br>El contrato responde.</h1>
+    <p class="lead" style="max-width:64ch">Todo el detalle vive en el depósito de documentos del proyecto.&ensp;·&ensp;Final Upgrade AI · eric@finalupgrade.ai</p>
     <div><a class="btn" href="../#roi" target="_blank" rel="noopener">Abrir la calculadora de ROI</a>&ensp;<a class="btn" href="../demo/index.html" target="_blank" rel="noopener">Abrir el demo</a></div>
   </div>
-  <div class="foot"><span>Sports World · Sesión con Sistemas</span><span>Gracias</span></div>
+  <div class="foot"><span>Sports World · Sesión con Sistemas</span><span>Final Upgrade AI</span></div>
 </section>
 
 </div>
