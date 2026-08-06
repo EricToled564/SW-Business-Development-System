@@ -162,10 +162,10 @@
     </div>
     <div class="content">
       <div class="bands">
-        <div class="band fg"><div class="bn">1</div><div><h3>Contexto, diagnóstico y objetivos del proyecto</h3><p>El diagnóstico que dio origen, la solución que proponemos y los resultados esperados.</p></div></div>
-        <div class="band fg"><div class="bn">2</div><div><h3>Alcance funcional y entregables</h3><p>Páginas por club, integraciones, requerimientos técnicos, CMS, el agente BES y los criterios de validación.</p></div></div>
-        <div class="band fg"><div class="bn">3</div><div><h3>Observaciones al contrato</h3><p>Las once observaciones identificadas, con la cláusula exacta que resuelve cada una.</p></div></div>
-        <div class="band fg"><div class="bn">4</div><div><h3>Avances y siguientes pasos</h3><p>Lo construido a la fecha, las decisiones requeridas y los responsables.</p></div></div>
+        <div class="band fg"><div class="bn">01</div><div><h3>Contexto, diagnóstico y objetivos del proyecto</h3><p>El diagnóstico que dio origen, la solución que proponemos y los resultados esperados.</p></div></div>
+        <div class="band fg"><div class="bn">02</div><div><h3>Alcance funcional y entregables</h3><p>Páginas por club, integraciones, requerimientos técnicos, CMS, el agente BES y los criterios de validación.</p></div></div>
+        <div class="band fg"><div class="bn">03</div><div><h3>Observaciones al contrato</h3><p>Las once observaciones identificadas, con la cláusula exacta que resuelve cada una.</p></div></div>
+        <div class="band fg"><div class="bn">04</div><div><h3>Avances y siguientes pasos</h3><p>Lo construido a la fecha, las decisiones requeridas y los responsables.</p></div></div>
       </div>
     </div>
   </div>
@@ -261,23 +261,20 @@
 <!-- 7 · Validación de campo -->
 <section class="slide light">
   <div class="meta rv"><span><span class="a">01</span>&ensp;Diagnóstico</span><span>Validación de campo</span></div>
-  <div class="side">
-    <div class="head">
-      <span class="kicker rv">Workshop + entrevistas</span>
-      <h2 class="rv">La operación confirmó el diagnóstico.</h2>
-      <div class="stats rv" style="grid-template-columns:1fr 1fr;margin-top:clamp(14px,2.6vh,26px)">
-        <div class="stat"><div class="n">157<span style="font-size:.45em">/200</span></div><div class="l">asesores cubiertos (78.5%)</div></div>
-        <div class="stat"><div class="n"><em>40×</em></div><div class="l">variabilidad en conversión reportada</div></div>
-        <div class="stat"><div class="n">15</div><div class="l">entrevistas: 6 líderes, 9 asesores</div></div>
-        <div class="stat"><div class="n">13</div><div class="l">clubes, cinco regiones</div></div>
-      </div>
+  <div class="top-head">
+    <h2 class="rv">La operación confirmó el diagnóstico.</h2>
+  </div>
+  <div class="body-wrap">
+    <div class="stats rv" style="grid-template-columns:repeat(4,1fr);margin-bottom:clamp(14px,2.8vh,30px)">
+      <div class="stat"><div class="n">157<span style="font-size:.45em">/200</span></div><div class="l">asesores cubiertos por el pre-workshop (78.5%)</div></div>
+      <div class="stat"><div class="n">15</div><div class="l">entrevistas: 6 líderes y 9 asesores</div></div>
+      <div class="stat"><div class="n">13</div><div class="l">clubes, en cinco regiones del país</div></div>
+      <div class="stat"><div class="n"><em>40×</em></div><div class="l">variabilidad en la conversión reportada</div></div>
     </div>
-    <div class="content">
-      <ul class="list">
-        <li class="fg"><span class="b">·</span><span>Ninguno de los 15 entrevistados tiene un método para identificar el objetivo real del cliente — la pérdida ocurre en el <strong>primer contacto</strong>.</span></li>
-        <li class="fg"><span class="b">·</span><span>La objeción de <strong>precio</strong> aparece en las <span class="mk">15 de 15 entrevistas</span>: el valor del ecosistema no se logra articular.</span></li>
-        <li class="fg"><span class="b">·</span><span>El 99% del seguimiento corre por <strong>WhatsApp personal</strong>, que se bloquea a los 50–60 mensajes por día. 8 de 15 piden leads mejor cualificados como prioridad número uno.</span></li>
-      </ul>
+    <div class="bands">
+      <div class="band fg"><div class="bn">01</div><div><h3>Nadie identifica el objetivo real del cliente</h3><p>Ninguno de los 15 entrevistados tiene un método para descubrirlo — la pérdida ocurre en el <strong>primer contacto</strong>, cuando el asesor intenta cerrar antes de entender.</p></div></div>
+      <div class="band fg"><div class="bn">02</div><div><h3>La objeción de precio es universal</h3><p>Aparece en las <span class="mk">15 de 15 entrevistas</span>: el valor del ecosistema no se logra articular frente a competencia más barata.</p></div></div>
+      <div class="band fg"><div class="bn">03</div><div><h3>El canal de venta opera bloqueado</h3><p>El 99% del seguimiento corre por <strong>WhatsApp personal</strong>, que se bloquea a los 50–60 mensajes por día. 8 de 15 piden leads mejor cualificados como su prioridad número uno.</p></div></div>
     </div>
   </div>
   <div class="key fg"><span class="kl">La clave</span><span class="kt">Ni el sitio ni la operación entienden el objetivo del cliente. Eso, exactamente, es lo que el proyecto construye.</span></div>
@@ -421,14 +418,14 @@
   <div class="body-wrap">
     <div class="two-col">
       <ul class="list">
-        <li class="fg"><span class="b">·</span><span><strong>Middleware a cargo del proveedor</strong> consume el API HTTP RESTful estándar del CRM: idempotencia, caché, reintentos, búsquedas, precios. <span class="mk"><strong>Sports World no desarrolla puntos de acceso a la medida.</strong></span></span></li>
-        <li class="fg"><span class="b">·</span><span><strong>Lecturas:</strong> estatus de club, coordenadas, amenidades, clases y horarios, tarifas y promociones — precios y clases en tiempo real, el resto con sincronización diaria.</span></li>
-        <li class="fg"><span class="b">·</span><span><strong>Escritura:</strong> el lead cualificado con día y horario de visita, idempotente por sesión. La visita no se reserva contra ningún sistema: se envía por correo al club.</span></li>
+        <li class="fg"><span class="b">01</span><span><strong>Middleware a cargo del proveedor</strong> consume el API HTTP RESTful estándar del CRM: idempotencia, caché, reintentos, búsquedas, precios. <span class="mk"><strong>Sports World no desarrolla puntos de acceso a la medida.</strong></span></span></li>
+        <li class="fg"><span class="b">02</span><span><strong>Lecturas:</strong> estatus de club, coordenadas, amenidades, clases y horarios, tarifas y promociones — precios y clases en tiempo real, el resto con sincronización diaria.</span></li>
+        <li class="fg"><span class="b">03</span><span><strong>Escritura:</strong> el lead cualificado con día y horario de visita, idempotente por sesión. La visita no se reserva contra ningún sistema: se envía por correo al club.</span></li>
       </ul>
       <ul class="list">
-        <li class="fg"><span class="b">·</span><span><strong>El cierre del funnel:</strong> lectura del sistema donde se capturan las membresías nuevas — por el API del CRM, o por entrega periódica de la base con <strong>cruce dentro de la infraestructura de SW</strong> (solo agregados al dashboard).</span></li>
-        <li class="fg"><span class="b">·</span><span><strong>Lo que ese acceso habilita:</strong> rastrear la cancelación (attrition) y cruzarla con los perfiles — <strong>qué segmento es más probable que cancele</strong>, por objetivo, composición, club y canal.</span></li>
-        <li class="fg"><span class="b">·</span><span>Además: GA4 + Search Console instrumentados y gestión de las 49 fichas de Google Business por la API oficial.</span></li>
+        <li class="fg"><span class="b">04</span><span><strong>El cierre del funnel:</strong> lectura del sistema donde se capturan las membresías nuevas — por el API del CRM, o por entrega periódica de la base con <strong>cruce dentro de la infraestructura de SW</strong> (solo agregados al dashboard).</span></li>
+        <li class="fg"><span class="b">05</span><span><strong>Lo que ese acceso habilita:</strong> rastrear la cancelación (attrition) y cruzarla con los perfiles — <strong>qué segmento es más probable que cancele</strong>, por objetivo, composición, club y canal.</span></li>
+        <li class="fg"><span class="b">06</span><span><strong>Medición:</strong> GA4 + Search Console instrumentados y gestión de las 49 fichas de Google Business por la API oficial.</span></li>
       </ul>
     </div>
   </div>
@@ -519,9 +516,9 @@
         <p class="note">Cada etapa se aprueba por escrito sobre <strong>enlaces de vista previa</strong>. Plazos de respuesta pactados: 48 horas hábiles por gate.</p>
       </div>
       <ul class="list">
-        <li class="fg"><span class="b">·</span><span><strong>Quality gates automatizados en cada cambio:</strong> pruebas, Core Web Vitals, accesibilidad WCAG 2.2 AA, validación de schema. <span class="mk">Si un control falla, no se publica.</span></span></li>
-        <li class="fg"><span class="b">·</span><span><strong>Al lanzamiento:</strong> verificación de los KPIs con herramienta externa (Search Console, Semrush, PageSpeed, Rich Results).</span></li>
-        <li class="fg"><span class="b">·</span><span><strong>Después:</strong> estabilización de 2 a 4 semanas con corrección sin costo.</span></li>
+        <li class="fg"><span class="b">01</span><span><strong>Quality gates automatizados en cada cambio:</strong> pruebas, Core Web Vitals, accesibilidad WCAG 2.2 AA, validación de schema. <span class="mk">Si un control falla, no se publica.</span></span></li>
+        <li class="fg"><span class="b">02</span><span><strong>Al lanzamiento:</strong> verificación de los KPIs con herramienta externa (Search Console, Semrush, PageSpeed, Rich Results).</span></li>
+        <li class="fg"><span class="b">03</span><span><strong>Después:</strong> estabilización de 2 a 4 semanas con corrección sin costo.</span></li>
       </ul>
     </div>
   </div>
