@@ -49,10 +49,10 @@
   .dark .lead{color:var(--muted-d)}
 
   .top-head{margin:clamp(12px,2.4vh,26px) 0 clamp(10px,2vh,22px);position:relative;z-index:3}
-  .body-wrap{flex:1;display:flex;flex-direction:column;justify-content:flex-start;padding-top:clamp(6px,1.4vh,16px);min-height:0;position:relative;z-index:3}
-  .side{flex:1;display:grid;grid-template-columns:minmax(240px,32%) 1fr;gap:clamp(24px,4.5vw,72px);min-height:0;position:relative;z-index:3;align-items:start;padding-top:clamp(14px,2.8vh,30px)}
+  .body-wrap{flex:1;display:flex;flex-direction:column;justify-content:space-evenly;gap:clamp(8px,1.6vh,18px);min-height:0;position:relative;z-index:3}
+  .side{flex:1;display:grid;grid-template-columns:minmax(240px,32%) 1fr;gap:clamp(24px,4.5vw,72px);min-height:0;position:relative;z-index:3;align-items:stretch;padding-top:clamp(14px,2.8vh,30px)}
   .side .head .kicker{display:block;margin-bottom:clamp(8px,1.5vh,16px)}
-  .side .content{align-self:start;min-width:0}
+  .side .content{align-self:stretch;min-width:0;display:flex;flex-direction:column;justify-content:space-evenly;height:100%}
   .statement{flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(8px,3vh,30px);position:relative;z-index:3}
 
   .bgnum{position:absolute;right:clamp(0px,2.5vw,40px);top:-6vh;font-family:var(--serif);font-weight:700;font-variation-settings:'opsz' 144;font-size:clamp(180px,50vh,480px);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(20,21,25,.10);z-index:1;user-select:none;pointer-events:none}
@@ -76,7 +76,7 @@
   .hero-stat .n{font-size:clamp(84px,20vh,215px);font-weight:640;letter-spacing:-.03em}
   .hero-stat .l{font-size:clamp(14px,2.1vh,18px);max-width:24ch}
 
-  .bands{display:flex;flex-direction:column}
+  .bands{display:flex;flex-direction:column;flex:1;justify-content:space-evenly}
   .band{display:grid;grid-template-columns:clamp(62px,8.4vw,118px) 1fr;gap:clamp(14px,2.6vw,36px);padding:clamp(11px,2.2vh,22px) 0;border-top:1px solid var(--line);align-items:start}
   .dark .band{border-color:var(--line-dark)}
   .band:last-child{border-bottom:1px solid var(--line)}
@@ -110,7 +110,7 @@
   .card h3{font-size:clamp(15.5px,2.4vh,21px);font-weight:700;margin:7px 0 8px;line-height:1.22}
   .card p{font-size:clamp(13px,1.95vh,17px);line-height:1.55;color:#464A55}
   .dark .card p{color:#A7ADC2}
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2.4vw,30px)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2.4vw,30px);flex:1;align-content:center}
 
   .list{list-style:none}
   .list li{font-size:clamp(13.5px,2.05vh,18px);line-height:1.55;padding:clamp(7px,1.35vh,13px) 0;border-bottom:1px solid var(--line);display:flex;gap:14px}
