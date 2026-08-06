@@ -102,6 +102,9 @@
   td strong{font-weight:700}
   td.hit{color:var(--accent);font-weight:700;white-space:nowrap;font-family:var(--serif);font-size:clamp(14px,2.15vh,19px)}
   .tight td{font-size:clamp(12px,1.75vh,15.5px);padding:clamp(6px,1.05vh,10px) 12px clamp(6px,1.05vh,10px) 0}
+  .roomy td{font-size:clamp(13px,1.95vh,17px);padding:clamp(11px,2.1vh,20px) 14px clamp(11px,2.1vh,20px) 0}
+  .roomy .bname{font-weight:700;display:block;line-height:1.25}
+  .roomy .bref{display:block;font-size:clamp(10px,1.35vh,12px);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:4px}
 
   .two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,64px)}
   .card{border-top:2px solid var(--ink);padding-top:clamp(10px,1.8vh,18px)}
@@ -444,15 +447,15 @@
     <h2 class="rv">Lo que necesitamos de Sports World.</h2>
   </div>
   <div class="body-wrap">
-    <table class="tight rv">
-      <tr><th style="width:12%">Bloque</th><th>Qué entrega Sports World (Anexo Uno)</th><th style="width:18%">Cuándo</th></tr>
-      <tr><td class="hit">0</td><td>Respuestas de descubrimiento: API gateway corporativo, ambiente de pruebas del CRM, proveedor de telefonía/PBX, sistema de identidad (SSO), herramienta de incidentes, calendario de mantenimientos y compromisos del equipo de CRM</td><td>Antes del inicio</td></tr>
-      <tr><td class="hit">A</td><td>Documentación del API del CRM en OpenAPI/Swagger o Postman, credenciales del sandbox vía bóveda, esquemas JSON reales de 3 clubes y 5 clases, y nominación del <strong>Project Owner técnico</strong></td><td><strong>Día 1 — arranca el reloj</strong></td></tr>
-      <tr><td class="hit">B</td><td>Credenciales productivas en cuenta de servicio, autenticación (Bearer / OAuth 2.0 / JWT o equivalente), idempotencia en creación de prospecto, notificación de eventos (webhooks firmados o polling), SLAs y límites de tasa del API</td><td>Fin de semana 2</td></tr>
-      <tr><td class="hit">C</td><td>Accesos del sitio actual: panel de hospedaje, registrador del dominio, CDN, repositorio y CMS; ventana de cutover con TTL reducido</td><td>Semana 4</td></tr>
-      <tr><td class="hit">D</td><td>Puntos de acceso para BES: consulta de miembro, búsqueda por amenidad y por geolocalización, creación de prospecto, base de conocimiento y estrategia de escalación a humano</td><td>En paralelo</td></tr>
-      <tr><td class="hit">E</td><td>Marketing: brand book, activos visuales, contenidos vigentes, accesos Google (GA4, Search Console, Business Profile, Tag Manager), Meta Business y TikTok Ads, avisos de privacidad</td><td>En paralelo</td></tr>
-      <tr><td class="hit">F</td><td>Servidor: runtime moderno (Node.js LTS o contenedores), HTTPS/TLS, acceso de despliegue, staging, respaldos, capacidad y monitoreo</td><td>Antes del despliegue</td></tr>
+    <table class="roomy rv">
+      <tr><th style="width:22%">Entrega</th><th>Qué incluye</th><th style="width:16%">Cuándo</th></tr>
+      <tr><td><span class="bname">Descubrimiento</span><span class="bref">Bloque 0 · Anexo Uno</span></td><td>API gateway corporativo, ambiente de pruebas del CRM, proveedor de telefonía/PBX, sistema de identidad (SSO), herramienta de incidentes y calendario de mantenimientos</td><td>Antes del inicio</td></tr>
+      <tr><td><span class="bname">Documentación y sandbox</span><span class="bref">Bloque A · Anexo Uno</span></td><td>API del CRM en OpenAPI/Swagger o Postman, credenciales del sandbox, esquemas JSON reales de 3 clubes y 5 clases, y nominación del <strong>Project Owner técnico</strong></td><td><strong>Día 1 — arranca el reloj</strong></td></tr>
+      <tr><td><span class="bname">Credenciales productivas</span><span class="bref">Bloque B · Anexo Uno</span></td><td>Cuenta de servicio, autenticación (Bearer / OAuth 2.0 / JWT), idempotencia en creación de prospecto, webhooks firmados o polling, SLAs y límites de tasa del API</td><td>Fin de semana 2</td></tr>
+      <tr><td><span class="bname">Accesos del sitio actual</span><span class="bref">Bloque C · Anexo Uno</span></td><td>Panel de hospedaje, registrador del dominio, CDN, repositorio y CMS; ventana de cutover con TTL reducido</td><td>Semana 4</td></tr>
+      <tr><td><span class="bname">Puntos de acceso BES</span><span class="bref">Bloque D · Anexo Uno</span></td><td>Consulta de miembro, búsqueda por amenidad y geolocalización, creación de prospecto, base de conocimiento y escalación a humano</td><td>En paralelo</td></tr>
+      <tr><td><span class="bname">Marketing y accesos</span><span class="bref">Bloque E · Anexo Uno</span></td><td>Brand book, activos visuales, contenidos vigentes, accesos Google (GA4, Search Console, Business Profile, Tag Manager), Meta Business y TikTok Ads</td><td>En paralelo</td></tr>
+      <tr><td><span class="bname">Servidor</span><span class="bref">Bloque F · Anexo Uno</span></td><td>Runtime moderno (Node.js LTS o contenedores), HTTPS/TLS, acceso de despliegue, staging, respaldos, capacidad y monitoreo</td><td>Antes del despliegue</td></tr>
     </table>
   </div>
   <div class="key fg"><span class="kl">La clave</span><span class="kt">Con los Bloques 0 y A entregados, arranca el reloj de las 8 semanas. Todo se sigue en el tablero del depósito, con semáforo.</span></div>
