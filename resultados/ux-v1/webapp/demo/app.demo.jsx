@@ -1123,6 +1123,17 @@ function ResultPage({ data, onRestart, onSchedule }) {
   const alberca_note = active.alberca_note;
   const experienceContext = active.experienceContext;
 
+  // Al agendar, los cambios hechos en esta pantalla (club o clases) viajan al resto del flujo
+  const schedule = () => onSchedule({
+    club: active.club,
+    otrosClubes: active.otros,
+    block1: active.block1,
+    block2: active.block2,
+    top2: active.top2,
+    alberca_note: active.alberca_note,
+    experienceContext: active.experienceContext,
+  });
+
   const isFamily = answers.Q14 === "Yo y mis hijos" || answers.Q14 === "La familia completa";
   const withPartner = answers.Q14 === "Con mi pareja";
   const familyLike = isFamily || withPartner;
@@ -1406,7 +1417,7 @@ function ResultPage({ data, onRestart, onSchedule }) {
               <p style={{ fontSize: "0.9375rem", fontWeight: 800, marginBottom: "0.1875rem", color: BRAND.black }}>Conoce el club y valida tu experiencia con un Advisor.</p>
               <p style={{ fontSize: "0.8125rem", color: BRAND.gray4 }}>La visita guiada permite ajustar horarios, actividades y nivel de acompañamiento.</p>
             </div>
-            <button onClick={onSchedule} style={{ background: BRAND.red, color: BRAND.white, padding: "0.75rem 1.75rem", borderRadius: "3px", fontSize: "0.8125rem", fontWeight: 800, letterSpacing: "0.05em", border: "none", cursor: "pointer", fontFamily: "inherit", whiteSpace: "nowrap" }}>AGENDAR VISITA GUIADA</button>
+            <button onClick={schedule} style={{ background: BRAND.red, color: BRAND.white, padding: "0.75rem 1.75rem", borderRadius: "3px", fontSize: "0.8125rem", fontWeight: 800, letterSpacing: "0.05em", border: "none", cursor: "pointer", fontFamily: "inherit", whiteSpace: "nowrap" }}>AGENDAR VISITA GUIADA</button>
           </section>
         </div>
 
@@ -1572,7 +1583,7 @@ function ResultPage({ data, onRestart, onSchedule }) {
           <p style={{ fontSize: "0.875rem", color: BRAND.gray4, lineHeight: 1.55, marginTop: "1.25rem", marginBottom: "1.25rem", maxWidth: "760px" }}>{llm.infrastructure_argument}</p>
 
           <div style={{ textAlign: "center", paddingTop: "1rem", borderTop: "1px solid " + BRAND.gray2 }}>
-            <button onClick={onSchedule} style={{ display: "inline-block", background: BRAND.red, color: BRAND.white, fontSize: "0.95rem", fontWeight: 700, padding: "0.875rem 2.25rem", borderRadius: "4px", border: "none", textDecoration: "none", letterSpacing: "0.02em", cursor: "pointer", fontFamily: "inherit" }}>Agendar visita guiada</button>
+            <button onClick={schedule} style={{ display: "inline-block", background: BRAND.red, color: BRAND.white, fontSize: "0.95rem", fontWeight: 700, padding: "0.875rem 2.25rem", borderRadius: "4px", border: "none", textDecoration: "none", letterSpacing: "0.02em", cursor: "pointer", fontFamily: "inherit" }}>Agendar visita guiada</button>
             <div style={{ marginTop: "1rem" }}>
               <button onClick={onRestart} style={{ color: BRAND.gray4, textDecoration: "none", fontWeight: 500, fontSize: "0.75rem", background: "none", border: "none", cursor: "pointer" }}>Reiniciar cuestionario</button>
             </div>
@@ -2165,7 +2176,7 @@ function App() {
   if (phase === "loading") return <Loading msg={loadingMsg} />;
   if (phase === "error") return <ErrorScreen msg={error} onRetry={() => { setPhase("questionnaire"); setStep(questions.length - 1); }} onRestart={reset} />;
   if (phase === "contact_capture") return <ContactCaptureScreen data={{ answers }} onContinue={(c) => { setContact(c); runResolve(c); }} onBack={() => setPhase("questionnaire")} />;
-  if (phase === "result" && result) return <ResultPage data={result} onRestart={reset} onSchedule={() => setPhase("schedule")} />;
+  if (phase === "result" && result) return <ResultPage data={result} onRestart={reset} onSchedule={(over) => { if (over) setResult((r) => ({ ...r, ...over })); setPhase("schedule"); }} />;
   if (phase === "schedule" && result) return <ScheduleScreen data={result} onConfirm={(appt) => { setAppointment(appt); setPhase("briefing"); }} onBack={() => setPhase("result")} />;
   if (phase === "briefing" && result && appointment) return <BriefingScreen data={result} appointment={appointment} onRestart={reset} onBack={() => setPhase("schedule")} />;
 

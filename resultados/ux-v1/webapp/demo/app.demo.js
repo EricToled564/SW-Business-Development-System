@@ -2911,6 +2911,17 @@ function ResultPage({
   const otrosClubes = active.otros;
   const alberca_note = active.alberca_note;
   const experienceContext = active.experienceContext;
+
+  // Al agendar, los cambios hechos en esta pantalla (club o clases) viajan al resto del flujo
+  const schedule = () => onSchedule({
+    club: active.club,
+    otrosClubes: active.otros,
+    block1: active.block1,
+    block2: active.block2,
+    top2: active.top2,
+    alberca_note: active.alberca_note,
+    experienceContext: active.experienceContext
+  });
   const isFamily = answers.Q14 === "Yo y mis hijos" || answers.Q14 === "La familia completa";
   const withPartner = answers.Q14 === "Con mi pareja";
   const familyLike = isFamily || withPartner;
@@ -3580,7 +3591,7 @@ function ResultPage({
       color: BRAND.gray4
     }
   }, "La visita guiada permite ajustar horarios, actividades y nivel de acompañamiento.")), /*#__PURE__*/React.createElement("button", {
-    onClick: onSchedule,
+    onClick: schedule,
     style: {
       background: BRAND.red,
       color: BRAND.white,
@@ -4282,7 +4293,7 @@ function ResultPage({
       borderTop: "1px solid " + BRAND.gray2
     }
   }, /*#__PURE__*/React.createElement("button", {
-    onClick: onSchedule,
+    onClick: schedule,
     style: {
       display: "inline-block",
       background: BRAND.red,
@@ -5818,7 +5829,13 @@ function App() {
   if (phase === "result" && result) return /*#__PURE__*/React.createElement(ResultPage, {
     data: result,
     onRestart: reset,
-    onSchedule: () => setPhase("schedule")
+    onSchedule: over => {
+      if (over) setResult(r => ({
+        ...r,
+        ...over
+      }));
+      setPhase("schedule");
+    }
   });
   if (phase === "schedule" && result) return /*#__PURE__*/React.createElement(ScheduleScreen, {
     data: result,
