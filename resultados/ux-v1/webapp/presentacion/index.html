@@ -66,6 +66,11 @@
   .list .b{color:var(--accent);font-family:var(--serif);font-weight:700;min-width:1.4em}
   .note{font-size:clamp(11px,1.55vh,14px);color:var(--muted);margin-top:clamp(10px,2vh,20px);line-height:1.5;max-width:90ch}
 
+  .btn{display:inline-block;align-self:flex-start;margin-top:clamp(14px,2.5vh,26px);padding:12px 24px;border:1px solid var(--accent);color:var(--paper);text-decoration:none;font-size:clamp(12px,1.7vh,15px);letter-spacing:.1em;text-transform:uppercase}
+  .btn:hover{background:var(--accent);color:#fff}
+  .light .btn{color:var(--ink)}
+  .light .btn:hover{color:#fff}
+
   /* nav */
   .hud{position:fixed;bottom:0;left:0;right:0;height:3px;background:transparent;z-index:10}
   .hud .bar{height:100%;background:var(--accent);width:0%;transition:width .25s ease}
@@ -176,18 +181,33 @@
   <div class="foot"><span>Entrevistas de campo · Depósito</span><span>06</span></div>
 </section>
 
-<!-- 7 · Propuesta de valor -->
+<!-- 7 · La experiencia ideal (el centro) -->
 <section class="slide dark">
-  <div class="kicker">1 · La propuesta</div>
-  <h2>Un cuestionario.<br>Una experiencia ideal.<br>Todo canal.</h2>
+  <div class="kicker">1 · La propuesta — el centro del sistema</div>
+  <h2>El centro no es el cuestionario.<br>Es la experiencia ideal.</h2>
+  <div class="body-wrap">
+    <div class="two-col">
+      <div class="card"><div class="num">→ Consumidor</div><h3 style="color:var(--paper)">La garantía de que tenemos justo lo que necesita</h3><p>La experiencia ideal usa nuestra infraestructura — los datos vivos de los 49 clubes, sus clases y sus amenidades — para responderle al prospecto con precisión: este es tu club, estas son tus clases, esto es lo que Sports World tiene para tus objetivos.</p></div>
+      <div class="card"><div class="num">→ Fuerza de ventas</div><h3 style="color:var(--paper)">Un documento hiperpersonalizado para cerrar</h3><p>El mismo motor produce el brief del asesor: el perfil del prospecto, sus objetivos declarados, sus intereses y las sugerencias concretas de cómo conducir la venta — antes de que el prospecto pise el club.</p></div>
+    </div>
+    <p class="note" style="color:#9AA1B5">El cuestionario es solo el instrumento que la produce — se aplica una vez, en cualquier canal.</p>
+    <a class="btn" href="../demo/index.html" target="_blank" rel="noopener">Abrir el demo · cuestionario y experiencia ideal</a>
+  </div>
+  <div class="foot"><span>Arquitectura de Experiencia · Depósito</span><span>07</span></div>
+</section>
+
+<!-- 8 · Los canales -->
+<section class="slide dark">
+  <div class="kicker">1 · La propuesta — los canales que la entregan</div>
+  <h2>Dos proyectos, una sola experiencia.</h2>
   <div class="body-wrap">
     <div class="two-col">
       <div class="card"><div class="num">A</div><h3 style="color:var(--paper)">Rediseño Web · 8 semanas</h3><p>Sitio de 148 páginas rastreable por Google (SSR), el agente BES por voz y texto en el canal web, integración con el CRM vía middleware, y el funnel con dashboard de medición de punta a punta.</p></div>
-      <div class="card"><div class="num">B</div><h3 style="color:var(--paper)">Business Development System · 8 semanas, en paralelo</h3><p>El mismo cuestionario extendido a WhatsApp: leads de campañas atendidos por operadores humanos en tiempo real, con BES de respaldo 24/7 — ataca la causa raíz de la baja conversión: el tiempo al primer contacto.</p></div>
+      <div class="card"><div class="num">B</div><h3 style="color:var(--paper)">Business Development System · 8 semanas, en paralelo</h3><p>La misma experiencia ideal extendida a WhatsApp: leads de campañas atendidos por operadores humanos en tiempo real, con BES de respaldo 24/7 — ataca la causa raíz de la baja conversión: el tiempo al primer contacto.</p></div>
     </div>
-    <p class="note" style="color:#9AA1B5">En todos los caminos el resultado es el mismo: cuestionario, experiencia ideal, escritura idempotente al CRM y brief automático al asesor con el perfil del prospecto y cómo conducir la venta.</p>
+    <p class="note" style="color:#9AA1B5">En todos los caminos el resultado es el mismo: experiencia ideal para el prospecto, escritura idempotente al CRM y brief automático al asesor.</p>
   </div>
-  <div class="foot"><span>Resumen ejecutivo · Depósito</span><span>07</span></div>
+  <div class="foot"><span>Resumen ejecutivo · Depósito</span><span>08</span></div>
 </section>
 
 <!-- 8 · Resultados esperados -->
@@ -206,7 +226,7 @@
     </table>
     <p class="note">Complemento no vinculante (Anexo Cuatro, targets aspiracionales): tráfico mensual 80,000 → 120,000–160,000 · 1,800–3,200 cuestionarios/mes · 600–1,000 visitas agendadas/mes. La calculadora de ROI del depósito modela el retorno con supuestos ajustables por Sports World.</p>
   </div>
-  <div class="foot"><span>Contrato · Anexo Dos, Sección IV</span><span>08</span></div>
+  <div class="foot"><span>Contrato · Anexo Dos, Sección IV</span><span>09</span></div>
 </section>
 
 <!-- 9 · Alcance -->
@@ -236,7 +256,7 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Arquitectura de Experiencia · Anexo Dos I.1</span><span>09</span></div>
+  <div class="foot"><span>Arquitectura de Experiencia · Anexo Dos I.1</span><span>10</span></div>
 </section>
 
 <!-- 10 · Integraciones -->
@@ -257,7 +277,7 @@
       </ul>
     </div>
   </div>
-  <div class="foot"><span>Estrategia Técnica §2, §10 · Anexo Uno</span><span>10</span></div>
+  <div class="foot"><span>Estrategia Técnica §2, §10 · Anexo Uno</span><span>11</span></div>
 </section>
 
 <!-- 11 · CMS -->
@@ -270,8 +290,9 @@
       <div class="card"><div class="num">No</div><h3>Lo que no se edita ahí — por diseño</h3><p>Tarifas, descuentos y promociones: el motor de precios las extrae automáticamente del CRM y las resuelve por club, ciudad o nivel nacional. El sitio nunca contradice al sistema comercial.</p></div>
       <div class="card"><div class="num">＆</div><h3>Mantenimiento vs. edición</h3><p>El mantenimiento lo hace el proveedor bajo la iguala — técnico, BES, sección de administración, soporte 24/7 con SLA. La edición directa es una facultad de SW, no una obligación. Lo que requiera intervención va contra la bolsa de 8 horas mensuales.</p></div>
     </div>
+    <p class="note"><strong>Cómo se navega el panel:</strong> el CMS es el espejo de la arquitectura del sitio — secciones por nivel (Clubes · Clases · Amenidades · Perfiles · Membresías · Blog · Home), cada página es una entrada con nombre propio, con buscador por nombre y vista previa del cambio antes de publicar. Quien quiere cambiar una foto o el texto de la ficha Santa Fe entra a Clubes, escribe "Santa Fe" y edita — sin conocer la estructura técnica del sitio. (Horarios, tarifas y clases no se tocan aquí: llegan solos desde el CRM.)</p>
   </div>
-  <div class="foot"><span>Cláusulas Sexta y Octava · Anexo Dos III</span><span>11</span></div>
+  <div class="foot"><span>Cláusulas Sexta y Octava · Anexo Dos III</span><span>12</span></div>
 </section>
 
 <!-- 12 · Perfilamiento + BES -->
@@ -287,12 +308,13 @@
       </ul>
       <ul class="list">
         <li><span class="b">·</span><span>Cada camino produce lo mismo: <strong>experiencia ideal + lead en el CRM + brief del asesor</strong>.</span></li>
+        <li><span class="b">·</span><span><strong>Menús adaptativos:</strong> el cuestionario se adapta a la puerta de entrada — omite lo que la página de origen ya reveló, conjuga su copy y ajusta sus opciones dinámicamente — y el resolver de club <strong>prioriza la experiencia ideal sobre la mera cercanía</strong>.</span></li>
         <li><span class="b">·</span><span>BES envía <strong>2 recordatorios por WhatsApp</strong> (24 h y 2 h antes) por el número oficial. Exclusiones expresas: telefonía y voz por WhatsApp; el canal conversacional de WhatsApp es el Proyecto B.</span></li>
         <li><span class="b">·</span><span>Latencia conversacional objetivo <strong>&lt; 900 ms</strong>, viable si el API del cliente sostiene p95 &lt; 500 ms en lecturas y &lt; 800 ms en escritura. BES corre en las plataformas de sus proveedores, no en el servidor del sitio.</span></li>
       </ul>
     </div>
   </div>
-  <div class="foot"><span>Estrategia Técnica §5, §11</span><span>12</span></div>
+  <div class="foot"><span>Estrategia Técnica §5, §11</span><span>13</span></div>
 </section>
 
 <!-- 13 · Validación de entregables -->
@@ -318,7 +340,7 @@
       </ul>
     </div>
   </div>
-  <div class="foot"><span>Cláusula Décima · Anexo Dos I.4</span><span>13</span></div>
+  <div class="foot"><span>Cláusula Décima · Anexo Dos I.4</span><span>14</span></div>
 </section>
 
 <!-- 14 · Contrato I -->
@@ -336,7 +358,7 @@
       <tr><td><strong>SLA e incidencias críticas</strong></td><td><strong>Séptima + Anexo Cinco</strong> — soporte 24/7 con ticket; crítico: respuesta 15–30 min, resolución objetivo 4 h. Tabla ajustable de común acuerdo 15 días tras la firma.</td></tr>
     </table>
   </div>
-  <div class="foot"><span>Contrato · Depósito de documentos</span><span>14</span></div>
+  <div class="foot"><span>Contrato · Depósito de documentos</span><span>15</span></div>
 </section>
 
 <!-- 15 · Contrato II -->
@@ -354,7 +376,7 @@
     </table>
     <p class="note">Cuando Sistemas comparta su listado detallado de observaciones, se cruza punto por punto con este mismo formato y se alinea con Legal.</p>
   </div>
-  <div class="foot"><span>Contrato · Depósito de documentos</span><span>15</span></div>
+  <div class="foot"><span>Contrato · Depósito de documentos</span><span>16</span></div>
 </section>
 
 <!-- 16 · Avances -->
@@ -371,7 +393,7 @@
       <li><span class="b">F</span><span><strong>15 entrevistas de campo</strong> en 13 clubes de cinco regiones — reporte completo en el depósito.</span></li>
     </ul>
   </div>
-  <div class="foot"><span>Depósito de documentos · Sección Entrevistas de Campo</span><span>16</span></div>
+  <div class="foot"><span>Depósito de documentos · Sección Entrevistas de Campo</span><span>17</span></div>
 </section>
 
 <!-- 17 · Decisiones -->
@@ -391,7 +413,7 @@
     </table>
     <p class="note">Calendario relativo: 8 semanas desde la entrega de Bloques 0+A — gate de diseño S2, 50% S4, pre-lanzamiento S7, <strong>lanzamiento de A y B en S8</strong> — más 2 a 4 semanas de estabilización sin costo; la iguala inicia el mes siguiente.</p>
   </div>
-  <div class="foot"><span>Anexo Uno · Cláusula Décima Tercera</span><span>17</span></div>
+  <div class="foot"><span>Anexo Uno · Cláusula Décima Tercera</span><span>18</span></div>
 </section>
 
 <!-- 18 · Cierre -->
