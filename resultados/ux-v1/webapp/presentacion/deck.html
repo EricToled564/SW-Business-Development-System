@@ -49,10 +49,10 @@
   .dark .lead{color:var(--muted-d)}
 
   .top-head{margin:clamp(12px,2.4vh,26px) 0 clamp(10px,2vh,22px);position:relative;z-index:3}
-  .body-wrap{flex:1;display:flex;flex-direction:column;justify-content:space-evenly;gap:clamp(8px,1.6vh,18px);min-height:0;position:relative;z-index:3}
+  .body-wrap{flex:1;display:flex;flex-direction:column;justify-content:space-evenly;gap:clamp(8px,1.6vh,18px);min-height:0;position:relative;z-index:3;overflow:auto;scrollbar-width:none}
   .side{flex:1;display:grid;grid-template-columns:minmax(240px,32%) 1fr;gap:clamp(24px,4.5vw,72px);min-height:0;position:relative;z-index:3;align-items:stretch;padding-top:clamp(14px,2.8vh,30px)}
   .side .head .kicker{display:block;margin-bottom:clamp(8px,1.5vh,16px)}
-  .side .content{align-self:stretch;min-width:0;display:flex;flex-direction:column;justify-content:space-evenly;height:100%}
+  .side .content{align-self:stretch;min-width:0;min-height:0;display:flex;flex-direction:column;justify-content:space-evenly;height:100%;overflow:auto;scrollbar-width:none}
   .statement{flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(8px,3vh,30px);position:relative;z-index:3}
 
   .bgnum{position:absolute;right:clamp(0px,2.5vw,40px);top:-6vh;font-family:var(--serif);font-weight:700;font-variation-settings:'opsz' 144;font-size:clamp(180px,50vh,480px);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(20,21,25,.10);z-index:1;user-select:none;pointer-events:none}
@@ -133,9 +133,33 @@
 
   .hud{position:fixed;bottom:0;left:0;right:0;height:3px;background:transparent;z-index:10}
   .hud .bar{height:100%;background:var(--accent);width:0%;transition:width .3s ease}
-  .pager{position:fixed;bottom:13px;right:20px;font-size:11px;letter-spacing:.2em;color:#7A7F90;z-index:10;font-family:var(--sans)}
+  .repo{position:fixed;bottom:9px;left:50%;transform:translateX(-50%);z-index:8;font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;text-decoration:none;color:#7A7F90;border:1px solid rgba(122,127,144,.45);padding:6px 16px;transition:color .2s,border-color .2s;white-space:nowrap}
+  .repo:hover{color:var(--accent);border-color:var(--accent)}
   .tap{position:fixed;top:0;bottom:0;width:16%;z-index:5;cursor:pointer}
   .tap.prev{left:0}.tap.next{right:0}
+  @media (max-height:820px){
+    .slide{padding:16px clamp(28px,5.5vw,92px)}
+    .top-head{margin:10px 0 8px}
+    h2{font-size:clamp(22px,4.4vh,40px)}
+    .lead{font-size:clamp(14px,2vh,17px);margin-top:8px}
+    td{font-size:clamp(13.5px,1.95vh,16px)}
+    th{font-size:11.5px;padding-bottom:6px}
+    .tight td{font-size:clamp(13px,1.85vh,15px);padding:5px 10px 5px 0}
+    .roomy td{font-size:clamp(13.5px,1.95vh,16px);padding:clamp(6px,1.2vh,11px) 12px clamp(6px,1.2vh,11px) 0}
+    .roomy .bref{font-size:10.5px;margin-top:2px}
+    .band{padding:clamp(7px,1.4vh,14px) 0}
+    .band h3{font-size:clamp(15px,2.4vh,20px)}
+    .band p{font-size:clamp(13.5px,2vh,16px);line-height:1.45}
+    .list li{font-size:clamp(14px,2vh,17px);padding:clamp(5px,1vh,9px) 0}
+    .stat .l{font-size:clamp(12.5px,1.7vh,15px)}
+    .card p,.half p{font-size:clamp(13.5px,1.95vh,16px)}
+    .note{font-size:clamp(12px,1.7vh,14px);margin-top:8px}
+    .key{padding-top:8px}
+    .key .kt{font-size:clamp(15px,2.5vh,22px)}
+    .meta{font-size:11px;letter-spacing:.2em;padding-bottom:7px}
+    .foot{font-size:10.5px;padding-top:7px}
+    .repo{bottom:6px;padding:4px 12px}
+  }
   @media (max-width:880px){
     .stats,.cards{grid-template-columns:1fr 1fr}
     .two-col,.side,.halves{grid-template-columns:1fr}
@@ -259,7 +283,7 @@
   </div>
   <div class="body-wrap">
     <div class="bands">
-      <div class="band fg"><div class="bn">01</div><div><h3>Los clubes no son detectados</h3><p>El sitio se renderiza en el navegador (client-side); Googlebot no lo ejecuta igual. Las 49 fichas de club <span class="mk">no existen para Google</span>, y quien busca "gimnasio cerca de mí" aterriza en el home genérico.</p></div></div>
+      <div class="band fg"><div class="bn">01</div><div><h3>Los clubes no son detectados</h3><p>El sitio se renderiza en el navegador (client-side); Googlebot no lo ejecuta igual. Las 49 fichas de club <span class="mk">no existen para Google</span>, y quien busca "gimnasio cerca de mí" aterriza en el home o en la página genérica de clubes — y cada clic adicional hasta su club pierde <span class="mk">10–30% de los usuarios</span> (20–40% por clic en móvil local).</p></div></div>
       <div class="band fg"><div class="bn">02</div><div><h3>Cero referencia a bajar de peso</h3><p>Es la intención número uno de la industria — <span class="mk">932,300 búsquedas al mes</span> — y el motivo principal de inscripción. Sports World tiene el producto completo; el sitio cubre el 0.02% de ese universo.</p></div></div>
       <div class="band fg"><div class="bn">03</div><div><h3>La navegación no conecta objetivos con oferta</h3><p>La gente busca resultados — masa muscular, tonificar, rehabilitación — pero la información vive enterrada en descripciones de clases, en jerga de fitness.</p></div></div>
     </div>
@@ -386,7 +410,7 @@
       <tr><td>Core Web Vitals</td><td>fuera de umbral</td><td class="hit">LCP &lt; 2.5 s · INP &lt; 200 ms · CLS &lt; 0.1</td><td>PageSpeed Insights</td></tr>
       <tr><td>Cobertura keywords unbranded</td><td>31.1%</td><td class="hit">55–65%</td><td>Semrush · a 12 meses</td></tr>
     </table>
-    <p class="note fg">Targets aspiracionales, no vinculantes (Anexo Cuatro): tráfico 80,000 → 120,000–160,000/mes · 1,800–3,200 cuestionarios · 600–1,000 visitas agendadas.</p>
+    <p class="note fg">Targets aspiracionales, no vinculantes (Anexo Cuatro): tráfico 80,000 → 120,000–160,000/mes.</p>
   </div>
   <div class="key fg"><span class="kl">La clave</span><span class="kt">Cada KPI cuenta con una herramienta externa e independiente de verificación.</span></div>
   <div class="foot"><span>Contrato · Anexo Dos, Sección IV</span><span>12 / 24</span></div>
@@ -400,7 +424,7 @@
     <div class="head">
       <span class="kicker rv">Arquitectura</span>
       <h2 class="rv">Una ficha por club, porque ahí decide el prospecto.</h2>
-      <p class="lead rv">Quien busca localmente aterriza directo en la ficha de su club — cada paso adicional pierde <span class="mk">10–30% de los usuarios</span> (benchmark internacional; 20–40% por clic en móvil local).</p>
+      <p class="lead rv">Quien busca localmente aterriza <span class="mk">directo en la ficha de su club</span> — sin clics intermedios que pierdan usuarios en el camino.</p>
     </div>
     <div class="content">
       <table class="tight rv">
@@ -598,7 +622,7 @@
     <p class="note fg">Iguala mensual de mantenimiento y soporte: USD $2,415.73 (MXN $43,000) más IVA — inicia tras la estabilización y se desglosa por concepto en la misma Cláusula.</p>
     <a class="btn fg" href="../#roi" target="_blank" rel="noopener">Abrir la calculadora de ROI</a>
   </div>
-  <div class="key fg"><span class="kl">La clave</span><span class="kt">La justificación: ~1.23M búsquedas mensuales sin capturar, con un valor de tráfico de USD $80,600 al mes.</span></div>
+  <div class="key fg"><span class="kl">La clave</span><span class="kt">La justificación: ~1.23M búsquedas mensuales de alta intención que hoy no se capturan.</span></div>
   <div class="foot"><span>Contrato · Cláusula Octava VI</span><span>21 / 24</span></div>
 </section>
 
@@ -676,7 +700,6 @@
 
 <a class="repo" href="../" target="_blank" rel="noopener">Depósito de documentos ↗</a>
 <div class="hud"><div class="bar" id="bar"></div></div>
-<div class="pager" id="pager"></div>
 <div class="tap prev" id="tapPrev" aria-label="Anterior"></div>
 <div class="tap next" id="tapNext" aria-label="Siguiente"></div>
 
@@ -687,7 +710,7 @@
     Array.prototype.forEach.call(s.querySelectorAll(".rv"), function(el, k){ el.style.setProperty("--i", k); });
   });
   var i = Math.min(Math.max(parseInt((location.hash||"").replace("#/",""),10)||1,1),slides.length)-1;
-  var bar = document.getElementById("bar"), pager = document.getElementById("pager");
+  var bar = document.getElementById("bar");
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function frags(s){ return Array.prototype.slice.call(s.querySelectorAll(".fg")); }
@@ -712,7 +735,6 @@
     if (reduced || fromBack) { stopAuto(); setFrags(s, frags(s).length); }
     else { setFrags(s, 0); autoplay(s); }
     bar.style.width = ((i+1)/slides.length*100)+"%";
-    pager.textContent = (i+1)+" / "+slides.length;
     history.replaceState(null,"","#/"+(i+1));
   }
   function next(){
