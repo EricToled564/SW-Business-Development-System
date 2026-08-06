@@ -33,10 +33,10 @@
   .fg.on{opacity:1;transform:none}
   @media (prefers-reduced-motion: reduce){ .fg{opacity:1;transform:none} }
 
-  .meta{display:flex;justify-content:space-between;align-items:baseline;font-size:clamp(10.5px,1.35vh,13px);letter-spacing:.24em;text-transform:uppercase;font-weight:500;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:clamp(8px,1.4vh,14px);position:relative;z-index:3}
+  .meta{display:flex;justify-content:space-between;align-items:baseline;font-size:clamp(12.5px,1.5vh,14px);letter-spacing:.24em;text-transform:uppercase;font-weight:500;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:clamp(8px,1.4vh,14px);position:relative;z-index:3}
   .dark .meta{border-color:var(--line-dark);color:var(--muted-d)}
   .meta .a{color:var(--accent);font-weight:700}
-  .foot{display:flex;justify-content:space-between;align-items:baseline;font-size:clamp(10px,1.25vh,12px);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:auto;padding-top:10px;position:relative;z-index:3}
+  .foot{display:flex;justify-content:space-between;align-items:baseline;font-size:clamp(12px,1.4vh,13px);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:auto;padding-top:10px;position:relative;z-index:3}
   .dark .foot{color:#525A75}
 
   h1{font-family:var(--serif);font-weight:620;font-variation-settings:'opsz' 144;font-size:clamp(42px,10.5vh,122px);line-height:.98;letter-spacing:-.015em}
@@ -44,8 +44,8 @@
   em.a{font-style:normal;color:var(--accent)}
   .mk{background:linear-gradient(transparent 58%, rgba(230,21,77,.22) 0);padding:0 2px}
   .dark .mk{background:linear-gradient(transparent 58%, rgba(230,21,77,.38) 0)}
-  .kicker{font-size:clamp(11px,1.4vh,14px);letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:700}
-  .lead{font-size:clamp(14px,2.1vh,19px);color:var(--muted);line-height:1.55;margin-top:clamp(10px,2vh,20px)}
+  .kicker{font-size:clamp(13px,1.6vh,15px);letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  .lead{font-size:clamp(16px,2.3vh,21px);color:var(--muted);line-height:1.55;margin-top:clamp(10px,2vh,20px)}
   .dark .lead{color:var(--muted-d)}
 
   .top-head{margin:clamp(12px,2.4vh,26px) 0 clamp(10px,2vh,22px);position:relative;z-index:3}
@@ -61,8 +61,8 @@
   /* LA CLAVE — remate consistente de cada lámina */
   .key{position:relative;z-index:3;margin-top:auto;padding-top:clamp(10px,1.8vh,18px);border-top:1px solid var(--line);display:flex;gap:clamp(14px,2vw,26px);align-items:baseline}
   .dark .key{border-color:var(--line-dark)}
-  .key .kl{font-size:clamp(10px,1.3vh,12px);letter-spacing:.26em;text-transform:uppercase;font-weight:700;color:var(--accent);white-space:nowrap}
-  .key .kt{font-family:var(--serif);font-weight:560;font-variation-settings:'opsz' 60;font-size:clamp(16px,2.7vh,26px);line-height:1.25;letter-spacing:-.005em;position:relative}
+  .key .kl{font-size:clamp(12.5px,1.45vh,13.5px);letter-spacing:.26em;text-transform:uppercase;font-weight:700;color:var(--accent);white-space:nowrap}
+  .key .kt{font-family:var(--serif);font-weight:560;font-variation-settings:'opsz' 60;font-size:clamp(19px,2.9vh,28px);line-height:1.25;letter-spacing:-.005em;position:relative}
   .key.on .kt::after{content:"";position:absolute;left:0;bottom:-6px;height:3px;background:var(--accent);animation:sweep .7s cubic-bezier(.2,.65,.2,1) .15s both}
   @keyframes sweep{from{width:0}to{width:min(100%,56ch)}}
   .dark .key .kt{color:var(--paper)}
@@ -71,10 +71,10 @@
   .stat .n{font-family:var(--serif);font-weight:560;font-variation-settings:'opsz' 144;font-size:clamp(30px,6.2vh,68px);line-height:1;letter-spacing:-.01em}
   .dark .stat .n{color:var(--paper)}
   .stat .n em{font-style:normal;color:var(--accent)}
-  .stat .l{font-size:clamp(12px,1.7vh,15px);color:var(--muted);margin-top:7px;line-height:1.4;max-width:30ch}
+  .stat .l{font-size:clamp(14px,1.9vh,17px);color:var(--muted);margin-top:7px;line-height:1.4;max-width:30ch}
   .dark .stat .l{color:var(--muted-d)}
   .hero-stat .n{font-size:clamp(84px,20vh,215px);font-weight:640;letter-spacing:-.03em}
-  .hero-stat .l{font-size:clamp(14px,2.1vh,18px);max-width:24ch}
+  .hero-stat .l{font-size:clamp(16px,2.2vh,19px);max-width:24ch}
 
   .bands{display:flex;flex-direction:column;flex:1;justify-content:space-evenly}
   .band{display:grid;grid-template-columns:clamp(62px,8.4vw,118px) 1fr;gap:clamp(14px,2.6vw,36px);padding:clamp(11px,2.2vh,22px) 0;border-top:1px solid var(--line);align-items:start}
@@ -82,9 +82,9 @@
   .band:last-child{border-bottom:1px solid var(--line)}
   .dark .band:last-child{border-color:var(--line-dark)}
   .band .bn{font-family:var(--serif);font-weight:640;font-variation-settings:'opsz' 144;font-size:clamp(32px,6.8vh,68px);line-height:.9;color:var(--accent)}
-  .band .tag{font-size:clamp(10.5px,1.4vh,12.5px);letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--accent);padding-top:8px}
-  .band h3{font-size:clamp(16px,2.5vh,22px);font-weight:700;margin-bottom:6px;line-height:1.2;letter-spacing:-.005em}
-  .band p{font-size:clamp(13px,2vh,17px);line-height:1.55;color:#464A55;max-width:100ch}
+  .band .tag{font-size:clamp(13px,1.5vh,14px);letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--accent);padding-top:8px}
+  .band h3{font-size:clamp(18px,2.7vh,24px);font-weight:700;margin-bottom:6px;line-height:1.2;letter-spacing:-.005em}
+  .band p{font-size:clamp(16px,2.2vh,20px);line-height:1.55;color:#464A55;max-width:100ch}
   .dark .band p{color:#A7ADC2}
 
   .halves{flex:1;display:grid;grid-template-columns:1fr 1fr;min-height:0;position:relative;z-index:3;gap:0}
@@ -93,36 +93,39 @@
   .halves .half:last-child{padding-right:clamp(28px,5.5vw,92px)}
   .half + .half{border-left:1px solid var(--line-dark)}
   .half .big{font-family:var(--serif);font-weight:640;font-variation-settings:'opsz' 144;font-size:clamp(56px,12vh,140px);color:var(--accent);line-height:.9}
-  .half h3{font-size:clamp(17px,2.7vh,24px);font-weight:700;margin:12px 0 10px;color:var(--paper);line-height:1.2}
-  .half p{font-size:clamp(13px,2vh,17px);line-height:1.6;color:#A7ADC2;max-width:52ch}
+  .half h3{font-size:clamp(19px,2.9vh,26px);font-weight:700;margin:12px 0 10px;line-height:1.2}
+  .dark .half h3{color:var(--paper)}
+  .half p{font-size:clamp(16px,2.2vh,20px);line-height:1.6;color:#464A55;max-width:52ch}
+  .dark .half p{color:#A7ADC2}
+  .light .half + .half{border-left:1px solid var(--line)}
 
   table{width:100%;border-collapse:collapse}
-  th{font-size:clamp(10.5px,1.4vh,13px);letter-spacing:.18em;text-transform:uppercase;text-align:left;color:var(--muted);font-weight:600;padding:0 14px 8px 0;border-bottom:1.5px solid var(--ink)}
-  td{font-size:clamp(13px,1.95vh,17px);line-height:1.48;padding:clamp(7px,1.25vh,13px) 14px clamp(7px,1.25vh,13px) 0;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:clamp(12.5px,1.5vh,14px);letter-spacing:.18em;text-transform:uppercase;text-align:left;color:var(--muted);font-weight:600;padding:0 14px 8px 0;border-bottom:1.5px solid var(--ink)}
+  td{font-size:clamp(16px,2.15vh,19px);line-height:1.48;padding:clamp(7px,1.25vh,13px) 14px clamp(7px,1.25vh,13px) 0;border-bottom:1px solid var(--line);vertical-align:top}
   td strong{font-weight:700}
   td.hit{color:var(--accent);font-weight:700;white-space:nowrap;font-family:var(--serif);font-size:clamp(14px,2.15vh,19px)}
-  .tight td{font-size:clamp(12px,1.75vh,15.5px);padding:clamp(6px,1.05vh,10px) 12px clamp(6px,1.05vh,10px) 0}
-  .roomy td{font-size:clamp(13px,1.95vh,17px);padding:clamp(11px,2.1vh,20px) 14px clamp(11px,2.1vh,20px) 0}
+  .tight td{font-size:clamp(15px,2vh,18px);padding:clamp(6px,1.05vh,10px) 12px clamp(6px,1.05vh,10px) 0}
+  .roomy td{font-size:clamp(16px,2.15vh,19px);padding:clamp(11px,2.1vh,20px) 14px clamp(11px,2.1vh,20px) 0}
   .roomy .bname{font-weight:700;display:block;line-height:1.25}
-  .roomy .bref{display:block;font-size:clamp(10px,1.35vh,12px);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+  .roomy .bref{display:block;font-size:clamp(12.5px,1.45vh,13.5px);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:4px}
 
   .two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,64px)}
   .card{border-top:2px solid var(--ink);padding-top:clamp(10px,1.8vh,18px)}
   .dark .card{border-color:rgba(250,247,242,.35)}
   .card .num{font-family:var(--serif);font-size:clamp(18px,3vh,27px);color:var(--accent);font-weight:640}
-  .card h3{font-size:clamp(15.5px,2.4vh,21px);font-weight:700;margin:7px 0 8px;line-height:1.22}
-  .card p{font-size:clamp(13px,1.95vh,17px);line-height:1.55;color:#464A55}
+  .card h3{font-size:clamp(18px,2.6vh,23px);font-weight:700;margin:7px 0 8px;line-height:1.22}
+  .card p{font-size:clamp(16px,2.2vh,19px);line-height:1.55;color:#464A55}
   .dark .card p{color:#A7ADC2}
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2.4vw,30px);flex:1;align-content:center}
 
   .list{list-style:none}
-  .list li{font-size:clamp(13.5px,2.05vh,18px);line-height:1.55;padding:clamp(7px,1.35vh,13px) 0;border-bottom:1px solid var(--line);display:flex;gap:14px}
+  .list li{font-size:clamp(16.5px,2.25vh,20px);line-height:1.55;padding:clamp(7px,1.35vh,13px) 0;border-bottom:1px solid var(--line);display:flex;gap:14px}
   .dark .list li{border-color:var(--line-dark)}
   .list .b{color:var(--accent);font-family:var(--serif);font-weight:640;min-width:1.4em}
-  .note{font-size:clamp(12px,1.7vh,15px);color:var(--muted);margin-top:clamp(10px,2vh,20px);line-height:1.55;max-width:96ch}
+  .note{font-size:clamp(14.5px,1.9vh,17px);color:var(--muted);margin-top:clamp(10px,2vh,20px);line-height:1.55;max-width:96ch}
   .dark .note{color:var(--muted-d)}
 
-  .btn{display:inline-block;align-self:flex-start;margin-top:clamp(12px,2.2vh,24px);padding:13px 26px;border:1.5px solid var(--accent);color:var(--ink);text-decoration:none;font-size:clamp(12px,1.7vh,15px);letter-spacing:.16em;text-transform:uppercase;font-weight:600;transition:background .2s,color .2s;position:relative;z-index:4}
+  .btn{display:inline-block;align-self:flex-start;margin-top:clamp(12px,2.2vh,24px);padding:13px 26px;border:1.5px solid var(--accent);color:var(--ink);text-decoration:none;font-size:clamp(13px,1.7vh,15px);letter-spacing:.16em;text-transform:uppercase;font-weight:600;transition:background .2s,color .2s;position:relative;z-index:4}
   .btn:hover{background:var(--accent);color:#fff}
   .dark .btn{color:var(--paper)}
 
@@ -202,7 +205,7 @@
 </section>
 
 <!-- 4 · Diagnóstico -->
-<section class="slide dark">
+<section class="slide light">
   <div class="meta rv"><span><span class="a">01</span>&ensp;Diagnóstico</span><span>El Gigante Invisible</span></div>
   <div class="top-head">
     <h2 class="rv">Marca fuerte. Invisible donde el cliente busca.</h2>
@@ -243,7 +246,7 @@
       </div>
     </div>
   </div>
-  <div class="key fg"><span class="kl">La clave</span><span class="kt">David Lloyd lo logró en 7 años, sin IA. Con producción asistida por IA, la ejecución se comprime a semanas.</span></div>
+  <div class="key fg"><span class="kl">La clave</span><span class="kt">David Lloyd lo logró en 7 años — sin inteligencia artificial.</span></div>
   <div class="foot"><span>IPA Effectiveness Awards · The Kite Factory / WARC</span><span>05 / 23</span></div>
 </section>
 
@@ -305,20 +308,20 @@
 </section>
 
 <!-- 9 · El instrumento -->
-<section class="slide dark">
+<section class="slide light">
   <div class="meta rv"><span><span class="a">01</span>&ensp;La solución</span><span>Cómo se produce</span></div>
   <div class="side">
     <div class="head">
       <span class="kicker rv">El instrumento</span>
       <h2 class="rv">Un cuestionario de objetivos.</h2>
-      <p class="lead rv"><span class="mk" style="color:var(--paper)">Un minuto del prospecto.</span> Todo lo demás lo hace el sistema.</p>
+      <p class="lead rv"><span class="mk">Un minuto del prospecto.</span> Todo lo demás lo hace el sistema.</p>
     </div>
     <div class="content">
       <div class="bands">
-        <div class="band fg"><div class="bn">01</div><div><h3 style="color:var(--paper)">Pregunta objetivos, no fichas técnicas</h3><p>Qué busca lograr, con quién entrena, dónde vive y trabaja — en lenguaje del consumidor, nunca en jerga de fitness.</p></div></div>
-        <div class="band fg"><div class="bn">02</div><div><h3 style="color:var(--paper)">Menús adaptativos</h3><p>Omite lo que la página de origen ya reveló — geografía, disciplina u objetivo — y ajusta su copy y sus opciones dinámicamente.</p></div></div>
-        <div class="band fg"><div class="bn">03</div><div><h3 style="color:var(--paper)">Una sola vez, en cualquier canal</h3><p>El sitio, el agente BES, WhatsApp (Proyecto B) o la consola interna del asesor. El resolver elige el club que cumple la experiencia ideal; la distancia solo desempata.</p></div></div>
-        <div class="band fg"><div class="bn">04</div><div><h3 style="color:var(--paper)">La IA redacta el resultado</h3><p>Con las respuestas y los datos verificados del club elegido, redacta en el momento la experiencia ideal y el brief del asesor. Nada es plantilla genérica.</p></div></div>
+        <div class="band fg"><div class="bn">01</div><div><h3>Pregunta objetivos, no fichas técnicas</h3><p>Qué busca lograr, con quién entrena, dónde vive y trabaja — en lenguaje del consumidor, nunca en jerga de fitness.</p></div></div>
+        <div class="band fg"><div class="bn">02</div><div><h3>Menús adaptativos</h3><p>Omite lo que la página de origen ya reveló — geografía, disciplina u objetivo — y ajusta su copy y sus opciones dinámicamente.</p></div></div>
+        <div class="band fg"><div class="bn">03</div><div><h3>Una sola vez, en cualquier canal</h3><p>El sitio, el agente BES, WhatsApp (Proyecto B) o la consola interna del asesor. El resolver elige el club que cumple la experiencia ideal; la distancia solo desempata.</p></div></div>
+        <div class="band fg"><div class="bn">04</div><div><h3>La IA redacta el resultado</h3><p>Con las respuestas y los datos verificados del club elegido, redacta en el momento la experiencia ideal y el brief del asesor. Nada es plantilla genérica.</p></div></div>
       </div>
     </div>
   </div>
@@ -346,7 +349,7 @@
 </section>
 
 <!-- 11 · Canales -->
-<section class="slide dark" style="padding-left:0;padding-right:0">
+<section class="slide light" style="padding-left:0;padding-right:0">
   <div class="meta rv" style="margin:0 clamp(28px,5.5vw,92px)"><span><span class="a">01</span>&ensp;La solución</span><span>Los canales</span></div>
   <div class="top-head" style="padding:0 clamp(28px,5.5vw,92px)">
     <h2 class="rv">Dos proyectos, una sola experiencia.</h2>
@@ -383,7 +386,7 @@
       <tr><td>Core Web Vitals</td><td>fuera de umbral</td><td class="hit">LCP &lt; 2.5 s · INP &lt; 200 ms · CLS &lt; 0.1</td><td>PageSpeed Insights</td></tr>
       <tr><td>Cobertura keywords unbranded</td><td>31.1%</td><td class="hit">55–65%</td><td>Semrush · a 12 meses</td></tr>
     </table>
-    <p class="note fg">Complemento no vinculante (Anexo Cuatro, targets aspiracionales): tráfico mensual 80,000 → 120,000–160,000 · 1,800–3,200 cuestionarios/mes · 600–1,000 visitas agendadas/mes.</p>
+    <p class="note fg">Targets aspiracionales, no vinculantes (Anexo Cuatro): tráfico 80,000 → 120,000–160,000/mes · 1,800–3,200 cuestionarios · 600–1,000 visitas agendadas.</p>
   </div>
   <div class="key fg"><span class="kl">La clave</span><span class="kt">Cada KPI cuenta con una herramienta externa e independiente de verificación.</span></div>
   <div class="foot"><span>Contrato · Anexo Dos, Sección IV</span><span>12 / 23</span></div>
@@ -425,14 +428,14 @@
   <div class="body-wrap">
     <div class="two-col">
       <ul class="list">
-        <li class="fg"><span class="b">01</span><span><strong>Middleware a cargo del proveedor</strong> consume el API HTTP RESTful estándar del CRM: idempotencia, caché, reintentos, búsquedas, precios. <span class="mk"><strong>Sports World no desarrolla puntos de acceso a la medida.</strong></span></span></li>
-        <li class="fg"><span class="b">02</span><span><strong>Lecturas:</strong> estatus de club, coordenadas, amenidades, clases y horarios, tarifas y promociones — precios y clases en tiempo real, el resto con sincronización diaria.</span></li>
-        <li class="fg"><span class="b">03</span><span><strong>Escritura:</strong> el lead cualificado con día y horario de visita, idempotente por sesión. La visita no se reserva contra ningún sistema: se envía por correo al club.</span></li>
+        <li class="fg"><span class="b">01</span><span>El <strong>middleware del proveedor</strong> consume el API estándar del CRM. <span class="mk"><strong>SW no desarrolla nada a la medida.</strong></span></span></li>
+        <li class="fg"><span class="b">02</span><span><strong>Lecturas:</strong> clubes, amenidades, clases y tarifas — precios y clases en tiempo real, el resto con sincronización diaria.</span></li>
+        <li class="fg"><span class="b">03</span><span><strong>Escritura:</strong> el lead con día y horario de visita, sin duplicados; la visita se envía por correo al club.</span></li>
       </ul>
       <ul class="list">
-        <li class="fg"><span class="b">04</span><span><strong>El cierre del funnel:</strong> lectura del sistema donde se capturan las membresías nuevas — por el API del CRM, o por entrega periódica de la base con <strong>cruce dentro de la infraestructura de SW</strong> (solo agregados al dashboard).</span></li>
-        <li class="fg"><span class="b">05</span><span><strong>Lo que ese acceso habilita:</strong> rastrear la cancelación (attrition) y cruzarla con los perfiles — <strong>qué segmento es más probable que cancele</strong>, por objetivo, composición, club y canal.</span></li>
-        <li class="fg"><span class="b">06</span><span><strong>Medición:</strong> GA4 + Search Console instrumentados y gestión de las 49 fichas de Google Business por la API oficial.</span></li>
+        <li class="fg"><span class="b">04</span><span><strong>Cierre del funnel:</strong> lectura de membresías nuevas — vía API o con <strong>cruce dentro de la infraestructura de SW</strong>.</span></li>
+        <li class="fg"><span class="b">05</span><span><strong>Retención:</strong> ese acceso permite saber <strong>qué segmento es más probable que cancele</strong>, por objetivo, club y canal.</span></li>
+        <li class="fg"><span class="b">06</span><span><strong>Medición:</strong> GA4, Search Console y las 49 fichas de Google Business por la API oficial.</span></li>
       </ul>
     </div>
   </div>
@@ -474,7 +477,7 @@
       <div class="card fg"><div class="num">No</div><h3>Lo que no se edita ahí — por diseño</h3><p>Tarifas, descuentos y promociones: el motor de precios las extrae del CRM y las resuelve por club, ciudad o nivel nacional. El sitio nunca contradice al sistema comercial.</p></div>
       <div class="card fg"><div class="num">＆</div><h3>Mantenimiento vs. edición</h3><p>El mantenimiento lo hace el proveedor bajo la iguala — técnico, BES, soporte 24/7 con SLA. La edición directa es una facultad de SW, no una obligación.</p></div>
     </div>
-    <p class="note fg"><strong>Cómo se navega el panel:</strong> espejo de la arquitectura del sitio — Clubes · Clases · Amenidades · Perfiles · Membresías · Blog · Home — con buscador por nombre y vista previa antes de publicar. Cambiar una foto de Santa Fe: entrar a Clubes → "Santa Fe" → editar. (Horarios, tarifas y clases llegan solos desde el CRM.)</p>
+    <p class="note fg"><strong>Cómo se navega el panel:</strong> espejo de la arquitectura del sitio — Clubes · Clases · Amenidades · Perfiles · Membresías · Blog · Home — con buscador por nombre y vista previa antes de publicar. Cambiar una foto de Santa Fe: Clubes → "Santa Fe" → editar.</p>
   </div>
   <div class="key fg"><span class="kl">La clave</span><span class="kt">El contenido es de Sports World, sin escribir código; los precios llegan solos del CRM.</span></div>
   <div class="foot"><span>Cláusulas Sexta y Octava · Anexo Dos III</span><span>16 / 23</span></div>
@@ -489,7 +492,7 @@
       <span class="kicker rv">El agente</span>
       <h2 class="rv">BES: la experiencia ideal, conversando.</h2>
       <p class="lead rv"><strong>Tres puertas al mismo cuestionario:</strong> el sitio (autoservicio), BES (voz y texto) y la consola interna. Un lead llega al CRM idéntico sin importar el canal.</p>
-      <p class="lead rv" style="font-size:clamp(12px,1.8vh,15px)">Latencia conversacional &lt; 900 ms, viable con API del cliente en p95 &lt; 500 ms lecturas / &lt; 800 ms escritura. Exclusiones: telefonía y voz por WhatsApp.</p>
+      <p class="lead rv" style="font-size:clamp(14px,1.9vh,16px)">Latencia conversacional &lt; 900 ms, viable con API del cliente en p95 &lt; 500 ms lecturas / &lt; 800 ms escritura. Exclusiones: telefonía y voz por WhatsApp.</p>
     </div>
     <div class="content">
       <div class="bands">
@@ -542,12 +545,12 @@
   <div class="body-wrap">
     <table class="tight rv">
       <tr><th style="width:32%">Observación</th><th>Dónde y cómo queda resuelta</th></tr>
-      <tr><td><strong>Aprobación de entregables</strong></td><td><strong>Décima + Anexo Dos I.4</strong> — por etapa, por escrito, sobre vistas previas; 48 h hábiles por gate; 5 días hábiles para observaciones.</td></tr>
-      <tr><td><strong>Aceptación tácita</strong></td><td><strong>Décima</strong> — 5 días hábiles sin observaciones por escrito. Protege el calendario; el control es de SW: cualquier observación escrita la impide.</td></tr>
-      <tr><td><strong>Cambios post-aprobación</strong></td><td><strong>Décima</strong> — 50% del valor de la etapa (15/35/35/15); impacto en fechas en 24 h. Sin reabrir lo aprobado: zona neutral, sin cargo.</td></tr>
-      <tr><td><strong>Stand-by</strong></td><td><strong>Décima Quinta a)</strong> — USD $350 por día imputable a SW, con tope del 25% del pago único.</td></tr>
-      <tr><td><strong>Retrasos del proveedor</strong></td><td><strong>Décima Quinta b)</strong> — los absorbe y corrige sin costo. No aprobación imputable: devolución proporcional en 30 días; corrección sin costo 90 días o vigencia de la iguala.</td></tr>
-      <tr><td><strong>SLA e incidencias críticas</strong></td><td><strong>Séptima + Anexo Cinco</strong> — 24/7 con ticket; crítico: respuesta 15–30 min, resolución objetivo 4 h. Tabla ajustable 15 días tras la firma.</td></tr>
+      <tr><td><strong>Aprobación de entregables</strong></td><td><strong>Décima + Anexo Dos I.4</strong> — por etapa, por escrito y sobre vistas previas; respuesta de 48 h hábiles por gate.</td></tr>
+      <tr><td><strong>Aceptación tácita</strong></td><td><strong>Décima</strong> — 5 días hábiles sin observaciones por escrito; cualquier observación escrita la impide.</td></tr>
+      <tr><td><strong>Cambios post-aprobación</strong></td><td><strong>Décima</strong> — 50% del valor de la etapa (15/35/35/15). Lo que no reabre nada aprobado: sin cargo.</td></tr>
+      <tr><td><strong>Stand-by</strong></td><td><strong>Décima Quinta a)</strong> — USD $350 por día imputable a SW; tope: 25% del pago único.</td></tr>
+      <tr><td><strong>Retrasos del proveedor</strong></td><td><strong>Décima Quinta b)</strong> — los absorbe y corrige sin costo; devolución proporcional si la no aprobación le es imputable; garantía de 90 días.</td></tr>
+      <tr><td><strong>SLA e incidencias críticas</strong></td><td><strong>Séptima + Anexo Cinco</strong> — soporte 24/7; crítico: respuesta 15–30 min, resolución objetivo 4 h.</td></tr>
     </table>
   </div>
   <div class="key fg"><span class="kl">La clave</span><span class="kt">El control de cada aprobación — y de la aceptación tácita — queda del lado de Sports World.</span></div>
@@ -563,11 +566,11 @@
   <div class="body-wrap">
     <table class="tight rv">
       <tr><th style="width:32%">Observación</th><th>Dónde y cómo queda resuelta</th></tr>
-      <tr><td><strong>Código fuente y repositorios</strong></td><td><strong>Décima Sexta</strong> — cesión irrevocable de todo lo generado para SW; componentes preexistentes con licencia perpetua libre de regalías; entrega contra liquidación; continuidad sin dependencia.</td></tr>
-      <tr><td><strong>Infraestructura, seguridad y datos</strong></td><td><strong>Décima Octava</strong> — minimización y no retención; cifrado; mínimo privilegio; vulneraciones en 72 h; ARCO; supresión certificada. El sitio corre en el servidor de SW.</td></tr>
-      <tr><td><strong>Costos variables de IA, voz y mensajería</strong></td><td><strong>Décima Cuarta + Anexo Tres</strong> — SW paga directo a proveedores. Escenario realista: <span class="mk">USD $785–$1,550/mes</span>, con monitoreo y reporte mensual.</td></tr>
-      <tr><td><strong>Iguala: vigencia y cancelación</strong></td><td><strong>Sexta + Novena</strong> — $43,000 MXN + IVA desde el mes siguiente a la estabilización; mínimo 6 meses; cancelable con 30 días; renovaciones de 12 meses terminables con 60 días.</td></tr>
-      <tr><td><strong>Desglose económico del Proyecto A</strong></td><td><strong>Octava VI</strong> — USD $81,000 = SEO y contenido ($35,000) + diseño y desarrollo ($32,000) + BES ($14,000). Justificación: ~1.23M búsquedas/mes no capturadas, valor de tráfico USD $80,600/mes.</td></tr>
+      <tr><td><strong>Código fuente y repositorios</strong></td><td><strong>Décima Sexta</strong> — cesión irrevocable de todo lo generado para SW; entrega contra liquidación; continuidad sin dependencia.</td></tr>
+      <tr><td><strong>Infraestructura, seguridad y datos</strong></td><td><strong>Décima Octava</strong> — minimización y no retención; cifrado; vulneraciones en 72 h; el sitio corre en el servidor de SW.</td></tr>
+      <tr><td><strong>Costos variables de IA, voz y mensajería</strong></td><td><strong>Décima Cuarta + Anexo Tres</strong> — SW paga directo a proveedores; escenario realista <span class="mk">USD $785–$1,550/mes</span>.</td></tr>
+      <tr><td><strong>Iguala: vigencia y cancelación</strong></td><td><strong>Sexta + Novena</strong> — $43,000 MXN + IVA tras la estabilización; mínimo 6 meses; renovaciones de 12 con salida a 60 días.</td></tr>
+      <tr><td><strong>Desglose económico del Proyecto A</strong></td><td><strong>Octava VI</strong> — USD $81,000 = SEO y contenido ($35,000) + diseño y desarrollo ($32,000) + BES ($14,000).</td></tr>
     </table>
     <a class="btn fg" href="../#roi" target="_blank" rel="noopener">Abrir la calculadora de ROI</a>
   </div>
@@ -587,8 +590,8 @@
     </div>
     <div class="content">
       <ul class="list">
-        <li class="fg"><span class="b">A</span><span><strong>Documentación completa y auditada</strong> — auditoría, arquitectura de experiencia, estrategia técnica, plan de ejecución, seguridad, gastos variables, BDS, contrato con cinco anexos.</span></li>
-        <li class="fg"><span class="b">B</span><span><strong>Contrato madurado con Sistemas</strong> — estándares del API íntegros, middleware sin desarrollos a la medida, SLA de latencia, régimen de datos, servidor del cliente.</span></li>
+        <li class="fg"><span class="b">A</span><span><strong>Documentación completa y auditada</strong> — auditoría, arquitectura, estrategia técnica, ejecución, seguridad, BDS y contrato con cinco anexos.</span></li>
+        <li class="fg"><span class="b">B</span><span><strong>Contrato madurado con Sistemas</strong> — API íntegro, middleware sin desarrollos a la medida, SLA, datos y servidor.</span></li>
         <li class="fg"><span class="b">C</span><span><strong>Demo funcional</strong> del cuestionario y la experiencia ideal — verificable en el depósito.</span></li>
         <li class="fg"><span class="b">D</span><span><strong>Validaciones de Marketing Digital</strong> aplicadas y verificables en el demo.</span></li>
         <li class="fg"><span class="b">E</span><span><strong>Workshop discovery</strong> con líderes regionales — 157 de 200 asesores cubiertos.</span></li>
