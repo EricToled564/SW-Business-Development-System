@@ -58,6 +58,13 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | C6 | [**Academia · Medición**](#academia-medicion) | Dashboard de readiness, evaluación en cuatro niveles, catálogo de KPIs por familia y calibración con el CRM. | Dirección, Comercial |
 | C7 | [**Academia · Addendum contractual**](#academia-anexo) | Alcance, entregables, contraprestación adicional ($850,000.00 MXN más IVA; USD $47,752.81) y plazo de 10 semanas del Proyecto C. | Dirección, Legal |
 
+## Entrevistas de Campo (discovery con la operación comercial)
+
+| # | Documento | Propósito | Audiencia |
+|---|---|---|---|
+| E1 | [**Workshop Discovery · Líderes regionales**](#workshop-discovery) | Sesión de detección de necesidades (60 min) + cuestionario pre-workshop que cubre a 157 de los 200 asesores (78.5%): brechas de habilidades, objeciones dominantes, momento de pérdida de leads y priorización colectiva. Incluye la presentación original descargable. | Dirección, Comercial, RH |
+| E2 | [**Reporte de Entrevistas de Campo**](#entrevistas-campo) | 15 entrevistas individuales (6 líderes comerciales y 9 asesores) en 13 clubes de cinco regiones: hallazgos validados, motivaciones reales del cliente, métricas del funnel reportadas y cómo los Proyectos A y B resuelven lo documentado. PDF completo descargable. | Dirección, Comercial, Sistemas |
+
 ## Localizador rápido (¿dónde está cada tema?)
 
 Cada ubicación es un enlace directo: abre el documento y salta a la sección exacta.
