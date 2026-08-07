@@ -15,15 +15,17 @@ Este diseño tiene tres consecuencias operativas:
 - **Consistencia total.** El sitio, BES y la consola nunca se contradicen: leen exactamente los mismos datos, de la misma base, sincronizados en el mismo momento.
 - **Resiliencia.** Ante una intermitencia del CRM, los consumidores continúan operando con el último dato sincronizado; el middleware reintenta con espera incremental hasta restablecer el flujo.
 
-**Frecuencias de sincronización** (Anexo Uno, catálogo de datos):
+**Frecuencias de sincronización:**
 
 | Datos | Frecuencia |
 |---|---|
-| Tarifas, descuentos y promociones | Tiempo real (caché corto) |
-| Clases por club: días, horarios y fechas | Tiempo real (caché corto) |
-| Estatus del club, horarios de atención, amenidades | 1 vez al día |
+| Catálogos completos: estatus del club, horarios de atención, amenidades, clases (días, horarios y fechas), tarifas, descuentos y promociones | 1 vez al día — corte a las 06:00 (hora de la Ciudad de México) |
 | Coordenadas de clubes | Semilla en código, editable sin código en el CMS |
 | Estado de visita y membresías (funnel) | 1 vez al día (o según el corte pactado, §5) |
+
+> **Regla de corte diario (06:00).** La sincronización se ejecuta todos los días a las **06:00 horas de la Ciudad de México**. Todo cambio registrado en el CRM **hasta las 05:59** se publica ese mismo día **a partir de las 06:00**; los cambios registrados después del corte se publican al día siguiente. En consecuencia, la ventana operativa de Sports World para registrar una nueva promoción, una nueva tarifa o un cambio de clases es **de las 06:01 del día anterior a las 05:59 del día de publicación**. Para casos excepcionales, la sección de administración incluye una opción de **sincronización manual inmediata**.
+>
+> Esta regla sustituye la lectura en tiempo real de precios y clases descrita en el Anexo Uno (nota de frecuencia de actualización); el ajuste se reflejará en la próxima revisión del Anexo. El cambio **reduce los requerimientos hacia el CRM de Sports World**: una consulta programada al día en lugar de un flujo continuo, y un SLA de latencia que solo resulta crítico en la creación del prospecto (§7).
 
 ## 2 · Alcance de canales: dónde opera BES
 
@@ -49,7 +51,7 @@ Este diseño tiene tres consecuencias operativas:
 | `horarios_atencion` | Por día de la semana: hora de apertura y hora de cierre |
 | `amenidades[]` | Lista de amenidades del club: alberca, sauna, pádel, FitKidz, spa, etcétera |
 
-### 3.2 Tabla `clases` — tiempo real
+### 3.2 Tabla `clases` — sincronización diaria (corte 06:00)
 
 | Campo | Contenido |
 |---|---|
@@ -64,7 +66,7 @@ Este diseño tiene tres consecuencias operativas:
 | `instructor` | Instructor, si el CRM lo registra |
 | `salon` | Salón o área, si el CRM lo registra |
 
-### 3.3 Tabla `tarifas` — tiempo real
+### 3.3 Tabla `tarifas` — sincronización diaria (corte 06:00)
 
 | Campo | Contenido |
 |---|---|
