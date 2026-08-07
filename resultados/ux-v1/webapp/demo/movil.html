@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo Cuestionario Inteligente · Vista móvil · Sports World</title>
+  <style>
+    html, body { margin: 0; height: 100%; }
+    body {
+      background: radial-gradient(120% 120% at 50% 0%, #1c2a3d 0%, #0e1b2c 55%, #091220 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      overflow: hidden;
+    }
+    /* Marco del teléfono: proporciones de un iPhone (pantalla 390 × 844). */
+    .phone {
+      position: relative;
+      width: 390px; height: 844px;
+      background: #000;
+      border-radius: 54px;
+      padding: 14px;
+      box-sizing: content-box;
+      box-shadow:
+        0 0 0 2px #3a3a3c,
+        0 0 0 5px #17181a,
+        0 30px 80px rgba(0,0,0,.65),
+        0 8px 24px rgba(0,0,0,.5);
+      transform-origin: center center;
+    }
+    /* Botones laterales */
+    .phone::before, .phone::after {
+      content: ""; position: absolute; background: #2c2c2e; border-radius: 2px;
+    }
+    .phone::before { left: -7px; top: 190px; width: 4px; height: 62px;
+      box-shadow: 0 78px 0 #2c2c2e; } /* volumen */
+    .phone::after  { right: -7px; top: 230px; width: 4px; height: 92px; } /* encendido */
+    .screen {
+      position: relative; width: 390px; height: 844px;
+      border-radius: 42px; overflow: hidden; background: #fff;
+    }
+    .screen iframe { width: 100%; height: 100%; border: 0; display: block; }
+    /* Isla dinámica */
+    .island {
+      position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
+      width: 122px; height: 34px; background: #000; border-radius: 20px;
+      z-index: 10; pointer-events: none;
+    }
+    /* Ajuste automático: si la ventana es más baja que el teléfono, se escala
+       para que quepa completo y el video siempre capture el dispositivo entero. */
+  </style>
+</head>
+<body>
+  <div class="phone" id="phone">
+    <div class="screen">
+      <div class="island"></div>
+      <iframe id="demo" title="Demo Cuestionario Inteligente (móvil)"></iframe>
+    </div>
+  </div>
+  <script>
+    // El iframe hereda los parámetros de la URL (p. ej. la llave del demo).
+    document.getElementById("demo").src = "./index.html" + window.location.search;
+
+    // Escala el teléfono para que siempre quepa completo en la ventana.
+    function fit() {
+      var margin = 40;
+      var w = window.innerWidth - margin, h = window.innerHeight - margin;
+      var pw = 390 + 28 + 14, ph = 844 + 28 + 14; // pantalla + marco + halo
+      var s = Math.min(w / pw, h / ph, 1);
+      document.getElementById("phone").style.transform = "scale(" + s + ")";
+    }
+    window.addEventListener("resize", fit);
+    fit();
+  </script>
+</body>
+</html>
