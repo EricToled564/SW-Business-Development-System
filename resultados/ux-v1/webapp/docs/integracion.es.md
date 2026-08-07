@@ -7,7 +7,7 @@ Este documento define, campo por campo, la integración de datos entre los siste
 
 ## 1 · Principio rector: se extrae una sola vez y se comparte
 
-Ningún componente del proyecto le pega directamente al CRM por su cuenta. La **capa de middleware de EL PRESTADOR** extrae cada dato **una sola vez por ciclo de sincronización**, lo guarda en una **base de datos compartida** (alojada en el servidor de Sports World, Anexo Uno Bloque F), y de esa base leen todos los consumidores: el sitio web, el agente "BES", la consola interna de captación y el dashboard del funnel.
+Ningún componente del proyecto realiza consultas directas e independientes al CRM. La **capa de middleware de EL PRESTADOR** extrae cada dato **una sola vez por ciclo de sincronización**, lo guarda en una **base de datos compartida** (alojada en el servidor de Sports World, Anexo Uno Bloque F), y de esa base leen todos los consumidores: el sitio web, el agente "BES", la consola interna de captación y el dashboard del funnel.
 
 Esto tiene tres consecuencias prácticas:
 
@@ -29,7 +29,7 @@ Esto tiene tres consecuencias prácticas:
 
 "BES" atiende **únicamente la entrada digital**: usuarios que hacen click en un anuncio en redes sociales (que dirige a WhatsApp) o que llegan a la página web (voz y texto integrados al sitio). **BES no contesta el teléfono de los clubes** ni se integra al conmutador para llamadas entrantes; la telefonía aparece en el proyecto solo en el sentido inverso — cuando BES **escala un prospecto a un operador humano** (transferencia por SIP a un número o cola, derivación a un operador de WhatsApp, o devolución de llamada agendada; Anexo Uno D.7).
 
-**No se solicita a Sports World un punto de acceso de consulta de socios.** Los datos de socios actuales no se leen en la operación de captación. Si un socio actual escribe por los canales de captación (le ocurre a cualquier marca: el número de WhatsApp del anuncio es el número visible), BES responde con la base de conocimiento general y no le agenda visita; cualquier caso residual que llegara a entrar al funnel se depura en el cruce con la base de membresías (§6).
+**No se solicita a Sports World un punto de acceso de consulta de socios.** Los datos de socios actuales no se leen en la operación de captación. Si un socio actual escribe por los canales de captación —situación habitual en cualquier marca, dado que el número de WhatsApp del anuncio es el punto de contacto visible—, BES responde con la base de conocimiento general y no le agenda visita; cualquier caso residual que llegara a entrar al funnel se depura en el cruce con la base de membresías (§6).
 
 ## 3 · Lecturas: campos exactos que se extraen del CRM
 
