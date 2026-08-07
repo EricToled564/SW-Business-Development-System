@@ -146,6 +146,37 @@ Los que ya constan en el Anexo Uno, aplicados a esta especificación:
 6. **SLA de latencia**: percentil 95 **< 500 ms** en lecturas y **< 800 ms** en la creación de prospecto (B.5 / D.5), alcanzable con la caché del middleware.
 7. **Política de límites de tasa** documentada: peticiones por minuto/hora, ráfagas y cabecera `Retry-After` (B.6).
 
-## 8 · Seguridad y minimización
+## 8 · Dimensionamiento del servidor (Anexo Uno, Bloque F)
+
+El Bloque F establece condiciones generales ("capacidad y ancho de banda razonables"); esta sección las traduce a **cifras verificables**. La base de cálculo es el **escenario meta de tráfico del proyecto: 160,000 visitas mensuales** (Gastos Operativos, Escenario 3), con margen para ráfagas de campaña.
+
+**Base de cálculo:**
+
+| Variable | Valor |
+|---|---|
+| Visitas mensuales (escenario meta) | 160,000 |
+| Páginas por sesión (promedio de diseño) | 4 |
+| Peso de primera carga (presupuesto Core Web Vitals) | ≤ 1.5 MB |
+| Peso de navegación posterior (caché activa) | ~0.3 MB por página |
+| Concentración de hora pico | 10% del tráfico diario |
+| Factor de ráfaga por campaña (pauta en redes) | 10× el promedio de hora pico |
+
+**Especificación mínima del servidor de producción:**
+
+| Concepto | Cifra mínima |
+|---|---|
+| Procesador | 4 vCPU |
+| Memoria | 8 GB RAM |
+| Almacenamiento | 100 GB SSD NVMe (sitio, middleware, base del funnel y bitácoras) |
+| Ancho de banda | **100 Mbps simétricos sostenidos**, con capacidad de ráfaga a 200 Mbps |
+| Transferencia mensual | **1 TB** |
+| Usuarios concurrentes de diseño | 200 simultáneos |
+| Ambiente de staging (Bloque F.4) | 2 vCPU · 4 GB RAM · 50 GB SSD |
+
+**Umbrales de operación saludable** (referencia para el monitoreo del Bloque F.8): procesador por debajo del **70%** en percentil 95, memoria por debajo del **75%**, disco por debajo del **80%**. Superar cualquiera de estos umbrales de forma sostenida activa la coordinación de ampliación con Sports World.
+
+> Justificación de las cifras: 160,000 visitas × 4 páginas ≈ 640,000 páginas/mes (~21,000 al día); la hora pico concentra ~2,100 páginas (~0.6 por segundo) y una ráfaga de campaña la multiplica por diez (~6 páginas por segundo × 1.5 MB ≈ 72 Mbps) — de ahí los 100 Mbps sostenidos. La transferencia resultante (~400 GB/mes de páginas más API, BES, administración y dashboard) queda holgada dentro de 1 TB. Estas cifras cubren también los dos escenarios inferiores (80,000 y 120,000 visitas) sin ajuste alguno.
+
+## 9 · Seguridad y minimización
 
 Conforme a la Cláusula Décima Octava y al documento de Seguridad del sitio: **cifrado en tránsito (HTTPS/TLS)** en toda la integración; **mínimo privilegio** en credenciales (limitadas a los puntos de acceso listados); **llaves de desarrollo separadas de las productivas**, con titularidad de Sports World; **bitácoras sin datos personales**; y **no retención** — los datos personales del funnel residen en el servidor de Sports World (Bloque F), el dashboard consume únicamente resultados agregados, y los sistemas de EL PRESTADOR no conservan copia.
