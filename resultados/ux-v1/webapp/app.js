@@ -67,6 +67,8 @@
       title: { es: "Arquitectura de Experiencia (UX)", en: "Experience Architecture (UX)" } },
     { id: "technical", type: "doc", group: "proyectoA", pdf: "02-estrategia-tecnica.es.pdf",
       title: { es: "Estrategia Técnica", en: "Technical Strategy" } },
+    { id: "integracion", type: "doc", group: "proyectoA",
+      title: { es: "Integración de Datos · CRM y Funnel", en: "Data Integration · CRM & Funnel" } },
     { id: "seguridad", type: "doc", group: "proyectoA", pdf: "10-seguridad-del-sitio.es.pdf",
       title: { es: "Seguridad del sitio", en: "Site Security" } },
     { id: "bds-resumen", type: "doc", group: "bds", pdf: "15-bds-resumen.es.pdf",
