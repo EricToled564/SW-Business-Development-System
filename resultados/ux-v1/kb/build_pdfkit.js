@@ -41,6 +41,7 @@ const DOCS = [
   // { src: SRC + "/academia-anexo.es.md", ... out: "26-academia-anexo.es.pdf" }   ← excluido (oficial del cliente, ver candado arriba)
   { src: SRC + "/academia-produccion.es.md", kind: "md", title: "Academia SW — Producción del curso", out: "27-academia-produccion.es.pdf" },
   { src: SRC + "/gastos-operativos.es.md", kind: "md", title: "Gastos Operativos Variables — Tres escenarios", out: "28-gastos-operativos.es.pdf" },
+  { src: SRC + "/integracion.es.md", kind: "md", title: "Integración de Datos — CRM, prospecto y funnel", out: "31-integracion-datos.es.pdf" },
   // NOTA: 'voice-agent-knowledge-base.html' quedó obsoleto (contenido previo a las
   // correcciones de esta sesión). Excluido del build; no se sube a la KB.
 ];
