@@ -1110,7 +1110,7 @@ function ResultPage({ data, onRestart, onSchedule }) {
     alberca_note: data.alberca_note,
     experienceContext: data.experienceContext || null,
   });
-  const [showOtros, setShowOtros] = useState(false);
+  const [showOtros, setShowOtros] = useState(true);
   const [showChangeClasses, setShowChangeClasses] = useState(false);
   const [showAllClasses, setShowAllClasses] = useState(false);
   const [pickedNames, setPickedNames] = useState([]);
