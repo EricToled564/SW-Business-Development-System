@@ -9,7 +9,7 @@ Este documento fija el **funnel único** del proyecto: sus canales de entrada, s
 
 ## 1 · Principio: tres puertas, una espina
 
-El error de las definiciones anteriores fue mezclar **canal de entrada** con **etapa de venta**. Aquí se separan: cada canal tiene su propia puerta y su propia forma de medirse, y a partir del cuestionario todos los prospectos recorren la misma espina de conversión.
+El mapa separa dos cosas que conviene no mezclar: el **canal de entrada** y la **etapa de venta**. Cada canal tiene su propia puerta y su propia forma de medirse; a partir del cuestionario, todos los prospectos recorren la misma espina de conversión.
 
 **Tres puertas de entrada reales:** el sitio web, el WhatsApp oficial y la consola del asesor.
 **Una espina común:** cuestionario iniciado → cuestionario completado → visita agendada → visita realizada → membresía comprada → membresía cancelada.
@@ -86,15 +86,15 @@ La base de datos del funnel reside **en el servidor que proporciona Sports World
 | **E4 → E5 → E6** | **nombre + apellido + teléfono + club** | El teléfono es la llave principal; nombre, apellido y club resuelven homonimia |
 | **E6 → E7** | **número de membresía** | Única llave estable posterior a la compra |
 
-## 6 · Lo que hoy falta pedir
+## 6 · Los tres datos de cierre
 
-La auditoría de la documentación arrojó tres huecos de acceso que **no están cubiertos** por el Anexo Uno vigente y que, sin resolverse, dejan el funnel abierto por abajo:
+La mitad baja del funnel —visita realizada, membresía comprada y membresía cancelada— se alimenta de tres datos que provienen del CRM y constan en el Anexo Uno:
 
-1. **El número de membresía y el teléfono en el registro de membresía nueva (E6).** El Anexo Uno pacta la conciliación por nombre, apellido y código postal. Sin el número de membresía no se puede ligar la cancelación; sin el teléfono no se puede ligar la compra con el lead que la originó.
-2. **El dato de cancelación (E7).** No está previsto en el Anexo Uno en ninguna forma. Es un requerimiento nuevo: sin él no hay análisis de retención ni lectura de qué segmento cancela.
-3. **La actualización de la llave de conciliación.** La llave vigente en el Contrato (nombre + apellido + código postal) debe sustituirse por nombre + apellido + teléfono + club.
+1. **Número de membresía** en el registro de membresía nueva (E6). Es la única llave estable posterior a la compra: sin ella, la cancelación no puede vincularse con la membresía que la originó.
+2. **Teléfono del nuevo socio** en ese mismo registro (E6), en formato E.164. Es lo que permite vincular la compra con el lead que la originó y, con ello, atribuir el resultado al canal.
+3. **Registro de cancelación** (E7): número de membresía, fecha y —cuando el CRM lo registre— motivo. Habilita la medición de retención y la lectura de qué segmento cancela.
 
-Los tres son **materia de Legal**, no correcciones editoriales: modifican el Anexo Uno del Contrato.
+Los tres se entregan por API o por entrega periódica, bajo el mismo régimen y las mismas salvaguardas. La conciliación ocurre **dentro de la infraestructura de Sports World** y el dashboard presenta **únicamente resultados agregados**: los datos personales no residen en sistemas de EL PRESTADOR.
 
 ## 7 · Qué se puede medir desde el día uno
 
