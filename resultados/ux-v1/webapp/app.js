@@ -116,7 +116,7 @@
   ];
   const GROUP_ORDER = ["generales", "evidencia", "proyectoA", "bds", "academia"];
 
-  let lang = localStorage.getItem("swux.lang") || ((navigator.language || "es").toLowerCase().startsWith("en") ? "en" : "es");
+  let lang = "es"; // sección del cliente: solo español (ver index.html)
   let currentDoc = null;
   let embedFit = null; // handler que ajusta la altura del iframe del demo a la ventana realmente visible
   const cache = {};
