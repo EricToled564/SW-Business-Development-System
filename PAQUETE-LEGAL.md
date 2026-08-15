@@ -1,8 +1,8 @@
-# Paquete para Legal · Ajustes al Anexo Uno y al Anexo Dos
+# Paquete para Legal · Ajustes al Contrato, al Anexo Uno y al Anexo Dos
 
-Seis ajustes al Contrato que surgieron de la auditoría completa de la documentación y de las decisiones operativas tomadas durante el proyecto. **Ninguno se corrigió en la documentación**: los seis modifican texto contractual y requieren revisión de Legal.
+Siete ajustes al Contrato que surgieron de la auditoría completa de la documentación y de las decisiones operativas tomadas durante el proyecto. **Ninguno se corrigió en la documentación**: los siete modifican texto contractual y requieren revisión de Legal.
 
-Cinco de los seis **reducen o precisan** lo que se le pide a Sports World; solo dos agregan un requerimiento nuevo, y ambos son indispensables para cerrar el funnel de resultados que el propio Contrato compromete.
+Seis de los siete **reducen, precisan o corrigen** lo que se le pide a Sports World. **Uno solo agrega un requerimiento verdaderamente nuevo** —el dato de cancelación—, y otro agrega dos campos a un dato ya pactado; ambos son indispensables para cerrar el funnel de resultados que el propio Contrato compromete.
 
 ---
 
