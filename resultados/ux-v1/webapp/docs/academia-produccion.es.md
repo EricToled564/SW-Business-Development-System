@@ -1,7 +1,7 @@
 # Academia SW · Producción del curso
 ## Estructura del módulo, mecánicas de interactividad y producción 100% con IA
 
-> **Proyecto C (Academia).** Este documento responde tres preguntas concretas sobre la Fase 1 (**[Fases del programa](#academia-fases)**): qué forma tiene un módulo, cómo se logra que sea interactivo —no un video pasivo—, y cómo se produce **100% con inteligencia artificial** sin que el costo escale con cada módulo nuevo.
+> **Proyecto C · la capa de capacidad humana** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Este documento responde tres preguntas concretas sobre la Fase 1 (**[Fases del programa](#academia-fases)**): qué forma tiene un módulo, cómo se logra que sea interactivo —no un video pasivo—, y cómo se produce **100% con inteligencia artificial** sin que el costo escale con cada módulo nuevo.
 
 ## La anatomía de un módulo (8–12 minutos)
 

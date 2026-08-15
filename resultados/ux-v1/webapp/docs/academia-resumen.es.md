@@ -1,6 +1,8 @@
 # Academia Sports World (Proyecto C) · Resumen Ejecutivo
 ## De capacitación informal a capacidad institucional: el sistema de habilitación comercial para los 200 asesores
 
+> **Proyecto C · la capa de capacidad humana** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Cierra el sistema por el lado humano: entrena a los 200 asesores en el mismo concepto que el sistema produce, para que el brief que reciben se convierta en venta. Sin esta capa, el sistema califica al prospecto pero el asesor sigue operando con su método propio.
+
 ## Por qué existe este proyecto
 
 **En el mercado mexicano del fitness, una cadena premium no gana la guerra de precio — gana la conversación de venta.** El terreno del precio bajo ya tiene dueños (Smart Fit y los operadores de bajo costo); lo que Sports World vende es un ecosistema —amenidades, red multi-club, comunidad, entrenamiento supervisado— cuyo valor **no se explica solo: alguien tiene que venderlo, de forma consultiva, frente a un cliente que llega con la comparación de precio en la mano**. Las entrevistas de campo lo confirman: la objeción de precio aparece en el 100% de las entrevistas de campo (**[Contenido y taxonomía](#academia-contenido)**). El asesor comercial es, literalmente, el punto donde el posicionamiento premium se convierte —o no— en una membresía.

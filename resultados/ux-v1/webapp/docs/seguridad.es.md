@@ -1,7 +1,7 @@
 # Sports World · Seguridad del sitio
 ## Protección de los datos personales: minimización y no retención
 
-Este documento describe cómo el nuevo sitio protege la información, **con énfasis en los datos personales de los prospectos**. El principio rector es claro y verificable: **el sitio recolecta lo mínimo indispensable, lo retiene el menor tiempo posible y no conserva una copia.**
+Este documento describe cómo **el sistema** protege la información, **con énfasis en los datos personales de los prospectos**. Cubre los cuatro canales de captación —el sitio, el agente "BES", WhatsApp (Proyecto B) y la consola interna— y la **base de datos del funnel**. El principio rector es claro y verificable: **el sistema recolecta lo mínimo indispensable, lo retiene el menor tiempo posible y no conserva una copia en infraestructura de EL PRESTADOR.**
 
 ## 1 · Principio rector — los datos del individuo viven brevemente
 
@@ -33,6 +33,15 @@ La captura del sitio y de BES registra el lead directamente en el CRM mediante s
 - **Cuentas de servicio y rotación:** integraciones con cuentas de servicio dedicadas (no personales), de mínimo privilegio, con **rotación trimestral** de claves.
 - **Bitácoras sin datos personales:** los logs operativos y de error **no registran PII**; se usan identificadores no personales para diagnóstico.
 - **Accesibilidad y robustez:** el sitio cumple **WCAG 2.2 AA** y se sirve con render del lado del servidor (SSR), lo que reduce superficie de ejecución en el cliente.
+
+## 4b · La base de datos del funnel
+
+La medición de punta a punta (**[Mapa del Funnel](#funnel)**) requiere conservar el recorrido de cada prospecto hasta la membresía y, en su caso, la cancelación. Ese registro **no contradice el principio de minimización** porque:
+
+- **Reside en el servidor de Sports World** (Anexo Uno, Bloque F), no en infraestructura de EL PRESTADOR — igual que el CRM, bajo custodia del propio cliente.
+- **El tablero consume únicamente resultados agregados**: tasas de conversión por canal, club y campaña. Ningún reporte expone datos personales individuales.
+- **Los datos personales que contiene son los mínimos para conciliar**: nombre, apellido, teléfono y club, más el número de membresía. No almacena conversaciones, respuestas médicas ni contenido del cuestionario.
+- El tratamiento se rige por la **Cláusula Décima Octava** del Contrato, igual que el resto del sistema.
 
 ## 5 · Respaldo del sitio ≠ respaldo de datos personales
 

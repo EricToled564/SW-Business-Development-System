@@ -1,7 +1,7 @@
 # BDS · Canales, enrutamiento y SLA de contacto
 ## Reglas operativas del engagement en tiempo real
 
-> **Proyecto B (BDS).** Define cómo se asignan los leads, en qué orden, con qué tiempos y quién los atiende. El KPI que gobierna todo es el **tiempo al primer contacto** (*speed-to-lead*).
+> **Proyecto B · la capa de canales en tiempo real** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Define cómo se asignan los leads, en qué orden, con qué tiempos y quién los atiende. El KPI que gobierna todo es el **tiempo al primer contacto** (*speed-to-lead*).
 
 ## Canales
 

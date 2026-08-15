@@ -1,7 +1,7 @@
 # Sports World México · Integración de Datos
 ## Campos exactos del CRM, escritura del prospecto y base de datos del funnel
 
-Este documento define, campo por campo, la integración de datos entre los sistemas de Sports World y las plataformas del proyecto: **qué se lee del CRM y del sistema de ventas**, **qué se escribe en ellos**, y **cómo se construye la base de datos del funnel** que vincula el tráfico digital con las membresías compradas y canceladas. Es la especificación operativa de lo que el Contrato establece en la Estrategia Técnica (§2 y §10) y en el Anexo Uno (catálogo de datos y Bloques A, B y D).
+Este documento define, campo por campo, la integración de datos que hace posible **la prueba del sistema**: el funnel medible de punta a punta (**[Mapa del Funnel](#funnel)**). Especifica la integración entre los sistemas de Sports World y las plataformas del proyecto: **qué se lee del CRM y del sistema de ventas**, **qué se escribe en ellos**, y **cómo se construye la base de datos del funnel** que vincula el tráfico digital con las membresías compradas y canceladas. Es la especificación operativa de lo que el Contrato establece en la Estrategia Técnica (§2 y §10) y en el Anexo Uno (catálogo de datos y Bloques A, B y D).
 
 ---
 
@@ -109,7 +109,9 @@ Existe **una sola operación de escritura**, compartida por los tres canales de 
 
 ## 5 · Base de datos del funnel
 
-El funnel completo reside en una base de datos **dentro de la infraestructura de Sports World** (el servidor del Bloque F), de modo que los datos personales nunca residen en sistemas de EL PRESTADOR (Cláusula Décima Octava). Extiende las cuatro etapas del funnel contractual (tráfico → visita agendada → visita proporcionada → nueva membresía, Anexo Dos) con dos etapas adicionales de operación: el **clic al WhatsApp de BES** al inicio y las **membresías canceladas** al cierre.
+> **Reparto con el Mapa del Funnel.** La definición de las etapas, su definición operativa, las fuentes y los responsables de cada acceso viven en el **[Mapa del Funnel](#funnel)**. Aquí se especifica únicamente **la estructura de datos**: qué campos guarda cada etapa y con qué llaves se unen.
+
+El funnel completo reside en una base de datos **dentro de la infraestructura de Sports World** (el servidor del Bloque F, dimensionado en el **[Plan de Ejecución · §4](#execution:4-el-servidor-donde-corre-el-sitio)**), de modo que los datos personales nunca residen en sistemas de EL PRESTADOR (Cláusula Décima Octava). Extiende las cuatro etapas del funnel contractual (tráfico → visita agendada → visita proporcionada → nueva membresía, Anexo Dos) con dos etapas adicionales de operación: el **clic al WhatsApp de BES** al inicio y las **membresías canceladas** al cierre.
 
 | # | Etapa | Fuente | Campos |
 |---|---|---|---|
@@ -146,37 +148,6 @@ Los que ya constan en el Anexo Uno, aplicados a esta especificación:
 6. **SLA de latencia**: percentil 95 **< 500 ms** en lecturas y **< 800 ms** en la creación de prospecto (B.5 / D.5), alcanzable con la caché del middleware.
 7. **Política de límites de tasa** documentada: peticiones por minuto/hora, ráfagas y cabecera `Retry-After` (B.6).
 
-## 8 · Dimensionamiento del servidor (Anexo Uno, Bloque F)
-
-El Bloque F establece condiciones generales ("capacidad y ancho de banda razonables"); esta sección las traduce a **cifras verificables**. La base de cálculo es el **escenario meta de tráfico del proyecto: 160,000 visitas mensuales** (Gastos Operativos, Escenario 3), con margen para ráfagas de campaña.
-
-**Base de cálculo:**
-
-| Variable | Valor |
-|---|---|
-| Visitas mensuales (escenario meta) | 160,000 |
-| Páginas por sesión (promedio de diseño) | 4 |
-| Peso de primera carga (presupuesto Core Web Vitals) | ≤ 1.5 MB |
-| Peso de navegación posterior (caché activa) | ~0.3 MB por página |
-| Concentración de hora pico | 10% del tráfico diario |
-| Factor de ráfaga por campaña (pauta en redes) | 10× el promedio de hora pico |
-
-**Especificación mínima del servidor de producción:**
-
-| Concepto | Cifra mínima |
-|---|---|
-| Procesador | 4 vCPU |
-| Memoria | 8 GB RAM |
-| Almacenamiento | 100 GB SSD NVMe (sitio, middleware, base del funnel y bitácoras) |
-| Ancho de banda | **100 Mbps simétricos sostenidos**, con capacidad de ráfaga a 200 Mbps |
-| Transferencia mensual | **1 TB** |
-| Usuarios concurrentes de diseño | 200 simultáneos |
-| Ambiente de staging (Bloque F.4) | 2 vCPU · 4 GB RAM · 50 GB SSD |
-
-**Umbrales de operación saludable** (referencia para el monitoreo del Bloque F.8): procesador por debajo del **70%** en percentil 95, memoria por debajo del **75%**, disco por debajo del **80%**. Superar cualquiera de estos umbrales de forma sostenida activa la coordinación de ampliación con Sports World.
-
-> Justificación de las cifras: 160,000 visitas × 4 páginas ≈ 640,000 páginas/mes (~21,000 al día); la hora pico concentra ~2,100 páginas (~0.6 por segundo) y una ráfaga de campaña la multiplica por diez (~6 páginas por segundo × 1.5 MB ≈ 72 Mbps) — de ahí los 100 Mbps sostenidos. La transferencia resultante (~400 GB/mes de páginas más API, BES, administración y dashboard) queda holgada dentro de 1 TB. Estas cifras cubren también los dos escenarios inferiores (80,000 y 120,000 visitas) sin ajuste alguno.
-
-## 9 · Seguridad y minimización
+## 8 · Seguridad y minimización
 
 Conforme a la Cláusula Décima Octava y al documento de Seguridad del sitio: **cifrado en tránsito (HTTPS/TLS)** en toda la integración; **mínimo privilegio** en credenciales (limitadas a los puntos de acceso listados); **llaves de desarrollo separadas de las productivas**, con titularidad de Sports World; **bitácoras sin datos personales**; y **no retención** — los datos personales del funnel residen en el servidor de Sports World (Bloque F), el dashboard consume únicamente resultados agregados, y los sistemas de EL PRESTADOR no conservan copia.

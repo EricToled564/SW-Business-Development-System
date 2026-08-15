@@ -1,7 +1,7 @@
 # Academia SW · Fases del programa
 ## El recorrido del asesor, etapa por etapa: de la primera lección a la práctica permanente
 
-> **Proyecto C (Academia).** Este documento explica **cómo** se entrega el contenido descrito en **[Contenido y taxonomía](#academia-contenido)**: el recorrido completo del asesor por el programa, las lecciones de la Fase 1, la práctica con el agente de voz de la Fase 2 y los repasos posteriores a la certificación.
+> **Proyecto C · la capa de capacidad humana** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Este documento explica **cómo** se entrega el contenido descrito en **[Contenido y taxonomía](#academia-contenido)**: el recorrido completo del asesor por el programa, las lecciones de la Fase 1, la práctica con el agente de voz de la Fase 2 y los repasos posteriores a la certificación.
 
 ## El recorrido del asesor: cuatro etapas
 

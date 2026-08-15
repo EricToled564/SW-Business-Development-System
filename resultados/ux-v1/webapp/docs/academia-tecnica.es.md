@@ -1,7 +1,7 @@
 # Academia SW · Estrategia Técnica
 ## Cómo se construye la plataforma de módulos y el agente de voz de role-play
 
-> **Proyecto C (Academia).** Describe la arquitectura técnica de las dos fases: la plataforma de módulos interactivos y el agente de voz que interpreta al cliente en el role-play.
+> **Proyecto C · la capa de capacidad humana** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Describe la arquitectura técnica de las dos fases: la plataforma de módulos interactivos y el agente de voz que interpreta al cliente en el role-play.
 
 ## Principio de reutilización
 

@@ -1,7 +1,11 @@
 # Sports World México · Resumen Ejecutivo · V1.0
 ## El sistema de ventas de Sports World: de catálogo a experiencia ideal, en todos los canales
 
-Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente: los 49 clubes, sus amenidades y su oferta de clases se presentan hoy como un **catálogo que el usuario debe descifrar por su cuenta**, sin conexión con lo que busca lograr. **El proyecto no agrega infraestructura: la vuelve legible — y con eso, vendible.** Lo que se construye —Proyectos A, B y C— es un solo sistema: la **reestructuración de la captación y la conversión de Sports World**, que integra todos sus canales y convierte esa infraestructura en un producto claro y estructurado —**la experiencia ideal**— conectado con los objetivos emocionales y prácticos de cada persona. Este documento da la visión de conjunto de los tres proyectos y desarrolla, además, el **Rediseño Web** con mayor detalle: su implementación insignia. Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación digital que la marca requiere: rastreable por Google, centrada en el usuario que busca y operada con inteligencia artificial al servicio del socio. Cada afirmación se desarrolla a detalle en los documentos que lo acompañan: Arquitectura de Experiencia (incluido el Mapa del Sitio), Estrategia Técnica, Plan de Ejecución, Auditoría inicial, el Contrato y los módulos BDS y Academia.
+Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente. Los 49 clubes, sus amenidades y su oferta de clases se presentan hoy como un **catálogo que el usuario debe descifrar por su cuenta**, sin conexión con lo que esa persona busca lograr. **El proyecto no agrega infraestructura: la vuelve legible — y con eso, vendible.**
+
+Lo que se construye —Proyectos A, B y C— es un solo sistema: la **reestructuración de la captación y la conversión de Sports World**. Integra todos sus canales y convierte esa infraestructura en un producto claro y estructurado, **la experiencia ideal**, conectado con los objetivos emocionales y prácticos de cada persona.
+
+Este documento da la visión de conjunto de los tres proyectos y desarrolla con mayor detalle el **Rediseño Web**, la primera capa del sistema y su implementación insignia: ocho semanas para convertir sportsworld.com.mx en una plataforma rastreable por Google, centrada en el usuario que busca y operada con inteligencia artificial al servicio del socio. Cada afirmación se desarrolla en detalle en los documentos que lo acompañan: Arquitectura de Experiencia (incluido el Mapa del Sitio), Estrategia Técnica, Mapa del Funnel, Plan de Ejecución, Auditoría inicial, el Contrato y los módulos BDS y Academia.
 
 | Ficha | |
 |---|---|
@@ -13,13 +17,15 @@ Sports World tiene la mejor infraestructura de fitness de México y la peor trad
 
 ## El sistema completo: cinco niveles, tres capas
 
-Lo que se construye no es un sitio web ni un cuestionario: es un sistema con una **promesa doble**. A cada persona le demuestra que Sports World **sabe** qué se requiere para lograr su objetivo, y que **tiene la infraestructura** para cumplirlo — el club cerca de ella, la alberca, FitKidz, los entrenadores personales y una disponibilidad de clases grupales que, combinada y estructurada para su objetivo, ninguna otra marca del mercado ofrece. Ninguna de las dos afirmaciones convence por separado; juntas son la propuesta de valor.
+Lo que se construye no es un sitio web ni un cuestionario: es un sistema con una **promesa doble**. A cada persona le demuestra dos cosas a la vez: que Sports World **sabe** qué se requiere para lograr su objetivo, y que **tiene con qué cumplirlo**.
+
+La segunda mitad es la que ninguna otra marca del mercado puede sostener: el club cerca de su casa o de su trabajo, la alberca, FitKidz, los entrenadores personales y la mayor oferta de clases grupales del país — combinados y estructurados para su objetivo específico, no presentados como un catálogo. Ninguna de las dos afirmaciones convence por separado; juntas son la propuesta de valor.
 
 El sistema opera en cinco niveles, cada uno con una función distinta:
 
 | Nivel | Qué es | Dónde vive |
 |---|---|---|
-| **El sistema** | La captación y conversión de demanda, con todos los canales integrados: sitio, agente BES, WhatsApp y consola interna. | Proyectos A + B |
+| **La captación** | La captación y conversión de demanda, con todos los canales integrados: sitio, agente BES, WhatsApp y consola interna. | Proyectos A + B |
 | **El producto** | La **experiencia ideal**, con dos destinatarios: el cliente recibe su experiencia; el asesor recibe el **brief** que la traduce en argumentos de cierre. | Proyecto A |
 | **La capacidad humana** | La **Academia**: entrena a los asesores en el mismo concepto que el sistema produce — el método de venta deja de ser improvisado. | Proyecto C |
 | **El instrumento** | El **cuestionario dinámico**: un minuto del prospecto, idéntico en los cuatro canales. | Compartido |
@@ -27,9 +33,9 @@ El sistema opera en cinco niveles, cada uno con una función distinta:
 
 ### Tres capas, un solo concepto
 
-Lo que hace a esto un solo sistema —y no tres proyectos paralelos— es que **un mismo concepto lo atraviesa de punta a punta**: el cliente lo recibe como su experiencia ideal, el asesor lo recibe traducido a argumentos de cierre en el brief, y la Academia lo entrena como método. Hoy el sitio dice una cosa y el asesor improvisa otra —dos ventas distintas para el mismo cliente—; con el sistema, la conversación es continua desde el primer clic hasta el cierre. Cada proyecto solo cambia **quién** aplica el concepto, **por dónde** llega o **cómo se practica**:
+Lo que hace de esto un solo sistema —y no tres proyectos paralelos— es que **un mismo concepto lo atraviesa de punta a punta**: el cliente lo recibe como su experiencia ideal, el asesor lo recibe traducido a argumentos de cierre en el brief, y la Academia lo entrena como método. Hoy el sitio dice una cosa y el asesor improvisa otra —dos ventas distintas para el mismo cliente—; con el sistema, la conversación es continua desde el primer clic hasta el cierre. Cada proyecto solo cambia **quién** aplica el concepto, **por dónde** llega o **cómo se practica**:
 
-- **Proyecto A · Rediseño Web.** El canal donde nace y se implementa el cuestionario: el sitio de 148 páginas rastreable por Google, el agente BES por voz y texto, la integración con el CRM vía middleware y el funnel/dashboard de medición. Se desarrolla más adelante en este mismo documento.
+- **Proyecto A · Rediseño Web.** La capa de captación y conversión, donde nace el sistema: el sitio de 148 páginas rastreable por Google, el agente BES por voz y texto, la integración con el CRM vía middleware y el funnel/dashboard de medición. Se desarrolla más adelante en este mismo documento.
 - **Proyecto B · Business Development System (alcance y costo aparte).** Extiende el **mismo** cuestionario y la **misma** experiencia ideal a **WhatsApp**: leads de campañas atendidos por **operadores humanos** en tiempo real, con **BES por WhatsApp (solo texto)** de respaldo 24/7, más el **rol de operador sobre la consola interna del Proyecto A** para asesores y walk-ins. Ver **[BDS · Resumen Ejecutivo](#bds-resumen)**.
 - **Proyecto C · Academia Sports World (alcance y costo aparte).** Enseña y **entrena la práctica** de ese mismo cuestionario y esa misma experiencia ideal a los 200 asesores, en dos fases: módulos interactivos y role-play con agente de voz. Ver **[Academia · Resumen Ejecutivo](#academia-resumen)**.
 
