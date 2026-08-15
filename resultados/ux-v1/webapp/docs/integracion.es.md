@@ -109,22 +109,24 @@ Existe **una sola operación de escritura**, compartida por los tres canales de 
 
 ## 5 · Base de datos del funnel
 
-> **Reparto con el Mapa del Funnel.** La definición de las etapas, su definición operativa, las fuentes y los responsables de cada acceso viven en el **[Mapa del Funnel](#funnel)**. Aquí se especifica únicamente **la estructura de datos**: qué campos guarda cada etapa y con qué llaves se unen.
+> **Reparto con el Mapa del Funnel.** La definición de las etapas, su definición operativa, las fuentes y los responsables de cada acceso viven en el **[Mapa del Funnel](#funnel)**. Aquí se especifica únicamente **la estructura de datos**: qué campos guarda cada etapa y con qué llaves se unen. La columna **etapa canónica** amarra cada tabla de esta base al código del Mapa del Funnel (C1, C2, E4–E7), para que no existan dos numeraciones de lo mismo.
 
 El funnel completo reside en una base de datos **dentro de la infraestructura de Sports World** (el servidor del Bloque F, dimensionado en el **[Plan de Ejecución · §4](#execution:4-el-servidor-donde-corre-el-sitio)**), de modo que los datos personales nunca residen en sistemas de EL PRESTADOR (Cláusula Décima Octava). Extiende las cuatro etapas del funnel contractual (tráfico → visita agendada → visita proporcionada → nueva membresía, Anexo Dos) con dos etapas adicionales de operación: el **clic al WhatsApp de BES** al inicio y las **membresías canceladas** al cierre.
 
-| # | Etapa | Fuente | Campos |
-|---|---|---|---|
-| 1 | **Tráfico a la página** | GA4 (agregado, sin datos personales) | `fecha` · `pagina` · `sesiones` · `tiempo_en_pagina` · `punto_salida` · `utm` |
-| 2 | **Clic en el enlace de WhatsApp (BES)** | Evento de instrumentación (GTM/GA4) | `timestamp` · `pagina_origen` · `web_session_id` · `utm` |
-| 3 | **Visita agendada** | La escritura del prospecto (§4), propia del proyecto — no requiere lectura adicional | `lead_id` (= `session_uuid`) · `nombre` · `apellido` · `telefono` · `correo` · `club_id` · `fecha_visita` · `horario_visita` · `canal_origen` · `utm` |
-| 4 | **Visita realizada** | Lectura del CRM: estado de la visita del prospecto (agendada → realizada) | llave de conciliación (§6) · `fecha_realizada` |
-| 5 | **Membresía comprada** | CRM o, en su defecto, base periódica de membresías nuevas (corte semanal o mensual, según la operación del cliente — Anexo Uno, vía alternativa) | `nombre` · `apellido` · `telefono` · `club` · **`numero_membresia`** · `tipo_plan` · `fecha_activacion` |
-| 6 | **Membresía cancelada** | CRM o base periódica de cancelaciones | **`numero_membresia`** · `fecha_cancelacion` · `motivo` (si el CRM lo registra) · `club` · `tipo_plan` |
+| # | Etapa canónica | Etapa | Fuente | Campos |
+|---|---|---|---|---|
+| 1 | **C1** | **Tráfico a la página** | GA4 (agregado, sin datos personales) | `fecha` · `pagina` · `sesiones` · `tiempo_en_pagina` · `punto_salida` · `utm` |
+| 2 | **C2** | **Clic en el enlace de WhatsApp (BES)** | Evento de instrumentación (GTM/GA4) | `timestamp` · `pagina_origen` · `web_session_id` · `utm` |
+| 3 | **E4** | **Visita agendada** | La escritura del prospecto (§4), propia del proyecto — no requiere lectura adicional | `lead_id` (= `session_uuid`) · `nombre` · `apellido` · `telefono` · `correo` · `club_id` · `fecha_visita` · `horario_visita` · `canal_origen` · `utm` |
+| 4 | **E5** | **Visita realizada** | Lectura del CRM: estado de la visita del prospecto (agendada → realizada) | llave de conciliación (§6) · `fecha_realizada` |
+| 5 | **E6** | **Membresía comprada** | CRM o, en su defecto, base periódica de membresías nuevas (corte semanal o mensual, según la operación del cliente — Anexo Uno, vía alternativa) | `nombre` · `apellido` · `telefono` · `club` · **`numero_membresia`** · `tipo_plan` · `fecha_activacion` |
+| 6 | **E7** | **Membresía cancelada** | CRM o base periódica de cancelaciones | **`numero_membresia`** · `fecha_cancelacion` · `motivo` (si el CRM lo registra) · `club` · `tipo_plan` |
 
 La etapa 6 habilita además el **análisis de retención**: al vincular cada cancelación con el perfil de origen del funnel (objetivo, club, canal, campaña), el dashboard puede presentar qué segmentos cancelan más y alimentar las decisiones de retención.
 
 ## 6 · Llaves de conciliación entre etapas
+
+Los tramos siguientes usan la numeración de la tabla de §5, amarrada a los códigos del **[Mapa del Funnel](#funnel)** (C1, C2, E4–E7).
 
 | Tramo | Llave | Nota |
 |---|---|---|

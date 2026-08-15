@@ -32,7 +32,7 @@ Glosario único y compartido por toda la documentación del proyecto. Cada docum
 | **CTR (tasa de clics)** | Proporción de clics respecto de las visualizaciones de un anuncio o resultado; métrica de campaña que el dashboard reporta por origen (Meta, TikTok, web). |
 | **DNS** | Sistema de nombres de dominio; traduce sportsworld.com.mx a las direcciones de red y enruta también el correo (registros MX). |
 | **ERP** | Sistema de planificación de recursos empresariales; software que integra la operación interna (finanzas, inventario, membresías, etc.) de la organización. |
-| **funnel (embudo)** | Secuencia de etapas por las que avanza un prospecto (lead → contacto → cuestionario → visita → membresía); el dashboard lo mide etapa por etapa para ubicar dónde se pierde a los prospectos. |
+| **funnel (embudo)** | Secuencia de etapas por las que avanza un prospecto, del primer contacto con la marca a la membresía y su eventual cancelación. Sus etapas, su definición operativa, su fuente y el responsable de cada acceso están definidos en un solo lugar: el **[Mapa del Funnel](#funnel)**, documento canónico de medición. Ningún otro documento define etapas propias. El dashboard lo mide etapa por etapa para ubicar dónde se pierde a los prospectos. |
 | **GA4 (Google Analytics 4)** | Plataforma de analítica de Google para medir tráfico y comportamiento del usuario. |
 | **GBP (Google Business Profile)** | Perfil de empresa de Google (las "fichas" por club) que aparece en Google Search y Maps. |
 | **HMAC / HMAC-SHA256** | Firma criptográfica que autentica un mensaje (p. ej. un webhook) y garantiza que no fue alterado. |

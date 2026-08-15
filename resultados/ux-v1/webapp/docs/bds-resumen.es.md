@@ -47,5 +47,5 @@ Es además el único canal donde el recorrido individual se puede seguir complet
 | [**Flujo de conversión**](#bds-flujo) | El proceso end-to-end y el árbol de enrutamiento |
 | [**Canales, enrutamiento y SLA**](#bds-canales) | Reglas human-first, respaldo con "BES", horarios y el SLA de contacto |
 | [**Estrategia Técnica · BDS**](#bds-tecnica) | WhatsApp Business API, "BES" por WhatsApp, consola de operadores, reutilización del cuestionario y el middleware/CRM |
-| [**Medición · Funnel del BDS**](#bds-medicion) | Speed-to-lead por canal y operador, hasta membresía |
+| [**BDS · Medición y funnel**](#bds-medicion) | Speed-to-lead por canal y operador, sobre la espina única del **[Mapa del Funnel](#funnel)** |
 | [**Addendum del BDS**](#bds-anexo) | Alcance, entregables y contraprestación adicional |

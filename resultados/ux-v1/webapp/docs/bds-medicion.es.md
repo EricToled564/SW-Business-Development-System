@@ -46,7 +46,7 @@ El dashboard atribuye cada resultado a su **origen**, de extremo a extremo:
 ## Cómo se conecta con lo ya existente
 
 - Las etapas **tráfico → visita agendada** y las métricas on-page (tiempo en página, punto de salida) se miden con **Google (GA4, Search Console)** — recursos ya enumerados en el **[Contrato · Anexo Uno E.4](#contrato:bloque-e-aportaciones-de-marketing-y-marca-a-cargo-del-cliente)**.
-- Las etapas **visita agendada → proporcionada → nueva membresía** las provee el **CRM (vía middleware)**.
+- Las etapas **E4 visita agendada → E5 visita realizada → E6 nueva membresía** del **[Mapa del Funnel](#funnel)** las provee el **CRM (vía middleware)**.
 - El BDS **añade** la etapa de **primer contacto** y el eje de **tiempo**, que son propios de la captación en tiempo real.
 
 Así, la dirección ve en un solo tablero el **impacto real** del sistema: no solo cuántos leads entran, sino **qué tan rápido se atienden y cuántos terminan en membresía**.

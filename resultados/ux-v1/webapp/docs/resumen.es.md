@@ -99,7 +99,7 @@ Aquí es donde la infraestructura se vuelve legible. Cada club, cada amenidad y 
 
 ### 4 · Cómo lo vive el usuario
 
-La arquitectura está diseñada para que cada recorrido termine en cita agendada, no en abandono. Un prospecto que busca una solución concreta aterriza en la página correcta, responde un cuestionario breve que personaliza su recorrido, recibe una recomendación con el club y las clases más adecuadas para su perfil, y agenda su visita, todo en una sola sesión: **bienvenida → cuestionario → resultado → captura de contacto → agendado → briefing para el asesor**. Ese recorrido produce las dos caras del producto: la **experiencia ideal** que ve el prospecto y el **brief** que recibe el asesor.
+La arquitectura está diseñada para que cada recorrido termine en cita agendada, no en abandono. Cada paso de ese recorrido corresponde a una etapa medida del **[Mapa del Funnel](#funnel)**. Un prospecto que busca una solución concreta aterriza en la página correcta, responde un cuestionario breve que personaliza su recorrido, recibe una recomendación con el club y las clases más adecuadas para su perfil, y agenda su visita, todo en una sola sesión: **bienvenida → cuestionario → resultado → captura de contacto → agendado → briefing para el asesor**. Ese recorrido produce las dos caras del producto: la **experiencia ideal** que ve el prospecto y el **brief** que recibe el asesor.
 
 Este recorrido resuelve tres obstáculos concretos del sitio actual:
 
