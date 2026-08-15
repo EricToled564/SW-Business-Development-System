@@ -1,7 +1,7 @@
 # Sports World México · Resumen Ejecutivo · V1.0
-## Un cuestionario, una experiencia ideal: la captación digital de Sports World en todo canal
+## El sistema de ventas de Sports World: de catálogo a experiencia ideal, en todos los canales
 
-El eje de **todo** el proyecto —Proyecto A, Proyecto B y Proyecto C— es uno solo: **un cuestionario y una experiencia ideal**, aplicados de la misma forma sin importar el canal por el que llegue el prospecto, y enseñados de la misma forma a quien los aplica. Este documento da la visión de conjunto de los tres proyectos y desarrolla, además, el **Rediseño Web** con mayor detalle: su implementación insignia. Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación digital que la marca requiere: rastreable por Google, centrada en el usuario que busca y operada con inteligencia artificial al servicio del socio. Cada afirmación se desarrolla a detalle en los documentos que lo acompañan: Arquitectura de Experiencia (incluido el Mapa del Sitio), Estrategia Técnica, Plan de Ejecución, Auditoría inicial, el Contrato y los módulos BDS y Academia.
+Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente: los 49 clubes, sus amenidades y su oferta de clases se presentan hoy como un **catálogo que el usuario debe descifrar por su cuenta**, sin conexión con lo que busca lograr. **El proyecto no agrega infraestructura: la vuelve legible — y con eso, vendible.** Lo que se construye —Proyectos A, B y C— es un solo sistema: la **reestructuración de la captación y la conversión de Sports World**, que integra todos sus canales y convierte esa infraestructura en un producto claro y estructurado —**la experiencia ideal**— conectado con los objetivos emocionales y prácticos de cada persona. Este documento da la visión de conjunto de los tres proyectos y desarrolla, además, el **Rediseño Web** con mayor detalle: su implementación insignia. Ocho semanas para convertir sportsworld.com.mx en la plataforma de captación digital que la marca requiere: rastreable por Google, centrada en el usuario que busca y operada con inteligencia artificial al servicio del socio. Cada afirmación se desarrolla a detalle en los documentos que lo acompañan: Arquitectura de Experiencia (incluido el Mapa del Sitio), Estrategia Técnica, Plan de Ejecución, Auditoría inicial, el Contrato y los módulos BDS y Academia.
 
 | Ficha | |
 |---|---|
@@ -11,9 +11,23 @@ El eje de **todo** el proyecto —Proyecto A, Proyecto B y Proyecto C— es uno 
 | **Estabilización posterior** | 2 a 4 semanas |
 | **Documento** | Resumen Ejecutivo · Junio 2026 · Confidencial |
 
-## El sistema completo: un cuestionario, una experiencia ideal, todo canal
+## El sistema completo: cinco niveles, tres capas
 
-Sports World necesita atender al prospecto en **cualquier canal** donde muestre interés, y necesita que quien lo atiende —sitio, WhatsApp o asesor en el club— lo haga con el mismo criterio. Lo que hace a esto un solo sistema —y no tres sistemas paralelos— es que **el cuestionario y la experiencia ideal son únicos**: se aplican una sola vez, se definen una sola vez, se enseñan una sola vez, y cada proyecto solo cambia **quién** los aplica, **por dónde** llegan o **cómo se practican**:
+Lo que se construye no es un sitio web ni un cuestionario: es un sistema con una **promesa doble**. A cada persona le demuestra que Sports World **sabe** qué se requiere para lograr su objetivo, y que **tiene la infraestructura** para cumplirlo — el club cerca de ella, la alberca, FitKidz, los entrenadores personales y una disponibilidad de clases grupales que, combinada y estructurada para su objetivo, ninguna otra marca del mercado ofrece. Ninguna de las dos afirmaciones convence por separado; juntas son la propuesta de valor.
+
+El sistema opera en cinco niveles, cada uno con una función distinta:
+
+| Nivel | Qué es | Dónde vive |
+|---|---|---|
+| **El sistema** | La captación y conversión de demanda, con todos los canales integrados: sitio, agente BES, WhatsApp y consola interna. | Proyectos A + B |
+| **El producto** | La **experiencia ideal**, con dos destinatarios: el cliente recibe su experiencia; el asesor recibe el **brief** que la traduce en argumentos de cierre. | Proyecto A |
+| **La capacidad humana** | La **Academia**: entrena a los asesores en el mismo concepto que el sistema produce — el método de venta deja de ser improvisado. | Proyecto C |
+| **El instrumento** | El **cuestionario dinámico**: un minuto del prospecto, idéntico en los cuatro canales. | Compartido |
+| **La prueba** | El **funnel completo** —del clic a la membresía y a la cancelación—, con línea base por club y canal, operado de forma permanente. | Proyecto A + iguala |
+
+### Tres capas, un solo concepto
+
+Lo que hace a esto un solo sistema —y no tres proyectos paralelos— es que **un mismo concepto lo atraviesa de punta a punta**: el cliente lo recibe como su experiencia ideal, el asesor lo recibe traducido a argumentos de cierre en el brief, y la Academia lo entrena como método. Hoy el sitio dice una cosa y el asesor improvisa otra —dos ventas distintas para el mismo cliente—; con el sistema, la conversación es continua desde el primer clic hasta el cierre. Cada proyecto solo cambia **quién** aplica el concepto, **por dónde** llega o **cómo se practica**:
 
 - **Proyecto A · Rediseño Web.** El canal donde nace y se implementa el cuestionario: el sitio de 148 páginas rastreable por Google, el agente BES por voz y texto, la integración con el CRM vía middleware y el funnel/dashboard de medición. Se desarrolla más adelante en este mismo documento.
 - **Proyecto B · Business Development System (alcance y costo aparte).** Extiende el **mismo** cuestionario y la **misma** experiencia ideal a **WhatsApp**: leads de campañas atendidos por **operadores humanos** en tiempo real, con **BES por WhatsApp (solo texto)** de respaldo 24/7, más el **rol de operador sobre la consola interna del Proyecto A** para asesores y walk-ins. Ver **[BDS · Resumen Ejecutivo](#bds-resumen)**.
