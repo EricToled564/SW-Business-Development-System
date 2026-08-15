@@ -3,7 +3,7 @@
 
 Este documento fija el **funnel único** del proyecto: sus canales de entrada, sus etapas, la definición operativa de cada una, la fuente exacta de la que se obtiene el dato y el responsable de otorgar el acceso correspondiente. Es la referencia canónica de medición para los tres proyectos y para el tablero ejecutivo.
 
-> **Documento canónico.** La documentación del proyecto contiene hoy tres definiciones distintas de funnel —la Estrategia Técnica (§10), la Medición del BDS y la Integración de Datos (§5)—. **Este mapa las sustituye.** Los documentos citados se alinean a esta definición en la revisión correspondiente.
+> **Documento canónico de medición.** Este mapa fija la definición única del funnel para todo el proyecto. Cualquier otro documento que se refiera a etapas, canales o tasas de conversión remite aquí: la Estrategia Técnica, la Medición del BDS y la Integración de Datos lo citan como fuente.
 
 ---
 
