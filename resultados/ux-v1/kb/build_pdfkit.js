@@ -23,7 +23,7 @@ const DOCS = [
   { src: SRC + "/auditoria.es.md", kind: "md", title: "Auditoría inicial del sitio — El Gigante Invisible", out: "07-auditoria-inicial.es.pdf" },
   { src: SRC + "/minuta-2026-06-22.es.md", kind: "md", title: "Minuta — Reunión 22 de junio de 2026", out: "08-minuta-2026-06-22.es.pdf" },
   { src: SRC + "/seguimiento-2026-06-22.es.md", kind: "md", title: "Seguimiento — Reunión 22 de junio de 2026", out: "09-seguimiento-2026-06-22.es.pdf" },
-  { src: SRC + "/seguridad.es.md", kind: "md", title: "Seguridad del sitio — Protección de datos personales", out: "10-seguridad-del-sitio.es.pdf" },
+  { src: SRC + "/seguridad.es.md", kind: "md", title: "Seguridad del sistema — Protección de datos personales", out: "10-seguridad-del-sistema.es.pdf" },
   { src: SRC + "/aportaciones.es.md", kind: "md", title: "Status de Entregables Sports World — Sistemas y Marketing", out: "11-status-entregables-sports-world.es.pdf" },
   { src: SRC + "/glosario.es.md", kind: "md", title: "Glosario — Términos técnicos y de negocio", out: "12-glosario.es.pdf" },
   { src: SRC + "/roi.es.md", kind: "md", title: "Calculadora de ROI — Modelo de cohortes con churn", out: "14-calculadora-roi.es.pdf" },
