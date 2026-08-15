@@ -702,7 +702,7 @@ Los sistemas de registro son propiedad de Sports World, pero **sus contratos de 
 - **Directorio de clubes y estatus operativo:** tabla `clubes`, sincronización diaria (**§3.1**).
 - **Catálogo y horarios de clases:** tabla `clases`, con día de la semana, hora de inicio y término, y las fechas de la semana visible (**§3.2**).
 
-Lo que permanece a cargo de Sports World no es la definición sino **la entrega**: las credenciales, la documentación del API y los puntos de acceso enumerados en el Anexo Uno (Bloques A, B y D) y en el **[Mapa del Funnel · §6](#funnel:6-lo-que-hoy-falta-pedir)**.
+Lo que permanece a cargo de Sports World no es la definición sino **la entrega**: las credenciales, la documentación del API y los puntos de acceso enumerados en el Anexo Uno (Bloques A, B y D) y en el **[Mapa del Funnel · §6](#funnel:6-los-tres-datos-de-cierre)**.
 
 ---
 
