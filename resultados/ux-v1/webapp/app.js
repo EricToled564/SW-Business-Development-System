@@ -7,7 +7,7 @@
       suite: "Proyecto Digital",
       search: "Buscar en esta sección…",
       onthispage: "En esta página",
-      groups: { generales: "El sistema · marco y contrato", evidencia: "La evidencia", proyectoA: "Proyecto A · Rediseño Web — captación y conversión", bds: "Proyecto B · BDS — canales en tiempo real", academia: "Proyecto C · Academia — capacidad humana" },
+      groups: { generales: "El sistema · marco y contrato", evidencia: "La evidencia", reuniones: "Reuniones", medicion: "La medición · el funnel completo", proyectoA: "Proyecto A · Rediseño Web — captación y conversión", bds: "Proyecto B · BDS — canales en tiempo real", academia: "Proyecto C · Academia — capacidad humana" },
       loading: "Cargando…",
       error:
         "No se pudo cargar el documento. Sirve esta carpeta por HTTP (por ejemplo, ejecuta «python3 -m http.server» dentro de la carpeta webapp) y vuelve a cargar.",
@@ -25,7 +25,7 @@
       suite: "Digital Project",
       search: "Search this section…",
       onthispage: "On this page",
-      groups: { generales: "The System · Framework & Contract", evidencia: "The Evidence", proyectoA: "Project A · Web Redesign — Capture & Conversion", bds: "Project B · BDS — Real-Time Channels", academia: "Project C · Academy — Human Capability" },
+      groups: { generales: "The System · Framework & Contract", evidencia: "The Evidence", reuniones: "Meetings", medicion: "Measurement · The Full Funnel", proyectoA: "Project A · Web Redesign — Capture & Conversion", bds: "Project B · BDS — Real-Time Channels", academia: "Project C · Academy — Human Capability" },
       loading: "Loading…",
       error:
         "Could not load the document. Serve this folder over HTTP (e.g. run “python3 -m http.server” inside the webapp folder) and reload.",
@@ -67,10 +67,10 @@
       title: { es: "Arquitectura de Experiencia (UX)", en: "Experience Architecture (UX)" } },
     { id: "technical", type: "doc", group: "proyectoA", pdf: "02-estrategia-tecnica.es.pdf",
       title: { es: "Estrategia Técnica", en: "Technical Strategy" } },
-    { id: "integracion", type: "doc", group: "proyectoA", pdf: "31-integracion-datos.es.pdf",
-      title: { es: "Integración de Datos · CRM y Funnel", en: "Data Integration · CRM & Funnel" } },
-    { id: "funnel", type: "doc", group: "proyectoA", pdf: "32-mapa-del-funnel.es.pdf",
+    { id: "funnel", type: "doc", group: "medicion", pdf: "32-mapa-del-funnel.es.pdf",
       title: { es: "Mapa del Funnel · fuentes y accesos", en: "Funnel Map · Sources & Access" } },
+    { id: "integracion", type: "doc", group: "medicion", pdf: "31-integracion-datos.es.pdf",
+      title: { es: "Integración de Datos · CRM y Funnel", en: "Data Integration · CRM & Funnel" } },
     { id: "seguridad", type: "doc", group: "proyectoA", pdf: "10-seguridad-del-sistema.es.pdf",
       title: { es: "Seguridad del sistema", en: "System Security" } },
     { id: "bds-resumen", type: "doc", group: "bds", pdf: "15-bds-resumen.es.pdf",
@@ -101,9 +101,9 @@
       title: { es: "Academia · Addendum contractual", en: "Academy · Contract Addendum" } },
     { id: "aportaciones", type: "doc", group: "proyectoA",
       title: { es: "Status de Entregables Sports World", en: "Sports World Deliverables Status" } },
-    { id: "minuta-2026-06-22", type: "doc", group: "evidencia", pdf: "08-minuta-2026-06-22.es.pdf",
+    { id: "minuta-2026-06-22", type: "doc", group: "reuniones", pdf: "08-minuta-2026-06-22.es.pdf",
       title: { es: "Minuta · 22 jun 2026", en: "Minutes · Jun 22, 2026" } },
-    { id: "seguimiento-2026-06-22", type: "doc", group: "evidencia", pdf: "09-seguimiento-2026-06-22.es.pdf",
+    { id: "seguimiento-2026-06-22", type: "doc", group: "reuniones", pdf: "09-seguimiento-2026-06-22.es.pdf",
       title: { es: "Seguimiento · 22 jun 2026", en: "Follow-up · Jun 22, 2026" } },
     { id: "auditoria", type: "doc", group: "evidencia", pdf: "07-auditoria-inicial.es.pdf",
       title: { es: "Auditoría inicial del sitio", en: "Initial site audit" } },
@@ -114,9 +114,9 @@
     { id: "entrevistas-campo", type: "doc", group: "evidencia", pdf: "30-reporte-entrevistas.es.pdf",
       title: { es: "Reporte de Entrevistas de Campo", en: "Field Interviews Report" } },
   ];
-  const GROUP_ORDER = ["generales", "evidencia", "proyectoA", "bds", "academia"];
+  const GROUP_ORDER = ["generales", "medicion", "evidencia", "reuniones", "proyectoA", "bds", "academia"];
 
-  let lang = localStorage.getItem("swux.lang") || ((navigator.language || "es").toLowerCase().startsWith("en") ? "en" : "es");
+  let lang = "es"; // sección del cliente: solo español (ver index.html)
   let currentDoc = null;
   let embedFit = null; // handler que ajusta la altura del iframe del demo a la ventana realmente visible
   const cache = {};
@@ -206,7 +206,7 @@
   /* ---------- UI ---------- */
   function t() { return I18N[lang]; }
 
-  const GROUP_TITLE_RED = ["proyectoA", "bds", "academia"];
+  const GROUP_TITLE_RED = ["medicion", "proyectoA", "bds", "academia"];
 
   function renderSidebar() {
     const groups = {};

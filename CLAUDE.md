@@ -29,7 +29,7 @@ Un mismo concepto atraviesa el sistema de punta a punta: el cliente lo recibe co
 
 ## Qué NO se toca
 
-- **El contrato y los tres anexos oficiales** (`contrato.es.md`, `bds-anexo`, `academia-anexo`): son documentos legales. Cualquier ajuste es decisión de Legal, no editorial. Sus PDFs tienen candado en `build_pdfkit.js` — no quitarlo.
+- **Los tres documentos contractuales** (`contrato.es.md`, `bds-anexo`, `academia-anexo`): están en **etapa de revisión** y sus markdown son la fuente de verdad. Sus PDFs **sí se regeneran** con `build_pdfkit.js` (el candado se retiró en agosto de 2026). Todo cambio de fondo requiere autorización expresa de Eric y queda documentado en `PAQUETE-LEGAL.md`. Las versiones firmadas anteriores se conservan en `/versiones-del-contrato/oficiales/` y no se tocan.
 - **`minuta-2026-06-22.es.md`**: registro histórico. Reescribirlo falsifica lo que se dijo ese día. (`seguimiento-2026-06-22.es.md` sí es un tablero vivo y se actualiza.)
 
 ## Decisiones ya fijadas
@@ -37,7 +37,7 @@ Un mismo concepto atraviesa el sistema de punta a punta: el cliente lo recibe co
 - **Sincronización con el CRM: corte diario 06:00 (CDMX).** Lo registrado hasta las 05:59 se publica ese día. Sustituye toda lectura "en tiempo real" de precios y clases. Existe sincronización manual inmediata para casos excepcionales (promociones).
 - **Llaves de conciliación:** lead → visita → membresía por **nombre + apellido + teléfono + club**; membresía → cancelación por **número de membresía**. Sustituye la llave de código postal del Anexo Uno.
 - **Funnel canónico:** `docs/funnel.es.md`. Tres puertas de entrada (sitio, WhatsApp, consola), una espina de conversión, dos ejes transversales. Sustituye las definiciones de `technical` §10, `bds-medicion` e `integracion` §5.
-- **Agrupación del depósito:** El sistema · La evidencia · Proyecto A (captación y conversión) · Proyecto B (canales en tiempo real) · Proyecto C (capacidad humana).
+- **Agrupación del depósito:** El sistema · **La medición (funnel + integración)** · La evidencia · **Reuniones** · Proyecto A (captación y conversión) · Proyecto B (canales en tiempo real) · Proyecto C (capacidad humana).
 - **Idiomas:** la sección del cliente es **solo español**. El bilingüe corresponde a las secciones de líderes de subproyecto (entregable aparte, aún no construido). Los `.en.md` existentes no se tocan ni se borran.
 - **Los planes de membresía vienen del CRM**, no se congelan en la documentación. El contrato fija seis páginas de membresía, sin nombrarlas.
 
@@ -46,25 +46,20 @@ Un mismo concepto atraviesa el sistema de punta a punta: el cliente lo recibe co
 - Fuente de verdad: `resultados/ux-v1/webapp/docs/*.es.md`.
 - Registro de cada documento en `resultados/ux-v1/webapp/app.js` (id, grupo, PDF) y en `indice.es.md`.
 - PDFs con el pipeline de casa: `resultados/ux-v1/kb/build_pdfkit.js` (pdfkit). Nunca a mano.
-- Verificación obligatoria antes de publicar: `node tools/audit-docs.js` desde `resultados/ux-v1`.
+- Verificación obligatoria antes de publicar, desde `resultados/ux-v1`, las dos:
+  - `node tools/audit-docs.js` — archivos, referencias, enlaces, fuente de verdad, trazabilidad, marcadores, glosario.
+  - `node tools/consistencia.js` — las invariantes del proyecto (corte 06:00, funnel canónico, llave de conciliación, especificación única de servidor, cifras clave, línea base de KPIs). Deja el reporte de cobertura en `tools/consistencia-report.md`. Ambas corren en CI y fallan la corrida ante cualquier hallazgo.
+- **Cada invariante nueva se agrega como regla en `consistencia.js`, no a una lista de pendientes.** Una contradicción corregida sin regla que la sostenga vuelve a aparecer.
 - Un commit por documento, con su nombre en el mensaje, para que cualquier cambio sea reversible por separado.
 - Rama de trabajo: `claude/new-session-1apjew`. Publicado en https://erictoled564.github.io/SW-Business-Development-System/
 
-## Contradicciones detectadas y pendientes de corregir
+## Estado de las contradicciones
 
-Auditoría completa (29 documentos al 100%, contrato al 81%). Pendiente de corregir:
+**Cerradas: las nueve de la auditoría, más las que surgieron al someter el Contrato a las reglas.** Ya no se llevan en lista: cada una tiene una regla que la sostiene en `tools/consistencia.js` (16 reglas, 0 hallazgos, corre en CI). Si algo vuelve a aparecer, lo detecta el programa, no la memoria.
 
-1. **Frecuencia de sincronización** — `technical:28`, `experience:678-690` y `contrato:336` contradicen el corte 06:00.
-2. **Etapas del funnel** — `technical:127-139`, `execution:12`, `bds-medicion:6-17` y `contrato:481` traen tres definiciones distintas; `funnel.es.md` es la canónica.
-3. **Llave de conciliación** — `bds-medicion:41` y `contrato:338` mantienen la llave vieja.
-4. **Especificación del servidor** — `execution:104-110` (8 vCPU / 16 GB / picos 5×) contra `integracion` §8 (4 vCPU / 8 GB / ráfaga 10×). **Dos especificaciones del mismo servidor, ambas publicadas.**
-5. **Nombres de plan congelados** — `experience:899-906` fija cinco URLs con nombre comercial.
-6. **Glosario** — no define "experiencia ideal" ni "cuestionario".
-7. **`seguridad.es.md`** — escrito solo para el sitio; no cubre WhatsApp, consola ni la base del funnel.
-8. **Evidencia** — `workshop-discovery:39` y `entrevistas-campo:41` cierran en "Proyectos A y B" y omiten la Academia.
-9. **`experience` §5.4** — declara abiertas dependencias que ya quedaron definidas en `integracion`.
+Los tres puntos que estaban anclados en el Contrato —frecuencia de sincronización, etapas del funnel y llave de conciliación— **quedaron incorporados al texto** en agosto de 2026, con autorización expresa de Eric por encontrarse el Contrato en etapa de revisión. Ver `PAQUETE-LEGAL.md` para el detalle de los ocho ajustes.
 
-**Tres de estas contradicciones están ancladas en el contrato** (frecuencia, funnel de cuatro etapas, llave de conciliación): requieren ajuste con Legal, no corrección editorial.
+Los PDFs del depósito ya reflejan el texto vigente: el Contrato como V4.3 (39 págs) y los dos addenda regenerados. **No queda ningún pendiente abierto.**
 
 ## Activos que ya existen (no reconstruir)
 

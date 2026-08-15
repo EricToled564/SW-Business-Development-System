@@ -25,7 +25,7 @@ Este diseño tiene tres consecuencias operativas:
 
 > **Regla de corte diario (06:00).** La sincronización se ejecuta todos los días a las **06:00 horas de la Ciudad de México**. Todo cambio registrado en el CRM **hasta las 05:59** se publica ese mismo día **a partir de las 06:00**; los cambios registrados después del corte se publican al día siguiente. En consecuencia, la ventana operativa de Sports World para registrar una nueva promoción, una nueva tarifa o un cambio de clases es **de las 06:01 del día anterior a las 05:59 del día de publicación**. Para casos excepcionales, la sección de administración incluye una opción de **sincronización manual inmediata**.
 >
-> Esta regla sustituye la lectura en tiempo real de precios y clases descrita en el Anexo Uno (nota de frecuencia de actualización); el ajuste se reflejará en la próxima revisión del Anexo. El cambio **reduce los requerimientos hacia el CRM de Sports World**: una consulta programada al día en lugar de un flujo continuo, y un SLA de latencia que solo resulta crítico en la creación del prospecto (§7).
+> El corte diario rige para todo el catálogo —clubes, clases, horarios, tarifas, descuentos y promociones— y así consta en el Anexo Uno. Frente a una lectura continua, **reduce los requerimientos hacia el CRM de Sports World**: una consulta programada al día en lugar de un flujo permanente, y un SLA de latencia que solo resulta crítico en la creación del prospecto (§7).
 
 ## 2 · Alcance de canales: dónde opera BES
 
@@ -109,22 +109,24 @@ Existe **una sola operación de escritura**, compartida por los tres canales de 
 
 ## 5 · Base de datos del funnel
 
-> **Reparto con el Mapa del Funnel.** La definición de las etapas, su definición operativa, las fuentes y los responsables de cada acceso viven en el **[Mapa del Funnel](#funnel)**. Aquí se especifica únicamente **la estructura de datos**: qué campos guarda cada etapa y con qué llaves se unen.
+> **Reparto con el Mapa del Funnel.** La definición de las etapas, su definición operativa, las fuentes y los responsables de cada acceso viven en el **[Mapa del Funnel](#funnel)**. Aquí se especifica únicamente **la estructura de datos**: qué campos guarda cada etapa y con qué llaves se unen. La columna **etapa canónica** amarra cada tabla de esta base al código del Mapa del Funnel (C1, C2, E4–E7), para que no existan dos numeraciones de lo mismo.
 
 El funnel completo reside en una base de datos **dentro de la infraestructura de Sports World** (el servidor del Bloque F, dimensionado en el **[Plan de Ejecución · §4](#execution:4-el-servidor-donde-corre-el-sitio)**), de modo que los datos personales nunca residen en sistemas de EL PRESTADOR (Cláusula Décima Octava). Extiende las cuatro etapas del funnel contractual (tráfico → visita agendada → visita proporcionada → nueva membresía, Anexo Dos) con dos etapas adicionales de operación: el **clic al WhatsApp de BES** al inicio y las **membresías canceladas** al cierre.
 
-| # | Etapa | Fuente | Campos |
-|---|---|---|---|
-| 1 | **Tráfico a la página** | GA4 (agregado, sin datos personales) | `fecha` · `pagina` · `sesiones` · `tiempo_en_pagina` · `punto_salida` · `utm` |
-| 2 | **Clic en el enlace de WhatsApp (BES)** | Evento de instrumentación (GTM/GA4) | `timestamp` · `pagina_origen` · `web_session_id` · `utm` |
-| 3 | **Visita agendada** | La escritura del prospecto (§4), propia del proyecto — no requiere lectura adicional | `lead_id` (= `session_uuid`) · `nombre` · `apellido` · `telefono` · `correo` · `club_id` · `fecha_visita` · `horario_visita` · `canal_origen` · `utm` |
-| 4 | **Visita realizada** | Lectura del CRM: estado de la visita del prospecto (agendada → realizada) | llave de conciliación (§6) · `fecha_realizada` |
-| 5 | **Membresía comprada** | CRM o, en su defecto, base periódica de membresías nuevas (corte semanal o mensual, según la operación del cliente — Anexo Uno, vía alternativa) | `nombre` · `apellido` · `telefono` · `club` · **`numero_membresia`** · `tipo_plan` · `fecha_activacion` |
-| 6 | **Membresía cancelada** | CRM o base periódica de cancelaciones | **`numero_membresia`** · `fecha_cancelacion` · `motivo` (si el CRM lo registra) · `club` · `tipo_plan` |
+| # | Etapa canónica | Etapa | Fuente | Campos |
+|---|---|---|---|---|
+| 1 | **C1** | **Tráfico a la página** | GA4 (agregado, sin datos personales) | `fecha` · `pagina` · `sesiones` · `tiempo_en_pagina` · `punto_salida` · `utm` |
+| 2 | **C2** | **Clic en el enlace de WhatsApp (BES)** | Evento de instrumentación (GTM/GA4) | `timestamp` · `pagina_origen` · `web_session_id` · `utm` |
+| 3 | **E4** | **Visita agendada** | La escritura del prospecto (§4), propia del proyecto — no requiere lectura adicional | `lead_id` (= `session_uuid`) · `nombre` · `apellido` · `telefono` · `correo` · `club_id` · `fecha_visita` · `horario_visita` · `canal_origen` · `utm` |
+| 4 | **E5** | **Visita realizada** | Lectura del CRM: estado de la visita del prospecto (agendada → realizada) | llave de conciliación (§6) · `fecha_realizada` |
+| 5 | **E6** | **Membresía comprada** | CRM o, en su defecto, base periódica de membresías nuevas (corte semanal o mensual, según la operación del cliente — Anexo Uno, vía alternativa) | `nombre` · `apellido` · `telefono` · `club` · **`numero_membresia`** · `tipo_plan` · `fecha_activacion` |
+| 6 | **E7** | **Membresía cancelada** | CRM o base periódica de cancelaciones | **`numero_membresia`** · `fecha_cancelacion` · `motivo` (si el CRM lo registra) · `club` · `tipo_plan` |
 
 La etapa 6 habilita además el **análisis de retención**: al vincular cada cancelación con el perfil de origen del funnel (objetivo, club, canal, campaña), el dashboard puede presentar qué segmentos cancelan más y alimentar las decisiones de retención.
 
 ## 6 · Llaves de conciliación entre etapas
+
+Los tramos siguientes usan la numeración de la tabla de §5, amarrada a los códigos del **[Mapa del Funnel](#funnel)** (C1, C2, E4–E7).
 
 | Tramo | Llave | Nota |
 |---|---|---|
@@ -134,7 +136,7 @@ La etapa 6 habilita además el **análisis de retención**: al vincular cada can
 
 > **Requisito crítico para Sports World:** la base o lectura de **membresías nuevas (etapa 5) debe incluir el `numero_membresia` y el `telefono`** del nuevo socio. Sin el número de membresía, las cancelaciones no pueden vincularse con el funnel; sin el teléfono, la compra no puede vincularse con el lead que la originó.
 
-> **Ajuste al Anexo Uno.** El Anexo Uno describe la conciliación de membresías nuevas por *nombre y apellido, con el código postal como verificación*. Esta especificación la sustituye por **nombre + apellido + teléfono + club**, llave más confiable; el ajuste se reflejará en la próxima revisión del Anexo. El principio se mantiene intacto: la conciliación ocurre **dentro del servidor de Sports World** y el dashboard presenta **únicamente resultados agregados**.
+> **Dónde ocurre la conciliación.** El cruce se realiza **dentro del servidor de Sports World** (Bloque F del Anexo Uno) y el dashboard presenta **únicamente resultados agregados**: los datos personales de la base de membresías **no residen en sistemas de EL PRESTADOR**.
 
 ## 7 · Requerimientos técnicos al CRM para esta integración
 

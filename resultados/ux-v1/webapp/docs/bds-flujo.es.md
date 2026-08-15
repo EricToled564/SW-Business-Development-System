@@ -21,7 +21,7 @@ Un lead puede entrar al BDS por cualquiera de estos orígenes, y **todos converg
 5. **Agenda.** Se **agenda la visita guiada en el momento** (día y hora dentro del horario de atención del club).
 6. **Escritura al CRM.** El lead cualificado —perfil, club, visita— se registra en el CRM por la **misma escritura idempotente** que usa el sitio (sin duplicados).
 7. **Confirmación y recordatorios.** El prospecto recibe la confirmación; se disparan los **2 recordatorios por WhatsApp** (24 h y 2 h antes); el asesor asignado recibe el **brief del comprador potencial** antes de la visita.
-8. **Medición.** Cada transición alimenta el **funnel del BDS** (ver [Medición](#bds-medicion)).
+8. **Medición.** Cada transición alimenta la espina de conversión única del **[Mapa del Funnel](#funnel)** —el BDS no define etapas propias— y el eje de tiempo al primer contacto que le corresponde (ver **[BDS · Medición y funnel](#bds-medicion)**).
 
 ## El árbol de enrutamiento (human-first con respaldo de "BES")
 

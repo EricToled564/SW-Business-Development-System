@@ -37,15 +37,15 @@ Los indicadores se organizan en cuatro familias, alineadas a los cuatro niveles 
 | **Adopción y avance** (Fase 1) | % de asesores activos en la plataforma · módulos acreditados por nivel · tiempo a certificación de Fase 1 · calificación de acreditación por módulo | Plataforma de módulos | Desde el lanzamiento |
 | **Dominio y práctica** (Fase 2) | Puntaje de readiness por sesión y su tendencia · % del equipo certificado · cumplimiento del refuerzo de días 7/30/90 · adherencia a la cadencia semanal de mantenimiento | Agente de role-play y motor adaptativo | Desde el lanzamiento |
 | **Comportamiento en operación** (Nivel 3) | Uso de la herramienta de clasificación con prospectos reales · llamadas de hito ejecutadas vs. programadas · bases pasadas trabajadas bajo protocolo | CRM | Tras calibración de línea base |
-| **Resultado comercial** (Nivel 4) | Conversión por etapa del funnel (contacto → cita → asistencia → cierre), comparando cohortes certificadas vs. no certificadas · retención temprana de los socios inscritos por asesores certificados | CRM | Tras calibración; metas fijadas con Sports World |
+| **Resultado comercial** (Nivel 4) | Conversión por etapa de la espina de conversión del **[Mapa del Funnel](#funnel)** (E4 visita agendada → E5 visita realizada → E6 membresía), comparando cohortes certificadas vs. no certificadas · retención temprana de los socios inscritos por asesores certificados | CRM | Tras calibración; metas fijadas con Sports World |
 
 Cada familia se lee por asesor y en los tres niveles de agregación del dashboard (club, ciudad y nacional), de modo que un indicador rezagado se pueda atribuir a un asesor, a un club o a una ciudad — no a un promedio nacional que esconde el detalle.
 
 ## Por qué la línea base se calibra antes de comprometer KPIs
 
-Las 15 entrevistas de campo reportan una **variabilidad de hasta 40 veces** entre las tasas de conversión autorreportadas por los propios asesores:
+Las 15 entrevistas de campo reportan una **variabilidad de hasta 40 veces** entre las tasas de conversión autorreportadas por los propios asesores. Las etapas de la tabla siguiente usan el vocabulario del asesor en campo, no el del sistema: la línea base verificable se establece contra las etapas del **[Mapa del Funnel](#funnel)** leídas del CRM.
 
-| Etapa del funnel comercial | Rango reportado en campo | Qué revela |
+| Etapa de la conversación de venta (vocabulario del asesor) | Rango reportado en campo | Qué revela |
 |---|---|---|
 | Contacto a cita agendada | 10% – 50% | Falta de un speech inicial y filtro motivacional estandarizado |
 | Cita agendada a asistencia | 20% – 50% | Oportunidad de confirmación con valor y recordatorio automatizado |

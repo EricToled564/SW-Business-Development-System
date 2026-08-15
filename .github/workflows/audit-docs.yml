@@ -2,18 +2,21 @@ name: Auditoría de documentación
 
 on:
   push:
-    branches: [main, claude/serene-cray-06lv41]
+    branches: [main, claude/new-session-1apjew]
     paths:
       - "resultados/ux-v1/webapp/docs/**"
       - "resultados/ux-v1/webapp/app.js"
       - "resultados/ux-v1/kb/build_pdfkit.js"
       - "resultados/ux-v1/tools/audit-docs.js"
+      - "resultados/ux-v1/tools/consistencia.js"
+      - "resultados/ux-v1/webapp/index.html"
       - ".github/workflows/audit-docs.yml"
   pull_request:
     paths:
       - "resultados/ux-v1/webapp/docs/**"
       - "resultados/ux-v1/webapp/app.js"
       - "resultados/ux-v1/tools/audit-docs.js"
+      - "resultados/ux-v1/tools/consistencia.js"
   workflow_dispatch:
 
 permissions:
@@ -34,6 +37,10 @@ jobs:
       - name: Ejecutar auditoría de documentación
         working-directory: resultados/ux-v1
         run: node tools/audit-docs.js
+
+      - name: Verificar consistencia del depósito
+        working-directory: resultados/ux-v1
+        run: node tools/consistencia.js
 
       - name: Publicar reporte como artefacto
         if: always()

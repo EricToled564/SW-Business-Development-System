@@ -99,7 +99,7 @@ Aquí es donde la infraestructura se vuelve legible. Cada club, cada amenidad y 
 
 ### 4 · Cómo lo vive el usuario
 
-La arquitectura está diseñada para que cada recorrido termine en cita agendada, no en abandono. Un prospecto que busca una solución concreta aterriza en la página correcta, responde un cuestionario breve que personaliza su recorrido, recibe una recomendación con el club y las clases más adecuadas para su perfil, y agenda su visita, todo en una sola sesión: **bienvenida → cuestionario → resultado → captura de contacto → agendado → briefing para el asesor**. Ese recorrido produce las dos caras del producto: la **experiencia ideal** que ve el prospecto y el **brief** que recibe el asesor.
+La arquitectura está diseñada para que cada recorrido termine en cita agendada, no en abandono. Cada paso de ese recorrido corresponde a una etapa medida del **[Mapa del Funnel](#funnel)**. Un prospecto que busca una solución concreta aterriza en la página correcta, responde un cuestionario breve que personaliza su recorrido, recibe una recomendación con el club y las clases más adecuadas para su perfil, y agenda su visita, todo en una sola sesión: **bienvenida → cuestionario → resultado → captura de contacto → agendado → briefing para el asesor**. Ese recorrido produce las dos caras del producto: la **experiencia ideal** que ve el prospecto y el **brief** que recibe el asesor.
 
 Este recorrido resuelve tres obstáculos concretos del sitio actual:
 
@@ -166,7 +166,7 @@ En los cuatro caminos, el común denominador es el mismo: **un cuestionario → 
 
 ### 11 · Qué mide el BDS
 
-El indicador rector es el **tiempo al primer contacto**. El BDS extiende el mismo funnel/dashboard del Proyecto A con sus propias etapas: **lead generado → primer contacto → cuestionario aplicado → visita agendada → visita proporcionada → nueva membresía**, medido por canal (operador humano vs. "BES") y por horario. Detalle en **[BDS · Medición y funnel](#bds-medicion)**.
+El BDS **no define un funnel propio**: opera sobre la espina de conversión única del **[Mapa del Funnel](#funnel)**, el documento canónico de medición. Lo que aporta es la puerta de entrada del **Canal 2** —el clic del anuncio a WhatsApp— y el eje transversal que existe para mover: el **tiempo al primer contacto**, medido por canal (operador humano vs. "BES") y por horario (dentro de horario vs. fuera de horario). Es además el único canal cuyo recorrido individual se mide completo desde el clic, porque el prospecto escribe desde su propio teléfono. Detalle en **[BDS · Medición y funnel](#bds-medicion)**.
 
 ### 12 · Lo comercial
 

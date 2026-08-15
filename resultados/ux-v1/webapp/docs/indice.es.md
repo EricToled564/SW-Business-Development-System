@@ -31,8 +31,15 @@ Diagnóstico y validación de campo que dieron origen al sistema, y el registro 
 | E1 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
 | E2 | [**Workshop Discovery · Líderes regionales**](#workshop-discovery) | Sesión de detección de necesidades (60 min) + cuestionario pre-workshop que cubre a 157 de los 200 asesores (78.5%): brechas de habilidades, objeciones dominantes, momento de pérdida de leads y priorización colectiva. Incluye la presentación original descargable. | Dirección, Comercial, RH |
 | E3 | [**Reporte de Entrevistas de Campo**](#entrevistas-campo) | 15 entrevistas individuales (6 líderes comerciales y 9 asesores) en 13 clubes de cinco regiones: hallazgos validados, motivaciones reales del cliente, métricas del funnel reportadas y cómo el sistema resuelve lo documentado en sus tres capas. PDF completo descargable. | Dirección, Comercial, Sistemas |
-| E4 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
-| E5 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
+
+## Reuniones
+
+Registro de cada sesión de trabajo con Sports World y el estado de lo que quedó abierto en ella. La minuta es un **registro histórico**: consigna lo que se dijo ese día y no se reescribe. El seguimiento es un **tablero vivo**: se actualiza conforme cada punto se resuelve.
+
+| # | Documento | Qué contiene | Para quién |
+|---|---|---|---|
+| R1 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales, tal como ocurrió. | Todos |
+| R2 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda y punto abierto de esa reunión → cómo se resolvió y en qué documento quedó asentado. | Todos |
 
 ## Proyecto A · Rediseño Web — la capa de captación y conversión
 

@@ -48,7 +48,7 @@ Estas motivaciones validadas en campo son la base de la **taxonomía del cuestio
 | Latencia de respuesta al lead digital | **Speed-to-lead en tiempo real** (Proyecto B): human-first con BES de respaldo 24/7, medido por canal y operador. |
 | Sin sistema de clasificación de objetivos; la pérdida ocurre en el primer contacto | El cuestionario **es** el discovery estructurado: llega aplicado antes de que el asesor hable. |
 | Incapacidad de articular valor frente al precio | El sitio articula el **valor por objetivo en lenguaje del consumidor** y el brief arma los argumentos con los objetivos declarados del prospecto. |
-| Variabilidad de 40× sin línea base verificable | El **funnel de medición** del proyecto establece la línea base real por club y canal desde el CRM. |
+| Variabilidad de 40× sin línea base verificable | El **[Mapa del Funnel](#funnel)** —documento canónico de medición— establece la línea base real por club y canal desde el CRM. |
 
 ## 4 · Los participantes
 
