@@ -1,16 +1,16 @@
 # Sports World México · Índice de documentos
-## Mapa y localizador de toda la documentación del proyecto
+## Mapa y localizador del sistema de ventas de Sports World
 
 Punto de entrada al conjunto documental. Cada documento es **autónomo** (puede leerse de forma independiente); este índice indica qué contiene cada uno, a quién está dirigido y dónde consultar cada tema.
 
-La documentación se organiza en **cuatro bloques**: los **documentos generales**, comunes a todo el sistema; y los **exclusivos** de cada uno de los tres proyectos — **Proyecto A · Rediseño Web**, **Proyecto B · Business Development System** y **Proyecto C · Academia Sports World**.
+El proyecto es un **sistema de ventas**: convierte la infraestructura de Sports World —49 clubes, sus amenidades y su oferta de clases— en un producto claro y estructurado, la **experiencia ideal**, e integra todos los canales por los que llega un prospecto. La documentación sigue esa misma estructura y se organiza en **cinco bloques**: el **sistema** (marco, gobierno y contrato); la **evidencia** que le dio origen; y las **tres capas** que lo componen — **Proyecto A · Rediseño Web** (captación y conversión), **Proyecto B · Business Development System** (canales en tiempo real) y **Proyecto C · Academia Sports World** (capacidad humana).
 
-## Documentos Generales (los tres proyectos)
+## El sistema · marco, gobierno y contrato
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
 | 1 | [**Índice de documentos**](#indice) | Este mapa: qué contiene cada documento, a quién está dirigido y dónde consultar cada tema. | Todos |
-| 2 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo, con eje en el cuestionario y la experiencia única, y una sección para cada proyecto: Rediseño Web (Proyecto A), Business Development System (Proyecto B) y Academia Sports World (Proyecto C). | Dirección, negocio |
+| 2 | [**Resumen Ejecutivo**](#resumen) | Visión del sistema completo: la tesis del proyecto, los cinco niveles del sistema y las tres capas que lo componen, con una sección para cada proyecto: Rediseño Web (Proyecto A), Business Development System (Proyecto B) y Academia Sports World (Proyecto C). | Dirección, negocio |
 | 3 | [**Contrato**](#contrato) | Marco mercantil de **los tres proyectos** (25 cláusulas y Anexos Uno a Cinco): objeto, contraprestación y forma de pago del Proyecto A, y —por la Cláusula Segunda— la separación y contraprestación adicional de los Proyectos B (BDS) y C (Academia). | Dirección, Legal |
 | 3a | [**Anexo Uno · Aportaciones de SW**](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) | Requerimientos a cargo del cliente (sistemas y marketing), exhaustivo, por bloques (0, A–F) y con responsables; incluye el servidor e infraestructura de hospedaje del Bloque F. | Dirección, TI, Legal |
 | 3b | [**Anexo Dos · Entregables específicos de los servicios**](#contrato:anexo-dos-entregables-especficos-de-los-servicios) | Entregables específicos, migración, soporte recurrente, cronograma de 8 semanas y KPIs comprometidos. | Dirección, TI, Legal |
@@ -20,9 +20,21 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | 4 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en toda la documentación, de los tres proyectos. | Todos |
 | 5 | [**Plan de Ejecución**](#execution) | Marco de gobierno de **los tres proyectos**: para el Proyecto A, cronograma comprometido de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios; para el Proyecto B (BDS), el quinto equipo, sus tareas y dependencias (§10); para el Proyecto C (Academia), el marco de arranque y sus dependencias (§11) — los plazos de B (8 semanas, en paralelo al A) y C (10 semanas) corren desde la firma de su Addendum. | Dirección, TI, PMO |
 | 6 | [**Gastos Operativos Variables**](#gastos-operativos) | Estimación mensual (**V1.2**; contenido del **Anexo Tres** del Contrato, informativo) de los costos de plataformas a cargo de Sports World (IA, voz, WhatsApp — el hospedaje corre en infraestructura propia del cliente, sin costo de proveedor externo) en tres escenarios de tráfico e interacciones, con tarifas verificadas y totales en USD y MXN. | Dirección, Finanzas |
-| 7 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del cuestionario y la experiencia ideal — el motor único que comparten los tres proyectos. | Negocio, dirección |
+| 7 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del cuestionario dinámico y la experiencia ideal — el instrumento que produce el producto del sistema, compartido por los tres proyectos. | Negocio, dirección |
 
-## Proyecto A · Rediseño Web (exclusivos)
+## La evidencia · por qué existe el proyecto
+
+Diagnóstico y validación de campo que dieron origen al sistema, y el registro de las sesiones con el cliente.
+
+| # | Documento | Propósito | Audiencia |
+|---|---|---|---|
+| E1 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
+| E2 | [**Workshop Discovery · Líderes regionales**](#workshop-discovery) | Sesión de detección de necesidades (60 min) + cuestionario pre-workshop que cubre a 157 de los 200 asesores (78.5%): brechas de habilidades, objeciones dominantes, momento de pérdida de leads y priorización colectiva. Incluye la presentación original descargable. | Dirección, Comercial, RH |
+| E3 | [**Reporte de Entrevistas de Campo**](#entrevistas-campo) | 15 entrevistas individuales (6 líderes comerciales y 9 asesores) en 13 clubes de cinco regiones: hallazgos validados, motivaciones reales del cliente, métricas del funnel reportadas y cómo los Proyectos A y B resuelven lo documentado. PDF completo descargable. | Dirección, Comercial, Sistemas |
+| E4 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
+| E5 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
+
+## Proyecto A · Rediseño Web — la capa de captación y conversión
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
@@ -31,12 +43,9 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | 9a | [**Integración de Datos · CRM y Funnel**](#integracion) | Especificación campo por campo de la integración: lecturas del CRM (clubes, clases con días y horarios, tarifas), escritura idempotente del prospecto, base de datos del funnel de 6 etapas (tráfico → clic WhatsApp → visita agendada → visita realizada → membresía comprada → membresía cancelada) y llaves de conciliación entre etapas. | Sistemas / TI |
 | 10 | [**Seguridad del sitio**](#seguridad) | Protección de datos personales: minimización y no retención (los datos viven brevemente; sin respaldo tras copiarse al CRM). El BDS sigue estos mismos principios por referencia. | TI, Legal, negocio |
 | 11 | [**Status de Entregables Sports World**](#aportaciones) | Tablero de seguimiento de lo que aporta SW (sistemas y marketing): responsable, fecha límite, status y semáforo. El detalle contractual vive en el Anexo Uno. | TI, Marketing, PMO |
-| 12 | [**Auditoría inicial del sitio**](#auditoria) | "El Gigante Invisible": diagnóstico SEO y de captación de demanda (datos Semrush). | Negocio, SEO, TI |
-| 13 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
-| 14 | [**Minuta · 22 de junio de 2026**](#minuta-2026-06-22) | Registro de la reunión inicial de requerimientos técnicos y contractuales. | Todos |
-| 15 | [**Seguimiento · 22 de junio de 2026**](#seguimiento-2026-06-22) | Cada duda/punto abierto de la reunión → cómo se resolvió y dónde quedó en la documentación. | Todos |
+| 12 | [**Calculadora de ROI**](#roi) | Estimación interactiva del retorno de la inversión en captación digital. | Dirección, negocio |
 
-## Proyecto B · Business Development System (BDS — exclusivos, alcance y costo aparte)
+## Proyecto B · Business Development System — la capa de canales en tiempo real (alcance y costo aparte)
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
@@ -47,7 +56,7 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | B5 | [**BDS · Medición y funnel**](#bds-medicion) | Speed-to-lead por canal y operador, atribución de origen por campaña (Meta/TikTok) y funnel hasta nueva membresía. | Dirección, Sistemas |
 | B6 | [**BDS · Addendum contractual**](#bds-anexo) | Alcance, entregables, contraprestación adicional (USD $4,850.00 más IVA; MXN $86,330.00) y plazo de 8 semanas en paralelo al Proyecto A. | Dirección, Legal |
 
-## Proyecto C · Academia Sports World (exclusivos, alcance y costo aparte)
+## Proyecto C · Academia Sports World — la capa de capacidad humana (alcance y costo aparte)
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
@@ -58,13 +67,6 @@ La documentación se organiza en **cuatro bloques**: los **documentos generales*
 | C5 | [**Academia · Estrategia Técnica**](#academia-tecnica) | Separación total de la plataforma y la web, agente de voz de role-play, motor de aprendizaje continuo, dashboard club/ciudad/nacional y costo de las plataformas de IA. | Sistemas / TI |
 | C6 | [**Academia · Medición**](#academia-medicion) | Dashboard de readiness, evaluación en cuatro niveles, catálogo de KPIs por familia y calibración con el CRM. | Dirección, Comercial |
 | C7 | [**Academia · Addendum contractual**](#academia-anexo) | Alcance, entregables, contraprestación adicional ($850,000.00 MXN más IVA; USD $47,752.81) y plazo de 10 semanas del Proyecto C. | Dirección, Legal |
-
-## Entrevistas de Campo (discovery con la operación comercial)
-
-| # | Documento | Propósito | Audiencia |
-|---|---|---|---|
-| E1 | [**Workshop Discovery · Líderes regionales**](#workshop-discovery) | Sesión de detección de necesidades (60 min) + cuestionario pre-workshop que cubre a 157 de los 200 asesores (78.5%): brechas de habilidades, objeciones dominantes, momento de pérdida de leads y priorización colectiva. Incluye la presentación original descargable. | Dirección, Comercial, RH |
-| E2 | [**Reporte de Entrevistas de Campo**](#entrevistas-campo) | 15 entrevistas individuales (6 líderes comerciales y 9 asesores) en 13 clubes de cinco regiones: hallazgos validados, motivaciones reales del cliente, métricas del funnel reportadas y cómo los Proyectos A y B resuelven lo documentado. PDF completo descargable. | Dirección, Comercial, Sistemas |
 
 ## Localizador rápido (¿dónde está cada tema?)
 

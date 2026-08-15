@@ -7,7 +7,7 @@
       suite: "Proyecto Digital",
       search: "Buscar en esta sección…",
       onthispage: "En esta página",
-      groups: { generales: "Documentos Generales", proyectoA: "Rediseño Web (Proyecto A)", bds: "Business Development System (Proyecto B)", academia: "Academia Sports World (Proyecto C)", campo: "Entrevistas de Campo" },
+      groups: { generales: "El sistema · marco y contrato", evidencia: "La evidencia", proyectoA: "Proyecto A · Rediseño Web — captación y conversión", bds: "Proyecto B · BDS — canales en tiempo real", academia: "Proyecto C · Academia — capacidad humana" },
       loading: "Cargando…",
       error:
         "No se pudo cargar el documento. Sirve esta carpeta por HTTP (por ejemplo, ejecuta «python3 -m http.server» dentro de la carpeta webapp) y vuelve a cargar.",
@@ -25,7 +25,7 @@
       suite: "Digital Project",
       search: "Search this section…",
       onthispage: "On this page",
-      groups: { generales: "General Documents", proyectoA: "Web Redesign (Project A)", bds: "Business Development System (Project B)", academia: "Sports World Academy (Project C)", campo: "Field Interviews" },
+      groups: { generales: "The System · Framework & Contract", evidencia: "The Evidence", proyectoA: "Project A · Web Redesign — Capture & Conversion", bds: "Project B · BDS — Real-Time Channels", academia: "Project C · Academy — Human Capability" },
       loading: "Loading…",
       error:
         "Could not load the document. Serve this folder over HTTP (e.g. run “python3 -m http.server” inside the webapp folder) and reload.",
@@ -99,20 +99,20 @@
       title: { es: "Academia · Addendum contractual", en: "Academy · Contract Addendum" } },
     { id: "aportaciones", type: "doc", group: "proyectoA",
       title: { es: "Status de Entregables Sports World", en: "Sports World Deliverables Status" } },
-    { id: "minuta-2026-06-22", type: "doc", group: "proyectoA", pdf: "08-minuta-2026-06-22.es.pdf",
+    { id: "minuta-2026-06-22", type: "doc", group: "evidencia", pdf: "08-minuta-2026-06-22.es.pdf",
       title: { es: "Minuta · 22 jun 2026", en: "Minutes · Jun 22, 2026" } },
-    { id: "seguimiento-2026-06-22", type: "doc", group: "proyectoA", pdf: "09-seguimiento-2026-06-22.es.pdf",
+    { id: "seguimiento-2026-06-22", type: "doc", group: "evidencia", pdf: "09-seguimiento-2026-06-22.es.pdf",
       title: { es: "Seguimiento · 22 jun 2026", en: "Follow-up · Jun 22, 2026" } },
-    { id: "auditoria", type: "doc", group: "proyectoA", pdf: "07-auditoria-inicial.es.pdf",
+    { id: "auditoria", type: "doc", group: "evidencia", pdf: "07-auditoria-inicial.es.pdf",
       title: { es: "Auditoría inicial del sitio", en: "Initial site audit" } },
     { id: "roi", type: "doc", group: "proyectoA",
       title: { es: "Calculadora de ROI", en: "ROI Calculator" } },
-    { id: "workshop-discovery", type: "doc", group: "campo",
+    { id: "workshop-discovery", type: "doc", group: "evidencia",
       title: { es: "Workshop Discovery · Líderes regionales", en: "Discovery Workshop · Regional Leaders" } },
-    { id: "entrevistas-campo", type: "doc", group: "campo", pdf: "30-reporte-entrevistas.es.pdf",
+    { id: "entrevistas-campo", type: "doc", group: "evidencia", pdf: "30-reporte-entrevistas.es.pdf",
       title: { es: "Reporte de Entrevistas de Campo", en: "Field Interviews Report" } },
   ];
-  const GROUP_ORDER = ["generales", "proyectoA", "bds", "academia", "campo"];
+  const GROUP_ORDER = ["generales", "evidencia", "proyectoA", "bds", "academia"];
 
   let lang = localStorage.getItem("swux.lang") || ((navigator.language || "es").toLowerCase().startsWith("en") ? "en" : "es");
   let currentDoc = null;
