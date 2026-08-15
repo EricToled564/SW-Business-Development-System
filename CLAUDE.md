@@ -46,7 +46,10 @@ Un mismo concepto atraviesa el sistema de punta a punta: el cliente lo recibe co
 - Fuente de verdad: `resultados/ux-v1/webapp/docs/*.es.md`.
 - Registro de cada documento en `resultados/ux-v1/webapp/app.js` (id, grupo, PDF) y en `indice.es.md`.
 - PDFs con el pipeline de casa: `resultados/ux-v1/kb/build_pdfkit.js` (pdfkit). Nunca a mano.
-- Verificación obligatoria antes de publicar: `node tools/audit-docs.js` desde `resultados/ux-v1`.
+- Verificación obligatoria antes de publicar, desde `resultados/ux-v1`, las dos:
+  - `node tools/audit-docs.js` — archivos, referencias, enlaces, fuente de verdad, trazabilidad, marcadores, glosario.
+  - `node tools/consistencia.js` — las invariantes del proyecto (corte 06:00, funnel canónico, llave de conciliación, especificación única de servidor, cifras clave, línea base de KPIs). Deja el reporte de cobertura en `tools/consistencia-report.md`. Ambas corren en CI y fallan la corrida ante cualquier hallazgo.
+- **Cada invariante nueva se agrega como regla en `consistencia.js`, no a una lista de pendientes.** Una contradicción corregida sin regla que la sostenga vuelve a aparecer.
 - Un commit por documento, con su nombre en el mensaje, para que cualquier cambio sea reversible por separado.
 - Rama de trabajo: `claude/new-session-1apjew`. Publicado en https://erictoled564.github.io/SW-Business-Development-System/
 

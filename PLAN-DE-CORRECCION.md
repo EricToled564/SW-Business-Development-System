@@ -91,8 +91,29 @@ Cinco ajustes que tocan el Contrato y requieren decisión de Legal. **No se edit
 | 2 · Secciones faltantes | 6 | **6** | 0 |
 | 3 · Propuesta de valor | 11 | **11** | 0 |
 | 4 · Redacción | 10 | **10** | 0 |
-| 5 · Legal | 6 | — | 6 (decisión del cliente) |
-| **Total editable** | **36** | **36** | **0** |
+| 5 · Legal | 7 | — | 7 (decisión del cliente) |
+| 6 · Verificación automatizada | 5 | **5** | 0 |
+| **Total editable** | **41** | **41** | **0** |
+
+## Bloque 6 · Verificación automatizada
+
+El motivo por el que cada auditoría encontraba hallazgos nuevos no era la falta de
+esfuerzo, sino el método: cada pasada verificaba una dimensión distinta —lectura
+documento por documento, luego contradicciones, luego referencias cruzadas—, de modo
+que siempre quedaba una dimensión sin cubrir. La corrección no es auditar otra vez:
+es convertir cada invariante en una regla que se ejecuta sola.
+
+| # | Punto | Estado |
+|---|---|---|
+| 37 | `tools/consistencia.js` — 15 reglas que codifican todas las invariantes detectadas en las tres auditorías manuales | ✅ |
+| 38 | Reporte de cobertura `tools/consistencia-report.md`, generado por el propio programa: qué regla examinó qué archivo | ✅ |
+| 39 | Integración en CI: la verificación corre en cada push y cada pull request, y falla la corrida si encuentra un hallazgo | ✅ |
+| 40 | Hallazgos de la primera corrida corregidos: funnel propio en `resumen` §11, «Seguridad del sitio» en `technical` y `seguimiento` | ✅ |
+| 41 | Reglas afinadas para eliminar falsos positivos (las 100 páginas del crawl de Semrush, los 13 clubes de campo, las 49 páginas de club) | ✅ |
+
+**Regla de operación:** cada invariante nueva que se descubra se agrega como regla en
+`consistencia.js`, no a una lista de pendientes. Una contradicción corregida sin regla
+que la sostenga vuelve a aparecer.
 
 ## Orden de ejecución propuesto
 
