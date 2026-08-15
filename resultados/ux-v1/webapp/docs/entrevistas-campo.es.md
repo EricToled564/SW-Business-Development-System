@@ -36,11 +36,11 @@ El campo distingue dos planos: el **objetivo** del cliente (qué busca lograr �
 | Ubicación y red multi-club | Cercanía a casa o trabajo; cambiar de club al moverse por la ciudad |
 | Precio y costo-beneficio | Presente en las 15 entrevistas — palanca de cierre o de pérdida |
 
-Estas motivaciones validadas en campo son la base de la **taxonomía del cuestionario de experiencia ideal** que comparten el sitio (Proyecto A), el BDS (Proyecto B) y la habilitación comercial.
+Estas motivaciones validadas en campo son la base de la **taxonomía del cuestionario de experiencia ideal** que atraviesa las tres capas del sistema: el sitio (Proyecto A), el BDS (Proyecto B) y la Academia (Proyecto C), que enseña esta misma clasificación a los 200 asesores (**[Academia · Contenido y taxonomía](#academia-contenido)**).
 
-## 3 · Cómo el proyecto resuelve lo que el campo documentó
+## 3 · Cómo el sistema resuelve lo que el campo documentó
 
-| Problema documentado en campo | Solución en los Proyectos A y B |
+| Problema documentado en campo | Solución en el sistema |
 |---|---|
 | WhatsApp personal bloqueado (50–60 mensajes/día) | El prospecto llega **ya validado y con visita agendada** — el grueso del seguimiento desaparece; los recordatorios los envía el sistema por el número oficial de WhatsApp Business (Proyecto B), no el asesor. |
 | Leads sin cualificar (prioridad #1 para 8/15) | El **cuestionario cualifica al origen** en todo canal y el asesor recibe el **brief automático** con perfil, objetivos y sugerencias de conducción de la venta. |

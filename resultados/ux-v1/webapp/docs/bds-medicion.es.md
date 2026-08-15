@@ -1,20 +1,21 @@
 # BDS · Medición y funnel
 ## Cómo se mide el resultado del sistema de captación
 
-> **Proyecto B (BDS).** Extiende el **[funnel de resultados y dashboard](#technical:10-funnel-de-resultados-y-dashboard-de-medicin)** del Proyecto A, agregando las etapas y métricas propias de la captación multicanal en tiempo real. El indicador rector es el **tiempo al primer contacto** (*speed-to-lead*).
+> **Proyecto B · la capa de canales en tiempo real.** Este documento describe cómo se mide el Canal 2 del sistema —el anuncio que lleva a WhatsApp— dentro del **[Mapa del Funnel](#funnel)**, que es el documento canónico de medición y define las etapas, sus fuentes y sus llaves. Aquí se desarrolla el indicador rector del Proyecto B: el **tiempo al primer contacto** (*speed-to-lead*).
 
-## El funnel del BDS (de extremo a extremo)
+## El Canal 2 dentro del funnel
 
-**Lead generado → primer contacto → cuestionario aplicado → visita agendada → visita proporcionada → nueva membresía.**
+El BDS no define un funnel propio: opera sobre la **espina de conversión única** del **[Mapa del Funnel](#funnel)**. Lo que aporta es la puerta de entrada del Canal 2 y el eje de tiempo que le es propio.
 
-| Etapa | Qué mide | Fuente |
-|---|---|---|
-| **Lead generado** | Volumen por origen (campaña, WhatsApp entrante, walk-in, sitio) | Landing / WhatsApp / consola |
-| **Primer contacto** | Que el lead **fue atendido** (humano o "BES") y **cuánto tardó** | Capa de enrutamiento |
-| **Cuestionario aplicado** | Que se completó el cuestionario de experiencia ideal | Motor de cuestionario |
-| **Visita agendada** | Que se agendó la visita guiada | Escritura al CRM |
-| **Visita proporcionada** | Que el prospecto **asistió** a la visita | CRM (vía middleware) |
-| **Nueva membresía** | Que la visita se convirtió en alta | CRM (vía middleware) |
+| Etapa del mapa canónico | Qué aporta el BDS |
+|---|---|
+| **C2 · Clic de anuncio a WhatsApp** | La entrada: el primer mensaje llega con la referencia del anuncio y de la campaña |
+| **Tiempo al primer contacto** | El eje transversal que el BDS existe para mover: del clic al primer mensaje del operador o de "BES" |
+| **E2 · Cuestionario iniciado** · **E3 · Completado** | El mismo cuestionario, aplicado por operador humano, por "BES" o por el asesor en consola |
+| **E4 · Visita agendada** | La misma escritura idempotente al CRM |
+| **E5 · Visita realizada** · **E6 · Membresía** · **E7 · Cancelación** | Las provee el CRM, iguales para todos los canales |
+
+**La ventaja de medición del Canal 2:** es el único canal donde el recorrido individual es completo desde el clic, porque el prospecto escribe desde su propio teléfono. En el sitio, el tramo de tráfico a cuestionario solo puede medirse como tasa.
 
 ## El KPI rector: tiempo al primer contacto
 
@@ -38,7 +39,7 @@ El dashboard atribuye cada resultado a su **origen**, de extremo a extremo:
 **Clic en anuncio (Meta o TikTok, con su referencia de campaña) o tráfico web → conversación de WhatsApp o landing → cuestionario → visita agendada → visita realizada (CRM) → membresía nueva (CRM en tiempo real o importación periódica).**
 
 - **Cómo se captura el origen.** Los anuncios de **clic-a-WhatsApp de Meta** entregan, junto con el primer mensaje del prospecto, la **referencia del anuncio y la campaña de origen** — por eso **un solo número oficial basta** para la atribución por campaña (**[Addendum del BDS · §4](#bds-anexo:4-aportaciones-a-cargo-de-el-cliente)**). En el sitio y las landings, el origen se captura con los parámetros de campaña y la instrumentación de eventos (GA4/GTM). Las métricas de las campañas (visualizaciones, alcance, clics) se leen del **Meta Business Manager** de EL CLIENTE y, cuando haya campañas en esa plataforma, de **TikTok Ads** con acceso de lectura (**[Contrato · Anexo Uno, Bloque E](#contrato:bloque-e-aportaciones-de-marketing-y-marca-a-cargo-del-cliente)**).
-- **Membresías nuevas sin dato en el CRM (vía alternativa).** Si el dato de membresías nuevas no reside en el CRM, EL CLIENTE entrega periódicamente (semanal o mensualmente, según disponibilidad) la base de membresías nuevas y el cruce se realiza **dentro de la infraestructura de EL CLIENTE** (el servidor del Anexo Uno, Bloque F), conciliando por **nombre y apellido** con el **código postal** como verificación; el dashboard presenta **únicamente resultados agregados**, en congruencia con la cláusula de seguridad y minimización (Contrato, Cláusula Décima Octava) — los datos personales no residen en sistemas de EL PRESTADOR.
+- **Membresías nuevas sin dato en el CRM (vía alternativa).** Si el dato de membresías nuevas no reside en el CRM, EL CLIENTE entrega periódicamente (semanal o mensualmente, según disponibilidad) la base de membresías nuevas y el cruce se realiza **dentro de la infraestructura de EL CLIENTE** (el servidor del Anexo Uno, Bloque F), conciliando por **nombre, apellido, teléfono y club**, y ligando la cancelación por **número de membresía** (**[Mapa del Funnel · §5](#funnel:5-llaves-de-unin-entre-etapas)**); el dashboard presenta **únicamente resultados agregados**, en congruencia con la cláusula de seguridad y minimización (Contrato, Cláusula Décima Octava) — los datos personales no residen en sistemas de EL PRESTADOR.
 
 **Qué muestra el dashboard por origen:** las **visualizaciones** y el **CTR** de las campañas; el **clic a experiencia ideal** en la web; las **landings con menor rebote**; las **conversiones a visita**; las **visitas realizadas**; y las **membresías nuevas**.
 

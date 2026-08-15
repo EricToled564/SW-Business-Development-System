@@ -1,7 +1,7 @@
 # Academia SW · Contenido y taxonomía
 ## La taxonomía maestra del cliente y los componentes del programa
 
-> **Proyecto C (Academia).** Este documento describe **qué enseña** el programa: la taxonomía de objetivos del cliente, los siete componentes validados en campo y la segmentación de contenido por tipo de club. El **cómo se entrega** (módulos por niveles y role-play) está en **[Fases del programa](#academia-fases)**.
+> **Proyecto C · la capa de capacidad humana** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Este documento describe **qué enseña** el programa: la taxonomía de objetivos del cliente, los siete componentes validados en campo y la segmentación de contenido por tipo de club. El **cómo se entrega** (módulos por niveles y role-play) está en **[Fases del programa](#academia-fases)**.
 
 ## La taxonomía maestra del cliente
 

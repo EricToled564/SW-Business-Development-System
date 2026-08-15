@@ -3,6 +3,8 @@
 
 Documento fundacional. Explica, en términos claros y con las herramientas específicas nombradas, **qué** tecnología construye la experiencia, **cómo** se construye —el método de trabajo y los controles de calidad—, **cómo se conecta** con los sistemas de Sports World y **cómo se migra** del sitio actual al nuevo sin interrumpir el correo ni perder posicionamiento. Está redactado para que la dirección, el equipo de sistemas/TI y cualquier proveedor externo lo comprendan sin ambigüedades; donde una decisión es relevante para Sports World, se expone la razón. Cada entregable técnico aquí descrito corresponde, uno a uno, con el alcance contractual del **[Contrato · Anexo Dos, Sección I](#contrato:seccin-i-entregables-del-servicio-i-rediseo-web-con-enfoque-en-posicionamiento-o)**, y cada dependencia que se pide a Sports World está catalogada en el **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**.
 
+Este documento describe la **maquinaria del sistema de ventas**: la tecnología que hace posible que la infraestructura de Sports World —49 clubes, sus amenidades y su oferta de clases— deje de leerse como un catálogo y se convierta en la experiencia ideal de cada prospecto. El marco completo del sistema y sus tres capas está en el **[Resumen Ejecutivo](#resumen)**.
+
 Un único supuesto sustenta la integración: **Sports World expone una API para su sistema de clientes (CRM).** Todo lo demás que el proyecto requiere lo aporta el equipo de entrega.
 
 ## 1 · El sitio web — stack y por qué
@@ -25,7 +27,7 @@ El estándar de calidad es concreto y medible —**Core Web Vitals** (LCP < 2.5 
 
 La experiencia personalizada cruza lo que el usuario quiere con los datos operativos de Sports World y escribe de vuelta el lead cualificado en el CRM. El contrato exige la **integración en vivo de los datos por API** más una escritura.
 
-**Lecturas (los datos operativos del CRM).** El middleware de EL PRESTADOR consume el API estándar del CRM y expone: **estatus de cada club** (activo / cerrado temporalmente / cerrado definitivamente), **coordenadas**, **amenidades por club** (alberca, FitKidz, sauna, pádel…), **clases por club**, **horarios de clase** (con visibilidad de una semana, periodicidad mínima semanal), **horarios de atención**, **tarifas** (por plan, por club, Multiclub, FitKidz y otros servicios) y **descuentos y promociones**. En **tiempo real** se leen los **precios** y las **clases por club (horarios y fechas)**; **una vez al día** se sincronizan el **estatus del club**, los **horarios de atención** y las **amenidades**. Las **coordenadas** se mantienen como semilla en el código, editables sin código en el CMS. Corresponde a los puntos de acceso D.1–D.3, a la base de conocimiento (D.6) y al catálogo de datos del Anexo Uno.
+**Lecturas (los datos operativos del CRM).** El middleware de EL PRESTADOR consume el API estándar del CRM y expone: **estatus de cada club** (activo / cerrado temporalmente / cerrado definitivamente), **coordenadas**, **amenidades por club** (alberca, FitKidz, sauna, pádel…), **clases por club**, **horarios de clase** (con visibilidad de una semana, periodicidad mínima semanal), **horarios de atención**, **tarifas** (por plan, por club, Multiclub, FitKidz y otros servicios) y **descuentos y promociones**. Todo el catálogo se sincroniza **una vez al día, con corte a las 06:00 (hora de la Ciudad de México)**: lo registrado en el CRM hasta las 05:59 se publica ese mismo día a partir de las 06:00. Para casos excepcionales —una promoción que debe salir el mismo día— la sección de administración incluye una **sincronización manual inmediata**. El detalle campo por campo está en **[Integración de Datos · §1](#integracion:1-principio-rector-se-extrae-una-sola-vez-y-se-comparte)**. Las **coordenadas** se mantienen como semilla en el código, editables sin código en el CMS. Corresponde a los puntos de acceso D.1–D.3, a la base de conocimiento (D.6) y al catálogo de datos del Anexo Uno.
 
 **Escritura (la operación en tiempo real).** Creación del **lead cualificado** —nombre, teléfono, correo, perfil completo, club elegido y el **día y horario de visita solicitados**— en el CRM, en el momento en que el prospecto confirma, mediante una **llamada al API del CRM** (creación/actualización). La operación es **idempotente por sesión** (llave de idempotencia / UUID o deduplicación equivalente): si el prospecto modifica y reconfirma, se actualiza el mismo registro en vez de duplicarlo (Anexo Uno B.3 y D.4); esta idempotencia puede resolverse en el CRM o en la capa de middleware de EL PRESTADOR. **La visita guiada no se reserva ni se verifica disponibilidad**: el día y horario elegidos —dentro del horario de atención del club— se registran en el prospecto y se envían por correo al club como requerimiento; no existe integración con sistema de reservas alguno.
 
@@ -124,19 +126,25 @@ Si algún control falla, el cambio no se publica hasta corregirse. Este mecanism
 
 ## 10 · Funnel de resultados y dashboard de medición
 
-El proyecto entrega un **funnel de conversión de punta a punta** y un **dashboard ejecutivo en tiempo real** que miden el **resultado real** del proyecto, no solo el tráfico. El funnel tiene cuatro etapas:
+El proyecto entrega un **funnel de conversión de punta a punta** y un **dashboard ejecutivo en tiempo real** que miden el **resultado real** del proyecto, no solo el tráfico.
+
+**La definición completa del funnel —canales de entrada, etapas, definición operativa de cada una, fuente del dato y responsable de cada acceso— vive en el [Mapa del Funnel](#funnel), documento canónico de medición.** Aquí se describe únicamente lo que entrega el Proyecto A.
+
+Las **cuatro etapas comprometidas en el Contrato** (Anexo Dos) son las que el dashboard presenta como titular:
 
 1. **Tráfico** — visitas al sitio (orgánico, directo, campañas), por fuente y por página.
-2. **Visita guiada agendada** — el prospecto completa el flujo y agenda su visita (lead capturado). Métrica clave: **conversión tráfico → visita agendada**.
-3. **Visita guiada proporcionada** — el prospecto efectivamente asistió a la visita en el club. Métrica: **conversión agendada → proporcionada**.
-4. **Nueva membresía** — la visita se convirtió en alta. Métrica: **conversión proporcionada → nueva membresía**.
+2. **Visita guiada agendada** — el prospecto completa el flujo y agenda su visita. Cuenta cuando **la escritura al CRM se confirma**, no cuando el usuario da clic.
+3. **Visita guiada proporcionada** — el prospecto asistió a la visita en el club.
+4. **Nueva membresía** — la visita se convirtió en alta.
+
+El Mapa del Funnel las extiende con las etapas de medición operativa —clic al WhatsApp, cuestionario iniciado, cuestionario completado y membresía cancelada— sin ampliar el alcance contractual.
 
 **Fuentes de datos (dos, integradas en el dashboard):**
 
 - **Google (GA4 + Search Console), conectado a las cuentas necesarias de Sports World (Anexo Uno E.4):** tráfico y comportamiento on-page. El sitio se **instrumenta con eventos** para medir **tiempo en página**, **página y punto de salida** del usuario, y la **conversión tráfico → visita agendada**.
 - **CRM (vía el middleware de EL PRESTADOR):** las dos etapas que solo el CRM conoce —**visita agendada → visita proporcionada** y **visita proporcionada → nueva membresía**—, ligadas al mismo prospecto (idempotencia por sesión) para cerrar el funnel de extremo a extremo.
 
-**Dashboard.** Panel ejecutivo en tiempo real para la dirección de Sports World: las cuatro etapas del funnel con sus tasas de conversión, tráfico por fuente, tiempo en página y puntos de salida, y el avance del proyecto. Requiere que el CRM exponga (catálogo del Anexo Uno) el **estado de la visita guiada** (agendada / proporcionada) y la **activación de membresía** asociada al prospecto. Si el dato de membresías nuevas no reside en el CRM, aplica la **vía alternativa** pactada en el **[Contrato · Anexo Uno](#contrato:datos-y-servicios-que-el-cliente-expone-desde-el-crm)**: Sports World entrega periódicamente la base de membresías nuevas y el cruce se realiza dentro de su propia infraestructura (servidor del Bloque F), presentando el dashboard únicamente resultados agregados.
+**Dashboard.** Panel ejecutivo en tiempo real para la dirección de Sports World: las etapas del funnel con sus tasas de conversión, tráfico por fuente, tiempo en página y puntos de salida, y el avance del proyecto. Requiere que el CRM exponga (catálogo del Anexo Uno) el **estado de la visita guiada** (agendada / proporcionada) y la **activación de membresía** asociada al prospecto. Si el dato de membresías nuevas no reside en el CRM, aplica la **vía alternativa** pactada en el **[Contrato · Anexo Uno](#contrato:datos-y-servicios-que-el-cliente-expone-desde-el-crm)**: Sports World entrega periódicamente la base de membresías nuevas y el cruce se realiza dentro de su propia infraestructura (servidor del Bloque F), presentando el dashboard únicamente resultados agregados.
 
 ## 11 · Captación unificada de leads (sitio, BES y consola interna)
 

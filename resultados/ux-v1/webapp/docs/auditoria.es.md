@@ -5,7 +5,7 @@ Diagnóstico de la presencia digital del sitio actual de Sports World, validado 
 
 ## 1 · La paradoja: marca fuerte, presencia digital invisible
 
-Sports World atrae a un público amplio por la fuerza de su marca, pero pierde al prospecto en el momento decisivo. El tráfico de marca crece (+4.41%), mientras que el tráfico no-marca —las personas que buscan soluciones genéricas— se desploma.
+Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente. Atrae a un público amplio por la fuerza de su marca, pero pierde al prospecto en el momento decisivo. El tráfico de marca crece (+4.41%), mientras que el tráfico no-marca —las personas que buscan soluciones genéricas— se desploma.
 
 | Métrica | Valor | Tendencia |
 |---|---|---|
@@ -125,6 +125,6 @@ Universo de 6,900 keywords unbranded limpias (la suma de la columna KWs; de 20,0
 
 ## 6 · Conclusión
 
-El sitio actual destaca donde tiene contenido (head terms pos 2–6) y desaparece donde no lo tiene. Con una corrección técnica (SSR para hacer crawleables las 49+ páginas de club, 116 redirects 301, corrección de las 20 URLs con backslash, schema, H1/meta), hubs semánticos por amenidad + ubicación y un agente de IA que cierra la conversión, el objetivo es elevar la cobertura del mercado unbranded del **31.1% actual a 55–65%** y generar entre **+40,000 y +80,000 visitas orgánicas mensuales** sostenidas.
+El diagnóstico se resume en una frase: **el producto existe; para Google, no.** El sitio actual destaca donde tiene contenido (head terms pos 2–6) y desaparece donde no lo tiene. Con una corrección técnica (SSR para hacer crawleables las 49+ páginas de club, 116 redirects 301, corrección de las 20 URLs con backslash, schema, H1/meta), hubs semánticos por amenidad + ubicación y un agente de IA que cierra la conversión, el objetivo es elevar la cobertura del mercado unbranded del **31.1% actual a 55–65%** y generar entre **+40,000 y +80,000 visitas orgánicas mensuales** sostenidas.
 
 > Fuente de los datos: Semrush (base de datos México, febrero–marzo 2026), Semrush Site Audit (100 páginas) y Keyword Gap (marzo 2026).

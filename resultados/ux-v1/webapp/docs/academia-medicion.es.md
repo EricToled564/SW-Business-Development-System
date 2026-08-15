@@ -1,7 +1,7 @@
 # Academia SW · Medición
 ## Cómo se mide el avance y el impacto del programa
 
-> **Proyecto C (Academia).** Describe el dashboard de readiness, la calibración de la línea base con el CRM y los KPIs del programa.
+> **Proyecto C · la capa de capacidad humana** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Describe el dashboard de readiness, la calibración de la línea base con el CRM y los KPIs del programa.
 
 ## El dashboard de readiness
 

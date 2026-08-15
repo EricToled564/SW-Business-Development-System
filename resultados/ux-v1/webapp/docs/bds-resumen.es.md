@@ -1,6 +1,8 @@
 # Business Development System (BDS) · Resumen Ejecutivo
 ## Captación y conversión de leads multicanal en tiempo real
 
+> **Proyecto B · la capa de canales en tiempo real** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Lleva la experiencia ideal al canal donde hoy nace la mayoría de los leads —las campañas en redes— y la hace operar en tiempo real. No construye un motor nuevo: extiende el del Proyecto A a WhatsApp, a operadores humanos y al tiempo real.
+
 ## El problema: los leads se enfrían
 
 Hoy la mayor fuente de leads de Sports World son las **campañas en redes sociales**. El recorrido actual es:
@@ -21,7 +23,7 @@ El **BDS** reemplaza el "formulario + llamada tardía" por un **engagement inmed
 - Si **no hay operador disponible** o es **fuera de horario**, **"BES" por WhatsApp (solo texto)** atiende, aplica el cuestionario y agenda.
 - Los **asesores de club** atienden a los leads "de la calle" (walk-in) con la **misma consola interna** ya definida en el proyecto del sitio (**[Estrategia Técnica · §11](#technical:11-captacin-unificada-de-leads-sitio-bes-y-consola-interna)**).
 
-En los cuatro caminos, el común denominador es el mismo: **un cuestionario → una experiencia ideal → una escritura idempotente al CRM**. El BDS **no crea un flujo nuevo**: extiende el que ya existe a **WhatsApp, operadores humanos y tiempo real**.
+En los cuatro caminos, el común denominador es el mismo: **el mismo cuestionario, la misma experiencia ideal y una sola escritura idempotente al CRM**. El BDS **no crea un flujo nuevo**: extiende el que ya existe a **WhatsApp, operadores humanos y tiempo real**.
 
 El BDS se apoya en tres piezas, ninguna nueva: **aplicar el cuestionario**, **construir la experiencia ideal** del prospecto y, con ese mismo resultado, **entregar al asesor un documento personalizado del comprador potencial** —su perfil, sus intereses y objetivos, con sugerencias concretas de cómo conducir la venta en la visita—. Es el mismo **brief del asesor** ya definido en **[Arquitectura de Experiencia · §1.2, fase `briefing`](#experience:12-las-siete-fases)**: el BDS lo entrega sin importar si el cuestionario lo aplicó un operador humano, "BES" por WhatsApp o el asesor mismo en la consola.
 

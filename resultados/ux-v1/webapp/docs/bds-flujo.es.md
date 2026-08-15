@@ -1,7 +1,7 @@
 # BDS · Flujo de conversión
 ## La arquitectura del proceso, de principio a fin
 
-> **Proyecto B (BDS).** Este documento describe el recorrido completo del lead y el **árbol de enrutamiento** que decide quién lo atiende. Reutiliza el cuestionario y la escritura al CRM del proyecto del sitio; no los redefine.
+> **Proyecto B · la capa de canales en tiempo real** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Este documento describe el recorrido completo del lead y el **árbol de enrutamiento** que decide quién lo atiende. Reutiliza el cuestionario y la escritura al CRM del proyecto del sitio; no los redefine.
 
 ## Los cuatro puntos de entrada
 

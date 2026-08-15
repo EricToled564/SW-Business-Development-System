@@ -7,9 +7,9 @@ Documento fundacional y **general a los tres proyectos**. Para el **Proyecto A �
 
 ## 1 · Qué se está construyendo, en paralelo
 
-El proyecto entrega cuatro frentes a la vez, ejecutados por cuatro equipos coordinados a lo largo de las mismas ocho semanas:
+El Proyecto A es la **capa de captación y conversión** del sistema (**[Resumen Ejecutivo](#resumen)**). Entrega cuatro frentes a la vez, ejecutados por cuatro equipos coordinados a lo largo de las mismas ocho semanas:
 
-- **El sitio web** — un sitio rápido y optimizado para búsqueda, construido a partir de plantillas de diseño aprobadas: el home, una página para cada uno de los 49 clubes, los hubs de amenidades y objetivos, y el flujo de experiencia ideal que convierte a un visitante anónimo en un lead calificado y agendado. Inventario completo en **[Arquitectura de Experiencia · Mapa del sitio](#experience:6-mapa-del-sitio)** (148 páginas). Incluye la **capa de middleware** que integra el CRM (datos, precios, geolocalización), el **motor de precios** por club / ciudad / nacional, y el **panel sin código (CMS)** para editar contenido, imágenes y coordenadas de clubes (las tarifas se extraen automáticamente del CRM). Entrega también el **funnel de resultados y dashboard** (tráfico → visita agendada → visita proporcionada → nueva membresía; Google para tráfico/on-page y CRM para las etapas finales) y la **consola interna de captación de leads** para personal autorizado, que usa el mismo cuestionario y la misma escritura al CRM.
+- **El sitio web** — un sitio rápido y optimizado para búsqueda, construido a partir de plantillas de diseño aprobadas: el home, una página para cada uno de los 49 clubes, los hubs de amenidades y objetivos, y el flujo de experiencia ideal que convierte a un visitante anónimo en un lead calificado y agendado. Inventario completo en **[Arquitectura de Experiencia · Mapa del sitio](#experience:6-mapa-del-sitio)** (148 páginas). Incluye la **capa de middleware** que integra el CRM (datos, precios, geolocalización), el **motor de precios** por club / ciudad / nacional, y el **panel sin código (CMS)** para editar contenido, imágenes y coordenadas de clubes (las tarifas se extraen automáticamente del CRM). Entrega también el **funnel de resultados y dashboard**, conforme al **[Mapa del Funnel](#funnel)** — documento canónico de medición: tres canales de entrada, una espina de conversión y las cuatro etapas contractuales como titular (Google para tráfico y comportamiento on-page; CRM para las etapas de cierre) y la **consola interna de captación de leads** para personal autorizado, que usa el mismo cuestionario y la misma escritura al CRM.
 - **La base de SEO y el contenido escrito** — la estrategia de búsqueda y todo el contenido optimizado, más la creación y optimización de las 49 fichas de Google Business (una por club).
 - **El contenido visual a escala** — el tratamiento de ~650 fotografías del banco del cliente, ~150 imágenes nuevas por IA, 12 animaciones y 1 video institucional, vía la aplicación a la medida (**[Estrategia Técnica · §4](#technical:4-contenido-visual-a-escala)**).
 - **BES, el agente de voz y texto con IA** — el agente conversacional **integrado al sitio web (canal web)**, conectado a la misma lógica de club/clase y a la misma captación de leads que el sitio, que además envía 2 recordatorios automatizados por WhatsApp (**[Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
@@ -101,20 +101,41 @@ Corre de la Semana 1 a la Semana 8, con los cuatro equipos en paralelo y las dep
 
 ## 4 · El servidor donde corre el sitio
 
-El sitio web corre en el propio servidor de Sports World. La especificación está dimensionada a las condiciones reales del proyecto: el sitio actualmente recibe alrededor de 80,000 visitas al mes, la meta es duplicarlas a aproximadamente 160,000 visitas al mes, **y se espera que el tráfico alcance picos de hasta cinco veces el promedio** durante periodos de alta demanda (por ejemplo, cuando las campañas pagadas generan un repunte). Dimensionar para ese pico —y no para el promedio mensual— es lo que mantiene el sitio rápido y en línea cuando más importa.
+El sitio web corre en el propio servidor de Sports World (Contrato · Anexo Uno, Bloque F). La especificación está dimensionada a las condiciones reales del proyecto: el sitio recibe hoy alrededor de **80,000 visitas al mes**, la meta es **160,000**, y se prevén **picos de campaña de hasta cinco veces** el tráfico de la hora pico.
 
-- **Sistema operativo:** Linux (cualquier distribución mainstream actual).
-- **Runtime:** Node.js 20.9 o posterior, que el framework requiere; el equipo lo instala y configura.
-- **Procesador:** aproximadamente 8 núcleos de CPU virtuales. Un pico de cinco veces es principalmente un evento de procesador —la parte dinámica del sitio y la optimización de imágenes al vuelo consumen CPU, y durante un repunte muchas se ejecutan de forma simultánea; ocho núcleos brindan el margen para absorberlo sin que las solicitudes se encolen. Con tráfico normal el sitio se apoya en el caché, de modo que la mayoría de las vistas se sirven desde caché y los núcleos quedan disponibles para el trabajo dinámico y los picos.
-- **Memoria:** aproximadamente 16 GB de RAM. Bajo un pico de cinco veces, muchas solicitudes se ejecutan de forma concurrente, el caché opera a plena capacidad y varias operaciones de imagen ocurren de forma simultánea —todo lo cual consume memoria; 16 GB proporcionan un margen real y protegen contra el peor modo de falla: quedarse sin memoria durante un repunte.
-- **Almacenamiento:** aproximadamente 80 GB de SSD —espacio amplio para la aplicación, un caché de imágenes generoso, logs (que crecen más rápido durante los picos) y respaldos.
-- **Red y seguridad:** un certificado HTTPS estándar, los puertos web normales abiertos y suficiente ancho de banda de salida para servir el tráfico pico.
+**Qué corre en este servidor.** La aplicación del sitio (Next.js con SSR e ISR), el **CMS autoalojado y su base de datos**, la **capa de middleware** que integra el CRM y la **base de datos del funnel** (**[Mapa del Funnel · §4](#funnel:4-dnde-vive-el-dato)**). Estos cuatro componentes consumen memoria de forma permanente, aun sin tráfico: son el piso real de la especificación.
 
-Un solo servidor de este tamaño atiende con holgura 160,000 visitas al mes con picos de cinco veces, porque el caché agresivo absorbe la carga rutinaria y el margen de 8 núcleos / 16 GB absorbe los repuntes. Esto se cubre con un servidor virtual estándar de gama media de cualquier proveedor de hosting mainstream —no requiere hardware dedicado ni de gama alta. Si más adelante el tráfico crece muy por encima de la meta, la misma arquitectura escala agregando una segunda instancia detrás de un balanceador de carga simple; se trata de una optimización futura, no de un requisito de lanzamiento.
+**Qué NO corre aquí.** El agente **BES** opera en las plataformas gestionadas de sus proveedores (voz, reconocimiento, modelo de razonamiento y orquestación), y la **plataforma de la Academia** requiere un **servidor propio e independiente** (**[Academia · Estrategia Técnica §1](#academia-tecnica)**). Ninguno de los dos está contemplado en las cifras siguientes.
 
-Estas cifras constituyen una estimación de ingeniería sólida. La vía para convertir la estimación en una garantía es una breve prueba de carga antes del lanzamiento —simulando 160,000 visitas al mes con el pico de cinco veces y midiendo la CPU y la memoria realmente utilizadas. El equipo la ejecuta como parte de la calidad previa al lanzamiento (Semana 7) y ajusta la especificación al alza o a la baja según el resultado medido.
+### Especificación recomendada
 
-> **Nota sobre BES:** la especificación anterior cubre **únicamente el sitio web**. **BES no reside en este servidor**: corre en la **plataforma de su proveedor de voz (ElevenLabs)** y en los demás servicios gestionados que lo componen (reconocimiento de voz, modelo de razonamiento y orquestación). Por lo tanto, el servidor del sitio **no** debe incrementarse para alojar a BES. Los **costos de operación de BES** (plataforma de voz, interfaz del modelo de razonamiento y hospedaje de la lógica) los cubre directamente **EL CLIENTE** a esos proveedores (Contrato, Cláusula Décima Cuarta).
+| Recurso | Cifra | Razón |
+|---|---|---|
+| **Sistema operativo** | Linux (cualquier distribución vigente) | — |
+| **Runtime** | **Node.js 20.9 o posterior** | Requisito del framework. **Es el único punto que puede resultar incompatible con una plataforma de hospedaje existente**; se confirma con el acceso del Bloque C |
+| **Procesador** | **8 vCPU** | No lo determina el tráfico promedio (≈3 peticiones por segundo en pico), sino la optimización de imágenes al vuelo durante un repunte de campaña, que es un evento de procesador |
+| **Memoria** | **16 GB RAM** | Piso permanente: sitio (~2 GB) + CMS (~2) + base del CMS (~2) + base del funnel (~1) ≈ **7 GB antes de la primera visita** |
+| **Almacenamiento** | **80 GB SSD NVMe** | Aplicación, ~650 fotografías tratadas y ~150 generadas en AVIF/WebP responsivos, base del funnel, bitácoras y respaldos |
+| **Ancho de banda** | **100 Mbps simétricos sostenidos** | Un pico de cinco veces, a 1.5 MB por página, demanda ≈36 Mbps; 100 deja margen real |
+| **Transferencia mensual** | **1 TB** | ≈640,000 páginas al mes suman ~400 GB, más API, BES y tablero |
+| **Ambiente de staging** (Bloque F.4) | **2 vCPU · 4 GB · 40 GB** | Exigido por el Contrato y no dimensionado hasta ahora |
+| **Red y seguridad** | Certificado HTTPS vigente y puertos web estándar | Bloque F.2 |
+
+### Mínimo viable, con una condición técnica
+
+Si la infraestructura disponible de Sports World no alcanza la especificación recomendada, el proyecto opera con **4 vCPU y 8 GB de RAM**, sujeto a una decisión de diseño explícita: **las imágenes se pregeneran en el proceso de construcción en lugar de optimizarse al vuelo**. Es viable —el pipeline visual ya produce AVIF/WebP responsivos— y elimina precisamente el consumo de procesador que justifica los ocho núcleos.
+
+Esta decisión se toma al inicio del proyecto, con el dato de qué infraestructura existe. **No es un bloqueo:** hay un camino técnico para ambos escenarios.
+
+### Umbrales de operación saludable
+
+El Bloque F.8 exige monitoreo de recursos pero no define qué constituye un estado degradado. Estos son los umbrales de referencia: **procesador por debajo del 70%** en percentil 95, **memoria por debajo del 75%**, **disco por debajo del 80%**. Superar cualquiera de forma sostenida activa la coordinación de ampliación con Sports World.
+
+### De estimación a garantía
+
+Estas cifras son una estimación de ingeniería, no una medición. La vía para convertirlas en certeza es una **prueba de carga previa al lanzamiento** —simulando 160,000 visitas mensuales con el pico de cinco veces y midiendo el consumo real de procesador y memoria—, ya prevista en el cronograma de la Semana 7 (§3). Si la prueba muestra holgura, la especificación se ajusta a la baja; si muestra estrechez, se amplía antes del lanzamiento y no después.
+
+> **Orden de magnitud.** Un servidor virtual de esta gama cuesta entre **80 y 200 dólares al mes** en cualquier proveedor estándar — menos del 10% del gasto variable mensual del proyecto. No representa una inversión capaz de afectar el calendario.
 
 ## 5 · Hitos y aprobaciones a cargo de Sports World
 
@@ -196,7 +217,7 @@ El **Proyecto B (BDS)** tiene **plazo propio de 8 semanas**, que corre desde la 
 
 ### 10.2 · Dependencias con el Proyecto A
 
-El BDS **no reescribe** el motor de captación: reutiliza el cuestionario y la experiencia ideal, el middleware y la escritura idempotente al CRM, y la consola interna que entrega el Equipo 1 — Web. En el cronograma de la §3, esos componentes quedan operativos entre las **Semanas 3 y 6** (integración de la API del CRM y consola interna); el Equipo 5 puede comenzar a integrar sobre ellos a partir de ese punto, sin esperar al lanzamiento del sitio (Semana 8).
+El BDS **no reescribe** el motor de captación: es la **capa de canales en tiempo real** sobre el sistema que construye el Proyecto A, y reutiliza el cuestionario y la experiencia ideal, el middleware y la escritura idempotente al CRM, y la consola interna que entrega el Equipo 1 — Web. En el cronograma de la §3, esos componentes quedan operativos entre las **Semanas 3 y 6** (integración de la API del CRM y consola interna); el Equipo 5 puede comenzar a integrar sobre ellos a partir de ese punto, sin esperar al lanzamiento del sitio (Semana 8).
 
 ### 10.3 · Secuencia de trabajo (por fases, no por semanas)
 

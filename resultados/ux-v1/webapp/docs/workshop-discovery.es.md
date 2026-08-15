@@ -36,11 +36,12 @@ Sesión de trabajo estructurada de **60 minutos** con los líderes regionales de
 
 **Los cuatro patrones de la síntesis:** (1) el guion de discovery es la herramienta más urgente; (2) la pérdida ocurre en el primer contacto; (3) la demostración de la app no es la brecha (4.3/5 — el equipo ya la domina); (4) el problema central es la incapacidad de **articular el valor del ecosistema** frente a competencia más barata.
 
-## 3 · Qué significa para los Proyectos A y B
+## 3 · Qué significa para el sistema
 
 - El **guion de discovery estructurado** que el campo pidió como prioridad #1 es exactamente el **cuestionario de experiencia ideal**: un discovery estandarizado que llega aplicado antes del primer contacto del asesor, en todo canal (sitio, BES, WhatsApp, consola interna).
 - La **pérdida en el primer contacto** se ataca por diseño: el prospecto llega al club ya cualificado, con visita agendada y con el **brief del asesor** que arma los argumentos de valor a partir de los objetivos que el propio prospecto declaró.
 - La **articulación de valor** deja de depender de la memoria del asesor: el sitio presenta el valor por objetivo del usuario **en lenguaje del consumidor**, y la experiencia ideal personalizada conecta cada objetivo con los clubes, clases y amenidades que lo sirven.
+- Los **seis componentes del programa de la Academia (Proyecto C)** provienen directamente de esta sesión: la priorización colectiva de arriba —justificación del valor del ecosistema, venta consultiva, hospitalidad premium, manejo de objeciones, llamadas de hito y alfabetización digital— es el temario que la **[capa de capacidad humana](#academia-contenido)** enseña y entrena.
 - Los **temas operativos** detectados en la sesión (amenidades y mantenimiento de instalaciones) se registraron por separado y se entregaron a Sports World — no forman parte del alcance de estos proyectos.
 
 La validación de estos hallazgos con asesores en campo consta en el **[Reporte de Entrevistas de Campo](#entrevistas-campo)**.

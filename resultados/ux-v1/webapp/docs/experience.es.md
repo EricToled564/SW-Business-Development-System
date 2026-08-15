@@ -11,9 +11,9 @@ Documento fundacional. Define, por sí mismo y en términos normativos, por qué
 
 ## 0.0 Por qué existe este proyecto
 
-Sports World opera una red física premium —49 clubes en todo México— pero su presencia digital no refleja la escala de esa infraestructura. La marca es encontrada por personas que ya la conocen, y pasa desapercibida para quienes no. Las personas que buscan una solución fitness genérica que Sports World sí ofrece rara vez la descubren, porque Sports World no aparece en esas búsquedas. El resultado es una pérdida constante de nuevos clientes justo en el momento en que están buscando inscribirse.
+Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente: opera una red física premium —49 clubes en todo el país— pero su presencia digital no refleja la escala de esa infraestructura. La marca es encontrada por personas que ya la conocen, y pasa desapercibida para quienes no. Las personas que buscan una solución fitness genérica que Sports World sí ofrece rara vez la descubren, porque Sports World no aparece en esas búsquedas. El resultado es una pérdida constante de nuevos clientes justo en el momento en que están buscando inscribirse.
 
-Esta página —la *experiencia ideal*— existe para cerrar esa brecha en el punto de decisión. Su propósito es convertir la demanda que sí llega a Sports World en visitas cualificadas y agendadas: tomar a un prospecto que llega buscando una solución, entender lo que realmente quiere, ubicarlo en el club correcto con la combinación de entrenamiento correcta, y entregar un brief completo al asesor que cerrará la visita. La página es la superficie de conversión que transforma la visibilidad de búsqueda recuperada en visitas agendadas.
+La *experiencia ideal* es el **producto del sistema de ventas** y existe para cerrar esa brecha en el punto de decisión. Se entrega en los cuatro canales del sistema —el sitio, el agente BES, WhatsApp y la consola del asesor— y tiene **dos destinatarios**: el cliente la recibe como su experiencia, y el asesor la recibe traducida a argumentos de cierre en el brief. Este documento especifica su comportamiento en el canal del sitio; el marco completo del sistema y sus tres capas está en el **[Resumen Ejecutivo](#resumen)**. Su propósito es convertir la demanda que sí llega a Sports World en visitas cualificadas y agendadas: tomar a un prospecto que llega buscando una solución, entender lo que realmente quiere, ubicarlo en el club correcto con la combinación de entrenamiento correcta, y entregar un brief completo al asesor que cerrará la visita. La página es la superficie de conversión que transforma la visibilidad de búsqueda recuperada en visitas agendadas.
 
 ## 0.1 Los tres bloqueadores clave de leads
 
@@ -675,19 +675,15 @@ Hay tres categorías de datos, con distintos requisitos de propiedad y frescura.
 
 **Categoría C — Datos de clases (leídos del sistema de programación de clases / sistema de registro).** Este es el catálogo de clases. Incluye la lista maestra de disciplinas de clase, y por club: qué clases ofrece ese club, el nivel que requiere cada clase y el horario (días y franjas) en que se ofrece cada clase. La disponibilidad de clases —si una clase dada aún se imparte, en qué horarios y en qué clubes— es el dato más volátil del sistema.
 
-## 5.2 Tiempo real vs periódico
+## 5.2 Frecuencia de sincronización: el corte diario de las 06:00
 
-No todos los datos necesitan la misma frescura. Forzar todo a tiempo real agregaría costo y fragilidad sin beneficio; dejar que los datos volátiles se vuelvan obsoletos produciría recomendaciones que envían al prospecto a un club por una clase que ya no existe. La división:
+No todos los datos necesitan la misma frescura, y forzar todo a tiempo real agregaría costo y fragilidad sin beneficio. El proyecto opera bajo una **regla única de sincronización**, fijada en **[Integración de Datos · §1](#integracion:1-principio-rector-se-extrae-una-sola-vez-y-se-comparte)**:
 
-**Debe ser en tiempo real (lectura o escritura en vivo en el momento de uso):**
-- **Escritura de lead / contacto (Categoría A).** El lead se escribe en el CRM en tiempo real en el momento en que se confirma la visita (la transición `schedule` → `briefing`), y esa escritura incluye la fecha y hora de cita elegidas. Los campos de contacto se recolectan una fase antes (`contact_capture`) y se mantienen en el estado de sesión hasta entonces; la escritura se difiere a la confirmación precisamente porque la cita es parte del registro. La escritura es **idempotente (crear-o-actualizar)** indexada por un id de lead por sesión: si el prospecto regresa de `briefing` a `schedule` y vuelve a confirmar una fecha/hora distinta, el registro existente se actualiza en su lugar, nunca se duplica, de modo que hay exactamente un lead en el CRM por sesión sin importar cuántas veces cambie la cita. Una escritura diferida o por lotes arriesgaría perder el lead o dejar al asesor sin un brief.
-- **Estado operativo del club (Categoría B).** Si un club está abierto, temporalmente cerrado o aún no operando debe estar en vivo. Recomendar un club cerrado es una falla grave visible para el prospecto. El resolver no debe ofrecer un club que no esté operando actualmente.
-- **Disponibilidad y horario de clases (Categoría C).** Si una clase aún se imparte, en qué días, en qué franjas y en qué clubes debe estar en vivo en el momento en que corre el ranker de clases. Una recomendación construida sobre un horario obsoleto envía al prospecto a una clase que pudo haber sido cancelada o reprogramada —la falla de datos obsoletos más dañina, porque se manifiesta como una promesa rota durante la visita.
+**Todo el catálogo se sincroniza una vez al día, con corte a las 06:00 (hora de la Ciudad de México).** Lo registrado en el CRM hasta las 05:59 se publica ese mismo día a partir de las 06:00. Esto cubre el estatus operativo de cada club, sus horarios de atención y amenidades, el catálogo de clases con sus días y horarios, y las tarifas, descuentos y promociones. Para casos excepcionales existe una **sincronización manual inmediata** desde la sección de administración.
 
-**Puede ser periódico (sincronizado en un calendario, no por solicitud):**
-- **Línea base del directorio de clubes (Categoría B).** Nombres comerciales, direcciones, coordenadas y las banderas de amenidades (alberca, FitKidz) cambian rara vez. Un club no gana ni pierde una alberca entre dos sesiones.
-- **Catálogo de actividades infantiles de FitKidz (Categoría B).** La lista específica de actividades infantiles por club cambia con poca frecuencia y puede sincronizarse de forma periódica. (Donde este catálogo está incompleto para un club, la experiencia ya degrada con gracia a un mensaje genérico de FitKidz y difiere el detalle al asesor.)
-- **Catálogo maestro de clases y metadata por clase (Categoría C).** La lista de disciplinas y el nivel que requiere cada una son estables. Lo que cambia a menudo es *dónde y cuándo* se imparte cada una —y esa porción volátil (disponibilidad y horario) es la porción en tiempo real anterior.
+**La única operación en vivo es la escritura del lead (Categoría A).** El prospecto se escribe en el CRM en el momento en que confirma su visita (la transición `schedule` → `briefing`), con la fecha y hora elegidas, de forma idempotente por sesión.
+
+**Consecuencia para el resolver y el ranker.** Ambos operan sobre la instantánea del día, no sobre lecturas en vivo. Esto simplifica la arquitectura y elimina la dependencia de latencia del CRM en el recorrido del prospecto: el único punto donde el API del cliente es crítico es la escritura del lead. El riesgo residual —recomendar una clase cancelada esa misma mañana o un club cerrado ese mismo día— se acota con la sincronización manual, que Sports World dispara ante cualquier cambio operativo urgente.
 
 ## 5.3 Implicaciones para el flujo de recomendación
 
@@ -698,14 +694,15 @@ Concretamente, esto significa:
 - El filtro de intersección de catálogo del ranker de clases (§4.4, Paso 1) debe reflejar la disponibilidad de clases en vivo para el club resuelto. Una clase que ha sido cancelada o que ya no se ofrece no debe surgir como ideal. Este filtro en vivo trata sobre el *propio estado operativo de la clase* (cancelada, descontinuada, no programada actualmente) —**no** sobre si el horario de la clase coincide con la disponibilidad declarada del prospecto (Q7/Q8). Según §2.2 y §4.4, Q7/Q8 se capturan para el brief del asesor y nunca filtran de forma estricta el catálogo; la conciliación de horarios contra la disponibilidad del prospecto ocurre con el asesor durante la visita.
 - La escritura del lead debe completarse en la confirmación de la cita (la transición `schedule` → `briefing`), antes de mostrar la pantalla de confirmación, de modo que el registro completo del lead esté en el CRM en el instante en que se agenda la visita. Si la cita se modifica después en la misma sesión, el mismo registro se actualiza (§5.2).
 
-## 5.4 Dependencias abiertas
+## 5.4 Contratos de datos: definidos
 
-Los sistemas de registro precisos, sus métodos de acceso y sus contratos de datos son propiedad de Sports World y no están definidos en este documento. Para hacer operativas las porciones en tiempo real de esta especificación, el equipo técnico de Sports World debe proveer:
-- El sistema CRM y el contrato de escritura para crear (o actualizar) un lead cualificado —qué campos, en qué formato, hacia qué destino— donde la ruta de actualización soporte la reconfirmación idempotente descrita en §5.2.
-- El sistema de registro del directorio de clubes y cómo se expone el estado operativo en vivo.
-- El sistema de registro de programación de clases y cómo se exponen la disponibilidad y el horario de clases en vivo.
+Los sistemas de registro son propiedad de Sports World, pero **sus contratos de datos ya están especificados**. El detalle campo por campo —qué se lee, qué se escribe, con qué llaves y con qué frecuencia— consta en **[Integración de Datos](#integracion)**:
 
-Hasta que esos contratos estén definidos, la experiencia opera contra una instantánea sincronizada de datos de club y clases. La arquitectura está diseñada de modo que reemplazar la instantánea con lecturas en vivo requiera cambiar solo la capa de datos, no la lógica de recomendación: el resolver, el selector de bloques y el ranker de clases consumen la misma forma de datos sin importar si llegó en vivo o vía sincronización periódica.
+- **Escritura del lead cualificado:** el registro `prospecto` con sus campos, la llave de idempotencia por sesión y el manejo de reconfirmación (**[Integración de Datos · §4](#integracion:4-escritura-el-prospecto-en-el-crm)**).
+- **Directorio de clubes y estatus operativo:** tabla `clubes`, sincronización diaria (**§3.1**).
+- **Catálogo y horarios de clases:** tabla `clases`, con día de la semana, hora de inicio y término, y las fechas de la semana visible (**§3.2**).
+
+Lo que permanece a cargo de Sports World no es la definición sino **la entrega**: las credenciales, la documentación del API y los puntos de acceso enumerados en el Anexo Uno (Bloques A, B y D) y en el **[Mapa del Funnel · §6](#funnel:6-lo-que-hoy-falta-pedir)**.
 
 ---
 
@@ -897,13 +894,18 @@ Patrón: `/perfiles/[perfil]/`.
 122. **Hub de entrenamiento personal** — `/personal-training/`. Entrenamiento personalizado, conectado a los cinco perfiles de usuario.
 
 ### Nivel 10 — Membresías (6 páginas)
-Un hub más 5 planes. Patrón: `/membresias/` y `/membresias/[plan]/`.
+Un hub más cinco páginas. Patrón: `/membresias/` y `/membresias/[criterio]/`.
+
+**Las rutas no llevan nombre comercial de plan.** Los planes, sus nombres, precios, descuentos y promociones **se extraen del CRM** (**[Integración de Datos · §3.3](#integracion:3-lecturas-campos-exactos-que-se-extraen-del-crm)**) y cambian con la operación comercial; congelarlos como dirección permanente rompería las URLs y el posicionamiento ganado cada vez que Sports World renombre, retire o lance un plan. Las cinco páginas se organizan por **criterio estable de decisión**, y el contenido de cada una —nombre del plan, precio y promoción vigente— se pinta desde el CRM.
+
 123. Hub de membresías — `/membresias/`
-124. Uniclub — `/membresias/uniclub/`
-125. Allclub — `/membresias/allclub/`
-126. Black Pass — `/membresias/black-pass/`
-127. Pink Plan — `/membresias/pink-plan/`
-128. Promo 21 días — `/membresias/promo-21-dias/`
+124. Un club — `/membresias/un-club/`
+125. Multiclub — `/membresias/multiclub/`
+126. Familiar — `/membresias/familiar/`
+127. Corporativa — `/membresias/corporativa/`
+128. Promociones vigentes — `/membresias/promociones/`
+
+> La asignación exacta de cada plan del CRM a estas cinco páginas se valida con Sports World al inicio del proyecto. El Contrato (Anexo Dos I.1) compromete **seis páginas de membresía** sin nombrarlas, de modo que este criterio lo cumple sin modificar el alcance.
 
 ### Nivel 11 — Blog de SEO (20 páginas)
 20 artículos optimizados para SEO. Patrón: `/blog/[articulo]/`.
