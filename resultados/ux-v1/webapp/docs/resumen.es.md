@@ -35,11 +35,11 @@ Lo que hace a esto un solo sistema —y no tres proyectos paralelos— es que **
 
 A continuación, el desarrollo del **Rediseño Web (Proyecto A)** — su implementación insignia.
 
-## Rediseño Web (Proyecto A)
+## Proyecto A · Rediseño Web — la capa de captación y conversión
 
 ### 1 · El punto de partida
 
-Sports World es una marca sólida que hoy resulta **invisible donde el cliente la busca**. La auditoría inicial (Semrush, marzo 2026; 6,900 keywords unbranded analizadas) lo resume así: el sitio destaca en los términos de marca —posiciones 2–6— y desaparece en todo lo demás. Estos son los números que el nuevo sitio debe revertir desde el día uno.
+Sports World es una marca sólida que hoy resulta **invisible donde el cliente la busca** — y no por falta de infraestructura, sino porque la que tiene no está traducida a lo que la gente busca. La auditoría inicial (Semrush, marzo 2026; 6,900 keywords unbranded analizadas) lo resume así: el sitio destaca en los términos de marca —posiciones 2–6— y desaparece en todo lo demás. Estos son los números que la capa de captación debe revertir desde el día uno.
 
 | Dato actual | Qué significa |
 |---|---|
@@ -63,7 +63,7 @@ El diagnóstico digital se validó **con la voz de la propia operación**: un [w
 
 ### 2 · Los objetivos del rediseño
 
-Cinco metas que el nuevo sitio debe cumplir desde el día uno.
+Cinco metas de esta capa, todas al servicio de lo mismo: que la infraestructura de Sports World sea encontrable y legible desde el día uno.
 
 - **Indexación total.** Cada club, cada amenidad, cada clase y cada objetivo con su propia página rastreable en Google. Pasar de cero páginas de club indexables a 49+ más todos sus perfiles.
 - **Aterrizaje local directo.** Quien busca "gimnasio cerca de mí" aterriza en la ficha del club más cercano, no en la página de inicio.
@@ -72,6 +72,8 @@ Cinco metas que el nuevo sitio debe cumplir desde el día uno.
 - **Control del negocio.** Un panel de contenido no-code que permite a Sports World actualizar horarios, precios, amenidades y contenido sin depender de la agencia ni tocar código.
 
 ### 3 · La nueva arquitectura
+
+Aquí es donde la infraestructura se vuelve legible. Cada club, cada amenidad y cada clase deja de ser una entrada de catálogo y pasa a ser una página que responde a un objetivo concreto — y que Google puede leer. Las 148 páginas no son un ejercicio de volumen: son la traducción, una por una, de lo que Sports World ya tiene.
 
 148 páginas organizadas en once niveles jerárquicos, con enfoque mobile-first. Cada cifra representa páginas que hoy no existen o presentan deficiencias, y su ejecución solo es viable con producción asistida por inteligencia artificial sobre plantillas previamente aprobadas.
 
@@ -91,7 +93,7 @@ Cinco metas que el nuevo sitio debe cumplir desde el día uno.
 
 ### 4 · Cómo lo vive el usuario
 
-La arquitectura está diseñada para que cada recorrido termine en cita agendada, no en abandono. Un prospecto que busca una solución concreta aterriza en la página correcta, responde un cuestionario breve que personaliza su recorrido, recibe una recomendación con el club y las clases más adecuadas para su perfil, y agenda su visita, todo en una sola sesión: **bienvenida → cuestionario → resultado → captura de contacto → agendado → briefing para el asesor**.
+La arquitectura está diseñada para que cada recorrido termine en cita agendada, no en abandono. Un prospecto que busca una solución concreta aterriza en la página correcta, responde un cuestionario breve que personaliza su recorrido, recibe una recomendación con el club y las clases más adecuadas para su perfil, y agenda su visita, todo en una sola sesión: **bienvenida → cuestionario → resultado → captura de contacto → agendado → briefing para el asesor**. Ese recorrido produce las dos caras del producto: la **experiencia ideal** que ve el prospecto y el **brief** que recibe el asesor.
 
 Este recorrido resuelve tres obstáculos concretos del sitio actual:
 
@@ -135,9 +137,11 @@ Nos comprometemos con los **KPIs verificables del Contrato › Anexo Dos, Secci�
 
 Contraprestación única de **USD $81,000 sin IVA** (MXN $1,441,800; $1,672,488 con IVA) en **dos exhibiciones de 50%**: la factura de cada mitad se entrega al iniciar sus trabajos y el pago es exigible contra la entrega aprobada del 50% de los entregables (Semana 4) y contra la entrega total, respectivamente. Los servicios recurrentes se prestan mediante la **iguala mensual de $43,000 MXN/mes (USD $2,415.73); $49,880 MXN con IVA**, con bolsa de mejora de 8 horas mensuales y plazo mínimo de 6 meses; incluye el mantenimiento del BDS una vez activado, el hospedaje corre en la infraestructura que proporciona Sports World, se causa por mes vencido, se factura al cierre de cada mes y se paga a 30 días naturales de entregada la factura. Detalle en el **[Contrato · Cláusulas Octava y Novena](#contrato)**.
 
-## Business Development System (Proyecto B)
+## Proyecto B · Business Development System — la capa de canales en tiempo real
 
 > **Alcance y costo aparte** del Rediseño Web (Contrato · Cláusula Segunda; detalle en el **[Addendum del BDS](#bds-anexo)**).
+
+El Proyecto A construye el sistema y su producto; el Proyecto B lo lleva a donde hoy nace la mayoría de los leads — las campañas en redes— y lo hace operar en tiempo real.
 
 ### 9 · El problema: los leads se enfrían
 
@@ -162,9 +166,11 @@ El indicador rector es el **tiempo al primer contacto**. El BDS extiende el mism
 
 El BDS es un **alcance independiente**: su contratación no modifica el Proyecto A ni su precio. La contraprestación adicional es de **USD $4,850.00 más IVA (MXN $86,330.00 al tipo de cambio contractual de $17.80)**, en dos exhibiciones de 50% (USD $2,425.00 cada una), **sin iguala propia** —su mantenimiento está incluido en la iguala del Proyecto A—, con un **plazo de desarrollo y entrega de 8 semanas** desde la firma del **[Addendum del BDS](#bds-anexo)**, ejecutado **en paralelo al Proyecto A**. En tanto no se suscriba dicho Addendum, el Proyecto B no genera obligación ni costo para ninguna de las Partes.
 
-## Academia Sports World (Proyecto C)
+## Proyecto C · Academia Sports World — la capa de capacidad humana
 
 > **Alcance y costo aparte** de los Proyectos A y B (Contrato · Cláusula Segunda; detalle en el **[Addendum de la Academia](#academia-anexo)**).
+
+Las dos capas anteriores entregan al asesor un prospecto entendido y un brief para cerrarlo. El Proyecto C cierra el sistema por el lado humano: entrena a los 200 asesores en el mismo concepto que el sistema produce, para que el brief se convierta en venta.
 
 ### 13 · El problema: la habilitación del asesor no está estandarizada
 
