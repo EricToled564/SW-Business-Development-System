@@ -2,7 +2,7 @@
 
 _Generado por `tools/audit-docs.js`._
 
-**Resumen:** 0 errores · 0 avisos · 32 documentos · 71 términos de glosario.
+**Resumen:** 0 errores · 0 avisos · 33 documentos · 71 términos de glosario.
 
 ## archivos (0 errores, 0 avisos)
 
@@ -46,6 +46,7 @@ _Sin hallazgos._
 - **technical.es**: 31.1%, 65%
 - **technical.en**: 31.1%, 65%
 - **integracion.es**: 10%, 120,000, 160,000, 2,100, 21,000, 640,000, 70%, 75%, 80%, 80,000
+- **funnel.es**: 31.1%, 65%
 - **bds-medicion.es**: 100%
 - **bds-anexo.es**: $100,142.80, $17.80, $2,425.00, $4,850.00, $43,165.00, $50,071.40, $86,330.00, 15%, 50%
 - **academia-resumen.es**: $17.80, $18,500, $238.76, $4,250, $47,752.81, $850,000.00, 0.5%, 100%, 20%, 50%
