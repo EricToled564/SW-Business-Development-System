@@ -166,7 +166,7 @@ En los cuatro caminos, el común denominador es el mismo: **un cuestionario → 
 
 ### 11 · Qué mide el BDS
 
-El indicador rector es el **tiempo al primer contacto**. El BDS extiende el mismo funnel/dashboard del Proyecto A con sus propias etapas: **lead generado → primer contacto → cuestionario aplicado → visita agendada → visita proporcionada → nueva membresía**, medido por canal (operador humano vs. "BES") y por horario. Detalle en **[BDS · Medición y funnel](#bds-medicion)**.
+El BDS **no define un funnel propio**: opera sobre la espina de conversión única del **[Mapa del Funnel](#funnel)**, el documento canónico de medición. Lo que aporta es la puerta de entrada del **Canal 2** —el clic del anuncio a WhatsApp— y el eje transversal que existe para mover: el **tiempo al primer contacto**, medido por canal (operador humano vs. "BES") y por horario (dentro de horario vs. fuera de horario). Es además el único canal cuyo recorrido individual se mide completo desde el clic, porque el prospecto escribe desde su propio teléfono. Detalle en **[BDS · Medición y funnel](#bds-medicion)**.
 
 ### 12 · Lo comercial
 
