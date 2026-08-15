@@ -29,8 +29,7 @@ Un mismo concepto atraviesa el sistema de punta a punta: el cliente lo recibe co
 
 ## Qué NO se toca
 
-- **Los dos addenda oficiales** (`bds-anexo`, `academia-anexo`): documentos legales, no se editan. Sus PDFs tienen candado en `build_pdfkit.js` — no quitarlo.
-- **`contrato.es.md`**: en etapa de revisión. Eric autorizó incorporar los ocho ajustes de la auditoría (agosto 2026); cualquier cambio posterior requiere su autorización expresa, documentado en `PAQUETE-LEGAL.md`. **El PDF oficial `06-contrato.es.pdf` (V4.2) conserva el candado y no refleja los ajustes** — no regenerarlo sin instrucción.
+- **Los tres documentos contractuales** (`contrato.es.md`, `bds-anexo`, `academia-anexo`): están en **etapa de revisión** y sus markdown son la fuente de verdad. Sus PDFs **sí se regeneran** con `build_pdfkit.js` (el candado se retiró en agosto de 2026). Todo cambio de fondo requiere autorización expresa de Eric y queda documentado en `PAQUETE-LEGAL.md`. Las versiones firmadas anteriores se conservan en `/versiones-del-contrato/oficiales/` y no se tocan.
 - **`minuta-2026-06-22.es.md`**: registro histórico. Reescribirlo falsifica lo que se dijo ese día. (`seguimiento-2026-06-22.es.md` sí es un tablero vivo y se actualiza.)
 
 ## Decisiones ya fijadas
@@ -60,7 +59,7 @@ Un mismo concepto atraviesa el sistema de punta a punta: el cliente lo recibe co
 
 Los tres puntos que estaban anclados en el Contrato —frecuencia de sincronización, etapas del funnel y llave de conciliación— **quedaron incorporados al texto** en agosto de 2026, con autorización expresa de Eric por encontrarse el Contrato en etapa de revisión. Ver `PAQUETE-LEGAL.md` para el detalle de los ocho ajustes.
 
-**Único pendiente abierto:** el PDF oficial `06-contrato.es.pdf` (V4.2) no refleja los ajustes. El encabezado de `contrato.es.md` lo advierte. Se resuelve cuando Legal emita la versión actualizada o Eric autorice regenerar el PDF.
+Los PDFs del depósito ya reflejan el texto vigente: el Contrato como V4.3 (39 págs) y los dos addenda regenerados. **No queda ningún pendiente abierto.**
 
 ## Activos que ya existen (no reconstruir)
 

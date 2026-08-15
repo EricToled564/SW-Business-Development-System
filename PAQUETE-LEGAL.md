@@ -2,7 +2,7 @@
 
 **Estado: aplicados al texto del Contrato.** El Contrato se encuentra en etapa de revisión, por lo que los ajustes se incorporaron directamente a `contrato.es.md` en el depósito. Este documento deja constancia de **qué cambió, dónde y por qué**, para la revisión de Legal y para la conversación con EL CLIENTE.
 
-Son **ocho ajustes**: los siete derivados de la auditoría más uno detectado al someter el propio Contrato a las reglas de verificación automática. **El PDF oficial del depósito (V4.2) todavía no los refleja** — ese archivo es la copia entregada por el cliente y no se regenera sin instrucción expresa.
+Son **ocho ajustes**: los siete derivados de la auditoría más uno detectado al someter el propio Contrato a las reglas de verificación automática. **El PDF que publica el depósito ya los refleja** (V4.3, agosto 2026); la versión anterior se conserva en `/versiones-del-contrato/oficiales/` como registro histórico.
 
 Siete de los ocho **reducen, precisan o corrigen** lo que se le pide a Sports World. **Uno solo agrega un requerimiento verdaderamente nuevo** —el dato de cancelación—, y otro agrega dos campos a un dato ya pactado; ambos son indispensables para cerrar el funnel de resultados que el propio Contrato compromete. Ninguno modifica la contraprestación, los plazos ni los KPIs.
 

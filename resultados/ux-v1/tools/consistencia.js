@@ -20,7 +20,7 @@ const DECK = path.join(WEBAPP, "presentacion/deck.html");
 
 // Documentos que NO se corrigen editorialmente (legales e históricos)
 const INTOCABLES = new Set([
-  "bds-anexo.es.md", "academia-anexo.es.md", "minuta-2026-06-22.es.md",
+  "minuta-2026-06-22.es.md",
 ]);
 
 const archivos = fs.readdirSync(DOCS).filter((f) => f.endsWith(".es.md"));
