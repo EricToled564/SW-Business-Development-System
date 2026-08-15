@@ -126,9 +126,30 @@ regla("R16 · liga al funnel canónico", (falla) => {
 regla("R3 · llave de conciliación", (falla) => {
   porLinea((f, n, l) => {
     if (!/código postal/i.test(l)) return;
-    if (/Q16|colonia|5 dígitos|entrada|Anexo Uno describe|llave vigente|sustituir|Anexo Uno pacta/i.test(l)) return;
+    // Solo se exime el código postal como DATO DE ENTRADA geográfica (Q16), nunca como llave.
+    if (/Q16|colonia|5 dígitos|geolocalizaci|por cercanía/i.test(l)) return;
     if (/concilia|verificaci|cruce/i.test(l))
       falla(f, n, "código postal como llave de conciliación; rige teléfono + club");
+  });
+});
+
+/* ─────────── R17 · Registro de cliente en documentos del depósito ─────────── */
+/* Los documentos los lee Sports World. No deben narrar el proceso interno de
+   elaboración —auditorías propias, versiones anteriores, pendientes de Legal—
+   ni citar rutas, ramas o herramientas del repositorio. */
+regla("R17 · registro de cliente", (falla) => {
+  const PROHIBIDO = [
+    [/materia de Legal/i, "remite a Legal un asunto ya resuelto en el Contrato"],
+    [/falta pedir|hueco[s]? de acceso|no est[áa]n? cubiert[ao]s? por el Anexo/i, "declara un pendiente que ya está pactado"],
+    [/pr[óo]xima revisi[óo]n del Anexo|se reflejar[áa] en la pr[óo]xima/i, "difiere a una revisión futura un ajuste ya incorporado"],
+    [/el error de las definiciones anteriores|antes dec[íi]a|versi[óo]n anterior de este documento/i, "narra una versión anterior del propio documento"],
+    [/la auditor[íi]a de la documentaci[óo]n|correcci[óo]n editorial/i, "expone el proceso interno de elaboración"],
+    [/build_pdfkit|consistencia\.js|audit-docs|\/versiones-del-contrato|rama de trabajo|claude\/new-session/i, "cita herramientas o rutas del repositorio"],
+    [/\bV4\.2\b/, "cita una versión vencida del Contrato"],
+  ];
+  porLinea((f, n, l) => {
+    if (f === "minuta-2026-06-22.es.md" || f === "auditoria.es.md") return; // registro histórico y diagnóstico del cliente
+    for (const [re_, motivo] of PROHIBIDO) if (re_.test(l)) falla(f, n, motivo);
   });
 });
 

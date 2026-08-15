@@ -103,4 +103,4 @@ Siete de los ocho **reducen, precisan o corrigen** lo que se le pide a Sports Wo
 
 Los ocho están **incorporados al texto** de `contrato.es.md` y se presentan como un **único bloque de revisión al Contrato, al Anexo Uno y al Anexo Dos**, sin efecto sobre la contraprestación, los plazos ni los KPIs comprometidos.
 
-**Pendiente:** el PDF oficial del depósito (`06-contrato.es.pdf`, V4.2) sigue siendo la copia entregada por el cliente y **no refleja estos ocho ajustes**. El encabezado de `contrato.es.md` lo advierte de forma visible. Para alinearlos hay dos caminos: que Legal emita la versión actualizada, o autorizar la regeneración del PDF desde el depósito — decisión que corresponde a Eric.
+**Publicación.** El PDF del depósito (`06-contrato.es.pdf`) se regenera desde el markdown con el pipeline de casa y **ya refleja los ocho ajustes**: se publica como **V4.3, agosto de 2026, 39 páginas**. La copia anterior se conserva sin alteración en `/versiones-del-contrato/oficiales/contrato-v4.2-cliente.pdf` como registro histórico. Los dos addenda siguen el mismo régimen; el **Addendum del BDS** incorporó además un ajuste propio, descrito abajo.

@@ -2,7 +2,7 @@
 
 _Generado por `tools/audit-docs.js`._
 
-**Resumen:** 0 errores · 0 avisos · 33 documentos · 76 términos de glosario.
+**Resumen:** 1 errores · 0 avisos · 33 documentos · 76 términos de glosario.
 
 ## archivos (0 errores, 0 avisos)
 
@@ -12,9 +12,11 @@ _Sin hallazgos._
 
 _Sin hallazgos._
 
-## enlaces (0 errores, 0 avisos)
+## enlaces (1 errores, 0 avisos)
 
-_Sin hallazgos._
+| Nivel | Documento | Detalle |
+|---|---|---|
+| ERROR | experience.es:705 | Enlace a sección inexistente: #funnel:6-lo-que-hoy-falta-pedir (no hay ese anchor en "funnel") |
 
 ## fuente-verdad (0 errores, 0 avisos)
 
