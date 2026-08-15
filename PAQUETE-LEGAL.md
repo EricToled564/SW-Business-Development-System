@@ -62,6 +62,16 @@ Cinco de los seis **reducen o precisan** lo que se le pide a Sports World; solo 
 
 **Por qué:** *"razonable"* no es auditable ni aprovisionable — nadie puede comprar un servidor con esa instrucción, y ante una falla en un pico de campaña ninguna de las Partes tendría un criterio objetivo para determinar si la infraestructura era suficiente. La remisión mantiene el número en un solo lugar y evita duplicarlo en el Contrato.
 
+## 7 · Nombre del documento de seguridad (referencia cruzada)
+
+**Dónde:** Cláusula Décima Octava, apartado II (Minimización y no retención).
+
+**Dice hoy:** *"...conforme a lo descrito en la sección* Seguridad del sitio *del proyecto."*
+
+**Debe decir:** *"...conforme a lo descrito en la sección* Seguridad del sistema *del proyecto."*
+
+**Por qué:** el documento se renombró a **Seguridad del sistema** porque su alcance dejó de ser el sitio y pasó a cubrir los cuatro canales de captación. La referencia del Contrato apunta a un nombre que ya no existe en el depósito. Es un ajuste de referencia cruzada, sin efecto sustantivo alguno sobre la obligación pactada.
+
 ---
 
 ## Resumen para la conversación con Legal
@@ -74,5 +84,6 @@ Cinco de los seis **reducen o precisan** lo que se le pide a Sports World; solo 
 | 4 | Dato de cancelación | **Requerimiento nuevo** — habilita el análisis de retención |
 | 5 | Etapas del funnel | Sin cambio al compromiso; se aclara el alcance |
 | 6 | Especificación del servidor en F.6 | Convierte una frase inauditable en una cifra verificable |
+| 7 | Nombre del documento de seguridad | Referencia cruzada; sin efecto sustantivo |
 
-Los seis se proponen como un **único convenio modificatorio al Anexo Uno y al Anexo Dos**, sin efecto sobre la contraprestación, los plazos ni los KPIs comprometidos.
+Los siete se proponen como un **único convenio modificatorio al Contrato, al Anexo Uno y al Anexo Dos**, sin efecto sobre la contraprestación, los plazos ni los KPIs comprometidos.
