@@ -14,7 +14,7 @@ EL PRESTADOR desarrolla e integra para EL CLIENTE un **sistema de captación y c
 - **"BES" sobre WhatsApp (solo texto)** como respaldo automático 24/7, con escalación a operador humano.
 - **Consola de operadores/asesores** (rol de operador sobre la consola interna ya existente): bandeja de WhatsApp, aplicación del cuestionario, generación de experiencia ideal y carga al CRM.
 - **Capa de enrutamiento en tiempo real** (human-first → "BES" de respaldo → escalación; colas, asignación, rebote).
-- **Funnel y medición del BDS** (primer contacto y *speed-to-lead*, por canal y operador), integrado al dashboard.
+- **Medición del BDS** (primer contacto y *speed-to-lead*, por canal y operador), integrada al **mismo funnel de resultados y dashboard del Proyecto A** —el BDS no constituye un funnel independiente—. La definición operativa de cada etapa, su fuente y el responsable de cada acceso constan en el documento *Mapa del Funnel* del proyecto.
 
 El detalle funcional y técnico consta en los documentos del módulo BDS: **[Flujo](#bds-flujo)**, **[Canales](#bds-canales)**, **[Estrategia Técnica](#bds-tecnica)** y **[Medición](#bds-medicion)**.
 
