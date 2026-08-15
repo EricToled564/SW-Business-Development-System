@@ -1,4 +1,4 @@
-# Sports World · Seguridad del sitio
+# Sports World · Seguridad del sistema
 ## Protección de los datos personales: minimización y no retención
 
 Este documento describe cómo **el sistema** protege la información, **con énfasis en los datos personales de los prospectos**. Cubre los cuatro canales de captación —el sitio, el agente "BES", WhatsApp (Proyecto B) y la consola interna— y la **base de datos del funnel**. El principio rector es claro y verificable: **el sistema recolecta lo mínimo indispensable, lo retiene el menor tiempo posible y no conserva una copia en infraestructura de EL PRESTADOR.**
@@ -34,7 +34,7 @@ La captura del sitio y de BES registra el lead directamente en el CRM mediante s
 - **Bitácoras sin datos personales:** los logs operativos y de error **no registran PII**; se usan identificadores no personales para diagnóstico.
 - **Accesibilidad y robustez:** el sitio cumple **WCAG 2.2 AA** y se sirve con render del lado del servidor (SSR), lo que reduce superficie de ejecución en el cliente.
 
-## 4b · La base de datos del funnel
+## 5 · La base de datos del funnel
 
 La medición de punta a punta (**[Mapa del Funnel](#funnel)**) requiere conservar el recorrido de cada prospecto hasta la membresía y, en su caso, la cancelación. Ese registro **no contradice el principio de minimización** porque:
 
@@ -43,14 +43,14 @@ La medición de punta a punta (**[Mapa del Funnel](#funnel)**) requiere conserva
 - **Los datos personales que contiene son los mínimos para conciliar**: nombre, apellido, teléfono y club, más el número de membresía. No almacena conversaciones, respuestas médicas ni contenido del cuestionario.
 - El tratamiento se rige por la **Cláusula Décima Octava** del Contrato, igual que el resto del sistema.
 
-## 5 · Respaldo del sitio ≠ respaldo de datos personales
+## 6 · Respaldo del sitio ≠ respaldo de datos personales
 
 Es importante no confundir dos conceptos distintos:
 
 - **El sitio (código, contenido y configuración) sí se respalda**, para poder restaurarlo ante un incidente y garantizar continuidad operativa.
 - **Los datos personales de los prospectos no se respaldan en el entorno web**, precisamente por el principio de minimización y no retención de la Sección 1. Su respaldo y resguardo viven en el CRM de Sports World.
 
-## 6 · Cumplimiento legal (LFPDPPP)
+## 7 · Cumplimiento legal (LFPDPPP)
 
 - El tratamiento se rige por la **Ley Federal de Protección de Datos Personales en Posesión de los Particulares**, su Reglamento y los avisos de privacidad de Sports World.
 - **Sports World es el responsable** del tratamiento; **Final Upgrade (el prestador) actúa como encargado**, tratando los datos únicamente conforme a las instrucciones de Sports World, con las medidas de seguridad administrativas, técnicas y físicas razonables, y **suprimiéndolos o devolviéndolos** al término de la relación.

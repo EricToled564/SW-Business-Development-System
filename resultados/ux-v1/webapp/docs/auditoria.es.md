@@ -28,7 +28,7 @@ Sports World tiene la mejor infraestructura de fitness de México y la peor trad
 ### 2.1 El apagón de sucursales
 El sitio se construye con JavaScript que se renderiza en el navegador del usuario (client-side rendering) y no en el servidor. Googlebot no ejecuta ese JavaScript de la misma forma, por lo que no accede al contenido de los clubes individuales.
 
-> **Hallazgo crítico:** de las 100 páginas auditadas por Semrush, **ninguna** corresponde a clubes individuales. Físicamente SW cuenta con 49+ clubes premium; digitalmente tiene **0 páginas de club rastreables**. Esto explica la cobertura de apenas 36.2% en keywords geográficas pese a la presencia física.
+> **Hallazgo crítico:** de las 100 páginas auditadas por Semrush, **ninguna** corresponde a clubes individuales. Físicamente SW cuenta con 49 clubes premium; digitalmente tiene **0 páginas de club rastreables**. Esto explica la cobertura de apenas 36.2% en keywords geográficas pese a la presencia física.
 
 Evidencia adicional de rendering: el gap entre keywords de desktop (24,900) y móvil (1,100) es de **22×**, lo que apunta a un problema severo de rendering que golpea sobre todo al tráfico móvil.
 

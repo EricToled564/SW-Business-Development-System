@@ -36,11 +36,9 @@ El BDS se apoya en tres piezas, ninguna nueva: **aplicar el cuestionario**, **co
 
 ## Qué mide el proyecto
 
-El BDS se evalúa por su **funnel de conversión** (extiende el dashboard del sitio), con foco en el **tiempo al primer contacto**:
+El BDS no define un funnel propio: opera sobre la **espina de conversión única** del **[Mapa del Funnel](#funnel)**, documento canónico de medición. Lo que aporta es la puerta de entrada del **Canal 2** —el anuncio que lleva a WhatsApp— y el eje transversal que existe para mover: el **tiempo al primer contacto**.
 
-**Lead generado → primer contacto → cuestionario aplicado → visita agendada → visita proporcionada → nueva membresía.**
-
-El detalle está en **[Medición · Funnel del BDS](#bds-medicion)**.
+Es además el único canal donde el recorrido individual se puede seguir completo desde el clic, porque el prospecto escribe desde su propio teléfono. El detalle está en **[Medición del BDS](#bds-medicion)**.
 
 ## Documentos de este módulo
 
