@@ -25,7 +25,7 @@ Este diseño tiene tres consecuencias operativas:
 
 > **Regla de corte diario (06:00).** La sincronización se ejecuta todos los días a las **06:00 horas de la Ciudad de México**. Todo cambio registrado en el CRM **hasta las 05:59** se publica ese mismo día **a partir de las 06:00**; los cambios registrados después del corte se publican al día siguiente. En consecuencia, la ventana operativa de Sports World para registrar una nueva promoción, una nueva tarifa o un cambio de clases es **de las 06:01 del día anterior a las 05:59 del día de publicación**. Para casos excepcionales, la sección de administración incluye una opción de **sincronización manual inmediata**.
 >
-> Esta regla sustituye la lectura en tiempo real de precios y clases descrita en el Anexo Uno (nota de frecuencia de actualización); el ajuste se reflejará en la próxima revisión del Anexo. El cambio **reduce los requerimientos hacia el CRM de Sports World**: una consulta programada al día en lugar de un flujo continuo, y un SLA de latencia que solo resulta crítico en la creación del prospecto (§7).
+> El corte diario rige para todo el catálogo —clubes, clases, horarios, tarifas, descuentos y promociones— y así consta en el Anexo Uno. Frente a una lectura continua, **reduce los requerimientos hacia el CRM de Sports World**: una consulta programada al día en lugar de un flujo permanente, y un SLA de latencia que solo resulta crítico en la creación del prospecto (§7).
 
 ## 2 · Alcance de canales: dónde opera BES
 
@@ -136,7 +136,7 @@ Los tramos siguientes usan la numeración de la tabla de §5, amarrada a los có
 
 > **Requisito crítico para Sports World:** la base o lectura de **membresías nuevas (etapa 5) debe incluir el `numero_membresia` y el `telefono`** del nuevo socio. Sin el número de membresía, las cancelaciones no pueden vincularse con el funnel; sin el teléfono, la compra no puede vincularse con el lead que la originó.
 
-> **Ajuste al Anexo Uno.** El Anexo Uno describe la conciliación de membresías nuevas por *nombre y apellido, con el código postal como verificación*. Esta especificación la sustituye por **nombre + apellido + teléfono + club**, llave más confiable; el ajuste se reflejará en la próxima revisión del Anexo. El principio se mantiene intacto: la conciliación ocurre **dentro del servidor de Sports World** y el dashboard presenta **únicamente resultados agregados**.
+> **Dónde ocurre la conciliación.** El cruce se realiza **dentro del servidor de Sports World** (Bloque F del Anexo Uno) y el dashboard presenta **únicamente resultados agregados**: los datos personales de la base de membresías **no residen en sistemas de EL PRESTADOR**.
 
 ## 7 · Requerimientos técnicos al CRM para esta integración
 
