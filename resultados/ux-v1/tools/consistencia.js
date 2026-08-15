@@ -68,14 +68,54 @@ regla("R1 · sincronización en tiempo real", (falla) => {
 });
 
 /* ─────────── R2 · Una sola definición de funnel ─────────── */
+// La versión anterior de esta regla buscaba una frase exacta y por eso dejó pasar
+// cadenas de etapas escritas con otras palabras. Ahora detecta la FORMA: cualquier
+// cadena de etapas encadenadas con flechas fuera del documento canónico.
+/** ¿La sección «##» que contiene esta línea remite al Mapa del Funnel? */
+function seccionRemite(f, n) {
+  const L = texto[f].split("\n");
+  let ini = 0;
+  for (let i = n - 1; i >= 0; i--) if (/^## /.test(L[i])) { ini = i; break; }
+  let fin = L.length;
+  for (let i = n; i < L.length; i++) if (/^## /.test(L[i])) { fin = i; break; }
+  return /\(#funnel(?::[a-z0-9-]*)?\)/.test(L.slice(ini, fin).join("\n"));
+}
+
 regla("R2 · definiciones de funnel", (falla) => {
+  const ETAPA = /(lead|contacto|cuestionario|visita|membres[ií]a|cita|asistencia|cierre|tr[aá]fico|cancelaci[oó]n|agenda)/gi;
+  // Líneas donde las flechas no describen un funnel: metas de KPI, fórmulas de ROI,
+  // prosa de arquitectura. Se identifican porque no nombran dos etapas distintas
+  // o porque el destino de la flecha es una cifra.
+  const noEsFunnel = /→\s*0\b|enlaces rotos|backslash|sin H1|%|tasa de|A × B × C|experiencia ideal → una escritura/i;
   porLinea((f, n, l) => {
     if (f === "funnel.es.md") return;
-    if (/Lead generado → primer contacto/i.test(l))
-      falla(f, n, "define un funnel propio; el canónico es funnel.es.md");
+    if ((l.match(/→/g) || []).length < 2) return;
+    if (noEsFunnel.test(l)) return;
+    const etapas = new Set((l.match(ETAPA) || []).map((x) => x.toLowerCase()));
+    if (etapas.size < 2) return;
+    if (seccionRemite(f, n)) return; // la sección que la contiene remite al canónico
+    falla(f, n, "enumera etapas de funnel y su sección no remite al canónico (#funnel)");
+  });
+  porLinea((f, n, l) => {
+    if (f === "funnel.es.md") return;
     if (/cuatro etapas del funnel/i.test(l) && !/contractual|Contrato|titular/i.test(l))
       falla(f, n, "funnel de cuatro etapas sin acotarlo como compromiso contractual");
+    if (/funnel del BDS|funnel propio del|su propio funnel/i.test(l) && !/no define/i.test(l))
+      falla(f, n, "atribuye un funnel propio a una capa; la espina de conversión es única");
   });
+});
+
+/* ─────────── R16 · Toda mención sustantiva liga al canónico ─────────── */
+// Si un documento habla del funnel, tiene que decir dónde está definido.
+regla("R16 · liga al funnel canónico", (falla) => {
+  for (const f of archivos) {
+    if (INTOCABLES.has(f) || f === "funnel.es.md") continue;
+    marcar(f);
+    const menciones = (texto[f].match(/funnel/gi) || []).length;
+    if (!menciones) continue;
+    if (/\(#funnel(?::[a-z0-9-]*)?\)/.test(texto[f])) continue;
+    falla(f, 0, `menciona el funnel ${menciones} ${menciones === 1 ? "vez" : "veces"} y no liga al documento canónico (#funnel)`);
+  }
 });
 
 /* ─────────── R3 · Llave de conciliación ─────────── */
@@ -201,6 +241,9 @@ regla("R11 · glosario", (falla) => {
       if (!new RegExp(`^\\|\\s*\\*\\*${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`, "im").test(g))
         falla("glosario.es.md", 0, `término central sin definir: «${t}»`);
     });
+  const entradaFunnel = (g.match(/^\|\s*\*\*funnel[^\n]*/im) || [""])[0];
+  if (entradaFunnel && !/\(#funnel\)/.test(entradaFunnel))
+    falla("glosario.es.md", 0, "la entrada «funnel» no remite al documento canónico (#funnel)");
 });
 
 /* ─────────── R12 · Registro completo: doc, PDF e índice ─────────── */
