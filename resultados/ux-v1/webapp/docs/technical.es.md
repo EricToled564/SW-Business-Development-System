@@ -121,7 +121,7 @@ Si algún control falla, el cambio no se publica hasta corregirse. Este mecanism
 - **Entornos:** local, **staging** y **producción**, con feature flags donde aplique; cada cambio se ve primero en una vista previa.
 - **Entrega continua (CI/CD):** cada cambio atraviesa los controles del §8 antes de publicarse; nada llega a producción saltándose la compuerta.
 - **Seguridad de integración:** las integraciones entrantes se protegen con **verificación de firma (HMAC en webhooks)**, **HTTPS con HSTS** y **rotación de secretos**. Las credenciales se entregan por un canal seguro (un gestor de contraseñas), **nunca por correo en texto plano** (Anexo Uno B y C).
-- **Protección de datos personales:** el sitio aplica **minimización y no retención** —los datos del prospecto viven brevemente y no se respaldan en el entorno del sitio una vez copiados al CRM—. El detalle y el marco legal (LFPDPPP) están en **[Seguridad del sitio](#seguridad)**.
+- **Protección de datos personales:** el sistema aplica **minimización y no retención** en sus cuatro canales de captación —los datos del prospecto viven brevemente y no se respaldan en el entorno del sitio una vez copiados al CRM—. El detalle y el marco legal (LFPDPPP) están en **[Seguridad del sitio](#seguridad)**.
 - **Propiedad:** todo el código, el contenido y los activos quedan en propiedad de Sports World, operando en su propia infraestructura.
 
 ## 10 · Funnel de resultados y dashboard de medición

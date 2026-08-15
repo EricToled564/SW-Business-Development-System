@@ -96,7 +96,7 @@ Estos escenarios cubren la práctica semanal de mantenimiento; los tres repasos 
 
 ## Seguridad y datos
 
-- Mismos principios del Proyecto A: HTTPS, credenciales por canal seguro, minimización de datos personales (**[Seguridad del sitio](#seguridad)**). Las sesiones de práctica no involucran datos de prospectos ni clientes reales — el "cliente" del role-play es siempre un perfil simulado.
+- Mismos principios del Proyecto A: HTTPS, credenciales por canal seguro, minimización de datos personales (**[Seguridad del sistema](#seguridad)**). Las sesiones de práctica no involucran datos de prospectos ni clientes reales — el "cliente" del role-play es siempre un perfil simulado.
 - Los datos de avance y desempeño de cada asesor (readiness) se almacenan como información de recursos humanos / desempeño interno, no como datos de prospecto o cliente, en el servidor propio de la Academia (§1).
 
 ## Dependencias a cargo de Sports World
