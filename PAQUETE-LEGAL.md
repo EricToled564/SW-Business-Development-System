@@ -1,8 +1,10 @@
 # Paquete para Legal · Ajustes al Contrato, al Anexo Uno y al Anexo Dos
 
-Siete ajustes al Contrato que surgieron de la auditoría completa de la documentación y de las decisiones operativas tomadas durante el proyecto. **Ninguno se corrigió en la documentación**: los siete modifican texto contractual y requieren revisión de Legal.
+**Estado: aplicados al texto del Contrato.** El Contrato se encuentra en etapa de revisión, por lo que los ajustes se incorporaron directamente a `contrato.es.md` en el depósito. Este documento deja constancia de **qué cambió, dónde y por qué**, para la revisión de Legal y para la conversación con EL CLIENTE.
 
-Seis de los siete **reducen, precisan o corrigen** lo que se le pide a Sports World. **Uno solo agrega un requerimiento verdaderamente nuevo** —el dato de cancelación—, y otro agrega dos campos a un dato ya pactado; ambos son indispensables para cerrar el funnel de resultados que el propio Contrato compromete.
+Son **ocho ajustes**: los siete derivados de la auditoría más uno detectado al someter el propio Contrato a las reglas de verificación automática. **El PDF oficial del depósito (V4.2) todavía no los refleja** — ese archivo es la copia entregada por el cliente y no se regenera sin instrucción expresa.
+
+Siete de los ocho **reducen, precisan o corrigen** lo que se le pide a Sports World. **Uno solo agrega un requerimiento verdaderamente nuevo** —el dato de cancelación—, y otro agrega dos campos a un dato ya pactado; ambos son indispensables para cerrar el funnel de resultados que el propio Contrato compromete. Ninguno modifica la contraprestación, los plazos ni los KPIs.
 
 ---
 
@@ -74,6 +76,18 @@ Seis de los siete **reducen, precisan o corrigen** lo que se le pide a Sports Wo
 
 ---
 
+## 8 · Punto de acceso de consulta de socios (Anexo Uno, D.1)
+
+**Dónde:** Anexo Uno, Bloque D, punto D.1; y las menciones en A.1 y B.5.
+
+**Decía:** *"Punto de acceso de consulta de miembro por teléfono o correo (devuelve datos básicos del socio…)."*
+
+**Dice ahora:** D.1 queda como **exclusión expresa** —*"No se solicita. El proyecto no requiere un punto de acceso de consulta de socios"*— conservando la numeración para no romper las referencias cruzadas del Contrato y sus Anexos. Se retiró también la mención en A.1 (documentación del API) y B.5 (SLAs), y el SLA de D.5 pasó a referirse a D.2 y D.3.
+
+**Por qué:** los datos de socios actuales no se leen en la operación de captación; "BES" atiende únicamente la entrada digital. El depósito ya lo declaraba así; el Contrato seguía pidiendo el acceso. **Reduce lo que se le exige a Sistemas de Sports World** sin afectar ninguna funcionalidad comprometida.
+
+---
+
 ## Resumen para la conversación con Legal
 
 | # | Ajuste | Efecto para EL CLIENTE |
@@ -85,5 +99,8 @@ Seis de los siete **reducen, precisan o corrigen** lo que se le pide a Sports Wo
 | 5 | Etapas del funnel | Sin cambio al compromiso; se aclara el alcance |
 | 6 | Especificación del servidor en F.6 | Convierte una frase inauditable en una cifra verificable |
 | 7 | Nombre del documento de seguridad | Referencia cruzada; sin efecto sustantivo |
+| 8 | Consulta de socios (D.1) como exclusión expresa | **Reduce** un acceso que Sistemas ya no debe preparar |
 
-Los siete se proponen como un **único convenio modificatorio al Contrato, al Anexo Uno y al Anexo Dos**, sin efecto sobre la contraprestación, los plazos ni los KPIs comprometidos.
+Los ocho están **incorporados al texto** de `contrato.es.md` y se presentan como un **único bloque de revisión al Contrato, al Anexo Uno y al Anexo Dos**, sin efecto sobre la contraprestación, los plazos ni los KPIs comprometidos.
+
+**Pendiente:** el PDF oficial del depósito (`06-contrato.es.pdf`, V4.2) sigue siendo la copia entregada por el cliente y **no refleja estos ocho ajustes**. El encabezado de `contrato.es.md` lo advierte de forma visible. Para alinearlos hay dos caminos: que Legal emita la versión actualizada, o autorizar la regeneración del PDF desde el depósito — decisión que corresponde a Eric.

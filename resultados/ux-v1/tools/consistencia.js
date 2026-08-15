@@ -20,7 +20,7 @@ const DECK = path.join(WEBAPP, "presentacion/deck.html");
 
 // Documentos que NO se corrigen editorialmente (legales e históricos)
 const INTOCABLES = new Set([
-  "contrato.es.md", "bds-anexo.es.md", "academia-anexo.es.md", "minuta-2026-06-22.es.md",
+  "bds-anexo.es.md", "academia-anexo.es.md", "minuta-2026-06-22.es.md",
 ]);
 
 const archivos = fs.readdirSync(DOCS).filter((f) => f.endsWith(".es.md"));
@@ -91,9 +91,13 @@ regla("R2 · definiciones de funnel", (falla) => {
     if (f === "funnel.es.md") return;
     if ((l.match(/→/g) || []).length < 2) return;
     if (noEsFunnel.test(l)) return;
-    const etapas = new Set((l.match(ETAPA) || []).map((x) => x.toLowerCase()));
+    // Las etapas tienen que estar JUNTO a las flechas, no en cualquier parte de una
+    // línea larga: así una cadena de enrutamiento no se confunde con un funnel.
+    const cerca = (l.match(/.{0,70}→.{0,70}/g) || []).join(" ");
+    const etapas = new Set((cerca.match(ETAPA) || []).map((x) => x.toLowerCase()));
     if (etapas.size < 2) return;
     if (seccionRemite(f, n)) return; // la sección que la contiene remite al canónico
+    if (/\*Mapa del Funnel\*/.test(l)) return; // el contrato lo cita por nombre, no por liga
     falla(f, n, "enumera etapas de funnel y su sección no remite al canónico (#funnel)");
   });
   porLinea((f, n, l) => {
@@ -113,7 +117,7 @@ regla("R16 · liga al funnel canónico", (falla) => {
     marcar(f);
     const menciones = (texto[f].match(/funnel/gi) || []).length;
     if (!menciones) continue;
-    if (/\(#funnel(?::[a-z0-9-]*)?\)/.test(texto[f])) continue;
+    if (/\(#funnel(?::[a-z0-9-]*)?\)|\*Mapa del Funnel\*/.test(texto[f])) continue; // liga, o cita por nombre en el contrato
     falla(f, 0, `menciona el funnel ${menciones} ${menciones === 1 ? "vez" : "veces"} y no liga al documento canónico (#funnel)`);
   }
 });
