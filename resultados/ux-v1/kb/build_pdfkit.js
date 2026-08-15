@@ -13,13 +13,12 @@ const DOCS = [
   { src: SRC + "/experience.es.md", kind: "md", title: "UX Architecture Specs — Arquitectura de Experiencia", out: "01-arquitectura-de-experiencia.es.pdf" },
   { src: SRC + "/technical.es.md", kind: "md", title: "Estrategia Técnica", out: "02-estrategia-tecnica.es.pdf" },
   { src: SRC + "/execution.es.md", kind: "md", title: "Plan de Ejecución", out: "03-plan-de-ejecucion.es.pdf" },
-  // CANDADO — PDFs contractuales OFICIALES (no regenerar):
-  // 06-contrato.es.pdf (Contrato V4.2), 20-bds-anexo.es.pdf (Addendum BDS V1.1) y
-  // 26-academia-anexo.es.pdf (Addendum Academia V1.1) son los PDFs OFICIALES
-  // entregados por el cliente (fuente de la verdad; copias en
-  // /versiones-del-contrato/oficiales/). NO se generan desde los .md: este build
-  // los EXCLUYE a propósito para que ningún build futuro los sobrescriba.
-  // { src: SRC + "/contrato.es.md", ... out: "06-contrato.es.pdf" }   ← excluido (oficial del cliente)
+  // Los tres documentos contractuales SÍ se generan desde su .md desde agosto de
+  // 2026: el Contrato entró en etapa de revisión y sus ocho ajustes (ver
+  // PAQUETE-LEGAL.md) deben quedar reflejados en el PDF que se publica. Las
+  // versiones anteriores se conservan en /versiones-del-contrato/oficiales/ como
+  // registro histórico; el depósito publica el texto vigente.
+  { src: SRC + "/contrato.es.md", kind: "md", title: "Contrato de Prestación de Servicios Profesionales y Consultoría", out: "06-contrato.es.pdf" },
   { src: SRC + "/auditoria.es.md", kind: "md", title: "Auditoría inicial del sitio — El Gigante Invisible", out: "07-auditoria-inicial.es.pdf" },
   { src: SRC + "/minuta-2026-06-22.es.md", kind: "md", title: "Minuta — Reunión 22 de junio de 2026", out: "08-minuta-2026-06-22.es.pdf" },
   { src: SRC + "/seguimiento-2026-06-22.es.md", kind: "md", title: "Seguimiento — Reunión 22 de junio de 2026", out: "09-seguimiento-2026-06-22.es.pdf" },
@@ -32,13 +31,13 @@ const DOCS = [
   { src: SRC + "/bds-canales.es.md", kind: "md", title: "BDS — Canales, enrutamiento y SLA", out: "17-bds-canales.es.pdf" },
   { src: SRC + "/bds-tecnica.es.md", kind: "md", title: "BDS — Estrategia Técnica", out: "18-bds-tecnica.es.pdf" },
   { src: SRC + "/bds-medicion.es.md", kind: "md", title: "BDS — Medición y funnel", out: "19-bds-medicion.es.pdf" },
-  // { src: SRC + "/bds-anexo.es.md", ... out: "20-bds-anexo.es.pdf" }   ← excluido (oficial del cliente, ver candado arriba)
+  { src: SRC + "/bds-anexo.es.md", kind: "md", title: "Addendum del Business Development System (Proyecto B)", out: "20-bds-anexo.es.pdf" },
   { src: SRC + "/academia-resumen.es.md", kind: "md", title: "Academia SW — Resumen Ejecutivo", out: "21-academia-resumen.es.pdf" },
   { src: SRC + "/academia-contenido.es.md", kind: "md", title: "Academia SW — Contenido y taxonomía", out: "22-academia-contenido.es.pdf" },
   { src: SRC + "/academia-fases.es.md", kind: "md", title: "Academia SW — Fases del programa", out: "23-academia-fases.es.pdf" },
   { src: SRC + "/academia-tecnica.es.md", kind: "md", title: "Academia SW — Estrategia Técnica", out: "24-academia-tecnica.es.pdf" },
   { src: SRC + "/academia-medicion.es.md", kind: "md", title: "Academia SW — Medición", out: "25-academia-medicion.es.pdf" },
-  // { src: SRC + "/academia-anexo.es.md", ... out: "26-academia-anexo.es.pdf" }   ← excluido (oficial del cliente, ver candado arriba)
+  { src: SRC + "/academia-anexo.es.md", kind: "md", title: "Addendum de la Academia Sports World (Proyecto C)", out: "26-academia-anexo.es.pdf" },
   { src: SRC + "/academia-produccion.es.md", kind: "md", title: "Academia SW — Producción del curso", out: "27-academia-produccion.es.pdf" },
   { src: SRC + "/gastos-operativos.es.md", kind: "md", title: "Gastos Operativos Variables — Tres escenarios", out: "28-gastos-operativos.es.pdf" },
   { src: SRC + "/integracion.es.md", kind: "md", title: "Integración de Datos — CRM, prospecto y funnel", out: "31-integracion-datos.es.pdf" },
