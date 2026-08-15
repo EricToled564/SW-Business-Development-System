@@ -93,7 +93,7 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | Aportaciones de SW (sistemas y marketing) | [Status de Entregables Sports World](#aportaciones) · [Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente) |
 | KPIs comprometidos | [Contrato · Anexo Dos Sección IV](#contrato:seccin-iv-kpis-comprometidos-estrategia-comercial) |
 | Calculadora de ROI | [Calculadora de ROI](#roi) |
-| Datos personales y seguridad | [Seguridad del sitio](#seguridad:proteccin-de-los-datos-personales-minimizacin-y-no-retencin) · [Contrato · Cláusulas (Décima Octava y Décima Séptima)](#contrato:clusulas) |
+| Datos personales y seguridad | [Seguridad del sistema](#seguridad:proteccin-de-los-datos-personales-minimizacin-y-no-retencin) · [Contrato · Cláusulas (Décima Octava y Décima Séptima)](#contrato:clusulas) |
 | Diagnóstico SEO y línea base | [Auditoría inicial · El Gigante Invisible](#auditoria:el-gigante-invisible-diagnstico-de-captura-de-demanda-digital) |
 | **BDS · captación multicanal en tiempo real** (Proyecto B) | [BDS · Resumen](#bds-resumen) · [Flujo](#bds-flujo) · [Canales y SLA](#bds-canales) · [Técnica](#bds-tecnica) |
 | **BDS · equipo, tareas y dependencias** (marco de ejecución) | [Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin) · [BDS · Addendum](#bds-anexo) |
