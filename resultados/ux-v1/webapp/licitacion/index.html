@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Licitación · Equipo 1 (Web) · Sistema de ventas Sports World</title>
+<style>
+  :root{
+    --rojo:#b21622; --rojo-2:#8f101a; --tinta:#16181d; --tinta-2:#3b4049;
+    --gris:#6b7280; --linea:#e3e6ea; --fondo:#f6f7f9; --papel:#ffffff;
+    --verde:#1f7a44; --ambar:#a8730a; --azul:#1d4ed8;
+    --sombra:0 1px 2px rgba(16,18,22,.06),0 8px 24px rgba(16,18,22,.06);
+    --r:12px; --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--fondo);color:var(--tinta);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  a{color:var(--rojo-2)}
+  h1,h2,h3,h4{line-height:1.25;color:var(--tinta);margin:0 0 .5em}
+  h2{font-size:1.5rem;margin-top:0}
+  h3{font-size:1.15rem;margin-top:1.8em}
+  h4{font-size:1rem;margin-top:1.4em}
+  p{margin:.6em 0}
+  code{background:#eef0f3;padding:.1em .35em;border-radius:5px;font-size:.9em}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  header.top{background:var(--tinta);color:#fff;padding:22px 0 0}
+  header.top .wrap{display:flex;flex-direction:column;gap:14px}
+  .brandline{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .badge{background:var(--rojo);color:#fff;font-weight:700;letter-spacing:.02em;
+    padding:5px 10px;border-radius:6px;font-size:.72rem;text-transform:uppercase}
+  header.top h1{color:#fff;font-size:1.5rem;margin:0}
+  header.top .sub{color:#c7ccd3;font-size:.92rem;margin:0}
+  nav.tabs{display:flex;gap:2px;margin-top:6px;flex-wrap:wrap}
+  nav.tabs button{background:transparent;border:0;color:#c7ccd3;font-size:.95rem;
+    padding:12px 16px;cursor:pointer;border-bottom:3px solid transparent;font-weight:600}
+  nav.tabs button:hover{color:#fff}
+  nav.tabs button[aria-selected="true"]{color:#fff;border-bottom-color:var(--rojo)}
+  main{padding:34px 0 80px}
+  .view{display:none}
+  .view.active{display:block}
+  .card{background:var(--papel);border:1px solid var(--linea);border-radius:var(--r);
+    padding:26px 28px;box-shadow:var(--sombra);margin:0 0 22px}
+  .card.tight{padding:20px 22px}
+  .lede{font-size:1.06rem;color:var(--tinta-2)}
+  .kicker{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;color:var(--rojo-2);font-weight:700;margin:0 0 4px}
+  table{border-collapse:collapse;width:100%;font-size:.92rem;margin:.6em 0}
+  .scroll{overflow-x:auto}
+  th,td{border:1px solid var(--linea);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:#f0f2f5;font-weight:700}
+  td.c,th.c{text-align:center}
+  tr:nth-child(even) td{background:#fafbfc}
+  ul,ol{margin:.5em 0 .8em;padding-left:1.3em}
+  li{margin:.28em 0}
+  .pill{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid}
+  .pill.R{color:#fff;background:var(--rojo);border-color:var(--rojo)}
+  .pill.A{color:var(--tinta);background:#ffe9b8;border-color:#e8c766}
+  .pill.C{color:var(--tinta-2);background:#eef1f4;border-color:#d7dce2}
+  .pill.I{color:var(--gris);background:#f3f4f6;border-color:#e3e6ea}
+  .must{color:var(--rojo);font-weight:700}
+  .note{border-left:4px solid var(--rojo);background:#fdf3f4;padding:12px 16px;border-radius:8px;margin:1em 0;font-size:.93rem}
+  .note.info{border-left-color:#1d4ed8;background:#eff4ff}
+  .note.warn{border-left-color:var(--ambar);background:#fff7e8}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr}}
+  figure{margin:1.4em 0}
+  figure svg{max-width:100%;height:auto;display:block;background:var(--papel);
+    border:1px solid var(--linea);border-radius:10px}
+  figcaption{font-size:.82rem;color:var(--gris);margin-top:8px;text-align:center}
+  .weeks{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin:1em 0}
+  .weeks .w{background:#f0f2f5;border:1px solid var(--linea);border-radius:8px;padding:8px;font-size:.72rem}
+  .weeks .w b{display:block;color:var(--rojo-2);font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+  @media(max-width:900px){.weeks{grid-template-columns:repeat(2,1fr)}}
+  /* formularios */
+  fieldset{border:1px solid var(--linea);border-radius:10px;padding:16px 18px;margin:0 0 18px}
+  legend{font-weight:700;padding:0 8px;color:var(--tinta)}
+  label{display:block;font-weight:600;font-size:.9rem;margin:12px 0 4px}
+  label .opt{font-weight:400;color:var(--gris)}
+  input[type=text],input[type=email],input[type=number],textarea,select{
+    width:100%;padding:9px 11px;border:1px solid #cfd4da;border-radius:8px;font:inherit;background:#fff}
+  textarea{min-height:80px;resize:vertical}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.row{grid-template-columns:1fr}}
+  .check{display:flex;gap:10px;align-items:flex-start;margin:8px 0;font-weight:500;font-size:.92rem}
+  .check input{margin-top:4px}
+  .req-tag{font-size:.66rem;font-weight:700;padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle}
+  .req-tag.m{background:var(--rojo);color:#fff}
+  .req-tag.o{background:#e6eaef;color:var(--tinta-2)}
+  button.btn{background:var(--rojo);color:#fff;border:0;border-radius:9px;padding:11px 20px;
+    font-weight:700;font-size:.95rem;cursor:pointer}
+  button.btn:hover{background:var(--rojo-2)}
+  button.btn.ghost{background:#fff;color:var(--rojo-2);border:1.5px solid var(--rojo)}
+  button.btn.slate{background:var(--tinta);}
+  button.btn:disabled{background:#c9ccd1;cursor:not-allowed}
+  .filelist{font-size:.85rem;color:var(--tinta-2)}
+  .out{background:#0f1115;color:#d7e0ea;border-radius:10px;padding:14px 16px;font-size:.8rem;
+    white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,Menlo,Consolas,monospace;max-height:280px;overflow:auto}
+  .drop{border:2px dashed #c3c9d1;border-radius:10px;padding:20px;text-align:center;color:var(--gris);background:#fbfcfd}
+  .drop.hot{border-color:var(--rojo);background:#fdf3f4;color:var(--rojo-2)}
+  .rank{font-size:.9rem}
+  .bar{height:12px;border-radius:6px;background:var(--rojo);}
+  .win{outline:2px solid var(--verde);outline-offset:2px}
+  .tag-win{background:var(--verde);color:#fff;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:999px}
+  .tag-dq{background:#b21622;color:#fff;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:999px}
+  .slider{display:flex;align-items:center;gap:10px;margin:6px 0}
+  .slider input{flex:1}
+  .muted{color:var(--gris);font-size:.85rem}
+  footer{border-top:1px solid var(--linea);padding:24px 0;color:var(--gris);font-size:.82rem}
+  .legend-raci{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--tinta-2);margin:.4em 0}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="badge">Licitación</span>
+      <span style="color:#c7ccd3;font-size:.85rem">Sistema de ventas · Sports World México</span>
+    </div>
+    <div>
+      <h1>Equipo 1 — Web · Convocatoria a proveedores</h1>
+      <p class="sub">Construcción del sitio, la integración con el CRM, el panel sin código, la consola de captación y el tablero del funnel · Proyecto A · 8 semanas</p>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-view="brief">Brief del proyecto</button>
+      <button role="tab" aria-selected="false" data-view="postular">Postular (proveedor)</button>
+      <button role="tab" aria-selected="false" data-view="evaluar">Evaluar (convocante)</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ============================ BRIEF ============================ -->
+<section id="brief" class="view active">
+
+  <div class="card">
+    <p class="kicker">Documento independiente · uso exclusivo de la licitación</p>
+    <h2>El encargo, en una frase</h2>
+    <p class="lede">Se busca al proveedor que asuma el <b>Equipo 1 — Web</b>: el frente que convierte la infraestructura de Sports World —49 clubes, sus amenidades y su oferta— en un sitio legible para el buscador y para el cliente, con captación de leads integrada al CRM y medida de punta a punta.</p>
+    <p>Esta convocatoria es <b>autocontenida</b>: reúne todo lo que un proveedor necesita para presentar una propuesta sin acceder al depósito documental del cliente. No enlaza a los documentos internos de Sports World y no expone información contractual sensible; cita los documentos de referencia por nombre, sin vincularlos.</p>
+    <div class="note info">El proyecto se construye con <b>desarrollo asistido por IA bajo supervisión humana continua</b> (§6). Por eso la experiencia demostrable con <b>Claude Code</b> y <b>Codex</b> es un requisito de admisión, no un diferenciador opcional.</div>
+  </div>
+
+  <!-- 1 · El proyecto como un todo -->
+  <div class="card">
+    <h2>1 · El proyecto como un todo</h2>
+    <p>El sistema de ventas de Sports World se ejecuta como <b>un solo sistema con cinco equipos</b>, coordinados por un <b>líder general</b> que es el punto único de contacto con la dirección del cliente. Tres de los equipos pertenecen al Proyecto A (comprometido, 8 semanas); dos se activan al firmarse sus addenda.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Equipo</th><th>Frente</th><th>Proyecto</th></tr></thead>
+      <tbody>
+        <tr><td><b>Equipo 1 — Web</b> <span class="tag-win">este encargo</span></td><td>Sitio, experiencia ideal, middleware/CRM, motor de precios, CMS sin código, consola de captación, tablero del funnel, migración y cutover</td><td>A · 8 semanas</td></tr>
+        <tr><td>Equipo 2 — SEO y contenido</td><td>Estrategia de palabras clave, contenido de las 148 páginas, datos estructurados, 49 fichas de Google Business</td><td>A</td></tr>
+        <tr><td>Equipo 3 — Contenido visual</td><td>~650 fotos tratadas, ~150 imágenes IA, 12 animaciones, 1 video; identidad visual</td><td>A</td></tr>
+        <tr><td>Equipo 4 — BES</td><td>Agente de voz y texto en el canal web; base de conocimiento; recordatorios por WhatsApp</td><td>A</td></tr>
+        <tr><td>Equipo 5 — BDS</td><td>WhatsApp Business API, consola de operadores, enrutamiento en tiempo real, medición del Canal 2</td><td>B · se activa con su Addendum</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <figure>
+      <!-- Diagrama 1 · Gobierno y equipos -->
+      <svg viewBox="0 0 900 360" role="img" aria-label="Estructura de gobierno y equipos">
+        <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#6b7280"/></marker></defs>
+        <rect x="330" y="16" width="240" height="52" rx="9" fill="#16181d"/>
+        <text x="450" y="40" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Líder general</text>
+        <text x="450" y="58" text-anchor="middle" fill="#c7ccd3" font-size="11">Punto único de contacto con Sports World</text>
+        <line x1="450" y1="68" x2="450" y2="96" stroke="#6b7280" stroke-width="1.5"/>
+        <line x1="120" y1="96" x2="780" y2="96" stroke="#6b7280" stroke-width="1.5"/>
+        <!-- 5 teams -->
+        <g font-size="12" font-weight="700" text-anchor="middle">
+          <g><line x1="120" y1="96" x2="120" y2="120" stroke="#6b7280" stroke-width="1.5"/>
+            <rect x="40" y="120" width="160" height="70" rx="9" fill="#b21622"/>
+            <text x="120" y="150" fill="#fff">Equipo 1 — Web</text>
+            <text x="120" y="170" fill="#ffd7db" font-size="10" font-weight="500">este encargo</text></g>
+          <g><line x1="285" y1="96" x2="285" y2="120" stroke="#6b7280" stroke-width="1.5"/>
+            <rect x="215" y="120" width="140" height="70" rx="9" fill="#eef1f4" stroke="#d7dce2"/>
+            <text x="285" y="150" fill="#16181d">Equipo 2</text><text x="285" y="168" fill="#3b4049" font-size="10" font-weight="500">SEO y contenido</text></g>
+          <g><line x1="450" y1="96" x2="450" y2="120" stroke="#6b7280" stroke-width="1.5"/>
+            <rect x="380" y="120" width="140" height="70" rx="9" fill="#eef1f4" stroke="#d7dce2"/>
+            <text x="450" y="150" fill="#16181d">Equipo 3</text><text x="450" y="168" fill="#3b4049" font-size="10" font-weight="500">Contenido visual</text></g>
+          <g><line x1="615" y1="96" x2="615" y2="120" stroke="#6b7280" stroke-width="1.5"/>
+            <rect x="545" y="120" width="140" height="70" rx="9" fill="#eef1f4" stroke="#d7dce2"/>
+            <text x="615" y="150" fill="#16181d">Equipo 4</text><text x="615" y="168" fill="#3b4049" font-size="10" font-weight="500">BES</text></g>
+          <g><line x1="780" y1="96" x2="780" y2="120" stroke="#6b7280" stroke-width="1.5"/>
+            <rect x="710" y="120" width="150" height="70" rx="9" fill="#f3f4f6" stroke="#d7dce2" stroke-dasharray="4 3"/>
+            <text x="785" y="150" fill="#16181d">Equipo 5</text><text x="785" y="168" fill="#3b4049" font-size="10" font-weight="500">BDS · futuro</text></g>
+        </g>
+        <!-- Sports World lateral -->
+        <rect x="330" y="250" width="240" height="80" rx="9" fill="#fff" stroke="#b21622"/>
+        <text x="450" y="276" text-anchor="middle" fill="#b21622" font-size="13" font-weight="700">Sports World</text>
+        <text x="450" y="296" text-anchor="middle" fill="#3b4049" font-size="10.5">Sistemas · Marketing · Operación</text>
+        <text x="450" y="314" text-anchor="middle" fill="#6b7280" font-size="10">provee accesos, datos y aprobaciones</text>
+        <line x1="120" y1="190" x2="430" y2="255" stroke="#6b7280" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+        <line x1="615" y1="190" x2="475" y2="255" stroke="#6b7280" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+      </svg>
+      <figcaption>Diagrama 1 · El Equipo 1 opera bajo el líder general y depende de accesos de Sports World. El gobierno no cambia al sumar equipos.</figcaption>
+    </figure>
+    <p>El Equipo 1 es el <b>frente ancla</b>: buena parte de lo que construye —el cuestionario, el middleware/CRM, la escritura idempotente del lead y la consola interna— es reutilizado por los equipos 4 y 5. Un retraso del Equipo 1 propaga a los demás; por eso su factibilidad en ocho semanas es un criterio de evaluación central.</p>
+  </div>
+
+  <!-- 2 · Responsabilidades -->
+  <div class="card">
+    <h2>2 · Responsabilidades del Equipo 1</h2>
+    <p>En la matriz de responsabilidad del proyecto, el Equipo 1 es <b>ejecutor (R)</b> de los siguientes entregables; el líder general rinde cuentas (A) y Sports World aprueba o provee accesos (C/R).</p>
+    <div class="legend-raci">
+      <span><span class="pill R">R</span> ejecuta</span>
+      <span><span class="pill A">A</span> rinde cuentas</span>
+      <span><span class="pill C">C</span> consultado</span>
+      <span><span class="pill I">I</span> informado</span>
+    </div>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Entregable</th><th class="c">Líder gral.</th><th class="c">E1 Web</th><th class="c">E2 SEO</th><th class="c">E3 Visual</th><th class="c">E4 BES</th><th class="c">Sports World</th></tr></thead>
+      <tbody>
+        <tr><td>Plantillas y sistema de diseño</td><td class="c"><span class="pill A">A</span></td><td class="c"><span class="pill R">R</span></td><td class="c"><span class="pill C">C</span></td><td class="c"><span class="pill C">C</span></td><td class="c"><span class="pill I">I</span></td><td class="c">C (aprueba)</td></tr>
+        <tr><td>148 páginas (build)</td><td class="c"><span class="pill A">A</span></td><td class="c"><span class="pill R">R</span></td><td class="c"><span class="pill R">R</span></td><td class="c"><span class="pill C">C</span></td><td class="c"><span class="pill I">I</span></td><td class="c">C (aprueba)</td></tr>
+        <tr><td>Integración CRM vía middleware (datos, precios, geo)</td><td class="c"><span class="pill A">A</span></td><td class="c"><span class="pill R">R</span></td><td class="c"><span class="pill I">I</span></td><td class="c"><span class="pill I">I</span></td><td class="c"><span class="pill C">C</span></td><td class="c">R (API + datos)</td></tr>
+        <tr><td>Panel sin código (CMS) y modelo de contenido</td><td class="c"><span class="pill A">A</span></td><td class="c"><span class="pill R">R</span></td><td class="c"><span class="pill C">C</span></td><td class="c"><span class="pill C">C</span></td><td class="c"><span class="pill I">I</span></td><td class="c">C (administra tras handover)</td></tr>
+        <tr><td>Funnel, dashboard y consola interna de captación</td><td class="c"><span class="pill A">A</span></td><td class="c"><span class="pill R">R</span></td><td class="c"><span class="pill C">C</span></td><td class="c"><span class="pill I">I</span></td><td class="c"><span class="pill C">C</span></td><td class="c">C (accesos Google + CRM)</td></tr>
+        <tr><td>Migración y cutover</td><td class="c">R/A</td><td class="c"><span class="pill R">R</span></td><td class="c"><span class="pill C">C</span></td><td class="c"><span class="pill I">I</span></td><td class="c"><span class="pill I">I</span></td><td class="c">C (accesos)</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- 3 · Entregables -->
+  <div class="card">
+    <h2>3 · Entregables y criterios de aceptación</h2>
+    <p>Cada entregable se da por cumplido contra un criterio verificable, no contra una afirmación.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th style="width:32%">Entregable</th><th>Criterio de aceptación</th></tr></thead>
+      <tbody>
+        <tr><td><b>1. Sistema de diseño y plantillas</b></td><td>Tokens de marca (color, tipografía, espaciado) aplicados por construcción; patrón pilar (home + club + hub) aprobado por Sports World.</td></tr>
+        <tr><td><b>2. 148 páginas (SSR + ISR)</b></td><td>Las 148 páginas publicadas y <b>crawleables</b>; 49/49 páginas de club renderizadas en servidor; 0 páginas sin H1.</td></tr>
+        <tr><td><b>3. Flujo de experiencia ideal</b></td><td>Cuestionario dinámico, resolver de club por geolocalización y ranker de clases operando de extremo a extremo; brief del asesor generado.</td></tr>
+        <tr><td><b>4. Middleware de integración al CRM</b></td><td>Lecturas del catálogo (clubes, clases, tarifas, horarios) con caché y corte diario 06:00; <b>escritura idempotente</b> del lead confirmada contra el CRM real, sin duplicados.</td></tr>
+        <tr><td><b>5. Motor de precios</b></td><td>Precios por club / ciudad / nacional, extraídos automáticamente del CRM (no se editan en el CMS).</td></tr>
+        <tr><td><b>6. Panel sin código (CMS headless autoalojado)</b></td><td>Edición de contenido, imágenes y coordenadas de club sin tocar código; personas usuarias de Sports World dadas de alta; probado por el cliente (handover con guía).</td></tr>
+        <tr><td><b>7. Consola interna de captación</b></td><td>Personal autorizado registra leads por la misma vía idempotente que el sitio; base sobre la que el BDS habilitará el rol de operador.</td></tr>
+        <tr><td><b>8. Instrumentación y tablero del funnel</b></td><td>Eventos E2–E4 registrándose en la base del funnel; tablero con los tres canales de entrada y las etapas de la espina; fuentes de Google (GA4, Search Console, fichas) conectadas para los cortes de tráfico. Conforme al <i>Mapa del Funnel</i>.</td></tr>
+        <tr><td><b>9. Migración y cutover</b></td><td>Mapa de 301 activo (136 enlaces); DNS apuntado; <b>correo/MX intacto</b>; monitoreo activo 48 h post-cutover.</td></tr>
+        <tr><td><b>10. Controles de calidad automatizados (CI)</b></td><td>Pruebas automatizadas, Core Web Vitals (LCP&lt;2.5 s · INP&lt;200 ms · CLS&lt;0.1) y accesibilidad WCAG 2.2 AA (axe-core) verificados en cada cambio.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="note warn"><b>Frontera de alcance del tablero.</b> El Equipo 1 construye la instrumentación y el tablero completos. Las etapas de cierre —visita realizada, membresía comprada y membresía cancelada— dependen de datos que provee Sistemas desde el CRM (número de membresía, teléfono, cancelación). Su ausencia deja el tablero midiendo hasta visita agendada, sin bloquear el lanzamiento. La propuesta debe entender esta frontera, no resolverla.</div>
+  </div>
+
+  <!-- 4 · Cronograma -->
+  <div class="card">
+    <h2>4 · Cronograma de ocho semanas</h2>
+    <p>Los plazos corren desde la entrega del 100% de los requerimientos de arranque a cargo de Sports World. Cada semana cierra con un criterio de salida; si no se cumple, no se avanza. El proveedor debe mapear su propio plan a esta rejilla.</p>
+    <div class="weeks">
+      <div class="w"><b>S1 · Cimientos</b>Proyecto, framework, tokens, plantillas base, CMS instalado, CI; esquema de eventos del funnel definido.</div>
+      <div class="w"><b>S2 · Pilares</b>Home + 1 club + 1 hub como patrón; modelo de contenido del CMS. 🚦 Aprobación 1.</div>
+      <div class="w"><b>S3–4 · Escalar</b>Replicar a 49 clubes y hubs; integrar API del CRM; instrumentar E2–E4; edición sin código operativa. 🚦 Aprobación 2 (50%).</div>
+      <div class="w"><b>S3–4</b>Lead-capture de extremo a extremo contra el CRM real (sitio y BES).</div>
+      <div class="w"><b>S5–6 · Integrar</b>Páginas restantes; flujo de experiencia completo; construir el tablero y conectar fuentes de Google; rendimiento y accesibilidad.</div>
+      <div class="w"><b>S5–6</b>Tablero mostrando los tres canales y E2–E4 con datos de staging.</div>
+      <div class="w"><b>S7 · Congelar</b>Pase de calidad; plan de 301 y DNS; prueba de carga; verificar tablero; ensayar CMS con Sports World. 🚦 Aprobación 3.</div>
+      <div class="w"><b>S8 · Lanzar</b>Cutover; tablero en vivo; handover del CMS; monitoreo 48 h. 🚦 Aprobación 4.</div>
+    </div>
+    <p class="muted">Las cuatro compuertas de aprobación son obligaciones del cliente con ventana de respuesta pactada (48 h hábiles; mismo día para el lanzamiento). Un atraso del cliente extiende el plazo día por día.</p>
+  </div>
+
+  <!-- 5 · Interacciones con otros equipos -->
+  <div class="card">
+    <h2>5 · Interacciones con los otros equipos</h2>
+    <p>El Equipo 1 no trabaja aislado. Esta es la lista <b>exhaustiva</b> de lo que <b>recibe</b> de cada frente y lo que <b>entrega</b> a cada frente. La propuesta debe demostrar que el proveedor entiende estas dependencias.</p>
+
+    <figure>
+      <!-- Diagrama 2 · E1 en el centro, recibe/entrega -->
+      <svg viewBox="0 0 900 420" role="img" aria-label="Interacciones del Equipo 1 con los demás equipos">
+        <defs>
+          <marker id="in" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#1f7a44"/></marker>
+          <marker id="out" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#b21622"/></marker>
+        </defs>
+        <circle cx="450" cy="210" r="66" fill="#b21622"/>
+        <text x="450" y="205" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Equipo 1</text>
+        <text x="450" y="224" text-anchor="middle" fill="#ffd7db" font-size="11">Web</text>
+        <g font-size="11.5" font-weight="700" text-anchor="middle">
+          <rect x="360" y="20" width="180" height="46" rx="8" fill="#eef1f4" stroke="#d7dce2"/><text x="450" y="40" fill="#16181d">SW Sistemas</text><text x="450" y="56" fill="#3b4049" font-size="9.5" font-weight="500">CRM · servidor · datos de cierre</text>
+          <rect x="700" y="90" width="170" height="46" rx="8" fill="#eef1f4" stroke="#d7dce2"/><text x="785" y="110" fill="#16181d">SW Marketing</text><text x="785" y="126" fill="#3b4049" font-size="9.5" font-weight="500">GA4 · GSC · Google Business</text>
+          <rect x="700" y="284" width="170" height="46" rx="8" fill="#eef1f4" stroke="#d7dce2"/><text x="785" y="304" fill="#16181d">Equipo 4 — BES</text><text x="785" y="320" fill="#3b4049" font-size="9.5" font-weight="500">agente del canal web</text>
+          <rect x="360" y="356" width="180" height="46" rx="8" fill="#f3f4f6" stroke="#d7dce2" stroke-dasharray="4 3"/><text x="450" y="376" fill="#16181d">Equipo 5 — BDS</text><text x="450" y="392" fill="#3b4049" font-size="9.5" font-weight="500">futuro · reutiliza lo de E1</text>
+          <rect x="30" y="284" width="170" height="46" rx="8" fill="#eef1f4" stroke="#d7dce2"/><text x="115" y="304" fill="#16181d">Equipo 3 — Visual</text><text x="115" y="320" fill="#3b4049" font-size="9.5" font-weight="500">imágenes · animaciones</text>
+          <rect x="30" y="90" width="170" height="46" rx="8" fill="#eef1f4" stroke="#d7dce2"/><text x="115" y="110" fill="#16181d">Equipo 2 — SEO</text><text x="115" y="126" fill="#3b4049" font-size="9.5" font-weight="500">keywords · schema · 301</text>
+        </g>
+        <!-- arrows in (green) and out (red) -->
+        <line x1="450" y1="66" x2="450" y2="142" stroke="#1f7a44" stroke-width="1.6" marker-end="url(#in)"/>
+        <line x1="700" y1="120" x2="512" y2="176" stroke="#1f7a44" stroke-width="1.6" marker-end="url(#in)"/>
+        <line x1="200" y1="115" x2="392" y2="172" stroke="#1f7a44" stroke-width="1.6" marker-end="url(#in)"/>
+        <line x1="200" y1="305" x2="392" y2="240" stroke="#1f7a44" stroke-width="1.6" marker-end="url(#in)"/>
+        <line x1="516" y1="238" x2="700" y2="300" stroke="#b21622" stroke-width="1.6" marker-end="url(#out)"/>
+        <line x1="450" y1="276" x2="450" y2="352" stroke="#b21622" stroke-width="1.6" marker-end="url(#out)"/>
+        <text x="628" y="150" fill="#1f7a44" font-size="10">recibe</text>
+        <text x="628" y="270" fill="#b21622" font-size="10">entrega</text>
+      </svg>
+      <figcaption>Diagrama 2 · Verde = lo que el Equipo 1 recibe. Rojo = lo que entrega. El detalle, abajo.</figcaption>
+    </figure>
+
+    <h3>5.1 · Lo que el Equipo 1 recibe</h3>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>De</th><th>Recibe</th><th>Sin ello…</th></tr></thead>
+      <tbody>
+        <tr><td><b>SW Sistemas</b></td><td>API estándar del CRM y credenciales productivas; catálogo de datos (clubes, coordenadas, amenidades, clases, horarios, tarifas, promociones); datos de cierre E5/E6/E7 (número de membresía, teléfono, cancelación); el servidor de hospedaje; el número de WhatsApp Business para recordatorios.</td><td>No hay integración, ni lead-capture, ni mitad baja del funnel.</td></tr>
+        <tr><td><b>SW Marketing</b></td><td>Contenedor de Tag Manager; accesos a GA4 (Data API), Search Console y las 49 fichas de Google Business.</td><td>El tablero no muestra tráfico ni sus cortes por origen.</td></tr>
+        <tr><td><b>SW Operación</b></td><td>Lista de personal autorizado, plantilla de operadores y horarios.</td><td>La consola interna no opera.</td></tr>
+        <tr><td><b>Equipo 2 — SEO</b></td><td>Estructura de URLs y keywords por página; requisitos de datos estructurados (schema JSON-LD); mapa de 301 (136 enlaces); metadatos por página.</td><td>Las páginas se construyen sin la estructura que las hace posicionables.</td></tr>
+        <tr><td><b>Equipo 3 — Visual</b></td><td>~650 fotos tratadas y ~150 imágenes IA en AVIF/WebP responsivos, 12 animaciones y 1 video; el estilo visual contra la marca.</td><td>Los layouts quedan sin su contenido visual.</td></tr>
+        <tr><td><b>Equipo 4 — BES</b></td><td>Requisitos del agente en el canal web y de su base de conocimiento; el contrato de eventos que BES necesita para escribir leads por la misma vía.</td><td>BES no puede integrarse al sitio ni compartir la lógica de captación.</td></tr>
+        <tr><td><b>Líder general</b></td><td>Plan aprobado, decisiones de las compuertas de aprobación, control de cambios.</td><td>—</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>5.2 · Lo que el Equipo 1 entrega</h3>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>A</th><th>Entrega</th></tr></thead>
+      <tbody>
+        <tr><td><b>Equipo 2 — SEO</b></td><td>Páginas SSR crawleables con el schema renderizado correctamente; ISR operando; enlaces de vista previa para revisar cada cambio.</td></tr>
+        <tr><td><b>Equipo 3 — Visual</b></td><td>Layouts con sus slots de imagen y las especificaciones de tamaños y relaciones de aspecto; el pipeline que sirve AVIF/WebP responsivos.</td></tr>
+        <tr><td><b>Equipo 4 — BES</b></td><td>La misma lógica de club/clase/lead (middleware) y la escritura idempotente al CRM; el sitio donde BES se integra como canal web.</td></tr>
+        <tr><td><b>Equipo 5 — BDS</b> <span class="muted">(futuro)</span></td><td>El cuestionario y la experiencia ideal, el middleware/CRM, la escritura idempotente y la consola interna con rol de operador; la base del tablero para el Canal 2. El BDS <b>no reescribe</b> el motor: integra sobre lo de E1.</td></tr>
+        <tr><td><b>Sports World</b></td><td>El sitio, el panel sin código (CMS), el tablero del funnel y la migración/cutover; el handover con guía de operación.</td></tr>
+        <tr><td><b>Líder general</b></td><td>Evidencia de avance y los KPIs técnicos comprometidos.</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <figure>
+      <!-- Diagrama 3 · flujo de captación y datos que construye E1 -->
+      <svg viewBox="0 0 900 300" role="img" aria-label="Flujo de captación y datos que construye el Equipo 1">
+        <defs><marker id="fl" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#3b4049"/></marker></defs>
+        <g font-size="11" text-anchor="middle" font-weight="600">
+          <rect x="20" y="120" width="120" height="52" rx="8" fill="#eef1f4" stroke="#d7dce2"/><text x="80" y="143" fill="#16181d">Visitante</text><text x="80" y="160" fill="#6b7280" font-size="9.5" font-weight="500">sitio · WhatsApp · consola</text>
+          <rect x="185" y="120" width="130" height="52" rx="8" fill="#b21622"/><text x="250" y="143" fill="#fff">Cuestionario</text><text x="250" y="160" fill="#ffd7db" font-size="9.5" font-weight="500">experiencia ideal (E1)</text>
+          <rect x="360" y="120" width="130" height="52" rx="8" fill="#b21622"/><text x="425" y="143" fill="#fff">Middleware</text><text x="425" y="160" fill="#ffd7db" font-size="9.5" font-weight="500">idempotente (E1)</text>
+          <rect x="535" y="120" width="120" height="52" rx="8" fill="#fff" stroke="#b21622"/><text x="595" y="143" fill="#b21622">CRM</text><text x="595" y="160" fill="#6b7280" font-size="9.5" font-weight="500">Sistemas</text>
+          <rect x="700" y="60" width="175" height="52" rx="8" fill="#16181d"/><text x="787" y="83" fill="#fff">Base del funnel (E1)</text><text x="787" y="100" fill="#c7ccd3" font-size="9.5" font-weight="500">en servidor de SW</text>
+          <rect x="700" y="180" width="175" height="52" rx="8" fill="#16181d"/><text x="787" y="203" fill="#fff">Tablero del funnel (E1)</text><text x="787" y="220" fill="#c7ccd3" font-size="9.5" font-weight="500">resultados agregados</text>
+        </g>
+        <line x1="140" y1="146" x2="181" y2="146" stroke="#3b4049" stroke-width="1.5" marker-end="url(#fl)"/>
+        <line x1="315" y1="146" x2="356" y2="146" stroke="#3b4049" stroke-width="1.5" marker-end="url(#fl)"/>
+        <line x1="490" y1="146" x2="531" y2="146" stroke="#3b4049" stroke-width="1.5" marker-end="url(#fl)"/>
+        <line x1="655" y1="140" x2="700" y2="100" stroke="#3b4049" stroke-width="1.5" marker-end="url(#fl)"/>
+        <line x1="787" y1="112" x2="787" y2="178" stroke="#3b4049" stroke-width="1.5" marker-end="url(#fl)"/>
+        <text x="250" y="205" text-anchor="middle" fill="#6b7280" font-size="9.5">eventos E2 · E3</text>
+        <text x="425" y="205" text-anchor="middle" fill="#6b7280" font-size="9.5">evento E4</text>
+      </svg>
+      <figcaption>Diagrama 3 · La captación y su medición son responsabilidad de E1; el dato reside en el servidor de Sports World y el tablero solo muestra agregados.</figcaption>
+    </figure>
+  </div>
+
+  <!-- 6 · Método obligatorio -->
+  <div class="card">
+    <h2>6 · Método obligatorio: desarrollo asistido por IA</h2>
+    <p>El cronograma comprimido de ocho semanas se sostiene en un método específico, y el proveedor debe operarlo. No es "que la IA escriba el sitio sin supervisión": un ingeniero senior define cada objetivo, los agentes ejecutan el grueso y un responsable humano aprueba cada resultado antes de producción.</p>
+    <div class="grid2">
+      <div class="card tight" style="margin:0"><h4 style="margin-top:0">Claude Code — implementa</h4><p class="muted">Escribe y modifica el código, ejecuta pruebas y corrige fallos, en el propio entorno del proyecto bajo control del ingeniero.</p></div>
+      <div class="card tight" style="margin:0"><h4 style="margin-top:0">Codex — revisa</h4><p class="muted">Segundo agente, independiente, que revisa plan e implementación en busca de vacíos y errores que quien implementa podría pasar por alto.</p></div>
+    </div>
+    <figure>
+      <!-- Diagrama 4 · ciclo de 5 pasos -->
+      <svg viewBox="0 0 900 150" role="img" aria-label="Ciclo de cinco pasos de desarrollo asistido por IA">
+        <defs><marker id="c5" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#6b7280"/></marker></defs>
+        <g font-size="10.5" text-anchor="middle" font-weight="600">
+          <rect x="12" y="52" width="150" height="46" rx="8" fill="#eef1f4" stroke="#d7dce2"/><text x="87" y="72" fill="#16181d">1 · Investigar</text><text x="87" y="88" fill="#6b7280" font-size="9" font-weight="500">y planear · humano aprueba</text>
+          <rect x="188" y="52" width="150" height="46" rx="8" fill="#fdecee" stroke="#b21622"/><text x="263" y="72" fill="#b21622">2 · Implementar</text><text x="263" y="88" fill="#8f101a" font-size="9" font-weight="500">Claude Code</text>
+          <rect x="364" y="52" width="150" height="46" rx="8" fill="#eef4ff" stroke="#1d4ed8"/><text x="439" y="72" fill="#1d4ed8">3 · Revisar</text><text x="439" y="88" fill="#1d4ed8" font-size="9" font-weight="500">Codex · independiente</text>
+          <rect x="540" y="52" width="150" height="46" rx="8" fill="#eef1f4" stroke="#d7dce2"/><text x="615" y="72" fill="#16181d">4 · Verificar</text><text x="615" y="88" fill="#6b7280" font-size="9" font-weight="500">con evidencia, no afirmación</text>
+          <rect x="716" y="52" width="150" height="46" rx="8" fill="#e8f4ec" stroke="#1f7a44"/><text x="791" y="72" fill="#1f7a44">5 · Publicar</text><text x="791" y="88" fill="#1f7a44" font-size="9" font-weight="500">tras aprobación humana</text>
+        </g>
+        <line x1="162" y1="75" x2="186" y2="75" stroke="#6b7280" stroke-width="1.4" marker-end="url(#c5)"/>
+        <line x1="338" y1="75" x2="362" y2="75" stroke="#6b7280" stroke-width="1.4" marker-end="url(#c5)"/>
+        <line x1="514" y1="75" x2="538" y2="75" stroke="#6b7280" stroke-width="1.4" marker-end="url(#c5)"/>
+        <line x1="690" y1="75" x2="714" y2="75" stroke="#6b7280" stroke-width="1.4" marker-end="url(#c5)"/>
+        <path d="M791,98 C791,128 87,128 87,100" fill="none" stroke="#c3c9d1" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#c5)"/>
+      </svg>
+      <figcaption>Diagrama 4 · Cada pieza de trabajo recorre el mismo ciclo. La supervisión es más estricta en todo lo que toca datos de usuario, captura de leads o contenido de salud.</figcaption>
+    </figure>
+    <p>Por eso, la propuesta debe <b>demostrar experiencia real</b> con ambos agentes: proyectos concretos, el rol que cada agente cumplió y cómo el equipo aplica este ciclo. Es requisito de admisión (§8).</p>
+  </div>
+
+  <!-- 7 · Stack -->
+  <div class="card">
+    <h2>7 · Stack y restricciones técnicas</h2>
+    <ul>
+      <li><b>Next.js 16</b> (App Router) con <b>SSR + ISR</b> — el render en servidor es el requisito técnico más importante para el posicionamiento.</li>
+      <li><b>React 19</b> con React Compiler; <b>TypeScript</b> en modo estricto; <b>Tailwind CSS v4</b> sobre tokens de marca.</li>
+      <li><b>Node.js 20.9+</b> como runtime; el sitio corre en el servidor que provee Sports World.</li>
+      <li><b>CMS headless autoalojado</b> (p. ej. Payload o Strapi) junto al sitio, con panel de edición sin código.</li>
+      <li><b>Capa de middleware</b> a cargo del proveedor que consume el API HTTP RESTful estándar del CRM: idempotencia, caché, reintentos, normalización, búsqueda por amenidad y geolocalización, resolución de precios.</li>
+      <li><b>Seguridad de integración:</b> verificación de firma (HMAC en webhooks), HTTPS con HSTS, rotación de secretos; minimización y no retención de datos personales (LFPDPPP).</li>
+      <li><b>Propiedad:</b> todo el código, el contenido y los activos quedan en propiedad de Sports World, operando en su propia infraestructura.</li>
+    </ul>
+    <h3>KPIs técnicos que el Equipo 1 sostiene</h3>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>KPI</th><th>Línea base</th><th>Meta</th><th>Verificación</th></tr></thead>
+      <tbody>
+        <tr><td>Páginas de club crawleables (SSR)</td><td>0 de 49</td><td>49 de 49</td><td>Google Search Console</td></tr>
+        <tr><td>Enlaces rotos</td><td>136</td><td>0</td><td>Semrush Site Audit</td></tr>
+        <tr><td>Schema JSON-LD por club</td><td>0</td><td>49</td><td>Rich Results Test</td></tr>
+        <tr><td>Páginas sin H1</td><td>11</td><td>0</td><td>Semrush</td></tr>
+        <tr><td>Core Web Vitals</td><td>—</td><td>LCP&lt;2.5 s · INP&lt;200 ms · CLS&lt;0.1</td><td>Medición en cada cambio</td></tr>
+        <tr><td>Accesibilidad</td><td>—</td><td>WCAG 2.2 AA</td><td>axe-core</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- 8 · Qué debe contener la propuesta -->
+  <div class="card">
+    <h2>8 · Qué debe contener la propuesta</h2>
+    <p>Los rubros marcados <span class="req-tag m">obligatorio</span> son <b>requisitos de admisión</b>: si falta cualquiera, la propuesta queda descalificada, sin importar su puntaje. Los marcados <span class="req-tag o">recomendado</span> suman en la evaluación.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Rubro</th><th>Qué se espera</th><th class="c">Tipo</th></tr></thead>
+      <tbody>
+        <tr><td><b>Portafolio de diseño UX</b></td><td>Casos reales con el proceso, no solo pantallas: problema, decisiones, resultado. Preferible en fitness/retail o productos de conversión.</td><td class="c"><span class="req-tag m">obligatorio</span></td></tr>
+        <tr><td><b>Propuesta técnica</b></td><td>Arquitectura, stack, integración CRM/middleware, plan de migración, CMS, rendimiento, SEO técnico y accesibilidad.</td><td class="c"><span class="req-tag m">obligatorio</span></td></tr>
+        <tr><td><b>Experiencia con Claude Code y Codex</b></td><td>Proyectos concretos, rol de cada agente, cómo aplican el ciclo de cinco pasos y la supervisión humana.</td><td class="c"><span class="req-tag m">obligatorio</span></td></tr>
+        <tr><td><b>Equipo propuesto</b></td><td>Roles, seniority, CVs, disponibilidad y zona horaria; quién es el ingeniero senior que define objetivos y aprueba.</td><td class="c"><span class="req-tag m">obligatorio</span></td></tr>
+        <tr><td>Cronograma propio</td><td>Mapeado a las ocho semanas, con criterios de salida por semana.</td><td class="c"><span class="req-tag o">recomendado</span></td></tr>
+        <tr><td>Estructura de precio</td><td>Modelo de contratación y desglose; moneda.</td><td class="c"><span class="req-tag o">recomendado</span></td></tr>
+        <tr><td>Plan de QA y CI</td><td>Pruebas, Core Web Vitals y accesibilidad automatizadas en cada cambio.</td><td class="c"><span class="req-tag o">recomendado</span></td></tr>
+        <tr><td>Accesibilidad y SEO técnico</td><td>Enfoque WCAG 2.2 AA y coordinación con el Equipo 2.</td><td class="c"><span class="req-tag o">recomendado</span></td></tr>
+        <tr><td>Seguridad y datos personales</td><td>Minimización, no retención, LFPDPPP; manejo de credenciales.</td><td class="c"><span class="req-tag o">recomendado</span></td></tr>
+        <tr><td>Migración y cutover</td><td>301 de 136 enlaces, DNS, resguardo de correo/MX, rollback.</td><td class="c"><span class="req-tag o">recomendado</span></td></tr>
+        <tr><td>Entendimiento de las interacciones</td><td>Cómo coordinará lo que recibe y entrega a los demás equipos (§5).</td><td class="c"><span class="req-tag o">recomendado</span></td></tr>
+        <tr><td>Referencias y confidencialidad</td><td>Referencias verificables; disposición a NDA y a la cesión de propiedad al cliente.</td><td class="c"><span class="req-tag o">recomendado</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>Cómo se evalúa</h3>
+    <p>Sobre las propuestas admitidas (que cumplen los cuatro obligatorios) se aplica esta ponderación:</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Criterio</th><th class="c">Peso</th></tr></thead>
+      <tbody>
+        <tr><td>Propuesta técnica (arquitectura, integración, migración)</td><td class="c">25%</td></tr>
+        <tr><td>Experiencia con Claude Code y Codex</td><td class="c">20%</td></tr>
+        <tr><td>Portafolio de diseño UX</td><td class="c">20%</td></tr>
+        <tr><td>Equipo (seniority, roles cubiertos, disponibilidad)</td><td class="c">15%</td></tr>
+        <tr><td>Cronograma y factibilidad en 8 semanas</td><td class="c">10%</td></tr>
+        <tr><td>Precio</td><td class="c">10%</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="note">Para postular, ve a la pestaña <b>Postular (proveedor)</b>. Tu propuesta se empaqueta en tu propio navegador y se descarga como un archivo firmado que envías al convocante; <b>nunca se comparte con otros proveedores</b>. La comparación y la propuesta de ganador ocurren en la pestaña <b>Evaluar</b>, de uso exclusivo del convocante.</div>
+  </div>
+
+</section>
+
+<!-- ============================ POSTULAR ============================ -->
+<section id="postular" class="view">
+  <div class="card">
+    <p class="kicker">Proveedor · envío de propuesta</p>
+    <h2>Postular al Equipo 1</h2>
+    <p class="lede">Completa los campos y adjunta tus documentos. Al terminar, el sistema empaqueta tu propuesta en un <b>archivo firmado</b> que descargas y envías al convocante.</p>
+    <div class="note info"><b>Aislamiento por diseño.</b> Tu propuesta se arma <b>solo en este navegador</b>. No se sube a ningún servidor compartido ni es visible para otros proveedores: cada quien trabaja en su propia sesión, y únicamente el convocante reúne los archivos para compararlos. Para un portal alojado con inicio de sesión y almacenamiento central se requiere un backend (ver nota al pie).</p>
+  </div>
+
+  <form id="formProp" class="card" autocomplete="off">
+    <fieldset>
+      <legend>Identificación del proveedor</legend>
+      <div class="row">
+        <div><label>Razón social / nombre <span class="must">*</span></label><input type="text" name="razonSocial" required></div>
+        <div><label>Sitio o portafolio (URL)</label><input type="text" name="sitio" placeholder="https://"></div>
+      </div>
+      <div class="row">
+        <div><label>Contacto — nombre <span class="must">*</span></label><input type="text" name="contactoNombre" required></div>
+        <div><label>Contacto — correo <span class="must">*</span></label><input type="email" name="contactoEmail" required></div>
+      </div>
+      <div class="row">
+        <div><label>Ubicación del equipo</label><input type="text" name="ubicacion" placeholder="Ciudad, país"></div>
+        <div><label>Zona horaria</label><input type="text" name="tz" placeholder="p. ej. CDMX (UTC−6)"></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Rubros obligatorios <span class="muted" style="font-weight:400">— marca lo que incluyes y adjunta</span></legend>
+      <div class="check"><input type="checkbox" name="c_portafolioUX"><span>Portafolio de diseño UX <span class="req-tag m">obligatorio</span></span></div>
+      <div class="check"><input type="checkbox" name="c_propuestaTecnica"><span>Propuesta técnica <span class="req-tag m">obligatorio</span></span></div>
+      <div class="check"><input type="checkbox" name="c_evidenciaClaudeCodex"><span>Evidencia de experiencia con Claude Code y Codex <span class="req-tag m">obligatorio</span></span></div>
+      <div class="check"><input type="checkbox" name="c_equipo"><span>Equipo propuesto con roles y CVs <span class="req-tag m">obligatorio</span></span></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Experiencia con los agentes de IA</legend>
+      <div class="row">
+        <div><label>Meses de experiencia con Claude Code</label><input type="number" name="claudeCodeMeses" min="0" step="1" value="0"></div>
+        <div><label>Meses de experiencia con Codex</label><input type="number" name="codexMeses" min="0" step="1" value="0"></div>
+      </div>
+      <div class="row">
+        <div><label>Proyectos entregados con estos agentes</label><input type="number" name="proyectosIA" min="0" step="1" value="0"></div>
+        <div><label>Ingeniero senior responsable (nombre)</label><input type="text" name="ingSenior"></div>
+      </div>
+      <label>Cómo aplican el ciclo de cinco pasos <span class="opt">(implementar con Claude Code, revisar con Codex, verificar con evidencia)</span></label>
+      <textarea name="narrativaIA" placeholder="Describe un proyecto concreto y el rol de cada agente."></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Equipo y factibilidad</legend>
+      <div class="row">
+        <div><label>Tamaño del equipo (personas)</label><input type="number" name="equipoTamano" min="1" step="1" value="1"></div>
+        <div><label>De ellas, perfiles senior</label><input type="number" name="seniores" min="0" step="1" value="0"></div>
+      </div>
+      <div class="check"><input type="checkbox" name="c_cronograma"><span>Incluyo cronograma propio mapeado a las 8 semanas <span class="req-tag o">recomendado</span></span></div>
+      <div class="check"><input type="checkbox" name="c_migracion"><span>Incluyo plan de migración y cutover (301, DNS, MX) <span class="req-tag o">recomendado</span></span></div>
+      <div class="check"><input type="checkbox" name="c_qa"><span>Incluyo plan de QA y CI (pruebas, CWV, accesibilidad) <span class="req-tag o">recomendado</span></span></div>
+      <div class="check"><input type="checkbox" name="c_seguridad"><span>Incluyo enfoque de seguridad y datos personales (LFPDPPP) <span class="req-tag o">recomendado</span></span></div>
+      <div class="check"><input type="checkbox" name="c_interacciones"><span>Incluyo mi entendimiento de las interacciones con los otros equipos <span class="req-tag o">recomendado</span></span></div>
+      <div class="check"><input type="checkbox" name="c_referencias"><span>Incluyo referencias verificables y disposición a NDA <span class="req-tag o">recomendado</span></span></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Precio</legend>
+      <div class="row">
+        <div><label>Precio total propuesto</label><input type="number" name="precio" min="0" step="1000" placeholder="0"></div>
+        <div><label>Moneda / modelo</label><input type="text" name="modeloPrecio" placeholder="MXN · precio cerrado / bolsa de horas"></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Adjuntos <span class="muted" style="font-weight:400">— PDF, imágenes o ZIP; se incrustan en el paquete</span></legend>
+      <div id="drop" class="drop">Arrastra aquí tus archivos, o <label style="display:inline;color:var(--rojo-2);cursor:pointer;text-decoration:underline"><input id="fileInput" type="file" multiple style="display:none">selecciónalos</label>.<div class="muted" style="margin-top:6px">Sugerido: portafolio UX, propuesta técnica, CVs del equipo. Límite práctico ~8 MB en total.</div></div>
+      <div id="fileList" class="filelist" style="margin-top:10px"></div>
+    </fieldset>
+
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <button type="button" class="btn" id="btnPack">Empaquetar y descargar propuesta</button>
+      <span id="packMsg" class="muted"></span>
+    </div>
+  </form>
+</section>
+
+<!-- ============================ EVALUAR ============================ -->
+<section id="evaluar" class="view">
+  <div class="card">
+    <p class="kicker">Convocante · comparación y ganador</p>
+    <h2>Evaluar propuestas</h2>
+    <p class="lede">Carga los archivos de propuesta recibidos. El sistema valida los obligatorios, califica cada propuesta contra la rúbrica y <b>propone un ganador</b>. Ninguna propuesta ve a las demás: esta herramienta la usa solo el convocante.</p>
+    <div id="gate" class="note warn">Acceso restringido. Introduce el código del convocante para habilitar la evaluación.
+      <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
+        <input type="text" id="codigo" placeholder="Código de acceso" style="max-width:240px">
+        <button class="btn slate" id="btnGate">Entrar</button>
+      </div>
+      <div class="muted" style="margin-top:6px">Código de demostración: <code>SW-E1-2026</code>. En producción, este control lo hace el backend.</div>
+    </div>
+  </div>
+
+  <div id="evalPanel" style="display:none">
+    <div class="card">
+      <div id="dropEval" class="drop">Arrastra aquí los archivos <code>.json</code> de propuesta, o <label style="display:inline;color:var(--rojo-2);cursor:pointer;text-decoration:underline"><input id="evalInput" type="file" accept=".json" multiple style="display:none">selecciónalos</label>.</div>
+      <div id="loadMsg" class="muted" style="margin-top:8px"></div>
+    </div>
+
+    <div class="card" id="ajustesCard" style="display:none">
+      <h3 style="margin-top:0">Ajuste cualitativo</h3>
+      <p class="muted">Los datos declarados (experiencia, equipo, precio) se puntúan solos. La calidad del portafolio y la profundidad técnica las califica el convocante, de 0 a 100, tras revisar los adjuntos.</p>
+      <div id="ajustes"></div>
+      <button class="btn" id="btnEval" style="margin-top:14px">Comparar y proponer ganador</button>
+    </div>
+
+    <div class="card" id="resultCard" style="display:none">
+      <h3 style="margin-top:0">Resultado</h3>
+      <div id="ranking"></div>
+      <details style="margin-top:16px"><summary style="cursor:pointer;font-weight:600">Ver desglose por criterio</summary><div id="detalle" class="scroll"></div></details>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p><b>Nota de arquitectura.</b> Este portal es autocontenido y funciona sin backend: el aislamiento entre proveedores es real porque cada propuesta se arma en el navegador de quien postula y solo el convocante reúne los archivos. Para un portal alojado con inicio de sesión, almacenamiento central de propuestas y control de acceso por servidor, se requiere un backend (autenticación, almacenamiento cifrado y una API de evaluación); el modelo de datos y la rúbrica de aquí se trasladan sin cambios.</p>
+  <p>Documento de licitación · independiente del depósito documental de Sports World · no destinado a indexación.</p>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  // ---------- navegación ----------
+  var tabs=document.querySelectorAll('nav.tabs button');
+  var views={brief:document.getElementById('brief'),postular:document.getElementById('postular'),evaluar:document.getElementById('evaluar')};
+  tabs.forEach(function(b){b.addEventListener('click',function(){
+    tabs.forEach(function(x){x.setAttribute('aria-selected','false');});
+    b.setAttribute('aria-selected','true');
+    Object.keys(views).forEach(function(k){views[k].classList.remove('active');});
+    views[b.dataset.view].classList.add('active');
+    window.scrollTo(0,0);
+  });});
+
+  // ---------- utilidades ----------
+  function hash32(str){var h=5381;for(var i=0;i<str.length;i++){h=((h<<5)+h)+str.charCodeAt(i);h=h&0xffffffff;}return (h>>>0).toString(16);}
+  function readFileB64(file){return new Promise(function(res,rej){var r=new FileReader();r.onload=function(){res(r.result.split(',')[1]||'');};r.onerror=rej;r.readAsDataURL(file);});}
+  function nowISO(){try{return new Date().toISOString();}catch(e){return 'sin-fecha';}}
+
+  // ---------- POSTULAR ----------
+  var adjuntos=[];
+  var fileInput=document.getElementById('fileInput');
+  var drop=document.getElementById('drop');
+  var fileList=document.getElementById('fileList');
+  function renderFiles(){
+    if(!adjuntos.length){fileList.innerHTML='<span class="muted">Sin adjuntos.</span>';return;}
+    var total=adjuntos.reduce(function(a,f){return a+f.size;},0);
+    fileList.innerHTML=adjuntos.map(function(f,i){return '• '+f.nombre+' <span class="muted">('+(f.size/1024).toFixed(0)+' KB)</span> <a href="#" data-i="'+i+'" class="rmf">quitar</a>';}).join('<br>')+
+      '<div class="muted" style="margin-top:6px">Total: '+(total/1024/1024).toFixed(2)+' MB</div>';
+    fileList.querySelectorAll('.rmf').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();adjuntos.splice(+a.dataset.i,1);renderFiles();});});
+  }
+  renderFiles();
+  function addFiles(files){
+    var arr=Array.prototype.slice.call(files);
+    Promise.all(arr.map(function(f){return readFileB64(f).then(function(b64){return {nombre:f.name,tipo:f.type||'',size:f.size,dataB64:b64};});}))
+      .then(function(res){adjuntos=adjuntos.concat(res);renderFiles();});
+  }
+  fileInput.addEventListener('change',function(){addFiles(fileInput.files);fileInput.value='';});
+  ['dragover','dragenter'].forEach(function(ev){drop.addEventListener(ev,function(e){e.preventDefault();drop.classList.add('hot');});});
+  ['dragleave','drop'].forEach(function(ev){drop.addEventListener(ev,function(e){e.preventDefault();drop.classList.remove('hot');});});
+  drop.addEventListener('drop',function(e){if(e.dataTransfer&&e.dataTransfer.files)addFiles(e.dataTransfer.files);});
+
+  document.getElementById('btnPack').addEventListener('click',function(){
+    var f=document.getElementById('formProp');
+    var msg=document.getElementById('packMsg');
+    if(!f.razonSocial.value||!f.contactoNombre.value||!f.contactoEmail.value){msg.textContent='Completa razón social y datos de contacto.';msg.style.color='#b21622';return;}
+    var val=function(n){return f[n]?f[n].value:'';};
+    var num=function(n){return f[n]?(parseFloat(f[n].value)||0):0;};
+    var chk=function(n){return f[n]?f[n].checked:false;};
+    var sub={
+      schema:"sw-e1-propuesta/v1",
+      emitido:nowISO(),
+      proveedor:{razonSocial:val('razonSocial'),sitio:val('sitio'),contactoNombre:val('contactoNombre'),contactoEmail:val('contactoEmail'),ubicacion:val('ubicacion'),tz:val('tz')},
+      obligatorios:{portafolioUX:chk('c_portafolioUX'),propuestaTecnica:chk('c_propuestaTecnica'),evidenciaClaudeCodex:chk('c_evidenciaClaudeCodex'),equipo:chk('c_equipo')},
+      recomendados:{cronograma:chk('c_cronograma'),migracion:chk('c_migracion'),qa:chk('c_qa'),seguridad:chk('c_seguridad'),interacciones:chk('c_interacciones'),referencias:chk('c_referencias')},
+      declarado:{claudeCodeMeses:num('claudeCodeMeses'),codexMeses:num('codexMeses'),proyectosIA:num('proyectosIA'),ingSenior:val('ingSenior'),equipoTamano:num('equipoTamano'),seniores:num('seniores'),precio:num('precio'),modeloPrecio:val('modeloPrecio'),narrativaIA:val('narrativaIA')},
+      adjuntos:adjuntos
+    };
+    var canonical=JSON.stringify({p:sub.proveedor,o:sub.obligatorios,r:sub.recomendados,d:sub.declarado,n:sub.adjuntos.map(function(a){return a.nombre+':'+a.size;})});
+    sub.id=hash32(sub.proveedor.razonSocial+sub.emitido);
+    sub.firma=hash32(canonical);
+    var blob=new Blob([JSON.stringify(sub,null,2)],{type:'application/json'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a');
+    var safe=(sub.proveedor.razonSocial||'proveedor').replace(/[^a-z0-9]+/gi,'-').toLowerCase().slice(0,40);
+    a.href=url;a.download='propuesta-'+safe+'-'+sub.id+'.json';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
+    var faltan=[];if(!sub.obligatorios.portafolioUX)faltan.push('portafolio UX');if(!sub.obligatorios.propuestaTecnica)faltan.push('propuesta técnica');if(!sub.obligatorios.evidenciaClaudeCodex)faltan.push('experiencia Claude Code + Codex');if(!sub.obligatorios.equipo)faltan.push('equipo');
+    if(faltan.length){msg.innerHTML='Descargada, pero <b style="color:#b21622">faltan obligatorios: '+faltan.join(', ')+'</b>. Se descalificaría.';msg.style.color='#a8730a';}
+    else{msg.innerHTML='Propuesta empaquetada (folio '+sub.id+'). Envíala al convocante.';msg.style.color='#1f7a44';}
+  });
+
+  // ---------- EVALUAR ----------
+  var propuestas=[];
+  document.getElementById('btnGate').addEventListener('click',function(){
+    var c=document.getElementById('codigo').value.trim();
+    if(c==='SW-E1-2026'){document.getElementById('gate').style.display='none';document.getElementById('evalPanel').style.display='block';}
+    else{document.getElementById('codigo').style.borderColor='#b21622';}
+  });
+  var evalInput=document.getElementById('evalInput');
+  var dropEval=document.getElementById('dropEval');
+  function loadEval(files){
+    var arr=Array.prototype.slice.call(files);
+    Promise.all(arr.map(function(f){return f.text().then(function(t){try{return JSON.parse(t);}catch(e){return null;}});}))
+      .then(function(res){
+        res.forEach(function(p){if(p&&p.schema==='sw-e1-propuesta/v1'){
+          if(!propuestas.some(function(x){return x.id===p.id;}))propuestas.push(p);
+        }});
+        document.getElementById('loadMsg').innerHTML=propuestas.length?('Cargadas '+propuestas.length+' propuesta(s): '+propuestas.map(function(p){return p.proveedor.razonSocial;}).join(', ')):'Ningún archivo válido.';
+        renderAjustes();
+      });
+  }
+  evalInput.addEventListener('change',function(){loadEval(evalInput.files);evalInput.value='';});
+  ['dragover','dragenter'].forEach(function(ev){dropEval.addEventListener(ev,function(e){e.preventDefault();dropEval.classList.add('hot');});});
+  ['dragleave','drop'].forEach(function(ev){dropEval.addEventListener(ev,function(e){e.preventDefault();dropEval.classList.remove('hot');});});
+  dropEval.addEventListener('drop',function(e){if(e.dataTransfer&&e.dataTransfer.files)loadEval(e.dataTransfer.files);});
+
+  function renderAjustes(){
+    if(!propuestas.length){document.getElementById('ajustesCard').style.display='none';return;}
+    document.getElementById('ajustesCard').style.display='block';
+    document.getElementById('ajustes').innerHTML=propuestas.map(function(p,i){
+      var dq=!(p.obligatorios.portafolioUX&&p.obligatorios.propuestaTecnica&&p.obligatorios.evidenciaClaudeCodex&&p.obligatorios.equipo);
+      return '<div style="border:1px solid var(--linea);border-radius:8px;padding:12px 14px;margin:8px 0">'+
+        '<b>'+p.proveedor.razonSocial+'</b> '+(dq?'<span class="tag-dq">descalificado · falta obligatorio</span>':'')+
+        '<div class="slider"><span class="muted" style="width:170px">Calidad portafolio UX</span><input type="range" min="0" max="100" value="60" data-i="'+i+'" data-k="ux"><span class="muted valux" data-i="'+i+'">60</span></div>'+
+        '<div class="slider"><span class="muted" style="width:170px">Profundidad técnica</span><input type="range" min="0" max="100" value="60" data-i="'+i+'" data-k="tec"><span class="muted valtec" data-i="'+i+'">60</span></div>'+
+      '</div>';
+    }).join('');
+    document.querySelectorAll('#ajustes input[type=range]').forEach(function(s){
+      s.addEventListener('input',function(){
+        var span=document.querySelector('#ajustes .val'+s.dataset.k+'[data-i="'+s.dataset.i+'"]');if(span)span.textContent=s.value;
+      });
+    });
+  }
+
+  function getSlider(i,k){var s=document.querySelector('#ajustes input[data-i="'+i+'"][data-k="'+k+'"]');return s?(+s.value):60;}
+  function norm(vals){ // min-max 0..1; si todos iguales => 1
+    var mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals);
+    return vals.map(function(v){return (mx===mn)?1:(v-mn)/(mx-mn);});
+  }
+
+  document.getElementById('btnEval').addEventListener('click',function(){
+    var q=propuestas.map(function(p){
+      var dq=!(p.obligatorios.portafolioUX&&p.obligatorios.propuestaTecnica&&p.obligatorios.evidenciaClaudeCodex&&p.obligatorios.equipo);
+      return {p:p,dq:dq};
+    });
+    var vivos=q.filter(function(x){return !x.dq;});
+    // vectores para normalizar entre admitidos
+    var ia=vivos.map(function(x){return x.p.declarado.claudeCodeMeses+x.p.declarado.codexMeses+x.p.declarado.proyectosIA*6;});
+    var eq=vivos.map(function(x){var t=x.p.declarado.equipoTamano||1;return (x.p.declarado.seniores/t)*100;});
+    var precio=vivos.map(function(x){return x.p.declarado.precio||0;});
+    var iaN=norm(ia), eqN=norm(eq);
+    var precioN=precio.map(function(v){var mn=Math.min.apply(null,precio),mx=Math.max.apply(null,precio);return (mx===mn)?1:1-((v-mn)/(mx-mn));}); // menor precio = mejor
+    var recWeight=function(p){var r=p.recomendados;var got=(r.cronograma?1:0)+(r.migracion?1:0)+(r.qa?1:0)+(r.seguridad?1:0)+(r.interacciones?1:0)+(r.referencias?1:0);return got/6;};
+    var idx=0;
+    vivos.forEach(function(x){
+      var i=propuestas.indexOf(x.p);
+      var uxQ=getSlider(i,'ux')/100;
+      var tecQ=getSlider(i,'tec')/100;
+      var crono=recWeight(x.p); // factibilidad aproximada por completitud de recomendados de plan
+      var s_tec=0.6*tecQ+0.4*(x.p.recomendados.migracion&&x.p.recomendados.qa?1:0.5);
+      var s_ia=iaN[idx];
+      var s_ux=uxQ;
+      var s_eq=eqN[idx];
+      var s_cro=x.p.recomendados.cronograma?Math.max(0.5,crono):0.3;
+      var s_pre=precioN[idx];
+      var total=25*s_tec+20*s_ia+20*s_ux+15*s_eq+10*s_cro+10*s_pre;
+      x.score={tec:s_tec,ia:s_ia,ux:s_ux,eq:s_eq,cro:s_cro,pre:s_pre,total:total};
+      idx++;
+    });
+    vivos.sort(function(a,b){return b.score.total-a.score.total;});
+    // render
+    var out='';
+    if(vivos.length){
+      var win=vivos[0];
+      out+='<div class="note info" style="border-left-color:#1f7a44;background:#e8f4ec"><b>Ganador propuesto:</b> '+win.p.proveedor.razonSocial+' — <b>'+win.score.total.toFixed(1)+'/100</b>. '+
+        (vivos.length>1?('Ventaja de '+(win.score.total-vivos[1].score.total).toFixed(1)+' puntos sobre '+vivos[1].p.proveedor.razonSocial+'.'):'Única propuesta admitida.')+'</div>';
+    }
+    out+='<div class="rank">';
+    vivos.forEach(function(x,r){
+      out+='<div style="margin:10px 0;'+(r===0?'':'')+'"><div style="display:flex;justify-content:space-between"><b>'+(r+1)+'. '+x.p.proveedor.razonSocial+'</b> '+(r===0?'<span class="tag-win">ganador</span>':'')+'<span>'+x.score.total.toFixed(1)+'</span></div>'+
+        '<div style="background:#eef1f4;border-radius:6px;overflow:hidden;margin-top:4px"><div class="bar'+(r===0?' ':'')+'" style="width:'+x.score.total+'%;'+(r===0?'background:#1f7a44':'')+'"></div></div></div>';
+    });
+    q.filter(function(x){return x.dq;}).forEach(function(x){
+      out+='<div style="margin:10px 0;opacity:.7"><b>'+x.p.proveedor.razonSocial+'</b> <span class="tag-dq">descalificado</span> <span class="muted">— falta un rubro obligatorio</span></div>';
+    });
+    out+='</div>';
+    document.getElementById('ranking').innerHTML=out;
+    // detalle
+    var d='<table><thead><tr><th>Proveedor</th><th class="c">Técnica·25</th><th class="c">IA·20</th><th class="c">UX·20</th><th class="c">Equipo·15</th><th class="c">Crono·10</th><th class="c">Precio·10</th><th class="c">Total</th></tr></thead><tbody>';
+    vivos.forEach(function(x){
+      d+='<tr><td>'+x.p.proveedor.razonSocial+'</td>'+
+        '<td class="c">'+(25*x.score.tec).toFixed(1)+'</td>'+
+        '<td class="c">'+(20*x.score.ia).toFixed(1)+'</td>'+
+        '<td class="c">'+(20*x.score.ux).toFixed(1)+'</td>'+
+        '<td class="c">'+(15*x.score.eq).toFixed(1)+'</td>'+
+        '<td class="c">'+(10*x.score.cro).toFixed(1)+'</td>'+
+        '<td class="c">'+(10*x.score.pre).toFixed(1)+'</td>'+
+        '<td class="c"><b>'+x.score.total.toFixed(1)+'</b></td></tr>';
+    });
+    d+='</tbody></table>';
+    document.getElementById('detalle').innerHTML=d;
+    document.getElementById('resultCard').style.display='block';
+    document.getElementById('resultCard').scrollIntoView({behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+</html>
