@@ -43,6 +43,7 @@ El proyecto se ejecuta con cuatro equipos, cada uno con un líder, todos coordin
 | Agente BES | A | C | C | I | R | R (base de conocimiento) |
 | Migración y cutover | R/A | R | C | I | I | C (accesos) |
 | Funnel, dashboard y consola interna de captación | A | R | C | I | C | C (accesos Google + datos CRM) |
+| **Panel sin código (CMS)** y modelo de contenido | A | R | C (estructura de contenido) | C (biblioteca de imágenes) | I | C (aprueba; administra el contenido tras el handover) |
 | Aprobaciones de hito | A | C | C | C | C | R (decide) |
 
 El líder general ejecuta puntos de control breves y periódicos donde los cuatro líderes se sincronizan sobre las dependencias compartidas; el cronograma de la §3 los secuencia en el orden correcto.
@@ -55,14 +56,14 @@ Corre de la Semana 1 a la Semana 8, con los cuatro equipos en paralelo y las dep
 
 **Semana 1 — Cimientos y arranque de dependencias.**
 - *Líder:* confirmar API del CRM, fuente de datos de club/clase y WhatsApp Business para los recordatorios de BES; **iniciar de inmediato la titularidad y verificación de Google Business** (el camino más largo).
-- *Web:* levantar proyecto, framework, tokens de diseño de marca, plantillas base y compuertas de calidad (CI).
+- *Web:* levantar proyecto, framework, tokens de diseño de marca, plantillas base, **CMS autoalojado con su base de datos** y compuertas de calidad (CI); fijar el **esquema de eventos del funnel** (E2, E3 y E4) conforme al **[Mapa del Funnel](#funnel)**.
 - *SEO:* estrategia de palabras clave y de contenido; estructuras de página; preparación de fichas.
 - *Visual:* construir la aplicación a la medida; fijar el estilo artístico contra la marca; primer lote de prueba.
 - *BES:* seleccionar componentes de voz/texto frente a los requisitos de español-México y latencia; esqueleto funcional en el sitio; diseño de la conversación.
-- **Criterio de salida:** entorno productivo y de staging en pie; plantillas base renderizando; verificación de Google Business iniciada; dependencias del Anexo Uno recibidas o con fecha comprometida.
+- **Criterio de salida:** entorno productivo y de staging en pie; plantillas base renderizando; **CMS instalado y accesible**; **esquema de eventos del funnel definido**; verificación de Google Business iniciada; dependencias del Anexo Uno recibidas o con fecha comprometida.
 
 **Semana 2 — Páginas pilar y pipelines en marcha.**
-- *Web:* home + una página de club + un hub como "pilares" que fijan el patrón.
+- *Web:* home + una página de club + un hub como "pilares" que fijan el patrón; **modelo de contenido del CMS** derivado de ese patrón.
 - *SEO:* primera ola de contenido optimizado para los pilares; fichas enviadas a verificación.
 - *Visual:* primer set completo de imágenes de los pilares.
 - *BES:* conversación básica de extremo a extremo (voz y texto en el sitio); primeras pruebas internas.
@@ -70,30 +71,31 @@ Corre de la Semana 1 a la Semana 8, con los cuatro equipos en paralelo y las dep
 - **Criterio de salida:** patrón pilar aprobado, listo para replicar.
 
 **Semanas 3–4 — Escalar la construcción.**
-- *Web:* replicar el patrón aprobado a las 49 páginas de club y a los hubs; integrar la API del CRM (captación de leads) y los datos de club/clase (recomendación).
+- *Web:* replicar el patrón aprobado a las 49 páginas de club y a los hubs; integrar la API del CRM (captación de leads) y los datos de club/clase (recomendación); **instrumentar los eventos del funnel** (cuestionario iniciado, completado y visita agendada) contra la base de datos del funnel; **habilitar en el CMS** la edición de contenido, imágenes y **coordenadas de club**.
 - *SEO:* grueso del contenido por club y de hub; optimización de fichas conforme superan verificación.
 - *Visual:* imágenes de los 49 clubes a escala.
 - *BES:* conectar a la captación de leads (misma API del CRM), integrarlo al sitio y configurar los recordatorios por WhatsApp; ampliar cobertura de preguntas; refinar el traspaso a humano.
 - **🚦 Aprobación 2 (fin S4):** Sports World aprueba ~50% del sitio construido. **Ventana: 48 horas hábiles.**
-- **Criterio de salida:** ~50% de las páginas completas y revisadas; lead-capture funcionando de extremo a extremo contra el CRM real, desde el sitio y desde BES.
+- **Criterio de salida:** ~50% de las páginas completas y revisadas; lead-capture funcionando de extremo a extremo contra el CRM real, desde el sitio y desde BES; **E2, E3 y E4 registrándose en la base del funnel**; **edición sin código operativa** sobre las páginas pilar.
 
 **Semanas 5–6 — Completar la producción e integrar.**
-- *Web:* páginas restantes y flujo completo de experiencia ideal; integración de datos completa; endurecer rendimiento y accesibilidad.
+- *Web:* páginas restantes y flujo completo de experiencia ideal; integración de datos completa; **construir el tablero del funnel** sobre su base de datos y **conectar las fuentes de Google** (GA4, Search Console y fichas de Google Business) para los cortes C1a, C1b y C1c; endurecer rendimiento y accesibilidad.
 - *SEO:* artículos de apoyo, datos estructurados finalizados, optimización de Google Business completa.
 - *Visual:* colocar todas las imágenes restantes.
 - *BES:* cobertura conversacional completa; ajustar la calidad de voz y la velocidad; pruebas con tráfico real (Sección II del contrato: 4 semanas de desarrollo + 2 de pruebas); confirmar que los leads de BES llegan al CRM idénticos a los del sitio.
-- **Criterio de salida (fin S6):** todas las páginas completas; sitio revisable en enlace de vista previa; BES manejando conversaciones reales en el sitio (voz y texto).
+- **Criterio de salida (fin S6):** todas las páginas completas; sitio revisable en enlace de vista previa; BES manejando conversaciones reales en el sitio (voz y texto); **tablero del funnel mostrando los tres canales de entrada y las etapas E2 a E4 con datos de staging**.
 
 **Semana 7 — Pase de calidad y congelamiento previo al lanzamiento.**
 - *Todos:* pase completo de calidad —rendimiento, accesibilidad, preparación para búsqueda, exactitud de contenido, consistencia visual, lead-capture contra el CRM real y BES en voz y texto.
-- *Web:* preparar el lanzamiento —plan de cambio de DNS y plan de redirecciones 301 (los 136 enlaces) para no perder posicionamiento; **prueba de carga del servidor (§4)**.
+- *Web:* preparar el lanzamiento —plan de cambio de DNS y plan de redirecciones 301 (los 136 enlaces) para no perder posicionamiento; **prueba de carga del servidor (§4)**; **verificar el tablero del funnel** contra el checklist de la §6 y **ensayar el procedimiento sin código del CMS con el equipo de Sports World**.
 - **🚦 Aprobación 3 (S7):** Sports World da el visto bueno al sitio congelado y al agente BES. **Ventana: 48 horas hábiles.**
 - **Criterio de salida:** sitio congelado, listo para lanzar; checklist de aceptación (§6) en verde en staging.
 
 **Semana 8 — Lanzamiento y handover.**
 - *Líder + Web:* ejecutar el cutover con Sports World —apuntar el dominio, enviar las páginas a Google, confirmar que todo está en vivo y medido, y que el correo/MX sigue intacto.
 - *BES:* poner a BES en vivo en el sitio (con los recordatorios por WhatsApp).
-- *Todos:* **monitoreo activo 48 horas**; confirmar reconocimiento de fichas y datos estructurados; confirmar flujo de leads al CRM desde el sitio y desde BES.
+- *Todos:* **monitoreo activo 48 horas**; confirmar reconocimiento de fichas y datos estructurados; confirmar flujo de leads al CRM desde el sitio y desde BES; **tablero del funnel en vivo con datos de producción**.
+- *Líder + Web:* **handover del CMS** — alta de las personas usuarias de Sports World y entrega de la guía de operación del panel sin código.
 - **🚦 Aprobación 4 (S8):** lanzamiento en firme. **Ventana: mismo día hábil.**
 - **Criterio de salida:** criterios de aceptación del lanzamiento (§6) cumplidos; inicia la etapa de estabilización de 2 a 4 semanas.
 
@@ -166,6 +168,8 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 - Las 148 páginas publicadas y crawleables; las 49 fichas de Google Business enviadas y en optimización.
 - **Captación de leads de extremo a extremo** al CRM, desde el sitio y desde BES, sin duplicados (idempotencia).
 - **Migración:** mapa de 301 activo (136 enlaces), correo/MX y demás servicios del dominio confirmados sin interrupción.
+- **Tablero del funnel** en vivo, con los tres canales de entrada y las etapas E2, E3 y E4 alimentándose. Las etapas **E5, E6 y E7 dependen de los datos de cierre del CRM** (**[Mapa del Funnel · §6](#funnel:6-los-tres-datos-de-cierre)**): se activan al recibirlos y su ausencia no bloquea el lanzamiento.
+- **Panel sin código (CMS)** operativo, con las personas usuarias de Sports World dadas de alta y probado por el cliente sobre contenido, imágenes y coordenadas de club.
 - **Monitoreo activo 48 horas** posterior al cutover; luego inicia la **estabilización de 2 a 4 semanas**.
 
 ## 7 · Registro de riesgos
@@ -178,6 +182,7 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 | Calidad/disponibilidad de datos de clubes y clases | Media | Medio | API de lectura preferente; fallback a exportación estructurada con calendario acordado; validación automática. | E1 / SW |
 | Base de conocimiento de BES desactualizada | Media | Medio | Actualización semanal mínima (Anexo Uno D.6); reentrenamiento automático. | SW / E4 |
 | Cambios de alcance (scope creep) | Media | Medio | Control de cambios (§8): lo no pactado es convenio modificatorio; los cambios sobre secciones ya aprobadas se cotizan (Cláusula Décima). | Líder gral. |
+| Datos de cierre del CRM (E5, E6 y E7) no disponibles al lanzamiento | Media | Medio | El tablero se entrega con los canales de entrada y las etapas E2 a E4; la mitad baja se activa al recibir los datos, sin retrabajo (**[Mapa del Funnel · §7](#funnel:7-qu-se-puede-medir-desde-el-da-uno)**). | SW Sistemas / E1 |
 | Migración rompe correo u otro servicio del DNS | Baja | Alto | Inventario DNS previo; solo se tocan registros del sitio; TTL bajo 24 h antes; rollback rápido; verificación post-cutover. | E1 |
 
 ## 8 · Gobierno: control de cambios, reporte y stand-by
