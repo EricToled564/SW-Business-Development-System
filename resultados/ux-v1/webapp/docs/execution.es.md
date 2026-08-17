@@ -182,7 +182,7 @@ Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](
 | Calidad/disponibilidad de datos de clubes y clases | Media | Medio | API de lectura preferente; fallback a exportación estructurada con calendario acordado; validación automática. | E1 / SW |
 | Base de conocimiento de BES desactualizada | Media | Medio | Actualización semanal mínima (Anexo Uno D.6); reentrenamiento automático. | SW / E4 |
 | Cambios de alcance (scope creep) | Media | Medio | Control de cambios (§8): lo no pactado es convenio modificatorio; los cambios sobre secciones ya aprobadas se cotizan (Cláusula Décima). | Líder gral. |
-| Datos de cierre del CRM (E5, E6 y E7) no disponibles al lanzamiento | Media | Medio | El tablero se entrega con los canales de entrada y las etapas E2 a E4; la mitad baja se activa al recibir los datos, sin retrabajo (**[Mapa del Funnel · §7](#funnel:7-qu-se-puede-medir-desde-el-da-uno)**). | SW Sistemas / E1 |
+| Datos de cierre del CRM (E5, E6 y E7) no disponibles al lanzamiento | Media | Medio | El tablero se entrega con los canales de entrada y las etapas E2 a E4; la mitad baja se activa al recibir los datos, sin retrabajo (**[Mapa del Funnel · §7](#funnel:7-qu-se-necesita-para-el-tablero-completo)**). | SW Sistemas / E1 |
 | Migración rompe correo u otro servicio del DNS | Baja | Alto | Inventario DNS previo; solo se tocan registros del sitio; TTL bajo 24 h antes; rollback rápido; verificación post-cutover. | E1 |
 
 ## 8 · Gobierno: control de cambios, reporte y stand-by

@@ -142,6 +142,7 @@ regla("R17 · registro de cliente", (falla) => {
     [/materia de Legal/i, "remite a Legal un asunto ya resuelto en el Contrato"],
     [/falta pedir|hueco[s]? de acceso|no est[áa]n? cubiert[ao]s? por el Anexo/i, "declara un pendiente que ya está pactado"],
     [/pr[óo]xima revisi[óo]n del Anexo|se reflejar[áa] en la pr[óo]xima/i, "difiere a una revisión futura un ajuste ya incorporado"],
+    [/requiere ajuste del Anexo|no previsto hoy en el Anexo|a[úu]n no previsto en el Anexo/i, "marca como no pactado un dato que ya consta en el Anexo Uno"],
     [/el error de las definiciones anteriores|antes dec[íi]a|versi[óo]n anterior de este documento/i, "narra una versión anterior del propio documento"],
     [/la auditor[íi]a de la documentaci[óo]n|correcci[óo]n editorial/i, "expone el proceso interno de elaboración"],
     [/build_pdfkit|consistencia\.js|audit-docs|\/versiones-del-contrato|rama de trabajo|claude\/new-session/i, "cita herramientas o rutas del repositorio"],

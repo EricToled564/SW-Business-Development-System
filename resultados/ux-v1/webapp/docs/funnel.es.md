@@ -60,8 +60,8 @@ Para cada etapa: qué mide, **cuándo cuenta exactamente**, de dónde se obtiene
 | **E3 · Cuestionario completado** | Se genera la experiencia ideal (la respuesta del modelo se recibe) | Evento propio del middleware | Ninguno externo | **EL PRESTADOR** |
 | **E4 · Visita agendada** | **La escritura al CRM se confirma** — no cuando el usuario da clic | Respuesta del API del CRM a la creación de prospecto | Credenciales productivas, punto de acceso de creación de prospecto e idempotencia | **SW Sistemas** (Anexo Uno B.1, B.2, B.3, D.4) |
 | **E5 · Visita realizada** | El CRM marca la asistencia del prospecto | CRM, vía middleware — webhook firmado o consulta diaria | Que el API exponga el estado de la visita (agendada → proporcionada) | **SW Sistemas** (Anexo Uno, catálogo de datos y B.4) |
-| **E6 · Membresía comprada** | El CRM registra la activación | CRM o, en su defecto, base periódica de membresías nuevas | El dato de activación **con número de membresía y teléfono** | **SW Sistemas** — *requiere ajuste del Anexo Uno, §6* |
-| **E7 · Membresía cancelada** | El CRM registra la baja | CRM o base periódica de cancelaciones | El dato de cancelación **por número de membresía** | **SW Sistemas** — *no previsto hoy en el Anexo Uno, §6* |
+| **E6 · Membresía comprada** | El CRM registra la activación | CRM o, en su defecto, base periódica de membresías nuevas | El dato de activación **con número de membresía y teléfono** | **SW Sistemas** (Anexo Uno · catálogo de datos y vía alternativa para membresías nuevas) |
+| **E7 · Membresía cancelada** | El CRM registra la baja | CRM o base periódica de cancelaciones | El dato de cancelación **por número de membresía** | **SW Sistemas** (Anexo Uno · catálogo de datos, cancelación de membresía) |
 
 ### Ejes transversales
 
@@ -96,13 +96,31 @@ La mitad baja del funnel —visita realizada, membresía comprada y membresía c
 
 Los tres se entregan por API o por entrega periódica, bajo el mismo régimen y las mismas salvaguardas. La conciliación ocurre **dentro de la infraestructura de Sports World** y el dashboard presenta **únicamente resultados agregados**: los datos personales no residen en sistemas de EL PRESTADOR.
 
-## 7 · Qué se puede medir desde el día uno
+## 7 · Qué se necesita para el tablero completo
 
-| Disponible sin depender de terceros | Depende de accesos de Sports World |
-|---|---|
-| E2, E3, E4 · los dos ejes transversales · el funnel completo del Canal 3 | E0, C1a, C1b, C1c (accesos de Marketing) · C2 (número oficial de WhatsApp) · **E5, E6 y E7 (Sistemas)** |
+El tablero se construye completo desde el proyecto. Lo que determina **cuánto alcanza a mostrar** es el acceso al dato. Esta es la lista exhaustiva, para que la conversación con Sistemas y con Marketing se tenga sobre cifras y no sobre supuestos.
 
-**La mitad baja del funnel —visita realizada, membresía comprada y membresía cancelada— es un requerimiento a cargo de Sports World, no un entregable de EL PRESTADOR.** El proyecto construye la instrumentación y el tablero; el dato de cierre lo aporta el CRM. Conviene que esto quede explícito en la conversación con Sistemas: sin esos tres accesos, el funnel se mide hasta la visita agendada.
+**No depende de nadie más:** E2 y E3 —cuestionario iniciado y completado— y los dos ejes transversales son instrumentación propia del proyecto.
+
+**Depende de Sports World:**
+
+| Bloque del tablero | Dato o acceso requerido | Quién lo entrega | Anexo Uno | Sin él, el tablero… |
+|---|---|---|---|---|
+| **E0 · Alcance de campaña** | Lectura de las cuentas de Meta Business Manager y TikTok Ads | SW Marketing | E.8, E.9 | No muestra alcance ni inversión de pauta |
+| **C1a · Tráfico orgánico** | Propiedad GA4 con administración y Data API habilitada; propiedad de Search Console verificada | SW Marketing | E.4 | Pierde el corte que sustenta el KPI de cobertura de keywords unbranded |
+| **C1b · Tráfico de pago al sitio** | El mismo acceso GA4, más el contenedor de Tag Manager | SW Marketing | E.4 | No separa la pauta del orgánico: la inversión contamina la lectura del SEO |
+| **C1c · Fichas de Google Business** | Titularidad o administración de las 49 fichas | SW Marketing | E.4 | No reporta vistas, llamadas ni solicitudes de indicaciones |
+| **C2 · Anuncio a WhatsApp** | Número oficial de WhatsApp Business, verificación del negocio en Meta y plantillas aprobadas | SW Marketing y Sistemas | Addendum BDS §4 | Pierde el único canal con recorrido individual completo, del clic a la cancelación |
+| **C3 · Captura en consola** | Lista de personal autorizado, plantilla de operadores y horarios | SW Operación | — | La consola no opera y el Canal 3 no existe |
+| **E2 · Cuestionario iniciado** | Contenedor de Tag Manager | SW Marketing | E.4 | El evento se genera pero no se recolecta |
+| **E4 · Visita agendada** | Credenciales productivas, punto de acceso de creación de prospecto e idempotencia | SW Sistemas | B.1, B.2, B.3, D.4 | **No hay funnel**: es la etapa que cierra la captación y el KPI contractual de visitas |
+| **E5 · Visita realizada** | Que el API exponga el estado de la visita (agendada → proporcionada) | SW Sistemas | catálogo de datos, B.4 | El funnel se corta en visita agendada: no se mide asistencia |
+| **E6 · Membresía comprada** | Activación **con número de membresía y teléfono** del nuevo socio | SW Sistemas | catálogo de datos y vía alternativa | No se mide la conversión a socio ni se atribuye la venta al canal que la originó |
+| **E7 · Membresía cancelada** | **Número de membresía**, fecha y —cuando el CRM lo registre— motivo | SW Sistemas | catálogo de datos | No hay medición de retención ni lectura por cohorte |
+
+**El mínimo para que el tablero tenga sentido de negocio son E4, E5 y E6**: sin ellos se mide interés y fricción, pero no resultado. E7 agrega la lectura de retención; su ausencia no impide leer el resultado comercial.
+
+**La mitad baja del funnel —visita realizada, membresía comprada y membresía cancelada— es un requerimiento a cargo de Sports World, no un entregable de EL PRESTADOR.** El proyecto construye la instrumentación y el tablero; el dato de cierre lo aporta el CRM. Todos los datos de esta tabla constan en el Anexo Uno: lo que resta es la entrega operativa de cada acceso.
 
 ## 8 · Relación con el Contrato
 
