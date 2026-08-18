@@ -28,6 +28,8 @@ export interface LicContent {
     h: string; sub: string; login: string; entrar: string; malPass: string;
     cargar: string; ninguna: string; ajuste: string; comparar: string;
     ganador: string; descal: string; total: string;
+    invitarH: string; invRazon: string; invEmail: string; invBtn: string;
+    invGenerado: string; invCopiar: string; copiado: string; invFaltan: string;
   };
 }
 
@@ -183,6 +185,9 @@ const es: LicContent = {
     login: 'Contraseña del convocante', entrar: 'Entrar', malPass: 'Contraseña incorrecta',
     cargar: 'Cargar propuestas', ninguna: 'Sin propuestas cargadas.', ajuste: 'Ajuste cualitativo',
     comparar: 'Comparar y proponer ganador', ganador: 'Ganador propuesto', descal: 'descalificado', total: 'Total',
+    invitarH: 'Invitar a un proveedor', invRazon: 'Razón social', invEmail: 'Correo de contacto',
+    invBtn: 'Generar enlace único', invGenerado: 'Enlace para este proveedor (envíaselo; solo abre su propia propuesta):',
+    invCopiar: 'Copiar', copiado: 'Copiado', invFaltan: 'Completa razón social y correo.',
   },
 };
 
@@ -338,6 +343,9 @@ const en: LicContent = {
     login: 'Convener password', entrar: 'Enter', malPass: 'Wrong password',
     cargar: 'Load proposals', ninguna: 'No proposals loaded.', ajuste: 'Qualitative adjustment',
     comparar: 'Compare and propose winner', ganador: 'Proposed winner', descal: 'disqualified', total: 'Total',
+    invitarH: 'Invite a provider', invRazon: 'Company name', invEmail: 'Contact email',
+    invBtn: 'Generate unique link', invGenerado: 'Link for this provider (send it; it only opens their own proposal):',
+    invCopiar: 'Copy', copiado: 'Copied', invFaltan: 'Fill in company name and email.',
   },
 };
 

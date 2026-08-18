@@ -19,6 +19,27 @@ export default function EvalPanel({ t }: { t: LicContent['evaluar'] }) {
   const [err, setErr] = useState('');
   const [props, setProps] = useState<Propuesta[]>([]);
   const [resultado, setResultado] = useState<ReturnType<typeof evaluar> | null>(null);
+  const [invRazon, setInvRazon] = useState('');
+  const [invEmail, setInvEmail] = useState('');
+  const [invEnlace, setInvEnlace] = useState('');
+  const [invErr, setInvErr] = useState('');
+  const [copiado, setCopiado] = useState(false);
+
+  async function invitar() {
+    setInvErr(''); setInvEnlace(''); setCopiado(false);
+    if (!invRazon || !invEmail) { setInvErr(t.invFaltan); return; }
+    const r = await fetch('/api/licitacion/invite', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ razonSocial: invRazon, contactoEmail: invEmail }),
+    });
+    const j = await r.json();
+    if (j.ok) { setInvEnlace(j.enlace); setInvRazon(''); setInvEmail(''); }
+    else setInvErr(j.error || 'error');
+  }
+
+  async function copiar() {
+    try { await navigator.clipboard.writeText(invEnlace); setCopiado(true); } catch { /* sin portapapeles */ }
+  }
 
   async function login() {
     setErr('');
@@ -71,6 +92,25 @@ export default function EvalPanel({ t }: { t: LicContent['evaluar'] }) {
 
   return (
     <div className="space-y-6">
+      <div className="rounded-xl border border-white/15 p-4">
+        <h3 className="font-semibold mb-3">{t.invitarH}</h3>
+        <div className="grid md:grid-cols-2 gap-3">
+          <input value={invRazon} onChange={(e) => setInvRazon(e.target.value)} placeholder={t.invRazon} className={field} />
+          <input value={invEmail} onChange={(e) => setInvEmail(e.target.value)} placeholder={t.invEmail} className={field} />
+        </div>
+        <button onClick={invitar} className="mt-3 bg-neutral-800 hover:bg-neutral-700 text-white font-semibold px-4 py-2 rounded-lg">{t.invBtn}</button>
+        {invErr && <p className="text-red-400 text-sm mt-2">{invErr}</p>}
+        {invEnlace && (
+          <div className="mt-3 rounded-lg bg-emerald-950/20 border border-emerald-500/40 p-3">
+            <p className="text-sm text-neutral-300 mb-2">{t.invGenerado}</p>
+            <div className="flex gap-2 items-center">
+              <code className="flex-1 text-xs break-all bg-black/30 rounded px-2 py-1.5">{invEnlace}</code>
+              <button onClick={copiar} className="text-xs bg-neutral-700 hover:bg-neutral-600 text-white px-3 py-1.5 rounded">{copiado ? t.copiado : t.invCopiar}</button>
+            </div>
+          </div>
+        )}
+      </div>
+
       <button onClick={cargar} className="bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg">{t.cargar}</button>
       {err && <p className="text-red-400 text-sm">{err}</p>}
       {props.length === 0 ? (

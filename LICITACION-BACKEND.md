@@ -37,7 +37,7 @@ Es independiente del depósito documental del cliente: no aparece en `app.js` ni
 ## Cómo se opera
 
 1. El convocante entra a `/es/licitacion/evaluar`, se autentica con su contraseña.
-2. Para invitar a un proveedor: `POST /api/licitacion/invite` con `{razonSocial, contactoEmail}` (autenticado). Devuelve un **enlace único** `…/licitacion/postular?t=TOKEN` que le envías a ese proveedor. *(Un formulario de invitación en la vista de evaluación es una mejora pendiente; hoy el endpoint existe y responde.)*
+2. Para invitar a un proveedor: en la vista `/evaluar`, el bloque **Invitar a un proveedor** pide razón social y correo y genera el **enlace único** `…/licitacion/postular?t=TOKEN`, con botón para copiarlo. Se lo envías a ese proveedor. (Internamente llama a `POST /api/licitacion/invite`.)
 3. El proveedor abre su enlace, llena la propuesta y adjunta archivos. El servidor la guarda **bajo su token**: ningún otro proveedor puede verla ni enumerarla.
 4. El convocante carga las propuestas en `/evaluar`, ajusta la calidad cualitativa (portafolio UX y profundidad técnica) y el sistema **descalifica las incompletas, puntúa contra la rúbrica y propone un ganador**.
 
