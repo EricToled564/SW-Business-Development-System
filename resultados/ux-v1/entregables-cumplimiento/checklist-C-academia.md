@@ -1,9 +1,12 @@
-# Checklist de cumplimiento — Academia Sports World (Proyecto C)
-## Entregables, aprobaciones y hospedaje, por etapa
+# Academia Sports World (Proyecto C) — entregables, aprobaciones y hospedaje
+
+**De:** Jorge Montiel · Gerencia de Marketing
+**Para:** Área de Sistemas
+**Asunto:** Proyecto C (Academia) — entregables del proveedor, aprobaciones y hospedaje, por etapa
+
+Comparto con Sistemas el detalle del proyecto para coordinar lo que corresponde a su área.
 
 ## 1 · Calendario por etapas (10 semanas)
-
-Dos fases contractuales (Fase 1: módulos interactivos; Fase 2: agente de voz de role-play). Dos hitos de aprobación (Cláusula Décima). La **Fase 2 presupone el motor de BES del Proyecto A operativo**; si el Addendum se firma antes, la Fase 1 avanza y el plazo de la Fase 2 se cuenta desde que el motor esté disponible.
 
 | Etapa | Entrega EL PRESTADOR | Aprueba SW | En su servidor (qué y cuándo) |
 |---|---|---|---|

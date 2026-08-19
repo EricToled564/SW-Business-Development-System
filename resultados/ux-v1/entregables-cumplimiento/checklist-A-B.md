@@ -1,9 +1,12 @@
-# Checklist de cumplimiento — El sistema de ventas (Proyectos A + B)
-## Entregables, aprobaciones y hospedaje, semana por semana
+# El sistema de ventas (Proyectos A + B) — entregables, aprobaciones y hospedaje
+
+**De:** Jorge Montiel · Gerencia de Marketing
+**Para:** Área de Sistemas
+**Asunto:** Proyecto A + B — entregables del proveedor, aprobaciones y hospedaje, semana por semana
+
+Comparto con Sistemas el detalle del proyecto para coordinar lo que corresponde a su área.
 
 ## 1 · Proyecto A — Rediseño Web (incluye el agente BES)
-
-Cada semana cierra con un criterio de salida verificable. Las cuatro aprobaciones y sus valores de etapa son del Anexo Dos I.4; el valor de etapa rige el costo de un cambio sobre lo ya aprobado (Cláusula Décima).
 
 | Semana | Entrega EL PRESTADOR | Aprueba SW | En su servidor (qué y cuándo) |
 |---|---|---|---|
@@ -15,8 +18,6 @@ Cada semana cierra con un criterio de salida verificable. Las cuatro aprobacione
 | **S8 · Lanzar** | **Cutover**: despliegue a producción, apuntado de DNS, 301 activo, correo/MX intacto; tablero en vivo; **handover del CMS**; monitoreo activo 48 h. | **Aprobación 4** (mismo día): lanzamiento en firme. | **El sitio corre en el servidor de SW por primera vez.** El cutover está **condicionado a que la primera exhibición esté pagada** (§7). |
 
 ## 2 · Proyecto B — BDS (canal WhatsApp y consola de operadores)
-
-Plazo propio de 8 semanas desde la firma del Addendum, en paralelo a A. Reutiliza el cuestionario, el middleware/CRM y la consola de A (operativos entre las Semanas 3 y 6 de A). Dos hitos de aprobación (Cláusula Décima).
 
 | Fase | Entrega EL PRESTADOR | Aprueba SW | En su servidor (qué y cuándo) |
 |---|---|---|---|
@@ -77,8 +78,6 @@ Las 148 páginas por nivel: home (1), club (49), hub de amenidad (10), clase pre
 | Cobertura keywords *unbranded* | 31.1% → 55–65% | Semrush |
 | Core Web Vitals | LCP<2.5 s · INP<200 ms · CLS<0.1 | PageSpeed Insights |
 | Accesibilidad | WCAG 2.2 AA | axe-core |
-
-No se garantizan posiciones específicas ni volúmenes de tráfico (factores externos); sí la base técnica que los habilita.
 
 ## 7 · Dónde vive el código, cómo se revisa y cuándo pasa a SW
 
