@@ -44,8 +44,6 @@ El Proyecto B corre en paralelo al rediseño, con plazo propio de ocho semanas, 
 
 ---
 
-Les pido llevar este checklist punto por punto en cada corte semanal con el proveedor y marcarme cualquier criterio de cumplimiento que no se cubra en su semana o fase. Con esto aseguramos que todos los puntos necesarios queden cubiertos antes de la entrega final.
-
 Muchas gracias por el apoyo.
 
 **Jorge Montiel**
