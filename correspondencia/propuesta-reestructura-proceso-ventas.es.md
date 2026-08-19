@@ -14,27 +14,27 @@ El sistema digital que está en construcción resuelve esa falla en sus canales:
 
 El punto de partida lo documentó la propia red. Ninguno de los 15 asesores y líderes entrevistados aplica un método para identificar el objetivo real del cliente; la objeción de precio aparece en el cien por ciento de las entrevistas; la conversión reportada varía hasta 40 veces entre asesores; y en la autoevaluación de los líderes regionales, la habilidad más débil del equipo es justamente la **presentación de valor** (3.0 de 5), mientras que el cierre es la más fuerte (4.0). La lectura es directa: **el equipo sabe cerrar; lo que no tiene es método para descubrir y para argumentar valor** — y eso es lo que esta reestructura instala.
 
+**Lo que enseñan los mercados premium.** La investigación en Brasil, Japón, Reino Unido, Emiratos, Australia y Estados Unidos apunta en una sola dirección: en el segmento premium la venta no se gana con el precio. Bio Ritmo, la cadena de alto valor de Brasil, define a su cliente como el que paga más a cambio de acompañamiento (A13); Third Space, en Londres, elevó 30% el ingreso por socio con poder de precio y venta de complementos, no con descuento (A12); los clubes premium de Dubái sostienen el estándar de saludar al socio por su nombre y registrar sus preferencias (A24); Renaissance, en Japón, convirtió la especialización técnica de su equipo en argumento comercial (A11); y Equinox, en Estados Unidos, juzga a su asesor por la permanencia del socio, no por la firma del mes (A33). Del lado del riesgo, los reguladores de Australia y Estados Unidos sancionan una sola conducta: la falta de transparencia en los términos de cancelación (A28, A30). De los seis mercados se desprenden dos conclusiones operativas para Sports World: **el método de descubrimiento y el acompañamiento son la verdadera palanca de precio**, y **la claridad de los términos no es un asunto legal sino comercial**.
+
 No se requiere producto nuevo. Los planes Uniclub, Multiclub y Parcial, las categorías Oro, Plata y Bronce, los pases de invitado y los programas de entrenamiento personalizado ya contienen las palancas que el plan de cada cliente necesita (A5); lo que falta es venderlos con método. El documento propone ese método en tres capas —el objetivo del cliente, su núcleo de acompañantes y su geografía—, lo baja a un proceso de cinco fases con manejo de objeciones y guía por tipo de club, y cierra mostrando cómo cada pieza alimenta los siete componentes de la Academia (Proyecto C), donde este contenido se convertirá en el entrenamiento de los 200 asesores.
 
 # Índice
 
-| Sección | Contenido |
-|---|---|
-| Parte I | La tesis: del catálogo al plan del cliente |
-| Parte II | El punto de partida: cifras propias, lealtad del socio y la voz de la red |
-| Parte III | El idioma único del cliente: la taxonomía de objetivos y las cinco dimensiones de decisión |
-| Parte IV | El portafolio vigente, leído como plan |
-| Parte V | Las tres capas de una venta |
-| Parte VI | Los instrumentos: el cuestionario de experiencia ideal y el brief del asesor |
-| Parte VII | El proceso propuesto, en cinco fases |
-| Parte VIII | Manejo de objeciones |
-| Parte IX | Guía comercial por tipo de club |
-| Parte X | Siete reglas que se proponen como no negociables |
-| Parte XI | Cómo se propone medir al asesor |
-| Parte XII | De esta propuesta a la Academia |
-| Anexo A | Fuentes |
-| Anexo B | Información requerida del área comercial |
-| Anexo C | Oportunidades que requerirían producto nuevo |
+| | Sección | Contenido |
+|---|---|---|
+| **Diagnóstico** | **Parte I** | La tesis: del catálogo al plan del cliente |
+| | **Parte II** | El punto de partida: cifras propias, lealtad del socio y la voz de la red |
+| **El método** | **Parte III** | El idioma único del cliente: taxonomía de objetivos y dimensiones de decisión |
+| | **Parte IV** | El portafolio vigente, leído como plan |
+| | **Parte V** | Las tres capas de una venta: objetivo, núcleo y geografía |
+| | **Parte VI** | Los instrumentos: el cuestionario de experiencia ideal y el brief del asesor |
+| **La ejecución** | **Parte VII** | El proceso propuesto, en cinco fases |
+| | **Parte VIII** | Manejo de objeciones |
+| | **Parte IX** | Guía comercial por tipo de club |
+| | **Parte X** | Siete reglas que se proponen como no negociables |
+| | **Parte XI** | Cómo se propone medir al asesor |
+| **El puente** | **Parte XII** | De esta propuesta a la Academia (Proyecto C) |
+| **Anexos** | **A · B · C** | Fuentes · Información requerida del área comercial · Oportunidades que requerirían producto nuevo |
 
 ---
 
