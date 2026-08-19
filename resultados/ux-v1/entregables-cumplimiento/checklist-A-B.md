@@ -8,9 +8,9 @@ Comparto con Sistemas el detalle del proyecto para coordinar lo que corresponde 
 
 ## 1 · Proyecto A — Rediseño Web (incluye el agente BES)
 
-| Semana | Entrega EL PRESTADOR | Aprueba SW | En su servidor (qué y cuándo) |
+| Semana | Entrega del proveedor | Aprueba SW | Dónde corre y cuándo |
 |---|---|---|---|
-| **S1 · Cimientos** | Proyecto, framework, tokens de marca, plantillas base, CMS instalado, controles de calidad (CI), esquema de eventos del funnel. Inicio de verificación de Google Business. | — | Nada. Corre en **staging de EL PRESTADOR**, con acceso de Sistemas por login. |
+| **S1 · Cimientos** | Proyecto, framework, tokens de marca, plantillas base, CMS instalado, controles de calidad (CI), esquema de eventos del funnel. Inicio de verificación de Google Business. | — | Nada. Corre en **staging del proveedor**, con acceso de Sistemas por login. |
 | **S2 · Pilares** | Patrón pilar: home + 1 club + 1 hub de amenidad; modelo de contenido del CMS; primera conversación de BES. | **Aprobación 1** (48 h, valor 15%): el **diseño** / patrón pilar y la 1.ª conversación de BES. Quedan aprobadas las **plantillas de home, club y hub de amenidad**. | Nada. Revisión por staging. |
 | **S3–4 · Escalar** | Replicar a **49 páginas de club** y **10 hubs de amenidad**; integrar API del CRM (captación) y datos de club/clase; instrumentar eventos del funnel; edición sin código operativa; producir las plantillas restantes (§4). | **Aprobación 2** (48 h, valor 35%): **~50% del sitio**. Aprobar las **plantillas de clase (premium e individual), perfil de usuario, FitKidz y membresías**. Validar las **matrices** (§5). | Nada en producción. El **lead-capture** de extremo a extremo se prueba contra el **CRM real** desde staging. |
 | **S5–6 · Integrar** | Páginas restantes; flujo de experiencia ideal completo; construir el **tablero del funnel** y conectar fuentes de Google; plantillas YMYL (bajar de peso), personal training y blog; rendimiento y accesibilidad; BES con cobertura completa. | Validar el hub **"Bajar de Peso"** con la **firma del médico designado por SW** (cédula visible). | Nada en producción. Revisión por staging. |
@@ -19,7 +19,7 @@ Comparto con Sistemas el detalle del proyecto para coordinar lo que corresponde 
 
 ## 2 · Proyecto B — BDS (canal WhatsApp y consola de operadores)
 
-| Fase | Entrega EL PRESTADOR | Aprueba SW | En su servidor (qué y cuándo) |
+| Fase | Entrega del proveedor | Aprueba SW | Dónde corre y cuándo |
 |---|---|---|---|
 | **Preparación** | Cierre del listado de requerimientos. | Provee **número oficial de WhatsApp Business** verificado en Meta y **plantillas de mensaje aprobadas**; plantilla de operadores, horarios y lista de personal autorizado. | Nada. Staging. |
 | **Integración** | WhatsApp Business API (mensajería, plantillas, multiagente); rol de operador en la consola; BES por WhatsApp (texto, respaldo 24/7); capa de enrutamiento (human-first → BES → escalación). | — | Nada. Staging. |
@@ -81,7 +81,7 @@ Las 148 páginas por nivel: home (1), club (49), hub de amenidad (10), clase pre
 
 ## 7 · Dónde vive el código, cómo se revisa y cuándo pasa a SW
 
-**Durante la construcción (S1–S7): en infraestructura de EL PRESTADOR.** El sitio corre en un **ambiente de staging** con **acceso para el área de Sistemas de SW por login restringido** —revisan cuando quieran, con bitácora de acceso—. Lo que el navegador muestra es el sitio ya renderizado; **el código fuente, el código de servidor, el middleware, la base de datos y los secretos no se envían al navegador y no son descargables** desde staging (source maps apagados). El repositorio permanece privado en EL PRESTADOR.
+**Durante la construcción (S1–S7): en infraestructura del proveedor.** El sitio corre en un **ambiente de staging** con **acceso para el área de Sistemas de SW por login restringido** —revisan cuando quieran, con bitácora de acceso—. Lo que el navegador muestra es el sitio ya renderizado; **el código fuente, el código de servidor, el middleware, la base de datos y los secretos no se envían al navegador y no son descargables** desde staging (source maps apagados). El repositorio permanece en poder del proveedor.
 
 **El cutover (S8): al servidor de SW.** El sitio se despliega en el servidor de SW (Bloque F) y se apunta el DNS. **Precondición: la primera exhibición —exigible en la Aprobación de la Semana 4— debe estar pagada.** La falta de pago de una exhibición ya exigible faculta la **suspensión de entregas** (Cláusula Novena III): no hay cutover hasta regularizar.
 

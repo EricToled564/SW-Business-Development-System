@@ -8,9 +8,9 @@ Comparto con Sistemas el detalle del proyecto para coordinar lo que corresponde 
 
 ## 1 · Calendario por etapas (10 semanas)
 
-| Etapa | Entrega EL PRESTADOR | Aprueba SW | En su servidor (qué y cuándo) |
+| Etapa | Entrega del proveedor | Aprueba SW | Dónde corre y cuándo |
 |---|---|---|---|
-| **Validación** (arranque) | Mapeo de la taxonomía maestra a los **7 componentes** y segmentación por tipo de club; cierre del listado de requerimientos. | **Valida el mapeo de la taxonomía y la segmentación** (condición para producir contenido). Entrega **métricas del CRM por asesor** y colaboración de marketing. | Nada. Staging de EL PRESTADOR con acceso por login. |
+| **Validación** (arranque) | Mapeo de la taxonomía maestra a los **7 componentes** y segmentación por tipo de club; cierre del listado de requerimientos. | **Valida el mapeo de la taxonomía y la segmentación** (condición para producir contenido). Entrega **métricas del CRM por asesor** y colaboración de marketing. | Nada. Staging de el proveedor con acceso por login. |
 | **Fase 1 · Módulos** | **7 lecciones (8–12 min) en 4 niveles**, con acreditación y bloqueo de nivel siguiente; segmentación de contenido por tipo de club. | Define el **mínimo aprobatorio por módulo**; valida contenido. | Se despliega la plataforma de módulos en el **servidor propio de SW para la Academia**, tras la aprobación del 50%. |
 | **Fase 2 · Role-play** | Agente de voz que interpreta al cliente; selección adaptativa de escenarios por perfil y club; capa de evaluación contra los 7 componentes; repasos a los 7, 30 y 90 días y práctica semanal permanente. | — (requiere el motor de BES del Proyecto A operativo) | Opera en el servidor de la Academia de SW. |
 | **Despliegue** | **Dashboard de readiness** (Fase 1 + Fase 2) por asesor, club, ciudad y nacional; calibración de línea base con métricas reales del CRM; arranque por grupos. | **Aprobación total** (hito 2). | En el servidor de la Academia de SW. |
@@ -27,8 +27,8 @@ Comparto con Sistemas el detalle del proyecto para coordinar lo que corresponde 
 
 ## 3 · Dónde vive el código, cómo se revisa y cuándo pasa a SW
 
-**Durante la construcción: en infraestructura de EL PRESTADOR.** La plataforma de módulos, los escenarios y el dashboard corren en un **ambiente de staging** con **acceso para el área de Sistemas de SW por login restringido** (bitácora de acceso, source maps apagados). El código fuente, el código de servidor y la base de datos no se envían al navegador y no son descargables desde staging.
+**Durante la construcción: en infraestructura del proveedor.** La plataforma de módulos, los escenarios y el dashboard corren en un **ambiente de staging** con **acceso para el área de Sistemas de SW por login restringido** (bitácora de acceso, source maps apagados). El código fuente, el código de servidor y la base de datos no se envían al navegador y no son descargables desde staging.
 
 **Despliegue al servidor de la Academia de SW: contra aprobación y pago.** La Fase 1 se despliega en el servidor propio de la Academia tras la aprobación del 50%. La falta de pago de una exhibición ya exigible faculta la **suspensión de entregas** (Cláusula Novena III).
 
-**Entrega final: contra liquidación total.** El código fuente, los repositorios y la titularidad del **desarrollo específico de la Academia** se entregan al liquidarse el pago total (Novena III y Décima Sexta). El **motor de BES es un Componente Preexistente de EL PRESTADOR**: permanece en su titularidad, licenciado a SW solo según se incorpore en los entregables — no se transfiere.
+**Entrega final: contra liquidación total.** El código fuente, los repositorios y la titularidad del **desarrollo específico de la Academia** se entregan al liquidarse el pago total (Novena III y Décima Sexta). El **motor de BES es un Componente Preexistente del proveedor**: permanece en su titularidad, licenciado a SW solo según se incorpore en los entregables — no se transfiere.
