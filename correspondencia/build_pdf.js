@@ -350,13 +350,46 @@ function build(doc, blocks, ctx) {
     return null;
   };
 
+  /* ─────────────────────────────────────────────────────────────────────
+     POLÍTICA DE PAGINACIÓN — una sola definición, usada en todas las
+     decisiones. Los umbrales viven aquí y en ningún otro lado.
+
+     · Un párrafo, nota o viñeta jamás se parte (regla 1).
+     · Una fila de tabla jamás se parte; una tabla solo se corta entre
+       filas y cada continuación repite el encabezado (regla 2).
+     · Un título nunca queda al pie sin contenido debajo: arrastra un
+       "arranque digno" de lo que abre (regla 3).
+     · Una sección (H1/H2) no se abre con menos del 15% de página libre
+       (regla 4).
+
+     Para cada tabla se calculan DOS números, y son los mismos en la
+     decisión del título y en la de la tabla:
+       start(g) → altura del arranque digno: encabezado + filas hasta
+                  cubrir el 18% de la página (mínimo una fila).
+       corta(g) → true si la tabla, aun reducida, ocupa ≤ 45% de página:
+                  una tabla corta nunca se corta, viaja entera.
+     ───────────────────────────────────────────────────────────────────── */
+  const P = {
+    minSeccion: usable * 0.15,   // regla 4
+    arranque: usable * 0.18,     // arranque digno de una tabla
+    tablaCorta: usable * 0.45,   // por debajo de esto una tabla no se corta
+    stub: usable * 0.20,         // resto de página que ya no vale la pena llenar
+  };
+
   const G = blocks.map((b) => {
     if (b.t === "table") {
       const size = b.rows[0].length >= 5 ? SIZE.cellSm : SIZE.cell;
       const widths = columnWidths(b.rows, w);
       const m = measureTable(b.rows, widths, size);
       const min = measureTable(b.rows, widths, size * SHRINK);
-      return { size, widths, rh: m.rh, total: m.total, minTotal: min.total };
+      const g = { size, widths, rh: m.rh, total: m.total, minTotal: min.total };
+      g.corta = g.minTotal <= P.tablaCorta;
+      let s = g.rh[0], filas = 0;
+      for (let r = 1; r < g.rh.length && (filas < 1 || s < P.arranque); r++) { s += g.rh[r]; filas++; }
+      g.start = s;
+      // exigencia de la tabla al abrirse: entera si es corta, su arranque si no
+      g.abre = (g.corta ? g.minTotal : g.start) + 9;
+      return g;
     }
     return { h: mc.run((d, mx) => { drawBlock(d, b, mx, w, ctx, false); }) };
   });
@@ -365,30 +398,23 @@ function build(doc, blocks, ctx) {
     const b = blocks[i];
     const g = G[i];
 
-    /* ── Reglas 3 y 4: encabezados ──
-       El título forma un "bloque solidario" con lo que abre: los encabezados
-       encadenados, los párrafos de entrada y —si la hay— la primera tabla de la
-       sección. Si ese conjunto cabe completo en una página, se exige que quepa
-       aquí; si no, no se abre la sección en esta página. Así ningún título
-       queda colgando al pie con su tabla en la página siguiente. */
+    /* ── Reglas 3 y 4: títulos ──
+       La solidaridad del título atraviesa los párrafos de entrada: si la
+       sección abre con uno o dos párrafos y luego una tabla, el título exige
+       espacio para los párrafos Y el arranque de la tabla — si no, el título
+       y su entrada quedan colgados al pie con la tabla en la página
+       siguiente, que es un huérfano con más texto. */
     if (b.t === "h") {
-      // El título arrastra los encabezados encadenados y el bloque siguiente
-      // COMPLETO —un párrafo no se parte, así que o cabe entero o baja con el
-      // título—. De una tabla basta con su encabezado y dos filas: de ahí en
-      // adelante el corte entre filas es legítimo y exigirla entera solo
-      // produciría media página en blanco.
       let need = 0, j = i;
       while (j < blocks.length && blocks[j].t === "h") { need += G[j].h; j++; }
-      if (j < blocks.length) {
-        const gn = G[j];
-        need += blocks[j].t === "table"
-          ? Math.min(gn.minTotal, gn.rh[0] + (gn.rh[1] || 0) + (gn.rh[2] || 0)) + 9
-          : gn.h;
+      let intro = 0;
+      while (j < blocks.length && intro < 2 && (blocks[j].t === "p" || blocks[j].t === "li" || blocks[j].t === "note") && need + G[j].h < usable * 0.5) {
+        need += G[j].h; intro++; j++;
       }
-      const group = need;
-      const minFree = b.level <= 2 ? usable * 0.15 : 0;
+      if (j < blocks.length) need += blocks[j].t === "table" ? G[j].abre : (intro ? 0 : G[j].h);
+      const minFree = b.level <= 2 ? P.minSeccion : 0;
       if (process.env.PDF_DEBUG && !atTop() && free() < Math.max(need, minFree)) {
-        console.log(`  corte antes de «${b.text.slice(0, 46)}» · libre ${free().toFixed(0)} · exige ${Math.max(need, minFree).toFixed(0)} (grupo ${group.toFixed(0)})`);
+        console.log(`  corte antes de «${b.text.slice(0, 46)}» · libre ${free().toFixed(0)} · exige ${Math.max(need, minFree).toFixed(0)}`);
       }
       if (!atTop() && free() < Math.max(need, minFree)) newPage();
       drawBlock(doc, b, x, w, ctx, atTop());
@@ -402,67 +428,62 @@ function build(doc, blocks, ctx) {
       continue;
     }
 
-    /* ── Regla 2: tablas ──
-       Una fila jamás se parte. La tabla se mantiene entera siempre que quepa
-       en lo que resta de página. Si no cabe, hay dos salidas: bajarla completa
-       —cuando lo que queda de página es poco y no se desperdicia nada— o
-       cortarla ENTRE FILAS, repitiendo el encabezado, cuando dejarla entera
-       obligaría a tirar buena parte de una página. Ningún fragmento queda con
-       menos de dos filas de contenido. */
+    /* ── Regla 2: tablas ── */
     if (b.t === "table") {
       let { size, widths, rh, total } = g;
       const n = b.rows.length;
+      const trasTitulo = i > 0 && blocks[i - 1].t === "h";
 
-      // Si no cabe entera por poco, se reduce el cuerpo de letra lo necesario
-      // (hasta el piso permitido) para subirla a esta página en vez de dejar
-      // media página en blanco.
+      // Decisión, en orden:
+      // A) cabe entera aquí (reduciendo el cuerpo hasta el piso si hace
+      //    falta) → se dibuja entera;
+      // B) es corta, o el resto de página es un tramo que no vale la pena
+      //    llenar → baja entera a página nueva; PROHIBIDO tras un título
+      //    (dejaría el título huérfano — la regla 3 ya garantizó espacio
+      //    para el arranque);
+      // C) se corta entre filas, con encabezado repetido y sin fragmentos
+      //    menores al arranque digno.
       if (total + 9 > free() && g.minTotal + 9 <= free()) {
         const m = fitTable(b.rows, widths, g.size, free() - 9);
         if (m) { size = m.size; rh = m.rh; total = m.total; }
       }
-      const minRows = 2;
-      const minFrag = rh[0] + rh[1] + (rh[2] || 0);   // encabezado + dos filas
 
-      const drawRun = (from, to, y) => {
-        let yy = y;
-        yy += drawTableRow(doc, b.rows[0], widths, x, yy, size, true, rh[0]);
-        for (let ri = from; ri <= to; ri++) yy += drawTableRow(doc, b.rows[ri], widths, x, yy, size, false, rh[ri]);
-        return yy;
-      };
-
-      const cabeEntera = total + 9 <= free();
-      const desperdicio = free() - 9;      // lo que se tiraría si se baja completa
-
-      if (cabeEntera) {
+      if (total + 9 <= free()) {                                   // A
         let y = doc.y;
         for (let ri = 0; ri < n; ri++) y += drawTableRow(doc, b.rows[ri], widths, x, y, size, ri === 0, rh[ri]);
         doc.y = y + 9; doc.x = x;
-      } else if (total <= usable && desperdicio < Math.max(minFrag, usable * 0.22)) {
-        // Poco espacio útil abajo: baja completa, sin cortar nada.
+      } else if (!trasTitulo && total <= usable && (g.corta || free() < g.start + 9 || free() < P.stub)) {  // B
         newPage();
         let y = doc.y;
         for (let ri = 0; ri < n; ri++) y += drawTableRow(doc, b.rows[ri], widths, x, y, size, ri === 0, rh[ri]);
         doc.y = y + 9; doc.x = x;
-      } else {
-        // Corte entre filas, con encabezado repetido.
-        const cortes = [];               // índice de la primera fila de cada fragmento
-        let ri = 1;
-        let avail = free() - rh[0];
-        cortes.push(1);
-        while (ri < n) {
-          if (rh[ri] <= avail) { avail -= rh[ri]; ri++; }
-          else { cortes.push(ri); avail = usable - rh[0]; }
+      } else {                                                     // C
+        if (free() < g.start + 9) newPage();   // solo posible cuando la tabla es más larga que una página
+        // repartir filas en fragmentos que llenan el espacio disponible
+        const cortes = [1];
+        let avail = free() - 9 - rh[0];
+        for (let ri = 1; ri < n; ri++) {
+          if (rh[ri] > avail) { cortes.push(ri); avail = usable - rh[0]; }
+          avail -= rh[ri];
         }
-        // Ningún fragmento con menos de `minRows` filas: se adelanta el corte.
+        // ningún fragmento (primero, intermedios o último) menor al arranque:
+        // se adelanta el corte para equilibrar
         for (let k = cortes.length - 1; k > 0; k--) {
           const fin = k === cortes.length - 1 ? n : cortes[k + 1];
-          if (fin - cortes[k] < minRows) cortes[k] = Math.max(cortes[k - 1] + minRows, fin - minRows);
+          let hFrag = 0;
+          for (let r = cortes[k]; r < fin; r++) hFrag += rh[r];
+          while (hFrag < P.arranque - rh[0] && cortes[k] > cortes[k - 1] + 1) {
+            cortes[k]--; hFrag += rh[cortes[k]];
+          }
         }
         for (let k = 0; k < cortes.length; k++) {
           const from = cortes[k];
           const to = (k === cortes.length - 1 ? n : cortes[k + 1]) - 1;
           if (k > 0) newPage();
-          doc.y = drawRun(from, to, doc.y);
+          let y = doc.y;
+          y += drawTableRow(doc, b.rows[0], widths, x, y, size, true, rh[0]);
+          for (let ri = from; ri <= to; ri++) y += drawTableRow(doc, b.rows[ri], widths, x, y, size, false, rh[ri]);
+          doc.y = y;
         }
         doc.y += 9; doc.x = x;
       }
