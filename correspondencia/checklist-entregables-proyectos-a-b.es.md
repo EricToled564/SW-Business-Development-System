@@ -1,22 +1,6 @@
-# Checklist de cumplimiento de entregables · Proyectos A y B
-## Rediseño web con posicionamiento orgánico y sistema de captación multicanal en tiempo real
+# Proyectos A y B · Rediseño web y sistema de captación multicanal en tiempo real
 
-| | |
-|---|---|
-| **De** | Jorge Montiel · Gerencia de Marketing, Sports World México |
-| **Para** | Área de Sistemas |
-| **Fecha** | 19 de agosto de 2026 |
-| **Asunto** | Checklist de cumplimiento de los entregables del proveedor, semana a semana |
-
-Equipo, buenas tardes.
-
-En seguimiento al proyecto de SEO y rediseño web, les comparto el checklist de cumplimiento con los entregables que el proveedor debe cubrir obligatoriamente, semana a semana, hasta la entrega del proyecto. El propósito es que el área dé seguimiento a cada punto conforme avance el trabajo y verifique, con criterios observables, que todo quede cubierto antes de la entrega final. Este documento cubre el Proyecto A (rediseño web con el agente BES, ocho semanas) y el Proyecto B (captación multicanal en tiempo real, ocho semanas en paralelo); el Proyecto C (Academia) va en documento aparte.
-
----
-
-## 1 · Proyecto A · Rediseño web (8 semanas)
-
-Cuatro frentes corren en paralelo durante las ocho semanas: el sitio web, la base de SEO y contenido, el contenido visual a escala y el agente conversacional BES. Cada semana cierra con un criterio de cumplimiento verificable; si no se cumple, no se avanza a la siguiente fase.
+## Proyecto A · Rediseño web (8 semanas)
 
 | Semana | Entregables específicos del proveedor | Aprobación de SW y criterio de cumplimiento al cierre |
 |---|---|---|
@@ -27,13 +11,7 @@ Cuatro frentes corren en paralelo durante las ocho semanas: el sitio web, la bas
 | **S7 · Pase de calidad y congelamiento** | · Pase completo de calidad: rendimiento, accesibilidad, preparación para búsqueda, exactitud de contenido, consistencia visual, captación contra el CRM real y BES en voz y texto.<br>· Plan de cambio de DNS (solo registros del sitio; el correo no se toca) y plan de redirecciones 301 que cubre los 136 enlaces rotos.<br>· Prueba de carga del servidor: 160,000 visitas mensuales simuladas con picos de cinco veces.<br>· Verificación del tablero del funnel contra el checklist de aceptación.<br>· Ensayo del procedimiento sin código del CMS con el equipo de Sports World. | **Aprobación 3:** visto bueno al sitio congelado y al agente BES. Criterio: sitio congelado, listo para lanzar; checklist de aceptación en verde en staging; plan de cutover y redirecciones listo. |
 | **S8 · Lanzamiento y handover** | · Cutover ejecutado con Sports World: dominio apuntado con TTL reducido 24 horas antes, páginas y sitemap enviados a Google, correo corporativo (registros MX) confirmado intacto.<br>· BES en vivo en el sitio, con los 2 recordatorios por WhatsApp (24 h y 2 h antes de la visita) operando.<br>· Monitoreo activo de 48 horas; reconocimiento de fichas y datos estructurados confirmado.<br>· Flujo de leads al CRM confirmado desde el sitio y desde BES, sin duplicados.<br>· Tablero del funnel en vivo con datos de producción.<br>· Handover del CMS: altas de las personas usuarias de Sports World y guía de operación del panel sin código. | **Aprobación 4:** lanzamiento en firme. Criterio de aceptación completo: 148 páginas publicadas y rastreables; enlaces rotos 136 → 0; datos estructurados en los 49 clubes; páginas sin H1 11 → 0; Core Web Vitals en umbral (LCP < 2.5 s, INP < 200 ms, CLS < 0.1); accesibilidad WCAG 2.2 AA verificada; correo y servicios del dominio sin interrupción. Inicia la estabilización de 2 a 4 semanas con atención reforzada. |
 
-**Referencia de las secciones de la web (las 148 páginas por nivel):** home (1) · páginas de club (49) · hubs de amenidad (10) · clases premium (7) · clases individuales (47) · hub FitKidz (1) · perfiles de usuario (5) · hub "Bajar de Peso" (1) · personal training (1) · membresías (6) · blog SEO (20).
-
----
-
-## 2 · Proyecto B · Sistema de captación multicanal en tiempo real (8 semanas, en paralelo)
-
-El Proyecto B corre en paralelo al rediseño, con plazo propio de ocho semanas, y se ejecuta por fases: reutiliza el cuestionario, la integración con el CRM y la consola interna del Proyecto A, componentes que quedan operativos entre las semanas 3 y 6 del cronograma del sitio, por lo que su arranque no depende del lanzamiento.
+## Proyecto B · Sistema de captación multicanal en tiempo real (8 semanas, en paralelo)
 
 | Fase (dentro de las 8 semanas) | Entregables específicos del proveedor | Aprobación de SW y criterio de cumplimiento al cierre |
 |---|---|---|
@@ -41,10 +19,3 @@ El Proyecto B corre en paralelo al rediseño, con plazo propio de ocho semanas, 
 | **Fase 2 · Integración** | · Conexión con la WhatsApp Business API: mensajería bidireccional, plantillas aprobadas y atención multiagente sobre un solo número oficial (suficiente para la atribución por campaña: el primer mensaje llega con la referencia del anuncio).<br>· Landing de campañas con el cuestionario de experiencia ideal como punto de entrada de los anuncios.<br>· BES sobre WhatsApp (solo texto), con la misma base de conocimiento del canal web, como respaldo automático 24/7: aplica el cuestionario, arma la experiencia ideal, agenda la visita y escribe el lead al CRM por la misma vía sin duplicados.<br>· Rol de operador habilitado sobre la consola interna: bandeja de conversaciones asignadas, aplicación asistida del cuestionario, generación de la experiencia ideal, carga del lead al CRM y señal de presencia y disponibilidad.<br>· Capa de enrutamiento en tiempo real: primero operador humano disponible y en horario; BES de respaldo inmediato si no hay operador o es fuera de horario; escalación de BES a humano conservando el contexto; colas, asignación y rebote por no respuesta. | Criterio: los cinco componentes conectados y operando en staging —canal de WhatsApp, landing, BES de respaldo, consola con rol de operador y capa de enrutamiento—. |
 | **Fase 3 · Validación** | · Pruebas de extremo a extremo por los tres caminos —operador humano por WhatsApp, BES por WhatsApp y walk-in en consola— contra el CRM real, sin duplicados.<br>· Canal de anuncio a WhatsApp visible en el tablero, con la referencia del anuncio y la campaña de origen de cada conversación.<br>· Eje de tiempo al primer contacto (speed-to-lead) medido y visible en el tablero, sobre la misma espina de conversión del funnel del Proyecto A (el BDS no define un funnel propio). | Aprobación de SW del 50% del sistema. Criterio: los tres caminos escriben el mismo lead al CRM en formato idéntico y sin duplicados; el tablero muestra el canal de WhatsApp y el tiempo al primer contacto. |
 | **Fase 4 · Lanzamiento y estabilización** | · Sistema en operación con monitoreo activo.<br>· Ajuste de las reglas de enrutamiento con datos reales de volumen y disponibilidad de operadores.<br>· Medición completa en el tablero: distribución del tiempo al primer contacto por canal (operador contra BES) y por horario; volumen, tiempo de respuesta y conversión por operador; conversaciones, agendas y escalaciones de BES; resultados por campaña de origen; y porcentaje de leads con primer contacto inmediato. | Aprobación total de SW. Criterio: sistema en operación continua junto al sitio; cero leads sin atención inmediata como regla verificable en el tablero; reglas de enrutamiento calibradas con datos reales. |
-
----
-
-Muchas gracias por el apoyo.
-
-**Jorge Montiel**
-Gerencia de Marketing · Sports World México
