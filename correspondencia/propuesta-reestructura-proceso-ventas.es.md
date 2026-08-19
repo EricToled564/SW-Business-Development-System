@@ -10,7 +10,7 @@
 
 Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente. La auditoría inicial lo midió en el canal digital —*"el producto existe: entrenadores, alberca, vapor, sauna; para Google, no"* (A2)— y la propia red comercial lo confirmó en el piso de venta: los 49 clubes, sus amenidades y sus clases se presentan como un catálogo que el cliente debe descifrar por su cuenta, sin conexión con lo que esa persona vino a resolver.
 
-El proyecto digital ya está corrigiendo esa falla en sus canales: el cuestionario captura el objetivo del cliente, el sistema se lo devuelve convertido en su **experiencia ideal** —su club, sus clases, sus horarios, su acompañamiento— y el **brief** entrega ese plan al asesor como argumentos de cierre. **Esta propuesta lleva el mismo giro al proceso de ventas presencial: dejar de vender el catálogo y vender una propuesta de valor anclada en los objetivos del cliente, con un plan específico para ayudarlo a cumplirlos.**
+El sistema digital que está en construcción resuelve esa falla en sus canales: el cuestionario captura el objetivo del cliente, el sistema se lo devuelve convertido en su **experiencia ideal** —su club, sus clases, sus horarios, su acompañamiento— y el **brief** entrega ese plan al asesor como argumentos de cierre. **Esta propuesta lleva el mismo giro al proceso de ventas presencial: dejar de vender el catálogo y vender una propuesta de valor anclada en los objetivos del cliente, con un plan específico para ayudarlo a cumplirlos.**
 
 El punto de partida lo documentó la propia red. Ninguno de los 15 asesores y líderes entrevistados aplica un método para identificar el objetivo real del cliente; la objeción de precio aparece en el cien por ciento de las entrevistas; la conversión reportada varía hasta 40 veces entre asesores; y en la autoevaluación de los líderes regionales, la habilidad más débil del equipo es justamente la **presentación de valor** (3.0 de 5), mientras que el cierre es la más fuerte (4.0). La lectura es directa: **el equipo sabe cerrar; lo que no tiene es método para descubrir y para argumentar valor** — y eso es lo que esta reestructura instala.
 
@@ -40,13 +40,11 @@ No se requiere producto nuevo. Los planes Uniclub, Multiclub y Parcial, las cate
 
 # Parte I · La tesis: del catálogo al plan del cliente
 
-La auditoría inicial del proyecto (Semrush, marzo de 2026; 6,900 palabras clave sin marca analizadas) midió la falla en el canal digital: de las 932,300 búsquedas mensuales de "gimnasio para perder peso" —la intención de mayor volumen de la industria en México—, Sports World aparece en el 0.02%. La persona que busca exactamente lo que Sports World vende no la encuentra. El diagnóstico quedó escrito en una línea: **"El producto existe —entrenadores, alberca, vapor, sauna—; para Google, no"** (A2).
+En el piso de venta ocurre lo mismo que la auditoría inicial encontró en Google: la infraestructura se presenta como inventario y no como la respuesta al objetivo de quien la está viendo. La conversación del asesor arranca con la logística —"¿qué horario te queda?"— y continúa con lo que el club tiene; nadie le pregunta al cliente qué vino a resolver. Los líderes regionales coinciden, sin excepción, en el momento en que se pierde la venta: el primer contacto, cuando el asesor da precios y promociones antes de conocer la necesidad real (A4).
 
-Las entrevistas de campo encontraron la misma falla frente al cliente que sí llegó al club: la conversación del asesor arranca con logística —"¿qué horario te queda?"— y sigue con el inventario. El cliente escucha lo que el club tiene; nadie le pregunta qué vino a resolver. Y el momento donde más prospectos se pierden, según el patrón unánime de los líderes regionales, es el primer contacto: el asesor da precios y promociones **antes** de conocer las necesidades reales, y con ello pierde la visita (A4). Es la misma falla en dos canales: **la infraestructura se presenta como inventario, no como la respuesta al objetivo de la persona que la está viendo.**
+El sistema digital que está en construcción resuelve esa falla en sus canales. El cuestionario captura el objetivo del cliente en un minuto y le devuelve su plan —su club, sus clases, sus horarios, su acompañamiento—; al agendar la visita, el brief entrega ese mismo plan al asesor, traducido a argumentos de cierre (A1).
 
-El proyecto ya corrigió esto en lo digital. El cuestionario de experiencia ideal captura el objetivo del prospecto en un minuto; el sistema le devuelve su plan —el club correcto, las clases correctas, los horarios que le sirven, el acompañamiento que va a recibir—; y cuando agenda su visita, el brief entrega ese plan al asesor traducido a argumentos de cierre. La experiencia ideal es el producto del sistema de ventas, con dos destinatarios: el cliente la recibe como su experiencia; el asesor, como su brief (A1). El sistema le demuestra al cliente dos cosas a la vez: que Sports World **sabe** qué se requiere para lograr su objetivo, y que **tiene con qué cumplirlo**. Ninguna de las dos convence por separado; juntas son la propuesta de valor (A3).
-
-**Esta propuesta lleva ese mismo giro al piso de venta.** El asesor deja de recitar lo que el club tiene, y demuestra cómo lo que el club tiene resuelve lo que su cliente declaró querer. Todo lo que sigue —taxonomía, capas, proceso, objeciones, guía por club y medición— es la mecánica de ese giro. Y no llega de fuera: cuando se les preguntó qué herramienta les falta, los tres líderes regionales coincidieron en la misma respuesta, un **guion estructurado de descubrimiento con preguntas por tipo de cliente** (A4). Esta reestructura es ese guion, convertido en método completo.
+**Esta propuesta lleva ese giro al piso de venta:** el asesor deja de recitar lo que el club tiene y demuestra cómo lo que el club tiene resuelve lo que su cliente declaró querer. Todo lo que sigue —taxonomía, capas, proceso, objeciones, guía por club y medición— es la mecánica de ese giro. Y no viene de fuera: cuando se les preguntó qué herramienta les hace falta, los tres líderes regionales pidieron lo mismo, un guion estructurado de descubrimiento con preguntas por tipo de cliente (A4). Esta reestructura es ese guion, desarrollado como método completo.
 
 ---
 
@@ -292,7 +290,7 @@ La ubicación no es un dato de registro: es la dimensión "ubicación y red mult
 
 # Parte VI · Los instrumentos
 
-El asesor no improvisa el descubrimiento: el sistema se lo entrega hecho. Pero un asesor que no sabe qué contienen los instrumentos no puede usarlos, y por eso se documentan completos aquí.
+Con el sistema en operación, el asesor ya no improvisa el descubrimiento: lo recibe hecho. Pero un asesor que no sabe qué contienen los instrumentos no puede usarlos, y por eso se documentan completos aquí.
 
 ## 11 · El cuestionario de experiencia ideal
 
@@ -543,7 +541,7 @@ Con esto, el mismo concepto atraviesa el sistema de punta a punta: **el cliente 
 | Ref | Fuente | Qué sustenta |
 |---|---|---|
 | **A1** | Documentación del proyecto — *Arquitectura de la Experiencia* | La experiencia ideal como producto con dos destinatarios; el cuestionario (15 preguntas base + condicionales) y su taxonomía Q3/Q4; el brief; las 148 páginas; el filtro de contraindicaciones; los estados de FitKidz por club |
-| **A2** | Documentación del proyecto — *Auditoría inicial del sitio* (Semrush, febrero–marzo de 2026; 6,900 palabras clave sin marca) | Cobertura de 0.02% en las 932,300 búsquedas mensuales de pérdida de peso; *"El producto existe…; para Google, no"* |
+| **A2** | Documentación del proyecto — *Auditoría inicial del sitio* (Semrush, febrero–marzo de 2026; 6,900 búsquedas genéricas) | Cobertura de 0.02% en las 932,300 búsquedas mensuales de pérdida de peso; *"El producto existe…; para Google, no"* |
 | **A3** | Documentación del proyecto — *Resumen Ejecutivo del sistema de ventas* | La tesis del proyecto; la promesa doble; los cinco niveles y las tres capas del sistema |
 | **A4** | Entrevistas de campo (15 entrevistas, 13 clubes, 5 regiones, mayo de 2026) y taller con líderes regionales (157 de 200 asesores) | Los cinco hallazgos; la autoevaluación por etapa de venta; el guion de descubrimiento como herramienta #1; las objeciones que más bloquean; la cita del líder de SW Hermosillo; el 99% de seguimiento en cuentas personales |
 | **A5** | Documentación oficial de membresías y planes de Sports World | Definiciones de Uniclub, Multiclub y Parcial; categorías Oro, Plata, Bronce y Promocional; pases de invitado; descuentos; programas ALPHA, GRIT y TRAINT; descuento por edad; vigencias extendidas |
