@@ -27,8 +27,6 @@ El programa se entrega en dos fases —la plataforma de módulos interactivos (F
 
 ---
 
-Les pido llevar este checklist punto por punto en cada corte con el proveedor y marcarme cualquier criterio de cumplimiento que no se cubra en su etapa. Con esto aseguramos que todos los puntos necesarios queden cubiertos antes de la entrega final.
-
 Muchas gracias por el apoyo.
 
 **Jorge Montiel**
