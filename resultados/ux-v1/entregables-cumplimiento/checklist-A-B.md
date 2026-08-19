@@ -3,8 +3,6 @@
 
 **Qué cubre.** El Proyecto A (Rediseño Web) y el Proyecto B (Business Development System) forman un solo sistema de captación y conversión con todos los canales integrados. Este documento los reúne para dar seguimiento semana por semana.
 
-**Encuadre.** Consolida los criterios de aceptación y KPIs **ya pactados en el Contrato y su Anexo Dos**; no introduce requisitos nuevos. Es de **doble vía**: junto a cada entregable de EL PRESTADOR va el insumo que Sports World (SW) debe aportar (Anexo Uno / addendum) para poder marcarlo cumplido.
-
 ---
 
 ## 0 · Los dos proyectos, en una tabla
@@ -93,8 +91,6 @@ Plazo propio de 8 semanas desde la firma del Addendum. **No reescribe** el motor
 | Personal training | 1 | S5–6 |
 | Blog SEO | 20 | S5–6 |
 | **Total** | **148** | |
-
-> El desglose de aprobación por plantilla es la forma operativa de las cuatro aprobaciones del Anexo Dos I.4; no amplía el alcance contratado (148 páginas, Anexo Dos I.1).
 
 ## 4 · Matrices que SW debe validar
 

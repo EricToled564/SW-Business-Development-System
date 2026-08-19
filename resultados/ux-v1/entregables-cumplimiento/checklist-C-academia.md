@@ -3,8 +3,6 @@
 
 **Qué cubre.** El Proyecto C (Academia) es la capa de capacidad humana del sistema de ventas: capacitación y práctica para los 200 asesores comerciales, en dos fases. Es un alcance **independiente** de los Proyectos A y B; en tanto no se firme su Addendum, no genera obligación ni costo.
 
-**Encuadre.** Consolida los criterios de aceptación **ya pactados en el Contrato (Cláusula Quinta) y el Addendum de la Academia**; no introduce requisitos nuevos. De **doble vía**: junto a cada entregable va el insumo que SW debe aportar.
-
 ---
 
 ## 0 · El proyecto en una tabla
