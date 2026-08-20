@@ -109,17 +109,17 @@ La investigación internacional se utiliza como benchmark operativo, no como pru
 
 **China.** La evidencia disponible para 2025 muestra un mercado con mayor actividad de usuarios núcleo y una fuerte preferencia por productos de menor compromiso y mayor flexibilidad; el mercado está polarizando hacia experiencias de mayor valor. Es una señal de diseño comercial, no una metodología de ventas que deba copiarse literalmente.
 
-## Cómo se despliega cada aprendizaje en Sports World
+## Matriz comparativa y despliegue en Sports World
 
-| Mercado | Cadena de referencia | Principio transferible | Aplicación en Sports World |
+| Mercado y cadena | Filosofía comercial y diagnóstico | Cierre dominante y monetización secundaria | Aplicación en Sports World |
 |---|---|---|---|
-| Estados Unidos | Equinox | Descubrimiento estructurado antes de mostrar el club | El cuestionario y el brief ya cumplen esta función; la venta presencial la hereda |
-| Reino Unido | Third Space | El club como ecosistema integrado, no como lista de amenidades sueltas | Recorrido prescriptivo (§11): se muestra lo que responde al objetivo, no el inventario |
-| Brasil | Bodytech / Bio Ritmo | Calidez relacional y acompañamiento como argumento central | Hospitalidad consultiva (Componente 4, §19) |
-| Japón | Renaissance | Anticipar la necesidad; especialización técnica como diferenciador | Estándar de servicio del recorrido; especialización queda fuera del alcance actual |
-| Dubái | Embody Fitness | Servicio tipo concierge: nombre, preferencias, anticipación | Estándar de hospitalidad del recorrido, sin el modelo de ticket alto |
-| Australia | Regulación ACCC | Transparencia contractual como riesgo de reputación, no solo legal | Regla no negociable 3 (§16) |
-| China | Mercado 2025 | Polarización hacia mayor flexibilidad y mayor valor | Señal de diseño de portafolio a mediano plazo, no método de venta inmediato |
+| **Estados Unidos** · Equinox | Transformación de estilo de vida de alto rendimiento; entrevista de descubrimiento en privado antes del recorrido | Cierre por asunción y cierre suave; entrenamiento personal y servicios de spa como segunda línea de ingreso | El cuestionario y el brief ya son ese descubrimiento; la venta presencial lo hereda. Las dos técnicas de cierre se adoptan en la Fase 4 (§12) |
+| **Reino Unido** · Third Space | El club como "tercer espacio" del ejecutivo urbano; mapeo de hábitos y micro-estudios | Venta por pertenencia a una comunidad exclusiva; nutrición, gastronomía saludable y spa | Recorrido prescriptivo (§11): se muestra el ecosistema que responde al objetivo, no el inventario |
+| **Brasil** · Bodytech / Bio Ritmo | Bienestar relacional: la visita como "la mejor parte del día"; indagación del estilo de vida completo | Cierre relacional sobre empatía y confianza; programas multidisciplinarios | Hospitalidad consultiva (Componente 4, §19) y trabajo coordinado asesor–equipo técnico desde el primer contacto |
+| **Japón** · Renaissance | Hospitalidad que anticipa la necesidad; evaluación de condición física y perfil de salud integral | Cierre protocolar con inducción a reglamentos; rehabilitación, programas corporativos | Estándar de servicio del recorrido y traspaso formal al equipo técnico (§13); la especialización clínica queda fuera del alcance actual |
+| **Dubái** · Embody Fitness | Consultoría privada de alto valor: diagnóstico biométrico y médico antes del acceso | Paquetes cerrados de transformación; nutrición médica y coaching 1:1 | Estándar concierge del recorrido (nombre, preferencias, anticipación), sin el modelo de ticket alto ni promesas de resultado (regla 2, §16) |
+| **Australia** · Virgin Active / Fitness First | Flujo comercial sin fricción: autoselección digital y flexibilidad modular; vigilancia regulatoria activa (ACCC) | Cierre ágil con opciones modulares; accesos multiclub y grupos reducidos | La fricción mínima ya la aporta el sistema digital; la transparencia contractual es la regla no negociable 3 (§16) |
+| **China** · Mercado 2025 | Polarización hacia mayor flexibilidad y mayor valor | — | Señal de diseño de portafolio a mediano plazo, no método de venta inmediato |
 
 # 8. El proceso comercial recomendado
 | Fase | Objetivo | Cómo se ejecuta | Herramienta | No hacer |
@@ -136,9 +136,23 @@ La investigación internacional se utiliza como benchmark operativo, no como pru
 El objetivo del primer contacto no es vender la membresía. Es impedir que el prospecto se pierda y obtener la información mínima que permite avanzar. La versión corta del cuestionario debe capturar objetivo, disponibilidad, ubicación y composición del núcleo cuando aplique.
 Regla operativa: el sistema debe intentar atención inmediata y el indicador rector debe ser tiempo al primer contacto. El asesor no puede depender de responder manualmente cada lead en tiempo real; el sistema debe absorber la velocidad y entregar al asesor un prospecto mejor calificado.
 
+Cuando el primer contacto sí es humano, el guion tiene cuatro movimientos y una sola meta — la cita, no la venta:
+
+1. Saludar y confirmar la solicitud: el prospecto pidió información y alguien la registró.
+2. Preguntar en directo cuál es el objetivo principal de salud o entrenamiento que él o su familia quieren lograr en esta etapa.
+3. Validar esa necesidad con el programa que la responde — el horario ejecutivo, FitKidz, la clase o la zona correspondiente — sin entrar en tarifas.
+4. Ofrecer dos alternativas concretas de fecha y hora para la visita, no una pregunta abierta de "¿cuándo puedes?".
+
 # 10. Fase 2 — Descubrimiento consultivo
-La entrevista presencial no debe repetir el cuestionario. El asesor llega con el brief, confirma lo que ya sabe y profundiza donde existe incertidumbre. El cliente debe hablar más que el asesor. El cierre de esta fase es una síntesis: 'Esto es lo que entendí de ti; ¿es correcto?'
-El asesor debe salir de la conversación con cinco respuestas:
+La entrevista se conduce en un espacio de consultoría privado, antes de caminar el club, sobre una ficha diagnóstica única para toda la red — "Conociéndote" — que el asesor llena a la vista del cliente: tomar notas visibles convierte el diagnóstico en un acto compartido, no en un interrogatorio. Dura entre 15 y 20 minutos cuando el prospecto llegó sin cuestionario; con el brief en mano es más corta, porque no se repite nada de lo que el cliente ya contestó: se confirma y se profundiza donde hay incertidumbre. El cliente debe hablar más que el asesor.
+
+La conversación se organiza en tres ejes:
+
+1. **Historial y experiencias previas.** Si perteneció a otro club y qué le impidió, en concreto, sostener la constancia o llegar al resultado.
+2. **Motivación de fondo.** Qué cambiaría en su energía diaria, su manejo del estrés y su vida familiar si lograra su objetivo.
+3. **Logística y núcleo.** Sus horarios y rutina semanal, con quién va a entrenar, y las actividades deportivas o artísticas que buscan sus hijos.
+
+El cierre de la fase es una síntesis en voz alta — "esto es lo que entendí de ti; ¿es correcto?" — y el anuncio de que el recorrido que sigue se enfocará exactamente en las áreas que responden a esas prioridades. El asesor debe salir de la conversación con cinco respuestas:
 
 1. Qué quiere sentir y qué quiere lograr.
 2. Qué le impidió lograrlo antes.
@@ -147,16 +161,36 @@ El asesor debe salir de la conversación con cinco respuestas:
 5. Qué restricciones o condiciones deben considerarse antes de recomendar actividades.
 
 # 11. Fase 3 — Recorrido prescriptivo
-El recorrido debe demostrar la recomendación. Cada parada necesita una razón. Si el cliente quiere bajar de peso, se muestran las áreas y clases que realmente utilizará; si busca rendimiento, se demuestra el ecosistema de entrenamiento relevante; si viene con hijos, FitKidz se convierte en parte de la decisión.
+El recorrido debe demostrar la recomendación. Cada parada necesita una razón. Si el cliente quiere bajar de peso, se muestran las áreas y clases que realmente utilizará; si busca rendimiento, se demuestra el ecosistema de entrenamiento relevante.
+
+Además de qué se muestra, importa cómo se vive. El asesor gestiona tres momentos de forma deliberada:
+
+1. **Demostración técnica.** Presenta al visitante con un entrenador certificado de piso — o con un profesor de FitKidz cuando hay hijos — para una conversación breve, de un par de minutos, que acredite la solvencia del equipo. Los instructores y la atención son los dos factores de mayor peso en la lealtad medida en la propia base de socios (estudio de 2014, §21).
+2. **Higiene y mantenimiento.** Señala de paso la frecuencia de limpieza de las áreas y el estado del equipo; las instalaciones son el segundo factor de esa misma medición, y solo cuentan si el cliente las percibe cuidadas.
+3. **Entorno.** Hace una pausa en un estudio o área de descanso para que el cliente registre la ventilación, la iluminación y la acústica — la atmósfera que el club de bajo costo no puede ofrecer.
+
+Cuando el prospecto viene con hijos, FitKidz es la parada principal, no una escala: se presenta como una academia de formación deportiva —natación, taekwondo, ballet, box, danza aérea, escalada— que desarrolla autoconfianza, disciplina y trabajo en equipo, y se procura que la familia observe una clase en operación para comprobar la calidad de la instrucción y la seguridad del área.
+
 La experiencia premium no se construye mostrando más. Se construye eliminando lo irrelevante y haciendo visible lo que importa.
 
 # 12. Fase 4 — Prescripción, valor, precio y cierre
 El asesor debe presentar una recomendación principal y, cuando exista una decisión real, una alternativa. El precio se presenta de forma directa, completa y sin disculparse. La comparación no debe ser contra una membresía abstracta: debe ser contra la alternativa que el cliente realmente está considerando.
 
-Para este punto, el cliente ya vio la infraestructura resolver su caso concreto en el recorrido (Fase 3): el precio no se defiende desde cero, se ancla en lo que ya se demostró. La lógica de respuesta a precio es: 1) diagnosticar qué dimensión de valor quedó sin resolver; 2) demostrar esa dimensión, apoyándose en lo ya visto en el recorrido; 3) revisar si otro plan del portafolio vigente encaja mejor; 4) aplicar únicamente condiciones autorizadas.
+La fase abre con un resumen de validación: el prospecto confirma, en sus palabras, que lo que vio responde a lo que necesita él y su familia. Esa confirmación previa desactiva la objeción de costo antes de mostrar una sola cifra. La tarifa se presenta entonces como solución integral —acceso, disciplinas, evaluación inicial, programas infantiles cuando aplican—, nunca como un número aislado.
+
+Para pedir la decisión, el método estandariza dos técnicas, ambas sin presión:
+
+- **Cierre por asunción.** Verificada la cobertura, la conversación pasa directo a la activación: "entonces, ¿arrancamos esta semana o el lunes?".
+- **Cierre suave.** Se pregunta si, con lo revisado, éste es el entorno donde el cliente se ve consolidando sus hábitos de salud a largo plazo.
+
+Para este punto, el cliente ya vio la infraestructura resolver su caso concreto en el recorrido (Fase 3): el precio no se defiende desde cero, se ancla en lo que ya se demostró. La lógica de respuesta a precio es: 1) diagnosticar qué dimensión de valor quedó sin resolver; 2) demostrar esa dimensión, apoyándose en lo ya visto en el recorrido; 3) revisar si otro plan del portafolio vigente encaja mejor; 4) aplicar únicamente condiciones autorizadas. Ante "supera mi presupuesto", el desglose se hace por día y por integrante beneficiado, y se contrasta contra lo que costaría contratar por separado la natación de los hijos, un gimnasio individual y un entrenador particular — con la ventaja de profesionales certificados e instalaciones integradas en un solo lugar.
 
 # 13. Fase 5 — Activación y primeros 90 días
-El cierre comercial no debe considerarse completo hasta que el nuevo socio tenga un siguiente paso concreto: evaluación o inducción, primera actividad y una ruta inicial de uso. La señal crítica es la asistencia real. Un socio que no utiliza el club durante su primera semana debe entrar a un flujo de recuperación, no esperar a la siguiente renovación.
+El cierre comercial no debe considerarse completo hasta que el nuevo socio tenga un siguiente paso concreto, y ese paso se agenda en la misma sesión de cierre: la evaluación técnica inicial con el cuerpo de entrenadores, dentro de las primeras 48 horas posteriores a la inscripción. En esa evaluación, el entrenador mide composición corporal y condición física, y diseña la rutina de arranque a partir del expediente que el descubrimiento ya generó — es el traspaso formal del equipo comercial al equipo técnico, y es lo que evita que el socio nuevo quede solo después de la firma.
+
+En esa misma sesión de cierre, el asesor asiste al socio en la descarga y configuración de la aplicación de Sports World: reservar clases, dar seguimiento a sus evaluaciones y explorar el catálogo desde el primer día refuerza el hábito de uso, y deja abierto el canal por el que después se ofrecen pases de invitado, el Studio y el entrenamiento personalizado.
+
+La señal crítica es la asistencia real. Un socio que no utiliza el club durante su primera semana debe entrar a un flujo de recuperación, no esperar a la siguiente renovación.
 
 # 14. Fase 6 — Reactivación, referidos y expansión
 Una vez que existe uso real, el asesor y el equipo del club pueden ampliar la relación: activar pases de invitado con nombre y fecha, incorporar pareja o amigos, explorar FitKidz cuando corresponda y recomendar ALPHA u otros servicios existentes cuando respondan al objetivo.
@@ -228,6 +262,8 @@ No se recomienda fijar metas nacionales nuevas hasta conciliar la línea base re
 
 La Academia debe certificar comportamiento observable: role plays, escucha, calidad del brief, prescripción, manejo de objeciones, registro en CRM y seguimiento. Un examen teórico por sí solo no demuestra dominio del proceso.
 
+El resultado de la certificación es un cambio de perfil: del asesor de mostrador que recita un guion, al **consultor de bienestar** que orienta. La formación que produce ese cambio cubre tres terrenos: la técnica de indagación —preguntas abiertas y escucha activa para llegar al motivador real—, la solvencia sobre la infraestructura —las 50 disciplinas, la estructura formativa de FitKidz, el portafolio vigente—, y el manejo de objeciones como acompañamiento: la objeción no es un rechazo, es la barrera concreta de tiempo o presupuesto que el consultor ayuda a resolver para que el cliente priorice su salud y la de su familia.
+
 # 20. Roadmap recomendado
 
 | Horizonte | Prioridad |
@@ -235,7 +271,7 @@ La Academia debe certificar comportamiento observable: role plays, escucha, cali
 | Semanas 1–2 · Validación | Cerrar con Sports World la taxonomía, la segmentación por tipo de club, el portafolio vigente en el CRM y la política de cancelación, y fijar el mínimo aprobatorio de acreditación. Cierra la Etapa 1 de la Academia; condición para producir contenido. |
 | Semanas 3–8 · Producción de la Fase 1 | Convertir los siete componentes de este método en las lecciones acreditables de la Academia, con progresión por niveles. Corre en paralelo al lanzamiento del sitio (Proyecto A) y del BDS (Proyecto B), que entregan el cuestionario, el brief y el motor de BES sobre los que se apoya el método. |
 | Semanas 7–10 · Fase 2 y despliegue | Role-play con agente de voz sobre el motor de BES ya operativo; calibración de la línea base con las métricas reales del CRM por asesor; arranque del despliegue por grupos y calendario regional. Cierra las 10 semanas del Addendum. |
-| Después del despliegue | Repasos calendarizados a 7, 30 y 90 días por asesor; práctica semanal de mantenimiento; comparación de cohortes certificadas contra no certificadas antes de fijar metas de conversión. |
+| Después del despliegue | Repasos calendarizados a 7, 30 y 90 días por asesor; práctica semanal de mantenimiento; comparación de cohortes certificadas contra no certificadas antes de fijar metas de conversión; vinculación de la metodología con el esquema de incentivos y comisiones una vez conciliada la línea base. |
 | Continuo | Auditoría comercial (mystery shopper); motor de aprendizaje continuo con validación conjunta antes de producción; nuevos productos solo después de estabilizar el método. |
 
 
