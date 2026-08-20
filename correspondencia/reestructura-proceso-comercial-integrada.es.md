@@ -45,6 +45,9 @@ La arquitectura debe funcionar como un solo sistema de ventas, no como tres proy
 Hilo conductor: mismo cliente → mismo diagnóstico → misma taxonomía → misma recomendación → misma información en CRM → misma conversación presencial → misma activación.
 
 # 5. El idioma único del cliente
+
+*Demo en vivo del cuestionario: https://erictoled564.github.io/SW-Business-Development-System/demo/index.html (versión móvil: /demo/movil.html)*
+
 **Objetivo emocional** (una respuesta):
 
 - Desconectarme del trabajo y la rutina
@@ -83,19 +86,32 @@ Cinco dimensiones que explican por qué elegir Sports World frente a la alternat
 Esta estructura evita dos errores frecuentes: vender una membresía individual cuando el cliente realmente compra una solución familiar, y vender Uniclub a alguien cuya rutina ocurre entre casa y trabajo. La recomendación debe surgir de los datos del cliente, no de la costumbre del asesor.
 
 # 7. Benchmark internacional: qué tomar y qué no copiar
+
 La investigación internacional se utiliza como benchmark operativo, no como prueba de causalidad. Las prácticas transferibles se incorporan solo cuando son compatibles con el portafolio, la operación y la regulación de México.
 
-| Mercado | Aprendizaje | Aplicación en Sports World |
-|---|---|---|
-| Estados Unidos | Equinox / operadores premium | Descubrimiento estructurado; relación de largo plazo; asesor como experto de experiencia. |
-| Reino Unido | Third Space | El club se presenta como ecosistema: entrenamiento, clases, recuperación, amenities y servicios complementarios. |
-| Brasil | Bodytech / Bio Ritmo | Acompañamiento, atención personalizada, comunidad y programas asociados al objetivo. |
-| Japón | Renaissance | Servicio consistente, herramientas digitales, entrenamiento personalizado y continuidad. |
-| Australia | Fitness industry / ACCC | Fricción baja y alta transparencia comercial; cuidado con mensajes contractuales ambiguos. |
-| Dubái | Embody Fitness / premium high-ticket | Diagnóstico, personalización y servicio tipo concierge. |
-| China | Mercado 2025 | Mayor actividad de usuarios núcleo y fuerte tendencia hacia consumo flexible y de menor compromiso; el mercado está polarizando hacia experiencias de mayor valor. |
+**Estados Unidos.** El segmento de ultra-lujo, con Equinox como referente, gestiona la membresía como la adopción de un estilo de vida de alto rendimiento: la venta no arranca con el recorrido, sino con un descubrimiento estructurado en privado antes de mostrar el club. Lo verificable de este mercado es un caso documentado de Equinox con la plataforma Braze: un incremento de 150% en socios que se relacionan con el club tanto en el club como en línea. La entrevista de descubrimiento de 20 a 30 minutos que suele atribuirse a Equinox como técnica propia no tiene esa fuente confirmada; es una práctica de venta consultiva del sector, no una exclusiva de esa cadena — se adopta el principio (descubrir antes de mostrar), no la atribución.
 
-Nota sobre China: la evidencia disponible para 2025 muestra un mercado con mayor actividad de usuarios núcleo y una fuerte preferencia por productos de menor compromiso y mayor flexibilidad. Esto es una señal de diseño comercial, no una metodología de ventas que deba copiarse literalmente.
+**Reino Unido.** Third Space, en Londres, integra micro-estudios dentro del club insignia —Reformer Pilates, zona funcional Eleiko con pista de trineo, sauna de sal del Himalaya— y los presenta como parte de un mismo ecosistema, no como amenidades sueltas. El resultado documentado: +30% de ingreso por socio, atribuido por la propia marca a poder de precio y venta de complementos, no a descuento.
+
+**Brasil.** Bodytech y Bio Ritmo (Grupo Smart Fit) desmantelaron el recorrido mecánico de mostrar pesas y entregar tarifas: la fuerza de ventas trabaja coordinada con el equipo técnico desde el primer contacto, y el cliente premium se define explícitamente como el que paga más a cambio de acompañamiento. El principio transferible es la calidez relacional como argumento de venta, no una técnica puntual.
+
+**Japón.** Renaissance opera bajo el principio de anticipar la necesidad del cliente sin tácticas de persuasión agresivas, con un componente verificable de especialización técnica: 86 instructores certificados en ejercicio para pacientes con cáncer. Es el ejemplo de hasta dónde puede llegar la especialización del equipo como argumento comercial — no aplicable a Sports World sin invertir primero en esa certificación (ver Anexo de oportunidades de producto nuevo, si se elabora por separado).
+
+**Dubái.** Embody Fitness opera un modelo de consultoría de alto costo: consulta diagnóstica previa con equipo multidisciplinario, capacidad limitada, sin venta masiva. El principio transferible para Sports World no es el ticket alto —incompatible con el portafolio actual—, sino el estándar de servicio: saludar por nombre, registrar preferencias, anticipar necesidades.
+
+**Australia.** El mercado se distingue por la fricción digital mínima y, sobre todo, por la vigilancia regulatoria activa: el regulador de competencia y consumo (ACCC) advirtió formalmente a los gimnasios contra publicidad de "sin contratos" engañosa, con sanciones de hasta 1.1 millones de dólares por infracción. Es la referencia directa detrás de la regla no negociable de transparencia contractual (§16).
+
+**China.** La evidencia disponible para 2025 muestra un mercado con mayor actividad de usuarios núcleo y una fuerte preferencia por productos de menor compromiso y mayor flexibilidad; el mercado está polarizando hacia experiencias de mayor valor. Es una señal de diseño comercial, no una metodología de ventas que deba copiarse literalmente.
+
+| Mercado | Cadena de referencia | Principio transferible | Aplicación en Sports World |
+|---|---|---|---|
+| Estados Unidos | Equinox | Descubrimiento estructurado antes de mostrar el club | El cuestionario y el brief ya cumplen esta función; la venta presencial la hereda |
+| Reino Unido | Third Space | El club como ecosistema integrado, no como lista de amenidades sueltas | Recorrido prescriptivo (§11): se muestra lo que responde al objetivo, no el inventario |
+| Brasil | Bodytech / Bio Ritmo | Calidez relacional y acompañamiento como argumento central | Hospitalidad consultiva (Componente 4, §19) |
+| Japón | Renaissance | Anticipar la necesidad; especialización técnica como diferenciador | Estándar de servicio del recorrido; especialización queda fuera del alcance actual |
+| Dubái | Embody Fitness | Servicio tipo concierge: nombre, preferencias, anticipación | Estándar de hospitalidad del recorrido, sin el modelo de ticket alto |
+| Australia | Regulación ACCC | Transparencia contractual como riesgo de reputación, no solo legal | Regla no negociable 3 (§16) |
+| China | Mercado 2025 | Polarización hacia mayor flexibilidad y mayor valor | Señal de diseño de portafolio a mediano plazo, no método de venta inmediato |
 
 # 8. El proceso comercial recomendado
 | Fase | Objetivo | Cómo se ejecuta | Herramienta | No hacer |
@@ -189,6 +205,9 @@ La conclusión es importante: antes de crear nuevos productos, Sports World debe
 No se recomienda fijar metas nacionales nuevas hasta conciliar la línea base real del CRM. La dispersión reportada por campo es demasiado amplia para utilizarla como objetivo corporativo sin normalizar primero definiciones, fuentes y denominadores.
 
 # 19. La Academia como sistema de certificación
+
+Esta tabla es, en la práctica, el índice del manual de ventas: cada fila es un módulo que la Academia (Proyecto C) convierte en lección acreditable para los 200 asesores, sobre la cadencia real de sus 10 semanas (§20).
+
 | Componente | Competencia a certificar |
 |---|---|
 | 1. Clasificación de objetivos | Dominar los dos ejes de objetivo y convertirlos en preguntas naturales. |
@@ -201,19 +220,7 @@ No se recomienda fijar metas nacionales nuevas hasta conciliar la línea base re
 
 La Academia debe certificar comportamiento observable: role plays, escucha, calidad del brief, prescripción, manejo de objeciones, registro en CRM y seguimiento. Un examen teórico por sí solo no demuestra dominio del proceso.
 
-# 20. Riesgos de implementación
-Convertir la metodología en un guion rígido. El estándar debe ser la secuencia y la calidad de la información; la conversación debe sonar mexicana, humana y natural.
-
-- Usar cifras históricas como metas actuales. Los datos de lealtad, ocupación y deserción de 2014 deben actualizarse antes de utilizarlos como KPI corporativo.
-- Presentar afirmaciones de terceros como hechos universales. Las mejores prácticas sirven como benchmark; no prueban que una táctica produzca el mismo resultado en Sports World.
-- Copiar tácticas de lujo que requieren productos que Sports World no tiene. La reestructura debe explotar primero el portafolio vigente.
-- Medir al asesor solo por cierre. Eso incentiva ventas de corto plazo y puede empeorar retención.
-- Seguir permitiendo que el asesor opere desde WhatsApp personal. El proyecto debe migrar la relación a canales oficiales y trazables.
-- Prometer resultados físicos o clínicos. El asesor vende acompañamiento, plan y experiencia; no debe hacer promesas médicas o de resultados garantizados.
-
-# 21. Roadmap recomendado
-
-El vehículo de implementación ya existe: la Academia (Proyecto C) opera en 10 semanas desde la firma de su Addendum, y el sitio con BES (Proyecto A) y el BDS (Proyecto B) corren 8 semanas en paralelo. El roadmap de este método se ancla a esas fechas, no a un calendario genérico:
+# 20. Roadmap recomendado
 
 | Horizonte | Prioridad |
 |---|---|
@@ -221,21 +228,10 @@ El vehículo de implementación ya existe: la Academia (Proyecto C) opera en 10 
 | Semanas 3–8 · Producción de la Fase 1 | Convertir los siete componentes de este método en las lecciones acreditables de la Academia, con progresión por niveles. Corre en paralelo al lanzamiento del sitio (Proyecto A) y del BDS (Proyecto B), que entregan el cuestionario, el brief y el motor de BES sobre los que se apoya el método. |
 | Semanas 7–10 · Fase 2 y despliegue | Role-play con agente de voz sobre el motor de BES ya operativo; calibración de la línea base con las métricas reales del CRM por asesor; arranque del despliegue por grupos y calendario regional. Cierra las 10 semanas del Addendum. |
 | Después del despliegue | Repasos calendarizados a 7, 30 y 90 días por asesor; práctica semanal de mantenimiento; comparación de cohortes certificadas contra no certificadas antes de fijar metas de conversión. |
-| Continuo | Auditoría comercial (mystery shopper); motor de aprendizaje continuo con validación conjunta antes de producción; nuevos productos solo después de estabilizar el método (ver riesgos, §20). |
+| Continuo | Auditoría comercial (mystery shopper); motor de aprendizaje continuo con validación conjunta antes de producción; nuevos productos solo después de estabilizar el método. |
 
 
-# 22. Correcciones clave respecto al borrador anterior
-Se elimina el tono de 'manual genérico de fitness' y se vuelve a poner el proyecto digital como columna vertebral del proceso.
-
-- Se separan hechos internos, benchmarks externos e inferencias; no se presentan prácticas extranjeras como garantías de resultado.
-- Se incorpora China como mercado de aprendizaje, pero sin inventar una metodología de ventas donde la evidencia disponible no la demuestra.
-- Se reemplaza la idea de 'tour completo' por recorrido prescriptivo: menos áreas, más relevancia.
-- Se convierte la objeción de precio en un problema de diagnóstico de valor antes que en un problema de negociación.
-- Se mantiene la lógica de tres capas —objetivo, núcleo, geografía/horario— porque es el puente más claro entre el cuestionario digital y la venta presencial.
-- Se fortalece la activación y los primeros 90 días: la venta se evalúa por la capacidad de producir uso y permanencia, no únicamente por la firma.
-- Se incorpora una disciplina explícita de transparencia contractual y de no prometer resultados, alineada con riesgos regulatorios observados en mercados maduros.
-
-# 23. Fuentes y nivel de evidencia
+# 21. Fuentes y nivel de evidencia
 **Fuentes internas del proyecto:**
 
 - Documentación del proyecto digital de Sports World: Arquitectura de la Experiencia, cuestionario, BES, brief y funnel.

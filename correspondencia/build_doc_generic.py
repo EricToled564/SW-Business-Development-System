@@ -28,6 +28,8 @@ def parchar_odt(odt: pathlib.Path) -> None:
 
     xml = tmp / "content.xml"
     s = xml.read_text(encoding="utf-8")
+    estilos_xml = tmp / "styles.xml"
+    es = estilos_xml.read_text(encoding="utf-8")
 
     pad = ('fo:padding-top="0.06cm" fo:padding-bottom="0.06cm" '
            'fo:padding-left="0.12cm" fo:padding-right="0.12cm"')
@@ -44,7 +46,17 @@ def parchar_odt(odt: pathlib.Path) -> None:
     s = s.replace('table:style-name="TableHeaderRowCell"', 'table:style-name="CellH"')
     s = s.replace('table:style-name="TableRowCell"', 'table:style-name="CellB"')
 
+    # Regla de paginación: un encabezado nunca queda huérfano al pie de página —
+    # arrastra consigo el bloque que le sigue (párrafo o primera fila de tabla).
+    # El estilo de encabezado vive en styles.xml (no en content.xml) y no trae
+    # <style:paragraph-properties>; se inserta el elemento completo.
+    es = re.sub(
+        r'(style:name="(?:Heading_20_1|Heading_20_2)"[^>]*>)(\s*<style:text-properties)',
+        r'\1<style:paragraph-properties fo:keep-with-next="always"/>\2',
+        es)
+
     xml.write_text(s, encoding="utf-8")
+    estilos_xml.write_text(es, encoding="utf-8")
 
     odt.unlink()
     with zipfile.ZipFile(odt, "w") as z:
