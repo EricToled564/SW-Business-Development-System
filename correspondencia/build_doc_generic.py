@@ -172,8 +172,17 @@ def parchar_odt(odt: pathlib.Path, leyendas: dict | None = None) -> None:
                   '</style:style>' if m.group(2) == "/>" else m.group(0),
         es, count=1)
 
-    s, estilos_atomicos = inyectar_leyendas(s, leyendas or {})
-    s = marcar_tablas_atomicas(s, estilos_atomicos)
+    # Regla de paginación: ninguna tabla se parte dejando el encabezado (o
+    # unas pocas filas) huérfano y el resto de la página en blanco. Se aplica
+    # may-break-between-rows="false" a TODAS las tablas del documento, no
+    # solo a las que llevan leyenda fusionada: si la tabla cabe completa en
+    # el espacio restante, se queda; si no, se mueve entera a la siguiente
+    # página. Si la tabla es más alta que una página completa, el renderizador
+    # la parte de todos modos (no hay forma de evitarlo), así que esto no
+    # afecta a las tablas largas de varias páginas (§3, §8, §18).
+    s, _ = inyectar_leyendas(s, leyendas or {})
+    todas_las_tablas = sorted(set(re.findall(r'<table:table\s[^>]*table:style-name="([^"]+)"', s)))
+    s = marcar_tablas_atomicas(s, todas_las_tablas)
 
     xml.write_text(s, encoding="utf-8")
     estilos_xml.write_text(es, encoding="utf-8")
