@@ -31,7 +31,7 @@ En términos de negocio: Sports World debe pasar de una lógica de inventario �
 | 3.0/5 | presentación de valor: habilidad más débil |
 | 4.0/5 | cierre y seguimiento: habilidad más fuerte |
 
-La señal más importante no es la dispersión de conversiones por sí sola. Es la combinación: el equipo reporta mayor fortaleza en cierre que en presentación de valor, mientras el precio aparece como objeción prácticamente universal. Eso apunta a una falla aguas arriba del cierre: descubrimiento insuficiente y valor mal articulado.
+La señal más importante no es la dispersión de conversiones por sí sola. Es la combinación: el equipo reporta mayor fortaleza en cierre que en presentación de valor, mientras el precio aparece como objeción prácticamente universal. Eso apunta a una falla anterior al cierre, no en el cierre mismo: descubrimiento insuficiente y valor mal articulado.
 
 # 4. Arquitectura del sistema comercial
 La arquitectura debe funcionar como un solo sistema de ventas, no como tres proyectos desconectados:

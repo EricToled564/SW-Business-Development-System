@@ -55,6 +55,20 @@ def parchar_odt(odt: pathlib.Path) -> None:
         r'\1<style:paragraph-properties fo:keep-with-next="always"/>\2',
         es)
 
+    # Regla de paginación: un párrafo nunca se corta entre dos páginas — el único
+    # corte legítimo es después de un punto y aparte, es decir, entre párrafos.
+    # "Text_20_body" (párrafo base) ya trae <style:paragraph-properties>: se le
+    # añade fo:keep-together. Los estilos de lista (P1..P6) heredan de él por
+    # style:parent-style-name, así que no hace falta tocarlos aparte.
+    def _inyectar_keep_together(m: re.Match) -> str:
+        cabeza, atributos = m.group(1), m.group(2).rstrip("/").rstrip()
+        return f'{cabeza}{atributos} fo:keep-together="always"/>'
+
+    es = re.sub(
+        r'(style:name="Text_20_body"[^>]*>\s*<style:paragraph-properties\b)([^>]*)/?>',
+        _inyectar_keep_together,
+        es, count=1)
+
     xml.write_text(s, encoding="utf-8")
     estilos_xml.write_text(es, encoding="utf-8")
 
