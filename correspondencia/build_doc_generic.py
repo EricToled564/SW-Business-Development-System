@@ -21,7 +21,98 @@ li { margin:0 0 3pt 0; }
 """
 
 
-def parchar_odt(odt: pathlib.Path) -> None:
+def extraer_leyendas(md_text: str):
+    """Quita las líneas '<!--CAPTION:texto-->' que preceden a una tabla y
+    devuelve (markdown_limpio, {índice_de_tabla: texto}). El índice es el
+    orden de aparición de la tabla en el documento (0-based; cada bloque de
+    líneas consecutivas que empiezan con "|" cuenta como una tabla).
+
+    Existe porque un párrafo suelto justo antes de una tabla no se garantiza
+    pegado a ella en todos los lectores de .doc (LibreOffice sí lo respeta,
+    Word no siempre): se fusiona el texto como primera fila de la propia
+    tabla, que es la única unidad de paginación que todos los lectores
+    respetan sin ambigüedad.
+    """
+    leyendas = {}
+    limpio = []
+    indice_tabla = -1
+    dentro_tabla = False
+    pendiente = None
+    for ln in md_text.split("\n"):
+        m = re.match(r"^<!--CAPTION:(.*)-->$", ln.strip())
+        if m:
+            pendiente = m.group(1)
+            continue
+        es_tabla = ln.startswith("|")
+        if es_tabla and not dentro_tabla:
+            indice_tabla += 1
+            if pendiente is not None:
+                leyendas[indice_tabla] = pendiente
+                pendiente = None
+        dentro_tabla = es_tabla
+        limpio.append(ln)
+    return "\n".join(limpio), leyendas
+
+
+def inyectar_leyendas(content_xml: str, leyendas: dict) -> str:
+    """Antepone una fila fusionada (colspan) como primera fila de las tablas
+    indicadas, con el texto de su leyenda. Devuelve también, vía atributo en
+    la función, los table:style-name que quedaron marcados para no dividirse
+    entre páginas (se resuelve aparte, en marcar_tablas_atomicas)."""
+    if not leyendas:
+        return content_xml, []
+    # "<table:table\b" también coincide con <table:table-row, <table:table-cell
+    # y <table:table-column (el guion cuenta como límite de palabra). Se exige
+    # que a "table:table" le siga espacio o ">", que solo ocurre en la
+    # etiqueta real de apertura de la tabla.
+    partes = re.split(r"(<table:table(?=[\s>]))", content_xml)
+    salida = [partes[0]]
+    tabla_i = -1
+    estilos_atomicos = []
+    j = 1
+    while j < len(partes):
+        salida.append(partes[j])  # "<table:table"
+        resto = partes[j + 1]
+        tabla_i += 1
+        if tabla_i in leyendas:
+            m_estilo = re.search(r'table:style-name="([^"]+)"', resto)
+            if m_estilo:
+                estilos_atomicos.append(m_estilo.group(1))
+            texto = leyendas[tabla_i].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+            m_cols = re.search(r'(?:<table:table-column\b[^>]*/>\s*){1,}', resto)
+            n_cols = len(re.findall(r"<table:table-column\b", m_cols.group(0))) if m_cols else 2
+            fin_cols = m_cols.end() if m_cols else 0
+            cubiertas = "<table:covered-table-cell/>" * (n_cols - 1)
+            fila = (
+                '<table:table-row table:style-name="RowKeep">'
+                f'<table:table-cell table:style-name="CellH" table:number-columns-spanned="{n_cols}">'
+                f'<text:p text:style-name="Table_20_Heading">{texto}</text:p>'
+                '</table:table-cell>' + cubiertas +
+                '</table:table-row>'
+            )
+            resto = resto[:fin_cols] + fila + resto[fin_cols:]
+        salida.append(resto)
+        j += 2
+    return "".join(salida), estilos_atomicos
+
+
+def marcar_tablas_atomicas(styles_or_content: str, nombres_estilo: list) -> str:
+    """A las tablas con leyenda fusionada se les prohíbe partirse entre
+    filas (may-break-between-rows="false"): deben moverse como un bloque
+    único a la siguiente página si no caben, nunca dejar la leyenda o el
+    encabezado varados. El estilo de la tabla vive en la misma content.xml
+    que pandoc genera (automatic-styles), no en styles.xml."""
+    s = styles_or_content
+    for nombre in nombres_estilo:
+        s = re.sub(
+            rf'(style:name="{re.escape(nombre)}" style:family="table">\s*<style:table-properties\b)([^>]*)/?>',
+            lambda m: f'{m.group(1)}{m.group(2).rstrip("/").rstrip()} style:may-break-between-rows="false"/>',
+            s, count=1,
+        )
+    return s
+
+
+def parchar_odt(odt: pathlib.Path, leyendas: dict | None = None) -> None:
     tmp = pathlib.Path(tempfile.mkdtemp())
     with zipfile.ZipFile(odt) as z:
         z.extractall(tmp)
@@ -81,6 +172,9 @@ def parchar_odt(odt: pathlib.Path) -> None:
                   '</style:style>' if m.group(2) == "/>" else m.group(0),
         es, count=1)
 
+    s, estilos_atomicos = inyectar_leyendas(s, leyendas or {})
+    s = marcar_tablas_atomicas(s, estilos_atomicos)
+
     xml.write_text(s, encoding="utf-8")
     estilos_xml.write_text(es, encoding="utf-8")
 
@@ -103,14 +197,14 @@ def soffice(destino: str, archivo: pathlib.Path, salida: pathlib.Path) -> None:
 def main(entrada: pathlib.Path, salida: pathlib.Path) -> None:
     trabajo = pathlib.Path(tempfile.mkdtemp())
     html = trabajo / "doc.html"
-    cuerpo = markdown.markdown(entrada.read_text(encoding="utf-8"),
-                                extensions=["tables", "sane_lists"])
+    md_limpio, leyendas = extraer_leyendas(entrada.read_text(encoding="utf-8"))
+    cuerpo = markdown.markdown(md_limpio, extensions=["tables", "sane_lists"])
     html.write_text(f'<!DOCTYPE html><html><head><meta charset="utf-8">'
                     f"<style>{CSS}</style></head><body>{cuerpo}</body></html>", encoding="utf-8")
 
     odt = trabajo / "doc.odt"
     subprocess.run(["pandoc", str(html), "-f", "html", "-t", "odt", "-o", str(odt)], check=True)
-    parchar_odt(odt)
+    parchar_odt(odt, leyendas)
 
     soffice("doc:MS Word 97", odt, trabajo)
     shutil.copy(trabajo / "doc.doc", salida)

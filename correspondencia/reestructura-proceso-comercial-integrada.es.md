@@ -39,8 +39,8 @@ La experiencia ideal se produce una sola vez y se entrega dos veces. El cliente 
 La señal más importante no es la dispersión de conversiones por sí sola. Es la combinación: el equipo reporta mayor fortaleza en cierre que en presentación de valor, mientras el precio aparece como objeción prácticamente universal. Eso apunta a una falla anterior al cierre, no en el cierre mismo: descubrimiento insuficiente y valor mal articulado.
 
 # 4. Arquitectura del sistema comercial
-La arquitectura debe funcionar como un solo sistema de ventas, no como tres proyectos desconectados:
 
+<!--CAPTION:La arquitectura debe funcionar como un solo sistema de ventas, no como tres proyectos desconectados:-->
 | Capa del proyecto | Función | Resultado |
 |---|---|---|
 | A · Experiencia digital | 148 páginas + BES de voz/texto + cuestionario | El prospecto entiende su experiencia ideal. |
@@ -70,8 +70,7 @@ Hilo conductor: mismo cliente → mismo diagnóstico → misma taxonomía → mi
 - Mejorar salud cardiovascular
 - Recuperarme de una lesión o dolor crónico
 
-Cinco dimensiones que explican por qué elegir Sports World frente a la alternativa local:
-
+<!--CAPTION:Cinco dimensiones que explican por qué elegir Sports World frente a la alternativa local:-->
 | Dimensión | Pregunta comercial |
 |---|---|
 | Comodidad y aforo | ¿El cliente quiere evitar saturación y hacer viable su rutina? |
@@ -216,8 +215,7 @@ No se recomienda fijar metas nacionales nuevas hasta conciliar la línea base re
 
 # 19. La Academia como sistema de certificación
 
-Esta tabla es, en la práctica, el índice del manual de ventas: cada fila es un módulo que la Academia (Proyecto C) convierte en lección acreditable para los 200 asesores, sobre la cadencia real de sus 10 semanas (§20).
-
+<!--CAPTION:Esta tabla es, en la práctica, el índice del manual de ventas: cada fila es un módulo que la Academia (Proyecto C) convierte en lección acreditable para los 200 asesores, sobre la cadencia real de sus 10 semanas (§20).-->
 | Componente | Competencia a certificar |
 |---|---|
 | 1. Clasificación de objetivos | Dominar los dos ejes de objetivo y convertirlos en preguntas naturales. |
