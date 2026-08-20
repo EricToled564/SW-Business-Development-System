@@ -69,6 +69,18 @@ def parchar_odt(odt: pathlib.Path) -> None:
         _inyectar_keep_together,
         es, count=1)
 
+    # "First_20_paragraph" (el párrafo que sigue a una lista o a un encabezado)
+    # declara style:parent-style-name="Text_20_body" pero SIN <style:paragraph-
+    # -properties> propio — y LibreOffice no siempre resuelve fo:keep-with-next
+    # ni fo:keep-together por esa herencia. Se le agrega el elemento explícito
+    # con las dos reglas, igual que a Text_20_body.
+    es = re.sub(
+        r'(<style:style style:name="First_20_paragraph"[^>]*?)(/?>)',
+        lambda m: m.group(1) + '>' +
+                  '<style:paragraph-properties fo:keep-with-next="always" fo:keep-together="always"/>' +
+                  '</style:style>' if m.group(2) == "/>" else m.group(0),
+        es, count=1)
+
     xml.write_text(s, encoding="utf-8")
     estilos_xml.write_text(es, encoding="utf-8")
 
