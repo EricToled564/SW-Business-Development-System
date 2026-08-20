@@ -15,6 +15,8 @@ El resultado esperado es una sola arquitectura comercial: Captación → Descubr
 La transformación propuesta no consiste en vender más agresivamente. Consiste en hacer que la infraestructura que Sports World ya posee sea comprensible y relevante para cada prospecto. El sistema digital ya está construido alrededor de una idea: el cliente declara qué quiere lograr y recibe una experiencia ideal; el asesor recibe ese mismo caso convertido en un brief. La venta presencial debe ser la continuación natural de esa experiencia, no una conversación distinta.
 En términos de negocio: Sports World debe pasar de una lógica de inventario —'esto tenemos'— a una lógica de prescripción —'esto es lo que te recomiendo y aquí está por qué'—.
 
+La experiencia ideal no es un ejercicio de personalización: es la respuesta directa a la pregunta que el cliente trae de fondo, si esto vale lo que cuesta. El cuestionario, el club recomendado, las clases y el recorrido que se derivan de él son la demostración de que la infraestructura de Sports World entra en acción para resolver el problema específico que el cliente declaró — no una promesa abstracta, sino la capacidad técnica de la red operando frente a él. Cuando el asesor llega al precio (Fase 4), el cliente ya vio esa capacidad funcionar sobre su caso; el precio se evalúa contra algo demostrado, no contra un catálogo.
+
 # 3. Evidencia interna que justifica el cambio
 | Indicador | Dato |
 |---|---|
@@ -144,7 +146,8 @@ La experiencia premium no se construye mostrando más. Se construye eliminando l
 
 # 12. Fase 4 — Prescripción, valor, precio y cierre
 El asesor debe presentar una recomendación principal y, cuando exista una decisión real, una alternativa. El precio se presenta de forma directa, completa y sin disculparse. La comparación no debe ser contra una membresía abstracta: debe ser contra la alternativa que el cliente realmente está considerando.
-La lógica de respuesta a precio es: 1) diagnosticar qué dimensión de valor quedó sin resolver; 2) demostrar esa dimensión; 3) revisar si otro plan del portafolio vigente encaja mejor; 4) aplicar únicamente condiciones autorizadas.
+
+Para este punto, el cliente ya vio la infraestructura resolver su caso concreto en el recorrido (Fase 3): el precio no se defiende desde cero, se ancla en lo que ya se demostró. La lógica de respuesta a precio es: 1) diagnosticar qué dimensión de valor quedó sin resolver; 2) demostrar esa dimensión, apoyándose en lo ya visto en el recorrido; 3) revisar si otro plan del portafolio vigente encaja mejor; 4) aplicar únicamente condiciones autorizadas.
 
 # 13. Fase 5 — Activación y primeros 90 días
 El cierre comercial no debe considerarse completo hasta que el nuevo socio tenga un siguiente paso concreto: evaluación o inducción, primera actividad y una ruta inicial de uso. La señal crítica es la asistencia real. Un socio que no utiliza el club durante su primera semana debe entrar a un flujo de recuperación, no esperar a la siguiente renovación.
