@@ -35,6 +35,7 @@ La señal más importante no es la dispersión de conversiones por sí sola. Es 
 
 # 4. Arquitectura del sistema comercial
 La arquitectura debe funcionar como un solo sistema de ventas, no como tres proyectos desconectados:
+
 | Capa del proyecto | Función | Resultado |
 |---|---|---|
 | A · Experiencia digital | 148 páginas + BES de voz/texto + cuestionario | El prospecto entiende su experiencia ideal. |
@@ -60,7 +61,9 @@ Hilo conductor: mismo cliente → mismo diagnóstico → misma taxonomía → mi
 - Mejorar desempeño atlético
 - Mejorar salud cardiovascular
 - Recuperarme de una lesión o dolor crónico
+
 Cinco dimensiones que explican por qué elegir Sports World frente a la alternativa local:
+
 | Dimensión | Pregunta comercial |
 |---|---|
 | Comodidad y aforo | ¿El cliente quiere evitar saturación y hacer viable su rutina? |
@@ -81,6 +84,7 @@ Esta estructura evita dos errores frecuentes: vender una membresía individual c
 
 # 7. Benchmark internacional: qué tomar y qué no copiar
 La investigación internacional se utiliza como benchmark operativo, no como prueba de causalidad. Las prácticas transferibles se incorporan solo cuando son compatibles con el portafolio, la operación y la regulación de México.
+
 | Mercado | Aprendizaje | Aplicación en Sports World |
 |---|---|---|
 | Estados Unidos | Equinox / operadores premium | Descubrimiento estructurado; relación de largo plazo; asesor como experto de experiencia. |
@@ -240,6 +244,7 @@ Se elimina el tono de 'manual genérico de fitness' y se vuelve a poner el proye
 - Documentación oficial de membresías, planes, categorías, FitKidz y programas.
 - Reporte de resultados de Grupo Sports World, cierre 2025.
 - Estudio de satisfacción y lealtad de socios con resultados al cierre de 2014; se marca como histórico y requiere actualización.
+
 **Fuentes externas consultadas:**
 
 - Equinox — Membership Advisors: https://careers.equinox.com/membership-advisors
