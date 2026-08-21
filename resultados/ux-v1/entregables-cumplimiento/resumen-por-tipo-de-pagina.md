@@ -10,7 +10,7 @@ Contenido mínimo de cada tipo de página e imágenes que lleva.
 | 2 | Club | 49 | `/clubes/[club]/` |
 | 3 | Hub de amenidad | 10 | `/amenidades/[amenidad]/` |
 | 4 | Clase premium | 7 | `/clases/signature/[clase]/` |
-| 5 | Clase individual | 44 | `/clases/[clase]/` |
+| 5 | Clase individual | 47 | `/clases/[clase]/` |
 | 6 | Hub FitKidz | 1 | `/fitkidz/` |
 | 7 | Hub de perfil de usuario | 5 | `/perfiles/[perfil]/` |
 | 8 | Hub bajar de peso (YMYL) | 1 | `/bajar-de-peso/` |
@@ -54,11 +54,13 @@ Contenido mínimo de cada tipo de página e imágenes que lleva.
 
 **Imágenes: 5–6 por clase** (35–42 en total) — hero editorial + acción + equipamiento.
 
-## 5 · Clase individual — 44 páginas
+## 5 · Clase individual — 47 páginas
 
-**Contenido mínimo:** descripción de la clase; beneficios; nivel e intensidad; **clubes que la imparten con sus horarios reales**; pre-marcado del objetivo Q4; schema `Course`.
+44 clases grupales + 3 modalidades de entrenamiento individual (`/clases/pesas-individual/`, `/clases/aerobico-individual/`, `/clases/acuaticos-individual/`).
 
-**Imágenes: 2 por clase** (88 en total) — 1 de acción + 1 de ambiente/equipamiento.
+**Contenido mínimo:** descripción de la clase; beneficios; nivel e intensidad; **clubes que la imparten con sus horarios reales**; pre-marcado del objetivo Q4; schema `Course`. En las tres modalidades individuales, además: pre-marcado de Q13 = «Solo, a mi ritmo» y el subgrupo de entrenamiento que corresponde al objetivo Q4.
+
+**Imágenes: 2 por clase** (94 en total) — 1 de acción + 1 de ambiente/equipamiento.
 
 ## 6 · Hub FitKidz — 1 página
 
@@ -110,13 +112,15 @@ Primeros pasos · Salud y bienestar · Estética corporal · Ganar fuerza · Reh
 | Páginas de club | 49 | 6–8 | 294–392 |
 | Hubs de amenidades | 10 | 2 | 20 |
 | Clases premium | 7 | 5–6 | 35–42 |
-| Clases individuales | 44 | 2 | 88 |
+| Clases individuales | 47 | 2 | 94 |
 | Hub FitKidz | 1 | 34–40 | 34–40 |
 | Hubs de perfil de usuario | 5 | 4 | 20 |
 | Hub bajar de peso (YMYL) | 1 | 10–12 | 10–12 |
 | Hub personal training | 1 | 5–6 | 5–6 |
 | Páginas de membresía | 6 | 0 | 0 |
 | Blog SEO | 20 | 0 | 0 |
-| **Total** | | | **506–620** |
+| **Total** | | | **512–626** |
 
 Donde el banco no cubra una página, se completa con generación por IA.
+
+El banco pedido a Marketing cubre 44 clases individuales (88 fotos); las 3 modalidades de entrenamiento individual suman 6 fotos más.
