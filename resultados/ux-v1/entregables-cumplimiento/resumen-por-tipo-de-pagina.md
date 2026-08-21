@@ -20,9 +20,33 @@ Contenido mínimo de cada tipo de página e imágenes que lleva.
 
 ---
 
+## Menú contextual (dinámico) — aplica a todas las páginas
+
+Los botones de acción dentro del cuerpo de cada página no son fijos: cambian según **tres ejes** — el estado del cuestionario, el tipo de página y el club resuelto.
+
+**Estado del cuestionario:**
+
+| Estado | Botones del menú contextual |
+|---|---|
+| **Sin cuestionario** | «Tu Club ideal» (si hay más de 3 clubes en la ciudad o ubicación inferida) · «Diseña tu experiencia» · «Agenda tu visita guiada» · «Artículos o información útil» (si hay artículos etiquetados) · botones propios de la página |
+| **Completo, dentro del flujo** (llegó desde su resultado) | Botones propios de la página. No se ofrece «Diseña tu experiencia» ni se duplica «Volver a tu experiencia ideal» |
+| **Completo, fuera del flujo** (llegó por búsqueda o navegación) | «Volver a tu experiencia ideal» · «Artículos o información útil» (si hay) · botones propios de la página |
+
+**Reglas transversales:**
+- **«Agenda tu visita guiada» aparece siempre**, en toda página y todo estado. Es la acción de conversión.
+- **«Tu Club ideal»** aparece cuando la página **no** es de club y el usuario no está dentro de su flujo. Al presionarlo, el sistema pide Q15 y Q16 (o las presenta pre-llenadas si hay ubicación inferida).
+- **«Otros clubes…»** solo aparece en páginas de club, y depende del tamaño de la ciudad: **CIUDAD-UNO** (1 club) no muestra botón · **CIUDAD-POCOS** (2–3) muestra «Otros clubes en tu ciudad» · **CIUDAD-ZMVM** (más de 3) muestra «Otros clubes en el área», con clubes en radio de 10 km o cerca de otra ubicación.
+- **«Diseña tu experiencia»** aparece mientras el cuestionario esté incompleto; al completarlo lo **reemplaza** «Volver a tu experiencia ideal».
+- **«Artículos o información útil»** aparece solo si existe al menos un artículo del blog con etiqueta que coincida con esa página.
+- En el **header** están siempre «Agenda tu visita guiada» y «Pregúntale a BES»; no se duplican en el cuerpo.
+
+---
+
 ## 1 · Home — 1 página
 
-**Contenido mínimo:** propuesta de valor de la red; acceso al cuestionario («Diseña tu experiencia»); «Agenda tu visita guiada»; buscador/acceso a clubes; enlaces a hubs de amenidad, perfil y membresías; widget de BES.
+**Contenido mínimo:** propuesta de valor de la red; buscador/acceso a clubes; enlaces a hubs de amenidad, perfil y membresías; widget de BES; cuestionario completo de 15 preguntas base (18 en el path de bajar de peso).
+
+**Menú contextual:** «Diseña tu experiencia» · «Agenda tu visita guiada». Con ubicación inferida se suma «Tu Club ideal». Con cuestionario completo: «Volver a tu experiencia ideal» · «Agenda tu visita guiada».
 
 **Imágenes:** 0 del banco fotográfico — se cubre con generación por IA y diseño editorial.
 
@@ -40,17 +64,23 @@ Contenido mínimo de cada tipo de página e imágenes que lleva.
 - Cuestionario con el club ya identificado (13 preguntas; Q15 y Q16 se omiten)
 - Schema `HealthClub` + `LocalBusiness`
 
+**Menú contextual:** «Diseña tu experiencia» · «Agenda tu visita guiada». **No** aparece «Tu Club ideal» (el usuario ya está en un club); en su lugar aparece **«Otros clubes…»** según el tamaño de la ciudad. Con cuestionario completo y más de 3 clubes en la ciudad: «Volver a tu experiencia ideal» · «Otros clubes en el área» · «Agenda tu visita guiada».
+
 **Imágenes: 6–8 por club** (294–392 en total) — fachada, recepción y las amenidades específicas del club (alberca, salas, muro de escalar, cancha, pádel, ring de box).
 
 ## 3 · Hub de amenidad — 10 páginas
 
-**Contenido mínimo:** descripción de la amenidad; **listado de los clubes que la ofrecen** con enlace a cada uno; enlaces a clases relacionadas; CTA al cuestionario.
+**Contenido mínimo:** descripción de la amenidad; **listado de los clubes que la ofrecen** con enlace a cada uno; enlaces a clases relacionadas.
+
+**Menú contextual:** «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada».
 
 **Imágenes: 2 por hub** (20 en total) — el mejor ejemplo disponible de esa amenidad.
 
 ## 4 · Clase premium — 7 páginas
 
 **Contenido mínimo:** descripción de la clase con tratamiento editorial; beneficios; nivel e intensidad; **clubes que la imparten con sus horarios reales**; pre-marcado del objetivo Q4 alineado a la clase; schema `Course`.
+
+**Menú contextual:** «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada». Con club ya seleccionado, «Tu Club ideal» no aparece.
 
 **Imágenes: 5–6 por clase** (35–42 en total) — hero editorial + acción + equipamiento.
 
@@ -60,11 +90,17 @@ Contenido mínimo de cada tipo de página e imágenes que lleva.
 
 **Contenido mínimo:** descripción de la clase; beneficios; nivel e intensidad; **clubes que la imparten con sus horarios reales**; pre-marcado del objetivo Q4; schema `Course`. En las tres modalidades individuales, además: pre-marcado de Q13 = «Solo, a mi ritmo» y el subgrupo de entrenamiento que corresponde al objetivo Q4.
 
+**Menú contextual:** igual que la clase premium. En las modalidades individuales, donde normalmente iría «Clases recomendadas» aparece **«Tu rutina individual»**.
+
 **Imágenes: 2 por clase** (94 en total) — 1 de acción + 1 de ambiente/equipamiento.
 
 ## 6 · Hub FitKidz — 1 página
 
-**Contenido mínimo:** las **34 actividades infantiles** organizadas por rango de edad, tipo de disciplina y disponibilidad por club (no tienen página propia); clubes propuestos con sus tres acciones (ver el club, agendar visita, ver clases FitKidz del club); botón «Clases FitKidz disponibles» con horarios cuando hay club identificado; pre-llenado de Q14 = «Yo y mis hijos».
+**Contenido mínimo:** las **34 actividades infantiles** organizadas por rango de edad, tipo de disciplina y disponibilidad por club (no tienen página propia); pre-llenado de Q14 = «Yo y mis hijos».
+
+**Menú contextual:** además de los botones generales, dos propios de la página:
+- **«Clases FitKidz disponibles»** — aparece solo cuando el usuario tiene club identificado, y muestra las clases FitKidz de ese club con sus horarios. Sin club identificado no aparece, porque cada club ofrece un subconjunto distinto de las 34 actividades.
+- **Clubes propuestos** (hasta 3, según las reglas geográficas), cada uno con tres acciones: «Ver el club» · «Agenda tu visita guiada» · «Clases FitKidz disponibles para tu familia».
 
 **Imágenes: 34–40** — recepción, espacio general y cada una de las clases infantiles.
 
@@ -72,19 +108,25 @@ Contenido mínimo de cada tipo de página e imágenes que lleva.
 
 Primeros pasos · Salud y bienestar · Estética corporal · Ganar fuerza · Rehabilitación.
 
-**Contenido mínimo:** H1 con la keyword principal; 600–900 palabras de contenido útil; FAQ con schema `FAQPage`; enlaces internos a clubes y clases relacionadas; artículos del blog relacionados; CTA «Diseña tu experiencia» con Q4 pre-marcado según el perfil.
+**Contenido mínimo:** H1 con la keyword principal; 600–900 palabras de contenido útil; FAQ con schema `FAQPage`; enlaces internos a clubes y clases relacionadas; Q4 pre-marcado según el perfil.
+
+**Menú contextual:** «Artículos o información útil» (si hay artículos etiquetados) · «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada».
 
 **Imágenes: 4 por hub** (20 en total) — ilustrativas del objetivo del perfil.
 
 ## 8 · Hub bajar de peso (YMYL) — 1 página
 
-**Contenido mínimo:** todo lo del hub de perfil, más: **firma del médico designado por Sports World con cédula vigente visible**; aviso de salud (modal YMYL antes del resultado); artículos del blog etiquetados; activación de las preguntas condicionales Q17–Q19; **slot para el video institucional de 45–60 s** (carga diferida, sin autoplay con audio).
+**Contenido mínimo:** todo lo del hub de perfil, más: **firma del médico designado por Sports World con cédula vigente visible**; aviso de salud (modal YMYL antes del resultado); activación de las preguntas condicionales Q17–Q19 (el cuestionario siempre son 18 preguntas); **slot para el video institucional de 45–60 s** (carga diferida, sin autoplay con audio).
+
+**Menú contextual:** «Artículos o información útil» **siempre aparece** — esta página siempre tiene artículos etiquetados «bajar-de-peso» · «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada».
 
 **Imágenes: 10–12** — principales clases y ejercicios recomendados para perder peso, cafeterías, ambiente saludable. Más 1 video institucional.
 
 ## 9 · Hub personal training — 1 página
 
-**Contenido mínimo:** descripción del servicio; modalidades de entrenamiento individual; conexión con los cinco perfiles de usuario; clubes que lo ofrecen; pre-marcado de Q13 = Acompañado/Acompañada; CTA al cuestionario.
+**Contenido mínimo:** descripción del servicio; modalidades de entrenamiento individual; conexión con los cinco perfiles de usuario; clubes que lo ofrecen; pre-marcado de Q13 = Acompañado/Acompañada.
+
+**Menú contextual:** «Artículos o información útil» (si hay) · «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada».
 
 **Imágenes: 5–6** — principales áreas de personal training.
 
@@ -92,13 +134,17 @@ Primeros pasos · Salud y bienestar · Estética corporal · Ganar fuerza · Reh
 
 1 hub + 5 páginas por criterio de decisión.
 
-**Contenido mínimo por plan:** descripción; **qué incluye y qué no incluye**; **precio** (extraído automáticamente del CRM, no editable en el CMS); letra chica; comparativo entre planes; promociones vigentes. **Sin checkout en línea**: la conversión es «Agenda tu visita guiada».
+**Contenido mínimo por plan:** descripción; **qué incluye y qué no incluye**; **precio** (extraído automáticamente del CRM, no editable en el CMS); letra chica; comparativo entre planes; promociones vigentes. **Sin checkout en línea**.
+
+**Menú contextual:** «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada» — la conversión pasa por agendar la visita, no por el sitio. El aterrizaje en membresías no permite inferir variables del cuestionario.
 
 **Imágenes: 0** — diseño tipográfico editorial.
 
 ## 11 · Blog SEO — 20 páginas
 
-**Contenido mínimo:** artículo optimizado con contenido único; etiquetas temáticas que enlazan con clases, hubs y clubes; enlaces internos; CTA al cuestionario; schema donde aplique.
+**Contenido mínimo:** artículo optimizado con contenido único; **etiquetas temáticas** (minúsculas con guiones) que lo asocian a clases, hubs y clubes y alimentan el botón «Artículos o información útil» de esas páginas; enlaces internos; schema donde aplique.
+
+**Menú contextual:** «Diseña tu experiencia» · «Agenda tu visita guiada». El aterrizaje en un artículo no permite inferir variables del cuestionario.
 
 **Imágenes: 0 del banco** — diseño tipográfico editorial.
 
