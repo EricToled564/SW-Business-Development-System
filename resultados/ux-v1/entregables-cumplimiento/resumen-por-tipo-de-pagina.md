@@ -147,26 +147,3 @@ Primeros pasos · Salud y bienestar · Estética corporal · Ganar fuerza · Reh
 **Menú contextual:** «Diseña tu experiencia» · «Agenda tu visita guiada». El aterrizaje en un artículo no permite inferir variables del cuestionario.
 
 **Imágenes: 0 del banco** — diseño tipográfico editorial.
-
----
-
-## Totales de imágenes del banco fotográfico
-
-| Componente | Páginas | Fotos por página | Subtotal |
-|---|---|---|---|
-| Home | 1 | 0 | 0 |
-| Páginas de club | 49 | 6–8 | 294–392 |
-| Hubs de amenidades | 10 | 2 | 20 |
-| Clases premium | 7 | 5–6 | 35–42 |
-| Clases individuales | 47 | 2 | 94 |
-| Hub FitKidz | 1 | 34–40 | 34–40 |
-| Hubs de perfil de usuario | 5 | 4 | 20 |
-| Hub bajar de peso (YMYL) | 1 | 10–12 | 10–12 |
-| Hub personal training | 1 | 5–6 | 5–6 |
-| Páginas de membresía | 6 | 0 | 0 |
-| Blog SEO | 20 | 0 | 0 |
-| **Total** | | | **512–626** |
-
-Donde el banco no cubra una página, se completa con generación por IA.
-
-El banco pedido a Marketing cubre 44 clases individuales (88 fotos); las 3 modalidades de entrenamiento individual suman 6 fotos más.
