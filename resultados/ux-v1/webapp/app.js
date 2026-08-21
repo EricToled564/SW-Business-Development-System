@@ -20,6 +20,9 @@
       demoTitle: "Demo del cuestionario inteligente",
       demoBody:
         "El demo del cuestionario inteligente (flujo de experiencia ideal) ya está alineado al 100% con el UX Architecture Specs. Falta el paso de integración: empaquetarlo con React y resolver el proxy del modelo de lenguaje para que corra incrustado aquí.",
+      demoLinkLabel: "Liga directa al demo:",
+      demoOpen: "Abrir en una pestaña nueva",
+      demoMobile: "Versión móvil",
     },
     en: {
       suite: "Digital Project",
@@ -38,6 +41,9 @@
       demoTitle: "Smart questionnaire demo",
       demoBody:
         "The smart questionnaire demo (ideal-experience flow) is now 100% aligned with the UX Architecture Specs. The remaining step is integration: bundling it with React and wiring the language-model proxy so it runs embedded here.",
+      demoLinkLabel: "Direct link to the demo:",
+      demoOpen: "Open in a new tab",
+      demoMobile: "Mobile version",
     },
   };
 
@@ -269,7 +275,20 @@
     }
 
     if (doc.type === "embed") {
-      elDoc.innerHTML = '<div class="embed-wrap"><iframe class="embed-frame" src="' + doc.src +
+      // Liga directa al demo: además del incrustado, se muestra la URL absoluta
+      // para poder abrirla, copiarla y compartirla fuera de la app.
+      const demoUrl = new URL(doc.src, location.href).href;
+      const mobileUrl = new URL("demo/movil.html", location.href).href;
+      elDoc.innerHTML =
+        '<div class="embed-link">' +
+        '<span class="embed-link-label">' + t().demoLinkLabel + '</span>' +
+        '<a class="embed-link-url" href="' + demoUrl + '" target="_blank" rel="noopener">' + demoUrl + '</a>' +
+        '<span class="embed-link-actions">' +
+        '<a class="embed-link-btn" href="' + demoUrl + '" target="_blank" rel="noopener">' + t().demoOpen + ' ↗</a>' +
+        '<a class="embed-link-btn" href="' + mobileUrl + '" target="_blank" rel="noopener">' + t().demoMobile + ' ↗</a>' +
+        '</span>' +
+        '</div>' +
+        '<div class="embed-wrap"><iframe class="embed-frame" src="' + doc.src +
         '?v=20260706a" title="' + doc.title[lang] + '"></iframe></div>';
       elToc.innerHTML = "";
       // Fijar la altura del iframe a la ventana REALMENTE visible (window.innerHeight),
@@ -279,7 +298,8 @@
       if (embedFit) window.removeEventListener("resize", embedFit);
       embedFit = function () {
         const tb = document.querySelector(".topbar");
-        const h = window.innerHeight - (tb ? tb.offsetHeight : 0);
+        const lk = elDoc.querySelector(".embed-link");
+        const h = window.innerHeight - (tb ? tb.offsetHeight : 0) - (lk ? lk.offsetHeight + 12 : 0);
         if (wrap) wrap.style.height = h + "px";
       };
       embedFit();
