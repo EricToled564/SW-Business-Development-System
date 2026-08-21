@@ -91,7 +91,7 @@ No cubre el diseño visual, la arquitectura técnica ni el calendario de producc
 
 ### 3.1 Encabezado
 
-El encabezado permanece fijo en la parte superior. Lleva cinco elementos:
+El encabezado acompaña al usuario en todas las páginas. Lleva cinco elementos:
 
 | Elemento | Qué hace |
 |---|---|
@@ -99,13 +99,11 @@ El encabezado permanece fijo en la parte superior. Lleva cinco elementos:
 | Tu Sports World | Abre el panel de navegación |
 | Diseña tu experiencia | Abre el cuestionario |
 | Pregúntale a BES | Abre el asistente |
-| Agenda tu visita | Lleva al agendado. Botón rojo |
+| Agenda tu visita | Lleva al agendado |
 
 Los tres elementos de en medio son rutas paralelas: el usuario elige la que prefiera. Ninguna tiene prioridad sobre las otras.
 
-«Agenda tu visita» conserva su texto en todos los tamaños de pantalla. Nunca se reduce a ícono.
-
-Debajo de 1024 píxeles el encabezado usa dos filas: arriba el logotipo y «Agenda tu visita», abajo las tres rutas. Debajo de 480 píxeles las tres rutas se muestran como íconos.
+«Agenda tu visita» es la acción de conversión del sitio y siempre está disponible, sin importar el dispositivo.
 
 ### 3.2 Panel «Tu Sports World»
 
@@ -113,13 +111,13 @@ Es el único punto de navegación estructural del sitio. Agrupa los ocho hubs:
 
 Clubes · Clases · Amenidades · Perfiles · Bajar de peso · FitKidz · Membresías · Blog
 
-Mide 560 píxeles en escritorio y ocupa toda la pantalla en celular. Lleva un pie con redes sociales y aviso de privacidad.
+Lleva un pie con redes sociales y aviso de privacidad.
 
 Los tres botones de acción del encabezado no aparecen dentro del panel. Cada elemento de navegación vive en un solo lugar.
 
 ### 3.3 Asistente BES
 
-BES es un botón flotante en la esquina inferior derecha. Al tocarlo abre una conversación sobre la misma página, sin cambiar de dirección.
+BES está disponible en todas las páginas. Al abrirlo, el usuario conversa sin salir de la página en la que está.
 
 Arranca en modo texto y tiene un conmutador a voz. Reconoce en qué página está el usuario, así que responde sin que el usuario repita el contexto.
 
@@ -349,7 +347,7 @@ El sitio no vende membresías en línea. El usuario agenda una visita guiada y l
 
 **Menú contextual.** «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada».
 
-**Imágenes: ninguna.** Estas páginas se resuelven con diseño tipográfico editorial.
+**Imágenes: ninguna.**
 
 ---
 
@@ -368,4 +366,4 @@ Los artículos de nutrición, rehabilitación y suplementación llevan **firma d
 
 **Menú contextual.** «Diseña tu experiencia» · «Agenda tu visita guiada».
 
-**Imágenes: ninguna.** Estas páginas se resuelven con diseño tipográfico editorial.
+**Imágenes: ninguna.**
