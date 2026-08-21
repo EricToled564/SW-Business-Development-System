@@ -54,6 +54,58 @@ def extraer_leyendas(md_text: str):
     return "\n".join(limpio), leyendas
 
 
+def extraer_saltos(md_text: str):
+    """Quita las líneas '<!--PAGEBREAK-->' y devuelve (markdown_limpio,
+    [texto_del_encabezado_que_debe_arrancar_página]). El marcador debe ir en
+    su propia línea, justo antes del encabezado ('#'..'######') que tiene
+    que empezar página nueva."""
+    textos = []
+    limpio = []
+    pendiente = False
+    for ln in md_text.split("\n"):
+        if ln.strip() == "<!--PAGEBREAK-->":
+            pendiente = True
+            continue
+        if pendiente and ln.strip().startswith("#"):
+            textos.append(ln.strip().lstrip("#").strip())
+            pendiente = False
+        limpio.append(ln)
+    return "\n".join(limpio), textos
+
+
+def marcar_saltos_de_pagina(content_xml: str, textos: list) -> str:
+    """A los encabezados indicados (por su texto exacto) se les fuerza
+    fo:break-before="page": arrancan página nueva sin importar cuánto
+    espacio quede en la anterior. Se clona el estilo de encabezado que ya
+    trae el elemento (Heading_20_1/2, definido en styles.xml) en un estilo
+    automático nuevo que hereda de él y le agrega solo el salto."""
+    # pandoc envuelve el texto del encabezado en <text:bookmark-start/>...
+    # <text:bookmark-end/>, así que no se puede exigir que el texto siga
+    # inmediatamente a la etiqueta de apertura. Se toma cada bloque
+    # <text:h>...</text:h> completo (no anidan, así que ".*?" no cruza a
+    # otro encabezado) y se busca el texto exacto dentro de él.
+    s = content_xml
+    for i, texto in enumerate(textos):
+        esc = texto.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        for m in re.finditer(r"<text:h\b.*?</text:h>", s, re.DOTALL):
+            bloque = m.group(0)
+            if esc not in bloque:
+                continue
+            m_estilo = re.search(r'text:style-name="([^"]+)"', bloque)
+            if not m_estilo:
+                break
+            estilo_base = m_estilo.group(1)
+            nuevo_estilo = f"PageBreak{i}"
+            bloque_nuevo = bloque.replace(f'text:style-name="{estilo_base}"', f'text:style-name="{nuevo_estilo}"', 1)
+            s = s[:m.start()] + bloque_nuevo + s[m.end():]
+            definicion = (f'<style:style style:name="{nuevo_estilo}" style:family="paragraph" '
+                          f'style:parent-style-name="{estilo_base}">'
+                          f'<style:paragraph-properties fo:break-before="page"/></style:style>')
+            s = s.replace("<office:automatic-styles>", "<office:automatic-styles>" + definicion, 1)
+            break
+    return s
+
+
 def inyectar_leyendas(content_xml: str, leyendas: dict) -> str:
     """Antepone una fila fusionada (colspan) como primera fila de las tablas
     indicadas, con el texto de su leyenda. Devuelve también, vía atributo en
@@ -112,7 +164,7 @@ def marcar_tablas_atomicas(styles_or_content: str, nombres_estilo: list) -> str:
     return s
 
 
-def parchar_odt(odt: pathlib.Path, leyendas: dict | None = None) -> None:
+def parchar_odt(odt: pathlib.Path, leyendas: dict | None = None, saltos: list | None = None) -> None:
     tmp = pathlib.Path(tempfile.mkdtemp())
     with zipfile.ZipFile(odt) as z:
         z.extractall(tmp)
@@ -183,6 +235,7 @@ def parchar_odt(odt: pathlib.Path, leyendas: dict | None = None) -> None:
     s, _ = inyectar_leyendas(s, leyendas or {})
     todas_las_tablas = sorted(set(re.findall(r'<table:table\s[^>]*table:style-name="([^"]+)"', s)))
     s = marcar_tablas_atomicas(s, todas_las_tablas)
+    s = marcar_saltos_de_pagina(s, saltos or [])
 
     xml.write_text(s, encoding="utf-8")
     estilos_xml.write_text(es, encoding="utf-8")
@@ -206,14 +259,15 @@ def soffice(destino: str, archivo: pathlib.Path, salida: pathlib.Path) -> None:
 def main(entrada: pathlib.Path, salida: pathlib.Path) -> None:
     trabajo = pathlib.Path(tempfile.mkdtemp())
     html = trabajo / "doc.html"
-    md_limpio, leyendas = extraer_leyendas(entrada.read_text(encoding="utf-8"))
+    md_sin_saltos, saltos = extraer_saltos(entrada.read_text(encoding="utf-8"))
+    md_limpio, leyendas = extraer_leyendas(md_sin_saltos)
     cuerpo = markdown.markdown(md_limpio, extensions=["tables", "sane_lists"])
     html.write_text(f'<!DOCTYPE html><html><head><meta charset="utf-8">'
                     f"<style>{CSS}</style></head><body>{cuerpo}</body></html>", encoding="utf-8")
 
     odt = trabajo / "doc.odt"
     subprocess.run(["pandoc", str(html), "-f", "html", "-t", "odt", "-o", str(odt)], check=True)
-    parchar_odt(odt, leyendas)
+    parchar_odt(odt, leyendas, saltos)
 
     soffice("doc:MS Word 97", odt, trabajo)
     shutil.copy(trabajo / "doc.doc", salida)
