@@ -34,11 +34,11 @@
 | 5 | Contenido mínimo de cada tipo de página |
 | 5.1 | Inicio |
 | 5.2 | Club |
-| 5.3 | Página de amenidad |
+| 5.3 | Amenidades |
 | 5.4 | Clase premium |
-| 5.5 | Clase individual |
+| 5.5 | Clase |
 | 5.6 | FitKidz |
-| 5.7 | Página de objetivo |
+| 5.7 | Objetivos |
 | 5.8 | Bajar de peso |
 | 5.9 | Entrenamiento personal |
 | 5.10 | Membresías |
@@ -76,26 +76,26 @@ No cubre el diseño visual, la arquitectura técnica ni el calendario de producc
 
 | Tipo de página | Páginas | Dirección | Fotografías |
 |---|---|---|---|
-| Inicio | 1 | sportsworld.com.mx | Por definir |
+| Inicio | 1 | / | Por definir |
 | Club | 49 | /clubes/ | 294–392 |
-| Página de amenidad | 10 | /amenidades/ | 20 |
+| Amenidades | 10 | /amenidades/ | 20 |
 | Clase premium | 7 | /clases/signature/ | 35–42 |
-| Clase individual | 47 | /clases/ | 94 |
+| Clase | 47 | /clases/ | 94 |
 | FitKidz | 1 | /fitkidz/ | 34–40 |
-| Página de objetivo | 5 | /perfiles/ | 20 |
+| Objetivos | 5 | /perfiles/ | 20 |
 | Bajar de peso | 1 | /bajar-de-peso/ | 10–12 |
 | Entrenamiento personal | 1 | /personal-training/ | 5–6 |
 | Membresías | 6 | /membresias/ | Ninguna |
 | Blog | 20 | /blog/ | Ninguna |
 | Total | 148 | | 512–626 |
 
-La página de inicio queda pendiente de definir con Sports World. Las tres modalidades de entrenamiento individual —pesas, aeróbico y acuático— suman seis fotografías a las 88 de las clases individuales.
+Sports World tiene **51 clases para adultos**, que se publican en **54 páginas**: 7 premium, 44 grupales y 3 modalidades de entrenamiento individual —pesas, aeróbico y acuático—. El número de fotografías de la página de inicio queda pendiente de definir.
 
 ---
 
 ## 3 · Tres elementos aparecen en todas las páginas
 
-El menú superior, el panel de navegación y el asistente acompañan al visitante en las 148 páginas. Por eso se describen aquí una sola vez.
+Por eso se describen aquí una sola vez y no se repiten en cada tipo.
 
 ### 3.1 Menú superior
 
@@ -109,7 +109,7 @@ El menú superior, el panel de navegación y el asistente acompañan al visitant
 | Pregúntale a BES | Abre el asistente |
 | Agenda tu visita | Lleva a agendar la visita guiada |
 
-Los tres elementos de en medio son tres caminos paralelos para recorrer el sitio: el visitante elige el que prefiera y ninguno tiene prioridad sobre los otros.
+«Tu Sports World», «Diseña tu experiencia» y «Pregúntale a BES» son tres caminos paralelos para recorrer el sitio: el visitante elige el que prefiera y ninguno tiene prioridad sobre los otros.
 
 «Agenda tu visita» es la acción que convierte al visitante en prospecto, y por eso está disponible siempre, en cualquier dispositivo.
 
@@ -171,7 +171,9 @@ Tres factores los determinan: lo que el visitante ya haya contestado del cuestio
 
 ### 5.1 Inicio
 
-**1 página · sportsworld.com.mx**
+**1 página · /**
+
+Es la puerta de entrada de quien busca la marca sin tener un club en mente.
 
 **Contenido mínimo**
 - Propuesta de valor de la red
@@ -188,6 +190,8 @@ Tres factores los determinan: lo que el visitante ya haya contestado del cuestio
 ### 5.2 Club
 
 **49 páginas · /clubes/**
+
+Es el tipo de página que más material fotográfico necesita.
 
 **Contenido mínimo**
 - Nombre y **dirección completa**
@@ -208,9 +212,11 @@ Los horarios de atención, los datos de contacto, el catálogo de clases y sus h
 
 ---
 
-### 5.3 Página de amenidad
+### 5.3 Amenidades
 
 **10 páginas · /amenidades/**
+
+Reúne, por amenidad, todos los clubes que la ofrecen.
 
 **Contenido mínimo**
 - Descripción de la amenidad
@@ -241,11 +247,11 @@ Sports World define cuáles son las siete.
 
 ---
 
-### 5.5 Clase individual
+### 5.5 Clase
 
 **47 páginas · /clases/**
 
-Son 44 clases grupales y tres modalidades de entrenamiento individual: pesas, aeróbico y acuático.
+Son 44 clases grupales más tres modalidades de entrenamiento individual: pesas, aeróbico y acuático.
 
 **Contenido mínimo**
 - Descripción de la clase
@@ -263,11 +269,11 @@ Son 44 clases grupales y tres modalidades de entrenamiento individual: pesas, ae
 
 **1 página · /fitkidz/**
 
+Reúne las 34 actividades infantiles, que no tienen página propia.
+
 **Contenido mínimo**
 - Las **34 actividades infantiles**, organizadas por edad, por disciplina y por club
 - Los clubes que ofrecen FitKidz
-
-Las 34 actividades no tienen página propia: viven todas dentro de esta.
 
 **Botones.** Los generales más dos propios:
 
@@ -278,11 +284,11 @@ Las 34 actividades no tienen página propia: viven todas dentro de esta.
 
 ---
 
-### 5.7 Página de objetivo
+### 5.7 Objetivos
 
 **5 páginas · /perfiles/**
 
-Primeros pasos · Salud y bienestar · Estética corporal · Ganar fuerza · Rehabilitación.
+Una página por objetivo de entrenamiento: primeros pasos, salud y bienestar, estética corporal, ganar fuerza y rehabilitación.
 
 **Contenido mínimo**
 - Título con la palabra clave del objetivo
@@ -303,6 +309,8 @@ La página de **Rehabilitación** lleva además la **firma del especialista, con
 
 **1 página · /bajar-de-peso/**
 
+Es la única página con video institucional.
+
 **Contenido mínimo**
 - Título con la palabra clave
 - 600 a 900 palabras de contenido útil
@@ -315,7 +323,7 @@ La página de **Rehabilitación** lleva además la **firma del especialista, con
 
 El sitio no promete resultados en kilos ni en plazos.
 
-**Botones.** «Artículos o información útil», que aquí aparece siempre porque esta página siempre tiene artículos relacionados · «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada».
+**Botones.** «Artículos o información útil» · «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada». Aquí «Artículos o información útil» aparece siempre, porque esta página siempre tiene artículos relacionados.
 
 **Fotografías: 10 a 12, más 1 video.** Las principales clases y ejercicios para bajar de peso, cafeterías y ambiente saludable.
 
@@ -325,13 +333,13 @@ El sitio no promete resultados en kilos ni en plazos.
 
 **1 página · /personal-training/**
 
+Una sola página para todo el servicio: no hay una por entrenador.
+
 **Contenido mínimo**
 - Descripción del servicio
 - Modalidades de entrenamiento individual
-- Enlaces a las cinco páginas de objetivo
+- Enlaces a las cinco páginas de Objetivos
 - Clubes donde se ofrece
-
-No hay una página por entrenador.
 
 **Botones.** «Artículos o información útil» · «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada».
 
