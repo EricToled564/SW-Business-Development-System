@@ -20,6 +20,30 @@ Contenido mínimo de cada tipo de página e imágenes que lleva.
 
 ---
 
+## Elementos globales — presentes en las 148 páginas
+
+**Header fijo**, anclado arriba en todas las páginas, con cinco elementos de izquierda a derecha:
+
+1. **Logo de Sports World** — regresa a la página de inicio.
+2. **«Tu Sports World»** — abre el panel lateral de navegación.
+3. **«Diseña tu experiencia»** — abre el cuestionario.
+4. **«Pregúntale a BES»** — abre el widget del asistente.
+5. **«Agenda tu visita»** — botón rojo, la única acción de conversión.
+
+Los elementos 2, 3 y 4 son **tres rutas paralelas** por el sitio, con la misma jerarquía: el usuario elige la que prefiera. El 5 recibe tratamiento visual distinto y **nunca se reduce a ícono**, en ningún ancho de pantalla.
+
+**En móvil** (menos de 1024 px) el header se parte en dos filas: fila 1 con el logo y «Agenda tu visita»; fila 2 con las tres rutas. Por debajo de 480 px, las tres rutas quedan como íconos con `aria-label`.
+
+**Panel lateral «Tu Sports World»** — el único punto de navegación estructural del sitio. Reúne los **8 hubs principales**:
+
+Clubes · Clases · Amenidades · Perfiles · Bajar de peso · FitKidz · Membresías · Diario
+
+Mide 560 px en desktop y es pantalla completa en móvil. Incluye pie con redes sociales y aviso de privacidad. Los tres elementos de acción del header **no se duplican** dentro del panel: cada pieza de navegación vive en un solo lugar.
+
+**Widget de BES** — botón flotante en la esquina inferior derecha de todas las páginas, que abre un panel de chat sobre la página actual (no navega a otra URL). Por defecto opera en texto, con un toggle a voz. Al abrirse conoce el tipo de página y sus identificadores, para responder sin que el usuario repita el contexto. Tiene URL de respaldo renderizada en servidor para usuarios sin JavaScript e indexadores.
+
+---
+
 ## Menú contextual (dinámico) — aplica a todas las páginas
 
 Los botones de acción dentro del cuerpo de cada página no son fijos: cambian según **tres ejes** — el estado del cuestionario, el tipo de página y el club resuelto.
@@ -44,7 +68,7 @@ Los botones de acción dentro del cuerpo de cada página no son fijos: cambian s
 
 ## 1 · Home — 1 página
 
-**Contenido mínimo:** propuesta de valor de la red; buscador/acceso a clubes; enlaces a hubs de amenidad, perfil y membresías; widget de BES; cuestionario completo de 15 preguntas base (18 en el path de bajar de peso).
+**Contenido mínimo:** propuesta de valor de la red; buscador/acceso a clubes; enlaces a los hubs principales; cuestionario completo de 15 preguntas base (18 en el path de bajar de peso).
 
 **Menú contextual:** «Diseña tu experiencia» · «Agenda tu visita guiada». Con ubicación inferida se suma «Tu Club ideal». Con cuestionario completo: «Volver a tu experiencia ideal» · «Agenda tu visita guiada».
 
