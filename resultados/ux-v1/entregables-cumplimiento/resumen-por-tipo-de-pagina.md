@@ -24,7 +24,7 @@
 | Contenido, botones y elementos comunes | UX Spec Experiencia Ideal v5.0, junio 2026 |
 | Número de imágenes por tipo de página | SW Marketing Readiness Brief, Bloque B, abril 2026 |
 
----
+[[PAGEBREAK]]
 
 ## Índice
 
@@ -52,7 +52,7 @@
 | 5.10 | Membresías |
 | 5.11 | Blog |
 
----
+[[PAGEBREAK]]
 
 ## Resumen ejecutivo
 
