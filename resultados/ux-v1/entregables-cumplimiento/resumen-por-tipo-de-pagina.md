@@ -4,11 +4,11 @@
 
 | | |
 |---|---|
-| Documento | Especificación de contenido mínimo por tipo de página |
+| Documento | Contenido mínimo por tipo de página |
 | Proyecto | Rediseño del sitio sportsworld.com.mx |
 | Versión | 1.0 |
 | Alcance | Las 148 páginas del sitio, agrupadas en once tipos |
-| Uso | Referencia de producción para los equipos de contenido, diseño y desarrollo |
+| Destinatario | Equipos de contenido, diseño y desarrollo |
 
 **Control de versiones**
 
@@ -16,22 +16,30 @@
 |---|---|
 | 1.0 | Documento inicial |
 
+**Fuentes**
+
+| Dato | Fuente |
+|---|---|
+| Inventario de 148 páginas en once tipos | Contrato, Anexo Dos I.1 |
+| Contenido, botones y elementos comunes | UX Spec Experiencia Ideal v5.0, junio 2026 |
+| Número de imágenes por tipo de página | SW Marketing Readiness Brief, Bloque B, abril 2026 |
+
 ---
 
 ## Índice
 
 | | Sección |
 |---|---|
-| 1 | Objeto del documento |
-| 2 | Inventario de páginas |
-| 3 | Elementos comunes a todas las páginas |
+| 1 | Este documento fija qué contenido lleva cada página antes de producirla |
+| 2 | Once tipos de página resuelven las 148 del sitio |
+| 3 | Tres elementos aparecen en todas las páginas y no se especifican por tipo |
 | 3.1 | Encabezado |
 | 3.2 | Panel «Tu Sports World» |
 | 3.3 | Asistente BES |
-| 4 | Menú contextual |
+| 4 | El avance del cuestionario decide qué botones ve el usuario |
 | 4.1 | Botones según el estado del cuestionario |
 | 4.2 | Reglas de aparición |
-| 5 | Contenido mínimo por tipo de página |
+| 5 | Cada tipo de página exige un contenido mínimo distinto |
 | 5.1 | Inicio |
 | 5.2 | Club |
 | 5.3 | Hub de amenidad |
@@ -48,17 +56,22 @@
 
 ## Resumen ejecutivo
 
-El sitio tiene **148 páginas** en **once tipos**. Este documento define, para cada tipo, tres cosas: qué contenido debe llevar como mínimo, qué botones muestra y cuántas imágenes requiere.
+**Situación.** El sitio se reconstruye completo: 148 páginas agrupadas en once tipos.
 
-Todas las páginas comparten tres elementos: el encabezado, el panel de navegación «Tu Sports World» y el asistente BES. Los botones del cuerpo de la página no son fijos: cambian según el avance del cuestionario, el tipo de página y el club identificado.
+**Complicación.** La producción no puede arrancar sin dos definiciones: qué contenido lleva cada tipo de página y cuántas fotografías hay que pedirle a Sports World.
 
-El material fotográfico suma entre **512 y 626 imágenes**. Las páginas de club concentran la mayor parte, con seis a ocho imágenes cada una.
+**Resolución.** Este documento fija ambas, tipo por tipo. Cuatro puntos concentran la decisión:
+
+- **Las páginas de club concentran cerca de seis de cada diez fotografías del proyecto.** Son 49 páginas que piden entre seis y ocho imágenes cada una, sobre un total de entre 512 y 626 para todo el sitio.
+- **Tres elementos aparecen en las 148 páginas y no se especifican por tipo:** el encabezado, el panel «Tu Sports World» y el asistente BES.
+- **Los botones del cuerpo de la página no son fijos.** Cambian según el avance del cuestionario, el tipo de página y el club identificado.
+- **Falta un dato para cerrar el banco fotográfico:** la página de inicio no tiene número de imágenes asignado en el desglose que entregó Marketing.
 
 ---
 
-## 1 · Objeto del documento
+## 1 · Este documento fija qué contenido lleva cada página antes de producirla
 
-Este documento responde a tres preguntas por cada tipo de página:
+Responde tres preguntas por cada tipo de página:
 
 1. ¿Qué contenido lleva como mínimo?
 2. ¿Qué botones muestra?
@@ -68,30 +81,36 @@ No cubre el diseño visual, la arquitectura técnica ni el calendario de producc
 
 ---
 
-## 2 · Inventario de páginas
+## 2 · Once tipos de página resuelven las 148 del sitio
 
-| # | Tipo de página | Cantidad | Dirección |
+**Exhibit 1 · Clubes, clases individuales y FitKidz concentran el grueso del material fotográfico**
+
+| Tipo de página | Páginas | Dirección | Imágenes |
 |---|---|---|---|
-| 1 | Inicio | 1 | `/` |
-| 2 | Club | 49 | `/clubes/[club]/` |
-| 3 | Hub de amenidad | 10 | `/amenidades/[amenidad]/` |
-| 4 | Clase premium | 7 | `/clases/signature/[clase]/` |
-| 5 | Clase individual | 47 | `/clases/[clase]/` |
-| 6 | Hub FitKidz | 1 | `/fitkidz/` |
-| 7 | Hub de perfil | 5 | `/perfiles/[perfil]/` |
-| 8 | Hub de bajar de peso | 1 | `/bajar-de-peso/` |
-| 9 | Hub de entrenamiento personal | 1 | `/personal-training/` |
-| 10 | Membresías | 6 | `/membresias/` |
-| 11 | Blog | 20 | `/blog/[articulo]/` |
-| | Total | 148 | |
+| Inicio | 1 | `/` | Por definir |
+| Club | 49 | `/clubes/[club]/` | 294–392 |
+| Hub de amenidad | 10 | `/amenidades/[amenidad]/` | 20 |
+| Clase premium | 7 | `/clases/signature/[clase]/` | 35–42 |
+| Clase individual | 47 | `/clases/[clase]/` | 94 |
+| Hub FitKidz | 1 | `/fitkidz/` | 34–40 |
+| Hub de perfil | 5 | `/perfiles/[perfil]/` | 20 |
+| Hub de bajar de peso | 1 | `/bajar-de-peso/` | 10–12 |
+| Hub de entrenamiento personal | 1 | `/personal-training/` | 5–6 |
+| Membresías | 6 | `/membresias/` | Ninguna |
+| Blog | 20 | `/blog/[articulo]/` | Ninguna |
+| Total | 148 | | 512–626 |
+
+*Fuente: inventario de páginas del Contrato, Anexo Dos I.1; desglose de imágenes del SW Marketing Readiness Brief, Bloque B, abril 2026. El brief cubre 44 clases individuales; las tres modalidades de entrenamiento individual suman seis imágenes más.*
 
 ---
 
-## 3 · Elementos comunes a todas las páginas
+## 3 · Tres elementos aparecen en todas las páginas y no se especifican por tipo
 
 ### 3.1 Encabezado
 
-El encabezado acompaña al usuario en todas las páginas. Lleva cinco elementos:
+El encabezado acompaña al usuario en todas las páginas y lleva cinco elementos.
+
+**Exhibit 2 · El encabezado ofrece tres rutas paralelas y una sola acción de conversión**
 
 | Elemento | Qué hace |
 |---|---|
@@ -101,7 +120,9 @@ El encabezado acompaña al usuario en todas las páginas. Lleva cinco elementos:
 | Pregúntale a BES | Abre el asistente |
 | Agenda tu visita | Lleva al agendado |
 
-Los tres elementos de en medio son rutas paralelas: el usuario elige la que prefiera. Ninguna tiene prioridad sobre las otras.
+*Fuente: UX Spec Experiencia Ideal v5.0, §5.1.*
+
+Los tres elementos de en medio son rutas paralelas: el usuario elige la que prefiera y ninguna tiene prioridad sobre las otras.
 
 «Agenda tu visita» es la acción de conversión del sitio y siempre está disponible, sin importar el dispositivo.
 
@@ -123,11 +144,13 @@ Arranca en modo texto y tiene un conmutador a voz. Reconoce en qué página est�
 
 ---
 
-## 4 · Menú contextual
+## 4 · El avance del cuestionario decide qué botones ve el usuario
 
-Los botones del cuerpo de la página cambian. Tres factores los determinan: el avance del cuestionario, el tipo de página y el club identificado.
+Tres factores determinan los botones del cuerpo de la página: el avance del cuestionario, el tipo de página y el club identificado.
 
 ### 4.1 Botones según el estado del cuestionario
+
+**Exhibit 3 · Contestar el cuestionario sustituye el botón de entrada por el de regreso**
 
 | Estado del usuario | Botones |
 |---|---|
@@ -135,13 +158,17 @@ Los botones del cuerpo de la página cambian. Tres factores los determinan: el a
 | Ya lo contestó y navega dentro de su experiencia | Solo los botones propios de la página |
 | Ya lo contestó pero llegó por otra vía | «Volver a tu experiencia ideal» · «Artículos o información útil» · botones propios de la página |
 
+*Fuente: UX Spec Experiencia Ideal v5.0, §5.4.*
+
 ### 4.2 Reglas de aparición
 
 **«Agenda tu visita guiada» aparece siempre.** En toda página y en todo estado. Es la acción de conversión del sitio.
 
 **«Tu Club ideal» aparece cuando la página no es de club.** Al tocarlo, el sitio pregunta la zona; si ya la infirió de la búsqueda, la muestra prellenada.
 
-**«Otros clubes…» aparece solo en páginas de club.** Su texto depende de cuántos clubes hay en la ciudad:
+**«Otros clubes…» aparece solo en páginas de club.** Su texto depende de cuántos clubes hay en la ciudad.
+
+**Exhibit 4 · La densidad de clubes en la ciudad decide qué ofrece el botón**
 
 | Clubes en la ciudad | Texto del botón | Qué muestra |
 |---|---|---|
@@ -149,17 +176,21 @@ Los botones del cuerpo de la página cambian. Tres factores los determinan: el a
 | Dos o tres | «Otros clubes en tu ciudad» | Los otros clubes de la ciudad |
 | Más de tres | «Otros clubes en el área» | Clubes a 10 km, o cerca de otra zona que indique el usuario |
 
+*Fuente: UX Spec Experiencia Ideal v5.0, §5.4.*
+
 **«Diseña tu experiencia» dura hasta que el usuario contesta el cuestionario.** Después lo sustituye «Volver a tu experiencia ideal».
 
 **«Artículos o información útil» aparece si hay artículos del blog etiquetados** para esa página. Si no los hay, el botón no aparece.
 
 ---
 
-## 5 · Contenido mínimo por tipo de página
+## 5 · Cada tipo de página exige un contenido mínimo distinto
 
 ### 5.1 Inicio
 
 **1 página · `/`**
+
+Es el único tipo de página sin número de imágenes asignado.
 
 **Contenido mínimo**
 - Propuesta de valor de la red
@@ -176,6 +207,8 @@ Los botones del cuerpo de la página cambian. Tres factores los determinan: el a
 ### 5.2 Club
 
 **49 páginas · `/clubes/[club]/`**
+
+Concentra cerca de seis de cada diez fotografías del proyecto.
 
 **Contenido mínimo**
 - Nombre y **dirección completa**
@@ -199,6 +232,8 @@ El CRM entrega los horarios de atención, los datos de contacto, el catálogo de
 ### 5.3 Hub de amenidad
 
 **10 páginas · `/amenidades/[amenidad]/`**
+
+Convierte una búsqueda de amenidad en una lista de clubes.
 
 **Contenido mínimo**
 - Descripción de la amenidad
@@ -233,7 +268,7 @@ Sports World elige cuáles son las siete.
 
 **47 páginas · `/clases/[clase]/`**
 
-Son 44 clases grupales y tres modalidades de entrenamiento individual: pesas, aeróbico y acuático.
+Suma 44 clases grupales y tres modalidades de entrenamiento individual: pesas, aeróbico y acuático.
 
 **Contenido mínimo**
 - Descripción de la clase
@@ -251,11 +286,11 @@ Son 44 clases grupales y tres modalidades de entrenamiento individual: pesas, ae
 
 **1 página · `/fitkidz/`**
 
+Absorbe las 34 actividades infantiles, que no tienen página propia.
+
 **Contenido mínimo**
 - Las **34 actividades infantiles**, organizadas por edad, por disciplina y por club
 - Los clubes que ofrecen FitKidz
-
-Las 34 actividades no tienen página propia. Viven todas dentro de este hub.
 
 **Menú contextual.** Los botones generales más dos propios:
 
@@ -269,6 +304,8 @@ Las 34 actividades no tienen página propia. Viven todas dentro de este hub.
 ### 5.7 Hub de perfil
 
 **5 páginas · `/perfiles/[perfil]/`**
+
+Rehabilitación exige firma profesional; los otros cuatro perfiles no.
 
 Primeros pasos · Salud y bienestar · Estética corporal · Ganar fuerza · Rehabilitación.
 
@@ -290,6 +327,8 @@ El hub de **Rehabilitación** lleva además la **firma del especialista, con cé
 ### 5.8 Hub de bajar de peso
 
 **1 página · `/bajar-de-peso/`**
+
+Es la única página con video institucional.
 
 **Contenido mínimo**
 - Título con la palabra clave
@@ -313,13 +352,13 @@ El sitio no promete resultados en kilos ni en plazos.
 
 **1 página · `/personal-training/`**
 
+No lleva página por entrenador.
+
 **Contenido mínimo**
 - Descripción del servicio
 - Modalidades de entrenamiento individual
 - Enlaces a los cinco hubs de perfil
 - Clubes donde se ofrece
-
-El sitio no lleva página por entrenador.
 
 **Menú contextual.** «Artículos o información útil» · «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada».
 
@@ -331,7 +370,7 @@ El sitio no lleva página por entrenador.
 
 **6 páginas · `/membresias/`**
 
-Un hub y cinco páginas por criterio de decisión.
+Muestra precios del CRM, pero no vende en línea.
 
 **Contenido mínimo, por plan**
 - Descripción
@@ -341,9 +380,11 @@ Un hub y cinco páginas por criterio de decisión.
 - Comparativo entre planes
 - Promociones vigentes
 
+Un hub y cinco páginas por criterio de decisión.
+
 El CRM entrega los planes, los precios, los descuentos y las promociones. El gestor de contenidos no los edita.
 
-El sitio no vende membresías en línea. El usuario agenda una visita guiada y la venta se cierra en el club o por teléfono.
+El usuario agenda una visita guiada y la venta se cierra en el club o por teléfono.
 
 **Menú contextual.** «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada».
 
@@ -354,6 +395,8 @@ El sitio no vende membresías en línea. El usuario agenda una visita guiada y l
 ### 5.11 Blog
 
 **20 páginas · `/blog/[articulo]/`**
+
+Sus etiquetas alimentan el menú de las demás páginas.
 
 **Contenido mínimo**
 - Artículo con contenido propio
