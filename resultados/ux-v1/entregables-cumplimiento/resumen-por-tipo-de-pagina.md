@@ -4,11 +4,11 @@
 
 | | |
 |---|---|
-| **Documento** | Especificación de contenido mínimo por tipo de página |
-| **Proyecto** | Rediseño del sitio sportsworld.com.mx |
-| **Versión** | 1.0 |
-| **Alcance** | Las 148 páginas del sitio, agrupadas en once tipos |
-| **Uso** | Referencia de producción para los equipos de contenido, diseño y desarrollo |
+| Documento | Especificación de contenido mínimo por tipo de página |
+| Proyecto | Rediseño del sitio sportsworld.com.mx |
+| Versión | 1.0 |
+| Alcance | Las 148 páginas del sitio, agrupadas en once tipos |
+| Uso | Referencia de producción para los equipos de contenido, diseño y desarrollo |
 
 **Control de versiones**
 
@@ -20,17 +20,29 @@
 
 ## Índice
 
-1. Objeto del documento
-2. Inventario de páginas
-3. Elementos comunes a todas las páginas
-   3.1 Encabezado
-   3.2 Panel «Tu Sports World»
-   3.3 Asistente BES
-4. Menú contextual
-   4.1 Botones según el estado del cuestionario
-   4.2 Reglas de aparición
-5. Contenido mínimo por tipo de página
-   5.1 Inicio · 5.2 Club · 5.3 Hub de amenidad · 5.4 Clase premium · 5.5 Clase individual · 5.6 Hub FitKidz · 5.7 Hub de perfil · 5.8 Hub de bajar de peso · 5.9 Hub de entrenamiento personal · 5.10 Membresías · 5.11 Blog
+| | Sección |
+|---|---|
+| 1 | Objeto del documento |
+| 2 | Inventario de páginas |
+| 3 | Elementos comunes a todas las páginas |
+| 3.1 | Encabezado |
+| 3.2 | Panel «Tu Sports World» |
+| 3.3 | Asistente BES |
+| 4 | Menú contextual |
+| 4.1 | Botones según el estado del cuestionario |
+| 4.2 | Reglas de aparición |
+| 5 | Contenido mínimo por tipo de página |
+| 5.1 | Inicio |
+| 5.2 | Club |
+| 5.3 | Hub de amenidad |
+| 5.4 | Clase premium |
+| 5.5 | Clase individual |
+| 5.6 | Hub FitKidz |
+| 5.7 | Hub de perfil |
+| 5.8 | Hub de bajar de peso |
+| 5.9 | Hub de entrenamiento personal |
+| 5.10 | Membresías |
+| 5.11 | Blog |
 
 ---
 
@@ -71,7 +83,7 @@ No cubre el diseño visual, la arquitectura técnica ni el calendario de producc
 | 9 | Hub de entrenamiento personal | 1 | `/personal-training/` |
 | 10 | Membresías | 6 | `/membresias/` |
 | 11 | Blog | 20 | `/blog/[articulo]/` |
-| | **Total** | **148** | |
+| | Total | 148 | |
 
 ---
 
@@ -84,10 +96,10 @@ El encabezado permanece fijo en la parte superior. Lleva cinco elementos:
 | Elemento | Qué hace |
 |---|---|
 | Logotipo | Regresa al inicio |
-| **Tu Sports World** | Abre el panel de navegación |
-| **Diseña tu experiencia** | Abre el cuestionario |
-| **Pregúntale a BES** | Abre el asistente |
-| **Agenda tu visita** | Lleva al agendado. Botón rojo |
+| Tu Sports World | Abre el panel de navegación |
+| Diseña tu experiencia | Abre el cuestionario |
+| Pregúntale a BES | Abre el asistente |
+| Agenda tu visita | Lleva al agendado. Botón rojo |
 
 Los tres elementos de en medio son rutas paralelas: el usuario elige la que prefiera. Ninguna tiene prioridad sobre las otras.
 
@@ -121,9 +133,9 @@ Los botones del cuerpo de la página cambian. Tres factores los determinan: el a
 
 | Estado del usuario | Botones |
 |---|---|
-| **No ha contestado el cuestionario** | «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada» · «Artículos o información útil» · botones propios de la página |
-| **Ya lo contestó y navega dentro de su experiencia** | Solo los botones propios de la página |
-| **Ya lo contestó pero llegó por otra vía** | «Volver a tu experiencia ideal» · «Artículos o información útil» · botones propios de la página |
+| No ha contestado el cuestionario | «Tu Club ideal» · «Diseña tu experiencia» · «Agenda tu visita guiada» · «Artículos o información útil» · botones propios de la página |
+| Ya lo contestó y navega dentro de su experiencia | Solo los botones propios de la página |
+| Ya lo contestó pero llegó por otra vía | «Volver a tu experiencia ideal» · «Artículos o información útil» · botones propios de la página |
 
 ### 4.2 Reglas de aparición
 
