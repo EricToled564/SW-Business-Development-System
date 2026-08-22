@@ -347,7 +347,6 @@ En caso de discrepancia entre este dossier y la documentación publicada, preval
 | **Pagaré por el importe total a recibir** ($165,000) | Título de crédito a nombre del participante. Permite exigir el pago por la vía mercantil ejecutiva |
 | **Instrucción de desembolso condicionado** | Consigna que la transferencia se ejecuta contra la firma del contrato con Sports World, y no antes |
 | **CFDI de retenciones**, en su caso | Constancia fiscal por los intereses percibidos |
-| **A solicitud del participante** | Obligado solidario en lo personal · Cesión en garantía de los derechos de cobro, sujeta a la autorización previa y por escrito del cliente (Contrato, Cláusula Vigésima Tercera, inciso b) |
 
 Ambas participaciones son idénticas y del mismo rango. Ninguna goza de preferencia sobre la otra en el cobro y ambas reciben los mismos términos. Toda protección adicional que se pacte con un participante se ofrece igualmente al otro.
 
@@ -382,7 +381,6 @@ Respecto del paso 6: cada quince días se remite un reporte de una cuartilla con
 | **Aceptación tácita** | Situación en la que, por no haberse formulado observaciones dentro del plazo convenido, la entrega se tiene por aprobada |
 | **Interés moratorio** | Penalización que corre cuando el pago se realiza después de la fecha límite |
 | **Factoraje financiero** | Operación por la cual una entidad especializada anticipa el importe de una factura por cobrar, a cambio de un descuento, y se encarga después de cobrarla al deudor |
-| **Obligado solidario** | Persona que responde de la deuda con su propio patrimonio en caso de incumplimiento del deudor principal |
 | **CETES** | Certificados de la Tesorería. Deuda del Gobierno Federal a plazo fijo; referencia de inversión de bajo riesgo en México |
 | **CFDI** | Comprobante fiscal digital, la factura electrónica oficial del SAT |
 | **ISR** | Impuesto Sobre la Renta |
