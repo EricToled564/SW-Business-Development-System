@@ -527,7 +527,7 @@ function renderBlocks(doc, blocks, x0, width, nested) {
 function cover(doc, W) {
   doc.rect(0, 0, doc.page.width, 232).fill(ACCENT);
   doc.font("Helvetica-Bold").fontSize(11).fillColor("#a9c8e6")
-     .text("FINAL UPGRADE AI", M, 62, { characterSpacing: 2.2 });
+     .text("FINAL UPGRADE", M, 62, { characterSpacing: 2.2 });
   doc.font("Helvetica-Bold").fontSize(31).fillColor("#ffffff")
      .text("Dossier para Inversionistas", M, 94, { width: W, lineGap: 3 });
   doc.font("Helvetica").fontSize(14).fillColor("#d3e3f2")
@@ -561,7 +561,7 @@ function cover(doc, W) {
     autoFirstPage: true,
   });
   doc.info.Title = "Dossier para Inversionistas — Préstamo puente MXN $300,000 a 90 días";
-  doc.info.Author = "Final Upgrade AI";
+  doc.info.Author = "Live Streaming Services México, S.A. de C.V. / Final Upgrade";
   doc.info.Subject = "Proyecto Sports World México · Documento confidencial";
 
   const stream = fs.createWriteStream(OUT);
@@ -578,7 +578,7 @@ function cover(doc, W) {
     doc.page.margins.bottom = 0;         // evita salto de página al escribir el pie
     if (i > 0) {
       doc.font("Helvetica").fontSize(8).fillColor(GRAY)
-         .text("Final Upgrade AI · Dossier para Inversionistas · Confidencial",
+         .text("Final Upgrade · Dossier para Inversionistas · Confidencial",
                M, doc.page.height - 40, { width: W * 0.7, lineBreak: false });
       // La portada no se numera: la página 1 es la primera de contenido.
       doc.font("Helvetica").fontSize(8).fillColor(GRAY)

@@ -9,11 +9,11 @@
 
 Reciba usted un saludo cordial y mi agradecimiento por el tiempo que dedique a estas páginas.
 
-Final Upgrade AI tiene entregada una propuesta de servicios a **Grupo Sports World**, la cadena de clubes deportivos más grande de México, con 49 clubes en operación. La propuesta consta por escrito en un contrato de 39 páginas que se encuentra en revisión del área jurídica del cliente. Su objeto es la reestructuración de la captación y la conversión comercial de la cadena. El valor total de lo propuesto asciende a **MXN $2,378,130** más IVA, de los cuales la primera etapa —la de ejecución inmediata— representa **MXN $1,441,800** más IVA.
+Final Upgrade tiene entregada una propuesta de servicios a **Grupo Sports World**, la cadena de clubes deportivos más grande de México, con 49 clubes en operación. La propuesta consta por escrito en un contrato de 39 páginas que se encuentra en revisión del área jurídica del cliente. Su objeto es la reestructuración de la captación y la conversión comercial de la cadena. El valor total de lo propuesto asciende a **MXN $2,378,130** más IVA, de los cuales la primera etapa —la de ejecución inmediata— representa **MXN $1,441,800** más IVA.
 
 La necesidad de financiamiento tiene un origen exclusivamente de calendario.
 
-El contrato no contempla anticipos; así consta expresamente en su Cláusula Novena. El cliente cubre la primera mitad al aprobar el avance de la Semana 4 y la segunda al aprobar la totalidad del trabajo en la Semana 8. En consecuencia, durante el primer mes de ejecución corresponde a Final Upgrade AI cubrir los honorarios del equipo de producción sin haber recibido contraprestación alguna.
+El contrato no contempla anticipos; así consta expresamente en su Cláusula Novena. El cliente cubre la primera mitad al aprobar el avance de la Semana 4 y la segunda al aprobar la totalidad del trabajo en la Semana 8. En consecuencia, durante el primer mes de ejecución corresponde a Final Upgrade cubrir los honorarios del equipo de producción sin haber recibido contraprestación alguna.
 
 Ese primer mes representa **MXN $300,000**, y es el monto que se solicita en préstamo.
 
@@ -29,7 +29,7 @@ Atentamente,
 
 **Eric Toledano**
 
-Final Upgrade AI
+Final Upgrade
 
 ---
 
@@ -37,7 +37,7 @@ Final Upgrade AI
 
 | Concepto | Detalle |
 |---|---|
-| **Solicitante** | Live Streaming Services México, S.A. de C.V. («Final Upgrade AI») |
+| **Solicitante** | Live Streaming Services México, S.A. de C.V. / Final Upgrade |
 | **Monto por participante** | **MXN $150,000** — dos participantes, $300,000 en total |
 | **Plazo** | **90 días naturales** |
 | **Destino de los recursos** | Las primeras cuatro semanas de producción del Proyecto Sports World |
@@ -259,7 +259,7 @@ Los intereses constituyen ingreso acumulable y causan Impuesto Sobre la Renta. S
 | Rendimiento neto efectivo | 8% | **10%** |
 | Constancia fiscal (CFDI de retenciones) | A su nombre | A su nombre |
 
-Bajo la **Opción B**, Final Upgrade AI absorbe la carga fiscal a efecto de que el rendimiento neto corresponda al 10% ofrecido. Es la estructura que se propone, y su costo adicional de $3,750 por participante se encuentra considerado en las cifras de este documento.
+Bajo la **Opción B**, Final Upgrade absorbe la carga fiscal a efecto de que el rendimiento neto corresponda al 10% ofrecido. Es la estructura que se propone, y su costo adicional de $3,750 por participante se encuentra considerado en las cifras de este documento.
 
 > **Precisión.** El deudor es una sociedad anónima ajena al sistema financiero, por lo que resulta aplicable la retención del 20% sobre intereses nominales prevista en el Artículo 135 de la Ley del Impuesto Sobre la Renta, y la sociedad la entera al SAT por cuenta del participante. El efecto final sobre la declaración anual de cada participante depende de su propia situación fiscal, por lo que corresponde confirmarlo con su contador. Este documento no constituye asesoría fiscal.
 
@@ -354,8 +354,8 @@ La firma del contrato con Sports World se espera para **finales de agosto de 202
 | **1.** Lectura del dossier y sesión de preguntas —presencial o por videoconferencia, con la demostración completa | Ambas partes | En cuanto se solicite, incluso el mismo día |
 | **2.** **Pre-aprobación**: revisión de los borradores con su abogado y firma del mutuo y del pagaré, con instrucción de transferencia condicionada | Participante | **Dentro de los 3 a 4 días siguientes a esta entrega** |
 | **3.** **Firma del contrato con Sports World** y ejecución de la transferencia | — | **Finales de agosto · Día 0** |
-| **4.** Reporte quincenal de avance con evidencia verificable | Final Upgrade AI | Días 15, 30, 45, 60 y 75 |
-| **5.** **Pago de $165,000** | Final Upgrade AI | **Día 90** |
+| **4.** Reporte quincenal de avance con evidencia verificable | Final Upgrade | Días 15, 30, 45, 60 y 75 |
+| **5.** **Pago de $165,000** | Final Upgrade | **Día 90** |
 
 **Vigencia de la pre-aprobación.** La pre-aprobación es válida **hasta el 5 de septiembre de 2026**. Si a esa fecha el contrato con Sports World no se hubiera firmado, la instrucción de transferencia queda sin efecto y la propuesta vuelve a quedar pendiente de revisión, hasta que exista una nueva fecha tentativa de firma; el participante decide entonces si renueva su pre-aprobación en los mismos términos o se retira sin costo ni obligación alguna.
 
@@ -427,7 +427,6 @@ Los tres renglones señalados como «Interno» o «Supuesto» constituyen estima
 
 | | |
 |---|---|
-| **Live Streaming Services México, S.A. de C.V.** | Agosto de 2026 |
-| **Nombre comercial** | Final Upgrade AI |
+| **Live Streaming Services México, S.A. de C.V. / Final Upgrade** | Agosto de 2026 |
 | **Destinatarios** | Dos · Documento confidencial |
 | **Contacto** | eric@finalupgrade.ai |
