@@ -17,7 +17,7 @@ El contrato no contempla anticipos; así consta expresamente en su Cláusula Nov
 
 Ese primer mes representa **MXN $300,000**, y es el monto que se solicita en préstamo.
 
-No se solicita capital de riesgo para un proyecto en formación. Se solicita un puente de cuatro semanas sobre un ingreso cuantificado, calendarizado y documentado en un contrato. Conforme a ese mismo instrumento, los recursos con los que se cubrirá la devolución ingresan alrededor del **día 45**, en tanto que el vencimiento del préstamo ocurre el **día 90**: existen cuarenta y cinco días de holgura entre ambas fechas.
+No se solicita capital de riesgo para un proyecto en formación. Se solicita un puente de doce semanas —los 90 días del préstamo— sobre un ingreso cuantificado, calendarizado y documentado en un contrato. Conforme a ese mismo instrumento, los recursos con los que se cubrirá la devolución ingresan alrededor del **día 45**, en tanto que el vencimiento del préstamo ocurre el **día 90**: existen cuarenta y cinco días de holgura entre ambas fechas.
 
 Corresponde asimismo señalar el punto que permanece abierto: **el contrato con Sports World no ha sido firmado.** Se encuentra entregado y en revisión. Por esa razón la operación se estructura de modo que el desembolso quede condicionado a dicha firma.
 
@@ -207,7 +207,7 @@ Al día 73 —diecisiete días antes del vencimiento— se habrán cobrado ambas
 | **Costo total del financiamiento** | **$30,000** |
 | **Representa** | **2.1% del ingreso · 3.5% del margen** |
 
-Es el precio de iniciar la ejecución cuatro semanas antes del primer cobro.
+Es el precio de iniciar la ejecución antes del primer cobro.
 
 ### Fuentes secundarias
 
