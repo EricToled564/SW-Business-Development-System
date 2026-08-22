@@ -48,7 +48,7 @@ Final Upgrade AI
 | **Fuente de pago** | Primera exhibición del contrato con Sports World: **$836,244**, con ingreso previsto alrededor del día 45 |
 | **Cobertura de esa exhibición** | **2.53 veces** el importe adeudado a ambos participantes |
 | **Si el cliente demora la aprobación** | La Cláusula Décima del contrato dispone que, a falta de observaciones dentro de 5 días hábiles, la entrega **se tiene por aceptada**, incluida la exigibilidad del pago |
-| **Naturaleza de la obligación** | La obligación de devolución corresponde a Live Streaming Services México, S.A. de C.V. y **es independiente del cumplimiento de Sports World**. Consta en pagaré |
+| **Naturaleza de la obligación** | La obligación de devolución corresponde a Live Streaming Services México, S.A. de C.V. y **es independiente del cumplimiento de Sports World**. Consta en pagaré **avalado en lo personal por Eric Toledano** |
 | **Naturaleza del instrumento** | No constituye un depósito bancario, no cuenta con garantía gubernamental ni forma parte del sistema financiero |
 
 ### Fechas relevantes
@@ -179,7 +179,7 @@ Las horas de dedicación por rol proceden del plan de ejecución del proyecto, d
 Dos precisiones sobre el cuadro anterior:
 
 1. **Las tarifas por hora constituyen estimaciones de planeación y no contratos suscritos.** El modelo de contratación del proyecto es de precio cerrado por entregable y no por hora abierta; las horas indicadas sirven para dimensionar el monto y corresponden a valores de mercado para perfiles de este nivel en México durante 2026. Toda diferencia a la baja se aplica a la reserva.
-2. **Los recursos no se destinan a la adquisición de activos realizables.** Se aplican a honorarios profesionales. El respaldo de la operación no es un bien físico, sino el derecho de cobro frente a Sports World y el patrimonio de Live Streaming Services México, S.A. de C.V.
+2. **Los recursos no se destinan a la adquisición de activos realizables.** Se aplican a honorarios profesionales. El respaldo de la operación no es un bien físico: son el derecho de cobro frente a Sports World y la obligación personal de quien avala el pagaré.
 
 ---
 
@@ -346,6 +346,7 @@ En caso de discrepancia entre este dossier y la documentación publicada, preval
 | **Contrato de mutuo mercantil con interés** | Establece monto, plazo, tasa, fecha de pago y obligaciones de ambas partes |
 | **Pagaré por el importe total a recibir** ($165,000) | Título de crédito a nombre del participante. Permite exigir el pago por la vía mercantil ejecutiva |
 | **Instrucción de desembolso condicionado** | Consigna que la transferencia se ejecuta contra la firma del contrato con Sports World, y no antes |
+| **Aval en el pagaré y obligado solidario en el mutuo** | **Eric Toledano** responde del pago con su patrimonio personal si la sociedad no cumple. El aval se rige por los Artículos 109 y 174 de la Ley General de Títulos y Operaciones de Crédito; la obligación solidaria, por el contrato de mutuo. Se suscriben ambas para que queden abiertas las dos vías de cobro |
 | **CFDI de retenciones**, en su caso | Constancia fiscal por los intereses percibidos |
 
 Ambas participaciones son idénticas y del mismo rango. Ninguna goza de preferencia sobre la otra en el cobro y ambas reciben los mismos términos. Toda protección adicional que se pacte con un participante se ofrece igualmente al otro.
@@ -375,6 +376,8 @@ Respecto del paso 6: cada quince días se remite un reporte de una cuartilla con
 | Término | Significado en este documento |
 |---|---|
 | **Mutuo** | Denominación legal del préstamo de dinero. Un contrato de mutuo es un contrato de préstamo |
+| **Aval** | Persona que garantiza el pago de un pagaré con su propio patrimonio. Responde igual que el deudor principal y se le puede cobrar directamente |
+| **Obligado solidario** | La misma figura, aplicada al contrato de préstamo en lugar del pagaré |
 | **Pagaré** | Documento en el que se reconoce una deuda y se promete su pago en fecha determinada. Admite cobro por una vía judicial expedita, sin discutir el origen de la obligación |
 | **Exhibición** | Cada una de las partes en que se divide un pago. «Dos exhibiciones del 50%» significa pago en dos mitades |
 | **Exigible** | Que puede reclamarse legalmente. Una factura entregada no es exigible hasta cumplirse la condición pactada |
