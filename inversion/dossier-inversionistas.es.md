@@ -364,7 +364,6 @@ Con toda claridad, porque importa:
 - **No es un depósito bancario** y no está protegido por el IPAB ni por ninguna garantía gubernamental.
 - **No es un producto del sistema financiero** ni está supervisado por la CNBV o la CONDUSEF.
 - **No es capital garantizado.** Existe la posibilidad de perder parte o la totalidad de lo prestado.
-- **No es un instrumento para dinero que vaya a necesitarse en los próximos meses**, ni para recursos destinados a gastos médicos, al patrimonio de retiro o a compromisos ya adquiridos. Un préstamo a 90 días a una empresa pequeña corresponde únicamente a recursos que puedan mantenerse inmovilizados ese plazo **y cuya pérdida, en el peor de los escenarios, no alteraría la situación de quien los prestó**.
 
 Le agradeceré que consulte esta decisión con su contador, con su abogado o con la persona de su confianza que lleve sus asuntos financieros, y que se tome el tiempo que considere necesario. De mi parte no hay ninguna prisa.
 
