@@ -59,8 +59,6 @@ Final Upgrade AI
 | **Día 45** | Ingreso de la primera exhibición: **$836,244** |
 | **Día 90** | Devolución de **$165,000** a cada participante |
 
-Entre la fecha de ingreso de los recursos y la de vencimiento median **45 días de holgura**.
-
 ---
 
 ## 3 · El proyecto que origina la operación
@@ -112,8 +110,6 @@ Conviene una analogía. Sports World cuenta con un establecimiento amplio, bien 
 | **Firma del contrato** | En revisión del área jurídica de Sports World. **No firmado** |
 | Designación de responsables por área en Sports World | A cargo del cliente |
 | Entrega de accesos técnicos a sus sistemas | A cargo del cliente |
-
-El estado de la contratación es, por tanto, el de una propuesta avanzada y documentada que no ha sido suscrita.
 
 La operación se estructura en consecuencia:
 
@@ -201,8 +197,6 @@ La primera exhibición del contrato con Sports World:
 | **Importe adeudado a ambos participantes** | **$330,000.00** |
 | **Cobertura** | **2.18 veces** |
 
-El segundo renglón merece mención. El IVA no es recurso de la empresa: se recauda y se entera a la autoridad. La cifra relevante para efectos de cobertura es, por tanto, **$720,900**, y aun así cubre más de dos veces el importe adeudado.
-
 ### Cobertura acumulada
 
 Al día 73 —diecisiete días antes del vencimiento— se habrán cobrado ambas exhibiciones:
@@ -223,7 +217,7 @@ Al día 73 —diecisiete días antes del vencimiento— se habrán cobrado ambas
 | **Costo total del financiamiento** | **$30,000** |
 | **Representa** | **2.1% del ingreso · 3.5% del margen** |
 
-El costo del financiamiento equivale al 3.5% del margen del proyecto. No compromete la operación: corresponde al precio de iniciar la ejecución cuatro semanas antes del primer cobro.
+Es el precio de iniciar la ejecución cuatro semanas antes del primer cobro.
 
 ### Fuentes secundarias
 

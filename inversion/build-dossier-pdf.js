@@ -200,20 +200,46 @@ function newSection(doc) {
   if (!atPageTop(doc)) doc.addPage();
 }
 
-function colWidths(doc, block, total) {
+function colWidths(doc, block, total, size) {
   const cols = block.header.length;
-  // Peso de cada columna = largo máximo de su contenido, acotado para que
-  // ninguna columna acapare el ancho ni quede ilegiblemente angosta.
-  const weights = block.header.map((h, c) => {
-    let max = plain(h).length;
-    block.rows.forEach((r) => { max = Math.max(max, plain(r[c] || "").length); });
-    return Math.min(Math.max(max, 6), 62);
-  });
-  const sum = weights.reduce((a, b) => a + b, 0);
-  const min = Math.min(58, total / (cols * 1.9));
-  let widths = weights.map((w) => Math.max(min, (w / sum) * total));
-  const scale = total / widths.reduce((a, b) => a + b, 0);
-  return widths.map((w) => w * scale);
+  const s = size || BODY - 2;
+
+  // Piso duro por columna: la palabra más ancha que contiene. Un importe como
+  // «$272,850» partido en dos renglones es un defecto, no un ajuste — y con un
+  // mínimo arbitrario en puntos era justo lo que ocurría en las tablas de
+  // muchas columnas.
+  const floors = [];
+  const weights = [];
+  for (let c = 0; c < cols; c++) {
+    const texts = [block.header[c], ...block.rows.map((r) => r[c] || "")];
+    let widest = 0, maxLen = 0;
+    texts.forEach((tx) => {
+      const str = plain(tx);
+      maxLen = Math.max(maxLen, str.length);
+      str.split(/\s+/).forEach((w) => {
+        if (!w) return;
+        doc.font("Helvetica-Bold").fontSize(s);      // la fuente más ancha en uso
+        widest = Math.max(widest, doc.widthOfString(w));
+      });
+    });
+    floors.push(widest + TPAD * 2 + 1);
+    weights.push(Math.min(Math.max(maxLen, 6), 62));
+  }
+
+  const floorSum = floors.reduce((a, b) => a + b, 0);
+  // Si ni los pisos caben, se reparte a prorrata: alguna palabra se partirá.
+  // Se avisa en consola en lugar de dejar que ocurra en silencio.
+  if (floorSum >= total) {
+    console.warn(`AVISO: la tabla «${plain(block.header[0])}…» necesita ` +
+                 `${Math.ceil(floorSum)} pt y sólo hay ${Math.floor(total)}; ` +
+                 `alguna palabra se partirá.`);
+    return floors.map((f) => (f / floorSum) * total);
+  }
+
+  // El sobrante se reparte por peso, que es el largo del contenido.
+  const leftover = total - floorSum;
+  const wSum = weights.reduce((a, b) => a + b, 0);
+  return floors.map((f, i) => f + (weights[i] / wSum) * leftover);
 }
 
 const TPAD = 7;
@@ -251,7 +277,7 @@ function tableHeight(doc, block, widths, size) {
 }
 
 function renderTable(doc, block, x0, width, size) {
-  const widths = colWidths(doc, block, width);
+  const widths = colWidths(doc, block, width, size);
   const header = block.header;
 
   const drawHeader = (continued) => {
@@ -354,7 +380,7 @@ function nextNeed(doc, next, width, size) {
   if (!next) return 0;
   if (next.type === "table") {
     const s = Math.max(8.5, size - 1.5);
-    const widths = colWidths(doc, next, width);
+    const widths = colWidths(doc, next, width, s);
     // Una tabla chica viaja entera, así que el encabezado debe reservarla toda.
     const full = tableHeight(doc, next, widths, s);
     if (full <= limitY(doc) - doc.page.margins.top) return full;
