@@ -357,17 +357,24 @@ Los borradores se preparan para su revisión por el abogado de cada participante
 
 ## 12 · Calendario y siguientes pasos
 
+La firma del contrato con Sports World se espera para **finales de agosto de 2026**, y el desembolso debe estar listo ese mismo día. De ahí que el calendario sea corto: no por premura de la operación, sino porque su fecha la fija un tercero.
+
 | Paso | Responsable | Plazo |
 |---|---|---|
-| **1.** Lectura del dossier y de la demostración | Participante | A su conveniencia |
-| **2.** Sesión de preguntas, presencial o por videoconferencia, con la demostración completa | Ambas partes | A convenir |
-| **3.** Revisión de los borradores por su abogado y su contador | Participante | 3 a 5 días |
-| **4.** Firma del mutuo y del pagaré, con instrucción de desembolso condicionado | Ambas partes | Previa a la firma con Sports World |
-| **5.** **Firma del contrato con Sports World** y ejecución de la transferencia | — | **Día 0** |
-| **6.** Reporte quincenal de avance con evidencia verificable | Final Upgrade AI | Días 15, 30, 45, 60 y 75 |
-| **7.** **Pago de $165,000** | Final Upgrade AI | **Día 90** |
+| **1.** Lectura del dossier y de la demostración | Participante | 1 a 2 días |
+| **2.** Sesión de preguntas, presencial o por videoconferencia, con la demostración completa | Ambas partes | En cuanto se solicite, incluso el mismo día |
+| **3.** Decisión de participar | Participante | **Dentro de los 3 días siguientes a esta entrega** |
+| **4.** Revisión de los borradores y firma del mutuo y del pagaré | Participante y su abogado | 1 a 2 días |
+| **5.** Instrucción de transferencia, en espera de la firma con Sports World | Participante | Al firmar |
+| **6.** **Firma del contrato con Sports World** y ejecución de la transferencia | — | **Fin de agosto · Día 0** |
+| **7.** Reporte quincenal de avance con evidencia verificable | Final Upgrade AI | Días 15, 30, 45, 60 y 75 |
+| **8.** **Pago de $165,000** | Final Upgrade AI | **Día 90** |
 
-Respecto del paso 6: cada quince días se remite un reporte de una cuartilla con el avance efectivo, las páginas publicadas, el estado de aprobación del cliente y la situación de caja.
+Sobre los pasos 3 y 4: los borradores del mutuo y del pagaré son documentos de dos y una cuartilla respectivamente, de estructura estándar, y se entregan junto con este dossier para que su abogado pueda revisarlos de inmediato. No hay nada que negociar sobre el fondo económico: monto, plazo, tasa y fecha de pago constan en el Punto 2.
+
+Sobre el paso 6: si el contrato con Sports World no se firmara en esa fecha, la instrucción de transferencia simplemente no se ejecuta y el compromiso se extingue, sin costo ni obligación para el participante.
+
+Sobre el paso 7: cada quince días se remite un reporte de una cuartilla con el avance efectivo, las páginas publicadas, el estado de aprobación del cliente y la situación de caja.
 
 ---
 
