@@ -14,17 +14,17 @@
 | **Condición para desembolsar** | Firma del contrato entre Final Upgrade AI y Grupo Sports World |
 | **Documento** | Confidencial · Agosto de 2026 · Uso exclusivo de sus destinatarios |
 
-> **Lea esto primero.** Este documento no le pide que compre acciones ni que se vuelva socio de una empresa. Le propone algo mucho más sencillo: **prestar dinero a plazo fijo, con una fecha de devolución conocida y un rendimiento conocido**. Usted no adquiere responsabilidad sobre el negocio, no responde por sus deudas y no participa en sus decisiones. Presta, y a los 90 días se le devuelve su dinero más el 10 por ciento.
+> **Antes de comenzar.** Me permito una aclaración desde la primera página, porque me parece lo más cortés: esto no es una invitación a comprar acciones ni a convertirse en socio de una empresa. Es algo bastante más sencillo — **un préstamo a plazo fijo, con fecha de devolución y rendimiento conocidos desde hoy**. Su posición sería la de acreedor: conserva íntegro el derecho a que se le pague, sin quedar involucrado en la marcha del negocio ni en sus compromisos. A los 90 días recibe su capital de vuelta, más el 10 por ciento.
 >
-> El documento está escrito para leerse de principio a fin sin conocimientos de tecnología. Cada término que pudiera resultar desconocido está explicado en el **Anexo A · Diccionario breve**, al final. Donde hay una cifra, se dice de dónde salió.
+> El documento está escrito en lenguaje llano y sin tecnicismos. Es una decisión mía y no un supuesto sobre usted: quien pide dinero prestado tiene la obligación de explicarse con claridad, no de lucir su oficio. Al final encontrará un **Anexo A · Diccionario breve** con los términos que aquí aparecen, por si en algún momento le resulta cómodo consultarlo. Y en cada cifra se indica de dónde proviene.
 
 ---
 
-## 1 · Carta a quien lee
+## 1 · Carta a los destinatarios
 
-Estimado lector:
+Reciba usted un saludo cordial.
 
-Le agradezco el tiempo que dedique a estas páginas. Voy a ser directo con usted, porque creo que es la única forma seria de pedirle dinero prestado.
+Antes que nada, le agradezco el tiempo que dedique a estas páginas. Voy a hablarle con franqueza, porque me parece la única manera respetuosa de pedirle dinero prestado.
 
 Mi empresa, Final Upgrade AI, tiene una propuesta de trabajo entregada a **Grupo Sports World**, la cadena de clubes deportivos más grande de México, con 49 clubes. La propuesta está por escrito, en un contrato completo de 39 páginas que ya está en manos del área legal de Sports World. El trabajo consiste en reconstruir la manera en que esa cadena capta y convierte a sus clientes. El valor total de lo propuesto es de **MXN $2,378,130 pesos** más IVA, de los cuales la primera etapa —la que arranca de inmediato— vale **MXN $1,441,800** más IVA.
 
@@ -42,7 +42,10 @@ En el **Punto 10** encontrará ligas a todo lo que aquí afirmo: el proyecto com
 
 Quedo a sus órdenes para cualquier pregunta, en el detalle que usted quiera.
 
+Atentamente,
+
 **Eric Toledano**
+
 Final Upgrade AI
 
 ---
@@ -77,7 +80,7 @@ Entre el día en que entra el dinero y el día en que se le paga a usted hay **4
 
 ---
 
-## 3 · Qué es este negocio, en palabras simples
+## 3 · En qué consiste el negocio
 
 Sports World es la cadena de clubes deportivos más grande de México: **49 clubes**, con albercas, canchas, entrenadores, clases y áreas infantiles. La infraestructura física es excelente. El problema no está ahí.
 
@@ -110,7 +113,7 @@ Por eso el trabajo se puede hacer en ocho semanas: **no estamos inventando el ne
 
 ## 4 · Quién es el cliente y en qué punto está la negociación
 
-Esta es la sección que decide si usted presta o no. Va sin adornos.
+Esta es, probablemente, la sección de la que dependerá su respuesta. Por eso la presento sin adornos.
 
 ### Lo que ya está hecho y es verificable
 
@@ -291,7 +294,7 @@ La referencia natural para un plazo de tres meses en México son los **CETES a 9
 
 Expresado en tasa anual para poder compararlo: 10% en tres meses equivale a **40% anual simple**, o **46.4% anual** si se reinvirtiera cuatro veces seguidas.
 
-**Y aquí va la advertencia que corresponde hacer:** ese diferencial de 6.1 veces **no es un regalo ni un descubrimiento**. Es exactamente el precio del riesgo. Los CETES los paga el Gobierno Federal y prácticamente no fallan. Este préstamo lo paga una empresa pequeña, y su capacidad de pago depende de que un cliente cumpla un contrato. Un rendimiento seis veces mayor significa, siempre, un riesgo mayor. El **Punto 9** enumera esos riesgos sin suavizarlos. Si al leerlos usted concluye que no le acomodan, la respuesta correcta es no participar, y no habrá ningún problema entre nosotros.
+**Y aquí va la advertencia que corresponde hacer:** ese diferencial de 6.1 veces **no es un regalo ni un descubrimiento**. Es exactamente el precio del riesgo. Los CETES los paga el Gobierno Federal y prácticamente no fallan. Este préstamo lo paga una empresa pequeña, y su capacidad de pago depende de que un cliente cumpla un contrato. Un rendimiento seis veces mayor significa, siempre, un riesgo mayor. El **Punto 9** enumera esos riesgos sin suavizarlos. Si al leerlos concluye que no le acomodan, no participar es una decisión enteramente razonable, y quiero decirle desde ahora que no afectaría en nada nuestra relación.
 
 ### El tratamiento fiscal
 
@@ -352,7 +355,7 @@ Este es el que hay que decir sin rodeos. **La obligación de devolverle su diner
 - La posibilidad de agregar **obligado solidario en lo personal** al pagaré, si usted lo requiere para participar.
 - La posibilidad de **ceder en garantía a su favor los derechos de cobro** de la primera exhibición del contrato con Sports World, con instrucción irrevocable de pago.
 
-Las dos últimas están sobre la mesa y son negociables. Si usted necesita cualquiera de ellas para sentirse cómodo, dígalo y se incorpora al contrato.
+Las dos últimas están sobre la mesa y son negociables. Si necesita cualquiera de ellas para participar con tranquilidad, basta con que lo diga y se incorpora al contrato.
 
 ### Lo que este instrumento NO es
 
@@ -361,13 +364,13 @@ Con toda claridad, porque importa:
 - **No es un depósito bancario** y no está protegido por el IPAB ni por ninguna garantía gubernamental.
 - **No es un producto del sistema financiero** ni está supervisado por la CNBV o la CONDUSEF.
 - **No es capital garantizado.** Existe la posibilidad de perder parte o la totalidad de lo prestado.
-- **No debe comprometer dinero que usted vaya a necesitar en los próximos meses**, ni recursos destinados a gastos médicos, a su patrimonio de retiro o a compromisos ya adquiridos. Un préstamo a 90 días a una empresa pequeña es apropiado únicamente para recursos que usted pueda mantener inmovilizados ese plazo **y cuya pérdida, en el peor escenario, no alteraría su situación**.
+- **No es un instrumento para dinero que vaya a necesitarse en los próximos meses**, ni para recursos destinados a gastos médicos, al patrimonio de retiro o a compromisos ya adquiridos. Un préstamo a 90 días a una empresa pequeña corresponde únicamente a recursos que puedan mantenerse inmovilizados ese plazo **y cuya pérdida, en el peor de los escenarios, no alteraría la situación de quien los prestó**.
 
-Le pido expresamente que consulte esta decisión con su contador, su abogado o la persona de su confianza que lleve sus asuntos financieros, y que no la tome en esta misma conversación.
+Le agradeceré que consulte esta decisión con su contador, con su abogado o con la persona de su confianza que lleve sus asuntos financieros, y que se tome el tiempo que considere necesario. De mi parte no hay ninguna prisa.
 
 ---
 
-## 10 · Cómo comprobar usted mismo lo que dice este documento
+## 10 · Cómo comprobar por su cuenta lo que dice este documento
 
 Nada de lo anterior le pide un acto de fe. Todo está en línea y usted puede revisarlo sin instalar nada, desde su computadora o su teléfono.
 
@@ -387,7 +390,7 @@ Si prefiere verlo desde el teléfono, ésta es la versión pensada para pantalla
 
 > https://erictoled564.github.io/SW-Business-Development-System/demo/movil.html
 
-> **Advertencia honesta sobre la demostración.** El cuestionario corre completo y usted puede recorrerlo entero. **La última pantalla —donde la inteligencia artificial redacta la recomendación personalizada— requiere una llave de acceso técnica que solo nosotros tenemos**, porque cada consulta tiene un costo y la demostración está publicada abiertamente. Es decir: usted verá el instrumento funcionando, pero el resultado final se lo muestro yo en persona o por videollamada, en cinco minutos. No es una falla: es cómo está configurada la demostración pública.
+> **Una aclaración sobre la demostración.** El cuestionario corre completo y usted puede recorrerlo entero. **La última pantalla —donde la inteligencia artificial redacta la recomendación personalizada— requiere una llave de acceso técnica que solo nosotros tenemos**, porque cada consulta tiene un costo y la demostración está publicada abiertamente. Es decir: usted verá el instrumento funcionando, pero el resultado final se lo muestro yo en persona o por videollamada, en cinco minutos. No es una falla: es cómo está configurada la demostración pública.
 
 ### El proyecto completo
 
@@ -445,7 +448,7 @@ Los borradores se preparan para que **su abogado los revise antes de firmar**. S
 
 ## Anexo A · Diccionario breve
 
-Términos que aparecen en este documento, explicados sin tecnicismos.
+Los términos que aparecen en el documento, con el significado que tienen en este contexto.
 
 | Término | Qué significa aquí |
 |---|---|
