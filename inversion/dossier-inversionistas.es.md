@@ -115,7 +115,7 @@ La operación se estructura en consecuencia:
 
 > Los recursos se transfieren el mismo día en que se suscriba el contrato con Sports World, y no antes. El participante firma su pagaré, deja instruida la transferencia, y ésta se ejecuta contra la firma. De no suscribirse el contrato, la operación no se perfecciona.
 
-El riesgo de que la contratación no se concrete queda así fuera de la esfera del participante. La evaluación que le corresponde es la del riesgo posterior a la firma: el de la ejecución del proyecto y el de su cobro. El **Punto 9** lo desarrolla.
+El riesgo de que la contratación no se concrete queda así fuera de la esfera del participante. La evaluación que le corresponde es la del cobro, una vez firmado el contrato, que desarrolla el **Punto 9**.
 
 ---
 
@@ -231,10 +231,6 @@ De suscribirse el contrato en su totalidad, existen ingresos adicionales comprom
 
 Estos conceptos no se incorporan al cálculo de cobertura, por depender de firmas adicionales. Se consignan porque constan cotizados en el mismo contrato y amplían el respaldo patrimonial de la empresa.
 
-### Retención de los entregables
-
-La Cláusula Décima Sexta del contrato dispone que el código fuente y los sistemas terminados se entregan a Sports World únicamente contra la liquidación total del pago. Hasta ese momento Final Upgrade AI los conserva en garantía.
-
 ---
 
 ## 8 · Rendimiento y tratamiento fiscal
@@ -259,7 +255,7 @@ La referencia natural a tres meses en México son los CETES a 91 días:
 
 Expresado en tasa anual comparable: 10% a tres meses equivale a **40% anual simple**, o a **46.4% anual** de reinvertirse en cuatro ocasiones consecutivas.
 
-Ese diferencial corresponde íntegramente al riesgo. Los CETES son obligación del Gobierno Federal. Esta operación es obligación de una empresa de dimensiones reducidas, cuya capacidad de pago depende del cumplimiento de un contrato por parte de un tercero. El **Punto 9** desarrolla los riesgos correspondientes, y su lectura es indispensable para valorar la operación en sus términos.
+Ese diferencial corresponde íntegramente al riesgo. Los CETES son obligación del Gobierno Federal. Esta operación es obligación de una empresa de dimensiones reducidas, cuya capacidad de pago depende del cumplimiento de un contrato por parte de un tercero. El **Punto 9** desarrolla el riesgo de cobro y las disposiciones que lo acotan.
 
 ### Tratamiento fiscal
 
@@ -279,57 +275,29 @@ Bajo la **Opción B**, Final Upgrade AI absorbe la carga fiscal a efecto de que 
 
 ---
 
-## 9 · Factores de riesgo y sus mitigantes
+## 9 · Riesgo de cobro y sus mitigantes
 
-Se relacionan a continuación la totalidad de los riesgos identificados, ordenados por probabilidad estimada, con las disposiciones contractuales o estructurales que los acotan.
+El riesgo relevante de esta operación es uno: que Sports World pague después de la fecha en que el pago resulte exigible. El Contrato lo acota por cuatro vías.
 
-### Riesgo 1 · Que no se suscriba el contrato con Sports World
+| Disposición del Contrato | Qué establece |
+|---|---|
+| **Cláusula Décima** | A falta de observaciones por escrito dentro de **5 días hábiles**, la entrega se tiene por aceptada para todos los efectos, **incluida la exigibilidad de los pagos**. El silencio del cliente no suspende el cobro |
+| **Cláusula Novena** | **Interés moratorio del 2% mensual** sobre saldos vencidos, y facultad de suspender los trabajos |
+| **Cláusula Décima Quinta** | Cargo por tiempo de espera de **USD $350 diarios (MXN $6,230)** cuando el retraso resulte imputable al cliente, con tope acumulado del 25% del valor del proyecto |
+| **Cláusula Décima Sexta** | El código fuente y los sistemas terminados no se transfieren sino contra la liquidación total del pago. Hasta entonces el prestador los conserva en garantía |
 
-Es el riesgo de mayor probabilidad, por corresponder al estado actual del asunto.
+A ello se suma la holgura del calendario: el pago tendría que diferirse **más de mes y medio** respecto de su fecha exigible para aproximarse al vencimiento del préstamo.
 
-**Mitigante.** El desembolso condicionado a la firma, en los términos del **Punto 4**.
+### Recurso adicional: factoraje
 
-### Riesgo 2 · Demora del cliente en aprobar el avance de la Semana 4
+Una vez que la exhibición resulta exigible —aprobada la entrega o actualizada la aceptación tácita—, la factura puede descontarse mediante **factoraje financiero**: una entidad especializada anticipa el importe de la cuenta por cobrar a cambio de un descuento y se encarga después de cobrarla al cliente. Con ello el ingreso deja de depender de la fecha en que Sports World efectivamente pague.
 
-**Mitigante.** La Cláusula Décima dispone que, a falta de observaciones por escrito dentro de **5 días hábiles**, la entrega se tiene por aceptada para todos los efectos del contrato, **incluida la exigibilidad de los pagos**. El silencio del cliente no suspende el cobro.
-
-### Riesgo 3 · Demora del cliente en la entrega de sus insumos
-
-Cinco puntos permanecen a cargo del cliente, según se consignó en el Punto 4.
-
-**Mitigante.** La Cláusula Décima Quinta establece un cargo por tiempo de espera de **USD $350 diarios (MXN $6,230)** a cargo de Sports World cuando el retraso le resulte imputable, con tope acumulado del 25% del valor del proyecto, además de la extensión de plazos sin responsabilidad para el prestador.
-
-### Riesgo 4 · Demora del cliente en el pago
-
-**Mitigante.** El contrato establece un **interés moratorio del 2% mensual** sobre saldos vencidos y faculta la suspensión de los trabajos. A ello se agrega la holgura de 45 días: el pago tendría que diferirse más de mes y medio para aproximarse a la fecha de vencimiento del préstamo.
-
-### Riesgo 5 · Sobrecosto de producción
-
-**Mitigante.** La contratación de especialistas se pacta a precio cerrado contra entregable y no por hora abierta. El presupuesto de las primeras cuatro semanas contempla una reserva de $7,550, y el margen bruto estimado de 59.2% absorbe desviaciones.
-
-### Riesgo 6 · Rescisión del contrato durante la ejecución
-
-**Mitigante.** El contrato exige notificación previa y **5 días hábiles para subsanar** antes de que cualquiera de las partes pueda rescindir. El trabajo entregado y aprobado se cubre, y los entregables no se transfieren sin pago total.
-
-### Riesgo 7 · Riesgo de crédito del deudor
-
-Es el riesgo de fondo de la operación. **La obligación de devolución corresponde a Live Streaming Services México, S.A. de C.V. y no a Sports World.** Se trata de una obligación incondicional: subsiste con independencia del resultado del proyecto y del cumplimiento del cliente. Su valor, sin embargo, es el del patrimonio que la respalda.
-
-**Mitigantes.**
-
-- Un **pagaré** a nombre del participante. Por su carácter de título ejecutivo, permite el cobro por la vía mercantil ejecutiva, procedimiento más expedito que el juicio ordinario y que no exige acreditar el fondo del negocio.
-- La incorporación de **obligado solidario en lo personal** al pagaré, a solicitud del participante.
-- La **cesión en garantía de los derechos de cobro** de la primera exhibición del contrato con Sports World, con instrucción irrevocable de pago.
-
-Las dos últimas se encuentran disponibles y son materia de negociación. De requerirse cualquiera de ellas, se incorpora al contrato.
+La operación requiere la autorización previa y por escrito del cliente, conforme a la Cláusula Vigésima Tercera, inciso b), del Contrato. Su costo corre por cuenta del deudor y no altera el importe que recibe el participante.
 
 ### Naturaleza del instrumento
 
 - **No constituye un depósito bancario** ni se encuentra protegido por el IPAB o por garantía gubernamental alguna.
 - **No constituye un producto del sistema financiero** ni está supervisado por la CNBV o la CONDUSEF.
-- **No constituye capital garantizado.** Existe la posibilidad de pérdida parcial o total del importe prestado.
-
-Se recomienda consultar la operación con su contador, con su abogado o con la persona de su confianza que atienda sus asuntos financieros, y disponer del tiempo que se estime necesario para su evaluación.
 
 ---
 
@@ -379,7 +347,7 @@ En caso de discrepancia entre este dossier y la documentación publicada, preval
 | **Pagaré por el importe total a recibir** ($165,000) | Título de crédito a nombre del participante. Permite exigir el pago por la vía mercantil ejecutiva |
 | **Instrucción de desembolso condicionado** | Consigna que la transferencia se ejecuta contra la firma del contrato con Sports World, y no antes |
 | **CFDI de retenciones**, en su caso | Constancia fiscal por los intereses percibidos |
-| **A solicitud del participante** | Obligado solidario en lo personal · Cesión en garantía de los derechos de cobro |
+| **A solicitud del participante** | Obligado solidario en lo personal · Cesión en garantía de los derechos de cobro, sujeta a la autorización previa y por escrito del cliente (Contrato, Cláusula Vigésima Tercera, inciso b) |
 
 Ambas participaciones son idénticas y del mismo rango. Ninguna goza de preferencia sobre la otra en el cobro y ambas reciben los mismos términos. Toda protección adicional que se pacte con un participante se ofrece igualmente al otro.
 
@@ -413,6 +381,7 @@ Respecto del paso 6: cada quince días se remite un reporte de una cuartilla con
 | **Exigible** | Que puede reclamarse legalmente. Una factura entregada no es exigible hasta cumplirse la condición pactada |
 | **Aceptación tácita** | Situación en la que, por no haberse formulado observaciones dentro del plazo convenido, la entrega se tiene por aprobada |
 | **Interés moratorio** | Penalización que corre cuando el pago se realiza después de la fecha límite |
+| **Factoraje financiero** | Operación por la cual una entidad especializada anticipa el importe de una factura por cobrar, a cambio de un descuento, y se encarga después de cobrarla al deudor |
 | **Obligado solidario** | Persona que responde de la deuda con su propio patrimonio en caso de incumplimiento del deudor principal |
 | **CETES** | Certificados de la Tesorería. Deuda del Gobierno Federal a plazo fijo; referencia de inversión de bajo riesgo en México |
 | **CFDI** | Comprobante fiscal digital, la factura electrónica oficial del SAT |
