@@ -34,7 +34,7 @@ Ese primer mes representa **MXN $300,000**, y es el monto que se solicita en pr�
 
 No se solicita capital de riesgo para un proyecto en formación. Se solicita un puente de cuatro semanas sobre un ingreso cuantificado, calendarizado y documentado en un contrato. Conforme a ese mismo instrumento, los recursos con los que se cubrirá la devolución ingresan alrededor del **día 45**, en tanto que el vencimiento del préstamo ocurre el **día 90**: existen cuarenta y cinco días de holgura entre ambas fechas.
 
-Corresponde asimismo señalar el punto que permanece abierto: **el contrato con Sports World no ha sido firmado.** Se encuentra entregado y en revisión. Por esa razón la operación se estructura de modo que el desembolso quede condicionado a dicha firma. De no producirse, no hay préstamo y los recursos permanecen en poder de quien los habría de prestar.
+Corresponde asimismo señalar el punto que permanece abierto: **el contrato con Sports World no ha sido firmado.** Se encuentra entregado y en revisión. Por esa razón la operación se estructura de modo que el desembolso quede condicionado a dicha firma.
 
 El **Punto 10** contiene las ligas a la totalidad de la documentación aquí referida: el proyecto completo, el contrato, la auditoría del sitio actual de Sports World y una demostración funcional accesible desde cualquier teléfono. Toda afirmación de este documento puede contrastarse contra esas fuentes.
 
