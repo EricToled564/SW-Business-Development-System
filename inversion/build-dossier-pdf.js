@@ -288,6 +288,11 @@ function placeParagraph(doc, text, x, width, size) {
   const total = Math.max(1, Math.round(h / lineH));
   const avail = limitY(doc) - doc.y;
 
+  // Un párrafo de una o dos líneas —«Atentamente,», una entrada, un pie de
+  // cuadro— no debe quedar solo al pie, separado de lo que introduce: se le
+  // exige espacio para sí y para el primer renglón de lo que sigue.
+  if (total <= 2) { room(doc, h + lineH); renderRuns(doc, text, x, width, size, INK); return; }
+
   if (h > avail && !atPageTop(doc)) {
     const fit = Math.floor(avail / lineH);
     if (fit < 2 || total - fit < 2) doc.addPage();
