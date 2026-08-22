@@ -119,14 +119,14 @@ function mdBlocks(raw) {
 // Divide texto con **negritas**, `código` y _cursivas_ en corridas tipográficas.
 function inlineRuns(text) {
   const runs = [];
-  const re = /(\*\*[^*]+\*\*|`[^`]+`|_[^_]+_)/g;
+  const re = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`|_[^_]+_)/g;
   let last = 0, m;
   while ((m = re.exec(text))) {
     if (m.index > last) runs.push({ text: text.slice(last, m.index) });
     const tok = m[0];
     if (tok.startsWith("**")) runs.push({ text: tok.slice(2, -2), bold: true });
     else if (tok.startsWith("`")) runs.push({ text: tok.slice(1, -1), code: true });
-    else runs.push({ text: tok.slice(1, -1), italic: true });
+    else runs.push({ text: tok.slice(1, -1), italic: true });   // *cursiva* y _cursiva_
     last = m.index + tok.length;
   }
   if (last < text.length) runs.push({ text: text.slice(last) });
@@ -141,7 +141,7 @@ function fontFor(run) {
 }
 
 function plain(text) {
-  return text.replace(/\*\*/g, "").replace(/`/g, "").replace(/_/g, "");
+  return text.replace(/\*/g, "").replace(/`/g, "").replace(/_/g, "");
 }
 
 // ---------------------------------------------------------------- render
@@ -171,7 +171,7 @@ function measureRuns(doc, text, width, size) {
 
 // ------------------------------------------------- reglas de paginación
 //
-// 1. Cada sección de primer nivel (##) abre página.
+// 1. Las secciones fluyen; se separan con filete y aire, no con salto.
 // 2. Ningún encabezado queda al pie: si no caben él y las primeras líneas de
 //    su contenido, se manda entero a la página siguiente (keep-with-next).
 // 3. Sin líneas viudas ni huérfanas: un párrafo parte sólo si deja al menos
@@ -194,10 +194,6 @@ function atPageTop(doc) {
 function room(doc, need) {
   if (doc.y + need > limitY(doc) && !atPageTop(doc)) { doc.addPage(); return true; }
   return false;
-}
-
-function newSection(doc) {
-  if (!atPageTop(doc)) doc.addPage();
 }
 
 function colWidths(doc, block, total, size) {
@@ -430,7 +426,10 @@ function renderBlocks(doc, blocks, x0, width, nested) {
         const sizes = { 1: 20, 2: 15.5, 3: 12.5, 4: 11.5 };
         const s = sizes[b.level] || 11.5;
         if (b.level <= 2 && !nested) {
-          newSection(doc);                      // regla 1: cada sección abre página
+          // Las secciones fluyen, separadas por aire y por su filete. Abrir
+          // página para cada una producía páginas ocupadas al 20%.
+          doc.moveDown(atPageTop(doc) ? 0 : 1.1);
+          room(doc, s * 2.2 + nextNeed(doc, blocks, bi + 1, width, size));
         } else {
           // Regla 2 (keep-with-next): el encabezado arrastra consigo el inicio
           // real de su contenido; si no caben juntos, se va entero a la

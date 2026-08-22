@@ -51,14 +51,6 @@ Final Upgrade AI
 | **Naturaleza de la obligación** | La obligación de devolución corresponde a Live Streaming Services México, S.A. de C.V. y **es independiente del cumplimiento de Sports World**. Consta en pagaré **avalado en lo personal por Eric Toledano** |
 | **Naturaleza del instrumento** | No constituye un depósito bancario, no cuenta con garantía gubernamental ni forma parte del sistema financiero |
 
-### Fechas relevantes
-
-| Día | Acontecimiento |
-|---|---|
-| **Día 0** | Firma del contrato con Sports World. Firma del pagaré y desembolso |
-| **Día 45** | Ingreso de la primera exhibición: **$836,244** |
-| **Día 90** | Devolución de **$165,000** a cada participante |
-
 ---
 
 ## 3 · El proyecto que origina la operación
@@ -114,8 +106,6 @@ Conviene una analogía. Sports World cuenta con un establecimiento amplio, bien 
 La operación se estructura en consecuencia:
 
 > Los recursos se transfieren el mismo día en que se suscriba el contrato con Sports World, y no antes. El participante firma su pagaré, deja instruida la transferencia, y ésta se ejecuta contra la firma. De no suscribirse el contrato, la operación no se perfecciona.
-
-El riesgo de que la contratación no se concrete queda así fuera de la esfera del participante. La evaluación que le corresponde es la del cobro, una vez firmado el contrato, que desarrolla el **Punto 9**.
 
 ---
 
@@ -357,24 +347,21 @@ Los borradores se preparan para su revisión por el abogado de cada participante
 
 ## 12 · Calendario y siguientes pasos
 
-La firma del contrato con Sports World se espera para **finales de agosto de 2026**, y el desembolso debe estar listo ese mismo día. De ahí que el calendario sea corto: no por premura de la operación, sino porque su fecha la fija un tercero.
+La firma del contrato con Sports World se espera para **finales de agosto de 2026**, y el desembolso debe quedar listo desde antes. Por eso lo que se solicita en estos días no es el desembolso, sino la **pre-aprobación**: la firma del mutuo y del pagaré con la instrucción de transferencia condicionada, que sólo se ejecuta si la firma con Sports World ocurre.
 
 | Paso | Responsable | Plazo |
 |---|---|---|
-| **1.** Lectura del dossier y de la demostración | Participante | 1 a 2 días |
-| **2.** Sesión de preguntas, presencial o por videoconferencia, con la demostración completa | Ambas partes | En cuanto se solicite, incluso el mismo día |
-| **3.** Decisión de participar | Participante | **Dentro de los 3 días siguientes a esta entrega** |
-| **4.** Revisión de los borradores y firma del mutuo y del pagaré | Participante y su abogado | 1 a 2 días |
-| **5.** Instrucción de transferencia, en espera de la firma con Sports World | Participante | Al firmar |
-| **6.** **Firma del contrato con Sports World** y ejecución de la transferencia | — | **Fin de agosto · Día 0** |
-| **7.** Reporte quincenal de avance con evidencia verificable | Final Upgrade AI | Días 15, 30, 45, 60 y 75 |
-| **8.** **Pago de $165,000** | Final Upgrade AI | **Día 90** |
+| **1.** Lectura del dossier y sesión de preguntas —presencial o por videoconferencia, con la demostración completa | Ambas partes | En cuanto se solicite, incluso el mismo día |
+| **2.** **Pre-aprobación**: revisión de los borradores con su abogado y firma del mutuo y del pagaré, con instrucción de transferencia condicionada | Participante | **Dentro de los 3 a 4 días siguientes a esta entrega** |
+| **3.** **Firma del contrato con Sports World** y ejecución de la transferencia | — | **Finales de agosto · Día 0** |
+| **4.** Reporte quincenal de avance con evidencia verificable | Final Upgrade AI | Días 15, 30, 45, 60 y 75 |
+| **5.** **Pago de $165,000** | Final Upgrade AI | **Día 90** |
 
-Sobre los pasos 3 y 4: los borradores del mutuo y del pagaré son documentos de dos y una cuartilla respectivamente, de estructura estándar, y se entregan junto con este dossier para que su abogado pueda revisarlos de inmediato. No hay nada que negociar sobre el fondo económico: monto, plazo, tasa y fecha de pago constan en el Punto 2.
+**Vigencia de la pre-aprobación.** La pre-aprobación es válida **hasta el 5 de septiembre de 2026**. Si a esa fecha el contrato con Sports World no se hubiera firmado, la instrucción de transferencia queda sin efecto y la propuesta vuelve a quedar pendiente de revisión, hasta que exista una nueva fecha tentativa de firma; el participante decide entonces si renueva su pre-aprobación en los mismos términos o se retira sin costo ni obligación alguna.
 
-Sobre el paso 6: si el contrato con Sports World no se firmara en esa fecha, la instrucción de transferencia simplemente no se ejecuta y el compromiso se extingue, sin costo ni obligación para el participante.
+Sobre el paso 2: los borradores del mutuo y del pagaré son documentos de dos y una cuartilla respectivamente, de estructura estándar, y se entregan junto con este dossier para que su abogado pueda revisarlos de inmediato. No hay nada que negociar sobre el fondo económico: monto, plazo, tasa y fecha de pago constan en el Punto 2.
 
-Sobre el paso 7: cada quince días se remite un reporte de una cuartilla con el avance efectivo, las páginas publicadas, el estado de aprobación del cliente y la situación de caja.
+Sobre el paso 4: cada quince días se remite un reporte de una cuartilla con el avance efectivo, las páginas publicadas, el estado de aprobación del cliente y la situación de caja.
 
 ---
 
