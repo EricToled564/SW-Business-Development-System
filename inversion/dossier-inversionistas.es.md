@@ -15,8 +15,6 @@
 | **Documento** | Confidencial · Agosto de 2026 · Uso exclusivo de sus destinatarios |
 
 > **Nota preliminar.** La operación que se describe en estas páginas es un préstamo a plazo fijo, con fecha de devolución y rendimiento determinados desde su origen. No comprende la adquisición de acciones ni la incorporación como socio: quien participa lo hace en calidad de acreedor y conserva íntegro su derecho de cobro, sin quedar vinculado a la marcha del negocio.
->
-> El documento está redactado en lenguaje llano y sin tecnicismos, por ser ésa la obligación de quien solicita un préstamo. Al final se incluye un **Anexo A · Glosario** con los términos empleados, y cada cifra indica su fuente.
 
 ---
 
