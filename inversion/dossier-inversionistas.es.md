@@ -1,28 +1,13 @@
 # Dossier para Inversionistas
 ## Préstamo puente de MXN $300,000 a 90 días · Proyecto Sports World México
 
-| Ficha de la operación | |
-|---|---|
-| **Solicitante** | Final Upgrade AI |
-| **Instrumento** | Mutuo mercantil con interés, documentado con pagaré |
-| **Monto total** | **MXN $300,000.00** — dos participaciones espejo de $150,000.00 |
-| **Plazo** | **90 días naturales** contados desde el desembolso |
-| **Rendimiento** | **10% sobre el capital**, pagadero en una sola exhibición al vencimiento |
-| **Devolución por cada $150,000** | **$165,000.00** al día 90 |
-| **Destino** | Las primeras cuatro semanas de producción del Proyecto Sports World |
-| **Fuente de pago** | Primera exhibición del contrato con Sports World: **MXN $836,244.00** |
-| **Condición para el desembolso** | Firma del contrato entre Final Upgrade AI y Grupo Sports World |
-| **Documento** | Confidencial · Agosto de 2026 · Uso exclusivo de sus destinatarios |
-
 > **Nota preliminar.** La operación que se describe en estas páginas es un préstamo a plazo fijo, con fecha de devolución y rendimiento determinados desde su origen. No comprende la adquisición de acciones ni la incorporación como socio: quien participa lo hace en calidad de acreedor y conserva íntegro su derecho de cobro, sin quedar vinculado a la marcha del negocio.
 
 ---
 
 ## 1 · Carta de presentación
 
-Reciba usted un saludo cordial.
-
-Agradezco de antemano el tiempo que dedique a la lectura de este documento.
+Reciba usted un saludo cordial y mi agradecimiento por el tiempo que dedique a estas páginas.
 
 Final Upgrade AI tiene entregada una propuesta de servicios a **Grupo Sports World**, la cadena de clubes deportivos más grande de México, con 49 clubes en operación. La propuesta consta por escrito en un contrato de 39 páginas que se encuentra en revisión del área jurídica del cliente. Su objeto es la reestructuración de la captación y la conversión comercial de la cadena. El valor total de lo propuesto asciende a **MXN $2,378,130** más IVA, de los cuales la primera etapa —la de ejecución inmediata— representa **MXN $1,441,800** más IVA.
 
@@ -36,7 +21,7 @@ No se solicita capital de riesgo para un proyecto en formación. Se solicita un 
 
 Corresponde asimismo señalar el punto que permanece abierto: **el contrato con Sports World no ha sido firmado.** Se encuentra entregado y en revisión. Por esa razón la operación se estructura de modo que el desembolso quede condicionado a dicha firma.
 
-El **Punto 10** contiene las ligas a la totalidad de la documentación aquí referida: el proyecto completo, el contrato, la auditoría del sitio actual de Sports World y una demostración funcional accesible desde cualquier teléfono. Toda afirmación de este documento puede contrastarse contra esas fuentes.
+Toda afirmación de este documento puede contrastarse contra las fuentes publicadas que se relacionan en el **Punto 10**, incluida una demostración funcional del producto.
 
 Quedo a sus órdenes para ampliar cualquier punto en el detalle que considere conveniente.
 
@@ -52,8 +37,10 @@ Final Upgrade AI
 
 | Concepto | Detalle |
 |---|---|
+| **Solicitante** | Live Streaming Services México, S.A. de C.V. («Final Upgrade AI») |
 | **Monto por participante** | **MXN $150,000** — dos participantes, $300,000 en total |
 | **Plazo** | **90 días naturales** |
+| **Destino de los recursos** | Las primeras cuatro semanas de producción del Proyecto Sports World |
 | **Devolución** | **$165,000** en un solo pago al día 90: capital de $150,000 más rendimiento de $15,000 |
 | **Rendimiento** | **10% sobre el capital** en 90 días |
 | **Instrumentación** | Contrato de mutuo mercantil con interés **y pagaré** a nombre de cada participante |
@@ -61,7 +48,7 @@ Final Upgrade AI
 | **Fuente de pago** | Primera exhibición del contrato con Sports World: **$836,244**, con ingreso previsto alrededor del día 45 |
 | **Cobertura de esa exhibición** | **2.53 veces** el importe adeudado a ambos participantes |
 | **Si el cliente demora la aprobación** | La Cláusula Décima del contrato dispone que, a falta de observaciones dentro de 5 días hábiles, la entrega **se tiene por aceptada**, incluida la exigibilidad del pago |
-| **Naturaleza de la obligación** | La obligación de devolución corresponde a Final Upgrade AI y **es independiente del cumplimiento de Sports World**. Consta en pagaré |
+| **Naturaleza de la obligación** | La obligación de devolución corresponde a Live Streaming Services México, S.A. de C.V. y **es independiente del cumplimiento de Sports World**. Consta en pagaré |
 | **Naturaleza del instrumento** | No constituye un depósito bancario, no cuenta con garantía gubernamental ni forma parte del sistema financiero |
 
 ### Fechas relevantes
@@ -196,7 +183,7 @@ Las horas de dedicación por rol proceden del plan de ejecución del proyecto, d
 Dos precisiones sobre el cuadro anterior:
 
 1. **Las tarifas por hora constituyen estimaciones de planeación y no contratos suscritos.** El modelo de contratación del proyecto es de precio cerrado por entregable y no por hora abierta; las horas indicadas sirven para dimensionar el monto y corresponden a valores de mercado para perfiles de este nivel en México durante 2026. Toda diferencia a la baja se aplica a la reserva.
-2. **Los recursos no se destinan a la adquisición de activos realizables.** Se aplican a honorarios profesionales. El respaldo de la operación no es un bien físico, sino el derecho de cobro frente a Sports World y el patrimonio de Final Upgrade AI.
+2. **Los recursos no se destinan a la adquisición de activos realizables.** Se aplican a honorarios profesionales. El respaldo de la operación no es un bien físico, sino el derecho de cobro frente a Sports World y el patrimonio de Live Streaming Services México, S.A. de C.V.
 
 ---
 
@@ -294,7 +281,7 @@ Los intereses constituyen ingreso acumulable y causan Impuesto Sobre la Renta. S
 
 Bajo la **Opción B**, Final Upgrade AI absorbe la carga fiscal a efecto de que el rendimiento neto corresponda al 10% ofrecido. Es la estructura que se propone, y su costo adicional de $3,750 por participante se encuentra considerado en las cifras de este documento.
 
-> **Precisión.** La retención del 20% sobre intereses nominales aplica cuando el pagador es una persona moral ajena al sistema financiero (Artículo 135 de la Ley del Impuesto Sobre la Renta). El tratamiento aplicable a cada caso depende de la situación fiscal del participante y de la figura bajo la cual se documente la operación, por lo que corresponde confirmarlo con su contador. Este documento no constituye asesoría fiscal.
+> **Precisión.** El deudor es una sociedad anónima ajena al sistema financiero, por lo que resulta aplicable la retención del 20% sobre intereses nominales prevista en el Artículo 135 de la Ley del Impuesto Sobre la Renta, y la sociedad la entera al SAT por cuenta del participante. El efecto final sobre la declaración anual de cada participante depende de su propia situación fiscal, por lo que corresponde confirmarlo con su contador. Este documento no constituye asesoría fiscal.
 
 ---
 
@@ -330,9 +317,9 @@ Cinco puntos permanecen a cargo del cliente, según se consignó en el Punto 4.
 
 **Mitigante.** El contrato exige notificación previa y **5 días hábiles para subsanar** antes de que cualquiera de las partes pueda rescindir. El trabajo entregado y aprobado se cubre, y los entregables no se transfieren sin pago total.
 
-### Riesgo 7 · Riesgo de crédito de Final Upgrade AI
+### Riesgo 7 · Riesgo de crédito del deudor
 
-Es el riesgo de fondo de la operación. **La obligación de devolución corresponde a Final Upgrade AI y no a Sports World.** Se trata de una obligación incondicional: subsiste con independencia del resultado del proyecto y del cumplimiento del cliente. Su valor, sin embargo, es el del patrimonio que la respalda.
+Es el riesgo de fondo de la operación. **La obligación de devolución corresponde a Live Streaming Services México, S.A. de C.V. y no a Sports World.** Se trata de una obligación incondicional: subsiste con independencia del resultado del proyecto y del cumplimiento del cliente. Su valor, sin embargo, es el del patrimonio que la respalda.
 
 **Mitigantes.**
 
@@ -474,7 +461,7 @@ Los tres renglones señalados como «Interno» o «Supuesto» constituyen estima
 1. Este documento tiene carácter **confidencial** y se entrega exclusivamente a sus dos destinatarios para la evaluación de la operación descrita. Contiene términos comerciales de un contrato celebrado con un tercero.
 2. **No constituye una oferta pública de valores** ni invitación al público en general. Se trata de una negociación privada entre partes determinadas.
 3. **No constituye asesoría en inversiones, fiscal ni legal.** Se recomienda su consulta con contador y abogado antes de adoptar cualquier decisión.
-4. Las proyecciones de fechas e importes se sustentan en un contrato que **a la fecha de este documento no ha sido suscrito**. Su cumplimiento depende de terceros ajenos al control de Final Upgrade AI.
+4. Las proyecciones de fechas e importes se sustentan en un contrato que **a la fecha de este documento no ha sido suscrito**. Su cumplimiento depende de terceros ajenos al control de Live Streaming Services México, S.A. de C.V.
 5. **Rendimientos pasados o proyectados no garantizan resultados futuros.** Existe la posibilidad de pérdida parcial o total del importe prestado.
 6. Los términos aquí descritos son **indicativos y no vinculantes** hasta la firma de los instrumentos legales correspondientes.
 
@@ -482,6 +469,7 @@ Los tres renglones señalados como «Interno» o «Supuesto» constituyen estima
 
 | | |
 |---|---|
-| **Final Upgrade AI** | Agosto de 2026 |
+| **Live Streaming Services México, S.A. de C.V.** | Agosto de 2026 |
+| **Nombre comercial** | Final Upgrade AI |
 | **Destinatarios** | Dos · Documento confidencial |
 | **Contacto** | eric@finalupgrade.ai |

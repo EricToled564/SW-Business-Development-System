@@ -245,6 +245,11 @@ function drawTableRow(doc, cells, widths, x0, size, fill) {
   doc.fillColor(INK);
 }
 
+function tableHeight(doc, block, widths, size) {
+  return rowHeight(doc, block.header, widths, size) +
+         block.rows.reduce((a, r) => a + rowHeight(doc, r, widths, size), 0);
+}
+
 function renderTable(doc, block, x0, width, size) {
   const widths = colWidths(doc, block, width);
   const header = block.header;
@@ -256,11 +261,18 @@ function renderTable(doc, block, x0, width, size) {
     drawTableRow(doc, cells, widths, x0, size, BAND);
   };
 
-  // Regla 4: el encabezado nunca se queda solo al pie. Debe caber él y la
-  // primera fila; si no, la tabla entera arranca en la página siguiente.
-  const headH = rowHeight(doc, header, widths, size);
-  const firstH = block.rows.length ? rowHeight(doc, block.rows[0], widths, size) : 0;
-  room(doc, headH + firstH);
+  // Regla 4a: una tabla que cabe entera en una página no se parte. Partir tres
+  // renglones en 1 + 2 no ahorra papel y deja un hueco a media página.
+  const full = tableHeight(doc, block, widths, size);
+  const pageUsable = limitY(doc) - doc.page.margins.top;
+  if (full <= pageUsable) {
+    room(doc, full);
+  } else {
+    // Regla 4b: en una tabla larga, el encabezado nunca se queda solo al pie.
+    const headH = rowHeight(doc, header, widths, size);
+    const firstH = block.rows.length ? rowHeight(doc, block.rows[0], widths, size) : 0;
+    room(doc, headH + firstH);
+  }
   drawHeader(false);
 
   block.rows.forEach((r, idx) => {
@@ -281,16 +293,51 @@ function renderTable(doc, block, x0, width, size) {
 
 // Regla 3: viudas y huérfanas. Un párrafo sólo se parte si deja >= 2 líneas
 // arriba y se lleva >= 2 abajo; en cualquier otro caso viaja completo.
-function placeParagraph(doc, text, x, width, size) {
-  const lineH = size * LEAD;
+function paraHeight(doc, text, width, size) {
   doc.font("Helvetica").fontSize(size);
-  const h = doc.heightOfString(plain(text), { width, lineGap: size * (LEAD - 1) });
+  return doc.heightOfString(plain(text), { width, lineGap: size * (LEAD - 1) });
+}
+
+// Corridas de párrafos cortos consecutivos —«Atentamente, / Eric Toledano /
+// Final Upgrade AI»— son un solo bloque: se miden juntas y se mueven juntas.
+// Medirlas una por una inflaba la reserva y mandaba la firma sola a una página.
+function groupShortRuns(doc, blocks, width, size) {
+  const lineH = size * LEAD;
+  const gap = size * 0.55 * LEAD;               // el moveDown(0.55) entre párrafos
+  const groups = new Array(blocks.length).fill(null);
+
+  const measure = (b) => {
+    if (!b || b.type !== "p") return null;
+    const h = paraHeight(doc, b.text, width, size);
+    return h <= lineH * 2.2 ? h : null;         // corto = una o dos líneas
+  };
+
+  let i = 0;
+  while (i < blocks.length) {
+    if (measure(blocks[i]) === null) { i++; continue; }
+    let j = i, need = 0, h;
+    while (j < blocks.length && (h = measure(blocks[j])) !== null) { need += h + gap; j++; }
+    if (j - i > 1) {                            // sólo agrupa si son dos o más
+      groups[i] = { need, member: false };
+      for (let k = i + 1; k < j; k++) groups[k] = { need: 0, member: true };
+    }
+    i = j;
+  }
+  return groups;
+}
+
+// Regla 3: viudas y huérfanas. Un párrafo sólo se parte si deja >= 2 líneas
+// arriba y se lleva >= 2 abajo; en cualquier otro caso viaja completo.
+function placeParagraph(doc, text, x, width, size, skipRoom) {
+  const lineH = size * LEAD;
+  const h = paraHeight(doc, text, width, size);
   const total = Math.max(1, Math.round(h / lineH));
   const avail = limitY(doc) - doc.y;
 
-  // Un párrafo de una o dos líneas —«Atentamente,», una entrada, un pie de
-  // cuadro— no debe quedar solo al pie, separado de lo que introduce: se le
-  // exige espacio para sí y para el primer renglón de lo que sigue.
+  if (skipRoom) { renderRuns(doc, text, x, width, size, INK); return; }
+
+  // Un párrafo suelto de una o dos líneas no debe quedar al pie separado de lo
+  // que introduce: se le exige espacio para sí y para el primer renglón siguiente.
   if (total <= 2) { room(doc, h + lineH); renderRuns(doc, text, x, width, size, INK); return; }
 
   if (h > avail && !atPageTop(doc)) {
@@ -308,6 +355,9 @@ function nextNeed(doc, next, width, size) {
   if (next.type === "table") {
     const s = Math.max(8.5, size - 1.5);
     const widths = colWidths(doc, next, width);
+    // Una tabla chica viaja entera, así que el encabezado debe reservarla toda.
+    const full = tableHeight(doc, next, widths, s);
+    if (full <= limitY(doc) - doc.page.margins.top) return full;
     return rowHeight(doc, next.header, widths, s) +
            (next.rows.length ? rowHeight(doc, next.rows[0], widths, s) : 0);
   }
@@ -317,6 +367,7 @@ function nextNeed(doc, next, width, size) {
 // `nested` = estamos dentro de una cita: ahí los encabezados no abren página.
 function renderBlocks(doc, blocks, x0, width, nested) {
   const size = nested ? BODY - 0.5 : BODY;
+  const groups = groupShortRuns(doc, blocks, width, size);
 
   blocks.forEach((b, bi) => {
     switch (b.type) {
@@ -345,7 +396,10 @@ function renderBlocks(doc, blocks, x0, width, nested) {
         break;
       }
       case "p": {
-        placeParagraph(doc, b.text, x0, width, size);
+        const g = groups[bi];
+        // La corrida corta entera se reserva de una vez, en su primer miembro.
+        if (g && !g.member) room(doc, g.need);
+        placeParagraph(doc, b.text, x0, width, size, Boolean(g));
         doc.moveDown(0.55);
         break;
       }
@@ -419,11 +473,10 @@ function cover(doc, W) {
   doc.font("Helvetica").fontSize(10).fillColor("#7fa8cd")
      .text("Documento confidencial · Agosto de 2026", M, 202, { width: W });
 
-  // La portada es una página completa: el contenido arranca en la siguiente.
-  // Así la ficha de la operación cabe entera y no queda una página a medias
-  // antes de que la sección 1 abra la suya.
+  // La nota preliminar vive en la portada. Sola en una página propia dejaba
+  // cuatro renglones y el resto en blanco, porque la sección 1 abre la suya.
   doc.fillColor(INK);
-  doc.addPage();
+  doc.y = 292;
 }
 
 // ---------------------------------------------------------------- main
