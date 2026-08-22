@@ -287,7 +287,7 @@ Se relacionan a continuación la totalidad de los riesgos identificados, ordenad
 
 Es el riesgo de mayor probabilidad, por corresponder al estado actual del asunto.
 
-**Mitigante.** El desembolso queda condicionado a la firma. De no producirse, la operación no se perfecciona y los recursos permanecen en poder del participante.
+**Mitigante.** El desembolso condicionado a la firma, en los términos del **Punto 4**.
 
 ### Riesgo 2 · Demora del cliente en aprobar el avance de la Semana 4
 

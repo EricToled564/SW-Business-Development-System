@@ -376,18 +376,47 @@ function placeParagraph(doc, text, x, width, size, skipRoom) {
 // Cuánto espacio necesita el bloque que sigue a un encabezado para que valga
 // la pena dejarlo empezar en esta página. Una tabla necesita su encabezado y
 // su primera fila; un párrafo, tres renglones.
-function nextNeed(doc, next, width, size) {
-  if (!next) return 0;
-  if (next.type === "table") {
-    const s = Math.max(8.5, size - 1.5);
-    const widths = colWidths(doc, next, width, s);
-    // Una tabla chica viaja entera, así que el encabezado debe reservarla toda.
-    const full = tableHeight(doc, next, widths, s);
-    if (full <= limitY(doc) - doc.page.margins.top) return full;
-    return rowHeight(doc, next.header, widths, s) +
-           (next.rows.length ? rowHeight(doc, next.rows[0], widths, s) : 0);
+function nextNeed(doc, blocks, i, width, size) {
+  const lineH = size * LEAD;
+  const gap = size * 0.55 * LEAD;
+  const pageUsable = limitY(doc) - doc.page.margins.top;
+  if (i >= blocks.length) return 0;
+
+  // El encabezado no arrastra sólo el bloque inmediato: arrastra la cadena que
+  // encabeza. «Tratamiento fiscal» seguido de su párrafo de entrada y su tabla
+  // es una sola unidad; reservar únicamente el párrafo dejaba al encabezado y
+  // al párrafo al pie, con la tabla saltando de página.
+  let need = 0, j = i;
+  while (j < blocks.length && (blocks[j].type === "p" || blocks[j].type === "li")) {
+    const h = paraHeight(doc, blocks[j].text, width, size);
+    if (h > lineH * 3.2) return Math.min(need + lineH * 3, pageUsable);  // párrafo largo: basta su arranque
+    need += h + gap;
+    j++;
   }
-  return size * LEAD * 3;
+
+  if (j < blocks.length && blocks[j].type === "table") {
+    const s = Math.max(8.5, size - 1.5);
+    const widths = colWidths(doc, blocks[j], width, s);
+    const full = tableHeight(doc, blocks[j], widths, s);
+    // Una tabla chica viaja entera, así que hay que reservarla toda.
+    need += full <= pageUsable ? full
+          : rowHeight(doc, blocks[j].header, widths, s) +
+            (blocks[j].rows.length ? rowHeight(doc, blocks[j].rows[0], widths, s) : 0);
+  } else if (j < blocks.length && blocks[j].type === "quote") {
+    need += quoteHeight(doc, blocks[j], width, size);
+  } else if (need === 0) {
+    need = lineH * 3;
+  }
+  return Math.min(need, pageUsable);
+}
+
+function quoteHeight(doc, block, width, size) {
+  const inner = width - 24;
+  const s = size - 0.5;
+  return block.blocks.reduce((acc, q) => {
+    if (q.type !== "p" && q.type !== "li") return acc + s * LEAD * 1.5;
+    return acc + paraHeight(doc, q.text, inner, s) + 6;
+  }, 18);
 }
 
 // `nested` = estamos dentro de una cita: ahí los encabezados no abren página.
@@ -406,7 +435,7 @@ function renderBlocks(doc, blocks, x0, width, nested) {
           // Regla 2 (keep-with-next): el encabezado arrastra consigo el inicio
           // real de su contenido; si no caben juntos, se va entero a la
           // siguiente página en lugar de quedarse solo al pie.
-          room(doc, s * 1.9 + nextNeed(doc, blocks[bi + 1], width, size));
+          room(doc, s * 1.9 + nextNeed(doc, blocks, bi + 1, width, size));
         }
         doc.moveDown(atPageTop(doc) ? 0 : b.level <= 2 ? 0.85 : 0.7);
         doc.font("Helvetica-Bold").fontSize(s)
@@ -423,9 +452,20 @@ function renderBlocks(doc, blocks, x0, width, nested) {
       }
       case "p": {
         const g = groups[bi];
+        let reserved = Boolean(g);
         // La corrida corta entera se reserva de una vez, en su primer miembro.
         if (g && !g.member) room(doc, g.need);
-        placeParagraph(doc, b.text, x0, width, size, Boolean(g));
+        else if (!g) {
+          const h = paraHeight(doc, b.text, width, size);
+          if (h <= size * LEAD * 2.2) {
+            // Un párrafo breve que anuncia algo —«se estructura en
+            // consecuencia:», «se localizan, entre otros:»— no puede quedar al
+            // pie separado del cuadro o la cita que introduce.
+            room(doc, h + nextNeed(doc, blocks, bi + 1, width, size));
+            reserved = true;
+          }
+        }
+        placeParagraph(doc, b.text, x0, width, size, reserved);
         doc.moveDown(0.55);
         break;
       }
