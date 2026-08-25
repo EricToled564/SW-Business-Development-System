@@ -146,7 +146,29 @@ function build(doc, blocks, estricta) {
   let sec = "—", pn = 0;
   const room = (h) => { if (doc.y + h > doc.page.height - M) doc.addPage(); };
 
-  for (const b of blocks) {
+  // Altura del primer trozo indivisible de un bloque, para decidir si vale la
+  // pena empezarlo al pie de una página: en una tabla, su encabezado más la
+  // primera fila; en una lista, sus dos primeras líneas.
+  const primerTrozo = (b) => {
+    if (!b) return 0;
+    if (b.t === "table") {
+      const cols = b.rows[0].length, colW = cW / cols, pad = 4;
+      let alto = 0;
+      for (let ri = 0; ri < Math.min(2, b.rows.length); ri++) {
+        doc.font(ri === 0 ? "Helvetica-Bold" : "Helvetica").fontSize(9);
+        let hh = 0;
+        for (const c of b.rows[ri]) hh = Math.max(hh, doc.heightOfString(c || " ", { width: colW - 2 * pad }));
+        alto += hh + 2 * pad;
+      }
+      doc.font("Helvetica").fontSize(10.5);
+      return alto;
+    }
+    if (b.t === "li") return 2 * doc.currentLineHeight(true);
+    return 0;
+  };
+
+  for (let bi = 0; bi < blocks.length; bi++) {
+    const b = blocks[bi];
     if (b.t === "hr") { doc.moveDown(0.3); continue; }
     if (b.t === "h") {
       const num = (b.text.match(/^(\d+(?:\.\d+)?)/) || [])[1]; if (num) sec = num;
@@ -225,7 +247,16 @@ function build(doc, blocks, estricta) {
       const { desbordes, yFinal } = medirParrafo(runs, w, isLi, doc.y, "  [§00.0 ¶000 p.00]");
       const alPie = doc.page.height - M - doc.y;
       const arrastre = desbordes ? yFinal - M : 0;
-      if (desbordes && (alPie < 2 * LH || arrastre < 3 * LH)) doc.addPage();
+      let saltar = desbordes && (alPie < 2 * LH || arrastre < 3 * LH);
+      // Mantener con lo que sigue: una línea de entrada —la que anuncia una tabla
+      // o una lista— no se queda sola al pie mientras su contenido pasa a la
+      // página siguiente. Si el bloque anunciado no alcanza a empezar aquí, el
+      // párrafo se va con él.
+      if (!saltar && !desbordes) {
+        const necesita = primerTrozo(blocks[bi + 1]);
+        if (necesita && yFinal + LH * 0.32 + necesita > doc.page.height - M) saltar = true;
+      }
+      if (saltar) doc.addPage();
     } else {
       room(16);
     }
