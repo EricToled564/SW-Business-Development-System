@@ -22,7 +22,7 @@ La captura del sitio y de BES registra el lead directamente en el CRM mediante s
 ## 3 · El agente BES y las conversaciones
 
 - BES usa los datos del prospecto **solo durante la conversación** para calificar, recomendar y agendar.
-- Al cerrar la interacción, el lead se entrega al **CRM** y se envía el **resumen del prospecto por correo al club** correspondiente; **el sitio no almacena la conversación con datos personales** una vez completado ese flujo.
+- Al cerrar la interacción, el lead se entrega al **CRM** y se envía el **resumen del prospecto por correo al club** correspondiente; **el sitio no almacena la conversación con datos personales** una vez completado ese flujo. Ese correo **sale por el servicio de correo de Sports World**, con remitente de su propio dominio y sin proveedores externos de correo transaccional, de modo que el mensaje —que lleva el perfil del cuestionario— queda archivado en su infraestructura (**[Estrategia de Retención Cero · §7](#zdr:7-correo-saliente-el-mensaje-nace-y-queda-en-la-infraestructura-de-sports-world)**).
 - Las bases de conocimiento que consulta BES (membresías, clases, políticas, información por club) **no contienen datos personales de usuarios**; corresponden a información operativa de Sports World.
 
 ## 4 · Seguridad técnica del sitio
