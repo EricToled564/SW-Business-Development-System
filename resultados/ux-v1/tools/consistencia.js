@@ -372,6 +372,32 @@ regla("R18 · retención cero de proveedores", (falla) => {
   }
 });
 
+/* ─────────── R19 · Correo saliente dentro de la infraestructura del cliente ─────────── */
+// El correo al club transporta el perfil completo del cuestionario: es la mayor
+// carga de datos personales del sistema. Su vía de salida no puede quedar sin
+// especificar ni resolverse con un proveedor externo que retenga el mensaje.
+regla("R19 · correo saliente", (falla) => {
+  marcar("zdr.es.md");
+  const z = texto["zdr.es.md"] || "";
+  if (!/infraestructura de correo de Sports World/i.test(z))
+    falla("zdr.es.md", 0, "no fija que el correo saliente resida en la infraestructura de Sports World");
+  if (!/relay corporativo/i.test(z))
+    falla("zdr.es.md", 0, "no fija el relay corporativo como vía de envío");
+  if (!/quedan excluidos/i.test(z))
+    falla("zdr.es.md", 0, "no excluye a los proveedores externos de correo transaccional");
+  // Ningún documento propone un proveedor externo de correo como vía de envío.
+  const PROVEEDOR = /sendgrid|mailgun|postmark|sparkpost|mandrill|amazon ses|mailchimp|brevo/i;
+  porLinea((f, n, l) => {
+    if (PROVEEDOR.test(l) && !/quedan excluidos|se excluye|no se usa|fuera del régimen/i.test(l))
+      falla(f, n, "propone un proveedor externo de correo transaccional; el envío sale del servicio de correo de Sports World");
+  });
+  // Nadie puede describir el envío desde infraestructura del prestador.
+  porLinea((f, n, l) => {
+    if (/(correo|mensaje).{0,60}(desde|por).{0,40}(servidor|infraestructura).{0,30}EL PRESTADOR/i.test(l))
+      falla(f, n, "describe envío de correo desde infraestructura de EL PRESTADOR");
+  });
+});
+
 /* ─────────── Reporte ─────────── */
 const totalLineas = archivos.reduce((a, f) => a + texto[f].split("\n").length, 0);
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);
