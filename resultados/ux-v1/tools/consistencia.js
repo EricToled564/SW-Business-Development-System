@@ -336,6 +336,42 @@ regla("R15 · línea base de KPIs", (falla) => {
     }
 });
 
+/* ─────────── R18 · Retención cero (ZDR) de los proveedores de IA ─────────── */
+// La estrategia de retención cero es la fuente del régimen: debe existir, fijar
+// sus invariantes (convenio de retención cero del modelo, voz únicamente por
+// API, vida máxima de 72 horas de la cola de reintento, regla de selección) y
+// los documentos que describen a los proveedores deben remitir a ella.
+regla("R18 · retención cero de proveedores", (falla) => {
+  marcar("zdr.es.md");
+  const z = texto["zdr.es.md"] || "";
+  if (!z) { falla("zdr.es.md", 0, "no existe la estrategia de retención cero (ZDR)"); return; }
+  if (!/convenio de retención cero/i.test(z))
+    falla("zdr.es.md", 0, "no fija el convenio de retención cero con el proveedor del modelo");
+  if (!/únicamente (a través de|por|mediante) su API/i.test(z))
+    falla("zdr.es.md", 0, "no fija el acceso a la plataforma de voz únicamente por API");
+  if (!/(vida|tiempo de vida) máxim[ao] de 72 horas/i.test(z))
+    falla("zdr.es.md", 0, "no fija la vida máxima de 72 horas de la cola de reintento");
+  if (!/no se selecciona/i.test(z))
+    falla("zdr.es.md", 0, "no fija la regla de selección vinculante para componentes de IA");
+  // Nadie describe la operación de la voz por la interfaz web del proveedor.
+  porLinea((f, n, l) => {
+    if (/playground|interfaz web (de|del proveedor de) (la )?voz|interfaz web de ElevenLabs/i.test(l) &&
+        !/queda fuera|se excluye|no se usa|únicamente por (su )?API/i.test(l))
+      falla(f, n, "describe acceso a la plataforma de voz fuera de su API; rige el acceso únicamente por API (ZDR)");
+  });
+  // La cola de reintento no vuelve a quedar sin cifra.
+  porLinea((f, n, l) => {
+    if (/cola temporal|cola de reintento/i.test(l) && /tiempo de vida limitado/i.test(l) && !/72 horas/.test(l))
+      falla(f, n, "cola de reintento con vida «limitada» sin cifra; rige el máximo de 72 horas");
+  });
+  // Quien describe el régimen de los proveedores remite a la estrategia.
+  for (const f of ["seguridad.es.md", "technical.es.md"]) {
+    marcar(f);
+    if (!/\(#zdr(?::[a-z0-9-]*)?\)/.test(texto[f] || ""))
+      falla(f, 0, "no remite a la estrategia de retención cero (#zdr)");
+  }
+});
+
 /* ─────────── Reporte ─────────── */
 const totalLineas = archivos.reduce((a, f) => a + texto[f].split("\n").length, 0);
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);
