@@ -13,7 +13,7 @@ Esto significa, en la práctica:
 
 - **No hay base de datos de prospectos en el sitio.** El sitio no acumula un padrón de leads; cada captura se transfiere al CRM y deja de existir en el entorno web.
 - **No hay respaldos de datos personales** en el servidor del sitio, ni en snapshots, ni en exportaciones, ni en almacenamiento intermedio persistente.
-- **Si la transferencia al CRM falla**, el dato se mantiene en una cola temporal cifrada y con tiempo de vida limitado, exclusivamente para reintentar el envío; al confirmarse la entrega, se elimina.
+- **Si la transferencia al CRM falla**, el dato se mantiene en una cola temporal cifrada con **tiempo de vida máximo de 72 horas**, exclusivamente para reintentar el envío; se elimina al confirmarse la entrega y, en cualquier caso, al vencer ese plazo.
 
 ## 2 · El CRM como único sistema de registro
 
@@ -58,3 +58,7 @@ Es importante no confundir dos conceptos distintos:
 - Ante cualquier vulneración de seguridad, el prestador **notifica de inmediato** a Sports World, indicando el alcance y las acciones tomadas.
 
 Este enfoque está reflejado contractualmente en la **Cláusula Décima Octava (Seguridad y minimización de datos personales)** y en la **Cláusula Décima Séptima (Confidencialidad y Datos Personales)** del Contrato.
+
+## 8 · Retención cero (ZDR) con los proveedores de inteligencia artificial
+
+Las capas de procesamiento de BES —reconocimiento de voz, modelo de lenguaje, síntesis de voz y orquestación— operan en las plataformas gestionadas de sus proveedores como **procesamiento en tránsito, no como repositorio**. Ese tránsito se rige por el régimen de **retención cero** especificado en la **[Estrategia de Retención Cero (ZDR)](#zdr)**: convenio de retención cero con el proveedor del modelo de razonamiento, modo de retención cero de la plataforma de voz con acceso únicamente por API, y una regla de selección vinculante — el componente que no ofrezca retención cero o un régimen contractual equivalente de no retención no se selecciona.
