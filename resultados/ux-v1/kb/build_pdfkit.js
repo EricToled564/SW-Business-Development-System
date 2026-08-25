@@ -23,7 +23,10 @@ const DOCS = [
   { src: SRC + "/minuta-2026-06-22.es.md", kind: "md", title: "Minuta — Reunión 22 de junio de 2026", out: "08-minuta-2026-06-22.es.pdf" },
   { src: SRC + "/seguimiento-2026-06-22.es.md", kind: "md", title: "Seguimiento — Reunión 22 de junio de 2026", out: "09-seguimiento-2026-06-22.es.pdf" },
   { src: SRC + "/seguridad.es.md", kind: "md", title: "Seguridad del sistema — Protección de datos personales", out: "10-seguridad-del-sistema.es.pdf" },
-  { src: SRC + "/zdr.es.md", kind: "md", title: "Estrategia de Retención Cero (ZDR) — Los datos viven solo en el CRM", out: "33-estrategia-zdr.es.pdf" },
+  // `estricta`: control tipográfico de viudas y huérfanas. Cambia la paginación,
+  // por lo que solo se habilita en este documento; el resto del depósito conserva
+  // su salida sin alteración.
+  { src: SRC + "/zdr.es.md", kind: "md", title: "Estrategia de Retención Cero (ZDR) — Los datos viven solo en el CRM", out: "33-estrategia-zdr.es.pdf", estricta: true },
   { src: SRC + "/aportaciones.es.md", kind: "md", title: "Status de Entregables Sports World — Sistemas y Marketing", out: "11-status-entregables-sports-world.es.pdf" },
   { src: SRC + "/glosario.es.md", kind: "md", title: "Glosario — Términos técnicos y de negocio", out: "12-glosario.es.pdf" },
   { src: SRC + "/roi.es.md", kind: "md", title: "Calculadora de ROI — Modelo de cohortes con churn", out: "14-calculadora-roi.es.pdf" },
@@ -119,7 +122,25 @@ function inlineRuns(t) {
 
 const M = 60, INK = "#1d1d1b", GRAY = "#9a9a9a";
 
-function build(doc, blocks) {
+// Mide un párrafo con el MISMO motor de composición que lo va a dibujar, sobre
+// un documento de prueba idéntico que nunca se escribe a disco. Estimar el
+// ancho a mano no reproduce el corte de línea de pdfkit y deja derrames de una
+// sola línea; esto sí, porque es la misma máquina.
+function medirParrafo(runs, w, isLi, y0, anclaje) {
+  const p = new PDFDocument({ size: "LETTER", margins: { top: M, bottom: M, left: M, right: M }, autoFirstPage: true });
+  let desbordes = 0;
+  p.on("pageAdded", () => { desbordes++; });
+  p.x = M; p.y = y0;
+  if (isLi) p.font("Helvetica").fontSize(10.5).text("•  ", M, y0, { width: w, continued: true });
+  runs.forEach((r, idx) => {
+    p.font(r.code ? "Courier" : r.bold ? "Helvetica-Bold" : "Helvetica").fontSize(r.code ? 9.5 : 10.5)
+      .text(r.text, isLi || idx > 0 ? undefined : M, isLi || idx > 0 ? undefined : y0, { width: w, continued: true });
+  });
+  p.font("Helvetica-Oblique").fontSize(7).text(anclaje, { width: w, continued: false });
+  return { desbordes, yFinal: p.y };
+}
+
+function build(doc, blocks, estricta) {
   const cW = doc.page.width - M * 2;
   let pageNo = 1; doc.on("pageAdded", () => { pageNo++; });
   let sec = "—", pn = 0;
@@ -130,7 +151,9 @@ function build(doc, blocks) {
     if (b.t === "h") {
       const num = (b.text.match(/^(\d+(?:\.\d+)?)/) || [])[1]; if (num) sec = num;
       const size = b.level === 1 ? 19 : b.level === 2 ? 14.5 : 12;
-      doc.moveDown(b.level === 1 ? 0.2 : 0.6); room(size * 1.6);
+      // Con tipografía estricta, un encabezado nunca queda solo al pie: se le
+      // exige espacio para sí mismo y para las primeras líneas que encabeza.
+      doc.moveDown(b.level === 1 ? 0.2 : 0.6); room(size * 1.6 + (estricta ? 48 : 0));
       doc.font("Helvetica-Bold").fontSize(size).fillColor(INK).text(b.text, { width: cW });
       doc.moveDown(0.25);
       continue;
@@ -161,7 +184,17 @@ function build(doc, blocks) {
         let hh = 0;
         for (const c of b.rows[ri]) hh = Math.max(hh, doc.heightOfString(c || " ", { width: colW - 2 * pad }));
         hh += 2 * pad;
-        room(hh); const y0 = doc.y;
+        // Con tipografía estricta, el encabezado de una tabla no se queda solo
+        // al pie: se le exige espacio para sí mismo y su primera fila de datos.
+        let need = hh;
+        if (estricta && head && b.rows.length > 1) {
+          doc.font("Helvetica").fontSize(9);
+          let h1 = 0;
+          for (const c of b.rows[1]) h1 = Math.max(h1, doc.heightOfString(c || " ", { width: colW - 2 * pad }));
+          need += h1 + 2 * pad;
+          doc.font("Helvetica-Bold").fontSize(9);
+        }
+        room(need); const y0 = doc.y;
         if (head) doc.save().rect(M, y0, cW, hh).fill("#eef0f2").restore();
         doc.fillColor(INK).font(head ? "Helvetica-Bold" : "Helvetica").fontSize(9);
         for (let ci = 0; ci < b.rows[ri].length; ci++) doc.text(b.rows[ri][ci] || "", M + ci * colW + pad, y0 + pad, { width: colW - 2 * pad });
@@ -176,12 +209,24 @@ function build(doc, blocks) {
     const isLi = b.t === "li";
     const indent = isLi ? 14 : 0;
     doc.font("Helvetica").fontSize(10.5).fillColor(INK);
-    room(16);
+    const x = M + indent, w = cW - indent;
+    const runs = inlineRuns(b.text);
+    if (estricta) {
+      // Control de viudas y huérfanas, medido con el motor real (medirParrafo).
+      // Si el párrafo se parte, se exigen 2 líneas al pie y 3 al arrastre: la
+      // última del arrastre puede ser el anclaje, de modo que siempre quedan
+      // 2 líneas de texto real. Si no se cumple, el párrafo pasa entero.
+      const LH = doc.currentLineHeight(true);
+      const { desbordes, yFinal } = medirParrafo(runs, w, isLi, doc.y, "  [§00.0 ¶000 p.00]");
+      const alPie = doc.page.height - M - doc.y;
+      const arrastre = desbordes ? yFinal - M : 0;
+      if (desbordes && (alPie < 2 * LH || arrastre < 3 * LH)) doc.addPage();
+    } else {
+      room(16);
+    }
     const start = pageNo; pn++;
     const anchor = `  [§${sec} ¶${pn} p.${start}]`;
-    const x = M + indent, w = cW - indent;
     if (isLi) { doc.font("Helvetica").fontSize(10.5).fillColor(INK).text("•  ", x, doc.y, { width: w, continued: true }); }
-    const runs = inlineRuns(b.text);
     runs.forEach((r, idx) => {
       const f = r.code ? "Courier" : r.bold ? "Helvetica-Bold" : "Helvetica";
       doc.font(f).fontSize(r.code ? 9.5 : 10.5).fillColor(INK).text(r.text, isLi || idx > 0 ? undefined : x, isLi || idx > 0 ? undefined : doc.y, { width: w, continued: true });
@@ -202,7 +247,7 @@ function make(d) {
   doc.info.Title = d.title; doc.info.Author = "Final Upgrade AI"; doc.info.Subject = "Documentación UX Sports World (es-MX) — KB para agente de voz";
   const stream = fs.createWriteStream(KB + "/" + d.out);
   doc.pipe(stream);
-  build(doc, blocks);
+  build(doc, blocks, !!d.estricta);
   const range = doc.bufferedPageRange();
   for (let i = 0; i < range.count; i++) {
     doc.switchToPage(range.start + i);
