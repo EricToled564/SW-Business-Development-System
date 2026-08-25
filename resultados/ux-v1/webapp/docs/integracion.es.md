@@ -153,3 +153,5 @@ Los que ya constan en el Anexo Uno, aplicados a esta especificación:
 ## 8 · Seguridad y minimización
 
 Conforme a la Cláusula Décima Octava y al documento de Seguridad del sistema: **cifrado en tránsito (HTTPS/TLS)** en toda la integración; **mínimo privilegio** en credenciales (limitadas a los puntos de acceso listados); **llaves de desarrollo separadas de las productivas**, con titularidad de Sports World; **bitácoras sin datos personales**; y **no retención** — los datos personales del funnel residen en el servidor de Sports World (Bloque F), el dashboard consume únicamente resultados agregados, y los sistemas de EL PRESTADOR no conservan copia.
+
+El régimen completo de retención por componente y por proveedor —incluida la cola de reintento del middleware, con vida máxima de 72 horas— consta en la **[Estrategia de Retención Cero (ZDR)](#zdr)**.

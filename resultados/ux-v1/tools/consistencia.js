@@ -336,6 +336,101 @@ regla("R15 · línea base de KPIs", (falla) => {
     }
 });
 
+/* ─────────── R18 · Retención cero (ZDR) de los proveedores de IA ─────────── */
+// La estrategia de retención cero es la fuente del régimen: debe existir, fijar
+// sus invariantes (convenio de retención cero del modelo, voz únicamente por
+// API, vida máxima de 72 horas de la cola de reintento, regla de selección) y
+// los documentos que describen a los proveedores deben remitir a ella.
+regla("R18 · retención cero de proveedores", (falla) => {
+  marcar("zdr.es.md");
+  const z = texto["zdr.es.md"] || "";
+  if (!z) { falla("zdr.es.md", 0, "no existe la estrategia de retención cero (ZDR)"); return; }
+  if (!/convenio de retención cero/i.test(z))
+    falla("zdr.es.md", 0, "no fija el convenio de retención cero con el proveedor del modelo");
+  if (!/únicamente (a través de|por|mediante) su API/i.test(z))
+    falla("zdr.es.md", 0, "no fija el acceso a la plataforma de voz únicamente por API");
+  if (!/(vida|tiempo de vida) máxim[ao] de 72 horas/i.test(z))
+    falla("zdr.es.md", 0, "no fija la vida máxima de 72 horas de la cola de reintento");
+  if (!/no se selecciona/i.test(z))
+    falla("zdr.es.md", 0, "no fija la regla de selección vinculante para componentes de IA");
+  // Nadie describe la operación de la voz por la interfaz web del proveedor.
+  porLinea((f, n, l) => {
+    if (/playground|interfaz web (de|del proveedor de) (la )?voz|interfaz web de ElevenLabs/i.test(l) &&
+        !/queda fuera|se excluye|no se usa|únicamente por (su )?API/i.test(l))
+      falla(f, n, "describe acceso a la plataforma de voz fuera de su API; rige el acceso únicamente por API (ZDR)");
+  });
+  // La cola de reintento no vuelve a quedar sin cifra.
+  porLinea((f, n, l) => {
+    if (/cola temporal|cola de reintento/i.test(l) && /tiempo de vida limitado/i.test(l) && !/72 horas/.test(l))
+      falla(f, n, "cola de reintento con vida «limitada» sin cifra; rige el máximo de 72 horas");
+  });
+  // Quien describe el régimen de los proveedores remite a la estrategia.
+  for (const f of ["seguridad.es.md", "technical.es.md"]) {
+    marcar(f);
+    if (!/\(#zdr(?::[a-z0-9-]*)?\)/.test(texto[f] || ""))
+      falla(f, 0, "no remite a la estrategia de retención cero (#zdr)");
+  }
+});
+
+/* ─────────── R19 · Correo saliente dentro de la infraestructura del cliente ─────────── */
+// El correo al club transporta el perfil completo del cuestionario: es la mayor
+// carga de datos personales del sistema. Su vía de salida no puede quedar sin
+// especificar ni resolverse con un proveedor externo que retenga el mensaje.
+regla("R19 · correo saliente", (falla) => {
+  marcar("zdr.es.md");
+  const z = texto["zdr.es.md"] || "";
+  if (!/infraestructura de correo de Sports World/i.test(z))
+    falla("zdr.es.md", 0, "no fija que el correo saliente resida en la infraestructura de Sports World");
+  if (!/relay corporativo/i.test(z))
+    falla("zdr.es.md", 0, "no fija el relay corporativo como vía de envío");
+  if (!/quedan excluidos/i.test(z))
+    falla("zdr.es.md", 0, "no excluye a los proveedores externos de correo transaccional");
+  // Ningún documento propone un proveedor externo de correo como vía de envío.
+  const PROVEEDOR = /sendgrid|mailgun|postmark|sparkpost|mandrill|amazon ses|mailchimp|brevo/i;
+  porLinea((f, n, l) => {
+    if (PROVEEDOR.test(l) && !/quedan excluidos|se excluye|no se usa|fuera del régimen/i.test(l))
+      falla(f, n, "propone un proveedor externo de correo transaccional; el envío sale del servicio de correo de Sports World");
+  });
+  // Nadie puede describir el envío desde infraestructura del prestador.
+  porLinea((f, n, l) => {
+    if (/(correo|mensaje).{0,60}(desde|por).{0,40}(servidor|infraestructura).{0,30}EL PRESTADOR/i.test(l))
+      falla(f, n, "describe envío de correo desde infraestructura de EL PRESTADOR");
+  });
+});
+
+/* ─────────── R20 · Base de conocimiento de BES ─────────── */
+// La KB no es dato personal sino secreto comercial del cliente. Su régimen tiene
+// tres invariantes: no contiene datos personales, no se carga como corpus
+// permanente en plataformas de terceros, y sólo admite información que pueda
+// comunicarse a un prospecto.
+regla("R20 · base de conocimiento", (falla) => {
+  // Las invariantes viven en los DOS documentos que describen el régimen de la
+  // KB. Exigirlas en ambos impide que una copia se relaje respecto de la otra.
+  const INVARIANTES = [
+    [/no se carga como corpus permanente/i, "no fija que la KB no se cargue como corpus permanente en plataformas de terceros"],
+    [/puede ser comunicado por el agente a un cliente durante una conversación/i, "no fija la premisa de que todo lo que entra a la KB es revelable"],
+    [/no debe existir en la base de conocimiento/i, "no enumera las categorías que no deben existir en la KB"],
+    [/[Nn]ombres y datos de contacto del personal/, "categoría prohibida ausente: nombres y contactos del personal"],
+    [/[Ii]nformación financiera interna/, "categoría prohibida ausente: información financiera interna"],
+    [/[Mm]árgenes y resultados por club/, "categoría prohibida ausente: márgenes y resultados por club"],
+    [/[Dd]atos de socios actuales/, "categoría prohibida ausente: datos de socios actuales"],
+    [/verifique y autorice de forma expresa/i, "no fija la autorización expresa de Sports World para el contenido de la KB"],
+    [/La regla es absoluta y no admite excepción operativa/i, "no declara absoluta la regla de contenido de la KB"],
+  ];
+  for (const f of ["seguridad.es.md", "zdr.es.md"]) {
+    marcar(f);
+    const t = texto[f] || "";
+    if (!t) { falla(f, 0, "documento ausente: no puede sostener el régimen de la KB"); continue; }
+    for (const [re_, msg] of INVARIANTES) if (!re_.test(t)) falla(f, 0, msg);
+  }
+  const s = texto["seguridad.es.md"] || "";
+  // Nadie puede declarar que la KB contiene datos personales.
+  porLinea((f, n, l) => {
+    if (/base(s)? de conocimiento/i.test(l) && /datos personales/i.test(l) && !/no contien|sin datos personales|no incluye/i.test(l))
+      falla(f, n, "atribuye datos personales a la base de conocimiento; la KB es información operativa del cliente");
+  });
+});
+
 /* ─────────── Reporte ─────────── */
 const totalLineas = archivos.reduce((a, f) => a + texto[f].split("\n").length, 0);
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);

@@ -55,6 +55,7 @@ EL PRESTADOR entrega, igual que para BES, monitoreo de consumo y reporte mensual
 ## Seguridad y datos
 
 - Mismos principios del Proyecto A: **HTTPS**, credenciales por canal seguro, **minimización y no retención** de datos personales una vez copiados al CRM (**[Seguridad del sistema](#seguridad)**).
+- Como "BES" por WhatsApp corre en las plataformas gestionadas de sus proveedores, le aplica íntegro el régimen de **retención cero** de la **[Estrategia de Retención Cero (ZDR)](#zdr)**: convenio de retención cero con el proveedor del modelo y regla de selección vinculante para todo componente que trate datos personales.
 - La escritura al CRM es **idempotente por sesión**: un lead atendido por un operador, por "BES" o en la consola llega **sin duplicados**.
 
 ## Dependencias a cargo de Sports World

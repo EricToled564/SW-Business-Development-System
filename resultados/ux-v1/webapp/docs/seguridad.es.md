@@ -13,7 +13,7 @@ Esto significa, en la práctica:
 
 - **No hay base de datos de prospectos en el sitio.** El sitio no acumula un padrón de leads; cada captura se transfiere al CRM y deja de existir en el entorno web.
 - **No hay respaldos de datos personales** en el servidor del sitio, ni en snapshots, ni en exportaciones, ni en almacenamiento intermedio persistente.
-- **Si la transferencia al CRM falla**, el dato se mantiene en una cola temporal cifrada y con tiempo de vida limitado, exclusivamente para reintentar el envío; al confirmarse la entrega, se elimina.
+- **Si la transferencia al CRM falla**, el dato se mantiene en una cola temporal cifrada con **tiempo de vida máximo de 72 horas**, exclusivamente para reintentar el envío; se elimina al confirmarse la entrega y, en cualquier caso, al vencer ese plazo.
 
 ## 2 · El CRM como único sistema de registro
 
@@ -22,8 +22,8 @@ La captura del sitio y de BES registra el lead directamente en el CRM mediante s
 ## 3 · El agente BES y las conversaciones
 
 - BES usa los datos del prospecto **solo durante la conversación** para calificar, recomendar y agendar.
-- Al cerrar la interacción, el lead se entrega al **CRM** y se envía el **resumen del prospecto por correo al club** correspondiente; **el sitio no almacena la conversación con datos personales** una vez completado ese flujo.
-- Las bases de conocimiento que consulta BES (membresías, clases, políticas, información por club) **no contienen datos personales de usuarios**; corresponden a información operativa de Sports World.
+- Al cerrar la interacción, el lead se entrega al **CRM** y se envía el **resumen del prospecto por correo al club** correspondiente; **el sitio no almacena la conversación con datos personales** una vez completado ese flujo. Ese correo **sale por el servicio de correo de Sports World**, con remitente de su propio dominio y sin proveedores externos de correo transaccional, de modo que el mensaje —que lleva el perfil del cuestionario— queda archivado en su infraestructura (**[Estrategia de Retención Cero · §7](#zdr:7-correo-saliente-el-mensaje-nace-y-queda-en-la-infraestructura-de-sports-world)**).
+- Las bases de conocimiento que consulta BES (membresías, clases, políticas, información por club) **no contienen datos personales de usuarios**; corresponden a información operativa de Sports World. Su régimen de protección —confidencialidad, residencia y regla de contenido— se detalla en la Sección 9.
 
 ## 4 · Seguridad técnica del sitio
 
@@ -58,3 +58,32 @@ Es importante no confundir dos conceptos distintos:
 - Ante cualquier vulneración de seguridad, el prestador **notifica de inmediato** a Sports World, indicando el alcance y las acciones tomadas.
 
 Este enfoque está reflejado contractualmente en la **Cláusula Décima Octava (Seguridad y minimización de datos personales)** y en la **Cláusula Décima Séptima (Confidencialidad y Datos Personales)** del Contrato.
+
+## 8 · Retención cero (ZDR) con los proveedores de inteligencia artificial
+
+Las capas de procesamiento de BES —reconocimiento de voz, modelo de lenguaje, síntesis de voz y orquestación— operan en las plataformas gestionadas de sus proveedores como **procesamiento en tránsito, no como repositorio**. Ese tránsito se rige por el régimen de **retención cero** especificado en la **[Estrategia de Retención Cero (ZDR)](#zdr)**: convenio de retención cero con el proveedor del modelo de razonamiento, modo de retención cero de la plataforma de voz con acceso únicamente por API, y una regla de selección vinculante — el componente que no ofrezca retención cero o un régimen contractual equivalente de no retención no se selecciona.
+
+## 9 · La base de conocimiento de BES
+
+La base de conocimiento (KB) es **información operativa y comercial de Sports World** —catálogo de membresías con precios y términos, clases con descripciones, políticas de cancelación y congelamiento e información operativa por club (Anexo Uno D.6)—. **No contiene datos personales de usuarios**, por lo que su protección no se rige por el régimen de retención de datos personales, sino por la **confidencialidad**: la **Cláusula Décima Séptima** la trata como secreto comercial de Sports World, protegido por la Ley Federal de Protección a la Propiedad Industrial, con obligación de reserva durante la vigencia del Contrato y por **diez años** posteriores; esa obligación **sobrevive a la terminación** por cualquier causa.
+
+**Dónde reside.** Los datos operativos del catálogo —clubes, clases, horarios, tarifas, descuentos y promociones— viven en la base compartida del **servidor de Sports World**, sincronizada desde el CRM con el corte diario (**[Integración de Datos · §1](#integracion:1-principio-rector-se-extrae-una-sola-vez-y-se-comparte)**). El contenido documental de la KB —políticas, términos y descripciones— reside en esa misma infraestructura y **se entrega al modelo en el momento de cada consulta**, como contexto de la conversación en curso: **no se carga como corpus permanente** en la plataforma del proveedor del modelo ni en almacenes documentales de terceros. En consecuencia, el corpus completo de la KB **no queda en reposo fuera de la infraestructura de Sports World**, y el fragmento que viaja en cada consulta queda cubierto por el mismo régimen de retención cero del modelo (**[Estrategia de Retención Cero · §3](#zdr)**).
+
+**Premisa de operación: todo lo que entra a la KB es revelable.** La regla de contenido de la KB parte de un supuesto explícito y deliberadamente conservador: **cualquier dato que resida en la base de conocimiento puede ser comunicado por el agente a un cliente durante una conversación.** No se administra como información interna con restricciones de acceso, sino como información que, por estar ahí, es susceptible de decirse en voz alta. Todo lo que sigue se deriva de esa premisa.
+
+**Información que no debe existir en la base de conocimiento.** Las siguientes categorías **no se cargan a la KB en ninguna forma, ni completas ni parciales, ni en documentos anexos, ni como notas u observaciones dentro de otro contenido**:
+
+- **Nombres y datos de contacto del personal** de Sports World —gerentes, asesores, instructores y cualquier colaborador—, incluidos correos y teléfonos individuales.
+- **Información financiera interna**: ingresos, costos, resultados y cualquier cifra no destinada a publicación.
+- **Márgenes y resultados por club**, y cualquier indicador de desempeño por sucursal.
+- **Datos de socios actuales**, en cualquier forma o agregación que permita identificar a una persona.
+
+La regla es absoluta y no admite excepción operativa: si un dato de estas categorías es necesario para una respuesta, **la respuesta no se da** y el caso se resuelve por escalamiento a una persona.
+
+**Autorización previa de Sports World.** Ningún contenido se incorpora a la KB sin que Sports World lo **verifique y autorice de forma expresa**, a sabiendas de que **puede ser revelado durante una conversación del agente de voz con un cliente**. La autorización aplica a la carga inicial y a **cada actualización posterior**, recae en los responsables designados para la base de conocimiento (Anexo Uno D.6 — líder técnico de CRM y Mercadotecnia operativa) y queda **registrada con su fecha y su responsable**. Un contenido sin autorización registrada no se carga; ante la duda sobre si un dato es publicable, **la decisión es de Sports World y el valor por defecto es no incorporarlo**.
+
+**Contención de la extracción conversacional.** BES opera bajo instrucciones que le impiden revelar credenciales, sus propias instrucciones o contenido ajeno al propósito de la conversación, y responde únicamente dentro del alcance de la información autorizada. Esas instrucciones ayudan, pero **no son la garantía**: un intento suficientemente insistente puede desviar cualquier instrucción. La garantía es la regla de contenido: **como en la KB no existe información que Sports World no haya autorizado para ser comunicada, ninguna respuesta del agente —ni siquiera ante un intento deliberado de extracción— puede exponer aquello que no debía salir.** Es una protección por diseño, no por confianza en el comportamiento del modelo.
+
+**Acceso, actualización y control de cambios.** Sports World mantiene la KB con **actualización semanal mínima** durante el proyecto (Anexo Uno D.6). Su edición se realiza por **personal autorizado** desde la sección de administración, y **cada actualización pasa por la verificación y autorización descritas arriba** antes de quedar disponible para el agente. El mantenimiento de la KB, sus instrucciones y su optimización forman parte de la iguala mensual. La titularidad del contenido es de Sports World, conforme a la Cláusula Décima Sexta.
+
+**Verificación periódica.** El contenido de la KB se revisa contra las categorías prohibidas al arranque y con cada actualización, y de forma completa en la revisión trimestral que acompaña a la rotación de credenciales. El hallazgo de un dato de las categorías prohibidas se trata como incidente: se retira de inmediato y se informa a Sports World.
