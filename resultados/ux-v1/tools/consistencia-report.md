@@ -1,6 +1,6 @@
 # Reporte de consistencia del depósito
 
-**32 documentos · 4,299 líneas · 19 reglas · 0 hallazgos**
+**32 documentos · 4,301 líneas · 19 reglas · 0 hallazgos**
 
 Este reporte lo genera `tools/consistencia.js` al ejecutarse. La columna «reglas
 aplicadas» no es una declaración: es el registro de qué verificación tocó qué
@@ -44,7 +44,7 @@ archivo durante esta corrida.
 | seguridad.es.md | 65 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19 (17) | 0 |
 | technical.es.md | 194 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19 (17) | 0 |
 | workshop-discovery.es.md | 48 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19 (17) | 0 |
-| zdr.es.md | 106 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19 (17) | 0 |
+| zdr.es.md | 108 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19 (17) | 0 |
 
 ## Cobertura por regla
 
