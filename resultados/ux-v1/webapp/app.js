@@ -71,6 +71,8 @@
       title: { es: "Integración de Datos · CRM y Funnel", en: "Data Integration · CRM & Funnel" } },
     { id: "seguridad", type: "doc", group: "proyectoA", pdf: "10-seguridad-del-sistema.es.pdf",
       title: { es: "Seguridad del sistema", en: "System Security" } },
+    { id: "zdr", type: "doc", group: "proyectoA", pdf: "33-estrategia-zdr.es.pdf",
+      title: { es: "Estrategia de Retención Cero (ZDR)", en: "Zero Data Retention Strategy" } },
     { id: "bds-resumen", type: "doc", group: "bds", pdf: "15-bds-resumen.es.pdf",
       title: { es: "BDS · Resumen Ejecutivo", en: "BDS · Executive Summary" } },
     { id: "bds-flujo", type: "doc", group: "bds", pdf: "16-bds-flujo.es.pdf",
