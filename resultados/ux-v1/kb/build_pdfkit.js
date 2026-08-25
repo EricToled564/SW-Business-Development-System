@@ -168,25 +168,16 @@ function build(doc, blocks, estricta) {
       continue;
     }
     if (b.t === "note") {
-      // El bloque destacado también lleva tipografía en línea: sin esto, los
-      // marcadores de énfasis del markdown se imprimían literales en el PDF.
-      const nRuns = inlineRuns(b.text);
-      const nFuente = (r) => r.code ? "Courier-Oblique" : r.bold ? "Helvetica-BoldOblique" : "Helvetica-Oblique";
-      const nTam = (r) => r.code ? 8.5 : 9.5;
-      const wN = cW - 16;
+      // La caja se compone en un solo bloque de cursiva —encadenar tramos con
+      // tipografías distintas descuadraba la altura y encimaba los renglones—.
+      // Los marcadores de énfasis del markdown se retiran para que no se
+      // impriman literales; el énfasis lo da la cursiva de toda la caja.
+      const nTexto = inlineRuns(b.text).map((r) => r.text).join("");
       doc.font("Helvetica-Oblique").fontSize(9.5);
-      const h = doc.heightOfString(nRuns.map((r) => r.text).join(""), { width: wN }) + 10;
+      const h = doc.heightOfString(nTexto, { width: cW - 16 }) + 10;
       room(h); const y0 = doc.y;
       doc.save().rect(M, y0, cW, h).fill("#fff6e7").restore();
-      doc.fillColor(INK);
-      nRuns.forEach((r, idx) => {
-        doc.font(nFuente(r)).fontSize(nTam(r)).fillColor(INK).text(
-          r.text,
-          idx === 0 ? M + 8 : undefined,
-          idx === 0 ? y0 + 5 : undefined,
-          { width: wN, continued: idx < nRuns.length - 1 }
-        );
-      });
+      doc.fillColor(INK).font("Helvetica-Oblique").fontSize(9.5).text(nTexto, M + 8, y0 + 5, { width: cW - 16 });
       doc.y = y0 + h; doc.x = M; doc.moveDown(0.4);
       continue;
     }
