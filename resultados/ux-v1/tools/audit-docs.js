@@ -112,7 +112,7 @@ const TECH_ACRONYMS = new Set([
   "HMAC", "ISR", "KPI", "LFPDPPP", "LLM", "OAuth", "OpenAPI", "PBX", "PII",
   "RAG", "SIP", "SLA", "SSR", "TTL", "TTS", "WCAG", "YMYL", "TLS", "SSL",
   "HSTS", "HTTPS", "HTTP", "JSON", "CI", "CD", "ERP", "ROI", "GPT", "UUID",
-  "CFDI", "RGB", "CMYK", "HEX",
+  "CFDI", "RGB", "CMYK", "HEX", "ZDR",
 ]);
 
 const ARGS = process.argv.slice(2);
