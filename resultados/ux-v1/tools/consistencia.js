@@ -398,6 +398,25 @@ regla("R19 · correo saliente", (falla) => {
   });
 });
 
+/* ─────────── R20 · Base de conocimiento de BES ─────────── */
+// La KB no es dato personal sino secreto comercial del cliente. Su régimen tiene
+// tres invariantes: no contiene datos personales, no se carga como corpus
+// permanente en plataformas de terceros, y sólo admite información que pueda
+// comunicarse a un prospecto.
+regla("R20 · base de conocimiento", (falla) => {
+  marcar("seguridad.es.md");
+  const s = texto["seguridad.es.md"] || "";
+  if (!/no se carga como corpus permanente/i.test(s))
+    falla("seguridad.es.md", 0, "no fija que la KB no se cargue como corpus permanente en plataformas de terceros");
+  if (!/no puede decirse a un prospecto no entra a la KB/i.test(s))
+    falla("seguridad.es.md", 0, "no fija la regla de contenido de la KB");
+  // Nadie puede declarar que la KB contiene datos personales.
+  porLinea((f, n, l) => {
+    if (/base(s)? de conocimiento/i.test(l) && /datos personales/i.test(l) && !/no contien|sin datos personales|no incluye/i.test(l))
+      falla(f, n, "atribuye datos personales a la base de conocimiento; la KB es información operativa del cliente");
+  });
+});
+
 /* ─────────── Reporte ─────────── */
 const totalLineas = archivos.reduce((a, f) => a + texto[f].split("\n").length, 0);
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);
