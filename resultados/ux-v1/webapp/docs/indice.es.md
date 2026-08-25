@@ -103,6 +103,7 @@ Cada ubicación es un enlace directo: abre el documento y salta a la sección ex
 | Calculadora de ROI | [Calculadora de ROI](#roi) |
 | Datos personales y seguridad | [Seguridad del sistema](#seguridad:proteccin-de-los-datos-personales-minimizacin-y-no-retencin) · [Estrategia de Retención Cero](#zdr) · [Contrato · Cláusulas (Décima Octava y Décima Séptima)](#contrato:clusulas) |
 | **Retención cero (ZDR) y proveedores de IA** | [Estrategia de Retención Cero](#zdr) · [Estrategia Técnica · §5 BES](#technical:5-bes-el-agente-de-voz-y-texto) · [Gastos Operativos Variables](#gastos-operativos) |
+| **Correo saliente** (brief al asesor y experiencia ideal) | [Estrategia de Retención Cero · §7](#zdr:7-correo-saliente-el-mensaje-nace-y-queda-en-la-infraestructura-de-sports-world) · [Seguridad del sistema](#seguridad) |
 | Diagnóstico SEO y línea base | [Auditoría inicial · El Gigante Invisible](#auditoria:el-gigante-invisible-diagnstico-de-captura-de-demanda-digital) |
 | **BDS · captación multicanal en tiempo real** (Proyecto B) | [BDS · Resumen](#bds-resumen) · [Flujo](#bds-flujo) · [Canales y SLA](#bds-canales) · [Técnica](#bds-tecnica) |
 | **BDS · equipo, tareas y dependencias** (marco de ejecución) | [Plan de Ejecución · §10](#execution:10-proyecto-b-bds-marco-de-ejecucin) · [BDS · Addendum](#bds-anexo) |
