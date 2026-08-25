@@ -8,7 +8,7 @@ const SRC = BASE + "/webapp/docs";
 const KB = BASE + "/kb";
 
 const DOCS = [
-  { src: SRC + "/indice.es.md", kind: "md", title: "Índice de documentos — Mapa y localizador", out: "13-indice-de-documentos.es.pdf" },
+  { src: SRC + "/indice.es.md", kind: "md", title: "Índice de documentos — Mapa y localizador", out: "13-indice-de-documentos.es.pdf", estricta: true },
   { src: SRC + "/resumen.es.md", kind: "md", title: "Resumen Ejecutivo — Una nueva arquitectura digital", out: "00-resumen-ejecutivo.es.pdf" },
   { src: SRC + "/experience.es.md", kind: "md", title: "UX Architecture Specs — Arquitectura de Experiencia", out: "01-arquitectura-de-experiencia.es.pdf" },
   { src: SRC + "/technical.es.md", kind: "md", title: "Estrategia Técnica", out: "02-estrategia-tecnica.es.pdf" },
@@ -33,18 +33,18 @@ const DOCS = [
   { src: SRC + "/bds-resumen.es.md", kind: "md", title: "BDS — Resumen Ejecutivo", out: "15-bds-resumen.es.pdf" },
   { src: SRC + "/bds-flujo.es.md", kind: "md", title: "BDS — Flujo de conversión", out: "16-bds-flujo.es.pdf" },
   { src: SRC + "/bds-canales.es.md", kind: "md", title: "BDS — Canales, enrutamiento y SLA", out: "17-bds-canales.es.pdf" },
-  { src: SRC + "/bds-tecnica.es.md", kind: "md", title: "BDS — Estrategia Técnica", out: "18-bds-tecnica.es.pdf" },
+  { src: SRC + "/bds-tecnica.es.md", kind: "md", title: "BDS — Estrategia Técnica", out: "18-bds-tecnica.es.pdf", estricta: true },
   { src: SRC + "/bds-medicion.es.md", kind: "md", title: "BDS — Medición y funnel", out: "19-bds-medicion.es.pdf" },
   { src: SRC + "/bds-anexo.es.md", kind: "md", title: "Addendum del Business Development System (Proyecto B)", out: "20-bds-anexo.es.pdf" },
   { src: SRC + "/academia-resumen.es.md", kind: "md", title: "Academia SW — Resumen Ejecutivo", out: "21-academia-resumen.es.pdf" },
   { src: SRC + "/academia-contenido.es.md", kind: "md", title: "Academia SW — Contenido y taxonomía", out: "22-academia-contenido.es.pdf" },
   { src: SRC + "/academia-fases.es.md", kind: "md", title: "Academia SW — Fases del programa", out: "23-academia-fases.es.pdf" },
-  { src: SRC + "/academia-tecnica.es.md", kind: "md", title: "Academia SW — Estrategia Técnica", out: "24-academia-tecnica.es.pdf" },
+  { src: SRC + "/academia-tecnica.es.md", kind: "md", title: "Academia SW — Estrategia Técnica", out: "24-academia-tecnica.es.pdf", estricta: true },
   { src: SRC + "/academia-medicion.es.md", kind: "md", title: "Academia SW — Medición", out: "25-academia-medicion.es.pdf" },
   { src: SRC + "/academia-anexo.es.md", kind: "md", title: "Addendum de la Academia Sports World (Proyecto C)", out: "26-academia-anexo.es.pdf" },
   { src: SRC + "/academia-produccion.es.md", kind: "md", title: "Academia SW — Producción del curso", out: "27-academia-produccion.es.pdf" },
   { src: SRC + "/gastos-operativos.es.md", kind: "md", title: "Gastos Operativos Variables — Tres escenarios", out: "28-gastos-operativos.es.pdf" },
-  { src: SRC + "/integracion.es.md", kind: "md", title: "Integración de Datos — CRM, prospecto y funnel", out: "31-integracion-datos.es.pdf" },
+  { src: SRC + "/integracion.es.md", kind: "md", title: "Integración de Datos — CRM, prospecto y funnel", out: "31-integracion-datos.es.pdf", estricta: true },
   { src: SRC + "/funnel.es.md", kind: "md", title: "Mapa del Funnel — fuentes, accesos y medición", out: "32-mapa-del-funnel.es.pdf" },
   // NOTA: 'voice-agent-knowledge-base.html' quedó obsoleto (contenido previo a las
   // correcciones de esta sesión). Excluido del build; no se sube a la KB.

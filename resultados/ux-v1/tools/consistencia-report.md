@@ -1,6 +1,6 @@
 # Reporte de consistencia del depósito
 
-**32 documentos · 4,350 líneas · 20 reglas · 0 hallazgos**
+**32 documentos · 4,353 líneas · 20 reglas · 0 hallazgos**
 
 Este reporte lo genera `tools/consistencia.js` al ejecutarse. La columna «reglas
 aplicadas» no es una declaración: es el registro de qué verificación tocó qué
@@ -25,7 +25,7 @@ archivo durante esta corrida.
 | bds-flujo.es.md | 48 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 | bds-medicion.es.md | 53 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 | bds-resumen.es.md | 52 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
-| bds-tecnica.es.md | 65 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
+| bds-tecnica.es.md | 66 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 | contrato.es.md | 582 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 | entrevistas-campo.es.md | 56 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 | execution.es.md | 272 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
@@ -35,7 +35,7 @@ archivo durante esta corrida.
 | glosario.es.md | 86 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R14, R15, R16, R17, R18, R19, R20 (19) | 0 |
 | index.html | — | R13 (1) | 0 |
 | indice.es.md | 124 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
-| integracion.es.md | 156 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
+| integracion.es.md | 158 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 | minuta-2026-06-22.es.md *(intocable)* | 119 | R12 (1) | 0 |
 | presentacion/deck.html | — | R7, R8 (2) | 0 |
 | resumen.es.md | 231 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
