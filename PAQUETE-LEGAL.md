@@ -2,7 +2,7 @@
 
 **Estado: aplicados al texto del Contrato.** El Contrato se encuentra en etapa de revisión, por lo que los ajustes se incorporaron directamente a `contrato.es.md` en el depósito. Este documento deja constancia de **qué cambió, dónde y por qué**, para la revisión de Legal y para la conversación con EL CLIENTE.
 
-Son **ocho ajustes**: los siete derivados de la auditoría más uno detectado al someter el propio Contrato a las reglas de verificación automática. **El PDF que publica el depósito ya los refleja** (V4.3, agosto 2026); la versión anterior se conserva en `/versiones-del-contrato/oficiales/` como registro histórico.
+Son **ocho ajustes aplicados**: los siete derivados de la auditoría más uno detectado al someter el propio Contrato a las reglas de verificación automática. Al final se documenta, por separado, un **noveno ajuste propuesto y no aplicado** —la vía de correo saliente del Bloque F— que agrega un requerimiento a cargo de EL CLIENTE y por ello queda sujeto a autorización expresa. **El PDF que publica el depósito ya los refleja** (V4.3, agosto 2026); la versión anterior se conserva en `/versiones-del-contrato/oficiales/` como registro histórico.
 
 Siete de los ocho **reducen, precisan o corrigen** lo que se le pide a Sports World. **Uno solo agrega un requerimiento verdaderamente nuevo** —el dato de cancelación—, y otro agrega dos campos a un dato ya pactado; ambos son indispensables para cerrar el funnel de resultados que el propio Contrato compromete. Ninguno modifica la contraprestación, los plazos ni los KPIs.
 
@@ -102,5 +102,25 @@ Siete de los ocho **reducen, precisan o corrigen** lo que se le pide a Sports Wo
 | 8 | Consulta de socios (D.1) como exclusión expresa | **Reduce** un acceso que Sistemas ya no debe preparar |
 
 Los ocho están **incorporados al texto** de `contrato.es.md` y se presentan como un **único bloque de revisión al Contrato, al Anexo Uno y al Anexo Dos**, sin efecto sobre la contraprestación, los plazos ni los KPIs comprometidos.
+
+---
+
+## Pendiente de autorización · 9 · Vía de correo saliente (Anexo Uno, Bloque F)
+
+> **Estado: PROPUESTO, no aplicado.** A diferencia de los ocho anteriores, este ajuste **no se ha incorporado** al texto del Contrato: agrega un requerimiento a cargo de EL CLIENTE y requiere autorización expresa. El texto vigente del Contrato no lo contiene.
+
+**Dónde:** Anexo Uno, Bloque F (servidor e infraestructura de hospedaje), como punto **F.9**.
+
+**Dice hoy:** nada. El Bloque F enumera ocho condiciones —runtime, HTTPS, acceso de despliegue, staging, respaldos, capacidad, ventanas de mantenimiento y monitoreo— y **ninguna se refiere al correo saliente**.
+
+**Debe agregarse:** una **vía de envío de correo dentro de la infraestructura de EL CLIENTE** —relay corporativo de su servicio de correo con una cuenta de servicio dedicada de solo envío, o un servicio de correo propio en el mismo servidor del Bloque F—, con remitente del dominio de EL CLIENTE.
+
+**Por qué es indispensable:** el sistema envía dos mensajes —el resumen del prospecto al asesor del club y la experiencia ideal al prospecto— y el primero transporta **el perfil completo del cuestionario**, la mayor carga de datos personales del sistema, superior a la del propio registro del lead. Sin una vía especificada, ese envío se resolvería con un proveedor externo de correo transaccional, que **retiene el cuerpo del mensaje y sus registros de entrega en su propia infraestructura**: sería el único punto del sistema donde datos personales quedarían en reposo fuera del CRM y del servidor de EL CLIENTE, en contradicción con la Cláusula Décima Octava y con la Estrategia de Retención Cero del proyecto.
+
+**Efecto para EL CLIENTE:** es un **requerimiento nuevo**, del mismo orden que los demás accesos del Anexo Uno (una cuenta de servicio de su tenant de correo). No modifica la contraprestación, los plazos ni los KPIs, y **no altera los registros MX ni la autenticación de correo del dominio** — precisamente porque el envío sale del propio servicio de EL CLIENTE y no de un tercero al que hubiera que autorizar en sus registros.
+
+**Alternativa sin cambio contractual:** la especificación técnica ya consta en el documento *Estrategia de Retención Cero* del depósito, §7. Si se prefiere no tocar el Anexo Uno, la vía se acuerda operativamente al arranque junto con las demás credenciales productivas; a cambio, el requerimiento no queda como obligación enumerada y su entrega no está sujeta a la cédula de control del Anexo.
+
+---
 
 **Publicación.** El PDF del depósito (`06-contrato.es.pdf`) se regenera desde el markdown con el pipeline de casa y **ya refleja los ocho ajustes**: se publica como **V4.3, agosto de 2026, 39 páginas**. La copia anterior se conserva sin alteración en `/versiones-del-contrato/oficiales/contrato-v4.2-cliente.pdf` como registro histórico. Los dos addenda siguen el mismo régimen; el **Addendum del BDS** incorporó además un ajuste propio, descrito abajo.
