@@ -17,6 +17,7 @@ Retención cero significa que cada componente usa el dato personal **solo mientr
 | Modelo de razonamiento (BES y experiencia ideal) | Plataforma del proveedor, por API | La conversación durante la generación de cada respuesta | Convenio de retención cero con el proveedor (§3) |
 | Plataforma de voz | Plataforma del proveedor, por API | El audio de la conversación | Modo de retención cero; acceso únicamente por API (§4) |
 | Reconocimiento de voz y orquestación | Plataforma del proveedor | Voz y texto en tránsito | Regla de selección vinculante (§5) |
+| Correo saliente (brief al club y experiencia ideal) | Servicio de correo de Sports World | Perfil del cuestionario y datos de contacto | Envío desde infraestructura de Sports World; sin proveedor externo (§7) |
 | CRM de Sports World | Infraestructura de Sports World | El registro permanente del lead | Ciclo de vida bajo las políticas y avisos de privacidad de Sports World |
 
 ## 2 · La capa propia: retención cero por arquitectura
@@ -58,10 +59,35 @@ La misma regla aplica al agente de voz de práctica de la Academia (Proyecto C) 
 ## 6 · Canales colaterales: WhatsApp, correo y analítica
 
 - **Recordatorios por WhatsApp.** Los 2 recordatorios automatizados (24 horas y 2 horas antes de la visita) usan plantillas con los **datos mínimos**: nombre, club, fecha y hora de la visita. No incluyen contenido del cuestionario ni de la conversación. El tránsito por la plataforma de mensajería se rige por las condiciones de ese proveedor, sobre el número oficial y la cuenta de Sports World.
-- **Resumen del prospecto al club.** Contiene los datos necesarios para preparar la visita y se envía al correo del club; reside en el correo corporativo de Sports World, bajo su custodia, como el resto de su correspondencia.
+- **Correo.** El sistema envía dos mensajes —el resumen del prospecto al club y la experiencia ideal al prospecto—; su régimen se especifica en el §7.
 - **Analítica.** La medición de tráfico opera sobre datos **agregados y anónimos**; las etapas del recorrido individual se concilian dentro de la infraestructura de Sports World, conforme al **[Mapa del Funnel](#funnel:4-dnde-vive-el-dato)**.
 
-## 7 · Verificación y gobierno del régimen
+## 7 · Correo saliente: el mensaje nace y queda en la infraestructura de Sports World
+
+El correo es el componente que transporta **la mayor carga de datos personales de todo el sistema**: el resumen del prospecto que recibe el asesor lleva el perfil completo del cuestionario —objetivos, nivel, horario, acompañantes y las banderas de contexto que el propio prospecto declaró—, más de lo que contiene el registro del lead. Por eso su vía de salida se especifica con el mismo rigor que las plataformas de inteligencia artificial.
+
+**Los dos mensajes del sistema:**
+
+| Mensaje | Destinatario | Contenido |
+|---|---|---|
+| Resumen del prospecto (brief del asesor) | Buzón del club (`correo_club`), dentro del dominio de Sports World | Perfil del cuestionario, datos de contacto y logística de la visita |
+| Experiencia ideal | Buzón que la propia persona proporcionó | Su recomendación personalizada; sin datos de terceros |
+
+**Régimen de envío:**
+
+- **El envío sale de la infraestructura de correo de Sports World, no de EL PRESTADOR.** La capa de orquestación se autentica contra el **relay corporativo de Sports World** —el servicio de correo que ya opera su dominio— mediante una **cuenta de servicio dedicada**, y el remitente es una dirección del propio dominio de Sports World. En consecuencia, el mensaje y su contenido nacen, transitan y quedan archivados **en la infraestructura de correo de Sports World**, igual que el resto de su correspondencia: es el mismo principio que rige al CRM.
+- **Sin proveedores externos de correo transaccional.** Los servicios de terceros que envían correo por cuenta de una aplicación **retienen el cuerpo del mensaje y sus registros de entrega en su propia infraestructura**, lo que colocaría el brief del asesor —el dato más sensible del sistema— fuera del régimen. Por eso **quedan excluidos** de la operación, en congruencia con la regla de selección del §5.
+- **Sin cambios en la autenticación del dominio.** Como el correo sale del propio servicio de Sports World, **no se agrega ningún tercero a sus registros de autenticación de correo** (SPF, DKIM, DMARC) ni se modifican sus registros MX — congruente con la regla de la migración, que sólo toca los registros del sitio.
+- **Credenciales bajo el régimen general:** cuenta de servicio dedicada y no personal, con **privilegio mínimo de solo envío**, entregada por bóveda compartida y con **rotación trimestral**.
+- **Minimización del contenido.** El mensaje al club lleva lo necesario para preparar la visita; el mensaje al prospecto, su experiencia ideal. **Ninguno de los dos incluye la transcripción de la conversación** con BES.
+- **Sin copia en el entorno web.** El sistema no conserva copia de los mensajes enviados: el registro del envío se limita a un identificador no personal —marca de tiempo, club e identificador de sesión—, conforme a la regla de bitácoras sin PII.
+- **Buzón del destinatario.** El mensaje al club llega a un buzón del propio Sports World. El mensaje al prospecto llega al buzón que esa persona proporcionó, fuera del alcance de ambas Partes por la naturaleza del medio; por eso su contenido se limita a su propia experiencia ideal.
+
+**Vía alternativa, si Sports World prefiere no exponer un relay corporativo.** El envío puede resolverse con un **servicio de correo propio en el servidor del Bloque F**: el contenido tampoco sale de la infraestructura de Sports World y el principio se conserva íntegro. A cambio, la entregabilidad queda sujeta a la reputación de la dirección de red de ese servidor y exige configurar la autenticación de correo para ese emisor. **La vía preferente es el relay corporativo**, porque preserva el régimen sin comprometer que el brief llegue a tiempo a la bandeja del asesor.
+
+**Definición al arranque.** Sports World indica cuál de las dos vías opera y entrega la cuenta de servicio correspondiente; la elección queda registrada junto con las demás credenciales productivas del proyecto.
+
+## 8 · Verificación y gobierno del régimen
 
 La retención cero no se declara: se verifica. Cada control tiene una evidencia concreta y un momento de revisión.
 
@@ -71,7 +97,9 @@ La retención cero no se declara: se verifica. Cada control tiene una evidencia 
 | Modo de retención cero de la plataforma de voz | Configuración del agente en la cuenta del proveedor | Al arranque y en cada rotación trimestral |
 | Acceso a la voz únicamente por API | Llaves de servicio como única vía de tráfico de conversaciones | Al arranque y en cada rotación trimestral |
 | Cola de reintento con vida máxima de 72 horas | Valor configurado en el middleware | Al arranque |
-| Bitácoras sin PII | Muestreo de registros operativos y de error | Al arranque y trimestral |
+| Correo saliente por el servicio de Sports World | Remitente del dominio de Sports World y cuenta de servicio de solo envío | Al arranque y en cada rotación trimestral |
+| Sin terceros en la autenticación de correo del dominio | Registros SPF, DKIM y DMARC sin emisores externos añadidos | Al arranque y trimestral |
+| Bitácoras sin PII | Muestreo de registros operativos y de error, incluidos los del envío de correo | Al arranque y trimestral |
 | Base de conocimiento sin datos personales | Revisión del contenido RAG | Al arranque y ante cada actualización de la base |
 
 **Gobierno.** El estado del régimen se incluye en el **reporte mensual de monitoreo de consumo** que EL PRESTADOR entrega conforme a la Cláusula Décima Cuarta. Si un proveedor modifica sus políticas de retención de forma que rompa el régimen, EL PRESTADOR lo notifica a Sports World y lo sustituye conforme a la regla de selección del §5; el Contrato prevé el tratamiento de los cambios sustanciales de políticas de las plataformas de inteligencia artificial (Cláusula Vigésima Primera). Este régimen es **adicional** a la minimización y no retención de la Cláusula Décima Octava; no sustituye al CRM de Sports World como único sistema de registro ni releva a EL PRESTADOR de la supresión certificada al término de la relación.
