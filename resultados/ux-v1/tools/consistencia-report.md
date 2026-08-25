@@ -1,6 +1,6 @@
 # Reporte de consistencia del depósito
 
-**32 documentos · 4,314 líneas · 20 reglas · 0 hallazgos**
+**32 documentos · 4,350 líneas · 20 reglas · 0 hallazgos**
 
 Este reporte lo genera `tools/consistencia.js` al ejecutarse. La columna «reglas
 aplicadas» no es una declaración: es el registro de qué verificación tocó qué
@@ -41,10 +41,10 @@ archivo durante esta corrida.
 | resumen.es.md | 231 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 | roi.es.md | 16 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 | seguimiento-2026-06-22.es.md | 58 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
-| seguridad.es.md | 77 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
+| seguridad.es.md | 90 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 | technical.es.md | 194 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 | workshop-discovery.es.md | 48 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
-| zdr.es.md | 108 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
+| zdr.es.md | 131 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18, R19, R20 (18) | 0 |
 
 ## Cobertura por regla
 

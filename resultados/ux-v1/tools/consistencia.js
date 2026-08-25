@@ -404,12 +404,26 @@ regla("R19 · correo saliente", (falla) => {
 // permanente en plataformas de terceros, y sólo admite información que pueda
 // comunicarse a un prospecto.
 regla("R20 · base de conocimiento", (falla) => {
-  marcar("seguridad.es.md");
+  // Las invariantes viven en los DOS documentos que describen el régimen de la
+  // KB. Exigirlas en ambos impide que una copia se relaje respecto de la otra.
+  const INVARIANTES = [
+    [/no se carga como corpus permanente/i, "no fija que la KB no se cargue como corpus permanente en plataformas de terceros"],
+    [/puede ser comunicado por el agente a un cliente durante una conversación/i, "no fija la premisa de que todo lo que entra a la KB es revelable"],
+    [/no debe existir en la base de conocimiento/i, "no enumera las categorías que no deben existir en la KB"],
+    [/[Nn]ombres y datos de contacto del personal/, "categoría prohibida ausente: nombres y contactos del personal"],
+    [/[Ii]nformación financiera interna/, "categoría prohibida ausente: información financiera interna"],
+    [/[Mm]árgenes y resultados por club/, "categoría prohibida ausente: márgenes y resultados por club"],
+    [/[Dd]atos de socios actuales/, "categoría prohibida ausente: datos de socios actuales"],
+    [/verifique y autorice de forma expresa/i, "no fija la autorización expresa de Sports World para el contenido de la KB"],
+    [/La regla es absoluta y no admite excepción operativa/i, "no declara absoluta la regla de contenido de la KB"],
+  ];
+  for (const f of ["seguridad.es.md", "zdr.es.md"]) {
+    marcar(f);
+    const t = texto[f] || "";
+    if (!t) { falla(f, 0, "documento ausente: no puede sostener el régimen de la KB"); continue; }
+    for (const [re_, msg] of INVARIANTES) if (!re_.test(t)) falla(f, 0, msg);
+  }
   const s = texto["seguridad.es.md"] || "";
-  if (!/no se carga como corpus permanente/i.test(s))
-    falla("seguridad.es.md", 0, "no fija que la KB no se cargue como corpus permanente en plataformas de terceros");
-  if (!/no puede decirse a un prospecto no entra a la KB/i.test(s))
-    falla("seguridad.es.md", 0, "no fija la regla de contenido de la KB");
   // Nadie puede declarar que la KB contiene datos personales.
   porLinea((f, n, l) => {
     if (/base(s)? de conocimiento/i.test(l) && /datos personales/i.test(l) && !/no contien|sin datos personales|no incluye/i.test(l))
