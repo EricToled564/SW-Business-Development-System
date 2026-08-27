@@ -2,7 +2,7 @@ name: Deploy UX web app to GitHub Pages
 
 on:
   push:
-    branches: [main, claude/serene-cray-06lv41]
+    branches: [main, claude/serene-cray-06lv41, claude/keen-pasteur-2p3qtk]
     paths:
       - "resultados/ux-v1/webapp/**"
       - ".github/workflows/deploy-ux-webapp.yml"
