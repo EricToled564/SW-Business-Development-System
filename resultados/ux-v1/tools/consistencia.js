@@ -453,6 +453,37 @@ regla("R20 · el Manual de Ventas cubre todo paso a cargo del asesor", (falla) =
     for (const n of exc) if (!pasos.some((p) => p.n === n))
       falla("proceso/mv-01.html", 0, `${clave} paso ${n} se declara excluido pero no existe en el procedimiento`);
   }
+
+  // 5 · Cada apartado citado en el anexo tiene que existir en el manual, y cada
+  // subsección N.M tiene que vivir dentro del apartado N. Sin esto, renumerar el
+  // manual deja el anexo apuntando a otro lado y la regla lo daría por bueno.
+  const apartados = new Set(
+    [...mv.matchAll(/<h2 class="s"[^>]*><span class="n">(\d+)<\/span>/g)].map((m) => m[1])
+  );
+  const subsecciones = new Set(
+    [...mv.matchAll(/<h3 class="ss"[^>]*>\s*(\d+\.\d+)/g)].map((m) => m[1])
+  );
+  const reDestino = /<tr><td>(SOP\/SW\/\d+)<\/td><td class="c">([^<]+)<\/td>[\s\S]*?<td>([^<]*)<\/td><\/tr>/g;
+  for (let m; (m = reDestino.exec(anexo)); ) {
+    const [, clave, rango, destino] = m;
+    for (const ap of destino.match(/(?<![.\d])\d\d(?![.\d])/g) || [])
+      if (!apartados.has(ap))
+        falla("proceso/mv-01.html", 0, `el anexo manda ${clave} ${rango} al apartado ${ap}, que no existe en el manual`);
+    for (const sub of destino.match(/\d+\.\d+/g) || []) {
+      if (!subsecciones.has(sub))
+        falla("proceso/mv-01.html", 0, `el anexo cita la subsección ${sub}, que no existe en el manual`);
+      const ap = destino.match(/(?<![.\d])\d\d(?![.\d])/);
+      if (ap && String(Number(ap[0])) !== sub.split(".")[0])
+        falla("proceso/mv-01.html", 0, `la subsección ${sub} no corresponde al apartado ${ap[0]}`);
+    }
+  }
+
+  // 6 · Ninguna referencia del cuerpo puede apuntar a un apartado inexistente.
+  const cuerpo = mv.slice(0, mv.indexOf('<div class="anexo">'));
+  for (const m of cuerpo.matchAll(/apartados?\s+(\d\d)(?:\s*y\s*(\d\d))?/g))
+    for (const ap of [m[1], m[2]].filter(Boolean))
+      if (!apartados.has(ap))
+        falla("proceso/mv-01.html", 0, `el cuerpo remite al apartado ${ap}, que no existe`);
 });
 
 /* ─────────── Reporte ─────────── */
