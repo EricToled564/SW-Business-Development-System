@@ -485,7 +485,7 @@
   <div class="proc"><table class="pr">
     <thead><tr><th>Paso</th><th>Acción</th><th>Responsable</th></tr></thead>
     <tbody>
-      <tr class="hito"><td colspan="3">Inicio del procedimiento</td></tr>
+      <tr class="hito"><td colspan="3">Acceso a la consola y origen del contacto</td></tr>
 
       <tr><td class="st">1</td><td class="ac">Ingresa a la consola con su usuario nominal. Cada captura queda asociada a la persona que la realiza y al club desde el que se hace; no existen usuarios compartidos.</td><td class="rp">Personal autorizado</td></tr>
 
@@ -510,6 +510,8 @@
 
       <tr class="cm"><td class="st">9</td><td class="ac">Sella la atribución de origen: canal <span class="mono">consola</span>, subtipo <strong>presencial</strong>, club y usuario que atiende. <em>Continúa en el paso 10.</em></td><td class="rp">Sistema</td></tr>
 
+      <tr class="hito"><td colspan="3">Consentimiento y cuestionario</td></tr>
+
       <tr><td class="st">10</td><td class="ac">Presenta el aviso de privacidad y recaba el consentimiento antes del primer reactivo, con las finalidades necesarias y las de mercadotecnia por separado.
         <ul><li><strong>Presencial:</strong> el aviso se muestra en pantalla y la persona lo acepta ahí.</li>
         <li><strong>Telefónica:</strong> se lee la versión breve conforme al guion que define Legal, y la aceptación verbal queda registrada con marca de tiempo.</li></ul>
@@ -518,6 +520,8 @@
       <tr><td class="st">11</td><td class="ac">Informa que requiere un minuto de su tiempo y aplica el cuestionario <strong>desde la consola, reactivo por reactivo</strong>, capturando las respuestas mientras conversa. No se aplica de memoria para capturar después.</td><td class="rp">Asesor u operador</td></tr>
 
       <tr><td class="st">12</td><td class="ac">Registra la etapa <strong>E2 · cuestionario iniciado</strong> al capturarse el primer reactivo (P-09).</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Resolución del club y generación de la recomendación</td></tr>
 
       <tr><td class="st">13</td><td class="ac">Consulta el catálogo del día y resuelve el club que satisface la experiencia (P-03, P-04), con el radio base de 10 kilómetros y sus tres casos.
         <span class="br"><b>Si el club resuelto no es aquel desde el que se atiende</b> — el asesor se lo señala a la persona con su razón, y honra la elección que ella haga. No se le oculta ni se le impone el club propio.</span></td><td class="rp">Sistema</td></tr>
@@ -537,6 +541,8 @@
         <span class="br"><b>Sí</b> — continúa en el paso 20. &nbsp; <b>No</b> — continúa en el paso 51.</span></td><td class="rp">Sistema</td></tr>
 
       <tr><td class="st">20</td><td class="ac">Registra la etapa <strong>E3 · cuestionario completado</strong> al quedar generada la experiencia ideal (P-09).</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Entrega de la recomendación y ajustes</td></tr>
 
       <tr><td class="st">21</td><td class="ac">Presenta la recomendación a la persona: <strong>en pantalla</strong> si la atención es presencial, o <strong>descrita en la conversación</strong> si es telefónica, en cuyo caso se le ofrece enviársela por correo al terminar.</td><td class="rp">Asesor u operador</td></tr>
 
@@ -560,6 +566,8 @@
       <tr><td class="st">28</td><td class="ac"><strong>Recalcula la experiencia ideal</strong> con las clases elegidas y actualiza el brief. <em>Continúa en el paso 15.</em></td><td class="rp">Sistema</td></tr>
 
       <tr><td class="st">29</td><td class="ac">Muestra el <strong>catálogo completo de clases del club en modo de consulta</strong>. No se puede seleccionar desde ahí: esas clases no pasaron los filtros que sostienen la recomendación. El asesor le indica que las revisen juntos en el recorrido. <em>Continúa en el paso 25.</em></td><td class="rp">Asesor u operador</td></tr>
+
+      <tr class="hito"><td colspan="3">Visita inmediata o visita agendada</td></tr>
 
       <tr class="q"><td class="st">30</td><td class="ac"><span class="qq">¿La persona está en el club y hay asesor disponible para conducir la visita guiada ahora?</span>
         <span class="br"><b>Sí</b> — visita inmediata. Continúa en el paso 31.<br>
@@ -588,6 +596,8 @@
       <tr class="q"><td class="st">38</td><td class="ac"><span class="qq">¿La escritura en el CRM se confirma?</span>
         <span class="br"><b>Sí</b> — continúa en el paso 39. &nbsp; <b>No</b> — continúa en el paso 50.</span></td><td class="rp">Sistema</td></tr>
 
+      <tr class="hito"><td colspan="3">Escritura al CRM, confirmación y recordatorios</td></tr>
+
       <tr><td class="st">39</td><td class="ac">Registra la etapa <strong>E4 · visita agendada</strong> al confirmarse la escritura (P-09).</td><td class="rp">Sistema</td></tr>
 
       <tr><td class="st">40</td><td class="ac">Envía por correo al club la solicitud de visita y el brief, con la señal de incompatibilidad de horario cuando exista. <strong>Se envía también cuando el club de la visita es aquel desde el que se capturó</strong>, porque el correo es hoy el único lugar donde el diagnóstico queda conservado: no existe repositorio de experiencias ideales.</td><td class="rp">Sistema</td></tr>
@@ -595,6 +605,8 @@
       <tr><td class="st">41</td><td class="ac">Envía a la persona la confirmación con club, dirección, fecha y hora. <strong>Su experiencia ideal ya se le envió</strong> al generarse la recomendación. <strong>El aviso de que el club confirma y coordina no aplica en este canal:</strong> quien agenda es el propio club, con la persona presente o al teléfono.</td><td class="rp">Sistema</td></tr>
 
       <tr><td class="st">42</td><td class="ac">Programa los dos recordatorios por WhatsApp al celular capturado, 24 y 2 horas antes, con plantilla autorizada y desde el número oficial de la empresa.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Entrega al club y seguimiento</td></tr>
 
       <tr><td class="st">43</td><td class="ac">Recibe la solicitud de visita y el brief. <strong>Este paso y los tres siguientes aplican únicamente cuando quien capturó no es quien atenderá la visita.</strong> Si el asesor que capturó se queda con la visita, él mismo es el asesor designado, el acuse no procede y el procedimiento continúa en el paso 47.</td><td class="rp">Gerencia del club</td></tr>
 
@@ -608,6 +620,8 @@
       <tr><td class="st">47</td><td class="ac">Consulta el brief antes de la visita y revisa sus señales de atención. <strong>La preparación y la conducción del recorrido se rigen por SOP/SW/0201 · La Experiencia Guiada de Sports World</strong> y no se detallan aquí. La apertura del brief queda registrada.</td><td class="rp">Asesor designado</td></tr>
 
       <tr><td class="st">48</td><td class="ac">Verifica en la lectura semanal: acuses registrados, briefs abiertos antes de la visita, <strong>proporción de visitas inmediatas frente a agendadas por club</strong>, incompatibilidades de horario, y que ninguna llamada a referido se haya realizado sin constancia.</td><td class="rp">Dirección Comercial</td></tr>
+
+      <tr class="hito"><td colspan="3">Excepciones y cierres sin agenda</td></tr>
 
       <tr class="x"><td class="st">49</td><td class="ac"><strong>Cierre sin agenda.</strong> Registra a la persona con la recomendación entregada, si la hubo, el motivo por el que no se agendó, y <strong>una fecha acordada de siguiente contacto</strong> —nunca un compromiso indeterminado—. En el caso de una negativa de referido, se registra la negativa y no se acuerda contacto posterior. <em>Continúa en Fin del procedimiento.</em></td><td class="rp">Asesor u operador</td></tr>
 

@@ -493,7 +493,7 @@
   <div class="proc"><table class="pr">
     <thead><tr><th>Paso</th><th>Acción</th><th>Responsable</th></tr></thead>
     <tbody>
-      <tr class="hito"><td colspan="3">Inicio del procedimiento</td></tr>
+      <tr class="hito"><td colspan="3">Llegada al sitio y arranque del recorrido</td></tr>
 
       <tr><td class="st">1</td><td class="ac">Llega al sitio de Sports World desde una búsqueda orgánica, desde un anuncio con destino al sitio o desde una ficha de Google Business.</td><td class="rp">Prospecto</td></tr>
 
@@ -510,6 +510,8 @@
       <tr><td class="st">5</td><td class="ac">Despliega el aviso de privacidad antes del primer reactivo y recaba el consentimiento, con las finalidades necesarias y las de mercadotecnia presentadas por separado.
         <span class="br"><b>Si el prospecto no otorga el consentimiento</b> — no se aplica el cuestionario. Continúa en el paso 44.</span></td><td class="rp">Sistema</td></tr>
 
+      <tr class="hito"><td colspan="3">Aplicación del cuestionario</td></tr>
+
       <tr><td class="st">6</td><td class="ac">Presenta el cuestionario, <strong>un reactivo por pantalla</strong>, con avance explícito. El avance automático al seleccionar una opción está deshabilitado, para que un toque erróneo no adelante la pantalla.</td><td class="rp">Sistema</td></tr>
 
       <tr><td class="st">7</td><td class="ac">Registra la etapa <strong>E2 · cuestionario iniciado</strong> al responderse el primer reactivo, no al presentarse la primera pantalla (P-09).</td><td class="rp">Sistema</td></tr>
@@ -525,6 +527,8 @@
       <tr class="cm"><td class="st">11</td><td class="ac">Aplica el cuestionario por voz o por texto dentro del sitio, en la modalidad elegida, y resuelve las dudas que surjan con la base de conocimiento sin sacar al prospecto del recorrido. Registra E2 al primer reactivo respondido. <strong>Si el prospecto decide continuar por su cuenta, lo devuelve al reactivo exacto en que va, sin reiniciar ni repetir.</strong> <em>Continúa en el paso 12.</em></td><td class="rp">Asistente conversacional</td></tr>
 
       <tr><td class="st">12</td><td class="ac">Al enviarse el último reactivo, presenta el indicador de proceso. El prospecto no interactúa durante esta fase.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Resolución del club y generación de la recomendación</td></tr>
 
       <tr><td class="st">13</td><td class="ac">Consulta el catálogo del día y resuelve el club que satisface la experiencia (P-03, P-04). La búsqueda parte de un radio de 10 kilómetros:
         <ul><li>si dos o más clubes la satisfacen, decide la distancia;</li>
@@ -549,6 +553,8 @@
         <span class="br"><b>Sí</b> — continúa en el paso 20. &nbsp; <b>No</b> — continúa en el paso 45.</span></td><td class="rp">Sistema</td></tr>
 
       <tr><td class="st">20</td><td class="ac">Registra la etapa <strong>E3 · cuestionario completado</strong> al quedar generada la experiencia ideal, no al responderse el último reactivo (P-09).</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Entrega de la recomendación y ajustes</td></tr>
 
       <tr><td class="st">21</td><td class="ac">Presenta la experiencia ideal, <strong>antes de solicitar dato alguno de contacto</strong> (P-02). Desde esta pantalla el prospecto no puede reabrir sus respuestas: solo puede reiniciar el recorrido completo.</td><td class="rp">Sistema</td></tr>
 
@@ -577,6 +583,8 @@
       <tr class="q"><td class="st">30</td><td class="ac"><span class="qq">¿El prospecto solicita agendar la visita guiada?</span>
         <span class="br"><b>Sí</b> — continúa en el paso 31. &nbsp; <b>No</b> — abandono anónimo. Continúa en el paso 44.</span></td><td class="rp">Prospecto</td></tr>
 
+      <tr class="hito"><td colspan="3">Captura de contacto y agendado de la visita</td></tr>
+
       <tr><td class="st">31</td><td class="ac">Presenta la captura de contacto: apellido y celular de diez dígitos. <strong>El correo ya se capturó al enviarle su experiencia ideal;</strong> si entonces prefirió no darlo, se le solicita aquí. Bloquea el avance hasta que los tres pasen la validación. <strong>El mensaje de error se muestra al salir del campo, no en cada pulsación</strong>, y dice qué está mal y qué hacer.</td><td class="rp">Sistema</td></tr>
 
       <tr><td class="st">32</td><td class="ac">Captura los tres datos. Puede regresar a su recomendación sin perder lo capturado.</td><td class="rp">Prospecto</td></tr>
@@ -594,6 +602,8 @@
       <tr class="q"><td class="st">38</td><td class="ac"><span class="qq">¿La escritura en el CRM se confirma?</span>
         <span class="br"><b>Sí</b> — continúa en el paso 39. &nbsp; <b>No</b> — continúa en el paso 46.</span></td><td class="rp">Sistema</td></tr>
 
+      <tr class="hito"><td colspan="3">Escritura al CRM y confirmación</td></tr>
+
       <tr><td class="st">39</td><td class="ac">Registra la etapa <strong>E4 · visita agendada</strong> al confirmarse la escritura, no al confirmar el prospecto (P-09).</td><td class="rp">Sistema</td></tr>
 
       <tr><td class="st">40</td><td class="ac">Envía por correo al club la solicitud de visita y el brief del asesor, a la dirección registrada en el catálogo del día. <strong>Cuando exista incompatibilidad de horario, el brief la lleva marcada como señal de atención.</strong></td><td class="rp">Sistema</td></tr>
@@ -601,6 +611,8 @@
       <tr><td class="st">41</td><td class="ac">Presenta la confirmación en dos páginas: la primera con club, dirección, fecha y hora, pensada para conservarse; la segunda con el brief del asesor. Incluye el aviso expreso de que el club confirma y coordina la visita (P-06).</td><td class="rp">Sistema</td></tr>
 
       <tr><td class="st">42</td><td class="ac">Programa los dos recordatorios por WhatsApp al celular capturado, 24 y 2 horas antes de la visita, con plantilla autorizada y desde el número oficial de la empresa.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Cierre sin agenda y excepciones</td></tr>
 
       <tr><td class="st">43</td><td class="ac">Cierra el recorrido. Toda la información de la sesión se descarta del navegador: el registro escrito en el CRM es lo único que persiste.
         <span class="br"><b>Si el prospecto modifica la fecha antes de cerrar</b> — se actualiza el mismo registro, se reprograman los recordatorios y se notifica al club la fecha corregida. No se crea un registro nuevo (P-05).</span>
@@ -613,6 +625,8 @@
       <tr class="x"><td class="st">46</td><td class="ac"><strong>Excepción.</strong> Conserva el registro en una cola cifrada de vigencia limitada y reintenta la escritura con espera incremental.</td><td class="rp">Sistema</td></tr>
 
       <tr class="x"><td class="st">47</td><td class="ac"><strong>Excepción.</strong> Agotados los reintentos, notifica al club por correo con los datos completos para captura manual el mismo día, y presenta al prospecto su confirmación con normalidad: la falla no se le traslada. <em>Continúa en el paso 48.</em></td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Entrega al club y seguimiento</td></tr>
 
       <tr><td class="st">48</td><td class="ac">Recibe la solicitud de visita y el brief, y verifica su capacidad real de atención en el horario solicitado.</td><td class="rp">Gerencia del club</td></tr>
 
