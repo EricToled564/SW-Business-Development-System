@@ -261,3 +261,16 @@ html.demo-active elevenlabs-convai{display:none!important;visibility:hidden!impo
 .toc a.toc-hito{color:var(--brand-text);font-weight:600;padding-left:.9rem;
   border-left:2px solid var(--border);margin:.18rem 0}
 .toc a.toc-hito:hover{border-left-color:var(--brand)}
+
+/* menú de la sección dentro de cada documento del Proceso Comercial */
+.page-nav{display:flex;flex-wrap:wrap;gap:.35rem;margin:.5rem 0 0}
+.page-nav .pn{display:flex;flex-direction:column;gap:.05rem;text-decoration:none;
+  padding:.34rem .6rem;border:1px solid var(--border);border-radius:8px;
+  background:#fff;color:var(--muted);line-height:1.25;min-width:0}
+.page-nav .pn:hover{border-color:var(--brand);background:var(--accent)}
+.page-nav .pn-c{font-size:.68rem;font-weight:700;letter-spacing:.03em;color:var(--brand-text)}
+.page-nav .pn-n{font-size:.74rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:15rem}
+.page-nav .pn.on{background:var(--brand);border-color:var(--brand)}
+.page-nav .pn.on .pn-c,.page-nav .pn.on .pn-n{color:#fff}
+@media (max-width:560px){.page-nav .pn-n{display:none}}
+@media print{.page-nav{display:none}}
