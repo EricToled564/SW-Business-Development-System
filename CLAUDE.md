@@ -18,6 +18,12 @@ Cinco niveles:
 
 Un mismo concepto atraviesa el sistema de punta a punta: el cliente lo recibe como experiencia, el asesor como brief, la Academia lo entrena como método.
 
+### Qué es el producto (definición fijada por Eric)
+
+**El producto es la Experiencia Ideal: el plan de entrenamiento holístico y específico que demuestra la superioridad técnica de Sports World, entregando un programa conectado con los objetivos de la persona desde el día uno. No vendemos un club ni una membresía: vendemos resultados.**
+
+Toda pieza —manual, cuestionario, procedimiento, capacitación, sitio— se escribe desde ahí. Un catálogo de clases, una lista de amenidades o una tabla de precios no son el producto: son insumos del plan. Si un documento describe el club en vez del plan de la persona, está mal escrito.
+
 ## Cómo trabaja Eric (reglas de entrega)
 
 1. **Registro ejecutivo siempre.** Nada de lenguaje coloquial en documentos del depósito.
