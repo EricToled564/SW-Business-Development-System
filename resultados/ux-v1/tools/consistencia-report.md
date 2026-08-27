@@ -39,6 +39,9 @@ archivo durante esta corrida.
 | minuta-2026-06-22.es.md *(intocable)* | 119 | R12 (1) | 0 |
 | presentacion/deck.html | — | R7, R8 (2) | 0 |
 | proceso/mv-01.html | — | R20 (1) | 0 |
+| proceso/sop-0101.html | — | R20 (1) | 0 |
+| proceso/sop-0102.html | — | R20 (1) | 0 |
+| proceso/sop-0103.html | — | R20 (1) | 0 |
 | proceso/sop-0201.html | — | R20 (1) | 0 |
 | proceso/sop-0301.html | — | R20 (1) | 0 |
 | resumen.es.md | 231 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17 (15) | 0 |
@@ -71,4 +74,4 @@ archivo durante esta corrida.
 | R15 · línea base de KPIs | 30 | 0 |
 | R18 · páginas del Proceso Comercial | 2 | 0 |
 | R19 · sello de versión del visor | 1 | 0 |
-| R20 · el Manual de Ventas cubre todo paso a cargo del asesor | 3 | 0 |
+| R20 · el Manual de Ventas cubre todo paso a cargo del asesor | 6 | 0 |
