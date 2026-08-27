@@ -357,6 +357,21 @@ regla("R18 · páginas del Proceso Comercial", (falla) => {
     falla("app.js", 0, "el grupo «proceso» no está en GROUP_ORDER");
 });
 
+/* ─────────── R19 · Sello de versión en los recursos del visor ─────────── */
+// Sin sello, el navegador de quien ya visitó el sitio conserva el app.js anterior
+// durante diez minutos y los documentos nuevos no existen para él: toda liga cae
+// al índice. Cada cambio del visor tiene que llevar sello nuevo.
+regla("R19 · sello de versión del visor", (falla) => {
+  marcar("index.html");
+  const html = fs.readFileSync(path.join(WEBAPP, "index.html"), "utf8");
+  for (const rec of ["app.js", "styles.css"]) {
+    const re = new RegExp(`(?:src|href)="${rec.replace(".", "\\.")}(\\?v=\\d{12})?"`);
+    const m = html.match(re);
+    if (!m) falla("index.html", 0, `no referencia ${rec}`);
+    else if (!m[1]) falla("index.html", 0, `${rec} sin sello de versión (?v=AAAAMMDDhhmm)`);
+  }
+});
+
 /* ─────────── Reporte ─────────── */
 const totalLineas = archivos.reduce((a, f) => a + texto[f].split("\n").length, 0);
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);
