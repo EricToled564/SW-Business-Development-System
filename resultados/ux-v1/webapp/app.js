@@ -441,6 +441,22 @@
     document.documentElement.classList.remove("page-active");
   }
 
+  /* menú de la sección: los documentos hermanos, siempre a la vista */
+  function seccionNavHtml(actual) {
+    const hermanos = DOCS.filter(function (d) { return d.group === actual.group; });
+    if (hermanos.length < 2) return "";
+    return '<nav class="page-nav" aria-label="Documentos de la sección">' +
+      hermanos.map(function (d) {
+        const clave = (d.title.es.split(" · ")[0] || d.title[lang]).trim();
+        const nombre = (d.title[lang].split(" · ").slice(1).join(" · ") || d.title[lang]).trim();
+        return '<a class="pn' + (d.id === actual.id ? " on" : "") + '" href="#' + d.id +
+          '" data-doc="' + d.id + '" title="' + d.title[lang].replace(/"/g, "&quot;") + '">' +
+          '<span class="pn-c">' + clave + "</span>" +
+          '<span class="pn-n">' + nombre + "</span></a>";
+      }).join("") +
+      "</nav>";
+  }
+
   function renderPage(doc, anchor) {
     document.documentElement.classList.add("page-active");
     const abs = new URL(doc.src, location.href).href;
@@ -452,6 +468,7 @@
           '<button class="page-btn" id="pgPrint" type="button">' + t().pagePrint + "</button>" +
         "</span>" +
       "</div>" +
+      seccionNavHtml(doc) +
       '<div class="page-tools">' +
         '<span class="pt-find">' +
           '<input id="pgFind" type="search" autocomplete="off" placeholder="' + t().pageFind + '">' +
@@ -802,6 +819,12 @@
     d.addEventListener("click", function (e) {
       const x = e.target.closest("a.sw-x");
       if (x) { e.preventDefault(); loadDoc(x.dataset.go, true); return; }
+      const rel = e.target.closest("a[href]");
+      if (rel) {
+        const archivo = (rel.getAttribute("href") || "").split("/").pop().split("#")[0];
+        const hermano = DOCS.find(function (dd) { return dd.type === "page" && dd.src.split("/").pop() === archivo; });
+        if (hermano) { e.preventDefault(); loadDoc(hermano.id, true); return; }
+      }
       const st = e.target.closest("table.pr td.st");
       if (st) {
         const tr = st.closest("tr");
