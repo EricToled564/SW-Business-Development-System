@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Experiencia Guiada · SOP/SW/0201 · Sports World</title>
+  <meta name="description" content="Procedimiento normalizado de preparación, conducción y cierre de la visita guiada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+  :root{
+    --paper:#eff0ee; --surface:#ffffff; --s2:#f5f6f5;
+    --ink:#12171a; --soft:#3f484f; --faint:#79838a;
+    --line:#cfd4d3; --hair:#e2e5e4;
+    --a:#14456b; --a-bg:#dbe7f1; --a-line:#a4c2db;
+    --w:#75460f; --w-bg:#f8ecd9; --w-line:#dcc296;
+    --r:#862d2d; --r-bg:#f8e5e3; --r-line:#dbb0ac;
+    --g:#245c42; --g-bg:#dcece4;
+    --p:#5a3576; --p-bg:#ece2f4; --p-line:#c5adda;
+    --onA:#ffffff;
+    --sh:0 1px 2px rgba(12,18,22,.05),0 10px 24px -18px rgba(12,18,22,.22);
+  }
+  @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --paper:#0b0e10; --surface:#14181b; --s2:#191e21;
+    --ink:#e6eaea; --soft:#a6afb5; --faint:#737c82;
+    --line:#282f33; --hair:#1f2528;
+    --a:#7cb8e3; --a-bg:#112637; --a-line:#284761;
+    --w:#dba861; --w-bg:#2b2113; --w-line:#4a3a1e;
+    --r:#e28c87; --r-bg:#321f1e; --r-line:#4d2c2a;
+    --g:#78c3a1; --g-bg:#12281f;
+    --p:#bfa0da; --p-bg:#241a30; --p-line:#42305a;
+    --onA:#07202e;
+    --sh:0 1px 2px rgba(0,0,0,.35),0 10px 24px -18px rgba(0,0,0,.65);
+  }}
+  :root[data-theme="dark"]{
+    --paper:#0b0e10; --surface:#14181b; --s2:#191e21;
+    --ink:#e6eaea; --soft:#a6afb5; --faint:#737c82;
+    --line:#282f33; --hair:#1f2528;
+    --a:#7cb8e3; --a-bg:#112637; --a-line:#284761;
+    --w:#dba861; --w-bg:#2b2113; --w-line:#4a3a1e;
+    --r:#e28c87; --r-bg:#321f1e; --r-line:#4d2c2a;
+    --g:#78c3a1; --g-bg:#12281f;
+    --p:#bfa0da; --p-bg:#241a30; --p-line:#42305a;
+    --onA:#07202e;
+    --sh:0 1px 2px rgba(0,0,0,.35),0 10px 24px -18px rgba(0,0,0,.65);
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.6;
+    -webkit-font-smoothing:antialiased}
+  ::selection{background:var(--a-bg)}
+  .wrap{max-width:900px;margin:0 auto;padding:clamp(18px,4vw,44px) clamp(13px,4vw,26px) 96px}
+  h1,h2{font-family:"Spectral",Georgia,serif;margin:0;color:var(--ink);text-wrap:balance}
+  p{margin:10px 0 0}
+  strong{color:var(--ink);font-weight:600}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  .fine{font-size:11.5px;color:var(--faint);line-height:1.45}
+
+  .hdr{background:var(--surface);border:1px solid var(--line);border-radius:3px;box-shadow:var(--sh);overflow:hidden}
+  .hdr .bar{background:var(--a);color:var(--onA);padding:8px 16px;
+    font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.13em;
+    text-transform:uppercase;font-weight:700;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+  .hdr .ttl{padding:16px 18px;border-bottom:1px solid var(--line)}
+  .hdr .ttl .lb{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);font-weight:700}
+  .hdr .ttl h1{font-size:clamp(19px,2.9vw,27px);font-weight:600;margin-top:5px;line-height:1.18}
+  .hdr .ttl .ch{margin-top:7px;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--a);font-weight:600;letter-spacing:.04em}
+  .meta{display:grid;grid-template-columns:repeat(3,1fr)}
+  @media(max-width:640px){.meta{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:400px){.meta{grid-template-columns:1fr}}
+  .meta > div{padding:10px 16px;border-right:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  .meta .k{font-family:"JetBrains Mono",monospace;font-size:8.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);font-weight:700}
+  .meta .v{font-size:12.8px;color:var(--ink);margin-top:3px;line-height:1.4}
+
+  h2.s{font-size:16.5px;font-weight:600;margin-top:40px;padding-bottom:8px;
+    border-bottom:1.5px solid var(--ink);display:flex;align-items:baseline;gap:11px}
+  h2.s .n{font-family:"JetBrains Mono",monospace;font-size:.72em;color:var(--a);font-weight:700}
+  h3.ss{font-size:11.5px;font-weight:700;margin:26px 0 0;font-family:"Inter",sans-serif;
+    text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+  p.intro{color:var(--soft);max-width:74ch}
+  ul.pl{margin:11px 0 0;padding-left:19px;color:var(--soft);font-size:14px;line-height:1.6}
+  ul.pl li{margin-bottom:7px}
+  ul.pl li b{color:var(--ink);font-weight:600}
+
+  .tw{overflow-x:auto;margin-top:12px;border:1px solid var(--hair);border-radius:3px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:12.7px;min-width:600px}
+  th{background:var(--s2);text-align:left;padding:8px 12px;font-weight:700;font-size:9.5px;
+    text-transform:uppercase;letter-spacing:.055em;color:var(--faint);
+    border-bottom:1px solid var(--line);vertical-align:bottom}
+  td{padding:9px 12px;border-bottom:1px solid var(--hair);color:var(--soft);vertical-align:top;line-height:1.5}
+  tr:last-child td{border-bottom:none}
+  td strong{color:var(--ink);font-weight:600}
+  td.c{font-family:"JetBrains Mono",monospace;color:var(--a);font-weight:700;white-space:nowrap;font-size:11.5px}
+  td.d{font-family:"JetBrains Mono",monospace;color:var(--soft);font-size:11px;white-space:nowrap}
+  tbody tr:hover{background:var(--s2)}
+
+  /* dos puntos de entrada */
+  .pe{margin-top:13px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:660px){.pe{grid-template-columns:1fr}}
+  .pe > div{background:var(--surface);border:1px solid var(--hair);border-radius:3px;padding:15px 17px}
+  .pe > div.a1{border-top:2.5px solid var(--p)}
+  .pe > div.a2{border-top:2.5px solid var(--a)}
+  .pe .cd{font-family:"JetBrains Mono",monospace;font-size:9.5px;font-weight:700;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--p)}
+  .pe .a2 .cd{color:var(--a)}
+  .pe h4{margin:4px 0 0;font-family:"Spectral",Georgia,serif;font-size:16px;font-weight:600;color:var(--ink);line-height:1.25}
+  .pe ul{margin:10px 0 0;padding-left:16px;font-size:12.7px;color:var(--soft);line-height:1.55}
+  .pe ul li{margin-bottom:7px} .pe ul li b{color:var(--ink);font-weight:600}
+
+  .proc{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+  table.pr{border-collapse:collapse;width:100%;font-size:13px;min-width:640px}
+  table.pr th:nth-child(1){width:44px;text-align:center}
+  table.pr th:nth-child(3){width:172px}
+  table.pr td{padding:11px 13px;border-bottom:1px solid var(--hair)}
+  table.pr td.st{font-family:"JetBrains Mono",monospace;font-weight:700;color:var(--a);
+    text-align:center;font-size:12px;white-space:nowrap;background:var(--s2)}
+  table.pr td.rp{color:var(--ink);font-size:12.3px;font-weight:500;line-height:1.45}
+  table.pr td.ac{line-height:1.55}
+  table.pr td.ac ul{margin:7px 0 0;padding-left:17px}
+  table.pr td.ac li{margin-bottom:4px}
+  .br{display:block;margin-top:7px;padding-left:11px;border-left:2px solid var(--w-line);
+    font-size:12.3px;line-height:1.65}
+  .br b{font-family:"JetBrains Mono",monospace;color:var(--w);font-weight:700}
+  tr.q td.ac,tr.q td.st,tr.q td.rp{background:var(--w-bg)}
+  tr.q td.st{color:var(--w)}
+  tr.q td.ac .qq{font-weight:700;color:var(--w);display:block}
+  tr.x td.ac,tr.x td.st,tr.x td.rp{background:var(--r-bg)}
+  tr.x td.st{color:var(--r)}
+  tr.cm td.ac,tr.cm td.st,tr.cm td.rp{background:var(--p-bg)}
+  tr.cm td.st{color:var(--p)}
+  tr.hito td{background:var(--a-bg);color:var(--a);font-family:"JetBrains Mono",monospace;
+    font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;text-align:center;
+    padding:8px 12px;border-bottom:1px solid var(--a-line)}
+
+  .flow{margin-top:12px;background:var(--surface);border:1px solid var(--hair);border-radius:3px;
+    padding:18px 16px;overflow-x:auto}
+  .fl{min-width:540px;display:flex;flex-direction:column;align-items:center}
+  .bx{width:100%;max-width:520px;border-radius:3px;padding:9px 13px;font-size:12px;line-height:1.4;
+    background:var(--s2);border:1px solid var(--line);color:var(--soft);text-align:left}
+  .bx .i{font-family:"JetBrains Mono",monospace;font-size:9.5px;font-weight:700;color:var(--a);margin-right:7px}
+  .bx.t{background:var(--a-bg);border-color:var(--a-line);color:var(--a);text-align:center;
+    font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.11em;
+    text-transform:uppercase;max-width:200px}
+  .bx.dq{background:var(--w-bg);border-color:var(--w-line);color:var(--w);font-weight:600}
+  .bx.dq .i{color:var(--w)}
+  .bx.ex{background:var(--r-bg);border-color:var(--r-line);color:var(--r)}
+  .bx.ex .i{color:var(--r)}
+  .bx.cm{background:var(--p-bg);border-color:var(--p-line);color:var(--p)}
+  .bx.cm .i{color:var(--p)}
+  .ar{width:1px;height:13px;background:var(--line);position:relative}
+  .ar::after{content:"";position:absolute;bottom:0;left:-3px;border-left:3.5px solid transparent;
+    border-right:3.5px solid transparent;border-top:5px solid var(--line)}
+
+  /* anexo cuestionario */
+  .cu{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+  table.cq{border-collapse:collapse;width:100%;font-size:12.7px;min-width:700px}
+  table.cq th:nth-child(1){width:38px;text-align:center}
+  table.cq th:nth-child(4){width:96px}
+  table.cq td.qn{font-family:"JetBrains Mono",monospace;font-weight:700;color:var(--a);
+    text-align:center;font-size:11.5px;background:var(--s2)}
+  table.cq td.qt{color:var(--ink);font-weight:600;font-size:12.8px;line-height:1.4}
+  table.cq td.qo{line-height:1.55}
+  table.cq td.qo ol{margin:5px 0 0;padding-left:18px}
+  table.cq td.qo li{margin-bottom:2px}
+  table.cq td.qy{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--faint);line-height:1.5}
+  tr.cond td.qn{color:var(--w);background:var(--w-bg)}
+  tr.cond td.qt,tr.cond td.qo,tr.cond td.qy{background:var(--w-bg)}
+  .secq{background:var(--a-bg);color:var(--a);font-family:"JetBrains Mono",monospace;
+    font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+    padding:7px 13px;border-bottom:1px solid var(--a-line)}
+
+  .nt{margin-top:14px;padding:13px 17px;border-radius:3px;background:var(--surface);
+    border:1px solid var(--hair);border-left:3px solid var(--a);font-size:13.2px;color:var(--soft)}
+  .nt.w{border-left-color:var(--w);background:var(--w-bg)}
+  .nt.g{border-left-color:var(--g);background:var(--g-bg)}
+  .nt.p{border-left-color:var(--p);background:var(--p-bg)}
+  .nt .l{display:block;font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.07em;
+    text-transform:uppercase;font-weight:700;margin-bottom:6px;color:var(--a)}
+  .nt.w .l{color:var(--w)} .nt.g .l{color:var(--g)} .nt.p .l{color:var(--p)}
+
+  .ft{margin-top:44px;padding-top:15px;border-top:1px solid var(--line);font-size:11.5px;color:var(--faint);line-height:1.6}
+  .ft strong{color:var(--soft)}
+
+  @media print{
+    body{background:#fff}
+    .wrap{max-width:none;padding:0}
+    .tw,.proc,.flow,.cu{overflow:visible;break-inside:auto}
+    table{min-width:0}
+    tr{break-inside:avoid}
+    h2.s{break-after:avoid}
+  }
+  html{scroll-behavior:smooth}
+  mark.sw-hit{background:#ffe08a;color:inherit;padding:0 1px;border-radius:2px}
+  mark.sw-hit.on{background:#f59e0b;color:#fff}
+  tr.sw-dim{opacity:.22}
+  a.sw-x{color:var(--a);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+  .sw-flash{animation:swf 1.4s ease-out}
+  @keyframes swf{0%{background:var(--w-bg)}100%{background:transparent}}
+</style>
+<style>
+  tr.pd td.ac,tr.pd td.st,tr.pd td.rp{background:var(--s2);border-top:1px dashed var(--line);border-bottom:1px dashed var(--line)}
+  tr.pd td.st{color:var(--faint)}
+  tr.pd td.ac .pdl{display:inline-block;font-family:"JetBrains Mono",monospace;font-size:9px;font-weight:700;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--faint);border:1px solid var(--line);
+    border-radius:2px;padding:1px 6px;margin-bottom:6px}
+  .mt{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--g);background:var(--g-bg);border-radius:2px;padding:1px 6px;
+    margin-right:7px;white-space:nowrap}
+  table.pr td.ac .di{display:block;margin-top:7px;padding:8px 11px;border-left:2px solid var(--g);
+    background:var(--g-bg);font-size:12.3px;line-height:1.55;color:var(--soft);border-radius:2px}
+  table.pr td.ac .di b{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--g);display:block;margin-bottom:4px}
+  table.pr td.ac .ev{display:block;margin-top:7px;padding-left:11px;border-left:2px solid var(--r-line);
+    font-size:12.3px;line-height:1.55}
+  table.pr td.ac .ev b{font-family:"JetBrains Mono",monospace;color:var(--r);font-weight:700;font-size:10px;
+    letter-spacing:.07em;text-transform:uppercase}
+</style>
+
+<div class="wrap">
+
+  <div class="hdr">
+    <div class="bar">
+      <span>Sports World México · Procedimiento normalizado de operación</span>
+      <span>Uso interno</span>
+    </div>
+    <div class="ttl">
+      <div class="lb">Título</div>
+      <h1>La Experiencia Guiada de Sports World: preparación, conducción y cierre de la visita</h1>
+      <div class="ch">Espina de conversión · Del arribo al club a la decisión de contratar</div>
+    </div>
+    <div class="meta">
+      <div><div class="k">No. de documento</div><div class="v mono">SOP/SW/0201</div></div>
+      <div><div class="k">Estatus</div><div class="v">Uso interno</div></div>
+      <div><div class="k">Sustituye a</div><div class="v mono">N/A</div></div>
+      <div><div class="k">Autor</div><div class="v">Dirección Comercial<br><span class="fine">Firma: en expediente</span></div></div>
+      <div><div class="k">Aprueba</div><div class="v">Dirección General<br><span class="fine">Firma: en expediente</span></div></div>
+      <div><div class="k">Versión</div><div class="v mono">1.0</div></div>
+      <div><div class="k">Fecha de entrada en vigor</div><div class="v mono">01-SEP-2026</div></div>
+      <div><div class="k">Fecha de revisión</div><div class="v mono">01-SEP-2027</div></div>
+      <div><div class="k">Manual</div><div class="v mono">MPC/SW/01<br>§10 glosario · Anexo A cuestionario</div></div>
+    </div>
+  </div>
+
+  <!-- ═══════ 1 ═══════ -->
+  <h2 class="s"><span class="n">1</span>Introducción: cómo funciona este documento</h2>
+
+  <h3 class="ss">1.1 · Qué es y qué no es</h3>
+  <p class="intro">
+    Este es un <strong>procedimiento normalizado de operación</strong>. Establece qué ocurre, en qué orden y
+    quién responde por cada paso, desde que el prospecto llega al club hasta que decide contratar o queda con
+    una siguiente acción acordada. Es uno de los procedimientos del Manual del Proceso Comercial (MPC/SW/01) y
+    se lee de forma autónoma.
+  </p>
+
+  <div class="nt g">
+    <span class="l">Relación con el método de venta de Sports World</span>
+    Sports World cuenta con un método de venta propio, documentado y en uso: <strong>siete pasos —recibir y
+    conectar, descubrir, recorrer, proponer, resolver, cerrar, activar y acompañar—, dos pistas —venta nueva y
+    reactivación— y un conjunto de instrumentos de conducción</strong>: el triángulo ACR, la pregunta de
+    alivio, el embudo de cinco preguntas, las 3 D, la traducción característica-ventaja-beneficio, la matriz de
+    color, los precierres, los cinco tipos de cierre y el boomerang de cinco pasos.
+    <p style="margin-top:9px">Este procedimiento <strong>no sustituye ese método ni lo reformula</strong>: lo
+    ordena en pasos numerados, le asigna responsable a cada uno y lo conecta con el diagnóstico que produce la
+    captación. Los siete pasos del método aparecen aquí con su propio nombre y en su orden original, marcados
+    en la columna de acción con la etiqueta <span class="mt">Paso 03</span> que corresponde. La equivalencia
+    completa está en el <strong>Anexo A</strong>. El criterio de conducción —qué decir, qué evitar, cómo
+    ajustar el trato a cada tipo de persona— vive en el método y se entrena; lo que este documento fija es la
+    secuencia que no se improvisa.</p>
+  </div>
+
+  <h3 class="ss">1.2 · Cómo se lee</h3>
+  <ul class="pl">
+    <li><b>El apartado 9 es el procedimiento.</b> Una tabla de tres columnas: paso, acción y responsable.</li>
+    <li><b>Los pasos se numeran de forma consecutiva y esa numeración es la única referencia válida.</b></li>
+    <li><b>Las decisiones van dentro de la acción</b>, con el paso de destino explícito para cada rama.</li>
+    <li><b>El diagrama del apartado 8 usa la misma numeración.</b> Si el diagrama y la tabla discrepan, rige la tabla.</li>
+    <li><b>Los pasos sombreados en rojo son excepciones</b>, los sombreados en ámbar son decisiones, los sombreados en morado aplican solo a la visita inmediata y los de borde punteado corresponden a un bloque pendiente de definición.</li>
+    <li><b>Los recuadros verdes contienen la frase modelo del método</b> y los de borde rojo, lo que el método indica evitar. Son criterio de conducción, no acción adicional.</li>
+    <li><b>Los documentos se citan por clave</b> —BA-01, EI-01, PV-01, AU-01, CAT-01— y los principios también —P-01 a P-10—. Unos y otros están establecidos en el manual.</li>
+  </ul>
+
+  <h3 class="ss">1.3 · Quién lo usa y para qué</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:200px">Quién</th><th>Cuándo lo usa</th><th style="width:126px">Pasos</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Asesor de club</strong></td><td>Es su norma de operación en toda visita guiada. Es el documento que aprende en su incorporación, junto con el método de venta</td><td class="d">Completo</td></tr>
+      <tr><td><strong>Gerencia del club</strong></td><td>Al designar asesor, al verificar la planeación al arranque del día y al cerrar el día con el resultado de cada visita</td><td class="d">1 · 2 · 14 · 70</td></tr>
+      <tr><td><strong>Entrenadores e instructores</strong></td><td>En el bloque de cinco minutos y en la clase de mayor impacto. Es la parte del procedimiento que los involucra directamente</td><td class="d">7 · 41 · 43 · 44</td></tr>
+      <tr><td><strong>Recepción del club</strong></td><td>En la identificación del motivo y la canalización inmediata al asesor</td><td class="d">17</td></tr>
+      <tr><td><strong>Coordinación de Kidz Fit</strong></td><td>Cuando el diagnóstico registra hijos y el recorrido incluye el área infantil</td><td class="d">8 · 45</td></tr>
+      <tr><td><strong>Dirección Comercial</strong></td><td>En la lectura semanal, ante cualquier excepción escalada y al autorizar el beneficio comercial del segundo cierre</td><td class="d">Completo</td></tr>
+      <tr><td><strong>Legal</strong></td><td>Al definir el texto de la autorización AU-01 y el tratamiento del dato de salud autodeclarado</td><td class="d">10 · 23</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">1.4 · Qué hacer cuando la operación no coincide con el documento</h3>
+  <p class="intro">
+    No se resuelve con una variante local. La discrepancia se reporta a Dirección Comercial, que determina si
+    es una excepción de ese caso o un cambio que el procedimiento debe incorporar. Rige únicamente la versión
+    publicada, identificada en la cabecera de control.
+  </p>
+
+  <!-- ═══════ 2 ═══════ -->
+  <h2 class="s"><span class="n">2</span>Propósito</h2>
+  <p class="intro">
+    Asegurar que toda visita guiada se conduzca sobre el diagnóstico levantado en la captación, con el método
+    de venta de Sports World, y que termine con una decisión: contratación o siguiente acción acordada con
+    fecha.
+  </p>
+  <p class="intro">
+    La captación entrega al club un prospecto calificado y una recomendación escrita. Este procedimiento es
+    donde esa recomendación se vuelve experiencia física: <strong>el prospecto recorre las áreas que su propio
+    diagnóstico señaló, escucha de un entrenador cómo esas áreas se conectan con su objetivo y, cuando es
+    posible, prueba la clase que el sistema le recomendó</strong>. Es también donde se realiza el primer cruce
+    contra la información de salud que la persona autodeclara, antes de que exista cualquier prescripción de
+    entrenamiento.
+  </p>
+
+  <!-- ═══════ 3 ═══════ -->
+  <h2 class="s"><span class="n">3</span>Alcance</h2>
+
+  <h3 class="ss">3.1 · A qué aplica</h3>
+  <p class="intro">
+    A toda visita guiada realizada en los 49 clubes de la red, con independencia del canal por el que se
+    originó el prospecto. Aplica igual a la visita agendada y a la que ocurre en el momento.
+  </p>
+
+  <h3 class="ss">3.2 · De dónde llega la visita</h3>
+  <p class="intro">
+    Este procedimiento recibe prospectos de los tres canales de captación. La diferencia entre ellos es el
+    tiempo disponible para preparar la visita, no el contenido de la visita.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:150px">Origen</th><th style="width:112px">Procedimiento</th><th>Tiempo de preparación</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Visita agendada desde WhatsApp</strong></td><td class="c">SOP/SW/0101</td><td>La visita queda en el CRM y aparece en el corte de las 06:00. La preparación se realiza el día anterior o esa mañana</td></tr>
+      <tr><td><strong>Visita agendada desde el sitio web</strong></td><td class="c">SOP/SW/0102</td><td>Igual que la anterior</td></tr>
+      <tr><td><strong>Visita agendada desde la consola</strong></td><td class="c">SOP/SW/0103</td><td>Igual que las anteriores</td></tr>
+      <tr><td><strong>Visita inmediata</strong><br><span class="fine">Persona que llega al club</span></td><td class="c">SOP/SW/0103</td><td><strong>Minutos.</strong> El asesor que capturó el cuestionario conduce la visita en la misma sesión. La preparación se comprime a lo indicado en el paso 15</td></tr>
+      <tr><td><strong>Registro sin cita que agenda después</strong></td><td class="c">SOP/SW/0101 · 0102 · 0103</td><td>Cuando el prospecto agenda en un contacto posterior, la visita entra por la vía agendada</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">3.3 · Los tres bloques de la visita</h3>
+  <p class="intro">
+    El procedimiento se organiza en tres bloques con responsables distintos. El primero ocurre antes de que la
+    persona llegue y es el que determina la calidad de los otros dos.
+  </p>
+
+  <div class="pe" style="grid-template-columns:1fr 1fr 1fr">
+    <div class="a2">
+      <div class="cd" style="color:var(--a)">Bloque 1 · Pasos 1 a 16</div>
+      <h4>Preparación</h4>
+      <ul>
+        <li>Ocurre <b>antes</b> de que el prospecto llegue al club.</li>
+        <li>Produce el <b>plan de visita (PV-01)</b>: ruta por áreas, entrenador asignado, clase de mayor impacto y referencias que se van a usar.</li>
+        <li>Es responsabilidad del asesor designado y la verifica la gerencia al arranque del día.</li>
+        <li><b>Es el bloque de mayor riesgo</b>, porque es el único que nadie reclama si se omite. El control está en los pasos 14 y 15.</li>
+      </ul>
+    </div>
+    <div class="a1">
+      <div class="cd">Bloque 2 · Pasos 17 a 47</div>
+      <h4>Conducción</h4>
+      <ul>
+        <li>De la recepción al cierre del recorrido.</li>
+        <li>Contiene los pasos 01, 02 y 03 del método de venta: recibir y conectar, descubrir y recorrer.</li>
+        <li>Incluye la <b>confirmación del brief</b>, el <b>cruce contra la información de salud autodeclarada</b> y los <b>precierres</b>.</li>
+        <li>Es donde el prospecto vive lo que el sistema le recomendó.</li>
+      </ul>
+    </div>
+    <div class="a2">
+      <div class="cd" style="color:var(--a)">Bloque 3 · Pasos 48 a 72</div>
+      <h4>Propuesta y cierre</h4>
+      <ul>
+        <li>Contiene los pasos 04, 05 y 06 del método: proponer, resolver y cerrar.</li>
+        <li>Termina en una de dos salidas: contratación, que continúa en SOP/SW/0301, o siguiente acción acordada con fecha.</li>
+        <li>Ninguna visita termina sin registro de resultado.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="ss">3.4 · Qué no cubre este documento</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:280px">Queda fuera</th><th>Dónde está</th></tr></thead>
+    <tbody>
+      <tr><td><strong>La captación y la calificación del prospecto</strong>, incluida la generación de la experiencia ideal y del brief</td><td class="c">SOP/SW/0101 · 0102 · 0103</td></tr>
+      <tr><td><strong>La contratación y el alta</strong>: firma, tokenización del método de pago, activación de la aplicación y agenda del Body Test</td><td class="c">SOP/SW/0301</td></tr>
+      <tr><td><strong>El acompañamiento posterior a la contratación</strong> y el programa de referidos</td><td class="c">MPC/SW/01, §11</td></tr>
+      <tr><td><strong>El criterio de conducción de cada momento</strong>: qué decir, qué evitar, banco de argumentos, tratamiento por tipo de persona</td><td class="c">Método de venta<br><span class="fine">Instrucción de trabajo. Se entrena, no se audita paso a paso</span></td></tr>
+      <tr><td><strong>El segundo cruce contra la información de salud</strong>, posterior a la valoración física</td><td class="c">Pendiente<br><span class="fine">Ver paso 68 y la nota del apartado 4</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 4 ═══════ -->
+  <h2 class="s"><span class="n">4</span>Responsabilidades</h2>
+  <p class="intro">
+    Corresponde a la Dirección Comercial asegurar que este procedimiento se cumpla. La responsabilidad de
+    ejecutar cada paso se identifica en la columna derecha del apartado 9. Además de los principios P-01 a
+    P-10 del manual, rigen en la visita guiada las siguientes reglas:
+  </p>
+  <ul class="pl">
+    <li><b>No se conduce una visita sin brief abierto</b> (P-01). El brief es el diagnóstico que el prospecto ya invirtió un minuto en producir. Conducir la visita sin él obliga a preguntar de nuevo lo que ya se preguntó.</li>
+    <li><b>Toda visita agendada tiene plan de visita antes de que la persona llegue.</b> La gerencia lo verifica al arranque del día. Una visita sin plan se reasigna o se conduce con la ruta estándar, y ese hecho queda registrado.</li>
+    <li><b>La autorización para recabar información de salud autodeclarada se solicita con anticipación</b>, no en el mostrador. Se envía junto con la confirmación de la visita y se recibe firmada al inicio.</li>
+    <li><b>Sin autorización firmada no se aplica el cuestionario de salud ni se corre la matriz de contraindicaciones.</b> La visita se conduce igual y la recomendación de arranque queda condicionada a la valoración física.</li>
+    <li><b>El recorrido inicia por los vestidores.</b> Es la primera área que la persona usará como socio y es donde se explican en su lugar las amenidades incluidas.</li>
+    <li><b>Se procura que el asesor sea del mismo género que el prospecto</b>, para que ambos puedan recorrer juntos todas las áreas, vestidores incluidos. Cuando no es posible, aplica el paso 3.</li>
+    <li><b>La clase de mayor impacto se muestra en vivo, no se describe.</b> Si el prospecto trae ropa deportiva, se le invita a integrarse sin costo; si no la trae, el instructor sale del salón, lo saluda por su nombre y le explica cómo funciona la clase.</li>
+    <li><b>Las condiciones comerciales se presentan al regresar al área de ventas</b> (P-08), después del recorrido y no durante.</li>
+    <li><b>El alta en el CRM ocurre únicamente después de que el prospecto aceptó el plan.</b></li>
+    <li><b>Ninguna visita termina sin resultado registrado.</b> Contratación o siguiente acción concreta con fecha. «Lo voy a pensar» sin fecha no es un resultado.</li>
+  </ul>
+
+  <div class="nt w">
+    <span class="l">Punto abierto · El segundo cruce contra la información de salud</span>
+    Este procedimiento establece el <strong>primer cruce</strong>, en el paso 24: la información de salud
+    que la persona autodeclara, recabada con autorización escrita, se contrasta con la matriz de
+    contraindicaciones antes de que exista cualquier recomendación de arranque. Ese cruce es del asesor y su
+    resultado queda en el brief.
+    <p style="margin-top:9px">El <strong>segundo cruce</strong> corresponde a la valoración física y ocurre
+    después de ella, ya sea el mismo día o en fecha posterior. Está señalado en el paso 68 como bloque
+    pendiente: falta determinar quién lo ejecuta, qué documento genera y dónde reside la información
+    resultante. Es una definición de Dirección Comercial con el área responsable de la valoración, y conviene
+    resolverla antes de que este procedimiento entre en vigor.</p>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:206px">Interviniente</th><th>Responsabilidad</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Asesor de club</strong></td><td>Preparar la visita, conducirla completa, aplicar el método, realizar el primer cruce de salud, proponer, resolver, cerrar y registrar el resultado</td></tr>
+      <tr><td><strong>Gerencia del club</strong></td><td>Designar asesor por visita, verificar la planeación al arranque del día, liberar a entrenadores e instructores para su participación, y cerrar el día con el resultado de cada visita</td></tr>
+      <tr><td><strong>Entrenador o instructor asignado</strong></td><td>Dedicar cinco minutos al prospecto para explicar cómo la recomendación se conecta con su objetivo, y recibirlo en la clase de mayor impacto</td></tr>
+      <tr><td><strong>Recepción del club</strong></td><td>Identificar el motivo de quien llega y canalizarlo de inmediato al asesor designado, sin dejarlo esperando</td></tr>
+      <tr><td><strong>Coordinación de Kidz Fit</strong></td><td>Recibir al prospecto con hijos en el área infantil y explicar la operación del servicio</td></tr>
+      <tr><td><strong>Sistemas</strong></td><td>Disponibilidad del brief y de la experiencia ideal en el club, recálculo cuando la visita modifica el diagnóstico, y escritura al CRM</td></tr>
+      <tr><td><strong>Legal</strong></td><td>Texto de la autorización AU-01 y régimen de tratamiento y conservación del dato de salud autodeclarado</td></tr>
+      <tr><td><strong>Dirección Comercial</strong></td><td>Vigilar el cumplimiento, autorizar los beneficios comerciales del segundo cierre, resolver excepciones escaladas y autorizar cambios a este documento</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 5 ═══════ -->
+  <h2 class="s"><span class="n">5</span>Cambios desde la última revisión</h2>
+  <p class="intro">Procedimiento nuevo.</p>
+
+  <!-- ═══════ 6 ═══════ -->
+  <h2 class="s"><span class="n">6</span>Documentos que intervienen</h2>
+  <p class="intro">
+    Esta tabla indica para qué se usa cada documento dentro de este procedimiento. Su contenido y su
+    responsable están establecidos en el apartado 6 del manual MPC/SW/01.
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:88px">Clave</th><th style="width:196px">Documento</th><th>Para qué se usa aquí</th><th style="width:88px">Pasos</th></tr></thead>
+    <tbody>
+      <tr><td class="c">BA-01</td><td><strong>Brief del asesor</strong></td><td>Insumo central de la visita. Se abre en la preparación, se confirma con la persona al inicio, ordena el recorrido y recibe el registro del asesor al final. El uso de cada bloque está en el <strong>Anexo B</strong></td><td class="d">4 · 20 · 38 · 66</td></tr>
+      <tr><td class="c">PV-01</td><td><strong>Plan de visita</strong><br><span class="fine">Nuevo</span></td><td>Producto de la preparación: ruta por áreas, entrenador asignado con hora, clase de mayor impacto, participación de Kidz Fit y del socio invitado, y referencias autorizadas que se van a usar</td><td class="d">4 – 13</td></tr>
+      <tr><td class="c">EI-01</td><td><strong>Experiencia ideal</strong></td><td>Es lo que el prospecto ya recibió por correo. Se confirma al inicio y se recalcula si la visita modifica objetivo, club, días, franjas o clases</td><td class="d">20 · 22 · 26</td></tr>
+      <tr><td class="c">AU-01</td><td><strong>Autorización de tratamiento de datos de salud</strong><br><span class="fine">Texto por definir con Legal</span></td><td>Se envía con la confirmación de la visita y se recibe firmada al inicio. Es requisito del cuestionario de salud y del primer cruce</td><td class="d">10 · 23</td></tr>
+      <tr><td class="c">MC-01</td><td><strong>Matriz de contraindicaciones</strong></td><td>Instrumento del primer cruce. Contrasta la condición autodeclarada contra cada clase recomendada y devuelve sustitución, no exclusión</td><td class="d">24 · 26</td></tr>
+      <tr><td class="c">CAT-01</td><td><strong>Catálogo comercial del día</strong></td><td>Horario real de clases para identificar la de mayor impacto dentro de la franja de la visita, y planes y condiciones vigentes para la propuesta</td><td class="d">6 · 49</td></tr>
+      <tr><td class="c">RS-01</td><td><strong>Registro de resultado de visita</strong></td><td>Cierra toda visita. Contiene el resultado, la objeción con las palabras de la persona cuando la hubo, y la siguiente acción con fecha</td><td class="d">64 · 66</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 7 ═══════ -->
+  <h2 class="s"><span class="n">7</span>Documentos relacionados</h2>
+  <div class="tw"><table>
+    <thead><tr><th style="width:132px">Clave</th><th>Documento</th></tr></thead>
+    <tbody>
+      <tr><td class="c">MPC/SW/01</td><td><strong>Manual del Proceso Comercial.</strong> Contiene los principios P-01 a P-10 (§4), el contenido de cada documento (§6), la medición (§7), el <strong>glosario único (§10)</strong> y el Anexo A con el cuestionario íntegro</td></tr>
+      <tr><td class="c">SOP/SW/0101</td><td>Captación por WhatsApp oficial. Origina visitas agendadas</td></tr>
+      <tr><td class="c">SOP/SW/0102</td><td>Captación por el sitio web. Origina visitas agendadas</td></tr>
+      <tr><td class="c">SOP/SW/0103</td><td>Captación en la consola del asesor. Origina visitas agendadas y la visita inmediata</td></tr>
+      <tr><td class="c">SOP/SW/0301</td><td>Contratación y alta de la membresía. Continúa en el paso 62</td></tr>
+      <tr><td class="c">MED/SW/01</td><td>Mapa del funnel: definición operativa de cada etapa, fuente del dato y responsable del acceso</td></tr>
+      <tr><td class="c">CAT/SW/01</td><td>Régimen de sincronización del catálogo: corte diario de las 06:00 y sincronización manual</td></tr>
+      <tr><td class="c">—</td><td><strong>Método de venta de Sports World.</strong> Instrucción de trabajo. Contiene los siete pasos, las dos pistas y los instrumentos de conducción que este procedimiento ordena</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 8 ═══════ -->
+  <h2 class="s"><span class="n">8</span>Diagrama de flujo</h2>
+  <p class="intro">Congruente con la numeración del apartado 9. Las decisiones no se numeran.</p>
+
+  <div class="flow"><div class="fl">
+    <div class="bx t">Inicio</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">1 · 2</span>La gerencia designa asesor por cada visita del día, procurando coincidencia de género con el prospecto</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿Hay asesor del mismo género disponible? — Sí al 4 · No al 3</div>
+    <div class="ar"></div>
+    <div class="bx ex"><span class="i">3</span>Se ofrece a la persona elegir y el recorrido de vestidores lo conduce personal del mismo género</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">4 – 9</span>El asesor abre el brief, define la ruta, identifica la clase de mayor impacto y coordina entrenador, Kidz Fit y socio invitado</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">10 – 13</span>Envía la autorización AU-01, prepara dos referencias autorizadas y cierra el plan de visita PV-01</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿La visita del día tiene plan? — Sí al 17 · No al 16</div>
+    <div class="ar"></div>
+    <div class="bx cm"><span class="i">15</span><b>Visita inmediata:</b> la preparación se comprime. El asesor abre el brief, elige la clase en curso y avisa al instructor</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">17 – 19</span>Recepción canaliza de inmediato. El asesor saluda de pie, se presenta, usa el nombre, edifica y pide permiso para preguntar</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">20 – 22</span>Confirma con la persona los datos del brief y, si algo cambió, recalcula la experiencia ideal</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">23 – 26</span>Recibe la autorización firmada, aplica el cuestionario de salud, corre la matriz y sustituye lo que resulte contraindicado</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">28 – 32</span>Identifica la pista, califica las 3 D, anticipa el freno y ajusta el trato al tipo de persona</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">33 – 37</span>Registra E5, muestra el acceso por código QR e inicia el recorrido por los vestidores</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">38 – 42</span>Recorre las áreas de la experiencia ideal en el orden del brief y entrega el bloque de cinco minutos del entrenador</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿El prospecto trae ropa deportiva? — Sí al 43 · No al 44</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">45 – 47</span>Kidz Fit, socio invitado, amenidades en su lugar, precierres y cierre de tour</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">48 – 51</span>Regresa al área de ventas, resume en voz alta, cotiza el plan que cubre lo pedido y realiza el primer intento de cierre</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿Acepta? — Sí al 60 · No al 53</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">53 – 59</span>Escucha y anota la objeción, identifica la causa, aplica boomerang o alternativa, y realiza el segundo intento de cierre</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿Cierra? — Sí al 60 · No al 63</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">60 – 62</span>Confirma plan, importes, forma de pago y fecha de inicio, registra E6 y entrega a la contratación</div>
+    <div class="ar"></div>
+    <div class="bx ex"><span class="i">63 – 65</span>Registra el motivo con las palabras de la persona y acuerda una siguiente acción concreta con fecha</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">66 – 67</span>Cierra el brief con el registro del asesor y envía la experiencia ideal actualizada por correo</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">70 – 72</span>La gerencia cierra el día con el resultado de cada visita y Dirección Comercial realiza la lectura semanal</div>
+    <div class="ar"></div>
+    <div class="bx t">Fin</div>
+  </div></div>
+
+  <!-- ═══════ 9 ═══════ -->
+  <h2 class="s"><span class="n">9</span>Procedimiento</h2>
+  <p class="intro">
+    Setenta y dos pasos en tres bloques. La etiqueta verde señala a qué paso del método de venta corresponde
+    cada tramo.
+  </p>
+
+  <div class="proc"><table class="pr">
+    <thead><tr><th>Paso</th><th>Acción</th><th>Responsable</th></tr></thead>
+    <tbody>
+
+      <tr class="hito"><td colspan="3">Bloque 1 · Preparación · Antes de que el prospecto llegue</td></tr>
+
+      <tr><td class="st">1</td><td class="ac">Toma del corte diario de las 06:00 la relación de visitas agendadas del día, con hora, nombre y club.</td><td class="rp">Gerencia del club</td></tr>
+
+      <tr><td class="st">2</td><td class="ac">Designa asesor para cada visita. <strong>Procura que el asesor sea del mismo género que el prospecto</strong>, para que ambos puedan recorrer juntos todas las áreas, vestidores incluidos.</td><td class="rp">Gerencia del club</td></tr>
+
+      <tr class="q"><td class="st">3</td><td class="ac"><span class="qq">¿Hay asesor del mismo género disponible en la franja de la visita?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 4.<br>
+        <b>No, o el prospecto no declaró género</b> — continúa en el paso 4 con la asignación disponible y aplica lo previsto en el paso 37 para el recorrido de vestidores.</span></td><td class="rp">Gerencia del club</td></tr>
+
+      <tr><td class="st">4</td><td class="ac">Abre el brief del prospecto y lo lee completo antes de planear. <strong>La preparación se hace sobre el diagnóstico, no sobre una ruta genérica</strong>.</td><td class="rp">Asesor designado</td></tr>
+
+      <tr><td class="st">5</td><td class="ac">Define la <strong>ruta del recorrido</strong>: las áreas que integran la experiencia ideal del prospecto, en el orden en que las visitará. La ruta inicia por vestidores y continúa por el área de mayor interés declarado.</td><td class="rp">Asesor designado</td></tr>
+
+      <tr><td class="st">6</td><td class="ac">Identifica en el catálogo del día la <strong>clase de mayor impacto</strong> para el objetivo del prospecto que se imparta dentro de la franja de la visita, y anota salón, hora e instructor.
+        <span class="br"><b>Si ninguna clase recomendada cae en la franja</b> — selecciona la clase en curso más cercana al objetivo y lo registra en el plan. El recorrido incluye el salón en operación.</span></td><td class="rp">Asesor designado</td></tr>
+
+      <tr><td class="st">7</td><td class="ac">Coordina con un <strong>entrenador o personal trainer</strong> su participación de cinco minutos durante la visita. Le entrega el objetivo del prospecto, su nivel declarado y las clases recomendadas, y acuerda la hora aproximada.</td><td class="rp">Asesor designado</td></tr>
+
+      <tr><td class="st">8</td><td class="ac">Cuando el diagnóstico registra hijos, coordina con la <strong>coordinación de Kidz Fit</strong> la recepción del prospecto en el área infantil.</td><td class="rp">Asesor designado</td></tr>
+
+      <tr><td class="st">9</td><td class="ac">Cuando exista uno disponible en la franja, coordina con un <strong>socio actual</strong> del club, con perfil u objetivo semejante, su disposición a conversar brevemente con el prospecto y darle su opinión.
+        <span class="br"><b>Es opcional y no detiene la visita.</b> Se ofrece solo cuando el socio aceptó de antemano.</span></td><td class="rp">Asesor designado</td></tr>
+
+      <tr><td class="st">10</td><td class="ac">Envía al prospecto, junto con la confirmación de la visita, la <strong>autorización AU-01</strong> para recabar y tratar la información de salud que autodeclare, con la indicación de traerla firmada o firmarla al llegar.
+        <span class="br"><b>Se solicita con anticipación</b>, no en el mostrador. Pedirla al inicio de la visita convierte un trámite en una interrupción.</span></td><td class="rp">Asesor designado</td></tr>
+
+      <tr><td class="st">11</td><td class="ac">Prepara <strong>dos referencias reales y autorizadas</strong> de socios del club con objetivo semejante, para usarlas durante el recorrido. Se usan con el nombre y el caso que la persona autorizó, no de forma genérica.</td><td class="rp">Asesor designado</td></tr>
+
+      <tr><td class="st">12</td><td class="ac">Revisa las señales de atención del brief —incompatibilidad de horario, club distinto al de preferencia, pista de reactivación— y define cómo las abordará durante la visita.</td><td class="rp">Asesor designado</td></tr>
+
+      <tr><td class="st">13</td><td class="ac">Cierra el <strong>plan de visita PV-01</strong> con la ruta, el entrenador asignado con hora, la clase de mayor impacto, la participación de Kidz Fit y del socio invitado, y las dos referencias.</td><td class="rp">Asesor designado</td></tr>
+
+      <tr class="q"><td class="st">14</td><td class="ac"><span class="qq">Al arranque del día: ¿cada visita agendada tiene plan de visita?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 17.<br>
+        <b>No</b> — continúa en el paso 16.</span></td><td class="rp">Gerencia del club</td></tr>
+
+      <tr class="cm"><td class="st">15</td><td class="ac"><strong>Visita inmediata.</strong> El asesor que capturó el cuestionario conduce la visita en la misma sesión y la preparación se comprime a tres acciones: abre el brief que acaba de generarse, identifica la clase en curso o la más próxima dentro del catálogo del día, y avisa al instructor y al entrenador disponible.
+        <span class="br"><b>No aplican</b> los pasos 1 a 3 ni 10: la designación ya ocurrió y la autorización AU-01 se firma en el momento. <em>Continúa en el paso 19.</em></span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="x"><td class="st">16</td><td class="ac">Visita sin plan. La gerencia <strong>reasigna la visita a un asesor que pueda prepararla</strong> o, si no es posible, autoriza conducirla con la ruta estándar del club.
+        <span class="br">En ambos casos <b>el hecho queda registrado</b> con el motivo, y se acumula en la lectura semanal. Una visita conducida sin plan no se oculta: se cuenta.</span></td><td class="rp">Gerencia del club</td></tr>
+
+      <tr class="hito"><td colspan="3">Bloque 2 · Conducción · Paso 01 del método: recibir y conectar</td></tr>
+
+      <tr><td class="st">17</td><td class="ac">Identifica el motivo de quien llega y <strong>canaliza de inmediato al asesor designado</strong>. No se deja al prospecto esperando sin canalizar.</td><td class="rp">Recepción del club</td></tr>
+
+      <tr><td class="st">18</td><td class="ac"><span class="mt">Paso 01</span>Saluda <strong>de pie</strong>, se presenta primero, pregunta el nombre del prospecto y lo usa de forma natural durante toda la visita. <strong>Edifica</strong>: reconoce algo positivo, como su decisión de venir o la claridad de lo que busca.
+        <span class="di"><b>Di esto</b>¡Hola, bienvenido a Sports World! Soy [nombre] y voy a acompañarte para que conozcas todo lo que tenemos para ti. ¿Cuál es tu nombre?</span>
+        <span class="ev"><b>Evita</b> hablar de precios o promociones en la puerta, y olvidar el nombre a los dos minutos.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">19</td><td class="ac"><span class="mt">Paso 01</span>Aplica la <strong>pregunta de alivio</strong>: pide permiso para preguntar y para tomar notas, y toma notas visibles durante toda la conversación.
+        <span class="di"><b>Di esto</b>¿Me permites hacerte algunas preguntas para mostrarte lo que realmente te sirve? ¿Puedo tomar algunas notas para no perder lo que te importa?</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">20</td><td class="ac"><strong>Confirma con la persona los datos del brief</strong>, uno por uno y en voz alta: objetivo, días y franjas en que piensa entrenar, club de preferencia y clases recomendadas. Es una confirmación, no un cuestionario nuevo: el prospecto ya respondió y aquí solo verifica.
+        <span class="br">El propósito es detectar <b>cambios de opinión entre la captación y la visita</b>, que son frecuentes cuando pasaron días entre una y otra.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="q"><td class="st">21</td><td class="ac"><span class="qq">¿Cambió algún dato respecto de lo registrado?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 22.<br>
+        <b>No</b> — continúa en el paso 23.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">22</td><td class="ac">Captura el cambio y <strong>recalcula la experiencia ideal</strong>. El brief se actualiza en la misma operación y el plan de visita se ajusta a la nueva ruta antes de iniciar el recorrido.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">23</td><td class="ac">Recibe la <strong>autorización AU-01 firmada</strong>. Si el prospecto no la trae, se firma en ese momento.
+        <span class="br"><b>Si no otorga la autorización</b> — continúa en el paso 27.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">24</td><td class="ac">Aplica el <strong>cuestionario de salud autodeclarada</strong> y contrasta cada condición registrada contra las clases recomendadas, con la matriz de contraindicaciones MC-01. Es el <strong>primer cruce</strong>.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="q"><td class="st">25</td><td class="ac"><span class="qq">¿La matriz devuelve alguna contraindicación sobre las clases recomendadas?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 26.<br>
+        <b>No</b> — continúa en el paso 28.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">26</td><td class="ac"><strong>Sustituye la clase contraindicada por la siguiente clase idónea para el mismo objetivo</strong> y recalcula la experiencia ideal. La sustitución se explica al prospecto en términos de su objetivo, no de su condición.
+        <span class="br">La matriz <b>sustituye, no excluye</b>. Una contraindicación no reduce la oferta: cambia la ruta hacia el mismo resultado.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="x"><td class="st">27</td><td class="ac">Sin autorización firmada <strong>no se aplica el cuestionario de salud ni se corre la matriz</strong>. La visita se conduce completa y sin cambio alguno; lo que queda condicionado es la recomendación de arranque, que se define hasta la valoración física. El hecho se registra en el brief. <em>Continúa en el paso 28.</em></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="hito"><td colspan="3">Paso 02 del método: descubrir</td></tr>
+
+      <tr><td class="st">28</td><td class="ac"><span class="mt">Paso 02</span>Identifica en el brief la <strong>pista</strong> que corresponde: venta nueva o reactivación.
+        <span class="br"><b>Venta nueva</b> — el hilo conductor es el objetivo que quiere alcanzar. Continúa en el paso 30.<br>
+        <b>Reactivación</b> — el hilo conductor es el motivo por el que se fue. Continúa en el paso 29.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">29</td><td class="ac"><span class="mt">Paso 02</span><strong>Pista de reactivación.</strong> Localiza la membresía anterior, da la bienvenida de regreso y pregunta con apertura el motivo de inactivación. Ese motivo es la objeción que debe resolverse hoy. Pregunta qué sería distinto esta vez para que se mantenga activo.
+        <span class="ev"><b>Evita</b> asumir que recuerda el club, y responder con nostalgia en lugar de hechos nuevos.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">30</td><td class="ac"><span class="mt">Paso 02</span>Construye el <strong>triángulo ACR</strong> durante la conversación: afinidad, comunicación y realidad. El acuerdo sobre la necesidad debe existir antes de cualquier propuesta.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">31</td><td class="ac"><span class="mt">Paso 02</span>Califica las <strong>3 D</strong> —dinero, decisión y deseo— y clasifica al prospecto conforme al método. La calificación determina el ritmo del cierre, no si se conduce o no la visita.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">32</td><td class="ac"><span class="mt">Paso 02</span>Anticipa el <strong>freno</strong>: identifica antes de cotizar qué podría detener la decisión. Identifica también el <strong>tipo de percepción</strong> y el <strong>color</strong> del prospecto, y ajusta ritmo, lenguaje y tipo de cierre.
+        <span class="ev"><b>Evita</b> el interrogatorio rígido. Es una conversación.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="hito"><td colspan="3">Paso 03 del método: recorrer</td></tr>
+
+      <tr><td class="st">33</td><td class="ac">Registra la etapa <strong>E5 · visita realizada</strong> al iniciar el recorrido (P-09).</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">34</td><td class="ac"><span class="mt">Paso 03</span>Antes de cruzar el acceso, <strong>muestra el ingreso por código QR de la aplicación</strong> y explica que así será su entrada todos los días.
+        <span class="di"><b>Di esto</b>Tu acceso será muy práctico: desde la aplicación muestras tu código QR e ingresas al club.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">35</td><td class="ac"><span class="mt">Paso 03</span>Anuncia la ruta con las palabras del prospecto: nombra el objetivo que declaró y las áreas que verá por ese motivo.
+        <span class="di"><b>Di esto</b>Perfecto, [nombre]. Vamos a comenzar por las áreas que mejor se relacionan con lo que buscas y, en el camino, te muestro todo lo que tendrás como miembro.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">36</td><td class="ac"><span class="mt">Paso 03</span><strong>Inicia el recorrido por los vestidores.</strong> Es la primera área que usará como socio. Ahí se explican en su lugar el servicio de toallas, los lockers y las amenidades incluidas.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">37</td><td class="ac">Cuando el asesor y el prospecto no coinciden en género, <strong>el recorrido de vestidores lo conduce personal del club del mismo género que el prospecto</strong>, o bien se muestra desde el acceso con la explicación completa del servicio. Se ofrece al prospecto la opción y se procede conforme a lo que indique.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">38</td><td class="ac"><span class="mt">Paso 03</span>Recorre las <strong>áreas que integran la experiencia ideal</strong>, en el orden del plan de visita, empezando por la de mayor interés declarado. El resto del club se muestra como complemento.
+        <span class="ev"><b>Evita</b> el recorrido genérico igual para todos, y forzar áreas que el prospecto no necesita.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">39</td><td class="ac"><span class="mt">Paso 03</span>Presenta cada beneficio <strong>en el lugar donde se vive</strong>: toallas en el vestidor, paramédico en su puesto, reserva de clases en el salón, rutinas y aplicación en el área correspondiente. Traduce cada característica a la ventaja y al beneficio que le corresponde al objetivo del prospecto.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">40</td><td class="ac"><span class="mt">Paso 03</span>Menciona el <strong>reglamento de cada área de forma breve</strong>, sin interrumpir la experiencia. Usa las <strong>dos referencias autorizadas</strong> del plan de visita cuando el momento del recorrido lo permita.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">41</td><td class="ac"><span class="mt">Paso 03</span><strong>Bloque del entrenador.</strong> El entrenador o personal trainer asignado dedica <strong>cinco minutos</strong> al prospecto y le explica, con su objetivo en la mano, cómo las clases y las áreas recomendadas producen el resultado que busca y en qué plazo.
+        <span class="br">Es el punto en que la recomendación deja de ser una pantalla y la sostiene <b>una persona que entrena en ese club</b>.</span></td><td class="rp">Entrenador asignado</td></tr>
+
+      <tr class="q"><td class="st">42</td><td class="ac"><span class="qq">Al llegar a la clase de mayor impacto: ¿el prospecto trae ropa deportiva?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 43.<br>
+        <b>No</b> — continúa en el paso 44.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">43</td><td class="ac"><strong>Se le invita a integrarse a la clase sin costo</strong>, por el tiempo que decida. El asesor lo espera y retoma el recorrido al terminar.</td><td class="rp">Asesor e instructor</td></tr>
+
+      <tr><td class="st">44</td><td class="ac">El <strong>instructor sale del salón, lo saluda por su nombre</strong>, lo acompaña al interior, le explica cómo funciona la clase, qué se trabaja y cómo se reserva el lugar.
+        <span class="ev"><b>Evita</b> describir la clase desde el pasillo. Se entra al salón.</span></td><td class="rp">Instructor de la clase</td></tr>
+
+      <tr><td class="st">45</td><td class="ac">Cuando el diagnóstico registra hijos, <strong>la coordinación de Kidz Fit recibe al prospecto</strong> en el área infantil y le explica horarios, actividades y operación del servicio.</td><td class="rp">Coordinación de Kidz Fit</td></tr>
+
+      <tr><td class="st">46</td><td class="ac">Cuando se coordinó en el paso 9, el asesor presenta al <strong>socio actual</strong> y le da espacio para que conversen sin intervenir.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">47</td><td class="ac"><span class="mt">Paso 03</span>Realiza un <strong>precierre en cada estación fuerte</strong> del recorrido y cierra el tour confirmando la correspondencia entre lo que el prospecto dijo buscar y lo que acaba de ver.
+        <span class="di"><b>Di esto</b>Con respecto a lo que me platicaste, este club es lo que buscas, ¿correcto?</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="hito"><td colspan="3">Bloque 3 · Propuesta y cierre · Paso 04 del método: proponer</td></tr>
+
+      <tr><td class="st">48</td><td class="ac"><span class="mt">Paso 04</span>Regresa al área de ventas y <strong>resume en voz alta</strong> intereses, objetivo y lo que el prospecto confirmó durante el recorrido.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">49</td><td class="ac"><span class="mt">Paso 04</span><strong>Cotiza el plan y el mantenimiento que cubren lo que pidió</strong>, con las condiciones vigentes del catálogo del día. Un plan propuesto, con su complemento cuando corresponda.
+        <span class="ev"><b>Evita</b> presentar tres planes para que elija a ciegas, y encabezar con la promoción en lugar del resultado.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">50</td><td class="ac"><span class="mt">Paso 04</span>Explica <strong>beneficios, costo, forma de pago, vigencia y promoción aplicable</strong>, relacionando cada importe con el resultado que el prospecto busca. En la pista de reactivación, usa el esquema y los beneficios de reactivación autorizados y vigentes.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">51</td><td class="ac"><span class="mt">Paso 04</span>Realiza el <strong>primer intento de cierre</strong>, en forma afirmativa.
+        <span class="di"><b>Di esto</b>Este plan cubre lo que estás buscando: [objetivo]. Incluye [beneficios] y puedes empezar [fecha]. ¿Realizamos hoy tu inscripción?</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="q"><td class="st">52</td><td class="ac"><span class="qq">¿El prospecto acepta?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 60.<br>
+        <b>No</b> — continúa en el paso 53.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="hito"><td colspan="3">Paso 05 del método: resolver</td></tr>
+
+      <tr><td class="st">53</td><td class="ac"><span class="mt">Paso 05</span><strong>Calla, escucha y anota la objeción tal como la dijo</strong>, sin corregirla ni defenderse.
+        <span class="ev"><b>Evita</b> discutir o interrumpir la objeción.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">54</td><td class="ac"><span class="mt">Paso 05</span>Identifica la <strong>causa verdadera</strong> detrás de lo que dijo: precio, tiempo, decisión compartida, temor a lesionarse, comparación con otra opción o postergación.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="q"><td class="st">55</td><td class="ac"><span class="qq">¿La objeción se puede resolver con lo que el club sí ofrece?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 56.<br>
+        <b>No</b> — continúa en el paso 57.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">56</td><td class="ac"><span class="mt">Paso 05</span>Aplica el <strong>boomerang</strong>: retroalimenta con el beneficio ligado a su objetivo, condiciona el sí y guarda silencio.
+        <span class="di"><b>Di esto</b>Te escucho. Si yo te demuestro que [beneficio ligado a su objetivo], entonces tú te inscribes el día de hoy.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">57</td><td class="ac"><span class="mt">Paso 05</span><strong>Minimiza y ofrece alternativa</strong> con beneficios reales y vigentes, y cierra de forma indirecta.
+        <span class="di"><b>Di esto</b>Eso no podemos hacerlo. Lo que sí podemos hacer es [alternativa]. ¿Qué te parece?</span>
+        <span class="ev"><b>Evita</b> inventar descuentos no autorizados.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">58</td><td class="ac"><span class="mt">Paso 05</span>Vuelve a unir los beneficios con el resultado que busca y realiza el <strong>segundo intento de cierre</strong>. Si corresponde, presenta un beneficio comercial autorizado y vigente.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="q"><td class="st">59</td><td class="ac"><span class="qq">¿Cierra?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 60.<br>
+        <b>No</b> — continúa en el paso 63.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="hito"><td colspan="3">Paso 06 del método: cerrar</td></tr>
+
+      <tr><td class="st">60</td><td class="ac"><span class="mt">Paso 06</span>Emplea el <strong>tipo de cierre</strong> que corresponde al perfil identificado en el paso 32: directo, indirecto, de prueba, de resumen o de acuerdo.
+        <span class="ev"><b>Evita</b> cerrar con una pregunta débil de sí o no cuando se puede dar a elegir.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">61</td><td class="ac"><span class="mt">Paso 06</span><strong>Confirma plan, importes, promoción aplicable, forma de pago, periodicidad, vigencia y fecha de inicio</strong>, y obtiene la conformidad expresa del prospecto sobre cada uno.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">62</td><td class="ac">Registra la etapa <strong>E6 · membresía contratada</strong> y entrega la atención a <strong>SOP/SW/0301 · Contratación y alta</strong>, que rige a partir de este punto: identificación, firma, tokenización del método de pago, activación de la aplicación y agenda del Body Test antes de que la persona se retire.
+        <span class="br"><b>El alta en el CRM ocurre únicamente después de la aceptación</b>, nunca antes. <em>Continúa en el paso 66.</em></span></td><td class="rp">Asesor y Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Cuando la visita no cierra</td></tr>
+
+      <tr class="x"><td class="st">63</td><td class="ac">Registra el <strong>motivo con las palabras de la persona</strong>, no con una categoría genérica. La transcripción literal es lo que permite leer después qué está frenando las decisiones en cada club.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="x"><td class="st">64</td><td class="ac">Acuerda una <strong>siguiente acción concreta con fecha</strong> y la registra: nueva conversación, clase de prueba, visita acompañada de quien decide con la persona, o llamada en fecha determinada.
+        <span class="ev"><b>Evita</b> aceptar «luego regreso» sin una siguiente acción concreta.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="x"><td class="st">65</td><td class="ac">Pregunta si tiene un amigo o familiar a quien le sirva el club, conforme al programa de referidos vigente, y registra la referencia con la autorización que ese programa exija.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="hito"><td colspan="3">Cierre de toda visita</td></tr>
+
+      <tr><td class="st">66</td><td class="ac">Completa el <strong>registro del asesor en el brief</strong> y genera el registro de resultado RS-01: qué ocurrió en cada bloque del recorrido, qué reaccionó bien, la objeción si la hubo y la siguiente acción con su fecha.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">67</td><td class="ac">Cuando la visita modificó la experiencia ideal —por cambio de datos en el paso 22 o por sustitución de clase en el paso 26—, <strong>envía por correo la versión actualizada</strong> al prospecto, con la indicación de que sustituye a la anterior.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="pd"><td class="st">68</td><td class="ac"><span class="pdl">Bloque pendiente de definición</span><strong>Segundo cruce contra la información de salud, posterior a la valoración física.</strong> La valoración física puede realizarse el mismo día de la visita o en fecha posterior. Su resultado se contrasta contra la experiencia ideal vigente antes de que exista una prescripción de entrenamiento definitiva.
+        <span class="br">Falta determinar <b>quién ejecuta el cruce, qué documento genera y dónde reside la información resultante</b>. Hasta que se determine, este paso opera como indicador: se registra que la valoración ocurrió y queda señalado que el cruce está pendiente.</span></td><td class="rp"><span class="fine">Por definir</span></td></tr>
+
+      <tr><td class="st">69</td><td class="ac">Verifica que toda visita del día tenga <strong>resultado registrado</strong>. Una visita sin resultado se devuelve al asesor el mismo día.</td><td class="rp">Gerencia del club</td></tr>
+
+      <tr><td class="st">70</td><td class="ac">Cierra el día con el <strong>corte de visitas</strong>: agendadas, realizadas, inmediatas, contratadas y sin cierre, con el motivo agregado de estas últimas.</td><td class="rp">Gerencia del club</td></tr>
+
+      <tr><td class="st">71</td><td class="ac">Realiza la <strong>lectura semanal</strong>: conversión de E5 a E6 por club y por asesor, visitas conducidas sin plan, participación efectiva de entrenadores e instructores, y motivos de no cierre más frecuentes.
+        <span class="br">La lectura se realiza sobre <b>resultados agregados</b>. El detalle individual se consulta solo ante una excepción escalada.</span></td><td class="rp">Dirección Comercial</td></tr>
+
+      <tr><td class="st">72</td><td class="ac">Escala a Dirección Comercial cualquier situación no prevista en este procedimiento, conforme al apartado 1.4.</td><td class="rp">Gerencia del club</td></tr>
+
+      <tr class="hito"><td colspan="3">Fin del procedimiento</td></tr>
+
+    </tbody>
+  </table></div>
+
+  <div class="nt p">
+    <span class="l">Sobre el bloque de preparación</span>
+    <strong>Es el bloque que ningún prospecto reclama si se omite</strong>, y por eso es el que primero se
+    pierde en la operación diaria. Una visita sin preparación se ve idéntica a una preparada durante los
+    primeros dos minutos, y deja de verse idéntica en el momento en que el prospecto pregunta algo que el
+    diagnóstico ya respondía o en que no hay entrenador disponible para los cinco minutos.
+    <p style="margin-top:9px">Los controles están repartidos y son tres: la gerencia verifica la existencia
+    del plan al arranque del día (paso 14), la visita sin plan se registra en lugar de disimularse (paso
+    16), y la lectura semanal cuenta cuántas visitas se condujeron sin plan por club (paso 71). Ninguno
+    de los tres agrega un paso al asesor: la verificación es de la gerencia y el conteo es del tablero.</p>
+  </div>
+
+  <!-- ═══════ 10 ═══════ -->
+  <h2 class="s"><span class="n">10</span>Registros</h2>
+  <div class="tw"><table>
+    <thead><tr><th style="width:220px">Registro</th><th style="width:78px">Paso</th><th>Dónde reside</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Designación de asesor por visita</strong></td><td class="d">2</td><td>Agenda del club, con el asesor designado y el criterio de asignación</td></tr>
+      <tr><td><strong>Plan de visita</strong></td><td class="d">13</td><td>Conservado con el brief del prospecto. Su existencia se verifica al arranque del día</td></tr>
+      <tr><td><strong>Visita conducida sin plan y su motivo</strong></td><td class="d">16</td><td>CRM, sobre el registro del prospecto. Se agrega por club en la lectura semanal</td></tr>
+      <tr><td><strong>Confirmación del brief y cambios detectados</strong></td><td class="d">20 · 22</td><td>Brief actualizado y experiencia ideal recalculada, conservados con el registro</td></tr>
+      <tr><td><strong>Autorización AU-01 firmada</strong></td><td class="d">23</td><td>Expediente del prospecto, conforme al régimen que defina Legal</td></tr>
+      <tr><td><strong>Resultado del primer cruce de salud</strong></td><td class="d">24 · 26</td><td>Brief, con la condición registrada y la sustitución aplicada cuando la hubo</td></tr>
+      <tr><td><strong>Negativa de autorización</strong></td><td class="d">27</td><td>Brief, con la marca de recomendación de arranque condicionada</td></tr>
+      <tr><td><strong>Etapa E5 · visita realizada</strong></td><td class="d">33</td><td>Base del funnel, con distinción entre visita agendada y visita inmediata</td></tr>
+      <tr><td><strong>Participación del entrenador y del instructor</strong></td><td class="d">41 · 43 · 44</td><td>Registro del asesor en el brief. Se agrega por club en la lectura semanal</td></tr>
+      <tr><td><strong>Etapa E6 · membresía contratada</strong></td><td class="d">62</td><td>Base del funnel. El alta se escribe únicamente después de la aceptación</td></tr>
+      <tr><td><strong>Motivo de no cierre, literal</strong></td><td class="d">63</td><td>CRM, con las palabras de la persona. Se agrega por categoría en la lectura semanal</td></tr>
+      <tr><td><strong>Siguiente acción acordada y su fecha</strong></td><td class="d">64</td><td>CRM, con recordatorio para el asesor responsable</td></tr>
+      <tr><td><strong>Registro de resultado de visita</strong></td><td class="d">66</td><td>Conservado con el brief. Es el cierre obligatorio de toda visita</td></tr>
+      <tr><td><strong>Experiencia ideal actualizada enviada</strong></td><td class="d">67</td><td>Registro de envío con marca de tiempo, sobre el registro del prospecto</td></tr>
+      <tr><td><strong>Valoración física realizada</strong></td><td class="d">68</td><td><strong>Pendiente de definición.</strong> Se registra el hecho y queda señalado el cruce pendiente</td></tr>
+      <tr><td><strong>Corte diario de visitas</strong></td><td class="d">70</td><td>Tablero del club</td></tr>
+      <tr><td><strong>Lectura semanal</strong></td><td class="d">71</td><td>Tablero de Dirección Comercial. Presenta únicamente resultados agregados</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ ANEXO A ═══════ -->
+  <h2 class="s"><span class="n">A</span>Anexo A · Equivalencia con el método de venta de Sports World</h2>
+  <p class="intro">
+    Los siete pasos del método y sus instrumentos de conducción, con el paso de este procedimiento en que cada
+    uno se aplica.
+  </p>
+
+  <h3 class="ss">A.1 · Los siete pasos</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:38px">Nº</th><th style="width:180px">Paso del método</th><th style="width:96px">Pasos aquí</th><th>Cómo se ordena en este procedimiento</th></tr></thead>
+    <tbody>
+      <tr><td class="c">01</td><td><strong>Recibir y conectar</strong></td><td class="d">17 – 19</td><td>Canalización inmediata, saludo de pie, presentación, uso del nombre, edificación y pregunta de alivio con toma de notas</td></tr>
+      <tr><td class="c">02</td><td><strong>Descubrir</strong></td><td class="d">20 · 28 – 32</td><td>El sondeo ya ocurrió en la captación. Aquí se confirma el brief, se identifica la pista, se construye el triángulo ACR, se califican las 3 D, se anticipa el freno y se ajusta el trato al tipo de persona</td></tr>
+      <tr><td class="c">03</td><td><strong>Recorrer</strong></td><td class="d">34 – 47</td><td>Acceso por código QR antes de cruzar, inicio por vestidores, áreas de la experiencia ideal en el orden del brief, bloque del entrenador, clase de mayor impacto en vivo, beneficios en el lugar donde se viven y precierres</td></tr>
+      <tr><td class="c">04</td><td><strong>Proponer</strong></td><td class="d">48 – 51</td><td>Regreso al área de ventas, resumen en voz alta, cotización del plan que cubre lo pedido y primer intento de cierre afirmativo</td></tr>
+      <tr><td class="c">05</td><td><strong>Resolver</strong></td><td class="d">53 – 58</td><td>Escucha y anotación literal, identificación de la causa, boomerang cuando se puede resolver o alternativa cuando no, y segundo intento de cierre</td></tr>
+      <tr><td class="c">06</td><td><strong>Cerrar</strong></td><td class="d">60 – 62</td><td>Tipo de cierre según perfil, confirmación de términos y entrega a la contratación</td></tr>
+      <tr><td class="c">07</td><td><strong>Activar y acompañar</strong></td><td class="d">SOP/SW/0301</td><td>Firma, tokenización del método de pago, activación de la aplicación, demostración de reservas y toallas, y agenda del Body Test antes de que la persona se retire</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">A.2 · Las dos pistas</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:150px">Pista</th><th style="width:96px">Pasos aquí</th><th>Qué cambia</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Venta nueva</strong></td><td class="d">28 · 30</td><td>El hilo conductor es el objetivo que quiere alcanzar. El recorrido se ordena por interés declarado y la cotización se enfoca en el resultado</td></tr>
+      <tr><td><strong>Reactivación</strong></td><td class="d">28 · 29 · 50</td><td>El hilo conductor es el motivo por el que se fue, que es la objeción a resolver. Se localiza la membresía anterior, se demuestran los cambios del club y el beneficio de reactivación autorizado se usa en el cierre, no en el saludo</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">A.3 · Los instrumentos de conducción</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:210px">Instrumento</th><th style="width:78px">Paso</th><th>Para qué se usa en la visita</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Pregunta de alivio</strong></td><td class="d">19</td><td>Pide autorización para preguntar y para tomar notas. Convierte el sondeo en conversación</td></tr>
+      <tr><td><strong>Triángulo ACR</strong></td><td class="d">30</td><td>Afinidad, comunicación y realidad. Sin acuerdo sobre la necesidad, la cotización no tiene sustento</td></tr>
+      <tr><td><strong>Embudo de cinco preguntas</strong></td><td class="d">20 · 28 – 32</td><td>Apertura, prioridad y contexto llegan resueltos en el brief. En la visita se completan calificación y freno</td></tr>
+      <tr><td><strong>Las 3 D</strong></td><td class="d">31</td><td>Dinero, decisión y deseo. Determinan el ritmo del cierre</td></tr>
+      <tr><td><strong>Característica, ventaja y beneficio</strong></td><td class="d">39 · 50</td><td>Traduce cada instalación y cada importe al resultado que el prospecto busca</td></tr>
+      <tr><td><strong>Tipo de percepción</strong></td><td class="d">32</td><td>Ajusta el peso de lo que se muestra, lo que se explica y lo que se hace probar</td></tr>
+      <tr><td><strong>Matriz de color</strong></td><td class="d">32 · 60</td><td>Ajusta ritmo y lenguaje durante la visita, y determina el tipo de cierre</td></tr>
+      <tr><td><strong>Precierres</strong></td><td class="d">47</td><td>Programan la decisión durante el recorrido, en cada estación fuerte</td></tr>
+      <tr><td><strong>Cinco tipos de cierre</strong></td><td class="d">60</td><td>Directo, indirecto, de prueba, de resumen y de acuerdo, según el perfil identificado</td></tr>
+      <tr><td><strong>Boomerang de cinco pasos</strong></td><td class="d">56 · 57</td><td>Resuelve la objeción cuando se puede, o minimiza y ofrece alternativa cuando no</td></tr>
+      <tr><td><strong>Referencias autorizadas</strong></td><td class="d">11 · 40</td><td>Casos reales de socios del club con objetivo semejante, preparados en la planeación</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ ANEXO B ═══════ -->
+  <h2 class="s"><span class="n">B</span>Anexo B · Los bloques del brief y su momento de uso</h2>
+  <p class="intro">
+    El brief del asesor tiene ocho bloques. Cada uno entra en un momento distinto de la visita. Este anexo
+    establece cuál y para qué.
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:52px">Nº</th><th style="width:190px">Bloque del brief</th><th style="width:78px">Paso</th><th>Cómo lo usa el asesor</th></tr></thead>
+    <tbody>
+      <tr><td class="c">1</td><td><strong>Perfil del prospecto</strong></td><td class="d">4 · 28</td><td>Se lee completo en la preparación. Determina la pista —venta nueva o reactivación— y el punto de partida de la conversación</td></tr>
+      <tr><td class="c">2</td><td><strong>Logística y contacto</strong></td><td class="d">1 · 10</td><td>Hora de la visita, club y medio de contacto. Es lo que permite enviar con anticipación la autorización AU-01</td></tr>
+      <tr><td class="c">3</td><td><strong>Qué confirmar antes de proponer</strong></td><td class="d">20</td><td>Es la lista que el asesor recorre en voz alta al inicio de la visita para detectar cambios de opinión entre la captación y la visita</td></tr>
+      <tr><td class="c">4</td><td><strong>Ruta recomendada del recorrido</strong></td><td class="d">5 · 38</td><td>Los cuatro pasos de la ruta son el esqueleto del plan de visita y el orden real del recorrido, después de los vestidores</td></tr>
+      <tr><td class="c">5</td><td><strong>Propuesta principal y complemento</strong></td><td class="d">49</td><td>Es lo que se cotiza al regresar al área de ventas: un plan propuesto y su complemento, no un menú</td></tr>
+      <tr><td class="c">6</td><td><strong>Tres prioridades de cierre</strong></td><td class="d">47 · 51 · 58</td><td>Ordenan los precierres del recorrido y los dos intentos de cierre. Son los argumentos que el diagnóstico señaló como decisivos para esa persona</td></tr>
+      <tr><td class="c">7</td><td><strong>Notas y señales de atención</strong></td><td class="d">12 · 26</td><td>Incompatibilidad de horario, club distinto al de preferencia y resultado del primer cruce de salud. Se revisan en la preparación y se abordan durante la visita</td></tr>
+      <tr><td class="c">8</td><td><strong>Espacio de registro del asesor</strong></td><td class="d">66</td><td>Se completa al cerrar la visita: qué ocurrió en cada bloque, qué reaccionó bien, la objeción literal y la siguiente acción con su fecha</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="ft">
+    <strong>SOP/SW/0201 · La Experiencia Guiada de Sports World · versión 1.0 · uso interno.</strong><br>
+    Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.<br>
+    <span style="display:block;margin-top:8px">Recibe prospectos de SOP/SW/0101, SOP/SW/0102 y SOP/SW/0103. Continúa en SOP/SW/0301 · Contratación y alta. El glosario único y el cuestionario íntegro están en MPC/SW/01, apartado 10 y Anexo A.</span>
+  </div>
+
+</div>
+</body>
+</html>
