@@ -258,3 +258,6 @@ html.demo-active elevenlabs-convai{display:none!important;visibility:hidden!impo
 @media print{
   .page-bar,.page-tools,.pg-keys{display:none}
 }
+.toc a.toc-hito{color:var(--brand-text);font-weight:600;padding-left:.9rem;
+  border-left:2px solid var(--border);margin:.18rem 0}
+.toc a.toc-hito:hover{border-left-color:var(--brand)}

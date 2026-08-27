@@ -105,8 +105,6 @@
       title: { es: "SOP/SW/0103 · Captación en consola", en: "SOP/SW/0103 · Capture at the advisor console" } },
     { id: "sop-0201", type: "page", group: "proceso", src: "proceso/sop-0201.html",
       title: { es: "SOP/SW/0201 · La Experiencia Guiada", en: "SOP/SW/0201 · The Guided Experience" } },
-    { id: "dec-01", type: "page", group: "proceso", src: "proceso/dec-01.html",
-      title: { es: "DEC/SW/01 · Bitácora de decisiones", en: "DEC/SW/01 · Decision log" } },
     { id: "experience", type: "doc", group: "proyectoA", pdf: "01-arquitectura-de-experiencia.es.pdf",
       title: { es: "Arquitectura de Experiencia (UX)", en: "Experience Architecture (UX)" } },
     { id: "technical", type: "doc", group: "proyectoA", pdf: "02-estrategia-tecnica.es.pdf",
@@ -429,9 +427,9 @@
   function headOffset() { const tb = document.querySelector(".topbar"); return (tb ? tb.offsetHeight : 56) + 8; }
   const CLAVE_A_DOC = {
     "MPC/SW/01": "mpc-01", "SOP/SW/0101": "sop-0101", "SOP/SW/0102": "sop-0102",
-    "SOP/SW/0103": "sop-0103", "SOP/SW/0201": "sop-0201", "DEC/SW/01": "dec-01",
+    "SOP/SW/0103": "sop-0103", "SOP/SW/0201": "sop-0201",
   };
-  const RE_CLAVES = /\b(?:MPC\/SW\/01|DEC\/SW\/01|SOP\/SW\/\d{4}|P-\d{2}|E[2-7]|D-\d{2}|(?:CEI|BA|CAM|CAT|EI|AU|MC|PL|CR|RS|PV|AP)-\d{2})\b/g;
+  const RE_CLAVES = /\b(?:MPC\/SW\/01|SOP\/SW\/\d{4}|P-\d{2}|E[2-7]|D-\d{2}|(?:CEI|BA|CAM|CAT|EI|AU|MC|PL|CR|RS|PV|AP)-\d{2})\b/g;
   let page = null;   // { fr, doc, hits, at, ro, onScroll }
 
   function teardownPage() {
@@ -574,7 +572,7 @@
     const self = page.doc.id;
     targets.forEach(function (node) {
       const txt = node.nodeValue;
-      const re = /\b(?:MPC\/SW\/01|DEC\/SW\/01|SOP\/SW\/\d{4})\b/g;
+      const re = /\b(?:MPC\/SW\/01|SOP\/SW\/\d{4})\b/g;
       let m, last = 0, frag = null;
       while ((m = re.exec(txt))) {
         const id = CLAVE_A_DOC[m[0]];
@@ -595,17 +593,48 @@
     });
   }
 
-  /* índice del documento en el riel derecho, con seguimiento de lectura */
+  /* índice del documento en el riel derecho, con seguimiento de lectura.
+     Incluye los bloques de la tabla de procedimiento con su rango de pasos:
+     en un procedimiento, lo que se busca es un bloque de pasos, no un apartado. */
   function buildPageToc(d) {
-    const hs = Array.prototype.slice.call(d.querySelectorAll("h2.s, h3.ss"));
-    if (!hs.length) { elToc.innerHTML = ""; return; }
+    const nodes = Array.prototype.slice.call(d.querySelectorAll("h2.s, h3.ss, table.pr tr.hito"));
+    if (!nodes.length) { elToc.innerHTML = ""; return; }
+
+    // rango de pasos de cada bloque de la tabla de procedimiento
+    // (el identificador se asigna antes de medir: es la llave del rango)
+    nodes.forEach(function (n, i) { if (!n.id) n.id = (n.tagName === "TR" ? "bloque-" : "sec-") + i; });
+    const rango = {};
+    const filas = Array.prototype.slice.call(d.querySelectorAll("table.pr tbody tr"));
+    let bloque = null;
+    filas.forEach(function (tr) {
+      if (tr.classList.contains("hito")) { bloque = tr; return; }
+      if (!bloque) return;
+      const st = tr.querySelector("td.st");
+      const n = st ? parseInt((st.textContent || "").trim(), 10) : 0;
+      if (!n) return;
+      const r = rango[bloque.id] || (rango[bloque.id] = { de: n, a: n });
+      if (n < r.de) r.de = n;
+      if (n > r.a) r.a = n;
+    });
+
     let html = "<h5>" + t().onthispage + "</h5>";
-    hs.forEach(function (h, i) {
-      if (!h.id) h.id = "sec-" + i;
-      const lvl3 = h.tagName === "H3";
-      let txt = (h.textContent || "").trim();
-      if (!lvl3) { const num = h.querySelector(".n"); if (num) txt = num.textContent.trim() + " · " + txt.slice(num.textContent.trim().length).trim(); }
-      html += '<a class="' + (lvl3 ? "lvl3" : "") + '" href="#" data-pgsec="' + h.id + '">' + txt + "</a>";
+    nodes.forEach(function (n, i) {
+      let cls = "", txt = (n.textContent || "").trim();
+      if (n.tagName === "H2") {
+        const num = n.querySelector(".n");
+        if (num) {
+          const c = num.textContent.trim();
+          const resto = txt.slice(c.length).trim();
+          txt = /^Anexo\b/i.test(resto) ? resto : c + " · " + resto;
+        }
+      } else if (n.tagName === "H3") {
+        cls = "lvl3";
+      } else {
+        cls = "lvl3 toc-hito";
+        const r = rango[n.id];
+        if (r) txt += r.de === r.a ? " · paso " + r.de : " · pasos " + r.de + "–" + r.a;
+      }
+      html += '<a class="' + cls + '" href="#" data-pgsec="' + n.id + '">' + txt + "</a>";
     });
     elToc.innerHTML = html;
 
@@ -613,8 +642,8 @@
       if (!page) return;
       const top = page.fr.getBoundingClientRect().top;
       let act = null;
-      for (let i = 0; i < hs.length; i++) {
-        if (top + hs[i].offsetTop - headOffset() <= 0) act = hs[i].id; else break;
+      for (let i = 0; i < nodes.length; i++) {
+        if (top + nodes[i].offsetTop - headOffset() <= 0) act = nodes[i].id; else break;
       }
       const cur = elToc.querySelector("a[data-pgsec].active");
       if (cur) cur.classList.remove("active");
