@@ -506,7 +506,7 @@
   <div class="proc"><table class="pr">
     <thead><tr><th>Paso</th><th>Acción</th><th>Responsable</th></tr></thead>
     <tbody>
-      <tr class="hito"><td colspan="3">Inicio del procedimiento</td></tr>
+      <tr class="hito"><td colspan="3">Entrada y atención inicial</td></tr>
 
       <tr><td class="st">1</td><td class="ac">Envía el primer mensaje al número oficial de WhatsApp, sea por clic en un anuncio de Meta o de TikTok (punto de entrada A), sea escribiendo directamente al número (punto de entrada B).</td><td class="rp">Prospecto</td></tr>
 
@@ -536,6 +536,8 @@
         A continuación ofrece el cuestionario.
         <span class="br"><b>Si el prospecto acepta</b> — continúa en el paso 9. &nbsp; <b>Si no acepta</b> — continúa en el paso 44.</span></td><td class="rp">Asistente conversacional</td></tr>
 
+      <tr class="hito"><td colspan="3">Aplicación del cuestionario</td></tr>
+
       <tr><td class="st">9</td><td class="ac">Informa al prospecto que requiere un minuto de su tiempo y le ofrece dos modalidades:
         <ul><li>pregunta por pregunta, con las opciones de respuesta;</li>
         <li>cuestionario pre-llenado con las respuestas que pudieron inferirse por la campaña de origen o por lo que la propia persona declaró, para que únicamente las confirme.</li></ul></td><td class="rp">Asistente conversacional</td></tr>
@@ -562,6 +564,8 @@
 
       <tr><td class="st">18</td><td class="ac">Retoma el pendiente al inicio del turno siguiente y contacta al prospecto por el mismo canal, con plantilla autorizada si la ventana de servicio ya venció.</td><td class="rp">Operador de atención digital</td></tr>
 
+      <tr class="hito"><td colspan="3">Resolución del club y generación de la recomendación</td></tr>
+
       <tr><td class="st">19</td><td class="ac">Consulta el catálogo del día y resuelve el club que satisface la experiencia del prospecto. La búsqueda parte de un radio de 10 kilómetros:
         <ul><li>si dos o más clubes la satisfacen, decide la distancia;</li>
         <li>si solo uno la satisface, se ofrece ese aunque no sea el más cercano;</li>
@@ -583,6 +587,8 @@
       <tr><td class="st">24</td><td class="ac">Genera la experiencia ideal del prospecto y el brief del asesor <strong>en la misma operación</strong>, no en una posterior.</td><td class="rp">Sistema</td></tr>
 
       <tr><td class="st">25</td><td class="ac">Registra la etapa <strong>E3 · cuestionario completado</strong> al quedar generada la experiencia ideal, no al responderse el último reactivo.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Entrega de la recomendación al prospecto</td></tr>
 
       <tr><td class="st">26</td><td class="ac">Solicita al prospecto su <strong>correo electrónico, escrito en el chat</strong>, para enviarle su experiencia ideal. Le explica que el documento completo va por correo porque no se puede leer bien en una conversación.</td><td class="rp">Asistente conversacional</td></tr>
 
@@ -610,6 +616,10 @@
 
       
 
+      <tr class="hito"><td colspan="3">Agendado de la visita y escritura al CRM</td></tr>
+
+      
+
       <tr class="q"><td class="st">34</td><td class="ac"><span class="qq">¿El prospecto solicita agendar la visita guiada?</span>
         <span class="br"><b>Sí</b> — continúa en el paso 35. &nbsp; <b>No</b> — continúa en el paso 44.</span></td><td class="rp">Asistente conversacional</td></tr>
 
@@ -632,11 +642,15 @@
 
       <tr><td class="st">43</td><td class="ac">Informa al prospecto que su experiencia ideal se le envió por correo y que sus preferencias se comunicaron al asesor que lo atenderá, con el aviso expreso de que el club confirma y coordina la visita. Programa los dos recordatorios, 24 y 2 horas antes, con plantilla autorizada y desde el número oficial de la empresa. Pregunta si hay algo más en lo que pueda ayudar: de ser así continúa en el paso 8; en caso contrario cierra la conversación. <em>Continúa en el paso 47.</em></td><td class="rp">Asistente conversacional</td></tr>
 
+      <tr class="hito"><td colspan="3">Registro sin cita y excepciones</td></tr>
+
       <tr><td class="st">44</td><td class="ac">Registra al prospecto con la recomendación entregada, si la hubo, y <strong>una fecha acordada de siguiente contacto</strong>, nunca un compromiso indeterminado de contactar después. <em>Continúa en Fin del procedimiento.</em></td><td class="rp">Asistente conversacional</td></tr>
 
       <tr class="x"><td class="st">45</td><td class="ac"><strong>Excepción.</strong> Conserva el registro en una cola cifrada de vigencia limitada y reintenta la escritura con espera incremental.</td><td class="rp">Sistema</td></tr>
 
       <tr class="x"><td class="st">46</td><td class="ac"><strong>Excepción.</strong> Agotados los reintentos, notifica al club por correo con los datos completos para captura manual el mismo día, y entrega al prospecto su confirmación con normalidad: la falla no se le traslada. <em>Continúa en el paso 47.</em></td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Entrega al club y seguimiento</td></tr>
 
       <tr><td class="st">47</td><td class="ac">Recibe la solicitud de visita y el brief, y verifica su capacidad real de atención en el horario solicitado.</td><td class="rp">Gerencia del club</td></tr>
 
