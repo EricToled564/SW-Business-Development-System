@@ -2,7 +2,7 @@ name: Auditoría de documentación
 
 on:
   push:
-    branches: [main, claude/new-session-1apjew]
+    branches: [main, claude/new-session-1apjew, claude/keen-pasteur-2p3qtk]
     paths:
       - "resultados/ux-v1/webapp/docs/**"
       - "resultados/ux-v1/webapp/app.js"

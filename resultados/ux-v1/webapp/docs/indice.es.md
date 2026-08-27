@@ -3,7 +3,7 @@
 
 Punto de entrada al conjunto documental. Cada documento es **autónomo** (puede leerse de forma independiente); este índice indica qué contiene cada uno, a quién está dirigido y dónde consultar cada tema.
 
-El proyecto es un **sistema de ventas**: convierte la infraestructura de Sports World —49 clubes, sus amenidades y su oferta de clases— en un producto claro y estructurado, la **experiencia ideal**, e integra todos los canales por los que llega un prospecto. La documentación sigue esa misma estructura y se organiza en **cinco bloques**: el **sistema** (marco, gobierno y contrato); la **evidencia** que le dio origen; y las **tres capas** que lo componen — **Proyecto A · Rediseño Web** (captación y conversión), **Proyecto B · Business Development System** (canales en tiempo real) y **Proyecto C · Academia Sports World** (capacidad humana).
+El proyecto es un **sistema de ventas**: convierte la infraestructura de Sports World —49 clubes, sus amenidades y su oferta de clases— en un producto claro y estructurado, la **experiencia ideal**, e integra todos los canales por los que llega un prospecto. La documentación sigue esa misma estructura y se organiza en **seis bloques**: el **sistema** (marco, gobierno y contrato); el **proceso comercial** (los procedimientos normalizados que operan el sistema en los 49 clubes); la **evidencia** que le dio origen; y las **tres capas** que lo componen — **Proyecto A · Rediseño Web** (captación y conversión), **Proyecto B · Business Development System** (canales en tiempo real) y **Proyecto C · Academia Sports World** (capacidad humana).
 
 ## El sistema · marco, gobierno y contrato
 
@@ -21,6 +21,19 @@ El proyecto es un **sistema de ventas**: convierte la infraestructura de Sports 
 | 5 | [**Plan de Ejecución**](#execution) | Marco de gobierno de **los tres proyectos**: para el Proyecto A, cronograma comprometido de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios; para el Proyecto B (BDS), el quinto equipo, sus tareas y dependencias (§10); para el Proyecto C (Academia), el marco de arranque y sus dependencias (§11) — los plazos de B (8 semanas, en paralelo al A) y C (10 semanas) corren desde la firma de su Addendum. | Dirección, TI, PMO |
 | 6 | [**Gastos Operativos Variables**](#gastos-operativos) | Estimación mensual (**V1.2**; contenido del **Anexo Tres** del Contrato, informativo) de los costos de plataformas a cargo de Sports World (IA, voz, WhatsApp — el hospedaje corre en infraestructura propia del cliente, sin costo de proveedor externo) en tres escenarios de tráfico e interacciones, con tarifas verificadas y totales en USD y MXN. | Dirección, Finanzas |
 | 7 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del cuestionario dinámico y la experiencia ideal — el instrumento que produce el producto del sistema, compartido por los tres proyectos. | Negocio, dirección |
+
+## El proceso comercial · procedimientos normalizados
+
+Cómo opera el sistema en los 49 clubes, del primer contacto a la contratación. Un manual que fija propósito, principios e instrumentos; un procedimiento por canal, con sus pasos numerados y su responsable; y la bitácora de las decisiones que sostienen el conjunto. Se publican con su propia composición —cabecera de control, tablas de pasos con código de color y diagrama de flujo—, con índice, búsqueda dentro del documento, ancla por paso y filtro por responsable.
+
+| # | Documento | Propósito | Audiencia |
+|---|---|---|---|
+| P1 | [**MPC/SW/01 · Manual del Proceso Comercial**](#mpc-01) | Documento de cabecera: qué es el proceso comercial, los diez principios que obligan en todos los canales, los instrumentos y documentos comunes, el glosario único y el cuestionario íntegro en su Anexo A. | Dirección, Comercial |
+| P2 | [**SOP/SW/0101 · Captación por WhatsApp**](#sop-0101) | Procedimiento del canal conversacional, con sus dos puntos de entrada: campaña con identificador y mensaje directo. Incluye el envío de la experiencia ideal por correo y el agendado de la visita. | Comercial, Sistemas |
+| P3 | [**SOP/SW/0102 · Captación por el sitio web**](#sop-0102) | Procedimiento del canal digital, con recorrido autónomo y recorrido asistido, recálculo de la experiencia ideal y registro sin cita. | Comercial, Sistemas |
+| P4 | [**SOP/SW/0103 · Captación en consola**](#sop-0103) | Procedimiento del personal del club: atención telefónica, llamada a prospecto referido y persona que llega al club, único caso en que la visita puede realizarse en el momento. | Comercial, Gerencias |
+| P5 | [**SOP/SW/0201 · La Experiencia Guiada**](#sop-0201) | Procedimiento de la visita guiada en tres bloques —preparación, conducción y cierre—, con el método de venta de Sports World ordenado en pasos numerados y su equivalencia en los Anexos A y B. | Comercial, Gerencias, Entrenadores |
+| P6 | [**DEC/SW/01 · Bitácora de decisiones**](#dec-01) | Registro de las decisiones que no provienen de la documentación previa, de los puntos pendientes de confirmación y de los que siguen abiertos, con qué corregir en el depósito en cada caso. | Dirección, Comercial |
 
 ## La evidencia · por qué existe el proyecto
 

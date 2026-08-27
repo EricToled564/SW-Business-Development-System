@@ -3,6 +3,10 @@ name: Deploy UX web app to GitHub Pages
 on:
   push:
     branches: [main, claude/serene-cray-06lv41]
+    # La rama de trabajo no se agrega aquí: el entorno «github-pages» rechaza el
+    # despliegue desde ramas no autorizadas y el trabajo falla antes de su primer
+    # paso. Para publicar desde una rama hay que autorizarla en Settings →
+    # Environments → github-pages → deployment branches, y agregarla a esta lista.
     paths:
       - "resultados/ux-v1/webapp/**"
       - ".github/workflows/deploy-ux-webapp.yml"

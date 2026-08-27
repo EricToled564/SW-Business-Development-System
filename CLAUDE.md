@@ -37,13 +37,14 @@ Un mismo concepto atraviesa el sistema de punta a punta: el cliente lo recibe co
 - **Sincronización con el CRM: corte diario 06:00 (CDMX).** Lo registrado hasta las 05:59 se publica ese día. Sustituye toda lectura "en tiempo real" de precios y clases. Existe sincronización manual inmediata para casos excepcionales (promociones).
 - **Llaves de conciliación:** lead → visita → membresía por **nombre + apellido + teléfono + club**; membresía → cancelación por **número de membresía**. Sustituye la llave de código postal del Anexo Uno.
 - **Funnel canónico:** `docs/funnel.es.md`. Tres puertas de entrada (sitio, WhatsApp, consola), una espina de conversión, dos ejes transversales. Sustituye las definiciones de `technical` §10, `bds-medicion` e `integracion` §5.
-- **Agrupación del depósito:** El sistema · **La medición (funnel + integración)** · La evidencia · **Reuniones** · Proyecto A (captación y conversión) · Proyecto B (canales en tiempo real) · Proyecto C (capacidad humana).
+- **Agrupación del depósito:** El sistema · **El proceso comercial (procedimientos normalizados)** · **La medición (funnel + integración)** · La evidencia · **Reuniones** · Proyecto A (captación y conversión) · Proyecto B (canales en tiempo real) · Proyecto C (capacidad humana).
 - **Idiomas:** la sección del cliente es **solo español**. El bilingüe corresponde a las secciones de líderes de subproyecto (entregable aparte, aún no construido). Los `.en.md` existentes no se tocan ni se borran.
 - **Los planes de membresía vienen del CRM**, no se congelan en la documentación. El contrato fija seis páginas de membresía, sin nombrarlas.
 
 ## Cómo se publica
 
 - Fuente de verdad: `resultados/ux-v1/webapp/docs/*.es.md`.
+- **Excepción: el Proceso Comercial.** Sus documentos —`MPC/SW/01`, `SOP/SW/0101`, `SOP/SW/0102`, `SOP/SW/0103`, `SOP/SW/0201` y `DEC/SW/01`— viven en `resultados/ux-v1/webapp/proceso/*.html` como páginas con composición propia (cabecera de control, tablas de pasos con código de color, diagrama de flujo). Se registran en `app.js` con `type: "page"` y `src`, y en `indice.es.md` como cualquier otro documento. **No pasan por `build_pdfkit.js`**: el PDF se obtiene desde la propia página, con el botón de impresión. El visor les monta encima las funciones de lectura —índice, búsqueda con resaltado, ancla por paso (`#sop-0201:paso-31`), filtro por responsable, enlaces cruzados e índice de claves—; ese código vive en `app.js` y las páginas se mantienen legibles por separado.
 - Registro de cada documento en `resultados/ux-v1/webapp/app.js` (id, grupo, PDF) y en `indice.es.md`.
 - PDFs con el pipeline de casa: `resultados/ux-v1/kb/build_pdfkit.js` (pdfkit). Nunca a mano.
 - Verificación obligatoria antes de publicar, desde `resultados/ux-v1`, las dos:
@@ -55,7 +56,7 @@ Un mismo concepto atraviesa el sistema de punta a punta: el cliente lo recibe co
 
 ## Estado de las contradicciones
 
-**Cerradas: las nueve de la auditoría, más las que surgieron al someter el Contrato a las reglas.** Ya no se llevan en lista: cada una tiene una regla que la sostiene en `tools/consistencia.js` (16 reglas, 0 hallazgos, corre en CI). Si algo vuelve a aparecer, lo detecta el programa, no la memoria.
+**Cerradas: las nueve de la auditoría, más las que surgieron al someter el Contrato a las reglas.** Ya no se llevan en lista: cada una tiene una regla que la sostiene en `tools/consistencia.js` (18 reglas, 0 hallazgos, corre en CI). Si algo vuelve a aparecer, lo detecta el programa, no la memoria.
 
 Los tres puntos que estaban anclados en el Contrato —frecuencia de sincronización, etapas del funnel y llave de conciliación— **quedaron incorporados al texto** en agosto de 2026, con autorización expresa de Eric por encontrarse el Contrato en etapa de revisión. Ver `PAQUETE-LEGAL.md` para el detalle de los ocho ajustes.
 
