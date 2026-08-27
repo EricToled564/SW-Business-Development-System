@@ -97,7 +97,7 @@
       title: { es: "Plan de Ejecución", en: "Execution Plan" } },
     { id: "gastos-operativos", type: "doc", group: "generales", red: true, pdf: "28-gastos-operativos.es.pdf",
       title: { es: "Gastos Operativos Variables", en: "Variable Operating Costs" } },
-    { id: "demo", type: "embed", group: "generales", red: true, src: "demo/index.html",
+    { id: "demo", type: "embed", group: "generales", red: true, src: "demo/index.html", mobileSrc: "demo/movil.html",
       title: { es: "Demo Cuestionario Inteligente", en: "Smart Questionnaire Demo" } },
     { id: "mpc-01", type: "page", group: "proceso", red: true, src: "proceso/mpc-01.html",
       title: { es: "MPC/SW/01 · Manual del Proceso Comercial", en: "MPC/SW/01 · Commercial Process Manual" } },
@@ -111,6 +111,10 @@
       title: { es: "SOP/SW/0201 · La Experiencia Guiada", en: "SOP/SW/0201 · The Guided Experience" } },
     { id: "sop-0301", type: "page", group: "proceso", src: "proceso/sop-0301.html",
       title: { es: "SOP/SW/0301 · Contratación y alta", en: "SOP/SW/0301 · Contracting & activation" } },
+    { id: "mv-01", type: "page", group: "proceso", red: true, src: "proceso/mv-01.html",
+      title: { es: "MV/SW/01 · Manual de Ventas", en: "MV/SW/01 · Sales Manual" } },
+    { id: "entrenador", type: "embed", group: "proceso", red: true, src: "demo-manual/index.html",
+      title: { es: "Entrenador de Ventas · demo", en: "Sales Trainer · demo" } },
     { id: "experience", type: "doc", group: "proyectoA", pdf: "01-arquitectura-de-experiencia.es.pdf",
       title: { es: "Arquitectura de Experiencia (UX)", en: "Experience Architecture (UX)" } },
     { id: "technical", type: "doc", group: "proyectoA", pdf: "02-estrategia-tecnica.es.pdf",
@@ -331,14 +335,14 @@
       // Liga directa al demo: además del incrustado, se muestra la URL absoluta
       // para poder abrirla, copiarla y compartirla fuera de la app.
       const demoUrl = new URL(doc.src, location.href).href;
-      const mobileUrl = new URL("demo/movil.html", location.href).href;
+      const mobileUrl = doc.mobileSrc ? new URL(doc.mobileSrc, location.href).href : null;
       elDoc.innerHTML =
         '<div class="embed-link">' +
         '<span class="embed-link-label">' + t().demoLinkLabel + '</span>' +
         '<a class="embed-link-url" href="' + demoUrl + '" target="_blank" rel="noopener">' + demoUrl + '</a>' +
         '<span class="embed-link-actions">' +
         '<a class="embed-link-btn" href="' + demoUrl + '" target="_blank" rel="noopener">' + t().demoOpen + ' ↗</a>' +
-        '<a class="embed-link-btn" href="' + mobileUrl + '" target="_blank" rel="noopener">' + t().demoMobile + ' ↗</a>' +
+        (mobileUrl ? '<a class="embed-link-btn" href="' + mobileUrl + '" target="_blank" rel="noopener">' + t().demoMobile + ' ↗</a>' : '') +
         '</span>' +
         '</div>' +
         '<div class="embed-wrap"><iframe class="embed-frame" src="' + doc.src +
@@ -434,8 +438,9 @@
   const CLAVE_A_DOC = {
     "MPC/SW/01": "mpc-01", "SOP/SW/0101": "sop-0101", "SOP/SW/0102": "sop-0102",
     "SOP/SW/0103": "sop-0103", "SOP/SW/0201": "sop-0201", "SOP/SW/0301": "sop-0301",
+    "MV/SW/01": "mv-01",
   };
-  const RE_CLAVES = /\b(?:MPC\/SW\/01|SOP\/SW\/\d{4}|P-\d{2}|E[2-7]|D-\d{2}|(?:CEI|BA|CAM|CAT|EI|AU|MC|PL|CR|RS|PV|AP)-\d{2})\b/g;
+  const RE_CLAVES = /\b(?:MPC\/SW\/01|MV\/SW\/01|SOP\/SW\/\d{4}|P-\d{2}|E[2-7]|D-\d{2}|(?:CEI|BA|CAM|CAT|EI|AU|MC|PL|CR|RS|PV|AP)-\d{2})\b/g;
   let page = null;   // { fr, doc, hits, at, ro, onScroll }
 
   function teardownPage() {
@@ -607,7 +612,7 @@
     const self = page.doc.id;
     targets.forEach(function (node) {
       const txt = node.nodeValue;
-      const re = /\b(?:MPC\/SW\/01|SOP\/SW\/\d{4})\b/g;
+      const re = /\b(?:MPC\/SW\/01|MV\/SW\/01|SOP\/SW\/\d{4})\b/g;
       let m, last = 0, frag = null;
       while ((m = re.exec(txt))) {
         const id = CLAVE_A_DOC[m[0]];

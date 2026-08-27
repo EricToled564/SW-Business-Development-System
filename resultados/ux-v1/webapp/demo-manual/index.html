@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrenador de Ventas · Sports World</title>
+<style>
+  :root{
+    --black:#1D1D1B; --red:#E6282A; --w:#FFFFFF;
+    --g1:#F5F5F4; --g2:#E5E5E3; --g3:#A8A8A6; --g4:#6B6B68;
+    --ok:#215F3F; --okbg:#EDF8F1; --okln:#CDE6D6;
+    --bad:#B3261E; --badbg:#FFF5F5; --badln:#F5C6C4;
+    --no:#9A6B00; --nobg:#FFF7E8; --noln:#FFD9A0;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--w);color:var(--black);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.55}
+  #app{height:100%;display:flex;flex-direction:column;overflow:hidden}
+  .bar{flex:0 0 auto;height:5px;background:var(--g2)}
+  .bar > i{display:block;height:5px;background:var(--red);width:0;transition:width .3s}
+  .scroll{flex:1 1 auto;min-height:0;overflow-y:auto}
+  .col{max-width:600px;margin:0 auto;width:100%;padding:0 1.5rem}
+  .kick{display:flex;align-items:baseline;justify-content:space-between;padding-top:.85rem}
+  .kick b{font-size:.6875rem;letter-spacing:.2em;text-transform:uppercase;color:var(--g4);font-weight:600}
+  .kick i{font-style:normal;font-size:.75rem;color:var(--red);font-weight:800}
+
+  h1{font-size:1.9rem;line-height:1.15;font-weight:800;letter-spacing:-.02em;margin:1.4rem 0 0}
+  h2{font-size:1.32rem;line-height:1.25;font-weight:800;margin:1.1rem 0 0;letter-spacing:-.01em}
+  p{margin:.7rem 0 0;color:#3A3A38}
+  .lbl{font-size:.6875rem;letter-spacing:.2em;text-transform:uppercase;color:var(--g4);font-weight:800;margin-top:1.5rem}
+
+  .opts{margin-top:1rem;display:flex;flex-direction:column;gap:.55rem}
+  .opt{display:block;width:100%;text-align:left;padding:.9rem 1.05rem;border-radius:3px;
+    background:var(--g1);border:1px solid var(--g2);color:var(--black);font:inherit;font-size:.95rem;
+    cursor:pointer;transition:.15s}
+  .opt:hover{border-color:var(--g3)}
+  .opt.sel{background:var(--black);border-color:var(--black);color:var(--w)}
+  .opt.good{background:var(--okbg);border-color:var(--okln)}
+  .opt.bad{background:var(--badbg);border-color:var(--badln)}
+  .opt .tag{display:block;font-size:.625rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;margin-bottom:.25rem}
+  .opt.good .tag{color:var(--ok)} .opt.bad .tag{color:var(--bad)}
+
+  .fb{margin-top:1rem;border-radius:6px;padding:1rem 1.15rem;font-size:.93rem}
+  .fb.y{background:var(--okbg);border:1px solid var(--okln)}
+  .fb.n{background:var(--badbg);border:1px solid var(--badln)}
+  .fb b{display:block;font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.35rem}
+  .fb.y b{color:var(--ok)} .fb.n b{color:var(--bad)}
+  .fb p{margin:.35rem 0 0;color:#3A3A38}
+
+  .say{margin-top:1rem;background:var(--nobg);border:1px solid var(--noln);border-radius:6px;padding:1rem 1.15rem}
+  .say b{display:block;font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;color:var(--no);margin-bottom:.35rem}
+  .say q{font-style:normal;font-weight:600}
+
+  .nav{flex:0 0 auto;border-top:1px solid var(--g2);background:var(--w)}
+  .nav .col{display:flex;align-items:center;gap:1rem;padding-top:.85rem;padding-bottom:.85rem}
+  .btn{padding:.78rem 1.75rem;border-radius:3px;border:0;background:var(--red);color:var(--w);
+    font:inherit;font-size:.8125rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}
+  .btn[disabled]{background:var(--g2);color:var(--g3);cursor:not-allowed}
+  .btn.gh{background:none;color:var(--g4);font-weight:700;letter-spacing:.02em;text-transform:none;padding-left:0}
+  .spacer{flex:1}
+
+  .modes{margin-top:1.6rem;display:flex;flex-direction:column;gap:.7rem}
+  .mode{display:block;text-align:left;width:100%;padding:1.1rem 1.2rem;border-radius:3px;
+    background:var(--g1);border:1px solid var(--g2);cursor:pointer;font:inherit;transition:.15s}
+  .mode:hover{border-color:var(--red)}
+  .mode .k{font-size:.625rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--red)}
+  .mode h3{margin:.3rem 0 0;font-size:1.05rem;font-weight:800}
+  .mode p{margin:.3rem 0 0;font-size:.88rem}
+
+  .score{margin-top:1.4rem;border:1px solid var(--g2);border-radius:6px;overflow:hidden}
+  .score .hd{background:var(--black);color:var(--w);padding:1.1rem 1.2rem}
+  .score .hd .n{font-size:2.4rem;font-weight:800;line-height:1}
+  .score .hd .n small{font-size:1rem;color:var(--g3);font-weight:700}
+  .score .hd p{color:#D9D9D7;margin-top:.35rem;font-size:.9rem}
+  .score .r{display:flex;gap:.8rem;padding:.7rem 1.2rem;border-top:1px solid var(--g2);font-size:.9rem}
+  .score .r .m{flex:0 0 18px;font-weight:800}
+  .score .r.y .m{color:var(--ok)} .score .r.n .m{color:var(--bad)}
+
+  .col-card{margin-top:1.2rem;border-radius:6px;padding:1.2rem 1.3rem;border:1px solid var(--g2)}
+  .col-card .k{font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800}
+  .col-card h3{margin:.3rem 0 0;font-size:1.25rem;font-weight:800}
+  .col-card dl{margin:.9rem 0 0}
+  .col-card dt{font-size:.625rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--g4);margin-top:.75rem}
+  .col-card dd{margin:.2rem 0 0}
+
+  .list{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem}
+  .obj{text-align:left;width:100%;padding:.85rem 1.05rem;border-radius:3px;background:var(--g1);
+    border:1px solid var(--g2);font:inherit;font-size:.95rem;font-weight:600;cursor:pointer}
+  .obj:hover{border-color:var(--red)}
+  .pad{padding-bottom:2.4rem}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="bar"><i id="bar"></i></div>
+  <div class="scroll"><div class="col pad" id="view"></div></div>
+  <div class="nav"><div class="col" id="nav"></div></div>
+</div>
+
+<script>
+/* ── Entrenador de Ventas · demo del Manual MV/SW/01 ───────────────────────
+   Mismo lenguaje visual que el Cuestionario Inteligente: paleta de marca,
+   barra de progreso de 5 px, rótulos en versalitas y botón rojo de acción. */
+
+var PASOS = [
+  { n:"01", t:"Recibir y conectar",
+    sit:"Laura entra al club sin cita. Se ve apurada y te dice: «Nada más venía a preguntar precios».",
+    q:"¿Qué haces?",
+    opts:[
+      { tx:"Le doy la lista de precios y le explico los tres planes.", ok:false,
+        why:"Le entregas un número contra nada. Sin saber qué vino a resolver, cualquier precio le va a parecer caro." },
+      { tx:"Le digo que con gusto se los doy, y le pido treinta segundos para dos preguntas rápidas «para no darte el plan que no te sirve».", ok:true,
+        why:"No niegas el precio ni lo esquiva: lo pospones con una razón que la beneficia a ella. Es la transición al paso 02 sin que se note." },
+      { tx:"Le digo que primero tiene que conocer el club y arranco el recorrido.", ok:false,
+        why:"Recorrer sin haber preguntado produce un tour genérico. Y le impusiste algo que no pidió." }
+    ],
+    say:"Con mucho gusto, Laura, y te los voy a dar completos. Antes déjame hacerte dos preguntas rápidas, porque tenemos varios planes y no quiero darte el que no te sirve. ¿Me permites?" },
+
+  { n:"02", t:"Descubrir",
+    sit:"Le preguntaste qué la trae hoy y te responde: «Pues quiero hacer ejercicio, ya sabes, estar mejor».",
+    q:"¿Cuál es tu siguiente pregunta?",
+    opts:[
+      { tx:"«¿Y por qué quieres estar mejor?»", ok:false,
+        why:"«Por qué» empuja a justificarse y suele devolver otra respuesta genérica. Pregunta por la evidencia, no por el motivo." },
+      { tx:"«¿Y \u201Cmejor\u201D cómo se vería para ti en tres meses? ¿Qué notarías?»", ok:true,
+        why:"Pides evidencia concreta. Cuando te diga «que no me canse subiendo escaleras», ya tienes objetivo medible y el recorrido se arma solo." },
+      { tx:"«Perfecto, aquí tenemos de todo: pesas, clases, alberca y spa.»", ok:false,
+        why:"Contestaste una pregunta que nadie hizo. Cada minuto de catálogo sin diagnóstico diluye lo que sí importa." }
+    ],
+    say:"¿Y «mejor» cómo se vería para ti dentro de tres meses? ¿Qué notarías?" },
+
+  { n:"02", t:"Descubrir · el freno",
+    sit:"Laura ya te dijo su objetivo, su horario y que el club le queda de camino. Todo va bien.",
+    q:"Antes de empezar el recorrido, ¿qué te falta preguntar?",
+    opts:[
+      { tx:"Nada, ya tengo lo necesario para recorrer.", ok:false,
+        why:"Te falta el nivel 5 del embudo. Es el que casi nadie hace y el que convierte una objeción futura en una conversación de ahora." },
+      { tx:"«Suponiendo que todo te guste, ¿habría algo que te detenga?»", ok:true,
+        why:"Es la pregunta del freno. La objeción sale ahora, cuando todavía puedes trabajarla, en vez de salir en el cierre." },
+      { tx:"«¿Cuánto estás dispuesta a pagar al mes?»", ok:false,
+        why:"Anclas la conversación en precio antes de haber construido valor. Además, casi nadie contesta con la verdad." }
+    ],
+    say:"Suponiendo que todo te guste y que sea justo lo que buscas, ¿habría algo que te detenga?" },
+
+  { n:"03", t:"Recorrer",
+    sit:"Laura quiere subir escaleras sin cansarse y entrenar a las 7 de la mañana. Vas a iniciar el recorrido.",
+    q:"¿Por dónde empiezas?",
+    opts:[
+      { tx:"Por el área de cardio, que es lo que corresponde a su objetivo.", ok:false,
+        why:"Es la segunda parada, no la primera. Antes hay que resolver si este lugar es para ella." },
+      { tx:"Por vestidores, y de ahí al área de cardio.", ok:true,
+        why:"Es la primera área que usará como socia y donde se explican toallas, lockers y amenidades en su lugar. Un club intimida a quien entra por primera vez; el vestidor es la prueba de que aquí cabe." },
+      { tx:"Por el recorrido completo en orden, para que conozca todo.", ok:false,
+        why:"El recorrido genérico igual para todos es el error número dos del apartado 14 del manual." }
+    ],
+    say:"Antes de entrar déjame mostrarte cómo vas a acceder: desde la app muestras tu código y listo. Empecemos por los vestidores, que es lo primero que vas a usar cada día." },
+
+  { n:"03", t:"Recorrer · traducir",
+    sit:"Están frente al área de cardio. Laura mira las máquinas.",
+    q:"¿Qué le dices?",
+    opts:[
+      { tx:"«Esta es el área de cardio: veinte caminadoras, doce elípticas y bicicletas de spinning.»", ok:false,
+        why:"Características sueltas. Si la persona puede responder «¿y eso a mí qué?», no terminaste la frase." },
+      { tx:"«Me dijiste que quieres subir escaleras sin cansarte. Eso se entrena aquí, tres veces por semana, veinticinco minutos. Y como hay veinte caminadoras, a las siete de la mañana siempre encuentras una libre: nunca vas a tener que esperar.»", ok:true,
+        why:"Característica → ventaja → beneficio, anclado al objetivo y a la hora que ella misma declaró." },
+      { tx:"«Es el área más nueva del club, la renovamos el año pasado.»", ok:false,
+        why:"Es un hecho sobre el club, no sobre ella. No cambia su decisión." }
+    ],
+    say:"Me dijiste que quieres subir las escaleras de tu oficina sin cansarte. Eso se entrena justo aquí: tres veces por semana, veinticinco minutos." },
+
+  { n:"04", t:"Proponer",
+    sit:"Terminó el recorrido. Laura asintió en el área de cardio y en la app. Regresan al escritorio.",
+    q:"¿Cómo propones?",
+    opts:[
+      { tx:"Le presento los tres planes con sus precios para que elija el que más le convenga.", ok:false,
+        why:"Tirar tres planes para que elija a ciegas traslada tu trabajo a la persona. Se propone un plan, con su complemento si aplica." },
+      { tx:"Resumo en voz alta lo que me dijo, cotizo el plan que cubre eso, explico condiciones y pido la inscripción de forma afirmativa.", ok:true,
+        why:"El resumen en voz alta hace que ella escuche sus propias palabras. Un plan enfocado y un cierre afirmativo, no una pregunta débil." },
+      { tx:"Le doy el precio con la promoción del mes, que es lo más atractivo que tenemos.", ok:false,
+        why:"Encabezar con la promoción en lugar del resultado es lo que la regla de oro prohíbe. La promoción cierra, no abre." }
+    ],
+    say:"Entonces, Laura: quieres subir escaleras sin cansarte, entrenar a las siete y que te quede de camino. Este plan cubre exactamente eso. ¿Hacemos hoy tu inscripción?" },
+
+  { n:"05", t:"Resolver",
+    sit:"Laura responde: «Está muy caro».",
+    q:"¿Qué haces primero?",
+    opts:[
+      { tx:"Le explico todo lo que incluye, que comparado con otros gimnasios es muy competitivo.", ok:false,
+        why:"Rebatiste de inmediato. La persona se defiende y la conversación se vuelve un duelo. El paso 1 del boomerang es escuchar." },
+      { tx:"Me quedo callado, la dejo terminar y anoto la objeción con sus palabras exactas.", ok:true,
+        why:"Paso 1 del boomerang. Anotar literal sirve dos veces: te da tiempo para pensar y deja el registro que después permite leer qué frena las decisiones en este club." },
+      { tx:"Le ofrezco de una vez el descuento que puedo autorizar.", ok:false,
+        why:"Bajaste el precio antes de entender si el problema era el precio. Y probablemente regalaste margen que no hacía falta." }
+    ],
+    say:"Te escucho. [Anota.] Si yo te demuestro que el costo por día es menor a lo que ya gastas cuando el objetivo se pospone, entonces tú te inscribes hoy." },
+
+  { n:"06", t:"Cerrar",
+    sit:"Resolviste la objeción. Laura pregunta detalles del cargo mensual, la vigencia y qué pasa si un mes no puede venir. Es ordenada y toma notas.",
+    q:"¿Con qué cierre vas?",
+    opts:[
+      { tx:"Directo: «Dame tu identificación y empezamos tu trámite».", ok:false,
+        why:"El cierre directo es para quien ya asintió dos veces y va al grano. A alguien que pide desglose le va a parecer que le saltaste los datos." },
+      { tx:"De resumen: recapitulo qué cubre, el importe, la periodicidad y la fecha de inicio, y pregunto si falta algún dato para concretar.", ok:true,
+        why:"Perfil azul: quiere que los números cuadren. El cierre de resumen le da los hechos ordenados y después la acción." },
+      { tx:"De elección: «¿Prefieres pagar con crédito o con débito?».", ok:false,
+        why:"El cierre de elección funciona con quien duda del cómo, no del qué. Aquí todavía está verificando el qué." }
+    ],
+    say:"Para resumir: el plan cubre acceso a este club, las clases que vimos y tu Body Test. El cargo es [importe] cada mes, inicia [fecha]. ¿Falta algún dato para concretar?" },
+
+  { n:"07", t:"Activar y acompañar",
+    sit:"Laura firmó y pagó. Está a punto de irse: dice que trae prisa.",
+    q:"¿Qué no puede faltar antes de que se vaya?",
+    opts:[
+      { tx:"Le mando el contrato por correo y le digo que descargue la app cuando pueda.", ok:false,
+        why:"«Que la vea en casa» es exactamente el error que produce socios que no usan lo que compraron y cancelan al tercer mes." },
+      { tx:"Instalo la app con ella, la hago entrar una vez con su código, reservo su primera clase y agendo su Body Test con fecha.", ok:true,
+        why:"Los cuatro son del paso 07 y ninguno toma más de cinco minutos. Nadie se retira sin app funcionando ni sin valoración agendada." },
+      { tx:"Le presento a un entrenador y le digo que él le explicará todo la próxima semana.", ok:false,
+        why:"La presentación es buena, pero delegar la activación a una visita futura la deja sin nada hoy. La posventa es parte de la venta." }
+    ],
+    say:"Antes de que te vayas: instalamos la app, reservamos tu clase del martes y agendamos tu Body Test. Son cinco minutos y sales lista para entrenar." }
+];
+
+var OBJ = [
+  { o:"Está muy caro.", s:"No ve el valor, o lo está comparando con otra cosa.",
+    b:"Si yo te demuestro que el plan cubre gimnasio, clases, alberca, app, toallas y tu Body Test —y que el costo por día es menor a lo que ya gastas cuando el objetivo se pospone—, entonces tú te inscribes hoy." },
+  { o:"Lo voy a pensar.", s:"Falta algo que no te dijo. Tu trabajo es averiguar qué.",
+    b:"Claro. Solo para no dejarte con dudas: ¿qué es lo que vas a pensar exactamente? … Si yo te resuelvo eso hoy, ¿dejamos hecha la inscripción?" },
+  { o:"Luego regreso.", s:"Es un no cortés, salvo que le pongas fecha.",
+    b:"Perfecto. ¿Regresas el jueves o el sábado? Te aparto tu Body Test para ese día y llegas directo a entrenar." },
+  { o:"Tengo que consultarlo con mi pareja.", s:"No calificaste la D de decisión en el paso 02.",
+    b:"Me parece bien, es una decisión de los dos. ¿Qué te parece si vienen juntos mañana y les muestro el club a los dos? Así deciden con la misma información." },
+  { o:"No tengo tiempo.", s:"No cree que le vaya a caber en su vida.",
+    b:"Eso es justo lo que quiero resolverte. Si yo te demuestro que con tres sesiones de veinticinco minutos a la semana llegas a tu objetivo, ¿empezamos hoy?" },
+  { o:"Tengo miedo de lesionarme.", s:"Necesita saber que no va a estar sola.",
+    b:"Si yo te demuestro que el Body Test, el paramédico en piso y un arranque guiado existen exactamente para que entrenes con criterio, entonces agendamos tu valoración y dejamos hecha la inscripción." },
+  { o:"Voy a comparar con otro gimnasio.", s:"Te está pidiendo el argumento para no hacerlo.",
+    b:"Me parece sano. Cuando compares, checa tres cosas: si la alberca tiene restricción de horario, si las clases se reservan o se hacen fila, y si te dan una valoración de arranque. Si aquí las tres te convienen, ¿cerramos hoy?" },
+  { o:"Ya fui socio y lo dejé.", s:"La objeción es el motivo de aquella baja. Búscalo.",
+    b:"Cuéntame qué pasó la vez pasada. … Eso cambió: [hecho concreto y verificable]. Si te demuestro que hoy no te va a volver a pasar, ¿lo retomamos?" }
+];
+
+var COLOR_Q = [
+  { q:"¿Cómo te dice lo que quiere?", a:[
+      {tx:"Directo y sin rodeos. Va al grano.", ejes:{as:1}},
+      {tx:"Con entusiasmo, contando cosas de su vida.", ejes:{as:1, se:1}},
+      {tx:"Con calma, pregunta mucho antes de opinar.", ejes:{se:1}},
+      {tx:"Midiendo cada palabra. Pide datos.", ejes:{}} ]},
+  { q:"¿Qué hace cuando le presentas algo nuevo?", a:[
+      {tx:"Pregunta cuánto cuesta y cuándo empieza.", ejes:{as:1}},
+      {tx:"Se emociona y quiere saber quién más va.", ejes:{as:1, se:1}},
+      {tx:"Escucha, asiente y no se compromete.", ejes:{se:1}},
+      {tx:"Pide el desglose y compara.", ejes:{}} ]},
+  { q:"¿Cómo reacciona cuando le pides una decisión?", a:[
+      {tx:"Decide en el momento.", ejes:{as:1}},
+      {tx:"Decide si siente que es algo especial para ella.", ejes:{as:1, se:1}},
+      {tx:"Se incomoda si siente presión.", ejes:{se:1}},
+      {tx:"Dice que necesita revisar los números.", ejes:{}} ]}
+];
+
+var COLORES = {
+  rojo:   { k:"Alta asertividad · baja sensibilidad", n:"Rojo", bg:"#FFF5F5", ln:"#F5C6C4", c:"#B3261E",
+    quiere:"Resultados, rapidez y control. Va al grano.",
+    trata:"Directo, breve, sin rodeos. Respeta su tiempo.",
+    cierra:"Cierre directo. Afirmación, no pregunta.",
+    di:"Dame tu identificación y empezamos tu trámite. Este plan cubre lo que viniste a resolver.",
+    evita:"Historias largas, rodeos emocionales y menú de tres opciones." },
+  amarillo:{ k:"Alta asertividad · alta sensibilidad", n:"Amarillo", bg:"#FFF7E8", ln:"#FFD9A0", c:"#9A6B00",
+    quiere:"Reconocimiento, energía y pertenencia. Sentirse especial.",
+    trata:"Entusiasta y cercano. Hazlo parte de algo.",
+    cierra:"Cierre de elección. Pregunta «¿cuál?», no «¿sí?».",
+    di:"Tú eliges: ¿empezamos con el plan de este club o con el que te abre toda la red?",
+    evita:"Frialdad, fichas técnicas interminables y tratarlo como un número." },
+  verde:  { k:"Menor asertividad · alta sensibilidad", n:"Verde", bg:"#EDF8F1", ln:"#CDE6D6", c:"#215F3F",
+    quiere:"Seguridad y vínculo. No sentirse presionada.",
+    trata:"Cálido y paciente, con voz más suave. Acompañar, no empujar.",
+    cierra:"Cierre en voz pasiva, acompañando la decisión.",
+    di:"Entiendo que es una decisión importante. Lo que sí podemos hacer es dejarlo listo hoy para que empieces con calma esta semana. ¿Qué te parece?",
+    evita:"Presión, escasez agresiva, interrupciones y cierre militar." },
+  azul:   { k:"Menor asertividad · baja sensibilidad", n:"Azul", bg:"#F5F5F4", ln:"#E5E5E3", c:"#1F4E79",
+    quiere:"Datos, orden y certeza. Que los números cuadren.",
+    trata:"Preciso. Trae vigencia, cargos y comparativo.",
+    cierra:"Cierre de resumen: hechos ordenados y entonces la acción.",
+    di:"Para resumir: el plan cubre A, B y C, el cargo es [importe] cada [periodo] e inicia [fecha]. ¿Falta algún dato para concretar?",
+    evita:"Promesas vagas, «confía en mí» y saltarte el desglose." }
+};
+
+/* ── estado ─────────────────────────────────────────────── */
+var S = { modo:null, i:0, sel:null, mostrado:false, aciertos:[], objSel:null, colorAns:[] };
+var view = document.getElementById("view"),
+    nav  = document.getElementById("nav"),
+    bar  = document.getElementById("bar");
+
+function esc(t){ return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function set(pct){ bar.style.width = Math.max(0,Math.min(100,pct)) + "%"; }
+
+function render(){
+  if(!S.modo)            return home();
+  if(S.modo==="visita")  return visita();
+  if(S.modo==="objecion")return objecion();
+  if(S.modo==="color")   return color();
+}
+
+function home(){
+  set(0);
+  view.innerHTML =
+    '<div class="kick"><b>Manual de Ventas · MV/SW/01</b></div>' +
+    '<h1>Entrenador de ventas.</h1>' +
+    '<p>Tres ejercicios cortos para practicar el método antes de tu próxima visita. No hay calificación que nadie más vea: es para ti.</p>' +
+    '<div class="modes">' +
+      '<button class="mode" data-m="visita"><div class="k">Ejercicio 1 · 9 situaciones</div><h3>Simulador de visita</h3>' +
+      '<p>Recorres una visita completa, de la puerta al cierre. En cada momento eliges qué harías y te digo por qué funciona o por qué no.</p></button>' +
+      '<button class="mode" data-m="objecion"><div class="k">Ejercicio 2 · consulta rápida</div><h3>Las ocho objeciones</h3>' +
+      '<p>Elige lo que te dijeron, tal como te lo dijeron, y te doy el boomerang completo y qué significa realmente.</p></button>' +
+      '<button class="mode" data-m="color"><div class="k">Ejercicio 3 · 3 preguntas</div><h3>Lector de color</h3>' +
+      '<p>Describe a tu prospecto y te digo cómo tratarlo y con qué cierre ir.</p></button>' +
+    '</div>';
+  nav.innerHTML = '<span class="spacer"></span><span style="font-size:.78rem;color:var(--g4)">Sports World México · uso interno</span>';
+  Array.prototype.forEach.call(view.querySelectorAll(".mode"), function(b){
+    b.onclick = function(){ S.modo=b.dataset.m; S.i=0; S.sel=null; S.mostrado=false; S.aciertos=[]; S.colorAns=[]; S.objSel=null; render(); };
+  });
+}
+
+function visita(){
+  if(S.i >= PASOS.length) return resultado();
+  var p = PASOS[S.i];
+  set((S.i)/PASOS.length*100);
+  var h =
+    '<div class="kick"><b>Situación ' + (S.i+1) + ' de ' + PASOS.length + '</b>' +
+    '<i>Paso ' + p.n + ' · ' + esc(p.t) + '</i></div>' +
+    '<h2>' + esc(p.sit) + '</h2>' +
+    '<div class="lbl">' + esc(p.q) + '</div><div class="opts">';
+  p.opts.forEach(function(o,k){
+    var cl = "opt";
+    if(S.mostrado) cl += o.ok ? " good" : (k===S.sel ? " bad" : "");
+    else if(k===S.sel) cl += " sel";
+    h += '<button class="'+cl+'" data-k="'+k+'"' + (S.mostrado?' disabled':'') + '>' +
+         (S.mostrado ? '<span class="tag">' + (o.ok ? "Así se hace" : "No") + '</span>' : '') +
+         esc(o.tx) + '</button>';
+  });
+  h += '</div>';
+  if(S.mostrado){
+    var el = p.opts[S.sel], bien = el.ok;
+    h += '<div class="fb ' + (bien?'y':'n') + '"><b>' + (bien?'Correcto':'Revisa esto') + '</b>' +
+         '<p>' + esc(el.why) + '</p>' +
+         (bien ? '' : '<p style="margin-top:.6rem"><strong>Lo que funciona:</strong> ' + esc(p.opts.filter(function(o){return o.ok})[0].why) + '</p>') +
+         '</div>' +
+         '<div class="say"><b>Di esto</b><q>' + esc(p.say) + '</q></div>';
+  }
+  view.innerHTML = h;
+  Array.prototype.forEach.call(view.querySelectorAll(".opt"), function(b){
+    b.onclick = function(){ S.sel = +b.dataset.k; render(); };
+  });
+  nav.innerHTML =
+    '<button class="btn gh" id="atras">' + (S.i===0 ? '← Salir' : '← Atrás') + '</button><span class="spacer"></span>' +
+    '<button class="btn" id="sig"' + (S.sel===null?' disabled':'') + '>' +
+    (S.mostrado ? (S.i===PASOS.length-1 ? 'Ver resultado' : 'Siguiente') : 'Comprobar') + '</button>';
+  document.getElementById("atras").onclick = function(){
+    if(S.i===0){ S.modo=null; } else { S.i--; S.sel=null; S.mostrado=false; S.aciertos.pop(); }
+    render();
+  };
+  document.getElementById("sig").onclick = function(){
+    if(S.sel===null) return;
+    if(!S.mostrado){ S.mostrado = true; S.aciertos.push(PASOS[S.i].opts[S.sel].ok); }
+    else { S.i++; S.sel=null; S.mostrado=false; }
+    render();
+    document.querySelector(".scroll").scrollTop = 0;
+  };
+}
+
+function resultado(){
+  set(100);
+  var ok = S.aciertos.filter(Boolean).length;
+  var msg = ok===PASOS.length ? "Sin un solo tropiezo. Ese es el estándar."
+          : ok>=7 ? "Buen dominio. Repasa los apartados de los que fallaste."
+          : ok>=4 ? "Vas a medias. Vale la pena leer el manual completo una vez."
+          : "Conviene sentarse con el manual antes de la próxima visita.";
+  var h = '<div class="kick"><b>Resultado</b><i>Simulador de visita</i></div>' +
+    '<div class="score"><div class="hd"><div class="n">' + ok + '<small> de ' + PASOS.length + '</small></div>' +
+    '<p>' + esc(msg) + '</p></div>';
+  PASOS.forEach(function(p,k){
+    h += '<div class="r ' + (S.aciertos[k]?'y':'n') + '"><span class="m">' + (S.aciertos[k]?'✓':'✕') +
+         '</span><span>Paso ' + p.n + ' · ' + esc(p.t) + '</span></div>';
+  });
+  h += '</div><p style="margin-top:1.2rem">El manual completo está en el depósito, en la sección del proceso comercial: <strong>MV/SW/01</strong>.</p>';
+  view.innerHTML = h;
+  nav.innerHTML = '<button class="btn gh" id="otra">← Volver al inicio</button><span class="spacer"></span>' +
+                  '<button class="btn" id="rep">Repetir</button>';
+  document.getElementById("otra").onclick = function(){ S.modo=null; render(); };
+  document.getElementById("rep").onclick = function(){ S.i=0; S.sel=null; S.mostrado=false; S.aciertos=[]; render(); };
+}
+
+function objecion(){
+  set(50);
+  if(S.objSel===null){
+    var h = '<div class="kick"><b>Las ocho objeciones</b><i>Paso 05 · Resolver</i></div>' +
+      '<h2>¿Qué te dijeron?</h2><p>Elige la frase más parecida a la que escuchaste.</p><div class="list">';
+    OBJ.forEach(function(o,k){ h += '<button class="obj" data-k="'+k+'">«' + esc(o.o) + '»</button>'; });
+    h += '</div>';
+    view.innerHTML = h;
+    Array.prototype.forEach.call(view.querySelectorAll(".obj"), function(b){
+      b.onclick = function(){ S.objSel = +b.dataset.k; render(); document.querySelector(".scroll").scrollTop=0; };
+    });
+    nav.innerHTML = '<button class="btn gh" id="atras">← Volver al inicio</button>';
+    document.getElementById("atras").onclick = function(){ S.modo=null; render(); };
+    return;
+  }
+  var o = OBJ[S.objSel];
+  view.innerHTML =
+    '<div class="kick"><b>Objeción ' + (S.objSel+1) + ' de 8</b><i>Paso 05 · Resolver</i></div>' +
+    '<h2>«' + esc(o.o) + '»</h2>' +
+    '<div class="lbl">Qué significa realmente</div><p>' + esc(o.s) + '</p>' +
+    '<div class="lbl">Antes de responder</div>' +
+    '<p>Cállate, déjala terminar y <strong>anota la objeción con sus palabras exactas</strong>. Ese es el paso 1 del boomerang y el que casi nadie hace.</p>' +
+    '<div class="say"><b>Boomerang · di esto</b><q>' + esc(o.b) + '</q></div>' +
+    '<div class="fb y" style="margin-top:1rem"><b>Y luego</b><p>Te callas. El silencio incomoda al asesor, no al cliente. Quien habla primero después de condicionar el sí, pierde la posición.</p></div>';
+  nav.innerHTML = '<button class="btn gh" id="otra">← Otra objeción</button><span class="spacer"></span>' +
+                  '<button class="btn" id="fin">Volver al inicio</button>';
+  document.getElementById("otra").onclick = function(){ S.objSel=null; render(); };
+  document.getElementById("fin").onclick  = function(){ S.modo=null; S.objSel=null; render(); };
+}
+
+function color(){
+  if(S.colorAns.length >= COLOR_Q.length) return colorResultado();
+  var idx = S.colorAns.length, q = COLOR_Q[idx];
+  set(idx/COLOR_Q.length*100);
+  var h = '<div class="kick"><b>Pregunta ' + (idx+1) + ' de ' + COLOR_Q.length + '</b>' +
+    '<i>' + Math.round((idx)/COLOR_Q.length*100) + '% completado</i></div>' +
+    '<h2>' + esc(q.q) + '</h2><div class="opts">';
+  q.a.forEach(function(a,k){ h += '<button class="opt" data-k="'+k+'">' + esc(a.tx) + '</button>'; });
+  h += '</div>';
+  view.innerHTML = h;
+  Array.prototype.forEach.call(view.querySelectorAll(".opt"), function(b){
+    b.onclick = function(){ S.colorAns.push(+b.dataset.k); render(); document.querySelector(".scroll").scrollTop=0; };
+  });
+  nav.innerHTML = '<button class="btn gh" id="atras">' + (idx===0?'← Volver al inicio':'← Atrás') + '</button>';
+  document.getElementById("atras").onclick = function(){
+    if(idx===0){ S.modo=null; } else { S.colorAns.pop(); }
+    render();
+  };
+}
+
+function colorResultado(){
+  set(100);
+  var as=0, se=0;
+  S.colorAns.forEach(function(k,i){
+    var e = COLOR_Q[i].a[k].ejes;
+    as += e.as||0; se += e.se||0;
+  });
+  var key = as>=2 ? (se>=2 ? "amarillo" : "rojo") : (se>=2 ? "verde" : "azul");
+  var c = COLORES[key];
+  view.innerHTML =
+    '<div class="kick"><b>Resultado</b><i>Lector de color</i></div>' +
+    '<div class="col-card" style="background:'+c.bg+';border-color:'+c.ln+'">' +
+      '<div class="k" style="color:'+c.c+'">' + esc(c.k) + '</div>' +
+      '<h3 style="color:'+c.c+'">' + esc(c.n) + '</h3>' +
+      '<dl>' +
+        '<dt>Qué quiere</dt><dd>' + esc(c.quiere) + '</dd>' +
+        '<dt>Cómo tratarlo</dt><dd>' + esc(c.trata) + '</dd>' +
+        '<dt>Con qué cierre ir</dt><dd>' + esc(c.cierra) + '</dd>' +
+      '</dl></div>' +
+    '<div class="say"><b>Di esto al cerrar</b><q>' + esc(c.di) + '</q></div>' +
+    '<div class="fb n" style="margin-top:1rem"><b>Evita</b><p>' + esc(c.evita) + '</p></div>' +
+    '<p style="margin-top:1.2rem;font-size:.86rem;color:var(--g4)">La matriz cambia tu ritmo y tu tipo de cierre. Nunca se dice en voz alta ni cambia el trato: todas las personas reciben la misma visita.</p>';
+  nav.innerHTML = '<button class="btn gh" id="otra">← Volver al inicio</button><span class="spacer"></span>' +
+                  '<button class="btn" id="rep">Otro prospecto</button>';
+  document.getElementById("otra").onclick = function(){ S.modo=null; S.colorAns=[]; render(); };
+  document.getElementById("rep").onclick  = function(){ S.colorAns=[]; render(); };
+}
+
+render();
+</script>
+</body>
+</html>

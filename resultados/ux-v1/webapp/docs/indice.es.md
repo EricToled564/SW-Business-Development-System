@@ -34,6 +34,8 @@ Cómo opera el sistema en los 49 clubes, del primer contacto a la contratación.
 | P4 | [**SOP/SW/0103 · Captación en consola**](#sop-0103) | Procedimiento del personal del club: atención telefónica, llamada a prospecto referido y persona que llega al club, único caso en que la visita puede realizarse en el momento. | Comercial, Gerencias |
 | P5 | [**SOP/SW/0201 · La Experiencia Guiada**](#sop-0201) | Procedimiento de la visita guiada en tres bloques —preparación, conducción y cierre—, con el método de venta de Sports World ordenado en pasos numerados y su equivalencia en los Anexos A y B. | Comercial, Gerencias, Entrenadores |
 | P6 | [**SOP/SW/0301 · Contratación y alta**](#sop-0301) | Procedimiento de cierre del proceso comercial: términos, contrato, cobro, alta, activación de la aplicación y valoración física; y la captura del dato del funnel por asesor con su agregación por club, plaza y nacional. | Comercial, Gerencias, Sistemas |
+| P7 | [**MV/SW/01 · Manual de Ventas**](#mv-01) | Instrucción de trabajo para los asesores: los siete pasos del método de venta con ejemplos trabajados, ilustraciones, guiones de qué decir y qué evitar, las ocho objeciones con su respuesta y la lista de la visita. | Comercial, Gerencias, RH |
+| P8 | [**Entrenador de Ventas · demo**](#entrenador) | Herramienta interactiva de práctica del Manual de Ventas: simulador de una visita completa en nueve situaciones, las ocho objeciones con su respuesta, y lector de perfil del prospecto. Mismo lenguaje visual que el cuestionario. | Comercial, Gerencias, RH |
 
 ## La evidencia · por qué existe el proyecto
 
