@@ -37,6 +37,8 @@
       pageCopyLink: "Copiar liga a este paso",
       pageCopied: "Liga copiada",
       pageStepsHint: "pasos",
+      pageGone: "Documento no disponible",
+      pageGoneBody: "Este documento ya no forma parte de la sección o cambió de ubicación. Elige otro en el menú de la izquierda.",
     },
     en: {
       suite: "Digital Project",
@@ -72,6 +74,8 @@
       pageCopyLink: "Copy link to this step",
       pageCopied: "Link copied",
       pageStepsHint: "steps",
+      pageGone: "Document not available",
+      pageGoneBody: "This document is no longer part of the section or has moved. Pick another one from the menu on the left.",
     },
   };
 
@@ -487,6 +491,18 @@
 
     elToc.innerHTML = "";
     const fr = document.getElementById("pgFrame");
+    // Un documento retirado o movido no debe mostrarle al lector la página de error
+    // del servidor dentro del marco: se comprueba antes y se explica en su lugar.
+    if (window.fetch) {
+      fetch(doc.src, { method: "HEAD", cache: "no-cache" }).then(function (r) {
+        if (r.ok || !page || page.doc.id !== doc.id) return;
+        elDoc.innerHTML =
+          '<div class="page-bar"><span class="page-bar-title">' + doc.title[lang] + "</span></div>" +
+          '<div class="placeholder"><span class="pending-badge">' + t().pending + "</span>" +
+          '<h2 style="border:0;margin-top:.6rem">' + t().pageGone + "</h2><p>" + t().pageGoneBody + "</p></div>";
+        elToc.innerHTML = "";
+      }).catch(function () {});
+    }
     page = { fr: fr, doc: doc, hits: [], at: -1, ro: null, onScroll: null, onResize: null };
     // El marco se prepara en cuanto su documento está listo, sin esperar al evento
     // "load": ese evento aguarda a subrecursos externos (las tipografías) y en una
