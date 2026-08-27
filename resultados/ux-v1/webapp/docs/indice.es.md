@@ -24,7 +24,7 @@ El proyecto es un **sistema de ventas**: convierte la infraestructura de Sports 
 
 ## El proceso comercial · procedimientos normalizados
 
-Cómo opera el sistema en los 49 clubes, del primer contacto a la contratación. Un manual que fija propósito, principios e instrumentos; y un procedimiento por canal, con sus pasos numerados y su responsable. Se publican con su propia composición —cabecera de control, tablas de pasos con código de color y diagrama de flujo—, con índice, búsqueda dentro del documento, ancla por paso y filtro por responsable.
+Cómo opera el sistema en los 49 clubes, del primer contacto a la contratación. Un manual que fija propósito, principios e instrumentos; y un procedimiento por cada tramo del proceso, con sus pasos numerados y su responsable. Se publican con su propia composición —cabecera de control, tablas de pasos con código de color y diagrama de flujo—, con índice, búsqueda dentro del documento, ancla por paso y filtro por responsable.
 
 | # | Documento | Propósito | Audiencia |
 |---|---|---|---|
@@ -33,6 +33,7 @@ Cómo opera el sistema en los 49 clubes, del primer contacto a la contratación.
 | P3 | [**SOP/SW/0102 · Captación por el sitio web**](#sop-0102) | Procedimiento del canal digital, con recorrido autónomo y recorrido asistido, recálculo de la experiencia ideal y registro sin cita. | Comercial, Sistemas |
 | P4 | [**SOP/SW/0103 · Captación en consola**](#sop-0103) | Procedimiento del personal del club: atención telefónica, llamada a prospecto referido y persona que llega al club, único caso en que la visita puede realizarse en el momento. | Comercial, Gerencias |
 | P5 | [**SOP/SW/0201 · La Experiencia Guiada**](#sop-0201) | Procedimiento de la visita guiada en tres bloques —preparación, conducción y cierre—, con el método de venta de Sports World ordenado en pasos numerados y su equivalencia en los Anexos A y B. | Comercial, Gerencias, Entrenadores |
+| P6 | [**SOP/SW/0301 · Contratación y alta**](#sop-0301) | Procedimiento de cierre del proceso comercial: términos, contrato, cobro, alta, activación de la aplicación y valoración física; y la captura del dato del funnel por asesor con su agregación por club, plaza y nacional. | Comercial, Gerencias, Sistemas |
 
 ## La evidencia · por qué existe el proyecto
 

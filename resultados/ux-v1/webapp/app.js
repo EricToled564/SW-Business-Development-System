@@ -109,6 +109,8 @@
       title: { es: "SOP/SW/0103 · Captación en consola", en: "SOP/SW/0103 · Capture at the advisor console" } },
     { id: "sop-0201", type: "page", group: "proceso", src: "proceso/sop-0201.html",
       title: { es: "SOP/SW/0201 · La Experiencia Guiada", en: "SOP/SW/0201 · The Guided Experience" } },
+    { id: "sop-0301", type: "page", group: "proceso", src: "proceso/sop-0301.html",
+      title: { es: "SOP/SW/0301 · Contratación y alta", en: "SOP/SW/0301 · Contracting & activation" } },
     { id: "experience", type: "doc", group: "proyectoA", pdf: "01-arquitectura-de-experiencia.es.pdf",
       title: { es: "Arquitectura de Experiencia (UX)", en: "Experience Architecture (UX)" } },
     { id: "technical", type: "doc", group: "proyectoA", pdf: "02-estrategia-tecnica.es.pdf",
@@ -431,7 +433,7 @@
   function headOffset() { const tb = document.querySelector(".topbar"); return (tb ? tb.offsetHeight : 56) + 8; }
   const CLAVE_A_DOC = {
     "MPC/SW/01": "mpc-01", "SOP/SW/0101": "sop-0101", "SOP/SW/0102": "sop-0102",
-    "SOP/SW/0103": "sop-0103", "SOP/SW/0201": "sop-0201",
+    "SOP/SW/0103": "sop-0103", "SOP/SW/0201": "sop-0201", "SOP/SW/0301": "sop-0301",
   };
   const RE_CLAVES = /\b(?:MPC\/SW\/01|SOP\/SW\/\d{4}|P-\d{2}|E[2-7]|D-\d{2}|(?:CEI|BA|CAM|CAT|EI|AU|MC|PL|CR|RS|PV|AP)-\d{2})\b/g;
   let page = null;   // { fr, doc, hits, at, ro, onScroll }
