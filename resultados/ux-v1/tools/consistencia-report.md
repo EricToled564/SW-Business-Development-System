@@ -1,6 +1,6 @@
 # Reporte de consistencia del depósito
 
-**31 documentos · 4,198 líneas · 18 reglas · 0 hallazgos**
+**31 documentos · 4,198 líneas · 19 reglas · 0 hallazgos**
 
 Este reporte lo genera `tools/consistencia.js` al ejecutarse. La columna «reglas
 aplicadas» no es una declaración: es el registro de qué verificación tocó qué
@@ -33,7 +33,7 @@ archivo durante esta corrida.
 | funnel.es.md | 142 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R17 (14) | 0 |
 | gastos-operativos.es.md | 94 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17 (15) | 0 |
 | glosario.es.md | 84 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R14, R15, R16, R17 (16) | 0 |
-| index.html | — | R13 (1) | 0 |
+| index.html | — | R13, R19 (2) | 0 |
 | indice.es.md | 134 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R18 (16) | 0 |
 | integracion.es.md | 156 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17 (15) | 0 |
 | minuta-2026-06-22.es.md *(intocable)* | 119 | R12 (1) | 0 |
@@ -67,3 +67,4 @@ archivo durante esta corrida.
 | R14 · numeración de secciones | 30 | 0 |
 | R15 · línea base de KPIs | 30 | 0 |
 | R18 · páginas del Proceso Comercial | 2 | 0 |
+| R19 · sello de versión del visor | 1 | 0 |
