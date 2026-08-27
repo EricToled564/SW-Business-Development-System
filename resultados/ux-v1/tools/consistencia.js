@@ -372,6 +372,89 @@ regla("R19 · sello de versión del visor", (falla) => {
   }
 });
 
+/* ─────────── R20 · Cobertura del Manual de Ventas sobre los procedimientos ─────────── */
+// El manual enseña la conducta que los procedimientos exigen. Si un paso a cargo
+// del asesor no está enseñado en ningún apartado, el asesor lo va a improvisar.
+// Esta regla lo verifica paso por paso: no es una promesa de cobertura, es la
+// cobertura calculada contra las tablas de pasos de cada procedimiento.
+regla("R20 · el Manual de Ventas cubre todo paso a cargo del asesor", (falla) => {
+  const PROC = path.join(WEBAPP, "proceso");
+  const MV = path.join(PROC, "mv-01.html");
+  if (!fs.existsSync(MV)) return falla("proceso/mv-01.html", 0, "no existe el Manual de Ventas");
+  marcar("proceso/mv-01.html");
+  const mv = fs.readFileSync(MV, "utf8");
+  const anexo = mv.slice(mv.indexOf('<div class="anexo">'));
+  if (!anexo) return falla("proceso/mv-01.html", 0, "el manual no trae anexo de correspondencia");
+
+  // 1 · Rangos declarados como cubiertos, por procedimiento.
+  const cubierto = {};
+  const reFila = /<tr><td>(SOP\/SW\/\d+)<\/td><td class="c">([^<]+)<\/td>[\s\S]*?<td>([^<]*)<\/td><\/tr>/g;
+  for (let m; (m = reFila.exec(anexo)); ) {
+    const [, clave, rango, apartado] = m;
+    if (!/\d/.test(apartado)) falla("proceso/mv-01.html", 0, `${clave} ${rango} sin apartado del manual`);
+    const nums = (rango.match(/\d+/g) || []).map(Number);
+    const lista = /\ba\b/.test(rango) && nums.length === 2
+      ? Array.from({ length: nums[1] - nums[0] + 1 }, (_, i) => nums[0] + i)
+      : nums;
+    (cubierto[clave] || (cubierto[clave] = new Set())).forEach(() => {});
+    lista.forEach((n) => (cubierto[clave] || (cubierto[clave] = new Set())).add(n));
+  }
+
+  // 2 · Pasos declarados fuera del manual por no ejecutarlos el asesor.
+  const excluido = {};
+  const reExcl = /(SOP\/SW\/\d+)\s+pasos\s+([\d,\sy]+)/g;
+  const parrafo = anexo.replace(/<[^>]+>/g, " ");
+  for (let m; (m = reExcl.exec(parrafo)); )
+    excluido[m[1]] = new Set((m[2].match(/\d+/g) || []).map(Number));
+
+  // 3 · Pasos declarados pendientes de definición.
+  const pendiente = {};
+  const rePend = /pasos?\s+(\d+)\s+de\s+(SOP\/SW\/\d+)\s+y\s+(\d+)\s+de\s+(SOP\/SW\/\d+)/.exec(parrafo);
+  if (rePend) {
+    (pendiente[rePend[2]] || (pendiente[rePend[2]] = new Set())).add(+rePend[1]);
+    (pendiente[rePend[4]] || (pendiente[rePend[4]] = new Set())).add(+rePend[3]);
+  }
+
+  // 4 · Los pasos reales de cada procedimiento, con su responsable.
+  const ARCHIVO = { "SOP/SW/0201": "sop-0201.html", "SOP/SW/0301": "sop-0301.html" };
+  for (const [clave, archivo] of Object.entries(ARCHIVO)) {
+    const ruta = path.join(PROC, archivo);
+    if (!fs.existsSync(ruta)) { falla(`proceso/${archivo}`, 0, "no existe"); continue; }
+    marcar(`proceso/${archivo}`);
+    const html = fs.readFileSync(ruta, "utf8");
+    // Sólo la tabla de pasos del procedimiento (table.pr). Las demás tablas del
+    // documento —insumos, glosario, control— también empiezan con un número.
+    const ini = html.indexOf('<table class="pr"');
+    const tabla = ini === -1 ? "" : html.slice(ini, html.indexOf("</table>", ini));
+    if (!tabla) { falla(`proceso/${archivo}`, 0, "no se encontró la tabla de pasos (table.pr)"); continue; }
+    const pasos = [];
+    const filas = tabla.match(/<tr[^>]*>[\s\S]*?<\/tr>/g) || [];
+    for (const fila of filas) {
+      const celdas = (fila.match(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g) || [])
+        .map((c) => c.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim());
+      if (celdas.length < 3) continue;
+      if (!/^\d+$/.test(celdas[0])) continue;
+      pasos.push({ n: +celdas[0], resp: celdas[celdas.length - 1] });
+    }
+    if (pasos.length < 30) { falla(`proceso/${archivo}`, 0, `sólo se leyeron ${pasos.length} pasos`); continue; }
+
+    const cub = cubierto[clave] || new Set();
+    const exc = excluido[clave] || new Set();
+    const pen = pendiente[clave] || new Set();
+    for (const p of pasos) {
+      const delAsesor = /asesor/i.test(p.resp);
+      if (delAsesor && !cub.has(p.n) && !pen.has(p.n))
+        falla("proceso/mv-01.html", 0, `${clave} paso ${p.n} (${p.resp}) no está enseñado en ningún apartado del manual`);
+      if (delAsesor && exc.has(p.n))
+        falla("proceso/mv-01.html", 0, `${clave} paso ${p.n} se declara fuera del manual pero lo ejecuta el asesor`);
+      if (exc.has(p.n) && cub.has(p.n))
+        falla("proceso/mv-01.html", 0, `${clave} paso ${p.n} aparece cubierto y excluido a la vez`);
+    }
+    for (const n of exc) if (!pasos.some((p) => p.n === n))
+      falla("proceso/mv-01.html", 0, `${clave} paso ${n} se declara excluido pero no existe en el procedimiento`);
+  }
+});
+
 /* ─────────── Reporte ─────────── */
 const totalLineas = archivos.reduce((a, f) => a + texto[f].split("\n").length, 0);
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);

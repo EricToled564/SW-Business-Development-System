@@ -1,6 +1,6 @@
 # Reporte de consistencia del depósito
 
-**31 documentos · 4,200 líneas · 19 reglas · 0 hallazgos**
+**31 documentos · 4,200 líneas · 20 reglas · 0 hallazgos**
 
 Este reporte lo genera `tools/consistencia.js` al ejecutarse. La columna «reglas
 aplicadas» no es una declaración: es el registro de qué verificación tocó qué
@@ -38,6 +38,9 @@ archivo durante esta corrida.
 | integracion.es.md | 156 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17 (15) | 0 |
 | minuta-2026-06-22.es.md *(intocable)* | 119 | R12 (1) | 0 |
 | presentacion/deck.html | — | R7, R8 (2) | 0 |
+| proceso/mv-01.html | — | R20 (1) | 0 |
+| proceso/sop-0201.html | — | R20 (1) | 0 |
+| proceso/sop-0301.html | — | R20 (1) | 0 |
 | resumen.es.md | 231 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17 (15) | 0 |
 | roi.es.md | 16 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17 (15) | 0 |
 | seguimiento-2026-06-22.es.md | 58 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17 (15) | 0 |
@@ -68,3 +71,4 @@ archivo durante esta corrida.
 | R15 · línea base de KPIs | 30 | 0 |
 | R18 · páginas del Proceso Comercial | 2 | 0 |
 | R19 · sello de versión del visor | 1 | 0 |
+| R20 · el Manual de Ventas cubre todo paso a cargo del asesor | 3 | 0 |
