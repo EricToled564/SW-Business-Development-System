@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manual de Ventas · MV/SW/01 · Sports World</title>
-  <meta name="description" content="Manual de Ventas de Sports World: los siete pasos del método, con ejemplos trabajados, ilustraciones y guiones de qué decir y qué evitar.">
+  <meta name="description" content="Manual de Ventas de Sports World: los siete pasos, las dos pistas y las herramientas de venta, con ejemplos y guiones.">
 <style>
   :root{
     --black:#1D1D1B; --red:#E6282A; --w:#FFFFFF;
@@ -18,11 +18,8 @@
     font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
     font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
   .wrap{max-width:920px;margin:0 auto;padding:0 clamp(14px,4vw,28px) 90px}
-
-  /* ── portada ───────────────────────────────────────────── */
   .cover{background:var(--black);color:var(--w);margin:0 calc(-1*clamp(14px,4vw,28px)) 0;
-    padding:clamp(30px,7vw,64px) clamp(18px,5vw,54px) clamp(26px,6vw,48px);
-    border-bottom:5px solid var(--red)}
+    padding:clamp(30px,7vw,64px) clamp(18px,5vw,54px) clamp(26px,6vw,48px);border-bottom:5px solid var(--red)}
   .cover .k{font-size:.6875rem;letter-spacing:.2em;text-transform:uppercase;color:var(--g3);font-weight:700}
   .cover h1{font-size:clamp(28px,6vw,50px);line-height:1.04;margin:.5rem 0 0;font-weight:800;letter-spacing:-.02em}
   .cover h1 em{font-style:normal;color:var(--red)}
@@ -30,47 +27,36 @@
   .cover .meta{margin-top:1.6rem;display:flex;flex-wrap:wrap;gap:.45rem}
   .cover .meta span{font-size:.6875rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
     border:1px solid #3A3A38;border-radius:3px;padding:.34rem .62rem;color:var(--g3)}
-
-  /* ── estructura ────────────────────────────────────────── */
   h2.s{font-size:1.35rem;font-weight:800;letter-spacing:-.01em;margin:3.1rem 0 0;
     padding-bottom:.55rem;border-bottom:3px solid var(--black);display:flex;align-items:baseline;gap:.7rem}
   h2.s .n{font-size:.72rem;letter-spacing:.14em;color:var(--red);font-weight:800;
     border:1.5px solid var(--red);border-radius:3px;padding:.2rem .42rem;line-height:1}
-  h3.ss{font-size:.6875rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
-    color:var(--g4);margin:1.9rem 0 0}
+  h3.ss{font-size:.6875rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--g4);margin:1.9rem 0 0}
+  h4.p{font-size:1.12rem;font-weight:800;margin:2rem 0 0;display:flex;align-items:baseline;gap:.55rem}
+  h4.p span{font-size:.7rem;font-weight:800;color:var(--w);background:var(--red);border-radius:3px;padding:.18rem .4rem}
   p{margin:.65rem 0 0;max-width:74ch}
   p.lead{font-size:1.03rem;color:#3A3A38}
-  strong{font-weight:700}
   ul.pl{margin:.7rem 0 0;padding-left:1.15rem;max-width:74ch}
   ul.pl li{margin-bottom:.4rem}
-
-  /* ── bloques de guion ──────────────────────────────────── */
   .say,.avoid,.pre{border-radius:6px;padding:.95rem 1.15rem;margin-top:.85rem;max-width:74ch}
   .say{background:var(--okbg);border:1px solid var(--okln)}
   .pre{background:var(--nobg);border:1px solid var(--noln)}
   .avoid{background:var(--badbg);border:1px solid var(--badln)}
-  .say .t,.avoid .t,.pre .t{display:block;font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;
-    font-weight:800;margin-bottom:.4rem}
+  .say .t,.avoid .t,.pre .t{display:block;font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;margin-bottom:.4rem}
   .say .t{color:var(--ok)} .pre .t{color:var(--no)} .avoid .t{color:var(--bad)}
   .say p,.avoid p,.pre p{margin:.3rem 0 0}
   .say q{font-style:normal;font-weight:600;color:var(--black)}
   .avoid ul{margin:.35rem 0 0;padding-left:1.05rem}
-
-  /* ── ejemplo trabajado ─────────────────────────────────── */
   .ej{margin-top:1.15rem;border:1px solid var(--g2);border-radius:6px;overflow:hidden;background:var(--w)}
   .ej > .h{background:var(--g1);border-bottom:1px solid var(--g2);padding:.6rem 1.05rem;
     font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--g4)}
   .ej .b{padding:1rem 1.05rem}
-  .dlg{margin:0}
   .dlg .l{display:flex;gap:.75rem;padding:.42rem 0;border-top:1px dashed var(--g2)}
   .dlg .l:first-child{border-top:0}
-  .dlg .who{flex:0 0 74px;font-size:.625rem;letter-spacing:.13em;text-transform:uppercase;
-    font-weight:800;color:var(--g4);padding-top:.2rem}
+  .dlg .who{flex:0 0 74px;font-size:.625rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:var(--g4);padding-top:.2rem}
   .dlg .l.a .who{color:var(--red)}
   .dlg .tx{flex:1;font-size:.94rem}
   .dlg .no{color:var(--g4);font-size:.8rem;display:block;margin-top:.22rem}
-
-  /* ── tablas ────────────────────────────────────────────── */
   .tw{overflow-x:auto;margin-top:.95rem;border:1px solid var(--g2);border-radius:6px}
   table{border-collapse:collapse;width:100%;font-size:.875rem;min-width:520px;background:var(--w)}
   th{background:var(--g1);text-align:left;padding:.6rem .8rem;font-size:.625rem;font-weight:800;
@@ -78,38 +64,37 @@
   td{padding:.65rem .8rem;border-bottom:1px solid var(--g2);vertical-align:top}
   tr:last-child td{border-bottom:0}
   td.c{font-weight:800;color:var(--red);white-space:nowrap}
-
-  /* ── ilustraciones ─────────────────────────────────────── */
-  .fig{margin-top:1.2rem;border:1px solid var(--g2);border-radius:6px;background:var(--g1);
-    padding:1.1rem;overflow-x:auto}
+  .fig{margin-top:1.2rem;border:1px solid var(--g2);border-radius:6px;background:var(--g1);padding:1.1rem;overflow-x:auto}
   .fig svg{display:block;margin:0 auto;max-width:100%;height:auto}
   .fig .cap{margin-top:.7rem;font-size:.78rem;color:var(--g4);text-align:center}
-
-  /* ── tarjetas ──────────────────────────────────────────── */
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:.8rem;margin-top:1rem}
   .card{background:var(--g1);border:1px solid var(--g2);border-radius:6px;padding:1rem 1.1rem}
   .card .k{font-size:.625rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--red)}
   .card h4{margin:.3rem 0 0;font-size:1rem;font-weight:800}
   .card p{margin:.4rem 0 0;font-size:.87rem;color:#3A3A38}
-
   .rule{background:var(--black);color:var(--w);border-radius:6px;padding:1.3rem 1.5rem;margin-top:1.2rem;
     max-width:74ch;border-left:5px solid var(--red)}
   .rule .k{font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--red)}
   .rule p{margin:.45rem 0 0;color:#EDEDEB;font-size:1.02rem}
   .rule strong{color:var(--w)}
-
   .chk{margin-top:1rem;border:1px solid var(--g2);border-radius:6px;overflow:hidden}
   .chk .r{display:flex;gap:.8rem;align-items:flex-start;padding:.65rem .95rem;border-top:1px solid var(--g2);font-size:.9rem}
   .chk .r:first-child{border-top:0}
   .chk .b{flex:0 0 15px;height:15px;margin-top:.2rem;border:2px solid var(--g3);border-radius:2px}
   .chk .n{flex:0 0 24px;font-weight:800;color:var(--red);font-size:.8rem;margin-top:.05rem}
-
+  /* anexo técnico · fuera del cuerpo del manual */
+  .anexo{margin-top:3.4rem;padding:1.4rem 1.5rem 1.6rem;background:var(--g1);
+    border:1px solid var(--g2);border-radius:6px}
+  .anexo .k{font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--g4)}
+  .anexo h2{font-size:1.1rem;font-weight:800;margin:.35rem 0 0;border:0;padding:0}
+  .anexo p{font-size:.9rem;color:#3A3A38}
   @media print{
     .cover{background:#fff;color:#000;border-bottom:3px solid #000}
     .cover p,.cover .meta span{color:#333}
     .rule{background:#fff;color:#000;border:1px solid #000;border-left:5px solid #000}
     .rule p{color:#000}
-    h2.s{break-after:avoid} .ej,.fig,.card,tr{break-inside:avoid}
+    h2.s{break-after:avoid} .ej,.fig,.card,tr,.anexo{break-inside:avoid}
+    .anexo{break-before:page}
   }
 </style>
 </head>
@@ -117,226 +102,286 @@
 <div class="wrap">
 
   <header class="cover">
-    <div class="k">Sports World México · Instrucción de trabajo · MV/SW/01</div>
-    <h1>Manual de Ventas.<br>Cómo se conduce <em>una venta</em> en Sports World.</h1>
-    <p>Siete pasos, dos pistas y un puñado de herramientas. Este manual no explica el proceso —eso lo hacen los
-      procedimientos—: explica <strong>cómo hacerlo bien</strong>, con ejemplos de lo que se dice y de lo que
-      no se dice.</p>
+    <div class="k">Sports World México · Manual de Ventas · MV/SW/01</div>
+    <h1>Manual de Ventas.<br>Un solo proceso para <em>atender prospectos</em>.</h1>
+    <p>Siete pasos, dos pistas —venta nueva y reactivación— y argumentos de beneficio, no de descuento.</p>
     <div class="meta">
-      <span>Versión 1.0</span><span>Uso interno</span><span>Para asesores de club</span><span>Se entrena, no se audita</span>
+      <span>Versión 2.0</span><span>Uso interno</span><span>Equipos comerciales</span><span>Vende el resultado</span>
     </div>
   </header>
 
-  <!-- 1 -->
+  <div class="rule" style="margin-top:1.6rem">
+    <div class="k">Regla de oro</div>
+    <p><strong>No vendemos promociones. Vendemos el resultado que el prospecto quiere alcanzar.</strong>
+      La promoción es un apoyo autorizado al final, nunca el saludo de la puerta.</p>
+  </div>
+
+  <!-- 01 -->
   <h2 class="s"><span class="n">01</span>Cómo se usa este manual</h2>
-  <p class="lead">No se lee de corrido. Se consulta antes de una visita, se repasa después de una que no cerró
-    y se estudia completo una sola vez, en la incorporación.</p>
 
   <h3 class="ss">Lo que contiene</h3>
   <div class="tw"><table>
-    <thead><tr><th style="width:56px">Nº</th><th style="width:250px">Apartado</th><th>Para qué lo abres</th></tr></thead>
+    <thead><tr><th style="width:52px">Nº</th><th style="width:240px">Apartado</th><th>Para qué lo abres</th></tr></thead>
     <tbody>
       <tr><td class="c">01</td><td><strong>Cómo se usa este manual</strong></td><td>Esto que estás leyendo.</td></tr>
-      <tr><td class="c">02</td><td><strong>La regla de oro y los cuatro principios</strong></td><td>Lo que no se negocia en ninguna visita.</td></tr>
-      <tr><td class="c">03</td><td><strong>El mapa del método</strong></td><td>Los siete pasos en una sola imagen, con las dos pistas.</td></tr>
-      <tr><td class="c">04</td><td><strong>Paso 01 · Recibir y conectar</strong></td><td>Cómo abrir. Los primeros treinta segundos.</td></tr>
-      <tr><td class="c">05</td><td><strong>Paso 02 · Descubrir</strong></td><td>Cómo preguntar. El embudo de cinco preguntas.</td></tr>
-      <tr><td class="c">06</td><td><strong>Paso 03 · Recorrer</strong></td><td>Cómo recorrer el club. Por dónde empezar y por qué.</td></tr>
-      <tr><td class="c">07</td><td><strong>Paso 04 · Proponer</strong></td><td>Cómo cotizar y pedir la inscripción.</td></tr>
-      <tr><td class="c">08</td><td><strong>Paso 05 · Resolver</strong></td><td>Qué hacer con la objeción. Las ocho más frecuentes, con guion.</td></tr>
-      <tr><td class="c">09</td><td><strong>Paso 06 · Cerrar</strong></td><td>Cómo cerrar. Los cinco tipos de cierre.</td></tr>
-      <tr><td class="c">10</td><td><strong>Paso 07 · Activar y acompañar</strong></td><td>Qué no puede faltar antes de que la persona se retire.</td></tr>
-      <tr><td class="c">11</td><td><strong>Calificar: las 3 D</strong></td><td>Cómo calificar al prospecto sin que se note.</td></tr>
-      <tr><td class="c">12</td><td><strong>Leer a la persona: la matriz de color</strong></td><td>Cómo leer a la persona y ajustar tu trato.</td></tr>
-      <tr><td class="c">13</td><td><strong>Traducir: característica, ventaja y beneficio</strong></td><td>Cómo convertir lo que el club tiene en algo que a ella le sirve.</td></tr>
-      <tr><td class="c">14</td><td><strong>Los siete errores que cuestan ventas</strong></td><td>Los siete errores que cuestan ventas.</td></tr>
-      <tr><td class="c">15</td><td><strong>La lista de la visita</strong></td><td>La hoja que se lleva en la mano durante la visita.</td></tr>
+      <tr><td class="c">02</td><td><strong>Principios del sistema</strong></td><td>Las cuatro reglas que no cambian.</td></tr>
+      <tr><td class="c">03</td><td><strong>Las 3 D y calificación</strong></td><td>Saber a quién tienes enfrente y a qué ritmo cerrar.</td></tr>
+      <tr><td class="c">04</td><td><strong>Proceso estándar · 7 pasos</strong></td><td>El mapa completo en una imagen.</td></tr>
+      <tr><td class="c">05</td><td><strong>Los siete pasos</strong></td><td>Qué hacer y qué decir en cada paso.</td></tr>
+      <tr><td class="c">06</td><td><strong>Discovery · embudo de preguntas</strong></td><td>Qué preguntar y en qué orden.</td></tr>
+      <tr><td class="c">07</td><td><strong>Valor · característica, ventaja, beneficio</strong></td><td>Cómo hablar de lo que tiene el club.</td></tr>
+      <tr><td class="c">08</td><td><strong>Clientes · percepción y matriz de color</strong></td><td>Cómo tratar a cada tipo de persona.</td></tr>
+      <tr><td class="c">09</td><td><strong>Precierres y tipos de cierre</strong></td><td>Cuándo y cómo pedir la inscripción.</td></tr>
+      <tr><td class="c">10</td><td><strong>Objeciones y boomerang</strong></td><td>Qué contestar cuando te dicen que no.</td></tr>
+      <tr><td class="c">11</td><td><strong>Cuando dice que sí · posventa</strong></td><td>Qué hacer antes de que se vaya.</td></tr>
+      <tr><td class="c">12</td><td><strong>Checklist de visita</strong></td><td>La hoja que llevas en la mano.</td></tr>
+      <tr><td class="c">13</td><td><strong>Los siete errores que cuestan ventas</strong></td><td>Qué revisar después de una visita perdida.</td></tr>
     </tbody>
   </table></div>
 
   <h3 class="ss">Cuándo abrir cuál</h3>
   <div class="cards">
-    <div class="card"><div class="k">Antes de la visita</div><h4>Lee el paso que se te dificulta</h4>
-      <p>Si lo que se te complica es abrir la conversación, lee el apartado 04. Si es cerrar, el apartado 09.
-        Cada paso cabe en dos minutos de lectura.</p></div>
-    <div class="card"><div class="k">Durante la visita</div><h4>Lleva la lista del apartado 15</h4>
-      <p>Una hoja con los siete pasos y sus señales. Es lo único que se lleva en la mano.</p></div>
-    <div class="card"><div class="k">Después de una visita perdida</div><h4>Busca la objeción en el apartado 08</h4>
-      <p>Localiza la frase que te dijeron, tal como te la dijeron, y lee el guion completo de respuesta.</p></div>
+    <div class="card"><div class="k">Antes de la visita</div><h4>El paso que se te dificulta</h4>
+      <p>Si se te complica abrir, lee el apartado 05, paso 01. Si se te complica cerrar, el apartado 09.</p></div>
+    <div class="card"><div class="k">Durante la visita</div><h4>La hoja del apartado 12</h4>
+      <p>Los siete pasos con su casilla. Es lo único que llevas contigo.</p></div>
+    <div class="card"><div class="k">Después de perder una venta</div><h4>Los apartados 10 y 13</h4>
+      <p>Busca la frase que te dijeron y lee la respuesta. Luego revisa los siete errores.</p></div>
   </div>
 
-  <div class="rule">
-    <div class="k">Qué es y qué no es</div>
-    <p><strong>Este manual dice cómo.</strong> Los procedimientos —SOP/SW/0101 a 0301— dicen qué ocurre, en qué
-      orden y quién responde. Cuando este manual y un procedimiento parezcan discrepar, <strong>rige el
-      procedimiento</strong>. Este manual orienta cómo conducir la conversación; no modifica ninguna obligación.</p>
-  </div>
+  <h3 class="ss">Quién lo mantiene</h3>
+  <p>Dirección Comercial. Si un guion ya no funciona en tu club, o te dicen algo que aquí no está, dilo: se
+    agrega en la siguiente versión. Un manual que nadie corrige deja de servir en seis meses.</p>
 
-  <!-- 2 -->
-  <h2 class="s"><span class="n">02</span>La regla de oro y los cuatro principios</h2>
-
-  <div class="rule">
-    <div class="k">Regla de oro</div>
-    <p><strong>No vendemos promociones. Vendemos el resultado que la persona vino a buscar.</strong> La
-      promoción es lo último que se menciona y sirve para cerrar, nunca para abrir.</p>
-  </div>
-
+  <!-- 02 -->
+  <h2 class="s"><span class="n">02</span>Principios del sistema</h2>
+  <p class="lead">El sistema es medible, replicable y enseñable. Está pensado para una venta rápida en club,
+    con asesores que dejan de improvisar.</p>
   <div class="cards">
     <div class="card"><div class="k">Principio 1</div><h4>Primero entender, después mostrar</h4>
-      <p>Nadie recorre el club sin que sepas qué vino a resolver. Un recorrido sin diagnóstico es una visita guiada de museo.</p></div>
+      <p>Nadie recorre el club sin que sepas qué vino a resolver.</p></div>
     <div class="card"><div class="k">Principio 2</div><h4>Cada área se muestra por una razón</h4>
       <p>Si no puedes decir para qué le sirve a esa persona, no la lleves ahí.</p></div>
-    <div class="card"><div class="k">Principio 3</div><h4>El mejor momento para cerrar es siempre</h4>
-      <p>El sí no vive en el escritorio. Se va programando durante el recorrido, estación por estación.</p></div>
-    <div class="card"><div class="k">Principio 4</div><h4>La objeción es una petición de más valor</h4>
-      <p>No es un no. Es la persona diciéndote qué le falta para decidir.</p></div>
+    <div class="card"><div class="k">Principio 3</div><h4>El cierre puede ocurrir en cualquier momento</h4>
+      <p>El sí no vive en el escritorio. Se va programando durante el recorrido.</p></div>
+    <div class="card"><div class="k">Principio 4</div><h4>Trátalo como quiere ser tratado</h4>
+      <p>El ritmo y el tipo de cierre se ajustan a la persona. Ver el apartado 08.</p></div>
   </div>
 
-  <!-- 3 -->
-  <h2 class="s"><span class="n">03</span>El mapa del método</h2>
-  <p class="lead">Siete pasos en orden. El orden no se improvisa, pero en cualquier momento se puede cerrar.</p>
+  <!-- 03 -->
+  <h2 class="s"><span class="n">03</span>Las 3 D y calificación</h2>
+  <p class="lead">Dinero, decisión y deseo. Sirven para saber <strong>a qué ritmo cerrar</strong>. Todas las
+    personas reciben la misma visita.</p>
 
   <div class="fig">
-    <svg viewBox="0 0 880 260" role="img" aria-label="Los siete pasos del método y las dos pistas">
-      <defs>
-        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-          <path d="M0 0 L10 5 L0 10 z" fill="#A8A8A6"/></marker>
-      </defs>
-      <text x="10" y="20" font-size="10" font-weight="800" letter-spacing="2" fill="#6B6B68">EL RECORRIDO DE UNA VENTA</text>
-      <g font-family="system-ui" font-size="11">
-        <g>
-          <rect x="8" y="38" width="112" height="60" rx="4" fill="#1D1D1B"/>
-          <text x="20" y="58" fill="#E6282A" font-size="10" font-weight="800">01</text>
-          <text x="20" y="76" fill="#fff" font-weight="700">Recibir</text>
-          <text x="20" y="90" fill="#A8A8A6" font-size="10">y conectar</text>
-        </g>
-        <line x1="122" y1="68" x2="140" y2="68" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
-        <g>
-          <rect x="144" y="38" width="112" height="60" rx="4" fill="#1D1D1B"/>
-          <text x="156" y="58" fill="#E6282A" font-size="10" font-weight="800">02</text>
-          <text x="156" y="76" fill="#fff" font-weight="700">Descubrir</text>
-          <text x="156" y="90" fill="#A8A8A6" font-size="10">las 3 D y el freno</text>
-        </g>
-        <line x1="258" y1="68" x2="276" y2="68" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
-        <g>
-          <rect x="280" y="38" width="112" height="60" rx="4" fill="#1D1D1B"/>
-          <text x="292" y="58" fill="#E6282A" font-size="10" font-weight="800">03</text>
-          <text x="292" y="76" fill="#fff" font-weight="700">Recorrer</text>
-          <text x="292" y="90" fill="#A8A8A6" font-size="10">con precierres</text>
-        </g>
-        <line x1="394" y1="68" x2="412" y2="68" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
-        <g>
-          <rect x="416" y="38" width="112" height="60" rx="4" fill="#1D1D1B"/>
-          <text x="428" y="58" fill="#E6282A" font-size="10" font-weight="800">04</text>
-          <text x="428" y="76" fill="#fff" font-weight="700">Proponer</text>
-          <text x="428" y="90" fill="#A8A8A6" font-size="10">un plan, no un menú</text>
-        </g>
-        <line x1="530" y1="68" x2="548" y2="68" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
-        <g>
-          <rect x="552" y="38" width="112" height="60" rx="4" fill="#1D1D1B"/>
-          <text x="564" y="58" fill="#E6282A" font-size="10" font-weight="800">05</text>
-          <text x="564" y="76" fill="#fff" font-weight="700">Resolver</text>
-          <text x="564" y="90" fill="#A8A8A6" font-size="10">boomerang</text>
-        </g>
-        <line x1="666" y1="68" x2="684" y2="68" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
-        <g>
-          <rect x="688" y="38" width="90" height="60" rx="4" fill="#E6282A"/>
-          <text x="700" y="58" fill="#fff" font-size="10" font-weight="800">06</text>
-          <text x="700" y="76" fill="#fff" font-weight="700">Cerrar</text>
-        </g>
-        <line x1="780" y1="68" x2="798" y2="68" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
-        <g>
-          <rect x="800" y="38" width="72" height="60" rx="4" fill="#1D1D1B"/>
-          <text x="810" y="58" fill="#E6282A" font-size="10" font-weight="800">07</text>
-          <text x="810" y="76" fill="#fff" font-weight="700">Activar</text>
-        </g>
-
-        <path d="M64 104 L64 128 L740 128 L740 106" fill="none" stroke="#E6282A" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#ar)"/>
-        <text x="300" y="124" font-size="10" font-weight="700" fill="#E6282A">En cualquier momento se puede cerrar</text>
-
-        <rect x="8" y="152" width="424" height="88" rx="4" fill="#fff" stroke="#E5E5E3"/>
-        <text x="22" y="172" font-size="10" font-weight="800" letter-spacing="1.6" fill="#6B6B68">PISTA · VENTA NUEVA</text>
-        <text x="22" y="192" font-size="11.5" font-weight="700">El hilo es el objetivo que quiere alcanzar.</text>
-        <text x="22" y="210" font-size="11" fill="#3A3A38">Descubrir primero, recorrer después,</text>
-        <text x="22" y="226" font-size="11" fill="#3A3A38">cotizar enfocado. Nunca un menú de planes.</text>
-
-        <rect x="448" y="152" width="424" height="88" rx="4" fill="#fff" stroke="#E5E5E3"/>
-        <text x="462" y="172" font-size="10" font-weight="800" letter-spacing="1.6" fill="#E6282A">PISTA · REACTIVACIÓN</text>
-        <text x="462" y="192" font-size="11.5" font-weight="700">El hilo es el motivo por el que se fue.</text>
-        <text x="462" y="210" font-size="11" fill="#3A3A38">Localiza la membresía, pregunta qué falló y</text>
-        <text x="462" y="226" font-size="11" fill="#3A3A38">demuestra qué es distinto hoy. Con hechos.</text>
+    <svg viewBox="0 0 760 200" role="img" aria-label="Clasificación por las tres D">
+      <text x="8" y="18" font-size="10" font-weight="800" letter-spacing="2" fill="#6B6B68">CUÁNTAS DE LAS TRES TIENE</text>
+      <g font-family="system-ui">
+        <rect x="8" y="30" width="180" height="150" rx="4" fill="#E6282A"/>
+        <text x="24" y="56" font-size="26" font-weight="800" fill="#fff">3</text>
+        <text x="24" y="80" font-size="12.5" font-weight="800" fill="#fff">CLIENTE</text>
+        <text x="24" y="102" font-size="11" fill="#FFD9D9">Tiene las tres.</text>
+        <text x="24" y="118" font-size="11" fill="#FFD9D9">Cierra hoy, directo.</text>
+        <text x="24" y="146" font-size="10.5" font-weight="700" fill="#fff">No lo hagas esperar.</text>
+        <rect x="196" y="30" width="180" height="150" rx="4" fill="#1D1D1B"/>
+        <text x="212" y="56" font-size="26" font-weight="800" fill="#E6282A">2</text>
+        <text x="212" y="80" font-size="12.5" font-weight="800" fill="#fff">PROSPECTO</text>
+        <text x="212" y="102" font-size="11" fill="#A8A8A6">Le falta una.</text>
+        <text x="212" y="118" font-size="11" fill="#A8A8A6">Averigua cuál y trabájala.</text>
+        <text x="212" y="146" font-size="10.5" font-weight="700" fill="#fff">Si falta quien decide, tráelo.</text>
+        <rect x="384" y="30" width="180" height="150" rx="4" fill="#6B6B68"/>
+        <text x="400" y="56" font-size="26" font-weight="800" fill="#fff">1</text>
+        <text x="400" y="80" font-size="12.5" font-weight="800" fill="#fff">SOSPECHOSO</text>
+        <text x="400" y="102" font-size="11" fill="#EDEDEB">Casi siempre es deseo.</text>
+        <text x="400" y="118" font-size="11" fill="#EDEDEB">Falta dinero o decisión.</text>
+        <text x="400" y="146" font-size="10.5" font-weight="700" fill="#fff">Construye valor primero.</text>
+        <rect x="572" y="30" width="180" height="150" rx="4" fill="#F5F5F4" stroke="#E5E5E3"/>
+        <text x="588" y="56" font-size="26" font-weight="800" fill="#A8A8A6">0</text>
+        <text x="588" y="80" font-size="12.5" font-weight="800" fill="#6B6B68">MIRADOR</text>
+        <text x="588" y="102" font-size="11" fill="#6B6B68">Vino a ver.</text>
+        <text x="588" y="118" font-size="11" fill="#6B6B68">Trátalo igual de bien.</text>
+        <text x="588" y="146" font-size="10.5" font-weight="700" fill="#1D1D1B">Pídele un referido.</text>
       </g>
     </svg>
-    <div class="cap">Los siete pasos y las dos pistas. La pista cambia el énfasis, no el orden.</div>
+    <div class="cap">La calificación es una nota tuya. No se le dice a la persona.</div>
   </div>
 
-  <!-- 4 -->
-  <h2 class="s"><span class="n">04</span>Paso 01 · Recibir y conectar</h2>
-  <p class="lead"><strong>Objetivo:</strong> que la persona se sienta bienvenida, escuchada y en confianza en
-    los primeros treinta segundos.</p>
+  <!-- 04 -->
+  <h2 class="s"><span class="n">04</span>Proceso estándar · 7 pasos</h2>
+  <p class="lead">El orden no se improvisa. En cualquier momento se puede cerrar.</p>
 
+  <div class="fig">
+    <svg viewBox="0 0 880 250" role="img" aria-label="Los siete pasos y las dos pistas">
+      <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+        <path d="M0 0 L10 5 L0 10 z" fill="#A8A8A6"/></marker></defs>
+      <g font-family="system-ui" font-size="11">
+        <rect x="8" y="28" width="112" height="58" rx="4" fill="#1D1D1B"/><text x="20" y="48" fill="#E6282A" font-size="10" font-weight="800">01</text><text x="20" y="66" fill="#fff" font-weight="700">Recibir</text><text x="20" y="80" fill="#A8A8A6" font-size="10">y conectar</text>
+        <line x1="122" y1="57" x2="140" y2="57" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
+        <rect x="144" y="28" width="112" height="58" rx="4" fill="#1D1D1B"/><text x="156" y="48" fill="#E6282A" font-size="10" font-weight="800">02</text><text x="156" y="66" fill="#fff" font-weight="700">Descubrir</text>
+        <line x1="258" y1="57" x2="276" y2="57" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
+        <rect x="280" y="28" width="112" height="58" rx="4" fill="#1D1D1B"/><text x="292" y="48" fill="#E6282A" font-size="10" font-weight="800">03</text><text x="292" y="66" fill="#fff" font-weight="700">Recorrer</text>
+        <line x1="394" y1="57" x2="412" y2="57" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
+        <rect x="416" y="28" width="112" height="58" rx="4" fill="#1D1D1B"/><text x="428" y="48" fill="#E6282A" font-size="10" font-weight="800">04</text><text x="428" y="66" fill="#fff" font-weight="700">Proponer</text>
+        <line x1="530" y1="57" x2="548" y2="57" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
+        <rect x="552" y="28" width="112" height="58" rx="4" fill="#1D1D1B"/><text x="564" y="48" fill="#E6282A" font-size="10" font-weight="800">05</text><text x="564" y="66" fill="#fff" font-weight="700">Resolver</text>
+        <line x1="666" y1="57" x2="684" y2="57" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
+        <rect x="688" y="28" width="88" height="58" rx="4" fill="#E6282A"/><text x="700" y="48" fill="#fff" font-size="10" font-weight="800">06</text><text x="700" y="66" fill="#fff" font-weight="700">Cerrar</text>
+        <line x1="778" y1="57" x2="796" y2="57" stroke="#A8A8A6" stroke-width="1.5" marker-end="url(#ar)"/>
+        <rect x="800" y="28" width="72" height="58" rx="4" fill="#1D1D1B"/><text x="810" y="48" fill="#E6282A" font-size="10" font-weight="800">07</text><text x="810" y="66" fill="#fff" font-weight="700">Activar</text>
+        <path d="M64 92 L64 116 L740 116 L740 94" fill="none" stroke="#E6282A" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+        <text x="300" y="112" font-size="10" font-weight="700" fill="#E6282A">En cualquier momento se puede cerrar</text>
+        <rect x="8" y="142" width="424" height="84" rx="4" fill="#fff" stroke="#E5E5E3"/>
+        <text x="22" y="162" font-size="10" font-weight="800" letter-spacing="1.6" fill="#6B6B68">PISTA · VENTA NUEVA</text>
+        <text x="22" y="182" font-size="11.5" font-weight="700">El hilo es lo que quiere lograr.</text>
+        <text x="22" y="200" font-size="11" fill="#3A3A38">Pregunta primero, recorre después,</text>
+        <text x="22" y="216" font-size="11" fill="#3A3A38">cotiza un plan enfocado.</text>
+        <rect x="448" y="142" width="424" height="84" rx="4" fill="#fff" stroke="#E5E5E3"/>
+        <text x="462" y="162" font-size="10" font-weight="800" letter-spacing="1.6" fill="#E6282A">PISTA · REACTIVACIÓN</text>
+        <text x="462" y="182" font-size="11.5" font-weight="700">El hilo es por qué se fue.</text>
+        <text x="462" y="200" font-size="11" fill="#3A3A38">Busca su membresía anterior, pregunta</text>
+        <text x="462" y="216" font-size="11" fill="#3A3A38">qué falló y demuestra qué cambió.</text>
+      </g>
+    </svg>
+    <div class="cap">La pista cambia el énfasis. El orden es el mismo.</div>
+  </div>
+
+  <!-- 05 -->
+  <h2 class="s"><span class="n">05</span>Los siete pasos</h2>
+
+  <h4 class="p"><span>01</span>Recibir y conectar</h4>
+  <p><strong>Para qué:</strong> que la persona se sienta bienvenida y en confianza en los primeros treinta segundos.</p>
   <h3 class="ss">Qué hacer</h3>
   <ul class="pl">
-    <li>Recepción identifica el motivo y <strong>canaliza de inmediato</strong>. Nadie espera sin que alguien le hable.</li>
-    <li>Saluda <strong>de pie</strong>. Preséntate primero, pregunta su nombre y úsalo el resto de la visita.</li>
-    <li><strong>Edifica</strong>: reconoce algo real —su decisión de venir, la claridad de lo que busca—.</li>
-    <li>Pide permiso para preguntar y para tomar notas. Toma notas <strong>visibles</strong>.</li>
+    <li>Recepción avisa y <strong>alguien la atiende de inmediato</strong>. Nadie espera solo.</li>
+    <li>Saluda <strong>de pie</strong>. Di tu nombre primero. Pregunta el suyo y úsalo toda la visita.</li>
+    <li><strong>Edifica</strong>: reconoce algo bueno de ella —que vino, que tiene claro lo que quiere—.</li>
+    <li>Pide permiso para preguntar y para tomar notas. Toma notas donde las vea.</li>
+    <li>Confirma lo que ya nos dijo antes de venir. Si cambió de opinión, se ajusta.</li>
+  </ul>
+  <div class="say"><span class="t">Di esto</span>
+    <p><q>Hola, bienvenida a Sports World. Soy Ana y te voy a acompañar. ¿Cuál es tu nombre?</q></p>
+    <p style="margin-top:.5rem"><q>¿Me permites hacerte unas preguntas para mostrarte lo que sí te sirve? ¿Puedo tomar notas?</q></p></div>
+  <div class="pre"><span class="t">Precierre</span><p><q>Mucho gusto, Laura. Hoy vas a salir sabiendo si este club es para ti.</q></p></div>
+  <div class="avoid"><span class="t">Evita</span>
+    <ul><li>Hablar de precios en la puerta.</li><li>Dejarla esperando.</li><li>Olvidar su nombre.</li>
+      <li>Preguntar «¿en qué te puedo ayudar?» y esperar a que ella dirija.</li></ul></div>
+  <div class="ej"><div class="h">Ejemplo · Llega sin cita y pide precios</div><div class="b"><div class="dlg">
+    <div class="l a"><div class="who">Asesor</div><div class="tx">Hola, bienvenida. Soy Ana. ¿Cuál es tu nombre?</div></div>
+    <div class="l"><div class="who">Laura</div><div class="tx">Laura. Nada más venía a preguntar precios.</div></div>
+    <div class="l a"><div class="who">Asesor</div><div class="tx">Con gusto, y te los doy completos. Antes déjame hacerte dos preguntas rápidas, porque tenemos varios planes y no quiero darte el que no te sirve. ¿Me permites?
+      <span class="no">No le niegas el precio. Lo pospones treinta segundos con una razón que le conviene a ella.</span></div></div>
+    <div class="l"><div class="who">Laura</div><div class="tx">Va.</div></div>
+    <div class="l a"><div class="who">Asesor</div><div class="tx">¿Qué te trae hoy? ¿Hay algo que quieras lograr?
+      <span class="no">Ya estás en el paso 02.</span></div></div>
+  </div></div></div>
+  <div class="rule"><div class="k">Ya puedes avanzar cuando</div>
+    <p>Sabes su nombre, te dio permiso de preguntar y estás tomando notas. <strong>Si te falta una de las tres, no avances.</strong></p></div>
+
+  <h4 class="p"><span>02</span>Descubrir</h4>
+  <p><strong>Para qué:</strong> saber qué mostrarle. Es el paso que más influye en el resultado de la visita.</p>
+  <h3 class="ss">Qué hacer</h3>
+  <ul class="pl">
+    <li>Pregunta qué quiere lograr y <strong>pide un ejemplo concreto</strong>.</li>
+    <li>Pregunta en qué horario entrenaría y si el club le queda de camino.</li>
+    <li>Pregunta <strong>si ya fue socia</strong>, aquí o en otro lado. Si dice que sí, pregunta por qué lo dejó.</li>
+    <li>Averigua si decide ella sola.</li>
+    <li>Antes de mostrar nada, pregunta qué podría detenerla.</li>
+  </ul>
+  <p style="font-size:.9rem;color:var(--g4)">Las preguntas completas, en orden, están en el apartado 06.</p>
+  <div class="say"><span class="t">Di esto</span><p><q>¿Y eso cómo se vería para ti en tres meses? ¿Qué notarías?</q></p></div>
+  <div class="avoid"><span class="t">Evita</span>
+    <ul><li>Empezar el recorrido sin haber preguntado.</li><li>Hacer un interrogatorio. Es una conversación.</li>
+      <li>Pasar por alto que ya fue socia.</li></ul></div>
+  <div class="ej"><div class="h">Ejemplo · La respuesta genérica</div><div class="b"><div class="dlg">
+    <div class="l a"><div class="who">Asesor</div><div class="tx">¿Qué te trae hoy?</div></div>
+    <div class="l"><div class="who">Laura</div><div class="tx">Quiero hacer ejercicio, estar mejor.</div></div>
+    <div class="l a"><div class="who">Asesor</div><div class="tx">Claro. ¿Y estar mejor cómo se vería? ¿Qué notarías en tres meses?
+      <span class="no">Pide el ejemplo concreto. No preguntes «¿por qué?»: eso la hace justificarse.</span></div></div>
+    <div class="l"><div class="who">Laura</div><div class="tx">Que no me canse subiendo las escaleras de la oficina.</div></div>
+    <div class="l a"><div class="who">Asesor</div><div class="tx">Eso se entrena y se mide. ¿En qué horario podrías venir casi siempre?
+      <span class="no">Ya tienes objetivo y ahora vas por el horario.</span></div></div>
+  </div></div></div>
+
+  <h4 class="p"><span>03</span>Recorrer</h4>
+  <p><strong>Para qué:</strong> que se vea a sí misma entrenando aquí.</p>
+  <h3 class="ss">El orden</h3>
+  <ul class="pl">
+    <li><strong>Antes de entrar</strong>, muéstrale cómo se entra con el código de la app.</li>
+    <li><strong>Primero los vestidores.</strong> Ahí explicas toallas, lockers y regaderas.</li>
+    <li><strong>Después su área.</strong> La que corresponde a lo que te dijo.</li>
+    <li>El resto del club, solo lo que le sirva.</li>
+    <li><strong>Cinco minutos con un entrenador</strong>, que le explique cómo llega a su objetivo.</li>
+    <li><strong>La clase que más le conviene, en vivo.</strong> Con ropa deportiva se mete sin costo. Sin ropa deportiva, el instructor sale, la saluda y la mete al salón a explicarle.</li>
+    <li>Un precierre en cada área fuerte.</li>
+  </ul>
+  <div class="rule"><div class="k">Por qué se empieza por vestidores</div>
+    <p>A mucha gente le da pena entrar a un gimnasio por primera vez, sobre todo si no está a gusto con su
+      cuerpo. El vestidor es privado, está limpio, tiene toallas y alguien le explica cómo funciona.
+      <strong>Empezar ahí quita esa pena antes que nada.</strong></p></div>
+  <div class="pre"><span class="t">Precierres</span>
+    <p><strong>En pesas:</strong> <q>El equipo tiene todo lo que necesitas para lo que me dijiste, ¿verdad?</q></p>
+    <p><strong>En alberca:</strong> <q>Nuestra alberca no tiene restricción de horario. Es lo que buscabas, ¿correcto?</q></p>
+    <p><strong>Al final del recorrido:</strong> <q>Con lo que me platicaste, este club es lo que buscas, ¿correcto?</q></p></div>
+  <div class="avoid"><span class="t">Evita</span>
+    <ul><li>El mismo recorrido para todos.</li><li>Llevarla a áreas que no necesita.</li>
+      <li>Hablar de metros y de cuántos aparatos hay.</li><li>Parar el recorrido para recitar el reglamento.</li></ul></div>
+  <div class="ej"><div class="h">Ejemplo · Cómo se habla de un área</div><div class="b"><div class="dlg">
+    <div class="l"><div class="who">Mal</div><div class="tx">Esta es el área de cardio: veinte caminadoras, doce elípticas y bicicletas.
+      <span class="no">Son datos del club. Ella no sabe qué hacer con eso.</span></div></div>
+    <div class="l a"><div class="who">Bien</div><div class="tx">Me dijiste que quieres subir escaleras sin cansarte. Eso se entrena aquí: tres veces por semana, veinticinco minutos. Y como hay veinte caminadoras, a las siete de la mañana siempre encuentras una libre.
+      <span class="no">Lo conectas con su objetivo y con la hora que ella dijo.</span></div></div>
+  </div></div></div>
+
+  <h4 class="p"><span>04</span>Proponer</h4>
+  <p><strong>Para qué:</strong> presentar el plan que le sirve y pedir la inscripción.</p>
+  <ul class="pl">
+    <li>Regresa al escritorio y <strong>repite en voz alta</strong> lo que ella te dijo.</li>
+    <li>Cotiza <strong>un plan</strong>, con las condiciones que estén vigentes hoy.</li>
+    <li>Explica qué incluye, cuánto cuesta, cómo se paga, hasta cuándo dura y qué promoción aplica.</li>
+    <li>Conecta el precio con lo que va a lograr, no con el descuento.</li>
+    <li>Pide la inscripción de forma afirmativa.</li>
+  </ul>
+  <div class="say"><span class="t">Di esto</span>
+    <p><q>Entonces, Laura: quieres subir escaleras sin cansarte, entrenar a las siete y que te quede de camino.
+      Este plan cubre eso. Son [importe] al mes y empiezas [fecha]. ¿Hacemos hoy tu inscripción?</q></p></div>
+  <div class="avoid"><span class="t">Evita</span>
+    <ul><li>Poner tres planes para que elija ella.</li><li>Empezar por la promoción.</li>
+      <li>Preguntar «¿sí quieres?».</li></ul></div>
+
+  <h4 class="p"><span>05</span>Resolver</h4>
+  <p><strong>Para qué:</strong> entender el no verdadero y volver a cerrar.</p>
+  <ul class="pl">
+    <li>Cállate y déjala terminar.</li>
+    <li><strong>Anota lo que dijo, con sus palabras.</strong></li>
+    <li>Averigua la causa real: precio, tiempo, alguien más, miedo, comparar o posponer.</li>
+    <li>Contesta con el boomerang del apartado 10.</li>
+    <li>Cierra otra vez.</li>
   </ul>
 
-  <div class="say">
-    <span class="t">Di esto</span>
-    <p><q>Hola, bienvenida a Sports World. Soy Ana y voy a acompañarte para que conozcas todo lo que tenemos
-      para ti. ¿Cuál es tu nombre?</q></p>
-    <p style="margin-top:.5rem"><q>¿Me permites hacerte algunas preguntas para mostrarte lo que de verdad te
-      sirve? ¿Puedo tomar notas para no perder lo que me digas?</q></p>
-  </div>
+  <h4 class="p"><span>06</span>Cerrar</h4>
+  <p><strong>Para qué:</strong> confirmar la decisión y los términos.</p>
+  <ul class="pl">
+    <li>Usa el cierre que va con esa persona (apartados 08 y 09).</li>
+    <li>Confirma plan, importe, promoción, forma de pago, cada cuándo se cobra, hasta cuándo dura y cuándo empieza.</li>
+    <li>Pide identificación, correo y contacto de emergencia.</li>
+    <li>Pregunta por un referido.</li>
+    <li><strong>Da de alta en el sistema después del sí</strong>, nunca antes.</li>
+  </ul>
 
-  <div class="pre">
-    <span class="t">Precierre</span>
-    <p><q>Mucho gusto, Laura. Hoy vas a salir con claridad de cómo este club se ajusta a lo que buscas.</q></p>
-  </div>
+  <h4 class="p"><span>07</span>Activar y acompañar</h4>
+  <p><strong>Para qué:</strong> que use la membresía desde el primer día. El detalle está en el apartado 11.</p>
 
-  <div class="avoid">
-    <span class="t">Evita</span>
-    <ul>
-      <li>Hablar de precios o promociones en la puerta.</li>
-      <li>Dejar a la persona esperando sin canalizar.</li>
-      <li>Olvidar su nombre a los dos minutos.</li>
-      <li>Preguntar «¿en qué te puedo ayudar?» y esperar a que ella dirija la conversación.</li>
-    </ul>
-  </div>
-
-  <div class="ej">
-    <div class="h">Ejemplo trabajado · Llega sin cita, se ve incómoda</div>
-    <div class="b"><div class="dlg">
-      <div class="l a"><div class="who">Asesor</div><div class="tx">Hola, bienvenida a Sports World. Soy Ana. ¿Cuál es tu nombre?</div></div>
-      <div class="l"><div class="who">Prospecto</div><div class="tx">Laura. Nada más venía a preguntar precios.</div></div>
-      <div class="l a"><div class="who">Asesor</div><div class="tx">Con mucho gusto, Laura, y te los voy a dar completos. Antes déjame hacerte dos preguntas rápidas, porque tenemos varios planes y no quiero darte el que no te sirve. ¿Me permites?
-        <span class="no">No se niega el precio ni se esquiva. Se pospone treinta segundos con una razón que beneficia a la persona.</span></div></div>
-      <div class="l"><div class="who">Prospecto</div><div class="tx">Va.</div></div>
-      <div class="l a"><div class="who">Asesor</div><div class="tx">¿Qué te trae hoy? ¿Hay algo que quieras lograr en particular?
-        <span class="no">Ya estás en el paso 02 y la persona ni lo notó. Así se ve una transición bien hecha.</span></div></div>
-    </div></div>
-  </div>
-
-  <div class="rule">
-    <div class="k">Señal para avanzar</div>
-    <p>Sabes su nombre, te dio permiso de preguntar y estás tomando notas. <strong>Si no tienes las tres, no
-      avances.</strong></p>
-  </div>
-
-  <!-- 5 -->
-  <h2 class="s"><span class="n">05</span>Paso 02 · Descubrir</h2>
-  <p class="lead"><strong>Objetivo:</strong> obtener la información que personaliza el recorrido. Es el paso que más
-    influye en el resultado de la visita.</p>
+  <!-- 06 -->
+  <h2 class="s"><span class="n">06</span>Discovery · embudo de preguntas</h2>
+  <p class="lead">Cinco niveles, en este orden. Se recorren completos antes de cotizar.</p>
 
   <div class="fig">
     <svg viewBox="0 0 760 210" role="img" aria-label="El embudo de cinco preguntas">
-      <text x="8" y="18" font-size="10" font-weight="800" letter-spacing="2" fill="#6B6B68">EMBUDO DE CINCO PREGUNTAS</text>
+      <text x="8" y="18" font-size="10" font-weight="800" letter-spacing="2" fill="#6B6B68">EMBUDO DE PREGUNTAS</text>
       <g font-family="system-ui">
         <rect x="8" y="30" width="744" height="30" rx="3" fill="#1D1D1B"/>
         <text x="22" y="50" font-size="11.5" font-weight="800" fill="#fff">1 · APERTURA</text>
-        <text x="150" y="50" font-size="11.5" fill="#E5E5E3">Rompe el hielo y pide permiso. Sin esto, el sondeo se siente interrogatorio.</text>
+        <text x="150" y="50" font-size="11.5" fill="#E5E5E3">Rompe el hielo y pide permiso.</text>
         <rect x="48" y="66" width="664" height="30" rx="3" fill="#3A3A38"/>
         <text x="62" y="86" font-size="11.5" font-weight="800" fill="#fff">2 · PRIORIDAD</text>
         <text x="190" y="86" font-size="11.5" fill="#E5E5E3">¿Qué te trae hoy? Aquí está el motivo de compra.</text>
@@ -351,403 +396,247 @@
         <text x="300" y="194" font-size="11.5" fill="#fff">¿Qué podría detenerte? Antes de cotizar.</text>
       </g>
     </svg>
-    <div class="cap">El embudo se recorre completo antes de proponer. El paso 5 es el que casi nadie hace y el que evita la objeción.</div>
+    <div class="cap">El nivel 5 es el que casi nadie hace. Es el que evita la objeción del final.</div>
   </div>
 
-  <h3 class="ss">Qué preguntar</h3>
   <div class="tw"><table>
-    <thead><tr><th style="width:120px">Nivel</th><th>Pregunta</th><th style="width:230px">Qué escuchas realmente</th></tr></thead>
+    <thead><tr><th style="width:110px">Nivel</th><th>Pregunta</th><th style="width:230px">Qué estás escuchando</th></tr></thead>
     <tbody>
-      <tr><td class="c">Apertura</td><td>¿Es tu primera visita a este club? ¿Cómo te enteraste de nosotros?</td><td>Canal de origen. Si viene referido, anótalo: sirve en el cierre</td></tr>
-      <tr><td class="c">Prioridad</td><td>¿Qué te trae hoy a Sports World?</td><td>El motivo de compra. Todo el recorrido cuelga de esta respuesta</td></tr>
-      <tr><td class="c">Contexto</td><td>¿En qué horario piensas entrenar? ¿El club te queda cerca de casa o del trabajo?</td><td>Si el horario que declara no existe en la parrilla, lo sabes ahora y no en el cierre</td></tr>
-      <tr><td class="c">Contexto</td><td>¿Ya fuiste socio de Sports World? ¿O de otro gimnasio?</td><td>Define la pista. Si dice que sí, <strong>pregunta por qué lo dejó</strong>: esa es la objeción de hoy</td></tr>
-      <tr><td class="c">Calificación</td><td>¿Vas a decidirlo tú o lo consultas con alguien?</td><td>La D de decisión. Si no está quien decide, tu cierre es traer a esa persona</td></tr>
+      <tr><td class="c">Apertura</td><td>¿Es tu primera visita? ¿Cómo te enteraste de nosotros?</td><td>Por dónde llegó. Si viene referido, anótalo</td></tr>
+      <tr><td class="c">Prioridad</td><td>¿Qué te trae hoy?</td><td>El motivo de compra. Todo lo demás cuelga de aquí</td></tr>
+      <tr><td class="c">Contexto</td><td>¿En qué horario entrenarías? ¿Te queda cerca de casa o del trabajo?</td><td>Si el horario que quiere no existe, lo sabes ahora</td></tr>
+      <tr><td class="c">Contexto</td><td>¿Ya fuiste socia, aquí o en otro gimnasio?</td><td>Define la pista. Si dice que sí, <strong>pregunta por qué lo dejó</strong></td></tr>
+      <tr><td class="c">Calificación</td><td>¿Lo decides tú o lo consultas con alguien?</td><td>Si no está quien decide, tu cierre es traerlo</td></tr>
       <tr><td class="c">Freno</td><td>Suponiendo que todo te guste, ¿habría algo que te detenga?</td><td>La objeción, dicha antes de que sea objeción</td></tr>
     </tbody>
   </table></div>
 
-  <div class="say">
-    <span class="t">Di esto</span>
-    <p><q>Mucho gusto, Laura. Para mostrarte lo que de verdad puede ayudarte, cuéntame: ¿qué áreas te interesan
-      y qué te gustaría lograr?</q></p>
-  </div>
-  <div class="avoid">
-    <span class="t">Evita</span>
-    <ul>
-      <li>Arrancar el recorrido sin haber preguntado nada.</li>
-      <li>Convertirlo en interrogatorio. Es una conversación: reacciona a lo que te dicen.</li>
-      <li>Ignorar que ya fue socia. El historial cambia la cotización y el cierre.</li>
-    </ul>
-  </div>
-
-  <div class="ej">
-    <div class="h">Ejemplo trabajado · La respuesta genérica y cómo abrirla</div>
-    <div class="b"><div class="dlg">
-      <div class="l a"><div class="who">Asesor</div><div class="tx">¿Qué te trae hoy?</div></div>
-      <div class="l"><div class="who">Prospecto</div><div class="tx">Pues quiero hacer ejercicio, ya sabes, estar mejor.</div></div>
-      <div class="l a"><div class="who">Asesor</div><div class="tx">Claro. ¿Y «mejor» cómo se vería para ti dentro de tres meses? ¿Qué notarías?
-        <span class="no">La pregunta genérica se abre pidiendo la evidencia concreta, no repitiendo «¿por qué?».</span></div></div>
-      <div class="l"><div class="who">Prospecto</div><div class="tx">Que no me canse subiendo las escaleras de la oficina, la verdad.</div></div>
-      <div class="l a"><div class="who">Asesor</div><div class="tx">Eso es capacidad cardiovascular, y se mide. ¿En qué horario podrías entrenar la mayoría de los días?
-        <span class="no">Nombraste el objetivo con precisión —eso te da autoridad— y pasaste a contexto sin frenar la conversación.</span></div></div>
-    </div></div>
-  </div>
-
-  <!-- 6 -->
-  <h2 class="s"><span class="n">06</span>Paso 03 · Recorrer</h2>
-  <p class="lead"><strong>Objetivo:</strong> que la persona se vea a sí misma como socia. Cada área se conecta
-    con lo que dijo que quiere lograr.</p>
-
-  <h3 class="ss">El orden del recorrido</h3>
+  <h3 class="ss">Antes de preguntar</h3>
   <ul class="pl">
-    <li><strong>Antes de cruzar:</strong> muestra el acceso por código en la aplicación. <q>Así de simple va a ser tu entrada todos los días.</q></li>
-    <li><strong>Primero, vestidores.</strong> Es la primera área que usará como socia y donde se explican toallas, lockers y amenidades en su lugar.</li>
-    <li><strong>Después, el área que más le importa.</strong> Ahí está el cierre emocional.</li>
-    <li><strong>El resto, como complemento</strong>, no como catálogo.</li>
-    <li><strong>Cinco minutos con un entrenador</strong> que le explique, con su objetivo en la mano, cómo lo que le recomendamos lo produce.</li>
-    <li><strong>La clase de mayor impacto, en vivo.</strong> Con ropa deportiva, se integra sin costo; sin ella, el instructor sale, la saluda por su nombre y la mete al salón a explicarle.</li>
+    <li><strong>Pregunta de alivio.</strong> Pide permiso: <q>¿Me permites hacerte unas preguntas?</q></li>
+    <li><strong>Usa su nombre</strong> y ajusta tu ritmo al suyo. Si habla rápido, no la frenes.</li>
+    <li><strong>Toma notas donde las vea.</strong> Le muestra que lo que dice importa.</li>
   </ul>
 
-  <div class="rule">
-    <div class="k">Por qué vestidores primero</div>
-    <p>Un club intimida a quien entra por primera vez, y más si la persona está incómoda con su cuerpo.
-      Empezar por ahí resuelve esa incomodidad antes que nada: el vestidor es privado, está limpio,
-      tiene toallas y alguien le explica cómo funciona.</p>
-  </div>
+  <!-- 07 -->
+  <h2 class="s"><span class="n">07</span>Valor · característica, ventaja, beneficio</h2>
+  <p class="lead">Una característica es un dato del club. Una ventaja es para qué sirve. Un beneficio es qué
+    gana ella. <strong>Solo el beneficio vende.</strong></p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:145px">Característica</th><th style="width:220px">Ventaja</th><th>Beneficio · lo que le dices</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Reserva de clases en la app</strong></td><td>Aparta su lugar desde su casa</td><td>Nunca llegas y te quedas fuera. Tu clase de las siete es tuya aunque el club esté lleno.</td></tr>
+      <tr><td><strong>Entrada con código</strong></td><td>Entra sin credencial ni fila</td><td>Cinco segundos entre la puerta y el vestidor, hasta los días que vienes con prisa.</td></tr>
+      <tr><td><strong>Toallas</strong></td><td>No carga nada</td><td>Puedes venir directo de la oficina con lo que traes puesto.</td></tr>
+      <tr><td><strong>Body Test</strong></td><td>Mide de dónde parte</td><td>En tres meses ves el cambio en números, no en sensación.</td></tr>
+      <tr><td><strong>Paramédico</strong></td><td>Hay quien sabe qué hacer</td><td>Entrenas fuerte con la tranquilidad de que no estás sola si algo pasa.</td></tr>
+      <tr><td><strong>Varios clubes</strong></td><td>Entrena en más de una sede</td><td>El día que sales tarde de la oficina, entrenas cerca del trabajo y no pierdes el día.</td></tr>
+      <tr><td><strong>FitKidz</strong></td><td>Sus hijos tienen actividad mientras entrena</td><td>Dejas de elegir entre cuidarlos y cuidarte. Vienen contigo.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="rule"><div class="k">Cómo saber si terminaste la frase</div>
+    <p>Si después de lo que dijiste ella podría contestar <strong>«¿y eso a mí qué?»</strong>, te faltó
+      llegar al beneficio.</p></div>
 
-  <div class="pre">
-    <span class="t">Precierres · uno por estación fuerte</span>
-    <p><strong>En pesas:</strong> <q>El equipo tiene todo lo que necesitas para lo que me platicaste, ¿verdad?</q></p>
-    <p><strong>En alberca:</strong> <q>Nuestra alberca no tiene esa restricción de acceso. Es lo que buscabas, ¿correcto?</q></p>
-    <p><strong>En la app:</strong> <q>Así de simple va a ser tu acceso todos los días, ¿sí o no?</q></p>
-    <p><strong>Cierre de tour:</strong> <q>Con respecto a lo que me platicaste, este club es lo que buscas, ¿correcto?</q></p>
-  </div>
-
-  <div class="avoid">
-    <span class="t">Evita</span>
-    <ul>
-      <li>El recorrido genérico, igual para todos.</li>
-      <li>Forzar áreas que la persona no necesita. Cada minuto de más diluye lo que sí importa.</li>
-      <li>Hablar de características —metros, número de aparatos— sin traducirlas a beneficio.</li>
-      <li>Interrumpir el recorrido para recitar el reglamento completo.</li>
-    </ul>
-  </div>
-
-  <div class="ej">
-    <div class="h">Ejemplo trabajado · Traducir un área a su objetivo</div>
-    <div class="b"><div class="dlg">
-      <div class="l"><div class="who">Mal</div><div class="tx">Aquí está el área de cardio, tenemos veinte caminadoras, doce elípticas y bicicletas de spinning.
-        <span class="no">Características. La persona no sabe qué hacer con ese dato.</span></div></div>
-      <div class="l a"><div class="who">Bien</div><div class="tx">Me dijiste que quieres subir las escaleras de tu oficina sin cansarte. Eso se entrena aquí, tres veces por semana, veinticinco minutos. Y como hay veinte caminadoras, a las siete de la mañana —que es tu horario— siempre vas a encontrar una libre. Nunca vas a tener que esperar.
-        <span class="no">Característica → ventaja → beneficio, y anclado a la hora que ella misma declaró.</span></div></div>
-    </div></div>
-  </div>
-
-  <!-- 7 -->
-  <h2 class="s"><span class="n">07</span>Paso 04 · Proponer</h2>
-  <p class="lead"><strong>Objetivo:</strong> presentar el plan que se adapta a lo descubierto —no un menú— y
-    pedir la inscripción.</p>
-
-  <ul class="pl">
-    <li>Regresa al área de ventas y <strong>resume en voz alta</strong> lo que la persona dijo y lo que confirmó en el recorrido.</li>
-    <li>Cotiza <strong>un plan</strong> y su complemento cuando aplique. Con las condiciones vigentes del día.</li>
-    <li>Explica beneficios, costo, forma de pago, vigencia y promoción aplicable.</li>
-    <li><strong>Relaciona cada peso con el resultado</strong>, no con el descuento.</li>
-    <li>Primer intento de cierre, en forma afirmativa.</li>
-  </ul>
-
-  <div class="say">
-    <span class="t">Di esto</span>
-    <p><q>Entonces, Laura: quieres subir escaleras sin cansarte, entrenar a las siete de la mañana y que te
-      quede de camino a la oficina. Este plan cubre exactamente eso: acceso a este club, las clases de cardio
-      que vimos, tu Body Test para saber de dónde partes y la app para reservar. Son [importe] al mes, inicias
-      [fecha]. ¿Hacemos hoy tu inscripción?</q></p>
-  </div>
-  <div class="avoid">
-    <span class="t">Evita</span>
-    <ul>
-      <li>Poner tres planes sobre la mesa para que elija a ciegas.</li>
-      <li>Encabezar con la promoción en lugar del resultado.</li>
-      <li>Pedir permiso débil: «¿sí quieres?» en vez de una afirmación o una elección.</li>
-    </ul>
-  </div>
-
-  <!-- 8 -->
-  <h2 class="s"><span class="n">08</span>Paso 05 · Resolver</h2>
-  <p class="lead"><strong>Objetivo:</strong> escuchar la objeción real, responderla con beneficios ligados al
-    objetivo y volver a cerrar.</p>
-
+  <!-- 08 -->
+  <h2 class="s"><span class="n">08</span>Clientes · percepción y matriz de color</h2>
+  <p class="lead">Dos cosas que observar: qué tan directa es al decir lo que quiere, y cuánto le importan las
+    personas.</p>
   <div class="fig">
-    <svg viewBox="0 0 800 230" role="img" aria-label="El boomerang de cinco pasos, con sus dos ramas">
+    <svg viewBox="0 0 720 430" role="img" aria-label="Matriz de color">
+      <g font-family="system-ui">
+        <text x="8" y="16" font-size="10" font-weight="800" letter-spacing="1.6" fill="#6B6B68">↑ MÁS DIRECTA</text>
+        <text x="556" y="424" font-size="10" font-weight="800" letter-spacing="1.6" fill="#6B6B68">LE IMPORTAN MÁS LAS PERSONAS →</text>
+        <rect x="30" y="26" width="325" height="178" rx="4" fill="#FFF5F5" stroke="#F5C6C4"/>
+        <text x="48" y="50" font-size="12.5" font-weight="800" fill="#B3261E">ROJO · quiere resultados y rapidez</text>
+        <text x="48" y="74" font-size="11" fill="#3A3A38">Va al grano. No quiere rodeos.</text>
+        <text x="48" y="98" font-size="11" font-weight="700" fill="#1D1D1B">Trátalo directo y breve.</text>
+        <text x="48" y="120" font-size="11" font-weight="700" fill="#1D1D1B">Cierra directo, afirmando.</text>
+        <text x="48" y="146" font-size="11" fill="#3A3A38">«Dame tu identificación y empezamos.»</text>
+        <text x="48" y="180" font-size="10.5" font-weight="700" fill="#B3261E">Evita historias largas y tres opciones.</text>
+        <rect x="365" y="26" width="325" height="178" rx="4" fill="#FFF7E8" stroke="#FFD9A0"/>
+        <text x="383" y="50" font-size="12.5" font-weight="800" fill="#9A6B00">AMARILLO · quiere sentirse especial</text>
+        <text x="383" y="74" font-size="11" fill="#3A3A38">Con energía. Quiere ser parte de algo.</text>
+        <text x="383" y="98" font-size="11" font-weight="700" fill="#1D1D1B">Trátalo con entusiasmo y cercanía.</text>
+        <text x="383" y="120" font-size="11" font-weight="700" fill="#1D1D1B">Cierra dándole a elegir.</text>
+        <text x="383" y="146" font-size="11" fill="#3A3A38">«¿Este club o el que te abre todos?»</text>
+        <text x="383" y="180" font-size="10.5" font-weight="700" fill="#9A6B00">Evita la frialdad y las fichas técnicas.</text>
+        <rect x="30" y="212" width="325" height="178" rx="4" fill="#F5F5F4" stroke="#E5E5E3"/>
+        <text x="48" y="236" font-size="12.5" font-weight="800" fill="#1F4E79">AZUL · quiere que los números cuadren</text>
+        <text x="48" y="260" font-size="11" fill="#3A3A38">Pide datos y compara.</text>
+        <text x="48" y="284" font-size="11" font-weight="700" fill="#1D1D1B">Trátalo con precisión. Trae cifras.</text>
+        <text x="48" y="306" font-size="11" font-weight="700" fill="#1D1D1B">Cierra resumiendo los hechos.</text>
+        <text x="48" y="332" font-size="11" fill="#3A3A38">«Cubre A, B y C; el cargo es [importe]</text>
+        <text x="48" y="346" font-size="11" fill="#3A3A38">cada mes. ¿Falta algún dato?»</text>
+        <text x="48" y="378" font-size="10.5" font-weight="700" fill="#1F4E79">Evita las promesas vagas.</text>
+        <rect x="365" y="212" width="325" height="178" rx="4" fill="#EDF8F1" stroke="#CDE6D6"/>
+        <text x="383" y="236" font-size="12.5" font-weight="800" fill="#215F3F">VERDE · quiere seguridad</text>
+        <text x="383" y="260" font-size="11" fill="#3A3A38">No quiere sentirse presionada.</text>
+        <text x="383" y="284" font-size="11" font-weight="700" fill="#1D1D1B">Trátala con calma y voz suave.</text>
+        <text x="383" y="306" font-size="11" font-weight="700" fill="#1D1D1B">Cierra acompañándola.</text>
+        <text x="383" y="332" font-size="11" fill="#3A3A38">«Lo dejamos listo hoy para que empieces</text>
+        <text x="383" y="346" font-size="11" fill="#3A3A38">con calma esta semana. ¿Te parece?»</text>
+        <text x="383" y="378" font-size="10.5" font-weight="700" fill="#215F3F">Evita presionarla y meterle prisa.</text>
+      </g>
+    </svg>
+    <div class="cap">Esto no se le dice a la persona. Cambia tu ritmo y tu tipo de cierre.</div>
+  </div>
+  <h3 class="ss">Cómo prefiere recibir la información</h3>
+  <ul class="pl">
+    <li><strong>Si mira todo:</strong> muéstrale. Recorre con calma. El club limpio vende más que tu discurso.</li>
+    <li><strong>Si pregunta mucho:</strong> habla claro y sin prisa. Resume en voz alta y déjala terminar.</li>
+    <li><strong>Si toca los aparatos:</strong> hazla probar. Métela a la clase.</li>
+  </ul>
+
+  <!-- 09 -->
+  <h2 class="s"><span class="n">09</span>Precierres y tipos de cierre</h2>
+  <p class="lead">El precierre confirma, durante el recorrido, que lo que acaba de ver es lo que buscaba. El
+    cierre pide la inscripción.</p>
+  <h3 class="ss">Los cinco cierres</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:120px">Tipo</th><th style="width:200px">Cuándo</th><th>Di esto</th></tr></thead>
+    <tbody>
+      <tr><td class="c">Directo</td><td>Con quien ya dijo que sí dos veces</td><td>Dame tu identificación y empezamos tu trámite.</td></tr>
+      <tr><td class="c">De elección</td><td>Cuando duda del cómo, no del qué</td><td>¿Prefieres pagar con crédito o con débito?</td></tr>
+      <tr><td class="c">De prueba</td><td>Para medir sin poner el contrato encima</td><td>¿Agendamos tu clase muestra?</td></tr>
+      <tr><td class="c">De resumen</td><td>Con quien necesita que todo cuadre</td><td>Para resumir: cubre A, B y C; son [importe] cada mes y empiezas [fecha]. ¿Falta algún dato?</td></tr>
+      <tr><td class="c">De acuerdo</td><td>Después de una explicación clara</td><td>Bien, de acuerdo con lo que vimos, arrancamos con este plan.</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- 10 -->
+  <h2 class="s"><span class="n">10</span>Objeciones y boomerang</h2>
+  <p class="lead">Una objeción no es un no. Es que le falta algo para decidir.</p>
+  <div class="fig">
+    <svg viewBox="0 0 800 230" role="img" aria-label="El boomerang de cinco pasos">
       <text x="8" y="18" font-size="10" font-weight="800" letter-spacing="2" fill="#6B6B68">BOOMERANG · CINCO PASOS</text>
       <g font-family="system-ui">
         <rect x="8" y="30" width="784" height="34" rx="3" fill="#1D1D1B"/>
         <text x="22" y="52" font-size="11.5" font-weight="800" fill="#E6282A">1</text>
         <text x="40" y="52" font-size="11.5" fill="#fff" font-weight="700">Escucha y anota.</text>
-        <text x="170" y="52" font-size="11.5" fill="#E5E5E3">Tal cual lo dijo. Sin corregir, sin defenderte, sin interrumpir.</text>
-
+        <text x="170" y="52" font-size="11.5" fill="#E5E5E3">Con sus palabras. Sin corregirla y sin defenderte.</text>
         <path d="M200 68 L200 84 L120 84 L120 96" fill="none" stroke="#A8A8A6" stroke-width="1.3"/>
         <path d="M600 68 L600 84 L680 84 L680 96" fill="none" stroke="#A8A8A6" stroke-width="1.3"/>
-        <text x="330" y="80" font-size="10.5" font-weight="800" fill="#6B6B68">¿SE PUEDE RESOLVER CON LO QUE SÍ OFRECEMOS?</text>
-
+        <text x="320" y="80" font-size="10.5" font-weight="800" fill="#6B6B68">¿PUEDES RESOLVERLO CON LO QUE SÍ TENEMOS?</text>
         <rect x="8" y="98" width="380" height="122" rx="4" fill="#EDF8F1" stroke="#CDE6D6"/>
-        <text x="24" y="118" font-size="10" font-weight="800" letter-spacing="1.6" fill="#215F3F">SÍ SE PUEDE</text>
-        <text x="24" y="140" font-size="11.5" font-weight="700" fill="#1D1D1B">2 · Retroalimenta</text>
-        <text x="24" y="156" font-size="11" fill="#3A3A38">«Si yo te demuestro que [beneficio ligado</text>
-        <text x="24" y="170" font-size="11" fill="#3A3A38">a su objetivo]…»</text>
-        <text x="24" y="192" font-size="11.5" font-weight="700" fill="#1D1D1B">3 · Condiciona el sí</text>
-        <text x="24" y="208" font-size="11" fill="#3A3A38">«…entonces tú te inscribes hoy.» Y callas.</text>
-
+        <text x="24" y="118" font-size="10" font-weight="800" letter-spacing="1.6" fill="#215F3F">SÍ</text>
+        <text x="24" y="142" font-size="11.5" font-weight="700" fill="#1D1D1B">2 · Ofrece la prueba</text>
+        <text x="24" y="158" font-size="11" fill="#3A3A38">«Si yo te demuestro que [lo que</text>
+        <text x="24" y="172" font-size="11" fill="#3A3A38">le importa]…»</text>
+        <text x="24" y="194" font-size="11.5" font-weight="700" fill="#1D1D1B">3 · Pide el sí a cambio</text>
+        <text x="24" y="210" font-size="11" fill="#3A3A38">«…entonces tú te inscribes hoy.» Y callas.</text>
         <rect x="404" y="98" width="388" height="122" rx="4" fill="#FFF7E8" stroke="#FFD9A0"/>
-        <text x="420" y="118" font-size="10" font-weight="800" letter-spacing="1.6" fill="#9A6B00">NO SE PUEDE</text>
-        <text x="420" y="140" font-size="11.5" font-weight="700" fill="#1D1D1B">4 · Minimiza y da alternativa</text>
-        <text x="420" y="156" font-size="11" fill="#3A3A38">«Eso no podemos hacerlo. Lo que sí podemos</text>
-        <text x="420" y="170" font-size="11" fill="#3A3A38">hacer es…» Solo beneficios reales y vigentes.</text>
-        <text x="420" y="192" font-size="11.5" font-weight="700" fill="#1D1D1B">5 · Cierra indirecto</text>
-        <text x="420" y="208" font-size="11" fill="#3A3A38">«¿Qué te parece?»</text>
+        <text x="420" y="118" font-size="10" font-weight="800" letter-spacing="1.6" fill="#9A6B00">NO</text>
+        <text x="420" y="142" font-size="11.5" font-weight="700" fill="#1D1D1B">4 · Ofrece lo que sí puedes</text>
+        <text x="420" y="158" font-size="11" fill="#3A3A38">«Eso no podemos. Lo que sí podemos</text>
+        <text x="420" y="172" font-size="11" fill="#3A3A38">hacer es…» Solo cosas reales.</text>
+        <text x="420" y="194" font-size="11.5" font-weight="700" fill="#1D1D1B">5 · Cierra preguntando</text>
+        <text x="420" y="210" font-size="11" fill="#3A3A38">«¿Qué te parece?»</text>
       </g>
     </svg>
-    <div class="cap">El paso 1 es el mismo en las dos ramas. Lo que cambia es qué haces después de escuchar.</div>
+    <div class="cap">El paso 1 es igual en los dos casos. Lo que cambia es lo que haces después de escuchar.</div>
   </div>
+  <div class="rule"><div class="k">Después de pedir el sí</div>
+    <p><strong>Cállate.</strong> Es normal que el silencio se sienta largo. Espera la respuesta: si vuelves a
+      hablar tú, ella ya no tiene que contestar.</p></div>
 
-  <div class="rule">
-    <div class="k">La regla del silencio</div>
-    <p>Después de condicionar el sí, <strong>te callas</strong>. Es normal que el silencio se sienta largo.
-      Espera la respuesta: si retomas la palabra tú, la persona ya no tiene que contestar.</p>
-  </div>
-
-  <h3 class="ss">Las ocho objeciones y su guion</h3>
+  <h3 class="ss">Las ocho objeciones</h3>
   <div class="tw"><table>
-    <thead><tr><th style="width:190px">Lo que dijo</th><th style="width:150px">Lo que significa</th><th>Boomerang</th></tr></thead>
+    <thead><tr><th style="width:180px">Lo que dijo</th><th style="width:145px">Lo que quiere decir</th><th>Qué contestas</th></tr></thead>
     <tbody>
-      <tr><td><strong>«Está muy caro.»</strong></td><td>No ve el valor, o lo compara con otra cosa</td><td>Si yo te demuestro que el plan cubre gimnasio, clases, alberca, app, toallas y tu Body Test —y que el costo por día es menor a lo que ya gastas cuando el objetivo se pospone—, entonces tú te inscribes hoy.</td></tr>
-      <tr><td><strong>«Lo voy a pensar.»</strong></td><td>Falta algo que no te dijo. Pregúntalo</td><td>Claro. Solo para no dejarte con dudas: ¿qué es lo que vas a pensar exactamente? … Si yo te resuelvo eso hoy, ¿dejamos hecha la inscripción?</td></tr>
-      <tr><td><strong>«Luego regreso.»</strong></td><td>Es un no cortés, salvo que le pongas fecha</td><td>Perfecto. ¿Regresas el jueves o el sábado? Te aparto tu Body Test para ese día y llegas directo a entrenar.</td></tr>
-      <tr><td><strong>«Tengo que consultarlo con mi pareja.»</strong></td><td>No calificaste la D de decisión</td><td>Me parece bien, es una decisión de los dos. ¿Qué te parece si vienen juntos mañana y les muestro el club a los dos? Así deciden con la misma información.</td></tr>
-      <tr><td><strong>«No tengo tiempo.»</strong></td><td>No cree que le vaya a caber en su vida</td><td>Eso es justo lo que quiero resolverte. Si yo te demuestro que con tres sesiones de veinticinco minutos a la semana llegas a tu objetivo, ¿empezamos hoy?</td></tr>
-      <tr><td><strong>«Tengo miedo de lesionarme.»</strong></td><td>Necesita saber que no estará sola</td><td>Si yo te demuestro que el Body Test, el paramédico en piso y un arranque guiado existen exactamente para que entrenes con criterio, entonces agendamos tu valoración y dejamos hecha la inscripción.</td></tr>
-      <tr><td><strong>«Voy a comparar con otro gimnasio.»</strong></td><td>Te está pidiendo el argumento para no hacerlo</td><td>Me parece sano. Cuando compares, checa tres cosas: si la alberca tiene restricción de horario, si las clases se reservan o se hacen fila, y si te dan una valoración de arranque. Si aquí las tres te convienen, ¿cerramos hoy?</td></tr>
-      <tr><td><strong>«Ya fui socio y lo dejé.»</strong></td><td>La objeción es el motivo de aquella baja</td><td>Cuéntame qué pasó la vez pasada. … Eso cambió: [hecho concreto y verificable]. Si te demuestro que hoy no te va a volver a pasar, ¿lo retomamos?</td></tr>
+      <tr><td><strong>«Está muy caro.»</strong></td><td>No ve el valor, o lo compara con otra cosa</td><td>Si yo te demuestro que el plan cubre gimnasio, clases, alberca, app, toallas y tu Body Test, y que el costo por día es menor a lo que ya gastas cuando lo pospones, entonces tú te inscribes hoy.</td></tr>
+      <tr><td><strong>«Lo voy a pensar.»</strong></td><td>Le falta algo que no te dijo</td><td>Claro. Para no dejarte con dudas: ¿qué es lo que vas a pensar? … Si te lo resuelvo hoy, ¿dejamos hecha la inscripción?</td></tr>
+      <tr><td><strong>«Luego regreso.»</strong></td><td>Es un no, salvo que le pongas fecha</td><td>Perfecto. ¿Regresas el jueves o el sábado? Te aparto tu Body Test para ese día.</td></tr>
+      <tr><td><strong>«Tengo que consultarlo.»</strong></td><td>No preguntaste quién decide</td><td>Me parece bien. ¿Vienen juntos mañana y les muestro el club a los dos? Así deciden con la misma información.</td></tr>
+      <tr><td><strong>«No tengo tiempo.»</strong></td><td>No cree que le vaya a caber</td><td>Eso es justo lo que quiero resolverte. Si te demuestro que con tres sesiones de veinticinco minutos llegas a tu objetivo, ¿empezamos hoy?</td></tr>
+      <tr><td><strong>«Me da miedo lesionarme.»</strong></td><td>Necesita saber que no estará sola</td><td>Si te demuestro que el Body Test, el paramédico y un arranque guiado existen para eso, agendamos tu valoración y dejamos hecha la inscripción.</td></tr>
+      <tr><td><strong>«Voy a comparar.»</strong></td><td>Te pide el argumento para no hacerlo</td><td>Me parece sano. Cuando compares, checa tres cosas: si la alberca tiene restricción de horario, si las clases se reservan o se hace fila, y si te dan una valoración de arranque.</td></tr>
+      <tr><td><strong>«Ya fui socio y lo dejé.»</strong></td><td>El no es el motivo de aquella baja</td><td>Cuéntame qué pasó. … Eso cambió: [hecho concreto]. Si te demuestro que hoy no te vuelve a pasar, ¿lo retomamos?</td></tr>
     </tbody>
   </table></div>
-
-  <div class="avoid">
-    <span class="t">Evita</span>
-    <ul>
-      <li>Discutir o interrumpir la objeción.</li>
-      <li>Inventar descuentos que no están autorizados.</li>
-      <li>Aceptar «luego regreso» sin una siguiente acción con fecha.</li>
-    </ul>
-  </div>
-
-  <!-- 9 -->
-  <h2 class="s"><span class="n">09</span>Paso 06 · Cerrar</h2>
-  <p class="lead"><strong>Objetivo:</strong> confirmar la decisión y los términos.</p>
-  <ul class="pl">
-    <li>Usa el cierre que corresponde a la persona (apartado 12).</li>
-    <li>Confirma plan, importes, promoción, forma de pago, periodicidad, vigencia y fecha de inicio.</li>
-    <li>Pide identificación, correo y contacto de emergencia.</li>
-    <li>Pregunta por un referido.</li>
-    <li><strong>El alta en el sistema ocurre después del sí</strong>, nunca antes.</li>
-  </ul>
-
-  <h3 class="ss">Los cinco cierres</h3>
-  <div class="tw"><table>
-    <thead><tr><th style="width:120px">Tipo</th><th style="width:210px">Cuándo</th><th>Di esto</th></tr></thead>
-    <tbody>
-      <tr><td class="c">Directo</td><td>Con quien ya asintió dos veces. Afirmación, no pregunta</td><td>Dame tu identificación y empezamos tu trámite.</td></tr>
-      <tr><td class="c">De elección</td><td>Cuando duda del cómo, no del qué</td><td>¿Prefieres pagar con crédito o con débito?</td></tr>
-      <tr><td class="c">De prueba</td><td>Para medir disposición sin poner el contrato encima</td><td>¿Agendamos tu clase muestra? ¿Cómo se sintió el recorrido?</td></tr>
-      <tr><td class="c">De resumen</td><td>Con quien necesita oír que todo cuadra</td><td>Para resumir: el plan cubre A, B y C, el cargo es [importe] cada [periodo] e inicias [fecha]. ¿Falta algún dato para concretar?</td></tr>
-      <tr><td class="c">De acuerdo</td><td>Después de una presentación clara</td><td>Bien, de acuerdo con lo que comentamos, arrancamos con este plan.</td></tr>
-    </tbody>
-  </table></div>
-
-  <!-- 10 -->
-  <h2 class="s"><span class="n">10</span>Paso 07 · Activar y acompañar</h2>
-  <p class="lead"><strong>Objetivo:</strong> que use la membresía desde el día uno. La posventa es parte de la
-    venta.</p>
-  <ul class="pl">
-    <li>Firma, escaneo de identificación y envío de documentos al correo.</li>
-    <li><strong>Descarga y activa la aplicación con la persona presente.</strong> No se deja «para que la vea en casa».</li>
-    <li>Demuestra acceso por código, reserva de clases, rutinas y toallas. Que lo haga ella una vez.</li>
-    <li><strong>Agenda el Body Test antes de que se retire.</strong> Sin fecha, no se retira.</li>
-    <li>Reserva con ella su primera clase, en su horario declarado.</li>
-    <li>Preséntala con un entrenador y, si tiene hijos, con FitKidz.</li>
-    <li>Primer seguimiento: cómo se ha sentido. Segundo seguimiento: invitación a un acompañante.</li>
-  </ul>
-  <div class="say">
-    <span class="t">Di esto</span>
-    <p><q>Antes de que te vayas agendamos tu Body Test: es el punto de partida para que tu plan de entrenamiento
-      sí te lleve al objetivo que me platicaste.</q></p>
-  </div>
-  <div class="avoid">
-    <span class="t">Evita</span>
-    <ul><li>Dejar la app para después.</li><li>No agendar el Body Test.</li><li>Desaparecer después del cobro.</li></ul>
-  </div>
+  <div class="avoid"><span class="t">Evita</span>
+    <ul><li>Discutir o interrumpirla.</li><li>Inventar descuentos.</li><li>Aceptar «luego regreso» sin fecha.</li></ul></div>
 
   <!-- 11 -->
-  <h2 class="s"><span class="n">11</span>Calificar: las 3 D</h2>
-  <p class="lead">Dinero, decisión y deseo. Determinan <strong>el ritmo del cierre</strong>, no si conduces o no
-    la visita. Toda persona recibe la misma visita.</p>
-
-  <div class="fig">
-    <svg viewBox="0 0 760 200" role="img" aria-label="Clasificación por las tres D">
-      <text x="8" y="18" font-size="10" font-weight="800" letter-spacing="2" fill="#6B6B68">CUÁNTAS DE LAS TRES TIENE</text>
-      <g font-family="system-ui">
-        <rect x="8" y="30" width="180" height="150" rx="4" fill="#E6282A"/>
-        <text x="24" y="54" font-size="26" font-weight="800" fill="#fff">3</text>
-        <text x="24" y="78" font-size="12.5" font-weight="800" fill="#fff">CLIENTE</text>
-        <text x="24" y="100" font-size="11" fill="#FFD9D9">Dinero, decisión y deseo.</text>
-        <text x="24" y="116" font-size="11" fill="#FFD9D9">Cierra directo, hoy.</text>
-        <text x="24" y="144" font-size="10.5" font-weight="700" fill="#fff">No lo hagas esperar.</text>
-        <text x="24" y="160" font-size="10.5" fill="#FFD9D9">Alargar el recorrido enfría.</text>
-
-        <rect x="196" y="30" width="180" height="150" rx="4" fill="#1D1D1B"/>
-        <text x="212" y="54" font-size="26" font-weight="800" fill="#E6282A">2</text>
-        <text x="212" y="78" font-size="12.5" font-weight="800" fill="#fff">PROSPECTO</text>
-        <text x="212" y="100" font-size="11" fill="#A8A8A6">Le falta una.</text>
-        <text x="212" y="116" font-size="11" fill="#A8A8A6">Averigua cuál y trabájala.</text>
-        <text x="212" y="144" font-size="10.5" font-weight="700" fill="#fff">Si falta decisión:</text>
-        <text x="212" y="160" font-size="10.5" fill="#A8A8A6">tu cierre es traer a quien decide.</text>
-
-        <rect x="384" y="30" width="180" height="150" rx="4" fill="#6B6B68"/>
-        <text x="400" y="54" font-size="26" font-weight="800" fill="#fff">1</text>
-        <text x="400" y="78" font-size="12.5" font-weight="800" fill="#fff">SOSPECHOSO</text>
-        <text x="400" y="100" font-size="11" fill="#EDEDEB">Solo tiene una.</text>
-        <text x="400" y="116" font-size="11" fill="#EDEDEB">Normalmente deseo.</text>
-        <text x="400" y="144" font-size="10.5" font-weight="700" fill="#fff">Construye valor.</text>
-        <text x="400" y="160" font-size="10.5" fill="#EDEDEB">Cerrar aquí quema al prospecto.</text>
-
-        <rect x="572" y="30" width="180" height="150" rx="4" fill="#F5F5F4" stroke="#E5E5E3"/>
-        <text x="588" y="54" font-size="26" font-weight="800" fill="#A8A8A6">0</text>
-        <text x="588" y="78" font-size="12.5" font-weight="800" fill="#6B6B68">MIRADOR</text>
-        <text x="588" y="100" font-size="11" fill="#6B6B68">Vino a ver.</text>
-        <text x="588" y="116" font-size="11" fill="#6B6B68">Trátalo igual de bien.</text>
-        <text x="588" y="144" font-size="10.5" font-weight="700" fill="#1D1D1B">Pide el referido.</text>
-        <text x="588" y="160" font-size="10.5" fill="#6B6B68">Y registra el contacto.</text>
-      </g>
-    </svg>
-    <div class="cap">La calificación es una nota tuya. No se le dice a la persona ni cambia el trato que recibe.</div>
-  </div>
+  <h2 class="s"><span class="n">11</span>Cuando dice que sí · posventa</h2>
+  <p class="lead">La posventa es parte de la venta.</p>
+  <ul class="pl">
+    <li>Firma, escaneo de identificación y envío de documentos al correo.</li>
+    <li><strong>Instala la app con ella ahí.</strong> No la dejes para que la vea en su casa.</li>
+    <li>Enséñale a entrar con el código, a reservar clase, a pedir toallas. Que lo haga ella una vez.</li>
+    <li><strong>Agenda su Body Test antes de que se vaya</strong>, con día y hora.</li>
+    <li>Reserva con ella su primera clase, en el horario que dijo.</li>
+    <li>Preséntala con un entrenador. Si tiene hijos, con FitKidz.</li>
+    <li>Primer seguimiento: cómo se ha sentido. Segundo: invítala a traer a alguien.</li>
+  </ul>
+  <div class="say"><span class="t">Di esto</span>
+    <p><q>Antes de que te vayas agendamos tu Body Test. Es el punto de partida para que tu entrenamiento sí te
+      lleve a lo que me platicaste.</q></p></div>
+  <div class="avoid"><span class="t">Evita</span>
+    <ul><li>Dejar la app para después.</li><li>No agendar el Body Test.</li><li>Desaparecer después del cobro.</li></ul></div>
 
   <!-- 12 -->
-  <h2 class="s"><span class="n">12</span>Leer a la persona: la matriz de color</h2>
-  <p class="lead">Dos ejes: qué tan directa es al expresar lo que quiere (<strong>asertividad</strong>) y cuánta
-    atención pone en las personas (<strong>sensibilidad</strong>).</p>
-
-  <div class="fig">
-    <svg viewBox="0 0 720 430" role="img" aria-label="Matriz de color: rojo, amarillo, verde y azul">
-      <g font-family="system-ui">
-        <text x="8" y="16" font-size="10" font-weight="800" letter-spacing="1.6" fill="#6B6B68">↑ MÁS ASERTIVIDAD</text>
-        <text x="560" y="424" font-size="10" font-weight="800" letter-spacing="1.6" fill="#6B6B68">MÁS SENSIBILIDAD →</text>
-
-        <rect x="30" y="26" width="325" height="178" rx="4" fill="#FFF5F5" stroke="#F5C6C4"/>
-        <text x="48" y="50" font-size="12.5" font-weight="800" fill="#B3261E">ROJO · resultados y rapidez</text>
-        <text x="48" y="72" font-size="11" fill="#3A3A38">Va al grano. Quiere control y no quiere rodeos.</text>
-        <text x="48" y="94" font-size="11" font-weight="700" fill="#1D1D1B">Trátalo: directo, breve, respeta su tiempo.</text>
-        <text x="48" y="114" font-size="11" font-weight="700" fill="#1D1D1B">Cierra: directo. Afirmación, no pregunta.</text>
-        <text x="48" y="140" font-size="11" fill="#3A3A38">«Dame tu identificación y empezamos.</text>
-        <text x="48" y="154" font-size="11" fill="#3A3A38">Este plan cubre lo que viniste a resolver.»</text>
-        <text x="48" y="180" font-size="10.5" font-weight="700" fill="#B3261E">Evita: historias largas y menú de tres opciones.</text>
-
-        <rect x="365" y="26" width="325" height="178" rx="4" fill="#FFF7E8" stroke="#FFD9A0"/>
-        <text x="383" y="50" font-size="12.5" font-weight="800" fill="#9A6B00">AMARILLO · energía y pertenencia</text>
-        <text x="383" y="72" font-size="11" fill="#3A3A38">Quiere sentirse especial y parte de algo.</text>
-        <text x="383" y="94" font-size="11" font-weight="700" fill="#1D1D1B">Trátalo: entusiasta, cercano, hazlo parte.</text>
-        <text x="383" y="114" font-size="11" font-weight="700" fill="#1D1D1B">Cierra: de elección. «¿Cuál?», no «¿sí?».</text>
-        <text x="383" y="140" font-size="11" fill="#3A3A38">«Tú eliges: ¿el plan de este club o el que</text>
-        <text x="383" y="154" font-size="11" fill="#3A3A38">te abre toda la red?»</text>
-        <text x="383" y="180" font-size="10.5" font-weight="700" fill="#9A6B00">Evita: frialdad y fichas técnicas interminables.</text>
-
-        <rect x="30" y="212" width="325" height="178" rx="4" fill="#F5F5F4" stroke="#E5E5E3"/>
-        <text x="48" y="236" font-size="12.5" font-weight="800" fill="#1F4E79">AZUL · datos, orden y certeza</text>
-        <text x="48" y="258" font-size="11" fill="#3A3A38">Quiere que los números cuadren.</text>
-        <text x="48" y="280" font-size="11" font-weight="700" fill="#1D1D1B">Trátalo: preciso. Vigencias, cargos, comparativo.</text>
-        <text x="48" y="300" font-size="11" font-weight="700" fill="#1D1D1B">Cierra: de resumen. Hechos y luego la acción.</text>
-        <text x="48" y="326" font-size="11" fill="#3A3A38">«Para resumir: cubre A, B y C, el cargo es</text>
-        <text x="48" y="340" font-size="11" fill="#3A3A38">[importe] cada [periodo]. ¿Falta algún dato?»</text>
-        <text x="48" y="366" font-size="10.5" font-weight="700" fill="#1F4E79">Evita: promesas vagas y saltarte el desglose.</text>
-
-        <rect x="365" y="212" width="325" height="178" rx="4" fill="#EDF8F1" stroke="#CDE6D6"/>
-        <text x="383" y="236" font-size="12.5" font-weight="800" fill="#215F3F">VERDE · seguridad y vínculo</text>
-        <text x="383" y="258" font-size="11" fill="#3A3A38">No quiere sentirse presionada.</text>
-        <text x="383" y="280" font-size="11" font-weight="700" fill="#1D1D1B">Trátala: cálido, paciente, voz más suave.</text>
-        <text x="383" y="300" font-size="11" font-weight="700" fill="#1D1D1B">Cierra: acompañando, en voz pasiva.</text>
-        <text x="383" y="326" font-size="11" fill="#3A3A38">«Entiendo que es una decisión importante. Lo</text>
-        <text x="383" y="340" font-size="11" fill="#3A3A38">que sí podemos es dejarlo listo para empezar</text>
-        <text x="383" y="354" font-size="11" fill="#3A3A38">con calma esta semana. ¿Qué te parece?»</text>
-        <text x="383" y="378" font-size="10.5" font-weight="700" fill="#215F3F">Evita: presión, escasez agresiva, cierre militar.</text>
-      </g>
-    </svg>
-    <div class="cap">No se clasifica a nadie en voz alta. La matriz cambia tu ritmo y tu tipo de cierre, nada más.</div>
+  <h2 class="s"><span class="n">12</span>Checklist de visita</h2>
+  <p class="lead">Lo único que llevas en la mano. Si al final quedan casillas vacías, ahí está lo que hay que
+    corregir la próxima vez.</p>
+  <div class="chk">
+    <div class="r"><div class="b"></div><div class="n">01</div><div>Saludé de pie, dije mi nombre, usé el suyo y pedí permiso para preguntar.</div></div>
+    <div class="r"><div class="b"></div><div class="n">02</div><div>Pregunté los cinco niveles, incluido qué podría detenerla.</div></div>
+    <div class="r"><div class="b"></div><div class="n">02</div><div>Sé si ya fue socia y por qué lo dejó.</div></div>
+    <div class="r"><div class="b"></div><div class="n">03</div><div>Le mostré cómo se entra con el código y empecé por vestidores.</div></div>
+    <div class="r"><div class="b"></div><div class="n">03</div><div>Un entrenador le habló cinco minutos de su objetivo.</div></div>
+    <div class="r"><div class="b"></div><div class="n">03</div><div>Vio en vivo la clase que más le conviene.</div></div>
+    <div class="r"><div class="b"></div><div class="n">03</div><div>Hice un precierre en cada área fuerte.</div></div>
+    <div class="r"><div class="b"></div><div class="n">04</div><div>Repetí en voz alta lo que me dijo y coticé un plan.</div></div>
+    <div class="r"><div class="b"></div><div class="n">05</div><div>Anoté la objeción con sus palabras antes de contestar.</div></div>
+    <div class="r"><div class="b"></div><div class="n">06</div><div>Cerré una segunda vez.</div></div>
+    <div class="r"><div class="b"></div><div class="n">07</div><div>Dejé la app funcionando y el Body Test con día y hora.</div></div>
+    <div class="r"><div class="b"></div><div class="n">07</div><div>Pedí un referido.</div></div>
+    <div class="r"><div class="b"></div><div class="n">—</div><div>Registré qué pasó: se inscribió, o qué sigue y cuándo.</div></div>
   </div>
 
   <!-- 13 -->
-  <h2 class="s"><span class="n">13</span>Traducir: característica, ventaja y beneficio</h2>
-  <p class="lead">Una característica es un hecho. Una ventaja es lo que ese hecho permite. Un beneficio es lo
-    que la persona gana <strong>en su vida</strong>. Solo el tercero vende.</p>
-
+  <h2 class="s"><span class="n">13</span>Los siete errores que cuestan ventas</h2>
   <div class="tw"><table>
-    <thead><tr><th style="width:150px">Característica</th><th style="width:230px">Ventaja</th><th>Beneficio · lo que se dice</th></tr></thead>
+    <thead><tr><th style="width:42px">Nº</th><th style="width:235px">El error</th><th>Qué pasa y cómo se corrige</th></tr></thead>
     <tbody>
-      <tr><td><strong>Reserva de clases en la app</strong></td><td>Apartas tu lugar antes de salir de casa</td><td>Nunca llegas y te quedas fuera. Tu clase de las siete es tuya aunque el club esté lleno.</td></tr>
-      <tr><td><strong>Acceso por código</strong></td><td>Entras sin credencial ni fila</td><td>Cinco segundos entre la puerta y el vestidor. Los días que vas con prisa, entras igual.</td></tr>
-      <tr><td><strong>Servicio de toallas</strong></td><td>No cargas nada</td><td>Puedes venir directo de la oficina con lo que traes puesto. Una excusa menos para no venir.</td></tr>
-      <tr><td><strong>Body Test</strong></td><td>Mides tu punto de partida</td><td>Sabes exactamente de dónde arrancas y en tres meses ves el cambio en números, no en sensación.</td></tr>
-      <tr><td><strong>Paramédico en piso</strong></td><td>Hay quien sabe qué hacer si algo pasa</td><td>Entrenas fuerte con la tranquilidad de que no estás sola si algo se complica.</td></tr>
-      <tr><td><strong>Red multiclub</strong></td><td>Entrenas en más de una sede</td><td>El día que te quedas en la oficina hasta tarde, entrenas cerca del trabajo en vez de perder el día.</td></tr>
-      <tr><td><strong>FitKidz</strong></td><td>Tus hijos tienen actividad mientras entrenas</td><td>Dejas de elegir entre cuidarlos y cuidarte. Vienen contigo y los dos salen mejor.</td></tr>
+      <tr><td class="c">1</td><td><strong>Dar el precio en la puerta</strong></td><td>Compara un número contra nada. Pospónlo treinta segundos con una razón que le convenga a ella.</td></tr>
+      <tr><td class="c">2</td><td><strong>Recorrer sin haber preguntado</strong></td><td>El recorrido no conecta con nada. Ninguna área se muestra sin motivo.</td></tr>
+      <tr><td class="c">3</td><td><strong>Hablar de metros y aparatos</strong></td><td>Le das datos del club. Llega hasta el beneficio (apartado 07).</td></tr>
+      <tr><td class="c">4</td><td><strong>No preguntar quién decide</strong></td><td>Cierras con quien no puede decir que sí. Pregúntalo en el paso 02.</td></tr>
+      <tr><td class="c">5</td><td><strong>Contestar la objeción de inmediato</strong></td><td>Ella se defiende. Escucha, anota y hasta entonces contesta.</td></tr>
+      <tr><td class="c">6</td><td><strong>Aceptar «lo voy a pensar» sin fecha</strong></td><td>Es un no diferido. Toda visita termina con inscripción o con fecha.</td></tr>
+      <tr><td class="c">7</td><td><strong>Cerrar y desaparecer</strong></td><td>Socia que no usa lo que compró y cancela al tercer mes. App y Body Test se dejan hechos hoy.</td></tr>
     </tbody>
   </table></div>
 
-  <div class="rule">
-    <div class="k">La prueba de los tres segundos</div>
-    <p>Si después de decir una característica la persona podría responder <strong>«¿y eso a mí qué?»</strong>,
-      no terminaste la frase. Sigue hasta el beneficio.</p>
-  </div>
-
-  <!-- 14 -->
-  <h2 class="s"><span class="n">14</span>Los siete errores que cuestan ventas</h2>
-  <div class="tw"><table>
-    <thead><tr><th style="width:46px">Nº</th><th style="width:250px">El error</th><th>Qué produce y cómo se corrige</th></tr></thead>
-    <tbody>
-      <tr><td class="c">1</td><td><strong>Dar el precio en la puerta</strong></td><td>La persona compara un número contra nada. Pospónlo treinta segundos con una razón que la beneficie.</td></tr>
-      <tr><td class="c">2</td><td><strong>Recorrer sin haber preguntado</strong></td><td>Un recorrido genérico que no conecta con nada. Ninguna área se muestra sin motivo.</td></tr>
-      <tr><td class="c">3</td><td><strong>Hablar de metros y aparatos</strong></td><td>Características sin traducir. Aplica la prueba de los tres segundos.</td></tr>
-      <tr><td class="c">4</td><td><strong>No preguntar quién decide</strong></td><td>Cierras con quien no puede decir que sí. Califica la D de decisión en el paso 02.</td></tr>
-      <tr><td class="c">5</td><td><strong>Rebatir la objeción de inmediato</strong></td><td>La persona se defiende. Escucha, anota literal, y hasta entonces responde.</td></tr>
-      <tr><td class="c">6</td><td><strong>Aceptar «lo voy a pensar» sin fecha</strong></td><td>Es un no diferido. Toda visita termina con contratación o con siguiente acción y fecha.</td></tr>
-      <tr><td class="c">7</td><td><strong>Cerrar y desaparecer</strong></td><td>Socio que no usa lo que compró y cancela al tercer mes. La app y el Body Test se dejan hechos hoy.</td></tr>
-    </tbody>
-  </table></div>
-
-  <!-- 15 -->
-  <h2 class="s"><span class="n">15</span>La lista de la visita</h2>
-  <p class="lead">Lo único que se lleva en la mano. Si al final quedan casillas vacías, ahí está lo que hay que
-    corregir la próxima vez.</p>
-
-  <div class="chk">
-    <div class="r"><div class="b"></div><div class="n">01</div><div>Saludé de pie, me presenté, usé su nombre y pedí permiso para preguntar.</div></div>
-    <div class="r"><div class="b"></div><div class="n">02</div><div>Recorrí el embudo completo, incluida la pregunta del freno, antes de mostrar nada.</div></div>
-    <div class="r"><div class="b"></div><div class="n">02</div><div>Identifiqué la pista: venta nueva o reactivación. Si fue socia, sé por qué se fue.</div></div>
-    <div class="r"><div class="b"></div><div class="n">03</div><div>Mostré el acceso por código antes de cruzar y empecé por vestidores.</div></div>
-    <div class="r"><div class="b"></div><div class="n">03</div><div>Un entrenador le habló cinco minutos con su objetivo en la mano.</div></div>
-    <div class="r"><div class="b"></div><div class="n">03</div><div>Vio en vivo la clase de mayor impacto, dentro o desde la puerta del salón.</div></div>
-    <div class="r"><div class="b"></div><div class="n">03</div><div>Hice un precierre en cada estación fuerte y el cierre de tour.</div></div>
-    <div class="r"><div class="b"></div><div class="n">04</div><div>Resumí en voz alta y coticé un plan, no un menú.</div></div>
-    <div class="r"><div class="b"></div><div class="n">05</div><div>Anoté la objeción con sus palabras antes de responderla.</div></div>
-    <div class="r"><div class="b"></div><div class="n">06</div><div>Hice un segundo intento de cierre.</div></div>
-    <div class="r"><div class="b"></div><div class="n">07</div><div>Dejé la app instalada y funcionando, y el Body Test agendado con fecha.</div></div>
-    <div class="r"><div class="b"></div><div class="n">07</div><div>Pedí un referido.</div></div>
-    <div class="r"><div class="b"></div><div class="n">—</div><div>Registré el resultado: contratación o siguiente acción con fecha.</div></div>
+  <!-- anexo · fuera del cuerpo del manual -->
+  <div class="anexo">
+    <div class="k">Anexo · No es material de venta</div>
+    <h2>Correspondencia con los procedimientos</h2>
+    <p>Esta tabla es para gerencia y capacitación. <strong>El asesor no la necesita</strong>: el manual se usa
+      sin ella. Sirve para auditar que lo que se entrena corresponde con lo que la operación exige.</p>
+    <div class="tw"><table>
+      <thead><tr><th style="width:190px">Paso del método</th><th style="width:140px">Procedimiento</th><th style="width:88px">Pasos</th><th>Qué cubre ahí</th></tr></thead>
+      <tbody>
+        <tr><td class="c">01 Recibir y conectar</td><td>SOP/SW/0201</td><td>17 a 27</td><td>Recepción, confirmación del brief y autorización de salud</td></tr>
+        <tr><td class="c">02 Descubrir</td><td>SOP/SW/0201</td><td>28 a 32</td><td>Pista, calificación de las 3 D y freno</td></tr>
+        <tr><td class="c">03 Recorrer</td><td>SOP/SW/0201</td><td>33 a 47</td><td>Vestidores, áreas, entrenador y clase en vivo</td></tr>
+        <tr><td class="c">04 Proponer</td><td>SOP/SW/0201</td><td>48 a 52</td><td>Resumen, cotización y primer cierre</td></tr>
+        <tr><td class="c">05 Resolver</td><td>SOP/SW/0201</td><td>53 a 59</td><td>Objeción, boomerang y segundo cierre</td></tr>
+        <tr><td class="c">06 Cerrar</td><td>SOP/SW/0201</td><td>60 a 62</td><td>Términos y entrega a contratación</td></tr>
+        <tr><td class="c">07 Activar</td><td>SOP/SW/0301</td><td>24 a 32</td><td>App, primera clase y valoración agendada</td></tr>
+      </tbody>
+    </table></div>
+    <p>El cuestionario que responde el prospecto antes de venir está en SOP/SW/0101, 0102 y 0103, según el canal
+      por el que llegó.</p>
+    <p><strong>Si este manual y un procedimiento dicen cosas distintas, rige el procedimiento.</strong> Este
+      manual no cambia ninguna obligación.</p>
   </div>
 
   <p style="margin-top:2.6rem;font-size:.8rem;color:var(--g4);border-top:1px solid var(--g2);padding-top:1rem">
-    <strong>MV/SW/01 · Manual de Ventas de Sports World · versión 1.0 · uso interno.</strong><br>
-    Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.<br>
-    Complementa a los procedimientos SOP/SW/0101 a SOP/SW/0301. Ante discrepancia, rige el procedimiento.
+    <strong>MV/SW/01 · Manual de Ventas de Sports World · versión 2.0 · uso interno.</strong><br>
+    Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.
   </p>
 
 </div>
