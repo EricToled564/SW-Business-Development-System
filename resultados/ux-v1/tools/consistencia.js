@@ -336,6 +336,27 @@ regla("R15 · línea base de KPIs", (falla) => {
     }
 });
 
+/* ─────────── R18 · Páginas del Proceso Comercial ─────────── */
+// Los procedimientos del Proceso Comercial se publican con composición propia
+// (type: "page"), no como markdown. La invariante es la misma que para el resto
+// del depósito: lo registrado en app.js existe en disco y está en el índice.
+regla("R18 · páginas del Proceso Comercial", (falla) => {
+  marcar("app.js");
+  marcar("indice.es.md");
+  const idx = texto["indice.es.md"] || "";
+  const re = /\{ id: "([a-z0-9-]+)", type: "page"[^}]*?src: "([^"]+)"/g;
+  let m, n = 0;
+  while ((m = re.exec(app))) {
+    const [, id, src] = m;
+    n++;
+    if (!fs.existsSync(path.join(WEBAPP, src))) falla(id, 0, `registrado en app.js pero sin archivo en webapp/${src}`);
+    if (!idx.includes(`#${id}`)) falla(id, 0, "sin entrada en el índice");
+  }
+  if (!n) falla("app.js", 0, "no hay páginas del Proceso Comercial registradas");
+  if (!/const GROUP_ORDER = \[[^\]]*"proceso"/.test(app))
+    falla("app.js", 0, "el grupo «proceso» no está en GROUP_ORDER");
+});
+
 /* ─────────── Reporte ─────────── */
 const totalLineas = archivos.reduce((a, f) => a + texto[f].split("\n").length, 0);
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);

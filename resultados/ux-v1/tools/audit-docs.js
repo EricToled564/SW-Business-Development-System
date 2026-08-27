@@ -219,7 +219,7 @@ const docIds = new Set(DOCS.map((d) => d.id));
 function checkFileIntegrity() {
   const registeredEsFiles = new Set();
   for (const d of DOCS) {
-    if (d.type === "embed" || d.type === "ref") continue;
+    if (d.type === "embed" || d.type === "ref" || d.type === "page") continue;
     const esFile = `${d.id}.es.md`;
     registeredEsFiles.add(esFile);
     if (!fs.existsSync(path.join(DOCS_DIR, esFile)))
@@ -387,7 +387,7 @@ checkFileIntegrity();
 const glossary = glossaryInfo();
 
 for (const d of DOCS) {
-  if (d.type === "embed" || d.type === "ref") continue;
+  if (d.type === "embed" || d.type === "ref" || d.type === "page") continue;
   for (const lang of ["es", "en"]) {
     const text = readDoc(d.id, lang);
     if (!text) continue;
@@ -414,7 +414,7 @@ if (OUT_JSON) {
 } else {
   const C = { red: "\x1b[31m", yel: "\x1b[33m", grn: "\x1b[32m", dim: "\x1b[2m", bold: "\x1b[1m", off: "\x1b[0m" };
   console.log(`\n${C.bold}Auditoría de documentación — Sports World México${C.off}`);
-  console.log(`${C.dim}${DOCS.filter((d) => d.type !== "embed").length} documentos · ${glossary.count} términos en glosario${C.off}\n`);
+  console.log(`${C.dim}${DOCS.filter((d) => d.type !== "embed" && d.type !== "page").length} documentos · ${glossary.count} términos en glosario${C.off}\n`);
   const order = ["archivos", "referencias", "enlaces", "fuente-verdad", "trazabilidad", "marcadores", "glosario"];
   for (const check of order) {
     const list = byCheck[check] || [];
@@ -437,7 +437,7 @@ if (OUT_JSON) {
 function mdReport() {
   let out = `# Reporte de auditoría de documentación\n\n`;
   out += `_Generado por \`tools/audit-docs.js\`._\n\n`;
-  out += `**Resumen:** ${errors.length} errores · ${warns.length} avisos · ${DOCS.filter((d) => d.type !== "embed").length} documentos · ${glossary.count} términos de glosario.\n\n`;
+  out += `**Resumen:** ${errors.length} errores · ${warns.length} avisos · ${DOCS.filter((d) => d.type !== "embed" && d.type !== "page").length} documentos · ${glossary.count} términos de glosario.\n\n`;
   const order = ["archivos", "referencias", "enlaces", "fuente-verdad", "trazabilidad", "marcadores", "glosario"];
   for (const check of order) {
     const list = byCheck[check] || [];
