@@ -416,7 +416,13 @@ regla("R20 · el Manual de Ventas cubre todo paso a cargo del asesor", (falla) =
   }
 
   // 4 · Los pasos reales de cada procedimiento, con su responsable.
-  const ARCHIVO = { "SOP/SW/0201": "sop-0201.html", "SOP/SW/0301": "sop-0301.html" };
+  const ARCHIVO = {
+      "SOP/SW/0101": "sop-0101.html",
+      "SOP/SW/0102": "sop-0102.html",
+      "SOP/SW/0103": "sop-0103.html",
+      "SOP/SW/0201": "sop-0201.html",
+      "SOP/SW/0301": "sop-0301.html",
+    };
   for (const [clave, archivo] of Object.entries(ARCHIVO)) {
     const ruta = path.join(PROC, archivo);
     if (!fs.existsSync(ruta)) { falla(`proceso/${archivo}`, 0, "no existe"); continue; }
