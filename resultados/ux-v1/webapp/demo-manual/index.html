@@ -98,7 +98,7 @@
 </div>
 
 <script>
-/* ── Entrenador de Ventas · demo del Manual MV/SW/01 ───────────────────────
+/* ── Entrenador de Ventas · práctica del Manual de Ventas ──────────────────
    Mismo lenguaje visual que el Cuestionario Inteligente: paleta de marca,
    barra de progreso de 5 px, rótulos en versalitas y botón rojo de acción. */
 
@@ -304,7 +304,7 @@ function render(){
 function home(){
   set(0);
   view.innerHTML =
-    '<div class="kick"><b>Manual de Ventas · MV/SW/01</b></div>' +
+    '<div class="kick"><b>Manual de Ventas de Sports World</b></div>' +
     '<h1>Entrenador de ventas.</h1>' +
     '<p>Tres ejercicios cortos para practicar el método antes de tu próxima visita. No hay calificación que nadie más vea: es para ti.</p>' +
     '<div class="modes">' +
@@ -371,7 +371,7 @@ function visita(){
 function resultado(){
   set(100);
   var ok = S.aciertos.filter(Boolean).length;
-  var msg = ok===PASOS.length ? "Sin un solo tropiezo. Ese es el estándar."
+  var msg = ok===PASOS.length ? "Sin errores. Puedes conducir la visita completa."
           : ok>=7 ? "Buen dominio. Repasa los apartados de los que fallaste."
           : ok>=4 ? "Vas a medias. Vale la pena leer el manual completo una vez."
           : "Conviene sentarse con el manual antes de la próxima visita.";
@@ -382,7 +382,7 @@ function resultado(){
     h += '<div class="r ' + (S.aciertos[k]?'y':'n') + '"><span class="m">' + (S.aciertos[k]?'✓':'✕') +
          '</span><span>Paso ' + p.n + ' · ' + esc(p.t) + '</span></div>';
   });
-  h += '</div><p style="margin-top:1.2rem">El manual completo está en el depósito, en la sección del proceso comercial: <strong>MV/SW/01</strong>.</p>';
+  h += '</div><p style="margin-top:1.2rem">El manual completo es el <strong>Manual de Ventas de Sports World</strong>.</p>';
   view.innerHTML = h;
   nav.innerHTML = '<button class="btn gh" id="otra">← Volver al inicio</button><span class="spacer"></span>' +
                   '<button class="btn" id="rep">Repetir</button>';
@@ -413,7 +413,7 @@ function objecion(){
     '<div class="lbl">Antes de responder</div>' +
     '<p>Cállate, déjala terminar y <strong>anota la objeción con sus palabras exactas</strong>. Ese es el paso 1 del boomerang y el que casi nadie hace.</p>' +
     '<div class="say"><b>Boomerang · di esto</b><q>' + esc(o.b) + '</q></div>' +
-    '<div class="fb y" style="margin-top:1rem"><b>Y luego</b><p>Te callas. El silencio incomoda al asesor, no al cliente. Quien habla primero después de condicionar el sí, pierde la posición.</p></div>';
+    '<div class="fb y" style="margin-top:1rem"><b>Y luego</b><p>Te callas. Es normal que el silencio se sienta largo. Espera la respuesta: si retomas la palabra tú, la persona ya no tiene que contestar.</p></div>';
   nav.innerHTML = '<button class="btn gh" id="otra">← Otra objeción</button><span class="spacer"></span>' +
                   '<button class="btn" id="fin">Volver al inicio</button>';
   document.getElementById("otra").onclick = function(){ S.objSel=null; render(); };
