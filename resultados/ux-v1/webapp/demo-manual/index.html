@@ -371,7 +371,7 @@ function visita(){
 function resultado(){
   set(100);
   var ok = S.aciertos.filter(Boolean).length;
-  var msg = ok===PASOS.length ? "Sin un solo tropiezo. Ese es el estándar."
+  var msg = ok===PASOS.length ? "Sin errores. Puedes conducir la visita completa."
           : ok>=7 ? "Buen dominio. Repasa los apartados de los que fallaste."
           : ok>=4 ? "Vas a medias. Vale la pena leer el manual completo una vez."
           : "Conviene sentarse con el manual antes de la próxima visita.";
@@ -413,7 +413,7 @@ function objecion(){
     '<div class="lbl">Antes de responder</div>' +
     '<p>Cállate, déjala terminar y <strong>anota la objeción con sus palabras exactas</strong>. Ese es el paso 1 del boomerang y el que casi nadie hace.</p>' +
     '<div class="say"><b>Boomerang · di esto</b><q>' + esc(o.b) + '</q></div>' +
-    '<div class="fb y" style="margin-top:1rem"><b>Y luego</b><p>Te callas. El silencio incomoda al asesor, no al cliente. Quien habla primero después de condicionar el sí, pierde la posición.</p></div>';
+    '<div class="fb y" style="margin-top:1rem"><b>Y luego</b><p>Te callas. Es normal que el silencio se sienta largo. Espera la respuesta: si retomas la palabra tú, la persona ya no tiene que contestar.</p></div>';
   nav.innerHTML = '<button class="btn gh" id="otra">← Otra objeción</button><span class="spacer"></span>' +
                   '<button class="btn" id="fin">Volver al inicio</button>';
   document.getElementById("otra").onclick = function(){ S.objSel=null; render(); };
