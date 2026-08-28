@@ -32,6 +32,7 @@ Toda pieza —manual, cuestionario, procedimiento, capacitación, sitio— se es
 4. **Lenguaje neutro** al referirse a usuarios y prospectos; nunca "él" por defecto.
 5. **Cifras verificables, no adjetivos.** "Capacidad razonable" no sirve; hay que dar el número.
 6. Publicar conforme se termina cada bloque y avisar solo cuando ya esté en línea; no preguntar por mecánica de PRs.
+7. **Nada se corrige ni se produce sin confirmación expresa de Eric.** Analizar, diagnosticar y proponer sí; tocar un documento, un archivo o publicar, solo después de su «go». Rige todo el tiempo.
 
 ## Qué NO se toca
 
