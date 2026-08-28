@@ -843,6 +843,11 @@
       const x = e.target.closest("a.sw-x");
       if (x) { e.preventDefault(); loadDoc(x.dataset.go, true); return; }
       const rel = e.target.closest("a[href]");
+      if (rel && (rel.getAttribute("href") || "").charAt(0) === "#") {
+        e.preventDefault();
+        jumpTo((rel.getAttribute("href") || "").slice(1));
+        return;
+      }
       if (rel) {
         const archivo = (rel.getAttribute("href") || "").split("/").pop().split("#")[0];
         const hermano = DOCS.find(function (dd) { return dd.type === "page" && dd.src.split("/").pop() === archivo; });
