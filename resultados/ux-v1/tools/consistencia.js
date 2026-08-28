@@ -486,7 +486,7 @@ regla("R20 · el Manual de Ventas cubre todo paso a cargo del asesor", (falla) =
 
   // 6 · Ninguna referencia del cuerpo puede apuntar a un apartado inexistente.
   const cuerpo = mv.slice(0, mv.indexOf('<div class="anexo">'));
-  for (const m of cuerpo.matchAll(/apartados?\s+(\d\d)(?:\s*y\s*(\d\d))?/g))
+  for (const m of cuerpo.matchAll(/apartados?\s+(\d\d)(?:\s*y\s*(\d\d))?/gi))
     for (const ap of [m[1], m[2]].filter(Boolean))
       if (!apartados.has(ap))
         falla("proceso/mv-01.html", 0, `el cuerpo remite al apartado ${ap}, que no existe`);
