@@ -39,7 +39,7 @@ Glosario único y compartido por toda la documentación del proyecto. Cada docum
 | **HSTS** | Política de seguridad que obliga al navegador a conectarse al sitio siempre por HTTPS. |
 | **HTTP / HTTPS** | Protocolo de transferencia de la web; HTTPS es su versión cifrada mediante certificado TLS/SSL, obligatoria para proteger los datos en tránsito. |
 | **hub** | Página concentradora que agrupa un tema (una amenidad, un objetivo o una categoría de clase) para capturar búsquedas de alta intención. |
-| **human-first** | Regla de enrutamiento del BDS: al lead lo atiende primero un operador humano; "BES" entra como respaldo automático cuando no hay operador disponible, con escalación de vuelta al humano. |
+| **BES primero** | Regla de enrutamiento del BDS en WhatsApp: toda conversación la inicia "BES", en todo horario y sin espera. El operador humano entra por **escalamiento** —a petición expresa del usuario, por excepción o riesgo, o por una política aprobada por Sports World—, nunca como punto de partida. Fuera de horario, el escalamiento se convierte en devolución de llamada agendada. |
 | **idempotencia (Idempotency-Key)** | Propiedad por la cual repetir la misma operación (con la misma llave) no genera duplicados; resulta esencial para no crear leads repetidos. |
 | **iguala** | Cuota mensual fija por los servicios recurrentes (mantenimiento, soporte 24/7 y bolsa de mejora); el hospedaje corre en infraestructura del cliente. |
 | **ISR** | Regeneración incremental estática; técnica de Next.js que actualiza páginas generadas sin reconstruir todo el sitio. |

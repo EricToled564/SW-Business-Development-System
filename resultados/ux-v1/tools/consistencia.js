@@ -494,6 +494,27 @@ regla("R20 · el Manual de Ventas cubre todo paso a cargo del asesor", (falla) =
 
 /* ─────────── Reporte ─────────── */
 const totalLineas = archivos.reduce((a, f) => a + texto[f].split("\n").length, 0);
+/* ─────────── R22 · en WhatsApp atiende "BES" primero ─────────── */
+regla("R22 · enrutamiento de WhatsApp", (falla) => {
+  // Decisión vigente: toda conversación de WhatsApp la inicia BES, en todo
+  // horario. El operador humano entra por escalamiento —a petición del usuario,
+  // por excepción o por política aprobada—, nunca como punto de partida.
+  // El término «human-first» describía la regla contraria (hallazgo A-016).
+  porLinea((f, i, linea) => {
+    if (/human[-\s]first/i.test(linea))
+      falla(f, i, "«human-first» describe la regla anterior: en WhatsApp atiende «BES» primero");
+    if (/primero\s+(a\s+)?(un|una)\s+(operador|persona|asesor)|(operador|persona)[^.]{0,20}\(primero\)|atiende\s+primero\s+(un|una)\s+(operador|persona)/i.test(linea))
+      falla(f, i, "afirma que atiende primero una persona: en WhatsApp atiende «BES» primero");
+  });
+  for (const archivo of ["mpc-01.html", "sop-0101.html"]) {
+    const ruta = path.join(WEBAPP, "proceso", archivo);
+    if (!fs.existsSync(ruta)) continue;
+    marcar(`proceso/${archivo}`);
+    if (/human[-\s]first/i.test(fs.readFileSync(ruta, "utf8")))
+      falla(`proceso/${archivo}`, 0, "«human-first» describe la regla anterior");
+  }
+});
+
 /* ─────────── R21 · DEC/SW/01 es interno y no se publica ─────────── */
 regla("R21 · el registro de cambios del proceso no se publica", (falla) => {
   const DEC = path.join(WEBAPP, "proceso", "dec-01.html");

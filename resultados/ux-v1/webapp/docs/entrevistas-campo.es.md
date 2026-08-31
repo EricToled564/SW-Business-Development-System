@@ -45,7 +45,7 @@ Estas motivaciones validadas en campo son la base de la **taxonomía del cuestio
 | WhatsApp personal bloqueado (50–60 mensajes/día) | El prospecto llega **ya validado y con visita agendada** — el grueso del seguimiento desaparece; los recordatorios los envía el sistema por el número oficial de WhatsApp Business (Proyecto B), no el asesor. |
 | Leads sin cualificar (prioridad #1 para 8/15) | El **cuestionario cualifica al origen** en todo canal y el asesor recibe el **brief automático** con perfil, objetivos y sugerencias de conducción de la venta. |
 | Números de teléfono equivocados | El prospecto de WhatsApp escribió desde su propio número: el contacto queda **validado por el canal mismo**. |
-| Latencia de respuesta al lead digital | **Speed-to-lead en tiempo real** (Proyecto B): human-first con BES de respaldo 24/7, medido por canal y operador. |
+| Latencia de respuesta al lead digital | **Speed-to-lead en tiempo real** (Proyecto B): BES atiende de inmediato 24/7 y el operador entra por escalamiento; se mide por canal y operador. |
 | Sin sistema de clasificación de objetivos; la pérdida ocurre en el primer contacto | El cuestionario **es** el discovery estructurado: llega aplicado antes de que el asesor hable. |
 | Incapacidad de articular valor frente al precio | El sitio articula el **valor por objetivo en lenguaje del consumidor** y el brief arma los argumentos con los objetivos declarados del prospecto. |
 | Variabilidad de 40× sin línea base verificable | El **[Mapa del Funnel](#funnel)** —documento canónico de medición— establece la línea base real por club y canal desde el CRM. |

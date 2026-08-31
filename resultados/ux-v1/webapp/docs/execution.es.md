@@ -227,7 +227,7 @@ El BDS **no reescribe** el motor de captación: es la **capa de canales en tiemp
 ### 10.3 · Secuencia de trabajo (por fases, no por semanas)
 
 1. **Preparación.** Sports World entrega el número oficial de WhatsApp Business y somete las plantillas de mensaje a aprobación; se define la plantilla de operadores, sus horarios y la lista de personal autorizado.
-2. **Integración.** Se conecta la WhatsApp Business API; se habilita el rol de operador en la consola interna; se construye la capa de enrutamiento (human-first → "BES" de respaldo → escalación).
+2. **Integración.** Se conecta la WhatsApp Business API; se habilita el rol de operador en la consola interna; se construye la capa de enrutamiento (atiende "BES" → escalamiento a operador a petición del usuario o por política aprobada → devolución de llamada fuera de horario).
 3. **Validación.** Pruebas de extremo a extremo por los tres caminos (operador humano, "BES" por WhatsApp, walk-in en consola) contra el CRM real, sin duplicados; el Canal 2 y el eje de tiempo al primer contacto visibles en el dashboard, sobre la espina única del **[Mapa del Funnel](#funnel)**.
 4. **Lanzamiento y estabilización.** BDS en operación; monitoreo activo; ajuste de las reglas de enrutamiento con datos reales de volumen y disponibilidad.
 

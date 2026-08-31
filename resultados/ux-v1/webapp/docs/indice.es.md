@@ -74,7 +74,7 @@ Registro de cada sesión de trabajo con Sports World y el estado de lo que qued�
 |---|---|---|---|
 | B1 | [**BDS · Resumen Ejecutivo**](#bds-resumen) | El problema (speed-to-lead) y la solución de captación multicanal en tiempo real. | Dirección, Sistemas |
 | B2 | [**BDS · Flujo de conversión**](#bds-flujo) | Recorrido end-to-end y árbol de enrutamiento (operador → BES → asesor). | Sistemas, Operación |
-| B3 | [**BDS · Canales y enrutamiento**](#bds-canales) | Reglas human-first, respaldo con BES, horarios y SLA de contacto. | Operación, Sistemas |
+| B3 | [**BDS · Canales y enrutamiento**](#bds-canales) | Reglas de atención con BES primero, escalamiento a operador, horarios y SLA de contacto. | Operación, Sistemas |
 | B4 | [**BDS · Estrategia Técnica**](#bds-tecnica) | WhatsApp Business API, BES por WhatsApp (texto), consola de operadores. | Sistemas / TI |
 | B5 | [**BDS · Medición y funnel**](#bds-medicion) | Speed-to-lead por canal y operador, atribución de origen por campaña (Meta/TikTok) y funnel hasta nueva membresía. | Dirección, Sistemas |
 | B6 | [**BDS · Addendum contractual**](#bds-anexo) | Alcance, entregables, contraprestación adicional (USD $4,850.00 más IVA; MXN $86,330.00) y plazo de 8 semanas en paralelo al Proyecto A. | Dirección, Legal |

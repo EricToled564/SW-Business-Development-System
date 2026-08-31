@@ -2,7 +2,7 @@
 
 **Estado: aplicados al texto del Contrato.** El Contrato se encuentra en etapa de revisión, por lo que los ajustes se incorporaron directamente a `contrato.es.md` en el depósito. Este documento deja constancia de **qué cambió, dónde y por qué**, para la revisión de Legal y para la conversación con EL CLIENTE.
 
-Son **ocho ajustes**: los siete derivados de la auditoría más uno detectado al someter el propio Contrato a las reglas de verificación automática. **El PDF que publica el depósito ya los refleja** (V4.3, agosto 2026); la versión anterior se conserva en `/versiones-del-contrato/oficiales/` como registro histórico.
+Son **nueve ajustes**: los siete derivados de la auditoría más uno detectado al someter el propio Contrato a las reglas de verificación automática. **El PDF que publica el depósito ya los refleja** (V4.3, agosto 2026); la versión anterior se conserva en `/versiones-del-contrato/oficiales/` como registro histórico.
 
 Siete de los ocho **reducen, precisan o corrigen** lo que se le pide a Sports World. **Uno solo agrega un requerimiento verdaderamente nuevo** —el dato de cancelación—, y otro agrega dos campos a un dato ya pactado; ambos son indispensables para cerrar el funnel de resultados que el propio Contrato compromete. Ninguno modifica la contraprestación, los plazos ni los KPIs.
 
@@ -88,6 +88,20 @@ Siete de los ocho **reducen, precisan o corrigen** lo que se le pide a Sports Wo
 
 ---
 
+## 9 · Regla de enrutamiento en WhatsApp (Cláusula Cuarta)
+
+**Dónde:** Cláusula Cuarta, incisos (iii) y (v).
+
+**Decía:** *"«BES» sobre WhatsApp (solo texto) como respaldo automático 24/7, con escalación a operador humano"* y *"capa de enrutamiento en tiempo real (human-first → «BES» de respaldo → escalación)"*.
+
+**Dice ahora:** *"«BES» sobre WhatsApp (solo texto) como atención inicial 24/7 de toda conversación entrante, con escalación a operador humano"* y *"capa de enrutamiento en tiempo real (atiende «BES» → escalación a operador humano a petición expresa del usuario o por política de escalamiento aprobada por EL CLIENTE → devolución de llamada agendada fuera del horario de operadores)"*.
+
+**Por qué:** el Contrato describía la regla contraria a la que rige la operación. El procedimiento del canal (SOP/SW/0101) y el proceso maestro (MPC/SW/01) ya establecían que el asistente atiende la totalidad de las conversaciones entrantes y que *"la intervención de una persona es una escalación, no el punto de partida"*. La contradicción estaba documentada como hallazgo **A-016** de la auditoría, y alcanzaba a doce documentos del depósito, el Contrato entre ellos. Se corrigieron los doce y la invariante quedó sostenida por la regla **R22** de la verificación automática.
+
+**Efecto:** ninguno sobre la contraprestación, los plazos ni los KPIs. **Reduce** la exigencia operativa sobre Sports World: no obliga a mantener operadores en línea para el primer contacto, porque el primer contacto lo cubre "BES" en todo horario.
+
+---
+
 ## Resumen para la conversación con Legal
 
 | # | Ajuste | Efecto para EL CLIENTE |
@@ -100,7 +114,8 @@ Siete de los ocho **reducen, precisan o corrigen** lo que se le pide a Sports Wo
 | 6 | Especificación del servidor en F.6 | Convierte una frase inauditable en una cifra verificable |
 | 7 | Nombre del documento de seguridad | Referencia cruzada; sin efecto sustantivo |
 | 8 | Consulta de socios (D.1) como exclusión expresa | **Reduce** un acceso que Sistemas ya no debe preparar |
+| 9 | Enrutamiento de WhatsApp: atiende «BES» primero | **Reduce** la exigencia de operadores en línea para el primer contacto |
 
-Los ocho están **incorporados al texto** de `contrato.es.md` y se presentan como un **único bloque de revisión al Contrato, al Anexo Uno y al Anexo Dos**, sin efecto sobre la contraprestación, los plazos ni los KPIs comprometidos.
+Los nueve están **incorporados al texto** de `contrato.es.md` y se presentan como un **único bloque de revisión al Contrato, al Anexo Uno y al Anexo Dos**, sin efecto sobre la contraprestación, los plazos ni los KPIs comprometidos.
 
 **Publicación.** El PDF del depósito (`06-contrato.es.pdf`) se regenera desde el markdown con el pipeline de casa y **ya refleja los ocho ajustes**: se publica como **V4.3, agosto de 2026, 39 páginas**. La copia anterior se conserva sin alteración en `/versiones-del-contrato/oficiales/contrato-v4.2-cliente.pdf` como registro histórico. Los dos addenda siguen el mismo régimen; el **Addendum del BDS** incorporó además un ajuste propio, descrito abajo.

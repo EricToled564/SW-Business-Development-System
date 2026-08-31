@@ -155,11 +155,11 @@ Hoy la mayor fuente de leads de Sports World son las **campañas en redes social
 
 ### 10 · La solución: atender en tiempo real, en el canal del usuario
 
-El BDS reemplaza el "formulario + llamada tardía" por un **engagement inmediato en WhatsApp**, aplicando **el mismo cuestionario** de experiencia ideal, bajo un modelo **human-first con IA de respaldo**:
+El BDS reemplaza el "formulario + llamada tardía" por un **engagement inmediato en WhatsApp**, aplicando **el mismo cuestionario** de experiencia ideal, bajo un modelo en el que **"BES" atiende primero y el operador humano entra por escalamiento**:
 
 - El anuncio lleva a una **landing con el cuestionario**, no a un formulario pasivo.
-- El lead se enruta **primero a un operador humano por WhatsApp**, en tiempo real.
-- Si **no hay operador disponible** o es **fuera de horario**, **"BES" por WhatsApp (solo texto)** atiende, aplica el cuestionario y agenda.
+- La conversación de WhatsApp la **inicia siempre "BES" (solo texto)**, de inmediato y en todo horario: aplica el cuestionario y agenda.
+- El **operador humano entra por escalamiento** —a petición expresa del usuario, por excepción o por política aprobada—, con el contexto ya capturado. Fuera de horario, ese escalamiento se agenda como devolución de llamada.
 - Los **asesores de club** atienden a los leads "de la calle" (walk-in) con la **misma consola interna** del Proyecto A.
 
 En los cuatro caminos, el común denominador es el mismo: **un cuestionario → una experiencia ideal → una escritura idempotente al CRM**. El BDS no crea un flujo nuevo: extiende el que ya existe a **WhatsApp, operadores humanos y tiempo real**. Al aplicarse el cuestionario, el mismo motor que arma la experiencia ideal genera también el **brief del asesor** —perfil del comprador potencial, sus intereses y sugerencias concretas de cómo conducir la venta— sin importar quién lo atendió. Detalle completo en **[BDS · Resumen Ejecutivo](#bds-resumen)** y **[BDS · Flujo de conversión](#bds-flujo)**.

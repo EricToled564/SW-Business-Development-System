@@ -23,7 +23,7 @@ Un lead puede entrar al BDS por cualquiera de estos orígenes, y **todos converg
 7. **Confirmación y recordatorios.** El prospecto recibe la confirmación; se disparan los **2 recordatorios por WhatsApp** (24 h y 2 h antes); el asesor asignado recibe el **brief del comprador potencial** antes de la visita.
 8. **Medición.** Cada transición alimenta la espina de conversión única del **[Mapa del Funnel](#funnel)** —el BDS no define etapas propias— y el eje de tiempo al primer contacto que le corresponde (ver **[BDS · Medición y funnel](#bds-medicion)**).
 
-## El árbol de enrutamiento (human-first con respaldo de "BES")
+## El árbol de enrutamiento ("BES" primero, con escalamiento a operador)
 
 Cuando entra un lead que requiere atención conversacional (orígenes 1, 2 y 4), el sistema evalúa, **en este orden**:
 

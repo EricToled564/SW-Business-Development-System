@@ -23,7 +23,7 @@ Es la métrica que el BDS existe para mover. Se reporta:
 
 - **Distribución del tiempo al primer contacto** (p. ej. mediana y percentiles), comparando el **antes** (formulario + llamada tardía) con el **después** (engagement en tiempo real).
 - **Por canal:** operador humano vs. "BES".
-- **Por horario:** dentro de horario (human-first) vs. fuera de horario ("BES").
+- **Por horario:** el primer contacto lo hace "BES" en todo horario; lo que se separa por franja es el **escalamiento** — atendido en vivo dentro de horario, o convertido en devolución de llamada fuera de él.
 
 ## Otras vistas del dashboard
 

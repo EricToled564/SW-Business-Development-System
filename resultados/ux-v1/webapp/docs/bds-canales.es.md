@@ -7,7 +7,7 @@
 
 | Canal | Quién atiende | Modo |
 |---|---|---|
-| **WhatsApp** | Operador humano (primero) o "BES" (respaldo) | Texto, tiempo real |
+| **WhatsApp** | "BES" (primero); operador humano por escalamiento | Texto, tiempo real |
 | **Consola interna** | Operadores y asesores de club | Texto/asistido, presencial o remoto |
 | **Web / "BES" web** | "BES" (voz y texto) | Canal del Proyecto A, alimenta el mismo pipeline |
 
@@ -15,18 +15,19 @@ El BDS opera principalmente sobre **WhatsApp** (donde ya están los usuarios de 
 
 ## Reglas de enrutamiento
 
-1. **Human-first.** Todo lead conversacional se ofrece **primero a un operador humano** disponible y en horario.
-2. **Asignación.** El lead se asigna por **cola** (por club/zona y por disponibilidad); si el usuario indicó un club, se prioriza la cola de ese club.
-3. **Respaldo automático con "BES".** Si no hay operador disponible **o** es fuera de horario, **"BES" (WhatsApp, solo texto)** toma la conversación **de inmediato**, sin espera.
-4. **Escalación a humano.** "BES" transfiere a un operador (o agenda devolución de llamada) cuando el usuario lo pide o el caso lo amerita, **conservando el contexto** ya capturado.
-5. **Continuidad.** Si un operador no responde dentro del umbral de asignación, el lead **rebota** a otro operador o a "BES", para que **nunca quede sin atender**.
+1. **"BES" primero.** Toda conversación de WhatsApp la inicia **"BES" (solo texto)**, de inmediato y sin espera. No hay cola de asignación previa, ni diferencia entre horario y fuera de horario: la persona recibe respuesta desde el primer mensaje.
+2. **El humano entra por escalamiento.** Un operador toma la conversación **cuando el usuario lo pide expresamente**, cuando el caso cae en una **excepción o riesgo**, o cuando lo dispara una **política de escalamiento aprobada** por Sports World. Nunca como punto de partida.
+3. **Traspaso con contexto.** Al escalar, el operador recibe lo ya capturado —identidad, experiencia en curso, consentimiento, club, intención y pendientes— y **continúa desde ahí**: no vuelve a preguntar lo que la persona ya contestó.
+4. **Fuera de horario o sin operador disponible.** El escalamiento se convierte en **devolución de llamada agendada**, por WhatsApp o por teléfono, con su responsable y su fecha comprometida. La conversación con "BES" continúa mientras tanto.
+5. **Continuidad.** Ningún escalamiento queda sin dueño: si nadie lo toma dentro del umbral, se reencola y se registra el motivo. **Cero conversaciones sin atención.**
 6. **Sin duplicados.** Cualquiera que atienda escribe al CRM por la **misma vía idempotente**; si el lead ya existía, se actualiza (no se duplica).
 
 ## Horarios y disponibilidad
 
-- **Horario de operadores:** definido por Sports World (por ejemplo, horario hábil ampliado). Dentro de ese horario, **human-first**.
-- **Fuera de horario:** cobertura **24/7 por "BES"**, que atiende y agenda; los casos que requieran humano se **encolan** para el siguiente turno con el contexto ya levantado.
-- **Presencia de operadores:** el sistema conoce qué operadores están **en línea y disponibles** para asignar en tiempo real.
+- **Atención de "BES":** **24/7**, en todo horario. No hay franja en la que la persona quede sin respuesta.
+- **Horario de operadores:** definido por Sports World (por ejemplo, horario hábil ampliado). Determina **cuándo un escalamiento se atiende en vivo** y cuándo se convierte en devolución de llamada; no determina quién atiende primero.
+- **Fuera de horario:** los escalamientos se **agendan como devolución de llamada** para el siguiente turno, con el contexto ya levantado.
+- **Presencia de operadores:** el sistema conoce qué operadores están **en línea y disponibles** para recibir escalamientos en tiempo real.
 
 ## SLA de contacto (el corazón del BDS)
 
@@ -34,10 +35,10 @@ El objetivo es colapsar el **tiempo al primer contacto** de "horas o días" a **
 
 | Métrica | Objetivo |
 |---|---|
-| **Primer contacto (operador humano, en horario)** | En **segundos** desde que entra el lead (asignación inmediata) |
-| **Primer contacto ("BES", fuera de horario o sin operador)** | **Inmediato** (respuesta automática) |
-| **Rebote de asignación** (operador no responde) | Reasignar en un **umbral corto** definido con Sports World |
-| **Escalación "BES" → humano** | Transferencia con contexto, sin re-preguntar |
+| **Primer contacto ("BES", todo horario)** | **Inmediato**, desde el primer mensaje |
+| **Escalamiento "BES" → operador, en horario** | Toma en vivo dentro de un **umbral corto** definido con Sports World |
+| **Escalamiento fuera de horario o sin operador** | **Devolución de llamada agendada**, con responsable y fecha comprometida |
+| **Traspaso al operador** | Con contexto completo, sin re-preguntar lo ya contestado |
 
 Estos umbrales exactos se afinan con Sports World en el arranque, según el número de operadores y el volumen de campañas. Lo que **no** es negociable es el principio: **cero lead sin atención inmediata**.
 

@@ -16,11 +16,11 @@ El resultado es una **tasa de conversión muy baja**. La causa raíz no es la ca
 
 ## La solución: atender en tiempo real, en el canal del usuario
 
-El **BDS** reemplaza el "formulario + llamada tardía" por un **engagement inmediato**, en el canal donde el usuario ya está (**WhatsApp**), aplicando **el mismo cuestionario** de experiencia ideal que ya desarrollamos, bajo un modelo **human-first con IA de respaldo**, y **agendando la visita en el momento**:
+El **BDS** reemplaza el "formulario + llamada tardía" por un **engagement inmediato**, en el canal donde el usuario ya está (**WhatsApp**), aplicando **el mismo cuestionario** de experiencia ideal que ya desarrollamos, bajo un modelo en el que **"BES" atiende primero y el operador humano entra por escalamiento**, y **agendando la visita en el momento**:
 
 - El anuncio lleva a una **landing con el cuestionario**, no a un formulario pasivo.
-- El lead se enruta **primero a un operador humano por WhatsApp** (atención en tiempo real).
-- Si **no hay operador disponible** o es **fuera de horario**, **"BES" por WhatsApp (solo texto)** atiende, aplica el cuestionario y agenda.
+- La conversación de WhatsApp la **inicia siempre "BES" (solo texto)**, de inmediato y en todo horario: aplica el cuestionario y agenda.
+- El **operador humano entra por escalamiento** —a petición expresa del usuario, por excepción o por política aprobada—, con el contexto ya capturado. Fuera de horario, ese escalamiento se agenda como devolución de llamada.
 - Los **asesores de club** atienden a los leads "de la calle" (walk-in) con la **misma consola interna** ya definida en el proyecto del sitio (**[Estrategia Técnica · §11](#technical:11-captacin-unificada-de-leads-sitio-bes-y-consola-interna)**).
 
 En los cuatro caminos, el común denominador es el mismo: **el mismo cuestionario, la misma experiencia ideal y una sola escritura idempotente al CRM**. El BDS **no crea un flujo nuevo**: extiende el que ya existe a **WhatsApp, operadores humanos y tiempo real**.
@@ -45,7 +45,7 @@ Es además el único canal donde el recorrido individual se puede seguir complet
 | Documento | Contenido |
 |---|---|
 | [**Flujo de conversión**](#bds-flujo) | El proceso end-to-end y el árbol de enrutamiento |
-| [**Canales, enrutamiento y SLA**](#bds-canales) | Reglas human-first, respaldo con "BES", horarios y el SLA de contacto |
+| [**Canales, enrutamiento y SLA**](#bds-canales) | Reglas de atención con "BES" primero, escalamiento a operador, horarios y el SLA de contacto |
 | [**Estrategia Técnica · BDS**](#bds-tecnica) | WhatsApp Business API, "BES" por WhatsApp, consola de operadores, reutilización del cuestionario y el middleware/CRM |
 | [**BDS · Medición y funnel**](#bds-medicion) | Speed-to-lead por canal y operador, sobre la espina única del **[Mapa del Funnel](#funnel)** |
 | [**Addendum del BDS**](#bds-anexo) | Alcance, entregables y contraprestación adicional |

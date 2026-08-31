@@ -38,7 +38,7 @@ Lo nuevo del BDS son las cuatro piezas siguientes.
 
 ## 4 · Capa de enrutamiento en tiempo real
 
-- Decide, por cada lead entrante, **quién atiende** según las reglas de **[Canales y enrutamiento](#bds-canales)** (human-first → "BES" de respaldo → escalación).
+- Decide, por cada lead entrante, **quién atiende** según las reglas de **[Canales y enrutamiento](#bds-canales)** (atiende "BES" → escalamiento a operador a petición del usuario o por política aprobada → devolución de llamada fuera de horario).
 - Gestiona **colas** por club/zona, **asignación**, **rebote** por no-respuesta y **escalación** con contexto.
 - Emite los **eventos** que alimentan la espina de conversión del **[Mapa del Funnel](#funnel)**: entrada por el Canal 2 (C2), cuestionario iniciado y completado (E2, E3) y visita agendada (E4), más la marca de tiempo al primer contacto. Las etapas de cierre (E5, E6, E7) las provee el CRM. El BDS no define etapas propias (**[BDS · Medición y funnel](#bds-medicion)**).
 
