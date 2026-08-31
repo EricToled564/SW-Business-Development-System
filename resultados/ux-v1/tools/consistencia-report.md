@@ -1,6 +1,6 @@
 # Reporte de consistencia del depósito
 
-**31 documentos · 4,200 líneas · 20 reglas · 0 hallazgos**
+**31 documentos · 4,200 líneas · 21 reglas · 0 hallazgos**
 
 Este reporte lo genera `tools/consistencia.js` al ejecutarse. La columna «reglas
 aplicadas» no es una declaración: es el registro de qué verificación tocó qué
@@ -75,3 +75,4 @@ archivo durante esta corrida.
 | R18 · páginas del Proceso Comercial | 2 | 0 |
 | R19 · sello de versión del visor | 1 | 0 |
 | R20 · el Manual de Ventas cubre todo paso a cargo del asesor | 6 | 0 |
+| R21 · el registro de cambios del proceso no se publica | 0 | 0 |

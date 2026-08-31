@@ -494,6 +494,21 @@ regla("R20 · el Manual de Ventas cubre todo paso a cargo del asesor", (falla) =
 
 /* ─────────── Reporte ─────────── */
 const totalLineas = archivos.reduce((a, f) => a + texto[f].split("\n").length, 0);
+/* ─────────── R21 · DEC/SW/01 es interno y no se publica ─────────── */
+regla("R21 · el registro de cambios del proceso no se publica", (falla) => {
+  const DEC = path.join(WEBAPP, "proceso", "dec-01.html");
+  if (!fs.existsSync(DEC)) {
+    falla("dec-01.html", 0, "falta el registro de cambios del Proceso Comercial");
+    return;
+  }
+  // Decisión de Eric: DEC/SW/01 es el registro de cambios y el cliente no lo ve.
+  // Vive en proceso/ con la misma composición que los SOP, pero fuera del app.
+  if (/"dec-01"/.test(app))
+    falla("app.js", 0, "dec-01 registrado en el app: el registro de cambios es interno y no se publica");
+  if ((texto["indice.es.md"] || "").includes("#dec-01"))
+    falla("indice.es.md", 0, "dec-01 listado en el índice: el registro de cambios es interno y no se publica");
+});
+
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);
 reglas.forEach((r) => console.log(`  ${r.fallas === 0 ? "\x1b[32m✓\x1b[0m" : "\x1b[31m✗\x1b[0m"} ${r.nombre}${r.fallas ? `  (${r.fallas})` : ""}`));
 if (fallas.length) {
@@ -517,6 +532,8 @@ const filas = Object.keys(porArchivo).sort().map((f) => {
 });
 
 const sinCubrir = archivos.filter((f) => !porArchivo[f]);
+
+
 const md = [
   "# Reporte de consistencia del depósito",
   "",
