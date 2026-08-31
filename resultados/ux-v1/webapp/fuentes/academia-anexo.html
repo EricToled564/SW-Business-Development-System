@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academia SW · Addendum contractual · Sports World</title>
+<meta name="description" content="Documento del depósito de Sports World, publicado como página para su lectura automatizada.">
+<style>
+  body { margin: 0; padding: 2rem 1.5rem; background: #fff; color: #1d1d1b;
+         font: 15px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  main { max-width: 60rem; margin: 0 auto; }
+  h1 { font-size: 1.15rem; margin: 0 0 .25rem; }
+  p.origen { margin: 0 0 2rem; color: #6b6b68; font-size: .85rem; }
+  pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Academia SW · Addendum contractual</h1>
+<p class="origen">Documento del depósito · archivo fuente <code>docs/academia-anexo.es.md</code></p>
+<pre># Academia SW · Addendum contractual
+## Alcance, entregables y contraprestación adicional del Proyecto C
+
+ADDENDUM AL CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES Y CONSULTORÍA (EL **"CONTRATO"**) CELEBRADO ENTRE **OPERADORA Y ADMINISTRADORA SW, S.A. DE C.V.** (**"EL CLIENTE"**) Y **LIVE STREAMING SERVICES MEXICO, S.A. DE C.V.** (**"EL PRESTADOR"**, comercialmente *Final Upgrade AI*), DE FECHA [●], QUE SUSCRIBEN LAS MISMAS PARTES, POR CONDUCTO DE SUS APODERADOS LEGALES, PARA ACTIVAR EL PROYECTO C EN LOS TÉRMINOS YA PACTADOS EN LAS CLÁUSULAS SEGUNDA, QUINTA Y OCTAVA, SECCIÓN C, DEL CONTRATO. Los términos con mayúscula inicial no definidos aquí tienen el significado que les asigna el Contrato.
+
+&gt; **Iguala mensual de mantenimiento de la Academia — $18,500 MXN más IVA ($21,460 con IVA). Incluye:** mantenimiento de la plataforma de módulos interactivos, actualización de la biblioteca de escenarios y perfiles certificados del *role-play*, mantenimiento del dashboard de *readiness* con reporte mensual, y soporte en horario hábil.
+&gt;
+&gt; **EL CLIENTE contrata la iguala (marcar a mano al firmar): ☐ SÍ  ☐ NO**
+
+## 1 · Objeto
+
+EL PRESTADOR desarrolla e implementa para EL CLIENTE un **sistema formal de capacitación y práctica** para los 200 asesores comerciales (la "Academia"), en dos fases: módulos interactivos de e-learning por niveles, y un agente conversacional de IA por voz para practicar la conversación de venta mediante role-play, con evaluación y dashboard de readiness.
+
+## 2 · Alcance y entregables
+
+- **Mapeo de la taxonomía maestra del cliente** a los siete componentes del programa — validados en campo y sujetos a validación final con Sports World antes de la producción de contenido (sección 4) (**[Contenido y taxonomía](#academia-contenido)**).
+- **Plataforma de módulos interactivos** (Fase 1), organizados en cuatro niveles con progresión por acreditación.
+- **Segmentación de contenido por tipo de club** (capa base + capa de adaptación).
+- **Agente de voz de role-play** (Fase 2), que reutiliza el motor conversacional del Proyecto A (BES) en un rol distinto, con **selección adaptativa de escenarios** por perfil de cliente y por segmento de club, capa de evaluación y **calendario de repasos posteriores a la certificación**.
+- **Dashboard de readiness** para los 200 asesores, con avance de Fase 1 y desempeño de Fase 2, agregado **por asesor, club, ciudad y a nivel nacional**.
+- **Calibración de línea base** con las métricas reales del CRM antes de comprometer KPIs específicos del programa.
+
+El detalle funcional y técnico consta en los documentos del módulo Academia: **[Fases del programa](#academia-fases)**, **[Contenido y taxonomía](#academia-contenido)**, **[Estrategia Técnica](#academia-tecnica)** y **[Medición](#academia-medicion)**.
+
+## 3 · Exclusiones
+
+- Los **habilitadores operativos** identificados en el ejercicio de campo (migración a WhatsApp Business API, cualificación de leads al origen, velocidad de respuesta al lead digital, catálogo de convenios corporativos) — son de infraestructura y operación, a cargo de Sports World, no del programa de capacitación (**[Medición · Nota](#academia-medicion)**).
+- Sustituir el rol del líder regional en la gestión de su equipo: la Academia estandariza el contenido y la práctica, no reemplaza la supervisión.
+- **Costos de operación** del agente de voz (plataforma del modelo de razonamiento, síntesis de voz y orquestación de los proveedores), que cubre EL CLIENTE directamente a esos proveedores — mismo esquema que BES (Contrato, Cláusula Décima Cuarta).
+- Cualquier servicio no enumerado en la sección 2.
+
+## 4 · Aportaciones a cargo de EL CLIENTE
+
+- Validación del mapeo de la taxonomía del cuestionario a los siete componentes, y de la segmentación por tipo de club, antes de la producción de contenido.
+- **Servidor propio** donde opera la plataforma de la Academia (módulos, dashboard e historial de readiness), independiente del servidor del sitio (**[Estrategia Técnica de la Academia · §1](#academia-tecnica)**).
+- Mínimo aprobatorio de acreditación por módulo (Fase 1).
+- Métricas reales del CRM por asesor, para calibrar la línea base del programa.
+- Colaboración del equipo de marketing para el módulo de inteligencia competitiva por club.
+- Priorización y avance de los habilitadores operativos identificados en campo (sección 3), en paralelo al programa.
+
+## 5 · Contraprestación adicional
+
+- **Monto: $850,000.00 (ochocientos cincuenta mil pesos 00/100 M.N.) más IVA** —equivalente a **USD $47,752.81** al tipo de cambio contractual de $17.80; $986,000.00 MXN con IVA al 16%—, por la implementación del alcance descrito en la sección 2. **Es adicional** a la contraprestación del Contrato (Proyecto A) y a la del Addendum del BDS (Proyecto B) (Contrato, Cláusula Octava, Sección C).
+- **Condición de precio:** el precio de la Academia asume su **aprobación simultánea al Proyecto A**; de no aprobarse en forma simultánea, deberá recalcularse antes de la firma de este Addendum, mediante propuesta por escrito de EL PRESTADOR con un **ajuste máximo del 15% (quince por ciento)** (Contrato, Cláusula Octava, Sección IV).
+- Se paga en **dos exhibiciones de 50% ($425,000.00 MXN más IVA cada una; USD $23,876.40; $493,000.00 MXN con IVA)**: la factura de cada mitad se entrega al iniciar sus trabajos y el pago es exigible una vez que EL CLIENTE apruebe por escrito la mitad de los entregables y la totalidad del proyecto, respectivamente, **o se actualice la aceptación tácita prevista en la Cláusula Décima del Contrato, lo que ocurra primero**; cada exhibición se paga dentro de los **10 (diez) días naturales** siguientes a su exigibilidad, con el interés moratorio pactado para pagos vencidos (Contrato, Cláusula Novena).
+- **Iguala opcional de mantenimiento de la Academia: $18,500 MXN más IVA mensuales ($21,460 con IVA)** — mantenimiento de la plataforma de módulos, actualización de la biblioteca de escenarios certificados, dashboard y soporte en horario hábil (desglose en el Contrato, Cláusula Octava, Sección C). **EL CLIENTE decide si la contrata o no al firmar este Addendum, dejándolo asentado en el recuadro de la primera página**; se causa por mes vencido desde la entrega de la Fase 1 en producción, se factura al cierre de mes y se paga a 30 días naturales, con el interés moratorio de la Cláusula Novena en pagos vencidos.
+- **Plazo de desarrollo y entrega: 10 (diez) semanas**, contadas a partir de la firma de este Addendum y del cierre de la validación del mapeo de la taxonomía y del **listado de requerimientos** (el inventario de accesos, insumos y definiciones pendientes que las Partes cierran junto con la firma). El retraso de EL CLIENTE en las aportaciones de la sección 4 extiende el plazo día por día y, cuando proceda, causa el cargo de stand-by (Contrato, Cláusulas Décima Tercera y Décima Quinta).
+- La **Fase 2 presupone el motor conversacional de BES del Proyecto A operativo**: si este Addendum se firma antes de esa disponibilidad, la Fase 1 avanza sin restricción y el plazo de desarrollo de la Fase 2 se contará a partir de que el motor esté disponible (Contrato, Cláusula Quinta).
+
+## 6 · Naturaleza y garantías
+
+- La Academia es un **alcance independiente**; su suscripción no modifica el Proyecto A ni el Proyecto B. En tanto no se firme este Addendum, el Proyecto C **no genera obligación ni costo** para ninguna de las Partes.
+- EL PRESTADOR **no garantiza** tasas de conversión ni resultados comerciales específicos: dependen de factores comerciales, de mercado y de los habilitadores operativos descritos en la sección 3. Lo comprometido es la **funcionalidad** del sistema —las dos fases, la evaluación y el dashboard de readiness— y su **medición**.
+
+## 7 · Disposiciones finales
+
+- **Naturaleza del Addendum.** Este Addendum detalla —sin modificar— el alcance, las exclusiones y las aportaciones ya pactados en el Contrato (Cláusulas Segunda y Quinta); en caso de contradicción, prevalece el cuerpo del Contrato (Cláusula Vigésima Tercera, inciso e).
+- **Aprobación de entregables.** La aprobación de los entregables del Proyecto C se rige por la **Cláusula Décima** del Contrato, incluida la aceptación tácita ahí prevista y sus efectos sobre la exigibilidad de los pagos.
+- **Propiedad intelectual.** Aplica la **Cláusula Décima Sexta** del Contrato: el motor conversacional base de "BES" —que la Fase 2 reutiliza en un rol distinto— es un Componente Preexistente que permanece en titularidad de EL PRESTADOR, licenciado a EL CLIENTE únicamente según se incorpore en los entregables; la titularidad del desarrollo específico de la Academia se transfiere conforme a dicha Cláusula.
+- **Datos personales y seguridad.** La **Cláusula Décima Octava** del Contrato aplica al Proyecto C desde su activación —incluidos los datos de los asesores comerciales tratados en la Academia—, sin necesidad de pacto adicional.
+- **Continuidad del Contrato.** En todo lo no previsto expresamente en este Addendum rigen las cláusulas del Contrato, incluida su legislación aplicable y jurisdicción (Cláusula Vigésima Quinta).
+</pre>
+</main>
+</body>
+</html>
