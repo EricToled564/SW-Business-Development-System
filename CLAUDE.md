@@ -45,7 +45,7 @@ Toda pieza —manual, cuestionario, procedimiento, capacitación, sitio— se es
 - **Llaves de conciliación:** lead → visita → membresía por **nombre + apellido + teléfono + club**; membresía → cancelación por **número de membresía**. Sustituye la llave de código postal del Anexo Uno.
 - **Funnel canónico:** `docs/funnel.es.md`. Tres puertas de entrada (sitio, WhatsApp, consola), una espina de conversión, dos ejes transversales. Sustituye las definiciones de `technical` §10, `bds-medicion` e `integracion` §5.
 - **Agrupación del depósito:** El sistema · **El proceso comercial (procedimientos normalizados)** · **La medición (funnel + integración)** · La evidencia · **Reuniones** · Proyecto A (captación y conversión) · Proyecto B (canales en tiempo real) · Proyecto C (capacidad humana).
-- **Idiomas:** la sección del cliente es **solo español**. El bilingüe corresponde a las secciones de líderes de subproyecto (entregable aparte, aún no construido). Los `.en.md` existentes no se tocan ni se borran.
+- **Idiomas:** la sección del cliente es **solo español**. El bilingüe corresponde a las secciones de líderes de subproyecto (entregable aparte, aún no construido). **Las versiones en inglés se retiraron en agosto de 2026, por instrucción expresa de Eric, y se vuelven a crear cuando los documentos estén revisados.** Sustituye la regla anterior de no borrarlas.
 - **Los planes de membresía vienen del CRM**, no se congelan en la documentación. El contrato fija seis páginas de membresía, sin nombrarlas.
 
 ## Cómo se publica
