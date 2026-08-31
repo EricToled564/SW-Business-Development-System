@@ -14,7 +14,7 @@ A-012,Convenios empresariales,El canal de Convenios Empresariales no tiene recor
 A-013,Referidos,"Referidos está simultáneamente pendiente en SOP 0104 y embebido en SOP 0103, sin programa controlado.",duplicidad,ALTA,abierto,,
 A-014,WhatsApp,"La voz por WhatsApp está expresamente excluida, aunque es requisito del modelo objetivo.",canal,CRÍTICA,abierto,,
 A-015,WhatsApp voz,"No hay consentimiento, aviso sonoro, límites de audio, tratamiento de transcripción ni excepciones de voz.",consentimiento,CRÍTICA,abierto,,
-A-016,BDS / SOP 0101,El enrutamiento se contradice: BDS es human-first; el SOP 0101 es BES-first.,contradicción,CRÍTICA,abierto,,
+A-016,BDS / SOP 0101,El enrutamiento se contradice: BDS es human-first; el SOP 0101 es BES-first.,contradicción,CRÍTICA,abierto,A-016-antes.md,
 A-017,Identidad BES,"El nombre BES identifica asistentes con propósitos incompatibles: documentación interna, demo informativa y agente comercial.",experiencia,ALTA,abierto,,
 A-018,Handoff digital,Los umbrales de rebote y escalación a humano quedan ‘por definir’.,handoff,ALTA,abierto,,
 A-019,Handoff BES → humano,No existe contrato de contexto transferido ni acuse del operador.,handoff,ALTA,abierto,,
