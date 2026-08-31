@@ -1,7 +1,27 @@
-# BDS · Flujo de conversión
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BDS · Flujo de conversión · Sports World</title>
+<meta name="description" content="Documento del depósito de Sports World, publicado como página para su lectura automatizada.">
+<style>
+  body { margin: 0; padding: 2rem 1.5rem; background: #fff; color: #1d1d1b;
+         font: 15px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  main { max-width: 60rem; margin: 0 auto; }
+  h1 { font-size: 1.15rem; margin: 0 0 .25rem; }
+  p.origen { margin: 0 0 2rem; color: #6b6b68; font-size: .85rem; }
+  pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>BDS · Flujo de conversión</h1>
+<p class="origen">Documento del depósito · archivo fuente <code>docs/bds-flujo.es.md</code></p>
+<pre># BDS · Flujo de conversión
 ## La arquitectura del proceso, de principio a fin
 
-> **Proyecto B · la capa de canales en tiempo real** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Este documento describe el recorrido completo del lead y el **árbol de enrutamiento** que decide quién lo atiende. Reutiliza el cuestionario y la escritura al CRM del proyecto del sitio; no los redefine.
+&gt; **Proyecto B · la capa de canales en tiempo real** del sistema de ventas (**[Resumen Ejecutivo](#resumen)**). Este documento describe el recorrido completo del lead y el **árbol de enrutamiento** que decide quién lo atiende. Reutiliza el cuestionario y la escritura al CRM del proyecto del sitio; no los redefine.
 
 ## Los cuatro puntos de entrada
 
@@ -36,7 +56,7 @@ Cuando entra un lead que requiere atención conversacional (orígenes 1, 2 y 4),
 
 El **walk-in (origen 3)** no pasa por el árbol: el **asesor de club** atiende directamente desde la **consola interna**, con el mismo cuestionario.
 
-> **Regla de oro:** ningún lead se queda sin atención inmediata. Si no hay humano, hay "BES"; si "BES" no basta, escala a humano. El objetivo es **cero espera**.
+&gt; **Regla de oro:** ningún lead se queda sin atención inmediata. Si no hay humano, hay "BES"; si "BES" no basta, escala a humano. El objetivo es **cero espera**.
 
 ## Qué se reutiliza (sin duplicar)
 
@@ -45,3 +65,7 @@ El **walk-in (origen 3)** no pasa por el árbol: el **asesor de club** atiende d
 - El **middleware y la escritura idempotente al CRM**: **[Estrategia Técnica · §2](#technical:2-los-cuatro-datos-y-las-integraciones-con-sports-world)**.
 
 Lo que el BDS **agrega** es el **canal WhatsApp**, la **capa de operadores humanos** y el **enrutamiento en tiempo real** — detallados en [Canales y enrutamiento](#bds-canales) y en la [Estrategia Técnica del BDS](#bds-tecnica).
+</pre>
+</main>
+</body>
+</html>
