@@ -24,9 +24,13 @@ Están en español y se leen sin conocimiento técnico.
 
 **`candado-notebooklm.js`** — la comprobación.
 
+**`plantilla-pregunta.md`** — el formato obligatorio de toda pregunta a NotebookLM.
+Sin él omite menciones que juzga secundarias; está comprobado y documentado ahí.
+
 ## Cómo se cierra un hallazgo
 
-1. Se le pregunta a NotebookLM qué dicen los documentos sobre ese punto.
+1. Se le pregunta a NotebookLM qué dicen los documentos sobre ese punto, **con la
+   plantilla**, nunca con una pregunta libre.
 2. Su respuesta se guarda completa en `evidencia/`, sin resumirla ni editarla.
 3. Se corrige únicamente lo que esa respuesta sustenta.
 4. Se le vuelve a preguntar lo mismo. Su nueva respuesta debe decir que el
