@@ -32,12 +32,14 @@
 | Cuestionarios completados en el sitio (experiencia ideal generada) | ~900 | ~1,800 | ~3,200 |
 | Leads del BDS por campañas de redes sociales (**100% texto**) | ~1,000 | ~2,500 | ~5,000 |
 | — con cuestionario aplicado (experiencia ideal + brief) | ~500 | ~1,250 | ~2,500 |
-| — atendidos por "BES" texto como respaldo (~60%) | ~600 | ~1,500 | ~3,000 |
+| — atendidos por "BES" texto (supuesto heredado del ~60%; ver nota) | ~600 | ~1,500 | ~3,000 |
 | Visitas agendadas (2 recordatorios *utility* c/u) | ~300 | ~600 | ~1,000 |
 | Plantillas *marketing* (reactivación de bases) | 0 | ~1,000 | ~2,000 |
 | Adherencia a la práctica semanal de la Academia | ~50% | ~75% | ~100% |
 
 Los volúmenes de BES web y de la Academia provienen de los escenarios ya pactados (Cláusula Décima Cuarta; **[Academia · §8](#academia-tecnica)**); los del BDS y los recordatorios son supuestos de diseño **a calibrar con datos reales** en los primeros 60–90 días.
+
+> **Nota sobre el supuesto del ~60%.** Ese porcentaje se fijó bajo la regla anterior de enrutamiento, en la que "BES" sólo entraba fuera del horario de operadores. Con la regla vigente —**"BES" atiende toda conversación entrante de WhatsApp, en todo horario**— la proporción real tiende al 100%, y el costo de mensajería y de modelo de este renglón **debe recalcularse al alza** antes de comprometer presupuesto. La cifra se conserva como estaba hasta que Sports World valide el nuevo supuesto: no se sustituye por una estimación no acordada.
 
 ## El desglose: cómo se calcula cada componente
 

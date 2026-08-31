@@ -505,6 +505,19 @@ regla("R22 · enrutamiento de WhatsApp", (falla) => {
       falla(f, i, "«human-first» describe la regla anterior: en WhatsApp atiende «BES» primero");
     if (/primero\s+(a\s+)?(un|una)\s+(operador|persona|asesor)|(operador|persona)[^.]{0,20}\(primero\)|atiende\s+primero\s+(un|una)\s+(operador|persona)/i.test(linea))
       falla(f, i, "afirma que atiende primero una persona: en WhatsApp atiende «BES» primero");
+
+    // La regla anterior también se escribía sin el término: describiendo a BES
+    // como respaldo del operador, o condicionando su intervención a que no
+    // hubiera operador disponible. Eso es lo que R22 no veía y NotebookLM sí
+    // (verificación de A-016, 31 de agosto de 2026).
+    // El markdown mete asteriscos y guiones bajos entre las palabras, así que
+    // el patrón los tolera: «**respaldo** del operador» debe caer igual que
+    // «respaldo del operador».
+    const plano = linea.replace(/[*_`]/g, "");
+    if (/"?BES"?[^.]{0,60}\b(como\s+)?respaldo\b[^.]{0,40}\b(operador|humano|persona)\b|\b(respaldo|apoyo)\s+del\s+(operador|humano)/i.test(plano))
+      falla(f, i, "presenta a «BES» como respaldo del operador: es la atención inicial, no el respaldo");
+    if (/(¿?\s*hay\s+(un\s+)?operador\s+(humano\s+)?disponible|si\s+no\s+hay\s+(operador|humano)|cuando\s+no\s+hay\s+operador\s+disponible|todos\s+los\s+operadores\s+est[aá]n\s+ocupados)/i.test(plano))
+      falla(f, i, "condiciona la atención a que haya operador disponible: en WhatsApp «BES» atiende siempre");
   });
   for (const archivo of ["mpc-01.html", "sop-0101.html"]) {
     const ruta = path.join(WEBAPP, "proceso", archivo);
