@@ -543,6 +543,66 @@ regla("R21 · el registro de cambios del proceso no se publica", (falla) => {
     falla("indice.es.md", 0, "dec-01 listado en el índice: el registro de cambios es interno y no se publica");
 });
 
+/* ─────────── R23 · las páginas para lectura automatizada van al día ─────────── */
+// `fuentes/*.html` es la superficie que NotebookLM ingiere, y NotebookLM no
+// vuelve a rastrear: lo que lee es la foto del día en que se cargó la fuente.
+// Si el generador se queda atrás, la verificación externa contesta sobre texto
+// viejo y un hallazgo ya corregido vuelve a darse por abierto — por un
+// artefacto, no por el documento. Ocurrió con A-016: cinco páginas seguían
+// publicando la regla anterior de enrutamiento. Esta regla lo impide sola.
+regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
+  const FUENTES = path.join(WEBAPP, "fuentes");
+  if (!fs.existsSync(FUENTES)) {
+    falla("fuentes/", 0, "falta la carpeta de páginas para lectura automatizada (node tools/build-fuentes.js)");
+    return;
+  }
+  const escapar = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const publicadas = new Set(
+    fs.readdirSync(FUENTES).filter((f) => f.endsWith(".html") && f !== "index.html")
+  );
+
+  for (const f of archivos) {
+    marcar(f);
+    const nombre = f.replace(/\.es\.md$/, ".html");
+    const ruta = path.join(FUENTES, nombre);
+    if (!fs.existsSync(ruta)) {
+      falla(f, 0, `no tiene página publicada en fuentes/${nombre} (node tools/build-fuentes.js)`);
+      continue;
+    }
+    publicadas.delete(nombre);
+    const pagina = fs.readFileSync(ruta, "utf8");
+    if (!pagina.includes(`<pre>${escapar(texto[f])}</pre>`))
+      falla(f, 0, `fuentes/${nombre} no coincide con el documento: la página está desactualizada (node tools/build-fuentes.js)`);
+  }
+
+  // Un documento borrado no puede sobrevivir como página publicada: NotebookLM
+  // seguiría citándolo como si existiera.
+  for (const huerfana of publicadas)
+    falla(`fuentes/${huerfana}`, 0, "página publicada sin documento que la respalde (node tools/build-fuentes.js)");
+
+  // Y la lista que se carga en NotebookLM tiene que nombrarlas todas: una fuente
+  // que no está en la lista es una fuente que nadie carga.
+  const LISTA = path.resolve(__dirname, "../../../verificacion/fuentes.md");
+  if (!fs.existsSync(LISTA)) {
+    falla("verificacion/fuentes.md", 0, "falta la lista de fuentes para NotebookLM (node tools/build-fuentes.js)");
+    return;
+  }
+  const lista = fs.readFileSync(LISTA, "utf8");
+  for (const f of archivos) {
+    const nombre = f.replace(/\.es\.md$/, ".html");
+    if (!lista.includes(`/fuentes/${nombre}`))
+      falla("verificacion/fuentes.md", 0, `no lista la fuente de ${f} (node tools/build-fuentes.js)`);
+  }
+  const PROCESO = path.join(WEBAPP, "proceso");
+  for (const p of fs.readdirSync(PROCESO).filter((f) => f.endsWith(".html") && f !== "dec-01.html")) {
+    if (!lista.includes(`/proceso/${p}`))
+      falla("verificacion/fuentes.md", 0, `no lista la página del Proceso Comercial ${p} (node tools/build-fuentes.js)`);
+  }
+  // DEC/SW/01 es interno (R21): no puede aparecer como fuente cargable.
+  if (/\/proceso\/dec-01\.html/.test(lista))
+    falla("verificacion/fuentes.md", 0, "lista dec-01 como fuente: el registro de cambios es interno");
+});
+
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);
 reglas.forEach((r) => console.log(`  ${r.fallas === 0 ? "\x1b[32m✓\x1b[0m" : "\x1b[31m✗\x1b[0m"} ${r.nombre}${r.fallas ? `  (${r.fallas})` : ""}`));
 if (fallas.length) {

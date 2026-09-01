@@ -16,6 +16,13 @@ const path = require("path");
 const WEBAPP = path.join(__dirname, "..", "webapp");
 const DOCS = path.join(WEBAPP, "docs");
 const SALIDA = path.join(WEBAPP, "fuentes");
+const PROCESO = path.join(WEBAPP, "proceso");
+const LISTA = path.join(__dirname, "..", "..", "..", "verificacion", "fuentes.md");
+const SITIO = "https://erictoled564.github.io/SW-Business-Development-System";
+
+// DEC/SW/01 se publica como aviso, no como documento: su contenido es interno
+// (ver R21). No es una fuente cargable.
+const PROCESO_INTERNO = new Set(["dec-01.html"]);
 
 const escapar = (s) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -77,4 +84,44 @@ fs.writeFileSync(
   )
 );
 
+// La lista de fuentes que hay que cargar en NotebookLM. Se genera aquí, junto
+// con las páginas, para que no pueda quedarse atrás: si aparece o desaparece un
+// documento, la lista cambia en la misma corrida. Cargarla a mano desde el sitio
+// era la forma de que faltara una fuente sin que nadie lo notara.
+const proceso = fs
+  .readdirSync(PROCESO)
+  .filter((f) => f.endsWith(".html") && !PROCESO_INTERNO.has(f))
+  .sort();
+
+const titulo = (archivo) => {
+  const t = fs.readFileSync(path.join(PROCESO, archivo), "utf8").match(/<title>([^<]*)<\/title>/);
+  return t ? t[1].replace(/\s*·\s*Sports World\s*$/, "").trim() : archivo;
+};
+
+const lista = [
+  "# Fuentes que se cargan en NotebookLM",
+  "",
+  "Archivo **generado** por `resultados/ux-v1/tools/build-fuentes.js`. No se edita a mano:",
+  "se rehace en cada corrida del generador, y la regla R23 de `tools/consistencia.js` falla",
+  "si alguna página no corresponde con su documento.",
+  "",
+  `Total: **${generadas.length + proceso.length} fuentes** — ${generadas.length} documentos del depósito y ${proceso.length} páginas del Proceso Comercial.`,
+  "",
+  "NotebookLM **no vuelve a rastrear**: cada fuente queda congelada en el momento en que se",
+  "carga. Después de publicar un cambio hay que **volver a cargar** las fuentes afectadas,",
+  "o la verificación contestará sobre texto viejo.",
+  "",
+  `## Documentos del depósito (${generadas.length})`,
+  "",
+  ...generadas.map((n) => `- \`${n.replace(/\.html$/, "")}\` — ${SITIO}/fuentes/${n}`),
+  "",
+  `## Proceso Comercial (${proceso.length})`,
+  "",
+  ...proceso.map((n) => `- ${titulo(n)} — ${SITIO}/proceso/${n}`),
+  "",
+];
+
+fs.writeFileSync(LISTA, lista.join("\n"));
+
 console.log(`${generadas.length} páginas generadas en webapp/fuentes/`);
+console.log(`Lista de ${generadas.length + proceso.length} fuentes escrita en verificacion/fuentes.md`);
