@@ -76,8 +76,20 @@ for (const h of hallazgos) {
     const texto = contenido(h[campo]);
     if (texto === null) {
       fallas.push(`${h.id}: declarado corregido sin la respuesta de NotebookLM de ${cuando} (${h[campo] || "sin archivo"})`);
-    } else if (texto.length < MINIMO) {
+      continue;
+    }
+    if (texto.length < MINIMO) {
       fallas.push(`${h.id}: la respuesta de ${cuando} tiene ${texto.length} caracteres; el mínimo son ${MINIMO}`);
+    }
+    // La pregunta tiene que haberse hecho con la plantilla. Sin ella NotebookLM
+    // aplica su propio criterio de relevancia y omite menciones: fue lo que dejó
+    // fuera un documento en la verificación de A-016.
+    if (!/ROL DE AUDITOR[ÍI]A Y BARRIDO LITERAL/i.test(texto)) {
+      fallas.push(`${h.id}: la evidencia de ${cuando} no contiene la plantilla obligatoria (ver plantilla-pregunta.md)`);
+    }
+    // Y tiene que traer la respuesta citando documentos, no un resumen.
+    if (!/\.es\.md|\.html|Frase textual|frase textual/.test(texto)) {
+      fallas.push(`${h.id}: la evidencia de ${cuando} no cita ningún documento ni transcribe frases`);
     }
   }
 }

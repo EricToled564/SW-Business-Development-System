@@ -61,6 +61,20 @@ Toda pieza —manual, cuestionario, procedimiento, capacitación, sitio— se es
 - Un commit por documento, con su nombre en el mensaje, para que cualquier cambio sea reversible por separado.
 - Rama de trabajo: `claude/new-session-1apjew`. Publicado en https://erictoled564.github.io/SW-Business-Development-System/
 
+## Cómo se corrigen los 88 hallazgos de la auditoría
+
+Una auditoría independiente encontró **88 contradicciones** entre documentos —44 críticas—, registradas en `verificacion/hallazgos.csv`. No se corrigen por criterio de quien escribe: se corrigen con verificación externa, porque el modo de falla ya está documentado.
+
+**El modo de falla.** Las contradicciones no se encuentran buscando palabras. El mismo hecho aparece escrito de formas distintas en documentos distintos, y quien corrige sólo lo que halla buscando un término deja vivo el resto. Ocurrió con A-016: se corrigieron los doce documentos que contenían «human-first» y sobrevivieron cuatro que decían lo mismo con otras palabras —«respaldo del operador», «si no hay operador disponible», un árbol de decisión que pregunta primero por el humano—. Uno de esos cuatro nunca contuvo el término. El detalle está en `verificacion/evidencia/A-016-verificacion-1.md`.
+
+**El método.** NotebookLM tiene cargados los documentos del proyecto como fuentes y responde citando documento y párrafo. El orden es: **primero él dice qué hay, después se corrige, después él confirma que ya no está.** Las dos respuestas se guardan íntegras en `verificacion/evidencia/`, sin resumir.
+
+**Toda pregunta usa la plantilla** de `verificacion/plantilla-pregunta.md`, nunca libre: sin ella NotebookLM aplica su propio criterio de relevancia y omite menciones.
+
+**Se trabaja por paquetes**, no hallazgo por hallazgo — la auditoría los agrupa en siete.
+
+**Lo que lo sostiene, y no depende de la memoria de nadie:** `verificacion/candado-notebooklm.js` rechaza cualquier hallazgo marcado como corregido sin sus dos evidencias, sin la plantilla dentro de ellas o sin citas a documentos. Corre en CI y como gancho de `pre-commit`; se instala con `node verificacion/instalar-candado.js`.
+
 ## Estado de las contradicciones
 
 **Cerradas: las nueve de la auditoría, más las que surgieron al someter el Contrato a las reglas.** Ya no se llevan en lista: cada una tiene una regla que la sostiene en `tools/consistencia.js` (20 reglas, 0 hallazgos, corre en CI). Si algo vuelve a aparecer, lo detecta el programa, no la memoria.

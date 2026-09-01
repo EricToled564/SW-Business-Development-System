@@ -10,6 +10,7 @@ on:
       - "resultados/ux-v1/tools/audit-docs.js"
       - "resultados/ux-v1/tools/consistencia.js"
       - "resultados/ux-v1/webapp/index.html"
+      - "verificacion/**"
       - ".github/workflows/audit-docs.yml"
   pull_request:
     paths:
@@ -17,6 +18,7 @@ on:
       - "resultados/ux-v1/webapp/app.js"
       - "resultados/ux-v1/tools/audit-docs.js"
       - "resultados/ux-v1/tools/consistencia.js"
+      - "verificacion/**"
   workflow_dispatch:
 
 permissions:
@@ -41,6 +43,9 @@ jobs:
       - name: Verificar consistencia del depósito
         working-directory: resultados/ux-v1
         run: node tools/consistencia.js
+
+      - name: Candado de verificación con NotebookLM
+        run: node verificacion/candado-notebooklm.js
 
       - name: Publicar reporte como artefacto
         if: always()
