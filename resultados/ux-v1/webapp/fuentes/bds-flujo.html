@@ -45,18 +45,17 @@ Un lead puede entrar al BDS por cualquiera de estos orígenes, y **todos converg
 
 ## El árbol de enrutamiento ("BES" primero, con escalamiento a operador)
 
-Cuando entra un lead que requiere atención conversacional (orígenes 1, 2 y 4), el sistema evalúa, **en este orden**:
+Cuando entra un lead que requiere atención conversacional (orígenes 1, 2 y 4), el sistema procede **en este orden**:
 
-1. **¿Hay un operador humano disponible y en horario de atención?**
-   - **Sí →** se asigna a un **operador humano por WhatsApp**, que aplica el cuestionario y agenda en tiempo real.
-   - **No →** siguiente paso.
-2. **¿Está fuera de horario, o todos los operadores están ocupados?**
-   - **Sí →** **"BES" por WhatsApp (solo texto)** atiende de inmediato: aplica el cuestionario, arma la experiencia ideal y agenda la visita.
-3. **Escalación.** Durante una conversación de "BES", si el usuario lo pide o el caso lo amerita, "BES" **transfiere al operador humano** (o agenda una devolución de llamada), sin perder el contexto ya capturado.
+1. **"BES" atiende, siempre.** **"BES" por WhatsApp (solo texto)** toma la conversación de inmediato, en todo horario y sin espera: aplica el cuestionario, arma la experiencia ideal y agenda la visita. No se consulta si hay operadores disponibles, porque la disponibilidad no condiciona el primer contacto.
+2. **¿El usuario pide hablar con una persona, el caso cae en una excepción o riesgo, o lo dispara una política de escalamiento aprobada?**
+   - **Sí →** se escala a un **operador humano**, que recibe el contexto ya capturado y continúa desde ahí.
+   - **No →** "BES" completa la conversación y cierra con la visita agendada.
+3. **Fuera del horario de operadores, o sin operador disponible.** El escalamiento se convierte en **devolución de llamada agendada**, con responsable y fecha; la conversación con "BES" continúa mientras tanto.
 
 El **walk-in (origen 3)** no pasa por el árbol: el **asesor de club** atiende directamente desde la **consola interna**, con el mismo cuestionario.
 
-&gt; **Regla de oro:** ningún lead se queda sin atención inmediata. Si no hay humano, hay "BES"; si "BES" no basta, escala a humano. El objetivo es **cero espera**.
+&gt; **Regla de oro:** ningún lead se queda sin atención inmediata. La primera respuesta es siempre de "BES"; la persona entra cuando el usuario la pide o el caso lo exige. El objetivo es **cero espera**.
 
 ## Qué se reutiliza (sin duplicar)
 
