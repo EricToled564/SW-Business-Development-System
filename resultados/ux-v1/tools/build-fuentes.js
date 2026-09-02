@@ -35,6 +35,7 @@ const MOD = path.join(WEBAPP, "mod");
 const PROCESO = path.join(WEBAPP, "proceso");
 const RAIZ = path.join(UX, "..", "..");
 const VERIFICACION = path.join(RAIZ, "verificacion");
+const TXT = path.join(VERIFICACION, "txt");
 const SITIO = "https://erictoled564.github.io/SW-Business-Development-System";
 
 // El estado del depósito sobre el que se hizo la auditoría de los 88 hallazgos:
@@ -174,6 +175,9 @@ function limpiar(dir) {
 }
 
 [ORIGINAL, MOD].forEach(limpiar);
+fs.mkdirSync(TXT, { recursive: true });
+for (const viejo of fs.readdirSync(TXT).filter((f) => f.endsWith(".txt")))
+  fs.unlinkSync(path.join(TXT, viejo));
 fs.mkdirSync(DOCS_MOD, { recursive: true });
 
 const archivos = fs.readdirSync(DOCS).filter((f) => f.endsWith(".es.md")).sort();
@@ -193,6 +197,7 @@ for (const [rel, nombre] of CODIGO) {
       fuente
     )
   );
+  fs.writeFileSync(path.join(TXT, salida.replace(/\.html$/, ".txt")), fuente);
   codigo.push([salida, nombre]);
 }
 
@@ -218,6 +223,7 @@ for (const archivo of archivos) {
       original
     )
   );
+  fs.writeFileSync(path.join(TXT, `${id}.txt`), original);
   grupo1.push(`${id}.html`);
 
   /* Grupo 2 · la versión en la que se trabajan las correcciones. */
@@ -243,6 +249,7 @@ for (const archivo of archivos) {
       mod
     )
   );
+  fs.writeFileSync(path.join(TXT, `${id}-MOD.txt`), mod);
   grupo2.push(`${id}-MOD.html`);
   registro.push({ id, archivo, cambios });
 }
@@ -272,8 +279,20 @@ const lista = [
   "si alguna página no corresponde con lo que debe reproducir o si esta lista no las nombra todas.",
   "",
   "**NotebookLM no vuelve a rastrear:** cada fuente queda congelada en el momento en que se carga.",
-  "Después de publicar un cambio hay que **volver a cargar** las fuentes afectadas, o la verificación",
-  "contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca antes.",
+  "Después de un cambio hay que **volver a cargar** las fuentes afectadas, o la verificación",
+  "contestará sobre texto viejo.",
+  "",
+  "## Cómo se cargan",
+  "",
+  "**Los documentos y el código se cargan como texto pegado**, con `add_source` en modo `text`,",
+  "desde los archivos de `verificacion/txt/`. Así no hay rastreo de por medio: lo que lee",
+  "NotebookLM es carácter por carácter el archivo, y no depende de que una página se publique",
+  "ni de cómo la interprete un rastreador. R23 comprueba esa identidad en cada corrida.",
+  "",
+  "**Las páginas HTML se cargan por URL**, en modo `url`: son las 7 del Proceso Comercial y las 3",
+  "del sitio. No tienen un archivo de texto detrás —se escribieron directamente como páginas—, así",
+  "que extraer su texto lo hace el rastreador de NotebookLM y no nosotros. Convertirlas a mano",
+  "sería transcribirlas, que es justo lo que este método evita.",
   "",
   "## Los cuadernos",
   "",

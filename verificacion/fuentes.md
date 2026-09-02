@@ -5,8 +5,20 @@ se rehace en cada corrida del generador, y la regla **R23** de `tools/consistenc
 si alguna página no corresponde con lo que debe reproducir o si esta lista no las nombra todas.
 
 **NotebookLM no vuelve a rastrear:** cada fuente queda congelada en el momento en que se carga.
-Después de publicar un cambio hay que **volver a cargar** las fuentes afectadas, o la verificación
-contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca antes.
+Después de un cambio hay que **volver a cargar** las fuentes afectadas, o la verificación
+contestará sobre texto viejo.
+
+## Cómo se cargan
+
+**Los documentos y el código se cargan como texto pegado**, con `add_source` en modo `text`,
+desde los archivos de `verificacion/txt/`. Así no hay rastreo de por medio: lo que lee
+NotebookLM es carácter por carácter el archivo, y no depende de que una página se publique
+ni de cómo la interprete un rastreador. R23 comprueba esa identidad en cada corrida.
+
+**Las páginas HTML se cargan por URL**, en modo `url`: son las 7 del Proceso Comercial y las 3
+del sitio. No tienen un archivo de texto detrás —se escribieron directamente como páginas—, así
+que extraer su texto lo hace el rastreador de NotebookLM y no nosotros. Convertirlas a mano
+sería transcribirlas, que es justo lo que este método evita.
 
 ## Los cuadernos
 

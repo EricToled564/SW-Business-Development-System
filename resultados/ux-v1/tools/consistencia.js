@@ -709,6 +709,52 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
     }
   }
 
+  // Los .txt son lo que se pega en NotebookLM. Tienen que ser el archivo tal cual:
+  // si difieren, la verificación externa contesta sobre un texto que no existe.
+  const TXT = path.join(RAIZ, "verificacion/txt");
+  if (!fs.existsSync(TXT)) {
+    falla("verificacion/txt/", 0, "falta la carpeta de textos para cargar en NotebookLM (node tools/build-fuentes.js)");
+  } else {
+    const sobranTxt = new Set(fs.readdirSync(TXT).filter((f) => f.endsWith(".txt")));
+    for (const f of archivos) {
+      const id = f.replace(/\.es\.md$/, "");
+      let original = null;
+      try {
+        original = execSync(`git show ${BASE}:resultados/ux-v1/webapp/docs/${f}`, {
+          encoding: "utf8", cwd: RAIZ, stdio: ["ignore", "pipe", "pipe"], maxBuffer: 32 * 1024 * 1024,
+        });
+      } catch { continue; }
+      const rutaMod = path.join(DOCS_MOD, `${id}-MOD.es.md`);
+      for (const [nombre, esperado] of [
+        [`${id}.txt`, original],
+        [`${id}-MOD.txt`, fs.existsSync(rutaMod) ? fs.readFileSync(rutaMod, "utf8") : null],
+      ]) {
+        if (esperado === null) continue;
+        const ruta = path.join(TXT, nombre);
+        if (!fs.existsSync(ruta)) {
+          falla(`verificacion/txt/${nombre}`, 0, "falta el texto para cargar en NotebookLM (node tools/build-fuentes.js)");
+          continue;
+        }
+        sobranTxt.delete(nombre);
+        if (fs.readFileSync(ruta, "utf8") !== esperado)
+          falla(`verificacion/txt/${nombre}`, 0, "no reproduce su archivo carácter por carácter (node tools/build-fuentes.js)");
+      }
+    }
+    const txtCodigo = "cuestionario-inteligente.txt";
+    const fuenteCodigo = path.join(WEBAPP, "demo/cuestionario-inteligente.jsx");
+    if (fs.existsSync(fuenteCodigo)) {
+      const ruta = path.join(TXT, txtCodigo);
+      if (!fs.existsSync(ruta)) falla(`verificacion/txt/${txtCodigo}`, 0, "falta el texto del código (node tools/build-fuentes.js)");
+      else {
+        sobranTxt.delete(txtCodigo);
+        if (fs.readFileSync(ruta, "utf8") !== fs.readFileSync(fuenteCodigo, "utf8"))
+          falla(`verificacion/txt/${txtCodigo}`, 0, "no reproduce el código carácter por carácter (node tools/build-fuentes.js)");
+      }
+    }
+    for (const suelto of sobranTxt)
+      falla(`verificacion/txt/${suelto}`, 0, "texto sin archivo que lo respalde (node tools/build-fuentes.js)");
+  }
+
   // El cuaderno tiene un límite de 50 fuentes. Pasarlo no es un detalle: obliga
   // a dejar documentos fuera, y un documento fuera es un hallazgo que no se ve.
   const proceso = fs.readdirSync(PROCESO).filter((f) => f.endsWith(".html") && f !== "dec-01.html").length;
