@@ -21,8 +21,8 @@ ese documento.
 > brevedad, ni la elegancia conversacional. Prefiero una respuesta masiva, larga y
 > redundante a una sola omisión.
 >
-> **1. Barrido lineal.** Revisa secuencialmente las 49 fuentes del proyecto, de la 1
-> a la 49. Si el concepto o palabra **[CONCEPTO]** aparece en una fuente, esa fuente
+> **1. Barrido lineal.** Revisa secuencialmente las **[N_FUENTES]** fuentes cargadas,
+> de la 1 a la **[N_FUENTES]**. Si el concepto o palabra **[CONCEPTO]** aparece en una fuente, esa fuente
 > DEBE incluirse en el reporte final. No juzgues si la mención es «de paso»,
 > «secundaria» o «redundante».
 >
@@ -36,10 +36,24 @@ ese documento.
 > preciso —si es una tabla, un anexo, un procedimiento o una minuta.
 >
 > **4. Recuento con puerta de calidad.** Antes de responder, cuenta cuántos
-> documentos cumplen el criterio y abre la respuesta con: «Tras revisar las 49
+> documentos cumplen el criterio y abre la respuesta con: «Tras revisar las [N_FUENTES]
 > fuentes una por una, he identificado exactamente [N] documentos que contienen
 > [CONCEPTO]. Aquí está el desglose de los [N] documentos sin omitir ninguno.» Si el
 > recuento no coincide con la lista, detente y vuelve a escanear.
+
+---
+
+## Los dos valores que se sustituyen
+
+**`[CONCEPTO]`** — lo que se busca: el término, la regla o la cifra del hallazgo.
+
+**`[N_FUENTES]`** — cuántas fuentes tiene cargadas el cuaderno al que se pregunta.
+**No se escribe de memoria:** se toma de `fuentes.md`, que lo genera el propio
+programa. Un número inventado rompe justo lo que hace útil a la plantilla — la
+puerta de calidad, que obliga a recorrer la lista completa antes de redactar.
+La versión anterior de este archivo traía «49» fijo, heredado de un cuaderno que
+ya no existe; hoy son 41 por cuaderno. La regla R23 falla si vuelve a fijarse
+un número aquí.
 
 ---
 

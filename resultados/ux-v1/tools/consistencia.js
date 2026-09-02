@@ -673,6 +673,23 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
       falla("verificacion/fuentes.md", 0, `no lista la página del sitio ${w} (node tools/build-fuentes.js)`);
   }
 
+  // La plantilla de preguntas no puede fijar cuántas fuentes tiene el cuaderno:
+  // ese número cambia y un número viejo rompe la puerta de calidad que obliga a
+  // NotebookLM a recorrer la lista completa. Traía «49», de un cuaderno que ya no
+  // existe. Va como marcador y se sustituye al preguntar, con el dato de fuentes.md.
+  const PLANTILLA = path.join(RAIZ, "verificacion/plantilla-pregunta.md");
+  if (!fs.existsSync(PLANTILLA)) {
+    falla("verificacion/plantilla-pregunta.md", 0, "falta la plantilla obligatoria de preguntas");
+  } else {
+    const t = fs.readFileSync(PLANTILLA, "utf8");
+    const bloque = t.split("\n").filter((l) => l.startsWith(">")).join("\n");
+    if (!/\[N_FUENTES\]/.test(bloque))
+      falla("verificacion/plantilla-pregunta.md", 0, "la plantilla no usa el marcador [N_FUENTES]");
+    const fijo = bloque.match(/las\s+(\d+)\s+fuentes/i);
+    if (fijo)
+      falla("verificacion/plantilla-pregunta.md", 0, `la plantilla fija «${fijo[1]} fuentes»: el número se sustituye al preguntar, con el dato de fuentes.md`);
+  }
+
   // El cuaderno tiene un límite de 50 fuentes. Pasarlo no es un detalle: obliga
   // a dejar documentos fuera, y un documento fuera es un hallazgo que no se ve.
   const proceso = fs.readdirSync(PROCESO).filter((f) => f.endsWith(".html") && f !== "dec-01.html").length;
