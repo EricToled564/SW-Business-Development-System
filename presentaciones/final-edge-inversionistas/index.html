@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Final Edge AI — Presentación para inversionistas</title>
+<meta name="description" content="Final Edge AI. Consultoría de integración de inteligencia artificial en procesos productivos. Singapur · Ciudad de México.">
+<link rel="icon" href="assets/caret-mark.svg">
+<style>
+/* Geist y Geist Mono autohospedados: el documento se ve igual sin conexión. */
+@font-face{font-family:"Geist";font-style:normal;font-weight:300 700;font-display:swap;
+  src:url(assets/fonts/geist-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Geist";font-style:normal;font-weight:300 700;font-display:swap;
+  src:url(assets/fonts/geist-latin-ext.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:400 700;font-display:swap;
+  src:url(assets/fonts/geist-mono-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:400 700;font-display:swap;
+  src:url(assets/fonts/geist-mono-latin-ext.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+/* ============================================================
+   Final Edge AI — deck para inversionistas
+   Paleta y tipografía tomadas del sitio de marca:
+   https://web-page-final-edge-redesign.vercel.app/
+   (variables leídas de /_astro/index.css y /fonts/fonts.css)
+   ============================================================ */
+:root{
+  --void-deep:#08080A;
+  --bg:#0E0E12;
+  --panel:#0B0B0E;
+  --card:#0A0A0C;
+  --fg:#F4F4F2;
+  --fg-2:#C6C6CC;
+  --fg-muted:#A0A0A8;
+  --fg-faint:#7E7E88;
+  --hairline:#1A1A1E;
+  --hairline-nav:#16161A;
+  --accent:#1E80F0;
+  --accent-active:#1668C2;
+  --on-accent:#FFFFFF;
+  --logo-blue:#3187F6;
+  --silver:#8F8F8F;
+  --phase-eval:#F4920C;
+  --phase-cap:#15D9D9;
+  --phase-exe:#E15CDB;
+  --hub-ring:#1A2A40;
+  --font-read:"Geist",system-ui,-apple-system,Segoe UI,sans-serif;
+  --font-ui:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --t-ui:.28s;
+  --gut:clamp(24px,5vw,88px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{scroll-behavior:auto}
+body{
+  background:var(--void-deep);
+  color:var(--fg);
+  font-family:var(--font-read);
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow:hidden;
+}
+h1,h2,h3,h4,p,ul,ol,figure,blockquote{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+
+/* ---------- chrome ---------- */
+.topbar{
+  position:fixed;inset:0 0 auto 0;height:56px;z-index:60;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 var(--gut);
+  background:linear-gradient(to bottom,rgba(8,8,10,.96),rgba(8,8,10,.72) 70%,transparent);
+  border-bottom:1px solid var(--hairline-nav);
+  pointer-events:none;
+}
+.topbar .brand{display:flex;align-items:center;gap:12px;pointer-events:auto}
+.topbar .brand img{height:15px;width:auto;display:block;opacity:.92}
+.topbar .tagline{
+  font-family:var(--font-ui);font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--fg-faint);border-left:1px solid var(--hairline);padding-left:12px;
+}
+.counter{font-family:var(--font-ui);font-size:11px;letter-spacing:.16em;color:var(--fg-faint)}
+.counter b{color:var(--fg-2);font-weight:500}
+.progress{position:fixed;top:0;left:0;height:2px;background:var(--accent);z-index:70;width:0;transition:width .4s var(--ease)}
+
+.nav{
+  position:fixed;bottom:22px;right:var(--gut);z-index:60;
+  display:flex;gap:8px;
+}
+.nav button{
+  width:42px;height:42px;border-radius:2px;
+  background:var(--card);border:1px solid var(--hairline);
+  color:var(--fg-2);font-family:var(--font-ui);font-size:14px;
+  cursor:pointer;transition:border-color var(--t-ui) var(--ease),color var(--t-ui) var(--ease);
+  display:grid;place-items:center;
+}
+.nav button:hover{border-color:var(--accent);color:var(--fg)}
+.nav button:disabled{opacity:.3;cursor:default;border-color:var(--hairline);color:var(--fg-faint)}
+.hint{
+  position:fixed;bottom:32px;left:var(--gut);z-index:60;
+  font-family:var(--font-ui);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--fg-faint);
+}
+
+/* ---------- deck ---------- */
+.deck{position:fixed;inset:0;overflow:hidden}
+.slide{
+  position:absolute;inset:0;
+  padding:92px var(--gut) 112px;
+  overflow-y:auto;overscroll-behavior:contain;
+  opacity:0;visibility:hidden;
+  transform:translateY(14px);
+  transition:opacity .5s var(--ease),transform .5s var(--ease),visibility 0s linear .5s;
+}
+.slide.is-active{opacity:1;visibility:visible;transform:none;transition-delay:0s,0s,0s}
+.slide::-webkit-scrollbar{width:6px}
+.slide::-webkit-scrollbar-thumb{background:var(--hairline);border-radius:3px}
+.wrap{max-width:1180px;margin:0 auto;min-height:100%;display:flex;flex-direction:column;justify-content:center}
+
+/* ---------- primitives ---------- */
+.kicker{
+  font-family:var(--font-ui);font-size:11px;font-weight:500;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--fg-faint);
+  display:flex;align-items:center;gap:10px;margin-bottom:26px;
+}
+.kicker::before{content:">_";color:var(--accent);letter-spacing:-.04em}
+.kicker .num{margin-left:auto;color:var(--hairline);letter-spacing:.1em}
+h2.title{
+  font-size:clamp(30px,4.2vw,54px);font-weight:600;letter-spacing:-.028em;line-height:1.06;
+  max-width:20ch;
+}
+h2.title .caret{
+  color:var(--accent);font-weight:300;font-size:.6em;line-height:1;
+  position:relative;top:-.05em;margin-left:.05em;
+  animation:blink 1.6s steps(2) infinite;
+}
+@keyframes blink{50%{opacity:0}}
+.lead{
+  font-size:clamp(16px,1.55vw,20px);line-height:1.55;color:var(--fg-2);
+  max-width:66ch;margin-top:22px;font-weight:300;
+}
+.lead strong{color:var(--fg);font-weight:500}
+.rule{height:1px;background:var(--hairline);margin:34px 0;border:0}
+.mono{font-family:var(--font-ui)}
+.muted{color:var(--fg-muted)}
+.faint{color:var(--fg-faint)}
+
+.src{
+  font-family:var(--font-ui);font-size:10px;letter-spacing:.1em;color:var(--fg-faint);
+  margin-top:20px;line-height:1.7;
+}
+.src b{color:var(--fg-muted);font-weight:500}
+
+.grid{display:grid;gap:1px;background:var(--hairline);border:1px solid var(--hairline)}
+.grid > *{background:var(--bg);padding:24px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+
+.stat{display:flex;flex-direction:column;gap:8px}
+.stat .n{
+  font-family:var(--font-ui);font-weight:600;font-size:clamp(26px,3.2vw,42px);
+  letter-spacing:-.03em;line-height:1;color:var(--fg);
+}
+.stat .n.acc{color:var(--accent)}
+.stat .n.eval{color:var(--phase-eval)}
+.stat .n.cap{color:var(--phase-cap)}
+.stat .n.exe{color:var(--phase-exe)}
+.stat .l{font-size:13.5px;line-height:1.5;color:var(--fg-muted)}
+.stat .s{font-family:var(--font-ui);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-faint);margin-top:2px}
+
+.tag{
+  display:inline-block;font-family:var(--font-ui);font-size:9.5px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;
+  padding:4px 8px;border:1px solid var(--hairline);color:var(--fg-muted);border-radius:2px;
+}
+.tag.eval{color:var(--phase-eval);border-color:color-mix(in srgb,var(--phase-eval) 34%,transparent)}
+.tag.cap{color:var(--phase-cap);border-color:color-mix(in srgb,var(--phase-cap) 34%,transparent)}
+.tag.exe{color:var(--phase-exe);border-color:color-mix(in srgb,var(--phase-exe) 34%,transparent)}
+.tag.blue{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
+
+blockquote.pull{
+  border-left:2px solid var(--accent);padding-left:22px;
+  font-size:clamp(19px,2.3vw,30px);font-weight:300;line-height:1.32;letter-spacing:-.02em;
+  color:var(--fg);max-width:26ch;
+}
+
+/* ---------- cover ---------- */
+.cover .wrap{justify-content:center}
+.cover .logo-big{max-width:min(560px,72vw);width:100%;height:auto;display:block;margin-bottom:44px}
+.cover h1{
+  font-size:clamp(38px,7vw,104px);font-weight:600;letter-spacing:-.045em;line-height:.94;
+}
+.cover h1 em{
+  font-style:normal;color:var(--accent);font-weight:300;
+  font-size:.62em;line-height:1;position:relative;top:-.06em;margin-left:.06em;
+  animation:blink 1.6s steps(2) infinite;
+}
+.cover .meta{
+  display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:40px;
+}
+.cover .beam{
+  margin-top:56px;padding-top:26px;border-top:1px solid var(--hairline);
+  display:flex;flex-wrap:wrap;gap:26px 44px;
+  font-family:var(--font-ui);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-faint);
+}
+.cover .beam b{display:block;color:var(--fg-2);font-weight:500;letter-spacing:.1em;margin-top:5px;text-transform:none;font-size:12.5px}
+
+/* ---------- wheel ---------- */
+.wheel-layout{display:grid;grid-template-columns:minmax(280px,1fr) minmax(300px,1.05fr);gap:clamp(24px,4vw,64px);align-items:center}
+.wheel-stage{position:relative;display:grid;place-items:center}
+.wheel-stage svg{width:100%;max-width:360px;height:auto;overflow:visible}
+.seg{cursor:pointer;transition:opacity .3s var(--ease),transform .35s var(--ease);transform-origin:0 0;opacity:.86}
+.seg:hover,.seg.on{opacity:1}
+.seg.on path{filter:drop-shadow(0 0 14px currentColor)}
+.wheel-stage .hub{fill:var(--card);stroke:var(--hub-ring)}
+.wheel-stage .hubtext{font-family:var(--font-ui);font-size:9px;letter-spacing:.16em;fill:var(--fg-faint);text-anchor:middle;text-transform:uppercase}
+.wheel-stage .seglabel{font-family:var(--font-ui);font-size:10.5px;font-weight:500;letter-spacing:.06em;fill:#08080A;text-anchor:middle;pointer-events:none}
+.wheel-list{display:flex;flex-direction:column;gap:1px;background:var(--hairline);border:1px solid var(--hairline)}
+.wheel-list li{background:var(--bg);padding:14px 18px;cursor:pointer;transition:background var(--t-ui) var(--ease)}
+.wheel-list li:hover,.wheel-list li.on{background:var(--card)}
+.wheel-list .row{display:flex;align-items:baseline;gap:12px}
+.wheel-list .key{font-family:var(--font-ui);font-size:13px;font-weight:600;letter-spacing:-.01em}
+.wheel-list .es{font-size:13px;color:var(--fg-muted)}
+.wheel-list .zn{margin-left:auto;font-family:var(--font-ui);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-faint)}
+.wheel-list .desc{font-size:12.5px;line-height:1.55;color:var(--fg-muted);margin-top:8px;display:none}
+.wheel-list li.on .desc{display:block}
+
+/* ---------- services ---------- */
+.svc{display:flex;flex-direction:column;gap:12px;padding:22px}
+.svc .head{display:flex;align-items:baseline;gap:10px}
+.svc .key{font-family:var(--font-ui);font-size:14.5px;font-weight:600;letter-spacing:-.01em}
+.svc .idx{font-family:var(--font-ui);font-size:10px;color:var(--fg-faint);margin-left:auto}
+.svc .es{font-size:12px;color:var(--fg-muted);font-family:var(--font-ui);letter-spacing:.04em}
+.svc p{font-size:13px;line-height:1.55;color:var(--fg-2);font-weight:300}
+.svc .metric{font-family:var(--font-ui);font-size:11.5px;letter-spacing:.04em;color:var(--fg-muted);margin-top:auto;padding-top:10px;border-top:1px solid var(--hairline)}
+.svc .metric b{font-weight:600}
+.svc.e-eval .key{color:var(--phase-eval)} .svc.e-eval .metric b{color:var(--phase-eval)}
+.svc.e-cap .key{color:var(--phase-cap)}  .svc.e-cap .metric b{color:var(--phase-cap)}
+.svc.e-exe .key{color:var(--phase-exe)}  .svc.e-exe .metric b{color:var(--phase-exe)}
+
+/* ---------- evidence ---------- */
+.case{padding:22px;display:flex;flex-direction:column;gap:10px}
+.case .cli{font-family:var(--font-ui);font-size:12.5px;font-weight:600;letter-spacing:.02em;color:var(--fg)}
+.case .what{font-size:13px;line-height:1.55;color:var(--fg-muted);font-weight:300}
+
+/* ---------- comparison ---------- */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hairline);border:1px solid var(--hairline)}
+.vs > div{background:var(--bg);padding:26px}
+.vs .them{color:var(--fg-faint)}
+.vs h4{font-family:var(--font-ui);font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px;font-weight:500}
+.vs .them h4{color:var(--fg-faint)}
+.vs .us h4{color:var(--accent)}
+.vs li{font-size:14px;line-height:1.5;padding:11px 0;border-bottom:1px solid var(--hairline);font-weight:300}
+.vs li:last-child{border-bottom:0}
+.vs .us li{color:var(--fg-2)}
+
+/* ---------- map / footprint ---------- */
+.geo{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--hairline);border:1px solid var(--hairline)}
+.geo > div{background:var(--bg);padding:30px;display:flex;flex-direction:column;gap:12px}
+.geo .hub-title{font-size:clamp(22px,2.6vw,34px);font-weight:500;letter-spacing:-.03em}
+.geo .coords{font-family:var(--font-ui);font-size:10px;letter-spacing:.16em;color:var(--fg-faint);text-transform:uppercase}
+.geo .role{font-size:13.5px;line-height:1.55;color:var(--fg-muted);font-weight:300}
+
+/* ---------- Eric ---------- */
+.bio{display:grid;grid-template-columns:minmax(190px,.6fr) minmax(320px,1.9fr);gap:clamp(22px,3vw,44px);align-items:start}
+.portraits{display:flex;flex-direction:column;gap:12px;max-width:250px}
+.pf{
+  position:relative;border:1px solid var(--hairline);background:var(--card);
+  aspect-ratio:1/1.06;overflow:hidden;border-radius:2px;
+}
+.pf img{
+  width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block;
+  filter:grayscale(1) contrast(1.06) brightness(.98);
+  transition:filter .5s var(--ease);
+}
+.pf:hover img{filter:grayscale(.15) contrast(1.02)}
+.pf::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to top,rgba(8,8,10,.55),transparent 45%);
+}
+.pf .cap{
+  position:absolute;left:10px;bottom:9px;z-index:2;
+  font-family:var(--font-ui);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-muted);
+}
+.pf.alt{aspect-ratio:1/1}
+/* marco vacío mientras el archivo de la fotografía no esté colocado */
+.pf.empty{display:grid;place-items:center;background:
+  repeating-linear-gradient(135deg,transparent,transparent 9px,rgba(30,128,240,.05) 9px,rgba(30,128,240,.05) 10px),
+  var(--card);
+  border-style:dashed;border-color:var(--hub-ring);}
+.pf.empty img{display:none}
+.pf.empty::after{display:none}
+.pf.empty .cap{display:none}
+.pf .slot{display:none;text-align:center;padding:18px;gap:8px;flex-direction:column}
+.pf.empty .slot{display:flex}
+.pf .slot .mk{font-family:var(--font-ui);font-size:16px;color:var(--accent);letter-spacing:-.04em}
+.pf .slot .fn{font-family:var(--font-ui);font-size:10.5px;letter-spacing:.06em;color:var(--fg-2);word-break:break-all}
+.pf .slot .nt{font-family:var(--font-ui);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-faint);line-height:1.7}
+.bio .name{font-size:clamp(28px,3.6vw,46px);font-weight:600;letter-spacing:-.035em;line-height:1}
+.bio .role{font-family:var(--font-ui);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:12px}
+.bio .sub{font-size:14.5px;line-height:1.5;color:var(--fg-2);margin-top:14px;font-weight:300;max-width:64ch}
+.bio .grid > *{padding:18px}
+.bio .stat .n{font-size:clamp(20px,2.1vw,28px);white-space:nowrap}
+.bio .stat .l{font-size:12.5px}
+.bio .grid{margin-top:22px !important}
+.track{margin-top:22px;display:flex;flex-direction:column;gap:1px;background:var(--hairline);border:1px solid var(--hairline)}
+.track li{background:var(--bg);padding:10px 15px;display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:baseline}
+.track .yr{font-family:var(--font-ui);font-size:10.5px;letter-spacing:.1em;color:var(--fg-faint)}
+.track .co{font-size:12.8px;line-height:1.45}
+.track .co b{font-weight:600}
+.track .co span{color:var(--fg-muted);font-weight:300}
+.langs{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+
+/* ---------- contact ---------- */
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:14px 24px;border-radius:2px;text-decoration:none;
+  font-family:var(--font-ui);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+  transition:background var(--t-ui) var(--ease),border-color var(--t-ui) var(--ease),color var(--t-ui) var(--ease);
+}
+.btn.primary{background:var(--accent);color:var(--on-accent);border:1px solid var(--accent)}
+.btn.primary:hover{background:var(--accent-active);border-color:var(--accent-active)}
+.btn.ghost{background:transparent;color:var(--fg-2);border:1px solid var(--hairline)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--fg)}
+
+/* ---------- notes slide ---------- */
+.notes li{
+  padding:13px 0;border-bottom:1px solid var(--hairline);
+  display:grid;grid-template-columns:minmax(140px,190px) 1fr;gap:18px;align-items:baseline;
+}
+.notes li:last-child{border-bottom:0}
+.notes .k{font-family:var(--font-ui);font-size:11px;letter-spacing:.1em;color:var(--fg-muted)}
+.notes .v{font-size:13.5px;line-height:1.55;color:var(--fg-2);font-weight:300}
+.notes .v em{font-style:normal;color:var(--phase-eval)}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .wheel-layout{grid-template-columns:1fr}
+  .bio{grid-template-columns:1fr}
+  .portraits{flex-direction:row}
+  .pf{flex:1}
+  .geo{grid-template-columns:1fr}
+  .vs{grid-template-columns:1fr}
+  .hint{display:none}
+}
+@media (max-width:620px){
+  .g4,.g3,.g2{grid-template-columns:1fr}
+  .slide{padding:88px 22px 120px}
+  .notes li{grid-template-columns:1fr;gap:4px}
+  .track li{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){
+  .slide{transition:opacity .01s}
+  h2.title .caret{animation:none}
+  .seg{transition:none}
+}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  @page{size:1280px 800px;margin:0}
+  body{overflow:visible;background:#08080A}
+  .topbar,.nav,.hint,.progress{display:none}
+  .deck{position:static}
+  .slide{
+    position:static;opacity:1;visibility:visible;transform:none;
+    width:1280px;min-height:800px;height:auto;overflow:visible;
+    page-break-after:always;break-after:page;
+    padding:56px 64px;
+  }
+  .slide:last-child{page-break-after:auto;break-after:auto}
+  .wrap{max-width:none}
+  .wheel-list .desc{display:block}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/logo-inline-on-dark.svg" alt="Final Edge AI">
+    <span class="tagline">Presentación para inversionistas</span>
+  </div>
+  <div class="counter"><b id="cur">01</b> / <span id="tot">13</span></div>
+</header>
+
+<main class="deck" id="deck">
+
+<!-- ===== 01 · portada ===== -->
+<section class="slide cover is-active" aria-label="Portada">
+  <div class="wrap">
+    <img class="logo-big" src="assets/logo-stacked-on-dark.svg" alt="Final Edge AI">
+    <h1>tu ventaja<br>definitiva <em>▌</em></h1>
+    <div class="meta">
+      <span class="tag blue">Integración de IA en procesos productivos</span>
+      <span class="tag">Fundada en 2021</span>
+      <span class="tag">Singapur · Ciudad de México</span>
+    </div>
+    <div class="beam">
+      <div>Documento<b>Presentación para inversionistas</b></div>
+      <div>Presenta<b>Eric Toledano · Managing Partner LatAm</b></div>
+      <div>Fecha<b>Septiembre 2026</b></div>
+      <div>Confidencial<b>Uso restringido</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 · qué es ===== -->
+<section class="slide" aria-label="Qué es Final Edge AI">
+  <div class="wrap">
+    <div class="kicker">quiénes somos<span class="num">02</span></div>
+    <h2 class="title" style="max-width:24ch;font-size:clamp(28px,3.6vw,46px)">Integramos IA en los procesos productivos de las corporaciones.<span class="caret">▌</span></h2>
+    <p class="lead">Final Edge AI es la consultoría de integración de inteligencia artificial de <strong>Final Upgrade AI</strong>. Fundada en <strong>2021</strong>, opera desde dos centros: <strong>Singapur</strong> para Asia y <strong>Ciudad de México</strong> para Latinoamérica. No vendemos herramientas ni pilotos: dirigimos la IA hacia resultados operativos medibles dentro de procesos que ya existen.</p>
+    <hr class="rule">
+    <div class="grid g4">
+      <div class="stat"><span class="n">2021</span><span class="l">Año de fundación</span><span class="s">Marca de Final Upgrade AI</span></div>
+      <div class="stat"><span class="n acc">2</span><span class="l">Centros de operación: Asia y Latinoamérica</span><span class="s">Singapur · CDMX</span></div>
+      <div class="stat"><span class="n">30+</span><span class="l">Años de experiencia operativa y comercial del lado del cliente</span><span class="s">4 continentes</span></div>
+      <div class="stat"><span class="n">6</span><span class="l">Servicios en un solo motor propietario</span><span class="s">FinalEdgeEngine™</span></div>
+    </div>
+    <p class="src"><b>Fuente ·</b> Fundación y sedes: instrucción directa de Eric Toledano (02-09-2026). Experiencia y motor: copy deck aprobado de Final Edge AI (<span class="mono">copy.es-MX.json</span>) y sitio de marca.</p>
+  </div>
+</section>
+
+<!-- ===== 03 · la tesis ===== -->
+<section class="slide" aria-label="La tesis">
+  <div class="wrap">
+    <div class="kicker">la tesis<span class="num">03</span></div>
+    <blockquote class="pull">La IA sin dirección da resultados promedio.</blockquote>
+    <p class="lead">El acceso a modelos de inteligencia artificial dejó de ser una ventaja: cualquiera los tiene. Lo escaso es el criterio para decidir <strong>qué proceso justifica la inversión, en qué orden y con qué medición</strong>. Ahí es donde el mercado falla, y donde 30 años del lado del cliente valen más que un stack tecnológico.</p>
+    <hr class="rule">
+    <div class="kicker" style="margin-bottom:18px">la presión sobre el margen</div>
+    <div class="grid g3">
+      <div class="stat"><span class="n eval">48 → 40</span><span class="l">Horas de jornada laboral semanal hacia 2030 en México</span><span class="s">Reforma laboral</span></div>
+      <div class="stat"><span class="n eval">+26.6 %</span><span class="l">Acumulado en el salario mínimo en los últimos dos años</span><span class="s">México</span></div>
+      <div class="stat"><span class="n eval">+52 %</span><span class="l">Impacto acumulado en el costo laboral</span><span class="s">Efecto combinado</span></div>
+    </div>
+    <p class="lead" style="margin-top:26px"><strong>Haz más. Sin contratar más.</strong> Es la única respuesta estructural a una jornada más corta con un costo laboral más alto, y es exactamente lo que la integración de IA en procesos entrega.</p>
+    <p class="src"><b>Fuente ·</b> Cifras publicadas en el sitio de marca de Final Edge AI, sección «la presión». <em class="faint">Pendiente de anclar a fuente primaria antes de circular el documento (ver slide 13).</em></p>
+  </div>
+</section>
+
+<!-- ===== 04 · posicionamiento ===== -->
+<section class="slide" aria-label="Posicionamiento">
+  <div class="wrap">
+    <div class="kicker">posicionamiento<span class="num">04</span></div>
+    <h2 class="title">Lo que Final Edge le dice al mercado.</h2>
+    <p class="lead" style="font-size:clamp(17px,1.9vw,25px);line-height:1.45;color:var(--fg);margin-top:32px">
+      Para las empresas mexicanas con el margen bajo presión, Final Edge dirige la inteligencia artificial para producir <strong>resultados medibles, no experimentos</strong>, gracias a más de 30 años de experiencia operativa y comercial del lado del cliente en empresas globales en 4 continentes.
+    </p>
+    <hr class="rule">
+    <div class="grid g2">
+      <div>
+        <span class="tag blue">Línea competitiva</span>
+        <p class="lead" style="margin-top:16px;font-size:17px">La competencia te entrega promedio. Final Edge te entrega ventaja.</p>
+      </div>
+      <div>
+        <span class="tag">Promesa operativa</span>
+        <p class="lead" style="margin-top:16px;font-size:17px">30 años de experiencia dirigen. Los flujos de trabajo propietarios de IA ejecutan.</p>
+      </div>
+    </div>
+    <p class="src"><b>Fuente ·</b> Copy deck aprobado <span class="mono">copy.es-MX.json</span> (posicionamiento y línea competitiva, marcados «usar textual») y sitio de marca.</p>
+  </div>
+</section>
+
+<!-- ===== 05 · el motor ===== -->
+<section class="slide" aria-label="FinalEdgeEngine">
+  <div class="wrap">
+    <div class="kicker">el activo<span class="num">05</span></div>
+    <h2 class="title" style="margin-bottom:30px">FinalEdgeEngine™ — un motor, seis servicios, tres zonas.</h2>
+    <div class="wheel-layout">
+      <div class="wheel-stage">
+        <svg viewBox="-175 -175 350 350" role="img" aria-label="Final Wheel: seis servicios en tres zonas">
+          <g id="segs"></g>
+          <circle class="hub" cx="0" cy="0" r="58" stroke-width="1"></circle>
+          <text class="hubtext" x="0" y="-4">FINAL</text>
+          <text class="hubtext" x="0" y="10">ENGINE</text>
+        </svg>
+      </div>
+      <ul class="wheel-list" id="wlist"></ul>
+    </div>
+    <p class="src"><b>Fuente ·</b> Geometría de la Final Wheel: <span class="mono">assets/wheel/final-wheel.json</span> del paquete de marca. Nombres y descripciones: páginas de servicio publicadas en el sitio de Final Edge AI.</p>
+  </div>
+</section>
+
+<!-- ===== 06 · servicios evaluación + capacidades ===== -->
+<section class="slide" aria-label="Servicios: Evaluación y Capacidades">
+  <div class="wrap">
+    <div class="kicker">catálogo · 1 de 2<span class="num">06</span></div>
+    <h2 class="title" style="max-width:28ch;font-size:clamp(24px,3vw,38px);margin-bottom:26px">Evaluación y Capacidades: decidir bien antes de construir, y dejar a la organización capaz de sostenerlo.</h2>
+    <div class="grid g2">
+      <div class="svc e-eval">
+        <div class="head"><span class="key">&gt;_ strategy.</span><span class="idx">01 · Evaluación</span></div>
+        <div class="es">Estrategia</div>
+        <p>Concentra los recursos donde generan mayor crecimiento. Convierte datos internos y externos en una estrategia clara, diferenciadora y lista para ejecutar. La IA acelera el análisis; la experiencia de negocio define la dirección.</p>
+        <div class="metric"><b>10 días</b> para dirección estratégica clara · 7 documentos interconectados</div>
+      </div>
+      <div class="svc e-eval">
+        <div class="head"><span class="key">&gt;_ intelligence.</span><span class="idx">02 · Evaluación</span></div>
+        <div class="es">Inteligencia de negocios y de mercados</div>
+        <p>Agentes y flujos propietarios analizan mercados, consumidores, competidores, precios y tendencias en días. Benchmarking, landscape competitivo, reputación de marca, barreras de entrada y marco regulatorio.</p>
+        <div class="metric"><b>48 horas</b> a inteligencia accionable · <b>100+</b> fuentes integradas</div>
+      </div>
+      <div class="svc e-cap">
+        <div class="head"><span class="key">&gt;_ readiness.</span><span class="idx">03 · Capacidades</span></div>
+        <div class="es">Team Readiness · capacitación en IA</div>
+        <p>La IA no genera valor si la organización no sabe aplicarla. Diagnóstico 360° por nivel jerárquico, puntuación en 6 dimensiones, 4 niveles de preparación y programas ejecutivos por perfil, área e industria.</p>
+        <div class="metric"><b>50 %</b> es lo que los líderes llegan a sobreestimar la capacidad real de sus equipos</div>
+      </div>
+      <div class="svc e-cap">
+        <div class="head"><span class="key">&gt;_ flow.</span><span class="idx">04 · Capacidades</span></div>
+        <div class="es">Optimización de procesos</div>
+        <p>Antes de invertir en automatización, identifica dónde se pierde tiempo, dinero y capacidad. Prioriza iniciativas por impacto, retorno y viabilidad, en cinco fases: talleres, selección, hoja de ruta, desarrollo y adopción.</p>
+        <div class="metric"><b>+50 %</b> de incremento de productividad · priorización por ROI</div>
+      </div>
+    </div>
+    <p class="src"><b>Fuente ·</b> Páginas de servicio publicadas en el sitio de Final Edge AI (<span class="mono">/servicios/estrategia</span>, <span class="mono">/business-intelligence</span>, <span class="mono">/team-readiness</span>, <span class="mono">/optimizacion-de-procesos</span>).</p>
+  </div>
+</section>
+
+<!-- ===== 07 · servicios ejecución ===== -->
+<section class="slide" aria-label="Servicios: Ejecución">
+  <div class="wrap">
+    <div class="kicker">catálogo · 2 de 2<span class="num">07</span></div>
+    <h2 class="title" style="max-width:28ch;font-size:clamp(24px,3vw,38px);margin-bottom:26px">Ejecución: donde la estrategia se vuelve software en producción y contenido en el mercado.</h2>
+    <div class="grid g2">
+      <div class="svc e-exe">
+        <div class="head"><span class="key">&gt;_ systems.</span><span class="idx">05 · Ejecución</span></div>
+        <div class="es">Creación de software personalizado</div>
+        <p>Software y herramientas digitales a la medida, construidos con agentes de programación de IA y dirección experta. Automatización de flujos, sistemas de decisión, control de inventarios, CRM y ERP propios, forecasting y tableros ejecutivos.</p>
+        <div class="metric"><b>10x</b> más rápido y económico que el desarrollo tradicional · capacidad <b>24/7</b></div>
+      </div>
+      <div class="svc e-exe">
+        <div class="head"><span class="key">&gt;_ creative.</span><span class="idx">06 · Ejecución</span></div>
+        <div class="es">Producción creativa</div>
+        <p>Video, imagen y música de calidad cinematográfica: potenciado por IA, dirigido por humanos. Del brief a la entrega final en días, con storyboard, dirección de arte, producción, post y final cut al rigor de la producción tradicional.</p>
+        <div class="metric">Del concepto a la producción final <b>en días</b>, no en semanas</div>
+      </div>
+    </div>
+    <hr class="rule">
+    <div class="grid g3">
+      <div class="stat"><span class="n eval">Evaluación</span><span class="l">Investigamos mercados, consumidores, competidores y datos internos, y convertimos esa inteligencia en estrategia ejecutable.</span></div>
+      <div class="stat"><span class="n cap">Capacidades</span><span class="l">Preparamos a las personas y optimizamos los procesos para que la IA genere resultados reales.</span></div>
+      <div class="stat"><span class="n exe">Ejecución</span><span class="l">Convertimos la estrategia en software, herramientas y contenido que producen resultados.</span></div>
+    </div>
+    <p class="src"><b>Fuente ·</b> Páginas <span class="mono">/servicios/sistemas</span>, <span class="mono">/servicios/produccion-creativa</span> y las tres páginas de zona <span class="mono">/engine/</span> del sitio de Final Edge AI.</p>
+  </div>
+</section>
+
+<!-- ===== 08 · evidencia ===== -->
+<section class="slide" aria-label="Evidencia">
+  <div class="wrap">
+    <div class="kicker">evidencia<span class="num">08</span></div>
+    <h2 class="title" style="max-width:26ch;font-size:clamp(26px,3.2vw,42px)">Trabajo entregado, no casos hipotéticos.</h2>
+    <div class="grid g3" style="margin-top:30px">
+      <div class="case"><span class="tag exe">systems</span><span class="cli">Kanguru Beverages</span><span class="what">Tablero financiero: P&amp;L completo, unit economics, cashflow y análisis de financiamiento con analista financiero de IA integrado.</span></div>
+      <div class="case"><span class="tag exe">systems</span><span class="cli">Tiendas Chedraui</span><span class="what">Inteligencia de inventarios: monitoreo de ventas y salud de inventario en tiempo real, con 12 meses de reales más pronóstico.</span></div>
+      <div class="case"><span class="tag exe">systems</span><span class="cli">Growth Hub</span><span class="what">CRM comercial: pipeline visual, seguimientos automatizados, lead scoring con IA y reportería ejecutiva integrada.</span></div>
+      <div class="case"><span class="tag eval">intelligence</span><span class="cli">Sports World México</span><span class="what">Auditoría SEO: diagnóstico de posicionamiento orgánico, keywords, competencia directa, oportunidades de contenido y plan priorizado.</span></div>
+      <div class="case"><span class="tag eval">intelligence</span><span class="cli">Hoteles VLU</span><span class="what">Benchmarking de precios: análisis comparativo de tarifas, paquetes y estacionalidad frente a competidores directos, con recomendaciones de pricing.</span></div>
+      <div class="case"><span class="tag eval">strategy</span><span class="cli">Infraestructura espacial · Emiratos</span><span class="what">Due diligence para inversionistas: inteligencia de mercado, estrategia de crecimiento, roadmap tecnológico y plan de implementación con fuentes verificables.</span></div>
+    </div>
+    <p class="lead" style="margin-top:26px">A esto se suma un marco estratégico completo —mercado, segmentación, análisis competitivo, comunicación y conceptos creativos en siete documentos interconectados— para una cadena de retail en <strong>Hong Kong</strong>, y producción creativa con marcas de consumo en México.</p>
+    <p class="src"><b>Fuente ·</b> Sección «entregables reales» de las páginas de servicio publicadas en el sitio de Final Edge AI. <em class="faint">Verificar permisos de mención antes de circular a terceros.</em></p>
+  </div>
+</section>
+
+<!-- ===== 09 · diferenciación ===== -->
+<section class="slide" aria-label="Diferenciación">
+  <div class="wrap">
+    <div class="kicker">por qué gana<span class="num">09</span></div>
+    <h2 class="title" style="max-width:24ch;font-size:clamp(26px,3.2vw,42px);margin-bottom:28px">El diferencial no es la tecnología. Es quién la dirige.</h2>
+    <div class="vs">
+      <div class="them">
+        <h4>Consultoría tradicional / integrador de IA</h4>
+        <ul>
+          <li>Un PDF en tres meses.</li>
+          <li>Consultores de carrera que nunca operaron un P&amp;L.</li>
+          <li>Pilotos que no llegan a producción.</li>
+          <li>Herramienta primero, problema después.</li>
+          <li>El proyecto termina cuando termina la factura.</li>
+        </ul>
+      </div>
+      <div class="us">
+        <h4>&gt;_ Final Edge AI</h4>
+        <ul>
+          <li>Un sistema estratégico en diez días.</li>
+          <li>Más de 30 años del lado del cliente, en cuatro continentes.</li>
+          <li>Software en producción, operado por el equipo del cliente.</li>
+          <li>Proceso primero: sin dato, no hay decisión.</li>
+          <li>El proyecto termina cuando el cliente opera sin nosotros.</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="rule">
+    <div class="grid g3">
+      <div class="stat"><span class="n acc">38 %</span><span class="l">de las empresas declara usar IA — usarla no es saber en qué dirección ir</span></div>
+      <div class="stat"><span class="n acc">1 %</span><span class="l">ha alcanzado madurez estratégica real con IA</span></div>
+      <div class="stat"><span class="n acc">99 %</span><span class="l">del mercado sigue siendo mercado direccionable para quien sí sabe dirigir</span><span class="s">Lectura del dato anterior</span></div>
+    </div>
+    <p class="src"><b>Fuente ·</b> Cifras 38 % y 1 % publicadas en <span class="mono">/servicios/estrategia</span>. Reglas de trabajo del copy deck aprobado. <em class="faint">38 % y 1 % pendientes de anclar a fuente primaria (ver slide 13).</em></p>
+  </div>
+</section>
+
+<!-- ===== 10 · huella ===== -->
+<section class="slide" aria-label="Huella geográfica">
+  <div class="wrap">
+    <div class="kicker">huella<span class="num">10</span></div>
+    <h2 class="title" style="max-width:24ch;font-size:clamp(26px,3.2vw,42px);margin-bottom:28px">Dos husos horarios, un solo motor.</h2>
+    <div class="geo">
+      <div>
+        <span class="tag blue">Asia</span>
+        <span class="hub-title">Singapur</span>
+        <span class="coords">Centro de operación · Asia-Pacífico</span>
+        <span class="role">Sede de socios fundadores y ventana a los mercados asiáticos. Da a la firma cobertura continua entre husos horarios: el trabajo no se detiene cuando cierra Latinoamérica.</span>
+      </div>
+      <div>
+        <span class="tag blue">Latinoamérica</span>
+        <span class="hub-title">Ciudad de México</span>
+        <span class="coords">Centro de operación · LatAm</span>
+        <span class="role">Base de la práctica de LatAm bajo Eric Toledano. Entrega en español de México con producción local, y cobertura comercial hacia Bogotá y São Paulo.</span>
+      </div>
+    </div>
+    <hr class="rule">
+    <div class="grid g3">
+      <div class="stat"><span class="n">4</span><span class="l">Continentes de experiencia operativa acumulada del equipo</span></div>
+      <div class="stat"><span class="n">3</span><span class="l">Idiomas de entrega: español de México, inglés nativo, portugués de Brasil en preparación</span></div>
+      <div class="stat"><span class="n">15+</span><span class="l">Países donde el liderazgo ha gestionado P&amp;L directamente</span><span class="s">CV Eric Toledano</span></div>
+    </div>
+    <p class="src"><b>Fuente ·</b> Sedes: instrucción directa de Eric Toledano (02-09-2026). Cobertura LatAm e idiomas: copy deck aprobado. Países con P&amp;L: CV de Eric Toledano (2024).</p>
+  </div>
+</section>
+
+<!-- ===== 11 · Eric ===== -->
+<section class="slide" aria-label="Eric Toledano">
+  <div class="wrap">
+    <div class="kicker">liderazgo LatAm<span class="num">11</span></div>
+    <div class="bio">
+      <div class="portraits">
+        <figure class="pf" data-slot>
+          <img id="ph1" src="assets/eric-01.jpg" alt="Eric Toledano">
+          <figcaption class="cap">Eric Toledano</figcaption>
+          <div class="slot"><span class="mk">&gt;_</span><span class="fn">assets/eric-01.jpg</span><span class="nt">Retrato vertical<br>Coloca el archivo y recarga</span></div>
+        </figure>
+        <figure class="pf alt" data-slot>
+          <img id="ph2" src="assets/eric-02.jpg" alt="Eric Toledano">
+          <figcaption class="cap">CDMX · 2026</figcaption>
+          <div class="slot"><span class="mk">&gt;_</span><span class="fn">assets/eric-02.jpg</span><span class="nt">Retrato cuadrado<br>Coloca el archivo y recarga</span></div>
+        </figure>
+      </div>
+      <div>
+        <div class="name">Eric Toledano</div>
+        <div class="role">Managing Partner LatAm · Strategic Advisory Lead</div>
+        <p class="sub">Líder global en transformación de modelos de negocio e innovación estratégica. Ha gestionado <strong>P&amp;L por más de 350 millones de dólares</strong> en más de 15 países, y dirige la práctica de consultoría estratégica de Final Upgrade para multinacionales y startups de alto crecimiento.</p>
+
+        <div class="grid g3" style="margin-top:26px">
+          <div class="stat"><span class="n acc">&gt;350 MM</span><span class="l">USD de P&amp;L gestionado</span><span class="s">15+ países</span></div>
+          <div class="stat"><span class="n acc">430 %</span><span class="l">de crecimiento impulsado en una startup australiana de bebidas de salud</span><span class="s">E-commerce y analítica</span></div>
+          <div class="stat"><span class="n acc">4 % → 15 %</span><span class="l">Tasa de crecimiento de un corredor de seguros líder en México, tras rediseñar su modelo</span><span class="s">Innovación digital</span></div>
+        </div>
+
+        <ul class="track">
+          <li><span class="yr">2020 — hoy</span><span class="co"><b>Final Upgrade</b> · Ciudad de México — <span>Managing Partner LatAm y Strategic Advisory Lead</span></span></li>
+          <li><span class="yr">2020 — hoy</span><span class="co"><b>Eyezon</b> · Ciudad de México — <span>Consejero independiente y Managing Director LatAm, streaming on-demand con IA</span></span></li>
+          <li><span class="yr">2017 — 2019</span><span class="co"><b>Masafi Ltd.</b> · Dubái, EAU — <span>Global Marketing Director. Revirtió cinco años de caída y ganó 2.4 puntos de participación en 12 meses</span></span></li>
+          <li><span class="yr">2013 — 2017</span><span class="co"><b>PepsiCo · RG Brands</b> · Almatý, Kazajistán — <span>CMO de un negocio de 350 MM USD para 85 millones de consumidores. +59 % volumen, +40 % ingresos</span></span></li>
+          <li><span class="yr">2000 — 2013</span><span class="co"><b>Mondelēz International</b> y <b>Bacardi Martini</b> · Tokio, Moscú y São Paulo — <span>Marketing Division Director del Norte de Asia; Marketing Director de Rusia y de Rusia y CEI; Regional Category Manager en Brasil</span></span></li>
+        </ul>
+
+        <div class="langs">
+          <span class="tag">Español nativo</span>
+          <span class="tag">Inglés fluido</span>
+          <span class="tag">Portugués fluido</span>
+          <span class="tag">Ruso intermedio</span>
+          <span class="tag blue">Universidad Panamericana · Administración y Finanzas</span>
+        </div>
+        <p class="src"><b>Fuente ·</b> CV de Eric Toledano, versión en inglés 2024. Reconocimientos: Mondelēz International Asia-Pacific Marketing Excellence Award (2010) y Cadbury Awards for Outstanding Leadership (global, europeo y local).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 12 · contacto ===== -->
+<section class="slide" aria-label="Siguiente paso">
+  <div class="wrap">
+    <div class="kicker">siguiente paso<span class="num">12</span></div>
+    <h2 class="title" style="max-width:22ch;font-size:clamp(30px,4.4vw,58px)">Salimos con un siguiente paso concreto. O con nada, y también está bien.</h2>
+    <p class="lead">La conversación de valoración dura 30 minutos y termina con una lectura honesta: dónde hay ventaja capturable con IA en el negocio, en qué orden, y qué costaría. Si no la hay, se dice.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:eric.toledano@demand-creator.com?subject=Final%20Edge%20AI%20%C2%B7%20reuni%C3%B3n%20de%20valoraci%C3%B3n">Agendar 30 min</a>
+      <a class="btn ghost" href="https://wa.me/525575014323">WhatsApp +52 55 7501 4323</a>
+      <a class="btn ghost" href="https://web-page-final-edge-redesign.vercel.app/" target="_blank" rel="noopener">Ver el sitio</a>
+    </div>
+    <hr class="rule">
+    <div class="grid g3">
+      <div class="stat"><span class="n" style="font-size:20px">Eric Toledano</span><span class="l">Managing Partner LatAm</span><span class="s">eric.toledano@demand-creator.com</span></div>
+      <div class="stat"><span class="n" style="font-size:20px">Ciudad de México</span><span class="l">Centro de operación LatAm</span><span class="s">M +52 55 4384 5059</span></div>
+      <div class="stat"><span class="n" style="font-size:20px">Singapur</span><span class="l">Centro de operación Asia</span><span class="s">Contacto por definir</span></div>
+    </div>
+    <p class="src"><b>Fuente ·</b> Datos de contacto tomados del CV de Eric Toledano (2024). <em class="faint">Correo corporativo, enlace de agenda y contacto de Singapur pendientes de confirmar.</em></p>
+  </div>
+</section>
+
+<!-- ===== 13 · notas de verificación ===== -->
+<section class="slide notes" aria-label="Notas de verificación">
+  <div class="wrap">
+    <div class="kicker">notas de verificación<span class="num">13</span></div>
+    <h2 class="title" style="max-width:26ch;font-size:clamp(24px,3vw,38px)">Qué está sostenido y qué falta antes de circular.</h2>
+    <ul style="margin-top:28px">
+      <li><span class="k">Verificado · CV</span><span class="v">Toda la trayectoria, cifras y logros del slide 11 provienen del CV de Eric Toledano, versión en inglés 2024, adjunto a esta entrega.</span></li>
+      <li><span class="k">Verificado · marca</span><span class="v">Posicionamiento, línea competitiva, tesis de apertura, nombres de zonas y servicios provienen del copy deck aprobado y del sitio publicado de Final Edge AI.</span></li>
+      <li><span class="k">Declarado por Eric</span><span class="v">Fundación en 2021 y centros de operación en Singapur y Ciudad de México. <em>Nota: el CV registra Final Upgrade desde 2020; conviene fijar una sola fecha antes de circular.</em></span></li>
+      <li><span class="k">Pendiente de fuente</span><span class="v"><em>38 % de empresas usando IA, 1 % con madurez estratégica, 48→40 horas, +26.6 % salario mínimo, +52 % costo laboral, +50 % de productividad, 10x en desarrollo, 50 % de sobreestimación del liderazgo.</em> Están publicadas en el sitio, pero sin fuente primaria citada. La política de mensaje de la marca exige mostrar toda cifra sin fuente como «ejemplo · dato con fuente».</span></li>
+      <li><span class="k">Pendiente de permiso</span><span class="v">Mención de Kanguru Beverages, Tiendas Chedraui, Growth Hub, Sports World México y Hoteles VLU. Aparecen en el sitio público de la firma; confirmar autorización para uso en documento de inversión.</span></li>
+      <li><span class="k">Pendiente de dato</span><span class="v">Cifras financieras de la propia Final Edge AI: ingresos, crecimiento, número de clientes activos, tamaño de equipo, monto y uso de los fondos buscados. Un inversionista las pedirá en la primera reunión y este documento todavía no las contiene.</span></li>
+      <li><span class="k">Pendiente de archivo</span><span class="v">Los dos retratos profesionales se colocan en <span class="mono">assets/eric-01.jpg</span> y <span class="mono">assets/eric-02.jpg</span>. Mientras no existan, el slide 11 muestra el marco vacío con la ruta esperada. No se usa ninguna imagen sustituta.</span></li>
+    </ul>
+    <p class="src"><b>Regla aplicada ·</b> <span class="mono">messaging-rules.md</span> de Final Edge AI: sin cifras, logos ni testimonios no verificables; toda cifra sin fuente se marca como tal.</p>
+  </div>
+</section>
+
+</main>
+
+<nav class="nav" aria-label="Navegación de la presentación">
+  <button id="prev" aria-label="Slide anterior">←</button>
+  <button id="next" aria-label="Slide siguiente">→</button>
+</nav>
+<div class="hint">← → para navegar · P para imprimir en PDF</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- retratos ----------
+     Los dos archivos de fotografía se colocan en assets/. Mientras no existan,
+     el marco muestra la ruta esperada en vez de una imagen sustituta.        */
+  ["ph1","ph2"].forEach(function(id){
+    var img = document.getElementById(id);
+    if(!img) return;
+    var frame = img.closest("[data-slot]");
+    img.addEventListener("error", function(){ if(frame) frame.classList.add("empty"); });
+    img.addEventListener("load",  function(){ if(frame) frame.classList.remove("empty"); });
+    if(img.complete && img.naturalWidth === 0 && frame) frame.classList.add("empty");
+  });
+
+  /* ---------- Final Wheel ---------- */
+  /* Geometría literal de assets/wheel/final-wheel.json del paquete de marca:
+     seis sectores de 60°, orden horario desde las 12, radios 150 / 62. */
+  var SEGMENTS = [
+    {id:"strategy",   label:"strategy",   es:"Estrategia",                    zone:"Evaluación",  color:"var(--phase-eval)",
+     desc:"Convierte datos internos y externos en una estrategia clara y ejecutable. Siete documentos interconectados en diez días.",
+     path:"M-72.263,-131.446 A150,150 0 0 1 72.263,-131.446 L29.869,-54.331 A62,62 0 0 0 -29.869,-54.331 Z", lx:0, ly:-106},
+    {id:"intelligence",label:"intelligence",es:"Inteligencia de negocios",     zone:"Evaluación",  color:"var(--phase-eval)",
+     desc:"Mercados, consumidores, competidores, precios y tendencias analizados en 48 horas sobre más de 100 fuentes.",
+     path:"M77.704,-128.305 A150,150 0 0 1 149.967,-3.141 L61.986,-1.298 A62,62 0 0 0 32.118,-53.033 Z", lx:91.8, ly:-53},
+    {id:"readiness",  label:"readiness",  es:"Team Readiness",                zone:"Capacidades", color:"var(--phase-cap)",
+     desc:"Diagnóstico 360° del nivel de preparación en seis dimensiones, más programas ejecutivos por perfil, área e industria.",
+     path:"M149.967,3.141 A150,150 0 0 1 77.704,128.305 L32.118,53.033 A62,62 0 0 0 61.986,1.298 Z", lx:91.8, ly:53},
+    {id:"flow",       label:"flow",       es:"Optimización de procesos",      zone:"Capacidades", color:"var(--phase-cap)",
+     desc:"Dónde se pierde tiempo, dinero y capacidad. Priorización de automatización por ROI, en cinco fases hasta la adopción.",
+     path:"M72.263,131.446 A150,150 0 0 1 -72.263,131.446 L-29.869,54.331 A62,62 0 0 0 29.869,54.331 Z", lx:0, ly:106},
+    {id:"systems",    label:"systems",    es:"Software personalizado",        zone:"Ejecución",   color:"var(--phase-exe)",
+     desc:"Software a la medida con agentes de programación y dirección experta. Diez veces más rápido y económico que el desarrollo tradicional.",
+     path:"M-77.704,128.305 A150,150 0 0 1 -149.967,3.141 L-61.986,1.298 A62,62 0 0 0 -32.118,53.033 Z", lx:-91.8, ly:53},
+    {id:"creative",   label:"creative",   es:"Producción creativa",           zone:"Ejecución",   color:"var(--phase-exe)",
+     desc:"Video, imagen y música de calidad cinematográfica. Potenciado por IA, dirigido por humanos, del brief al final cut en días.",
+     path:"M-149.967,-3.141 A150,150 0 0 1 -77.704,-128.305 L-32.118,-53.033 A62,62 0 0 0 -61.986,-1.298 Z", lx:-91.8, ly:-53}
+  ];
+
+  var SVGNS = "http://www.w3.org/2000/svg";
+  var gSegs = document.getElementById("segs");
+  var list  = document.getElementById("wlist");
+
+  SEGMENTS.forEach(function(s, i){
+    var g = document.createElementNS(SVGNS, "g");
+    g.setAttribute("class", "seg");
+    g.setAttribute("data-id", s.id);
+    g.style.color = s.color;
+
+    var p = document.createElementNS(SVGNS, "path");
+    p.setAttribute("d", s.path);
+    p.setAttribute("fill", s.color);
+    p.setAttribute("fill-opacity", "0.9");
+    g.appendChild(p);
+
+    var t = document.createElementNS(SVGNS, "text");
+    t.setAttribute("class", "seglabel");
+    t.setAttribute("x", s.lx);
+    t.setAttribute("y", s.ly + 4);
+    t.textContent = s.label;
+    g.appendChild(t);
+
+    gSegs.appendChild(g);
+
+    var li = document.createElement("li");
+    li.setAttribute("data-id", s.id);
+    li.innerHTML =
+      '<div class="row"><span class="key" style="color:' + s.color + '">&gt;_ ' + s.label + '.</span>' +
+      '<span class="es">' + s.es + '</span>' +
+      '<span class="zn">' + s.zone + '</span></div>' +
+      '<div class="desc">' + s.desc + '</div>';
+    list.appendChild(li);
+
+    if(i === 0){ g.classList.add("on"); li.classList.add("on"); }
+  });
+
+  function select(id){
+    Array.prototype.forEach.call(document.querySelectorAll(".seg,[data-id]"), function(el){
+      if(el.hasAttribute("data-id")) el.classList.toggle("on", el.getAttribute("data-id") === id);
+    });
+  }
+  document.addEventListener("mouseover", function(e){
+    var host = e.target.closest ? e.target.closest("[data-id]") : null;
+    if(host) select(host.getAttribute("data-id"));
+  });
+  document.addEventListener("click", function(e){
+    var host = e.target.closest ? e.target.closest("[data-id]") : null;
+    if(host) select(host.getAttribute("data-id"));
+  });
+
+  /* ---------- navegación del deck ---------- */
+  var slides = Array.prototype.slice.call(document.querySelectorAll(".slide"));
+  var idx = 0;
+  var elCur = document.getElementById("cur");
+  var elTot = document.getElementById("tot");
+  var bar   = document.getElementById("progress");
+  var bPrev = document.getElementById("prev");
+  var bNext = document.getElementById("next");
+
+  elTot.textContent = String(slides.length).padStart(2, "0");
+
+  function pad(n){ return String(n).padStart(2, "0"); }
+
+  function go(n){
+    idx = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function(s, i){ s.classList.toggle("is-active", i === idx); });
+    slides[idx].scrollTop = 0;
+    elCur.textContent = pad(idx + 1);
+    bar.style.width = ((idx + 1) / slides.length * 100) + "%";
+    bPrev.disabled = idx === 0;
+    bNext.disabled = idx === slides.length - 1;
+    if(location.hash !== "#" + (idx + 1)){
+      /* replaceState puede fallar en algunos contextos file://; no debe romper la navegación */
+      try { history.replaceState(null, "", "#" + (idx + 1)); }
+      catch(_){ /* sin barra de direcciones sincronizada, el deck sigue funcionando */ }
+    }
+  }
+
+  /* Un enlace directo tipo index.html#07 sólo cambia el fragmento y no recarga
+     el documento, así que el cambio de hash se atiende explícitamente. */
+  window.addEventListener("hashchange", function(){
+    var n = parseInt((location.hash || "").replace("#", ""), 10);
+    if(!isNaN(n) && n - 1 !== idx) go(n - 1);
+  });
+
+  bPrev.addEventListener("click", function(){ go(idx - 1); });
+  bNext.addEventListener("click", function(){ go(idx + 1); });
+
+  document.addEventListener("keydown", function(e){
+    if(e.metaKey || e.ctrlKey || e.altKey) return;
+    if(e.key === "ArrowRight" || e.key === "PageDown" || e.key === " "){ e.preventDefault(); go(idx + 1); }
+    else if(e.key === "ArrowLeft" || e.key === "PageUp"){ e.preventDefault(); go(idx - 1); }
+    else if(e.key === "Home"){ e.preventDefault(); go(0); }
+    else if(e.key === "End"){ e.preventDefault(); go(slides.length - 1); }
+    else if(e.key === "p" || e.key === "P"){ e.preventDefault(); window.print(); }
+  });
+
+  /* deslizar en táctil */
+  var x0 = null, y0 = null;
+  document.addEventListener("touchstart", function(e){
+    x0 = e.changedTouches[0].clientX; y0 = e.changedTouches[0].clientY;
+  }, {passive:true});
+  document.addEventListener("touchend", function(e){
+    if(x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    var dy = e.changedTouches[0].clientY - y0;
+    if(Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.6){ go(idx + (dx < 0 ? 1 : -1)); }
+    x0 = null; y0 = null;
+  }, {passive:true});
+
+  var start = parseInt((location.hash || "").replace("#", ""), 10);
+  go(isNaN(start) ? 0 : start - 1);
+})();
+</script>
+</body>
+</html>
