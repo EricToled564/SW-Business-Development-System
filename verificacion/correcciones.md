@@ -14,6 +14,7 @@ número de cambios declarado no coincide con el que el generador contó.
 | Documento | Hallazgos | Cambios |
 |---|---|---|
 | proceso-mpc-01 | A-001, A-002, A-003, A-004, A-005, A-006, A-007, A-009, A-013, A-020, A-027, A-072 | 10 |
+| experience | A-020, A-021, A-022, A-023 | 9 |
 
 
 ---
@@ -98,10 +99,26 @@ número de reactivos **no es «una versión corta», es otro instrumento y neces
 clave**. §5 bis asigna la propiedad del cuestionario al MPC, de modo que los demás
 documentos lo citen por versión en vez de declarar un número propio.
 
-**Queda abierto, y se dice aquí para no darlo por cerrado:** el MPC describe 16+3 y la
-Arquitectura describe 15+6. Son dos cuestionarios distintos, no dos redacciones del mismo.
-Reconciliar la lista real de reactivos es trabajo del bloque P3, donde se decide qué
-preguntas salen por ser datos de salud.
+**No hay dos cuestionarios: hay uno, y ya estaba definido.** El **Anexo A del MPC** contiene
+el instrumento completo —los 19 reactivos, con sus opciones y lo que determina cada uno— y
+es la versión correcta, la que no recaba datos de salud:
+
+> **Reactivo 7 · ¿Hay algo que quieras que tu recomendación tome en cuenta?** — «Prefiero
+> ejercicio de bajo impacto · Prefiero evitar saltos y movimientos bruscos · Prefiero evitar
+> trabajo abdominal intenso · Prefiero evitar la alta intensidad sostenida · Ninguna en
+> particular». **«Son preferencias, no condiciones de salud.»**
+>
+> **Reactivo 17 · ¿Te interesa alguno de estos programas?** — «Programa prenatal · Programa
+> de posparto · Programa infantil · Entrenamiento personal · Ninguno por ahora».
+> **«Pregunta por el interés en un servicio, no por un estado de salud.»**
+
+Y el propio anexo cierra con el apartado *«Qué no pregunta el cuestionario, y por qué»*:
+«El instrumento **no recaba condiciones médicas, embarazo o posparto, tratamientos para
+control de peso, peso, estatura, medidas corporales ni datos de menores de edad**».
+
+**La corrección va en una sola dirección:** `experience.es.md` está desactualizado —conserva
+Q12 condiciones médicas, Q12b embarazo, Q17–Q19 peso— y debe alinearse con `CEI-01 v1.0`.
+No se reconcilian dos versiones; se corrige la que quedó atrás. Es trabajo del bloque P3.
 
 ### A-027 · el brief sin estructura canónica
 
@@ -152,3 +169,73 @@ bajo SOP/SW/0103**. Un mismo canal deja de estar simultáneamente pendiente y em
 - **A-055** (alta) y **A-066** (crítica) — el momento de escritura al CRM y el cobro antes
   de la firma viven en SOP/SW/0101, 0103 y 0301, no en el MPC. Se corrigen con P5 y P6, que
   es donde se pregunta por el flujo completo.
+
+
+---
+
+## experience · A-020, A-021, A-022, A-023
+
+**Evidencia.** `evidencia/Respuesta-Notebook-P1.md`, y sobre todo **el Anexo A del MPC**,
+que contiene el instrumento completo.
+
+**Qué decía la auditoría.**
+
+- **A-021** (crítica) — «El proceso prohíbe salud en captación digital, pero la arquitectura
+  UX la pregunta y usa.»
+- **A-022** (crítica) — «La experiencia digital procesa datos sensibles antes de mostrar el
+  consentimiento/contacto.»
+- **A-023** (crítica) — «El primer cruce de salud se guarda en el Brief comercial, contra la
+  segregación declarada.»
+- **A-020** (crítica) — «El cuestionario no tiene una versión ni cardinalidad únicas.»
+
+**Lo que resultó ser.** No había que diseñar nada: **el cuestionario correcto ya existe**, en
+el Anexo A del MPC, con 19 reactivos y sin un solo dato de salud. `experience` conservaba una
+versión anterior —Q12 condiciones médicas, Q12b embarazo y posparto, Q17 tratamientos, Q18
+peso y estatura, Q19 meta de peso— y era la única fuente de la contradicción.
+
+El Anexo resuelve el problema por diseño, en sus propias palabras:
+
+> **Reactivo 7 · ¿Hay algo que quieras que tu recomendación tome en cuenta?** — «Prefiero
+> ejercicio de bajo impacto · Prefiero evitar saltos y movimientos bruscos · Prefiero evitar
+> trabajo abdominal intenso · Prefiero evitar la alta intensidad sostenida · Ninguna en
+> particular». **«Son preferencias, no condiciones de salud.»**
+>
+> **Reactivo 17 · ¿Te interesa alguno de estos programas?** — «Programa prenatal · Programa
+> de posparto · Programa infantil · Entrenamiento personal · Ninguno por ahora». **«Pregunta
+> por el interés en un servicio, no por un estado de salud.»**
+>
+> **Qué no pregunta el cuestionario, y por qué:** «El instrumento no recaba condiciones
+> médicas, embarazo o posparto, tratamientos para control de peso, peso, estatura, medidas
+> corporales ni datos de menores de edad. […] La decisión no degrada la recomendación. El
+> reactivo 7 recoge la preferencia de entrenamiento, que es lo que el sistema necesita para
+> seleccionar clases; la condición que la origina no le hace falta.»
+
+**Qué se corrigió.** §2.2 pasa a describir `CEI-01 v1.0` tal como está en el Anexo A: los 16
+reactivos base y los 3 condicionales, **transcritos textualmente**, con la nota de qué no
+pregunta el instrumento y su fundamento legal. La lógica condicional pasa de seis condiciones
+a tres, todas colgando del reactivo 11; ninguna depende ya del género ni del objetivo. Y el
+apartado declara que **el documento que manda sobre el cuestionario es el Anexo A**: si algo
+en `experience` difiere, manda el Anexo.
+
+Los tres hallazgos se cierran con la misma corrección: al no recabar salud por medio
+electrónico desaparece la contradicción con el proceso (A-021), no hay dato sensible antes
+del consentimiento porque no hay dato sensible (A-022), y el brief digital no puede contener
+el primer cruce de salud porque el flujo nunca lo recibe (A-023).
+
+**Dos cosas que escribí y no salían de la fuente, y que retiré.** Atribuí la valoración de
+salud al `SOP/SW/0201`, cuando el Anexo dice **«en el momento del alta»** —que es el 0301—;
+y dije que el reactivo 7 alimenta la matriz de contraindicaciones del §4.8, que el Anexo no
+dice y que además es lo que deja de aplicar. Las dos están retiradas y el texto ahora cita al
+Anexo en vez de interpretarlo. La tensión sobre en qué momento ocurre la valoración de salud
+es el hallazgo **A-068** y no se resuelve escribiendo.
+
+**Lo que ahora lo impide.** La regla **R25** compara los 19 reactivos del Anexo A contra
+`experience` y falla si alguno no está transcrito textualmente. Probada parafraseando el
+reactivo 17: la corrida falla y lo nombra. Parafrasear un instrumento controlado es
+inventarlo, y eso ya no depende de que yo me acuerde de citar.
+
+**Queda pendiente en este documento**, y es consecuencia directa: §4.8 (matriz de
+contraindicaciones), §4.9 (prioridad GLP-1), §4.10, §4.12 (orden del copy de seguridad) y
+§4.15 (restricciones YMYL) siguen escritos sobre Q12, Q12b y Q17. Al salir esas preguntas,
+esas mecánicas **no desaparecen: se mudan al club**. Se reescriben en P3, con la respuesta de
+NotebookLM sobre dónde ocurre cada cruce de salud.

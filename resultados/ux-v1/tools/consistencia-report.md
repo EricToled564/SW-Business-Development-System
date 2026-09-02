@@ -1,6 +1,6 @@
 # Reporte de consistencia del depósito
 
-**31 documentos · 4,202 líneas · 24 reglas · 0 hallazgos**
+**31 documentos · 4,202 líneas · 25 reglas · 0 hallazgos**
 
 Este reporte lo genera `tools/consistencia.js` al ejecutarse. La columna «reglas
 aplicadas» no es una declaración: es el registro de qué verificación tocó qué
@@ -29,7 +29,7 @@ archivo durante esta corrida.
 | contrato.es.md | 582 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | entrevistas-campo.es.md | 56 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | execution.es.md | 272 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
-| experience.es.md | 917 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
+| experience.es.md | 917 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23, R25 (18) | 0 |
 | funnel.es.md | 142 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R17, R22, R23 (16) | 0 |
 | gastos-operativos.es.md | 96 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | glosario.es.md | 84 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R14, R15, R16, R17, R22, R23 (18) | 0 |
@@ -80,3 +80,4 @@ archivo durante esta corrida.
 | R21 · el registro de cambios del proceso no se publica | 0 | 0 |
 | R23 · las páginas de fuentes reflejan los documentos | 31 | 0 |
 | R24 · toda corrección está registrada y cuadra | 0 | 0 |
+| R25 · los reactivos del CEI-01 se citan textualmente | 1 | 0 |

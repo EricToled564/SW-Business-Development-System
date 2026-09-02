@@ -854,6 +854,50 @@ regla("R24 · toda corrección está registrada y cuadra", (falla) => {
       falla("verificacion/correcciones.md", 0, `${doc} está registrado como corregido y no tiene ninguna diferencia contra su original`);
 });
 
+/* ─────────── R25 · el cuestionario se transcribe, no se redacta ─────────── */
+// El cuestionario CEI-01 está definido en el Anexo A del MPC, que es quien manda
+// sobre el instrumento (§5 bis). Cualquier documento que lo describa tiene que
+// reproducir sus reactivos TEXTUALMENTE. Esta regla existe porque al alinear la
+// arquitectura de experiencia se parafrasearon tres reactivos y se les atribuyó un
+// destino que el Anexo no dice: parafrasear un instrumento controlado es inventarlo.
+regla("R25 · los reactivos del CEI-01 se citan textualmente", (falla) => {
+  const PROC_MOD = path.resolve(__dirname, "../proceso-mod");
+  const mpc = path.join(PROC_MOD, "mpc-01-MOD.html");
+  if (!fs.existsSync(mpc)) {
+    falla("proceso-mod/mpc-01-MOD.html", 0, "falta el manual: sin él no puede comprobarse el cuestionario");
+    return;
+  }
+  let anexo = fs.readFileSync(mpc, "utf8");
+  const i = anexo.indexOf("Anexo A · Cuestionario");
+  if (i < 0) {
+    falla("proceso-mod/mpc-01-MOD.html", 0, "el Anexo A con el cuestionario CEI-01 desapareció del manual");
+    return;
+  }
+  anexo = anexo.slice(i, i + 16000).replace(/<[^>]+>/g, "\n")
+    .replace(/&aacute;/g, "á").replace(/&eacute;/g, "é").replace(/&iacute;/g, "í")
+    .replace(/&oacute;/g, "ó").replace(/&uacute;/g, "ú").replace(/&ntilde;/g, "ñ")
+    .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&");
+
+  const reactivos = [...anexo.matchAll(/¿[^¿\n]{5,90}\?/g)].map((m) => m[0].trim());
+  if (reactivos.length !== 19)
+    falla("proceso-mod/mpc-01-MOD.html", 0, `el Anexo A declara 19 reactivos y se leyeron ${reactivos.length}`);
+
+  const exp = texto["experience.es.md"] ? fs.readFileSync(path.resolve(__dirname, "../docs-mod/experience-MOD.es.md"), "utf8") : null;
+  if (exp === null) return;
+  marcar("experience.es.md");
+
+  // Sólo se exige la transcripción cuando el documento ya declara seguir al CEI-01;
+  // mientras conserve el cuestionario viejo, quien lo delata es la auditoría, no esta regla.
+  if (!/CEI-01 v1\.0/.test(exp)) return;
+
+  for (const r of reactivos) {
+    // El reactivo 13 va precedido de su frase de contexto en el anexo.
+    const busca = r === "¿dónde entrenabas?" ? "Antes de esa pausa, ¿dónde entrenabas?" : r;
+    if (!exp.includes(busca))
+      falla("docs-mod/experience-MOD.es.md", 0, `no reproduce textualmente el reactivo del Anexo A: «${busca}»`);
+  }
+});
+
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);
 reglas.forEach((r) => console.log(`  ${r.fallas === 0 ? "\x1b[32m✓\x1b[0m" : "\x1b[31m✗\x1b[0m"} ${r.nombre}${r.fallas ? `  (${r.fallas})` : ""}`));
 if (fallas.length) {

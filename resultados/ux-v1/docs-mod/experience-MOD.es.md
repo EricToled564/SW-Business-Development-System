@@ -131,36 +131,48 @@ El cuestionario no es un formulario de marketing. Es un instrumento de captació
 
 El cuestionario se compone de tres categorías de preguntas:
 
-**Preguntas base (15)** — siempre se preguntan, en el mismo orden, a todo prospecto sin importar las respuestas previas:
+**El instrumento es `CEI-01`, versión vigente `CEI-01 v1.0`.** Su definición íntegra —los reactivos, sus opciones y lo que determina cada uno— vive en el **Anexo A del Manual del Proceso Comercial** (**[MPC/SW/01](#mpc-01)**), que es el documento que manda sobre el cuestionario. Este apartado describe **cómo se aplica en el sitio**, no qué pregunta: si algo aquí difiere del Anexo A, manda el Anexo A.
 
-| ID  | Tema                | Tipo            | Determina                                                                                                              |
-|-----|---------------------|-----------------|---------------------------------------------------------------------------------------------------------------------|
-| Q1  | Nombre              | text            | Trato en primera persona en todo el copy. La primera palabra se trata como el nombre de pila; la cadena completa se trata como el saludo. |
-| Q2  | Género              | single-select   | Concordancia gramatical de todo el copy con género (opciones de Q3, opciones de Q13, tarjetas de resumen). También habilita Q12b. |
-| Q3  | Sentir al salir     | single-select   | Ancla emocional principal para el hook del modelo de lenguaje y el argumento del plan.                                              |
-| Q4  | Objetivos           | multi-select (máx 2) | Selecciona el subgrupo del Bloque 01, el subgrupo del Bloque 02, los pesos de ranking de clases del Bloque 03 y el arco narrativo de la experiencia ideal. La primera selección (`Q4[0]`) es el *objetivo principal* y dirige todas las resoluciones de elección única. La segunda selección es un *objetivo secundario* usado solo para diversificar el ranking de clases. También habilita Q17, Q18, Q19. |
-| Q5  | Ritmo               | single-select   | Capturada para el brief del asesor como la intensidad de entrenamiento preferida del prospecto. Al igual que Q7/Q8, no filtra de forma estricta el catálogo ni cambia la selección determinista de bloques; el asesor concilia la preferencia de intensidad durante la visita. |
-| Q6  | Modo                | single-select   | Interruptor de nivel superior entre los catálogos de piso seco y acuático. "En la alberca" activa los bloques acuáticos 01 y 02; "Ambas" mantiene los bloques secos pero agrega una nota acuática; "Lo que mi entrenador recomiende" cede al valor por defecto del resolver según el objetivo principal. |
-| Q7  | Franjas horarias    | multi-select    | Capturada para el brief del asesor (Disponibilidad) y pasada al modelo de lenguaje para la línea de intención y la ruta de visita. No filtra de forma estricta el catálogo de clases —la conciliación de horarios ocurre con el asesor en la visita. |
-| Q8  | Días de la semana   | multi-select    | Igual que Q7: capturada para el brief y el modelo de lenguaje, surgida como la disponibilidad declarada del prospecto. El filtrado de clases a nivel de horario se difiere al asesor. |
-| Q9  | Nivel               | single-select   | Filtra las clases candidatas por nivel permitido: una clase sobrevive solo si su conjunto de niveles permitidos incluye el nivel Q9 del prospecto (el mismo modelo usado en §4.4 Paso 3). Un prospecto "Principiante" no verá una clase restringida a intermedio/avanzado. Determina la bandera del brief del asesor para "tour obligatorio antes de la sesión". |
-| Q10 | Historial           | single-select   | Determina la bandera del brief del asesor para primera vez en el gym, antecedente sedentario o regreso después de una pausa. También habilita Q11.   |
-| Q12 | Condiciones médicas | multi-select    | Filtra de forma estricta el catálogo de clases mediante la matriz de contraindicaciones. (Ver §4.8.)                                          |
-| Q13 | Acompañamiento      | single-select   | Alterna el Bloque 03 entre "Clases en grupo" (acompañado) y "Personal Training" (solo). Determina la bandera del asesor "no presionar pack de clases grupales". |
-| Q14 | Visita              | single-select   | Determina los mensajes de FitKidz en el reporte y, cuando dispara Q14b, hace de FitKidz una amenidad de experiencia requerida en la selección de club (§4.1). También habilita Q14b. |
-| Q15 | Cerca de qué        | single-select   | Ancla geográfica del resolver: casa / trabajo / ambas / sin preferencia.                                                       |
-| Q16 | Dónde queda         | location        | Entrada geográfica del resolver: código postal o nombre de colonia. Texto libre con validación ligera. |
+**Diecinueve reactivos: 16 base y 3 condicionales.** Un minuto de participación. «Idéntico en los tres canales de captación», en palabras del Anexo A, «sin variantes por plaza ni por club». Una variante con otro número de reactivos no es «una versión corta» del CEI-01: es otro instrumento y necesita su propia clave.
 
-**Preguntas condicionales (6)** — se preguntan solo si una respuesta específica aguas arriba las dispara:
+**Reactivos base (16)** — se preguntan siempre, en este orden, a todo prospecto:
 
-| ID   | Disparador                                                                                    | Propósito                                                                                                  |
-|------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Q11  | `Q10 === "Regreso después de una pausa"`                                                      | Duración de la pausa. Determina la bandera del asesor "primera sesión conservadora".                            |
-| Q12b | `Q2 !== "Hombre"` (es decir, "Mujer" o "Prefiero no mencionarlo")                             | Estado de embarazo y posparto. Filtra de forma estricta clases con impacto, trabajo abdominal o posicionamiento supino. Se pregunta a todos excepto a quienes seleccionaron "Hombre", de modo que una persona embarazada o en posparto que prefirió no declarar su género igual es evaluada; para "Prefiero no mencionarlo" la pregunta se muestra con un encuadre neutro (p. ej., "¿Aplica para ti embarazo o posparto reciente?"). |
-| Q14b | `Q14 ∈ {"Yo y mis hijos", "La familia completa"}`                                              | Presencia de hijos menores de 12 años. Determina los mensajes familiares de FitKidz en el reporte y hace de FitKidz una amenidad de experiencia requerida en la selección de club (§4.1). |
-| Q17  | `Q4 includes "Bajar de peso"`                                                                 | Tratamientos activos de pérdida de peso (GLP-1, cirugía bariátrica, acompañamiento nutricional, otro, ninguno). Determina la regla de prioridad GLP-1, el filtro estricto bariátrico y el mensaje abierto de revisión por el asesor. |
-| Q18  | `Q4 includes "Bajar de peso"`                                                                 | Datos físicos actuales (peso, estatura, cintura). Capturados para el brief del asesor; no usados por el resolver. |
-| Q19  | `Q4 includes "Bajar de peso"`                                                                 | Meta de cambio de peso (rango, en opciones de selección única). Capturada para el brief del asesor; no usada por el resolver. |
+| Nº  | Reactivo | Tipo | Determina |
+|-----|----------|------|-----------|
+| 1  | ¿Cómo te llamas? | text | Trato en primera persona en todo el copy. La primera palabra se toma como nombre de pila. |
+| 2  | ¿Con qué género te identificas? | single-select | Concordancia gramatical de todo el copy. Opciones: Mujer · Hombre · Prefiero no mencionarlo; con la última se emplea la terminación dual. |
+| 3  | ¿Qué quieres sentir al salir del club? | single-select | Objetivo emocional. Ancla del hook del modelo de lenguaje y del argumento del plan. **Fija el tono de la recomendación, no su contenido.** |
+| 4  | ¿Qué buscas? | multi-select (máx 2) | Objetivo funcional. La primera selección es el *objetivo principal* y gobierna toda la resolución —bloques, ponderación y clases idóneas—; la segunda sólo diversifica el ranking. |
+| 5  | ¿Dónde te gustaría entrenar? | single-select | Modalidad. Interruptor estructural: cambia el catálogo completo de bloques y clases. "En la alberca" hace de la alberca una amenidad de experiencia requerida (§4.1). |
+| 6  | ¿A qué ritmo te gusta entrenar? | single-select | Intensidad preferida. Se traslada al brief; **no filtra el catálogo** —el asesor la concilia en la visita. |
+| 7  | ¿Hay algo que quieras que tu recomendación tome en cuenta? | multi-select | **Preferencias de entrenamiento, no condiciones de salud.** Bajo impacto · evitar saltos y movimientos bruscos · evitar trabajo abdominal intenso · evitar la alta intensidad sostenida · ninguna en particular. Ajustan la selección de clases. |
+| 8  | ¿En qué horarios te queda mejor? | multi-select | Franjas horarias. Se traslada al brief como disponibilidad declarada; la conciliación ocurre con el asesor. |
+| 9  | ¿Qué días? | multi-select | Días de la semana. Igual que el reactivo 8. |
+| 10 | ¿Cuál es tu nivel? | single-select | Filtra las clases candidatas por nivel permitido (§4.4, paso 3). Determina la señal de recorrido guiado obligatorio en el brief. |
+| 11 | ¿Cómo llegas a este momento? | single-select | Primera vez · vengo de otro gimnasio · regreso después de una pausa · llevo tiempo sin actividad física. Determina las señales del brief y **habilita los reactivos 12, 13 y 14**. |
+| 15 | ¿Cómo prefieres entrenar? | single-select | Alterna el tercer bloque entre clases grupales y entrenamiento personal. Determina la señal de no presionar paquete de clases. |
+| 16 | ¿Con quién vas a usar el club? | single-select | Solo · en pareja · yo y mis hijos · la familia completa. Determina los mensajes familiares del reporte y el acompañamiento que anota el brief. |
+| 17 | ¿Te interesa alguno de estos programas? | multi-select | **Interés en un servicio, nunca un estado de salud.** Programa prenatal · programa de posparto · programa infantil · entrenamiento personal · ninguno por ahora. Cuando se elige el infantil o uno de los dos de maternidad, **la amenidad correspondiente pasa a ser requisito** en la resolución del club (§4.1). |
+| 18 | ¿Cerca de qué te conviene entrenar? | single-select | Ancla geográfica del resolver: casa · trabajo · ambos · sin preferencia. |
+| 19 | ¿Y dónde queda? | location | Código postal de cinco dígitos o nombre de colonia; basta uno. Se convierte en coordenadas para la búsqueda por radio. |
+
+**Reactivos condicionales (3)** — se preguntan sólo si el reactivo 11 los dispara:
+
+| Nº  | Reactivo | Disparador | Determina |
+|-----|----------|------------|-----------|
+| 12 | ¿En qué gimnasio entrenas? | Reactivo 11 = «Vengo de otro gimnasio» | Texto libre, una línea. Identifica al competidor concreto: el asesor llega sabiendo contra qué compara y qué beneficios contrastar. |
+| 13 | Antes de esa pausa, ¿dónde entrenabas? | Reactivo 11 = «Regreso después de una pausa» | En Sports World · en otro gimnasio · por mi cuenta, sin gimnasio. Activa la pista de reactivación; cuando la respuesta es Sports World, el sistema localiza la membresía anterior antes de la visita y el brief lo señala —la conversación no arranca como venta nueva. |
+| 14 | ¿Cuánto tiempo duró la pausa? | Reactivo 11 = «Regreso después de una pausa» | Menos de tres meses · entre tres meses y un año · más de un año. Determina la señal de primera sesión conservadora en el brief. |
+
+### Qué no pregunta el cuestionario, y por qué
+
+El instrumento **no recaba condiciones médicas, embarazo o posparto, tratamientos para control de peso, peso, estatura, medidas corporales ni datos de menores de edad.**
+
+La Ley Federal de Protección de Datos Personales en Posesión de los Particulares clasifica los datos de salud como **sensibles** y exige para ellos consentimiento **expreso y por escrito** —firma autógrafa, electrónica o mecanismo de autenticación equivalente—. Un cuestionario de un minuto aplicado por conversación no puede satisfacer ese estándar, y la sanción por incumplimiento se duplica tratándose de datos sensibles.
+
+**La decisión no degrada la recomendación.** El reactivo 7 recoge la *preferencia* de entrenamiento, que es lo que el sistema necesita para seleccionar clases; la condición que la origina no le hace falta. Quien prefiere bajo impacto recibe exactamente la misma selección, sin que la empresa asuma la custodia de un dato sensible ni la responsabilidad clínica que lo acompaña. La valoración de salud, en palabras del Anexo A, «corresponde al profesional del club, **en el momento del alta**, con el consentimiento y el formato que ese acto sí permite».
+
+El reactivo 17 aplica la misma lógica: pregunta por el **interés en un programa** —prenatal, posparto, infantil o entrenamiento personal— y nunca por el estado que lo motiva. Quien busca acompañamiento en el embarazo lo encuentra, y la empresa registra un interés comercial en lugar de un dato de salud del que tendría que responder.
 
 **Captación posterior al cuestionario (3 campos, una pantalla)** — capturada después de mostrar la recomendación, antes del calendario:
 
@@ -215,17 +227,15 @@ La segunda selección (`Q4[1]`), si está presente, tiene un rol más limitado: 
 
 El motor del cuestionario evalúa la condición de habilitación de cada pregunta en el momento de renderizar. Si la condición es falsa, la pregunta se omite por completo y el motor avanza a la siguiente pregunta. Este no es un patrón de "oculta pero enviada" —la respuesta de la pregunta omitida es `undefined`, y el código aguas abajo debe tratarla como tal.
 
-Las seis condiciones de habilitación se evalúan así:
+Las tres condiciones de habilitación se evalúan así:
 ```
-Q11  shows when answers.Q10 === "Regreso después de una pausa"
-Q12b shows when answers.Q2 !== "Hombre"      // Mujer or "Prefiero no mencionarlo"
-Q14b shows when answers.Q14 === "Yo y mis hijos" || answers.Q14 === "La familia completa"
-Q17  shows when (answers.Q4 || []).includes("Bajar de peso")
-Q18  shows when (answers.Q4 || []).includes("Bajar de peso")
-Q19  shows when (answers.Q4 || []).includes("Bajar de peso")
+R12  shows when answers.R11 === "Vengo de otro gimnasio"
+R13  shows when answers.R11 === "Regreso después de una pausa"
+R14  shows when answers.R11 === "Regreso después de una pausa"
 ```
+Las tres cuelgan del mismo reactivo 11. Ninguna condicional depende del género ni del objetivo: las que lo hacían —estado de embarazo y la rama de pérdida de peso— salieron del instrumento por recabar datos de salud.
 
-Cuando el prospecto navega hacia atrás y cambia una respuesta aguas arriba que ya no dispara una condicional aguas abajo, la respuesta aguas abajo se preserva en el estado pero se ignora al enviar. Ejemplo: el prospecto responde Q10 = "pausa", avanza a Q11, responde "Más de un año", luego regresa a Q10 y cambia a "vengo de otro gimnasio". La respuesta de Q11 ("Más de un año") se preserva en el estado pero no se transmite al resolver ni se muestra en el brief del asesor. Si Q10 se cambia de nuevo a "pausa", Q11 se vuelve a preguntar con el valor previo preseleccionado.
+Cuando el prospecto navega hacia atrás y cambia una respuesta aguas arriba que ya no dispara una condicional aguas abajo, la respuesta aguas abajo se preserva en el estado pero se ignora al enviar. Ejemplo: el prospecto responde el reactivo 11 = «regreso después de una pausa», avanza al 14, responde «más de un año», luego regresa al 11 y cambia a «vengo de otro gimnasio». La respuesta del 14 se preserva en el estado pero no se transmite al resolver ni se muestra en el brief; en cambio se pregunta el 12. Si el 11 vuelve a «pausa», el 14 se pregunta de nuevo con el valor previo preseleccionado.
 
 ## 3.2 Conjugación dinámica del copy por género (Q2)
 
