@@ -31,25 +31,35 @@ estado de cargar nada.
 corrección, más las páginas y el código. **Para qué:** se le pregunta hallazgo por
 hallazgo, desde A-001, y dice qué hay que cambiar y dónde.
 
-Son **42 fuentes**. Se cargan en dos modos distintos, y el modo no es opcional:
+Son **42 fuentes**, y **todas se cargan con `add_source` en modo `url`**, tomando las
+ligas de `fuentes.md` tal cual:
 
-### a · 32 fuentes como texto pegado — `add_source` con `type: "text"`
+| Sección de `fuentes.md` | Cuántas | Ruta |
+|---|---|---|
+| Cuaderno 1 · Documentos originales | 31 | `/original/` |
+| Código | 1 | `/codigo/` |
+| Proceso Comercial | 7 | `/proceso/` |
+| Páginas del sitio | 3 | `/licitacion/`, `/presentacion/`, `/demo-manual/` |
 
-Los 31 archivos `verificacion/txt/<id>.txt` y `verificacion/txt/cuestionario-inteligente.txt`.
+**No se lee el contenido de ningún archivo. Sólo se pasa la URL.**
 
-- El **título** de cada fuente es el nombre del archivo sin extensión: `bds-tecnica`,
-  `contrato`, `cuestionario-inteligente`. Sin sufijos, sin adornos. El nombre es lo
-  que permite emparejar después con su `-MOD`.
-- El **contenido** es el archivo **íntegro**, leído tal cual. No se resume, no se
-  recorta, no se “limpia”. Si un archivo no cabe en una sola llamada, **detente y
-  dilo** — no lo partas por tu cuenta.
+### Por qué URL y no texto pegado
 
-### b · 10 fuentes por URL — `add_source` con `type: "url"`
+`add_source` también acepta `type: "text"`, y a primera vista pegar el texto parece
+más fiable — no hay rastreo de por medio. **No lo uses.** El contenido pegado tiene
+que pasar por el contexto del modelo: son 1.4 MB entre los 63 archivos, y sólo el
+del cuestionario son 212,002 caracteres. Cargarlo así es lento, caro y falla antes
+de terminar. Se intentó el 2 de septiembre de 2026 y no llegó a cargar una sola
+fuente.
 
-Las 7 páginas del Proceso Comercial y las 3 del sitio, con las URL exactas de
-`fuentes.md`. Se cargan por URL porque se escribieron directamente como páginas y
-no tienen archivo de texto detrás: extraer su texto a mano sería transcribirlas, y
-la transcripción es justo lo que este método evita.
+La fiabilidad que buscaba el texto pegado ya está resuelta por otro lado: **R23
+comprueba en cada corrida que cada página publicada reproduce su archivo carácter
+por carácter**, y las 42 se verificaron en vivo respondiendo 200. La página es tan
+exacta como el `.txt`, y su carga no cuesta nada.
+
+Los archivos de `verificacion/txt/` se conservan: son el artefacto auditable que
+R23 compara, y el respaldo si alguna página fallara. Dejan de ser el vehículo de
+carga, no el registro.
 
 ### Comprobación de cierre
 
@@ -98,17 +108,21 @@ ocurrió.
 carga parcial congela documentos a medio corregir y hay que borrarlos y rehacerlos
 uno por uno.
 
-Mismas 42 fuentes, pero los 31 documentos son ahora `verificacion/txt/<id>-MOD.txt`,
-con título `<id>-MOD`. Las 10 páginas por URL y el código no cambian.
+Mismas 42 fuentes y el mismo modo `url`, pero los 31 documentos se toman de la
+sección «Cuaderno 2 · Documentos corregidos» de `fuentes.md` (`/mod/<id>-MOD.html`).
+Las 7 del Proceso Comercial, las 3 del sitio y el código no cambian.
 
 ---
 
 ## Cuaderno 3 · Verificación por pares
 
 **Cuándo:** al final. **Qué se carga:** por cada documento **que haya cambiado**, sus
-dos fuentes —`<id>` y `<id>-MOD`— más `verificacion/cambios.md` como una fuente de
-texto adicional. Un documento idéntico a su original no tiene nada que verificar y
-no se carga.
+dos fuentes por URL —`/original/<id>.html` y `/mod/<id>-MOD.html`— más el resumen
+`verificacion/cambios.md`. Un documento idéntico a su original no tiene nada que
+verificar y no se carga.
+
+El resumen es la única fuente que sí va como texto pegado (`type: "text"`, título
+`cambios`): no está publicado como página, y es pequeño.
 
 Las dos versiones **nunca van juntas en una misma fuente**. Se emparejan por el
 nombre. Una fuente que transcribiera las dos haría que la verificación dependiera
