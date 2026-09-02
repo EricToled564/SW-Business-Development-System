@@ -47,3 +47,7 @@ next-env.d.ts
 # Optional English translations live in webapp/_trans_en.json (tracked).
 __pycache__/
 *.pyc
+
+# Paquetes de fuentes: los arma verificacion/paquete.js y se regeneran.
+CUADERNO-*-fuentes.zip
+.paquete-*/
