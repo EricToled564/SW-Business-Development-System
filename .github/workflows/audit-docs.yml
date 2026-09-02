@@ -36,6 +36,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # R23 comprueba el conjunto de originales contra el commit base de la
+          # auditoría. Con el clon superficial que trae por defecto, ese commit
+          # no está en el historial y la regla no puede verificar nada.
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
