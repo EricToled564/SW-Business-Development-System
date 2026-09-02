@@ -35,6 +35,7 @@ const MOD = path.join(WEBAPP, "mod");
 const PROCESO = path.join(WEBAPP, "proceso");
 const RAIZ = path.join(UX, "..", "..");
 const VERIFICACION = path.join(RAIZ, "verificacion");
+const TXT = path.join(VERIFICACION, "txt");
 const SITIO = "https://erictoled564.github.io/SW-Business-Development-System";
 
 // El estado del depósito sobre el que se hizo la auditoría de los 88 hallazgos:
@@ -72,6 +73,15 @@ const WEB = [
   ["licitacion/index.html", "Licitación"],
   ["presentacion/deck.html", "Presentación · deck"],
   ["demo-manual/index.html", "Demo · manual"],
+];
+
+// El código del cuestionario. Se publica íntegro y sin tocar, envuelto en un
+// bloque preformateado: el texto de las preguntas y la lógica de ramificación
+// que ve el prospecto son auditables tal como están escritos, sin que nadie los
+// transcriba ni los resuma. Se toma el original en módulo ES, no la versión
+// compilada para el navegador: difieren sólo en el envoltorio.
+const CODIGO = [
+  ["demo/cuestionario-inteligente.jsx", "Cuestionario dinámico · código"],
 ];
 
 // DEC/SW/01 se publica como aviso, no como documento: su contenido es interno
@@ -165,9 +175,32 @@ function limpiar(dir) {
 }
 
 [ORIGINAL, MOD].forEach(limpiar);
+fs.mkdirSync(TXT, { recursive: true });
+for (const viejo of fs.readdirSync(TXT).filter((f) => f.endsWith(".txt")))
+  fs.unlinkSync(path.join(TXT, viejo));
 fs.mkdirSync(DOCS_MOD, { recursive: true });
 
 const archivos = fs.readdirSync(DOCS).filter((f) => f.endsWith(".es.md")).sort();
+const codigo = [];
+limpiar(path.join(WEBAPP, "codigo"));
+for (const [rel, nombre] of CODIGO) {
+  const fuente = fs.readFileSync(path.join(WEBAPP, rel), "utf8");
+  const salida = `${path.basename(rel).replace(/\.[^.]+$/, "")}.html`;
+  fs.writeFileSync(
+    path.join(WEBAPP, "codigo", salida),
+    pagina(
+      nombre,
+      `Código del sitio · archivo fuente <code>${rel}</code>`,
+      "<strong>Código, publicado íntegro y sin modificar.</strong> Es el archivo tal como está en el " +
+        "repositorio: el texto de las preguntas, sus opciones y la lógica de ramificación del " +
+        "cuestionario, sin recortes ni resumen.",
+      fuente
+    )
+  );
+  fs.writeFileSync(path.join(TXT, salida.replace(/\.html$/, ".txt")), fuente);
+  codigo.push([salida, nombre]);
+}
+
 const grupo1 = [];
 const grupo2 = [];
 const registro = [];
@@ -190,6 +223,7 @@ for (const archivo of archivos) {
       original
     )
   );
+  fs.writeFileSync(path.join(TXT, `${id}.txt`), original);
   grupo1.push(`${id}.html`);
 
   /* Grupo 2 · la versión en la que se trabajan las correcciones. */
@@ -215,6 +249,7 @@ for (const archivo of archivos) {
       mod
     )
   );
+  fs.writeFileSync(path.join(TXT, `${id}-MOD.txt`), mod);
   grupo2.push(`${id}-MOD.html`);
   registro.push({ id, archivo, cambios });
 }
@@ -244,8 +279,20 @@ const lista = [
   "si alguna página no corresponde con lo que debe reproducir o si esta lista no las nombra todas.",
   "",
   "**NotebookLM no vuelve a rastrear:** cada fuente queda congelada en el momento en que se carga.",
-  "Después de publicar un cambio hay que **volver a cargar** las fuentes afectadas, o la verificación",
-  "contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca antes.",
+  "Después de un cambio hay que **volver a cargar** las fuentes afectadas, o la verificación",
+  "contestará sobre texto viejo.",
+  "",
+  "## Cómo se cargan",
+  "",
+  "**Los documentos y el código se cargan como texto pegado**, con `add_source` en modo `text`,",
+  "desde los archivos de `verificacion/txt/`. Así no hay rastreo de por medio: lo que lee",
+  "NotebookLM es carácter por carácter el archivo, y no depende de que una página se publique",
+  "ni de cómo la interprete un rastreador. R23 comprueba esa identidad en cada corrida.",
+  "",
+  "**Las páginas HTML se cargan por URL**, en modo `url`: son las 7 del Proceso Comercial y las 3",
+  "del sitio. No tienen un archivo de texto detrás —se escribieron directamente como páginas—, así",
+  "que extraer su texto lo hace el rastreador de NotebookLM y no nosotros. Convertirlas a mano",
+  "sería transcribirlas, que es justo lo que este método evita.",
   "",
   "## Los cuadernos",
   "",
@@ -255,8 +302,8 @@ const lista = [
   "",
   "| Cuaderno | Qué se carga | Cuándo | Para qué |",
   "|---|---|---|---|",
-  `| **1 · Originales** | los ${grupo1.length} documentos de \`original/\` + las ${proceso.length} páginas del Proceso Comercial + las ${WEB.length} páginas del sitio = **${grupo1.length + proceso.length + WEB.length} fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |`,
-  `| **2 · Corregidos** | los ${grupo2.length} documentos \`-MOD\` de \`mod/\` + las ${proceso.length} del Proceso Comercial + las ${WEB.length} del sitio = **${grupo2.length + proceso.length + WEB.length} fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |`,
+  `| **1 · Originales** | los ${grupo1.length} documentos de \`original/\` + las ${proceso.length} páginas del Proceso Comercial + las ${WEB.length} páginas del sitio + el código del cuestionario = **${grupo1.length + proceso.length + WEB.length + codigo.length} fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |`,
+  `| **2 · Corregidos** | los ${grupo2.length} documentos \`-MOD\` de \`mod/\` + las ${proceso.length} del Proceso Comercial + las ${WEB.length} del sitio + el código del cuestionario = **${grupo2.length + proceso.length + WEB.length + codigo.length} fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |`,
   "| **3 · Verificación por pares** | el original y su `-MOD` de cada documento **que haya cambiado**, más el resumen de `cambios.md` | al final | Compara par por par y dice si hubo errores o ediciones no autorizadas al hacer los cambios. |",
   "",
   "Las dos versiones **nunca van juntas en una misma página**. Cada una es una fuente independiente,",
@@ -283,6 +330,13 @@ const lista = [
   "No cambiaron desde la base, así que la misma página sirve a los dos cuadernos.",
   "",
   ...proceso.map((n) => `- ${tituloProceso(n)} — ${SITIO}/proceso/${n}`),
+  "",
+  `## Código (${codigo.length}) · cuadernos 1 y 2`,
+  "",
+  "Publicado íntegro y sin modificar. Es donde vive el texto exacto de las preguntas del",
+  "cuestionario, tal como las ve el prospecto.",
+  "",
+  ...codigo.map(([n, nombre]) => `- ${nombre} — ${SITIO}/codigo/${n}`),
   "",
   `## Páginas del sitio (${WEB.length}) · cuadernos 1 y 2`,
   "",
@@ -338,7 +392,7 @@ fs.writeFileSync(path.join(VERIFICACION, "cambios.md"), cambios.join("\n"));
 
 console.log(`Grupo 1 · ${grupo1.length} originales en webapp/original/ (base ${BASE})`);
 console.log(`Grupo 2 · ${grupo2.length} corregidos en webapp/mod/`);
-console.log(`Cuaderno 1: ${grupo1.length + proceso.length + WEB.length} fuentes · cuaderno 2: ${grupo2.length + proceso.length + WEB.length} fuentes (límite 50)`);
+console.log(`Cuaderno 1: ${grupo1.length + proceso.length + WEB.length + codigo.length} fuentes · cuaderno 2: ${grupo2.length + proceso.length + WEB.length + codigo.length} fuentes (límite 50)`);
 console.log(
   conCambios.length
     ? `${conCambios.length} documentos corregidos (${totalCambios} cambios) en verificacion/cambios.md`

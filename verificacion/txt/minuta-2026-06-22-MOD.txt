@@ -1,0 +1,118 @@
+# Minuta de Reunión · 22 de junio de 2026
+## Proyecto: Rediseño Web + SEO + Integración IA "BES"
+
+| Dato | |
+|---|---|
+| **Fecha** | 22 de junio de 2026 |
+| **Cliente** | Grupo Sports World |
+| **Proyecto** | Rediseño web / UX · Estrategia SEO · Integración del agente IA "BES" · Integración con CRM y fuentes de datos operativas |
+
+**Participantes**
+
+- Eric Toledano — Final Upgrade AI
+- Mike — Dirección TI, Sports World
+- Arturo — Arquitectura de Software / TI
+- Miguel — Dirección TI
+- Rosy / Jorge / Fernando (mencionados durante la sesión)
+
+## 1 · Objetivo de la reunión
+
+Revisión inicial de requerimientos técnicos, arquitectura, infraestructura, integración CRM y consideraciones contractuales para el proyecto de rediseño web/UX, estrategia SEO, integración del agente IA "BES" e integración con el CRM y las fuentes de datos operativas.
+
+## 2 · Arquitectura e integraciones requeridas
+
+### 2.1 Integración con CRM
+
+Se confirmó como requerimiento prioritario la integración con el CRM por medio de API.
+
+- **Objetivos:** creación automática de leads/prospectos; transferencia de la información capturada desde el sitio web y el agente BES; disponibilidad de datos para asesores comerciales.
+- **Requerimientos técnicos:** API funcional del CRM; definición de campos necesarios; acceso a documentación técnica; entornos de prueba.
+
+### 2.2 Fuente de información operativa
+
+Se requiere acceso en tiempo real a información de: clubs, clases, horarios, amenidades, dirección, teléfono y email.
+
+- **Uso previsto:** sitio web, agente BES, respuestas conversacionales en tiempo real.
+- **Punto pendiente:** confirmar en qué sistema reside actualmente esta información (CRM, sistema independiente, ERP/middleware u otro origen).
+
+## 3 · Fases del proyecto planteadas
+
+- **3.1 Descubrimiento:** arquitectura base, APIs, gateways, PBX, sistemas de identidad, mapeo de mantenimientos programados.
+- **3.2 Pruebas:** OpenAPI/documentación técnica, credenciales sandbox, esquemas JSON reales, definición de Project Owner(s). *Comentario relevante:* se destacó la importancia de contar con responsables claramente definidos por cada área del proyecto.
+- **3.3 Producción:** credenciales productivas, esquemas de autenticación, rate limits, SLAs documentados.
+- **3.4 Cutover / transición:** acceso a hosting, DNS, CDN, repositorios y coordinación de la ventana de cambio. *Riesgos identificados:* caída temporal del sitio; riesgo operativo sobre los correos ligados al dominio. *Recomendación:* mantener el dominio hospedado con su proveedor actual para minimizar los riesgos de migración.
+
+## 4 · Agente IA "BES"
+
+Se aclaró que BES **no es un chatbot tradicional**; opera mediante IA conversacional por texto y voz.
+
+- **Requerimientos:** acceso a información en tiempo real, baja latencia (<500 ms idealmente), integración con bases de conocimiento, y acceso a políticas, tarifas, amenidades, horarios y clases.
+- **4.1 Escalación a humano:** transferencia automática a agentes humanos, integración vía WhatsApp y voz/SIP. *Pendientes:* información técnica SIP, definición de canales, reglas de escalación.
+
+## 5 · Propuesta técnica de Final Upgrade
+
+Final Upgrade propuso una estrategia de **"integración delegada"**: desarrollo de middleware, traducción de esquemas, webhooks, HMAC y polling. **Condición:** disponibilidad de APIs y documentación por parte de Sports World. **Comentario:** esta alternativa no implicaría un costo adicional.
+
+## 6 · Postura del equipo TI de Sports World
+
+- La infraestructura debe permanecer dentro de entornos controlados por Sports World.
+- No desean dependencias externas de hosting ni de repositorios.
+- Requieren: código fuente, repositorios, control de infraestructura y continuidad operativa.
+- **Motivo:** experiencias previas con proveedores en las que el sistema dejó de operar, no se entregó el código y se generaron observaciones de auditoría.
+
+## 7 · Temas contractuales pendientes
+
+- **Alcance técnico:** ¿rediseño UX?, ¿desarrollo desde cero?, ¿migración tecnológica?, ¿continuidad del sitio actual?
+- **Entregables:** definir explícitamente wireframes, prototipo navegable, código fuente, templates, repositorios y documentación.
+- **Propiedad intelectual:** definir autoría del código, entrega del código fuente, uso de templates y propiedad de los desarrollos.
+
+## 8 · Costos y límites de IA
+
+Sports World solicitó claridad sobre: créditos de IA, límites de uso, monitoreo de consumo, costos excedentes y costos variables de voz/IA.
+
+## 9 · Privacidad y legal
+
+El equipo indicó revisión preliminar por parte legal. **Temas a revisar:** privacidad de datos, responsabilidades, riesgos y balance contractual.
+
+## 10 · Mobile First
+
+Arturo señaló que el soporte móvil no estaba detallado de manera explícita. **Respuesta:** se confirmó que el enfoque es Mobile First, que ~70% del tráfico proviene de móvil y que la prioridad de diseño y UX será móvil antes que escritorio. **Acción pendiente:** verificar que esto quede explícito en el contrato y el alcance.
+
+## 11 · Próximos pasos
+
+**Sports World**
+
+- Enviar preguntas técnicas y legales por correo.
+- Compartir información de APIs y arquitectura existente.
+- Definir responsables / Project Owners.
+
+**Final Upgrade**
+
+- Revisar y ajustar el contrato.
+- Clarificar entregables.
+- Definir el alcance técnico exacto.
+- Documentar costos variables IA/voz.
+- Validar Mobile First en la documentación contractual.
+
+## 12 · Riesgos identificados
+
+- Dependencia de APIs existentes.
+- Riesgos de migración DNS/correos.
+- Ambigüedad contractual.
+- Costos variables de IA.
+- Propiedad y mantenimiento futuro del código.
+- Integración de datos en tiempo real.
+
+## 13 · Otros puntos levantados por el equipo de sistemas de Sports World
+
+- Análisis del sitio actual con **KPIs propuestos a mejorar**.
+- Establecimiento de **porcentajes mínimos de mejora**.
+- **Horarios y SLAs de atención** (si aplica).
+- **Entregables del proyecto** (definición explícita).
+- **Uso de la infraestructura de Sports World**.
+- Establecimiento de **bolsas de horas** para mejoras.
+- Definición de una etapa de **"estabilización"** una vez liberado el proyecto.
+- El proveedor deberá **adaptarse e integrarse con la infraestructura actual**, dado que se observan numerosos requisitos técnicos como prerrequisito.
+- Los **retrasos en la entrega de ambas partes**: ¿impactan únicamente en el tiempo y no en penalizaciones económicas?
+
+> El estatus de cada duda y punto abierto de esta reunión —cómo se resolvió y en qué parte de la documentación quedó cubierto— se lleva en la página **Seguimiento · 22 de junio de 2026**.

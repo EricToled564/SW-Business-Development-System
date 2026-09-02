@@ -5,8 +5,20 @@ se rehace en cada corrida del generador, y la regla **R23** de `tools/consistenc
 si alguna página no corresponde con lo que debe reproducir o si esta lista no las nombra todas.
 
 **NotebookLM no vuelve a rastrear:** cada fuente queda congelada en el momento en que se carga.
-Después de publicar un cambio hay que **volver a cargar** las fuentes afectadas, o la verificación
-contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca antes.
+Después de un cambio hay que **volver a cargar** las fuentes afectadas, o la verificación
+contestará sobre texto viejo.
+
+## Cómo se cargan
+
+**Los documentos y el código se cargan como texto pegado**, con `add_source` en modo `text`,
+desde los archivos de `verificacion/txt/`. Así no hay rastreo de por medio: lo que lee
+NotebookLM es carácter por carácter el archivo, y no depende de que una página se publique
+ni de cómo la interprete un rastreador. R23 comprueba esa identidad en cada corrida.
+
+**Las páginas HTML se cargan por URL**, en modo `url`: son las 7 del Proceso Comercial y las 3
+del sitio. No tienen un archivo de texto detrás —se escribieron directamente como páginas—, así
+que extraer su texto lo hace el rastreador de NotebookLM y no nosotros. Convertirlas a mano
+sería transcribirlas, que es justo lo que este método evita.
 
 ## Los cuadernos
 
@@ -18,8 +30,8 @@ contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca 
 
 | Cuaderno | Qué se carga | Cuándo | Para qué |
 |---|---|---|---|
-| **1 · Originales** | los 31 documentos de `original/` + las 7 páginas del Proceso Comercial + las 3 páginas del sitio = **41 fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |
-| **2 · Corregidos** | los 31 documentos `-MOD` de `mod/` + las 7 del Proceso Comercial + las 3 del sitio = **41 fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |
+| **1 · Originales** | los 31 documentos de `original/` + las 7 páginas del Proceso Comercial + las 3 páginas del sitio + el código del cuestionario = **42 fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |
+| **2 · Corregidos** | los 31 documentos `-MOD` de `mod/` + las 7 del Proceso Comercial + las 3 del sitio + el código del cuestionario = **42 fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |
 | **3 · Verificación por pares** | el original y su `-MOD` de cada documento **que haya cambiado**, más el resumen de `cambios.md` | al final | Compara par por par y dice si hubo errores o ediciones no autorizadas al hacer los cambios. |
 
 Las dos versiones **nunca van juntas en una misma página**. Cada una es una fuente independiente,
@@ -112,6 +124,13 @@ No cambiaron desde la base, así que la misma página sirve a los dos cuadernos.
 - Captación en consola · SOP/SW/0103 — https://erictoled564.github.io/SW-Business-Development-System/proceso/sop-0103.html
 - La Experiencia Guiada · SOP/SW/0201 — https://erictoled564.github.io/SW-Business-Development-System/proceso/sop-0201.html
 - Contratación y alta · SOP/SW/0301 — https://erictoled564.github.io/SW-Business-Development-System/proceso/sop-0301.html
+
+## Código (1) · cuadernos 1 y 2
+
+Publicado íntegro y sin modificar. Es donde vive el texto exacto de las preguntas del
+cuestionario, tal como las ve el prospecto.
+
+- Cuestionario dinámico · código — https://erictoled564.github.io/SW-Business-Development-System/codigo/cuestionario-inteligente.html
 
 ## Páginas del sitio (3) · cuadernos 1 y 2
 
