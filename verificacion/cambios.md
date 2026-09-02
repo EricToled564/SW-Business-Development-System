@@ -9,9 +9,16 @@ par contra este resumen y dice si hubo errores u omisiones, o cambios que no est
 Una edición que no aparezca aquí no ocurrió; una que aparezca y no corresponda a un hallazgo
 cerrado es una edición no autorizada.
 
-**1 de 31 documentos corregidos**, con 7 cambios en total.
+**1 de 31 documentos corregidos**, con 12 cambios en total.
 
-## experience → experience-MOD — 7 cambios
+## experience → experience-MOD — 12 cambios
+
+**Original, línea 90 · MOD, línea 90**
+
+```diff
+- 7. **`briefing`** — Fase terminal. Muestra dos páginas separadas visualmente: la página 1 es la confirmación de la cita (pensada para que el prospecto tome una captura de pantalla y la recuerde), la página 2 es el brief del asesor (pensado para que el asesor de ventas de Sports World lo lea antes de la visita). El prospecto puede reiniciar el cuestionario o regresar a `schedule` para modificar la cita.
++ 7. **`briefing`** — Fase terminal. **El prospecto ve una sola página: la confirmación de su cita**, pensada para que tome una captura de pantalla y la recuerde. El brief del asesor **no se le muestra**: se genera en el servidor y se envía por correo al club, para que el asesor lo lea antes de la visita. Son dos destinatarios distintos y dos entregas distintas. El prospecto puede reiniciar el cuestionario o regresar a `schedule` para modificar la cita.
+```
 
 **Original, línea 139 · MOD, línea 139**
 
@@ -63,6 +70,38 @@ cerrado es una edición no autorizada.
 + Lo que sí pregunta Q12 son **intereses de programa**: si a la persona le interesa que su experiencia incluya trabajo de bajo impacto, programas prenatales o de posparto, acompañamiento nutricional o movilidad guiada. Un interés declarado no es un diagnóstico ni un estado de salud, y por eso puede recabarse con consentimiento tácito, con el aviso a la vista antes del primer reactivo.
 + 
 + La información de salud se recaba **en persona**, en la visita guiada, con la autorización **AU-01** firmada. Es ahí donde corre el cuestionario de salud y la matriz de contraindicaciones (**[SOP/SW/0201](#sop-0201)**).
++ 
+```
+
+**Original, línea 561 · MOD, línea 563**
+
+```diff
+- **Aviso de privacidad en la pantalla:** "Tus datos se usan únicamente para coordinar tu visita guiada. No los compartimos con terceros." Este texto no es legalmente vinculante por sí mismo —el aviso de privacidad integral se referencia en otra parte del sitio— pero es el primer momento de consentimiento del prospecto.
++ **Aviso de privacidad en la pantalla:** "Tus datos se usan únicamente para coordinar tu visita guiada. Los tratan Sports World y sus proveedores tecnológicos, que no pueden usarlos para ningún otro fin. Consulta el aviso de privacidad integral." El enlace lleva al aviso integral de Sports World.
+```
+
+**Original, línea 563 · MOD, línea 565**
+
+```diff
++ La frase anterior —"No los compartimos con terceros"— **se retira por engañosa**. Los datos sí se remiten a encargados del tratamiento: el proveedor del modelo de lenguaje que redacta la experiencia y el brief, el proveedor de voz, la API de WhatsApp Business y el CRM de Sports World. Remitir datos a un encargado no es una transferencia en el sentido de la LFPDPPP, y por eso es lícito sin consentimiento adicional; pero decirle al prospecto que no se comparten con nadie es afirmar algo que no ocurre. El texto corregido nombra la figura sin tecnicismos y remite al aviso integral, que es donde el encargado se identifica.
++ 
++ Este texto no es legalmente vinculante por sí mismo —el aviso integral se referencia en otra parte del sitio— pero es el primer momento de consentimiento del prospecto, y por eso no puede decir menos de lo que es cierto.
++ 
+```
+
+**Original, línea 588 · MOD, línea 594**
+
+```diff
+- **División de página del brief del asesor:**
+- - **Página 1:** banner de confirmación para el prospecto, encabezado del brief (nombre completo + nivel + chips + fecha), §1 Perfil del lead (8 campos), §2 Logística y contacto (club + ubicación + acompañantes + teléfono + email).
++ **División de página del brief del asesor.** El brief es un documento **interno**: se envía por correo al club y **no se renderiza en la sesión del prospecto** en ningún momento. Su banner de confirmación es para el asesor, no para el cliente —el cliente ya vio la suya en la pantalla de resultado—.
++ - **Página 1:** encabezado del brief (nombre completo + nivel + chips + fecha), §1 Perfil del lead (8 campos), §2 Logística y contacto (club + ubicación + acompañantes + teléfono + email).
+```
+
+**Original, línea 592 · MOD, línea 598**
+
+```diff
++ El pie **USO INTERNO** sólo es cierto si el documento nunca llega al prospecto. Mostrarlo en su pantalla —como hacía la versión anterior de este documento— le entregaba el guion de cierre, las prioridades de venta y las banderas que el asesor usa para conducir la conversación.
 + 
 ```
 

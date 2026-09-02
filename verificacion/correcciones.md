@@ -15,7 +15,7 @@ afirma.
 
 | Documento | Hallazgos | Cambios |
 |---|---|---|
-| experience | A-021, A-022, A-023 | 7 |
+| experience | A-021, A-022, A-023, A-026, A-033 | 12 |
 
 ---
 
@@ -112,6 +112,68 @@ las banderas médicas del brief dependían de Q12, Q12b y Q17. Al salir esas pre
 flujo digital, esas mecánicas **no desaparecen: se mudan a la visita**, donde corren con
 la autorización AU-01 firmada. Los apartados §4.8, §4.9, §4.10, §4.12 y §4.15 quedan
 pendientes de reescritura en ese sentido, dentro de este mismo bloque.
+
+---
+
+## experience · A-026 y A-033
+
+**Qué decía la auditoría.**
+
+- **A-026** (alta, privacidad) — «El brief interno se muestra o entrega al prospecto en la
+  arquitectura UX.»
+- **A-033** (alta, privacidad) — «La frase "No los compartimos con terceros" es engañosa
+  frente al uso de encargados tecnológicos.»
+
+**Lo que decía el documento, textual.**
+
+Sobre A-026, NotebookLM lo resumió así: «Contrario a la idea convencional de un documento
+"USO INTERNO" que nunca ve el cliente, el documento de diseño confirma que el brief del
+asesor (Página 2 de la fase terminal `briefing`) SÍ se le muestra visualmente en pantalla
+al prospecto». El texto era:
+
+> «7. `briefing` — Fase terminal. Muestra dos páginas separadas visualmente: la página 1 es
+> la confirmación de la cita […], la página 2 es el brief del asesor (pensado para que el
+> asesor de ventas de Sports World lo lea antes de la visita).»
+
+Y la página 2 contiene, según el mismo documento: «§6 Prioridades de cierre, §7 Notas y
+banderas, Guion de cierre […], Footer USO INTERNO».
+
+Sobre A-033:
+
+> «Aviso de privacidad en la pantalla: "Tus datos se usan únicamente para coordinar tu
+> visita guiada. No los compartimos con terceros."»
+
+**Qué se corrigió, cambio por cambio.**
+
+| # | Línea | Qué cambió |
+|---|---|---|
+| 8 | 90 | La fase `briefing` deja de mostrar dos páginas al prospecto. **Ve una sola: la confirmación de su cita.** El brief se genera en el servidor y se envía por correo al club. |
+| 9–11 | 590–592 | La división de página del brief se encabeza declarando que es **interno** y que **no se renderiza en la sesión del prospecto**. Se retira el «banner de confirmación para el prospecto» de su página 1, que era el resto de la confusión. Se agrega por qué importa: el pie «USO INTERNO» sólo es cierto si el documento no llega al prospecto. |
+| 12 | 563 | Se retira **«No los compartimos con terceros»** y se sustituye por: «Los tratan Sports World y sus proveedores tecnológicos, que no pueden usarlos para ningún otro fin. Consulta el aviso de privacidad integral.» |
+
+**Por qué así, y no de otra forma.**
+
+En A-026 no había que suavizar el texto: había que separar los destinatarios. El propio
+proyecto define la experiencia ideal con **dos destinatarios distintos** —el cliente la
+recibe como su experiencia, el asesor como brief de cierre—. Mostrarle al prospecto el
+guion de cierre, las prioridades de venta y las banderas con las que el asesor va a
+conducir la conversación no es un descuido de maquetación: le entrega el pliego de la otra
+parte.
+
+En A-033, «no los compartimos con terceros» es falso tal como está escrito. Los datos sí se
+remiten a **encargados del tratamiento**: el modelo de lenguaje que redacta la experiencia y
+el brief, el proveedor de voz, la API de WhatsApp Business y el CRM. Remitir datos a un
+encargado **no es una transferencia** en el sentido de la LFPDPPP —por eso es lícito sin
+consentimiento adicional—, pero decirle al prospecto que no se comparten con nadie afirma
+algo que no ocurre. La corrección nombra la figura sin tecnicismos y remite al aviso
+integral, que es donde el encargado se identifica.
+
+**Evidencia.** `evidencia/B3-antes-cuestionario-brief-terceros.md` — 18 documentos
+identificados sobre las fuentes legibles, con las frases transcritas.
+
+---
+
+## Nota sobre la evidencia de la primera entrada
 
 **Evidencia.** `evidencia/B3-antes-salud-consentimiento.md` — respuesta íntegra de
 NotebookLM sobre las 42 fuentes, 12 documentos identificados, con las frases transcritas.
