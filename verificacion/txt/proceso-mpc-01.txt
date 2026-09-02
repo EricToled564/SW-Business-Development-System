@@ -1,0 +1,1159 @@
+Manual del Proceso Comercial · MPC/SW/01 · Sports World
+
+Sports World México · Dirección Comercial
+Uso interno
+
+Título
+
+Manual del Proceso Comercial
+
+De la manifestación de interés a la contratación de la membresía
+
+No. de documento
+MPC/SW/01
+
+Estatus
+Uso interno
+
+Sustituye a
+N/A
+
+Autor
+Dirección Comercial
+Firma: en expediente
+
+Aprueba
+Dirección General
+Firma: en expediente
+
+Versión
+1.0
+
+Fecha de entrada en vigor
+01-SEP-2026
+
+Fecha de revisión
+01-SEP-2027
+
+Ámbito
+Los 49 clubes de la red
+
+1Introducción: cómo funciona este manual
+
+1.1 · Qué reúne este documento
+
+Este manual reúne el conjunto de procedimientos que llevan a una persona desde que manifiesta interés en
+Sports World hasta que contrata su membresía. Fija una sola forma de trabajar para los 49 clubes de la
+red, con independencia del canal por el que la persona llegue, de la plaza y del asesor que la atienda.
+
+Su propósito no es documentar lo que hoy ocurre. Es establecer lo que debe ocurrir. El
+trabajo de campo que precede a este manual —15 entrevistas con 6 líderes comerciales y 9 asesores, en 13
+clubes de cinco estados— registró que la conversión total de contacto a venta varía entre 0.5% y 20%
+según quién atienda, y que ninguno de los 15 entrevistados describió un método estructurado para
+identificar el objetivo del prospecto. La dispersión no es un problema de talento: es la consecuencia
+previsible de que cada quien resuelva por su cuenta un proceso que nunca se escribió.
+
+1.2 · Cómo está organizado
+
+El proceso comercial se divide en tres momentos, y cada momento en los procedimientos que efectivamente
+se ejecutan por separado. La captación se divide por canal porque el momento en que la persona deja de
+ser anónima es distinto en cada uno, y de ello dependen la llave que la identifica, el orden en que se le
+solicitan los datos y lo que puede medirse de su recorrido. La visita y la contratación no se dividen:
+ocurren en el club y son idénticas viniera la persona de donde viniera.
+
+Momento 1 · Captación y calificación — un procedimiento por canal
+
+SOP/SW/0101
+WhatsApp oficial
+Campaña en redes sociales y mensaje directo al número
+
+SOP/SW/0102
+Sitio web
+Búsqueda orgánica, tráfico de pago y fichas de Google Business
+
+SOP/SW/0103
+Consola del asesor
+Visita espontánea al club y llamada telefónica
+
+convergen en
+
+SOP/SW/0201
+Momento 2 · La Experiencia Guiada de Sports World
+Idéntico para los tres canales de origen
+
+SOP/SW/0301
+Momento 3 · Contratación y alta de la membresía
+Cierre del proceso comercial
+
+Fuera del proceso comercial · incorporación del socio, permanencia, retención y cancelación — tratadas como recomendaciones en el apartado 11
+
+Clave Procedimiento Qué produce Estado
+
+SOP/SW/0101 Captación por WhatsApp oficial Visita solicitada, brief del asesor y asesor designado Vigente
+
+SOP/SW/0102 Captación por el sitio web Visita solicitada, brief del asesor y asesor designado Por elaborar
+
+SOP/SW/0103 Captación en consola
+Club y teléfono Visita solicitada, brief del asesor y asesor designado Por elaborar
+
+SOP/SW/0201 La Experiencia Guiada de Sports World Propuesta presentada y decisión del prospecto registrada Por elaborar
+
+SOP/SW/0301 Contratación y alta de la membresía Membresía contratada, socio dado de alta y expediente completo Por elaborar
+
+SOP/SW/0104 Captación por referido Por definir Por confirmar
+
+SOP/SW/0105 Captación por convenio corporativo Por definir Por confirmar
+
+Los dos últimos están marcados por confirmar: falta resolver si el referido y el convenio corporativo
+constituyen procedimientos propios o si ingresan por consola con una marca de origen distinta. La
+decisión corresponde a Dirección Comercial y se resuelve antes de la versión 1.1.
+
+1.3 · Qué contiene el manual
+
+Los apartados 2 a 8 establecen lo que vale igual en cualquier canal. Los procedimientos, en el apartado 9, establecen lo propio de cada canal.
+
+Nº Apartado Contenido
+
+1 Introducción Cómo funciona este manual, cómo se lee y cómo se mantiene
+
+2 Propósito y alcance Qué resuelve el proceso comercial, dónde inicia, dónde concluye y qué queda fuera
+
+3 El proceso de punta a punta Los tres momentos, sus fronteras y lo que cada uno entrega al siguiente
+
+4 Principios rectores Las reglas que obligan en todos los procedimientos, sin excepción de canal ni de club
+
+5 Actores y responsabilidad Quién ejecuta, quién responde por el resultado, quién supervisa y quién habilita
+
+6 Instrumentos y documentos comunes El cuestionario, el brief, la experiencia ideal, el catálogo del día y los demás documentos que atraviesan todo el proceso
+
+7 Medición Las etapas del funnel, su definición operativa, las llaves de conciliación y los indicadores de dirección
+
+8 Protección de datos personales Roles, minimización, consentimiento y qué no se recaba, con su fundamento
+
+9 Los procedimientos Los cinco documentos del apartado 1.2, cada uno completo y autónomo
+
+10 Glosario Todo término cuyo significado no sea evidente para alguien ajeno al proyecto
+
+11 Recomendaciones posteriores a la contratación Lo que el proceso comercial no cubre y conviene resolver después: incorporación, permanencia y retención
+
+12 Control de cambios Quién autoriza, con qué periodicidad se revisa y qué versión rige
+
+1.4 · Qué prescribe este manual y qué no
+
+Este manual prescribe secuencia y responsabilidad: qué ocurre, en qué orden y quién
+responde por cada paso. No prescribe conducta. Un paso dice «aplica el cuestionario»; no dice
+cómo sostener la conversación con alguien que acaba de decir que le parece caro.
+
+La distinción es operativa. La secuencia obliga por igual a todos y su incumplimiento es verificable. La
+conducta admite formas distintas de hacerse bien y se enseña, no se audita. Por eso vive en otro
+documento, un nivel abajo: el Manual de Ventas, que se deriva de este proceso y desarrolla
+el criterio de cada momento. Cuando un paso requiere criterio, remite explícitamente al capítulo que lo
+contiene.
+
+Nivel Documento Responde a Frecuencia de cambio
+
+Manual del proceso Este documento
+MPC/SW/01 Qué es el proceso comercial, qué lo rige y de qué procedimientos se compone Años
+
+Procedimiento SOP/SW/01xx a 03xx Qué ocurre, en qué orden y quién responde por cada paso Anual
+
+Instrucción de trabajo Manual de Ventas Cómo se conduce cada momento y con qué criterio Trimestres
+
+Registro RP-01 · BA-01 · AC-01 Qué ocurrió en un caso concreto Cada operación
+
+Por qué importa la separación
+Un manual que mezcla los dos niveles se vuelve inservible en los dos. Se hace demasiado largo para
+consultarse en operación y demasiado rígido para enseñarse, y cada ajuste de argumento comercial obliga a
+reabrir un documento que debería cambiar una vez al año. Manteniéndolos separados, el procedimiento se
+audita y el criterio se entrena, que es lo que cada uno admite.
+
+1.5 · Cómo se lee
+
+Cada procedimiento es autónomo. Quien opera un canal no necesita leer los otros. Los apartados comunes se citan por número, no se transcriben.
+
+Los procedimientos se citan por clave y por paso —SOP/SW/0101, paso 31—. Nunca por página ni por título de apartado, porque ambos cambian entre versiones y la numeración de pasos no.
+
+Los instrumentos se citan por clave —CEI-01 el cuestionario, BA-01 el brief, CAT-01 el catálogo del día—. El apartado 6 dice qué contiene cada uno y de quién es.
+
+Dentro de cada procedimiento, el apartado del mismo nombre es una tabla de tres columnas: paso, acción y responsable. Las decisiones van dentro de la acción, con el destino explícito de cada rama. El diagrama de flujo comparte esa numeración; si el diagrama y la tabla discrepan, rige la tabla.
+
+Las etapas de medición se nombran por su código —E2, E3, E4—. Su definición operativa, que es lo que determina cuándo cuenta cada una, está en el apartado 7 y es la misma para todos los canales.
+
+1.6 · Cómo se mantiene
+
+Concepto Definición
+
+Versión vigente Únicamente la publicada por Dirección Comercial, identificada en la cabecera de control. Las versiones anteriores se conservan como antecedente y no rigen la operación
+
+Autoriza cambios Dirección Comercial. Los cambios que afecten precio, condiciones de contratación o tratamiento de datos personales requieren además el visto bueno del área correspondiente
+
+Revisión programada Anual para el manual. Cada procedimiento se revisa en el mismo ciclo. La primera lectura de indicadores se hace a los 90 días de operación y produce la versión 1.1
+
+Revisión extraordinaria Ante cambio de CRM, alta o baja de un canal de captación, modificación del régimen de sincronización del catálogo, o cambio en la normativa de protección de datos personales
+
+Discrepancia con la operación No se resuelve con una variante local. Se reporta a Dirección Comercial, que determina si es una excepción de ese caso o un cambio que el manual debe incorporar
+
+Configuración de sistemas El asistente conversacional, el sitio y la consola se configuran contra estos procedimientos. Toda modificación a su comportamiento pasa primero por una modificación al procedimiento correspondiente
+
+La regla que sostiene todo lo demás
+Un procedimiento que se ejecuta distinto en cada club deja de permitir la comparación entre clubes, y con
+ella se pierde la única forma de saber qué funciona. La variación local no se corrige regañando: se
+corrige haciendo que el documento sea más fácil de seguir que de improvisar. Si un paso resulta imposible
+de cumplir en un club, el defecto está en el paso y se reporta.
+
+1.7 · Los documentos de esta sección
+
+Este manual es el documento de cabecera. Los procedimientos que lo acompañan son autónomos: cada uno se
+lee por separado y contiene lo propio de su canal. Desde aquí se llega a todos.
+
+Clave Documento Qué resuelve Pasos
+
+MPC/SW/01 Manual del Proceso Comercial
+Este documento Propósito, alcance, principios, actores, instrumentos y medición. Lo que vale igual en cualquier canal —
+
+SOP/SW/0101 Captación por WhatsApp El canal conversacional, con sus dos puntos de entrada: campaña con identificador y mensaje directo 53
+
+SOP/SW/0102 Captación por el sitio web El canal digital, con recorrido autónomo y recorrido asistido 54
+
+SOP/SW/0103 Captación en consola El personal del club: atención telefónica, llamada a referido y persona que llega sin cita 52
+
+SOP/SW/0201 La Experiencia Guiada La visita guiada, de la preparación al cierre, con el método de venta de Sports World ordenado en pasos 72
+
+SOP/SW/0301 Contratación y alta Términos, contrato, cobro, alta, activación de la aplicación y valoración física. Contiene la captura del dato del funnel por asesor y su agregación por club, plaza y nacional 37
+
+MV/SW/01 Manual de Ventas
+Instrucción de trabajo Cómo se conduce la venta: los siete pasos del método con ejemplos, guiones y la lista de la visita. Complementa a los procedimientos; ante discrepancia rige el procedimiento —
+
+2Propósito y alcance
+
+2.1 · Qué debe lograr el proceso comercial
+
+El proceso comercial existe para producir tres resultados. No son aspiraciones: son obligaciones
+verificables, y cada procedimiento de este manual responde por al menos una de ellas.
+
+Nº Resultado Cómo se verifica
+
+1 Que toda persona interesada reciba respuesta y quede calificada con el mismo instrumento, sin importar el canal por el que llegue, la hora a la que escriba ni el club que le corresponda Ningún prospecto agendado sin cuestionario aplicado. Cobertura de atención inmediata en los canales conversacionales
+
+2 Que el asesor reciba el diagnóstico antes de la visita, en lugar de levantarlo durante ella Brief generado en el 100% de las visitas solicitadas, y registro de su apertura antes de la visita
+
+3 Que cada resultado sea atribuible al origen que lo produjo, desde el primer contacto hasta la baja de la membresía Registros sin atribución de origen, medidos por canal. La atribución se sella en la entrada y no se reconstruye después
+
+Lo que el proceso no pretende
+No sustituye el juicio del asesor ni uniforma la conversación de venta. Uniforma la información
+con la que esa conversación empieza: el mismo diagnóstico, levantado con el mismo instrumento,
+entregado antes de que la persona llegue al club. Lo que el asesor haga con ese diagnóstico es criterio
+profesional, se entrena y se desarrolla en el Manual de Ventas.
+
+2.2 · El problema que resuelve
+
+Cada obligación del apartado anterior responde a un hallazgo documentado en el trabajo de campo. La
+columna izquierda es lo que se registró; la derecha, lo que este manual establece frente a ello.
+
+Lo que registró el campo Lo que este manual establece
+
+Ninguno de los 15 entrevistados describió un método estructurado para identificar el objetivo del prospecto. La conversación se construye sobre preguntas logísticas, no sobre lo que la persona busca
+Un instrumento único de calificación, idéntico en todos los canales, aplicado antes de que el asesor hable con la persona
+
+8 de los 15 señalaron la calificación del lead como su prioridad número uno
+El brief del asesor se genera en la misma operación que la recomendación y llega al club junto con la solicitud de visita, no después
+
+La conversión total de contacto a venta varía entre 0.5% y 20% según el asesor —una diferencia de 40 veces— sin línea base verificable que permita saber cuál es el punto de partida
+Una definición operativa única de cada etapa, igual para todos los canales, y medición abierta por club y por canal. No se fijan metas hasta contar con la línea base real
+
+La objeción de precio apareció en las 15 entrevistas, sin excepción. La capacidad de articular el valor diferencial frente a la competencia local determina la conversión
+El brief arma los argumentos con los objetivos que la propia persona declaró. El criterio para conducir esa conversación se desarrolla en el Manual de Ventas
+
+El 99% del seguimiento ocurre por WhatsApp en cuentas personales de los asesores, que se suspenden al alcanzar 50 a 60 mensajes diarios y dejan 24 horas fuera de operación de forma recurrente
+Un número oficial de la empresa con plantillas autorizadas. Los recordatorios los envía el sistema, no el asesor desde su dispositivo
+
+De las citas agendadas, entre el 20% y el 50% se convierten en asistencia. La inasistencia es la falla más frecuente del proceso
+Acuse del club dentro de 24 horas con asesor designado, dos recordatorios programados, y contacto el mismo día ante inasistencia con dos alternativas concretas de fecha
+
+Los números de teléfono equivocados son una falla recurrente en la captación telefónica y presencial
+Validación de los tres datos de contacto antes de agendar. En WhatsApp el número queda validado por el canal mismo, porque la persona escribe desde el suyo
+
+Fuente: reporte de 15 entrevistas individuales —6 líderes comerciales y 9 asesores— realizadas los días
+14 y 15 de mayo de 2026 en 13 clubes de la Ciudad de México, Aguascalientes, Hermosillo, Puebla y Jerez.
+
+2.3 · Alcance
+
+Frontera Definición
+
+Inicia Cuando una persona manifiesta interés por cualquiera de los canales de captación, o cuando personal autorizado abre un cuestionario nuevo en la consola
+
+Concluye Cuando la membresía queda contratada, el socio dado de alta y el expediente completo
+
+Aplica a Los 49 clubes de la red y a todo el personal que interviene en la captación o el cierre, sin excepción por plaza, por antigüedad del asesor, por formato de membresía ni por volumen. Comprende a los aproximadamente 200 asesores de la red, a los operadores de atención digital, a las gerencias de club y a los terceros que operen cualquiera de estas funciones
+
+Vigencia Desde su entrada en vigor y hasta que Dirección Comercial publique una versión posterior. No admite variantes locales
+
+2.4 · Qué queda fuera y dónde está
+
+Queda fuera del proceso comercial Responsable Dónde se trata
+
+La generación de demanda anterior al primer contacto: pauta, contenido, posicionamiento y presencia local Marketing MKT/SW/01
+
+El criterio de conducción de la venta: cómo abrir, cómo escuchar, cómo manejar una objeción, cómo cerrar Dirección Comercial
+Academia Manual de Ventas
+
+Todo lo posterior a la contratación: incorporación del socio, permanencia, retención y cancelación Operación Apartado 11
+como recomendaciones
+
+La operación del club: programación de clases, mantenimiento, aforo y servicio en piso Operación Fuera de este manual
+
+La administración de precios y promociones: su definición, su carga y su vigencia. El proceso los consume del catálogo del día, no los determina Comercial y Sistemas CAT/SW/01
+
+Sobre la frontera con el Manual de Ventas
+Es la frontera que más se presta a confusión en la operación, y por eso conviene fijarla con un ejemplo.
+Que el asesor consulte el brief antes de la visita es un paso del proceso: es
+obligatorio, se verifica con el registro de apertura y su incumplimiento es una desviación. Que el asesor
+decida con qué argumento abrir a partir de lo que leyó en ese brief es criterio: admite
+varias formas de hacerse bien, se entrena y no se audita. El proceso llega hasta la puerta de la
+conversación; el Manual de Ventas empieza ahí.
+
+3El proceso de punta a punta
+
+Tres momentos. Cada uno recibe algo, produce algo y lo entrega al siguiente. Un momento no concluye
+cuando su responsable termina de trabajar: concluye cuando su producto está en manos de quien sigue.
+
+Momento Inicia cuando Concluye cuando Entrega al siguiente
+
+1 · Captación y calificación
+SOP/SW/0101 · 0102 · 0103
+Una persona manifiesta interés por cualquier canal, o personal autorizado abre un cuestionario en consola
+La escritura en el CRM está confirmada y el club acusó recibo con asesor designado
+Solicitud de visita con fecha y hora · Brief del asesor · Asesor designado · Atribución de origen sellada
+
+2 · Visita guiada y propuesta
+SOP/SW/0201
+El prospecto se presenta al club en la fecha acordada
+La propuesta quedó presentada y la decisión del prospecto registrada, sea cual sea
+Propuesta presentada con sus condiciones · Decisión registrada · Perfil enriquecido con lo confirmado en la visita
+
+3 · Contratación y alta
+SOP/SW/0301
+El prospecto acepta la propuesta
+La membresía está contratada, el socio dado de alta y el expediente completo
+Membresía activa con su número · Expediente · Cierre del proceso comercial
+
+3.1 · Los dos traspasos críticos
+
+Entre momentos hay dos traspasos, y ambos son puntos de pérdida documentados. El manual los trata como
+entregas verificables, no como continuidad supuesta.
+
+Traspaso Qué lo hace verificable Qué ocurre si falla
+
+Captación → Visita
+El acuse del club, registrado en el CRM sobre el mismo prospecto dentro de 24 horas o antes de la visita, lo que ocurra primero, con confirmación de capacidad y nombre del asesor designado. El correo entrega la información al club, pero no deja constancia de que alguien la haya recibido
+El prospecto llega a un club donde nadie lo espera. Si no se presenta, o si se presenta y no hay quien lo atienda, el resultado se registra como inasistencia en E5 y se atribuye al prospecto, cuando la causa estuvo del lado del club
+
+Visita → Contratación
+La decisión registrada, incluso cuando es negativa o diferida, con la condición ofrecida y su vigencia
+Se pierde la razón por la que no se cerró, que es el único insumo para corregir. Y una condición ofrecida sin registrar sigue obligando a la empresa
+
+3.2 · Correspondencia con las etapas de medición
+
+El proceso comercial y el funnel de medición son el mismo recorrido leído de dos maneras. Esta tabla
+amarra una lectura con la otra; la definición operativa de cada etapa está en el apartado 7.
+
+Momento Etapas Qué cubre
+
+1 · Captación C1 · C2 · C3
+E2 · E3 · E4 Entrada por canal, cuestionario iniciado, cuestionario completado y visita agendada
+
+2 · Visita E5 Visita realizada
+
+3 · Contratación E6 Membresía comprada
+
+Fuera del proceso comercial E7 Membresía cancelada. Se mide porque cierra la lectura de retención, pero su operación se trata en el apartado 11
+
+4Principios rectores
+
+Diez reglas obligan en todos los procedimientos, en todos los canales y en los 49 clubes. Cada
+procedimiento las cita por clave. Una regla que admite excepción local deja de ser
+regla, así que este apartado no contempla ninguna.
+
+Clave Principio Razón y consecuencia de incumplirlo
+
+P-01 No se agenda una visita guiada sin cuestionario aplicado. Aplica también cuando la persona llega con el club ya elegido y solo pide agendar Sin cuestionario no hay brief, y sin brief el asesor levanta el diagnóstico durante la visita, con cargo al tiempo destinado a demostrar la recomendación
+
+P-02 La recomendación se entrega antes de solicitar datos de contacto La persona recibe algo de valor antes de que se le pida nada. Los datos se solicitan cuando ya existe una razón concreta para compartirlos
+
+P-03 La experiencia decide el club recomendado; la cercanía únicamente desempata Recomendar el club más cercano sin verificar que ofrece lo que la persona busca produce una visita que no puede terminar bien
+
+P-04 Toda información comercial proviene del catálogo del día, con corte a las 06:00 de la Ciudad de México No hay lectura en vivo de precios, clases ni horarios. Una recomendación construida sobre información desactualizada compromete a la empresa con condiciones que ya no existen
+
+P-05 Una sola escritura al CRM, idéntica en todos los canales, idempotente por llave de sesión Es lo que permite comparar canales sobre la misma base y lo que impide que el mismo prospecto se contabilice dos veces
+
+P-06 La fecha y hora elegidas son una solicitud de visita, nunca una reserva El sistema no verifica disponibilidad de asesor ni de sala. Presentarla como reserva genera una expectativa que la operación no está obligada a cumplir
+
+P-07 Ningún prospecto conversacional queda sin atención inmediata El tiempo al primer contacto es la variable que más rápido destruye una oportunidad digital. La atención inmediata es responsabilidad del sistema, no de la disponibilidad de una persona
+
+P-08 Toda condición comercial ofrecida obliga a la empresa, quien la ofrezca y por el canal que sea Una condición ofrecida en captación compromete el margen de negociación del asesor antes de que la conversación comercial haya comenzado
+
+P-09 Ningún resultado se reporta sin su definición operativa. Una etapa cuenta cuando ocurre el hecho que la define, no cuando alguien la da por ocurrida La visita agendada cuenta al confirmarse la escritura en el CRM, no al pulsar confirmar el prospecto. Es la distinción que separa el número reportado del número real
+
+P-10 La atribución de origen se sella en la entrada y viaja con el registro hasta la baja de la membresía No se reconstruye después. Un registro sin atribución impide evaluar la campaña que lo produjo, y esa pérdida es definitiva
+
+Cómo se usan estos principios
+En los procedimientos aparecen citados por clave dentro de la acción del paso que los aplica —«registra
+la fecha y hora como solicitud de visita (P-06)»—, de modo que quien ejecuta sepa que está frente a una
+regla y no frente a una preferencia. Modificar un principio obliga a revisar todos los procedimientos que
+lo citan, y por eso su cambio requiere la misma autorización que el manual completo.
+
+5Actores y responsabilidad
+
+Cuatro niveles de responsabilidad, aplicados de forma consistente en todo el manual. Un actor puede tener
+niveles distintos en momentos distintos, pero nunca dos niveles en el mismo paso.
+
+Nivel Qué significa
+
+Ejecuta Realiza la actividad. Es quien aparece nombrado en la columna derecha de cada paso
+
+Responde por el resultado Rinde cuentas de que el resultado ocurra, aunque no ejecute. Es a quien se le pregunta cuando el indicador no se cumple
+
+Supervisa Vigila el cumplimiento, resuelve las excepciones escaladas y autoriza los cambios
+
+Habilita Provee una condición sin la cual el proceso no puede ejecutarse. No participa en la operación diaria, pero su ausencia la detiene
+
+Actor Responsabilidad en el proceso comercial Momentos Nivel
+
+Asistente conversacional Atiende toda conversación entrante en los canales digitales, aplica el cuestionario, entrega la recomendación y agenda la visita 1 Ejecuta
+
+Operador de atención digital Atiende las escalaciones dentro de su horario y retoma los pendientes registrados fuera de él 1 Ejecuta por escalación
+
+Asesor de club Captura en consola la visita espontánea y la llamada · conduce la visita guiada · presenta la propuesta · integra el expediente de contratación 1 · 2 · 3 Ejecuta
+
+Gerencia del club Acusa recibo de la solicitud, verifica capacidad, designa asesor y coordina la visita. Responde por la asistencia y por el cierre de su club 1 · 2 · 3 Responde por el resultado
+
+Dirección Comercial Es dueña del proceso. Define el criterio de asignación de asesor, vigila el cumplimiento, resuelve las excepciones escaladas y autoriza los cambios a este manual y a sus procedimientos 1 · 2 · 3 Supervisa y autoriza
+
+Sistemas Vigencia del catálogo diario, disponibilidad del punto de escritura al CRM, ejecución de la sincronización manual y provisión de los datos de cierre del funnel 1 · 2 · 3 Habilita
+
+Marketing Número oficial con plantillas autorizadas · parámetros de campaña en todas las piezas · carga de la ficha de campaña antes de que la pauta salga al aire 1 Habilita
+
+Legal Aviso de privacidad vigente, mecanismos de consentimiento y los términos del contrato de membresía 1 · 3 Habilita
+
+Academia Entrena el criterio de conducción que este manual no prescribe, sobre los mismos conceptos que el proceso produce 2 · 3 Habilita
+
+6Instrumentos y documentos comunes
+
+Once documentos atraviesan el proceso. Este apartado establece el contenido y la responsabilidad de cada uno; los procedimientos los citan por clave. Los tres primeros son los instrumentos del sistema; el resto son insumos o registros.
+
+6.1 · Instrumentos
+
+Clave Documento Contenido Propietario
+
+CEI-01 Cuestionario de Experiencia Ideal 19 reactivos —16 base y 3 condicionales—, un minuto de participación. Idéntico en todos los canales, sin variantes por plaza ni por club. Identidad y trato · objetivo emocional · objetivo funcional · ritmo y modalidad · preferencias de entrenamiento · disponibilidad · nivel e historial · acompañamiento · interés en programas familiares · ancla geográfica Dirección Comercial
+Anexo A
+
+EI-01 Experiencia ideal
+Entregable al prospecto Club recomendado y la razón de la recomendación · combinación de entrenamiento en tres bloques · clases idóneas con su horario real en ese club · amenidades que corresponden al objetivo · alternativas de club con su diferencia señalada Se genera del CEI-01
+y del catálogo del día
+
+BA-01 Brief del asesor
+Uso interno Perfil del prospecto · logística y contacto · qué confirmar antes de proponer · ruta recomendada del recorrido en cuatro pasos · propuesta principal y complemento · tres prioridades de cierre · notas y señales de atención · espacio de registro del asesor Dirección Comercial
+Anexo B
+
+6.2 · Insumos
+
+Clave Documento Contenido Propietario
+
+CAT-01 Catálogo comercial del día Clubes con estatus operativo, coordenadas, dirección, teléfono y correo · horarios de atención por día · amenidades · clases con día, hora de inicio y término · tarifas, descuentos y promociones vigentes Sistemas
+Corte 06:00 CDMX
+
+CAM-01 Ficha de campaña vigente
+Una por campaña activa Identificador de campaña y de anuncio · oferta tal como aparece en la pieza · descuento y su vigencia · clase, programa o amenidad que promueve · clubes participantes · condiciones y exclusiones Marketing
+
+BC-01 Base de conocimiento Catálogo de membresías con precios y términos · descripciones de clases · políticas de cancelación y congelamiento · información operativa por club. Actualización semanal mínima Comercial y Operación
+
+AP-01 Aviso de privacidad Versión simplificada desplegada antes de la primera pregunta, con enlace a la versión integral. Finalidades necesarias y de mercadotecnia presentadas por separado Legal
+
+PL-01 Plantillas autorizadas de WhatsApp Mensajes aprobados por Meta para apertura de conversación, confirmación de visita y los dos recordatorios. Obligatorias fuera de la ventana de servicio de 24 horas Marketing
+
+6.3 · Registros
+
+Clave Documento Contenido Reside en
+
+RP-01 Registro de prospecto Llave de sesión · nombre y apellido en campos separados · teléfono en formato internacional · correo · club elegido · fecha y horario solicitados · perfil del CEI-01 · canal de origen y atribución de campaña · marca de tiempo · constancia del consentimiento CRM
+
+CV-01 Confirmación de visita Club, dirección, fecha y hora · aviso expreso de que el club confirma y coordina · constancia de que la experiencia ideal se envió y las preferencias se comunicaron al asesor Se genera de RP-01
+
+AC-01 Acuse del club Confirmación de recepción · confirmación de capacidad en el horario solicitado, o reprogramación acordada · nombre del asesor designado · marca de tiempo. Se registra dentro de 24 horas o antes de la visita, lo que ocurra primero CRM
+sobre el registro del prospecto
+
+RV-01 Registro de la visita Asistencia · lo confirmado del perfil durante el recorrido · propuesta presentada con sus condiciones · decisión del prospecto y su motivo CRM
+SOP/SW/0201
+
+Sobre el CEI-01
+Es el instrumento que sostiene los tres resultados del apartado 2.1. Que sea idéntico en todos los
+canales es lo que permite que dos personas con el mismo objetivo reciban la misma recomendación sin
+importar por dónde entraron, y que la calificación deje de depender del criterio individual de quien
+atiende. Cualquier variante por canal, por plaza o por club anula esa propiedad y con ella la
+comparabilidad de toda la medición.
+
+7Medición
+
+El proceso comercial se mide con las mismas etapas en los tres canales de captación y en la visita. Este
+apartado establece qué se cuenta, en qué momento exacto cuenta y qué procedimiento lo escribe.
+La definición completa del funnel —fuentes del dato, accesos requeridos y responsables de otorgarlos— vive en
+el mapa canónico de medición y no se reformula aquí.
+
+7.1 · Las etapas y el paso que las escribe
+
+Cada etapa se registra en un solo lugar, en un momento definido. El momento importa más que la etapa: contar
+una visita cuando el prospecto acepta la fecha, y no cuando el registro queda escrito, produce un funnel que
+no corresponde con lo que el club puede atender.
+
+Etapa Cuenta exactamente cuando… Dónde se escribe
+
+E2
+Cuestionario iniciado Se responde el primer reactivo. No al presentarse la primera pantalla ni al enviarse el primer mensaje SOP/SW/0101 paso 13
+SOP/SW/0102 paso 7
+SOP/SW/0103 paso 12
+
+E3
+Cuestionario completado Queda generada la experiencia ideal. No al responderse el último reactivo: lo que cierra la etapa es el producto, no la respuesta SOP/SW/0101 paso 25
+SOP/SW/0102 paso 20
+SOP/SW/0103 paso 20
+
+E4
+Visita agendada Se confirma la escritura del registro. No cuando el prospecto acepta la fecha: una fecha aceptada que no quedó escrita no es una visita SOP/SW/0101 paso 41
+SOP/SW/0102 paso 39
+SOP/SW/0103 paso 39
+
+E5
+Visita realizada Se inicia el recorrido en el club. La visita inmediata se registra igual que la agendada y se lee por separado SOP/SW/0201 paso 33
+
+E6
+Membresía contratada El prospecto acepta el plan y se confirman sus términos. El alta en el sistema ocurre después de la aceptación, nunca antes SOP/SW/0201 paso 62
+
+E7
+Membresía cancelada Se registra la baja. Queda fuera del proceso comercial y se obtiene de la sincronización periódica Fuera de alcance
+
+Por qué E3 se cuenta sobre el producto y no sobre la respuesta
+Un cuestionario respondido cuya recomendación no llegó a generarse deja al prospecto sin nada que recibir y
+al asesor sin brief. Contarlo como completado escondería exactamente la falla que hay que ver. Por eso los
+tres procedimientos registran E3 al quedar generada la experiencia ideal, y tratan el caso contrario como
+excepción con su propio camino.
+
+7.2 · Las llaves de conciliación
+
+Las etapas se producen en sistemas distintos y hay que unirlas. Estas son las llaves vigentes; sustituyen
+cualquier otra que aparezca en documentación anterior.
+
+Tramo Llave Nota
+
+Sesión → E2 → E4 Identificador de sesión Llave de idempotencia: una sola escritura por prospecto, aunque la conversación o el recorrido se reanuden
+
+E4 → E5 → E6 Nombre + apellido + teléfono + club El teléfono es la llave principal; nombre, apellido y club resuelven homonimia
+
+E6 → E7 Número de membresía Única llave estable posterior a la contratación
+
+Origen Canal, subtipo y campaña Se sella en la entrada y viaja con el prospecto hasta la última etapa (P-10). Sin él, el resultado no se atribuye a nada
+
+7.3 · El corte diario de las 06:00
+
+Lo registrado hasta las 05:59, hora de la Ciudad de México, se publica ese día. El corte gobierna el catálogo
+comercial que usan los tres canales y la relación de visitas del día que recibe cada club, y sustituye toda
+lectura en tiempo real de precios y clases. Existe sincronización manual inmediata para casos excepcionales,
+como una promoción que entra en vigor durante el día.
+
+Consecuencia operativa
+Una clase, un precio o una promoción que cambia después del corte no está disponible para el proceso
+ese día salvo que se solicite sincronización manual. La regla no es una limitación técnica: es lo que
+garantiza que los tres canales digan lo mismo a la misma hora, que es la condición para que la comparación
+entre canales signifique algo.
+
+7.4 · Las tasas que se leen y qué revela cada una
+
+Las etapas por separado dicen volumen. Lo que dirige la operación son las tasas entre etapas consecutivas,
+porque cada una señala un punto distinto del proceso y un responsable distinto.
+
+Tasa Qué revela Dónde se corrige cuando cae
+
+Entrada → E2 Interés En la puerta de entrada: qué promete la página, el anuncio o la primera frase del asistente
+
+E2 → E3 Fricción En el cuestionario: longitud, orden de los reactivos y aquello que resulta incómodo de responder
+
+E3 → E4 Intención En la recomendación: si la experiencia ideal convence de venir al club
+
+E4 → E5 Asistencia En los recordatorios y en el acuse del club. Una visita agendada que el club no confirma llega al día sin asesor asignado
+
+E5 → E6 Cierre En la conducción de la visita: preparación, bloque del entrenador, clase en vivo y manejo de la objeción
+
+E6 → E7 Retención Fuera del proceso comercial. Se lee por cohorte a 30, 90 y 180 días
+
+7.5 · La lectura semanal
+
+Dirección Comercial revisa cada semana, sobre resultados agregados y con detalle individual solo ante una
+excepción escalada:
+
+Las seis tasas del apartado 7.4, por canal y por club, contra la semana anterior.
+
+Cierre de la captación: proporción de cuestionarios que terminan en visita agendada y motivos de los que no.
+
+Acuse del club: visitas agendadas sin acuse dentro del plazo, por club.
+
+Preparación de la visita: visitas conducidas sin plan y participación efectiva de entrenadores e instructores.
+
+Motivos de no cierre más frecuentes, agrupados a partir del registro literal que deja el asesor.
+
+Incompatibilidad de horario: señales acumuladas por club, que indican dónde la parrilla no corresponde con la demanda.
+
+Regla de lectura
+Una tasa que cae se atribuye al tramo donde cae, no al asesor. La conversión de visita realizada a membresía
+contratada es la única que mide desempeño individual; las anteriores miden el sistema. Leerlas al revés
+produce presión sobre quien no tiene el control del resultado.
+
+8Protección de datos personales
+
+El proceso comercial recaba datos personales en sus cuatro canales y, en la visita, información de salud que
+la persona autodeclara. Este apartado establece qué se recaba en cada momento, con qué
+consentimiento, quién responde por ello y qué no se recaba. Ordena la operación; la validación
+jurídica de los instrumentos corresponde a Legal.
+
+8.1 · Marco aplicable
+
+Rige la Ley Federal de Protección de Datos Personales en Posesión de Sujetos Obligados
+publicada en el Diario Oficial de la Federación el 20 de marzo de 2025, vigente desde el día
+siguiente, que abrogó la ley de 2010. La autoridad en la materia es la Secretaría Anticorrupción y
+Buen Gobierno. Toda referencia de este manual a artículos corresponde a ese ordenamiento.
+
+8.2 · Quién responde por el dato
+
+Figura Quién Qué significa en la operación
+
+Responsable Sports World México Decide para qué se tratan los datos, es titular de las bases y responde ante la persona y ante la autoridad. Todo dato personal del proceso reside en infraestructura de Sports World
+
+Encargado Proveedores que tratan datos por cuenta de Sports World
+Asistente conversacional, procesador de pagos, proveedor de correo Tratan el dato siguiendo instrucciones del responsable y no para fines propios. Remitir datos a un encargado no constituye transferencia conforme al artículo 2, fracción XX
+
+Titular El prospecto o socio La persona a quien corresponden los datos y quien ejerce los derechos del apartado 8.7
+
+Sobre la comunicación a un encargado
+El artículo 2, fracción XX, define transferencia como toda comunicación de datos personales realizada a
+persona distinta de la titular, del responsable o de la persona encargada del tratamiento.
+En consecuencia, entregar datos a un proveedor que los trata por cuenta de Sports World y bajo sus
+instrucciones no es transferencia y no requiere la cláusula del artículo 35. Lo que sí
+requiere es contrato con el encargado, instrucciones documentadas y medidas de seguridad equivalentes.
+
+8.3 · Qué se recaba en cada momento y con qué consentimiento
+
+Momento Qué se recaba Consentimiento
+
+Cuestionario
+Los cuatro canales Objetivo, preferencias de entrenamiento, días y franjas, club de preferencia, presencia de hijos y antecedente como socio Tácito, con el aviso a la vista antes del primer reactivo. Ninguno de estos datos es sensible
+
+Captura de contacto Nombre, apellido, celular y correo electrónico Tácito, con la finalidad declarada: agendar la visita y enviar la recomendación
+
+Atención telefónica Los mismos datos, capturados por el asesor Expreso verbal, admitido por el artículo 7. Se lee la versión breve del aviso y la aceptación queda registrada con marca de tiempo
+
+Visita guiada Información de salud que la persona autodeclara, para el primer cruce contra la matriz de contraindicaciones Expreso y por escrito (artículo 8), mediante la autorización AU-01, solicitada con anticipación
+
+Contratación Identificación oficial, contacto de emergencia, datos de facturación y método de pago Expreso, con el aviso de privacidad de socio, que cubre el tratamiento como miembro
+
+Mercadotecnia Uso de los datos para comunicaciones comerciales no relacionadas con la solicitud Separado y opcional en todos los canales. Negarlo no impide agendar la visita ni contratar
+
+8.4 · Datos de salud: la regla y su razón
+
+El artículo 2, fracción VI, clasifica como sensible la información sobre el estado de salud presente
+o futuro. El artículo 8 exige para ella consentimiento expreso y por escrito —firma autógrafa,
+firma electrónica o mecanismo de autenticación— y establece que no podrán crearse bases de datos con datos
+sensibles sin que se justifique su creación.
+
+La regla del proceso comercial se deriva de ahí y es simple:
+
+Por medios electrónicos no se recaba información de salud. Ni el cuestionario, ni el asistente conversacional, ni el sitio preguntan por condiciones médicas. El cuestionario pregunta por objetivos e intereses —incluidos programas prenatales o de posparto—, que no son diagnóstico ni estado de salud.
+
+La información de salud se recaba en persona, en la visita guiada y en la valoración física, que es donde puede obtenerse consentimiento expreso y por escrito.
+
+La autorización se solicita con anticipación, junto con la confirmación de la visita, y no en el mostrador.
+
+Sin autorización firmada no se aplica el cuestionario de salud ni se corre la matriz de contraindicaciones. La visita se conduce completa; lo que queda condicionado es la recomendación de arranque.
+
+La justificación de la base existe y es la finalidad del negocio: prescribir entrenamiento sin conocer contraindicaciones pone en riesgo a la persona. Esa justificación se documenta, conforme al artículo 8.
+
+Lo que la ley no prohíbe
+No prohíbe que un club conserve el peso, las medidas, las lesiones o el historial de entrenamiento de sus
+socios. Lo que regula es cuándo se recaban, con qué consentimiento y con qué medidas de
+seguridad. La decisión del proceso comercial de no pedir salud por medios electrónicos no obedece a
+una prohibición: obedece a que el consentimiento que la ley exige para ese dato no puede obtenerse
+razonablemente en una conversación de un minuto.
+
+8.5 · Minimización: qué no se recaba
+
+Cada dato que el proceso pide tiene que sostenerse en una finalidad concreta. Los siguientes no se recaban en
+ninguna etapa del proceso comercial, y su ausencia es deliberada:
+
+No se recaba Por qué
+
+Condiciones médicas por medio electrónico Requeriría consentimiento expreso y por escrito que ese medio no permite obtener con la calidad que la ley exige
+
+Código postal y domicilio en la captación No interviene en ninguna decisión del proceso. El club se resuelve por preferencia declarada, no por domicilio
+
+Edad exacta o fecha de nacimiento en la captación No cambia la recomendación. Se solicita en la contratación, donde sí determina el instrumento a firmar
+
+Ingreso, ocupación o nivel socioeconómico No interviene en la recomendación y su recolección no tendría finalidad legítima en esta etapa
+
+Grabación de la conversación con fines distintos a la operación El artículo 16, fracción II, exige aviso específico cuando el dato se obtiene por medio sonoro; el proceso no requiere esa grabación
+
+8.6 · Los avisos y dónde se presenta cada uno
+
+Aviso Dónde se presenta Contenido mínimo
+
+Simplificado Sitio web y consola, en pantalla, antes del primer reactivo Identidad del responsable, finalidades, mecanismo para negar el consentimiento a las finalidades no necesarias y dónde consultar el integral (artículos 15 y 16, fracción II)
+
+Breve, leído Atención telefónica, en la apertura de la llamada El mismo contenido, en la versión que apruebe Legal, con la aceptación registrada
+
+Enlazado WhatsApp oficial, antes del primer reactivo Enlace al aviso integral, con la aceptación registrada en la conversación
+
+Integral Sitio web, disponible en todo momento El contenido completo que exige la ley, incluida la cláusula de transferencia cuando corresponda (artículos 35 y 36)
+
+De socio Contratación, antes de la firma El tratamiento como miembro, incluida la información que produce la valoración física
+
+8.7 · Derechos de las personas
+
+Toda persona puede solicitar el acceso, la rectificación, la cancelación y la oposición al
+tratamiento de sus datos, así como revocar su consentimiento. En el proceso comercial esto
+se traduce en cuatro obligaciones operativas:
+
+El aviso indica el medio para ejercerlos y ese medio está operativo desde el primer día en que el proceso recaba un dato.
+
+La negativa se registra y se respeta. Cuando una persona pide no ser contactada por una vía, esa marca viaja con su registro y ningún canal la ignora.
+
+La revocación del consentimiento de mercadotecnia no afecta la operación: la persona conserva su visita agendada y su membresía.
+
+La solicitud se atiende aunque llegue por el canal equivocado. Quien la reciba la canaliza; no se le pide a la persona que la vuelva a presentar en otro lado.
+
+8.8 · Dónde residen los datos y qué ve cada quien
+
+Los datos personales residen en infraestructura de Sports World. No residen en sistemas de terceros distintos de los encargados contratados para operarlos.
+
+El tablero de dirección presenta únicamente resultados agregados. El detalle individual se consulta sobre el registro de la persona, por quien tiene función que lo requiera.
+
+El acceso a la consola es nominal. Cada captura queda asociada a quien la realizó y al club desde el que se hizo; no hay usuarios compartidos.
+
+El dato de la tarjeta no reside en el club ni en la consola: se sustituye por el testigo que devuelve el procesador de pagos.
+
+La información de salud se conserva bajo el régimen que defina Legal, separada del registro comercial y accesible solo para las funciones que la requieren.
+
+Qué exige este apartado de Legal antes de la entrada en vigor
+Tres instrumentos: el texto de la autorización AU-01 para la información de salud
+autodeclarada; el guion del aviso leído para la atención telefónica; y el régimen de
+conservación de la identificación oficial y de la información de la valoración física. Sin ellos el
+proceso opera, pero los pasos que dependen de cada uno quedan detenidos por diseño, no por omisión.
+
+9Los procedimientos
+
+Cinco procedimientos cubren el proceso de punta a punta. Cada uno es autónomo: quien opera un canal no
+necesita leer los otros. Este apartado establece qué resuelve cada uno, dónde empieza, dónde termina y con
+qué se conecta.
+
+9.1 · Los tres procedimientos de captación
+
+Los tres aplican el mismo cuestionario, producen la misma experiencia ideal y el mismo brief, y terminan en
+el mismo punto: una visita agendada con acuse del club, o un registro sin cita al que el club da seguimiento.
+Lo que cambia entre ellos es quién conduce, en qué momento la persona deja de ser anónima y qué
+puede ocurrir en la misma sesión.
+
+Clave Canal Puntos de entrada Lo que solo ocurre aquí Pasos
+
+SOP/SW/0101 WhatsApp oficial Campaña con identificador de anuncio · Mensaje directo La persona está identificada desde el primer mensaje. El asistente conduce el cuestionario y escala a una persona solo cuando no puede responder algo, en horario de oficina. La recomendación se explica en voz y se envía por correo, porque el prospecto no puede revisarla en pantalla 53
+
+SOP/SW/0102 Sitio web Recorrido autónomo · Recorrido asistido Único canal con tramo anónimo: la persona se identifica al capturar su contacto. Puede alternar entre recorrido autónomo y asistido sin reiniciar, y ver el catálogo del club en pantalla 54
+
+SOP/SW/0103 Consola del asesor Llamada entrante · Llamada a referido · Persona que llega al club Único canal donde la visita puede realizarse en el momento. También el único que trata datos obtenidos de un tercero, con la constancia de autorización que eso exige 52
+
+9.2 · Los dos procedimientos de la espina de conversión
+
+Clave Tramo Qué resuelve Pasos
+
+SOP/SW/0201 La Experiencia Guiada La visita, en tres bloques: preparación antes de que la persona llegue, conducción del recorrido y propuesta con cierre. Ordena el método de venta de Sports World en pasos numerados y contiene el primer cruce contra la información de salud 72
+
+SOP/SW/0301 Contratación y alta Del plan aceptado al socio activo: términos, contrato, cobro, alta, activación de la aplicación y valoración física. Contiene además la captura del dato del funnel por asesor y su agregación por club, plaza y nacional 37
+
+9.3 · Cómo se conectan
+
+Traspaso Qué viaja Qué puede fallar y cómo se detecta
+
+Captación → club
+Cualquiera de los tres canales Solicitud de visita y brief del asesor Que el club no acuse. Se detecta porque el acuse se registra sobre el prospecto y la lectura semanal cuenta las solicitudes sin acuse por club
+
+Club → visita Brief abierto y plan de visita Que la visita no se prepare. Lo verifica la gerencia al arranque del día y la visita sin plan se registra en lugar de disimularse
+
+Visita → contratación Términos aceptados y brief con el registro del asesor Que las condiciones ofrecidas ya no estén vigentes. El primer bloque de la contratación lo verifica contra el catálogo del día antes de firmar
+
+Contratación → socio Experiencia ideal vinculada al expediente y valoración agendada Que la persona se retire sin la aplicación activa o sin fecha de valoración. Lo verifica la gerencia al cierre del día
+
+10Glosario
+
+Todo término cuyo significado no sea evidente para alguien ajeno al proyecto. Los procedimientos citan estos
+términos y no los redefinen.
+
+10.1 · El sistema y sus instrumentos
+
+Término Definición
+
+Experiencia ideal
+EI-01 Producto del sistema: la recomendación personalizada que resulta del cuestionario —club, combinación de entrenamiento, clases idóneas y su horario—. El prospecto la recibe como su plan; el asesor, como insumo del brief
+
+Cuestionario de Experiencia Ideal
+CEI-01 Instrumento único de calificación, idéntico en los cuatro canales. Requiere aproximadamente un minuto del prospecto. Su versión íntegra está en el Anexo A
+
+Brief del asesor
+BA-01 Traducción de la experiencia ideal a instrucciones de venta, en ocho bloques. Es de uso interno y no se entrega al prospecto
+
+Plan de visita
+PV-01 Producto de la preparación de la visita: ruta por áreas, entrenador asignado con hora, clase de mayor impacto y referencias autorizadas
+
+Catálogo comercial del día
+CAT-01 Estado vigente de clubes, clases con su horario real, planes y promociones, conforme al corte de las 06:00
+
+Matriz de contraindicaciones
+MC-01 Instrumento del primer cruce: contrasta la condición que la persona autodeclara contra cada clase recomendada y devuelve una sustitución, nunca una exclusión
+
+Catálogo territorial
+CT-01 Correspondencia vigente entre club y plaza. Proviene del CRM y no se congela en la documentación
+
+10.2 · Operación y canales
+
+Término Definición
+
+Asistente conversacional Sistema que atiende el WhatsApp oficial. Responde de inmediato con independencia del horario y escala a una persona solo cuando concurren horario de oficina y una pregunta que no puede resolver, o petición expresa del prospecto
+
+Consola Herramienta del personal del club para aplicar el cuestionario en atención telefónica o presencial. Acceso nominal y restringido: no hay usuarios compartidos
+
+Punto de entrada Vía por la que se origina un contacto dentro de un mismo canal. WhatsApp tiene dos, el sitio dos y la consola tres
+
+Corte de las 06:00 Sincronización diaria con el CRM: lo registrado hasta las 05:59, hora de la Ciudad de México, se publica ese día. Sustituye toda lectura en tiempo real de precios y clases. Admite sincronización manual inmediata para casos excepcionales
+
+Registro sin cita Prospecto que completó el cuestionario y recibió su recomendación, pero no agendó visita. Se escribe igual en el CRM para que cuente en el funnel y el club le dé seguimiento
+
+Visita inmediata Visita guiada que ocurre en la misma sesión de la captación. Solo es posible en la consola, cuando la persona llega al club y hay asesor disponible
+
+Acuse del club Confirmación registrada de que el club recibió la solicitud de visita y designó asesor responsable. Se registra sobre el mismo prospecto en el CRM
+
+Señal de incompatibilidad de horario Marca en el brief cuando ninguna clase idónea coincide con los días y franjas que la persona declaró. No bloquea ni filtra nada: advierte al asesor y, agregada por club, indica dónde la parrilla no corresponde con la demanda
+
+Plantilla autorizada Mensaje aprobado previamente por la plataforma de mensajería, requisito para iniciar conversación fuera de la ventana de atención. Los recordatorios de visita las requieren
+
+Plaza Agrupación territorial de clubes usada para la lectura de resultados. Proviene del catálogo territorial; todo club pertenece a una sola plaza
+
+10.3 · Medición
+
+Término Definición
+
+Funnel Secuencia de etapas por las que pasa un prospecto, con la definición operativa de cuándo cuenta cada una. Su definición canónica está en el apartado 7
+
+Etapa Punto del funnel que se registra una sola vez y en un momento definido. E2 cuestionario iniciado, E3 completado, E4 visita agendada, E5 visita realizada, E6 membresía contratada, E7 membresía cancelada
+
+Atribución de origen Canal, subtipo y campaña con que ingresó el prospecto. Se sella en la entrada y viaja con su registro hasta la última etapa. Sin ella, el resultado no se atribuye a nada
+
+Llave de conciliación Dato que permite unir etapas producidas en sistemas distintos. De visita a membresía: nombre, apellido, teléfono y club. De membresía a cancelación: número de membresía
+
+Idempotencia Propiedad que garantiza una sola escritura por prospecto aunque la operación se repita. Es lo que evita registros duplicados cuando una conversación o un recorrido se reanudan
+
+Tasa Proporción entre dos etapas consecutivas. Al agregarse hacia arriba se recalcula sobre la suma de numeradores y denominadores; nunca se promedia
+
+10.4 · La visita y el método de venta
+
+Término Definición
+
+Pista Énfasis con que se conduce la venta. En venta nueva el hilo conductor es el objetivo que la persona quiere alcanzar; en reactivación, el motivo por el que se fue
+
+Pregunta de alivio Petición de permiso para preguntar y para tomar notas, antes del sondeo. Convierte el sondeo en conversación
+
+Triángulo ACR Afinidad, comunicación y realidad: los tres acuerdos que deben existir antes de proponer. Sin acuerdo sobre la necesidad, la cotización no tiene sustento
+
+Las 3 D Dinero, decisión y deseo. Califican al prospecto y determinan el ritmo del cierre, no si se conduce o no la visita
+
+Precierre Confirmación breve, durante el recorrido, de que lo que la persona acaba de ver corresponde con lo que dijo buscar
+
+Boomerang Técnica de manejo de objeción en cinco pasos: escuchar y anotar literalmente, retroalimentar con el beneficio ligado al objetivo, condicionar el sí y callar
+
+Matriz de color Clasificación del prospecto según asertividad y sensibilidad, que determina el trato durante la visita y el tipo de cierre
+
+Valoración física
+Body Test Evaluación corporal que fija el punto de partida del socio. Se agenda antes de que la persona se retire el día de la contratación
+
+Primer cruce Contraste entre la información de salud que la persona autodeclara en la visita, recabada con autorización escrita, y las clases recomendadas
+
+Segundo cruce Contraste posterior a la valoración física, antes de que exista prescripción de entrenamiento definitiva. Pendiente de definición
+
+10.5 · Protección de datos
+
+Término Definición
+
+Titular La persona a quien corresponden los datos personales
+
+Responsable Quien decide para qué se tratan los datos y responde por ellos. En este proceso, Sports World México
+
+Encargado Quien trata datos por cuenta del responsable y siguiendo sus instrucciones. Remitirle datos no constituye transferencia
+
+Dato sensible Aquel cuya divulgación puede originar discriminación o riesgo grave. Incluye el estado de salud presente o futuro. Exige consentimiento expreso y por escrito
+
+Aviso simplificado Versión breve que se muestra al recabar el dato, con identidad del responsable, finalidades, mecanismo para negar las no necesarias y dónde consultar el aviso integral
+
+Tokenización Sustitución del dato de la tarjeta por un testigo que devuelve el procesador de pagos. El dato original no reside en el club ni en la consola
+
+11Recomendaciones posteriores a la contratación
+
+El proceso comercial concluye con el socio activo. Lo que sigue —que use la membresía, que permanezca y que
+traiga a otros— determina el valor real de cada venta y no está normalizado. Este apartado
+no prescribe: señala lo que conviene resolver y en qué orden, para que la decisión se tome con el problema a
+la vista.
+
+11.1 · Lo que el proceso ya deja preparado
+
+La experiencia ideal vinculada al expediente del socio, disponible para el entrenador que lo reciba.
+
+La primera sesión reservada dentro de los días y franjas que la persona declaró.
+
+La valoración física agendada a fecha cierta.
+
+Dos contactos programados en la primera semana, con responsable asignado.
+
+El canal de origen conservado, lo que permite leer permanencia por canal y no solo venta por canal.
+
+11.2 · Lo que conviene resolver, en orden
+
+Nº Tema Por qué importa y qué falta decidir
+
+1 Incorporación de las primeras cuatro semanas Es el periodo en que se decide la permanencia. Falta definir qué ocurre en cada semana, quién responde y qué se registra. Sin esto, los dos contactos de la primera semana son lo único que existe
+
+2 El segundo cruce contra la información de salud Está señalado como pendiente en dos procedimientos. Falta determinar quién lo ejecuta, qué documento genera y dónde reside la información resultante. Condiciona la prescripción de entrenamiento
+
+3 Programa de referidos Tres procedimientos preguntan por referidos y ninguno puede registrarlos con validez: falta el incentivo, el texto de autorización y dónde queda la constancia. Mientras no exista, la llamada a un referido está detenida por diseño
+
+4 Señales tempranas de abandono La frecuencia de uso de las primeras semanas anticipa la cancelación mucho antes que el aviso de baja. Falta definir el umbral, quién recibe la señal y qué hace con ella
+
+5 Proceso de cancelación Hoy es el punto de mayor fricción documentada con el cliente. Normalizarlo protege la marca incluso cuando la persona se va, y produce el motivo de baja que la medición de retención requiere
+
+6 Reactivación de socios anteriores La pista de reactivación existe en la visita, pero no hay procedimiento que decida a quién se contacta, cuándo y con qué oferta. Es la base instalada más barata de recuperar
+
+Criterio para priorizar
+Los seis temas no cuestan lo mismo. Los números 2 y 3 desbloquean pasos que hoy están detenidos
+dentro de los procedimientos vigentes y no requieren construir nada nuevo. Los números 1, 4, 5 y 6 son
+procesos nuevos y compiten por la misma capacidad. Conviene resolver primero los dos que ya tienen un hueco
+abierto en la operación.
+
+12Control de cambios
+
+12.1 · Quién autoriza qué
+
+Tipo de cambio Quién autoriza Efecto
+
+Corrección de redacción
+Sin efecto en la conducta prescrita Dirección Comercial Nueva versión menor. No requiere reentrenamiento
+
+Cambio en un paso
+Orden, responsable o condición Dirección Comercial Nueva versión menor, con nota en el apartado 5 del procedimiento afectado. Requiere comunicación a quienes lo operan
+
+Cambio en un principio
+P-01 a P-10 Dirección General, a propuesta de Dirección Comercial Nueva versión mayor del manual y revisión de los cinco procedimientos, porque los principios obligan en todos
+
+Alta o baja de un procedimiento Dirección General Nueva versión mayor del manual, con actualización del apartado 9 y del índice del depósito
+
+Cambio en instrumentos legales
+Avisos, autorizaciones, contrato Legal, con Dirección Comercial Entra en vigor en la fecha que Legal determine, con independencia del ciclo de revisión del manual
+
+12.2 · Periodicidad y vigencia
+
+Revisión ordinaria anual. La fecha de revisión de cada documento consta en su cabecera de control.
+
+Revisión extraordinaria cuando cambia la ley aplicable, el sistema que soporta un paso, o cuando la lectura semanal muestra un mismo defecto en más de un club durante cuatro semanas consecutivas.
+
+Rige únicamente la versión publicada, identificada en la cabecera de control de cada documento. Una copia impresa no es referencia: se consulta la versión en línea.
+
+Una discrepancia entre la operación y el documento no se resuelve localmente. Se reporta a Dirección Comercial, que determina si es excepción de ese caso o cambio que el documento debe incorporar.
+
+12.3 · Registro de versiones
+
+Versión Fecha Qué cambió
+
+1.0 01-SEP-2026 Versión inicial del manual y de los cinco procedimientos
+
+AAnexo A · Cuestionario de Experiencia Ideal (CEI-01)
+
+Instrumento único de calificación, idéntico en los tres canales de captación. 16 reactivos base y
+3 condicionales, aproximadamente un minuto de participación del prospecto. Las opciones marcadas
+con barra se conjugan según el reactivo 2; cuando la respuesta es «Prefiero no mencionarlo» se emplea la
+terminación dual.
+
+Nº Reactivo Opciones de respuesta Determina
+
+Identidad y trato
+
+1 ¿Cómo te llamas? Texto libre. La primera palabra se toma como nombre de pila. Trato en primera persona en toda la comunicación
+
+2 ¿Con qué género te identificas? Mujer
+Hombre
+Prefiero no mencionarlo
+Concordancia gramatical de todo el texto
+
+Objetivos · los dos reactivos de control
+
+3 ¿Qué quieres sentir al salir del club?
+Elige una. Define el tono de tu experiencia ideal.
+Desconectado / Desconectada del trabajo y la rutina
+
+Renovado / Renovada y de buen ánimo
+
+Parte de una comunidad saludable
+
+Confiado / Confiada en que mi cuerpo no me va a fallar
+
+Más a gusto conmigo mismo / conmigo misma
+Objetivo emocional. Fija el tono de la recomendación, no su contenido
+
+4 ¿Qué buscas?
+Puedes elegir hasta dos. La primera es tu objetivo principal.
+Bajar de peso
+
+Mejorar mi estética corporal y definición muscular
+
+Aumentar masa muscular
+
+Mejorar mi desempeño atlético
+
+Mejorar mi salud cardiovascular
+
+Recuperarme de una lesión o dolor crónico
+Objetivo funcional. La primera selección gobierna toda la resolución: bloques de entrenamiento, ponderación y clases idóneas. La segunda solo diversifica
+
+Modalidad y ritmo
+
+5 ¿Dónde te gustaría entrenar?
+En piso, área seca
+
+En la alberca
+
+Ambas
+
+Lo que mi entrenador recomiende
+Modalidad de entrenamiento. Interruptor estructural: cambia el catálogo completo de bloques y clases. La alberca pasa a ser amenidad de experiencia requerida
+
+6 ¿A qué ritmo te gusta entrenar? Escala de intensidad preferida, de tranquila a exigente, en selección única. Se traslada al brief como intensidad preferida. No filtra el catálogo: el asesor lo concilia en la visita
+
+7 ¿Hay algo que quieras que tu recomendación tome en cuenta?
+Puedes elegir varias, o ninguna.
+Prefiero ejercicio de bajo impacto
+
+Prefiero evitar saltos y movimientos bruscos
+
+Prefiero evitar trabajo abdominal intenso
+
+Prefiero evitar la alta intensidad sostenida
+
+Ninguna en particular
+Preferencias de entrenamiento. Ajustan la selección de clases. Son preferencias, no condiciones de salud
+
+Disponibilidad
+
+8 ¿En qué horarios te queda mejor?
+Puedes elegir varios. Franjas horarias del día, en selección múltiple. Se traslada al brief como disponibilidad declarada. La conciliación de horarios ocurre con el asesor
+
+9 ¿Qué días?
+Puedes elegir varios. Días de la semana, de lunes a domingo, en selección múltiple. Igual que el reactivo 8
+
+Nivel e historial
+
+10 ¿Cuál es tu nivel? Principiante
+Intermedio
+Avanzado
+Filtra las clases candidatas por nivel permitido. Determina la señal de recorrido guiado obligatorio en el brief
+
+11 ¿Cómo llegas a este momento?
+Es mi primera vez en un gimnasio
+
+Vengo de otro gimnasio
+
+Regreso después de una pausa
+
+Llevo tiempo sin actividad física
+Determina las señales del brief y habilita los reactivos 12, 13 y 14, que son los que distinguen una venta nueva de una reactivación
+
+12 ¿En qué gimnasio entrenas?
+Condicional · solo si el reactivo 11 es «Vengo de otro gimnasio» Texto libre, una línea. Identifica al competidor concreto. El asesor llega sabiendo contra qué compara y qué beneficios contrastar
+
+13 Antes de esa pausa, ¿dónde entrenabas?
+Condicional · solo si el reactivo 11 es «Regreso después de una pausa» En Sports World
+En otro gimnasio
+Por mi cuenta, sin gimnasio
+Activa la pista de reactivación. Cuando la respuesta es Sports World, el sistema localiza la membresía anterior antes de la visita y el brief lo señala: la conversación no arranca como venta nueva
+
+14 ¿Cuánto tiempo duró la pausa?
+Condicional · solo si el reactivo 11 es «Regreso después de una pausa» Menos de tres meses
+Entre tres meses y un año
+Más de un año
+Determina la señal de primera sesión conservadora en el brief
+
+Acompañamiento
+
+15 ¿Cómo prefieres entrenar?
+Solo / Sola, a mi ritmo
+
+Acompañado / Acompañada, en clases o grupo
+
+Me da igual
+Alterna el tercer bloque entre clases grupales y entrenamiento personal. Determina la señal de no presionar paquete de clases
+
+16 ¿Con quién vas a usar el club?
+Solo / Sola
+En pareja
+Yo y mis hijos
+La familia completa
+Determina los mensajes familiares del reporte y el acompañamiento que el brief anota
+
+17 ¿Te interesa alguno de estos programas?
+Puedes elegir varios, o ninguno.
+Programa prenatal
+
+Programa de posparto
+
+Programa infantil
+
+Entrenamiento personal
+
+Ninguno por ahora
+Interés en programas. Cuando se elige el programa infantil o uno de los dos de maternidad, la amenidad correspondiente pasa a ser requisito en la resolución del club. Pregunta por el interés en un servicio, no por un estado de salud
+
+Ancla geográfica
+
+18 ¿Cerca de qué te conviene entrenar? De mi casa
+De mi trabajo
+De ambos
+No tengo preferencia
+Ancla de referencia del resolver de club
+
+19 ¿Y dónde queda? Código postal de cinco dígitos, o nombre de colonia. Basta con uno de los dos. Entrada geográfica del resolver. Se convierte en coordenadas para la búsqueda por radio
+
+Qué no pregunta el cuestionario, y por qué
+El instrumento no recaba condiciones médicas, embarazo o posparto, tratamientos para control de
+peso, peso, estatura, medidas corporales ni datos de menores de edad. La Ley Federal de
+Protección de Datos Personales en Posesión de los Particulares clasifica los datos de salud como
+sensibles y exige para ellos consentimiento expreso y por escrito, con firma autógrafa, firma electrónica
+o mecanismo de autenticación equivalente. Un cuestionario de un minuto aplicado por conversación no puede
+satisfacer ese estándar, y la sanción por incumplimiento se duplica tratándose de datos sensibles.
+La decisión no degrada la recomendación. El reactivo 7 recoge la
+preferencia de entrenamiento, que es lo que el sistema necesita para seleccionar clases;
+la condición que la origina no le hace falta. Quien prefiere bajo impacto recibe exactamente la misma
+selección, sin que la empresa asuma la custodia de un dato sensible ni la responsabilidad clínica que lo
+acompaña. La valoración de salud corresponde al profesional del club, en el momento del alta, con el
+consentimiento y el formato que ese acto sí permite.
+
+El reactivo 17 aplica la misma lógica en toda su extensión: pregunta por el interés en un
+programa —prenatal, posparto, infantil o entrenamiento personal— y nunca por el estado que lo
+motiva. Quien busca acompañamiento en el embarazo lo encuentra, y la empresa registra un interés
+comercial en lugar de un dato de salud del que tendría que responder.
+
+El texto literal de las opciones de los reactivos 6, 8 y 9 se fija en la versión maestra del instrumento;
+aquí se enuncia su contenido y su tipo de respuesta.
+
+MPC/SW/01 · Manual del Proceso Comercial · versión 1.0 · uso interno.
+
+Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.
+
+Las referencias a datos de campo corresponden al reporte de 15 entrevistas realizadas los días 14 y 15 de mayo de 2026 con 6 líderes comerciales y 9 asesores, en 13 clubes de la Ciudad de México, Aguascalientes, Hermosillo, Puebla y Jerez.

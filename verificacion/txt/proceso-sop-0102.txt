@@ -1,0 +1,520 @@
+Captación por el sitio web · SOP/SW/0102 · Sports World
+
+Sports World México · Procedimiento normalizado de operación
+Uso interno
+
+Título
+
+Captación y calificación del prospecto por el sitio web
+
+Canal 1 · Recorrido autónomo y recorrido asistido
+
+No. de documento
+SOP/SW/0102
+
+Estatus
+Uso interno
+
+Sustituye a
+N/A
+
+Autor
+Dirección Comercial
+Firma: en expediente
+
+Aprueba
+Dirección General
+Firma: en expediente
+
+Versión
+1.0
+
+Fecha de entrada en vigor
+01-SEP-2026
+
+Fecha de revisión
+01-SEP-2027
+
+Manual · glosario
+MPC/SW/01 · §10
+
+1Introducción: cómo funciona este documento
+
+1.1 · Qué es y qué no es
+
+Este es un procedimiento normalizado de operación. Establece qué ocurre, en qué orden y
+quién responde por cada paso, en la captación por el sitio web. Es uno de los procedimientos del Manual
+del Proceso Comercial (MPC/SW/01) y se lee de forma autónoma: quien opera este canal no necesita leer los
+otros.
+
+La diferencia que gobierna este canal
+En el sitio, la persona permanece anónima durante la mayor parte del recorrido: se
+identifica hasta el paso 33, cuando captura sus datos de contacto, y solo si decide agendar. Todo lo
+anterior ocurre sin que exista un dato con el que contactarla. De ahí se derivan las tres
+particularidades del procedimiento: el tramo de tráfico a cuestionario se mide como tasa y nunca como
+recorrido de personas; el abandono anterior a la captura es irrecuperable; y el orden de solicitud se
+invierte respecto de WhatsApp —primero los datos de contacto, después el calendario—.
+
+1.2 · Cómo se lee
+
+El apartado 9 es el procedimiento. Una tabla de tres columnas: paso, acción y responsable.
+
+Los pasos se numeran de forma consecutiva y esa numeración es la única referencia válida. El documento se cita por paso, nunca por página.
+
+Las decisiones van dentro de la acción, con el paso de destino explícito para cada rama.
+
+El diagrama del apartado 8 usa la misma numeración. Si el diagrama y la tabla discrepan, rige la tabla.
+
+Los pasos sombreados en rojo son excepciones y los sombreados en ámbar son decisiones.
+
+Los documentos se citan por clave —CEI-01, BA-01, CAT-01— y los principios también —P-01 a P-10—. Unos y otros están definidos en el manual.
+
+1.3 · Quién lo usa y para qué
+
+Quién Cuándo lo usa Pasos
+
+Sistemas Es la norma contra la que se construye y se mantiene el flujo del sitio. Toda modificación al comportamiento del sitio en este recorrido pasa primero por una modificación a este documento Completo
+
+Asistente conversacional Al conducir el recorrido asistido o al ser invocado a media captura, para devolver al prospecto al punto exacto sin reiniciar 9 – 11
+
+Gerencia del club Al recibir una solicitud de visita, para saber qué verificar, en qué plazo y qué registrar 43 – 46
+
+Asesor designado Antes de la visita, y en particular cuando el brief trae señal de incompatibilidad de horario 17 · 50
+
+Marketing Para saber qué debe llevar cada pieza y cada ficha para que la atribución no se pierda 2 · 51
+
+Dirección Comercial En la lectura semanal y ante cualquier excepción escalada Completo
+
+1.4 · Qué hacer cuando la operación no coincide con el documento
+
+No se resuelve con una variante local. La discrepancia se reporta a Dirección Comercial, que determina si
+es una excepción de ese caso o un cambio que el procedimiento debe incorporar. Rige únicamente la versión
+publicada, identificada en la cabecera de control.
+
+2Propósito
+
+Asegurar que toda persona que llega al sitio de Sports World pueda obtener una recomendación construida
+sobre su objetivo real —por sí misma o acompañada por el asistente— y que quien decida visitar un club
+llegue con una visita solicitada y un diagnóstico escrito en manos del asesor que la atenderá.
+
+Este procedimiento no cubre el posicionamiento del sitio ni la pauta que lleva tráfico a él, ni la
+conducción de la visita, ni la propuesta comercial.
+
+3Alcance
+
+3.1 · A qué aplica
+
+A todo recorrido de experiencia ideal iniciado en el sitio de Sports World. Rige para los 49 clubes de la
+red, los 365 días del año, sin excepción por plaza, formato de membresía ni volumen.
+
+3.2 · Los dos puntos de entrada del canal
+
+El sitio admite dos formas de recorrer el flujo. La diferencia no está en el resultado —el cuestionario,
+la recomendación y el agendado son los mismos— sino en quién conduce, y por eso separa los pasos 5 a 11.
+El prospecto puede pasar de una vía a la otra en cualquier momento, desde el reactivo en que va y
+sin reiniciar.
+
+Punto de entrada A
+
+Recorrido autónomo
+
+El prospecto avanza por sí mismo, un reactivo por pantalla, con avance explícito.
+
+El avance automático al seleccionar está deshabilitado, para que un toque erróneo no adelante la pantalla.
+
+Puede regresar al reactivo anterior. Si un reactivo condicional dejó de aplicar por un cambio en su disparador, el recorrido lo omite.
+
+Es la vía por defecto: la pantalla de inicio la ofrece como acción primaria.
+
+Punto de entrada B
+
+Recorrido asistido
+
+El asistente conversacional acompaña al prospecto por voz o por texto dentro del sitio, con la misma base de conocimiento.
+
+Aplica el mismo cuestionario y ofrece dos modalidades: reactivo por reactivo, o pre-llenado con las respuestas inferibles por la página de origen o por lo que la persona declaró, para que solo las confirme.
+
+Resuelve dudas durante el recorrido sin sacar al prospecto del flujo y lo devuelve al punto exacto en que estaba.
+
+Se invoca desde la pantalla de inicio o en cualquier momento del cuestionario.
+
+A partir del paso 12 ambas vías siguen exactamente la misma secuencia.
+
+3.3 · Los tres cortes de reporte del canal
+
+El tráfico del sitio llega por tres orígenes. La distinción no cambia el procedimiento:
+los tres recorren los mismos pasos. Lo que cambia es cómo se reportan, y no deben mezclarse porque miden
+cosas distintas y uno de ellos sostiene un compromiso contractual.
+
+Corte Origen Qué mide y por qué se reporta aparte
+
+C1a Búsqueda orgánica El desempeño de la estrategia de posicionamiento. Es el corte que sustenta el compromiso de cobertura de palabras clave no asociadas a la marca
+
+C1b Tráfico de pago al sitio
+Anuncios con destino a una página, no a WhatsApp Se separa del orgánico para que la inversión en pauta no contamine la lectura del resultado de posicionamiento
+
+C1c Fichas de Google Business
+Las 49 fichas de la red Vistas, llamadas y solicitudes de indicaciones. Es la medición que demuestra el valor de tener las fichas creadas y mantenidas
+
+Condición de la atribución
+La distinción entre los tres cortes solo existe si cada pieza y cada ficha llevan sus parámetros
+de campaña. La atribución se sella en el paso 2 y no se reconstruye después: una sesión que
+llega sin parámetros queda como origen indeterminado de forma permanente. Es responsabilidad de Marketing
+y se verifica en el paso 51.
+
+3.4 · Qué no cubre este documento
+
+Queda fuera Dónde está
+
+El posicionamiento del sitio y la pauta que lleva tráfico a él MKT/SW/01
+
+La captación por WhatsApp SOP/SW/0101
+
+La captación en el club y por teléfono, en consola SOP/SW/0103
+
+La conducción de la visita y la propuesta comercial SOP/SW/0201
+
+La contratación y el alta de la membresía SOP/SW/0301
+
+4Responsabilidades
+
+Corresponde a la Dirección Comercial asegurar que este procedimiento se cumpla. La responsabilidad de
+ejecutar cada paso se identifica en la columna derecha del apartado 9. Además de los principios P-01 a
+P-10 del manual, rigen en este canal las siguientes reglas:
+
+El recorrido no admite retroceso desde la recomendación. Una vez entregada la experiencia ideal, el prospecto no puede reabrir sus respuestas; solo puede reiniciar por completo. Reabrirlas después de ver el resultado obligaría a recalcular o a mostrar una recomendación desactualizada.
+
+Ajustar la recomendación sí recalcula. Cambiar de club o cambiar de clases entre las idóneas es un recálculo acotado, no una reapertura del cuestionario, y por eso está permitido.
+
+Solo se puede elegir entre las clases idóneas para el objetivo declarado. El catálogo completo del club se consulta, pero no se selecciona desde ahí: esas clases no pasaron los filtros de objetivo y nivel que sostienen la recomendación, y su pertinencia la verifica el asesor en la visita.
+
+Una incompatibilidad de horario no bloquea nada. Si el club ofrece las clases idóneas pero no en los días o las franjas que el prospecto declaró, la experiencia ideal se construye y se entrega igual, y la incompatibilidad viaja al asesor como señal de atención.
+
+Nada se conserva en el navegador. El recorrido no usa almacenamiento local ni cookies de sesión: todo vive en memoria y se descarta al cerrar la pestaña. El único dato que persiste es el registro escrito en el CRM.
+
+Ningún instrumento de analítica que identifique a la persona se activa antes de la captura de contacto. Hasta ese punto la medición es agregada.
+
+Una falla en la redacción personalizada no detiene el recorrido. El prospecto recibe su recomendación con el contenido determinista y sin mensaje de error.
+
+Interviniente Responsabilidad
+
+Sistemas Operación del recorrido, vigencia del catálogo del día, disponibilidad del punto de escritura al CRM y ejecución de la sincronización manual
+
+Asistente conversacional Conducir el recorrido asistido, resolver dudas dentro del sitio y devolver al prospecto al punto exacto sin reiniciar
+
+Gerencia del club Acusar recibo de la solicitud, verificar capacidad de atención, designar asesor responsable y coordinar la visita
+
+Asesor designado Consultar el brief antes de la visita y resolver en ella las señales de atención que traiga
+
+Marketing Parámetros de campaña en todas las piezas y en las 49 fichas, y accesos de medición vigentes
+
+Legal Aviso de privacidad vigente y mecanismo de consentimiento que el sitio despliega
+
+Dirección Comercial Vigilar el cumplimiento, resolver excepciones escaladas y autorizar cambios a este documento
+
+5Cambios desde la última revisión
+
+Procedimiento nuevo.
+
+6Documentos que intervienen
+
+Esta tabla indica para qué se usa cada documento dentro de este procedimiento. Su contenido y su responsable están establecidos en el apartado 6 del manual MPC/SW/01.
+
+Clave Documento Para qué se usa aquí Pasos
+
+CEI-01 Cuestionario de Experiencia Ideal Se aplica un reactivo por pantalla en el recorrido autónomo, y en cualquiera de sus dos modalidades en el asistido 6 · 11
+
+AP-01 Aviso de privacidad Se despliega antes del primer reactivo, en las dos vías 5 · 10
+
+CAT-01 Catálogo comercial del día Resolución del club, selección de clases con su horario real, verificación de compatibilidad y franjas del calendario 13 – 15 · 32
+
+BC-01 Base de conocimiento La que consulta el asistente para resolver dudas sin sacar al prospecto del recorrido 10 · 11
+
+EI-01 Experiencia ideal Se genera, se presenta al prospecto, se recalcula si ajusta club o clases, y se envía por correo al confirmar 18 · 21 · 42
+
+BA-01 Brief del asesor Se genera en la misma operación que EI-01 y viaja al club. Recibe la señal de incompatibilidad de horario cuando existe 17 · 18 · 41
+
+PL-01 Plantillas autorizadas de WhatsApp Necesarias para los dos recordatorios, que se envían al celular capturado 43
+
+7Documentos relacionados
+
+Clave Documento
+
+MPC/SW/01 Manual del Proceso Comercial. Contiene los principios P-01 a P-10 (§4), el contenido de cada documento (§6), la medición (§7), el glosario único (§10) y el Anexo A con el cuestionario íntegro
+
+SOP/SW/0101 Captación por WhatsApp oficial
+
+SOP/SW/0103 Captación en consola: club y teléfono
+
+SOP/SW/0201 La Experiencia Guiada de Sports World
+
+MED/SW/01 Mapa del funnel: definición operativa de cada etapa, fuente del dato y responsable del acceso
+
+CAT/SW/01 Régimen de sincronización del catálogo: corte diario de las 06:00 y sincronización manual
+
+8Diagrama de flujo
+
+Congruente con la numeración del apartado 9. Las decisiones no se numeran.
+
+Inicio
+
+1 · 2 · 3El prospecto llega al sitio. Se sella la atribución, se genera el identificador de sesión y se presenta la pantalla de inicio
+
+Decisión¿Cómo avanza? — Por sí mismo al 5 · Con el asistente al 9 · No inicia, abandono anónimo al 44
+
+5 · 6 · 7 · 8Recorrido autónomo: aviso de privacidad, cuestionario un reactivo por pantalla, E2
+
+9 · 10 · 11Recorrido asistido: dos modalidades, aviso de privacidad, cuestionario por voz o texto, E2
+
+12 · 13 · 14Resuelve el club y selecciona la combinación y las clases idóneas
+
+Decisión¿Alguna clase idónea cae en los días y franjas declarados? — Sí al 18 · No al 17
+
+17Marca la incompatibilidad de horario como señal de atención en el brief. No bloquea ni filtra nada
+
+18 · 19 · 20 · 21Genera EI-01 y BA-01, registra E3 y presenta la experiencia ideal antes de pedir dato alguno
+
+Decisión¿Ajusta la recomendación? — Otro club al 26 · Otras clases idóneas al 27 · Ver el catálogo del club al 29 · No al 32
+
+26 · 27 · 28Recalcula y vuelve a verificar la compatibilidad de horario
+
+29Catálogo completo del club en modo de consulta. No se puede seleccionar desde ahí
+
+33 · 34 · 35 · 36Captura de contacto con validación, calendario de catorce días y confirmación
+
+37 · 38Registra la solicitud de visita y escribe el prospecto en el CRM
+
+Decisión¿La escritura se confirma? — Sí al 40 · No al 46
+
+46 · 47Reintenta; agotados los reintentos, avisa al club para captura manual el mismo día
+
+40 · 41 · 42 · 43Registra E4, envía solicitud y BA-01 al club, presenta la confirmación y programa los dos recordatorios
+
+48La gerencia recibe y verifica su capacidad de atención
+
+Decisión¿Puede atender en el horario solicitado? — Sí al 49 · No al 50
+
+49 · 50Designa asesor y registra el acuse en el CRM, o propone dos fechas y registra el acuse
+
+51 · 52El asesor consulta el brief y resuelve sus señales. Dirección Comercial verifica acuses, aperturas y atribución
+
+Fin
+
+9Procedimiento
+
+Paso Acción Responsable
+
+Llegada al sitio y arranque del recorrido
+
+1 Llega al sitio de Sports World desde una búsqueda orgánica, desde un anuncio con destino al sitio o desde una ficha de Google Business. Prospecto
+
+2 Genera el identificador de sesión, anónimo, y sella la atribución de origen con los parámetros de campaña y la página de entrada (P-10). En este punto no se ha recabado dato personal alguno.
+Si la sesión llega sin parámetros de campaña — se registra como origen indeterminado. La imputación a una campaña ya no será posible. Sistema
+
+3 Presenta la pantalla de inicio, sin solicitar dato alguno, con dos acciones: avanzar por cuenta propia, que es la primaria, y solicitar el acompañamiento del asistente. Sistema
+
+4 ¿Cómo avanza el prospecto?
+Por sí mismo — recorrido autónomo. Continúa en el paso 5.
+
+Con el acompañamiento del asistente — recorrido asistido. Continúa en el paso 9.
+
+No inicia — abandono anónimo. Continúa en el paso 44. Prospecto
+
+5 Despliega el aviso de privacidad antes del primer reactivo y recaba el consentimiento, con las finalidades necesarias y las de mercadotecnia presentadas por separado.
+Si el prospecto no otorga el consentimiento — no se aplica el cuestionario. Continúa en el paso 44. Sistema
+
+Aplicación del cuestionario
+
+6 Presenta el cuestionario, un reactivo por pantalla, con avance explícito. El avance automático al seleccionar una opción está deshabilitado, para que un toque erróneo no adelante la pantalla. Sistema
+
+7 Registra la etapa E2 · cuestionario iniciado al responderse el primer reactivo, no al presentarse la primera pantalla (P-09). Sistema
+
+8 Responde el cuestionario. Puede regresar al reactivo anterior; si un reactivo condicional dejó de aplicar por un cambio en su disparador, el recorrido lo omite.
+Si en cualquier momento solicita acompañamiento — continúa en el paso 9, desde el reactivo en que va y sin reiniciar. En caso contrario — continúa en el paso 12. Prospecto
+
+9 Informa al prospecto que requiere un minuto de su tiempo y le ofrece dos modalidades: reactivo por reactivo con sus opciones, o el cuestionario pre-llenado con lo que pudo inferirse por la página de origen o por lo que la persona declaró, para que únicamente lo confirme. Asistente conversacional
+
+10 Despliega el aviso de privacidad antes del primer reactivo y recaba el consentimiento, salvo que ya se haya otorgado en el paso 5.
+Si el prospecto no otorga el consentimiento — continúa en el paso 44. Asistente conversacional
+
+11 Aplica el cuestionario por voz o por texto dentro del sitio, en la modalidad elegida, y resuelve las dudas que surjan con la base de conocimiento sin sacar al prospecto del recorrido. Registra E2 al primer reactivo respondido. Si el prospecto decide continuar por su cuenta, lo devuelve al reactivo exacto en que va, sin reiniciar ni repetir. Continúa en el paso 12. Asistente conversacional
+
+12 Al enviarse el último reactivo, presenta el indicador de proceso. El prospecto no interactúa durante esta fase. Sistema
+
+Resolución del club y generación de la recomendación
+
+13 Consulta el catálogo del día y resuelve el club que satisface la experiencia (P-03, P-04). La búsqueda parte de un radio de 10 kilómetros:
+si dos o más clubes la satisfacen, decide la distancia;
+
+si solo uno la satisface, se ofrece ese aunque no sea el más cercano;
+
+si ninguno la satisface, el radio se amplía hasta encontrarlo, se señala la distancia y se ofrecen hasta tres clubes cercanos como alternativa, cada uno con su diferencia indicada.
+Sistema
+
+14 Selecciona la combinación de entrenamiento y las clases idóneas del club resuelto: las que corresponden al objetivo funcional principal y al nivel declarados, con el horario real de ese club. Sistema
+
+15 Compara el día y la franja de cada clase idónea contra los días y las franjas que el prospecto declaró en el cuestionario. Sistema
+
+16 ¿Al menos una de las clases idóneas se imparte en un día y una franja que el prospecto declaró?
+Sí — continúa en el paso 18. No — continúa en el paso 17. Sistema
+
+17 Incompatibilidad de horario. Marca en el brief del asesor una señal de atención en rojo que indica: cuáles son las clases idóneas para el objetivo del prospecto, en qué días y franjas se imparten en ese club, y qué días y franjas declaró la persona.
+La experiencia ideal se construye y se entrega igual, con las clases idóneas y su horario real. No se filtra ni se sustituye nada, y el prospecto ve los horarios reales.
+
+La incompatibilidad no bloquea el agendado. Su resolución corresponde a SOP/SW/0201 · La Experiencia Guiada de Sports World, y no se especifica en este procedimiento.
+
+Continúa en el paso 18. Sistema
+
+18 Genera la experiencia ideal y el brief del asesor en la misma operación. La redacción personalizada se produce una sola vez por recorrido y se reutiliza en la pantalla de recomendación y en la de confirmación. Sistema
+
+19 ¿La redacción personalizada se completa?
+Sí — continúa en el paso 20. No — continúa en el paso 45. Sistema
+
+20 Registra la etapa E3 · cuestionario completado al quedar generada la experiencia ideal, no al responderse el último reactivo (P-09). Sistema
+
+Entrega de la recomendación y ajustes
+
+21 Presenta la experiencia ideal, antes de solicitar dato alguno de contacto (P-02). Desde esta pantalla el prospecto no puede reabrir sus respuestas: solo puede reiniciar el recorrido completo. Sistema
+
+22 Ofrece enviarle su experiencia ideal por correo y solicita el correo electrónico para hacerlo. La recomendación ya está en pantalla; el correo es la copia que conserva.
+Si el prospecto lo proporciona — continúa en el paso 23. Si prefiere no darlo — continúa en el paso 25, y la recomendación existe solo mientras dure la sesión. Sistema
+
+23 Envía la experiencia ideal al correo proporcionado y deja constancia del envío. Cada vez que el prospecto ajusta su recomendación, se reenvía el documento actualizado. Sistema
+
+24 Escribe el prospecto en el CRM como registro sin cita, con el perfil del cuestionario, la recomendación entregada, el club resuelto y el canal de origen, idempotente por llave de sesión (P-05). Cuenta en el funnel desde este momento y queda disponible para seguimiento del club recomendado.
+Si más adelante la persona agenda, se actualiza este mismo registro y pasa a visita agendada. No se crea uno nuevo. Sistema
+
+25 ¿El prospecto ajusta su recomendación?
+Elige otro club de los propuestos — continúa en el paso 26.
+
+Quiere cambiar sus clases — continúa en el paso 27.
+
+Quiere ver todas las clases del club — continúa en el paso 29.
+
+No ajusta nada — continúa en el paso 30. Prospecto
+
+26 Recalcula la combinación y las clases idóneas contra el catálogo del club elegido, señala en qué difiere de la recomendada y honra la elección. No vuelve a generar la redacción personalizada, que no depende del club más allá de su nombre y dirección. Continúa en el paso 15, para volver a verificar la compatibilidad de horario. Sistema
+
+27 Presenta las otras clases idóneas para el objetivo del prospecto: las que pasaron los mismos filtros de objetivo, nivel y modalidad, y no quedaron entre las primeras. El prospecto elige las que prefiera. Sistema
+
+28 Recalcula la experiencia ideal con las clases elegidas y actualiza el brief del asesor en consecuencia. Continúa en el paso 15, para volver a verificar la compatibilidad de horario. Sistema
+
+29 Presenta el catálogo completo de clases del club en modo de consulta. El prospecto puede verlo íntegro, con días y horarios, pero no puede seleccionar clases desde ahí: esas clases no pasaron los filtros de objetivo y nivel que sostienen la recomendación. El aviso en pantalla le indica que verifique con su asesor, en la visita guiada, cualquier clase que le interese de este listado. Continúa en el paso 25. Sistema
+
+30 ¿El prospecto solicita agendar la visita guiada?
+Sí — continúa en el paso 31. No — abandono anónimo. Continúa en el paso 44. Prospecto
+
+Captura de contacto y agendado de la visita
+
+31 Presenta la captura de contacto: apellido y celular de diez dígitos. El correo ya se capturó al enviarle su experiencia ideal; si entonces prefirió no darlo, se le solicita aquí. Bloquea el avance hasta que los tres pasen la validación. El mensaje de error se muestra al salir del campo, no en cada pulsación, y dice qué está mal y qué hacer. Sistema
+
+32 Captura los tres datos. Puede regresar a su recomendación sin perder lo capturado. Prospecto
+
+33 Almacena el contacto en el estado de la sesión. Es el punto en que la persona deja de ser anónima y a partir del cual existe un dato con el que recontactarla. Sistema
+
+34 Presenta el calendario con horizonte de catorce días y franjas dentro del horario de atención publicado del club elegido (P-04). Sistema
+
+35 Elige la combinación de fecha y hora y confirma. Prospecto
+
+36 Registra la fecha y hora elegidas como solicitud de visita. No verifica disponibilidad de asesor ni de sala, y no crea reserva alguna (P-06). Sistema
+
+37 Actualiza el registro del prospecto con la fecha y el horario solicitados, en la misma operación idempotente por llave de sesión, con canal de origen web y el teléfono en formato internacional (P-05). La escritura ocurre antes de presentar la confirmación. Sistema
+
+38 ¿La escritura en el CRM se confirma?
+Sí — continúa en el paso 39. No — continúa en el paso 46. Sistema
+
+Escritura al CRM y confirmación
+
+39 Registra la etapa E4 · visita agendada al confirmarse la escritura, no al confirmar el prospecto (P-09). Sistema
+
+40 Envía por correo al club la solicitud de visita y el brief del asesor, a la dirección registrada en el catálogo del día. Cuando exista incompatibilidad de horario, el brief la lleva marcada como señal de atención. Sistema
+
+41 Presenta la confirmación en dos páginas: la primera con club, dirección, fecha y hora, pensada para conservarse; la segunda con el brief del asesor. Incluye el aviso expreso de que el club confirma y coordina la visita (P-06). Sistema
+
+42 Programa los dos recordatorios por WhatsApp al celular capturado, 24 y 2 horas antes de la visita, con plantilla autorizada y desde el número oficial de la empresa. Sistema
+
+Cierre sin agenda y excepciones
+
+43 Cierra el recorrido. Toda la información de la sesión se descarta del navegador: el registro escrito en el CRM es lo único que persiste.
+Si el prospecto modifica la fecha antes de cerrar — se actualiza el mismo registro, se reprograman los recordatorios y se notifica al club la fecha corregida. No se crea un registro nuevo (P-05).
+Continúa en el paso 48. Sistema
+
+44 Abandono anónimo. El prospecto sale del recorrido antes del paso 33. No queda dato con el que recontactarlo y la sesión se descarta al cerrar la pestaña. Se contabiliza de forma agregada, según la etapa en que ocurrió. Continúa en Fin del procedimiento. Sistema
+
+45 Excepción. Reintenta la redacción personalizada. Agotados los reintentos, presenta la recomendación con el contenido determinista —club, combinación, clases y sección de seguridad— y omite las secciones redactadas, sin mostrar mensaje de error alguno al prospecto. El brief conserva sus apartados codificados, incluida la señal del paso 17 si existe. Continúa en el paso 20. Sistema
+
+46 Excepción. Conserva el registro en una cola cifrada de vigencia limitada y reintenta la escritura con espera incremental. Sistema
+
+47 Excepción. Agotados los reintentos, notifica al club por correo con los datos completos para captura manual el mismo día, y presenta al prospecto su confirmación con normalidad: la falla no se le traslada. Continúa en el paso 48. Sistema
+
+Entrega al club y seguimiento
+
+48 Recibe la solicitud de visita y el brief, y verifica su capacidad real de atención en el horario solicitado. Gerencia del club
+
+49 ¿El club puede atender la visita en el horario solicitado?
+Sí — continúa en el paso 50. No — continúa en el paso 51. Gerencia del club
+
+50 Designa al asesor responsable y registra el acuse en el CRM sobre el registro del prospecto, con la confirmación de recepción, la confirmación de capacidad y el nombre del asesor. Plazo: 24 horas o antes de la visita, lo que ocurra primero. Continúa en el paso 52. Gerencia del club
+
+51 Contacta al prospecto, le propone dos alternativas concretas de fecha y registra el acuse en el CRM con la reprogramación acordada y el asesor designado. Plazo: 24 horas o antes de la visita originalmente solicitada, lo que ocurra primero. Gerencia del club
+
+52 Consulta el brief antes de la visita y revisa sus señales de atención. La preparación y la conducción del recorrido se rigen por SOP/SW/0201 · La Experiencia Guiada de Sports World y no se detallan aquí. La apertura del documento queda registrada. Asesor designado
+
+53 Recibe los registros sin cita de su club en la lectura diaria y les da seguimiento con su experiencia ideal ya entregada como punto de partida. No es un lead frío: es alguien que dedicó un minuto a decir qué busca y recibió una recomendación. Asesor de club
+
+54 Verifica en la lectura semanal que cada solicitud cuente con acuse registrado, que el brief se haya abierto antes de la visita, qué proporción de recomendaciones sale con incompatibilidad de horario y que ninguna proporción significativa de sesiones llegue con origen indeterminado. Dirección Comercial
+
+Fin del procedimiento
+
+Sobre los pasos 15 a 17 · Por qué la incompatibilidad de horario no bloquea
+La probabilidad es baja, porque la resolución del club ya sesga hacia uno que ofrezca las clases idóneas.
+Pero es posible: el club las tiene y las imparte en días o franjas distintos de los que el prospecto
+declaró. Filtrar en ese punto sería el error: dejaría al prospecto sin recomendación, o con una peor, por un
+conflicto que casi siempre se resuelve en la visita.
+Por eso la disponibilidad declarada nunca filtra el catálogo:
+se captura para el brief y la conciliación ocurre con el asesor. Lo que este procedimiento agrega es que
+el asesor lo sepa antes de la visita y no lo descubra en ella, con la señal del paso 17.
+La proporción de recomendaciones que salen con esta señal se lee cada semana: si crece, el problema no es
+del prospecto sino de la programación de clases de ese club.
+
+Sobre los pasos 24 y 26 · Por qué unas clases se eligen y otras solo se ven
+Las clases idóneas pasaron los filtros de objetivo, nivel y modalidad que sostienen la recomendación:
+elegir entre ellas es un ajuste de preferencia y por eso recalcula la experiencia ideal sin degradarla.
+El resto del catálogo del club no pasó esos filtros, y permitir seleccionarlas desde la pantalla
+convertiría la recomendación en un menú, que es exactamente lo que este sistema existe para evitar.
+No se ocultan, porque ocultarlas se lee como que el club no las tiene. Se
+muestran en modo de consulta y se remiten al asesor, que es quien puede valorar en la visita si una de
+ellas conviene al objetivo de esa persona.
+
+10Registros
+
+Registro Paso Dónde reside
+
+Atribución de origen 2 Base del funnel, en el servidor de Sports World. Distingue los cortes C1a, C1b y C1c, y marca el origen indeterminado
+
+Vía de recorrido
+Autónomo o asistido 4 · 8 Instrumentación propia, de forma agregada. Permite comparar la conversión de ambas vías
+
+Constancia del consentimiento 5 · 10 Junto con el registro del prospecto, con su alcance
+
+Etapas E2 y E3 7 · 11 · 20 Instrumentación propia del proyecto. Agregadas, sin dato personal
+
+Señal de incompatibilidad de horario 17 · 40 · 54 En el brief del asesor y, de forma agregada, en el tablero por club
+
+Ajustes de la recomendación 26 · 28 · 29 De forma agregada: cuántos cambian de club, cuántos cambian de clases y cuántos consultan el catálogo completo
+
+Recorridos completados sin agendar 44 Tablero, de forma agregada y por etapa de salida. No existe registro individual
+
+Brief del asesor 18 · 40 · 52 Enviado al club y conservado con el registro. La apertura queda registrada
+
+Registro de prospecto 37 CRM de Sports World, único sistema de registro permanente. El sitio no conserva respaldo una vez transferido el dato
+
+Acuse del club 50 · 51 CRM, sobre el mismo registro del prospecto
+
+Verificación semanal 54 Tablero de Dirección Comercial. Presenta únicamente resultados agregados
+
+SOP/SW/0102 · Captación y calificación del prospecto por el sitio web · versión 1.0 · uso interno.
+
+Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.
+
+Procedimientos hermanos: SOP/SW/0101 (WhatsApp oficial) y SOP/SW/0103 (consola: club y teléfono). Continúa en SOP/SW/0201 · La Experiencia Guiada de Sports World. El glosario único y el cuestionario íntegro están en MPC/SW/01, apartado 10 y Anexo A.

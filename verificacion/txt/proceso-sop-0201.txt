@@ -1,0 +1,714 @@
+La Experiencia Guiada · SOP/SW/0201 · Sports World
+
+Sports World México · Procedimiento normalizado de operación
+Uso interno
+
+Título
+
+La Experiencia Guiada de Sports World: preparación, conducción y cierre de la visita
+
+Espina de conversión · Del arribo al club a la decisión de contratar
+
+No. de documento
+SOP/SW/0201
+
+Estatus
+Uso interno
+
+Sustituye a
+N/A
+
+Autor
+Dirección Comercial
+Firma: en expediente
+
+Aprueba
+Dirección General
+Firma: en expediente
+
+Versión
+1.0
+
+Fecha de entrada en vigor
+01-SEP-2026
+
+Fecha de revisión
+01-SEP-2027
+
+Manual
+MPC/SW/01
+§10 glosario · Anexo A cuestionario
+
+1Introducción: cómo funciona este documento
+
+1.1 · Qué es y qué no es
+
+Este es un procedimiento normalizado de operación. Establece qué ocurre, en qué orden y
+quién responde por cada paso, desde que el prospecto llega al club hasta que decide contratar o queda con
+una siguiente acción acordada. Es uno de los procedimientos del Manual del Proceso Comercial (MPC/SW/01) y
+se lee de forma autónoma.
+
+Relación con el método de venta de Sports World
+Sports World cuenta con un método de venta propio, documentado y en uso: siete pasos —recibir y
+conectar, descubrir, recorrer, proponer, resolver, cerrar, activar y acompañar—, dos pistas —venta nueva y
+reactivación— y un conjunto de instrumentos de conducción: el triángulo ACR, la pregunta de
+alivio, el embudo de cinco preguntas, las 3 D, la traducción característica-ventaja-beneficio, la matriz de
+color, los precierres, los cinco tipos de cierre y el boomerang de cinco pasos.
+Este procedimiento no sustituye ese método ni lo reformula: lo
+ordena en pasos numerados, le asigna responsable a cada uno y lo conecta con el diagnóstico que produce la
+captación. Los siete pasos del método aparecen aquí con su propio nombre y en su orden original, marcados
+en la columna de acción con la etiqueta Paso 03 que corresponde. La equivalencia
+completa está en el Anexo A. El criterio de conducción —qué decir, qué evitar, cómo
+ajustar el trato a cada tipo de persona— vive en el método y se entrena; lo que este documento fija es la
+secuencia que no se improvisa.
+
+1.2 · Cómo se lee
+
+El apartado 9 es el procedimiento. Una tabla de tres columnas: paso, acción y responsable.
+
+Los pasos se numeran de forma consecutiva y esa numeración es la única referencia válida.
+
+Las decisiones van dentro de la acción, con el paso de destino explícito para cada rama.
+
+El diagrama del apartado 8 usa la misma numeración. Si el diagrama y la tabla discrepan, rige la tabla.
+
+Los pasos sombreados en rojo son excepciones, los sombreados en ámbar son decisiones, los sombreados en morado aplican solo a la visita inmediata y los de borde punteado corresponden a un bloque pendiente de definición.
+
+Los recuadros verdes contienen la frase modelo del método y los de borde rojo, lo que el método indica evitar. Son criterio de conducción, no acción adicional.
+
+Los documentos se citan por clave —BA-01, EI-01, PV-01, AU-01, CAT-01— y los principios también —P-01 a P-10—. Unos y otros están establecidos en el manual.
+
+1.3 · Quién lo usa y para qué
+
+Quién Cuándo lo usa Pasos
+
+Asesor de club Es su norma de operación en toda visita guiada. Es el documento que aprende en su incorporación, junto con el método de venta Completo
+
+Gerencia del club Al designar asesor, al verificar la planeación al arranque del día y al cerrar el día con el resultado de cada visita 1 · 2 · 14 · 70
+
+Entrenadores e instructores En el bloque de cinco minutos y en la clase de mayor impacto. Es la parte del procedimiento que los involucra directamente 7 · 41 · 43 · 44
+
+Recepción del club En la identificación del motivo y la canalización inmediata al asesor 17
+
+Coordinación de FitKidz Cuando el diagnóstico registra hijos y el recorrido incluye el área infantil 8 · 45
+
+Dirección Comercial En la lectura semanal, ante cualquier excepción escalada y al autorizar el beneficio comercial del segundo cierre Completo
+
+Legal Al definir el texto de la autorización AU-01 y el tratamiento del dato de salud autodeclarado 10 · 23
+
+1.4 · Qué hacer cuando la operación no coincide con el documento
+
+No se resuelve con una variante local. La discrepancia se reporta a Dirección Comercial, que determina si
+es una excepción de ese caso o un cambio que el procedimiento debe incorporar. Rige únicamente la versión
+publicada, identificada en la cabecera de control.
+
+2Propósito
+
+Asegurar que toda visita guiada se conduzca sobre el diagnóstico levantado en la captación, con el método
+de venta de Sports World, y que termine con una decisión: contratación o siguiente acción acordada con
+fecha.
+
+La captación entrega al club un prospecto calificado y una recomendación escrita. Este procedimiento es
+donde esa recomendación se vuelve experiencia física: el prospecto recorre las áreas que su propio
+diagnóstico señaló, escucha de un entrenador cómo esas áreas se conectan con su objetivo y, cuando es
+posible, prueba la clase que el sistema le recomendó. Es también donde se realiza el primer cruce
+contra la información de salud que la persona autodeclara, antes de que exista cualquier prescripción de
+entrenamiento.
+
+3Alcance
+
+3.1 · A qué aplica
+
+A toda visita guiada realizada en los 49 clubes de la red, con independencia del canal por el que se
+originó el prospecto. Aplica igual a la visita agendada y a la que ocurre en el momento.
+
+3.2 · De dónde llega la visita
+
+Este procedimiento recibe prospectos de los tres canales de captación. La diferencia entre ellos es el
+tiempo disponible para preparar la visita, no el contenido de la visita.
+
+Origen Procedimiento Tiempo de preparación
+
+Visita agendada desde WhatsApp SOP/SW/0101 La visita queda en el CRM y aparece en el corte de las 06:00. La preparación se realiza el día anterior o esa mañana
+
+Visita agendada desde el sitio web SOP/SW/0102 Igual que la anterior
+
+Visita agendada desde la consola SOP/SW/0103 Igual que las anteriores
+
+Visita inmediata
+Persona que llega al club SOP/SW/0103 Minutos. El asesor que capturó el cuestionario conduce la visita en la misma sesión. La preparación se comprime a lo indicado en el paso 15
+
+Registro sin cita que agenda después SOP/SW/0101 · 0102 · 0103 Cuando el prospecto agenda en un contacto posterior, la visita entra por la vía agendada
+
+3.3 · Los tres bloques de la visita
+
+El procedimiento se organiza en tres bloques con responsables distintos. El primero ocurre antes de que la
+persona llegue y es el que determina la calidad de los otros dos.
+
+Bloque 1 · Pasos 1 a 16
+
+Preparación
+
+Ocurre antes de que el prospecto llegue al club.
+
+Produce el plan de visita (PV-01): ruta por áreas, entrenador asignado, clase de mayor impacto y referencias que se van a usar.
+
+Es responsabilidad del asesor designado y la verifica la gerencia al arranque del día.
+
+Es el bloque de mayor riesgo, porque es el único que nadie reclama si se omite. El control está en los pasos 14 y 15.
+
+Bloque 2 · Pasos 17 a 47
+
+Conducción
+
+De la recepción al cierre del recorrido.
+
+Contiene los pasos 01, 02 y 03 del método de venta: recibir y conectar, descubrir y recorrer.
+
+Incluye la confirmación del brief, el cruce contra la información de salud autodeclarada y los precierres.
+
+Es donde el prospecto vive lo que el sistema le recomendó.
+
+Bloque 3 · Pasos 48 a 72
+
+Propuesta y cierre
+
+Contiene los pasos 04, 05 y 06 del método: proponer, resolver y cerrar.
+
+Termina en una de dos salidas: contratación, que continúa en SOP/SW/0301, o siguiente acción acordada con fecha.
+
+Ninguna visita termina sin registro de resultado.
+
+3.4 · Qué no cubre este documento
+
+Queda fuera Dónde está
+
+La captación y la calificación del prospecto, incluida la generación de la experiencia ideal y del brief SOP/SW/0101 · 0102 · 0103
+
+La contratación y el alta: firma, tokenización del método de pago, activación de la aplicación y agenda del Body Test SOP/SW/0301
+
+El acompañamiento posterior a la contratación y el programa de referidos MPC/SW/01, §11
+
+El criterio de conducción de cada momento: qué decir, qué evitar, banco de argumentos, tratamiento por tipo de persona Método de venta
+Instrucción de trabajo. Se entrena, no se audita paso a paso
+
+El segundo cruce contra la información de salud, posterior a la valoración física Pendiente
+Ver paso 68 y la nota del apartado 4
+
+4Responsabilidades
+
+Corresponde a la Dirección Comercial asegurar que este procedimiento se cumpla. La responsabilidad de
+ejecutar cada paso se identifica en la columna derecha del apartado 9. Además de los principios P-01 a
+P-10 del manual, rigen en la visita guiada las siguientes reglas:
+
+No se conduce una visita sin brief abierto (P-01). El brief es el diagnóstico que el prospecto ya invirtió un minuto en producir. Conducir la visita sin él obliga a preguntar de nuevo lo que ya se preguntó.
+
+Toda visita agendada tiene plan de visita antes de que la persona llegue. La gerencia lo verifica al arranque del día. Una visita sin plan se reasigna o se conduce con la ruta estándar, y ese hecho queda registrado.
+
+La autorización para recabar información de salud autodeclarada se solicita con anticipación, no en el mostrador. Se envía junto con la confirmación de la visita y se recibe firmada al inicio.
+
+Sin autorización firmada no se aplica el cuestionario de salud ni se corre la matriz de contraindicaciones. La visita se conduce igual y la recomendación de arranque queda condicionada a la valoración física.
+
+El recorrido inicia por los vestidores. Es la primera área que la persona usará como socio y es donde se explican en su lugar las amenidades incluidas.
+
+Se procura que el asesor sea del mismo género que el prospecto, para que ambos puedan recorrer juntos todas las áreas, vestidores incluidos. Cuando no es posible, aplica el paso 3.
+
+La clase de mayor impacto se muestra en vivo, no se describe. Si el prospecto trae ropa deportiva, se le invita a integrarse sin costo; si no la trae, el instructor sale del salón, lo saluda por su nombre y le explica cómo funciona la clase.
+
+Las condiciones comerciales se presentan al regresar al área de ventas (P-08), después del recorrido y no durante.
+
+El alta en el CRM ocurre únicamente después de que el prospecto aceptó el plan.
+
+Ninguna visita termina sin resultado registrado. Contratación o siguiente acción concreta con fecha. «Lo voy a pensar» sin fecha no es un resultado.
+
+Punto abierto · El segundo cruce contra la información de salud
+Este procedimiento establece el primer cruce, en el paso 24: la información de salud
+que la persona autodeclara, recabada con autorización escrita, se contrasta con la matriz de
+contraindicaciones antes de que exista cualquier recomendación de arranque. Ese cruce es del asesor y su
+resultado queda en el brief.
+El segundo cruce corresponde a la valoración física y ocurre
+después de ella, ya sea el mismo día o en fecha posterior. Está señalado en el paso 68 como bloque
+pendiente: falta determinar quién lo ejecuta, qué documento genera y dónde reside la información
+resultante. Es una definición de Dirección Comercial con el área responsable de la valoración, y conviene
+resolverla antes de que este procedimiento entre en vigor.
+
+Interviniente Responsabilidad
+
+Asesor de club Preparar la visita, conducirla completa, aplicar el método, realizar el primer cruce de salud, proponer, resolver, cerrar y registrar el resultado
+
+Gerencia del club Designar asesor por visita, verificar la planeación al arranque del día, liberar a entrenadores e instructores para su participación, y cerrar el día con el resultado de cada visita
+
+Entrenador o instructor asignado Dedicar cinco minutos al prospecto para explicar cómo la recomendación se conecta con su objetivo, y recibirlo en la clase de mayor impacto
+
+Recepción del club Identificar el motivo de quien llega y canalizarlo de inmediato al asesor designado, sin dejarlo esperando
+
+Coordinación de FitKidz Recibir al prospecto con hijos en el área infantil y explicar la operación del servicio
+
+Sistemas Disponibilidad del brief y de la experiencia ideal en el club, recálculo cuando la visita modifica el diagnóstico, y escritura al CRM
+
+Legal Texto de la autorización AU-01 y régimen de tratamiento y conservación del dato de salud autodeclarado
+
+Dirección Comercial Vigilar el cumplimiento, autorizar los beneficios comerciales del segundo cierre, resolver excepciones escaladas y autorizar cambios a este documento
+
+5Cambios desde la última revisión
+
+Procedimiento nuevo.
+
+6Documentos que intervienen
+
+Esta tabla indica para qué se usa cada documento dentro de este procedimiento. Su contenido y su
+responsable están establecidos en el apartado 6 del manual MPC/SW/01.
+
+Clave Documento Para qué se usa aquí Pasos
+
+BA-01 Brief del asesor Insumo central de la visita. Se abre en la preparación, se confirma con la persona al inicio, ordena el recorrido y recibe el registro del asesor al final. El uso de cada bloque está en el Anexo B 4 · 20 · 38 · 66
+
+PV-01 Plan de visita
+Nuevo Producto de la preparación: ruta por áreas, entrenador asignado con hora, clase de mayor impacto, participación de FitKidz y del socio invitado, y referencias autorizadas que se van a usar 4 – 13
+
+EI-01 Experiencia ideal Es lo que el prospecto ya recibió por correo. Se confirma al inicio y se recalcula si la visita modifica objetivo, club, días, franjas o clases 20 · 22 · 26
+
+AU-01 Autorización de tratamiento de datos de salud
+Texto por definir con Legal Se envía con la confirmación de la visita y se recibe firmada al inicio. Es requisito del cuestionario de salud y del primer cruce 10 · 23
+
+MC-01 Matriz de contraindicaciones Instrumento del primer cruce. Contrasta la condición autodeclarada contra cada clase recomendada y devuelve sustitución, no exclusión 24 · 26
+
+CAT-01 Catálogo comercial del día Horario real de clases para identificar la de mayor impacto dentro de la franja de la visita, y planes y condiciones vigentes para la propuesta 6 · 49
+
+RS-01 Registro de resultado de visita Cierra toda visita. Contiene el resultado, la objeción con las palabras de la persona cuando la hubo, y la siguiente acción con fecha 64 · 66
+
+7Documentos relacionados
+
+Clave Documento
+
+MPC/SW/01 Manual del Proceso Comercial. Contiene los principios P-01 a P-10 (§4), el contenido de cada documento (§6), la medición (§7), el glosario único (§10) y el Anexo A con el cuestionario íntegro
+
+SOP/SW/0101 Captación por WhatsApp oficial. Origina visitas agendadas
+
+SOP/SW/0102 Captación por el sitio web. Origina visitas agendadas
+
+SOP/SW/0103 Captación en la consola del asesor. Origina visitas agendadas y la visita inmediata
+
+SOP/SW/0301 Contratación y alta de la membresía. Continúa en el paso 62
+
+MED/SW/01 Mapa del funnel: definición operativa de cada etapa, fuente del dato y responsable del acceso
+
+CAT/SW/01 Régimen de sincronización del catálogo: corte diario de las 06:00 y sincronización manual
+
+— Método de venta de Sports World. Instrucción de trabajo. Contiene los siete pasos, las dos pistas y los instrumentos de conducción que este procedimiento ordena
+
+8Diagrama de flujo
+
+Congruente con la numeración del apartado 9. Las decisiones no se numeran.
+
+Inicio
+
+1 · 2La gerencia designa asesor por cada visita del día, procurando coincidencia de género con el prospecto
+
+Decisión¿Hay asesor del mismo género disponible? — Sí al 4 · No al 3
+
+3Se ofrece a la persona elegir y el recorrido de vestidores lo conduce personal del mismo género
+
+4 – 9El asesor abre el brief, define la ruta, identifica la clase de mayor impacto y coordina entrenador, FitKidz y socio invitado
+
+10 – 13Envía la autorización AU-01, prepara dos referencias autorizadas y cierra el plan de visita PV-01
+
+Decisión¿La visita del día tiene plan? — Sí al 17 · No al 16
+
+15Visita inmediata: la preparación se comprime. El asesor abre el brief, elige la clase en curso y avisa al instructor
+
+17 – 19Recepción canaliza de inmediato. El asesor saluda de pie, se presenta, usa el nombre, edifica y pide permiso para preguntar
+
+20 – 22Confirma con la persona los datos del brief y, si algo cambió, recalcula la experiencia ideal
+
+23 – 26Recibe la autorización firmada, aplica el cuestionario de salud, corre la matriz y sustituye lo que resulte contraindicado
+
+28 – 32Identifica la pista, califica las 3 D, anticipa el freno y ajusta el trato al tipo de persona
+
+33 – 37Registra E5, muestra el acceso por código QR e inicia el recorrido por los vestidores
+
+38 – 42Recorre las áreas de la experiencia ideal en el orden del brief y entrega el bloque de cinco minutos del entrenador
+
+Decisión¿El prospecto trae ropa deportiva? — Sí al 43 · No al 44
+
+45 – 47FitKidz, socio invitado, amenidades en su lugar, precierres y cierre de tour
+
+48 – 51Regresa al área de ventas, resume en voz alta, cotiza el plan que cubre lo pedido y realiza el primer intento de cierre
+
+Decisión¿Acepta? — Sí al 60 · No al 53
+
+53 – 59Escucha y anota la objeción, identifica la causa, aplica boomerang o alternativa, y realiza el segundo intento de cierre
+
+Decisión¿Cierra? — Sí al 60 · No al 63
+
+60 – 62Confirma plan, importes, forma de pago y fecha de inicio, registra E6 y entrega a la contratación
+
+63 – 65Registra el motivo con las palabras de la persona y acuerda una siguiente acción concreta con fecha
+
+66 – 67Cierra el brief con el registro del asesor y envía la experiencia ideal actualizada por correo
+
+70 – 72La gerencia cierra el día con el resultado de cada visita y Dirección Comercial realiza la lectura semanal
+
+Fin
+
+9Procedimiento
+
+Setenta y dos pasos en tres bloques. La etiqueta verde señala a qué paso del método de venta corresponde
+cada tramo.
+
+Paso Acción Responsable
+
+Bloque 1 · Preparación · Antes de que el prospecto llegue
+
+1 Toma del corte diario de las 06:00 la relación de visitas agendadas del día, con hora, nombre y club. Gerencia del club
+
+2 Designa asesor para cada visita. Procura que el asesor sea del mismo género que el prospecto, para que ambos puedan recorrer juntos todas las áreas, vestidores incluidos. Gerencia del club
+
+3 ¿Hay asesor del mismo género disponible en la franja de la visita?
+Sí — continúa en el paso 4.
+
+No, o el prospecto no declaró género — continúa en el paso 4 con la asignación disponible y aplica lo previsto en el paso 37 para el recorrido de vestidores. Gerencia del club
+
+4 Abre el brief del prospecto y lo lee completo antes de planear. La preparación se hace sobre el diagnóstico, no sobre una ruta genérica. Asesor designado
+
+5 Define la ruta del recorrido: las áreas que integran la experiencia ideal del prospecto, en el orden en que las visitará. La ruta inicia por vestidores y continúa por el área de mayor interés declarado. Asesor designado
+
+6 Identifica en el catálogo del día la clase de mayor impacto para el objetivo del prospecto que se imparta dentro de la franja de la visita, y anota salón, hora e instructor.
+Si ninguna clase recomendada cae en la franja — selecciona la clase en curso más cercana al objetivo y lo registra en el plan. El recorrido incluye el salón en operación. Asesor designado
+
+7 Coordina con un entrenador o personal trainer su participación de cinco minutos durante la visita. Le entrega el objetivo del prospecto, su nivel declarado y las clases recomendadas, y acuerda la hora aproximada. Asesor designado
+
+8 Cuando el diagnóstico registra hijos, coordina con la coordinación de FitKidz la recepción del prospecto en el área infantil. Asesor designado
+
+9 Cuando exista uno disponible en la franja, coordina con un socio actual del club, con perfil u objetivo semejante, su disposición a conversar brevemente con el prospecto y darle su opinión.
+Es opcional y no detiene la visita. Se ofrece solo cuando el socio aceptó de antemano. Asesor designado
+
+10 Envía al prospecto, junto con la confirmación de la visita, la autorización AU-01 para recabar y tratar la información de salud que autodeclare, con la indicación de traerla firmada o firmarla al llegar.
+Se solicita con anticipación, no en el mostrador. Pedirla al inicio de la visita convierte un trámite en una interrupción. Asesor designado
+
+11 Prepara dos referencias reales y autorizadas de socios del club con objetivo semejante, para usarlas durante el recorrido. Se usan con el nombre y el caso que la persona autorizó, no de forma genérica. Asesor designado
+
+12 Revisa las señales de atención del brief —incompatibilidad de horario, club distinto al de preferencia, pista de reactivación— y define cómo las abordará durante la visita. Asesor designado
+
+13 Cierra el plan de visita PV-01 con la ruta, el entrenador asignado con hora, la clase de mayor impacto, la participación de FitKidz y del socio invitado, y las dos referencias. Asesor designado
+
+14 Al arranque del día: ¿cada visita agendada tiene plan de visita?
+Sí — continúa en el paso 17.
+
+No — continúa en el paso 16. Gerencia del club
+
+15 Visita inmediata. El asesor que capturó el cuestionario conduce la visita en la misma sesión y la preparación se comprime a tres acciones: abre el brief que acaba de generarse, identifica la clase en curso o la más próxima dentro del catálogo del día, y avisa al instructor y al entrenador disponible.
+No aplican los pasos 1 a 3 ni 10: la designación ya ocurrió y la autorización AU-01 se firma en el momento. Continúa en el paso 19. Asesor de club
+
+16 Visita sin plan. La gerencia reasigna la visita a un asesor que pueda prepararla o, si no es posible, autoriza conducirla con la ruta estándar del club.
+En ambos casos el hecho queda registrado con el motivo, y se acumula en la lectura semanal. Una visita conducida sin plan no se oculta: se cuenta. Gerencia del club
+
+Bloque 2 · Conducción · Paso 01 del método: recibir y conectar
+
+17 Identifica el motivo de quien llega y canaliza de inmediato al asesor designado. No se deja al prospecto esperando sin canalizar. Recepción del club
+
+18 Paso 01Saluda de pie, se presenta primero, pregunta el nombre del prospecto y lo usa de forma natural durante toda la visita. Edifica: reconoce algo positivo, como su decisión de venir o la claridad de lo que busca.
+Di esto¡Hola, bienvenido a Sports World! Soy [nombre] y voy a acompañarte para que conozcas todo lo que tenemos para ti. ¿Cuál es tu nombre?
+Evita hablar de precios o promociones en la puerta, y olvidar el nombre a los dos minutos. Asesor de club
+
+19 Paso 01Aplica la pregunta de alivio: pide permiso para preguntar y para tomar notas, y toma notas visibles durante toda la conversación.
+Di esto¿Me permites hacerte algunas preguntas para mostrarte lo que realmente te sirve? ¿Puedo tomar algunas notas para no perder lo que te importa? Asesor de club
+
+20 Confirma con la persona los datos del brief, uno por uno y en voz alta: objetivo, días y franjas en que piensa entrenar, club de preferencia y clases recomendadas. Es una confirmación, no un cuestionario nuevo: el prospecto ya respondió y aquí solo verifica.
+El propósito es detectar cambios de opinión entre la captación y la visita, que son frecuentes cuando pasaron días entre una y otra. Asesor de club
+
+21 ¿Cambió algún dato respecto de lo registrado?
+Sí — continúa en el paso 22.
+
+No — continúa en el paso 23. Asesor de club
+
+22 Captura el cambio y recalcula la experiencia ideal. El brief se actualiza en la misma operación y el plan de visita se ajusta a la nueva ruta antes de iniciar el recorrido. Sistema
+
+23 Recibe la autorización AU-01 firmada. Si el prospecto no la trae, se firma en ese momento.
+Si no otorga la autorización — continúa en el paso 27. Asesor de club
+
+24 Aplica el cuestionario de salud autodeclarada y contrasta cada condición registrada contra las clases recomendadas, con la matriz de contraindicaciones MC-01. Es el primer cruce. Asesor de club
+
+25 ¿La matriz devuelve alguna contraindicación sobre las clases recomendadas?
+Sí — continúa en el paso 26.
+
+No — continúa en el paso 28. Asesor de club
+
+26 Sustituye la clase contraindicada por la siguiente clase idónea para el mismo objetivo y recalcula la experiencia ideal. La sustitución se explica al prospecto en términos de su objetivo, no de su condición.
+La matriz sustituye, no excluye. Una contraindicación no reduce la oferta: cambia la ruta hacia el mismo resultado. Asesor de club
+
+27 Sin autorización firmada no se aplica el cuestionario de salud ni se corre la matriz. La visita se conduce completa y sin cambio alguno; lo que queda condicionado es la recomendación de arranque, que se define hasta la valoración física. El hecho se registra en el brief. Continúa en el paso 28. Asesor de club
+
+Paso 02 del método: descubrir
+
+28 Paso 02Identifica en el brief la pista que corresponde: venta nueva o reactivación.
+Venta nueva — el hilo conductor es el objetivo que quiere alcanzar. Continúa en el paso 30.
+
+Reactivación — el hilo conductor es el motivo por el que se fue. Continúa en el paso 29. Asesor de club
+
+29 Paso 02Pista de reactivación. Localiza la membresía anterior, da la bienvenida de regreso y pregunta con apertura el motivo de inactivación. Ese motivo es la objeción que debe resolverse hoy. Pregunta qué sería distinto esta vez para que se mantenga activo.
+Evita asumir que recuerda el club, y responder con nostalgia en lugar de hechos nuevos. Asesor de club
+
+30 Paso 02Construye el triángulo ACR durante la conversación: afinidad, comunicación y realidad. El acuerdo sobre la necesidad debe existir antes de cualquier propuesta. Asesor de club
+
+31 Paso 02Califica las 3 D —dinero, decisión y deseo— y clasifica al prospecto conforme al método. La calificación determina el ritmo del cierre, no si se conduce o no la visita. Asesor de club
+
+32 Paso 02Anticipa el freno: identifica antes de cotizar qué podría detener la decisión. Identifica también el tipo de percepción y el color del prospecto, y ajusta ritmo, lenguaje y tipo de cierre.
+Evita el interrogatorio rígido. Es una conversación. Asesor de club
+
+Paso 03 del método: recorrer
+
+33 Registra la etapa E5 · visita realizada al iniciar el recorrido (P-09). Sistema
+
+34 Paso 03Antes de cruzar el acceso, muestra el ingreso por código QR de la aplicación y explica que así será su entrada todos los días.
+Di estoTu acceso será muy práctico: desde la aplicación muestras tu código QR e ingresas al club. Asesor de club
+
+35 Paso 03Anuncia la ruta con las palabras del prospecto: nombra el objetivo que declaró y las áreas que verá por ese motivo.
+Di estoPerfecto, [nombre]. Vamos a comenzar por las áreas que mejor se relacionan con lo que buscas y, en el camino, te muestro todo lo que tendrás como miembro. Asesor de club
+
+36 Paso 03Inicia el recorrido por los vestidores. Es la primera área que usará como socio. Ahí se explican en su lugar el servicio de toallas, los lockers y las amenidades incluidas. Asesor de club
+
+37 Cuando el asesor y el prospecto no coinciden en género, el recorrido de vestidores lo conduce personal del club del mismo género que el prospecto, o bien se muestra desde el acceso con la explicación completa del servicio. Se ofrece al prospecto la opción y se procede conforme a lo que indique. Asesor de club
+
+38 Paso 03Recorre las áreas que integran la experiencia ideal, en el orden del plan de visita, empezando por la de mayor interés declarado. El resto del club se muestra como complemento.
+Evita el recorrido genérico igual para todos, y forzar áreas que el prospecto no necesita. Asesor de club
+
+39 Paso 03Presenta cada beneficio en el lugar donde se vive: toallas en el vestidor, paramédico en su puesto, reserva de clases en el salón, rutinas y aplicación en el área correspondiente. Traduce cada característica a la ventaja y al beneficio que le corresponde al objetivo del prospecto. Asesor de club
+
+40 Paso 03Menciona el reglamento de cada área de forma breve, sin interrumpir la experiencia. Usa las dos referencias autorizadas del plan de visita cuando el momento del recorrido lo permita. Asesor de club
+
+41 Paso 03Bloque del entrenador. El entrenador o personal trainer asignado dedica cinco minutos al prospecto y le explica, con su objetivo en la mano, cómo las clases y las áreas recomendadas producen el resultado que busca y en qué plazo.
+Es el punto en que la recomendación deja de ser una pantalla y la sostiene una persona que entrena en ese club. Entrenador asignado
+
+42 Al llegar a la clase de mayor impacto: ¿el prospecto trae ropa deportiva?
+Sí — continúa en el paso 43.
+
+No — continúa en el paso 44. Asesor de club
+
+43 Se le invita a integrarse a la clase sin costo, por el tiempo que decida. El asesor lo espera y retoma el recorrido al terminar. Asesor e instructor
+
+44 El instructor sale del salón, lo saluda por su nombre, lo acompaña al interior, le explica cómo funciona la clase, qué se trabaja y cómo se reserva el lugar.
+Evita describir la clase desde el pasillo. Se entra al salón. Instructor de la clase
+
+45 Cuando el diagnóstico registra hijos, la coordinación de FitKidz recibe al prospecto en el área infantil y le explica horarios, actividades y operación del servicio. Coordinación de FitKidz
+
+46 Cuando se coordinó en el paso 9, el asesor presenta al socio actual y le da espacio para que conversen sin intervenir. Asesor de club
+
+47 Paso 03Realiza un precierre en cada estación fuerte del recorrido y cierra el tour confirmando la correspondencia entre lo que el prospecto dijo buscar y lo que acaba de ver.
+Di estoCon respecto a lo que me platicaste, este club es lo que buscas, ¿correcto? Asesor de club
+
+Bloque 3 · Propuesta y cierre · Paso 04 del método: proponer
+
+48 Paso 04Regresa al área de ventas y resume en voz alta intereses, objetivo y lo que el prospecto confirmó durante el recorrido. Asesor de club
+
+49 Paso 04Cotiza el plan y el mantenimiento que cubren lo que pidió, con las condiciones vigentes del catálogo del día. Un plan propuesto, con su complemento cuando corresponda.
+Evita presentar tres planes para que elija a ciegas, y encabezar con la promoción en lugar del resultado. Asesor de club
+
+50 Paso 04Explica beneficios, costo, forma de pago, vigencia y promoción aplicable, relacionando cada importe con el resultado que el prospecto busca. En la pista de reactivación, usa el esquema y los beneficios de reactivación autorizados y vigentes. Asesor de club
+
+51 Paso 04Realiza el primer intento de cierre, en forma afirmativa.
+Di estoEste plan cubre lo que estás buscando: [objetivo]. Incluye [beneficios] y puedes empezar [fecha]. ¿Realizamos hoy tu inscripción? Asesor de club
+
+52 ¿El prospecto acepta?
+Sí — continúa en el paso 60.
+
+No — continúa en el paso 53. Asesor de club
+
+Paso 05 del método: resolver
+
+53 Paso 05Calla, escucha y anota la objeción tal como la dijo, sin corregirla ni defenderse.
+Evita discutir o interrumpir la objeción. Asesor de club
+
+54 Paso 05Identifica la causa verdadera detrás de lo que dijo: precio, tiempo, decisión compartida, temor a lesionarse, comparación con otra opción o postergación. Asesor de club
+
+55 ¿La objeción se puede resolver con lo que el club sí ofrece?
+Sí — continúa en el paso 56.
+
+No — continúa en el paso 57. Asesor de club
+
+56 Paso 05Aplica el boomerang: retroalimenta con el beneficio ligado a su objetivo, condiciona el sí y guarda silencio.
+Di estoTe escucho. Si yo te demuestro que [beneficio ligado a su objetivo], entonces tú te inscribes el día de hoy. Asesor de club
+
+57 Paso 05Minimiza y ofrece alternativa con beneficios reales y vigentes, y cierra de forma indirecta.
+Di estoEso no podemos hacerlo. Lo que sí podemos hacer es [alternativa]. ¿Qué te parece?
+Evita inventar descuentos no autorizados. Asesor de club
+
+58 Paso 05Vuelve a unir los beneficios con el resultado que busca y realiza el segundo intento de cierre. Si corresponde, presenta un beneficio comercial autorizado y vigente. Asesor de club
+
+59 ¿Cierra?
+Sí — continúa en el paso 60.
+
+No — continúa en el paso 63. Asesor de club
+
+Paso 06 del método: cerrar
+
+60 Paso 06Emplea el tipo de cierre que corresponde al perfil identificado en el paso 32: directo, indirecto, de prueba, de resumen o de acuerdo.
+Evita cerrar con una pregunta débil de sí o no cuando se puede dar a elegir. Asesor de club
+
+61 Paso 06Confirma plan, importes, promoción aplicable, forma de pago, periodicidad, vigencia y fecha de inicio, y obtiene la conformidad expresa del prospecto sobre cada uno. Asesor de club
+
+62 Registra la etapa E6 · membresía contratada y entrega la atención a SOP/SW/0301 · Contratación y alta, que rige a partir de este punto: identificación, firma, tokenización del método de pago, activación de la aplicación y agenda del Body Test antes de que la persona se retire.
+El alta en el CRM ocurre únicamente después de la aceptación, nunca antes. Continúa en el paso 66. Asesor y Sistema
+
+Cuando la visita no cierra
+
+63 Registra el motivo con las palabras de la persona, no con una categoría genérica. La transcripción literal es lo que permite leer después qué está frenando las decisiones en cada club. Asesor de club
+
+64 Acuerda una siguiente acción concreta con fecha y la registra: nueva conversación, clase de prueba, visita acompañada de quien decide con la persona, o llamada en fecha determinada.
+Evita aceptar «luego regreso» sin una siguiente acción concreta. Asesor de club
+
+65 Pregunta si tiene un amigo o familiar a quien le sirva el club, conforme al programa de referidos vigente, y registra la referencia con la autorización que ese programa exija. Asesor de club
+
+Cierre de toda visita
+
+66 Completa el registro del asesor en el brief y genera el registro de resultado RS-01: qué ocurrió en cada bloque del recorrido, qué reaccionó bien, la objeción si la hubo y la siguiente acción con su fecha. Asesor de club
+
+67 Cuando la visita modificó la experiencia ideal —por cambio de datos en el paso 22 o por sustitución de clase en el paso 26—, envía por correo la versión actualizada al prospecto, con la indicación de que sustituye a la anterior. Sistema
+
+68 Bloque pendiente de definiciónSegundo cruce contra la información de salud, posterior a la valoración física. La valoración física puede realizarse el mismo día de la visita o en fecha posterior. Su resultado se contrasta contra la experiencia ideal vigente antes de que exista una prescripción de entrenamiento definitiva.
+Falta determinar quién ejecuta el cruce, qué documento genera y dónde reside la información resultante. Hasta que se determine, este paso opera como indicador: se registra que la valoración ocurrió y queda señalado que el cruce está pendiente. Por definir
+
+69 Verifica que toda visita del día tenga resultado registrado. Una visita sin resultado se devuelve al asesor el mismo día. Gerencia del club
+
+70 Cierra el día con el corte de visitas: agendadas, realizadas, inmediatas, contratadas y sin cierre, con el motivo agregado de estas últimas. Gerencia del club
+
+71 Realiza la lectura semanal: conversión de E5 a E6 por club y por asesor, visitas conducidas sin plan, participación efectiva de entrenadores e instructores, y motivos de no cierre más frecuentes.
+La lectura se realiza sobre resultados agregados. El detalle individual se consulta solo ante una excepción escalada. Dirección Comercial
+
+72 Escala a Dirección Comercial cualquier situación no prevista en este procedimiento, conforme al apartado 1.4. Gerencia del club
+
+Fin del procedimiento
+
+Sobre el bloque de preparación
+Es el bloque que ningún prospecto reclama si se omite, y por eso es el que primero se
+pierde en la operación diaria. Una visita sin preparación se ve idéntica a una preparada durante los
+primeros dos minutos, y deja de verse idéntica en el momento en que el prospecto pregunta algo que el
+diagnóstico ya respondía o en que no hay entrenador disponible para los cinco minutos.
+Los controles están repartidos y son tres: la gerencia verifica la existencia
+del plan al arranque del día (paso 14), la visita sin plan se registra en lugar de disimularse (paso
+16), y la lectura semanal cuenta cuántas visitas se condujeron sin plan por club (paso 71). Ninguno
+de los tres agrega un paso al asesor: la verificación es de la gerencia y el conteo es del tablero.
+
+10Registros
+
+Registro Paso Dónde reside
+
+Designación de asesor por visita 2 Agenda del club, con el asesor designado y el criterio de asignación
+
+Plan de visita 13 Conservado con el brief del prospecto. Su existencia se verifica al arranque del día
+
+Visita conducida sin plan y su motivo 16 CRM, sobre el registro del prospecto. Se agrega por club en la lectura semanal
+
+Confirmación del brief y cambios detectados 20 · 22 Brief actualizado y experiencia ideal recalculada, conservados con el registro
+
+Autorización AU-01 firmada 23 Expediente del prospecto, conforme al régimen que defina Legal
+
+Resultado del primer cruce de salud 24 · 26 Brief, con la condición registrada y la sustitución aplicada cuando la hubo
+
+Negativa de autorización 27 Brief, con la marca de recomendación de arranque condicionada
+
+Etapa E5 · visita realizada 33 Base del funnel, con distinción entre visita agendada y visita inmediata
+
+Participación del entrenador y del instructor 41 · 43 · 44 Registro del asesor en el brief. Se agrega por club en la lectura semanal
+
+Etapa E6 · membresía contratada 62 Base del funnel. El alta se escribe únicamente después de la aceptación
+
+Motivo de no cierre, literal 63 CRM, con las palabras de la persona. Se agrega por categoría en la lectura semanal
+
+Siguiente acción acordada y su fecha 64 CRM, con recordatorio para el asesor responsable
+
+Registro de resultado de visita 66 Conservado con el brief. Es el cierre obligatorio de toda visita
+
+Experiencia ideal actualizada enviada 67 Registro de envío con marca de tiempo, sobre el registro del prospecto
+
+Valoración física realizada 68 Pendiente de definición. Se registra el hecho y queda señalado el cruce pendiente
+
+Corte diario de visitas 70 Tablero del club
+
+Lectura semanal 71 Tablero de Dirección Comercial. Presenta únicamente resultados agregados
+
+AAnexo A · Equivalencia con el método de venta de Sports World
+
+Los siete pasos del método y sus instrumentos de conducción, con el paso de este procedimiento en que cada
+uno se aplica.
+
+A.1 · Los siete pasos
+
+Nº Paso del método Pasos aquí Cómo se ordena en este procedimiento
+
+01 Recibir y conectar 17 – 19 Canalización inmediata, saludo de pie, presentación, uso del nombre, edificación y pregunta de alivio con toma de notas
+
+02 Descubrir 20 · 28 – 32 El sondeo ya ocurrió en la captación. Aquí se confirma el brief, se identifica la pista, se construye el triángulo ACR, se califican las 3 D, se anticipa el freno y se ajusta el trato al tipo de persona
+
+03 Recorrer 34 – 47 Acceso por código QR antes de cruzar, inicio por vestidores, áreas de la experiencia ideal en el orden del brief, bloque del entrenador, clase de mayor impacto en vivo, beneficios en el lugar donde se viven y precierres
+
+04 Proponer 48 – 51 Regreso al área de ventas, resumen en voz alta, cotización del plan que cubre lo pedido y primer intento de cierre afirmativo
+
+05 Resolver 53 – 58 Escucha y anotación literal, identificación de la causa, boomerang cuando se puede resolver o alternativa cuando no, y segundo intento de cierre
+
+06 Cerrar 60 – 62 Tipo de cierre según perfil, confirmación de términos y entrega a la contratación
+
+07 Activar y acompañar SOP/SW/0301 Firma, tokenización del método de pago, activación de la aplicación, demostración de reservas y toallas, y agenda del Body Test antes de que la persona se retire
+
+A.2 · Las dos pistas
+
+Pista Pasos aquí Qué cambia
+
+Venta nueva 28 · 30 El hilo conductor es el objetivo que quiere alcanzar. El recorrido se ordena por interés declarado y la cotización se enfoca en el resultado
+
+Reactivación 28 · 29 · 50 El hilo conductor es el motivo por el que se fue, que es la objeción a resolver. Se localiza la membresía anterior, se demuestran los cambios del club y el beneficio de reactivación autorizado se usa en el cierre, no en el saludo
+
+A.3 · Los instrumentos de conducción
+
+Instrumento Paso Para qué se usa en la visita
+
+Pregunta de alivio 19 Pide autorización para preguntar y para tomar notas. Convierte el sondeo en conversación
+
+Triángulo ACR 30 Afinidad, comunicación y realidad. Sin acuerdo sobre la necesidad, la cotización no tiene sustento
+
+Embudo de cinco preguntas 20 · 28 – 32 Apertura, prioridad y contexto llegan resueltos en el brief. En la visita se completan calificación y freno
+
+Las 3 D 31 Dinero, decisión y deseo. Determinan el ritmo del cierre
+
+Característica, ventaja y beneficio 39 · 50 Traduce cada instalación y cada importe al resultado que el prospecto busca
+
+Tipo de percepción 32 Ajusta el peso de lo que se muestra, lo que se explica y lo que se hace probar
+
+Matriz de color 32 · 60 Ajusta ritmo y lenguaje durante la visita, y determina el tipo de cierre
+
+Precierres 47 Programan la decisión durante el recorrido, en cada estación fuerte
+
+Cinco tipos de cierre 60 Directo, indirecto, de prueba, de resumen y de acuerdo, según el perfil identificado
+
+Boomerang de cinco pasos 56 · 57 Resuelve la objeción cuando se puede, o minimiza y ofrece alternativa cuando no
+
+Referencias autorizadas 11 · 40 Casos reales de socios del club con objetivo semejante, preparados en la planeación
+
+BAnexo B · Los bloques del brief y su momento de uso
+
+El brief del asesor tiene ocho bloques. Cada uno entra en un momento distinto de la visita. Este anexo
+establece cuál y para qué.
+
+Nº Bloque del brief Paso Cómo lo usa el asesor
+
+1 Perfil del prospecto 4 · 28 Se lee completo en la preparación. Determina la pista —venta nueva o reactivación— y el punto de partida de la conversación
+
+2 Logística y contacto 1 · 10 Hora de la visita, club y medio de contacto. Es lo que permite enviar con anticipación la autorización AU-01
+
+3 Qué confirmar antes de proponer 20 Es la lista que el asesor recorre en voz alta al inicio de la visita para detectar cambios de opinión entre la captación y la visita
+
+4 Ruta recomendada del recorrido 5 · 38 Los cuatro pasos de la ruta son el esqueleto del plan de visita y el orden real del recorrido, después de los vestidores
+
+5 Propuesta principal y complemento 49 Es lo que se cotiza al regresar al área de ventas: un plan propuesto y su complemento, no un menú
+
+6 Tres prioridades de cierre 47 · 51 · 58 Ordenan los precierres del recorrido y los dos intentos de cierre. Son los argumentos que el diagnóstico señaló como decisivos para esa persona
+
+7 Notas y señales de atención 12 · 26 Incompatibilidad de horario, club distinto al de preferencia y resultado del primer cruce de salud. Se revisan en la preparación y se abordan durante la visita
+
+8 Espacio de registro del asesor 66 Se completa al cerrar la visita: qué ocurrió en cada bloque, qué reaccionó bien, la objeción literal y la siguiente acción con su fecha
+
+SOP/SW/0201 · La Experiencia Guiada de Sports World · versión 1.0 · uso interno.
+
+Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.
+
+Recibe prospectos de SOP/SW/0101, SOP/SW/0102 y SOP/SW/0103. Continúa en SOP/SW/0301 · Contratación y alta. El glosario único y el cuestionario íntegro están en MPC/SW/01, apartado 10 y Anexo A.

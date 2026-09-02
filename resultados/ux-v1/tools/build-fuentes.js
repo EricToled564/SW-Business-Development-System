@@ -69,10 +69,11 @@ const CUADERNOS = [
 // las transcriba. Quedan fuera las que son sólo armazón —el visor, el redirector
 // de la presentación y las dos del demo—, porque su contenido lo pinta JavaScript
 // y como fuente entrarían vacías.
+// El demo-manual queda fuera: su HTML pesa 31 KB pero su texto extraído son 37
+// caracteres — el contenido lo pinta JavaScript, igual que el visor y el demo.
 const WEB = [
   ["licitacion/index.html", "Licitación"],
   ["presentacion/deck.html", "Presentación · deck"],
-  ["demo-manual/index.html", "Demo · manual"],
 ];
 
 // El código del cuestionario. Se publica íntegro y sin tocar, envuelto en un
@@ -87,6 +88,25 @@ const CODIGO = [
 // DEC/SW/01 se publica como aviso, no como documento: su contenido es interno
 // (ver R21 en consistencia.js). No es una fuente cargable.
 const PROCESO_INTERNO = new Set(["dec-01.html"]);
+
+/**
+ * Texto visible de una página HTML compuesta. Determinista: quita script, style
+ * y etiquetas, deshace las entidades y normaliza el espacio. No interpreta nada
+ * y no reordena nada — R23 lo vuelve a correr y compara, de modo que lo que se
+ * carga en NotebookLM es lo que este extractor produce, no lo que alguien copió.
+ */
+function textoDeHtml(html) {
+  let t = html
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, "");
+  t = t.replace(/<\/(p|div|section|article|tr|li|h[1-6]|table|thead|tbody|header|footer|main|nav)>/gi, "\n");
+  t = t.replace(/<br\s*\/?>/gi, "\n").replace(/<\/t[dh]>/gi, "\t");
+  t = t.replace(/<[^>]+>/g, "");
+  const ent = { amp: "&", lt: "<", gt: ">", quot: '"', "#39": "'", nbsp: " ", aacute: "á", eacute: "é", iacute: "í", oacute: "ó", uacute: "ú", ntilde: "ñ", Aacute: "Á", Eacute: "É", Iacute: "Í", Oacute: "Ó", Uacute: "Ú", Ntilde: "Ñ", uuml: "ü", laquo: "«", raquo: "»", mdash: "—", ndash: "–", hellip: "…", middot: "·" };
+  t = t.replace(/&([a-zA-Z#0-9]+);/g, (m, e) => (e in ent ? ent[e] : m));
+  t = t.replace(/[ \t]+/g, " ").replace(/ *\n */g, "\n").replace(/\n{3,}/g, "\n\n");
+  return t.trim() + "\n";
+}
 
 const escapar = (s) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -253,6 +273,18 @@ for (const archivo of archivos) {
   grupo2.push(`${id}-MOD.html`);
   registro.push({ id, archivo, cambios });
 }
+
+/* ─────────── El texto de las páginas HTML, para cargarlas como archivo ─────────── */
+// NotebookLM no extrae el texto de estas páginas cuando se cargan por URL: se
+// comprobó dos veces, y llegó a afirmar que AP-01 y AU-01 no existían en ninguna
+// fuente cuando el MPC los define. Se cargan como texto, igual que los documentos.
+const paginasHtml = [
+  ...fs.readdirSync(PROCESO).filter((f) => f.endsWith(".html") && !PROCESO_INTERNO.has(f)).sort()
+    .map((f) => [path.join(PROCESO, f), `proceso-${f.replace(/\.html$/, "")}.txt`]),
+  ...WEB.map(([rel]) => [path.join(WEBAPP, rel), `sitio-${rel.replace(/\//g, "-").replace(/\.html$/, "")}.txt`]),
+];
+for (const [origen, salida] of paginasHtml)
+  fs.writeFileSync(path.join(TXT, salida), textoDeHtml(fs.readFileSync(origen, "utf8")));
 
 /* ─────────── Las dos listas que quedan en verificacion/ ─────────── */
 

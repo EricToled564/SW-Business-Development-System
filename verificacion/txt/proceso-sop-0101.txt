@@ -1,0 +1,558 @@
+Captación por WhatsApp · SOP/SW/0101 · Sports World
+
+Sports World México · Procedimiento normalizado de operación
+Uso interno
+
+Título
+
+Captación y calificación del prospecto por WhatsApp oficial
+
+Canal 2 · Dos puntos de entrada: campaña en redes sociales y mensaje directo
+
+No. de documento
+SOP/SW/0101
+
+Estatus
+Uso interno
+
+Sustituye a
+N/A
+
+Autor
+Dirección Comercial
+Firma: en expediente
+
+Aprueba
+Dirección General
+Firma: en expediente
+
+Versión
+1.0
+
+Fecha de entrada en vigor
+01-SEP-2026
+
+Fecha de revisión
+01-SEP-2027
+
+Manual
+MPC/SW/01
+§10 glosario · Anexo A cuestionario
+
+1Introducción: cómo funciona este documento
+
+1.1 · Qué es y qué no es
+
+Este es un procedimiento normalizado de operación. Establece qué ocurre, en qué orden y
+quién responde por cada paso, en un tramo acotado del Proceso Comercial. No es un manual de ventas ni un
+guion de conversación.
+
+La distinción es operativa, no formal. Un paso de este documento dice «aplica el cuestionario»;
+no dice cómo sostener la conversación con alguien que acaba de decir que le parece caro. Lo primero es
+secuencia y es obligatorio para todos por igual. Lo segundo es criterio, admite formas distintas de
+hacerse bien, y vive un nivel abajo. Cuando un paso requiere criterio, remite al documento que lo
+contiene.
+
+Nivel Documento Responde a Frecuencia de cambio
+
+Manual del proceso Proceso Comercial Qué es el sistema comercial y por qué está construido así Años
+
+Procedimiento Este documento
+SOP/SW/0101 Qué ocurre, en qué orden y quién responde por cada paso Anual
+
+Instrucción de trabajo Manual de Ventas Cómo se conduce cada momento y con qué criterio Trimestres
+
+Registro RP-01 · BA-01 · AC-01 Qué ocurrió en un caso concreto Cada conversación
+
+1.2 · Cómo se lee
+
+El apartado 9 es el procedimiento. Una tabla de tres columnas: paso, acción y responsable. Todo lo demás del documento existe para que esa tabla se pueda ejecutar sin interpretación.
+
+Los pasos se numeran de forma consecutiva y esa numeración es la única referencia válida. El documento se cita por paso, nunca por página ni por apartado.
+
+Las decisiones van dentro de la acción, siempre en el mismo formato: la pregunta, y debajo cada respuesta posible con el paso al que continúa. No hay decisión sin destino explícito para cada rama.
+
+El diagrama del apartado 8 usa la misma numeración. Es el mismo procedimiento en forma gráfica, no un resumen distinto ni una versión simplificada. Si el diagrama y la tabla discrepan, rige la tabla.
+
+Los pasos sombreados en rojo son excepciones: no ocurren en el curso normal de una conversación. Los sombreados en ámbar son decisiones. Los sombreados en morado aplican solo al punto de entrada por campaña.
+
+Los documentos se citan por clave —CEI-01, BA-01, CAM-01, CAT-01—. El apartado 6 del manual MPC/SW/01 establece el contenido y la responsabilidad de cada uno; el apartado 10, el glosario de términos.
+
+1.3 · Quién lo usa y para qué
+
+Quién Cuándo lo usa Apartados
+
+Asistente conversacional Es su norma de operación. El asistente se configura contra estos pasos, y toda modificación a su comportamiento en este canal pasa primero por una modificación a este documento 4 · 10 · Anexo A
+
+Operador de atención digital Al recibir una escalación, para retomar en el punto exacto y no repetir lo ya preguntado 4 · pasos 14–18
+
+Gerencia del club Al recibir una solicitud de visita, para saber qué debe verificar, en qué plazo y qué debe registrar pasos 39–43
+
+Marketing Al dar de alta una campaña, para saber qué debe estar cargado antes de que la pauta salga al aire 4 · 6 · pasos 3–8
+
+Dirección Comercial En la lectura semanal y ante cualquier excepción escalada. Es el área que responde por el cumplimiento Completo
+
+Personal de nuevo ingreso En su incorporación, para entender de dónde le llega el prospecto y con qué información 2 · 3 · 9
+
+1.4 · Qué hacer cuando la operación no coincide con el documento
+
+No se resuelve con una variante local. La discrepancia se reporta a Dirección Comercial, que determina si
+se trata de una excepción de ese caso o de un cambio que el procedimiento debe incorporar. Un
+procedimiento que se ejecuta distinto en cada club deja de permitir la comparación entre clubes, que es
+la mitad de su utilidad.
+
+Rige únicamente la versión publicada por Dirección Comercial, identificada en la cabecera de control. La
+revisión es anual, y extraordinaria ante cambio de CRM, alta o baja de un canal de captación,
+modificación del régimen de sincronización del catálogo o cambio en la normativa de protección de datos
+personales.
+
+2Propósito
+
+Asegurar que todo prospecto que escribe al WhatsApp oficial de Sports World reciba respuesta inmediata,
+quede calificado con el mismo instrumento que los demás canales, y llegue al club con una visita
+solicitada y un diagnóstico escrito que permita al asesor conducir la conversación comercial conociendo
+de antemano su objetivo, nivel, disponibilidad y preferencias.
+
+Este procedimiento no cubre la generación de la campaña que origina el clic, ni la conducción de la
+visita, ni la propuesta comercial.
+
+3Alcance
+
+3.1 · A qué aplica
+
+A toda conversación que ingresa por el número oficial de WhatsApp Business de Sports World. Rige para los
+49 clubes de la red, los 365 días del año, sin excepción por plaza, formato de membresía ni volumen.
+
+3.2 · Los dos puntos de entrada del canal
+
+El canal recibe conversaciones por dos vías. La diferencia entre ellas no es de forma: determina qué
+información debe tener el asistente conversacional en el instante en que responde el primer mensaje, y es
+lo que separa los pasos 3 a 6 del procedimiento.
+
+Punto de entrada A
+
+Campaña en redes sociales
+
+El prospecto da clic en un anuncio de Meta o de TikTok con destino a WhatsApp.
+
+El primer mensaje llega con el identificador de la campaña y del anuncio. Es el dato que hace posible atribuir la venta a la campaña que la originó.
+
+El asistente debe conocer la oferta específica que el prospecto vio antes de responder: el descuento anunciado y su vigencia, la clase o el programa especial que promueve la pieza, los clubes participantes y las condiciones aplicables. Esa información vive en la ficha de campaña (CAM-01).
+
+Responder con la oferta genérica del catálogo cuando el prospecto pregunta por una promoción anunciada es una falla del procedimiento: contradice lo que la propia empresa le acaba de mostrar.
+
+Punto de entrada B
+
+Mensaje directo al número
+
+El prospecto escribe al número oficial por su cuenta: lo tomó de la ficha de Google Business, del sitio, de la señalización del club o de una recomendación.
+
+No hay identificador de campaña. No hay oferta anunciada que reconocer y la conversación no arranca desde una promoción.
+
+El asistente opera con el catálogo del día y la base de conocimiento general: membresías, clases, políticas de cancelación y congelamiento, e información operativa por club.
+
+La atribución se registra como entrada directa al canal, sin campaña asociada.
+
+A partir del paso 7 ambas vías siguen exactamente la misma secuencia.
+
+3.3 · Qué no cubre este documento
+
+Queda fuera Dónde está
+
+La generación de la campaña que origina el clic y la carga de su ficha MKT/SW/01
+
+La captación por el sitio web SOP/SW/0102
+
+La captación en el club y por teléfono, en consola SOP/SW/0103
+
+La conducción de la visita y la propuesta comercial SOP/SW/0201
+
+La contratación y el alta de la membresía SOP/SW/0301
+
+Cada canal de captación tiene procedimiento propio por una razón operativa: el momento en que el
+prospecto deja de ser anónimo es distinto en cada uno. En WhatsApp ocurre desde el primer mensaje, porque
+escribe desde su propio número; de ahí que este canal sea el único con el teléfono validado por el canal
+mismo, el único con recorrido individual completo del clic a la baja, y el único donde el club se
+reconfirma antes de pedir los datos de contacto.
+
+4Responsabilidades
+
+Corresponde a la Dirección Comercial asegurar que este procedimiento se cumpla. La responsabilidad de
+ejecutar cada paso se identifica en la columna derecha del apartado 9. Rigen además las siguientes
+reglas, que obligan a todos los intervinientes:
+
+No se agenda una visita guiada sin cuestionario. Aplica también cuando el prospecto llega con el club ya elegido y solo pide agendar, y cuando un operador toma la conversación en curso.
+
+El asistente conversacional atiende la totalidad de las conversaciones entrantes. No hay cola de espera, no hay reparto entre operadores y no hay diferencia entre horario y fuera de horario. La intervención de una persona es una escalación, no el punto de partida.
+
+La escalación procede solo cuando concurren dos condiciones: la conversación ocurre en horario de oficina, y surge una pregunta que el asistente no puede responder o el prospecto pide expresamente hablar con una persona. Fuera de horario el pendiente se registra para el siguiente turno y no detiene el agendado.
+
+Ante una conversación con identificador de campaña, el asistente responde con la ficha de esa campaña, no con la oferta genérica del catálogo. Marketing es responsable de que la ficha esté cargada y vigente antes de que la pauta salga al aire.
+
+La recomendación se entrega antes de solicitar datos de contacto.
+
+Toda recomendación se construye sobre el catálogo del día, con corte a las 06:00 de la Ciudad de México. No hay lectura en vivo de precios, clases ni horarios durante la conversación.
+
+La fecha y hora elegidas son una solicitud de visita, nunca una reserva. El sistema no verifica disponibilidad de asesor ni de sala.
+
+Fuera de la oferta de la campaña, en este procedimiento no se anticipan condiciones comerciales. El resto de los precios, descuentos y condiciones de permanencia se presentan durante la visita, conforme a SOP/SW/0201. Toda condición ofrecida obliga a la empresa.
+
+Interviniente Responsabilidad
+
+Asistente conversacional Atender toda conversación entrante, reconocer la oferta de campaña cuando exista, aplicar el cuestionario, entregar la recomendación y agendar la visita. Escalar cuando proceda, conservando el contexto
+
+Operador de atención digital Atender las escalaciones dentro de su horario de oficina y retomar los pendientes registrados fuera de horario
+
+Gerencia del club Acusar recibo de la solicitud, verificar capacidad de atención, designar asesor responsable y coordinar la visita
+
+Asesor designado Consultar el brief antes de la visita
+
+Dirección Comercial Definir el criterio de asignación de asesor, vigilar el cumplimiento, resolver excepciones escaladas y autorizar cambios a este documento
+
+Marketing Número oficial con verificación del negocio y plantillas autorizadas · parámetros de campaña en todas las piezas · carga de la ficha de campaña antes de que la pauta salga al aire y su baja al vencer la vigencia
+
+Sistemas Vigencia del catálogo diario, disponibilidad del punto de escritura al CRM y ejecución de la sincronización manual cuando se solicita
+
+Legal Aviso de privacidad vigente y mecanismo de consentimiento que el asistente despliega
+
+5Cambios desde la última revisión
+
+Procedimiento nuevo.
+
+6Documentos necesarios para este procedimiento
+
+Clave Documento Contenido
+
+CEI-01 Cuestionario de Experiencia Ideal
+Íntegro en el Anexo A de MPC/SW/01 17 reactivos: 15 base y 2 condicionales. Un minuto del prospecto. Identidad y trato · objetivo emocional · objetivo funcional · ritmo y modalidad · disponibilidad · nivel e historial · preferencias de entrenamiento · acompañamiento · interés en programas familiares · ancla geográfica
+
+CAM-01 Ficha de campaña vigente
+Una por campaña activa Identificador de campaña y de anuncio · oferta anunciada tal como aparece en la pieza · descuento, monto o porcentaje, y su vigencia · clase, programa o amenidad que promueve · clubes participantes · condiciones y exclusiones · fecha de alta y de baja
+
+BA-01 Brief del asesor
+Anexo B · uso interno Perfil del prospecto · logística y contacto · qué confirmar antes de proponer · ruta recomendada del recorrido en cuatro pasos · propuesta principal y complemento · tres prioridades de cierre · notas y señales de atención · espacio de registro del asesor
+
+EI-01 Experiencia ideal
+Entregable al prospecto Club recomendado y la razón · combinación de entrenamiento en tres bloques · clases idóneas con su horario real en ese club · amenidades que corresponden al objetivo · alternativas de club con su diferencia señalada
+
+CAT-01 Catálogo comercial del día Clubes con estatus operativo, coordenadas, dirección, teléfono y correo · horarios de atención por día · amenidades · clases con día, hora de inicio y término · tarifas, descuentos y promociones vigentes
+
+BC-01 Base de conocimiento Catálogo de membresías con precios y términos · descripciones de clases · políticas de cancelación y congelamiento · información operativa por club. Actualización semanal mínima
+
+AP-01 Aviso de privacidad Versión simplificada desplegada antes de la primera pregunta, con enlace a la versión integral. Finalidades necesarias y de mercadotecnia presentadas por separado
+
+PL-01 Plantillas autorizadas de WhatsApp Mensajes aprobados por Meta para apertura de conversación, confirmación de visita y los dos recordatorios. Son obligatorias fuera de la ventana de servicio de 24 horas
+
+7Documentos relacionados
+
+Clave Documento
+
+SOP/SW/0102 Captación y calificación del prospecto por el sitio web
+
+SOP/SW/0103 Captación y calificación del prospecto en consola: club y teléfono
+
+SOP/SW/0201 La Experiencia Guiada de Sports World
+
+SOP/SW/0301 Contratación y alta de la membresía
+
+MKT/SW/01 Alta y baja de campañas: parámetros obligatorios en la pieza y carga de la ficha de campaña
+
+MED/SW/01 Mapa del funnel: definición operativa de cada etapa, fuente del dato y responsable del acceso
+
+SEG/SW/01 Protección de datos personales del sistema de captación
+
+CAT/SW/01 Régimen de sincronización del catálogo: corte diario de las 06:00 y sincronización manual
+
+8Diagrama de flujo
+
+Congruente con la numeración del apartado 9. Las decisiones no se numeran.
+
+Inicio
+
+1 · 2El prospecto escribe al número oficial. Se sella la atribución y se genera la llave de sesión
+
+Decisión¿El mensaje trae identificador de campaña? — Sí al 4 · No al 5
+
+4Carga la ficha de campaña: oferta, descuento, clase o programa, clubes participantes y vigencia
+
+5 · 6Registra entrada directa, o abre reconociendo la oferta. Responde de inmediato, sea cual sea el horario
+
+Decisión¿Qué solicita? — Información al 8 · Agendar o recomendación al 9
+
+9 · 10 · 11Ofrece las dos modalidades, despliega el aviso de privacidad y aplica el CEI-01
+
+12 · 13Registra el perfil, el consentimiento y la etapa E2
+
+Decisión¿Pregunta sin resolver o petición de hablar con una persona? — Sí en horario al 15 · Sí fuera de horario al 17 · No al 19
+
+15 · 16 · 17 · 18Escala con el contexto y el operador retoma, o registra el pendiente para el turno siguiente
+
+19 · 20Resuelve el club y selecciona la combinación y las clases idóneas
+
+Decisión¿Alguna clase idónea cae en los días y franjas declarados? — Sí al 24 · No al 23
+
+23Marca la incompatibilidad de horario como señal de atención en el brief. No bloquea ni filtra nada
+
+24 · 25Genera EI-01 y BA-01 y registra E3
+
+26 · 27 · 29Solicita el correo por escrito en el chat, envía la experiencia ideal y da los puntos destacados en no más de un minuto adicional
+
+Decisión¿Revisa opciones ahora o en la visita? — Otro club al 31 · Otras clases al 32 · En la visita al 34
+
+31 · 32 · 33Recalcula, reenvía el documento actualizado y vuelve a verificar la compatibilidad de horario
+
+Decisión¿Solicita agendar la visita? — Sí al 35 · No al 44
+
+35 · 36 · 37Reconfirma el club, ofrece fecha y hora, y solicita y valida los tres datos de contacto
+
+38 · 39Registra la solicitud de visita y escribe el prospecto en el CRM
+
+Decisión¿La escritura se confirma? — Sí al 41 · No al 45
+
+45 · 46Reintenta; agotados los reintentos, avisa al club para captura manual el mismo día
+
+41 · 42 · 43Registra E4, envía solicitud y BA-01 al club, confirma y programa los dos recordatorios
+
+47La gerencia recibe y verifica su capacidad de atención
+
+Decisión¿Puede atender en el horario solicitado? — Sí al 49 · No al 50
+
+49 · 50Designa asesor y registra el acuse, o propone dos fechas y registra el acuse
+
+51 · 53El asesor consulta el brief. Dirección Comercial verifica acuses y aperturas
+
+Fin
+
+9Procedimiento
+
+Paso Acción Responsable
+
+Entrada y atención inicial
+
+1 Envía el primer mensaje al número oficial de WhatsApp, sea por clic en un anuncio de Meta o de TikTok (punto de entrada A), sea escribiendo directamente al número (punto de entrada B). Prospecto
+
+2 Recibe el mensaje, sella la atribución de origen y genera la llave de sesión. La atribución viaja con el registro hasta la baja de la membresía y no se reconstruye después. Sistema
+
+3 ¿El mensaje llega con identificador de campaña?
+Sí — punto de entrada A. Continúa en el paso 4.
+
+No — punto de entrada B. Continúa en el paso 5. Sistema
+
+4 Carga la ficha de la campaña correspondiente a ese identificador y la pone a disposición del asistente antes de la primera respuesta: oferta anunciada tal como aparece en la pieza, descuento y su vigencia, clase o programa que promueve, clubes participantes, condiciones y exclusiones.
+Si no existe ficha vigente para ese identificador — el asistente opera con el catálogo del día, no improvisa una oferta, y el caso se reporta a Marketing el mismo día. Continúa en el paso 6. Sistema
+
+5 Registra la conversación como entrada directa al canal, sin campaña asociada. El asistente opera con el catálogo del día y la base de conocimiento general. Sistema
+
+6 Responde de inmediato, con independencia del horario, del día y del volumen. No hay cola de espera ni reparto entre operadores.
+Punto de entrada A: la apertura reconoce la oferta específica que el prospecto vio en el anuncio.
+
+Punto de entrada B: la apertura es general, sin oferta asociada.
+Asistente conversacional
+
+7 Identifica qué solicita el prospecto.
+Información general, o sobre la promoción anunciada — continúa en el paso 8.
+
+Agendar una visita en un club que ya eligió — continúa en el paso 9. No se agenda visita sin cuestionario.
+
+Una recomendación de club o de entrenamiento — continúa en el paso 9. Asistente conversacional
+
+8 Resuelve la duda:
+si la pregunta se refiere a la oferta anunciada, responde con la ficha de campaña, con su vigencia y sus condiciones, nunca con la oferta genérica del catálogo;
+
+en todo lo demás, con la base de conocimiento y el catálogo del día.
+
+A continuación ofrece el cuestionario.
+Si el prospecto acepta — continúa en el paso 9. Si no acepta — continúa en el paso 44. Asistente conversacional
+
+Aplicación del cuestionario
+
+9 Informa al prospecto que requiere un minuto de su tiempo y le ofrece dos modalidades:
+pregunta por pregunta, con las opciones de respuesta;
+
+cuestionario pre-llenado con las respuestas que pudieron inferirse por la campaña de origen o por lo que la propia persona declaró, para que únicamente las confirme.
+Asistente conversacional
+
+10 Despliega el aviso de privacidad antes de la primera pregunta y recaba el consentimiento, con las finalidades necesarias y las de mercadotecnia presentadas por separado.
+Si el prospecto no otorga el consentimiento — no se aplica el cuestionario. Continúa en el paso 44. Asistente conversacional
+
+11 Aplica el cuestionario íntegro del Anexo A de MPC/SW/01, en la modalidad elegida. Si alguna respuesta pre-llenada no se confirma, presenta las opciones normales de ese reactivo. Si el prospecto interrumpe y retoma, continúa desde el último reactivo sin responder y no reinicia. Asistente conversacional
+
+12 Registra el perfil del prospecto y la constancia del consentimiento con su alcance. Sistema
+
+13 Registra la etapa E2 · cuestionario iniciado al responderse la primera pregunta, no al enviarse la primera pantalla. Sistema
+
+14 ¿Surge una pregunta que el asistente no puede responder, o el prospecto pide expresamente hablar con una persona?
+Sí, y la conversación ocurre en horario de oficina — continúa en el paso 15.
+
+Sí, y ocurre fuera de horario — continúa en el paso 17.
+
+No — continúa en el paso 19. Asistente conversacional
+
+15 Escala la conversación a un operador de atención digital y le transfiere el contexto ya capturado, incluida la ficha de campaña cuando exista. Asistente conversacional
+
+16 Resuelve la pregunta y retoma la conversación en el punto exacto en que quedó, sin repetir nada de lo que el prospecto ya respondió. Continúa en el paso 19. Operador de atención digital
+
+17 Registra el punto no resuelto como pendiente del siguiente turno, con el contexto levantado, y continúa el procedimiento. Un pendiente no detiene el agendado ni deja al prospecto esperando. Continúa en el paso 19. Asistente conversacional
+
+18 Retoma el pendiente al inicio del turno siguiente y contacta al prospecto por el mismo canal, con plantilla autorizada si la ventana de servicio ya venció. Operador de atención digital
+
+Resolución del club y generación de la recomendación
+
+19 Consulta el catálogo del día y resuelve el club que satisface la experiencia del prospecto. La búsqueda parte de un radio de 10 kilómetros:
+si dos o más clubes la satisfacen, decide la distancia;
+
+si solo uno la satisface, se ofrece ese aunque no sea el más cercano;
+
+si ninguno la satisface, el radio se amplía hasta encontrarlo, se señala la distancia y se ofrecen hasta tres clubes cercanos como alternativa, cada uno con su diferencia indicada.
+
+En el punto de entrada A, cuando la campaña define clubes participantes, la recomendación los prioriza y advierte si el club resuelto no participa en la promoción. Sistema
+
+20 Selecciona la combinación de entrenamiento y las clases que corresponden al objetivo funcional principal y al nivel declarados, con el horario real de ese club. Sistema
+
+21 Compara el día y la franja de cada clase idónea contra los días y las franjas que el prospecto declaró en el cuestionario. Sistema
+
+22 ¿Al menos una de las clases idóneas se imparte en un día y una franja que el prospecto declaró?
+Sí — continúa en el paso 24. No — continúa en el paso 23. Sistema
+
+23 Incompatibilidad de horario. Marca en el brief del asesor una señal de atención en rojo con las clases idóneas para el objetivo del prospecto, los días y franjas en que se imparten en ese club, y los que la persona declaró.
+La experiencia ideal se construye y se entrega igual, con las clases idóneas y su horario real. No se filtra ni se sustituye nada.
+
+La incompatibilidad no bloquea el agendado. Su resolución corresponde a SOP/SW/0201 · La Experiencia Guiada de Sports World.
+
+Continúa en el paso 24. Sistema
+
+24 Genera la experiencia ideal del prospecto y el brief del asesor en la misma operación, no en una posterior. Sistema
+
+25 Registra la etapa E3 · cuestionario completado al quedar generada la experiencia ideal, no al responderse el último reactivo. Sistema
+
+Entrega de la recomendación al prospecto
+
+26 Solicita al prospecto su correo electrónico, escrito en el chat, para enviarle su experiencia ideal. Le explica que el documento completo va por correo porque no se puede leer bien en una conversación. Asistente conversacional
+
+27 Envía la experiencia ideal al correo proporcionado y deja constancia del envío en el registro del prospecto. Sistema
+
+28 Escribe el prospecto en el CRM como registro sin cita, con el perfil del cuestionario, la recomendación entregada, el club resuelto y el canal de origen, idempotente por llave de sesión (P-05). Cuenta en el funnel desde este momento y queda disponible para seguimiento del club recomendado.
+Si más adelante la persona agenda, se actualiza este mismo registro y pasa a visita agendada. No se crea uno nuevo. Sistema
+
+29 Entrega en el chat los puntos destacados del resultado, en no más de un minuto adicional de conversación: el club recomendado y en una línea por qué, la combinación de entrenamiento, las clases idóneas con su horario en ese club, y la amenidad que corresponde a su objetivo.
+Menciona que hay otros clubes cercanos, cuando los haya.
+
+Menciona que hay otras clases que también cubren su objetivo.
+
+Le ofrece revisar cualquiera de las dos cosas en ese momento o en la visita guiada.
+
+No enumera clubes ni clases en el chat. El detalle está en el documento que acaba de recibir. Asistente conversacional
+
+30 ¿El prospecto quiere revisar opciones ahora, o prefiere verlas en la visita?
+Quiere otro club ahora — continúa en el paso 31.
+
+Quiere otras clases ahora — continúa en el paso 32.
+
+Prefiere revisarlo en la visita, o no ajusta nada — continúa en el paso 34. Asistente conversacional
+
+31 Recalcula la combinación y las clases idóneas contra el catálogo del club elegido y honra la elección. Reenvía por correo la experiencia ideal actualizada y confirma el cambio en el chat en una línea. Continúa en el paso 21, para volver a verificar la compatibilidad de horario. Sistema
+
+32 Ofrece las otras clases idóneas para el objetivo del prospecto —las que pasaron los mismos filtros de objetivo, nivel y modalidad— nombrándolas con su horario. El prospecto elige las que prefiera. Asistente conversacional
+
+33 Recalcula la experiencia ideal con las clases elegidas, actualiza el brief y reenvía el documento por correo. Continúa en el paso 21. Sistema
+
+Agendado de la visita y escritura al CRM
+
+34 ¿El prospecto solicita agendar la visita guiada?
+Sí — continúa en el paso 35. No — continúa en el paso 44. Asistente conversacional
+
+35 Reconfirma con el prospecto el club en el que desea la visita. Asistente conversacional
+
+36 Ofrece fecha y hora dentro del horario de atención publicado de ese club, con un horizonte de catorce días, y registra la combinación elegida. Asistente conversacional
+
+37 Solicita el apellido y confirma el celular repitiéndolo. El correo ya se capturó en el paso 26 y el celular es el número desde el que la persona escribe, validado por el propio canal. Asistente conversacional
+
+38 Registra la fecha y hora elegidas como solicitud de visita. No verifica disponibilidad de asesor ni de sala, y no crea reserva alguna. Sistema
+
+39 Actualiza el registro del prospecto con la fecha y el horario solicitados, en la misma operación idempotente por llave de sesión, con canal de origen bes_whatsapp y el teléfono en formato internacional. Cuando existe identificador de campaña, el registro lo conserva, junto con el del anuncio. La escritura ocurre antes de confirmar al prospecto. Sistema
+
+40 ¿La escritura en el CRM se confirma?
+Sí — continúa en el paso 41. No — continúa en el paso 45. Sistema
+
+41 Registra la etapa E4 · visita agendada al confirmarse la escritura, no al confirmar el prospecto. Sistema
+
+42 Envía por correo al club la solicitud de visita y el brief del asesor, a la dirección registrada en el catálogo del día. Cuando el prospecto viene de campaña, el brief indica la oferta que vio. Sistema
+
+43 Informa al prospecto que su experiencia ideal se le envió por correo y que sus preferencias se comunicaron al asesor que lo atenderá, con el aviso expreso de que el club confirma y coordina la visita. Programa los dos recordatorios, 24 y 2 horas antes, con plantilla autorizada y desde el número oficial de la empresa. Pregunta si hay algo más en lo que pueda ayudar: de ser así continúa en el paso 8; en caso contrario cierra la conversación. Continúa en el paso 47. Asistente conversacional
+
+Registro sin cita y excepciones
+
+44 Registra al prospecto con la recomendación entregada, si la hubo, y una fecha acordada de siguiente contacto, nunca un compromiso indeterminado de contactar después. Continúa en Fin del procedimiento. Asistente conversacional
+
+45 Excepción. Conserva el registro en una cola cifrada de vigencia limitada y reintenta la escritura con espera incremental. Sistema
+
+46 Excepción. Agotados los reintentos, notifica al club por correo con los datos completos para captura manual el mismo día, y entrega al prospecto su confirmación con normalidad: la falla no se le traslada. Continúa en el paso 47. Sistema
+
+Entrega al club y seguimiento
+
+47 Recibe la solicitud de visita y el brief, y verifica su capacidad real de atención en el horario solicitado. Gerencia del club
+
+48 ¿El club puede atender la visita en el horario solicitado?
+Sí — continúa en el paso 49. No — continúa en el paso 50. Gerencia del club
+
+49 Designa al asesor responsable conforme al criterio de asignación que define Dirección Comercial, y registra el acuse en el CRM, sobre el registro del prospecto, con la confirmación de recepción, la confirmación de capacidad y el nombre del asesor designado. Plazo: 24 horas o antes de la visita, lo que ocurra primero. Continúa en el paso 51. Gerencia del club
+
+50 Contacta al prospecto, le propone dos alternativas concretas de fecha —nunca una invitación abierta a reagendar— y registra el acuse en el CRM con la reprogramación acordada y el asesor designado. Plazo: 24 horas o antes de la visita originalmente solicitada, lo que ocurra primero. Gerencia del club
+
+51 Consulta el brief del asesor antes de la visita. La apertura del documento queda registrada. Asesor designado
+
+52 Recibe los registros sin cita de su club en la lectura diaria y les da seguimiento con su experiencia ideal ya entregada como punto de partida. No es un lead frío: es alguien que dedicó un minuto a decir qué busca y recibió una recomendación. Asesor de club
+
+53 Verifica en la lectura semanal que cada solicitud cuente con acuse registrado, que el brief se haya abierto antes de la visita y que ninguna campaña activa opere sin ficha vigente. Dirección Comercial
+
+Fin del procedimiento
+
+Sobre los pasos 4 y 8 · Por qué la ficha de campaña es condición de operación
+Un prospecto que da clic en un anuncio de descuento y recibe como respuesta el precio de lista concluye
+una de dos cosas: que la promoción no era real, o que quien le contesta no sabe qué vende la empresa.
+Las dos cierran la conversación. La ficha existe para que la primera respuesta del asistente sostenga lo
+que la pieza prometió, con su vigencia y sus condiciones a la vista. Su carga previa a la salida de la
+pauta es responsabilidad de Marketing, y su ausencia se reporta el mismo día.
+
+Sobre el paso 49 · La regla que este procedimiento establece
+El correo al club entrega la información, pero nadie responde que la recibió: no hay integración con un
+sistema de reservas ni acuse automático. En ese punto el prospecto ya tiene una confirmación con día y
+hora, y del lado del club puede no haber nadie enterado. El caso concreto: una persona llega el sábado a
+las 11:00 a un club donde ese día hay un solo asesor con tres visitas encimadas. La cita existía en el
+sistema; nunca existió en la operación.
+El acuse cierra esa brecha. No agrega un paso de verificación: la gerencia
+marca el prospecto en el CRM y captura al asesor designado, sobre un registro que ya existe. El plazo es
+24 horas o antes de la visita, lo que ocurra primero, porque el calendario admite citas
+para el mismo día y un plazo fijo de 24 horas vencería después de que la visita ya ocurrió.
+
+Sin acuse, la etapa E4 sigue siendo correcta —la escritura se confirmó—, pero
+el resultado se pierde más adelante: la visita no se realiza y E5 la registra como inasistencia
+atribuida al prospecto, cuando la causa estuvo del lado del club.
+
+10Registros
+
+Registro Paso Dónde reside
+
+Atribución de origen 2 Base del funnel, en el servidor de Sports World. Distingue campaña de entrada directa y viaja con el registro hasta la baja
+
+Ficha de campaña consultada 4 Bitácora de atención digital, con el identificador de campaña y la versión de la ficha en uso
+
+Campaña sin ficha vigente 4 · 53 Reporte a Marketing el mismo día y revisión en la lectura semanal
+
+Constancia del consentimiento 10 · 12 Junto con el registro del prospecto, con su alcance
+
+Escalación y pendiente 15 · 17 Bitácora de atención digital, con motivo y marca de tiempo
+
+Brief del asesor 24 · 42 · 51 Enviado al club y conservado con el registro. La apertura queda registrada
+
+Registro de prospecto 39 CRM de Sports World, único sistema de registro permanente. El entorno de captación no conserva respaldo una vez transferido el dato
+
+Acuse del club 49 · 50 CRM, sobre el mismo registro del prospecto. Es lo que permite que el tablero calcule la cobertura de acuse sin un sistema adicional
+
+Verificación semanal 53 Tablero de Dirección Comercial. Presenta únicamente resultados agregados
+
+SOP/SW/0101 · Captación y calificación del prospecto por WhatsApp oficial · versión 1.0 · uso interno.
+
+Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.
+
+Procedimientos hermanos: SOP/SW/0102 (sitio web) y SOP/SW/0103 (consola: club y teléfono). Continúa en SOP/SW/0201 · La Experiencia Guiada de Sports World. El glosario único y el cuestionario íntegro están en MPC/SW/01, apartado 10 y Anexo A.

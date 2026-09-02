@@ -30,8 +30,8 @@ sería transcribirlas, que es justo lo que este método evita.
 
 | Cuaderno | Qué se carga | Cuándo | Para qué |
 |---|---|---|---|
-| **1 · Originales** | los 31 documentos de `original/` + las 7 páginas del Proceso Comercial + las 3 páginas del sitio + el código del cuestionario = **42 fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |
-| **2 · Corregidos** | los 31 documentos `-MOD` de `mod/` + las 7 del Proceso Comercial + las 3 del sitio + el código del cuestionario = **42 fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |
+| **1 · Originales** | los 31 documentos de `original/` + las 7 páginas del Proceso Comercial + las 2 páginas del sitio + el código del cuestionario = **41 fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |
+| **2 · Corregidos** | los 31 documentos `-MOD` de `mod/` + las 7 del Proceso Comercial + las 2 del sitio + el código del cuestionario = **41 fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |
 | **3 · Verificación por pares** | el original y su `-MOD` de cada documento **que haya cambiado**, más el resumen de `cambios.md` | al final | Compara par por par y dice si hubo errores o ediciones no autorizadas al hacer los cambios. |
 
 Las dos versiones **nunca van juntas en una misma página**. Cada una es una fuente independiente,
@@ -132,7 +132,7 @@ cuestionario, tal como las ve el prospecto.
 
 - Cuestionario dinámico · código — https://erictoled564.github.io/SW-Business-Development-System/codigo/cuestionario-inteligente.html
 
-## Páginas del sitio (3) · cuadernos 1 y 2
+## Páginas del sitio (2) · cuadernos 1 y 2
 
 Se cargan tal como están publicadas. Quedan fuera el visor, el redirector de la presentación
 y las dos páginas del demo: son armazón, su contenido lo pinta JavaScript y como fuente
@@ -141,4 +141,3 @@ entrarían vacías. El contenido del cuestionario del demo está especificado en
 
 - Licitación — https://erictoled564.github.io/SW-Business-Development-System/licitacion/index.html
 - Presentación · deck — https://erictoled564.github.io/SW-Business-Development-System/presentacion/deck.html
-- Demo · manual — https://erictoled564.github.io/SW-Business-Development-System/demo-manual/index.html

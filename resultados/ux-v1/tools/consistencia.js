@@ -665,7 +665,7 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
 
   // Las páginas del sitio con contenido propio también son fuentes: si una deja
   // de listarse, deja de auditarse.
-  const WEB = ["licitacion/index.html", "presentacion/deck.html", "demo-manual/index.html"];
+  const WEB = ["licitacion/index.html", "presentacion/deck.html"];
   for (const w of WEB) {
     if (!fs.existsSync(path.join(WEBAPP, w)))
       falla(`webapp/${w}`, 0, "página del sitio listada como fuente pero no existe");
@@ -751,6 +751,34 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
           falla(`verificacion/txt/${txtCodigo}`, 0, "no reproduce el código carácter por carácter (node tools/build-fuentes.js)");
       }
     }
+    // Las 10 páginas HTML también van como texto: NotebookLM no extrae el suyo
+    // cuando se cargan por URL. Se comprobó dos veces, y llegó a afirmar que AP-01
+    // y AU-01 no existían en ninguna fuente cuando el MPC los define.
+    const generadorTxt = fs.readFileSync(path.join(__dirname, "build-fuentes.js"), "utf8");
+    if (!/function textoDeHtml/.test(generadorTxt))
+      falla("tools/build-fuentes.js", 0, "falta el extractor de texto de las páginas HTML");
+    const PROC = path.join(WEBAPP, "proceso");
+    const paginas = [
+      ...fs.readdirSync(PROC).filter((f) => f.endsWith(".html") && f !== "dec-01.html").sort()
+        .map((f) => [path.join(PROC, f), "proceso-" + f.replace(/\.html$/, "") + ".txt"]),
+      ["licitacion/index.html", "sitio-licitacion-index.txt"],
+      ["presentacion/deck.html", "sitio-presentacion-deck.txt"],
+    ];
+    for (const [origen, salida] of paginas) {
+      const ruta = path.join(TXT, salida);
+      if (!fs.existsSync(ruta)) {
+        falla("verificacion/txt/" + salida, 0, "falta el texto de la página (node tools/build-fuentes.js)");
+        continue;
+      }
+      sobranTxt.delete(salida);
+      const t = fs.readFileSync(ruta, "utf8");
+      // Una página cuyo texto no llega a 500 caracteres es armazón: su contenido lo
+      // pinta JavaScript y como fuente entraría vacía. Fue el caso de demo-manual,
+      // 31 KB de HTML y 37 caracteres de texto.
+      if (t.length < 500)
+        falla("verificacion/txt/" + salida, 0, "sólo tiene " + t.length + " caracteres: la extracción no recuperó texto; esa página es armazón y no sirve como fuente");
+    }
+
     for (const suelto of sobranTxt)
       falla(`verificacion/txt/${suelto}`, 0, "texto sin archivo que lo respalde (node tools/build-fuentes.js)");
   }

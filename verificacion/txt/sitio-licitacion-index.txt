@@ -1,0 +1,400 @@
+Licitación · Equipo 1 (Web) · Sistema de ventas Sports World
+
+Licitación
+Sistema de ventas · Sports World México
+
+Equipo 1 — Web · Convocatoria a proveedores
+
+Construcción del sitio, la integración con el CRM, el panel sin código, la consola de captación y el tablero del funnel · Proyecto A · 8 semanas
+
+Brief del proyecto
+Postular (proveedor)
+Evaluar (convocante)
+
+Documento independiente · uso exclusivo de la licitación
+
+El encargo, en una frase
+
+Se busca al proveedor que asuma el Equipo 1 — Web: el frente que convierte la infraestructura de Sports World —49 clubes, sus amenidades y su oferta— en un sitio legible para el buscador y para el cliente, con captación de leads integrada al CRM y medida de punta a punta.
+
+Esta convocatoria es autocontenida: reúne todo lo que un proveedor necesita para presentar una propuesta sin acceder al depósito documental del cliente. No enlaza a los documentos internos de Sports World y no expone información contractual sensible; cita los documentos de referencia por nombre, sin vincularlos.
+
+El proyecto se construye con desarrollo asistido por IA bajo supervisión humana continua (§6). Por eso la experiencia demostrable con Claude Code y Codex es un requisito de admisión, no un diferenciador opcional.
+
+1 · El proyecto como un todo
+
+El sistema de ventas de Sports World se ejecuta como un solo sistema con cinco equipos, coordinados por un líder general que es el punto único de contacto con la dirección del cliente. Tres de los equipos pertenecen al Proyecto A (comprometido, 8 semanas); dos se activan al firmarse sus addenda.
+
+Equipo Frente Proyecto
+
+Equipo 1 — Web este encargo Sitio, experiencia ideal, middleware/CRM, motor de precios, CMS sin código, consola de captación, tablero del funnel, migración y cutover A · 8 semanas
+
+Equipo 2 — SEO y contenido Estrategia de palabras clave, contenido de las 148 páginas, datos estructurados, 49 fichas de Google Business A
+
+Equipo 3 — Contenido visual ~650 fotos tratadas, ~150 imágenes IA, 12 animaciones, 1 video; identidad visual A
+
+Equipo 4 — BES Agente de voz y texto en el canal web; base de conocimiento; recordatorios por WhatsApp A
+
+Equipo 5 — BDS WhatsApp Business API, consola de operadores, enrutamiento en tiempo real, medición del Canal 2 B · se activa con su Addendum
+
+Líder general
+Punto único de contacto con Sports World
+
+Equipo 1 — Web
+este encargo
+
+Equipo 2SEO y contenido
+
+Equipo 3Contenido visual
+
+Equipo 4BES
+
+Equipo 5BDS · futuro
+
+Sports World
+Sistemas · Marketing · Operación
+provee accesos, datos y aprobaciones
+
+Diagrama 1 · El Equipo 1 opera bajo el líder general y depende de accesos de Sports World. El gobierno no cambia al sumar equipos.
+
+El Equipo 1 es el frente ancla: buena parte de lo que construye —el cuestionario, el middleware/CRM, la escritura idempotente del lead y la consola interna— es reutilizado por los equipos 4 y 5. Un retraso del Equipo 1 propaga a los demás; por eso su factibilidad en ocho semanas es un criterio de evaluación central.
+
+2 · Responsabilidades del Equipo 1
+
+En la matriz de responsabilidad del proyecto, el Equipo 1 es ejecutor (R) de los siguientes entregables; el líder general rinde cuentas (A) y Sports World aprueba o provee accesos (C/R).
+
+R ejecuta
+A rinde cuentas
+C consultado
+I informado
+
+Entregable Líder gral. E1 Web E2 SEO E3 Visual E4 BES Sports World
+
+Plantillas y sistema de diseño A R C C I C (aprueba)
+
+148 páginas (build) A R R C I C (aprueba)
+
+Integración CRM vía middleware (datos, precios, geo) A R I I C R (API + datos)
+
+Panel sin código (CMS) y modelo de contenido A R C C I C (administra tras handover)
+
+Funnel, dashboard y consola interna de captación A R C I C C (accesos Google + CRM)
+
+Migración y cutover R/A R C I I C (accesos)
+
+3 · Entregables y criterios de aceptación
+
+Cada entregable se da por cumplido contra un criterio verificable, no contra una afirmación.
+
+Entregable Criterio de aceptación
+
+1. Sistema de diseño y plantillas Tokens de marca (color, tipografía, espaciado) aplicados por construcción; patrón pilar (home + club + hub) aprobado por Sports World.
+
+2. 148 páginas (SSR + ISR) Las 148 páginas publicadas y crawleables; 49/49 páginas de club renderizadas en servidor; 0 páginas sin H1.
+
+3. Flujo de experiencia ideal Cuestionario dinámico, resolver de club por geolocalización y ranker de clases operando de extremo a extremo; brief del asesor generado.
+
+4. Middleware de integración al CRM Lecturas del catálogo (clubes, clases, tarifas, horarios) con caché y corte diario 06:00; escritura idempotente del lead confirmada contra el CRM real, sin duplicados.
+
+5. Motor de precios Precios por club / ciudad / nacional, extraídos automáticamente del CRM (no se editan en el CMS).
+
+6. Panel sin código (CMS headless autoalojado) Edición de contenido, imágenes y coordenadas de club sin tocar código; personas usuarias de Sports World dadas de alta; probado por el cliente (handover con guía).
+
+7. Consola interna de captación Personal autorizado registra leads por la misma vía idempotente que el sitio; base sobre la que el BDS habilitará el rol de operador.
+
+8. Instrumentación y tablero del funnel Eventos E2–E4 registrándose en la base del funnel; tablero con los tres canales de entrada y las etapas de la espina; fuentes de Google (GA4, Search Console, fichas) conectadas para los cortes de tráfico. Conforme al Mapa del Funnel.
+
+9. Migración y cutover Mapa de 301 activo (136 enlaces); DNS apuntado; correo/MX intacto; monitoreo activo 48 h post-cutover.
+
+10. Controles de calidad automatizados (CI) Pruebas automatizadas, Core Web Vitals (LCP<2.5 s · INP<200 ms · CLS<0.1) y accesibilidad WCAG 2.2 AA (axe-core) verificados en cada cambio.
+
+Frontera de alcance del tablero. El Equipo 1 construye la instrumentación y el tablero completos. Las etapas de cierre —visita realizada, membresía comprada y membresía cancelada— dependen de datos que provee Sistemas desde el CRM (número de membresía, teléfono, cancelación). Su ausencia deja el tablero midiendo hasta visita agendada, sin bloquear el lanzamiento. La propuesta debe entender esta frontera, no resolverla.
+
+4 · Cronograma de ocho semanas
+
+Los plazos corren desde la entrega del 100% de los requerimientos de arranque a cargo de Sports World. Cada semana cierra con un criterio de salida; si no se cumple, no se avanza. El proveedor debe mapear su propio plan a esta rejilla.
+
+S1 · CimientosProyecto, framework, tokens, plantillas base, CMS instalado, CI; esquema de eventos del funnel definido.
+
+S2 · PilaresHome + 1 club + 1 hub como patrón; modelo de contenido del CMS. 🚦 Aprobación 1.
+
+S3–4 · EscalarReplicar a 49 clubes y hubs; integrar API del CRM; instrumentar E2–E4; edición sin código operativa. 🚦 Aprobación 2 (50%).
+
+S3–4Lead-capture de extremo a extremo contra el CRM real (sitio y BES).
+
+S5–6 · IntegrarPáginas restantes; flujo de experiencia completo; construir el tablero y conectar fuentes de Google; rendimiento y accesibilidad.
+
+S5–6Tablero mostrando los tres canales y E2–E4 con datos de staging.
+
+S7 · CongelarPase de calidad; plan de 301 y DNS; prueba de carga; verificar tablero; ensayar CMS con Sports World. 🚦 Aprobación 3.
+
+S8 · LanzarCutover; tablero en vivo; handover del CMS; monitoreo 48 h. 🚦 Aprobación 4.
+
+Las cuatro compuertas de aprobación son obligaciones del cliente con ventana de respuesta pactada (48 h hábiles; mismo día para el lanzamiento). Un atraso del cliente extiende el plazo día por día.
+
+5 · Interacciones con los otros equipos
+
+El Equipo 1 no trabaja aislado. Esta es la lista exhaustiva de lo que recibe de cada frente y lo que entrega a cada frente. La propuesta debe demostrar que el proveedor entiende estas dependencias.
+
+Equipo 1
+Web
+
+SW SistemasCRM · servidor · datos de cierre
+SW MarketingGA4 · GSC · Google Business
+Equipo 4 — BESagente del canal web
+Equipo 5 — BDSfuturo · reutiliza lo de E1
+Equipo 3 — Visualimágenes · animaciones
+Equipo 2 — SEOkeywords · schema · 301
+
+recibe
+entrega
+
+Diagrama 2 · Verde = lo que el Equipo 1 recibe. Rojo = lo que entrega. El detalle, abajo.
+
+5.1 · Lo que el Equipo 1 recibe
+
+De Recibe Sin ello…
+
+SW Sistemas API estándar del CRM y credenciales productivas; catálogo de datos (clubes, coordenadas, amenidades, clases, horarios, tarifas, promociones); datos de cierre E5/E6/E7 (número de membresía, teléfono, cancelación); el servidor de hospedaje; el número de WhatsApp Business para recordatorios. No hay integración, ni lead-capture, ni mitad baja del funnel.
+
+SW Marketing Contenedor de Tag Manager; accesos a GA4 (Data API), Search Console y las 49 fichas de Google Business. El tablero no muestra tráfico ni sus cortes por origen.
+
+SW Operación Lista de personal autorizado, plantilla de operadores y horarios. La consola interna no opera.
+
+Equipo 2 — SEO Estructura de URLs y keywords por página; requisitos de datos estructurados (schema JSON-LD); mapa de 301 (136 enlaces); metadatos por página. Las páginas se construyen sin la estructura que las hace posicionables.
+
+Equipo 3 — Visual ~650 fotos tratadas y ~150 imágenes IA en AVIF/WebP responsivos, 12 animaciones y 1 video; el estilo visual contra la marca. Los layouts quedan sin su contenido visual.
+
+Equipo 4 — BES Requisitos del agente en el canal web y de su base de conocimiento; el contrato de eventos que BES necesita para escribir leads por la misma vía. BES no puede integrarse al sitio ni compartir la lógica de captación.
+
+Líder general Plan aprobado, decisiones de las compuertas de aprobación, control de cambios. —
+
+5.2 · Lo que el Equipo 1 entrega
+
+A Entrega
+
+Equipo 2 — SEO Páginas SSR crawleables con el schema renderizado correctamente; ISR operando; enlaces de vista previa para revisar cada cambio.
+
+Equipo 3 — Visual Layouts con sus slots de imagen y las especificaciones de tamaños y relaciones de aspecto; el pipeline que sirve AVIF/WebP responsivos.
+
+Equipo 4 — BES La misma lógica de club/clase/lead (middleware) y la escritura idempotente al CRM; el sitio donde BES se integra como canal web.
+
+Equipo 5 — BDS (futuro) El cuestionario y la experiencia ideal, el middleware/CRM, la escritura idempotente y la consola interna con rol de operador; la base del tablero para el Canal 2. El BDS no reescribe el motor: integra sobre lo de E1.
+
+Sports World El sitio, el panel sin código (CMS), el tablero del funnel y la migración/cutover; el handover con guía de operación.
+
+Líder general Evidencia de avance y los KPIs técnicos comprometidos.
+
+Visitantesitio · WhatsApp · consola
+Cuestionarioexperiencia ideal (E1)
+Middlewareidempotente (E1)
+CRMSistemas
+Base del funnel (E1)en servidor de SW
+Tablero del funnel (E1)resultados agregados
+
+eventos E2 · E3
+evento E4
+
+Diagrama 3 · La captación y su medición son responsabilidad de E1; el dato reside en el servidor de Sports World y el tablero solo muestra agregados.
+
+6 · Método obligatorio: desarrollo asistido por IA
+
+El cronograma comprimido de ocho semanas se sostiene en un método específico, y el proveedor debe operarlo. No es "que la IA escriba el sitio sin supervisión": un ingeniero senior define cada objetivo, los agentes ejecutan el grueso y un responsable humano aprueba cada resultado antes de producción.
+
+Claude Code — implementa
+Escribe y modifica el código, ejecuta pruebas y corrige fallos, en el propio entorno del proyecto bajo control del ingeniero.
+
+Codex — revisa
+Segundo agente, independiente, que revisa plan e implementación en busca de vacíos y errores que quien implementa podría pasar por alto.
+
+1 · Investigary planear · humano aprueba
+2 · ImplementarClaude Code
+3 · RevisarCodex · independiente
+4 · Verificarcon evidencia, no afirmación
+5 · Publicartras aprobación humana
+
+Diagrama 4 · Cada pieza de trabajo recorre el mismo ciclo. La supervisión es más estricta en todo lo que toca datos de usuario, captura de leads o contenido de salud.
+
+Por eso, la propuesta debe demostrar experiencia real con ambos agentes: proyectos concretos, el rol que cada agente cumplió y cómo el equipo aplica este ciclo. Es requisito de admisión (§8).
+
+7 · Stack y restricciones técnicas
+
+Next.js 16 (App Router) con SSR + ISR — el render en servidor es el requisito técnico más importante para el posicionamiento.
+
+React 19 con React Compiler; TypeScript en modo estricto; Tailwind CSS v4 sobre tokens de marca.
+
+Node.js 20.9+ como runtime; el sitio corre en el servidor que provee Sports World.
+
+CMS headless autoalojado (p. ej. Payload o Strapi) junto al sitio, con panel de edición sin código.
+
+Capa de middleware a cargo del proveedor que consume el API HTTP RESTful estándar del CRM: idempotencia, caché, reintentos, normalización, búsqueda por amenidad y geolocalización, resolución de precios.
+
+Seguridad de integración: verificación de firma (HMAC en webhooks), HTTPS con HSTS, rotación de secretos; minimización y no retención de datos personales (LFPDPPP).
+
+Propiedad: todo el código, el contenido y los activos quedan en propiedad de Sports World, operando en su propia infraestructura.
+
+KPIs técnicos que el Equipo 1 sostiene
+
+KPI Línea base Meta Verificación
+
+Páginas de club crawleables (SSR) 0 de 49 49 de 49 Google Search Console
+
+Enlaces rotos 136 0 Semrush Site Audit
+
+Schema JSON-LD por club 0 49 Rich Results Test
+
+Páginas sin H1 11 0 Semrush
+
+Core Web Vitals — LCP<2.5 s · INP<200 ms · CLS<0.1 Medición en cada cambio
+
+Accesibilidad — WCAG 2.2 AA axe-core
+
+8 · Qué debe contener la propuesta
+
+Los rubros marcados obligatorio son requisitos de admisión: si falta cualquiera, la propuesta queda descalificada, sin importar su puntaje. Los marcados recomendado suman en la evaluación.
+
+Rubro Qué se espera Tipo
+
+Portafolio de diseño UX Casos reales con el proceso, no solo pantallas: problema, decisiones, resultado. Preferible en fitness/retail o productos de conversión. obligatorio
+
+Propuesta técnica Arquitectura, stack, integración CRM/middleware, plan de migración, CMS, rendimiento, SEO técnico y accesibilidad. obligatorio
+
+Experiencia con Claude Code y Codex Proyectos concretos, rol de cada agente, cómo aplican el ciclo de cinco pasos y la supervisión humana. obligatorio
+
+Equipo propuesto Roles, seniority, CVs, disponibilidad y zona horaria; quién es el ingeniero senior que define objetivos y aprueba. obligatorio
+
+Cronograma propio Mapeado a las ocho semanas, con criterios de salida por semana. recomendado
+
+Estructura de precio Modelo de contratación y desglose; moneda. recomendado
+
+Plan de QA y CI Pruebas, Core Web Vitals y accesibilidad automatizadas en cada cambio. recomendado
+
+Accesibilidad y SEO técnico Enfoque WCAG 2.2 AA y coordinación con el Equipo 2. recomendado
+
+Seguridad y datos personales Minimización, no retención, LFPDPPP; manejo de credenciales. recomendado
+
+Migración y cutover 301 de 136 enlaces, DNS, resguardo de correo/MX, rollback. recomendado
+
+Entendimiento de las interacciones Cómo coordinará lo que recibe y entrega a los demás equipos (§5). recomendado
+
+Referencias y confidencialidad Referencias verificables; disposición a NDA y a la cesión de propiedad al cliente. recomendado
+
+Cómo se evalúa
+
+Sobre las propuestas admitidas (que cumplen los cuatro obligatorios) se aplica esta ponderación:
+
+Criterio Peso
+
+Propuesta técnica (arquitectura, integración, migración) 25%
+
+Experiencia con Claude Code y Codex 20%
+
+Portafolio de diseño UX 20%
+
+Equipo (seniority, roles cubiertos, disponibilidad) 15%
+
+Cronograma y factibilidad en 8 semanas 10%
+
+Precio 10%
+
+Para postular, ve a la pestaña Postular (proveedor). Tu propuesta se empaqueta en tu propio navegador y se descarga como un archivo firmado que envías al convocante; nunca se comparte con otros proveedores. La comparación y la propuesta de ganador ocurren en la pestaña Evaluar, de uso exclusivo del convocante.
+
+Proveedor · envío de propuesta
+
+Postular al Equipo 1
+
+Completa los campos y adjunta tus documentos. Al terminar, el sistema empaqueta tu propuesta en un archivo firmado que descargas y envías al convocante.
+
+Aislamiento por diseño. Tu propuesta se arma solo en este navegador. No se sube a ningún servidor compartido ni es visible para otros proveedores: cada quien trabaja en su propia sesión, y únicamente el convocante reúne los archivos para compararlos. Para un portal alojado con inicio de sesión y almacenamiento central se requiere un backend (ver nota al pie).
+
+Identificación del proveedor
+
+Razón social / nombre *
+
+Sitio o portafolio (URL)
+
+Contacto — nombre *
+
+Contacto — correo *
+
+Ubicación del equipo
+
+Zona horaria
+
+Rubros obligatorios — marca lo que incluyes y adjunta
+Portafolio de diseño UX obligatorio
+
+Propuesta técnica obligatorio
+
+Evidencia de experiencia con Claude Code y Codex obligatorio
+
+Equipo propuesto con roles y CVs obligatorio
+
+Experiencia con los agentes de IA
+
+Meses de experiencia con Claude Code
+
+Meses de experiencia con Codex
+
+Proyectos entregados con estos agentes
+
+Ingeniero senior responsable (nombre)
+
+Cómo aplican el ciclo de cinco pasos (implementar con Claude Code, revisar con Codex, verificar con evidencia)
+
+Equipo y factibilidad
+
+Tamaño del equipo (personas)
+
+De ellas, perfiles senior
+
+Incluyo cronograma propio mapeado a las 8 semanas recomendado
+
+Incluyo plan de migración y cutover (301, DNS, MX) recomendado
+
+Incluyo plan de QA y CI (pruebas, CWV, accesibilidad) recomendado
+
+Incluyo enfoque de seguridad y datos personales (LFPDPPP) recomendado
+
+Incluyo mi entendimiento de las interacciones con los otros equipos recomendado
+
+Incluyo referencias verificables y disposición a NDA recomendado
+
+Precio
+
+Precio total propuesto
+
+Moneda / modelo
+
+Adjuntos — PDF, imágenes o ZIP; se incrustan en el paquete
+Arrastra aquí tus archivos, o selecciónalos.Sugerido: portafolio UX, propuesta técnica, CVs del equipo. Límite práctico ~8 MB en total.
+
+Empaquetar y descargar propuesta
+
+Convocante · comparación y ganador
+
+Evaluar propuestas
+
+Carga los archivos de propuesta recibidos. El sistema valida los obligatorios, califica cada propuesta contra la rúbrica y propone un ganador. Ninguna propuesta ve a las demás: esta herramienta la usa solo el convocante.
+
+Acceso restringido. Introduce el código del convocante para habilitar la evaluación.
+
+Entrar
+
+Código de demostración: SW-E1-2026. En producción, este control lo hace el backend.
+
+Arrastra aquí los archivos .json de propuesta, o selecciónalos.
+
+Ajuste cualitativo
+
+Los datos declarados (experiencia, equipo, precio) se puntúan solos. La calidad del portafolio y la profundidad técnica las califica el convocante, de 0 a 100, tras revisar los adjuntos.
+
+Comparar y proponer ganador
+
+Resultado
+
+Ver desglose por criterio
+
+Nota de arquitectura. Este portal es autocontenido y funciona sin backend: el aislamiento entre proveedores es real porque cada propuesta se arma en el navegador de quien postula y solo el convocante reúne los archivos. Para un portal alojado con inicio de sesión, almacenamiento central de propuestas y control de acceso por servidor, se requiere un backend (autenticación, almacenamiento cifrado y una API de evaluación); el modelo de datos y la rúbrica de aquí se trasladan sin cambios.
+
+Documento de licitación · independiente del depósito documental de Sports World · no destinado a indexación.
