@@ -33,6 +33,7 @@ const DOCS_MOD = path.join(UX, "docs-mod");
 const ORIGINAL = path.join(WEBAPP, "original");
 const MOD = path.join(WEBAPP, "mod");
 const PROCESO = path.join(WEBAPP, "proceso");
+const PROCESO_MOD = path.join(UX, "proceso-mod");
 const RAIZ = path.join(UX, "..", "..");
 const VERIFICACION = path.join(RAIZ, "verificacion");
 const TXT = path.join(VERIFICACION, "txt");
@@ -278,13 +279,41 @@ for (const archivo of archivos) {
 // NotebookLM no extrae el texto de estas páginas cuando se cargan por URL: se
 // comprobó dos veces, y llegó a afirmar que AP-01 y AU-01 no existían en ninguna
 // fuente cuando el MPC los define. Se cargan como texto, igual que los documentos.
-const paginasHtml = [
-  ...fs.readdirSync(PROCESO).filter((f) => f.endsWith(".html") && !PROCESO_INTERNO.has(f)).sort()
-    .map((f) => [path.join(PROCESO, f), `proceso-${f.replace(/\.html$/, "")}.txt`]),
-  ...WEB.map(([rel]) => [path.join(WEBAPP, rel), `sitio-${rel.replace(/\//g, "-").replace(/\.html$/, "")}.txt`]),
-];
-for (const [origen, salida] of paginasHtml)
-  fs.writeFileSync(path.join(TXT, salida), textoDeHtml(fs.readFileSync(origen, "utf8")));
+// Las páginas del Proceso Comercial son documentos como los demás: tienen versión
+// original —reproducida del historial, no del disco— y versión -MOD donde se
+// trabajan las correcciones. Once de los 88 hallazgos viven en ellas.
+fs.mkdirSync(PROCESO_MOD, { recursive: true });
+for (const f of fs.readdirSync(PROCESO).filter((x) => x.endsWith(".html") && !PROCESO_INTERNO.has(x)).sort()) {
+  const id = f.replace(/\.html$/, "");
+  let original;
+  try {
+    original = execSync(`git show ${BASE}:resultados/ux-v1/webapp/proceso/${f}`, {
+      encoding: "utf8", cwd: RAIZ, stdio: ["ignore", "pipe", "pipe"], maxBuffer: 32 * 1024 * 1024,
+    });
+  } catch {
+    original = fs.readFileSync(path.join(PROCESO, f), "utf8");
+  }
+  const rutaMod = path.join(PROCESO_MOD, `${id}-MOD.html`);
+  if (!fs.existsSync(rutaMod)) fs.writeFileSync(rutaMod, original);
+
+  const textoOriginal = textoDeHtml(original);
+  const textoMod = textoDeHtml(fs.readFileSync(rutaMod, "utf8"));
+  fs.writeFileSync(path.join(TXT, `proceso-${id}.txt`), textoOriginal);
+  fs.writeFileSync(path.join(TXT, `proceso-${id}-MOD.txt`), textoMod);
+  // El registro de cambios se calcula sobre el archivo CRUDO, no sobre el texto
+  // extraído: una edición al marcado que no cambie el texto visible seguiría
+  // siendo una edición, y R24 tiene que verla.
+  registro.push({
+    id: `proceso-${id}`,
+    archivo: `${id}.html`,
+    cambios: diferencia(original, fs.readFileSync(rutaMod, "utf8")),
+  });
+}
+
+for (const [rel] of WEB) {
+  const salida = `sitio-${rel.replace(/\//g, "-").replace(/\.html$/, "")}.txt`;
+  fs.writeFileSync(path.join(TXT, salida), textoDeHtml(fs.readFileSync(path.join(WEBAPP, rel), "utf8")));
+}
 
 /* ─────────── Las dos listas que quedan en verificacion/ ─────────── */
 

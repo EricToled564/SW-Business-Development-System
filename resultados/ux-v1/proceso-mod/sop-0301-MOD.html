@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contratación y alta · SOP/SW/0301 · Sports World</title>
+  <meta name="description" content="Procedimiento normalizado de contratación y alta de la membresía, y captura del dato del funnel por asesor, club, plaza y nacional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+  :root{
+    --paper:#eff0ee; --surface:#ffffff; --s2:#f5f6f5;
+    --ink:#12171a; --soft:#3f484f; --faint:#79838a;
+    --line:#cfd4d3; --hair:#e2e5e4;
+    --a:#14456b; --a-bg:#dbe7f1; --a-line:#a4c2db;
+    --w:#75460f; --w-bg:#f8ecd9; --w-line:#dcc296;
+    --r:#862d2d; --r-bg:#f8e5e3; --r-line:#dbb0ac;
+    --g:#245c42; --g-bg:#dcece4;
+    --p:#5a3576; --p-bg:#ece2f4; --p-line:#c5adda;
+    --onA:#ffffff;
+    --sh:0 1px 2px rgba(12,18,22,.05),0 10px 24px -18px rgba(12,18,22,.22);
+  }
+  @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --paper:#0b0e10; --surface:#14181b; --s2:#191e21;
+    --ink:#e6eaea; --soft:#a6afb5; --faint:#737c82;
+    --line:#282f33; --hair:#1f2528;
+    --a:#7cb8e3; --a-bg:#112637; --a-line:#284761;
+    --w:#dba861; --w-bg:#2b2113; --w-line:#4a3a1e;
+    --r:#e28c87; --r-bg:#321f1e; --r-line:#4d2c2a;
+    --g:#78c3a1; --g-bg:#12281f;
+    --p:#bfa0da; --p-bg:#241a30; --p-line:#42305a;
+    --onA:#07202e;
+    --sh:0 1px 2px rgba(0,0,0,.35),0 10px 24px -18px rgba(0,0,0,.65);
+  }}
+  :root[data-theme="dark"]{
+    --paper:#0b0e10; --surface:#14181b; --s2:#191e21;
+    --ink:#e6eaea; --soft:#a6afb5; --faint:#737c82;
+    --line:#282f33; --hair:#1f2528;
+    --a:#7cb8e3; --a-bg:#112637; --a-line:#284761;
+    --w:#dba861; --w-bg:#2b2113; --w-line:#4a3a1e;
+    --r:#e28c87; --r-bg:#321f1e; --r-line:#4d2c2a;
+    --g:#78c3a1; --g-bg:#12281f;
+    --p:#bfa0da; --p-bg:#241a30; --p-line:#42305a;
+    --onA:#07202e;
+    --sh:0 1px 2px rgba(0,0,0,.35),0 10px 24px -18px rgba(0,0,0,.65);
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.6;
+    -webkit-font-smoothing:antialiased}
+  ::selection{background:var(--a-bg)}
+  .wrap{max-width:900px;margin:0 auto;padding:clamp(18px,4vw,44px) clamp(13px,4vw,26px) 96px}
+  h1,h2{font-family:"Spectral",Georgia,serif;margin:0;color:var(--ink);text-wrap:balance}
+  p{margin:10px 0 0}
+  strong{color:var(--ink);font-weight:600}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  .fine{font-size:11.5px;color:var(--faint);line-height:1.45}
+
+  .hdr{background:var(--surface);border:1px solid var(--line);border-radius:3px;box-shadow:var(--sh);overflow:hidden}
+  .hdr .bar{background:var(--a);color:var(--onA);padding:8px 16px;
+    font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.13em;
+    text-transform:uppercase;font-weight:700;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+  .hdr .ttl{padding:16px 18px;border-bottom:1px solid var(--line)}
+  .hdr .ttl .lb{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);font-weight:700}
+  .hdr .ttl h1{font-size:clamp(19px,2.9vw,27px);font-weight:600;margin-top:5px;line-height:1.18}
+  .hdr .ttl .ch{margin-top:7px;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--a);font-weight:600;letter-spacing:.04em}
+  .meta{display:grid;grid-template-columns:repeat(3,1fr)}
+  @media(max-width:640px){.meta{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:400px){.meta{grid-template-columns:1fr}}
+  .meta > div{padding:10px 16px;border-right:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  .meta .k{font-family:"JetBrains Mono",monospace;font-size:8.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);font-weight:700}
+  .meta .v{font-size:12.8px;color:var(--ink);margin-top:3px;line-height:1.4}
+
+  h2.s{font-size:16.5px;font-weight:600;margin-top:40px;padding-bottom:8px;
+    border-bottom:1.5px solid var(--ink);display:flex;align-items:baseline;gap:11px}
+  h2.s .n{font-family:"JetBrains Mono",monospace;font-size:.72em;color:var(--a);font-weight:700}
+  h3.ss{font-size:11.5px;font-weight:700;margin:26px 0 0;font-family:"Inter",sans-serif;
+    text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+  p.intro{color:var(--soft);max-width:74ch}
+  ul.pl{margin:11px 0 0;padding-left:19px;color:var(--soft);font-size:14px;line-height:1.6}
+  ul.pl li{margin-bottom:7px}
+  ul.pl li b{color:var(--ink);font-weight:600}
+
+  .tw{overflow-x:auto;margin-top:12px;border:1px solid var(--hair);border-radius:3px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:12.7px;min-width:600px}
+  th{background:var(--s2);text-align:left;padding:8px 12px;font-weight:700;font-size:9.5px;
+    text-transform:uppercase;letter-spacing:.055em;color:var(--faint);
+    border-bottom:1px solid var(--line);vertical-align:bottom}
+  td{padding:9px 12px;border-bottom:1px solid var(--hair);color:var(--soft);vertical-align:top;line-height:1.5}
+  tr:last-child td{border-bottom:none}
+  td strong{color:var(--ink);font-weight:600}
+  td.c{font-family:"JetBrains Mono",monospace;color:var(--a);font-weight:700;white-space:nowrap;font-size:11.5px}
+  td.d{font-family:"JetBrains Mono",monospace;color:var(--soft);font-size:11px;white-space:nowrap}
+  tbody tr:hover{background:var(--s2)}
+
+  /* dos puntos de entrada */
+  .pe{margin-top:13px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:660px){.pe{grid-template-columns:1fr}}
+  .pe > div{background:var(--surface);border:1px solid var(--hair);border-radius:3px;padding:15px 17px}
+  .pe > div.a1{border-top:2.5px solid var(--p)}
+  .pe > div.a2{border-top:2.5px solid var(--a)}
+  .pe .cd{font-family:"JetBrains Mono",monospace;font-size:9.5px;font-weight:700;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--p)}
+  .pe .a2 .cd{color:var(--a)}
+  .pe h4{margin:4px 0 0;font-family:"Spectral",Georgia,serif;font-size:16px;font-weight:600;color:var(--ink);line-height:1.25}
+  .pe ul{margin:10px 0 0;padding-left:16px;font-size:12.7px;color:var(--soft);line-height:1.55}
+  .pe ul li{margin-bottom:7px} .pe ul li b{color:var(--ink);font-weight:600}
+
+  .proc{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+  table.pr{border-collapse:collapse;width:100%;font-size:13px;min-width:640px}
+  table.pr th:nth-child(1){width:44px;text-align:center}
+  table.pr th:nth-child(3){width:172px}
+  table.pr td{padding:11px 13px;border-bottom:1px solid var(--hair)}
+  table.pr td.st{font-family:"JetBrains Mono",monospace;font-weight:700;color:var(--a);
+    text-align:center;font-size:12px;white-space:nowrap;background:var(--s2)}
+  table.pr td.rp{color:var(--ink);font-size:12.3px;font-weight:500;line-height:1.45}
+  table.pr td.ac{line-height:1.55}
+  table.pr td.ac ul{margin:7px 0 0;padding-left:17px}
+  table.pr td.ac li{margin-bottom:4px}
+  .br{display:block;margin-top:7px;padding-left:11px;border-left:2px solid var(--w-line);
+    font-size:12.3px;line-height:1.65}
+  .br b{font-family:"JetBrains Mono",monospace;color:var(--w);font-weight:700}
+  tr.q td.ac,tr.q td.st,tr.q td.rp{background:var(--w-bg)}
+  tr.q td.st{color:var(--w)}
+  tr.q td.ac .qq{font-weight:700;color:var(--w);display:block}
+  tr.x td.ac,tr.x td.st,tr.x td.rp{background:var(--r-bg)}
+  tr.x td.st{color:var(--r)}
+  tr.cm td.ac,tr.cm td.st,tr.cm td.rp{background:var(--p-bg)}
+  tr.cm td.st{color:var(--p)}
+  tr.hito td{background:var(--a-bg);color:var(--a);font-family:"JetBrains Mono",monospace;
+    font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;text-align:center;
+    padding:8px 12px;border-bottom:1px solid var(--a-line)}
+
+  .flow{margin-top:12px;background:var(--surface);border:1px solid var(--hair);border-radius:3px;
+    padding:18px 16px;overflow-x:auto}
+  .fl{min-width:540px;display:flex;flex-direction:column;align-items:center}
+  .bx{width:100%;max-width:520px;border-radius:3px;padding:9px 13px;font-size:12px;line-height:1.4;
+    background:var(--s2);border:1px solid var(--line);color:var(--soft);text-align:left}
+  .bx .i{font-family:"JetBrains Mono",monospace;font-size:9.5px;font-weight:700;color:var(--a);margin-right:7px}
+  .bx.t{background:var(--a-bg);border-color:var(--a-line);color:var(--a);text-align:center;
+    font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.11em;
+    text-transform:uppercase;max-width:200px}
+  .bx.dq{background:var(--w-bg);border-color:var(--w-line);color:var(--w);font-weight:600}
+  .bx.dq .i{color:var(--w)}
+  .bx.ex{background:var(--r-bg);border-color:var(--r-line);color:var(--r)}
+  .bx.ex .i{color:var(--r)}
+  .bx.cm{background:var(--p-bg);border-color:var(--p-line);color:var(--p)}
+  .bx.cm .i{color:var(--p)}
+  .ar{width:1px;height:13px;background:var(--line);position:relative}
+  .ar::after{content:"";position:absolute;bottom:0;left:-3px;border-left:3.5px solid transparent;
+    border-right:3.5px solid transparent;border-top:5px solid var(--line)}
+
+  /* anexo cuestionario */
+  .cu{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+  table.cq{border-collapse:collapse;width:100%;font-size:12.7px;min-width:700px}
+  table.cq th:nth-child(1){width:38px;text-align:center}
+  table.cq th:nth-child(4){width:96px}
+  table.cq td.qn{font-family:"JetBrains Mono",monospace;font-weight:700;color:var(--a);
+    text-align:center;font-size:11.5px;background:var(--s2)}
+  table.cq td.qt{color:var(--ink);font-weight:600;font-size:12.8px;line-height:1.4}
+  table.cq td.qo{line-height:1.55}
+  table.cq td.qo ol{margin:5px 0 0;padding-left:18px}
+  table.cq td.qo li{margin-bottom:2px}
+  table.cq td.qy{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--faint);line-height:1.5}
+  tr.cond td.qn{color:var(--w);background:var(--w-bg)}
+  tr.cond td.qt,tr.cond td.qo,tr.cond td.qy{background:var(--w-bg)}
+  .secq{background:var(--a-bg);color:var(--a);font-family:"JetBrains Mono",monospace;
+    font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+    padding:7px 13px;border-bottom:1px solid var(--a-line)}
+
+  .nt{margin-top:14px;padding:13px 17px;border-radius:3px;background:var(--surface);
+    border:1px solid var(--hair);border-left:3px solid var(--a);font-size:13.2px;color:var(--soft)}
+  .nt.w{border-left-color:var(--w);background:var(--w-bg)}
+  .nt.g{border-left-color:var(--g);background:var(--g-bg)}
+  .nt.p{border-left-color:var(--p);background:var(--p-bg)}
+  .nt .l{display:block;font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.07em;
+    text-transform:uppercase;font-weight:700;margin-bottom:6px;color:var(--a)}
+  .nt.w .l{color:var(--w)} .nt.g .l{color:var(--g)} .nt.p .l{color:var(--p)}
+
+  .ft{margin-top:44px;padding-top:15px;border-top:1px solid var(--line);font-size:11.5px;color:var(--faint);line-height:1.6}
+  .ft strong{color:var(--soft)}
+
+  @media print{
+    body{background:#fff}
+    .wrap{max-width:none;padding:0}
+    .tw,.proc,.flow,.cu{overflow:visible;break-inside:auto}
+    table{min-width:0}
+    tr{break-inside:avoid}
+    h2.s{break-after:avoid}
+  }
+  html{scroll-behavior:smooth}
+  mark.sw-hit{background:#ffe08a;color:inherit;padding:0 1px;border-radius:2px}
+  mark.sw-hit.on{background:#f59e0b;color:#fff}
+  tr.sw-dim{opacity:.22}
+  a.sw-x{color:var(--a);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+  .sw-flash{animation:swf 1.4s ease-out}
+  @keyframes swf{0%{background:var(--w-bg)}100%{background:transparent}}
+</style>
+<style>
+  tr.pd td.ac,tr.pd td.st,tr.pd td.rp{background:var(--s2);border-top:1px dashed var(--line);border-bottom:1px dashed var(--line)}
+  tr.pd td.st{color:var(--faint)}
+  tr.pd td.ac .pdl{display:inline-block;font-family:"JetBrains Mono",monospace;font-size:9px;font-weight:700;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--faint);border:1px solid var(--line);
+    border-radius:2px;padding:1px 6px;margin-bottom:6px}
+  .niv{margin-top:13px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  @media(max-width:760px){.niv{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:420px){.niv{grid-template-columns:1fr}}
+  .niv > div{background:var(--surface);border:1px solid var(--hair);border-radius:3px;padding:13px 15px;
+    border-top:2.5px solid var(--a)}
+  .niv .lv{font-family:"JetBrains Mono",monospace;font-size:9px;font-weight:700;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--a)}
+  .niv h4{margin:4px 0 0;font-family:"Spectral",Georgia,serif;font-size:15px;font-weight:600;color:var(--ink)}
+  .niv p{margin:7px 0 0;font-size:12.3px;line-height:1.5;color:var(--soft)}
+</style>
+
+<div class="wrap">
+
+  <div class="hdr">
+    <div class="bar">
+      <span>Sports World México · Procedimiento normalizado de operación</span>
+      <span>Uso interno</span>
+    </div>
+    <div class="ttl">
+      <div class="lb">Título</div>
+      <h1>Contratación y alta de la membresía, y captura del dato del funnel</h1>
+      <div class="ch">Cierre del proceso comercial · De la aceptación del plan al socio activo</div>
+    </div>
+    <div class="meta">
+      <div><div class="k">No. de documento</div><div class="v mono">SOP/SW/0301</div></div>
+      <div><div class="k">Estatus</div><div class="v">Uso interno</div></div>
+      <div><div class="k">Sustituye a</div><div class="v mono">N/A</div></div>
+      <div><div class="k">Autor</div><div class="v">Dirección Comercial<br><span class="fine">Firma: en expediente</span></div></div>
+      <div><div class="k">Aprueba</div><div class="v">Dirección General<br><span class="fine">Firma: en expediente</span></div></div>
+      <div><div class="k">Versión</div><div class="v mono">1.0</div></div>
+      <div><div class="k">Fecha de entrada en vigor</div><div class="v mono">01-SEP-2026</div></div>
+      <div><div class="k">Fecha de revisión</div><div class="v mono">01-SEP-2027</div></div>
+      <div><div class="k">Manual</div><div class="v mono">MPC/SW/01<br>§7 medición · §10 glosario</div></div>
+    </div>
+  </div>
+
+  <!-- ═══════ 1 ═══════ -->
+  <h2 class="s"><span class="n">1</span>Introducción: cómo funciona este documento</h2>
+
+  <h3 class="ss">1.1 · Qué es y qué no es</h3>
+  <p class="intro">
+    Este es un <strong>procedimiento normalizado de operación</strong>. Establece qué ocurre, en qué orden y
+    quién responde por cada paso, desde que el prospecto acepta el plan hasta que queda como socio activo con su
+    primera sesión agendada. Es uno de los procedimientos del Manual del Proceso Comercial (MPC/SW/01) y se lee
+    de forma autónoma.
+  </p>
+  <p class="intro">
+    Contiene además el <strong>apartado 11</strong>, que fija cómo se captura el dato del funnel a nivel de cada
+    asesor y cómo se agrega por club, por plaza y a nivel nacional. Ese apartado vive aquí porque es en la
+    contratación donde el funnel se cierra: es el único punto del proceso en que existen a la vez el prospecto,
+    el asesor, el club y el número de membresía.
+  </p>
+
+  <h3 class="ss">1.2 · Cómo se lee</h3>
+  <ul class="pl">
+    <li><b>El apartado 9 es el procedimiento.</b> Una tabla de tres columnas: paso, acción y responsable.</li>
+    <li><b>Los pasos se numeran de forma consecutiva y esa numeración es la única referencia válida.</b></li>
+    <li><b>Las decisiones van dentro de la acción</b>, con el paso de destino explícito para cada rama.</li>
+    <li><b>El diagrama del apartado 8 usa la misma numeración.</b> Si el diagrama y la tabla discrepan, rige la tabla.</li>
+    <li><b>Los pasos sombreados en rojo son excepciones</b>, los sombreados en ámbar son decisiones y los de borde punteado corresponden a un bloque pendiente de definición.</li>
+    <li><b>Los documentos se citan por clave</b> y los principios también —P-01 a P-10—. Unos y otros están establecidos en el manual.</li>
+  </ul>
+
+  <h3 class="ss">1.3 · Quién lo usa y para qué</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:200px">Quién</th><th>Cuándo lo usa</th><th style="width:126px">Pasos</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Asesor de club</strong></td><td>Es su norma de operación en toda contratación. Es el documento que aprende en su incorporación</td><td class="d">1 – 33</td></tr>
+      <tr><td><strong>Gerencia del club</strong></td><td>Al autorizar una excepción de cobro, al verificar el cierre del día y al revisar la agregación de su club</td><td class="d">18 · 36 · 37</td></tr>
+      <tr><td><strong>Entrenador o instructor</strong></td><td>En la presentación al equipo del club y en la ejecución del Body Test</td><td class="d">29 · 31</td></tr>
+      <tr><td><strong>Sistemas</strong></td><td>Alta en el CRM, tokenización, generación del número de membresía y escritura de las etapas</td><td class="d">20 – 23</td></tr>
+      <tr><td><strong>Dirección Comercial</strong></td><td>En la lectura semanal por asesor, club, plaza y nacional, y ante cualquier excepción escalada</td><td class="d">Completo · §11</td></tr>
+      <tr><td><strong>Legal</strong></td><td>Al definir el contrato de membresía, el aviso de privacidad de socio y el tratamiento del documento de identidad</td><td class="d">6 · 14</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">1.4 · Qué hacer cuando la operación no coincide con el documento</h3>
+  <p class="intro">
+    No se resuelve con una variante local. La discrepancia se reporta a Dirección Comercial, que determina si es
+    una excepción de ese caso o un cambio que el procedimiento debe incorporar. Rige únicamente la versión
+    publicada, identificada en la cabecera de control.
+  </p>
+
+  <!-- ═══════ 2 ═══════ -->
+  <h2 class="s"><span class="n">2</span>Propósito</h2>
+  <p class="intro">
+    Asegurar que toda persona que acepta un plan quede contratada el mismo día, con su membresía activa, su
+    aplicación funcionando y su primera sesión agendada antes de retirarse del club; y que esa contratación
+    quede registrada con el asesor, el club y el número de membresía que permiten leer el resultado del sistema.
+  </p>
+  <p class="intro">
+    Una contratación que se pospone «para mañana» se pierde con frecuencia, y una que se completa sin activar la
+    aplicación ni agendar la valoración produce un socio que no usa lo que compró. <strong>El procedimiento cierra
+    las dos cosas en la misma sesión</strong>: el trámite y el arranque.
+  </p>
+
+  <!-- ═══════ 3 ═══════ -->
+  <h2 class="s"><span class="n">3</span>Alcance</h2>
+
+  <h3 class="ss">3.1 · A qué aplica</h3>
+  <p class="intro">
+    A toda contratación de membresía realizada en los 49 clubes de la red, con independencia del canal por el
+    que se originó el prospecto y de si la visita fue agendada o inmediata.
+  </p>
+
+  <h3 class="ss">3.2 · De dónde llega</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:190px">Origen</th><th style="width:112px">Procedimiento</th><th>Qué entrega</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Cierre de la visita guiada</strong></td><td class="c">SOP/SW/0201</td><td>El prospecto aceptó el plan y sus términos quedaron confirmados. Es el origen normal</td></tr>
+      <tr><td><strong>Seguimiento posterior a una visita sin cierre</strong></td><td class="c">SOP/SW/0201</td><td>El prospecto acepta en la siguiente acción acordada. Entra por el paso 1 con el registro de resultado de aquella visita</td></tr>
+      <tr><td><strong>Renovación o reactivación de un socio anterior</strong></td><td class="c">SOP/SW/0201</td><td>La pista de reactivación cierra igual que la venta nueva; lo que cambia es el esquema comercial aplicable</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">3.3 · Qué no cubre este documento</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:280px">Queda fuera</th><th>Dónde está</th></tr></thead>
+    <tbody>
+      <tr><td><strong>La captación y la calificación</strong> del prospecto</td><td class="c">SOP/SW/0101 · 0102 · 0103</td></tr>
+      <tr><td><strong>La conducción de la visita guiada</strong> y la propuesta comercial</td><td class="c">SOP/SW/0201</td></tr>
+      <tr><td><strong>El acompañamiento posterior a la primera semana</strong>: permanencia, reactivación y programa de referidos</td><td class="c">MPC/SW/01, §11</td></tr>
+      <tr><td><strong>El catálogo de planes, sus importes y sus promociones</strong>: provienen del CRM y no se congelan en la documentación</td><td class="c">CAT/SW/01</td></tr>
+      <tr><td><strong>El segundo cruce contra la información de salud</strong>, posterior a la valoración física</td><td class="c">Pendiente<br><span class="fine">Ver paso 32</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 4 ═══════ -->
+  <h2 class="s"><span class="n">4</span>Responsabilidades</h2>
+  <p class="intro">
+    Corresponde a la Dirección Comercial asegurar que este procedimiento se cumpla. La responsabilidad de
+    ejecutar cada paso se identifica en la columna derecha del apartado 9. Además de los principios P-01 a P-10
+    del manual, rigen en la contratación las siguientes reglas:
+  </p>
+  <ul class="pl">
+    <li><b>El alta en el CRM ocurre únicamente después de que la persona aceptó el plan</b> (P-09). Dar de alta antes contamina el funnel con contrataciones que no existen.</li>
+    <li><b>No hay contratación sin identificación oficial vigente</b> ni sin el aviso de privacidad de socio aceptado.</li>
+    <li><b>No se aplican descuentos, esquemas ni promociones que no estén vigentes en el catálogo del día.</b> Lo que no está en el catálogo no existe, aunque se haya ofrecido.</li>
+    <li><b>La membresía no se activa sin cobro autorizado.</b> Un cobro rechazado tiene su propio camino y no se resuelve prometiendo regularizarlo después.</li>
+    <li><b>Nadie se retira del club sin la aplicación instalada y funcionando</b>, y sin su valoración física agendada a fecha cierta.</li>
+    <li><b>La experiencia ideal se vincula al expediente del socio.</b> Es lo que permite que entrenadores y personal del club sepan qué se le recomendó y por qué.</li>
+    <li><b>Toda etapa se escribe con asesor, club y plaza</b> (§11). Una contratación sin asesor identificado no se puede leer ni reconocer.</li>
+  </ul>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:206px">Interviniente</th><th>Responsabilidad</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Asesor de club</strong></td><td>Conducir la contratación completa, capturar la documentación, cobrar, activar la aplicación, agendar la valoración y registrar el resultado</td></tr>
+      <tr><td><strong>Gerencia del club</strong></td><td>Autorizar excepciones de cobro y de esquema, verificar al cierre del día que toda contratación esté completa, y revisar la agregación de su club</td></tr>
+      <tr><td><strong>Entrenador o instructor</strong></td><td>Recibir al nuevo socio, ejecutar la valoración física y traducir la experiencia ideal a su arranque de entrenamiento</td></tr>
+      <tr><td><strong>Sistemas</strong></td><td>Alta en el CRM, tokenización del método de pago, generación del número de membresía, escritura de las etapas y disponibilidad del catálogo territorial</td></tr>
+      <tr><td><strong>Legal</strong></td><td>Contrato de membresía, aviso de privacidad de socio y régimen de tratamiento del documento de identidad</td></tr>
+      <tr><td><strong>Dirección Comercial</strong></td><td>Vigilar el cumplimiento, autorizar esquemas y promociones, resolver excepciones escaladas y autorizar cambios a este documento</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 5 ═══════ -->
+  <h2 class="s"><span class="n">5</span>Cambios desde la última revisión</h2>
+  <p class="intro">Procedimiento nuevo.</p>
+
+  <!-- ═══════ 6 ═══════ -->
+  <h2 class="s"><span class="n">6</span>Documentos que intervienen</h2>
+  <p class="intro">
+    Esta tabla indica para qué se usa cada documento dentro de este procedimiento. Su contenido y su responsable
+    están establecidos en el apartado 6 del manual MPC/SW/01.
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:88px">Clave</th><th style="width:196px">Documento</th><th>Para qué se usa aquí</th><th style="width:88px">Pasos</th></tr></thead>
+    <tbody>
+      <tr><td class="c">BA-01</td><td><strong>Brief del asesor</strong></td><td>Trae los términos confirmados en la visita y las señales de atención. Se cierra al completarse la contratación</td><td class="d">1 · 34</td></tr>
+      <tr><td class="c">EI-01</td><td><strong>Experiencia ideal</strong></td><td>Se vincula al expediente del socio y se entrega de nuevo, ya como socio, para que entrenadores y personal del club la consulten</td><td class="d">27</td></tr>
+      <tr><td class="c">CAT-01</td><td><strong>Catálogo comercial del día</strong></td><td>Planes, importes, vigencias, esquemas de reactivación y promociones aplicables. Lo que no está aquí no se ofrece</td><td class="d">2 · 11</td></tr>
+      <tr><td class="c">CM-01</td><td><strong>Contrato de membresía</strong></td><td>Instrumento que firma la persona. Su texto y sus anexos los define Legal</td><td class="d">14 · 19</td></tr>
+      <tr><td class="c">AS-01</td><td><strong>Aviso de privacidad de socio</strong></td><td>Distinto del aviso de captación: cubre el tratamiento como socio, incluida la información de la valoración</td><td class="d">6</td></tr>
+      <tr><td class="c">RC-01</td><td><strong>Registro de contratación</strong><br><span class="fine">Nuevo</span></td><td>Cierra el procedimiento: qué se contrató, con qué asesor, en qué club y con qué número de membresía</td><td class="d">34</td></tr>
+      <tr><td class="c">CT-01</td><td><strong>Catálogo territorial</strong><br><span class="fine">Nuevo</span></td><td>Correspondencia vigente entre club y plaza. Proviene del CRM y no se congela en la documentación</td><td class="d">§11</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 7 ═══════ -->
+  <h2 class="s"><span class="n">7</span>Documentos relacionados</h2>
+  <div class="tw"><table>
+    <thead><tr><th style="width:132px">Clave</th><th>Documento</th></tr></thead>
+    <tbody>
+      <tr><td class="c">MPC/SW/01</td><td><strong>Manual del Proceso Comercial.</strong> Principios P-01 a P-10 (§4), documentos comunes (§6), <strong>medición (§7)</strong> y glosario único (§10)</td></tr>
+      <tr><td class="c">SOP/SW/0201</td><td>La Experiencia Guiada de Sports World. Entrega la atención a este procedimiento en su paso 62</td></tr>
+      <tr><td class="c">SOP/SW/0101</td><td>Captación por WhatsApp oficial</td></tr>
+      <tr><td class="c">SOP/SW/0102</td><td>Captación por el sitio web</td></tr>
+      <tr><td class="c">SOP/SW/0103</td><td>Captación en la consola del asesor</td></tr>
+      <tr><td class="c">CAT/SW/01</td><td>Régimen de sincronización del catálogo: corte diario de las 06:00 y sincronización manual</td></tr>
+      <tr><td class="c">—</td><td><strong>Método de venta de Sports World.</strong> Instrucción de trabajo. Su paso 07, activar y acompañar, corresponde a los bloques 3 y 4 de este procedimiento</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 8 ═══════ -->
+  <h2 class="s"><span class="n">8</span>Diagrama de flujo</h2>
+  <p class="intro">Congruente con la numeración del apartado 9. Las decisiones no se numeran.</p>
+
+  <div class="flow"><div class="fl">
+    <div class="bx t">Inicio</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">1 · 2</span>Recibe la atención desde la visita guiada y verifica que el plan aceptado esté vigente en el catálogo del día</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿El plan aceptado sigue vigente? — Sí al 4 · No al 3</div>
+    <div class="ar"></div>
+    <div class="bx ex"><span class="i">3</span>Presenta el equivalente vigente y obtiene conformidad expresa antes de continuar</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">4 – 9</span>Solicita identificación, captura contacto y contacto de emergencia, y recaba el aviso de privacidad de socio</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿La persona es menor de edad? — Sí al 8 · No al 10</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">11 – 15</span>Presenta el contrato, explica cargos y periodicidad, tokeniza el método de pago y ejecuta el cobro inicial</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿El cobro se autoriza? — Sí al 19 · No al 17</div>
+    <div class="ar"></div>
+    <div class="bx ex"><span class="i">17 · 18</span>Ofrece medio de pago alterno; si tampoco se autoriza, no se da de alta y se acuerda fecha cierta</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">19 – 23</span>Firma del contrato, alta en el CRM, número de membresía y registro de la etapa E6 con asesor, club y plaza</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">24 – 28</span>Activa la aplicación, demuestra acceso por código, reservas y amenidades, y vincula la experiencia ideal al expediente</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">29 – 31</span>Presenta al equipo del club y agenda la valoración física antes de que la persona se retire</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">33 – 35</span>Solicita referidos, cierra el registro de contratación y programa los dos contactos de la primera semana</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">36 · 37</span>La gerencia cierra el día y Dirección Comercial realiza la lectura semanal por asesor, club, plaza y nacional</div>
+    <div class="ar"></div>
+    <div class="bx t">Fin</div>
+  </div></div>
+
+  <!-- ═══════ 9 ═══════ -->
+  <h2 class="s"><span class="n">9</span>Procedimiento</h2>
+  <p class="intro">Treinta y siete pasos en cuatro bloques.</p>
+
+  <div class="proc"><table class="pr">
+    <thead><tr><th>Paso</th><th>Acción</th><th>Responsable</th></tr></thead>
+    <tbody>
+
+      <tr class="hito"><td colspan="3">Bloque 1 · Términos y documentación</td></tr>
+
+      <tr><td class="st">1</td><td class="ac">Recibe la atención desde la visita guiada con el brief abierto y los términos que la persona aceptó: plan, importes, promoción aplicable, forma de pago, periodicidad, vigencia y fecha de inicio.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">2</td><td class="ac">Verifica que el plan, el esquema y la promoción aceptados <strong>estén vigentes en el catálogo del día</strong>.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="q"><td class="st">3</td><td class="ac"><span class="qq">¿Lo aceptado sigue vigente?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 5.<br>
+        <b>No</b> — continúa en el paso 4.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="x"><td class="st">4</td><td class="ac">Presenta el <strong>equivalente vigente</strong>, explica la diferencia con lo que se ofreció y obtiene conformidad expresa antes de continuar. No se contrata sobre condiciones que ya no existen.
+        <span class="br"><b>Si la persona no acepta el equivalente</b> — se registra el motivo y se acuerda una siguiente acción. Continúa en el paso 35.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">5</td><td class="ac">Solicita <strong>identificación oficial vigente</strong>, verifica que corresponda a la persona y la digitaliza conforme al régimen que define Legal.
+        <span class="br"><b>Si no la trae</b> — la contratación no se completa hoy. Se acuerda fecha cierta y se registra. Continúa en el paso 35.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">6</td><td class="ac">Presenta el <strong>aviso de privacidad de socio</strong> y recaba su aceptación. Es distinto del aviso de la captación: cubre el tratamiento de la información como socio, incluida la que produce la valoración física.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">7</td><td class="ac">Confirma o captura <strong>correo electrónico, celular y contacto de emergencia</strong>. El correo y el celular se validan contra los que ya trae el registro del prospecto; si difieren, se conserva el nuevo y se anota el cambio.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="q"><td class="st">8</td><td class="ac"><span class="qq">¿La persona es menor de edad?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 9.<br>
+        <b>No</b> — continúa en el paso 10.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">9</td><td class="ac">Requiere la <strong>presencia y firma de quien ejerza la patria potestad o la tutela</strong>, con su identificación oficial, conforme al contrato de membresía.
+        <span class="br"><b>Si no está presente</b> — la contratación no se completa hoy. Continúa en el paso 35.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">10</td><td class="ac">Pregunta si requiere <strong>comprobante fiscal</strong> y, en su caso, solicita la constancia de situación fiscal y captura los datos de facturación.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="hito"><td colspan="3">Bloque 2 · Contrato, pago y alta</td></tr>
+
+      <tr><td class="st">11</td><td class="ac">Presenta el <strong>contrato de membresía</strong> y recorre en voz alta lo que la persona debe saber antes de firmar: qué incluye el plan, en qué clubes aplica, vigencia, condiciones de suspensión y condiciones de cancelación.
+        <span class="br">Las condiciones de cancelación <b>se explican en la contratación</b>, no cuando la persona quiere cancelar.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">12</td><td class="ac">Explica el <strong>cargo inicial y el cargo recurrente</strong>: importe de cada uno, fecha del primer cargo, periodicidad y qué ocurre si el cargo no se autoriza en un periodo.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">13</td><td class="ac"><strong>Tokeniza el método de pago.</strong> El dato de la tarjeta no se conserva en el club ni en la consola: se sustituye por el testigo que devuelve el procesador.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">14</td><td class="ac">Ejecuta el <strong>cobro inicial</strong>.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="q"><td class="st">15</td><td class="ac"><span class="qq">¿El cobro se autoriza?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 19.<br>
+        <b>No</b> — continúa en el paso 16.</span></td><td class="rp">Sistema</td></tr>
+
+      <tr class="x"><td class="st">16</td><td class="ac">Ofrece un <strong>medio de pago alterno</strong> y reintenta una vez. El rechazo se comunica con naturalidad y sin exponer a la persona frente a terceros.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="q"><td class="st">17</td><td class="ac"><span class="qq">¿El medio alterno se autoriza?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 19.<br>
+        <b>No</b> — continúa en el paso 18.</span></td><td class="rp">Sistema</td></tr>
+
+      <tr class="x"><td class="st">18</td><td class="ac"><strong>No se da de alta la membresía.</strong> Se acuerda fecha cierta para retomar, se registra el intento con su motivo y se informa a la gerencia. La persona conserva su experiencia ideal y su brief; no vuelve a empezar.
+        <span class="br">Prometer regularizar el cobro después produce socios activos sin pago y una cartera que nadie reclama a tiempo. <em>Continúa en el paso 35.</em></span></td><td class="rp">Asesor y Gerencia</td></tr>
+
+      <tr><td class="st">19</td><td class="ac">Obtiene la <strong>firma del contrato</strong> y entrega copia por correo electrónico en el momento.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">20</td><td class="ac"><strong>Da de alta la membresía en el CRM</strong> y obtiene el <strong>número de membresía</strong>. El alta ocurre en este punto y no antes.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">21</td><td class="ac">Vincula el <strong>registro del prospecto con la membresía</strong>, conforme a la llave del apartado 7 del manual: nombre, apellido, teléfono y club. Es lo que permite atribuir la venta al canal que la originó.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">22</td><td class="ac">Registra la etapa <strong>E6 · membresía contratada</strong> con el <strong>número de membresía, el teléfono, el asesor, el club y la plaza</strong> (P-09, P-10). Sin esos cinco datos la etapa no se escribe: se detiene y se escala.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">23</td><td class="ac">Envía al correo de la persona el <strong>paquete de documentos</strong>: contrato firmado, condiciones del plan, comprobante del cargo y datos de contacto de su club.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Bloque 3 · Activación · Paso 07 del método: activar y acompañar</td></tr>
+
+      <tr><td class="st">24</td><td class="ac">Acompaña la <strong>descarga, el ingreso y la activación de la aplicación</strong> con la persona presente. No se deja para que la vea en casa.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">25</td><td class="ac">Demuestra en la aplicación, con la persona operándola: <strong>acceso por código, reserva de clases, consulta de horarios, rutinas y clubes de la red</strong> a los que su plan da acceso.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">26</td><td class="ac">Acompaña <strong>el primer acceso real por código</strong> y la primera solicitud de toallas, para que la persona ya lo haya hecho una vez antes de irse.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">27</td><td class="ac"><strong>Vincula la experiencia ideal al expediente del socio</strong> y se la entrega de nuevo, ya como socia, por el medio que prefiera. Queda disponible para el entrenador que la reciba y para consulta posterior de la persona.
+        <span class="br">Es lo que evita que quien la atienda la próxima semana tenga que preguntarle otra vez qué busca.</span></td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">28</td><td class="ac"><strong>Reserva con la persona su primera clase o su primera sesión</strong>, dentro de los días y las franjas que declaró. Una reserva hecha vale más que una intención declarada.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">29</td><td class="ac"><strong>Presenta a la persona con el equipo del club</strong>: al menos un entrenador del área que más le interesa y, cuando aplique, la coordinación de la zona infantil. La presentación es por nombre, con su objetivo dicho en voz alta.</td><td class="rp">Asesor y entrenador</td></tr>
+
+      <tr><td class="st">30</td><td class="ac"><strong>Explica la valoración física</strong>: qué mide, cuánto dura y para qué sirve —es el punto de partida que convierte la recomendación en un plan de entrenamiento.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr class="q"><td class="st">31</td><td class="ac"><span class="qq">¿La valoración física se realiza hoy?</span>
+        <span class="br"><b>Sí</b> — se ejecuta antes de que la persona se retire.<br>
+        <b>No</b> — <strong>se agenda a fecha y hora ciertas</strong>, con recordatorio programado. En ningún caso la persona se retira sin fecha.</span></td><td class="rp">Asesor y entrenador</td></tr>
+
+      <tr class="pd"><td class="st">32</td><td class="ac"><span class="pdl">Bloque pendiente de definición</span><strong>Segundo cruce contra la información de salud.</strong> El resultado de la valoración física se contrasta con la experiencia ideal vigente antes de que exista una prescripción de entrenamiento definitiva, y esta se ajusta si corresponde.
+        <span class="br">Falta determinar <b>quién ejecuta el cruce, qué documento genera y dónde reside la información resultante</b>. Hasta que se determine, este paso opera como indicador: se registra que la valoración ocurrió y queda señalado que el cruce está pendiente.</span></td><td class="rp"><span class="fine">Por definir</span></td></tr>
+
+      <tr class="hito"><td colspan="3">Bloque 4 · Cierre, registro y lectura</td></tr>
+
+      <tr><td class="st">33</td><td class="ac">Pregunta si tiene un amigo o familiar a quien le sirva el club, conforme al programa de referidos vigente, y registra la referencia con la autorización que ese programa exija.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">34</td><td class="ac">Genera el <strong>registro de contratación</strong>: plan contratado, importes, promoción aplicada, número de membresía, asesor, club, plaza, canal de origen y fecha de la primera sesión reservada. Cierra el brief del asesor en la misma operación.</td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">35</td><td class="ac">Programa los <strong>dos contactos de la primera semana</strong>: el primero para saber cómo se ha sentido y resolver dudas; el segundo para invitar a un acompañante con el beneficio vigente.
+        <span class="br">Cuando el procedimiento se detuvo sin contratar —pasos 4, 5, 9 o 18—, lo que se programa es la <b>siguiente acción acordada con su fecha</b>, sobre el mismo registro del prospecto.</span></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">36</td><td class="ac">Verifica al cierre del día que <strong>toda contratación esté completa</strong>: contrato firmado, cobro autorizado, aplicación activada, valoración agendada y registro de contratación generado. Lo incompleto se devuelve al asesor el mismo día.</td><td class="rp">Gerencia del club</td></tr>
+
+      <tr><td class="st">37</td><td class="ac">Realiza la <strong>lectura semanal</strong> conforme al apartado 11: por asesor, por club, por plaza y nacional.</td><td class="rp">Dirección Comercial</td></tr>
+
+      <tr class="hito"><td colspan="3">Fin del procedimiento</td></tr>
+
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 10 ═══════ -->
+  <h2 class="s"><span class="n">10</span>Registros</h2>
+  <div class="tw"><table>
+    <thead><tr><th style="width:220px">Registro</th><th style="width:78px">Paso</th><th>Dónde reside</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Conformidad con el equivalente vigente</strong></td><td class="d">4</td><td>Registro del prospecto, con la condición ofrecida y la finalmente aceptada</td></tr>
+      <tr><td><strong>Identificación digitalizada</strong></td><td class="d">5</td><td>Expediente del socio, conforme al régimen que defina Legal</td></tr>
+      <tr><td><strong>Aceptación del aviso de privacidad de socio</strong></td><td class="d">6</td><td>Expediente del socio, con marca de tiempo</td></tr>
+      <tr><td><strong>Testigo del método de pago</strong></td><td class="d">13</td><td>Procesador de pagos. El dato de la tarjeta no reside en el club ni en la consola</td></tr>
+      <tr><td><strong>Cobro autorizado o rechazado, con su motivo</strong></td><td class="d">14 · 17</td><td>CRM, sobre el registro de la persona. El rechazo se lee por club en la lectura semanal</td></tr>
+      <tr><td><strong>Contrato firmado</strong></td><td class="d">19</td><td>Expediente del socio y copia enviada al correo de la persona</td></tr>
+      <tr><td><strong>Alta y número de membresía</strong></td><td class="d">20</td><td><strong>CRM</strong>, único sistema de registro permanente</td></tr>
+      <tr><td><strong>Etapa E6 · membresía contratada</strong></td><td class="d">22</td><td>Base del funnel, con número de membresía, teléfono, asesor, club y plaza</td></tr>
+      <tr><td><strong>Experiencia ideal vinculada al socio</strong></td><td class="d">27</td><td>Expediente del socio, disponible para el entrenador que lo reciba</td></tr>
+      <tr><td><strong>Primera sesión reservada</strong></td><td class="d">28</td><td>Aplicación y CRM</td></tr>
+      <tr><td><strong>Valoración física agendada o realizada</strong></td><td class="d">31 · 32</td><td>Agenda del club. El cruce posterior está <strong>pendiente de definición</strong></td></tr>
+      <tr><td><strong>Registro de contratación</strong></td><td class="d">34</td><td>Conservado con el expediente. Es el cierre obligatorio del procedimiento</td></tr>
+      <tr><td><strong>Contactos de la primera semana</strong></td><td class="d">35</td><td>CRM, con recordatorio para el asesor responsable</td></tr>
+      <tr><td><strong>Verificación diaria y lectura semanal</strong></td><td class="d">36 · 37</td><td>Tablero del club y tablero de Dirección Comercial, con resultados agregados</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 11 ═══════ -->
+  <h2 class="s"><span class="n">11</span>Captura del dato del funnel y su agregación</h2>
+  <p class="intro">
+    Este apartado establece <strong>con qué identificadores se escribe cada etapa</strong> y <strong>cómo se
+    suman los resultados</strong> hacia arriba. Sin esto, el funnel del apartado 7 del manual existe como
+    definición pero no se puede leer por asesor ni comparar entre clubes.
+  </p>
+
+  <h3 class="ss">11.1 · Los cuatro niveles de lectura</h3>
+  <div class="niv">
+    <div>
+      <div class="lv">Nivel 1</div>
+      <h4>Asesor</h4>
+      <p>Cada persona que atiende, identificada de forma nominal. Es el nivel donde se reconoce el desempeño y donde se detecta quién necesita acompañamiento.</p>
+    </div>
+    <div>
+      <div class="lv">Nivel 2</div>
+      <h4>Club</h4>
+      <p>Los 49 clubes de la red. Es el nivel de la gerencia y el que revela problemas de capacidad, de parrilla de clases o de instalación.</p>
+    </div>
+    <div>
+      <div class="lv">Nivel 3</div>
+      <h4>Plaza</h4>
+      <p>Agrupación territorial de clubes. Es el nivel donde se comparan mercados y donde una diferencia sostenida indica competencia o precio, no desempeño individual.</p>
+    </div>
+    <div>
+      <div class="lv">Nivel 4</div>
+      <h4>Nacional</h4>
+      <p>La red completa. Es el nivel de Dirección General y el que sostiene la comparación entre canales de captación.</p>
+    </div>
+  </div>
+
+  <div class="nt">
+    <span class="l">El catálogo territorial</span>
+    La correspondencia entre club y plaza <strong>proviene del CRM y no se congela en este documento</strong>,
+    por la misma razón que los planes de membresía: cambia sin que cambie el proceso. Al día de esta versión, el
+    catálogo agrupa a los 49 clubes en <strong>dieciséis plazas</strong>: cuatro zonas de la Ciudad de México
+    —Norte, Sur, Centro y Poniente— y doce estados —Aguascalientes, Coahuila, Estado de México, Guanajuato,
+    Jalisco, Nuevo León, Puebla, Querétaro, Sinaloa, Sonora, Veracruz y Yucatán—.
+    <p style="margin-top:9px">Todo club pertenece a <strong>una sola plaza</strong>. Un club que no tenga plaza
+    asignada no se omite del tablero: aparece en un renglón de <em>sin plaza asignada</em>, que es lo que hace
+    visible el faltante en lugar de esconderlo.</p>
+  </div>
+
+  <h3 class="ss">11.2 · Qué identificadores lleva cada etapa</h3>
+  <p class="intro">
+    El asesor no existe en todas las etapas. En los canales digitales, el prospecto recorre el cuestionario y
+    agenda su visita sin que haya intervenido una persona; el asesor aparece cuando el club acusa la solicitud y
+    designa a quien atenderá. <strong>Atribuir a un asesor lo que ocurrió antes de que existiera produce una
+    lectura falsa</strong>, así que la tabla lo dice explícitamente.
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:132px">Etapa</th><th style="width:96px">Asesor</th><th style="width:88px">Club</th><th>Cómo se resuelve el club y la plaza</th></tr></thead>
+    <tbody>
+      <tr><td class="c">E2 · iniciado</td><td>No aplica<br><span class="fine">Consola: sí</span></td><td>Provisional</td><td>El club aún no está resuelto en los canales digitales. Se lee por canal; el club se asigna cuando la recomendación lo resuelve</td></tr>
+      <tr><td class="c">E3 · completado</td><td>No aplica<br><span class="fine">Consola: sí</span></td><td>Sí</td><td>La recomendación resuelve el club. Desde aquí toda etapa lleva club, y la plaza se deriva del catálogo territorial</td></tr>
+      <tr><td class="c">E4 · agendada</td><td>No aplica<br><span class="fine">Consola: sí</span></td><td>Sí</td><td>Club elegido por la persona para su visita</td></tr>
+      <tr><td class="c">Acuse del club</td><td><strong>Sí</strong></td><td>Sí</td><td><strong>Es el punto en que aparece el asesor</strong> en los canales digitales: la gerencia designa responsable y esa designación se escribe sobre el registro</td></tr>
+      <tr><td class="c">E5 · realizada</td><td><strong>Sí</strong></td><td>Sí</td><td>Asesor que condujo la visita y club donde ocurrió</td></tr>
+      <tr><td class="c">E6 · contratada</td><td><strong>Sí</strong></td><td>Sí</td><td>Asesor que cerró y club de la contratación, más el número de membresía</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt w">
+    <span class="l">Las dos reglas que evitan el doble conteo</span>
+    <strong>Primera: un prospecto pertenece a un solo club</strong> —aquel en el que ocurrió o se agendó su
+    visita—, aunque su plan le dé acceso a varios. Cuando la persona cambia de club antes de la visita, el
+    registro se mueve completo: no se cuenta en los dos.
+    <p style="margin-top:9px"><strong>Segunda: quien cierra es quien recibe la contratación.</strong> Si un
+    asesor conduce la visita y otro cierra en el seguimiento, E5 queda con el primero y E6 con el segundo. El
+    registro conserva ambos, de modo que la lectura por asesor no premia ni castiga al que no estuvo.</p>
+  </div>
+
+  <h3 class="ss">11.3 · Cómo se agrega hacia arriba</h3>
+  <p class="intro">
+    La agregación es aritmética simple, con una regla que decide si el tablero dice la verdad o no.
+  </p>
+  <ul class="pl">
+    <li><b>Los volúmenes se suman.</b> El de un club es la suma de sus asesores; el de una plaza, la suma de sus clubes; el nacional, la suma de las plazas.</li>
+    <li><b>Las tasas nunca se promedian: se recalculan.</b> La tasa de una plaza es la suma de sus numeradores dividida entre la suma de sus denominadores, no el promedio de las tasas de sus clubes. Promediar da el mismo peso a un club con diez visitas que a uno con doscientas.</li>
+    <li><b>Toda cifra agregada trae su denominador a la vista.</b> Un cierre de 60% sobre cinco visitas y uno de 45% sobre trescientas no se comparan, y sin el denominador el tablero invita a compararlos.</li>
+    <li><b>El periodo se define por la fecha del hecho</b>, no por la de captura. Una visita realizada el lunes y capturada el martes cuenta en el lunes.</li>
+    <li><b>Los tramos anteriores al acuse no se leen por asesor</b>, por lo establecido en el apartado 11.2. Se leen por canal, por club y por plaza.</li>
+  </ul>
+
+  <h3 class="ss">11.4 · Qué se lee en cada nivel</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:110px">Nivel</th><th style="width:150px">Quién lo revisa</th><th>Qué se lee</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Asesor</strong></td><td>Gerencia del club</td><td>Visitas conducidas, contrataciones, conversión de E5 a E6, motivos de no cierre y cumplimiento de la preparación de la visita. Es el único nivel donde la lectura es individual</td></tr>
+      <tr><td><strong>Club</strong></td><td>Gerencia y Dirección Comercial</td><td>Las seis tasas del apartado 7 del manual, acuses dentro de plazo, visitas conducidas sin plan, cobros rechazados y señales de incompatibilidad de horario</td></tr>
+      <tr><td><strong>Plaza</strong></td><td>Dirección Comercial</td><td>Comparación entre clubes de un mismo mercado, con volumen a la vista. Una diferencia sostenida entre plazas indica mercado, no desempeño</td></tr>
+      <tr><td><strong>Nacional</strong></td><td>Dirección Comercial y Dirección General</td><td>El funnel completo por canal de captación, el resultado de punta a punta y la comparación entre plazas</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt g">
+    <span class="l">Regla de uso</span>
+    La lectura por asesor sirve para <strong>reconocer y para acompañar</strong>. Un asesor con conversión baja y
+    volumen alto necesita acompañamiento en la visita; uno con volumen bajo necesita revisión de la asignación
+    que hace su gerencia. Ninguno de los dos casos se resuelve con el número solo, y por eso el tablero presenta
+    siempre el motivo de no cierre junto a la tasa.
+  </div>
+
+  <div class="ft">
+    <strong>SOP/SW/0301 · Contratación y alta de la membresía · versión 1.0 · uso interno.</strong><br>
+    Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.<br>
+    <span style="display:block;margin-top:8px">Recibe la atención de SOP/SW/0201 · La Experiencia Guiada de Sports World. El glosario único y la definición del funnel están en MPC/SW/01, apartados 10 y 7.</span>
+  </div>
+
+</div>
+
+</body>
+</html>

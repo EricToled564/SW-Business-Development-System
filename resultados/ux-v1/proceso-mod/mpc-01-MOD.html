@@ -1,0 +1,1197 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manual del Proceso Comercial · MPC/SW/01 · Sports World</title>
+  <meta name="description" content="Sports World México · Manual del Proceso Comercial: propósito, principios, instrumentos y procedimientos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+  :root{
+    --paper:#eff0ee; --surface:#ffffff; --s2:#f5f6f5;
+    --ink:#12171a; --soft:#3f484f; --faint:#79838a;
+    --line:#cfd4d3; --hair:#e2e5e4;
+    --a:#14456b; --a-bg:#dbe7f1; --a-line:#a4c2db;
+    --w:#75460f; --w-bg:#f8ecd9; --w-line:#dcc296;
+    --g:#245c42; --g-bg:#dcece4;
+    --p:#5a3576; --p-bg:#ece2f4; --p-line:#c5adda;
+    --onA:#ffffff;
+    --sh:0 1px 2px rgba(12,18,22,.05),0 10px 24px -18px rgba(12,18,22,.22);
+  }
+  @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --paper:#0b0e10; --surface:#14181b; --s2:#191e21;
+    --ink:#e6eaea; --soft:#a6afb5; --faint:#737c82;
+    --line:#282f33; --hair:#1f2528;
+    --a:#7cb8e3; --a-bg:#112637; --a-line:#284761;
+    --w:#dba861; --w-bg:#2b2113; --w-line:#4a3a1e;
+    --g:#78c3a1; --g-bg:#12281f;
+    --p:#bfa0da; --p-bg:#241a30; --p-line:#42305a;
+    --onA:#07202e;
+    --sh:0 1px 2px rgba(0,0,0,.35),0 10px 24px -18px rgba(0,0,0,.65);
+  }}
+  :root[data-theme="dark"]{
+    --paper:#0b0e10; --surface:#14181b; --s2:#191e21;
+    --ink:#e6eaea; --soft:#a6afb5; --faint:#737c82;
+    --line:#282f33; --hair:#1f2528;
+    --a:#7cb8e3; --a-bg:#112637; --a-line:#284761;
+    --w:#dba861; --w-bg:#2b2113; --w-line:#4a3a1e;
+    --g:#78c3a1; --g-bg:#12281f;
+    --p:#bfa0da; --p-bg:#241a30; --p-line:#42305a;
+    --onA:#07202e;
+    --sh:0 1px 2px rgba(0,0,0,.35),0 10px 24px -18px rgba(0,0,0,.65);
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.6;
+    -webkit-font-smoothing:antialiased}
+  ::selection{background:var(--a-bg)}
+  .wrap{max-width:900px;margin:0 auto;padding:clamp(18px,4vw,44px) clamp(13px,4vw,26px) 96px}
+  h1,h2{font-family:"Spectral",Georgia,serif;margin:0;color:var(--ink);text-wrap:balance}
+  p{margin:10px 0 0}
+  strong{color:var(--ink);font-weight:600}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  .fine{font-size:11.5px;color:var(--faint);line-height:1.45}
+
+  .hdr{background:var(--surface);border:1px solid var(--line);border-radius:3px;box-shadow:var(--sh);overflow:hidden}
+  .hdr .bar{background:var(--a);color:var(--onA);padding:8px 16px;
+    font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.13em;
+    text-transform:uppercase;font-weight:700;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+  .hdr .ttl{padding:18px;border-bottom:1px solid var(--line)}
+  .hdr .ttl .lb{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);font-weight:700}
+  .hdr .ttl h1{font-size:clamp(21px,3.2vw,30px);font-weight:600;margin-top:5px;line-height:1.16}
+  .hdr .ttl .ch{margin-top:8px;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--a);font-weight:600;letter-spacing:.04em}
+  .meta{display:grid;grid-template-columns:repeat(3,1fr)}
+  @media(max-width:640px){.meta{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:400px){.meta{grid-template-columns:1fr}}
+  .meta > div{padding:10px 16px;border-right:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  .meta .k{font-family:"JetBrains Mono",monospace;font-size:8.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);font-weight:700}
+  .meta .v{font-size:12.8px;color:var(--ink);margin-top:3px;line-height:1.4}
+
+  h2.s{font-size:16.5px;font-weight:600;margin-top:40px;padding-bottom:8px;
+    border-bottom:1.5px solid var(--ink);display:flex;align-items:baseline;gap:11px}
+  h2.s .n{font-family:"JetBrains Mono",monospace;font-size:.72em;color:var(--a);font-weight:700}
+  h3.ss{font-size:11.5px;font-weight:700;margin:28px 0 0;font-family:"Inter",sans-serif;
+    text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+  p.intro{color:var(--soft);max-width:74ch}
+  ul.pl{margin:11px 0 0;padding-left:19px;color:var(--soft);font-size:14px;line-height:1.6}
+  ul.pl li{margin-bottom:8px}
+  ul.pl li b{color:var(--ink);font-weight:600}
+
+  .tw{overflow-x:auto;margin-top:12px;border:1px solid var(--hair);border-radius:3px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:12.7px;min-width:620px}
+  th{background:var(--s2);text-align:left;padding:8px 12px;font-weight:700;font-size:9.5px;
+    text-transform:uppercase;letter-spacing:.055em;color:var(--faint);
+    border-bottom:1px solid var(--line);vertical-align:bottom}
+  td{padding:9px 12px;border-bottom:1px solid var(--hair);color:var(--soft);vertical-align:top;line-height:1.5}
+  tr:last-child td{border-bottom:none}
+  td strong{color:var(--ink);font-weight:600}
+  td.c{font-family:"JetBrains Mono",monospace;color:var(--a);font-weight:700;white-space:nowrap;font-size:11.5px}
+  td.d{font-family:"JetBrains Mono",monospace;color:var(--soft);font-size:11px}
+  tbody tr:hover{background:var(--s2)}
+  .est{font-family:"JetBrains Mono",monospace;font-size:9.5px;font-weight:700;letter-spacing:.05em;
+    text-transform:uppercase;padding:2px 6px;border-radius:2px;white-space:nowrap;display:inline-block}
+  .est.ok{background:var(--g-bg);color:var(--g)}
+  .est.pe{background:var(--w-bg);color:var(--w)}
+  .est.qu{background:var(--p-bg);color:var(--p)}
+
+  /* mapa del proceso */
+  .mapa{margin-top:13px;background:var(--surface);border:1px solid var(--hair);border-radius:3px;padding:20px 18px;overflow-x:auto}
+  .mp{min-width:600px}
+  .cap{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+  .cb{background:var(--s2);border:1px solid var(--line);border-top:2px solid var(--a);border-radius:3px;padding:11px 12px}
+  .cb .k{font-family:"JetBrains Mono",monospace;font-size:9.5px;font-weight:700;color:var(--a);letter-spacing:.05em}
+  .cb .t{font-size:12.8px;font-weight:600;color:var(--ink);margin-top:3px;line-height:1.3}
+  .cb .d{font-size:11px;color:var(--faint);margin-top:4px;line-height:1.4}
+  .flecha{text-align:center;font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--faint);padding:11px 0 8px}
+  .lin{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  @media(max-width:600px){.cap,.lin{grid-template-columns:1fr}}
+  .lb2{background:var(--a-bg);border:1px solid var(--a-line);border-radius:3px;padding:11px 12px}
+  .lb2 .k{font-family:"JetBrains Mono",monospace;font-size:9.5px;font-weight:700;color:var(--a);letter-spacing:.05em}
+  .lb2 .t{font-size:12.8px;font-weight:600;color:var(--ink);margin-top:3px;line-height:1.3}
+  .lb2 .d{font-size:11px;color:var(--soft);margin-top:4px;line-height:1.4}
+  .fuera{margin-top:9px;border:1px dashed var(--line);border-radius:3px;padding:10px 12px;text-align:center}
+  .fuera .t{font-size:11.5px;color:var(--faint);line-height:1.4}
+
+  /* anexo cuestionario */
+  .cu{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+  table.cq{border-collapse:collapse;width:100%;font-size:12.7px;min-width:700px}
+  table.cq th:nth-child(1){width:38px;text-align:center}
+  table.cq th:nth-child(4){width:96px}
+  table.cq td.qn{font-family:"JetBrains Mono",monospace;font-weight:700;color:var(--a);
+    text-align:center;font-size:11.5px;background:var(--s2)}
+  table.cq td.qt{color:var(--ink);font-weight:600;font-size:12.8px;line-height:1.4}
+  table.cq td.qo{line-height:1.55}
+  table.cq td.qo ol{margin:5px 0 0;padding-left:18px}
+  table.cq td.qo li{margin-bottom:2px}
+  table.cq td.qy{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--faint);line-height:1.5}
+  tr.cond td.qn{color:var(--w);background:var(--w-bg)}
+  tr.cond td.qt,tr.cond td.qo,tr.cond td.qy{background:var(--w-bg)}
+  .secq{background:var(--a-bg);color:var(--a);font-family:"JetBrains Mono",monospace;
+    font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+    padding:7px 13px;border-bottom:1px solid var(--a-line)}
+
+  .nt{margin-top:14px;padding:13px 17px;border-radius:3px;background:var(--surface);
+    border:1px solid var(--hair);border-left:3px solid var(--a);font-size:13.2px;color:var(--soft)}
+  .nt.w{border-left-color:var(--w);background:var(--w-bg)}
+  .nt.g{border-left-color:var(--g);background:var(--g-bg)}
+  .nt .l{display:block;font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.07em;
+    text-transform:uppercase;font-weight:700;margin-bottom:6px;color:var(--a)}
+  .nt.w .l{color:var(--w)} .nt.g .l{color:var(--g)}
+
+  .ft{margin-top:44px;padding-top:15px;border-top:1px solid var(--line);font-size:11.5px;color:var(--faint);line-height:1.6}
+  .ft strong{color:var(--soft)}
+
+  @media print{
+    body{background:#fff}
+    .wrap{max-width:none;padding:0}
+    .tw,.proc,.flow,.cu{overflow:visible;break-inside:auto}
+    table{min-width:0}
+    tr{break-inside:avoid}
+    h2.s{break-after:avoid}
+  }
+  html{scroll-behavior:smooth}
+  mark.sw-hit{background:#ffe08a;color:inherit;padding:0 1px;border-radius:2px}
+  mark.sw-hit.on{background:#f59e0b;color:#fff}
+  tr.sw-dim{opacity:.22}
+  a.sw-x{color:var(--a);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+  .sw-flash{animation:swf 1.4s ease-out}
+  @keyframes swf{0%{background:var(--w-bg)}100%{background:transparent}}
+</style>
+
+<div class="wrap">
+
+  <div class="hdr">
+    <div class="bar">
+      <span>Sports World México · Dirección Comercial</span>
+      <span>Uso interno</span>
+    </div>
+    <div class="ttl">
+      <div class="lb">Título</div>
+      <h1>Manual del Proceso Comercial</h1>
+      <div class="ch">De la manifestación de interés a la contratación de la membresía</div>
+    </div>
+    <div class="meta">
+      <div><div class="k">No. de documento</div><div class="v mono">MPC/SW/01</div></div>
+      <div><div class="k">Estatus</div><div class="v">Uso interno</div></div>
+      <div><div class="k">Sustituye a</div><div class="v mono">N/A</div></div>
+      <div><div class="k">Autor</div><div class="v">Dirección Comercial<br><span class="fine">Firma: en expediente</span></div></div>
+      <div><div class="k">Aprueba</div><div class="v">Dirección General<br><span class="fine">Firma: en expediente</span></div></div>
+      <div><div class="k">Versión</div><div class="v mono">1.0</div></div>
+      <div><div class="k">Fecha de entrada en vigor</div><div class="v mono">01-SEP-2026</div></div>
+      <div><div class="k">Fecha de revisión</div><div class="v mono">01-SEP-2027</div></div>
+      <div><div class="k">Ámbito</div><div class="v">Los 49 clubes de la red</div></div>
+    </div>
+  </div>
+
+  <!-- ═══════ 1 ═══════ -->
+  <h2 class="s"><span class="n">1</span>Introducción: cómo funciona este manual</h2>
+
+  <h3 class="ss">1.1 · Qué reúne este documento</h3>
+  <p class="intro">
+    Este manual reúne el conjunto de procedimientos que llevan a una persona desde que manifiesta interés en
+    Sports World hasta que contrata su membresía. Fija una sola forma de trabajar para los 49 clubes de la
+    red, con independencia del canal por el que la persona llegue, de la plaza y del asesor que la atienda.
+  </p>
+  <p class="intro">
+    Su propósito no es documentar lo que hoy ocurre. Es <strong>establecer lo que debe ocurrir</strong>. El
+    trabajo de campo que precede a este manual —15 entrevistas con 6 líderes comerciales y 9 asesores, en 13
+    clubes de cinco estados— registró que la conversión total de contacto a venta varía entre 0.5% y 20%
+    según quién atienda, y que ninguno de los 15 entrevistados describió un método estructurado para
+    identificar el objetivo del prospecto. La dispersión no es un problema de talento: es la consecuencia
+    previsible de que cada quien resuelva por su cuenta un proceso que nunca se escribió.
+  </p>
+
+  <h3 class="ss">1.2 · Cómo está organizado</h3>
+  <p class="intro">
+    El proceso comercial se divide en tres momentos, y cada momento en los procedimientos que efectivamente
+    se ejecutan por separado. La captación se divide por canal porque el momento en que la persona deja de
+    ser anónima es distinto en cada uno, y de ello dependen la llave que la identifica, el orden en que se le
+    solicitan los datos y lo que puede medirse de su recorrido. La visita y la contratación no se dividen:
+    ocurren en el club y son idénticas viniera la persona de donde viniera.
+  </p>
+
+  <div class="mapa"><div class="mp">
+    <div class="flecha" style="padding-top:0">Momento 1 · Captación y calificación — un procedimiento por canal</div>
+    <div class="cap">
+      <div class="cb"><div class="k">SOP/SW/0101</div><div class="t">WhatsApp oficial</div><div class="d">Campaña en redes sociales y mensaje directo al número</div></div>
+      <div class="cb"><div class="k">SOP/SW/0102</div><div class="t">Sitio web</div><div class="d">Búsqueda orgánica, tráfico de pago y fichas de Google Business</div></div>
+      <div class="cb"><div class="k">SOP/SW/0103</div><div class="t">Consola del asesor</div><div class="d">Visita espontánea al club y llamada telefónica</div></div>
+    </div>
+    <div class="flecha">convergen en</div>
+    <div class="lin">
+      <div class="lb2"><div class="k">SOP/SW/0201</div><div class="t">Momento 2 · La Experiencia Guiada de Sports World</div><div class="d">Idéntico para los tres canales de origen</div></div>
+      <div class="lb2"><div class="k">SOP/SW/0301</div><div class="t">Momento 3 · Contratación y alta de la membresía</div><div class="d">Cierre del proceso comercial</div></div>
+    </div>
+    <div class="fuera"><div class="t">Fuera del proceso comercial · incorporación del socio, permanencia, retención y cancelación — tratadas como recomendaciones en el apartado 11</div></div>
+  </div></div>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:118px">Clave</th><th style="width:212px">Procedimiento</th><th>Qué produce</th><th style="width:110px">Estado</th></tr></thead>
+    <tbody>
+      <tr><td class="c">SOP/SW/0101</td><td><strong>Captación por WhatsApp oficial</strong></td><td>Visita solicitada, brief del asesor y asesor designado</td><td><span class="est ok">Vigente</span></td></tr>
+      <tr><td class="c">SOP/SW/0102</td><td><strong>Captación por el sitio web</strong></td><td>Visita solicitada, brief del asesor y asesor designado</td><td><span class="est pe">Por elaborar</span></td></tr>
+      <tr><td class="c">SOP/SW/0103</td><td><strong>Captación en consola</strong><br><span class="fine">Club y teléfono</span></td><td>Visita solicitada, brief del asesor y asesor designado</td><td><span class="est pe">Por elaborar</span></td></tr>
+      <tr><td class="c">SOP/SW/0201</td><td><strong>La Experiencia Guiada de Sports World</strong></td><td>Propuesta presentada y decisión del prospecto registrada</td><td><span class="est pe">Por elaborar</span></td></tr>
+      <tr><td class="c">SOP/SW/0301</td><td><strong>Contratación y alta de la membresía</strong></td><td>Membresía contratada, socio dado de alta y expediente completo</td><td><span class="est pe">Por elaborar</span></td></tr>
+      <tr><td class="c">SOP/SW/0104</td><td><strong>Captación por referido</strong></td><td>Por definir</td><td><span class="est qu">Por confirmar</span></td></tr>
+      <tr><td class="c">SOP/SW/0105</td><td><strong>Captación por convenio corporativo</strong></td><td>Por definir</td><td><span class="est qu">Por confirmar</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="fine" style="margin-top:11px">
+    Los dos últimos están marcados por confirmar: falta resolver si el referido y el convenio corporativo
+    constituyen procedimientos propios o si ingresan por consola con una marca de origen distinta. La
+    decisión corresponde a Dirección Comercial y se resuelve antes de la versión 1.1.
+  </p>
+
+  <h3 class="ss">1.3 · Qué contiene el manual</h3>
+  <p class="intro">
+    Los apartados 2 a 8 establecen lo que vale igual en cualquier canal. Los procedimientos, en el apartado 9, establecen lo propio de cada canal.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:44px">Nº</th><th style="width:230px">Apartado</th><th>Contenido</th></tr></thead>
+    <tbody>
+      <tr><td class="d">1</td><td><strong>Introducción</strong></td><td>Cómo funciona este manual, cómo se lee y cómo se mantiene</td></tr>
+      <tr><td class="d">2</td><td><strong>Propósito y alcance</strong></td><td>Qué resuelve el proceso comercial, dónde inicia, dónde concluye y qué queda fuera</td></tr>
+      <tr><td class="d">3</td><td><strong>El proceso de punta a punta</strong></td><td>Los tres momentos, sus fronteras y lo que cada uno entrega al siguiente</td></tr>
+      <tr><td class="d">4</td><td><strong>Principios rectores</strong></td><td>Las reglas que obligan en todos los procedimientos, sin excepción de canal ni de club</td></tr>
+      <tr><td class="d">5</td><td><strong>Actores y responsabilidad</strong></td><td>Quién ejecuta, quién responde por el resultado, quién supervisa y quién habilita</td></tr>
+      <tr><td class="d">6</td><td><strong>Instrumentos y documentos comunes</strong></td><td>El cuestionario, el brief, la experiencia ideal, el catálogo del día y los demás documentos que atraviesan todo el proceso</td></tr>
+      <tr><td class="d">7</td><td><strong>Medición</strong></td><td>Las etapas del funnel, su definición operativa, las llaves de conciliación y los indicadores de dirección</td></tr>
+      <tr><td class="d">8</td><td><strong>Protección de datos personales</strong></td><td>Roles, minimización, consentimiento y qué no se recaba, con su fundamento</td></tr>
+      <tr><td class="d">9</td><td><strong>Los procedimientos</strong></td><td>Los cinco documentos del apartado 1.2, cada uno completo y autónomo</td></tr>
+      <tr><td class="d">10</td><td><strong>Glosario</strong></td><td>Todo término cuyo significado no sea evidente para alguien ajeno al proyecto</td></tr>
+      <tr><td class="d">11</td><td><strong>Recomendaciones posteriores a la contratación</strong></td><td>Lo que el proceso comercial no cubre y conviene resolver después: incorporación, permanencia y retención</td></tr>
+      <tr><td class="d">12</td><td><strong>Control de cambios</strong></td><td>Quién autoriza, con qué periodicidad se revisa y qué versión rige</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">1.4 · Qué prescribe este manual y qué no</h3>
+  <p class="intro">
+    Este manual prescribe <strong>secuencia y responsabilidad</strong>: qué ocurre, en qué orden y quién
+    responde por cada paso. No prescribe conducta. Un paso dice <em>«aplica el cuestionario»</em>; no dice
+    cómo sostener la conversación con alguien que acaba de decir que le parece caro.
+  </p>
+  <p class="intro">
+    La distinción es operativa. La secuencia obliga por igual a todos y su incumplimiento es verificable. La
+    conducta admite formas distintas de hacerse bien y se enseña, no se audita. Por eso vive en otro
+    documento, un nivel abajo: el <strong>Manual de Ventas</strong>, que se deriva de este proceso y desarrolla
+    el criterio de cada momento. Cuando un paso requiere criterio, remite explícitamente al capítulo que lo
+    contiene.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:158px">Nivel</th><th style="width:196px">Documento</th><th>Responde a</th><th style="width:112px">Frecuencia de cambio</th></tr></thead>
+    <tbody>
+      <tr style="background:var(--a-bg)"><td><strong>Manual del proceso</strong></td><td><strong>Este documento</strong><br><span class="fine">MPC/SW/01</span></td><td><strong>Qué es el proceso comercial, qué lo rige y de qué procedimientos se compone</strong></td><td><strong>Años</strong></td></tr>
+      <tr><td>Procedimiento</td><td>SOP/SW/01xx a 03xx</td><td>Qué ocurre, en qué orden y quién responde por cada paso</td><td>Anual</td></tr>
+      <tr><td>Instrucción de trabajo</td><td>Manual de Ventas</td><td>Cómo se conduce cada momento y con qué criterio</td><td>Trimestres</td></tr>
+      <tr><td>Registro</td><td>RP-01 · BA-01 · AC-01</td><td>Qué ocurrió en un caso concreto</td><td>Cada operación</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt">
+    <span class="l">Por qué importa la separación</span>
+    Un manual que mezcla los dos niveles se vuelve inservible en los dos. Se hace demasiado largo para
+    consultarse en operación y demasiado rígido para enseñarse, y cada ajuste de argumento comercial obliga a
+    reabrir un documento que debería cambiar una vez al año. Manteniéndolos separados, el procedimiento se
+    audita y el criterio se entrena, que es lo que cada uno admite.
+  </div>
+
+  <h3 class="ss">1.5 · Cómo se lee</h3>
+  <ul class="pl">
+    <li><b>Cada procedimiento es autónomo.</b> Quien opera un canal no necesita leer los otros. Los apartados comunes se citan por número, no se transcriben.</li>
+    <li><b>Los procedimientos se citan por clave y por paso</b> —SOP/SW/0101, paso 31—. Nunca por página ni por título de apartado, porque ambos cambian entre versiones y la numeración de pasos no.</li>
+    <li><b>Los instrumentos se citan por clave</b> —CEI-01 el cuestionario, BA-01 el brief, CAT-01 el catálogo del día—. El apartado 6 dice qué contiene cada uno y de quién es.</li>
+    <li><b>Dentro de cada procedimiento, el apartado del mismo nombre es una tabla de tres columnas:</b> paso, acción y responsable. Las decisiones van dentro de la acción, con el destino explícito de cada rama. El diagrama de flujo comparte esa numeración; si el diagrama y la tabla discrepan, rige la tabla.</li>
+    <li><b>Las etapas de medición se nombran por su código</b> —E2, E3, E4—. Su definición operativa, que es lo que determina cuándo cuenta cada una, está en el apartado 7 y es la misma para todos los canales.</li>
+  </ul>
+
+  <h3 class="ss">1.6 · Cómo se mantiene</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:200px">Concepto</th><th>Definición</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Versión vigente</strong></td><td>Únicamente la publicada por Dirección Comercial, identificada en la cabecera de control. Las versiones anteriores se conservan como antecedente y no rigen la operación</td></tr>
+      <tr><td><strong>Autoriza cambios</strong></td><td>Dirección Comercial. Los cambios que afecten precio, condiciones de contratación o tratamiento de datos personales requieren además el visto bueno del área correspondiente</td></tr>
+      <tr><td><strong>Revisión programada</strong></td><td>Anual para el manual. Cada procedimiento se revisa en el mismo ciclo. La primera lectura de indicadores se hace a los 90 días de operación y produce la versión 1.1</td></tr>
+      <tr><td><strong>Revisión extraordinaria</strong></td><td>Ante cambio de CRM, alta o baja de un canal de captación, modificación del régimen de sincronización del catálogo, o cambio en la normativa de protección de datos personales</td></tr>
+      <tr><td><strong>Discrepancia con la operación</strong></td><td>No se resuelve con una variante local. Se reporta a Dirección Comercial, que determina si es una excepción de ese caso o un cambio que el manual debe incorporar</td></tr>
+      <tr><td><strong>Configuración de sistemas</strong></td><td>El asistente conversacional, el sitio y la consola se configuran contra estos procedimientos. Toda modificación a su comportamiento pasa primero por una modificación al procedimiento correspondiente</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt w">
+    <span class="l">La regla que sostiene todo lo demás</span>
+    Un procedimiento que se ejecuta distinto en cada club deja de permitir la comparación entre clubes, y con
+    ella se pierde la única forma de saber qué funciona. La variación local no se corrige regañando: se
+    corrige haciendo que el documento sea más fácil de seguir que de improvisar. Si un paso resulta imposible
+    de cumplir en un club, el defecto está en el paso y se reporta.
+  </div>
+
+    <h3 class="ss">1.7 · Los documentos de esta sección</h3>
+  <p class="intro">
+    Este manual es el documento de cabecera. Los procedimientos que lo acompañan son autónomos: cada uno se
+    lee por separado y contiene lo propio de su canal. Desde aquí se llega a todos.
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:118px">Clave</th><th style="width:230px">Documento</th><th>Qué resuelve</th><th style="width:62px">Pasos</th></tr></thead>
+    <tbody>
+      <tr><td class="c">MPC/SW/01</td><td><strong>Manual del Proceso Comercial</strong><br><span class="fine">Este documento</span></td><td>Propósito, alcance, principios, actores, instrumentos y medición. Lo que vale igual en cualquier canal</td><td class="d">—</td></tr>
+      <tr><td class="c"><a href="sop-0101.html">SOP/SW/0101</a></td><td><strong><a href="sop-0101.html">Captación por WhatsApp</a></strong></td><td>El canal conversacional, con sus dos puntos de entrada: campaña con identificador y mensaje directo</td><td class="d">53</td></tr>
+      <tr><td class="c"><a href="sop-0102.html">SOP/SW/0102</a></td><td><strong><a href="sop-0102.html">Captación por el sitio web</a></strong></td><td>El canal digital, con recorrido autónomo y recorrido asistido</td><td class="d">54</td></tr>
+      <tr><td class="c"><a href="sop-0103.html">SOP/SW/0103</a></td><td><strong><a href="sop-0103.html">Captación en consola</a></strong></td><td>El personal del club: atención telefónica, llamada a referido y persona que llega sin cita</td><td class="d">52</td></tr>
+      <tr><td class="c"><a href="sop-0201.html">SOP/SW/0201</a></td><td><strong><a href="sop-0201.html">La Experiencia Guiada</a></strong></td><td>La visita guiada, de la preparación al cierre, con el método de venta de Sports World ordenado en pasos</td><td class="d">72</td></tr>
+      <tr><td class="c"><a href="sop-0301.html">SOP/SW/0301</a></td><td><strong><a href="sop-0301.html">Contratación y alta</a></strong></td><td>Términos, contrato, cobro, alta, activación de la aplicación y valoración física. Contiene la captura del dato del funnel por asesor y su agregación por club, plaza y nacional</td><td class="d">37</td></tr>
+      <tr><td class="c"><a href="mv-01.html">MV/SW/01</a></td><td><strong><a href="mv-01.html">Manual de Ventas</a></strong><br><span class="fine">Instrucción de trabajo</span></td><td>Cómo se conduce la venta: los siete pasos del método con ejemplos, guiones y la lista de la visita. Complementa a los procedimientos; ante discrepancia rige el procedimiento</td><td class="d">—</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 2 ═══════ -->
+  <h2 class="s"><span class="n">2</span>Propósito y alcance</h2>
+
+  <h3 class="ss">2.1 · Qué debe lograr el proceso comercial</h3>
+  <p class="intro">
+    El proceso comercial existe para producir tres resultados. No son aspiraciones: son obligaciones
+    verificables, y cada procedimiento de este manual responde por al menos una de ellas.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:52px">Nº</th><th style="width:250px">Resultado</th><th>Cómo se verifica</th></tr></thead>
+    <tbody>
+      <tr><td class="d">1</td><td><strong>Que toda persona interesada reciba respuesta y quede calificada con el mismo instrumento</strong>, sin importar el canal por el que llegue, la hora a la que escriba ni el club que le corresponda</td><td>Ningún prospecto agendado sin cuestionario aplicado. Cobertura de atención inmediata en los canales conversacionales</td></tr>
+      <tr><td class="d">2</td><td><strong>Que el asesor reciba el diagnóstico antes de la visita</strong>, en lugar de levantarlo durante ella</td><td>Brief generado en el 100% de las visitas solicitadas, y registro de su apertura antes de la visita</td></tr>
+      <tr><td class="d">3</td><td><strong>Que cada resultado sea atribuible al origen que lo produjo</strong>, desde el primer contacto hasta la baja de la membresía</td><td>Registros sin atribución de origen, medidos por canal. La atribución se sella en la entrada y no se reconstruye después</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt">
+    <span class="l">Lo que el proceso no pretende</span>
+    No sustituye el juicio del asesor ni uniforma la conversación de venta. Uniforma <strong>la información
+    con la que esa conversación empieza</strong>: el mismo diagnóstico, levantado con el mismo instrumento,
+    entregado antes de que la persona llegue al club. Lo que el asesor haga con ese diagnóstico es criterio
+    profesional, se entrena y se desarrolla en el Manual de Ventas.
+  </div>
+
+  <h3 class="ss">2.2 · El problema que resuelve</h3>
+  <p class="intro">
+    Cada obligación del apartado anterior responde a un hallazgo documentado en el trabajo de campo. La
+    columna izquierda es lo que se registró; la derecha, lo que este manual establece frente a ello.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:330px">Lo que registró el campo</th><th>Lo que este manual establece</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Ninguno de los 15 entrevistados describió un método estructurado para identificar el objetivo del prospecto.</strong> La conversación se construye sobre preguntas logísticas, no sobre lo que la persona busca</td>
+        <td>Un instrumento único de calificación, idéntico en todos los canales, aplicado <em>antes</em> de que el asesor hable con la persona</td>
+      </tr>
+      <tr>
+        <td><strong>8 de los 15 señalaron la calificación del lead como su prioridad número uno</strong></td>
+        <td>El brief del asesor se genera en la misma operación que la recomendación y llega al club junto con la solicitud de visita, no después</td>
+      </tr>
+      <tr>
+        <td><strong>La conversión total de contacto a venta varía entre 0.5% y 20% según el asesor</strong> —una diferencia de 40 veces— sin línea base verificable que permita saber cuál es el punto de partida</td>
+        <td>Una definición operativa única de cada etapa, igual para todos los canales, y medición abierta por club y por canal. No se fijan metas hasta contar con la línea base real</td>
+      </tr>
+      <tr>
+        <td><strong>La objeción de precio apareció en las 15 entrevistas, sin excepción.</strong> La capacidad de articular el valor diferencial frente a la competencia local determina la conversión</td>
+        <td>El brief arma los argumentos con los objetivos que la propia persona declaró. El criterio para conducir esa conversación se desarrolla en el Manual de Ventas</td>
+      </tr>
+      <tr>
+        <td><strong>El 99% del seguimiento ocurre por WhatsApp en cuentas personales de los asesores</strong>, que se suspenden al alcanzar 50 a 60 mensajes diarios y dejan 24 horas fuera de operación de forma recurrente</td>
+        <td>Un número oficial de la empresa con plantillas autorizadas. Los recordatorios los envía el sistema, no el asesor desde su dispositivo</td>
+      </tr>
+      <tr>
+        <td><strong>De las citas agendadas, entre el 20% y el 50% se convierten en asistencia.</strong> La inasistencia es la falla más frecuente del proceso</td>
+        <td>Acuse del club dentro de 24 horas con asesor designado, dos recordatorios programados, y contacto el mismo día ante inasistencia con dos alternativas concretas de fecha</td>
+      </tr>
+      <tr>
+        <td><strong>Los números de teléfono equivocados son una falla recurrente</strong> en la captación telefónica y presencial</td>
+        <td>Validación de los tres datos de contacto antes de agendar. En WhatsApp el número queda validado por el canal mismo, porque la persona escribe desde el suyo</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <p class="fine" style="margin-top:11px">
+    Fuente: reporte de 15 entrevistas individuales —6 líderes comerciales y 9 asesores— realizadas los días
+    14 y 15 de mayo de 2026 en 13 clubes de la Ciudad de México, Aguascalientes, Hermosillo, Puebla y Jerez.
+  </p>
+
+  <h3 class="ss">2.3 · Alcance</h3>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:150px">Frontera</th><th>Definición</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Inicia</strong></td><td>Cuando una persona manifiesta interés por cualquiera de los canales de captación, o cuando personal autorizado abre un cuestionario nuevo en la consola</td></tr>
+      <tr><td><strong>Concluye</strong></td><td>Cuando la membresía queda contratada, el socio dado de alta y el expediente completo</td></tr>
+      <tr><td><strong>Aplica a</strong></td><td>Los <strong>49 clubes</strong> de la red y a todo el personal que interviene en la captación o el cierre, sin excepción por plaza, por antigüedad del asesor, por formato de membresía ni por volumen. Comprende a los aproximadamente <strong>200 asesores</strong> de la red, a los operadores de atención digital, a las gerencias de club y a los terceros que operen cualquiera de estas funciones</td></tr>
+      <tr><td><strong>Vigencia</strong></td><td>Desde su entrada en vigor y hasta que Dirección Comercial publique una versión posterior. No admite variantes locales</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">2.4 · Qué queda fuera y dónde está</h3>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:300px">Queda fuera del proceso comercial</th><th style="width:150px">Responsable</th><th>Dónde se trata</th></tr></thead>
+    <tbody>
+      <tr><td><strong>La generación de demanda</strong> anterior al primer contacto: pauta, contenido, posicionamiento y presencia local</td><td>Marketing</td><td class="d">MKT/SW/01</td></tr>
+      <tr><td><strong>El criterio de conducción de la venta</strong>: cómo abrir, cómo escuchar, cómo manejar una objeción, cómo cerrar</td><td>Dirección Comercial<br><span class="fine">Academia</span></td><td class="d">Manual de Ventas</td></tr>
+      <tr><td><strong>Todo lo posterior a la contratación</strong>: incorporación del socio, permanencia, retención y cancelación</td><td>Operación</td><td class="d">Apartado 11<br><span class="fine">como recomendaciones</span></td></tr>
+      <tr><td><strong>La operación del club</strong>: programación de clases, mantenimiento, aforo y servicio en piso</td><td>Operación</td><td class="d">Fuera de este manual</td></tr>
+      <tr><td><strong>La administración de precios y promociones</strong>: su definición, su carga y su vigencia. El proceso los consume del catálogo del día, no los determina</td><td>Comercial y Sistemas</td><td class="d">CAT/SW/01</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt w">
+    <span class="l">Sobre la frontera con el Manual de Ventas</span>
+    Es la frontera que más se presta a confusión en la operación, y por eso conviene fijarla con un ejemplo.
+    Que el asesor <strong>consulte el brief antes de la visita</strong> es un paso del proceso: es
+    obligatorio, se verifica con el registro de apertura y su incumplimiento es una desviación. Que el asesor
+    <strong>decida con qué argumento abrir</strong> a partir de lo que leyó en ese brief es criterio: admite
+    varias formas de hacerse bien, se entrena y no se audita. El proceso llega hasta la puerta de la
+    conversación; el Manual de Ventas empieza ahí.
+  </div>
+
+  <!-- ═══════ 3 ═══════ -->
+  <h2 class="s"><span class="n">3</span>El proceso de punta a punta</h2>
+
+  <p class="intro">
+    Tres momentos. Cada uno recibe algo, produce algo y lo entrega al siguiente. Un momento no concluye
+    cuando su responsable termina de trabajar: concluye cuando su producto está en manos de quien sigue.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:150px">Momento</th><th style="width:190px">Inicia cuando</th><th style="width:190px">Concluye cuando</th><th>Entrega al siguiente</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>1 · Captación y calificación</strong><br><span class="fine">SOP/SW/0101 · 0102 · 0103</span></td>
+        <td>Una persona manifiesta interés por cualquier canal, o personal autorizado abre un cuestionario en consola</td>
+        <td>La escritura en el CRM está confirmada y el club acusó recibo con asesor designado</td>
+        <td><strong>Solicitud de visita</strong> con fecha y hora · <strong>Brief del asesor</strong> · Asesor designado · Atribución de origen sellada</td>
+      </tr>
+      <tr>
+        <td><strong>2 · Visita guiada y propuesta</strong><br><span class="fine">SOP/SW/0201</span></td>
+        <td>El prospecto se presenta al club en la fecha acordada</td>
+        <td>La propuesta quedó presentada y la decisión del prospecto registrada, sea cual sea</td>
+        <td><strong>Propuesta presentada</strong> con sus condiciones · Decisión registrada · Perfil enriquecido con lo confirmado en la visita</td>
+      </tr>
+      <tr>
+        <td><strong>3 · Contratación y alta</strong><br><span class="fine">SOP/SW/0301</span></td>
+        <td>El prospecto acepta la propuesta</td>
+        <td>La membresía está contratada, el socio dado de alta y el expediente completo</td>
+        <td><strong>Membresía activa</strong> con su número · Expediente · Cierre del proceso comercial</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">3.1 · Los dos traspasos críticos</h3>
+  <p class="intro">
+    Entre momentos hay dos traspasos, y ambos son puntos de pérdida documentados. El manual los trata como
+    entregas verificables, no como continuidad supuesta.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:180px">Traspaso</th><th>Qué lo hace verificable</th><th style="width:180px">Qué ocurre si falla</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Captación → Visita</strong></td>
+        <td>El <strong>acuse del club</strong>, registrado en el CRM sobre el mismo prospecto <strong>dentro de 24 horas o antes de la visita, lo que ocurra primero</strong>, con confirmación de capacidad y nombre del asesor designado. El correo entrega la información al club, pero no deja constancia de que alguien la haya recibido</td>
+        <td>El prospecto llega a un club donde nadie lo espera. Si no se presenta, o si se presenta y no hay quien lo atienda, <strong>el resultado se registra como inasistencia en E5 y se atribuye al prospecto, cuando la causa estuvo del lado del club</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Visita → Contratación</strong></td>
+        <td>La <strong>decisión registrada</strong>, incluso cuando es negativa o diferida, con la condición ofrecida y su vigencia</td>
+        <td>Se pierde la razón por la que no se cerró, que es el único insumo para corregir. Y una condición ofrecida sin registrar sigue obligando a la empresa</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">3.2 · Correspondencia con las etapas de medición</h3>
+  <p class="intro">
+    El proceso comercial y el funnel de medición son el mismo recorrido leído de dos maneras. Esta tabla
+    amarra una lectura con la otra; la definición operativa de cada etapa está en el apartado 7.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:130px">Momento</th><th style="width:96px">Etapas</th><th>Qué cubre</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1 · Captación</strong></td><td class="c">C1 · C2 · C3<br>E2 · E3 · E4</td><td>Entrada por canal, cuestionario iniciado, cuestionario completado y visita agendada</td></tr>
+      <tr><td><strong>2 · Visita</strong></td><td class="c">E5</td><td>Visita realizada</td></tr>
+      <tr><td><strong>3 · Contratación</strong></td><td class="c">E6</td><td>Membresía comprada</td></tr>
+      <tr><td><span class="fine">Fuera del proceso comercial</span></td><td class="c">E7</td><td>Membresía cancelada. Se mide porque cierra la lectura de retención, pero su operación se trata en el apartado 11</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 4 ═══════ -->
+  <h2 class="s"><span class="n">4</span>Principios rectores</h2>
+
+  <p class="intro">
+    Diez reglas obligan en todos los procedimientos, en todos los canales y en los 49 clubes. Cada
+    procedimiento las cita por clave. Una regla que admite excepción local deja de ser
+    regla, así que este apartado no contempla ninguna.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:62px">Clave</th><th style="width:300px">Principio</th><th>Razón y consecuencia de incumplirlo</th></tr></thead>
+    <tbody>
+      <tr><td class="c">P-01</td><td><strong>No se agenda una visita guiada sin cuestionario aplicado.</strong> Aplica también cuando la persona llega con el club ya elegido y solo pide agendar</td><td>Sin cuestionario no hay brief, y sin brief el asesor levanta el diagnóstico durante la visita, con cargo al tiempo destinado a demostrar la recomendación</td></tr>
+      <tr><td class="c">P-02</td><td><strong>La recomendación se entrega antes de solicitar datos de contacto</strong></td><td>La persona recibe algo de valor antes de que se le pida nada. Los datos se solicitan cuando ya existe una razón concreta para compartirlos</td></tr>
+      <tr><td class="c">P-03</td><td><strong>La experiencia decide el club recomendado; la cercanía únicamente desempata</strong></td><td>Recomendar el club más cercano sin verificar que ofrece lo que la persona busca produce una visita que no puede terminar bien</td></tr>
+      <tr><td class="c">P-04</td><td><strong>Toda información comercial proviene del catálogo del día</strong>, con corte a las 06:00 de la Ciudad de México</td><td>No hay lectura en vivo de precios, clases ni horarios. Una recomendación construida sobre información desactualizada compromete a la empresa con condiciones que ya no existen</td></tr>
+      <tr><td class="c">P-05</td><td><strong>Una sola escritura al CRM, idéntica en todos los canales, idempotente por llave de sesión</strong></td><td>Es lo que permite comparar canales sobre la misma base y lo que impide que el mismo prospecto se contabilice dos veces</td></tr>
+      <tr><td class="c">P-06</td><td><strong>La fecha y hora elegidas son una solicitud de visita, nunca una reserva</strong></td><td>El sistema no verifica disponibilidad de asesor ni de sala. Presentarla como reserva genera una expectativa que la operación no está obligada a cumplir</td></tr>
+      <tr><td class="c">P-07</td><td><strong>Ningún prospecto conversacional queda sin atención inmediata</strong></td><td>El tiempo al primer contacto es la variable que más rápido destruye una oportunidad digital. La atención inmediata es responsabilidad del sistema, no de la disponibilidad de una persona</td></tr>
+      <tr><td class="c">P-08</td><td><strong>Toda condición comercial ofrecida obliga a la empresa</strong>, quien la ofrezca y por el canal que sea</td><td>Una condición ofrecida en captación compromete el margen de negociación del asesor antes de que la conversación comercial haya comenzado</td></tr>
+      <tr><td class="c">P-09</td><td><strong>Ningún resultado se reporta sin su definición operativa.</strong> Una etapa cuenta cuando ocurre el hecho que la define, no cuando alguien la da por ocurrida</td><td>La visita agendada cuenta al confirmarse la escritura en el CRM, no al pulsar confirmar el prospecto. Es la distinción que separa el número reportado del número real</td></tr>
+      <tr><td class="c">P-10</td><td><strong>La atribución de origen se sella en la entrada y viaja con el registro hasta la baja de la membresía</strong></td><td>No se reconstruye después. Un registro sin atribución impide evaluar la campaña que lo produjo, y esa pérdida es definitiva</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt g">
+    <span class="l">Cómo se usan estos principios</span>
+    En los procedimientos aparecen citados por clave dentro de la acción del paso que los aplica —«registra
+    la fecha y hora como solicitud de visita (P-06)»—, de modo que quien ejecuta sepa que está frente a una
+    regla y no frente a una preferencia. Modificar un principio obliga a revisar todos los procedimientos que
+    lo citan, y por eso su cambio requiere la misma autorización que el manual completo.
+  </div>
+
+  <!-- ═══════ 5 ═══════ -->
+  <h2 class="s"><span class="n">5</span>Actores y responsabilidad</h2>
+
+  <p class="intro">
+    Cuatro niveles de responsabilidad, aplicados de forma consistente en todo el manual. Un actor puede tener
+    niveles distintos en momentos distintos, pero nunca dos niveles en el mismo paso.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:190px">Nivel</th><th>Qué significa</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Ejecuta</strong></td><td>Realiza la actividad. Es quien aparece nombrado en la columna derecha de cada paso</td></tr>
+      <tr><td><strong>Responde por el resultado</strong></td><td>Rinde cuentas de que el resultado ocurra, aunque no ejecute. Es a quien se le pregunta cuando el indicador no se cumple</td></tr>
+      <tr><td><strong>Supervisa</strong></td><td>Vigila el cumplimiento, resuelve las excepciones escaladas y autoriza los cambios</td></tr>
+      <tr><td><strong>Habilita</strong></td><td>Provee una condición sin la cual el proceso no puede ejecutarse. No participa en la operación diaria, pero su ausencia la detiene</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:196px">Actor</th><th>Responsabilidad en el proceso comercial</th><th style="width:100px">Momentos</th><th style="width:150px">Nivel</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Asistente conversacional</strong></td><td>Atiende toda conversación entrante en los canales digitales, aplica el cuestionario, entrega la recomendación y agenda la visita</td><td class="d">1</td><td>Ejecuta</td></tr>
+      <tr><td><strong>Operador de atención digital</strong></td><td>Atiende las escalaciones dentro de su horario y retoma los pendientes registrados fuera de él</td><td class="d">1</td><td>Ejecuta por escalación</td></tr>
+      <tr><td><strong>Asesor de club</strong></td><td>Captura en consola la visita espontánea y la llamada · conduce la visita guiada · presenta la propuesta · integra el expediente de contratación</td><td class="d">1 · 2 · 3</td><td>Ejecuta</td></tr>
+      <tr><td><strong>Gerencia del club</strong></td><td>Acusa recibo de la solicitud, verifica capacidad, designa asesor y coordina la visita. Responde por la asistencia y por el cierre de su club</td><td class="d">1 · 2 · 3</td><td>Responde por el resultado</td></tr>
+      <tr><td><strong>Dirección Comercial</strong></td><td>Es dueña del proceso. Define el criterio de asignación de asesor, vigila el cumplimiento, resuelve las excepciones escaladas y autoriza los cambios a este manual y a sus procedimientos</td><td class="d">1 · 2 · 3</td><td>Supervisa y autoriza</td></tr>
+      <tr><td><strong>Sistemas</strong></td><td>Vigencia del catálogo diario, disponibilidad del punto de escritura al CRM, ejecución de la sincronización manual y provisión de los datos de cierre del funnel</td><td class="d">1 · 2 · 3</td><td>Habilita</td></tr>
+      <tr><td><strong>Marketing</strong></td><td>Número oficial con plantillas autorizadas · parámetros de campaña en todas las piezas · carga de la ficha de campaña antes de que la pauta salga al aire</td><td class="d">1</td><td>Habilita</td></tr>
+      <tr><td><strong>Legal</strong></td><td>Aviso de privacidad vigente, mecanismos de consentimiento y los términos del contrato de membresía</td><td class="d">1 · 3</td><td>Habilita</td></tr>
+      <tr><td><strong>Academia</strong></td><td>Entrena el criterio de conducción que este manual no prescribe, sobre los mismos conceptos que el proceso produce</td><td class="d">2 · 3</td><td>Habilita</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 6 ═══════ -->
+  <h2 class="s"><span class="n">6</span>Instrumentos y documentos comunes</h2>
+
+  <p class="intro">
+    Once documentos atraviesan el proceso. Este apartado establece el contenido y la responsabilidad de cada uno; los procedimientos los citan por clave. Los tres primeros son los instrumentos del sistema; el resto son insumos o registros.
+  </p>
+
+  <h3 class="ss">6.1 · Instrumentos</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:76px">Clave</th><th style="width:172px">Documento</th><th>Contenido</th><th style="width:128px">Propietario</th></tr></thead>
+    <tbody>
+      <tr><td class="c">CEI-01</td><td><strong>Cuestionario de Experiencia Ideal</strong></td><td><strong>19 reactivos —16 base y 3 condicionales—, un minuto de participación.</strong> Idéntico en todos los canales, sin variantes por plaza ni por club. Identidad y trato · objetivo emocional · objetivo funcional · ritmo y modalidad · preferencias de entrenamiento · disponibilidad · nivel e historial · acompañamiento · interés en programas familiares · ancla geográfica</td><td>Dirección Comercial<br><span class="fine">Anexo A</span></td></tr>
+      <tr><td class="c">EI-01</td><td><strong>Experiencia ideal</strong><br><span class="fine">Entregable al prospecto</span></td><td>Club recomendado y la razón de la recomendación · combinación de entrenamiento en tres bloques · clases idóneas con su horario real en ese club · amenidades que corresponden al objetivo · alternativas de club con su diferencia señalada</td><td>Se genera del CEI-01<br><span class="fine">y del catálogo del día</span></td></tr>
+      <tr><td class="c">BA-01</td><td><strong>Brief del asesor</strong><br><span class="fine">Uso interno</span></td><td>Perfil del prospecto · logística y contacto · qué confirmar antes de proponer · ruta recomendada del recorrido en cuatro pasos · propuesta principal y complemento · tres prioridades de cierre · notas y señales de atención · espacio de registro del asesor</td><td>Dirección Comercial<br><span class="fine">Anexo B</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">6.2 · Insumos</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:76px">Clave</th><th style="width:172px">Documento</th><th>Contenido</th><th style="width:128px">Propietario</th></tr></thead>
+    <tbody>
+      <tr><td class="c">CAT-01</td><td><strong>Catálogo comercial del día</strong></td><td>Clubes con estatus operativo, coordenadas, dirección, teléfono y correo · horarios de atención por día · amenidades · clases con día, hora de inicio y término · tarifas, descuentos y promociones vigentes</td><td>Sistemas<br><span class="fine">Corte 06:00 CDMX</span></td></tr>
+      <tr><td class="c">CAM-01</td><td><strong>Ficha de campaña vigente</strong><br><span class="fine">Una por campaña activa</span></td><td>Identificador de campaña y de anuncio · oferta tal como aparece en la pieza · descuento y su vigencia · clase, programa o amenidad que promueve · clubes participantes · condiciones y exclusiones</td><td>Marketing</td></tr>
+      <tr><td class="c">BC-01</td><td><strong>Base de conocimiento</strong></td><td>Catálogo de membresías con precios y términos · descripciones de clases · políticas de cancelación y congelamiento · información operativa por club. Actualización semanal mínima</td><td>Comercial y Operación</td></tr>
+      <tr><td class="c">AP-01</td><td><strong>Aviso de privacidad</strong></td><td>Versión simplificada desplegada antes de la primera pregunta, con enlace a la versión integral. Finalidades necesarias y de mercadotecnia presentadas por separado</td><td>Legal</td></tr>
+      <tr><td class="c">PL-01</td><td><strong>Plantillas autorizadas de WhatsApp</strong></td><td>Mensajes aprobados por Meta para apertura de conversación, confirmación de visita y los dos recordatorios. Obligatorias fuera de la ventana de servicio de 24 horas</td><td>Marketing</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">6.3 · Registros</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:76px">Clave</th><th style="width:172px">Documento</th><th>Contenido</th><th style="width:128px">Reside en</th></tr></thead>
+    <tbody>
+      <tr><td class="c">RP-01</td><td><strong>Registro de prospecto</strong></td><td>Llave de sesión · nombre y apellido en campos separados · teléfono en formato internacional · correo · club elegido · fecha y horario solicitados · perfil del CEI-01 · canal de origen y atribución de campaña · marca de tiempo · constancia del consentimiento</td><td>CRM</td></tr>
+      <tr><td class="c">CV-01</td><td><strong>Confirmación de visita</strong></td><td>Club, dirección, fecha y hora · aviso expreso de que el club confirma y coordina · constancia de que la experiencia ideal se envió y las preferencias se comunicaron al asesor</td><td>Se genera de RP-01</td></tr>
+      <tr><td class="c">AC-01</td><td><strong>Acuse del club</strong></td><td>Confirmación de recepción · confirmación de capacidad en el horario solicitado, o reprogramación acordada · nombre del asesor designado · marca de tiempo. Se registra dentro de 24 horas o antes de la visita, lo que ocurra primero</td><td>CRM<br><span class="fine">sobre el registro del prospecto</span></td></tr>
+      <tr><td class="c">RV-01</td><td><strong>Registro de la visita</strong></td><td>Asistencia · lo confirmado del perfil durante el recorrido · propuesta presentada con sus condiciones · decisión del prospecto y su motivo</td><td>CRM<br><span class="fine">SOP/SW/0201</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt">
+    <span class="l">Sobre el CEI-01</span>
+    Es el instrumento que sostiene los tres resultados del apartado 2.1. Que sea idéntico en todos los
+    canales es lo que permite que dos personas con el mismo objetivo reciban la misma recomendación sin
+    importar por dónde entraron, y que la calificación deje de depender del criterio individual de quien
+    atiende. Cualquier variante por canal, por plaza o por club anula esa propiedad y con ella la
+    comparabilidad de toda la medición.
+  </div>
+
+  <!-- ═══════ 7 ═══════ -->
+  <h2 class="s"><span class="n">7</span>Medición</h2>
+  <p class="intro">
+    El proceso comercial se mide con las mismas etapas en los tres canales de captación y en la visita. Este
+    apartado establece <strong>qué se cuenta, en qué momento exacto cuenta y qué procedimiento lo escribe</strong>.
+    La definición completa del funnel —fuentes del dato, accesos requeridos y responsables de otorgarlos— vive en
+    el mapa canónico de medición y no se reformula aquí.
+  </p>
+
+  <h3 class="ss">7.1 · Las etapas y el paso que las escribe</h3>
+  <p class="intro">
+    Cada etapa se registra en un solo lugar, en un momento definido. El momento importa más que la etapa: contar
+    una visita cuando el prospecto acepta la fecha, y no cuando el registro queda escrito, produce un funnel que
+    no corresponde con lo que el club puede atender.
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:150px">Etapa</th><th>Cuenta exactamente cuando…</th><th style="width:210px">Dónde se escribe</th></tr></thead>
+    <tbody>
+      <tr><td class="c">E2<br><span class="fine">Cuestionario iniciado</span></td><td>Se responde el <strong>primer reactivo</strong>. No al presentarse la primera pantalla ni al enviarse el primer mensaje</td><td><a href="sop-0101.html">SOP/SW/0101</a> paso 13<br><a href="sop-0102.html">SOP/SW/0102</a> paso 7<br><a href="sop-0103.html">SOP/SW/0103</a> paso 12</td></tr>
+      <tr><td class="c">E3<br><span class="fine">Cuestionario completado</span></td><td>Queda <strong>generada la experiencia ideal</strong>. No al responderse el último reactivo: lo que cierra la etapa es el producto, no la respuesta</td><td><a href="sop-0101.html">SOP/SW/0101</a> paso 25<br><a href="sop-0102.html">SOP/SW/0102</a> paso 20<br><a href="sop-0103.html">SOP/SW/0103</a> paso 20</td></tr>
+      <tr><td class="c">E4<br><span class="fine">Visita agendada</span></td><td>Se <strong>confirma la escritura</strong> del registro. No cuando el prospecto acepta la fecha: una fecha aceptada que no quedó escrita no es una visita</td><td><a href="sop-0101.html">SOP/SW/0101</a> paso 41<br><a href="sop-0102.html">SOP/SW/0102</a> paso 39<br><a href="sop-0103.html">SOP/SW/0103</a> paso 39</td></tr>
+      <tr><td class="c">E5<br><span class="fine">Visita realizada</span></td><td>Se <strong>inicia el recorrido</strong> en el club. La visita inmediata se registra igual que la agendada y se lee por separado</td><td><a href="sop-0201.html">SOP/SW/0201</a> paso 33</td></tr>
+      <tr><td class="c">E6<br><span class="fine">Membresía contratada</span></td><td>El prospecto <strong>acepta el plan</strong> y se confirman sus términos. El alta en el sistema ocurre después de la aceptación, nunca antes</td><td><a href="sop-0201.html">SOP/SW/0201</a> paso 62</td></tr>
+      <tr><td class="c">E7<br><span class="fine">Membresía cancelada</span></td><td>Se registra la baja. Queda fuera del proceso comercial y se obtiene de la sincronización periódica</td><td><span class="fine">Fuera de alcance</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt">
+    <span class="l">Por qué E3 se cuenta sobre el producto y no sobre la respuesta</span>
+    Un cuestionario respondido cuya recomendación no llegó a generarse deja al prospecto sin nada que recibir y
+    al asesor sin brief. Contarlo como completado escondería exactamente la falla que hay que ver. Por eso los
+    tres procedimientos registran E3 al quedar generada la experiencia ideal, y tratan el caso contrario como
+    excepción con su propio camino.
+  </div>
+
+  <h3 class="ss">7.2 · Las llaves de conciliación</h3>
+  <p class="intro">
+    Las etapas se producen en sistemas distintos y hay que unirlas. Estas son las llaves vigentes; sustituyen
+    cualquier otra que aparezca en documentación anterior.
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:170px">Tramo</th><th style="width:250px">Llave</th><th>Nota</th></tr></thead>
+    <tbody>
+      <tr><td class="c">Sesión → E2 → E4</td><td><strong>Identificador de sesión</strong></td><td>Llave de idempotencia: una sola escritura por prospecto, aunque la conversación o el recorrido se reanuden</td></tr>
+      <tr><td class="c">E4 → E5 → E6</td><td><strong>Nombre + apellido + teléfono + club</strong></td><td>El teléfono es la llave principal; nombre, apellido y club resuelven homonimia</td></tr>
+      <tr><td class="c">E6 → E7</td><td><strong>Número de membresía</strong></td><td>Única llave estable posterior a la contratación</td></tr>
+      <tr><td class="c">Origen</td><td><strong>Canal, subtipo y campaña</strong></td><td>Se sella en la entrada y viaja con el prospecto hasta la última etapa (P-10). Sin él, el resultado no se atribuye a nada</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">7.3 · El corte diario de las 06:00</h3>
+  <p class="intro">
+    Lo registrado hasta las 05:59, hora de la Ciudad de México, se publica ese día. El corte gobierna el catálogo
+    comercial que usan los tres canales y la relación de visitas del día que recibe cada club, y sustituye toda
+    lectura en tiempo real de precios y clases. Existe sincronización manual inmediata para casos excepcionales,
+    como una promoción que entra en vigor durante el día.
+  </p>
+  <div class="nt w">
+    <span class="l">Consecuencia operativa</span>
+    Una clase, un precio o una promoción que cambia después del corte <strong>no está disponible para el proceso
+    ese día</strong> salvo que se solicite sincronización manual. La regla no es una limitación técnica: es lo que
+    garantiza que los tres canales digan lo mismo a la misma hora, que es la condición para que la comparación
+    entre canales signifique algo.
+  </div>
+
+  <h3 class="ss">7.4 · Las tasas que se leen y qué revela cada una</h3>
+  <p class="intro">
+    Las etapas por separado dicen volumen. Lo que dirige la operación son las tasas entre etapas consecutivas,
+    porque cada una señala un punto distinto del proceso y un responsable distinto.
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:210px">Tasa</th><th style="width:130px">Qué revela</th><th>Dónde se corrige cuando cae</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Entrada → E2</strong></td><td><strong>Interés</strong></td><td>En la puerta de entrada: qué promete la página, el anuncio o la primera frase del asistente</td></tr>
+      <tr><td><strong>E2 → E3</strong></td><td><strong>Fricción</strong></td><td>En el cuestionario: longitud, orden de los reactivos y aquello que resulta incómodo de responder</td></tr>
+      <tr><td><strong>E3 → E4</strong></td><td><strong>Intención</strong></td><td>En la recomendación: si la experiencia ideal convence de venir al club</td></tr>
+      <tr><td><strong>E4 → E5</strong></td><td><strong>Asistencia</strong></td><td>En los recordatorios y en el acuse del club. Una visita agendada que el club no confirma llega al día sin asesor asignado</td></tr>
+      <tr><td><strong>E5 → E6</strong></td><td><strong>Cierre</strong></td><td>En la conducción de la visita: preparación, bloque del entrenador, clase en vivo y manejo de la objeción</td></tr>
+      <tr><td><strong>E6 → E7</strong></td><td><strong>Retención</strong></td><td>Fuera del proceso comercial. Se lee por cohorte a 30, 90 y 180 días</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">7.5 · La lectura semanal</h3>
+  <p class="intro">
+    Dirección Comercial revisa cada semana, sobre resultados agregados y con detalle individual solo ante una
+    excepción escalada:
+  </p>
+  <ul class="pl">
+    <li><b>Las seis tasas del apartado 7.4</b>, por canal y por club, contra la semana anterior.</li>
+    <li><b>Cierre de la captación:</b> proporción de cuestionarios que terminan en visita agendada y motivos de los que no.</li>
+    <li><b>Acuse del club:</b> visitas agendadas sin acuse dentro del plazo, por club.</li>
+    <li><b>Preparación de la visita:</b> visitas conducidas sin plan y participación efectiva de entrenadores e instructores.</li>
+    <li><b>Motivos de no cierre</b> más frecuentes, agrupados a partir del registro literal que deja el asesor.</li>
+    <li><b>Incompatibilidad de horario:</b> señales acumuladas por club, que indican dónde la parrilla no corresponde con la demanda.</li>
+  </ul>
+
+  <div class="nt g">
+    <span class="l">Regla de lectura</span>
+    Una tasa que cae se atribuye al tramo donde cae, no al asesor. La conversión de visita realizada a membresía
+    contratada es la única que mide desempeño individual; las anteriores miden el sistema. Leerlas al revés
+    produce presión sobre quien no tiene el control del resultado.
+  </div>
+
+  <!-- ═══════ 8 ═══════ -->
+  <h2 class="s"><span class="n">8</span>Protección de datos personales</h2>
+  <p class="intro">
+    El proceso comercial recaba datos personales en sus cuatro canales y, en la visita, información de salud que
+    la persona autodeclara. Este apartado establece <strong>qué se recaba en cada momento, con qué
+    consentimiento, quién responde por ello y qué no se recaba</strong>. Ordena la operación; la validación
+    jurídica de los instrumentos corresponde a Legal.
+  </p>
+
+  <h3 class="ss">8.1 · Marco aplicable</h3>
+  <p class="intro">
+    Rige la <strong>Ley Federal de Protección de Datos Personales en Posesión de Sujetos Obligados</strong>
+    publicada en el Diario Oficial de la Federación el <strong>20 de marzo de 2025</strong>, vigente desde el día
+    siguiente, que abrogó la ley de 2010. La autoridad en la materia es la <strong>Secretaría Anticorrupción y
+    Buen Gobierno</strong>. Toda referencia de este manual a artículos corresponde a ese ordenamiento.
+  </p>
+
+  <h3 class="ss">8.2 · Quién responde por el dato</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:140px">Figura</th><th style="width:200px">Quién</th><th>Qué significa en la operación</th></tr></thead>
+    <tbody>
+      <tr><td class="c">Responsable</td><td><strong>Sports World México</strong></td><td>Decide para qué se tratan los datos, es titular de las bases y responde ante la persona y ante la autoridad. Todo dato personal del proceso reside en infraestructura de Sports World</td></tr>
+      <tr><td class="c">Encargado</td><td><strong>Proveedores que tratan datos por cuenta de Sports World</strong><br><span class="fine">Asistente conversacional, procesador de pagos, proveedor de correo</span></td><td>Tratan el dato siguiendo instrucciones del responsable y no para fines propios. Remitir datos a un encargado <strong>no constituye transferencia</strong> conforme al artículo 2, fracción XX</td></tr>
+      <tr><td class="c">Titular</td><td><strong>El prospecto o socio</strong></td><td>La persona a quien corresponden los datos y quien ejerce los derechos del apartado 8.7</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt">
+    <span class="l">Sobre la comunicación a un encargado</span>
+    El artículo 2, fracción XX, define transferencia como toda comunicación de datos personales realizada a
+    <strong>persona distinta de la titular, del responsable o de la persona encargada</strong> del tratamiento.
+    En consecuencia, entregar datos a un proveedor que los trata por cuenta de Sports World y bajo sus
+    instrucciones <strong>no es transferencia</strong> y no requiere la cláusula del artículo 35. Lo que sí
+    requiere es contrato con el encargado, instrucciones documentadas y medidas de seguridad equivalentes.
+  </div>
+
+  <h3 class="ss">8.3 · Qué se recaba en cada momento y con qué consentimiento</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:170px">Momento</th><th style="width:220px">Qué se recaba</th><th>Consentimiento</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Cuestionario</strong><br><span class="fine">Los cuatro canales</span></td><td>Objetivo, preferencias de entrenamiento, días y franjas, club de preferencia, presencia de hijos y antecedente como socio</td><td><strong>Tácito</strong>, con el aviso a la vista antes del primer reactivo. Ninguno de estos datos es sensible</td></tr>
+      <tr><td><strong>Captura de contacto</strong></td><td>Nombre, apellido, celular y correo electrónico</td><td><strong>Tácito</strong>, con la finalidad declarada: agendar la visita y enviar la recomendación</td></tr>
+      <tr><td><strong>Atención telefónica</strong></td><td>Los mismos datos, capturados por el asesor</td><td><strong>Expreso verbal</strong>, admitido por el artículo 7. Se lee la versión breve del aviso y la aceptación queda registrada con marca de tiempo</td></tr>
+      <tr><td><strong>Visita guiada</strong></td><td>Información de salud que la persona autodeclara, para el primer cruce contra la matriz de contraindicaciones</td><td><strong>Expreso y por escrito</strong> (artículo 8), mediante la autorización AU-01, solicitada con anticipación</td></tr>
+      <tr><td><strong>Contratación</strong></td><td>Identificación oficial, contacto de emergencia, datos de facturación y método de pago</td><td><strong>Expreso</strong>, con el aviso de privacidad de socio, que cubre el tratamiento como miembro</td></tr>
+      <tr><td><strong>Mercadotecnia</strong></td><td>Uso de los datos para comunicaciones comerciales no relacionadas con la solicitud</td><td><strong>Separado y opcional</strong> en todos los canales. Negarlo no impide agendar la visita ni contratar</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">8.4 · Datos de salud: la regla y su razón</h3>
+  <p class="intro">
+    El artículo 2, fracción VI, clasifica como sensible la información sobre el <strong>estado de salud presente
+    o futuro</strong>. El artículo 8 exige para ella consentimiento expreso y por escrito —firma autógrafa,
+    firma electrónica o mecanismo de autenticación— y establece que no podrán crearse bases de datos con datos
+    sensibles sin que se justifique su creación.
+  </p>
+  <p class="intro">
+    La regla del proceso comercial se deriva de ahí y es simple:
+  </p>
+  <ul class="pl">
+    <li><b>Por medios electrónicos no se recaba información de salud.</b> Ni el cuestionario, ni el asistente conversacional, ni el sitio preguntan por condiciones médicas. El cuestionario pregunta por <b>objetivos e intereses</b> —incluidos programas prenatales o de posparto—, que no son diagnóstico ni estado de salud.</li>
+    <li><b>La información de salud se recaba en persona</b>, en la visita guiada y en la valoración física, que es donde puede obtenerse consentimiento expreso y por escrito.</li>
+    <li><b>La autorización se solicita con anticipación</b>, junto con la confirmación de la visita, y no en el mostrador.</li>
+    <li><b>Sin autorización firmada no se aplica el cuestionario de salud ni se corre la matriz de contraindicaciones.</b> La visita se conduce completa; lo que queda condicionado es la recomendación de arranque.</li>
+    <li><b>La justificación de la base existe y es la finalidad del negocio</b>: prescribir entrenamiento sin conocer contraindicaciones pone en riesgo a la persona. Esa justificación se documenta, conforme al artículo 8.</li>
+  </ul>
+  <div class="nt w">
+    <span class="l">Lo que la ley no prohíbe</span>
+    No prohíbe que un club conserve el peso, las medidas, las lesiones o el historial de entrenamiento de sus
+    socios. <strong>Lo que regula es cuándo se recaban, con qué consentimiento y con qué medidas de
+    seguridad.</strong> La decisión del proceso comercial de no pedir salud por medios electrónicos no obedece a
+    una prohibición: obedece a que el consentimiento que la ley exige para ese dato no puede obtenerse
+    razonablemente en una conversación de un minuto.
+  </div>
+
+  <h3 class="ss">8.5 · Minimización: qué no se recaba</h3>
+  <p class="intro">
+    Cada dato que el proceso pide tiene que sostenerse en una finalidad concreta. Los siguientes no se recaban en
+    ninguna etapa del proceso comercial, y su ausencia es deliberada:
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:250px">No se recaba</th><th>Por qué</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Condiciones médicas por medio electrónico</strong></td><td>Requeriría consentimiento expreso y por escrito que ese medio no permite obtener con la calidad que la ley exige</td></tr>
+      <tr><td><strong>Código postal y domicilio en la captación</strong></td><td>No interviene en ninguna decisión del proceso. El club se resuelve por preferencia declarada, no por domicilio</td></tr>
+      <tr><td><strong>Edad exacta o fecha de nacimiento en la captación</strong></td><td>No cambia la recomendación. Se solicita en la contratación, donde sí determina el instrumento a firmar</td></tr>
+      <tr><td><strong>Ingreso, ocupación o nivel socioeconómico</strong></td><td>No interviene en la recomendación y su recolección no tendría finalidad legítima en esta etapa</td></tr>
+      <tr><td><strong>Grabación de la conversación con fines distintos a la operación</strong></td><td>El artículo 16, fracción II, exige aviso específico cuando el dato se obtiene por medio sonoro; el proceso no requiere esa grabación</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">8.6 · Los avisos y dónde se presenta cada uno</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:120px">Aviso</th><th style="width:180px">Dónde se presenta</th><th>Contenido mínimo</th></tr></thead>
+    <tbody>
+      <tr><td class="c">Simplificado</td><td>Sitio web y consola, en pantalla, antes del primer reactivo</td><td>Identidad del responsable, finalidades, mecanismo para negar el consentimiento a las finalidades no necesarias y <strong>dónde consultar el integral</strong> (artículos 15 y 16, fracción II)</td></tr>
+      <tr><td class="c">Breve, leído</td><td>Atención telefónica, en la apertura de la llamada</td><td>El mismo contenido, en la versión que apruebe Legal, con la aceptación registrada</td></tr>
+      <tr><td class="c">Enlazado</td><td>WhatsApp oficial, antes del primer reactivo</td><td>Enlace al aviso integral, con la aceptación registrada en la conversación</td></tr>
+      <tr><td class="c">Integral</td><td>Sitio web, disponible en todo momento</td><td>El contenido completo que exige la ley, incluida la cláusula de transferencia cuando corresponda (artículos 35 y 36)</td></tr>
+      <tr><td class="c">De socio</td><td>Contratación, antes de la firma</td><td>El tratamiento como miembro, incluida la información que produce la valoración física</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">8.7 · Derechos de las personas</h3>
+  <p class="intro">
+    Toda persona puede solicitar el <strong>acceso, la rectificación, la cancelación y la oposición</strong> al
+    tratamiento de sus datos, así como <strong>revocar su consentimiento</strong>. En el proceso comercial esto
+    se traduce en cuatro obligaciones operativas:
+  </p>
+  <ul class="pl">
+    <li><b>El aviso indica el medio para ejercerlos</b> y ese medio está operativo desde el primer día en que el proceso recaba un dato.</li>
+    <li><b>La negativa se registra y se respeta.</b> Cuando una persona pide no ser contactada por una vía, esa marca viaja con su registro y ningún canal la ignora.</li>
+    <li><b>La revocación del consentimiento de mercadotecnia no afecta la operación:</b> la persona conserva su visita agendada y su membresía.</li>
+    <li><b>La solicitud se atiende aunque llegue por el canal equivocado.</b> Quien la reciba la canaliza; no se le pide a la persona que la vuelva a presentar en otro lado.</li>
+  </ul>
+
+  <h3 class="ss">8.8 · Dónde residen los datos y qué ve cada quien</h3>
+  <ul class="pl">
+    <li><b>Los datos personales residen en infraestructura de Sports World.</b> No residen en sistemas de terceros distintos de los encargados contratados para operarlos.</li>
+    <li><b>El tablero de dirección presenta únicamente resultados agregados.</b> El detalle individual se consulta sobre el registro de la persona, por quien tiene función que lo requiera.</li>
+    <li><b>El acceso a la consola es nominal.</b> Cada captura queda asociada a quien la realizó y al club desde el que se hizo; no hay usuarios compartidos.</li>
+    <li><b>El dato de la tarjeta no reside en el club ni en la consola:</b> se sustituye por el testigo que devuelve el procesador de pagos.</li>
+    <li><b>La información de salud se conserva bajo el régimen que defina Legal</b>, separada del registro comercial y accesible solo para las funciones que la requieren.</li>
+  </ul>
+
+  <div class="nt g">
+    <span class="l">Qué exige este apartado de Legal antes de la entrada en vigor</span>
+    Tres instrumentos: el <strong>texto de la autorización AU-01</strong> para la información de salud
+    autodeclarada; el <strong>guion del aviso leído</strong> para la atención telefónica; y el <strong>régimen de
+    conservación</strong> de la identificación oficial y de la información de la valoración física. Sin ellos el
+    proceso opera, pero los pasos que dependen de cada uno quedan detenidos por diseño, no por omisión.
+  </div>
+
+  <!-- ═══════ 9 ═══════ -->
+  <h2 class="s"><span class="n">9</span>Los procedimientos</h2>
+  <p class="intro">
+    Cinco procedimientos cubren el proceso de punta a punta. Cada uno es autónomo: quien opera un canal no
+    necesita leer los otros. Este apartado establece qué resuelve cada uno, dónde empieza, dónde termina y con
+    qué se conecta.
+  </p>
+
+  <h3 class="ss">9.1 · Los tres procedimientos de captación</h3>
+  <p class="intro">
+    Los tres aplican el mismo cuestionario, producen la misma experiencia ideal y el mismo brief, y terminan en
+    el mismo punto: una visita agendada con acuse del club, o un registro sin cita al que el club da seguimiento.
+    Lo que cambia entre ellos es <strong>quién conduce, en qué momento la persona deja de ser anónima y qué
+    puede ocurrir en la misma sesión</strong>.
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:106px">Clave</th><th style="width:150px">Canal</th><th style="width:190px">Puntos de entrada</th><th>Lo que solo ocurre aquí</th><th style="width:56px">Pasos</th></tr></thead>
+    <tbody>
+      <tr><td class="c"><a href="sop-0101.html">SOP/SW/0101</a></td><td><strong>WhatsApp oficial</strong></td><td>Campaña con identificador de anuncio · Mensaje directo</td><td>La persona está identificada desde el primer mensaje. El asistente conduce el cuestionario y escala a una persona solo cuando no puede responder algo, en horario de oficina. La recomendación se explica en voz y se envía por correo, porque el prospecto no puede revisarla en pantalla</td><td class="d">53</td></tr>
+      <tr><td class="c"><a href="sop-0102.html">SOP/SW/0102</a></td><td><strong>Sitio web</strong></td><td>Recorrido autónomo · Recorrido asistido</td><td>Único canal con tramo anónimo: la persona se identifica al capturar su contacto. Puede alternar entre recorrido autónomo y asistido sin reiniciar, y ver el catálogo del club en pantalla</td><td class="d">54</td></tr>
+      <tr><td class="c"><a href="sop-0103.html">SOP/SW/0103</a></td><td><strong>Consola del asesor</strong></td><td>Llamada entrante · Llamada a referido · Persona que llega al club</td><td>Único canal donde la visita puede realizarse en el momento. También el único que trata datos obtenidos de un tercero, con la constancia de autorización que eso exige</td><td class="d">52</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">9.2 · Los dos procedimientos de la espina de conversión</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:106px">Clave</th><th style="width:150px">Tramo</th><th>Qué resuelve</th><th style="width:56px">Pasos</th></tr></thead>
+    <tbody>
+      <tr><td class="c"><a href="sop-0201.html">SOP/SW/0201</a></td><td><strong>La Experiencia Guiada</strong></td><td>La visita, en tres bloques: preparación antes de que la persona llegue, conducción del recorrido y propuesta con cierre. Ordena el método de venta de Sports World en pasos numerados y contiene el primer cruce contra la información de salud</td><td class="d">72</td></tr>
+      <tr><td class="c"><a href="sop-0301.html">SOP/SW/0301</a></td><td><strong>Contratación y alta</strong></td><td>Del plan aceptado al socio activo: términos, contrato, cobro, alta, activación de la aplicación y valoración física. Contiene además la captura del dato del funnel por asesor y su agregación por club, plaza y nacional</td><td class="d">37</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">9.3 · Cómo se conectan</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:230px">Traspaso</th><th style="width:150px">Qué viaja</th><th>Qué puede fallar y cómo se detecta</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Captación → club</strong><br><span class="fine">Cualquiera de los tres canales</span></td><td>Solicitud de visita y brief del asesor</td><td>Que el club no acuse. Se detecta porque el acuse se registra sobre el prospecto y la lectura semanal cuenta las solicitudes sin acuse por club</td></tr>
+      <tr><td><strong>Club → visita</strong></td><td>Brief abierto y plan de visita</td><td>Que la visita no se prepare. Lo verifica la gerencia al arranque del día y la visita sin plan se registra en lugar de disimularse</td></tr>
+      <tr><td><strong>Visita → contratación</strong></td><td>Términos aceptados y brief con el registro del asesor</td><td>Que las condiciones ofrecidas ya no estén vigentes. El primer bloque de la contratación lo verifica contra el catálogo del día antes de firmar</td></tr>
+      <tr><td><strong>Contratación → socio</strong></td><td>Experiencia ideal vinculada al expediente y valoración agendada</td><td>Que la persona se retire sin la aplicación activa o sin fecha de valoración. Lo verifica la gerencia al cierre del día</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 10 ═══════ -->
+  <h2 class="s"><span class="n">10</span>Glosario</h2>
+  <p class="intro">
+    Todo término cuyo significado no sea evidente para alguien ajeno al proyecto. Los procedimientos citan estos
+    términos y no los redefinen.
+  </p>
+
+  <h3 class="ss">10.1 · El sistema y sus instrumentos</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:210px">Término</th><th>Definición</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Experiencia ideal</strong><br><span class="fine">EI-01</span></td><td>Producto del sistema: la recomendación personalizada que resulta del cuestionario —club, combinación de entrenamiento, clases idóneas y su horario—. El prospecto la recibe como su plan; el asesor, como insumo del brief</td></tr>
+      <tr><td><strong>Cuestionario de Experiencia Ideal</strong><br><span class="fine">CEI-01</span></td><td>Instrumento único de calificación, idéntico en los cuatro canales. Requiere aproximadamente un minuto del prospecto. Su versión íntegra está en el Anexo A</td></tr>
+      <tr><td><strong>Brief del asesor</strong><br><span class="fine">BA-01</span></td><td>Traducción de la experiencia ideal a instrucciones de venta, en ocho bloques. Es de uso interno y no se entrega al prospecto</td></tr>
+      <tr><td><strong>Plan de visita</strong><br><span class="fine">PV-01</span></td><td>Producto de la preparación de la visita: ruta por áreas, entrenador asignado con hora, clase de mayor impacto y referencias autorizadas</td></tr>
+      <tr><td><strong>Catálogo comercial del día</strong><br><span class="fine">CAT-01</span></td><td>Estado vigente de clubes, clases con su horario real, planes y promociones, conforme al corte de las 06:00</td></tr>
+      <tr><td><strong>Matriz de contraindicaciones</strong><br><span class="fine">MC-01</span></td><td>Instrumento del primer cruce: contrasta la condición que la persona autodeclara contra cada clase recomendada y devuelve una sustitución, nunca una exclusión</td></tr>
+      <tr><td><strong>Catálogo territorial</strong><br><span class="fine">CT-01</span></td><td>Correspondencia vigente entre club y plaza. Proviene del CRM y no se congela en la documentación</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">10.2 · Operación y canales</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:210px">Término</th><th>Definición</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Asistente conversacional</strong></td><td>Sistema que atiende el WhatsApp oficial. Responde de inmediato con independencia del horario y escala a una persona solo cuando concurren horario de oficina y una pregunta que no puede resolver, o petición expresa del prospecto</td></tr>
+      <tr><td><strong>Consola</strong></td><td>Herramienta del personal del club para aplicar el cuestionario en atención telefónica o presencial. Acceso nominal y restringido: no hay usuarios compartidos</td></tr>
+      <tr><td><strong>Punto de entrada</strong></td><td>Vía por la que se origina un contacto dentro de un mismo canal. WhatsApp tiene dos, el sitio dos y la consola tres</td></tr>
+      <tr><td><strong>Corte de las 06:00</strong></td><td>Sincronización diaria con el CRM: lo registrado hasta las 05:59, hora de la Ciudad de México, se publica ese día. Sustituye toda lectura en tiempo real de precios y clases. Admite sincronización manual inmediata para casos excepcionales</td></tr>
+      <tr><td><strong>Registro sin cita</strong></td><td>Prospecto que completó el cuestionario y recibió su recomendación, pero no agendó visita. Se escribe igual en el CRM para que cuente en el funnel y el club le dé seguimiento</td></tr>
+      <tr><td><strong>Visita inmediata</strong></td><td>Visita guiada que ocurre en la misma sesión de la captación. Solo es posible en la consola, cuando la persona llega al club y hay asesor disponible</td></tr>
+      <tr><td><strong>Acuse del club</strong></td><td>Confirmación registrada de que el club recibió la solicitud de visita y designó asesor responsable. Se registra sobre el mismo prospecto en el CRM</td></tr>
+      <tr><td><strong>Señal de incompatibilidad de horario</strong></td><td>Marca en el brief cuando ninguna clase idónea coincide con los días y franjas que la persona declaró. No bloquea ni filtra nada: advierte al asesor y, agregada por club, indica dónde la parrilla no corresponde con la demanda</td></tr>
+      <tr><td><strong>Plantilla autorizada</strong></td><td>Mensaje aprobado previamente por la plataforma de mensajería, requisito para iniciar conversación fuera de la ventana de atención. Los recordatorios de visita las requieren</td></tr>
+      <tr><td><strong>Plaza</strong></td><td>Agrupación territorial de clubes usada para la lectura de resultados. Proviene del catálogo territorial; todo club pertenece a una sola plaza</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">10.3 · Medición</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:210px">Término</th><th>Definición</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Funnel</strong></td><td>Secuencia de etapas por las que pasa un prospecto, con la definición operativa de cuándo cuenta cada una. Su definición canónica está en el apartado 7</td></tr>
+      <tr><td><strong>Etapa</strong></td><td>Punto del funnel que se registra una sola vez y en un momento definido. E2 cuestionario iniciado, E3 completado, E4 visita agendada, E5 visita realizada, E6 membresía contratada, E7 membresía cancelada</td></tr>
+      <tr><td><strong>Atribución de origen</strong></td><td>Canal, subtipo y campaña con que ingresó el prospecto. Se sella en la entrada y viaja con su registro hasta la última etapa. Sin ella, el resultado no se atribuye a nada</td></tr>
+      <tr><td><strong>Llave de conciliación</strong></td><td>Dato que permite unir etapas producidas en sistemas distintos. De visita a membresía: nombre, apellido, teléfono y club. De membresía a cancelación: número de membresía</td></tr>
+      <tr><td><strong>Idempotencia</strong></td><td>Propiedad que garantiza una sola escritura por prospecto aunque la operación se repita. Es lo que evita registros duplicados cuando una conversación o un recorrido se reanudan</td></tr>
+      <tr><td><strong>Tasa</strong></td><td>Proporción entre dos etapas consecutivas. Al agregarse hacia arriba se recalcula sobre la suma de numeradores y denominadores; nunca se promedia</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">10.4 · La visita y el método de venta</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:210px">Término</th><th>Definición</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Pista</strong></td><td>Énfasis con que se conduce la venta. En <em>venta nueva</em> el hilo conductor es el objetivo que la persona quiere alcanzar; en <em>reactivación</em>, el motivo por el que se fue</td></tr>
+      <tr><td><strong>Pregunta de alivio</strong></td><td>Petición de permiso para preguntar y para tomar notas, antes del sondeo. Convierte el sondeo en conversación</td></tr>
+      <tr><td><strong>Triángulo ACR</strong></td><td>Afinidad, comunicación y realidad: los tres acuerdos que deben existir antes de proponer. Sin acuerdo sobre la necesidad, la cotización no tiene sustento</td></tr>
+      <tr><td><strong>Las 3 D</strong></td><td>Dinero, decisión y deseo. Califican al prospecto y determinan el ritmo del cierre, no si se conduce o no la visita</td></tr>
+      <tr><td><strong>Precierre</strong></td><td>Confirmación breve, durante el recorrido, de que lo que la persona acaba de ver corresponde con lo que dijo buscar</td></tr>
+      <tr><td><strong>Boomerang</strong></td><td>Técnica de manejo de objeción en cinco pasos: escuchar y anotar literalmente, retroalimentar con el beneficio ligado al objetivo, condicionar el sí y callar</td></tr>
+      <tr><td><strong>Matriz de color</strong></td><td>Clasificación del prospecto según asertividad y sensibilidad, que determina el trato durante la visita y el tipo de cierre</td></tr>
+      <tr><td><strong>Valoración física</strong><br><span class="fine">Body Test</span></td><td>Evaluación corporal que fija el punto de partida del socio. Se agenda antes de que la persona se retire el día de la contratación</td></tr>
+      <tr><td><strong>Primer cruce</strong></td><td>Contraste entre la información de salud que la persona autodeclara en la visita, recabada con autorización escrita, y las clases recomendadas</td></tr>
+      <tr><td><strong>Segundo cruce</strong></td><td>Contraste posterior a la valoración física, antes de que exista prescripción de entrenamiento definitiva. Pendiente de definición</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">10.5 · Protección de datos</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:210px">Término</th><th>Definición</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Titular</strong></td><td>La persona a quien corresponden los datos personales</td></tr>
+      <tr><td><strong>Responsable</strong></td><td>Quien decide para qué se tratan los datos y responde por ellos. En este proceso, Sports World México</td></tr>
+      <tr><td><strong>Encargado</strong></td><td>Quien trata datos por cuenta del responsable y siguiendo sus instrucciones. Remitirle datos no constituye transferencia</td></tr>
+      <tr><td><strong>Dato sensible</strong></td><td>Aquel cuya divulgación puede originar discriminación o riesgo grave. Incluye el estado de salud presente o futuro. Exige consentimiento expreso y por escrito</td></tr>
+      <tr><td><strong>Aviso simplificado</strong></td><td>Versión breve que se muestra al recabar el dato, con identidad del responsable, finalidades, mecanismo para negar las no necesarias y dónde consultar el aviso integral</td></tr>
+      <tr><td><strong>Tokenización</strong></td><td>Sustitución del dato de la tarjeta por un testigo que devuelve el procesador de pagos. El dato original no reside en el club ni en la consola</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 11 ═══════ -->
+  <h2 class="s"><span class="n">11</span>Recomendaciones posteriores a la contratación</h2>
+  <p class="intro">
+    El proceso comercial concluye con el socio activo. Lo que sigue —que use la membresía, que permanezca y que
+    traiga a otros— determina el valor real de cada venta y <strong>no está normalizado</strong>. Este apartado
+    no prescribe: señala lo que conviene resolver y en qué orden, para que la decisión se tome con el problema a
+    la vista.
+  </p>
+
+  <h3 class="ss">11.1 · Lo que el proceso ya deja preparado</h3>
+  <ul class="pl">
+    <li><b>La experiencia ideal vinculada al expediente del socio</b>, disponible para el entrenador que lo reciba.</li>
+    <li><b>La primera sesión reservada</b> dentro de los días y franjas que la persona declaró.</li>
+    <li><b>La valoración física agendada</b> a fecha cierta.</li>
+    <li><b>Dos contactos programados</b> en la primera semana, con responsable asignado.</li>
+    <li><b>El canal de origen conservado</b>, lo que permite leer permanencia por canal y no solo venta por canal.</li>
+  </ul>
+
+  <h3 class="ss">11.2 · Lo que conviene resolver, en orden</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:52px">Nº</th><th style="width:210px">Tema</th><th>Por qué importa y qué falta decidir</th></tr></thead>
+    <tbody>
+      <tr><td class="c">1</td><td><strong>Incorporación de las primeras cuatro semanas</strong></td><td>Es el periodo en que se decide la permanencia. Falta definir qué ocurre en cada semana, quién responde y qué se registra. Sin esto, los dos contactos de la primera semana son lo único que existe</td></tr>
+      <tr><td class="c">2</td><td><strong>El segundo cruce contra la información de salud</strong></td><td>Está señalado como pendiente en dos procedimientos. Falta determinar quién lo ejecuta, qué documento genera y dónde reside la información resultante. Condiciona la prescripción de entrenamiento</td></tr>
+      <tr><td class="c">3</td><td><strong>Programa de referidos</strong></td><td>Tres procedimientos preguntan por referidos y ninguno puede registrarlos con validez: falta el incentivo, el texto de autorización y dónde queda la constancia. Mientras no exista, la llamada a un referido está detenida por diseño</td></tr>
+      <tr><td class="c">4</td><td><strong>Señales tempranas de abandono</strong></td><td>La frecuencia de uso de las primeras semanas anticipa la cancelación mucho antes que el aviso de baja. Falta definir el umbral, quién recibe la señal y qué hace con ella</td></tr>
+      <tr><td class="c">5</td><td><strong>Proceso de cancelación</strong></td><td>Hoy es el punto de mayor fricción documentada con el cliente. Normalizarlo protege la marca incluso cuando la persona se va, y produce el motivo de baja que la medición de retención requiere</td></tr>
+      <tr><td class="c">6</td><td><strong>Reactivación de socios anteriores</strong></td><td>La pista de reactivación existe en la visita, pero no hay procedimiento que decida a quién se contacta, cuándo y con qué oferta. Es la base instalada más barata de recuperar</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt">
+    <span class="l">Criterio para priorizar</span>
+    Los seis temas no cuestan lo mismo. Los números 2 y 3 <strong>desbloquean pasos que hoy están detenidos</strong>
+    dentro de los procedimientos vigentes y no requieren construir nada nuevo. Los números 1, 4, 5 y 6 son
+    procesos nuevos y compiten por la misma capacidad. Conviene resolver primero los dos que ya tienen un hueco
+    abierto en la operación.
+  </div>
+
+  <!-- ═══════ 12 ═══════ -->
+  <h2 class="s"><span class="n">12</span>Control de cambios</h2>
+
+  <h3 class="ss">12.1 · Quién autoriza qué</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:210px">Tipo de cambio</th><th style="width:190px">Quién autoriza</th><th>Efecto</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Corrección de redacción</strong><br><span class="fine">Sin efecto en la conducta prescrita</span></td><td>Dirección Comercial</td><td>Nueva versión menor. No requiere reentrenamiento</td></tr>
+      <tr><td><strong>Cambio en un paso</strong><br><span class="fine">Orden, responsable o condición</span></td><td>Dirección Comercial</td><td>Nueva versión menor, con nota en el apartado 5 del procedimiento afectado. Requiere comunicación a quienes lo operan</td></tr>
+      <tr><td><strong>Cambio en un principio</strong><br><span class="fine">P-01 a P-10</span></td><td>Dirección General, a propuesta de Dirección Comercial</td><td>Nueva versión mayor del manual y revisión de los cinco procedimientos, porque los principios obligan en todos</td></tr>
+      <tr><td><strong>Alta o baja de un procedimiento</strong></td><td>Dirección General</td><td>Nueva versión mayor del manual, con actualización del apartado 9 y del índice del depósito</td></tr>
+      <tr><td><strong>Cambio en instrumentos legales</strong><br><span class="fine">Avisos, autorizaciones, contrato</span></td><td>Legal, con Dirección Comercial</td><td>Entra en vigor en la fecha que Legal determine, con independencia del ciclo de revisión del manual</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">12.2 · Periodicidad y vigencia</h3>
+  <ul class="pl">
+    <li><b>Revisión ordinaria anual.</b> La fecha de revisión de cada documento consta en su cabecera de control.</li>
+    <li><b>Revisión extraordinaria</b> cuando cambia la ley aplicable, el sistema que soporta un paso, o cuando la lectura semanal muestra un mismo defecto en más de un club durante cuatro semanas consecutivas.</li>
+    <li><b>Rige únicamente la versión publicada</b>, identificada en la cabecera de control de cada documento. Una copia impresa no es referencia: se consulta la versión en línea.</li>
+    <li><b>Una discrepancia entre la operación y el documento no se resuelve localmente.</b> Se reporta a Dirección Comercial, que determina si es excepción de ese caso o cambio que el documento debe incorporar.</li>
+  </ul>
+
+  <h3 class="ss">12.3 · Registro de versiones</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:88px">Versión</th><th style="width:120px">Fecha</th><th>Qué cambió</th></tr></thead>
+    <tbody>
+      <tr><td class="c">1.0</td><td class="d">01-SEP-2026</td><td>Versión inicial del manual y de los cinco procedimientos</td></tr>
+    </tbody>
+  </table></div>
+
+<!-- ═══════ ANEXO A ═══════ -->
+  <h2 class="s"><span class="n">A</span>Anexo A · Cuestionario de Experiencia Ideal (CEI-01)</h2>
+
+  <p class="intro">
+    Instrumento único de calificación, idéntico en los tres canales de captación. <strong>16 reactivos base y
+    3 condicionales</strong>, aproximadamente un minuto de participación del prospecto. Las opciones marcadas
+    con barra se conjugan según el reactivo 2; cuando la respuesta es «Prefiero no mencionarlo» se emplea la
+    terminación dual.
+  </p>
+
+  <div class="cu"><table class="cq">
+    <thead><tr><th>Nº</th><th style="width:190px">Reactivo</th><th>Opciones de respuesta</th><th>Determina</th></tr></thead>
+    <tbody>
+      <tr><td colspan="4" class="secq">Identidad y trato</td></tr>
+      <tr><td class="qn">1</td><td class="qt">¿Cómo te llamas?</td><td class="qo">Texto libre. La primera palabra se toma como nombre de pila.</td><td class="qy">Trato en primera persona en toda la comunicación</td></tr>
+      <tr><td class="qn">2</td><td class="qt">¿Con qué género te identificas?</td><td class="qo"><ol><li>Mujer</li><li>Hombre</li><li>Prefiero no mencionarlo</li></ol></td><td class="qy">Concordancia gramatical de todo el texto</td></tr>
+
+      <tr><td colspan="4" class="secq">Objetivos · los dos reactivos de control</td></tr>
+      <tr><td class="qn">3</td><td class="qt">¿Qué quieres sentir al salir del club?<br><span class="fine">Elige una. Define el tono de tu experiencia ideal.</span></td><td class="qo"><ol>
+        <li>Desconectado / Desconectada del trabajo y la rutina</li>
+        <li>Renovado / Renovada y de buen ánimo</li>
+        <li>Parte de una comunidad saludable</li>
+        <li>Confiado / Confiada en que mi cuerpo no me va a fallar</li>
+        <li>Más a gusto conmigo mismo / conmigo misma</li></ol></td><td class="qy">Objetivo emocional. Fija el tono de la recomendación, no su contenido</td></tr>
+      <tr><td class="qn">4</td><td class="qt">¿Qué buscas?<br><span class="fine">Puedes elegir hasta dos. La primera es tu objetivo principal.</span></td><td class="qo"><ol>
+        <li>Bajar de peso</li>
+        <li>Mejorar mi estética corporal y definición muscular</li>
+        <li>Aumentar masa muscular</li>
+        <li>Mejorar mi desempeño atlético</li>
+        <li>Mejorar mi salud cardiovascular</li>
+        <li>Recuperarme de una lesión o dolor crónico</li></ol></td><td class="qy"><strong>Objetivo funcional. La primera selección gobierna toda la resolución:</strong> bloques de entrenamiento, ponderación y clases idóneas. La segunda solo diversifica</td></tr>
+
+      <tr><td colspan="4" class="secq">Modalidad y ritmo</td></tr>
+      <tr><td class="qn">5</td><td class="qt">¿Dónde te gustaría entrenar?</td><td class="qo"><ol>
+        <li>En piso, área seca</li>
+        <li>En la alberca</li>
+        <li>Ambas</li>
+        <li>Lo que mi entrenador recomiende</li></ol></td><td class="qy">Modalidad de entrenamiento. Interruptor estructural: cambia el catálogo completo de bloques y clases. La alberca pasa a ser amenidad de experiencia requerida</td></tr>
+      <tr><td class="qn">6</td><td class="qt">¿A qué ritmo te gusta entrenar?</td><td class="qo">Escala de intensidad preferida, de tranquila a exigente, en selección única.</td><td class="qy">Se traslada al brief como intensidad preferida. No filtra el catálogo: el asesor lo concilia en la visita</td></tr>
+      <tr><td class="qn">7</td><td class="qt">¿Hay algo que quieras que tu recomendación tome en cuenta?<br><span class="fine">Puedes elegir varias, o ninguna.</span></td><td class="qo"><ol>
+        <li>Prefiero ejercicio de bajo impacto</li>
+        <li>Prefiero evitar saltos y movimientos bruscos</li>
+        <li>Prefiero evitar trabajo abdominal intenso</li>
+        <li>Prefiero evitar la alta intensidad sostenida</li>
+        <li>Ninguna en particular</li></ol></td><td class="qy">Preferencias de entrenamiento. Ajustan la selección de clases. <strong>Son preferencias, no condiciones de salud</strong></td></tr>
+
+      <tr><td colspan="4" class="secq">Disponibilidad</td></tr>
+      <tr><td class="qn">8</td><td class="qt">¿En qué horarios te queda mejor?<br><span class="fine">Puedes elegir varios.</span></td><td class="qo">Franjas horarias del día, en selección múltiple.</td><td class="qy">Se traslada al brief como disponibilidad declarada. La conciliación de horarios ocurre con el asesor</td></tr>
+      <tr><td class="qn">9</td><td class="qt">¿Qué días?<br><span class="fine">Puedes elegir varios.</span></td><td class="qo">Días de la semana, de lunes a domingo, en selección múltiple.</td><td class="qy">Igual que el reactivo 8</td></tr>
+
+      <tr><td colspan="4" class="secq">Nivel e historial</td></tr>
+      <tr><td class="qn">10</td><td class="qt">¿Cuál es tu nivel?</td><td class="qo"><ol><li>Principiante</li><li>Intermedio</li><li>Avanzado</li></ol></td><td class="qy">Filtra las clases candidatas por nivel permitido. Determina la señal de recorrido guiado obligatorio en el brief</td></tr>
+      <tr><td class="qn">11</td><td class="qt">¿Cómo llegas a este momento?</td><td class="qo"><ol>
+        <li>Es mi primera vez en un gimnasio</li>
+        <li>Vengo de otro gimnasio</li>
+        <li>Regreso después de una pausa</li>
+        <li>Llevo tiempo sin actividad física</li></ol></td><td class="qy">Determina las señales del brief y <strong>habilita los reactivos 12, 13 y 14</strong>, que son los que distinguen una venta nueva de una reactivación</td></tr>
+      <tr class="cond"><td class="qn">12</td><td class="qt">¿En qué gimnasio entrenas?<br><span class="fine">Condicional · solo si el reactivo 11 es «Vengo de otro gimnasio»</span></td><td class="qo">Texto libre, una línea.</td><td class="qy">Identifica al competidor concreto. El asesor llega sabiendo contra qué compara y qué beneficios contrastar</td></tr>
+
+      <tr class="cond"><td class="qn">13</td><td class="qt">Antes de esa pausa, ¿dónde entrenabas?<br><span class="fine">Condicional · solo si el reactivo 11 es «Regreso después de una pausa»</span></td><td class="qo"><ol><li>En Sports World</li><li>En otro gimnasio</li><li>Por mi cuenta, sin gimnasio</li></ol></td><td class="qy"><strong>Activa la pista de reactivación.</strong> Cuando la respuesta es Sports World, el sistema localiza la membresía anterior antes de la visita y el brief lo señala: la conversación no arranca como venta nueva</td></tr>
+
+      <tr class="cond"><td class="qn">14</td><td class="qt">¿Cuánto tiempo duró la pausa?<br><span class="fine">Condicional · solo si el reactivo 11 es «Regreso después de una pausa»</span></td><td class="qo"><ol><li>Menos de tres meses</li><li>Entre tres meses y un año</li><li>Más de un año</li></ol></td><td class="qy">Determina la señal de primera sesión conservadora en el brief</td></tr>
+
+      <tr><td colspan="4" class="secq">Acompañamiento</td></tr>
+      <tr><td class="qn">15</td><td class="qt">¿Cómo prefieres entrenar?</td><td class="qo"><ol>
+        <li>Solo / Sola, a mi ritmo</li>
+        <li>Acompañado / Acompañada, en clases o grupo</li>
+        <li>Me da igual</li></ol></td><td class="qy">Alterna el tercer bloque entre clases grupales y entrenamiento personal. Determina la señal de no presionar paquete de clases</td></tr>
+      <tr><td class="qn">16</td><td class="qt">¿Con quién vas a usar el club?</td><td class="qo"><ol>
+        <li>Solo / Sola</li><li>En pareja</li><li>Yo y mis hijos</li><li>La familia completa</li></ol></td><td class="qy">Determina los mensajes familiares del reporte y el acompañamiento que el brief anota</td></tr>
+      <tr><td class="qn">17</td><td class="qt">¿Te interesa alguno de estos programas?<br><span class="fine">Puedes elegir varios, o ninguno.</span></td><td class="qo"><ol>
+        <li>Programa prenatal</li>
+        <li>Programa de posparto</li>
+        <li>Programa infantil</li>
+        <li>Entrenamiento personal</li>
+        <li>Ninguno por ahora</li></ol></td><td class="qy">Interés en programas. Cuando se elige el programa infantil o uno de los dos de maternidad, <strong>la amenidad correspondiente pasa a ser requisito</strong> en la resolución del club. <strong>Pregunta por el interés en un servicio, no por un estado de salud</strong></td></tr>
+
+      <tr><td colspan="4" class="secq">Ancla geográfica</td></tr>
+      <tr><td class="qn">18</td><td class="qt">¿Cerca de qué te conviene entrenar?</td><td class="qo"><ol><li>De mi casa</li><li>De mi trabajo</li><li>De ambos</li><li>No tengo preferencia</li></ol></td><td class="qy">Ancla de referencia del resolver de club</td></tr>
+      <tr><td class="qn">19</td><td class="qt">¿Y dónde queda?</td><td class="qo">Código postal de cinco dígitos, o nombre de colonia. Basta con uno de los dos.</td><td class="qy">Entrada geográfica del resolver. Se convierte en coordenadas para la búsqueda por radio</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt g">
+    <span class="l">Qué no pregunta el cuestionario, y por qué</span>
+    El instrumento <strong>no recaba condiciones médicas, embarazo o posparto, tratamientos para control de
+    peso, peso, estatura, medidas corporales ni datos de menores de edad</strong>. La Ley Federal de
+    Protección de Datos Personales en Posesión de los Particulares clasifica los datos de salud como
+    sensibles y exige para ellos consentimiento expreso y por escrito, con firma autógrafa, firma electrónica
+    o mecanismo de autenticación equivalente. Un cuestionario de un minuto aplicado por conversación no puede
+    satisfacer ese estándar, y la sanción por incumplimiento se duplica tratándose de datos sensibles.
+    <p style="margin-top:9px">La decisión no degrada la recomendación. El reactivo 7 recoge la
+    <strong>preferencia</strong> de entrenamiento, que es lo que el sistema necesita para seleccionar clases;
+    la condición que la origina no le hace falta. Quien prefiere bajo impacto recibe exactamente la misma
+    selección, sin que la empresa asuma la custodia de un dato sensible ni la responsabilidad clínica que lo
+    acompaña. La valoración de salud corresponde al profesional del club, en el momento del alta, con el
+    consentimiento y el formato que ese acto sí permite.</p>
+    <p style="margin-top:9px">El reactivo 17 aplica la misma lógica en toda su extensión: pregunta por el <strong>interés en un
+    programa</strong> —prenatal, posparto, infantil o entrenamiento personal— y nunca por el estado que lo
+    motiva. Quien busca acompañamiento en el embarazo lo encuentra, y la empresa registra un interés
+    comercial en lugar de un dato de salud del que tendría que responder.</p>
+  </div>
+
+  <p class="fine" style="margin-top:12px">
+    El texto literal de las opciones de los reactivos 6, 8 y 9 se fija en la versión maestra del instrumento;
+    aquí se enuncia su contenido y su tipo de respuesta.
+  </p>
+
+
+  <div class="ft">
+    <strong>MPC/SW/01 · Manual del Proceso Comercial · versión 1.0 · uso interno.</strong><br>
+    Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.<br>
+    <span style="display:block;margin-top:8px">Las referencias a datos de campo corresponden al reporte de 15 entrevistas realizadas los días 14 y 15 de mayo de 2026 con 6 líderes comerciales y 9 asesores, en 13 clubes de la Ciudad de México, Aguascalientes, Hermosillo, Puebla y Jerez.</span>
+  </div>
+
+</div>
+</body>
+</html>

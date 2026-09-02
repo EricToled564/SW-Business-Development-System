@@ -1,0 +1,502 @@
+Contratación y alta · SOP/SW/0301 · Sports World
+
+Sports World México · Procedimiento normalizado de operación
+Uso interno
+
+Título
+
+Contratación y alta de la membresía, y captura del dato del funnel
+
+Cierre del proceso comercial · De la aceptación del plan al socio activo
+
+No. de documento
+SOP/SW/0301
+
+Estatus
+Uso interno
+
+Sustituye a
+N/A
+
+Autor
+Dirección Comercial
+Firma: en expediente
+
+Aprueba
+Dirección General
+Firma: en expediente
+
+Versión
+1.0
+
+Fecha de entrada en vigor
+01-SEP-2026
+
+Fecha de revisión
+01-SEP-2027
+
+Manual
+MPC/SW/01
+§7 medición · §10 glosario
+
+1Introducción: cómo funciona este documento
+
+1.1 · Qué es y qué no es
+
+Este es un procedimiento normalizado de operación. Establece qué ocurre, en qué orden y
+quién responde por cada paso, desde que el prospecto acepta el plan hasta que queda como socio activo con su
+primera sesión agendada. Es uno de los procedimientos del Manual del Proceso Comercial (MPC/SW/01) y se lee
+de forma autónoma.
+
+Contiene además el apartado 11, que fija cómo se captura el dato del funnel a nivel de cada
+asesor y cómo se agrega por club, por plaza y a nivel nacional. Ese apartado vive aquí porque es en la
+contratación donde el funnel se cierra: es el único punto del proceso en que existen a la vez el prospecto,
+el asesor, el club y el número de membresía.
+
+1.2 · Cómo se lee
+
+El apartado 9 es el procedimiento. Una tabla de tres columnas: paso, acción y responsable.
+
+Los pasos se numeran de forma consecutiva y esa numeración es la única referencia válida.
+
+Las decisiones van dentro de la acción, con el paso de destino explícito para cada rama.
+
+El diagrama del apartado 8 usa la misma numeración. Si el diagrama y la tabla discrepan, rige la tabla.
+
+Los pasos sombreados en rojo son excepciones, los sombreados en ámbar son decisiones y los de borde punteado corresponden a un bloque pendiente de definición.
+
+Los documentos se citan por clave y los principios también —P-01 a P-10—. Unos y otros están establecidos en el manual.
+
+1.3 · Quién lo usa y para qué
+
+Quién Cuándo lo usa Pasos
+
+Asesor de club Es su norma de operación en toda contratación. Es el documento que aprende en su incorporación 1 – 33
+
+Gerencia del club Al autorizar una excepción de cobro, al verificar el cierre del día y al revisar la agregación de su club 18 · 36 · 37
+
+Entrenador o instructor En la presentación al equipo del club y en la ejecución del Body Test 29 · 31
+
+Sistemas Alta en el CRM, tokenización, generación del número de membresía y escritura de las etapas 20 – 23
+
+Dirección Comercial En la lectura semanal por asesor, club, plaza y nacional, y ante cualquier excepción escalada Completo · §11
+
+Legal Al definir el contrato de membresía, el aviso de privacidad de socio y el tratamiento del documento de identidad 6 · 14
+
+1.4 · Qué hacer cuando la operación no coincide con el documento
+
+No se resuelve con una variante local. La discrepancia se reporta a Dirección Comercial, que determina si es
+una excepción de ese caso o un cambio que el procedimiento debe incorporar. Rige únicamente la versión
+publicada, identificada en la cabecera de control.
+
+2Propósito
+
+Asegurar que toda persona que acepta un plan quede contratada el mismo día, con su membresía activa, su
+aplicación funcionando y su primera sesión agendada antes de retirarse del club; y que esa contratación
+quede registrada con el asesor, el club y el número de membresía que permiten leer el resultado del sistema.
+
+Una contratación que se pospone «para mañana» se pierde con frecuencia, y una que se completa sin activar la
+aplicación ni agendar la valoración produce un socio que no usa lo que compró. El procedimiento cierra
+las dos cosas en la misma sesión: el trámite y el arranque.
+
+3Alcance
+
+3.1 · A qué aplica
+
+A toda contratación de membresía realizada en los 49 clubes de la red, con independencia del canal por el
+que se originó el prospecto y de si la visita fue agendada o inmediata.
+
+3.2 · De dónde llega
+
+Origen Procedimiento Qué entrega
+
+Cierre de la visita guiada SOP/SW/0201 El prospecto aceptó el plan y sus términos quedaron confirmados. Es el origen normal
+
+Seguimiento posterior a una visita sin cierre SOP/SW/0201 El prospecto acepta en la siguiente acción acordada. Entra por el paso 1 con el registro de resultado de aquella visita
+
+Renovación o reactivación de un socio anterior SOP/SW/0201 La pista de reactivación cierra igual que la venta nueva; lo que cambia es el esquema comercial aplicable
+
+3.3 · Qué no cubre este documento
+
+Queda fuera Dónde está
+
+La captación y la calificación del prospecto SOP/SW/0101 · 0102 · 0103
+
+La conducción de la visita guiada y la propuesta comercial SOP/SW/0201
+
+El acompañamiento posterior a la primera semana: permanencia, reactivación y programa de referidos MPC/SW/01, §11
+
+El catálogo de planes, sus importes y sus promociones: provienen del CRM y no se congelan en la documentación CAT/SW/01
+
+El segundo cruce contra la información de salud, posterior a la valoración física Pendiente
+Ver paso 32
+
+4Responsabilidades
+
+Corresponde a la Dirección Comercial asegurar que este procedimiento se cumpla. La responsabilidad de
+ejecutar cada paso se identifica en la columna derecha del apartado 9. Además de los principios P-01 a P-10
+del manual, rigen en la contratación las siguientes reglas:
+
+El alta en el CRM ocurre únicamente después de que la persona aceptó el plan (P-09). Dar de alta antes contamina el funnel con contrataciones que no existen.
+
+No hay contratación sin identificación oficial vigente ni sin el aviso de privacidad de socio aceptado.
+
+No se aplican descuentos, esquemas ni promociones que no estén vigentes en el catálogo del día. Lo que no está en el catálogo no existe, aunque se haya ofrecido.
+
+La membresía no se activa sin cobro autorizado. Un cobro rechazado tiene su propio camino y no se resuelve prometiendo regularizarlo después.
+
+Nadie se retira del club sin la aplicación instalada y funcionando, y sin su valoración física agendada a fecha cierta.
+
+La experiencia ideal se vincula al expediente del socio. Es lo que permite que entrenadores y personal del club sepan qué se le recomendó y por qué.
+
+Toda etapa se escribe con asesor, club y plaza (§11). Una contratación sin asesor identificado no se puede leer ni reconocer.
+
+Interviniente Responsabilidad
+
+Asesor de club Conducir la contratación completa, capturar la documentación, cobrar, activar la aplicación, agendar la valoración y registrar el resultado
+
+Gerencia del club Autorizar excepciones de cobro y de esquema, verificar al cierre del día que toda contratación esté completa, y revisar la agregación de su club
+
+Entrenador o instructor Recibir al nuevo socio, ejecutar la valoración física y traducir la experiencia ideal a su arranque de entrenamiento
+
+Sistemas Alta en el CRM, tokenización del método de pago, generación del número de membresía, escritura de las etapas y disponibilidad del catálogo territorial
+
+Legal Contrato de membresía, aviso de privacidad de socio y régimen de tratamiento del documento de identidad
+
+Dirección Comercial Vigilar el cumplimiento, autorizar esquemas y promociones, resolver excepciones escaladas y autorizar cambios a este documento
+
+5Cambios desde la última revisión
+
+Procedimiento nuevo.
+
+6Documentos que intervienen
+
+Esta tabla indica para qué se usa cada documento dentro de este procedimiento. Su contenido y su responsable
+están establecidos en el apartado 6 del manual MPC/SW/01.
+
+Clave Documento Para qué se usa aquí Pasos
+
+BA-01 Brief del asesor Trae los términos confirmados en la visita y las señales de atención. Se cierra al completarse la contratación 1 · 34
+
+EI-01 Experiencia ideal Se vincula al expediente del socio y se entrega de nuevo, ya como socio, para que entrenadores y personal del club la consulten 27
+
+CAT-01 Catálogo comercial del día Planes, importes, vigencias, esquemas de reactivación y promociones aplicables. Lo que no está aquí no se ofrece 2 · 11
+
+CM-01 Contrato de membresía Instrumento que firma la persona. Su texto y sus anexos los define Legal 14 · 19
+
+AS-01 Aviso de privacidad de socio Distinto del aviso de captación: cubre el tratamiento como socio, incluida la información de la valoración 6
+
+RC-01 Registro de contratación
+Nuevo Cierra el procedimiento: qué se contrató, con qué asesor, en qué club y con qué número de membresía 34
+
+CT-01 Catálogo territorial
+Nuevo Correspondencia vigente entre club y plaza. Proviene del CRM y no se congela en la documentación §11
+
+7Documentos relacionados
+
+Clave Documento
+
+MPC/SW/01 Manual del Proceso Comercial. Principios P-01 a P-10 (§4), documentos comunes (§6), medición (§7) y glosario único (§10)
+
+SOP/SW/0201 La Experiencia Guiada de Sports World. Entrega la atención a este procedimiento en su paso 62
+
+SOP/SW/0101 Captación por WhatsApp oficial
+
+SOP/SW/0102 Captación por el sitio web
+
+SOP/SW/0103 Captación en la consola del asesor
+
+CAT/SW/01 Régimen de sincronización del catálogo: corte diario de las 06:00 y sincronización manual
+
+— Método de venta de Sports World. Instrucción de trabajo. Su paso 07, activar y acompañar, corresponde a los bloques 3 y 4 de este procedimiento
+
+8Diagrama de flujo
+
+Congruente con la numeración del apartado 9. Las decisiones no se numeran.
+
+Inicio
+
+1 · 2Recibe la atención desde la visita guiada y verifica que el plan aceptado esté vigente en el catálogo del día
+
+Decisión¿El plan aceptado sigue vigente? — Sí al 4 · No al 3
+
+3Presenta el equivalente vigente y obtiene conformidad expresa antes de continuar
+
+4 – 9Solicita identificación, captura contacto y contacto de emergencia, y recaba el aviso de privacidad de socio
+
+Decisión¿La persona es menor de edad? — Sí al 8 · No al 10
+
+11 – 15Presenta el contrato, explica cargos y periodicidad, tokeniza el método de pago y ejecuta el cobro inicial
+
+Decisión¿El cobro se autoriza? — Sí al 19 · No al 17
+
+17 · 18Ofrece medio de pago alterno; si tampoco se autoriza, no se da de alta y se acuerda fecha cierta
+
+19 – 23Firma del contrato, alta en el CRM, número de membresía y registro de la etapa E6 con asesor, club y plaza
+
+24 – 28Activa la aplicación, demuestra acceso por código, reservas y amenidades, y vincula la experiencia ideal al expediente
+
+29 – 31Presenta al equipo del club y agenda la valoración física antes de que la persona se retire
+
+33 – 35Solicita referidos, cierra el registro de contratación y programa los dos contactos de la primera semana
+
+36 · 37La gerencia cierra el día y Dirección Comercial realiza la lectura semanal por asesor, club, plaza y nacional
+
+Fin
+
+9Procedimiento
+
+Treinta y siete pasos en cuatro bloques.
+
+Paso Acción Responsable
+
+Bloque 1 · Términos y documentación
+
+1 Recibe la atención desde la visita guiada con el brief abierto y los términos que la persona aceptó: plan, importes, promoción aplicable, forma de pago, periodicidad, vigencia y fecha de inicio. Asesor de club
+
+2 Verifica que el plan, el esquema y la promoción aceptados estén vigentes en el catálogo del día. Asesor de club
+
+3 ¿Lo aceptado sigue vigente?
+Sí — continúa en el paso 5.
+
+No — continúa en el paso 4. Asesor de club
+
+4 Presenta el equivalente vigente, explica la diferencia con lo que se ofreció y obtiene conformidad expresa antes de continuar. No se contrata sobre condiciones que ya no existen.
+Si la persona no acepta el equivalente — se registra el motivo y se acuerda una siguiente acción. Continúa en el paso 35. Asesor de club
+
+5 Solicita identificación oficial vigente, verifica que corresponda a la persona y la digitaliza conforme al régimen que define Legal.
+Si no la trae — la contratación no se completa hoy. Se acuerda fecha cierta y se registra. Continúa en el paso 35. Asesor de club
+
+6 Presenta el aviso de privacidad de socio y recaba su aceptación. Es distinto del aviso de la captación: cubre el tratamiento de la información como socio, incluida la que produce la valoración física. Asesor de club
+
+7 Confirma o captura correo electrónico, celular y contacto de emergencia. El correo y el celular se validan contra los que ya trae el registro del prospecto; si difieren, se conserva el nuevo y se anota el cambio. Asesor de club
+
+8 ¿La persona es menor de edad?
+Sí — continúa en el paso 9.
+
+No — continúa en el paso 10. Asesor de club
+
+9 Requiere la presencia y firma de quien ejerza la patria potestad o la tutela, con su identificación oficial, conforme al contrato de membresía.
+Si no está presente — la contratación no se completa hoy. Continúa en el paso 35. Asesor de club
+
+10 Pregunta si requiere comprobante fiscal y, en su caso, solicita la constancia de situación fiscal y captura los datos de facturación. Asesor de club
+
+Bloque 2 · Contrato, pago y alta
+
+11 Presenta el contrato de membresía y recorre en voz alta lo que la persona debe saber antes de firmar: qué incluye el plan, en qué clubes aplica, vigencia, condiciones de suspensión y condiciones de cancelación.
+Las condiciones de cancelación se explican en la contratación, no cuando la persona quiere cancelar. Asesor de club
+
+12 Explica el cargo inicial y el cargo recurrente: importe de cada uno, fecha del primer cargo, periodicidad y qué ocurre si el cargo no se autoriza en un periodo. Asesor de club
+
+13 Tokeniza el método de pago. El dato de la tarjeta no se conserva en el club ni en la consola: se sustituye por el testigo que devuelve el procesador. Sistema
+
+14 Ejecuta el cobro inicial. Sistema
+
+15 ¿El cobro se autoriza?
+Sí — continúa en el paso 19.
+
+No — continúa en el paso 16. Sistema
+
+16 Ofrece un medio de pago alterno y reintenta una vez. El rechazo se comunica con naturalidad y sin exponer a la persona frente a terceros. Asesor de club
+
+17 ¿El medio alterno se autoriza?
+Sí — continúa en el paso 19.
+
+No — continúa en el paso 18. Sistema
+
+18 No se da de alta la membresía. Se acuerda fecha cierta para retomar, se registra el intento con su motivo y se informa a la gerencia. La persona conserva su experiencia ideal y su brief; no vuelve a empezar.
+Prometer regularizar el cobro después produce socios activos sin pago y una cartera que nadie reclama a tiempo. Continúa en el paso 35. Asesor y Gerencia
+
+19 Obtiene la firma del contrato y entrega copia por correo electrónico en el momento. Asesor de club
+
+20 Da de alta la membresía en el CRM y obtiene el número de membresía. El alta ocurre en este punto y no antes. Sistema
+
+21 Vincula el registro del prospecto con la membresía, conforme a la llave del apartado 7 del manual: nombre, apellido, teléfono y club. Es lo que permite atribuir la venta al canal que la originó. Sistema
+
+22 Registra la etapa E6 · membresía contratada con el número de membresía, el teléfono, el asesor, el club y la plaza (P-09, P-10). Sin esos cinco datos la etapa no se escribe: se detiene y se escala. Sistema
+
+23 Envía al correo de la persona el paquete de documentos: contrato firmado, condiciones del plan, comprobante del cargo y datos de contacto de su club. Sistema
+
+Bloque 3 · Activación · Paso 07 del método: activar y acompañar
+
+24 Acompaña la descarga, el ingreso y la activación de la aplicación con la persona presente. No se deja para que la vea en casa. Asesor de club
+
+25 Demuestra en la aplicación, con la persona operándola: acceso por código, reserva de clases, consulta de horarios, rutinas y clubes de la red a los que su plan da acceso. Asesor de club
+
+26 Acompaña el primer acceso real por código y la primera solicitud de toallas, para que la persona ya lo haya hecho una vez antes de irse. Asesor de club
+
+27 Vincula la experiencia ideal al expediente del socio y se la entrega de nuevo, ya como socia, por el medio que prefiera. Queda disponible para el entrenador que la reciba y para consulta posterior de la persona.
+Es lo que evita que quien la atienda la próxima semana tenga que preguntarle otra vez qué busca. Sistema
+
+28 Reserva con la persona su primera clase o su primera sesión, dentro de los días y las franjas que declaró. Una reserva hecha vale más que una intención declarada. Asesor de club
+
+29 Presenta a la persona con el equipo del club: al menos un entrenador del área que más le interesa y, cuando aplique, la coordinación de la zona infantil. La presentación es por nombre, con su objetivo dicho en voz alta. Asesor y entrenador
+
+30 Explica la valoración física: qué mide, cuánto dura y para qué sirve —es el punto de partida que convierte la recomendación en un plan de entrenamiento. Asesor de club
+
+31 ¿La valoración física se realiza hoy?
+Sí — se ejecuta antes de que la persona se retire.
+
+No — se agenda a fecha y hora ciertas, con recordatorio programado. En ningún caso la persona se retira sin fecha. Asesor y entrenador
+
+32 Bloque pendiente de definiciónSegundo cruce contra la información de salud. El resultado de la valoración física se contrasta con la experiencia ideal vigente antes de que exista una prescripción de entrenamiento definitiva, y esta se ajusta si corresponde.
+Falta determinar quién ejecuta el cruce, qué documento genera y dónde reside la información resultante. Hasta que se determine, este paso opera como indicador: se registra que la valoración ocurrió y queda señalado que el cruce está pendiente. Por definir
+
+Bloque 4 · Cierre, registro y lectura
+
+33 Pregunta si tiene un amigo o familiar a quien le sirva el club, conforme al programa de referidos vigente, y registra la referencia con la autorización que ese programa exija. Asesor de club
+
+34 Genera el registro de contratación: plan contratado, importes, promoción aplicada, número de membresía, asesor, club, plaza, canal de origen y fecha de la primera sesión reservada. Cierra el brief del asesor en la misma operación. Asesor de club
+
+35 Programa los dos contactos de la primera semana: el primero para saber cómo se ha sentido y resolver dudas; el segundo para invitar a un acompañante con el beneficio vigente.
+Cuando el procedimiento se detuvo sin contratar —pasos 4, 5, 9 o 18—, lo que se programa es la siguiente acción acordada con su fecha, sobre el mismo registro del prospecto. Asesor de club
+
+36 Verifica al cierre del día que toda contratación esté completa: contrato firmado, cobro autorizado, aplicación activada, valoración agendada y registro de contratación generado. Lo incompleto se devuelve al asesor el mismo día. Gerencia del club
+
+37 Realiza la lectura semanal conforme al apartado 11: por asesor, por club, por plaza y nacional. Dirección Comercial
+
+Fin del procedimiento
+
+10Registros
+
+Registro Paso Dónde reside
+
+Conformidad con el equivalente vigente 4 Registro del prospecto, con la condición ofrecida y la finalmente aceptada
+
+Identificación digitalizada 5 Expediente del socio, conforme al régimen que defina Legal
+
+Aceptación del aviso de privacidad de socio 6 Expediente del socio, con marca de tiempo
+
+Testigo del método de pago 13 Procesador de pagos. El dato de la tarjeta no reside en el club ni en la consola
+
+Cobro autorizado o rechazado, con su motivo 14 · 17 CRM, sobre el registro de la persona. El rechazo se lee por club en la lectura semanal
+
+Contrato firmado 19 Expediente del socio y copia enviada al correo de la persona
+
+Alta y número de membresía 20 CRM, único sistema de registro permanente
+
+Etapa E6 · membresía contratada 22 Base del funnel, con número de membresía, teléfono, asesor, club y plaza
+
+Experiencia ideal vinculada al socio 27 Expediente del socio, disponible para el entrenador que lo reciba
+
+Primera sesión reservada 28 Aplicación y CRM
+
+Valoración física agendada o realizada 31 · 32 Agenda del club. El cruce posterior está pendiente de definición
+
+Registro de contratación 34 Conservado con el expediente. Es el cierre obligatorio del procedimiento
+
+Contactos de la primera semana 35 CRM, con recordatorio para el asesor responsable
+
+Verificación diaria y lectura semanal 36 · 37 Tablero del club y tablero de Dirección Comercial, con resultados agregados
+
+11Captura del dato del funnel y su agregación
+
+Este apartado establece con qué identificadores se escribe cada etapa y cómo se
+suman los resultados hacia arriba. Sin esto, el funnel del apartado 7 del manual existe como
+definición pero no se puede leer por asesor ni comparar entre clubes.
+
+11.1 · Los cuatro niveles de lectura
+
+Nivel 1
+
+Asesor
+
+Cada persona que atiende, identificada de forma nominal. Es el nivel donde se reconoce el desempeño y donde se detecta quién necesita acompañamiento.
+
+Nivel 2
+
+Club
+
+Los 49 clubes de la red. Es el nivel de la gerencia y el que revela problemas de capacidad, de parrilla de clases o de instalación.
+
+Nivel 3
+
+Plaza
+
+Agrupación territorial de clubes. Es el nivel donde se comparan mercados y donde una diferencia sostenida indica competencia o precio, no desempeño individual.
+
+Nivel 4
+
+Nacional
+
+La red completa. Es el nivel de Dirección General y el que sostiene la comparación entre canales de captación.
+
+El catálogo territorial
+La correspondencia entre club y plaza proviene del CRM y no se congela en este documento,
+por la misma razón que los planes de membresía: cambia sin que cambie el proceso. Al día de esta versión, el
+catálogo agrupa a los 49 clubes en dieciséis plazas: cuatro zonas de la Ciudad de México
+—Norte, Sur, Centro y Poniente— y doce estados —Aguascalientes, Coahuila, Estado de México, Guanajuato,
+Jalisco, Nuevo León, Puebla, Querétaro, Sinaloa, Sonora, Veracruz y Yucatán—.
+Todo club pertenece a una sola plaza. Un club que no tenga plaza
+asignada no se omite del tablero: aparece en un renglón de sin plaza asignada, que es lo que hace
+visible el faltante en lugar de esconderlo.
+
+11.2 · Qué identificadores lleva cada etapa
+
+El asesor no existe en todas las etapas. En los canales digitales, el prospecto recorre el cuestionario y
+agenda su visita sin que haya intervenido una persona; el asesor aparece cuando el club acusa la solicitud y
+designa a quien atenderá. Atribuir a un asesor lo que ocurrió antes de que existiera produce una
+lectura falsa, así que la tabla lo dice explícitamente.
+
+Etapa Asesor Club Cómo se resuelve el club y la plaza
+
+E2 · iniciado No aplica
+Consola: sí Provisional El club aún no está resuelto en los canales digitales. Se lee por canal; el club se asigna cuando la recomendación lo resuelve
+
+E3 · completado No aplica
+Consola: sí Sí La recomendación resuelve el club. Desde aquí toda etapa lleva club, y la plaza se deriva del catálogo territorial
+
+E4 · agendada No aplica
+Consola: sí Sí Club elegido por la persona para su visita
+
+Acuse del club Sí Sí Es el punto en que aparece el asesor en los canales digitales: la gerencia designa responsable y esa designación se escribe sobre el registro
+
+E5 · realizada Sí Sí Asesor que condujo la visita y club donde ocurrió
+
+E6 · contratada Sí Sí Asesor que cerró y club de la contratación, más el número de membresía
+
+Las dos reglas que evitan el doble conteo
+Primera: un prospecto pertenece a un solo club —aquel en el que ocurrió o se agendó su
+visita—, aunque su plan le dé acceso a varios. Cuando la persona cambia de club antes de la visita, el
+registro se mueve completo: no se cuenta en los dos.
+Segunda: quien cierra es quien recibe la contratación. Si un
+asesor conduce la visita y otro cierra en el seguimiento, E5 queda con el primero y E6 con el segundo. El
+registro conserva ambos, de modo que la lectura por asesor no premia ni castiga al que no estuvo.
+
+11.3 · Cómo se agrega hacia arriba
+
+La agregación es aritmética simple, con una regla que decide si el tablero dice la verdad o no.
+
+Los volúmenes se suman. El de un club es la suma de sus asesores; el de una plaza, la suma de sus clubes; el nacional, la suma de las plazas.
+
+Las tasas nunca se promedian: se recalculan. La tasa de una plaza es la suma de sus numeradores dividida entre la suma de sus denominadores, no el promedio de las tasas de sus clubes. Promediar da el mismo peso a un club con diez visitas que a uno con doscientas.
+
+Toda cifra agregada trae su denominador a la vista. Un cierre de 60% sobre cinco visitas y uno de 45% sobre trescientas no se comparan, y sin el denominador el tablero invita a compararlos.
+
+El periodo se define por la fecha del hecho, no por la de captura. Una visita realizada el lunes y capturada el martes cuenta en el lunes.
+
+Los tramos anteriores al acuse no se leen por asesor, por lo establecido en el apartado 11.2. Se leen por canal, por club y por plaza.
+
+11.4 · Qué se lee en cada nivel
+
+Nivel Quién lo revisa Qué se lee
+
+Asesor Gerencia del club Visitas conducidas, contrataciones, conversión de E5 a E6, motivos de no cierre y cumplimiento de la preparación de la visita. Es el único nivel donde la lectura es individual
+
+Club Gerencia y Dirección Comercial Las seis tasas del apartado 7 del manual, acuses dentro de plazo, visitas conducidas sin plan, cobros rechazados y señales de incompatibilidad de horario
+
+Plaza Dirección Comercial Comparación entre clubes de un mismo mercado, con volumen a la vista. Una diferencia sostenida entre plazas indica mercado, no desempeño
+
+Nacional Dirección Comercial y Dirección General El funnel completo por canal de captación, el resultado de punta a punta y la comparación entre plazas
+
+Regla de uso
+La lectura por asesor sirve para reconocer y para acompañar. Un asesor con conversión baja y
+volumen alto necesita acompañamiento en la visita; uno con volumen bajo necesita revisión de la asignación
+que hace su gerencia. Ninguno de los dos casos se resuelve con el número solo, y por eso el tablero presenta
+siempre el motivo de no cierre junto a la tasa.
+
+SOP/SW/0301 · Contratación y alta de la membresía · versión 1.0 · uso interno.
+
+Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.
+
+Recibe la atención de SOP/SW/0201 · La Experiencia Guiada de Sports World. El glosario único y la definición del funnel están en MPC/SW/01, apartados 10 y 7.

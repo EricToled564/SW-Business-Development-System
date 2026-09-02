@@ -9,7 +9,7 @@ par contra este resumen y dice si hubo errores u omisiones, o cambios que no est
 Una edición que no aparezca aquí no ocurrió; una que aparezca y no corresponda a un hallazgo
 cerrado es una edición no autorizada.
 
-**2 de 31 documentos corregidos**, con 15 cambios en total.
+**2 de 38 documentos corregidos**, con 15 cambios en total.
 
 ## experience → experience-MOD — 14 cambios
 
@@ -229,3 +229,10 @@ cerrado es una edición no autorizada.
 - `seguimiento-2026-06-22-MOD`
 - `technical-MOD`
 - `workshop-discovery-MOD`
+- `proceso-mpc-01-MOD`
+- `proceso-mv-01-MOD`
+- `proceso-sop-0101-MOD`
+- `proceso-sop-0102-MOD`
+- `proceso-sop-0103-MOD`
+- `proceso-sop-0201-MOD`
+- `proceso-sop-0301-MOD`

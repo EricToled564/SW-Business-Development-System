@@ -758,12 +758,19 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
     if (!/function textoDeHtml/.test(generadorTxt))
       falla("tools/build-fuentes.js", 0, "falta el extractor de texto de las páginas HTML");
     const PROC = path.join(WEBAPP, "proceso");
-    const paginas = [
-      ...fs.readdirSync(PROC).filter((f) => f.endsWith(".html") && f !== "dec-01.html").sort()
-        .map((f) => [path.join(PROC, f), "proceso-" + f.replace(/\.html$/, "") + ".txt"]),
-      ["licitacion/index.html", "sitio-licitacion-index.txt"],
-      ["presentacion/deck.html", "sitio-presentacion-deck.txt"],
-    ];
+    const PROC_MOD = path.resolve(__dirname, "../proceso-mod");
+    const paginas = [];
+    for (const f of fs.readdirSync(PROC).filter((x) => x.endsWith(".html") && x !== "dec-01.html").sort()) {
+      const id = f.replace(/\.html$/, "");
+      paginas.push([path.join(PROC, f), `proceso-${id}.txt`]);
+      // Cada página del Proceso Comercial tiene su versión de trabajo, igual que
+      // los documentos: once de los 88 hallazgos viven en ellas.
+      const mod = path.join(PROC_MOD, `${id}-MOD.html`);
+      if (!fs.existsSync(mod)) falla(`proceso-mod/${id}-MOD.html`, 0, "falta la versión de trabajo (node tools/build-fuentes.js)");
+      else paginas.push([mod, `proceso-${id}-MOD.txt`]);
+    }
+    paginas.push([path.join(WEBAPP, "licitacion/index.html"), "sitio-licitacion-index.txt"]);
+    paginas.push([path.join(WEBAPP, "presentacion/deck.html"), "sitio-presentacion-deck.txt"]);
     for (const [origen, salida] of paginas) {
       const ruta = path.join(TXT, salida);
       if (!fs.existsSync(ruta)) {

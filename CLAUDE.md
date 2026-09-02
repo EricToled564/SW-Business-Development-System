@@ -70,6 +70,7 @@ La revisión de los 88 hallazgos no se verifica con un solo cuaderno. **La base 
 |---|---|---|
 | **1 · originales** | Los 31 documentos **sin ningún cambio**, reproducidos desde el historial de git en la base, carácter por carácter. No se editan: R23 los compara contra `git show 90a1ede:…` en cada corrida, así que alterarlos exige reescribir la historia del repositorio. | `webapp/original/` |
 | **2 · corregidos** | Un archivo por documento con el mismo nombre y el sufijo **`-MOD`**. Arranca como copia exacta del original y recibe, hallazgo por hallazgo, las correcciones que indica NotebookLM. **Es donde se trabaja**; `docs/` no se toca durante la revisión. | `docs-mod/*.es.md` → `webapp/mod/` |
+| **Proceso Comercial** | Las 7 páginas del MPC y los SOP tienen el mismo tratamiento: original reproducido del historial y versión `-MOD` donde se corrige. Once de los 88 hallazgos viven en ellas, y sin esto no habría dónde corregirlos. Su registro de cambios se calcula sobre el **archivo crudo**, no sobre el texto extraído: una edición al marcado que no cambie el texto visible sigue siendo una edición. | `proceso-mod/*.html` |
 
 A los dos grupos se suman, iguales en ambos, las 7 páginas del Proceso Comercial y las 3 páginas del sitio con contenido propio (licitación, deck, demo-manual): **41 fuentes por cuaderno**, bajo el límite de 50.
 

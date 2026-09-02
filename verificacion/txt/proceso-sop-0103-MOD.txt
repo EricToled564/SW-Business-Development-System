@@ -1,0 +1,508 @@
+Captación en consola · SOP/SW/0103 · Sports World
+
+Sports World México · Procedimiento normalizado de operación
+Uso interno
+
+Título
+
+Captación y calificación del prospecto en la consola del asesor
+
+Canal 3 · Atención telefónica y persona que llega al club
+
+No. de documento
+SOP/SW/0103
+
+Estatus
+Uso interno
+
+Sustituye a
+N/A
+
+Autor
+Dirección Comercial
+Firma: en expediente
+
+Aprueba
+Dirección General
+Firma: en expediente
+
+Versión
+1.0
+
+Fecha de entrada en vigor
+01-SEP-2026
+
+Fecha de revisión
+01-SEP-2027
+
+Manual
+MPC/SW/01
+§10 glosario · Anexo A cuestionario
+
+1Introducción: cómo funciona este documento
+
+1.1 · Qué es y qué no es
+
+Este es un procedimiento normalizado de operación. Establece qué ocurre, en qué orden y
+quién responde por cada paso, en la captación que realiza el personal del club desde la consola. Es uno
+de los procedimientos del Manual del Proceso Comercial (MPC/SW/01) y se lee de forma autónoma.
+
+Las dos diferencias que gobiernan este canal
+Primera: la persona está identificada desde el inicio, porque es el asesor quien la
+captura. No hay tramo anónimo, no hay abandono irrecuperable y no hay compuerta de captura de contacto:
+los datos se toman durante la conversación, cuando corresponda.
+Segunda, y es la que ningún otro canal tiene: la visita guiada puede
+realizarse en el momento. Quien llega al club ya está donde ocurre la visita. Cuando hay asesor
+disponible, el procedimiento no agenda nada: genera el diagnóstico y entrega la persona directamente al
+procedimiento de la visita, en la misma sesión. Ese caso no lleva recordatorios, no lleva acuse del club
+y cierra E4 y E5 el mismo día.
+
+1.2 · Cómo se lee
+
+El apartado 9 es el procedimiento. Una tabla de tres columnas: paso, acción y responsable.
+
+Los pasos se numeran de forma consecutiva y esa numeración es la única referencia válida.
+
+Las decisiones van dentro de la acción, con el paso de destino explícito para cada rama.
+
+El diagrama del apartado 8 usa la misma numeración. Si el diagrama y la tabla discrepan, rige la tabla.
+
+Los pasos sombreados en rojo son excepciones y los sombreados en ámbar son decisiones.
+
+Los documentos se citan por clave —CEI-01, BA-01, CAT-01— y los principios también —P-01 a P-10—. Unos y otros están definidos en el manual.
+
+1.3 · Quién lo usa y para qué
+
+Quién Cuándo lo usa Pasos
+
+Asesor de club Es su norma de operación en toda atención telefónica y presencial. Es el documento que aprende en su incorporación Completo
+
+Operador telefónico En la atención de llamadas entrantes cuando la operación las centraliza 3 – 4 · 10 – 39
+
+Gerencia del club Al asignar quién atiende, al autorizar una llamada a referido y al acusar una solicitud de visita 5 – 7 · 41 – 46
+
+Dirección Comercial En la lectura semanal y ante cualquier excepción escalada Completo
+
+Sistemas Operación de la consola, control de acceso, vigencia del catálogo y escritura al CRM 1 · 13 – 20 · 35
+
+Legal Al definir el guion de consentimiento telefónico y el tratamiento del dato de referido 6 · 10
+
+1.4 · Qué hacer cuando la operación no coincide con el documento
+
+No se resuelve con una variante local. La discrepancia se reporta a Dirección Comercial, que determina si
+es una excepción de ese caso o un cambio que el procedimiento debe incorporar. Rige únicamente la versión
+publicada, identificada en la cabecera de control.
+
+2Propósito
+
+Asegurar que toda persona atendida por el personal del club —por teléfono o en el mostrador— quede
+calificada con el mismo instrumento que los canales digitales, y que su visita guiada ocurra con un
+diagnóstico escrito, ya sea en el momento o en una fecha acordada.
+
+Es el procedimiento que homologa la captación presencial y telefónica con la digital. Sin
+él, el prospecto que llega al club o llama por teléfono entra al sistema con una calidad de información
+distinta a la de quien entró por el sitio o por WhatsApp, y la comparación entre canales deja de tener
+sentido.
+
+3Alcance
+
+3.1 · A qué aplica
+
+A toda captación realizada por personal autorizado desde la consola, en los 49 clubes de la red, durante
+el horario de atención de cada club. El acceso a la consola está restringido a la lista de personal que
+define Sports World.
+
+3.2 · Los dos puntos de entrada del canal
+
+La consola recibe la captación por dos vías. La diferencia entre ellas es sustantiva y no cosmética:
+determina si la visita guiada puede realizarse en el momento o hay que agendarla, y en
+una de ellas condiciona además el tratamiento del dato personal.
+
+Punto de entrada A
+
+Atención telefónica
+
+Llamada entrante: la persona llama al club por iniciativa propia —tomó el número de la ficha, del sitio o de la señalización—. El asesor la atiende y captura en consola.
+
+Llamada saliente a un prospecto referido: el club llama a una persona cuyos datos proporcionó un socio actual.
+
+La visita guiada siempre se agenda. La persona no está en el club.
+
+En la llamada saliente, el dato personal llegó de un tercero. Antes de marcar debe existir constancia de que el socio que refirió obtuvo autorización para compartirlo, y al inicio de la llamada se declara de dónde se obtuvieron los datos y quién refirió.
+
+El asistente conversacional no interviene: no contesta el teléfono de los clubes ni se integra al conmutador.
+
+Punto de entrada B
+
+Persona que llega al club
+
+Alguien entra al club sin cita previa a preguntar por la membresía.
+
+El asesor la recibe y aplica el cuestionario desde la consola, con la persona presente.
+
+La visita guiada puede realizarse en ese momento si hay asesor disponible. Es el único caso del proceso comercial en que captación y visita ocurren en la misma sesión.
+
+Cuando no hay asesor disponible o la persona no puede quedarse, se agenda como en cualquier otro canal.
+
+El consentimiento se recaba en pantalla, con el aviso a la vista.
+
+Los pasos 2 a 9 separan las dos vías. De los pasos 10 a 29 el procedimiento es idéntico. A partir del
+paso 30 vuelven a separarse, porque solo la vía B admite la visita en el momento.
+
+3.3 · Qué no cubre este documento
+
+Queda fuera Dónde está
+
+La conducción de la visita guiada, incluso cuando arranca en la misma sesión SOP/SW/0201
+
+La contratación y el alta de la membresía SOP/SW/0301
+
+La captación por WhatsApp SOP/SW/0101
+
+La captación por el sitio web SOP/SW/0102
+
+El programa de referidos: cómo se solicita la referencia al socio, con qué incentivo y con qué constancia de autorización Por definir
+Ver nota del apartado 4
+
+4Responsabilidades
+
+Corresponde a la Dirección Comercial asegurar que este procedimiento se cumpla. La responsabilidad de
+ejecutar cada paso se identifica en la columna derecha del apartado 9. Además de los principios P-01 a
+P-10 del manual, rigen en este canal las siguientes reglas:
+
+La consola es de acceso restringido y nominal. Cada captura queda asociada a la persona que la realizó y al club desde el que se hizo. No hay usuarios compartidos.
+
+No se agenda ni se conduce una visita guiada sin cuestionario (P-01). Aplica también a la persona que llega al club y quiere ver las instalaciones de inmediato: el cuestionario es lo que hace posible que el recorrido esté armado.
+
+El cuestionario se aplica en la consola, no de memoria. Un asesor que pregunta por su cuenta y captura después produce un perfil que no es comparable con el de los demás canales.
+
+Sin constancia de autorización, no se llama a un referido. El dato lo proporcionó un tercero y la empresa responde por su origen.
+
+En llamada saliente, la primera frase declara el origen del dato. Se dice de dónde se obtuvieron los datos y quién refirió, y se pide autorización para continuar. Si la persona no autoriza, se registra la negativa y no se le vuelve a contactar por esa vía.
+
+Las condiciones comerciales no se anticipan por teléfono (P-08). Se presentan durante la visita, conforme a SOP/SW/0201.
+
+La visita realizada en el momento se registra igual que cualquier otra. No se omite la escritura al CRM por el hecho de que la persona ya esté en el club.
+
+Punto abierto · El programa de referidos
+Este procedimiento establece qué debe existir antes de marcarle a un referido: constancia
+de que el socio que lo refirió obtuvo su autorización para compartir el dato. Lo que no establece es cómo
+se obtiene esa constancia, porque el programa de referidos aún no está definido: falta decidir cómo se le
+solicita la referencia al socio, con qué incentivo, con qué texto de autorización y dónde queda
+registrada.
+Es una definición de Dirección Comercial con Legal, y conviene resolverla antes
+de que este procedimiento entre en vigor. Mientras no exista, el paso 5 detiene toda llamada
+saliente a referido, que es el comportamiento correcto: llamar sin constancia expone a la
+empresa por un dato personal que obtuvo de un tercero.
+
+Interviniente Responsabilidad
+
+Asesor de club Atender la llamada o a la persona que llega, aplicar el cuestionario en consola, presentar la recomendación, y conducir o agendar la visita
+
+Operador telefónico Atender llamadas entrantes cuando la operación las centralice, con el mismo cuestionario y la misma escritura
+
+Gerencia del club Definir quién atiende en cada turno, verificar la constancia de autorización antes de una llamada a referido, y acusar las solicitudes de visita
+
+Sistemas Operación de la consola, control de acceso nominal, vigencia del catálogo del día y disponibilidad del punto de escritura al CRM
+
+Legal Guion de consentimiento para la atención telefónica y tratamiento del dato de referido
+
+Dirección Comercial Vigilar el cumplimiento, resolver excepciones escaladas y autorizar cambios a este documento
+
+5Cambios desde la última revisión
+
+Procedimiento nuevo.
+
+6Documentos que intervienen
+
+Esta tabla indica para qué se usa cada documento dentro de este procedimiento. Su contenido y su responsable están establecidos en el apartado 6 del manual MPC/SW/01.
+
+Clave Documento Para qué se usa aquí Pasos
+
+CEI-01 Cuestionario de Experiencia Ideal Se aplica desde la consola, con la persona presente o en línea. Es el mismo instrumento que en los canales digitales 11
+
+AP-01 Aviso de privacidad En pantalla si la atención es presencial; en su versión breve, leída, si es telefónica 10
+
+CAT-01 Catálogo comercial del día Resolución del club, clases con su horario real, verificación de compatibilidad y franjas del calendario 13 – 15 · 32
+
+EI-01 Experiencia ideal Se genera, se muestra en pantalla o se describe por teléfono, se recalcula si ajusta club o clases, y se envía por correo 18 · 21 · 41
+
+BA-01 Brief del asesor Se genera en la misma operación que EI-01. En la visita inmediata lo abre el propio asesor que capturó; en la agendada viaja al club 17 · 18 · 33 · 40
+
+CR-01 Constancia de autorización de referido
+Pendiente de definición Requisito previo a toda llamada saliente a un prospecto referido. Registra quién refirió y que obtuvo autorización para compartir el dato 5
+
+PL-01 Plantillas autorizadas de WhatsApp Necesarias para los dos recordatorios de la visita agendada. No aplican a la visita inmediata 42
+
+7Documentos relacionados
+
+Clave Documento
+
+MPC/SW/01 Manual del Proceso Comercial. Contiene los principios P-01 a P-10 (§4), el contenido de cada documento (§6), la medición (§7), el glosario único (§10) y el Anexo A con el cuestionario íntegro
+
+SOP/SW/0101 Captación por WhatsApp oficial
+
+SOP/SW/0102 Captación por el sitio web
+
+SOP/SW/0201 La Experiencia Guiada de Sports World. Es donde continúa la visita inmediata del paso 33
+
+MED/SW/01 Mapa del funnel: definición operativa de cada etapa, fuente del dato y responsable del acceso
+
+CAT/SW/01 Régimen de sincronización del catálogo: corte diario de las 06:00 y sincronización manual
+
+8Diagrama de flujo
+
+Congruente con la numeración del apartado 9. Las decisiones no se numeran.
+
+Inicio
+
+1El personal autorizado ingresa a la consola con su usuario nominal
+
+Decisión¿Cómo se origina el contacto? — Llamada entrante al 3 · Llamada saliente a referido al 5 · Persona en el club al 8
+
+3 · 4Atiende la llamada, abre un cuestionario nuevo y sella la atribución como telefónica entrante
+
+5 · 6 · 7Verifica la constancia de autorización, declara el origen del dato al inicio de la llamada y sella la atribución como referido
+
+8 · 9Recibe a la persona en el club, abre un cuestionario y sella la atribución como presencial
+
+10 · 11 · 12Recaba el consentimiento, aplica el cuestionario en consola y registra E2
+
+13 · 14 · 15Resuelve el club, selecciona la combinación y las clases idóneas, y verifica la compatibilidad de horario
+
+Decisión¿Alguna clase idónea cae en los días y franjas declarados? — Sí al 18 · No al 17
+
+17Marca la incompatibilidad de horario como señal de atención en el brief. No bloquea ni filtra nada
+
+18 · 19 · 20 · 21Genera EI-01 y BA-01, registra E3 y presenta la recomendación al prospecto
+
+Decisión¿Ajusta la recomendación? — Otro club al 26 · Otras clases idóneas al 27 · Ver el catálogo del club al 29 · No al 30
+
+Decisión¿La persona está en el club y hay asesor disponible ahora? — Sí al 31 · No, agenda al 34 · No agenda al 49
+
+31 · 32 · 33Visita inmediata: captura el contacto, escribe en el CRM, y entrega la atención a La Experiencia Guiada. Sin recordatorios y sin acuse
+
+34 · 35 · 36 · 37Visita agendada: captura y valida el contacto, ofrece fecha y hora, registra la solicitud y escribe en el CRM
+
+Decisión¿La escritura se confirma? — Sí al 39 · No al 50
+
+39 · 40 · 41 · 42Registra E4, envía solicitud y BA-01 al club, confirma al prospecto y programa los dos recordatorios
+
+43La gerencia recibe y verifica su capacidad de atención
+
+Decisión¿Puede atender en el horario solicitado? — Sí al 45 · No al 46
+
+45 · 46 · 47 · 48Designa asesor y registra el acuse, o propone dos fechas. El asesor consulta el brief y Dirección Comercial verifica
+
+Fin
+
+9Procedimiento
+
+Paso Acción Responsable
+
+Acceso a la consola y origen del contacto
+
+1 Ingresa a la consola con su usuario nominal. Cada captura queda asociada a la persona que la realiza y al club desde el que se hace; no existen usuarios compartidos. Personal autorizado
+
+2 ¿Cómo se origina el contacto?
+Llamada entrante al club — continúa en el paso 3.
+
+Llamada saliente a un prospecto referido — continúa en el paso 5.
+
+Persona que llega al club — continúa en el paso 8. Asesor de club
+
+3 Atiende la llamada, identifica el motivo y abre un cuestionario nuevo en la consola. Asesor u operador
+
+4 Sella la atribución de origen: canal consola, subtipo telefónica entrante, club y usuario que atiende (P-10). Continúa en el paso 10. Sistema
+
+5 Antes de marcar, verifica que la referencia esté registrada con el nombre de quien la proporcionó y con la constancia de que esa persona obtuvo autorización para compartir el dato.
+Si no existe constancia — no se realiza la llamada. Se devuelve la referencia a la gerencia para que la regularice. Continúa en el paso 50. Asesor de club
+
+6 Realiza la llamada. En la apertura declara de dónde obtuvo los datos y quién lo refirió, y solicita autorización para continuar la conversación.
+Si la persona no autoriza — registra la negativa en el CRM, no se le vuelve a contactar por esta vía y se informa a la gerencia. Continúa en el paso 50. Asesor de club
+
+7 Sella la atribución de origen: canal consola, subtipo referido, con el identificador del socio que refirió, el club y el usuario que llama. Continúa en el paso 10. Sistema
+
+8 Recibe a la persona en el club, la ubica en un espacio de atención y abre un cuestionario nuevo en la consola. Asesor de club
+
+9 Sella la atribución de origen: canal consola, subtipo presencial, club y usuario que atiende. Continúa en el paso 10. Sistema
+
+Consentimiento y cuestionario
+
+10 Presenta el aviso de privacidad y recaba el consentimiento antes del primer reactivo, con las finalidades necesarias y las de mercadotecnia por separado.
+Presencial: el aviso se muestra en pantalla y la persona lo acepta ahí.
+
+Telefónica: se lee la versión breve conforme al guion que define Legal, y la aceptación verbal queda registrada con marca de tiempo.
+
+Si no otorga el consentimiento — no se aplica el cuestionario. Continúa en el paso 50. Asesor u operador
+
+11 Informa que requiere un minuto de su tiempo y aplica el cuestionario desde la consola, reactivo por reactivo, capturando las respuestas mientras conversa. No se aplica de memoria para capturar después. Asesor u operador
+
+12 Registra la etapa E2 · cuestionario iniciado al capturarse el primer reactivo (P-09). Sistema
+
+Resolución del club y generación de la recomendación
+
+13 Consulta el catálogo del día y resuelve el club que satisface la experiencia (P-03, P-04), con el radio base de 10 kilómetros y sus tres casos.
+Si el club resuelto no es aquel desde el que se atiende — el asesor se lo señala a la persona con su razón, y honra la elección que ella haga. No se le oculta ni se le impone el club propio. Sistema
+
+14 Selecciona la combinación de entrenamiento y las clases idóneas del club resuelto: las que corresponden al objetivo funcional principal y al nivel declarados, con el horario real de ese club. Sistema
+
+15 Compara el día y la franja de cada clase idónea contra los días y las franjas que la persona declaró. Sistema
+
+16 ¿Al menos una de las clases idóneas se imparte en un día y una franja declarados?
+Sí — continúa en el paso 18. No — continúa en el paso 17. Sistema
+
+17 Incompatibilidad de horario. Marca en el brief una señal de atención en rojo con las clases idóneas, los días y franjas en que se imparten, y los que la persona declaró. La experiencia ideal se construye y se entrega igual, con los horarios reales. La incompatibilidad no bloquea nada y su resolución corresponde a SOP/SW/0201. Continúa en el paso 18. Sistema
+
+18 Genera la experiencia ideal y el brief del asesor en la misma operación. Sistema
+
+19 ¿La redacción personalizada se completa?
+Sí — continúa en el paso 20. No — continúa en el paso 51. Sistema
+
+20 Registra la etapa E3 · cuestionario completado al quedar generada la experiencia ideal (P-09). Sistema
+
+Entrega de la recomendación y ajustes
+
+21 Presenta la recomendación a la persona: en pantalla si la atención es presencial, o descrita en la conversación si es telefónica, en cuyo caso se le ofrece enviársela por correo al terminar. Asesor u operador
+
+22 Solicita el correo electrónico y le explica que le envía su experiencia ideal para que la conserve. En atención presencial se captura en pantalla; en telefónica se pide deletreado y se confirma repitiéndolo. Asesor u operador
+
+23 Envía la experiencia ideal al correo proporcionado y deja constancia del envío. Cada ajuste que el asesor opere con la persona reenvía el documento actualizado. Sistema
+
+24 Escribe el prospecto en el CRM como registro sin cita, con el perfil del cuestionario, la recomendación entregada, el club resuelto y el subtipo de origen, idempotente por llave de sesión (P-05). Cuenta en el funnel desde este momento y queda disponible para seguimiento.
+Si más adelante la persona agenda, se actualiza este mismo registro y pasa a visita agendada. No se crea uno nuevo. Sistema
+
+25 ¿La persona ajusta su recomendación?
+Prefiere otro club de los propuestos — continúa en el paso 26.
+
+Quiere cambiar sus clases — continúa en el paso 27.
+
+Quiere ver todas las clases del club — continúa en el paso 29.
+
+No ajusta nada — continúa en el paso 30. Asesor u operador
+
+26 Recalcula la combinación y las clases idóneas contra el catálogo del club elegido y señala en qué difiere. Continúa en el paso 15, para volver a verificar la compatibilidad de horario. Sistema
+
+27 Presenta las otras clases idóneas para el objetivo de la persona: las que pasaron los mismos filtros de objetivo, nivel y modalidad y no quedaron entre las primeras. La persona elige. Asesor u operador
+
+28 Recalcula la experiencia ideal con las clases elegidas y actualiza el brief. Continúa en el paso 15. Sistema
+
+29 Muestra el catálogo completo de clases del club en modo de consulta. No se puede seleccionar desde ahí: esas clases no pasaron los filtros que sostienen la recomendación. El asesor le indica que las revisen juntos en el recorrido. Continúa en el paso 25. Asesor u operador
+
+Visita inmediata o visita agendada
+
+30 ¿La persona está en el club y hay asesor disponible para conducir la visita guiada ahora?
+Sí — visita inmediata. Continúa en el paso 31.
+
+No, pero acepta agendar — continúa en el paso 34.
+
+No agenda — continúa en el paso 49. Asesor de club
+
+31 Visita inmediata. Captura los datos de contacto con la persona presente —apellido, celular de diez dígitos y correo— y los valida. Confirma con ella que el recorrido se realiza en ese momento. Asesor de club
+
+32 Escribe el prospecto en el CRM en una sola operación idempotente, con canal de origen consola, la visita marcada para ese día y ese club, y el asesor que la conduce ya designado (P-05). Registra E4 al confirmarse la escritura.
+Si la escritura no se confirma — continúa en el paso 50. El recorrido no se detiene por eso. Sistema
+
+33 Confirma con la persona que el recorrido inicia en ese momento y entrega la atención a SOP/SW/0201 · La Experiencia Guiada de Sports World, que establece cómo se prepara y se conduce. Este procedimiento no especifica nada del recorrido.
+No se programan recordatorios: no hay nada que recordar.
+
+No se solicita acuse del club: el club es este y el asesor está presente.
+
+E4 y E5 cierran el mismo día.
+
+Continúa en Fin del procedimiento. Asesor de club
+
+34 Visita agendada. Captura los tres datos de contacto y los valida. Si la atención es telefónica, confirma el celular repitiéndolo, porque el número equivocado es la falla recurrente de esta vía. Asesor u operador
+
+35 Ofrece fecha y hora dentro del horario de atención publicado del club elegido, con horizonte de catorce días (P-04), y registra la combinación elegida. Asesor u operador
+
+36 Registra la fecha y hora como solicitud de visita. No verifica disponibilidad de asesor ni de sala (P-06). Sistema
+
+37 Actualiza el registro del prospecto con la fecha y el horario solicitados, en la misma operación idempotente, con su subtipo de origen y el teléfono en formato internacional (P-05). Sistema
+
+38 ¿La escritura en el CRM se confirma?
+Sí — continúa en el paso 39. No — continúa en el paso 50. Sistema
+
+Escritura al CRM, confirmación y recordatorios
+
+39 Registra la etapa E4 · visita agendada al confirmarse la escritura (P-09). Sistema
+
+40 Envía por correo al club la solicitud de visita y el brief, con la señal de incompatibilidad de horario cuando exista. Se envía también cuando el club de la visita es aquel desde el que se capturó, porque el correo es hoy el único lugar donde el diagnóstico queda conservado: no existe repositorio de experiencias ideales. Sistema
+
+41 Envía a la persona la confirmación con club, dirección, fecha y hora. Su experiencia ideal ya se le envió al generarse la recomendación. El aviso de que el club confirma y coordina no aplica en este canal: quien agenda es el propio club, con la persona presente o al teléfono. Sistema
+
+42 Programa los dos recordatorios por WhatsApp al celular capturado, 24 y 2 horas antes, con plantilla autorizada y desde el número oficial de la empresa. Sistema
+
+Entrega al club y seguimiento
+
+43 Recibe la solicitud de visita y el brief. Este paso y los tres siguientes aplican únicamente cuando quien capturó no es quien atenderá la visita. Si el asesor que capturó se queda con la visita, él mismo es el asesor designado, el acuse no procede y el procedimiento continúa en el paso 47. Gerencia del club
+
+44 ¿El club puede atender la visita en el horario solicitado?
+Sí — continúa en el paso 45. No — continúa en el paso 46. Gerencia del club
+
+45 Designa al asesor responsable y registra el acuse en el CRM sobre el registro del prospecto. Plazo: 24 horas o antes de la visita, lo que ocurra primero. Continúa en el paso 47. Gerencia del club
+
+46 Contacta a la persona, le propone dos alternativas concretas de fecha y registra el acuse en el CRM con la reprogramación y el asesor designado. Mismo plazo. Gerencia del club
+
+47 Consulta el brief antes de la visita y revisa sus señales de atención. La preparación y la conducción del recorrido se rigen por SOP/SW/0201 · La Experiencia Guiada de Sports World y no se detallan aquí. La apertura del brief queda registrada. Asesor designado
+
+48 Verifica en la lectura semanal: acuses registrados, briefs abiertos antes de la visita, proporción de visitas inmediatas frente a agendadas por club, incompatibilidades de horario, y que ninguna llamada a referido se haya realizado sin constancia. Dirección Comercial
+
+Excepciones y cierres sin agenda
+
+49 Cierre sin agenda. Registra a la persona con la recomendación entregada, si la hubo, el motivo por el que no se agendó, y una fecha acordada de siguiente contacto —nunca un compromiso indeterminado—. En el caso de una negativa de referido, se registra la negativa y no se acuerda contacto posterior. Continúa en Fin del procedimiento. Asesor u operador
+
+50 Excepción. Conserva el registro en cola cifrada de vigencia limitada y reintenta la escritura con espera incremental. Agotados los reintentos, alerta en pantalla al asesor para que capture manualmente el mismo día, y notifica a Sistemas. La atención a la persona no se interrumpe. Continúa en el paso 43, o en el 30 si es visita inmediata. Sistema
+
+51 Excepción. Reintenta la redacción personalizada. Agotados los reintentos, presenta la recomendación con el contenido determinista —club, combinación, clases y sección de seguridad— sin mensaje de error. El brief conserva sus apartados codificados, incluida la señal del paso 17. Continúa en el paso 20. Sistema
+
+52 Recibe los registros sin cita de su club en la lectura diaria y les da seguimiento con su experiencia ideal ya entregada como punto de partida. No es un lead frío: es alguien que dedicó un minuto a decir qué busca y recibió una recomendación. Asesor de club
+
+Fin del procedimiento
+
+Sobre los pasos 30 a 33 · La visita inmediata
+Es el único caso del proceso comercial en que la captación y la visita ocurren en la misma sesión, y por
+eso tres pasos que en los demás canales son obligatorios aquí no aplican: no hay recordatorios que
+programar, no hay acuse que solicitar y no hay asesor que designar, porque está presente. Lo que ocurre
+a partir de ese punto lo rige SOP/SW/0201 · La Experiencia Guiada de Sports World, y no se anticipa aquí.
+Lo que sí aplica sin excepción es el cuestionario y la escritura al CRM. La
+tentación operativa es saltárselos —«ya está aquí, para qué»— y es exactamente lo que produce la
+dispersión que el campo documentó: una visita conducida sobre intuición, sin registro, que no aparece en
+ningún indicador y de la que no se aprende nada. La persona presente no es una excepción al
+proceso: es el caso en que el proceso rinde más rápido, porque el asesor entrega el recorrido con
+el diagnóstico en la mano minutos después de haberlo levantado.
+
+10Registros
+
+Registro Paso Dónde reside
+
+Acceso a la consola 1 Bitácora de acceso nominal, con usuario, club y marca de tiempo
+
+Atribución de origen y subtipo
+Entrante · referido · presencial 4 · 7 · 9 Base del funnel. El subtipo permite leer por separado el desempeño de cada vía
+
+Constancia de autorización de referido 5 Registro del programa de referidos, vinculado al socio que refirió. Pendiente de definición
+
+Negativa del referido 6 · 49 CRM, con marca que impide volver a contactar por esa vía
+
+Constancia del consentimiento 10 Junto con el registro del prospecto, indicando si fue en pantalla o verbal
+
+Señal de incompatibilidad de horario 17 · 40 · 48 En el brief y, de forma agregada, en el tablero por club
+
+Registro de prospecto 32 · 37 CRM de Sports World, único sistema de registro permanente
+
+Visita inmediata 32 · 33 · 48 CRM, con la visita marcada para el mismo día. Se lee por separado de la agendada
+
+Brief del asesor 18 · 33 · 40 · 47 Conservado con el registro. La apertura queda registrada, también en la visita inmediata
+
+Acuse del club 45 · 46 CRM, sobre el mismo registro del prospecto. No aplica a la visita inmediata
+
+Cierre sin agenda y su motivo 48 CRM, con la fecha acordada de siguiente contacto
+
+Verificación semanal 48 Tablero de Dirección Comercial. Presenta únicamente resultados agregados
+
+SOP/SW/0103 · Captación y calificación del prospecto en la consola del asesor · versión 1.0 · uso interno.
+
+Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.
+
+Procedimientos hermanos: SOP/SW/0101 (WhatsApp oficial) y SOP/SW/0102 (sitio web). Continúa en SOP/SW/0201 · La Experiencia Guiada de Sports World. El glosario único y el cuestionario íntegro están en MPC/SW/01, apartado 10 y Anexo A.

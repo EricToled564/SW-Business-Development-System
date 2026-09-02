@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Captación por el sitio web · SOP/SW/0102 · Sports World</title>
+  <meta name="description" content="Procedimiento normalizado de captación y calificación del prospecto por el sitio web.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+  :root{
+    --paper:#eff0ee; --surface:#ffffff; --s2:#f5f6f5;
+    --ink:#12171a; --soft:#3f484f; --faint:#79838a;
+    --line:#cfd4d3; --hair:#e2e5e4;
+    --a:#14456b; --a-bg:#dbe7f1; --a-line:#a4c2db;
+    --w:#75460f; --w-bg:#f8ecd9; --w-line:#dcc296;
+    --r:#862d2d; --r-bg:#f8e5e3; --r-line:#dbb0ac;
+    --g:#245c42; --g-bg:#dcece4;
+    --p:#5a3576; --p-bg:#ece2f4; --p-line:#c5adda;
+    --onA:#ffffff;
+    --sh:0 1px 2px rgba(12,18,22,.05),0 10px 24px -18px rgba(12,18,22,.22);
+  }
+  @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --paper:#0b0e10; --surface:#14181b; --s2:#191e21;
+    --ink:#e6eaea; --soft:#a6afb5; --faint:#737c82;
+    --line:#282f33; --hair:#1f2528;
+    --a:#7cb8e3; --a-bg:#112637; --a-line:#284761;
+    --w:#dba861; --w-bg:#2b2113; --w-line:#4a3a1e;
+    --r:#e28c87; --r-bg:#321f1e; --r-line:#4d2c2a;
+    --g:#78c3a1; --g-bg:#12281f;
+    --p:#bfa0da; --p-bg:#241a30; --p-line:#42305a;
+    --onA:#07202e;
+    --sh:0 1px 2px rgba(0,0,0,.35),0 10px 24px -18px rgba(0,0,0,.65);
+  }}
+  :root[data-theme="dark"]{
+    --paper:#0b0e10; --surface:#14181b; --s2:#191e21;
+    --ink:#e6eaea; --soft:#a6afb5; --faint:#737c82;
+    --line:#282f33; --hair:#1f2528;
+    --a:#7cb8e3; --a-bg:#112637; --a-line:#284761;
+    --w:#dba861; --w-bg:#2b2113; --w-line:#4a3a1e;
+    --r:#e28c87; --r-bg:#321f1e; --r-line:#4d2c2a;
+    --g:#78c3a1; --g-bg:#12281f;
+    --p:#bfa0da; --p-bg:#241a30; --p-line:#42305a;
+    --onA:#07202e;
+    --sh:0 1px 2px rgba(0,0,0,.35),0 10px 24px -18px rgba(0,0,0,.65);
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.6;
+    -webkit-font-smoothing:antialiased}
+  ::selection{background:var(--a-bg)}
+  .wrap{max-width:900px;margin:0 auto;padding:clamp(18px,4vw,44px) clamp(13px,4vw,26px) 96px}
+  h1,h2{font-family:"Spectral",Georgia,serif;margin:0;color:var(--ink);text-wrap:balance}
+  p{margin:10px 0 0}
+  strong{color:var(--ink);font-weight:600}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  .fine{font-size:11.5px;color:var(--faint);line-height:1.45}
+
+  .hdr{background:var(--surface);border:1px solid var(--line);border-radius:3px;box-shadow:var(--sh);overflow:hidden}
+  .hdr .bar{background:var(--a);color:var(--onA);padding:8px 16px;
+    font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.13em;
+    text-transform:uppercase;font-weight:700;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+  .hdr .ttl{padding:16px 18px;border-bottom:1px solid var(--line)}
+  .hdr .ttl .lb{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);font-weight:700}
+  .hdr .ttl h1{font-size:clamp(19px,2.9vw,27px);font-weight:600;margin-top:5px;line-height:1.18}
+  .hdr .ttl .ch{margin-top:7px;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--a);font-weight:600;letter-spacing:.04em}
+  .meta{display:grid;grid-template-columns:repeat(3,1fr)}
+  @media(max-width:640px){.meta{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:400px){.meta{grid-template-columns:1fr}}
+  .meta > div{padding:10px 16px;border-right:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  .meta .k{font-family:"JetBrains Mono",monospace;font-size:8.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);font-weight:700}
+  .meta .v{font-size:12.8px;color:var(--ink);margin-top:3px;line-height:1.4}
+
+  h2.s{font-size:16.5px;font-weight:600;margin-top:40px;padding-bottom:8px;
+    border-bottom:1.5px solid var(--ink);display:flex;align-items:baseline;gap:11px}
+  h2.s .n{font-family:"JetBrains Mono",monospace;font-size:.72em;color:var(--a);font-weight:700}
+  h3.ss{font-size:11.5px;font-weight:700;margin:26px 0 0;font-family:"Inter",sans-serif;
+    text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+  p.intro{color:var(--soft);max-width:74ch}
+  ul.pl{margin:11px 0 0;padding-left:19px;color:var(--soft);font-size:14px;line-height:1.6}
+  ul.pl li{margin-bottom:7px}
+  ul.pl li b{color:var(--ink);font-weight:600}
+
+  .tw{overflow-x:auto;margin-top:12px;border:1px solid var(--hair);border-radius:3px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:12.7px;min-width:600px}
+  th{background:var(--s2);text-align:left;padding:8px 12px;font-weight:700;font-size:9.5px;
+    text-transform:uppercase;letter-spacing:.055em;color:var(--faint);
+    border-bottom:1px solid var(--line);vertical-align:bottom}
+  td{padding:9px 12px;border-bottom:1px solid var(--hair);color:var(--soft);vertical-align:top;line-height:1.5}
+  tr:last-child td{border-bottom:none}
+  td strong{color:var(--ink);font-weight:600}
+  td.c{font-family:"JetBrains Mono",monospace;color:var(--a);font-weight:700;white-space:nowrap;font-size:11.5px}
+  td.d{font-family:"JetBrains Mono",monospace;color:var(--soft);font-size:11px;white-space:nowrap}
+  tbody tr:hover{background:var(--s2)}
+
+  /* dos puntos de entrada */
+  .pe{margin-top:13px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:660px){.pe{grid-template-columns:1fr}}
+  .pe > div{background:var(--surface);border:1px solid var(--hair);border-radius:3px;padding:15px 17px}
+  .pe > div.a1{border-top:2.5px solid var(--p)}
+  .pe > div.a2{border-top:2.5px solid var(--a)}
+  .pe .cd{font-family:"JetBrains Mono",monospace;font-size:9.5px;font-weight:700;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--p)}
+  .pe .a2 .cd{color:var(--a)}
+  .pe h4{margin:4px 0 0;font-family:"Spectral",Georgia,serif;font-size:16px;font-weight:600;color:var(--ink);line-height:1.25}
+  .pe ul{margin:10px 0 0;padding-left:16px;font-size:12.7px;color:var(--soft);line-height:1.55}
+  .pe ul li{margin-bottom:7px} .pe ul li b{color:var(--ink);font-weight:600}
+
+  .proc{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+  table.pr{border-collapse:collapse;width:100%;font-size:13px;min-width:640px}
+  table.pr th:nth-child(1){width:44px;text-align:center}
+  table.pr th:nth-child(3){width:172px}
+  table.pr td{padding:11px 13px;border-bottom:1px solid var(--hair)}
+  table.pr td.st{font-family:"JetBrains Mono",monospace;font-weight:700;color:var(--a);
+    text-align:center;font-size:12px;white-space:nowrap;background:var(--s2)}
+  table.pr td.rp{color:var(--ink);font-size:12.3px;font-weight:500;line-height:1.45}
+  table.pr td.ac{line-height:1.55}
+  table.pr td.ac ul{margin:7px 0 0;padding-left:17px}
+  table.pr td.ac li{margin-bottom:4px}
+  .br{display:block;margin-top:7px;padding-left:11px;border-left:2px solid var(--w-line);
+    font-size:12.3px;line-height:1.65}
+  .br b{font-family:"JetBrains Mono",monospace;color:var(--w);font-weight:700}
+  tr.q td.ac,tr.q td.st,tr.q td.rp{background:var(--w-bg)}
+  tr.q td.st{color:var(--w)}
+  tr.q td.ac .qq{font-weight:700;color:var(--w);display:block}
+  tr.x td.ac,tr.x td.st,tr.x td.rp{background:var(--r-bg)}
+  tr.x td.st{color:var(--r)}
+  tr.cm td.ac,tr.cm td.st,tr.cm td.rp{background:var(--p-bg)}
+  tr.cm td.st{color:var(--p)}
+  tr.hito td{background:var(--a-bg);color:var(--a);font-family:"JetBrains Mono",monospace;
+    font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;text-align:center;
+    padding:8px 12px;border-bottom:1px solid var(--a-line)}
+
+  .flow{margin-top:12px;background:var(--surface);border:1px solid var(--hair);border-radius:3px;
+    padding:18px 16px;overflow-x:auto}
+  .fl{min-width:540px;display:flex;flex-direction:column;align-items:center}
+  .bx{width:100%;max-width:520px;border-radius:3px;padding:9px 13px;font-size:12px;line-height:1.4;
+    background:var(--s2);border:1px solid var(--line);color:var(--soft);text-align:left}
+  .bx .i{font-family:"JetBrains Mono",monospace;font-size:9.5px;font-weight:700;color:var(--a);margin-right:7px}
+  .bx.t{background:var(--a-bg);border-color:var(--a-line);color:var(--a);text-align:center;
+    font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.11em;
+    text-transform:uppercase;max-width:200px}
+  .bx.dq{background:var(--w-bg);border-color:var(--w-line);color:var(--w);font-weight:600}
+  .bx.dq .i{color:var(--w)}
+  .bx.ex{background:var(--r-bg);border-color:var(--r-line);color:var(--r)}
+  .bx.ex .i{color:var(--r)}
+  .bx.cm{background:var(--p-bg);border-color:var(--p-line);color:var(--p)}
+  .bx.cm .i{color:var(--p)}
+  .ar{width:1px;height:13px;background:var(--line);position:relative}
+  .ar::after{content:"";position:absolute;bottom:0;left:-3px;border-left:3.5px solid transparent;
+    border-right:3.5px solid transparent;border-top:5px solid var(--line)}
+
+  /* anexo cuestionario */
+  .cu{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+  table.cq{border-collapse:collapse;width:100%;font-size:12.7px;min-width:700px}
+  table.cq th:nth-child(1){width:38px;text-align:center}
+  table.cq th:nth-child(4){width:96px}
+  table.cq td.qn{font-family:"JetBrains Mono",monospace;font-weight:700;color:var(--a);
+    text-align:center;font-size:11.5px;background:var(--s2)}
+  table.cq td.qt{color:var(--ink);font-weight:600;font-size:12.8px;line-height:1.4}
+  table.cq td.qo{line-height:1.55}
+  table.cq td.qo ol{margin:5px 0 0;padding-left:18px}
+  table.cq td.qo li{margin-bottom:2px}
+  table.cq td.qy{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--faint);line-height:1.5}
+  tr.cond td.qn{color:var(--w);background:var(--w-bg)}
+  tr.cond td.qt,tr.cond td.qo,tr.cond td.qy{background:var(--w-bg)}
+  .secq{background:var(--a-bg);color:var(--a);font-family:"JetBrains Mono",monospace;
+    font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+    padding:7px 13px;border-bottom:1px solid var(--a-line)}
+
+  .nt{margin-top:14px;padding:13px 17px;border-radius:3px;background:var(--surface);
+    border:1px solid var(--hair);border-left:3px solid var(--a);font-size:13.2px;color:var(--soft)}
+  .nt.w{border-left-color:var(--w);background:var(--w-bg)}
+  .nt.g{border-left-color:var(--g);background:var(--g-bg)}
+  .nt.p{border-left-color:var(--p);background:var(--p-bg)}
+  .nt .l{display:block;font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.07em;
+    text-transform:uppercase;font-weight:700;margin-bottom:6px;color:var(--a)}
+  .nt.w .l{color:var(--w)} .nt.g .l{color:var(--g)} .nt.p .l{color:var(--p)}
+
+  .ft{margin-top:44px;padding-top:15px;border-top:1px solid var(--line);font-size:11.5px;color:var(--faint);line-height:1.6}
+  .ft strong{color:var(--soft)}
+
+  @media print{
+    body{background:#fff}
+    .wrap{max-width:none;padding:0}
+    .tw,.proc,.flow,.cu{overflow:visible;break-inside:auto}
+    table{min-width:0}
+    tr{break-inside:avoid}
+    h2.s{break-after:avoid}
+  }
+  html{scroll-behavior:smooth}
+  mark.sw-hit{background:#ffe08a;color:inherit;padding:0 1px;border-radius:2px}
+  mark.sw-hit.on{background:#f59e0b;color:#fff}
+  tr.sw-dim{opacity:.22}
+  a.sw-x{color:var(--a);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+  .sw-flash{animation:swf 1.4s ease-out}
+  @keyframes swf{0%{background:var(--w-bg)}100%{background:transparent}}
+</style>
+
+<div class="wrap">
+
+  <div class="hdr">
+    <div class="bar">
+      <span>Sports World México · Procedimiento normalizado de operación</span>
+      <span>Uso interno</span>
+    </div>
+    <div class="ttl">
+      <div class="lb">Título</div>
+      <h1>Captación y calificación del prospecto por el sitio web</h1>
+      <div class="ch">Canal 1 · Recorrido autónomo y recorrido asistido</div>
+    </div>
+    <div class="meta">
+      <div><div class="k">No. de documento</div><div class="v mono">SOP/SW/0102</div></div>
+      <div><div class="k">Estatus</div><div class="v">Uso interno</div></div>
+      <div><div class="k">Sustituye a</div><div class="v mono">N/A</div></div>
+      <div><div class="k">Autor</div><div class="v">Dirección Comercial<br><span class="fine">Firma: en expediente</span></div></div>
+      <div><div class="k">Aprueba</div><div class="v">Dirección General<br><span class="fine">Firma: en expediente</span></div></div>
+      <div><div class="k">Versión</div><div class="v mono">1.0</div></div>
+      <div><div class="k">Fecha de entrada en vigor</div><div class="v mono">01-SEP-2026</div></div>
+      <div><div class="k">Fecha de revisión</div><div class="v mono">01-SEP-2027</div></div>
+      <div><div class="k">Manual · glosario</div><div class="v mono">MPC/SW/01 · §10</div></div>
+    </div>
+  </div>
+
+  <!-- ═══════ 1 ═══════ -->
+  <h2 class="s"><span class="n">1</span>Introducción: cómo funciona este documento</h2>
+
+  <h3 class="ss">1.1 · Qué es y qué no es</h3>
+  <p class="intro">
+    Este es un <strong>procedimiento normalizado de operación</strong>. Establece qué ocurre, en qué orden y
+    quién responde por cada paso, en la captación por el sitio web. Es uno de los procedimientos del Manual
+    del Proceso Comercial (MPC/SW/01) y se lee de forma autónoma: quien opera este canal no necesita leer los
+    otros.
+  </p>
+
+  <div class="nt">
+    <span class="l">La diferencia que gobierna este canal</span>
+    En el sitio, <strong>la persona permanece anónima durante la mayor parte del recorrido</strong>: se
+    identifica hasta el paso 33, cuando captura sus datos de contacto, y solo si decide agendar. Todo lo
+    anterior ocurre sin que exista un dato con el que contactarla. De ahí se derivan las tres
+    particularidades del procedimiento: el tramo de tráfico a cuestionario se mide como tasa y nunca como
+    recorrido de personas; el abandono anterior a la captura es irrecuperable; y el orden de solicitud se
+    invierte respecto de WhatsApp —primero los datos de contacto, después el calendario—.
+  </div>
+
+  <h3 class="ss">1.2 · Cómo se lee</h3>
+  <ul class="pl">
+    <li><b>El apartado 9 es el procedimiento.</b> Una tabla de tres columnas: paso, acción y responsable.</li>
+    <li><b>Los pasos se numeran de forma consecutiva y esa numeración es la única referencia válida.</b> El documento se cita por paso, nunca por página.</li>
+    <li><b>Las decisiones van dentro de la acción</b>, con el paso de destino explícito para cada rama.</li>
+    <li><b>El diagrama del apartado 8 usa la misma numeración.</b> Si el diagrama y la tabla discrepan, rige la tabla.</li>
+    <li><b>Los pasos sombreados en rojo son excepciones</b> y los sombreados en ámbar son decisiones.</li>
+    <li><b>Los documentos se citan por clave</b> —CEI-01, BA-01, CAT-01— y los principios también —P-01 a P-10—. Unos y otros están definidos en el manual.</li>
+  </ul>
+
+  <h3 class="ss">1.3 · Quién lo usa y para qué</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:200px">Quién</th><th>Cuándo lo usa</th><th style="width:130px">Pasos</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sistemas</strong></td><td>Es la norma contra la que se construye y se mantiene el flujo del sitio. Toda modificación al comportamiento del sitio en este recorrido pasa primero por una modificación a este documento</td><td class="d">Completo</td></tr>
+      <tr><td><strong>Asistente conversacional</strong></td><td>Al conducir el recorrido asistido o al ser invocado a media captura, para devolver al prospecto al punto exacto sin reiniciar</td><td class="d">9 – 11</td></tr>
+      <tr><td><strong>Gerencia del club</strong></td><td>Al recibir una solicitud de visita, para saber qué verificar, en qué plazo y qué registrar</td><td class="d">43 – 46</td></tr>
+      <tr><td><strong>Asesor designado</strong></td><td>Antes de la visita, y en particular cuando el brief trae señal de incompatibilidad de horario</td><td class="d">17 · 50</td></tr>
+      <tr><td><strong>Marketing</strong></td><td>Para saber qué debe llevar cada pieza y cada ficha para que la atribución no se pierda</td><td class="d">2 · 51</td></tr>
+      <tr><td><strong>Dirección Comercial</strong></td><td>En la lectura semanal y ante cualquier excepción escalada</td><td class="d">Completo</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="ss">1.4 · Qué hacer cuando la operación no coincide con el documento</h3>
+  <p class="intro">
+    No se resuelve con una variante local. La discrepancia se reporta a Dirección Comercial, que determina si
+    es una excepción de ese caso o un cambio que el procedimiento debe incorporar. Rige únicamente la versión
+    publicada, identificada en la cabecera de control.
+  </p>
+
+  <!-- ═══════ 2 ═══════ -->
+  <h2 class="s"><span class="n">2</span>Propósito</h2>
+  <p class="intro">
+    Asegurar que toda persona que llega al sitio de Sports World pueda obtener una recomendación construida
+    sobre su objetivo real —por sí misma o acompañada por el asistente— y que quien decida visitar un club
+    llegue con una visita solicitada y un diagnóstico escrito en manos del asesor que la atenderá.
+  </p>
+  <p class="intro">
+    Este procedimiento no cubre el posicionamiento del sitio ni la pauta que lleva tráfico a él, ni la
+    conducción de la visita, ni la propuesta comercial.
+  </p>
+
+  <!-- ═══════ 3 ═══════ -->
+  <h2 class="s"><span class="n">3</span>Alcance</h2>
+
+  <h3 class="ss">3.1 · A qué aplica</h3>
+  <p class="intro">
+    A todo recorrido de experiencia ideal iniciado en el sitio de Sports World. Rige para los 49 clubes de la
+    red, los 365 días del año, sin excepción por plaza, formato de membresía ni volumen.
+  </p>
+
+  <h3 class="ss">3.2 · Los dos puntos de entrada del canal</h3>
+  <p class="intro">
+    El sitio admite dos formas de recorrer el flujo. La diferencia no está en el resultado —el cuestionario,
+    la recomendación y el agendado son los mismos— sino en quién conduce, y por eso separa los pasos 5 a 11.
+    <strong>El prospecto puede pasar de una vía a la otra en cualquier momento, desde el reactivo en que va y
+    sin reiniciar.</strong>
+  </p>
+
+  <div class="pe">
+    <div class="a1">
+      <div class="cd">Punto de entrada A</div>
+      <h4>Recorrido autónomo</h4>
+      <ul>
+        <li>El prospecto avanza por sí mismo, un reactivo por pantalla, con avance explícito.</li>
+        <li><b>El avance automático al seleccionar está deshabilitado</b>, para que un toque erróneo no adelante la pantalla.</li>
+        <li>Puede regresar al reactivo anterior. Si un reactivo condicional dejó de aplicar por un cambio en su disparador, el recorrido lo omite.</li>
+        <li>Es la vía por defecto: la pantalla de inicio la ofrece como acción primaria.</li>
+      </ul>
+    </div>
+    <div class="a2">
+      <div class="cd">Punto de entrada B</div>
+      <h4>Recorrido asistido</h4>
+      <ul>
+        <li>El asistente conversacional acompaña al prospecto <b>por voz o por texto dentro del sitio</b>, con la misma base de conocimiento.</li>
+        <li>Aplica el mismo cuestionario y ofrece <b>dos modalidades</b>: reactivo por reactivo, o pre-llenado con las respuestas inferibles por la página de origen o por lo que la persona declaró, para que solo las confirme.</li>
+        <li>Resuelve dudas durante el recorrido sin sacar al prospecto del flujo y lo devuelve al punto exacto en que estaba.</li>
+        <li>Se invoca desde la pantalla de inicio o en cualquier momento del cuestionario.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="intro" style="margin-top:14px">
+    A partir del paso 12 ambas vías siguen exactamente la misma secuencia.
+  </p>
+
+  <h3 class="ss">3.3 · Los tres cortes de reporte del canal</h3>
+  <p class="intro">
+    El tráfico del sitio llega por tres orígenes. <strong>La distinción no cambia el procedimiento:</strong>
+    los tres recorren los mismos pasos. Lo que cambia es cómo se reportan, y no deben mezclarse porque miden
+    cosas distintas y uno de ellos sostiene un compromiso contractual.
+  </p>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:78px">Corte</th><th style="width:190px">Origen</th><th>Qué mide y por qué se reporta aparte</th></tr></thead>
+    <tbody>
+      <tr><td class="c">C1a</td><td><strong>Búsqueda orgánica</strong></td><td>El desempeño de la estrategia de posicionamiento. Es el corte que sustenta el compromiso de cobertura de palabras clave no asociadas a la marca</td></tr>
+      <tr><td class="c">C1b</td><td><strong>Tráfico de pago al sitio</strong><br><span class="fine">Anuncios con destino a una página, no a WhatsApp</span></td><td>Se separa del orgánico para que la inversión en pauta no contamine la lectura del resultado de posicionamiento</td></tr>
+      <tr><td class="c">C1c</td><td><strong>Fichas de Google Business</strong><br><span class="fine">Las 49 fichas de la red</span></td><td>Vistas, llamadas y solicitudes de indicaciones. Es la medición que demuestra el valor de tener las fichas creadas y mantenidas</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt w">
+    <span class="l">Condición de la atribución</span>
+    La distinción entre los tres cortes solo existe si <strong>cada pieza y cada ficha llevan sus parámetros
+    de campaña</strong>. La atribución se sella en el paso 2 y no se reconstruye después: una sesión que
+    llega sin parámetros queda como origen indeterminado de forma permanente. Es responsabilidad de Marketing
+    y se verifica en el paso 51.
+  </div>
+
+  <h3 class="ss">3.4 · Qué no cubre este documento</h3>
+  <div class="tw"><table>
+    <thead><tr><th style="width:230px">Queda fuera</th><th>Dónde está</th></tr></thead>
+    <tbody>
+      <tr><td><strong>El posicionamiento del sitio</strong> y la pauta que lleva tráfico a él</td><td class="c">MKT/SW/01</td></tr>
+      <tr><td><strong>La captación por WhatsApp</strong></td><td class="c">SOP/SW/0101</td></tr>
+      <tr><td><strong>La captación en el club y por teléfono</strong>, en consola</td><td class="c">SOP/SW/0103</td></tr>
+      <tr><td><strong>La conducción de la visita</strong> y la propuesta comercial</td><td class="c">SOP/SW/0201</td></tr>
+      <tr><td><strong>La contratación y el alta</strong> de la membresía</td><td class="c">SOP/SW/0301</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 4 ═══════ -->
+  <h2 class="s"><span class="n">4</span>Responsabilidades</h2>
+  <p class="intro">
+    Corresponde a la Dirección Comercial asegurar que este procedimiento se cumpla. La responsabilidad de
+    ejecutar cada paso se identifica en la columna derecha del apartado 9. Además de los principios P-01 a
+    P-10 del manual, rigen en este canal las siguientes reglas:
+  </p>
+  <ul class="pl">
+    <li><b>El recorrido no admite retroceso desde la recomendación.</b> Una vez entregada la experiencia ideal, el prospecto no puede reabrir sus respuestas; solo puede reiniciar por completo. Reabrirlas después de ver el resultado obligaría a recalcular o a mostrar una recomendación desactualizada.</li>
+    <li><b>Ajustar la recomendación sí recalcula.</b> Cambiar de club o cambiar de clases entre las idóneas es un recálculo acotado, no una reapertura del cuestionario, y por eso está permitido.</li>
+    <li><b>Solo se puede elegir entre las clases idóneas para el objetivo declarado.</b> El catálogo completo del club se consulta, pero no se selecciona desde ahí: esas clases no pasaron los filtros de objetivo y nivel que sostienen la recomendación, y su pertinencia la verifica el asesor en la visita.</li>
+    <li><b>Una incompatibilidad de horario no bloquea nada.</b> Si el club ofrece las clases idóneas pero no en los días o las franjas que el prospecto declaró, la experiencia ideal se construye y se entrega igual, y la incompatibilidad viaja al asesor como señal de atención.</li>
+    <li><b>Nada se conserva en el navegador.</b> El recorrido no usa almacenamiento local ni cookies de sesión: todo vive en memoria y se descarta al cerrar la pestaña. El único dato que persiste es el registro escrito en el CRM.</li>
+    <li><b>Ningún instrumento de analítica que identifique a la persona se activa antes de la captura de contacto.</b> Hasta ese punto la medición es agregada.</li>
+    <li><b>Una falla en la redacción personalizada no detiene el recorrido.</b> El prospecto recibe su recomendación con el contenido determinista y sin mensaje de error.</li>
+  </ul>
+
+  <div class="tw"><table>
+    <thead><tr><th style="width:206px">Interviniente</th><th>Responsabilidad</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sistemas</strong></td><td>Operación del recorrido, vigencia del catálogo del día, disponibilidad del punto de escritura al CRM y ejecución de la sincronización manual</td></tr>
+      <tr><td><strong>Asistente conversacional</strong></td><td>Conducir el recorrido asistido, resolver dudas dentro del sitio y devolver al prospecto al punto exacto sin reiniciar</td></tr>
+      <tr><td><strong>Gerencia del club</strong></td><td>Acusar recibo de la solicitud, verificar capacidad de atención, designar asesor responsable y coordinar la visita</td></tr>
+      <tr><td><strong>Asesor designado</strong></td><td>Consultar el brief antes de la visita y resolver en ella las señales de atención que traiga</td></tr>
+      <tr><td><strong>Marketing</strong></td><td>Parámetros de campaña en todas las piezas y en las 49 fichas, y accesos de medición vigentes</td></tr>
+      <tr><td><strong>Legal</strong></td><td>Aviso de privacidad vigente y mecanismo de consentimiento que el sitio despliega</td></tr>
+      <tr><td><strong>Dirección Comercial</strong></td><td>Vigilar el cumplimiento, resolver excepciones escaladas y autorizar cambios a este documento</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 5 ═══════ -->
+  <h2 class="s"><span class="n">5</span>Cambios desde la última revisión</h2>
+  <p class="intro">Procedimiento nuevo.</p>
+
+  <!-- ═══════ 6 ═══════ -->
+  <h2 class="s"><span class="n">6</span>Documentos que intervienen</h2>
+  <p class="intro">
+  Esta tabla indica para qué se usa cada documento dentro de este procedimiento. Su contenido y su responsable están establecidos en el apartado 6 del manual MPC/SW/01.
+</p>
+  <div class="tw"><table>
+    <thead><tr><th style="width:88px">Clave</th><th style="width:196px">Documento</th><th>Para qué se usa aquí</th><th style="width:76px">Pasos</th></tr></thead>
+    <tbody>
+      <tr><td class="c">CEI-01</td><td><strong>Cuestionario de Experiencia Ideal</strong></td><td>Se aplica un reactivo por pantalla en el recorrido autónomo, y en cualquiera de sus dos modalidades en el asistido</td><td class="d">6 · 11</td></tr>
+      <tr><td class="c">AP-01</td><td><strong>Aviso de privacidad</strong></td><td>Se despliega antes del primer reactivo, en las dos vías</td><td class="d">5 · 10</td></tr>
+      <tr><td class="c">CAT-01</td><td><strong>Catálogo comercial del día</strong></td><td>Resolución del club, selección de clases con su horario real, verificación de compatibilidad y franjas del calendario</td><td class="d">13 – 15 · 32</td></tr>
+      <tr><td class="c">BC-01</td><td><strong>Base de conocimiento</strong></td><td>La que consulta el asistente para resolver dudas sin sacar al prospecto del recorrido</td><td class="d">10 · 11</td></tr>
+      <tr><td class="c">EI-01</td><td><strong>Experiencia ideal</strong></td><td>Se genera, se presenta al prospecto, se recalcula si ajusta club o clases, y se envía por correo al confirmar</td><td class="d">18 · 21 · 42</td></tr>
+      <tr><td class="c">BA-01</td><td><strong>Brief del asesor</strong></td><td>Se genera en la misma operación que EI-01 y viaja al club. Recibe la señal de incompatibilidad de horario cuando existe</td><td class="d">17 · 18 · 41</td></tr>
+      <tr><td class="c">PL-01</td><td><strong>Plantillas autorizadas de WhatsApp</strong></td><td>Necesarias para los dos recordatorios, que se envían al celular capturado</td><td class="d">43</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 7 ═══════ -->
+  <h2 class="s"><span class="n">7</span>Documentos relacionados</h2>
+  <div class="tw"><table>
+    <thead><tr><th style="width:132px">Clave</th><th>Documento</th></tr></thead>
+    <tbody>
+      <tr><td class="c">MPC/SW/01</td><td><strong>Manual del Proceso Comercial.</strong> Contiene los principios P-01 a P-10 (§4), el contenido de cada documento (§6), la medición (§7), el <strong>glosario único (§10)</strong> y el Anexo A con el cuestionario íntegro</td></tr>
+      <tr><td class="c">SOP/SW/0101</td><td>Captación por WhatsApp oficial</td></tr>
+      <tr><td class="c">SOP/SW/0103</td><td>Captación en consola: club y teléfono</td></tr>
+      <tr><td class="c">SOP/SW/0201</td><td>La Experiencia Guiada de Sports World</td></tr>
+      <tr><td class="c">MED/SW/01</td><td>Mapa del funnel: definición operativa de cada etapa, fuente del dato y responsable del acceso</td></tr>
+      <tr><td class="c">CAT/SW/01</td><td>Régimen de sincronización del catálogo: corte diario de las 06:00 y sincronización manual</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ═══════ 8 ═══════ -->
+  <h2 class="s"><span class="n">8</span>Diagrama de flujo</h2>
+  <p class="intro">Congruente con la numeración del apartado 9. Las decisiones no se numeran.</p>
+
+  <div class="flow"><div class="fl">
+    <div class="bx t">Inicio</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">1 · 2 · 3</span>El prospecto llega al sitio. Se sella la atribución, se genera el identificador de sesión y se presenta la pantalla de inicio</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿Cómo avanza? — Por sí mismo al 5 · Con el asistente al 9 · No inicia, abandono anónimo al 44</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">5 · 6 · 7 · 8</span>Recorrido autónomo: aviso de privacidad, cuestionario un reactivo por pantalla, E2</div>
+    <div class="ar"></div>
+    <div class="bx cm"><span class="i">9 · 10 · 11</span>Recorrido asistido: dos modalidades, aviso de privacidad, cuestionario por voz o texto, E2</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">12 · 13 · 14</span>Resuelve el club y selecciona la combinación y las clases idóneas</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿Alguna clase idónea cae en los días y franjas declarados? — Sí al 18 · No al 17</div>
+    <div class="ar"></div>
+    <div class="bx ex"><span class="i">17</span>Marca la incompatibilidad de horario como señal de atención en el brief. No bloquea ni filtra nada</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">18 · 19 · 20 · 21</span>Genera EI-01 y BA-01, registra E3 y presenta la experiencia ideal antes de pedir dato alguno</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿Ajusta la recomendación? — Otro club al 26 · Otras clases idóneas al 27 · Ver el catálogo del club al 29 · No al 32</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">26 · 27 · 28</span>Recalcula y vuelve a verificar la compatibilidad de horario</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">29</span>Catálogo completo del club en modo de consulta. No se puede seleccionar desde ahí</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">33 · 34 · 35 · 36</span>Captura de contacto con validación, calendario de catorce días y confirmación</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">37 · 38</span>Registra la solicitud de visita y escribe el prospecto en el CRM</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿La escritura se confirma? — Sí al 40 · No al 46</div>
+    <div class="ar"></div>
+    <div class="bx ex"><span class="i">46 · 47</span>Reintenta; agotados los reintentos, avisa al club para captura manual el mismo día</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">40 · 41 · 42 · 43</span>Registra E4, envía solicitud y BA-01 al club, presenta la confirmación y programa los dos recordatorios</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">48</span>La gerencia recibe y verifica su capacidad de atención</div>
+    <div class="ar"></div>
+    <div class="bx dq"><span class="i">Decisión</span>¿Puede atender en el horario solicitado? — Sí al 49 · No al 50</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">49 · 50</span>Designa asesor y registra el acuse en el CRM, o propone dos fechas y registra el acuse</div>
+    <div class="ar"></div>
+    <div class="bx"><span class="i">51 · 52</span>El asesor consulta el brief y resuelve sus señales. Dirección Comercial verifica acuses, aperturas y atribución</div>
+    <div class="ar"></div>
+    <div class="bx t">Fin</div>
+  </div></div>
+
+  <!-- ═══════ 9 ═══════ -->
+  <h2 class="s"><span class="n">9</span>Procedimiento</h2>
+
+  <div class="proc"><table class="pr">
+    <thead><tr><th>Paso</th><th>Acción</th><th>Responsable</th></tr></thead>
+    <tbody>
+      <tr class="hito"><td colspan="3">Llegada al sitio y arranque del recorrido</td></tr>
+
+      <tr><td class="st">1</td><td class="ac">Llega al sitio de Sports World desde una búsqueda orgánica, desde un anuncio con destino al sitio o desde una ficha de Google Business.</td><td class="rp">Prospecto</td></tr>
+
+      <tr><td class="st">2</td><td class="ac">Genera el identificador de sesión, anónimo, y sella la atribución de origen con los parámetros de campaña y la página de entrada (P-10). En este punto no se ha recabado dato personal alguno.
+        <span class="br"><b>Si la sesión llega sin parámetros de campaña</b> — se registra como origen indeterminado. La imputación a una campaña ya no será posible.</span></td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">3</td><td class="ac">Presenta la pantalla de inicio, sin solicitar dato alguno, con dos acciones: avanzar por cuenta propia, que es la primaria, y solicitar el acompañamiento del asistente.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="q"><td class="st">4</td><td class="ac"><span class="qq">¿Cómo avanza el prospecto?</span>
+        <span class="br"><b>Por sí mismo</b> — recorrido autónomo. Continúa en el paso 5.<br>
+        <b>Con el acompañamiento del asistente</b> — recorrido asistido. Continúa en el paso 9.<br>
+        <b>No inicia</b> — abandono anónimo. Continúa en el paso 44.</span></td><td class="rp">Prospecto</td></tr>
+
+      <tr><td class="st">5</td><td class="ac">Despliega el aviso de privacidad antes del primer reactivo y recaba el consentimiento, con las finalidades necesarias y las de mercadotecnia presentadas por separado.
+        <span class="br"><b>Si el prospecto no otorga el consentimiento</b> — no se aplica el cuestionario. Continúa en el paso 44.</span></td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Aplicación del cuestionario</td></tr>
+
+      <tr><td class="st">6</td><td class="ac">Presenta el cuestionario, <strong>un reactivo por pantalla</strong>, con avance explícito. El avance automático al seleccionar una opción está deshabilitado, para que un toque erróneo no adelante la pantalla.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">7</td><td class="ac">Registra la etapa <strong>E2 · cuestionario iniciado</strong> al responderse el primer reactivo, no al presentarse la primera pantalla (P-09).</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">8</td><td class="ac">Responde el cuestionario. Puede regresar al reactivo anterior; si un reactivo condicional dejó de aplicar por un cambio en su disparador, el recorrido lo omite.
+        <span class="br"><b>Si en cualquier momento solicita acompañamiento</b> — continúa en el paso 9, desde el reactivo en que va y sin reiniciar. <b>En caso contrario</b> — continúa en el paso 12.</span></td><td class="rp">Prospecto</td></tr>
+
+      <tr class="cm"><td class="st">9</td><td class="ac">Informa al prospecto que requiere un minuto de su tiempo y le ofrece dos modalidades: reactivo por reactivo con sus opciones, o el cuestionario pre-llenado con lo que pudo inferirse por la página de origen o por lo que la persona declaró, para que únicamente lo confirme.</td><td class="rp">Asistente conversacional</td></tr>
+
+      <tr class="cm"><td class="st">10</td><td class="ac">Despliega el aviso de privacidad antes del primer reactivo y recaba el consentimiento, salvo que ya se haya otorgado en el paso 5.
+        <span class="br"><b>Si el prospecto no otorga el consentimiento</b> — continúa en el paso 44.</span></td><td class="rp">Asistente conversacional</td></tr>
+
+      <tr class="cm"><td class="st">11</td><td class="ac">Aplica el cuestionario por voz o por texto dentro del sitio, en la modalidad elegida, y resuelve las dudas que surjan con la base de conocimiento sin sacar al prospecto del recorrido. Registra E2 al primer reactivo respondido. <strong>Si el prospecto decide continuar por su cuenta, lo devuelve al reactivo exacto en que va, sin reiniciar ni repetir.</strong> <em>Continúa en el paso 12.</em></td><td class="rp">Asistente conversacional</td></tr>
+
+      <tr><td class="st">12</td><td class="ac">Al enviarse el último reactivo, presenta el indicador de proceso. El prospecto no interactúa durante esta fase.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Resolución del club y generación de la recomendación</td></tr>
+
+      <tr><td class="st">13</td><td class="ac">Consulta el catálogo del día y resuelve el club que satisface la experiencia (P-03, P-04). La búsqueda parte de un radio de 10 kilómetros:
+        <ul><li>si dos o más clubes la satisfacen, decide la distancia;</li>
+        <li>si solo uno la satisface, se ofrece ese aunque no sea el más cercano;</li>
+        <li>si ninguno la satisface, el radio se amplía hasta encontrarlo, se señala la distancia y se ofrecen hasta tres clubes cercanos como alternativa, cada uno con su diferencia indicada.</li></ul></td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">14</td><td class="ac">Selecciona la combinación de entrenamiento y las <strong>clases idóneas</strong> del club resuelto: las que corresponden al objetivo funcional principal y al nivel declarados, con el horario real de ese club.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">15</td><td class="ac">Compara el día y la franja de cada clase idónea contra los días y las franjas que el prospecto declaró en el cuestionario.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="q"><td class="st">16</td><td class="ac"><span class="qq">¿Al menos una de las clases idóneas se imparte en un día y una franja que el prospecto declaró?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 18. &nbsp; <b>No</b> — continúa en el paso 17.</span></td><td class="rp">Sistema</td></tr>
+
+      <tr class="x"><td class="st">17</td><td class="ac"><strong>Incompatibilidad de horario.</strong> Marca en el brief del asesor una <strong>señal de atención en rojo</strong> que indica: cuáles son las clases idóneas para el objetivo del prospecto, en qué días y franjas se imparten en ese club, y qué días y franjas declaró la persona.
+        <ul><li><strong>La experiencia ideal se construye y se entrega igual</strong>, con las clases idóneas y su horario real. No se filtra ni se sustituye nada, y el prospecto ve los horarios reales.</li>
+        <li><strong>La incompatibilidad no bloquea el agendado.</strong> Su resolución corresponde a SOP/SW/0201 · La Experiencia Guiada de Sports World, y no se especifica en este procedimiento.</li></ul>
+        <em>Continúa en el paso 18.</em></td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">18</td><td class="ac">Genera la experiencia ideal y el brief del asesor <strong>en la misma operación</strong>. La redacción personalizada se produce una sola vez por recorrido y se reutiliza en la pantalla de recomendación y en la de confirmación.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="q"><td class="st">19</td><td class="ac"><span class="qq">¿La redacción personalizada se completa?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 20. &nbsp; <b>No</b> — continúa en el paso 45.</span></td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">20</td><td class="ac">Registra la etapa <strong>E3 · cuestionario completado</strong> al quedar generada la experiencia ideal, no al responderse el último reactivo (P-09).</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Entrega de la recomendación y ajustes</td></tr>
+
+      <tr><td class="st">21</td><td class="ac">Presenta la experiencia ideal, <strong>antes de solicitar dato alguno de contacto</strong> (P-02). Desde esta pantalla el prospecto no puede reabrir sus respuestas: solo puede reiniciar el recorrido completo.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">22</td><td class="ac">Ofrece enviarle su experiencia ideal por correo y <strong>solicita el correo electrónico para hacerlo</strong>. La recomendación ya está en pantalla; el correo es la copia que conserva.
+        <span class="br"><b>Si el prospecto lo proporciona</b> — continúa en el paso 23. <b>Si prefiere no darlo</b> — continúa en el paso 25, y la recomendación existe solo mientras dure la sesión.</span></td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">23</td><td class="ac">Envía la experiencia ideal al correo proporcionado y deja constancia del envío. <strong>Cada vez que el prospecto ajusta su recomendación, se reenvía el documento actualizado.</strong></td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">24</td><td class="ac"><strong>Escribe el prospecto en el CRM como registro sin cita</strong>, con el perfil del cuestionario, la recomendación entregada, el club resuelto y el canal de origen, idempotente por llave de sesión (P-05). <strong>Cuenta en el funnel desde este momento y queda disponible para seguimiento del club recomendado.</strong>
+        <span class="br">Si más adelante la persona agenda, <b>se actualiza este mismo registro</b> y pasa a visita agendada. No se crea uno nuevo.</span></td><td class="rp">Sistema</td></tr>
+
+      <tr class="q"><td class="st">25</td><td class="ac"><span class="qq">¿El prospecto ajusta su recomendación?</span>
+        <span class="br"><b>Elige otro club de los propuestos</b> — continúa en el paso 26.<br>
+        <b>Quiere cambiar sus clases</b> — continúa en el paso 27.<br>
+        <b>Quiere ver todas las clases del club</b> — continúa en el paso 29.<br>
+        <b>No ajusta nada</b> — continúa en el paso 30.</span></td><td class="rp">Prospecto</td></tr>
+
+      <tr><td class="st">26</td><td class="ac">Recalcula la combinación y las clases idóneas contra el catálogo del club elegido, señala en qué difiere de la recomendada y honra la elección. <strong>No vuelve a generar la redacción personalizada</strong>, que no depende del club más allá de su nombre y dirección. <em>Continúa en el paso 15, para volver a verificar la compatibilidad de horario.</em></td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">27</td><td class="ac">Presenta <strong>las otras clases idóneas para el objetivo del prospecto</strong>: las que pasaron los mismos filtros de objetivo, nivel y modalidad, y no quedaron entre las primeras. El prospecto elige las que prefiera.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">28</td><td class="ac"><strong>Recalcula la experiencia ideal</strong> con las clases elegidas y actualiza el brief del asesor en consecuencia. <em>Continúa en el paso 15, para volver a verificar la compatibilidad de horario.</em></td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">29</td><td class="ac">Presenta el <strong>catálogo completo de clases del club en modo de consulta</strong>. El prospecto puede verlo íntegro, con días y horarios, pero <strong>no puede seleccionar clases desde ahí</strong>: esas clases no pasaron los filtros de objetivo y nivel que sostienen la recomendación. El aviso en pantalla le indica que verifique con su asesor, en la visita guiada, cualquier clase que le interese de este listado. <em>Continúa en el paso 25.</em></td><td class="rp">Sistema</td></tr>
+
+      <tr class="q"><td class="st">30</td><td class="ac"><span class="qq">¿El prospecto solicita agendar la visita guiada?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 31. &nbsp; <b>No</b> — abandono anónimo. Continúa en el paso 44.</span></td><td class="rp">Prospecto</td></tr>
+
+      <tr class="hito"><td colspan="3">Captura de contacto y agendado de la visita</td></tr>
+
+      <tr><td class="st">31</td><td class="ac">Presenta la captura de contacto: apellido y celular de diez dígitos. <strong>El correo ya se capturó al enviarle su experiencia ideal;</strong> si entonces prefirió no darlo, se le solicita aquí. Bloquea el avance hasta que los tres pasen la validación. <strong>El mensaje de error se muestra al salir del campo, no en cada pulsación</strong>, y dice qué está mal y qué hacer.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">32</td><td class="ac">Captura los tres datos. Puede regresar a su recomendación sin perder lo capturado.</td><td class="rp">Prospecto</td></tr>
+
+      <tr><td class="st">33</td><td class="ac">Almacena el contacto en el estado de la sesión. <strong>Es el punto en que la persona deja de ser anónima</strong> y a partir del cual existe un dato con el que recontactarla.</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">34</td><td class="ac">Presenta el calendario con horizonte de catorce días y franjas dentro del horario de atención publicado del club elegido (P-04).</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">35</td><td class="ac">Elige la combinación de fecha y hora y confirma.</td><td class="rp">Prospecto</td></tr>
+
+      <tr><td class="st">36</td><td class="ac">Registra la fecha y hora elegidas <strong>como solicitud de visita</strong>. No verifica disponibilidad de asesor ni de sala, y no crea reserva alguna (P-06).</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">37</td><td class="ac"><strong>Actualiza el registro del prospecto</strong> con la fecha y el horario solicitados, en la misma operación idempotente por llave de sesión, con canal de origen <span class="mono">web</span> y el teléfono en formato internacional (P-05). La escritura ocurre <strong>antes</strong> de presentar la confirmación.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="q"><td class="st">38</td><td class="ac"><span class="qq">¿La escritura en el CRM se confirma?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 39. &nbsp; <b>No</b> — continúa en el paso 46.</span></td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Escritura al CRM y confirmación</td></tr>
+
+      <tr><td class="st">39</td><td class="ac">Registra la etapa <strong>E4 · visita agendada</strong> al confirmarse la escritura, no al confirmar el prospecto (P-09).</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">40</td><td class="ac">Envía por correo al club la solicitud de visita y el brief del asesor, a la dirección registrada en el catálogo del día. <strong>Cuando exista incompatibilidad de horario, el brief la lleva marcada como señal de atención.</strong></td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">41</td><td class="ac">Presenta la confirmación en dos páginas: la primera con club, dirección, fecha y hora, pensada para conservarse; la segunda con el brief del asesor. Incluye el aviso expreso de que el club confirma y coordina la visita (P-06).</td><td class="rp">Sistema</td></tr>
+
+      <tr><td class="st">42</td><td class="ac">Programa los dos recordatorios por WhatsApp al celular capturado, 24 y 2 horas antes de la visita, con plantilla autorizada y desde el número oficial de la empresa.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Cierre sin agenda y excepciones</td></tr>
+
+      <tr><td class="st">43</td><td class="ac">Cierra el recorrido. Toda la información de la sesión se descarta del navegador: el registro escrito en el CRM es lo único que persiste.
+        <span class="br"><b>Si el prospecto modifica la fecha antes de cerrar</b> — se actualiza el mismo registro, se reprograman los recordatorios y se notifica al club la fecha corregida. No se crea un registro nuevo (P-05).</span>
+        <em>Continúa en el paso 48.</em></td><td class="rp">Sistema</td></tr>
+
+      <tr class="x"><td class="st">44</td><td class="ac"><strong>Abandono anónimo.</strong> El prospecto sale del recorrido antes del paso 33. <strong>No queda dato con el que recontactarlo</strong> y la sesión se descarta al cerrar la pestaña. Se contabiliza de forma agregada, según la etapa en que ocurrió. <em>Continúa en Fin del procedimiento.</em></td><td class="rp">Sistema</td></tr>
+
+      <tr class="x"><td class="st">45</td><td class="ac"><strong>Excepción.</strong> Reintenta la redacción personalizada. Agotados los reintentos, presenta la recomendación con el <strong>contenido determinista</strong> —club, combinación, clases y sección de seguridad— y omite las secciones redactadas, <strong>sin mostrar mensaje de error alguno al prospecto</strong>. El brief conserva sus apartados codificados, incluida la señal del paso 17 si existe. <em>Continúa en el paso 20.</em></td><td class="rp">Sistema</td></tr>
+
+      <tr class="x"><td class="st">46</td><td class="ac"><strong>Excepción.</strong> Conserva el registro en una cola cifrada de vigencia limitada y reintenta la escritura con espera incremental.</td><td class="rp">Sistema</td></tr>
+
+      <tr class="x"><td class="st">47</td><td class="ac"><strong>Excepción.</strong> Agotados los reintentos, notifica al club por correo con los datos completos para captura manual el mismo día, y presenta al prospecto su confirmación con normalidad: la falla no se le traslada. <em>Continúa en el paso 48.</em></td><td class="rp">Sistema</td></tr>
+
+      <tr class="hito"><td colspan="3">Entrega al club y seguimiento</td></tr>
+
+      <tr><td class="st">48</td><td class="ac">Recibe la solicitud de visita y el brief, y verifica su capacidad real de atención en el horario solicitado.</td><td class="rp">Gerencia del club</td></tr>
+
+      <tr class="q"><td class="st">49</td><td class="ac"><span class="qq">¿El club puede atender la visita en el horario solicitado?</span>
+        <span class="br"><b>Sí</b> — continúa en el paso 50. &nbsp; <b>No</b> — continúa en el paso 51.</span></td><td class="rp">Gerencia del club</td></tr>
+
+      <tr><td class="st">50</td><td class="ac">Designa al asesor responsable y registra el acuse en el CRM sobre el registro del prospecto, con la confirmación de recepción, la confirmación de capacidad y el nombre del asesor. Plazo: <strong>24 horas o antes de la visita, lo que ocurra primero</strong>. <em>Continúa en el paso 52.</em></td><td class="rp">Gerencia del club</td></tr>
+
+      <tr><td class="st">51</td><td class="ac">Contacta al prospecto, le propone <strong>dos alternativas concretas de fecha</strong> y registra el acuse en el CRM con la reprogramación acordada y el asesor designado. Plazo: <strong>24 horas o antes de la visita originalmente solicitada, lo que ocurra primero</strong>.</td><td class="rp">Gerencia del club</td></tr>
+
+      <tr><td class="st">52</td><td class="ac">Consulta el brief antes de la visita y <strong>revisa sus señales de atención</strong>. La preparación y la conducción del recorrido se rigen por SOP/SW/0201 · La Experiencia Guiada de Sports World y no se detallan aquí. La apertura del documento queda registrada.</td><td class="rp">Asesor designado</td></tr>
+
+      <tr><td class="st">53</td><td class="ac">Recibe los registros sin cita de su club en la lectura diaria y les da seguimiento con su experiencia ideal ya entregada como punto de partida. <strong>No es un lead frío: es alguien que dedicó un minuto a decir qué busca y recibió una recomendación.</strong></td><td class="rp">Asesor de club</td></tr>
+
+      <tr><td class="st">54</td><td class="ac">Verifica en la lectura semanal que cada solicitud cuente con acuse registrado, que el brief se haya abierto antes de la visita, <strong>qué proporción de recomendaciones sale con incompatibilidad de horario</strong> y que ninguna proporción significativa de sesiones llegue con origen indeterminado.</td><td class="rp">Dirección Comercial</td></tr>
+
+      <tr class="hito"><td colspan="3">Fin del procedimiento</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="nt w">
+    <span class="l">Sobre los pasos 15 a 17 · Por qué la incompatibilidad de horario no bloquea</span>
+    La probabilidad es baja, porque la resolución del club ya sesga hacia uno que ofrezca las clases idóneas.
+    Pero es posible: el club las tiene y las imparte en días o franjas distintos de los que el prospecto
+    declaró. Filtrar en ese punto sería el error: dejaría al prospecto sin recomendación, o con una peor, por un
+    conflicto que casi siempre se resuelve en la visita.
+    <p style="margin-top:9px">Por eso la disponibilidad declarada <strong>nunca filtra el catálogo</strong>:
+    se captura para el brief y la conciliación ocurre con el asesor. Lo que este procedimiento agrega es que
+    el asesor <strong>lo sepa antes de la visita y no lo descubra en ella</strong>, con la señal del paso 17.
+    La proporción de recomendaciones que salen con esta señal se lee cada semana: si crece, el problema no es
+    del prospecto sino de la programación de clases de ese club.</p>
+  </div>
+
+  <div class="nt">
+    <span class="l">Sobre los pasos 24 y 26 · Por qué unas clases se eligen y otras solo se ven</span>
+    Las clases idóneas pasaron los filtros de objetivo, nivel y modalidad que sostienen la recomendación:
+    elegir entre ellas es un ajuste de preferencia y por eso recalcula la experiencia ideal sin degradarla.
+    El resto del catálogo del club no pasó esos filtros, y permitir seleccionarlas desde la pantalla
+    convertiría la recomendación en un menú, que es exactamente lo que este sistema existe para evitar.
+    <p style="margin-top:9px">No se ocultan, porque ocultarlas se lee como que el club no las tiene. Se
+    muestran en modo de consulta y se remiten al asesor, que es quien puede valorar en la visita si una de
+    ellas conviene al objetivo de esa persona.</p>
+  </div>
+
+  <!-- ═══════ 10 ═══════ -->
+  <h2 class="s"><span class="n">10</span>Registros</h2>
+  <div class="tw"><table>
+    <thead><tr><th style="width:196px">Registro</th><th style="width:64px">Paso</th><th>Dónde reside</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Atribución de origen</strong></td><td class="d">2</td><td>Base del funnel, en el servidor de Sports World. Distingue los cortes C1a, C1b y C1c, y marca el origen indeterminado</td></tr>
+      <tr><td><strong>Vía de recorrido</strong><br><span class="fine">Autónomo o asistido</span></td><td class="d">4 · 8</td><td>Instrumentación propia, de forma agregada. Permite comparar la conversión de ambas vías</td></tr>
+      <tr><td><strong>Constancia del consentimiento</strong></td><td class="d">5 · 10</td><td>Junto con el registro del prospecto, con su alcance</td></tr>
+      <tr><td><strong>Etapas E2 y E3</strong></td><td class="d">7 · 11 · 20</td><td>Instrumentación propia del proyecto. Agregadas, sin dato personal</td></tr>
+      <tr><td><strong>Señal de incompatibilidad de horario</strong></td><td class="d">17 · 40 · 54</td><td>En el brief del asesor y, de forma agregada, en el tablero por club</td></tr>
+      <tr><td><strong>Ajustes de la recomendación</strong></td><td class="d">26 · 28 · 29</td><td>De forma agregada: cuántos cambian de club, cuántos cambian de clases y cuántos consultan el catálogo completo</td></tr>
+      <tr><td><strong>Recorridos completados sin agendar</strong></td><td class="d">44</td><td>Tablero, de forma agregada y por etapa de salida. No existe registro individual</td></tr>
+      <tr><td><strong>Brief del asesor</strong></td><td class="d">18 · 40 · 52</td><td>Enviado al club y conservado con el registro. La apertura queda registrada</td></tr>
+      <tr><td><strong>Registro de prospecto</strong></td><td class="d">37</td><td><strong>CRM de Sports World</strong>, único sistema de registro permanente. El sitio no conserva respaldo una vez transferido el dato</td></tr>
+      <tr><td><strong>Acuse del club</strong></td><td class="d">50 · 51</td><td><strong>CRM</strong>, sobre el mismo registro del prospecto</td></tr>
+      <tr><td><strong>Verificación semanal</strong></td><td class="d">54</td><td>Tablero de Dirección Comercial. Presenta únicamente resultados agregados</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="ft">
+    <strong>SOP/SW/0102 · Captación y calificación del prospecto por el sitio web · versión 1.0 · uso interno.</strong><br>
+    Documento propiedad de Sports World México. Reproducción autorizada únicamente para uso interno.<br>
+    <span style="display:block;margin-top:8px">Procedimientos hermanos: SOP/SW/0101 (WhatsApp oficial) y SOP/SW/0103 (consola: club y teléfono). Continúa en SOP/SW/0201 · La Experiencia Guiada de Sports World. El glosario único y el cuestionario íntegro están en MPC/SW/01, apartado 10 y Anexo A.</span>
+  </div>
+
+</div>
+</body>
+</html>
