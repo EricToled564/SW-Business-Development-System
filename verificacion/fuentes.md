@@ -2,33 +2,32 @@
 
 Archivo **generado** por `resultados/ux-v1/tools/build-fuentes.js`. No se edita a mano:
 se rehace en cada corrida del generador, y la regla **R23** de `tools/consistencia.js` falla
-si alguna página no corresponde con su documento o si esta lista no las nombra todas.
+si alguna página no corresponde con lo que debe reproducir o si esta lista no las nombra todas.
 
-**NotebookLM no vuelve a rastrear:** cada fuente queda congelada en el momento en que se
-carga. Después de publicar un cambio hay que **volver a cargar** las fuentes afectadas, o la
-verificación contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca antes.
+**NotebookLM no vuelve a rastrear:** cada fuente queda congelada en el momento en que se carga.
+Después de publicar un cambio hay que **volver a cargar** las fuentes afectadas, o la verificación
+contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca antes.
 
-## Los tres cuadernos
+## Los cuadernos
 
 | Cuaderno | Nombre en NotebookLM | Liga |
 |---|---|---|
 | **1 · Originales** | Sports World Business Dev. Documentation Review Engine | https://notebook.google.com/notebook/c530c174-5f8f-4dd1-84ff-5f9a02938732 |
 | **2 · Corregidos** | SW Biz Dev Projected Revised Documentation | https://notebook.google.com/notebook/fa78730e-927b-4d57-8ab1-adcd35c09826 |
-| **3 · Verificación final** | pendiente de crear | — |
+| **3 · Verificación por pares** | pendiente de crear | — |
 
-| Cuaderno | Qué se carga | Para qué |
-|---|---|---|
-| **1 · Originales** | 31 páginas de `original/` + 7 del Proceso Comercial | Dice **dónde hay que hacer los cambios**. Es el depósito tal como lo leyó la auditoría. |
-| **2 · Corregidos** | 31 páginas de `fuentes/` + 7 del Proceso Comercial | Al cerrar todos los paquetes: confirma que **los cambios están hechos**. |
-| **3 · Verificación final** | 31 páginas de `comparacion/` | Confirma que se hicieron **sólo** los cambios: sin omisiones y sin ediciones no autorizadas. |
+| Cuaderno | Qué se carga | Cuándo | Para qué |
+|---|---|---|---|
+| **1 · Originales** | los 31 documentos de `original/` + las 7 páginas del Proceso Comercial + las 3 páginas del sitio = **41 fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |
+| **2 · Corregidos** | los 31 documentos `-MOD` de `mod/` + las 7 del Proceso Comercial + las 3 del sitio = **41 fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |
+| **3 · Verificación por pares** | el original y su `-MOD` de cada documento **que haya cambiado**, más el resumen de `cambios.md` | al final | Compara par por par y dice si hubo errores o ediciones no autorizadas al hacer los cambios. |
 
-Las páginas del Proceso Comercial no cambiaron desde la base, así que sirven a los cuadernos 1 y 2
-sin necesidad de dos versiones.
+Las dos versiones **nunca van juntas en una misma página**. Cada una es una fuente independiente,
+reproducida mecánicamente de su archivo, y se emparejan por el nombre: `bds-tecnica` con
+`bds-tecnica-MOD`. Así la verificación no depende de que quien las transcribió no se equivocara.
 
-El cuaderno 3 lleva una sola página por documento —con las dos versiones y su diferencia dentro—
-en lugar de las dos por separado. Correlacionar dos fuentes distintas es lo que NotebookLM hace
-mal; leer una página que ya trae la comparación hecha es lo que hace bien. Y de paso cabe en el
-límite de fuentes.
+El cuaderno 3 lleva sólo los pares que cambiaron: un documento idéntico a su original no tiene nada
+que verificar. Hoy serían **0 fuentes** (0 pares).
 
 ## Cuaderno 1 · Documentos originales (31)
 
@@ -66,75 +65,45 @@ Estado del depósito en el commit `90a1ede` (28 de agosto de 2026), anterior a t
 - `technical` — https://erictoled564.github.io/SW-Business-Development-System/original/technical.html
 - `workshop-discovery` — https://erictoled564.github.io/SW-Business-Development-System/original/workshop-discovery.html
 
-## Cuaderno 2 · Documentos vigentes (31)
+## Cuaderno 2 · Documentos corregidos (31)
 
-- `academia-anexo` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/academia-anexo.html
-- `academia-contenido` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/academia-contenido.html
-- `academia-fases` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/academia-fases.html
-- `academia-medicion` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/academia-medicion.html
-- `academia-produccion` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/academia-produccion.html
-- `academia-resumen` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/academia-resumen.html
-- `academia-tecnica` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/academia-tecnica.html
-- `aportaciones` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/aportaciones.html
-- `auditoria` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/auditoria.html
-- `bds-anexo` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/bds-anexo.html
-- `bds-canales` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/bds-canales.html
-- `bds-flujo` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/bds-flujo.html
-- `bds-medicion` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/bds-medicion.html
-- `bds-resumen` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/bds-resumen.html
-- `bds-tecnica` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/bds-tecnica.html
-- `contrato` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/contrato.html
-- `entrevistas-campo` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/entrevistas-campo.html
-- `execution` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/execution.html
-- `experience` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/experience.html
-- `funnel` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/funnel.html
-- `gastos-operativos` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/gastos-operativos.html
-- `glosario` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/glosario.html
-- `indice` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/indice.html
-- `integracion` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/integracion.html
-- `minuta-2026-06-22` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/minuta-2026-06-22.html
-- `resumen` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/resumen.html
-- `roi` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/roi.html
-- `seguimiento-2026-06-22` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/seguimiento-2026-06-22.html
-- `seguridad` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/seguridad.html
-- `technical` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/technical.html
-- `workshop-discovery` — https://erictoled564.github.io/SW-Business-Development-System/fuentes/workshop-discovery.html
+Mismo nombre que su original, con el sufijo `-MOD`.
 
-## Cuaderno 3 · Comparación original contra vigente (31)
-
-- `academia-anexo` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/academia-anexo.html
-- `academia-contenido` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/academia-contenido.html
-- `academia-fases` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/academia-fases.html
-- `academia-medicion` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/academia-medicion.html
-- `academia-produccion` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/academia-produccion.html
-- `academia-resumen` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/academia-resumen.html
-- `academia-tecnica` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/academia-tecnica.html
-- `aportaciones` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/aportaciones.html
-- `auditoria` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/auditoria.html
-- `bds-anexo` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/bds-anexo.html
-- `bds-canales` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/bds-canales.html
-- `bds-flujo` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/bds-flujo.html
-- `bds-medicion` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/bds-medicion.html
-- `bds-resumen` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/bds-resumen.html
-- `bds-tecnica` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/bds-tecnica.html
-- `contrato` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/contrato.html
-- `entrevistas-campo` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/entrevistas-campo.html
-- `execution` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/execution.html
-- `experience` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/experience.html
-- `funnel` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/funnel.html
-- `gastos-operativos` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/gastos-operativos.html
-- `glosario` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/glosario.html
-- `indice` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/indice.html
-- `integracion` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/integracion.html
-- `minuta-2026-06-22` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/minuta-2026-06-22.html
-- `resumen` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/resumen.html
-- `roi` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/roi.html
-- `seguimiento-2026-06-22` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/seguimiento-2026-06-22.html
-- `seguridad` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/seguridad.html
-- `technical` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/technical.html
-- `workshop-discovery` — https://erictoled564.github.io/SW-Business-Development-System/comparacion/workshop-discovery.html
+- `academia-anexo-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/academia-anexo-MOD.html
+- `academia-contenido-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/academia-contenido-MOD.html
+- `academia-fases-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/academia-fases-MOD.html
+- `academia-medicion-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/academia-medicion-MOD.html
+- `academia-produccion-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/academia-produccion-MOD.html
+- `academia-resumen-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/academia-resumen-MOD.html
+- `academia-tecnica-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/academia-tecnica-MOD.html
+- `aportaciones-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/aportaciones-MOD.html
+- `auditoria-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/auditoria-MOD.html
+- `bds-anexo-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/bds-anexo-MOD.html
+- `bds-canales-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/bds-canales-MOD.html
+- `bds-flujo-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/bds-flujo-MOD.html
+- `bds-medicion-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/bds-medicion-MOD.html
+- `bds-resumen-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/bds-resumen-MOD.html
+- `bds-tecnica-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/bds-tecnica-MOD.html
+- `contrato-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/contrato-MOD.html
+- `entrevistas-campo-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/entrevistas-campo-MOD.html
+- `execution-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/execution-MOD.html
+- `experience-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/experience-MOD.html
+- `funnel-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/funnel-MOD.html
+- `gastos-operativos-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/gastos-operativos-MOD.html
+- `glosario-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/glosario-MOD.html
+- `indice-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/indice-MOD.html
+- `integracion-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/integracion-MOD.html
+- `minuta-2026-06-22-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/minuta-2026-06-22-MOD.html
+- `resumen-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/resumen-MOD.html
+- `roi-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/roi-MOD.html
+- `seguimiento-2026-06-22-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/seguimiento-2026-06-22-MOD.html
+- `seguridad-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/seguridad-MOD.html
+- `technical-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/technical-MOD.html
+- `workshop-discovery-MOD` — https://erictoled564.github.io/SW-Business-Development-System/mod/workshop-discovery-MOD.html
 
 ## Proceso Comercial (7) · cuadernos 1 y 2
+
+No cambiaron desde la base, así que la misma página sirve a los dos cuadernos.
 
 - Manual del Proceso Comercial · MPC/SW/01 — https://erictoled564.github.io/SW-Business-Development-System/proceso/mpc-01.html
 - Manual de Ventas · MV/SW/01 — https://erictoled564.github.io/SW-Business-Development-System/proceso/mv-01.html
@@ -143,3 +112,14 @@ Estado del depósito en el commit `90a1ede` (28 de agosto de 2026), anterior a t
 - Captación en consola · SOP/SW/0103 — https://erictoled564.github.io/SW-Business-Development-System/proceso/sop-0103.html
 - La Experiencia Guiada · SOP/SW/0201 — https://erictoled564.github.io/SW-Business-Development-System/proceso/sop-0201.html
 - Contratación y alta · SOP/SW/0301 — https://erictoled564.github.io/SW-Business-Development-System/proceso/sop-0301.html
+
+## Páginas del sitio (3) · cuadernos 1 y 2
+
+Se cargan tal como están publicadas. Quedan fuera el visor, el redirector de la presentación
+y las dos páginas del demo: son armazón, su contenido lo pinta JavaScript y como fuente
+entrarían vacías. El contenido del cuestionario del demo está especificado en
+`experience.es.md`, que ya es fuente.
+
+- Licitación — https://erictoled564.github.io/SW-Business-Development-System/licitacion/index.html
+- Presentación · deck — https://erictoled564.github.io/SW-Business-Development-System/presentacion/deck.html
+- Demo · manual — https://erictoled564.github.io/SW-Business-Development-System/demo-manual/index.html

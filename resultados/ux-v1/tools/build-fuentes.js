@@ -1,24 +1,23 @@
 #!/usr/bin/env node
 /**
- * Genera las páginas que lee NotebookLM: tres conjuntos, uno por cuaderno.
+ * Genera las páginas que lee NotebookLM: dos grupos, uno por cuaderno.
  *
  * NotebookLM sólo extrae el texto de páginas HTML —un .md servido como
  * `text/markdown` lo rechaza— y **no vuelve a rastrear**: cada fuente queda
- * congelada en el momento en que se carga. De ahí que las páginas se generen,
- * no se escriban, y que se regeneren en la misma entrega que el documento.
+ * congelada en el momento en que se carga.
  *
- *   webapp/original/     El depósito ANTES de las correcciones de la auditoría.
- *                        Se reproduce desde el historial de git, no desde el
- *                        disco: es la instantánea contra la que se levantaron
- *                        los 88 hallazgos, y nadie puede editarla.
- *   webapp/fuentes/      El depósito VIGENTE. Crece con cada paquete corregido.
- *   webapp/comparacion/  Las dos versiones de cada documento en una sola página,
- *                        con los cambios línea por línea entre ellas.
+ *   webapp/original/  GRUPO 1. El depósito ANTES de toda corrección, reproducido
+ *                     desde el historial de git, no desde el disco. Es la
+ *                     instantánea contra la que se levantaron los 88 hallazgos.
+ *                     No se edita nunca.
+ *   webapp/mod/       GRUPO 2. Un archivo por documento con el mismo nombre y el
+ *                     sufijo -MOD. Arranca como copia exacta del original y
+ *                     recibe, hallazgo por hallazgo, las correcciones que indica
+ *                     NotebookLM. Es donde se trabaja.
  *
- * El tercer conjunto existe porque la pregunta final no es «¿se hicieron los
- * cambios?» sino «¿se hicieron *sólo* los cambios?». Correlacionar dos fuentes
- * separadas es justo lo que NotebookLM hace mal; leer una sola página que ya
- * trae las dos versiones y su diferencia es lo que hace bien.
+ * Las dos versiones **nunca se escriben juntas en una misma página**: la
+ * verificación final se hace comparando pares de fuentes independientes, para
+ * que no dependa de que quien las transcribió no se haya equivocado.
  *
  * Uso: node tools/build-fuentes.js
  */
@@ -27,24 +26,25 @@ const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
 
-const WEBAPP = path.join(__dirname, "..", "webapp");
+const UX = path.join(__dirname, "..");
+const WEBAPP = path.join(UX, "webapp");
 const DOCS = path.join(WEBAPP, "docs");
-const VIGENTE = path.join(WEBAPP, "fuentes");
+const DOCS_MOD = path.join(UX, "docs-mod");
 const ORIGINAL = path.join(WEBAPP, "original");
-const COMPARACION = path.join(WEBAPP, "comparacion");
+const MOD = path.join(WEBAPP, "mod");
 const PROCESO = path.join(WEBAPP, "proceso");
-const VERIFICACION = path.join(__dirname, "..", "..", "..", "verificacion");
+const RAIZ = path.join(UX, "..", "..");
+const VERIFICACION = path.join(RAIZ, "verificacion");
 const SITIO = "https://erictoled564.github.io/SW-Business-Development-System";
 
 // El estado del depósito sobre el que se hizo la auditoría de los 88 hallazgos:
-// el último commit anterior a la primera corrección (f3089ec, A-016). Es la
-// misma base que Eric fijó al autorizar el trabajo. No se cambia sin su palabra:
-// mover la línea de partida vuelve inauditable todo lo comparado hasta aquí.
+// el último commit anterior a la primera corrección. Es la misma base que Eric
+// fijó al autorizar el trabajo. No se mueve sin su palabra: cambiar la línea de
+// partida vuelve inauditable todo lo comparado hasta aquí.
 const BASE = "90a1ede";
 const BASE_FECHA = "28 de agosto de 2026";
 
-// Los cuadernos de NotebookLM, en el orden en que se usan. El tercero se crea
-// al cerrar todos los paquetes.
+// Los cuadernos de NotebookLM. El tercero se crea al cerrar todos los paquetes.
 const CUADERNOS = [
   [
     "1 · Originales",
@@ -56,7 +56,18 @@ const CUADERNOS = [
     "SW Biz Dev Projected Revised Documentation",
     "https://notebook.google.com/notebook/fa78730e-927b-4d57-8ab1-adcd35c09826",
   ],
-  ["3 · Verificación final", "pendiente de crear", "pendiente de crear"],
+  ["3 · Verificación por pares", "pendiente de crear", "pendiente de crear"],
+];
+
+// Las páginas del sitio que llevan contenido propio y por tanto son auditables.
+// Se cargan tal como están publicadas: NotebookLM extrae su texto sin que nadie
+// las transcriba. Quedan fuera las que son sólo armazón —el visor, el redirector
+// de la presentación y las dos del demo—, porque su contenido lo pinta JavaScript
+// y como fuente entrarían vacías.
+const WEB = [
+  ["licitacion/index.html", "Licitación"],
+  ["presentacion/deck.html", "Presentación · deck"],
+  ["demo-manual/index.html", "Demo · manual"],
 ];
 
 // DEC/SW/01 se publica como aviso, no como documento: su contenido es interno
@@ -66,13 +77,12 @@ const PROCESO_INTERNO = new Set(["dec-01.html"]);
 const escapar = (s) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-const rutaGit = (archivo) => `resultados/ux-v1/webapp/docs/${archivo}`;
-
 /** El documento tal como estaba en la base, leído del historial. */
 function versionOriginal(archivo) {
-  return execSync(`git show ${BASE}:${rutaGit(archivo)}`, {
+  return execSync(`git show ${BASE}:resultados/ux-v1/webapp/docs/${archivo}`, {
     encoding: "utf8",
-    cwd: path.join(__dirname, "..", "..", ".."),
+    cwd: RAIZ,
+    stdio: ["ignore", "pipe", "pipe"],
     maxBuffer: 32 * 1024 * 1024,
   });
 }
@@ -82,9 +92,6 @@ function versionOriginal(archivo) {
 function diferencia(antes, despues) {
   const a = antes.split("\n");
   const b = despues.split("\n");
-  // Tabla de la subsecuencia común más larga. El documento más grande ronda las
-  // 900 líneas, así que la tabla completa es holgada y evita heurísticas que
-  // podrían ocultar un cambio.
   const t = Array.from({ length: a.length + 1 }, () => new Uint32Array(b.length + 1));
   for (let i = a.length - 1; i >= 0; i--)
     for (let j = b.length - 1; j >= 0; j--)
@@ -117,14 +124,10 @@ const ESTILO = `
          font: 15px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
   main { max-width: 60rem; margin: 0 auto; }
   h1 { font-size: 1.15rem; margin: 0 0 .25rem; }
-  h2 { font-size: 1rem; margin: 2.5rem 0 .75rem; padding-top: 1rem; border-top: 1px solid #d8d8d4; }
   p.origen { margin: 0 0 1.25rem; color: #6b6b68; font-size: .85rem; }
   p.sello { margin: 0 0 2rem; padding: .7rem .9rem; font-size: .85rem;
             border-left: 3px solid #1d1d1b; background: #f3f3f0; }
   pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; }
-  .quitada { color: #8a1c1c; }
-  .puesta { color: #14532d; }
-  .sitio { color: #6b6b68; }
 `;
 
 const pagina = (titulo, origen, sello, cuerpo) => `<!doctype html>
@@ -141,7 +144,7 @@ const pagina = (titulo, origen, sello, cuerpo) => `<!doctype html>
 <h1>${escapar(titulo)}</h1>
 <p class="origen">${origen}</p>
 <p class="sello">${sello}</p>
-${cuerpo}
+<pre>${escapar(cuerpo)}</pre>
 </main>
 </body>
 </html>
@@ -150,102 +153,66 @@ ${cuerpo}
 const tituloDe = (cuerpo, archivo) =>
   (cuerpo.match(/^#\s+(.+)$/m) || [, archivo])[1].trim();
 
-/** Limpia una carpeta de páginas: un documento borrado no sobrevive publicado. */
+/** Limpia una carpeta: un documento borrado no sobrevive como página publicada. */
 function limpiar(dir) {
   fs.mkdirSync(dir, { recursive: true });
   for (const viejo of fs.readdirSync(dir).filter((f) => f.endsWith(".html")))
     fs.unlinkSync(path.join(dir, viejo));
 }
 
-[VIGENTE, ORIGINAL, COMPARACION].forEach(limpiar);
+[ORIGINAL, MOD].forEach(limpiar);
+fs.mkdirSync(DOCS_MOD, { recursive: true });
 
 const archivos = fs.readdirSync(DOCS).filter((f) => f.endsWith(".es.md")).sort();
-const generadas = [];
-const resumenCambios = [];
+const grupo1 = [];
+const grupo2 = [];
+const registro = [];
 
 for (const archivo of archivos) {
   const id = archivo.replace(/\.es\.md$/, "");
-  const nombre = `${id}.html`;
-  const vigente = fs.readFileSync(path.join(DOCS, archivo), "utf8");
-
-  let original = null;
-  try {
-    original = versionOriginal(archivo);
-  } catch {
-    // Documento creado después de la base: no tiene versión original.
-    original = null;
-  }
-
-  const titulo = tituloDe(vigente, archivo);
+  const original = versionOriginal(archivo);
   const origen = `Documento del depósito · archivo fuente <code>docs/${archivo}</code>`;
 
-  // 1 · Vigente.
+  /* Grupo 1 · el original, sin un solo cambio. */
   fs.writeFileSync(
-    path.join(VIGENTE, nombre),
+    path.join(ORIGINAL, `${id}.html`),
     pagina(
-      `[VIGENTE] ${titulo}`,
+      tituloDe(original, archivo),
       origen,
-      "<strong>Versión VIGENTE.</strong> Es el texto en vigor del depósito, con las correcciones " +
-        "de la auditoría aplicadas hasta la fecha de publicación de esta página.",
-      `<pre>${escapar(vigente)}</pre>`
+      `<strong>Versión ORIGINAL.</strong> Estado del documento en el commit <code>${BASE}</code> ` +
+        `(${BASE_FECHA}), sobre el que se levantaron los 88 hallazgos de la auditoría. Se reproduce ` +
+        `desde el historial del repositorio: no se puede editar sin reescribir la historia de git. ` +
+        `Su versión corregida es <code>${id}-MOD</code>.`,
+      original
     )
   );
+  grupo1.push(`${id}.html`);
 
-  // 2 · Original, reproducido del historial.
-  if (original !== null) {
-    fs.writeFileSync(
-      path.join(ORIGINAL, nombre),
-      pagina(
-        `[ORIGINAL] ${tituloDe(original, archivo)}`,
-        origen,
-        `<strong>Versión ORIGINAL, anterior a las correcciones.</strong> Es el estado del documento ` +
-          `en el commit <code>${BASE}</code> (${BASE_FECHA}), sobre el que se levantaron los 88 hallazgos ` +
-          `de la auditoría. Se reproduce desde el historial del repositorio, no desde el disco: ` +
-          `no se puede editar sin reescribir la historia de git.`,
-        `<pre>${escapar(original)}</pre>`
-      )
-    );
-  }
+  /* Grupo 2 · la versión en la que se trabajan las correcciones. */
+  const rutaMod = path.join(DOCS_MOD, `${id}-MOD.es.md`);
+  // Un documento que todavía no se ha tocado arranca como copia exacta del
+  // original: así toda diferencia que aparezca después es, por construcción,
+  // una corrección hecha a propósito.
+  if (!fs.existsSync(rutaMod)) fs.writeFileSync(rutaMod, original);
+  const mod = fs.readFileSync(rutaMod, "utf8");
 
-  // 3 · Comparación.
-  const cambios = original === null ? null : diferencia(original, vigente);
-  if (cambios !== null) {
-    const bloques = cambios.length
-      ? cambios
-          .map((c) => {
-            const q = c.quitadas.map((l) => `<span class="quitada">− ${escapar(l)}</span>`);
-            const p = c.puestas.map((l) => `<span class="puesta">+ ${escapar(l)}</span>`);
-            return `<pre>Original, línea ${c.i} · vigente, línea ${c.j}\n${[...q, ...p].join("\n")}</pre>`;
-          })
-          .join("\n")
-      : "<pre>Sin cambios: el texto vigente es idéntico al original.</pre>";
-
-    fs.writeFileSync(
-      path.join(COMPARACION, nombre),
-      pagina(
-        `[COMPARACIÓN] ${titulo}`,
-        origen,
-        `<strong>Las dos versiones del mismo documento.</strong> Primero los cambios línea por línea ` +
-          `entre el original (commit <code>${BASE}</code>, ${BASE_FECHA}) y el texto vigente; después ` +
-          `cada versión íntegra. Las líneas que empiezan con <code>−</code> se retiraron; las que ` +
-          `empiezan con <code>+</code> se agregaron. ` +
-          (cambios.length
-            ? `Este documento registra <strong>${cambios.length} ${cambios.length === 1 ? "cambio" : "cambios"}</strong>.`
-            : `Este documento <strong>no registra cambios</strong>.`),
-        [
-          "<h2>Cambios entre el original y el vigente</h2>",
-          bloques,
-          "<h2>Versión ORIGINAL íntegra</h2>",
-          `<pre>${escapar(original)}</pre>`,
-          "<h2>Versión VIGENTE íntegra</h2>",
-          `<pre>${escapar(vigente)}</pre>`,
-        ].join("\n")
-      )
-    );
-    resumenCambios.push({ id, archivo, cambios });
-  }
-
-  generadas.push(nombre);
+  const cambios = diferencia(original, mod);
+  fs.writeFileSync(
+    path.join(MOD, `${id}-MOD.html`),
+    pagina(
+      `${tituloDe(mod, archivo)} · MOD`,
+      `Documento del depósito · archivo fuente <code>docs-mod/${id}-MOD.es.md</code>`,
+      `<strong>Versión CORREGIDA.</strong> Es <code>${id}</code> con las correcciones de la auditoría ` +
+        `aplicadas. Su versión original, sin corregir, es <code>${id}</code>. ` +
+        (cambios.length
+          ? `Registra <strong>${cambios.length} ${cambios.length === 1 ? "corrección" : "correcciones"}</strong> ` +
+            `respecto del original.`
+          : `<strong>Todavía no registra ninguna corrección:</strong> es idéntico al original.`),
+      mod
+    )
+  );
+  grupo2.push(`${id}-MOD.html`);
+  registro.push({ id, archivo, cambios });
 }
 
 /* ─────────── Las dos listas que quedan en verificacion/ ─────────── */
@@ -262,84 +229,93 @@ const tituloProceso = (archivo) => {
   return t ? t[1].replace(/\s*·\s*Sports World\s*$/, "").trim() : archivo;
 };
 
-const conOriginal = generadas.filter((n) => fs.existsSync(path.join(ORIGINAL, n)));
-const conComparacion = generadas.filter((n) => fs.existsSync(path.join(COMPARACION, n)));
+const conCambios = registro.filter((r) => r.cambios.length);
+const totalCambios = conCambios.reduce((a, r) => a + r.cambios.length, 0);
 
 const lista = [
   "# Fuentes que se cargan en NotebookLM",
   "",
   "Archivo **generado** por `resultados/ux-v1/tools/build-fuentes.js`. No se edita a mano:",
   "se rehace en cada corrida del generador, y la regla **R23** de `tools/consistencia.js` falla",
-  "si alguna página no corresponde con su documento o si esta lista no las nombra todas.",
+  "si alguna página no corresponde con lo que debe reproducir o si esta lista no las nombra todas.",
   "",
-  "**NotebookLM no vuelve a rastrear:** cada fuente queda congelada en el momento en que se",
-  "carga. Después de publicar un cambio hay que **volver a cargar** las fuentes afectadas, o la",
-  "verificación contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca antes.",
+  "**NotebookLM no vuelve a rastrear:** cada fuente queda congelada en el momento en que se carga.",
+  "Después de publicar un cambio hay que **volver a cargar** las fuentes afectadas, o la verificación",
+  "contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca antes.",
   "",
-  "## Los tres cuadernos",
+  "## Los cuadernos",
   "",
   "| Cuaderno | Nombre en NotebookLM | Liga |",
   "|---|---|---|",
   ...CUADERNOS.map(([n, nombre, url]) => `| **${n}** | ${nombre} | ${url.startsWith("http") ? url : "—"} |`),
   "",
-  "| Cuaderno | Qué se carga | Para qué |",
-  "|---|---|---|",
-  `| **1 · Originales** | ${conOriginal.length} páginas de \`original/\` + ${proceso.length} del Proceso Comercial | Dice **dónde hay que hacer los cambios**. Es el depósito tal como lo leyó la auditoría. |`,
-  `| **2 · Corregidos** | ${generadas.length} páginas de \`fuentes/\` + ${proceso.length} del Proceso Comercial | Al cerrar todos los paquetes: confirma que **los cambios están hechos**. |`,
-  `| **3 · Verificación final** | ${conComparacion.length} páginas de \`comparacion/\` | Confirma que se hicieron **sólo** los cambios: sin omisiones y sin ediciones no autorizadas. |`,
+  "| Cuaderno | Qué se carga | Cuándo | Para qué |",
+  "|---|---|---|---|",
+  `| **1 · Originales** | los ${grupo1.length} documentos de \`original/\` + las ${proceso.length} páginas del Proceso Comercial + las ${WEB.length} páginas del sitio = **${grupo1.length + proceso.length + WEB.length} fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |`,
+  `| **2 · Corregidos** | los ${grupo2.length} documentos \`-MOD\` de \`mod/\` + las ${proceso.length} del Proceso Comercial + las ${WEB.length} del sitio = **${grupo2.length + proceso.length + WEB.length} fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |`,
+  "| **3 · Verificación por pares** | el original y su `-MOD` de cada documento **que haya cambiado**, más el resumen de `cambios.md` | al final | Compara par por par y dice si hubo errores o ediciones no autorizadas al hacer los cambios. |",
   "",
-  "Las páginas del Proceso Comercial no cambiaron desde la base, así que sirven a los cuadernos 1 y 2",
-  "sin necesidad de dos versiones.",
+  "Las dos versiones **nunca van juntas en una misma página**. Cada una es una fuente independiente,",
+  "reproducida mecánicamente de su archivo, y se emparejan por el nombre: `bds-tecnica` con",
+  "`bds-tecnica-MOD`. Así la verificación no depende de que quien las transcribió no se equivocara.",
   "",
-  "El cuaderno 3 lleva una sola página por documento —con las dos versiones y su diferencia dentro—",
-  "en lugar de las dos por separado. Correlacionar dos fuentes distintas es lo que NotebookLM hace",
-  "mal; leer una página que ya trae la comparación hecha es lo que hace bien. Y de paso cabe en el",
-  "límite de fuentes.",
+  "El cuaderno 3 lleva sólo los pares que cambiaron: un documento idéntico a su original no tiene nada",
+  `que verificar. Hoy serían **${conCambios.length * 2} fuentes** (${conCambios.length} pares).`,
   "",
-  `## Cuaderno 1 · Documentos originales (${conOriginal.length})`,
+  `## Cuaderno 1 · Documentos originales (${grupo1.length})`,
   "",
   `Estado del depósito en el commit \`${BASE}\` (${BASE_FECHA}), anterior a toda corrección.`,
   "",
-  ...conOriginal.map((n) => `- \`${n.replace(/\.html$/, "")}\` — ${SITIO}/original/${n}`),
+  ...grupo1.map((n) => `- \`${n.replace(/\.html$/, "")}\` — ${SITIO}/original/${n}`),
   "",
-  `## Cuaderno 2 · Documentos vigentes (${generadas.length})`,
+  `## Cuaderno 2 · Documentos corregidos (${grupo2.length})`,
   "",
-  ...generadas.map((n) => `- \`${n.replace(/\.html$/, "")}\` — ${SITIO}/fuentes/${n}`),
+  "Mismo nombre que su original, con el sufijo `-MOD`.",
   "",
-  `## Cuaderno 3 · Comparación original contra vigente (${conComparacion.length})`,
-  "",
-  ...conComparacion.map((n) => `- \`${n.replace(/\.html$/, "")}\` — ${SITIO}/comparacion/${n}`),
+  ...grupo2.map((n) => `- \`${n.replace(/\.html$/, "")}\` — ${SITIO}/mod/${n}`),
   "",
   `## Proceso Comercial (${proceso.length}) · cuadernos 1 y 2`,
   "",
+  "No cambiaron desde la base, así que la misma página sirve a los dos cuadernos.",
+  "",
   ...proceso.map((n) => `- ${tituloProceso(n)} — ${SITIO}/proceso/${n}`),
+  "",
+  `## Páginas del sitio (${WEB.length}) · cuadernos 1 y 2`,
+  "",
+  "Se cargan tal como están publicadas. Quedan fuera el visor, el redirector de la presentación",
+  "y las dos páginas del demo: son armazón, su contenido lo pinta JavaScript y como fuente",
+  "entrarían vacías. El contenido del cuestionario del demo está especificado en",
+  "`experience.es.md`, que ya es fuente.",
+  "",
+  ...WEB.map(([ruta, nombre]) => `- ${nombre} — ${SITIO}/${ruta}`),
   "",
 ];
 
 fs.writeFileSync(path.join(VERIFICACION, "fuentes.md"), lista.join("\n"));
 
-/* ─────────── El registro de cambios, para poder detectar los no autorizados ─────────── */
-
-const conCambios = resumenCambios.filter((r) => r.cambios.length);
-const totalCambios = conCambios.reduce((a, r) => a + r.cambios.length, 0);
+/* ─────────── El resumen de cambios que se le entrega a NotebookLM ─────────── */
 
 const cambios = [
-  "# Cambios del depósito desde la base de la auditoría",
+  "# Resumen de las correcciones hechas",
   "",
   "Archivo **generado** por `resultados/ux-v1/tools/build-fuentes.js`. Es el registro de **toda**",
-  `diferencia entre el commit \`${BASE}\` (${BASE_FECHA}) y el texto vigente, línea por línea.`,
+  `diferencia entre cada documento original (commit \`${BASE}\`, ${BASE_FECHA}) y su versión \`-MOD\`,`,
+  "línea por línea.",
   "",
-  "Sirve para lo que el cuaderno 3 tiene que confirmar: que los cambios hechos son exactamente",
-  "los autorizados, ni uno más. Una edición que no aparezca aquí no ocurrió; una que aparezca",
-  "aquí y no corresponda a un hallazgo cerrado es una edición no autorizada.",
+  "Es lo que se le entrega al cuaderno 3 junto con los pares de documentos: NotebookLM compara cada",
+  "par contra este resumen y dice si hubo errores u omisiones, o cambios que no estaban autorizados.",
+  "Una edición que no aparezca aquí no ocurrió; una que aparezca y no corresponda a un hallazgo",
+  "cerrado es una edición no autorizada.",
   "",
-  `**${conCambios.length} de ${resumenCambios.length} documentos cambiaron**, con ${totalCambios} ${totalCambios === 1 ? "cambio" : "cambios"} en total.`,
+  conCambios.length
+    ? `**${conCambios.length} de ${registro.length} documentos corregidos**, con ${totalCambios} ${totalCambios === 1 ? "cambio" : "cambios"} en total.`
+    : `**Ningún documento corregido todavía.** Los ${registro.length} documentos \`-MOD\` son idénticos a su original.`,
   "",
   ...conCambios.flatMap((r) => [
-    `## ${r.archivo} — ${r.cambios.length} ${r.cambios.length === 1 ? "cambio" : "cambios"}`,
+    `## ${r.id} → ${r.id}-MOD — ${r.cambios.length} ${r.cambios.length === 1 ? "cambio" : "cambios"}`,
     "",
     ...r.cambios.flatMap((c) => [
-      `**Original, línea ${c.i} · vigente, línea ${c.j}**`,
+      `**Original, línea ${c.i} · MOD, línea ${c.j}**`,
       "",
       "```diff",
       ...c.quitadas.map((l) => `- ${l}`),
@@ -348,16 +324,19 @@ const cambios = [
       "",
     ]),
   ]),
-  "## Documentos sin cambios",
+  "## Documentos todavía sin corregir",
   "",
-  ...resumenCambios.filter((r) => !r.cambios.length).map((r) => `- \`${r.archivo}\``),
+  ...registro.filter((r) => !r.cambios.length).map((r) => `- \`${r.id}-MOD\``),
   "",
 ];
 
 fs.writeFileSync(path.join(VERIFICACION, "cambios.md"), cambios.join("\n"));
 
-console.log(`${generadas.length} páginas vigentes en webapp/fuentes/`);
-console.log(`${conOriginal.length} páginas originales en webapp/original/ (base ${BASE})`);
-console.log(`${conComparacion.length} páginas de comparación en webapp/comparacion/`);
-console.log(`Lista de fuentes por cuaderno en verificacion/fuentes.md`);
-console.log(`${conCambios.length} documentos con cambios (${totalCambios} en total) en verificacion/cambios.md`);
+console.log(`Grupo 1 · ${grupo1.length} originales en webapp/original/ (base ${BASE})`);
+console.log(`Grupo 2 · ${grupo2.length} corregidos en webapp/mod/`);
+console.log(`Cuaderno 1: ${grupo1.length + proceso.length + WEB.length} fuentes · cuaderno 2: ${grupo2.length + proceso.length + WEB.length} fuentes (límite 50)`);
+console.log(
+  conCambios.length
+    ? `${conCambios.length} documentos corregidos (${totalCambios} cambios) en verificacion/cambios.md`
+    : `Ninguna corrección aplicada todavía: los ${registro.length} MOD son idénticos a su original`
+);

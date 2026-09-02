@@ -553,6 +553,8 @@ regla("R21 · el registro de cambios del proceso no se publica", (falla) => {
 regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
   const { execSync } = require("child_process");
   const RAIZ = path.resolve(__dirname, "../../..");
+  const UX = path.resolve(__dirname, "..");
+  const DOCS_MOD = path.join(UX, "docs-mod");
   // La base de la auditoría. Vive también en build-fuentes.js; aquí se repite a
   // propósito, para que mover una y no la otra sea un hallazgo y no un silencio.
   const BASE = "90a1ede";
@@ -566,70 +568,63 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
   if (!new RegExp(`const BASE = "${BASE}"`).test(generador))
     falla("tools/build-fuentes.js", 0, `la base de la auditoría no es ${BASE}: mover la línea de partida vuelve inauditable lo comparado hasta aquí`);
 
-  for (const dir of ["fuentes", "original", "comparacion"]) {
-    if (!fs.existsSync(path.join(WEBAPP, dir)))
-      falla(`${dir}/`, 0, `falta la carpeta de páginas para NotebookLM (node tools/build-fuentes.js)`);
-  }
-  if (["fuentes", "original", "comparacion"].some((d) => !fs.existsSync(path.join(WEBAPP, d)))) return;
+  // Las dos versiones nunca van juntas en una página: la verificación final se
+  // hace por pares de fuentes independientes, no por una transcripción.
+  if (fs.existsSync(path.join(WEBAPP, "comparacion")))
+    falla("comparacion/", 0, "sobrevive la carpeta de páginas que mezclaban las dos versiones: se verifica por pares, no por transcripción");
+  if (fs.existsSync(path.join(WEBAPP, "fuentes")))
+    falla("fuentes/", 0, "sobrevive la carpeta anterior de fuentes: los grupos son original/ y mod/");
 
-  const sobran = {};
-  for (const dir of ["fuentes", "original", "comparacion"])
-    sobran[dir] = new Set(
-      fs.readdirSync(path.join(WEBAPP, dir)).filter((f) => f.endsWith(".html") && f !== "index.html")
-    );
+  for (const dir of ["original", "mod"]) {
+    if (!fs.existsSync(path.join(WEBAPP, dir))) {
+      falla(`${dir}/`, 0, "falta la carpeta de páginas para NotebookLM (node tools/build-fuentes.js)");
+      return;
+    }
+  }
+
+  const sobran = {
+    original: new Set(fs.readdirSync(path.join(WEBAPP, "original")).filter((f) => f.endsWith(".html"))),
+    mod: new Set(fs.readdirSync(path.join(WEBAPP, "mod")).filter((f) => f.endsWith(".html"))),
+  };
 
   for (const f of archivos) {
     marcar(f);
-    const nombre = f.replace(/\.es\.md$/, ".html");
+    const id = f.replace(/\.es\.md$/, "");
 
-    // 1 · La página vigente reproduce el documento en disco.
-    const vig = path.join(WEBAPP, "fuentes", nombre);
-    if (!fs.existsSync(vig)) {
-      falla(f, 0, `no tiene página publicada en fuentes/${nombre} (node tools/build-fuentes.js)`);
-    } else {
-      sobran.fuentes.delete(nombre);
-      if (cuerpo(fs.readFileSync(vig, "utf8")) !== escapar(texto[f]))
-        falla(f, 0, `fuentes/${nombre} no coincide con el documento: la página está desactualizada (node tools/build-fuentes.js)`);
-    }
-
-    // 2 · La página original reproduce el documento en la base, carácter por
-    // carácter. Es el conjunto que no lleva ningún cambio: si alguien lo edita
-    // —o si alguien mueve la base— la corrida falla aquí.
+    // 1 · El grupo sin cambios reproduce el documento en la base, carácter por
+    // carácter. Si alguien lo edita —o si alguien mueve la base— falla aquí.
     let original = null;
     try {
       original = execSync(`git show ${BASE}:resultados/ux-v1/webapp/docs/${f}`, {
         encoding: "utf8", cwd: RAIZ, stdio: ["ignore", "pipe", "pipe"], maxBuffer: 32 * 1024 * 1024,
       });
     } catch {
-      original = undefined; // no existía en la base, o falta el historial
+      falla(f, 0, `no se pudo leer la versión de la base ${BASE} (¿historial incompleto? el clon de CI necesita fetch-depth: 0)`);
+      continue;
     }
-    const org = path.join(WEBAPP, "original", nombre);
-    if (original === undefined) {
-      if (fs.existsSync(org)) {
-        sobran.original.delete(nombre);
-        falla(f, 0, `original/${nombre} existe pero el documento no está en la base ${BASE} (¿historial incompleto? el clon de CI necesita fetch-depth: 0)`);
-      }
-    } else if (!fs.existsSync(org)) {
-      falla(f, 0, `no tiene página original en original/${nombre} (node tools/build-fuentes.js)`);
+    const org = path.join(WEBAPP, "original", `${id}.html`);
+    if (!fs.existsSync(org)) {
+      falla(f, 0, `no tiene página original en original/${id}.html (node tools/build-fuentes.js)`);
     } else {
-      sobran.original.delete(nombre);
+      sobran.original.delete(`${id}.html`);
       if (cuerpo(fs.readFileSync(org, "utf8")) !== escapar(original))
-        falla(f, 0, `original/${nombre} no reproduce el documento en la base ${BASE}: el conjunto de originales fue alterado`);
+        falla(f, 0, `original/${id}.html no reproduce el documento en la base ${BASE}: el grupo sin cambios fue alterado`);
     }
 
-    // 3 · La página de comparación trae las dos versiones íntegras.
-    const cmp = path.join(WEBAPP, "comparacion", nombre);
-    if (original === undefined) {
-      if (fs.existsSync(cmp)) sobran.comparacion.delete(nombre);
-    } else if (!fs.existsSync(cmp)) {
-      falla(f, 0, `no tiene página de comparación en comparacion/${nombre} (node tools/build-fuentes.js)`);
+    // 2 · La versión de trabajo. Su página reproduce el archivo -MOD tal cual.
+    const rutaMod = path.join(DOCS_MOD, `${id}-MOD.es.md`);
+    if (!fs.existsSync(rutaMod)) {
+      falla(f, 0, `no tiene versión de trabajo en docs-mod/${id}-MOD.es.md (node tools/build-fuentes.js)`);
+      continue;
+    }
+    const mod = fs.readFileSync(rutaMod, "utf8");
+    const pMod = path.join(WEBAPP, "mod", `${id}-MOD.html`);
+    if (!fs.existsSync(pMod)) {
+      falla(f, 0, `no tiene página corregida en mod/${id}-MOD.html (node tools/build-fuentes.js)`);
     } else {
-      sobran.comparacion.delete(nombre);
-      const pagina = fs.readFileSync(cmp, "utf8");
-      if (!pagina.includes(`<pre>${escapar(original)}</pre>`))
-        falla(f, 0, `comparacion/${nombre} no trae íntegra la versión original (node tools/build-fuentes.js)`);
-      if (!pagina.includes(`<pre>${escapar(texto[f])}</pre>`))
-        falla(f, 0, `comparacion/${nombre} no trae íntegra la versión vigente (node tools/build-fuentes.js)`);
+      sobran.mod.delete(`${id}-MOD.html`);
+      if (cuerpo(fs.readFileSync(pMod, "utf8")) !== escapar(mod))
+        falla(f, 0, `mod/${id}-MOD.html no coincide con docs-mod/${id}-MOD.es.md: la página está desactualizada (node tools/build-fuentes.js)`);
     }
   }
 
@@ -638,23 +633,26 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
   for (const [dir, restantes] of Object.entries(sobran))
     for (const huerfana of restantes)
       falla(`${dir}/${huerfana}`, 0, "página publicada sin documento que la respalde (node tools/build-fuentes.js)");
+  for (const suelto of fs.readdirSync(DOCS_MOD).filter((f) => f.endsWith(".es.md")))
+    if (!archivos.includes(suelto.replace(/-MOD\.es\.md$/, ".es.md")))
+      falla(`docs-mod/${suelto}`, 0, "versión de trabajo sin documento que la respalde");
 
   // Y las listas que quedan en verificacion/ tienen que nombrarlas todas: una
   // fuente que no está en la lista es una fuente que nadie carga.
   const LISTA = path.join(RAIZ, "verificacion/fuentes.md");
   if (!fs.existsSync(path.join(RAIZ, "verificacion/cambios.md")))
-    falla("verificacion/cambios.md", 0, "falta el registro de cambios contra la base (node tools/build-fuentes.js)");
+    falla("verificacion/cambios.md", 0, "falta el resumen de correcciones contra la base (node tools/build-fuentes.js)");
   if (!fs.existsSync(LISTA)) {
     falla("verificacion/fuentes.md", 0, "falta la lista de fuentes para NotebookLM (node tools/build-fuentes.js)");
     return;
   }
   const lista = fs.readFileSync(LISTA, "utf8");
   for (const f of archivos) {
-    const nombre = f.replace(/\.es\.md$/, ".html");
-    for (const dir of ["fuentes", "original", "comparacion"]) {
-      if (fs.existsSync(path.join(WEBAPP, dir, nombre)) && !lista.includes(`/${dir}/${nombre}`))
-        falla("verificacion/fuentes.md", 0, `no lista ${dir}/${nombre} (node tools/build-fuentes.js)`);
-    }
+    const id = f.replace(/\.es\.md$/, "");
+    if (!lista.includes(`/original/${id}.html`))
+      falla("verificacion/fuentes.md", 0, `no lista original/${id}.html (node tools/build-fuentes.js)`);
+    if (!lista.includes(`/mod/${id}-MOD.html`))
+      falla("verificacion/fuentes.md", 0, `no lista mod/${id}-MOD.html (node tools/build-fuentes.js)`);
   }
   const PROCESO = path.join(WEBAPP, "proceso");
   for (const p of fs.readdirSync(PROCESO).filter((f) => f.endsWith(".html") && f !== "dec-01.html")) {
@@ -664,7 +662,25 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
   // DEC/SW/01 es interno (R21): no puede aparecer como fuente cargable.
   if (/\/proceso\/dec-01\.html/.test(lista))
     falla("verificacion/fuentes.md", 0, "lista dec-01 como fuente: el registro de cambios es interno");
+
+  // Las páginas del sitio con contenido propio también son fuentes: si una deja
+  // de listarse, deja de auditarse.
+  const WEB = ["licitacion/index.html", "presentacion/deck.html", "demo-manual/index.html"];
+  for (const w of WEB) {
+    if (!fs.existsSync(path.join(WEBAPP, w)))
+      falla(`webapp/${w}`, 0, "página del sitio listada como fuente pero no existe");
+    else if (!lista.includes(`/${w}`))
+      falla("verificacion/fuentes.md", 0, `no lista la página del sitio ${w} (node tools/build-fuentes.js)`);
+  }
+
+  // El cuaderno tiene un límite de 50 fuentes. Pasarlo no es un detalle: obliga
+  // a dejar documentos fuera, y un documento fuera es un hallazgo que no se ve.
+  const proceso = fs.readdirSync(PROCESO).filter((f) => f.endsWith(".html") && f !== "dec-01.html").length;
+  const total = archivos.length + proceso + WEB.length;
+  if (total > 50)
+    falla("verificacion/fuentes.md", 0, `cada cuaderno cargaría ${total} fuentes y el límite es 50`);
 });
+
 
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);
 reglas.forEach((r) => console.log(`  ${r.fallas === 0 ? "\x1b[32m✓\x1b[0m" : "\x1b[31m✗\x1b[0m"} ${r.nombre}${r.fallas ? `  (${r.fallas})` : ""}`));
