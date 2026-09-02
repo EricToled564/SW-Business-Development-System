@@ -764,6 +764,61 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
 });
 
 
+/* ─────────── R24 · toda corrección queda registrada y cuadra ─────────── */
+// «No hubo ediciones no autorizadas» no puede ser una afirmación: tiene que ser
+// una comprobación. Cada documento con diferencias contra su original debe estar
+// registrado en verificacion/correcciones.md, citar hallazgos que existan, y
+// declarar el mismo número de cambios que contó el generador. Un cambio de más
+// —o uno que nadie reclama— rompe la corrida aquí, sin esperar al cuaderno 3.
+regla("R24 · toda corrección está registrada y cuadra", (falla) => {
+  const RAIZ = path.resolve(__dirname, "../../..");
+  const CAMBIOS = path.join(RAIZ, "verificacion/cambios.md");
+  const REGISTRO = path.join(RAIZ, "verificacion/correcciones.md");
+  const HALLAZGOS = path.join(RAIZ, "verificacion/hallazgos.csv");
+
+  for (const [ruta, nombre] of [[CAMBIOS, "cambios.md"], [REGISTRO, "correcciones.md"], [HALLAZGOS, "hallazgos.csv"]]) {
+    if (!fs.existsSync(ruta)) {
+      falla(`verificacion/${nombre}`, 0, "falta; sin él no puede comprobarse qué se corrigió");
+      return;
+    }
+  }
+
+  // Lo que el generador contó: documento -> número de cambios.
+  const contados = {};
+  for (const m of fs.readFileSync(CAMBIOS, "utf8").matchAll(/^## (\S+) → \S+ — (\d+) cambios?$/gm))
+    contados[m[1]] = Number(m[2]);
+
+  // Lo que declara el registro, en su tabla de índice.
+  const registro = fs.readFileSync(REGISTRO, "utf8");
+  const declarados = {};
+  for (const m of registro.matchAll(/^\|\s*([a-z0-9-]+)\s*\|\s*([^|]+?)\s*\|\s*(\d+)\s*\|$/gm))
+    declarados[m[1]] = { hallazgos: m[2].split(/\s*,\s*/).filter(Boolean), cambios: Number(m[3]) };
+
+  const validos = new Set(
+    fs.readFileSync(HALLAZGOS, "utf8").split("\n").slice(1).map((l) => l.split(",")[0]).filter(Boolean)
+  );
+
+  for (const [doc, n] of Object.entries(contados)) {
+    const d = declarados[doc];
+    if (!d) {
+      falla("verificacion/correcciones.md", 0, `${doc} tiene ${n} ${n === 1 ? "cambio" : "cambios"} y no está registrado: toda corrección se explica antes de publicarse`);
+      continue;
+    }
+    if (d.cambios !== n)
+      falla("verificacion/correcciones.md", 0, `${doc}: el registro declara ${d.cambios} ${d.cambios === 1 ? "cambio" : "cambios"} y el generador contó ${n}`);
+    if (!d.hallazgos.length)
+      falla("verificacion/correcciones.md", 0, `${doc}: no cita ningún hallazgo que autorice la corrección`);
+    for (const h of d.hallazgos)
+      if (!validos.has(h))
+        falla("verificacion/correcciones.md", 0, `${doc}: cita el hallazgo ${h}, que no existe en hallazgos.csv`);
+  }
+
+  // Y al revés: un documento registrado que no tiene cambios es un registro falso.
+  for (const doc of Object.keys(declarados))
+    if (!(doc in contados))
+      falla("verificacion/correcciones.md", 0, `${doc} está registrado como corregido y no tiene ninguna diferencia contra su original`);
+});
+
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);
 reglas.forEach((r) => console.log(`  ${r.fallas === 0 ? "\x1b[32m✓\x1b[0m" : "\x1b[31m✗\x1b[0m"} ${r.nombre}${r.fallas ? `  (${r.fallas})` : ""}`));
 if (fallas.length) {

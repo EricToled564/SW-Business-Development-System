@@ -95,6 +95,8 @@ Una auditoría independiente encontró **88 contradicciones** entre documentos �
 
 **Se trabaja por paquetes**, no hallazgo por hallazgo — la auditoría los agrupa en siete.
 
+**Toda corrección se registra antes de publicarse.** `verificacion/correcciones.md` dice, por documento: qué decía la auditoría, las dos caras de la contradicción transcritas, qué cambió línea por línea, por qué así y no de otra forma, y qué queda pendiente como consecuencia. `cambios.md` dice qué líneas cambiaron; `correcciones.md` dice por qué y con qué autoridad. La regla **R24** de `consistencia.js` falla si un documento tiene diferencias contra su original y no está registrado, si cita un hallazgo que no existe, si el número de cambios declarado no coincide con el que contó el generador, o si algo figura como corregido sin tener diferencias. Es lo que convierte «no hubo ediciones no autorizadas» en una comprobación y no en una afirmación.
+
 **Lo que lo sostiene, y no depende de la memoria de nadie:** `verificacion/candado-notebooklm.js` rechaza cualquier hallazgo marcado como corregido sin sus dos evidencias, sin la plantilla dentro de ellas o sin citas a documentos. Corre en CI y como gancho de `pre-commit`; se instala con `node verificacion/instalar-candado.js`.
 
 ## Estado de las contradicciones
