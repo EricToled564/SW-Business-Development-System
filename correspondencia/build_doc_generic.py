@@ -54,6 +54,83 @@ def extraer_leyendas(md_text: str):
     return "\n".join(limpio), leyendas
 
 
+def extraer_anchos(md_text: str):
+    """Lee, por tabla, los anchos relativos de columna a partir de la línea
+    separadora del markdown (`|-----|--|--|`): cada columna pesa tantas
+    unidades como guiones tenga. Devuelve {índice_de_tabla: [pesos]} sólo
+    para las tablas cuyos pesos no son todos iguales; las demás conservan
+    el reparto uniforme que pandoc asigna por omisión, así que los
+    documentos que ya existen no cambian. Las tablas dentro de una cita
+    (`> | ... |`) también cuentan, porque pandoc las produce igual.
+
+    Existe porque pandoc, al leer HTML sin anchos, reparte las columnas en
+    partes iguales: una columna de texto largo junto a tres de cifras
+    ocupa una cuarta parte del ancho y multiplica las páginas."""
+    anchos = {}
+    indice_tabla = -1
+    dentro_tabla = False
+    filas = []
+    def cerrar():
+        if len(filas) >= 2:
+            m = re.fullmatch(r"\|(?:\s*:?-+:?\s*\|)+", filas[1].strip())
+            if m:
+                pesos = [len(c.strip().strip(":").strip()) for c in filas[1].strip().strip("|").split("|")]
+                if len(set(pesos)) > 1:
+                    anchos[indice_tabla] = pesos
+    for ln in md_text.split("\n"):
+        ln = re.sub(r"^(>\s?)+", "", ln)
+        es_tabla = ln.startswith("|")
+        if es_tabla and not dentro_tabla:
+            indice_tabla += 1
+            filas = []
+        if es_tabla:
+            filas.append(ln)
+        elif dentro_tabla:
+            cerrar()
+        dentro_tabla = es_tabla
+    if dentro_tabla:
+        cerrar()
+    return anchos
+
+
+def aplicar_anchos(content_xml: str, anchos: dict) -> str:
+    """Escribe style:rel-column-width en los estilos de columna de las
+    tablas indicadas. pandoc nombra las tablas Table1, Table2… en orden de
+    aparición y sus columnas Table1.A, Table1.B…, con el estilo de columna
+    vacío; aquí se rellena."""
+    if not anchos:
+        return content_xml
+    # Ancho útil de la página carta con márgenes de 1 pulgada (styles.xml de
+    # pandoc): 8.5 − 2 = 6.5 in. Los anchos relativos solos no bastan: Writer
+    # y el filtro de Word 97 necesitan un ancho absoluto por columna.
+    ancho_total = 6.5
+    nombres = re.findall(r'<table:table\s[^>]*table:name="([^"]+)"', content_xml)
+    for i, pesos in anchos.items():
+        if i >= len(nombres):
+            continue
+        content_xml = re.sub(
+            rf'(<style:style style:name="{re.escape(nombres[i])}" style:family="table">\s*'
+            r'<style:table-properties\b)([^>]*?)/?>',
+            lambda m: f'{m.group(1)} style:width="{ancho_total}in" table:align="left"'
+                      + re.sub(r'\s*table:align="[^"]*"', "", m.group(2)).rstrip("/").rstrip() + "/>",
+            content_xml, count=1,
+        )
+        content_xml = re.sub(
+            rf'(<style:style style:name="{re.escape(nombres[i])}\.[A-Z]+" style:family="table-column")\s*/>',
+            r"\1></style:style>", content_xml)
+        suma = sum(pesos)
+        for j, peso in enumerate(pesos):
+            letra = chr(ord("A") + j)
+            ancho = round(ancho_total * peso / suma, 3)
+            content_xml = content_xml.replace(
+                f'<style:style style:name="{nombres[i]}.{letra}" style:family="table-column"></style:style>',
+                f'<style:style style:name="{nombres[i]}.{letra}" style:family="table-column">'
+                f'<style:table-column-properties style:column-width="{ancho}in"/></style:style>',
+                1,
+            )
+    return content_xml
+
+
 def extraer_saltos(md_text: str):
     """Quita las líneas '<!--PAGEBREAK-->' y devuelve (markdown_limpio,
     [texto_del_encabezado_que_debe_arrancar_página]). El marcador debe ir en
@@ -164,7 +241,8 @@ def marcar_tablas_atomicas(styles_or_content: str, nombres_estilo: list) -> str:
     return s
 
 
-def parchar_odt(odt: pathlib.Path, leyendas: dict | None = None, saltos: list | None = None) -> None:
+def parchar_odt(odt: pathlib.Path, leyendas: dict | None = None, saltos: list | None = None,
+                anchos: dict | None = None) -> None:
     tmp = pathlib.Path(tempfile.mkdtemp())
     with zipfile.ZipFile(odt) as z:
         z.extractall(tmp)
@@ -236,6 +314,7 @@ def parchar_odt(odt: pathlib.Path, leyendas: dict | None = None, saltos: list | 
     todas_las_tablas = sorted(set(re.findall(r'<table:table\s[^>]*table:style-name="([^"]+)"', s)))
     s = marcar_tablas_atomicas(s, todas_las_tablas)
     s = marcar_saltos_de_pagina(s, saltos or [])
+    s = aplicar_anchos(s, anchos or {})
 
     xml.write_text(s, encoding="utf-8")
     estilos_xml.write_text(es, encoding="utf-8")
@@ -261,13 +340,14 @@ def main(entrada: pathlib.Path, salida: pathlib.Path) -> None:
     html = trabajo / "doc.html"
     md_sin_saltos, saltos = extraer_saltos(entrada.read_text(encoding="utf-8"))
     md_limpio, leyendas = extraer_leyendas(md_sin_saltos)
+    anchos = extraer_anchos(md_limpio)
     cuerpo = markdown.markdown(md_limpio, extensions=["tables", "sane_lists"])
     html.write_text(f'<!DOCTYPE html><html><head><meta charset="utf-8">'
                     f"<style>{CSS}</style></head><body>{cuerpo}</body></html>", encoding="utf-8")
 
     odt = trabajo / "doc.odt"
     subprocess.run(["pandoc", str(html), "-f", "html", "-t", "odt", "-o", str(odt)], check=True)
-    parchar_odt(odt, leyendas, saltos)
+    parchar_odt(odt, leyendas, saltos, anchos)
 
     soffice("doc:MS Word 97", odt, trabajo)
     shutil.copy(trabajo / "doc.doc", salida)
