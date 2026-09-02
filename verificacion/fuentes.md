@@ -14,7 +14,7 @@ contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca 
 |---|---|---|
 | **1 · Originales** | Sports World Business Dev. Documentation Review Engine | https://notebook.google.com/notebook/c530c174-5f8f-4dd1-84ff-5f9a02938732 |
 | **2 · Corregidos** | SW Biz Dev Projected Revised Documentation | https://notebook.google.com/notebook/fa78730e-927b-4d57-8ab1-adcd35c09826 |
-| **3 · Verificación por pares** | pendiente de crear | — |
+| **3 · Verificación por pares** | SW Biz Dev Documentation Review Comparison | https://notebook.google.com/notebook/a660eed3-0e54-4606-82a6-6633e296c126 |
 
 | Cuaderno | Qué se carga | Cuándo | Para qué |
 |---|---|---|---|
