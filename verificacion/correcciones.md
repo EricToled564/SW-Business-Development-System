@@ -15,7 +15,8 @@ afirma.
 
 | Documento | Hallazgos | Cambios |
 |---|---|---|
-| experience | A-021, A-022, A-023, A-026, A-033 | 12 |
+| experience | A-021, A-022, A-023, A-026, A-033, A-020 | 14 |
+| seguridad | A-015, A-053, A-070, A-084 | 1 |
 
 ---
 
@@ -177,3 +178,102 @@ identificados sobre las fuentes legibles, con las frases transcritas.
 
 **Evidencia.** `evidencia/B3-antes-salud-consentimiento.md` — respuesta íntegra de
 NotebookLM sobre las 42 fuentes, 12 documentos identificados, con las frases transcritas.
+
+
+---
+
+## seguridad · A-015, A-053, A-070, A-084
+
+**Qué decía la auditoría.**
+
+- **A-015** (crítica, consentimiento) — «No hay consentimiento, aviso sonoro, límites de
+  audio, tratamiento de transcripción ni excepciones de voz.»
+- **A-053** (crítica, consentimiento) — «El contrato de datos no conserva alcance, versión
+  del aviso, método, evidencia y timestamp de consentimiento.»
+- **A-070** (alta, consentimiento) — «Seguimiento, reactivación e invitación de acompañante
+  no tienen propósito/consentimiento y supresión unificados.»
+- **A-084** (alta, consentimiento) — «El flujo de captación no detecta ni gobierna
+  prospectos menores hasta el alta.»
+
+**Lo que faltaba, según las fuentes.**
+
+NotebookLM lo resumió sobre las 32 fuentes legibles: «**No se persiste la versión, evidencia
+o alcance del consentimiento** en la base de datos del sitio web o del funnel»; «**No existe
+mención de tutor legal o formato de consentimiento parental** en las fuentes. Su presencia se
+detecta mediante las condicionales `Q14` y `Q14b` para asociar al prospecto a la membresía
+familiar e integrar el tour guiado por la zona infantil FitKidz».
+
+Sobre mercadotecnia, lo único que constaba era el presupuesto, en `gastos-operativos`:
+
+> `"Plantillas marketing (reactivación de bases) | 0 | ~1,000 | ~2,000"`
+
+Volumen y costo, sin propósito declarado, sin consentimiento separado y sin supresión.
+
+Sobre voz, lo único que constaba era una frase de un documento de la Academia —«esas
+conversaciones no se graban»— referida a las conversaciones entre asesores y clientes, no al
+canal conversacional del prospecto.
+
+**Qué se corrigió.** Cuatro apartados nuevos en `seguridad`, que es el documento que gobierna
+la protección de datos:
+
+| Apartado | Qué establece |
+|---|---|
+| **§8 · El registro del consentimiento** | Cinco campos que se escriben al CRM junto al lead: alcance, versión del aviso, método, evidencia y fecha y hora. |
+| **§9 · Personas menores de edad** | Declaración de mayoría de edad antes de pedir contacto; quien no la declare no continúa por el canal digital. Contratación de un menor sólo en el club, con firma de quien ejerce la patria potestad. FitKidz no cambia. |
+| **§10 · Comunicaciones comerciales y su revocación** | Consentimiento separado y opcional; propósito declarado al pedirlo; revocación en un paso que marca la supresión en el CRM; una base histórica sin registro de consentimiento no se trabaja. |
+| **§11 · Voz: grabación y transcripción** | Aviso al inicio de que se habla con un asistente automatizado; el audio no se almacena; la transcripción sigue la regla de §1; quien lo pida pasa a texto o a una persona. |
+
+**Por qué así, y no de otra forma.**
+
+**§8 corrige una confusión del propio documento.** La minimización explica por qué no se
+guardan los datos; no explica por qué habría que guardar **el consentimiento**. Son cosas
+opuestas y se resuelven al revés: el dato se descarta, el acto de consentir se conserva. Sin
+ese registro Sports World no puede demostrar que lo obtuvo, y la carga de la prueba es suya
+como responsable. Los cinco campos describen un acto, no a la persona, así que conservarlos
+no contradice el principio rector — es lo que permite atender una revocación, porque para
+revocar hay que saber qué se otorgó.
+
+**§9 no inventa un requisito nuevo:** el sistema no puede recabar datos de un menor sin
+consentimiento de quien ejerce la patria potestad, y hasta ahora no lo detectaba. `Q14b` no
+servía para eso —pregunta por los hijos del prospecto, no por su edad—, y confundir las dos
+cosas es lo que dejó el hueco.
+
+**§10 separa dos consentimientos que viajaban juntos.** Coordinar una visita y recibir
+comunicaciones comerciales son finalidades distintas; la segunda es opcional y su negativa no
+puede afectar la primera. La supresión se marca en el CRM, que es el sistema de registro, para
+que ningún componente conserve una lista propia desde la cual seguir enviando.
+
+**§11 acota el canal.** En WhatsApp "BES" opera sólo por texto, así que el apartado aplica al
+canal web y a la atención telefónica, que es donde hay voz.
+
+**Evidencia.** `evidencia/B3-antes-consentimiento-menores-voz.md`.
+
+
+---
+
+## experience · A-020
+
+**Qué decía la auditoría.** **A-020** (crítica, contradicción) — «El cuestionario no
+tiene una versión ni cardinalidad únicas.»
+
+**Lo que había, textual.** Tres conteos distintos conviviendo, según transcribió
+NotebookLM: `experience` declaraba `"Preguntas base (15)"` y `"Preguntas condicionales
+(6)"` con rango operativo `"el cuestionario (15–21 preguntas)"`; el código confirmaba 21
+claves declaradas; y `academia-fases` introducía `"Versión corta (primer contacto) […]
+Entre tres y cinco preguntas filtro"`. Ningún documento daba un identificador: la clave
+`CEI-01` que la auditoría nombra **no existía en ninguna fuente**.
+
+**Qué se corrigió.**
+
+| # | Línea | Qué cambió |
+|---|---|---|
+| 13 | 134 | Se declara el instrumento y su versión: **`CEI-01`, versión vigente `CEI-01 v2.0`**, y que una variante con distinto número de reactivos no es «una versión corta» sino otro instrumento, que necesita su propia clave. Se fija la **cardinalidad única: 15 base + 2 condicionales, entre 15 y 17 reactivos**, y que si otro documento da otra cifra, ese documento está desactualizado. |
+| 14 | 604 | La referencia suelta «(15–21 preguntas)» pasa a «(`CEI-01 v2.0`, 15–17 reactivos)». |
+
+**Por qué así.** El rango 15–21 quedó obsoleto por la corrección de A-021: al salir Q12b,
+Q17, Q18 y Q19, las condicionales pasaron de seis a dos. Pero el problema de fondo no era
+el número, era que **nadie era dueño del número**: cada documento lo repetía por su cuenta
+y ninguno decía cuál manda. Nombrar el instrumento y su versión pone la cardinalidad en un
+solo lugar, y convierte a los demás en referencias que se pueden verificar.
+
+**Evidencia.** `evidencia/B3-antes-cuestionario-brief-terceros.md`.

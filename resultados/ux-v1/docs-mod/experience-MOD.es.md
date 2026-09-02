@@ -131,6 +131,10 @@ El cuestionario no es un formulario de marketing. Es un instrumento de captació
 
 El cuestionario se compone de tres categorías de preguntas:
 
+**El cuestionario es un instrumento controlado: `CEI-01`.** Su versión vigente es **`CEI-01 v2.0`**, la que describe este apartado. Cualquier documento, canal o procedimiento que aplique el cuestionario aplica **esta** versión y ninguna otra; una variante con distinto número de reactivos no es «una versión corta», es otro instrumento y necesita su propia clave.
+
+**Cardinalidad única: 15 base + 2 condicionales = 17 reactivos como máximo.** Una persona contesta entre **15 y 17**, según se disparen las condicionales. Este es el único conteo válido; si otro documento da una cifra distinta, ese documento está desactualizado.
+
 **Preguntas base (15)** — siempre se preguntan, en el mismo orden, a todo prospecto sin importar las respuestas previas:
 
 | ID  | Tema                | Tipo            | Determina                                                                                                              |
@@ -597,7 +601,7 @@ Este ordenamiento gobierna únicamente el único mensaje de seguridad *visible*.
 
 El pie **USO INTERNO** sólo es cierto si el documento nunca llega al prospecto. Mostrarlo en su pantalla —como hacía la versión anterior de este documento— le entregaba el guion de cierre, las prioridades de venta y las banderas que el asesor usa para conducir la conversación.
 
-**Justificación del orden de división del cliente (Página 1 = Club primero):** la primera pregunta del prospecto tras completar el cuestionario (15–21 preguntas) es "¿dónde voy a entrenar?" —por lo tanto el Club aparece de inmediato después del encabezado personalizado, antes del resumen de perfil o cualquier detalle de la combinación.
+**Justificación del orden de división del cliente (Página 1 = Club primero):** la primera pregunta del prospecto tras completar el cuestionario (`CEI-01 v2.0`, 15–17 reactivos) es "¿dónde voy a entrenar?" —por lo tanto el Club aparece de inmediato después del encabezado personalizado, antes del resumen de perfil o cualquier detalle de la combinación.
 
 ## 4.14 Regla de única llamada al LLM
 

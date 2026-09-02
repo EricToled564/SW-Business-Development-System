@@ -58,3 +58,73 @@ Es importante no confundir dos conceptos distintos:
 - Ante cualquier vulneración de seguridad, el prestador **notifica de inmediato** a Sports World, indicando el alcance y las acciones tomadas.
 
 Este enfoque está reflejado contractualmente en la **Cláusula Décima Octava (Seguridad y minimización de datos personales)** y en la **Cláusula Décima Séptima (Confidencialidad y Datos Personales)** del Contrato.
+
+## 8 · El registro del consentimiento
+
+La minimización explica por qué **no se guardan los datos**; no explica por qué habría que
+guardar **el consentimiento**. Son cosas distintas y se resuelven al revés: el dato se
+descarta, el acto de consentir se conserva. Sin ese registro, Sports World no puede
+demostrar que obtuvo el consentimiento, y la carga de la prueba es suya como responsable.
+
+Cada vez que una persona consiente, el sistema escribe al CRM **cinco campos**, junto al
+lead y no como base aparte:
+
+| Campo | Qué guarda |
+|---|---|
+| `consentimiento_alcance` | Para qué consintió: coordinar la visita, o además comunicaciones comerciales |
+| `consentimiento_aviso_version` | Identificador y versión del aviso que estaba a la vista en ese momento |
+| `consentimiento_metodo` | Cómo consintió: tácito con el aviso desplegado, o expreso con casilla |
+| `consentimiento_evidencia` | Referencia al texto exacto mostrado, para poder reproducir qué leyó |
+| `consentimiento_fecha_hora` | Marca de tiempo en horario de la Ciudad de México |
+
+Ninguno de los cinco es un dato personal adicional: describen un acto, no a la persona. Por
+eso conservarlos no contradice el principio rector — al contrario, es lo que permite
+atender una revocación, porque para revocar hay que saber qué se otorgó.
+
+## 9 · Personas menores de edad
+
+El sistema **no está dirigido a menores de edad** y no puede recabar sus datos sin
+consentimiento del padre, madre o tutor. Hasta ahora el flujo no lo detectaba: la única
+pregunta relacionada era si la persona tiene hijos menores de 12 años, y sirve para
+ofrecer FitKidz, no para gobernar a un prospecto menor.
+
+- **En la captación**, antes de pedir datos de contacto, el prospecto declara ser mayor de
+  edad. Quien no lo declare no continúa por el canal digital: se le indica que la
+  inscripción de un menor se hace en el club, con su padre, madre o tutor presente.
+- **En el club**, la contratación de un menor exige la presencia y la firma de quien
+  ejerce la patria potestad o la tutela, y el aviso de privacidad se le entrega a esa
+  persona.
+- **FitKidz** no cambia: los hijos del socio no son prospectos ni titulares de una
+  membresía propia; sus datos los aporta el socio adulto al inscribirlos en la actividad.
+
+## 10 · Comunicaciones comerciales y su revocación
+
+Las plantillas de reactivación de bases, la invitación de acompañante y cualquier
+comunicación no relacionada con la solicitud de la persona **son mercadotecnia**, y no
+viajan con el consentimiento de la visita.
+
+- **Consentimiento separado y opcional.** Se pide aparte del de coordinar la visita, y
+  negarlo no afecta la visita agendada ni la membresía.
+- **Propósito declarado** en el momento de pedirlo, no en un aviso genérico.
+- **Revocación en un paso**, disponible en cada mensaje enviado. Revocar detiene el envío y
+  **marca la supresión en el CRM**, que es el sistema de registro; ningún otro componente
+  conserva una lista propia desde la cual seguir enviando.
+- **Bases pasadas.** Reactivar una base histórica exige comprobar que esas personas
+  otorgaron consentimiento de mercadotecnia y no lo han revocado. Una base sin ese registro
+  no se trabaja por este canal.
+
+## 11 · Voz: grabación y transcripción
+
+El agente "BES" opera por voz en el canal web. En WhatsApp opera **sólo por texto**
+(**[BDS · Estrategia Técnica](#bds-tecnica)**), de modo que lo de este apartado aplica al
+canal web y a la atención telefónica.
+
+- **Aviso al inicio**, antes del primer intercambio: la persona escucha que habla con un
+  asistente automatizado y que la conversación se procesa para atender su solicitud.
+- **No se conserva el audio.** La voz se transcribe para poder responder, y **el audio no
+  se almacena** ni en el sitio ni en infraestructura del prestador.
+- **La transcripción sigue la misma regla que el resto:** vive de forma transitoria, se
+  copia al CRM lo que corresponde al lead, y no se conserva copia una vez completado ese
+  flujo (§1).
+- **Quien lo pida, pasa a texto o a una persona.** Nadie queda obligado a usar la voz para
+  ser atendido.
