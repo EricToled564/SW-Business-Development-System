@@ -39,7 +39,7 @@ reproducida mecánicamente de su archivo, y se emparejan por el nombre: `bds-tec
 `bds-tecnica-MOD`. Así la verificación no depende de que quien las transcribió no se equivocara.
 
 El cuaderno 3 lleva sólo los pares que cambiaron: un documento idéntico a su original no tiene nada
-que verificar. Hoy serían **0 fuentes** (0 pares).
+que verificar. Hoy serían **2 fuentes** (1 pares).
 
 ## Cuaderno 1 · Documentos originales (31)
 
