@@ -690,10 +690,29 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
       falla("verificacion/plantilla-pregunta.md", 0, `la plantilla fija «${fijo[1]} fuentes»: el número se sustituye al preguntar, con el dato de fuentes.md`);
   }
 
+  // El código publicado como fuente tiene que reproducir el archivo carácter por
+  // carácter: si se recorta o se resume, deja de servir para auditar el texto
+  // exacto de las preguntas.
+  const CODIGO = [["demo/cuestionario-inteligente.jsx", "cuestionario-inteligente.html"]];
+  for (const [rel, salida] of CODIGO) {
+    const fuente = path.join(WEBAPP, rel);
+    const publicada = path.join(WEBAPP, "codigo", salida);
+    if (!fs.existsSync(fuente)) {
+      falla(`webapp/${rel}`, 0, "código listado como fuente pero el archivo no existe");
+    } else if (!fs.existsSync(publicada)) {
+      falla(`codigo/${salida}`, 0, `no está publicado el código de ${rel} (node tools/build-fuentes.js)`);
+    } else {
+      if (cuerpo(fs.readFileSync(publicada, "utf8")) !== escapar(fs.readFileSync(fuente, "utf8")))
+        falla(`codigo/${salida}`, 0, `no reproduce ${rel} carácter por carácter (node tools/build-fuentes.js)`);
+      if (!lista.includes(`/codigo/${salida}`))
+        falla("verificacion/fuentes.md", 0, `no lista codigo/${salida} (node tools/build-fuentes.js)`);
+    }
+  }
+
   // El cuaderno tiene un límite de 50 fuentes. Pasarlo no es un detalle: obliga
   // a dejar documentos fuera, y un documento fuera es un hallazgo que no se ve.
   const proceso = fs.readdirSync(PROCESO).filter((f) => f.endsWith(".html") && f !== "dec-01.html").length;
-  const total = archivos.length + proceso + WEB.length;
+  const total = archivos.length + proceso + WEB.length + CODIGO.length;
   if (total > 50)
     falla("verificacion/fuentes.md", 0, `cada cuaderno cargaría ${total} fuentes y el límite es 50`);
 });

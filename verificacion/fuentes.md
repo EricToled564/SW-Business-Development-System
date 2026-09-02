@@ -18,8 +18,8 @@ contestará sobre texto viejo. Por eso se carga **después** de publicar, nunca 
 
 | Cuaderno | Qué se carga | Cuándo | Para qué |
 |---|---|---|---|
-| **1 · Originales** | los 31 documentos de `original/` + las 7 páginas del Proceso Comercial + las 3 páginas del sitio = **41 fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |
-| **2 · Corregidos** | los 31 documentos `-MOD` de `mod/` + las 7 del Proceso Comercial + las 3 del sitio = **41 fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |
+| **1 · Originales** | los 31 documentos de `original/` + las 7 páginas del Proceso Comercial + las 3 páginas del sitio + el código del cuestionario = **42 fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |
+| **2 · Corregidos** | los 31 documentos `-MOD` de `mod/` + las 7 del Proceso Comercial + las 3 del sitio + el código del cuestionario = **42 fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |
 | **3 · Verificación por pares** | el original y su `-MOD` de cada documento **que haya cambiado**, más el resumen de `cambios.md` | al final | Compara par por par y dice si hubo errores o ediciones no autorizadas al hacer los cambios. |
 
 Las dos versiones **nunca van juntas en una misma página**. Cada una es una fuente independiente,
@@ -112,6 +112,13 @@ No cambiaron desde la base, así que la misma página sirve a los dos cuadernos.
 - Captación en consola · SOP/SW/0103 — https://erictoled564.github.io/SW-Business-Development-System/proceso/sop-0103.html
 - La Experiencia Guiada · SOP/SW/0201 — https://erictoled564.github.io/SW-Business-Development-System/proceso/sop-0201.html
 - Contratación y alta · SOP/SW/0301 — https://erictoled564.github.io/SW-Business-Development-System/proceso/sop-0301.html
+
+## Código (1) · cuadernos 1 y 2
+
+Publicado íntegro y sin modificar. Es donde vive el texto exacto de las preguntas del
+cuestionario, tal como las ve el prospecto.
+
+- Cuestionario dinámico · código — https://erictoled564.github.io/SW-Business-Development-System/codigo/cuestionario-inteligente.html
 
 ## Páginas del sitio (3) · cuadernos 1 y 2
 

@@ -74,6 +74,15 @@ const WEB = [
   ["demo-manual/index.html", "Demo · manual"],
 ];
 
+// El código del cuestionario. Se publica íntegro y sin tocar, envuelto en un
+// bloque preformateado: el texto de las preguntas y la lógica de ramificación
+// que ve el prospecto son auditables tal como están escritos, sin que nadie los
+// transcriba ni los resuma. Se toma el original en módulo ES, no la versión
+// compilada para el navegador: difieren sólo en el envoltorio.
+const CODIGO = [
+  ["demo/cuestionario-inteligente.jsx", "Cuestionario dinámico · código"],
+];
+
 // DEC/SW/01 se publica como aviso, no como documento: su contenido es interno
 // (ver R21 en consistencia.js). No es una fuente cargable.
 const PROCESO_INTERNO = new Set(["dec-01.html"]);
@@ -168,6 +177,25 @@ function limpiar(dir) {
 fs.mkdirSync(DOCS_MOD, { recursive: true });
 
 const archivos = fs.readdirSync(DOCS).filter((f) => f.endsWith(".es.md")).sort();
+const codigo = [];
+limpiar(path.join(WEBAPP, "codigo"));
+for (const [rel, nombre] of CODIGO) {
+  const fuente = fs.readFileSync(path.join(WEBAPP, rel), "utf8");
+  const salida = `${path.basename(rel).replace(/\.[^.]+$/, "")}.html`;
+  fs.writeFileSync(
+    path.join(WEBAPP, "codigo", salida),
+    pagina(
+      nombre,
+      `Código del sitio · archivo fuente <code>${rel}</code>`,
+      "<strong>Código, publicado íntegro y sin modificar.</strong> Es el archivo tal como está en el " +
+        "repositorio: el texto de las preguntas, sus opciones y la lógica de ramificación del " +
+        "cuestionario, sin recortes ni resumen.",
+      fuente
+    )
+  );
+  codigo.push([salida, nombre]);
+}
+
 const grupo1 = [];
 const grupo2 = [];
 const registro = [];
@@ -255,8 +283,8 @@ const lista = [
   "",
   "| Cuaderno | Qué se carga | Cuándo | Para qué |",
   "|---|---|---|---|",
-  `| **1 · Originales** | los ${grupo1.length} documentos de \`original/\` + las ${proceso.length} páginas del Proceso Comercial + las ${WEB.length} páginas del sitio = **${grupo1.length + proceso.length + WEB.length} fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |`,
-  `| **2 · Corregidos** | los ${grupo2.length} documentos \`-MOD\` de \`mod/\` + las ${proceso.length} del Proceso Comercial + las ${WEB.length} del sitio = **${grupo2.length + proceso.length + WEB.length} fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |`,
+  `| **1 · Originales** | los ${grupo1.length} documentos de \`original/\` + las ${proceso.length} páginas del Proceso Comercial + las ${WEB.length} páginas del sitio + el código del cuestionario = **${grupo1.length + proceso.length + WEB.length + codigo.length} fuentes** | **ahora** | Se le pregunta hallazgo por hallazgo, desde el primero. Dice qué hay que cambiar y dónde. |`,
+  `| **2 · Corregidos** | los ${grupo2.length} documentos \`-MOD\` de \`mod/\` + las ${proceso.length} del Proceso Comercial + las ${WEB.length} del sitio + el código del cuestionario = **${grupo2.length + proceso.length + WEB.length + codigo.length} fuentes** | **cuando todas las modificaciones estén hechas** | Confirma que los cambios están hechos. |`,
   "| **3 · Verificación por pares** | el original y su `-MOD` de cada documento **que haya cambiado**, más el resumen de `cambios.md` | al final | Compara par por par y dice si hubo errores o ediciones no autorizadas al hacer los cambios. |",
   "",
   "Las dos versiones **nunca van juntas en una misma página**. Cada una es una fuente independiente,",
@@ -283,6 +311,13 @@ const lista = [
   "No cambiaron desde la base, así que la misma página sirve a los dos cuadernos.",
   "",
   ...proceso.map((n) => `- ${tituloProceso(n)} — ${SITIO}/proceso/${n}`),
+  "",
+  `## Código (${codigo.length}) · cuadernos 1 y 2`,
+  "",
+  "Publicado íntegro y sin modificar. Es donde vive el texto exacto de las preguntas del",
+  "cuestionario, tal como las ve el prospecto.",
+  "",
+  ...codigo.map(([n, nombre]) => `- ${nombre} — ${SITIO}/codigo/${n}`),
   "",
   `## Páginas del sitio (${WEB.length}) · cuadernos 1 y 2`,
   "",
@@ -338,7 +373,7 @@ fs.writeFileSync(path.join(VERIFICACION, "cambios.md"), cambios.join("\n"));
 
 console.log(`Grupo 1 · ${grupo1.length} originales en webapp/original/ (base ${BASE})`);
 console.log(`Grupo 2 · ${grupo2.length} corregidos en webapp/mod/`);
-console.log(`Cuaderno 1: ${grupo1.length + proceso.length + WEB.length} fuentes · cuaderno 2: ${grupo2.length + proceso.length + WEB.length} fuentes (límite 50)`);
+console.log(`Cuaderno 1: ${grupo1.length + proceso.length + WEB.length + codigo.length} fuentes · cuaderno 2: ${grupo2.length + proceso.length + WEB.length + codigo.length} fuentes (límite 50)`);
 console.log(
   conCambios.length
     ? `${conCambios.length} documentos corregidos (${totalCambios} cambios) en verificacion/cambios.md`
