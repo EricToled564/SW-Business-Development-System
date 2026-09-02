@@ -87,7 +87,7 @@ La máquina de estados de fases tiene exactamente siete valores, ejecutados en e
 4. **`result`** — La página de la *experiencia ideal*. El prospecto aterriza aquí una vez que el resolver retorna exitosamente. (El modelo de lenguaje normalmente también retorna; si falla repetidamente, el prospecto igual llega a `result` en el modo de respaldo descrito en §4.14.) Es la pantalla más larga por volumen de contenido y el entregable principal para el prospecto. Contiene dos páginas de contenido separadas visualmente (ver §4.13).
 5. **`contact_capture`** — Se dispara cuando el prospecto hace clic en "AGENDAR VISITA GUIADA" en la pantalla de resultado. Un formulario obligatorio de tres campos (apellido, teléfono celular, correo) bloquea el avance hasta que los tres pasen la validación. El prospecto puede regresar a `result` mediante una flecha de retroceso. (Ver §4.11.)
 6. **`schedule`** — Se dispara cuando el prospecto envía datos de contacto válidos. Un widget de calendario presenta los próximos 14 días con franjas horarias predefinidas **dentro del horario de atención del club**. El prospecto elige una combinación, confirma y avanza. **No se verifica disponibilidad ni se crea una reservación**: la fecha y hora elegidas se registran como el *requerimiento de visita* del prospecto —se incluyen en el lead escrito al CRM y se envían por correo al club, que confirma y coordina la visita.
-7. **`briefing`** — Fase terminal. **El prospecto ve una sola página: la confirmación de su cita**, pensada para que tome una captura de pantalla y la recuerde. El brief del asesor **no se le muestra**: se genera en el servidor y se envía por correo al club, para que el asesor lo lea antes de la visita. Son dos destinatarios distintos y dos entregas distintas. El prospecto puede reiniciar el cuestionario o regresar a `schedule` para modificar la cita.
+7. **`briefing`** — Fase terminal. Muestra dos páginas separadas visualmente: la página 1 es la confirmación de la cita (pensada para que el prospecto tome una captura de pantalla y la recuerde), la página 2 es el brief del asesor (pensado para que el asesor de ventas de Sports World lo lea antes de la visita). El prospecto puede reiniciar el cuestionario o regresar a `schedule` para modificar la cita.
 
 Existe una fase auxiliar fuera de la secuencia principal:
 - **`error`** — Se dispara si la llamada a la API del modelo de lenguaje falla. Muestra un botón de reintentar y un enlace de reinicio. Un reintento exitoso regresa al prospecto a `result`; si los reintentos siguen fallando, el prospecto avanza a `result` en el respaldo de §4.14. La fase de error nunca es un callejón sin salida.
@@ -131,42 +131,36 @@ El cuestionario no es un formulario de marketing. Es un instrumento de captació
 
 El cuestionario se compone de tres categorías de preguntas:
 
-**El cuestionario es un instrumento controlado: `CEI-01`.** Su versión vigente es **`CEI-01 v2.0`**, la que describe este apartado. Cualquier documento, canal o procedimiento que aplique el cuestionario aplica **esta** versión y ninguna otra; una variante con distinto número de reactivos no es «una versión corta», es otro instrumento y necesita su propia clave.
-
-**Cardinalidad única: 15 base + 2 condicionales = 17 reactivos como máximo.** Una persona contesta entre **15 y 17**, según se disparen las condicionales. Este es el único conteo válido; si otro documento da una cifra distinta, ese documento está desactualizado.
-
 **Preguntas base (15)** — siempre se preguntan, en el mismo orden, a todo prospecto sin importar las respuestas previas:
 
 | ID  | Tema                | Tipo            | Determina                                                                                                              |
 |-----|---------------------|-----------------|---------------------------------------------------------------------------------------------------------------------|
 | Q1  | Nombre              | text            | Trato en primera persona en todo el copy. La primera palabra se trata como el nombre de pila; la cadena completa se trata como el saludo. |
-| Q2  | Género              | single-select   | Concordancia gramatical de todo el copy con género (opciones de Q3, opciones de Q13, tarjetas de resumen). |
+| Q2  | Género              | single-select   | Concordancia gramatical de todo el copy con género (opciones de Q3, opciones de Q13, tarjetas de resumen). También habilita Q12b. |
 | Q3  | Sentir al salir     | single-select   | Ancla emocional principal para el hook del modelo de lenguaje y el argumento del plan.                                              |
-| Q4  | Objetivos           | multi-select (máx 2) | Selecciona el subgrupo del Bloque 01, el subgrupo del Bloque 02, los pesos de ranking de clases del Bloque 03 y el arco narrativo de la experiencia ideal. La primera selección (`Q4[0]`) es el *objetivo principal* y dirige todas las resoluciones de elección única. La segunda selección es un *objetivo secundario* usado solo para diversificar el ranking de clases. |
+| Q4  | Objetivos           | multi-select (máx 2) | Selecciona el subgrupo del Bloque 01, el subgrupo del Bloque 02, los pesos de ranking de clases del Bloque 03 y el arco narrativo de la experiencia ideal. La primera selección (`Q4[0]`) es el *objetivo principal* y dirige todas las resoluciones de elección única. La segunda selección es un *objetivo secundario* usado solo para diversificar el ranking de clases. También habilita Q17, Q18, Q19. |
 | Q5  | Ritmo               | single-select   | Capturada para el brief del asesor como la intensidad de entrenamiento preferida del prospecto. Al igual que Q7/Q8, no filtra de forma estricta el catálogo ni cambia la selección determinista de bloques; el asesor concilia la preferencia de intensidad durante la visita. |
 | Q6  | Modo                | single-select   | Interruptor de nivel superior entre los catálogos de piso seco y acuático. "En la alberca" activa los bloques acuáticos 01 y 02; "Ambas" mantiene los bloques secos pero agrega una nota acuática; "Lo que mi entrenador recomiende" cede al valor por defecto del resolver según el objetivo principal. |
 | Q7  | Franjas horarias    | multi-select    | Capturada para el brief del asesor (Disponibilidad) y pasada al modelo de lenguaje para la línea de intención y la ruta de visita. No filtra de forma estricta el catálogo de clases —la conciliación de horarios ocurre con el asesor en la visita. |
 | Q8  | Días de la semana   | multi-select    | Igual que Q7: capturada para el brief y el modelo de lenguaje, surgida como la disponibilidad declarada del prospecto. El filtrado de clases a nivel de horario se difiere al asesor. |
 | Q9  | Nivel               | single-select   | Filtra las clases candidatas por nivel permitido: una clase sobrevive solo si su conjunto de niveles permitidos incluye el nivel Q9 del prospecto (el mismo modelo usado en §4.4 Paso 3). Un prospecto "Principiante" no verá una clase restringida a intermedio/avanzado. Determina la bandera del brief del asesor para "tour obligatorio antes de la sesión". |
 | Q10 | Historial           | single-select   | Determina la bandera del brief del asesor para primera vez en el gym, antecedente sedentario o regreso después de una pausa. También habilita Q11.   |
-| Q12 | Programas de interés | multi-select   | **Preferencia, no condición de salud.** Pregunta qué tipos de programa le interesa que su experiencia incluya —bajo impacto, prenatal o posparto, acompañamiento nutricional, movilidad guiada—. Pondera el ranking de clases y se lleva al brief como interés declarado. **No filtra el catálogo ni activa ninguna matriz clínica** (ver §4.8). |
+| Q12 | Condiciones médicas | multi-select    | Filtra de forma estricta el catálogo de clases mediante la matriz de contraindicaciones. (Ver §4.8.)                                          |
 | Q13 | Acompañamiento      | single-select   | Alterna el Bloque 03 entre "Clases en grupo" (acompañado) y "Personal Training" (solo). Determina la bandera del asesor "no presionar pack de clases grupales". |
 | Q14 | Visita              | single-select   | Determina los mensajes de FitKidz en el reporte y, cuando dispara Q14b, hace de FitKidz una amenidad de experiencia requerida en la selección de club (§4.1). También habilita Q14b. |
 | Q15 | Cerca de qué        | single-select   | Ancla geográfica del resolver: casa / trabajo / ambas / sin preferencia.                                                       |
 | Q16 | Dónde queda         | location        | Entrada geográfica del resolver: código postal o nombre de colonia. Texto libre con validación ligera. |
 
-**Preguntas condicionales (2)** — se preguntan solo si una respuesta específica aguas arriba las dispara:
+**Preguntas condicionales (6)** — se preguntan solo si una respuesta específica aguas arriba las dispara:
 
 | ID   | Disparador                                                                                    | Propósito                                                                                                  |
 |------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Q11  | `Q10 === "Regreso después de una pausa"`                                                      | Duración de la pausa. Determina la bandera del asesor "primera sesión conservadora".                            |
+| Q12b | `Q2 !== "Hombre"` (es decir, "Mujer" o "Prefiero no mencionarlo")                             | Estado de embarazo y posparto. Filtra de forma estricta clases con impacto, trabajo abdominal o posicionamiento supino. Se pregunta a todos excepto a quienes seleccionaron "Hombre", de modo que una persona embarazada o en posparto que prefirió no declarar su género igual es evaluada; para "Prefiero no mencionarlo" la pregunta se muestra con un encuadre neutro (p. ej., "¿Aplica para ti embarazo o posparto reciente?"). |
 | Q14b | `Q14 ∈ {"Yo y mis hijos", "La familia completa"}`                                              | Presencia de hijos menores de 12 años. Determina los mensajes familiares de FitKidz en el reporte y hace de FitKidz una amenidad de experiencia requerida en la selección de club (§4.1). |
-
-**Lo que el cuestionario digital no pregunta, y por qué.** No hay preguntas de condición médica, embarazo, posparto, tratamiento activo, peso, estatura ni cintura. No es una omisión: el artículo 2, fracción VI de la LFPDPPP clasifica el estado de salud presente o futuro como **dato sensible**, y el artículo 8 exige para él **consentimiento expreso y por escrito**. Ese consentimiento no puede obtenerse con la calidad que la ley exige en una conversación de un minuto, así que la regla del Proceso Comercial —**[MPC/SW/01 §8.4](#mpc-01)**— es que por medios electrónicos no se recaba información de salud, en ninguno de los cuatro canales.
-
-Lo que sí pregunta Q12 son **intereses de programa**: si a la persona le interesa que su experiencia incluya trabajo de bajo impacto, programas prenatales o de posparto, acompañamiento nutricional o movilidad guiada. Un interés declarado no es un diagnóstico ni un estado de salud, y por eso puede recabarse con consentimiento tácito, con el aviso a la vista antes del primer reactivo.
-
-La información de salud se recaba **en persona**, en la visita guiada, con la autorización **AU-01** firmada. Es ahí donde corre el cuestionario de salud y la matriz de contraindicaciones (**[SOP/SW/0201](#sop-0201)**).
+| Q17  | `Q4 includes "Bajar de peso"`                                                                 | Tratamientos activos de pérdida de peso (GLP-1, cirugía bariátrica, acompañamiento nutricional, otro, ninguno). Determina la regla de prioridad GLP-1, el filtro estricto bariátrico y el mensaje abierto de revisión por el asesor. |
+| Q18  | `Q4 includes "Bajar de peso"`                                                                 | Datos físicos actuales (peso, estatura, cintura). Capturados para el brief del asesor; no usados por el resolver. |
+| Q19  | `Q4 includes "Bajar de peso"`                                                                 | Meta de cambio de peso (rango, en opciones de selección única). Capturada para el brief del asesor; no usada por el resolver. |
 
 **Captación posterior al cuestionario (3 campos, una pantalla)** — capturada después de mostrar la recomendación, antes del calendario:
 
@@ -564,11 +558,7 @@ Los errores se renderizan debajo del campo correspondiente al perder el foco (no
 
 **Efecto:** al enviar exitosamente, el objeto de contacto `{ lastName, phone, email }` se almacena en el estado del resultado y la fase avanza a `schedule`. (La escritura al CRM misma ocurre una fase después, en la confirmación de la cita —ver §5.2.) Los datos capturados se renderizan en el brief del asesor en §2 "Logística y contacto". El nombre completo (`Q1 + " " + contact.lastName`) se renderiza en el encabezado del brief.
 
-**Aviso de privacidad en la pantalla:** "Tus datos se usan únicamente para coordinar tu visita guiada. Los tratan Sports World y sus proveedores tecnológicos, que no pueden usarlos para ningún otro fin. Consulta el aviso de privacidad integral." El enlace lleva al aviso integral de Sports World.
-
-La frase anterior —"No los compartimos con terceros"— **se retira por engañosa**. Los datos sí se remiten a encargados del tratamiento: el proveedor del modelo de lenguaje que redacta la experiencia y el brief, el proveedor de voz, la API de WhatsApp Business y el CRM de Sports World. Remitir datos a un encargado no es una transferencia en el sentido de la LFPDPPP, y por eso es lícito sin consentimiento adicional; pero decirle al prospecto que no se comparten con nadie es afirmar algo que no ocurre. El texto corregido nombra la figura sin tecnicismos y remite al aviso integral, que es donde el encargado se identifica.
-
-Este texto no es legalmente vinculante por sí mismo —el aviso integral se referencia en otra parte del sitio— pero es el primer momento de consentimiento del prospecto, y por eso no puede decir menos de lo que es cierto.
+**Aviso de privacidad en la pantalla:** "Tus datos se usan únicamente para coordinar tu visita guiada. No los compartimos con terceros." Este texto no es legalmente vinculante por sí mismo —el aviso de privacidad integral se referencia en otra parte del sitio— pero es el primer momento de consentimiento del prospecto.
 
 ## 4.12 Regla de copy contextual de la sección de seguridad
 
@@ -595,13 +585,11 @@ Este ordenamiento gobierna únicamente el único mensaje de seguridad *visible*.
 - **Página 1:** barra superior, encabezado (eyebrow + h1 + hook + plan_argument + caja de marca a la derecha), club + beneficio familiar a dos columnas, panel de otros clubes (cuando se expande), tarjetas de resumen (4 cajas), fila de CTA con "AGENDAR VISITA GUIADA".
 - **Página 2:** kicker de sección "Tu combinación recomendada", tres tarjetas-plan (Bloque 01 + Bloque 02 + Bloque 03 con colores), paneles de cambiar-clases / todas-las-clases (cuando se expanden), sección de seguridad ámbar, párrafo del argumento de infraestructura, CTA inferior + reinicio, pie de página con letra fina.
 
-**División de página del brief del asesor.** El brief es un documento **interno**: se envía por correo al club y **no se renderiza en la sesión del prospecto** en ningún momento. Su banner de confirmación es para el asesor, no para el cliente —el cliente ya vio la suya en la pantalla de resultado—.
-- **Página 1:** encabezado del brief (nombre completo + nivel + chips + fecha), §1 Perfil del lead (8 campos), §2 Logística y contacto (club + ubicación + acompañantes + teléfono + email).
+**División de página del brief del asesor:**
+- **Página 1:** banner de confirmación para el prospecto, encabezado del brief (nombre completo + nivel + chips + fecha), §1 Perfil del lead (8 campos), §2 Logística y contacto (club + ubicación + acompañantes + teléfono + email).
 - **Página 2:** §3 Qué validar (5 preguntas del modelo de lenguaje), §4 Ruta recomendada (4 pasos), §5 Propuesta recomendada (oferta + complemento), §6 Prioridades de cierre (3 viñetas), §7 Notas y banderas (banderas codificadas), Guion de cierre (script del modelo de lenguaje), Registro del asesor (4 cajas vacías), Footer USO INTERNO.
 
-El pie **USO INTERNO** sólo es cierto si el documento nunca llega al prospecto. Mostrarlo en su pantalla —como hacía la versión anterior de este documento— le entregaba el guion de cierre, las prioridades de venta y las banderas que el asesor usa para conducir la conversación.
-
-**Justificación del orden de división del cliente (Página 1 = Club primero):** la primera pregunta del prospecto tras completar el cuestionario (`CEI-01 v2.0`, 15–17 reactivos) es "¿dónde voy a entrenar?" —por lo tanto el Club aparece de inmediato después del encabezado personalizado, antes del resumen de perfil o cualquier detalle de la combinación.
+**Justificación del orden de división del cliente (Página 1 = Club primero):** la primera pregunta del prospecto tras completar el cuestionario (15–21 preguntas) es "¿dónde voy a entrenar?" —por lo tanto el Club aparece de inmediato después del encabezado personalizado, antes del resumen de perfil o cualquier detalle de la combinación.
 
 ## 4.14 Regla de única llamada al LLM
 
