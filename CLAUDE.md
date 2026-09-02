@@ -53,6 +53,7 @@ Toda pieza —manual, cuestionario, procedimiento, capacitación, sitio— se es
 - Fuente de verdad: `resultados/ux-v1/webapp/docs/*.es.md`.
 - **Excepción: el Proceso Comercial.** Sus documentos —`MPC/SW/01`, `SOP/SW/0101`, `SOP/SW/0102`, `SOP/SW/0103`, `SOP/SW/0201` y `SOP/SW/0301`— viven en `resultados/ux-v1/webapp/proceso/*.html` como páginas con composición propia (cabecera de control, tablas de pasos con código de color, diagrama de flujo). Se registran en `app.js` con `type: "page"` y `src`, y en `indice.es.md` como cualquier otro documento. **`DEC/SW/01` es la excepción de la excepción:** vive en la misma carpeta y con la misma composición, pero **es interno y no se registra ni en `app.js` ni en `indice.es.md`** — es el registro de cambios del proceso y el cliente no tiene por qué verlo. Lo sostiene la regla R21 de `consistencia.js`; no es un documento huérfano. **No pasan por `build_pdfkit.js`**: el PDF se obtiene desde la propia página, con el botón de impresión. El visor les monta encima las funciones de lectura —índice, búsqueda con resaltado, ancla por paso (`#sop-0201:paso-31`), filtro por responsable, enlaces cruzados e índice de claves—; ese código vive en `app.js` y las páginas se mantienen legibles por separado.
 - Registro de cada documento en `resultados/ux-v1/webapp/app.js` (id, grupo, PDF) y en `indice.es.md`.
+- **Las fuentes para NotebookLM se regeneran en la misma entrega que el documento.** `resultados/ux-v1/tools/build-fuentes.js` produce los dos grupos de páginas HTML —NotebookLM sólo ingiere HTML— y escribe `verificacion/fuentes.md` (la lista por cuaderno) y `verificacion/cambios.md` (el resumen de correcciones). **NotebookLM no vuelve a rastrear:** cada fuente queda congelada al cargarse, así que tras publicar hay que volver a cargar las afectadas. La regla **R23** de `consistencia.js` falla si alguna página no reproduce su archivo, si sobra una página sin documento, si las listas no las nombran todas o si un cuaderno pasaría de 50 fuentes. Es lo que impide que la verificación externa conteste sobre texto viejo, como ocurrió con A-016: cinco páginas seguían publicando la regla de enrutamiento anterior semanas después de corregirla.
 - PDFs con el pipeline de casa: `resultados/ux-v1/kb/build_pdfkit.js` (pdfkit). Nunca a mano.
 - Verificación obligatoria antes de publicar, desde `resultados/ux-v1`, las dos:
   - `node tools/audit-docs.js` — archivos, referencias, enlaces, fuente de verdad, trazabilidad, marcadores, glosario.
@@ -60,6 +61,27 @@ Toda pieza —manual, cuestionario, procedimiento, capacitación, sitio— se es
 - **Cada invariante nueva se agrega como regla en `consistencia.js`, no a una lista de pendientes.** Una contradicción corregida sin regla que la sostenga vuelve a aparecer.
 - Un commit por documento, con su nombre en el mensaje, para que cualquier cambio sea reversible por separado.
 - Rama de trabajo: `claude/new-session-1apjew`. Publicado en https://erictoled564.github.io/SW-Business-Development-System/
+
+## Los dos grupos de fuentes y los tres cuadernos
+
+La revisión de los 88 hallazgos no se verifica con un solo cuaderno. **La base es el commit `90a1ede` (28 de agosto de 2026)**, el estado del depósito sobre el que se levantó la auditoría; no se mueve sin autorización expresa de Eric, porque mover la línea de partida vuelve inauditable todo lo comparado hasta ahí.
+
+| Grupo | Qué contiene | Dónde |
+|---|---|---|
+| **1 · originales** | Los 31 documentos **sin ningún cambio**, reproducidos desde el historial de git en la base, carácter por carácter. No se editan: R23 los compara contra `git show 90a1ede:…` en cada corrida, así que alterarlos exige reescribir la historia del repositorio. | `webapp/original/` |
+| **2 · corregidos** | Un archivo por documento con el mismo nombre y el sufijo **`-MOD`**. Arranca como copia exacta del original y recibe, hallazgo por hallazgo, las correcciones que indica NotebookLM. **Es donde se trabaja**; `docs/` no se toca durante la revisión. | `docs-mod/*.es.md` → `webapp/mod/` |
+
+A los dos grupos se suman, iguales en ambos, las 7 páginas del Proceso Comercial y las 3 páginas del sitio con contenido propio (licitación, deck, demo-manual): **41 fuentes por cuaderno**, bajo el límite de 50.
+
+| Cuaderno | Qué se carga | Cuándo |
+|---|---|---|
+| **1 · Originales** | el grupo 1 | **ahora.** Se le pregunta hallazgo por hallazgo, desde el primero: dice qué cambiar y dónde |
+| **2 · Corregidos** | el grupo 2 | **sólo cuando todas las modificaciones estén hechas.** Confirma que los cambios están hechos |
+| **3 · Verificación por pares** | el original y su `-MOD` de cada documento que haya cambiado, más `cambios.md` | al final. Compara par por par y dice si hubo errores u omisiones, o ediciones no autorizadas |
+
+**Las dos versiones nunca van juntas en una misma página.** Cada una es una fuente independiente, reproducida mecánicamente de su archivo, y se emparejan por el nombre: `bds-tecnica` con `bds-tecnica-MOD`. Una página que transcribiera las dos haría que la verificación dependiera de que quien la escribió no se equivocó, que es justamente lo que no puede depender de nadie.
+
+Las fuentes las carga la sesión local de Claude Code con `add_source`, no a mano. Crear un cuaderno sí es manual: `add_notebook` registra uno existente, no lo crea.
 
 ## Cómo se corrigen los 88 hallazgos de la auditoría
 

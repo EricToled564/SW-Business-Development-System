@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports World México · Plan de Ejecución · V2.2 · Sports World</title>
+<meta name="description" content="Documento del depósito de Sports World, publicado como página para su lectura automatizada.">
+<style>
+  body { margin: 0; padding: 2rem 1.5rem; background: #fff; color: #1d1d1b;
+         font: 15px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  main { max-width: 60rem; margin: 0 auto; }
+  h1 { font-size: 1.15rem; margin: 0 0 .25rem; }
+  p.origen { margin: 0 0 1.25rem; color: #6b6b68; font-size: .85rem; }
+  p.sello { margin: 0 0 2rem; padding: .7rem .9rem; font-size: .85rem;
+            border-left: 3px solid #1d1d1b; background: #f3f3f0; }
+  pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Sports World México · Plan de Ejecución · V2.2</h1>
+<p class="origen">Documento del depósito · archivo fuente <code>docs/execution.es.md</code></p>
+<p class="sello"><strong>Versión ORIGINAL.</strong> Estado del documento en el commit <code>90a1ede</code> (28 de agosto de 2026), sobre el que se levantaron los 88 hallazgos de la auditoría. Se reproduce desde el historial del repositorio: no se puede editar sin reescribir la historia de git. Su versión corregida es <code>execution-MOD</code>.</p>
+<pre># Sports World México · Plan de Ejecución · V2.2
+## Equipos, gobierno y cronograma de los tres proyectos: Rediseño Web (comprometido, 8 semanas), BDS y Academia (marcos de ejecución)
+
+Documento fundacional y **general a los tres proyectos**. Para el **Proyecto A · Rediseño Web** describe **cómo se entrega** en ocho semanas: los cuatro frentes de trabajo en paralelo, la estructura del equipo y el modelo de gobierno, el cronograma semana a semana **con criterios de salida verificables**, los hitos de aprobación a cargo de Sports World, el servidor, los KPIs técnicos comprometidos, el registro de riesgos y el control de cambios (§§1–9). Para el **Proyecto B · Business Development System (BDS)** —alcance y costo aparte— define el **quinto equipo, sus tareas y sus dependencias** (§10); su plazo de 8 semanas corre desde la firma de su Addendum, en paralelo al Proyecto A ([BDS · Addendum](#bds-anexo)). Para el **Proyecto C · Academia Sports World** —alcance y costo aparte— define el **marco de arranque, el equipo y las dependencias** (§11); su plazo de 10 semanas corre desde la firma de su Addendum ([Academia · Addendum](#academia-anexo)). Las aportaciones que se requieren del equipo de sistemas de Sports World —deliberadamente reducidas al mínimo— se detallan en el **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**. Se lee por sí solo.
+
+**Principio rector.** El conteo de las 8 semanas corre a partir de la entrega del 100% de los requerimientos de los **Bloques 0 y A** del Anexo Uno (los Bloques B a F son hitos exigibles en sus fechas); los atrasos imputables a Sports World extienden el plazo día por día (y activan el stand-by de la Cláusula Décima Quinta). Por eso el plan **adelanta (front-load)** todas las dependencias a la Semana 1.
+
+## 1 · Qué se está construyendo, en paralelo
+
+El Proyecto A es la **capa de captación y conversión** del sistema (**[Resumen Ejecutivo](#resumen)**). Entrega cuatro frentes a la vez, ejecutados por cuatro equipos coordinados a lo largo de las mismas ocho semanas:
+
+- **El sitio web** — un sitio rápido y optimizado para búsqueda, construido a partir de plantillas de diseño aprobadas: el home, una página para cada uno de los 49 clubes, los hubs de amenidades y objetivos, y el flujo de experiencia ideal que convierte a un visitante anónimo en un lead calificado y agendado. Inventario completo en **[Arquitectura de Experiencia · Mapa del sitio](#experience:6-mapa-del-sitio)** (148 páginas). Incluye la **capa de middleware** que integra el CRM (datos, precios, geolocalización), el **motor de precios** por club / ciudad / nacional, y el **panel sin código (CMS)** para editar contenido, imágenes y coordenadas de clubes (las tarifas se extraen automáticamente del CRM). Entrega también el **funnel de resultados y dashboard**, conforme al **[Mapa del Funnel](#funnel)** — documento canónico de medición: tres canales de entrada, una espina de conversión y las cuatro etapas contractuales como titular (Google para tráfico y comportamiento on-page; CRM para las etapas de cierre) y la **consola interna de captación de leads** para personal autorizado, que usa el mismo cuestionario y la misma escritura al CRM.
+- **La base de SEO y el contenido escrito** — la estrategia de búsqueda y todo el contenido optimizado, más la creación y optimización de las 49 fichas de Google Business (una por club).
+- **El contenido visual a escala** — el tratamiento de ~650 fotografías del banco del cliente, ~150 imágenes nuevas por IA, 12 animaciones y 1 video institucional, vía la aplicación a la medida (**[Estrategia Técnica · §4](#technical:4-contenido-visual-a-escala)**).
+- **BES, el agente de voz y texto con IA** — el agente conversacional **integrado al sitio web (canal web)**, conectado a la misma lógica de club/clase y a la misma captación de leads que el sitio, que además envía 2 recordatorios automatizados por WhatsApp (**[Estrategia Técnica · §5](#technical:5-bes-el-agente-de-voz-y-texto)**).
+
+Estas cuatro áreas son interdependientes: el sitio necesita el contenido y las imágenes; el contenido necesita la estructura del sitio; las imágenes necesitan los layouts; y BES requiere la misma lógica que utiliza el sitio para entregar la misma respuesta por cualquier vía. Se ejecutan en paralelo, con puntos de control compartidos, bajo un único coordinador general.
+
+**Un quinto frente, aparte de los cuatro anteriores: el Proyecto B (Business Development System).** No forma parte del alcance ni del calendario comprometido de ocho semanas —tiene **costo y plazo propios**, definidos al firmar su Addendum (**[BDS · Addendum](#bds-anexo)**)—, pero **reutiliza** el cuestionario, el middleware/CRM y la consola interna que el Proyecto A construye, por lo que buena parte de su trabajo solo puede arrancar una vez que esos componentes están operativos. El detalle de su equipo, tareas y dependencias está en la **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
+
+## 2 · Estructura del equipo y modelo de gobierno
+
+El proyecto se ejecuta con cuatro equipos, cada uno con un líder, todos coordinados por un único líder general del proyecto, que es el punto único de contacto con la dirección de Sports World.
+
+| Frente | Responsable | Alcance principal |
+|---|---|---|
+| Coordinación general | Líder general | Cronograma maestro, puntos de control, dependencias con SW, control de cambios, reporte ejecutivo. Punto único de contacto. |
+| Equipo 1 — Web | Líder web | Home, 49 páginas de club, hubs, flujo de experiencia ideal; integración de la API del CRM y de los datos de club/clase; migración y cutover. |
+| Equipo 2 — SEO y contenido | Líder SEO | Estrategia de palabras clave, contenido optimizado de las 148 páginas, datos estructurados, 49 fichas de Google Business. |
+| Equipo 3 — Contenido visual | Líder visual | Aplicación a la medida; tratamiento de ~650 fotos, ~150 imágenes IA, 12 animaciones, 1 video; identidad visual consistente. |
+| Equipo 4 — BES | Líder BES | Agente de voz y texto en el canal web; base de conocimiento; captura de leads al CRM; recordatorios por WhatsApp; escalación a humano. |
+
+**Matriz de responsabilidad (RACI) por entregable.** R = ejecuta · A = rinde cuentas · C = consultado · I = informado.
+
+| Entregable | Líder gral. | E1 Web | E2 SEO | E3 Visual | E4 BES | Sports World |
+|---|---|---|---|---|---|---|
+| Plantillas y sistema de diseño | A | R | C | C | I | C (aprueba) |
+| 148 páginas (build) | A | R | R | C | I | C (aprueba) |
+| Datos estructurados / schema | A | C | R | I | I | I |
+| 49 fichas de Google Business | A | I | R | I | I | R (titularidad) |
+| Contenido visual a escala | A | C | I | R | I | C (marca) |
+| Integración CRM vía **middleware** (datos, precios, geo) | A | R | I | I | C | R (API estándar + datos) |
+| Agente BES | A | C | C | I | R | R (base de conocimiento) |
+| Migración y cutover | R/A | R | C | I | I | C (accesos) |
+| Funnel, dashboard y consola interna de captación | A | R | C | I | C | C (accesos Google + datos CRM) |
+| **Panel sin código (CMS)** y modelo de contenido | A | R | C (estructura de contenido) | C (biblioteca de imágenes) | I | C (aprueba; administra el contenido tras el handover) |
+| Aprobaciones de hito | A | C | C | C | C | R (decide) |
+
+El líder general ejecuta puntos de control breves y periódicos donde los cuatro líderes se sincronizan sobre las dependencias compartidas; el cronograma de la §3 los secuencia en el orden correcto.
+
+&gt; Al firmarse el Addendum del Proyecto B, se suma un **quinto equipo — BDS**, bajo el mismo líder general. Su estructura, tareas y dependencias con estos cuatro equipos están en la **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)**.
+
+## 3 · El cronograma de ocho semanas
+
+Corre de la Semana 1 a la Semana 8, con los cuatro equipos en paralelo y las dependencias de Sports World adelantadas a la Semana 1 (detalle en **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**). Cada semana cierra con un **criterio de salida** verificable: si no se cumple, no se avanza a la siguiente fase.
+
+**Semana 1 — Cimientos y arranque de dependencias.**
+- *Líder:* confirmar API del CRM, fuente de datos de club/clase y WhatsApp Business para los recordatorios de BES; **iniciar de inmediato la titularidad y verificación de Google Business** (el camino más largo).
+- *Web:* levantar proyecto, framework, tokens de diseño de marca, plantillas base, **CMS autoalojado con su base de datos** y compuertas de calidad (CI); fijar el **esquema de eventos del funnel** (E2, E3 y E4) conforme al **[Mapa del Funnel](#funnel)**.
+- *SEO:* estrategia de palabras clave y de contenido; estructuras de página; preparación de fichas.
+- *Visual:* construir la aplicación a la medida; fijar el estilo artístico contra la marca; primer lote de prueba.
+- *BES:* seleccionar componentes de voz/texto frente a los requisitos de español-México y latencia; esqueleto funcional en el sitio; diseño de la conversación.
+- **Criterio de salida:** entorno productivo y de staging en pie; plantillas base renderizando; **CMS instalado y accesible**; **esquema de eventos del funnel definido**; verificación de Google Business iniciada; dependencias del Anexo Uno recibidas o con fecha comprometida.
+
+**Semana 2 — Páginas pilar y pipelines en marcha.**
+- *Web:* home + una página de club + un hub como "pilares" que fijan el patrón; **modelo de contenido del CMS** derivado de ese patrón.
+- *SEO:* primera ola de contenido optimizado para los pilares; fichas enviadas a verificación.
+- *Visual:* primer set completo de imágenes de los pilares.
+- *BES:* conversación básica de extremo a extremo (voz y texto en el sitio); primeras pruebas internas.
+- **🚦 Aprobación 1 (fin S2):** Sports World aprueba diseño / página pilar (look, contenido, imágenes) y una primera conversación de BES. **Ventana de respuesta: 48 horas hábiles.**
+- **Criterio de salida:** patrón pilar aprobado, listo para replicar.
+
+**Semanas 3–4 — Escalar la construcción.**
+- *Web:* replicar el patrón aprobado a las 49 páginas de club y a los hubs; integrar la API del CRM (captación de leads) y los datos de club/clase (recomendación); **instrumentar los eventos del funnel** (cuestionario iniciado, completado y visita agendada) contra la base de datos del funnel; **habilitar en el CMS** la edición de contenido, imágenes y **coordenadas de club**.
+- *SEO:* grueso del contenido por club y de hub; optimización de fichas conforme superan verificación.
+- *Visual:* imágenes de los 49 clubes a escala.
+- *BES:* conectar a la captación de leads (misma API del CRM), integrarlo al sitio y configurar los recordatorios por WhatsApp; ampliar cobertura de preguntas; refinar el traspaso a humano.
+- **🚦 Aprobación 2 (fin S4):** Sports World aprueba ~50% del sitio construido. **Ventana: 48 horas hábiles.**
+- **Criterio de salida:** ~50% de las páginas completas y revisadas; lead-capture funcionando de extremo a extremo contra el CRM real, desde el sitio y desde BES; **E2, E3 y E4 registrándose en la base del funnel**; **edición sin código operativa** sobre las páginas pilar.
+
+**Semanas 5–6 — Completar la producción e integrar.**
+- *Web:* páginas restantes y flujo completo de experiencia ideal; integración de datos completa; **construir el tablero del funnel** sobre su base de datos y **conectar las fuentes de Google** (GA4, Search Console y fichas de Google Business) para los cortes C1a, C1b y C1c; endurecer rendimiento y accesibilidad.
+- *SEO:* artículos de apoyo, datos estructurados finalizados, optimización de Google Business completa.
+- *Visual:* colocar todas las imágenes restantes.
+- *BES:* cobertura conversacional completa; ajustar la calidad de voz y la velocidad; pruebas con tráfico real (Sección II del contrato: 4 semanas de desarrollo + 2 de pruebas); confirmar que los leads de BES llegan al CRM idénticos a los del sitio.
+- **Criterio de salida (fin S6):** todas las páginas completas; sitio revisable en enlace de vista previa; BES manejando conversaciones reales en el sitio (voz y texto); **tablero del funnel mostrando los tres canales de entrada y las etapas E2 a E4 con datos de staging**.
+
+**Semana 7 — Pase de calidad y congelamiento previo al lanzamiento.**
+- *Todos:* pase completo de calidad —rendimiento, accesibilidad, preparación para búsqueda, exactitud de contenido, consistencia visual, lead-capture contra el CRM real y BES en voz y texto.
+- *Web:* preparar el lanzamiento —plan de cambio de DNS y plan de redirecciones 301 (los 136 enlaces) para no perder posicionamiento; **prueba de carga del servidor (§4)**; **verificar el tablero del funnel** contra el checklist de la §6 y **ensayar el procedimiento sin código del CMS con el equipo de Sports World**.
+- **🚦 Aprobación 3 (S7):** Sports World da el visto bueno al sitio congelado y al agente BES. **Ventana: 48 horas hábiles.**
+- **Criterio de salida:** sitio congelado, listo para lanzar; checklist de aceptación (§6) en verde en staging.
+
+**Semana 8 — Lanzamiento y handover.**
+- *Líder + Web:* ejecutar el cutover con Sports World —apuntar el dominio, enviar las páginas a Google, confirmar que todo está en vivo y medido, y que el correo/MX sigue intacto.
+- *BES:* poner a BES en vivo en el sitio (con los recordatorios por WhatsApp).
+- *Todos:* **monitoreo activo 48 horas**; confirmar reconocimiento de fichas y datos estructurados; confirmar flujo de leads al CRM desde el sitio y desde BES; **tablero del funnel en vivo con datos de producción**.
+- *Líder + Web:* **handover del CMS** — alta de las personas usuarias de Sports World y entrega de la guía de operación del panel sin código.
+- **🚦 Aprobación 4 (S8):** lanzamiento en firme. **Ventana: mismo día hábil.**
+- **Criterio de salida:** criterios de aceptación del lanzamiento (§6) cumplidos; inicia la etapa de estabilización de 2 a 4 semanas.
+
+**El riesgo de cronograma a vigilar.** La verificación de las fichas de Google Business está bajo control de Google, no del proyecto (ver **[Contrato · Anexo Uno](#contrato:anexo-uno-aportaciones-de-sports-world-requerimientos-a-cargo-del-cliente)**). Se inicia en la Semana 1 porque puede tardar semanas; si se alarga, las fichas se finalizan cerca del lanzamiento, pero, dado que el resto del proyecto es independiente de ellas, no detiene el sitio ni el contenido (ver el registro de riesgos, §7).
+
+## 4 · El servidor donde corre el sitio
+
+El sitio web corre en el propio servidor de Sports World (Contrato · Anexo Uno, Bloque F). La especificación está dimensionada a las condiciones reales del proyecto: el sitio recibe hoy alrededor de **80,000 visitas al mes**, la meta es **160,000**, y se prevén **picos de campaña de hasta cinco veces** el tráfico de la hora pico.
+
+**Qué corre en este servidor.** La aplicación del sitio (Next.js con SSR e ISR), el **CMS autoalojado y su base de datos**, la **capa de middleware** que integra el CRM y la **base de datos del funnel** (**[Mapa del Funnel · §4](#funnel:4-dnde-vive-el-dato)**). Estos cuatro componentes consumen memoria de forma permanente, aun sin tráfico: son el piso real de la especificación.
+
+**Qué NO corre aquí.** El agente **BES** opera en las plataformas gestionadas de sus proveedores (voz, reconocimiento, modelo de razonamiento y orquestación), y la **plataforma de la Academia** requiere un **servidor propio e independiente** (**[Academia · Estrategia Técnica §1](#academia-tecnica)**). Ninguno de los dos está contemplado en las cifras siguientes.
+
+### Especificación recomendada
+
+| Recurso | Cifra | Razón |
+|---|---|---|
+| **Sistema operativo** | Linux (cualquier distribución vigente) | — |
+| **Runtime** | **Node.js 20.9 o posterior** | Requisito del framework. **Es el único punto que puede resultar incompatible con una plataforma de hospedaje existente**; se confirma con el acceso del Bloque C |
+| **Procesador** | **8 vCPU** | No lo determina el tráfico promedio (≈3 peticiones por segundo en pico), sino la optimización de imágenes al vuelo durante un repunte de campaña, que es un evento de procesador |
+| **Memoria** | **16 GB RAM** | Piso permanente: sitio (~2 GB) + CMS (~2) + base del CMS (~2) + base del funnel (~1) ≈ **7 GB antes de la primera visita** |
+| **Almacenamiento** | **80 GB SSD NVMe** | Aplicación, ~650 fotografías tratadas y ~150 generadas en AVIF/WebP responsivos, base del funnel, bitácoras y respaldos |
+| **Ancho de banda** | **100 Mbps simétricos sostenidos** | Un pico de cinco veces, a 1.5 MB por página, demanda ≈36 Mbps; 100 deja margen real |
+| **Transferencia mensual** | **1 TB** | ≈640,000 páginas al mes suman ~400 GB, más API, BES y tablero |
+| **Ambiente de staging** (Bloque F.4) | **2 vCPU · 4 GB · 40 GB** | Exigido por el Contrato y no dimensionado hasta ahora |
+| **Red y seguridad** | Certificado HTTPS vigente y puertos web estándar | Bloque F.2 |
+
+### Mínimo viable, con una condición técnica
+
+Si la infraestructura disponible de Sports World no alcanza la especificación recomendada, el proyecto opera con **4 vCPU y 8 GB de RAM**, sujeto a una decisión de diseño explícita: **las imágenes se pregeneran en el proceso de construcción en lugar de optimizarse al vuelo**. Es viable —el pipeline visual ya produce AVIF/WebP responsivos— y elimina precisamente el consumo de procesador que justifica los ocho núcleos.
+
+Esta decisión se toma al inicio del proyecto, con el dato de qué infraestructura existe. **No es un bloqueo:** hay un camino técnico para ambos escenarios.
+
+### Umbrales de operación saludable
+
+El Bloque F.8 exige monitoreo de recursos pero no define qué constituye un estado degradado. Estos son los umbrales de referencia: **procesador por debajo del 70%** en percentil 95, **memoria por debajo del 75%**, **disco por debajo del 80%**. Superar cualquiera de forma sostenida activa la coordinación de ampliación con Sports World.
+
+### De estimación a garantía
+
+Estas cifras son una estimación de ingeniería, no una medición. La vía para convertirlas en certeza es una **prueba de carga previa al lanzamiento** —simulando 160,000 visitas mensuales con el pico de cinco veces y midiendo el consumo real de procesador y memoria—, ya prevista en el cronograma de la Semana 7 (§3). Si la prueba muestra holgura, la especificación se ajusta a la baja; si muestra estrechez, se amplía antes del lanzamiento y no después.
+
+&gt; **Orden de magnitud.** Un servidor virtual de esta gama cuesta entre **80 y 200 dólares al mes** en cualquier proveedor estándar — menos del 10% del gasto variable mensual del proyecto. No representa una inversión capaz de afectar el calendario.
+
+## 5 · Hitos y aprobaciones a cargo de Sports World
+
+El proyecto avanza por cuatro compuertas de aprobación; cada una corresponde al cronograma del **[Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente)**. Las ventanas de respuesta son obligaciones del cliente: un atraso en una aprobación extiende, día por día, el plazo a cargo del proveedor (y activa el stand-by de la Cláusula Décima Quinta).
+
+| Aprobación | Hito | Momento | Ventana de respuesta | Criterio de salida (definición de "hecho") |
+|---|---|---|---|---|
+| 1 | Diseño / página pilar | Fin Semana 2 | 48 horas hábiles | Pilar (home + club + hub) aprobado en look, contenido e imágenes; primera conversación de BES validada. |
+| 2 | 50% del sitio construido | Fin Semana 4 | 48 horas hábiles | ~50% de páginas completas; lead-capture de extremo a extremo contra el CRM real (sitio y BES). |
+| 3 | Pre-lanzamiento | Semana 7 | 48 horas hábiles | Sitio congelado; checklist de aceptación (§6) en verde en staging; plan de cutover y redirecciones listo. |
+| 4 | Lanzamiento en firme | Semana 8 | Mismo día hábil | Criterios de aceptación del lanzamiento (§6) cumplidos en producción; correo/MX intacto. |
+
+## 6 · KPIs técnicos comprometidos y criterios de aceptación del lanzamiento
+
+Estos son los **KPIs comprometidos** del **[Contrato · Anexo Dos, Sección IV](#contrato:seccin-iv-kpis-comprometidos-estrategia-comercial)** —dependen del proveedor y son verificables— (la tabla del contrato incluye además **Core Web Vitals** y la **entrega del código de fixes**, cubiertos en el checklist de abajo). No se garantizan, en cambio, las posiciones específicas por palabra clave ni los volúmenes de tráfico, que dependen de factores externos.
+
+| KPI comprometido | Línea base | Meta | Verificación |
+|---|---|---|---|
+| Páginas de club crawleables (SSR) | 0 de 49 | 49 de 49 | Google Search Console |
+| Enlaces rotos | 136 | 0 | Semrush Site Audit |
+| Schema markup JSON-LD por club | 0 | 49 | Google Rich Results Test |
+| Páginas sin H1 | 11 | 0 | Semrush Site Audit |
+| Cobertura de keywords unbranded | 31.1% | 55–65% | Semrush |
+
+**Checklist de aceptación del lanzamiento (Semana 8).** Todo debe estar en verde para dar por cumplido el lanzamiento:
+- Los cuatro KPIs técnicos de corrección anteriores en su meta (la **cobertura de keywords unbranded** se verifica después del lanzamiento, con Semrush, conforme al Anexo Dos).
+- **Core Web Vitals** dentro de umbral (LCP &lt; 2.5 s, INP &lt; 200 ms, CLS &lt; 0.1) y **WCAG 2.2 AA** verificados.
+- Las 148 páginas publicadas y crawleables; las 49 fichas de Google Business enviadas y en optimización.
+- **Captación de leads de extremo a extremo** al CRM, desde el sitio y desde BES, sin duplicados (idempotencia).
+- **Migración:** mapa de 301 activo (136 enlaces), correo/MX y demás servicios del dominio confirmados sin interrupción.
+- **Tablero del funnel** en vivo, con los tres canales de entrada y las etapas E2, E3 y E4 alimentándose. Las etapas **E5, E6 y E7 dependen de los datos de cierre del CRM** (**[Mapa del Funnel · §6](#funnel:6-los-tres-datos-de-cierre)**): se activan al recibirlos y su ausencia no bloquea el lanzamiento.
+- **Panel sin código (CMS)** operativo, con las personas usuarias de Sports World dadas de alta y probado por el cliente sobre contenido, imágenes y coordenadas de club.
+- **Monitoreo activo 48 horas** posterior al cutover; luego inicia la **estabilización de 2 a 4 semanas**.
+
+## 7 · Registro de riesgos
+
+| Riesgo | Prob. | Impacto | Mitigación | Dueño |
+|---|---|---|---|---|
+| Verificación de Google Business se alarga (la controla Google) | Alta | Medio | Iniciar en S1; el resto del proyecto es independiente; las fichas pueden finalizar cerca del lanzamiento sin frenar el sitio. | Líder gral. |
+| La API del CRM no cumple su SLA (p95 &lt;500/&lt;800 ms) | Media | Alto | **Middleware de EL PRESTADOR** con caché de lecturas, reintentos y tolerancia a sincronización; SW solo expone su API estándar (Anexo Uno D.5); degradación elegante. | E1 / E4 |
+| Atrasos del cliente en el Anexo Uno o en aprobaciones | Media | Alto | Dependencias front-loaded a S1; ventanas de 48 h pactadas (I.4); el plazo se extiende día por día y aplica stand-by ($350 USD/día; $6,230 MXN, Cláusula Décima Quinta). | Líder gral. / SW |
+| Calidad/disponibilidad de datos de clubes y clases | Media | Medio | API de lectura preferente; fallback a exportación estructurada con calendario acordado; validación automática. | E1 / SW |
+| Base de conocimiento de BES desactualizada | Media | Medio | Actualización semanal mínima (Anexo Uno D.6); reentrenamiento automático. | SW / E4 |
+| Cambios de alcance (scope creep) | Media | Medio | Control de cambios (§8): lo no pactado es convenio modificatorio; los cambios sobre secciones ya aprobadas se cotizan (Cláusula Décima). | Líder gral. |
+| Datos de cierre del CRM (E5, E6 y E7) no disponibles al lanzamiento | Media | Medio | El tablero se entrega con los canales de entrada y las etapas E2 a E4; la mitad baja se activa al recibir los datos, sin retrabajo (**[Mapa del Funnel · §7](#funnel:7-qu-se-necesita-para-el-tablero-completo)**). | SW Sistemas / E1 |
+| Migración rompe correo u otro servicio del DNS | Baja | Alto | Inventario DNS previo; solo se tocan registros del sitio; TTL bajo 24 h antes; rollback rápido; verificación post-cutover. | E1 |
+
+## 8 · Gobierno: control de cambios, reporte y stand-by
+
+- **Reporte ejecutivo semanal** del avance, los KPIs y los riesgos (Anexo Dos, Secciones I.2 y IV).
+- **Puntos de control** breves y periódicos entre los cuatro líderes y con Sports World en cada hito.
+- **Control de cambios.** Todo entregable no comprendido expresamente es materia de convenio modificatorio. Un cambio solicitado por el cliente sobre una sección o ítem **ya aprobado** se cotiza aparte (Cláusula Décima) y su retraso es imputable al cliente. Si un retrabajo deriva de que **el proveedor** entregó una sección por debajo de los estándares del contrato, lo **absorbe el proveedor** (sin costo ni stand-by). Los demás cambios solicitados por el cliente son **zona neutral**: solo extienden plazos, sin cargo.
+- **Stand-by por atrasos del cliente.** Si un atraso imputable a Sports World detiene al equipo, se cobran los días de stand-by a USD $350/día ($6,230 MXN, Cláusula Décima Quinta), y el plazo se extiende día por día.
+- **Canales.** Coordinación e incidentes por los canales acordados (p. ej. Slack y correo), con responsable único del lado del cliente.
+
+## 9 · Supuestos y fuera de alcance
+
+- **Supuesto central:** Sports World **expone su API estándar del CRM y los datos del catálogo** (estatus de clubes, coordenadas, amenidades, clases, horarios, tarifas, descuentos/promociones) del Anexo Uno; la integración a la medida la resuelve el **middleware de EL PRESTADOR**. El conteo de las 8 semanas corre a partir de la entrega del 100% de los requerimientos de los Bloques 0 y A del Anexo Uno.
+- **Fuera de alcance del Proyecto A (salvo convenio modificatorio):** cualquier página adicional a las 148 (Anexo Dos I.1); operación de BES por **telefonía** o por **voz en WhatsApp** (excluidas); la operación conversacional de BES por **WhatsApp (solo texto)**, los operadores humanos y la capa de enrutamiento en tiempo real corresponden al **Business Development System (Proyecto B)** —costo y calendario propios, **[§10](#execution:10-proyecto-b-bds-marco-de-ejecucin)** y **[BDS · Addendum](#bds-anexo)**—; el **sistema de capacitación y práctica con role-play de voz** para asesores corresponde a la **Academia (Proyecto C)** —costo y plazo propios, **[§11](#execution:11-proyecto-c-academia-marco-de-ejecucin)** y **[Academia · Addendum](#academia-anexo)**—; presupuesto de medios; y cualquier servicio no enumerado en los Anexos.
+- **No se garantizan** posiciones de búsqueda, volúmenes de tráfico ni tasas de conversión: dependen de factores externos (algoritmos de buscadores, mercado). Lo comprometido son los KPIs técnicos de la §6.
+
+## 10 · Proyecto B (BDS): marco de ejecución
+
+El **Proyecto B (BDS)** tiene **plazo propio de 8 semanas**, que corre desde la firma de su Addendum y el cierre del alcance y del listado de requerimientos, y **se ejecuta en paralelo al Proyecto A** sin modificar el cronograma de éste (**[BDS · Addendum · §5](#bds-anexo:5-contraprestacin-adicional)**). Lo que se define desde ahora es el **equipo, las tareas y las dependencias**, para que el arranque sea inmediato en cuanto se suscriba.
+
+### 10.1 · Equipo 5 — BDS
+
+| Frente | Responsable | Alcance principal |
+|---|---|---|
+| Equipo 5 — BDS | Líder BDS (coordinado por el líder general) | Integración de WhatsApp Business API, "BES" por WhatsApp, consola de operadores, capa de enrutamiento en tiempo real y la medición del Canal 2 dentro del **[Mapa del Funnel](#funnel)**. Detalle funcional en **[BDS · Estrategia Técnica](#bds-tecnica)**. |
+
+**Matriz de responsabilidad (RACI) — tareas del BDS.** R = ejecuta · A = rinde cuentas · C = consultado · I = informado.
+
+| Entregable | Líder gral. | E5 BDS | E1 Web | E4 BES | Sports World |
+|---|---|---|---|---|---|
+| Integración WhatsApp Business API (mensajería, plantillas, multiagente) | A | R | I | I | R (número oficial + plantillas) |
+| "BES" sobre WhatsApp (solo texto) | A | R | I | C (misma base de conocimiento) | C (aprueba plantillas) |
+| Consola de operadores (rol operador sobre la consola ya existente) | A | R | C (consola base, §11 Estrategia Técnica) | I | R (plantilla, horarios y lista de operadores) |
+| Capa de enrutamiento en tiempo real (colas, asignación, rebote, escalación) | A | R | I | I | C (horarios de atención) |
+| Funnel y medición del BDS (integrado al dashboard) | A | R | C (dashboard base) | I | C (accesos) |
+| Aprobación de alcance y firma del Addendum | A | C | I | I | R (decide) |
+
+### 10.2 · Dependencias con el Proyecto A
+
+El BDS **no reescribe** el motor de captación: es la **capa de canales en tiempo real** sobre el sistema que construye el Proyecto A, y reutiliza el cuestionario y la experiencia ideal, el middleware y la escritura idempotente al CRM, y la consola interna que entrega el Equipo 1 — Web. En el cronograma de la §3, esos componentes quedan operativos entre las **Semanas 3 y 6** (integración de la API del CRM y consola interna); el Equipo 5 puede comenzar a integrar sobre ellos a partir de ese punto, sin esperar al lanzamiento del sitio (Semana 8).
+
+### 10.3 · Secuencia de trabajo (por fases, no por semanas)
+
+1. **Preparación.** Sports World entrega el número oficial de WhatsApp Business y somete las plantillas de mensaje a aprobación; se define la plantilla de operadores, sus horarios y la lista de personal autorizado.
+2. **Integración.** Se conecta la WhatsApp Business API; se habilita el rol de operador en la consola interna; se construye la capa de enrutamiento (human-first → "BES" de respaldo → escalación).
+3. **Validación.** Pruebas de extremo a extremo por los tres caminos (operador humano, "BES" por WhatsApp, walk-in en consola) contra el CRM real, sin duplicados; el Canal 2 y el eje de tiempo al primer contacto visibles en el dashboard, sobre la espina única del **[Mapa del Funnel](#funnel)**.
+4. **Lanzamiento y estabilización.** BDS en operación; monitoreo activo; ajuste de las reglas de enrutamiento con datos reales de volumen y disponibilidad.
+
+### 10.4 · Riesgos propios del BDS
+
+| Riesgo | Prob. | Impacto | Mitigación | Dueño |
+|---|---|---|---|---|
+| Addendum sin firmar / alcance sin cerrar | Media | Alto | El Proyecto B no genera obligación ni costo hasta la firma (**[BDS · Addendum](#bds-anexo)**); el arranque técnico depende de esa firma. | SW / Líder gral. |
+| Aprobación de plantillas de WhatsApp Business tardada (a cargo del proveedor de mensajería) | Media | Medio | Enviar las plantillas a revisión en cuanto se firme el Addendum, en paralelo a la integración técnica. | E5 |
+| Dotación y capacitación de operadores humanos | Media | Medio | Definir plantilla, horarios y lista de personal autorizado desde la Fase de preparación; "BES" cubre huecos de cobertura mientras se completa la dotación. | SW / E5 |
+| Dependencia de componentes del Proyecto A (consola, middleware) no disponibles a tiempo | Baja | Medio | El Equipo 5 integra a partir de que esos componentes están operativos (§10.2); no bloquea ni es bloqueado por el cronograma de lanzamiento del sitio (§3). | Líder gral. |
+
+## 11 · Proyecto C (Academia): marco de ejecución
+
+El **Proyecto C (Academia Sports World)** tiene **plazo propio de 10 semanas**, que corre desde la firma de su Addendum y el cierre de la validación de la taxonomía y del listado de requerimientos (**[Academia · Addendum · §5](#academia-anexo:5-contraprestacin-adicional)**). Igual que con el BDS, lo que se define desde ahora es el equipo, la secuencia y las dependencias, para que el arranque sea inmediato en cuanto se suscriba.
+
+### 11.1 · Equipo 6 — Academia
+
+| Frente | Responsable | Alcance principal |
+|---|---|---|
+| Equipo 6 — Academia | Líder Academia (coordinado por el líder general) | Producción de las lecciones por niveles y sus variantes por club, plataforma de módulos interactivos, agente de voz de role-play, dashboard de readiness. Detalle en **[Academia · Estrategia Técnica](#academia-tecnica)**. |
+
+### 11.2 · Dependencias
+
+- **Con el Proyecto A:** la Fase 2 (role-play) reutiliza el motor conversacional de BES que construye el Equipo 4; en el cronograma de la §3, BES queda con cobertura total en las Semanas 5–6. La **Fase 1 (lecciones y plataforma) no depende de BES** y arranca desde la firma del Addendum. Si el Addendum se firma antes de la disponibilidad del motor, el plazo de la Fase 2 se contará a partir de esa disponibilidad (**[Academia · Addendum · §5](#academia-anexo:5-contraprestacin-adicional)**).
+- **De Sports World:** validación del mapeo de la taxonomía y de la segmentación por club, mínimo aprobatorio, métricas del CRM por asesor y servidor propio de la plataforma (**[Academia · Addendum · §4](#academia-anexo:4-aportaciones-a-cargo-de-el-cliente)**).
+
+### 11.3 · Secuencia de trabajo (dentro de las 10 semanas)
+
+1. **Validación.** Cierre del mapeo de la taxonomía a los siete componentes y de la segmentación por tipo de club, con Sports World.
+2. **Producción de la Fase 1.** Lecciones por niveles y plataforma de módulos, desplegada en el servidor del cliente.
+3. **Fase 2.** Escenarios de role-play sobre el motor de BES ya operativo; calibración de la línea base con el CRM.
+4. **Despliegue.** Arranque por grupos, con calendario por región a definir con Sports World, y activación del dashboard de readiness.
+
+### 11.4 · Riesgos propios de la Academia
+
+| Riesgo | Prob. | Impacto | Mitigación | Dueño |
+|---|---|---|---|---|
+| Addendum sin firmar / validación sin cerrar | Media | Alto | El Proyecto C no genera obligación ni costo hasta la firma; la validación de la taxonomía es la primera actividad de la secuencia y el plazo corre desde su cierre. | SW / Líder gral. |
+| Motor de BES no disponible al llegar a la Fase 2 (si el Addendum se firma muy temprano) | Baja | Medio | La Fase 1 avanza sin restricción; el plazo de la Fase 2 se cuenta desde la disponibilidad del motor (§11.2). | Líder gral. |
+| Aportaciones del cliente tardías (servidor, métricas del CRM, colaboración de marketing) | Media | Medio | Aportaciones enumeradas desde el Addendum §4; su atraso extiende el plazo día por día (Contrato, Cláusula Décima Tercera). | SW / E6 |
+</pre>
+</main>
+</body>
+</html>

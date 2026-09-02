@@ -6,8 +6,11 @@ on:
     paths:
       - "resultados/ux-v1/webapp/docs/**"
       - "resultados/ux-v1/webapp/app.js"
+      - "resultados/ux-v1/webapp/fuentes/**"
+      - "resultados/ux-v1/webapp/proceso/**"
       - "resultados/ux-v1/kb/build_pdfkit.js"
       - "resultados/ux-v1/tools/audit-docs.js"
+      - "resultados/ux-v1/tools/build-fuentes.js"
       - "resultados/ux-v1/tools/consistencia.js"
       - "resultados/ux-v1/webapp/index.html"
       - "verificacion/**"
@@ -16,7 +19,10 @@ on:
     paths:
       - "resultados/ux-v1/webapp/docs/**"
       - "resultados/ux-v1/webapp/app.js"
+      - "resultados/ux-v1/webapp/fuentes/**"
+      - "resultados/ux-v1/webapp/proceso/**"
       - "resultados/ux-v1/tools/audit-docs.js"
+      - "resultados/ux-v1/tools/build-fuentes.js"
       - "resultados/ux-v1/tools/consistencia.js"
       - "verificacion/**"
   workflow_dispatch:
@@ -30,6 +36,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # R23 comprueba el conjunto de originales contra el commit base de la
+          # auditoría. Con el clon superficial que trae por defecto, ese commit
+          # no está en el historial y la regla no puede verificar nada.
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
