@@ -53,7 +53,6 @@ Toda pieza —manual, cuestionario, procedimiento, capacitación, sitio— se es
 - Fuente de verdad: `resultados/ux-v1/webapp/docs/*.es.md`.
 - **Excepción: el Proceso Comercial.** Sus documentos —`MPC/SW/01`, `SOP/SW/0101`, `SOP/SW/0102`, `SOP/SW/0103`, `SOP/SW/0201` y `SOP/SW/0301`— viven en `resultados/ux-v1/webapp/proceso/*.html` como páginas con composición propia (cabecera de control, tablas de pasos con código de color, diagrama de flujo). Se registran en `app.js` con `type: "page"` y `src`, y en `indice.es.md` como cualquier otro documento. **`DEC/SW/01` es la excepción de la excepción:** vive en la misma carpeta y con la misma composición, pero **es interno y no se registra ni en `app.js` ni en `indice.es.md`** — es el registro de cambios del proceso y el cliente no tiene por qué verlo. Lo sostiene la regla R21 de `consistencia.js`; no es un documento huérfano. **No pasan por `build_pdfkit.js`**: el PDF se obtiene desde la propia página, con el botón de impresión. El visor les monta encima las funciones de lectura —índice, búsqueda con resaltado, ancla por paso (`#sop-0201:paso-31`), filtro por responsable, enlaces cruzados e índice de claves—; ese código vive en `app.js` y las páginas se mantienen legibles por separado.
 - Registro de cada documento en `resultados/ux-v1/webapp/app.js` (id, grupo, PDF) y en `indice.es.md`.
-- **Las fuentes para NotebookLM se regeneran en la misma entrega que el documento.** `resultados/ux-v1/tools/build-fuentes.js` produce los dos grupos de páginas HTML —NotebookLM sólo ingiere HTML— y escribe `verificacion/fuentes.md` (la lista por cuaderno) y `verificacion/cambios.md` (el resumen de correcciones). **NotebookLM no vuelve a rastrear:** cada fuente queda congelada al cargarse, así que tras publicar hay que volver a cargar las afectadas. La regla **R23** de `consistencia.js` falla si alguna página no reproduce su archivo, si sobra una página sin documento, si las listas no las nombran todas o si un cuaderno pasaría de 50 fuentes. Es lo que impide que la verificación externa conteste sobre texto viejo, como ocurrió con A-016: cinco páginas seguían publicando la regla de enrutamiento anterior semanas después de corregirla.
 - PDFs con el pipeline de casa: `resultados/ux-v1/kb/build_pdfkit.js` (pdfkit). Nunca a mano.
 - Verificación obligatoria antes de publicar, desde `resultados/ux-v1`, las dos:
   - `node tools/audit-docs.js` — archivos, referencias, enlaces, fuente de verdad, trazabilidad, marcadores, glosario.
@@ -62,44 +61,9 @@ Toda pieza —manual, cuestionario, procedimiento, capacitación, sitio— se es
 - Un commit por documento, con su nombre en el mensaje, para que cualquier cambio sea reversible por separado.
 - Rama de trabajo: `claude/new-session-1apjew`. Publicado en https://erictoled564.github.io/SW-Business-Development-System/
 
-## Los dos grupos de fuentes y los tres cuadernos
-
-La revisión de los 88 hallazgos no se verifica con un solo cuaderno. **La base es el commit `90a1ede` (28 de agosto de 2026)**, el estado del depósito sobre el que se levantó la auditoría; no se mueve sin autorización expresa de Eric, porque mover la línea de partida vuelve inauditable todo lo comparado hasta ahí.
-
-| Grupo | Qué contiene | Dónde |
-|---|---|---|
-| **1 · originales** | Los 31 documentos **sin ningún cambio**, reproducidos desde el historial de git en la base, carácter por carácter. No se editan: R23 los compara contra `git show 90a1ede:…` en cada corrida, así que alterarlos exige reescribir la historia del repositorio. | `webapp/original/` |
-| **2 · corregidos** | Un archivo por documento con el mismo nombre y el sufijo **`-MOD`**. Arranca como copia exacta del original y recibe, hallazgo por hallazgo, las correcciones que indica NotebookLM. **Es donde se trabaja**; `docs/` no se toca durante la revisión. | `docs-mod/*.es.md` → `webapp/mod/` |
-
-A los dos grupos se suman, iguales en ambos, las 7 páginas del Proceso Comercial y las 3 páginas del sitio con contenido propio (licitación, deck, demo-manual): **41 fuentes por cuaderno**, bajo el límite de 50.
-
-| Cuaderno | Qué se carga | Cuándo |
-|---|---|---|
-| **1 · Originales** | el grupo 1 | **ahora.** Se le pregunta hallazgo por hallazgo, desde el primero: dice qué cambiar y dónde |
-| **2 · Corregidos** | el grupo 2 | **sólo cuando todas las modificaciones estén hechas.** Confirma que los cambios están hechos |
-| **3 · Verificación por pares** | el original y su `-MOD` de cada documento que haya cambiado, más `cambios.md` | al final. Compara par por par y dice si hubo errores u omisiones, o ediciones no autorizadas |
-
-**Las dos versiones nunca van juntas en una misma página.** Cada una es una fuente independiente, reproducida mecánicamente de su archivo, y se emparejan por el nombre: `bds-tecnica` con `bds-tecnica-MOD`. Una página que transcribiera las dos haría que la verificación dependiera de que quien la escribió no se equivocó, que es justamente lo que no puede depender de nadie.
-
-Las fuentes las carga la sesión local de Claude Code con `add_source`, no a mano. Crear un cuaderno sí es manual: `add_notebook` registra uno existente, no lo crea.
-
-## Cómo se corrigen los 88 hallazgos de la auditoría
-
-Una auditoría independiente encontró **88 contradicciones** entre documentos —44 críticas—, registradas en `verificacion/hallazgos.csv`. No se corrigen por criterio de quien escribe: se corrigen con verificación externa, porque el modo de falla ya está documentado.
-
-**El modo de falla.** Las contradicciones no se encuentran buscando palabras. El mismo hecho aparece escrito de formas distintas en documentos distintos, y quien corrige sólo lo que halla buscando un término deja vivo el resto. Ocurrió con A-016: se corrigieron los doce documentos que contenían «human-first» y sobrevivieron cuatro que decían lo mismo con otras palabras —«respaldo del operador», «si no hay operador disponible», un árbol de decisión que pregunta primero por el humano—. Uno de esos cuatro nunca contuvo el término. El detalle está en `verificacion/evidencia/A-016-verificacion-1.md`.
-
-**El método.** NotebookLM tiene cargados los documentos del proyecto como fuentes y responde citando documento y párrafo. El orden es: **primero él dice qué hay, después se corrige, después él confirma que ya no está.** Las dos respuestas se guardan íntegras en `verificacion/evidencia/`, sin resumir.
-
-**Toda pregunta usa la plantilla** de `verificacion/plantilla-pregunta.md`, nunca libre: sin ella NotebookLM aplica su propio criterio de relevancia y omite menciones.
-
-**Se trabaja por paquetes**, no hallazgo por hallazgo — la auditoría los agrupa en siete.
-
-**Lo que lo sostiene, y no depende de la memoria de nadie:** `verificacion/candado-notebooklm.js` rechaza cualquier hallazgo marcado como corregido sin sus dos evidencias, sin la plantilla dentro de ellas o sin citas a documentos. Corre en CI y como gancho de `pre-commit`; se instala con `node verificacion/instalar-candado.js`.
-
 ## Estado de las contradicciones
 
-**Cerradas: las nueve de la auditoría, más las que surgieron al someter el Contrato a las reglas.** Ya no se llevan en lista: cada una tiene una regla que la sostiene en `tools/consistencia.js` (20 reglas, 0 hallazgos, corre en CI). Si algo vuelve a aparecer, lo detecta el programa, no la memoria.
+Las contradicciones detectadas hasta la fecha no se llevan en lista: cada una tiene una regla que la sostiene en `tools/consistencia.js` (corre en CI). Si algo vuelve a aparecer, lo detecta el programa, no la memoria.
 
 Los tres puntos que estaban anclados en el Contrato —frecuencia de sincronización, etapas del funnel y llave de conciliación— **quedaron incorporados al texto** en agosto de 2026, con autorización expresa de Eric por encontrarse el Contrato en etapa de revisión. Ver `PAQUETE-LEGAL.md` para el detalle de los ocho ajustes.
 
