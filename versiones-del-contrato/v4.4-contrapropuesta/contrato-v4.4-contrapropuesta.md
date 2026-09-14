@@ -1,7 +1,7 @@
 # Sports World · Contrato de Prestación de Servicios Profesionales y Consultoría
 ## Rediseño web + SEO · Agente de voz "BES" · Servicios recurrentes · Proyectos B (BDS) y C (Academia) activables por Addendum
 
-> **Versión 4.4 · contrapropuesta de EL PRESTADOR · 11 de septiembre de 2026.** Responde al borrador marcado por EL CLIENTE (13 de agosto al 1 de septiembre de 2026) sobre la V4.2 e integra las nueve precisiones de la V4.3. El registro de cambios que la acompaña indica qué cambios de EL CLIENTE se aceptan, cuáles se aceptan con condición y cuáles se sustituyen.
+> **Versión 4.4 · contrapropuesta de EL PRESTADOR · 11 de septiembre de 2026.** Responde al borrador marcado por EL CLIENTE (13 de agosto al 1 de septiembre de 2026) sobre la V4.2 e integra las precisiones publicadas en agosto de 2026. En la versión marcada, los comentarios al margen indican qué cambios de EL CLIENTE se aceptan, cuáles se aceptan con condición y cuáles se sustituyen.
 
 CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES Y CONSULTORÍA (**"CONTRATO"**) QUE CELEBRAN, POR UNA PARTE, **OPERADORA Y ADMINISTRADORA SW, S.A. DE C.V.** (EN LO SUCESIVO **"EL CLIENTE"**), REPRESENTADA EN ESTE ACTO POR **HADI MICHEL IBRAHIM IBRAHIM**; Y POR LA OTRA PARTE, **LIVE STREAMING SERVICES MEXICO, S.A. DE C.V.** (EN LO SUCESIVO EL **"PROVEEDOR"** o **"EL PRESTADOR"**, comercialmente *Final Upgrade AI*), REPRESENTADA POR **ERIC TOLEDANO DE JESÚS LOZANO**, DE CONFORMIDAD CON LAS SIGUIENTES DECLARACIONES Y CLÁUSULAS:
 
