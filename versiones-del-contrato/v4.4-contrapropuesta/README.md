@@ -1,6 +1,6 @@
 # Contrato V4.4 · contrapropuesta de EL PRESTADOR
 
-**Estado: propuesta de negociación, no versión oficial.** La versión contractual vigente sigue siendo la **V4.2** de `oficiales/` (y la V4.3 en el markdown de la app). Esta carpeta guarda la respuesta de Live Streaming Services México, S.A. de C.V. al borrador que Sports World marcó entre el **13 de agosto y el 1 de septiembre de 2026** sobre la V4.2, con 130 líneas de cambios y 75 comentarios, **más las 23 correcciones de la auditoría externa del 13 de septiembre de 2026**.
+**Estado: propuesta de negociación, no versión oficial.** La versión contractual vigente sigue siendo la **V4.2** de `oficiales/` (y la V4.3 en el markdown de la app). Esta carpeta guarda la respuesta de Live Streaming Services México, S.A. de C.V. al borrador que Sports World marcó entre el **13 de agosto y el 1 de septiembre de 2026** sobre la V4.2, con 130 líneas de cambios y 75 comentarios, **más las correcciones de la auditoría externa del 13 de septiembre de 2026**, aplicadas en su totalidad salvo tres partes: la adición a la Vigésima V y a la Décima Octava IV, las fórmulas en lugar de fechas en el calendario ilustrativo y la redacción sobre el alcance de la transmisión de derechos de imágenes y contenidos, que se conserva en sus términos.
 
 ## Qué contiene
 
@@ -31,8 +31,7 @@ De los **72 cambios de Sports World**: 12 aceptados, 43 aceptados con condición
 10. **Garantía de corrección**: Defectos imputables a LSSM durante la iguala y 6 meses más, cubriendo también la estabilización y el lapso previo a la iguala; fuera de la iguala se atiende por plan de remediación, sin soporte recurrente; nunca perpetua (Décima Segunda VIII).
 11. **Facturación**: alta de proveedor ya acreditada; lista limitativa de ocho requisitos fiscales y administrativos, ampliable sólo por acuerdo escrito; la factura puede presentarse antes de la exigibilidad sin ser causa de objeción; objeción en **3 días hábiles** por cuatro causas limitativas; silencio equivale a aceptación (Novena).
 12. **Soporte**: primera respuesta automática Crítica en máximo 30 minutos 24/7; resolución Crítica en 4 horas hábiles; el reloj se detiene mientras falte un insumo del cliente; las penas del SLA son el remedio económico único (Séptima II y Anexo Cinco).
-13. **Propiedad intelectual**: la transmisión comprende los derechos que efectivamente existan y sean transmisibles; no garantiza reconocimiento autoral ni exclusividad donde la ley no los otorga (Décima Sexta I y Anexo Dos V).
-14. **Divisibilidad, no renuncia de derechos y firma electrónica**: tres disposiciones generales recíprocas; la divisibilidad preserva el tope al monto máximo válido (Vigésima Tercera h, i y j).
+13. **Divisibilidad, no renuncia de derechos y firma electrónica**: tres disposiciones generales recíprocas; la divisibilidad preserva el tope al monto máximo válido (Vigésima Tercera h, i y j).
 
 ## Calendario que asume el texto
 
@@ -53,6 +52,6 @@ En el ejercicio 2026 no se causa iguala alguna del Proyecto A; 2027 tiene once m
 
 ## Cómo se produjo
 
-El marcado no se escribió a mano: se generó por **comparación mecánica, palabra por palabra**, entre el borrador del cliente con todos sus cambios aceptados y el texto de la V4.4, y los comentarios reproducen el registro de decisiones. El texto de la V4.4 parte de la V4.3 del repositorio, por lo que incorpora las nueve precisiones del `PAQUETE-LEGAL.md`; en el marcado aparecen como cambios sin comentario, porque el cliente partió de la V4.2. Las 23 correcciones de la auditoría externa del 13 de septiembre de 2026 constan como notas L-33 a L-54 y como actualización de las notas L-16, L-29, C-06, C-10, C-16, C-36, C-45, C-48, C-54, C-62 y C-64.
+El marcado no se escribió a mano: se generó por **comparación mecánica, palabra por palabra**, entre el borrador del cliente con todos sus cambios aceptados y el texto de la V4.4, y los comentarios reproducen el registro de decisiones. El texto de la V4.4 parte de la V4.3 del repositorio, por lo que incorpora las nueve precisiones del `PAQUETE-LEGAL.md`; en el marcado aparecen como cambios sin comentario, porque el cliente partió de la V4.2. Las correcciones de la auditoría externa del 13 de septiembre de 2026 constan como notas L-33 a L-54 y como actualización de las notas L-16, L-29, C-06, C-10, C-16, C-36, C-45, C-48, C-54, C-62 y C-64.
 
 **Los documentos de la app no se modificaron.** `resultados/ux-v1/webapp/docs/contrato.es.md` sigue siendo la V4.3.
