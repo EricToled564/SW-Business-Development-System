@@ -28,6 +28,10 @@ Copias de la última versión previa, tal como estaban en la app antes de la act
 - `bds-anexo-v1.0.pdf` / `bds-anexo-v1.0.md` — Addendum BDS V1.0
 - `academia-anexo-v1.0.pdf` / `academia-anexo-v1.0.md` — Addendum Academia V1.0
 
+## Propuestas de negociación (no oficiales)
+
+- `v4.4-contrapropuesta/` — **Contrato V4.4**, respuesta de EL PRESTADOR al borrador que el cliente marcó del 13 de agosto al 1 de septiembre de 2026 sobre la V4.2. Incluye la versión limpia, la versión con control de cambios y comentarios, el registro de decisiones, el dictamen del borrador marcado y la verificación legal. **No es versión oficial**: la vigente sigue siendo la V4.2 de `oficiales/`. Ver el `README.md` de esa carpeta.
+
 ## Reglas de mantenimiento
 
 1. Cuando el cliente entregue una nueva versión oficial, guárdala en `oficiales/` con el patrón `<doc>-vX.Y-cliente.pdf`, mueve aquí las copias de la versión saliente (PDF y markdown) **antes** de editar los markdown de la app, y sobrescribe los PDFs servidos en `kb/` y `webapp/kb/`.
