@@ -1,0 +1,1388 @@
+{
+ "ACUAEROBICS": {
+  "display": "Acuaeróbics",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Flotación que reduce la compresión articular y el estrés térmico",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Water aerobics, water calisthenics, general 5.5 MET; Water walking, light effort, slow pace 2.5 MET",
+  "motivo_intensidad": "La flotacion permite bajar a caminata en agua; el formato general no alcanza la banda vigorosa"
+ },
+ "ACUAZUMBA": {
+  "display": "Aqua Zumba",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Entorno acuático seguro; regular la velocidad de rotación de cadera",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Water aerobics, water calisthenics, general 5.5 MET",
+  "motivo_intensidad": "Coreografia continua marcada por la musica: no sostiene la banda ligera ni llega a la vigorosa"
+ },
+ "AE YOGA": {
+  "display": "AE Yoga",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Evitar torsiones profundas e inversiones no asistidas",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Yoga, Hatha 2.3 MET; Yoga, Power 4.0 MET",
+  "motivo_intensidad": "El rango de las posturas lo elige la persona; ninguna variante de yoga llega a 6 MET"
+ },
+ "ASHTANGA YOGA": {
+  "display": "Ashtanga Yoga",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Fuerza isométrica severa; eleva la presión intraabdominal",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Yoga, Power 4.0 MET",
+  "motivo_intensidad": "Serie fija y encadenada: no admite version ligera; se queda en banda moderada"
+ },
+ "BAILE DE SALON": {
+  "display": "Baile de Salón",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "no apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo-Medio",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Regular la velocidad de desplazamientos y pivotes",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Ballet, modern, or jazz general, rehearsal or class 5.0 MET",
+  "motivo_intensidad": "El tempo varia por pieza, de lento a rapido; no alcanza banda vigorosa"
+ },
+ "BALL PILATES": {
+  "display": "Ball Pilates",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Requiere control de equilibrio para evitar caídas",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Pilates, general 2.8 MET",
+  "motivo_intensidad": "Trabajo de control con carga corporal; techo por debajo de la banda vigorosa"
+ },
+ "BEAT N BIKE": {
+  "display": "Beat n Bike",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "no apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Elevar el manubrio para evitar flexión lumbar excesiva",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Bicycling, stationary, RPM/Spin bike class 9.0 MET; 50 watts, light effort 4.0 MET",
+  "motivo_intensidad": "Rodada guiada por cadencia con bloques de sprint: la resistencia es propia, el ritmo no"
+ },
+ "BELLY DANCE": {
+  "display": "Belly Dance",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "no apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Evitar retroversión pélvica balística",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Jazz dancing, general 4.5 MET",
+  "motivo_intensidad": "Trabajo segmentario a tempo medio, con rango ajustable por la persona"
+ },
+ "BELLY DANCE FK": {
+  "display": "Belly Dance FK",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Mantener la fluidez y evitar la fatiga extrema",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Jazz dancing, general 4.5 MET",
+  "motivo_intensidad": "Version infantil del mismo formato; misma banda"
+ },
+ "BODY ATTACK": {
+  "display": "Body Attack",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Fuerzas de reacción del suelo elevadas por pliometría repetida",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, general 7.3 MET; Calisthenics vigorous effort 7.5 MET",
+  "motivo_intensidad": "Atletico continuo con opciones de bajo impacto: cubre moderada y vigorosa, no ligera"
+ },
+ "BODY BALANCE": {
+  "display": "Body Balance",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Suprimir supino tras el primer trimestre y estiramientos extremos",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Yoga, Hatha 2.3 MET; Pilates, general 2.8 MET",
+  "motivo_intensidad": "Fusion de yoga, pilates y tai chi; techo por debajo de la banda vigorosa"
+ },
+ "BODY COMBAT": {
+  "display": "Body Combat",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio-Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Rotaciones pélvicas y patadas; desaconsejada en gestación",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Kickboxing 7.3 MET; Martial Arts, slower pace, novice performers 5.3 MET",
+  "motivo_intensidad": "Secuencias marciales al aire con tempo marcado; no sostiene banda ligera"
+ },
+ "BODY JAM": {
+  "display": "Body Jam",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Sustituir saltos por pasos pivotantes de bajo impacto",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, general 7.3 MET",
+  "motivo_intensidad": "Coreografia de danza continua; no sostiene banda ligera"
+ },
+ "BODY PUMP": {
+  "display": "Body Pump",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "no apto"
+  },
+  "impacto": "Bajo-Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Modificar cargas; eliminar Valsalva y trabajo en supino",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Resistance (weight) training, multiple exercises, 8-15 reps at varied resistance 3.5 MET",
+  "motivo_intensidad": "La carga de la barra la elige la persona disco por disco: cubre las tres bandas"
+ },
+ "BODY STEP": {
+  "display": "Body Step",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Estrés patelofemoral elevado y riesgo de tropiezo sobre el escalón",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, step, with 6-8 inch step 7.3 MET; step with 4-inch step 5.5 MET",
+  "motivo_intensidad": "La altura del step es propia, el tempo es del bloque musical: moderada y vigorosa"
+ },
+ "BOX 1": {
+  "display": "Box 1",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio-Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Impactos repetitivos e inestabilidad",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Boxing, punching bag 5.8 MET; Boxing, punching bag, 120 b/min 8.5 MET",
+  "motivo_intensidad": "El trabajo por rondas sube con la cadencia de golpeo; no sostiene banda ligera"
+ },
+ "CORE": {
+  "display": "Core",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Supino e hiperpresión abdominal no indicados en gestación",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Calisthenics (curl ups, abdominal crunches, plank), light effort 2.8 MET",
+  "motivo_intensidad": "Trabajo localizado de centro; techo por debajo de la banda vigorosa"
+ },
+ "CX WORX": {
+  "display": "CX Worx",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "La tensión abdominal puede agravar la diástasis de rectos",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Calisthenics, light effort 2.8 MET",
+  "motivo_intensidad": "Formato corto de centro con progresiones opcionales; no llega a banda vigorosa"
+ },
+ "CYCLING": {
+  "display": "Cycling",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "no apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Acondicionamiento aeróbico sin impacto óseo",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Bicycling, stationary, general 6.8 MET; 25-30 watts, very light to light effort 3.5 MET",
+  "motivo_intensidad": "Rodada abierta: la resistencia y la cadencia son de la persona en todo momento"
+ },
+ "DANZA AEREA": {
+  "display": "Danza Aérea",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Riesgo de caída, traumatismo abdominal y sobrecarga articular",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Ballet, modern, or jazz, performance, vigorous effort 6.8 MET",
+  "motivo_intensidad": "Sostener el propio peso en el aire fija un piso de esfuerzo: no hay version ligera"
+ },
+ "ECROSS": {
+  "display": "eCross",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Circuitos de fuerza explosiva",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Circuit training, body weight exercises 6.0 MET; Calisthenics, vigorous effort 7.5 MET",
+  "motivo_intensidad": "Circuito por estaciones con tiempo fijo; no sostiene banda ligera"
+ },
+ "FIT Y DANCE": {
+  "display": "Fit Dance",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Cortar saltos y aceleraciones bruscas",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, general 7.3 MET",
+  "motivo_intensidad": "Baile fitness continuo; no sostiene banda ligera"
+ },
+ "FLYBOARD": {
+  "display": "Flyboard",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Medio-Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Estabilización de tobillo y rodilla en plataforma inestable",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Circuit training, body weight exercises 6.0 MET",
+  "motivo_intensidad": "Trabajo en tabla suspendida con estabilizacion permanente; no sostiene banda ligera"
+ },
+ "FULL BODY": {
+  "display": "Full Body",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Autocarga; eliminar componentes pliométricos",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Resistance (weight) training, 8-15 reps at varied resistance 3.5 MET; Circuit training, body weight 6.0 MET",
+  "motivo_intensidad": "Acondicionamiento de cuerpo completo con carga propia: cubre las tres bandas"
+ },
+ "FUN TRAC": {
+  "display": "FunTrac",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Cambios de dirección rápidos e impacto",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Circuit training, body weight exercises 6.0 MET",
+  "motivo_intensidad": "Circuito funcional por tiempo; no sostiene banda ligera"
+ },
+ "FUTBOL": {
+  "display": "Fútbol",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Contacto, trauma directo y riesgo ligamentario",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Martial Arts / team sport play, moderate to vigorous",
+  "motivo_intensidad": "El juego fija el ritmo, no la persona; no sostiene banda ligera"
+ },
+ "GIMNASIA DE GRUPOS": {
+  "display": "Gimnasia de Grupos",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Medio-Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Giros y aceleraciones con alta demanda reactiva",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Calisthenics, vigorous effort 7.5 MET",
+  "motivo_intensidad": "Trabajo gimnastico con saltos y desplazamientos; no sostiene banda ligera"
+ },
+ "GRIT DEMO": {
+  "display": "GRIT",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Máximo esfuerzo con picos anaeróbicos e impacto elevado",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "no apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Bicycling, high intensity interval training 9.0 MET; Calisthenics, vigorous effort 7.5 MET",
+  "motivo_intensidad": "Intervalos al maximo por diseno: la banda vigorosa es la unica en la que existe la clase"
+ },
+ "HATHA YOGA": {
+  "display": "Hatha Yoga",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "no apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Ritmo pausado; usar bloques de apoyo",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Yoga, Hatha 2.3 MET",
+  "motivo_intensidad": "Posturas sostenidas con respiracion; techo por debajo de la banda vigorosa"
+ },
+ "HATHA YOGA 90": {
+  "display": "Hatha Yoga 90",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Controlar fatiga e hidratación en sesiones largas",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Yoga, Hatha 2.3 MET",
+  "motivo_intensidad": "Mismo formato en sesion larga; misma banda"
+ },
+ "INDBIKE": {
+  "display": "Indoor Bike",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "no apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Sin fuerzas de impacto sobre el cartílago",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Bicycling, stationary, general 6.8 MET; 25-30 watts, very light to light effort 3.5 MET",
+  "motivo_intensidad": "Rodada abierta: la resistencia y la cadencia son de la persona en todo momento"
+ },
+ "INICIACION BALLET": {
+  "display": "Iniciación Ballet",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo-Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Evitar el trabajo extremo en demi-pointe si hay inestabilidad de tobillo",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Ballet, modern, or jazz general, rehearsal or class 5.0 MET",
+  "motivo_intensidad": "Clase de tecnica inicial con barra; no alcanza banda vigorosa"
+ },
+ "INICIACION TKD": {
+  "display": "Iniciación TKD",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Patadas con pivote de rodilla y pérdida de equilibrio",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Martial Arts, slower pace, novice performers, practice 5.3 MET; moderate pace 10.3 MET",
+  "motivo_intensidad": "Practica marcial con desplazamientos y patadas; no sostiene banda ligera"
+ },
+ "INTERVAL": {
+  "display": "Interval",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio-Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Microtrauma repetitivo e intensidad anaeróbica",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Circuit training, body weight exercises 6.0 MET",
+  "motivo_intensidad": "El formato es alternancia de esfuerzo y pausa: la banda ligera lo contradice"
+ },
+ "INTRINITY": {
+  "display": "Intrinity",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "La tabla inclinada facilita descompresión articular y estabilidad",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Yoga, Hatha 2.3 MET; Pilates, general 2.8 MET",
+  "motivo_intensidad": "Fusion cuerpo-mente de bajo componente cardiovascular"
+ },
+ "JAZZ 90": {
+  "display": "Jazz",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Adaptar saltos y caídas a movimientos en plano horizontal",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Ballet, modern, or jazz general, rehearsal or class 5.0 MET; Jazz dancing, general 4.5 MET",
+  "motivo_intensidad": "Clase de tecnica con secuencias encadenadas: banda moderada"
+ },
+ "KINETIC CHAIN": {
+  "display": "Kinetic Chain",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo-Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Integración motriz; adaptar la intensidad de las cargas",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Resistance (weight) training, 8-15 reps at varied resistance 3.5 MET",
+  "motivo_intensidad": "Fuerza funcional con carga elegida por la persona: cubre las tres bandas"
+ },
+ "KINETIC PUMP": {
+  "display": "Kinetic Pump",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Regular la resistencia externa y controlar la cadencia",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Resistance (weight) training, 8-15 reps at varied resistance 3.5 MET",
+  "motivo_intensidad": "Barra con carga elegida disco por disco: cubre las tres bandas"
+ },
+ "KINETICS BALL": {
+  "display": "Kinetic Ball",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Trabajo propioceptivo y estabilidad central sin impacto",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Calisthenics, light effort 2.8 MET",
+  "motivo_intensidad": "Estabilidad y control sobre balon; techo por debajo de la banda vigorosa"
+ },
+ "MAT PILATES": {
+  "display": "Mat Pilates",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Adaptar supino a decúbito lateral desde la semana 16",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Pilates, general 2.8 MET",
+  "motivo_intensidad": "Control en colchoneta con carga corporal; no alcanza banda vigorosa"
+ },
+ "Muro_Escalar": {
+  "display": "Muro de Escalar",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "top3",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Contracción isométrica máxima y riesgo de caída",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Rock climbing, ascending route, moderate to vigorous",
+  "motivo_intensidad": "La ruta se elige, pero colgarse fija un piso de esfuerzo: no hay version ligera"
+ },
+ "NATURAL MOTION": {
+  "display": "Natural Motion",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo-Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Favorece el rango articular; controlar la extensión lumbar profunda",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Calisthenics, light effort 2.8 MET; Stretching, mild 2.3 MET",
+  "motivo_intensidad": "Movilidad y patrones de movimiento; techo por debajo de la banda vigorosa"
+ },
+ "POUND": {
+  "display": "Pound",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Flexión de rodilla sostenida e impacto repetitivo",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, general 7.3 MET",
+  "motivo_intensidad": "Cardio ritmico en posicion de sentadilla sostenida; no sostiene banda ligera"
+ },
+ "POWER CYCLING": {
+  "display": "Power Cycling",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "no apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Controlar la frecuencia cardiaca máxima y el sobrecalentamiento",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Bicycling, stationary, RPM/Spin bike class 9.0 MET",
+  "motivo_intensidad": "Rodada de potencia con bloques prescritos; no sostiene banda ligera"
+ },
+ "POWER JUMP": {
+  "display": "Power Jump",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Rebote en trampolín; presión sobre el suelo pélvico",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Calisthenics, vigorous effort 7.5 MET",
+  "motivo_intensidad": "Salto continuo en cama elastica; no sostiene banda ligera"
+ },
+ "RACE WALKER": {
+  "display": "Race Walker",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Sin fase de vuelo; protege la articulación manteniendo el trabajo aeróbico",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Water walking / treadmill walking, light 2.5 MET a race walking 6.5 MET",
+  "motivo_intensidad": "Caminata con velocidad e inclinacion propias: cubre las tres bandas"
+ },
+ "REFORMER PILATES": {
+  "display": "Reformer Pilates",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Los resortes dosifican la carga sin compresión",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Pilates, general 2.8 MET",
+  "motivo_intensidad": "Resortes graduables en cama; no alcanza banda vigorosa"
+ },
+ "RPM": {
+  "display": "RPM",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "no apto"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Pedaleo guiado; elimina el microtrauma en tren inferior",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Bicycling, stationary, RPM/Spin bike class 9.0 MET",
+  "motivo_intensidad": "Rodada coreografiada con sprints; no sostiene banda ligera"
+ },
+ "SH BAM": {
+  "display": "Sh'Bam",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Sustituir brincos por desplazamientos",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, general 7.3 MET",
+  "motivo_intensidad": "Baile continuo con bloques de tempo alto; no sostiene banda ligera"
+ },
+ "STEP": {
+  "display": "Step",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio-Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Carga compresiva repetida sobre la articulación femorotibial",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, step, with 4-inch step 5.5 MET; with 6-8 inch step 7.3 MET",
+  "motivo_intensidad": "La altura del step es propia, el tempo es del bloque musical"
+ },
+ "STRETCH": {
+  "display": "Stretch",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "no apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Mantener el estiramiento dentro del rango de confort por laxitud",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "no apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Stretching, mild 2.3 MET",
+  "motivo_intensidad": "Elongacion sin componente cardiovascular: no alcanza la banda moderada"
+ },
+ "STRETCH FK": {
+  "display": "Stretch FK",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "no apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Movilidad miofascial controlada",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "no apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Stretching, mild 2.3 MET",
+  "motivo_intensidad": "Version infantil del mismo formato; misma banda"
+ },
+ "STRONG NATION": {
+  "display": "Strong Nation",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Movimientos marciales y pliometría de alta exigencia",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Calisthenics, vigorous effort 7.5 MET",
+  "motivo_intensidad": "Intervalos sincronizados con la musica; no sostiene banda ligera"
+ },
+ "TOTAL BARRE": {
+  "display": "Total Barre",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Trabajo isométrico en barra; fortalece sin sobrecargar",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Ballet exercises (plie, tendus, jetes) 6.3 MET; Pilates, general 2.8 MET",
+  "motivo_intensidad": "Rango corto en barra con repeticion alta; techo por debajo de la banda vigorosa"
+ },
+ "TRAINT BOOST DEMO": {
+  "display": "Traint Boost",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "top3",
+   "Aumentar masa muscular": "apto",
+   "Mejorar mi desempeño atlético": "top3",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Formato interválico extremo",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Circuit training, body weight exercises 6.0 MET",
+  "motivo_intensidad": "Circuito funcional por tiempo; no sostiene banda ligera"
+ },
+ "URBAN DANCE": {
+  "display": "Urban Dance",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Eliminar impactos dinámicos y caídas al suelo",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, general 7.3 MET",
+  "motivo_intensidad": "Coreografia urbana con saltos y caidas; no sostiene banda ligera"
+ },
+ "VINYASA YOGA": {
+  "display": "Vinyasa Yoga",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo-Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Transiciones continuas; moderar la velocidad del flujo",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Yoga, Vinyasa 2.7 MET; Yoga, Power 4.0 MET",
+  "motivo_intensidad": "Secuencia encadenada con posturas de descanso propias; no alcanza banda vigorosa"
+ },
+ "VINYASA YOGA 90": {
+  "display": "Vinyasa Yoga 90",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "apto",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Vigilar hidratación y agotamiento metabólico",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Yoga, Vinyasa 2.7 MET; Yoga, Power 4.0 MET",
+  "motivo_intensidad": "Mismo formato en sesion larga; misma banda"
+ },
+ "YOGA RESTAURATIVA": {
+  "display": "Yoga Restaurativa",
+  "objetivos": {
+   "Bajar de peso": "no apto",
+   "Mejorar mi estética corporal y definición muscular": "no apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "no apto",
+   "Moverme mejor con más agilidad": "top3"
+  },
+  "impacto": "Bajo",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Apoyo con accesorios; relajación sin sobrecarga",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "no apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Yoga, Hatha 2.3 MET; Stretching, mild 2.3 MET",
+  "motivo_intensidad": "Posturas sostenidas con apoyo: no alcanza la banda moderada"
+ },
+ "ZUMBA STEP": {
+  "display": "Zumba Step",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Alto",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Suma el impacto del step a las desaceleraciones coordinativas",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, step, with 6-8 inch step 7.3 MET",
+  "motivo_intensidad": "Coreografia sobre step; no sostiene banda ligera"
+ },
+ "ZUMBA TONING": {
+  "display": "Zumba Toning",
+  "objetivos": {
+   "Bajar de peso": "apto",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "apto",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Pesas ligeras; evitar movimientos balísticos",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, general 7.3 MET; Resistance training, varied resistance 3.5 MET",
+  "motivo_intensidad": "Coreografia con bastones de peso; no sostiene banda ligera"
+ },
+ "ZUMBA FITNESS": {
+  "display": "Zumba",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio",
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Modificar pasos de salto; controlar giros repentinos",
+  "intensidad": {
+   "Suave y controlado": "no apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "apta"
+  },
+  "ancla_intensidad": "Aerobic, general 7.3 MET; Chinese square dance, aerobic dance 7.3 MET",
+  "motivo_intensidad": "Coreografia continua de ritmos latinos; no sostiene banda ligera"
+ },
+ "HAWAIANO": {
+  "display": "Ritmos Latinos",
+  "objetivos": {
+   "Bajar de peso": "top3",
+   "Mejorar mi estética corporal y definición muscular": "apto",
+   "Aumentar masa muscular": "no apto",
+   "Mejorar mi desempeño atlético": "no apto",
+   "Mejorar mi capacidad cardiovascular": "top3",
+   "Moverme mejor con más agilidad": "apto"
+  },
+  "impacto": "Medio",
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Evitar giros excesivos sobre rodillas comprimidas",
+  "intensidad": {
+   "Suave y controlado": "apta",
+   "Moderado y constante": "apta",
+   "Intenso, que me rete": "no apta"
+  },
+  "ancla_intensidad": "Ballet, modern, or jazz general, rehearsal or class 5.0 MET; Jazz dancing, general 4.5 MET",
+  "motivo_intensidad": "Ritmos con tempo variable por pieza y rango ajustable; no alcanza banda vigorosa"
+ }
+}
