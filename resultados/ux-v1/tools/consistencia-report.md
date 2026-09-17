@@ -1,6 +1,6 @@
 # Reporte de consistencia del depósito
 
-**32 documentos · 4,441 líneas · 22 reglas · 0 hallazgos**
+**32 documentos · 4,451 líneas · 22 reglas · 0 hallazgos**
 
 Este reporte lo genera `tools/consistencia.js` al ejecutarse. La columna «reglas
 aplicadas» no es una declaración: es el registro de qué verificación tocó qué
@@ -27,7 +27,7 @@ archivo durante esta corrida.
 | bds-resumen.es.md | 52 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22 (16) | 0 |
 | bds-tecnica.es.md | 65 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22 (16) | 0 |
 | contrato.es.md | 582 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22 (16) | 0 |
-| cuestionario.es.md | 238 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22 (16) | 0 |
+| cuestionario.es.md | 248 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22 (16) | 0 |
 | entrevistas-campo.es.md | 56 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22 (16) | 0 |
 | execution.es.md | 272 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22 (16) | 0 |
 | experience.es.md | 917 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22 (16) | 0 |

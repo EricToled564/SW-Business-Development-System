@@ -181,7 +181,17 @@ El Cuestionario de Experiencia Ideal captura las preferencias necesarias para ge
 - «Programas prenatales o de posparto» se muestra **solo si Q2 es «Femenino»**.
 - «Actividades para niños de 3 meses a 13 años» se muestra **solo si Q13 es «Con mis hijos» o «Con mi familia»**.
 
-**Las tres son requisito en la elección del club cuando se declaran:** el club debe tener alberca cuando el modo resuelve en agua, actividades para menores de 13 años cuando se declara esa preferencia, clases adecuadas para periodos prenatal o posparto cuando se declara esa, y clases de bajo impacto cuando se declara la última. Las dos preferencias de clases se comprueban **objetivo por objetivo**.
+**Cada preferencia declarada es requisito en la elección del club:**
+
+| Preferencia declarada | El club debe tener |
+|---|---|
+| Actividades para niños de 3 meses a 13 años | actividades para menores de 13 años |
+| Programas prenatales o de posparto | clases adecuadas para esos periodos, para cada uno de los objetivos de la persona |
+| Programas de bajo impacto | clases de bajo impacto, para cada uno de los objetivos de la persona |
+
+A esos requisitos se suma **la alberca**, que no es una preferencia de este reactivo sino una amenidad, y se exige cuando el modo de entrenamiento resuelto es en agua.
+
+**Las dos preferencias de clases disparan además la matriz de contraindicaciones**, que aparta las clases contraindicadas para ese programa y pone en su lugar una alternativa equivalente para el mismo objetivo. Nunca se elimina una clase sin sustituirla.
 
 ### Q15
 
