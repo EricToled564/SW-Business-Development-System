@@ -120,7 +120,7 @@ De ella derivan dos momentos de cobro:
 - **Primera mitad (50%).** Se factura al iniciar los trabajos y resulta exigible al aprobar Sports World por escrito el avance de la Semana 4, con plazo de pago de 10 días naturales.
 - **Segunda mitad (50%).** Resulta exigible al aprobarse la totalidad del trabajo en la Semana 8, con el mismo plazo de 10 días naturales.
 
-El equipo de producción, en cambio, devenga honorarios desde la primera semana. Lo integran cinco especialistas —un líder técnico, un desarrollador, un director de arte, un especialista en posicionamiento y un desarrollador de integraciones— contratados por encargo contra entregables verificables.
+El equipo de producción, en cambio, devenga honorarios desde la primera semana. Lo integran cinco especialistas —un líder técnico, un desarrollador, un director de arte, un especialista en posicionamiento y un desarrollador de integraciones— bajo un esquema de encargo contra entregables verificables.
 
 ### Flujo de efectivo del periodo
 
@@ -168,7 +168,7 @@ Las horas de dedicación por rol proceden del plan de ejecución del proyecto, d
 
 Dos precisiones sobre el cuadro anterior:
 
-1. **Las tarifas por hora constituyen estimaciones de planeación y no contratos suscritos.** El modelo de contratación del proyecto es de precio cerrado por entregable y no por hora abierta; las horas indicadas sirven para dimensionar el monto y corresponden a valores de mercado para perfiles de este nivel en México durante 2026. Toda diferencia a la baja se aplica a la reserva.
+1. **La contratación del equipo es por encargo, a precio cerrado contra entregable, y no por hora abierta.** Las horas y tarifas indicadas dimensionan el monto y corresponden a valores de mercado para perfiles de este nivel en México durante 2026.
 2. **Los recursos no se destinan a la adquisición de activos realizables.** Se aplican a honorarios profesionales. El respaldo de la operación no es un bien físico: son el derecho de cobro frente a Sports World y la obligación personal de quien avala el pagaré.
 
 ---
