@@ -82,7 +82,7 @@ El Cuestionario de Experiencia Ideal captura las preferencias necesarias para ge
 > ☐ Suave y controlado ☐ Moderado y constante ☐ Intenso, que me rete
 
 **Captura y validación.** Selección única obligatoria.
-**Uso autorizado.** Preferencia de intensidad para clases y preparación de visita.
+**Uso autorizado.** Criterio de selección de clases junto con el objetivo y el nivel; también viaja al brief del asesor.
 
 ### Q6
 
@@ -231,7 +231,7 @@ Estas reglas forman parte del cuestionario y se mantienen idénticas en todos lo
 | **Regreso de una pausa** | Preguntar el último gimnasio y la duración de la pausa |
 | **Preferencias** | Siempre: bajo impacto o ninguna. Prenatal o posparto solo con lenguaje femenino. Actividades infantiles solo después de declarar hijos o familia |
 | **Niños** | Cualquier actividad infantil verificada del club satisface la preferencia infantil |
-| **Clubes** | La elección de club exige **las amenidades elegidas, las preferencias declaradas y al menos una clase elegible para cada objetivo**. Días y horarios solo generan alerta; no descartan clubes. **La condición de las clases se cumple en todos los clubes por diseño del programa**: los objetivos se definieron conforme a la oferta mínima de clases por club. En los hechos, lo que decide la elección son las amenidades y las preferencias |
+| **Clubes** | La elección de club exige **las amenidades elegidas, las preferencias declaradas y al menos una clase elegible para cada objetivo en la intensidad declarada**. Días y horarios solo generan alerta; no descartan clubes. **La condición de las clases se cumple en todos los clubes por diseño del programa**: los objetivos se definieron conforme a la oferta mínima de clases por club, y el cruce de los seis objetivos contra los tres grados de intensidad deja al menos una clase en cada una de las dieciocho combinaciones, en los cuarenta y nueve clubes. En los hechos, lo que decide la elección son las amenidades y las preferencias |
 | **Cercanía** | Se mide en minutos de traslado con tráfico **a la hora pico**, nunca en kilómetros y nunca a la hora declarada: no se puede saber si la persona entrenará a esa hora. El tiempo se muestra siempre como **«máx X minutos»** |
 | **Ubicación** | Capturar un solo código postal o colonia del origen prioritario. Nunca pedir dos ubicaciones ni una dirección completa |
 | **Multiclub** | «Ambos» activa la oportunidad Multiclub; Q15b define el único origen prioritario |
