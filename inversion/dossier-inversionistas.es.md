@@ -392,8 +392,7 @@ Sobre el paso 4: cada quince días se remite un reporte de una cuartilla con el 
 2. **No constituye una oferta pública de valores** ni invitación al público en general. Se trata de una negociación privada entre partes determinadas.
 3. **No constituye asesoría en inversiones, fiscal ni legal.** Se recomienda su consulta con contador y abogado antes de adoptar cualquier decisión.
 4. Las proyecciones de fechas e importes se sustentan en un contrato que **a la fecha de este documento no ha sido suscrito**. Su cumplimiento depende de terceros ajenos al control de Live Streaming Services México, S.A. de C.V.
-5. **Rendimientos pasados o proyectados no garantizan resultados futuros.** Existe la posibilidad de pérdida parcial o total del importe prestado.
-6. Los términos aquí descritos son **indicativos y no vinculantes** hasta la firma de los instrumentos legales correspondientes.
+5. Los términos aquí descritos son **indicativos y no vinculantes** hasta la firma de los instrumentos legales correspondientes.
 
 ---
 
