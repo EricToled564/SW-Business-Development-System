@@ -285,9 +285,15 @@ function renderTable(doc, block, x0, width, size) {
 
   // Regla 4a: una tabla que cabe entera en una página no se parte. Partir tres
   // renglones en 1 + 2 no ahorra papel y deja un hueco a media página.
+  //
+  // Excepción: si arriba de la tabla casi no hay nada —sólo el encabezado de
+  // su sección—, empujarla entera deja ese encabezado huérfano en una página
+  // en blanco. En ese caso la tabla se parte con encabezado repetido, que es
+  // el mal menor.
   const full = tableHeight(doc, block, widths, size);
   const pageUsable = limitY(doc) - doc.page.margins.top;
-  if (full <= pageUsable) {
+  const usedAbove = doc.y - doc.page.margins.top;
+  if (full <= pageUsable && !(doc.y + full > limitY(doc) && usedAbove < pageUsable * 0.25)) {
     room(doc, full);
   } else {
     // Regla 4b: en una tabla larga, el encabezado nunca se queda solo al pie.
@@ -429,12 +435,15 @@ function renderBlocks(doc, blocks, x0, width, nested) {
           // Las secciones fluyen, separadas por aire y por su filete. Abrir
           // página para cada una producía páginas ocupadas al 20%.
           doc.moveDown(atPageTop(doc) ? 0 : 1.1);
-          room(doc, s * 2.2 + nextNeed(doc, blocks, bi + 1, width, size));
+          // La reserva debe cubrir el consumo real del encabezado: su aire previo,
+          // el renglón, el filete y el aire de la tabla que sigue (~s×3.2). Con
+          // s×2.2 quedaba 15 pt corta y un encabezado quedó huérfano por 2 pt.
+          room(doc, s * 3.4 + nextNeed(doc, blocks, bi + 1, width, size));
         } else {
           // Regla 2 (keep-with-next): el encabezado arrastra consigo el inicio
           // real de su contenido; si no caben juntos, se va entero a la
           // siguiente página en lugar de quedarse solo al pie.
-          room(doc, s * 1.9 + nextNeed(doc, blocks, bi + 1, width, size));
+          room(doc, s * 2.8 + nextNeed(doc, blocks, bi + 1, width, size));
         }
         doc.moveDown(atPageTop(doc) ? 0 : b.level <= 2 ? 0.85 : 0.7);
         doc.font("Helvetica-Bold").fontSize(s)
