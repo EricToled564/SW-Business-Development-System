@@ -15,7 +15,7 @@ La necesidad de financiamiento tiene un origen exclusivamente de calendario.
 
 El contrato no contempla anticipos; así consta expresamente en su Cláusula Novena. El cliente cubre la primera mitad al aprobar el avance de la Semana 4 y la segunda al aprobar la totalidad del trabajo en la Semana 8. En consecuencia, durante el primer mes de ejecución corresponde a Final Upgrade cubrir los honorarios del equipo de producción sin haber recibido contraprestación alguna.
 
-Ese primer mes representa **MXN $300,000**. De ese importe se solicitan en préstamo **MXN $200,000**; los $100,000 restantes los aporta el propio solicitante.
+Ese primer mes representa **MXN $200,000**, y es el monto que se solicita en préstamo.
 
 No se solicita capital de riesgo para un proyecto en formación. Se solicita un puente de doce semanas —los 90 días del préstamo— sobre un ingreso cuantificado, calendarizado y documentado en un contrato. Conforme a ese mismo instrumento, los recursos con los que se cubrirá la devolución ingresan alrededor del **día 45**, en tanto que el vencimiento del préstamo ocurre el **día 90**: existen cuarenta y cinco días de holgura entre ambas fechas.
 
@@ -126,13 +126,13 @@ El equipo de producción, en cambio, devenga honorarios desde la primera semana.
 
 | Días | Etapa | Ingresos | Egresos |
 |---|---|---|---|
-| **0** | Firma del contrato; desembolso del préstamo ($200,000) y aportación del solicitante ($100,000) | **+$300,000** | — |
-| **1 a 28** | Semanas 1 a 4: producción | — | **–$300,000** |
+| **0** | Firma del contrato y desembolso del préstamo | **+$200,000** | — |
+| **1 a 28** | Semanas 1 a 4: producción | — | **–$200,000** |
 | **28** | Entrega del 50% de los entregables | — | — |
 | **28 a 35** | Revisión del cliente. A falta de observaciones en 5 días hábiles, la entrega se tiene por aceptada (Cláusula Décima) | — | — |
 | **35 a 45** | Plazo de pago de 10 días naturales | — | — |
 | **~45** | **Ingreso de la primera exhibición** | **+$836,244** | — |
-| **29 a 56** | Semanas 5 a 8: conclusión de los trabajos, ya con caja | — | –$287,000 aprox. |
+| **29 a 56** | Semanas 5 a 8: conclusión de los trabajos, ya con caja | — | –$213,000 aprox. |
 | **~73** | **Ingreso de la segunda exhibición** | **+$836,244** | — |
 | **90** | **Vencimiento del préstamo** | — | **–$220,000** |
 
@@ -142,7 +142,7 @@ El déficit se concentra en los días 1 a 45: cuarenta y cinco días de egreso s
 
 ## 6 · Aplicación de los recursos
 
-Las Semanas 1 a 4 del proyecto —del arranque a la entrega del 50% que da lugar al primer cobro— cuestan **MXN $300,000**. El préstamo aporta **$200,000** y el solicitante cubre los **$100,000** restantes, de modo que el participante financia dos terceras partes del periodo y el solicitante una tercera.
+Los MXN $200,000 se destinan a las Semanas 1 a 4 del proyecto, desde el arranque hasta la entrega del 50% que da lugar al primer cobro.
 
 ### Honorarios del equipo de producción
 
@@ -150,21 +150,21 @@ Las horas de dedicación por rol proceden del plan de ejecución del proyecto, d
 
 | Rol | Función | Horas (Semanas 1–4) | Tarifa/hora | Importe |
 |---|---|---|---|---|
-| **Líder técnico** | Dirección de la producción y firma de la calidad de cada entrega | 140 | $850 | **$119,000** |
-| **Especialista en posicionamiento** | Estrategia de términos de búsqueda por tipo de página y revisión editorial | 70 | $700 | **$49,000** |
-| **Desarrollador** | Implementación de las páginas y corrección de la producción asistida | 100 | $380 | **$38,000** |
-| **Director de arte** | Sistema visual y producción de imagen de las 148 páginas | 53 | $700 | **$37,100** |
-| **Desarrollador de integraciones** | Enlace con el sistema de clientes de Sports World; inicia en Semana 3 | 35 | $850 | **$29,750** |
-| | **Subtotal** | **398 h** | | **$272,850** |
+| **Líder técnico** | Dirección de la producción y firma de la calidad de cada entrega | 120 | $700 | **$84,000** |
+| **Especialista en posicionamiento** | Estrategia de términos de búsqueda por tipo de página y revisión editorial | 60 | $550 | **$33,000** |
+| **Desarrollador** | Implementación de las páginas y corrección de la producción asistida | 80 | $330 | **$26,400** |
+| **Director de arte** | Sistema visual y producción de imagen de las 148 páginas | 46 | $550 | **$25,300** |
+| **Desarrollador de integraciones** | Enlace con el sistema de clientes de Sports World; inicia en Semana 3 | 30 | $700 | **$21,000** |
+| | **Subtotal** | **336 h** | | **$189,700** |
 
 ### Demás conceptos
 
 | Concepto | Importe |
 |---|---|
-| Herramientas de inteligencia artificial para la producción y verificación de las 148 páginas | **$11,600** |
-| Licencias de producción: diseño, tratamiento de imagen y servidores de prueba | **$8,000** |
-| Reserva para contingencias | **$7,550** |
-| **Total** | **$300,000** |
+| Herramientas de inteligencia artificial para la producción y verificación de las 148 páginas | **$5,000** |
+| Licencias de producción: diseño, tratamiento de imagen y servidores de prueba | **$3,000** |
+| Reserva para contingencias | **$2,300** |
+| **Total** | **$200,000** |
 
 Dos precisiones sobre el cuadro anterior:
 
@@ -201,11 +201,11 @@ Al día 73 —diecisiete días antes del vencimiento— se habrán cobrado ambas
 | Concepto | Importe |
 |---|---|
 | Ingreso del Proyecto A (8 semanas), sin IVA | $1,441,800 |
-| Costo estimado del equipo de producción (8 semanas) | –$548,675 |
-| Herramientas, inteligencia artificial y licencias | –$39,140 |
-| **Margen bruto estimado** | **$853,985 (59.2%)** |
+| Costo estimado del equipo de producción (8 semanas) | –$382,200 |
+| Herramientas, inteligencia artificial y licencias | –$31,140 |
+| **Margen bruto estimado** | **$1,028,460 (71.3%)** |
 | **Costo total del financiamiento** | **$20,000** |
-| **Representa** | **1.4% del ingreso · 2.3% del margen** |
+| **Representa** | **1.4% del ingreso · 1.9% del margen** |
 
 Es el precio de iniciar la ejecución antes del primer cobro.
 
