@@ -531,12 +531,12 @@ function cover(doc, W) {
   doc.font("Helvetica-Bold").fontSize(31).fillColor("#ffffff")
      .text("Dossier para Inversionistas", M, 94, { width: W, lineGap: 3 });
   doc.font("Helvetica").fontSize(14).fillColor("#d3e3f2")
-     .text("Préstamo puente de MXN $300,000 a 90 días", M, 158, { width: W });
+     .text("Préstamo puente de MXN $200,000 a 90 días", M, 158, { width: W });
   doc.font("Helvetica").fontSize(12).fillColor("#a9c8e6")
      .text("Proyecto Sports World México", M, 180, { width: W });
 
   doc.font("Helvetica").fontSize(10).fillColor("#7fa8cd")
-     .text("Documento confidencial · Agosto de 2026", M, 202, { width: W });
+     .text("Documento confidencial · Septiembre de 2026", M, 202, { width: W });
 
   // La nota preliminar vive en la portada. Sola en una página propia dejaba
   // cuatro renglones y el resto en blanco, porque la sección 1 abre la suya.
@@ -560,7 +560,7 @@ function cover(doc, W) {
     bufferPages: true,
     autoFirstPage: true,
   });
-  doc.info.Title = "Dossier para Inversionistas — Préstamo puente MXN $300,000 a 90 días";
+  doc.info.Title = "Dossier para Inversionistas — Préstamo puente MXN $200,000 a 90 días";
   doc.info.Author = "Live Streaming Services México, S.A. de C.V. / Final Upgrade";
   doc.info.Subject = "Proyecto Sports World México · Documento confidencial";
 

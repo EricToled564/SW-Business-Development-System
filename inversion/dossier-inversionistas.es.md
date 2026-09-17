@@ -1,5 +1,5 @@
 # Dossier para Inversionistas
-## Préstamo puente de MXN $300,000 a 90 días · Proyecto Sports World México
+## Préstamo puente de MXN $200,000 a 90 días · Proyecto Sports World México
 
 > **Nota preliminar.** La operación que se describe en estas páginas es un préstamo a plazo fijo, con fecha de devolución y rendimiento determinados desde su origen. No comprende la adquisición de acciones ni la incorporación como socio: quien participa lo hace en calidad de acreedor y conserva íntegro su derecho de cobro, sin quedar vinculado a la marcha del negocio.
 
@@ -15,7 +15,7 @@ La necesidad de financiamiento tiene un origen exclusivamente de calendario.
 
 El contrato no contempla anticipos; así consta expresamente en su Cláusula Novena. El cliente cubre la primera mitad al aprobar el avance de la Semana 4 y la segunda al aprobar la totalidad del trabajo en la Semana 8. En consecuencia, durante el primer mes de ejecución corresponde a Final Upgrade cubrir los honorarios del equipo de producción sin haber recibido contraprestación alguna.
 
-Ese primer mes representa **MXN $300,000**, y es el monto que se solicita en préstamo.
+Ese primer mes representa **MXN $300,000**. De ese importe se solicitan en préstamo **MXN $200,000**; los $100,000 restantes los aporta el propio solicitante.
 
 No se solicita capital de riesgo para un proyecto en formación. Se solicita un puente de doce semanas —los 90 días del préstamo— sobre un ingreso cuantificado, calendarizado y documentado en un contrato. Conforme a ese mismo instrumento, los recursos con los que se cubrirá la devolución ingresan alrededor del **día 45**, en tanto que el vencimiento del préstamo ocurre el **día 90**: existen cuarenta y cinco días de holgura entre ambas fechas.
 
@@ -38,15 +38,15 @@ Final Upgrade
 | Concepto | Detalle |
 |---|---|
 | **Solicitante** | Live Streaming Services México, S.A. de C.V. / Final Upgrade |
-| **Monto por participante** | **MXN $150,000** — dos participantes, $300,000 en total |
+| **Monto del préstamo** | **MXN $200,000** — un solo participante |
 | **Plazo** | **90 días naturales** |
 | **Destino de los recursos** | Las primeras cuatro semanas de producción del Proyecto Sports World |
-| **Devolución** | **$165,000** en un solo pago al día 90: capital de $150,000 más rendimiento de $15,000 |
+| **Devolución** | **$220,000** en un solo pago al día 90: capital de $200,000 más rendimiento de $20,000 |
 | **Rendimiento** | **10% sobre el capital** en 90 días |
-| **Instrumentación** | Contrato de mutuo mercantil con interés **y pagaré** a nombre de cada participante |
+| **Instrumentación** | Contrato de mutuo mercantil con interés **y pagaré** a nombre del participante |
 | **Momento del desembolso** | El día de la firma del contrato con Sports World, y no antes |
 | **Fuente de pago** | Primera exhibición del contrato con Sports World: **$836,244**, con ingreso previsto alrededor del día 45 |
-| **Cobertura de esa exhibición** | **2.53 veces** el importe adeudado a ambos participantes |
+| **Cobertura de esa exhibición** | **3.80 veces** el importe adeudado |
 | **Si el cliente demora la aprobación** | La Cláusula Décima del contrato dispone que, a falta de observaciones dentro de 5 días hábiles, la entrega **se tiene por aceptada**, incluida la exigibilidad del pago |
 | **Naturaleza de la obligación** | La obligación de devolución corresponde a Live Streaming Services México, S.A. de C.V. y **es independiente del cumplimiento de Sports World**. Consta en pagaré **avalado en lo personal por Eric Toledano** |
 | **Naturaleza del instrumento** | No constituye un depósito bancario, no cuenta con garantía gubernamental ni forma parte del sistema financiero |
@@ -126,7 +126,7 @@ El equipo de producción, en cambio, devenga honorarios desde la primera semana.
 
 | Días | Etapa | Ingresos | Egresos |
 |---|---|---|---|
-| **0** | Firma del contrato y desembolso del préstamo | **+$300,000** | — |
+| **0** | Firma del contrato; desembolso del préstamo ($200,000) y aportación del solicitante ($100,000) | **+$300,000** | — |
 | **1 a 28** | Semanas 1 a 4: producción | — | **–$300,000** |
 | **28** | Entrega del 50% de los entregables | — | — |
 | **28 a 35** | Revisión del cliente. A falta de observaciones en 5 días hábiles, la entrega se tiene por aceptada (Cláusula Décima) | — | — |
@@ -134,7 +134,7 @@ El equipo de producción, en cambio, devenga honorarios desde la primera semana.
 | **~45** | **Ingreso de la primera exhibición** | **+$836,244** | — |
 | **29 a 56** | Semanas 5 a 8: conclusión de los trabajos, ya con caja | — | –$287,000 aprox. |
 | **~73** | **Ingreso de la segunda exhibición** | **+$836,244** | — |
-| **90** | **Vencimiento del préstamo** | — | **–$330,000** |
+| **90** | **Vencimiento del préstamo** | — | **–$220,000** |
 
 El déficit se concentra en los días 1 a 45: cuarenta y cinco días de egreso sin ingreso. Es el periodo que cubre el financiamiento solicitado, y la razón por la que el plazo de 90 días resulta holgado: los recursos destinados a la devolución ingresan cuarenta y cinco días antes del vencimiento.
 
@@ -142,7 +142,7 @@ El déficit se concentra en los días 1 a 45: cuarenta y cinco días de egreso s
 
 ## 6 · Aplicación de los recursos
 
-Los MXN $300,000 se destinan a las Semanas 1 a 4 del proyecto, desde el arranque hasta la entrega del 50% que da lugar al primer cobro.
+Las Semanas 1 a 4 del proyecto —del arranque a la entrega del 50% que da lugar al primer cobro— cuestan **MXN $300,000**. El préstamo aporta **$200,000** y el solicitante cubre los **$100,000** restantes, de modo que el participante financia dos terceras partes del periodo y el solicitante una tercera.
 
 ### Honorarios del equipo de producción
 
@@ -184,17 +184,17 @@ La primera exhibición del contrato con Sports World:
 | Primera exhibición, con IVA | **$836,244.00** |
 | IVA, que se entera al SAT y no constituye recurso de la empresa | –$115,344.00 |
 | **Recurso efectivamente disponible** | **$720,900.00** |
-| **Importe adeudado a ambos participantes** | **$330,000.00** |
-| **Cobertura** | **2.18 veces** |
+| **Importe adeudado al participante** | **$220,000.00** |
+| **Cobertura** | **3.28 veces** |
 
 ### Cobertura acumulada
 
 Al día 73 —diecisiete días antes del vencimiento— se habrán cobrado ambas exhibiciones:
 
-| Momento | Cobrado, neto de IVA | Cobertura sobre $330,000 |
+| Momento | Cobrado, neto de IVA | Cobertura sobre $220,000 |
 |---|---|---|
-| Día ~45 | $720,900 | **2.18 veces** |
-| Día ~73 | $1,441,800 | **4.37 veces** |
+| Día ~45 | $720,900 | **3.28 veces** |
+| Día ~73 | $1,441,800 | **6.55 veces** |
 
 ### Capacidad de pago del proyecto
 
@@ -204,8 +204,8 @@ Al día 73 —diecisiete días antes del vencimiento— se habrán cobrado ambas
 | Costo estimado del equipo de producción (8 semanas) | –$548,675 |
 | Herramientas, inteligencia artificial y licencias | –$39,140 |
 | **Margen bruto estimado** | **$853,985 (59.2%)** |
-| **Costo total del financiamiento** | **$30,000** |
-| **Representa** | **2.1% del ingreso · 3.5% del margen** |
+| **Costo total del financiamiento** | **$20,000** |
+| **Representa** | **1.4% del ingreso · 2.3% del margen** |
 
 Es el precio de iniciar la ejecución antes del primer cobro.
 
@@ -227,20 +227,20 @@ Estos conceptos no se incorporan al cálculo de cobertura, por depender de firma
 
 ### Rendimiento
 
-| Concepto | Por participante | Ambos participantes |
-|---|---|---|
-| Capital | $150,000 | $300,000 |
-| Rendimiento (10%) | **$15,000** | **$30,000** |
-| **Importe a recibir al día 90** | **$165,000** | **$330,000** |
+| Concepto | Importe |
+|---|---|
+| Capital | $200,000 |
+| Rendimiento (10%) | **$20,000** |
+| **Importe a recibir al día 90** | **$220,000** |
 
 ### Referencia de mercado
 
 La referencia natural a tres meses en México son los CETES a 91 días:
 
-| Instrumento | Tasa | Rendimiento sobre $150,000 a 3 meses |
+| Instrumento | Tasa | Rendimiento sobre $200,000 a 3 meses |
 |---|---|---|
-| **CETES 91 días** (subasta del 20 de agosto de 2026) | 6.45% anual | **$2,446** |
-| **Esta operación** | 10% a 90 días | **$15,000** |
+| **CETES 91 días** (subasta del 20 de agosto de 2026) | 6.45% anual | **$3,261** |
+| **Esta operación** | 10% a 90 días | **$20,000** |
 | **Múltiplo** | | **6.1 veces** |
 
 Expresado en tasa anual comparable: 10% a tres meses equivale a **40% anual simple**, o a **46.4% anual** de reinvertirse en cuatro ocasiones consecutivas.
@@ -253,15 +253,15 @@ Los intereses constituyen ingreso acumulable y causan Impuesto Sobre la Renta. S
 
 | | Opción A · Retención estándar | Opción B · Rendimiento neto garantizado |
 |---|---|---|
-| Interés pactado | $15,000 | $18,750 |
-| Retención de ISR (20%, Art. 135 LISR) | –$3,000 | –$3,750 |
-| **Importe recibido en efectivo** | **$162,000** | **$165,000** |
+| Interés pactado | $20,000 | $25,000 |
+| Retención de ISR (20%, Art. 135 LISR) | –$4,000 | –$5,000 |
+| **Importe recibido en efectivo** | **$216,000** | **$220,000** |
 | Rendimiento neto efectivo | 8% | **10%** |
 | Constancia fiscal (CFDI de retenciones) | A su nombre | A su nombre |
 
-Bajo la **Opción B**, Final Upgrade absorbe la carga fiscal a efecto de que el rendimiento neto corresponda al 10% ofrecido. Es la estructura que se propone, y su costo adicional de $3,750 por participante se encuentra considerado en las cifras de este documento.
+Bajo la **Opción B**, Final Upgrade absorbe la carga fiscal a efecto de que el rendimiento neto corresponda al 10% ofrecido. Es la estructura que se propone, y su costo adicional de $5,000 se encuentra considerado en las cifras de este documento.
 
-> **Precisión.** El deudor es una sociedad anónima ajena al sistema financiero, por lo que resulta aplicable la retención del 20% sobre intereses nominales prevista en el Artículo 135 de la Ley del Impuesto Sobre la Renta, y la sociedad la entera al SAT por cuenta del participante. El efecto final sobre la declaración anual de cada participante depende de su propia situación fiscal, por lo que corresponde confirmarlo con su contador. Este documento no constituye asesoría fiscal.
+> **Precisión.** El deudor es una sociedad anónima ajena al sistema financiero, por lo que resulta aplicable la retención del 20% sobre intereses nominales prevista en el Artículo 135 de la Ley del Impuesto Sobre la Renta, y la sociedad la entera al SAT por cuenta del participante. El efecto final sobre la declaración anual del participante depende de su propia situación fiscal, por lo que corresponde confirmarlo con su contador. Este documento no constituye asesoría fiscal.
 
 ---
 
@@ -334,30 +334,28 @@ En caso de discrepancia entre este dossier y la documentación publicada, preval
 | Documento | Objeto |
 |---|---|
 | **Contrato de mutuo mercantil con interés** | Establece monto, plazo, tasa, fecha de pago y obligaciones de ambas partes |
-| **Pagaré por el importe total a recibir** ($165,000) | Título de crédito a nombre del participante. Permite exigir el pago por la vía mercantil ejecutiva |
+| **Pagaré por el importe total a recibir** ($220,000) | Título de crédito a nombre del participante. Permite exigir el pago por la vía mercantil ejecutiva |
 | **Instrucción de desembolso condicionado** | Consigna que la transferencia se ejecuta contra la firma del contrato con Sports World, y no antes |
 | **Aval en el pagaré y obligado solidario en el mutuo** | **Eric Toledano** responde del pago con su patrimonio personal si la sociedad no cumple. El aval se rige por los Artículos 109 y 174 de la Ley General de Títulos y Operaciones de Crédito; la obligación solidaria, por el contrato de mutuo. Se suscriben ambas para que queden abiertas las dos vías de cobro |
 | **CFDI de retenciones**, en su caso | Constancia fiscal por los intereses percibidos |
 
-Ambas participaciones son idénticas y del mismo rango. Ninguna goza de preferencia sobre la otra en el cobro y ambas reciben los mismos términos. Toda protección adicional que se pacte con un participante se ofrece igualmente al otro.
-
-Los borradores se preparan para su revisión por el abogado de cada participante con anterioridad a la firma. Las modificaciones de redacción que no alteren el fondo económico se aceptan sin objeción.
+Los borradores se preparan para su revisión por el abogado del participante con anterioridad a la firma. Las modificaciones de redacción que no alteren el fondo económico se aceptan sin objeción.
 
 ---
 
 ## 12 · Calendario y siguientes pasos
 
-La firma del contrato con Sports World se espera para **finales de agosto de 2026**, y el desembolso debe quedar listo desde antes. Por eso lo que se solicita en estos días no es el desembolso, sino la **pre-aprobación**: la firma del mutuo y del pagaré con la instrucción de transferencia condicionada, que sólo se ejecuta si la firma con Sports World ocurre.
+La firma del contrato con Sports World está próxima, y el desembolso debe quedar listo desde antes. Por eso lo que se solicita en estos días no es el desembolso, sino la **pre-aprobación**: la firma del mutuo y del pagaré con la instrucción de transferencia condicionada, que sólo se ejecuta si la firma con Sports World ocurre.
 
 | Paso | Responsable | Plazo |
 |---|---|---|
 | **1.** Lectura del dossier y sesión de preguntas —presencial o por videoconferencia, con la demostración completa | Ambas partes | En cuanto se solicite, incluso el mismo día |
 | **2.** **Pre-aprobación**: revisión de los borradores con su abogado y firma del mutuo y del pagaré, con instrucción de transferencia condicionada | Participante | **Dentro de los 3 a 4 días siguientes a esta entrega** |
-| **3.** **Firma del contrato con Sports World** y ejecución de la transferencia | — | **Finales de agosto · Día 0** |
+| **3.** **Firma del contrato con Sports World** y ejecución de la transferencia | — | **Al firmar · Día 0** |
 | **4.** Reporte quincenal de avance con evidencia verificable | Final Upgrade | Días 15, 30, 45, 60 y 75 |
-| **5.** **Pago de $165,000** | Final Upgrade | **Día 90** |
+| **5.** **Pago de $220,000** | Final Upgrade | **Día 90** |
 
-**Vigencia de la pre-aprobación.** La pre-aprobación es válida **hasta el 5 de septiembre de 2026**. Si a esa fecha el contrato con Sports World no se hubiera firmado, la instrucción de transferencia queda sin efecto y la propuesta vuelve a quedar pendiente de revisión, hasta que exista una nueva fecha tentativa de firma; el participante decide entonces si renueva su pre-aprobación en los mismos términos o se retira sin costo ni obligación alguna.
+**Vigencia de la pre-aprobación.** La pre-aprobación es válida durante los **10 días naturales** siguientes a su otorgamiento. Si en ese plazo el contrato con Sports World no se hubiera firmado, la instrucción de transferencia queda sin efecto y la propuesta vuelve a quedar pendiente de revisión, hasta que exista una nueva fecha tentativa de firma; el participante decide entonces si renueva su pre-aprobación en los mismos términos o se retira sin costo ni obligación alguna.
 
 Sobre el paso 2: los borradores del mutuo y del pagaré son documentos de dos y una cuartilla respectivamente, de estructura estándar, y se entregan junto con este dossier para que su abogado pueda revisarlos de inmediato. No hay nada que negociar sobre el fondo económico: monto, plazo, tasa y fecha de pago constan en el Punto 2.
 
@@ -408,7 +406,7 @@ Sobre el paso 4: cada quince días se remite un reporte de una cuartilla con el 
 | Costo de herramientas de IA ($23,140 por 8 semanas) | Modelo de costo interno a tarifas publicadas de Anthropic, julio de 2026 | Interno, disponible a solicitud |
 | CETES 91 días: 6.45% anual | Subasta de Banco de México del 20 de agosto de 2026 | Público |
 | Retención de ISR del 20% sobre intereses nominales | Artículo 135 de la Ley del Impuesto Sobre la Renta | Público |
-| Estado del contrato: entregado, en revisión, **sin firmar** | Situación al 22 de agosto de 2026 | Declarado |
+| Estado del contrato: entregado, en revisión, **sin firmar** | Situación al 17 de septiembre de 2026 | Declarado |
 
 Los tres renglones señalados como «Interno» o «Supuesto» constituyen estimaciones propias y no hechos verificados por un tercero. Se identifican como tales de manera deliberada. El resto de la información puede contrastarse en las fuentes del Punto 10.
 
@@ -416,7 +414,7 @@ Los tres renglones señalados como «Interno» o «Supuesto» constituyen estima
 
 ## Declaraciones y avisos
 
-1. Este documento tiene carácter **confidencial** y se entrega exclusivamente a sus dos destinatarios para la evaluación de la operación descrita. Contiene términos comerciales de un contrato celebrado con un tercero.
+1. Este documento tiene carácter **confidencial** y se entrega exclusivamente a su destinatario para la evaluación de la operación descrita. Contiene términos comerciales de un contrato celebrado con un tercero.
 2. **No constituye una oferta pública de valores** ni invitación al público en general. Se trata de una negociación privada entre partes determinadas.
 3. **No constituye asesoría en inversiones, fiscal ni legal.** Se recomienda su consulta con contador y abogado antes de adoptar cualquier decisión.
 4. Las proyecciones de fechas e importes se sustentan en un contrato que **a la fecha de este documento no ha sido suscrito**. Su cumplimiento depende de terceros ajenos al control de Live Streaming Services México, S.A. de C.V.
@@ -427,6 +425,6 @@ Los tres renglones señalados como «Interno» o «Supuesto» constituyen estima
 
 | | |
 |---|---|
-| **Live Streaming Services México, S.A. de C.V. / Final Upgrade** | Agosto de 2026 |
-| **Destinatarios** | Dos · Documento confidencial |
+| **Live Streaming Services México, S.A. de C.V. / Final Upgrade** | Septiembre de 2026 |
+| **Destinatario** | Uno · Documento confidencial |
 | **Contacto** | eric@finalupgrade.ai |

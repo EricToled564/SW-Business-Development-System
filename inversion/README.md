@@ -15,7 +15,7 @@ no del proyecto que se le entrega a Sports World.
 
 | Archivo | Qué es |
 |---|---|
-| `dossier-inversionistas.es.md` | Fuente de verdad del dossier. Préstamo puente de MXN $300,000 a 90 días con rendimiento del 10%, para dos prestamistas de $150,000 cada uno |
+| `dossier-inversionistas.es.md` | Fuente de verdad del dossier. Préstamo puente de MXN $200,000 a 90 días con rendimiento del 10%, para un solo prestamista; el solicitante aporta los $100,000 restantes del costo de las Semanas 1–4 |
 | `Dossier-Inversionistas-Sports-World.pdf` | El entregable. Es lo que se le manda a cada destinatario |
 | `build-dossier-pdf.js` | Pipeline propio de PDF (pdfkit), separado del del cliente |
 
