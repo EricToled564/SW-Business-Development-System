@@ -70,8 +70,8 @@ El Cuestionario de Experiencia Ideal captura las preferencias necesarias para ge
 > ☐ Mejorar mi estética corporal y definición muscular
 > ☐ Aumentar masa muscular
 > ☐ Mejorar mi desempeño atlético
-> ☐ Mejorar mi condición cardiovascular
-> ☐ Moverme mejor con opciones de bajo impacto para articulaciones
+> ☐ Mejorar mi capacidad cardiovascular
+> ☐ Moverme mejor con más agilidad
 
 **Captura y validación.** Selección múltiple; mínimo 1, máximo 2. La primera elección es el objetivo principal.
 **Uso autorizado.** Bloques de entrenamiento, clases por objetivo y argumento principal.
