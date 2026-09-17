@@ -10,9 +10,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Flotación que reduce la compresión articular y el estrés térmico"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Flotación que reduce la compresión articular y el estrés térmico"
  },
  "ACUAZUMBA": {
   "display": "Aqua Zumba",
@@ -25,9 +25,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Entorno acuático seguro; regular la velocidad de rotación de cadera"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Entorno acuático seguro; regular la velocidad de rotación de cadera"
  },
  "AE YOGA": {
   "display": "AE Yoga",
@@ -40,9 +40,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "Precaución",
-  "lesion": "No",
-  "ajuste": "Evitar torsiones profundas e inversiones no asistidas"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Evitar torsiones profundas e inversiones no asistidas"
  },
  "ASHTANGA YOGA": {
   "display": "Ashtanga Yoga",
@@ -55,9 +55,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Medio",
-  "prenatal": "Contraindicada",
-  "lesion": "Precaución",
-  "ajuste": "Fuerza isométrica severa; eleva la presión intraabdominal"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Fuerza isométrica severa; eleva la presión intraabdominal"
  },
  "BAILE DE SALON": {
   "display": "Baile de Salón",
@@ -70,9 +70,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo-Medio",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Regular la velocidad de desplazamientos y pivotes"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Regular la velocidad de desplazamientos y pivotes"
  },
  "BALL PILATES": {
   "display": "Ball Pilates",
@@ -85,9 +85,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "Precaución",
-  "lesion": "No",
-  "ajuste": "Requiere control de equilibrio para evitar caídas"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Requiere control de equilibrio para evitar caídas"
  },
  "BEAT N BIKE": {
   "display": "Beat n Bike",
@@ -100,9 +100,9 @@
    "Moverme mejor con más agilidad": "no apto"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Elevar el manubrio para evitar flexión lumbar excesiva"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Elevar el manubrio para evitar flexión lumbar excesiva"
  },
  "BELLY DANCE": {
   "display": "Belly Dance",
@@ -115,9 +115,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Evitar retroversión pélvica balística"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Evitar retroversión pélvica balística"
  },
  "BELLY DANCE FK": {
   "display": "Belly Dance FK",
@@ -130,9 +130,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Mantener la fluidez y evitar la fatiga extrema"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Mantener la fluidez y evitar la fatiga extrema"
  },
  "BODY ATTACK": {
   "display": "Body Attack",
@@ -145,9 +145,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Fuerzas de reacción del suelo elevadas por pliometría repetida"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Fuerzas de reacción del suelo elevadas por pliometría repetida"
  },
  "BODY BALANCE": {
   "display": "Body Balance",
@@ -160,9 +160,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "Precaución",
-  "lesion": "No",
-  "ajuste": "Suprimir supino tras el primer trimestre y estiramientos extremos"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Suprimir supino tras el primer trimestre y estiramientos extremos"
  },
  "BODY COMBAT": {
   "display": "Body Combat",
@@ -175,9 +175,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio-Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Precaución",
-  "ajuste": "Rotaciones pélvicas y patadas; desaconsejada en gestación"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Rotaciones pélvicas y patadas; desaconsejada en gestación"
  },
  "BODY JAM": {
   "display": "Body Jam",
@@ -190,9 +190,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Sustituir saltos por pasos pivotantes de bajo impacto"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Sustituir saltos por pasos pivotantes de bajo impacto"
  },
  "BODY PUMP": {
   "display": "Body Pump",
@@ -205,9 +205,9 @@
    "Moverme mejor con más agilidad": "no apto"
   },
   "impacto": "Bajo-Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Modificar cargas; eliminar Valsalva y trabajo en supino"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Modificar cargas; eliminar Valsalva y trabajo en supino"
  },
  "BODY STEP": {
   "display": "Body Step",
@@ -220,9 +220,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Estrés patelofemoral elevado y riesgo de tropiezo sobre el escalón"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Estrés patelofemoral elevado y riesgo de tropiezo sobre el escalón"
  },
  "BOX 1": {
   "display": "Box 1",
@@ -235,9 +235,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio-Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Precaución",
-  "ajuste": "Impactos repetitivos e inestabilidad"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Impactos repetitivos e inestabilidad"
  },
  "CORE": {
   "display": "Core",
@@ -250,9 +250,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Bajo",
-  "prenatal": "Contraindicada",
-  "lesion": "No",
-  "ajuste": "Supino e hiperpresión abdominal no indicados en gestación"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Supino e hiperpresión abdominal no indicados en gestación"
  },
  "CX WORX": {
   "display": "CX Worx",
@@ -265,9 +265,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Bajo",
-  "prenatal": "Contraindicada",
-  "lesion": "No",
-  "ajuste": "La tensión abdominal puede agravar la diástasis de rectos"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "La tensión abdominal puede agravar la diástasis de rectos"
  },
  "CYCLING": {
   "display": "Cycling",
@@ -280,9 +280,9 @@
    "Moverme mejor con más agilidad": "no apto"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Acondicionamiento aeróbico sin impacto óseo"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Acondicionamiento aeróbico sin impacto óseo"
  },
  "DANZA AEREA": {
   "display": "Danza Aérea",
@@ -295,9 +295,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Riesgo de caída, traumatismo abdominal y sobrecarga articular"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Riesgo de caída, traumatismo abdominal y sobrecarga articular"
  },
  "ECROSS": {
   "display": "eCross",
@@ -310,9 +310,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Circuitos de fuerza explosiva"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Circuitos de fuerza explosiva"
  },
  "FIT Y DANCE": {
   "display": "Fit Dance",
@@ -325,9 +325,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Cortar saltos y aceleraciones bruscas"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Cortar saltos y aceleraciones bruscas"
  },
  "FLYBOARD": {
   "display": "Flyboard",
@@ -340,9 +340,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Medio-Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Estabilización de tobillo y rodilla en plataforma inestable"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Estabilización de tobillo y rodilla en plataforma inestable"
  },
  "FULL BODY": {
   "display": "Full Body",
@@ -355,9 +355,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Autocarga; eliminar componentes pliométricos"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Autocarga; eliminar componentes pliométricos"
  },
  "FUN TRAC": {
   "display": "FunTrac",
@@ -370,9 +370,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Cambios de dirección rápidos e impacto"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Cambios de dirección rápidos e impacto"
  },
  "FUTBOL": {
   "display": "Fútbol",
@@ -385,9 +385,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Contacto, trauma directo y riesgo ligamentario"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Contacto, trauma directo y riesgo ligamentario"
  },
  "GIMNASIA DE GRUPOS": {
   "display": "Gimnasia de Grupos",
@@ -400,9 +400,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Medio-Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Giros y aceleraciones con alta demanda reactiva"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Giros y aceleraciones con alta demanda reactiva"
  },
  "GRIT DEMO": {
   "display": "GRIT",
@@ -415,9 +415,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Máximo esfuerzo con picos anaeróbicos e impacto elevado"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Máximo esfuerzo con picos anaeróbicos e impacto elevado"
  },
  "HATHA YOGA": {
   "display": "Hatha Yoga",
@@ -430,9 +430,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Ritmo pausado; usar bloques de apoyo"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Ritmo pausado; usar bloques de apoyo"
  },
  "HATHA YOGA 90": {
   "display": "Hatha Yoga 90",
@@ -445,9 +445,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "Precaución",
-  "lesion": "No",
-  "ajuste": "Controlar fatiga e hidratación en sesiones largas"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Controlar fatiga e hidratación en sesiones largas"
  },
  "INDBIKE": {
   "display": "Indoor Bike",
@@ -460,9 +460,9 @@
    "Moverme mejor con más agilidad": "no apto"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Sin fuerzas de impacto sobre el cartílago"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Sin fuerzas de impacto sobre el cartílago"
  },
  "INICIACION BALLET": {
   "display": "Iniciación Ballet",
@@ -475,9 +475,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo-Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Evitar el trabajo extremo en demi-pointe si hay inestabilidad de tobillo"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Evitar el trabajo extremo en demi-pointe si hay inestabilidad de tobillo"
  },
  "INICIACION TKD": {
   "display": "Iniciación TKD",
@@ -490,9 +490,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Patadas con pivote de rodilla y pérdida de equilibrio"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Patadas con pivote de rodilla y pérdida de equilibrio"
  },
  "INTERVAL": {
   "display": "Interval",
@@ -505,9 +505,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio-Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Microtrauma repetitivo e intensidad anaeróbica"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Microtrauma repetitivo e intensidad anaeróbica"
  },
  "INTRINITY": {
   "display": "Intrinity",
@@ -520,9 +520,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "La tabla inclinada facilita descompresión articular y estabilidad"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "La tabla inclinada facilita descompresión articular y estabilidad"
  },
  "JAZZ 90": {
   "display": "Jazz",
@@ -535,9 +535,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Adaptar saltos y caídas a movimientos en plano horizontal"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Adaptar saltos y caídas a movimientos en plano horizontal"
  },
  "KINETIC CHAIN": {
   "display": "Kinetic Chain",
@@ -550,9 +550,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo-Medio",
-  "prenatal": "Precaución",
-  "lesion": "No",
-  "ajuste": "Integración motriz; adaptar la intensidad de las cargas"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Integración motriz; adaptar la intensidad de las cargas"
  },
  "KINETIC PUMP": {
   "display": "Kinetic Pump",
@@ -565,9 +565,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Bajo",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Regular la resistencia externa y controlar la cadencia"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Regular la resistencia externa y controlar la cadencia"
  },
  "KINETICS BALL": {
   "display": "Kinetic Ball",
@@ -580,9 +580,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Trabajo propioceptivo y estabilidad central sin impacto"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Trabajo propioceptivo y estabilidad central sin impacto"
  },
  "MAT PILATES": {
   "display": "Mat Pilates",
@@ -595,9 +595,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "Precaución",
-  "lesion": "No",
-  "ajuste": "Adaptar supino a decúbito lateral desde la semana 16"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Adaptar supino a decúbito lateral desde la semana 16"
  },
  "Muro_Escalar": {
   "display": "Muro de Escalar",
@@ -610,9 +610,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Contracción isométrica máxima y riesgo de caída"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Contracción isométrica máxima y riesgo de caída"
  },
  "NATURAL MOTION": {
   "display": "Natural Motion",
@@ -625,9 +625,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo-Medio",
-  "prenatal": "Precaución",
-  "lesion": "No",
-  "ajuste": "Favorece el rango articular; controlar la extensión lumbar profunda"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Favorece el rango articular; controlar la extensión lumbar profunda"
  },
  "POUND": {
   "display": "Pound",
@@ -640,9 +640,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio",
-  "prenatal": "Contraindicada",
-  "lesion": "Precaución",
-  "ajuste": "Flexión de rodilla sostenida e impacto repetitivo"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Flexión de rodilla sostenida e impacto repetitivo"
  },
  "POWER CYCLING": {
   "display": "Power Cycling",
@@ -655,9 +655,9 @@
    "Moverme mejor con más agilidad": "no apto"
   },
   "impacto": "Bajo",
-  "prenatal": "Precaución",
-  "lesion": "No",
-  "ajuste": "Controlar la frecuencia cardiaca máxima y el sobrecalentamiento"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Controlar la frecuencia cardiaca máxima y el sobrecalentamiento"
  },
  "POWER JUMP": {
   "display": "Power Jump",
@@ -670,9 +670,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Rebote en trampolín; presión sobre el suelo pélvico"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Rebote en trampolín; presión sobre el suelo pélvico"
  },
  "RACE WALKER": {
   "display": "Race Walker",
@@ -685,9 +685,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Sin fase de vuelo; protege la articulación manteniendo el trabajo aeróbico"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Sin fase de vuelo; protege la articulación manteniendo el trabajo aeróbico"
  },
  "REFORMER PILATES": {
   "display": "Reformer Pilates",
@@ -700,9 +700,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Los resortes dosifican la carga sin compresión"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Los resortes dosifican la carga sin compresión"
  },
  "RPM": {
   "display": "RPM",
@@ -715,9 +715,9 @@
    "Moverme mejor con más agilidad": "no apto"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Pedaleo guiado; elimina el microtrauma en tren inferior"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Pedaleo guiado; elimina el microtrauma en tren inferior"
  },
  "SH BAM": {
   "display": "Sh'Bam",
@@ -730,9 +730,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Sustituir brincos por desplazamientos"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Sustituir brincos por desplazamientos"
  },
  "STEP": {
   "display": "Step",
@@ -745,9 +745,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio-Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Carga compresiva repetida sobre la articulación femorotibial"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Carga compresiva repetida sobre la articulación femorotibial"
  },
  "STRETCH": {
   "display": "Stretch",
@@ -760,9 +760,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Mantener el estiramiento dentro del rango de confort por laxitud"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Mantener el estiramiento dentro del rango de confort por laxitud"
  },
  "STRETCH FK": {
   "display": "Stretch FK",
@@ -775,9 +775,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Movilidad miofascial controlada"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Movilidad miofascial controlada"
  },
  "STRONG NATION": {
   "display": "Strong Nation",
@@ -790,9 +790,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Movimientos marciales y pliometría de alta exigencia"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Movimientos marciales y pliometría de alta exigencia"
  },
  "TOTAL BARRE": {
   "display": "Total Barre",
@@ -805,9 +805,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Trabajo isométrico en barra; fortalece sin sobrecargar"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Trabajo isométrico en barra; fortalece sin sobrecargar"
  },
  "TRAINT BOOST DEMO": {
   "display": "Traint Boost",
@@ -820,9 +820,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Formato interválico extremo"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Formato interválico extremo"
  },
  "URBAN DANCE": {
   "display": "Urban Dance",
@@ -835,9 +835,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Eliminar impactos dinámicos y caídas al suelo"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Eliminar impactos dinámicos y caídas al suelo"
  },
  "VINYASA YOGA": {
   "display": "Vinyasa Yoga",
@@ -850,9 +850,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo-Medio",
-  "prenatal": "Precaución",
-  "lesion": "No",
-  "ajuste": "Transiciones continuas; moderar la velocidad del flujo"
+  "prenatal": "no apta",
+  "bajo_impacto": "apta",
+  "motivo": "Transiciones continuas; moderar la velocidad del flujo"
  },
  "VINYASA YOGA 90": {
   "display": "Vinyasa Yoga 90",
@@ -865,9 +865,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Vigilar hidratación y agotamiento metabólico"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Vigilar hidratación y agotamiento metabólico"
  },
  "YOGA RESTAURATIVA": {
   "display": "Yoga Restaurativa",
@@ -880,9 +880,9 @@
    "Moverme mejor con más agilidad": "top3"
   },
   "impacto": "Bajo",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Apoyo con accesorios; relajación sin sobrecarga"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Apoyo con accesorios; relajación sin sobrecarga"
  },
  "ZUMBA STEP": {
   "display": "Zumba Step",
@@ -895,9 +895,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Alto",
-  "prenatal": "Contraindicada",
-  "lesion": "Contraindicada",
-  "ajuste": "Suma el impacto del step a las desaceleraciones coordinativas"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Suma el impacto del step a las desaceleraciones coordinativas"
  },
  "ZUMBA TONING": {
   "display": "Zumba Toning",
@@ -910,9 +910,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Pesas ligeras; evitar movimientos balísticos"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Pesas ligeras; evitar movimientos balísticos"
  },
  "ZUMBA FITNESS": {
   "display": "Zumba",
@@ -925,9 +925,9 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio",
-  "prenatal": "Precaución",
-  "lesion": "Precaución",
-  "ajuste": "Modificar pasos de salto; controlar giros repentinos"
+  "prenatal": "no apta",
+  "bajo_impacto": "no apta",
+  "motivo": "Modificar pasos de salto; controlar giros repentinos"
  },
  "HAWAIANO": {
   "display": "Ritmos Latinos",
@@ -940,8 +940,8 @@
    "Moverme mejor con más agilidad": "apto"
   },
   "impacto": "Medio",
-  "prenatal": "No",
-  "lesion": "No",
-  "ajuste": "Evitar giros excesivos sobre rodillas comprimidas"
+  "prenatal": "apta",
+  "bajo_impacto": "apta",
+  "motivo": "Evitar giros excesivos sobre rodillas comprimidas"
  }
 }
