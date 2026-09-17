@@ -11,6 +11,7 @@ const DOCS = [
   { src: SRC + "/indice.es.md", kind: "md", title: "Índice de documentos — Mapa y localizador", out: "13-indice-de-documentos.es.pdf" },
   { src: SRC + "/resumen.es.md", kind: "md", title: "Resumen Ejecutivo — Una nueva arquitectura digital", out: "00-resumen-ejecutivo.es.pdf" },
   { src: SRC + "/experience.es.md", kind: "md", title: "UX Architecture Specs — Arquitectura de Experiencia", out: "01-arquitectura-de-experiencia.es.pdf" },
+  { src: SRC + "/cuestionario.es.md", kind: "md", title: "Cuestionario de Experiencia Ideal — CEI-01", out: "04-cuestionario-cei-01.es.pdf" },
   { src: SRC + "/technical.es.md", kind: "md", title: "Estrategia Técnica", out: "02-estrategia-tecnica.es.pdf" },
   { src: SRC + "/execution.es.md", kind: "md", title: "Plan de Ejecución", out: "03-plan-de-ejecucion.es.pdf" },
   // Los tres documentos contractuales SÍ se generan desde su .md desde agosto de

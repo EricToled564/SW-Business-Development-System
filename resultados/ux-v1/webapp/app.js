@@ -117,6 +117,8 @@
       title: { es: "Entrenador de Ventas · demo", en: "Sales Trainer · demo" } },
     { id: "experience", type: "doc", group: "proyectoA", pdf: "01-arquitectura-de-experiencia.es.pdf",
       title: { es: "Arquitectura de Experiencia (UX)", en: "Experience Architecture (UX)" } },
+    { id: "cuestionario", type: "doc", group: "proyectoA", pdf: "04-cuestionario-cei-01.es.pdf",
+      title: { es: "Cuestionario de Experiencia Ideal (CEI-01)", en: "Ideal Experience Questionnaire (CEI-01)" } },
     { id: "technical", type: "doc", group: "proyectoA", pdf: "02-estrategia-tecnica.es.pdf",
       title: { es: "Estrategia Técnica", en: "Technical Strategy" } },
     { id: "funnel", type: "doc", group: "medicion", pdf: "32-mapa-del-funnel.es.pdf",
