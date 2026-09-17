@@ -166,10 +166,7 @@ Las horas de dedicación por rol proceden del plan de ejecución del proyecto, d
 | Reserva para contingencias | **$2,300** |
 | **Total** | **$200,000** |
 
-Dos precisiones sobre el cuadro anterior:
-
-1. **La contratación del equipo es por encargo, a precio cerrado contra entregable, y no por hora abierta.** Las horas y tarifas indicadas dimensionan el monto y corresponden a valores de mercado para perfiles de este nivel en México durante 2026.
-2. **Los recursos no se destinan a la adquisición de activos realizables.** Se aplican a honorarios profesionales. El respaldo de la operación no es un bien físico: son el derecho de cobro frente a Sports World y la obligación personal de quien avala el pagaré.
+**Los recursos no se destinan a la adquisición de activos realizables.** Se aplican a honorarios profesionales. El respaldo de la operación no es un bien físico: son el derecho de cobro frente a Sports World y la obligación personal de quien avala el pagaré.
 
 ---
 
