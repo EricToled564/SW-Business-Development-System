@@ -307,8 +307,6 @@ Versión para pantalla de teléfono:
 
 > https://erictoled564.github.io/SW-Business-Development-System/demo/movil.html
 
-> **Precisión sobre la demostración.** El cuestionario se recorre completo. La pantalla final —en la que se redacta la recomendación personalizada— requiere una credencial de acceso técnica, en razón de que cada consulta tiene un costo y la demostración se encuentra publicada de forma abierta. El instrumento puede apreciarse en funcionamiento; el resultado final se presenta en sesión, presencial o por videoconferencia.
-
 ### Documentación del proyecto
 
 La totalidad de los documentos entregados a Sports World se encuentra publicada aquí:
@@ -363,7 +361,7 @@ Sobre el paso 4: cada quince días se remite un reporte de una cuartilla con el 
 
 ---
 
-## Anexo A · Glosario
+## Anexo · Glosario
 
 | Término | Significado en este documento |
 |---|---|
@@ -385,30 +383,6 @@ Sobre el paso 4: cada quince días se remite un reporte de una cuartilla con el 
 | **Inteligencia artificial** | Programa que redacta y revisa textos y produce imágenes bajo instrucción y supervisión humana. En este proyecto permite producir 148 páginas en ocho semanas en lugar de seis meses. No adopta decisiones de negocio ni sustituye el criterio de los especialistas |
 | **CRM** | Sistema en el que el cliente administra los datos de sus prospectos y socios |
 | **Middleware** | Programa intermedio que comunica dos sistemas de distinta naturaleza |
-
----
-
-## Anexo B · Fuentes de la información
-
-| Cifra | Fuente | Verificable |
-|---|---|---|
-| $1,441,800 / $836,244 / $2,378,130 | Contrato, Cláusulas Octava y Novena | Publicado |
-| «No habrá anticipos» · 50% Semana 4 · 10 días de plazo | Contrato, Cláusula Novena | Publicado |
-| Aceptación tácita a 5 días hábiles | Contrato, Cláusula Décima | Publicado |
-| Cargo por espera de USD $350 diarios, tope del 25% | Contrato, Cláusula Décima Quinta | Publicado |
-| Interés moratorio del 2% mensual | Contrato, Cláusula Novena | Publicado |
-| Retención de entregables hasta el pago total | Contrato, Cláusula Décima Sexta | Publicado |
-| 0 de 49 páginas · –28.18% · 1.23M búsquedas · 136 enlaces rotos · 95.23% | Auditoría Semrush, marzo de 2026 | Publicado |
-| 148 páginas · 8 semanas · 5 puntos de control | Plan de Ejecución y Anexo Dos del Contrato | Publicado |
-| 15 entrevistas · 13 clubes · 157 de 200 asesores | Entrevistas de campo y taller, mayo–junio de 2026 | Publicado |
-| Horas de dedicación por rol | Plan de ejecución interno, anterior a esta solicitud | Interno, disponible a solicitud |
-| **Tarifas por hora del equipo** | **Estimación de planeación a valores de mercado 2026** | **Supuesto, no contratado** |
-| Costo de herramientas de IA ($23,140 por 8 semanas) | Modelo de costo interno a tarifas publicadas de Anthropic, julio de 2026 | Interno, disponible a solicitud |
-| CETES 91 días: 6.45% anual | Subasta de Banco de México del 20 de agosto de 2026 | Público |
-| Retención de ISR del 20% sobre intereses nominales | Artículo 135 de la Ley del Impuesto Sobre la Renta | Público |
-| Estado del contrato: entregado, en revisión, **sin firmar** | Situación al 17 de septiembre de 2026 | Declarado |
-
-Los tres renglones señalados como «Interno» o «Supuesto» constituyen estimaciones propias y no hechos verificados por un tercero. Se identifican como tales de manera deliberada. El resto de la información puede contrastarse en las fuentes del Punto 10.
 
 ---
 
