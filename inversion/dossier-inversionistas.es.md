@@ -396,5 +396,4 @@ Sobre el paso 4: cada quince días se remite un reporte de una cuartilla con el 
 | | |
 |---|---|
 | **Live Streaming Services México, S.A. de C.V. / Final Upgrade** | Septiembre de 2026 |
-| **Destinatario** | Uno · Documento confidencial |
 | **Contacto** | eric@finalupgrade.ai |
