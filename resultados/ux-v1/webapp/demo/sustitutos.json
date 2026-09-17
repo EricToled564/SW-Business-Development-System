@@ -1,0 +1,11 @@
+{
+ "apodaca": {
+  "club": "Nave 01 Apodaca",
+  "sustituto": "san-pedro",
+  "sustituto_nombre": "San Pedro",
+  "motivo": "Único club de la red sin ningún otro club dentro de diez kilómetros. No tiene alberca ni actividades para menores de 13 años, de modo que queda descartable en las simulaciones de alberca y de programa infantil. San Pedro tiene las dos y es el club más cercano.",
+  "distancia_km": 13.5,
+  "asignado": "2026-09-17",
+  "asignado_por": "Dirección Comercial"
+ }
+}
