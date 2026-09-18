@@ -30,7 +30,7 @@ Solo lo que hace falta para resolver el club. Nada más.
 | Reactivo | Para qué se le pregunta |
 |---|---|
 | **6** · Dónde prefiere entrenar | Decide si la alberca se exige como amenidad |
-| **13** · Con quién visitaría el club | Habilita la opción de actividades para niños |
+| **13** · Con quién visitaría el club | Habilita la opción de actividades para menores |
 | **14** · Preferencias | Fija los requisitos que el club debe cumplir |
 | **15** y **15b** · Cerca de qué | Fija cuál es su origen prioritario |
 | **16** · Código postal o colonia | Ubica ese origen para calcular el tiempo de traslado |
@@ -80,6 +80,6 @@ Cuando la persona declara que regresa a Sports World, el sistema localiza su mem
 
 El cuestionario **no pregunta la edad de nadie más que de quien lo responde.** Quien contesta declara sus propios objetivos.
 
-Cuando declara que entrenará con sus hijos, lo que se recoge es **el interés en las actividades para niños de 3 meses a 13 años** —un servicio del club—, nunca el nombre, la edad ni ningún dato de esos menores.
+Cuando declara que entrenará con sus hijos, lo que se recoge es **el interés en las actividades para menores de 3 meses a 13 años** —un servicio del club—, nunca el nombre, la edad ni ningún dato de esos menores.
 
 La diferencia no es de redacción. Preguntar por un servicio registra un interés comercial. Preguntar por un menor registra el dato de una persona que no está en la conversación y que no consintió nada.

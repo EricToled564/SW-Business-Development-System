@@ -25,7 +25,7 @@ Responde la pregunta que la persona trae en la cabeza al terminar de contestar.
 |---|---|
 | Encabezado | Su nombre, la frase de apertura y el argumento de por qué esa combinación le corresponde |
 | Club recomendado | El club, su tiempo de traslado y la razón por la que se le recomienda ese |
-| Beneficio familiar | Las actividades para niños del club, cuando su perfil las activa |
+| Beneficio familiar | Las actividades para menores del club, cuando su perfil las activa |
 | Otros clubes cerca | Panel que se abre a petición, con las alternativas y lo que le falta a cada una |
 | Tarjetas de resumen | Cuatro cajas con lo esencial de su perfil |
 | Botón de avance | **Agendar visita guiada** |
@@ -50,7 +50,7 @@ Cambiar siempre está permitido, y cambiar nunca deja un hueco: si algo que ten�
 
 ### 3.2.4 Las banderas existen para elegir, y desaparecen al elegir
 
-Mientras la persona elige club, cada alternativa lleva **su bandera y la leyenda concreta de lo que le falta**. Hay una leyenda por requisito, y se muestran todas las que apliquen: «No tiene alberca» · «No tiene actividades para niños de hasta 13 años» · «No tiene clases adecuadas para periodos prenatal o posparto» · «No tiene clases de bajo impacto». Cuando la persona aceptó una clase al abrir, hay una leyenda más, que nombra esa clase. Esa información es lo que le permite elegir sabiendo.
+Mientras la persona elige club, cada alternativa lleva **su bandera y la leyenda concreta de lo que le falta**. Hay una leyenda por requisito, y se muestran todas las que apliquen: «No tiene alberca» · «No tiene actividades para menores de 13 años» · «No tiene clases adecuadas para periodos prenatal o posparto» · «No tiene clases de bajo impacto». Cuando la persona aceptó una clase al abrir, hay una leyenda más, que nombra esa clase. Esa información es lo que le permite elegir sabiendo.
 
 **En cuanto elige, las banderas desaparecen.** Su plan se recompone contra el club que eligió y queda completo: si ese club no tiene alberca, su plan no lleva alberca, lleva los tres bloques en piso seco. No queda nada faltante, y por lo tanto no hay nada que señalar.
 

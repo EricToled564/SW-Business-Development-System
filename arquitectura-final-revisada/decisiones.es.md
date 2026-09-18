@@ -23,11 +23,11 @@ La decisión tiene dos mitades, y confundirlas fue el error de la versión 1.1 d
 | Caso | Qué se escribe | Ejemplo |
 |---|---|---|
 | El español tiene una palabra que nombra a la persona sin declarar su género | Se usa esa palabra | «Con una amistad», «Con mi pareja» —nunca esposo ni esposa— |
-| El español no la tiene | Se usa el plural masculino, que ya las incluye | «Con mis hijos», «Actividades para niños de 3 meses a 13 años» |
+| El español no la tiene | Se usa el plural masculino, que ya las incluye | «Con mis hijos», «Actividades para menores de 3 meses a 13 años» |
 
 **Queda prohibida toda marca tipográfica de inclusión:** arroba, equis, vocal entre paréntesis y doble terminación separada por barra. Tampoco se fuerzan dobletes: «con mis hijas o hijos» es la misma gimnasia que la barra, con otras palabras.
 
-Reformulaciones aplicadas al instrumento: el reactivo 12 recupera sus tres versiones; el reactivo 13 dice «Con una amistad», «Con mi pareja», «Con mis hijos»; el reactivo 14 y el control de lógica dicen «actividades para niños de 3 meses a 13 años».
+Reformulaciones aplicadas al instrumento: el reactivo 12 recupera sus tres versiones; el reactivo 13 dice «Con una amistad», «Con mi pareja», «Con mis hijos»; el reactivo 14 y el control de lógica dicen «actividades para menores de 3 meses a 13 años».
 
 **Fuera de la Arquitectura:** CEI-01 pasa a **versión 1.2**, que corrige la 1.1. La 1.1 había sustituido las tres versiones por una sola redacción neutral y con eso había suprimido la concordancia; también había forzado dobletes en terceros.
 

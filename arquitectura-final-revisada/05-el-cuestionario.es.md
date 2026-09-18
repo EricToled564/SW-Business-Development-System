@@ -102,7 +102,7 @@ Una persona contesta, por lo tanto, **entre 16 y 19 preguntas**: la compuerta, l
 | **9** | Cuál es su nivel | El orden de las clases. Nunca funciona como diagnóstico |
 | **10** | Cuál describe mejor su experiencia reciente | El contexto comercial y la preparación del recorrido. No incluye opción para quien tiene membresía activa |
 | **12** | Si prefiere entrenar sin compañía o clases en grupo | Qué ocupa el tercer bloque. Dos opciones, sin tercera vía |
-| **13** | Con quién visitaría el club | La preparación de la visita, y activa la opción infantil del reactivo 14 |
+| **13** | Con quién visitaría el club | La preparación de la visita, y activa la opción para menores del reactivo 14 |
 | **14** | Qué preferencia quiere que se priorice | Los requisitos que el club debe cumplir, y la matriz de contraindicaciones |
 | **15** | Si busca cerca del domicilio, de la oficina o de ambos | Su origen prioritario, y el interés en Multiclub cuando responde «ambos» |
 | **16** | Cuál es el código postal o la colonia de ese origen | Ubica el origen para recomendar club y calcular tiempos de traslado |
@@ -140,7 +140,7 @@ El instrumento **no recaba condiciones médicas, embarazo o posparto, tratamient
 
 La razón es de fondo, no de estilo. La ley clasifica los datos de salud como sensibles y exige para ellos consentimiento expreso y por escrito, con firma. **Un cuestionario de un minuto, aplicado por conversación, no puede satisfacer ese estándar**, y la sanción por incumplimiento se duplica tratándose de datos sensibles.
 
-La decisión no degrada la recomendación, porque **el sistema no necesita la condición: necesita la preferencia.** El reactivo 14 recoge lo que la persona quiere que se priorice —programas de bajo impacto, programas prenatales o de posparto, actividades para niños— y eso es lo que el seleccionador de clases usa. Quien prefiere bajo impacto recibe exactamente la misma selección, sin que Sports World asuma la custodia de un dato sensible ni la responsabilidad clínica que lo acompaña.
+La decisión no degrada la recomendación, porque **el sistema no necesita la condición: necesita la preferencia.** El reactivo 14 recoge lo que la persona quiere que se priorice —programas de bajo impacto, programas prenatales o de posparto, actividades para menores— y eso es lo que el seleccionador de clases usa. Quien prefiere bajo impacto recibe exactamente la misma selección, sin que Sports World asuma la custodia de un dato sensible ni la responsabilidad clínica que lo acompaña.
 
 El mismo criterio rige el reactivo 13: pregunta por el interés en un servicio, nunca por el estado que lo motiva.
 
