@@ -15,7 +15,7 @@ Una página que no responde a una búsqueda real no tiene por qué existir. Los 
 | **03** · Amenidades | 10 | «Gimnasio con alberca», «con vapor», «con sauna» |
 | **04** · Clases premium | 7 | La disciplina buscada por su nombre, en su versión de marca |
 | **05** · Clases | 47 | «Yoga cerca de mí», y así con cada disciplina del catálogo |
-| **06** · Actividades infantiles | 1 | «Gimnasio con actividades para niños» |
+| **06** · Actividades para menores | 1 | «Gimnasio con actividades para menores de 13 años» |
 | **07** · Perfiles | 5 | Quien se reconoce en un perfil antes que en un objetivo |
 | **08** · Bajar de peso | 1 | «Gimnasio para perder peso», la intención de mayor volumen |
 | **09** · Entrenamiento personal | 1 | «Entrenador personal cerca de mí» |
@@ -23,6 +23,20 @@ Una página que no responde a una búsqueda real no tiene por qué existir. Los 
 | **11** · Blog | 20 | Quien todavía no sabe que Sports World es una opción |
 
 **148 páginas.**
+
+### 2.1.1 La intención es el objetivo de la página, no un dato que el sistema reciba
+
+La columna de la tabla dice **para qué se escribió cada página**: la intención que se busca atender y contra la que se compite en los buscadores. **No es un dato que llegue al sistema.**
+
+**Google no entrega el término que la persona tecleó.** Lo único que el sistema conoce es **en qué página aterrizó**, y las que visitó después. De ahí, y solo de ahí, sale todo lo que este capítulo llama conocimiento previo:
+
+| Lo que el sistema sabe | Lo que el sistema no sabe |
+|---|---|
+| La página de aterrizaje y el recorrido posterior | El término de búsqueda que la trajo |
+| Que llegó a la página de yoga de Polanco | Si escribió «yoga cerca de mí» o «clases de yoga Polanco» |
+| La ficha de la campaña, cuando viene de una | La consulta original, incluso en campaña |
+
+La distinción no es un tecnicismo: **la precarga se construye sobre la página, no sobre la búsqueda.** El apartado 2.4 dice qué precarga cada nivel, y el capítulo 5 especifica el mecanismo.
 
 ## 2.2 Cómo los niveles responden a los tres bloqueadores
 
@@ -102,7 +116,7 @@ La página desde la que tocó el botón no se pierde: es lo que el sistema ya sa
 | 03 · Alberca | Entrenamiento acuático | Dos opciones |
 | 03 · Otras amenidades | Esa amenidad | Dos opciones |
 | 04 y 05 · Clases | Esa clase | Sí o no |
-| 06 · Actividades infantiles | Esa preferencia | Sí o no |
+| 06 · Actividades para menores | Esa preferencia | Sí o no |
 | 07 · Perfiles | El objetivo del perfil | Sí o no |
 | 08 · Bajar de peso | Ese objetivo | Sí o no |
 | 09 · Entrenamiento personal | Nada: ya se propone a todas las personas | Sin bloque |
@@ -146,7 +160,7 @@ Dentro de un mismo reactivo, hay opciones que se muestran solo bajo su condició
 |---|---|
 | Programas de bajo impacto | Siempre |
 | Programas prenatales o de posparto | Solo si eligió lenguaje femenino |
-| Actividades para niños de 3 meses a 13 años | Solo si declaró que visitaría el club con sus hijos, o con su familia |
+| Actividades para menores de 3 meses a 13 años | Solo si declaró que visitaría el club con sus hijos, o con su familia |
 | Ninguna de las anteriores | Siempre, y es excluyente |
 
 Por eso ese reactivo va después del de acompañamiento: necesita saber con quién visitaría el club para decidir qué opciones ofrecerle.
@@ -180,7 +194,7 @@ El primer reactivo que cambia la pantalla no es el de objetivos: es el **reactiv
 | Caso | Qué se escribe | Ejemplo |
 |---|---|---|
 | El español tiene una palabra que nombra a la persona sin declarar su género | Se usa esa palabra | «Con una amistad», «Con mi pareja» —nunca esposo ni esposa— |
-| El español no la tiene | Se usa el plural masculino, que ya las incluye | «Con mis hijos», «Actividades para niños» |
+| El español no la tiene | Se usa el plural masculino, que ya las incluye | «Con mis hijos», «Actividades para menores de 3 meses a 13 años» |
 
 Conjugar estas opciones sería un error visible: un hombre con dos hijas vería «Con mis hijos» por ser hombre, y una mujer con un hijo vería «Con mis hijas» por ser mujer. Y forzar el doblete —«Con mis hijas o hijos»— es la misma gimnasia que la barra, con otras palabras.
 
