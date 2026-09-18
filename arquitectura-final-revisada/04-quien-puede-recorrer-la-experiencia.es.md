@@ -1,10 +1,10 @@
-# Capítulo 3 · Quién puede recorrer la experiencia
+# Capítulo 4 · Quién puede recorrer la experiencia
 
 La experiencia ideal está dirigida a **personas mayores de edad que no tienen membresía activa en Sports World**. Las dos condiciones se verifican antes de cualquier otra cosa, y ninguna se infiere: se preguntan.
 
-A nadie se le cierra la puerta. Quien no cumple la primera condición recibe una ruta distinta, más corta, que el apartado 3.2 especifica.
+A nadie se le cierra la puerta. Quien no cumple la primera condición recibe una ruta distinta, más corta, que el apartado 4.2 especifica.
 
-## 3.1 La compuerta de mayoría de edad
+## 4.1 La compuerta de mayoría de edad
 
 El cuestionario abre con una compuerta. **Nada se muestra antes que ella.**
 
@@ -15,35 +15,35 @@ La compuerta no personaliza nada: no entra al plan, no llega al brief y no influ
 | Respuesta | Qué ocurre |
 |---|---|
 | **Sí** | La experiencia ideal completa, que es lo que el resto de este documento especifica |
-| **No** | La ruta reducida del apartado 3.2 |
+| **No** | La ruta reducida del apartado 4.2 |
 
-## 3.2 La ruta reducida
+## 4.2 La ruta reducida
 
 Cuando alguien no confirma la mayoría de edad, **el flujo no se corta: cambia de ruta.** El sistema le ayuda a encontrar su club, y lo hace **sin pedirle un solo dato personal.**
 
-### 3.2.1 Qué se le pregunta
+### 4.2.1 Qué se le pregunta
 
 Solo lo que hace falta para resolver el club. Nada más.
 
-**El bloque de precarga sí se muestra**, con las mismas reglas del apartado 4.2. No pide ningún dato personal: confirma una intención que el contexto previo ya mostró, y sirve para entregarle un club que imparta lo que venía buscando. Es exactamente para lo que existe esta ruta.
+**El bloque de precarga sí se muestra**, con las mismas reglas del apartado 5.2. No pide ningún dato personal: confirma una intención que el contexto previo ya mostró, y sirve para entregarle un club que imparta lo que venía buscando. Es exactamente para lo que existe esta ruta.
 
 | Reactivo | Para qué se le pregunta |
 |---|---|
 | **6** · Dónde prefiere entrenar | Decide si la alberca se exige como amenidad |
-| **13** · Con quién visitaría el club | Habilita la opción de actividades para menores |
+| **13** · Con quién visitaría el club | Habilita la opción de actividades para niños |
 | **14** · Preferencias | Fija los requisitos que el club debe cumplir |
 | **15** y **15b** · Cerca de qué | Fija cuál es su origen prioritario |
 | **16** · Código postal o colonia | Ubica ese origen para calcular el tiempo de traslado |
 
 **No se le pregunta su nombre, ni su apellido, ni su teléfono, ni su correo.** Tampoco su objetivo, su ritmo ni su nivel: esos tres alimentan el plan de entrenamiento, y en esta ruta no hay plan.
 
-### 3.2.2 Qué recibe
+### 4.2.2 Qué recibe
 
 El club que le corresponde, con lo necesario para llegar: **nombre, dirección y tiempo de traslado.** Y una línea que le dice cómo inscribirse: con la firma de su tutor, en el club.
 
-La selección del club corre con las mismas reglas del capítulo 8: los mismos requisitos, el mismo radio, la misma medición en minutos. Lo que cambia no es cómo se elige el club, sino qué se entrega después.
+La selección del club corre con las mismas reglas del capítulo 9: los mismos requisitos, el mismo radio, la misma medición en minutos. Lo que cambia no es cómo se elige el club, sino qué se entrega después.
 
-### 3.2.3 Qué no recibe, y qué no se guarda
+### 4.2.3 Qué no recibe, y qué no se guarda
 
 **No recibe** experiencia ideal, ni bloques de entrenamiento, ni clases, ni brief, ni cita agendada. No hay nada que enviarle por correo, porque no se le pidió un correo.
 
@@ -51,13 +51,13 @@ La selección del club corre con las mismas reglas del capítulo 8: los mismos r
 
 Es la ruta con la menor exposición posible: se le entrega algo útil y no se le toma nada.
 
-## 3.3 De catorce a diecisiete años
+## 4.3 De catorce a diecisiete años
 
 Quien tiene entre catorce y diecisiete años **entrena como adulto**: mismo catálogo de clases, mismas áreas y la misma experiencia ideal. La edad no recorta lo que se le puede recomendar.
 
 Lo que cambia no es el entrenamiento: es la contratación.
 
-## 3.4 La contratación de una persona menor de edad
+## 4.4 La contratación de una persona menor de edad
 
 **Requiere la firma de su tutor y se realiza únicamente en el club. Nunca en línea.**
 
@@ -65,7 +65,7 @@ El sitio no contrata a personas menores de edad, y esa es la razón de las dos r
 
 Las autorizaciones presenciales las administra Sports World.
 
-## 3.5 Solo para quien no tiene membresía activa
+## 4.5 Solo para quien no tiene membresía activa
 
 La experiencia ideal es un instrumento de captación. Se dirige a quien todavía no es parte de Sports World.
 
@@ -76,10 +76,10 @@ De ahí salen dos reglas que el cuestionario cumple siempre:
 
 Cuando la persona declara que regresa a Sports World, el sistema localiza su membresía anterior antes de la visita y el brief lo señala. La conversación del asesor no arranca como venta nueva.
 
-## 3.6 Los datos de personas menores de edad no se recogen
+## 4.6 Los datos de personas menores de edad no se recogen
 
 El cuestionario **no pregunta la edad de nadie más que de quien lo responde.** Quien contesta declara sus propios objetivos.
 
-Cuando declara que entrenará con sus hijas o hijos, lo que se recoge es **el interés en las actividades para menores de 3 meses a 13 años** —un servicio del club—, nunca el nombre, la edad ni ningún dato de esos menores.
+Cuando declara que entrenará con sus hijos, lo que se recoge es **el interés en las actividades para niños de 3 meses a 13 años** —un servicio del club—, nunca el nombre, la edad ni ningún dato de esos menores.
 
 La diferencia no es de redacción. Preguntar por un servicio registra un interés comercial. Preguntar por un menor registra el dato de una persona que no está en la conversación y que no consintió nada.

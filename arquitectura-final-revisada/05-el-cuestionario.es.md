@@ -1,8 +1,8 @@
-# Capítulo 4 · El cuestionario: el único instrumento
+# Capítulo 5 · El cuestionario: el único instrumento
 
 Toda la personalización de la experiencia ideal sale de un solo instrumento: el **Cuestionario de Experiencia Ideal**. No hay una segunda fuente. Nada de lo que el sistema recomienda proviene de un dato que el cuestionario no haya recogido.
 
-## 4.1 Rol y propósito
+## 5.1 Rol y propósito
 
 El cuestionario tiene un trabajo y solo uno: **recoger lo necesario para construir la experiencia ideal de esa persona**, en alrededor de un minuto de su tiempo.
 
@@ -10,15 +10,15 @@ Tres reglas lo gobiernan, y no admiten excepción por canal:
 
 1. **Es el mismo en los tres canales.** Las preguntas, las opciones, las validaciones, las ramificaciones y los identificadores son idénticos en el sitio, en WhatsApp y en consola. BES no lo altera: lo aplica en conversación.
 2. **Es la única fuente de personalización.** Ninguna regla de este documento se dispara con un dato que no salga de aquí.
-3. **No recoge información de salud.** Ni diagnósticos, ni lesiones, ni embarazo, ni tratamientos, ni medicamentos, ni cirugías, ni peso, estatura o medidas corporales. El apartado 4.7 explica por qué.
+3. **No recoge información de salud.** Ni diagnósticos, ni lesiones, ni embarazo, ni tratamientos, ni medicamentos, ni cirugías, ni peso, estatura o medidas corporales. El apartado 5.7 explica por qué.
 
-## 4.2 Lo que ya sabemos no se vuelve a preguntar
+## 5.2 Lo que ya sabemos no se vuelve a preguntar
 
 **A la persona no se le pregunta dos veces lo mismo.** Lo que el sistema ya sabe antes de que empiece el cuestionario no se le pregunta: se le confirma, en un solo bloque, antes del primer reactivo.
 
 Ese bloque se llama **P0 · Precarga**, y se declara dentro del instrumento. No es un reactivo: no lleva número, no personaliza por sí mismo y su contenido cambia en cada sesión.
 
-### 4.2.1 De dónde sale lo que ya sabemos
+### 5.2.1 De dónde sale lo que ya sabemos
 
 | Canal | Conocimiento previo | Cuando no hay contexto |
 |---|---|---|
@@ -26,7 +26,7 @@ Ese bloque se llama **P0 · Precarga**, y se declara dentro del instrumento. No 
 | **WhatsApp** | Lo que la campaña que la trajo declara que promueve | Mensaje directo: sin bloque |
 | **Consola** | El club donde la persona está parada, que se da por dado | Sin bloque. El club no se pregunta |
 
-### 4.2.2 Las cuatro categorías y las dos formas
+### 5.2.2 Las cuatro categorías y las dos formas
 
 Solo cuatro cosas pueden precargarse, y cada una tiene una forma fija de preguntarse:
 
@@ -41,7 +41,7 @@ Solo cuatro cosas pueden precargarse, y cada una tiene una forma fija de pregunt
 
 Por eso una clase no lleva «o te recomendamos»: el sistema va a recomendar clases de cualquier forma, y ofrecerlo sería ofrecer lo que ya va a ocurrir. Y por eso un club sí la lleva: si no toma ese club, alguien tiene que elegir uno.
 
-### 4.2.3 Cómo se compone el bloque
+### 5.2.3 Cómo se compone el bloque
 
 **El bloque nunca ofrece algo que el sistema ya sabe que no puede entregar.** Antes de mostrarlo, cada punto candidato se verifica contra la instantánea del día. El que no se pueda cumplir no se muestra, y **no se menciona, no se explica y no deja rastro**.
 
@@ -58,7 +58,7 @@ Cuando el contexto revela varias páginas de la misma familia, producen **un sol
 
 **El bloque se compone una sola vez y se muestra una sola vez**, antes del primer reactivo y después de la compuerta de mayoría de edad. No se recompone con las respuestas que la persona dé dentro de él.
 
-### 4.2.4 Qué hace aceptar y qué hace rechazar
+### 5.2.4 Qué hace aceptar y qué hace rechazar
 
 | | Efecto |
 |---|---|
@@ -74,25 +74,25 @@ Aceptar un club apaga el resolver de club, no el reactivo 16: el código postal 
 | **Con club fijado** | La clase queda asegurada en su tercer bloque. No agrega requisito: el club ya estaba fijo y ya se verificó que la imparte |
 | **Sin club fijado** | **La clase se vuelve requisito del club.** El resolver solo considera clubes que la impartan. Si el más cercano no la imparte, ofrece el más cercano que sí, y muestra como alternativas los clubes más cercanos que no la tienen, cada uno con su leyenda |
 
-Ese segundo caso agrega **un quinto requisito** a los cuatro que el cuestionario fija, y es el único que no viene del cuestionario sino del contexto previo. El capítulo 8 especifica cómo entra en la elección de club y qué leyenda lleva la alternativa que no imparte esa clase.
+Ese segundo caso agrega **un quinto requisito** a los cuatro que el cuestionario fija, y es el único que no viene del cuestionario sino del contexto previo. El capítulo 9 especifica cómo entra en la elección de club y qué leyenda lleva la alternativa que no imparte esa clase.
 
-## 4.3 Cómo se compone el cuestionario
+## 5.3 Cómo se compone el cuestionario
 
 | Elemento | Cuántos | Cuándo se pregunta |
 |---|---|---|
-| **G0** · Compuerta de mayoría de edad | 1 | Siempre, antes que nada. El capítulo 3 la especifica |
-| **P0** · Precarga | 1 bloque | Cuando hay contexto previo. Apartado 4.2 |
+| **G0** · Compuerta de mayoría de edad | 1 | Siempre, antes que nada. El capítulo 4 la especifica |
+| **P0** · Precarga | 1 bloque | Cuando hay contexto previo. Apartado 5.2 |
 | **Reactivos base** | 15 | Siempre, en el mismo orden |
 | **Reactivos condicionales** | 3 | Solo si una respuesta previa los dispara |
 
 Una persona contesta, por lo tanto, **entre 16 y 19 preguntas**: la compuerta, los quince reactivos base y de cero a tres condicionales.
 
-## 4.4 Los quince reactivos base
+## 5.4 Los quince reactivos base
 
 | № | Qué pregunta | Qué determina |
 |---|---|---|
 | **1** | Cómo se llama | El saludo y la redacción de su experiencia. No pide apellido |
-| **2** | Cómo prefiere que se dirijan a ella | La concordancia gramatical del texto. Condiciona la opción prenatal del reactivo 14. Nunca se usa para asignar asesor ni para inferir nada |
+| **2** | Cómo prefiere que se dirijan a ella | **La concordancia de las opciones y del texto**, en sus tres formas: masculina, femenina y neutral (apartado 2.6.4). Condiciona la opción prenatal del reactivo 14. Nunca se usa para asignar asesor ni para inferir nada |
 | **3** | Qué quiere sentir al salir del club | El tono con que se redacta su experiencia. No cambia el club |
 | **4** | Qué busca | Los bloques de entrenamiento, las clases por objetivo y el argumento principal |
 | **5** | Qué ritmo va con ella | Criterio de selección de clases, junto con el objetivo y el nivel. También viaja al brief |
@@ -109,7 +109,7 @@ Una persona contesta, por lo tanto, **entre 16 y 19 preguntas**: la compuerta, l
 
 El número 11 no aparece en esta lista porque es condicional.
 
-## 4.5 Los tres reactivos condicionales
+## 5.5 Los tres reactivos condicionales
 
 | № | Se pregunta cuando | Qué determina |
 |---|---|---|
@@ -117,7 +117,7 @@ El número 11 no aparece en esta lista porque es condicional.
 | **11** | El reactivo 10 es alguna de las dos opciones de regreso después de una pausa | Cuánto duró la pausa. Ajusta la preparación de la visita, sin inferir estado físico |
 | **15b** | El reactivo 15 es «ambos» | Cuál de los dos orígenes es el prioritario. El interés en Multiclub sigue activo sin capturar una segunda ubicación |
 
-## 4.6 Las dos preguntas que cambian la estructura
+## 5.6 Las dos preguntas que cambian la estructura
 
 Trece reactivos ajustan parámetros. Dos cambian la forma de la recomendación:
 
@@ -132,23 +132,23 @@ Trece reactivos ajustan parámetros. Dos cambian la forma de la recomendación:
 | Ambas | El catálogo se mantiene en piso seco, y el sistema **integra de forma proactiva** natación individual y clases acuáticas que sirvan al objetivo declarado. La alberca **no** se exige como amenidad |
 | Quiero que me recomienden | El sistema resuelve la modalidad según el objetivo principal |
 
-El capítulo 9 especifica cómo se compone el plan en cada modalidad.
+El capítulo 10 especifica cómo se compone el plan en cada modalidad.
 
-## 4.7 Qué no pregunta el cuestionario, y por qué
+## 5.7 Qué no pregunta el cuestionario, y por qué
 
 El instrumento **no recaba condiciones médicas, embarazo o posparto, tratamientos, medicamentos, cirugías, peso, estatura, medidas corporales ni datos de personas menores de edad.**
 
 La razón es de fondo, no de estilo. La ley clasifica los datos de salud como sensibles y exige para ellos consentimiento expreso y por escrito, con firma. **Un cuestionario de un minuto, aplicado por conversación, no puede satisfacer ese estándar**, y la sanción por incumplimiento se duplica tratándose de datos sensibles.
 
-La decisión no degrada la recomendación, porque **el sistema no necesita la condición: necesita la preferencia.** El reactivo 14 recoge lo que la persona quiere que se priorice —programas de bajo impacto, programas prenatales o de posparto, actividades para menores— y eso es lo que el seleccionador de clases usa. Quien prefiere bajo impacto recibe exactamente la misma selección, sin que Sports World asuma la custodia de un dato sensible ni la responsabilidad clínica que lo acompaña.
+La decisión no degrada la recomendación, porque **el sistema no necesita la condición: necesita la preferencia.** El reactivo 14 recoge lo que la persona quiere que se priorice —programas de bajo impacto, programas prenatales o de posparto, actividades para niños— y eso es lo que el seleccionador de clases usa. Quien prefiere bajo impacto recibe exactamente la misma selección, sin que Sports World asuma la custodia de un dato sensible ni la responsabilidad clínica que lo acompaña.
 
 El mismo criterio rige el reactivo 13: pregunta por el interés en un servicio, nunca por el estado que lo motiva.
 
-La valoración de salud corresponde al profesional del club, en el momento del alta, con el consentimiento y el formato que ese acto sí permite. El capítulo 10 especifica cómo se aplica la matriz de contraindicaciones en los dos momentos.
+La valoración de salud corresponde al profesional del club, en el momento del alta, con el consentimiento y el formato que ese acto sí permite. El capítulo 11 especifica cómo se aplica la matriz de contraindicaciones en los dos momentos.
 
 **La experiencia ideal tampoco ofrece** acompañamiento nutricional, planes alimenticios, dietas ni recomendaciones de nutrición.
 
-## 4.8 Las señales que viajan al brief
+## 5.8 Las señales que viajan al brief
 
 Algunas respuestas no cambian el plan: cambian cómo el asesor conduce la conversación. El sistema las levanta y las pone en el brief.
 

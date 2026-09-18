@@ -8,7 +8,7 @@ Esta parte explica el problema que el sistema resuelve y qué producto entrega. 
 
 Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente. Este proyecto no agrega infraestructura: la vuelve legible, y con eso, vendible.
 
-*Las cifras de volumen de búsqueda de este capítulo provienen de la Auditoría inicial del sitio. El apartado 12 nombra todas las fuentes de datos del sistema y el contrato que cada una cumple.*
+*Las cifras de volumen de búsqueda de este capítulo provienen de la Auditoría inicial del sitio. El capítulo 13 nombra todas las fuentes de datos del sistema y el contrato que cada una cumple.*
 
 ## 1.1 La brecha entre lo que Sports World tiene y lo que se alcanza a ver
 
@@ -95,7 +95,7 @@ Este documento especifica el comportamiento de la experiencia ideal **en el cana
 
 **Cuándo entra una persona de Sports World.** BES atiende. Alguien del equipo interviene solo por escalación, en horario de oficina, cuando BES no puede responder algo o cuando la persona lo pide de forma expresa. Fuera de horario, el pendiente se registra y no detiene el agendado.
 
-El capítulo 6 especifica cómo se pasa del recorrido autónomo a BES y de regreso.
+El capítulo 7 especifica cómo se pasa del recorrido autónomo a BES y de regreso.
 
 ## 1.4 Qué convierte este documento
 
