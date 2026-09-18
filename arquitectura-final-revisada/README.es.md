@@ -13,9 +13,10 @@ Reescritura completa del documento **Arquitectura de la Experiencia**, con los 6
 | `02-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | Capítulo 2 | Aprobado |
 | `03-quien-puede-recorrer-la-experiencia.es.md` | Capítulo 3 | Aprobado |
 | `04-el-cuestionario.es.md` | Capítulo 4 | Aprobado |
+| `05-los-objetivos-de-la-persona.es.md` | Capítulo 5 | Aprobado |
 | `VERIFICACION.es.md` | Hash de cada capítulo, para comprobar que no cambió | Vigente |
 
-Faltan los capítulos 5 al 16 y los anexos A al E.
+Faltan los capítulos 6 al 16 y los anexos A al E.
 
 ## El instrumento
 

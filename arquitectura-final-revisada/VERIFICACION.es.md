@@ -10,6 +10,7 @@ Para comprobar que un archivo no cambió: `sha256sum <archivo>` y comparar contr
 | `02-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,457 | `d07af0e19139c559b405a12656d7f5442870772cdfa39b564670493341f6317e` |
 | `03-quien-puede-recorrer-la-experiencia.es.md` | 946 | `db4e737635a74affb01e9d6e7c8a262437ef0692ede24bac2645c566cda50758` |
 | `04-el-cuestionario.es.md` | 2,230 | `f31d7c89a56203e80447b02f59f826b4aad0b9e93548df90a8df581aa05ea6f6` |
+| `05-los-objetivos-de-la-persona.es.md` | 851 | `3072596b00435a743e70df117837e5e91d750aa4ad71b5dea52204bc81209023` |
 | `README.es.md` | 210 | `6d0679a6182abee3d46298b999bee0d98a6dbe101103409aaf97b018f87c5372` |
 | `decisiones.es.md` | 1,604 | `a8950468fc5be95ed4f6beb522a1966a94c0a5ea55b3872e14105c974ea70d14` |
 
@@ -21,5 +22,6 @@ Para comprobar que un archivo no cambió: `sha256sum <archivo>` y comparar contr
 | 2 | Sí | Las leyendas dejan de ser cuatro fijas; se quitó la cifra de requisitos | Eric |
 | 3 | Sí | La precarga se muestra en la ruta reducida | Eric |
 | 4 | Sí | La clase aceptada sin club se vuelve requisito, en 4.2.3 y 4.2.4 | Eric |
+| 5 | Sí | Sin cambios desde su aprobación | — |
 
-Desde esta fecha, cada capítulo se sube en el momento de su aprobación y todo cambio posterior queda como commit propio.
+Desde el capítulo 5, cada capítulo se sube en el momento de su aprobación y todo cambio posterior queda como commit propio.
