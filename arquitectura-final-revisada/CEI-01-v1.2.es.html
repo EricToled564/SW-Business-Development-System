@@ -60,7 +60,7 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <li>Las preguntas, opciones, validaciones, ramificaciones e identificadores <b>son iguales en todos los canales</b>.</li>
 <li>Los identificadores Q17, Q18 y Q19 están retirados y reservados; no se reutilizan.</li>
 <li><b>La forma de trato elegida en Q2 gobierna la concordancia</b>, tanto de las opciones como del texto que el sistema redacta. <b>Alcanza únicamente a las palabras que se refieren a la persona que contesta:</b> cada una de ellas existe en tres versiones —masculina, femenina y neutral— y la persona ve solo la suya. La versión neutral es <b>una frase que vale para cualquiera</b>, como «entrenar sin compañía».</li>
-<li><b>Lo que se refiere a otras personas se escribe con gramática española correcta, y no se conjuga con la forma de trato de quien contesta.</b> El género de esas personas ni se conoce ni se pregunta. Cuando el español tiene una palabra que las nombra sin declarar su género, se usa esa palabra: <b>una amistad</b>, <b>mi pareja</b> —nunca esposo ni esposa—. Cuando no la tiene, se usa el plural masculino, que en español ya las incluye: <b>mis hijos</b>, <b>actividades para niños</b>. No se fuerzan dobletes.</li>
+<li><b>Lo que se refiere a otras personas se escribe con gramática española correcta, y no se conjuga con la forma de trato de quien contesta.</b> El género de esas personas ni se conoce ni se pregunta. Cuando el español tiene una palabra que las nombra sin declarar su género, se usa esa palabra: <b>una amistad</b>, <b>mi pareja</b> —nunca esposo ni esposa—. Cuando no la tiene, se usa el plural masculino, que en español ya las incluye: <b>mis hijos</b>, <b>actividades para menores de 3 meses a 13 años</b>. No se fuerzan dobletes.</li>
 <li><b>Queda prohibida toda marca tipográfica de inclusión:</b> arroba, equis, vocal entre paréntesis y doble terminación separada por barra.</li>
 <li><b>Al terminar el cuestionario, mientras el sistema procesa, se piden el apellido, el teléfono y el correo.</b> Los tres son obligatorios en todos los canales: sirven para enviarle su Experiencia Ideal, para encabezar el brief del asesor con su nombre completo y para que quede registrada como prospecto aunque no agende nada. En WhatsApp se piden el apellido y el correo, porque el número viene del canal. Si no los entrega, puede ver su experiencia en pantalla y no se escribe ningún registro.</li>
 <li><b>Entregados los datos, y una sola vez, se le pregunta si desea agendar una visita.</b> Si no desea, su registro queda con la bandera «no quiso agendar visita», que es una marca de estado y no una instrucción de no contactar.</li>
@@ -191,13 +191,13 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <p class="pregunta">¿Con quién nos visitarías en el club?</p>
 <ul class="opts"><li>Por mi cuenta</li><li>Con una amistad</li><li>Con mi pareja</li><li>Con mis hijos</li><li>Con mi familia</li></ul>
 <p class="rule"><b>Captura y validación.</b> Selección única obligatoria.</p>
-<p class="rule"><b>Uso autorizado.</b> Preparación de la visita y activación de la preferencia infantil cuando corresponda.</p>
+<p class="rule"><b>Uso autorizado.</b> Preparación de la visita y activación de la preferencia de actividades para menores cuando corresponda.</p>
 </div>
 
 <div class="q">
 <div class="qid">Q14</div>
 <p class="pregunta">¿Hay alguna preferencia que quieras que prioricemos?</p>
-<ul class="opts"><li>Programas de bajo impacto</li><li>Programas prenatales o de posparto <i>(condicional)</i></li><li>Actividades para niños de 3 meses a 13 años <i>(condicional)</i></li><li>Ninguna de las anteriores</li></ul>
+<ul class="opts"><li>Programas de bajo impacto</li><li>Programas prenatales o de posparto <i>(condicional)</i></li><li>Actividades para menores de 3 meses a 13 años <i>(condicional)</i></li><li>Ninguna de las anteriores</li></ul>
 <p class="rule"><b>Captura y validación.</b> Selección múltiple obligatoria; mínimo 1. «Ninguna de las anteriores» es excluyente. Q14 aparece después de Q13 para aplicar su opción condicional.</p>
 <p class="rule"><b>Uso autorizado.</b> Preferencias declaradas. <b>No se infieren diagnósticos, embarazo ni datos de menores.</b></p>
 </div>
@@ -205,13 +205,13 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <h3>Opciones dinámicas de Q14</h3>
 <ul>
 <li>«Programas prenatales o de posparto» se muestra <b>solo si Q2 es «Femenino»</b>.</li>
-<li>«Actividades para niños de 3 meses a 13 años» se muestra <b>solo si Q13 es «Con mis hijos» o «Con mi familia»</b>.</li>
+<li>«Actividades para menores de 3 meses a 13 años» se muestra <b>solo si Q13 es «Con mis hijos» o «Con mi familia»</b>.</li>
 </ul>
 
 <h3>Cada preferencia declarada es requisito en la elección del club</h3>
 <table>
 <tr><th style="width:44%">Preferencia declarada</th><th>El club debe tener</th></tr>
-<tr><td>Actividades para niños de 3 meses a 13 años</td><td>actividades para niños de hasta 13 años</td></tr>
+<tr><td>Actividades para menores de 3 meses a 13 años</td><td>actividades para menores de 13 años</td></tr>
 <tr><td>Programas prenatales o de posparto</td><td>clases adecuadas para esos periodos, para cada uno de los objetivos de la persona</td></tr>
 <tr><td>Programas de bajo impacto</td><td>clases de bajo impacto, para cada uno de los objetivos de la persona</td></tr>
 </table>
@@ -261,8 +261,8 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <tr><td><b>Prospectos</b></td><td>Nunca mostrar «Entreno actualmente en Sports World». Quien tuvo membresía antes solo aparece como regreso después de una pausa</td></tr>
 <tr><td><b>Otro gimnasio</b></td><td>Preguntar el gimnasio actual</td></tr>
 <tr><td><b>Regreso de una pausa</b></td><td>Preguntar el último gimnasio y la duración de la pausa</td></tr>
-<tr><td><b>Preferencias</b></td><td>Siempre: bajo impacto o ninguna. Prenatal o posparto solo con lenguaje femenino. Actividades para niños solo después de declarar hijos o familia</td></tr>
-<tr><td><b>Niños</b></td><td>Cualquier actividad infantil verificada del club satisface la preferencia de actividades infantiles</td></tr>
+<tr><td><b>Preferencias</b></td><td>Siempre: bajo impacto o ninguna. Prenatal o posparto solo con lenguaje femenino. Actividades para menores solo después de declarar hijos o familia</td></tr>
+<tr><td><b>Menores</b></td><td>Cualquier actividad para menores verificada del club satisface la preferencia de actividades para menores</td></tr>
 <tr><td><b>Clubes</b></td><td>La elección de club exige <b>las amenidades elegidas, las preferencias declaradas y al menos una clase elegible para cada objetivo en la intensidad declarada</b>. Días y horarios solo generan alerta; no descartan clubes. <b>La condición de las clases se cumple en todos los clubes por diseño del programa</b>: los objetivos se definieron conforme a la oferta mínima de clases por club, y el cruce de los seis objetivos contra los tres grados de intensidad deja al menos una clase en cada una de las dieciocho combinaciones, en los cuarenta y nueve clubes. En los hechos, lo que decide la elección son las amenidades y las preferencias</td></tr>
 <tr><td><b>Cercanía</b></td><td>Se mide en minutos de traslado con tráfico <b>a la hora pico</b>, nunca en kilómetros y nunca a la hora declarada: no se puede saber si la persona entrenará a esa hora. El tiempo se muestra siempre como <b>«máx X minutos»</b></td></tr>
 <tr><td><b>Ubicación</b></td><td>Capturar un solo código postal o colonia del origen prioritario. Nunca pedir dos ubicaciones ni una dirección completa</td></tr>
@@ -282,7 +282,7 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <h2>7 · Registro de cambios</h2>
 <table>
 <tr><th style="width:70px">Versión</th><th>Qué cambió</th></tr>
-<tr><td>1.2</td><td><b>Concordancia.</b> Las opciones que se refieren a la persona que contesta se presentan en la versión que corresponde a su forma de trato: masculina, femenina o neutral. La versión neutral es una frase, nunca una marca tipográfica. Las opciones que se refieren a terceros se escriben con gramática española correcta y no se conjugan, porque su género ni se conoce ni se pregunta: «una amistad» y «mi pareja» cuando el español tiene la palabra, «mis hijos» y «niños» cuando no la tiene. Corrige la versión 1.1, que había sustituido las tres formas por una sola redacción neutral y con eso había suprimido la concordancia.</td></tr>
+<tr><td>1.2</td><td><b>Concordancia.</b> Las opciones que se refieren a la persona que contesta se presentan en la versión que corresponde a su forma de trato: masculina, femenina o neutral. La versión neutral es una frase, nunca una marca tipográfica. Las opciones que se refieren a terceros se escriben con gramática española correcta y no se conjugan, porque su género ni se conoce ni se pregunta: «una amistad» y «mi pareja» cuando el español tiene la palabra, «mis hijos» y «actividades para menores» cuando no la tiene. Corrige la versión 1.1, que había sustituido las tres formas por una sola redacción neutral y con eso había suprimido la concordancia.</td></tr>
 <tr><td>1.1</td><td><b>Apellido.</b> Se pide en la captura de contacto, junto con el teléfono y el correo, en todos los canales; en WhatsApp, apellido y correo. Se precisa en Q1 que la prohibición de pedir apellido alcanza solo a ese reactivo. Se abre el apartado 4, Captura de contacto, con los tres campos y su validación, y se agrega el renglón «Contacto» al control de lógica.<br><br><b>Lenguaje neutro.</b> Se retira de todo el instrumento cualquier palabra que obligue a declinar por género, y con ella las marcas tipográficas que se usaban para evitarlo. La reformulación alcanza al enunciado y a la opción de Q12, a dos opciones de Q13, a una opción de Q14 y a los renglones del control de lógica que hablaban de menores.</td></tr>
 <tr><td>1.0</td><td>Versión inicial del instrumento.</td></tr>
 </table>
