@@ -60,13 +60,19 @@ El **menú contextual** es el conjunto de botones de acción que aparecen dentro
 
 ### 2.3.1 Los tres estados de la persona
 
+**Los tres estados describen a la persona dentro de una sesión, no a lo largo del tiempo.**
+
 | Estado | Qué significa |
 |---|---|
-| **Sin cuestionario** | Todavía no lo ha completado |
+| **Sin cuestionario** | Todavía no lo ha completado en esta sesión |
 | **Completo, dentro del flujo** | Lo completó y llegó a esta página con un botón desde su propio resultado |
-| **Completo, fuera del flujo** | Lo completó antes, pero llegó por otra vía: una búsqueda externa o la navegación del sitio |
+| **Completo, fuera del flujo** | Lo completó en esta misma sesión, **no agendó** y se puso a navegar: llegó a esta página por la navegación del sitio o por una búsqueda |
 
 La distinción entre los dos últimos importa: a quien viene desde su experiencia no hay que ofrecerle volver a ella, y a quien llegó de fuera, sí.
+
+**En cuanto la persona sale, el estado muere.** Al volver es, para el sitio, alguien sin cuestionario, y si lo quiere vuelve a contestarlo. No hay reconocimiento entre visitas, no hay cuenta y no se guarda nada en su navegador salvo el identificador de sesión del capítulo 7, que muere con ella.
+
+Eso acota el tercer estado a lo que de verdad puede ocurrir: **se llega a él navegando después de recibir la experiencia, nunca volviendo días después.**
 
 ### 2.3.2 Los botones, y cuándo aparece cada uno
 
