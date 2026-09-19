@@ -140,40 +140,66 @@ Ninguna página del sitio es un destino final. Todas conducen al mismo lugar, y 
 
 > **La persona no ve menús: ve recomendaciones.**
 
-El **menú contextual** es el conjunto de botones de acción que aparecen dentro del cuerpo de cada página. No es fijo: cambia según **tres factores** —en qué punto del cuestionario va, en qué tipo de página está, y si ya tiene un club identificado—.
+El **menú contextual** es el conjunto de botones de acción que aparecen dentro del cuerpo de cada página. No es fijo: cambia según **tres factores** —en qué punto va la persona, en qué tipo de página está, y si ya tiene un club identificado—.
 
 ### 2.4.1 Los tres estados de la persona
 
-**Los tres estados describen a la persona dentro de una sesión, no a lo largo del tiempo.**
+**Los tres estados describen a la persona dentro de una sesión, no a lo largo del tiempo.** Lo que los separa es **hasta dónde llegó**, no por qué puerta entró a la página.
 
-| Estado | Qué significa |
+| Estado | Qué significa | Qué se le ofrece |
+|---|---|---|
+| **E1 · Sin cuestionario** | Todavía no lo ha completado en esta sesión | **Siempre se le incentiva a crear su experiencia ideal** |
+| **E2 · Completo, sin agendar** | Ya lo completó y todavía no agenda | **Dos botones:** volver a su experiencia ideal, y agendar su visita |
+| **E3 · Completo y agendado** | Ya lo completó y ya agendó | **Un botón:** volver a su experiencia ideal |
+
+**En E2 da igual cómo llegó a la página** —tocando un botón dentro de su experiencia o navegando por su cuenta—: ve los mismos dos botones.
+
+**En cuanto la persona sale, el estado muere.** Al volver es, para el sitio, alguien sin cuestionario. El capítulo 7 especifica qué persiste y qué no.
+
+### 2.4.2 Los botones, y la condición que los enciende
+
+Los tres botones de estado no son los únicos. El menú contextual se compone de tres capas:
+
+| Capa | Botones |
 |---|---|
-| **Sin cuestionario** | Todavía no lo ha completado en esta sesión |
-| **Completo, dentro del flujo** | Lo completó y llegó a esta página con un botón desde su propio resultado |
-| **Completo, fuera del flujo** | Lo completó en esta misma sesión, no agendó y se puso a navegar |
+| **Los de estado** | Diseña tu experiencia · Volver a tu experiencia ideal · Agenda tu visita guiada |
+| **Los de club** | Tu Club ideal · Otros clubes… |
+| **Los propios de la página** | Artículos o información útil · Clases FitKidz disponibles · Tu rutina individual |
 
-A quien viene desde su experiencia no se le ofrece volver a ella; a quien llegó de fuera, sí. **En cuanto la persona sale, el estado muere:** al volver es, para el sitio, alguien sin cuestionario. El capítulo 7 especifica qué persiste y qué no.
-
-### 2.4.2 Los botones, y cuándo aparece cada uno
-
-| Botón | Cuándo aparece |
-|---|---|
-| **Agenda tu visita guiada** | **Siempre.** En toda página y en todo estado. Es la acción de conversión del sitio |
-| **Diseña tu experiencia** | Mientras el cuestionario esté incompleto. Después lo sustituye «Volver a tu experiencia ideal» |
-| **Volver a tu experiencia ideal** | Cuando ya lo completó y llegó fuera de su flujo |
-| **Tu Club ideal** | En páginas que no son de un club. Al tocarlo se le pide la zona; si el sitio ya la dedujo de las páginas que visitó, la muestra prellenada |
-| **Otros clubes…** | Solo en la página de un club, según cuántos clubes tenga esa ciudad |
-| **Artículos o información útil** | Solo si hay al menos un artículo del blog etiquetado para esa página. Si no lo hay, no aparece |
+| Botón | Qué hace | Cuándo aparece |
+|---|---|---|
+| **Diseña tu experiencia** | Abre el cuestionario | **En E1, siempre.** En E2 y E3 lo sustituye «Volver a tu experiencia ideal» |
+| **Volver a tu experiencia ideal** | Regresa a su resultado | **En E2 y E3, siempre** |
+| **Agenda tu visita guiada** | Abre el agendado | **En E1 y E2, siempre y en toda página.** Es la acción de conversión del sitio. En E3 no se ofrece en el cuerpo: la persona ya agendó |
+| **Tu Club ideal** | Pide su origen prioritario y su ubicación, y resuelve su club | En páginas que **no** son de un club, mientras no tenga club identificado. Si el sitio ya dedujo la zona de las páginas que visitó, la muestra prellenada |
+| **Otros clubes…** | Muestra las alternativas | **Solo en la página de un club**, y según el tamaño de la ciudad |
+| **Artículos o información útil** | Abre los artículos del blog ligados a esa página | Solo si hay al menos un artículo etiquetado para ella. Si no lo hay, no aparece |
+| **Clases FitKidz disponibles** | Muestra las actividades de ese club con sus horarios | Solo en FitKidz, y solo con club identificado |
+| **Tu rutina individual** | Sustituye al bloque de clases recomendadas | Solo en las tres modalidades de entrenamiento individual |
 
 **Agenda tu visita guiada** y **Pregúntale a BES** viven además en el encabezado, permanentes, y no se duplican en el cuerpo.
 
-### 2.4.3 Resumen por estado
+### 2.4.3 La matriz completa
 
-| Estado | Qué botones lleva el cuerpo de la página |
-|---|---|
-| **Sin cuestionario** | Tu Club ideal, cuando aplica · Diseña tu experiencia · Agenda tu visita guiada · Artículos, si hay · los propios de la página |
-| **Completo, dentro del flujo** | Solo los propios de la página |
-| **Completo, fuera del flujo** | Volver a tu experiencia ideal · Artículos, si hay · los propios de la página |
+Lo que ve la persona en el cuerpo de cada página, por estado. **Agenda tu visita guiada** se omite de las celdas de E1 y E2 porque está en todas.
+
+| Tipo de página | E1 · Sin cuestionario | E2 · Completo, sin agendar | E3 · Completo y agendado |
+|---|---|---|---|
+| **Inicio** | Tu Club ideal, si hay zona · Diseña tu experiencia | Volver a tu experiencia ideal | Volver a tu experiencia ideal |
+| **Club** · ciudad de 1 club | Diseña tu experiencia | Volver a tu experiencia ideal | Volver a tu experiencia ideal |
+| **Club** · ciudad de 2 o 3 clubes | Diseña tu experiencia · Otros clubes en tu ciudad | Volver a tu experiencia ideal · Otros clubes en tu ciudad | Volver a tu experiencia ideal · Otros clubes en tu ciudad |
+| **Club** · ciudad de más de 3 | Diseña tu experiencia · Otros clubes en el área | Volver a tu experiencia ideal · Otros clubes en el área | Volver a tu experiencia ideal · Otros clubes en el área |
+| **Hub de amenidad** | Tu Club ideal · Diseña tu experiencia | Volver a tu experiencia ideal | Volver a tu experiencia ideal |
+| **Clase premium** y **clase individual** | Tu Club ideal, si no hay club · Diseña tu experiencia | Volver a tu experiencia ideal | Volver a tu experiencia ideal |
+| **Entrenamiento individual** · pesas, aeróbico, acuático | Diseña tu experiencia | Volver a tu experiencia ideal · **Tu rutina individual** | Volver a tu experiencia ideal · **Tu rutina individual** |
+| **FitKidz** | Tu Club ideal, si no hay club · Diseña tu experiencia · **Clases FitKidz disponibles**, si hay club · **hasta tres clubes propuestos** | Volver a tu experiencia ideal · **Clases FitKidz disponibles** · **clubes propuestos** | Volver a tu experiencia ideal · **Clases FitKidz disponibles** · **clubes propuestos** |
+| **Hub de perfil** | Artículos, si hay · Tu Club ideal, si no hay club · Diseña tu experiencia | Volver a tu experiencia ideal · Artículos, si hay | Volver a tu experiencia ideal · Artículos, si hay |
+| **Bajar de peso** | **Artículos, siempre** · Tu Club ideal, si no hay club · Diseña tu experiencia | Volver a tu experiencia ideal · **Artículos** | Volver a tu experiencia ideal · **Artículos** |
+| **Entrenamiento personal** | Artículos, si hay · Tu Club ideal, si no hay club · Diseña tu experiencia | Volver a tu experiencia ideal · Artículos, si hay | Volver a tu experiencia ideal · Artículos, si hay |
+| **Membresías** | Tu Club ideal, si no hay club · Diseña tu experiencia | Volver a tu experiencia ideal | Volver a tu experiencia ideal |
+| **Blog** | Diseña tu experiencia | Volver a tu experiencia ideal | Volver a tu experiencia ideal |
+
+**Bajar de peso es la única página donde «Artículos o información útil» aparece siempre**, porque siempre tiene artículos etiquetados.
 
 ### 2.4.4 Otros clubes: depende del tamaño de la ciudad
 
@@ -181,18 +207,16 @@ A quien viene desde su experiencia no se le ofrece volver a ella; a quien llegó
 |---|---|---|
 | **Un solo club** | No aparece | — |
 | **Dos o tres clubes** | «Otros clubes en tu ciudad» | Los demás clubes de la ciudad |
-| **Más de tres clubes** | «Otros clubes en el área» | Los que están a 10 km, y ofrece buscar cerca de otra zona |
+| **Más de tres clubes** | «Otros clubes en el área» | Los que están a 10 km del club actual, y ofrece buscar cerca de otra ubicación: casa, trabajo, escuela u otra |
 
-Cuando la persona no tiene club ni zona, en una ciudad grande el botón se convierte en **Tu Club ideal** y le pide su ubicación.
+La Zona Metropolitana del Valle de México concentra **32 de los 49 clubes**, así que es donde el tercer caso aplica casi siempre.
+
+Cuando la persona no tiene club ni zona, en una ciudad de más de tres clubes el botón se convierte en **Tu Club ideal** y le pide su ubicación.
 
 ### 2.4.5 Los botones propios de dos páginas
 
-Dos tipos de página llevan botones que no existen en ningún otro:
-
-- **FitKidz** · **«Clases FitKidz disponibles»**, que aparece solo si ya hay un club identificado y muestra las actividades de ese club con sus horarios. Sin club identificado no aparece: cada club ofrece un subconjunto distinto de las 34 actividades. Lleva además hasta tres clubes propuestos, cada uno con tres acciones: ver el club, agendar la visita y ver las clases disponibles para su familia.
+- **FitKidz** · **«Clases FitKidz disponibles»** aparece solo con club identificado, y muestra las actividades de ese club con sus horarios. Sin club no aparece: cada club ofrece un subconjunto distinto de las 34 actividades. Lleva además **hasta tres clubes propuestos**, cada uno con tres acciones: ver el club, agendar la visita con ese club preseleccionado, y ver las clases disponibles para su familia.
 - **Las tres modalidades de entrenamiento individual** —pesas, aeróbico y acuático— · su bloque de clases recomendadas se llama **«Tu rutina individual»**.
-
----
 
 ## 2.5 Qué se lleva consigo al cuestionario
 
