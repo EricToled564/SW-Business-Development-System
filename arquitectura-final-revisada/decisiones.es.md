@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-56. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-58. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -161,7 +161,7 @@ Nada de lo que la persona responde se guarda en su navegador: lo único que se g
 
 **Sustituye** la regla anterior de «sin cookies».
 
-**Aterriza en:** capítulos 2.3.1, 7.5.1 y 8.
+**Aterriza en:** capítulos 2.4 —cuando se redacte—, 7.5.1 y 8.
 **Abierto, fuera de la Arquitectura:** el texto del aviso simplificado y si procede consentimiento previo, que corresponde a Legal.
 
 ---
@@ -199,13 +199,13 @@ Las remisiones internas de los capítulos ya aprobados se actualizaron en el mis
 
 La especificación de los menús contextuales **ya existía** en el depósito, repartida en tres lugares: `ux-spec-experiencia-ideal.md` §4.2 (los tres estados de usuario) y §6.4 (las matrices por tipo de página), `contenido-minimo-por-tipo-de-pagina.es.md` (las etiquetas exactas de cada botón) y el §3 del documento original de Arquitectura (la ramificación condicional y el resolvedor dinámico). El capítulo 2 **las consolida**, no las sustituye.
 
-**Aterriza en:** capítulo 2.3 y 2.6. **Alcanza también a la Parte II**, que prescribirá el comportamiento de esos menús.
+**Aterriza en:** capítulo 2.4, cuando se redacte. **Alcanza también a la Parte II**, que prescribirá el comportamiento de esos menús.
 
 ### D-53 · El límite de dos objetivos es vivo
 
 Mientras la persona no toque «Siguiente», puede cambiar de objetivos con entera libertad: quitar uno y poner otro cuantas veces quiera. El límite de dos no bloquea la pantalla, ordena la selección. **El orden en que los elige se conserva y significa algo:** el primero es su objetivo principal.
 
-**Aterriza en:** capítulo 2.6.3 y capítulo 6.
+**Aterriza en:** capítulos 5.7.3 y 6.
 
 ### D-54 · El botón de agendar abre el cuestionario con un preámbulo
 
@@ -225,7 +225,7 @@ Los tres estados que gobiernan el menú contextual —sin cuestionario, completo
 
 **En cuanto la persona sale, el registro de sesión muere.** Al volver es, para el sitio, alguien sin cuestionario, y si lo quiere vuelve a contestarlo. No hay reconocimiento entre visitas, no hay cuenta y no se guarda nada en su navegador salvo el identificador de D-48, que muere con la sesión.
 
-**Aterriza en:** capítulos 2.3.1 y 7.5.
+**Aterriza en:** capítulos 2.4 —cuando se redacte— y 7.5.
 
 ### D-56 · Al reencontrarse: el prospecto se actualiza, su experiencia se reemplaza
 
@@ -243,6 +243,33 @@ Una persona que ya está registrada —por ejemplo con la bandera «no quiso age
 **El borrado no deja hueco en la medición.** Las etapas de la espina del funnel no cuentan registros guardados, cuentan eventos en el momento en que ocurren: E2 cuenta al responderse la primera pregunta y **E3 cuenta cuando se genera la experiencia ideal**, no cuando se consulta después. Rehacer el cuestionario dispara un E2 y un E3 nuevos, que quedan registrados aunque el documento anterior se borre.
 
 **Aterriza en:** capítulos 8, 13 y 15.
+
+### D-57 · El capítulo 2 se reescribe, y su material se reubica
+
+El texto que se había escrito para el capítulo 2 describía el inventario de páginas, los botones y el comportamiento del cuestionario. **Ninguna de esas tres cosas es el objeto del capítulo**, que es cómo el contenido del sitio capta la atención y lleva a la persona a construir su experiencia ideal.
+
+**La estructura del capítulo queda aprobada** en seis apartados: por qué existe cada página · qué encuentra la persona al llegar · por qué ese contenido la mueve a construir su experiencia · cómo se le lleva · qué se lleva consigo al cuestionario · el blog.
+
+El contenido de los apartados 2.2 y 2.3 sale de la **sección 5 de `contenido-minimo-por-tipo-de-pagina.es.md`**, que especifica el contenido mínimo de los once tipos de página. El texto retirado usó la sección 4 de ese documento —la de los botones— y nunca la 5.
+
+**El material correcto se reubicó:**
+
+| Qué | Dónde quedó |
+|---|---|
+| Los menús dinámicos del cuestionario | Capítulo **5.7**, «Cómo se comporta el cuestionario en pantalla» |
+| Que Google no entrega el término de búsqueda, y que solo se conoce la página de aterrizaje | Capítulo **5.2.1**, donde se especifica de dónde sale el conocimiento previo |
+
+**Aterriza en:** capítulos 2 y 5.
+
+### D-58 · Los documentos no llevan notas sobre su propia edición
+
+El texto explica qué hace el sistema, no por qué se redactó de una manera u otra. **Quedan fuera** las justificaciones de la decisión editorial, las comparaciones con versiones anteriores del documento y las instrucciones a quien redacta.
+
+Se retiraron en esta pasada: el apartado 7.5.3, «Por qué está escrito así», y las notas que acompañaban a la regla de concordancia y a la regla del «Siguiente».
+
+La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está en la tabla, no persiste» se queda, porque es una regla; «por eso este apartado no enuncia un principio» se va, porque habla del documento.
+
+**Aterriza en:** todos los capítulos.
 
 ---
 
