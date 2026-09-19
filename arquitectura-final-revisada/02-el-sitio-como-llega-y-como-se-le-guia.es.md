@@ -166,7 +166,7 @@ Y las cuatro ranuras se reetiquetan así:
 
 | Ranura | **E1** · Sin cuestionario | **E2** · Completo, sin agendar | **E3** · Completo y agendado |
 |---|---|---|---|
-| **1 · El club** | Encuentra tu club ideal | Tu club ideal | Tu club ideal |
+| **1 · El club** | Encuentra tu club ideal | Tu club ideal · en la página de un club, **Conoce nuestros clubes** | Igual que E2 |
 | **2 · La experiencia** | Diseña tu experiencia | Volver a tu experiencia ideal | Volver a tu experiencia ideal |
 | **3 · El objetivo** | ¿Cuál es tu objetivo? | Las clases para tu objetivo | Las clases para tu objetivo |
 | **4 · La visita** | Agenda tu visita | Agenda tu visita | Tu visita agendada |
@@ -192,15 +192,30 @@ El capítulo 5 especifica el bloque completo.
 
 ### 2.4.4 La ranura del club: qué dice y cuándo
 
-| Dónde está la persona | Qué tiene resuelto | Qué dice la ranura 1 |
-|---|---|---|
-| Una página que no es de club | Nada | **Encuentra tu club ideal** — abre el cuestionario |
-| Una página que no es de club | Ya tiene club | **Tu club ideal** — lleva a su club |
-| **Página de un club** · la ciudad tiene un solo club | — | **Nada.** No hay alternativas que ofrecer |
-| **Página de un club** · la ciudad tiene dos o tres | — | **Otros clubes en tu ciudad** |
-| **Página de un club** · la ciudad tiene más de tres, **y hay al menos otro club en un radio de 10 km** | — | **Otros clubes en tu área** |
+**Antes del cuestionario**, la ranura resuelve un club o, si la persona ya está en uno, ofrece las alternativas cercanas.
 
-La Zona Metropolitana del Valle de México concentra **32 de los 49 clubes**, así que es donde el último caso aplica casi siempre.
+| Dónde está la persona | Qué dice la ranura 1 |
+|---|---|
+| Una página que no es de club | **Encuentra tu club ideal** — abre el cuestionario |
+| **Página de un club** · la ciudad tiene un solo club | **Nada.** No hay alternativas que ofrecer |
+| **Página de un club** · la ciudad tiene dos o tres | **Otros clubes en tu ciudad** |
+| **Página de un club** · la ciudad tiene más de tres, y hay al menos otro club en un radio de 10 km | **Otros clubes en tu área** |
+
+**Una vez que hay un club ideal resuelto** —estados E2 y E3—, la ranura cambia de trabajo: ya no busca, **abre la red completa**.
+
+En cualquier página que no sea de club, dice **Tu club ideal** y lleva al suyo. **En la página de un club dice «Conoce nuestros clubes»**, y al entrar la persona encuentra una jerarquía que depende de dónde está su club ideal:
+
+| Qué hay alrededor del club ideal | Qué opciones se le presentan |
+|---|---|
+| **Un solo club en su ciudad** | **Conoce todos nuestros clubes en la República** |
+| **Más de un club en su ciudad, pero ninguno en un radio de 5 km del club ideal** | **Conoce otros clubes en tu ciudad** · **Conoce todos nuestros clubes en la República** |
+| **Al menos un club en un radio de 5 km del club ideal** | **Conoce otros clubes en tu zona** · **Conoce otros clubes en tu ciudad** · **Conoce todos nuestros clubes en la República** |
+
+**La jerarquía va de lo cercano a lo lejano y nunca al revés**, y ningún nivel se muestra vacío: si no hay clubes en la zona, ese nivel no aparece; si solo hay un club en la ciudad, tampoco aparece el de la ciudad.
+
+**El centro de la medida es el club ideal**, no el club de la página. Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite, que es donde va a entrenar.
+
+La Zona Metropolitana del Valle de México concentra **32 de los 49 clubes**, así que es donde la jerarquía de tres niveles aplica casi siempre.
 
 ### 2.4.5 La ranura del objetivo
 
@@ -236,8 +251,10 @@ La ranura 1 no ofrece encontrar un club: ofrece alternativas al que la persona e
 | Estado | Menú contextual |
 |---|---|
 | **E1** | Otros clubes en tu ciudad **o** en tu área, según el caso · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
-| **E2** | Otros clubes… · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
-| **E3** | Otros clubes… · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
+| **E2** | **Conoce nuestros clubes** · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
+| **E3** | **Conoce nuestros clubes** · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
+
+**«Conoce nuestros clubes» abre la jerarquía de tres niveles del apartado 2.4.4** —zona, ciudad, República—, medida desde el club ideal de la persona y no desde el club de la página.
 
 ### 2.5.3 Amenidad
 
