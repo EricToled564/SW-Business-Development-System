@@ -10,16 +10,16 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 |---|---|---|
 | `00-estructura.es.md` | 1,136 | `c787f993d84804ce1fb64db3164d09aa050a11d3702122727d90c8ccd97328e6` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
-| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 3,111 | `2a912461df387bb7aca0fac4cedc73cf0d9787ba83356762b21e5bda6bdcadb9` |
+| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 3,190 | `0c9ca0e1dc3d4ecb7d35daec886cc90e18f59b2e13d6974b0ee22a3064a4b8c1` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,457 | `a2bfea38908d746687c79e0131cf7bd68a980592c97db2eee07f5f7636669c37` |
 | `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
-| `05-el-cuestionario.es.md` | 3,140 | `053b75bd9dda9443902898ba5ff207561bfd46601267c2c62c17fc369d1525f4` |
+| `05-el-cuestionario.es.md` | 3,226 | `38fa1d020edcb946e0b0c2aa3d98407152748225b5f8a66e7a815b3ea0767ba0` |
 | `06-los-objetivos-de-la-persona.es.md` | 851 | `40a94d5e73e711c2fa585c1dfe838fb53939c8aa025f98aa544a43de58d338c6` |
 | `07-el-recorrido-en-pantalla.es.md` | 2,056 | `ad956c49733c82a45c2463c1fef34d7d9fabd039eb01d3542aa39401f78d44dd` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `README.es.md` | 334 | `017dc103bf6cfe1bf8f6956fc0fa69d32484f52ba6b8757540faa24a90d43066` |
-| `decisiones.es.md` | 3,270 | `198db3ce80409fbe961e0a7bbe55ed83cf5a04ada179c20da62cef5f3c7da1b0` |
+| `decisiones.es.md` | 3,485 | `18b90de7ec464fd20bf650cbc20de88b92aec03d8a731b2634312c637025a5b6` |
 
 ## Estado de aprobación
 
@@ -43,6 +43,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | El servicio para menores | Se llama **«actividades para menores de 3 meses a 13 años»** en los seis archivos. Desaparecen «actividades para niños» y «actividades infantiles» |
 | `decisiones.es.md` | D-33 reescrita; se agregan D-51 a D-54; todas las remisiones pasan a la numeración vigente |
 | `00-estructura.es.md` | Nuevo. El índice completo deja de vivir solo en la conversación |
+| La contingencia | **D-59.** Nunca se le hace difícil la vida a la persona: ante la disyuntiva entre pedirle algo más y continuar el proceso sin mentirle avisando al asesor, se elige siempre lo segundo. Primera aplicación: cuando el CRM no responde, la página sigue con el último dato guardado y la bandera viaja al brief |
 | Capítulo 2 | **Reescrito completo** sobre la estructura aprobada: por qué existe cada página · qué encuentra la persona al llegar · por qué ese contenido la mueve a construir su experiencia · cómo se le lleva · qué se lleva al cuestionario · el blog. Los once niveles suman 148, verificado |
 | Capítulo 2 y capítulo 5 | **D-57.** El texto del capítulo 2 se retiró y su material correcto pasó al capítulo 5: los menús dinámicos del cuestionario al nuevo apartado **5.7**, y lo que el sistema sabe de la navegación al **5.2.1**. El archivo del capítulo 2 conserva la estructura aprobada y dice a dónde fue cada cosa |
 | Las notas de edición | **D-58.** Se retiró el apartado 7.5.3, «Por qué está escrito así», y las notas que justificaban la redacción de la regla de concordancia y de la regla del «Siguiente». Las reglas del sistema se conservaron |
