@@ -121,7 +121,16 @@ El recorrido no pide iniciar sesión. No hay cuenta, no hay contraseña y no se 
 
 **Nada de lo que la persona responde vive en su navegador.** Ni las respuestas del cuestionario, ni los bloques calculados, ni el texto redactado, ni el brief, ni la cita.
 
-Lo único que el sitio guarda de su lado es **un identificador de sesión propio, aleatorio y vacío**, cuyo único trabajo es atar entre sí las páginas que visita, para el bloque de precarga del capítulo 5. No lleva ningún dato suyo, **se descarta en cuanto el cuestionario abre** y nunca llega a su registro.
+Lo único que el sitio guarda de su lado es **un identificador de sesión propio, aleatorio y vacío**, cuyo trabajo es atar entre sí las páginas que visita. No lleva ningún dato suyo y **nunca llega a su registro.**
+
+Hace dos cosas, una antes del cuestionario y otra después:
+
+| Cuándo | Para qué sirve |
+|---|---|
+| **Antes del cuestionario** | Alimenta el bloque de precarga del capítulo 5: las páginas que visitó son lo que el sistema ya sabe de ella |
+| **Después de entregada la experiencia** | Sostiene el estado «completo, fuera del flujo» del capítulo 2: si no agenda y se pone a navegar, el sitio sigue reconociéndola como alguien que ya tiene su experiencia |
+
+**Vive toda la sesión y muere cuando la persona sale.** Al volver empieza de cero: es, para el sitio, alguien sin cuestionario.
 
 Ningún pixel de analítica se dispara antes de la fase 3.
 
@@ -132,6 +141,8 @@ Ningún pixel de analítica se dispara antes de la fase 3.
 | Antes de entregar sus datos de contacto | **Nada.** Cerrar la pestaña descarta todo, y hay que empezar de nuevo |
 | Al entregar sus datos | Se crea la copia de seguridad del registro, en la base ligada al sistema de clientes por número de identificación |
 | A partir de ahí | Cerrar la sesión ya no pierde el registro: dispara su escritura con la bandera «no quiso agendar visita» |
+
+**La experiencia ideal no vive en el sistema de clientes.** Vive en una base propia, ligada al registro del prospecto por su identificador. Eso importa para el reencuentro: **si la persona vuelve otro día y rehace su cuestionario, su registro de prospecto se actualiza —no se duplica— y su experiencia anterior se elimina por completo y se reemplaza por la última.** Una persona, un registro, una experiencia vigente. El capítulo 8 especifica la conciliación y el capítulo 13 el contrato de esa base.
 
 ### 7.5.3 Por qué está escrito así
 
