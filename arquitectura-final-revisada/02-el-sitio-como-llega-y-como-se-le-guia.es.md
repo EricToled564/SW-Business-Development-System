@@ -76,7 +76,11 @@ Los tres elementos de en medio del encabezado —diseñar, preguntar, agendar—
 
 **Lo que cambia todos los días no se escribe en la página: se trae del CRM.** Horarios de atención, datos de contacto, catálogo de clases, horarios de cada clase, planes, precios, descuentos y promociones. El gestor de contenidos no los edita.
 
-**Si el CRM no responde, la página muestra el último dato guardado y le pide a la persona que confirme por teléfono.** Nunca muestra un hueco ni un horario inventado. El corte diario de las 06:00, hora de la Ciudad de México, fija qué versión de esos datos está publicada; el capítulo 13 especifica el contrato de cada fuente.
+**Si el CRM no responde, la página sigue con el último dato guardado y a la persona no se le pide nada.** No se le dice que confirme por teléfono, no se le muestra un hueco y no se le inventa un horario: el proceso continúa y ella recibe su experiencia.
+
+**El aviso va al otro lado.** El brief del asesor lleva una bandera que dice **con qué dato desactualizado se construyó la experiencia y cuál era**, para que lo verifique antes de la visita. Es la regla general del sistema: se resuelve sin hacerle difícil la vida a la persona, sin mentirle, y se le avisa al asesor.
+
+El corte diario de las 06:00, hora de la Ciudad de México, fija qué versión de esos datos está publicada; el capítulo 13 especifica el contrato de cada fuente.
 
 ### 2.2.4 Lo que el contenido no hace
 
