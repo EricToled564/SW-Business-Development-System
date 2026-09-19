@@ -136,209 +136,170 @@ La segunda ruta hacia lo mismo es **«Agenda tu visita guiada»**, y el capítul
 
 ## 2.4 Cómo se le lleva
 
-Ninguna página del sitio es un destino final. Todas conducen al mismo lugar, y lo hacen con un mecanismo propio:
+Ninguna página del sitio es un destino final. Todas conducen al mismo lugar, y lo hacen con dos menús que no se mezclan.
 
-> **La persona no ve menús: ve recomendaciones.**
+### 2.4.1 El menú superior es fijo
 
-El **menú contextual** es el conjunto de botones de acción que aparecen dentro del cuerpo de cada página. No es fijo: cambia según **tres factores** —en qué punto va la persona, en qué tipo de página está, y si ya tiene un club identificado—.
+Acompaña a la persona en las 148 páginas y **no cambia nunca**.
 
-### 2.4.1 Los tres estados de la persona
-
-**Los tres estados describen a la persona dentro de una sesión, no a lo largo del tiempo.** Lo que los separa es **hasta dónde llegó**, no por qué puerta entró a la página.
-
-| Estado | Qué significa | Qué se le ofrece |
-|---|---|---|
-| **E1 · Sin cuestionario** | Todavía no lo ha completado en esta sesión | **Siempre se le incentiva a crear su experiencia ideal** |
-| **E2 · Completo, sin agendar** | Ya lo completó y todavía no agenda | **Dos botones:** volver a su experiencia ideal, y agendar su visita |
-| **E3 · Completo y agendado** | Ya lo completó y ya agendó | **Un botón:** volver a su experiencia ideal |
-
-**En E2 da igual cómo llegó a la página** —tocando un botón dentro de su experiencia o navegando por su cuenta—: ve los mismos dos botones.
-
-**En cuanto la persona sale, el estado muere.** Al volver es, para el sitio, alguien sin cuestionario. El capítulo 7 especifica qué persiste y qué no.
-
-### 2.4.2 Los tres ejes que encienden un botón
-
-Ningún botón aparece «porque sí». Cada uno tiene una condición, y las condiciones se agrupan en tres ejes.
-
-| Eje | Qué pregunta | Botones que gobierna |
-|---|---|---|
-| **El cuestionario** | ¿Lo completó? ¿Ya agendó? | Diseña tu experiencia · Volver a tu experiencia ideal · Agenda tu visita guiada |
-| **El club** | ¿Hay un club identificado? ¿Hay otro accesible? | Tu Club ideal · Otros clubes |
-| **La página** | ¿Qué es esta página y qué tiene? | Artículos o información útil · Clases FitKidz disponibles · Tu rutina individual · Clubes propuestos |
-
-### 2.4.3 Los botones globales y su condición
-
-| Botón | Aparece cuando |
+| Botón | Qué hace |
 |---|---|
-| **Diseña tu experiencia** | El cuestionario no está completado |
-| **Volver a tu experiencia ideal** | El cuestionario está completado. **Sustituye** a «Diseña tu experiencia» |
-| **Agenda tu visita guiada** | **Siempre**, con una sola excepción: cuando la persona ya agendó |
-| **Tu Club ideal** | No hay club identificado, **ni** ubicación capturada, **y** la página no es de un club |
-| **Otros clubes** | Hay club identificado **y** hay al menos otro club accesible |
-| **Artículos o información útil** | Existe al menos un artículo del blog con etiqueta que coincide con la página. Si no hay, el botón no aparece y no deja hueco |
-| **Clases FitKidz disponibles** | Solo en FitKidz, y solo con club identificado |
-| **Tu rutina individual** | Solo en las tres modalidades de entrenamiento individual |
+| **Tu Sports World** | El catálogo. Es el único punto de navegación estructural del sitio: clubes, objetivos, clases, amenidades y el resto de los hubs |
+| **Diseña tu experiencia** | Abre el cuestionario |
+| **Habla con BES** | Abre el asistente, sin salir de la página |
+| **Agenda tu visita** | Abre el agendado |
 
-**La excepción de la Regla 26.** «Agenda tu visita guiada» es un botón permanente del sitio. Deja de ofrecerse en un solo caso: **cuando la persona ya agendó**. Ofrecerle agendar a quien ya tiene cita no es una ruta, es ruido.
+Los tres últimos son **rutas paralelas**: la persona elige la que prefiera y ninguna tiene prioridad. **Agenda tu visita** es la acción de conversión del sitio.
 
-### 2.4.4 El eje del club: Tu Club ideal contra Otros clubes
+### 2.4.2 El menú contextual tiene cuatro ranuras
 
-Los dos botones son excluyentes: **el primero resuelve un club, el segundo ofrece alternativas a uno ya resuelto.** Nunca aparecen juntos.
+El menú contextual es el conjunto de botones dentro del cuerpo de la página. **No cambian los botones: cambia lo que dice cada uno**, según en qué punto va la persona.
 
-| Tipo de ciudad | Definición | Estado del club | Botón | Qué hace al pulsarlo |
-|---|---|---|---|---|
-| **CIUDAD-1** | Un club en la ciudad | Cualquiera | **Ninguno** | No hay alternativas: el club único se presenta solo |
-| **CIUDAD-POCOS** | Dos o tres clubes | Club identificado | **Otros clubes en tu ciudad** | Muestra el otro club, o los otros dos |
-| **CIUDAD-ZMVM** | Más de tres clubes — la Zona Metropolitana del Valle de México concentra **32 de los 49** | Club identificado | **Otros clubes en el área** | Dos opciones: los clubes en un radio de 10 km del actual, o los clubes cerca de otra ubicación. Para lo segundo pregunta si la referencia es casa, trabajo, escuela u otra, y después la ubicación |
-| **CIUDAD-ZMVM** | — | Sin club **ni** ubicación | **Tu Club ideal** | Inicia la captura de ubicación: origen prioritario y ubicación, con autocompletado de códigos postales |
+| Ranura | Qué resuelve |
+|---|---|
+| **1 · El club** | Dónde va a entrenar |
+| **2 · La experiencia** | Su plan |
+| **3 · El objetivo** | Qué quiere lograr, y qué clases sirven para eso |
+| **4 · La visita** | El paso final |
+
+Y las cuatro ranuras se reetiquetan así:
+
+| Ranura | **E1** · Sin cuestionario | **E2** · Completo, sin agendar | **E3** · Completo y agendado |
+|---|---|---|---|
+| **1 · El club** | Encuentra tu club ideal | Tu club ideal | Tu club ideal |
+| **2 · La experiencia** | Diseña tu experiencia | Volver a tu experiencia ideal | Volver a tu experiencia ideal |
+| **3 · El objetivo** | ¿Cuál es tu objetivo? | Las clases para tu objetivo | Las clases para tu objetivo |
+| **4 · La visita** | Agenda tu visita | Agenda tu visita | Tu visita agendada |
+
+**En la página de un club, la ranura 1 nunca dice «Encuentra tu club ideal»**, porque el club ya está resuelto por haber aterrizado ahí. Dice lo que corresponda según el tamaño de la ciudad, y en los tres estados igual.
+
+### 2.4.3 Los tres botones que abren el cuestionario, y la pregunta de contexto
+
+**Encuentra tu club ideal, ¿Cuál es tu objetivo? y Diseña tu experiencia abren el mismo cuestionario.** No son tres instrumentos: son tres puertas al mismo.
+
+Y las tres empiezan igual: **por las preguntas de contexto de la página desde la que se tocó el botón.** Lo que la persona estaba viendo no se pierde, y no se le vuelve a preguntar.
+
+| Desde dónde tocó el botón | Qué se le confirma antes del primer reactivo |
+|---|---|
+| **Página de alberca** | Si quiere que su experiencia incluya actividades acuáticas |
+| **Página de otra amenidad** | Si quiere que su experiencia incluya esa amenidad |
+| **Página de una clase** | Si quiere que su experiencia incluya esa clase |
+| **Página de un club** | Si quiere entrenar en ese club |
+| **Página de un objetivo** | Si ese es su objetivo |
+| **Página de inicio, sin haber visto otra** | Nada. No hay contexto que confirmar, y el cuestionario abre en el primer reactivo |
+
+El capítulo 5 especifica el bloque completo.
+
+### 2.4.4 La ranura del club: qué dice y cuándo
+
+| Dónde está la persona | Qué tiene resuelto | Qué dice la ranura 1 |
+|---|---|---|
+| Una página que no es de club | Nada | **Encuentra tu club ideal** — abre el cuestionario |
+| Una página que no es de club | Ya tiene club | **Tu club ideal** — lleva a su club |
+| **Página de un club** · la ciudad tiene un solo club | — | **Nada.** No hay alternativas que ofrecer |
+| **Página de un club** · la ciudad tiene dos o tres | — | **Otros clubes en tu ciudad** |
+| **Página de un club** · la ciudad tiene más de tres, **y hay al menos otro club en un radio de 10 km** | — | **Otros clubes en tu área** |
+
+La Zona Metropolitana del Valle de México concentra **32 de los 49 clubes**, así que es donde el último caso aplica casi siempre.
+
+### 2.4.5 La ranura del objetivo
+
+**En E1 pregunta; en E2 y E3 entrega.**
+
+- **«¿Cuál es tu objetivo?»** abre el cuestionario, empezando por la pregunta de contexto de esa página.
+- **«Las clases para tu objetivo»** ya no pregunta nada: muestra **las clases que corresponden al objetivo que la persona declaró**, en el club que tiene resuelto.
+
+Es el mismo mecanismo que rige la página de un club: **nunca se entrega una lista de clases suelta. Las clases viven dentro del objetivo al que sirven.**
+
+### 2.4.6 La ranura de la visita
+
+**«Agenda tu visita» está en E1 y en E2.** En E3 cambia a **«Tu visita agendada»**, que lleva a su cita para verla, cambiarla o cancelarla. Ofrecerle agendar a quien ya tiene cita no es una ruta, es ruido.
 
 ---
 
-## 2.5 Los once menús, uno por uno
+## 2.5 Los menús, página por página
 
-Cada tipo de página tiene su menú. **Los botones de estado y los de club ya están especificados arriba y no se repiten aquí**: lo que sigue es lo propio de cada tipo, y cómo se ve el menú completo en los tres estados.
-
-En las tablas, **A** significa «Agenda tu visita guiada», que va en E1 y E2 y desaparece en E3.
+Lo que sigue son las cuatro ranuras aplicadas a cada tipo de página, en los tres estados. **El menú superior no se repite: está en todas.**
 
 ### 2.5.1 Inicio
 
-Es la única página sin contexto: nadie llega a ella buscando algo concreto, llega buscando la marca.
-
-| Estado | Menú del cuerpo |
+| Estado | Menú contextual |
 |---|---|
-| **E1** · Sin cuestionario | Tu Club ideal, si no hay club ni ubicación · Diseña tu experiencia · A |
-| **E2** · Completo, sin agendar | Volver a tu experiencia ideal · A |
-| **E3** · Completo y agendado | Volver a tu experiencia ideal |
-
-**Sin botones propios.** El inicio no tiene nada que ofrecer que no esté en los ocho hubs del panel de navegación.
+| **E1** | Encuentra tu club ideal · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
+| **E2** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
+| **E3** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
 
 ### 2.5.2 Club
 
-Aterrizar aquí **identifica el club**, así que «Tu Club ideal» nunca aparece y «Otros clubes» siempre puede.
+La ranura 1 no ofrece encontrar un club: ofrece alternativas al que la persona está viendo.
 
-| Estado | Menú del cuerpo |
+| Estado | Menú contextual |
 |---|---|
-| **E1** | Diseña tu experiencia · Otros clubes, según el tamaño de la ciudad · A |
-| **E2** | Volver a tu experiencia ideal · Otros clubes · A |
-| **E3** | Volver a tu experiencia ideal · Otros clubes |
+| **E1** | Otros clubes en tu ciudad **o** en tu área, según el caso · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
+| **E2** | Otros clubes… · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
+| **E3** | Otros clubes… · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
 
-**Botón propio · «Ver las clases de este club para tu objetivo».** La página de club no expone catálogo: presenta los objetivos, y las clases viven dentro del objetivo al que sirven. Este botón es el que abre ese paso.
+### 2.5.3 Amenidad
 
-### 2.5.3 Hub de amenidad
+Incluye alberca, vapor, sauna y las demás. La pregunta de contexto es la de esa amenidad.
 
-Convierte una búsqueda de amenidad en una decisión de club.
-
-| Estado | Menú del cuerpo |
+| Estado | Menú contextual |
 |---|---|
-| **E1** | Tu Club ideal, si no hay club ni ubicación · Diseña tu experiencia · A |
-| **E2** | Volver a tu experiencia ideal · Otros clubes, si ya hay club · A |
-| **E3** | Volver a tu experiencia ideal · Otros clubes, si ya hay club |
+| **E1** | Encuentra tu club ideal · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
+| **E2** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
+| **E3** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
 
-**Botón propio · «Clubes con [amenidad] cerca de ti».** Es el que ordena la lista de clubes de la página por cercanía en cuanto hay ubicación. Sin ubicación, la lista se presenta completa y el botón la pide.
+### 2.5.4 Clase · premium e individual
 
-### 2.5.4 Clase premium · 2.5.5 Clase individual
-
-**El menú es idéntico en las dos.** Lo que cambia es el tratamiento editorial de la página, no sus rutas.
-
-| Estado | Menú del cuerpo |
+| Estado | Menú contextual |
 |---|---|
-| **E1** | Tu Club ideal, si no hay club ni ubicación · Diseña tu experiencia · A |
-| **E2** | Volver a tu experiencia ideal · Otros clubes, si ya hay club · A |
-| **E3** | Volver a tu experiencia ideal · Otros clubes, si ya hay club |
+| **E1** | Encuentra tu club ideal · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
+| **E2** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
+| **E3** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
 
-**Botón propio · «Dónde y a qué hora se imparte».** Abre los clubes que dan esa clase con sus horarios reales. Con club identificado, muestra primero el suyo.
+Desde aquí, **«¿Cuál es tu objetivo?» abre el objetivo y muestra todas las clases que le sirven**, no solo la que la persona estaba viendo.
 
-**Las tres modalidades de entrenamiento individual** —pesas, aeróbico y acuático— llevan además **«Tu rutina individual»**, que sustituye al bloque de clases recomendadas. Aparece en E2 y E3, cuando ya hay una rutina que mostrar.
+### 2.5.5 Objetivo
 
-### 2.5.6 Hub FitKidz
+La ranura 3 no pregunta lo que la página ya dice: **profundiza en ello.**
 
-Reúne las 34 actividades para menores, agrupadas en tres niveles: **FitKidz · Junior · Adolescentes.**
-
-| Estado | Menú del cuerpo |
+| Estado | Menú contextual |
 |---|---|
-| **E1** | Tu Club ideal, si no hay club ni ubicación · Diseña tu experiencia · **Clases FitKidz disponibles**, si hay club · **hasta tres clubes propuestos** · A |
-| **E2** | Volver a tu experiencia ideal · **Clases FitKidz disponibles** · **clubes propuestos** · A |
-| **E3** | Volver a tu experiencia ideal · **Clases FitKidz disponibles** · **clubes propuestos** |
+| **E1** | Encuentra tu club ideal · Diseña tu experiencia · **Conoce las clases adecuadas para tu objetivo** · Agenda tu visita |
+| **E2** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo, **en tu club** · Agenda tu visita |
+| **E3** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo, **en tu club** · Tu visita agendada |
 
-**Es el único hub que no muestra su catálogo hasta identificar el club**, porque cada club ofrece un subconjunto distinto de las 34 actividades y mostrarlas todas sería prometer lo que ese club no da.
+**La diferencia entre E1 y E2 en esta ranura es la que sostiene todo el capítulo:** en E1 muestra las clases del objetivo en general; en E2 muestra **las de su club**, porque ya sabe cuál es.
 
-**Los clubes propuestos** son hasta tres, y cada uno lleva sus propias tres acciones: **ver el club · agendar la visita con ese club preseleccionado · ver las clases disponibles para su familia.**
+### 2.5.6 FitKidz
 
-### 2.5.7 Hub de perfil
+Es una amenidad con una particularidad: **no muestra ninguna de sus 34 actividades hasta que hay un club identificado**, porque cada club ofrece un subconjunto distinto. Sin club, se nombran sus tres niveles —FitKidz, Junior y Adolescentes— y nada más.
 
-Cinco páginas: primeros pasos, salud y bienestar, estética corporal, ganar fuerza y rehabilitación.
-
-| Estado | Menú del cuerpo |
+| Estado | Menú contextual |
 |---|---|
-| **E1** | Artículos o información útil, si hay · Tu Club ideal, si no hay club ni ubicación · Diseña tu experiencia · A |
-| **E2** | Volver a tu experiencia ideal · Artículos, si hay · Otros clubes, si ya hay club · A |
-| **E3** | Volver a tu experiencia ideal · Artículos, si hay · Otros clubes, si ya hay club |
+| **E1** | Encuentra tu club ideal · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
+| **E2** | Tu club ideal · Volver a tu experiencia ideal · **Las actividades de tu club para tus hijos** · Agenda tu visita |
+| **E3** | Igual que E2, con Tu visita agendada |
 
-**Botón propio · «Clubes que atienden este objetivo».** Es lo que convierte el perfil en lugar concreto.
+### 2.5.7 Membresías
 
-**Rehabilitación lleva un elemento que ningún otro perfil necesita:** la firma del especialista con cédula a la vista y el aviso de salud. No es un botón, pero condiciona la página.
-
-### 2.5.8 Hub de bajar de peso
-
-| Estado | Menú del cuerpo |
+| Estado | Menú contextual |
 |---|---|
-| **E1** | **Artículos o información útil, siempre** · Tu Club ideal, si no hay club ni ubicación · Diseña tu experiencia · A |
-| **E2** | Volver a tu experiencia ideal · **Artículos** · Otros clubes, si ya hay club · A |
-| **E3** | Volver a tu experiencia ideal · **Artículos** · Otros clubes, si ya hay club |
+| **E1** | Encuentra tu club ideal · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
+| **E2** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
+| **E3** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
 
-**Es la única página donde «Artículos» aparece siempre**, porque siempre tiene artículos etiquetados. El aviso de salud y la firma del médico van antes de cualquier recomendación.
+**Sin botón de compra.** El sitio muestra precios del CRM y no vende en línea: la ruta es agendar, y la venta se cierra en el club o por teléfono.
 
-### 2.5.9 Hub de entrenamiento personal
+### 2.5.8 Blog
 
-| Estado | Menú del cuerpo |
+| Estado | Menú contextual |
 |---|---|
-| **E1** | Artículos o información útil, si hay · Tu Club ideal, si no hay club ni ubicación · Diseña tu experiencia · A |
-| **E2** | Volver a tu experiencia ideal · Artículos, si hay · Otros clubes, si ya hay club · A |
-| **E3** | Volver a tu experiencia ideal · Artículos, si hay · Otros clubes, si ya hay club |
+| **E1** | Encuentra tu club ideal · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
+| **E2** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
+| **E3** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
 
-**Botón propio · «Clubes con entrenamiento personal».** No hay página por entrenador: la decisión es de club, no de persona.
-
-### 2.5.10 Membresías
-
-Seis páginas: un comparador y cinco planes.
-
-| Estado | Menú del cuerpo |
-|---|---|
-| **E1** | Tu Club ideal, si no hay club ni ubicación · Diseña tu experiencia · A |
-| **E2** | Volver a tu experiencia ideal · A |
-| **E3** | Volver a tu experiencia ideal |
-
-**Sin botones propios, y sin botón de compra.** Es deliberado: el sitio muestra precios del CRM y no vende en línea. La ruta es agendar, y la venta se cierra en el club o por teléfono.
-
-**Es la página donde «Diseña tu experiencia» trabaja más:** quien compara precios sin saber qué va a hacer con la membresía es exactamente quien necesita su plan antes de decidir.
-
-### 2.5.11 Blog
-
-| Estado | Menú del cuerpo |
-|---|---|
-| **E1** | Diseña tu experiencia · A |
-| **E2** | Volver a tu experiencia ideal · A |
-| **E3** | Volver a tu experiencia ideal |
-
-**Sin «Tu Club ideal» y sin «Otros clubes».** Un artículo no es una decisión de lugar, y meter la geografía ahí interrumpe la lectura.
-
-**Botón propio · el enlace al hub que le corresponde**, que es lo que convierte al blog en la capa que alimenta a las otras diez en vez de competir con ellas.
-
-### 2.5.12 Resumen: qué tiene cada tipo de propio
-
-| Tipo de página | Botón propio |
-|---|---|
-| Inicio | — |
-| Club | Ver las clases de este club para tu objetivo |
-| Hub de amenidad | Clubes con [amenidad] cerca de ti |
-| Clase premium · Clase individual | Dónde y a qué hora se imparte |
-| Entrenamiento individual · las tres modalidades | Tu rutina individual |
-| FitKidz | Clases FitKidz disponibles · clubes propuestos, con tres acciones cada uno |
-| Hub de perfil | Clubes que atienden este objetivo |
-| Bajar de peso | Artículos, que aquí siempre aparece |
-| Entrenamiento personal | Clubes con entrenamiento personal |
-| Membresías | — |
-| Blog | El enlace al hub que le corresponde |
+Un artículo lleva además **el enlace al hub que le corresponde**, que es lo que convierte al blog en la capa que alimenta a las otras diez en vez de competir con ellas.
 
 ## 2.6 Qué se lleva consigo al cuestionario
 
