@@ -10,7 +10,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 |---|---|---|
 | `00-estructura.es.md` | 1,136 | `c787f993d84804ce1fb64db3164d09aa050a11d3702122727d90c8ccd97328e6` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
-| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 480 | `7a4acfcad189871c9225ca1b3dca3a9ecec16553a7010fe9c280fe89c595ce4c` |
+| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 3,111 | `2a912461df387bb7aca0fac4cedc73cf0d9787ba83356762b21e5bda6bdcadb9` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,457 | `a2bfea38908d746687c79e0131cf7bd68a980592c97db2eee07f5f7636669c37` |
 | `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
 | `05-el-cuestionario.es.md` | 3,140 | `053b75bd9dda9443902898ba5ff207561bfd46601267c2c62c17fc369d1525f4` |
@@ -26,7 +26,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | Capítulo | Aprobado por Eric | Modificado después de aprobarse | Quién ordenó el cambio |
 |---|---|---|---|
 | 1 | Sí | Se agregó el apartado 1.3.4, qué es BES. Después, remisiones cruzadas por la renumeración | Eric |
-| 2 | **Estructura sí, texto no** | El texto se retiró por D-57: describía el inventario, los botones y el cuestionario, no el objeto del capítulo. La estructura de seis apartados queda aprobada y el archivo la conserva | Eric |
+| 2 | **Estructura sí, texto no** | Reescrito sobre la estructura aprobada de seis apartados, con el contenido mínimo por tipo de página como fuente de 2.2 y 2.3. Se sube sin aprobación del texto, a la espera de la revisión de Eric | — |
 | 3 | Sí | Las leyendas dejan de ser cuatro fijas; se quitó la cifra de requisitos. Después, renumeración y el nombre del servicio para menores | Eric |
 | 4 | Sí | La precarga se muestra en la ruta reducida. Después, renumeración y el nombre del servicio para menores | Eric |
 | 5 | Sí | La clase aceptada sin club se vuelve requisito, en 5.2.3 y 5.2.4. Después, renumeración | Eric |
@@ -43,6 +43,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | El servicio para menores | Se llama **«actividades para menores de 3 meses a 13 años»** en los seis archivos. Desaparecen «actividades para niños» y «actividades infantiles» |
 | `decisiones.es.md` | D-33 reescrita; se agregan D-51 a D-54; todas las remisiones pasan a la numeración vigente |
 | `00-estructura.es.md` | Nuevo. El índice completo deja de vivir solo en la conversación |
+| Capítulo 2 | **Reescrito completo** sobre la estructura aprobada: por qué existe cada página · qué encuentra la persona al llegar · por qué ese contenido la mueve a construir su experiencia · cómo se le lleva · qué se lleva al cuestionario · el blog. Los once niveles suman 148, verificado |
 | Capítulo 2 y capítulo 5 | **D-57.** El texto del capítulo 2 se retiró y su material correcto pasó al capítulo 5: los menús dinámicos del cuestionario al nuevo apartado **5.7**, y lo que el sistema sabe de la navegación al **5.2.1**. El archivo del capítulo 2 conserva la estructura aprobada y dice a dónde fue cada cosa |
 | Las notas de edición | **D-58.** Se retiró el apartado 7.5.3, «Por qué está escrito así», y las notas que justificaban la redacción de la regla de concordancia y de la regla del «Siguiente». Las reglas del sistema se conservaron |
 | La duración del estado | **D-48 corregida, D-55 y D-56.** El identificador de sesión vive toda la sesión y muere al salir; los tres estados del menú contextual son de sesión; al reencontrarse, el prospecto se concilia con la llave canónica y se actualiza, y su experiencia ideal anterior se elimina por completo de su base y se reemplaza por la última |
