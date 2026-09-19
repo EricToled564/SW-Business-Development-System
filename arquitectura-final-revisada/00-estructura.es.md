@@ -66,14 +66,14 @@ Los cuatro modos del selector de club van con nombre en español y sin código: 
 
 | № | Subcapítulos |
 |---|---|
-| **8** | Cuándo se piden · Envío de la experiencia por correo · Una sola escritura al CRM · Aviso simplificado e integral |
+| **8** | Cuándo se piden · Envío de la experiencia por correo · Una sola escritura al CRM · **La conciliación con la llave canónica y el reencuentro (D-56)** · Aviso simplificado e integral |
 | **9** | El principio · Los cuatro requisitos · El radio de 10 km · Minutos con tráfico · Los cuatro modos · Alternativas y leyendas · Elección propia |
 | **10** | B01 · B02 · B03 · Seco, agua y mixto · Entrenamiento personal para todas las personas |
 | **11** | La matriz de clases · Los pasos del seleccionador · Filtro de intensidad · Matriz de contraindicaciones · Sustitución, nunca exclusión |
 | **12** | Una sola llamada · Qué puede y qué no · Respaldo ante falla |
-| **13** | El corte de las 06:00 · Categorías de fuente · Matrices propias · Alta de club · Alta de clase · El contrato de cada fuente |
+| **13** | El corte de las 06:00 · Categorías de fuente · Matrices propias · Alta de club · Alta de clase · El contrato de cada fuente · **La base de experiencias ideales y su contrato (D-56)** |
 | **14** | La simulación diaria · Qué se revisa y quién · Qué se hace cuando una fuente no llega |
-| **15** | Qué recibe el club · Qué recibe el asesor · Qué ocurre si la persona no se presenta |
+| **15** | Qué recibe el club · Qué recibe el asesor · Qué ocurre si la persona no se presenta · **Qué ve el asesor cuando el prospecto ya existía** |
 | **16** | Qué se puede cambiar sin programar · Quién lo autoriza · Qué queda registrado |
 
 ---

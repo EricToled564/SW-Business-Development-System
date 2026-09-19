@@ -8,18 +8,18 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
-| `00-estructura.es.md` | 1,103 | `b53c3d9cba678ee076ab23bebe19620d8c71ee6a25bb992e9c67cd3ecdedd060` |
+| `00-estructura.es.md` | 1,134 | `0cd63bb7ced8549288d6f31b274dbbca2ac21489424fae5a11eafa9433d1266b` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
-| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 2,613 | `1ec9aff21eb6f2c6110cbff56e4148dae89cc469202311d23873f7d2859be610` |
+| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 2,721 | `2548b148bea09410378ea1da09b2913cc7f13623fc0b97434a085faadd07521e` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,457 | `a2bfea38908d746687c79e0131cf7bd68a980592c97db2eee07f5f7636669c37` |
 | `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
 | `05-el-cuestionario.es.md` | 2,244 | `0a8e1160da6286eecc2e9d7899ae170188bb07573745d6db457c6a762ff1c920` |
 | `06-los-objetivos-de-la-persona.es.md` | 851 | `40a94d5e73e711c2fa585c1dfe838fb53939c8aa025f98aa544a43de58d338c6` |
-| `07-el-recorrido-en-pantalla.es.md` | 1,948 | `083f0b9f8b31dc4bda808031ef02cbaf1fa0f87a2c85d6d8f4cf18f7590b197a` |
+| `07-el-recorrido-en-pantalla.es.md` | 2,119 | `8e27224df8b29fa8c1de18b33f58beea665001ed7c48a4c6410a3ae04d7533ab` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
-| `README.es.md` | 333 | `44ef438b32b36013ba4129586ce3d963861eb0cbbbae9d62cc9225f0a8733733` |
-| `decisiones.es.md` | 2,387 | `bf3cda5cc9e1829de23313d87c937e3bcaef2711c94203549cfc144f5904b0af` |
+| `README.es.md` | 333 | `83809ec85dd1afc954684da02e1e61114935bbfcacbca5af383323f6df879f67` |
+| `decisiones.es.md` | 2,918 | `92ba2d1d696640f94739b419a750f35ed745effba24cf228680c797fcbecaced` |
 
 ## Estado de aprobación
 
@@ -43,6 +43,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | El servicio para menores | Se llama **«actividades para menores de 3 meses a 13 años»** en los seis archivos. Desaparecen «actividades para niños» y «actividades infantiles» |
 | `decisiones.es.md` | D-33 reescrita; se agregan D-51 a D-54; todas las remisiones pasan a la numeración vigente |
 | `00-estructura.es.md` | Nuevo. El índice completo deja de vivir solo en la conversación |
+| La duración del estado | **D-48 corregida, D-55 y D-56.** El identificador de sesión vive toda la sesión y muere al salir; los tres estados del menú contextual son de sesión; al reencontrarse, el prospecto se concilia con la llave canónica y se actualiza, y su experiencia ideal anterior se elimina por completo de su base y se reemplaza por la última |
 
 Desde el capítulo 5, cada capítulo se sube en el momento de su aprobación y todo cambio posterior queda como commit propio.
 
