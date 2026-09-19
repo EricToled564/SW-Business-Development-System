@@ -10,7 +10,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 |---|---|---|
 | `00-estructura.es.md` | 1,157 | `e847ae9a850f348cd9f261098b1a206743a004aa754cb2edbfa85c9c66e8bad5` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
-| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 4,259 | `f72842f87d634c250e6e0a0fdbfd338433b072886cef2149a10715d258d08706` |
+| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 4,537 | `3103b9810ea431cae92776f92fc1ea7b86b309583e79da6b0f758d4fd7b2bee8` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,457 | `a2bfea38908d746687c79e0131cf7bd68a980592c97db2eee07f5f7636669c37` |
 | `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
 | `05-el-cuestionario.es.md` | 3,226 | `38fa1d020edcb946e0b0c2aa3d98407152748225b5f8a66e7a815b3ea0767ba0` |
@@ -19,7 +19,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `README.es.md` | 333 | `bc7c852d59aaf2ba00e8f01db436bfe68cb4e521815693864cb0bcef81e6fa70` |
-| `decisiones.es.md` | 3,925 | `991bba26da8001f686f1a5be9ecc2ad4ab83682a560b572bfdc382c8155e6b19` |
+| `decisiones.es.md` | 4,080 | `dee731979058cabdf9b42f4a9480a1be4955aa27149840f68fd8542904f75b6e` |
 
 ## Estado de aprobación
 

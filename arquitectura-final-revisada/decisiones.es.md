@@ -300,7 +300,17 @@ La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está 
 | **3 · El objetivo** | ¿Cuál es tu objetivo? | Las clases para tu objetivo | Las clases para tu objetivo |
 | **4 · La visita** | Agenda tu visita | Agenda tu visita | Tu visita agendada |
 
-**En la página de un club la ranura 1 no ofrece encontrar un club**, porque aterrizar ahí lo resuelve: ofrece alternativas. Nada si la ciudad tiene un solo club, «Otros clubes en tu ciudad» si tiene dos o tres, y «Otros clubes en tu área» si tiene más de tres y hay al menos otro club en un radio de 10 km.
+**En la página de un club la ranura 1 no ofrece encontrar un club**, porque aterrizar ahí lo resuelve: ofrece alternativas. Antes del cuestionario: nada si la ciudad tiene un solo club, «Otros clubes en tu ciudad» si tiene dos o tres, y «Otros clubes en tu área» si tiene más de tres y hay al menos otro club en un radio de 10 km.
+
+**Con el cuestionario completo, la ranura abre la red entera.** En la página de un club dice **«Conoce nuestros clubes»**, y despliega una jerarquía de hasta tres niveles medida **desde el club ideal de la persona**, no desde el club de la página:
+
+| Qué hay alrededor del club ideal | Qué se le presenta |
+|---|---|
+| Un solo club en su ciudad | Conoce todos nuestros clubes en la República |
+| Más de uno en la ciudad, ninguno a 5 km del club ideal | Conoce otros clubes en tu ciudad · Conoce todos nuestros clubes en la República |
+| Al menos uno a 5 km del club ideal | Conoce otros clubes en tu zona · Conoce otros clubes en tu ciudad · Conoce todos nuestros clubes en la República |
+
+**Ningún nivel se muestra vacío**, y el orden va siempre de lo cercano a lo lejano.
 
 **Aterriza en:** capítulos 2.4 y 2.5.
 
