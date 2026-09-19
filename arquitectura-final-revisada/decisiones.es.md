@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-54. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-56. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -149,13 +149,19 @@ No se abre registro, no se escribe nada y al cerrar la sesión no queda rastro. 
 
 **Aterriza en:** capítulo 4.2.
 
-### D-48 · Identificador de sesión para poder seguir la navegación
+### D-48 · Identificador de sesión, que vive toda la sesión y muere con ella
 
-El sitio asigna un identificador propio, aleatorio y vacío, cuyo único trabajo es atar entre sí las páginas que la persona visita. No lleva ningún dato suyo, **se descarta en cuanto el cuestionario abre** y nunca llega al registro del prospecto. Nada de lo que la persona responde se guarda en su navegador.
+El sitio asigna un identificador propio, aleatorio y vacío, cuyo trabajo es atar entre sí las páginas que la persona visita. No lleva ningún dato suyo y **nunca llega al registro del prospecto.**
+
+**Vive toda la sesión.** No se descarta al abrir el cuestionario: sigue vivo después de entregada la experiencia, y es lo que permite que la persona navegue el sitio y siga reconocida como alguien que ya la tiene. **Muere cuando la persona sale.** Al volver, empieza de cero.
+
+Nada de lo que la persona responde se guarda en su navegador: lo único que se guarda de su lado es el identificador.
+
+**Corrige la versión anterior de esta decisión**, que descartaba el identificador en cuanto el cuestionario abría. Con esa regla, el estado «completo, fuera del flujo» de D-55 no tenía mecanismo posible.
 
 **Sustituye** la regla anterior de «sin cookies».
 
-**Aterriza en:** capítulos 7.5.1 y 8.
+**Aterriza en:** capítulos 2.3.1, 7.5.1 y 8.
 **Abierto, fuera de la Arquitectura:** el texto del aviso simplificado y si procede consentimiento previo, que corresponde a Legal.
 
 ---
@@ -209,6 +215,37 @@ El botón de agendar una visita está en todas las páginas y en todo momento de
 
 ---
 
+## 7 · Lo que dura y lo que no
+
+### D-55 · Los tres estados son de sesión, y no sobreviven a la salida
+
+Los tres estados que gobiernan el menú contextual —sin cuestionario, completo dentro del flujo, completo fuera del flujo— **describen a la persona dentro de una sesión**, no a lo largo del tiempo.
+
+«**Completo, fuera del flujo**» es lo que ocurre cuando alguien contesta, recibe su experiencia, **no agenda** y se pone a navegar el sitio: llega a la página de un club por la navegación interna o por una búsqueda, y ahí ya no se le ofrece diseñar su experiencia, sino volver a ella.
+
+**En cuanto la persona sale, el registro de sesión muere.** Al volver es, para el sitio, alguien sin cuestionario, y si lo quiere vuelve a contestarlo. No hay reconocimiento entre visitas, no hay cuenta y no se guarda nada en su navegador salvo el identificador de D-48, que muere con la sesión.
+
+**Aterriza en:** capítulos 2.3.1 y 7.5.
+
+### D-56 · Al reencontrarse: el prospecto se actualiza, su experiencia se reemplaza
+
+Una persona que ya está registrada —por ejemplo con la bandera «no quiso agendar visita»— vuelve días después, rehace el cuestionario y esta vez sí agenda. Qué ocurre con lo que ya existía:
+
+| Qué | Qué pasa |
+|---|---|
+| **El registro del prospecto en el CRM** | **Se actualiza, no se duplica.** Se concilia con la llave canónica del proyecto: **nombre + apellido + teléfono + club** |
+| **La bandera «no quiso agendar visita»** | La sustituye el resultado nuevo. Es una marca de estado, no un historial |
+| **La experiencia ideal** | **No vive en el CRM:** vive en una base propia, ligada al registro del prospecto por su identificador. La anterior **se elimina por completo** y queda la última. No sobra nada |
+| **La cita** | Queda contra el registro que ya existía, no contra uno nuevo |
+
+**Una persona, un registro de prospecto, una experiencia vigente.**
+
+**El borrado no deja hueco en la medición.** Las etapas de la espina del funnel no cuentan registros guardados, cuentan eventos en el momento en que ocurren: E2 cuenta al responderse la primera pregunta y **E3 cuenta cuando se genera la experiencia ideal**, no cuando se consulta después. Rehacer el cuestionario dispara un E2 y un E3 nuevos, que quedan registrados aunque el documento anterior se borre.
+
+**Aterriza en:** capítulos 8, 13 y 15.
+
+---
+
 ## Puntos abiertos que esta revisión destapó
 
 | Punto | Qué falta |
@@ -219,3 +256,4 @@ El botón de agendar una visita está en todas las páginas y en todo momento de
 | **Atribución comercial de la venta que se va a otro club** | Ver D-44 |
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
 | **CEI-01 requiere dos ajustes** | El renglón de Clubes del control de lógica, y la declaración del bloque P0 |
+| **La base de experiencias ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 13 |
