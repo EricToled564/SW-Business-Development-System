@@ -10,7 +10,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 |---|---|---|
 | `00-estructura.es.md` | 1,157 | `e847ae9a850f348cd9f261098b1a206743a004aa754cb2edbfa85c9c66e8bad5` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
-| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 4,686 | `aae4a5513ef375de3527bb9b8c947b2ddcc0a5f5784c6acb7e8029a5cbe49d19` |
+| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 4,259 | `f72842f87d634c250e6e0a0fdbfd338433b072886cef2149a10715d258d08706` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,457 | `a2bfea38908d746687c79e0131cf7bd68a980592c97db2eee07f5f7636669c37` |
 | `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
 | `05-el-cuestionario.es.md` | 3,226 | `38fa1d020edcb946e0b0c2aa3d98407152748225b5f8a66e7a815b3ea0767ba0` |
@@ -19,7 +19,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `README.es.md` | 333 | `bc7c852d59aaf2ba00e8f01db436bfe68cb4e521815693864cb0bcef81e6fa70` |
-| `decisiones.es.md` | 3,485 | `18b90de7ec464fd20bf650cbc20de88b92aec03d8a731b2634312c637025a5b6` |
+| `decisiones.es.md` | 3,925 | `991bba26da8001f686f1a5be9ecc2ad4ab83682a560b572bfdc382c8155e6b19` |
 
 ## Estado de aprobación
 
@@ -43,7 +43,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | El servicio para menores | Se llama **«actividades para menores de 3 meses a 13 años»** en los seis archivos. Desaparecen «actividades para niños» y «actividades infantiles» |
 | `decisiones.es.md` | D-33 reescrita; se agregan D-51 a D-54; todas las remisiones pasan a la numeración vigente |
 | `00-estructura.es.md` | Nuevo. El índice completo deja de vivir solo en la conversación |
-| Los once menús | El apartado **2.5** diseña el menú contextual de cada uno de los once tipos de página, en los tres estados, con su botón propio. Las fuentes cubren los botones globales y el eje del club; **lo propio de cada tipo es diseño de esta revisión** y va marcado como tal |
+| Los menús | **D-60, D-61 y D-62.** Dos menús: el superior, fijo en las 148 páginas, y el contextual, con cuatro ranuras que se reetiquetan según el estado. Los tres botones que abren el cuestionario empiezan por la pregunta de contexto de la página. La ranura del objetivo pregunta en E1 y entrega las clases del objetivo en E2 y E3 |
 | El menú contextual | Los tres estados pasan a ser **sin cuestionario · completo sin agendar · completo y agendado**, y dejan de depender de por qué puerta entró la persona. El apartado 2.4.3 lleva la matriz completa de los trece tipos de página contra los tres estados, leída de `ux-spec` §6.4 y §6.6 a §6.14 y de la sección 5 del contenido mínimo |
 | La contingencia | **D-59.** Nunca se le hace difícil la vida a la persona: ante la disyuntiva entre pedirle algo más y continuar el proceso sin mentirle avisando al asesor, se elige siempre lo segundo. Primera aplicación: cuando el CRM no responde, la página sigue con el último dato guardado y la bandera viaja al brief |
 | Capítulo 2 | **Reescrito completo** sobre la estructura aprobada: por qué existe cada página · qué encuentra la persona al llegar · por qué ese contenido la mueve a construir su experiencia · cómo se le lleva · qué se lleva al cuestionario · el blog. Los once niveles suman 148, verificado |

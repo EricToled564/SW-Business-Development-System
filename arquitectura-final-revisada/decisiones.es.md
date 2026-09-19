@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-59. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-62. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -286,6 +286,39 @@ La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está 
 **Los dos límites de la regla.** No se miente: no se inventa un horario, un precio ni una disponibilidad que no se tienen. Y no se calla hacia dentro: toda contingencia resuelta en silencio hacia la persona **viaja al brief**, para que el asesor sepa con qué está trabajando.
 
 **Aterriza en:** capítulos 2, 5.9, 7.7 y 13.
+
+### D-60 · Dos menús, y el contextual tiene cuatro ranuras
+
+**El menú superior es fijo** y acompaña a la persona en las 148 páginas: **Tu Sports World** —el catálogo, único punto de navegación estructural—, **Diseña tu experiencia**, **Habla con BES** y **Agenda tu visita**.
+
+**El menú contextual no cambia de botones: cambia lo que dice cada uno.** Tiene cuatro ranuras, y cada una se reetiqueta según el punto en que va la persona.
+
+| Ranura | E1 · Sin cuestionario | E2 · Completo, sin agendar | E3 · Completo y agendado |
+|---|---|---|---|
+| **1 · El club** | Encuentra tu club ideal | Tu club ideal | Tu club ideal |
+| **2 · La experiencia** | Diseña tu experiencia | Volver a tu experiencia ideal | Volver a tu experiencia ideal |
+| **3 · El objetivo** | ¿Cuál es tu objetivo? | Las clases para tu objetivo | Las clases para tu objetivo |
+| **4 · La visita** | Agenda tu visita | Agenda tu visita | Tu visita agendada |
+
+**En la página de un club la ranura 1 no ofrece encontrar un club**, porque aterrizar ahí lo resuelve: ofrece alternativas. Nada si la ciudad tiene un solo club, «Otros clubes en tu ciudad» si tiene dos o tres, y «Otros clubes en tu área» si tiene más de tres y hay al menos otro club en un radio de 10 km.
+
+**Aterriza en:** capítulos 2.4 y 2.5.
+
+### D-61 · Tres botones, una sola puerta, y la pregunta de contexto primero
+
+**Encuentra tu club ideal, ¿Cuál es tu objetivo? y Diseña tu experiencia abren el mismo cuestionario.** No son tres instrumentos: son tres puertas al mismo.
+
+Y las tres **empiezan por las preguntas de contexto de la página desde la que se tocó el botón**, no por el primer reactivo. Desde la página de alberca se le confirma si quiere actividades acuáticas en su experiencia; desde una clase, esa clase; desde un club, ese club; desde un objetivo, ese objetivo. Solo quien entró por el inicio sin haber visto otra página no tiene contexto que confirmar.
+
+**Aterriza en:** capítulos 2.4.3 y 5.2.
+
+### D-62 · La ranura del objetivo pregunta en E1 y entrega en E2
+
+**«¿Cuál es tu objetivo?»** abre el cuestionario. **«Las clases para tu objetivo»** ya no pregunta: muestra las clases que corresponden al objetivo declarado, **en el club que la persona tiene resuelto**.
+
+Es el mismo mecanismo que rige la página de un club: **nunca se entrega una lista de clases suelta. Las clases viven dentro del objetivo al que sirven.**
+
+**Aterriza en:** capítulos 2.4.5, 2.5.5 y 6.
 
 ---
 
