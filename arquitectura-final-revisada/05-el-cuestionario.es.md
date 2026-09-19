@@ -26,6 +26,14 @@ Ese bloque se llama **P0 · Precarga**, y se declara dentro del instrumento. No 
 | **WhatsApp** | Lo que la campaña que la trajo declara que promueve | Mensaje directo: sin bloque |
 | **Consola** | El club donde la persona está parada, que se da por dado | Sin bloque. El club no se pregunta |
 
+**En el sitio, el conocimiento previo es la navegación, nunca la búsqueda.** Google no entrega el término que la persona tecleó. Lo único que el sistema conoce es **en qué página aterrizó** y las que visitó después:
+
+| Lo que el sistema sabe | Lo que el sistema no sabe |
+|---|---|
+| La página de aterrizaje y el recorrido posterior | El término de búsqueda que la trajo |
+| Que llegó a la página de yoga de Polanco | Si escribió «yoga cerca de mí» o «clases de yoga Polanco» |
+| La ficha de la campaña, cuando viene de una | La consulta original, incluso en campaña |
+
 ### 5.2.2 Las cuatro categorías y las dos formas
 
 Solo cuatro cosas pueden precargarse, y cada una tiene una forma fija de preguntarse:
@@ -134,7 +142,69 @@ Trece reactivos ajustan parámetros. Dos cambian la forma de la recomendación:
 
 El capítulo 10 especifica cómo se compone el plan en cada modalidad.
 
-## 5.7 Qué no pregunta el cuestionario, y por qué
+## 5.7 Cómo se comporta el cuestionario en pantalla
+
+**A la persona no se le muestra nunca una opción que no le corresponde.** No se le presenta y después se le descarta: no aparece.
+
+> **Nada queda fijo hasta que toca «Siguiente».** El cuestionario **no avanza solo** al elegir una opción: la persona tiene que tocar «Siguiente» de forma expresa. Mientras siga en esa pantalla puede cambiar su respuesta las veces que quiera, sin costo, sin aviso y sin perder nada.
+
+### 5.7.1 Preguntas que no se hacen
+
+Un reactivo condicional cuya condición no se cumple **no se muestra ni se envía.** No queda oculto con una respuesta guardada: sencillamente no existe para esa persona.
+
+**Qué pasa al retroceder.** Si la persona regresa y cambia una respuesta de la que colgaba un reactivo condicional, lo que ya había contestado en ese condicional **se conserva, pero deja de usarse**: no llega al cálculo ni al brief.
+
+Y si vuelve a cambiar la respuesta de arriba de modo que el condicional aplique otra vez, **el reactivo reaparece con lo que ya había contestado**, en lugar de pedírselo de nuevo. Es la misma regla de siempre: lo que ya sabemos no se vuelve a preguntar.
+
+### 5.7.2 Opciones que solo aparecen cuando aplican
+
+Dentro de un mismo reactivo, hay opciones que se muestran solo bajo su condición. En el reactivo de preferencias:
+
+| Opción | Se muestra |
+|---|---|
+| Programas de bajo impacto | Siempre |
+| Programas prenatales o de posparto | Solo si eligió lenguaje femenino |
+| Actividades para menores de 3 meses a 13 años | Solo si declaró que visitaría el club con sus hijos, o con su familia |
+| Ninguna de las anteriores | Siempre, y es excluyente |
+
+Por eso ese reactivo va después del de acompañamiento: necesita saber con quién visitaría el club para decidir qué opciones ofrecerle.
+
+### 5.7.3 Opciones que se apagan al llegar al límite
+
+El reactivo de objetivos permite elegir hasta dos, y la pantalla lo hace visible mientras la persona elige:
+
+| Lleva elegidos | Qué ve |
+|---|---|
+| **Ninguno** | Todas las opciones disponibles. No puede avanzar todavía |
+| **Uno** | Todas siguen disponibles. Ya puede avanzar. El elegido queda marcado como **objetivo principal** |
+| **Dos** | Las no elegidas **se apagan**. Puede avanzar. Un aviso le dice que ya eligió sus dos y que puede tocar uno para cambiarlo |
+
+**Mientras no toque «Siguiente», puede cambiar de objetivos con entera libertad.** Tocar una opción apagada no hace nada. Tocar una ya elegida la libera, y con eso vuelve a tener cupo para otra. Puede deshacer y rehacer su elección cuantas veces quiera: el límite de dos acota lo que puede llevarse, no cuántas veces puede cambiar de opinión.
+
+**El orden de selección se conserva y significa algo:** la primera que toca es su objetivo principal, y el capítulo 6 explica cuánto pesa esa diferencia. Para invertirlos, deselecciona los dos y vuelve a elegir en el orden que quiere.
+
+### 5.7.4 La concordancia con la forma de trato
+
+El primer reactivo que cambia la pantalla es el **reactivo 2**, donde la persona dice cómo prefiere que se dirijan a ella —masculino, femenino o lenguaje neutral—.
+
+**La concordancia alcanza únicamente a las palabras que se refieren a la persona que contesta.** Cada una de ellas existe en tres versiones, y la persona ve solo la suya:
+
+| Dónde | Masculino | Femenino | Lenguaje neutral |
+|---|---|---|---|
+| Acompañamiento | Entrenar **solo** | Entrenar **sola** | Entrenar **sin compañía** |
+
+**Lo que se refiere a otras personas se escribe con gramática española correcta**, y no se conjuga con la forma de trato de quien contesta. El género de esas personas ni se conoce ni se pregunta, y la regla para nombrarlas tiene dos casos:
+
+| Caso | Qué se escribe | Ejemplo |
+|---|---|---|
+| El español tiene una palabra que nombra a la persona sin declarar su género | Se usa esa palabra | «Con una amistad», «Con mi pareja» |
+| El español no la tiene | Se usa el plural masculino, que ya las incluye | «Con mis hijos», «Actividades para menores de 3 meses a 13 años» |
+
+La forma neutral es **una frase que vale para cualquiera**, no una marca tipográfica. **Queda prohibida toda marca de inclusión** —arroba, equis, vocal entre paréntesis y doble terminación separada por barra—: no se escribe «solo/a» ni «amig@».
+
+La concordancia no se detiene en el cuestionario. **El mismo reactivo 2 gobierna el texto que el sistema redacta** —el saludo, el argumento de su plan y el encabezado de su brief—, de principio a fin. El capítulo 12 especifica cómo.
+
+## 5.8 Qué no pregunta el cuestionario, y por qué
 
 El instrumento **no recaba condiciones médicas, embarazo o posparto, tratamientos, medicamentos, cirugías, peso, estatura, medidas corporales ni datos de personas menores de edad.**
 
@@ -148,7 +218,7 @@ La valoración de salud corresponde al profesional del club, en el momento del a
 
 **La experiencia ideal tampoco ofrece** acompañamiento nutricional, planes alimenticios, dietas ni recomendaciones de nutrición.
 
-## 5.8 Las señales que viajan al brief
+## 5.9 Las señales que viajan al brief
 
 Algunas respuestas no cambian el plan: cambian cómo el asesor conduce la conversación. El sistema las levanta y las pone en el brief.
 
