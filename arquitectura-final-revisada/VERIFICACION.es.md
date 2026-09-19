@@ -10,7 +10,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 |---|---|---|
 | `00-estructura.es.md` | 1,157 | `e847ae9a850f348cd9f261098b1a206743a004aa754cb2edbfa85c9c66e8bad5` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
-| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 4,537 | `3103b9810ea431cae92776f92fc1ea7b86b309583e79da6b0f758d4fd7b2bee8` |
+| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 5,299 | `405c4a6df5d800fa221ea78ad0a79a0688bfe519631ff1eee8d0b5f186d64b30` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,457 | `a2bfea38908d746687c79e0131cf7bd68a980592c97db2eee07f5f7636669c37` |
 | `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
 | `05-el-cuestionario.es.md` | 3,226 | `38fa1d020edcb946e0b0c2aa3d98407152748225b5f8a66e7a815b3ea0767ba0` |
@@ -43,6 +43,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | El servicio para menores | Se llama **«actividades para menores de 3 meses a 13 años»** en los seis archivos. Desaparecen «actividades para niños» y «actividades infantiles» |
 | `decisiones.es.md` | D-33 reescrita; se agregan D-51 a D-54; todas las remisiones pasan a la numeración vigente |
 | `00-estructura.es.md` | Nuevo. El índice completo deja de vivir solo en la conversación |
+| El número de botones | **No es fijo: va de dos a cinco.** Una ranura sin nada que ofrecer no se muestra vacía, no se muestra; y algunas páginas suman botones propios. El apartado 2.5.12 lleva la cuenta por página y por estado |
 | Los menús | **D-60, D-61 y D-62.** Dos menús: el superior, fijo en las 148 páginas, y el contextual, con cuatro ranuras que se reetiquetan según el estado. Los tres botones que abren el cuestionario empiezan por la pregunta de contexto de la página. La ranura del objetivo pregunta en E1 y entrega las clases del objetivo en E2 y E3 |
 | El menú contextual | Los tres estados pasan a ser **sin cuestionario · completo sin agendar · completo y agendado**, y dejan de depender de por qué puerta entró la persona. El apartado 2.4.3 lleva la matriz completa de los trece tipos de página contra los tres estados, leída de `ux-spec` §6.4 y §6.6 a §6.14 y de la sección 5 del contenido mínimo |
 | La contingencia | **D-59.** Nunca se le hace difícil la vida a la persona: ante la disyuntiva entre pedirle algo más y continuar el proceso sin mentirle avisando al asesor, se elige siempre lo segundo. Primera aplicación: cuando el CRM no responde, la página sigue con el último dato guardado y la bandera viaja al brief |

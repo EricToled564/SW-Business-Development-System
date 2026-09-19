@@ -151,18 +151,22 @@ Acompaña a la persona en las 148 páginas y **no cambia nunca**.
 
 Los tres últimos son **rutas paralelas**: la persona elige la que prefiera y ninguna tiene prioridad. **Agenda tu visita** es la acción de conversión del sitio.
 
-### 2.4.2 El menú contextual tiene cuatro ranuras
+### 2.4.2 El menú contextual: cuatro ranuras posibles, más lo propio de cada página
 
-El menú contextual es el conjunto de botones dentro del cuerpo de la página. **No cambian los botones: cambia lo que dice cada uno**, según en qué punto va la persona.
+El menú contextual es el conjunto de botones dentro del cuerpo de la página. Tiene una estructura común de **cuatro ranuras**, y dos cosas que conviene no confundir:
 
-| Ranura | Qué resuelve |
-|---|---|
-| **1 · El club** | Dónde va a entrenar |
-| **2 · La experiencia** | Su plan |
-| **3 · El objetivo** | Qué quiere lograr, y qué clases sirven para eso |
-| **4 · La visita** | El paso final |
+> **Las cuatro ranuras son el máximo del esqueleto común, no un mínimo garantizado.** Una ranura que no tiene nada que ofrecer **no se muestra vacía: no se muestra.** Y encima del esqueleto, algunas páginas suman botones propios.
 
-Y las cuatro ranuras se reetiquetan así:
+**El número de botones varía de dos a seis según la página y el estado.**
+
+| Ranura | Qué resuelve | Cuándo no aparece |
+|---|---|---|
+| **1 · El club** | Dónde va a entrenar | En la página de un club de una ciudad con un solo club, antes del cuestionario: no hay alternativas que ofrecer |
+| **2 · La experiencia** | Su plan | Nunca falta |
+| **3 · El objetivo** | Qué quiere lograr, y qué clases sirven para eso | En las páginas que no llevan a un objetivo: membresías y blog |
+| **4 · La visita** | El paso final | Nunca falta, aunque cambia de etiqueta al agendar |
+
+Y las ranuras se reetiquetan así:
 
 | Ranura | **E1** · Sin cuestionario | **E2** · Completo, sin agendar | **E3** · Completo y agendado |
 |---|---|---|---|
@@ -234,7 +238,7 @@ Es el mismo mecanismo que rige la página de un club: **nunca se entrega una lis
 
 ## 2.5 Los menús, página por página
 
-Lo que sigue son las cuatro ranuras aplicadas a cada tipo de página, en los tres estados. **El menú superior no se repite: está en todas.**
+Lo que sigue son las ranuras aplicadas a cada tipo de página, en los tres estados, **con el número de botones que de verdad tiene cada una.** El menú superior no se repite: está en todas.
 
 ### 2.5.1 Inicio
 
@@ -250,7 +254,9 @@ La ranura 1 no ofrece encontrar un club: ofrece alternativas al que la persona e
 
 | Estado | Menú contextual |
 |---|---|
-| **E1** | Otros clubes en tu ciudad **o** en tu área, según el caso · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
+| **E1** · ciudad con un solo club | **Tres botones.** Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
+| **E1** · ciudad con dos o tres | **Cuatro.** Otros clubes en tu ciudad · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
+| **E1** · ciudad con más de tres, y otro club a 10 km | **Cuatro.** Otros clubes en tu área · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
 | **E2** | **Conoce nuestros clubes** · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
 | **E3** | **Conoce nuestros clubes** · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
 
@@ -302,9 +308,11 @@ Es una amenidad con una particularidad: **no muestra ninguna de sus 34 actividad
 
 | Estado | Menú contextual |
 |---|---|
-| **E1** | Encuentra tu club ideal · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
-| **E2** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
-| **E3** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
+| **E1** | **Tres botones.** Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita |
+| **E2** | **Tres.** Tu club ideal · Volver a tu experiencia ideal · Agenda tu visita |
+| **E3** | **Tres.** Tu club ideal · Volver a tu experiencia ideal · Tu visita agendada |
+
+**Sin ranura de objetivo.** Quien está comparando precios no está eligiendo un objetivo, y meterle esa pregunta aquí lo saca de lo que vino a hacer. Si quiere su plan, la ranura 2 se lo da completo.
 
 **Sin botón de compra.** El sitio muestra precios del CRM y no vende en línea: la ruta es agendar, y la venta se cierra en el club o por teléfono.
 
@@ -312,11 +320,64 @@ Es una amenidad con una particularidad: **no muestra ninguna de sus 34 actividad
 
 | Estado | Menú contextual |
 |---|---|
-| **E1** | Encuentra tu club ideal · Diseña tu experiencia · ¿Cuál es tu objetivo? · Agenda tu visita |
-| **E2** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Agenda tu visita |
-| **E3** | Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Tu visita agendada |
+| **E1** | **Dos botones.** Diseña tu experiencia · Agenda tu visita |
+| **E2** | **Dos.** Volver a tu experiencia ideal · Agenda tu visita |
+| **E3** | **Dos.** Volver a tu experiencia ideal · Tu visita agendada |
+
+**Es el menú más corto del sitio, y es deliberado.** Un artículo no es una decisión de club ni de objetivo: es la capa anterior, donde la persona todavía está averiguando qué le conviene. Llenarlo de geografía y de objetivos interrumpe la lectura, que es justo lo que se le pidió hacer.
 
 Un artículo lleva además **el enlace al hub que le corresponde**, que es lo que convierte al blog en la capa que alimenta a las otras diez en vez de competir con ellas.
+
+### 2.5.9 Objetivo · los cinco hubs de perfil
+
+Además del esqueleto, estas páginas llevan **«Artículos o información útil»**, que se enciende cuando hay al menos un artículo del blog etiquetado para esa página. Si no lo hay, no aparece y no deja hueco.
+
+| Estado | Menú contextual |
+|---|---|
+| **E1** | **Cuatro o cinco.** Encuentra tu club ideal · Diseña tu experiencia · Conoce las clases adecuadas para tu objetivo · Artículos, si hay · Agenda tu visita |
+| **E2** | **Cuatro o cinco.** Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo, en tu club · Artículos, si hay · Agenda tu visita |
+| **E3** | Igual que E2, con Tu visita agendada |
+
+**Rehabilitación** lleva además la firma del especialista con cédula a la vista y el aviso de salud. No es un botón, pero condiciona la página.
+
+### 2.5.10 Bajar de peso
+
+| Estado | Menú contextual |
+|---|---|
+| **E1** | **Cinco.** Encuentra tu club ideal · Diseña tu experiencia · Conoce las clases adecuadas para tu objetivo · **Artículos** · Agenda tu visita |
+| **E2** | **Cinco.** Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo, en tu club · **Artículos** · Agenda tu visita |
+| **E3** | Igual que E2, con Tu visita agendada |
+
+**Es la única página donde «Artículos» nunca falta**, porque siempre tiene artículos etiquetados. Lleva además la firma del médico y el aviso de salud antes de cualquier recomendación.
+
+### 2.5.11 Entrenamiento personal
+
+| Estado | Menú contextual |
+|---|---|
+| **E1** | **Cuatro o cinco.** Encuentra tu club ideal · Diseña tu experiencia · ¿Cuál es tu objetivo? · Artículos, si hay · Agenda tu visita |
+| **E2** | **Cuatro o cinco.** Tu club ideal · Volver a tu experiencia ideal · Las clases para tu objetivo · Artículos, si hay · Agenda tu visita |
+| **E3** | Igual que E2, con Tu visita agendada |
+
+No hay página por entrenador: la decisión es de club, no de persona.
+
+### 2.5.12 Cuántos botones tiene cada página
+
+| Tipo de página | E1 | E2 | E3 |
+|---|---|---|---|
+| **Inicio** | 4 | 4 | 4 |
+| **Club** · ciudad de un club | **3** | 4 | 4 |
+| **Club** · las demás ciudades | 4 | 4 | 4 |
+| **Amenidad** | 4 | 4 | 4 |
+| **Clase** premium e individual | 4 | 4 | 4 |
+| **Entrenamiento individual** · las tres modalidades | 4 | **5** | **5** |
+| **FitKidz** | 4 | **5** | **5** |
+| **Hub de perfil** | 4 o **5** | 4 o **5** | 4 o **5** |
+| **Bajar de peso** | **5** | **5** | **5** |
+| **Entrenamiento personal** | 4 o **5** | 4 o **5** | 4 o **5** |
+| **Membresías** | **3** | **3** | **3** |
+| **Blog** | **2** | **2** | **2** |
+
+**De dos a cinco botones.** El menú no es una plantilla: es lo que esa página, en ese momento, tiene que ofrecerle a esa persona.
 
 ## 2.6 Qué se lleva consigo al cuestionario
 
