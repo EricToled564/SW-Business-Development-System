@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-62. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-64. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -329,6 +329,30 @@ Y las tres **empiezan por las preguntas de contexto de la página desde la que s
 Es el mismo mecanismo que rige la página de un club: **nunca se entrega una lista de clases suelta. Las clases viven dentro del objetivo al que sirven.**
 
 **Aterriza en:** capítulos 2.4.5, 2.5.5 y 6.
+
+### D-63 · El menú contextual se deriva de seis variables, no se enumera
+
+Especificar el menú página por página no permite saber si están cubiertos todos los casos. **Se especifica como una regla de decisión por botón, evaluada sobre seis variables:** el cuestionario, la cita, el tipo de página, el club de referencia, la densidad de clubes a su alrededor y los artículos etiquetados.
+
+**Tres combinaciones no existen, y el documento dice por qué:** sin cuestionario no puede haber cita, porque agendar exige haber completado el cuestionario; con cuestionario siempre hay club, porque el cuestionario lo resuelve; y en la página de un club siempre hay club de referencia, porque aterrizar ahí lo identifica.
+
+Con eso, las dos primeras variables colapsan en los tres estados que el documento usa como taquigrafía. **El apartado 2.5 comprueba los treinta y tres escenarios** —once tipos de página por tres estados— y cada celda sale de aplicar las reglas, no de escribirla a mano.
+
+**Aterriza en:** capítulos 2.4 y 2.5.
+
+### D-64 · Una sola jerarquía de clubes, y lo que cambia es el club de referencia
+
+Había dos reglas de geografía distintas: una de 10 km medida desde el club de la página, y otra de 5 km medida desde el club ideal. **Queda una sola jerarquía —zona a 5 km, ciudad, República— y lo que cambia es desde dónde se mide:**
+
+| Estado | Club de referencia |
+|---|---|
+| Sin cuestionario, en la página de un club | El club de esa página |
+| Sin cuestionario, en cualquier otra página | Ninguno: no hay geografía que resolver todavía |
+| Con cuestionario, en cualquier página | **El club ideal de la persona**, aunque esté viendo la página de otro |
+
+Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite, porque ahí es donde va a entrenar.
+
+**Aterriza en:** capítulos 2.4.3 y 2.4.4.
 
 ---
 
