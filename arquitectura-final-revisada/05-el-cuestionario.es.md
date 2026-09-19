@@ -228,6 +228,14 @@ Algunas respuestas no cambian el plan: cambian cómo el asesor conduce la conver
 | La disponibilidad declarada no coincide con las clases idóneas | 7 y 8 |
 | Nivel de dominio | 9 |
 | Viene de otro gimnasio, y cuál | 10 y 10a |
+
+A esas señales, que salen de lo que la persona contesta, se suma una que sale del propio sistema:
+
+| Señal | Qué la dispara |
+|---|---|
+| **Dato desactualizado** | El CRM no respondió al componer la experiencia. La bandera dice qué dato se usó del último guardado y cuál era, para que el asesor lo verifique antes de la visita |
+
+Es la regla general: la contingencia se resuelve sin hacerle difícil la vida a la persona y sin mentirle, y viaja al brief.
 | Regresa a Sports World: se localiza su membresía anterior antes de la visita | 10 |
 | Cuánto duró la pausa | 11 |
 | Con quién visitará el club | 13 |
