@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-58. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-59. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -270,6 +270,22 @@ Se retiraron en esta pasada: el apartado 7.5.3, «Por qué está escrito así»,
 La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está en la tabla, no persiste» se queda, porque es una regla; «por eso este apartado no enuncia un principio» se va, porque habla del documento.
 
 **Aterriza en:** todos los capítulos.
+
+### D-59 · Nunca se le hace difícil la vida a la persona: se resuelve y se avisa al asesor
+
+**Es una regla de decisión, y gobierna todo el sistema.** Cada vez que aparezca la disyuntiva entre
+
+| Opción A | Opción B |
+|---|---|
+| Pedirle a la persona que haga algo más, o decirle que no se puede atender su solicitud | Continuar el proceso de la mejor manera posible, **sin mentirle**, y avisarle al asesor de la contingencia |
+
+**se elige siempre la B.**
+
+**Primera aplicación · cuando el CRM no responde.** La página sigue con el último dato guardado y **no se le pide a la persona que confirme nada por teléfono.** La experiencia se construye y se entrega. Lo que ocurre es que **el brief del asesor lleva una bandera** que dice con qué dato desactualizado se construyó y cuál era. Sustituye lo que indica hoy `contenido-minimo-por-tipo-de-pagina.es.md`, que pedía avisarle a la persona.
+
+**Los dos límites de la regla.** No se miente: no se inventa un horario, un precio ni una disponibilidad que no se tienen. Y no se calla hacia dentro: toda contingencia resuelta en silencio hacia la persona **viaja al brief**, para que el asesor sepa con qué está trabajando.
+
+**Aterriza en:** capítulos 2, 5.9, 7.7 y 13.
 
 ---
 
