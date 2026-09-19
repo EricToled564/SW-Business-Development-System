@@ -142,13 +142,9 @@ Ningún pixel de analítica se dispara antes de la fase 3.
 | Al entregar sus datos | Se crea la copia de seguridad del registro, en la base ligada al sistema de clientes por número de identificación |
 | A partir de ahí | Cerrar la sesión ya no pierde el registro: dispara su escritura con la bandera «no quiso agendar visita» |
 
+**Lo que no está en la tabla, no persiste.**
+
 **La experiencia ideal no vive en el sistema de clientes.** Vive en una base propia, ligada al registro del prospecto por su identificador. Eso importa para el reencuentro: **si la persona vuelve otro día y rehace su cuestionario, su registro de prospecto se actualiza —no se duplica— y su experiencia anterior se elimina por completo y se reemplaza por la última.** Una persona, un registro, una experiencia vigente. El capítulo 8 especifica la conciliación y el capítulo 13 el contrato de esa base.
-
-### 7.5.3 Por qué está escrito así
-
-El documento anterior sostenía un principio de «sin persistencia» que hoy tiene dos excepciones: la copia del lado del servidor y el identificador de sesión. Sostener el principio y las excepciones al mismo tiempo deja al lector sin saber cuál manda.
-
-Por eso este apartado no enuncia un principio: **enumera qué persiste, dónde y desde cuándo.** Lo que no está en la tabla, no persiste.
 
 ## 7.6 El paso a BES, en cualquier momento
 
