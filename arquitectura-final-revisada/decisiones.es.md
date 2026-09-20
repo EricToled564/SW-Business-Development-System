@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-64. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-79. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -227,6 +227,8 @@ Los tres estados que gobiernan el menú contextual —sin cuestionario, completo
 
 **Aterriza en:** capítulos 2.4 —cuando se redacte— y 7.5.
 
+**Corregida por D-60:** los tres estados dejaron de depender de por qué puerta entró la persona y pasaron a depender de hasta dónde llegó. «Completo, fuera del flujo» ya no existe como estado propio.
+
 ### D-56 · Al reencontrarse: el prospecto se actualiza, su experiencia se reemplaza
 
 Una persona que ya está registrada —por ejemplo con la bandera «no quiso agendar visita»— vuelve días después, rehace el cuestionario y esta vez sí agenda. Qué ocurre con lo que ya existía:
@@ -243,6 +245,8 @@ Una persona que ya está registrada —por ejemplo con la bandera «no quiso age
 **El borrado no deja hueco en la medición.** Las etapas de la espina del funnel no cuentan registros guardados, cuentan eventos en el momento en que ocurren: E2 cuenta al responderse la primera pregunta y **E3 cuenta cuando se genera la experiencia ideal**, no cuando se consulta después. Rehacer el cuestionario dispara un E2 y un E3 nuevos, que quedan registrados aunque el documento anterior se borre.
 
 **Aterriza en:** capítulos 8, 13 y 15.
+
+**Corregida por D-68:** el registro del prospecto sigue siendo uno solo, pero la experiencia ideal puede ser más de una, porque cada cita lleva la suya.
 
 ### D-57 · El capítulo 2 se reescribe, y su material se reubica
 
@@ -314,6 +318,8 @@ La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está 
 
 **Aterriza en:** capítulos 2.4 y 2.5.
 
+**Corregida por D-65 y D-67:** las etiquetas de la ranura del club pasan a ser «Encuentra tu club ideal» y «Conoce otros clubes Sports World», la regla por tamaño de ciudad y el radio de 10 km se retiran, y la ranura de la visita se comporta distinto en el cuerpo y en el encabezado.
+
 ### D-61 · Tres botones, una sola puerta, y la pregunta de contexto primero
 
 **Encuentra tu club ideal, ¿Cuál es tu objetivo? y Diseña tu experiencia abren el mismo cuestionario.** No son tres instrumentos: son tres puertas al mismo.
@@ -330,6 +336,8 @@ Es el mismo mecanismo que rige la página de un club: **nunca se entrega una lis
 
 **Aterriza en:** capítulos 2.4.5, 2.5.5 y 6.
 
+**Corregida por D-73:** la etiqueta nombra el objetivo, «Conoce las clases ideales para [nombre del objetivo]», y con dos objetivos declarados hay dos botones.
+
 ### D-63 · El menú contextual se deriva de seis variables, no se enumera
 
 Especificar el menú página por página no permite saber si están cubiertos todos los casos. **Se especifica como una regla de decisión por botón, evaluada sobre seis variables:** el cuestionario, la cita, el tipo de página, el club de referencia, la densidad de clubes a su alrededor y los artículos etiquetados.
@@ -339,6 +347,8 @@ Especificar el menú página por página no permite saber si están cubiertos to
 Con eso, las dos primeras variables colapsan en los tres estados que el documento usa como taquigrafía. **El apartado 2.5 comprueba los treinta y tres escenarios** —once tipos de página por tres estados— y cada celda sale de aplicar las reglas, no de escribirla a mano.
 
 **Aterriza en:** capítulos 2.4 y 2.5.
+
+**Corregida por D-65:** la variable del club de referencia se retira, porque la ranura ya no depende del tipo de página. Las seis variables quedan en cinco.
 
 ### D-64 · Una sola jerarquía de clubes, y lo que cambia es el club de referencia
 
@@ -354,12 +364,212 @@ Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite
 
 **Aterriza en:** capítulos 2.4.3 y 2.4.4.
 
+**Corregida por D-65:** la jerarquía se mide siempre desde el club ideal, nunca desde el club de la página, porque antes del cuestionario no hay jerarquía que mostrar.
+
 ---
+
+---
+
+## 8 · El menú contextual, fijado punto por punto
+
+Las decisiones de este apartado se tomaron el 20 de septiembre de 2026, una por una, y **sustituyen lo que D-60, D-63 y D-64 decían sobre las etiquetas y la geografía**. Lo que aquellas decisiones fijaron y aquí no se menciona sigue vigente.
+
+### D-65 · La ranura del club tiene dos etiquetas, y la geografía vive dentro del botón
+
+La ranura del club **no depende del tipo de página**. Depende de una sola cosa: si la persona contestó el cuestionario.
+
+| Estado | Qué dice la ranura |
+|---|---|
+| **Sin cuestionario**, en cualquier página, también en la de un club | **Encuentra tu club ideal** — abre el cuestionario |
+| **Con cuestionario**, con o sin cita, en cualquier página | **Conoce otros clubes Sports World** — abre la jerarquía de abajo |
+
+**La jerarquía se despliega dentro del botón**, medida desde el club ideal de la persona, aunque esté viendo la página de otro club:
+
+| Qué hay alrededor del club ideal | Qué opciones se despliegan |
+|---|---|
+| Un solo club en su ciudad | Conoce nuestros clubes en todo el país |
+| Dos o más en la ciudad, ninguno a 5 km | Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
+| Dos o más en la ciudad, al menos uno a 5 km | Conoce otros clubes en tu área · Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
+
+**El único radio del sistema es 5 km.** Ningún nivel se muestra vacío y el orden va siempre de lo cercano a lo lejano. Antes del cuestionario no hay geografía que resolver: sin club ideal no hay desde dónde medir.
+
+**Sustituye:** de D-60, las etiquetas «Tu club ideal» y «Conoce nuestros clubes», la regla por tamaño de ciudad y el radio de 10 km. De D-64, el club de la página como punto de medida. De D-63, la variable del club de referencia, que deja de hacer falta.
+
+**Aterriza en:** capítulos 2.4 y 2.5.
+
+### D-66 · El orden de los botones es fijo
+
+De izquierda a derecha: **el club, la experiencia y la visita.** Después, los botones propios de la página.
+
+El orden no cambia con el estado ni con el tipo de página. Cuando una ranura no tiene nada que ofrecer, las demás conservan su orden entre sí.
+
+**Aterriza en:** capítulo 2.4.
+
+### D-67 · Cuando ya hay cita: el cuerpo lleva a la cita y el encabezado ofrece otro club
+
+**En el cuerpo de la página**, la ranura de la visita dice **«Tu visita agendada»** y lleva a su cita, para verla, cambiarla o cancelarla.
+
+**En el encabezado**, «Agenda tu visita» no cambia de etiqueta, pero sí de comportamiento: antes de llevarla a ningún lado **le pregunta si desea agendar una visita en otro club.**
+
+| Respuesta | Qué ocurre |
+|---|---|
+| **No** | La lleva a su visita agendada |
+| **Sí** | Le pide el club, **recalcula su experiencia ideal para ese club con las respuestas que ya dio** —no se le vuelve a preguntar nada— y la lleva a agendar la cita en ese club |
+
+**La primera cita se conserva.** Una persona puede tener visitas agendadas en dos clubes.
+
+**Aterriza en:** capítulos 2.4, 3 y 7.
+
+### D-68 · Cada cita tiene su propia experiencia ideal y su propio brief
+
+Dos clubes distintos resuelven clases distintas, así que **no puede haber una sola experiencia para dos citas.** Cada cita agendada lleva la experiencia recalculada para su club y el brief hecho con esa experiencia, y el club recibe la suya.
+
+**Al confirmarse el alta de la membresía se verifica en qué club ocurrió: la experiencia de ese club prevalece y las demás se eliminan.** El alta llega por el corte diario del sistema de clientes.
+
+**Al rehacer el cuestionario otro día**, la experiencia nueva **sustituye a la anterior solo si resuelve el mismo club**. Si resuelve otro, se suma: las dos conviven hasta el alta.
+
+**Corrige D-56**, que fijaba «una persona, un registro de prospecto, una experiencia vigente». El registro del prospecto sigue siendo uno solo, conciliado con la llave canónica; lo que puede ser más de una es la experiencia.
+
+**Aterriza en:** capítulos 3, 7, 8 y 13.
+
+### D-69 · Nada se escribe ni se envía hasta que la sesión cierra
+
+Mientras la sesión está viva, la persona puede cambiar de club, cambiar de clases, agendar y agendar en otro club las veces que quiera. **Nada de eso se escribe ni se envía**: vive en la sesión.
+
+**La sesión cierra por lo que ocurra primero:** la persona sale y el navegador alcanza a avisarlo, o pasan **diez minutos sin actividad**. No se puede depender solo de la salida, porque cerrar la pestaña, perder la señal o bloquear el teléfono no siempre avisan al servidor.
+
+Al cerrar, y **una sola vez**, se escribe el estado final:
+
+| Qué | A dónde |
+|---|---|
+| Las experiencias ideales, una por cita | A su base propia |
+| El registro del prospecto y sus citas | Al sistema de clientes |
+| Su experiencia ideal, en su versión final | Por correo a la persona |
+| El brief de cada cita | Por correo a su club |
+
+**De ahí se sigue que no hay correos de cancelación por lo que la persona cambió dentro de la sesión:** nada salió mientras cambiaba. Los avisos de cambio o cancelación al club solo ocurren cuando vuelve otro día y mueve una cita ya enviada.
+
+**Corrige el capítulo 7**, que escribía al sistema de clientes en el momento de agendar y enviaba el correo al terminar el cuestionario.
+
+**Aterriza en:** capítulos 7, 8, 13 y 15.
+
+### D-70 · Las páginas de objetivo son los seis objetivos del cuestionario
+
+**Una sola lista de objetivos en todo el sistema**: la del reactivo 4 de CEI-01. Las páginas de objetivo dejan de llamarse por perfiles y pasan a llamarse por los seis objetivos, de modo que el cuestionario, las páginas, el menú, la matriz de clases y la experiencia hablen de lo mismo.
+
+| Antes | Ahora |
+|---|---|
+| Primeros pasos · Salud y bienestar · Estética corporal · Ganar fuerza · Rehabilitación · Bajar de peso | Bajar de peso · Estética corporal y definición muscular · Aumentar masa muscular · Desempeño atlético · Capacidad cardiovascular · Moverse mejor con más agilidad |
+
+**Cabe en el contrato**, que fija cinco hubs de perfil y un hub de bajar de peso **sin nombrarlos**: son seis páginas antes y seis después. Bajar de peso conserva su página y su tratamiento de salud.
+
+**Aterriza en:** capítulos 2 y 6.
+**Fuera de la Arquitectura:** obliga a corregir el inventario de páginas y las direcciones de `/perfiles/`.
+
+### D-71 · Nunca se entrega una lista suelta: las clases viven dentro del objetivo
+
+**La página de un club no muestra un catálogo de clases.** Muestra los seis objetivos, y dentro de cada uno las clases de ese club que sirven a ese objetivo, **con sus días y horarios**. Las amenidades aparecen en la descripción de cómo ese club ayuda a alcanzar el objetivo, no como inventario.
+
+**La página de un objetivo muestra las clases que entregan ese objetivo**, y al tocar una lleva a la página de esa clase.
+
+**Los horarios viven en un solo lugar: la página del club.** La página de una clase **no lleva días ni horarios**, porque cada club tiene su propia cuadrícula: muestra en qué clubes se imparte, y al tocar un club se ven ahí los días y horarios de esa clase.
+
+**Sustituye** lo que pedía `contenido-minimo-por-tipo-de-pagina.es.md` para la página de club —el catálogo de las 51 clases para adultos y las 34 para menores— y para la página de clase —«clubes donde se imparte, con sus horarios reales»—.
+
+**Aterriza en:** capítulos 2.2 y 2.3.
+
+### D-72 · La leyenda de disponibilidad en las listas de clases
+
+Con el cuestionario contestado, **cada clase de una lista de objetivo lleva la leyenda «Disponible en tu club» o «No disponible en tu club».**
+
+Es **la única excepción** a la regla del capítulo 3.2.5, que prohíbe comunicarle a la persona una carencia. Aquí no es una carencia de su plan: es información para comparar clubes, en una superficie que existe para eso.
+
+**Aterriza en:** capítulos 2.4 y 3.
+
+### D-73 · La ranura del objetivo, antes y después del cuestionario
+
+| Estado | Qué dice | Qué hace |
+|---|---|---|
+| **Sin cuestionario**, fuera de una página de objetivo | **¿Cuál es tu objetivo?** | Abre el cuestionario, empezando por las preguntas de contexto de la página |
+| **Sin cuestionario**, en una página de objetivo | **Conoce las clases ideales para [nombre del objetivo]** | Las clases de ese objetivo en toda la red |
+| **Con cuestionario**, en cualquier página | **Conoce las clases ideales para [nombre de su objetivo]** | Las clases de su objetivo declarado, con la leyenda de disponibilidad de D-72 |
+
+**Con dos objetivos declarados hay dos botones**, uno por objetivo, y el principal va primero.
+
+**Sustituye** de D-62 la etiqueta «Las clases para tu objetivo»: el objetivo se nombra, no se alude.
+
+**Aterriza en:** capítulos 2.4 y 6.
+
+### D-74 · Los botones propios de cada tipo de página
+
+| Página | Botón propio | Qué hace |
+|---|---|---|
+| **Clase** | **Otras clases similares** | Las clases agrupadas por nivel de intensidad y por beneficios parecidos a la que está viendo |
+| **Blog** | **Otros artículos similares** | Los artículos relacionados con el que está leyendo |
+| **Entrenamiento individual**, las tres modalidades | **Tu rutina individual** | La parte individual de su experiencia. Solo con cuestionario, y **para todas las personas**: los bloques individuales no son exclusivos de quien pidió entrenar sin compañía |
+
+**El botón «Artículos o información útil» desaparece de todas las páginas.** Donde un artículo es pertinente, la página lo enlaza **dentro de su contenido**, no desde el menú. Sustituye la regla del contenido mínimo que lo encendía por etiquetas.
+
+**Aterriza en:** capítulos 2.4 y 2.5.
+
+### D-75 · Membresías no lleva la ranura del objetivo
+
+Quien compara precios no está eligiendo objetivo, y en esa página ya hay dos botones que abren el cuestionario. **Es el único tipo de página sin las cuatro ranuras.** El blog sí las lleva todas.
+
+**Aterriza en:** capítulo 2.5.
+
+### D-76 · FitKidz se llama por su nombre y se parte en dos secciones
+
+La página se llama **«Actividades para menores de 3 meses a 13 años»**, como el servicio en todo el proyecto, y tiene dos secciones:
+
+| Sección | Cómo funciona |
+|---|---|
+| **Clases para niños** | Como una página de objetivo. El botón dice **«Conoce las clases disponibles»** y abre la lista; al tocar una clase se ven los clubes que la imparten, y al tocar un club, sus días y horarios |
+| **FitKidz** | Los clubes donde se ofrece; la lista lleva a la página de cada club |
+
+Su menú es el de cualquier otra página. **Desaparecen los tres botones que tenía**: «Clases FitKidz disponibles» y «Las actividades de tu club para tus hijos», que mostraban lo mismo, y los hasta tres clubes propuestos, cuyo trabajo hacen ahora las dos secciones.
+
+**Sustituye** las reglas de botones propios de FitKidz del contenido mínimo.
+
+**Aterriza en:** capítulos 2.2 y 2.5.
+
+### D-77 · Las tres páginas de entrenamiento individual se comportan como páginas de objetivo
+
+Entrenamiento con pesas, entrenamiento aeróbico y **entrenamiento aeróbico en alberca**. Su botón propio de contenido dice **«Conoce los programas de [nombre de la modalidad]»** y abre los seis objetivos, cada uno con su programa: el nombre que la persona lee y por qué le sirve. En el aeróbico, además, la máquina, la duración y cuándo hacerlo.
+
+**Nunca se le muestra a la persona el equipo, el protocolo ni el nombre técnico del programa.** El equipo y la carga los define el entrenador en la primera sesión. Los nombres técnicos viven en las fichas internas.
+
+**Los programas son secciones dentro de las tres páginas, no páginas nuevas:** el contrato cuenta 47 clases individuales, que ya incluyen estas tres, y cualquier adición exige convenio modificatorio.
+
+**Aterriza en:** capítulos 2.5 y 10.
+
+### D-78 · El entrenamiento aeróbico en alberca se prescribe por esfuerzo percibido, no por pulsaciones
+
+**En el agua, el corazón late entre 8 y 12 pulsaciones por minuto menos que en piso al mismo esfuerzo**, por efecto de la presión del agua y la flotación sobre la distribución de la sangre. Una zona de pulsaciones calculada para piso, aplicada en alberca, subestima el trabajo real.
+
+De ahí, dos reglas del sistema:
+
+1. **La intensidad de los programas acuáticos se expresa en esfuerzo percibido y en cadencia**, nunca en pulsaciones trasladadas del piso.
+2. **El reactivo 5 del cuestionario —el ritmo que va con la persona— es el criterio que ordena los programas acuáticos**, igual que ordena las clases.
+
+La correspondencia de los seis objetivos con sus programas acuáticos queda en el capítulo 10, con su fundamento documentado. **Los seis programas se marcan como propuesta sujeta a validación del profesional de salud que Sports World designe**, igual que los del bloque aeróbico en piso.
+
+**Aterriza en:** capítulos 10 y 11.
+
+### D-79 · Lo que el sistema nunca hace en el agua
+
+Ninguna pieza del sistema —ni la experiencia, ni el brief, ni BES— **propone apnea, hiperventilación previa a la inmersión ni series de aguante de la respiración.** La pérdida de conocimiento por falta de oxígeno bajo el agua es la principal causa de ahogamiento entre nadadores con experiencia, y ocurre sin aviso.
+
+**Aterriza en:** capítulos 10 y 12.
 
 ## Puntos abiertos que esta revisión destapó
 
 | Punto | Qué falta |
 |---|---|
+| **La atención a personas socias** | El sitio y BES atienden prospectos. Si Sports World quiere publicar la política de cancelación o un centro de ayuda, es materia institucional y queda fuera de este documento y de las 148 páginas. **Pendiente de confirmación de Eric** |
+| **Las direcciones de las páginas de objetivo** | D-70 las renombra; falta fijar el texto de cada dirección y las redirecciones desde las anteriores |
+| **Los seis programas acuáticos** | D-78 los deja como propuesta hasta la validación del profesional de salud que Sports World designe |
+| **Requisitos no funcionales** | Accesibilidad, tiempos de carga, comportamiento sin JavaScript y en conexión lenta no tienen lugar en la estructura de dieciséis capítulos y seis anexos. **Pendiente de confirmación de Eric** |
 | **Dos documentos se llaman CEI-01** | El del Anexo A del Manual del Proceso Comercial y el vigente. La etiqueta no distingue |
 | **Dos asistentes se llaman BES** | El de esta Arquitectura, que atiende prospectos, y el del archivo de configuración del depósito, que atiende al equipo del proyecto y declara expresamente que no atiende prospectos |
 | **De dónde sale el club sustituto** | Ver D-43 |
