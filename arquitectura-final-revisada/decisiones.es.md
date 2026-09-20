@@ -391,7 +391,9 @@ La ranura del club **no depende del tipo de página**. Depende de una sola cosa:
 | Dos o más en la ciudad, ninguno a 5 km | Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
 | Dos o más en la ciudad, al menos uno a 5 km | Conoce otros clubes en tu área · Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
 
-**El único radio del sistema es 5 km.** Ningún nivel se muestra vacío y el orden va siempre de lo cercano a lo lejano. Antes del cuestionario no hay geografía que resolver: sin club ideal no hay desde dónde medir.
+**El único radio de esta jerarquía es 5 km**, y sustituye a los 10 km que regían antes. Ningún nivel se muestra vacío y el orden va siempre de lo cercano a lo lejano. Antes del cuestionario no hay geografía que resolver: sin club ideal no hay desde dónde medir.
+
+**Alcance de la regla.** Estos 5 km son los de la jerarquía del menú, que sirve para que la persona **explore** otros clubes. El radio con el que el sistema **resuelve** su club ideal es otra cosa y vive en el capítulo 9. Que sean dos números distintos queda registrado como punto abierto.
 
 **Sustituye:** de D-60, las etiquetas «Tu club ideal» y «Conoce nuestros clubes», la regla por tamaño de ciudad y el radio de 10 km. De D-64, el club de la página como punto de medida. De D-63, la variable del club de referencia, que deja de hacer falta.
 
@@ -567,6 +569,7 @@ Ninguna pieza del sistema —ni la experiencia, ni el brief, ni BES— **propone
 | Punto | Qué falta |
 |---|---|
 | **La atención a personas socias** | El sitio y BES atienden prospectos. Si Sports World quiere publicar la política de cancelación o un centro de ayuda, es materia institucional y queda fuera de este documento y de las 148 páginas. **Pendiente de confirmación de Eric** |
+| **Dos radios en el sistema** | La jerarquía del menú mide 5 km desde el club ideal (D-65); el resolvedor de club del capítulo 9 usa 10 km para buscar un club que cumpla los requisitos. Son dos cosas distintas —explorar y resolver— pero conviene decidir si se unifican. **Pendiente de confirmación de Eric** |
 | **Las direcciones de las páginas de objetivo** | D-70 las renombra; falta fijar el texto de cada dirección y las redirecciones desde las anteriores |
 | **Los seis programas acuáticos** | D-78 los deja como propuesta hasta la validación del profesional de salud que Sports World designe |
 | **Requisitos no funcionales** | Accesibilidad, tiempos de carga, comportamiento sin JavaScript y en conexión lenta no tienen lugar en la estructura de dieciséis capítulos y seis anexos. **Pendiente de confirmación de Eric** |

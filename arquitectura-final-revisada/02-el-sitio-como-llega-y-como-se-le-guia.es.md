@@ -231,7 +231,7 @@ El orden no cambia con el estado ni con el tipo de página, y es la decisión D-
 | **Dos o más en la ciudad, ninguno a 5 km** | Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
 | **Dos o más en la ciudad, al menos uno a 5 km** | Conoce otros clubes en tu área · Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
 
-**El único radio del sistema es 5 km**, y el orden va siempre de lo cercano a lo lejano. **Ningún nivel se muestra vacío:** en una ciudad de un solo club, el nivel de la ciudad no aparece, porque no tendría qué mostrar, y decirle a la persona que no hay es justo lo que el sistema nunca hace.
+**El único radio de esta jerarquía es 5 km**, y el orden va siempre de lo cercano a lo lejano. Es el radio con el que la persona **explora** otros clubes; el radio con el que el sistema **resuelve** su club ideal lo fija el capítulo 9. **Ningún nivel se muestra vacío:** en una ciudad de un solo club, el nivel de la ciudad no aparece, porque no tendría qué mostrar, y decirle a la persona que no hay es justo lo que el sistema nunca hace.
 
 **Antes del cuestionario no hay geografía que resolver**, porque sin club ideal no hay desde dónde medir. Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite, **porque ahí es donde va a entrenar.** Es la decisión D-65.
 
