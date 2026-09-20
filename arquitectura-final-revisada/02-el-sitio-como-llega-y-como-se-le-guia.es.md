@@ -12,29 +12,46 @@ Son **148 páginas en once niveles**. Este capítulo explica por qué existe cad
 
 **Una página que no responde a una búsqueda real no tiene por qué existir.** Los once niveles se definieron a partir de lo que la gente escribe cuando busca, no a partir del organigrama de Sports World.
 
-| Nivel | Páginas | Dirección | Qué intención atiende |
-|---|---|---|---|
-| **01** · Inicio | 1 | `/` | Quien ya conoce la marca y la busca por su nombre |
-| **02** · Club | 49 | `/clubes/[club]/` | «Gimnasio cerca de mí», y el nombre de cada colonia o zona |
-| **03** · Hub de amenidad | 10 | `/amenidades/[amenidad]/` | «Gimnasio con alberca», «con vapor», «con sauna» |
-| **04** · Clase premium | 7 | `/clases/signature/[clase]/` | La disciplina buscada por su nombre, en su versión de marca |
-| **05** · Clase individual | 47 | `/clases/[clase]/` | «Yoga cerca de mí», y así con cada disciplina del catálogo |
-| **06** · Hub FitKidz | 1 | `/fitkidz/` | «Gimnasio con actividades para menores de 13 años» |
-| **07** · Hub de perfil | 5 | `/perfiles/[perfil]/` | Quien se reconoce en un perfil antes que en un objetivo |
-| **08** · Hub de bajar de peso | 1 | `/bajar-de-peso/` | «Gimnasio para perder peso», la intención de mayor volumen |
-| **09** · Hub de entrenamiento personal | 1 | `/personal-training/` | «Entrenador personal cerca de mí» |
-| **10** · Membresías | 6 | `/membresias/` | Quien ya decidió y compara precio y condiciones |
-| **11** · Blog | 20 | `/blog/[articulo]/` | Quien todavía no sabe que Sports World es una opción |
+| Nivel | Páginas | Qué intención atiende |
+|---|---|---|
+| **01** · Inicio | 1 | Quien ya conoce la marca y la busca por su nombre |
+| **02** · Club | 49 | «Gimnasio cerca de mí», y el nombre de cada colonia o zona |
+| **03** · Hub de amenidad | 10 | «Gimnasio con alberca», «con vapor», «con sauna» |
+| **04** · Clase premium | 7 | La disciplina buscada por su nombre, en su versión de marca |
+| **05** · Clase individual | 47 | «Yoga cerca de mí», y así con cada disciplina del catálogo |
+| **06** · Actividades para menores de 3 meses a 13 años | 1 | «Gimnasio con actividades para menores de 13 años» |
+| **07** · Objetivo | 5 | Quien busca por lo que quiere lograr con su cuerpo |
+| **08** · Bajar de peso | 1 | «Gimnasio para perder peso», la intención de mayor volumen |
+| **09** · Entrenamiento personal | 1 | «Entrenador personal cerca de mí» |
+| **10** · Membresías | 6 | Quien ya decidió y compara precio y condiciones |
+| **11** · Blog | 20 | Quien todavía no sabe que Sports World es una opción |
 
 **148 páginas.**
 
-### 2.1.1 Los niveles responden a los tres bloqueadores del capítulo 1
+### 2.1.1 Las páginas de objetivo son los seis objetivos del cuestionario
+
+Los niveles 07 y 08 suman **seis páginas, una por cada objetivo del reactivo 4 del cuestionario**. No es una coincidencia de conteo: es la regla que mantiene una sola lista de objetivos en todo el sistema.
+
+| Página | Objetivo del cuestionario |
+|---|---|
+| Bajar de peso · nivel 08 | Bajar de peso |
+| Estética corporal y definición muscular | Mejorar mi estética corporal y definición muscular |
+| Aumentar masa muscular | Aumentar masa muscular |
+| Desempeño atlético | Mejorar mi desempeño atlético |
+| Capacidad cardiovascular | Mejorar mi capacidad cardiovascular |
+| Moverse mejor con más agilidad | Moverme mejor con más agilidad |
+
+**El cuestionario, las páginas, el menú, la matriz de clases y la experiencia nombran lo mismo con las mismas palabras.** Cuando la página y el instrumento usan dos vocabularios, alguien tiene que traducir entre ellos en cada pantalla, y ahí es donde se pierden las correspondencias. Es la decisión D-70.
+
+Bajar de peso conserva su página propia, su firma médica y su tratamiento de salud, porque es la intención de mayor volumen de la categoría y la única clasificada como contenido sensible.
+
+### 2.1.2 Los niveles responden a los tres bloqueadores del capítulo 1
 
 Los tres bloqueadores no se resuelven con una página: se resuelven con un nivel completo.
 
 | Bloqueador | Qué niveles lo atienden |
 |---|---|
-| **El objetivo que no se atiende** — bajar de peso | Nivel 08, y los cinco perfiles del nivel 07 |
+| **El objetivo que no se atiende** — bajar de peso | Nivel 08, y las cinco páginas de objetivo del nivel 07 |
 | **La disciplina que existe y no se ve** | Niveles 03, 04, 05 y 06: cada amenidad y cada clase, con página propia |
 | **El laberinto de clics** | Nivel 02: una página por club, encontrable por su zona, sin pasar por el inicio |
 
@@ -46,47 +63,63 @@ Encima de los tres, el **nivel 11** atiende algo anterior: la búsqueda que ocur
 
 Cada tipo de página tiene un **contenido mínimo obligatorio**. No es una recomendación editorial: una página que no lo cumple no se publica.
 
-### 2.2.1 Lo que llevan todas
+### 2.2.1 La regla que gobierna todo el contenido
+
+> **Nunca se entrega una lista suelta. Las clases viven dentro del objetivo al que sirven, y los horarios viven dentro del club que los imparte.**
+
+De esa regla se siguen las tres decisiones que dan forma a las páginas del sitio, y es la decisión D-71:
+
+| Página | Qué muestra | Qué no muestra |
+|---|---|---|
+| **Club** | Los seis objetivos. Dentro de cada uno, las clases de **ese club** que sirven a ese objetivo, con sus días y horarios | Un catálogo de clases. Una lista de amenidades |
+| **Objetivo** | Las clases que entregan ese objetivo. Al tocar una, lleva a su página | Horarios: dependen del club |
+| **Clase** | En qué clubes se imparte. Al tocar un club, ahí se ven sus días y horarios | Días ni horarios propios |
+
+**Los horarios viven en un solo lugar: la página del club.** Cada club tiene su propia cuadrícula, y una clase que se imparte en treinta clubes tiene treinta horarios distintos. Publicarlos en la página de la clase obliga a la persona a buscar el suyo dentro de una tabla que no es para ella.
+
+**Las amenidades aparecen dentro del objetivo**, en la explicación de cómo ese club ayuda a alcanzarlo: la alberca se nombra cuando el objetivo se entrena en agua, no como renglón de un inventario.
+
+### 2.2.2 Lo que llevan todas las páginas
 
 | Elemento | Qué hace |
 |---|---|
-| **Encabezado** | Logotipo · **Tu Sports World** · **Diseña tu experiencia** · **Pregúntale a BES** · **Agenda tu visita** |
-| **Panel «Tu Sports World»** | El único punto de navegación estructural del sitio. Agrupa los ocho hubs: clubes, clases, amenidades, perfiles, bajar de peso, FitKidz, membresías y blog |
+| **Encabezado** | Logotipo · **Tu Sports World** · **Diseña tu experiencia** · **Habla con BES** · **Agenda tu visita** |
+| **Panel «Tu Sports World»** | El único punto de navegación estructural del sitio. Agrupa los ocho hubs: clubes, clases, amenidades, objetivos, bajar de peso, actividades para menores, membresías y blog |
 | **Asistente BES** | Disponible en todas las páginas. Se abre sin salir de la página, arranca en texto con conmutador a voz, y reconoce en qué página está la persona, así que responde sin que ella repita el contexto |
 
-Los tres elementos de en medio del encabezado —diseñar, preguntar, agendar— son **rutas paralelas**: la persona elige la que prefiera y ninguna tiene prioridad sobre las otras. **Agenda tu visita** es la acción de conversión del sitio y está disponible siempre, en todo dispositivo.
+Los tres elementos de en medio del encabezado —diseñar, preguntar, agendar— son **rutas paralelas**: la persona elige la que prefiera y ninguna tiene prioridad sobre las otras. **Agenda tu visita** es la acción de conversión del sitio y está disponible siempre, en todo dispositivo; el apartado 2.4.6 especifica qué hace cuando la persona ya tiene cita.
 
-### 2.2.2 Lo que lleva cada tipo
+### 2.2.3 Lo que lleva cada tipo de página
 
 | Tipo de página | Contenido mínimo |
 |---|---|
 | **Inicio** | Propuesta de valor de la red · buscador de clubes · enlaces a los ocho hubs · acceso al cuestionario |
-| **Club** | Nombre y dirección completa · horarios de atención día por día · teléfono y correo · amenidades · **qué clases se imparten ahí**, de las 51 para adultos y las 34 para menores · **horarios de cada clase, día por día, con la semana siguiente a la vista** · mapa · estado del club, abierto, cerrado temporalmente o próxima apertura · enlaces a los otros clubes del área |
-| **Hub de amenidad** | Descripción de la amenidad · **la lista de clubes que la tienen**, con enlace a cada uno · enlaces a las clases relacionadas |
-| **Clase premium** | Descripción con tratamiento editorial · beneficios · **nivel e intensidad** · **clubes donde se imparte, con sus horarios reales** |
-| **Clase individual** | Descripción · beneficios · nivel e intensidad · clubes donde se imparte, con sus horarios reales |
-| **Hub FitKidz** | Las 34 actividades para menores, **organizadas por edad, por disciplina y por club** · los clubes que ofrecen FitKidz |
-| **Hub de perfil** | Título con la palabra clave · **600 a 900 palabras de contenido útil** · preguntas frecuentes · enlaces a los clubes y las clases relacionadas · artículos del blog relacionados |
-| **Hub de bajar de peso** | Lo mismo que un perfil, más **la firma del médico que designe Sports World con su cédula a la vista**, un aviso de salud antes de cualquier recomendación y un video institucional de 45 a 60 segundos |
-| **Hub de entrenamiento personal** | Descripción del servicio · las modalidades de entrenamiento individual · enlaces a los cinco hubs de perfil · clubes donde se ofrece |
+| **Club** | Nombre y dirección completa · horarios de atención día por día · teléfono y correo · **los seis objetivos, y dentro de cada uno las clases de ese club que sirven a ese objetivo, con sus días y horarios, y las amenidades que ese objetivo usa** · mapa · estado del club, abierto, cerrado temporalmente o próxima apertura |
+| **Hub de amenidad** | Descripción de la amenidad · los clubes que la tienen, con enlace a cada uno · los objetivos que se entrenan con ella |
+| **Clase premium** | Descripción con tratamiento editorial · beneficios · nivel e intensidad · **los clubes donde se imparte**, cada uno con enlace a su página |
+| **Clase individual** | Descripción · beneficios · nivel e intensidad · los clubes donde se imparte, cada uno con enlace a su página |
+| **Actividades para menores de 3 meses a 13 años** | Dos secciones: **Clases para niños**, con la lista de actividades y los clubes que imparten cada una; y **FitKidz**, con los clubes donde se ofrece |
+| **Objetivo** | Título con la palabra clave del objetivo · 600 a 900 palabras de contenido útil · preguntas frecuentes · **las clases que entregan ese objetivo** · enlaces a los clubes · enlaces a los artículos del blog relacionados, dentro del contenido |
+| **Bajar de peso** | Lo mismo que un objetivo, más **la firma del médico que designe Sports World con su cédula a la vista**, un aviso de salud antes de cualquier recomendación y un video institucional de 45 a 60 segundos |
+| **Entrenamiento personal** | Descripción del servicio · las tres modalidades de entrenamiento individual · enlaces a las seis páginas de objetivo · clubes donde se ofrece |
 | **Membresías** | Por plan: descripción · qué incluye y qué no · precio · letra chica · comparativo entre planes · promociones vigentes |
-| **Blog** | Artículo con contenido propio · **etiquetas temáticas que lo ligan con clases, hubs y clubes** · enlaces internos |
+| **Blog** | Artículo con contenido propio · enlaces, dentro del texto, al objetivo y a las clases y clubes que menciona |
 
-### 2.2.3 De dónde sale ese contenido, y qué pasa cuando la fuente falla
+### 2.2.4 De dónde sale ese contenido, y qué pasa cuando la fuente falla
 
-**Lo que cambia todos los días no se escribe en la página: se trae del CRM.** Horarios de atención, datos de contacto, catálogo de clases, horarios de cada clase, planes, precios, descuentos y promociones. El gestor de contenidos no los edita.
+**Lo que cambia todos los días no se escribe en la página: se trae del sistema de clientes.** Horarios de atención, datos de contacto, catálogo de clases, horarios de cada clase, planes, precios, descuentos y promociones. El gestor de contenidos no los edita.
 
-**Si el CRM no responde, la página sigue con el último dato guardado y a la persona no se le pide nada.** No se le dice que confirme por teléfono, no se le muestra un hueco y no se le inventa un horario: el proceso continúa y ella recibe su experiencia.
+**Si el sistema de clientes no responde, la página sigue con el último dato guardado y a la persona no se le pide nada.** No se le dice que confirme por teléfono, no se le muestra un hueco y no se le inventa un horario: el proceso continúa y ella recibe su experiencia.
 
-**El aviso va al otro lado.** El brief del asesor lleva una bandera que dice **con qué dato desactualizado se construyó la experiencia y cuál era**, para que lo verifique antes de la visita. Es la regla general del sistema: se resuelve sin hacerle difícil la vida a la persona, sin mentirle, y se le avisa al asesor.
+**El aviso va al otro lado.** El brief del asesor lleva una bandera que dice **con qué dato desactualizado se construyó la experiencia y cuál era**, para que lo verifique antes de la visita. Es la regla general del sistema, la decisión D-59: se resuelve sin hacerle difícil la vida a la persona, sin mentirle, y se le avisa al asesor.
 
 El corte diario de las 06:00, hora de la Ciudad de México, fija qué versión de esos datos está publicada; el capítulo 13 especifica el contrato de cada fuente.
 
-### 2.2.4 Lo que el contenido no hace
+### 2.2.5 Lo que el contenido no hace
 
 - **No promete resultados en kilos ni en plazos.** Ninguna página del sitio.
-- **No vende en línea.** Membresías muestra los precios del CRM; la venta se cierra en el club o por teléfono, después de la visita.
-- **No firma lo que no puede firmar.** El hub de bajar de peso, el de rehabilitación y los artículos de nutrición, rehabilitación y suplementación llevan **firma de especialista con cédula profesional a la vista y aviso de salud**. Los otros cuatro perfiles no lo exigen.
+- **No vende en línea.** Membresías muestra los precios del sistema de clientes; la venta se cierra en el club o por teléfono, después de la visita.
+- **No firma lo que no puede firmar.** El hub de bajar de peso y los artículos de nutrición, rehabilitación y suplementación llevan **firma de especialista con cédula profesional a la vista y aviso de salud**. Las otras cinco páginas de objetivo no lo exigen.
 
 ---
 
@@ -96,33 +129,33 @@ Aquí está el mecanismo del capítulo, y se puede decir en una línea:
 
 > **Cada página demuestra capacidad. Ninguna entrega el plan.**
 
-La página de un club prueba que Sports World tiene alberca, vapor, veinte clases y horarios reales a quince minutos de donde la persona vive. Eso es lo que hoy no se ve, y hacerlo visible es la mitad del trabajo. **La otra mitad es que ver la capacidad no le dice a nadie qué haría con ella.**
+La página de un club prueba que Sports World sabe atender seis objetivos distintos, con clases concretas a horas concretas, a quince minutos de donde la persona vive. Eso es lo que hoy no se ve, y hacerlo visible es la mitad del trabajo. **La otra mitad es que ver la capacidad no le dice a nadie qué haría con ella.**
 
 ### 2.3.1 La distancia que el contenido abre
 
 | Lo que la página demuestra | Lo que la persona todavía no sabe |
 |---|---|
-| **Club** · Hay un club cerca, con estas amenidades y estas clases a estas horas | Si ese club es el mejor para *su* objetivo, y qué haría ahí la primera semana |
-| **Hub de amenidad** · La alberca existe, y está en estos clubes | Cuál de esos clubes le conviene, y si nadar es parte de lo que necesita |
-| **Clase** · La clase existe, tiene este nivel, se imparte aquí y a estas horas | Si esa clase sirve para lo que quiere lograr, y qué más necesita alrededor |
-| **Hub de perfil** · Hay gente como ella, y el club sabe atenderla | Cuál es su plan, no el del perfil |
+| **Club** · Hay un club cerca que atiende su objetivo, con estas clases a estas horas | Si ese club es el mejor para *su* objetivo, y qué haría ahí la primera semana |
+| **Hub de amenidad** · La alberca existe, está en estos clubes y sirve para estos objetivos | Cuál de esos clubes le conviene, y si entrenar en agua es parte de lo que necesita |
+| **Clase** · La clase existe, tiene este nivel y se imparte en estos clubes | Si esa clase sirve para lo que quiere lograr, y qué más necesita alrededor |
+| **Objetivo** · Sports World sabe entrenar ese objetivo, con estas clases | Cuál es su plan, con su club y su horario |
 | **Bajar de peso** · Sports World toma en serio ese objetivo, con respaldo profesional | Qué haría ella, en qué club, con qué frecuencia |
 | **Entrenamiento personal** · El servicio existe y se ofrece en estos clubes | Si lo necesita, y cómo se combina con lo demás |
-| **FitKidz** · Hay actividades para sus hijos, por edad y por club | Qué club funciona para la familia completa, en el mismo horario |
+| **Actividades para menores** · Hay actividades para sus hijos, por edad y por club | Qué club funciona para la familia completa, en el mismo horario |
 | **Membresías** · Cuánto cuesta y qué incluye cada plan | Cuál le conviene dado lo que de verdad va a hacer |
 
 **Esa distancia es el motor del sitio.** La página la abre siendo concreta —no genérica—, y el cuestionario la cierra en un minuto.
 
 ### 2.3.2 Por qué el contenido tiene que ser concreto para que esto funcione
 
-Una página que dice «instalaciones de primer nivel» no abre ninguna distancia: no dice nada que la persona pueda querer. Una página que dice **qué clases hay, a qué hora, con qué nivel de intensidad y en qué club** deja a la persona a un solo paso de la pregunta que importa: *¿y a mí qué me toca de todo esto?*
+Una página que dice «instalaciones de primer nivel» no abre ninguna distancia: no dice nada que la persona pueda querer. Una página que dice **qué objetivos se entrenan ahí, con qué clases, a qué hora y con qué nivel de intensidad** deja a la persona a un solo paso de la pregunta que importa: *¿y a mí qué me toca de todo esto?*
 
 De ahí salen las exigencias del contenido mínimo que parecen de detalle y no lo son:
 
-- **Los horarios reales, día por día, con la semana siguiente a la vista.** Un horario concreto es algo que una persona puede imaginarse cumpliendo.
+- **Los horarios reales, día por día, dentro del objetivo y dentro del club.** Un horario concreto es algo que una persona puede imaginarse cumpliendo.
 - **El nivel y la intensidad de cada clase.** Es lo que le permite pensar si le queda.
-- **La lista de clubes por amenidad y por clase.** Convierte una búsqueda de categoría en una decisión de lugar.
-- **Las 600 a 900 palabras de contenido útil en los hubs de perfil.** Es la extensión con la que se puede responder de verdad y no solo posicionarse.
+- **Las clases agrupadas por objetivo, nunca sueltas.** Una lista de cincuenta clases es un catálogo; seis objetivos con sus clases dentro es una respuesta.
+- **Las 600 a 900 palabras de contenido útil en las páginas de objetivo.** Es la extensión con la que se puede responder de verdad y no solo posicionarse.
 
 ### 2.3.3 Lo que se le ofrece a cambio del minuto
 
@@ -130,7 +163,7 @@ De ahí salen las exigencias del contenido mínimo que parecen de detalle y no l
 
 Por eso el botón principal del sitio dice **«Diseña tu experiencia»** y no «Regístrate», y por eso la promesa que lo acompaña es literal: **un minuto.** El capítulo 5 la sostiene con la cuenta de reactivos.
 
-La segunda ruta hacia lo mismo es **«Agenda tu visita guiada»**, y el capítulo 7 explica por qué también abre el cuestionario: nadie agenda una visita sin decir antes qué quiere de ella.
+La segunda ruta hacia lo mismo es **«Agenda tu visita»**, y el capítulo 7 explica por qué también abre el cuestionario: nadie agenda una visita sin decir antes qué quiere de ella.
 
 ---
 
@@ -147,161 +180,178 @@ Acompaña a la persona en las 148 páginas y **no cambia nunca**.
 | **Tu Sports World** | El catálogo. Es el único punto de navegación estructural del sitio: clubes, objetivos, clases, amenidades y el resto de los hubs |
 | **Diseña tu experiencia** | Abre el cuestionario |
 | **Habla con BES** | Abre el asistente, sin salir de la página |
-| **Agenda tu visita** | Abre el agendado |
+| **Agenda tu visita** | Abre el agendado. Cuando la persona ya tiene cita, se comporta como especifica el apartado 2.4.6 |
 
 Los tres últimos son **rutas paralelas**: la persona elige la que prefiera y ninguna tiene prioridad.
 
-### 2.4.2 El menú contextual no se enumera: se deriva
+### 2.4.2 El menú contextual se deriva de cinco variables
 
-El menú contextual es el conjunto de botones dentro del cuerpo de la página. **No se especifica página por página, porque así no hay manera de saber si están cubiertos todos los casos.** Se especifica como lo que es: **una regla de decisión por botón, evaluada sobre seis variables.**
+El menú contextual es el conjunto de botones dentro del cuerpo de la página. **No se especifica página por página, porque así no hay manera de saber si están cubiertos todos los casos.** Se especifica como lo que es: **una regla de decisión por botón, evaluada sobre cinco variables.**
 
 | Variable | Valores posibles |
 |---|---|
-| **V1 · El cuestionario** | No completado · Completado |
-| **V2 · La cita** | Sin cita · Con cita |
-| **V3 · El tipo de página** | Los once tipos del apartado 2.1 |
-| **V4 · El club** | Sin club de referencia · Con club de referencia |
-| **V5 · La densidad alrededor del club de referencia** | Único en su ciudad · Hay más en la ciudad, ninguno a 5 km · Hay al menos uno a 5 km |
-| **V6 · Los artículos** | Ninguno etiquetado para esta página · Al menos uno |
+| **El cuestionario** | No completado · Completado |
+| **La cita** | Sin cita · Con cita |
+| **El tipo de página** | Los once tipos del apartado 2.1 |
+| **La densidad alrededor del club ideal** | Único en su ciudad · Hay más en la ciudad, ninguno a 5 km · Hay al menos uno a 5 km |
+| **Los objetivos declarados** | Uno · Dos |
 
-**Tres combinaciones no existen, y conviene decir por qué:**
+**Una combinación no existe, y conviene decir por qué:** sin cuestionario no puede haber cita, porque agendar exige haberlo completado. Con eso, las dos primeras variables colapsan en **tres estados**, que son los que el documento usa como taquigrafía:
 
-| Combinación | Por qué no puede ocurrir |
-|---|---|
-| Sin cuestionario, con cita | **Agendar exige haber completado el cuestionario.** No hay forma de tener cita sin plan |
-| Con cuestionario, sin club | **El cuestionario resuelve el club.** Completarlo y no tener club es imposible por construcción |
-| Sin club de referencia, en una página de club | **Aterrizar en la página de un club identifica ese club**, aunque la persona no haya contestado nada |
+| Estado | Cuestionario | Cita |
+|---|---|---|
+| **E1** | No completado | Sin cita |
+| **E2** | Completado | Sin cita |
+| **E3** | Completado | Con cita |
 
-Con eso, **V1 y V2 colapsan en tres estados**, que son los que el documento usa como taquigrafía:
+Los tres estados **describen a la persona dentro de una sesión**, no a lo largo del tiempo, y no dependen de por qué puerta llegó a la página. Al salir, el estado muere: al volver es, para el sitio, alguien sin cuestionario. El capítulo 7 especifica qué persiste y qué no.
 
-| Estado | V1 | V2 | V4 |
-|---|---|---|---|
-| **E1** | No completado | Sin cita | Solo si está en la página de un club |
-| **E2** | Completado | Sin cita | Siempre con club |
-| **E3** | Completado | Con cita | Siempre con club |
+### 2.4.3 El orden de los botones es fijo
 
-### 2.4.3 El club de referencia
+> **De izquierda a derecha: el club, la experiencia y la visita. Después, los botones propios de la página.**
 
-Todas las reglas de geografía se miden desde **un solo punto**, y cuál es depende del estado:
+El orden no cambia con el estado ni con el tipo de página, y es la decisión D-66. Cuando una ranura no tiene nada que ofrecer no se muestra vacía, y las demás conservan su orden entre sí. Por eso el número de botones va de tres a seis según la página y el estado.
 
-| Estado | Cuál es el club de referencia |
-|---|---|
-| **E1**, en la página de un club | **El club de esa página** |
-| **E1**, en cualquier otra página | **Ninguno.** No hay geografía que resolver todavía |
-| **E2 y E3**, en cualquier página | **El club ideal de la persona**, aunque esté viendo la página de otro |
-
-Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite, **porque ahí es donde va a entrenar.**
-
-### 2.4.4 Las cuatro ranuras y su regla
-
-> **Una ranura que no tiene nada que ofrecer no se muestra vacía: no se muestra.** Por eso el menú va de dos a cinco botones según el caso.
+### 2.4.4 Las tres ranuras del esqueleto
 
 #### Ranura 1 · El club
 
-| Condición | Qué aparece |
+**No depende del tipo de página.** Depende de una sola cosa: si la persona contestó el cuestionario.
+
+| Estado | Qué aparece |
 |---|---|
-| **No hay club de referencia** | **Encuentra tu club ideal** — abre el cuestionario |
-| **Hay club de referencia** y la página **no** es de un club | **Tu club ideal** — lleva al suyo |
-| **Hay club de referencia** y la página **es** de un club | **Conoce nuestros clubes** — abre la jerarquía de abajo |
+| **E1**, en cualquier página, también en la de un club | **Encuentra tu club ideal** — abre el cuestionario |
+| **E2 y E3**, en cualquier página | **Conoce otros clubes Sports World** — abre la jerarquía de abajo |
 
-**La jerarquía de «Conoce nuestros clubes»**, medida desde el club de referencia:
+**La jerarquía se despliega dentro del botón**, medida desde el **club ideal de la persona**, aunque esté viendo la página de otro club:
 
-| V5 | Qué opciones se despliegan |
+| Qué hay alrededor del club ideal | Qué opciones se despliegan |
 |---|---|
-| **Único en su ciudad** | Conoce todos nuestros clubes en la República |
-| **Hay más en la ciudad, ninguno a 5 km** | Conoce otros clubes en tu ciudad · Conoce todos nuestros clubes en la República |
-| **Hay al menos uno a 5 km** | Conoce otros clubes en tu zona · Conoce otros clubes en tu ciudad · Conoce todos nuestros clubes en la República |
+| **Único en su ciudad** | Conoce nuestros clubes en todo el país |
+| **Dos o más en la ciudad, ninguno a 5 km** | Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
+| **Dos o más en la ciudad, al menos uno a 5 km** | Conoce otros clubes en tu área · Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
 
-**Va siempre de lo cercano a lo lejano, y ningún nivel se muestra vacío.** La Zona Metropolitana del Valle de México concentra 32 de los 49 clubes, así que es donde el tercer caso aplica casi siempre.
+**El único radio del sistema es 5 km**, y el orden va siempre de lo cercano a lo lejano. **Ningún nivel se muestra vacío:** en una ciudad de un solo club, el nivel de la ciudad no aparece, porque no tendría qué mostrar, y decirle a la persona que no hay es justo lo que el sistema nunca hace.
+
+**Antes del cuestionario no hay geografía que resolver**, porque sin club ideal no hay desde dónde medir. Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite, **porque ahí es donde va a entrenar.** Es la decisión D-65.
+
+La Zona Metropolitana del Valle de México concentra **32 de los 49 clubes**, así que es donde el tercer caso aplica casi siempre.
 
 #### Ranura 2 · La experiencia
 
-| Condición | Qué aparece |
+| Estado | Qué aparece |
 |---|---|
-| **Cuestionario no completado** | **Diseña tu experiencia** |
-| **Cuestionario completado** | **Volver a tu experiencia ideal** |
+| **E1** | **Diseña tu experiencia** |
+| **E2 y E3** | **Volver a tu experiencia ideal** |
 
 **Nunca falta, en ninguna página ni en ningún estado.**
 
-#### Ranura 3 · El objetivo
+#### Ranura 3 · La visita
 
-| Condición | Qué aparece |
+| Estado | Qué aparece |
 |---|---|
-| La página es de **membresías** o del **blog** | **Nada.** Ninguna de las dos lleva a un objetivo |
-| **Cuestionario no completado**, en una página que **no** es de objetivo | **¿Cuál es tu objetivo?** — abre el cuestionario |
-| **Cuestionario no completado**, en una página **de objetivo** | **Conoce las clases adecuadas para tu objetivo** — el objetivo ya lo dice la página; lo que falta es el detalle |
-| **Cuestionario completado** | **Las clases para tu objetivo**, en su club |
-| **Cuestionario completado**, en **FitKidz** | **Las actividades de tu club para tus hijos** |
-
-#### Ranura 4 · La visita
-
-| Condición | Qué aparece |
-|---|---|
-| **Sin cita** | **Agenda tu visita** |
-| **Con cita** | **Tu visita agendada** — para verla, cambiarla o cancelarla |
+| **E1 y E2** | **Agenda tu visita** |
+| **E3** | **Tu visita agendada** — lleva a su cita, para verla, cambiarla o cancelarla |
 
 **Nunca falta.** Ofrecerle agendar a quien ya tiene cita no es una ruta, es ruido; por eso cambia de etiqueta en vez de desaparecer.
 
-### 2.4.5 Los botones propios
+### 2.4.5 Los botones propios de cada tipo de página
 
-Se suman al esqueleto cuando su condición se cumple.
+Se suman al esqueleto, siempre después de las tres ranuras.
 
-| Botón | Condición |
+| Botón | Dónde aparece | Qué hace |
+|---|---|---|
+| **¿Cuál es tu objetivo?** | En E1, en las páginas que no son de objetivo ni de entrenamiento individual, salvo membresías | Abre el cuestionario, empezando por las preguntas de contexto de la página |
+| **Conoce las clases ideales para [nombre del objetivo]** | En E1, en las seis páginas de objetivo. En E2 y E3, en todas las páginas que llevan la ranura del objetivo | En E1, las clases de ese objetivo en toda la red. En E2 y E3, las clases del objetivo que la persona declaró, con la leyenda del apartado 2.4.7 |
+| **Conoce los programas de [nombre de la modalidad]** | En las tres páginas de entrenamiento individual, en los tres estados | Los seis objetivos, cada uno con su programa de esa modalidad |
+| **Tu rutina individual** | En las tres páginas de entrenamiento individual, en E2 y E3 | La parte individual de su experiencia. **Para todas las personas**: los bloques individuales no son exclusivos de quien pidió entrenar sin compañía |
+| **Otras clases similares** | En las páginas de clase, en los tres estados | Las clases agrupadas por nivel de intensidad y por beneficios parecidos a la que está viendo |
+| **Otros artículos similares** | En las páginas del blog, en los tres estados | Los artículos relacionados con el que está leyendo |
+
+**Con dos objetivos declarados hay dos botones de objetivo**, uno por cada uno, y el principal va primero.
+
+**El botón «Artículos o información útil» no existe.** Donde un artículo es pertinente, la página lo enlaza **dentro de su contenido**, no desde el menú. Un enlace en el párrafo que habla del tema llega en el momento en que la persona está pensando en él; un botón del menú compite con la ruta que sí lleva a la conversión. Es la decisión D-74.
+
+### 2.4.6 Qué hace «Agenda tu visita» del encabezado cuando ya hay cita
+
+El botón del encabezado **no cambia de etiqueta**, porque está en las 148 páginas y es la acción de conversión del sitio. Lo que cambia es lo que hace: antes de llevarla a ningún lado, **le pregunta si desea agendar una visita en otro club.**
+
+| Respuesta | Qué ocurre |
 |---|---|
-| **Artículos o información útil** | **V6 = al menos un artículo etiquetado para esta página.** Vale para cualquier tipo de página, no para una lista cerrada de ellas. En bajar de peso se cumple siempre |
-| **Clases FitKidz disponibles** | La página es FitKidz **y** hay club de referencia. Sin club no aparece: cada club ofrece un subconjunto distinto de las 34 actividades |
-| **Clubes propuestos** | La página es FitKidz. Hasta tres, cada uno con tres acciones propias: ver el club, agendar con ese club preseleccionado, y ver las clases para su familia |
-| **Tu rutina individual** | La página es una de las tres modalidades de entrenamiento individual **y** el cuestionario está completado |
-| **El enlace al hub** | La página es un artículo del blog |
+| **No** | La lleva a su visita agendada |
+| **Sí** | Le pide el club, **recalcula su experiencia ideal para ese club con las respuestas que ya dio** —no se le vuelve a preguntar nada— y la lleva a agendar la cita en ese club |
 
-### 2.4.6 Los tres botones que abren el cuestionario, y la pregunta de contexto
+**La primera cita se conserva.** Una persona puede tener visitas agendadas en dos clubes, y **cada una lleva su propia experiencia ideal y su propio brief**, porque dos clubes distintos resuelven clases distintas. El capítulo 3 especifica las dos entregas y el capítulo 8 qué ocurre al confirmarse el alta. Es la decisión D-67.
 
-**Encuentra tu club ideal, ¿Cuál es tu objetivo? y Diseña tu experiencia abren el mismo cuestionario.** No son tres instrumentos: son tres puertas al mismo.
+### 2.4.7 La leyenda de disponibilidad
 
-Y las tres empiezan igual: **por las preguntas de contexto de la página desde la que se tocó el botón**, no por el primer reactivo.
+Con el cuestionario contestado, **cada clase de una lista de objetivo lleva la leyenda «Disponible en tu club» o «No disponible en tu club».**
+
+Es la **única excepción** a la regla del capítulo 3, que prohíbe comunicarle a la persona una carencia. Aquí no es una carencia de su plan: es información para comparar clubes, en una superficie que existe exactamente para eso, y sin ella la persona no puede decidir si le conviene moverse. Su plan, en cambio, sigue entregándose completo y sin nombrar lo que su club no tiene. Es la decisión D-72.
+
+### 2.4.8 Los tres botones que abren el cuestionario, y la pregunta de contexto
+
+**Encuentra tu club ideal, ¿Cuál es tu objetivo? y Diseña tu experiencia abren el mismo cuestionario.** No son tres instrumentos: son tres puertas al mismo. «Agenda tu visita» es la cuarta, y el capítulo 7 la especifica.
+
+Y las cuatro empiezan igual: **por las preguntas de contexto de la página desde la que se tocó el botón**, no por el primer reactivo.
 
 | Desde dónde tocó el botón | Qué se le confirma antes del primer reactivo |
 |---|---|
-| **Página de alberca** | Si quiere que su experiencia incluya actividades acuáticas |
+| **Página de alberca** | Si quiere que su experiencia incluya entrenamiento en agua |
 | **Página de otra amenidad** | Si quiere que su experiencia incluya esa amenidad |
 | **Página de una clase** | Si quiere que su experiencia incluya esa clase |
-| **Página de un club** | Si quiere entrenar en ese club |
+| **Página de un club** | Si quiere que ese club sea su club ideal, o prefiere que se le recomiende uno |
 | **Página de un objetivo** | Si ese es su objetivo |
-| **FitKidz** | Si visitaría el club con sus hijos |
+| **Actividades para menores** | Si visitaría el club con sus hijos |
 | **Página de inicio, membresías o blog, sin haber visto otra** | Nada. No hay contexto que confirmar, y el cuestionario abre en el primer reactivo |
 
 El capítulo 5 especifica el bloque completo.
 
 ---
 
-## 2.5 La comprobación: todos los escenarios quedan resueltos
+## 2.5 Los menús, uno por uno
 
-Las reglas del apartado anterior se evalúan sobre **los once tipos de página por los tres estados: treinta y tres escenarios.** Esta tabla los resuelve todos, y lo que aparece en cada celda **no se escribió a mano: sale de aplicar las reglas.**
+Las reglas del apartado anterior se aplican a **los once tipos de página por los tres estados: treinta y tres escenarios.** Esta tabla los resuelve todos, y lo que aparece en cada celda **no se escribió a mano: sale de aplicar las reglas**, en el orden que fija el apartado 2.4.3.
 
-Se omiten de las celdas los botones que nunca faltan —la ranura 2 y la ranura 4—, que están en las treinta y tres.
+Donde dice *[objetivo]* va el nombre del objetivo que corresponda. Con dos objetivos declarados, ese botón aparece dos veces, el principal primero.
 
 | Tipo de página | **E1** · Sin cuestionario | **E2** · Completo, sin cita | **E3** · Completo, con cita |
 |---|---|---|---|
-| **Inicio** | Encuentra tu club ideal · ¿Cuál es tu objetivo? | Tu club ideal · Las clases para tu objetivo | Igual que E2 |
-| **Club** | Conoce nuestros clubes, con la jerarquía medida desde **este club** · ¿Cuál es tu objetivo? | Conoce nuestros clubes, medida desde **su club ideal** · Las clases para tu objetivo | Igual que E2 |
-| **Amenidad** | Encuentra tu club ideal · ¿Cuál es tu objetivo? | Tu club ideal · Las clases para tu objetivo | Igual que E2 |
-| **FitKidz** | Encuentra tu club ideal · ¿Cuál es tu objetivo? | Tu club ideal · **Las actividades de tu club para tus hijos** · **Clases FitKidz disponibles** · **clubes propuestos** | Igual que E2 |
-| **Clase** premium e individual | Encuentra tu club ideal · ¿Cuál es tu objetivo? | Tu club ideal · Las clases para tu objetivo | Igual que E2 |
-| **Entrenamiento individual** | Encuentra tu club ideal · ¿Cuál es tu objetivo? | Tu club ideal · Las clases para tu objetivo · **Tu rutina individual** | Igual que E2 |
-| **Objetivo · los cinco perfiles** | Encuentra tu club ideal · **Conoce las clases adecuadas para tu objetivo** · Artículos, si hay | Tu club ideal · Las clases para tu objetivo · Artículos, si hay | Igual que E2 |
-| **Bajar de peso** | Encuentra tu club ideal · **Conoce las clases adecuadas para tu objetivo** · **Artículos, siempre** | Tu club ideal · Las clases para tu objetivo · **Artículos** | Igual que E2 |
-| **Entrenamiento personal** | Encuentra tu club ideal · ¿Cuál es tu objetivo? · Artículos, si hay | Tu club ideal · Las clases para tu objetivo · Artículos, si hay | Igual que E2 |
-| **Membresías** | Encuentra tu club ideal | Tu club ideal | Igual que E2 |
-| **Blog** | **El enlace al hub** | **El enlace al hub** | Igual que E2 |
+| **Inicio** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · Conoce las clases ideales para *[objetivo]* | Igual que E2, con **Tu visita agendada** |
+| **Club** | Igual que Inicio | Igual que Inicio | Igual que E2, con **Tu visita agendada** |
+| **Hub de amenidad** | Igual que Inicio | Igual que Inicio | Igual que E2, con **Tu visita agendada** |
+| **Clase premium** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? · **Otras clases similares** | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · Conoce las clases ideales para *[objetivo]* · **Otras clases similares** | Igual que E2, con **Tu visita agendada** |
+| **Clase individual** | Igual que Clase premium | Igual que Clase premium | Igual que E2, con **Tu visita agendada** |
+| **Entrenamiento individual**, las tres modalidades | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Conoce los programas de *[modalidad]*** | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · Conoce los programas de *[modalidad]* · **Tu rutina individual** | Igual que E2, con **Tu visita agendada** |
+| **Actividades para menores de 3 meses a 13 años** | Igual que Inicio | Igual que Inicio | Igual que E2, con **Tu visita agendada** |
+| **Objetivo**, las cinco páginas | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Conoce las clases ideales para *[el objetivo de la página]*** | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · Conoce las clases ideales para *[su objetivo]* | Igual que E2, con **Tu visita agendada** |
+| **Bajar de peso** | Igual que Objetivo | Igual que Objetivo | Igual que E2, con **Tu visita agendada** |
+| **Entrenamiento personal** | Igual que Inicio | Igual que Inicio | Igual que E2, con **Tu visita agendada** |
+| **Membresías** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita | Igual que E2, con **Tu visita agendada** |
+| **Blog** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? · **Otros artículos similares** | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · Conoce las clases ideales para *[objetivo]* · **Otros artículos similares** | Igual que E2, con **Tu visita agendada** |
 
-**Las tres celdas de E3 son idénticas a las de E2**, y esa es la comprobación de que la regla está bien puesta: **la cita solo cambia la ranura 4**, que se omitió de la tabla por estar en las treinta y tres.
+**Las once celdas de E3 son idénticas a las de E2 salvo en la tercera ranura**, y esa es la comprobación de que la regla está bien puesta: **la cita solo cambia la ranura de la visita.**
 
-### 2.5.1 Por qué membresías y el blog son los menús más cortos
+### 2.5.1 Cuántos botones lleva cada página
 
-Son las dos páginas donde la ranura del objetivo no aplica, y por razones distintas:
+| Tipo de página | E1 | E2 | E3 |
+|---|---|---|---|
+| Inicio, club, amenidad, actividades para menores, entrenamiento personal | 4 | 4, o 5 con dos objetivos | 4, o 5 con dos objetivos |
+| Clase premium e individual | 5 | 5, o 6 con dos objetivos | 5, o 6 con dos objetivos |
+| Entrenamiento individual, las tres modalidades | 4 | 5 | 5 |
+| Objetivo y bajar de peso | 4 | 4, o 5 con dos objetivos | 4, o 5 con dos objetivos |
+| Membresías | **3** | **3** | **3** |
+| Blog | 5 | 5, o 6 con dos objetivos | 5, o 6 con dos objetivos |
 
-- **Membresías** es donde la persona compara precio y condiciones. Meterle una pregunta de objetivo ahí la saca de lo que vino a hacer; si quiere su plan, la ranura 2 se lo da completo.
-- **El blog** es la capa anterior, donde la persona todavía averigua qué le conviene. Llenarlo de geografía y de objetivos interrumpe la lectura, que es justo lo que se le pidió hacer. Su único botón propio es el que lo conecta con el hub que le corresponde.
+**De tres a seis botones.** El menú no es una plantilla: es lo que esa página, en ese momento, tiene que ofrecerle a esa persona.
+
+### 2.5.2 Por qué membresías es el menú más corto
+
+Es el único tipo de página **sin ranura del objetivo**, y es la decisión D-75. Quien está ahí compara precio y condiciones; meterle una pregunta de objetivo lo saca de lo que vino a hacer, y en esa misma página ya hay dos botones que abren el cuestionario. Si quiere su plan, la ranura de la experiencia se lo da completo.
+
+El blog, en cambio, sí lleva las tres ranuras y su botón propio: un artículo casi siempre trata de un objetivo, así que la pregunta llega en el momento en que la persona está pensando justo en eso.
+
+---
 
 ## 2.6 Qué se lleva consigo al cuestionario
 
@@ -311,11 +361,12 @@ La página desde la que tocó el botón no se pierde: **es lo que el sistema ya 
 |---|---|---|
 | 01 · Inicio | Nada. No hay contexto | Sin bloque |
 | 02 · Club | Ese club | Dos opciones |
-| 03 · Alberca | Entrenamiento acuático | Dos opciones |
+| 03 · Alberca | Entrenamiento en agua | Dos opciones |
 | 03 · Otras amenidades | Esa amenidad | Dos opciones |
 | 04 y 05 · Clases | Esa clase | Sí o no |
-| 06 · FitKidz | Esa preferencia | Sí o no |
-| 07 · Perfiles | El objetivo del perfil | Sí o no |
+| 05 · Entrenamiento individual | La modalidad | Dos opciones |
+| 06 · Actividades para menores | Esa preferencia | Sí o no |
+| 07 · Objetivo | El objetivo de la página | Sí o no |
 | 08 · Bajar de peso | Ese objetivo | Sí o no |
 | 09 · Entrenamiento personal | Nada: ya se propone a todas las personas | Sin bloque |
 | 10 · Membresías | Nada que precargar | Sin bloque |
@@ -331,9 +382,9 @@ Los diez primeros niveles responden **«qué hay»**: el club, la clase, la amen
 
 Dos reglas lo gobiernan:
 
-1. **Ningún artículo duplica un hub.** Un artículo que termina describiendo lo que ya describe un hub compite con él en lugar de alimentarlo.
-2. **Cada artículo enlaza al hub que le corresponde**, y lleva etiquetas temáticas que lo ligan con clases, hubs y clubes. **Un artículo sin etiquetas no aparece en ninguna página.**
+1. **Ningún artículo duplica una página de objetivo.** Un artículo que termina describiendo lo que ya describe esa página compite con ella en lugar de alimentarla.
+2. **Cada artículo enlaza, dentro de su texto, al objetivo del que trata y a las clases y clubes que menciona.** Los enlaces son contenido, no un botón del menú: llegan en el párrafo donde la persona está pensando en el tema.
 
-Las etiquetas hacen doble trabajo: llevan a la persona del artículo al hub, y encienden el botón «Artículos o información útil» en las páginas con las que coinciden. Así el nivel 11 alimenta a los diez anteriores en vez de vivir aparte.
+Así el nivel 11 alimenta a los diez anteriores en vez de vivir aparte.
 
 Los artículos que tocan salud se escriben con el mismo tratamiento que el hub de bajar de peso: **firma de especialista con cédula profesional a la vista y aviso de salud.** Describen cómo se adapta el entrenamiento y remiten a la valoración del asesor y del profesional de salud. **Ninguno prescribe intensidades ni diagnostica.**
