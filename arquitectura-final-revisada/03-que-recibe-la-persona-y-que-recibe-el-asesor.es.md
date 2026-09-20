@@ -13,6 +13,8 @@ Cuando la persona termina el cuestionario, el sistema hace el cálculo completo 
 
 Que las dos digan lo mismo no depende de que alguien las mantenga alineadas: **salen del mismo cálculo y del mismo texto.** El capítulo 12 especifica cómo se produce ese texto y qué ocurre si la redacción automática falla.
 
+**Un cálculo por cita, no uno por persona.** Cuando alguien agenda en un segundo club, el sistema recalcula su experiencia completa para ese club con las respuestas que ya dio, y esa cita lleva **su propia experiencia y su propio brief**. No es una copia con el nombre cambiado: dos clubes distintos resuelven clases distintas, y el asesor de cada uno recibe lo que de verdad va a poder entregar. Al confirmarse el alta de la membresía prevalece la experiencia del club donde ocurrió, y las demás se eliminan. Es la decisión D-68, y el capítulo 7 especifica cuándo se escribe cada una.
+
 Las dos entregas se presentan en **dos páginas separadas visualmente**. En pantalla, un separador marca dónde empieza la página 2. Al imprimir, el separador desaparece y la página 2 arranca en una hoja nueva.
 
 ## 3.2 Lo que ve la persona
@@ -59,6 +61,8 @@ Si vuelve a abrir el panel de otros clubes, ahí siguen las banderas. Ese panel 
 ### 3.2.5 Lo que nunca aparece en su experiencia
 
 Nunca se le comunica una carencia como resultado. No aparece «no encontramos», no aparece «ningún club cercano tiene», no aparece una nota que le diga que su club no alcanza. Lo que el sistema no puede entregar, no lo nombra: entrega lo que sí tiene, completo.
+
+**La regla alcanza a su experiencia, no a las superficies para elegir.** El panel de otros clubes lleva sus banderas mientras la persona elige, como dice el apartado 3.2.4, y las listas de clases por objetivo del sitio llevan la leyenda «Disponible en tu club» o «No disponible en tu club». En los dos casos no se le está señalando un hueco de su plan: se le está dando lo que necesita para decidir si le conviene moverse. El apartado 2.4.7 lo especifica.
 
 ## 3.3 BES, disponible en todo momento
 

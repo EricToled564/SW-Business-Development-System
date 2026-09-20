@@ -8,7 +8,7 @@ De ahí se sigue una regla que gobierna las 148 páginas:
 
 > **La opción de agendar una visita se le presenta a la persona en todo momento**, en cualquier página del sitio y en cualquier punto de la conversación por WhatsApp.
 
-No existe una pantalla desde la que no se pueda agendar. Y **ese botón es la puerta de entrada a la experiencia ideal**: al tocarlo empieza el recorrido que este capítulo especifica.
+No existe una pantalla desde la que no se pueda agendar. Y **ese botón es la puerta de entrada a la experiencia ideal**: al tocarlo empieza el recorrido que este capítulo especifica. Cuando la persona ya tiene cita, el botón sigue ahí y se comporta como especifica el apartado 7.3.5.
 
 La página desde la que lo tocó no se pierde: es lo que alimenta el bloque de precarga del capítulo 5.
 
@@ -68,8 +68,8 @@ Es el cambio de fondo respecto del recorrido anterior, donde el contacto se ped�
 
 | Si entrega los datos | Si no los entrega |
 |---|---|
-| Se crea de inmediato una copia de su registro del lado del servidor, y el sistema le envía su experiencia por correo | Ve su experiencia en pantalla igual, completa |
-| El registro se escribirá al sistema de clientes una sola vez, en la fase 5 | **No se abre ningún registro.** Al cerrar la sesión se pierden la experiencia y el contacto |
+| Su contacto queda en la sesión, y al cerrarse la sesión se escribe su registro y se le envía su experiencia por correo, como especifica el apartado 7.5 | Ve su experiencia en pantalla igual, completa |
+| **Nada se escribe todavía.** Lo que la persona cambie después —de club, de clases, de cita— cambia lo que se va a escribir | **No se abre ningún registro.** Al cerrar la sesión se pierden la experiencia y el contacto |
 
 En WhatsApp se le piden apellido y correo: el teléfono viene del canal.
 
@@ -77,16 +77,27 @@ En WhatsApp se le piden apellido y correo: el teléfono viene del canal.
 
 Entregados los datos, se le pregunta **una sola vez** si desea agendar una visita presencial a su club.
 
-| Respuesta | Qué se escribe |
+| Respuesta | Qué queda registrado al cerrar la sesión |
 |---|---|
-| **Sí** | Se agenda y el registro se escribe en el sistema de clientes con la fecha y la hora elegidas |
-| **No**, o cierra la sesión | El registro se escribe igual, con la bandera **«no quiso agendar visita»** |
+| **Sí** | Su registro, con la fecha y la hora que eligió |
+| **No**, o cierra la sesión | Su registro igual, con la bandera **«no quiso agendar visita»** |
 
-**Nunca hay dos escrituras para un mismo contacto.** La bandera es una marca de estado, no una instrucción de no volver a contactarla.
+La bandera es una marca de estado, no una instrucción de no volver a contactarla.
 
 Cuando elige fecha y hora, el sistema **no verifica disponibilidad ni reserva nada**: registra lo que la persona pidió. El club confirma y coordina, y responde con su acuse. El capítulo 15 especifica ese traspaso.
 
-### 7.3.5 La ruta reducida tiene su propia secuencia
+### 7.3.5 Agendar en un segundo club
+
+Ya con cita, el botón **«Agenda tu visita» del encabezado** no desaparece ni cambia de etiqueta: cambia lo que hace. Antes de llevarla a ningún lado, **le pregunta si desea agendar una visita en otro club.**
+
+| Respuesta | Qué ocurre |
+|---|---|
+| **No** | La lleva a su visita agendada, para verla, cambiarla o cancelarla |
+| **Sí** | Le pide el club, **recalcula su experiencia ideal para ese club con las respuestas que ya dio** —no se le vuelve a preguntar nada— y la lleva a elegir fecha y hora en ese club |
+
+**La primera cita se conserva.** Una persona puede tener visitas agendadas en dos clubes, y **cada una lleva su propia experiencia ideal y su propio brief**, porque dos clubes distintos resuelven clases distintas. El apartado 7.5.2 especifica qué se escribe de cada una, y el capítulo 8, qué ocurre cuando la persona se da de alta.
+
+### 7.3.6 La ruta reducida tiene su propia secuencia
 
 Quien no confirma la mayoría de edad recorre tres fases, no seis: la invitación, los reactivos que alimentan la elección de club, y la entrega del club con su dirección y su tiempo de traslado. Sin cálculo de experiencia, sin contacto, sin agenda y sin brief. El capítulo 4 la especifica.
 
@@ -128,23 +139,34 @@ Hace dos cosas, una antes del cuestionario y otra después:
 | Cuándo | Para qué sirve |
 |---|---|
 | **Antes del cuestionario** | Alimenta el bloque de precarga del capítulo 5: las páginas que visitó son lo que el sistema ya sabe de ella |
-| **Después de entregada la experiencia** | Sostiene el estado «completo, fuera del flujo» del capítulo 2: si no agenda y se pone a navegar, el sitio sigue reconociéndola como alguien que ya tiene su experiencia |
+| **Después de entregada la experiencia** | Sostiene los estados E2 y E3 del capítulo 2: mientras navega, el sitio sigue reconociéndola como alguien que ya tiene su experiencia, haya agendado o no |
 
-**Vive toda la sesión y muere cuando la persona sale.** Al volver empieza de cero: es, para el sitio, alguien sin cuestionario.
+**Vive toda la sesión y muere cuando la sesión cierra.** Al volver empieza de cero: es, para el sitio, alguien sin cuestionario.
 
 Ningún pixel de analítica se dispara antes de la fase 3.
 
-### 7.5.2 Del lado del servidor
+### 7.5.2 Del lado del servidor: una sola escritura, al cerrar la sesión
 
-| Momento | Qué persiste |
+**Mientras la sesión está viva, nada se escribe y nada se envía.** La persona puede cambiar de club, cambiar de clases, agendar y agendar en un segundo club las veces que quiera; todo eso vive en la sesión.
+
+**La sesión cierra por lo que ocurra primero:** la persona sale y el navegador alcanza a avisarlo, o pasan **diez minutos sin actividad**. Las dos condiciones hacen falta: cerrar la pestaña, perder la señal o bloquear el teléfono no siempre avisan al servidor, así que la salida por sí sola no basta.
+
+Al cerrar, y **una sola vez**, se escribe el estado final:
+
+| Qué | A dónde |
 |---|---|
-| Antes de entregar sus datos de contacto | **Nada.** Cerrar la pestaña descarta todo, y hay que empezar de nuevo |
-| Al entregar sus datos | Se crea la copia de seguridad del registro, en la base ligada al sistema de clientes por número de identificación |
-| A partir de ahí | Cerrar la sesión ya no pierde el registro: dispara su escritura con la bandera «no quiso agendar visita» |
+| Las experiencias ideales, **una por cita** | A su base propia |
+| El registro del prospecto y sus citas | Al sistema de clientes |
+| Su experiencia ideal, en su versión final | Por correo a la persona |
+| El brief de cada cita | Por correo al club de esa cita |
 
-**Lo que no está en la tabla, no persiste.**
+**Lo que no está en la tabla, no persiste.** Antes de que la persona entregue sus datos de contacto no hay nada que escribir, y cerrar la pestaña descarta todo.
 
-**La experiencia ideal no vive en el sistema de clientes.** Vive en una base propia, ligada al registro del prospecto por su identificador. Eso importa para el reencuentro: **si la persona vuelve otro día y rehace su cuestionario, su registro de prospecto se actualiza —no se duplica— y su experiencia anterior se elimina por completo y se reemplaza por la última.** Una persona, un registro, una experiencia vigente. El capítulo 8 especifica la conciliación y el capítulo 13 el contrato de esa base.
+De la regla se sigue algo que evita un problema entero: **no salen correos de cancelación por lo que la persona cambió dentro de la sesión**, porque nada había salido mientras cambiaba. Los avisos de cambio o cancelación al club solo ocurren cuando vuelve otro día y mueve una cita que ya se había enviado.
+
+**La experiencia ideal no vive en el sistema de clientes.** Vive en una base propia, ligada al registro del prospecto por su identificador, y **puede haber más de una: una por cita agendada.** Al rehacer el cuestionario otro día, la experiencia nueva **sustituye a la anterior solo si resuelve el mismo club**; si resuelve otro, se suma. Al confirmarse el alta de la membresía se verifica en qué club ocurrió: **la experiencia de ese club prevalece y las demás se eliminan.**
+
+El registro del prospecto, en cambio, sigue siendo uno solo, conciliado con la llave canónica. El capítulo 8 especifica la conciliación y el capítulo 13 el contrato de esa base.
 
 ## 7.6 El paso a BES, en cualquier momento
 
