@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-79. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-86. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -393,7 +393,7 @@ La ranura del club **no depende del tipo de página**. Depende de una sola cosa:
 
 **El único radio de esta jerarquía es 5 km**, y sustituye a los 10 km que regían antes. Ningún nivel se muestra vacío y el orden va siempre de lo cercano a lo lejano. Antes del cuestionario no hay geografía que resolver: sin club ideal no hay desde dónde medir.
 
-**Alcance de la regla.** Estos 5 km son los de la jerarquía del menú, que sirve para que la persona **explore** otros clubes. El radio con el que el sistema **resuelve** su club ideal es otra cosa y vive en el capítulo 9. Que sean dos números distintos queda registrado como punto abierto.
+**Alcance de la regla.** Estos 5 km son los de la jerarquía del menú, que sirve para que la persona **explore** otros clubes. El radio con el que el sistema **resuelve** su club ideal es otra cosa y vive en el capítulo 9. **D-82 fija que son dos cosas distintas y no se unifican.**
 
 **Sustituye:** de D-60, las etiquetas «Tu club ideal» y «Conoce nuestros clubes», la regla por tamaño de ciudad y el radio de 10 km. De D-64, el club de la página como punto de medida. De D-63, la variable del club de referencia, que deja de hacer falta.
 
@@ -472,7 +472,7 @@ Al cerrar, y **una sola vez**, se escribe el estado final:
 
 **La página de un club no muestra un catálogo de clases.** Muestra los seis objetivos, y dentro de cada uno las clases de ese club que sirven a ese objetivo, **con sus días y horarios**. Las amenidades aparecen en la descripción de cómo ese club ayuda a alcanzar el objetivo, no como inventario.
 
-**La página de un objetivo muestra las clases que entregan ese objetivo**, y al tocar una lleva a la página de esa clase.
+**La página de un objetivo muestra todas las clases del sistema que entregan ese objetivo**, no solo las del club de la persona, y al tocar una lleva a la página de esa clase. Lo que distingue unas de otras es la leyenda de D-72, no la ausencia: una lista recortada al catálogo del club le impediría a la persona saber qué gana si se mueve.
 
 **Los horarios viven en un solo lugar: la página del club.** La página de una clase **no lleva días ni horarios**, porque cada club tiene su propia cuadrícula: muestra en qué clubes se imparte, y al tocar un club se ven ahí los días y horarios de esa clase.
 
@@ -554,7 +554,7 @@ De ahí, dos reglas del sistema:
 1. **La intensidad de los programas acuáticos se expresa en esfuerzo percibido y en cadencia**, nunca en pulsaciones trasladadas del piso.
 2. **El reactivo 5 del cuestionario —el ritmo que va con la persona— es el criterio que ordena los programas acuáticos**, igual que ordena las clases.
 
-La correspondencia de los seis objetivos con sus programas acuáticos queda en el capítulo 10, con su fundamento documentado. **Los seis programas se marcan como propuesta sujeta a validación del profesional de salud que Sports World designe**, igual que los del bloque aeróbico en piso.
+La correspondencia de los seis objetivos con sus programas acuáticos **no se fija en el documento**: vive en la matriz de entrenamiento individual, con el contrato que D-83 exige. El capítulo 10 declara esa fuente y el método de derivación de D-84.
 
 **Aterriza en:** capítulos 10 y 11.
 
@@ -564,14 +564,113 @@ Ninguna pieza del sistema —ni la experiencia, ni el brief, ni BES— **propone
 
 **Aterriza en:** capítulos 10 y 12.
 
+---
+
+## 9 · Qué fija el documento y qué no
+
+### D-80 · La atención a personas socias queda fuera de este documento
+
+**El sitio y BES atienden prospectos.** La experiencia ideal es un instrumento de captación, y el capítulo 4 ya lo acota a quien no tiene membresía activa.
+
+Consultar horarios, congelar una membresía, cancelarla o cualquier otro autoservicio de una persona socia **no es materia de este documento**. Si Sports World decide publicar su política de cancelación o abrir un centro de ayuda, es contenido institucional, fuera de las 148 páginas y fuera de esta Arquitectura.
+
+**Aterriza en:** el límite de alcance de las páginas iniciales.
+
+### D-81 · Las direcciones nuevas siguen el patrón de las que ya existen
+
+| Página | Dirección | Viene de |
+|---|---|---|
+| Bajar de peso | `/bajar-de-peso/` | Se conserva |
+| Estética corporal y definición muscular | `/objetivos/estetica-corporal/` | `/perfiles/tonificar/` |
+| Aumentar masa muscular | `/objetivos/masa-muscular/` | `/perfiles/ganar-fuerza/` |
+| Desempeño atlético | `/objetivos/desempeno-atletico/` | Nueva |
+| Capacidad cardiovascular | `/objetivos/salud-cardiovascular/` | `/perfiles/salud-y-bienestar/` |
+| Moverse mejor con más agilidad | `/objetivos/agilidad-y-movilidad/` | `/perfiles/rehabilitacion/` |
+| Actividades para menores de 3 meses a 13 años | `/actividades-para-menores/` | `/fitkidz/` |
+
+**Toda dirección anterior redirige a la nueva de forma permanente.** `/perfiles/primeros-pasos/` no tiene sucesora directa, porque no era un objetivo sino un nivel: redirige al inicio de la sección de objetivos.
+
+**Aterriza en:** Anexo F.
+**Fuera de la Arquitectura:** el plan de redirecciones del rediseño.
+
+### D-82 · Hay dos radios y no se unifican
+
+| Radio | Para qué sirve | Dónde vive |
+|---|---|---|
+| **5 km** | Que la persona **explore** otros clubes alrededor del suyo | Capítulo 2, la jerarquía del menú |
+| **10 km** | Que el sistema **resuelva** cuál es su club ideal entre los que cumplen sus requisitos | Capítulo 9 |
+
+Son dos operaciones distintas y no tienen por qué medir lo mismo. **El capítulo 9 nombra el suyo de forma que no se confunda con el del menú.**
+
+**Cierra** el punto abierto que había quedado en D-65.
+
+### D-83 · El documento nombra la fuente y el proceso, no congela el dato
+
+**Es una regla de redacción y gobierna todo el documento.**
+
+Los datos operativos —el catálogo de clases, sus beneficios, las amenidades, los planes, los programas de entrenamiento individual— **se obtienen de los sistemas de Sports World.** Lo que hoy existe en el proyecto es preliminar y va a cambiar.
+
+De ahí, qué escribe el documento y qué no:
+
+| El documento escribe | El documento no escribe |
+|---|---|
+| **De qué fuente sale** el dato | El dato mismo, como si fuera definitivo |
+| **Qué debe entregar** esa fuente, campo por campo | Los nombres de las clases, sus beneficios o sus horarios |
+| **Quién la mantiene** y con qué cadencia | Listas que envejecen con el primer cambio del catálogo |
+| **Qué ocurre si no responde** | |
+
+**Cuando el documento necesita mostrar contenido para explicarse, lo marca como estado preliminar** y dice de qué fuente saldrá el definitivo.
+
+**La consecuencia práctica:** una revisión del documento **no es una revisión de la calidad de los datos actuales.** Discutir si un beneficio está bien redactado o si una clase sirve a un objetivo es trabajo de la matriz, no del documento. El documento se juzga por si nombra bien la fuente, el contrato y el proceso.
+
+**Aterriza en:** todos los capítulos, y señaladamente el 10, el 11 y el 13.
+**Corrige D-78**, que dejaba los seis programas acuáticos «sujetos a validación del profesional de salud» como si eso fuera un pendiente del documento. No lo es: los programas los mantiene la fuente, y el documento solo declara su contrato.
+
+### D-84 · Cuando la derivación es indirecta, se declara
+
+Buena parte de lo que el sistema prescribe **no tiene evidencia directa para el caso exacto**, y eso no lo invalida: se deriva de lo que sí está medido. Lo que no se vale es que una derivación indirecta se lea igual que una directa.
+
+Por eso, cada vez que el documento derive una regla o un programa de evidencia que mide otra cosa, **declara la fuerza de la cadena** con tres grados:
+
+| Grado | Qué significa |
+|---|---|
+| **Directa** | La evidencia mide el mismo desenlace |
+| **De un paso** | La evidencia mide una cualidad intermedia, y el salto al desenlace es uno solo |
+| **Por ausencia** | No hay evidencia para ese caso, y la regla se construye reconociéndolo |
+
+**Aterriza en:** capítulos 10 y 11.
+
+
+### D-85 · El Contrato encabeza la jerarquía de fuentes
+
+Durante la revisión de la Arquitectura, cuando dos documentos del depósito dicen cosas distintas sobre el mismo hecho, **prevalece el que esté más arriba en esta jerarquía**:
+
+| | Fuente | Por qué ahí |
+|---|---|---|
+| **1** | **El Contrato y sus anexos** | Es lo firmado. Nada que el documento diga puede obligar a algo distinto de lo pactado |
+| **2** | **CEI-01**, el cuestionario vigente | Es el único instrumento, y todo lo que el sistema personaliza sale de él |
+| **3** | **Esta bitácora de decisiones** | Lo decidido de forma expresa, con fecha |
+| **4** | **Los capítulos aprobados** de la Arquitectura | |
+| **5** | El resto del depósito | Documentos de trabajo anteriores a la revisión |
+
+**Consecuencia práctica.** Una propuesta que no cabe en el Contrato no se adopta, se cotiza. Por eso las seis páginas de objetivo de D-70 caben: el Contrato fija cinco hubs de perfil y un hub de bajar de peso **sin nombrarlos**, así que renombrarlos no altera el conteo ni el alcance. Y por eso los programas de entrenamiento individual de D-77 son secciones y no páginas: el Contrato cuenta 47 clases individuales, y cualquier adición exige convenio modificatorio.
+
+**Dentro de un mismo nivel, gana la fecha más reciente.**
+
+**Aterriza en:** las páginas iniciales, en la base documental.
+
+### D-86 · Todo lo decidido en una sesión entra a la bitácora en esa sesión
+
+Una decisión que se toma en conversación y no se escribe **deja de existir en cuanto termina la sesión**: la siguiente vuelve a preguntarla o, peor, la resuelve distinto.
+
+Por eso, al cerrar una sesión de trabajo sobre la Arquitectura, **toda decisión tomada en ella queda escrita aquí con su número**, y las decisiones anteriores que quedan corregidas llevan su nota de corrección. El historial del repositorio sustituye a la memoria de cualquiera, y esta bitácora sustituye al historial de la conversación.
+
+**Verificación:** las decisiones de una sesión se cuentan contra la conversación antes de cerrarla. Si el número no coincide, falta escribir.
+
 ## Puntos abiertos que esta revisión destapó
 
 | Punto | Qué falta |
 |---|---|
-| **La atención a personas socias** | El sitio y BES atienden prospectos. Si Sports World quiere publicar la política de cancelación o un centro de ayuda, es materia institucional y queda fuera de este documento y de las 148 páginas. **Pendiente de confirmación de Eric** |
-| **Dos radios en el sistema** | La jerarquía del menú mide 5 km desde el club ideal (D-65); el resolvedor de club del capítulo 9 usa 10 km para buscar un club que cumpla los requisitos. Son dos cosas distintas —explorar y resolver— pero conviene decidir si se unifican. **Pendiente de confirmación de Eric** |
-| **Las direcciones de las páginas de objetivo** | D-70 las renombra; falta fijar el texto de cada dirección y las redirecciones desde las anteriores |
-| **Los seis programas acuáticos** | D-78 los deja como propuesta hasta la validación del profesional de salud que Sports World designe |
 | **Requisitos no funcionales** | Accesibilidad, tiempos de carga, comportamiento sin JavaScript y en conexión lenta no tienen lugar en la estructura de dieciséis capítulos y seis anexos. **Pendiente de confirmación de Eric** |
 | **Dos documentos se llaman CEI-01** | El del Anexo A del Manual del Proceso Comercial y el vigente. La etiqueta no distingue |
 | **Dos asistentes se llaman BES** | El de esta Arquitectura, que atiende prospectos, y el del archivo de configuración del depósito, que atiende al equipo del proyecto y declara expresamente que no atiende prospectos |
