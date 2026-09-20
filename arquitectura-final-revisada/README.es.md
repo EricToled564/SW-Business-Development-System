@@ -9,7 +9,7 @@ Reescritura completa del documento **Arquitectura de la Experiencia**, con los 6
 | Archivo | Qué es | Estado |
 |---|---|---|
 | `00-estructura.es.md` | El índice completo: páginas iniciales, dieciséis capítulos, seis anexos | Vigente |
-| `decisiones.es.md` | Adenda de la bitácora DEC/SW/01, con las decisiones **D-33 a D-58** | Vigente |
+| `decisiones.es.md` | Adenda de la bitácora DEC/SW/01, con las decisiones **D-33 a D-79** | Vigente |
 | `CEI-01-v1.2.es.html` y `CEI-01-v1.2.pdf` | El cuestionario que rige, versión 1.2 | Vigente |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | Capítulo 1 | Aprobado |
 | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | Capítulo 2 | Escrito, pendiente de aprobación |
@@ -18,6 +18,7 @@ Reescritura completa del documento **Arquitectura de la Experiencia**, con los 6
 | `05-el-cuestionario.es.md` | Capítulo 5 | Aprobado |
 | `06-los-objetivos-de-la-persona.es.md` | Capítulo 6 | Aprobado |
 | `07-el-recorrido-en-pantalla.es.md` | Capítulo 7 | Escrito, pendiente de aprobación |
+| `insumo-entrenamiento-acuatico.es.md` | Los seis programas de entrenamiento aeróbico en alberca, insumo del capítulo 10 | Propuesta, sujeta a validación médica |
 | `VERIFICACION.es.md` | Hash de cada archivo, para comprobar que no cambió | Vigente |
 
 Faltan los capítulos **8 al 16** y los anexos **A al F**.

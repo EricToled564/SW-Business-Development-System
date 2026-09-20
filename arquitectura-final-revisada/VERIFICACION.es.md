@@ -1,6 +1,6 @@
 # Verificación de integridad
 
-Hash SHA-256 de cada archivo de esta carpeta, al 18 de septiembre de 2026.
+Hash SHA-256 de cada archivo de esta carpeta, al 20 de septiembre de 2026.
 
 Para comprobar que un archivo no cambió: `sha256sum <archivo>` y comparar contra esta tabla. Si no coincide, el archivo se modificó después de esta fecha, y el commit correspondiente dice por qué.
 
@@ -8,50 +8,50 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
-| `00-estructura.es.md` | 1,157 | `e847ae9a850f348cd9f261098b1a206743a004aa754cb2edbfa85c9c66e8bad5` |
+| `00-estructura.es.md` | 1,277 | `481ba80d9e13f9aca96766f86746d57126a182da0a11a3c3c0a4fc6666d456bf` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
-| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 4,477 | `ef7c275dd3b94be7c73a1328161ca907213c104393870306d285d4441a407684` |
-| `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,457 | `a2bfea38908d746687c79e0131cf7bd68a980592c97db2eee07f5f7636669c37` |
+| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 5,602 | `eb89016c766c44c0316b755018c845e5d45e638e5dd3b4b48451ec115d816bad` |
+| `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,643 | `e0dc61c7f6e3154cbd7e71012cd31c36eaedc937c6f86a0fe19b29772440d80a` |
 | `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
 | `05-el-cuestionario.es.md` | 3,226 | `38fa1d020edcb946e0b0c2aa3d98407152748225b5f8a66e7a815b3ea0767ba0` |
-| `06-los-objetivos-de-la-persona.es.md` | 851 | `40a94d5e73e711c2fa585c1dfe838fb53939c8aa025f98aa544a43de58d338c6` |
-| `07-el-recorrido-en-pantalla.es.md` | 2,056 | `ad956c49733c82a45c2463c1fef34d7d9fabd039eb01d3542aa39401f78d44dd` |
+| `06-los-objetivos-de-la-persona.es.md` | 942 | `d9cec15eddbfb85067814c18b6c53f2d98da521d2ae2b95eebbd533af617916c` |
+| `07-el-recorrido-en-pantalla.es.md` | 2,425 | `98b8c9cdc8ee3df8590e0dd120dcdc4cd1a4a6931b9e7141f3c3076b69ad79a9` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
-| `README.es.md` | 333 | `bc7c852d59aaf2ba00e8f01db436bfe68cb4e521815693864cb0bcef81e6fa70` |
-| `decisiones.es.md` | 4,397 | `36fd2e704853a89029aa890db38b73afd0d2d622ba7fe7931acbb02bfb62c93c` |
+| `README.es.md` | 355 | `4a6b10d7e10a5bcd6080491ac2772fc303ccdb23da6a226d71abc07f929a5ed4` |
+| `decisiones.es.md` | 7,027 | `c2a6065d06b9db352cc685eb6bff6b00fb1370c99047b6d7c7aabb50c76efbec` |
+| `insumo-entrenamiento-acuatico.es.md` | 2,412 | `39d23b8fdf6fa7a8b377189c4ebcb4f3a7319e76b9b75ce03aeb03cf361d728c` |
 
 ## Estado de aprobación
 
 | Capítulo | Aprobado por Eric | Modificado después de aprobarse | Quién ordenó el cambio |
 |---|---|---|---|
 | 1 | Sí | Se agregó el apartado 1.3.4, qué es BES. Después, remisiones cruzadas por la renumeración | Eric |
-| 2 | **Estructura sí, texto no** | Reescrito sobre la estructura aprobada de seis apartados, con el contenido mínimo por tipo de página como fuente de 2.2 y 2.3. Se sube sin aprobación del texto, a la espera de la revisión de Eric | — |
-| 3 | Sí | Las leyendas dejan de ser cuatro fijas; se quitó la cifra de requisitos. Después, renumeración y el nombre del servicio para menores | Eric |
+| 2 | **Estructura sí, texto no** | Reescrito completo sobre las decisiones D-65 a D-79, dictadas una por una el 20 de septiembre. Se sube sin aprobación del texto, a la espera de la revisión de Eric | — |
+| 3 | Sí | Las leyendas dejan de ser cuatro fijas; se quitó la cifra de requisitos. Después, renumeración y el nombre del servicio para menores. **El 20 de septiembre: un cálculo por cita (D-68) y el alcance de la regla de no nombrar carencias (D-72)** | Eric |
 | 4 | Sí | La precarga se muestra en la ruta reducida. Después, renumeración y el nombre del servicio para menores | Eric |
 | 5 | Sí | La clase aceptada sin club se vuelve requisito, en 5.2.3 y 5.2.4. Después, renumeración | Eric |
-| 6 | Sí | Sin cambios de fondo desde su aprobación; solo renumeración | Eric |
-| 7 | **No** | Escrito. Se sube por instrucción expresa de Eric, a la espera de su revisión | — |
+| 6 | Sí | Sin cambios de fondo desde su aprobación; solo renumeración. **El 20 de septiembre: los seis objetivos tienen página propia (D-70)** | Eric |
+| 7 | **No** | Escrito. **El 20 de septiembre: la escritura única al cerrar la sesión (D-69), agendar en un segundo club (D-67) y la experiencia por cita (D-68)** | — |
 
 ## Qué cambió en esta entrega
 
 | Pieza | Qué cambió |
 |---|---|
-| `CEI-01` | Pasa a **versión 1.2**. Restituye la concordancia con la forma de trato para lo que se refiere a quien contesta, y fija la regla de terceros: «Con una amistad», «Con mi pareja», «Con mis hijos», «Actividades para menores de 3 meses a 13 años» |
-| Capítulo 2 | Nuevo. El sitio como capa de captación, con los menús contextuales y los menús dinámicos. El apartado 2.1.1 fija que la intención de búsqueda es el objetivo de cada página y no un dato que el sistema reciba: lo único que conoce es la página de aterrizaje |
-| Capítulos 3 a 7 | Renumerados. Las remisiones cruzadas de los seis capítulos se actualizaron en el mismo movimiento |
-| El servicio para menores | Se llama **«actividades para menores de 3 meses a 13 años»** en los seis archivos. Desaparecen «actividades para niños» y «actividades infantiles» |
-| `decisiones.es.md` | D-33 reescrita; se agregan D-51 a D-54; todas las remisiones pasan a la numeración vigente |
-| `00-estructura.es.md` | Nuevo. El índice completo deja de vivir solo en la conversación |
-| El menú se deriva | **D-63 y D-64.** El menú contextual deja de enumerarse página por página: se especifica como una regla por botón sobre seis variables, con las tres combinaciones imposibles declaradas y la comprobación de los treinta y tres escenarios. Y queda una sola jerarquía de clubes —zona a 5 km, ciudad, República—, donde lo que cambia es el club de referencia |
-| El número de botones | **No es fijo: va de dos a cinco.** Una ranura sin nada que ofrecer no se muestra vacía, no se muestra; y algunas páginas suman botones propios. El apartado 2.5.12 lleva la cuenta por página y por estado |
-| Los menús | **D-60, D-61 y D-62.** Dos menús: el superior, fijo en las 148 páginas, y el contextual, con cuatro ranuras que se reetiquetan según el estado. Los tres botones que abren el cuestionario empiezan por la pregunta de contexto de la página. La ranura del objetivo pregunta en E1 y entrega las clases del objetivo en E2 y E3 |
-| El menú contextual | Los tres estados pasan a ser **sin cuestionario · completo sin agendar · completo y agendado**, y dejan de depender de por qué puerta entró la persona. El apartado 2.4.3 lleva la matriz completa de los trece tipos de página contra los tres estados, leída de `ux-spec` §6.4 y §6.6 a §6.14 y de la sección 5 del contenido mínimo |
-| La contingencia | **D-59.** Nunca se le hace difícil la vida a la persona: ante la disyuntiva entre pedirle algo más y continuar el proceso sin mentirle avisando al asesor, se elige siempre lo segundo. Primera aplicación: cuando el CRM no responde, la página sigue con el último dato guardado y la bandera viaja al brief |
-| Capítulo 2 | **Reescrito completo** sobre la estructura aprobada: por qué existe cada página · qué encuentra la persona al llegar · por qué ese contenido la mueve a construir su experiencia · cómo se le lleva · qué se lleva al cuestionario · el blog. Los once niveles suman 148, verificado |
-| Capítulo 2 y capítulo 5 | **D-57.** El texto del capítulo 2 se retiró y su material correcto pasó al capítulo 5: los menús dinámicos del cuestionario al nuevo apartado **5.7**, y lo que el sistema sabe de la navegación al **5.2.1**. El archivo del capítulo 2 conserva la estructura aprobada y dice a dónde fue cada cosa |
-| Las notas de edición | **D-58.** Se retiró el apartado 7.5.3, «Por qué está escrito así», y las notas que justificaban la redacción de la regla de concordancia y de la regla del «Siguiente». Las reglas del sistema se conservaron |
-| La duración del estado | **D-48 corregida, D-55 y D-56.** El identificador de sesión vive toda la sesión y muere al salir; los tres estados del menú contextual son de sesión; al reencontrarse, el prospecto se concilia con la llave canónica y se actualiza, y su experiencia ideal anterior se elimina por completo de su base y se reemplaza por la última |
+| `decisiones.es.md` | **Entran D-65 a D-79**, las doce decisiones del menú contextual tomadas una por una, más las notas de sustitución en D-55, D-56, D-60, D-62, D-63 y D-64, que quedan corregidas por ellas |
+| **La ranura del club** | **D-65.** Deja de depender del tipo de página: «Encuentra tu club ideal» sin cuestionario, «Conoce otros clubes Sports World» con él, y la jerarquía dentro del botón. **Un solo radio: 5 km**, medido siempre desde el club ideal. Se retiran la regla por tamaño de ciudad y el radio de 10 km |
+| **El orden de los botones** | **D-66.** Club, experiencia y visita, de izquierda a derecha; después los propios de la página |
+| **La segunda cita** | **D-67 y D-68.** El encabezado ofrece agendar en otro club y recalcula la experiencia con las respuestas que ya dio. Cada cita lleva su propia experiencia y su propio brief; al alta prevalece la del club elegido. Corrige D-56 |
+| **Cuándo se escribe** | **D-69.** Nada se escribe ni se envía hasta que la sesión cierra, por salida o por diez minutos sin actividad. Corrige el capítulo 7, que escribía al agendar |
+| **Las páginas de objetivo** | **D-70.** Son los seis objetivos del cuestionario, con sus nombres. Desaparecen primeros pasos, salud y bienestar, ganar fuerza y rehabilitación como nombres de página |
+| **Nunca una lista suelta** | **D-71.** El club muestra objetivos con sus clases dentro; la clase no lleva horarios; los horarios viven solo en la página del club |
+| **La leyenda** | **D-72.** «Disponible en tu club» o «No disponible en tu club» en las listas de clases por objetivo, única excepción a la regla de no nombrar carencias |
+| **La ranura del objetivo** | **D-73.** Nombra el objetivo: «Conoce las clases ideales para [nombre]». Con dos objetivos, dos botones |
+| **Los botones propios** | **D-74.** Otras clases similares · Otros artículos similares · Tu rutina individual, esta para todas las personas. **Se retira «Artículos o información útil»**: los artículos se enlazan dentro del contenido |
+| **Membresías y el blog** | **D-75.** Membresías es el único tipo sin ranura del objetivo; el blog las lleva todas |
+| **Actividades para menores** | **D-76.** La página se llama por el nombre del servicio y se parte en dos secciones. Se retiran sus tres botones propios |
+| **Entrenamiento individual** | **D-77.** Las tres modalidades se comportan como páginas de objetivo, con «Conoce los programas de [modalidad]» |
+| **El entrenamiento en alberca** | **D-78 y D-79.** Se prescribe por esfuerzo percibido, porque en el agua el pulso es de 8 a 12 latidos más bajo al mismo esfuerzo. El sistema nunca propone apnea ni hiperventilación. Entra `insumo-entrenamiento-acuatico.es.md` con los seis programas y su fundamento documentado |
 
 Desde el capítulo 5, cada capítulo se sube en el momento de su aprobación y todo cambio posterior queda como commit propio.
 

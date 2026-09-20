@@ -44,6 +44,8 @@ La persona elige **uno o dos**.
 
 Los seis no son una lista de conveniencia: **se definieron contra la oferta mínima de clases por club**, de modo que todo club de la red tenga al menos una clase que sirva a cada uno. El capítulo 9 especifica qué se sigue de eso al elegir club.
 
+**Los seis tienen página propia en el sitio**, y se llaman ahí con estas mismas palabras: cinco en el nivel 07 y bajar de peso en el nivel 08. Es la decisión D-70, y existe para que el cuestionario, las páginas, el menú contextual, la matriz de clases y la experiencia nombren lo mismo con el mismo vocabulario. Cuando la página y el instrumento usan dos listas distintas, alguien tiene que traducir entre ellas en cada pantalla, y ahí es donde se pierden las correspondencias. El apartado 2.1.1 lleva la tabla.
+
 ## 6.4 El objetivo principal y el secundario
 
 Cuando la persona elige dos, **el primero que elige es el objetivo principal**, y los dos no pesan lo mismo.

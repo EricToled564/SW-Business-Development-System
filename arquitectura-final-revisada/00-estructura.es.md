@@ -46,7 +46,7 @@ Los cuatro modos del selector de club van con nombre en español y sin código: 
 | № | Capítulo | Archivo | Estado |
 |---|---|---|---|
 | **1** | Por qué existe la experiencia ideal | `01-por-que-existe-la-experiencia-ideal.es.md` | Aprobado |
-| **2** | El sitio: cómo la persona llega y cómo se le guía | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | Escrito, pendiente de aprobación. Siete apartados: el sexto de la estructura aprobada se partió en dos, «cómo se le lleva» y «los once menús, uno por uno» |
+| **2** | El sitio: cómo la persona llega y cómo se le guía | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | Escrito, pendiente de aprobación. Siete apartados: el sexto de la estructura aprobada se partió en dos, «cómo se le lleva» y «los menús, uno por uno» |
 | **3** | Qué recibe la persona y qué recibe el asesor | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | Aprobado |
 | **4** | Quién puede recorrer la experiencia | `04-quien-puede-recorrer-la-experiencia.es.md` | Aprobado |
 | **5** | El cuestionario: el único instrumento | `05-el-cuestionario.es.md` | Aprobado |
@@ -54,7 +54,7 @@ Los cuatro modos del selector de club van con nombre en español y sin código: 
 | **7** | El recorrido en pantalla | `07-el-recorrido-en-pantalla.es.md` | Escrito, pendiente de aprobación |
 | **8** | Datos de contacto y consentimiento | — | Pendiente |
 | **9** | Cómo se elige el club | — | Pendiente |
-| **10** | Cómo se compone el plan | — | Pendiente |
+| **10** | Cómo se compone el plan | — | Pendiente. Su apartado de entrenamiento en alberca se escribe desde `insumo-entrenamiento-acuatico.es.md` |
 | **11** | Cómo se eligen las clases | — | Pendiente |
 | **12** | El texto que redacta el modelo de lenguaje | — | Pendiente |
 | **13** | Las fuentes de datos y su contrato | — | Pendiente |
@@ -68,7 +68,7 @@ Los cuatro modos del selector de club van con nombre en español y sin código: 
 |---|---|
 | **8** | Cuándo se piden · Envío de la experiencia por correo · Una sola escritura al CRM · **La conciliación con la llave canónica y el reencuentro (D-56)** · Aviso simplificado e integral |
 | **9** | El principio · Los cuatro requisitos · El radio de 10 km · Minutos con tráfico · Los cuatro modos · Alternativas y leyendas · Elección propia |
-| **10** | B01 · B02 · B03 · Seco, agua y mixto · Entrenamiento personal para todas las personas |
+| **10** | B01 · B02 · B03 · Seco, agua y mixto · **Los seis programas de cada una de las tres modalidades individuales (D-77 y D-78)** · Entrenamiento personal para todas las personas |
 | **11** | La matriz de clases · Los pasos del seleccionador · Filtro de intensidad · Matriz de contraindicaciones · Sustitución, nunca exclusión |
 | **12** | Una sola llamada · Qué puede y qué no · Respaldo ante falla |
 | **13** | El corte de las 06:00 · Categorías de fuente · Matrices propias · Alta de club · Alta de clase · El contrato de cada fuente · **La base de experiencias ideales y su contrato (D-56)** |
@@ -87,9 +87,19 @@ Los cuatro modos del selector de club van con nombre en español y sin código: 
 | **C** | Lo que no se cambió y por qué: los cuatro hallazgos improcedentes | Pendiente |
 | **D** | Control de versiones | Pendiente |
 | **E** | Contratos de fuente: la tabla campo por campo de las trece fuentes | Pendiente |
-| **F** | Inventario de las 148 páginas: las 49 de club, las 47 de clase, los hubs y los 20 artículos del blog, con título y dirección | Pendiente |
+| **F** | Inventario de las 148 páginas: las 49 de club, las 47 de clase, los hubs y los 20 artículos del blog, con título y dirección. **Recoge los nombres y las direcciones nuevas de las seis páginas de objetivo (D-70) y de la de actividades para menores (D-76)** | Pendiente |
 
 El inventario va a anexo, y no al capítulo 2, porque es una lista larga y ponerla a media lectura rompe el hilo. **El capítulo 2 lleva la lógica; el anexo lleva el detalle.**
+
+---
+
+## Los insumos
+
+No son capítulos ni anexos: son el material con el que se escribirá un capítulo que todavía no existe. Se verifican con hash como los demás archivos de la carpeta.
+
+| Archivo | Alimenta a | Estado |
+|---|---|---|
+| `insumo-entrenamiento-acuatico.es.md` | Capítulo 10, apartado de entrenamiento aeróbico en alberca, y la página de esa modalidad | Propuesta, sujeta a validación del profesional de salud que Sports World designe |
 
 ---
 
