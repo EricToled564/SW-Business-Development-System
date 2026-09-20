@@ -494,9 +494,12 @@ Es **la única excepción** a la regla del capítulo 3.2.5, que prohíbe comunic
 |---|---|---|
 | **Sin cuestionario**, fuera de una página de objetivo | **¿Cuál es tu objetivo?** | Abre el cuestionario, empezando por las preguntas de contexto de la página |
 | **Sin cuestionario**, en una página de objetivo | **Conoce las clases ideales para [nombre del objetivo]** | Las clases de ese objetivo en toda la red |
-| **Con cuestionario**, en cualquier página | **Conoce las clases ideales para [nombre de su objetivo]** | Las clases de su objetivo declarado, con la leyenda de disponibilidad de D-72 |
+| **Con cuestionario**, en una página de objetivo | **Conoce las clases ideales para [nombre del objetivo de la página]** | Todas las clases del sistema que entregan ese objetivo, con la leyenda de disponibilidad de D-72 |
+| **Con cuestionario**, fuera de una página de objetivo | **Conoce las clases ideales para [nombre de su objetivo]** | Las clases de su objetivo declarado, con la leyenda de disponibilidad de D-72 |
 
-**Con dos objetivos declarados hay dos botones**, uno por objetivo, y el principal va primero.
+**Con dos objetivos declarados hay dos botones**, uno por objetivo, y el principal va primero; en una página de objetivo el botón es uno solo, el de la página.
+
+**Dos páginas no llevan esta ranura con el cuestionario contestado:** la de una clase, donde la ocupa «Otras clases similares» (D-74), y membresías, que no la lleva nunca (D-75).
 
 **Sustituye** de D-62 la etiqueta «Las clases para tu objetivo»: el objetivo se nombra, no se alude.
 
@@ -506,7 +509,7 @@ Es **la única excepción** a la regla del capítulo 3.2.5, que prohíbe comunic
 
 | Página | Botón propio | Qué hace |
 |---|---|---|
-| **Clase** | **Otras clases similares** | Las clases agrupadas por nivel de intensidad y por beneficios parecidos a la que está viendo |
+| **Clase** | **Otras clases similares** | Las clases agrupadas por nivel de intensidad y por beneficios parecidos a la que está viendo. Aparece en los tres estados; **con el cuestionario contestado ocupa el lugar de la ranura del objetivo**, que en la página de una clase solo aparece antes del cuestionario |
 | **Blog** | **Otros artículos similares** | Los artículos relacionados con el que está leyendo |
 | **Entrenamiento individual**, las tres modalidades | **Tu rutina individual** | La parte individual de su experiencia. Solo con cuestionario, y **para todas las personas**: los bloques individuales no son exclusivos de quien pidió entrenar sin compañía |
 
@@ -516,7 +519,7 @@ Es **la única excepción** a la regla del capítulo 3.2.5, que prohíbe comunic
 
 ### D-75 · Membresías no lleva la ranura del objetivo
 
-Quien compara precios no está eligiendo objetivo, y en esa página ya hay dos botones que abren el cuestionario. **Es el único tipo de página sin las cuatro ranuras.** El blog sí las lleva todas.
+Quien compara precios no está eligiendo objetivo, y en esa página ya hay dos botones que abren el cuestionario. **Es el único tipo de página que no lleva la ranura del objetivo en ningún estado.** La página de una clase la lleva solo antes del cuestionario (D-74). El blog sí las lleva todas.
 
 **Aterriza en:** capítulo 2.5.
 
@@ -537,7 +540,7 @@ Su menú es el de cualquier otra página. **Desaparecen los tres botones que ten
 
 ### D-77 · Las tres páginas de entrenamiento individual se comportan como páginas de objetivo
 
-Entrenamiento con pesas, entrenamiento aeróbico y **entrenamiento aeróbico en alberca**. Su botón propio de contenido dice **«Conoce los programas de [nombre de la modalidad]»** y abre los seis objetivos, cada uno con su programa: el nombre que la persona lee y por qué le sirve. En el aeróbico, además, la máquina, la duración y cuándo hacerlo.
+Entrenamiento con pesas, entrenamiento aeróbico y **entrenamiento aeróbico en alberca**. Su botón propio de contenido dice **«Conoce los programas de [nombre de la modalidad]»** y abre los seis objetivos, cada uno con su programa: el nombre que la persona lee y por qué le sirve. En el aeróbico, además, la máquina, la duración y cuándo hacerlo. Al tocar un programa se ven los clubes donde está disponible, y de ahí la página del club; en alberca, solo los clubes que la tienen. Con el cuestionario contestado, cada programa lleva la leyenda de D-72, que en la práctica solo distingue en alberca.
 
 **Nunca se le muestra a la persona el equipo, el protocolo ni el nombre técnico del programa.** El equipo y la carga los define el entrenador en la primera sesión. Los nombres técnicos viven en las fichas internas.
 
