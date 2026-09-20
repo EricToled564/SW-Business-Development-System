@@ -9,7 +9,7 @@ Reescritura completa del documento **Arquitectura de la Experiencia**, con los 6
 | Archivo | Qué es | Estado |
 |---|---|---|
 | `00-estructura.es.md` | El índice completo: páginas iniciales, dieciséis capítulos, seis anexos | Vigente |
-| `decisiones.es.md` | Adenda de la bitácora DEC/SW/01, con las decisiones **D-33 a D-87** | Vigente |
+| `decisiones.es.md` | Adenda de la bitácora DEC/SW/01, con las decisiones **D-33 a D-88** | Vigente |
 | `CEI-01-v1.2.es.html` y `CEI-01-v1.2.pdf` | El cuestionario que rige, versión 1.2 | Vigente |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | Capítulo 1 | Aprobado |
 | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | Capítulo 2 | Escrito, pendiente de aprobación |
