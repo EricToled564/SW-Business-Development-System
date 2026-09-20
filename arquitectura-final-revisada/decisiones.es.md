@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-87. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-88. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -348,7 +348,7 @@ Con eso, las dos primeras variables colapsan en los tres estados que el document
 
 **Aterriza en:** capítulos 2.4 y 2.5.
 
-**Corregida por D-65:** la variable del club de referencia se retira, porque la ranura ya no depende del tipo de página. Las seis variables quedan en cinco. **Y por D-73:** la de los objetivos declarados también se retira, porque el botón nombra siempre el principal. Quedan cuatro.
+**Corregida por D-65:** la variable del club de referencia se retira, porque la ranura ya no depende del tipo de página. Las seis variables quedan en cinco: el cuestionario, la cita, el tipo de página, la densidad alrededor del club ideal y los objetivos elegidos, de los que depende «Explora» (D-73).
 
 ### D-64 · Una sola jerarquía de clubes, y lo que cambia es el club de referencia
 
@@ -488,28 +488,30 @@ Es **la única excepción** a la regla del capítulo 3.2.5, que prohíbe comunic
 
 **Aterriza en:** capítulos 2.4 y 3.
 
-### D-73 · La ranura del objetivo, antes y después del cuestionario
+### D-73 · La ranura del objetivo: «¿Cuál es tu objetivo?» antes del cuestionario, y las clases ideales solo en las páginas de objetivo
 
-| Estado | Qué dice | Qué hace |
+| Dónde está la persona | Sin cuestionario | Con cuestionario, con o sin cita |
 |---|---|---|
-| **Sin cuestionario**, fuera de una página de objetivo | **¿Cuál es tu objetivo?** | Abre el cuestionario, empezando por las preguntas de contexto de la página |
-| **Sin cuestionario**, en una página de objetivo | **Conoce las clases ideales para [nombre del objetivo]** | Las clases de ese objetivo en toda la red |
-| **Con cuestionario**, en una página de objetivo | **Conoce las clases ideales para [nombre del objetivo de la página]** | Todas las clases del sistema que entregan ese objetivo, con la leyenda de disponibilidad de D-72 |
-| **Con cuestionario**, fuera de una página de objetivo | **Conoce las clases ideales para [nombre de su objetivo]** | Las clases de su objetivo declarado, con la leyenda de disponibilidad de D-72 |
+| Inicio, club, amenidad, actividades para menores, entrenamiento personal, blog y clase | **¿Cuál es tu objetivo?** — abre el cuestionario, empezando por las preguntas de contexto de la página | **Ningún botón de objetivo.** Las clases ideales solo se ven en las páginas de objetivo |
+| Página de un objetivo | **Conoce las clases ideales para [el objetivo de la página]** — todas las clases del sistema que entregan ese objetivo | El mismo botón, con la leyenda de disponibilidad de D-72 |
+| Página de un objetivo **que la persona eligió**, si eligió dos | — | Además, **Explora [el otro objetivo elegido]**, que la lleva a la página de ese objetivo |
+| Página de un objetivo **que no eligió** | — | Ningún botón de exploración. Vuelve a sus objetivos por «Volver a tu experiencia ideal» o por el menú principal |
 
-**Con dos objetivos declarados, el botón nombra el principal.** El secundario solo diversifica las clases de la experiencia (capítulo 6) y su lista se ve en la página de ese objetivo. No hay segundo botón. **Corrige la primera versión de esta decisión**, que ponía dos botones, y retira de D-63 la variable de los objetivos declarados: el menú se evalúa sobre cuatro variables.
+**El botón de clases ideales nombra siempre el objetivo de la página**, con uno o con dos objetivos elegidos. Los objetivos elegidos entran al menú de una sola forma: «Explora…», en la página de cada uno de los dos, con el otro.
 
-**Dos páginas no llevan esta ranura con el cuestionario contestado:** la de una clase, donde la ocupa «Otras clases similares» (D-74), y membresías, que no la lleva nunca (D-75).
+Membresías no lleva botón de objetivo en ningún estado (D-75). Las páginas de entrenamiento individual tampoco: su botón es el de programas (D-77).
+
+**Corrige las dos versiones anteriores de esta decisión:** la primera ponía dos botones con dos objetivos y la segunda un solo botón con el principal, y las dos ponían clases ideales fuera de las páginas de objetivo, donde nunca van. Devuelve a D-63 la variable de los objetivos elegidos: el menú se evalúa sobre cinco variables, porque de ella depende «Explora».
 
 **Sustituye** de D-62 la etiqueta «Las clases para tu objetivo»: el objetivo se nombra, no se alude.
 
-**Aterriza en:** capítulos 2.4 y 6.
+**Aterriza en:** capítulos 2.4, 2.5 y 6.
 
 ### D-74 · Los botones propios de cada tipo de página
 
 | Página | Botón propio | Qué hace |
 |---|---|---|
-| **Clase** | **Otras clases similares** | Las clases agrupadas por nivel de intensidad y por beneficios parecidos a la que está viendo. Aparece en los tres estados; **con el cuestionario contestado ocupa el lugar de la ranura del objetivo**, que en la página de una clase solo aparece antes del cuestionario |
+| **Clase** | **Otras clases similares** | Las clases agrupadas por nivel de intensidad y por beneficios parecidos a la que está viendo. Aparece en los tres estados |
 | **Blog** | **Otros artículos similares** | Los artículos relacionados con el que está leyendo |
 | **Entrenamiento individual**, las tres modalidades | **Tu rutina individual** | La parte individual de su experiencia. Solo con cuestionario, y **para todas las personas**: los bloques individuales no son exclusivos de quien pidió entrenar sin compañía |
 
@@ -519,7 +521,7 @@ Es **la única excepción** a la regla del capítulo 3.2.5, que prohíbe comunic
 
 ### D-75 · Membresías no lleva la ranura del objetivo
 
-Quien compara precios no está eligiendo objetivo, y en esa página ya hay dos botones que abren el cuestionario. **Es el único tipo de página que no lleva la ranura del objetivo en ningún estado.** La página de una clase la lleva solo antes del cuestionario (D-74). El blog sí las lleva todas.
+Quien compara precios no está eligiendo objetivo, y en esa página ya hay dos botones que abren el cuestionario. **Es el único tipo de página sin botón de objetivo en ningún estado.** Las demás páginas sin objetivo propio, el blog incluido, llevan «¿Cuál es tu objetivo?» antes del cuestionario (D-73).
 
 **Aterriza en:** capítulo 2.5.
 
@@ -689,6 +691,27 @@ De ahí, cómo entra todo cambio a partir de esta decisión:
 **La verificación de que se cumplió** es el propio historial: un cambio que toca más líneas de las que su decisión justifica es visible en el commit.
 
 **Alcanza a los capítulos aprobados y a los escritos pendientes de aprobación.** Un capítulo que todavía no existe se escribe completo, porque no hay nada que preservar.
+
+
+## 10 · La página y la capa personal
+
+### D-88 · Las 148 páginas se sirven estáticas e idénticas; lo que depende de la persona es una capa que se resuelve con el identificador de sesión
+
+Cada página se genera con el corte de las 06:00 —y con la sincronización manual para promociones— y se sirve idéntica a todas las personas, desde caché. **Nada del contenido varía por persona.** Lo que sí depende de ella —el menú contextual, la leyenda de disponibilidad de D-72, «Explora…», «Tu visita agendada» y lo que hace «Agenda tu visita» del encabezado cuando ya hay cita (D-67)— es una **capa personal** que se resuelve con el identificador de sesión de D-48 y se monta sobre la página. Con qué técnica se resuelve —en el servidor, en la red de distribución o en el navegador— lo decide quien construye; lo que esta decisión fija es lo que la persona ve.
+
+Cinco reglas de diseño se siguen de ahí:
+
+| | Regla |
+|---|---|
+| **1 · El máximo de botones** | El menú se diseña para el número máximo de botones que ese tipo de página puede llevar, y el espacio se reserva para ese máximo, de modo que el contenido no se mueva cuando el menú cambie de estado ni cuando llegue después que la página. El máximo lo fija el capítulo 2: cinco en clase, blog, entrenamiento individual y objetivo; cuatro en inicio, club, amenidad, actividades para menores y entrenamiento personal; tres en membresías |
+| **2 · Sin identificador** | Quien llega sin identificador de sesión es, para el sitio, alguien sin cuestionario, y su menú viene escrito en la página: aparece con el contenido, sin espera. Quien llega con identificador recibe el menú de su estado, resuelto con ese identificador |
+| **3 · Si el script falla** | El sitio usa JavaScript en la aplicación, en las animaciones y en la capa personal. Si en una visita el script de la capa personal no llega o falla, la persona no ve una página sin menú: ve la página completa con el menú del estado sin cuestionario, cuyos cuatro botones son enlaces normales. La aplicación —cuestionario, experiencia y agenda— sí requiere que el script corra; su respaldo es BES |
+| **4 · Sin consultas adicionales** | La leyenda y «Explora» se resuelven con datos que la página ya trae —los clubes donde se imparte cada clase— y con el estado de la sesión |
+| **5 · Dos mundos, un solo paso** | El cuestionario, la experiencia y la agenda son pantallas de aplicación, no páginas estáticas. La precarga del capítulo 2.6 es el puente, y el diseño hace continuo el paso: mismo encabezado, misma tipografía, misma velocidad |
+
+**La capa fija no limita animaciones ni transiciones.** Lo que las limita es el rendimiento que exige el posicionamiento —el contenido no se retrasa ni se mueve una vez pintado— y la accesibilidad.
+
+**Aterriza en:** capítulo 2.4; capítulo 7, qué guarda el servidor y qué pide el navegador; requisitos no funcionales, cuando tengan lugar en la estructura.
 
 
 ## Puntos abiertos que esta revisión destapó
