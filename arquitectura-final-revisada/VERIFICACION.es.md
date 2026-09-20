@@ -20,7 +20,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `README.es.md` | 355 | `4a6b10d7e10a5bcd6080491ac2772fc303ccdb23da6a226d71abc07f929a5ed4` |
 | `decisiones.es.md` | 7,146 | `1bf255b56b2ce906325a495e7bc5ab6e7e90a2150c1138a3305cbd8f28ee7096` |
-| `insumo-entrenamiento-acuatico.es.md` | 2,412 | `39d23b8fdf6fa7a8b377189c4ebcb4f3a7319e76b9b75ce03aeb03cf361d728c` |
+| `insumo-entrenamiento-acuatico.es.md` | 1,950 | `872fce246a33f992c7a2004ffaa7b1b74cb4ce21ac5ab6a8c56402010a57b9b4` |
 
 ## Estado de aprobación
 
