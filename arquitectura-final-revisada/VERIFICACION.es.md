@@ -18,8 +18,8 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `07-el-recorrido-en-pantalla.es.md` | 2,425 | `98b8c9cdc8ee3df8590e0dd120dcdc4cd1a4a6931b9e7141f3c3076b69ad79a9` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
-| `README.es.md` | 355 | `82ed7bdbba764cb5d279605cff09d4cfbcc9da0b35163d95debef0a915a39491` |
-| `decisiones.es.md` | 8,161 | `6b79ed939ecb4fc6de2b24d2b225618c69c1d8bfa357c609103875b6ec5b57d0` |
+| `README.es.md` | 355 | `375ef775372337b4d017637e442b2ff269e405066d664d47898d0fa0a0a97940` |
+| `decisiones.es.md` | 8,363 | `7f6cb1c9c8396a0e49720f2daf16f59261dd5c66b5e494fee74857e14afba2b8` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `872fce246a33f992c7a2004ffaa7b1b74cb4ce21ac5ab6a8c56402010a57b9b4` |
 
 ## Estado de aprobación

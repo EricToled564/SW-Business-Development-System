@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-86. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-87. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -666,6 +666,25 @@ Una decisión que se toma en conversación y no se escribe **deja de existir en 
 Por eso, al cerrar una sesión de trabajo sobre la Arquitectura, **toda decisión tomada en ella queda escrita aquí con su número**, y las decisiones anteriores que quedan corregidas llevan su nota de corrección. El historial del repositorio sustituye a la memoria de cualquiera, y esta bitácora sustituye al historial de la conversación.
 
 **Verificación:** las decisiones de una sesión se cuentan contra la conversación antes de cerrarla. Si el número no coincide, falta escribir.
+
+
+### D-87 · Un capítulo aprobado no se reescribe: se edita
+
+**La reescritura completa de un capítulo aprobado está prohibida.** Aunque el resultado sea mejor, obliga a releerlo entero para saber qué cambió, y en esa relectura se pierde lo que ya se había revisado.
+
+De ahí, cómo entra todo cambio a partir de esta decisión:
+
+| | Regla |
+|---|---|
+| **Alcance** | Se edita solo lo que la decisión toca. El resto del capítulo queda carácter por carácter como estaba |
+| **Un commit por decisión** | El mensaje nombra la decisión y el capítulo. Quien revisa lee el cambio, no el capítulo |
+| **Nada entra sin decisión** | Una mejora de redacción que ninguna decisión pide no se hace |
+| **Si el cambio no cabe en una edición** | Se dice antes, con el motivo, y se pide autorización expresa para reescribir |
+
+**La verificación de que se cumplió** es el propio historial: un cambio que toca más líneas de las que su decisión justifica es visible en el commit.
+
+**Alcanza a los capítulos aprobados y a los escritos pendientes de aprobación.** Un capítulo que todavía no existe se escribe completo, porque no hay nada que preservar.
+
 
 ## Puntos abiertos que esta revisión destapó
 
