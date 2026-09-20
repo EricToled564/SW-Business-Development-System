@@ -203,7 +203,7 @@ Los tres últimos son **rutas paralelas**: la persona elige la que prefiera y ni
 
 ### 2.4.2 El menú contextual se deriva, no se enumera
 
-El menú contextual es el conjunto de botones dentro del cuerpo de la página. **No se especifica página por página, porque así no hay manera de saber si están cubiertos todos los casos.** Se especifica como lo que es: **una regla de decisión por botón, evaluada sobre cinco variables.**
+El menú contextual es el conjunto de botones dentro del cuerpo de la página. **No se especifica página por página, porque así no hay manera de saber si están cubiertos todos los casos.** Se especifica como lo que es: **una regla de decisión por botón, evaluada sobre cuatro variables.**
 
 | Variable | Valores posibles |
 |---|---|
@@ -211,7 +211,6 @@ El menú contextual es el conjunto de botones dentro del cuerpo de la página. *
 | **La cita** | Sin cita · Con cita |
 | **El tipo de página** | Los once tipos del apartado 2.1 |
 | **La densidad alrededor del club ideal** | Único en su ciudad · Dos o más en la ciudad, ninguno a 5 km · Dos o más, al menos uno a 5 km |
-| **Los objetivos declarados** | Uno · Dos |
 
 **Una combinación no existe, y conviene decir por qué:** sin cuestionario no puede haber cita, porque agendar exige haberlo completado. Con eso, las dos primeras variables colapsan en **tres estados**, que son los que el documento usa como taquigrafía:
 
@@ -227,7 +226,7 @@ Los tres estados **describen a la persona dentro de una sesión**, y no dependen
 
 > **De izquierda a derecha: el club, la experiencia y la visita. Después, los botones propios de la página.**
 
-El orden no cambia con el estado ni con el tipo de página. Cuando una ranura no tiene nada que ofrecer no se muestra vacía, y las demás conservan su orden entre sí. Por eso el número de botones va de tres a seis según la página y el estado.
+El orden no cambia con el estado ni con el tipo de página. Cuando una ranura no tiene nada que ofrecer no se muestra vacía, y las demás conservan su orden entre sí. Por eso el número de botones va de tres a cinco según la página y el estado.
 
 ### 2.4.4 Las tres ranuras del esqueleto
 
@@ -287,7 +286,7 @@ Se suman al esqueleto, siempre después de las tres ranuras.
 | **Otras clases similares** | En las páginas de clase, en los tres estados. **Con el cuestionario contestado ocupa el lugar de la ranura del objetivo**: la página de una clase lleva «¿Cuál es tu objetivo?» solo en E1 | Las clases agrupadas por nivel de intensidad y por beneficios parecidos a la que está viendo |
 | **Otros artículos similares** | En las páginas del blog, en los tres estados | Los artículos relacionados con el que está leyendo |
 
-**Con dos objetivos declarados hay dos botones de objetivo**, uno por cada uno, y el principal va primero. En una página de objetivo no: ahí el botón nombra el objetivo de la página y es uno solo.
+**Con dos objetivos declarados, el botón nombra el principal.** El secundario solo diversifica las clases de la experiencia, como fija el capítulo 6, y su lista se ve en la página de ese objetivo, que lo nombra en su propio botón. No hay un segundo botón: alargaría el menú por un caso que el sistema trata como secundario.
 
 **No existe un botón de artículos.** Donde un artículo es pertinente, la página lo enlaza **dentro de su contenido**, no desde el menú: un enlace en el párrafo que habla del tema llega en el momento en que la persona está pensando en él.
 
@@ -332,7 +331,7 @@ El capítulo 5 especifica el bloque completo.
 
 Las reglas del apartado anterior se aplican a **los once tipos de página por los tres estados: treinta y tres escenarios.** Las tres páginas de entrenamiento individual pertenecen al nivel 05, pero llevan otros botones, así que van en una fila aparte. Lo que aparece en cada celda **no se escribió a mano: sale de aplicar las reglas**, en el orden que fija el apartado 2.4.3.
 
-Donde dice *[objetivo]* va el nombre del objetivo que la persona declaró; en una página de objetivo, el de la página. Con dos objetivos declarados, fuera de las páginas de objetivo, ese botón aparece dos veces, el principal primero.
+Donde dice *[objetivo]* va el nombre del objetivo que la persona declaró; en una página de objetivo, el de la página. Con dos objetivos declarados, es el principal.
 
 | Tipo de página | **E1** · Sin cuestionario | **E2** · Completo, sin cita | **E3** · Completo, con cita |
 |---|---|---|---|
@@ -355,14 +354,14 @@ Donde dice *[objetivo]* va el nombre del objetivo que la persona declaró; en un
 
 | Tipo de página | E1 | E2 | E3 |
 |---|---|---|---|
-| Inicio, club, amenidad, actividades para menores, entrenamiento personal | 4 | 4, o 5 con dos objetivos | 4, o 5 con dos objetivos |
+| Inicio, club, amenidad, actividades para menores, entrenamiento personal | 4 | 4 | 4 |
 | Clase premium e individual | 5 | 4 | 4 |
 | Entrenamiento individual, las tres modalidades | 4 | 5 | 5 |
 | Objetivo y bajar de peso | 4 | 4 | 4 |
 | Membresías | **3** | **3** | **3** |
-| Blog | 5 | 5, o 6 con dos objetivos | 5, o 6 con dos objetivos |
+| Blog | 5 | 5 | 5 |
 
-**De tres a seis botones.** El menú no es una plantilla: es lo que esa página, en ese momento, tiene que ofrecerle a esa persona.
+**De tres a cinco botones.** El menú no es una plantilla: es lo que esa página, en ese momento, tiene que ofrecerle a esa persona.
 
 ### 2.5.2 Por qué membresías es el menú más corto
 
