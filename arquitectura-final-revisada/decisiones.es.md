@@ -348,7 +348,7 @@ Con eso, las dos primeras variables colapsan en los tres estados que el document
 
 **Aterriza en:** capítulos 2.4 y 2.5.
 
-**Corregida por D-65:** la variable del club de referencia se retira, porque la ranura ya no depende del tipo de página. Las seis variables quedan en cinco.
+**Corregida por D-65:** la variable del club de referencia se retira, porque la ranura ya no depende del tipo de página. Las seis variables quedan en cinco. **Y por D-73:** la de los objetivos declarados también se retira, porque el botón nombra siempre el principal. Quedan cuatro.
 
 ### D-64 · Una sola jerarquía de clubes, y lo que cambia es el club de referencia
 
@@ -497,7 +497,7 @@ Es **la única excepción** a la regla del capítulo 3.2.5, que prohíbe comunic
 | **Con cuestionario**, en una página de objetivo | **Conoce las clases ideales para [nombre del objetivo de la página]** | Todas las clases del sistema que entregan ese objetivo, con la leyenda de disponibilidad de D-72 |
 | **Con cuestionario**, fuera de una página de objetivo | **Conoce las clases ideales para [nombre de su objetivo]** | Las clases de su objetivo declarado, con la leyenda de disponibilidad de D-72 |
 
-**Con dos objetivos declarados hay dos botones**, uno por objetivo, y el principal va primero; en una página de objetivo el botón es uno solo, el de la página.
+**Con dos objetivos declarados, el botón nombra el principal.** El secundario solo diversifica las clases de la experiencia (capítulo 6) y su lista se ve en la página de ese objetivo. No hay segundo botón. **Corrige la primera versión de esta decisión**, que ponía dos botones, y retira de D-63 la variable de los objetivos declarados: el menú se evalúa sobre cuatro variables.
 
 **Dos páginas no llevan esta ranura con el cuestionario contestado:** la de una clase, donde la ocupa «Otras clases similares» (D-74), y membresías, que no la lleva nunca (D-75).
 
@@ -532,6 +532,8 @@ La página se llama **«Actividades para menores de 3 meses a 13 años»**, como
 | **Clases para niños** | Como una página de objetivo. El botón dice **«Conoce las clases disponibles»** y abre la lista; al tocar una clase se ven los clubes que la imparten, y al tocar un club, sus días y horarios |
 | **FitKidz** | Los clubes donde se ofrece; la lista lleva a la página de cada club |
 
+Con el cuestionario contestado, cada clase para niños lleva la leyenda de D-72, igual que en una página de objetivo.
+
 Su menú es el de cualquier otra página. **Desaparecen los tres botones que tenía**: «Clases FitKidz disponibles» y «Las actividades de tu club para tus hijos», que mostraban lo mismo, y los hasta tres clubes propuestos, cuyo trabajo hacen ahora las dos secciones.
 
 **Sustituye** las reglas de botones propios de FitKidz del contenido mínimo.
@@ -550,7 +552,7 @@ Entrenamiento con pesas, entrenamiento aeróbico y **entrenamiento aeróbico en 
 
 ### D-78 · El entrenamiento aeróbico en alberca se prescribe por esfuerzo percibido, no por pulsaciones
 
-**En el agua, el corazón late entre 8 y 12 pulsaciones por minuto menos que en piso al mismo esfuerzo**, por efecto de la presión del agua y la flotación sobre la distribución de la sangre. Una zona de pulsaciones calculada para piso, aplicada en alberca, subestima el trabajo real.
+**En el agua, el corazón late entre 10 y 12 pulsaciones por minuto menos que en piso al mismo esfuerzo** —la cifra y su fuente están en el insumo acuático—, por efecto de la presión del agua y la flotación sobre la distribución de la sangre. Una zona de pulsaciones calculada para piso, aplicada en alberca, subestima el trabajo real.
 
 De ahí, dos reglas del sistema:
 
