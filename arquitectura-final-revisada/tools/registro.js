@@ -142,6 +142,7 @@ function main() {
   }
 
   let total = 0;
+  let conHallazgos = 0;
   const ancho = 120;
 
   for (const f of archivos) {
@@ -151,6 +152,7 @@ function main() {
     }
     if (!h.length) continue;
     total += h.length;
+    conHallazgos += 1;
     console.log(`\n${f} — ${h.length}`);
     for (const { linea, familia, frase } of h) {
       const texto = frase.length > ancho ? frase.slice(0, ancho) + '…' : frase;
@@ -161,11 +163,14 @@ function main() {
 
   console.log('');
   if (total === 0) {
-    console.log(`Registro limpio: ${archivos.length} capítulos, 0 hallazgos.`);
+    console.log(`Registro limpio: ${archivos.length} archivos revisados, 0 hallazgos.`);
     process.exit(0);
   }
 
-  console.log(`${total} frase${total === 1 ? '' : 's'} para revisión de Eric, en ${archivos.length} capítulos.`);
+  console.log(
+    `${total} frase${total === 1 ? '' : 's'} para revisión de Eric, ` +
+    `en ${conHallazgos} de los ${archivos.length} archivos revisados.`
+  );
   console.log('');
   console.log('El verificador no borra. Cada frase se borra solo con autorización expresa;');
   console.log('las que Eric confirme como correctas se anotan en tools/registro-permitidas.txt.');
