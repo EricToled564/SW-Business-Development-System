@@ -4,11 +4,13 @@ El sitio público de Sports World tiene **148 páginas**, la cifra que fija el C
 
 No son 148 documentos sueltos.
 
-Son **once tipos de página**, cada uno construido para una intención de búsqueda concreta, y todos con la misma salida: la visita agendada.
+Son **once tipos de página**, cada uno construido para responder a una intención de búsqueda concreta y todos conectados con la misma salida:
 
-Lo que sigue las ordena en tres tiempos: **por qué existe cada tipo y qué problema resuelve**, **qué produce el sitio** y **cómo el contenido y los menús llevan a la persona hasta ahí**.
+**la visita agendada.**
 
-El Anexo F lista las 148 una por una, con su título y su dirección.
+Este capítulo los ordena en tres tiempos: primero, por qué existe cada tipo de página y qué problema resuelve; después, qué produce el sitio; y finalmente, cómo el contenido y la navegación conducen a la persona hacia ese resultado.
+
+El **Anexo F** lista las 148 páginas una por una, con su título y su dirección.
 
 ---
 
@@ -16,90 +18,127 @@ El Anexo F lista las 148 una por una, con su título y su dirección.
 
 El capítulo 2 documenta tres formas en que hoy puede perderse a una persona con intención de inscribirse.
 
-Las tres ocurren en el mismo momento: cuando escribe en un buscador lo que quiere conseguir.
+Las tres ocurren en el mismo momento: **cuando alguien escribe en un buscador lo que quiere conseguir y Sports World debería poder responder.**
 
-**El sitio responde a cada una con un tipo de página completo**, publicado en el lenguaje de esa búsqueda.
+El sitio convierte esas búsquedas en puertas de entrada específicas.
+
+En lugar de obligar a la persona a llegar a una página general y encontrar por sí misma la respuesta, cada intención relevante tiene uno o varios tipos de página construidos para atenderla en el lenguaje con el que fue buscada.
 
 ### 3.1.1 Los tres problemas y las páginas que responden
 
 | Problema | Lo que ocurre hoy | Páginas que responden |
 |---|---|---|
-| **El objetivo que no se atiende** | «Gimnasio para perder peso» son **932,300 búsquedas al mes**, la intención de mayor volumen de la industria del fitness en México. Sports World aparece en alrededor del **0.02%** de ellas | Tipo 08 · Bajar de peso, y las cinco páginas de objetivo del tipo 07 |
-| **La capacidad que existe, pero permanece invisible** | «Yoga cerca de mí» son **14,800 búsquedas al mes**. Sports World cuenta con estudios e instructores de yoga y queda fuera de los primeros cien resultados. El mismo problema puede repetirse con el resto del catálogo y con las amenidades | Tipos 03, 04, 05 y 06: una página por amenidad y una por clase |
-| **El camino innecesariamente largo** | «Gimnasio cerca de mí» son **751,000 búsquedas al mes**. La persona puede aterrizar en una página general y tener que encontrar por sí misma el club que le corresponde. Cada paso adicional crea una nueva oportunidad de perder a alguien que ya mostró intención | Tipo 02: una página por club, encontrable por su zona, con entrada directa desde el buscador |
+| **El objetivo que no se atiende** | «Gimnasio para perder peso» representa 932,300 búsquedas al mes, la intención de mayor volumen de la industria del fitness en México. Sports World aparece en alrededor del 0.02% de ellas | **Tipos 07 y 08:** las seis páginas construidas alrededor de los objetivos del cuestionario |
+| **La capacidad que existe, pero permanece invisible** | «Yoga cerca de mí» representa 14,800 búsquedas al mes. Sports World cuenta con estudios e instructores de yoga y queda fuera de los primeros cien resultados. El mismo problema puede repetirse con el resto del catálogo y con las amenidades | **Tipos 03, 04, 05 y 06:** páginas construidas alrededor de amenidades, disciplinas y actividades |
+| **El camino innecesariamente largo** | «Gimnasio cerca de mí» representa 751,000 búsquedas al mes. La persona puede aterrizar en una página general y tener que encontrar por sí misma el club que le corresponde. Cada paso innecesario añade fricción y crea una nueva oportunidad de perder a alguien que ya mostró intención | **Tipo 02:** una página por club, encontrable por su ubicación y accesible directamente desde el buscador |
 
-A esas tres se suman dos búsquedas más, en los extremos del recorrido:
+A esas tres situaciones se suman dos momentos en los extremos del recorrido.
 
-- **Antes de las tres:** quien busca una solución sin saber todavía que Sports World es una opción. Responde el tipo 11, el blog, que el apartado 3.10 especifica.
-- **Después de las tres:** quien ya decidió y compara precio y condiciones. Responde el tipo 10, membresías.
+**Antes**, está quien busca una solución pero todavía no sabe que Sports World puede ser una opción. A esa persona responde el **tipo 11, Blog**, que el apartado 3.10 especifica.
+
+**Después**, está quien ya conoce sus alternativas y compara precio y condiciones. A esa persona responde el **tipo 10, Membresías**.
+
+De esta forma, el sitio no intenta responder únicamente a quien ya conoce Sports World.
+
+Busca estar presente **desde que aparece la necesidad hasta que llega el momento de decidir.**
+
+---
 
 ### 3.1.2 Los once tipos
 
-**Cada tipo de página atiende una intención de búsqueda documentada**, y tenerla es el requisito para que el tipo exista.
+Cada tipo de página responde a una intención de búsqueda documentada.
+
+**La existencia de esa intención es el requisito para que el tipo exista.**
 
 | Tipo | Páginas | Intención de búsqueda que atiende | Problema que resuelve |
-|---|---|---|---|
-| **01** · Inicio | 1 | Quien conoce la marca y la busca por su nombre | Entrega el catálogo del sitio y la entrada al cuestionario |
-| **02** · Club | 49 | «Gimnasio cerca de mí», y el nombre de cada colonia o zona | El camino innecesariamente largo |
-| **03** · Hub de amenidad | 10 | «Gimnasio con alberca», «con vapor», «con sauna» | La capacidad que permanece invisible |
-| **04** · Clase premium | 7 | La disciplina buscada por su nombre, entre las siete que Sports World prioriza | La capacidad que permanece invisible |
-| **05** · Clase individual | 47 | «Yoga cerca de mí», y así con cada disciplina del catálogo | La capacidad que permanece invisible |
-| **06** · Actividades para menores de 3 meses a 13 años | 1 | «Gimnasio con actividades para menores de 13 años» | La capacidad que permanece invisible |
-| **07** · Objetivo | 5 | Quien busca por lo que quiere lograr con su cuerpo | El objetivo que no se atiende |
-| **08** · Bajar de peso | 1 | «Gimnasio para perder peso» | El objetivo que no se atiende |
-| **09** · Entrenamiento personal | 1 | «Entrenador personal cerca de mí» | La capacidad que permanece invisible |
-| **10** · Membresías | 6 | Quien ya decidió y compara precio y condiciones | La comparación final |
-| **11** · Blog | 20 | Quien busca antes de saber que Sports World es una opción | La búsqueda anterior a las tres |
+|---|---:|---|---|
+| **01 · Inicio** | 1 | Quien conoce la marca y la busca por su nombre | Entrega el catálogo del sitio y la entrada al cuestionario |
+| **02 · Club** | 49 | «Gimnasio cerca de mí» y el nombre de cada colonia o zona | El camino innecesariamente largo |
+| **03 · Hub de amenidad** | 10 | «Gimnasio con alberca», «con vapor», «con sauna» | La capacidad que permanece invisible |
+| **04 · Clase premium** | 7 | La disciplina buscada por su nombre, entre las siete que Sports World prioriza | La capacidad que permanece invisible |
+| **05 · Clase individual** | 47 | «Yoga cerca de mí», y así con cada disciplina del catálogo | La capacidad que permanece invisible |
+| **06 · Actividades para menores de 3 meses a 13 años** | 1 | «Gimnasio con actividades para menores de 13 años» | La capacidad que permanece invisible |
+| **07 · Objetivo** | 5 | Quien busca por el resultado que quiere conseguir | El objetivo que no se atiende |
+| **08 · Bajar de peso** | 1 | «Gimnasio para perder peso» | El objetivo que no se atiende |
+| **09 · Entrenamiento personal** | 1 | «Entrenador personal cerca de mí» | La capacidad que permanece invisible |
+| **10 · Membresías** | 6 | Quien ya decidió y compara precio y condiciones | La comparación final |
+| **11 · Blog** | 20 | Quien busca una solución antes de saber que Sports World es una opción | La búsqueda anterior a la decisión de marca |
 
-Tres términos de esa tabla conviene fijarlos aquí.
+Tres términos de esta tabla conviene fijarlos desde ahora.
 
-Un **hub** concentra un tema y enlaza a las páginas que lo desarrollan. El hub de la alberca enlaza a los clubes que la tienen y a los objetivos que se entrenan en ella.
+**Un hub** concentra un tema y conecta las páginas que lo desarrollan. El hub de alberca, por ejemplo, enlaza a los clubes que cuentan con ella y a los objetivos para los que puede formar parte de la experiencia de entrenamiento.
 
-Una **clase premium** es una de las siete disciplinas que Sports World decide priorizar. Su página se comporta igual que la de cualquier otra clase —mismo menú, mismos botones, misma precarga—. **Lo único que cambia es la extensión: más texto y más imágenes.**
+**Una clase premium** es una de las siete disciplinas que Sports World decide priorizar. Su página funciona igual que la de cualquier otra clase —mismo menú, mismos botones, misma precarga—. Lo que cambia es la profundidad del contenido: más texto y más imágenes.
 
-Una **clase individual** es cualquiera de las 47 disciplinas del catálogo. Entre ellas están las tres modalidades de entrenamiento individual —con pesas, aeróbico y aeróbico en alberca—, que el apartado 3.7.3 trata aparte porque llevan otros botones.
+**Una clase individual** es cualquiera de las 47 disciplinas del catálogo. Entre ellas se encuentran las tres modalidades de entrenamiento individual —con pesas, aeróbico y aeróbico en alberca—, que el apartado 3.7.3 trata por separado porque utilizan otros botones.
+
+---
 
 ### 3.1.3 Las seis páginas de objetivo
 
-Los tipos 07 y 08 suman seis páginas, una por cada objetivo que el cuestionario ofrece en su reactivo 4, «¿Qué buscas?». **Reactivo** es el nombre que el capítulo 5 da a cada pregunta del cuestionario.
+Los tipos 07 y 08 suman **seis páginas**, una por cada objetivo que el cuestionario ofrece en su reactivo 4, **«¿Qué buscas?»**.
+
+*Reactivo* es el nombre que el capítulo 5 utiliza para cada pregunta del cuestionario.
 
 | Página | Objetivo del cuestionario |
 |---|---|
-| Bajar de peso · tipo 08 | Bajar de peso |
-| Estética corporal y definición muscular | Mejorar mi estética corporal y definición muscular |
-| Aumentar masa muscular | Aumentar masa muscular |
-| Desempeño atlético | Mejorar mi desempeño atlético |
-| Capacidad cardiovascular | Mejorar mi capacidad cardiovascular |
-| Moverse mejor con más agilidad | Moverme mejor con más agilidad |
+| **Bajar de peso · tipo 08** | Bajar de peso |
+| **Estética corporal y definición muscular** | Mejorar mi estética corporal y definición muscular |
+| **Aumentar masa muscular** | Aumentar masa muscular |
+| **Desempeño atlético** | Mejorar mi desempeño atlético |
+| **Capacidad cardiovascular** | Mejorar mi capacidad cardiovascular |
+| **Moverse mejor con más agilidad** | Moverme mejor con más agilidad |
 
-La correspondencia es uno a uno, y el mismo nombre se usa en la página, en el cuestionario, en el menú, en la **matriz de clases** —la tabla que califica cada clase del catálogo frente a cada objetivo; capítulo 12— y en la Experiencia Ideal.
+La correspondencia es **uno a uno**.
 
-**Bajar de peso lleva tratamiento de contenido de salud**, que el apartado 3.5.4 especifica: firma médica con cédula a la vista, aviso de salud y video institucional.
+El mismo nombre se utiliza en la página, en el cuestionario, en el menú, en la matriz de clases —la tabla que califica cada disciplina del catálogo frente a cada objetivo; capítulo 12— y en la Experiencia Ideal.
+
+De esta forma, el objetivo que llevó a la persona hasta Sports World no desaparece después del clic.
+
+**Acompaña todo el recorrido.**
+
+La página **Bajar de peso** recibe además el tratamiento de contenido de salud que especifica el apartado 3.5.4: firma médica con cédula a la vista, aviso de salud y video institucional.
 
 ---
 
 ## 3.2 Lo que el sitio produce
 
-Las 148 páginas conducen a la misma cadena de cuatro piezas.
+Las 148 páginas pueden responder a búsquedas distintas.
 
-**Agendar una visita es el objetivo del sitio completo.**
+Pero todas alimentan **la misma cadena de conversión**.
+
+El objetivo final del sitio es **agendar una visita**.
 
 Las tres piezas anteriores existen para que esa visita llegue cualificada.
 
 | Pieza | Qué es | Quién la recibe | Cuándo | Capítulo |
-|---|---|---|---|---|
-| **El cuestionario** | El instrumento que recoge lo necesario para construir la Experiencia Ideal de esa persona, en alrededor de un minuto de su tiempo. Es idéntico en el sitio, en WhatsApp y en consola, y es la única fuente de personalización del sistema | La persona lo contesta | Al tocar cualquiera de las cuatro puertas del apartado 3.6.8 | 5 |
+|---|---|---|---|---:|
+| **El cuestionario** | El instrumento que recoge la información necesaria para construir la Experiencia Ideal de esa persona, en alrededor de un minuto. Es idéntico en el sitio, WhatsApp y consola, y constituye la única fuente de personalización del sistema | La persona lo contesta | Al tocar cualquiera de las cuatro puertas del apartado 3.6.8 | 5 |
 | **La Experiencia Ideal** | El plan de entrenamiento de esa persona: su club, sus tres bloques de entrenamiento, sus clases y sus horarios. Es el producto del sistema | La persona | En pantalla, al terminar el cuestionario | 4 |
-| **El brief** | La Experiencia Ideal traducida a argumentos de cierre: el documento con el que el asesor llega a la visita sabiendo qué quiere quien va a llegar | El asesor que atenderá la visita | Antes de que la persona llegue al club | 4 |
-| **La visita agendada** | La cita en el club, con día y hora | La persona y el club | Al terminar el agendado | 8 |
+| **El brief** | La misma evidencia transformada en el documento comercial con el que el asesor llega a la visita sabiendo qué quiere la persona que va a recibir | El asesor que atenderá la visita | Antes de que la persona llegue al club | 4 |
+| **La visita agendada** | La cita en el club, con día y hora | La persona y el club | Al terminar el proceso de agendado | 8 |
 
-**La Experiencia Ideal y el brief salen de un mismo cálculo.**
+La Experiencia Ideal y el brief **nacen del mismo cálculo**.
 
-Al terminar el cuestionario, el sistema resuelve el club, arma los bloques de entrenamiento, elige las clases y redacta el texto una sola vez. De ese único resultado salen las dos entregas.
+Al terminar el cuestionario, el sistema resuelve el club, construye los bloques de entrenamiento, selecciona las clases y determina la experiencia que corresponde a esa persona.
 
-**El cálculo es uno por cita.** Quien agenda en un segundo club recibe su Experiencia Ideal recalculada para ese club con las respuestas que ya dio, y esa cita lleva su propio brief.
+A partir de ese mismo resultado produce dos entregables:
 
-Desde cualquiera de las 148 páginas, cinco mecanismos conducen a esa cadena: el menú superior, los tres estados, el contenido de cada página, el menú contextual y la precarga.
+**la Experiencia Ideal para la persona y el brief para el asesor.**
+
+La información de origen es la misma.
+
+Lo que cambia es **para quién se presenta y para qué se utiliza.**
+
+El cálculo se resuelve para cada cita.
+
+Si una persona agenda una segunda visita en otro club, no vuelve a contestar el cuestionario: el sistema utiliza las respuestas que ya dio y recalcula su Experiencia Ideal para ese club.
+
+Esa segunda cita genera también **su propio brief**.
+
+Desde cualquiera de las 148 páginas, cinco mecanismos conducen a esta cadena:
+
+**el menú superior, los tres estados, el contenido de cada página, el menú contextual y la precarga.**
 
 Los apartados siguientes los especifican uno por uno.
 
@@ -113,22 +152,33 @@ El menú superior acompaña a la persona en las 148 páginas y es idéntico en t
 |---|---|
 | **Tu Sports World** | Abre el catálogo del sitio, con los ocho hubs: clubes, clases, amenidades, objetivos, bajar de peso, actividades para menores, membresías y blog. Es el punto de navegación estructural del sitio |
 | **Diseña tu experiencia** | Abre el cuestionario |
-| **Habla con BES** | Abre el asistente sobre la página, sin cambiar de pantalla |
-| **Agenda tu visita** | Abre el agendado de la visita. Con una cita ya agendada se comporta como especifica el apartado 3.6.5 |
+| **Habla con BES** | Abre el asistente sobre la página actual, sin cambiar de pantalla |
+| **Agenda tu visita** | Abre el proceso de agendado. Cuando ya existe una cita, se comporta como especifica el apartado 3.6.5 |
 
-Los tres últimos botones son **rutas paralelas hacia la Experiencia Ideal**.
+Los tres últimos botones son **rutas paralelas hacia la misma cadena de conversión**.
 
-La persona elige la que prefiera. Las tres llevan al mismo lugar.
+La persona puede comenzar directamente por el cuestionario, hacerlo mediante una conversación con BES o ir hacia el agendado.
 
-**Agenda tu visita es la acción de conversión del sitio.** Está disponible en las 148 páginas y en todo dispositivo.
+El sistema resuelve lo que falta en función del estado en el que se encuentre.
 
-BES reconoce en qué página está la persona y responde con ese contexto. El apartado 2.3.3 lo sitúa como herramienta de atención.
+**Agenda tu visita** es la acción de conversión del sitio.
+
+Está disponible en las 148 páginas y en cualquier dispositivo.
+
+BES, por su parte, reconoce en qué página se encuentra la persona y utiliza ese contexto para responder.
+
+Como establece el apartado 2.3.3, **BES es una herramienta de atención, no un canal independiente.**
 
 ---
 
 ## 3.4 Los tres estados de la persona
 
-Dos hechos describen a la persona en cualquier momento: si contestó el cuestionario y si tiene una cita agendada. Agendar exige el cuestionario completado, de modo que los dos hechos producen **tres estados**:
+En cualquier momento, dos hechos determinan el estado de la persona dentro del sitio:
+
+1. si ya completó el cuestionario;
+2. si ya tiene una visita agendada.
+
+Como una visita no puede agendarse sin haber completado antes el cuestionario, esos dos hechos producen únicamente tres estados posibles.
 
 | Estado | Cuestionario | Cita |
 |---|---|---|
@@ -136,15 +186,25 @@ Dos hechos describen a la persona en cualquier momento: si contestó el cuestion
 | **Con experiencia** | Completado | Sin cita |
 | **Con visita** | Completado | Con cita |
 
-**El estado depende únicamente de esos dos hechos.** Quien llega desde su Experiencia Ideal y quien llega navegando, en el mismo estado, ven lo mismo.
+El estado depende exclusivamente de esos dos hechos.
 
-Los tres estados viven dentro de una **sesión**: el periodo que va desde que la persona entra al sitio hasta que sale o pasan diez minutos sin actividad.
+No importa desde qué página llegue la persona ni qué recorrido haya seguido para llegar hasta ahí.
 
-Al cerrarse la sesión, el estado vuelve a **sin cuestionario**. En la visita siguiente la persona es, para el sitio, alguien con el cuestionario pendiente.
+**Dos personas en el mismo estado ven el mismo sistema.**
 
-El capítulo 9 especifica qué persiste después de la sesión.
+Los tres estados existen dentro de una **sesión**: el periodo que comienza cuando la persona entra al sitio y termina cuando sale o transcurren diez minutos sin actividad.
 
-Con el cuestionario completado, el sistema resuelve el **club ideal** de esa persona a partir de sus respuestas, y varias reglas de los apartados siguientes se miden desde ahí. El capítulo 10 especifica cómo lo resuelve.
+Al cerrarse la sesión, el estado visible del sitio vuelve a **Sin cuestionario**.
+
+En una visita posterior, la persona vuelve a ser tratada por el sitio como alguien con el cuestionario pendiente.
+
+El capítulo 9 especifica qué información persiste más allá de la sesión.
+
+Una vez completado el cuestionario, el sistema resuelve el **club ideal** de esa persona a partir de sus respuestas.
+
+Ese club se convierte en una referencia para varias de las reglas que aparecen en los apartados siguientes.
+
+El capítulo 10 especifica cómo se determina.
 
 ---
 

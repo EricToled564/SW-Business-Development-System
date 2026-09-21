@@ -20,7 +20,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `00-paginas-iniciales.es.md` | 2,571 | `661e1b1629e7f4dcf278570c228f855b6f67ac92b6cb7fa395939ac4490b357a` |
 | `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
 | `02-como-se-pierde-hoy.es.md` | 1,211 | `82ac54ecb2870dd50e4ad8fd4efcf7fe01c31ccc826e78b5d2ed1a56e96bf9b0` |
-| `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,283 | `ef9243b507c5c47704198e90a8893e676ff370f890e8c6bb0192b983b085a61a` |
+| `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,536 | `e1e08316aeef4953b1f6a803d76cf72ebdaba5e2b6aadff70ed4cf5cbb8e4c60` |
 | `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,626 | `05718ca9a2362a9c6a1764a582e4e7ff4f1c36c7941e26765dd91dc805d47b68` |
 | `05-el-cuestionario.es.md` | 3,227 | `0a49b94834d4181b7fe1d60a5676c41289a7ac8f65b694fdfbf35e77f5412f21` |
 | `06-quien-puede-recorrer-la-experiencia.es.md` | 930 | `2bcfc08c7c2f6b5b71608f82445b6fe085f25dc8434b54dd16acd59251668a91` |
