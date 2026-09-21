@@ -117,30 +117,34 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 
 ## Lo que hoy no cumple la norma
 
-**Veintidós ajustes, ninguno hecho.** Se listan aquí para que se aprueben uno por uno; el verificador `tools/registro.js` señala y **no borra**.
+**Veintidós ajustes: doce hechos, diez abiertos.** El verificador `tools/registro.js` señala y **no borra**; cada párrafo se aprueba uno por uno.
 
 ### Nueve frases que el verificador marca
 
 En los capítulos 1, 4, 5 y 6. La lista completa la imprime `node tools/registro.js`.
 
-### Doce títulos escritos en negativo
+### Los doce títulos escritos en negativo: corregidos
 
-| Hoy | En afirmativo |
+Aprobados por Eric el 21 de septiembre y aplicados, un commit por capítulo.
+
+| Antes | Ahora |
 |---|---|
-| 1.3.1 Lo que no es el producto | 1.3.1 Qué es el producto y qué es un insumo del plan |
-| 3.2.5 Lo que nunca aparece en su experiencia | 3.2.5 El alcance de lo que la persona ve |
-| 4.2.3 Qué no recibe, y qué no se guarda | 4.2.3 El alcance de la ruta reducida |
-| 4.5 Solo para quien no tiene membresía activa | 4.5 Solo para quien todavía no es socio |
-| 4.6 Los datos de personas menores de edad no se recogen | 4.6 Qué datos se recogen de personas menores de edad |
-| 5.2 Lo que ya sabemos no se vuelve a preguntar | 5.2 La precarga: lo que ya sabemos se confirma |
-| 5.7.1 Preguntas que no se hacen | 5.7.1 Qué reactivos se preguntan y cuáles se resuelven solos |
-| 5.8 Qué no pregunta el cuestionario, y por qué | 5.8 El alcance del cuestionario |
-| 6.1 Dos ejes que no se mezclan | 6.1 Dos ejes independientes |
-| 7.3.2 La fase 2 · Cuando hay precarga y cuando no | 7.3.2 La fase 2 · Cuándo hay precarga |
-| 7.4.1 Por qué no se puede volver a contestar el cuestionario | 7.4.1 Por qué el cuestionario se contesta una sola vez |
-| 7.5 Qué persiste y qué no | 7.5 Qué guarda el navegador y qué guarda el servidor |
+| 1.3.1 Lo que no es el producto | **Qué es el producto y qué es un insumo del plan** |
+| 3.2.5 Lo que nunca aparece en su experiencia | **El alcance de lo que la persona ve** |
+| 4.2.3 Qué no recibe, y qué no se guarda | **El alcance de la ruta reducida** |
+| 4.5 Solo para quien no tiene membresía activa | **Solo para quien todavía no es socio** |
+| 4.6 Los datos de personas menores de edad no se recogen | **Qué datos se recogen de personas menores de edad** |
+| 5.2 Lo que ya sabemos no se vuelve a preguntar | **La precarga: lo que ya sabemos se confirma** |
+| 5.7.1 Preguntas que no se hacen | **Qué reactivos se preguntan y cuáles se resuelven solos** |
+| 5.8 Qué no pregunta el cuestionario, y por qué | **El alcance del cuestionario** |
+| 6.1 Dos ejes que no se mezclan | **Dos ejes independientes** |
+| 7.3.2 La fase 2 · Cuando hay precarga y cuando no | **La fase 2 · Cuándo hay precarga** |
+| 7.4.1 Por qué no se puede volver a contestar el cuestionario | **Por qué el cuestionario se contesta una sola vez** |
+| 7.5 Qué persiste y qué no | **Qué guarda el navegador y qué guarda el servidor** |
 
-**Dos títulos en negativo se quedan:** 1.2.1 «El objetivo que no se atiende» y 1.2.2 «La disciplina que sí existe y no se ve». Describen el problema del mercado, no el sistema, y la regla 1 alcanza al sistema.
+**Solo cambiaron los títulos.** El texto que va debajo de cada uno quedó carácter por carácter como estaba, y entra al barrido de párrafos, que se aprueba aparte.
+
+**Dos títulos en negativo se quedan**, por la prueba del sujeto de D-101: 1.2.1 «El objetivo que no se atiende» y 1.2.2 «La disciplina que sí existe y no se ve». Nombran una omisión de Sports World, no una conducta del sistema.
 
 ### Un título que habla del documento
 
