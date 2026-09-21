@@ -3,7 +3,7 @@
 La experiencia ideal se construye alrededor de los objetivos que la persona declara. Esos objetivos **no son abiertos**: están acotados por las opciones de dos reactivos del cuestionario. Cinco objetivos emocionales y seis funcionales. Once opciones, y nada de lo que la persona quiere queda fuera de ellas.
 
 
-## 6.1 Dos ejes que no se mezclan
+## 6.1 Dos ejes independientes
 
 | Eje | Reactivo | Qué pregunta | Qué gobierna |
 |---|---|---|---|
