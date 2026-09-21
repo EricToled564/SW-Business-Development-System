@@ -759,6 +759,24 @@ El Mapa del Funnel y la Integración de Datos nombran dos; la Arquitectura nombr
 
 ---
 
+## 12 · El orden y la redacción del documento
+
+### D-91 · El capítulo del sitio se ordena por resultado, no por recorrido
+
+El capítulo 2 va en este orden, y en ningún otro:
+
+| | Apartado | Por qué va ahí |
+|---|---|---|
+| **1** | **Los once tipos de página, cada uno por el porqué existe y el problema que resuelve hoy** | Una página se describe después de saber para qué existe. Cada tipo declara la intención de búsqueda que atiende, y tenerla es el requisito para que el tipo exista |
+| **2** | **Lo que el sitio produce**: el cuestionario, la experiencia ideal, el brief y la visita agendada | El resultado se establece antes que el proceso. Quien lee el proceso ya sabe a dónde lleva |
+| **3** | **Cómo el contenido de las páginas y los menús contextuales llevan al cuestionario y a la experiencia ideal** | Los medios, una vez conocido el fin |
+
+**Aterriza en:** capítulo 2, apartados 2.1 a 2.10.
+
+
+
+---
+
 ## Puntos abiertos que esta revisión destapó
 
 | Punto | Qué falta |
