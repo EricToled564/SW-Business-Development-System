@@ -40,14 +40,14 @@ A esas tres se suman dos búsquedas más, en los extremos del recorrido:
 | Tipo | Páginas | Intención de búsqueda que atiende | Problema que resuelve |
 |---|---|---|---|
 | **01** · Inicio | 1 | Quien conoce la marca y la busca por su nombre | Entrega el catálogo del sitio y la entrada al cuestionario |
-| **02** · Club | 49 | «Gimnasio cerca de mí», y el nombre de cada colonia o zona | El laberinto de clics |
-| **03** · Hub de amenidad | 10 | «Gimnasio con alberca», «con vapor», «con sauna» | La disciplina que existe y no se ve |
-| **04** · Clase premium | 7 | La disciplina buscada por su nombre, entre las siete que Sports World prioriza | La disciplina que existe y no se ve |
-| **05** · Clase individual | 47 | «Yoga cerca de mí», y así con cada disciplina del catálogo | La disciplina que existe y no se ve |
-| **06** · Actividades para menores de 3 meses a 13 años | 1 | «Gimnasio con actividades para menores de 13 años» | La disciplina que existe y no se ve |
+| **02** · Club | 49 | «Gimnasio cerca de mí», y el nombre de cada colonia o zona | El camino innecesariamente largo |
+| **03** · Hub de amenidad | 10 | «Gimnasio con alberca», «con vapor», «con sauna» | La capacidad que permanece invisible |
+| **04** · Clase premium | 7 | La disciplina buscada por su nombre, entre las siete que Sports World prioriza | La capacidad que permanece invisible |
+| **05** · Clase individual | 47 | «Yoga cerca de mí», y así con cada disciplina del catálogo | La capacidad que permanece invisible |
+| **06** · Actividades para menores de 3 meses a 13 años | 1 | «Gimnasio con actividades para menores de 13 años» | La capacidad que permanece invisible |
 | **07** · Objetivo | 5 | Quien busca por lo que quiere lograr con su cuerpo | El objetivo que no se atiende |
 | **08** · Bajar de peso | 1 | «Gimnasio para perder peso» | El objetivo que no se atiende |
-| **09** · Entrenamiento personal | 1 | «Entrenador personal cerca de mí» | La disciplina que existe y no se ve |
+| **09** · Entrenamiento personal | 1 | «Entrenador personal cerca de mí» | La capacidad que permanece invisible |
 | **10** · Membresías | 6 | Quien ya decidió y compara precio y condiciones | La comparación final |
 | **11** · Blog | 20 | Quien busca antes de saber que Sports World es una opción | La búsqueda anterior a las tres |
 
@@ -89,9 +89,9 @@ Las tres piezas anteriores existen para que esa visita llegue cualificada.
 | Pieza | Qué es | Quién la recibe | Cuándo | Capítulo |
 |---|---|---|---|---|
 | **El cuestionario** | El instrumento que recoge lo necesario para construir la Experiencia Ideal de esa persona, en alrededor de un minuto de su tiempo. Es idéntico en el sitio, en WhatsApp y en consola, y es la única fuente de personalización del sistema | La persona lo contesta | Al tocar cualquiera de las cuatro puertas del apartado 3.6.8 | 5 |
-| **La Experiencia Ideal** | El plan de entrenamiento de esa persona: su club, sus tres bloques de entrenamiento, sus clases y sus horarios. Es el producto del sistema | La persona | En pantalla, al terminar el cuestionario | 3 |
-| **El brief** | La Experiencia Ideal traducida a argumentos de cierre: el documento con el que el asesor llega a la visita sabiendo qué quiere quien va a llegar | El asesor que atenderá la visita | Antes de que la persona llegue al club | 3 |
-| **La visita agendada** | La cita en el club, con día y hora | La persona y el club | Al terminar el agendado | 7 |
+| **La Experiencia Ideal** | El plan de entrenamiento de esa persona: su club, sus tres bloques de entrenamiento, sus clases y sus horarios. Es el producto del sistema | La persona | En pantalla, al terminar el cuestionario | 4 |
+| **El brief** | La Experiencia Ideal traducida a argumentos de cierre: el documento con el que el asesor llega a la visita sabiendo qué quiere quien va a llegar | El asesor que atenderá la visita | Antes de que la persona llegue al club | 4 |
+| **La visita agendada** | La cita en el club, con día y hora | La persona y el club | Al terminar el agendado | 8 |
 
 **La Experiencia Ideal y el brief salen de un mismo cálculo.**
 
