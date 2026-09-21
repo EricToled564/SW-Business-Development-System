@@ -5,3 +5,24 @@
 # falso positivo de una frase que sobrevivió sin revisarse.
 
 Un catálogo de clases, una lista de amenidades y una tabla de precios no son el producto: son insumos del plan.
+
+# Autorizadas por Eric el 21 de septiembre de 2026, capítulo 3.
+# Las cinco coinciden con la familia «El sistema por lo que no hace» y las
+# cinco se conservan, por tres razones distintas:
+#
+#   · Tres son reglas normativas. La regla 9 de la norma exige
+#     debe · no debe · puede, y una prohibición se enuncia prohibiendo.
+#   · Una es la garantía de D-48: enunciada en afirmativo deja de ser
+#     garantía.
+#   · Una describe la característica que define un estado declarado.
+#     Mientras el cuestionario sigue pendiente, no haber resuelto el club
+#     ideal no es una carencia del sistema ni de Sports World: es lo que
+#     distingue al estado Sin cuestionario de los otros dos. La regla que
+#     prohíbe describir el sistema por lo que no hace no alcanza a la
+#     definición de un estado.
+
+Ninguna página debe prometer resultados en kilos ni en plazos.
+No lleva ningún dato de la persona, permanece del lado de la persona y nunca llega al registro del prospecto.
+La personalización no modifica la página.
+Cada tipo de página reserva desde el inicio el espacio correspondiente al máximo número de botones que puede llegar a tener.
+Mientras el cuestionario siga pendiente, la ranura abre Encuentra tu club ideal, porque todavía no existe un club desde el cual medir.
