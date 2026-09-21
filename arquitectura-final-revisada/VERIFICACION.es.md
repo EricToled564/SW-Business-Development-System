@@ -17,19 +17,19 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
 | `00-estructura.es.md` | 1,770 | `fdc39942ee62db410fff0e6103f517da302b843d54f2ccc3af5ad8784942f07b` |
-| `00-paginas-iniciales.es.md` | 2,571 | `661e1b1629e7f4dcf278570c228f855b6f67ac92b6cb7fa395939ac4490b357a` |
+| `00-paginas-iniciales.es.md` | 2,567 | `a7b4bf4633aedb56f99ddb89302e2a0e2ed8604093b55c0a68ea8843d4de660c` |
 | `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
 | `02-como-se-pierde-hoy.es.md` | 1,211 | `82ac54ecb2870dd50e4ad8fd4efcf7fe01c31ccc826e78b5d2ed1a56e96bf9b0` |
-| `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,921 | `c300ab9d9c329af9e2bccec6634b20e12393f828c68467c5289dc4b2e2fd2ed3` |
+| `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,919 | `a2aa840d5750739648444ee4661c38b3d6618c200fc013478399b26715f1c6ff` |
 | `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,707 | `b2661f2976e5edee69b9b2d1be6cdb306ae7e88c3a5c305343ee07c7c5e3b8a0` |
 | `05-el-cuestionario.es.md` | 3,562 | `3de5578698760770c17dde42375e61265ed60cbed35703676870a21d9cda4f44` |
-| `06-quien-puede-recorrer-la-experiencia.es.md` | 930 | `2bcfc08c7c2f6b5b71608f82445b6fe085f25dc8434b54dd16acd59251668a91` |
-| `07-los-objetivos-de-la-persona.es.md` | 841 | `ef0410dbead792e6c60b3aaae2bd942129ef41b77b0f4898945f4df9475d0c56` |
-| `08-el-recorrido-en-pantalla.es.md` | 2,739 | `0897f75afc25ffaceeaba93d4b0659d6ce893980048f3651cbdd5fde5d06a33c` |
-| `09-datos-de-contacto-y-consentimiento.es.md` | 1,572 | `5b85987be33574f9a7aac81e96e1848103fca9991776316f954785e161207f50` |
+| `06-quien-puede-recorrer-la-experiencia.es.md` | 941 | `20074348d11dc90a1a044896670f4aaa6bcb6f2b6ec43f07cd8eca44f162c884` |
+| `07-los-objetivos-de-la-persona.es.md` | 827 | `1f928c0a6ff5565aef60233b76d4f50a195d7515abb234d8abccc233d0ecde75` |
+| `08-el-recorrido-en-pantalla.es.md` | 2,760 | `0c3a0a462a90d0b1d8352c8ac733ac97d8ce5acef1ece1790a59a19bff73bbae` |
+| `09-datos-de-contacto-y-consentimiento.es.md` | 1,571 | `ff166b32b38e35bfa0cbeefcaa414fcf60bb024855bf289222747751056788c8` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
-| `NORMA-DE-REDACCION.es.md` | 3,274 | `23854af0d48b86266ac692bf49d2a0e5275887275c928af445d8bb92e63a8e63` |
+| `NORMA-DE-REDACCION.es.md` | 3,507 | `2d9a46d4b4fc2dbbaa41eb737200b13900ee3682a1d6f60c717968a44604b248` |
 | `README.es.md` | 378 | `37e3650427640d67910f4afbe647ce3fb2de14303b9f5844f2bda92d20064d03` |
 | `decisiones.es.md` | 12,715 | `d45c63365a8fc495de42cf6ab324bf0ec0dc1deb1789f8e1f52e70fa941e2b86` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `ff81fdc7bcc25ae7c9477f4b670f1e633ec3262fda0df237b41b0d92daa1d471` |
@@ -42,13 +42,13 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 |---|---|---|---|
 | **1** | Sí | **Eric.** Instalado carácter por carácter | Nada |
 | **2** | Sí | **Eric.** Instalado carácter por carácter | Nada |
-| **3** | Sí | **Eric.** Instalado carácter por carácter, apartados 3.1 a 3.10 | Sus 12 correcciones a los apartados 3.5 a 3.10, del 21 de septiembre. Las cinco frases que marcaba el verificador quedaron autorizadas y anotadas en `tools/registro-permitidas.txt` |
+| **3** | Sí | **Eric.** Instalado carácter por carácter, apartados 3.1 a 3.10 | Sus 12 correcciones a los apartados 3.5 a 3.10, del 21 de septiembre. Las cinco frases que marcaba el verificador quedaron autorizadas y anotadas en `tools/registro-permitidas.txt`. **Un solo cambio de notación:** «su reactivo 4» pasa a «**Q4**», la clave de CEI-01 |
 | **4** | **No** | Reescrito el 21 de septiembre | Entra al registro de los capítulos 1 a 3. El contenido aprobado se conserva; el apartado 4.2.5 pasa a dos reglas normativas y la remisión del alcance del instrumento apunta a 5.8, donde antes decía capítulo 6 |
 | **5** | **No** | Reescrito el 21 de septiembre | Los reactivos pasan a las claves **Q1 a Q16** de CEI-01. La tabla anterior tenía la numeración corrida desde su tercer renglón, y el apartado 5.9 estaba partido en dos con cuatro renglones huérfanos. Entran 5.4.1 y 5.4.2 |
-| **6** | Sí | Versión anterior | Renumeración. **El 20 de septiembre:** los seis objetivos tienen página propia (D-70) |
-| **7** | Sí | Versión anterior | Renumeración. **El 20 de septiembre:** la escritura única al cerrar la sesión (D-69) |
-| **8** | **No** | Versión anterior | **El 20 de septiembre:** agendar en un segundo club (D-67) y la experiencia por cita (D-68). **El 21:** los tres estados por su nombre (D-89), la llave de la sesión (D-90), el calendario de atención del club (D-94) y el apartado 8.5.3 de los recordatorios (D-95) |
-| **9** | **No** | Versión anterior | La conciliación con la llave canónica y el reencuentro (D-56) |
+| **6** | **No** | Reescrito el 21 de septiembre | Entra al registro de los capítulos 1 a 3. Los reactivos pasan a las claves **Q6, Q13, Q14, Q15, Q15b y Q16**. La compuerta se identifica como **G0**. Once frases del verificador, resueltas |
+| **7** | **No** | Corregido el 21 de septiembre | Los dos ejes pasan a **Q3** y **Q4**, y la modalidad a **Q6**. Tres frases del verificador, resueltas. Se corrige «A la persona no se le informa de la postergación», que nombraba algo que este capítulo no define |
+| **8** | **No** | Corregido el 21 de septiembre | **La tabla de las seis fases iba de 1 a 7 y saltaba el 2**; las seis quedan numeradas de 1 a 6, como ya las nombraban los apartados 8.3.1 a 8.3.4. Diecisiete frases del verificador: dieciséis resueltas y una, la regla del navegador, a resolución de Eric |
+| **9** | **No** | Versión anterior | La conciliación con la llave canónica y el reencuentro (D-56). El 21 de septiembre: el nombre viene de **Q1** |
 
 **Los capítulos 10 a 20 están pendientes de escritura.** `00-estructura.es.md` fija sus subcapítulos previstos.
 
@@ -74,6 +74,12 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **`tools/registro.js`** | La línea de resumen contaba archivos revisados y decía «en 10 capítulos» con ocho archivos con hallazgo. Ahora dice «en 8 de los 10 archivos revisados» |
 | **La norma de redacción** | Su índice por sección estaba en la numeración anterior a D-98: 54 renglones renumerados. La regla 1 pasa a tener tres salidas |
 | **Las fronteras de las tres partes** | `00-estructura.es.md` dejaba los capítulos 17 y 20 fuera de toda parte. Quedan Parte II de 3 a 17 y Parte III de 18 a 20 |
+| **El capítulo 6** | Reescrito en el registro de los capítulos 1 a 3. La compuerta se identifica como **G0** y los reactivos de la ruta reducida con sus claves. Las once frases del verificador, resueltas: cuatro pasan a prohibiciones normativas —la ruta no debe pedir datos personales, ni abrir registro, ni contratar en línea a personas menores de edad, ni recoger datos de terceros— y siete a forma afirmativa |
+| **El capítulo 7** | Los dos ejes pasan a **Q3** y **Q4**, la modalidad a **Q6**, y las tres frases del verificador quedan resueltas |
+| **Las seis fases del capítulo 8** | La tabla las numeraba **1, 3, 4, 5, 6 y 7**: seis fases con siete números y el 2 ausente. Los apartados 8.3.1 a 8.3.4 ya las llamaban por la numeración correcta, igual que la tabla de retroceso de 8.4, que las nombra sin número. La tabla quedaba sola contra el resto del capítulo. Es el mismo defecto que tenía la tabla de reactivos del capítulo 5 |
+| **Las claves Q## en todo el documento** | Ninguna remisión a un reactivo va ya por número suelto. Las cuatro que quedaban en los capítulos 3, 6, 7 y 9 usan la clave de CEI-01 |
+| **El índice deja de citar la bitácora** | `tools/indice.py` retira las claves **D-##** al generar el apartado 0.3. La trazabilidad de cada decisión sigue en `00-estructura.es.md` y en la bitácora; el índice nombra subcapítulos |
+| **El barrido de párrafos** | De **73 frases a 7**. Cinco son texto de Eric, en los capítulos 1 y 2. Una es un renglón de la tabla de jerarquía documental. Una es la regla del navegador del apartado 8.5.1, prohibición normativa del mismo tipo que las cuatro ya autorizadas |
 
 ## Qué cambió en la entrega del 20 de septiembre
 
