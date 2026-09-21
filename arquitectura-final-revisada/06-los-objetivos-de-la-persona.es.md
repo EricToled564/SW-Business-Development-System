@@ -1,6 +1,6 @@
 # Capítulo 6 · Los objetivos de la persona
 
-La experiencia ideal se construye alrededor de los objetivos que la persona declara. Esos objetivos **no son abiertos**: están acotados por las opciones de dos reactivos del cuestionario. Cinco objetivos emocionales y seis funcionales. Once opciones, y nada de lo que la persona quiere queda fuera de ellas.
+La experiencia ideal se construye alrededor de los objetivos que la persona declara. Esos objetivos son **los que ofrecen dos reactivos del cuestionario**: cinco emocionales y seis funcionales. Once opciones, y todo lo que la persona quiere cabe en ellas.
 
 
 ## 6.1 Dos ejes independientes
