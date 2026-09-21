@@ -12,7 +12,7 @@ Los datos de contacto se piden **al terminar el cuestionario, en la fase 3 del r
 
 | Dato | De dónde sale |
 |---|---|
-| **Nombre** | Del reactivo 1, que ya se contestó |
+| **Nombre** | De **Q1**, que ya se contestó |
 | **Apellido** | De la captura de contacto |
 | **Teléfono** | De la captura de contacto, en formato E.164 |
 | **Correo** | De la captura de contacto |

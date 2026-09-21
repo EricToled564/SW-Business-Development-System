@@ -76,7 +76,7 @@ Tres términos de esta tabla conviene fijarlos desde ahora.
 
 ### 3.1.3 Las seis páginas de objetivo
 
-Los tipos 07 y 08 suman **seis páginas**, una por cada objetivo que el cuestionario ofrece en su reactivo 4, **«¿Qué buscas?»**.
+Los tipos 07 y 08 suman **seis páginas**, una por cada objetivo que el cuestionario ofrece en **Q4**, **«¿Qué buscas?»**.
 
 *Reactivo* es el nombre que el capítulo 5 utiliza para cada pregunta del cuestionario.
 
