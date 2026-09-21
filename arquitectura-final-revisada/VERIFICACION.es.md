@@ -17,7 +17,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
 | `00-estructura.es.md` | 1,795 | `30e9b660831103c8fe87eb9a5ea5281745b3f2046ee4970ed496888b5daf249a` |
-| `00-paginas-iniciales.es.md` | 3,175 | `b83696429e338862525f5e6134085fbf5c8f394a8f5e4e187b57f69b4659eb7a` |
+| `00-paginas-iniciales.es.md` | 3,186 | `b756a22e3ec4dd4e115008d4a06a10d87120e1de697970cea06149b670a62ad6` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,505 | `064c361746f29d343a21734af3d67053af7caae06d767a21b6244b97543314bb` |
 | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,267 | `139fa6c4a382a9d97495243864494e3f55c6a43897ac87f90fdf9b994397f5c5` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,626 | `8e709a7b5d05253384816c91b8d0aed45f58944798a39e1aef60437a111287c7` |

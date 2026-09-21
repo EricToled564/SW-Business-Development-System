@@ -211,32 +211,26 @@ Un mismo concepto atraviesa el sistema de punta a punta. **El cuestionario es el
 
 ## 0.7 Resumen en una página
 
-**Lo que está en juego.** Sports World tiene 49 clubes, 47 disciplinas y las amenidades de un club premium: infraestructura pagada que la decisión del cliente todavía no alcanza a ver. La auditoría de marzo de 2026 lo mide:
+**Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente.** 49 clubes, 47 disciplinas, albercas, vapor, sauna, entrenadores: todo eso existe y ya está pagado. Para quien lo busca, todavía no. Hoy **ninguna de las 49 páginas de club es legible para un buscador**, y la cobertura de las palabras clave con las que se busca la categoría —«gimnasio con alberca», «yoga cerca de mí»— está en **31.1%**.
 
-| Qué se midió | Cómo está hoy |
-|---|---|
-| Páginas de club que un buscador puede leer | **0 de 49** |
-| Enlaces rotos | **136** |
-| Páginas con título principal | 11 páginas lo tienen vacío |
-| Datos estructurados por club | **0 de 49** |
-| Cobertura de palabras clave sin marca | **31.1%** |
-| Velocidad, respuesta y estabilidad de la página | Fuera de umbral |
+Ahí está la oportunidad, y es de una clase poco común: **el producto ya existe; lo que falta es volverlo legible.** La ventaja competitiva ya está en el suelo, en los 49 clubes. Falta ponerla donde se toma la decisión.
 
-La demanda de la categoría se busca por lo que la persona quiere —«gimnasio con alberca», «yoga cerca de mí»—, y ahí Sports World cubre 31.1% de las palabras clave.
+**Lo que se construye es un sistema de ventas, no un sitio.** Un prospecto entrega **un minuto** —de 16 a 19 preguntas, las mismas en el sitio, en WhatsApp y en la recepción del club— y recibe su **experiencia ideal**: el plan de entrenamiento que le corresponde, con su club, sus bloques y sus clases, armado desde lo que dijo que quiere lograr. **Del mismo cálculo, con esas mismas respuestas, sale el brief** con el que el asesor conduce la visita.
 
-**Qué cambia el proyecto.** Vuelve legible esa infraestructura y la conecta con la decisión de la persona. Las 148 páginas del sitio nuevo se construyen cada una para una intención de búsqueda documentada, y el prospecto que llega **responde un cuestionario de un minuto** —el mismo en el sitio, en WhatsApp y en consola— del que salen dos entregas de un solo cálculo: **su experiencia ideal**, el plan de entrenamiento con su club, sus bloques y sus clases; y **el brief** con el que quien la atiende conduce la visita.
+**La persona recibe un plan. El asesor recibe evidencia. Es el mismo documento, leído desde los dos lados.**
 
-**A qué se compromete el resultado.** Los KPIs verificables al lanzamiento, con la herramienta que los comprueba:
+Eso es lo que convierte un rediseño en un sistema: **un solo concepto atraviesa la operación de punta a punta.** El cliente lo recibe como su experiencia, el asesor como su brief, y la Academia entrena a los 200 asesores en ese mismo método. Las 148 páginas del sitio dejan de ser un catálogo y pasan a ser 148 puertas de entrada, cada una construida para una intención de búsqueda documentada, y todas con la misma salida: **la visita agendada.**
 
-| Indicador | Hoy | Meta | Se verifica con |
-|---|---|---|---|
-| Páginas de club legibles para un buscador | 0 de 49 | **49 de 49** | Google Search Console |
-| Enlaces rotos | 136 | **0** | Semrush |
-| Datos estructurados por club | 0 | **49** | Google Rich Results Test |
-| Páginas con título principal | 11 sin él | **Todas con él** | Semrush |
-| Velocidad, respuesta y estabilidad | Fuera de umbral | **2.5 s · 200 ms · 0.1** | PageSpeed Insights |
-| Cobertura de palabras clave sin marca | 31.1% | **55–65%**, a doce meses | Semrush |
+**La ambición es explícita:** el mejor sistema de captación y conversión digital para fitness en México, construido para sostener la comparación con cualquier operador del mundo. Lo que lo hace comparable es que **todo se mide, del clic a la cancelación**, y que cada compromiso trae la herramienta con la que se comprueba:
 
-**Y a qué se compromete la conversión.** El funnel del proyecto mide cuatro etapas de punta a punta: **tráfico → visita agendada → visita realizada → membresía nueva.** La visita agendada es el resultado que el sitio persigue en sus 148 páginas: la persona elige día y hora dentro del calendario de atención de su club, recibe su experiencia por correo y dos recordatorios por WhatsApp, y el club recibe su brief antes de que llegue. Quien contesta el cuestionario y decide no agendar entra a las llamadas directas del asesor, con ese mismo brief.
+| Lo que se compromete | Hoy | Al lanzamiento |
+|---|---|---|
+| Clubes legibles para un buscador | 0 de 49 | **49 de 49** |
+| Datos estructurados por club | 0 | **49** |
+| Enlaces rotos | 136 | **0** |
+| Velocidad, respuesta y estabilidad | Fuera de umbral | **2.5 s · 200 ms · 0.1** |
+| Cobertura de palabras clave de categoría | 31.1% | **55–65%**, a doce meses |
 
-**El cambio de fondo** es que la venta deja de apoyarse en la intuición de quien atiende: cada visita llega con un plan escrito, y cada plan sale de lo que la persona contestó.
+Y el funnel completo, de punta a punta: **tráfico → visita agendada → visita realizada → membresía nueva.**
+
+**Lo que cambia para el negocio** es dónde se apoya la venta. Hoy se apoya en el oficio de quien atiende. A partir de aquí, cada visita llega con un plan escrito, cada plan sale de lo que la persona contestó, y cada peso invertido en tráfico se puede seguir hasta la membresía que produjo.
