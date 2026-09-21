@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-103. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-104. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -964,6 +964,32 @@ Leída con la prueba de dos renglones, el sujeto es el sistema y la frase se ree
 
 **Aterriza en:** `NORMA-DE-REDACCION.es.md` regla 1, D-101, `tools/registro-permitidas.txt` y el apartado 3.7 del capítulo 3.
 
+### D-104 · La alberca es requisito excluyente siempre que la modalidad necesite agua
+
+**Q6 tiene cuatro opciones y solo una de ellas deja la decisión al sistema.**
+
+| Opción de Q6 | Quién decide la modalidad | ¿La alberca es requisito del club? |
+|---|---|---|
+| **En piso o área seca** | La persona | No |
+| **En la alberca** | La persona | **Sí, excluyente** |
+| **Ambas** | La persona | **Sí, excluyente** |
+| **Quiero que me recomienden** | **El sistema**, a partir del objetivo principal | **Sí, excluyente**, cuando resuelve en agua |
+
+**La regla, en una línea:** si la modalidad elegida o resuelta necesita agua, el club debe tener alberca.
+
+**Por qué.** La opción **Ambas** promete natación individual y clases acuáticas integradas al plan. Un club sin alberca no puede entregar ninguna de las dos, de modo que recomendarlo como club ideal entrega una experiencia que el club no puede cumplir.
+
+**Corrige CEI-01 v1.2**, que dice de Q6 «Ambas»: «el catálogo se mantiene en seco… **La alberca no se exige como amenidad**». Esa regla permite resolver como club ideal uno que no puede entregar lo que la opción ofreció.
+
+| Dónde | Qué dice hoy CEI-01 v1.2 | Qué debe decir en la 1.3 |
+|---|---|---|
+| Q6 · Ambas | «el catálogo se mantiene en seco, y el sistema integra de forma proactiva entrenamiento individual de natación y clases acuáticas que ayuden a maximizar el objetivo declarado. La alberca no se exige como amenidad.» | El plan combina piso seco y agua e integra de forma proactiva natación individual y clases acuáticas que sirvan al objetivo declarado. **La alberca se exige como amenidad.** |
+| §5 · Control de lógica, renglón Clubes | «A esos requisitos se suma la alberca… se exige cuando el modo de entrenamiento resuelto es en agua» | La alberca se exige cuando la modalidad elegida o resuelta es **En la alberca** o **Ambas** |
+
+**Confirmada por Eric el 21 de septiembre**, en los dos sentidos: que con **Ambas** la alberca se incluye, y que **el sistema decide la modalidad únicamente cuando la persona pide que se le recomiende**.
+
+**Aterriza en:** apartados 5.4.1 y 5.6.2, apartado 4.2.4, apartado 7.5, la tercera entrada de los ajustes pendientes de CEI-01 y `tools/instrumento.py`.
+
 
 
 ---
@@ -987,7 +1013,6 @@ Leída con la prueba de dos renglones, el sujeto es el sistema y la frase se ree
 | **Atribución comercial de la venta que se va a otro club** | Ver D-44 |
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
 | **Cuáles son las siete clases premium, y cuánto texto e imágenes llevan** | Insumos para escribir esas siete páginas y para el inventario del anexo F. **No condicionan la especificación**: el sistema se comporta igual con cualquiera de las 47 clases (D-93) |
-| **CEI-01 requiere dos ajustes** | El renglón de Clubes del control de lógica, y la declaración del bloque P0 |
 | **La base de Experiencias Ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 14 |
-| **La alberca cuando la modalidad es «Ambas»** | **Choca con CEI-01 v1.2.** El apartado 5.6.2, en la versión de Eric del 21 de septiembre, establece que con **Ambas** el plan combina piso seco y agua y **la alberca es requisito excluyente del club**. CEI-01, que es el instrumento que rige, dice de Q6 «Ambas»: «el catálogo se mantiene en seco… **La alberca no se exige como amenidad**». El razonamiento del capítulo es sólido —un club sin alberca no puede entregar las clases acuáticas que esa opción promete—, y por eso la corrección pertenece a **CEI-01**, que debe actualizarse. **Se suma a los dos ajustes de CEI-01 ya registrados**, y hasta entonces el instrumento y el capítulo dicen cosas distintas |
+| **CEI-01 requiere tres ajustes** | El renglón de Clubes del control de lógica, la declaración del bloque P0 y **la regla de la alberca en Q6 «Ambas» (D-104)**. Los tres se aplican en una sola versión, la **1.3**, con su PDF. `tools/instrumento.py` los enumera y falla mientras alguno siga pendiente |
 | **Cuándo se entrega el brief al club** | El apartado 4.1 declara que el brief se produce **al terminar el cuestionario**. El apartado 8.5.2 establece que nada se escribe ni se envía hasta que la sesión cierra, en una sola escritura. Las dos afirmaciones conviven si **generar** y **entregar** son momentos distintos, que es como las trata 4.1.1 al remitir al capítulo 8. Falta que uno de los dos apartados lo diga con esas dos palabras |
