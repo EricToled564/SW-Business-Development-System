@@ -211,15 +211,28 @@ Un mismo concepto atraviesa el sistema de punta a punta. **El cuestionario es el
 
 ## 0.7 Resumen en una página
 
-**Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente.** 49 clubes, 47 disciplinas, albercas, vapor, sauna, entrenadores: todo eso existe y ya está pagado. Para quien lo busca, todavía no. Hoy **ninguna de las 49 páginas de club es legible para un buscador**, y la cobertura de las palabras clave con las que se busca la categoría —«gimnasio con alberca», «yoga cerca de mí»— está en **31.1%**.
+**Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente.** 49 clubes, 47 disciplinas, albercas, vapor, sauna, entrenadores: todo eso existe y ya está pagado. Para quien lo busca, todavía no. Hoy **ninguna de las 49 páginas de club es legible para un buscador**, y la cobertura de las palabras clave con que se busca la categoría está en **31.1%**.
 
-Ahí está la oportunidad, y es de una clase poco común: **el producto ya existe; lo que falta es volverlo legible.** La ventaja competitiva ya está en el suelo, en los 49 clubes. Falta ponerla donde se toma la decisión.
+**La demanda más grande del mercado está tocando otra puerta.** «Gimnasio para perder peso» es la intención de mayor volumen de la industria fitness en México: **932,300 búsquedas al mes**. Sports World aparece en el **0.02%** de ellas —2 de cada 10,000 palabras clave, todas fuera del top 50—. Y el contexto lo vuelve estructural: **75.2% de los adultos mexicanos vive con sobrepeso u obesidad** (ENSANUT 2020–2023), y bajar de peso es el objetivo número uno por el que alguien se inscribe a un gimnasio. El producto para atenderlo ya está dentro del club —entrenadores, evaluación, alberca, vapor, sauna—; **la página que lo diga es lo que falta**, y por eso «Bajar de peso» tiene página propia, con tratamiento de contenido de salud firmado por un médico con cédula vigente.
+
+**Y se puede ganar, porque nadie lo ha tomado.** Sports World ya lidera en presencia orgánica:
+
+| | Palabras clave orgánicas |
+|---|---|
+| **Sports World** | **17,400** |
+| Smart Fit | 12,300 |
+| Sport City | 5,600 |
+| Anytime Fitness | 1,900 |
+
+Lidera, y aun así cubre solo 31% del mercado sin marca. **Ningún competidor ha capitalizado las categorías fuertes de la demanda** —bajar de peso, yoga, funcional, artes marciales—. El primero que las tome se las queda.
 
 **Lo que se construye es un sistema de ventas, no un sitio.** Un prospecto entrega **un minuto** —de 16 a 19 preguntas, las mismas en el sitio, en WhatsApp y en la recepción del club— y recibe su **experiencia ideal**: el plan de entrenamiento que le corresponde, con su club, sus bloques y sus clases, armado desde lo que dijo que quiere lograr. **Del mismo cálculo, con esas mismas respuestas, sale el brief** con el que el asesor conduce la visita.
 
 **La persona recibe un plan. El asesor recibe evidencia. Es el mismo documento, leído desde los dos lados.**
 
-Eso es lo que convierte un rediseño en un sistema: **un solo concepto atraviesa la operación de punta a punta.** El cliente lo recibe como su experiencia, el asesor como su brief, y la Academia entrena a los 200 asesores en ese mismo método. Las 148 páginas del sitio dejan de ser un catálogo y pasan a ser 148 puertas de entrada, cada una construida para una intención de búsqueda documentada, y todas con la misma salida: **la visita agendada.**
+**Aquí es donde se sostiene el premium.** El terreno del precio bajo ya tiene dueños, y la objeción de precio aparece en **el 100% de las entrevistas de campo con asesores**. Mientras la conversación empiece en la tarifa, Sports World compite en el terreno del otro y responde con promoción. Este sistema mueve el punto de partida: **la persona llega a la visita con un plan propio en la mano, hecho con sus objetivos**, y el asesor abre con ese plan. La comparación deja de ser cuota contra cuota y pasa a ser plan contra catálogo. **El descuento deja de ser el argumento porque ya hubo uno mejor.**
+
+Eso es lo que convierte un rediseño en un sistema: **un solo concepto atraviesa la operación de punta a punta.** El cliente lo recibe como su experiencia, el asesor como su brief, y la Academia entrena a los 200 asesores en ese mismo método. Las 148 páginas dejan de ser un catálogo y pasan a ser 148 puertas de entrada, cada una construida para una intención de búsqueda documentada, y todas con la misma salida: **la visita agendada.**
 
 **La ambición es explícita:** el mejor sistema de captación y conversión digital para fitness en México, construido para sostener la comparación con cualquier operador del mundo. Lo que lo hace comparable es que **todo se mide, del clic a la cancelación**, y que cada compromiso trae la herramienta con la que se comprueba:
 
@@ -231,6 +244,6 @@ Eso es lo que convierte un rediseño en un sistema: **un solo concepto atraviesa
 | Velocidad, respuesta y estabilidad | Fuera de umbral | **2.5 s · 200 ms · 0.1** |
 | Cobertura de palabras clave de categoría | 31.1% | **55–65%**, a doce meses |
 
-Y el funnel completo, de punta a punta: **tráfico → visita agendada → visita realizada → membresía nueva.**
+Y el funnel completo: **tráfico → visita agendada → visita realizada → membresía nueva.**
 
-**Lo que cambia para el negocio** es dónde se apoya la venta. Hoy se apoya en el oficio de quien atiende. A partir de aquí, cada visita llega con un plan escrito, cada plan sale de lo que la persona contestó, y cada peso invertido en tráfico se puede seguir hasta la membresía que produjo.
+**Lo que cambia para el negocio** es dónde se apoya la venta. Hoy se apoya en el oficio de quien atiende y en la promoción que lo respalda. A partir de aquí, cada visita llega con un plan escrito, cada plan sale de lo que la persona contestó, y cada peso invertido en tráfico se puede seguir hasta la membresía que produjo.
