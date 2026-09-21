@@ -18,7 +18,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 |---|---|---|
 | `00-estructura.es.md` | 1,779 | `d91056c6f7cc08be00263ef0eccac5c4a4efea1fd312073120eb7136e024b9f5` |
 | `00-paginas-iniciales.es.md` | 3,734 | `3c8da0fa284336cd709035d641bcdedc6fcd6b29bde452b44ac4211bf65a15c1` |
-| `01-por-que-existe-la-experiencia-ideal.es.md` | 1,505 | `064c361746f29d343a21734af3d67053af7caae06d767a21b6244b97543314bb` |
+| `01-por-que-existe-la-experiencia-ideal.es.md` | 1,046 | `05731510b55369761dbc327e6acedfa7e651f2e358b8ecf8f9b552ba9a551d18` |
 | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,267 | `139fa6c4a382a9d97495243864494e3f55c6a43897ac87f90fdf9b994397f5c5` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,626 | `8e709a7b5d05253384816c91b8d0aed45f58944798a39e1aef60437a111287c7` |
 | `04-el-cuestionario.es.md` | 3,227 | `2675cdeb6f63836d1f8decaad301485750428c91bb6cc33d5db0f26dcd0927b2` |
