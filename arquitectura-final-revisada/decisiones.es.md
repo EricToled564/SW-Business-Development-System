@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-102. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-103. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -919,9 +919,12 @@ D-92 prohíbe describir el sistema por lo que no hace. La prueba para aplicarla 
 | El sujeto es… | Qué es la frase | Qué se hace |
 |---|---|---|
 | **El problema actual de Sports World** —lo que hay y no se alcanza a ver— | Un hallazgo. La omisión es el hecho, y decirla en afirmativo la borraría | **Se queda** |
+| **Un estado declarado del sistema** | Una definición. La ausencia es lo que distingue ese estado de los otros (D-103) | **Se queda** |
 | **El sistema que se está construyendo** | Un defecto de redacción: obliga a deducir el hecho por descarte | **Se reescribe en afirmativo** |
 
-**Los dos casos que se quedan por esta prueba:** «El objetivo que no se atiende: bajar de peso» y «La disciplina que sí existe y no se ve». Las dos nombran una omisión de Sports World, que es justo lo que el proyecto viene a corregir.
+**Los dos casos que se quedan por el primer renglón:** «El objetivo que no se atiende: bajar de peso» y «La disciplina que sí existe y no se ve». Las dos nombran una omisión de Sports World, que es justo lo que el proyecto viene a corregir.
+
+**El tercer renglón entra con D-103**, que registra el caso que esta prueba no cubría.
 
 **Aterriza en:** `NORMA-DE-REDACCION.es.md`, regla 1.
 
@@ -939,6 +942,27 @@ Todo lo que el sistema personaliza sale del cuestionario, y los capítulos 3 y 4
 **Qué se movió con el intercambio:** los dos archivos cambian de nombre, los apartados se renumeran —`4.1` a `4.9` para el cuestionario y `5.1` a `5.6` para la elegibilidad—, y las remisiones cruzadas se ajustan en los once archivos que las contienen. **Ningún texto cambia**: solo su número.
 
 **Aterriza en:** capítulos 5 y 6, y las remisiones de 2, 3, 7, 8, las páginas iniciales, la norma de redacción y esta bitácora.
+
+### D-103 · La definición de un estado se queda en negativo
+
+La prueba de D-101 tenía dos renglones y dejaba fuera un tercer caso, que apareció al revisar el capítulo 3: **la frase cuyo sujeto es un estado declarado del sistema.**
+
+El caso concreto: «Mientras el cuestionario siga pendiente, la ranura abre **Encuentra tu club ideal**, porque todavía no existe un club desde el cual medir.»
+
+Leída con la prueba de dos renglones, el sujeto es el sistema y la frase se reescribiría. Leída por lo que dice, **no haber resuelto el club ideal es la característica que define al estado Sin cuestionario**, y es lo que lo separa de Con experiencia y de Con visita (D-89). Quitarla deja los tres estados sin el rasgo que los distingue.
+
+| Qué describe la frase | Qué es |
+|---|---|
+| Lo que el sistema deja de hacer | Un defecto de redacción. Se reescribe |
+| Lo que caracteriza a un estado que el documento declara | Una definición. Se queda |
+
+**La prueba, en una línea:** si al quitar la ausencia el estado sigue distinguiéndose de los demás, la frase era un defecto; si deja de distinguirse, la frase era la definición.
+
+**Alcance.** Vale para los tres estados del menú, los cuatro modos del selector de club y cualquier estado que el documento declare y nombre. No vale para describir el sistema en general, que sigue rigiéndose por D-92.
+
+**Cómo se sostiene.** `tools/registro.js` señala estas frases igual que las demás, porque un programa no distingue una definición de un descuido. Las que Eric autoriza quedan en `tools/registro-permitidas.txt`, **con la razón anotada**, para que la lista no se vuelva un depósito de excepciones sin criterio.
+
+**Aterriza en:** `NORMA-DE-REDACCION.es.md` regla 1, D-101, `tools/registro-permitidas.txt` y el apartado 3.7 del capítulo 3.
 
 
 
