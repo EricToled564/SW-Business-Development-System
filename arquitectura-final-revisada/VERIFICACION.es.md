@@ -1,8 +1,16 @@
 # Verificación de integridad
 
-Hash SHA-256 de cada archivo de esta carpeta, al 20 de septiembre de 2026.
+Hash SHA-256 de cada archivo de esta carpeta, al 21 de septiembre de 2026.
 
 Para comprobar que un archivo no cambió: `sha256sum <archivo>` y comparar contra esta tabla. Si no coincide, el archivo se modificó después de esta fecha, y el commit correspondiente dice por qué.
+
+**La columna de palabras se reproduce con un solo comando**, sobre el archivo tal cual, marcas de Markdown incluidas:
+
+```
+python3 -c "import sys; print(len(open(sys.argv[1]).read().split()))" <archivo>
+```
+
+Es el mismo criterio con el que se contaron las entregas anteriores, y difiere de `wc -w` porque separa también por los espacios duros de las tablas.
 
 Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que lo respalda es el historial del repositorio.
 
@@ -10,16 +18,16 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 |---|---|---|
 | `00-estructura.es.md` | 1,277 | `481ba80d9e13f9aca96766f86746d57126a182da0a11a3c3c0a4fc6666d456bf` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
-| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,216 | `848a84b00e423e4c57c6fe52b24cb9b52a2937bbdcd314fd9f0c12978fb6d149` |
-| `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,623 | `5ada56daed8d240877de74dbdc994ee0581377bcaee12b5785b9031004de7f65` |
-| `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
+| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,289 | `5f5eba1942a6eaabae0460aaae3ac8e3a5dbe728fd87f457ac3eabcdc33732b1` |
+| `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,625 | `7865c5b4bf01dec6e0460389bcf3ddd11ed85fef37918c8b25772d1a121a4fc1` |
+| `04-quien-puede-recorrer-la-experiencia.es.md` | 946 | `bd5e4b471fe87c9dfc2a5e6c4aa0ac89bfe2e5c0eebc1719958d3f3f59e202a3` |
 | `05-el-cuestionario.es.md` | 3,226 | `38fa1d020edcb946e0b0c2aa3d98407152748225b5f8a66e7a815b3ea0767ba0` |
 | `06-los-objetivos-de-la-persona.es.md` | 852 | `44a155d6fed9f1d09f9431f15def3dcd6d4773957651d0feeedcaef4f01331e8` |
-| `07-el-recorrido-en-pantalla.es.md` | 2,431 | `7ec92186542444982a35a9d03890f56a66ec890f3e49820181c9258e1dbf9f80` |
+| `07-el-recorrido-en-pantalla.es.md` | 2,638 | `276fa9949358a37a2d79a34878378a2b07cf56081bf9e608af94991503c06866` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `README.es.md` | 355 | `693ba01c6a4d850b39685e7d1868e45b95241fa70097c6346405d401bdb5a439` |
-| `decisiones.es.md` | 9,593 | `620f1a96c7860f745b2b2c36b22144d795b0b83a6615ffc4949f26737c80b052` |
+| `decisiones.es.md` | 10,759 | `8a3e363f944138ee0737df34ebe0712f7577d9333217d2255ec6621987ee9aa5` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `872fce246a33f992c7a2004ffaa7b1b74cb4ce21ac5ab6a8c56402010a57b9b4` |
 
 ## Estado de aprobación
@@ -27,14 +35,29 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | Capítulo | Aprobado por Eric | Modificado después de aprobarse | Quién ordenó el cambio |
 |---|---|---|---|
 | 1 | Sí | Se agregó el apartado 1.3.4, qué es BES. Después, remisiones cruzadas por la renumeración | Eric |
-| 2 | **Estructura sí, texto no** | Reescrito completo sobre las decisiones D-65 a D-79, D-82, D-83 y D-85, dictadas una por una el 20 de septiembre, y cotejado contra los dictados literales de ese día. Se sube sin aprobación del texto, a la espera de la revisión de Eric | — |
-| 3 | Sí | Las leyendas dejan de ser cuatro fijas; se quitó la cifra de requisitos. Después, renumeración y el nombre del servicio para menores. **El 20 de septiembre: un cálculo por cita (D-68) y el alcance de la regla de no nombrar carencias (D-72)** | Eric |
-| 4 | Sí | La precarga se muestra en la ruta reducida. Después, renumeración y el nombre del servicio para menores | Eric |
+| 2 | **Estructura sí, texto no** | Reescrito completo sobre las decisiones D-65 a D-79, D-82, D-83 y D-85, dictadas una por una el 20 de septiembre, y cotejado contra los dictados literales de ese día. Se sube sin aprobación del texto, a la espera de la revisión de Eric. **El 21 de septiembre: reordenado por resultado (D-91), los tres estados por su nombre (D-89), las clases premium (D-93) y la unidad del traslado (D-96)** | — |
+| 3 | Sí | Las leyendas dejan de ser cuatro fijas; se quitó la cifra de requisitos. Después, renumeración y el nombre del servicio para menores. **El 20 de septiembre: un cálculo por cita (D-68) y el alcance de la regla de no nombrar carencias (D-72). El 21: el tiempo de traslado se declara en minutos (D-96)** | Eric |
+| 4 | Sí | La precarga se muestra en la ruta reducida. Después, renumeración y el nombre del servicio para menores. **El 21 de septiembre: el tiempo de traslado se declara en minutos (D-96)** | Eric |
 | 5 | Sí | La clase aceptada sin club se vuelve requisito, en 5.2.3 y 5.2.4. Después, renumeración | Eric |
 | 6 | Sí | Sin cambios de fondo desde su aprobación; solo renumeración. **El 20 de septiembre: los seis objetivos tienen página propia (D-70)** | Eric |
-| 7 | **No** | Escrito. **El 20 de septiembre: la escritura única al cerrar la sesión (D-69), agendar en un segundo club (D-67) y la experiencia por cita (D-68)** | — |
+| 7 | **No** | Escrito. **El 20 de septiembre: la escritura única al cerrar la sesión (D-69), agendar en un segundo club (D-67) y la experiencia por cita (D-68). El 21: los tres estados por su nombre (D-89), la llave de la sesión (D-90), el calendario de atención del club (D-94) y el apartado 7.5.3 de los recordatorios (D-95)** | — |
 
-## Qué cambió en esta entrega
+## Qué cambió en la entrega del 21 de septiembre
+
+| Pieza | Qué cambió |
+|---|---|
+| `decisiones.es.md` | **Entran D-89 a D-96.** Dos alinean la Arquitectura con el Mapa del Funnel (D-89 y D-90); dos registran lo dictado en sesión y ya aplicado (D-91 y D-92); cuatro son las precisiones que Eric dictó el 21 de septiembre (D-93 a D-96) |
+| **Los tres estados del menú** | **D-89.** Pasan a llamarse **Sin cuestionario · Con experiencia · Con visita**. Los códigos `E##` quedan en el Mapa del Funnel, que el Contrato designa documento único de medición. Ninguna regla cambia |
+| **Los dos identificadores** | **D-90.** `web_session_id`, que muere con la sesión y nunca llega al registro del prospecto, y `session_uuid`, la llave de idempotencia que sí es campo de ese registro. D-48 queda intacta |
+| **El orden del capítulo 2** | **D-91.** Primero los once tipos por el porqué existen y el problema que resuelven, después lo que el sitio produce, después cómo el contenido y los menús llevan ahí |
+| **La redacción** | **D-92.** Describir el sistema por lo que no hace queda prohibido. El barrido de lo ya escrito entra párrafo por párrafo, con aprobación de Eric en cada uno: `tools/registro.js` los lista y **no borra** |
+| **Las clases premium** | **D-93.** Son las siete disciplinas que Sports World decide priorizar, y lo único propio de sus páginas es la redacción editorial. Se retira la distinción entre clases con marca y sin marca. **Cuáles son las siete es punto abierto**, a decidir por Sports World en el arranque |
+| **La agenda** | **D-94.** La fecha y la hora se eligen dentro del calendario de atención del club: los días en que ese club abre y las horas en que atiende, del mismo corte de las 06:00 que publica su página |
+| **Los recordatorios de la visita** | **D-95.** Los 2 mensajes por WhatsApp —24 horas y 2 horas antes— son de la persona; el club recibe el brief por correo. Entra el apartado 7.5.3 |
+| **Kilómetros y minutos** | **D-96.** Los kilómetros acotan qué clubes entran —10 km para resolver el club ideal, 5 km para explorar—; los minutos miden el trayecto y son la medida que se le muestra. La unidad queda explícita en 2.6.2, 3.2.1 y el capítulo 4 |
+| **La tabla de integridad** | La columna de palabras declara el comando exacto que la reproduce |
+
+## Qué cambió en la entrega del 20 de septiembre
 
 | Pieza | Qué cambió |
 |---|---|
