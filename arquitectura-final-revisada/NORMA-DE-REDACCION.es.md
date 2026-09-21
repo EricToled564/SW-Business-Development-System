@@ -124,7 +124,7 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 
 ## Lo que hoy no cumple la norma
 
-**Veintidós ajustes: veintiuno hechos, uno abierto.** El verificador `tools/registro.js` señala y **no borra**; cada párrafo se aprueba uno por uno.
+**El verificador arrancó el barrido en 73 frases y queda en 7.** El verificador `tools/registro.js` señala y **no borra**; cada párrafo se aprueba uno por uno.
 
 ### Las nueve frases que marcaba el verificador: corregidas
 
@@ -142,7 +142,7 @@ Aprobadas por Eric el 21 de septiembre. Siete se reescribieron en afirmativo, un
 | 4.2 | «No es un reactivo: no lleva número…» → «Se identifica por esa clave, se compone en cada sesión con el contexto de esa visita, y se resuelve antes del primer reactivo» |
 | 6 | «Esos objetivos no son abiertos» → «Esos objetivos son los que ofrecen dos reactivos del cuestionario» |
 
-**El verificador queda en 7 capítulos, 0 hallazgos.**
+**Esas nueve quedaron cerradas.** El barrido siguió después, capítulo por capítulo.
 
 ### Los doce títulos escritos en negativo: corregidos
 
@@ -167,11 +167,22 @@ Aprobados por Eric el 21 de septiembre y aplicados, un commit por capítulo.
 
 **Dos títulos en negativo se quedan**, por la prueba del sujeto de D-101: 1.2.1 «El objetivo que no se atiende» y 1.2.2 «La disciplina que sí existe y no se ve». Nombran una omisión de Sports World, no una conducta del sistema.
 
+### El barrido de párrafos: dónde va
+
+El verificador arrancó el barrido en **73 frases**. Al 21 de septiembre quedan **7**, en cuatro archivos.
+
+| Archivo | Quedan | Qué son |
+|---|---|---|
+| `00-paginas-iniciales.es.md` | 1 | «La bitácora de decisiones», renglón de la tabla de jerarquía documental de 0.1. El apartado declara qué documentos rigen, y la bitácora es uno de ellos |
+| `01-vamos-a-crear-el-mejor-sistema.es.md` | 3 | **Texto de Eric.** Dos describen el estado anterior de Sports World y se quedan por la prueba del sujeto. Una, «El resto de este documento explica cómo construirlo», es la regla 3 |
+| `02-como-se-pierde-hoy.es.md` | 2 | **Texto de Eric.** Una describe la capacidad de Sports World que hoy no se traduce, y se queda. La otra, «El resultado no cambia según el canal», admite forma afirmativa |
+| `08-el-recorrido-en-pantalla.es.md` | 1 | «El navegador no debe guardar nada de lo que la persona responde», prohibición normativa de la regla 10, del mismo tipo que las cuatro que Eric ya autorizó en el capítulo 3 |
+
+**Las cinco de los capítulos 1 y 2 son texto de Eric y quedan a su resolución.** Las otras dos son candidatas a `tools/registro-permitidas.txt`, que solo Eric autoriza.
+
 ### Un título que habla del documento
 
-| Hoy | Propuesta |
-|---|---|
-| 1.4 Qué convierte este documento | 1.4 Qué convierte el sistema |
+**Resuelto.** El capítulo 1 es texto de Eric y su apartado 1.4 se llama «Pero ganar la búsqueda no es suficiente». La propuesta anterior, que cambiaba «Qué convierte este documento» por «Qué convierte el sistema», quedó sin objeto.
 
 ---
 
