@@ -58,7 +58,7 @@ La frontera queda declarada en el texto, para que el lector sepa en qué modo es
 | **5** | El cuestionario: el único instrumento | `05-el-cuestionario.es.md` | Aprobado |
 | **6** | Los objetivos de la persona | `06-los-objetivos-de-la-persona.es.md` | Aprobado |
 | **7** | El recorrido en pantalla | `07-el-recorrido-en-pantalla.es.md` | Escrito, pendiente de aprobación |
-| **8** | Datos de contacto y consentimiento | — | Pendiente |
+| **8** | Datos de contacto y consentimiento | `08-datos-de-contacto-y-consentimiento.es.md` | Escrito, pendiente de aprobación |
 | **9** | Cómo se elige el club | — | Pendiente |
 | **10** | Cómo se compone el plan | — | Pendiente. Su apartado de entrenamiento en alberca se escribe desde `insumo-entrenamiento-acuatico.es.md` |
 | **11** | Cómo se eligen las clases | — | Pendiente |

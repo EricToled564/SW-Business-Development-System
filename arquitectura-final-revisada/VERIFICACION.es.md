@@ -16,7 +16,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
-| `00-estructura.es.md` | 1,779 | `d48e32d668da2e58bede2a0daf50d5af49c2853ad267c2190665058983711514` |
+| `00-estructura.es.md` | 1,782 | `bf656ad178b9d643cf0ee8e7291a0a346f02c9c6259ad4196f403d03976c0d94` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,505 | `064c361746f29d343a21734af3d67053af7caae06d767a21b6244b97543314bb` |
 | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,267 | `2a8fccf19f95af9208baaf75212bcbe1d6fa8bb507d96d7ed60c5da5895a4361` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,626 | `1ddabcd4c28910ff64dcbab90e0156529ad4dd46340b9f9bc6096e7a366f427c` |
@@ -24,6 +24,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `05-el-cuestionario.es.md` | 3,227 | `962fa5a318f05366495ce603eaf05e3edfe0f7eed012e53e92bb74050a4563c2` |
 | `06-los-objetivos-de-la-persona.es.md` | 841 | `62b4fd650f0712408acd4041f7577e409f1cb993886423167350cf7390200e58` |
 | `07-el-recorrido-en-pantalla.es.md` | 2,739 | `0cfdd5b472f560cc5bab2b3ed54cd7d0eb4fe70b6228f2a6cf8f1ec98af9aca2` |
+| `08-datos-de-contacto-y-consentimiento.es.md` | 1,572 | `03c203bcca7eb5fa9d878d1fae1ea288f57cc0d21695a85f661c7018cb053bd1` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `NORMA-DE-REDACCION.es.md` | 3,029 | `9e575b7d5437772b6127c9cf8baadf9fa66cc8f4bf61f3e8d0e4500a1d8eba73` |
