@@ -2,22 +2,23 @@
 
 **Arquitectura de la Experiencia · versión revisada.** Este archivo fija el índice completo —páginas iniciales, veinte capítulos, seis anexos— y el estado de cada pieza. Es la referencia para las remisiones cruzadas: **ningún capítulo remite a un número que no esté en esta tabla.**
 
-La numeración vigente es la que fija **D-51**, que inserta el capítulo del sitio en la posición 2 y corre un lugar los que estaban del 2 al 6. Los capítulos 18 a 19 y la tercera parte entran con **D-98**.
+**D-51** insertó el capítulo del sitio y corrió un lugar los que le seguían; con el corrimiento de D-98, ese capítulo es hoy el **3**. Los capítulos 18 a 20 y la tercera parte entran con **D-98**, que corre un lugar los capítulos del 1 al 19 para abrir el capítulo 1.
 
 ---
 
 ## Páginas iniciales
 
-**Viven en `00-paginas-iniciales.es.md`, numeradas de 0.1 a 0.6.**
+**Viven en `00-paginas-iniciales.es.md`, numeradas de 0.1 a 0.5.**
 
 | Pieza | Qué contiene |
 |---|---|
 | **0.1** Control del documento | Versión, fecha, estado, destinatarios, base documental |
 | **0.2** Cómo leer este documento | Para quién es, qué decide, y las tres palabras normativas: **debe · no debe · puede** |
-| **0.3** Vamos a crear el mejor sistema de captación y conversión digital de fitness en México | El argumento del proyecto, en texto continuo: la tesis, la oportunidad, la posición de partida, el sistema comercial, la ecuación precio-valor, las 148 puertas de entrada, cómo se comprueba y qué cambia para el negocio |
-| **0.4** Índice detallado | Capítulos y subcapítulos, con número de página y enlace interno |
-| **0.5** Glosario | A–Z, en lenguaje de negocio |
-| **0.6** Tabla de códigos y abreviaturas | Las seis familias de códigos, con un ejemplo de cada una |
+| **0.3** Índice detallado | Capítulos y subcapítulos, con número de página y enlace interno |
+| **0.4** Glosario | A–Z, en lenguaje de negocio |
+| **0.5** Tabla de códigos y abreviaturas | Las seis familias de códigos, con un ejemplo de cada una |
+
+El argumento del proyecto salió de las páginas iniciales y es el **capítulo 1**.
 
 **Regla que gobierna las páginas iniciales:** ningún término, código o concepto aparece en el cuerpo sin estar antes en el glosario o en la tabla de códigos.
 
@@ -39,12 +40,12 @@ Los cuatro modos del selector de club van con nombre en español y sin código: 
 ## Las tres partes
 
 **Parte I · Por qué existe** — capítulos 1 y 2. Explica el problema y el producto. No obliga a nada.
-**Parte II · Qué hace el sistema** — capítulos 3 a 16. Prescribe comportamiento.
-**Parte III · Qué se le exige al sistema** — capítulos 18 a 19. Fija lo que se comprueba antes de dar el trabajo por entregado.
+**Parte II · Qué hace el sistema** — capítulos 3 a 17. Prescribe comportamiento.
+**Parte III · Qué se le exige al sistema** — capítulos 18 a 20. Fija lo que se comprueba antes de dar el trabajo por entregado.
 
 La frontera queda declarada en el texto, para que el lector sepa en qué modo está leyendo.
 
-**Corrige a D-49**, que ponía la frontera después del capítulo 4 y dejaba bajo «no obliga a nada» dos capítulos que sí obligan: el 2, que prescribe las 148 páginas y sus menús, y el 3, que prescribe qué recibe la persona y qué recibe el asesor.
+**Corrige a D-49**, que ponía la frontera después del capítulo 4 y dejaba bajo «no obliga a nada» dos capítulos que sí obligan: el **3**, que prescribe las 148 páginas y sus menús, y el **4**, que prescribe qué recibe la persona y qué recibe el asesor.
 
 ---
 
@@ -77,7 +78,6 @@ La frontera queda declarada en el texto, para que el lector sepa en qué modo es
 
 | № | Subcapítulos |
 |---|---|
-| **9** | Cuándo se piden · Envío de la experiencia por correo · Una sola escritura al CRM · **La conciliación con la llave canónica y el reencuentro (D-56)** · Aviso simplificado e integral |
 | **10** | El principio · Los cuatro requisitos · El radio de 10 km · Minutos con tráfico · Los cuatro modos · Alternativas y leyendas · Elección propia |
 | **11** | B01 · B02 · B03 · Seco, agua y mixto · **Los seis programas de cada una de las tres modalidades individuales (D-77 y D-78)** · Entrenamiento personal para todas las personas |
 | **12** | La matriz de clases · Los pasos del seleccionador · Filtro de intensidad · Matriz de contraindicaciones · Sustitución, nunca exclusión |
