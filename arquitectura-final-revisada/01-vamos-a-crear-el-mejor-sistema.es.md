@@ -10,7 +10,7 @@
 
 Sports World deja de vender un club. Empieza a vender un resultado.
 
-Un prospecto entrega un minuto de su tiempo —entre 16 y 19 preguntas, las mismas en el sitio, WhatsApp y la recepción del club— y recibe **su experiencia ideal en Sports World**.
+Un prospecto entrega un minuto de su tiempo —entre 16 y 19 preguntas, las mismas en el sitio, WhatsApp y la recepción del club— y recibe **su Experiencia Ideal en Sports World**.
 
 Un plan construido a partir de lo que quiere lograr: el club que mejor responde a sus necesidades, los bloques de entrenamiento que le corresponden y las clases y disciplinas que pueden acercarlo a su objetivo.
 
@@ -70,7 +70,7 @@ Convertir esa oportunidad en una membresía exige conectar lo que ocurre antes d
 
 Ahí es donde el proyecto deja de ser un rediseño de sitio y se convierte en un sistema comercial.
 
-El prospecto llega desde una intención concreta, responde las preguntas y recibe su experiencia ideal.
+El prospecto llega desde una intención concreta, responde las preguntas y recibe su Experiencia Ideal.
 
 El asesor recibe esa misma información convertida en un brief para conducir la visita.
 

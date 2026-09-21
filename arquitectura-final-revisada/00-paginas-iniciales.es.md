@@ -92,21 +92,21 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **8** | El recorrido en pantalla | 8.1 La puerta de entrada: agendar una visita · 8.2 Una sola dirección de internet · 8.3 Las seis fases · 8.4 Avance y retroceso · 8.5 Qué guarda el navegador y qué guarda el servidor · 8.6 El paso a BES, en cualquier momento · 8.7 La fase de error |
 | **9** | Datos de contacto y consentimiento | 9.1 Cuándo se piden y cuáles son · 9.2 El envío de la experiencia por correo · 9.3 Una sola escritura · 9.4 La conciliación con la llave canónica y el reencuentro · 9.5 El aviso simplificado y el aviso integral |
 | **10** | Cómo se elige el club | El principio · Los cuatro requisitos · El radio de 10 km · Minutos con tráfico · Los cuatro modos · Alternativas y leyendas · Elección propia |
-| **11** | Cómo se compone el plan | B01 · B02 · B03 · Seco, agua y mixto · Los seis programas de cada modalidad individual · Entrenamiento personal |
-| **12** | Cómo se eligen las clases | La matriz de clases · Los pasos del seleccionador · Filtro de intensidad · Matriz de contraindicaciones · Sustitución |
-| **13** | El texto que redacta el modelo de lenguaje | Una sola llamada · Qué queda fijo · Respaldo ante falla |
-| **14** | Las fuentes de datos y su contrato | El corte de las 06:00 · Categorías de fuente · Matrices propias · Alta de club · Alta de clase · El contrato de cada fuente · La base de experiencias ideales |
+| **11** | Cómo se compone el plan | B01 · B02 · B03 · Seco, agua y mixto · **Los seis programas de cada una de las tres modalidades individuales (D-77 y D-78)** · Entrenamiento personal para todas las personas |
+| **12** | Cómo se eligen las clases | La matriz de clases · Los pasos del seleccionador · Filtro de intensidad · Matriz de contraindicaciones · Sustitución, nunca exclusión |
+| **13** | El texto que redacta el modelo de lenguaje | Una sola llamada · Qué puede y qué no · Respaldo ante falla |
+| **14** | Las fuentes de datos y su contrato | El corte de las 06:00 · Categorías de fuente · Matrices propias · Alta de club · Alta de clase · El contrato de cada fuente · **La base de Experiencias Ideales y su contrato (D-56)** |
 | **15** | La operación diaria | La simulación diaria · Qué se revisa y quién · Qué se hace cuando una fuente no llega |
-| **16** | El traspaso al club | Qué recibe el club · Qué recibe el asesor · Las llamadas directas · Si la persona no se presenta · Cuando el prospecto ya existía |
-| **17** | El panel de actualización sin código | Qué se cambia sin programar · Quién autoriza · Qué queda registrado |
+| **16** | El traspaso al club | Qué recibe el club · Qué recibe el asesor · **Las llamadas directas: quien contestó y no agendó** · Qué ocurre si la persona no se presenta · **Qué ve el asesor cuando el prospecto ya existía** |
+| **17** | El panel de actualización sin código | Qué se puede cambiar sin programar · Quién lo autoriza · Qué queda registrado |
 
 ### Parte III · Qué se le exige al sistema
 
 | № | Capítulo | Apartados |
 |---|---|---|
-| **18** | Qué hace el sistema cuando algo sale mal | La tabla de casos · Cuando una fuente no llega · Cuando el servidor falla · Cuando el texto viene fuera de rango · Cuando la conexión es lenta · Cuando el guion de la capa personal no corre · Cuando la sesión se pierde |
-| **19** | Los umbrales | Velocidad de aparición y de respuesta · Estabilidad de la página · Accesibilidad · Rastreo de las 49 páginas de club · Cómo se comprueba cada cifra |
-| **20** | Criterios de aceptación | Una condición comprobable por capítulo · Con qué se comprueba · Qué se considera entregado |
+| **18** | Qué hace el sistema cuando algo sale mal | La tabla de casos: qué lo dispara, qué ve la persona y qué queda registrado · Cuando una fuente no llega · Cuando el servidor falla · Cuando el texto viene fuera de rango · Cuando la conexión es lenta · Cuando el guion de la capa personal no corre · Cuando la sesión se pierde a medio recorrido |
+| **19** | Los umbrales | Velocidad de aparición y de respuesta · Estabilidad de la página mientras carga · Accesibilidad, con los cuatro pilares · Rastreo de las 49 páginas de club · **Cómo se comprueba cada cifra y con qué herramienta** |
+| **20** | Criterios de aceptación | Una condición comprobable por capítulo · Con qué se comprueba cada una · Qué se considera entregado |
 ### Anexos
 
 | | Anexo |
@@ -127,7 +127,7 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **Amenidad** | Instalación del club que se usa para entrenar: alberca, vapor, sauna y las demás del catálogo |
 | **BES** | El asistente conversacional que atiende a la persona en nombre de Sports World. Vive dentro del sitio y dentro de WhatsApp |
 | **Bloque de entrenamiento** | Cada una de las tres partes del plan: `B01`, `B02` y `B03` |
-| **Brief** | Lo que recibe quien va a atender la visita: quién viene, qué quiere y cómo se conduce la visita. Sale del mismo cálculo que la experiencia ideal |
+| **Brief** | Lo que recibe quien va a atender la visita: quién viene, qué quiere y cómo se conduce la visita. Sale del mismo cálculo que la Experiencia Ideal |
 | **Capa personal** | Lo que en una página depende de quien la mira: el menú contextual, la leyenda de disponibilidad y los botones que cambian con el estado |
 | **CEI-01** | El Cuestionario de Experiencia Ideal, versión 1.2. El único instrumento del sistema |
 | **Clase individual** | Cualquiera de las 47 disciplinas del catálogo |
@@ -136,7 +136,7 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **Compuerta de mayoría de edad** | La primera pregunta del recorrido. Decide entre la experiencia completa y la ruta reducida |
 | **Consola** | La pantalla interna desde la que el personal autorizado levanta el mismo cuestionario con el prospecto presente |
 | **Corte de las 06:00** | La sincronización diaria con el sistema de clientes. Lo registrado hasta las 05:59 se publica ese día |
-| **Experiencia ideal** | El plan de entrenamiento conectado con los objetivos de la persona, con su club, sus bloques y sus clases |
+| **Experiencia Ideal** | El plan de entrenamiento conectado con los objetivos de la persona, con su club, sus bloques y sus clases |
 | **Hub** | Página que concentra un tema y enlaza a las que lo desarrollan |
 | **Leyenda de disponibilidad** | La marca «Disponible en tu club» o «No disponible en tu club» en las listas de clases por objetivo |
 | **Llave canónica** | Lo que identifica a una persona entre sistemas: teléfono como llave principal; nombre, apellido y club resuelven homonimia |

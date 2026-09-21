@@ -46,7 +46,7 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 |---|---|---|
 | **1.1** La brecha entre lo que Sports World tiene y lo que se alcanza a ver | La infraestructura que existe y la parte de ella que llega a la decisión del cliente, con cifras | Relato |
 | **1.2** Las tres formas en que se pierde a una persona lista para inscribirse | Los tres problemas del mercado: el objetivo que no se atiende, la disciplina que no se ve, el laberinto de clics | Relato |
-| **1.3** Qué es el producto | La experiencia ideal, sus dos destinatarios, los tres canales y qué es BES | Relato |
+| **1.3** Qué es el producto | La Experiencia Ideal, sus dos destinatarios, los tres canales y qué es BES | Relato |
 | **1.4** Qué convierte el sistema | La cadena de conversión completa, en una línea, con la cifra de cada eslabón | Relato + cifra comprobable |
 
 ### Parte II · Qué hace el sistema
@@ -54,7 +54,7 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 | Sección | Qué lleva | Cómo se escribe |
 |---|---|---|
 | **2.1** Los once tipos de página y el problema que resuelve cada uno | La intención de búsqueda que atiende cada tipo, el conteo de páginas y el problema que cierra | Tabla de datos |
-| **2.2** Lo que el sitio produce | Las cuatro piezas de la cadena: cuestionario, experiencia ideal, brief, visita agendada | Regla |
+| **2.2** Lo que el sitio produce | Las cuatro piezas de la cadena: cuestionario, Experiencia Ideal, brief, visita agendada | Regla |
 | **2.3** El menú superior | Los botones fijos en las 148 páginas | Regla |
 | **2.4** Los tres estados de la persona | Los dos hechos que la describen y los tres estados que producen | Regla + tabla de casos |
 | **2.5** El contenido de cada tipo de página | Dónde vive cada cosa y el contenido mínimo tipo por tipo | Tabla de datos |
@@ -127,7 +127,7 @@ Aprobadas por Eric el 21 de septiembre. Siete se reescribieron en afirmativo, un
 |---|---|
 | 1.3.1 | **Se conserva.** «Un catálogo de clases… no son el producto: son insumos del plan» es doctrina del proyecto y, por la prueba del sujeto, corrige cómo se vende hoy. Queda anotada en `tools/registro-permitidas.txt` |
 | 1.3.3 | «BES no es un canal» → «BES es una variante de atención que vive dentro del sitio y dentro de WhatsApp» |
-| 1.3.3 | «Este documento especifica…» → «La experiencia ideal se especifica aquí para el canal del sitio web» |
+| 1.3.3 | «Este documento especifica…» → «La Experiencia Ideal se especifica aquí para el canal del sitio web» |
 | 1.3.4 | «BES es un nombre propio y este documento no lo desarrolla» → **borrada** |
 | 5.1 | «…que es lo que el resto de este documento especifica» → «…con sus seis fases» |
 | 5.2.2 | «Lo que cambia no es cómo se elige el club, sino qué se entrega después» → «Lo que cambia es qué se entrega después» |

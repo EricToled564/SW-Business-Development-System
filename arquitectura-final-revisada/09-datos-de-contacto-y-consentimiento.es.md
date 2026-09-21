@@ -1,6 +1,6 @@
 # Capítulo 9 · Datos de contacto y consentimiento
 
-La experiencia ideal se construye con lo que la persona contesta. Para entregársela por correo, para que el club la espere y para que el asesor la llame, hacen falta además tres datos de contacto. Se piden en un solo momento, se escriben una sola vez, viven en un solo lugar y se entregan bajo un aviso.
+La Experiencia Ideal se construye con lo que la persona contesta. Para entregársela por correo, para que el club la espere y para que el asesor la llame, hacen falta además tres datos de contacto. Se piden en un solo momento, se escriben una sola vez, viven en un solo lugar y se entregan bajo un aviso.
 
 Todo lo que aquí se especifica ocurre después de la compuerta de mayoría de edad del capítulo 6: **quien llega a la captura de contacto confirmó ser mayor de edad.**
 
@@ -8,7 +8,7 @@ Todo lo que aquí se especifica ocurre después de la compuerta de mayoría de e
 
 Los datos de contacto se piden **al terminar el cuestionario, en la fase 3 del recorrido**, mientras el sistema calcula la recomendación. El capítulo 8 especifica la secuencia.
 
-**El motivo que se le da a la persona es el uso real:** enviarle su experiencia ideal por correo. La espera del cálculo se ocupa con la captura, y la captura se justifica con algo que ella recibe.
+**El motivo que se le da a la persona es el uso real:** enviarle su Experiencia Ideal por correo. La espera del cálculo se ocupa con la captura, y la captura se justifica con algo que ella recibe.
 
 | Dato | De dónde sale |
 |---|---|
@@ -40,7 +40,7 @@ El correo sale **al cerrar la sesión, una sola vez, con la versión final de la
 
 | | |
 |---|---|
-| **Qué contiene** | La experiencia ideal completa, la misma que vio en pantalla: su club, su plan y sus clases. El capítulo 4 especifica su contenido |
+| **Qué contiene** | La Experiencia Ideal completa, la misma que vio en pantalla: su club, su plan y sus clases. El capítulo 4 especifica su contenido |
 | **Cuándo sale** | Al cerrar la sesión, por salida o por diez minutos sin actividad |
 | **Cuántos salen** | Uno por cada experiencia vigente. Con dos citas en dos clubes salen dos, porque cada una resuelve clases distintas |
 | **Qué recibe el club** | El brief de esa persona, por correo, según el capítulo 16. La persona recibe su experiencia; el club recibe el brief |
@@ -86,7 +86,7 @@ La etapa **visita agendada** del Mapa del Funnel cuenta **cuando el sistema de c
 |---|---|
 | **En el entorno del sitio** | Los datos personales residen de forma transitoria, el tiempo necesario para completar la captura y transferirlos al sistema de clientes. Copiados ahí, el entorno del sitio los suelta |
 | **En el sistema de clientes** | Vive el registro del prospecto, con sus citas |
-| **En la base de experiencias ideales** | Vive la experiencia, ligada al registro por su identificador. Es una base propia del proyecto, dentro de la infraestructura de Sports World |
+| **En la base de Experiencias Ideales** | Vive la experiencia, ligada al registro por su identificador. Es una base propia del proyecto, dentro de la infraestructura de Sports World |
 | **En las bitácoras** | Quedan los eventos técnicos, con los datos personales fuera de ellas |
 | **En tránsito** | Todas las comunicaciones viajan cifradas por HTTPS/TLS, y el acceso corre bajo mínimo privilegio |
 
@@ -109,11 +109,11 @@ Esa misma llave une la visita agendada con la visita realizada y con la membres�
 |---|---|
 | **El registro del prospecto** | Se actualiza contra el que ya existía. **Una persona, un registro** |
 | **La marca «no quiso agendar visita»** | La sustituye el resultado nuevo. Es una marca de estado |
-| **La experiencia ideal** | Vive en su base propia. La nueva sustituye a la anterior cuando resuelve el mismo club; cuando resuelve otro, se suma. Hay **una experiencia vigente por cita** |
+| **La Experiencia Ideal** | Vive en su base propia. La nueva sustituye a la anterior cuando resuelve el mismo club; cuando resuelve otro, se suma. Hay **una experiencia vigente por cita** |
 | **La cita** | Queda contra el registro que ya existía |
 | **Al alta de la membresía** | Se verifica en qué club ocurrió: prevalece la experiencia de ese club y las demás se eliminan |
 
-**La medición conserva todo lo ocurrido.** Las etapas de la espina del funnel cuentan eventos en el momento en que suceden: cuestionario iniciado cuenta al responderse la primera pregunta, y cuestionario completado cuenta al generarse la experiencia ideal. Rehacer el cuestionario produce un evento nuevo de cada uno, y los dos quedan registrados aunque la experiencia anterior se sustituya.
+**La medición conserva todo lo ocurrido.** Las etapas de la espina del funnel cuentan eventos en el momento en que suceden: cuestionario iniciado cuenta al responderse la primera pregunta, y cuestionario completado cuenta al generarse la Experiencia Ideal. Rehacer el cuestionario produce un evento nuevo de cada uno, y los dos quedan registrados aunque la experiencia anterior se sustituya.
 
 **Quien contesta el cuestionario y elige no agendar** entra a las llamadas directas del asesor, con su brief. El capítulo 16 lo especifica.
 

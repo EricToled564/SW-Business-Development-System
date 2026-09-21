@@ -1,10 +1,10 @@
 # Capítulo 5 · El cuestionario: el único instrumento
 
-Toda la personalización de la experiencia ideal sale de un solo instrumento: el **Cuestionario de Experiencia Ideal**. No hay una segunda fuente. Nada de lo que el sistema recomienda proviene de un dato que el cuestionario no haya recogido.
+Toda la personalización de la Experiencia Ideal sale de un solo instrumento: el **Cuestionario de Experiencia Ideal**. No hay una segunda fuente. Nada de lo que el sistema recomienda proviene de un dato que el cuestionario no haya recogido.
 
 ## 5.1 Rol y propósito
 
-El cuestionario tiene un trabajo y solo uno: **recoger lo necesario para construir la experiencia ideal de esa persona**, en alrededor de un minuto de su tiempo.
+El cuestionario tiene un trabajo y solo uno: **recoger lo necesario para construir la Experiencia Ideal de esa persona**, en alrededor de un minuto de su tiempo.
 
 Tres reglas lo gobiernan, y no admiten excepción por canal:
 
@@ -42,7 +42,7 @@ Solo cuatro cosas pueden precargarse, y cada una tiene una forma fija de pregunt
 |---|---|---|
 | **Club** | Dos opciones | «¿Te gustaría que tomáramos ese club como tu club ideal, o prefieres que te hagamos una recomendación?» |
 | **Amenidad** | Dos opciones | «¿Te gustaría que incluyéramos entrenamiento acuático, o prefieres que te recomendemos?» |
-| **Clase** | Sí o no | «¿Te gustaría que incluyéramos yoga en el programa de tu experiencia ideal?» |
+| **Clase** | Sí o no | «¿Te gustaría que incluyéramos yoga en el programa de tu Experiencia Ideal?» |
 | **Objetivo** | Sí o no | «¿Te gustaría que incluyéramos bajar de peso como uno de tus objetivos?» |
 
 **La regla que separa las dos formas:** si al contestar que no alguien tiene que decidir eso de todas maneras, la opción de recomendar debe existir. Si al contestar que no simplemente no se agrega nada y el plan se arma igual, la pregunta es sí o no.
@@ -216,7 +216,7 @@ El mismo criterio rige el reactivo 13: pregunta por el interés en un servicio, 
 
 La valoración de salud corresponde al profesional del club, en el momento del alta, con el consentimiento y el formato que ese acto sí permite. El capítulo 12 especifica cómo se aplica la matriz de contraindicaciones en los dos momentos.
 
-**La experiencia ideal tampoco ofrece** acompañamiento nutricional, planes alimenticios, dietas ni recomendaciones de nutrición.
+**La Experiencia Ideal tampoco ofrece** acompañamiento nutricional, planes alimenticios, dietas ni recomendaciones de nutrición.
 
 ## 5.9 Las señales que viajan al brief
 

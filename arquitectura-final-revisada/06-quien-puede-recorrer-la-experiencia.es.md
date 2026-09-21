@@ -1,6 +1,6 @@
 # Capítulo 6 · Quién puede recorrer la experiencia
 
-La experiencia ideal está dirigida a **personas mayores de edad que no tienen membresía activa en Sports World**. Las dos condiciones se verifican antes de cualquier otra cosa, y ninguna se infiere: se preguntan.
+La Experiencia Ideal está dirigida a **personas mayores de edad que no tienen membresía activa en Sports World**. Las dos condiciones se verifican antes de cualquier otra cosa, y ninguna se infiere: se preguntan.
 
 A nadie se le cierra la puerta. Quien no cumple la primera condición recibe una ruta distinta, más corta, que el apartado 6.2 especifica.
 
@@ -14,7 +14,7 @@ La compuerta no personaliza nada: no entra al plan, no llega al brief y no influ
 
 | Respuesta | Qué ocurre |
 |---|---|
-| **Sí** | La experiencia ideal completa, con sus seis fases |
+| **Sí** | La Experiencia Ideal completa, con sus seis fases |
 | **No** | La ruta reducida del apartado 6.2 |
 
 ## 6.2 La ruta reducida
@@ -45,7 +45,7 @@ La selección del club corre con las mismas reglas del capítulo 10: los mismos 
 
 ### 6.2.3 El alcance de la ruta reducida
 
-**No recibe** experiencia ideal, ni bloques de entrenamiento, ni clases, ni brief, ni cita agendada. No hay nada que enviarle por correo, porque no se le pidió un correo.
+**No recibe** Experiencia Ideal, ni bloques de entrenamiento, ni clases, ni brief, ni cita agendada. No hay nada que enviarle por correo, porque no se le pidió un correo.
 
 **No se guarda nada.** No se abre registro, no se escribe en el sistema de clientes y al cerrar la sesión no queda rastro de que la conversación ocurrió.
 
@@ -53,7 +53,7 @@ Es la ruta con la menor exposición posible: se le entrega algo útil y no se le
 
 ## 6.3 De catorce a diecisiete años
 
-Quien tiene entre catorce y diecisiete años **entrena como adulto**: mismo catálogo de clases, mismas áreas y la misma experiencia ideal. La edad no recorta lo que se le puede recomendar.
+Quien tiene entre catorce y diecisiete años **entrena como adulto**: mismo catálogo de clases, mismas áreas y la misma Experiencia Ideal. La edad no recorta lo que se le puede recomendar.
 
 Lo que cambia no es el entrenamiento: es la contratación.
 
@@ -67,7 +67,7 @@ Las autorizaciones presenciales las administra Sports World.
 
 ## 6.5 Solo para quien todavía no es socio
 
-La experiencia ideal es un instrumento de captación. Se dirige a quien todavía no es parte de Sports World.
+La Experiencia Ideal es un instrumento de captación. Se dirige a quien todavía no es parte de Sports World.
 
 De ahí salen dos reglas que el cuestionario cumple siempre:
 

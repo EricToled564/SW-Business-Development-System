@@ -8,13 +8,13 @@ De ahí se sigue una regla que gobierna las 148 páginas:
 
 > **La opción de agendar una visita se le presenta a la persona en todo momento**, en cualquier página del sitio y en cualquier punto de la conversación por WhatsApp.
 
-No existe una pantalla desde la que no se pueda agendar. Y **ese botón es la puerta de entrada a la experiencia ideal**: al tocarlo empieza el recorrido que este capítulo especifica. Cuando la persona ya tiene cita, el botón sigue ahí y se comporta como especifica el apartado 8.3.5.
+No existe una pantalla desde la que no se pueda agendar. Y **ese botón es la puerta de entrada a la Experiencia Ideal**: al tocarlo empieza el recorrido que este capítulo especifica. Cuando la persona ya tiene cita, el botón sigue ahí y se comporta como especifica el apartado 8.3.5.
 
 La página desde la que lo tocó no se pierde: es lo que alimenta el bloque de precarga del capítulo 5.
 
 ## 8.2 Una sola dirección de internet
 
-La experiencia ideal ocurre en una sola dirección. La persona nunca cambia de página durante el recorrido: lo que cambia es la pantalla que se le muestra.
+La Experiencia Ideal ocurre en una sola dirección. La persona nunca cambia de página durante el recorrido: lo que cambia es la pantalla que se le muestra.
 
 Esa decisión tiene consecuencias que el sistema aprovecha:
 
@@ -31,7 +31,7 @@ En cada momento se muestra una sola pantalla. La anterior se retira por completo
 | **1** | **Invitación** | El texto que explica por qué se le va a preguntar, y la compuerta de mayoría de edad |
 | **3** | **Cuestionario** | El bloque de precarga y los reactivos, **uno por pantalla** |
 | **4** | **Cálculo y contacto** | El sistema resuelve la recomendación **mientras** le pide su apellido, su teléfono y su correo |
-| **5** | **Resultado** | Su experiencia ideal, en las dos páginas del capítulo 4 |
+| **5** | **Resultado** | Su Experiencia Ideal, en las dos páginas del capítulo 4 |
 | **6** | **Agenda** | Se le pregunta **una sola vez** si desea agendar. Si acepta, elige fecha y hora |
 | **7** | **Confirmación y brief** | Fase terminal, en las dos páginas del capítulo 4 |
 | **—** | **Error** | Fase auxiliar. Nunca es un callejón sin salida |
@@ -64,7 +64,7 @@ En cualquier otro caso —una página de club, una de clase, un hub de amenidad,
 
 Es el cambio de fondo respecto del recorrido anterior, donde el contacto se pedía mucho después.
 
-**Ahora se pide al terminar el cuestionario, mientras el sistema calcula**, y con un motivo que la persona entiende: **enviarle su experiencia ideal por correo.** El tiempo de espera deja de ser tiempo muerto.
+**Ahora se pide al terminar el cuestionario, mientras el sistema calcula**, y con un motivo que la persona entiende: **enviarle su Experiencia Ideal por correo.** El tiempo de espera deja de ser tiempo muerto.
 
 | Si entrega los datos | Si no los entrega |
 |---|---|
@@ -93,9 +93,9 @@ Ya con cita, el botón **«Agenda tu visita» del encabezado** no desaparece ni 
 | Respuesta | Qué ocurre |
 |---|---|
 | **No** | La lleva a su visita agendada, para verla, cambiarla o cancelarla |
-| **Sí** | Le pide el club, **recalcula su experiencia ideal para ese club con las respuestas que ya dio** —no se le vuelve a preguntar nada— y la lleva a elegir fecha y hora en ese club |
+| **Sí** | Le pide el club, **recalcula su Experiencia Ideal para ese club con las respuestas que ya dio** —no se le vuelve a preguntar nada— y la lleva a elegir fecha y hora en ese club |
 
-**La primera cita se conserva.** Una persona puede tener visitas agendadas en dos clubes, y **cada una lleva su propia experiencia ideal y su propio brief**, porque dos clubes distintos resuelven clases distintas. El apartado 8.5.2 especifica qué se escribe de cada una, y el capítulo 9, qué ocurre cuando la persona se da de alta.
+**La primera cita se conserva.** Una persona puede tener visitas agendadas en dos clubes, y **cada una lleva su propia Experiencia Ideal y su propio brief**, porque dos clubes distintos resuelven clases distintas. El apartado 8.5.2 especifica qué se escribe de cada una, y el capítulo 9, qué ocurre cuando la persona se da de alta.
 
 ### 8.3.6 La ruta reducida tiene su propia secuencia
 
@@ -151,12 +151,12 @@ Al cerrar, y **una sola vez**, se escribe el estado final:
 
 | Qué | A dónde |
 |---|---|
-| Las experiencias ideales | A su base propia. Con cita, **una por cita**. Sin cita, la del club que se le resolvió |
+| Las Experiencias Ideales | A su base propia. Con cita, **una por cita**. Sin cita, la del club que se le resolvió |
 | El registro del prospecto y sus citas | Al sistema de clientes |
-| Su experiencia ideal, en su versión final | Por correo a la persona |
+| Su Experiencia Ideal, en su versión final | Por correo a la persona |
 | El brief | Por correo al club. Con cita, uno por cita, al club de esa cita. Sin cita, uno al club que se le resolvió, marcado como **llamada directa** |
 
-**Quien contesta y no agenda pasa a llamada directa del asesor.** Su registro lleva la marca «no quiso agendar visita», y con esa marca el brief llega al asesor del club que se le resolvió, para que la llame. **El asesor no llama a ciegas:** lleva la misma experiencia ideal que la persona recibió por correo. Sin datos de contacto no hay registro ni brief, porque no hay a quién llamar (apartado 8.3.3).
+**Quien contesta y no agenda pasa a llamada directa del asesor.** Su registro lleva la marca «no quiso agendar visita», y con esa marca el brief llega al asesor del club que se le resolvió, para que la llame. **El asesor no llama a ciegas:** lleva la misma Experiencia Ideal que la persona recibió por correo. Sin datos de contacto no hay registro ni brief, porque no hay a quién llamar (apartado 8.3.3).
 
 **La escritura es idempotente.** El registro del prospecto lleva la **llave de la sesión** —`session_uuid` en el Mapa del Funnel—: si la persona vuelve y reconfirma, se actualiza ese mismo registro y nunca se duplica. Es una llave distinta del identificador de sesión del navegador: esta sí forma parte del registro, y es la que une la etapa de cuestionario iniciado con la de visita agendada en la medición del funnel.
 
@@ -164,7 +164,7 @@ Al cerrar, y **una sola vez**, se escribe el estado final:
 
 De la regla se sigue algo que evita un problema entero: **no salen correos de cancelación por lo que la persona cambió dentro de la sesión**, porque nada había salido mientras cambiaba. Los avisos de cambio o cancelación al club solo ocurren cuando vuelve otro día y mueve una cita que ya se había enviado.
 
-**La experiencia ideal no vive en el sistema de clientes.** Vive en una base propia, ligada al registro del prospecto por su identificador, y **puede haber más de una: una por cita agendada.** Al rehacer el cuestionario otro día, la experiencia nueva **sustituye a la anterior solo si resuelve el mismo club**; si resuelve otro, se suma. Al confirmarse el alta de la membresía se verifica en qué club ocurrió: **la experiencia de ese club prevalece y las demás se eliminan.**
+**La Experiencia Ideal no vive en el sistema de clientes.** Vive en una base propia, ligada al registro del prospecto por su identificador, y **puede haber más de una: una por cita agendada.** Al rehacer el cuestionario otro día, la experiencia nueva **sustituye a la anterior solo si resuelve el mismo club**; si resuelve otro, se suma. Al confirmarse el alta de la membresía se verifica en qué club ocurrió: **la experiencia de ese club prevalece y las demás se eliminan.**
 
 El registro del prospecto, en cambio, sigue siendo uno solo, conciliado con la llave canónica. El capítulo 9 especifica la conciliación y el capítulo 14 el contrato de esa base.
 

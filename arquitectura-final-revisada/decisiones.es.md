@@ -139,11 +139,11 @@ Durante el cuestionario, **toma el control desde el reactivo en el que va la per
 
 BES hace lo que la pantalla permite —cambiar de club, cambiar de clases— y nada más.
 
-**Aterriza en:** capítulos 1.3.4, 4.3 y 8.
+**Aterriza en:** apartado 2.3.3, capítulo 5.3 y capítulo 9.
 
 ### D-47 · Ruta reducida para personas menores de edad
 
-Quien no confirma la mayoría de edad **no queda fuera**. El sistema le resuelve su club **sin pedirle un solo dato personal** y sin generar experiencia ideal: solo se le preguntan los reactivos que alimentan la elección de club. Recibe el club, su dirección y su tiempo de traslado, y cómo inscribirse con la firma de su tutor, en el club.
+Quien no confirma la mayoría de edad **no queda fuera**. El sistema le resuelve su club **sin pedirle un solo dato personal** y sin generar Experiencia Ideal: solo se le preguntan los reactivos que alimentan la elección de club. Recibe el club, su dirección y su tiempo de traslado, y cómo inscribirse con la firma de su tutor, en el club.
 
 No se abre registro, no se escribe nada y al cerrar la sesión no queda rastro. El bloque de precarga sí se muestra, porque no pide ningún dato.
 
@@ -172,7 +172,7 @@ Nada de lo que la persona responde se guarda en su navegador: lo único que se g
 
 ### D-49 · El documento se parte en dos
 
-**Parte I** explica por qué existe la experiencia ideal y no obliga a nada. **Parte II** prescribe lo que el sistema hace. La frontera queda declarada en el texto, para que el lector sepa en qué modo está leyendo.
+**Parte I** explica por qué existe la Experiencia Ideal y no obliga a nada. **Parte II** prescribe lo que el sistema hace. La frontera queda declarada en el texto, para que el lector sepa en qué modo está leyendo.
 
 ### D-50 · Cada capítulo aprobado se sube en el momento de su aprobación
 
@@ -184,7 +184,7 @@ Con su hash registrado. Cualquier cambio posterior es un commit nuevo cuyo mensa
 
 ### D-51 · El sitio entra como capítulo 3 y los demás corren un número
 
-La Arquitectura llegaba al capítulo 7 sin haber dicho **cómo accede la gente al cuestionario a través de las páginas del sitio**, ni cómo el contenido capta la atención y conduce a construir la experiencia ideal. Ese capítulo se escribe y se coloca **en la posición 2**, inmediatamente después de la tesis. Los capítulos que ocupaban las posiciones 2 a 6 corren un número hacia adelante.
+La Arquitectura llegaba al capítulo 7 sin haber dicho **cómo accede la gente al cuestionario a través de las páginas del sitio**, ni cómo el contenido capta la atención y conduce a construir la Experiencia Ideal. Ese capítulo se escribe y se coloca **en la posición 2**, inmediatamente después de la tesis. Los capítulos que ocupaban las posiciones 2 a 6 corren un número hacia adelante.
 
 | Antes | Ahora | Capítulo |
 |---|---|---|
@@ -211,7 +211,7 @@ Mientras la persona no toque «Siguiente», puede cambiar de objetivos con enter
 
 ### D-54 · El botón de agendar abre el cuestionario con un preámbulo
 
-El botón de agendar una visita está en todas las páginas y en todo momento de la conversación por WhatsApp, y **es la puerta de entrada a la experiencia ideal**. Al tocarlo, antes de cualquier pregunta, se muestra un texto de invitación con dos versiones: la genérica —«durante tu visita a nuestros clubes»— y la del club, cuando el botón se tocó dentro de la página de un club —«durante tu visita a Sports World Polanco»—. Después viene la compuerta de mayoría de edad, después el bloque de precarga y después los reactivos.
+El botón de agendar una visita está en todas las páginas y en todo momento de la conversación por WhatsApp, y **es la puerta de entrada a la Experiencia Ideal**. Al tocarlo, antes de cualquier pregunta, se muestra un texto de invitación con dos versiones: la genérica —«durante tu visita a nuestros clubes»— y la del club, cuando el botón se tocó dentro de la página de un club —«durante tu visita a Sports World Polanco»—. Después viene la compuerta de mayoría de edad, después el bloque de precarga y después los reactivos.
 
 **Aterriza en:** capítulo 8.1 y 8.3.1.
 
@@ -239,20 +239,20 @@ Una persona que ya está registrada —por ejemplo con la bandera «no quiso age
 |---|---|
 | **El registro del prospecto en el CRM** | **Se actualiza, no se duplica.** Se concilia con la llave canónica del proyecto: **nombre + apellido + teléfono + club** |
 | **La bandera «no quiso agendar visita»** | La sustituye el resultado nuevo. Es una marca de estado, no un historial |
-| **La experiencia ideal** | **No vive en el CRM:** vive en una base propia, ligada al registro del prospecto por su identificador. La anterior **se elimina por completo** y queda la última. No sobra nada |
+| **La Experiencia Ideal** | **No vive en el CRM:** vive en una base propia, ligada al registro del prospecto por su identificador. La anterior **se elimina por completo** y queda la última. No sobra nada |
 | **La cita** | Queda contra el registro que ya existía, no contra uno nuevo |
 
 **Una persona, un registro de prospecto, una experiencia vigente.**
 
-**El borrado no deja hueco en la medición.** Las etapas de la espina del funnel no cuentan registros guardados, cuentan eventos en el momento en que ocurren: E2 cuenta al responderse la primera pregunta y **E3 cuenta cuando se genera la experiencia ideal**, no cuando se consulta después. Rehacer el cuestionario dispara un E2 y un E3 nuevos, que quedan registrados aunque el documento anterior se borre.
+**El borrado no deja hueco en la medición.** Las etapas de la espina del funnel no cuentan registros guardados, cuentan eventos en el momento en que ocurren: E2 cuenta al responderse la primera pregunta y **E3 cuenta cuando se genera la Experiencia Ideal**, no cuando se consulta después. Rehacer el cuestionario dispara un E2 y un E3 nuevos, que quedan registrados aunque el documento anterior se borre.
 
 **Aterriza en:** capítulos 9, 14 y 16.
 
-**Corregida por D-68:** el registro del prospecto sigue siendo uno solo, pero la experiencia ideal puede ser más de una, porque cada cita lleva la suya.
+**Corregida por D-68:** el registro del prospecto sigue siendo uno solo, pero la Experiencia Ideal puede ser más de una, porque cada cita lleva la suya.
 
 ### D-57 · El capítulo 3 se reescribe, y su material se reubica
 
-El texto que se había escrito para el capítulo 3 describía el inventario de páginas, los botones y el comportamiento del cuestionario. **Ninguna de esas tres cosas es el objeto del capítulo**, que es cómo el contenido del sitio capta la atención y lleva a la persona a construir su experiencia ideal.
+El texto que se había escrito para el capítulo 3 describía el inventario de páginas, los botones y el comportamiento del cuestionario. **Ninguna de esas tres cosas es el objeto del capítulo**, que es cómo el contenido del sitio capta la atención y lleva a la persona a construir su Experiencia Ideal.
 
 **La estructura del capítulo queda aprobada** en seis apartados: por qué existe cada página · qué encuentra la persona al llegar · por qué ese contenido la mueve a construir su experiencia · cómo se le lleva · qué se lleva consigo al cuestionario · el blog.
 
@@ -302,7 +302,7 @@ La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está 
 | Ranura | E1 · Sin cuestionario | E2 · Completo, sin agendar | E3 · Completo y agendado |
 |---|---|---|---|
 | **1 · El club** | Encuentra tu club ideal | Tu club ideal | Tu club ideal |
-| **2 · La experiencia** | Diseña tu experiencia | Volver a tu experiencia ideal | Volver a tu experiencia ideal |
+| **2 · La experiencia** | Diseña tu experiencia | Volver a tu Experiencia Ideal | Volver a tu Experiencia Ideal |
 | **3 · El objetivo** | ¿Cuál es tu objetivo? | Las clases para tu objetivo | Las clases para tu objetivo |
 | **4 · La visita** | Agenda tu visita | Agenda tu visita | Tu visita agendada |
 
@@ -420,13 +420,13 @@ El orden no cambia con el estado ni con el tipo de página. Cuando una ranura no
 | Respuesta | Qué ocurre |
 |---|---|
 | **No** | La lleva a su visita agendada |
-| **Sí** | Le pide el club, **recalcula su experiencia ideal para ese club con las respuestas que ya dio** —no se le vuelve a preguntar nada— y la lleva a agendar la cita en ese club |
+| **Sí** | Le pide el club, **recalcula su Experiencia Ideal para ese club con las respuestas que ya dio** —no se le vuelve a preguntar nada— y la lleva a agendar la cita en ese club |
 
 **La primera cita se conserva.** Una persona puede tener visitas agendadas en dos clubes.
 
 **Aterriza en:** capítulos 3.4, 4 y 8.
 
-### D-68 · Cada cita tiene su propia experiencia ideal y su propio brief
+### D-68 · Cada cita tiene su propia Experiencia Ideal y su propio brief
 
 Dos clubes distintos resuelven clases distintas, así que **no puede haber una sola experiencia para dos citas.** Cada cita agendada lleva la experiencia recalculada para su club y el brief hecho con esa experiencia, y el club recibe la suya.
 
@@ -448,9 +448,9 @@ Al cerrar, y **una sola vez**, se escribe el estado final:
 
 | Qué | A dónde |
 |---|---|
-| Las experiencias ideales, una por cita | A su base propia |
+| Las Experiencias Ideales, una por cita | A su base propia |
 | El registro del prospecto y sus citas | Al sistema de clientes |
-| Su experiencia ideal, en su versión final | Por correo a la persona |
+| Su Experiencia Ideal, en su versión final | Por correo a la persona |
 | El brief de cada cita | Por correo a su club |
 
 **De ahí se sigue que no hay correos de cancelación por lo que la persona cambió dentro de la sesión:** nada salió mientras cambiaba. Los avisos de cambio o cancelación al club solo ocurren cuando vuelve otro día y mueve una cita ya enviada.
@@ -499,7 +499,7 @@ Es **la única excepción** a la regla del capítulo 4.2.5, que prohíbe comunic
 | Inicio, club, amenidad, actividades para menores, entrenamiento personal, blog y clase | **¿Cuál es tu objetivo?** — abre el cuestionario, empezando por las preguntas de contexto de la página | **Ningún botón de objetivo.** Las clases ideales solo se ven en las páginas de objetivo |
 | Página de un objetivo | **Conoce las clases ideales para [el objetivo de la página]** — todas las clases del sistema que entregan ese objetivo | El mismo botón, con la leyenda de disponibilidad de D-72 |
 | Página de un objetivo **que la persona eligió**, si eligió dos | — | Además, **Explora [el otro objetivo elegido]**, que la lleva a la página de ese objetivo |
-| Página de un objetivo **que no eligió** | — | Ningún botón de exploración. Vuelve a sus objetivos por «Volver a tu experiencia ideal» o por el menú principal |
+| Página de un objetivo **que no eligió** | — | Ningún botón de exploración. Vuelve a sus objetivos por «Volver a tu Experiencia Ideal» o por el menú principal |
 
 **El botón de clases ideales nombra siempre el objetivo de la página**, con uno o con dos objetivos elegidos. Los objetivos elegidos entran al menú de una sola forma: «Explora…», en la página de cada uno de los dos, con el otro.
 
@@ -581,7 +581,7 @@ Ninguna pieza del sistema —ni la experiencia, ni el brief, ni BES— **propone
 
 ### D-80 · La atención a personas socias queda fuera de este documento
 
-**El sitio y BES atienden prospectos.** La experiencia ideal es un instrumento de captación, y el capítulo 6 ya lo acota a quien no tiene membresía activa.
+**El sitio y BES atienden prospectos.** La Experiencia Ideal es un instrumento de captación, y el capítulo 6 ya lo acota a quien no tiene membresía activa.
 
 Consultar horarios, congelar una membresía, cancelarla o cualquier otro autoservicio de una persona socia **no es materia de este documento**. Si Sports World decide publicar su política de cancelación o abrir un centro de ayuda, es contenido institucional, fuera de las 148 páginas y fuera de esta Arquitectura.
 
@@ -727,7 +727,7 @@ El Contrato designa el **Mapa del Funnel** como «documento único de medición�
 | Mapa del Funnel | Capítulo 3, antes |
 |---|---|
 | **E2** · Cuestionario iniciado, al responderse la primera pregunta | **E2** · Cuestionario completado, sin cita |
-| **E3** · Cuestionario completado, al generarse la experiencia ideal | **E3** · Cuestionario completado, con cita |
+| **E3** · Cuestionario completado, al generarse la Experiencia Ideal | **E3** · Cuestionario completado, con cita |
 | **E4** · Visita agendada, al confirmarse la escritura al CRM | — |
 
 Los tres estados del menú pasan a llamarse por su nombre:
@@ -768,8 +768,8 @@ El capítulo 3 va en este orden, y en ningún otro:
 | | Apartado | Por qué va ahí |
 |---|---|---|
 | **1** | **Los once tipos de página, cada uno por el porqué existe y el problema que resuelve hoy** | Una página se describe después de saber para qué existe. Cada tipo declara la intención de búsqueda que atiende, y tenerla es el requisito para que el tipo exista |
-| **3** | **Lo que el sitio produce**: el cuestionario, la experiencia ideal, el brief y la visita agendada | El resultado se establece antes que el proceso. Quien lee el proceso ya sabe a dónde lleva |
-| **4** | **Cómo el contenido de las páginas y los menús contextuales llevan al cuestionario y a la experiencia ideal** | Los medios, una vez conocido el fin |
+| **3** | **Lo que el sitio produce**: el cuestionario, la Experiencia Ideal, el brief y la visita agendada | El resultado se establece antes que el proceso. Quien lee el proceso ya sabe a dónde lleva |
+| **4** | **Cómo el contenido de las páginas y los menús contextuales llevan al cuestionario y a la Experiencia Ideal** | Los medios, una vez conocido el fin |
 
 **Aterriza en:** capítulo 3, apartados 3.1 a 2.10.
 ### D-92 · El documento dice lo que el sistema hace
@@ -899,12 +899,12 @@ Hasta aquí, a esa persona se le ponía la marca «no quiso agendar visita» y e
 | | |
 |---|---|
 | **Quién llama** | El asesor del club que el sistema le resolvió — el mismo que habría recibido su visita |
-| **Con qué llama** | Con su brief. La persona completó el cuestionario, así que su experiencia ideal existe y el brief se redacta igual. **El asesor no llama a ciegas** |
+| **Con qué llama** | Con su brief. La persona completó el cuestionario, así que su Experiencia Ideal existe y el brief se redacta igual. **El asesor no llama a ciegas** |
 | **Cuándo sale** | Al cerrar la sesión, en la misma escritura única del apartado 8.5.2 |
 | **Cómo llega marcado** | Como **llamada directa**, para que el asesor lo distinga de una visita agendada |
 | **Si no dejó contacto** | No se abre registro ni sale brief: no hay a quién llamar (apartado 8.3.3) |
 
-**Corrige el apartado 8.5.2**, que enviaba brief solo cuando había cita y guardaba una experiencia ideal solo por cita. Sin cita se guarda la del club resuelto, que es la que el asesor necesita para llamar.
+**Corrige el apartado 8.5.2**, que enviaba brief solo cuando había cita y guardaba una Experiencia Ideal solo por cita. Sin cita se guarda la del club resuelto, que es la que el asesor necesita para llamar.
 
 **Obliga a corregir algo fuera de la Arquitectura.** Las responsabilidades del asesor viven en el Proceso Comercial: `SOP/SW/0102`, Captación por el sitio web, no contempla hoy la llamada directa a quien contestó y no agendó. **Queda como trabajo abierto en ese procedimiento**, y de ahí baja al Manual de Ventas `MV/SW/01` si cambia el guion de la llamada.
 
@@ -964,4 +964,4 @@ Todo lo que el sistema personaliza sale del cuestionario, y los capítulos 3 y 4
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
 | **Cuáles son las siete clases premium, y cuánto texto e imágenes llevan** | Insumos para escribir esas siete páginas y para el inventario del anexo F. **No condicionan la especificación**: el sistema se comporta igual con cualquiera de las 47 clases (D-93) |
 | **CEI-01 requiere dos ajustes** | El renglón de Clubes del control de lógica, y la declaración del bloque P0 |
-| **La base de experiencias ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 14 |
+| **La base de Experiencias Ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 14 |

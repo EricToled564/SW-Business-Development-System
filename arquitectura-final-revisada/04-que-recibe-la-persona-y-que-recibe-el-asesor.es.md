@@ -8,7 +8,7 @@ Cuando la persona termina el cuestionario, el sistema hace el cálculo completo 
 
 | Entrega | Quién la lee | Cuándo |
 |---|---|---|
-| **La experiencia ideal en pantalla** | La persona | En el momento, al terminar el cuestionario |
+| **La Experiencia Ideal en pantalla** | La persona | En el momento, al terminar el cuestionario |
 | **El brief** | El asesor que atenderá su visita | Antes de que la persona llegue al club |
 
 Que las dos digan lo mismo no depende de que alguien las mantenga alineadas: **salen del mismo cálculo y del mismo texto.** El capítulo 13 especifica cómo se produce ese texto y qué ocurre si la redacción automática falla.
@@ -74,7 +74,7 @@ BES hace lo mismo que la pantalla permite —cambiar de club, cambiar de clases�
 
 ## 4.4 Lo que lee el asesor: el brief
 
-El brief es la experiencia ideal traducida a argumentos de cierre. Es el documento con el que el asesor llega a la visita sabiendo qué quiere quien va a llegar.
+El brief es la Experiencia Ideal traducida a argumentos de cierre. Es el documento con el que el asesor llega a la visita sabiendo qué quiere quien va a llegar.
 
 ### 4.4.1 Página 1 · Quién viene y cómo contactarla
 

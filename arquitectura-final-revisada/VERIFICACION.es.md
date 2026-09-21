@@ -16,22 +16,22 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
-| `00-estructura.es.md` | 1,835 | `e9214ce36e5f344b832fcea19b3c4295dd2f462b8ff8dfd8a1956fbfbb3b4822` |
-| `00-paginas-iniciales.es.md` | 2,513 | `60d91131f3e4c9efde452b0a359f9320546c3e523d40afecc299e9f133a27e13` |
-| `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `21d60deab4abfb00c2fff164f213ae0f0901f13583d00c9fa0e7d8298cee1d4e` |
+| `00-estructura.es.md` | 1,835 | `5f3c4eaf33565b5b3f18c06f187f317f3babb8c0284d2cfaef9de76f2117e767` |
+| `00-paginas-iniciales.es.md` | 2,571 | `661e1b1629e7f4dcf278570c228f855b6f67ac92b6cb7fa395939ac4490b357a` |
+| `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
 | `02-como-se-pierde-hoy.es.md` | 1,211 | `82ac54ecb2870dd50e4ad8fd4efcf7fe01c31ccc826e78b5d2ed1a56e96bf9b0` |
-| `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,267 | `aef3b6a917672bbcfca84c35b43d88e08c3504fe78ee77d61d1403d314602889` |
-| `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,626 | `1faae73e5fe0061e8654d6250fd662f7c151ddaf862ba7fcd9401d37c2b8c6d6` |
-| `05-el-cuestionario.es.md` | 3,227 | `32541f83606b2657009a82c75b2598676cceddc4ca8505f3db8eb3ea5ce02183` |
-| `06-quien-puede-recorrer-la-experiencia.es.md` | 930 | `2fb20aedfe12ac1c9f31cb5ce813a96ad6d1464b4996648a77e50b3b584fc5a1` |
-| `07-los-objetivos-de-la-persona.es.md` | 841 | `9ef7b7bfed5693413087925e9e2809ca7c4eefd338093c2f59e3efd72278c66f` |
-| `08-el-recorrido-en-pantalla.es.md` | 2,739 | `128997acee9a829dfe596558c24840725099326285f17f03fda716959ea20f26` |
-| `09-datos-de-contacto-y-consentimiento.es.md` | 1,572 | `f1e9f50078f620587f2365f72f94dcdf71e69690607513a9a7f596a1e9bd8d33` |
+| `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,298 | `c788a713d0e53f54e7a865e7e638e7a98d3bfa1e2e654f81a1fbaa6c0a955d06` |
+| `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,626 | `759ee123c5ca2bab56e59a28daf7de7be04ff0ec0ab47f733f0f7fe6bbc5ee40` |
+| `05-el-cuestionario.es.md` | 3,227 | `0a49b94834d4181b7fe1d60a5676c41289a7ac8f65b694fdfbf35e77f5412f21` |
+| `06-quien-puede-recorrer-la-experiencia.es.md` | 930 | `2bcfc08c7c2f6b5b71608f82445b6fe085f25dc8434b54dd16acd59251668a91` |
+| `07-los-objetivos-de-la-persona.es.md` | 841 | `ef0410dbead792e6c60b3aaae2bd942129ef41b77b0f4898945f4df9475d0c56` |
+| `08-el-recorrido-en-pantalla.es.md` | 2,739 | `0897f75afc25ffaceeaba93d4b0659d6ce893980048f3651cbdd5fde5d06a33c` |
+| `09-datos-de-contacto-y-consentimiento.es.md` | 1,572 | `5b85987be33574f9a7aac81e96e1848103fca9991776316f954785e161207f50` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
-| `NORMA-DE-REDACCION.es.md` | 3,029 | `f788e7916083722eed7714f1ebd342ea6139c5ed7dc479e2eaa4944ecb9b4872` |
+| `NORMA-DE-REDACCION.es.md` | 3,029 | `85bd4323fe9bea1f6bb441ec96d41eeadb616dddba1936884b1ddd8eef8a5ad1` |
 | `README.es.md` | 378 | `37e3650427640d67910f4afbe647ce3fb2de14303b9f5844f2bda92d20064d03` |
-| `decisiones.es.md` | 12,373 | `2791dc38e1fec41a8360db0d01e57a0e44be967899df3d7fbdc1aba069893701` |
+| `decisiones.es.md` | 12,375 | `0605e8949d55fafeff2f8b1c25b8a326974f67da373769520f03cc39352e4bcb` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `ff81fdc7bcc25ae7c9477f4b670f1e633ec3262fda0df237b41b0d92daa1d471` |
 
 ## Estado de aprobación
