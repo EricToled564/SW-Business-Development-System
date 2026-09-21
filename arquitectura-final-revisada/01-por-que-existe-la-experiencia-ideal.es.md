@@ -58,7 +58,7 @@ El patrón se repite con entrenamiento funcional, con alta intensidad, con artes
 
 Esa frase es la regla de la que se desprende todo lo demás. Antes de firmar, la persona ya sabe qué va a hacer, cuánto tiempo, en qué área, en qué clase y a qué hora.
 
-### 1.3.1 Lo que no es el producto
+### 1.3.1 Qué es el producto y qué es un insumo del plan
 
 Un catálogo de clases, una lista de amenidades y una tabla de precios **no son el producto: son insumos del plan.** Sirven para construirlo y no lo sustituyen. La diferencia es verificable con una sola pregunta: si un documento, una pantalla o una conversación describe el club en lugar del plan de esa persona, no está entregando el producto.
 
