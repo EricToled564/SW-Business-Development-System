@@ -132,4 +132,4 @@ No son capítulos ni anexos: son el material con el que se escribirá un capítu
 
 ## El instrumento que rige
 
-**CEI-01 versión 1.2**, que vive en esta misma carpeta como `CEI-01-v1.2.es.html` y su PDF. El cuestionario del Anexo A del Manual del Proceso Comercial es una versión anterior y no se usa.
+**CEI-01 versión 1.3**, que vive en esta misma carpeta como `CEI-01-v1.3.es.html` y su PDF. El cuestionario del Anexo A del Manual del Proceso Comercial es una versión anterior y no se usa.

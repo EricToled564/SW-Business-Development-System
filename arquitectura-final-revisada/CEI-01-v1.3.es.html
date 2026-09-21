@@ -36,10 +36,10 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <h1>Cuestionario de Experiencia Ideal · CEI-01</h1>
 <div class="sub">Sports World México</div>
 <table class="meta">
-<tr><td>Versión</td><td>1.2</td></tr>
-<tr><td>Sustituye a</td><td>Versión 1.1</td></tr>
-<tr><td>Qué cambió</td><td>Solo las opciones que hablan de quien contesta concuerdan con su forma de trato; el resto, gramática española correcta</td></tr>
-<tr><td>Estructura</td><td>Compuerta de mayoría de edad, 15 preguntas base y 3 preguntas condicionales</td></tr>
+<tr><td>Versión</td><td>1.3</td></tr>
+<tr><td>Sustituye a</td><td>Versión 1.2</td></tr>
+<tr><td>Qué cambió</td><td>Se declara el bloque de precarga P0; la alberca se exige como amenidad también con la opción «Ambas»</td></tr>
+<tr><td>Estructura</td><td>Compuerta de mayoría de edad, bloque de precarga, 15 preguntas base y 3 preguntas condicionales</td></tr>
 </table>
 </div>
 
@@ -74,6 +74,17 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <ul class="opts"><li>Sí</li><li>No</li></ul>
 <p class="rule"><b>Captura y validación.</b> Selección única obligatoria. Si responde No, terminar sin capturar datos.</p>
 <p class="rule"><b>Uso autorizado.</b> Compuerta de elegibilidad; no personaliza la recomendación.</p>
+</div>
+
+<div class="q">
+<div class="qid">P0 · Precarga</div>
+<p class="pregunta">Bloque de confirmación del contexto previo. Se compone en cada sesión, se muestra <b>después de la compuerta y antes de Q1</b>, y se muestra una sola vez.</p>
+<p class="rule"><b>Qué puede precargarse.</b> Cuatro categorías, con su forma fija de confirmación: <b>club</b> y <b>amenidad</b>, aceptar o pedir recomendación; <b>clase</b> y <b>objetivo</b>, sí o no.</p>
+<p class="rule"><b>Cómo se compone.</b> Cada punto candidato se verifica contra la instantánea vigente del día. El punto que la instantánea no respalda se omite, y el bloque se compone con los restantes. Varias páginas de una misma familia producen un solo punto. Dos clubes producen un punto que ofrece los dos, más la opción de recomendar. La composición con la que el bloque se mostró permanece fija durante ese cuestionario.</p>
+<p class="rule"><b>Aceptar.</b> La respuesta sustituye la del reactivo correspondiente y ese reactivo queda resuelto; no vuelve a preguntarse. Aceptar un club resuelve la elección inicial de club y <b>no apaga Q16</b>: el código postal o la colonia se siguen necesitando para el tiempo de traslado y para el interés en Multiclub. Aceptar una clase sin club fijado <b>la convierte en requisito del club</b>, y es el único requisito que puede originarse en el contexto previo.</p>
+<p class="rule"><b>Rechazar.</b> La precarga se descarta. El reactivo correspondiente aparece después, en su posición normal, <b>sin prellenado y exactamente con la redacción, las opciones, las validaciones y las reglas definidas en este instrumento</b>. Rechazar no deja el dato resuelto ni genera una respuesta implícita.</p>
+<p class="rule"><b>Conteo.</b> P0 no agrega una pregunta al conteo de 16 a 19: confirma contexto y puede resolver reactivos que de otra forma aparecerían después.</p>
+<p class="rule"><b>Uso autorizado.</b> Confirmación de contexto previo. No crea una versión alternativa del cuestionario ni modifica la forma normal de sus reactivos.</p>
 </div>
 
 <div class="q">
@@ -123,9 +134,11 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <p class="rule"><b>Captura y validación.</b> Selección única obligatoria.</p>
 <p class="rule"><b>Uso autorizado.</b> Define el modo de entrenamiento.</p>
 <ul class="opts">
-<li><b>En la alberca:</b> la alberca se exige como amenidad en la elección del club.</li>
-<li><b>Ambas:</b> el catálogo se mantiene en seco, y el sistema <b>integra de forma proactiva</b> entrenamiento individual de natación y clases acuáticas que ayuden a maximizar el objetivo declarado. La alberca no se exige como amenidad.</li>
+<li><b>En la alberca:</b> el plan utiliza el catálogo de agua. <b>La alberca se exige como amenidad</b> en la elección del club.</li>
+<li><b>Ambas:</b> el plan combina piso seco y agua, y el sistema <b>integra de forma proactiva</b> entrenamiento individual de natación y clases acuáticas que sirvan al objetivo declarado. <b>La alberca se exige como amenidad</b>, porque sin ella el club no puede entregar ninguna de las dos.</li>
+<li><b>Quiero que me recomienden:</b> el sistema resuelve la modalidad a partir del objetivo principal. Si resuelve <b>En la alberca</b> o <b>Ambas</b>, la alberca se exige como amenidad.</li>
 </ul>
+<p class="rule"><b>La regla, en una línea.</b> Si la modalidad elegida o resuelta necesita agua, el club debe tener alberca. La modalidad la elige la persona, salvo cuando pide que se le recomiende: ese es el único caso en que la resuelve el sistema.</p>
 </div>
 
 <div class="q">
@@ -215,7 +228,7 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <tr><td>Programas prenatales o de posparto</td><td>clases adecuadas para esos periodos, para cada uno de los objetivos de la persona</td></tr>
 <tr><td>Programas de bajo impacto</td><td>clases de bajo impacto, para cada uno de los objetivos de la persona</td></tr>
 </table>
-<p><b>A esos requisitos se suma la alberca</b>, que no es una preferencia de este reactivo sino una amenidad, y se exige cuando el modo de entrenamiento resuelto es en agua.</p>
+<p><b>A esos requisitos se suma la alberca</b>, que no es una preferencia de este reactivo sino una amenidad, y se exige cuando la modalidad elegida o resuelta es <b>En la alberca</b> o <b>Ambas</b>.</p>
 <p>Las dos preferencias de clases disparan además la matriz de contraindicaciones, que aparta las clases contraindicadas para ese programa y pone en su lugar una alternativa equivalente para el mismo objetivo. <b>Nunca se elimina una clase sin sustituirla.</b></p>
 
 <div class="q">
@@ -263,7 +276,7 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <tr><td><b>Regreso de una pausa</b></td><td>Preguntar el último gimnasio y la duración de la pausa</td></tr>
 <tr><td><b>Preferencias</b></td><td>Siempre: bajo impacto o ninguna. Prenatal o posparto solo con lenguaje femenino. Actividades para menores solo después de declarar hijos o familia</td></tr>
 <tr><td><b>Menores</b></td><td>Cualquier actividad para menores verificada del club satisface la preferencia de actividades para menores</td></tr>
-<tr><td><b>Clubes</b></td><td>La elección de club exige <b>las amenidades elegidas, las preferencias declaradas y al menos una clase elegible para cada objetivo en la intensidad declarada</b>. Días y horarios solo generan alerta; no descartan clubes. <b>La condición de las clases se cumple en todos los clubes por diseño del programa</b>: los objetivos se definieron conforme a la oferta mínima de clases por club, y el cruce de los seis objetivos contra los tres grados de intensidad deja al menos una clase en cada una de las dieciocho combinaciones, en los cuarenta y nueve clubes. En los hechos, lo que decide la elección son las amenidades y las preferencias</td></tr>
+<tr><td><b>Clubes</b></td><td>La elección de club exige <b>las amenidades elegidas, las preferencias declaradas y al menos una clase elegible para cada objetivo en la intensidad declarada</b>. Días y horarios solo generan alerta; no descartan clubes. <b>La condición de las clases se cumple en todos los clubes por diseño del programa</b>: los objetivos se definieron conforme a la oferta mínima de clases por club, y el cruce de los seis objetivos contra los tres grados de intensidad deja al menos una clase en cada una de las dieciocho combinaciones, en los cuarenta y nueve clubes. En los hechos, lo que decide la elección son las amenidades y las preferencias. <b>La alberca es requisito excluyente</b> cuando la modalidad elegida o resuelta es En la alberca o Ambas</td></tr>
 <tr><td><b>Cercanía</b></td><td>Se mide en minutos de traslado con tráfico <b>a la hora pico</b>, nunca en kilómetros y nunca a la hora declarada: no se puede saber si la persona entrenará a esa hora. El tiempo se muestra siempre como <b>«máx X minutos»</b></td></tr>
 <tr><td><b>Ubicación</b></td><td>Capturar un solo código postal o colonia del origen prioritario. Nunca pedir dos ubicaciones ni una dirección completa</td></tr>
 <tr><td><b>Multiclub</b></td><td>«Ambos» activa la oportunidad Multiclub; Q15b define el único origen prioritario</td></tr>
@@ -275,6 +288,7 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 
 <h2>6 · Identificadores vigentes</h2>
 <p><b>Compuerta:</b> G0.<br>
+<b>Bloque de precarga:</b> P0.<br>
 <b>Preguntas base (15):</b> Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q12, Q13, Q14, Q15 y Q16.<br>
 <b>Preguntas condicionales (3):</b> Q10a, Q11 y Q15b.<br>
 <b>Retirados y reservados:</b> Q17, Q18 y Q19.</p>
@@ -282,11 +296,12 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <h2>7 · Registro de cambios</h2>
 <table>
 <tr><th style="width:70px">Versión</th><th>Qué cambió</th></tr>
+<tr><td>1.3</td><td><b>El bloque de precarga se declara dentro del instrumento.</b> P0 entra al apartado 3, entre la compuerta y Q1, y al apartado 6 de identificadores vigentes, con sus cuatro categorías, su forma de composición contra la instantánea del día, el efecto de aceptar y el de rechazar. La versión 1.2 lo daba por existente sin declararlo, de modo que la regla que devuelve la pregunta a su redacción original cuando la persona rechaza un punto no estaba escrita en ninguna parte.<br><br><b>La alberca con la opción «Ambas».</b> Q6 pasa a exigir la alberca como amenidad también cuando la persona elige <b>Ambas</b>, y cuando el sistema resuelve <b>En la alberca</b> o <b>Ambas</b> por petición de recomendación. La versión 1.2 decía que con «Ambas» la alberca no se exigía, lo que permitía resolver como club ideal uno que no puede entregar la natación individual ni las clases acuáticas que esa misma opción ofrece. Alcanza al renglón de requisitos de Q14 y al renglón Clubes del control de lógica.</td></tr>
 <tr><td>1.2</td><td><b>Concordancia.</b> Las opciones que se refieren a la persona que contesta se presentan en la versión que corresponde a su forma de trato: masculina, femenina o neutral. La versión neutral es una frase, nunca una marca tipográfica. Las opciones que se refieren a terceros se escriben con gramática española correcta y no se conjugan, porque su género ni se conoce ni se pregunta: «una amistad» y «mi pareja» cuando el español tiene la palabra, «mis hijos» y «actividades para menores» cuando no la tiene. Corrige la versión 1.1, que había sustituido las tres formas por una sola redacción neutral y con eso había suprimido la concordancia.</td></tr>
 <tr><td>1.1</td><td><b>Apellido.</b> Se pide en la captura de contacto, junto con el teléfono y el correo, en todos los canales; en WhatsApp, apellido y correo. Se precisa en Q1 que la prohibición de pedir apellido alcanza solo a ese reactivo. Se abre el apartado 4, Captura de contacto, con los tres campos y su validación, y se agrega el renglón «Contacto» al control de lógica.<br><br><b>Lenguaje neutro.</b> Se retira de todo el instrumento cualquier palabra que obligue a declinar por género, y con ella las marcas tipográficas que se usaban para evitarlo. La reformulación alcanza al enunciado y a la opción de Q12, a dos opciones de Q13, a una opción de Q14 y a los renglones del control de lógica que hablaban de menores.</td></tr>
 <tr><td>1.0</td><td>Versión inicial del instrumento.</td></tr>
 </table>
 
-<div class="foot">Cuestionario de Experiencia Ideal · CEI-01 · versión 1.1 · uso interno.<br>Documento propiedad de Sports World México.</div>
+<div class="foot">Cuestionario de Experiencia Ideal · CEI-01 · versión 1.3 · uso interno.<br>Documento propiedad de Sports World México.</div>
 
 </body></html>

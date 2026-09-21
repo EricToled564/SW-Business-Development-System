@@ -981,14 +981,16 @@ Leída con la prueba de dos renglones, el sujeto es el sistema y la frase se ree
 
 **Corrige CEI-01 v1.2**, que dice de Q6 «Ambas»: «el catálogo se mantiene en seco… **La alberca no se exige como amenidad**». Esa regla permite resolver como club ideal uno que no puede entregar lo que la opción ofreció.
 
-| Dónde | Qué dice hoy CEI-01 v1.2 | Qué debe decir en la 1.3 |
+| Dónde | Qué decía CEI-01 v1.2 | Qué dice la 1.3, ya publicada |
 |---|---|---|
 | Q6 · Ambas | «el catálogo se mantiene en seco, y el sistema integra de forma proactiva entrenamiento individual de natación y clases acuáticas que ayuden a maximizar el objetivo declarado. La alberca no se exige como amenidad.» | El plan combina piso seco y agua e integra de forma proactiva natación individual y clases acuáticas que sirvan al objetivo declarado. **La alberca se exige como amenidad.** |
 | §5 · Control de lógica, renglón Clubes | «A esos requisitos se suma la alberca… se exige cuando el modo de entrenamiento resuelto es en agua» | La alberca se exige cuando la modalidad elegida o resuelta es **En la alberca** o **Ambas** |
 
 **Confirmada por Eric el 21 de septiembre**, en los dos sentidos: que con **Ambas** la alberca se incluye, y que **el sistema decide la modalidad únicamente cuando la persona pide que se le recomiende**.
 
-**Aterriza en:** apartados 5.4.1 y 5.6.2, apartado 4.2.4, apartado 7.5, la tercera entrada de los ajustes pendientes de CEI-01 y `tools/instrumento.py`.
+**Aplicada el 21 de septiembre de 2026 en CEI-01 v1.3**, junto con los otros dos ajustes que el instrumento arrastraba: el renglón Clubes del control de lógica y la declaración del bloque **P0**, que venía pendiente desde D-56. `tools/instrumento.py` los coteja y pasa en cero.
+
+**Aterriza en:** apartados 5.4.1 y 5.6.2, apartado 4.2.4, apartado 7.5, `CEI-01-v1.3.es.html` y su PDF, y `tools/instrumento.py`.
 
 
 
@@ -1014,5 +1016,4 @@ Leída con la prueba de dos renglones, el sujeto es el sistema y la frase se ree
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
 | **Cuáles son las siete clases premium, y cuánto texto e imágenes llevan** | Insumos para escribir esas siete páginas y para el inventario del anexo F. **No condicionan la especificación**: el sistema se comporta igual con cualquiera de las 47 clases (D-93) |
 | **La base de Experiencias Ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 14 |
-| **CEI-01 requiere tres ajustes** | El renglón de Clubes del control de lógica, la declaración del bloque P0 y **la regla de la alberca en Q6 «Ambas» (D-104)**. Los tres se aplican en una sola versión, la **1.3**, con su PDF. `tools/instrumento.py` los enumera y falla mientras alguno siga pendiente |
 | **Cuándo se entrega el brief al club** | El apartado 4.1 declara que el brief se produce **al terminar el cuestionario**. El apartado 8.5.2 establece que nada se escribe ni se envía hasta que la sesión cierra, en una sola escritura. Las dos afirmaciones conviven si **generar** y **entregar** son momentos distintos, que es como las trata 4.1.1 al remitir al capítulo 8. Falta que uno de los dos apartados lo diga con esas dos palabras |

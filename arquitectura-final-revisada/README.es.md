@@ -10,7 +10,7 @@ Reescritura completa del documento **Arquitectura de la Experiencia**, con los 6
 |---|---|---|
 | `00-estructura.es.md` | El índice completo: páginas iniciales, dieciséis capítulos, seis anexos | Vigente |
 | `decisiones.es.md` | Adenda de la bitácora DEC/SW/01, con las decisiones **D-33 a D-88** | Vigente |
-| `CEI-01-v1.2.es.html` y `CEI-01-v1.2.pdf` | El cuestionario que rige, versión 1.2 | Vigente |
+| `CEI-01-v1.3.es.html` y `CEI-01-v1.3.pdf` | El cuestionario que rige, versión 1.3 | Vigente |
 | `01-vamos-a-crear-el-mejor-sistema.es.md` | Capítulo 1 | Escrito por Eric |
 | `02-como-se-pierde-hoy.es.md` | Capítulo 2 | Escrito por Eric |
 | `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | Capítulo 3 | Escrito, pendiente de aprobación |
@@ -31,7 +31,7 @@ El capítulo del sitio se insertó en la posición 2 —decisión **D-51**— y 
 
 ## El instrumento
 
-El cuestionario que rige es **CEI-01 versión 1.2**, en esta misma carpeta. Corrige la 1.1, que había suprimido la concordancia con la forma de trato. El cuestionario del Anexo A del Manual del Proceso Comercial es una versión anterior y no se usa.
+El cuestionario que rige es **CEI-01 versión 1.3**, en esta misma carpeta. Declara el bloque de precarga P0 y exige la alberca también con la opción «Ambas» de Q6 (D-104). Las versiones anteriores viven en el historial del repositorio. El cuestionario del Anexo A del Manual del Proceso Comercial es una versión anterior y no se usa.
 
 ## Cómo se verifica que un archivo no cambió
 

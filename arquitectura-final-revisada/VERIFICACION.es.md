@@ -16,22 +16,22 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
-| `00-estructura.es.md` | 1,770 | `fdc39942ee62db410fff0e6103f517da302b843d54f2ccc3af5ad8784942f07b` |
-| `00-paginas-iniciales.es.md` | 2,567 | `a7b4bf4633aedb56f99ddb89302e2a0e2ed8604093b55c0a68ea8843d4de660c` |
+| `00-estructura.es.md` | 1,770 | `fe6abacfe683569c26257970a0c8ad6e41eedaa87962deaaca503e4cc7126bde` |
+| `00-paginas-iniciales.es.md` | 2,571 | `112b5679aba47551b9adeeff70782b2f9726fdbb325d9b1b7e9fd2547573b84f` |
 | `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
 | `02-como-se-pierde-hoy.es.md` | 1,211 | `82ac54ecb2870dd50e4ad8fd4efcf7fe01c31ccc826e78b5d2ed1a56e96bf9b0` |
 | `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,919 | `a2aa840d5750739648444ee4661c38b3d6618c200fc013478399b26715f1c6ff` |
 | `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 2,700 | `17e6182df11a783fdafbd426f6711d817c44c39510515d03efc99f5f1ed4ecf2` |
-| `05-el-cuestionario.es.md` | 4,164 | `2966d3f6f5d1247cde4e37e2fee27ddbe3bc692edda25ef65f76de77b3137f28` |
+| `05-el-cuestionario.es.md` | 4,164 | `106ecd3cb8e498be1c4ca55b9481e52129fd9b06ea5df704d7ae5be2fdda3041` |
 | `06-quien-puede-recorrer-la-experiencia.es.md` | 941 | `20074348d11dc90a1a044896670f4aaa6bcb6f2b6ec43f07cd8eca44f162c884` |
 | `07-los-objetivos-de-la-persona.es.md` | 827 | `1f928c0a6ff5565aef60233b76d4f50a195d7515abb234d8abccc233d0ecde75` |
 | `08-el-recorrido-en-pantalla.es.md` | 2,760 | `0c3a0a462a90d0b1d8352c8ac733ac97d8ce5acef1ece1790a59a19bff73bbae` |
 | `09-datos-de-contacto-y-consentimiento.es.md` | 1,571 | `ff166b32b38e35bfa0cbeefcaa414fcf60bb024855bf289222747751056788c8` |
-| `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
-| `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
+| `CEI-01-v1.3.es.html` | — | `1fa9b23939122ecd8ce6c858488c5290787d6441f57ade4acd8ec7577f061394` |
+| `CEI-01-v1.3.pdf` | — | `5a8b3e8d89477036970cca5645a3f8c8bc98b5372b4ee2df78f94054ded6a315` |
 | `NORMA-DE-REDACCION.es.md` | 3,542 | `bec25e8f9aaab7d9ce9f874e6b392a3eefce21eb4cf675f52139da25fcde1a60` |
-| `README.es.md` | 378 | `37e3650427640d67910f4afbe647ce3fb2de14303b9f5844f2bda92d20064d03` |
-| `decisiones.es.md` | 13,206 | `35910a69004b309e6fa9ba093b83588cf22cb89cf94152354337308ac6746117` |
+| `README.es.md` | 392 | `6e0c10829d6d0a588b013f701eb25f3852101b7392dc626940ed124fde12cd9b` |
+| `decisiones.es.md` | 13,193 | `da4fb93c1c9b2db02a1ba4ec613f811aaac1f1d3069d00bc19e423c484015a67` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `ff81fdc7bcc25ae7c9477f4b670f1e633ec3262fda0df237b41b0d92daa1d471` |
 
 ## Estado de aprobación
@@ -44,7 +44,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **2** | Sí | **Eric.** Instalado carácter por carácter | Nada |
 | **3** | Sí | **Eric.** Instalado carácter por carácter, apartados 3.1 a 3.10 | Sus 12 correcciones a los apartados 3.5 a 3.10, del 21 de septiembre. Las cinco frases que marcaba el verificador quedaron autorizadas y anotadas en `tools/registro-permitidas.txt`. **Un solo cambio de notación:** «su reactivo 4» pasa a «**Q4**», la clave de CEI-01 |
 | **4** | Sí | **Eric.** Tercera versión, instalada carácter por carácter | **Cierra el punto abierto que dejó la segunda:** «La existencia de una cita no debe ser condición para generar ni entregar el brief». Sin cita, el brief corresponde al club resuelto y va marcado como **llamada directa**, que es lo que D-100 y el apartado 8.5.2 establecen. El brief pasa a dirigirse al **club que continúa la atención**, y 4.4.1 y 4.4.2 cubren los dos casos, con cita y sin ella |
-| **5** | Sí | **Eric.** Instalado carácter por carácter | Conserva las claves **Q1 a Q16**, 5.4.1 y 5.4.2 de la reescritura del día. Suma: que rechazar un punto de P0 devuelve la pregunta al cuestionario con su redacción original, que P0 no agrega pregunta al conteo, y la separación entre personalización y señal operativa. **Deja un punto abierto:** 5.6.2 hace la alberca requisito excluyente con la modalidad **Ambas**, y CEI-01 v1.2 dice que ahí no se exige |
+| **5** | Sí | **Eric.** Instalado carácter por carácter | Conserva las claves **Q1 a Q16**, 5.4.1 y 5.4.2 de la reescritura del día. Suma: que rechazar un punto de P0 devuelve la pregunta al cuestionario con su redacción original, que P0 no agrega pregunta al conteo, y la separación entre personalización y señal operativa. El punto que abrió quedó cerrado el mismo día: **CEI-01 pasa a la versión 1.3** y recoge la regla (D-104) |
 | **6** | **No** | Reescrito el 21 de septiembre | Entra al registro de los capítulos 1 a 3. Los reactivos pasan a las claves **Q6, Q13, Q14, Q15, Q15b y Q16**. La compuerta se identifica como **G0**. Once frases del verificador, resueltas |
 | **7** | **No** | Corregido el 21 de septiembre | Los dos ejes pasan a **Q3** y **Q4**, y la modalidad a **Q6**. Tres frases del verificador, resueltas. Se corrige «A la persona no se le informa de la postergación», que nombraba algo que este capítulo no define |
 | **8** | **No** | Corregido el 21 de septiembre | **La tabla de las seis fases iba de 1 a 7 y saltaba el 2**; las seis quedan numeradas de 1 a 6, como ya las nombraban los apartados 8.3.1 a 8.3.4. Diecisiete frases del verificador: dieciséis resueltas y una, la regla del navegador, a resolución de Eric |
@@ -81,6 +81,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **El índice deja de citar la bitácora** | `tools/indice.py` retira las claves **D-##** al generar el apartado 0.3. La trazabilidad de cada decisión sigue en `00-estructura.es.md` y en la bitácora; el índice nombra subcapítulos |
 | **El capítulo 4, en la versión de Eric** | Sustituye la reescritura del mismo día. Corrige dos hechos: la primera Experiencia Ideal existe **antes de que haya cita** —lo que sostiene la llamada directa del asesor a quien contesta y no agenda—, y las dos entregas llevan **dos páginas cada una**, cuatro en total, donde la versión anterior se leía como dos en total. Suma el caso de cambiar una clase dentro del mismo club y acota la señal de 4.4.4 a cuando existe otro club que sí cumple |
 | **El capítulo 4, tercera versión** | El brief deja de depender de la cita: se genera al terminar el cuestionario, con cita uno por cita y sin cita uno al club resuelto, marcado como **llamada directa**. Cierra el choque con D-100 que dejaba la segunda versión |
+| **CEI-01 versión 1.3** | El instrumento se actualiza con los **tres ajustes** que arrastraba, en una sola versión, HTML y PDF. **Entra P0**, el bloque de precarga, entre la compuerta y Q1 y en los identificadores vigentes, con sus cuatro categorías, su composición contra la instantánea del día y el efecto de aceptar y de rechazar; venía pendiente desde D-56. **Q6 exige la alberca también con «Ambas»** y cuando el sistema resuelve en agua (D-104), y el renglón Clubes del control de lógica lo recoge. Se corrige además el pie, que declaraba «versión 1.1» en un documento 1.2. El PDF se produce con el mismo pipeline del anterior: Chromium imprimiendo el HTML, `Skia/PDF m141`. Trece páginas. **La versión 1.2 sale de la carpeta y permanece en el historial del repositorio**, porque el instrumento que rige es uno solo y `tools/instrumento.py` falla si hay dos |
 | **D-104 y `tools/instrumento.py`** | Eric confirma que con la modalidad **Ambas** la alberca se exige, y que el sistema resuelve la modalidad únicamente cuando la persona pide que se le recomiende. Con eso, la regla del capítulo corrige a CEI-01, y la corrección pertenece al instrumento. `tools/instrumento.py` enumera los **tres ajustes** que CEI-01 debe incorporar en su versión 1.3, coteja cada uno contra el archivo y **falla mientras alguno siga pendiente**. Sustituye el renglón de pendientes, que dependía de que alguien se acordara. Comprueba además que la versión que el capítulo 5 declara vigente sea la del archivo |
 | **El capítulo 5, en la versión de Eric** | Conserva las claves Q y los dos apartados nuevos. Suma que rechazar un punto de P0 devuelve la pregunta con su redacción original de CEI-01, que P0 no agrega pregunta al conteo, y la separación entre personalización y señal operativa. **Abre un punto:** la alberca como requisito excluyente con la modalidad **Ambas**, que CEI-01 v1.2 hoy contradice |
 | **El barrido de párrafos** | De **73 frases a 7**. Cinco son texto de Eric, en los capítulos 1 y 2. Una es un renglón de la tabla de jerarquía documental. Una es la regla del navegador del apartado 8.5.1, prohibición normativa del mismo tipo que las cuatro ya autorizadas |
