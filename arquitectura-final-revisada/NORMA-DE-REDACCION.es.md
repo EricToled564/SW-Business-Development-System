@@ -25,14 +25,14 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 | № | Regla | Por qué |
 |---|---|---|
 | **1** | **Todo se dice en afirmativo.** El sistema se describe por lo que hace (D-92). **La prueba es el sujeto de la frase:** si el sujeto es el problema actual de Sports World, la frase en negativo se queda, porque la omisión es el hecho; si el sujeto es el sistema que se construye, se reescribe (D-101) | Una frase que enumera lo que el sistema no hace obliga a deducir el hecho por descarte |
-| **2** | **El documento no habla de sí mismo.** Nada de «este documento especifica», «como se verá más adelante», «este capítulo trata de» | Quien lee quiere el hecho, no el mapa del texto |
-| **3** | **Sin contraste inventado.** Nada de «no es X, es Y» ni «más que X, es Y» | Introduce un adversario que nadie propuso, y el lector se queda con las dos ideas |
-| **4** | **Cada término se presenta en su primer uso**, o remite al capítulo que lo define | Ningún concepto aparece en el cuerpo sin estar antes en el glosario o en la tabla de códigos |
-| **5** | **Lenguaje neutro** para las personas. Nunca «él» por defecto | La mitad de quienes llegan no son hombres |
-| **6** | **Cifras, no adjetivos.** «Capacidad razonable» no sirve; 148 páginas sí | Un adjetivo no se puede comprobar |
-| **7** | **Voz activa, sin adverbios en –mente, mínimo de palabras** | «Procesando tu solicitud», no «tu solicitud está siendo procesada actualmente» |
-| **8** | **Sin metáforas ni giros conversacionales** | Registro ejecutivo en todo el depósito |
-| **9** | **Las tres palabras normativas son debe · no debe · puede**, y solo se usan en las reglas | «No debe» prohíbe una conducta a quien construye. Nunca describe al sistema: eso lo cubre la regla 1 |
+| **3** | **El documento no habla de sí mismo.** Nada de «este documento especifica», «como se verá más adelante», «este capítulo trata de» | Quien lee quiere el hecho, no el mapa del texto |
+| **4** | **Sin contraste inventado.** Nada de «no es X, es Y» ni «más que X, es Y» | Introduce un adversario que nadie propuso, y el lector se queda con las dos ideas |
+| **5** | **Cada término se presenta en su primer uso**, o remite al capítulo que lo define | Ningún concepto aparece en el cuerpo sin estar antes en el glosario o en la tabla de códigos |
+| **6** | **Lenguaje neutro** para las personas. Nunca «él» por defecto | La mitad de quienes llegan no son hombres |
+| **7** | **Cifras, no adjetivos.** «Capacidad razonable» no sirve; 148 páginas sí | Un adjetivo no se puede comprobar |
+| **8** | **Voz activa, sin adverbios en –mente, mínimo de palabras** | «Procesando tu solicitud», no «tu solicitud está siendo procesada actualmente» |
+| **9** | **Sin metáforas ni giros conversacionales** | Registro ejecutivo en todo el depósito |
+| **10** | **Las tres palabras normativas son debe · no debe · puede**, y solo se usan en las reglas | «No debe» prohíbe una conducta a quien construye. Nunca describe al sistema: eso lo cubre la regla 1 |
 
 **Única excepción a la regla 1:** la leyenda «Disponible en tu club» o «No disponible en tu club» de las listas de clases por objetivo (D-72), porque la persona necesita esa comparación para decidir.
 

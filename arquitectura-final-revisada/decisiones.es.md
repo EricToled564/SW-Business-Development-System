@@ -35,23 +35,23 @@ Reformulaciones aplicadas al instrumento: el reactivo 12 recupera sus tres versi
 
 El apellido se solicita en la captura de contacto, al terminar el cuestionario, junto con el teléfono y el correo, en todos los canales. En WhatsApp se piden apellido y correo, porque el número viene del canal. El reactivo 1 sigue sin pedirlo.
 
-**Fuera de la Arquitectura:** CEI-01 versión 1.2, apartado 4.
+**Fuera de la Arquitectura:** CEI-01 versión 1.2, apartado 5.
 
 ---
 
-## 2 · El principio de precarga
+## 3 · El principio de precarga
 
 ### D-35 · No se le pregunta dos veces lo mismo a la persona
 
 Lo que el sistema ya sabe antes de que empiece el cuestionario no se le pregunta: se le confirma, en un solo bloque, antes del primer reactivo. El bloque se llama **P0 · Precarga** y se declara dentro del instrumento.
 
-**Aterriza en:** capítulo 4.2.
+**Aterriza en:** capítulo 5.2.
 
 ### D-36 · De dónde sale el conocimiento previo, por canal
 
 Sitio web: las páginas que la persona visitó antes de abrir el cuestionario. WhatsApp: lo que la campaña que la trajo declara que promueve. Consola: el club donde la persona está parada, que se da por dado y no se pregunta.
 
-**Aterriza en:** capítulo 4.2.1.
+**Aterriza en:** capítulo 5.2.1.
 
 ### D-37 · Cuatro categorías y dos formas
 
@@ -61,7 +61,7 @@ Dos formas de preguntar, y una regla que las separa: si al contestar que no algu
 
 Club y amenidad llevan la opción de recomendar. Clase y objetivo son sí o no.
 
-**Aterriza en:** capítulo 4.2.2.
+**Aterriza en:** capítulo 5.2.2.
 
 ### D-38 · El bloque nunca ofrece lo que no se puede entregar
 
@@ -69,13 +69,13 @@ Antes de mostrarse, cada punto candidato se verifica contra la instantánea del 
 
 Si la navegación revela un club y una clase que ese club no imparte, se pregunta solo por el club. Nunca se le dice a la persona que el club no imparte lo que estuvo viendo.
 
-**Aterriza en:** capítulo 4.2.3.
+**Aterriza en:** capítulo 5.2.3.
 
 ### D-39 · El bloque se compone y se muestra una sola vez
 
 Después de la compuerta de mayoría de edad y antes del primer reactivo. No se recompone con las respuestas que la persona dé dentro de él.
 
-**Aterriza en:** capítulo 4.2.3.
+**Aterriza en:** capítulo 5.2.3.
 
 ### D-40 · La clase aceptada sin club fijado es requisito del club
 
@@ -83,19 +83,19 @@ Con club fijado, la clase aceptada queda asegurada en el tercer bloque y no agre
 
 Es el quinto requisito, y el único que no viene del cuestionario sino del contexto previo.
 
-**Aterriza en:** capítulos 4.2.4 y 9.
+**Aterriza en:** capítulos 5.2.4 y 10.
 **Fuera de la Arquitectura:** obliga a corregir el renglón de Clubes del control de lógica de CEI-01, que hoy exige solo amenidades, preferencias y clases por objetivo.
 
 ### D-41 · La ficha de campaña declara qué promueve
 
 Sin ese campo, WhatsApp no sabe qué precargar y la conversación arranca preguntando lo que el anuncio ya le dijo a la persona.
 
-**Aterriza en:** capítulo 13.
+**Aterriza en:** capítulo 14.
 **Fuera de la Arquitectura:** la ficha de campaña gana un campo obligatorio.
 
 ---
 
-## 3 · La elección de club
+## 4 · La elección de club
 
 ### D-42 · Las banderas existen para elegir y desaparecen al elegir
 
@@ -103,7 +103,7 @@ Mientras la persona elige, cada alternativa lleva su bandera y la leyenda concre
 
 **Sustituye** la nota ámbar posterior a la elección que fijaba el cambio 14 del anexo de correcciones.
 
-**Aterriza en:** capítulos 3.2.4 y 9.
+**Aterriza en:** capítulos 4.2.4 y 10.
 
 ### D-43 · Cuando el club que la persona quiere no cumple
 
@@ -111,14 +111,14 @@ No se le entrega ese club por omisión. Se le recomienda **el más cercano al cl
 
 Unifica tres situaciones en un solo comportamiento: ningún club cercano cumple; la persona elige un club que no cumple; la precarga trae un club que no cumple.
 
-**Aterriza en:** capítulo 9.
+**Aterriza en:** capítulo 10.
 **Abierto:** de dónde sale el club que se recomienda — la tabla de sustitutos que Sports World asigna a mano, o una matriz calculada de tiempos entre clubes.
 
 ### D-44 · En consola, el sistema muestra y el asesor decide
 
 El club se da por dado y no se pregunta. Cuando ese club no cumple lo que el perfil exige, el brief nombra lo que le falta y cuál club sí lo entrega. **Enviar o no a la persona a ese otro club es decisión del asesor.**
 
-**Aterriza en:** capítulos 3.4.4 y 4.2.1.
+**Aterriza en:** capítulos 4.4.4 y 5.2.1.
 **Abierto, fuera de la Arquitectura:** la regla de atribución comercial de esa venta corresponde al proceso comercial y está por definirse.
 
 ### D-45 · Al cambiar de club, el plan se recompone completo
@@ -127,11 +127,11 @@ Bloques, clases, modalidad, tiempo de traslado y evaluación de requisitos. Si a
 
 El texto redactado **no** se vuelve a generar. De ahí se sigue una restricción: el texto se redacta de forma que lo único específico de un club sea su nombre y su dirección.
 
-**Aterriza en:** capítulos 3.2.3, 10 y 12.
+**Aterriza en:** capítulos 4.2.3, 11 y 13.
 
 ---
 
-## 4 · El recorrido
+## 5 · El recorrido
 
 ### D-46 · BES está disponible en todo momento
 
@@ -139,7 +139,7 @@ Durante el cuestionario, **toma el control desde el reactivo en el que va la per
 
 BES hace lo que la pantalla permite —cambiar de club, cambiar de clases— y nada más.
 
-**Aterriza en:** capítulos 1.3.4, 3.3 y 7.
+**Aterriza en:** capítulos 1.3.4, 4.3 y 8.
 
 ### D-47 · Ruta reducida para personas menores de edad
 
@@ -147,7 +147,7 @@ Quien no confirma la mayoría de edad **no queda fuera**. El sistema le resuelve
 
 No se abre registro, no se escribe nada y al cerrar la sesión no queda rastro. El bloque de precarga sí se muestra, porque no pide ningún dato.
 
-**Aterriza en:** capítulo 5.2.
+**Aterriza en:** capítulo 6.2.
 
 ### D-48 · Identificador de sesión, que vive toda la sesión y muere con ella
 
@@ -163,12 +163,12 @@ Nada de lo que la persona responde se guarda en su navegador: lo único que se g
 
 **Completada por D-90:** la Arquitectura nombra también la llave de idempotencia `session_uuid`, que sí forma parte del registro del prospecto.
 
-**Aterriza en:** capítulos 2.4 —cuando se redacte—, 7.5.1 y 8.
+**Aterriza en:** capítulos 3.4 —cuando se redacte—, 7.5.1 y 8.
 **Abierto, fuera de la Arquitectura:** el texto del aviso simplificado y si procede consentimiento previo, que corresponde a Legal.
 
 ---
 
-## 5 · El documento
+## 6 · El documento
 
 ### D-49 · El documento se parte en dos
 
@@ -180,11 +180,11 @@ Con su hash registrado. Cualquier cambio posterior es un commit nuevo cuyo mensa
 
 ---
 
-## 6 · El sitio como capa de captación
+## 7 · El sitio como capa de captación
 
-### D-51 · El sitio entra como capítulo 2 y los demás corren un número
+### D-51 · El sitio entra como capítulo 3 y los demás corren un número
 
-La Arquitectura llegaba al capítulo 6 sin haber dicho **cómo accede la gente al cuestionario a través de las páginas del sitio**, ni cómo el contenido capta la atención y conduce a construir la experiencia ideal. Ese capítulo se escribe y se coloca **en la posición 2**, inmediatamente después de la tesis. Los capítulos que ocupaban las posiciones 2 a 6 corren un número hacia adelante.
+La Arquitectura llegaba al capítulo 7 sin haber dicho **cómo accede la gente al cuestionario a través de las páginas del sitio**, ni cómo el contenido capta la atención y conduce a construir la experiencia ideal. Ese capítulo se escribe y se coloca **en la posición 2**, inmediatamente después de la tesis. Los capítulos que ocupaban las posiciones 2 a 6 corren un número hacia adelante.
 
 | Antes | Ahora | Capítulo |
 |---|---|---|
@@ -199,25 +199,25 @@ Las remisiones internas de los capítulos ya aprobados se actualizaron en el mis
 
 ### D-52 · Los menús contextuales no se inventan: se recuperan
 
-La especificación de los menús contextuales **ya existía** en el depósito, repartida en tres lugares: `ux-spec-experiencia-ideal.md` §5.2 (los tres estados de usuario) y §6.4 (las matrices por tipo de página), `contenido-minimo-por-tipo-de-pagina.es.md` (las etiquetas exactas de cada botón) y el §3 del documento original de Arquitectura (la ramificación condicional y el resolvedor dinámico). El capítulo 2 **las consolida**, no las sustituye.
+La especificación de los menús contextuales **ya existía** en el depósito, repartida en tres lugares: `ux-spec-experiencia-ideal.md` §5.2 (los tres estados de usuario) y §6.4 (las matrices por tipo de página), `contenido-minimo-por-tipo-de-pagina.es.md` (las etiquetas exactas de cada botón) y el §3 del documento original de Arquitectura (la ramificación condicional y el resolvedor dinámico). El capítulo 3 **las consolida**, no las sustituye.
 
-**Aterriza en:** capítulo 2.4, cuando se redacte. **Alcanza también a la Parte II**, que prescribirá el comportamiento de esos menús.
+**Aterriza en:** capítulo 3.4, cuando se redacte. **Alcanza también a la Parte II**, que prescribirá el comportamiento de esos menús.
 
 ### D-53 · El límite de dos objetivos es vivo
 
 Mientras la persona no toque «Siguiente», puede cambiar de objetivos con entera libertad: quitar uno y poner otro cuantas veces quiera. El límite de dos no bloquea la pantalla, ordena la selección. **El orden en que los elige se conserva y significa algo:** el primero es su objetivo principal.
 
-**Aterriza en:** capítulos 4.7.3 y 6.
+**Aterriza en:** capítulos 5.7.3 y 7.
 
 ### D-54 · El botón de agendar abre el cuestionario con un preámbulo
 
 El botón de agendar una visita está en todas las páginas y en todo momento de la conversación por WhatsApp, y **es la puerta de entrada a la experiencia ideal**. Al tocarlo, antes de cualquier pregunta, se muestra un texto de invitación con dos versiones: la genérica —«durante tu visita a nuestros clubes»— y la del club, cuando el botón se tocó dentro de la página de un club —«durante tu visita a Sports World Polanco»—. Después viene la compuerta de mayoría de edad, después el bloque de precarga y después los reactivos.
 
-**Aterriza en:** capítulo 7.1 y 7.3.1.
+**Aterriza en:** capítulo 8.1 y 8.3.1.
 
 ---
 
-## 7 · Lo que dura y lo que no
+## 8 · Lo que dura y lo que no
 
 ### D-55 · Los tres estados son de sesión, y no sobreviven a la salida
 
@@ -227,7 +227,7 @@ Los tres estados que gobiernan el menú contextual —sin cuestionario, completo
 
 **En cuanto la persona sale, el registro de sesión muere.** Al volver es, para el sitio, alguien sin cuestionario, y si lo quiere vuelve a contestarlo. No hay reconocimiento entre visitas, no hay cuenta y no se guarda nada en su navegador salvo el identificador de D-48, que muere con la sesión.
 
-**Aterriza en:** capítulos 2.4 —cuando se redacte— y 7.5.
+**Aterriza en:** capítulos 3.4 —cuando se redacte— y 7.5.
 
 **Corregida por D-60:** los tres estados dejaron de depender de por qué puerta entró la persona y pasaron a depender de hasta dónde llegó. «Completo, fuera del flujo» ya no existe como estado propio.
 
@@ -246,17 +246,17 @@ Una persona que ya está registrada —por ejemplo con la bandera «no quiso age
 
 **El borrado no deja hueco en la medición.** Las etapas de la espina del funnel no cuentan registros guardados, cuentan eventos en el momento en que ocurren: E2 cuenta al responderse la primera pregunta y **E3 cuenta cuando se genera la experiencia ideal**, no cuando se consulta después. Rehacer el cuestionario dispara un E2 y un E3 nuevos, que quedan registrados aunque el documento anterior se borre.
 
-**Aterriza en:** capítulos 8, 13 y 15.
+**Aterriza en:** capítulos 9, 14 y 16.
 
 **Corregida por D-68:** el registro del prospecto sigue siendo uno solo, pero la experiencia ideal puede ser más de una, porque cada cita lleva la suya.
 
-### D-57 · El capítulo 2 se reescribe, y su material se reubica
+### D-57 · El capítulo 3 se reescribe, y su material se reubica
 
-El texto que se había escrito para el capítulo 2 describía el inventario de páginas, los botones y el comportamiento del cuestionario. **Ninguna de esas tres cosas es el objeto del capítulo**, que es cómo el contenido del sitio capta la atención y lleva a la persona a construir su experiencia ideal.
+El texto que se había escrito para el capítulo 3 describía el inventario de páginas, los botones y el comportamiento del cuestionario. **Ninguna de esas tres cosas es el objeto del capítulo**, que es cómo el contenido del sitio capta la atención y lleva a la persona a construir su experiencia ideal.
 
 **La estructura del capítulo queda aprobada** en seis apartados: por qué existe cada página · qué encuentra la persona al llegar · por qué ese contenido la mueve a construir su experiencia · cómo se le lleva · qué se lleva consigo al cuestionario · el blog.
 
-El contenido de los apartados 2.2 y 2.3 sale de la **sección 5 de `contenido-minimo-por-tipo-de-pagina.es.md`**, que especifica el contenido mínimo de los once tipos de página. El texto retirado usó la sección 4 de ese documento —la de los botones— y nunca la 5.
+El contenido de los apartados 3.2 y 3.3 sale de la **sección 5 de `contenido-minimo-por-tipo-de-pagina.es.md`**, que especifica el contenido mínimo de los once tipos de página. El texto retirado usó la sección 4 de ese documento —la de los botones— y nunca la 5.
 
 **El material correcto se reubicó:**
 
@@ -265,13 +265,13 @@ El contenido de los apartados 2.2 y 2.3 sale de la **sección 5 de `contenido-mi
 | Los menús dinámicos del cuestionario | Capítulo **4.7**, «Cómo se comporta el cuestionario en pantalla» |
 | Que Google no entrega el término de búsqueda, y que solo se conoce la página de aterrizaje | Capítulo **4.2.1**, donde se especifica de dónde sale el conocimiento previo |
 
-**Aterriza en:** capítulos 2 y 5.
+**Aterriza en:** capítulos 3 y 6.
 
 ### D-58 · Los documentos no llevan notas sobre su propia edición
 
 El texto explica qué hace el sistema, no por qué se redactó de una manera u otra. **Quedan fuera** las justificaciones de la decisión editorial, las comparaciones con versiones anteriores del documento y las instrucciones a quien redacta.
 
-Se retiraron en esta pasada: el apartado 7.5.3, «Por qué está escrito así», y las notas que acompañaban a la regla de concordancia y a la regla del «Siguiente».
+Se retiraron en esta pasada: el apartado 8.5.3, «Por qué está escrito así», y las notas que acompañaban a la regla de concordancia y a la regla del «Siguiente».
 
 La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está en la tabla, no persiste» se queda, porque es una regla; «por eso este apartado no enuncia un principio» se va, porque habla del documento.
 
@@ -291,7 +291,7 @@ La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está 
 
 **Los dos límites de la regla.** No se miente: no se inventa un horario, un precio ni una disponibilidad que no se tienen. Y no se calla hacia dentro: toda contingencia resuelta en silencio hacia la persona **viaja al brief**, para que el asesor sepa con qué está trabajando.
 
-**Aterriza en:** capítulos 2, 4.9, 7.7 y 13.
+**Aterriza en:** capítulos 3, 5.9, 8.7 y 14.
 
 ### D-60 · Dos menús, y el contextual tiene cuatro ranuras
 
@@ -318,7 +318,7 @@ La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está 
 
 **Ningún nivel se muestra vacío**, y el orden va siempre de lo cercano a lo lejano.
 
-**Aterriza en:** capítulos 2.4 y 2.5.
+**Aterriza en:** capítulos 3.4 y 3.5.
 
 **Corregida por D-89:** los tres estados se nombran en vez de numerarse, porque los códigos `E##` pertenecen al Mapa del Funnel.
 
@@ -330,7 +330,7 @@ La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está 
 
 Y las tres **empiezan por las preguntas de contexto de la página desde la que se tocó el botón**, no por el primer reactivo. Desde la página de alberca se le confirma si quiere actividades acuáticas en su experiencia; desde una clase, esa clase; desde un club, ese club; desde un objetivo, ese objetivo. Solo quien entró por el inicio sin haber visto otra página no tiene contexto que confirmar.
 
-**Aterriza en:** capítulos 2.4.3 y 4.2.
+**Aterriza en:** capítulos 3.4.3 y 5.2.
 
 ### D-62 · La ranura del objetivo pregunta en E1 y entrega en E2
 
@@ -338,7 +338,7 @@ Y las tres **empiezan por las preguntas de contexto de la página desde la que s
 
 Es el mismo mecanismo que rige la página de un club: **nunca se entrega una lista de clases suelta. Las clases viven dentro del objetivo al que sirven.**
 
-**Aterriza en:** capítulos 2.4.5, 2.5.5 y 6.
+**Aterriza en:** capítulos 3.4.5, 3.5.5 y 7.
 
 **Corregida por D-73:** la etiqueta nombra el objetivo, «Conoce las clases ideales para [nombre del objetivo]», y con dos objetivos declarados hay dos botones.
 
@@ -348,9 +348,9 @@ Especificar el menú página por página no permite saber si están cubiertos to
 
 **Tres combinaciones no existen, y el documento dice por qué:** sin cuestionario no puede haber cita, porque agendar exige haber completado el cuestionario; con cuestionario siempre hay club, porque el cuestionario lo resuelve; y en la página de un club siempre hay club de referencia, porque aterrizar ahí lo identifica.
 
-Con eso, las dos primeras variables colapsan en los tres estados que el documento usa como taquigrafía. **El apartado 2.5 comprueba los treinta y tres escenarios** —once tipos de página por tres estados— y cada celda sale de aplicar las reglas, no de escribirla a mano.
+Con eso, las dos primeras variables colapsan en los tres estados que el documento usa como taquigrafía. **El apartado 3.5 comprueba los treinta y tres escenarios** —once tipos de página por tres estados— y cada celda sale de aplicar las reglas, no de escribirla a mano.
 
-**Aterriza en:** capítulos 2.4 y 2.5.
+**Aterriza en:** capítulos 3.4 y 3.5.
 
 **Corregida por D-65:** la variable del club de referencia se retira, porque la ranura ya no depende del tipo de página. Las seis variables quedan en cinco: el cuestionario, la cita, el tipo de página, la densidad alrededor del club ideal y los objetivos elegidos, de los que depende «Explora» (D-73).
 
@@ -366,7 +366,7 @@ Había dos reglas de geografía distintas: una de 10 km medida desde el club de 
 
 Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite, porque ahí es donde va a entrenar.
 
-**Aterriza en:** capítulos 2.4.3 y 2.4.4.
+**Aterriza en:** capítulos 3.4.3 y 3.4.4.
 
 **Corregida por D-65:** la jerarquía se mide siempre desde el club ideal, nunca desde el club de la página, porque antes del cuestionario no hay jerarquía que mostrar.
 
@@ -374,7 +374,7 @@ Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite
 
 ---
 
-## 8 · El menú contextual, fijado punto por punto
+## 9 · El menú contextual, fijado punto por punto
 
 Las decisiones de este apartado se tomaron el 20 de septiembre de 2026, una por una, y **sustituyen lo que D-60, D-63 y D-64 decían sobre las etiquetas y la geografía**. Lo que aquellas decisiones fijaron y aquí no se menciona sigue vigente.
 
@@ -397,11 +397,11 @@ La ranura del club **no depende del tipo de página**. Depende de una sola cosa:
 
 **El único radio de esta jerarquía es 5 km**, y sustituye a los 10 km que regían antes. Ningún nivel se muestra vacío y el orden va siempre de lo cercano a lo lejano. Antes del cuestionario no hay geografía que resolver: sin club ideal no hay desde dónde medir.
 
-**Alcance de la regla.** Estos 5 km son los de la jerarquía del menú, que sirve para que la persona **explore** otros clubes. El radio con el que el sistema **resuelve** su club ideal es otra cosa y vive en el capítulo 9. **D-82 fija que son dos cosas distintas y no se unifican.**
+**Alcance de la regla.** Estos 5 km son los de la jerarquía del menú, que sirve para que la persona **explore** otros clubes. El radio con el que el sistema **resuelve** su club ideal es otra cosa y vive en el capítulo 10. **D-82 fija que son dos cosas distintas y no se unifican.**
 
 **Sustituye:** de D-60, las etiquetas «Tu club ideal» y «Conoce nuestros clubes», la regla por tamaño de ciudad y el radio de 10 km. De D-64, el club de la página como punto de medida. De D-63, la variable del club de referencia, que deja de hacer falta.
 
-**Aterriza en:** capítulos 2.4 y 2.5.
+**Aterriza en:** capítulos 3.4 y 3.5.
 
 ### D-66 · El orden de los botones es fijo
 
@@ -409,7 +409,7 @@ De izquierda a derecha: **el club, la experiencia y la visita.** Después, los b
 
 El orden no cambia con el estado ni con el tipo de página. Cuando una ranura no tiene nada que ofrecer, las demás conservan su orden entre sí.
 
-**Aterriza en:** capítulo 2.4.
+**Aterriza en:** capítulo 3.4.
 
 ### D-67 · Cuando ya hay cita: el cuerpo lleva a la cita y el encabezado ofrece otro club
 
@@ -424,7 +424,7 @@ El orden no cambia con el estado ni con el tipo de página. Cuando una ranura no
 
 **La primera cita se conserva.** Una persona puede tener visitas agendadas en dos clubes.
 
-**Aterriza en:** capítulos 2.4, 3 y 7.
+**Aterriza en:** capítulos 3.4, 4 y 8.
 
 ### D-68 · Cada cita tiene su propia experiencia ideal y su propio brief
 
@@ -436,7 +436,7 @@ Dos clubes distintos resuelven clases distintas, así que **no puede haber una s
 
 **Corrige D-56**, que fijaba «una persona, un registro de prospecto, una experiencia vigente». El registro del prospecto sigue siendo uno solo, conciliado con la llave canónica; lo que puede ser más de una es la experiencia.
 
-**Aterriza en:** capítulos 3, 7, 8 y 13.
+**Aterriza en:** capítulos 4, 8, 9 y 14.
 
 ### D-69 · Nada se escribe ni se envía hasta que la sesión cierra
 
@@ -455,9 +455,9 @@ Al cerrar, y **una sola vez**, se escribe el estado final:
 
 **De ahí se sigue que no hay correos de cancelación por lo que la persona cambió dentro de la sesión:** nada salió mientras cambiaba. Los avisos de cambio o cancelación al club solo ocurren cuando vuelve otro día y mueve una cita ya enviada.
 
-**Corrige el capítulo 7**, que escribía al sistema de clientes en el momento de agendar y enviaba el correo al terminar el cuestionario.
+**Corrige el capítulo 8**, que escribía al sistema de clientes en el momento de agendar y enviaba el correo al terminar el cuestionario.
 
-**Aterriza en:** capítulos 7, 8, 13 y 15.
+**Aterriza en:** capítulos 8, 9, 14 y 16.
 
 ### D-70 · Las páginas de objetivo son los seis objetivos del cuestionario
 
@@ -469,7 +469,7 @@ Al cerrar, y **una sola vez**, se escribe el estado final:
 
 **Cabe en el contrato**, que fija cinco hubs de perfil y un hub de bajar de peso **sin nombrarlos**: son seis páginas antes y seis después. Bajar de peso conserva su página y su tratamiento de salud.
 
-**Aterriza en:** capítulos 2 y 6.
+**Aterriza en:** capítulos 3 y 7.
 **Fuera de la Arquitectura:** obliga a corregir el inventario de páginas y las direcciones de `/perfiles/`.
 
 ### D-71 · Nunca se entrega una lista suelta: las clases viven dentro del objetivo
@@ -482,15 +482,15 @@ Al cerrar, y **una sola vez**, se escribe el estado final:
 
 **Sustituye** lo que pedía `contenido-minimo-por-tipo-de-pagina.es.md` para la página de club —el catálogo de las 51 clases para adultos y las 34 para menores— y para la página de clase —«clubes donde se imparte, con sus horarios reales»—.
 
-**Aterriza en:** capítulos 2.2 y 2.3.
+**Aterriza en:** capítulos 3.2 y 3.3.
 
 ### D-72 · La leyenda de disponibilidad en las listas de clases
 
 Con el cuestionario contestado, **cada clase de una lista de objetivo lleva la leyenda «Disponible en tu club» o «No disponible en tu club».**
 
-Es **la única excepción** a la regla del capítulo 3.2.5, que prohíbe comunicarle a la persona una carencia. Aquí no es una carencia de su plan: es información para comparar clubes, en una superficie que existe para eso.
+Es **la única excepción** a la regla del capítulo 4.2.5, que prohíbe comunicarle a la persona una carencia. Aquí no es una carencia de su plan: es información para comparar clubes, en una superficie que existe para eso.
 
-**Aterriza en:** capítulos 2.4 y 3.
+**Aterriza en:** capítulos 3.4 y 4.
 
 ### D-73 · La ranura del objetivo: «¿Cuál es tu objetivo?» antes del cuestionario, y las clases ideales solo en las páginas de objetivo
 
@@ -509,7 +509,7 @@ Membresías no lleva botón de objetivo en ningún estado (D-75). Las páginas d
 
 **Sustituye** de D-62 la etiqueta «Las clases para tu objetivo»: el objetivo se nombra, no se alude.
 
-**Aterriza en:** capítulos 2.4, 2.5 y 6.
+**Aterriza en:** capítulos 3.4, 3.5 y 7.
 
 ### D-74 · Los botones propios de cada tipo de página
 
@@ -521,13 +521,13 @@ Membresías no lleva botón de objetivo en ningún estado (D-75). Las páginas d
 
 **El botón «Artículos o información útil» desaparece de todas las páginas.** Donde un artículo es pertinente, la página lo enlaza **dentro de su contenido**, no desde el menú. Sustituye la regla del contenido mínimo que lo encendía por etiquetas.
 
-**Aterriza en:** capítulos 2.4 y 2.5.
+**Aterriza en:** capítulos 3.4 y 3.5.
 
 ### D-75 · Membresías no lleva la ranura del objetivo
 
 Quien compara precios no está eligiendo objetivo, y en esa página ya hay dos botones que abren el cuestionario. **Es el único tipo de página sin botón de objetivo en ningún estado.** Las demás páginas sin objetivo propio, el blog incluido, llevan «¿Cuál es tu objetivo?» antes del cuestionario (D-73).
 
-**Aterriza en:** capítulo 2.5.
+**Aterriza en:** capítulo 3.5.
 
 ### D-76 · FitKidz se llama por su nombre y se parte en dos secciones
 
@@ -544,7 +544,7 @@ Su menú es el de cualquier otra página. **Desaparecen los tres botones que ten
 
 **Sustituye** las reglas de botones propios de FitKidz del contenido mínimo.
 
-**Aterriza en:** capítulos 2.2 y 2.5.
+**Aterriza en:** capítulos 3.2 y 3.5.
 
 ### D-77 · Las tres páginas de entrenamiento individual se comportan como páginas de objetivo
 
@@ -554,7 +554,7 @@ Entrenamiento con pesas, entrenamiento aeróbico y **entrenamiento aeróbico en 
 
 **Los programas son secciones dentro de las tres páginas, no páginas nuevas:** el contrato cuenta 47 clases individuales, que ya incluyen estas tres, y cualquier adición exige convenio modificatorio.
 
-**Aterriza en:** capítulos 2.5 y 10.
+**Aterriza en:** capítulos 3.5 y 11.
 
 ### D-78 · El entrenamiento aeróbico en alberca se prescribe por esfuerzo percibido, no por pulsaciones
 
@@ -565,23 +565,23 @@ De ahí, dos reglas del sistema:
 1. **La intensidad de los programas acuáticos se expresa en esfuerzo percibido y en cadencia**, nunca en pulsaciones trasladadas del piso.
 2. **El reactivo 5 del cuestionario —el ritmo que va con la persona— es el criterio que ordena los programas acuáticos**, igual que ordena las clases.
 
-La correspondencia de los seis objetivos con sus programas acuáticos **no se fija en el documento**: vive en la matriz de entrenamiento individual, con el contrato que D-83 exige. El capítulo 10 declara esa fuente y el método de derivación de D-84.
+La correspondencia de los seis objetivos con sus programas acuáticos **no se fija en el documento**: vive en la matriz de entrenamiento individual, con el contrato que D-83 exige. El capítulo 11 declara esa fuente y el método de derivación de D-84.
 
-**Aterriza en:** capítulos 10 y 11.
+**Aterriza en:** capítulos 11 y 12.
 
 ### D-79 · Lo que el sistema nunca hace en el agua
 
 Ninguna pieza del sistema —ni la experiencia, ni el brief, ni BES— **propone apnea, hiperventilación previa a la inmersión ni series de aguante de la respiración.** La pérdida de conocimiento por falta de oxígeno bajo el agua es la principal causa de ahogamiento entre nadadores con experiencia, y ocurre sin aviso.
 
-**Aterriza en:** capítulos 10 y 12.
+**Aterriza en:** capítulos 11 y 13.
 
 ---
 
-## 9 · Qué fija el documento y qué no
+## 10 · Qué fija el documento y qué no
 
 ### D-80 · La atención a personas socias queda fuera de este documento
 
-**El sitio y BES atienden prospectos.** La experiencia ideal es un instrumento de captación, y el capítulo 5 ya lo acota a quien no tiene membresía activa.
+**El sitio y BES atienden prospectos.** La experiencia ideal es un instrumento de captación, y el capítulo 6 ya lo acota a quien no tiene membresía activa.
 
 Consultar horarios, congelar una membresía, cancelarla o cualquier otro autoservicio de una persona socia **no es materia de este documento**. Si Sports World decide publicar su política de cancelación o abrir un centro de ayuda, es contenido institucional, fuera de las 148 páginas y fuera de esta Arquitectura.
 
@@ -608,10 +608,10 @@ Consultar horarios, congelar una membresía, cancelarla o cualquier otro autoser
 
 | Radio | Para qué sirve | Dónde vive |
 |---|---|---|
-| **5 km** | Que la persona **explore** otros clubes alrededor del suyo | Capítulo 2, la jerarquía del menú |
-| **10 km** | Que el sistema **resuelva** cuál es su club ideal entre los que cumplen sus requisitos | Capítulo 9 |
+| **5 km** | Que la persona **explore** otros clubes alrededor del suyo | Capítulo 3, la jerarquía del menú |
+| **10 km** | Que el sistema **resuelva** cuál es su club ideal entre los que cumplen sus requisitos | Capítulo 10 |
 
-Son dos operaciones distintas y no tienen por qué medir lo mismo. **El capítulo 9 nombra el suyo de forma que no se confunda con el del menú.**
+Son dos operaciones distintas y no tienen por qué medir lo mismo. **El capítulo 10 nombra el suyo de forma que no se confunda con el del menú.**
 
 **Cierra** el punto abierto que había quedado en D-65.
 
@@ -649,7 +649,7 @@ Por eso, cada vez que el documento derive una regla o un programa de evidencia q
 | **De un paso** | La evidencia mide una cualidad intermedia, y el salto al desenlace es uno solo |
 | **Por ausencia** | No hay evidencia para ese caso, y la regla se construye reconociéndolo |
 
-**Aterriza en:** capítulos 10 y 11.
+**Aterriza en:** capítulos 11 y 12.
 
 
 ### D-85 · El Contrato encabeza la jerarquía de fuentes
@@ -659,10 +659,10 @@ Durante la revisión de la Arquitectura, cuando dos documentos del depósito dic
 | | Fuente | Por qué ahí |
 |---|---|---|
 | **1** | **El Contrato y sus anexos** | Es lo firmado. Nada que el documento diga puede obligar a algo distinto de lo pactado |
-| **2** | **CEI-01**, el cuestionario vigente | Es el único instrumento, y todo lo que el sistema personaliza sale de él |
-| **3** | **Esta bitácora de decisiones** | Lo decidido de forma expresa, con fecha |
-| **4** | **Los capítulos aprobados** de la Arquitectura | |
-| **5** | El resto del depósito | Documentos de trabajo anteriores a la revisión |
+| **3** | **CEI-01**, el cuestionario vigente | Es el único instrumento, y todo lo que el sistema personaliza sale de él |
+| **4** | **Esta bitácora de decisiones** | Lo decidido de forma expresa, con fecha |
+| **5** | **Los capítulos aprobados** de la Arquitectura | |
+| **6** | El resto del depósito | Documentos de trabajo anteriores a la revisión |
 
 **Consecuencia práctica.** Una propuesta que no cabe en el Contrato no se adopta, se cotiza. Por eso las seis páginas de objetivo de D-70 caben: el Contrato fija cinco hubs de perfil y un hub de bajar de peso **sin nombrarlos**, así que renombrarlos no altera el conteo ni el alcance. Y por eso los programas de entrenamiento individual de D-77 son secciones y no páginas: el Contrato cuenta 47 clases individuales, y cualquier adición exige convenio modificatorio.
 
@@ -697,7 +697,7 @@ De ahí, cómo entra todo cambio a partir de esta decisión:
 **Alcanza a los capítulos aprobados y a los escritos pendientes de aprobación.** Un capítulo que todavía no existe se escribe completo, porque no hay nada que preservar.
 
 
-## 10 · La página y la capa personal
+## 11 · La página y la capa personal
 
 ### D-88 · Las 148 páginas se sirven estáticas e idénticas; lo que depende de la persona es una capa que se resuelve con el identificador de sesión
 
@@ -707,24 +707,24 @@ Cinco reglas de diseño se siguen de ahí:
 
 | | Regla |
 |---|---|
-| **1 · El máximo de botones** | El menú se diseña para el número máximo de botones que ese tipo de página puede llevar, y el espacio se reserva para ese máximo, de modo que el contenido no se mueva cuando el menú cambie de estado ni cuando llegue después que la página. El máximo lo fija el capítulo 2: cinco en clase, blog, entrenamiento individual y objetivo; cuatro en inicio, club, amenidad, actividades para menores y entrenamiento personal; tres en membresías |
+| **1 · El máximo de botones** | El menú se diseña para el número máximo de botones que ese tipo de página puede llevar, y el espacio se reserva para ese máximo, de modo que el contenido no se mueva cuando el menú cambie de estado ni cuando llegue después que la página. El máximo lo fija el capítulo 3: cinco en clase, blog, entrenamiento individual y objetivo; cuatro en inicio, club, amenidad, actividades para menores y entrenamiento personal; tres en membresías |
 | **2 · Sin identificador** | Quien llega sin identificador de sesión es, para el sitio, alguien sin cuestionario, y su menú viene escrito en la página: aparece con el contenido, sin espera. Quien llega con identificador recibe el menú de su estado, resuelto con ese identificador |
 | **3 · Si el script falla** | El sitio usa JavaScript en la aplicación, en las animaciones y en la capa personal. Si en una visita el script de la capa personal no llega o falla, la persona no ve una página sin menú: ve la página completa con el menú del estado sin cuestionario, cuyos cuatro botones son enlaces normales. La aplicación —cuestionario, experiencia y agenda— sí requiere que el script corra; su respaldo es BES |
 | **4 · Sin consultas adicionales** | La leyenda y «Explora» se resuelven con datos que la página ya trae —los clubes donde se imparte cada clase— y con el estado de la sesión |
-| **5 · Dos mundos, un solo paso** | El cuestionario, la experiencia y la agenda son pantallas de aplicación, no páginas estáticas. La precarga del capítulo 2.6 es el puente, y el diseño hace continuo el paso: mismo encabezado, misma tipografía, misma velocidad |
+| **5 · Dos mundos, un solo paso** | El cuestionario, la experiencia y la agenda son pantallas de aplicación, no páginas estáticas. La precarga del capítulo 3.6 es el puente, y el diseño hace continuo el paso: mismo encabezado, misma tipografía, misma velocidad |
 
 **La capa fija no limita animaciones ni transiciones.** Lo que las limita es el rendimiento que exige el posicionamiento —el contenido no se retrasa ni se mueve una vez pintado— y la accesibilidad.
 
-**Aterriza en:** capítulo 2.4; capítulo 7, qué guarda el servidor y qué pide el navegador; **los umbrales**, cuando tengan lugar en la estructura.
+**Aterriza en:** capítulo 3.4; capítulo 8, qué guarda el servidor y qué pide el navegador; **los umbrales**, cuando tengan lugar en la estructura.
 
 
-## 11 · La Arquitectura se alinea con el Mapa del Funnel
+## 12 · La Arquitectura se alinea con el Mapa del Funnel
 
 ### D-89 · Los tres estados se nombran, no se numeran
 
 El Contrato designa el **Mapa del Funnel** como «documento único de medición» del proyecto, y ese documento es dueño de los códigos `E##`. Sus etapas y los estados del menú contextual usaban los mismos códigos para cosas distintas:
 
-| Mapa del Funnel | Capítulo 2, antes |
+| Mapa del Funnel | Capítulo 3, antes |
 |---|---|
 | **E2** · Cuestionario iniciado, al responderse la primera pregunta | **E2** · Cuestionario completado, sin cita |
 | **E3** · Cuestionario completado, al generarse la experiencia ideal | **E3** · Cuestionario completado, con cita |
@@ -742,7 +742,7 @@ Y cada regla nombra la variable de la que depende: donde depende solo del cuesti
 
 **No cambia ninguna regla:** cambia cómo se llaman los tres estados. Lo que prescriben D-55, D-60, D-63, D-65, D-73 y D-88 queda intacto.
 
-**Aterriza en:** capítulos 2 y 7.
+**Aterriza en:** capítulos 3 y 8.
 
 ### D-90 · La Arquitectura nombra los dos identificadores de sesión
 
@@ -755,23 +755,23 @@ El Mapa del Funnel y la Integración de Datos nombran dos; la Arquitectura nombr
 
 **D-48 queda intacta:** lo que nunca llega al registro es el primero de los dos.
 
-**Aterriza en:** capítulos 2.8, 7.5.1 y 7.5.2.
+**Aterriza en:** capítulos 3.8, 8.5.1 y 8.5.2.
 
 ---
 
-## 12 · El orden y la redacción del documento
+## 13 · El orden y la redacción del documento
 
 ### D-91 · El capítulo del sitio se ordena por resultado, no por recorrido
 
-El capítulo 2 va en este orden, y en ningún otro:
+El capítulo 3 va en este orden, y en ningún otro:
 
 | | Apartado | Por qué va ahí |
 |---|---|---|
 | **1** | **Los once tipos de página, cada uno por el porqué existe y el problema que resuelve hoy** | Una página se describe después de saber para qué existe. Cada tipo declara la intención de búsqueda que atiende, y tenerla es el requisito para que el tipo exista |
-| **2** | **Lo que el sitio produce**: el cuestionario, la experiencia ideal, el brief y la visita agendada | El resultado se establece antes que el proceso. Quien lee el proceso ya sabe a dónde lleva |
-| **3** | **Cómo el contenido de las páginas y los menús contextuales llevan al cuestionario y a la experiencia ideal** | Los medios, una vez conocido el fin |
+| **3** | **Lo que el sitio produce**: el cuestionario, la experiencia ideal, el brief y la visita agendada | El resultado se establece antes que el proceso. Quien lee el proceso ya sabe a dónde lleva |
+| **4** | **Cómo el contenido de las páginas y los menús contextuales llevan al cuestionario y a la experiencia ideal** | Los medios, una vez conocido el fin |
 
-**Aterriza en:** capítulo 2, apartados 2.1 a 2.10.
+**Aterriza en:** capítulo 3, apartados 3.1 a 2.10.
 ### D-92 · El documento dice lo que el sistema hace
 
 **Describir el sistema por lo que no hace queda prohibido.** Una frase que enumera lo que no ocurre obliga a quien lee a deducir el hecho por descarte, y el texto deja de ser legible. La forma correcta es siempre la afirmativa: qué ocurre, con qué dato, en qué momento y quién lo ve.
@@ -787,11 +787,11 @@ El capítulo 2 va en este orden, y en ningún otro:
 
 ---
 
-## 13 · Cuatro precisiones sobre el sitio, la visita y la distancia
+## 14 · Cuatro precisiones sobre el sitio, la visita y la distancia
 
 ### D-93 · Una clase premium es una de las siete que Sports World prioriza
 
-**No hay clases con marca y clases sin marca.** Las siete páginas de clase premium corresponden a **las siete disciplinas que Sports World decide priorizar**, y lo único que distingue a esas páginas de las 47 de clase individual es **la redacción**: el tratamiento editorial del apartado 2.5.2. Mismo contenido mínimo, mismo menú, mismos botones propios.
+**No hay clases con marca y clases sin marca.** Las siete páginas de clase premium corresponden a **las siete disciplinas que Sports World decide priorizar**, y lo único que distingue a esas páginas de las 47 de clase individual es **la redacción**: el tratamiento editorial del apartado 3.5.2. Mismo contenido mínimo, mismo menú, mismos botones propios.
 
 | | |
 |---|---|
@@ -803,7 +803,7 @@ El capítulo 2 va en este orden, y en ningún otro:
 
 **Corregida el 21 de septiembre.** La primera redacción trataba «cuáles son las siete» como decisión de Sports World que condiciona el arranque. No lo es: el sistema no cambia de comportamiento según cuáles sean. Es un insumo de producción de contenido, y como tal queda registrado.
 
-**Aterriza en:** capítulo 2, apartados 2.1.2 y 2.5.2; anexo F, el inventario de las 148 páginas.
+**Aterriza en:** capítulo 3, apartados 3.1.2 y 3.5.2; anexo F, el inventario de las 148 páginas.
 
 ### D-94 · La fecha y la hora se eligen dentro del calendario de atención del club
 
@@ -815,7 +815,7 @@ La agenda ofrece **únicamente los días en que ese club abre y las horas en que
 | **Qué sigue haciendo el sistema** | Registrar lo que la persona pidió. **La disponibilidad la confirma el club**, que coordina la visita y responde con su acuse |
 | **Dónde estaba escrito** | El Contrato, Cláusula Tercera, apartado II: «el día y horario elegidos por el usuario, **dentro del horario de atención del club**, se envían por correo al club como requerimiento» |
 
-**Aterriza en:** capítulo 7, apartado 7.3.4; capítulo 9, cuando se escriba, para el club que se resuelve; capítulo 15, el traspaso.
+**Aterriza en:** capítulo 8, apartado 8.3.4; capítulo 10, cuando se escriba, para el club que se resuelve; capítulo 16, el traspaso.
 
 ### D-95 · Los dos recordatorios de WhatsApp son de la persona
 
@@ -830,7 +830,7 @@ Son dos destinatarios distintos y dos canales distintos, y esta bitácora lo fij
 
 **Con dos citas, cada una lleva sus dos recordatorios**, porque cada una tiene su club, su día y su hora (D-67 y D-68).
 
-**Aterriza en:** capítulo 7, apartado 7.5.3; capítulo 15, que especifica lo que recibe el club.
+**Aterriza en:** capítulo 8, apartado 8.5.3; capítulo 16, que especifica lo que recibe el club.
 
 ### D-96 · Los kilómetros acotan clubes; los minutos miden el trayecto y son lo que se muestra
 
@@ -838,20 +838,20 @@ Son dos medidas con dos oficios distintos, y cada una se usa donde le toca:
 
 | Medida | Qué hace | Dónde se aplica |
 |---|---|---|
-| **Kilómetros** | **Acotan conjuntos de clubes:** dicen cuáles entran en cada lista | **10 km**, entre qué clubes el sistema **resuelve** el club ideal, capítulo 9. **5 km**, cuáles ofrece **explorar** el menú, medidos desde el club ideal, apartado 2.6.2 |
-| **Minutos** | **Miden el trayecto** de una persona a un club, con tráfico, desde su origen | Es **la medida que se le muestra**: el club recomendado del apartado 3.2.1, la entrega de la ruta reducida del capítulo 5, y el brief |
+| **Kilómetros** | **Acotan conjuntos de clubes:** dicen cuáles entran en cada lista | **10 km**, entre qué clubes el sistema **resuelve** el club ideal, capítulo 10. **5 km**, cuáles ofrece **explorar** el menú, medidos desde el club ideal, apartado 3.6.2 |
+| **Minutos** | **Miden el trayecto** de una persona a un club, con tráfico, desde su origen | Es **la medida que se le muestra**: el club recomendado del apartado 4.2.1, la entrega de la ruta reducida del capítulo 6, y el brief |
 
-**El origen del trayecto** lo da el reactivo 16 —código postal o colonia—, que se pregunta aunque la persona haya aceptado un club en la precarga, porque de él dependen el tiempo de traslado y el interés en Multiclub (capítulo 4).
+**El origen del trayecto** lo da el reactivo 16 —código postal o colonia—, que se pregunta aunque la persona haya aceptado un club en la precarga, porque de él dependen el tiempo de traslado y el interés en Multiclub (capítulo 5).
 
 **D-82 queda intacta:** los dos radios en kilómetros siguen siendo dos cosas distintas y no se unifican.
 
-**Aterriza en:** apartados 2.6.2, 3.2.1 y 4.4; capítulos 5 y 9.
+**Aterriza en:** apartados 3.6.2, 4.2.1 y 5.4; capítulos 6 y 10.
 
 ### D-97 · Las personas y el recorrido del cliente quedan fuera del documento
 
 La referencia de mejores prácticas pide una sección de **personas y customer journey**. **No entra.**
 
-La Arquitectura especifica el comportamiento del sistema. Lo que el sistema necesita saber de quien llega **no sale de un arquetipo: sale del cuestionario.** CEI-01 es el único instrumento, y el capítulo 4 lo dice en sus propios términos: ninguna regla de este documento se dispara con un dato que no salga de ahí. Un retrato de arquetipos sería, aquí, descripción que ninguna regla consume.
+La Arquitectura especifica el comportamiento del sistema. Lo que el sistema necesita saber de quien llega **no sale de un arquetipo: sale del cuestionario.** CEI-01 es el único instrumento, y el capítulo 5 lo dice en sus propios términos: ninguna regla de este documento se dispara con un dato que no salga de ahí. Un retrato de arquetipos sería, aquí, descripción que ninguna regla consume.
 
 **Dónde viven:** en los documentos de estrategia del depósito, que sí los tienen. La Arquitectura no los reproduce ni los cita.
 
@@ -863,13 +863,13 @@ La estructura vigente tenía dieciséis capítulos en dos partes. Al contrastarl
 
 | № | Capítulo nuevo | Qué cierra |
 |---|---|---|
-| **17** | **Qué hace el sistema cuando algo sale mal** | Hoy está repartido en tres lugares —la pantalla de error, el guion que no corre, la fuente que no llega— y no hay una tabla que los reúna |
-| **18** | **Los umbrales** | Las cifras que el Contrato ya obliga: velocidad de aparición y de respuesta, estabilidad de la página, accesibilidad y rastreo de las 49 páginas de club |
-| **19** | **Criterios de aceptación** | Una condición comprobable por capítulo. Sin ellos, «entregado» es una opinión |
+| **18** | **Qué hace el sistema cuando algo sale mal** | Hoy está repartido en tres lugares —la pantalla de error, el guion que no corre, la fuente que no llega— y no hay una tabla que los reúna |
+| **19** | **Los umbrales** | Las cifras que el Contrato ya obliga: velocidad de aparición y de respuesta, estabilidad de la página, accesibilidad y rastreo de las 49 páginas de club |
+| **20** | **Criterios de aceptación** | Una condición comprobable por capítulo. Sin ellos, «entregado» es una opinión |
 
 **Los tres forman la tercera parte, «Qué se le exige al sistema».** Los umbrales van ahí y no a un anexo: una cifra que hay que cumplir y un criterio de aceptación son la misma cosa, y separarlas obligaría a leer dos piezas para saber si el trabajo está entregado.
 
-**La frontera entre partes se corrige.** D-49 la ponía después del capítulo 3, con lo que el capítulo 2 —que prescribe las 148 páginas y sus menús— quedaba bajo «no obliga a nada». La Parte I pasa a ser el capítulo 1 solo.
+**La frontera entre partes se corrige.** D-49 la ponía después del capítulo 4, con lo que el capítulo 3 —que prescribe las 148 páginas y sus menús— quedaba bajo «no obliga a nada». La Parte I pasa a ser el capítulo 1 solo.
 
 **Ningún capítulo escrito se mueve ni se renumera.** Los siete conservan su número y sus remisiones.
 
@@ -886,11 +886,11 @@ La referencia de mejores prácticas pide **calificar a cada prospecto con un pun
 | **Las pruebas A/B** | El Contrato no las pacta para este proyecto |
 | **Además** | Un puntaje solo vale si se calibra contra quién acabó comprando. Ese historial todavía no existe, así que fijar puntos hoy sería inventarlos |
 
-**Lo que sí queda dentro, y es un hueco real:** qué ocurre con quien contesta el cuestionario y **no** agenda. Hoy se le pone la marca «no quiso agendar visita» y el documento no dice nada más. Eso no es calificar: es qué se hace con un registro que el sistema ya crea, y se escribe en el capítulo 8.
+**Lo que sí queda dentro, y es un hueco real:** qué ocurre con quien contesta el cuestionario y **no** agenda. Hoy se le pone la marca «no quiso agendar visita» y el documento no dice nada más. Eso no es calificar: es qué se hace con un registro que el sistema ya crea, y se escribe en el capítulo 9.
 
 **No se descarta: se aplaza.** Eric lo deja abierto para más adelante, y la condición para retomarlo ya está dicha arriba: hace falta el historial que una lo que la persona contestó con si acabó comprando. Ese historial lo produce la conciliación por nombre, apellido, teléfono y club, así que existirá cuando el sistema lleve tiempo operando. Entonces los puntos se calibran con datos; hoy se inventarían.
 
-**Aterriza en:** la estructura, en «Qué queda fuera de este documento»; y el capítulo 8, con el subcapítulo nuevo.
+**Aterriza en:** la estructura, en «Qué queda fuera de este documento»; y el capítulo 9, con el subcapítulo nuevo.
 
 ### D-100 · Quien contesta y no agenda pasa a llamada directa del asesor
 
@@ -900,17 +900,17 @@ Hasta aquí, a esa persona se le ponía la marca «no quiso agendar visita» y e
 |---|---|
 | **Quién llama** | El asesor del club que el sistema le resolvió — el mismo que habría recibido su visita |
 | **Con qué llama** | Con su brief. La persona completó el cuestionario, así que su experiencia ideal existe y el brief se redacta igual. **El asesor no llama a ciegas** |
-| **Cuándo sale** | Al cerrar la sesión, en la misma escritura única del apartado 7.5.2 |
+| **Cuándo sale** | Al cerrar la sesión, en la misma escritura única del apartado 8.5.2 |
 | **Cómo llega marcado** | Como **llamada directa**, para que el asesor lo distinga de una visita agendada |
-| **Si no dejó contacto** | No se abre registro ni sale brief: no hay a quién llamar (apartado 7.3.3) |
+| **Si no dejó contacto** | No se abre registro ni sale brief: no hay a quién llamar (apartado 8.3.3) |
 
-**Corrige el apartado 7.5.2**, que enviaba brief solo cuando había cita y guardaba una experiencia ideal solo por cita. Sin cita se guarda la del club resuelto, que es la que el asesor necesita para llamar.
+**Corrige el apartado 8.5.2**, que enviaba brief solo cuando había cita y guardaba una experiencia ideal solo por cita. Sin cita se guarda la del club resuelto, que es la que el asesor necesita para llamar.
 
 **Obliga a corregir algo fuera de la Arquitectura.** Las responsabilidades del asesor viven en el Proceso Comercial: `SOP/SW/0102`, Captación por el sitio web, no contempla hoy la llamada directa a quien contestó y no agendó. **Queda como trabajo abierto en ese procedimiento**, y de ahí baja al Manual de Ventas `MV/SW/01` si cambia el guion de la llamada.
 
 **La asume Sports World en el arranque.** La regla del sistema queda escrita aquí, pero la llamada la hace una persona: que los asesores tomen ese trabajo, y en qué plazo, **es una de las decisiones de Sports World para el arranque del proyecto**, y así queda registrada en los puntos abiertos.
 
-**Aterriza en:** capítulo 7, apartado 7.5.2; capítulo 15, con subcapítulo propio; y fuera del documento, en `SOP/SW/0102`.
+**Aterriza en:** capítulo 8, apartado 8.5.2; capítulo 16, con subcapítulo propio; y fuera del documento, en `SOP/SW/0102`.
 
 ### D-101 · La prueba para saber si una frase en negativo se queda o se va
 
@@ -925,7 +925,7 @@ D-92 prohíbe describir el sistema por lo que no hace. La prueba para aplicarla 
 
 **Aterriza en:** `NORMA-DE-REDACCION.es.md`, regla 1.
 
-### D-102 · El cuestionario pasa al capítulo 4 y la elegibilidad al 5
+### D-102 · El cuestionario pasa al capítulo 5 y la elegibilidad al 5
 
 El orden anterior ponía primero **quién puede recorrer la experiencia** y después **el cuestionario**. Queda al revés: **el instrumento se define antes que las condiciones para usarlo.**
 
@@ -934,11 +934,11 @@ El orden anterior ponía primero **quién puede recorrer la experiencia** y desp
 | 4 · Quién puede recorrer la experiencia | **4 · El cuestionario: el único instrumento** |
 | 5 · El cuestionario: el único instrumento | **5 · Quién puede recorrer la experiencia** |
 
-Todo lo que el sistema personaliza sale del cuestionario, y los capítulos 2 y 3 ya lo citan antes de llegar a él. Definirlo primero deja al lector con el instrumento en la mano cuando llega a la compuerta de mayoría de edad, que es una condición de acceso a ese instrumento.
+Todo lo que el sistema personaliza sale del cuestionario, y los capítulos 3 y 4 ya lo citan antes de llegar a él. Definirlo primero deja al lector con el instrumento en la mano cuando llega a la compuerta de mayoría de edad, que es una condición de acceso a ese instrumento.
 
 **Qué se movió con el intercambio:** los dos archivos cambian de nombre, los apartados se renumeran —`4.1` a `4.9` para el cuestionario y `5.1` a `5.6` para la elegibilidad—, y las remisiones cruzadas se ajustan en los once archivos que las contienen. **Ningún texto cambia**: solo su número.
 
-**Aterriza en:** capítulos 4 y 5, y las remisiones de 2, 3, 7, 8, las páginas iniciales, la norma de redacción y esta bitácora.
+**Aterriza en:** capítulos 5 y 6, y las remisiones de 2, 3, 7, 8, las páginas iniciales, la norma de redacción y esta bitácora.
 
 
 
@@ -956,7 +956,7 @@ Todo lo que el sistema personaliza sale del cuestionario, y los capítulos 2 y 3
 
 | Punto | Qué falta |
 |---|---|
-| **Los umbrales** | Las cifras están verificadas contra el Contrato —**LCP < 2.5 s, INP < 200 ms, CLS < 0.1**, **WCAG 2.2 AA** y **49 de 49 páginas de club rastreables en SSR**— y su lugar ya está decidido: capítulo 18 (D-98). Falta escribir el capítulo |
+| **Los umbrales** | Las cifras están verificadas contra el Contrato —**LCP < 2.5 s, INP < 200 ms, CLS < 0.1**, **WCAG 2.2 AA** y **49 de 49 páginas de club rastreables en SSR**— y su lugar ya está decidido: capítulo 19 (D-98). Falta escribir el capítulo |
 | **Dos documentos se llaman CEI-01** | El del Anexo A del Manual del Proceso Comercial y el vigente. La etiqueta no distingue |
 | **Dos asistentes se llaman BES** | El de esta Arquitectura, que atiende prospectos, y el del archivo de configuración del depósito, que atiende al equipo del proyecto y declara expresamente que no atiende prospectos |
 | **De dónde sale el club sustituto** | Ver D-43 |
@@ -964,4 +964,4 @@ Todo lo que el sistema personaliza sale del cuestionario, y los capítulos 2 y 3
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
 | **Cuáles son las siete clases premium, y cuánto texto e imágenes llevan** | Insumos para escribir esas siete páginas y para el inventario del anexo F. **No condicionan la especificación**: el sistema se comporta igual con cualquiera de las 47 clases (D-93) |
 | **CEI-01 requiere dos ajustes** | El renglón de Clubes del control de lógica, y la declaración del bloque P0 |
-| **La base de experiencias ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 13 |
+| **La base de experiencias ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 14 |

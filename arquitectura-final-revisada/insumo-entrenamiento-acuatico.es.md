@@ -1,6 +1,6 @@
 # Insumo · El entrenamiento aeróbico individual en alberca
 
-**Qué es este archivo.** El material del que se escribirá el apartado de alberca del capítulo 10.
+**Qué es este archivo.** El material del que se escribirá el apartado de alberca del capítulo 11.
 
 Fija tres cosas que no cambian: la regla de prescripción, el método con el que se deriva cada programa y el contrato de la fuente que los mantiene. **Los nombres de los programas, sus duraciones y sus beneficios no se fijan aquí:** viven en la matriz de entrenamiento individual y cambian cuando la matriz cambia.
 
@@ -18,15 +18,15 @@ Fija tres cosas que no cambian: la regla de prescripción, el método con el que
 
 ---
 
-## 2 · El método: la derivación es indirecta y se declara
+## 3 · El método: la derivación es indirecta y se declara
 
 **No existe literatura que prescriba entrenamiento acuático por los seis objetivos del cuestionario.** La evidencia acuática mide otras cosas: pérdida de peso, capacidad cardiovascular, fuerza, dolor articular y función física. Así que cada programa se deriva en tres pasos, y **el documento declara el paso en que la cadena se vuelve indirecta.**
 
 | Paso | Qué establece | De dónde sale |
 |---|---|---|
 | **1** | Qué cualidad fisiológica produce ese objetivo | La correspondencia de objetivos que el proyecto ya usa para piso |
-| **2** | Si esa cualidad es entrenable en el agua, y con qué dosis | La evidencia acuática |
-| **3** | Qué modalidad acuática la entrena | Decisión del proyecto |
+| **3** | Si esa cualidad es entrenable en el agua, y con qué dosis | La evidencia acuática |
+| **4** | Qué modalidad acuática la entrena | Decisión del proyecto |
 
 **La fuerza de cada cadena se declara por programa**, con tres grados:
 
@@ -38,7 +38,7 @@ Esto es lo que impide que un programa sin respaldo se lea igual que uno respalda
 
 ---
 
-## 3 · El contrato de la fuente
+## 4 · El contrato de la fuente
 
 Los seis programas **no viven en este documento**: viven en la **matriz de entrenamiento individual**, junto a los de pesas y los de piso.
 
@@ -48,15 +48,15 @@ Los seis programas **no viven en este documento**: viven en la **matriz de entre
 | **Qué no debe entregar al sitio** | El protocolo técnico, el equipo, los nombres técnicos y las cautelas clínicas. Eso es referencia interna: el equipo y la carga los define el entrenador en la primera sesión |
 | **Quién la mantiene** | Sports World, con el profesional de salud que designe |
 | **Cadencia** | Se revisa cuando cambia el catálogo de clases o la oferta de amenidades, y al menos una vez al año |
-| **Qué pasa si no responde** | La regla general del capítulo 2: el plan se entrega con el último dato guardado y la bandera viaja al brief |
+| **Qué pasa si no responde** | La regla general del capítulo 3: el plan se entrega con el último dato guardado y la bandera viaja al brief |
 
-**La condición de club.** Esta modalidad exige alberca. Cuando el club resuelto no la tiene, el plan se arma en piso; el capítulo 9 especifica qué ocurre con la elección de club.
+**La condición de club.** Esta modalidad exige alberca. Cuando el club resuelto no la tiene, el plan se arma en piso; el capítulo 10 especifica qué ocurre con la elección de club.
 
 **La temperatura.** El agua de entrenamiento no es el agua de terapia. Para trabajo de intensidad, la literatura sitúa el óptimo alrededor de 32 °C: a esa temperatura el flujo sanguíneo cerebral durante el ejercicio es mayor que en piso, y a 38 °C ese beneficio se pierde. La asociación de ejercicio acuático recomienda de 28 a 30 °C para acondicionamiento. **La temperatura real de cada alberca es dato del club y viaja por la misma fuente que las amenidades.**
 
 ---
 
-## 4 · Estado preliminar de la matriz
+## 5 · Estado preliminar de la matriz
 
 Lo que sigue **es el contenido de hoy, no texto del documento.** Cambia cuando la matriz cambia.
 
@@ -97,7 +97,7 @@ El metaanálisis de dosis para fuerza en el agua da los únicos números de dosi
 
 ---
 
-## 5 · Lo que el sistema nunca propone en el agua
+## 6 · Lo que el sistema nunca propone en el agua
 
 **Ninguna pieza del sistema —ni la experiencia, ni el brief, ni BES— propone apnea, hiperventilación previa a la inmersión ni series de aguante de la respiración.** La pérdida de conocimiento por hipoxia cerebral durante la inmersión con la respiración contenida sigue típicamente a la hiperventilación previa, constituye la principal causa de ahogamiento entre nadadores con experiencia, y el riesgo sube cuando hay poco descanso entre intentos sucesivos. Ocurre sin aviso.
 
@@ -105,7 +105,7 @@ Es la decisión D-79, y alcanza a los tres canales. **Esta regla no es prelimina
 
 ---
 
-## 6 · De dónde sale cada cosa
+## 7 · De dónde sale cada cosa
 
 Ocho fuentes revisadas por pares o de institutos de salud, y una publicación comercial de entrenamiento, marcada como tal.
 
@@ -120,5 +120,5 @@ Ocho fuentes revisadas por pares o de institutos de salud, y una publicación co
 | **Metaanálisis bayesiano de dosis para fuerza**, *Frontiers* 2025 | **La escala de Borg como variable de dosis, y los cuatro rangos de dosis** |
 | **Metaanálisis de composición corporal y fuerza**, *Frontiers* 2025 | **El porcentaje de grasa que baja sin que baje la masa absoluta, y la fuerza agregada** |
 | Flujo sanguíneo cerebral y temperatura, *PMC10786737* | 32 °C frente a 38 °C durante el ejercicio |
-| *StatPearls*, hipoxia por inmersión | El fundamento del apartado 5 |
+| *StatPearls*, hipoxia por inmersión | El fundamento del apartado 6 |
 | Boletín de rendimiento deportivo · **publicación comercial** | Las 10 a 12 pulsaciones y el límite del cinturón de flotación en personas de mayor peso |

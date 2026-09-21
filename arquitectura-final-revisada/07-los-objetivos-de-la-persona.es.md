@@ -1,9 +1,9 @@
-# Capítulo 6 · Los objetivos de la persona
+# Capítulo 7 · Los objetivos de la persona
 
 La experiencia ideal se construye alrededor de los objetivos que la persona declara. Esos objetivos son **los que ofrecen dos reactivos del cuestionario**: cinco emocionales y seis funcionales. Once opciones, y todo lo que la persona quiere cabe en ellas.
 
 
-## 6.1 Dos ejes independientes
+## 7.1 Dos ejes independientes
 
 | Eje | Reactivo | Qué pregunta | Qué gobierna |
 |---|---|---|---|
@@ -12,7 +12,7 @@ La experiencia ideal se construye alrededor de los objetivos que la persona decl
 
 Los dos ejes son independientes y no se pisan. El emocional dice **por qué** está ahí; el funcional dice **qué** quiere que ocurra. La distinción no es de matiz: **el objetivo emocional no cambia ni el club, ni los bloques, ni las clases.** Solo cambia cómo se le cuenta.
 
-## 6.2 Los cinco objetivos emocionales
+## 7.2 Los cinco objetivos emocionales
 
 La persona elige **uno**.
 
@@ -26,7 +26,7 @@ La persona elige **uno**.
 
 Esta respuesta **no modifica la recomendación**. Fija el registro del texto, para que lo que la persona lea corresponda a la razón real por la que está ahí y no a una plantilla.
 
-## 6.3 Los seis objetivos funcionales
+## 7.3 Los seis objetivos funcionales
 
 La persona elige **uno o dos**.
 
@@ -41,11 +41,11 @@ La persona elige **uno o dos**.
 
 **Ninguno de los seis abre preguntas adicionales.** Elegir un objetivo no alarga el cuestionario ni activa una rama de reactivos propia.
 
-**Los seis se definieron contra la oferta mínima de clases por club**, de modo que todo club de la red tenga al menos una clase que sirva a cada uno. El capítulo 9 especifica qué se sigue de eso al elegir club.
+**Los seis se definieron contra la oferta mínima de clases por club**, de modo que todo club de la red tenga al menos una clase que sirva a cada uno. El capítulo 10 especifica qué se sigue de eso al elegir club.
 
-**Los seis tienen página propia en el sitio**, y se llaman ahí con estas mismas palabras: cinco en el nivel 07 y bajar de peso en el nivel 08. El apartado 2.1.1 lleva la tabla.
+**Los seis tienen página propia en el sitio**, y se llaman ahí con estas mismas palabras: cinco en el nivel 07 y bajar de peso en el nivel 08. El apartado 3.1.1 lleva la tabla.
 
-## 6.4 El objetivo principal y el secundario
+## 7.4 El objetivo principal y el secundario
 
 Cuando la persona elige dos, **el primero que elige es el objetivo principal**, y los dos no pesan lo mismo.
 
@@ -61,7 +61,7 @@ Cuando la persona elige dos, **el primero que elige es el objetivo principal**, 
 
 Esa asimetría es intencional. Dos objetivos con el mismo peso producirían un plan que atiende a los dos a medias; un principal y un secundario producen un plan con una dirección clara y una variación encima.
 
-## 6.5 Cuando la persona pide que se le recomiende la modalidad
+## 7.5 Cuando la persona pide que se le recomiende la modalidad
 
 El reactivo 6 permite responder «quiero que me recomienden». En ese caso **el objetivo principal decide la modalidad**:
 
@@ -71,6 +71,6 @@ El reactivo 6 permite responder «quiero que me recomienden». En ese caso **el 
 | Moverme mejor con más agilidad | En agua |
 | Los otros cuatro | En piso seco |
 
-**La regla sale de la matriz de clases**, que califica cada clase del catálogo frente a cada objetivo. Para esos dos objetivos, la oferta acuática de la red tiene clases calificadas como idóneas; para los otros cuatro, no las tiene en cantidad que justifique resolver en agua. El capítulo 13 especifica qué es la matriz de clases, quién la mantiene y con qué contrato.
+**La regla sale de la matriz de clases**, que califica cada clase del catálogo frente a cada objetivo. Para esos dos objetivos, la oferta acuática de la red tiene clases calificadas como idóneas; para los otros cuatro, no las tiene en cantidad que justifique resolver en agua. El capítulo 14 especifica qué es la matriz de clases, quién la mantiene y con qué contrato.
 
 Cuando el sistema resuelve la modalidad de esta forma, **se comporta exactamente igual que si la persona hubiera elegido «en la alberca»**, incluida la exigencia de la alberca como amenidad del club. A la persona no se le informa de la postergación: recibe su plan. Al asesor sí se le anota en el brief cuál modalidad decidió el sistema.

@@ -1,8 +1,8 @@
-# Capítulo 4 · El cuestionario: el único instrumento
+# Capítulo 5 · El cuestionario: el único instrumento
 
 Toda la personalización de la experiencia ideal sale de un solo instrumento: el **Cuestionario de Experiencia Ideal**. No hay una segunda fuente. Nada de lo que el sistema recomienda proviene de un dato que el cuestionario no haya recogido.
 
-## 4.1 Rol y propósito
+## 5.1 Rol y propósito
 
 El cuestionario tiene un trabajo y solo uno: **recoger lo necesario para construir la experiencia ideal de esa persona**, en alrededor de un minuto de su tiempo.
 
@@ -10,15 +10,15 @@ Tres reglas lo gobiernan, y no admiten excepción por canal:
 
 1. **Es el mismo en los tres canales.** Las preguntas, las opciones, las validaciones, las ramificaciones y los identificadores son idénticos en el sitio, en WhatsApp y en consola. BES no lo altera: lo aplica en conversación.
 2. **Es la única fuente de personalización.** Toda regla del sistema se dispara con un dato que sale de aquí.
-3. **No recoge información de salud.** Ni diagnósticos, ni lesiones, ni embarazo, ni tratamientos, ni medicamentos, ni cirugías, ni peso, estatura o medidas corporales. El apartado 4.7 explica por qué.
+3. **No recoge información de salud.** Ni diagnósticos, ni lesiones, ni embarazo, ni tratamientos, ni medicamentos, ni cirugías, ni peso, estatura o medidas corporales. El apartado 5.7 explica por qué.
 
-## 4.2 La precarga: lo que ya sabemos se confirma
+## 5.2 La precarga: lo que ya sabemos se confirma
 
 **A la persona no se le pregunta dos veces lo mismo.** Lo que el sistema ya sabe antes de que empiece el cuestionario no se le pregunta: se le confirma, en un solo bloque, antes del primer reactivo.
 
 Ese bloque se llama **P0 · Precarga**, y se declara dentro del instrumento. Se identifica por esa clave, se compone en cada sesión con el contexto de esa visita, y se resuelve antes del primer reactivo.
 
-### 4.2.1 De dónde sale lo que ya sabemos
+### 5.2.1 De dónde sale lo que ya sabemos
 
 | Canal | Conocimiento previo | Cuando no hay contexto |
 |---|---|---|
@@ -34,7 +34,7 @@ Ese bloque se llama **P0 · Precarga**, y se declara dentro del instrumento. Se 
 | Que llegó a la página de yoga de Polanco | Si escribió «yoga cerca de mí» o «clases de yoga Polanco» |
 | La ficha de la campaña, cuando viene de una | La consulta original, incluso en campaña |
 
-### 4.2.2 Las cuatro categorías y las dos formas
+### 5.2.2 Las cuatro categorías y las dos formas
 
 Solo cuatro cosas pueden precargarse, y cada una tiene una forma fija de preguntarse:
 
@@ -49,7 +49,7 @@ Solo cuatro cosas pueden precargarse, y cada una tiene una forma fija de pregunt
 
 Por eso una clase no lleva «o te recomendamos»: el sistema va a recomendar clases de cualquier forma, y ofrecerlo sería ofrecer lo que ya va a ocurrir. Y por eso un club sí la lleva: si no toma ese club, alguien tiene que elegir uno.
 
-### 4.2.3 Cómo se compone el bloque
+### 5.2.3 Cómo se compone el bloque
 
 **El bloque nunca ofrece algo que el sistema ya sabe que no puede entregar.** Antes de mostrarlo, cada punto candidato se verifica contra la instantánea del día. El que no se pueda cumplir no se muestra, y **no se menciona, no se explica y no deja rastro**.
 
@@ -66,7 +66,7 @@ Cuando el contexto revela varias páginas de la misma familia, producen **un sol
 
 **El bloque se compone una sola vez y se muestra una sola vez**, antes del primer reactivo y después de la compuerta de mayoría de edad. No se recompone con las respuestas que la persona dé dentro de él.
 
-### 4.2.4 Qué hace aceptar y qué hace rechazar
+### 5.2.4 Qué hace aceptar y qué hace rechazar
 
 | | Efecto |
 |---|---|
@@ -82,50 +82,50 @@ Aceptar un club apaga el resolver de club, no el reactivo 16: el código postal 
 | **Con club fijado** | La clase queda asegurada en su tercer bloque. No agrega requisito: el club ya estaba fijo y ya se verificó que la imparte |
 | **Sin club fijado** | **La clase se vuelve requisito del club.** El resolver solo considera clubes que la impartan. Si el más cercano no la imparte, ofrece el más cercano que sí, y muestra como alternativas los clubes más cercanos que no la tienen, cada uno con su leyenda |
 
-Ese segundo caso agrega **un quinto requisito** a los cuatro que el cuestionario fija, y es el único que no viene del cuestionario sino del contexto previo. El capítulo 9 especifica cómo entra en la elección de club y qué leyenda lleva la alternativa que no imparte esa clase.
+Ese segundo caso agrega **un quinto requisito** a los cuatro que el cuestionario fija, y es el único que no viene del cuestionario sino del contexto previo. El capítulo 10 especifica cómo entra en la elección de club y qué leyenda lleva la alternativa que no imparte esa clase.
 
-## 4.3 Cómo se compone el cuestionario
+## 5.3 Cómo se compone el cuestionario
 
 | Elemento | Cuántos | Cuándo se pregunta |
 |---|---|---|
-| **G0** · Compuerta de mayoría de edad | 1 | Siempre, antes que nada. El capítulo 5 la especifica |
-| **P0** · Precarga | 1 bloque | Cuando hay contexto previo. Apartado 4.2 |
+| **G0** · Compuerta de mayoría de edad | 1 | Siempre, antes que nada. El capítulo 6 la especifica |
+| **P0** · Precarga | 1 bloque | Cuando hay contexto previo. Apartado 5.2 |
 | **Reactivos base** | 15 | Siempre, en el mismo orden |
 | **Reactivos condicionales** | 3 | Solo si una respuesta previa los dispara |
 
 Una persona contesta, por lo tanto, **entre 16 y 19 preguntas**: la compuerta, los quince reactivos base y de cero a tres condicionales.
 
-## 4.4 Los quince reactivos base
+## 5.4 Los quince reactivos base
 
 | № | Qué pregunta | Qué determina |
 |---|---|---|
 | **1** | Cómo se llama | El saludo y la redacción de su experiencia. No pide apellido |
-| **2** | Cómo prefiere que se dirijan a ella | **La concordancia de las opciones y del texto**, en sus tres formas: masculina, femenina y neutral (apartado 2.6.4). Condiciona la opción prenatal del reactivo 14. Nunca se usa para asignar asesor ni para inferir nada |
-| **3** | Qué quiere sentir al salir del club | El tono con que se redacta su experiencia. No cambia el club |
-| **4** | Qué busca | Los bloques de entrenamiento, las clases por objetivo y el argumento principal |
-| **5** | Qué ritmo va con ella | Criterio de selección de clases, junto con el objetivo y el nivel. También viaja al brief |
-| **6** | Dónde prefiere entrenar | El modo de entrenamiento: piso seco, agua, o los dos |
-| **7** | En qué horario | Alerta para el asesor si las clases idóneas no coinciden. No descarta clubes ni entra al tiempo de traslado |
-| **8** | Qué días | Igual que el reactivo 7 |
-| **9** | Cuál es su nivel | El orden de las clases. Nunca funciona como diagnóstico |
-| **10** | Cuál describe mejor su experiencia reciente | El contexto comercial y la preparación del recorrido. No incluye opción para quien tiene membresía activa |
-| **12** | Si prefiere entrenar sin compañía o clases en grupo | Qué ocupa el tercer bloque. Dos opciones, sin tercera vía |
-| **13** | Con quién visitaría el club | La preparación de la visita, y activa la opción para menores del reactivo 14 |
-| **14** | Qué preferencia quiere que se priorice | Los requisitos que el club debe cumplir, y la matriz de contraindicaciones |
-| **15** | Si busca cerca del domicilio, de la oficina o de ambos | Su origen prioritario, y el interés en Multiclub cuando responde «ambos» |
-| **16** | Cuál es el código postal o la colonia de ese origen | Ubica el origen para recomendar club y calcular tiempos de traslado |
+| **3** | Cómo prefiere que se dirijan a ella | **La concordancia de las opciones y del texto**, en sus tres formas: masculina, femenina y neutral (apartado 3.6.4). Condiciona la opción prenatal del reactivo 14. Nunca se usa para asignar asesor ni para inferir nada |
+| **4** | Qué quiere sentir al salir del club | El tono con que se redacta su experiencia. No cambia el club |
+| **5** | Qué busca | Los bloques de entrenamiento, las clases por objetivo y el argumento principal |
+| **6** | Qué ritmo va con ella | Criterio de selección de clases, junto con el objetivo y el nivel. También viaja al brief |
+| **7** | Dónde prefiere entrenar | El modo de entrenamiento: piso seco, agua, o los dos |
+| **8** | En qué horario | Alerta para el asesor si las clases idóneas no coinciden. No descarta clubes ni entra al tiempo de traslado |
+| **9** | Qué días | Igual que el reactivo 7 |
+| **10** | Cuál es su nivel | El orden de las clases. Nunca funciona como diagnóstico |
+| **11** | Cuál describe mejor su experiencia reciente | El contexto comercial y la preparación del recorrido. No incluye opción para quien tiene membresía activa |
+| **13** | Si prefiere entrenar sin compañía o clases en grupo | Qué ocupa el tercer bloque. Dos opciones, sin tercera vía |
+| **14** | Con quién visitaría el club | La preparación de la visita, y activa la opción para menores del reactivo 14 |
+| **15** | Qué preferencia quiere que se priorice | Los requisitos que el club debe cumplir, y la matriz de contraindicaciones |
+| **16** | Si busca cerca del domicilio, de la oficina o de ambos | Su origen prioritario, y el interés en Multiclub cuando responde «ambos» |
+| **17** | Cuál es el código postal o la colonia de ese origen | Ubica el origen para recomendar club y calcular tiempos de traslado |
 
 El número 11 no aparece en esta lista porque es condicional.
 
-## 4.5 Los tres reactivos condicionales
+## 5.5 Los tres reactivos condicionales
 
 | № | Se pregunta cuando | Qué determina |
 |---|---|---|
 | **10a** | El reactivo 10 es «Vengo de otro gimnasio» o cualquiera de las dos opciones de regreso después de una pausa | El gimnasio actual, o el último al que perteneció. Contexto comercial y de atención. Nunca se usa para campañas contra una marca |
-| **11** | El reactivo 10 es alguna de las dos opciones de regreso después de una pausa | Cuánto duró la pausa. Ajusta la preparación de la visita, sin inferir estado físico |
+| **12** | El reactivo 10 es alguna de las dos opciones de regreso después de una pausa | Cuánto duró la pausa. Ajusta la preparación de la visita, sin inferir estado físico |
 | **15b** | El reactivo 15 es «ambos» | Cuál de los dos orígenes es el prioritario. El interés en Multiclub sigue activo sin capturar una segunda ubicación |
 
-## 4.6 Las dos preguntas que cambian la estructura
+## 5.6 Las dos preguntas que cambian la estructura
 
 Trece reactivos ajustan parámetros. Dos cambian la forma de la recomendación:
 
@@ -140,15 +140,15 @@ Trece reactivos ajustan parámetros. Dos cambian la forma de la recomendación:
 | Ambas | El catálogo se mantiene en piso seco, y el sistema **integra de forma proactiva** natación individual y clases acuáticas que sirvan al objetivo declarado. La alberca **no** se exige como amenidad |
 | Quiero que me recomienden | El sistema resuelve la modalidad según el objetivo principal |
 
-El capítulo 10 especifica cómo se compone el plan en cada modalidad.
+El capítulo 11 especifica cómo se compone el plan en cada modalidad.
 
-## 4.7 Cómo se comporta el cuestionario en pantalla
+## 5.7 Cómo se comporta el cuestionario en pantalla
 
 **A la persona no se le muestra nunca una opción que no le corresponde.** No se le presenta y después se le descarta: no aparece.
 
 > **Nada queda fijo hasta que toca «Siguiente».** El cuestionario **no avanza solo** al elegir una opción: la persona tiene que tocar «Siguiente» de forma expresa. Mientras siga en esa pantalla puede cambiar su respuesta las veces que quiera, sin costo, sin aviso y sin perder nada.
 
-### 4.7.1 Qué reactivos se preguntan y cuáles se resuelven solos
+### 5.7.1 Qué reactivos se preguntan y cuáles se resuelven solos
 
 Un reactivo condicional cuya condición no se cumple **no se muestra ni se envía.** No queda oculto con una respuesta guardada: sencillamente no existe para esa persona.
 
@@ -156,7 +156,7 @@ Un reactivo condicional cuya condición no se cumple **no se muestra ni se enví
 
 Y si vuelve a cambiar la respuesta de arriba de modo que el condicional aplique otra vez, **el reactivo reaparece con lo que ya había contestado**, en lugar de pedírselo de nuevo. Es la misma regla de siempre: lo que ya sabemos no se vuelve a preguntar.
 
-### 4.7.2 Opciones que solo aparecen cuando aplican
+### 5.7.2 Opciones que solo aparecen cuando aplican
 
 Dentro de un mismo reactivo, hay opciones que se muestran solo bajo su condición. En el reactivo de preferencias:
 
@@ -169,7 +169,7 @@ Dentro de un mismo reactivo, hay opciones que se muestran solo bajo su condició
 
 Por eso ese reactivo va después del de acompañamiento: necesita saber con quién visitaría el club para decidir qué opciones ofrecerle.
 
-### 4.7.3 Opciones que se apagan al llegar al límite
+### 5.7.3 Opciones que se apagan al llegar al límite
 
 El reactivo de objetivos permite elegir hasta dos, y la pantalla lo hace visible mientras la persona elige:
 
@@ -181,9 +181,9 @@ El reactivo de objetivos permite elegir hasta dos, y la pantalla lo hace visible
 
 **Mientras no toque «Siguiente», puede cambiar de objetivos con entera libertad.** Tocar una opción apagada no hace nada. Tocar una ya elegida la libera, y con eso vuelve a tener cupo para otra. Puede deshacer y rehacer su elección cuantas veces quiera: el límite de dos acota lo que puede llevarse, no cuántas veces puede cambiar de opinión.
 
-**El orden de selección se conserva y significa algo:** la primera que toca es su objetivo principal, y el capítulo 6 explica cuánto pesa esa diferencia. Para invertirlos, deselecciona los dos y vuelve a elegir en el orden que quiere.
+**El orden de selección se conserva y significa algo:** la primera que toca es su objetivo principal, y el capítulo 7 explica cuánto pesa esa diferencia. Para invertirlos, deselecciona los dos y vuelve a elegir en el orden que quiere.
 
-### 4.7.4 La concordancia con la forma de trato
+### 5.7.4 La concordancia con la forma de trato
 
 El primer reactivo que cambia la pantalla es el **reactivo 2**, donde la persona dice cómo prefiere que se dirijan a ella —masculino, femenino o lenguaje neutral—.
 
@@ -202,9 +202,9 @@ El primer reactivo que cambia la pantalla es el **reactivo 2**, donde la persona
 
 La forma neutral es **una frase que vale para cualquiera**, no una marca tipográfica. **Queda prohibida toda marca de inclusión** —arroba, equis, vocal entre paréntesis y doble terminación separada por barra—: no se escribe «solo/a» ni «amig@».
 
-La concordancia no se detiene en el cuestionario. **El mismo reactivo 2 gobierna el texto que el sistema redacta** —el saludo, el argumento de su plan y el encabezado de su brief—, de principio a fin. El capítulo 12 especifica cómo.
+La concordancia no se detiene en el cuestionario. **El mismo reactivo 2 gobierna el texto que el sistema redacta** —el saludo, el argumento de su plan y el encabezado de su brief—, de principio a fin. El capítulo 13 especifica cómo.
 
-## 4.8 El alcance del cuestionario
+## 5.8 El alcance del cuestionario
 
 El instrumento **no recaba condiciones médicas, embarazo o posparto, tratamientos, medicamentos, cirugías, peso, estatura, medidas corporales ni datos de personas menores de edad.**
 
@@ -214,11 +214,11 @@ La decisión no degrada la recomendación, porque **el sistema no necesita la co
 
 El mismo criterio rige el reactivo 13: pregunta por el interés en un servicio, nunca por el estado que lo motiva.
 
-La valoración de salud corresponde al profesional del club, en el momento del alta, con el consentimiento y el formato que ese acto sí permite. El capítulo 11 especifica cómo se aplica la matriz de contraindicaciones en los dos momentos.
+La valoración de salud corresponde al profesional del club, en el momento del alta, con el consentimiento y el formato que ese acto sí permite. El capítulo 12 especifica cómo se aplica la matriz de contraindicaciones en los dos momentos.
 
 **La experiencia ideal tampoco ofrece** acompañamiento nutricional, planes alimenticios, dietas ni recomendaciones de nutrición.
 
-## 4.9 Las señales que viajan al brief
+## 5.9 Las señales que viajan al brief
 
 Algunas respuestas no cambian el plan: cambian cómo el asesor conduce la conversación. El sistema las levanta y las pone en el brief.
 

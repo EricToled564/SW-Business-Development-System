@@ -1,12 +1,12 @@
-# Capítulo 8 · Datos de contacto y consentimiento
+# Capítulo 9 · Datos de contacto y consentimiento
 
 La experiencia ideal se construye con lo que la persona contesta. Para entregársela por correo, para que el club la espere y para que el asesor la llame, hacen falta además tres datos de contacto. Se piden en un solo momento, se escriben una sola vez, viven en un solo lugar y se entregan bajo un aviso.
 
-Todo lo que aquí se especifica ocurre después de la compuerta de mayoría de edad del capítulo 5: **quien llega a la captura de contacto confirmó ser mayor de edad.**
+Todo lo que aquí se especifica ocurre después de la compuerta de mayoría de edad del capítulo 6: **quien llega a la captura de contacto confirmó ser mayor de edad.**
 
-## 8.1 Cuándo se piden y cuáles son
+## 9.1 Cuándo se piden y cuáles son
 
-Los datos de contacto se piden **al terminar el cuestionario, en la fase 3 del recorrido**, mientras el sistema calcula la recomendación. El capítulo 7 especifica la secuencia.
+Los datos de contacto se piden **al terminar el cuestionario, en la fase 3 del recorrido**, mientras el sistema calcula la recomendación. El capítulo 8 especifica la secuencia.
 
 **El motivo que se le da a la persona es el uso real:** enviarle su experiencia ideal por correo. La espera del cálculo se ocupa con la captura, y la captura se justifica con algo que ella recibe.
 
@@ -32,24 +32,24 @@ Los datos de contacto se piden **al terminar el cuestionario, en la fase 3 del r
 | **Entrega los datos** | Su contacto vive en la sesión. Al cerrarse la sesión se escribe su registro y se le envía su experiencia por correo |
 | **Omite los datos** | Ve su experiencia completa en pantalla, con la misma información. Esa experiencia vive en la sesión y termina con ella |
 
-**Los datos de contacto son de quien contesta.** Cuando la persona declara que entrenará con sus hijos, lo que se recoge es el interés en las actividades para menores de 3 meses a 13 años, que es un servicio del club. El apartado 5.6 fija esa regla.
+**Los datos de contacto son de quien contesta.** Cuando la persona declara que entrenará con sus hijos, lo que se recoge es el interés en las actividades para menores de 3 meses a 13 años, que es un servicio del club. El apartado 6.6 fija esa regla.
 
-## 8.2 El envío de la experiencia por correo
+## 9.2 El envío de la experiencia por correo
 
 El correo sale **al cerrar la sesión, una sola vez, con la versión final de la experiencia**: la que resultó de todos los cambios que la persona hizo mientras navegaba.
 
 | | |
 |---|---|
-| **Qué contiene** | La experiencia ideal completa, la misma que vio en pantalla: su club, su plan y sus clases. El capítulo 3 especifica su contenido |
+| **Qué contiene** | La experiencia ideal completa, la misma que vio en pantalla: su club, su plan y sus clases. El capítulo 4 especifica su contenido |
 | **Cuándo sale** | Al cerrar la sesión, por salida o por diez minutos sin actividad |
 | **Cuántos salen** | Uno por cada experiencia vigente. Con dos citas en dos clubes salen dos, porque cada una resuelve clases distintas |
-| **Qué recibe el club** | El brief de esa persona, por correo, según el capítulo 15. La persona recibe su experiencia; el club recibe el brief |
+| **Qué recibe el club** | El brief de esa persona, por correo, según el capítulo 16. La persona recibe su experiencia; el club recibe el brief |
 
-**Los dos recordatorios de la visita viajan por WhatsApp y son de la persona**, 24 horas y 2 horas antes de su cita. El apartado 7.5.3 los especifica.
+**Los dos recordatorios de la visita viajan por WhatsApp y son de la persona**, 24 horas y 2 horas antes de su cita. El apartado 8.5.3 los especifica.
 
-## 8.3 Una sola escritura
+## 9.3 Una sola escritura
 
-**La escritura ocurre una sola vez, al cerrar la sesión.** Mientras la sesión vive, la persona cambia de club, cambia de clases, agenda y vuelve a agendar, y todo eso vive en la sesión. El apartado 7.5.2 fija la regla; aquí se especifica qué se escribe.
+**La escritura ocurre una sola vez, al cerrar la sesión.** Mientras la sesión vive, la persona cambia de club, cambia de clases, agenda y vuelve a agendar, y todo eso vive en la sesión. El apartado 8.5.2 fija la regla; aquí se especifica qué se escribe.
 
 **La operación de escritura es una sola y la comparten los tres canales** —el sitio, BES y la consola—, de modo que todo prospecto entra al mismo pipeline con el mismo formato.
 
@@ -68,7 +68,7 @@ El correo sale **al cerrar la sesión, una sola vez, con la versión final de la
 | `utm_source` · `utm_medium` · `utm_campaign` | Atribución de campaña, cuando viene de una |
 | `timestamp` | Fecha y hora de creación o de última actualización |
 
-El contrato campo por campo de esta y de las demás fuentes vive en el capítulo 13 y en el anexo E.
+El contrato campo por campo de esta y de las demás fuentes vive en el capítulo 14 y en el anexo E.
 
 ### La escritura es idempotente
 
@@ -92,7 +92,7 @@ La etapa **visita agendada** del Mapa del Funnel cuenta **cuando el sistema de c
 
 Estas cinco reglas vienen del Contrato, Cláusula Décima Octava, apartados II y III.
 
-## 8.4 La conciliación con la llave canónica y el reencuentro
+## 9.4 La conciliación con la llave canónica y el reencuentro
 
 Una misma persona puede volver otro día, rehacer el cuestionario y agendar. Para que siga siendo un solo prospecto, el sistema la reconoce con la **llave canónica del proyecto**:
 
@@ -115,9 +115,9 @@ Esa misma llave une la visita agendada con la visita realizada y con la membres�
 
 **La medición conserva todo lo ocurrido.** Las etapas de la espina del funnel cuentan eventos en el momento en que suceden: cuestionario iniciado cuenta al responderse la primera pregunta, y cuestionario completado cuenta al generarse la experiencia ideal. Rehacer el cuestionario produce un evento nuevo de cada uno, y los dos quedan registrados aunque la experiencia anterior se sustituya.
 
-**Quien contesta el cuestionario y elige no agendar** entra a las llamadas directas del asesor, con su brief. El capítulo 15 lo especifica.
+**Quien contesta el cuestionario y elige no agendar** entra a las llamadas directas del asesor, con su brief. El capítulo 16 lo especifica.
 
-## 8.5 El aviso simplificado y el aviso integral
+## 9.5 El aviso simplificado y el aviso integral
 
 La captura de contacto es el momento en que la persona entrega sus datos, y es donde se le dice para qué se usan.
 
