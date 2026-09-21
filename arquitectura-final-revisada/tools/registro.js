@@ -110,9 +110,12 @@ function revisa(archivo, ok) {
 
 function main() {
   const ok = permitidas();
-  // 00-estructura es el índice del documento: registra estado y decisiones por oficio.
+  // Dos archivos quedan fuera por oficio, y se nombran uno por uno para que la
+  // exclusión sea visible: 00-estructura es el índice y registra estado; las
+  // páginas iniciales explican el documento, que es justo su trabajo.
+  const FUERA = new Set(['00-estructura.es.md', '00-paginas-iniciales.es.md']);
   const archivos = fs.readdirSync(RAIZ)
-    .filter((f) => /^\d{2}-.*\.es\.md$/.test(f) && !f.startsWith('00-'))
+    .filter((f) => /^\d{2}-.*\.es\.md$/.test(f) && !FUERA.has(f))
     .sort();
 
   if (!archivos.length) {
