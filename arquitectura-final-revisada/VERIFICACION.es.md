@@ -26,7 +26,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `07-el-recorrido-en-pantalla.es.md` | 2,739 | `ea5e978b52f5c3bd754b9f11368cefaef78116c2455eb1f986c92987900c00f5` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
-| `NORMA-DE-REDACCION.es.md` | 2,697 | `6933c814fc5633348d07b50d2fc599dc8c6535970ebfe51dbd4e7e5450a82247` |
+| `NORMA-DE-REDACCION.es.md` | 2,741 | `514b12f560e90bf0dcbb243ce51195b39590b181bef60ec458a4d7d7282b6bbf` |
 | `README.es.md` | 355 | `693ba01c6a4d850b39685e7d1868e45b95241fa70097c6346405d401bdb5a439` |
 | `decisiones.es.md` | 12,062 | `9df578eb3c81ba6e6271f81a1731b67561606a518cb4b46be36851c8b119beee` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `872fce246a33f992c7a2004ffaa7b1b74cb4ce21ac5ab6a8c56402010a57b9b4` |
