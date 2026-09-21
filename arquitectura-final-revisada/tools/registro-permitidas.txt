@@ -1,0 +1,5 @@
+# Frases que coinciden con un patrón del verificador y que Eric autorizó a conservar.
+# Una frase exacta por línea. Una línea vacía o que empieza con # se ignora.
+#
+# Nada se agrega aquí sin que Eric lo apruebe: la lista es lo que separa un
+# falso positivo de una frase que sobrevivió sin revisarse.
