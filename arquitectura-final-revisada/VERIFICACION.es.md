@@ -9,12 +9,12 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
 | `00-estructura.es.md` | 1,277 | `481ba80d9e13f9aca96766f86746d57126a182da0a11a3c3c0a4fc6666d456bf` |
-| `01-por-que-existe-la-experiencia-ideal.es.md` | 1,467 | `2ef7a45fa747dd2bd2c47adb3c16a7c226b481deb5b68a097e5ea240d8da31e0` |
+| `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
 | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,064 | `4d08352980c17ef0ab5472a6a424666c4ff6d7e57246ed640a9816f648e21a70` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,623 | `5ada56daed8d240877de74dbdc994ee0581377bcaee12b5785b9031004de7f65` |
-| `04-quien-puede-recorrer-la-experiencia.es.md` | 928 | `6802767f64579771538deaf3fc20bb5c57b2d1ab007a140cba4ca731b6d4b473` |
-| `05-el-cuestionario.es.md` | 3,226 | `92e8cd45eadb3d92da670017d88b2235594a42bc33a2a8cb026d4941e3207c37` |
-| `06-los-objetivos-de-la-persona.es.md` | 849 | `601fba40ceb97a8816e6205c27955ba74782d250c73e349b63c2cc63d1dac8e7` |
+| `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
+| `05-el-cuestionario.es.md` | 3,226 | `38fa1d020edcb946e0b0c2aa3d98407152748225b5f8a66e7a815b3ea0767ba0` |
+| `06-los-objetivos-de-la-persona.es.md` | 852 | `44a155d6fed9f1d09f9431f15def3dcd6d4773957651d0feeedcaef4f01331e8` |
 | `07-el-recorrido-en-pantalla.es.md` | 2,352 | `eb33667af24ee5a541121d22fcacca88f7cc4f9dd1f2b8e4976ba5820798479b` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |

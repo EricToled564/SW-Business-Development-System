@@ -58,9 +58,9 @@ El patrón se repite con entrenamiento funcional, con alta intensidad, con artes
 
 Esa frase es la regla de la que se desprende todo lo demás. Antes de firmar, la persona ya sabe qué va a hacer, cuánto tiempo, en qué área, en qué clase y a qué hora.
 
-### 1.3.1 Los insumos del plan
+### 1.3.1 Lo que no es el producto
 
-El catálogo de clases, la lista de amenidades y la tabla de precios son **insumos del plan**: el material con el que se construye. Una pieza entrega el producto cuando describe el plan de esa persona: su club, sus bloques de entrenamiento, sus clases y sus horarios.
+Un catálogo de clases, una lista de amenidades y una tabla de precios **no son el producto: son insumos del plan.** Sirven para construirlo y no lo sustituyen. La diferencia es verificable con una sola pregunta: si un documento, una pantalla o una conversación describe el club en lugar del plan de esa persona, no está entregando el producto.
 
 ### 1.3.2 Los dos destinatarios
 
@@ -81,13 +81,13 @@ La experiencia ideal se entrega en los tres canales de captación del sistema, c
 2. **WhatsApp**, también asistido por BES.
 3. **La atención directa en el club**, donde el asesor la levanta en consola.
 
-BES es una variante de atención que vive dentro del sitio y dentro de WhatsApp.
+BES no es un canal: es una variante de atención que vive dentro del sitio y dentro de WhatsApp.
 
-Los tres canales aplican el mismo instrumento y las mismas reglas de negocio; lo que cambia es la superficie por la que se conversa.
+Este documento especifica el comportamiento de la experiencia ideal **en el canal del sitio web**. Los otros dos canales aplican el mismo instrumento y las mismas reglas de negocio; lo que cambia es la superficie por la que se conversa.
 
 ### 1.3.4 Qué es BES
 
-**BES es el asistente conversacional que atiende a la persona en nombre de Sports World.** Existe porque no todo el mundo quiere contestar un cuestionario en pantalla: hay quien prefiere que le pregunten.
+**BES es el asistente conversacional que atiende a la persona en nombre de Sports World.** Existe porque no todo el mundo quiere contestar un cuestionario en pantalla: hay quien prefiere que le pregunten. BES es un nombre propio y este documento no lo desarrolla.
 
 **Qué hace.** Aplica el mismo cuestionario, con los mismos reactivos, las mismas opciones y las mismas validaciones, en conversación. Entrega la misma experiencia ideal. Agenda la visita. Y después resuelve dudas sobre el plan que ya entregó.
 
