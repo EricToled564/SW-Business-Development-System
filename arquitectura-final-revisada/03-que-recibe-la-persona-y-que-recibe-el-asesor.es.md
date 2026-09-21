@@ -13,7 +13,7 @@ Cuando la persona termina el cuestionario, el sistema hace el cálculo completo 
 
 Que las dos digan lo mismo no depende de que alguien las mantenga alineadas: **salen del mismo cálculo y del mismo texto.** El capítulo 12 especifica cómo se produce ese texto y qué ocurre si la redacción automática falla.
 
-**Un cálculo por cita, no uno por persona.** Cuando alguien agenda en un segundo club, el sistema recalcula su experiencia completa para ese club con las respuestas que ya dio, y esa cita lleva **su propia experiencia y su propio brief**. No es una copia con el nombre cambiado: dos clubes distintos resuelven clases distintas, y el asesor de cada uno recibe lo que de verdad va a poder entregar. Al confirmarse el alta de la membresía prevalece la experiencia del club donde ocurrió, y las demás se eliminan. Es la decisión D-68, y el capítulo 7 especifica cuándo se escribe cada una.
+**Un cálculo por cita, no uno por persona.** Cuando alguien agenda en un segundo club, el sistema recalcula su experiencia completa para ese club con las respuestas que ya dio, y esa cita lleva **su propia experiencia y su propio brief**. Dos clubes distintos resuelven clases distintas, y el asesor de cada uno recibe lo que de verdad va a poder entregar. Al confirmarse el alta de la membresía prevalece la experiencia del club donde ocurrió, y las demás se eliminan. El capítulo 7 especifica cuándo se escribe cada una.
 
 Las dos entregas se presentan en **dos páginas separadas visualmente**. En pantalla, un separador marca dónde empieza la página 2. Al imprimir, el separador desaparece y la página 2 arranca en una hoja nueva.
 
@@ -46,7 +46,7 @@ Responde la segunda pregunta: qué voy a hacer ahí.
 
 ### 3.2.3 El plan se recompone cuando ella cambia algo
 
-La experiencia no es una tarjeta fija. **Cuando la persona cambia de club o cambia de clases, el plan se vuelve a calcular completo** contra el catálogo del club que quedó: los tres bloques, las clases, la modalidad, el tiempo de traslado. El capítulo 10 especifica qué se recalcula y en qué orden.
+**Cuando la persona cambia de club o cambia de clases, el plan se vuelve a calcular completo** contra el catálogo del club que quedó: los tres bloques, las clases, la modalidad, el tiempo de traslado. El capítulo 10 especifica qué se recalcula y en qué orden.
 
 Cambiar siempre está permitido, y cambiar nunca deja un hueco: si algo que tenía no existe en el club nuevo, se sustituye por lo equivalente para el mismo objetivo.
 
