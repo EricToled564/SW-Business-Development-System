@@ -2,7 +2,7 @@
 
 ## 7.1 La puerta de entrada: agendar una visita
 
-**Agendar una visita es el objetivo final del sitio completo y de la atención por WhatsApp.** No es una acción más entre otras: es la que todo lo demás sirve.
+**Agendar una visita es el objetivo final del sitio completo y de la atención por WhatsApp.**
 
 De ahí se sigue una regla que gobierna las 148 páginas:
 
@@ -116,11 +116,7 @@ Avanzar siempre se puede: cada fase tiene una acción que lleva a la siguiente. 
 
 ### 7.4.1 Por qué no se puede volver a contestar el cuestionario
 
-No es una limitación técnica: es una decisión, y tiene dos razones.
-
-**La primera.** El texto que la persona lee se redacta una sola vez. Reabrir las respuestas después de haber visto la recomendación obligaría a volver a redactarlo, o a dejar en pantalla un texto que ya no corresponde a lo que contestó.
-
-**La segunda, que pesa más.** El trato con la persona es simple: contesta, y recibe una recomendación. Reabrir las respuestas convierte la recomendación en algo que se puede ajustar hasta que dé el resultado que se quería, y con eso pierde su autoridad.
+El trato con la persona es simple: contesta, y recibe una recomendación. Reabrir las respuestas convierte la recomendación en algo que se puede ajustar hasta que dé el resultado que se quería, y con eso pierde su autoridad.
 
 **Cambiar de club o de clases es distinto y sí está permitido siempre.** Eso no reabre el cuestionario: recompone el plan contra el catálogo del club que quedó, como especifica el capítulo 10.
 
