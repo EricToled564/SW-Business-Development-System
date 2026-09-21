@@ -166,6 +166,19 @@ De la regla se sigue algo que evita un problema entero: **no salen correos de ca
 
 El registro del prospecto, en cambio, sigue siendo uno solo, conciliado con la llave canónica. El capítulo 8 especifica la conciliación y el capítulo 13 el contrato de esa base.
 
+### 7.5.3 Los dos recordatorios de la visita
+
+Escrita la cita, la persona recibe **dos recordatorios por WhatsApp**: uno **24 horas antes** de su visita y otro **2 horas antes**.
+
+| | |
+|---|---|
+| **De quién son** | De la persona. Le recuerdan su visita agendada: su club, el día y la hora |
+| **Por dónde llegan** | Por WhatsApp, al teléfono que entregó en la fase 3, y los envía BES |
+| **Qué recibe el club** | El brief de esa cita, por correo, como especifica la tabla del apartado 7.5.2. Son dos destinatarios distintos y dos canales distintos: la persona por WhatsApp, el club por correo |
+| **Con dos citas** | Cada cita lleva sus dos recordatorios, porque cada una tiene su club, su día y su hora |
+
+**Aterrizan en el Contrato**, Cláusula Tercera, apartado II: dos mensajes recordatorios por WhatsApp, 24 horas y 2 horas antes de la visita solicitada.
+
 ## 7.6 El paso a BES, en cualquier momento
 
 La persona puede llamar a BES en cualquier pantalla del recorrido. No hay un punto donde deje de estar disponible.

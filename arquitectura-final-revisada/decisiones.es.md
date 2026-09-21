@@ -814,6 +814,21 @@ La agenda ofrece **únicamente los días en que ese club abre y las horas en que
 
 **Aterriza en:** capítulo 7, apartado 7.3.4; capítulo 9, cuando se escriba, para el club que se resuelve; capítulo 15, el traspaso.
 
+### D-95 · Los dos recordatorios de WhatsApp son de la persona
+
+Los **2 mensajes por WhatsApp** que el Contrato compromete —24 horas y 2 horas antes de la visita— **van a la persona**, y sirven para recordarle su visita agendada.
+
+| Destinatario | Canal | Qué recibe |
+|---|---|---|
+| **La persona** | WhatsApp, al teléfono que entregó en la fase 3 | Los dos recordatorios de su visita: su club, el día y la hora |
+| **El club** | Correo | El brief de esa cita, antes de la visita |
+
+Son dos destinatarios distintos y dos canales distintos, y esta bitácora lo fija porque la Arquitectura no lo decía y se prestaba a leerlos como avisos al club.
+
+**Con dos citas, cada una lleva sus dos recordatorios**, porque cada una tiene su club, su día y su hora (D-67 y D-68).
+
+**Aterriza en:** capítulo 7, apartado 7.5.3; capítulo 15, que especifica lo que recibe el club.
+
 
 
 ---
