@@ -81,13 +81,13 @@ La experiencia ideal se entrega en los tres canales de captación del sistema, c
 2. **WhatsApp**, también asistido por BES.
 3. **La atención directa en el club**, donde el asesor la levanta en consola.
 
-BES no es un canal: es una variante de atención que vive dentro del sitio y dentro de WhatsApp.
+BES es una variante de atención que vive dentro del sitio y dentro de WhatsApp. Los canales son los tres de arriba.
 
-Este documento especifica el comportamiento de la experiencia ideal **en el canal del sitio web**. Los otros dos canales aplican el mismo instrumento y las mismas reglas de negocio; lo que cambia es la superficie por la que se conversa.
+La experiencia ideal se especifica aquí **para el canal del sitio web**. Los otros dos aplican el mismo instrumento y las mismas reglas de negocio; lo que cambia es la superficie por la que se conversa.
 
 ### 1.3.4 Qué es BES
 
-**BES es el asistente conversacional que atiende a la persona en nombre de Sports World.** Existe porque no todo el mundo quiere contestar un cuestionario en pantalla: hay quien prefiere que le pregunten. BES es un nombre propio y este documento no lo desarrolla.
+**BES es el asistente conversacional que atiende a la persona en nombre de Sports World.** Existe porque no todo el mundo quiere contestar un cuestionario en pantalla: hay quien prefiere que le pregunten.
 
 **Qué hace.** Aplica el mismo cuestionario, con los mismos reactivos, las mismas opciones y las mismas validaciones, en conversación. Entrega la misma experiencia ideal. Agenda la visita. Y después resuelve dudas sobre el plan que ya entregó.
 
