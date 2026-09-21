@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-96. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-99. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -843,6 +843,49 @@ Son dos medidas con dos oficios distintos, y cada una se usa donde le toca:
 **D-82 queda intacta:** los dos radios en kilómetros siguen siendo dos cosas distintas y no se unifican.
 
 **Aterriza en:** apartados 2.6.2, 3.2.1 y 5.4; capítulos 4 y 9.
+
+### D-97 · Las personas y el recorrido del cliente quedan fuera del documento
+
+La referencia de mejores prácticas pide una sección de **personas y customer journey**. **No entra.**
+
+La Arquitectura especifica el comportamiento del sistema. Lo que el sistema necesita saber de quien llega **no sale de un arquetipo: sale del cuestionario.** CEI-01 es el único instrumento, y el capítulo 5 lo dice en sus propios términos: ninguna regla de este documento se dispara con un dato que no salga de ahí. Un retrato de arquetipos sería, aquí, descripción que ninguna regla consume.
+
+**Dónde viven:** en los documentos de estrategia del depósito, que sí los tienen. La Arquitectura no los reproduce ni los cita.
+
+**Aterriza en:** la estructura del documento. Cierra el punto 5 de la comparación contra la referencia.
+
+### D-98 · El documento pasa a diecinueve capítulos en tres partes
+
+La estructura vigente tenía dieciséis capítulos en dos partes. Al contrastarla contra la referencia de mejores prácticas quedaron a la vista tres huecos, y los tres son del mismo tipo: **lo que se le exige al sistema no estaba escrito en ninguna parte.**
+
+| № | Capítulo nuevo | Qué cierra |
+|---|---|---|
+| **17** | **Qué hace el sistema cuando algo sale mal** | Hoy está repartido en tres lugares —la pantalla de error, el guion que no corre, la fuente que no llega— y no hay una tabla que los reúna |
+| **18** | **Los umbrales** | Las cifras que el Contrato ya obliga: velocidad de aparición y de respuesta, estabilidad de la página, accesibilidad y rastreo de las 49 páginas de club |
+| **19** | **Criterios de aceptación** | Una condición comprobable por capítulo. Sin ellos, «entregado» es una opinión |
+
+**Los tres forman la tercera parte, «Qué se le exige al sistema».** Los umbrales van ahí y no a un anexo: una cifra que hay que cumplir y un criterio de aceptación son la misma cosa, y separarlas obligaría a leer dos piezas para saber si el trabajo está entregado.
+
+**La frontera entre partes se corrige.** D-49 la ponía después del capítulo 3, con lo que el capítulo 2 —que prescribe las 148 páginas y sus menús— quedaba bajo «no obliga a nada». La Parte I pasa a ser el capítulo 1 solo.
+
+**Ningún capítulo escrito se mueve ni se renumera.** Los siete conservan su número y sus remisiones.
+
+**Aterriza en:** `00-estructura.es.md`, reescrito completo.
+
+### D-99 · Calificación de prospectos y pruebas A/B quedan fuera de este proyecto
+
+La referencia de mejores prácticas pide **calificar a cada prospecto con un puntaje** y **enrutarlo según ese puntaje**, y pide marcar componentes para **pruebas A/B**. Ninguna de las dos entra.
+
+| | Por qué |
+|---|---|
+| **El puntaje** | Sirve para ordenar una fila cuando no se puede atender a todos. Este sistema no entrega una fila de prospectos por calificar: entrega **una visita agendada, con club, día y hora**. Quien agendó ya es el caso más caliente que existe, y a qué club va lo decide la geografía, no un puntaje |
+| **El enrutamiento** | El único enrutamiento que el Contrato pacta es la escalación de BES a una persona, y pertenece al **Proyecto B**, que se contrata por Addendum aparte |
+| **Las pruebas A/B** | El Contrato no las pacta para este proyecto |
+| **Además** | Un puntaje solo vale si se calibra contra quién acabó comprando. Ese historial todavía no existe, así que fijar puntos hoy sería inventarlos |
+
+**Lo que sí queda dentro, y es un hueco real:** qué ocurre con quien contesta el cuestionario y **no** agenda. Hoy se le pone la marca «no quiso agendar visita» y el documento no dice nada más. Eso no es calificar: es qué se hace con un registro que el sistema ya crea, y se escribe en el capítulo 8.
+
+**Aterriza en:** la estructura, en «Qué queda fuera de este documento»; y el capítulo 8, con el subcapítulo nuevo.
 
 
 

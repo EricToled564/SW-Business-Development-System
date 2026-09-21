@@ -16,7 +16,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
-| `00-estructura.es.md` | 1,277 | `481ba80d9e13f9aca96766f86746d57126a182da0a11a3c3c0a4fc6666d456bf` |
+| `00-estructura.es.md` | 1,767 | `7b9f776c384efbe72c737ac4a4505b81771050b6897714a1da43dbeb5e4c5385` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
 | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,289 | `5f5eba1942a6eaabae0460aaae3ac8e3a5dbe728fd87f457ac3eabcdc33732b1` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,625 | `7865c5b4bf01dec6e0460389bcf3ddd11ed85fef37918c8b25772d1a121a4fc1` |
@@ -27,7 +27,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `README.es.md` | 355 | `693ba01c6a4d850b39685e7d1868e45b95241fa70097c6346405d401bdb5a439` |
-| `decisiones.es.md` | 10,799 | `d6ba5d585eb22bb2223e526db50192ca53d2cbf6e240ecf0b115560c3d363fdf` |
+| `decisiones.es.md` | 11,461 | `61729a63c98714f13b875a1a1af635b7fddd67d11c21aa45f8987b61c1fd5f7b` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `872fce246a33f992c7a2004ffaa7b1b74cb4ce21ac5ab6a8c56402010a57b9b4` |
 
 ## Estado de aprobación
