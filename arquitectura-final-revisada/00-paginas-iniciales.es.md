@@ -56,7 +56,7 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 
 | Parte | Capítulos | Qué hace |
 |---|---|---|
-| **I · Por qué existe** | 1 | Explica el problema y el producto. No obliga a nada |
+| **I · Por qué existe** | 1 | Explica el problema y el producto. Es narrativa |
 | **II · Qué hace el sistema** | 2 a 16 | Prescribe comportamiento |
 | **III · Qué se le exige** | 17 a 19 | Fija lo que se comprueba antes de dar el trabajo por entregado |
 
@@ -71,31 +71,37 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 
 ---
 
-## 0.3 La cadena del proyecto
+## 0.3 El argumento
 
-### Por qué existe
+Sports World tiene la mejor infraestructura de fitness de México: 49 clubes, 47 disciplinas, albercas, vapor, sauna, entrenadores. Está construida, está pagada y está operando todos los días. Lo que falta es la traducción de esa infraestructura al momento en que alguien decide dónde entrenar. Hoy **ninguna de las 49 páginas de club es legible para un buscador**, y de las palabras clave con que se busca la categoría, Sports World cubre **31.1%**.
 
-Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente. El producto existe —entrenadores, alberca, vapor, sauna—; para quien busca, no. **El proyecto no agrega infraestructura: la vuelve legible, y con eso, vendible.**
+La distancia entre esas dos frases es el proyecto entero.
 
-### Para quién
+Se ve con más claridad en el punto donde más cuesta. «Gimnasio para perder peso» es la intención de búsqueda de mayor volumen de la industria fitness en México: **932,300 consultas al mes**. Sports World aparece en el **0.02%** —dos palabras clave de cada diez mil, todas fuera del top 50—. Mientras tanto, **75.2% de los adultos mexicanos vive con sobrepeso u obesidad** y bajar de peso es la razón número uno por la que alguien se inscribe a un gimnasio. Todo lo necesario para atender a esa persona ya está dentro del club: entrenadores, evaluación, alberca, vapor, sauna. Lo que falta es la página que lo diga. Por eso bajar de peso tiene página propia, con tratamiento de contenido de salud firmado por un médico con cédula vigente.
 
-| Destinatario | Qué recibe | Para qué |
-|---|---|---|
-| **La persona que busca** | Su experiencia ideal: el plan de entrenamiento conectado con sus objetivos, desde el día uno | Decidir con algo suyo en la mano, en vez de comparar precios |
-| **La persona que atiende** | El brief de cierre: quién viene, qué quiere y cómo se conduce la visita | Cerrar con evidencia, no con intuición |
+**El terreno está libre.** Sports World ya lidera en presencia orgánica —17,400 palabras clave contra 12,300 de Smart Fit, 5,600 de Sport City y 1,900 de Anytime Fitness—, y aun así cubre un tercio del mercado que se busca sin escribir la marca. Ningún competidor ha capitalizado las categorías donde vive la demanda: bajar de peso, yoga, funcional, artes marciales. Quien las tome primero se las queda, y Sports World llega a esa carrera con más activos que nadie.
 
-### Qué debe lograr
+**Tomarlas exige algo más que páginas.** Una búsqueda atendida entrega un visitante; lo que convierte a ese visitante en socio es lo que ocurre entre el clic y la firma. Ahí el sistema hace una sola cosa, y la hace bien: **le pide un minuto a la persona** —de 16 a 19 preguntas, las mismas en el sitio, en WhatsApp y en la recepción del club— y le devuelve **su experiencia ideal**: el plan de entrenamiento que le corresponde, con su club, sus bloques y sus clases, armado desde lo que dijo que quiere lograr. Del mismo cálculo, con esas mismas respuestas, sale **el brief** con el que el asesor conduce la visita.
 
-| Indicador | Hoy | Meta |
-|---|---|---|
-| Páginas de club que un buscador puede leer | 0 de 49 | **49 de 49** |
-| Etapas comprometidas del funnel | — | **Tráfico → visita agendada → visita realizada → membresía nueva** |
-| Duración del cuestionario | — | **Un minuto**, entre 16 y 19 preguntas |
-| Páginas del sitio | — | **148**, en once tipos |
+**La persona recibe un plan. El asesor recibe evidencia. Es el mismo documento leído desde los dos lados**, y esa simetría es lo que convierte un rediseño en un sistema: el cliente lo recibe como su experiencia, el asesor como su brief, y la Academia entrena a los 200 asesores en ese mismo método.
 
-### Cómo lo logra
+**De ahí sale la defensa del precio.** El terreno del precio bajo ya tiene dueños, y la objeción de tarifa aparece en el **100% de las entrevistas de campo con asesores**. Mientras la conversación empiece en el precio, Sports World juega en la cancha del otro y responde con promoción. Este sistema mueve el punto de partida: la persona llega a la visita con un plan propio en la mano, hecho con sus objetivos, y el asesor abre con ese plan. La comparación deja de ser cuota contra cuota y pasa a ser plan contra catálogo. **El descuento deja de hacer falta porque ya hubo un argumento mejor.**
 
-Un mismo concepto atraviesa el sistema de punta a punta. **El cuestionario es el único instrumento**, idéntico en los tres canales. De él sale la experiencia ideal, que la persona recibe como su plan y quien atiende recibe como brief. La visita agendada es el resultado que el sitio persigue en sus 148 páginas.
+Sobre esa base, las 148 páginas del sitio dejan de ser un catálogo y pasan a ser 148 puertas de entrada, cada una construida para una intención de búsqueda documentada, todas con la misma salida: **la visita agendada.**
+
+**La ambición es explícita:** el mejor sistema de captación y conversión digital para fitness en México, construido para sostener la comparación con cualquier operador del mundo. Lo que lo hace comparable es que todo se mide —del clic a la cancelación— y que cada compromiso trae la herramienta que lo comprueba:
+
+| Lo que se compromete | Hoy | Al lanzamiento | Se verifica con |
+|---|---|---|---|
+| Clubes legibles para un buscador | 0 de 49 | **49 de 49** | Google Search Console |
+| Datos estructurados por club | 0 | **49** | Google Rich Results Test |
+| Enlaces rotos | 136 | **0** | Semrush |
+| Velocidad, respuesta y estabilidad | Fuera de umbral | **2.5 s · 200 ms · 0.1** | PageSpeed Insights |
+| Cobertura de palabras clave de categoría | 31.1% | **55–65%**, a doce meses | Semrush |
+
+Y el funnel completo, de punta a punta: **tráfico → visita agendada → visita realizada → membresía nueva.**
+
+**Lo que cambia para el negocio es dónde se apoya la venta.** Hoy se apoya en el oficio de quien atiende y en la promoción que lo respalda. A partir de aquí, cada visita llega con un plan escrito, cada plan sale de lo que la persona contestó, y cada peso invertido en tráfico se puede seguir hasta la membresía que produjo.
 
 ---
 
@@ -206,44 +212,3 @@ Un mismo concepto atraviesa el sistema de punta a punta. **El cuestionario es el
 | Los cuatro modos del selector de club | Varios cumplen · Uno cumple · Cumple más lejos · Lo más cercano a tu objetivo |
 
 **Las etapas del funnel llevan códigos `E##` y viven en el Mapa del Funnel**, que es su documento.
-
----
-
-## 0.7 Resumen en una página
-
-**Sports World tiene la mejor infraestructura de fitness de México y la peor traducción de esa infraestructura a la decisión del cliente.** 49 clubes, 47 disciplinas, albercas, vapor, sauna, entrenadores: todo eso existe y ya está pagado. Para quien lo busca, todavía no. Hoy **ninguna de las 49 páginas de club es legible para un buscador**, y la cobertura de las palabras clave con que se busca la categoría está en **31.1%**.
-
-**La demanda más grande del mercado está tocando otra puerta.** «Gimnasio para perder peso» es la intención de mayor volumen de la industria fitness en México: **932,300 búsquedas al mes**. Sports World aparece en el **0.02%** de ellas —2 de cada 10,000 palabras clave, todas fuera del top 50—. Y el contexto lo vuelve estructural: **75.2% de los adultos mexicanos vive con sobrepeso u obesidad** (ENSANUT 2020–2023), y bajar de peso es el objetivo número uno por el que alguien se inscribe a un gimnasio. El producto para atenderlo ya está dentro del club —entrenadores, evaluación, alberca, vapor, sauna—; **la página que lo diga es lo que falta**, y por eso «Bajar de peso» tiene página propia, con tratamiento de contenido de salud firmado por un médico con cédula vigente.
-
-**Y se puede ganar, porque nadie lo ha tomado.** Sports World ya lidera en presencia orgánica:
-
-| | Palabras clave orgánicas |
-|---|---|
-| **Sports World** | **17,400** |
-| Smart Fit | 12,300 |
-| Sport City | 5,600 |
-| Anytime Fitness | 1,900 |
-
-Lidera, y aun así cubre solo 31% del mercado sin marca. **Ningún competidor ha capitalizado las categorías fuertes de la demanda** —bajar de peso, yoga, funcional, artes marciales—. El primero que las tome se las queda.
-
-**Lo que se construye es un sistema de ventas, no un sitio.** Un prospecto entrega **un minuto** —de 16 a 19 preguntas, las mismas en el sitio, en WhatsApp y en la recepción del club— y recibe su **experiencia ideal**: el plan de entrenamiento que le corresponde, con su club, sus bloques y sus clases, armado desde lo que dijo que quiere lograr. **Del mismo cálculo, con esas mismas respuestas, sale el brief** con el que el asesor conduce la visita.
-
-**La persona recibe un plan. El asesor recibe evidencia. Es el mismo documento, leído desde los dos lados.**
-
-**Aquí es donde se sostiene el premium.** El terreno del precio bajo ya tiene dueños, y la objeción de precio aparece en **el 100% de las entrevistas de campo con asesores**. Mientras la conversación empiece en la tarifa, Sports World compite en el terreno del otro y responde con promoción. Este sistema mueve el punto de partida: **la persona llega a la visita con un plan propio en la mano, hecho con sus objetivos**, y el asesor abre con ese plan. La comparación deja de ser cuota contra cuota y pasa a ser plan contra catálogo. **El descuento deja de ser el argumento porque ya hubo uno mejor.**
-
-Eso es lo que convierte un rediseño en un sistema: **un solo concepto atraviesa la operación de punta a punta.** El cliente lo recibe como su experiencia, el asesor como su brief, y la Academia entrena a los 200 asesores en ese mismo método. Las 148 páginas dejan de ser un catálogo y pasan a ser 148 puertas de entrada, cada una construida para una intención de búsqueda documentada, y todas con la misma salida: **la visita agendada.**
-
-**La ambición es explícita:** el mejor sistema de captación y conversión digital para fitness en México, construido para sostener la comparación con cualquier operador del mundo. Lo que lo hace comparable es que **todo se mide, del clic a la cancelación**, y que cada compromiso trae la herramienta con la que se comprueba:
-
-| Lo que se compromete | Hoy | Al lanzamiento |
-|---|---|---|
-| Clubes legibles para un buscador | 0 de 49 | **49 de 49** |
-| Datos estructurados por club | 0 | **49** |
-| Enlaces rotos | 136 | **0** |
-| Velocidad, respuesta y estabilidad | Fuera de umbral | **2.5 s · 200 ms · 0.1** |
-| Cobertura de palabras clave de categoría | 31.1% | **55–65%**, a doce meses |
-
-Y el funnel completo: **tráfico → visita agendada → visita realizada → membresía nueva.**
-
-**Lo que cambia para el negocio** es dónde se apoya la venta. Hoy se apoya en el oficio de quien atiende y en la promoción que lo respalda. A partir de aquí, cada visita llega con un plan escrito, cada plan sale de lo que la persona contestó, y cada peso invertido en tráfico se puede seguir hasta la membresía que produjo.
