@@ -43,7 +43,7 @@ Los tipos 07, Objetivo, y 08, Bajar de peso, suman seis páginas. Cada una corre
 | Capacidad cardiovascular | Mejorar mi capacidad cardiovascular |
 | Moverse mejor con más agilidad | Moverme mejor con más agilidad |
 
-La correspondencia es uno a uno y usa el mismo nombre en la página, en el cuestionario, en el menú, en la **matriz de clases** —la tabla que califica cada clase del catálogo frente a cada objetivo; capítulo 11— y en la experiencia ideal. Con dos vocabularios, cada pantalla tendría que traducir entre ellos, y en esa traducción se pierden las correspondencias.
+La correspondencia es uno a uno y usa el mismo nombre en la página, en el cuestionario, en el menú, en la **matriz de clases** —la tabla que califica cada clase del catálogo frente a cada objetivo; capítulo 11— y en la experiencia ideal.
 
 Bajar de peso conserva página propia, con firma médica y tratamiento de contenido de salud, por dos razones: es la intención de búsqueda de mayor volumen de la categoría y es la única de las seis que los buscadores clasifican como contenido sensible.
 
@@ -77,11 +77,11 @@ De esa regla se derivan las tres formas del contenido:
 | **Objetivo** | **Todas las clases del sistema que entregan ese objetivo**, no solo las del club de la persona. Al tocar una, lleva a su página | Días ni horarios: dependen del club |
 | **Clase** | **Los clubes donde se imparte.** Al tocar un club, ahí se ven los días y los horarios de esa clase en ese club | Días ni horarios propios |
 
-**Los horarios se publican en un solo lugar: la página del club.** Cada club tiene su propia cuadrícula de horarios; una clase que se imparte en treinta clubes tiene treinta horarios distintos, y publicarlos en la página de la clase obligaría a la persona a buscar el suyo en una tabla que no le corresponde.
+**Los horarios se publican en un solo lugar: la página del club.** Cada club tiene su propia cuadrícula de horarios; una clase que se imparte en treinta clubes tiene treinta horarios distintos.
 
-**La lista de clases de un objetivo no se recorta al catálogo del club de la persona.** Recortarla le impediría saber qué gana si cambia de club. Lo que distingue las clases que su club tiene de las que no tiene es la leyenda de disponibilidad del apartado 2.4.7, no la ausencia.
+**La lista de clases de un objetivo no se recorta al catálogo del club de la persona.** Lo que distingue las clases que su club tiene de las que no tiene es la leyenda de disponibilidad del apartado 2.4.7.
 
-**Las amenidades se mencionan dentro del objetivo**, en la explicación de cómo ese club ayuda a alcanzarlo: la alberca se nombra cuando el objetivo se entrena en agua, no como renglón de un inventario.
+**Las amenidades se mencionan dentro del objetivo**, en la explicación de cómo ese club ayuda a alcanzarlo: la alberca se nombra cuando el objetivo se entrena en agua.
 
 ### 2.2.2 Lo que llevan todas las páginas
 
@@ -126,11 +126,11 @@ Su menú contextual es el de cualquier otra página: no lleva botones propios.
 
 **Los datos que cambian todos los días no se escriben en la página: se toman del sistema de clientes de Sports World**, el CRM en el que se registran clubes, clases, horarios, planes y prospectos. Horarios de atención, datos de contacto, catálogo de clases, horarios de cada clase, planes, precios, descuentos y promociones vienen de ahí; el gestor de contenidos no los edita.
 
-Este documento **nombra la fuente y el contrato que cumple; no congela el dato.** Una lista de clases escrita aquí quedaría desactualizada con el primer cambio del catálogo. El capítulo 13 especifica el contrato de cada fuente.
+El capítulo 13 especifica el contrato de cada fuente.
 
 **Si el sistema de clientes no responde, la página sigue con el último dato guardado y a la persona no se le pide nada.** No se le pide que confirme por teléfono, no se le muestra un hueco y no se le inventa un horario: el proceso continúa y ella recibe su experiencia.
 
-**El aviso va al asesor comercial del club.** El **brief** —el documento que el asesor recibe antes de la visita, con la experiencia de la persona; capítulo 3— lleva una bandera que dice **con qué dato desactualizado se construyó la experiencia y cuál era**, para que el asesor lo verifique antes de la visita. Es la regla general del sistema: la falla se resuelve sin cargarle trabajo a la persona y sin decirle algo falso, y se avisa al asesor.
+**El aviso va al asesor comercial del club.** El **brief** —el documento que el asesor recibe antes de la visita, con la experiencia de la persona; capítulo 3— lleva una bandera que dice **con qué dato desactualizado se construyó la experiencia y cuál era**, para que el asesor lo verifique antes de la visita.
 
 La versión publicada de esos datos es la del **corte diario de las 06:00**, hora de la Ciudad de México: cada día a esa hora el sitio toma del sistema de clientes lo registrado hasta las 05:59, y esa es la versión que se publica hasta el corte siguiente. Existe una sincronización manual inmediata para casos excepcionales, como una promoción.
 
@@ -165,7 +165,7 @@ La página abre esa diferencia con contenido concreto; el cuestionario la cierra
 
 ### 2.3.2 Por qué el contenido debe ser concreto
 
-Una página que dice «instalaciones de primer nivel» no le da a la persona nada que pueda querer para sí misma. Una página que dice **qué objetivos se entrenan ahí, con qué clases, a qué hora y con qué nivel de intensidad** la deja a una sola pregunta del cuestionario: qué le corresponde a ella de todo eso.
+Una página que dice **qué objetivos se entrenan ahí, con qué clases, a qué hora y con qué nivel de intensidad** la deja a una sola pregunta del cuestionario: qué le corresponde a ella de todo eso.
 
 De ahí se derivan cuatro exigencias del contenido mínimo:
 
@@ -203,7 +203,7 @@ Los tres últimos son **rutas paralelas**: la persona elige la que prefiera y ni
 
 ### 2.4.2 El menú contextual se deriva, no se enumera
 
-El **menú contextual** es el conjunto de botones dentro del cuerpo de la página. **No se especifica página por página, porque así no habría manera de comprobar que todos los casos están cubiertos.** Se especifica como una **regla de decisión por botón, evaluada sobre cinco variables**:
+El **menú contextual** es el conjunto de botones dentro del cuerpo de la página. **No se especifica página por página.** Se especifica como una **regla de decisión por botón, evaluada sobre cinco variables**:
 
 | Variable | Valores posibles |
 |---|---|
@@ -215,7 +215,7 @@ El **menú contextual** es el conjunto de botones dentro del cuerpo de la págin
 
 El **club ideal** es el club que el sistema resuelve para la persona a partir de sus respuestas; el capítulo 9 especifica cómo. Solo existe con el cuestionario completado.
 
-**Una combinación de las dos primeras variables no existe:** sin cuestionario no puede haber cita, porque agendar exige haberlo completado. Con eso, las dos primeras variables se reducen a **tres estados**, que el documento usa como abreviatura:
+**Una combinación de las dos primeras variables no existe:** sin cuestionario no puede haber cita, porque agendar exige haberlo completado. Con eso, las dos primeras variables se reducen a **tres estados**:
 
 | Estado | Cuestionario | Cita |
 |---|---|---|
@@ -254,7 +254,7 @@ Una **ranura** es una posición del menú contextual que existe en todas las pá
 
 **El radio de esta jerarquía es 5 km**, y el orden va siempre de lo cercano a lo lejano. Es el radio con el que la persona **explora** otros clubes; el radio con el que el sistema **resuelve** su club ideal es distinto y lo fija el capítulo 9.
 
-**Ninguna opción de la jerarquía se muestra vacía.** En una ciudad con un solo club, la opción de la ciudad no aparece, porque no tendría qué mostrar; el sistema no le comunica a la persona lo que no hay.
+**Ninguna opción de la jerarquía se muestra vacía.** En una ciudad con un solo club, la opción de la ciudad no aparece: el sistema no le comunica a la persona lo que no hay.
 
 **Antes del cuestionario no hay geografía que resolver**, porque sin club ideal no hay punto desde el cual medir. Quien está viendo la página de Polanco pero tiene resuelto Satélite ve la zona de Satélite, **porque ahí es donde va a entrenar.**
 
@@ -276,7 +276,7 @@ La Zona Metropolitana del Valle de México concentra **32 de los 49 clubes**; el
 | **E1 y E2** | **Agenda tu visita** |
 | **E3** | **Tu visita agendada** — abre su cita, para verla, cambiarla o cancelarla |
 
-**Está en todas las páginas y en todos los estados.** A quien ya tiene cita no se le ofrece agendar otra vez desde el cuerpo de la página; el botón cambia de etiqueta en vez de desaparecer.
+**Está en todas las páginas y en todos los estados.**
 
 ### 2.4.5 Los botones propios de cada tipo de página
 
@@ -288,7 +288,7 @@ Se suman a las tres ranuras, siempre después de ellas.
 | **Conoce las clases ideales para *[el objetivo de la página]*** | **Solo en las seis páginas de objetivo**, en los tres estados | Todas las clases del sistema que entregan ese objetivo, en toda la red. En E2 y E3, con la leyenda del apartado 2.4.7 |
 | **Explora *[el otro objetivo elegido]*** | En **E2 y E3**, en la página de un objetivo que la persona eligió, cuando eligió dos | La lleva a la página de su otro objetivo. En la página de un objetivo que no eligió no aparece: a los suyos vuelve por «Volver a tu experiencia ideal» o por el menú superior |
 | **Conoce los programas de *[nombre de la modalidad]*** | En las tres páginas de entrenamiento individual, en los tres estados | Los seis objetivos, cada uno con su programa de esa modalidad |
-| **Tu rutina individual** | En las tres páginas de entrenamiento individual, en **E2 y E3** | La parte individual de su experiencia: los bloques 01 y 02 del capítulo 3, el entrenamiento que la persona hace sin clase. **Para todas las personas**: esos bloques no son exclusivos de quien pidió entrenar sin compañía |
+| **Tu rutina individual** | En las tres páginas de entrenamiento individual, en **E2 y E3** | La parte individual de su experiencia: los bloques 01 y 02 del capítulo 3, el entrenamiento que la persona hace sin clase. **Para todas las personas** |
 | **Otras clases similares** | En las páginas de clase, en los tres estados | Las clases agrupadas por nivel de intensidad y por beneficios parecidos a la que está viendo |
 | **Otros artículos similares** | En las páginas del blog, en los tres estados | Los artículos relacionados con el que está leyendo |
 
@@ -315,7 +315,7 @@ Es la **única excepción** a la regla del capítulo 3 que prohíbe comunicarle 
 
 ### 2.4.8 Los tres botones que abren el cuestionario, y las preguntas de contexto
 
-**Encuentra tu club ideal, ¿Cuál es tu objetivo? y Diseña tu experiencia abren el mismo cuestionario.** No son tres instrumentos: son tres accesos al mismo. «Agenda tu visita» es el cuarto, y el capítulo 7 lo especifica.
+**Encuentra tu club ideal, ¿Cuál es tu objetivo? y Diseña tu experiencia abren el mismo cuestionario.** «Agenda tu visita» es el cuarto, y el capítulo 7 lo especifica.
 
 Los cuatro empiezan igual: **por las preguntas de contexto de la página desde la que se tocó el botón**, no por el primer reactivo. Una **pregunta de contexto** confirma lo que la página ya revela de la persona antes de que el cuestionario lo pregunte. Es parte de la **precarga**, la información que la página entrega al cuestionario para que este la confirme en lugar de preguntarla; el apartado 2.6 la presenta y el capítulo 5 la especifica.
 
@@ -333,7 +333,7 @@ El capítulo 5 especifica el bloque completo.
 
 ### 2.4.9 La página es la misma para todos; el menú es la capa personal
 
-Cada una de las 148 páginas se genera con el corte diario de las 06:00 —y con la sincronización manual para promociones— y se sirve idéntica a todas las personas, desde caché. **Nada del contenido varía por persona.** Lo que sí depende de ella —el menú contextual, la leyenda del apartado 2.4.7, «Explora…», «Tu visita agendada» y el comportamiento de «Agenda tu visita» del encabezado cuando ya hay cita— es la **capa personal**: se resuelve con el **identificador de sesión** —el código aleatorio con el que el sitio relaciona entre sí las páginas que la persona visita; capítulo 7— y se monta sobre la página. Con qué técnica se resuelve —en el servidor, en la red de distribución o en el navegador— lo decide quien construye; este apartado fija lo que la persona ve.
+Cada una de las 148 páginas se genera con el corte diario de las 06:00 —y con la sincronización manual para promociones— y se sirve idéntica a todas las personas, desde caché. **Nada del contenido varía por persona.** Lo que sí depende de ella —el menú contextual, la leyenda del apartado 2.4.7, «Explora…», «Tu visita agendada» y el comportamiento de «Agenda tu visita» del encabezado cuando ya hay cita— es la **capa personal**: se resuelve con el **identificador de sesión** —el código aleatorio con el que el sitio relaciona entre sí las páginas que la persona visita; capítulo 7— y se monta sobre la página. Con qué técnica se resuelve —en el servidor, en la red de distribución o en el navegador— lo decide quien construye.
 
 Cinco reglas de diseño se derivan de ahí:
 
@@ -345,13 +345,13 @@ Cinco reglas de diseño se derivan de ahí:
 | **4 · Sin consultas adicionales** | La leyenda y «Explora» se resuelven con datos que la página ya trae —los clubes donde se imparte cada clase— y con el estado de la sesión |
 | **5 · Dos entornos, un solo paso** | El cuestionario, la experiencia y la agenda son pantallas de aplicación, no páginas estáticas. La precarga del apartado 2.6 es el puente entre los dos entornos, y el diseño hace continuo el paso: mismo encabezado, misma tipografía, misma velocidad |
 
-**La capa fija no limita animaciones ni transiciones.** Lo que las limita es el rendimiento que exige el posicionamiento en buscadores —el contenido no se retrasa ni se mueve una vez pintado— y la accesibilidad. Es la decisión D-88.
+**La capa fija no limita animaciones ni transiciones.** Lo que las limita es el rendimiento que exige el posicionamiento en buscadores —el contenido no se retrasa ni se mueve una vez pintado— y la accesibilidad.
 
 ---
 
 ## 2.5 Los menús, uno por uno
 
-Las reglas del apartado 2.4 se aplican a **los once tipos de página por los tres estados: treinta y tres escenarios.** Las tres páginas de entrenamiento individual pertenecen al tipo 05, pero llevan otros botones, y por eso van en una fila aparte. El contenido de cada celda **no se escribió a mano: resulta de aplicar las reglas**, en el orden que fija el apartado 2.4.3.
+Las reglas del apartado 2.4 se aplican a **los once tipos de página por los tres estados: treinta y tres escenarios.** Las tres páginas de entrenamiento individual pertenecen al tipo 05, pero llevan otros botones, y por eso van en una fila aparte. El orden de los botones en cada celda es el que fija el apartado 2.4.3.
 
 Donde dice *[el objetivo de la página]* va el nombre del objetivo de esa página. Donde dice *[otro objetivo]*, el otro objetivo que la persona eligió; ese botón aparece solo cuando eligió dos y la página es la de uno de ellos.
 
@@ -370,7 +370,7 @@ Donde dice *[el objetivo de la página]* va el nombre del objetivo de esa págin
 | **Membresías** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita | Igual que E2, con **Tu visita agendada** |
 | **Blog** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Otros artículos similares** · ¿Cuál es tu objetivo? | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · **Otros artículos similares** | Igual que E2, con **Tu visita agendada** |
 
-**Las celdas de E3 son idénticas a las de E2 salvo en la tercera ranura.** Esa identidad es la comprobación de que la regla está bien planteada: **la cita solo cambia la ranura de la visita.**
+**Las celdas de E3 son idénticas a las de E2 salvo en la tercera ranura: la cita solo cambia la ranura de la visita.**
 
 ### 2.5.1 Cuántos botones lleva cada página
 
@@ -383,11 +383,11 @@ Donde dice *[el objetivo de la página]* va el nombre del objetivo de esa págin
 | Membresías | **3** | **3** | **3** |
 | Blog | 5 | 4 | 4 |
 
-**De tres a cinco botones.** El menú no es una plantilla: es lo que esa página, en ese estado, debe ofrecerle a esa persona.
+**De tres a cinco botones.**
 
 ### 2.5.2 Por qué membresías es el menú más corto
 
-Es el único tipo de página **sin botón de objetivo en ningún estado**, tampoco antes del cuestionario. Quien está en membresías compara precio y condiciones; una pregunta de objetivo la sacaría de lo que vino a hacer, y en esa misma página ya hay dos botones que abren el cuestionario. Si quiere su plan, la ranura de la experiencia se lo entrega completo.
+Es el único tipo de página **sin botón de objetivo en ningún estado**, tampoco antes del cuestionario. Quien está en membresías compara precio y condiciones, y en esa misma página ya hay dos botones que abren el cuestionario. Si quiere su plan, la ranura de la experiencia se lo entrega completo.
 
 Las demás páginas sin objetivo propio sí llevan «¿Cuál es tu objetivo?» antes del cuestionario, el blog incluido: un artículo casi siempre trata de un objetivo, y la pregunta llega cuando la persona está pensando en él. **Con el cuestionario contestado, esas páginas quedan también en tres botones; el blog y la clase, en cuatro, con el suyo.** Las clases ideales solo se ven en las páginas de objetivo, y a las suyas la persona vuelve por su experiencia ideal o por el menú superior.
 
@@ -434,9 +434,7 @@ Los diez primeros tipos de página responden a **«qué hay»**: el club, la cla
 
 Dos reglas lo gobiernan:
 
-1. **Ningún artículo duplica una página de objetivo.** Un artículo que describe lo que ya describe esa página compite con ella en lugar de alimentarla.
+1. **Ningún artículo duplica una página de objetivo.**
 2. **Cada artículo enlaza, dentro de su texto, al objetivo del que trata y a las clases y clubes que menciona.** Los enlaces son contenido, no botones del menú: aparecen en el párrafo donde la persona está leyendo sobre el tema.
-
-Así el tipo 11 alimenta a los diez anteriores en lugar de existir aparte.
 
 Los artículos que tratan temas de salud se escriben con el mismo tratamiento que la página de bajar de peso: **firma de especialista con cédula profesional a la vista y aviso de salud.** Describen cómo se adapta el entrenamiento y remiten a la valoración del asesor y del profesional de salud. **Ninguno prescribe intensidades ni diagnostica.**
