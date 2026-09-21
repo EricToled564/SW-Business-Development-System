@@ -62,7 +62,7 @@ Si vuelve a abrir el panel de otros clubes, ahí siguen las banderas. Ese panel 
 
 Nunca se le comunica una carencia como resultado. No aparece «no encontramos», no aparece «ningún club cercano tiene», no aparece una nota que le diga que su club no alcanza. Lo que el sistema no puede entregar, no lo nombra: entrega lo que sí tiene, completo.
 
-**La regla alcanza a su experiencia, no a las superficies para elegir.** El panel de otros clubes lleva sus banderas mientras la persona elige, como dice el apartado 4.2.4, y las listas de clases por objetivo del sitio llevan la leyenda «Disponible en tu club» o «No disponible en tu club». En los dos casos no se le está señalando un hueco de su plan: se le está dando lo que necesita para decidir si le conviene moverse. El apartado 3.4.7 lo especifica.
+**La regla alcanza a su experiencia, no a las superficies para elegir.** El panel de otros clubes lleva sus banderas mientras la persona elige, como dice el apartado 4.2.4, y las listas de clases por objetivo del sitio llevan la leyenda «Disponible en tu club» o «No disponible en tu club». En los dos casos no se le está señalando un hueco de su plan: se le está dando lo que necesita para decidir si le conviene moverse. El apartado 3.6.6 lo especifica.
 
 ## 4.3 BES, disponible en todo momento
 

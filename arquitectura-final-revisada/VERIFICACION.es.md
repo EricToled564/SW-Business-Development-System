@@ -21,7 +21,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
 | `02-como-se-pierde-hoy.es.md` | 1,211 | `82ac54ecb2870dd50e4ad8fd4efcf7fe01c31ccc826e78b5d2ed1a56e96bf9b0` |
 | `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,283 | `ef9243b507c5c47704198e90a8893e676ff370f890e8c6bb0192b983b085a61a` |
-| `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,626 | `759ee123c5ca2bab56e59a28daf7de7be04ff0ec0ab47f733f0f7fe6bbc5ee40` |
+| `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,626 | `05718ca9a2362a9c6a1764a582e4e7ff4f1c36c7941e26765dd91dc805d47b68` |
 | `05-el-cuestionario.es.md` | 3,227 | `0a49b94834d4181b7fe1d60a5676c41289a7ac8f65b694fdfbf35e77f5412f21` |
 | `06-quien-puede-recorrer-la-experiencia.es.md` | 930 | `2bcfc08c7c2f6b5b71608f82445b6fe085f25dc8434b54dd16acd59251668a91` |
 | `07-los-objetivos-de-la-persona.es.md` | 841 | `ef0410dbead792e6c60b3aaae2bd942129ef41b77b0f4898945f4df9475d0c56` |
@@ -29,7 +29,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `09-datos-de-contacto-y-consentimiento.es.md` | 1,572 | `5b85987be33574f9a7aac81e96e1848103fca9991776316f954785e161207f50` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
-| `NORMA-DE-REDACCION.es.md` | 3,029 | `85bd4323fe9bea1f6bb441ec96d41eeadb616dddba1936884b1ddd8eef8a5ad1` |
+| `NORMA-DE-REDACCION.es.md` | 3,171 | `36643024cd0e6a26695f347515ecf972659701c8cd8ad99c3d519a914b23f0f6` |
 | `README.es.md` | 378 | `37e3650427640d67910f4afbe647ce3fb2de14303b9f5844f2bda92d20064d03` |
 | `decisiones.es.md` | 12,375 | `0605e8949d55fafeff2f8b1c25b8a326974f67da373769520f03cc39352e4bcb` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `ff81fdc7bcc25ae7c9477f4b670f1e633ec3262fda0df237b41b0d92daa1d471` |

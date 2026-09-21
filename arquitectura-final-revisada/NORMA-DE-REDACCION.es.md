@@ -44,10 +44,17 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 
 | Sección | Qué lleva | Cómo se escribe |
 |---|---|---|
-| **1.1** La brecha entre lo que Sports World tiene y lo que se alcanza a ver | La infraestructura que existe y la parte de ella que llega a la decisión del cliente, con cifras | Relato |
-| **1.2** Las tres formas en que se pierde a una persona lista para inscribirse | Los tres problemas del mercado: el objetivo que no se atiende, la disciplina que no se ve, el laberinto de clics | Relato |
-| **1.3** Qué es el producto | La Experiencia Ideal, sus dos destinatarios, los tres canales y qué es BES | Relato |
-| **1.4** Qué convierte el sistema | La cadena de conversión completa, en una línea, con la cifra de cada eslabón | Relato + cifra comprobable |
+| **1.1** Así es como lo vamos a hacer | El sistema en una página: el minuto, la Experiencia Ideal y el brief | Relato |
+| **1.2** La oportunidad comienza antes de que el prospecto llegue al club | La invisibilidad en la búsqueda, con sus cifras | Relato + cifra comprobable |
+| **1.3** Sports World parte de una posición difícil de replicar | La posición competitiva, con la tabla de presencia orgánica | Relato + tabla de datos |
+| **1.4** Pero ganar la búsqueda no es suficiente | Qué conecta el clic con la firma | Relato |
+| **1.5** El sistema cambia la ecuación entre precio y valor | Dónde empieza la conversación comercial | Relato |
+| **1.6** Las 148 páginas dejan de ser un catálogo | Qué son las 148 puertas de entrada | Relato |
+| **1.7** Cómo sabremos que funciona | Los compromisos con su herramienta de verificación | Cifra comprobable |
+| **1.8** Lo que cambia para el negocio | Dónde se apoya la venta a partir de aquí | Relato |
+| **2.1** Dos búsquedas distintas, dos momentos de decisión distintos | Quién busca la marca y quién busca lo que quiere lograr | Relato |
+| **2.2** Las tres formas en que se pierde a una persona con alta intención de inscripción | El objetivo que no se atiende · la capacidad que permanece invisible · el camino innecesariamente largo | Relato |
+| **2.3** Qué es el producto | La Experiencia Ideal, el insumo y el producto, los dos destinatarios y por dónde se entrega | Relato |
 
 ### Parte II · Qué hace el sistema
 
