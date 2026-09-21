@@ -10,12 +10,12 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 |---|---|---|
 | `00-estructura.es.md` | 1,277 | `481ba80d9e13f9aca96766f86746d57126a182da0a11a3c3c0a4fc6666d456bf` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
-| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 7,348 | `0934578346b16a2309002bd4100c1aae0ce8db403e72b80d650c4d87a2d67abb` |
-| `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,643 | `e0dc61c7f6e3154cbd7e71012cd31c36eaedc937c6f86a0fe19b29772440d80a` |
+| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 7,048 | `006de2dc24e39ee16e5bf581e3e3e982ecb1568bc082b9f0e520c1ffb870030a` |
+| `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,623 | `5ada56daed8d240877de74dbdc994ee0581377bcaee12b5785b9031004de7f65` |
 | `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
 | `05-el-cuestionario.es.md` | 3,226 | `38fa1d020edcb946e0b0c2aa3d98407152748225b5f8a66e7a815b3ea0767ba0` |
-| `06-los-objetivos-de-la-persona.es.md` | 942 | `d9cec15eddbfb85067814c18b6c53f2d98da521d2ae2b95eebbd533af617916c` |
-| `07-el-recorrido-en-pantalla.es.md` | 2,425 | `98b8c9cdc8ee3df8590e0dd120dcdc4cd1a4a6931b9e7141f3c3076b69ad79a9` |
+| `06-los-objetivos-de-la-persona.es.md` | 852 | `44a155d6fed9f1d09f9431f15def3dcd6d4773957651d0feeedcaef4f01331e8` |
+| `07-el-recorrido-en-pantalla.es.md` | 2,352 | `eb33667af24ee5a541121d22fcacca88f7cc4f9dd1f2b8e4976ba5820798479b` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `README.es.md` | 355 | `693ba01c6a4d850b39685e7d1868e45b95241fa70097c6346405d401bdb5a439` |
