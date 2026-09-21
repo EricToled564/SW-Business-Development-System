@@ -1,10 +1,10 @@
 # Capítulo 4 · Qué recibe la persona y qué recibe el asesor
 
-El sistema calcula una vez y utiliza ese resultado para producir dos entregas.
+Para cada versión de la experiencia, el sistema resuelve el plan una vez y utiliza ese resultado para producir dos entregas.
 
 **La persona recibe su plan. El asesor recibe la misma evidencia convertida en una herramienta para conducir la visita y cerrar la venta.**
 
-Las dos entregas nacen del mismo cálculo.
+Las dos entregas nacen de las mismas respuestas, las mismas reglas y el mismo cálculo.
 
 Lo que cambia es **quién las recibe y para qué se utilizan**.
 
@@ -12,47 +12,53 @@ Lo que cambia es **quién las recibe y para qué se utilizan**.
 
 ## 4.1 Un solo cálculo, dos entregas
 
-Cuando la persona termina el cuestionario, el sistema ejecuta el cálculo completo.
+Cuando la persona termina el cuestionario, el sistema ejecuta el cálculo completo de su Experiencia Ideal.
 
-Ese cálculo resuelve su club, construye sus tres bloques de entrenamiento, selecciona sus clases y genera la información que compone su experiencia.
+Ese cálculo resuelve su club, construye sus tres bloques de entrenamiento, selecciona sus clases y genera la información que compone su plan.
 
-A partir de ese único resultado se producen dos entregas:
+Ese resultado alimenta dos entregas:
 
-| Entrega                  | Quién la recibe                  | Cuándo                                   |
-| ------------------------ | -------------------------------- | ---------------------------------------- |
-| **La Experiencia Ideal** | La persona                       | En pantalla, al terminar el cuestionario |
-| **El brief**             | El asesor que atenderá la visita | Antes de que la persona llegue al club   |
+| Entrega                  | Quién la recibe                  | Cuándo                                                              |
+| ------------------------ | -------------------------------- | ------------------------------------------------------------------- |
+| **La Experiencia Ideal** | La persona                       | En pantalla, al terminar el cuestionario                            |
+| **El brief**             | El asesor que atenderá la visita | Una vez agendada la visita y antes de que la persona llegue al club |
 
-Las dos deben coincidir en los hechos que comparten porque provienen de **las mismas respuestas, las mismas reglas y el mismo cálculo**.
-
-No son, sin embargo, el mismo documento.
+Las dos deben coincidir en todos los hechos que comparten.
 
 La Experiencia Ideal presenta a la persona el plan que Sports World construyó para ella.
 
-El brief toma esa misma evidencia y agrega la información que el asesor necesita para **preparar la visita, conducirla y cerrar la venta**.
+El brief toma ese mismo plan y la misma evidencia, incorpora los datos de la cita y de contacto que corresponden, y los organiza para que el asesor pueda **preparar la visita, conducirla y cerrar la venta**.
+
+**El brief no debe producir una recomendación distinta de la que recibió la persona.**
+
+Puede cambiar el lenguaje, el orden y el propósito de la información, pero no los hechos que sustentan el plan.
 
 El capítulo 13 especifica cómo se genera la redacción y qué debe ocurrir cuando la redacción automática falla.
 
 ---
 
-### 4.1.1 Una experiencia por contexto de club; un cálculo asociado a cada cita
+### 4.1.1 Una experiencia por contexto de club
 
 La primera Experiencia Ideal se calcula **al terminar el cuestionario**, antes de que exista necesariamente una cita, utilizando el club que el sistema resolvió para esa persona.
 
-Cuando la persona agenda una visita, esa cita queda asociada a la experiencia correspondiente a ese club.
+Cuando la persona agenda una visita, esa cita debe quedar asociada a la versión de la experiencia correspondiente a ese club.
 
-Si después agenda una visita en un segundo club, **no debe volver a contestar el cuestionario**.
+Si después agenda en un segundo club, **no debe volver a contestar el cuestionario**.
 
 El sistema debe utilizar las respuestas que ya dio y recalcular la experiencia completa contra el catálogo del segundo club.
 
-Esa segunda cita debe llevar:
+Esa nueva cita debe tener:
 
 * su propia Experiencia Ideal;
 * y su propio brief.
 
 Dos clubes distintos pueden producir clases, combinaciones y argumentos distintos.
 
-Por eso cada asesor debe recibir **la versión que corresponde al club donde atenderá la visita**.
+Por eso cada asesor debe recibir **la versión correspondiente al club donde atenderá la visita**.
+
+La regla es:
+
+**una misma persona puede tener varias citas, pero cada cita debe estar vinculada con una sola versión completa de su Experiencia Ideal y con su propio brief.**
 
 Al confirmarse el alta de la membresía, debe prevalecer la experiencia correspondiente al club donde ocurrió el alta y las demás deben eliminarse conforme a las reglas de persistencia del sistema.
 
@@ -62,7 +68,7 @@ El capítulo 8 especifica cuándo se generan y distribuyen las entregas, y el ca
 
 ### 4.1.2 Dos páginas por entrega
 
-Cada una de las dos entregas se organiza en **dos páginas**.
+Cada una de las dos entregas debe organizarse en **dos páginas**.
 
 En pantalla, un separador debe indicar claramente dónde termina la página 1 y comienza la página 2.
 
@@ -99,15 +105,15 @@ La primera página resuelve el contexto de la experiencia.
 
 ### 4.2.2 Página 2 · Tu combinación recomendada
 
-La segunda página responde qué debe hacer la persona dentro del club.
+La segunda página responde **qué va a hacer la persona en ese club**.
 
-| Elemento                         | Qué contiene                                                                                                                         |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Los tres bloques**             | Bloque 01, Bloque 02 y Bloque 03, cada uno con su contenido y la razón por la que forma parte del plan                               |
-| **Cambiar clases**               | Panel que se abre a petición, con otras clases idóneas y el catálogo del club disponible para consulta                               |
-| **Sección de seguridad**         | El texto que corresponde a las preferencias y circunstancias que la persona declaró dentro del alcance permitido por el cuestionario |
-| **Argumento de infraestructura** | Qué pone la red de 49 clubes detrás de ese plan                                                                                      |
-| **Cierre**                       | Botón de avance y opción de reiniciar                                                                                                |
+| Elemento                         | Qué contiene                                                                                                                       |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Los tres bloques**             | Bloque 01, Bloque 02 y Bloque 03, cada uno con su contenido y la razón por la que forma parte del plan                             |
+| **Cambiar clases**               | Panel que se abre a petición, con otras clases idóneas y el catálogo del club disponible para consulta                             |
+| **Sección de seguridad**         | El texto preventivo que corresponda a las respuestas permitidas por el cuestionario, sin inferir ni registrar condiciones de salud |
+| **Argumento de infraestructura** | Qué pone la red de 49 clubes detrás de ese plan                                                                                    |
+| **Cierre**                       | Botón de avance y opción de reiniciar                                                                                              |
 
 ---
 
@@ -115,19 +121,23 @@ La segunda página responde qué debe hacer la persona dentro del club.
 
 La persona **puede cambiar de club y puede cambiar de clases**.
 
-El sistema no debe modificar únicamente la pieza que cambió.
+Cada cambio que afecte la composición de la experiencia debe producir una nueva versión calculada del plan.
+
+El sistema no debe limitarse a sustituir la pieza que cambió.
 
 **Debe volver a resolver el plan como un conjunto.**
 
 Si cambia de club, el sistema debe recalcular la experiencia contra el catálogo del nuevo club: bloques, clases, modalidad y tiempo de traslado.
 
-Si cambia una clase dentro del mismo club, el sistema debe recomponer los bloques y las clases afectadas para mantener la coherencia del plan.
+Si cambia una clase dentro del mismo club, debe recomponer los bloques y las clases afectadas para conservar la coherencia del plan.
 
 El capítulo 11 especifica qué elementos se recalculan y en qué orden.
 
 Cada cambio debe devolver **un plan completo**.
 
 Si el nuevo club entrega una capacidad de otra manera, el sistema debe sustituirla por la alternativa que corresponda al mismo objetivo.
+
+La versión anterior deja de ser la experiencia activa para ese recorrido.
 
 ---
 
@@ -150,13 +160,13 @@ Las banderas existen para que la persona pueda comparar con información suficie
 
 El sistema debe recalcular el plan contra el club elegido y entregar una solución completa con las capacidades disponibles ahí.
 
-Si el club no tiene alberca, por ejemplo, los tres bloques deben resolverse utilizando alternativas en piso seco.
+Si el club no tiene alberca, por ejemplo, el plan debe resolver los tres bloques con alternativas que ese club sí pueda entregar.
 
 La Experiencia Ideal no debe presentar al prospecto una lista de ausencias.
 
 Debe presentar **el plan que sí puede realizar**.
 
-Si la persona vuelve a abrir el panel de otros clubes, las banderas deben volver a aparecer ahí, porque esa superficie continúa teniendo una función de comparación.
+Si la persona vuelve a abrir el panel de otros clubes, las banderas deben aparecer nuevamente ahí, porque esa superficie conserva su función de comparación.
 
 ---
 
@@ -185,18 +195,22 @@ La persona puede llamar a **BES**, el asistente conversacional del proyecto, dur
 
 Puede hacerlo mientras contesta el cuestionario y también después, sobre la Experiencia Ideal que ya recibió.
 
-Si BES entra durante el cuestionario, **debe continuar desde el reactivo en el que se encuentra la persona**, utilizando todas las respuestas que ya haya dado.
+Si BES entra durante el cuestionario, **debe continuar desde el reactivo en el que se encuentra la persona**, utilizando las respuestas que ya haya dado.
 
-No debe reiniciar el instrumento ni volver a pedir información ya contestada.
+No debe reiniciar el instrumento ni volver a solicitar información ya contestada.
 
 Las respuestas acumuladas deben conservarse y el recorrido debe continuar desde ese punto.
 
-La persona también puede regresar al recorrido autónomo.
+La persona puede volver posteriormente al recorrido autónomo.
 
-BES debe operar sobre la Experiencia Ideal con las mismas acciones que la interfaz permite:
+BES debe permitir sobre la Experiencia Ideal las mismas acciones que ofrece la interfaz:
 
 * cambiar de club;
 * cambiar de clases.
+
+Cuando una de esas acciones modifica la composición del plan, debe aplicar las mismas reglas de recálculo del apartado 4.2.3.
+
+**Cambiar por BES o cambiar en pantalla debe producir el mismo resultado.**
 
 El capítulo 8 especifica el mecanismo completo.
 
@@ -204,16 +218,20 @@ El capítulo 8 especifica el mecanismo completo.
 
 ## 4.4 Lo que lee el asesor: el brief
 
-El brief es **la misma evidencia que produjo la Experiencia Ideal, convertida en una herramienta comercial**.
+El brief es **la misma evidencia que produjo la Experiencia Ideal, organizada para convertirla en una herramienta comercial**.
 
-Es el documento con el que el asesor debe llegar a la visita sabiendo:
+Debe permitir que el asesor llegue a la visita sabiendo:
 
 * quién va a llegar;
 * qué quiere conseguir;
 * qué le importa;
 * qué debe validar;
 * qué recorrido conviene mostrarle;
-* y qué argumentos son más relevantes para cerrar la venta.
+* y qué argumentos son relevantes para cerrar la venta.
+
+El brief puede traducir esa evidencia a lenguaje comercial.
+
+**No debe contradecir, sustituir ni ampliar con hechos no sustentados el plan que recibió la persona.**
 
 ---
 
@@ -221,7 +239,7 @@ Es el documento con el que el asesor debe llegar a la visita sabiendo:
 
 La primera página contiene la confirmación de la cita y el inicio del brief.
 
-La confirmación es la información que también debe conservar la persona.
+La confirmación reúne la información de la visita que también debe conservar la persona.
 
 Debajo comienza la información de uso comercial.
 
@@ -251,30 +269,32 @@ Debajo comienza la información de uso comercial.
 
 ### 4.4.3 Las señales del brief
 
-Las **señales** son avisos que el sistema levanta a partir de las respuestas del cuestionario y pone a la vista del asesor.
+Las **señales** son avisos construidos a partir de las respuestas del cuestionario y puestos a la vista del asesor.
 
 **Una señal no debe modificar el plan.**
 
-Debe modificar **la forma en que el asesor conduce la conversación**.
+Debe aportar contexto para que el asesor sepa **qué debe considerar o validar durante la conversación**.
 
 El apartado 5.9 enumera las señales una por una e identifica el reactivo que activa cada una.
 
 Las señales solo pueden construirse con información que el cuestionario esté autorizado a recoger.
 
-El apartado 5.8 define ese límite:
+El apartado 5.8 establece ese límite:
 
 **preferencias y necesidades funcionales, nunca condiciones de salud.**
+
+El sistema no debe utilizar una respuesta permitida para inferir una condición médica que la persona no declaró y que el cuestionario no está autorizado a registrar.
 
 ---
 
 ### 4.4.4 Cuando otro club entrega mejor la experiencia
 
-El brief debe incluir una señal adicional dirigida exclusivamente al asesor cuando **el club de la visita no cumple uno o más de los requisitos utilizados para construir la recomendación y existe otro club que sí los cumple**.
+El brief debe incluir una señal adicional dirigida exclusivamente al asesor cuando **el club de la visita cumple menos requisitos del perfil que otro club identificado por el sistema**.
 
 La señal debe identificar:
 
-* qué requisito queda corto;
-* y qué club sí lo satisface.
+* qué requisito no cumple el club de la visita;
+* y qué club sí lo cumple.
 
 El sistema debe poner esa información a disposición del asesor.
 
@@ -284,14 +304,18 @@ Puede:
 
 * proponer mover la visita;
 * mencionarlo durante el recorrido;
-* o buscar una solución dentro del club donde la cita ya está agendada.
+* o resolver la experiencia dentro del club donde la cita está agendada.
 
 La diferencia entre las superficies es deliberada:
 
 | Superficie                                                       | Quién decide qué se comunica | Qué regla aplica                                                                                                       |
 | ---------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | **Sitio y WhatsApp**, donde la persona avanza de manera autónoma | El sistema                   | Las banderas deben aparecer mientras la persona elige y desaparecer después de la elección, conforme al apartado 4.2.4 |
-| **Consola**, con la persona y el asesor en la misma interacción  | El asesor                    | La señal debe aparecer en el brief para que el asesor decida cómo utilizarla                                           |
+| **Consola**, durante la interacción entre la persona y el asesor | El asesor                    | La señal debe aparecer en el brief para que el asesor decida cómo utilizarla                                           |
+
+La libertad del asesor aplica a **cómo conduce la conversación**.
+
+No le permite alterar retroactivamente las respuestas del cuestionario ni la lógica con la que el sistema calculó la Experiencia Ideal.
 
 ---
 
