@@ -43,7 +43,7 @@ El club que le corresponde, con lo necesario para llegar: **nombre, dirección y
 
 La selección del club corre con las mismas reglas del capítulo 9: los mismos requisitos, el mismo radio, la misma medición en minutos. Lo que cambia no es cómo se elige el club, sino qué se entrega después.
 
-### 4.2.3 Qué no recibe, y qué no se guarda
+### 4.2.3 El alcance de la ruta reducida
 
 **No recibe** experiencia ideal, ni bloques de entrenamiento, ni clases, ni brief, ni cita agendada. No hay nada que enviarle por correo, porque no se le pidió un correo.
 
@@ -65,7 +65,7 @@ El sitio no contrata a personas menores de edad, y esa es la razón de las dos r
 
 Las autorizaciones presenciales las administra Sports World.
 
-## 4.5 Solo para quien no tiene membresía activa
+## 4.5 Solo para quien todavía no es socio
 
 La experiencia ideal es un instrumento de captación. Se dirige a quien todavía no es parte de Sports World.
 
@@ -76,7 +76,7 @@ De ahí salen dos reglas que el cuestionario cumple siempre:
 
 Cuando la persona declara que regresa a Sports World, el sistema localiza su membresía anterior antes de la visita y el brief lo señala. La conversación del asesor no arranca como venta nueva.
 
-## 4.6 Los datos de personas menores de edad no se recogen
+## 4.6 Qué datos se recogen de personas menores de edad
 
 El cuestionario **no pregunta la edad de nadie más que de quien lo responde.** Quien contesta declara sus propios objetivos.
 
