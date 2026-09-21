@@ -32,7 +32,7 @@ A esas tres se suman dos búsquedas más, en los extremos del recorrido:
 | **01** · Inicio | 1 | Quien conoce la marca y la busca por su nombre | Entrega el catálogo del sitio y la entrada al cuestionario |
 | **02** · Club | 49 | «Gimnasio cerca de mí», y el nombre de cada colonia o zona | El laberinto de clics |
 | **03** · Hub de amenidad | 10 | «Gimnasio con alberca», «con vapor», «con sauna» | La disciplina que existe y no se ve |
-| **04** · Clase premium | 7 | La disciplina buscada por su nombre, en su versión de marca | La disciplina que existe y no se ve |
+| **04** · Clase premium | 7 | La disciplina buscada por su nombre, entre las siete que Sports World prioriza | La disciplina que existe y no se ve |
 | **05** · Clase individual | 47 | «Yoga cerca de mí», y así con cada disciplina del catálogo | La disciplina que existe y no se ve |
 | **06** · Actividades para menores de 3 meses a 13 años | 1 | «Gimnasio con actividades para menores de 13 años» | La disciplina que existe y no se ve |
 | **07** · Objetivo | 5 | Quien busca por lo que quiere lograr con su cuerpo | El objetivo que no se atiende |
@@ -41,7 +41,7 @@ A esas tres se suman dos búsquedas más, en los extremos del recorrido:
 | **10** · Membresías | 6 | Quien ya decidió y compara precio y condiciones | La comparación final |
 | **11** · Blog | 20 | Quien busca antes de saber que Sports World es una opción | La búsqueda anterior a las tres |
 
-Un **hub** concentra un tema y enlaza a las páginas que lo desarrollan: el hub de la alberca enlaza a los clubes que la tienen y a los objetivos que se entrenan en ella. Una **clase premium** es una de las siete disciplinas que Sports World ofrece con marca propia. Una **clase individual** es cualquiera de las 47 disciplinas del catálogo, entre ellas las tres modalidades de entrenamiento individual —con pesas, aeróbico y aeróbico en alberca—, que el apartado 2.7.3 trata aparte porque llevan otros botones.
+Un **hub** concentra un tema y enlaza a las páginas que lo desarrollan: el hub de la alberca enlaza a los clubes que la tienen y a los objetivos que se entrenan en ella. Una **clase premium** es una de las siete disciplinas que Sports World decide priorizar. Su página lleva el mismo contenido que la de cualquier otra clase, y lo propio de ella es la redacción: el tratamiento editorial que especifica el apartado 2.5.2. **Cuáles son las siete lo decide Sports World en el arranque del proyecto.** Una **clase individual** es cualquiera de las 47 disciplinas del catálogo, entre ellas las tres modalidades de entrenamiento individual —con pesas, aeróbico y aeróbico en alberca—, que el apartado 2.7.3 trata aparte porque llevan otros botones.
 
 ### 2.1.3 Las seis páginas de objetivo
 

@@ -785,6 +785,23 @@ El capítulo 2 va en este orden, y en ningún otro:
 
 **Aterriza en:** todo el documento, y el barrido alcanza al resto del depósito.
 
+---
+
+## 13 · Cuatro precisiones sobre el sitio, la visita y la distancia
+
+### D-93 · Una clase premium es una de las siete que Sports World prioriza
+
+**No hay clases con marca y clases sin marca.** Las siete páginas de clase premium corresponden a **las siete disciplinas que Sports World decide priorizar**, y lo único que distingue a esas páginas de las 47 de clase individual es **la redacción**: el tratamiento editorial del apartado 2.5.2. Mismo contenido mínimo, mismo menú, mismos botones propios.
+
+| | |
+|---|---|
+| **Qué fija esta decisión** | Que «premium» es una prioridad comercial de Sports World, y que se traduce en la redacción de la página |
+| **Qué queda abierto** | **Cuáles son las siete.** Es una decisión de Sports World y forma parte del arranque del proyecto: sin ella no se pueden redactar esas siete páginas |
+
+**Cabe en el Contrato.** El Anexo Dos, Sección I, cuenta siete páginas de clase premium. La marca que menciona esa fila entre paréntesis es ilustrativa y no obliga a cuáles sean las siete; elegirlas no altera el conteo ni el alcance, igual que las seis páginas de objetivo de D-70.
+
+**Aterriza en:** capítulo 2, apartados 2.1.2 y 2.5.2; anexo F, el inventario de las 148 páginas.
+
 
 
 ---
@@ -799,5 +816,6 @@ El capítulo 2 va en este orden, y en ningún otro:
 | **De dónde sale el club sustituto** | Ver D-43 |
 | **Atribución comercial de la venta que se va a otro club** | Ver D-44 |
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
+| **Cuáles son las siete clases premium** | Decisión de Sports World, en el arranque del proyecto. De ella depende la redacción de esas siete páginas (D-93) |
 | **CEI-01 requiere dos ajustes** | El renglón de Clubes del control de lógica, y la declaración del bloque P0 |
 | **La base de experiencias ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 13 |
