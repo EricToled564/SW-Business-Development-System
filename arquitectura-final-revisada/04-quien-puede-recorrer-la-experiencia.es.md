@@ -14,7 +14,7 @@ La compuerta no personaliza nada: no entra al plan, no llega al brief y no influ
 
 | Respuesta | Qué ocurre |
 |---|---|
-| **Sí** | La experiencia ideal completa, que es lo que el resto de este documento especifica |
+| **Sí** | La experiencia ideal completa |
 | **No** | La ruta reducida del apartado 4.2 |
 
 ## 4.2 La ruta reducida
@@ -41,7 +41,7 @@ Solo lo que hace falta para resolver el club. Nada más.
 
 El club que le corresponde, con lo necesario para llegar: **nombre, dirección y tiempo de traslado.** Y una línea que le dice cómo inscribirse: con la firma de su tutor, en el club.
 
-La selección del club corre con las mismas reglas del capítulo 9: los mismos requisitos, el mismo radio, la misma medición en minutos. Lo que cambia no es cómo se elige el club, sino qué se entrega después.
+La selección del club corre con las mismas reglas del capítulo 9: los mismos requisitos, el mismo radio, la misma medición en minutos. Lo que cambia es lo que se entrega después.
 
 ### 4.2.3 Qué no recibe, y qué no se guarda
 
