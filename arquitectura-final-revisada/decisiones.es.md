@@ -802,6 +802,18 @@ El capítulo 2 va en este orden, y en ningún otro:
 
 **Aterriza en:** capítulo 2, apartados 2.1.2 y 2.5.2; anexo F, el inventario de las 148 páginas.
 
+### D-94 · La fecha y la hora se eligen dentro del calendario de atención del club
+
+La agenda ofrece **únicamente los días en que ese club abre y las horas en que atiende**. Un club cerrado ese día, o una hora fuera del horario de atención, no aparecen como opción.
+
+| | |
+|---|---|
+| **De dónde sale el calendario** | De los horarios de atención día por día del club, que llegan con el corte de las 06:00 y que la página de ese club ya publica. La agenda y la página muestran el mismo dato |
+| **Qué sigue haciendo el sistema** | Registrar lo que la persona pidió. **La disponibilidad la confirma el club**, que coordina la visita y responde con su acuse |
+| **Dónde estaba escrito** | El Contrato, Cláusula Tercera, apartado II: «el día y horario elegidos por el usuario, **dentro del horario de atención del club**, se envían por correo al club como requerimiento» |
+
+**Aterriza en:** capítulo 7, apartado 7.3.4; capítulo 9, cuando se escriba, para el club que se resuelve; capítulo 15, el traspaso.
+
 
 
 ---

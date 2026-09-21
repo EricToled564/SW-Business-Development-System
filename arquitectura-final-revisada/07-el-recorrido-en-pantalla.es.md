@@ -84,7 +84,7 @@ Entregados los datos, se le pregunta **una sola vez** si desea agendar una visit
 
 La bandera es una marca de estado, no una instrucción de no volver a contactarla.
 
-Cuando elige fecha y hora, el sistema **no verifica disponibilidad ni reserva nada**: registra lo que la persona pidió. El club confirma y coordina, y responde con su acuse. El capítulo 15 especifica ese traspaso.
+**La fecha y la hora se eligen dentro del calendario de atención del club.** Los días en que ese club abre y las horas en que atiende vienen del corte de las 06:00, son los mismos que publica la página de ese club, y **son los únicos que la agenda ofrece**. Dentro de ese calendario, el sistema **registra lo que la persona pidió**: la disponibilidad la confirma el club, que coordina la visita y responde con su acuse. El capítulo 15 especifica ese traspaso.
 
 ### 7.3.5 Agendar en un segundo club
 
