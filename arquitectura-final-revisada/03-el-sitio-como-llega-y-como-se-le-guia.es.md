@@ -210,95 +210,123 @@ El capítulo 10 especifica cómo se determina.
 
 ## 3.5 El contenido de cada tipo de página
 
-Cada tipo de página tiene un **contenido mínimo obligatorio**, y cumplirlo es la condición para publicar la página.
+Cada tipo de página tiene un **contenido mínimo obligatorio**.
+
+Cumplirlo es condición para publicar.
 
 ### 3.5.1 Dónde vive cada cosa
 
-> **Las clases se muestran dentro del objetivo al que sirven. Los horarios se muestran dentro del club que los imparte. Las amenidades se muestran dentro del club que las tiene.**
+El sitio sigue una regla simple:
 
-De esa regla salen las tres superficies:
+**las clases se muestran dentro del objetivo al que sirven; los horarios, dentro del club que las imparte; y las amenidades, dentro del club que las tiene.**
+
+De esa regla salen tres superficies principales:
 
 | Página | Qué muestra |
 |---|---|
-| **Club** | Los seis objetivos. Dentro de cada uno, las clases de ese club que sirven a ese objetivo, con sus días y sus horarios, y las amenidades de ese club que ese objetivo usa |
-| **Objetivo** | Todas las clases del sistema que entregan ese objetivo, en toda la red. Al tocar una, lleva a la página de esa clase |
-| **Clase** | Los clubes donde se imparte. Al tocar un club, ahí se ven los días y los horarios de esa clase en ese club |
+| **Club** | Los seis objetivos. Dentro de cada uno, las clases de ese club que sirven a ese objetivo, con sus días y horarios, y las amenidades del club que ese objetivo utiliza |
+| **Objetivo** | Todas las clases del sistema que contribuyen a ese objetivo, en toda la red. Al tocar una clase, lleva a la página de esa clase |
+| **Clase** | Los clubes donde se imparte. Al tocar un club, la persona llega a su página, donde puede consultar los días y horarios de esa clase |
 
 **Los horarios se publican en un solo lugar: la página del club.**
 
-**La lista de un objetivo abarca toda la red.** Con el cuestionario completado, la leyenda del apartado 3.6.6 marca cuáles de esas clases están en el club de la persona.
+La página de objetivo abarca toda la red.
+
+Una vez completado el cuestionario, la leyenda del apartado 3.6.6 indica cuáles de esas clases están disponibles en el club ideal de esa persona.
+
+---
 
 ### 3.5.2 El contenido mínimo, tipo por tipo
 
 | Tipo de página | Contenido mínimo |
 |---|---|
 | **Inicio** | Propuesta de valor de la red · buscador de clubes · enlaces a los ocho hubs · acceso al cuestionario |
-| **Club** | Nombre y dirección completa · horarios de atención día por día · teléfono y correo · **los seis objetivos, con las clases de ese club que sirven a cada uno, sus días y horarios, y las amenidades que ese objetivo usa** · mapa · estado del club: abierto, cerrado temporalmente o próxima apertura |
-| **Hub de amenidad** | Descripción de la amenidad · los clubes que la tienen, con enlace a cada uno · los objetivos que se entrenan con ella |
-| **Clase premium** | Lo mismo que una clase individual, con **descripción más extensa y más imágenes** |
-| **Clase individual** | Descripción · beneficios · nivel e intensidad · los clubes donde se imparte, cada uno con enlace a su página |
+| **Club** | Nombre y dirección completa · horarios de atención día por día · teléfono y correo · los seis objetivos, con las clases de ese club que sirven a cada uno, sus días y horarios y las amenidades que utiliza ese objetivo · mapa · estado del club: abierto, cerrado temporalmente o próxima apertura |
+| **Hub de amenidad** | Descripción de la amenidad · clubes que la tienen, con enlace a cada uno · objetivos para los que puede formar parte de la experiencia |
+| **Clase premium** | Lo mismo que una clase individual, con una descripción más extensa y mayor cantidad de imágenes |
+| **Clase individual** | Descripción · beneficios · nivel e intensidad · clubes donde se imparte, cada uno con enlace a su página |
 | **Actividades para menores de 3 meses a 13 años** | Las dos secciones que especifica el apartado 3.5.3 |
-| **Objetivo** | Título con la palabra clave del objetivo · 600 a 900 palabras de contenido útil · preguntas frecuentes · todas las clases del sistema que entregan ese objetivo · enlaces a los clubes · enlaces, dentro del texto, a los artículos del blog que tratan de ese objetivo |
-| **Bajar de peso** | Lo mismo que un objetivo, más el tratamiento de salud del apartado 3.5.4 |
+| **Objetivo** | Título con la palabra clave del objetivo · 600 a 900 palabras de contenido útil · preguntas frecuentes · todas las clases del sistema que contribuyen a ese objetivo · enlaces a los clubes · enlaces dentro del texto a los artículos del blog relacionados |
+| **Bajar de peso** | Lo mismo que una página de objetivo, más el tratamiento de salud del apartado 3.5.4 |
 | **Entrenamiento personal** | Descripción del servicio · las tres modalidades de entrenamiento individual · enlaces a las seis páginas de objetivo · clubes donde se ofrece |
 | **Membresías** | Por plan: descripción · qué incluye · precio · letra chica · comparativo entre planes · promociones vigentes |
-| **Blog** | Artículo con contenido propio · enlaces, dentro del texto, al objetivo del que trata y a las clases y clubes que menciona |
+| **Blog** | Artículo con contenido propio · enlaces dentro del texto al objetivo del que trata y a las clases y clubes que menciona |
 
-Cuatro puntos concretan ese contenido, y son los que permiten que la persona se imagine cumpliendo el plan:
+Cuatro elementos convierten ese contenido en algo que la persona puede imaginar dentro de su propia experiencia:
 
-- **Los horarios reales, día por día**, dentro del objetivo y dentro del club.
-- **El nivel y la intensidad de cada clase**, que es lo que le permite evaluar si le corresponde.
-- **Las clases agrupadas por objetivo**, que convierte un catálogo en una respuesta.
-- **Las 600 a 900 palabras de las páginas de objetivo**, la extensión que responde a la intención de búsqueda.
+1. **Los horarios reales, día por día**, presentados dentro de cada objetivo en la página del club.
+2. **El nivel y la intensidad de cada clase**, para que la persona pueda evaluar si corresponde a lo que busca.
+3. **Las clases agrupadas por objetivo**, que transforman un catálogo en una respuesta.
+4. **Las 600 a 900 palabras de las páginas de objetivo**, diseñadas para responder con suficiente profundidad a la intención de búsqueda.
+
+---
 
 ### 3.5.3 Las dos secciones de la página de actividades para menores
 
-La página se llama por el nombre del servicio, **«Actividades para menores de 3 meses a 13 años»**, y tiene dos secciones:
+La página se llama **«Actividades para menores de 3 meses a 13 años»** y contiene dos secciones:
 
 | Sección | Cómo funciona |
 |---|---|
-| **Clases para niños** | Como una página de objetivo. Su botón dice **«Conoce las clases disponibles»** y abre la lista; al tocar una clase se ven los clubes que la imparten, y al tocar un club, sus días y horarios |
-| **FitKidz** | Los clubes donde se ofrece. La lista lleva a la página de cada club |
+| **Clases para niños** | Funciona como una página de objetivo. Su botón dice «Conoce las clases disponibles» y abre la lista. Al tocar una clase se muestran los clubes que la imparten y, al tocar un club, sus días y horarios |
+| **FitKidz** | Muestra los clubes donde se ofrece. Cada resultado lleva a la página correspondiente del club |
 
-Con el cuestionario completado, cada clase para niños lleva la leyenda del apartado 3.6.6. Su menú contextual es el de cualquier otra página.
+Con el cuestionario completado, cada clase para niños lleva la leyenda de disponibilidad del apartado 3.6.6.
+
+El menú contextual sigue las mismas reglas que en cualquier otra página.
+
+---
 
 ### 3.5.4 El tratamiento de contenido de salud
 
-La página de bajar de peso y los artículos de nutrición, rehabilitación y suplementación llevan:
+La página de **Bajar de peso** y los artículos relacionados con nutrición, rehabilitación y suplementación llevan:
 
-- **Firma de especialista con cédula profesional a la vista.**
-- **Aviso de salud**, antes de cualquier recomendación.
-- En la página de bajar de peso, además, un **video institucional de 45 a 60 segundos**.
+* firma de especialista, con cédula profesional visible;
+* aviso de salud antes de cualquier recomendación;
+* y, en la página de Bajar de peso, un video institucional de entre 45 y 60 segundos.
 
-Las otras cinco páginas de objetivo llevan contenido sin ese tratamiento.
+Las otras cinco páginas de objetivo no requieren este tratamiento.
 
-Tres reglas rigen el contenido de todo el sitio:
+Tres reglas aplican al contenido de todo el sitio:
 
-1. **Ninguna página debe prometer resultados en kilos ni en plazos.**
-2. **La venta se cierra en el club o por teléfono, después de la visita.** El sitio publica los precios en membresías.
-3. **El contenido de salud lleva siempre la firma del especialista que lo respalda.**
+1. **Ninguna página promete resultados en kilos ni en plazos.**
+2. **La venta se cierra en el club o por teléfono después de la visita.** El sitio publica los precios dentro de Membresías.
+3. **Todo contenido de salud lleva la firma del especialista que lo respalda.**
+
+---
 
 ### 3.5.5 De dónde sale el contenido
 
-**Los datos que cambian todos los días vienen del sistema de clientes de Sports World**, el CRM: horarios de atención, datos de contacto, catálogo de clases, horarios de cada clase, planes, precios, descuentos y promociones.
+El sitio separa dos tipos de información.
 
-El reparto es limpio. **El gestor de contenidos administra el texto editorial. El CRM administra esos datos.** El capítulo 14 especifica el contrato de cada fuente.
+El **gestor de contenidos** administra el contenido editorial.
 
-La versión publicada es la del **corte diario de las 06:00**, hora de la Ciudad de México. Cada día a esa hora el sitio toma del CRM lo registrado hasta las 05:59, y esa versión rige hasta el corte siguiente.
+El **CRM de Sports World** administra los datos operativos que pueden cambiar todos los días: horarios de atención, datos de contacto, catálogo de clases, horarios de cada clase, planes, precios, descuentos y promociones.
 
-Una sincronización manual inmediata atiende los casos excepcionales, como una promoción.
+El capítulo 14 especifica el contrato de cada fuente.
 
-**Cuando el CRM deja de responder, la página muestra el último dato guardado y el proceso continúa.** La persona completa su cuestionario y recibe su Experiencia Ideal con normalidad.
+La versión publicada corresponde al corte diario de las **06:00, hora de la Ciudad de México**.
 
-**El aviso viaja al asesor comercial del club.** El brief lleva una bandera que dice qué dato se usó y de cuándo era, para que el asesor lo verifique antes de la visita.
+A esa hora, el sitio toma del CRM la información registrada hasta las 05:59 y mantiene esa versión hasta el corte siguiente.
+
+Para casos excepcionales —por ejemplo, una promoción que necesita publicarse de inmediato— existe una sincronización manual.
+
+Si el CRM deja de responder, el sitio no interrumpe la experiencia.
+
+La página continúa mostrando el último dato guardado y la persona puede completar el cuestionario y recibir su Experiencia Ideal con normalidad.
+
+La incidencia se comunica al asesor comercial del club.
+
+El brief identifica **qué dato se utilizó y de qué fecha era**, para que el asesor pueda verificarlo antes de la visita.
 
 ---
 
 ## 3.6 El menú contextual
 
-El **menú contextual** es el conjunto de botones dentro del cuerpo de la página.
+El menú contextual es el conjunto de botones que aparece dentro del cuerpo de cada página.
 
-Se especifica como una **regla de decisión por botón**, evaluada sobre cinco variables:
+No se define página por página de manera independiente.
+
+Se construye aplicando una misma lógica de decisión sobre cinco variables:
 
 | Variable | Valores |
 |---|---|
@@ -308,256 +336,408 @@ Se especifica como una **regla de decisión por botón**, evaluada sobre cinco v
 | **Los clubes alrededor del club ideal** | Único en su ciudad · Dos o más en la ciudad, ninguno a 5 km · Dos o más, al menos uno a 5 km |
 | **Los objetivos elegidos** | Uno · Dos, y si el objetivo de la página es uno de ellos |
 
-Las dos primeras variables componen los tres estados del apartado 3.4.
+Las dos primeras variables producen los tres estados definidos en el apartado 3.4.
 
-El menú se arma con **tres ranuras fijas**, presentes en todas las páginas y en todos los estados, y después con los **botones propios** del tipo de página.
+El menú se construye a partir de **tres ranuras fijas**, presentes en todas las páginas y en todos los estados.
+
+Después se agregan, cuando corresponda, los botones propios de cada tipo de página.
+
+---
 
 ### 3.6.1 El orden de los botones
 
-> **De izquierda a derecha: el club, la experiencia y la visita. Después, los botones propios de la página.**
+El orden es siempre el mismo:
 
-El orden es el mismo en los once tipos de página y en los tres estados. El número de botones va de tres a cinco, según la página y el estado.
+**club → experiencia → visita → botones propios de la página.**
+
+Se conserva en los once tipos de página y en los tres estados.
+
+Según la página y el estado, el menú contiene entre **tres y cinco botones**.
+
+---
 
 ### 3.6.2 Ranura 1 · El club
 
-La etiqueta depende únicamente del cuestionario.
+La primera ranura depende de si el cuestionario está pendiente o completado.
 
 | Estado | Qué aparece |
 |---|---|
 | **Sin cuestionario**, en cualquier página, incluida la de un club | **Encuentra tu club ideal** — abre el cuestionario |
-| **Con experiencia**, con cita o sin ella, en cualquier página | **Conoce otros clubes Sports World** — despliega las opciones de la tabla siguiente |
+| **Con experiencia**, con cita o sin ella, en cualquier página | **Conoce otros clubes Sports World** — despliega opciones calculadas desde el club ideal de la persona |
 
-Las opciones se despliegan dentro del botón, **medidas desde el club ideal de la persona**, incluso cuando está viendo la página de otro club:
+Cuando el club ideal ya está resuelto, las opciones dependen de lo que existe alrededor de él:
 
 | Qué hay alrededor del club ideal | Qué opciones se despliegan |
 |---|---|
-| **Único en su ciudad** | Conoce nuestros clubes en todo el país |
-| **Dos o más en la ciudad, ninguno a 5 km** | Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
-| **Dos o más en la ciudad, al menos uno a 5 km** | Conoce otros clubes en tu área · Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
+| **Es el único club en su ciudad** | Conoce nuestros clubes en todo el país |
+| **Hay dos o más clubes en la ciudad, pero ninguno a 5 km** | Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
+| **Hay dos o más clubes en la ciudad y al menos uno a 5 km** | Conoce otros clubes en tu área · Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
 
-**El radio de esta jerarquía es 5 km**, y el orden va de lo cercano a lo lejano.
+La jerarquía avanza **de lo más cercano a lo más lejano**.
 
-Es el radio con el que la persona **explora** otros clubes. El radio con el que el sistema **resuelve** su club ideal lo fija el capítulo 10.
+El radio de **5 km** se utiliza aquí únicamente para determinar qué clubes forman parte de las listas de exploración.
 
-Los kilómetros acotan qué clubes entran en cada lista. **La medida que se le muestra a la persona es el tiempo de traslado, en minutos.**
+El capítulo 10 establece las reglas con las que el sistema determina el club ideal.
 
-**Cada opción que aparece tiene al menos un club que mostrar.** En una ciudad con un solo club, la jerarquía empieza en el país.
+Los kilómetros definen qué clubes entran en cada grupo.
 
-Sin cuestionario, la ranura abre el cuestionario: el club ideal es el punto desde el cual se mide, y el cuestionario es lo que lo resuelve.
+La distancia que se muestra a la persona se expresa en **tiempo de traslado, en minutos**.
 
-Quien está viendo la página de Polanco y tiene resuelto Satélite ve la zona de Satélite.
+Cada opción del menú aparece únicamente cuando tiene al menos un club que mostrar.
 
-**Porque ahí es donde va a entrenar.**
+Por eso, en una ciudad con un solo club, la jerarquía comienza directamente en **«Conoce nuestros clubes en todo el país»**.
 
-La Zona Metropolitana del Valle de México concentra **32 de los 49 clubes**, de modo que el tercer caso de la tabla es el más frecuente.
+Mientras el cuestionario siga pendiente, la ranura abre **Encuentra tu club ideal**, porque todavía no existe un club desde el cual medir.
+
+Una vez resuelto, la referencia es siempre el club ideal de la persona, incluso cuando está navegando por otro.
+
+Quien está viendo la página de Polanco pero tiene Satélite como club ideal verá las opciones correspondientes a Satélite.
+
+**Porque ese es el club alrededor del cual se está construyendo su experiencia.**
+
+La Zona Metropolitana del Valle de México concentra 32 de los 49 clubes, por lo que el tercer caso de la tabla será el más frecuente.
+
+---
 
 ### 3.6.3 Ranura 2 · La experiencia
 
 | Estado | Qué aparece |
 |---|---|
-| **Sin cuestionario** | **Diseña tu experiencia** |
-| **Con experiencia**, con cita o sin ella | **Volver a tu Experiencia Ideal** |
+| **Sin cuestionario** | Diseña tu experiencia |
+| **Con experiencia**, con cita o sin ella | Volver a tu Experiencia Ideal |
+
+---
 
 ### 3.6.4 Ranura 3 · La visita
 
 | Estado | Qué aparece |
 |---|---|
-| **Sin cita** | **Agenda tu visita** |
-| **Con cita** | **Tu visita agendada** — abre su cita, para verla, cambiarla o cancelarla |
+| **Sin cita** | Agenda tu visita |
+| **Con cita** | Tu visita agendada — abre la cita para verla, cambiarla o cancelarla |
+
+---
 
 ### 3.6.5 Qué hace «Agenda tu visita» del encabezado cuando ya hay cita
 
-El botón del encabezado conserva su etiqueta en las 148 páginas, porque es la acción de conversión del sitio, y cambia su comportamiento: antes de llevarla a ningún lado, **le pregunta si desea agendar una visita en otro club.**
+El botón **Agenda tu visita** del encabezado conserva la misma etiqueta en las 148 páginas porque sigue siendo la acción principal de conversión del sitio.
+
+Lo que cambia es su comportamiento cuando la persona ya tiene una cita.
+
+Antes de iniciar un nuevo agendado, el sistema pregunta si desea visitar otro club.
 
 | Respuesta | Qué ocurre |
 |---|---|
-| **No** | La lleva a su visita agendada |
-| **Sí** | Le pide el club, **recalcula su Experiencia Ideal para ese club con las respuestas que ya dio** y la lleva a agendar la cita en ese club |
+| **No** | La lleva a su visita ya agendada |
+| **Sí** | Le pide que seleccione el nuevo club, recalcula su Experiencia Ideal para ese club utilizando las respuestas que ya dio y la conduce al agendado de esa nueva visita |
 
-**La primera cita se conserva.** Una persona puede tener visitas agendadas en dos clubes, y **cada una lleva su propia Experiencia Ideal y su propio brief**, porque dos clubes distintos resuelven clases distintas. El capítulo 4 especifica las dos entregas y el capítulo 9, lo que ocurre al confirmarse el alta de la membresía.
+La primera cita se conserva.
+
+Una persona puede tener visitas agendadas en dos clubes.
+
+Cada cita tiene **su propia Experiencia Ideal y su propio brief**, porque clubes distintos pueden producir combinaciones distintas de clases.
+
+El capítulo 4 especifica ambos entregables y el capítulo 9 define qué ocurre al confirmarse el alta de la membresía.
+
+---
 
 ### 3.6.6 La leyenda de disponibilidad
 
-Con el cuestionario completado, **cada clase de una lista de objetivo lleva la leyenda «Disponible en tu club» o «No disponible en tu club».** «Tu club» es el club ideal de la persona.
+Una vez completado el cuestionario, cada clase dentro de una lista de objetivo lleva una de dos leyendas:
 
-Es la **única superficie del sistema que nombra lo que un club no tiene**, y tiene una razón: aquí la persona está comparando, y para comparar necesita saberlo.
+**Disponible en tu club**
+o
+**No disponible en tu club**
 
-El capítulo 4 reserva esa información para listas como esta. Su plan se entrega completo, con las clases que su club sí imparte.
+«Tu club» significa el **club ideal** de esa persona.
+
+Esta es la única superficie del sistema que señala expresamente algo que el club no tiene.
+
+La razón es funcional: aquí la persona está comparando opciones y necesita conocer esa diferencia.
+
+La Experiencia Ideal sigue otra lógica.
+
+Como especifica el capítulo 4, el plan se construye con lo que **sí está disponible** en el club correspondiente y se entrega completo, sin convertir las ausencias en parte de la experiencia.
+
+---
 
 ### 3.6.7 Los botones propios de cada tipo de página
 
-Se suman a las tres ranuras, siempre después de ellas.
+Estos botones aparecen después de las tres ranuras fijas.
 
 | Botón | Dónde aparece | Qué hace |
 |---|---|---|
-| **¿Cuál es tu objetivo?** | **Sin cuestionario**, en inicio, club, amenidad, clase, actividades para menores, entrenamiento personal y blog | Abre el cuestionario, empezando por las preguntas de contexto de la página |
-| **Conoce las clases ideales para *[el objetivo de la página]*** | En las seis páginas de objetivo, en los tres estados | Todas las clases del sistema que entregan ese objetivo. Con experiencia, con la leyenda del apartado 3.6.6 |
-| **Explora *[el otro objetivo elegido]*** | **Con experiencia**, en la página de un objetivo que la persona eligió, cuando eligió dos | La lleva a la página de su otro objetivo |
-| **Conoce los programas de *[nombre de la modalidad]*** | En las tres páginas de entrenamiento individual, en los tres estados | Los seis objetivos, cada uno con su programa de esa modalidad |
-| **Tu rutina individual** | En las tres páginas de entrenamiento individual, **con experiencia** | La parte individual de su experiencia: los bloques 01 y 02 del capítulo 4. Aparece para todas las personas |
-| **Otras clases similares** | En las páginas de clase, en los tres estados | Las clases agrupadas por nivel de intensidad y por beneficios parecidos a la que está viendo |
-| **Otros artículos similares** | En las páginas del blog, en los tres estados | Los artículos relacionados con el que está leyendo |
+| **¿Cuál es tu objetivo?** | Sin cuestionario, en Inicio, Club, Amenidad, Clase, Actividades para menores, Entrenamiento personal y Blog | Abre el cuestionario, comenzando por las preguntas de contexto de la página |
+| **Conoce las clases ideales para [el objetivo de la página]** | En las seis páginas de objetivo, en los tres estados | Abre todas las clases del sistema que contribuyen a ese objetivo. Con experiencia, muestra además la leyenda del apartado 3.6.6 |
+| **Explora [el otro objetivo elegido]** | Con experiencia, cuando la persona eligió dos objetivos y está en la página de uno de ellos | Lleva a la página del otro objetivo elegido |
+| **Conoce los programas de [nombre de la modalidad]** | En las tres páginas de entrenamiento individual, en los tres estados | Abre los seis objetivos, cada uno con el programa correspondiente a esa modalidad |
+| **Tu rutina individual** | En las tres páginas de entrenamiento individual, con experiencia | Abre la parte individual de su experiencia: los bloques 01 y 02 del capítulo 4. Aparece para todas las personas |
+| **Otras clases similares** | En las páginas de clase, en los tres estados | Muestra clases agrupadas por nivel de intensidad y beneficios semejantes |
+| **Otros artículos similares** | En las páginas del blog, en los tres estados | Muestra artículos relacionados con el que la persona está leyendo |
 
-**Las clases ideales de un objetivo se ven en la página de ese objetivo.** Con dos objetivos elegidos, la persona llega a la del otro por «Explora…», desde la página de cualquiera de los dos; desde la página de un objetivo que no eligió, por su Experiencia Ideal o por el menú superior.
+Las clases correspondientes a un objetivo se consultan en la página de ese objetivo.
 
-**Los artículos del blog se enlazan dentro del contenido de cada página**, en el párrafo que trata el tema.
+Cuando una persona eligió dos, puede pasar directamente de uno al otro mediante **Explora [el otro objetivo]**.
+
+Si está navegando por la página de un objetivo que no eligió, puede regresar a los propios desde su Experiencia Ideal o mediante el menú superior.
+
+Los artículos del blog se enlazan **dentro del contenido**, en el párrafo en el que se desarrolla el tema correspondiente.
+
+---
 
 ### 3.6.8 Las cuatro puertas al cuestionario y las preguntas de contexto
 
-**Encuentra tu club ideal, ¿Cuál es tu objetivo?, Diseña tu experiencia y Agenda tu visita abren el mismo cuestionario.** El capítulo 8 especifica la cuarta.
+Cuatro botones pueden iniciar el cuestionario:
 
-Las cuatro empiezan por **las preguntas de contexto de la página desde la que se tocó el botón**, y después siguen con el primer reactivo. Una **pregunta de contexto** confirma lo que la página ya revela de la persona. Es parte de la **precarga**, que el apartado 3.8 presenta y el capítulo 5 especifica.
+**Encuentra tu club ideal · ¿Cuál es tu objetivo? · Diseña tu experiencia · Agenda tu visita**
 
-| Desde dónde tocó el botón | Qué se le confirma antes del primer reactivo |
+Los cuatro abren el mismo instrumento.
+
+Lo que cambia es **lo que el sistema ya sabe por la página desde la que la persona llegó**.
+
+Antes del primer reactivo, el cuestionario confirma ese contexto.
+
+| Desde dónde tocó el botón | Qué se confirma antes del primer reactivo |
 |---|---|
 | **Página de alberca** | Si quiere que su experiencia incluya entrenamiento acuático |
 | **Página de otra amenidad** | Si quiere que su experiencia incluya esa amenidad |
 | **Página de una clase** | Si quiere que su experiencia incluya esa clase |
-| **Página de un club** | Si quiere que ese club sea su club ideal, o prefiere una recomendación |
+| **Página de un club** | Si quiere que ese club sea su club ideal o prefiere una recomendación |
 | **Página de un objetivo** | Si ese es su objetivo |
 | **Actividades para menores** | Si visitaría el club con sus hijos |
-| **Inicio, membresías o blog, como primera página de la sesión** | El cuestionario abre en el primer reactivo |
+| **Inicio, Membresías o Blog como primera página de la sesión** | El cuestionario abre directamente en el primer reactivo |
+
+Estas preguntas no vuelven a pedir información que la navegación ya sugirió.
+
+**La confirman.**
+
+Ese mecanismo forma parte de la precarga que presenta el apartado 3.8 y que el capítulo 5 especifica en detalle.
 
 ---
 
 ## 3.7 Los menús, uno por uno
 
-Las reglas del apartado 3.6 se aplican a **los once tipos de página por los tres estados: treinta y tres escenarios.**
+Las reglas del apartado 3.6 se aplican a los **once tipos de página y los tres estados**, lo que produce treinta y tres escenarios base.
 
-Las tres páginas de entrenamiento individual pertenecen al tipo 05 y llevan otros botones, de modo que ocupan una fila propia.
+Las tres páginas de entrenamiento individual pertenecen al tipo 05, pero utilizan botones propios y por eso aparecen en una fila separada.
 
-El orden de cada celda es el del apartado 3.6.1.
+Dentro de cada celda, los botones se presentan en el orden establecido en 3.6.1.
 
-Donde dice *[el objetivo de la página]* va el nombre del objetivo de esa página. Donde dice *[otro objetivo]*, el otro objetivo que la persona eligió; ese botón aparece cuando eligió dos y está en la página de uno de ellos.
+Donde aparece **[el objetivo de la página]** se utiliza el nombre del objetivo correspondiente.
 
-| Tipo de página | **Sin cuestionario** | **Con experiencia** | **Con visita** |
+Donde aparece **[otro objetivo]**, se utiliza el segundo objetivo elegido por la persona. Ese botón solo aparece cuando eligió dos y se encuentra en la página de uno de ellos.
+
+| Tipo de página | Sin cuestionario | Con experiencia | Con visita |
 |---|---|---|---|
-| **Inicio** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita | Igual que la anterior, con **Tu visita agendada** |
-| **Club** | Igual que Inicio | Igual que Inicio | Igual que la anterior, con **Tu visita agendada** |
-| **Hub de amenidad** | Igual que Inicio | Igual que Inicio | Igual que la anterior, con **Tu visita agendada** |
-| **Clase premium** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? · **Otras clases similares** | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita · **Otras clases similares** | Igual que la anterior, con **Tu visita agendada** |
-| **Clase individual** | Igual que Clase premium | Igual que Clase premium | Igual que la anterior, con **Tu visita agendada** |
-| **Entrenamiento individual**, las tres modalidades del tipo 05 | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Conoce los programas de *[modalidad]*** | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita · Conoce los programas de *[modalidad]* · **Tu rutina individual** | Igual que la anterior, con **Tu visita agendada** |
-| **Actividades para menores de 3 meses a 13 años** | Igual que Inicio | Igual que Inicio | Igual que la anterior, con **Tu visita agendada** |
-| **Objetivo**, las cinco páginas | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Conoce las clases ideales para *[el objetivo de la página]*** | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita · Conoce las clases ideales para *[el objetivo de la página]* · **Explora *[otro objetivo]***, en la página de uno de sus dos objetivos | Igual que la anterior, con **Tu visita agendada** |
-| **Bajar de peso** | Igual que Objetivo | Igual que Objetivo | Igual que la anterior, con **Tu visita agendada** |
-| **Entrenamiento personal** | Igual que Inicio | Igual que Inicio | Igual que la anterior, con **Tu visita agendada** |
-| **Membresías** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita | Igual que la anterior, con **Tu visita agendada** |
-| **Blog** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Otros artículos similares** · ¿Cuál es tu objetivo? | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita · **Otros artículos similares** | Igual que la anterior, con **Tu visita agendada** |
+| **Inicio** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita | Igual que Con experiencia, sustituyendo la tercera ranura por Tu visita agendada |
+| **Club** | Igual que Inicio | Igual que Inicio | Igual que Con experiencia, con Tu visita agendada |
+| **Hub de amenidad** | Igual que Inicio | Igual que Inicio | Igual que Con experiencia, con Tu visita agendada |
+| **Clase premium** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? · Otras clases similares | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita · Otras clases similares | Igual que Con experiencia, con Tu visita agendada |
+| **Clase individual** | Igual que Clase premium | Igual que Clase premium | Igual que Con experiencia, con Tu visita agendada |
+| **Entrenamiento individual · tres modalidades del tipo 05** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · Conoce los programas de [modalidad] | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita · Conoce los programas de [modalidad] · Tu rutina individual | Igual que Con experiencia, con Tu visita agendada |
+| **Actividades para menores de 3 meses a 13 años** | Igual que Inicio | Igual que Inicio | Igual que Con experiencia, con Tu visita agendada |
+| **Objetivo · cinco páginas** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · Conoce las clases ideales para [el objetivo de la página] | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita · Conoce las clases ideales para [el objetivo de la página] · Explora [otro objetivo], cuando corresponda | Igual que Con experiencia, con Tu visita agendada |
+| **Bajar de peso** | Igual que Objetivo | Igual que Objetivo | Igual que Con experiencia, con Tu visita agendada |
+| **Entrenamiento personal** | Igual que Inicio | Igual que Inicio | Igual que Con experiencia, con Tu visita agendada |
+| **Membresías** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita | Igual que Con experiencia, con Tu visita agendada |
+| **Blog** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · Otros artículos similares · ¿Cuál es tu objetivo? | Conoce otros clubes Sports World · Volver a tu Experiencia Ideal · Agenda tu visita · Otros artículos similares | Igual que Con experiencia, con Tu visita agendada |
 
-**Las celdas de «Con visita» repiten las de «Con experiencia» y cambian la tercera ranura: la cita cambia la ranura de la visita.**
+El estado **Con visita** conserva el menú del estado **Con experiencia** y modifica únicamente la tercera ranura:
+
+**Agenda tu visita → Tu visita agendada.**
+
+---
 
 ### 3.7.1 Cuántos botones lleva cada página
 
 | Tipo de página | Sin cuestionario | Con experiencia | Con visita |
-|---|---|---|---|
-| Inicio, club, amenidad, actividades para menores, entrenamiento personal | 4 | 3 | 3 |
-| Clase premium e individual | 5 | 4 | 4 |
-| Entrenamiento individual, las tres modalidades | 4 | 5 | 5 |
-| Objetivo y bajar de peso | 4 | 4, o 5 en la página de uno de sus dos objetivos | 4, o 5 en la página de uno de sus dos objetivos |
-| Membresías | **3** | **3** | **3** |
-| Blog | 5 | 4 | 4 |
+|---|---:|---:|---:|
+| **Inicio, Club, Amenidad, Actividades para menores y Entrenamiento personal** | 4 | 3 | 3 |
+| **Clase premium e individual** | 5 | 4 | 4 |
+| **Entrenamiento individual · tres modalidades** | 4 | 5 | 5 |
+| **Objetivo y Bajar de peso** | 4 | 4, o 5 en la página de uno de sus dos objetivos | 4, o 5 en la página de uno de sus dos objetivos |
+| **Membresías** | 3 | 3 | 3 |
+| **Blog** | 5 | 4 | 4 |
 
-De tres a cinco botones.
+El menú contiene, por tanto, **entre tres y cinco botones**.
+
+---
 
 ### 3.7.2 Membresías, el menú más corto
 
-Membresías lleva las tres ranuras en los tres estados, y nada más.
+Membresías utiliza únicamente las tres ranuras fijas en los tres estados.
 
-Quien está ahí compara precio y condiciones. La ranura de la experiencia le entrega su plan completo cuando lo quiera.
+No necesita botones adicionales.
 
-Las demás páginas sin objetivo propio llevan «¿Cuál es tu objetivo?» mientras el cuestionario está pendiente, y el blog entre ellas: un artículo casi siempre trata de un objetivo, y la pregunta llega cuando la persona está pensando en él.
+La razón es simple:
 
-Con el cuestionario completado, esas páginas quedan en tres botones. El blog y la clase quedan en cuatro, con el suyo.
+**quien está en Membresías ya está comparando precio y condiciones.**
+
+La ranura de Experiencia le permite regresar a su plan cuando lo necesite, sin interrumpir esa comparación con nuevas rutas de navegación.
+
+Las demás páginas que no tienen un objetivo propio muestran **¿Cuál es tu objetivo?** mientras el cuestionario siga pendiente.
+
+El Blog también lo hace: un artículo suele estar relacionado con una necesidad concreta y la pregunta aparece precisamente cuando la persona está pensando en ella.
+
+Una vez completado el cuestionario, esas páginas regresan a las tres ranuras base.
+
+Blog y Clase mantienen además su botón propio.
+
+---
 
 ### 3.7.3 Las tres páginas de entrenamiento individual
 
-Entrenamiento con pesas, entrenamiento aeróbico y entrenamiento aeróbico en alberca son tres de las 47 clases individuales del tipo 05, y se comportan como páginas de objetivo. **Su botón propio nombra la modalidad** y abre los seis objetivos, cada uno con su programa: el nombre que la persona lee y la razón por la que le sirve. Al tocar un programa se ven los clubes donde está disponible, y de ahí se llega a la página del club; en alberca, los clubes con alberca. Con el cuestionario completado, cada programa lleva la leyenda del apartado 3.6.6, que en la práctica distingue en alberca.
+**Entrenamiento con pesas, entrenamiento aeróbico y entrenamiento aeróbico en alberca** forman parte de las 47 clases individuales del tipo 05.
 
-**Los programas son secciones dentro de esas tres páginas.** El Contrato cuenta 47 clases individuales, que ya las incluyen, y cualquier adición exige convenio modificatorio.
+Sin embargo, sus páginas funcionan también como páginas de objetivo.
 
-**La persona lee el nombre del programa y la razón por la que le sirve.**
+Cada una tiene un botón propio:
 
-El equipo, el protocolo y el nombre técnico viven en la ficha interna, y el entrenador define el equipo y la carga en la primera sesión.
+**Conoce los programas de [modalidad].**
 
-El capítulo 11 especifica la fuente de la que salen los programas y el contrato que cumple.
+Ese botón abre los seis objetivos y muestra, para cada uno, el programa correspondiente de esa modalidad: **el nombre que la persona lee y la razón por la que le sirve**.
+
+Al tocar un programa aparecen los clubes donde está disponible.
+
+Desde ahí se llega a la página de cada club.
+
+En el caso del entrenamiento aeróbico en alberca, la lista se limita a los clubes que cuentan con alberca.
+
+Con el cuestionario completado, cada programa muestra además la leyenda de disponibilidad del apartado 3.6.6.
+
+Los programas son **secciones dentro de esas tres páginas**, no páginas nuevas.
+
+El Contrato fija 47 clases individuales y esas tres ya están incluidas en el total.
+
+Cualquier página adicional exigiría un convenio modificatorio.
+
+La persona ve únicamente **el nombre del programa y la razón por la que le sirve**.
+
+El equipo, el protocolo y el nombre técnico permanecen en la ficha interna.
+
+El entrenador define equipo y carga durante la primera sesión.
+
+El capítulo 11 especifica la fuente de los programas y el contrato que deben cumplir.
 
 ---
 
 ## 3.8 Qué se lleva la persona al cuestionario
 
-La página desde la que la persona tocó el botón es lo que el sistema ya sabe de ella.
+La página desde la que la persona entra al cuestionario contiene información sobre lo que acaba de buscar o explorar.
 
-El cuestionario, en lugar de preguntárselo, se lo confirma. Esa información es la **precarga**: el bloque con el que el cuestionario abre.
+El sistema utiliza ese contexto en lugar de ignorarlo.
 
-El capítulo 5 especifica el mecanismo. La tabla siguiente dice qué aporta cada tipo de página.
+**No vuelve a preguntarle desde cero. Lo confirma.**
+
+Ese bloque inicial es la **precarga**.
+
+El capítulo 5 especifica el mecanismo.
 
 | Tipo de página de origen | Qué precarga | Forma de la pregunta |
 |---|---|---|
-| 01 · Inicio | — | Sin bloque |
-| 02 · Club | Ese club | Dos opciones |
-| 03 · Alberca | Entrenamiento acuático | Dos opciones |
-| 03 · Otras amenidades | Esa amenidad | Dos opciones |
-| 04 y 05 · Clases | Esa clase | Sí o no |
-| 05 · Entrenamiento individual | La modalidad | Dos opciones |
-| 06 · Actividades para menores | Esa preferencia | Sí o no |
-| 07 · Objetivo | El objetivo de la página | Sí o no |
-| 08 · Bajar de peso | Ese objetivo | Sí o no |
-| 09 · Entrenamiento personal | — | Sin bloque |
-| 10 · Membresías | — | Sin bloque |
-| 11 · Blog | El objetivo del artículo, cuando lo tiene | Sí o no |
+| **01 · Inicio** | — | Sin bloque |
+| **02 · Club** | Ese club | Dos opciones |
+| **03 · Alberca** | Entrenamiento acuático | Dos opciones |
+| **03 · Otras amenidades** | Esa amenidad | Dos opciones |
+| **04 y 05 · Clases** | Esa clase | Sí o no |
+| **05 · Entrenamiento individual** | La modalidad | Dos opciones |
+| **06 · Actividades para menores** | Esa preferencia | Sí o no |
+| **07 · Objetivo** | El objetivo de la página | Sí o no |
+| **08 · Bajar de peso** | Ese objetivo | Sí o no |
+| **09 · Entrenamiento personal** | — | Sin bloque |
+| **10 · Membresías** | — | Sin bloque |
+| **11 · Blog** | El objetivo del artículo, cuando lo tiene | Sí o no |
 
-«Dos opciones» y «Sí o no» son las dos formas que el capítulo 5 define: la primera ofrece aceptar o pedir una recomendación; la segunda, aceptar o no. El entrenamiento personal se propone a todas las personas, de modo que su página abre el cuestionario en el primer reactivo.
+«Dos opciones» y «Sí o no» son las dos formas de confirmación que define el capítulo 5.
 
-**Lo que el sistema conoce de la persona es su navegación:** en qué página aterrizó y cuáles visitó después. El apartado 5.2.1 lo especifica.
+La primera permite **aceptar lo que la página sugiere o pedir una recomendación**.
 
-Lo que relaciona esas páginas entre sí es el **identificador de sesión** —`web_session_id` en el Mapa del Funnel—: un código propio, aleatorio y vacío.
+La segunda permite **aceptarlo o rechazarlo**.
 
-Vive en el navegador mientras dura la sesión y permanece del lado de la persona. El capítulo 9 especifica su alcance.
+Entrenamiento personal se propone a todas las personas, por lo que su página no necesita precarga y abre directamente en el primer reactivo.
+
+La información contextual que conoce el sistema proviene de la navegación de esa sesión: **en qué página aterrizó la persona y cuáles visitó después**.
+
+El apartado 5.2.1 especifica ese mecanismo.
+
+Las páginas se relacionan mediante el identificador de sesión, **`web_session_id`** en el Mapa del Funnel.
+
+Es un identificador propio y aleatorio que **no contiene información personal en sí mismo**.
+
+Permanece en el navegador mientras dura la sesión y del lado de la persona.
+
+El capítulo 9 especifica su alcance y persistencia.
 
 ---
 
 ## 3.9 La página es la misma para todos; el menú es la capa personal
 
-Cada una de las 148 páginas se genera con el corte de las 06:00 y se sirve idéntica a todas las personas, desde caché.
+Cada una de las 148 páginas se genera a partir del corte de las 06:00 y se sirve desde caché.
 
-**El contenido es el mismo para cualquiera que abra la página.**
+**El contenido base es idéntico para todas las personas.**
 
-Lo que depende de quien mira es la **capa personal**: el menú contextual, la leyenda del apartado 3.6.6, «Explora…», «Tu visita agendada» y el comportamiento de «Agenda tu visita» del encabezado cuando ya hay cita.
+La personalización no modifica la página.
 
-Esa capa se resuelve con el identificador de sesión y se monta sobre la página. La técnica —servidor, red de distribución o navegador— la elige quien construye.
+Se añade encima de ella como una capa.
 
-De esa separación salen cinco reglas de diseño:
+Esa capa incluye:
 
-| | Regla |
+* el menú contextual;
+* la leyenda **Disponible en tu club / No disponible en tu club**;
+* **Explora [otro objetivo]**;
+* **Tu visita agendada**;
+* y el comportamiento de **Agenda tu visita** del encabezado cuando ya existe una cita.
+
+La capa se resuelve a partir del identificador de sesión y se monta sobre la página base.
+
+La implementación concreta —servidor, red de distribución o navegador— queda en manos de quien construye la solución.
+
+De esa separación salen cinco reglas de diseño.
+
+| Regla | Especificación |
 |---|---|
-| **1 · El máximo de botones** | El menú se diseña para el número máximo de botones que ese tipo de página puede llevar, y reserva ese espacio, de modo que el contenido conserve su posición cuando el menú cambie de estado o llegue después que la página. El máximo lo fija el apartado 3.7.1: cinco en clase, blog, entrenamiento individual y objetivo; cuatro en inicio, club, amenidad, actividades para menores y entrenamiento personal; tres en membresías |
-| **2 · Con identificador y sin él** | Quien llega con identificador de sesión recibe el menú de su estado, resuelto con ese identificador. Quien llega sin él recibe el menú sin cuestionario, escrito en la página, que aparece junto con el contenido |
-| **3 · Si el script falla** | El sitio usa JavaScript en la aplicación, en las animaciones y en la capa personal. Cuando el script de la capa personal falla en una visita, la persona ve la página completa con el menú sin cuestionario, cuyos cuatro botones son enlaces. La aplicación —cuestionario, experiencia y agenda— requiere el script; BES es su respaldo |
-| **4 · Sin consultas adicionales** | La leyenda y «Explora» se resuelven con datos que la página ya trae —los clubes donde se imparte cada clase— y con el estado de la sesión |
-| **5 · Dos entornos, un solo paso** | El cuestionario, la experiencia y la agenda son pantallas de aplicación. La precarga del apartado 3.8 es el puente entre los dos entornos, y el diseño hace continuo el paso: mismo encabezado, misma tipografía, misma velocidad |
+| **1 · El máximo de botones** | Cada tipo de página reserva desde el inicio el espacio correspondiente al máximo número de botones que puede llegar a tener. Así, el contenido no cambia de posición cuando el menú cambia de estado o se carga después. El máximo es cinco en Clase, Blog, Entrenamiento individual y Objetivo; cuatro en Inicio, Club, Amenidad, Actividades para menores y Entrenamiento personal; y tres en Membresías |
+| **2 · Con identificador y sin él** | Quien llega con identificador de sesión recibe el menú correspondiente a su estado. Quien llega sin él recibe el menú Sin cuestionario correspondiente a ese tipo de página, servido junto con el contenido |
+| **3 · Si el script falla** | Si falla el script responsable de la capa personal, la persona continúa viendo la página completa con el menú Sin cuestionario correspondiente a ese tipo de página. Los elementos de navegación que pueden funcionar como enlaces permanecen disponibles. Las pantallas de aplicación —cuestionario, Experiencia Ideal y agenda— requieren el script; BES funciona como respaldo de atención |
+| **4 · Sin consultas adicionales** | La leyenda de disponibilidad y el botón Explora se resuelven utilizando información que la página ya contiene —incluidos los clubes donde se imparte cada clase— y el estado de la sesión |
+| **5 · Dos entornos, un solo paso** | El cuestionario, la Experiencia Ideal y la agenda son pantallas de aplicación. La precarga del apartado 3.8 funciona como puente entre las páginas públicas y esas pantallas. El diseño debe hacer que el paso se perciba continuo: mismo encabezado, misma tipografía y misma velocidad de respuesta |
 
-**La capa fija admite animaciones y transiciones.**
+La capa fija puede utilizar animaciones y transiciones.
 
-Sus dos límites son el rendimiento que exige el posicionamiento en buscadores —el contenido conserva su posición una vez pintado— y la accesibilidad.
+Tiene, sin embargo, dos límites no negociables:
+
+**rendimiento y accesibilidad.**
+
+El contenido no debe desplazarse después de haberse pintado, porque ese movimiento afecta tanto la experiencia como las exigencias de posicionamiento en buscadores.
 
 ---
 
 ## 3.10 El blog
 
-Los diez primeros tipos de página responden a una pregunta: **«qué hay».** El club, la clase, la amenidad, la membresía.
+Los primeros diez tipos de página responden principalmente a una pregunta:
 
-El blog responde a otra: **«qué me conviene».**
+**¿qué hay?**
 
-Es la búsqueda que ocurre antes de que la persona sepa que Sports World es una opción, y por eso el blog llega antes que los otros diez.
+Qué club existe. Qué clase se imparte. Qué amenidad tiene. Qué membresía se ofrece.
 
-Dos reglas lo gobiernan:
+El Blog responde a otra:
 
-1. **Cada artículo aporta contenido propio**, distinto del de la página de objetivo con la que se relaciona.
-2. **Cada artículo enlaza, dentro de su texto, al objetivo del que trata y a las clases y clubes que menciona.** Los enlaces viven en el párrafo donde la persona está leyendo sobre el tema.
+**¿qué me conviene?**
 
-Así el tipo 11 alimenta a los diez anteriores.
+Por eso ocupa un lugar distinto dentro del recorrido.
 
-Los artículos de salud llevan el tratamiento del apartado 3.5.4: firma de especialista con cédula profesional a la vista y aviso de salud.
+Atiende la búsqueda que ocurre **antes de que la persona sepa que Sports World puede ser una opción**.
 
-Describen cómo se adapta el entrenamiento, y remiten a la valoración del asesor y del profesional de salud.
+Y desde ahí la conecta con el resto del sistema.
+
+Dos reglas gobiernan sus artículos:
+
+1. **Cada artículo aporta contenido propio**, diferente del contenido de la página de objetivo con la que se relaciona.
+2. **Cada artículo enlaza dentro de su propio texto** al objetivo del que trata y a las clases y clubes que menciona. El enlace aparece en el párrafo en el que la persona está leyendo sobre ese tema, no como una lista desconectada al final.
+
+De esta forma, el tipo 11 alimenta a los diez anteriores.
+
+Los artículos relacionados con salud siguen el tratamiento del apartado 3.5.4:
+
+**firma de especialista con cédula profesional visible y aviso de salud.**
+
+El contenido explica cómo puede adaptarse el entrenamiento y remite, cuando corresponde, a la valoración del asesor y del profesional de salud.
