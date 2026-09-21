@@ -56,8 +56,8 @@ La frontera queda declarada en el texto, para que el lector sepa en qué modo es
 | **1** | Por qué existe la experiencia ideal | `01-por-que-existe-la-experiencia-ideal.es.md` | Aprobado |
 | **2** | El sitio: cómo la persona llega y cómo se le guía | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | Escrito, pendiente de aprobación. Diez apartados |
 | **3** | Qué recibe la persona y qué recibe el asesor | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | Aprobado |
-| **4** | Quién puede recorrer la experiencia | `04-quien-puede-recorrer-la-experiencia.es.md` | Aprobado |
-| **5** | El cuestionario: el único instrumento | `05-el-cuestionario.es.md` | Aprobado |
+| **4** | El cuestionario: el único instrumento | `04-el-cuestionario.es.md` | Aprobado |
+| **5** | Quién puede recorrer la experiencia | `05-quien-puede-recorrer-la-experiencia.es.md` | Aprobado |
 | **6** | Los objetivos de la persona | `06-los-objetivos-de-la-persona.es.md` | Aprobado |
 | **7** | El recorrido en pantalla | `07-el-recorrido-en-pantalla.es.md` | Escrito, pendiente de aprobación |
 | **8** | Datos de contacto y consentimiento | `08-datos-de-contacto-y-consentimiento.es.md` | Escrito, pendiente de aprobación |

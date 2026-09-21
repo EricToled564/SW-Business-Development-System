@@ -1,8 +1,8 @@
-# Capítulo 5 · El cuestionario: el único instrumento
+# Capítulo 4 · El cuestionario: el único instrumento
 
 Toda la personalización de la experiencia ideal sale de un solo instrumento: el **Cuestionario de Experiencia Ideal**. No hay una segunda fuente. Nada de lo que el sistema recomienda proviene de un dato que el cuestionario no haya recogido.
 
-## 5.1 Rol y propósito
+## 4.1 Rol y propósito
 
 El cuestionario tiene un trabajo y solo uno: **recoger lo necesario para construir la experiencia ideal de esa persona**, en alrededor de un minuto de su tiempo.
 
@@ -10,15 +10,15 @@ Tres reglas lo gobiernan, y no admiten excepción por canal:
 
 1. **Es el mismo en los tres canales.** Las preguntas, las opciones, las validaciones, las ramificaciones y los identificadores son idénticos en el sitio, en WhatsApp y en consola. BES no lo altera: lo aplica en conversación.
 2. **Es la única fuente de personalización.** Toda regla del sistema se dispara con un dato que sale de aquí.
-3. **No recoge información de salud.** Ni diagnósticos, ni lesiones, ni embarazo, ni tratamientos, ni medicamentos, ni cirugías, ni peso, estatura o medidas corporales. El apartado 5.7 explica por qué.
+3. **No recoge información de salud.** Ni diagnósticos, ni lesiones, ni embarazo, ni tratamientos, ni medicamentos, ni cirugías, ni peso, estatura o medidas corporales. El apartado 4.7 explica por qué.
 
-## 5.2 La precarga: lo que ya sabemos se confirma
+## 4.2 La precarga: lo que ya sabemos se confirma
 
 **A la persona no se le pregunta dos veces lo mismo.** Lo que el sistema ya sabe antes de que empiece el cuestionario no se le pregunta: se le confirma, en un solo bloque, antes del primer reactivo.
 
 Ese bloque se llama **P0 · Precarga**, y se declara dentro del instrumento. Se identifica por esa clave, se compone en cada sesión con el contexto de esa visita, y se resuelve antes del primer reactivo.
 
-### 5.2.1 De dónde sale lo que ya sabemos
+### 4.2.1 De dónde sale lo que ya sabemos
 
 | Canal | Conocimiento previo | Cuando no hay contexto |
 |---|---|---|
@@ -34,7 +34,7 @@ Ese bloque se llama **P0 · Precarga**, y se declara dentro del instrumento. Se 
 | Que llegó a la página de yoga de Polanco | Si escribió «yoga cerca de mí» o «clases de yoga Polanco» |
 | La ficha de la campaña, cuando viene de una | La consulta original, incluso en campaña |
 
-### 5.2.2 Las cuatro categorías y las dos formas
+### 4.2.2 Las cuatro categorías y las dos formas
 
 Solo cuatro cosas pueden precargarse, y cada una tiene una forma fija de preguntarse:
 
@@ -49,7 +49,7 @@ Solo cuatro cosas pueden precargarse, y cada una tiene una forma fija de pregunt
 
 Por eso una clase no lleva «o te recomendamos»: el sistema va a recomendar clases de cualquier forma, y ofrecerlo sería ofrecer lo que ya va a ocurrir. Y por eso un club sí la lleva: si no toma ese club, alguien tiene que elegir uno.
 
-### 5.2.3 Cómo se compone el bloque
+### 4.2.3 Cómo se compone el bloque
 
 **El bloque nunca ofrece algo que el sistema ya sabe que no puede entregar.** Antes de mostrarlo, cada punto candidato se verifica contra la instantánea del día. El que no se pueda cumplir no se muestra, y **no se menciona, no se explica y no deja rastro**.
 
@@ -66,7 +66,7 @@ Cuando el contexto revela varias páginas de la misma familia, producen **un sol
 
 **El bloque se compone una sola vez y se muestra una sola vez**, antes del primer reactivo y después de la compuerta de mayoría de edad. No se recompone con las respuestas que la persona dé dentro de él.
 
-### 5.2.4 Qué hace aceptar y qué hace rechazar
+### 4.2.4 Qué hace aceptar y qué hace rechazar
 
 | | Efecto |
 |---|---|
@@ -84,18 +84,18 @@ Aceptar un club apaga el resolver de club, no el reactivo 16: el código postal 
 
 Ese segundo caso agrega **un quinto requisito** a los cuatro que el cuestionario fija, y es el único que no viene del cuestionario sino del contexto previo. El capítulo 9 especifica cómo entra en la elección de club y qué leyenda lleva la alternativa que no imparte esa clase.
 
-## 5.3 Cómo se compone el cuestionario
+## 4.3 Cómo se compone el cuestionario
 
 | Elemento | Cuántos | Cuándo se pregunta |
 |---|---|---|
-| **G0** · Compuerta de mayoría de edad | 1 | Siempre, antes que nada. El capítulo 4 la especifica |
-| **P0** · Precarga | 1 bloque | Cuando hay contexto previo. Apartado 5.2 |
+| **G0** · Compuerta de mayoría de edad | 1 | Siempre, antes que nada. El capítulo 5 la especifica |
+| **P0** · Precarga | 1 bloque | Cuando hay contexto previo. Apartado 4.2 |
 | **Reactivos base** | 15 | Siempre, en el mismo orden |
 | **Reactivos condicionales** | 3 | Solo si una respuesta previa los dispara |
 
 Una persona contesta, por lo tanto, **entre 16 y 19 preguntas**: la compuerta, los quince reactivos base y de cero a tres condicionales.
 
-## 5.4 Los quince reactivos base
+## 4.4 Los quince reactivos base
 
 | № | Qué pregunta | Qué determina |
 |---|---|---|
@@ -117,7 +117,7 @@ Una persona contesta, por lo tanto, **entre 16 y 19 preguntas**: la compuerta, l
 
 El número 11 no aparece en esta lista porque es condicional.
 
-## 5.5 Los tres reactivos condicionales
+## 4.5 Los tres reactivos condicionales
 
 | № | Se pregunta cuando | Qué determina |
 |---|---|---|
@@ -125,7 +125,7 @@ El número 11 no aparece en esta lista porque es condicional.
 | **11** | El reactivo 10 es alguna de las dos opciones de regreso después de una pausa | Cuánto duró la pausa. Ajusta la preparación de la visita, sin inferir estado físico |
 | **15b** | El reactivo 15 es «ambos» | Cuál de los dos orígenes es el prioritario. El interés en Multiclub sigue activo sin capturar una segunda ubicación |
 
-## 5.6 Las dos preguntas que cambian la estructura
+## 4.6 Las dos preguntas que cambian la estructura
 
 Trece reactivos ajustan parámetros. Dos cambian la forma de la recomendación:
 
@@ -142,13 +142,13 @@ Trece reactivos ajustan parámetros. Dos cambian la forma de la recomendación:
 
 El capítulo 10 especifica cómo se compone el plan en cada modalidad.
 
-## 5.7 Cómo se comporta el cuestionario en pantalla
+## 4.7 Cómo se comporta el cuestionario en pantalla
 
 **A la persona no se le muestra nunca una opción que no le corresponde.** No se le presenta y después se le descarta: no aparece.
 
 > **Nada queda fijo hasta que toca «Siguiente».** El cuestionario **no avanza solo** al elegir una opción: la persona tiene que tocar «Siguiente» de forma expresa. Mientras siga en esa pantalla puede cambiar su respuesta las veces que quiera, sin costo, sin aviso y sin perder nada.
 
-### 5.7.1 Qué reactivos se preguntan y cuáles se resuelven solos
+### 4.7.1 Qué reactivos se preguntan y cuáles se resuelven solos
 
 Un reactivo condicional cuya condición no se cumple **no se muestra ni se envía.** No queda oculto con una respuesta guardada: sencillamente no existe para esa persona.
 
@@ -156,7 +156,7 @@ Un reactivo condicional cuya condición no se cumple **no se muestra ni se enví
 
 Y si vuelve a cambiar la respuesta de arriba de modo que el condicional aplique otra vez, **el reactivo reaparece con lo que ya había contestado**, en lugar de pedírselo de nuevo. Es la misma regla de siempre: lo que ya sabemos no se vuelve a preguntar.
 
-### 5.7.2 Opciones que solo aparecen cuando aplican
+### 4.7.2 Opciones que solo aparecen cuando aplican
 
 Dentro de un mismo reactivo, hay opciones que se muestran solo bajo su condición. En el reactivo de preferencias:
 
@@ -169,7 +169,7 @@ Dentro de un mismo reactivo, hay opciones que se muestran solo bajo su condició
 
 Por eso ese reactivo va después del de acompañamiento: necesita saber con quién visitaría el club para decidir qué opciones ofrecerle.
 
-### 5.7.3 Opciones que se apagan al llegar al límite
+### 4.7.3 Opciones que se apagan al llegar al límite
 
 El reactivo de objetivos permite elegir hasta dos, y la pantalla lo hace visible mientras la persona elige:
 
@@ -183,7 +183,7 @@ El reactivo de objetivos permite elegir hasta dos, y la pantalla lo hace visible
 
 **El orden de selección se conserva y significa algo:** la primera que toca es su objetivo principal, y el capítulo 6 explica cuánto pesa esa diferencia. Para invertirlos, deselecciona los dos y vuelve a elegir en el orden que quiere.
 
-### 5.7.4 La concordancia con la forma de trato
+### 4.7.4 La concordancia con la forma de trato
 
 El primer reactivo que cambia la pantalla es el **reactivo 2**, donde la persona dice cómo prefiere que se dirijan a ella —masculino, femenino o lenguaje neutral—.
 
@@ -204,7 +204,7 @@ La forma neutral es **una frase que vale para cualquiera**, no una marca tipogr�
 
 La concordancia no se detiene en el cuestionario. **El mismo reactivo 2 gobierna el texto que el sistema redacta** —el saludo, el argumento de su plan y el encabezado de su brief—, de principio a fin. El capítulo 12 especifica cómo.
 
-## 5.8 El alcance del cuestionario
+## 4.8 El alcance del cuestionario
 
 El instrumento **no recaba condiciones médicas, embarazo o posparto, tratamientos, medicamentos, cirugías, peso, estatura, medidas corporales ni datos de personas menores de edad.**
 
@@ -218,7 +218,7 @@ La valoración de salud corresponde al profesional del club, en el momento del a
 
 **La experiencia ideal tampoco ofrece** acompañamiento nutricional, planes alimenticios, dietas ni recomendaciones de nutrición.
 
-## 5.9 Las señales que viajan al brief
+## 4.9 Las señales que viajan al brief
 
 Algunas respuestas no cambian el plan: cambian cómo el asesor conduce la conversación. El sistema las levanta y las pone en el brief.
 

@@ -45,7 +45,7 @@ Un **hub** concentra un tema y enlaza a las páginas que lo desarrollan: el hub 
 
 ### 2.1.3 Las seis páginas de objetivo
 
-Los tipos 07 y 08 suman seis páginas, una por cada objetivo que el cuestionario ofrece en su reactivo 4, «¿Qué buscas?». **Reactivo** es el nombre que el capítulo 5 da a cada pregunta del cuestionario.
+Los tipos 07 y 08 suman seis páginas, una por cada objetivo que el cuestionario ofrece en su reactivo 4, «¿Qué buscas?». **Reactivo** es el nombre que el capítulo 4 da a cada pregunta del cuestionario.
 
 | Página | Objetivo del cuestionario |
 |---|---|
@@ -292,7 +292,7 @@ Se suman a las tres ranuras, siempre después de ellas.
 
 **Encuentra tu club ideal, ¿Cuál es tu objetivo?, Diseña tu experiencia y Agenda tu visita abren el mismo cuestionario.** El capítulo 7 especifica la cuarta.
 
-Las cuatro empiezan por **las preguntas de contexto de la página desde la que se tocó el botón**, y después siguen con el primer reactivo. Una **pregunta de contexto** confirma lo que la página ya revela de la persona. Es parte de la **precarga**, que el apartado 2.8 presenta y el capítulo 5 especifica.
+Las cuatro empiezan por **las preguntas de contexto de la página desde la que se tocó el botón**, y después siguen con el primer reactivo. Una **pregunta de contexto** confirma lo que la página ya revela de la persona. Es parte de la **precarga**, que el apartado 2.8 presenta y el capítulo 4 especifica.
 
 | Desde dónde tocó el botón | Qué se le confirma antes del primer reactivo |
 |---|---|
@@ -360,7 +360,7 @@ Entrenamiento con pesas, entrenamiento aeróbico y entrenamiento aeróbico en al
 
 ## 2.8 Qué se lleva la persona al cuestionario
 
-La página desde la que tocó el botón es lo que el sistema ya sabe de ella, y el cuestionario se lo confirma. Esa información es la **precarga**, el bloque con el que el cuestionario abre. El capítulo 5 especifica el mecanismo; esta tabla dice qué aporta cada tipo de página.
+La página desde la que tocó el botón es lo que el sistema ya sabe de ella, y el cuestionario se lo confirma. Esa información es la **precarga**, el bloque con el que el cuestionario abre. El capítulo 4 especifica el mecanismo; esta tabla dice qué aporta cada tipo de página.
 
 | Tipo de página de origen | Qué precarga | Forma de la pregunta |
 |---|---|---|
@@ -377,9 +377,9 @@ La página desde la que tocó el botón es lo que el sistema ya sabe de ella, y 
 | 10 · Membresías | — | Sin bloque |
 | 11 · Blog | El objetivo del artículo, cuando lo tiene | Sí o no |
 
-«Dos opciones» y «Sí o no» son las dos formas que el capítulo 5 define: la primera ofrece aceptar o pedir una recomendación; la segunda, aceptar o no. El entrenamiento personal se propone a todas las personas, de modo que su página abre el cuestionario en el primer reactivo.
+«Dos opciones» y «Sí o no» son las dos formas que el capítulo 4 define: la primera ofrece aceptar o pedir una recomendación; la segunda, aceptar o no. El entrenamiento personal se propone a todas las personas, de modo que su página abre el cuestionario en el primer reactivo.
 
-**Lo que el sistema conoce de la persona es su navegación:** en qué página aterrizó y cuáles visitó después. El apartado 5.2.1 lo especifica.
+**Lo que el sistema conoce de la persona es su navegación:** en qué página aterrizó y cuáles visitó después. El apartado 4.2.1 lo especifica.
 
 Lo que relaciona esas páginas entre sí es el **identificador de sesión** —`web_session_id` en el Mapa del Funnel—: un código propio, aleatorio y vacío, que vive en el navegador durante la sesión y nunca llega al registro del prospecto. El capítulo 7 lo especifica.
 

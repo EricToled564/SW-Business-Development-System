@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-101. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-102. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -45,13 +45,13 @@ El apellido se solicita en la captura de contacto, al terminar el cuestionario, 
 
 Lo que el sistema ya sabe antes de que empiece el cuestionario no se le pregunta: se le confirma, en un solo bloque, antes del primer reactivo. El bloque se llama **P0 · Precarga** y se declara dentro del instrumento.
 
-**Aterriza en:** capítulo 5.2.
+**Aterriza en:** capítulo 4.2.
 
 ### D-36 · De dónde sale el conocimiento previo, por canal
 
 Sitio web: las páginas que la persona visitó antes de abrir el cuestionario. WhatsApp: lo que la campaña que la trajo declara que promueve. Consola: el club donde la persona está parada, que se da por dado y no se pregunta.
 
-**Aterriza en:** capítulo 5.2.1.
+**Aterriza en:** capítulo 4.2.1.
 
 ### D-37 · Cuatro categorías y dos formas
 
@@ -61,7 +61,7 @@ Dos formas de preguntar, y una regla que las separa: si al contestar que no algu
 
 Club y amenidad llevan la opción de recomendar. Clase y objetivo son sí o no.
 
-**Aterriza en:** capítulo 5.2.2.
+**Aterriza en:** capítulo 4.2.2.
 
 ### D-38 · El bloque nunca ofrece lo que no se puede entregar
 
@@ -69,13 +69,13 @@ Antes de mostrarse, cada punto candidato se verifica contra la instantánea del 
 
 Si la navegación revela un club y una clase que ese club no imparte, se pregunta solo por el club. Nunca se le dice a la persona que el club no imparte lo que estuvo viendo.
 
-**Aterriza en:** capítulo 5.2.3.
+**Aterriza en:** capítulo 4.2.3.
 
 ### D-39 · El bloque se compone y se muestra una sola vez
 
 Después de la compuerta de mayoría de edad y antes del primer reactivo. No se recompone con las respuestas que la persona dé dentro de él.
 
-**Aterriza en:** capítulo 5.2.3.
+**Aterriza en:** capítulo 4.2.3.
 
 ### D-40 · La clase aceptada sin club fijado es requisito del club
 
@@ -83,7 +83,7 @@ Con club fijado, la clase aceptada queda asegurada en el tercer bloque y no agre
 
 Es el quinto requisito, y el único que no viene del cuestionario sino del contexto previo.
 
-**Aterriza en:** capítulos 5.2.4 y 9.
+**Aterriza en:** capítulos 4.2.4 y 9.
 **Fuera de la Arquitectura:** obliga a corregir el renglón de Clubes del control de lógica de CEI-01, que hoy exige solo amenidades, preferencias y clases por objetivo.
 
 ### D-41 · La ficha de campaña declara qué promueve
@@ -118,7 +118,7 @@ Unifica tres situaciones en un solo comportamiento: ningún club cercano cumple;
 
 El club se da por dado y no se pregunta. Cuando ese club no cumple lo que el perfil exige, el brief nombra lo que le falta y cuál club sí lo entrega. **Enviar o no a la persona a ese otro club es decisión del asesor.**
 
-**Aterriza en:** capítulos 3.4.4 y 5.2.1.
+**Aterriza en:** capítulos 3.4.4 y 4.2.1.
 **Abierto, fuera de la Arquitectura:** la regla de atribución comercial de esa venta corresponde al proceso comercial y está por definirse.
 
 ### D-45 · Al cambiar de club, el plan se recompone completo
@@ -147,7 +147,7 @@ Quien no confirma la mayoría de edad **no queda fuera**. El sistema le resuelve
 
 No se abre registro, no se escribe nada y al cerrar la sesión no queda rastro. El bloque de precarga sí se muestra, porque no pide ningún dato.
 
-**Aterriza en:** capítulo 4.2.
+**Aterriza en:** capítulo 5.2.
 
 ### D-48 · Identificador de sesión, que vive toda la sesión y muere con ella
 
@@ -199,7 +199,7 @@ Las remisiones internas de los capítulos ya aprobados se actualizaron en el mis
 
 ### D-52 · Los menús contextuales no se inventan: se recuperan
 
-La especificación de los menús contextuales **ya existía** en el depósito, repartida en tres lugares: `ux-spec-experiencia-ideal.md` §4.2 (los tres estados de usuario) y §6.4 (las matrices por tipo de página), `contenido-minimo-por-tipo-de-pagina.es.md` (las etiquetas exactas de cada botón) y el §3 del documento original de Arquitectura (la ramificación condicional y el resolvedor dinámico). El capítulo 2 **las consolida**, no las sustituye.
+La especificación de los menús contextuales **ya existía** en el depósito, repartida en tres lugares: `ux-spec-experiencia-ideal.md` §5.2 (los tres estados de usuario) y §6.4 (las matrices por tipo de página), `contenido-minimo-por-tipo-de-pagina.es.md` (las etiquetas exactas de cada botón) y el §3 del documento original de Arquitectura (la ramificación condicional y el resolvedor dinámico). El capítulo 2 **las consolida**, no las sustituye.
 
 **Aterriza en:** capítulo 2.4, cuando se redacte. **Alcanza también a la Parte II**, que prescribirá el comportamiento de esos menús.
 
@@ -207,7 +207,7 @@ La especificación de los menús contextuales **ya existía** en el depósito, r
 
 Mientras la persona no toque «Siguiente», puede cambiar de objetivos con entera libertad: quitar uno y poner otro cuantas veces quiera. El límite de dos no bloquea la pantalla, ordena la selección. **El orden en que los elige se conserva y significa algo:** el primero es su objetivo principal.
 
-**Aterriza en:** capítulos 5.7.3 y 6.
+**Aterriza en:** capítulos 4.7.3 y 6.
 
 ### D-54 · El botón de agendar abre el cuestionario con un preámbulo
 
@@ -262,8 +262,8 @@ El contenido de los apartados 2.2 y 2.3 sale de la **sección 5 de `contenido-mi
 
 | Qué | Dónde quedó |
 |---|---|
-| Los menús dinámicos del cuestionario | Capítulo **5.7**, «Cómo se comporta el cuestionario en pantalla» |
-| Que Google no entrega el término de búsqueda, y que solo se conoce la página de aterrizaje | Capítulo **5.2.1**, donde se especifica de dónde sale el conocimiento previo |
+| Los menús dinámicos del cuestionario | Capítulo **4.7**, «Cómo se comporta el cuestionario en pantalla» |
+| Que Google no entrega el término de búsqueda, y que solo se conoce la página de aterrizaje | Capítulo **4.2.1**, donde se especifica de dónde sale el conocimiento previo |
 
 **Aterriza en:** capítulos 2 y 5.
 
@@ -291,7 +291,7 @@ La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está 
 
 **Los dos límites de la regla.** No se miente: no se inventa un horario, un precio ni una disponibilidad que no se tienen. Y no se calla hacia dentro: toda contingencia resuelta en silencio hacia la persona **viaja al brief**, para que el asesor sepa con qué está trabajando.
 
-**Aterriza en:** capítulos 2, 5.9, 7.7 y 13.
+**Aterriza en:** capítulos 2, 4.9, 7.7 y 13.
 
 ### D-60 · Dos menús, y el contextual tiene cuatro ranuras
 
@@ -330,7 +330,7 @@ La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está 
 
 Y las tres **empiezan por las preguntas de contexto de la página desde la que se tocó el botón**, no por el primer reactivo. Desde la página de alberca se le confirma si quiere actividades acuáticas en su experiencia; desde una clase, esa clase; desde un club, ese club; desde un objetivo, ese objetivo. Solo quien entró por el inicio sin haber visto otra página no tiene contexto que confirmar.
 
-**Aterriza en:** capítulos 2.4.3 y 5.2.
+**Aterriza en:** capítulos 2.4.3 y 4.2.
 
 ### D-62 · La ranura del objetivo pregunta en E1 y entrega en E2
 
@@ -581,7 +581,7 @@ Ninguna pieza del sistema —ni la experiencia, ni el brief, ni BES— **propone
 
 ### D-80 · La atención a personas socias queda fuera de este documento
 
-**El sitio y BES atienden prospectos.** La experiencia ideal es un instrumento de captación, y el capítulo 4 ya lo acota a quien no tiene membresía activa.
+**El sitio y BES atienden prospectos.** La experiencia ideal es un instrumento de captación, y el capítulo 5 ya lo acota a quien no tiene membresía activa.
 
 Consultar horarios, congelar una membresía, cancelarla o cualquier otro autoservicio de una persona socia **no es materia de este documento**. Si Sports World decide publicar su política de cancelación o abrir un centro de ayuda, es contenido institucional, fuera de las 148 páginas y fuera de esta Arquitectura.
 
@@ -839,19 +839,19 @@ Son dos medidas con dos oficios distintos, y cada una se usa donde le toca:
 | Medida | Qué hace | Dónde se aplica |
 |---|---|---|
 | **Kilómetros** | **Acotan conjuntos de clubes:** dicen cuáles entran en cada lista | **10 km**, entre qué clubes el sistema **resuelve** el club ideal, capítulo 9. **5 km**, cuáles ofrece **explorar** el menú, medidos desde el club ideal, apartado 2.6.2 |
-| **Minutos** | **Miden el trayecto** de una persona a un club, con tráfico, desde su origen | Es **la medida que se le muestra**: el club recomendado del apartado 3.2.1, la entrega de la ruta reducida del capítulo 4, y el brief |
+| **Minutos** | **Miden el trayecto** de una persona a un club, con tráfico, desde su origen | Es **la medida que se le muestra**: el club recomendado del apartado 3.2.1, la entrega de la ruta reducida del capítulo 5, y el brief |
 
-**El origen del trayecto** lo da el reactivo 16 —código postal o colonia—, que se pregunta aunque la persona haya aceptado un club en la precarga, porque de él dependen el tiempo de traslado y el interés en Multiclub (capítulo 5).
+**El origen del trayecto** lo da el reactivo 16 —código postal o colonia—, que se pregunta aunque la persona haya aceptado un club en la precarga, porque de él dependen el tiempo de traslado y el interés en Multiclub (capítulo 4).
 
 **D-82 queda intacta:** los dos radios en kilómetros siguen siendo dos cosas distintas y no se unifican.
 
-**Aterriza en:** apartados 2.6.2, 3.2.1 y 5.4; capítulos 4 y 9.
+**Aterriza en:** apartados 2.6.2, 3.2.1 y 4.4; capítulos 5 y 9.
 
 ### D-97 · Las personas y el recorrido del cliente quedan fuera del documento
 
 La referencia de mejores prácticas pide una sección de **personas y customer journey**. **No entra.**
 
-La Arquitectura especifica el comportamiento del sistema. Lo que el sistema necesita saber de quien llega **no sale de un arquetipo: sale del cuestionario.** CEI-01 es el único instrumento, y el capítulo 5 lo dice en sus propios términos: ninguna regla de este documento se dispara con un dato que no salga de ahí. Un retrato de arquetipos sería, aquí, descripción que ninguna regla consume.
+La Arquitectura especifica el comportamiento del sistema. Lo que el sistema necesita saber de quien llega **no sale de un arquetipo: sale del cuestionario.** CEI-01 es el único instrumento, y el capítulo 4 lo dice en sus propios términos: ninguna regla de este documento se dispara con un dato que no salga de ahí. Un retrato de arquetipos sería, aquí, descripción que ninguna regla consume.
 
 **Dónde viven:** en los documentos de estrategia del depósito, que sí los tienen. La Arquitectura no los reproduce ni los cita.
 
@@ -924,6 +924,21 @@ D-92 prohíbe describir el sistema por lo que no hace. La prueba para aplicarla 
 **Los dos casos que se quedan por esta prueba:** «El objetivo que no se atiende: bajar de peso» y «La disciplina que sí existe y no se ve». Las dos nombran una omisión de Sports World, que es justo lo que el proyecto viene a corregir.
 
 **Aterriza en:** `NORMA-DE-REDACCION.es.md`, regla 1.
+
+### D-102 · El cuestionario pasa al capítulo 4 y la elegibilidad al 5
+
+El orden anterior ponía primero **quién puede recorrer la experiencia** y después **el cuestionario**. Queda al revés: **el instrumento se define antes que las condiciones para usarlo.**
+
+| Antes | Ahora |
+|---|---|
+| 4 · Quién puede recorrer la experiencia | **4 · El cuestionario: el único instrumento** |
+| 5 · El cuestionario: el único instrumento | **5 · Quién puede recorrer la experiencia** |
+
+Todo lo que el sistema personaliza sale del cuestionario, y los capítulos 2 y 3 ya lo citan antes de llegar a él. Definirlo primero deja al lector con el instrumento en la mano cuando llega a la compuerta de mayoría de edad, que es una condición de acceso a ese instrumento.
+
+**Qué se movió con el intercambio:** los dos archivos cambian de nombre, los apartados se renumeran —`4.1` a `4.9` para el cuestionario y `5.1` a `5.6` para la elegibilidad—, y las remisiones cruzadas se ajustan en los once archivos que las contienen. **Ningún texto cambia**: solo su número.
+
+**Aterriza en:** capítulos 4 y 5, y las remisiones de 2, 3, 7, 8, las páginas iniciales, la norma de redacción y esta bitácora.
 
 
 

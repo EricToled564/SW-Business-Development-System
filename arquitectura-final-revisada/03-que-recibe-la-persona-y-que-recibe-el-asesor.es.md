@@ -102,9 +102,9 @@ Esta página la comparten los dos destinatarios: arriba va la confirmación que 
 
 ### 3.4.3 Las señales del brief
 
-Las **señales** son avisos que el sistema levanta de las respuestas del cuestionario y pone a la vista del asesor. No cambian el plan: cambian cómo se conduce la conversación. El capítulo 5 las enumera una por una, junto al reactivo que las dispara.
+Las **señales** son avisos que el sistema levanta de las respuestas del cuestionario y pone a la vista del asesor. No cambian el plan: cambian cómo se conduce la conversación. El capítulo 4 las enumera una por una, junto al reactivo que las dispara.
 
-Ninguna señal contiene información de salud. El cuestionario no la recaba, y el capítulo 4 explica por qué.
+Ninguna señal contiene información de salud. El cuestionario no la recaba, y el capítulo 5 explica por qué.
 
 ### 3.4.4 Cuando otro club entrega mejor la experiencia
 

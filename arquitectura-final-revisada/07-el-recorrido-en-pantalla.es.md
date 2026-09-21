@@ -10,7 +10,7 @@ De ahí se sigue una regla que gobierna las 148 páginas:
 
 No existe una pantalla desde la que no se pueda agendar. Y **ese botón es la puerta de entrada a la experiencia ideal**: al tocarlo empieza el recorrido que este capítulo especifica. Cuando la persona ya tiene cita, el botón sigue ahí y se comporta como especifica el apartado 7.3.5.
 
-La página desde la que lo tocó no se pierde: es lo que alimenta el bloque de precarga del capítulo 5.
+La página desde la que lo tocó no se pierde: es lo que alimenta el bloque de precarga del capítulo 4.
 
 ## 7.2 Una sola dirección de internet
 
@@ -50,7 +50,7 @@ El texto tiene **dos versiones**, y lo único que cambia entre ellas es a qué s
 
 > Con el fin de proporcionarte la mejor experiencia durante tu visita a Sports World Polanco, permítenos hacerte unas preguntas. Solo toma un minuto de tu tiempo.
 
-El nombre del club se toma de la página desde la que tocó el botón. La promesa del minuto es literal y el capítulo 5 la sostiene: entre 16 y 19 preguntas, una por pantalla.
+El nombre del club se toma de la página desde la que tocó el botón. La promesa del minuto es literal y el capítulo 4 la sostiene: entre 16 y 19 preguntas, una por pantalla.
 
 ### 7.3.2 La fase 2 · Cuándo hay precarga
 
@@ -99,7 +99,7 @@ Ya con cita, el botón **«Agenda tu visita» del encabezado** no desaparece ni 
 
 ### 7.3.6 La ruta reducida tiene su propia secuencia
 
-Quien no confirma la mayoría de edad recorre tres fases, no seis: la invitación, los reactivos que alimentan la elección de club, y la entrega del club con su dirección y su tiempo de traslado. Sin cálculo de experiencia, sin contacto, sin agenda y sin brief. El capítulo 4 la especifica.
+Quien no confirma la mayoría de edad recorre tres fases, no seis: la invitación, los reactivos que alimentan la elección de club, y la entrega del club con su dirección y su tiempo de traslado. Sin cálculo de experiencia, sin contacto, sin agenda y sin brief. El capítulo 5 la especifica.
 
 ## 7.4 Avance y retroceso
 
@@ -134,7 +134,7 @@ Hace dos cosas, una antes del cuestionario y otra después:
 
 | Cuándo | Para qué sirve |
 |---|---|
-| **Antes del cuestionario** | Alimenta el bloque de precarga del capítulo 5: las páginas que visitó son lo que el sistema ya sabe de ella |
+| **Antes del cuestionario** | Alimenta el bloque de precarga del capítulo 4: las páginas que visitó son lo que el sistema ya sabe de ella |
 | **Después de entregada la experiencia** | Sostiene los estados «con experiencia» y «con visita» del capítulo 2: mientras navega, el sitio sigue reconociéndola como alguien que ya tiene su experiencia, haya agendado o no |
 
 **Vive toda la sesión y muere cuando la sesión cierra.** Al volver empieza de cero: es, para el sitio, alguien sin cuestionario.

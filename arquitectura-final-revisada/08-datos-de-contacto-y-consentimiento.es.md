@@ -2,7 +2,7 @@
 
 La experiencia ideal se construye con lo que la persona contesta. Para entregársela por correo, para que el club la espere y para que el asesor la llame, hacen falta además tres datos de contacto. Se piden en un solo momento, se escriben una sola vez, viven en un solo lugar y se entregan bajo un aviso.
 
-Todo lo que aquí se especifica ocurre después de la compuerta de mayoría de edad del capítulo 4: **quien llega a la captura de contacto confirmó ser mayor de edad.**
+Todo lo que aquí se especifica ocurre después de la compuerta de mayoría de edad del capítulo 5: **quien llega a la captura de contacto confirmó ser mayor de edad.**
 
 ## 8.1 Cuándo se piden y cuáles son
 
@@ -32,7 +32,7 @@ Los datos de contacto se piden **al terminar el cuestionario, en la fase 3 del r
 | **Entrega los datos** | Su contacto vive en la sesión. Al cerrarse la sesión se escribe su registro y se le envía su experiencia por correo |
 | **Omite los datos** | Ve su experiencia completa en pantalla, con la misma información. Esa experiencia vive en la sesión y termina con ella |
 
-**Los datos de contacto son de quien contesta.** Cuando la persona declara que entrenará con sus hijos, lo que se recoge es el interés en las actividades para menores de 3 meses a 13 años, que es un servicio del club. El apartado 4.6 fija esa regla.
+**Los datos de contacto son de quien contesta.** Cuando la persona declara que entrenará con sus hijos, lo que se recoge es el interés en las actividades para menores de 3 meses a 13 años, que es un servicio del club. El apartado 5.6 fija esa regla.
 
 ## 8.2 El envío de la experiencia por correo
 

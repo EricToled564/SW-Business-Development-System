@@ -68,21 +68,21 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 | **3.3** BES, disponible en todo momento | Qué puede hacer BES sobre la experiencia entregada | Regla |
 | **3.4** Lo que lee el asesor: el brief | Las dos páginas del brief, sus señales y el caso del club que entrega mejor | Tabla de datos + tabla de casos |
 | **3.5** Por qué el club va primero | El orden de la recomendación y su razón | Relato |
-| **4.1** La compuerta de mayoría de edad | Qué se pregunta, cuándo y qué abre cada respuesta | Regla + tabla de casos |
-| **4.2** La ruta reducida | Qué se pregunta y qué se entrega a quien no confirma mayoría de edad | Regla |
-| **4.3** De catorce a diecisiete años | El tramo de edad y lo que le corresponde | Regla |
-| **4.4** La contratación de una persona menor de edad | Cómo se inscribe, con qué firma y dónde | Regla |
-| **4.5** Solo para quien todavía no es socio | A quién atiende el sistema de captación | Regla |
-| **4.6** Qué datos se recogen de personas menores de edad | La regla de recolección, en afirmativo | Regla |
-| **5.1** Rol y propósito | Qué es CEI-01 y de dónde sale cada personalización | Regla |
-| **5.2** La precarga | Las cuatro categorías, las dos formas, cómo se compone el bloque y qué hace aceptar o rechazar | Regla + tabla de casos |
-| **5.3** Cómo se compone el cuestionario | Cuántos reactivos hay de cada clase y cuándo se preguntan | Tabla de datos |
-| **5.4** Los quince reactivos base | Qué pregunta cada uno y qué determina | Tabla de datos |
-| **5.5** Los tres reactivos condicionales | Qué los dispara y qué determinan | Tabla de casos |
-| **5.6** Las dos preguntas que cambian la estructura | Los dos reactivos que cambian la forma de la recomendación | Regla |
-| **5.7** Cómo se comporta el cuestionario en pantalla | Ramificación, opciones que aparecen, límites y concordancia con la forma de trato | Tabla de casos |
-| **5.8** El alcance del cuestionario | Qué cubre el instrumento y por qué ahí se detiene | Regla |
-| **5.9** Las señales que viajan al brief | Qué respuesta produce qué señal y qué hace el asesor con ella | Tabla de datos |
+| **4.1** Rol y propósito | Qué es CEI-01 y de dónde sale cada personalización | Regla |
+| **4.2** La precarga | Las cuatro categorías, las dos formas, cómo se compone el bloque y qué hace aceptar o rechazar | Regla + tabla de casos |
+| **4.3** Cómo se compone el cuestionario | Cuántos reactivos hay de cada clase y cuándo se preguntan | Tabla de datos |
+| **4.4** Los quince reactivos base | Qué pregunta cada uno y qué determina | Tabla de datos |
+| **4.5** Los tres reactivos condicionales | Qué los dispara y qué determinan | Tabla de casos |
+| **4.6** Las dos preguntas que cambian la estructura | Los dos reactivos que cambian la forma de la recomendación | Regla |
+| **4.7** Cómo se comporta el cuestionario en pantalla | Ramificación, opciones que aparecen, límites y concordancia con la forma de trato | Tabla de casos |
+| **4.8** El alcance del cuestionario | Qué cubre el instrumento y por qué ahí se detiene | Regla |
+| **4.9** Las señales que viajan al brief | Qué respuesta produce qué señal y qué hace el asesor con ella | Tabla de datos |
+| **5.1** La compuerta de mayoría de edad | Qué se pregunta, cuándo y qué abre cada respuesta | Regla + tabla de casos |
+| **5.2** La ruta reducida | Qué se pregunta y qué se entrega a quien no confirma mayoría de edad | Regla |
+| **5.3** De catorce a diecisiete años | El tramo de edad y lo que le corresponde | Regla |
+| **5.4** La contratación de una persona menor de edad | Cómo se inscribe, con qué firma y dónde | Regla |
+| **5.5** Solo para quien todavía no es socio | A quién atiende el sistema de captación | Regla |
+| **5.6** Qué datos se recogen de personas menores de edad | La regla de recolección, en afirmativo | Regla |
 | **6.1** Dos ejes independientes | Los dos ejes de objetivo y por qué se resuelven por separado | Regla |
 | **6.2** Los cinco objetivos emocionales | Qué es cada uno y qué produce en el texto | Tabla de datos |
 | **6.3** Los seis objetivos funcionales | Qué es cada uno y qué produce en el plan | Tabla de datos |
@@ -129,10 +129,10 @@ Aprobadas por Eric el 21 de septiembre. Siete se reescribieron en afirmativo, un
 | 1.3.3 | «BES no es un canal» → «BES es una variante de atención que vive dentro del sitio y dentro de WhatsApp» |
 | 1.3.3 | «Este documento especifica…» → «La experiencia ideal se especifica aquí para el canal del sitio web» |
 | 1.3.4 | «BES es un nombre propio y este documento no lo desarrolla» → **borrada** |
-| 4.1 | «…que es lo que el resto de este documento especifica» → «…con sus seis fases» |
-| 4.2.2 | «Lo que cambia no es cómo se elige el club, sino qué se entrega después» → «Lo que cambia es qué se entrega después» |
-| 5.1 | «Ninguna regla de este documento se dispara con un dato que no salga de aquí» → «Toda regla del sistema se dispara con un dato que sale de aquí» |
-| 5.2 | «No es un reactivo: no lleva número…» → «Se identifica por esa clave, se compone en cada sesión con el contexto de esa visita, y se resuelve antes del primer reactivo» |
+| 5.1 | «…que es lo que el resto de este documento especifica» → «…con sus seis fases» |
+| 5.2.2 | «Lo que cambia no es cómo se elige el club, sino qué se entrega después» → «Lo que cambia es qué se entrega después» |
+| 4.1 | «Ninguna regla de este documento se dispara con un dato que no salga de aquí» → «Toda regla del sistema se dispara con un dato que sale de aquí» |
+| 4.2 | «No es un reactivo: no lleva número…» → «Se identifica por esa clave, se compone en cada sesión con el contexto de esa visita, y se resuelve antes del primer reactivo» |
 | 6 | «Esos objetivos no son abiertos» → «Esos objetivos son los que ofrecen dos reactivos del cuestionario» |
 
 **El verificador queda en 7 capítulos, 0 hallazgos.**
@@ -145,12 +145,12 @@ Aprobados por Eric el 21 de septiembre y aplicados, un commit por capítulo.
 |---|---|
 | 1.3.1 Lo que no es el producto | **Qué es el producto y qué es un insumo del plan** |
 | 3.2.5 Lo que nunca aparece en su experiencia | **El alcance de lo que la persona ve** |
-| 4.2.3 Qué no recibe, y qué no se guarda | **El alcance de la ruta reducida** |
-| 4.5 Solo para quien no tiene membresía activa | **Solo para quien todavía no es socio** |
-| 4.6 Los datos de personas menores de edad no se recogen | **Qué datos se recogen de personas menores de edad** |
-| 5.2 Lo que ya sabemos no se vuelve a preguntar | **La precarga: lo que ya sabemos se confirma** |
-| 5.7.1 Preguntas que no se hacen | **Qué reactivos se preguntan y cuáles se resuelven solos** |
-| 5.8 Qué no pregunta el cuestionario, y por qué | **El alcance del cuestionario** |
+| 5.2.3 Qué no recibe, y qué no se guarda | **El alcance de la ruta reducida** |
+| 5.5 Solo para quien no tiene membresía activa | **Solo para quien todavía no es socio** |
+| 5.6 Los datos de personas menores de edad no se recogen | **Qué datos se recogen de personas menores de edad** |
+| 4.2 Lo que ya sabemos no se vuelve a preguntar | **La precarga: lo que ya sabemos se confirma** |
+| 4.7.1 Preguntas que no se hacen | **Qué reactivos se preguntan y cuáles se resuelven solos** |
+| 4.8 Qué no pregunta el cuestionario, y por qué | **El alcance del cuestionario** |
 | 6.1 Dos ejes que no se mezclan | **Dos ejes independientes** |
 | 7.3.2 La fase 2 · Cuando hay precarga y cuando no | **La fase 2 · Cuándo hay precarga** |
 | 7.4.1 Por qué no se puede volver a contestar el cuestionario | **Por qué el cuestionario se contesta una sola vez** |

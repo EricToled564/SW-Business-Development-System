@@ -14,8 +14,8 @@ Reescritura completa del documento **Arquitectura de la Experiencia**, con los 6
 | `01-por-que-existe-la-experiencia-ideal.es.md` | Capítulo 1 | Aprobado |
 | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | Capítulo 2 | Escrito, pendiente de aprobación |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | Capítulo 3 | Aprobado |
-| `04-quien-puede-recorrer-la-experiencia.es.md` | Capítulo 4 | Aprobado |
-| `05-el-cuestionario.es.md` | Capítulo 5 | Aprobado |
+| `04-el-cuestionario.es.md` | Capítulo 4 | Aprobado |
+| `05-quien-puede-recorrer-la-experiencia.es.md` | Capítulo 5 | Aprobado |
 | `06-los-objetivos-de-la-persona.es.md` | Capítulo 6 | Aprobado |
 | `07-el-recorrido-en-pantalla.es.md` | Capítulo 7 | Escrito, pendiente de aprobación |
 | `insumo-entrenamiento-acuatico.es.md` | Los seis programas de entrenamiento aeróbico en alberca, insumo del capítulo 10 | Propuesta, sujeta a validación médica |
