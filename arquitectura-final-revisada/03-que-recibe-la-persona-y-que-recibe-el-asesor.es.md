@@ -58,7 +58,7 @@ Mientras la persona elige club, cada alternativa lleva **su bandera y la leyenda
 
 Si vuelve a abrir el panel de otros clubes, ahí siguen las banderas. Ese panel sigue siendo una superficie para elegir.
 
-### 3.2.5 Lo que nunca aparece en su experiencia
+### 3.2.5 El alcance de lo que la persona ve
 
 Nunca se le comunica una carencia como resultado. No aparece «no encontramos», no aparece «ningún club cercano tiene», no aparece una nota que le diga que su club no alcanza. Lo que el sistema no puede entregar, no lo nombra: entrega lo que sí tiene, completo.
 
