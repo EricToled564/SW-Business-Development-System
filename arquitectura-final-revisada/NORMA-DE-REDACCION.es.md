@@ -117,11 +117,25 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 
 ## Lo que hoy no cumple la norma
 
-**Veintidós ajustes: doce hechos, diez abiertos.** El verificador `tools/registro.js` señala y **no borra**; cada párrafo se aprueba uno por uno.
+**Veintidós ajustes: veintiuno hechos, uno abierto.** El verificador `tools/registro.js` señala y **no borra**; cada párrafo se aprueba uno por uno.
 
-### Nueve frases que el verificador marca
+### Las nueve frases que marcaba el verificador: corregidas
 
-En los capítulos 1, 4, 5 y 6. La lista completa la imprime `node tools/registro.js`.
+Aprobadas por Eric el 21 de septiembre. Siete se reescribieron en afirmativo, una se borró y una se conservó.
+
+| Capítulo | Qué se hizo |
+|---|---|
+| 1.3.1 | **Se conserva.** «Un catálogo de clases… no son el producto: son insumos del plan» es doctrina del proyecto y, por la prueba del sujeto, corrige cómo se vende hoy. Queda anotada en `tools/registro-permitidas.txt` |
+| 1.3.3 | «BES no es un canal» → «BES es una variante de atención que vive dentro del sitio y dentro de WhatsApp» |
+| 1.3.3 | «Este documento especifica…» → «La experiencia ideal se especifica aquí para el canal del sitio web» |
+| 1.3.4 | «BES es un nombre propio y este documento no lo desarrolla» → **borrada** |
+| 4.1 | «…que es lo que el resto de este documento especifica» → «…con sus seis fases» |
+| 4.2.2 | «Lo que cambia no es cómo se elige el club, sino qué se entrega después» → «Lo que cambia es qué se entrega después» |
+| 5.1 | «Ninguna regla de este documento se dispara con un dato que no salga de aquí» → «Toda regla del sistema se dispara con un dato que sale de aquí» |
+| 5.2 | «No es un reactivo: no lleva número…» → «Se identifica por esa clave, se compone en cada sesión con el contexto de esa visita, y se resuelve antes del primer reactivo» |
+| 6 | «Esos objetivos no son abiertos» → «Esos objetivos son los que ofrecen dos reactivos del cuestionario» |
+
+**El verificador queda en 7 capítulos, 0 hallazgos.**
 
 ### Los doce títulos escritos en negativo: corregidos
 

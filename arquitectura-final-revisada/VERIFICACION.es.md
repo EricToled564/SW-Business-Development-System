@@ -17,16 +17,16 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
 | `00-estructura.es.md` | 1,779 | `d48e32d668da2e58bede2a0daf50d5af49c2853ad267c2190665058983711514` |
-| `01-por-que-existe-la-experiencia-ideal.es.md` | 1,517 | `6b5c7b324c873399b42dd39df2bd3deef8176a2d87e5ec60c3d26b486345a4be` |
+| `01-por-que-existe-la-experiencia-ideal.es.md` | 1,505 | `064c361746f29d343a21734af3d67053af7caae06d767a21b6244b97543314bb` |
 | `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,267 | `2a8fccf19f95af9208baaf75212bcbe1d6fa8bb507d96d7ed60c5da5895a4361` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,626 | `1ddabcd4c28910ff64dcbab90e0156529ad4dd46340b9f9bc6096e7a366f427c` |
-| `04-quien-puede-recorrer-la-experiencia.es.md` | 943 | `79682b86156e852458fee2542ab3715b65228d7c6bf061efee65939bffcabc11` |
-| `05-el-cuestionario.es.md` | 3,225 | `1429d0f761ace90bca482e35719285b79bb4dded06fffd72b5a8f13a6108d646` |
-| `06-los-objetivos-de-la-persona.es.md` | 849 | `ec743709d4b5a781af04c8b133566fc3a300cb93954a42974a7bc79802e508fa` |
+| `04-quien-puede-recorrer-la-experiencia.es.md` | 930 | `7aace847f4d5c130d4eef3e727f4f965b89d05587d286744ec4ad7a1c7ea8262` |
+| `05-el-cuestionario.es.md` | 3,227 | `962fa5a318f05366495ce603eaf05e3edfe0f7eed012e53e92bb74050a4563c2` |
+| `06-los-objetivos-de-la-persona.es.md` | 841 | `62b4fd650f0712408acd4041f7577e409f1cb993886423167350cf7390200e58` |
 | `07-el-recorrido-en-pantalla.es.md` | 2,739 | `0cfdd5b472f560cc5bab2b3ed54cd7d0eb4fe70b6228f2a6cf8f1ec98af9aca2` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
-| `NORMA-DE-REDACCION.es.md` | 2,773 | `68f218e80e99a22c280e0b4dff4c884a453c50e936e7769b43ae8515d94ae3b5` |
+| `NORMA-DE-REDACCION.es.md` | 3,029 | `9e575b7d5437772b6127c9cf8baadf9fa66cc8f4bf61f3e8d0e4500a1d8eba73` |
 | `README.es.md` | 355 | `693ba01c6a4d850b39685e7d1868e45b95241fa70097c6346405d401bdb5a439` |
 | `decisiones.es.md` | 12,168 | `b9df5ee866b15b236dde308441a79d9b0888d75c3220052fd2147c7b5f49c515` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `872fce246a33f992c7a2004ffaa7b1b74cb4ce21ac5ab6a8c56402010a57b9b4` |

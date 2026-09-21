@@ -3,3 +3,5 @@
 #
 # Nada se agrega aquí sin que Eric lo apruebe: la lista es lo que separa un
 # falso positivo de una frase que sobrevivió sin revisarse.
+
+Un catálogo de clases, una lista de amenidades y una tabla de precios no son el producto: son insumos del plan.
