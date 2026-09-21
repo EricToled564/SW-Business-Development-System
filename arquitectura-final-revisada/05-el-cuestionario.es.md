@@ -9,14 +9,14 @@ El cuestionario tiene un trabajo y solo uno: **recoger lo necesario para constru
 Tres reglas lo gobiernan, y no admiten excepción por canal:
 
 1. **Es el mismo en los tres canales.** Las preguntas, las opciones, las validaciones, las ramificaciones y los identificadores son idénticos en el sitio, en WhatsApp y en consola. BES no lo altera: lo aplica en conversación.
-2. **Es la única fuente de personalización.** Ninguna regla de este documento se dispara con un dato que no salga de aquí.
+2. **Es la única fuente de personalización.** Toda regla del sistema se dispara con un dato que sale de aquí.
 3. **No recoge información de salud.** Ni diagnósticos, ni lesiones, ni embarazo, ni tratamientos, ni medicamentos, ni cirugías, ni peso, estatura o medidas corporales. El apartado 5.7 explica por qué.
 
 ## 5.2 La precarga: lo que ya sabemos se confirma
 
 **A la persona no se le pregunta dos veces lo mismo.** Lo que el sistema ya sabe antes de que empiece el cuestionario no se le pregunta: se le confirma, en un solo bloque, antes del primer reactivo.
 
-Ese bloque se llama **P0 · Precarga**, y se declara dentro del instrumento. No es un reactivo: no lleva número, no personaliza por sí mismo y su contenido cambia en cada sesión.
+Ese bloque se llama **P0 · Precarga**, y se declara dentro del instrumento. Se identifica por esa clave, se compone en cada sesión con el contexto de esa visita, y se resuelve antes del primer reactivo.
 
 ### 5.2.1 De dónde sale lo que ya sabemos
 
