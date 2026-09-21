@@ -73,11 +73,11 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 
 ## 0.3 El argumento
 
-Sports World tiene la mejor infraestructura de fitness de México: 49 clubes, 47 disciplinas, albercas, vapor, sauna, entrenadores. Está construida, está pagada y está operando todos los días. Lo que falta es la traducción de esa infraestructura al momento en que alguien decide dónde entrenar. Hoy **ninguna de las 49 páginas de club es legible para un buscador**, y de las palabras clave con que se busca la categoría, Sports World cubre **31.1%**.
+Cada mes se hacen en México **932,300 búsquedas de «gimnasio para perder peso»**. Es la intención de mayor volumen de toda la industria fitness del país. **Sports World aparece en el 0.02% de ellas**: dos palabras clave de cada diez mil, todas fuera del top 50.
 
-La distancia entre esas dos frases es el proyecto entero.
+El producto para atender a esa persona ya existe y ya está pagado. Bajar de peso es la razón número uno por la que alguien se inscribe a un gimnasio, **75.2% de los adultos mexicanos vive con sobrepeso u obesidad**, y dentro de cada club hay entrenadores, evaluación, alberca, vapor y sauna. **Lo que falta es la página que lo diga**, y por eso bajar de peso tiene página propia, con tratamiento de contenido de salud firmado por un médico con cédula vigente.
 
-Se ve con más claridad en el punto donde más cuesta. «Gimnasio para perder peso» es la intención de búsqueda de mayor volumen de la industria fitness en México: **932,300 consultas al mes**. Sports World aparece en el **0.02%** —dos palabras clave de cada diez mil, todas fuera del top 50—. Mientras tanto, **75.2% de los adultos mexicanos vive con sobrepeso u obesidad** y bajar de peso es la razón número uno por la que alguien se inscribe a un gimnasio. Todo lo necesario para atender a esa persona ya está dentro del club: entrenadores, evaluación, alberca, vapor, sauna. Lo que falta es la página que lo diga. Por eso bajar de peso tiene página propia, con tratamiento de contenido de salud firmado por un médico con cédula vigente.
+Lo mismo ocurre con todo lo demás. 49 clubes, 47 disciplinas, las amenidades de un club premium: infraestructura construida, pagada y operando, que hoy **ninguna de las 49 páginas de club alcanza a mostrarle a un buscador**. De las palabras clave con que se busca la categoría, Sports World cubre **31.1%**. Traducir esa infraestructura al momento en que alguien decide dónde entrenar es lo que este proyecto construye.
 
 **El terreno está libre.** Sports World ya lidera en presencia orgánica —17,400 palabras clave contra 12,300 de Smart Fit, 5,600 de Sport City y 1,900 de Anytime Fitness—, y aun así cubre un tercio del mercado que se busca sin escribir la marca. Ningún competidor ha capitalizado las categorías donde vive la demanda: bajar de peso, yoga, funcional, artes marciales. Quien las tome primero se las queda, y Sports World llega a esa carrera con más activos que nadie.
 
