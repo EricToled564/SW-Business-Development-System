@@ -288,9 +288,9 @@ Las otras cinco páginas de objetivo no requieren este tratamiento.
 
 Tres reglas aplican al contenido de todo el sitio:
 
-1. **Ninguna página promete resultados en kilos ni en plazos.**
+1. **Ninguna página debe prometer resultados en kilos ni en plazos.**
 2. **La venta se cierra en el club o por teléfono después de la visita.** El sitio publica los precios dentro de Membresías.
-3. **Todo contenido de salud lleva la firma del especialista que lo respalda.**
+3. **Todo contenido de salud debe llevar la firma del especialista que lo respalda.**
 
 ---
 
@@ -375,13 +375,14 @@ Cuando el club ideal ya está resuelto, las opciones dependen de lo que existe a
 
 La jerarquía avanza **de lo más cercano a lo más lejano**.
 
-El radio de **5 km** se utiliza aquí únicamente para determinar qué clubes forman parte de las listas de exploración.
+Aquí conviven dos radios distintos y no deben confundirse:
 
-El capítulo 10 establece las reglas con las que el sistema determina el club ideal.
+* **5 km** es el radio de exploración. Determina qué clubes pueden aparecer dentro de **«Conoce otros clubes en tu área»**.
+* **10 km** es el radio que utiliza el sistema para resolver el **club ideal**, conforme a las reglas del capítulo 10.
 
-Los kilómetros definen qué clubes entran en cada grupo.
+Los kilómetros determinan qué clubes entran en cada conjunto.
 
-La distancia que se muestra a la persona se expresa en **tiempo de traslado, en minutos**.
+La medida que se muestra a la persona es el **tiempo de traslado, en minutos**.
 
 Cada opción del menú aparece únicamente cuando tiene al menos un club que mostrar.
 
@@ -470,7 +471,7 @@ Estos botones aparecen después de las tres ranuras fijas.
 | **Conoce las clases ideales para [el objetivo de la página]** | En las seis páginas de objetivo, en los tres estados | Abre todas las clases del sistema que contribuyen a ese objetivo. Con experiencia, muestra además la leyenda del apartado 3.6.6 |
 | **Explora [el otro objetivo elegido]** | Con experiencia, cuando la persona eligió dos objetivos y está en la página de uno de ellos | Lleva a la página del otro objetivo elegido |
 | **Conoce los programas de [nombre de la modalidad]** | En las tres páginas de entrenamiento individual, en los tres estados | Abre los seis objetivos, cada uno con el programa correspondiente a esa modalidad |
-| **Tu rutina individual** | En las tres páginas de entrenamiento individual, con experiencia | Abre la parte individual de su experiencia: los bloques 01 y 02 del capítulo 4. Aparece para todas las personas |
+| **Tu rutina individual** | En las tres páginas de entrenamiento individual, con experiencia | Abre la parte individual de su Experiencia Ideal: los bloques 01 y 02 que especifica el capítulo 11. Aparece para todas las personas |
 | **Otras clases similares** | En las páginas de clase, en los tres estados | Muestra clases agrupadas por nivel de intensidad y beneficios semejantes |
 | **Otros artículos similares** | En las páginas del blog, en los tres estados | Muestra artículos relacionados con el que la persona está leyendo |
 
@@ -608,7 +609,7 @@ Los programas son **secciones dentro de esas tres páginas**, no páginas nuevas
 
 El Contrato fija 47 clases individuales y esas tres ya están incluidas en el total.
 
-Cualquier página adicional exigiría un convenio modificatorio.
+Cualquier página adicional exige un convenio modificatorio.
 
 La persona ve únicamente **el nombre del programa y la razón por la que le sirve**.
 
@@ -659,13 +660,21 @@ La información contextual que conoce el sistema proviene de la navegación de e
 
 El apartado 5.2.1 especifica ese mecanismo.
 
-Las páginas se relacionan mediante el identificador de sesión, **`web_session_id`** en el Mapa del Funnel.
+Las páginas se relacionan mediante **`web_session_id`**, el identificador de sesión definido en el Mapa del Funnel.
 
-Es un identificador propio y aleatorio que **no contiene información personal en sí mismo**.
+`web_session_id` es un código propio y aleatorio.
 
-Permanece en el navegador mientras dura la sesión y del lado de la persona.
+**No lleva ningún dato de la persona, permanece del lado de la persona y nunca llega al registro del prospecto.**
 
-El capítulo 9 especifica su alcance y persistencia.
+No debe utilizarse como llave para vincular la navegación con ese registro.
+
+Cuando existe un registro del prospecto, el identificador que pertenece a ese registro es **`session_uuid`**.
+
+La separación entre ambos es deliberada:
+
+**`web_session_id` identifica la navegación de una sesión en el navegador; `session_uuid` identifica la sesión registrada dentro del sistema.**
+
+El capítulo 9 especifica el alcance y la persistencia de ambos.
 
 ---
 
@@ -687,7 +696,7 @@ Esa capa incluye:
 * **Tu visita agendada**;
 * y el comportamiento de **Agenda tu visita** del encabezado cuando ya existe una cita.
 
-La capa se resuelve a partir del identificador de sesión y se monta sobre la página base.
+La capa se resuelve a partir del estado de la sesión y se monta sobre la página base.
 
 La implementación concreta —servidor, red de distribución o navegador— queda en manos de quien construye la solución.
 
@@ -696,8 +705,8 @@ De esa separación salen cinco reglas de diseño.
 | Regla | Especificación |
 |---|---|
 | **1 · El máximo de botones** | Cada tipo de página reserva desde el inicio el espacio correspondiente al máximo número de botones que puede llegar a tener. Así, el contenido no cambia de posición cuando el menú cambia de estado o se carga después. El máximo es cinco en Clase, Blog, Entrenamiento individual y Objetivo; cuatro en Inicio, Club, Amenidad, Actividades para menores y Entrenamiento personal; y tres en Membresías |
-| **2 · Con identificador y sin él** | Quien llega con identificador de sesión recibe el menú correspondiente a su estado. Quien llega sin él recibe el menú Sin cuestionario correspondiente a ese tipo de página, servido junto con el contenido |
-| **3 · Si el script falla** | Si falla el script responsable de la capa personal, la persona continúa viendo la página completa con el menú Sin cuestionario correspondiente a ese tipo de página. Los elementos de navegación que pueden funcionar como enlaces permanecen disponibles. Las pantallas de aplicación —cuestionario, Experiencia Ideal y agenda— requieren el script; BES funciona como respaldo de atención |
+| **2 · Con identificador y sin él** | Quien llega con `web_session_id` recibe la capa correspondiente al estado de esa sesión. Quien llega sin él recibe el estado Sin cuestionario |
+| **3 · Si el script falla** | Si falla el script responsable de la capa personal, la persona debe ver la página completa con el **menú de contingencia Sin cuestionario, cuyos cuatro botones son enlaces**. Este menú de contingencia tiene siempre cuatro enlaces y no tiene que reproducir el número normal de botones que corresponde al tipo de página según 3.7.1. Las pantallas de aplicación —cuestionario, Experiencia Ideal y agenda— requieren el script; BES funciona como respaldo de atención |
 | **4 · Sin consultas adicionales** | La leyenda de disponibilidad y el botón Explora se resuelven utilizando información que la página ya contiene —incluidos los clubes donde se imparte cada clase— y el estado de la sesión |
 | **5 · Dos entornos, un solo paso** | El cuestionario, la Experiencia Ideal y la agenda son pantallas de aplicación. La precarga del apartado 3.8 funciona como puente entre las páginas públicas y esas pantallas. El diseño debe hacer que el paso se perciba continuo: mismo encabezado, misma tipografía y misma velocidad de respuesta |
 
@@ -731,13 +740,13 @@ Y desde ahí la conecta con el resto del sistema.
 
 Dos reglas gobiernan sus artículos:
 
-1. **Cada artículo aporta contenido propio**, diferente del contenido de la página de objetivo con la que se relaciona.
-2. **Cada artículo enlaza dentro de su propio texto** al objetivo del que trata y a las clases y clubes que menciona. El enlace aparece en el párrafo en el que la persona está leyendo sobre ese tema, no como una lista desconectada al final.
+1. **Cada artículo debe aportar contenido propio**, diferente del contenido de la página de objetivo con la que se relaciona.
+2. **Cada artículo debe enlazar dentro de su propio texto** al objetivo del que trata y a las clases y clubes que menciona. El enlace debe aparecer en el párrafo en el que la persona está leyendo sobre ese tema, no como una lista desconectada al final.
 
 De esta forma, el tipo 11 alimenta a los diez anteriores.
 
-Los artículos relacionados con salud siguen el tratamiento del apartado 3.5.4:
+Los artículos relacionados con salud deben seguir el tratamiento del apartado 3.5.4:
 
 **firma de especialista con cédula profesional visible y aviso de salud.**
 
-El contenido explica cómo puede adaptarse el entrenamiento y remite, cuando corresponde, a la valoración del asesor y del profesional de salud.
+El contenido debe describir cómo puede adaptarse el entrenamiento y remitir, cuando corresponda, a la valoración del asesor y del profesional de salud.
