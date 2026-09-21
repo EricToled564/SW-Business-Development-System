@@ -52,7 +52,7 @@ El texto tiene **dos versiones**, y lo único que cambia entre ellas es a qué s
 
 El nombre del club se toma de la página desde la que tocó el botón. La promesa del minuto es literal y el capítulo 5 la sostiene: entre 16 y 19 preguntas, una por pantalla.
 
-### 7.3.2 La fase 2 · Cuando hay precarga y cuando no
+### 7.3.2 La fase 2 · Cuándo hay precarga
 
 Confirmada la mayoría de edad, sigue el bloque de precarga, y después los reactivos.
 
@@ -114,13 +114,13 @@ Avanzar siempre se puede: cada fase tiene una acción que lleva a la siguiente. 
 | Agenda | Vuelve al resultado |
 | Confirmación y brief | Vuelve a la agenda, para cambiar fecha u hora |
 
-### 7.4.1 Por qué no se puede volver a contestar el cuestionario
+### 7.4.1 Por qué el cuestionario se contesta una sola vez
 
 El trato con la persona es simple: contesta, y recibe una recomendación. Reabrir las respuestas convierte la recomendación en algo que se puede ajustar hasta que dé el resultado que se quería, y con eso pierde su autoridad.
 
 **Cambiar de club o de clases es distinto y sí está permitido siempre.** Eso no reabre el cuestionario: recompone el plan contra el catálogo del club que quedó, como especifica el capítulo 10.
 
-## 7.5 Qué persiste y qué no
+## 7.5 Qué guarda el navegador y qué guarda el servidor
 
 El recorrido no pide iniciar sesión. No hay cuenta, no hay contraseña y no se identifica a la persona.
 
