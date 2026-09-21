@@ -14,7 +14,7 @@ La numeración vigente es la que fija **D-51**, que inserta el capítulo del sit
 |---|---|
 | **0.1** Control del documento | Versión, fecha, estado, destinatarios, base documental |
 | **0.2** Cómo leer este documento | Para quién es, qué decide, y las tres palabras normativas: **debe · no debe · puede** |
-| **0.3** El argumento | Por qué existe, para quién, qué debe lograr con sus cifras y cómo lo logra. Un solo texto continuo: es el resumen ejecutivo del proyecto |
+| **0.3** Vamos a crear el mejor sistema de captación y conversión digital de fitness en México | El argumento del proyecto, en texto continuo: la tesis, la oportunidad, la posición de partida, el sistema comercial, la ecuación precio-valor, las 148 puertas de entrada, cómo se comprueba y qué cambia para el negocio |
 | **0.4** Índice detallado | Capítulos y subcapítulos, con número de página y enlace interno |
 | **0.5** Glosario | A–Z, en lenguaje de negocio |
 | **0.6** Tabla de códigos y abreviaturas | Las seis familias de códigos, con un ejemplo de cada una |
