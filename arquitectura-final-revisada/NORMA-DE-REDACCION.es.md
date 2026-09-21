@@ -24,7 +24,7 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 
 | № | Regla | Por qué |
 |---|---|---|
-| **1** | **Todo se dice en afirmativo.** El sistema se describe por lo que hace (D-92). **La prueba es el sujeto de la frase:** si el sujeto es el problema actual de Sports World, la frase en negativo se queda, porque la omisión es el hecho; si el sujeto es el sistema que se construye, se reescribe (D-101) | Una frase que enumera lo que el sistema no hace obliga a deducir el hecho por descarte |
+| **1** | **Todo se dice en afirmativo.** El sistema se describe por lo que hace (D-92). **La prueba es el sujeto de la frase**, y tiene tres salidas: si el sujeto es el problema actual de Sports World, la frase en negativo se queda, porque la omisión es el hecho; si el sujeto es un estado que el documento declara, se queda, porque la ausencia es lo que distingue ese estado de los otros (D-103); si el sujeto es el sistema que se construye, se reescribe (D-101) | Una frase que enumera lo que el sistema no hace obliga a deducir el hecho por descarte |
 | **3** | **El documento no habla de sí mismo.** Nada de «este documento especifica», «como se verá más adelante», «este capítulo trata de» | Quien lee quiere el hecho, no el mapa del texto |
 | **4** | **Sin contraste inventado.** Nada de «no es X, es Y» ni «más que X, es Y» | Introduce un adversario que nadie propuso, y el lector se queda con las dos ideas |
 | **5** | **Cada término se presenta en su primer uso**, o remite al capítulo que lo define | Ningún concepto aparece en el cuerpo sin estar antes en el glosario o en la tabla de códigos |
@@ -60,65 +60,65 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 
 | Sección | Qué lleva | Cómo se escribe |
 |---|---|---|
-| **2.1** Los once tipos de página y el problema que resuelve cada uno | La intención de búsqueda que atiende cada tipo, el conteo de páginas y el problema que cierra | Tabla de datos |
-| **2.2** Lo que el sitio produce | Las cuatro piezas de la cadena: cuestionario, Experiencia Ideal, brief, visita agendada | Regla |
-| **2.3** El menú superior | Los botones fijos en las 148 páginas | Regla |
-| **2.4** Los tres estados de la persona | Los dos hechos que la describen y los tres estados que producen | Regla + tabla de casos |
-| **2.5** El contenido de cada tipo de página | Dónde vive cada cosa y el contenido mínimo tipo por tipo | Tabla de datos |
-| **2.6** El menú contextual | El orden de los botones, las tres ranuras, la leyenda y las puertas al cuestionario | Regla + tabla de casos |
-| **2.7** Los menús, uno por uno | El menú resuelto para cada tipo de página en cada estado, y el máximo de botones | Tabla de casos |
-| **2.8** Qué se lleva la persona al cuestionario | Qué aporta cada tipo de página a la precarga | Tabla de datos |
-| **2.9** La página es la misma para todos; el menú es la capa personal | Cómo se sirve la página y cómo se resuelve lo que depende de la persona | Regla |
-| **2.10** El blog | Qué búsqueda atiende y cómo enlaza al resto | Regla |
-| **3.1** Un solo cálculo, dos entregas | El cálculo único y sus dos destinatarios | Regla |
-| **3.2** Lo que ve la persona | Las dos páginas de su experiencia, elemento por elemento | Tabla de datos |
-| **3.3** BES, disponible en todo momento | Qué puede hacer BES sobre la experiencia entregada | Regla |
-| **3.4** Lo que lee el asesor: el brief | Las dos páginas del brief, sus señales y el caso del club que entrega mejor | Tabla de datos + tabla de casos |
-| **3.5** Por qué el club va primero | El orden de la recomendación y su razón | Relato |
-| **4.1** Rol y propósito | Qué es CEI-01 y de dónde sale cada personalización | Regla |
-| **4.2** La precarga | Las cuatro categorías, las dos formas, cómo se compone el bloque y qué hace aceptar o rechazar | Regla + tabla de casos |
-| **4.3** Cómo se compone el cuestionario | Cuántos reactivos hay de cada clase y cuándo se preguntan | Tabla de datos |
-| **4.4** Los quince reactivos base | Qué pregunta cada uno y qué determina | Tabla de datos |
-| **4.5** Los tres reactivos condicionales | Qué los dispara y qué determinan | Tabla de casos |
-| **4.6** Las dos preguntas que cambian la estructura | Los dos reactivos que cambian la forma de la recomendación | Regla |
-| **4.7** Cómo se comporta el cuestionario en pantalla | Ramificación, opciones que aparecen, límites y concordancia con la forma de trato | Tabla de casos |
-| **4.8** El alcance del cuestionario | Qué cubre el instrumento y por qué ahí se detiene | Regla |
-| **4.9** Las señales que viajan al brief | Qué respuesta produce qué señal y qué hace el asesor con ella | Tabla de datos |
-| **5.1** La compuerta de mayoría de edad | Qué se pregunta, cuándo y qué abre cada respuesta | Regla + tabla de casos |
-| **5.2** La ruta reducida | Qué se pregunta y qué se entrega a quien no confirma mayoría de edad | Regla |
-| **5.3** De catorce a diecisiete años | El tramo de edad y lo que le corresponde | Regla |
-| **5.4** La contratación de una persona menor de edad | Cómo se inscribe, con qué firma y dónde | Regla |
-| **5.5** Solo para quien todavía no es socio | A quién atiende el sistema de captación | Regla |
-| **5.6** Qué datos se recogen de personas menores de edad | La regla de recolección, en afirmativo | Regla |
-| **6.1** Dos ejes independientes | Los dos ejes de objetivo y por qué se resuelven por separado | Regla |
-| **6.2** Los cinco objetivos emocionales | Qué es cada uno y qué produce en el texto | Tabla de datos |
-| **6.3** Los seis objetivos funcionales | Qué es cada uno y qué produce en el plan | Tabla de datos |
-| **6.4** El objetivo principal y el secundario | Cómo se eligen y qué pasa con el segundo | Regla |
-| **6.5** Cuando la persona pide que se le recomiende la modalidad | Qué hace el sistema en ese caso | Regla |
-| **7.1** La puerta de entrada: agendar una visita | Dónde está el botón y qué abre | Regla |
-| **7.2** Una sola dirección de internet | Qué cambia y qué permanece durante el recorrido | Regla |
-| **7.3** Las seis fases | Qué ocurre en cada fase, una por una | Tabla de casos |
-| **7.4** Avance y retroceso | Desde qué fase se puede volver y a cuál | Tabla de casos |
-| **7.5** Qué guarda el navegador y qué guarda el servidor | Los dos identificadores, la escritura única al cerrar la sesión y los dos recordatorios | Regla + tabla de datos |
-| **7.6** El paso a BES, en cualquier momento | Qué recibe BES, con qué sigue y qué ocurre si falla | Regla + tabla de casos |
-| **7.7** La fase de error | Qué ve la persona y cómo sale de ahí | Tabla de casos |
-| **8** Datos de contacto y consentimiento | Cuándo se piden · Envío por correo · Una sola escritura al CRM · La conciliación y el reencuentro · Aviso simplificado e integral | Regla, salvo el aviso: tabla de datos |
-| **9** Cómo se elige el club | El principio · Los cuatro requisitos · El radio de 10 km · Minutos con tráfico · Los cuatro modos · Alternativas y leyendas · Elección propia | Regla, los cuatro modos en tabla de casos |
-| **10** Cómo se compone el plan | B01 · B02 · B03 · Seco, agua y mixto · Los seis programas de cada modalidad · Entrenamiento personal | Regla, los programas en tabla de datos |
-| **11** Cómo se eligen las clases | La matriz · Los pasos del seleccionador · Filtro de intensidad · Contraindicaciones · Sustitución | Tabla de casos, la matriz en tabla de datos |
-| **12** El texto que redacta el modelo de lenguaje | Una sola llamada · Qué puede y qué queda fijo · Respaldo ante falla | Regla |
-| **13** Las fuentes de datos y su contrato | El corte de las 06:00 · Categorías · Matrices propias · Alta de club y de clase · El contrato de cada fuente | Tabla de datos, el corte y las altas en regla |
-| **14** La operación diaria | La simulación diaria · Qué se revisa y quién · Qué se hace cuando una fuente no llega | Regla + tabla de casos |
-| **15** El traspaso al club | Qué recibe el club · Qué recibe el asesor · Las llamadas directas · Si la persona no se presenta · Cuando el prospecto ya existía | Regla + tabla de casos |
-| **16** El panel de actualización sin código | Qué se cambia sin programar · Quién autoriza · Qué queda registrado | Regla |
+| **3.1** Los once tipos de página y el problema que resuelve cada uno | La intención de búsqueda que atiende cada tipo, el conteo de páginas y el problema que cierra | Tabla de datos |
+| **3.2** Lo que el sitio produce | Las cuatro piezas de la cadena: cuestionario, Experiencia Ideal, brief, visita agendada | Regla |
+| **3.3** El menú superior | Los botones fijos en las 148 páginas | Regla |
+| **3.4** Los tres estados de la persona | Los dos hechos que la describen y los tres estados que producen | Regla + tabla de casos |
+| **3.5** El contenido de cada tipo de página | Dónde vive cada cosa y el contenido mínimo tipo por tipo | Tabla de datos |
+| **3.6** El menú contextual | El orden de los botones, las tres ranuras, la leyenda y las puertas al cuestionario | Regla + tabla de casos |
+| **3.7** Los menús, uno por uno | El menú resuelto para cada tipo de página en cada estado, y el máximo de botones | Tabla de casos |
+| **3.8** Qué se lleva la persona al cuestionario | Qué aporta cada tipo de página a la precarga | Tabla de datos |
+| **3.9** La página es la misma para todos; el menú es la capa personal | Cómo se sirve la página y cómo se resuelve lo que depende de la persona | Regla |
+| **3.10** El blog | Qué búsqueda atiende y cómo enlaza al resto | Regla |
+| **4.1** Un solo cálculo, dos entregas | El cálculo único y sus dos destinatarios | Regla |
+| **4.2** Lo que ve la persona | Las dos páginas de su experiencia, elemento por elemento | Tabla de datos |
+| **4.3** BES, disponible en todo momento | Qué puede hacer BES sobre la experiencia entregada | Regla |
+| **4.4** Lo que lee el asesor: el brief | Las dos páginas del brief, sus señales y el caso del club que entrega mejor | Tabla de datos + tabla de casos |
+| **4.5** Por qué el club va primero | El orden de la recomendación y su razón | Relato |
+| **5.1** Rol y propósito | Qué es CEI-01 y de dónde sale cada personalización | Regla |
+| **5.2** La precarga | Las cuatro categorías, las dos formas, cómo se compone el bloque y qué hace aceptar o rechazar | Regla + tabla de casos |
+| **5.3** Cómo se compone el cuestionario | Cuántos reactivos hay de cada clase y cuándo se preguntan | Tabla de datos |
+| **5.4** Los quince reactivos base | Qué pregunta cada uno y qué determina | Tabla de datos |
+| **5.5** Los tres reactivos condicionales | Qué los dispara y qué determinan | Tabla de casos |
+| **5.6** Las dos preguntas que cambian la estructura | Los dos reactivos que cambian la forma de la recomendación | Regla |
+| **5.7** Cómo se comporta el cuestionario en pantalla | Ramificación, opciones que aparecen, límites y concordancia con la forma de trato | Tabla de casos |
+| **5.8** El alcance del cuestionario | Qué cubre el instrumento y por qué ahí se detiene | Regla |
+| **5.9** Las señales que viajan al brief | Qué respuesta produce qué señal y qué hace el asesor con ella | Tabla de datos |
+| **6.1** La compuerta de mayoría de edad | Qué se pregunta, cuándo y qué abre cada respuesta | Regla + tabla de casos |
+| **6.2** La ruta reducida | Qué se pregunta y qué se entrega a quien no confirma mayoría de edad | Regla |
+| **6.3** De catorce a diecisiete años | El tramo de edad y lo que le corresponde | Regla |
+| **6.4** La contratación de una persona menor de edad | Cómo se inscribe, con qué firma y dónde | Regla |
+| **6.5** Solo para quien todavía no es socio | A quién atiende el sistema de captación | Regla |
+| **6.6** Qué datos se recogen de personas menores de edad | La regla de recolección, en afirmativo | Regla |
+| **7.1** Dos ejes independientes | Los dos ejes de objetivo y por qué se resuelven por separado | Regla |
+| **7.2** Los cinco objetivos emocionales | Qué es cada uno y qué produce en el texto | Tabla de datos |
+| **7.3** Los seis objetivos funcionales | Qué es cada uno y qué produce en el plan | Tabla de datos |
+| **7.4** El objetivo principal y el secundario | Cómo se eligen y qué pasa con el segundo | Regla |
+| **7.5** Cuando la persona pide que se le recomiende la modalidad | Qué hace el sistema en ese caso | Regla |
+| **8.1** La puerta de entrada: agendar una visita | Dónde está el botón y qué abre | Regla |
+| **8.2** Una sola dirección de internet | Qué cambia y qué permanece durante el recorrido | Regla |
+| **8.3** Las seis fases | Qué ocurre en cada fase, una por una | Tabla de casos |
+| **8.4** Avance y retroceso | Desde qué fase se puede volver y a cuál | Tabla de casos |
+| **8.5** Qué guarda el navegador y qué guarda el servidor | Los dos identificadores, la escritura única al cerrar la sesión y los dos recordatorios | Regla + tabla de datos |
+| **8.6** El paso a BES, en cualquier momento | Qué recibe BES, con qué sigue y qué ocurre si falla | Regla + tabla de casos |
+| **8.7** La fase de error | Qué ve la persona y cómo sale de ahí | Tabla de casos |
+| **9** Datos de contacto y consentimiento | Cuándo se piden · Envío por correo · Una sola escritura al CRM · La conciliación y el reencuentro · Aviso simplificado e integral | Regla, salvo el aviso: tabla de datos |
+| **10** Cómo se elige el club | El principio · Los cuatro requisitos · El radio de 10 km · Minutos con tráfico · Los cuatro modos · Alternativas y leyendas · Elección propia | Regla, los cuatro modos en tabla de casos |
+| **11** Cómo se compone el plan | B01 · B02 · B03 · Seco, agua y mixto · Los seis programas de cada modalidad · Entrenamiento personal | Regla, los programas en tabla de datos |
+| **12** Cómo se eligen las clases | La matriz · Los pasos del seleccionador · Filtro de intensidad · Contraindicaciones · Sustitución | Tabla de casos, la matriz en tabla de datos |
+| **13** El texto que redacta el modelo de lenguaje | Una sola llamada · Qué puede y qué queda fijo · Respaldo ante falla | Regla |
+| **14** Las fuentes de datos y su contrato | El corte de las 06:00 · Categorías · Matrices propias · Alta de club y de clase · El contrato de cada fuente | Tabla de datos, el corte y las altas en regla |
+| **15** La operación diaria | La simulación diaria · Qué se revisa y quién · Qué se hace cuando una fuente no llega | Regla + tabla de casos |
+| **16** El traspaso al club | Qué recibe el club · Qué recibe el asesor · Las llamadas directas · Si la persona no se presenta · Cuando el prospecto ya existía | Regla + tabla de casos |
+| **17** El panel de actualización sin código | Qué se cambia sin programar · Quién autoriza · Qué queda registrado | Regla |
 
 ### Parte III · Qué se le exige al sistema
 
 | Sección | Qué lleva | Cómo se escribe |
 |---|---|---|
-| **17** Qué hace el sistema cuando algo sale mal | Una tabla con todos los casos: qué lo dispara, qué ve la persona, qué queda registrado | Tabla de casos |
-| **18** Los umbrales | Velocidad de aparición y de respuesta · Estabilidad de la página · Accesibilidad · Rastreo de las 49 páginas de club · Con qué se comprueba cada cifra | Cifra comprobable |
-| **19** Criterios de aceptación | Una condición comprobable por capítulo, con su herramienta de comprobación | Cifra comprobable |
+| **18** Qué hace el sistema cuando algo sale mal | Una tabla con todos los casos: qué lo dispara, qué ve la persona, qué queda registrado | Tabla de casos |
+| **19** Los umbrales | Velocidad de aparición y de respuesta · Estabilidad de la página · Accesibilidad · Rastreo de las 49 páginas de club · Con qué se comprueba cada cifra | Cifra comprobable |
+| **20** Criterios de aceptación | Una condición comprobable por capítulo, con su herramienta de comprobación | Cifra comprobable |
 
 ---
 
@@ -179,6 +179,9 @@ Aprobados por Eric el 21 de septiembre y aplicados, un commit por capítulo.
 
 | Qué | Con qué |
 |---|---|
-| Que ninguna frase describa al sistema por lo que no hace | `node tools/registro.js`, cinco familias de hallazgo |
-| Que los archivos no cambiaron después de su entrega | `VERIFICACION.es.md`, trece hashes |
-| Que ningún capítulo remita a un número que no exista | `00-estructura.es.md`, índice completo |
+| Que ninguna frase describa al sistema por lo que no hace | `node tools/registro.js`, seis familias de hallazgo. Señala y no borra; las frases que Eric autoriza viven en `tools/registro-permitidas.txt`, cada una con la razón que la sostiene |
+| Que los archivos no cambiaron después de su entrega | `sha256sum` contra la tabla de `VERIFICACION.es.md` |
+| Que ninguna remisión apunte a un apartado que no exista | `python3 tools/remisiones.py` |
+| Que el índice reproduzca los apartados reales de cada capítulo | `python3 tools/indice.py` |
+
+**Lo que ninguna de las cuatro comprueba:** que una remisión apunte al apartado **correcto**. `remisiones.py` confirma que el destino existe, y una remisión a un apartado equivocado que sí existe pasa la prueba. Eso se revisa leyendo.
