@@ -75,14 +75,14 @@ La frontera queda declarada en el texto, para que el lector sepa en qué modo es
 
 | № | Subcapítulos |
 |---|---|
-| **8** | Cuándo se piden · Envío de la experiencia por correo · Una sola escritura al CRM · **La conciliación con la llave canónica y el reencuentro (D-56)** · Aviso simplificado e integral · **Qué ocurre con quien contesta y no agenda** |
+| **8** | Cuándo se piden · Envío de la experiencia por correo · Una sola escritura al CRM · **La conciliación con la llave canónica y el reencuentro (D-56)** · Aviso simplificado e integral |
 | **9** | El principio · Los cuatro requisitos · El radio de 10 km · Minutos con tráfico · Los cuatro modos · Alternativas y leyendas · Elección propia |
 | **10** | B01 · B02 · B03 · Seco, agua y mixto · **Los seis programas de cada una de las tres modalidades individuales (D-77 y D-78)** · Entrenamiento personal para todas las personas |
 | **11** | La matriz de clases · Los pasos del seleccionador · Filtro de intensidad · Matriz de contraindicaciones · Sustitución, nunca exclusión |
 | **12** | Una sola llamada · Qué puede y qué no · Respaldo ante falla |
 | **13** | El corte de las 06:00 · Categorías de fuente · Matrices propias · Alta de club · Alta de clase · El contrato de cada fuente · **La base de experiencias ideales y su contrato (D-56)** |
 | **14** | La simulación diaria · Qué se revisa y quién · Qué se hace cuando una fuente no llega |
-| **15** | Qué recibe el club · Qué recibe el asesor · Qué ocurre si la persona no se presenta · **Qué ve el asesor cuando el prospecto ya existía** |
+| **15** | Qué recibe el club · Qué recibe el asesor · **Las llamadas directas: quien contestó y no agendó** · Qué ocurre si la persona no se presenta · **Qué ve el asesor cuando el prospecto ya existía** |
 | **16** | Qué se puede cambiar sin programar · Quién lo autoriza · Qué queda registrado |
 | **17** | La tabla de casos: qué lo dispara, qué ve la persona y qué queda registrado · Cuando una fuente no llega · Cuando el servidor falla · Cuando el texto viene fuera de rango · Cuando la conexión es lenta · Cuando el guion de la capa personal no corre · Cuando la sesión se pierde a medio recorrido |
 | **18** | Velocidad de aparición y de respuesta · Estabilidad de la página mientras carga · Accesibilidad, con los cuatro pilares · Rastreo de las 49 páginas de club · **Cómo se comprueba cada cifra y con qué herramienta** |

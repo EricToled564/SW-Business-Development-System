@@ -151,10 +151,12 @@ Al cerrar, y **una sola vez**, se escribe el estado final:
 
 | Qué | A dónde |
 |---|---|
-| Las experiencias ideales, **una por cita** | A su base propia |
+| Las experiencias ideales | A su base propia. Con cita, **una por cita**. Sin cita, la del club que se le resolvió |
 | El registro del prospecto y sus citas | Al sistema de clientes |
 | Su experiencia ideal, en su versión final | Por correo a la persona |
-| El brief de cada cita | Por correo al club de esa cita |
+| El brief | Por correo al club. Con cita, uno por cita, al club de esa cita. Sin cita, uno al club que se le resolvió, marcado como **llamada directa** |
+
+**Quien contesta y no agenda pasa a llamada directa del asesor.** Su registro lleva la marca «no quiso agendar visita», y con esa marca el brief llega al asesor del club que se le resolvió, para que la llame. **El asesor no llama a ciegas:** lleva la misma experiencia ideal que la persona recibió por correo. Sin datos de contacto no hay registro ni brief, porque no hay a quién llamar (apartado 7.3.3).
 
 **La escritura es idempotente.** El registro del prospecto lleva la **llave de la sesión** —`session_uuid` en el Mapa del Funnel—: si la persona vuelve y reconfirma, se actualiza ese mismo registro y nunca se duplica. Es una llave distinta del identificador de sesión del navegador: esta sí forma parte del registro, y es la que une la etapa de cuestionario iniciado con la de visita agendada en la medición del funnel.
 

@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-99. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-100. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -888,6 +888,24 @@ La referencia de mejores prácticas pide **calificar a cada prospecto con un pun
 **No se descarta: se aplaza.** Eric lo deja abierto para más adelante, y la condición para retomarlo ya está dicha arriba: hace falta el historial que una lo que la persona contestó con si acabó comprando. Ese historial lo produce la conciliación por nombre, apellido, teléfono y club, así que existirá cuando el sistema lleve tiempo operando. Entonces los puntos se calibran con datos; hoy se inventarían.
 
 **Aterriza en:** la estructura, en «Qué queda fuera de este documento»; y el capítulo 8, con el subcapítulo nuevo.
+
+### D-100 · Quien contesta y no agenda pasa a llamada directa del asesor
+
+Hasta aquí, a esa persona se le ponía la marca «no quiso agendar visita» y el documento no decía nada más de ella. **Ahora entra a las responsabilidades del asesor, como llamada directa.**
+
+| | |
+|---|---|
+| **Quién llama** | El asesor del club que el sistema le resolvió — el mismo que habría recibido su visita |
+| **Con qué llama** | Con su brief. La persona completó el cuestionario, así que su experiencia ideal existe y el brief se redacta igual. **El asesor no llama a ciegas** |
+| **Cuándo sale** | Al cerrar la sesión, en la misma escritura única del apartado 7.5.2 |
+| **Cómo llega marcado** | Como **llamada directa**, para que el asesor lo distinga de una visita agendada |
+| **Si no dejó contacto** | No se abre registro ni sale brief: no hay a quién llamar (apartado 7.3.3) |
+
+**Corrige el apartado 7.5.2**, que enviaba brief solo cuando había cita y guardaba una experiencia ideal solo por cita. Sin cita se guarda la del club resuelto, que es la que el asesor necesita para llamar.
+
+**Obliga a corregir algo fuera de la Arquitectura.** Las responsabilidades del asesor viven en el Proceso Comercial: `SOP/SW/0102`, Captación por el sitio web, no contempla hoy la llamada directa a quien contestó y no agendó. **Queda como trabajo abierto en ese procedimiento**, y de ahí baja al Manual de Ventas `MV/SW/01` si cambia el guion de la llamada.
+
+**Aterriza en:** capítulo 7, apartado 7.5.2; capítulo 15, con subcapítulo propio; y fuera del documento, en `SOP/SW/0102`.
 
 
 
