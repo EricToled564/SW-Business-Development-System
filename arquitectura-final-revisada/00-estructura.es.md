@@ -113,7 +113,7 @@ El inventario va a anexo, y no al capítulo 2, porque es una lista larga y poner
 |---|---|---|
 | **Arquetipos de persona y mapa del recorrido del cliente** | Lo que el sistema necesita saber de quien llega sale del cuestionario, no de un arquetipo. Aquí sería descripción que ninguna regla consume (D-97) | En los documentos de estrategia del depósito |
 | **Medidas, tipografías, colores y componentes** | Es el sistema de diseño que el Contrato encarga aparte | Entregable del sistema de diseño |
-| **Calificación de prospectos por puntaje y enrutamiento por esa calificación** | El Contrato no la pacta para este proyecto. El enrutamiento que sí está pactado es la escalación de BES a una persona, y pertenece al Proyecto B (D-99) | Proyecto B · Business Development System |
+| **Calificación de prospectos por puntaje y enrutamiento por esa calificación** | El Contrato no la pacta para este proyecto. El enrutamiento que sí está pactado es la escalación de BES a una persona, y pertenece al Proyecto B. **Aplazado, no descartado:** se retoma cuando haya historial para calibrar los puntos (D-99) | Proyecto B · Business Development System |
 | **Pruebas A/B de titulares, llamados a la acción e imágenes** | El Contrato no las pacta para este proyecto (D-99) | Se cotiza si Sports World las quiere |
 
 ---

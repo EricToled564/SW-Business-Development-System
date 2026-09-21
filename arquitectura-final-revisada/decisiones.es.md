@@ -885,6 +885,8 @@ La referencia de mejores prácticas pide **calificar a cada prospecto con un pun
 
 **Lo que sí queda dentro, y es un hueco real:** qué ocurre con quien contesta el cuestionario y **no** agenda. Hoy se le pone la marca «no quiso agendar visita» y el documento no dice nada más. Eso no es calificar: es qué se hace con un registro que el sistema ya crea, y se escribe en el capítulo 8.
 
+**No se descarta: se aplaza.** Eric lo deja abierto para más adelante, y la condición para retomarlo ya está dicha arriba: hace falta el historial que una lo que la persona contestó con si acabó comprando. Ese historial lo produce la conciliación por nombre, apellido, teléfono y club, así que existirá cuando el sistema lleve tiempo operando. Entonces los puntos se calibran con datos; hoy se inventarían.
+
 **Aterriza en:** la estructura, en «Qué queda fuera de este documento»; y el capítulo 8, con el subcapítulo nuevo.
 
 
