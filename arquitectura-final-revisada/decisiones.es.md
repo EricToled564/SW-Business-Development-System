@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-100. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-101. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -908,6 +908,19 @@ Hasta aquí, a esa persona se le ponía la marca «no quiso agendar visita» y e
 **La asume Sports World en el arranque.** La regla del sistema queda escrita aquí, pero la llamada la hace una persona: que los asesores tomen ese trabajo, y en qué plazo, **es una de las decisiones de Sports World para el arranque del proyecto**, y así queda registrada en los puntos abiertos.
 
 **Aterriza en:** capítulo 7, apartado 7.5.2; capítulo 15, con subcapítulo propio; y fuera del documento, en `SOP/SW/0102`.
+
+### D-101 · La prueba para saber si una frase en negativo se queda o se va
+
+D-92 prohíbe describir el sistema por lo que no hace. La prueba para aplicarla es **el sujeto de la frase**:
+
+| El sujeto es… | Qué es la frase | Qué se hace |
+|---|---|---|
+| **El problema actual de Sports World** —lo que hay y no se alcanza a ver— | Un hallazgo. La omisión es el hecho, y decirla en afirmativo la borraría | **Se queda** |
+| **El sistema que se está construyendo** | Un defecto de redacción: obliga a deducir el hecho por descarte | **Se reescribe en afirmativo** |
+
+**Los dos casos que se quedan por esta prueba:** «El objetivo que no se atiende: bajar de peso» y «La disciplina que sí existe y no se ve». Las dos nombran una omisión de Sports World, que es justo lo que el proyecto viene a corregir.
+
+**Aterriza en:** `NORMA-DE-REDACCION.es.md`, regla 1.
 
 
 
