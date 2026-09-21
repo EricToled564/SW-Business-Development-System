@@ -2,7 +2,6 @@
 
 La experiencia ideal se construye alrededor de los objetivos que la persona declara. Esos objetivos **no son abiertos**: están acotados por las opciones de dos reactivos del cuestionario. Cinco objetivos emocionales y seis funcionales. Once opciones, y nada de lo que la persona quiere queda fuera de ellas.
 
-El acotamiento es deliberado. Un objetivo libre obligaría al sistema a interpretar; un objetivo elegido de una lista cerrada le permite resolver.
 
 ## 6.1 Dos ejes que no se mezclan
 
@@ -42,9 +41,9 @@ La persona elige **uno o dos**.
 
 **Ninguno de los seis abre preguntas adicionales.** Elegir un objetivo no alarga el cuestionario ni activa una rama de reactivos propia.
 
-Los seis no son una lista de conveniencia: **se definieron contra la oferta mínima de clases por club**, de modo que todo club de la red tenga al menos una clase que sirva a cada uno. El capítulo 9 especifica qué se sigue de eso al elegir club.
+**Los seis se definieron contra la oferta mínima de clases por club**, de modo que todo club de la red tenga al menos una clase que sirva a cada uno. El capítulo 9 especifica qué se sigue de eso al elegir club.
 
-**Los seis tienen página propia en el sitio**, y se llaman ahí con estas mismas palabras: cinco en el nivel 07 y bajar de peso en el nivel 08. Es la decisión D-70, y existe para que el cuestionario, las páginas, el menú contextual, la matriz de clases y la experiencia nombren lo mismo con el mismo vocabulario. Cuando la página y el instrumento usan dos listas distintas, alguien tiene que traducir entre ellas en cada pantalla, y ahí es donde se pierden las correspondencias. El apartado 2.1.1 lleva la tabla.
+**Los seis tienen página propia en el sitio**, y se llaman ahí con estas mismas palabras: cinco en el nivel 07 y bajar de peso en el nivel 08. El apartado 2.1.1 lleva la tabla.
 
 ## 6.4 El objetivo principal y el secundario
 
@@ -72,6 +71,6 @@ El reactivo 6 permite responder «quiero que me recomienden». En ese caso **el 
 | Moverme mejor con más agilidad | En agua |
 | Los otros cuatro | En piso seco |
 
-La regla no es una preferencia de diseño: **sale de la matriz de clases**, que califica cada clase del catálogo frente a cada objetivo. Para esos dos objetivos, la oferta acuática de la red tiene clases calificadas como idóneas; para los otros cuatro, no las tiene en cantidad que justifique resolver en agua. El capítulo 13 especifica qué es la matriz de clases, quién la mantiene y con qué contrato.
+**La regla sale de la matriz de clases**, que califica cada clase del catálogo frente a cada objetivo. Para esos dos objetivos, la oferta acuática de la red tiene clases calificadas como idóneas; para los otros cuatro, no las tiene en cantidad que justifique resolver en agua. El capítulo 13 especifica qué es la matriz de clases, quién la mantiene y con qué contrato.
 
 Cuando el sistema resuelve la modalidad de esta forma, **se comporta exactamente igual que si la persona hubiera elegido «en la alberca»**, incluida la exigencia de la alberca como amenidad del club. A la persona no se le informa de la postergación: recibe su plan. Al asesor sí se le anota en el brief cuál modalidad decidió el sistema.
