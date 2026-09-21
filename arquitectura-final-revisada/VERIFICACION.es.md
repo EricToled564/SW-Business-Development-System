@@ -21,7 +21,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
 | `02-como-se-pierde-hoy.es.md` | 1,211 | `82ac54ecb2870dd50e4ad8fd4efcf7fe01c31ccc826e78b5d2ed1a56e96bf9b0` |
 | `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,919 | `a2aa840d5750739648444ee4661c38b3d6618c200fc013478399b26715f1c6ff` |
-| `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,707 | `b2661f2976e5edee69b9b2d1be6cdb306ae7e88c3a5c305343ee07c7c5e3b8a0` |
+| `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 2,150 | `a997d171adff66087acaaf490bf942a901b1bd38069789d1c320b55074f1dc84` |
 | `05-el-cuestionario.es.md` | 3,562 | `3de5578698760770c17dde42375e61265ed60cbed35703676870a21d9cda4f44` |
 | `06-quien-puede-recorrer-la-experiencia.es.md` | 941 | `20074348d11dc90a1a044896670f4aaa6bcb6f2b6ec43f07cd8eca44f162c884` |
 | `07-los-objetivos-de-la-persona.es.md` | 827 | `1f928c0a6ff5565aef60233b76d4f50a195d7515abb234d8abccc233d0ecde75` |
@@ -43,7 +43,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **1** | Sí | **Eric.** Instalado carácter por carácter | Nada |
 | **2** | Sí | **Eric.** Instalado carácter por carácter | Nada |
 | **3** | Sí | **Eric.** Instalado carácter por carácter, apartados 3.1 a 3.10 | Sus 12 correcciones a los apartados 3.5 a 3.10, del 21 de septiembre. Las cinco frases que marcaba el verificador quedaron autorizadas y anotadas en `tools/registro-permitidas.txt`. **Un solo cambio de notación:** «su reactivo 4» pasa a «**Q4**», la clave de CEI-01 |
-| **4** | **No** | Reescrito el 21 de septiembre | Entra al registro de los capítulos 1 a 3. El contenido aprobado se conserva; el apartado 4.2.5 pasa a dos reglas normativas y la remisión del alcance del instrumento apunta a 5.8, donde antes decía capítulo 6 |
+| **4** | Sí | **Eric.** Instalado carácter por carácter | Sustituye por completo la reescritura del 21 de septiembre. Corrige dos hechos que esa versión tenía mal: la primera Experiencia Ideal se calcula al terminar el cuestionario, **antes de que exista una cita**, y **cada entrega tiene dos páginas propias**, cuatro en total. Las dos reglas normativas de 4.2.5 y la remisión a 5.8 se conservan |
 | **5** | **No** | Reescrito el 21 de septiembre | Los reactivos pasan a las claves **Q1 a Q16** de CEI-01. La tabla anterior tenía la numeración corrida desde su tercer renglón, y el apartado 5.9 estaba partido en dos con cuatro renglones huérfanos. Entran 5.4.1 y 5.4.2 |
 | **6** | **No** | Reescrito el 21 de septiembre | Entra al registro de los capítulos 1 a 3. Los reactivos pasan a las claves **Q6, Q13, Q14, Q15, Q15b y Q16**. La compuerta se identifica como **G0**. Once frases del verificador, resueltas |
 | **7** | **No** | Corregido el 21 de septiembre | Los dos ejes pasan a **Q3** y **Q4**, y la modalidad a **Q6**. Tres frases del verificador, resueltas. Se corrige «A la persona no se le informa de la postergación», que nombraba algo que este capítulo no define |
@@ -79,6 +79,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **Las seis fases del capítulo 8** | La tabla las numeraba **1, 3, 4, 5, 6 y 7**: seis fases con siete números y el 2 ausente. Los apartados 8.3.1 a 8.3.4 ya las llamaban por la numeración correcta, igual que la tabla de retroceso de 8.4, que las nombra sin número. La tabla quedaba sola contra el resto del capítulo. Es el mismo defecto que tenía la tabla de reactivos del capítulo 5 |
 | **Las claves Q## en todo el documento** | Ninguna remisión a un reactivo va ya por número suelto. Las cuatro que quedaban en los capítulos 3, 6, 7 y 9 usan la clave de CEI-01 |
 | **El índice deja de citar la bitácora** | `tools/indice.py` retira las claves **D-##** al generar el apartado 0.3. La trazabilidad de cada decisión sigue en `00-estructura.es.md` y en la bitácora; el índice nombra subcapítulos |
+| **El capítulo 4, en la versión de Eric** | Sustituye la reescritura del mismo día. Corrige dos hechos: la primera Experiencia Ideal existe **antes de que haya cita** —lo que sostiene la llamada directa del asesor a quien contesta y no agenda—, y las dos entregas llevan **dos páginas cada una**, cuatro en total, donde la versión anterior se leía como dos en total. Suma el caso de cambiar una clase dentro del mismo club y acota la señal de 4.4.4 a cuando existe otro club que sí cumple |
 | **El barrido de párrafos** | De **73 frases a 7**. Cinco son texto de Eric, en los capítulos 1 y 2. Una es un renglón de la tabla de jerarquía documental. Una es la regla del navegador del apartado 8.5.1, prohibición normativa del mismo tipo que las cuatro ya autorizadas |
 
 ## Qué cambió en la entrega del 20 de septiembre
