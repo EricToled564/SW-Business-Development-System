@@ -41,8 +41,15 @@ def previstos():
         if len(cols) == 3:
             nombres[n] = cols[0].replace('**', '')
         elif len(cols) == 1:
-            subs[n] = cols[0]
+            subs[n] = sin_claves(cols[0])
     return nombres, subs
+
+def sin_claves(s):
+    """El índice nombra los subcapítulos; la trazabilidad de cada decisión
+    vive en 00-estructura y en la bitácora. Las claves D-## se retiran aquí
+    para que el índice no cite el registro de decisiones."""
+    s = re.sub(r'\s*\((?:D-\d{2})(?:\s+y\s+D-\d{2})*\)', '', s)
+    return re.sub(r'\s{2,}', ' ', s).strip()
 
 def main():
     hechos = escritos()
