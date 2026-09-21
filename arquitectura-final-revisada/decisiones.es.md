@@ -905,22 +905,32 @@ Hasta aquí, a esa persona se le ponía la marca «no quiso agendar visita» y e
 
 **Obliga a corregir algo fuera de la Arquitectura.** Las responsabilidades del asesor viven en el Proceso Comercial: `SOP/SW/0102`, Captación por el sitio web, no contempla hoy la llamada directa a quien contestó y no agendó. **Queda como trabajo abierto en ese procedimiento**, y de ahí baja al Manual de Ventas `MV/SW/01` si cambia el guion de la llamada.
 
+**La asume Sports World en el arranque.** La regla del sistema queda escrita aquí, pero la llamada la hace una persona: que los asesores tomen ese trabajo, y en qué plazo, **es una de las decisiones de Sports World para el arranque del proyecto**, y así queda registrada en los puntos abiertos.
+
 **Aterriza en:** capítulo 7, apartado 7.5.2; capítulo 15, con subcapítulo propio; y fuera del documento, en `SOP/SW/0102`.
 
 
 
 ---
 
-## Puntos abiertos que esta revisión destapó
+## Puntos abiertos
+
+### Decisiones de Sports World, para el arranque del proyecto
+
+| Decisión | De qué depende |
+|---|---|
+| **Cuáles son las siete clases premium** | La redacción de esas siete páginas. Sin ella no se escriben (D-93) |
+| **Que los asesores tomen las llamadas directas** a quien contestó el cuestionario y no agendó, y en qué plazo | Es trabajo nuevo para el equipo de club. La regla del sistema ya está escrita (D-100): lo que falta es que Sports World la asuma y fije el plazo de la llamada. De ahí baja la corrección de `SOP/SW/0102` |
+
+### Puntos abiertos del documento
 
 | Punto | Qué falta |
 |---|---|
-| **Los umbrales** | Las cifras que el Contrato ya fija y que la Arquitectura todavía no recoge: **LCP < 2.5 s, INP < 200 ms, CLS < 0.1** (Anexo Dos, Sección I), **WCAG 2.2 AA** y **49 de 49 páginas de club rastreables en SSR** (Anexo Dos, tabla de KPIs). Son obligación firmada; lo único que falta decidir es **dónde viven en la estructura de dieciséis capítulos y seis anexos**. **Pendiente de Eric** |
+| **Los umbrales** | Las cifras están verificadas contra el Contrato —**LCP < 2.5 s, INP < 200 ms, CLS < 0.1**, **WCAG 2.2 AA** y **49 de 49 páginas de club rastreables en SSR**— y su lugar ya está decidido: capítulo 18 (D-98). Falta escribir el capítulo |
 | **Dos documentos se llaman CEI-01** | El del Anexo A del Manual del Proceso Comercial y el vigente. La etiqueta no distingue |
 | **Dos asistentes se llaman BES** | El de esta Arquitectura, que atiende prospectos, y el del archivo de configuración del depósito, que atiende al equipo del proyecto y declara expresamente que no atiende prospectos |
 | **De dónde sale el club sustituto** | Ver D-43 |
 | **Atribución comercial de la venta que se va a otro club** | Ver D-44 |
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
-| **Cuáles son las siete clases premium** | Decisión de Sports World, en el arranque del proyecto. De ella depende la redacción de esas siete páginas (D-93) |
 | **CEI-01 requiere dos ajustes** | El renglón de Clubes del control de lógica, y la declaración del bloque P0 |
 | **La base de experiencias ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 13 |
