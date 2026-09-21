@@ -1,148 +1,319 @@
 # Capítulo 6 · Quién puede recorrer la experiencia
 
-La Experiencia Ideal está dirigida a **personas mayores de edad que todavía no son socias de Sports World**.
+La Experiencia Ideal digital está dirigida a **personas de 18 años o más que todavía no son socias de Sports World**.
 
-Las dos condiciones se preguntan, y se resuelven antes de cualquier otra cosa.
+La mayoría de edad debe confirmarse antes de cualquier otra cosa.
 
-**Quien cumple la primera recorre la experiencia completa. Quien responde que no recorre una ruta más corta**, que el apartado 6.2 especifica.
+**Quien confirma que tiene 18 años o más puede recorrer la experiencia completa. Quien responde que no entra en una ruta reducida y anónima que únicamente le ayuda a identificar cuál sería su club ideal.**
+
+Para las personas de **14 a 17 años**, la Experiencia Ideal sí está disponible, pero **debe construirse presencialmente en el club, con su tutor, y no mediante el recorrido digital**.
 
 ---
 
 ## 6.1 La compuerta de mayoría de edad
 
-El cuestionario abre con una compuerta, identificada como **G0**.
+El cuestionario debe abrir con una compuerta identificada como **G0**.
 
-**La compuerta es lo primero que la persona ve.**
+**G0 debe ser lo primero que la persona vea.**
 
-> Esta experiencia está disponible para personas mayores de 18 años. ¿Confirmas que tienes 18 años o más? · **Sí** · **No**
+> Esta experiencia está disponible en línea para personas de 18 años o más. ¿Confirmas que tienes 18 años o más? · **Sí** · **No**
 
-Su respuesta gobierna una sola cosa: cuál de las dos rutas se recorre.
+G0 no debe solicitar la edad exacta.
 
-**G0 queda fuera del plan, del brief y de la recomendación.**
+Debe confirmar únicamente cuál de las dos rutas corresponde.
 
-| Respuesta | Qué ocurre |
-|---|---|
-| **Sí** | La Experiencia Ideal completa, con sus seis fases |
-| **No** | La ruta reducida del apartado 6.2 |
+| Respuesta | Qué ocurre                                                    |
+| --------- | ------------------------------------------------------------- |
+| **Sí**    | La persona continúa por la Experiencia Ideal digital completa |
+| **No**    | La persona continúa por la ruta reducida del apartado 6.2     |
+
+G0 debe quedar fuera del plan, del brief y de la recomendación.
 
 ---
 
 ## 6.2 La ruta reducida
 
-Cuando alguien responde que no, **el flujo cambia de ruta**.
+Cuando la persona responde **No** en G0, el recorrido completo debe detenerse y el sistema debe abrir una ruta reducida y anónima.
 
-El sistema le ayuda a encontrar su club con las respuestas que resuelven la ubicación y los requisitos.
+Esta ruta tiene un solo propósito:
 
-**Ningún reactivo de esta ruta debe pedir datos personales.**
+**determinar qué club Sports World es el más apropiado para esa persona con base en lo que quiere lograr, cómo prefiere entrenar, su nivel, el tipo de entrenamiento que prefiere, los requisitos que necesita que tenga el club y desde dónde se trasladaría.**
 
----
+No construye una Experiencia Ideal.
 
-### 6.2.1 Qué se le pregunta
+No inicia una relación comercial.
 
-Se le pregunta lo que resuelve el club.
+No identifica a la persona.
 
-| Clave | Para qué se le pregunta |
-|---|---|
-| **Q6** · Dónde prefiere entrenar | Decide si la alberca se exige como amenidad |
-| **Q13** · Con quién visitaría el club | Habilita la opción de actividades para menores |
-| **Q14** · Preferencias | Fija los requisitos que el club debe cumplir |
-| **Q15** y **Q15b** · Cerca de qué | Fijan cuál es su origen prioritario |
-| **Q16** · Código postal o colonia | Ubica ese origen para calcular el tiempo de traslado |
+No genera ningún contacto posterior.
 
-**El bloque de precarga sí se muestra**, con las mismas reglas del apartado 5.2.
-
-Confirma una intención que el contexto previo ya mostró, y sirve para entregarle un club que imparta lo que venía buscando.
-
-Es para lo que existe esta ruta.
-
-**Esta ruta no debe pedir nombre, apellido, teléfono ni correo.**
-
-El objetivo, el ritmo y el nivel —**Q4**, **Q5** y **Q9**— alimentan el plan de entrenamiento, y esta ruta entrega club.
+No utiliza información previa de navegación ni precarga contexto.
 
 ---
 
-### 6.2.2 Qué recibe
+### 6.2.1 Qué preguntas utiliza
 
-El club que le corresponde, con lo necesario para llegar: **nombre, dirección y tiempo de traslado en minutos**.
+La ruta reducida debe utilizar únicamente los reactivos de CEI-01 necesarios para determinar qué club es el más apropiado para la persona.
 
-Y una línea que le dice cómo inscribirse: **con la firma de su tutor, en el club**.
+| Reactivo                                             | Qué utiliza                                                                                                        |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Q4 · Qué busca**                                   | Define uno o dos objetivos y permite evaluar qué club puede responder mejor a ellos                                |
+| **Q5 · Qué ritmo va con ella**                       | Permite considerar el tipo de experiencia de entrenamiento que mejor corresponde a su preferencia                  |
+| **Q6 · Dónde prefiere entrenar**                     | Determina si busca piso seco, alberca o ambas modalidades y si la alberca debe convertirse en requisito excluyente |
+| **Q9 · Cuál es su nivel**                            | Permite considerar si la oferta disponible en el club corresponde a su nivel declarado                             |
+| **Q12 · Entrenamiento individual o clases en grupo** | Permite considerar qué tipo de oferta debe tener mayor relevancia al evaluar el club                               |
+| **Q14 · Qué quiere que se priorice**                 | Incorpora los requisitos aplicables del club, como programas de bajo impacto o programas prenatales o de posparto  |
+| **Q15 · Cerca de qué busca**                         | Determina si el origen para buscar el club es domicilio, oficina o ambos                                           |
+| **Q15b · Qué origen es prioritario**                 | Se pregunta únicamente cuando Q15 es “Ambos”                                                                       |
+| **Q16 · Código postal o colonia**                    | Ubica el origen prioritario y permite calcular el tiempo de traslado y resolver el club                            |
 
-La selección del club corre con las mismas reglas del capítulo 10: los mismos requisitos, el mismo radio y la misma medición en minutos.
+La ruta reducida **no debe utilizar P0 · Precarga**.
 
-Lo que cambia es qué se entrega después.
+No debe utilizar:
+
+* historial de navegación;
+* campaña de origen;
+* página de aterrizaje;
+* páginas visitadas;
+* ni ningún otro contexto previo.
+
+No debe prellenar ninguna respuesta.
+
+**Todas las decisiones deben partir exclusivamente de lo que la persona conteste dentro de esta ruta.**
 
 ---
 
-### 6.2.3 El alcance de la ruta reducida
+### 6.2.2 Qué preguntas quedan fuera
 
-**La ruta reducida entrega el club y la vía de inscripción.**
+La ruta reducida debe excluir los reactivos que sirven para identificar a la persona, preparar una visita comercial o recoger información que no sea necesaria para determinar el club ideal.
 
-La Experiencia Ideal, los bloques de entrenamiento, las clases, el brief y la cita agendada pertenecen a la ruta completa.
+Por tanto, deben quedar fuera:
 
-El envío por correo también, porque es la ruta completa la que pide un correo.
+* **Q1 · Nombre**;
+* **Q2 · Forma de trato**;
+* **Q3 · Qué quiere sentir**;
+* **Q7 · Horario**;
+* **Q8 · Días**;
+* **Q10, Q10a y Q11 · Experiencia previa**;
+* **Q13 · Con quién visitaría el club**.
 
-Dos reglas cierran el alcance:
+La ruta tampoco debe solicitar:
 
-1. **Esta ruta no debe abrir registro ni escribir en el sistema de clientes.**
-2. **Al cerrar la sesión, lo respondido termina con ella.**
+* nombre de pila;
+* apellido;
+* correo electrónico;
+* teléfono;
+* ni ningún otro dato destinado a identificar o contactar a la persona.
 
-Es la ruta con la menor exposición posible: se le entrega el club, y la conversación termina donde termina la sesión.
+**No debe existir captura de contacto al final.**
+
+Las respuestas de **Q4, Q5, Q6, Q9, Q12, Q14, Q15, Q15b y Q16** deben utilizarse exclusivamente para determinar el club recomendado y redactar el breve argumento que explica por qué ese club es el más apropiado.
+
+No deben utilizarse para construir todavía la Experiencia Ideal completa.
+
+---
+
+### 6.2.3 Qué hace el sistema con las respuestas
+
+Las respuestas deben utilizarse únicamente durante esa sesión para ejecutar las reglas de selección de club del capítulo 10.
+
+El sistema debe considerar:
+
+1. la ubicación y el tiempo de traslado;
+2. los objetivos declarados;
+3. el ritmo preferido;
+4. la modalidad elegida;
+5. el nivel declarado;
+6. la preferencia por entrenamiento individual o clases en grupo;
+7. la alberca cuando Q6 la convierte en requisito excluyente;
+8. y los requisitos declarados en Q14.
+
+Con esa información debe resolver **un solo club recomendado**.
+
+El sistema no debe utilizar esas respuestas para:
+
+* generar una Experiencia Ideal;
+* construir los tres bloques de entrenamiento;
+* seleccionar una rutina;
+* generar un brief;
+* crear un prospecto;
+* enviar información a un club;
+* alimentar el CRM;
+* iniciar una llamada;
+* enviar un correo;
+* enviar un WhatsApp;
+* ni agendar una visita.
+
+---
+
+### 6.2.4 Qué recibe la persona
+
+Al terminar la ruta, el sistema debe mostrar únicamente:
+
+* **el nombre del club recomendado**;
+* **su dirección**;
+* **el tiempo estimado de traslado en minutos**;
+* y **un resumen breve de por qué ese club es el más apropiado** de acuerdo con las respuestas que dio.
+
+El resumen debe explicar únicamente los criterios que realmente determinaron la recomendación.
+
+Por ejemplo:
+
+> **Sports World X es el club que mejor corresponde a lo que buscas porque está a 18 minutos de tu ubicación, cuenta con alberca y ofrece opciones de entrenamiento que corresponden a tus objetivos, tu nivel y la forma en que prefieres entrenar.**
+
+Después debe aparecer una sola indicación:
+
+> **Te recomendamos visitar este club acompañado de tu tutor. Si tienes entre 14 y 17 años, ahí podrán ayudarte a construir tu Experiencia Ideal y explicarte cómo continuar el proceso para entrenar en Sports World.**
+
+**Ahí debe terminar el recorrido digital.**
+
+No debe aparecer formulario de contacto.
+
+No debe pedirse correo electrónico.
+
+No debe pedirse teléfono.
+
+No debe pedirse nombre.
+
+No debe ofrecerse una cita.
+
+No debe ofrecerse que Sports World contacte a la persona.
+
+No debe ofrecerse continuar la Experiencia Ideal en línea.
+
+---
+
+### 6.2.5 Qué ocurre con la información
+
+La ruta debe funcionar sin crear un registro identificable de la persona.
+
+**Ninguna respuesta debe enviarse al club.**
+
+Ninguna respuesta debe incorporarse al CRM ni a ningún registro de prospectos.
+
+La información debe utilizarse únicamente durante la sesión para calcular el club recomendado.
+
+**Al terminar la sesión, las respuestas deben terminar con ella.**
+
+Si la persona decide acudir al club, el proceso debe comenzar ahí como una interacción nueva.
+
+El club no debe recibir previamente:
+
+* sus respuestas;
+* su recomendación;
+* su ubicación;
+* sus preferencias;
+* ni ningún otro dato de esta ruta.
 
 ---
 
 ## 6.3 De catorce a diecisiete años
 
-Quien tiene entre catorce y diecisiete años **entrena como adulto**: mismo catálogo de clases, mismas áreas y la misma Experiencia Ideal.
+Una persona de **14 a 17 años** puede recibir una Experiencia Ideal.
 
-El catálogo completo está a su alcance.
+La diferencia es **dónde se construye**.
 
-Lo que cambia es la contratación.
+**No debe construirse en línea. Debe construirse presencialmente en el club, con su tutor.**
+
+En el recorrido digital, la persona de 14 a 17 años utiliza únicamente la ruta reducida del apartado 6.2 para identificar cuál sería su club ideal.
+
+El resultado digital termina con esa recomendación.
+
+Si decide acudir al club con su tutor, Sports World puede comenzar ahí el proceso correspondiente y construir presencialmente su Experiencia Ideal completa.
+
+Cuando las reglas de Sports World permitan que una persona de 14 a 17 años utilice el catálogo adulto, su Experiencia Ideal puede construirse sobre las mismas disciplinas, áreas y modalidades de entrenamiento que correspondan.
+
+Por tanto, la restricción digital no significa que reciba una experiencia de entrenamiento inferior.
+
+Significa únicamente que:
+
+**la recomendación de club puede resolverse en línea de forma anónima, pero la Experiencia Ideal completa debe construirse presencialmente.**
 
 ---
 
 ## 6.4 La contratación de una persona menor de edad
 
-**Requiere la firma de su tutor y se realiza únicamente en el club.**
+La contratación de una persona menor de edad debe realizarse **presencialmente en el club y con la intervención de su tutor**, conforme al proceso vigente de Sports World.
 
-**El sitio no debe contratar a personas menores de edad.**
+El sitio no debe:
 
-Esa es la razón de las dos rutas.
+* contratar a una persona menor de edad;
+* capturarla como prospecto;
+* solicitar sus datos de contacto;
+* agendarle una visita;
+* generar un brief para el club;
+* ni transferir al club las respuestas de la ruta reducida.
 
-La ruta completa termina en una cita que lleva a una contratación en línea, y esa contratación corresponde a una persona mayor de edad.
+La ruta digital debe terminar con una recomendación:
 
-La ruta reducida termina donde una persona menor de edad sí puede seguir: **en la puerta del club, con su tutor**.
+**este es el club que mejor corresponde a lo que buscas; te recomendamos acudir ahí con tu tutor para continuar.**
 
-Las autorizaciones presenciales las administra Sports World.
+Para una persona de 14 a 17 años, es en ese proceso presencial donde debe construirse la **Experiencia Ideal completa**.
+
+Las autorizaciones, validaciones y documentos que correspondan deben administrarse directamente por Sports World dentro de ese proceso presencial.
 
 ---
 
 ## 6.5 Solo para quien todavía no es socio
 
-La Experiencia Ideal es un instrumento de captación, y se dirige a quien todavía no es parte de Sports World.
+La Experiencia Ideal digital es un instrumento de captación y se dirige a personas que todavía no tienen una membresía activa en Sports World.
 
-De ahí salen dos reglas que el cuestionario cumple siempre:
+De ahí salen dos reglas para CEI-01:
 
-1. **Ningún reactivo debe ofrecer la opción «Entreno actualmente en Sports World»**, en ninguno de los cuatro modos de aplicación.
-2. **Quien tuvo membresía antes aparece como regreso después de una pausa.** **Q10** lo recoge con dos opciones distintas: quien vuelve a Sports World y quien vuelve al ejercicio por otra vía.
+1. **Ningún reactivo debe ofrecer la opción “Entreno actualmente en Sports World”**, en ninguno de los cuatro modos de aplicación de la ruta completa.
+2. **Quien tuvo una membresía anteriormente debe tratarse como un regreso después de una pausa.**
 
-Cuando la persona declara que regresa a Sports World, el sistema localiza su membresía anterior antes de la visita y el brief lo señala.
+Q10 distingue los contextos de regreso definidos en CEI-01, incluido el regreso a Sports World.
 
-**La conversación del asesor arranca como reencuentro.**
+Cuando una persona adulta declara que regresa a Sports World, el sistema debe generar la señal correspondiente para que su membresía anterior se localice antes de continuar la atención comercial.
+
+El brief debe identificar ese contexto.
+
+**La conversación del asesor debe comenzar como un reencuentro, no como si Sports World nunca hubiera tenido relación con esa persona.**
+
+El sistema no debe inferir que alguien tiene o tuvo una membresía si la persona no lo declaró o esa relación no fue localizada conforme a las reglas correspondientes.
 
 ---
 
-## 6.6 Qué datos se recogen de personas menores de edad
+## 6.6 Qué información se recoge de personas menores de edad
 
-**El cuestionario pregunta la edad de quien lo responde, y no debe preguntar la de ninguna otra persona.**
+**El recorrido digital no debe pedir la edad exacta de una persona menor de edad.**
 
-Quien contesta declara sus propios objetivos.
+G0 debe limitarse a determinar si quien responde tiene **18 años o más**.
 
-Cuando declara que entrenará con sus hijos, lo que se recoge es **el interés en las actividades para menores de 3 meses a 13 años**, que es un servicio del club.
+Cuando responde No, la ruta reducida puede recoger únicamente las respuestas de:
 
-**Ningún reactivo debe recoger el nombre, la edad ni ningún otro dato de esas personas menores de edad.**
+* **Q4**;
+* **Q5**;
+* **Q6**;
+* **Q9**;
+* **Q12**;
+* **Q14**;
+* **Q15**;
+* **Q15b**, cuando aplique;
+* y **Q16**.
 
-La distinción tiene consecuencia legal.
+No debe recoger:
 
-Preguntar por un servicio registra un interés comercial.
+* nombre;
+* apellido;
+* teléfono;
+* correo;
+* datos de contacto;
+* historial comercial;
+* datos de terceros;
+* ni ningún otro dato destinado a identificar a la persona.
 
-Preguntar por un menor registra el dato de una persona que está fuera de la conversación y que no consintió nada.
+No debe utilizar P0.
+
+No debe abrir un registro.
+
+No debe enviar las respuestas a un club.
+
+No debe conservarlas después de que termine la sesión.
+
+**La información existe únicamente para responder una pregunta: qué club Sports World sería el más apropiado para esa persona.**
+
+Una vez entregada esa respuesta y su breve explicación, el recorrido debe terminar.
+
+Si la persona tiene entre 14 y 17 años y decide continuar, debe hacerlo presencialmente en el club acompañada de su tutor, y **la Experiencia Ideal comienza ahí como un proceso nuevo**.

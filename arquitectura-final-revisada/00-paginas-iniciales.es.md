@@ -34,7 +34,7 @@ Cuando dos documentos del proyecto dicen cosas distintas sobre el mismo hecho, *
 | Documento | Qué gobierna |
 |---|---|
 | **Mapa del Funnel** | La medición completa: las etapas, su definición operativa, sus fuentes y sus llaves. Rige como documento único de medición |
-| **CEI-01 versión 1.3** | El cuestionario: su bloque de precarga, sus reactivos, opciones, validaciones y ramificaciones |
+| **CEI-01 versión 1.4** | El cuestionario: sus dos rutas, su bloque de precarga, sus reactivos, opciones, validaciones y ramificaciones |
 | **Manual del Proceso Comercial** | Las responsabilidades de las personas: quién hace qué, en qué momento |
 | **Integración de Datos** | El contrato técnico de cada fuente, campo por campo |
 
@@ -87,8 +87,8 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **3** | El sitio: cómo la persona llega y cómo se le guía | 3.1 Los once tipos de página y el problema que resuelve cada uno · 3.2 Lo que el sitio produce · 3.3 El menú superior · 3.4 Los tres estados de la persona · 3.5 El contenido de cada tipo de página · 3.6 El menú contextual · 3.7 Los menús, uno por uno · 3.8 Qué se lleva la persona al cuestionario · 3.9 La página es la misma para todos; el menú es la capa personal · 3.10 El blog |
 | **4** | Qué recibe la persona y qué recibe el asesor | 4.1 Un solo cálculo, dos entregas · 4.2 Lo que ve la persona · 4.3 BES, disponible en todo momento · 4.4 Lo que lee el asesor: el brief · 4.5 Por qué el club va primero |
 | **5** | El cuestionario: el único instrumento | 5.1 Rol y propósito · 5.2 La precarga: lo que ya sabemos se confirma · 5.3 Cómo se compone el cuestionario · 5.4 Los quince reactivos base · 5.5 Los tres reactivos condicionales · 5.6 Las dos preguntas que cambian la estructura · 5.7 Cómo se comporta el cuestionario en pantalla · 5.8 El alcance del cuestionario · 5.9 Las señales que viajan al brief |
-| **6** | Quién puede recorrer la experiencia | 6.1 La compuerta de mayoría de edad · 6.2 La ruta reducida · 6.3 De catorce a diecisiete años · 6.4 La contratación de una persona menor de edad · 6.5 Solo para quien todavía no es socio · 6.6 Qué datos se recogen de personas menores de edad |
-| **7** | Los objetivos de la persona | 7.1 Dos ejes independientes · 7.2 Los cinco objetivos emocionales · 7.3 Los seis objetivos funcionales · 7.4 El objetivo principal y el secundario · 7.5 Cuando la persona pide que se le recomiende la modalidad |
+| **6** | Quién puede recorrer la experiencia | 6.1 La compuerta de mayoría de edad · 6.2 La ruta reducida · 6.3 De catorce a diecisiete años · 6.4 La contratación de una persona menor de edad · 6.5 Solo para quien todavía no es socio · 6.6 Qué información se recoge de personas menores de edad |
+| **7** | Los objetivos de la persona | 7.1 Dos ejes independientes · 7.2 Los cinco objetivos emocionales · 7.3 Los seis objetivos funcionales · 7.4 El objetivo principal y el secundario · 7.5 Cuando la persona pide que se le recomiende la modalidad · 7.6 Cómo se utilizan los objetivos en la ruta reducida |
 | **8** | El recorrido en pantalla | 8.1 La puerta de entrada: agendar una visita · 8.2 Una sola dirección de internet · 8.3 Las seis fases · 8.4 Avance y retroceso · 8.5 Qué guarda el navegador y qué guarda el servidor · 8.6 El paso a BES, en cualquier momento · 8.7 La fase de error |
 | **9** | Datos de contacto y consentimiento | 9.1 Cuándo se piden y cuáles son · 9.2 El envío de la experiencia por correo · 9.3 Una sola escritura · 9.4 La conciliación con la llave canónica y el reencuentro · 9.5 El aviso simplificado y el aviso integral |
 | **10** | Cómo se elige el club | El principio · Los cuatro requisitos · El radio de 10 km · Minutos con tráfico · Los cuatro modos · Alternativas y leyendas · Elección propia |
@@ -129,7 +129,7 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **Bloque de entrenamiento** | Cada una de las tres partes del plan: `B01`, `B02` y `B03` |
 | **Brief** | Lo que recibe quien va a atender la visita: quién viene, qué quiere y cómo se conduce la visita. Sale del mismo cálculo que la Experiencia Ideal |
 | **Capa personal** | Lo que en una página depende de quien la mira: el menú contextual, la leyenda de disponibilidad y los botones que cambian con el estado |
-| **CEI-01** | El Cuestionario de Experiencia Ideal, versión 1.3. El único instrumento del sistema |
+| **CEI-01** | El Cuestionario de Experiencia Ideal, versión 1.4. El único instrumento del sistema |
 | **Clase individual** | Cualquiera de las 47 disciplinas del catálogo |
 | **Clase premium** | Una de las siete disciplinas que Sports World decide priorizar. Su página lleva más texto y más imágenes |
 | **Club ideal** | El club que el sistema resuelve para esa persona con sus requisitos y su origen |

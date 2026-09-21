@@ -26,3 +26,28 @@ No lleva ningún dato de la persona, permanece del lado de la persona y nunca ll
 La personalización no modifica la página.
 Cada tipo de página reserva desde el inicio el espacio correspondiente al máximo número de botones que puede llegar a tener.
 Mientras el cuestionario siga pendiente, la ranura abre Encuentra tu club ideal, porque todavía no existe un club desde el cual medir.
+
+# Autorizadas por Eric el 21 de septiembre de 2026, las diez que quedaban del
+# barrido de párrafos. Se conservan por cuatro razones distintas:
+#
+#   · Estado anterior de Sports World. El sujeto es la omisión que el proyecto
+#     viene a corregir, y decirla en afirmativo la borra. Primer renglón de la
+#     prueba de D-101.
+#   · Estado declarado del sistema. La ausencia de cita es lo que separa la
+#     llamada directa de la visita agendada. Tercer renglón, D-103.
+#   · Prohibición normativa. La regla 10 de la norma reserva debe · no debe ·
+#     puede para las reglas, y una prohibición se enuncia prohibiendo.
+#   · Precisión de una cifra. P0 acota el conteo de 16 a 19 preguntas.
+#
+# La primera, del capítulo 1, es texto de Eric y él resolvió que se queda.
+
+El resto de este documento explica cómo construirlo.
+Eso conecta elementos que hasta ahora podían operar de forma separada:
+Ya no se trata solamente de mostrar todo lo que Sports World tiene.
+Sports World puede tener entrenadores, evaluación, disciplinas, instalaciones y servicios capaces de responder a esa necesidad, pero nunca entra en la comparación porque nada en la búsqueda establece esa relación.
+Si no existe cita, el brief debe corresponder al club resuelto y debe identificarse como llamada directa.
+Si no existe cita:
+Cuando no existe cita, debe permitir al asesor del club resuelto continuar la atención mediante llamada directa.
+Cuando no existe cita, debe identificar el caso como llamada directa.
+P0 no agrega una pregunta al conteo: confirma información contextual y puede resolver reactivos que, de otra forma, aparecerían después.
+El navegador no debe guardar nada de lo que la persona responde: ni las respuestas del cuestionario, ni los bloques calculados, ni el texto redactado, ni el brief, ni la cita.

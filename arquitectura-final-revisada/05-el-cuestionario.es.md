@@ -2,7 +2,7 @@
 
 Toda la personalización de la Experiencia Ideal sale de un solo instrumento: el **Cuestionario de Experiencia Ideal**, identificado como **CEI-01**.
 
-La versión vigente es la **1.3**, y vive en esta misma carpeta.
+La versión vigente es la **1.4**, y vive en esta misma carpeta.
 
 **Toda regla de personalización del sistema debe partir de un dato recogido o confirmado por CEI-01.**
 

@@ -39,7 +39,8 @@ AJUSTES = [
         'decision': 'D-104',
         'apartados': ['5.4.1'],
         'retira': 'se exige cuando el modo de entrenamiento resuelto es en agua',
-        'incorpora': 'se exige cuando la modalidad elegida o resuelta es En la alberca o Ambas',
+        'incorpora': ['se exige cuando la modalidad elegida o resuelta es En la alberca o Ambas',
+                      'requisito excluyente cuando la modalidad elegida o resuelta es En la alberca o Ambas'],
         'porque': 'El renglón solo contempla el modo resuelto, y la modalidad '
                   'también puede elegirla la persona.',
     },
@@ -98,7 +99,8 @@ def main():
     pendientes = []
     for a in AJUSTES:
         retira_sigue = a['retira'] and a['retira'].lower() in texto.lower()
-        falta_incorporar = a['incorpora'].lower() not in texto.lower()
+        acepta = a['incorpora'] if isinstance(a['incorpora'], list) else [a['incorpora']]
+        falta_incorporar = not any(f.lower() in texto.lower() for f in acepta)
         if retira_sigue or falta_incorporar:
             pendientes.append(a)
 
@@ -110,7 +112,9 @@ def main():
         print('  PENDIENTE · %s  (%s)' % (a['nombre'], a['decision']))
         if a['retira']:
             print('    retira      «%s»' % a['retira'])
-        print('    incorpora   «%s»' % a['incorpora'])
+        acepta = a['incorpora'] if isinstance(a['incorpora'], list) else [a['incorpora']]
+        for f in acepta:
+            print('    incorpora   «%s»' % f)
         print('    lo fija     apartado %s' % ' y '.join(a['apartados']))
         print('    porque      %s' % a['porque'])
 

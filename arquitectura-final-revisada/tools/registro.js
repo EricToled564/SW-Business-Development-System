@@ -48,9 +48,17 @@ const FAMILIAS = [
     nombre: 'Procedencia',
     explica: 'cita el registro de decisiones o el historial de edición',
     patrones: [
-      /\bD-\d{2}\b/, /\bse reescrib/i, /\bse corrig/i, /\bversión anterior\b/i,
+      /\bD-\d{2}\b/, /\bse reescrib/i, /\bse corrig/i,
       /\bantes decía\b/i, /\ben esta entrega\b/i, /\bpendiente de aprobación\b/i,
-      /\bPOR DEFINIR\b/, /\bqueda por definir\b/i, /\bla bitácora\b/i,
+      /\bPOR DEFINIR\b/, /\bqueda por definir\b/i,
+      // «versión anterior» solo cuenta cuando la frase habla del documento. Una
+      // versión anterior del plan de una persona es un objeto del sistema, no
+      // historial de edición.
+      /\bversión anterior\b(?=[^]*\b(documento|capítulo|apartado|texto|redacción|entrega|instrumento|borrador)\b)/i,
+      /\b(documento|capítulo|apartado|texto|redacción|entrega|instrumento|borrador)\b[^]*\bversión anterior\b/i,
+      // «la bitácora» solo cuenta en prosa. En una tabla es el nombre de un
+      // documento de la jerarquía, no una cita al registro de decisiones.
+      { re: /\bla bitácora\b/i, fueraDeTabla: true },
     ],
   },
   {
@@ -99,6 +107,15 @@ function oraciones(linea) {
   return limpia.split(/(?<=[.:;])\s+(?=[A-ZÁÉÍÓÚÑ¿«¡0-9])/).map(normaliza).filter(Boolean);
 }
 
+// Un patrón es una expresión regular, o un objeto que además declara dónde
+// aplica. `fueraDeTabla` lo limita a la prosa: en una celda, la misma palabra
+// suele ser una etiqueta y no una afirmación.
+function aplica(patron, frase, enTabla) {
+  if (patron instanceof RegExp) return patron.test(frase);
+  if (patron.fueraDeTabla && enTabla) return false;
+  return patron.re.test(frase);
+}
+
 function revisa(archivo, ok) {
   const lineas = fs.readFileSync(archivo, 'utf8').split('\n');
   const hallazgos = [];
@@ -108,10 +125,11 @@ function revisa(archivo, ok) {
     if (/^\s*```/.test(linea)) { enCodigo = !enCodigo; return; }
     if (enCodigo || /^\s*#/.test(linea) || /^\s*\|?\s*-{3,}/.test(linea)) return;
 
+    const enTabla = linea.trimStart().startsWith('|');
     for (const frase of oraciones(linea)) {
       if (ok.some((p) => frase.includes(p) || p.includes(frase))) continue;
       for (const fam of FAMILIAS) {
-        if (fam.patrones.some((p) => p.test(frase))) {
+        if (fam.patrones.some((p) => aplica(p, frase, enTabla))) {
           hallazgos.push({ linea: idx + 1, familia: fam.nombre, frase });
           break;
         }

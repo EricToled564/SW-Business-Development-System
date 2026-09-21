@@ -1,80 +1,218 @@
 # Capítulo 7 · Los objetivos de la persona
 
-La Experiencia Ideal se construye alrededor de los objetivos que la persona declara. Esos objetivos son **los que ofrecen dos reactivos del cuestionario**, **Q3** y **Q4**: cinco emocionales y seis funcionales. Once opciones, y todo lo que la persona quiere cabe en ellas.
+La Experiencia Ideal se construye alrededor de dos tipos de objetivos que la persona declara en el cuestionario:
 
+**Q3**, que recoge qué quiere sentir;
+**Q4**, que recoge qué quiere lograr.
+
+Son cinco objetivos emocionales y seis funcionales.
+
+Los dos cumplen funciones distintas.
+
+**El objetivo emocional determina cómo se cuenta la experiencia. El objetivo funcional determina hacia dónde se construye.**
+
+En la ruta reducida para quien no confirma tener 18 años, Q3 no se pregunta. Q4 se conserva únicamente para ayudar a resolver y explicar la recomendación de club, conforme al capítulo 6.
+
+---
 
 ## 7.1 Dos ejes independientes
 
-| Eje | Clave | Qué pregunta | Qué gobierna |
-|---|---|---|---|
-| **Emocional** | **Q3** | Qué quiere **sentir** al salir del club | El **tono** con que se redacta su experiencia |
-| **Funcional** | **Q4** | Qué quiere **lograr** con su cuerpo | El **contenido**: club, bloques y clases |
+| Eje            | Clave  | Qué pregunta                        | Qué gobierna                                                              |
+| -------------- | ------ | ----------------------------------- | ------------------------------------------------------------------------- |
+| **Emocional**  | **Q3** | Qué quiere sentir al salir del club | El tono narrativo con el que se redacta su Experiencia Ideal              |
+| **Funcional**  | **Q4** | Qué quiere lograr                   | Los bloques de entrenamiento, las clases por objetivo y el argumento principal |
 
-Los dos ejes se resuelven por separado. El emocional dice **por qué** está ahí; el funcional dice **qué** quiere que ocurra.
+Los dos ejes deben resolverse por separado.
 
-**El objetivo emocional gobierna cómo se le cuenta. El club, los bloques y las clases los gobierna el objetivo funcional.**
+El eje emocional explica qué significado quiere darle la persona a la experiencia.
+
+El eje funcional define qué dirección debe seguir el entrenamiento.
+
+Q3 no debe modificar el club, los bloques ni las clases.
+
+Q4 no debe decidir por sí solo el club. Entra en la validación de que exista oferta de entrenamiento compatible con los objetivos declarados, pero la elección del club se resuelve conforme a las reglas completas del capítulo 10.
+
+---
 
 ## 7.2 Los cinco objetivos emocionales
 
-La persona elige **uno**.
+En la ruta completa, la persona debe elegir uno.
 
-| Lo que elige | Cómo debe leerse su experiencia |
-|---|---|
-| Desconectarme del trabajo y la rutina | Como un escape y un reinicio mental |
-| Renovar mi energía y mi ánimo | Como algo que levanta la energía y el estado de ánimo |
-| Ser parte de una comunidad saludable | Poniendo por delante las clases en grupo, los espacios compartidos y la pertenencia |
-| Sentir que mi cuerpo responde | Poniendo por delante la capacidad, la resistencia y la confianza en el propio cuerpo |
-| Sentirme mejor conmigo | Como bienestar propio, no como validación de nadie más |
+| Lo que elige                            | Cómo debe leerse su experiencia                                                              |
+| --------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Desconectarme del trabajo y la rutina   | Como un espacio de pausa, cambio de ritmo y reinicio                                         |
+| Renovar mi energía y mi ánimo           | Con un lenguaje de energía, activación y renovación                                          |
+| Ser parte de una comunidad saludable    | Con un lenguaje de pertenencia, convivencia y conexión con el entorno de Sports World        |
+| Sentir que mi cuerpo responde           | Con un lenguaje de capacidad, progreso, resistencia y confianza en el propio cuerpo          |
+| Sentirme mejor conmigo                  | Con un lenguaje de bienestar personal y satisfacción con el propio proceso                   |
 
-Esta respuesta **fija el registro del texto**, para que lo que la persona lea corresponda a la razón real por la que está ahí. La recomendación la resuelve el eje funcional.
+Esta respuesta debe fijar el registro narrativo del texto para que la Experiencia Ideal se explique desde una motivación relevante para la persona.
+
+No debe alterar la recomendación técnica.
+
+Por ejemplo, elegir «Ser parte de una comunidad saludable» no debe hacer que el sistema sustituya entrenamiento individual por clases grupales si Q12 indicó lo contrario.
+
+La regla es:
+
+**Q3 cambia cómo se explica el plan, no el plan que se calcula.**
+
+---
 
 ## 7.3 Los seis objetivos funcionales
 
-La persona elige **uno o dos**.
+La persona debe elegir uno o dos en Q4.
 
-| Lo que elige | Qué significa |
-|---|---|
-| Bajar de peso | Reducción de peso corporal |
-| Mejorar mi estética corporal y definición muscular | Composición corporal y definición |
-| Aumentar masa muscular | Ganancia de masa muscular |
-| Mejorar mi desempeño atlético | Rendimiento deportivo |
-| Mejorar mi capacidad cardiovascular | Capacidad cardiovascular |
-| Moverme mejor con más agilidad | Movilidad, coordinación y control del movimiento |
+| Lo que elige                                        | Qué significa dentro del sistema                     |
+| --------------------------------------------------- | ----------------------------------------------------- |
+| Bajar de peso                                       | Reducción de peso corporal                           |
+| Mejorar mi estética corporal y definición muscular  | Composición corporal y definición                    |
+| Aumentar masa muscular                              | Ganancia de masa muscular                            |
+| Mejorar mi desempeño atlético                       | Rendimiento deportivo                                |
+| Mejorar mi capacidad cardiovascular                 | Capacidad cardiovascular                             |
+| Moverme mejor con más agilidad                      | Movilidad, coordinación y control del movimiento     |
 
-**Los seis se resuelven dentro de Q4.** El cuestionario conserva su longitud y sus tres ramas condicionales, cualquiera que sea el objetivo elegido.
+Los seis objetivos deben resolverse dentro de Q4.
 
-**Los seis se definieron contra la oferta mínima de clases por club**, de modo que todo club de la red tenga al menos una clase que sirva a cada uno. El capítulo 10 especifica qué se sigue de eso al elegir club.
+Elegir uno o dos no debe modificar la longitud estructural del cuestionario ni crear nuevas ramificaciones.
 
-**Los seis tienen página propia en el sitio**, y se llaman ahí con estas mismas palabras: cinco en el nivel 07 y bajar de peso en el nivel 08. El apartado 3.1.1 lleva la tabla.
+Los seis fueron definidos contra la oferta mínima de clases de la red.
+
+Para cada uno de los seis objetivos y cada uno de los tres niveles de intensidad de Q5 debe existir al menos una clase elegible en cada uno de los 49 clubes.
+
+Esto produce **18 combinaciones objetivo × intensidad** que la red debe poder cubrir.
+
+Por eso el objetivo funcional participa en la validación del club, pero normalmente no es el factor que diferencia un club de otro.
+
+La selección se resuelve principalmente con las reglas de cercanía, modalidad, amenidades y preferencias establecidas en el capítulo 10.
+
+Los seis objetivos tienen además una página propia en el sitio y deben conservar exactamente los mismos nombres en:
+
+* el cuestionario;
+* las páginas de objetivo;
+* el menú correspondiente;
+* la matriz de clases;
+* y la Experiencia Ideal.
+
+Cinco pertenecen al tipo de página **07 · Objetivo** y **Bajar de peso** al tipo **08**.
+
+El apartado 3.1.1 especifica esa arquitectura.
+
+---
 
 ## 7.4 El objetivo principal y el secundario
 
-Cuando la persona elige dos, **el primero que elige es el objetivo principal**, y los dos no pesan lo mismo.
+Q4 permite elegir uno o dos objetivos.
 
-**El objetivo principal gobierna, por sí solo:**
+Cuando la persona elige dos, el primero seleccionado debe convertirse en el **objetivo principal**.
 
-- el subgrupo de entrenamiento del Bloque 01,
-- el subgrupo de entrenamiento del Bloque 02,
-- la ponderación de las clases del Bloque 03,
-- el conjunto de clases idóneas con el que se evalúa el club,
-- y el arco del texto que se le redacta.
+El segundo debe convertirse en el **objetivo secundario**.
 
-**El objetivo secundario hace una sola cosa:** diversificar la selección de clases, para que el tercer bloque quede armado sobre más de un eje.
+No deben tener el mismo peso.
 
-El Bloque 01, el Bloque 02 y la elección del club quedan en manos del objetivo principal.
+**El objetivo principal debe gobernar:**
 
-Esa asimetría es intencional. Dos objetivos con el mismo peso producirían un plan que atiende a los dos a medias; un principal y un secundario producen un plan con una dirección clara y una variación encima.
+* el subgrupo de entrenamiento del Bloque 01;
+* el subgrupo de entrenamiento del Bloque 02;
+* la ponderación y el orden de las clases del Bloque 03;
+* el argumento funcional principal de la Experiencia Ideal;
+* el arco principal del texto;
+* y la modalidad cuando Q6 es «Quiero que me recomienden».
+
+**El objetivo secundario debe** diversificar la selección de clases para incorporar también el segundo objetivo sin quitarle dirección principal al plan.
+
+No debe cambiar el subgrupo de entrenamiento de los Bloques 01 y 02.
+
+La asimetría es deliberada.
+
+Dos objetivos con el mismo peso producirían un plan sin una dirección clara. Un objetivo principal establece esa dirección y el secundario añade variedad sin competir con ella.
+
+---
+
+### 7.4.1 Los dos objetivos sí participan en la validación del club
+
+El hecho de que uno sea principal no significa que el segundo pueda ignorarse al validar la oferta del club.
+
+Cuando existen dos objetivos, el sistema debe comprobar que el club tenga **al menos una clase elegible para cada objetivo seleccionado, en la intensidad declarada en Q5**.
+
+Por tanto:
+
+* el objetivo principal gobierna la estructura del plan;
+* el objetivo secundario diversifica principalmente la selección de clases;
+* pero ambos deben superar la condición mínima de elegibilidad del club.
+
+Por diseño de la oferta, los 49 clubes cumplen esa condición para las 18 combinaciones de objetivo e intensidad.
+
+En consecuencia, la existencia de uno o dos objetivos normalmente no decide entre clubes.
+
+La elección final del club debe seguir las reglas del capítulo 10.
+
+---
 
 ## 7.5 Cuando la persona pide que se le recomiende la modalidad
 
-**Q6** ofrece la opción «Quiero que me recomienden». En ese caso **el objetivo principal decide la modalidad**:
+Q6 ofrece la opción **«Quiero que me recomienden»**.
 
-| Objetivo principal | Modalidad resuelta |
-|---|---|
-| Mejorar mi capacidad cardiovascular | En agua |
-| Moverme mejor con más agilidad | En agua |
-| Los otros cuatro | En piso seco |
+Cuando la persona la elige, el objetivo principal debe resolver la modalidad.
 
-**La regla sale de la matriz de clases**, que califica cada clase del catálogo frente a cada objetivo. Para esos dos objetivos, la oferta acuática de la red tiene clases calificadas como idóneas; para los otros cuatro, la oferta de piso seco es la que sostiene la recomendación. El capítulo 14 especifica qué es la matriz de clases, quién la mantiene y con qué contrato.
+| Objetivo principal                                  | Modalidad resuelta   |
+| --------------------------------------------------- | -------------------- |
+| Mejorar mi capacidad cardiovascular                 | En la alberca        |
+| Moverme mejor con más agilidad                      | En la alberca        |
+| Bajar de peso                                       | En piso o área seca  |
+| Mejorar mi estética corporal y definición muscular  | En piso o área seca  |
+| Aumentar masa muscular                              | En piso o área seca  |
+| Mejorar mi desempeño atlético                       | En piso o área seca  |
 
-Cuando el sistema resuelve la modalidad de esta forma, **se comporta exactamente igual que si la persona hubiera elegido «en la alberca»**, incluida la exigencia de la alberca como amenidad del club. La persona recibe su plan resuelto. Al asesor se le anota en el brief cuál modalidad decidió el sistema.
+La modalidad debe resolverse únicamente cuando la persona pide que el sistema la recomiende.
+
+Si la persona elige directamente **En piso o área seca**, **En la alberca** o **Ambas**, su elección debe prevalecer.
+
+La regla sale de la matriz de clases, que califica el catálogo frente a cada objetivo.
+
+El capítulo 14 especifica la matriz, quién la mantiene y bajo qué reglas.
+
+---
+
+### 7.5.1 Efecto sobre la elección del club
+
+Cuando el sistema resuelve **En la alberca**, debe aplicar exactamente las mismas consecuencias que si la persona hubiera seleccionado esa opción directamente en Q6.
+
+Por tanto, **la alberca debe convertirse en requisito excluyente del club**.
+
+Si el sistema resuelve **En piso o área seca**, la alberca no debe convertirse en requisito.
+
+Con la regla vigente de este capítulo, «Quiero que me recomienden» resuelve una de esas dos modalidades; no resuelve «Ambas».
+
+El brief debe indicar que la modalidad fue resuelta por el sistema a petición de la persona, para distinguirla de una modalidad elegida directamente.
+
+---
+
+## 7.6 Cómo se utilizan los objetivos en la ruta reducida
+
+La ruta reducida definida en el capítulo 6 no construye una Experiencia Ideal digital.
+
+Por eso Q3 no debe preguntarse.
+
+No existe en esa ruta un objetivo emocional ni debe generarse un arco narrativo personalizado.
+
+**Q4 sí debe conservarse.**
+
+La persona puede elegir uno o dos objetivos con las mismas opciones y las mismas reglas de principal y secundario.
+
+En esta ruta, Q4 debe utilizarse únicamente para:
+
+* contextualizar la compatibilidad de la oferta del club;
+* aplicar las reglas de modalidad cuando Q6 es «Quiero que me recomienden»;
+* comprobar la condición mínima de clases elegibles;
+* y explicar brevemente por qué el club recomendado corresponde a lo que la persona busca.
+
+No debe utilizarse para:
+
+* construir los Bloques 01, 02 o 03;
+* generar una selección personalizada de clases;
+* producir una Experiencia Ideal;
+* ni generar un brief.
+
+El resultado de la ruta reducida sigue siendo únicamente **un club recomendado y una explicación breve de por qué corresponde a las respuestas de la persona**.
+
+Ahí termina el uso de los objetivos dentro de esa ruta.

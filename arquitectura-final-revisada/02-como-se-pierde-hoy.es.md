@@ -145,7 +145,7 @@ La Experiencia Ideal puede comenzar en tres puntos de entrada:
 
 En los tres casos se utiliza el mismo instrumento, las mismas preguntas y las mismas reglas.
 
-El resultado no cambia según el canal.
+El resultado es el mismo en los tres puntos de entrada.
 
 Lo que cambia es la forma de interacción.
 
