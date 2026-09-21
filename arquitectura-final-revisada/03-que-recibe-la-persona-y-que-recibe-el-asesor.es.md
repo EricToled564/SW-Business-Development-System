@@ -26,7 +26,7 @@ Responde la pregunta que la persona trae en la cabeza al terminar de contestar.
 | Elemento | Qué contiene |
 |---|---|
 | Encabezado | Su nombre, la frase de apertura y el argumento de por qué esa combinación le corresponde |
-| Club recomendado | El club, su tiempo de traslado y la razón por la que se le recomienda ese |
+| Club recomendado | El club, su tiempo de traslado en minutos y la razón por la que se le recomienda ese |
 | Beneficio familiar | Las actividades para menores del club, cuando su perfil las activa |
 | Otros clubes cerca | Panel que se abre a petición, con las alternativas y lo que le falta a cada una |
 | Tarjetas de resumen | Cuatro cajas con lo esencial de su perfil |

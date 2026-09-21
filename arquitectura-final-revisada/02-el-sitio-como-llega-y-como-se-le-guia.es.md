@@ -231,7 +231,7 @@ Las opciones se despliegan dentro del botón, **medidas desde el club ideal de l
 | **Dos o más en la ciudad, ninguno a 5 km** | Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
 | **Dos o más en la ciudad, al menos uno a 5 km** | Conoce otros clubes en tu área · Conoce otros clubes en tu ciudad · Conoce nuestros clubes en todo el país |
 
-**El radio de esta jerarquía es 5 km**, y el orden va de lo cercano a lo lejano. Es el radio con el que la persona **explora** otros clubes; el radio con el que el sistema **resuelve** su club ideal lo fija el capítulo 9.
+**El radio de esta jerarquía es 5 km**, y el orden va de lo cercano a lo lejano. Es el radio con el que la persona **explora** otros clubes; el radio con el que el sistema **resuelve** su club ideal lo fija el capítulo 9. Los kilómetros acotan qué clubes entran en cada lista; **la medida que se le muestra a la persona es el tiempo de traslado, en minutos**, y también la fija el capítulo 9.
 
 **Cada opción que aparece tiene al menos un club que mostrar.** En una ciudad con un solo club, la jerarquía empieza en el país.
 

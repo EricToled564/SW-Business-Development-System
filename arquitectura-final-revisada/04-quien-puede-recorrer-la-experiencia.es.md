@@ -39,7 +39,7 @@ Solo lo que hace falta para resolver el club. Nada más.
 
 ### 4.2.2 Qué recibe
 
-El club que le corresponde, con lo necesario para llegar: **nombre, dirección y tiempo de traslado.** Y una línea que le dice cómo inscribirse: con la firma de su tutor, en el club.
+El club que le corresponde, con lo necesario para llegar: **nombre, dirección y tiempo de traslado en minutos.** Y una línea que le dice cómo inscribirse: con la firma de su tutor, en el club.
 
 La selección del club corre con las mismas reglas del capítulo 9: los mismos requisitos, el mismo radio, la misma medición en minutos. Lo que cambia no es cómo se elige el club, sino qué se entrega después.
 

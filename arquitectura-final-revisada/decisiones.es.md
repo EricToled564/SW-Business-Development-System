@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-90. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-96. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -828,6 +828,21 @@ Son dos destinatarios distintos y dos canales distintos, y esta bitácora lo fij
 **Con dos citas, cada una lleva sus dos recordatorios**, porque cada una tiene su club, su día y su hora (D-67 y D-68).
 
 **Aterriza en:** capítulo 7, apartado 7.5.3; capítulo 15, que especifica lo que recibe el club.
+
+### D-96 · Los kilómetros acotan clubes; los minutos miden el trayecto y son lo que se muestra
+
+Son dos medidas con dos oficios distintos, y cada una se usa donde le toca:
+
+| Medida | Qué hace | Dónde se aplica |
+|---|---|---|
+| **Kilómetros** | **Acotan conjuntos de clubes:** dicen cuáles entran en cada lista | **10 km**, entre qué clubes el sistema **resuelve** el club ideal, capítulo 9. **5 km**, cuáles ofrece **explorar** el menú, medidos desde el club ideal, apartado 2.6.2 |
+| **Minutos** | **Miden el trayecto** de una persona a un club, con tráfico, desde su origen | Es **la medida que se le muestra**: el club recomendado del apartado 3.2.1, la entrega de la ruta reducida del capítulo 4, y el brief |
+
+**El origen del trayecto** lo da el reactivo 16 —código postal o colonia—, que se pregunta aunque la persona haya aceptado un club en la precarga, porque de él dependen el tiempo de traslado y el interés en Multiclub (capítulo 5).
+
+**D-82 queda intacta:** los dos radios en kilómetros siguen siendo dos cosas distintas y no se unifican.
+
+**Aterriza en:** apartados 2.6.2, 3.2.1 y 5.4; capítulos 4 y 9.
 
 
 
