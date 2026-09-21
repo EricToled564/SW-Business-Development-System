@@ -21,7 +21,7 @@ Cuando dos documentos del proyecto dicen cosas distintas sobre el mismo hecho, *
 
 | | Fuente | Por qué ahí |
 |---|---|---|
-| **1** | El Contrato y sus anexos | Es lo firmado. Nada de aquí obliga a algo distinto de lo pactado |
+| **1** | El Contrato y sus anexos | Es lo firmado. Este documento se mantiene dentro de lo pactado |
 | **2** | CEI-01, el cuestionario vigente | Es el único instrumento, y toda la personalización sale de él |
 | **3** | La bitácora de decisiones | Lo decidido de forma expresa, con fecha |
 | **4** | Los capítulos aprobados | |
@@ -211,12 +211,32 @@ Un mismo concepto atraviesa el sistema de punta a punta. **El cuestionario es el
 
 ## 0.7 Resumen en una página
 
-Sports World tiene 49 clubes, 47 disciplinas y las amenidades de un club premium. Quien busca en internet encuentra poco de eso: **hoy ninguna de las 49 páginas de club es legible para un buscador**, y quien llega al sitio recorre un laberinto de clics para averiguar si en su club hay lo que necesita.
+**Lo que está en juego.** Sports World tiene 49 clubes, 47 disciplinas y las amenidades de un club premium: infraestructura pagada que la decisión del cliente todavía no alcanza a ver. La auditoría de marzo de 2026 lo mide:
 
-El sistema cambia eso con una sola pieza: **un cuestionario de un minuto, idéntico en los tres canales**, que produce **la experiencia ideal** —el plan de entrenamiento de esa persona, con su club, sus bloques y sus clases— y, del mismo cálculo, **el brief** con el que quien la atiende conduce la visita.
+| Qué se midió | Cómo está hoy |
+|---|---|
+| Páginas de club que un buscador puede leer | **0 de 49** |
+| Enlaces rotos | **136** |
+| Páginas con título principal | 11 páginas lo tienen vacío |
+| Datos estructurados por club | **0 de 49** |
+| Cobertura de palabras clave sin marca | **31.1%** |
+| Velocidad, respuesta y estabilidad de la página | Fuera de umbral |
 
-Alrededor de esa pieza hay **148 páginas en once tipos**, cada una construida para una intención de búsqueda documentada, y un menú que cambia con lo que la persona ya hizo: si contestó el cuestionario y si tiene una cita.
+La demanda de la categoría se busca por lo que la persona quiere —«gimnasio con alberca», «yoga cerca de mí»—, y ahí Sports World cubre 31.1% de las palabras clave.
 
-**El resultado que el sitio persigue es la visita agendada.** La persona elige día y hora dentro del calendario de atención de su club, recibe su experiencia por correo y dos recordatorios por WhatsApp; el club recibe su brief antes de que llegue. Quien contesta y no agenda entra a las llamadas directas del asesor, con el mismo brief.
+**Qué cambia el proyecto.** Vuelve legible esa infraestructura y la conecta con la decisión de la persona. Las 148 páginas del sitio nuevo se construyen cada una para una intención de búsqueda documentada, y el prospecto que llega **responde un cuestionario de un minuto** —el mismo en el sitio, en WhatsApp y en consola— del que salen dos entregas de un solo cálculo: **su experiencia ideal**, el plan de entrenamiento con su club, sus bloques y sus clases; y **el brief** con el que quien la atiende conduce la visita.
 
-**Nada de esto se personaliza con un dato que el cuestionario no haya recogido.**
+**A qué se compromete el resultado.** Los KPIs verificables al lanzamiento, con la herramienta que los comprueba:
+
+| Indicador | Hoy | Meta | Se verifica con |
+|---|---|---|---|
+| Páginas de club legibles para un buscador | 0 de 49 | **49 de 49** | Google Search Console |
+| Enlaces rotos | 136 | **0** | Semrush |
+| Datos estructurados por club | 0 | **49** | Google Rich Results Test |
+| Páginas con título principal | 11 sin él | **Todas con él** | Semrush |
+| Velocidad, respuesta y estabilidad | Fuera de umbral | **2.5 s · 200 ms · 0.1** | PageSpeed Insights |
+| Cobertura de palabras clave sin marca | 31.1% | **55–65%**, a doce meses | Semrush |
+
+**Y a qué se compromete la conversión.** El funnel del proyecto mide cuatro etapas de punta a punta: **tráfico → visita agendada → visita realizada → membresía nueva.** La visita agendada es el resultado que el sitio persigue en sus 148 páginas: la persona elige día y hora dentro del calendario de atención de su club, recibe su experiencia por correo y dos recordatorios por WhatsApp, y el club recibe su brief antes de que llegue. Quien contesta el cuestionario y decide no agendar entra a las llamadas directas del asesor, con ese mismo brief.
+
+**El cambio de fondo** es que la venta deja de apoyarse en la intuición de quien atiende: cada visita llega con un plan escrito, y cada plan sale de lo que la persona contestó.

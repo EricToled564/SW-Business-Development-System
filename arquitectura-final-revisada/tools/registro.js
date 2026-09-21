@@ -54,6 +54,20 @@ const FAMILIAS = [
     ],
   },
   {
+    nombre: 'El sistema por lo que no hace',
+    explica: 'describe al sistema negando: obliga a deducir el hecho por descarte (D-92)',
+    soloSistema: true,
+    patrones: [
+      /(^|[.:;)»]\s|\*\*)Nada\b/, /\bNada de (esto|eso|lo que)\b/i,
+      /\bnunca (se|lleva|aparece|funciona|propone|modifica|sustituye|cambia|entra|llega|queda)\b/i,
+      /\bjamás\b/i,
+      /\bno se (le )?(pregunta|piden?|guarda|escribe|muestra|ofrece|recomienda|verifica|reserva|comparte|recoge|desarrolla|altera|agrega|salta|cambia|menciona|explica|descarta|vuelve)\b/i,
+      /\bno (verifica|reserva|modifica|recomienda|sustituye|negocia|recaba|agrega|altera|cambia|incluye|lleva|pregunta|guarda|desarrolla|descarta|depende|existe|hay)\b/i,
+      /\bninguna? (regla|dato|pantalla|página|persona|cosa|consulta|cuenta|contraseña)\b/i,
+      /\bsin (pedirle|preguntarle|que la persona)\b/i,
+    ],
+  },
+  {
     nombre: 'Estado anterior',
     explica: 'dice qué había antes o por qué ya no está',
     patrones: [
@@ -113,7 +127,11 @@ function main() {
   // Dos archivos quedan fuera por oficio, y se nombran uno por uno para que la
   // exclusión sea visible: 00-estructura es el índice y registra estado; las
   // páginas iniciales explican el documento, que es justo su trabajo.
-  const FUERA = new Set(['00-estructura.es.md', '00-paginas-iniciales.es.md']);
+  // 00-estructura es el índice y registra estado: queda fuera por oficio.
+  // Las páginas iniciales sí se revisan: su trabajo es explicar el documento,
+  // así que quedan exentas de una sola familia, la de hablar de sí mismo.
+  const FUERA = new Set(['00-estructura.es.md']);
+  const EXENTAS_DE_AUTORREFERENCIA = new Set(['00-paginas-iniciales.es.md']);
   const archivos = fs.readdirSync(RAIZ)
     .filter((f) => /^\d{2}-.*\.es\.md$/.test(f) && !FUERA.has(f))
     .sort();
@@ -127,7 +145,10 @@ function main() {
   const ancho = 120;
 
   for (const f of archivos) {
-    const h = revisa(path.join(RAIZ, f), ok);
+    let h = revisa(path.join(RAIZ, f), ok);
+    if (EXENTAS_DE_AUTORREFERENCIA.has(f)) {
+      h = h.filter((x) => x.familia !== 'El documento habla de sí mismo');
+    }
     if (!h.length) continue;
     total += h.length;
     console.log(`\n${f} — ${h.length}`);
