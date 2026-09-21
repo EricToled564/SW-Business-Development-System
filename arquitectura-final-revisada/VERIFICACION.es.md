@@ -16,35 +16,41 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
-| `00-estructura.es.md` | 1,835 | `5f3c4eaf33565b5b3f18c06f187f317f3babb8c0284d2cfaef9de76f2117e767` |
+| `00-estructura.es.md` | 1,770 | `fdc39942ee62db410fff0e6103f517da302b843d54f2ccc3af5ad8784942f07b` |
 | `00-paginas-iniciales.es.md` | 2,571 | `661e1b1629e7f4dcf278570c228f855b6f67ac92b6cb7fa395939ac4490b357a` |
 | `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
 | `02-como-se-pierde-hoy.es.md` | 1,211 | `82ac54ecb2870dd50e4ad8fd4efcf7fe01c31ccc826e78b5d2ed1a56e96bf9b0` |
 | `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,921 | `c300ab9d9c329af9e2bccec6634b20e12393f828c68467c5289dc4b2e2fd2ed3` |
-| `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,626 | `05718ca9a2362a9c6a1764a582e4e7ff4f1c36c7941e26765dd91dc805d47b68` |
-| `05-el-cuestionario.es.md` | 3,227 | `0a49b94834d4181b7fe1d60a5676c41289a7ac8f65b694fdfbf35e77f5412f21` |
+| `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,707 | `b2661f2976e5edee69b9b2d1be6cdb306ae7e88c3a5c305343ee07c7c5e3b8a0` |
+| `05-el-cuestionario.es.md` | 3,562 | `3de5578698760770c17dde42375e61265ed60cbed35703676870a21d9cda4f44` |
 | `06-quien-puede-recorrer-la-experiencia.es.md` | 930 | `2bcfc08c7c2f6b5b71608f82445b6fe085f25dc8434b54dd16acd59251668a91` |
 | `07-los-objetivos-de-la-persona.es.md` | 841 | `ef0410dbead792e6c60b3aaae2bd942129ef41b77b0f4898945f4df9475d0c56` |
 | `08-el-recorrido-en-pantalla.es.md` | 2,739 | `0897f75afc25ffaceeaba93d4b0659d6ce893980048f3651cbdd5fde5d06a33c` |
 | `09-datos-de-contacto-y-consentimiento.es.md` | 1,572 | `5b85987be33574f9a7aac81e96e1848103fca9991776316f954785e161207f50` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
-| `NORMA-DE-REDACCION.es.md` | 3,171 | `36643024cd0e6a26695f347515ecf972659701c8cd8ad99c3d519a914b23f0f6` |
+| `NORMA-DE-REDACCION.es.md` | 3,274 | `23854af0d48b86266ac692bf49d2a0e5275887275c928af445d8bb92e63a8e63` |
 | `README.es.md` | 378 | `37e3650427640d67910f4afbe647ce3fb2de14303b9f5844f2bda92d20064d03` |
-| `decisiones.es.md` | 12,375 | `0605e8949d55fafeff2f8b1c25b8a326974f67da373769520f03cc39352e4bcb` |
+| `decisiones.es.md` | 12,715 | `d45c63365a8fc495de42cf6ab324bf0ec0dc1deb1789f8e1f52e70fa941e2b86` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `ff81fdc7bcc25ae7c9477f4b670f1e633ec3262fda0df237b41b0d92daa1d471` |
 
 ## Estado de aprobación
 
-| Capítulo | Aprobado por Eric | Modificado después de aprobarse | Quién ordenó el cambio |
+**La tabla va en la numeración vigente**, la de veinte capítulos que fija D-98. Hasta el 21 de septiembre seguía en la numeración anterior, corrida un lugar, y le faltaban los capítulos 1 y 9.
+
+| Cap. | Aprobado por Eric | Quién escribió el texto vigente | Qué cambió después |
 |---|---|---|---|
-| 1 | Sí | Se agregó el apartado 1.3.4, qué es BES. Después, remisiones cruzadas por la renumeración | Eric |
-| 2 | **Estructura sí, texto no** | Reescrito completo sobre las decisiones D-65 a D-79, D-82, D-83 y D-85, dictadas una por una el 20 de septiembre, y cotejado contra los dictados literales de ese día. Se sube sin aprobación del texto, a la espera de la revisión de Eric. **El 21 de septiembre: reordenado por resultado (D-91), los tres estados por su nombre (D-89), las clases premium (D-93) y la unidad del traslado (D-96)** | — |
-| 3 | Sí | Las leyendas dejan de ser cuatro fijas; se quitó la cifra de requisitos. Después, renumeración y el nombre del servicio para menores. **El 20 de septiembre: un cálculo por cita (D-68) y el alcance de la regla de no nombrar carencias (D-72). El 21: el tiempo de traslado se declara en minutos (D-96)** | Eric |
-| 4 | Sí | La clase aceptada sin club se vuelve requisito, en 4.2.3 y 4.2.4. Después, renumeración | Eric |
-| 5 | Sí | La precarga se muestra en la ruta reducida. Después, renumeración y el nombre del servicio para menores. **El 21 de septiembre: el tiempo de traslado se declara en minutos (D-96)** | Eric |
-| 6 | Sí | Sin cambios de fondo desde su aprobación; solo renumeración. **El 20 de septiembre: los seis objetivos tienen página propia (D-70)** | Eric |
-| 7 | **No** | Escrito. **El 20 de septiembre: la escritura única al cerrar la sesión (D-69), agendar en un segundo club (D-67) y la experiencia por cita (D-68). El 21: los tres estados por su nombre (D-89), la llave de la sesión (D-90), el calendario de atención del club (D-94) y el apartado 8.5.3 de los recordatorios (D-95)** | — |
+| **1** | Sí | **Eric.** Instalado carácter por carácter | Nada |
+| **2** | Sí | **Eric.** Instalado carácter por carácter | Nada |
+| **3** | Sí | **Eric.** Instalado carácter por carácter, apartados 3.1 a 3.10 | Sus 12 correcciones a los apartados 3.5 a 3.10, del 21 de septiembre. Las cinco frases que marcaba el verificador quedaron autorizadas y anotadas en `tools/registro-permitidas.txt` |
+| **4** | **No** | Reescrito el 21 de septiembre | Entra al registro de los capítulos 1 a 3. El contenido aprobado se conserva; el apartado 4.2.5 pasa a dos reglas normativas y la remisión del alcance del instrumento apunta a 5.8, donde antes decía capítulo 6 |
+| **5** | **No** | Reescrito el 21 de septiembre | Los reactivos pasan a las claves **Q1 a Q16** de CEI-01. La tabla anterior tenía la numeración corrida desde su tercer renglón, y el apartado 5.9 estaba partido en dos con cuatro renglones huérfanos. Entran 5.4.1 y 5.4.2 |
+| **6** | Sí | Versión anterior | Renumeración. **El 20 de septiembre:** los seis objetivos tienen página propia (D-70) |
+| **7** | Sí | Versión anterior | Renumeración. **El 20 de septiembre:** la escritura única al cerrar la sesión (D-69) |
+| **8** | **No** | Versión anterior | **El 20 de septiembre:** agendar en un segundo club (D-67) y la experiencia por cita (D-68). **El 21:** los tres estados por su nombre (D-89), la llave de la sesión (D-90), el calendario de atención del club (D-94) y el apartado 8.5.3 de los recordatorios (D-95) |
+| **9** | **No** | Versión anterior | La conciliación con la llave canónica y el reencuentro (D-56) |
+
+**Los capítulos 10 a 20 están pendientes de escritura.** `00-estructura.es.md` fija sus subcapítulos previstos.
 
 ## Qué cambió en la entrega del 21 de septiembre
 
@@ -60,6 +66,14 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **Los recordatorios de la visita** | **D-95.** Los 2 mensajes por WhatsApp —24 horas y 2 horas antes— son de la persona; el club recibe el brief por correo. Entra el apartado 8.5.3 |
 | **Kilómetros y minutos** | **D-96.** Los kilómetros acotan qué clubes entran —10 km para resolver el club ideal, 5 km para explorar—; los minutos miden el trayecto y son la medida que se le muestra. La unidad queda explícita en 2.6.2, 3.2.1 y el capítulo 6 |
 | **La tabla de integridad** | La columna de palabras declara el comando exacto que la reproduce |
+| **El capítulo 4** | Reescrito en el registro de los capítulos 1 a 3. Entran 4.1.1 y 4.1.2. El apartado 4.2.5 pasa de describir lo que la persona no ve a dos reglas normativas. La remisión del alcance del instrumento apunta a 5.8, donde decía capítulo 6 |
+| **El capítulo 5** | Reescrito. Los reactivos van con las claves **Q1 a Q16** de CEI-01 v1.2, que es el instrumento que rige. Entran 5.4.1, los cuatro requisitos que el cuestionario fija, y 5.4.2, el entrenamiento personal que se propone sin preguntarse |
+| **La numeración de los reactivos** | La tabla de 5.4 estaba corrida desde su tercer renglón: llamaba 3 a la forma de trato, que es **Q2**, y 17 al código postal, que es **Q16**. La prosa del capítulo ya usaba la numeración de CEI-01, así que las remisiones eran correctas y la tabla las contradecía. Las cuatro remisiones a reactivos de los capítulos 3, 6, 7 y 9 se verificaron una por una contra CEI-01: las cuatro correctas |
+| **El apartado 5.9** | La tabla de señales estaba partida en dos por tres párrafos, y sus últimos cuatro renglones quedaban fuera de toda tabla. Queda una sola tabla de nueve renglones |
+| **D-103** | La prueba de D-101 gana un tercer renglón: la frase cuyo sujeto es un estado que el documento declara se queda en negativo, porque la ausencia es lo que distingue ese estado de los otros |
+| **`tools/registro.js`** | La línea de resumen contaba archivos revisados y decía «en 10 capítulos» con ocho archivos con hallazgo. Ahora dice «en 8 de los 10 archivos revisados» |
+| **La norma de redacción** | Su índice por sección estaba en la numeración anterior a D-98: 54 renglones renumerados. La regla 1 pasa a tener tres salidas |
+| **Las fronteras de las tres partes** | `00-estructura.es.md` dejaba los capítulos 17 y 20 fuera de toda parte. Quedan Parte II de 3 a 17 y Parte III de 18 a 20 |
 
 ## Qué cambió en la entrega del 20 de septiembre
 
