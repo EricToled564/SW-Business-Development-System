@@ -772,6 +772,18 @@ El capítulo 2 va en este orden, y en ningún otro:
 | **3** | **Cómo el contenido de las páginas y los menús contextuales llevan al cuestionario y a la experiencia ideal** | Los medios, una vez conocido el fin |
 
 **Aterriza en:** capítulo 2, apartados 2.1 a 2.10.
+### D-92 · El documento dice lo que el sistema hace
+
+**Describir el sistema por lo que no hace queda prohibido.** Una frase que enumera lo que no ocurre obliga a quien lee a deducir el hecho por descarte, y el texto deja de ser legible. La forma correcta es siempre la afirmativa: qué ocurre, con qué dato, en qué momento y quién lo ve.
+
+| | Regla |
+|---|---|
+| **En lo que se escribe de aquí en adelante** | Cada regla se enuncia por lo que ocurre. Donde hace falta acotar un alcance, se acota nombrando lo que sí queda dentro |
+| **En lo ya escrito** | Las frases de esta forma —«qué decide y qué no», y su familia— se retiran documento por documento. **Cada párrafo se le muestra a Eric y se retira solo con su aprobación**, porque algunas de esas frases sostienen un hecho que el Contrato exige declarar y que hay que volver a decir en afirmativo antes de quitarlas |
+
+**Excepción única, ya vigente:** la leyenda de disponibilidad de D-72 —«Disponible en tu club» o «No disponible en tu club»— porque la persona necesita esa comparación para decidir.
+
+**Aterriza en:** todo el documento, y el barrido alcanza al resto del depósito.
 
 
 
