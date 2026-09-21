@@ -10,16 +10,16 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 |---|---|---|
 | `00-estructura.es.md` | 1,277 | `481ba80d9e13f9aca96766f86746d57126a182da0a11a3c3c0a4fc6666d456bf` |
 | `01-por-que-existe-la-experiencia-ideal.es.md` | 1,512 | `a6fc42fa59b5069db8f060d24ad716532af40483d8609feb4d28053ea11e95e6` |
-| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,064 | `4d08352980c17ef0ab5472a6a424666c4ff6d7e57246ed640a9816f648e21a70` |
+| `02-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,216 | `848a84b00e423e4c57c6fe52b24cb9b52a2937bbdcd314fd9f0c12978fb6d149` |
 | `03-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 1,623 | `5ada56daed8d240877de74dbdc994ee0581377bcaee12b5785b9031004de7f65` |
 | `04-quien-puede-recorrer-la-experiencia.es.md` | 944 | `d41006aeac5dfd216266c42b6b87275c3849f8c2f6dcb1a06ec3bb02bda49878` |
 | `05-el-cuestionario.es.md` | 3,226 | `38fa1d020edcb946e0b0c2aa3d98407152748225b5f8a66e7a815b3ea0767ba0` |
 | `06-los-objetivos-de-la-persona.es.md` | 852 | `44a155d6fed9f1d09f9431f15def3dcd6d4773957651d0feeedcaef4f01331e8` |
-| `07-el-recorrido-en-pantalla.es.md` | 2,352 | `eb33667af24ee5a541121d22fcacca88f7cc4f9dd1f2b8e4976ba5820798479b` |
+| `07-el-recorrido-en-pantalla.es.md` | 2,431 | `7ec92186542444982a35a9d03890f56a66ec890f3e49820181c9258e1dbf9f80` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `README.es.md` | 355 | `693ba01c6a4d850b39685e7d1868e45b95241fa70097c6346405d401bdb5a439` |
-| `decisiones.es.md` | 9,189 | `e6e6e2e83e0846ce8c7c6c50df4ae1f703dc3290dfc27ae3c4c358857077ee1f` |
+| `decisiones.es.md` | 9,593 | `620f1a96c7860f745b2b2c36b22144d795b0b83a6615ffc4949f26737c80b052` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `872fce246a33f992c7a2004ffaa7b1b74cb4ce21ac5ab6a8c56402010a57b9b4` |
 
 ## Estado de aprobación

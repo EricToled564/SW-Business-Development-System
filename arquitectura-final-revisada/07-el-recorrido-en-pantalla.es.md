@@ -128,14 +128,14 @@ El recorrido no pide iniciar sesión. No hay cuenta, no hay contraseña y no se 
 
 **Nada de lo que la persona responde vive en su navegador.** Ni las respuestas del cuestionario, ni los bloques calculados, ni el texto redactado, ni el brief, ni la cita.
 
-Lo único que el sitio guarda de su lado es **un identificador de sesión propio, aleatorio y vacío**, cuyo trabajo es atar entre sí las páginas que visita. No lleva ningún dato suyo y **nunca llega a su registro.**
+Lo único que el sitio guarda de su lado es **un identificador de sesión propio, aleatorio y vacío** —`web_session_id` en el Mapa del Funnel—, cuyo trabajo es atar entre sí las páginas que visita. No lleva ningún dato suyo y **nunca llega a su registro.**
 
 Hace dos cosas, una antes del cuestionario y otra después:
 
 | Cuándo | Para qué sirve |
 |---|---|
 | **Antes del cuestionario** | Alimenta el bloque de precarga del capítulo 5: las páginas que visitó son lo que el sistema ya sabe de ella |
-| **Después de entregada la experiencia** | Sostiene los estados E2 y E3 del capítulo 2: mientras navega, el sitio sigue reconociéndola como alguien que ya tiene su experiencia, haya agendado o no |
+| **Después de entregada la experiencia** | Sostiene los estados «con experiencia» y «con visita» del capítulo 2: mientras navega, el sitio sigue reconociéndola como alguien que ya tiene su experiencia, haya agendado o no |
 
 **Vive toda la sesión y muere cuando la sesión cierra.** Al volver empieza de cero: es, para el sitio, alguien sin cuestionario.
 
@@ -155,6 +155,8 @@ Al cerrar, y **una sola vez**, se escribe el estado final:
 | El registro del prospecto y sus citas | Al sistema de clientes |
 | Su experiencia ideal, en su versión final | Por correo a la persona |
 | El brief de cada cita | Por correo al club de esa cita |
+
+**La escritura es idempotente.** El registro del prospecto lleva la **llave de la sesión** —`session_uuid` en el Mapa del Funnel—: si la persona vuelve y reconfirma, se actualiza ese mismo registro y nunca se duplica. Es una llave distinta del identificador de sesión del navegador: esta sí forma parte del registro, y es la que une la etapa de cuestionario iniciado con la de visita agendada en la medición del funnel.
 
 **Lo que no está en la tabla, no persiste.** Antes de que la persona entregue sus datos de contacto no hay nada que escribir, y cerrar la pestaña descarta todo.
 

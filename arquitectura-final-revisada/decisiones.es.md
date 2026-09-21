@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-88. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-90. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 20 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -161,6 +161,8 @@ Nada de lo que la persona responde se guarda en su navegador: lo único que se g
 
 **Sustituye** la regla anterior de «sin cookies».
 
+**Completada por D-90:** la Arquitectura nombra también la llave de idempotencia `session_uuid`, que sí forma parte del registro del prospecto.
+
 **Aterriza en:** capítulos 2.4 —cuando se redacte—, 7.5.1 y 8.
 **Abierto, fuera de la Arquitectura:** el texto del aviso simplificado y si procede consentimiento previo, que corresponde a Legal.
 
@@ -317,6 +319,8 @@ La regla que sí es del sistema se conserva siempre. Ejemplo: «lo que no está 
 **Ningún nivel se muestra vacío**, y el orden va siempre de lo cercano a lo lejano.
 
 **Aterriza en:** capítulos 2.4 y 2.5.
+
+**Corregida por D-89:** los tres estados se nombran en vez de numerarse, porque los códigos `E##` pertenecen al Mapa del Funnel.
 
 **Corregida por D-65 y D-67:** las etiquetas de la ranura del club pasan a ser «Encuentra tu club ideal» y «Conoce otros clubes Sports World», la regla por tamaño de ciudad y el radio de 10 km se retiran, y la ranura de la visita se comporta distinto en el cuerpo y en el encabezado.
 
@@ -713,6 +717,47 @@ Cinco reglas de diseño se siguen de ahí:
 
 **Aterriza en:** capítulo 2.4; capítulo 7, qué guarda el servidor y qué pide el navegador; requisitos no funcionales, cuando tengan lugar en la estructura.
 
+
+## 11 · La Arquitectura se alinea con el Mapa del Funnel
+
+### D-89 · Los tres estados se nombran, no se numeran
+
+El Contrato designa el **Mapa del Funnel** como «documento único de medición» del proyecto, y ese documento es dueño de los códigos `E##`. Sus etapas y los estados del menú contextual usaban los mismos códigos para cosas distintas:
+
+| Mapa del Funnel | Capítulo 2, antes |
+|---|---|
+| **E2** · Cuestionario iniciado, al responderse la primera pregunta | **E2** · Cuestionario completado, sin cita |
+| **E3** · Cuestionario completado, al generarse la experiencia ideal | **E3** · Cuestionario completado, con cita |
+| **E4** · Visita agendada, al confirmarse la escritura al CRM | — |
+
+Los tres estados del menú pasan a llamarse por su nombre:
+
+| Estado | Cuestionario | Cita |
+|---|---|---|
+| **Sin cuestionario** | Pendiente | Sin cita |
+| **Con experiencia** | Completado | Sin cita |
+| **Con visita** | Completado | Con cita |
+
+Y cada regla nombra la variable de la que depende: donde depende solo del cuestionario, el texto dice «sin cuestionario» o «con experiencia»; donde depende solo de la cita, dice «sin cita» o «con cita».
+
+**No cambia ninguna regla:** cambia cómo se llaman los tres estados. Lo que prescriben D-55, D-60, D-63, D-65, D-73 y D-88 queda intacto.
+
+**Aterriza en:** capítulos 2 y 7.
+
+### D-90 · La Arquitectura nombra los dos identificadores de sesión
+
+El Mapa del Funnel y la Integración de Datos nombran dos; la Arquitectura nombraba uno solo, y por eso parecía contradecirlos.
+
+| | Qué es | ¿Llega al registro del prospecto? |
+|---|---|---|
+| **Identificador de sesión** · `web_session_id` | Propio, aleatorio y vacío. Vive en el navegador, ata entre sí las páginas que la persona visita y muere con la sesión | **No** |
+| **Llave de la sesión** · `session_uuid` | Llave de idempotencia: si la persona vuelve y reconfirma, se actualiza el mismo registro y nunca se duplica | **Sí.** Es campo del registro |
+
+**D-48 queda intacta:** lo que nunca llega al registro es el primero de los dos.
+
+**Aterriza en:** capítulos 2.8, 7.5.1 y 7.5.2.
+
+---
 
 ## Puntos abiertos que esta revisión destapó
 

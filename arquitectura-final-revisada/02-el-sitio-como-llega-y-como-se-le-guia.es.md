@@ -104,13 +104,13 @@ Dos hechos describen a la persona en cualquier momento: si contestó el cuestion
 
 | Estado | Cuestionario | Cita |
 |---|---|---|
-| **E1** | Pendiente | Sin cita |
-| **E2** | Completado | Sin cita |
-| **E3** | Completado | Con cita |
+| **Sin cuestionario** | Pendiente | Sin cita |
+| **Con experiencia** | Completado | Sin cita |
+| **Con visita** | Completado | Con cita |
 
 El estado depende únicamente de esos dos hechos: quien llega desde su experiencia y quien llega navegando, en el mismo estado, ven lo mismo.
 
-Los tres estados viven dentro de una **sesión**, el periodo que va desde que la persona entra al sitio hasta que sale o pasan diez minutos sin actividad. Al cerrarse la sesión, el estado vuelve a E1: en la visita siguiente la persona es, para el sitio, alguien con el cuestionario pendiente. El capítulo 7 especifica qué persiste después de la sesión.
+Los tres estados viven dentro de una **sesión**, el periodo que va desde que la persona entra al sitio hasta que sale o pasan diez minutos sin actividad. Al cerrarse la sesión, el estado vuelve a **sin cuestionario**: en la visita siguiente la persona es, para el sitio, alguien con el cuestionario pendiente. El capítulo 7 especifica qué persiste después de la sesión.
 
 Con el cuestionario completado, el sistema resuelve el **club ideal** de la persona a partir de sus respuestas. El capítulo 9 especifica cómo lo resuelve. Varias reglas de este capítulo se miden desde ese club.
 
@@ -220,8 +220,8 @@ La etiqueta depende únicamente del cuestionario.
 
 | Estado | Qué aparece |
 |---|---|
-| **E1**, en cualquier página, incluida la de un club | **Encuentra tu club ideal** — abre el cuestionario |
-| **E2 y E3**, en cualquier página | **Conoce otros clubes Sports World** — despliega las opciones de la tabla siguiente |
+| **Sin cuestionario**, en cualquier página, incluida la de un club | **Encuentra tu club ideal** — abre el cuestionario |
+| **Con experiencia**, con cita o sin ella, en cualquier página | **Conoce otros clubes Sports World** — despliega las opciones de la tabla siguiente |
 
 Las opciones se despliegan dentro del botón, **medidas desde el club ideal de la persona**, incluso cuando está viendo la página de otro club:
 
@@ -235,7 +235,7 @@ Las opciones se despliegan dentro del botón, **medidas desde el club ideal de l
 
 **Cada opción que aparece tiene al menos un club que mostrar.** En una ciudad con un solo club, la jerarquía empieza en el país.
 
-En E1 la ranura abre el cuestionario, porque el club ideal es el punto desde el cual se mide y el cuestionario lo resuelve. Quien está viendo la página de Polanco y tiene resuelto Satélite ve la zona de Satélite, **porque ahí es donde va a entrenar.**
+Sin cuestionario, la ranura abre el cuestionario, porque el club ideal es el punto desde el cual se mide y el cuestionario lo resuelve. Quien está viendo la página de Polanco y tiene resuelto Satélite ve la zona de Satélite, **porque ahí es donde va a entrenar.**
 
 La Zona Metropolitana del Valle de México concentra **32 de los 49 clubes**; el tercer caso de la tabla es el más frecuente.
 
@@ -243,17 +243,17 @@ La Zona Metropolitana del Valle de México concentra **32 de los 49 clubes**; el
 
 | Estado | Qué aparece |
 |---|---|
-| **E1** | **Diseña tu experiencia** |
-| **E2 y E3** | **Volver a tu experiencia ideal** |
+| **Sin cuestionario** | **Diseña tu experiencia** |
+| **Con experiencia**, con cita o sin ella | **Volver a tu experiencia ideal** |
 
 ### 2.6.4 Ranura 3 · La visita
 
 | Estado | Qué aparece |
 |---|---|
-| **E1 y E2** | **Agenda tu visita** |
-| **E3** | **Tu visita agendada** — abre su cita, para verla, cambiarla o cancelarla |
+| **Sin cita** | **Agenda tu visita** |
+| **Con cita** | **Tu visita agendada** — abre su cita, para verla, cambiarla o cancelarla |
 
-### 2.6.5 Qué hace «Agenda tu visita» del encabezado en E3
+### 2.6.5 Qué hace «Agenda tu visita» del encabezado cuando ya hay cita
 
 El botón del encabezado conserva su etiqueta en las 148 páginas, porque es la acción de conversión del sitio, y cambia su comportamiento: antes de llevarla a ningún lado, **le pregunta si desea agendar una visita en otro club.**
 
@@ -276,11 +276,11 @@ Se suman a las tres ranuras, siempre después de ellas.
 
 | Botón | Dónde aparece | Qué hace |
 |---|---|---|
-| **¿Cuál es tu objetivo?** | En **E1**, en inicio, club, amenidad, clase, actividades para menores, entrenamiento personal y blog | Abre el cuestionario, empezando por las preguntas de contexto de la página |
-| **Conoce las clases ideales para *[el objetivo de la página]*** | En las seis páginas de objetivo, en los tres estados | Todas las clases del sistema que entregan ese objetivo. En E2 y E3, con la leyenda del apartado 2.6.6 |
-| **Explora *[el otro objetivo elegido]*** | En **E2 y E3**, en la página de un objetivo que la persona eligió, cuando eligió dos | La lleva a la página de su otro objetivo |
+| **¿Cuál es tu objetivo?** | **Sin cuestionario**, en inicio, club, amenidad, clase, actividades para menores, entrenamiento personal y blog | Abre el cuestionario, empezando por las preguntas de contexto de la página |
+| **Conoce las clases ideales para *[el objetivo de la página]*** | En las seis páginas de objetivo, en los tres estados | Todas las clases del sistema que entregan ese objetivo. Con experiencia, con la leyenda del apartado 2.6.6 |
+| **Explora *[el otro objetivo elegido]*** | **Con experiencia**, en la página de un objetivo que la persona eligió, cuando eligió dos | La lleva a la página de su otro objetivo |
 | **Conoce los programas de *[nombre de la modalidad]*** | En las tres páginas de entrenamiento individual, en los tres estados | Los seis objetivos, cada uno con su programa de esa modalidad |
-| **Tu rutina individual** | En las tres páginas de entrenamiento individual, en **E2 y E3** | La parte individual de su experiencia: los bloques 01 y 02 del capítulo 3. Aparece para todas las personas |
+| **Tu rutina individual** | En las tres páginas de entrenamiento individual, **con experiencia** | La parte individual de su experiencia: los bloques 01 y 02 del capítulo 3. Aparece para todas las personas |
 | **Otras clases similares** | En las páginas de clase, en los tres estados | Las clases agrupadas por nivel de intensidad y por beneficios parecidos a la que está viendo |
 | **Otros artículos similares** | En las páginas del blog, en los tres estados | Los artículos relacionados con el que está leyendo |
 
@@ -312,26 +312,26 @@ Las reglas del apartado 2.6 se aplican a **los once tipos de página por los tre
 
 Donde dice *[el objetivo de la página]* va el nombre del objetivo de esa página. Donde dice *[otro objetivo]*, el otro objetivo que la persona eligió; ese botón aparece cuando eligió dos y está en la página de uno de ellos.
 
-| Tipo de página | **E1** · Cuestionario pendiente | **E2** · Completado, sin cita | **E3** · Completado, con cita |
+| Tipo de página | **Sin cuestionario** | **Con experiencia** | **Con visita** |
 |---|---|---|---|
-| **Inicio** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita | Igual que E2, con **Tu visita agendada** |
-| **Club** | Igual que Inicio | Igual que Inicio | Igual que E2, con **Tu visita agendada** |
-| **Hub de amenidad** | Igual que Inicio | Igual que Inicio | Igual que E2, con **Tu visita agendada** |
-| **Clase premium** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? · **Otras clases similares** | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · **Otras clases similares** | Igual que E2, con **Tu visita agendada** |
-| **Clase individual** | Igual que Clase premium | Igual que Clase premium | Igual que E2, con **Tu visita agendada** |
-| **Entrenamiento individual**, las tres modalidades del tipo 05 | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Conoce los programas de *[modalidad]*** | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · Conoce los programas de *[modalidad]* · **Tu rutina individual** | Igual que E2, con **Tu visita agendada** |
-| **Actividades para menores de 3 meses a 13 años** | Igual que Inicio | Igual que Inicio | Igual que E2, con **Tu visita agendada** |
-| **Objetivo**, las cinco páginas | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Conoce las clases ideales para *[el objetivo de la página]*** | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · Conoce las clases ideales para *[el objetivo de la página]* · **Explora *[otro objetivo]***, en la página de uno de sus dos objetivos | Igual que E2, con **Tu visita agendada** |
-| **Bajar de peso** | Igual que Objetivo | Igual que Objetivo | Igual que E2, con **Tu visita agendada** |
-| **Entrenamiento personal** | Igual que Inicio | Igual que Inicio | Igual que E2, con **Tu visita agendada** |
-| **Membresías** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita | Igual que E2, con **Tu visita agendada** |
-| **Blog** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Otros artículos similares** · ¿Cuál es tu objetivo? | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · **Otros artículos similares** | Igual que E2, con **Tu visita agendada** |
+| **Inicio** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita | Igual que la anterior, con **Tu visita agendada** |
+| **Club** | Igual que Inicio | Igual que Inicio | Igual que la anterior, con **Tu visita agendada** |
+| **Hub de amenidad** | Igual que Inicio | Igual que Inicio | Igual que la anterior, con **Tu visita agendada** |
+| **Clase premium** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · ¿Cuál es tu objetivo? · **Otras clases similares** | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · **Otras clases similares** | Igual que la anterior, con **Tu visita agendada** |
+| **Clase individual** | Igual que Clase premium | Igual que Clase premium | Igual que la anterior, con **Tu visita agendada** |
+| **Entrenamiento individual**, las tres modalidades del tipo 05 | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Conoce los programas de *[modalidad]*** | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · Conoce los programas de *[modalidad]* · **Tu rutina individual** | Igual que la anterior, con **Tu visita agendada** |
+| **Actividades para menores de 3 meses a 13 años** | Igual que Inicio | Igual que Inicio | Igual que la anterior, con **Tu visita agendada** |
+| **Objetivo**, las cinco páginas | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Conoce las clases ideales para *[el objetivo de la página]*** | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · Conoce las clases ideales para *[el objetivo de la página]* · **Explora *[otro objetivo]***, en la página de uno de sus dos objetivos | Igual que la anterior, con **Tu visita agendada** |
+| **Bajar de peso** | Igual que Objetivo | Igual que Objetivo | Igual que la anterior, con **Tu visita agendada** |
+| **Entrenamiento personal** | Igual que Inicio | Igual que Inicio | Igual que la anterior, con **Tu visita agendada** |
+| **Membresías** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita | Igual que la anterior, con **Tu visita agendada** |
+| **Blog** | Encuentra tu club ideal · Diseña tu experiencia · Agenda tu visita · **Otros artículos similares** · ¿Cuál es tu objetivo? | Conoce otros clubes Sports World · Volver a tu experiencia ideal · Agenda tu visita · **Otros artículos similares** | Igual que la anterior, con **Tu visita agendada** |
 
-**Las celdas de E3 repiten las de E2 y cambian la tercera ranura: la cita cambia la ranura de la visita.**
+**Las celdas de «Con visita» repiten las de «Con experiencia» y cambian la tercera ranura: la cita cambia la ranura de la visita.**
 
 ### 2.7.1 Cuántos botones lleva cada página
 
-| Tipo de página | E1 | E2 | E3 |
+| Tipo de página | Sin cuestionario | Con experiencia | Con visita |
 |---|---|---|---|
 | Inicio, club, amenidad, actividades para menores, entrenamiento personal | 4 | 3 | 3 |
 | Clase premium e individual | 5 | 4 | 4 |
@@ -346,7 +346,7 @@ De tres a cinco botones.
 
 Membresías lleva las tres ranuras en los tres estados. Quien está ahí compara precio y condiciones, y la ranura de la experiencia le entrega su plan completo cuando lo quiera.
 
-Las demás páginas sin objetivo propio llevan «¿Cuál es tu objetivo?» en E1, el blog incluido: un artículo casi siempre trata de un objetivo, y la pregunta llega cuando la persona está pensando en él. Con el cuestionario completado, esas páginas quedan en tres botones, y el blog y la clase en cuatro con el suyo.
+Las demás páginas sin objetivo propio llevan «¿Cuál es tu objetivo?» sin cuestionario, el blog incluido: un artículo casi siempre trata de un objetivo, y la pregunta llega cuando la persona está pensando en él. Con el cuestionario completado, esas páginas quedan en tres botones, y el blog y la clase en cuatro con el suyo.
 
 ### 2.7.3 Las tres páginas de entrenamiento individual
 
@@ -381,7 +381,7 @@ La página desde la que tocó el botón es lo que el sistema ya sabe de ella, y 
 
 **Lo que el sistema conoce de la persona es su navegación:** en qué página aterrizó y cuáles visitó después. El apartado 5.2.1 lo especifica.
 
-Lo que relaciona esas páginas entre sí es el **identificador de sesión**: un código propio, aleatorio y vacío, que vive en el navegador durante la sesión. El capítulo 7 lo especifica.
+Lo que relaciona esas páginas entre sí es el **identificador de sesión** —`web_session_id` en el Mapa del Funnel—: un código propio, aleatorio y vacío, que vive en el navegador durante la sesión y nunca llega al registro del prospecto. El capítulo 7 lo especifica.
 
 ---
 
@@ -389,15 +389,15 @@ Lo que relaciona esas páginas entre sí es el **identificador de sesión**: un 
 
 Cada una de las 148 páginas se genera con el corte diario de las 06:00 —y con la sincronización manual para promociones— y se sirve idéntica a todas las personas, desde caché. **El contenido es el mismo para cualquiera que abra la página.**
 
-Lo que depende de la persona es la **capa personal**: el menú contextual, la leyenda del apartado 2.6.6, «Explora…», «Tu visita agendada» y el comportamiento de «Agenda tu visita» del encabezado en E3. La capa personal se resuelve con el identificador de sesión y se monta sobre la página. La técnica —servidor, red de distribución o navegador— la elige quien construye.
+Lo que depende de la persona es la **capa personal**: el menú contextual, la leyenda del apartado 2.6.6, «Explora…», «Tu visita agendada» y el comportamiento de «Agenda tu visita» del encabezado cuando ya hay cita. La capa personal se resuelve con el identificador de sesión y se monta sobre la página. La técnica —servidor, red de distribución o navegador— la elige quien construye.
 
 Cinco reglas de diseño se derivan de ahí:
 
 | | Regla |
 |---|---|
 | **1 · El máximo de botones** | El menú se diseña para el número máximo de botones que ese tipo de página puede llevar, y reserva ese espacio, de modo que el contenido conserve su posición cuando el menú cambie de estado o llegue después que la página. El máximo lo fija el apartado 2.7.1: cinco en clase, blog, entrenamiento individual y objetivo; cuatro en inicio, club, amenidad, actividades para menores y entrenamiento personal; tres en membresías |
-| **2 · Con identificador y sin él** | Quien llega con identificador de sesión recibe el menú de su estado, resuelto con ese identificador. Quien llega sin él recibe el menú de E1, escrito en la página, que aparece junto con el contenido |
-| **3 · Si el script falla** | El sitio usa JavaScript en la aplicación, en las animaciones y en la capa personal. Cuando el script de la capa personal falla en una visita, la persona ve la página completa con el menú de E1, cuyos cuatro botones son enlaces. La aplicación —cuestionario, experiencia y agenda— requiere el script; BES es su respaldo |
+| **2 · Con identificador y sin él** | Quien llega con identificador de sesión recibe el menú de su estado, resuelto con ese identificador. Quien llega sin él recibe el menú sin cuestionario, escrito en la página, que aparece junto con el contenido |
+| **3 · Si el script falla** | El sitio usa JavaScript en la aplicación, en las animaciones y en la capa personal. Cuando el script de la capa personal falla en una visita, la persona ve la página completa con el menú sin cuestionario, cuyos cuatro botones son enlaces. La aplicación —cuestionario, experiencia y agenda— requiere el script; BES es su respaldo |
 | **4 · Sin consultas adicionales** | La leyenda y «Explora» se resuelven con datos que la página ya trae —los clubes donde se imparte cada clase— y con el estado de la sesión |
 | **5 · Dos entornos, un solo paso** | El cuestionario, la experiencia y la agenda son pantallas de aplicación. La precarga del apartado 2.8 es el puente entre los dos entornos, y el diseño hace continuo el paso: mismo encabezado, misma tipografía, misma velocidad |
 
