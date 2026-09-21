@@ -715,7 +715,7 @@ Cinco reglas de diseño se siguen de ahí:
 
 **La capa fija no limita animaciones ni transiciones.** Lo que las limita es el rendimiento que exige el posicionamiento —el contenido no se retrasa ni se mueve una vez pintado— y la accesibilidad.
 
-**Aterriza en:** capítulo 2.4; capítulo 7, qué guarda el servidor y qué pide el navegador; requisitos no funcionales, cuando tengan lugar en la estructura.
+**Aterriza en:** capítulo 2.4; capítulo 7, qué guarda el servidor y qué pide el navegador; **los umbrales**, cuando tengan lugar en la estructura.
 
 
 ## 11 · La Arquitectura se alinea con el Mapa del Funnel
@@ -852,7 +852,7 @@ Son dos medidas con dos oficios distintos, y cada una se usa donde le toca:
 
 | Punto | Qué falta |
 |---|---|
-| **Requisitos no funcionales** | Accesibilidad, tiempos de carga, comportamiento sin JavaScript y en conexión lenta no tienen lugar en la estructura de dieciséis capítulos y seis anexos. **Pendiente de confirmación de Eric** |
+| **Los umbrales** | Las cifras que el Contrato ya fija y que la Arquitectura todavía no recoge: **LCP < 2.5 s, INP < 200 ms, CLS < 0.1** (Anexo Dos, Sección I), **WCAG 2.2 AA** y **49 de 49 páginas de club rastreables en SSR** (Anexo Dos, tabla de KPIs). Son obligación firmada; lo único que falta decidir es **dónde viven en la estructura de dieciséis capítulos y seis anexos**. **Pendiente de Eric** |
 | **Dos documentos se llaman CEI-01** | El del Anexo A del Manual del Proceso Comercial y el vigente. La etiqueta no distingue |
 | **Dos asistentes se llaman BES** | El de esta Arquitectura, que atiende prospectos, y el del archivo de configuración del depósito, que atiende al equipo del proyecto y declara expresamente que no atiende prospectos |
 | **De dónde sale el club sustituto** | Ver D-43 |
