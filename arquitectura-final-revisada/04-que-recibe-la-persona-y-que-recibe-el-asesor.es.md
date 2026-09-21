@@ -2,7 +2,7 @@
 
 Para cada versión de la experiencia, el sistema resuelve el plan una vez y utiliza ese resultado para producir dos entregas.
 
-**La persona recibe su plan. El asesor recibe la misma evidencia convertida en una herramienta para conducir la visita y cerrar la venta.**
+**La persona recibe su plan. El asesor recibe la misma evidencia convertida en una herramienta para conducir la atención y cerrar la venta.**
 
 Las dos entregas nacen de las mismas respuestas, las mismas reglas y el mismo cálculo.
 
@@ -18,16 +18,22 @@ Ese cálculo resuelve su club, construye sus tres bloques de entrenamiento, sele
 
 Ese resultado alimenta dos entregas:
 
-| Entrega                  | Quién la recibe                  | Cuándo                                                              |
-| ------------------------ | -------------------------------- | ------------------------------------------------------------------- |
-| **La Experiencia Ideal** | La persona                       | En pantalla, al terminar el cuestionario                            |
-| **El brief**             | El asesor que atenderá la visita | Una vez agendada la visita y antes de que la persona llegue al club |
+| Entrega                  | Quién la recibe                        | Cuándo                                                                                                                                                         |
+| ------------------------ | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **La Experiencia Ideal** | La persona                             | En pantalla, al terminar el cuestionario                                                                                                                       |
+| **El brief**             | El club que debe continuar la atención | **Al terminar el cuestionario. Con cita, uno por cita y dirigido al club de esa cita. Sin cita, uno dirigido al club resuelto y marcado como llamada directa** |
 
 Las dos deben coincidir en todos los hechos que comparten.
 
 La Experiencia Ideal presenta a la persona el plan que Sports World construyó para ella.
 
-El brief toma ese mismo plan y la misma evidencia, incorpora los datos de la cita y de contacto que corresponden, y los organiza para que el asesor pueda **preparar la visita, conducirla y cerrar la venta**.
+El brief toma ese mismo plan y la misma evidencia, incorpora los datos de contacto y, cuando existe, los datos de la cita, y los organiza para que el asesor pueda **preparar la visita o continuar la atención mediante llamada directa, conducir la conversación y cerrar la venta**.
+
+**La existencia de una cita no debe ser condición para generar ni entregar el brief.**
+
+Si no existe cita, el brief debe corresponder al club resuelto y debe identificarse como **llamada directa**.
+
+Si existe una cita, debe existir un brief específico para esa cita y para el club donde fue agendada.
 
 **El brief no debe producir una recomendación distinta de la que recibió la persona.**
 
@@ -37,13 +43,23 @@ El capítulo 13 especifica cómo se genera la redacción y qué debe ocurrir cua
 
 ---
 
-### 4.1.1 Una experiencia por contexto de club
+### 4.1.1 Una experiencia para el club resuelto; una por cada cita adicional
 
-La primera Experiencia Ideal se calcula **al terminar el cuestionario**, antes de que exista necesariamente una cita, utilizando el club que el sistema resolvió para esa persona.
+La primera Experiencia Ideal se calcula **al terminar el cuestionario**, utilizando el club que el sistema resolvió para esa persona.
 
-Cuando la persona agenda una visita, esa cita debe quedar asociada a la versión de la experiencia correspondiente a ese club.
+Esa experiencia debe existir aunque la persona no agende una visita.
 
-Si después agenda en un segundo club, **no debe volver a contestar el cuestionario**.
+En ese mismo momento, el sistema debe generar el brief correspondiente al club resuelto.
+
+Si no existe cita:
+
+* debe conservarse la Experiencia Ideal del club resuelto;
+* debe generarse un brief para ese mismo club;
+* y el brief debe quedar marcado como **llamada directa**, para que el asesor pueda continuar la atención.
+
+Si la persona agenda una visita en ese club, la cita debe quedar vinculada con la Experiencia Ideal correspondiente y debe existir un brief para esa cita.
+
+Si después agenda una visita en un segundo club, **no debe volver a contestar el cuestionario**.
 
 El sistema debe utilizar las respuestas que ya dio y recalcular la experiencia completa contra el catálogo del segundo club.
 
@@ -54,11 +70,11 @@ Esa nueva cita debe tener:
 
 Dos clubes distintos pueden producir clases, combinaciones y argumentos distintos.
 
-Por eso cada asesor debe recibir **la versión correspondiente al club donde atenderá la visita**.
+Por eso cada cita debe estar vinculada con **la versión de la Experiencia Ideal correspondiente al club donde se realizará** y con su propio brief.
 
 La regla es:
 
-**una misma persona puede tener varias citas, pero cada cita debe estar vinculada con una sola versión completa de su Experiencia Ideal y con su propio brief.**
+**sin cita, debe existir una Experiencia Ideal y un brief para el club resuelto; con cita, debe existir una Experiencia Ideal y un brief por cada cita y por cada club correspondiente.**
 
 Al confirmarse el alta de la membresía, debe prevalecer la experiencia correspondiente al club donde ocurrió el alta y las demás deben eliminarse conforme a las reglas de persistencia del sistema.
 
@@ -160,7 +176,9 @@ Las banderas existen para que la persona pueda comparar con información suficie
 
 El sistema debe recalcular el plan contra el club elegido y entregar una solución completa con las capacidades disponibles ahí.
 
-Si el club no tiene alberca, por ejemplo, el plan debe resolver los tres bloques con alternativas que ese club sí pueda entregar.
+Si el club no tiene alberca y la alberca **no era un requisito excluyente** de la experiencia, el plan debe resolver los tres bloques con alternativas que ese club sí pueda entregar.
+
+Si la modalidad elegida o resuelta exige alberca, conforme al capítulo 5, un club sin alberca no puede ser seleccionado como club ideal porque no cumple ese requisito.
 
 La Experiencia Ideal no debe presentar al prospecto una lista de ausencias.
 
@@ -220,64 +238,70 @@ El capítulo 8 especifica el mecanismo completo.
 
 El brief es **la misma evidencia que produjo la Experiencia Ideal, organizada para convertirla en una herramienta comercial**.
 
-Debe permitir que el asesor llegue a la visita sabiendo:
+Debe permitir que el asesor que continúa la atención sepa:
 
-* quién va a llegar;
+* quién es la persona;
 * qué quiere conseguir;
 * qué le importa;
 * qué debe validar;
-* qué recorrido conviene mostrarle;
+* qué recorrido o conversación conviene conducir;
 * y qué argumentos son relevantes para cerrar la venta.
 
-El brief puede traducir esa evidencia a lenguaje comercial.
+Cuando existe cita, el brief prepara la visita.
+
+Cuando no existe cita, debe permitir al asesor del club resuelto **continuar la atención mediante llamada directa**.
+
+El brief puede traducir la evidencia a lenguaje comercial.
 
 **No debe contradecir, sustituir ni ampliar con hechos no sustentados el plan que recibió la persona.**
 
 ---
 
-### 4.4.1 Página 1 · Quién viene y cómo contactarla
+### 4.4.1 Página 1 · Quién viene o a quién hay que contactar
 
-La primera página contiene la confirmación de la cita y el inicio del brief.
+La primera página contiene los datos necesarios para identificar el contexto de atención y el inicio del brief.
 
-La confirmación reúne la información de la visita que también debe conservar la persona.
+Cuando existe cita, debe incluir la confirmación correspondiente.
 
-Debajo comienza la información de uso comercial.
+Cuando no existe cita, debe identificar el caso como **llamada directa**.
 
-| Bloque                        | Qué contiene                                                         |
-| ----------------------------- | -------------------------------------------------------------------- |
-| **Confirmación de la cita**   | Club, dirección, fecha y hora                                        |
-| **Encabezado del brief**      | Nombre completo, nivel de entrenamiento, etiquetas de perfil y fecha |
-| **§1 · Perfil del prospecto** | Ocho campos con lo que declaró                                       |
-| **§2 · Logística y contacto** | Club, ubicación, con quién visitará, teléfono y correo               |
+| Bloque                        | Qué contiene                                                                                 |
+| ----------------------------- | -------------------------------------------------------------------------------------------- |
+| **Contexto de atención**      | Con cita: club, dirección, fecha y hora. Sin cita: club resuelto y marca **Llamada directa** |
+| **Encabezado del brief**      | Nombre completo, nivel de entrenamiento, etiquetas de perfil y fecha                         |
+| **§1 · Perfil del prospecto** | Ocho campos con lo que declaró                                                               |
+| **§2 · Logística y contacto** | Club, ubicación, con quién visitaría el club, teléfono y correo                              |
+
+Cuando existe cita, la confirmación de club, dirección, fecha y hora es también la información que debe conservar la persona.
 
 ---
 
-### 4.4.2 Página 2 · Cómo se conduce la visita
+### 4.4.2 Página 2 · Cómo se conduce la atención
 
-| Bloque                         | Qué contiene                                                              |
-| ------------------------------ | ------------------------------------------------------------------------- |
-| **§3 · Qué validar**           | Cinco preguntas para confirmar en persona lo que la persona declaró       |
-| **§4 · Ruta recomendada**      | Cuatro pasos, en orden, para conducir el recorrido por el club            |
-| **§5 · Propuesta recomendada** | La oferta principal y su complemento                                      |
-| **§6 · Prioridades de cierre** | Tres puntos ordenados por relevancia                                      |
-| **§7 · Notas y señales**       | Las señales levantadas a partir del cuestionario                          |
-| **Guion de cierre**            | Una propuesta de conversación redactada en primera persona para el asesor |
-| **Registro del asesor**        | Cuatro cajas vacías que el asesor completa durante la visita              |
-| **Pie**                        | La leyenda de uso interno                                                 |
+| Bloque                         | Qué contiene                                                                                                                                                   |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **§3 · Qué validar**           | Cinco preguntas para confirmar lo que la persona declaró                                                                                                       |
+| **§4 · Ruta recomendada**      | Con cita, cuatro pasos en orden para conducir el recorrido por el club. Sin cita, debe servir como preparación para la conversación y para una eventual visita |
+| **§5 · Propuesta recomendada** | La oferta principal y su complemento                                                                                                                           |
+| **§6 · Prioridades de cierre** | Tres puntos ordenados por relevancia                                                                                                                           |
+| **§7 · Notas y señales**       | Las señales levantadas a partir del cuestionario y del sistema                                                                                                 |
+| **Guion de cierre**            | Una propuesta de conversación redactada en primera persona para el asesor                                                                                      |
+| **Registro del asesor**        | Cuatro cajas vacías que el asesor completa durante la interacción                                                                                              |
+| **Pie**                        | La leyenda de uso interno                                                                                                                                      |
 
 ---
 
 ### 4.4.3 Las señales del brief
 
-Las **señales** son avisos construidos a partir de las respuestas del cuestionario y puestos a la vista del asesor.
+Las **señales** son avisos construidos a partir de las respuestas del cuestionario o de contingencias operativas del propio sistema y puestos a la vista del asesor.
 
 **Una señal no debe modificar el plan.**
 
 Debe aportar contexto para que el asesor sepa **qué debe considerar o validar durante la conversación**.
 
-El apartado 5.9 enumera las señales una por una e identifica el reactivo que activa cada una.
+El apartado 5.9 enumera las señales una por una e identifica su origen.
 
-Las señales solo pueden construirse con información que el cuestionario esté autorizado a recoger.
+Las señales construidas con respuestas de la persona solo pueden utilizar información que el cuestionario esté autorizado a recoger.
 
 El apartado 5.8 establece ese límite:
 
@@ -289,11 +313,16 @@ El sistema no debe utilizar una respuesta permitida para inferir una condición 
 
 ### 4.4.4 Cuando otro club entrega mejor la experiencia
 
-El brief debe incluir una señal adicional dirigida exclusivamente al asesor cuando **el club de la visita cumple menos requisitos del perfil que otro club identificado por el sistema**.
+El brief debe incluir una señal adicional dirigida exclusivamente al asesor cuando **el club asociado a la atención cumple menos requisitos del perfil que otro club identificado por el sistema**.
+
+Ese club asociado puede ser:
+
+* el club de la cita, cuando existe una visita agendada;
+* o el club resuelto, cuando el caso está marcado como llamada directa.
 
 La señal debe identificar:
 
-* qué requisito no cumple el club de la visita;
+* qué requisito no cumple ese club;
 * y qué club sí lo cumple.
 
 El sistema debe poner esa información a disposición del asesor.
@@ -302,9 +331,9 @@ El sistema debe poner esa información a disposición del asesor.
 
 Puede:
 
-* proponer mover la visita;
-* mencionarlo durante el recorrido;
-* o resolver la experiencia dentro del club donde la cita está agendada.
+* proponer mover o agendar la visita en otro club;
+* mencionarlo durante la conversación o el recorrido;
+* o resolver la experiencia dentro del club asociado a la atención, siempre que pueda hacerlo sin contradecir los requisitos excluyentes definidos por el sistema.
 
 La diferencia entre las superficies es deliberada:
 
