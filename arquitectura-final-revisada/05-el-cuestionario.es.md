@@ -12,7 +12,7 @@ Tres reglas lo gobiernan, y no admiten excepción por canal:
 2. **Es la única fuente de personalización.** Ninguna regla de este documento se dispara con un dato que no salga de aquí.
 3. **No recoge información de salud.** Ni diagnósticos, ni lesiones, ni embarazo, ni tratamientos, ni medicamentos, ni cirugías, ni peso, estatura o medidas corporales. El apartado 5.7 explica por qué.
 
-## 5.2 Lo que ya sabemos no se vuelve a preguntar
+## 5.2 La precarga: lo que ya sabemos se confirma
 
 **A la persona no se le pregunta dos veces lo mismo.** Lo que el sistema ya sabe antes de que empiece el cuestionario no se le pregunta: se le confirma, en un solo bloque, antes del primer reactivo.
 
@@ -148,7 +148,7 @@ El capítulo 10 especifica cómo se compone el plan en cada modalidad.
 
 > **Nada queda fijo hasta que toca «Siguiente».** El cuestionario **no avanza solo** al elegir una opción: la persona tiene que tocar «Siguiente» de forma expresa. Mientras siga en esa pantalla puede cambiar su respuesta las veces que quiera, sin costo, sin aviso y sin perder nada.
 
-### 5.7.1 Preguntas que no se hacen
+### 5.7.1 Qué reactivos se preguntan y cuáles se resuelven solos
 
 Un reactivo condicional cuya condición no se cumple **no se muestra ni se envía.** No queda oculto con una respuesta guardada: sencillamente no existe para esa persona.
 
@@ -204,7 +204,7 @@ La forma neutral es **una frase que vale para cualquiera**, no una marca tipogr�
 
 La concordancia no se detiene en el cuestionario. **El mismo reactivo 2 gobierna el texto que el sistema redacta** —el saludo, el argumento de su plan y el encabezado de su brief—, de principio a fin. El capítulo 12 especifica cómo.
 
-## 5.8 Qué no pregunta el cuestionario, y por qué
+## 5.8 El alcance del cuestionario
 
 El instrumento **no recaba condiciones médicas, embarazo o posparto, tratamientos, medicamentos, cirugías, peso, estatura, medidas corporales ni datos de personas menores de edad.**
 
