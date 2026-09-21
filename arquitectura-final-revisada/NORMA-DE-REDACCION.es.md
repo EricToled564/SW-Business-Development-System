@@ -194,5 +194,6 @@ El verificador arrancó el barrido en **73 frases**. Al 21 de septiembre quedan 
 | Que los archivos no cambiaron después de su entrega | `sha256sum` contra la tabla de `VERIFICACION.es.md` |
 | Que ninguna remisión apunte a un apartado que no exista | `python3 tools/remisiones.py` |
 | Que el índice reproduzca los apartados reales de cada capítulo | `python3 tools/indice.py` |
+| Que CEI-01 y los capítulos digan lo mismo | `python3 tools/instrumento.py`. Cuando un capítulo corrige una regla del instrumento, el ajuste se declara ahí y el programa falla hasta que CEI-01 lo incorpora |
 
 **Lo que ninguna de las cuatro comprueba:** que una remisión apunte al apartado **correcto**. `remisiones.py` confirma que el destino existe, y una remisión a un apartado equivocado que sí existe pasa la prueba. Eso se revisa leyendo.

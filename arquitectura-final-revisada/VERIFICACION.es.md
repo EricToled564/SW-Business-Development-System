@@ -29,9 +29,9 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `09-datos-de-contacto-y-consentimiento.es.md` | 1,571 | `ff166b32b38e35bfa0cbeefcaa414fcf60bb024855bf289222747751056788c8` |
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
-| `NORMA-DE-REDACCION.es.md` | 3,507 | `2d9a46d4b4fc2dbbaa41eb737200b13900ee3682a1d6f60c717968a44604b248` |
+| `NORMA-DE-REDACCION.es.md` | 3,542 | `bec25e8f9aaab7d9ce9f874e6b392a3eefce21eb4cf675f52139da25fcde1a60` |
 | `README.es.md` | 378 | `37e3650427640d67910f4afbe647ce3fb2de14303b9f5844f2bda92d20064d03` |
-| `decisiones.es.md` | 12,914 | `144583e65ceff469cd0f21c46fccc1da7ff7a808916193a3e718f4673cab4404` |
+| `decisiones.es.md` | 13,206 | `35910a69004b309e6fa9ba093b83588cf22cb89cf94152354337308ac6746117` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `ff81fdc7bcc25ae7c9477f4b670f1e633ec3262fda0df237b41b0d92daa1d471` |
 
 ## Estado de aprobación
@@ -81,6 +81,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **El índice deja de citar la bitácora** | `tools/indice.py` retira las claves **D-##** al generar el apartado 0.3. La trazabilidad de cada decisión sigue en `00-estructura.es.md` y en la bitácora; el índice nombra subcapítulos |
 | **El capítulo 4, en la versión de Eric** | Sustituye la reescritura del mismo día. Corrige dos hechos: la primera Experiencia Ideal existe **antes de que haya cita** —lo que sostiene la llamada directa del asesor a quien contesta y no agenda—, y las dos entregas llevan **dos páginas cada una**, cuatro en total, donde la versión anterior se leía como dos en total. Suma el caso de cambiar una clase dentro del mismo club y acota la señal de 4.4.4 a cuando existe otro club que sí cumple |
 | **El capítulo 4, tercera versión** | El brief deja de depender de la cita: se genera al terminar el cuestionario, con cita uno por cita y sin cita uno al club resuelto, marcado como **llamada directa**. Cierra el choque con D-100 que dejaba la segunda versión |
+| **D-104 y `tools/instrumento.py`** | Eric confirma que con la modalidad **Ambas** la alberca se exige, y que el sistema resuelve la modalidad únicamente cuando la persona pide que se le recomiende. Con eso, la regla del capítulo corrige a CEI-01, y la corrección pertenece al instrumento. `tools/instrumento.py` enumera los **tres ajustes** que CEI-01 debe incorporar en su versión 1.3, coteja cada uno contra el archivo y **falla mientras alguno siga pendiente**. Sustituye el renglón de pendientes, que dependía de que alguien se acordara. Comprueba además que la versión que el capítulo 5 declara vigente sea la del archivo |
 | **El capítulo 5, en la versión de Eric** | Conserva las claves Q y los dos apartados nuevos. Suma que rechazar un punto de P0 devuelve la pregunta con su redacción original de CEI-01, que P0 no agrega pregunta al conteo, y la separación entre personalización y señal operativa. **Abre un punto:** la alberca como requisito excluyente con la modalidad **Ambas**, que CEI-01 v1.2 hoy contradice |
 | **El barrido de párrafos** | De **73 frases a 7**. Cinco son texto de Eric, en los capítulos 1 y 2. Una es un renglón de la tabla de jerarquía documental. Una es la regla del navegador del apartado 8.5.1, prohibición normativa del mismo tipo que las cuatro ya autorizadas |
 
