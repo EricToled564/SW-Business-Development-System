@@ -41,7 +41,7 @@ A esas tres se suman dos búsquedas más, en los extremos del recorrido:
 | **10** · Membresías | 6 | Quien ya decidió y compara precio y condiciones | La comparación final |
 | **11** · Blog | 20 | Quien busca antes de saber que Sports World es una opción | La búsqueda anterior a las tres |
 
-Un **hub** concentra un tema y enlaza a las páginas que lo desarrollan: el hub de la alberca enlaza a los clubes que la tienen y a los objetivos que se entrenan en ella. Una **clase premium** es una de las siete disciplinas que Sports World decide priorizar. Su página lleva el mismo contenido que la de cualquier otra clase, y lo propio de ella es la redacción: el tratamiento editorial que especifica el apartado 2.5.2. **Cuáles son las siete lo decide Sports World en el arranque del proyecto.** Una **clase individual** es cualquiera de las 47 disciplinas del catálogo, entre ellas las tres modalidades de entrenamiento individual —con pesas, aeróbico y aeróbico en alberca—, que el apartado 2.7.3 trata aparte porque llevan otros botones.
+Un **hub** concentra un tema y enlaza a las páginas que lo desarrollan: el hub de la alberca enlaza a los clubes que la tienen y a los objetivos que se entrenan en ella. Una **clase premium** es una de las siete disciplinas que Sports World decide priorizar. **Su página se comporta igual que la de cualquier otra clase** —mismo menú, mismos botones, misma precarga—: lo único que cambia es la extensión, más texto y más imágenes. Una **clase individual** es cualquiera de las 47 disciplinas del catálogo, entre ellas las tres modalidades de entrenamiento individual —con pesas, aeróbico y aeróbico en alberca—, que el apartado 2.7.3 trata aparte porque llevan otros botones.
 
 ### 2.1.3 Las seis páginas de objetivo
 
@@ -143,7 +143,7 @@ De esa regla salen las tres superficies:
 | **Inicio** | Propuesta de valor de la red · buscador de clubes · enlaces a los ocho hubs · acceso al cuestionario |
 | **Club** | Nombre y dirección completa · horarios de atención día por día · teléfono y correo · **los seis objetivos, con las clases de ese club que sirven a cada uno, sus días y horarios, y las amenidades que ese objetivo usa** · mapa · estado del club: abierto, cerrado temporalmente o próxima apertura |
 | **Hub de amenidad** | Descripción de la amenidad · los clubes que la tienen, con enlace a cada uno · los objetivos que se entrenan con ella |
-| **Clase premium** | Descripción con tratamiento editorial · beneficios · nivel e intensidad · los clubes donde se imparte, cada uno con enlace a su página |
+| **Clase premium** | Lo mismo que una clase individual, con **descripción más extensa y más imágenes** |
 | **Clase individual** | Descripción · beneficios · nivel e intensidad · los clubes donde se imparte, cada uno con enlace a su página |
 | **Actividades para menores de 3 meses a 13 años** | Las dos secciones que especifica el apartado 2.5.3 |
 | **Objetivo** | Título con la palabra clave del objetivo · 600 a 900 palabras de contenido útil · preguntas frecuentes · todas las clases del sistema que entregan ese objetivo · enlaces a los clubes · enlaces, dentro del texto, a los artículos del blog que tratan de ese objetivo |

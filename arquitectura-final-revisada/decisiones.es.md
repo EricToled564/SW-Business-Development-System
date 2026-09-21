@@ -795,10 +795,13 @@ El capítulo 2 va en este orden, y en ningún otro:
 
 | | |
 |---|---|
-| **Qué fija esta decisión** | Que «premium» es una prioridad comercial de Sports World, y que se traduce en la redacción de la página |
-| **Qué queda abierto** | **Cuáles son las siete.** Es una decisión de Sports World y forma parte del arranque del proyecto: sin ella no se pueden redactar esas siete páginas |
+| **Qué fija esta decisión** | Que «premium» es una prioridad comercial de Sports World, y que se traduce en la extensión de la página: más texto y más imágenes |
+| **Qué no cambia** | Todo lo demás. Mismo menú, mismos botones, misma precarga, mismo contenido mínimo. **El sistema se comporta igual con una clase premium que con cualquier otra** |
+| **Qué queda abierto** | **Cuáles son las siete**, y cuánto es «más»: el número de palabras y el de imágenes. Son insumos para escribir esas páginas, no para especificar el sistema |
 
 **Cabe en el Contrato.** El Anexo Dos, Sección I, cuenta siete páginas de clase premium. La marca que menciona esa fila entre paréntesis es ilustrativa y no obliga a cuáles sean las siete; elegirlas no altera el conteo ni el alcance, igual que las seis páginas de objetivo de D-70.
+
+**Corregida el 21 de septiembre.** La primera redacción trataba «cuáles son las siete» como decisión de Sports World que condiciona el arranque. No lo es: el sistema no cambia de comportamiento según cuáles sean. Es un insumo de producción de contenido, y como tal queda registrado.
 
 **Aterriza en:** capítulo 2, apartados 2.1.2 y 2.5.2; anexo F, el inventario de las 148 páginas.
 
@@ -932,7 +935,6 @@ D-92 prohíbe describir el sistema por lo que no hace. La prueba para aplicarla 
 
 | Decisión | De qué depende |
 |---|---|
-| **Cuáles son las siete clases premium** | La redacción de esas siete páginas. Sin ella no se escriben (D-93) |
 | **Que los asesores tomen las llamadas directas** a quien contestó el cuestionario y no agendó, y en qué plazo | Es trabajo nuevo para el equipo de club. La regla del sistema ya está escrita (D-100): lo que falta es que Sports World la asuma y fije el plazo de la llamada. De ahí baja la corrección de `SOP/SW/0102` |
 
 ### Puntos abiertos del documento
@@ -945,5 +947,6 @@ D-92 prohíbe describir el sistema por lo que no hace. La prueba para aplicarla 
 | **De dónde sale el club sustituto** | Ver D-43 |
 | **Atribución comercial de la venta que se va a otro club** | Ver D-44 |
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
+| **Cuáles son las siete clases premium, y cuánto texto e imágenes llevan** | Insumos para escribir esas siete páginas y para el inventario del anexo F. **No condicionan la especificación**: el sistema se comporta igual con cualquiera de las 47 clases (D-93) |
 | **CEI-01 requiere dos ajustes** | El renglón de Clubes del control de lógica, y la declaración del bloque P0 |
 | **La base de experiencias ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 13 |
