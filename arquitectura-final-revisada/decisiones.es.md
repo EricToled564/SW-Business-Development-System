@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-105. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-106. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -1016,6 +1016,21 @@ Hasta aquí existía una tabla de asignación fija: dos objetivos resolvían en 
 
 **Aterriza en:** apartados 5.6.2, 7.5 y 7.5.1, `CEI-01-v1.5.es.html` y su PDF, y `tools/instrumento.py`.
 
+### D-106 · Generar no es lo mismo que escribir y enviar
+
+**Cierra el punto abierto «cuándo se entrega el brief al club».**
+
+El apartado 4.1 dice que el brief se produce «al terminar el cuestionario». El apartado 8.5.2 dice que nada se escribe ni se envía hasta que la sesión cierra. Eric resuelve que **ninguno de los dos —la Experiencia Ideal ni el brief— se genera en el momento del cierre de la sesión**, ni por el aviso del navegador ni por los diez minutos de inactividad.
+
+| Momento | Qué ocurre |
+|---|---|
+| **Al terminar el cuestionario** | El sistema **genera**: calcula la Experiencia Ideal completa y, con ella, el brief. Es el momento que fija el apartado 4.1 |
+| **Al cerrar la sesión** —por aviso del navegador o por diez minutos de inactividad | El sistema **escribe y envía**: persiste el estado final y distribuye la Experiencia Ideal y el brief. Es el momento que fija el apartado 8.5.2 |
+
+**El cierre de sesión nunca dispara el cálculo.** Dispara únicamente la escritura de lo que ya estaba calculado, con los cambios que la persona haya hecho hasta ese momento —cambiar de club, cambiar de clases— aplicados sobre el resultado ya generado.
+
+**Aterriza en:** apartados 4.1, 8.3, 8.5.2 y 9.2, que quedan leídos bajo esta distinción sin que su texto cambie.
+
 
 
 ---
@@ -1040,4 +1055,3 @@ Hasta aquí existía una tabla de asignación fija: dos objetivos resolvían en 
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
 | **Cuáles son las siete clases premium, y cuánto texto e imágenes llevan** | Insumos para escribir esas siete páginas y para el inventario del anexo F. **No condicionan la especificación**: el sistema se comporta igual con cualquiera de las 47 clases (D-93) |
 | **La base de Experiencias Ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 14 |
-| **Cuándo se entrega el brief al club** | El apartado 4.1 declara que el brief se produce **al terminar el cuestionario**. El apartado 8.5.2 establece que nada se escribe ni se envía hasta que la sesión cierra, en una sola escritura. Las dos afirmaciones conviven si **generar** y **entregar** son momentos distintos, que es como las trata 4.1.1 al remitir al capítulo 8. Falta que uno de los dos apartados lo diga con esas dos palabras |

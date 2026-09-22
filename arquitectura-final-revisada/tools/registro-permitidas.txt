@@ -59,3 +59,12 @@ El navegador no debe guardar nada de lo que la persona responde: ni las respuest
 
 En la ruta reducida para quien no confirma tener 18 años, Q3 no se pregunta.
 No existe en esa ruta un objetivo emocional ni debe generarse un arco narrativo personalizado.
+
+# Autorizadas por Eric el 22 de septiembre de 2026, capítulo 8 (su texto,
+# instalado verbatim). Las dos son el tercer renglón de D-101 / D-103: el
+# sujeto es un estado declarado —la ausencia de contexto que dispara P0
+# directo a Q1, y el límite entre lo que el contexto puede y no puede
+# cambiar— no el sistema descrito por lo que le falta.
+
+Por ejemplo, si la persona entra al Inicio y abre directamente el cuestionario sin haber visitado ninguna página que produzca uno de esos cuatro tipos de contexto, el recorrido debe pasar directamente a Q1.
+El contexto puede cambiar lo que la persona quiere explorar; no cambia lo que ya declaró en el cuestionario.

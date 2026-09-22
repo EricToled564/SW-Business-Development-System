@@ -45,7 +45,7 @@ El correo sale **al cerrar la sesión, una sola vez, con la versión final de la
 | **Cuántos salen** | Uno por cada experiencia vigente. Con dos citas en dos clubes salen dos, porque cada una resuelve clases distintas |
 | **Qué recibe el club** | El brief de esa persona, por correo, según el capítulo 16. La persona recibe su experiencia; el club recibe el brief |
 
-**Los dos recordatorios de la visita viajan por WhatsApp y son de la persona**, 24 horas y 2 horas antes de su cita. El apartado 8.5.3 los especifica.
+**Los dos recordatorios de la visita viajan por WhatsApp y son de la persona**, 24 horas y 2 horas antes de su cita. El apartado 8.5.6 los especifica.
 
 ## 9.3 Una sola escritura
 
