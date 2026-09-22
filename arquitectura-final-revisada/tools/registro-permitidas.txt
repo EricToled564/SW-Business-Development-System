@@ -1,0 +1,106 @@
+# Frases que coinciden con un patrón del verificador y que Eric autorizó a conservar.
+# Una frase exacta por línea. Una línea vacía o que empieza con # se ignora.
+#
+# Nada se agrega aquí sin que Eric lo apruebe: la lista es lo que separa un
+# falso positivo de una frase que sobrevivió sin revisarse.
+
+Un catálogo de clases, una lista de amenidades y una tabla de precios no son el producto: son insumos del plan.
+
+# Autorizadas por Eric el 21 de septiembre de 2026, capítulo 3.
+# Las cinco coinciden con la familia «El sistema por lo que no hace» y las
+# cinco se conservan, por tres razones distintas:
+#
+#   · Tres son reglas normativas. La regla 9 de la norma exige
+#     debe · no debe · puede, y una prohibición se enuncia prohibiendo.
+#   · Una es la garantía de D-48: enunciada en afirmativo deja de ser
+#     garantía.
+#   · Una describe la característica que define un estado declarado.
+#     Mientras el cuestionario sigue pendiente, no haber resuelto el club
+#     ideal no es una carencia del sistema ni de Sports World: es lo que
+#     distingue al estado Sin cuestionario de los otros dos. La regla que
+#     prohíbe describir el sistema por lo que no hace no alcanza a la
+#     definición de un estado.
+
+Ninguna página debe prometer resultados en kilos ni en plazos.
+No lleva ningún dato de la persona, permanece del lado de la persona y nunca llega al registro del prospecto.
+La personalización no modifica la página.
+Cada tipo de página reserva desde el inicio el espacio correspondiente al máximo número de botones que puede llegar a tener.
+Mientras el cuestionario siga pendiente, la ranura abre Encuentra tu club ideal, porque todavía no existe un club desde el cual medir.
+
+# Autorizadas por Eric el 21 de septiembre de 2026, las diez que quedaban del
+# barrido de párrafos. Se conservan por cuatro razones distintas:
+#
+#   · Estado anterior de Sports World. El sujeto es la omisión que el proyecto
+#     viene a corregir, y decirla en afirmativo la borra. Primer renglón de la
+#     prueba de D-101.
+#   · Estado declarado del sistema. La ausencia de cita es lo que separa la
+#     llamada directa de la visita agendada. Tercer renglón, D-103.
+#   · Prohibición normativa. La regla 10 de la norma reserva debe · no debe ·
+#     puede para las reglas, y una prohibición se enuncia prohibiendo.
+#   · Precisión de una cifra. P0 acota el conteo de 16 a 19 preguntas.
+#
+# La primera, del capítulo 1, es texto de Eric y él resolvió que se queda.
+
+El resto de este documento explica cómo construirlo.
+Eso conecta elementos que hasta ahora podían operar de forma separada:
+Ya no se trata solamente de mostrar todo lo que Sports World tiene.
+Sports World puede tener entrenadores, evaluación, disciplinas, instalaciones y servicios capaces de responder a esa necesidad, pero nunca entra en la comparación porque nada en la búsqueda establece esa relación.
+Si no existe cita, el brief debe corresponder al club resuelto y debe identificarse como llamada directa.
+Si no existe cita:
+Cuando no existe cita, debe permitir al asesor del club resuelto continuar la atención mediante llamada directa.
+Cuando no existe cita, debe identificar el caso como llamada directa.
+P0 no agrega una pregunta al conteo: confirma información contextual y puede resolver reactivos que, de otra forma, aparecerían después.
+El navegador no debe guardar nada de lo que la persona responde: ni las respuestas del cuestionario, ni los bloques calculados, ni el texto redactado, ni el brief, ni la cita.
+
+# Autorizadas por Eric el 22 de septiembre de 2026, capítulo 7. Las dos
+# describen la ruta reducida, que es un estado declarado del sistema: la
+# ausencia del eje emocional es lo que la distingue de la ruta completa.
+# Tercer renglón de la prueba de D-101, incorporado por D-103.
+
+En la ruta reducida para quien no confirma tener 18 años, Q3 no se pregunta.
+No existe en esa ruta un objetivo emocional ni debe generarse un arco narrativo personalizado.
+
+# Autorizadas por Eric el 22 de septiembre de 2026, capítulo 8 (su texto,
+# instalado verbatim). Las dos son el tercer renglón de D-101 / D-103: el
+# sujeto es un estado declarado —la ausencia de contexto que dispara P0
+# directo a Q1, y el límite entre lo que el contexto puede y no puede
+# cambiar— no el sistema descrito por lo que le falta.
+
+Por ejemplo, si la persona entra al Inicio y abre directamente el cuestionario sin haber visitado ninguna página que produzca uno de esos cuatro tipos de contexto, el recorrido debe pasar directamente a Q1.
+El contexto puede cambiar lo que la persona quiere explorar; no cambia lo que ya declaró en el cuestionario.
+
+# Autorizadas por Eric el 22 de septiembre de 2026, capítulo 9 (su texto,
+# instalado verbatim). La primera fija el límite entre dos identificadores,
+# mismo tipo que las llaves de sesión ya autorizadas en el capítulo 8. Las
+# otras dos describen un caso real —cuando la llave de reconocimiento no
+# encuentra coincidencia—, no una omisión del sistema.
+
+sw_person_id no sustituye la llave de reconocimiento.
+Cuando una persona nueva entrega sus datos y no existe una coincidencia válida, el sistema debe crear el registro correspondiente y asignarle un nuevo sw_person_id.
+Si no existe una coincidencia válida, debe crearse un nuevo registro y asignarse un nuevo sw_person_id.
+
+# Autorizadas por Eric el 22 de septiembre de 2026, capítulo 10 (su texto,
+# instalado verbatim). Las dos nombran una condición externa —que el dato de
+# tráfico exista o no— de la que depende qué regla se aplica. Tercer renglón
+# de la prueba de D-101, incorporado por D-103: el sujeto es un estado
+# declarado, no el sistema descrito por lo que le falta. Son del mismo tipo
+# que las tres de «cuando no existe cita» ya autorizadas en el capítulo 4.
+#
+# La tercera frase que marcó el verificador ese día —el título de 10.13,
+# reproducido por tools/indice.py dentro de la tabla del índice 0.3— Eric
+# resolvió eliminarla, no autorizarla: el apartado pasa a llamarse «La
+# respuesta original del cuestionario se conserva», con el verbo que el
+# propio apartado ya usaba, y el índice lo recoge al regenerarse.
+
+Contingencia cuando no existe tráfico disponible
+si no existe información válida de tráfico, utilizar la menor distancia por ruta.
+
+# Capítulo 11 (texto de Eric, instalado verbatim). Las dos entran por el
+# criterio que Eric ya fijó dos veces: el 22 de septiembre, con «El contexto
+# puede cambiar lo que la persona quiere explorar; no cambia lo que ya declaró
+# en el cuestionario» del capítulo 8, y con las dos de la contingencia de
+# tráfico del capítulo 10. La frase que traza el límite de hasta dónde llega
+# una cosa se queda: no describe al sistema por lo que le falta.
+
+Q5 no cambia el objetivo del programa
+El tono narrativo derivado de Q3 debe permanecer estable porque la motivación emocional original no cambia al seleccionar otro club.
