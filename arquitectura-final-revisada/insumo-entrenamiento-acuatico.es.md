@@ -48,7 +48,7 @@ Los seis programas **no viven en este documento**: viven en la **matriz de entre
 | **Qué no debe entregar al sitio** | El protocolo técnico, el equipo, los nombres técnicos y las cautelas clínicas. Eso es referencia interna: el equipo y la carga los define el entrenador en la primera sesión |
 | **Quién la mantiene** | Sports World, con el profesional de salud que designe |
 | **Cadencia** | Se revisa cuando cambia el catálogo de clases o la oferta de amenidades, y al menos una vez al año |
-| **Qué pasa si no responde** | La regla general del capítulo 3: el plan se entrega con el último dato guardado y la bandera viaja al brief |
+| **Qué pasa si no responde** | La regla general del apartado 5.9: el plan se entrega con el último dato guardado y la señal viaja al brief |
 
 **La condición de club.** Esta modalidad exige alberca. Cuando el club resuelto no la tiene, el plan se arma en piso; el capítulo 10 especifica qué ocurre con la elección de club.
 
