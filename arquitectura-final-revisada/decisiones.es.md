@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-106. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-107. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -1028,6 +1028,23 @@ Lo que ese cierre sí hace, porque el apartado 8.5.2 ya lo fijaba y esto no lo c
 
 **Aterriza en:** apartado 8.5.2, que queda confirmado sin cambiar su texto. **Deja pendiente:** que Eric confirme si «al terminar el cuestionario» (4.1) es en efecto cuándo se calcula, o si el momento es otro.
 
+### D-107 · El cálculo es continuo durante la sesión; cambiar de club con cita agendada repregunta día y hora; y se suma la confirmación por WhatsApp al cierre
+
+**Cierra el punto abierto «en qué momento exacto se genera la Experiencia Ideal y el brief».** Dictado por Eric, el 22 de septiembre, verbatim:
+
+> «Cuando se genera una Experiencia Ideal, el cliente puede seguir cambiando de club y de clases mientras esté navegando. De hecho, si ya agendó y cambia el club de su Experiencia Ideal, se debe recalcular toda la experiencia y volver a pedir qué día y a qué hora quiere la visita, y cambiar la agenda de la visita presencial. Como esto puede suceder mientras navega, el resultado final de la experiencia no se le manda hasta que no se haya cerrado la sesión, si el navegador avisa o ha pasado más de 10 minutos sin actividad. En ese momento se escribe la experiencia y se le manda por email, se le manda la confirmación por WhatsApp, se escribe el brief y se envía por email al club, y se escribe el lead en el CRM y en la base de datos de la Experiencia Ideal.»
+
+**Tres piezas, dos ya escritas y una nueva:**
+
+| Pieza | Estado antes de D-107 |
+|---|---|
+| El cálculo se repite en vivo durante toda la sesión, no una sola vez | **Ya escrita.** El apartado 4.2.3 ya lo dice: «cada cambio que afecte la composición de la experiencia debe producir una nueva versión calculada del plan» |
+| La escritura y el envío esperan al cierre de sesión | **Ya escrita.** D-69 y el apartado 8.5.2 |
+| **Cambiar de club con una cita ya agendada obliga a repreguntar día y hora, y a modificar esa cita** | **Nueva.** Ningún apartado lo decía. El apartado 4.2.3 recompone bloques, clases, modalidad y tiempo de traslado, pero no menciona la cita ni su fecha. El apartado 8.3.4 fija que la fecha y la hora se eligen dentro del calendario de atención del club, así que un cambio de club puede volver inválida la fecha ya elegida |
+| **La confirmación por WhatsApp, al cerrar la sesión** | **Nueva.** El apartado 8.5.6 ya tiene dos recordatorios —24 horas y 2 horas antes de la visita—, pero ninguno de los dos es una confirmación inmediata al agendar. Es una tercera pieza, no una renombrada |
+
+**Aterriza en:** apartado 4.2.3 (la recomposición de una cita ya agendada al cambiar de club) y apartado 8.5.2 (la confirmación por WhatsApp como cuarta entrega del cierre de sesión, junto a la Experiencia Ideal por correo, el brief por correo al club y el registro en el CRM). **Los dos apartados son texto de Eric, instalado carácter por carácter: el texto exacto que se agrega se le muestra antes de tocarlos.**
+
 
 
 ---
@@ -1052,4 +1069,3 @@ Lo que ese cierre sí hace, porque el apartado 8.5.2 ya lo fijaba y esto no lo c
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
 | **Cuáles son las siete clases premium, y cuánto texto e imágenes llevan** | Insumos para escribir esas siete páginas y para el inventario del anexo F. **No condicionan la especificación**: el sistema se comporta igual con cualquiera de las 47 clases (D-93) |
 | **La base de Experiencias Ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 14 |
-| **En qué momento exacto se genera la Experiencia Ideal y el brief** | D-106 descarta que sea al cerrar la sesión. El apartado 4.1 dice «al terminar el cuestionario», redacción anterior a D-106 y no reconfirmada por Eric en esa decisión. Ver D-106 |

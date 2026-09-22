@@ -34,7 +34,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `CEI-01-v1.5.pdf` | — | `9054de96d4def00686e3dbd38a62077628d3568c5e17174fc2a1316b842c7af9` |
 | `NORMA-DE-REDACCION.es.md` | 3,542 | `bec25e8f9aaab7d9ce9f874e6b392a3eefce21eb4cf675f52139da25fcde1a60` |
 | `README.es.md` | 409 | `c77f8abb96ac97241ed98e716f51578a3b8b3abda68f91d6c852e2c09b602913` |
-| `decisiones.es.md` | 13,731 | `27d2c2df6653e0f65c750cc635c78be9dc4b6722c42d438717407eb813673479` |
+| `decisiones.es.md` | 14,159 | `fe065be4c88c87c12d46f7ee301a95ef282044c4077d9dcb5dbc5237967ee599` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `ff81fdc7bcc25ae7c9477f4b670f1e633ec3262fda0df237b41b0d92daa1d471` |
 
 ## Estado de aprobación
