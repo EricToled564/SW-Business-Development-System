@@ -371,14 +371,13 @@ Mientras la sesión permanezca abierta, puede cambiar de club, cambiar de clases
 
 **La sesión debe considerarse cerrada cuando ocurra primero:** una salida que el navegador consiga comunicar al servidor, o diez minutos sin actividad. El *timeout* es necesario porque cerrar una pestaña, perder conectividad o bloquear un dispositivo no garantiza que el navegador pueda notificar la salida.
 
-**Al cerrar la sesión debe escribirse una sola versión final del estado alcanzado.**
+**Cuando la sesión cierra —si el navegador avisa, o si pasan 10 minutos o más de inactividad— el sistema debe escribir y enviar lo siguiente, de una sola vez:**
 
-| Qué | A dónde |
-|---|---|
-| **Experiencias Ideales** | A su base propia. Con cita, una por cita. Sin cita, la correspondiente al club resuelto |
-| **Registro del prospecto y sus citas** | Al sistema de clientes |
-| **Experiencia Ideal final** | Por correo a la persona |
-| **Brief** | Por correo al club. Con cita, uno por cita y dirigido al club de esa cita. Sin cita, uno dirigido al club resuelto y marcado como **llamada directa** |
+* Debe escribir la Experiencia Ideal en su base propia. Con cita, una por cita. Sin cita, la correspondiente al club resuelto.
+* Debe escribir el registro del prospecto y sus citas en el sistema de clientes.
+* Debe escribir la Experiencia Ideal final y mandarla por correo a la persona.
+* Debe mandar la confirmación de la visita por WhatsApp a la persona.
+* Debe escribir el brief y enviarlo por correo al club. Con cita, uno por cita y dirigido al club de esa cita. Sin cita, uno dirigido al club resuelto y marcado como **llamada directa**.
 
 **La existencia de una cita no debe ser condición para generar ni enviar el brief.**
 
