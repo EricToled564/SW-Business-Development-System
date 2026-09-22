@@ -152,22 +152,23 @@ La elección final del club debe seguir las reglas del capítulo 10.
 
 Q6 ofrece la opción **«Quiero que me recomienden»**.
 
-Cuando la persona la elige, el objetivo principal debe resolver la modalidad.
+Cuando la persona la elige, **el sistema debe calcular cuál de las tres modalidades contribuye más al objetivo principal** y resolver esa.
 
-| Objetivo principal                                  | Modalidad resuelta   |
-| --------------------------------------------------- | -------------------- |
-| Mejorar mi capacidad cardiovascular                 | En la alberca        |
-| Moverme mejor con más agilidad                      | En la alberca        |
-| Bajar de peso                                       | En piso o área seca  |
-| Mejorar mi estética corporal y definición muscular  | En piso o área seca  |
-| Aumentar masa muscular                              | En piso o área seca  |
-| Mejorar mi desempeño atlético                       | En piso o área seca  |
+Las tres modalidades compiten en el cálculo:
+
+| Modalidad | Qué se evalúa |
+| --------- | ------------- |
+| **En piso o área seca** | Lo que el catálogo de piso seco aporta al objetivo principal, en la intensidad declarada en Q5 |
+| **En la alberca** | Lo que el catálogo de agua aporta al mismo objetivo y en la misma intensidad |
+| **Ambas** | Lo que aporta la combinación, cuando ninguna de las dos por separado cubre el objetivo tan bien como las dos juntas |
+
+El cálculo debe apoyarse en la matriz de clases, que califica cada clase del catálogo frente a cada objetivo y cada intensidad.
+
+**La regla se calcula; no se fija en una tabla de asignación.** Cuando el catálogo cambia, el resultado cambia con él, sin necesidad de reescribir este capítulo.
 
 La modalidad debe resolverse únicamente cuando la persona pide que el sistema la recomiende.
 
 Si la persona elige directamente **En piso o área seca**, **En la alberca** o **Ambas**, su elección debe prevalecer.
-
-La regla sale de la matriz de clases, que califica el catálogo frente a cada objetivo.
 
 El capítulo 14 especifica la matriz, quién la mantiene y bajo qué reglas.
 
@@ -175,13 +176,13 @@ El capítulo 14 especifica la matriz, quién la mantiene y bajo qué reglas.
 
 ### 7.5.1 Efecto sobre la elección del club
 
-Cuando el sistema resuelve **En la alberca**, debe aplicar exactamente las mismas consecuencias que si la persona hubiera seleccionado esa opción directamente en Q6.
+**La modalidad resuelta debe tener exactamente las mismas consecuencias que si la persona la hubiera seleccionado directamente en Q6.**
 
-Por tanto, **la alberca debe convertirse en requisito excluyente del club**.
-
-Si el sistema resuelve **En piso o área seca**, la alberca no debe convertirse en requisito.
-
-Con la regla vigente de este capítulo, «Quiero que me recomienden» resuelve una de esas dos modalidades; no resuelve «Ambas».
+| Modalidad resuelta | Efecto sobre el club | Efecto sobre el plan |
+| ------------------ | -------------------- | -------------------- |
+| **En piso o área seca** | La alberca no es requisito | El plan utiliza el catálogo de piso seco |
+| **En la alberca** | **La alberca es requisito excluyente** | El plan utiliza el catálogo de agua |
+| **Ambas** | **La alberca es requisito excluyente** | **El plan debe incluir forzosamente contenido de piso seco y contenido de alberca** |
 
 El brief debe indicar que la modalidad fue resuelta por el sistema a petición de la persona, para distinguirla de una modalidad elegida directamente.
 

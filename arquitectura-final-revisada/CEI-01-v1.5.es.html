@@ -36,9 +36,9 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <h1>Cuestionario de Experiencia Ideal · CEI-01</h1>
 <div class="sub">Sports World México</div>
 <table class="meta">
-<tr><td>Versión</td><td>1.4</td></tr>
-<tr><td>Sustituye a</td><td>Versión 1.3</td></tr>
-<tr><td>Qué cambió</td><td>Se incorpora la ruta reducida y anónima para quien no confirma 18 años o más; P0 y la captura de contacto quedan fuera de esa ruta. Se mantiene la alberca como requisito también con «Ambas».</td></tr>
+<tr><td>Versión</td><td>1.5</td></tr>
+<tr><td>Sustituye a</td><td>Versión 1.4</td></tr>
+<tr><td>Qué cambió</td><td>Con «Ambas», el plan debe incluir forzosamente piso seco y alberca. Con «Quiero que me recomienden», el sistema calcula cuál de las tres modalidades contribuye más al objetivo principal.</td></tr>
 <tr><td>Estructura</td><td>G0; ruta completa con P0, 15 preguntas base y 3 condicionales; o ruta reducida con 8 preguntas base y Q15b cuando aplica.</td></tr>
 </table>
 </div>
@@ -137,10 +137,10 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <p class="rule"><b>Uso autorizado.</b> Define el modo de entrenamiento.</p>
 <ul class="opts">
 <li><b>En la alberca:</b> el plan utiliza el catálogo de agua. <b>La alberca se exige como amenidad</b> en la elección del club.</li>
-<li><b>Ambas:</b> el plan combina piso seco y agua e <b>integra de forma proactiva</b> entrenamiento individual de natación y clases acuáticas que sirvan al objetivo declarado. <b>La alberca se exige como amenidad.</b></li>
-<li><b>Quiero que me recomienden:</b> el sistema resuelve la modalidad a partir del objetivo principal. Si resuelve <b>En la alberca</b> o <b>Ambas</b>, la alberca se exige como amenidad.</li>
+<li><b>Ambas:</b> <b>el plan debe incluir forzosamente contenido de piso seco y contenido de alberca</b>, e <b>integra de forma proactiva</b> entrenamiento individual de natación y clases acuáticas que sirvan al objetivo declarado. <b>La alberca se exige como amenidad.</b></li>
+<li><b>Quiero que me recomienden:</b> <b>el sistema calcula cuál de las tres modalidades contribuye más al objetivo principal</b>, con la matriz de clases y en la intensidad declarada en Q5, y resuelve esa. Si resuelve <b>En la alberca</b> o <b>Ambas</b>, la alberca se exige como amenidad.</li>
 </ul>
-<p class="rule"><b>Regla.</b> Si la modalidad elegida o resuelta necesita agua, el club debe tener alberca.</p>
+<p class="rule"><b>Regla.</b> Si la modalidad elegida o resuelta necesita agua, el club debe tener alberca. La modalidad resuelta por el sistema tiene las mismas consecuencias que la elegida por la persona.</p>
 </div>
 
 <div class="q">
@@ -331,6 +331,7 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <tr><td><b>Otro gimnasio</b></td><td>Preguntar el gimnasio actual solo en la ruta completa.</td></tr>
 <tr><td><b>Regreso de una pausa</b></td><td>Preguntar el último gimnasio y la duración de la pausa solo en la ruta completa.</td></tr>
 <tr><td><b>Preferencias</b></td><td>Ruta completa: siempre bajo impacto o ninguna; prenatal/posparto solo con Q2 femenino; actividades para menores solo tras Q13 hijos/familia. Ruta reducida: solo bajo impacto o ninguna.</td></tr>
+<tr><td><b>Modalidad</b></td><td>Con «Ambas», el plan incluye forzosamente piso seco y alberca. Con «Quiero que me recomienden», el sistema calcula la modalidad que más contribuye al objetivo principal; no se fija en una tabla de asignación</td></tr>
 <tr><td><b>Clubes</b></td><td>La elección exige las amenidades elegidas, las preferencias declaradas y al menos una clase elegible para cada objetivo en la intensidad declarada. Días y horarios solo generan alerta en la ruta completa; no descartan clubes. La alberca es requisito excluyente cuando la modalidad elegida o resuelta es En la alberca o Ambas.</td></tr>
 <tr><td><b>Cercanía</b></td><td>Se mide en minutos de traslado con tráfico a la hora pico, nunca en kilómetros y nunca a la hora declarada. El tiempo se muestra como «máx X minutos».</td></tr>
 <tr><td><b>Ubicación</b></td><td>Capturar un solo código postal o colonia del origen prioritario. Nunca pedir dos ubicaciones ni una dirección completa.</td></tr>
@@ -353,6 +354,7 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <h2>8 · Registro de cambios</h2>
 <table>
 <tr><th style="width:70px">Versión</th><th>Qué cambió</th></tr>
+<tr><td>1.5</td><td><b>Ambas entrega las dos modalidades.</b> El plan debe incluir forzosamente contenido de piso seco y contenido de alberca. La 1.4 decía que el plan «combina» las dos sin exigirlo, y un plan resuelto solo en seco entregaba menos de lo que la opción ofrece.<br><br><b>La recomendación de modalidad se calcula.</b> Con «Quiero que me recomienden», el sistema calcula cuál de las tres modalidades contribuye más al objetivo principal, con la matriz de clases y en la intensidad declarada en Q5. Sustituye la tabla de asignación fija por objetivo, que quedaba desactualizada cada vez que cambiaba el catálogo. Las tres modalidades compiten, incluida «Ambas».</td></tr>
 <tr><td>1.4</td><td><b>Ruta reducida para G0 = No.</b> Ya no termina inmediatamente: abre una ruta anónima que no usa P0 ni captura de contacto y utiliza Q4, Q5, Q6, Q9, Q12, Q14, Q15, Q16 y Q15b cuando aplica. La salida es un solo club recomendado con una breve explicación de por qué corresponde a sus respuestas y la recomendación de acudir con su tutor. No crea registro, brief, cita ni transferencia al club. Para 14 a 17 años, la Experiencia Ideal completa se construye presencialmente en el club con su tutor. Se mantiene la corrección de v1.3 que exige alberca cuando la modalidad es En la alberca o Ambas.</td></tr>
 <tr><td>1.3</td><td>Se declara P0 dentro del instrumento. Aceptar resuelve el reactivo correspondiente; rechazar devuelve el reactivo a su forma normal sin prellenado. La alberca pasa a exigirse también con «Ambas» y cuando el sistema resuelve En la alberca o Ambas.</td></tr>
 <tr><td>1.2</td><td>Concordancia: masculino, femenino o neutral para las palabras que se refieren a quien contesta; terceros con gramática española correcta y sin marcas tipográficas de inclusión.</td></tr>
@@ -360,6 +362,6 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <tr><td>1.0</td><td>Versión inicial del instrumento.</td></tr>
 </table>
 
-<div class="foot">Cuestionario de Experiencia Ideal · CEI-01 · versión 1.4 · uso interno.<br>Documento propiedad de Sports World México.</div>
+<div class="foot">Cuestionario de Experiencia Ideal · CEI-01 · versión 1.5 · uso interno.<br>Documento propiedad de Sports World México.</div>
 
 </body></html>

@@ -2,7 +2,7 @@
 
 Toda la personalización de la Experiencia Ideal sale de un solo instrumento: el **Cuestionario de Experiencia Ideal**, identificado como **CEI-01**.
 
-La versión vigente es la **1.4**, y vive en esta misma carpeta.
+La versión vigente es la **1.5**, y vive en esta misma carpeta.
 
 **Toda regla de personalización del sistema debe partir de un dato recogido o confirmado por CEI-01.**
 
@@ -272,12 +272,14 @@ Su respuesta cambia el contenido de los tres bloques y, cuando corresponde, conv
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **En piso o área seca**       | El plan debe utilizar el catálogo de piso seco. La alberca no debe ser requisito del club                                                                                                                                            |
 | **En la alberca**             | El plan debe utilizar el catálogo de agua. **La alberca debe ser requisito excluyente en la elección del club**                                                                                                                      |
-| **Ambas**                     | El plan debe combinar piso seco y agua e integrar de forma proactiva natación individual y clases acuáticas que sirvan al objetivo declarado. **La alberca debe ser requisito excluyente en la elección del club**                   |
-| **Quiero que me recomienden** | El sistema debe resolver la modalidad a partir del objetivo principal. Si resuelve **En la alberca** o **Ambas**, la alberca debe convertirse en requisito excluyente del club; si resuelve **En piso o área seca**, no debe hacerlo |
+| **Ambas**                     | **El plan debe incluir forzosamente contenido de piso seco y contenido de alberca**, e integrar de forma proactiva natación individual y clases acuáticas que sirvan al objetivo declarado. **La alberca debe ser requisito excluyente en la elección del club**                   |
+| **Quiero que me recomienden** | **El sistema debe calcular cuál de las tres modalidades contribuye más al objetivo principal** y resolver esa. Si resuelve **En la alberca** o **Ambas**, la alberca debe convertirse en requisito excluyente del club; si resuelve **En piso o área seca**, no debe hacerlo |
 
-La regla es directa:
+Dos reglas cierran el apartado.
 
-**si la modalidad elegida o resuelta necesita agua, el club debe tener alberca.**
+**La primera: con «Ambas», el plan debe entregar las dos modalidades.** Un plan que resolviera «Ambas» solo en piso seco entregaría menos de lo que la opción ofrece.
+
+**La segunda: si la modalidad elegida o resuelta necesita agua, el club debe tener alberca.**
 
 El sistema no debe recomendar como club ideal uno que impida cumplir la modalidad elegida o resuelta para la persona.
 

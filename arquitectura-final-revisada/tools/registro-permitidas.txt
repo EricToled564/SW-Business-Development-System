@@ -51,3 +51,11 @@ Cuando no existe cita, debe permitir al asesor del club resuelto continuar la at
 Cuando no existe cita, debe identificar el caso como llamada directa.
 P0 no agrega una pregunta al conteo: confirma información contextual y puede resolver reactivos que, de otra forma, aparecerían después.
 El navegador no debe guardar nada de lo que la persona responde: ni las respuestas del cuestionario, ni los bloques calculados, ni el texto redactado, ni el brief, ni la cita.
+
+# Autorizadas por Eric el 22 de septiembre de 2026, capítulo 7. Las dos
+# describen la ruta reducida, que es un estado declarado del sistema: la
+# ausencia del eje emocional es lo que la distingue de la ruta completa.
+# Tercer renglón de la prueba de D-101, incorporado por D-103.
+
+En la ruta reducida para quien no confirma tener 18 años, Q3 no se pregunta.
+No existe en esa ruta un objetivo emocional ni debe generarse un arco narrativo personalizado.

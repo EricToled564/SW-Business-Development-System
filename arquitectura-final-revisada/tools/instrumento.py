@@ -45,6 +45,24 @@ AJUSTES = [
                   'también puede elegirla la persona.',
     },
     {
+        'nombre': 'Q6 · Ambas entrega las dos modalidades',
+        'decision': 'D-105',
+        'apartados': ['5.6.2', '7.5.1'],
+        'retira': None,
+        'incorpora': 'el plan debe incluir forzosamente contenido de piso seco y contenido de alberca',
+        'porque': 'Un plan que resolviera Ambas solo en piso seco entregaría menos de '
+                  'lo que la opción ofrece.',
+    },
+    {
+        'nombre': 'Q6 · la recomendación de modalidad se calcula',
+        'decision': 'D-105',
+        'apartados': ['5.6.2', '7.5'],
+        'retira': 'el sistema resuelve la modalidad a partir del objetivo principal. si resuelve',
+        'incorpora': 'el sistema calcula cuál de las tres modalidades contribuye más al objetivo principal',
+        'porque': 'Una tabla de asignación fija por objetivo queda desactualizada cada '
+                  'vez que cambia el catálogo; el cálculo sigue al catálogo.',
+    },
+    {
         'nombre': 'P0 · la declaración del bloque de precarga',
         'decision': 'D-56',
         'apartados': ['5.2'],

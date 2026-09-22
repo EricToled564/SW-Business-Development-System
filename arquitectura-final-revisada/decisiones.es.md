@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-104. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-105. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, entre el 18 y el 21 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -990,7 +990,31 @@ Leída con la prueba de dos renglones, el sujeto es el sistema y la frase se ree
 
 **Aplicada el 21 de septiembre de 2026 en CEI-01 v1.3**, junto con los otros dos ajustes que el instrumento arrastraba: el renglón Clubes del control de lógica y la declaración del bloque **P0**, que venía pendiente desde D-56. `tools/instrumento.py` los coteja y pasa en cero.
 
-**Aterriza en:** apartados 5.4.1 y 5.6.2, apartado 4.2.4, apartado 7.5, `CEI-01-v1.3.es.html` y su PDF, y `tools/instrumento.py`.
+**Aterriza en:** apartados 5.4.1 y 5.6.2, apartado 4.2.4, apartado 7.5, CEI-01 y `tools/instrumento.py`.
+
+### D-105 · «Ambas» entrega las dos modalidades, y la recomendada se calcula
+
+Dos precisiones de Eric sobre Q6, del 22 de septiembre.
+
+**La primera. Con «Ambas», el plan debe incluir forzosamente contenido de piso seco y contenido de alberca.**
+
+CEI-01 v1.4 decía que el plan «combina piso seco y agua», sin exigirlo. Un plan resuelto solo en seco cumplía la letra y entregaba menos de lo que la opción ofrece. Con esto, la exigencia de alberca de D-104 deja de ser una precaución y pasa a ser la condición para poder entregar el plan.
+
+**La segunda. Con «Quiero que me recomienden», el sistema calcula cuál de las tres modalidades contribuye más al objetivo principal.**
+
+Hasta aquí existía una tabla de asignación fija: dos objetivos resolvían en agua y cuatro en piso seco. La tabla era un resultado de la matriz de clases, congelado en el texto.
+
+| Antes | Ahora |
+|---|---|
+| Una tabla de seis renglones, objetivo por objetivo, con la modalidad ya resuelta | **El sistema calcula**, con la matriz de clases y en la intensidad declarada en Q5, cuál de las tres modalidades aporta más al objetivo principal |
+| «Quiero que me recomienden» resolvía dos modalidades; nunca «Ambas» | **Las tres compiten**, incluida «Ambas», que gana cuando ninguna de las dos por separado cubre el objetivo tan bien como las dos juntas |
+| Cambiar el catálogo obligaba a reescribir el capítulo | El resultado sigue al catálogo sin tocar el texto |
+
+**Lo que no cambia:** la modalidad se resuelve únicamente cuando la persona pide que se le recomiende. Si elige directamente, su elección prevalece. Y la modalidad resuelta por el sistema tiene exactamente las mismas consecuencias que la elegida por la persona, incluida la alberca como requisito excluyente.
+
+**Aplicada en CEI-01 v1.5**, con su PDF. `tools/instrumento.py` la coteja en dos ajustes, uno por precisión.
+
+**Aterriza en:** apartados 5.6.2, 7.5 y 7.5.1, `CEI-01-v1.5.es.html` y su PDF, y `tools/instrumento.py`.
 
 
 

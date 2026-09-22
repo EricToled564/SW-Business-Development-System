@@ -34,7 +34,7 @@ Cuando dos documentos del proyecto dicen cosas distintas sobre el mismo hecho, *
 | Documento | Qué gobierna |
 |---|---|
 | **Mapa del Funnel** | La medición completa: las etapas, su definición operativa, sus fuentes y sus llaves. Rige como documento único de medición |
-| **CEI-01 versión 1.4** | El cuestionario: sus dos rutas, su bloque de precarga, sus reactivos, opciones, validaciones y ramificaciones |
+| **CEI-01 versión 1.5** | El cuestionario: sus dos rutas, su bloque de precarga, sus reactivos, opciones, validaciones y ramificaciones |
 | **Manual del Proceso Comercial** | Las responsabilidades de las personas: quién hace qué, en qué momento |
 | **Integración de Datos** | El contrato técnico de cada fuente, campo por campo |
 
@@ -129,7 +129,7 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **Bloque de entrenamiento** | Cada una de las tres partes del plan: `B01`, `B02` y `B03` |
 | **Brief** | Lo que recibe quien va a atender la visita: quién viene, qué quiere y cómo se conduce la visita. Sale del mismo cálculo que la Experiencia Ideal |
 | **Capa personal** | Lo que en una página depende de quien la mira: el menú contextual, la leyenda de disponibilidad y los botones que cambian con el estado |
-| **CEI-01** | El Cuestionario de Experiencia Ideal, versión 1.4. El único instrumento del sistema |
+| **CEI-01** | El Cuestionario de Experiencia Ideal, versión 1.5. El único instrumento del sistema |
 | **Clase individual** | Cualquiera de las 47 disciplinas del catálogo |
 | **Clase premium** | Una de las siete disciplinas que Sports World decide priorizar. Su página lleva más texto y más imágenes |
 | **Club ideal** | El club que el sistema resuelve para esa persona con sus requisitos y su origen |

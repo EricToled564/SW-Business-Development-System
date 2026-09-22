@@ -16,22 +16,22 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
-| `00-estructura.es.md` | 1,770 | `18c4871ffb96a6a9c37cbc4081550e9515014412c28f4e5f701d2c2a21413119` |
-| `00-paginas-iniciales.es.md` | 2,585 | `1cb378c2248b440fb1bd8d1338d08d0cffc8eca45c6e29d7458a002e986f0851` |
+| `00-estructura.es.md` | 1,770 | `4d8fb376211e510f293009f4de1361c9b851452051e5c4a0daab2d98102ceff0` |
+| `00-paginas-iniciales.es.md` | 2,585 | `734cfc6bd0c9791dc4928720e51036fb7201fd84b32119c04ebf3202b368f331` |
 | `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
 | `02-como-se-pierde-hoy.es.md` | 1,215 | `d9177642aeee7951f5742ce69f3cf7f52d848e910cd7444862dd87a206ec333b` |
 | `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,919 | `a2aa840d5750739648444ee4661c38b3d6618c200fc013478399b26715f1c6ff` |
 | `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 2,700 | `17e6182df11a783fdafbd426f6711d817c44c39510515d03efc99f5f1ed4ecf2` |
-| `05-el-cuestionario.es.md` | 4,164 | `9f5982de04feac5332226ebbb6c4c68bdd8df35d1e113652341d8bbf7d14c3ab` |
+| `05-el-cuestionario.es.md` | 4,206 | `19b07c38a25d71d4724b17ecee0674b2bbf9a5e4a8f69ea24733e4ae20ed18ef` |
 | `06-quien-puede-recorrer-la-experiencia.es.md` | 1,949 | `f29fddfd8878a39447de2e713c9e18b66b83f539f49ddcecc3bf3d8909dcbace` |
-| `07-los-objetivos-de-la-persona.es.md` | 1,519 | `b06c2f5b43c86dd3c9d25d42d99225afe646a4aa6656e6171362c973fcd3b5a5` |
+| `07-los-objetivos-de-la-persona.es.md` | 1,603 | `88cd104e2f22d4165982f5b5cc471954be493991bc2a54aaf49398ad22a3e75b` |
 | `08-el-recorrido-en-pantalla.es.md` | 2,760 | `0c3a0a462a90d0b1d8352c8ac733ac97d8ce5acef1ece1790a59a19bff73bbae` |
 | `09-datos-de-contacto-y-consentimiento.es.md` | 1,571 | `ff166b32b38e35bfa0cbeefcaa414fcf60bb024855bf289222747751056788c8` |
-| `CEI-01-v1.4.es.html` | — | `05e30e0910e4dc1491f360cfa6139a8a57df027937bbc22dc233af2218cb4d01` |
-| `CEI-01-v1.4.pdf` | — | `6e6e9e60172ab8428a0c74a29d6eebbfc9f7bd3507eded1dcfb513229e402a71` |
+| `CEI-01-v1.5.es.html` | — | `6db79d5c9a2792ca943c6e59ea5f8cc4d027a701aea24658cea8919a68fd96a3` |
+| `CEI-01-v1.5.pdf` | — | `9054de96d4def00686e3dbd38a62077628d3568c5e17174fc2a1316b842c7af9` |
 | `NORMA-DE-REDACCION.es.md` | 3,542 | `bec25e8f9aaab7d9ce9f874e6b392a3eefce21eb4cf675f52139da25fcde1a60` |
-| `README.es.md` | 406 | `11e3616f4463836dae7dbd3d217926b717f966e796b5d813cf4a5674c8f4bb98` |
-| `decisiones.es.md` | 13,193 | `da4fb93c1c9b2db02a1ba4ec613f811aaac1f1d3069d00bc19e423c484015a67` |
+| `README.es.md` | 409 | `c77f8abb96ac97241ed98e716f51578a3b8b3abda68f91d6c852e2c09b602913` |
+| `decisiones.es.md` | 13,515 | `9853e14e55804bb7e44ee04c3e68ed5059465b7c34111755beb7c4b9207eddc2` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,950 | `ff81fdc7bcc25ae7c9477f4b670f1e633ec3262fda0df237b41b0d92daa1d471` |
 
 ## Estado de aprobación
