@@ -155,6 +155,8 @@ Si el nuevo club entrega una capacidad de otra manera, el sistema debe sustituir
 
 La versión anterior deja de ser la experiencia activa para ese recorrido.
 
+Si la persona ya tiene una visita agendada y cambia de club, **el sistema debe recalcular la experiencia completa contra el nuevo club y volver a pedirle día y hora dentro del calendario de atención de ese club**, porque el que había elegido pertenece al club anterior.
+
 ---
 
 ### 4.2.4 Las banderas existen para elegir y desaparecen al elegir
