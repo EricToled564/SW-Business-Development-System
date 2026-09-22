@@ -407,7 +407,7 @@ Si la persona respondió expresamente que no quería agendar, el registro debe c
 
 **`session_uuid` no debe utilizarse como sustituto de `web_session_id`. `web_session_id` no debe utilizarse como mecanismo de conciliación de una persona con un registro.**
 
-La conciliación entre distintas sesiones y un prospecto ya existente debe resolverse mediante la llave canónica y las reglas del capítulo 9.
+La conciliación entre distintas sesiones y un prospecto ya existente debe resolverse mediante la llave de reconocimiento y las reglas del capítulo 9.
 
 ---
 

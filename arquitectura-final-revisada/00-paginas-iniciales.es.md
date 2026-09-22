@@ -90,7 +90,7 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **6** | Quién puede recorrer la experiencia | 6.1 La compuerta de mayoría de edad · 6.2 La ruta reducida · 6.3 De catorce a diecisiete años · 6.4 La contratación de una persona menor de edad · 6.5 Solo para quien todavía no es socio · 6.6 Qué información se recoge de personas menores de edad |
 | **7** | Los objetivos de la persona | 7.1 Dos ejes independientes · 7.2 Los cinco objetivos emocionales · 7.3 Los seis objetivos funcionales · 7.4 El objetivo principal y el secundario · 7.5 Cuando la persona pide que se le recomiende la modalidad · 7.6 Cómo se utilizan los objetivos en la ruta reducida |
 | **8** | El recorrido en pantalla | 8.1 La puerta de entrada: agendar una visita · 8.2 Una sola dirección de internet · 8.3 Las seis fases · 8.4 Avance y retroceso · 8.5 Qué guarda el navegador y qué guarda el servidor · 8.6 El paso a BES · 8.7 La fase de error |
-| **9** | Datos de contacto y consentimiento | 9.1 Cuándo se piden y cuáles son · 9.2 El envío de la experiencia por correo · 9.3 Una sola escritura · 9.4 La conciliación con la llave canónica y el reencuentro · 9.5 El aviso simplificado y el aviso integral |
+| **9** | Datos de contacto y consentimiento | 9.1 Cuándo se piden y cuáles son · 9.2 El envío de la Experiencia Ideal por correo · 9.3 Una sola escritura al cerrar la sesión · 9.4 Las cuatro piezas de identificación · 9.5 Qué se escribe · 9.6 Cuándo cuenta la visita agendada · 9.7 Dónde viven los datos y por cuánto tiempo · 9.8 La conciliación y el reencuentro · 9.9 Quien no agenda también entra al proceso comercial · 9.10 El aviso simplificado y el aviso integral |
 | **10** | Cómo se elige el club | 10.1 El principio · 10.2 Los cuatro requisitos · 10.3 El radio de 10 km · 10.4 Minutos con tráfico · 10.5 Los cuatro modos · 10.6 Alternativas y leyendas · 10.7 Elección propia |
 | **11** | Cómo se compone el plan | 11.1 Los tres bloques · 11.2 B01 y B02 · el entrenamiento individual · 11.3 Seco, agua y mixto · 11.4 Los seis programas de cada modalidad individual · 11.5 B03 · Entrenamiento personal o clases en grupo · 11.6 Qué se recalcula al cambiar de club o de clases |
 | **12** | Cómo se eligen las clases | 12.1 La matriz de clases · 12.2 Los pasos del seleccionador · 12.3 El filtro de intensidad · 12.4 La matriz de contraindicaciones · 12.5 Sustitución, nunca exclusión |
@@ -139,8 +139,9 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **Experiencia Ideal** | El plan de entrenamiento conectado con los objetivos de la persona, con su club, sus bloques y sus clases |
 | **Hub** | Página que concentra un tema y enlaza a las que lo desarrollan |
 | **Leyenda de disponibilidad** | La marca «Disponible en tu club» o «No disponible en tu club» en las listas de clases por objetivo |
-| **Llave canónica** | Lo que identifica a una persona entre sistemas: teléfono como llave principal; nombre, apellido y club resuelven homonimia |
-| **Llave de la sesión** | `session_uuid`. Llave de idempotencia y campo del registro del prospecto |
+| **Llave de reconocimiento** | Lo que identifica a una persona que vuelve, entre sistemas: teléfono en E.164 como elemento principal; nombre, apellido y club resuelven homonimia |
+| **`sw_person_id`** | El identificador interno que el sistema asigna a una persona y recupera con la llave de reconocimiento. Vive en el CRM y en la base de datos; nunca lo introduce la persona |
+| **Llave de la sesión** | `session_uuid`. Llave de idempotencia y campo del registro de la sesión |
 | **Identificador de sesión** | `web_session_id`. Ata entre sí las páginas que la persona visita y muere con la sesión. Permanece de su lado |
 | **Mapa del Funnel** | El documento único de medición del proyecto |
 | **Menú contextual** | El menú que cambia con el tipo de página y con el estado de la persona |
