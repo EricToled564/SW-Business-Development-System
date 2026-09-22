@@ -2,7 +2,7 @@
 
 El sistema llama **clases idóneas** al resultado de este capítulo: las clases del club ideal que mejor sirven al objetivo, al ritmo y al nivel que la persona declaró.
 
-Las clases idóneas alimentan B03, conforme al apartado 11.5, y son el término que usan los capítulos 4, 5 y 8 cuando hablan de disponibilidad, de cambio de clases o de alertas de horario.
+Las clases idóneas alimentan B03, conforme al apartado 11.7, y son el término que usan los capítulos 4, 5 y 8 cuando hablan de disponibilidad, de cambio de clases o de alertas de horario.
 
 ---
 
