@@ -1,8 +1,10 @@
 # Capítulo 12 · Cómo se eligen las clases
 
-El sistema llama **clases idóneas** al resultado de este capítulo: las clases del club ideal que mejor sirven al objetivo, al ritmo y al nivel que la persona declaró.
+El sistema llama **clases idóneas** al resultado de este capítulo: las clases del club seleccionado que mejor sirven al objetivo, al ritmo y al nivel que la persona declaró.
 
 Las clases idóneas alimentan B03, conforme al apartado 11.7, y son el término que usan los capítulos 4, 5 y 8 cuando hablan de disponibilidad, de cambio de clases o de alertas de horario.
+
+**El club que manda aquí es el seleccionado, no el ideal.** El capítulo 10 llama **club ideal** al que resuelve la recomendación automática y **club seleccionado** a aquel con el que la persona se queda, que puede ser otro. Cuando la persona cambia de club, el seleccionador vuelve a correr contra el catálogo del nuevo, conforme al apartado 11.10.
 
 ---
 
@@ -47,7 +49,7 @@ El seleccionador resuelve las clases idóneas en un orden fijo.
 
 | Paso | Qué hace | Con qué |
 |---|---|---|
-| **1** | Toma el catálogo del club ideal | El club resuelto en el capítulo 10 |
+| **1** | Toma el catálogo del club seleccionado | El club con el que se queda la persona, conforme al capítulo 10 |
 | **2** | Filtra las clases calificadas para el objetivo principal | Q4, primer objetivo elegido |
 | **3** | Aplica el filtro de intensidad | Q5, conforme al apartado 12.3 |
 | **4** | Ordena por nivel | Q9, conforme al apartado 12.3 |
