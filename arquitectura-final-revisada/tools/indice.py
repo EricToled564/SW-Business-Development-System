@@ -17,7 +17,7 @@ PARTES = [('Parte I · Por qué existe', 1, 2),
 
 def escritos():
     d = {}
-    for f in sorted(glob.glob('0[1-9]-*.es.md')):
+    for f in sorted(glob.glob('[0-2][0-9]-*.es.md')):
         t = io.open(f, encoding='utf-8').read()
         m = re.search(r'(?m)^# Capítulo (\d+) · (.+)$', t)
         if not m:

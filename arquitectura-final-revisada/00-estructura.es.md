@@ -62,8 +62,8 @@ La frontera queda declarada en el texto, para que el lector sepa en qué modo es
 | **7** | Los objetivos de la persona | `07-los-objetivos-de-la-persona.es.md` | Aprobado |
 | **8** | El recorrido en pantalla | `08-el-recorrido-en-pantalla.es.md` | Escrito, pendiente de aprobación |
 | **9** | Datos de contacto y consentimiento | `09-datos-de-contacto-y-consentimiento.es.md` | Escrito, pendiente de aprobación |
-| **10** | Cómo se elige el club | — | Pendiente |
-| **11** | Cómo se compone el plan | — | Pendiente. Su apartado de entrenamiento en alberca se escribe desde `insumo-entrenamiento-acuatico.es.md` |
+| **10** | Cómo se elige el club | `10-como-se-elige-el-club.es.md` | Escrito, pendiente de aprobación |
+| **11** | Cómo se compone el plan | `11-como-se-compone-el-plan.es.md` | Escrito, pendiente de aprobación |
 | **12** | Cómo se eligen las clases | — | Pendiente |
 | **13** | El texto que redacta el modelo de lenguaje | — | Pendiente |
 | **14** | Las fuentes de datos y su contrato | — | Pendiente |
