@@ -78,7 +78,7 @@ La frontera queda declarada en el texto, para que el lector sepa en qué modo es
 
 | № | Subcapítulos |
 |---|---|
-| **13** | Una sola llamada · Qué puede y qué no · Respaldo ante falla |
+| **13** | Una llamada por versión · Qué puede y qué no · Respaldo ante falla |
 | **14** | El corte de las 06:00 · Categorías de fuente · Matrices propias · Alta de club · Alta de clase · El contrato de cada fuente · **La base de Experiencias Ideales y su contrato (D-56)** |
 | **15** | La simulación diaria · Qué se revisa y quién · Qué se hace cuando una fuente no llega |
 | **16** | Qué recibe el club · Qué recibe el asesor · **Las llamadas directas: quien contestó y no agendó** · Qué ocurre si la persona no se presenta · **Qué ve el asesor cuando el prospecto ya existía** |

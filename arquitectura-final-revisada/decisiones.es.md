@@ -125,7 +125,7 @@ El club se da por dado y no se pregunta. Cuando ese club no cumple lo que el per
 
 Bloques, clases, modalidad, tiempo de traslado y evaluación de requisitos. Si algo que tenía no existe en el club nuevo, se sustituye por lo equivalente para el mismo objetivo; nunca queda un hueco.
 
-**El tono narrativo se conserva**, porque viene de lo que la persona quiere sentir al salir del club y eso no cambia al elegir otro. Todo lo que describa club, modalidad, bloques, clases, requisitos o excepciones **debe corresponder a la nueva versión calculada**: ninguna oración del plan anterior sobrevive si dejó de ser verdadera. Qué piezas redacta el modelo de lenguaje y cuáles vienen directamente del cálculo lo fija el capítulo 13.
+**El tono narrativo se conserva**, porque viene de lo que la persona quiere sentir al salir del club y eso no cambia al elegir otro. Todo lo que describa club, modalidad, bloques, clases, requisitos o excepciones **debe corresponder a la nueva versión calculada**: ninguna oración del plan anterior sobrevive si dejó de ser verdadera. Qué piezas redacta el modelo de lenguaje y cuáles vienen directamente del cálculo lo fija el capítulo 13. **Cómo se consigue lo fija D-109:** los datos vuelven al modelo de lenguaje y la experiencia se redacta de nuevo.
 
 **Corrige la redacción anterior de esta decisión**, que decía que el texto redactado no se vuelve a generar y que lo único específico de un club era su nombre y su dirección. La sustituye el apartado 11.13, texto de Eric.
 
@@ -1074,6 +1074,27 @@ Nombra **la marca que declara, para una persona concreta, qué requisito de su c
 
 **Aterriza en:** capítulos 4, 5, 10, 11 y 12, y el glosario.
 **Sustituye** el nombre que D-42 le daba al mismo objeto.
+
+---
+
+### D-109 · Cambiar de club o de clases devuelve los datos al modelo de lenguaje
+
+Dictado por Eric, el 22 de septiembre:
+
+> «El sistema no debe conservar una oración del plan anterior si dejó de ser verdadera. Por esta causa los datos deben ser enviados al LLM de vuelta si el club o las clases cambian, para que redacte una nueva experiencia.»
+
+**La regla:** cuando cambia el club o cambian las clases, el sistema debe devolver los datos recalculados al modelo de lenguaje y **obtener una redacción nueva de la experiencia**. No debe reutilizar el texto anterior ni parcharlo.
+
+**Qué cierra.** El apartado 11.13 ya exigía el resultado —«el sistema no debe conservar una oración del plan anterior si dejó de ser verdadera»— y remitía al capítulo 13 para el mecanismo. D-109 fija el mecanismo: una redacción nueva, no una edición de la anterior.
+
+**Qué corrige.** D-45 decía, hasta hoy, que el texto redactado **no** se vuelve a generar, y de ahí derivaba la restricción de redactarlo de forma que lo único propio de un club fuera su nombre y su dirección. Esa restricción queda sin efecto: el texto se vuelve a redactar, así que no hace falta escribirlo para que sobreviva a un cambio de club.
+
+**Qué no cambia, y de dónde sale.** El momento del envío lo fija D-107 y no se mueve: la persona puede seguir cambiando de club y de clases mientras navega, y **solo la última versión se escribe y se envía**, al cerrar la sesión —si el navegador avisa o si pasan 10 minutos o más de inactividad—. Durante una misma sesión puede haber, por tanto, varias redacciones y un solo envío.
+
+**Consecuencia sobre el capítulo 13, todavía por escribir.** Su primer subcapítulo previsto se llamaba «Una sola llamada». Pasa a **«Una llamada por versión»**: lo que la regla fija es una llamada por cada versión de la experiencia, no una por sesión. Qué ocurre si el modelo no responde en una de esas llamadas es el respaldo ante falla del mismo capítulo.
+
+**Aterriza en:** capítulo 13, y el apartado 11.13 que lo remite.
+**Corrige D-45.**
 
 ---
 

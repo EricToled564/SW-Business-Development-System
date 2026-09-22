@@ -106,7 +106,7 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 | **10** Cómo se elige el club | El principio · Los cuatro requisitos y el quinto condicional · El radio de 10 km · Cómo se mide la cercanía · Los cuatro modos · Los flags de cada alternativa · El pop-up de confirmación · Las excepciones aceptadas · La ruta reducida | Regla, los cuatro modos y los flags en tabla de casos |
 | **11** Cómo se compone el plan | Los tres bloques · B01 y B02 · Q6 y la estructura de B02 · La modalidad original y las excepciones aceptadas · Los seis programas de cada modalidad · El entrenamiento acuático · B03 · Cambiar de club y cambiar de clases · Relación con el brief | Regla, los programas en tabla de datos |
 | **12** Cómo se eligen las clases | La matriz · Los pasos del seleccionador · Filtro de intensidad · Contraindicaciones · Sustitución | Tabla de casos, la matriz en tabla de datos |
-| **13** El texto que redacta el modelo de lenguaje | Una sola llamada · Qué puede y qué queda fijo · Respaldo ante falla | Regla |
+| **13** El texto que redacta el modelo de lenguaje | Una llamada por versión · Qué puede y qué queda fijo · Respaldo ante falla | Regla |
 | **14** Las fuentes de datos y su contrato | El corte de las 06:00 · Categorías · Matrices propias · Alta de club y de clase · El contrato de cada fuente | Tabla de datos, el corte y las altas en regla |
 | **15** La operación diaria | La simulación diaria · Qué se revisa y quién · Qué se hace cuando una fuente no llega | Regla + tabla de casos |
 | **16** El traspaso al club | Qué recibe el club · Qué recibe el asesor · Las llamadas directas · Si la persona no se presenta · Cuando el prospecto ya existía | Regla + tabla de casos |
