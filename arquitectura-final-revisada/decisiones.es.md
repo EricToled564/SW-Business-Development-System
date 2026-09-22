@@ -125,9 +125,11 @@ El club se da por dado y no se pregunta. Cuando ese club no cumple lo que el per
 
 Bloques, clases, modalidad, tiempo de traslado y evaluación de requisitos. Si algo que tenía no existe en el club nuevo, se sustituye por lo equivalente para el mismo objetivo; nunca queda un hueco.
 
-El texto redactado **no** se vuelve a generar. De ahí se sigue una restricción: el texto se redacta de forma que lo único específico de un club sea su nombre y su dirección.
+**El tono narrativo se conserva**, porque viene de lo que la persona quiere sentir al salir del club y eso no cambia al elegir otro. Todo lo que describa club, modalidad, bloques, clases, requisitos o excepciones **debe corresponder a la nueva versión calculada**: ninguna oración del plan anterior sobrevive si dejó de ser verdadera. Qué piezas redacta el modelo de lenguaje y cuáles vienen directamente del cálculo lo fija el capítulo 13.
 
-**Aterriza en:** capítulos 4.2.3, 11 y 13.
+**Corrige la redacción anterior de esta decisión**, que decía que el texto redactado no se vuelve a generar y que lo único específico de un club era su nombre y su dirección. La sustituye el apartado 11.13, texto de Eric.
+
+**Aterriza en:** apartados 4.2.3 y 11.13, y capítulo 13.
 
 ---
 
@@ -1061,12 +1063,12 @@ Nombra **la marca que declara, para una persona concreta, qué requisito de su c
 | Capítulo 4, apartados 4.2.5 y 4.4 | Las dos menciones restantes de «banderas» pasan a «flags» |
 | Capítulo 5, apartados 5.2.4 y 5.4 | «la leyenda correspondiente» y «qué leyenda debe llevar cada alternativa» pasan a **flag** |
 | Glosario | Entrada nueva: **Flag** |
+| La **leyenda de disponibilidad** de D-72, en el apartado 3.6.6, el capítulo 3, el capítulo 4, el glosario y la norma | Pasa a **flag de disponibilidad**. Marca otra cosa —si una clase se imparte en el club de la persona, no si el club cumple un requisito de su cuestionario—, pero es una marca de la misma familia y el término oficial es uno solo. Lo que la persona lee en pantalla no cambia: sigue siendo «Disponible en tu club» o «No disponible en tu club» |
 
 **Qué no cambia, y por qué:**
 
 | Pieza | Por qué conserva su nombre |
 |---|---|
-| **La leyenda de disponibilidad de D-72** —«Disponible en tu club» o «No disponible en tu club»— | Es otro objeto: marca si una clase se imparte en el club de la persona dentro de una lista de clases por objetivo, no si un club cumple un requisito del cuestionario. Vive en el apartado 3.6.6 y la nombran el capítulo 3, el capítulo 4 y la norma. **Queda abierto** si Eric quiere que también pase a «flag» |
 | **La señal de dato desactualizado del apartado 5.9** | El capítulo 5 la llama **señal** desde que se escribió. El capítulo 12 la llamaba «bandera», que no era ni el término del capítulo 5 ni el oficial: corregido a «señal» |
 | **D-42, y el resto del registro de decisiones** | El registro dice lo que se decidió el día que se decidió. Reescribirlo para que use el término nuevo falsificaría la fecha en que el término se fijó, que es hoy. D-42 sigue diciendo «banderas»; esta decisión es la que dice cómo se llaman desde ahora |
 

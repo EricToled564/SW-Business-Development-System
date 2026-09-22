@@ -232,7 +232,7 @@ De esa regla salen tres superficies principales:
 
 La página de objetivo abarca toda la red.
 
-Una vez completado el cuestionario, la leyenda del apartado 3.6.6 indica cuáles de esas clases están disponibles en el club ideal de esa persona.
+Una vez completado el cuestionario, el flag del apartado 3.6.6 indica cuáles de esas clases están disponibles en el club ideal de esa persona.
 
 ---
 
@@ -270,7 +270,7 @@ La página se llama **«Actividades para menores de 3 meses a 13 años»** y con
 | **Clases para niños** | Funciona como una página de objetivo. Su botón dice «Conoce las clases disponibles» y abre la lista. Al tocar una clase se muestran los clubes que la imparten y, al tocar un club, sus días y horarios |
 | **FitKidz** | Muestra los clubes donde se ofrece. Cada resultado lleva a la página correspondiente del club |
 
-Con el cuestionario completado, cada clase para niños lleva la leyenda de disponibilidad del apartado 3.6.6.
+Con el cuestionario completado, cada clase para niños lleva el flag de disponibilidad del apartado 3.6.6.
 
 El menú contextual sigue las mismas reglas que en cualquier otra página.
 
@@ -441,9 +441,9 @@ El capítulo 4 especifica ambos entregables y el capítulo 9 define qué ocurre 
 
 ---
 
-### 3.6.6 La leyenda de disponibilidad
+### 3.6.6 El flag de disponibilidad
 
-Una vez completado el cuestionario, cada clase dentro de una lista de objetivo lleva una de dos leyendas:
+Una vez completado el cuestionario, cada clase dentro de una lista de objetivo lleva uno de dos flags:
 
 **Disponible en tu club**
 o
@@ -468,7 +468,7 @@ Estos botones aparecen después de las tres ranuras fijas.
 | Botón | Dónde aparece | Qué hace |
 |---|---|---|
 | **¿Cuál es tu objetivo?** | Sin cuestionario, en Inicio, Club, Amenidad, Clase, Actividades para menores, Entrenamiento personal y Blog | Abre el cuestionario, comenzando por las preguntas de contexto de la página |
-| **Conoce las clases ideales para [el objetivo de la página]** | En las seis páginas de objetivo, en los tres estados | Abre todas las clases del sistema que contribuyen a ese objetivo. Con experiencia, muestra además la leyenda del apartado 3.6.6 |
+| **Conoce las clases ideales para [el objetivo de la página]** | En las seis páginas de objetivo, en los tres estados | Abre todas las clases del sistema que contribuyen a ese objetivo. Con experiencia, muestra además el flag del apartado 3.6.6 |
 | **Explora [el otro objetivo elegido]** | Con experiencia, cuando la persona eligió dos objetivos y está en la página de uno de ellos | Lleva a la página del otro objetivo elegido |
 | **Conoce los programas de [nombre de la modalidad]** | En las tres páginas de entrenamiento individual, en los tres estados | Abre los seis objetivos, cada uno con el programa correspondiente a esa modalidad |
 | **Tu rutina individual** | En las tres páginas de entrenamiento individual, con experiencia | Abre la parte individual de su Experiencia Ideal: los bloques 01 y 02 que especifica el capítulo 11. Aparece para todas las personas |
@@ -603,7 +603,7 @@ Desde ahí se llega a la página de cada club.
 
 En el caso del entrenamiento aeróbico en alberca, la lista se limita a los clubes que cuentan con alberca.
 
-Con el cuestionario completado, cada programa muestra además la leyenda de disponibilidad del apartado 3.6.6.
+Con el cuestionario completado, cada programa muestra además el flag de disponibilidad del apartado 3.6.6.
 
 Los programas son **secciones dentro de esas tres páginas**, no páginas nuevas.
 
@@ -691,7 +691,7 @@ Se añade encima de ella como una capa.
 Esa capa incluye:
 
 * el menú contextual;
-* la leyenda **Disponible en tu club / No disponible en tu club**;
+* el flag **Disponible en tu club / No disponible en tu club**;
 * **Explora [otro objetivo]**;
 * **Tu visita agendada**;
 * y el comportamiento de **Agenda tu visita** del encabezado cuando ya existe una cita.
@@ -707,7 +707,7 @@ De esa separación salen cinco reglas de diseño.
 | **1 · El máximo de botones** | Cada tipo de página reserva desde el inicio el espacio correspondiente al máximo número de botones que puede llegar a tener. Así, el contenido no cambia de posición cuando el menú cambia de estado o se carga después. El máximo es cinco en Clase, Blog, Entrenamiento individual y Objetivo; cuatro en Inicio, Club, Amenidad, Actividades para menores y Entrenamiento personal; y tres en Membresías |
 | **2 · Con identificador y sin él** | Quien llega con `web_session_id` recibe la capa correspondiente al estado de esa sesión. Quien llega sin él recibe el estado Sin cuestionario |
 | **3 · Si el script falla** | Si falla el script responsable de la capa personal, la persona debe ver la página completa con el **menú de contingencia Sin cuestionario, cuyos cuatro botones son enlaces**. Este menú de contingencia tiene siempre cuatro enlaces y no tiene que reproducir el número normal de botones que corresponde al tipo de página según 3.7.1. Las pantallas de aplicación —cuestionario, Experiencia Ideal y agenda— requieren el script; BES funciona como respaldo de atención |
-| **4 · Sin consultas adicionales** | La leyenda de disponibilidad y el botón Explora se resuelven utilizando información que la página ya contiene —incluidos los clubes donde se imparte cada clase— y el estado de la sesión |
+| **4 · Sin consultas adicionales** | El flag de disponibilidad y el botón Explora se resuelven utilizando información que la página ya contiene —incluidos los clubes donde se imparte cada clase— y el estado de la sesión |
 | **5 · Dos entornos, un solo paso** | El cuestionario, la Experiencia Ideal y la agenda son pantallas de aplicación. La precarga del apartado 3.8 funciona como puente entre las páginas públicas y esas pantallas. El diseño debe hacer que el paso se perciba continuo: mismo encabezado, misma tipografía y misma velocidad de respuesta |
 
 La capa fija puede utilizar animaciones y transiciones.

@@ -203,7 +203,7 @@ Estas reglas aplican a **la experiencia entregada**, no a las superficies cuya f
 
 El panel de otros clubes debe mostrar sus flags mientras la persona compara alternativas, conforme al apartado 4.2.4.
 
-Las listas de clases por objetivo del sitio deben mostrar las leyendas **Disponible en tu club** o **No disponible en tu club**, conforme al apartado 3.6.6.
+Las listas de clases por objetivo del sitio deben mostrar los flags **Disponible en tu club** o **No disponible en tu club**, conforme al apartado 3.6.6.
 
 En ambos casos, la comparación existe porque la persona necesita esa información para decidir si le conviene cambiar de alternativa.
 

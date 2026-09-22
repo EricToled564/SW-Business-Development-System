@@ -128,7 +128,7 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **BES** | El asistente conversacional que atiende a la persona en nombre de Sports World. Vive dentro del sitio y dentro de WhatsApp |
 | **Bloque de entrenamiento** | Cada una de las tres partes del plan: `B01`, `B02` y `B03` |
 | **Brief** | Lo que recibe quien va a atender la visita: quién viene, qué quiere y cómo se conduce la visita. Sale del mismo cálculo que la Experiencia Ideal |
-| **Capa personal** | Lo que en una página depende de quien la mira: el menú contextual, la leyenda de disponibilidad y los botones que cambian con el estado |
+| **Capa personal** | Lo que en una página depende de quien la mira: el menú contextual, el flag de disponibilidad y los botones que cambian con el estado |
 | **CEI-01** | El Cuestionario de Experiencia Ideal, versión 1.5. El único instrumento del sistema |
 | **Clase individual** | Cualquiera de las 47 disciplinas del catálogo |
 | **Clase premium** | Una de las siete disciplinas que Sports World decide priorizar. Su página lleva más texto y más imágenes |
@@ -139,7 +139,7 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **Experiencia Ideal** | El plan de entrenamiento conectado con los objetivos de la persona, con su club, sus bloques y sus clases |
 | **Flag** | La marca que declara, para esa persona, qué requisito de su cuestionario no puede cumplir un club alternativo. Se muestra mientras compara clubes y sale del plan una vez elegido el club |
 | **Hub** | Página que concentra un tema y enlaza a las que lo desarrollan |
-| **Leyenda de disponibilidad** | La marca «Disponible en tu club» o «No disponible en tu club» en las listas de clases por objetivo |
+| **Flag de disponibilidad** | La marca «Disponible en tu club» o «No disponible en tu club» en las listas de clases por objetivo |
 | **Llave de reconocimiento** | Lo que identifica a una persona que vuelve, entre sistemas: teléfono en E.164 como elemento principal; nombre, apellido y club resuelven homonimia |
 | **`sw_person_id`** | El identificador interno que el sistema asigna a una persona y recupera con la llave de reconocimiento. Vive en el CRM y en la base de datos; nunca lo introduce la persona |
 | **Llave de la sesión** | `session_uuid`. Llave de idempotencia y campo del registro de la sesión |

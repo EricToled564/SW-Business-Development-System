@@ -34,7 +34,7 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 | **9** | **Sin metáforas ni giros conversacionales** | Registro ejecutivo en todo el depósito |
 | **10** | **Las tres palabras normativas son debe · no debe · puede**, y solo se usan en las reglas | «No debe» prohíbe una conducta a quien construye. Nunca describe al sistema: eso lo cubre la regla 1 |
 
-**Única excepción a la regla 1:** la leyenda «Disponible en tu club» o «No disponible en tu club» de las listas de clases por objetivo (D-72), porque la persona necesita esa comparación para decidir.
+**Única excepción a la regla 1:** el flag «Disponible en tu club» o «No disponible en tu club» de las listas de clases por objetivo (D-72), porque la persona necesita esa comparación para decidir.
 
 ---
 
@@ -65,7 +65,7 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 | **3.3** El menú superior | Los botones fijos en las 148 páginas | Regla |
 | **3.4** Los tres estados de la persona | Los dos hechos que la describen y los tres estados que producen | Regla + tabla de casos |
 | **3.5** El contenido de cada tipo de página | Dónde vive cada cosa y el contenido mínimo tipo por tipo | Tabla de datos |
-| **3.6** El menú contextual | El orden de los botones, las tres ranuras, la leyenda y las puertas al cuestionario | Regla + tabla de casos |
+| **3.6** El menú contextual | El orden de los botones, las tres ranuras, el flag y las puertas al cuestionario | Regla + tabla de casos |
 | **3.7** Los menús, uno por uno | El menú resuelto para cada tipo de página en cada estado, y el máximo de botones | Tabla de casos |
 | **3.8** Qué se lleva la persona al cuestionario | Qué aporta cada tipo de página a la precarga | Tabla de datos |
 | **3.9** La página es la misma para todos; el menú es la capa personal | Cómo se sirve la página y cómo se resuelve lo que depende de la persona | Regla |

@@ -269,7 +269,7 @@ Cuando una fuente necesaria no esté disponible, el sistema debe aplicar la regl
 
 | Q12 | Qué debe ocupar B03 |
 |---|---|
-| **Entrenamiento individual** | Entrenamiento personal |
+| **Entrenar sin compañía** | Entrenamiento personal |
 | **Clases grupales** | Clases en grupo seleccionadas conforme al capítulo 12, con entrenamiento personal como complemento |
 
 El sistema debe proponer entrenamiento personal en las dos ramas.

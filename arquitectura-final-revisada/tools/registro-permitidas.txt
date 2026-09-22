@@ -94,3 +94,13 @@ Si no existe una coincidencia válida, debe crearse un nuevo registro y asignars
 
 Contingencia cuando no existe tráfico disponible
 si no existe información válida de tráfico, utilizar la menor distancia por ruta.
+
+# Capítulo 11 (texto de Eric, instalado verbatim). Las dos entran por el
+# criterio que Eric ya fijó dos veces: el 22 de septiembre, con «El contexto
+# puede cambiar lo que la persona quiere explorar; no cambia lo que ya declaró
+# en el cuestionario» del capítulo 8, y con las dos de la contingencia de
+# tráfico del capítulo 10. La frase que traza el límite de hasta dónde llega
+# una cosa se queda: no describe al sistema por lo que le falta.
+
+Q5 no cambia el objetivo del programa
+El tono narrativo derivado de Q3 debe permanecer estable porque la motivación emocional original no cambia al seleccionar otro club.
