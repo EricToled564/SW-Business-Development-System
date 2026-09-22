@@ -44,7 +44,7 @@ Los seis programas **no viven en este documento**: viven en la **matriz de entre
 
 | | |
 |---|---|
-| **Qué debe entregar** | Por cada objetivo y cada una de las tres modalidades: el nombre que la persona lee, el rango de esfuerzo percibido, la duración, la frecuencia, la razón en lenguaje llano y la fuerza de la cadena de derivación |
+| **Qué debe entregar** | Por cada objetivo y cada una de las tres modalidades: el nombre que la persona lee, el rango de esfuerzo percibido, la duración, la frecuencia, la razón en lenguaje llano y la fuerza de la cadena |
 | **Qué no debe entregar al sitio** | El protocolo técnico, el equipo, los nombres técnicos y las cautelas clínicas. Eso es referencia interna: el equipo y la carga los define el entrenador en la primera sesión |
 | **Quién la mantiene** | Sports World, con el profesional de salud que designe |
 | **Cadencia** | Se revisa cuando cambia el catálogo de clases o la oferta de amenidades, y al menos una vez al año |

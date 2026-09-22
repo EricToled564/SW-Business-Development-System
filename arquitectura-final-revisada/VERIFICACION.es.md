@@ -17,7 +17,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
 | `00-estructura.es.md` | 1,678 | `bb232147632253757c0aac2aca8969b89ae1487a56f8085b71739d60062dac6f` |
-| `00-paginas-iniciales.es.md` | 2,929 | `b936a73a29abd7ed3ffca6947a1f4b1163a400f409c9d5d2626fc1318f64fc75` |
+| `00-paginas-iniciales.es.md` | 2,962 | `48cf896d1df52b37eb4ad08c7ec45e753f7cd2972c5cc99d4323f4e292c438ef` |
 | `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
 | `02-como-se-pierde-hoy.es.md` | 1,215 | `d9177642aeee7951f5742ce69f3cf7f52d848e910cd7444862dd87a206ec333b` |
 | `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,919 | `481dd085c032f19a13aaeb85030aa1aa43291c2f2a3bf340574845215d55fdf0` |
@@ -28,14 +28,14 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `08-el-recorrido-en-pantalla.es.md` | 4,202 | `03af6c5e5358f6a2c3f96300dbd4a1e8ac61cf2c770d32f1cf1eef5b8ae8e8e7` |
 | `09-datos-de-contacto-y-consentimiento.es.md` | 3,321 | `42fecfd020c371ee69302c1ad8f662cd86395ac504a801ce6610ceb898355e92` |
 | `10-como-se-elige-el-club.es.md` | 4,027 | `433811065da38f05ffbf090cb47a8dd2bbc6a3be9ad43b8106fdba8e4ae6765c` |
-| `11-como-se-compone-el-plan.es.md` | 2,618 | `1e38d51bdde730d58cc24f2249b376d5f159d3370c29c53ab2d4f61e5ce1ef80` |
+| `11-como-se-compone-el-plan.es.md` | 2,584 | `fa07a426a2fca1c9876bb5381ffad101abbcf67edf9a837cde0cb67d28271b13` |
 | `12-como-se-eligen-las-clases.es.md` | 1,225 | `67e77ad57f2ab2af97a88c3da37fa74f192713ebc7ba71d30554a60453304243` |
 | `CEI-01-v1.5.es.html` | — | `6db79d5c9a2792ca943c6e59ea5f8cc4d027a701aea24658cea8919a68fd96a3` |
 | `CEI-01-v1.5.pdf` | — | `9054de96d4def00686e3dbd38a62077628d3568c5e17174fc2a1316b842c7af9` |
 | `NORMA-DE-REDACCION.es.md` | 3,592 | `52a4b40275e4045823b1d5b53dde985d5eedf107f0e69c5dee3fd81f3a439b08` |
 | `README.es.md` | 409 | `c77f8abb96ac97241ed98e716f51578a3b8b3abda68f91d6c852e2c09b602913` |
-| `decisiones.es.md` | 15,032 | `08d2adc6fc692661a66b9ed90034c419c355268910db6538734086a362364b3f` |
-| `insumo-entrenamiento-acuatico.es.md` | 1,950 | `ff81fdc7bcc25ae7c9477f4b670f1e633ec3262fda0df237b41b0d92daa1d471` |
+| `decisiones.es.md` | 15,317 | `c173bc5a5504099b61b155b61ac53445832b630aff15e4377c30d0527996f56b` |
+| `insumo-entrenamiento-acuatico.es.md` | 1,948 | `6d5d2145a4f9d05cf1d5cec2ace3b33847918bd5b2ed3c4d08a753232914dc52` |
 
 ## Estado de aprobación
 
@@ -103,6 +103,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **D-109 · cambiar de club o de clases devuelve los datos al modelo de lenguaje** | Eric fija el mecanismo que el apartado 11.13 dejaba remitido al capítulo 13: cuando cambia el club o cambian las clases, los datos recalculados **vuelven al modelo de lenguaje y la experiencia se redacta de nuevo**; el texto anterior no se reutiliza ni se parcha. **Deja sin efecto la restricción que quedaba de D-45** —redactar de forma que lo único propio de un club fuera su nombre y su dirección—, que existía precisamente para que el texto sobreviviera a un cambio de club. **No mueve el momento del envío:** D-107 sigue rigiendo, así que en una misma sesión puede haber varias redacciones y un solo envío, el de la última versión, al cerrar la sesión —si el navegador avisa o si pasan 10 minutos o más de inactividad—. El subcapítulo previsto del capítulo 13 pasa de «Una sola llamada» a **«Una llamada por versión»**, en la estructura y en la norma, para que no diga lo contrario de la regla antes de escribirse |
 | **El capítulo 12, revisado** | Cuatro correcciones. **Una remisión equivocada que el verificador no podía ver:** decía «apartado 3.1.2» para la regla del nombre único de cada objetivo, y 3.1.2 son los once tipos de página; la regla vive en **3.1**. Es el mismo caso que la remisión de 8.5.3 en el capítulo 9: el destino existe, solo que dice otra cosa. **Un defecto de formato:** la tabla del contrato de la matriz tenía una segunda columna vacía y su último renglón sin cerrar; pasa a lista. **Concordancia** en «El requisito REQ-2 y REQ-3». Y **un hueco real:** el capítulo no decía nada de la clase que la persona acepta en la precarga, que el apartado 5.2.4 da por asegurada en el tercer bloque y el 10.3 convierte en requisito del club cuando no hay club fijado. Entra el apartado **12.6**, que fija que esa clase ocupa lugar dentro de las clases idóneas y que solo sale si la persona acepta expresamente un club que no la imparte |
 | **El capítulo 12 seleccionaba contra el club equivocado** | Decía «las clases del **club ideal**» y «Toma el catálogo del **club ideal**». El capítulo 10 llama club ideal al que resuelve la recomendación automática, y **club seleccionado** a aquel en el que la persona se queda tras aceptar una carencia —«convertir ese club en el club seleccionado», apartado 10.12—; el capítulo 11 construye los tres bloques «para el mismo club seleccionado». Con la redacción anterior, una persona que pedía alberca, recibía un club con ella y después se cambiaba a uno sin ella habría recibido clases del catálogo del club que ya había dejado. Corregido en los dos lugares, y la distinción queda dicha al principio del capítulo para que no vuelva a perderse |
+| **D-110 · «fuerza de la cadena», término oficial y único** | El contrato de la matriz del apartado 11.5.1 decía «Fuerza de la derivación» y el insumo acuático decía «la fuerza de la cadena de derivación»; el registro de decisiones y el apartado 12.1.1 dicen **fuerza de la cadena**. Eric fija ese como nombre del campo, con sus tres valores —**directa · de un paso · por ausencia**—, y deja «derivación» disponible solo para la prosa que explique qué significa la cadena. El contrato del apartado 11.5.1 queda además como lo reescribió Eric: los seis campos del insumo acuático y la remisión al apartado 12.1.1, en lugar de la tabla de dos columnas. **Sale de ese contrato el renglón «Nivel o parámetros asociados a Q5»**: el rango de esfuerzo percibido es el parámetro sobre el que Q5 opera, así que el apartado 11.2 sigue teniendo dato detrás. El glosario gana la entrada |
 
 ## Qué cambió en la entrega del 20 de septiembre
 

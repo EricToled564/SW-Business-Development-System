@@ -1098,6 +1098,28 @@ Dictado por Eric, el 22 de septiembre:
 
 ---
 
+### D-110 · «Fuerza de la cadena» es el término oficial y único
+
+Dictado por Eric, el 22 de septiembre:
+
+> «Debe quedar "fuerza de la cadena" como término oficial y único. Es el que ya usa el registro de decisiones y el que desarrolla el propio 12.1.1 · La fuerza de la cadena. "Derivación" puede aparecer dentro de una explicación en prosa si hace falta explicar qué significa la cadena, pero no debe utilizarse como nombre del campo ni como término alternativo.»
+
+| Pieza | Valor |
+|---|---|
+| **Nombre del campo** | Fuerza de la cadena |
+| **Valores** | Directa · De un paso · Por ausencia |
+| **Dónde se desarrolla** | Apartado 12.1.1 |
+
+**Dónde estaba la variante.** El contrato de la matriz de entrenamiento individual, en el apartado 11.5.1, decía «Fuerza de la derivación», y el insumo acuático decía «la fuerza de la cadena de derivación». Las dos quedan corregidas. El contrato del apartado 11.5.1 queda además como lo reescribió Eric, con los seis campos del insumo y la remisión al apartado 12.1.1.
+
+**Qué se retira de ese contrato.** El renglón «Nivel o parámetros asociados a Q5» sale de la lista. El rango de esfuerzo percibido es el parámetro sobre el que Q5 opera, así que el apartado 11.2 —«Q5 determina con qué nivel de intensidad debe presentarse dentro de los parámetros permitidos por su matriz»— sigue teniendo dato detrás.
+
+**Dónde «derivación» puede seguir apareciendo:** en prosa que explique qué significa la cadena. Por eso conservan su redacción el título de D-84, «Cuando la derivación es indirecta, se declara», y el apartado 3 del insumo acuático.
+
+**Aterriza en:** apartados 11.5.1 y 12.1.1, el insumo acuático y el glosario.
+
+---
+
 ## Puntos abiertos
 
 ### Decisiones de Sports World, para el arranque del proyecto

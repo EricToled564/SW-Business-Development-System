@@ -197,15 +197,12 @@ El sistema no debe inventar programas mediante el modelo de lenguaje.
 
 Por cada combinación de **objetivo × modalidad** la matriz debe poder entregar al menos:
 
-| Elemento | Función |
-|---|---|
-| **Nombre del programa** | Lo que lee la persona |
-| **Rango de esfuerzo** | Intensidad prevista |
-| **Duración** | Duración orientativa |
-| **Frecuencia** | Frecuencia orientativa |
-| **Razón** | Explicación en lenguaje llano |
-| **Nivel o parámetros asociados a Q5** | Adaptación al ritmo declarado |
-| **Fuerza de la derivación** | Directa, de un paso o por ausencia, conforme al capítulo 12 |
+* el nombre que la persona lee;
+* el rango de esfuerzo percibido;
+* la duración;
+* la frecuencia;
+* la razón en lenguaje llano;
+* la fuerza de la cadena: directa, de un paso o por ausencia, conforme al apartado 12.1.1.
 
 El motor debe consumir esos datos.
 
