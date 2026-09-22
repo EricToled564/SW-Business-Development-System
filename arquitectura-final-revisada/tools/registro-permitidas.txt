@@ -68,3 +68,13 @@ No existe en esa ruta un objetivo emocional ni debe generarse un arco narrativo 
 
 Por ejemplo, si la persona entra al Inicio y abre directamente el cuestionario sin haber visitado ninguna página que produzca uno de esos cuatro tipos de contexto, el recorrido debe pasar directamente a Q1.
 El contexto puede cambiar lo que la persona quiere explorar; no cambia lo que ya declaró en el cuestionario.
+
+# Autorizadas por Eric el 22 de septiembre de 2026, capítulo 9 (su texto,
+# instalado verbatim). La primera fija el límite entre dos identificadores,
+# mismo tipo que las llaves de sesión ya autorizadas en el capítulo 8. Las
+# otras dos describen un caso real —cuando la llave de reconocimiento no
+# encuentra coincidencia—, no una omisión del sistema.
+
+sw_person_id no sustituye la llave de reconocimiento.
+Cuando una persona nueva entrega sus datos y no existe una coincidencia válida, el sistema debe crear el registro correspondiente y asignarle un nuevo sw_person_id.
+Si no existe una coincidencia válida, debe crearse un nuevo registro y asignarse un nuevo sw_person_id.
