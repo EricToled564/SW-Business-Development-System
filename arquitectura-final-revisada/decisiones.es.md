@@ -1120,6 +1120,32 @@ Dictado por Eric, el 22 de septiembre:
 
 ---
 
+### D-111 · Cuando el tiempo declarado no alcanza para el plan, el brief lo advierte
+
+Dictado por Eric, el 22 de septiembre:
+
+> «Aquí hay que agregar un punto al brief. Si el usuario está declarando su intención de entrenar dos días y de hacerlo una hora cada día para incrementar masa muscular, y elige que quiere entrenar en compañía, aquí hay un mismatch, porque el tiempo que dedica no va a ser suficiente para pesas, cardio y clases. Pero al usuario le vamos a entregar su Experiencia Ideal con todos los bloques, y tenemos que agregar una sección en el brief que alerte al asesor de esta situación y que le ayude a cómo resolver el problema: ya sea explicando al usuario por qué más tiempo de compromiso sería mejor, o para que en el club se haga un ajuste durante la visita.»
+
+**Lo que fija:** el plan se compone contra el objetivo, no contra la disponibilidad. Cuando lo que el plan pide excede lo que la persona declaró, **la experiencia se entrega completa igual** y la advertencia viaja al asesor, no a la persona.
+
+| Pieza | Dónde |
+|---|---|
+| La regla y la comparación | Apartado **11.16** |
+| La señal | La tabla del apartado **5.9** |
+| La sección del brief, con las dos salidas | **§8 · El ajuste de tiempo**, en el apartado 4.4.2 |
+
+**Las dos salidas son del asesor, no del sistema:** explicarle a la persona por qué un compromiso mayor sirve mejor a lo que declaró, o ajustar el plan con ella durante la visita. El sistema prepara la conversación; no recorta el plan por su cuenta.
+
+**Lo que el instrumento todavía no recoge.** Eric, sobre si CEI-01 captura la disponibilidad: **«Sí la captura, pero tal vez tengamos que cambiar un poco la pregunta para que quede claro.»**
+
+Hoy Q8 pregunta **«¿Qué días prefieres entrenar?»**, que recoge un gusto, y la comparación necesita una capacidad. Y **cuánto tiempo por sesión no se pregunta en ninguna parte**: Q7 recoge franjas de tres horas, que es otra cosa. Mientras eso siga así, la señal se levanta comparando días contra la frecuencia que pide el plan, sin la duración de cada sesión.
+
+El ajuste queda declarado en `tools/instrumento.py`, que **falla en cada corrida** hasta que CEI-01 lo incorpore. La redacción exacta de la pregunta la decide Eric.
+
+**Aterriza en:** apartados 4.4.2, 5.9 y 11.16, y CEI-01.
+
+---
+
 ## Puntos abiertos
 
 ### Decisiones de Sports World, para el arranque del proyecto

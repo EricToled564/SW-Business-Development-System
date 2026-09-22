@@ -63,6 +63,18 @@ AJUSTES = [
                   'vez que cambia el catálogo; el cálculo sigue al catálogo.',
     },
     {
+        'nombre': 'Q8 · la disponibilidad como capacidad, no como preferencia',
+        'decision': 'D-111',
+        'apartados': ['11.16'],
+        'retira': '¿Qué días prefieres entrenar?',
+        'incorpora': ['¿Qué días puedes entrenar?',
+                      '¿Cuántos días a la semana puedes entrenar'],
+        'porque': 'El apartado 11.16 compara lo que el plan pide contra lo que la persona '
+                  'declaró que puede dedicarle. «Prefieres» recoge un gusto; la comparación '
+                  'necesita una capacidad. Falta además cuánto tiempo por sesión: hoy el '
+                  'instrumento no lo pregunta, así que la señal se levanta solo por días.',
+    },
+    {
         'nombre': 'P0 · la declaración del bloque de precarga',
         'decision': 'D-56',
         'apartados': ['5.2'],

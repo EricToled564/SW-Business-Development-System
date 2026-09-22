@@ -127,6 +127,14 @@ CORRECCIONES = [
         'contiene': ['## 12.6 La clase que la persona aceptó en la precarga'],
     },
     {
+        'dice': 'La advertencia de capacidad de D-111 quedó en sus tres lugares: la regla en el '
+                'apartado 11.16, la señal en la tabla del 5.9 y la sección §8 del brief en el 4.4.2.',
+        'archivos': [CAP11, CAP5, CAP4],
+        'contiene': ['## 11.16 Cuando el tiempo declarado no alcanza para el plan',
+                     '| **El plan pide más sesiones de las que caben en los días declarados**',
+                     '| **§8 · El ajuste de tiempo**'],
+    },
+    {
         'dice': 'Los cuatro puntos que el capítulo 12 dejaba abiertos quedaron resueltos por Eric: '
                 'B03 lleva tres clases, la distribución con dos objetivos es dos más una, la rama '
                 'individual no construye selección, y una clase incompatible entra solo con '

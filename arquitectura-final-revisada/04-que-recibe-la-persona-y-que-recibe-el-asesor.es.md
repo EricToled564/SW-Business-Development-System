@@ -287,6 +287,7 @@ Cuando existe cita, la confirmación de club, dirección, fecha y hora es tambi�
 | **§5 · Propuesta recomendada** | La oferta principal y su complemento                                                                                                                           |
 | **§6 · Prioridades de cierre** | Tres puntos ordenados por relevancia                                                                                                                           |
 | **§7 · Notas y señales**       | Las señales levantadas a partir del cuestionario y del sistema                                                                                                 |
+| **§8 · El ajuste de tiempo**   | Cuando el plan pide más sesiones de las que caben en los días declarados: qué declaró la persona, qué pide el plan, y las dos salidas —explicarle por qué un compromiso mayor le sirve, o ajustar el plan con ella durante la visita |
 | **Guion de cierre**            | Una propuesta de conversación redactada en primera persona para el asesor                                                                                      |
 | **Registro del asesor**        | Cuatro cajas vacías que el asesor completa durante la interacción                                                                                              |
 | **Pie**                        | La leyenda de uso interno                                                                                                                                      |

@@ -486,3 +486,31 @@ Cuando cambia el club o una clase: **el sistema debe volver al cálculo, no edit
 La regla final es:
 
 **La persona declara lo que busca. El sistema lo convierte en tres bloques. El club determina qué puede entregarse realmente. Y si la persona acepta conscientemente una carencia de ese club, el plan se recalcula sin borrar lo que originalmente había pedido.**
+
+---
+
+## 11.16 Cuando el tiempo declarado no alcanza para el plan
+
+El plan se compone contra los objetivos de la persona, no contra su disponibilidad.
+
+Por eso puede ocurrir que **lo que el plan pide no quepa en los días que la persona declaró**.
+
+El caso típico: alguien declara dos días a la semana, elige aumentar masa muscular y prefiere entrenar en compañía. El plan le corresponde con sus tres bloques —pesas, aeróbico y tres clases en grupo—, y esos tres bloques piden más sesiones de las que caben en dos días.
+
+**El sistema debe entregar la experiencia completa de todas formas.** Recortar el plan a la disponibilidad declarada le entregaría a la persona menos de lo que su objetivo requiere, y sin decirle por qué.
+
+Lo que debe hacer es **levantar una señal de capacidad y llevarla al brief**, conforme al apartado 5.9.
+
+La comparación debe hacerse entre:
+
+* los días que la persona declaró en Q8;
+* y lo que el plan pide, con la frecuencia y la duración que la matriz entrega por programa, conforme al apartado 11.5.1, más las tres clases de B03.
+
+Cuando lo segundo excede a lo primero, la señal debe activarse.
+
+**La señal debe alcanzar al asesor con las dos salidas que existen**, conforme al apartado 4.4.2:
+
+* explicarle a la persona por qué un compromiso de tiempo mayor sirve mejor a lo que declaró;
+* o ajustar el plan con ella durante la visita, dentro de los días que sí tiene.
+
+La decisión pertenece a la conversación en el club. **El sistema la prepara; no la resuelve por su cuenta ni modifica el plan antes de que ocurra.**
