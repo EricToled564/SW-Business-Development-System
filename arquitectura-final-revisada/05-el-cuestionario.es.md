@@ -132,13 +132,13 @@ Aceptar una clase produce dos efectos distintos según exista o no un club fijad
 | Contexto            | Efecto de aceptar la clase                                                                                                                                                                                                                              |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Con club fijado** | La clase debe quedar asegurada en el tercer bloque. El club ya estaba fijado y la instantánea ya confirmó que la imparte                                                                                                                                |
-| **Sin club fijado** | **La clase debe convertirse en requisito del club.** El resolvedor debe considerar los clubes que la imparten, ofrecer como recomendado el más cercano que la cumple y mostrar como alternativas los clubes más cercanos con la leyenda correspondiente |
+| **Sin club fijado** | **La clase debe convertirse en requisito del club.** El resolvedor debe considerar los clubes que la imparten, ofrecer como recomendado el más cercano que la cumple y mostrar como alternativas los clubes más cercanos con el flag correspondiente |
 
 Ese segundo caso agrega **un quinto requisito** a los cuatro que fija el cuestionario.
 
 Es el único requisito del club que puede originarse en el contexto previo.
 
-El capítulo 10 especifica cómo debe entrar en la elección del club y qué leyenda debe llevar cada alternativa.
+El capítulo 10 especifica cómo debe entrar en la elección del club y qué flag debe llevar cada alternativa.
 
 **Rechazar un punto de P0 no debe dejar ese dato resuelto ni generar una respuesta implícita.**
 

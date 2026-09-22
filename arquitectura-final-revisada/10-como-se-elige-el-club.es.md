@@ -483,7 +483,7 @@ La nueva experiencia:
 
 ---
 
-## 10.13 La respuesta original del cuestionario no cambia
+## 10.13 La respuesta original del cuestionario se conserva
 
 La aceptación de una carencia durante la selección de club no debe modificar retroactivamente CEI-01.
 

@@ -1049,6 +1049,32 @@ Lo que ese cierre sí hace, porque el apartado 8.5.2 ya lo fijaba y esto no lo c
 
 ---
 
+### D-108 · «Flag» es el término oficial
+
+Eric, el 22 de septiembre de 2026, ante la pregunta de si «flag» se volvía el término del documento o si se conservaban «bandera» y «leyenda»: **«FLAG ES EL OFICIAL»**.
+
+Nombra **la marca que declara, para una persona concreta, qué requisito de su cuestionario no puede cumplir un club alternativo.** Es el objeto que sus capítulos 10 y 11 ya llamaban así y que los capítulos 4 y 5 llamaban «bandera» —y «leyenda» cuando se referían a su texto—.
+
+| Dónde decía otra cosa | Qué dice ahora |
+|---|---|
+| Capítulo 4, apartado 4.2.4, título y cuerpo | **Los flags existen para elegir y desaparecen al elegir**. «Bandera» pasa a «flag» en sus cinco menciones; «la leyenda concreta» pasa a «el texto concreto», y «una leyenda por requisito» a **un flag por requisito** |
+| Capítulo 4, apartados 4.2.5 y 4.4 | Las dos menciones restantes de «banderas» pasan a «flags» |
+| Capítulo 5, apartados 5.2.4 y 5.4 | «la leyenda correspondiente» y «qué leyenda debe llevar cada alternativa» pasan a **flag** |
+| Glosario | Entrada nueva: **Flag** |
+
+**Qué no cambia, y por qué:**
+
+| Pieza | Por qué conserva su nombre |
+|---|---|
+| **La leyenda de disponibilidad de D-72** —«Disponible en tu club» o «No disponible en tu club»— | Es otro objeto: marca si una clase se imparte en el club de la persona dentro de una lista de clases por objetivo, no si un club cumple un requisito del cuestionario. Vive en el apartado 3.6.6 y la nombran el capítulo 3, el capítulo 4 y la norma. **Queda abierto** si Eric quiere que también pase a «flag» |
+| **La señal de dato desactualizado del apartado 5.9** | El capítulo 5 la llama **señal** desde que se escribió. El capítulo 12 la llamaba «bandera», que no era ni el término del capítulo 5 ni el oficial: corregido a «señal» |
+| **D-42, y el resto del registro de decisiones** | El registro dice lo que se decidió el día que se decidió. Reescribirlo para que use el término nuevo falsificaría la fecha en que el término se fijó, que es hoy. D-42 sigue diciendo «banderas»; esta decisión es la que dice cómo se llaman desde ahora |
+
+**Aterriza en:** capítulos 4, 5, 10, 11 y 12, y el glosario.
+**Sustituye** el nombre que D-42 le daba al mismo objeto.
+
+---
+
 ## Puntos abiertos
 
 ### Decisiones de Sports World, para el arranque del proyecto

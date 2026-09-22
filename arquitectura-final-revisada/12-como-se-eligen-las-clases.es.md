@@ -23,7 +23,7 @@ Conforme a la regla de origen de datos del capítulo 14, **lo que sigue es el co
 
 **Es la misma tabla que el apartado 3.1.2 nombra** al describir el nombre único de cada objetivo en la página, el cuestionario, el menú, la matriz y la Experiencia Ideal.
 
-**La matriz la mantiene Sports World.** Se revisa cuando cambia el catálogo de clases y al menos una vez al año. Cuando no responde, la selección se compone con el último dato guardado y la bandera viaja al brief, conforme a la regla general del apartado 5.9.
+**La matriz la mantiene Sports World.** Se revisa cuando cambia el catálogo de clases y al menos una vez al año. Cuando no responde, la selección se compone con el último dato guardado y la señal viaja al brief, conforme a la regla general del apartado 5.9.
 
 ---
 

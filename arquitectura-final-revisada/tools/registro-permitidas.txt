@@ -78,3 +78,19 @@ El contexto puede cambiar lo que la persona quiere explorar; no cambia lo que ya
 sw_person_id no sustituye la llave de reconocimiento.
 Cuando una persona nueva entrega sus datos y no existe una coincidencia válida, el sistema debe crear el registro correspondiente y asignarle un nuevo sw_person_id.
 Si no existe una coincidencia válida, debe crearse un nuevo registro y asignarse un nuevo sw_person_id.
+
+# Autorizadas por Eric el 22 de septiembre de 2026, capítulo 10 (su texto,
+# instalado verbatim). Las dos nombran una condición externa —que el dato de
+# tráfico exista o no— de la que depende qué regla se aplica. Tercer renglón
+# de la prueba de D-101, incorporado por D-103: el sujeto es un estado
+# declarado, no el sistema descrito por lo que le falta. Son del mismo tipo
+# que las tres de «cuando no existe cita» ya autorizadas en el capítulo 4.
+#
+# La tercera frase que marcó el verificador ese día —el título de 10.13,
+# reproducido por tools/indice.py dentro de la tabla del índice 0.3— Eric
+# resolvió eliminarla, no autorizarla: el apartado pasa a llamarse «La
+# respuesta original del cuestionario se conserva», con el verbo que el
+# propio apartado ya usaba, y el índice lo recoge al regenerarse.
+
+Contingencia cuando no existe tráfico disponible
+si no existe información válida de tráfico, utilizar la menor distancia por ruta.

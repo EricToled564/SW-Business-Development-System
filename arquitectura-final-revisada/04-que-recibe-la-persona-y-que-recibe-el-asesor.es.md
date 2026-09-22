@@ -159,20 +159,20 @@ Si la persona ya tiene una visita agendada y cambia de club, **el sistema debe r
 
 ---
 
-### 4.2.4 Las banderas existen para elegir y desaparecen al elegir
+### 4.2.4 Los flags existen para elegir y desaparecen al elegir
 
-Mientras la persona compara clubes, cada alternativa debe mostrar **las banderas correspondientes y la leyenda concreta de aquello que entrega menos respecto de sus requisitos**.
+Mientras la persona compara clubes, cada alternativa debe mostrar **los flags correspondientes y el texto concreto de aquello que entrega menos respecto de sus requisitos**.
 
-Existe una leyenda por requisito y deben mostrarse todas las que apliquen:
+Existe un flag por requisito y deben mostrarse todos los que apliquen:
 
 * **No tiene alberca**;
 * **No tiene actividades para menores de 13 años**;
 * **No tiene clases adecuadas para periodos prenatal o posparto**;
 * **No tiene clases de bajo impacto**.
 
-Cuando la persona aceptó una clase mediante la precarga del cuestionario y un club alternativo no la ofrece, debe aparecer además una bandera que nombre esa clase.
+Cuando la persona aceptó una clase mediante la precarga del cuestionario y un club alternativo no la ofrece, debe aparecer además un flag que nombre esa clase.
 
-Las banderas existen para que la persona pueda comparar con información suficiente.
+Los flags existen para que la persona pueda comparar con información suficiente.
 
 **En cuanto elige un club, deben desaparecer de su Experiencia Ideal.**
 
@@ -186,7 +186,7 @@ La Experiencia Ideal no debe presentar al prospecto una lista de ausencias.
 
 Debe presentar **el plan que sí puede realizar**.
 
-Si la persona vuelve a abrir el panel de otros clubes, las banderas deben aparecer nuevamente ahí, porque esa superficie conserva su función de comparación.
+Si la persona vuelve a abrir el panel de otros clubes, los flags deben aparecer nuevamente ahí, porque esa superficie conserva su función de comparación.
 
 ---
 
@@ -201,7 +201,7 @@ Dos reglas gobiernan sus dos páginas:
 
 Estas reglas aplican a **la experiencia entregada**, no a las superficies cuya función es ayudar a elegir.
 
-El panel de otros clubes debe mostrar sus banderas mientras la persona compara alternativas, conforme al apartado 4.2.4.
+El panel de otros clubes debe mostrar sus flags mientras la persona compara alternativas, conforme al apartado 4.2.4.
 
 Las listas de clases por objetivo del sitio deben mostrar las leyendas **Disponible en tu club** o **No disponible en tu club**, conforme al apartado 3.6.6.
 
@@ -341,7 +341,7 @@ La diferencia entre las superficies es deliberada:
 
 | Superficie                                                       | Quién decide qué se comunica | Qué regla aplica                                                                                                       |
 | ---------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **Sitio y WhatsApp**, donde la persona avanza de manera autónoma | El sistema                   | Las banderas deben aparecer mientras la persona elige y desaparecer después de la elección, conforme al apartado 4.2.4 |
+| **Sitio y WhatsApp**, donde la persona avanza de manera autónoma | El sistema                   | Los flags deben aparecer mientras la persona elige y desaparecer después de la elección, conforme al apartado 4.2.4 |
 | **Consola**, durante la interacción entre la persona y el asesor | El asesor                    | La señal debe aparecer en el brief para que el asesor decida cómo utilizarla                                           |
 
 La libertad del asesor aplica a **cómo conduce la conversación**.

@@ -137,6 +137,7 @@ Cualquier otra forma verbal describe, y describir también obliga: un enunciado 
 | **Consola** | La pantalla interna desde la que el personal autorizado levanta el mismo cuestionario con el prospecto presente |
 | **Corte de las 06:00** | La sincronización diaria con el sistema de clientes. Lo registrado hasta las 05:59 se publica ese día |
 | **Experiencia Ideal** | El plan de entrenamiento conectado con los objetivos de la persona, con su club, sus bloques y sus clases |
+| **Flag** | La marca que declara, para esa persona, qué requisito de su cuestionario no puede cumplir un club alternativo. Se muestra mientras compara clubes y sale del plan una vez elegido el club |
 | **Hub** | Página que concentra un tema y enlaza a las que lo desarrollan |
 | **Leyenda de disponibilidad** | La marca «Disponible en tu club» o «No disponible en tu club» en las listas de clases por objetivo |
 | **Llave de reconocimiento** | Lo que identifica a una persona que vuelve, entre sistemas: teléfono en E.164 como elemento principal; nombre, apellido y club resuelven homonimia |

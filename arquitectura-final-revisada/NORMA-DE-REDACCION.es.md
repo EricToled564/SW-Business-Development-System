@@ -103,8 +103,8 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 | **8.6** El paso a BES, en cualquier momento | Qué recibe BES, con qué sigue y qué ocurre si falla | Regla + tabla de casos |
 | **8.7** La fase de error | Qué ve la persona y cómo sale de ahí | Tabla de casos |
 | **9** Datos de contacto y consentimiento | Cuándo se piden · Envío por correo · Una sola escritura al CRM · La conciliación y el reencuentro · Aviso simplificado e integral | Regla, salvo el aviso: tabla de datos |
-| **10** Cómo se elige el club | El principio · Los cuatro requisitos · El radio de 10 km · Minutos con tráfico · Los cuatro modos · Alternativas y leyendas · Elección propia | Regla, los cuatro modos en tabla de casos |
-| **11** Cómo se compone el plan | B01 · B02 · B03 · Seco, agua y mixto · Los seis programas de cada modalidad · Entrenamiento personal | Regla, los programas en tabla de datos |
+| **10** Cómo se elige el club | El principio · Los cuatro requisitos y el quinto condicional · El radio de 10 km · Cómo se mide la cercanía · Los cuatro modos · Los flags de cada alternativa · El pop-up de confirmación · Las excepciones aceptadas · La ruta reducida | Regla, los cuatro modos y los flags en tabla de casos |
+| **11** Cómo se compone el plan | Los tres bloques · B01 y B02 · Q6 y la estructura de B02 · La modalidad original y las excepciones aceptadas · Los seis programas de cada modalidad · El entrenamiento acuático · B03 · Cambiar de club y cambiar de clases · Relación con el brief | Regla, los programas en tabla de datos |
 | **12** Cómo se eligen las clases | La matriz · Los pasos del seleccionador · Filtro de intensidad · Contraindicaciones · Sustitución | Tabla de casos, la matriz en tabla de datos |
 | **13** El texto que redacta el modelo de lenguaje | Una sola llamada · Qué puede y qué queda fijo · Respaldo ante falla | Regla |
 | **14** Las fuentes de datos y su contrato | El corte de las 06:00 · Categorías · Matrices propias · Alta de club y de clase · El contrato de cada fuente | Tabla de datos, el corte y las altas en regla |
