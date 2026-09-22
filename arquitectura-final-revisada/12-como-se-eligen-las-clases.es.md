@@ -12,16 +12,16 @@ Las clases idóneas alimentan B03, conforme al apartado 11.7, y son el término 
 
 Conforme a la regla de origen de datos del capítulo 14, **lo que sigue es el contrato que la matriz debe cumplir.**
 
-| La matriz debe entregar, por clase | |
-|---|---|
-| A qué objetivo u objetivos sirve | |
-| En qué grado de intensidad la califica | |
-| Si es apta para programas de bajo impacto | |
-| Si es apta para periodos prenatal o posparto | |
-| Su clase equivalente, cuando resulta contraindicada | |
-| La fuerza de la cadena que la califica para ese objetivo: directa, de un paso o por ausencia, conforme al apartado 12.1.1 |
+**La matriz debe entregar, por clase:**
 
-**Es la misma tabla que el apartado 3.1.2 nombra** al describir el nombre único de cada objetivo en la página, el cuestionario, el menú, la matriz y la Experiencia Ideal.
+* a qué objetivo u objetivos sirve;
+* en qué grado de intensidad la califica;
+* si es apta para programas de bajo impacto;
+* si es apta para periodos prenatal o posparto;
+* su clase equivalente, cuando resulta contraindicada;
+* la fuerza de la cadena que la califica para ese objetivo: directa, de un paso o por ausencia, conforme al apartado 12.1.1.
+
+**Es la misma tabla que el apartado 3.1 nombra** al fijar que cada objetivo lleva el mismo nombre en la página, el cuestionario, el menú, la matriz y la Experiencia Ideal.
 
 **La matriz la mantiene Sports World.** Se revisa cuando cambia el catálogo de clases y al menos una vez al año. Cuando no responde, la selección se compone con el último dato guardado y la señal viaja al brief, conforme a la regla general del apartado 5.9.
 
@@ -93,6 +93,21 @@ La matriz de contraindicaciones es la misma matriz de clases del apartado 12.1: 
 
 Cuando la matriz de clases marca una clase como equivalente de otra para el mismo objetivo, esa equivalente ocupa su lugar en las clases idóneas.
 
-**El requisito REQ-2 y REQ-3 del capítulo 10 dependen de esta regla.** Un club cumple «programas de bajo impacto» o «programas prenatales o de posparto» cuando, después de aplicar esta sustitución, todavía tiene al menos una clase idónea para cada objetivo de la persona. Un club sin ninguna clase equivalente para un objetivo declarado no cumple el requisito, y queda fuera conforme al apartado 10.2.
+**Los requisitos REQ-2 y REQ-3 del capítulo 10 dependen de esta regla.** Un club cumple «programas de bajo impacto» o «programas prenatales o de posparto» cuando, después de aplicar esta sustitución, todavía tiene al menos una clase idónea para cada objetivo de la persona. Un club sin ninguna clase equivalente para un objetivo declarado no cumple el requisito, y queda fuera conforme al apartado 10.2.
 
 La persona nunca ve una clase marcada como retirada. **Ve la selección ya resuelta, con su equivalente en el lugar que corresponde.**
+
+---
+
+## 12.6 La clase que la persona aceptó en la precarga
+
+Cuando la persona acepta una clase en P0, esa clase **debe quedar en la selección**, sin depender de que el seleccionador la habría elegido.
+
+| De dónde viene | Qué ocurre |
+|---|---|
+| **Aceptó la clase con un club ya fijado** | El club imparte esa clase, y queda asegurada en B03 conforme al apartado 5.2.4 |
+| **Aceptó la clase sin club fijado** | La clase se convirtió en requisito del club —el quinto, condicional, del apartado 10.3—, así que el club resuelto la imparte y entra en B03 igual |
+
+**La clase asegurada ocupa lugar dentro de las clases idóneas, no se suma aparte.** El seleccionador compone el resto de B03 alrededor de ella, con los mismos seis pasos.
+
+**Sale de la selección en un solo caso:** que la persona elija un club que no la imparte y acepte expresamente esa consecuencia, conforme al apartado 10.10.5. Entonces el seleccionador recompone B03 sin ella, y el capítulo 11 fija que el plan se recalcula completo.
