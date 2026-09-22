@@ -16,8 +16,8 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
-| `00-estructura.es.md` | 1,766 | `d288e6a226dc0fb1da7773c642dc567176ff8a2d0c64cd03dd29de69c1cfe17f` |
-| `00-paginas-iniciales.es.md` | 2,610 | `7b6dd55821a14e93abd06935fe5b5ea6db870aca8b85e9209a8ead3d7376468a` |
+| `00-estructura.es.md` | 1,769 | `4514b5efaefdd0f6f2a49d3aedcf6116fe199917833447c2e14445aaa18320e1` |
+| `00-paginas-iniciales.es.md` | 2,617 | `0a6269f190316895428b2903659f14cf2afc12d87dac8a09064ccfe1b0b16d77` |
 | `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
 | `02-como-se-pierde-hoy.es.md` | 1,215 | `d9177642aeee7951f5742ce69f3cf7f52d848e910cd7444862dd87a206ec333b` |
 | `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,919 | `a2aa840d5750739648444ee4661c38b3d6618c200fc013478399b26715f1c6ff` |
@@ -29,6 +29,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `09-datos-de-contacto-y-consentimiento.es.md` | 1,571 | `ff166b32b38e35bfa0cbeefcaa414fcf60bb024855bf289222747751056788c8` |
 | `10-como-se-elige-el-club.es.md` | 1,317 | `de19f325ffd6f2da6fd94b930658e9eba1b21bd3b2fe25f771bba18cc2b9a0ab` |
 | `11-como-se-compone-el-plan.es.md` | 1,049 | `60e8c9e0b6f5f3d49152614173a65da5fe39c7a740ea6d3a2353425c29d6cd09` |
+| `12-como-se-eligen-las-clases.es.md` | 995 | `de2d5050606dcc97c844bedf997c92f4162a92bbd5c3975d4567b5d11ced6bc4` |
 | `CEI-01-v1.5.es.html` | — | `6db79d5c9a2792ca943c6e59ea5f8cc4d027a701aea24658cea8919a68fd96a3` |
 | `CEI-01-v1.5.pdf` | — | `9054de96d4def00686e3dbd38a62077628d3568c5e17174fc2a1316b842c7af9` |
 | `NORMA-DE-REDACCION.es.md` | 3,542 | `bec25e8f9aaab7d9ce9f874e6b392a3eefce21eb4cf675f52139da25fcde1a60` |
@@ -53,6 +54,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **9** | **No** | Versión anterior | La conciliación con la llave canónica y el reencuentro (D-56). El 21 de septiembre: el nombre viene de **Q1** |
 | **10** | **No** | Escrito el 22 de septiembre | Primer capítulo nuevo desde D-98. Fija REQ-1 a REQ-4 (alberca, bajo impacto, prenatal/posparto, menores), el radio de 10 km, los minutos con tráfico y los cuatro modos —varios cumplen, uno cumple, cumple más lejos, lo más cercano a tu objetivo—, derivados de D-82 y D-43. **Deja abierto** de dónde sale el conjunto de clubes alternativos (D-43) |
 | **11** | **No** | Escrito el 22 de septiembre | Define B01 (pesas, fijo) y B02 (aeróbico, según Q6; con Ambas lleva los dos catálogos, D-105) como la parte individual del plan, y B03 (Q12) como la social. Declara el contrato de la matriz de entrenamiento individual sin congelar sus datos (D-83), y lleva las reglas de D-45, D-77, D-78 y D-79 |
+| **12** | **No** | Escrito el 22 de septiembre | Define **clases idóneas**, término que usan sin definir los capítulos 4, 5 y 8. Fija el contrato de la matriz de clases —incluida la fuerza de la cadena de D-84—, los seis pasos del seleccionador, el filtro de intensidad (Q5 filtra, Q9 ordena) y la sustitución nunca exclusión de D-71, de la que dependen REQ-2 y REQ-3 del capítulo 10 |
 
 **Los capítulos 10 a 20 están pendientes de escritura.** `00-estructura.es.md` fija sus subcapítulos previstos.
 
@@ -85,6 +87,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **El índice deja de citar la bitácora** | `tools/indice.py` retira las claves **D-##** al generar el apartado 0.3. La trazabilidad de cada decisión sigue en `00-estructura.es.md` y en la bitácora; el índice nombra subcapítulos |
 | **El capítulo 4, en la versión de Eric** | Sustituye la reescritura del mismo día. Corrige dos hechos: la primera Experiencia Ideal existe **antes de que haya cita** —lo que sostiene la llamada directa del asesor a quien contesta y no agenda—, y las dos entregas llevan **dos páginas cada una**, cuatro en total, donde la versión anterior se leía como dos en total. Suma el caso de cambiar una clase dentro del mismo club y acota la señal de 4.4.4 a cuando existe otro club que sí cumple |
 | **El capítulo 4, tercera versión** | El brief deja de depender de la cita: se genera al terminar el cuestionario, con cita uno por cita y sin cita uno al club resuelto, marcado como **llamada directa**. Cierra el choque con D-100 que dejaba la segunda versión |
+| **El capítulo 12, primero escrito sobre texto de Eric** | Cómo se eligen las clases (995 palabras). Define «clases idóneas», que los capítulos 4, 5 y 8 ya usaban sin definir |
 | **El capítulo 8, en la versión de Eric** | Sustituye por completo mi corrección del 21 de septiembre. Entra la ventana de contexto: el mecanismo que cierra la navegación acumulada al agendar una cita y abre una nueva para la siguiente intención de agenda, con tres apartados nuevos (8.3.5, 8.3.5.1, 8.3.5.2). El brief se generaliza a los dos casos, con cita y sin ella, en la misma dirección que la tercera versión del capítulo 4 |
 | **Capítulos 10 y 11, primeros de los que faltaban** | Cómo se elige el club (1,317 palabras) y cómo se compone el plan (1,049 palabras). El verificador de remisiones y el de índice solo veían archivos `0[1-9]-*`, así que el capítulo 10 era invisible para los dos: corregido a `[0-2][0-9]-*` en `tools/remisiones.py` y `tools/indice.py` |
 | **CEI-01 versión 1.3** | El instrumento se actualiza con los **tres ajustes** que arrastraba, en una sola versión, HTML y PDF. **Entra P0**, el bloque de precarga, entre la compuerta y Q1 y en los identificadores vigentes, con sus cuatro categorías, su composición contra la instantánea del día y el efecto de aceptar y de rechazar; venía pendiente desde D-56. **Q6 exige la alberca también con «Ambas»** y cuando el sistema resuelve en agua (D-104), y el renglón Clubes del control de lógica lo recoge. Se corrige además el pie, que declaraba «versión 1.1» en un documento 1.2. El PDF se produce con el mismo pipeline del anterior: Chromium imprimiendo el HTML, `Skia/PDF m141`. Trece páginas. **La versión 1.2 sale de la carpeta y permanece en el historial del repositorio**, porque el instrumento que rige es uno solo y `tools/instrumento.py` falla si hay dos |

@@ -64,7 +64,7 @@ La frontera queda declarada en el texto, para que el lector sepa en qué modo es
 | **9** | Datos de contacto y consentimiento | `09-datos-de-contacto-y-consentimiento.es.md` | Escrito, pendiente de aprobación |
 | **10** | Cómo se elige el club | `10-como-se-elige-el-club.es.md` | Escrito, pendiente de aprobación |
 | **11** | Cómo se compone el plan | `11-como-se-compone-el-plan.es.md` | Escrito, pendiente de aprobación |
-| **12** | Cómo se eligen las clases | — | Pendiente |
+| **12** | Cómo se eligen las clases | `12-como-se-eligen-las-clases.es.md` | Escrito, pendiente de aprobación |
 | **13** | El texto que redacta el modelo de lenguaje | — | Pendiente |
 | **14** | Las fuentes de datos y su contrato | — | Pendiente |
 | **15** | La operación diaria | — | Pendiente |
