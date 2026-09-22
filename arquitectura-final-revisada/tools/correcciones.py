@@ -127,6 +127,21 @@ CORRECCIONES = [
         'contiene': ['## 12.6 La clase que la persona aceptó en la precarga'],
     },
     {
+        'dice': 'Los cuatro puntos que el capítulo 12 dejaba abiertos quedaron resueltos por Eric: '
+                'B03 lleva tres clases, la distribución con dos objetivos es dos más una, la rama '
+                'individual no construye selección, y una clase incompatible entra solo con '
+                'confirmación expresa.',
+        'archivo': CAP12,
+        'contiene': ['## 12.7 Cuántas clases componen B03',
+                     'B03 debe contener **tres clases idóneas**',
+                     '## 12.8 Cómo diversifica el objetivo secundario',
+                     '* dos posiciones deben estar guiadas por el objetivo principal;',
+                     '## 12.9 Cuando Q12 indica entrenamiento individual',
+                     'el sistema no debe construir ni mostrar una selección de clases idóneas para B03',
+                     '## 12.10 Elección manual de una clase que no cumple un requisito',
+                     '**Las reglas fijas de seguridad del sistema no deben poder sobreescribirse mediante esta confirmación.**'],
+    },
+    {
         'dice': 'El capítulo 12 remite a B03 en el apartado 11.7, que es donde quedó con la '
                 'estructura nueva del capítulo 11.',
         'archivo': CAP12,

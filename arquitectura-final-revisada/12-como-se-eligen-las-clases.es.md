@@ -113,3 +113,98 @@ Cuando la persona acepta una clase en P0, esa clase **debe quedar en la selecci�
 **La clase asegurada ocupa lugar dentro de las clases idóneas, no se suma aparte.** El seleccionador compone el resto de B03 alrededor de ella, con los mismos seis pasos.
 
 **Sale de la selección en un solo caso:** que la persona elija un club que no la imparte y acepte expresamente esa consecuencia, conforme al apartado 10.10.5. Entonces el seleccionador recompone B03 sin ella, y el capítulo 11 fija que el plan se recalcula completo.
+
+---
+
+## 12.7 Cuántas clases componen B03
+
+Cuando Q12 resuelve **Clases grupales**, B03 debe contener **tres clases idóneas**.
+
+El seleccionador debe entregar exactamente tres clases siempre que el catálogo válido del club permita construirlas.
+
+Cuando existe un solo objetivo, las tres deben seleccionarse contra ese objetivo.
+
+Cuando existen dos objetivos, debe aplicarse la distribución: **dos posiciones guiadas por el objetivo principal y una por el objetivo secundario.**
+
+Las tres clases constituyen la selección base de B03.
+
+El panel **Cambiar clases** puede mostrar otras alternativas válidas, pero la Experiencia Ideal debe conservar una selección final de tres.
+
+---
+
+## 12.8 Cómo diversifica el objetivo secundario
+
+Cuando Q4 contiene dos objetivos, el segundo debe diversificar la selección sin quitarle al primero la dirección del plan.
+
+Cuando B03 contiene clases grupales, las tres posiciones deben resolverse así:
+
+* dos posiciones deben estar guiadas por el objetivo principal;
+* una posición debe estar guiada por el objetivo secundario.
+
+El seleccionador debe preferir primero las clases que aporten valor a ambos objetivos cuando existan.
+
+Una clase que sirve a los dos objetivos puede ocupar cualquiera de las tres posiciones, pero no debe duplicarse dentro de la selección.
+
+La clase incorporada por el objetivo secundario debe cumplir exactamente los mismos filtros que las demás:
+
+* Q5;
+* Q14;
+* disponibilidad en el club;
+* y cualquier excepción vigente.
+
+El objetivo secundario diversifica; no sustituye la dirección establecida por el principal.
+
+---
+
+## 12.9 Cuando Q12 indica entrenamiento individual
+
+Cuando Q12 indica que la persona prefiere entrenar sin compañía, el sistema no debe construir ni mostrar una selección de clases idóneas para B03.
+
+B03 debe resolverse como entrenamiento personal conforme al capítulo 11.
+
+La matriz de clases puede seguir consultándose únicamente cuando sea necesario para validar requisitos del club, como REQ-2 o REQ-3.
+
+Esa validación no debe convertirse en una selección de clases visible para la persona.
+
+Por tanto: **validar que el club puede satisfacer un requisito no significa recomendar clases grupales a alguien que eligió entrenamiento individual.**
+
+En esta rama:
+
+* no debe mostrarse una selección de tres clases;
+* no debe generarse una alerta Q7/Q8 basada en horarios de clases idóneas;
+* y Q9 debe seguir viajando al brief como nivel declarado.
+
+---
+
+## 12.10 Elección manual de una clase que no cumple un requisito
+
+El panel **Cambiar clases** debe priorizar alternativas que cumplan todos los requisitos activos.
+
+Si, mediante cualquier superficie permitida del sistema, la persona intenta seleccionar una clase que no cumple una preferencia activa de Q14, el sistema no debe incorporarla inmediatamente.
+
+Debe explicar la incompatibilidad y pedir confirmación expresa.
+
+Por ejemplo, cuando está activo **Programas de bajo impacto**:
+
+> Esta clase no está calificada como de bajo impacto.
+>
+> Nos habías indicado que querías incluir opciones de bajo impacto en tu Experiencia Ideal.
+>
+> Podemos incluir esta clase, pero dejaría de cumplir ese requisito.
+>
+> ¿Quieres incluirla de todos modos?
+
+Si la persona confirma:
+
+1. debe conservarse intacta la respuesta original de Q14;
+2. debe registrarse la excepción aceptada;
+3. debe volver a ejecutarse el seleccionador;
+4. debe comprobarse la coherencia de las otras dos clases;
+5. debe generarse una nueva versión de la Experiencia Ideal;
+6. y la excepción debe aparecer en el brief.
+
+Si la persona no confirma, la clase no debe incorporarse.
+
+Una excepción aceptada no debe convertirse en una modificación permanente de Q14 ni trasladarse automáticamente a otro club o a una experiencia posterior.
+
+**Las reglas fijas de seguridad del sistema no deben poder sobreescribirse mediante esta confirmación.**
