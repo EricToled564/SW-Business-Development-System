@@ -1016,20 +1016,17 @@ Hasta aquí existía una tabla de asignación fija: dos objetivos resolvían en 
 
 **Aterriza en:** apartados 5.6.2, 7.5 y 7.5.1, `CEI-01-v1.5.es.html` y su PDF, y `tools/instrumento.py`.
 
-### D-106 · Generar no es lo mismo que escribir y enviar
+### D-106 · El cierre de sesión no genera; solo escribe lo ya calculado
 
-**Cierra el punto abierto «cuándo se entrega el brief al club».**
+**Avanza el punto abierto «cuándo se entrega el brief al club», sin cerrarlo del todo.**
 
-El apartado 4.1 dice que el brief se produce «al terminar el cuestionario». El apartado 8.5.2 dice que nada se escribe ni se envía hasta que la sesión cierra. Eric resuelve que **ninguno de los dos —la Experiencia Ideal ni el brief— se genera en el momento del cierre de la sesión**, ni por el aviso del navegador ni por los diez minutos de inactividad.
+**Lo único que Eric afirma, literal:** «Ninguno de los dos [la Experiencia Ideal ni el brief] se genera al cerrar la sesión, si el navegador avisa o si pasan 10 minutos de inactividad.» Es una negación, y alcanza exactamente a eso: **el cierre de sesión —los dos disparadores que ya fija el apartado 8.5.2— no es el momento en que el sistema calcula.**
 
-| Momento | Qué ocurre |
-|---|---|
-| **Al terminar el cuestionario** | El sistema **genera**: calcula la Experiencia Ideal completa y, con ella, el brief. Es el momento que fija el apartado 4.1 |
-| **Al cerrar la sesión** —por aviso del navegador o por diez minutos de inactividad | El sistema **escribe y envía**: persiste el estado final y distribuye la Experiencia Ideal y el brief. Es el momento que fija el apartado 8.5.2 |
+Lo que ese cierre sí hace, porque el apartado 8.5.2 ya lo fijaba y esto no lo cambia, es **escribir y enviar** lo que estaba calculado, con los cambios que la persona haya hecho hasta ese momento —cambiar de club, cambiar de clases— aplicados sobre el resultado.
 
-**El cierre de sesión nunca dispara el cálculo.** Dispara únicamente la escritura de lo que ya estaba calculado, con los cambios que la persona haya hecho hasta ese momento —cambiar de club, cambiar de clases— aplicados sobre el resultado ya generado.
+**Lo que D-106 no fija, y queda abierto:** en qué momento exacto ocurre el cálculo, si no es al cerrar la sesión. El apartado 4.1 dice «al terminar el cuestionario», pero esa es su redacción de antes de esta decisión, no algo que Eric haya vuelto a confirmar aquí. Mientras no lo confirme expresamente, **4.1 sigue siendo la única referencia escrita para ese momento**, y D-106 solo establece que el cierre de sesión no puede serlo.
 
-**Aterriza en:** apartados 4.1, 8.3, 8.5.2 y 9.2, que quedan leídos bajo esta distinción sin que su texto cambie.
+**Aterriza en:** apartado 8.5.2, que queda confirmado sin cambiar su texto. **Deja pendiente:** que Eric confirme si «al terminar el cuestionario» (4.1) es en efecto cuándo se calcula, o si el momento es otro.
 
 
 
@@ -1055,3 +1052,4 @@ El apartado 4.1 dice que el brief se produce «al terminar el cuestionario». El
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
 | **Cuáles son las siete clases premium, y cuánto texto e imágenes llevan** | Insumos para escribir esas siete páginas y para el inventario del anexo F. **No condicionan la especificación**: el sistema se comporta igual con cualquiera de las 47 clases (D-93) |
 | **La base de Experiencias Ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 14 |
+| **En qué momento exacto se genera la Experiencia Ideal y el brief** | D-106 descarta que sea al cerrar la sesión. El apartado 4.1 dice «al terminar el cuestionario», redacción anterior a D-106 y no reconfirmada por Eric en esa decisión. Ver D-106 |
