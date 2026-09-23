@@ -1,6 +1,6 @@
 # Verificación de integridad
 
-Hash SHA-256 de cada archivo de esta carpeta, al 18 de septiembre de 2026.
+Hash SHA-256 de cada archivo de esta carpeta, al 23 de septiembre de 2026.
 
 Para comprobar que un archivo no cambió: `sha256sum <archivo>` y comparar contra esta tabla. Si no coincide, el archivo se modificó después de esta fecha, y el commit correspondiente dice por qué.
 
@@ -19,7 +19,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `CEI-01-v1.2.es.html` | — | `5b94abaf1b6c1183f859abf7cefe4e9490bd60764b13fd0f7b424d856942757f` |
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `README.es.md` | 333 | `bc7c852d59aaf2ba00e8f01db436bfe68cb4e521815693864cb0bcef81e6fa70` |
-| `decisiones.es.md` | 4,397 | `36fd2e704853a89029aa890db38b73afd0d2d622ba7fe7931acbb02bfb62c93c` |
+| `decisiones.es.md` | 6,175 | `66337ce2f3e024f57fea3766d4e42e452d6a9281a74ee30acc15e9e8ba7bfb61` |
 
 ## Estado de aprobación
 

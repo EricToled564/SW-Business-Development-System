@@ -1,6 +1,6 @@
 # Bitácora de decisiones · Adenda de la revisión de la Arquitectura
 
-**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-64. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
+**Continúa la numeración de DEC/SW/01, que llega hasta D-32.** Registra de D-33 a D-74. Esta adenda registra las decisiones tomadas durante la reescritura de la Arquitectura de la Experiencia, el 18 de septiembre de 2026.
 
 Cada entrada dice qué se decidió y en qué capítulo del documento aterriza. **Todas las remisiones de esta bitácora usan la numeración vigente**, la que fija D-51. Las que obligan a corregir algo fuera de la Arquitectura lo señalan de forma expresa.
 
@@ -356,6 +356,104 @@ Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite
 
 ---
 
+## 8 · El paso entre canales y la seguridad de los datos
+
+### D-65 · El cuestionario sale de WhatsApp. BES atiende, convence y remite al sitio
+
+BES en WhatsApp es la **atención inicial**: campaña, promociones, precios, dudas previas. No aplica el cuestionario. Cuando la persona acepta diseñar su Experiencia Ideal, BES le envía un botón que la lleva al sitio, y ahí el cuestionario corre completo, con la misma semántica que para quien entró por la web, hasta agendar la visita.
+
+Lo que BES recabó en la conversación viaja con ella como **precarga** —el mismo bloque P0 de D-35, ahora alimentado por una conversación y no solo por la campaña de D-36—: el club que mencionó, el objetivo que nombró, la promoción que le interesó y el teléfono, que en WhatsApp viene del canal.
+
+**La precarga propone, nunca decide.** Todo reactivo precargado se muestra contestado y se puede cambiar. Lo que no es reactivo —campaña, promoción, teléfono— va al registro y al brief, nunca al cuestionario. Sin esta regla la semántica del instrumento cambiaría según el canal, y CEI-01 apartado 2 lo prohíbe.
+
+**Aterriza en:** capítulos 2.4, 5.2 y 5.2.1.
+
+### D-66 · La precarga viaja como token, no como parámetros en la dirección
+
+BES deposita la precarga en el servidor de Sports World y recibe a cambio un **código opaco de un solo uso**. El botón de WhatsApp lleva ese código, no los datos. Al tocarlo, el sitio canjea el código del lado del servidor y quema el token.
+
+Si los datos viajaran en la dirección quedarían copiados en cuatro lugares que nada tienen que ver con la conversación: el hilo de WhatsApp, el historial del navegador, las bitácoras de acceso del servidor web y **GA4, que registra la dirección completa**. Esta última es la que decide: la política de Google prohíbe recibir teléfonos o correos, incluidas las direcciones de página, y la sanción documentada es el borrado de los datos del periodo afectado y la suspensión de la propiedad. Sería perder la medición del funnel, que es la prueba del proyecto.
+
+**Lo que esta decisión no hace:** no oculta nada a Meta. Si la conversación entró por un anuncio, Meta ya tiene el teléfono. El token evita las copias posteriores, no el conocimiento previo de la plataforma.
+
+**Vida útil:** treinta minutos, reutilizable dentro de la misma sesión —en WhatsApp la gente toca el botón dos veces— y quemado al completar el cuestionario. Un token de un solo uso estricto le daría un error a quien no hizo nada mal, contra D-59.
+
+**Aterriza en:** capítulos 2.4 y 5.2.1.
+
+### D-67 · El traspaso no cambia el canal de origen
+
+Quien llegó por WhatsApp sigue siendo un lead de WhatsApp aunque el cuestionario corra en el sitio. El token lleva el origen consigo. Sin esta regla la campaña pierde su atribución y el mismo prospecto se cuenta dos veces en el funnel.
+
+**Aterriza en:** capítulo 5.2.1. **Fuera de la Arquitectura:** el mapa del funnel.
+
+### D-68 · La captura de contacto depende del origen, no del canal donde corre el cuestionario
+
+CEI-01 apartado 4 pide apellido, teléfono y correo, y en WhatsApp solo apellido y correo porque el número viene del canal. Con D-65 el cuestionario corre en el sitio aunque el origen sea WhatsApp, así que la regla pasa a depender del **origen**: si es WhatsApp, la pantalla pide apellido y correo.
+
+**Aterriza en:** capítulo 5. **Fuera de la Arquitectura:** CEI-01, apartados 2 y 4.
+
+### D-69 · El nombre no entra al modelo de lenguaje: se inyecta al presentar
+
+El reactivo 1 sirve para el trato en primera persona y nada aguas abajo depende de él. La concordancia sale del reactivo 2, que es una bandera de tres valores. **El modelo recibe el reactivo 2 y nunca el 1.** El sistema antepone el nombre de pila al mostrar el texto en pantalla.
+
+Lo mismo con el brief: el modelo redacta sus secciones sin nombre, y el sistema compone el encabezado con nombre completo, teléfono y correo en el ensamblado final, antes de enviarlo al club. Apellido, teléfono y correo ya estaban fuera por la regla de única llamada, que se dispara antes de la captura de contacto.
+
+**Dos condiciones para que la medida no se filtre sola.** El prompt prohíbe todo vocativo y marcador de posición, y el saneador —que hoy solo elimina códigos de reactivo— elimina también cualquier vocativo residual al inicio del gancho y del guion de cierre. Sin eso el modelo escribe un nombre inventado y el sistema le antepone otro encima.
+
+**Aterriza en:** capítulos 5 y 7.
+
+### D-70 · BES por voz en el sitio: dos botones, micrófono cerrado y estado devuelto por el sitio
+
+BES no conduce el cuestionario hablando: lo despliega y queda en **stand-by con el micrófono cerrado**. Cerrar significa cortar la transmisión, no descartar el resultado: descartar ocurre después de transcribir.
+
+Dos botones, los dos activan a BES y los dos reciben contexto: **«Tengo una duda»**, presente en todo reactivo, tras el cual BES resuelve y vuelve a stand-by en el mismo punto; y **«Estoy listo»**, la señal de avanzar.
+
+**La memoria vive en el sitio, no en la plataforma.** BES no retiene nada entre activaciones: el sitio le devuelve el estado cada vez. Lo que BES recabó hablando se entrega al sitio, que lo conserva **en el estado de sesión** —el que muere cuando la persona sale, nunca más allá— para devolvérselo al reactivarse.
+
+**La carga útil se acota:** «Tengo una duda» manda el reactivo actual y sus opciones, no el acumulado, porque ahí se origina casi toda duda. Si la duda resulta ser sobre algo anterior, BES lo pide y el sitio se lo da.
+
+**Aterriza en:** capítulos 5.7 y 7.
+
+### D-71 · Un solo proveedor conversacional: ElevenLabs
+
+ElevenLabs Agents opera el agente, la orquestación y el canal de WhatsApp, que es canal nativo de su plataforma, y admite modo solo texto. **Salen Vapi y Retell:** eran la capa de orquestación, y ElevenLabs ya la hace. No se suma ningún proveedor que no estuviera ya contratado para el sitio.
+
+Queda descartada, por la misma razón, la transcripción en servidor propio con Whisper o Vosk: existía para no sumar un proveedor, y con ElevenLabs no hay uno que sumar.
+
+**Fuera de la Arquitectura:** la especificación técnica del sitio y la del Proyecto B nombran Vapi o Retell como ejemplo de orquestación.
+
+### D-72 · Retención cero donde se puede contratar; en Meta no se puede
+
+| Plataforma | Retención | Qué se hace |
+|---|---|---|
+| ElevenLabs | cero con **Zero Retention Mode** | Se activa por agente. Requiere plan Enterprise |
+| Modelo de razonamiento | según proveedor | Se contrata retención cero |
+| **Meta** | **30 días, fijo** | **Nada. No ofrece retención cero** |
+
+Meta es el único punto que no se arregla contratando, y no por descuido: con Cloud API, Meta administra las llaves de cifrado por cuenta del negocio y descifra el mensaje antes de reenviarlo. El cifrado punta a punta llega hasta Meta, porque Meta es el otro extremo. No se puede conservar lo que no se puede leer, y por eso los treinta días existen.
+
+**La consecuencia operativa:** como la retención de Meta no se toca, lo único que mueve la aguja es **qué pasa por el hilo**. Es la razón de D-65 y de D-66, no una precaución añadida.
+
+**Meta como encargado.** Las condiciones de WhatsApp Business hacen del negocio el responsable y de Meta el encargado, y Meta declara que Cloud API no usa los mensajes para la publicidad que ve la persona. La vía por la que los datos de prospectos sí llegarían a su segmentación no es el canal, sino subir la base del CRM a Custom Audiences o mandar eventos con datos de contacto por Conversions API. Son decisiones de marketing, no consecuencias del sistema.
+
+### D-73 · Las notas de voz se contestan con notas de voz
+
+ElevenLabs trae encendida la opción *audio message response*, que hace que el agente conteste las notas de voz con notas de voz. **Se deja encendida:** es como se usa WhatsApp en México y no se le complica la vida a nadie.
+
+El audio entrante pasa obligatoriamente por Meta —la persona lo sube a sus servidores y el agente lo descarga de ahí—, así que Meta lo conserva treinta días haga el sistema lo que haga. ElevenLabs lo transcribe y, con retención cero activa, no conserva nada.
+
+**Condición:** las Cláusulas Tercera y Cuarta del Contrato excluyen «la voz por WhatsApp». Con la opción encendida hay síntesis de voz en ese canal. Es una línea que hay que resolver antes de lanzar, y el Contrato está en revisión.
+
+### D-74 · Se elimina el reactivo de programas prenatales o de posparto
+
+Sale del cuestionario y del sistema, por completo. El instrumento ya declaraba que no recaba condiciones de salud; esta opción era la única que permitía inferir algo sobre la persona, y era además la única cuya presencia dependía de la forma de trato.
+
+**Dos efectos que conviene tener presentes.** El reactivo 2 pierde su única función más allá de la gramática —su uso autorizado decía «y condiciona la opción de programas prenatales o de posparto»—, de modo que queda como pura concordancia y deja de permitir cualquier inferencia. Y la matriz de contraindicaciones pasa a tener **un solo disparador**, bajo impacto, donde el texto decía «las dos preferencias de clases».
+
+**Aterriza en:** capítulos 3 y 5. **Fuera de la Arquitectura:** CEI-01 pasa a **versión 1.3**.
+
+---
+
 ## Puntos abiertos que esta revisión destapó
 
 | Punto | Qué falta |
@@ -367,3 +465,11 @@ Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite
 | **Texto del aviso sobre el identificador de sesión** | Ver D-48 |
 | **CEI-01 requiere dos ajustes** | El renglón de Clubes del control de lógica, y la declaración del bloque P0 |
 | **La base de experiencias ideales** | D-56 la nombra como base propia ligada al CRM por identificador. Su contrato —qué campos lleva, quién la mantiene, cuánto retiene— se especifica en el capítulo 13 |
+| **Si BES por voz recibe el nombre** | D-69 lo deja fuera del modelo. Para BES hablando no está resuelto: decirlo en voz alta lo entrega a la plataforma de síntesis. Decisión de Eric |
+| **Si el origen sustituye a la ubicación en el prompt** | El reactivo 16 es el último cuasi-identificador que llega al modelo. El resolver corre antes de la única llamada, así que podría mandarse el club resuelto en su lugar |
+| **La lectura de «voz por WhatsApp»** | Si la exclusión de las Cláusulas Tercera y Cuarta alcanza solo a que el agente hable, o también a procesar audio entrante. Ver D-73 |
+| **El plan de ElevenLabs** | Zero Retention Mode requiere Enterprise. No está verificado cuál tiene contratado Sports World. Ver D-72 |
+| **El CRM y el lead en dos tiempos** | D-65 parte el registro entre WhatsApp y el sitio. La escritura es idempotente por teléfono, pero no está verificado que el CRM de Sports World lo soporte |
+| **Custom Audiences y Conversions API** | Ver D-72. Es la vía real por la que los datos de prospectos llegarían a la segmentación de Meta, y es una decisión de marketing de Sports World |
+| **Filtro de redacción antes del prompt** | BES en WhatsApp queda como conversación abierta y es el único punto donde alguien puede dar un dato no solicitado. Propuesto, no aprobado |
+| **Duración máxima de una nota de voz** | Ver D-73. Falta fijar el límite y qué ocurre al excederlo |
