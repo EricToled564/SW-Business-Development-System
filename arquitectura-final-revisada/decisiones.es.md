@@ -362,9 +362,20 @@ Quien está viendo Polanco pero tiene resuelto Satélite ve la zona de Satélite
 
 BES en WhatsApp es la **atención inicial**: campaña, promociones, precios, dudas previas. No aplica el cuestionario. Cuando la persona acepta diseñar su Experiencia Ideal, BES le envía un botón que la lleva al sitio, y ahí el cuestionario corre completo, con la misma semántica que para quien entró por la web, hasta agendar la visita.
 
-Lo que BES recabó en la conversación viaja con ella como **precarga** —el mismo bloque P0 de D-35, ahora alimentado por una conversación y no solo por la campaña de D-36—: el club que mencionó, el objetivo que nombró, la promoción que le interesó y el teléfono, que en WhatsApp viene del canal.
+Lo que BES recabó en la conversación viaja con ella como **precarga** —el mismo bloque P0 de D-35, ahora alimentado por una conversación y no solo por la campaña de D-36—.
 
-**La precarga propone, nunca decide.** Todo reactivo precargado se muestra contestado y se puede cambiar. Lo que no es reactivo —campaña, promoción, teléfono— va al registro y al brief, nunca al cuestionario. Sin esta regla la semántica del instrumento cambiaría según el canal, y CEI-01 apartado 2 lo prohíbe.
+**No hay una lista fija de lo que la precarga lleva, y sería un error escribirla.** La conversación es abierta: la persona puede decir mucho, poco o nada, por escrito o en nota de voz, y no se puede anticipar qué va a aportar. Un solo dato es permanente, el **teléfono**, porque viene del canal y no de lo que ella diga. Todo lo demás es contingente.
+
+**El criterio de envío: se manda lo que sirva para construir la Experiencia Ideal; lo que no la alimenta, no se envía.** Ese corte es lo que separa esta regla de «mandar la conversación completa», que contradiría la minimización sobre la que descansa el resto del sistema. La pertinencia se mide contra lo que la Experiencia Ideal consume —los reactivos del instrumento y los campos del registro—, no contra el criterio del momento.
+
+**La precarga propone, nunca decide.** Lo recabado se reparte en dos destinos, y no se mezclan:
+
+| Qué es | A dónde va |
+|---|---|
+| Responde a un reactivo del instrumento | **Precarga el reactivo**, que se muestra contestado y se puede cambiar |
+| No responde a ningún reactivo —campaña, promoción, teléfono, contexto comercial— | **Al registro y al brief**, nunca al cuestionario |
+
+Sin esta separación la semántica del instrumento cambiaría según el canal, y CEI-01 apartado 2 lo prohíbe.
 
 **Aterriza en:** capítulos 2.4, 5.2 y 5.2.1.
 
