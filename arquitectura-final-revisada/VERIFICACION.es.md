@@ -20,6 +20,8 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | `CEI-01-v1.2.pdf` | — | `b5b814c9c209e9df4ba1c502d7c4be3859c66c78c328fe024b6fe563565942c0` |
 | `README.es.md` | 333 | `bc7c852d59aaf2ba00e8f01db436bfe68cb4e521815693864cb0bcef81e6fa70` |
 | `decisiones.es.md` | 6,327 | `a8161d1d549e8c062e53e788d334cffb00050504d2e1506e803e61f1cfdadfbf` |
+| `PROC-ARCO.es.md` | 1,148 | `e845f3e214e6d11f04052ee5377e81653dab4738651374ebeb549b3772b4a47a` |
+| `PROC-INCIDENTES.es.md` | 980 | `79ef7f4f30f9cee8bf7971b03eb6241798f7d3d4dafa39822428dfe076dc5a84` |
 
 ## Estado de aprobación
 
