@@ -16,25 +16,25 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 
 | Archivo | Palabras | SHA-256 |
 |---|---|---|
-| `00-estructura.es.md` | 1,678 | `bb232147632253757c0aac2aca8969b89ae1487a56f8085b71739d60062dac6f` |
-| `00-paginas-iniciales.es.md` | 3,005 | `3152cc85cd76a0d0c573cc01cd26e75b66bc62d47a2a8772bb6ff46071a314f2` |
-| `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `bd8c4384b5e06e7389e320ac8c35466bafc3888e21ee3ce6d06571fb4b96ccd3` |
+| `00-estructura.es.md` | 1,680 | `71c42bf2d42888be88f32f761be93f8c03a4d73f73e1b48cde1e3e9cee3d4076` |
+| `00-paginas-iniciales.es.md` | 3,007 | `9e4dfc4fbb80d041f560c7f40d4ba2439b4844c554647e9c3744ef32e3bbbc46` |
+| `01-vamos-a-crear-el-mejor-sistema.es.md` | 1,352 | `b2d39bef12c958d1da421a06fa759cebdc226440071240ff025cafbdd2a15080` |
 | `02-como-se-pierde-hoy.es.md` | 1,215 | `d9177642aeee7951f5742ce69f3cf7f52d848e910cd7444862dd87a206ec333b` |
 | `03-el-sitio-como-llega-y-como-se-le-guia.es.md` | 6,919 | `481dd085c032f19a13aaeb85030aa1aa43291c2f2a3bf340574845215d55fdf0` |
 | `04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md` | 2,799 | `61bfcb01d515a94ce108d371f5dc4f1a90ea8e38ce333ed6d74b661e3a1efa38` |
-| `05-el-cuestionario.es.md` | 4,228 | `2257141df990a448a69c73c7c6176b6749891dcba3f6849b7d76192c73450641` |
+| `05-el-cuestionario.es.md` | 4,355 | `27b5a26fbf6d16aab3d2ab5319b69fb602d49e46e1236f1ce9a97d6cc08527ad` |
 | `06-quien-puede-recorrer-la-experiencia.es.md` | 1,949 | `f29fddfd8878a39447de2e713c9e18b66b83f539f49ddcecc3bf3d8909dcbace` |
 | `07-los-objetivos-de-la-persona.es.md` | 1,603 | `88cd104e2f22d4165982f5b5cc471954be493991bc2a54aaf49398ad22a3e75b` |
 | `08-el-recorrido-en-pantalla.es.md` | 4,202 | `03af6c5e5358f6a2c3f96300dbd4a1e8ac61cf2c770d32f1cf1eef5b8ae8e8e7` |
 | `09-datos-de-contacto-y-consentimiento.es.md` | 3,321 | `42fecfd020c371ee69302c1ad8f662cd86395ac504a801ce6610ceb898355e92` |
 | `10-como-se-elige-el-club.es.md` | 4,027 | `433811065da38f05ffbf090cb47a8dd2bbc6a3be9ad43b8106fdba8e4ae6765c` |
-| `11-como-se-compone-el-plan.es.md` | 2,861 | `7f5b37f1e1f2631c23ebe3294692e501132bf22a35cbe45f9d6fec6a7709f555` |
+| `11-como-se-compone-el-plan.es.md` | 2,870 | `95fb3ad91ca50d6f9ddd9819d892ae5e993a4ee590e790a799c45aeb75a030ad` |
 | `12-como-se-eligen-las-clases.es.md` | 1,809 | `667b179fe5f72aaa93885383791d0c9a0d313e2ea8a4382bade1e9a9aeeee315` |
-| `CEI-01-v1.5.es.html` | — | `6db79d5c9a2792ca943c6e59ea5f8cc4d027a701aea24658cea8919a68fd96a3` |
-| `CEI-01-v1.5.pdf` | — | `9054de96d4def00686e3dbd38a62077628d3568c5e17174fc2a1316b842c7af9` |
-| `NORMA-DE-REDACCION.es.md` | 3,592 | `52a4b40275e4045823b1d5b53dde985d5eedf107f0e69c5dee3fd81f3a439b08` |
-| `README.es.md` | 626 | `ff28505d04023a0fd5d4eec70d7ef4b15403dfc22cd5580f95ddeb203f794c6b` |
-| `decisiones.es.md` | 15,723 | `8f94684552bb180e1770378eb9015909647bdf73f9642a8dd00fd889c7cc2947` |
+| `CEI-01-v1.6.es.html` | — | `447576267a9929fda73d8c2cad889db5ab65d0edd53d41da2ead3b1cfe2a7965` |
+| `CEI-01-v1.6.pdf` | — | `6284eeaf9731b62ae433f69b2ea6fd66c72e248e608529e200e7a7f77e993bff` |
+| `NORMA-DE-REDACCION.es.md` | 3,592 | `123b50003928d3f71c536213cef80cda56c1db39865090af6c44b0be0385497e` |
+| `README.es.md` | 638 | `8ba4a34f80df907dc58e6f06e2e1be82b072ca282e19330dfd39f754e84f9bc6` |
+| `decisiones.es.md` | 16,116 | `17607678a81fb740977cf14ad6e5f362136813f6f2a475ef6f411444a9b07921` |
 | `insumo-entrenamiento-acuatico.es.md` | 1,948 | `1b32d41108ee87b9af987ffc37ea3304e3425ac54aa867dc5761df4fceb2a35e` |
 
 ## Estado de aprobación
@@ -107,6 +107,7 @@ Este archivo no se lista a sí mismo: su propio hash no puede contenerse. Lo que
 | **`tools/correcciones.py` · las correcciones dejan de depender de que alguien las lea** | Eric pregunta cómo puede estar seguro de que lo reportado como corregido está corregido, sin leer el documento línea por línea. Hasta aquí no podía: los cuatro programas comprueban frases en negativo, remisiones a apartados inexistentes, el índice y el instrumento, pero **ninguno comprueba que una corrección concreta siga en pie**. El programa nuevo declara cada corrección con la frase exacta que debe aparecer y la que ya no debe aparecer, y las comprueba todas; con `--lista` las enuncia en español para leerlas en un minuto. Comprueba además que cada archivo siga dando el hash registrado, así que detecta también un cambio posterior que nadie anunció. **En su primera corrida encontró dos cosas:** una comprobación mal planteada —prohibía una frase que el registro de decisiones tiene derecho a citar para decir qué decía antes— y un hash sin actualizar. **Y antes de escribirlo apareció un resto real:** el insumo acuático seguía diciendo «la bandera viaja al brief» y remitía «al capítulo 3» para una regla que vive en el apartado 5.9. Las dos corregidas. El README explica el comando |
 | **Los cuatro puntos abiertos del capítulo 12, resueltos por Eric** | Entran los apartados **12.7 a 12.10**, instalados carácter por carácter. **12.7:** B03 lleva **tres clases idóneas**, exactamente tres siempre que el catálogo lo permita; el panel Cambiar clases puede mostrar más, pero la experiencia conserva tres. **12.8:** con dos objetivos, **dos posiciones guiadas por el principal y una por el secundario**, prefiriendo primero las clases que sirven a los dos, sin duplicar, y con la del secundario pasando los mismos filtros. **12.9:** quien elige entrenar sin compañía no recibe selección de clases; la matriz se sigue consultando solo para validar REQ-2 y REQ-3 del club, y en esa rama no se genera la alerta de Q7/Q8 ni se muestran tres clases, mientras Q9 sigue viajando al brief. **12.10:** elegir a mano una clase que no cumple una preferencia activa de Q14 abre la misma mecánica del capítulo 10 —explicación y confirmación expresa—, conserva intacta la respuesta original, registra la excepción, vuelve a correr el seleccionador y la lleva al brief; **las reglas fijas de seguridad quedan fuera de esa confirmación**. Una frase del verificador, pendiente de autorización |
 | **D-111 · el brief advierte cuando el tiempo declarado no alcanza** | El caso que dictó Eric: dos días a la semana, una hora cada uno, objetivo de masa muscular y preferencia por entrenar en compañía. El plan le corresponde con sus tres bloques y esos tres bloques piden más sesiones de las que caben. **La experiencia se entrega completa igual**, y la advertencia viaja al asesor: entra el apartado **11.16** con la regla y la comparación, una señal nueva en la tabla del **5.9**, y la sección **§8 · El ajuste de tiempo** en el brief del apartado 4.4.2, con las dos salidas que el propio Eric fijó —explicarle por qué un compromiso mayor le sirve, o ajustar el plan con ella durante la visita—. **Lo que el instrumento todavía no recoge:** Q8 pregunta «¿Qué días *prefieres* entrenar?», que recoge un gusto donde la comparación necesita una capacidad, y **cuánto tiempo por sesión no se pregunta en ninguna parte** —Q7 son franjas de tres horas, que es otra cosa—. Mientras tanto la señal compara días contra la frecuencia del plan. El ajuste queda declarado en `tools/instrumento.py`, que falla en cada corrida hasta que CEI-01 lo incorpore |
+| **D-112 · entra Q17, el tiempo por sesión** | Eric levanta el retiro de las claves: «Ya se tomó la decisión de que no se van a levantar nunca datos de salud en línea. A menos que esas numeraciones se usen para preguntas contextuales, entonces las puedes usar.» **Q17, Q18 y Q19 eran la rama de bajar de peso** —tratamientos activos; peso, estatura y cintura; meta de cambio— que salió por la regla del apartado 5.8. Ni el capítulo ni el instrumento decían eso: solo «retirados y reservados», sin de qué ni para qué. Como esa rama no vuelve, las claves regresan al uso. **CEI-01 pasa a la versión 1.6**, HTML y PDF, 12 páginas, mismo pipeline de Chromium: **Q8** pregunta ahora qué días **puede** entrenar la persona, donde decía «prefieres», y entra **Q17**, cuánto tiempo puede dedicarle a cada sesión, inmediatamente después de Q8 y con la clave fuera de secuencia. El conteo pasa a **17–20 preguntas** y los reactivos base a dieciséis, en los apartados 5.3 y 5.4, el capítulo 1, la familia `Q##`, la norma y el README. El apartado 11.16 suma Q17 a su comparación, con lo que **cierra el punto que D-111 dejaba abierto**. La versión 1.5 sale de la carpeta y permanece en el historial |
 
 ## Qué cambió en la entrega del 20 de septiembre
 

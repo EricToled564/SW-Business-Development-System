@@ -10,7 +10,7 @@
 
 Sports World deja de vender un club. Empieza a vender un resultado.
 
-Un prospecto entrega un minuto de su tiempo —entre 16 y 19 preguntas, las mismas en el sitio, WhatsApp y la recepción del club— y recibe **su Experiencia Ideal en Sports World**.
+Un prospecto entrega un minuto de su tiempo —entre 17 y 20 preguntas, las mismas en el sitio, WhatsApp y la recepción del club— y recibe **su Experiencia Ideal en Sports World**.
 
 Un plan construido a partir de lo que quiere lograr: el club que mejor responde a sus necesidades, los bloques de entrenamiento que le corresponden y las clases y disciplinas que pueden acercarlo a su objetivo.
 

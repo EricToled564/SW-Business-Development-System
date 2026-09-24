@@ -34,6 +34,8 @@ CAP12 = '12-como-se-eligen-las-clases.es.md'
 CAP3 = '03-el-sitio-como-llega-y-como-se-le-guia.es.md'
 CAP4 = '04-que-recibe-la-persona-y-que-recibe-el-asesor.es.md'
 CAP5 = '05-el-cuestionario.es.md'
+CAP1 = '01-vamos-a-crear-el-mejor-sistema.es.md'
+README = 'README.es.md'
 GLOSARIO = '00-paginas-iniciales.es.md'
 ESTRUCTURA = '00-estructura.es.md'
 NORMA = 'NORMA-DE-REDACCION.es.md'
@@ -125,6 +127,19 @@ CORRECCIONES = [
                 'no aparecía en ninguna parte del capítulo.',
         'archivo': CAP12,
         'contiene': ['## 12.6 La clase que la persona aceptó en la precarga'],
+    },
+    {
+        'dice': 'D-112 · Q17 entró como el tiempo por sesión, Q8 pasó de preferencia a capacidad, y el '
+                'conteo de preguntas quedó al día en los seis lugares que lo declaran.',
+        'archivos': [CAP5, CAP1, GLOSARIO, ESTRUCTURA, NORMA, README],
+        'contiene': ['## 5.4 Los dieciséis reactivos base',
+                     '**entre 17 y 20 preguntas**',
+                     'Cuánto tiempo puede dedicarle a cada sesión',
+                     '| **Q##** | `Q1` … `Q16` y `Q17`, con sus condicionales',
+                     '| **5.4** Los dieciséis reactivos base',
+                     'La versión vigente es la **1.6**'],
+        'no_contiene': ['entre 16 y 19 preguntas', 'Los quince reactivos base',
+                        'Q17, Q18 y Q19 están retirados'],
     },
     {
         'dice': 'La advertencia de capacidad de D-111 quedó en sus tres lugares: la regla en el '

@@ -26,7 +26,7 @@ El argumento del proyecto salió de las páginas iniciales y es el **capítulo 1
 
 | Familia | Forma | Significa | Ejemplo |
 |---|---|---|---|
-| **Q##** | `Q1` … `Q16`, con sus condicionales | Reactivo del cuestionario | `Q4` = objetivos funcionales |
+| **Q##** | `Q1` … `Q16` y `Q17`, con sus condicionales | Reactivo del cuestionario | `Q4` = objetivos funcionales |
 | **OE-#** | `OE-1` … `OE-5` | Objetivo emocional: lo que la persona quiere sentir | `OE-3` = comunidad |
 | **OF-#** | `OF-1` … `OF-6` | Objetivo funcional: lo que quiere lograr | `OF-1` = bajar de peso |
 | **B##** | `B01` … `B03` | Bloque de entrenamiento del plan | `B03` = clases en grupo o entrenamiento personal |
@@ -129,4 +129,4 @@ No son capítulos ni anexos: son el material con el que se escribirá un capítu
 
 ## El instrumento que rige
 
-**CEI-01 versión 1.5**, que vive en esta misma carpeta como `CEI-01-v1.5.es.html` y su PDF. El cuestionario del Anexo A del Manual del Proceso Comercial es una versión anterior y no se usa.
+**CEI-01 versión 1.6**, que vive en esta misma carpeta como `CEI-01-v1.6.es.html` y su PDF. El cuestionario del Anexo A del Manual del Proceso Comercial es una versión anterior y no se usa.

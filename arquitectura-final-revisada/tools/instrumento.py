@@ -65,14 +65,13 @@ AJUSTES = [
     {
         'nombre': 'Q8 · la disponibilidad como capacidad, no como preferencia',
         'decision': 'D-111',
-        'apartados': ['11.16'],
+        'apartados': ['5.4', '11.16'],
         'retira': '¿Qué días prefieres entrenar?',
-        'incorpora': ['¿Qué días puedes entrenar?',
-                      '¿Cuántos días a la semana puedes entrenar'],
+        'incorpora': ['¿Cuánto tiempo puedes dedicarle a cada sesión?'],
         'porque': 'El apartado 11.16 compara lo que el plan pide contra lo que la persona '
-                  'declaró que puede dedicarle. «Prefieres» recoge un gusto; la comparación '
-                  'necesita una capacidad. Falta además cuánto tiempo por sesión: hoy el '
-                  'instrumento no lo pregunta, así que la señal se levanta solo por días.',
+                  'declaró que puede dedicarle, y esa comparación necesita una capacidad, no '
+                  'un gusto. Q8 pregunta ahora qué días puede, y Q17 cuánto tiempo por sesión, '
+                  'que el instrumento no recogía en ninguna parte.',
     },
     {
         'nombre': 'P0 · la declaración del bloque de precarga',

@@ -36,8 +36,8 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <h1>Cuestionario de Experiencia Ideal · CEI-01</h1>
 <div class="sub">Sports World México</div>
 <table class="meta">
-<tr><td>Versión</td><td>1.5</td></tr>
-<tr><td>Sustituye a</td><td>Versión 1.4</td></tr>
+<tr><td>Versión</td><td>1.6</td></tr>
+<tr><td>Sustituye a</td><td>Versión 1.5</td></tr>
 <tr><td>Qué cambió</td><td>Con «Ambas», el plan debe incluir forzosamente piso seco y alberca. Con «Quiero que me recomienden», el sistema calcula cuál de las tres modalidades contribuye más al objetivo principal.</td></tr>
 <tr><td>Estructura</td><td>G0; ruta completa con P0, 15 preguntas base y 3 condicionales; o ruta reducida con 8 preguntas base y Q15b cuando aplica.</td></tr>
 </table>
@@ -59,7 +59,7 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <li><b>No se solicitan ni infieren</b> diagnósticos, lesiones, embarazo, tratamientos, medicamentos, cirugías, peso, estatura, medidas corporales ni ningún otro dato clínico.</li>
 <li>La Experiencia Ideal <b>no ofrece</b> acompañamiento nutricional, planes alimenticios, dietas ni recomendaciones de nutrición.</li>
 <li>En la ruta completa, las preguntas, opciones, validaciones, ramificaciones e identificadores <b>son iguales en todos los canales</b>.</li>
-<li>Los identificadores Q17, Q18 y Q19 están retirados y reservados; no se reutilizan.</li>
+<li>Los identificadores Q18 y Q19 quedan libres para preguntas contextuales; la rama de bajar de peso que ocupaban no vuelve al instrumento.</li>
 <li><b>La forma de trato elegida en Q2 gobierna la concordancia en la ruta completa.</b> En la ruta reducida, donde Q2 no se pregunta, <b>Q12 se presenta en su forma neutral</b>: «entrenar sin compañía».</li>
 <li><b>Lo que se refiere a otras personas se escribe con gramática española correcta y no se conjuga con la forma de trato de quien contesta.</b> El género de esas personas ni se conoce ni se pregunta. Cuando el español tiene una palabra que las nombra sin declarar su género, se usa esa palabra: <b>una amistad</b>, <b>mi pareja</b>. Cuando no la tiene, se usa el plural masculino: <b>mis hijos</b>, <b>actividades para menores de 3 meses a 13 años</b>.</li>
 <li><b>Queda prohibida toda marca tipográfica de inclusión:</b> arroba, equis, vocal entre paréntesis y doble terminación separada por barra.</li>
@@ -153,10 +153,18 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 
 <div class="q">
 <div class="qid">Q8</div>
-<p class="pregunta">¿Qué días prefieres entrenar?</p>
+<p class="pregunta">¿Qué días puedes entrenar?</p>
 <ul class="opts"><li>Lunes · Martes · Miércoles · Jueves · Viernes · Sábado · Domingo</li></ul>
 <p class="rule"><b>Captura y validación.</b> Selección múltiple; mínimo 1.</p>
-<p class="rule"><b>Uso autorizado.</b> Genera una alerta para el asesor si las clases ideales no coinciden; no selecciona ni descarta clubes.</p>
+<p class="rule"><b>Uso autorizado.</b> Genera una alerta para el asesor si las clases ideales no coinciden; no selecciona ni descarta clubes. Junto con Q17, declara la capacidad de tiempo con la que se compara lo que pide el plan.</p>
+</div>
+
+<div class="q">
+<div class="qid">Q17</div>
+<p class="pregunta">¿Cuánto tiempo puedes dedicarle a cada sesión?</p>
+<ul class="opts"><li>Hasta 45 minutos</li><li>1 hora</li><li>1 hora y media</li><li>Más de hora y media</li></ul>
+<p class="rule"><b>Captura y validación.</b> Selección única obligatoria. Se pregunta inmediatamente después de Q8.</p>
+<p class="rule"><b>Uso autorizado.</b> Junto con Q8, declara la capacidad de tiempo de la persona. Cuando lo que pide el plan excede esa capacidad, <b>la Experiencia Ideal se entrega completa igual</b> y la advertencia viaja al brief. <b>No recorta el plan ni descarta clases.</b></p>
 </div>
 
 <div class="q">
@@ -346,14 +354,15 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <h2>7 · Identificadores vigentes</h2>
 <p><b>Compuerta:</b> G0.<br>
 <b>Bloque de precarga:</b> P0. Solo ruta completa.<br>
-<b>Preguntas base de la ruta completa (15):</b> Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q12, Q13, Q14, Q15 y Q16.<br>
+<b>Preguntas base de la ruta completa (16):</b> Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q17, Q9, Q10, Q12, Q13, Q14, Q15 y Q16, en ese orden de pantalla. <b>Q17 recupera un identificador que estuvo retirado</b>, y por eso su clave queda fuera de secuencia.<br>
 <b>Preguntas condicionales de la ruta completa (3):</b> Q10a, Q11 y Q15b.<br>
 <b>Ruta reducida:</b> Q4, Q5, Q6, Q9, Q12, Q14, Q15, Q16 y Q15b cuando aplica.<br>
-<b>Retirados y reservados:</b> Q17, Q18 y Q19.</p>
+<b>Libres:</b> Q18 y Q19. Fueron parte de la rama de bajar de peso, que salió del instrumento por la regla de alcance: el cuestionario recoge preferencias declaradas, no condiciones clínicas. Esa rama no vuelve, así que sus claves quedan disponibles para preguntas contextuales.</p>
 
 <h2>8 · Registro de cambios</h2>
 <table>
 <tr><th style="width:70px">Versión</th><th>Qué cambió</th></tr>
+<tr><td>1.6</td><td><b>Q8 pasa de preferencia a capacidad.</b> Preguntaba qué días <i>prefiere</i> entrenar la persona, que recoge un gusto, y ahora pregunta cuáles <i>puede</i>. La comparación entre lo que pide el plan y lo que la persona puede dedicarle necesita una capacidad. <b>Entra Q17, cuánto tiempo por sesión</b>, que el instrumento no preguntaba en ninguna parte: Q7 recoge franjas de tres horas, que es cuándo puede venir, no cuánto se queda. Con las dos, el desajuste se calcula completo. <b>Q17 recupera un identificador retirado:</b> la rama de bajar de peso que ocupaban Q17, Q18 y Q19 salió por la regla de alcance y no vuelve, así que las claves quedan disponibles para preguntas contextuales. Q18 y Q19 siguen libres.</td></tr>
 <tr><td>1.5</td><td><b>Ambas entrega las dos modalidades.</b> El plan debe incluir forzosamente contenido de piso seco y contenido de alberca. La 1.4 decía que el plan «combina» las dos sin exigirlo, y un plan resuelto solo en seco entregaba menos de lo que la opción ofrece.<br><br><b>La recomendación de modalidad se calcula.</b> Con «Quiero que me recomienden», el sistema calcula cuál de las tres modalidades contribuye más al objetivo principal, con la matriz de clases y en la intensidad declarada en Q5. Sustituye la tabla de asignación fija por objetivo, que quedaba desactualizada cada vez que cambiaba el catálogo. Las tres modalidades compiten, incluida «Ambas».</td></tr>
 <tr><td>1.4</td><td><b>Ruta reducida para G0 = No.</b> Ya no termina inmediatamente: abre una ruta anónima que no usa P0 ni captura de contacto y utiliza Q4, Q5, Q6, Q9, Q12, Q14, Q15, Q16 y Q15b cuando aplica. La salida es un solo club recomendado con una breve explicación de por qué corresponde a sus respuestas y la recomendación de acudir con su tutor. No crea registro, brief, cita ni transferencia al club. Para 14 a 17 años, la Experiencia Ideal completa se construye presencialmente en el club con su tutor. Se mantiene la corrección de v1.3 que exige alberca cuando la modalidad es En la alberca o Ambas.</td></tr>
 <tr><td>1.3</td><td>Se declara P0 dentro del instrumento. Aceptar resuelve el reactivo correspondiente; rechazar devuelve el reactivo a su forma normal sin prellenado. La alberca pasa a exigirse también con «Ambas» y cuando el sistema resuelve En la alberca o Ambas.</td></tr>
@@ -362,6 +371,6 @@ td{padding:5px 8px;border:1px solid #bbb;vertical-align:top}
 <tr><td>1.0</td><td>Versión inicial del instrumento.</td></tr>
 </table>
 
-<div class="foot">Cuestionario de Experiencia Ideal · CEI-01 · versión 1.5 · uso interno.<br>Documento propiedad de Sports World México.</div>
+<div class="foot">Cuestionario de Experiencia Ideal · CEI-01 · versión 1.6 · uso interno.<br>Documento propiedad de Sports World México.</div>
 
 </body></html>

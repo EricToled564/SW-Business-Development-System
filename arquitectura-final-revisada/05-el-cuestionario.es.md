@@ -2,7 +2,7 @@
 
 Toda la personalización de la Experiencia Ideal sale de un solo instrumento: el **Cuestionario de Experiencia Ideal**, identificado como **CEI-01**.
 
-La versión vigente es la **1.5**, y vive en esta misma carpeta.
+La versión vigente es la **1.6**, y vive en esta misma carpeta.
 
 **Toda regla de personalización del sistema debe partir de un dato recogido o confirmado por CEI-01.**
 
@@ -152,20 +152,22 @@ Debe devolver esa decisión al cuestionario normal.
 | ------------------------------------- | -------: | -------------------------------------------------------------------------- |
 | **G0 · Compuerta de mayoría de edad** |        1 | Siempre, antes que cualquier otra interacción. El capítulo 6 la especifica |
 | **P0 · Precarga**                     | 1 bloque | Cuando existe contexto previo. Apartado 5.2                                |
-| **Reactivos base**                    |       15 | Siempre, en el mismo orden                                                 |
+| **Reactivos base**                    |       16 | Siempre, en el mismo orden                                                 |
 | **Reactivos condicionales**           |        3 | Únicamente cuando una respuesta previa los dispara                         |
 
-Una persona contesta, por lo tanto, **entre 16 y 19 preguntas**: la compuerta, los quince reactivos base y entre cero y tres condicionales.
+Una persona contesta, por lo tanto, **entre 17 y 20 preguntas**: la compuerta, los dieciséis reactivos base y entre cero y tres condicionales.
 
 P0 no agrega una pregunta al conteo: confirma información contextual y puede resolver reactivos que, de otra forma, aparecerían después.
 
-Los identificadores vigentes son **Q1 a Q10 y Q12 a Q16** para los reactivos base, y **Q10a, Q11 y Q15b** para los condicionales.
+Los identificadores vigentes son **Q1 a Q10, Q12 a Q16 y Q17** para los reactivos base, y **Q10a, Q11 y Q15b** para los condicionales.
 
-**Q17, Q18 y Q19 están retirados y reservados. Quien construya el sistema no debe reutilizarlos.**
+**Q17 se pregunta inmediatamente después de Q8**, porque las dos declaran la capacidad de tiempo de la persona. Su clave queda fuera de secuencia porque recupera un identificador que estuvo retirado.
+
+**Q18 y Q19 quedan libres para preguntas contextuales.** Junto con Q17 formaban la rama de bajar de peso —tratamientos activos, peso, estatura y cintura, y meta de cambio— que salió del instrumento por la regla del apartado 5.8. Esa rama no vuelve, así que sus claves regresan al uso.
 
 ---
 
-## 5.4 Los quince reactivos base
+## 5.4 Los dieciséis reactivos base
 
 | Clave   | Qué pregunta                                           | Qué determina                                                                                                                                                                                                                   |
 | ------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -176,7 +178,8 @@ Los identificadores vigentes son **Q1 a Q10 y Q12 a Q16** para los reactivos bas
 | **Q5**  | Qué ritmo va con ella                                  | El criterio de selección de clases, junto con el objetivo y el nivel. También viaja al brief                                                                                                                                    |
 | **Q6**  | Dónde prefiere entrenar                                | El modo de entrenamiento: piso seco, agua o ambos                                                                                                                                                                               |
 | **Q7**  | En qué horario                                         | La señal al asesor cuando las clases idóneas caen en otra franja. La elección de club y el tiempo de traslado se resuelven aparte                                                                                               |
-| **Q8**  | Qué días                                               | La misma lógica de disponibilidad de Q7                                                                                                                                                                                         |
+| **Q8**  | Qué días puede entrenar                                | La misma lógica de disponibilidad de Q7. Con Q17, declara la capacidad de tiempo contra la que se compara lo que pide el plan                                                                                                   |
+| **Q17** | Cuánto tiempo puede dedicarle a cada sesión            | Con Q8, la capacidad de tiempo. Cuando el plan pide más de lo que cabe, la experiencia se entrega completa y la advertencia viaja al brief, conforme al apartado 11.16                                                          |
 | **Q9**  | Cuál es su nivel                                       | El orden de las clases. **No debe tratarse como diagnóstico**                                                                                                                                                                   |
 | **Q10** | Cuál describe mejor su experiencia reciente            | El contexto comercial y la preparación del recorrido. Sus cuatro opciones corresponden a personas sin membresía activa                                                                                                          |
 | **Q12** | Si prefiere entrenar sin compañía o en clases grupales | Qué ocupa el tercer bloque. Tiene dos opciones y debe elegirse una                                                                                                                                                              |

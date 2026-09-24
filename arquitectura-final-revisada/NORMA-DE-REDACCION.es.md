@@ -78,7 +78,7 @@ Son cinco y no hay una sexta. Cada sección del documento se escribe en una de e
 | **5.1** Rol y propósito | Qué es CEI-01 y de dónde sale cada personalización | Regla |
 | **5.2** La precarga | Las cuatro categorías, las dos formas, cómo se compone el bloque y qué hace aceptar o rechazar | Regla + tabla de casos |
 | **5.3** Cómo se compone el cuestionario | Cuántos reactivos hay de cada clase y cuándo se preguntan | Tabla de datos |
-| **5.4** Los quince reactivos base | Qué pregunta cada uno y qué determina | Tabla de datos |
+| **5.4** Los dieciséis reactivos base | Qué pregunta cada uno y qué determina | Tabla de datos |
 | **5.5** Los tres reactivos condicionales | Qué los dispara y qué determinan | Tabla de casos |
 | **5.6** Las dos preguntas que cambian la estructura | Los dos reactivos que cambian la forma de la recomendación | Regla |
 | **5.7** Cómo se comporta el cuestionario en pantalla | Ramificación, opciones que aparecen, límites y concordancia con la forma de trato | Tabla de casos |

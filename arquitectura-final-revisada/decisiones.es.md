@@ -1146,6 +1146,38 @@ El ajuste queda declarado en `tools/instrumento.py`, que **falla en cada corrida
 
 ---
 
+### D-112 · Entra Q17, el tiempo por sesión, y las claves retiradas vuelven al uso
+
+Dictado por Eric, el 24 de septiembre, sobre el retiro de Q17, Q18 y Q19:
+
+> «Ya se tomó la decisión de que no se van a levantar nunca datos de salud en línea. A menos que esas numeraciones se usen para preguntas contextuales, entonces las puedes usar.»
+
+**Qué corrige.** El instrumento y el apartado 5.3 declaraban esas tres claves «retiradas y reservadas», sin decir de qué ni para qué. Eran la rama de bajar de peso: **Q17**, tratamientos activos; **Q18**, peso, estatura y cintura; **Q19**, meta de cambio de peso. Salieron por la regla del apartado 5.8 —el cuestionario recoge preferencias declaradas, no condiciones clínicas—, que responde a que la legislación mexicana considera sensibles los datos que revelan estado de salud.
+
+**La razón del retiro protegía contra un riesgo que ya no existe.** Esa rama no vuelve por decisión tomada, así que las claves quedan disponibles para preguntas contextuales.
+
+| Clave | Estado |
+|---|---|
+| **Q17** | En uso: el tiempo por sesión |
+| **Q18 y Q19** | Libres, para preguntas contextuales |
+
+**Lo que entra en el instrumento, versión 1.6:**
+
+| Reactivo | Qué dice |
+|---|---|
+| **Q8** | «¿Qué días **puedes** entrenar?», donde decía «prefieres». La comparación del apartado 11.16 necesita una capacidad, no un gusto |
+| **Q17** | «¿Cuánto tiempo puedes dedicarle a cada sesión?» · Hasta 45 minutos · 1 hora · 1 hora y media · Más de hora y media. Selección única obligatoria, inmediatamente después de Q8 |
+
+**Su clave queda fuera de secuencia**, porque recupera un identificador retirado y su lugar en pantalla es junto a Q8.
+
+**Lo que arrastró.** El conteo pasa de 16–20 a **17–20 preguntas** y los reactivos base de quince a dieciséis: apartados 5.3 y 5.4, el capítulo 1, la familia `Q##` de la tabla de códigos, la norma y el README. El apartado 11.16 suma Q17 a su comparación. La versión 1.5 sale de la carpeta y permanece en el historial del repositorio.
+
+**Cierra el punto que D-111 dejaba abierto:** la señal de capacidad ya se levanta con el tiempo por sesión, no solo con los días.
+
+**Aterriza en:** apartados 5.3, 5.4 y 11.16, el capítulo 1, el glosario, la tabla de códigos, la norma, el README y `CEI-01-v1.6`.
+
+---
+
 ## Puntos abiertos
 
 ### Decisiones de Sports World, para el arranque del proyecto

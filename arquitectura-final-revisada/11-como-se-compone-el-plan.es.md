@@ -503,7 +503,7 @@ Lo que debe hacer es **levantar una señal de capacidad y llevarla al brief**, c
 
 La comparación debe hacerse entre:
 
-* los días que la persona declaró en Q8;
+* la capacidad que la persona declaró: los días de Q8 y el tiempo por sesión de Q17;
 * y lo que el plan pide, con la frecuencia y la duración que la matriz entrega por programa, conforme al apartado 11.5.1, más las tres clases de B03.
 
 Cuando lo segundo excede a lo primero, la señal debe activarse.
