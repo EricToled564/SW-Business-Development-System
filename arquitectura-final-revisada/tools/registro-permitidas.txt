@@ -104,3 +104,9 @@ si no existe información válida de tráfico, utilizar la menor distancia por r
 
 Q5 no cambia el objetivo del programa
 El tono narrativo derivado de Q3 debe permanecer estable porque la motivación emocional original no cambia al seleccionar otro club.
+
+# Capítulo 12, apartado 12.8 (texto de Eric). Cierra el apartado diciendo hasta
+# dónde llega el objetivo secundario. Mismo criterio que las cuatro anteriores:
+# la frase que traza un límite no describe al sistema por lo que le falta.
+
+El objetivo secundario diversifica; no sustituye la dirección establecida por el principal.

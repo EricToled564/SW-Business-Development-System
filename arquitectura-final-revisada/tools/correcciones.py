@@ -62,12 +62,13 @@ CORRECCIONES = [
                      'si no existe información válida de tráfico, utilizar la menor distancia por ruta.'],
     },
     {
-        'dice': 'Las dos frases del capítulo 11 que marcaba el verificador quedaron '
+        'dice': 'Las frases de los capítulos 11 y 12 que marcaba el verificador quedaron '
                 'autorizadas por Eric.',
         'archivo': PERMITIDAS,
         'contiene': ['Q5 no cambia el objetivo del programa',
                      'El tono narrativo derivado de Q3 debe permanecer estable porque la motivación '
-                     'emocional original no cambia al seleccionar otro club.'],
+                     'emocional original no cambia al seleccionar otro club.',
+                     'El objetivo secundario diversifica; no sustituye la dirección establecida por el principal.'],
     },
     {
         'dice': '«Flag» es el término oficial: ningún capítulo ni el insumo llaman «bandera» '
