@@ -2,6 +2,9 @@ name: Despublicar GitHub Pages
 
 on:
   workflow_dispatch:
+  push:
+    branches: ["claude/zen-ptolemy-c74vmi"]
+    paths: [".github/workflows/unpublish-pages.yml"]
 
 permissions:
   contents: read
