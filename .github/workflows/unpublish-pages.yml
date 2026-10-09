@@ -1,0 +1,29 @@
+name: Despublicar GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  unpublish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Estado actual del sitio
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api "/repos/${{ github.repository }}/pages" || true
+      - name: Despublicar el sitio de GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api -X DELETE "/repos/${{ github.repository }}/pages"
+      - name: Verificar
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh api "/repos/${{ github.repository }}/pages" >/dev/null 2>&1; then
+            echo "El sitio sigue publicado"; exit 1
+          else
+            echo "Sitio despublicado"; fi
