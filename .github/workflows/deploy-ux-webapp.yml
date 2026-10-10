@@ -1,14 +1,13 @@
 name: Deploy UX web app to GitHub Pages
 
+# Sitio retirado a solicitud de Eric Toledano el 10 de octubre de 2026.
+# Este workflow publica una página en blanco en lugar del web app. Para
+# restaurar la publicación, revertir el commit que introdujo este cambio.
+
 on:
   push:
     branches: [main, claude/serene-cray-06lv41]
-    # La rama de trabajo no se agrega aquí: el entorno «github-pages» rechaza el
-    # despliegue desde ramas no autorizadas y el trabajo falla antes de su primer
-    # paso. Para publicar desde una rama hay que autorizarla en Settings →
-    # Environments → github-pages → deployment branches, y agregarla a esta lista.
     paths:
-      - "resultados/ux-v1/webapp/**"
       - ".github/workflows/deploy-ux-webapp.yml"
   workflow_dispatch:
 
@@ -28,18 +27,21 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
 
-      - name: Upload web app as Pages artifact
+      - name: Preparar sitio vacío
+        run: |
+          mkdir -p sitio-vacio
+          printf '<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title></title></head><body></body></html>' > sitio-vacio/index.html
+          cp sitio-vacio/index.html sitio-vacio/404.html
+
+      - name: Upload empty site as Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: resultados/ux-v1/webapp
+          path: sitio-vacio
 
       - name: Deploy to GitHub Pages
         id: deployment
