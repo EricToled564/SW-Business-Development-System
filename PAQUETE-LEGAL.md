@@ -6,6 +6,8 @@ Son **nueve ajustes**: los siete derivados de la auditoría más uno detectado a
 
 Siete de los ocho **reducen, precisan o corrigen** lo que se le pide a Sports World. **Uno solo agrega un requerimiento verdaderamente nuevo** —el dato de cancelación—, y otro agrega dos campos a un dato ya pactado; ambos son indispensables para cerrar el funnel de resultados que el propio Contrato compromete. Ninguno modifica la contraprestación, los plazos ni los KPIs.
 
+> **Actualización · 14 de octubre de 2026 · Contrato V4.4.** Por instrucción expresa de Eric, el texto de `contrato.es.md` se sustituyó íntegro por el documento que él entregó: `versiones-del-contrato/contrato-v4.4-limpio.docx` (21 886 palabras; conversión verificada palabra por palabra, 0 diferencias). Es el texto final de la **contrapropuesta de EL PRESTADOR, Versión 4.4, del 11 de septiembre de 2026**; su copia de lectura con los cambios visibles frente al borrador marcado por EL CLIENTE se conserva en `versiones-del-contrato/contrato-v4.4-con-cambios.docx`. Cambios de fondo frente a la V4.3: sale el agente de voz «BES»; el Proyecto B pasa a ser la **Academia** y el BDS deja de formar parte del Contrato; el cronograma del sitio pasa a **10 semanas**, con un Periodo de Estabilización de 6 semanas; los anexos quedan en Uno a Cinco. **Los addenda (BDS y Academia) no se modificaron, por instrucción de Eric**, aunque el BDS ya no tiene base en el Contrato V4.4 y el addendum de la Academia la sigue nombrando Proyecto C. Los nueve ajustes que siguen corresponden a la V4.3 y se conservan como registro; la V4.3 está en `versiones-del-contrato/contrato-v4.3.{md,pdf}`.
+
 ---
 
 ## 1 · Frecuencia de sincronización con el CRM

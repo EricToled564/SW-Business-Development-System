@@ -16,6 +16,16 @@ Estos tres PDFs son también los que sirve la app (`resultados/ux-v1/kb/06-contr
 
 > Nota: en la app los tres documentos se muestran **sin número de versión** en el título; el versionado vive únicamente en esta carpeta.
 
+## Texto vigente en el depósito (14 de octubre de 2026)
+
+El Contrato que publica la app es la **V4.4** —contrapropuesta de EL PRESTADOR del 11 de septiembre de 2026—, que Eric entregó y ordenó publicar el 14 de octubre de 2026:
+
+- `contrato-v4.4-limpio.docx` — texto final; es la fuente de `resultados/ux-v1/webapp/docs/contrato.es.md` (conversión verificada palabra por palabra, 0 diferencias).
+- `contrato-v4.4-con-cambios.docx` — copia de lectura con los cambios visibles frente al borrador marcado por EL CLIENTE (13 ago–1 sep 2026) y la guía de lectura. Uso interno.
+- `contrato-v4.3.md` / `contrato-v4.3.pdf` — la versión que sustituyó.
+
+Los addenda BDS y Academia no cambiaron. Los PDFs de `oficiales/` siguen siendo las últimas versiones entregadas por el cliente.
+
 ## Registro de cambios oficial (referencia)
 
 - `oficiales/contrato-v4.2-con-notas-de-cambios.pdf` — **copia de trabajo del cliente** del Contrato V4.2 con el **registro de cambios V4.1 → V4.2** (34 cambios documentados con ubicación y hallazgo de origen) y la lista de pendientes previos al envío. Es la referencia oficial de qué cambió entre versiones; **de uso interno, no se publica en la app ni se envía al cliente final**. Verificado: el cuerpo contractual de esta copia es idéntico al de `contrato-v4.2-cliente.pdf` (solo difieren encabezados/pies de página y la sección final de registro de cambios).

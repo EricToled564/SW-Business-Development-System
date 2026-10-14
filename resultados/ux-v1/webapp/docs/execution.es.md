@@ -141,7 +141,7 @@ Estas cifras son una estimación de ingeniería, no una medición. La vía para 
 
 ## 5 · Hitos y aprobaciones a cargo de Sports World
 
-El proyecto avanza por cuatro compuertas de aprobación; cada una corresponde al cronograma del **[Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente)**. Las ventanas de respuesta son obligaciones del cliente: un atraso en una aprobación extiende, día por día, el plazo a cargo del proveedor (y activa el stand-by de la Cláusula Décima Quinta).
+El proyecto avanza por cuatro compuertas de aprobación; cada una corresponde al cronograma del **[Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-10-semanas-y-aprobaciones-a-cargo-de-el-cliente)**. Las ventanas de respuesta son obligaciones del cliente: un atraso en una aprobación extiende, día por día, el plazo a cargo del proveedor (y activa el stand-by de la Cláusula Décima Quinta).
 
 | Aprobación | Hito | Momento | Ventana de respuesta | Criterio de salida (definición de "hecho") |
 |---|---|---|---|---|
