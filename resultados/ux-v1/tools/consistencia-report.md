@@ -1,6 +1,6 @@
 # Reporte de consistencia del depósito
 
-**31 documentos · 4,202 líneas · 23 reglas · 0 hallazgos**
+**31 documentos · 4,202 líneas · 24 reglas · 0 hallazgos**
 
 Este reporte lo genera `tools/consistencia.js` al ejecutarse. La columna «reglas
 aplicadas» no es una declaración: es el registro de qué verificación tocó qué
@@ -18,7 +18,7 @@ archivo durante esta corrida.
 | academia-resumen.es.md | 82 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | academia-tecnica.es.md | 110 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | aportaciones.es.md | 21 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
-| app.js | — | R12, R18 (2) | 0 |
+| app.js | — | R12, R18, R24 (3) | 0 |
 | auditoria.es.md | 131 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | bds-anexo.es.md | 53 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | bds-canales.es.md | 51 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
@@ -79,3 +79,4 @@ archivo durante esta corrida.
 | R22 · enrutamiento de WhatsApp | 32 | 0 |
 | R21 · el registro de cambios del proceso no se publica | 0 | 0 |
 | R23 · las páginas de fuentes reflejan los documentos | 31 | 0 |
+| R24 · la Arquitectura de la Experiencia publicada es la entregada | 1 | 0 |

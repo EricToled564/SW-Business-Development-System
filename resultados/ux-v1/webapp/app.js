@@ -24,6 +24,9 @@
       demoOpen: "Abrir en una pestaña nueva",
       demoMobile: "Versión móvil",
       pageOpen: "Abrir en pestaña nueva",
+      pdfOpen: "Abrir el PDF en una pestaña nueva",
+      pdfDownloadEn: "Descargar edición en inglés (PDF)",
+      pdfFallback: "Si el documento no aparece abajo, ábrelo en una pestaña nueva.",
       pagePrint: "Imprimir o guardar en PDF",
       pageFind: "Buscar en el documento…",
       pageStep: "Ir al paso",
@@ -61,6 +64,9 @@
       demoOpen: "Open in a new tab",
       demoMobile: "Mobile version",
       pageOpen: "Open in a new tab",
+      pdfOpen: "Open the PDF in a new tab",
+      pdfDownloadEn: "Download English edition (PDF)",
+      pdfFallback: "If the document does not appear below, open it in a new tab.",
       pagePrint: "Print or save as PDF",
       pageFind: "Search this document…",
       pageStep: "Go to step",
@@ -115,7 +121,9 @@
       title: { es: "MV/SW/01 · Manual de Ventas", en: "MV/SW/01 · Sales Manual" } },
     { id: "entrenador", type: "embed", group: "proceso", red: true, src: "demo-manual/index.html",
       title: { es: "Entrenador de Ventas · demo", en: "Sales Trainer · demo" } },
-    { id: "experience", type: "doc", group: "proyectoA", pdf: "01-arquitectura-de-experiencia.es.pdf",
+    // Edición integrada del 6 oct 2026 (D-119, CEI-01 v1.6): se publica el PDF de la
+    // release «Documentation» (tag Docs) tal cual, por instrucción de Eric del 14 oct 2026.
+    { id: "experience", type: "pdf", group: "proyectoA", pdf: "01-arquitectura-de-la-experiencia-20261006.es.pdf", pdfEn: "01-arquitectura-de-la-experiencia-20261006.en.pdf",
       title: { es: "Arquitectura de Experiencia (UX)", en: "Experience Architecture (UX)" } },
     { id: "technical", type: "doc", group: "proyectoA", pdf: "02-estrategia-tecnica.es.pdf",
       title: { es: "Estrategia Técnica", en: "Technical Strategy" } },
@@ -351,6 +359,40 @@
       // Fijar la altura del iframe a la ventana REALMENTE visible (window.innerHeight),
       // no a 100vh/100dvh: dentro de un iframe esas unidades son poco fiables en móvil
       // y empujaban el botón del demo fuera de la pantalla. Se reajusta al rotar/redimensionar.
+      const wrap = elDoc.querySelector(".embed-wrap");
+      if (embedFit) window.removeEventListener("resize", embedFit);
+      embedFit = function () {
+        const tb = document.querySelector(".topbar");
+        const lk = elDoc.querySelector(".embed-link");
+        const h = window.innerHeight - (tb ? tb.offsetHeight : 0) - (lk ? lk.offsetHeight + 12 : 0);
+        if (wrap) wrap.style.height = h + "px";
+      };
+      embedFit();
+      window.addEventListener("resize", embedFit);
+      if (push) history.replaceState(null, "", "#" + doc.id);
+      document.title = doc.title[lang] + " · Sports World";
+      window.scrollTo(0, 0);
+      closeSidebar();
+      return;
+    }
+
+    if (doc.type === "pdf") {
+      // Documento publicado como PDF íntegro (sin markdown que renderizar): se
+      // muestra en el visor del navegador, con descarga y apertura directa. En
+      // móvil algunos navegadores sólo pintan la primera página dentro del marco;
+      // por eso la liga «Abrir» va siempre visible.
+      const src = "kb/" + doc.pdf;
+      const icon = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.42l2.3 2.3V4a1 1 0 0 1 1-1Zm-7 14a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>';
+      elDoc.innerHTML =
+        '<div class="embed-link">' +
+        '<span class="embed-link-label pdf-note">' + t().pdfFallback + '</span>' +
+        '<span class="embed-link-actions">' +
+        '<a class="embed-link-btn" href="' + src + '" target="_blank" rel="noopener">' + t().pdfOpen + ' ↗</a>' +
+        '<a class="dl-btn" href="' + src + '" download>' + icon + t().download + '</a>' +
+        (doc.pdfEn ? '<a class="dl-btn" href="kb/' + doc.pdfEn + '" download>' + icon + t().pdfDownloadEn + '</a>' : '') +
+        '</span>' +
+        '</div>' +
+        '<div class="embed-wrap"><iframe class="embed-frame" src="' + src + '" title="' + doc.title[lang] + '"></iframe></div>';
       const wrap = elDoc.querySelector(".embed-wrap");
       if (embedFit) window.removeEventListener("resize", embedFit);
       embedFit = function () {

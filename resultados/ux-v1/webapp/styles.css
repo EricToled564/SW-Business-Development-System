@@ -119,6 +119,7 @@ html.demo-active elevenlabs-convai{display:none!important;visibility:hidden!impo
   margin:-.8rem 0 .8rem;padding:.55rem .8rem;border:1px solid var(--border);
   border-radius:10px;background:var(--bg-soft);font-size:.82rem}
 .embed-link-label{color:var(--muted);white-space:nowrap}
+.embed-link-label.pdf-note{white-space:normal}
 .embed-link-url{color:var(--brand);text-decoration:none;word-break:break-all}
 .embed-link-url:hover{text-decoration:underline}
 .embed-link-actions{margin-left:auto;display:flex;gap:.45rem;flex-wrap:wrap}
