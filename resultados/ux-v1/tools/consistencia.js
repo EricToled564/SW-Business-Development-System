@@ -277,13 +277,16 @@ regla("R12 · registro de documentos", (falla) => {
   marcar("app.js");
   marcar("indice.es.md");
   const idx = texto["indice.es.md"] || "";
-  const re = /\{ id: "([a-z0-9-]+)", type: "doc"[^}]*?(?:pdf: "([^"]+)")?[^}]*\}/g;
+  // type: "pdf" publica el PDF íntegro en el visor; su .es.md se conserva como
+  // texto de la revisión (grupos original y -MOD) y debe seguir existiendo.
+  const re = /\{ id: "([a-z0-9-]+)", type: "(?:doc|pdf)"[^}]*?(?:pdf: "([^"]+)")?(?:, pdfEn: "([^"]+)")?[^}]*\}/g;
   let m;
   while ((m = re.exec(app))) {
-    const [, id, pdf] = m;
+    const [, id, pdf, pdfEn] = m;
     marcar(`${id}.es.md`);
     if (!fs.existsSync(path.join(DOCS, `${id}.es.md`))) falla(id, 0, "registrado en app.js pero sin archivo .es.md");
     if (pdf && !fs.existsSync(path.join(KB, pdf))) falla(id, 0, `sin PDF en webapp/kb: ${pdf}`);
+    if (pdfEn && !fs.existsSync(path.join(KB, pdfEn))) falla(id, 0, `sin PDF en inglés en webapp/kb: ${pdfEn}`);
     if (!idx.includes(`#${id}`)) falla(id, 0, "sin entrada en el índice");
   }
 });
@@ -763,6 +766,35 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
     falla("verificacion/fuentes.md", 0, `cada cuaderno cargaría ${total} fuentes y el límite es 50`);
 });
 
+
+/* ─────────── R24 · Arquitectura de la Experiencia: el PDF publicado es el entregado ─────────── */
+// Por instrucción de Eric (14 oct 2026), «Arquitectura de Experiencia (UX)» se
+// publica con los PDF de la release «Documentation» (tag Docs) de este
+// repositorio, edición integrada del 6 oct 2026 (D-119, CEI-01 v1.6), en español
+// y con la edición en inglés como segunda descarga. No pasan por build_pdfkit.js:
+// se publican byte por byte. Esta regla fija esos bytes con su SHA-256, de modo
+// que una regeneración o una copia equivocada se detecta. Sustituir la edición
+// exige actualizar aquí la huella, con su fuente y fecha.
+regla("R24 · la Arquitectura de la Experiencia publicada es la entregada", (falla) => {
+  marcar("app.js");
+  const crypto = require("crypto");
+  const esperados = {
+    "01-arquitectura-de-la-experiencia-20261006.es.pdf": "b77dcf43a8ad44c2fce266bcf8a26d541c115312d65878de9ef971eb0941f760",
+    "01-arquitectura-de-la-experiencia-20261006.en.pdf": "4eaf961565d99a7d2d8f5dc0c965f05ece1cdcaa68223b634d7415976adf7761",
+  };
+  const entrada = (app.match(/\{ id: "experience", type: "([a-z]+)"[^}]*\}/) || [])[0] || "";
+  if (!entrada) return falla("app.js", 0, "«experience» no está registrado");
+  if (!/type: "pdf"/.test(entrada)) falla("app.js", 0, "«experience» debe publicarse como type: \"pdf\"");
+  for (const [archivo, huella] of Object.entries(esperados)) {
+    if (!entrada.includes(`"${archivo}"`)) falla("app.js", 0, `«experience» no declara ${archivo}`);
+    const p = path.join(KB, archivo);
+    if (!fs.existsSync(p)) { falla(archivo, 0, "falta en webapp/kb"); continue; }
+    const real = crypto.createHash("sha256").update(fs.readFileSync(p)).digest("hex");
+    if (real !== huella) falla(archivo, 0, `la huella SHA-256 no coincide con la de la release (${real.slice(0, 12)}…)`);
+  }
+  if (fs.existsSync(path.join(KB, "01-arquitectura-de-experiencia.es.pdf")))
+    falla("webapp/kb", 0, "sigue publicada la edición anterior 01-arquitectura-de-experiencia.es.pdf");
+});
 
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);
 reglas.forEach((r) => console.log(`  ${r.fallas === 0 ? "\x1b[32m✓\x1b[0m" : "\x1b[31m✗\x1b[0m"} ${r.nombre}${r.fallas ? `  (${r.fallas})` : ""}`));
