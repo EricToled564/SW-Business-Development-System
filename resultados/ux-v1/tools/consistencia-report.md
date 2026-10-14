@@ -1,6 +1,6 @@
 # Reporte de consistencia del depósito
 
-**31 documentos · 4,202 líneas · 24 reglas · 0 hallazgos**
+**31 documentos · 4,329 líneas · 24 reglas · 1 hallazgos**
 
 Este reporte lo genera `tools/consistencia.js` al ejecutarse. La columna «reglas
 aplicadas» no es una declaración: es el registro de qué verificación tocó qué
@@ -26,7 +26,7 @@ archivo durante esta corrida.
 | bds-medicion.es.md | 53 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | bds-resumen.es.md | 52 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | bds-tecnica.es.md | 65 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
-| contrato.es.md | 582 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
+| contrato.es.md | 709 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 1 |
 | entrevistas-campo.es.md | 56 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | execution.es.md | 272 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
 | experience.es.md | 917 | R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R12, R14, R15, R16, R17, R22, R23 (17) | 0 |
@@ -58,7 +58,7 @@ archivo durante esta corrida.
 |---|---:|---:|
 | R1 · sincronización en tiempo real | 30 | 0 |
 | R2 · definiciones de funnel | 30 | 0 |
-| R16 · liga al funnel canónico | 29 | 0 |
+| R16 · liga al funnel canónico | 29 | 1 |
 | R3 · llave de conciliación | 30 | 0 |
 | R17 · registro de cliente | 30 | 0 |
 | R4 · especificación de servidor | 30 | 0 |
@@ -80,3 +80,9 @@ archivo durante esta corrida.
 | R21 · el registro de cambios del proceso no se publica | 0 | 0 |
 | R23 · las páginas de fuentes reflejan los documentos | 31 | 0 |
 | R24 · la Arquitectura de la Experiencia publicada sale de su fuente única | 1 | 0 |
+
+## Hallazgos
+
+| Regla | Documento | Línea | Detalle |
+|---|---|---:|---|
+| R16 · liga al funnel canónico | contrato.es.md | — | menciona el funnel 9 veces y no liga al documento canónico (#funnel) |
