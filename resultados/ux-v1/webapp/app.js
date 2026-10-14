@@ -103,8 +103,9 @@
       title: { es: "Plan de Ejecución", en: "Execution Plan" } },
     { id: "gastos-operativos", type: "doc", group: "generales", red: true, pdf: "28-gastos-operativos.es.pdf",
       title: { es: "Gastos Operativos Variables", en: "Variable Operating Costs" } },
-    // Instrucción de Eric (14 oct 2026): la página muestra funcional sustituye al demo del cuestionario.
-    { id: "demo", type: "embed", group: "generales", red: true, src: "https://sportsworldnew.vercel.app/",
+    // Instrucción de Eric (14 oct 2026): la página muestra funcional sustituye al demo del
+    // cuestionario y se abre como enlace a su sitio, en una pestaña nueva (sin incrustarla).
+    { id: "demo", type: "link", group: "generales", red: true, href: "https://sportsworldnew.vercel.app/",
       title: { es: "Demo funcional · Página muestra", en: "Working demo · Sample page" } },
     { id: "mpc-01", type: "page", group: "proceso", red: true, src: "proceso/mpc-01.html",
       title: { es: "MPC/SW/01 · Manual del Proceso Comercial", en: "MPC/SW/01 · Commercial Process Manual" } },
@@ -279,6 +280,11 @@
       if (!groups[g]) return;
       html += '<div class="nav-group"><h4' + (GROUP_TITLE_RED.includes(g) ? ' class="group-title-red"' : "") + ">" + t().groups[g] + "</h4>";
       groups[g].forEach((d) => {
+        if (d.type === "link") {
+          html += '<a class="nav-item nav-ext' + (d.red ? " nav-red" : "") + '" data-ext="1" href="' + d.href +
+            '" target="_blank" rel="noopener">' + d.title[lang] + " ↗</a>";
+          return;
+        }
         html += '<a class="nav-item' + (d.red ? " nav-red" : "") + (d.id === currentDoc ? " active" : "") + '" data-doc="' + d.id + '" href="#' + d.id + '">' + d.title[lang] + "</a>";
       });
       html += "</div>";
@@ -336,6 +342,21 @@
       renderPage(doc, anchor);
       if (push) history.replaceState(null, "", "#" + doc.id + (anchor ? ":" + anchor : ""));
       document.title = doc.title[lang] + " · Sports World";
+      closeSidebar();
+      return;
+    }
+
+    if (doc.type === "link") {
+      // Enlace externo (p. ej. #demo desde el Índice): una tarjeta con el botón al sitio.
+      elDoc.innerHTML =
+        '<h1>' + doc.title[lang] + '</h1>' +
+        '<div class="embed-link">' +
+        '<a class="embed-link-url" href="' + doc.href + '" target="_blank" rel="noopener">' + doc.href + '</a>' +
+        '<span class="embed-link-actions"><a class="embed-link-btn" href="' + doc.href + '" target="_blank" rel="noopener">' + t().demoOpen + ' ↗</a></span>' +
+        '</div>';
+      if (push) history.replaceState(null, "", "#" + doc.id);
+      document.title = doc.title[lang] + " · Sports World";
+      window.scrollTo(0, 0);
       closeSidebar();
       return;
     }
@@ -959,6 +980,7 @@
   /* events */
   document.addEventListener("click", (e) => {
     const nav = e.target.closest(".nav-item");
+    if (nav && nav.dataset.ext) { closeSidebar(); return; } // enlace externo: lo abre el navegador
     if (nav) {
       e.preventDefault();
       const nd = DOCS.find((d) => d.id === nav.dataset.doc);
