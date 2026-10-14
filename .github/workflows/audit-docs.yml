@@ -14,6 +14,7 @@ on:
       - "resultados/ux-v1/tools/consistencia.js"
       - "resultados/ux-v1/webapp/index.html"
       - "verificacion/**"
+      - "arquitectura/**"
       - ".github/workflows/audit-docs.yml"
   pull_request:
     paths:
@@ -25,6 +26,7 @@ on:
       - "resultados/ux-v1/tools/build-fuentes.js"
       - "resultados/ux-v1/tools/consistencia.js"
       - "verificacion/**"
+      - "arquitectura/**"
   workflow_dispatch:
 
 permissions:

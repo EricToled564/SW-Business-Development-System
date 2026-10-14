@@ -1,0 +1,20 @@
+{
+  "documento": "Arquitectura de la Experiencia",
+  "fuente_unica": true,
+  "idiomas": {
+    "es": {
+      "fuente": "arquitectura/fuente/arquitectura.es.md",
+      "fuente_sha256": "c97bf45275aca847368fde2f69ddc16c8055ba8b91a0497dd64f11ea77ca58b9",
+      "pdf": "resultados/ux-v1/webapp/kb/01-arquitectura-de-la-experiencia.es.pdf",
+      "pdf_sha256": "6400784601f87605d818fd4a2158b6d3f633e7c061f42341bae43d1d7dc6787c",
+      "fecha_edicion": "2026-10-14"
+    },
+    "en": {
+      "fuente": "arquitectura/fuente/arquitectura.en.md",
+      "fuente_sha256": "e3b12e94d6ad44752f9d43bd9685e8b8e47d021bfe51a699396dee1a2d17fd8b",
+      "pdf": "resultados/ux-v1/webapp/kb/01-arquitectura-de-la-experiencia.en.pdf",
+      "pdf_sha256": "1bab8a0634888a7f5243c733e1945e53bb66aa961897e089e5960604ad4912c6",
+      "fecha_edicion": "2026-10-14"
+    }
+  }
+}

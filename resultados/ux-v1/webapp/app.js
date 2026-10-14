@@ -121,9 +121,9 @@
       title: { es: "MV/SW/01 · Manual de Ventas", en: "MV/SW/01 · Sales Manual" } },
     { id: "entrenador", type: "embed", group: "proceso", red: true, src: "demo-manual/index.html",
       title: { es: "Entrenador de Ventas · demo", en: "Sales Trainer · demo" } },
-    // Edición integrada del 6 oct 2026 (D-119, CEI-01 v1.6): se publica el PDF de la
-    // release «Documentation» (tag Docs) tal cual, por instrucción de Eric del 14 oct 2026.
-    { id: "experience", type: "pdf", group: "proyectoA", pdf: "01-arquitectura-de-la-experiencia-20261006.es.pdf", pdfEn: "01-arquitectura-de-la-experiencia-20261006.en.pdf",
+    // Fuente única de la verdad (D-120, 14 oct 2026): los PDF se generan desde
+    // arquitectura/fuente/ con arquitectura/herramientas/publicar.py. R24 lo verifica.
+    { id: "experience", type: "pdf", group: "proyectoA", pdf: "01-arquitectura-de-la-experiencia.es.pdf", pdfEn: "01-arquitectura-de-la-experiencia.en.pdf",
       title: { es: "Arquitectura de Experiencia (UX)", en: "Experience Architecture (UX)" } },
     { id: "technical", type: "doc", group: "proyectoA", pdf: "02-estrategia-tecnica.es.pdf",
       title: { es: "Estrategia Técnica", en: "Technical Strategy" } },
