@@ -20,7 +20,7 @@ El proyecto es un **sistema de ventas**: convierte la infraestructura de Sports 
 | 4 | [**Glosario**](#glosario) | Definiciones únicas de términos técnicos y de negocio usados en toda la documentación, de los tres proyectos. | Todos |
 | 5 | [**Plan de Ejecución**](#execution) | Marco de gobierno de **los tres proyectos**: para el Proyecto A, cronograma comprometido de 8 semanas con criterios de salida, KPIs técnicos, riesgos y control de cambios; para el Proyecto B (BDS), el quinto equipo, sus tareas y dependencias (§10); para el Proyecto C (Academia), el marco de arranque y sus dependencias (§11) — los plazos de B (8 semanas, en paralelo al A) y C (10 semanas) corren desde la firma de su Addendum. | Dirección, TI, PMO |
 | 6 | [**Gastos Operativos Variables**](#gastos-operativos) | Estimación mensual (**V1.2**; contenido del **Anexo Tres** del Contrato, informativo) de los costos de plataformas a cargo de Sports World (IA, voz, WhatsApp — el hospedaje corre en infraestructura propia del cliente, sin costo de proveedor externo) en tres escenarios de tráfico e interacciones, con tarifas verificadas y totales en USD y MXN. | Dirección, Finanzas |
-| 7 | [**Demo Cuestionario Inteligente**](#demo) | Demostración interactiva del cuestionario dinámico y la experiencia ideal — el instrumento que produce el producto del sistema, compartido por los tres proyectos. | Negocio, dirección |
+| 7 | [**Demo funcional · Página muestra**](#demo) | Página muestra en funcionamiento del sitio de Sports World, con el recorrido de la experiencia ideal, publicada en sportsworldnew.vercel.app. | Negocio, dirección |
 
 ## El proceso comercial · procedimientos normalizados
 
