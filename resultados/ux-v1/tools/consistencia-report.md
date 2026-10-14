@@ -79,4 +79,4 @@ archivo durante esta corrida.
 | R22 · enrutamiento de WhatsApp | 32 | 0 |
 | R21 · el registro de cambios del proceso no se publica | 0 | 0 |
 | R23 · las páginas de fuentes reflejan los documentos | 31 | 0 |
-| R24 · la Arquitectura de la Experiencia publicada es la entregada | 1 | 0 |
+| R24 · la Arquitectura de la Experiencia publicada sale de su fuente única | 1 | 0 |

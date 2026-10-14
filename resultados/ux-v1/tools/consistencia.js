@@ -767,33 +767,48 @@ regla("R23 · las páginas de fuentes reflejan los documentos", (falla) => {
 });
 
 
-/* ─────────── R24 · Arquitectura de la Experiencia: el PDF publicado es el entregado ─────────── */
-// Por instrucción de Eric (14 oct 2026), «Arquitectura de Experiencia (UX)» se
-// publica con los PDF de la release «Documentation» (tag Docs) de este
-// repositorio, edición integrada del 6 oct 2026 (D-119, CEI-01 v1.6), en español
-// y con la edición en inglés como segunda descarga. No pasan por build_pdfkit.js:
-// se publican byte por byte. Esta regla fija esos bytes con su SHA-256, de modo
-// que una regeneración o una copia equivocada se detecta. Sustituir la edición
-// exige actualizar aquí la huella, con su fuente y fecha.
-regla("R24 · la Arquitectura de la Experiencia publicada es la entregada", (falla) => {
+/* ─────────── R24 · Arquitectura de la Experiencia: fuente única de la verdad ─────────── */
+// D-120 (instrucción de Eric, 14 oct 2026): la Arquitectura de la Experiencia,
+// en español y en inglés, es la fuente única de la verdad. Su texto fuente vive
+// en arquitectura/fuente/ y sus PDF se generan desde él con
+// arquitectura/herramientas/publicar.py, que deja las huellas en
+// arquitectura/manifiesto.json. Esta regla exige que:
+//  · el portal publique esos dos PDF, el español en el visor y el inglés como descarga;
+//  · cada fuente y cada PDF coincidan con su huella: una fuente editada sin
+//    regenerar, o un PDF que no sale de la fuente, falla aquí;
+//  · no reaparezcan las ediciones anteriores en webapp/kb;
+//  · la fuente no vuelva a ofrecer programas prenatales o de posparto ni a
+//    mencionar embarazo o posparto (D-120 los retiró del documento).
+regla("R24 · la Arquitectura de la Experiencia publicada sale de su fuente única", (falla) => {
   marcar("app.js");
   const crypto = require("crypto");
-  const esperados = {
-    "01-arquitectura-de-la-experiencia-20261006.es.pdf": "b77dcf43a8ad44c2fce266bcf8a26d541c115312d65878de9ef971eb0941f760",
-    "01-arquitectura-de-la-experiencia-20261006.en.pdf": "4eaf961565d99a7d2d8f5dc0c965f05ece1cdcaa68223b634d7415976adf7761",
-  };
+  const RAIZ = path.resolve(__dirname, "../../..");
+  const huella = (p) => crypto.createHash("sha256").update(fs.readFileSync(p)).digest("hex");
+  const pManif = path.join(RAIZ, "arquitectura/manifiesto.json");
+  if (!fs.existsSync(pManif)) return falla("arquitectura/manifiesto.json", 0, "falta: ejecutar arquitectura/herramientas/publicar.py");
+  const manif = JSON.parse(fs.readFileSync(pManif, "utf8"));
   const entrada = (app.match(/\{ id: "experience", type: "([a-z]+)"[^}]*\}/) || [])[0] || "";
   if (!entrada) return falla("app.js", 0, "«experience» no está registrado");
   if (!/type: "pdf"/.test(entrada)) falla("app.js", 0, "«experience» debe publicarse como type: \"pdf\"");
-  for (const [archivo, huella] of Object.entries(esperados)) {
-    if (!entrada.includes(`"${archivo}"`)) falla("app.js", 0, `«experience» no declara ${archivo}`);
-    const p = path.join(KB, archivo);
-    if (!fs.existsSync(p)) { falla(archivo, 0, "falta en webapp/kb"); continue; }
-    const real = crypto.createHash("sha256").update(fs.readFileSync(p)).digest("hex");
-    if (real !== huella) falla(archivo, 0, `la huella SHA-256 no coincide con la de la release (${real.slice(0, 12)}…)`);
+  const campo = { es: "pdf", en: "pdfEn" };
+  for (const lang of ["es", "en"]) {
+    const m = manif.idiomas && manif.idiomas[lang];
+    if (!m) { falla("arquitectura/manifiesto.json", 0, `sin entrada para «${lang}»`); continue; }
+    const archivo = path.basename(m.pdf);
+    if (!entrada.includes(`${campo[lang]}: "${archivo}"`)) falla("app.js", 0, `«experience» debe declarar ${campo[lang]}: "${archivo}"`);
+    const pFuente = path.join(RAIZ, m.fuente), pPdf = path.join(RAIZ, m.pdf);
+    if (!fs.existsSync(pFuente)) { falla(m.fuente, 0, "falta la fuente"); continue; }
+    if (!fs.existsSync(pPdf)) { falla(m.pdf, 0, "falta el PDF"); continue; }
+    if (huella(pFuente) !== m.fuente_sha256) falla(m.fuente, 0, "la fuente cambió sin regenerar sus PDF (arquitectura/herramientas/publicar.py)");
+    if (huella(pPdf) !== m.pdf_sha256) falla(m.pdf, 0, "el PDF publicado no es el generado desde la fuente");
+    const texto = fs.readFileSync(pFuente, "utf8");
+    const retirado = /prenatal|pre-?parto|pos-?t?parto|post-?partum|embaraz|pregnan/i;
+    texto.split("\n").forEach((linea, i) => {
+      if (retirado.test(linea)) falla(m.fuente, i + 1, "menciona lo que D-120 retiró del documento (programas prenatales o de posparto)");
+    });
   }
-  if (fs.existsSync(path.join(KB, "01-arquitectura-de-experiencia.es.pdf")))
-    falla("webapp/kb", 0, "sigue publicada la edición anterior 01-arquitectura-de-experiencia.es.pdf");
+  for (const viejo of ["01-arquitectura-de-experiencia.es.pdf", "01-arquitectura-de-la-experiencia-20261006.es.pdf", "01-arquitectura-de-la-experiencia-20261006.en.pdf"])
+    if (fs.existsSync(path.join(KB, viejo))) falla("webapp/kb", 0, `sigue publicada una edición anterior: ${viejo}`);
 });
 
 console.log(`\nVerificador de consistencia · ${archivos.length} documentos · ${totalLineas.toLocaleString("es-MX")} líneas · ${reglas.length} reglas\n`);

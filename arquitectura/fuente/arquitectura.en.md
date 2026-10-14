@@ -1,13 +1,13 @@
-<!-- fecha-edicion: 2026-10-06 -->
+<!-- fecha-edicion: 2026-10-14 -->
 <!-- portada -->
 Sports World Mexico
 Experience Architecture
 Lead acquisition, conversion and measurement
 Website and self-guided experience
 21 chapters and appendices
-Integrated English edition - October 6, 2026
-Current basis: D-119 and CEI-01 version 1.6
-Version for review
+Canonical English edition - 14 October 2026
+Current basis: D-120 and CEI-01 version 1.7
+Single source of truth
 The journey ends with the Ideal Experience email to the person and the brief email to the club. The dashboard
 and measurement continue using the results supplied by Sports World.
 <!-- /portada -->
@@ -23,15 +23,15 @@ and measurement continue using the results supplied by Sports World.
 |---|---|
 | Document | Architecture of Experience · consolidated set |
 | Date | 5 October 2026 |
-| Version | Editorial close for revision · D-119 |
+| Version | Single source of truth · D-120 |
 | Status | 21 written chapters; preserved previous approvals; 19–21 chapters for revision |
 | Appendices | B, D, E and F written; A and C with exact source dependency |
-| Instrument | CEI-01 1.6 version |
+| Instrument | CEI-01 version 1.7 |
 | Addressees | Commercial management, implementation team and verification owners |
 
 ### The Documentary Base {#the-documentary-base}
 
-Eric's explicit instructions and the subsequent recorded decisions govern this review. The chapters are based on the consolidated set incorporating D-119 of October 5. CEI-01 v1.6 remains the sole instrument. Decisions apply together with their recorded supersessions; the complete addendum preserves the history.
+Eric's explicit instructions and the subsequent recorded decisions govern this review. The chapters are based on the consolidated set incorporating D-119 of October 5 and decision D-120 of October 14. CEI-01 v1.7 remains the sole instrument. **Since D-120, this document, in Spanish and in English, is the single source of truth for the Experience Architecture.** Decisions apply together with their recorded supersessions; the complete addendum preserves the history.
 
 The original experience and its integration documents provide the basis for the remaining sections. Superseded rules are interpreted through the current decisions. Contractual performance and content commitments retain the figures recorded in 1.7 and 20. BES service, WhatsApp service and the advisor console were excluded at the client's instruction, recorded in D-116.
 
@@ -41,8 +41,8 @@ The journey ends with the experience and brief emails. The funnel and dashboard 
 | **Reference** | **Current function** |
 |---|---|
 | [Structural index](#document-structure) | Parts, parts and condition |
-| [Decision log in full](#decision-log-architecture-review-addendum) | D-33 to D-119 decisions and replacements |
-| [CEI-01 v1.6](#ideal-experience-questionnaire-cei-01) | Questions, preload and two routes |
+| [Decision log in full](#decision-log-architecture-review-addendum) | D-33 to D-120 decisions and replacements |
+| [CEI-01 v1.7](#ideal-experience-questionnaire-cei-01) | Questions, preload and two routes |
 | [Editorial standard](#editorial-standard) | Form of each section |
 | [Chapter 18](#chapter-18-the-funnel-and-the-dashboard) | Single funnel reference and dashboard |
 | [Appendix E](#appendix-e-source-contracts-field-by-field) | Data exchange contracts |
@@ -81,7 +81,7 @@ Archetypes, the design system, lead scoring and A/B tests retain the destination
 | Training Block | Each of the three parts of the plan: B01, B02 and B03. |
 | Brief | Delivery to the club containing the profile, contact details, result and signals from the same experience version; with an appointment or as a direct call. |
 | Personal Layer | Session-dependent menus and controls layered over shared public content. |
-| CEI-01 | The Ideal Experience Questionnaire, version 1.6. The system's sole instrument. |
+| CEI-01 | The Ideal Experience Questionnaire, version 1.7. The system's sole instrument. |
 | Individual Class | A page dedicated to a discipline; includes 44 group disciplines and three individual training modes. Individual training in Q12 describes the training format. |
 | Premium Class | One of the seven disciplines Sports World chooses to prioritize. Its page contains more text and images. |
 | CLS | A unitless measure of cumulative content displacement. |
@@ -150,7 +150,7 @@ Archetypes, the design system, lead scoring and A/B tests retain the destination
 | OE-# | OE-1–OE-5 | Emotional objectives |
 | OF-# | OF-1–OF-6 | Functional objectives |
 | B## | B01–B03 | Training blocks |
-| REQ-# | REQ-1–REQ-4 | Requirements; class P0 as a conditional requirement |
+| REQ-# | REQ-1–REQ-3 | Requirements; class P0 as a conditional requirement |
 | RN-## | RN-01–RN-nn | Business rules |
 | E## | E0 and E2–E7 | Stages of Chapter 18 |
 | C1[a–c] | C1a, C1b, C1c | Entry cuts |
@@ -1380,7 +1380,6 @@ a flag is available as a requirement and must be shown all those applying:
 
 -  **No pool**;
 -  **No activities** for **children under 13** years of age;
--  **It does** not have **appropriate classes** for **prenatal** or **postpart**um periods;
 -  **He doesn**'t have **low-impact** classes.
 
 When the person accepted a class through the preload questionnaire and an alternative club does not offer it, a flag that names that class must also appear.
@@ -1562,7 +1561,7 @@ The complete logic is:
 
 All Ideal Experience customization comes out of one instrument: **Questionnaire** Ideal Experience, identified as **CEI-01**.
 
-The current version is **the 1.6**, and lives in this same folder.
+The current version is **1.7**, and lives in this same folder.
 
 **Any system customization rule must be based on a data collected or confirmed by CEI-01.**
 
@@ -1684,7 +1683,7 @@ Accepting a class produces two different effects depending on whether or not a f
 | **With club fixed** | The class must be secured in the third block. The club was already fixed and the snapshot already confirmed that it imparts it |
 | **No club fixed** | **The** class must become **a requirement** of the club. The solver must consider the clubs that teach it, offer as recommended the closest that meets it and show as alternatives the closest clubs with the corresponding flag |
 
-This second case adds **a fifth requirement** to the four set by the questionnaire.
+This second case adds **a fourth requirement** to the three set by the questionnaire.
 
 This class requirement is only active if Q12 is a group. Confirmed amenities participate in the selection under the control of CEI-01 clubs.
 
@@ -1724,7 +1723,7 @@ The current identifiers are Q1 **to Q10**, **Q12** to **Q16** and **Q17** for th
 | **Key** | **Question Text** | **What determines** |
 |---|---|---|
 | **Q1** | What's her name? | The greeting and writing of his experience. The last name is later requested, during the capture of contact |
-| **Q2** | How you prefer to go to her | **The agreement of the options and the text,** **in** its three **forms:** male**,** female **and** neutral**.** It also enables the prenatal option of Q14**. It** **must not be used to assign advisor or to** **infer identity or condition** |
+| **Q2** | How you prefer to go to her | **The agreement of the options and the text,** **in** its three **forms:** male**,** female **and** neutral**.** **It** **must not be used to assign advisor or to** **infer identity or condition** |
 | **Q3** | What you want to feel when you leave the club | The tone with which your experience is written. The choice of the club is resolved separately |
 | **Q4** | What are you looking for? | The training blocks, the classes by objective and the main argument |
 | **Q5** | What a rhythm it is with her | The class selection criteria, along with the goal and level. It also travels to the brief |
@@ -1742,7 +1741,7 @@ The current identifiers are Q1 **to Q10**, **Q12** to **Q16** and **Q17** for th
 
 **Q11 belongs** to **the conditional questions**, so the base numbering jumps from Q10 to Q12.
 
-### 5.4.1 The four requirements set by the questionnaire {#5-4-1-the-four-requirements-set-by-the-questionnaire}
+### 5.4.1 The three requirements set by the questionnaire {#5-4-1-the-three-requirements-set-by-the-questionnaire}
 
 **Each** preference declared in Q14 must become a requirement for the club's choice.
 
@@ -1750,16 +1749,15 @@ The current identifiers are Q1 **to Q10**, **Q12** to **Q16** and **Q17** for th
 | **Declared preference** | **The club must have** |
 |---|---|
 | Activities for children aged 3 months to 13 years | Verified activities for children under 13 years |
-| Prenatal or postpartum programmes | Classes suitable for these periods, for each of the person's objectives |
 | Low impact programmes | Low impact classes, for each of the person's objectives |
 
-The fourth requirement is **pool**.
+The third requirement is the **pool**.
 
 It comes from Q6 and must be required as an amenity when the chosen or resolved modality is In **pool** or Both.
 
 In both cases, pool is **an hard requirement** for **club choice**, because without it the system cannot deliver the modality requested by the person.
 
-Prenatal or postpartum and low-impact class preferences must also activate the contraindications matrix.
+The low-impact class preference must also activate the contraindications matrix.
 
 **The matrix must replace each contra-indicated class with an equivalent alternative for the same target.**
 
@@ -1867,7 +1865,6 @@ Within the same question, some options must appear only when your condition is m
 | **Option** | **Shown** |
 |---|---|
 | **Low impact programmes** | Always. |
-| **Prenatal or postpartum** **programmes** | When Q2 is “Feminine” |
 | **Activities for children aged 3** **months to 13 years** | When Q13 is “With My Children” or “With My Family” |
 | **None of the above** | It must always be exclusive. |
 
@@ -1949,7 +1946,7 @@ Chapter 13 specifies how this agreement must be applied.
 
 CEI-01 must **collect stated preferences, not clinical** conditions.
 
-Medical conditions, pregnancy and postpartum as clinical conditions, treatments, medications, surgeries, weight, height, body measures and personal data of minors must remain out of scope.
+Medical conditions, treatments, medications, surgeries, weight, height, body measures and personal data of minors must remain out of scope.
 
 Whoever builds the system must not **collect** them or **infer** them.
 
@@ -1966,12 +1963,11 @@ The decision does not reduce the ability to recommend the system because **logic
 Q14 asks what the person who prioritizes wants:
 
 -  low impact programmes;
--  prenatal or postpartum programmes;
 -  activities for minors.
 
 The system must use that preference only.
 
-You must not infer from it an injury, pregnancy, postpartum, illness or any other health condition.
+You must not infer from it an injury, an illness or any other health condition.
 
 Thus, a low impact seeker receives the corresponding selection without Sports World needing to guard within CEI-01 the clinical data that might motivate that preference.
 
@@ -3473,7 +3469,6 @@ The requirements can differentiate between clubs because not everyone has:
 
 -  pool;
 -  low impact programmes;
--  prenatal or postpartum programmes;
 -  activities for minors;
 -  or a specific class confirmed by P0.
 
@@ -3481,17 +3476,16 @@ For automatic recommendation, each active requirement functions as a condition o
 
 **As long as there is a club that meets all the active requirements, the system must not recommend as ideal club one that fails to meet one just because it is closer.**
 
-## 10.2 The four requirements {#10-2-the-four-requirements}
+## 10.2 The three requirements {#10-2-the-three-requirements}
 
 <!-- tabla anchos=110.0,175.0,223.3 letra=10.5 -->
 | **Key** | **Requirement** | **Where it comes from** |
 |---|---|---|
 | **REQ-1** | Pool | Q6, when the chosen or resolved modality is In **the pool** or Both |
 | **REQ-2** | Low impact classes for each declared target | Q14, when declaring **Low Impact** Programs |
-| **REQ-3** | Classes suitable for prenatal or postpartum periods for each declared objective | Q14, when declaring **prenatal or postpartum** **programs** |
-| **REQ-4** | Verified activities for children under 13 years | **Q14,** when declaring **Activities for children** **aged 3 months to 13 years** |
+| **REQ-3** | Verified activities for children under 13 years | **Q14,** when declaring **Activities for children** **aged 3 months to 13 years** |
 
-These four requirements must be used to determine which clubs can fully satisfy what the person stated.
+These three requirements must be used to determine which clubs can fully satisfy what the person stated.
 
 A club that does not **comply with** one **of them may** continue to appear as an alternative**, but** it must not **automatically become the ideal club as long as there is an option that meets all the requirements.**
 
@@ -3519,17 +3513,7 @@ If you cannot:
 -  you must show you don't have **low impact** classes;
 -  and, if the person wants to select them, they must expressly accept that this requirement ceases to be part of the Ideal Experience calculated for that club.
 
-### 10.2.3 REQ-3 · Prenatal or postpartum {#10-2-3-req-3-prenatal-or-postpartum}
-
-When Q14 indicates **prenatal** or **postpart**um programs, the club must have an offer compatible with that requirement.
-
-If you don't:
-
--  must not be the automatic recommendation as long as there is one that does;
--  you must show you do not have **appropriate classes** for **prenatal** or **postpart**um periods;
--  and the person must expressly accept exclusion before the system changes club.
-
-### 10.2.4 REQ-4 · Activities for minors {#10-2-4-req-4-activities-for-minors}
+### 10.2.3 REQ-3 · Activities for minors {#10-2-3-req-3-activities-for-minors}
 
 When Q14 indicates **Activities for children aged 3 months to 13 years**, the club must have the corresponding service.
 
@@ -3539,9 +3523,9 @@ If you don't have it:
 -  **must** show No **activities** for **children under 13** years;
 -  and the person must confirm that they agrees to continue without that element before making the change.
 
-## 10.3 The fifth conditional requirement {#10-3-the-fifth-conditional-requirement}
+## 10.3 The fourth conditional requirement {#10-3-the-fourth-conditional-requirement}
 
-There is a fifth requirement that does not belong to the fixed REQ-# family.
+There is a fourth requirement that does not belong to the fixed REQ-# family.
 
 When you accept in P0 a specific class without a fixed club and Q12 is group, that class becomes a requirement to select the club. If Q12 is individual, it does not activate a selection or a group class requirement.
 
@@ -3573,8 +3557,7 @@ The specific selection of classes is subsequently resolved by the corresponding 
 Therefore:
 
 -  REQ-2 determines that there must be a low impact solution;
--  REQ-3 determines that there must be an prenatal or postpartum solution;
--  REQ-4 determines that there must be the corresponding service for minors;
+-  REQ-3 determines that there must be the corresponding service for minors;
 -  REQ-1 determines the availability of pool;
 -  and the P0 requirement determines the availability of a specific class.
 
@@ -3677,7 +3660,7 @@ When no 49 club meets all requirements simultaneously, the system must:
 
 The condition of target classes × intensity must not be used as a tiebreaker because the 49 clubs already comply with it by design.
 
-The fifth requirement of P0 must also count when it is active.
+The fourth requirement of P0 must also count when it is active.
 
 ### 10.7.2 The fourth mode must be exceptional {#10-7-2-the-fourth-mode-must-be-exceptional}
 
@@ -3718,8 +3701,7 @@ When an option does not meet one or more requirements it must show exactly which
 |---|---|
 | REQ-1 · Pool | ‘No pool’ |
 | REQ-2 · Low impact | ‘No low impact classes’ |
-| REQ-3 · Prenatal or postpartum | ‘You do not have appropriate classes for prenatal or postpartum periods’ |
-| REQ-4 · Activities for minors | “No activities for children of 13 years” |
+| REQ-3 · Activities for minors | “No activities for children of 13 years” |
 | Class confirmed by P0 | ‘Does not impart [class name]’ |
 
 If you fail to meet several requirements, you must show all requirements.
@@ -3819,15 +3801,7 @@ We can change you to this club, but we'll have to recalculate your Ideal Experie
 
 Do you agree?
 
-### 10.10.3 Example · Prenatal or postpartum {#10-10-3-example-prenatal-or-postpartum}
-
-This club does not offer the prenatal or postpartum options you had requested.
-
-We can switch you to this club, but that requirement will have to be excluded from your Ideal Experience.
-
-Do you agree?
-
-### 10.10.4 Example · Activities for minors {#10-10-4-example-activities-for-minors}
+### 10.10.3 Example · Activities for minors {#10-10-3-example-activities-for-minors}
 
 This club does not offer the activities for minors that you had requested.
 
@@ -3835,7 +3809,7 @@ We can switch you to this club, but those activities won't be part of your Ideal
 
 Do you agree?
 
-### 10.10.5 Example · Class confirmed in P0 {#10-10-5-example-class-confirmed-in-p0}
+### 10.10.4 Example · Class confirmed in P0 {#10-10-4-example-class-confirmed-in-p0}
 
 This club does not teach [class name].
 
@@ -4584,7 +4558,6 @@ According **to** the data source rule **of** chapter 14**, what follows is the c
 -  to what objective or objectives it serves;
 -  to what degree of intensity it qualifies;
 -  whether it is suitable for low-impact programmes;
--  if it is suitable for prenatal or postpartum periods;
 -  its equivalent class, where it is contraindicated;
 -  the strength of the evidence chain which qualifies it for that purpose: direct, one step or absent, according to section 12.1.1.
 
@@ -4616,7 +4589,7 @@ The selector solves the appropriate classes in a fixed order.
 | **2** | Filter the classes qualified for the main purpose | Q4, first target chosen |
 | **3** | Apply the intensity filter | Q5 in accordance with paragraph 12.3 |
 | **4** | Sort by level | Q9 in accordance with paragraph 12.3 |
-| **5** | Applies the contraindications matrix | Q14, when declaring low impact or prenatal/postpartum, according to section 12.4 |
+| **5** | Applies the contraindications matrix | Q14, when declaring low impact, according to section 12.4 |
 | **6** | When there is a secondary target, it diversifies the selection | Q4, second target chosen according to section 7.4 |
 
 The composition also applies Q6 to integrate the aquatic component when appropriate in the group branch. Q12 individual does not activate group selection.
@@ -4639,9 +4612,9 @@ The composition also applies Q6 to integrate the aquatic component when appropri
 
 ## 12.4 The Contraindications Matrix {#12-4-the-contraindications-matrix}
 
-**When Q14 declares low impact or prenatal/postpartum, the matrix is applied to automatic selection. The class accepted in P0 is preserved against differences with objectives or preferences; the flag travels only to the brief. Individual Q12 excludes groups even if previously accepted.**
+**When Q14 declares low impact, the matrix is applied to automatic selection. The class accepted in P0 is preserved against differences with objectives or preferences; the flag travels only to the brief. Individual Q12 excludes groups even if previously accepted.**
 
-The contraindications matrix is the same matrix of classes in section 12.1: the qualification of aptitude for low impact and for prenatal or postpartum is one of the fields that this matrix must deliver by class.
+The contraindications matrix is the same matrix of classes in section 12.1: the qualification of aptitude for low impact is one of the fields that this matrix must deliver by class.
 
 <!-- tabla anchos=156.0,352.3 letra=10.5 -->
 | **Step** | **What It Does** |
@@ -4658,7 +4631,7 @@ The contraindications matrix is the same matrix of classes in section 12.1: the 
 
 When the class matrix marks one class as the equivalent of another for the same purpose, that equivalent takes its place in the right classes.
 
-**The REQ-2** and **REQ-3 requirements** of **Chapter 10 depend** on this **rule**. A club meets ‘low impact programs’ or ‘prenatal or postpartum programs’ when, after applying this replacement, it still has at least one class suitable for each target of the person. A club without any class equivalent to a stated target does not meet the requirement, and is left out according to section 10.2.
+**The REQ-2 requirement of Chapter 10 depends on this rule.** A club meets ‘low impact programs’ when, after applying this replacement, it still has at least one class suitable for each target of the person. A club without any class equivalent to a stated target does not meet the requirement, and is left out according to section 10.2.
 
 **The person** never **sees** a class marked as retreat**. they see the selection already resolved, with its equivalent in the corresponding place.**
 
@@ -4674,7 +4647,7 @@ When you accept a class in P0 and Q12 is a group, that class must **remain** in 
 
 **The insured** class **occupies place** within **the appropriate** classes**, does** not **add apart**. The selector composes the rest of B03 around it, with the same six steps.
 
-**It is not selected** if **Q12 is individual**. **In the group branch it comes out if**: the person chooses a club that does not teach it and expressly accepts that consequence, according to the 10.10.5 section. Then the selector recomposes B03 without it, and the chapter 11 states that the plan is recalculated completely.
+**It is not selected** if **Q12 is individual**. **In the group branch it comes out if**: the person chooses a club that does not teach it and expressly accepts that consequence, according to the 10.10.4 section. Then the selector recomposes B03 without it, and the chapter 11 states that the plan is recalculated completely.
 
 ## 12.7 How many classes make up B03 {#12-7-how-many-classes-make-up-b03}
 
@@ -4720,7 +4693,7 @@ When Q12 indicates that the person prefers train without company, the system mus
 
 B03 must be resolved as personal training in accordance with Chapter 11.
 
-The class matrix can continue to be consulted only when necessary to validate club requirements, such as REQ-2 or REQ-3.
+The class matrix can continue to be consulted only when necessary to validate club requirements, such as REQ-2.
 
 Such validation must not become a visible class selection for the person.
 
@@ -4890,7 +4863,7 @@ Q14 must provide the stated preferences. The offer of activities for minors must
 
 The modality must correspond to Q6 and the exceptions accepted for that club. B01 must remain on floor. B02 must retain the calculated composition of floor, water or both.
 
-**The model must not convert a preference for low-impact or prenatal programs into a diagnosis, injury, or pregnancy claim.**
+**The model must not convert a preference for low-impact programs into a diagnosis or an injury.**
 
 The model must not infer health status from the level, history or duration of the break.
 
@@ -5075,7 +5048,7 @@ Sports World must maintain an identifiable version of each matrix. Each version 
 
 ### 14.3.1 The Class Matrix {#14-3-1-the-class-matrix}
 
-The matrix must comply with the 12.1 contract. The aptitude for low impact and for prenatal or postpartum periods must be part of the same matrix.
+The matrix must comply with the 12.1 contract. The aptitude for low impact must be part of the same matrix.
 
 <!-- tabla anchos=156.0,352.3 letra=10.5 -->
 | **Data** | **Minimum content** |
@@ -5085,7 +5058,6 @@ The matrix must comply with the 12.1 contract. The aptitude for low impact and f
 | **Intensity** | Rating corresponding to the three rhythms of Q5 |
 | **Class–Objective ratio** | Qualification and qualification for each applicable combination |
 | **Low impact** | Class fitness for that preference |
-| **Prenatal or postpartum** | Class fitness for that preference |
 | **Equivalent Class** | Identifier of the substitute class for the same target |
 | **Strength of the Evidence** **Chain** | Direct, one step or absent, according to section 12.1.1 |
 | **Governance** | Version, date of approval and responsible |
@@ -5199,7 +5171,7 @@ The following names represent the data exchange. Integration can translate the p
 
 Sports World must keep the directory. The system must synchronize it with the daily snapshot. The boot coordinates must correspond to club_id; the panel can manage that seed and integration must recognize valid CRM updates.
 
-The evaluation of low impact and prenatal or postpartum must cross the offer of the club with the matrix of classes. The evaluation of activities for minors must use the verified offer of the service. An amenity must retain its identity when relating to the corresponding requirement.
+The evaluation of low impact must cross the offer of the club with the matrix of classes. The evaluation of activities for minors must use the verified offer of the service. An amenity must retain its identity when relating to the corresponding requirement.
 
 <!-- salto -->
 
@@ -6498,6 +6470,7 @@ The request from that source was submitted to Eric during this delivery. 1 chapt
 | Measurement scope | D-118 · October 5 | Journey to post; dashboard to scope |
 | Integrated Funnel | D-119 · October 5 | 1–chapter 18 Base and 21 Index |
 | Closure of the proceedings | Eric's instruction to complete the pending · October 5 | 19–21 Chapters and review plugins |
+| Single source of truth | D-120 · 14 October | Q14 with three options; source text in the repository and PDFs generated from it |
 
 ## D.2 Origin {#d-2-origin}
 
@@ -6567,7 +6540,7 @@ Responsible: SW Club systems and operation. Update: daily snapshot and authorize
 | actividades_menores | Object · C | Checked service and applicable ages where available |
 | procedencia | Object · R | System, date of extraction and snapshot published |
 
-The calculation must evaluate low-impact and prenatal or postpartum requirements using the available classes and their matrix. Scheduling must use opening hours and assume availability for an in-person visit.
+The calculation must evaluate low-impact requirements using the available classes and their matrix. Scheduling must use opening hours and assume availability for an in-person visit.
 
 <!-- salto -->
 
@@ -6683,7 +6656,7 @@ The inventory must use the appendix F name and route changes. The seven premium 
 <!-- tabla anchos=170.0,116.0,222.3 letra=10.5 -->
 | **Field** | **Type and** **requirement** | **Value, relationship or validation** |
 |---|---|---|
-| instrumento_id, version | Identifier · R | Current CEI-01 v1.6 |
+| instrumento_id, version | Identifier · R | Current CEI-01 v1.7 |
 | reactivo_id, opciones | Identity and list · R | Questions and values of the instrument |
 | condicion, validacion, cardinalidad | Rule · R | Ramification and limits of the instrument |
 | forma_trato | Variant · R | Male, female or neutral, according to Q2 |
@@ -7051,9 +7024,9 @@ The manager must link each page to its catalog entity. The tracking must check t
 
 # Decision Log - Architecture Review Addendum {#decision-log-architecture-review-addendum}
 
-**The numbering continues from DEC/SW/01, which ends at D-32. This addendum records D-33 through D-119. It retains the decisions from the September 2026 rewrite and incorporates the evaluation clarifications in section 17, dated October 5, 2026.**
+**The numbering continues from DEC/SW/01, which ends at D-32. This addendum records D-33 through D-120. It retains the decisions from the September 2026 rewrite and incorporates the evaluation clarifications in section 17, dated October 5, 2026.**
 
-Each entry says what was decided and in which chapter of the document lands. **The current number**ing **is that** of **D-119** and **the index** of **twenty-one chapters**. Historical entries retain the referrals of their date; they are interpreted by subsequent updates and substitutions recorded. Those that force to correct something outside of the Architecture indicate it expressly.
+Each entry says what was decided and in which chapter of the document lands. **The current number**ing **is that** of **D-120** and **the index** of **twenty-one chapters**. Historical entries retain the referrals of their date; they are interpreted by subsequent updates and substitutions recorded. Those that force to correct something outside of the Architecture indicate it expressly.
 
 ## 1 · The instrument {#1-the-instrument}
 
@@ -8356,6 +8329,18 @@ Chapter 18 retains the Funnel Map as the sole definition of stages, sources, rat
 
 **Land**s in: index, editorial standard, chapters 3, 8, 9, 14, 15, 16, 17 and 18 and references to 19 pendings to 21.
 
+### D-120 · Q14 keeps three options and the document becomes canonical {#d-120-q14-keeps-three-options-and-the-document-becomes-canonic}
+
+**Eric's instruction · 14 October 2026:** “once removed, canonise it as the single source of truth”.
+
+**Q14 keeps three options:** **Low impact programmes**, **Activities for children aged 3 months to 13 years** —conditional on Q13— and **None of the above**. The other conditional option is withdrawn, together with its club requirement, its flag, its confirmation example and its field in the class matrix. **Q2 governs grammatical agreement only** and no longer conditions any Q14 option.
+
+The questionnaire sets three requirements: **REQ-1** pool, **REQ-2** low impact and **REQ-3** activities for minors. The class confirmed in P0 is the **fourth requirement**, conditional. Sections 10.2.3, 10.10.3 and 10.10.4 are renumbered accordingly. **CEI-01 moves to version 1.7.**
+
+**This document, in Spanish and in English, is the single source of truth for the Experience Architecture.** Its source text lives in the repository and the PDFs are generated from it. Every derived piece —site, questionnaire, brief, demo and portal documents— is corrected against this document, never the other way round.
+
+**Lands in:** front matter and chapters 4, 5, 10, 12, 13 and 14; Annexes D and E; CEI-01. **Replaces** in D-114 the mention of Q2 as a condition of the Q14 options on the reduced route. **Retains D-119.**
+
 <!-- salto -->
 
 ## Open Points {#open-points}
@@ -8388,10 +8373,10 @@ Chapter 18 retains the Funnel Map as the sole definition of stages, sources, rat
 Sports World Mexico
 
 <!-- tabla anchos=156.0,352.3 letra=10.5 -->
-| **Version** | **1.6 · October 5 corrected copy of 2026** |
+| **Version** | **1.7 · 14 October 2026** |
 |---|---|
-| Replaces | 1.5 version |
-| What changed | Q8 collects possible days and Q17 duration by session. preload is aligned, classes accepted, child output and delivery to the closure with autonomous site scope. |
+| Replaces | Version 1.6 |
+| What changed | D-120: Q14 keeps three options —Low impact programmes, Activities for children aged 3 months to 13 years and None of the above—. Q2 governs grammatical agreement only. |
 | Structure | G0; complete route with P0, 16 conditional base questions and 3; or reduced route with 8 base questions and Q15b when applying. |
 
 ## 1 · What it is and who it is addressed to {#1-what-it-is-and-who-it-is-addressed-to}
@@ -8409,7 +8394,7 @@ Questionnaire Ideal Experience captures the preferences needed to generate a con
 -  The questionnaire is intended exclusively for people without an active membership. It does not include the option “I currently train at Sports World”.
 -  If the person confirms they are aged 18 or older, they follow the full route. If they answer No at G0, they enter the reduced anonymous route defined in section 4.
 -  **The reduced route does** not use **P0**, does not ask for first name, surname, telephone or email, does not open a registration, does not send information to the club and ends after showing a single recommended club with a brief explanation and the indication to go with your guardian.
--  No diagnosis, injury, pregnancy, treatments, medications, surgeries, weight, height, body measurements or any other clinical data are **requested** or **inferred**.
+-  No diagnosis, injury, treatments, medications, surgeries, weight, height, body measurements or any other clinical data are **requested** or **inferred**.
 -  Ideal Experience does not offer nutritional accompaniment, food plans, diets or nutrition recommendations.
 -  In the complete path, questions, options, validations, ramifications, and identifiers **are kept** in all **entries** on the site.
 -  The Q18 and Q19 identifiers are free for contextual questions; the lose weight branch they occupied does not return to the instrument.
@@ -8472,7 +8457,7 @@ Data entry and validation. Required text of 1 to 60 characters. Do not request t
 
 **Data entry and validation**. Single mandatory selection.
 
-Authorized use. Grammatical agreement and the condition for the prenatal/postpartum option in Q14. It is never used to assign an advisor or infer identity or a condition.
+Authorized use. Grammatical agreement. It is never used to assign an advisor or infer identity or a condition.
 
 ### Q3 {#q3}
 
@@ -8653,19 +8638,17 @@ It is shown whether Q10 is "Retake training after a break" or "Return to Sports 
 **Is there any preference you want us to prioritize?**
 
 -  Low impact programmes
--  Pre*natal or* postpart*um (conditional) programmes*
 -  Activities for children aged 3 months to 13 years *(conditional)*
 -  None of the above
 
 **Data entry and validation**. Required multiple selection; 1 minimum. "None of the above" is exclusive. In the complete path, Q14 appears after Q13 to apply its conditional options.
 
-**Authorized use**. Declar**ed** preferences. No **diagnosis, pregnancy or minor data are inferred.**
+**Authorized use**. Declared preferences. **No diagnosis or data on minors are inferred.**
 
 ### Dynamic options in the complete path {#dynamic-options-in-the-complete-path}
 
--  ‘Prenatal or postpartum programmes’ is shown **only** if **Q2** is **‘Fe**male’.
 -  «Activities for children of 3 months to 13 years» **is** shown **only** if **Q13 is** **«With** my children» or «With my family».
--  **Reduced route**. As Q2 and Q13 are not asked, Q14 must only show **"Low Impact Programs**" and **"N**one of the above".
+-  **Reduced route**. As Q13 is not asked, Q14 must only show **“Low impact programmes”** and **“None of the above”**.
 
 ### Club and Matrix Requirements {#club-and-matrix-requirements}
 
@@ -8729,7 +8712,7 @@ The reduced route exists solely to help a person who does not confirm being 18 o
 | 3 | Q6 · Where you prefer to train | Training modality. In the pool or Both makes a pool a hard requirement. |
 | 4 | Q9 - Level | Declared level; contextualizes the compatibility of the offer and summary |
 | 5 | Q12 · Individual or group | It is shown in its neutral form: Train without company / Group Classes |
-| 6 | Q14 · Preferences | Show only Low Impact and None of the above, because Q2 and Q13 do not exist on this route |
+| 6 | Q14 · Preferences | Show only Low Impact and None of the above, because Q13 does not exist on this route |
 | 7 | Q15 · Close to what | Defines home, office or both |
 | 8 | Q15b · Priority origin | Only if Q15 = Both |
 | 9 | Q16 · Postal code or neighborhood | Locates the priority source and allows to calculate travel and solve the club |
@@ -8811,7 +8794,7 @@ These rules are part of the instrument and must be maintained consistently on th
 | Reduced path | No P0, Q1, Q2, Q3, Q7, Q8, Q17, Q10, Q10a, Q11 or Q13; no contact collection, record, brief, appointment or handoff to the club. Uses Q4, Q5, Q6, Q9, Q12, Q14, Q15, Q16 and Q15b when applicable. |
 | Another gym | Ask the current gym only on the complete route. |
 | Return from a pause | Ask the last gym and the duration of the break only on the complete route. |
-| Preferences | Complete route: always low impact or none; prenatal/postpartum only with female Q2; activities for minors only after Q13 children/family. Reduced route: only low impact or none. |
+| Preferences | Complete route: always low impact or none; activities for minors only after Q13 children/family. Reduced route: only low impact or none. |
 | Modality | With "Both", the plan necessarily includes dry floor and pool. With "I want to be recommended", the system calculates the modality that contributes the most to the main objective; it is not fixed in an allocation table |
 | Clubs | The automatic recommendation requires the chosen amenities, declared preferences and at least one class eligible for each target in the stated intensity. Days and schedules only generate alert on the complete route; they do not rule out clubs. pool is an hard requirement for the automatic recommendation when the chosen or resolved modality is In the pool or Both. journey retains a single ideal club in force. If the person confirms another club, it replaces the previous one as ideal club and updates the calculation and menu. If it fails to meet a requirement, the system reports the deficiency and offers options that do; confirmation of an exception follows the rules of chapter 10. |
 | Closeness | It is measured in minutes of travel with traffic at peak time, never in kilometers and never at declared time. Time is shown as "max X minutes". |
@@ -8845,6 +8828,7 @@ These rules are part of the instrument and must be maintained consistently on th
 <!-- tabla anchos=156.0,352.3 letra=10.5 -->
 | **Version** | **What changed** |
 |---|---|
+| 1.7 | 14 October 2026 · D-120: Q14 keeps three options —Low impact programmes, Activities for children aged 3 months to 13 years and None of the above—. Q2 governs grammatical agreement only. |
 | 1.6 · corrected copy | 5 October 2026: application of shipping decisions, minors, confirmed classes and Q12; autonomous web channel and limit of delivery to the customer and the club. Correction of counting and summary. |
 | 1.6 | Q8 passes from preference to capacity. I asked what days the person prefers to train, which picks up a taste, and now asks what they can. The comparison between what the plan asks and what the person can dedicate needs a capacity. Q17 enters, how long per session, that the instrument did not ask anywhere: Q7 collects three-hour slots, which is when it can come, not how long it stays. With both, the mismatch is calculated complete. Q17 recovers a retired identifier: the lose weight branch occupied by Q17, Q18 and Q19 came out by the scope rule and does not return, so the keys are available for contextual questions. Q18 and Q19 remain free. |
 | 1.5 | The plan must necessarily include dry floor content and pool content. 1.4 said that the plan "combines" the two without requiring it, and a plan resolved only in dry delivery less than the option offers. The modality recommendation is calculated. With "I want to be recommended", the system calculates which of the three modalities contributes most to the main objective, with the class matrix and the intensity declared in Q5. It replaces the fixed allocation table by target, which was outdated every time the catalogue changed. The three modalities compete, including "Ambas". |
@@ -8858,7 +8842,7 @@ These rules are part of the instrument and must be maintained consistently on th
 
 **Architecture of Experience · revised version. This** file fixes the complete index **—**initial pages**,** twenty-one chapters**,** six appendices**— and the status of each** piece**.** It **is** the reference **for** cross-remission**s: no chapter refers to a number that is not in this table.**
 
-**D-119** integrates the funnel and dashboard as chapter **18**, at the end of Part II. Part III moves to chapters **19** to **21**. D-117 and D-118 retain the current rules of ideal club unique and measurement continuity after transfer.
+**D-119** integrates the funnel and dashboard as chapter **18**, at the end of Part II. Part III moves to chapters **19** to **21**. D-117 and D-118 retain the current rules of ideal club unique and measurement continuity after transfer. **D-120** leaves Q14 with three options and makes this document the single source of truth.
 
 ## Home Pages {#home-pages}
 
@@ -8888,7 +8872,7 @@ Rule **governing the initial** pages: no term, code or concept appears in the bo
 | **OE-#** | `OE-1`... OE-5 | Emotional goal: what the person wants to feel | OE-3 = community |
 | **OF-#** | `OF-1`... OF-6 | Functional objective: what it wants to achieve | `OF-1` = lose weight |
 | **B##** | `B01`... B03 | Plan training block | `B03` = group classes or personal training |
-| **REQ-#** | `REQ-1`... REQ-4 | Requirement that the person demands from the club | `REQ-1` = pool |
+| **REQ-#** | `REQ-1`... `REQ-3` | Requirement that the person demands from the club | `REQ-1` = pool |
 | **RN-##** | `RN-01`... RN-nn | Rule of business, numbered and traceable | `RN-08` = club choice |
 | **E##** | `E0` and E2... E7 | Measurement stage, defined in chapter 18 | `E4` = scheduled visit |
 | **C1[a–c]** | C1a, C1b, C1c | chapter 18 entry and report | `C1a` = organic |
@@ -8986,7 +8970,7 @@ They are not chapters or appendices: they are the material with which a chapter 
 
 ## The instrument governing {#the-instrument-governing}
 
-**CEI-01 1.6 version**, which lives in this same folder as `CEI-01-v1.6.es.html`. The questionnaire Appendix A of the Business Process Manual is an older version and is not used.
+**CEI-01 version 1.7**, contained in this same document. The questionnaire in Appendix A of the Business Process Manual is an older version and is not used.
 
 <!-- salto -->
 
@@ -9099,7 +9083,7 @@ There are five of them and there is no sixth. Each section of the document is wr
 | **8.6** The autonomous journey | Changes during session and final delivery | Rule |
 | **8.7** The error phase | What does the person see and how does they get out of there? | Table of cases |
 | **9** Contact details and consent | When requested · Mailing · A single handwriting to CRM · Conciliation and Rendezvous · Simplified and comprehensive notice | Rule other than notice: data table |
-| **10** How to choose the club | The principle · The four requirements and the fifth conditional · The radius of 10 km · How closeness is measured · The four modes · The flags of each alternative · The confirmation pop-up · The exceptions accepted · The reduced route | Rule, the four modes and the flags in case table |
+| **10** How to choose the club | The principle · The three requirements and the fourth conditional · The radius of 10 km · How closeness is measured · The four modes · The flags of each alternative · The confirmation pop-up · The exceptions accepted · The reduced route | Rule, the four modes and the flags in case table |
 | **11** How the plan is composed | The three blocks · B01 and B02 · Q6 and the structure of B02 · The original modality and the exceptions accepted · The six programs of each modality · Water training · B03 · Change of club and change of classes · Relationship with brief | Rule, programs in data table |
 | **12** How classes are chosen | The matrix · The selection steps · Intensity filter · Contraindications · Replacement | Table of cases, matrix in data table |
 | **13** The text that drafts the language model | A call per version · What can and what is fixed · Back to failure | Rule |
