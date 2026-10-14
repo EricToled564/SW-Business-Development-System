@@ -112,7 +112,7 @@ La calidad se aplica de forma automática; no queda librada a la memoria. Cada c
 - **Verificaciones de rendimiento** (Core Web Vitals) en cada cambio, contra los umbrales del §1.
 - **Verificaciones de accesibilidad** (axe-core), conforme a WCAG 2.2 AA.
 - **Verificaciones de preparación para búsqueda** que confirman que los datos estructurados y la estructura de página siguen siendo correctos.
-- **Enlaces de vista previa** para que cualquier revisor —incluido Sports World— vea exactamente cómo luce un cambio antes de publicarse (es el mecanismo de las aprobaciones del **[Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-8-semanas-y-aprobaciones-a-cargo-de-el-cliente)**).
+- **Enlaces de vista previa** para que cualquier revisor —incluido Sports World— vea exactamente cómo luce un cambio antes de publicarse (es el mecanismo de las aprobaciones del **[Contrato · Anexo Dos I.4](#contrato:i4-cronograma-de-10-semanas-y-aprobaciones-a-cargo-de-el-cliente)**).
 
 Si algún control falla, el cambio no se publica hasta corregirse. Este mecanismo evita que un ritmo de ocho semanas acumule defectos ocultos.
 
