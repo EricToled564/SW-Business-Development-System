@@ -103,8 +103,9 @@
       title: { es: "Plan de Ejecución", en: "Execution Plan" } },
     { id: "gastos-operativos", type: "doc", group: "generales", red: true, pdf: "28-gastos-operativos.es.pdf",
       title: { es: "Gastos Operativos Variables", en: "Variable Operating Costs" } },
-    { id: "demo", type: "embed", group: "generales", red: true, src: "demo/index.html", mobileSrc: "demo/movil.html",
-      title: { es: "Demo Cuestionario Inteligente", en: "Smart Questionnaire Demo" } },
+    // Instrucción de Eric (14 oct 2026): la página muestra funcional sustituye al demo del cuestionario.
+    { id: "demo", type: "embed", group: "generales", red: true, src: "https://sportsworldnew.vercel.app/",
+      title: { es: "Demo funcional · Página muestra", en: "Working demo · Sample page" } },
     { id: "mpc-01", type: "page", group: "proceso", red: true, src: "proceso/mpc-01.html",
       title: { es: "MPC/SW/01 · Manual del Proceso Comercial", en: "MPC/SW/01 · Commercial Process Manual" } },
     { id: "sop-0101", type: "page", group: "proceso", src: "proceso/sop-0101.html",
@@ -354,7 +355,7 @@
         '</span>' +
         '</div>' +
         '<div class="embed-wrap"><iframe class="embed-frame" src="' + doc.src +
-        '?v=20260706a" title="' + doc.title[lang] + '"></iframe></div>';
+        (/^https?:/.test(doc.src) ? '' : '?v=20260706a') + '" title="' + doc.title[lang] + '" allow="geolocation; fullscreen"></iframe></div>';
       elToc.innerHTML = "";
       // Fijar la altura del iframe a la ventana REALMENTE visible (window.innerHeight),
       // no a 100vh/100dvh: dentro de un iframe esas unidades son poco fiables en móvil
