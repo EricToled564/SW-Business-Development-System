@@ -107,7 +107,9 @@ Una auditoría independiente encontró **88 contradicciones** entre documentos �
 
 Los tres puntos que estaban anclados en el Contrato —frecuencia de sincronización, etapas del funnel y llave de conciliación— **quedaron incorporados al texto** en agosto de 2026, con autorización expresa de Eric por encontrarse el Contrato en etapa de revisión. Ver `PAQUETE-LEGAL.md` para el detalle de los ocho ajustes.
 
-Los PDFs del depósito ya reflejan el texto vigente: el Contrato como V4.3 (39 págs) y los dos addenda regenerados. **No queda ningún pendiente abierto.**
+Los PDFs del depósito ya reflejan el texto vigente. **Desde el 14 de octubre de 2026 el Contrato es la V4.4** (contrapropuesta de EL PRESTADOR del 11 de septiembre de 2026; 46 págs), que sustituyó íntegro al texto anterior por instrucción de Eric; ver `PAQUETE-LEGAL.md` y `versiones-del-contrato/`. Los dos addenda quedaron como estaban, también por instrucción suya.
+
+**Pendientes que abrió la V4.4 (Eric decidió el 14 de octubre de 2026 no ajustar todavía las reglas ni los textos):** (1) `audit-docs.js` marca «6 semanas» en el Contrato porque su hecho canónico sigue siendo «8 semanas», y la V4.4 fija 10 semanas de cronograma y 6 de estabilización; (2) R16 falla porque la V4.4 menciona el funnel sin citar el Mapa del Funnel; (3) aviso de glosario: «GPT»; (4) el Índice, el Plan de Ejecución, la Estrategia Técnica y el Seguimiento siguen hablando de BES, del BDS como Proyecto B o de 8 semanas: solo se reapuntaron sus enlaces al Contrato; (5) el addendum BDS ya no tiene base contractual y el de la Academia la nombra Proyecto C.
 
 ## Activos que ya existen (no reconstruir)
 
