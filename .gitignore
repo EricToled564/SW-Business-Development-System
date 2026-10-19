@@ -47,3 +47,7 @@ next-env.d.ts
 # Optional English translations live in webapp/_trans_en.json (tracked).
 __pycache__/
 *.pyc
+
+# Empaquetado de la presentación de Final Edge: se regenera desde
+# presentaciones/final-edge-inversionistas/, no se versiona.
+presentaciones/*.zip
