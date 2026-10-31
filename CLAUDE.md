@@ -117,3 +117,10 @@ Los PDFs del depósito ya reflejan el texto vigente. **Desde el 14 de octubre de
 - `academia-contenido:45-55` — las cinco dimensiones de decisión: comodidad y aforo, amenidades, ubicación y red multiclub, precio, estatus.
 - `experience:14` — la tesis del proyecto, ya redactada casi textualmente.
 - `auditoria:22` — *"El producto existe —entrenadores, alberca, vapor, sauna—; para Google, no."*
+
+## Escribir mientras se trabaja (regla universal, orden de Eric del 2026-11-01)
+
+Todo trabajo del agente y de cualquier subagente se escribe en disco a medida que se hace, unidad por unidad (cada
+texto clasificado, cada sección leída, cada resultado), nunca solo al final. Si el trabajo se interrumpe, lo hecho queda
+guardado: antes de empezar se lee lo que ya está escrito y se continúa con lo que falta. Todo encargo a un subagente
+lleva esta regla.
