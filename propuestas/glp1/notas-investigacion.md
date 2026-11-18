@@ -93,3 +93,19 @@ El proyecto es para **quien ya usa** estos medicamentos y para **quien está pen
 - **Choiz** (choiz.com.mx): consulta médica en línea, plan de dosificación y monitoreo, evaluación nutricional (dato propio).
 - **Sports World, Reporte Anual 2018:** menciona «nutriólogo certificado como Wellness coach» con servicio de nutrición — dato de 2018, vigencia actual NO verificada.
 - **PENDIENTE:** cercanía hospital–club (consulta por radio a OpenStreetMap falló por conexión rechazada); origen e integración de las apps de nutrición.
+
+## Bloque 7 · Nutrición (18-nov-2026)
+
+- **Avena Health** (avena.io/nosotros): software para nutriólogos; cofundadores Javier Álvarez (director) y Rubén Sandoval (tecnología). App para pacientes que los conecta con especialistas. País sede, API, integraciones y planes para empresas o gimnasios: **no declarados en su página** → preguntar directamente. Trabaja con el SMAE y recetas mexicanas (página de México).
+- **Fitia** (fitia.app): app de consumo con IA; calorías y macros, registro de comidas por foto, planes para bajar de peso, ganar músculo o mantener composición corporal. Disponible en Google Play México. Programa para empresas o gimnasios: no verificado.
+- **Smart Fit «Smart Nutri»:** existe como plan de nutrición por app en Perú (smartfitnutri.com.pe) y hay publicación de Smart Fit México que remite a smartfitnutri.app. Contenido y precio en México: no verificados. Antecedente: un competidor de bajo costo ya resolvió nutrición por app con un tercero o desarrollo propio (no verificado cuál).
+- **Clivi** incluye «Nutriscan» (conteo diario de calorías) y «Body Scan» dentro de su propio programa.
+
+## NUEVO REQUISITO (Eric, 18-nov-2026)
+
+Agregar **al principio** una estimación del volumen de membresías que Sports World podría perder si el uso de estos medicamentos se expande sin que la empresa tenga una respuesta. Datos a buscar: socios activos de SW (BMV), proporción de altas motivadas por bajar de peso, evidencia de cancelación entre usuarios de GLP-1, distribución NSE (AMAI).
+
+## Bloque 8 · Hospitales geocodificados (OpenStreetMap/Nominatim, 18-nov-2026)
+
+Resultados en el scratchpad (`geo.json`, `geo2.json`). Hallados: Angeles Lomas, ABC Santa Fe, ABC Observatorio, Español, Angeles Pedregal, Angeles Mocel, Angeles Metropolitano, Angeles Acoxpa, Angeles Lindavista, Angeles Santa Mónica, Angeles Clínica Londres, Médica Sur, San Ángel Inn Universidad, San Ángel Inn Patriotismo, Star Médica Lomas Verdes, Hospital Ciudad Satélite, Star Médica Centro (Roma), Dalinde, Zambrano Hellion, San José (Monterrey), Christus Muguerza (Obispado), Angeles Valle Oriente, Doctors Hospital, Angeles Puebla, Hospital Puebla, Angeles Centro Sur (Querétaro), Star Médica Querétaro, H+ Querétaro, Angeles León, Aranda de la Parra, Star Médica Aguascalientes, MAC Aguascalientes Norte, Christus Muguerza Saltillo, Angeles Torreón, Angeles Culiacán, CIMA Hermosillo, San José Hermosillo, Star Médica Veracruz, Español de Veracruz, Star Médica Mérida, Faro del Mayab.
+NO hallados o resultado erróneo (se excluyen): Angeles México (devolvió Pedregal), Angeles Universidad, Puerta de Hierro Sur, MAC Puebla, Moscati, Centro Médico de Toluca (devolvió otro lugar), Florence, MAC Periférico Sur, San Ángel Inn Sur, Christus Muguerza Cumbres.
