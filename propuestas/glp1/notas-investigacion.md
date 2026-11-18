@@ -109,3 +109,29 @@ Agregar **al principio** una estimación del volumen de membresías que Sports W
 
 Resultados en el scratchpad (`geo.json`, `geo2.json`). Hallados: Angeles Lomas, ABC Santa Fe, ABC Observatorio, Español, Angeles Pedregal, Angeles Mocel, Angeles Metropolitano, Angeles Acoxpa, Angeles Lindavista, Angeles Santa Mónica, Angeles Clínica Londres, Médica Sur, San Ángel Inn Universidad, San Ángel Inn Patriotismo, Star Médica Lomas Verdes, Hospital Ciudad Satélite, Star Médica Centro (Roma), Dalinde, Zambrano Hellion, San José (Monterrey), Christus Muguerza (Obispado), Angeles Valle Oriente, Doctors Hospital, Angeles Puebla, Hospital Puebla, Angeles Centro Sur (Querétaro), Star Médica Querétaro, H+ Querétaro, Angeles León, Aranda de la Parra, Star Médica Aguascalientes, MAC Aguascalientes Norte, Christus Muguerza Saltillo, Angeles Torreón, Angeles Culiacán, CIMA Hermosillo, San José Hermosillo, Star Médica Veracruz, Español de Veracruz, Star Médica Mérida, Faro del Mayab.
 NO hallados o resultado erróneo (se excluyen): Angeles México (devolvió Pedregal), Angeles Universidad, Puerta de Hierro Sur, MAC Puebla, Moscati, Centro Médico de Toluca (devolvió otro lugar), Florence, MAC Periférico Sur, San Ángel Inn Sur, Christus Muguerza Cumbres.
+
+## Bloque 9 · Datos para la estimación de exposición (18-nov-2026)
+
+- **Grupo Sports World, Reporte 3T26** (sportsworld.com.mx/uploads/es/documents/reports_quarterly/gsw_reporte_3T26.pdf, 19 págs.):
+  - Clientes Activos Totales: **97,046** (−7.1% vs 3T25). Incluye clientes activos, virtuales, planes de salud corporativos, invitados promocionales y SW San Pedro Garza García. 1T26: 96,616.
+  - Deserción bruta promedio: **5.7%** en 3T26 (5.4% en 3T25); **6.1%** acumulado 2026. Deserción neta promedio: 3.3% en 3T26; 4.1% acumulado (definición de «neta» no leída).
+  - Ingresos totales 3T26: $580.925 M (+3.5%); 9M26: $1,745.823 M (+8.6%).
+  - Cuotas de mantenimiento y membresías 3T26: **$453.217 M** (+3.7%); 9M26: $1,362.154 M.
+  - Ingresos deportivos y otros 3T26: $99.453 M (−2.5%); 9M26: $285.527 M.
+  - Aforo promedio mensual 3T26: 855,057; visitas mensuales por cliente: 9.2.
+  - EBITDA 3T26 sin IFRS 16: $98.467 M, margen 17.0%.
+  - Estrategia declarada: rentabilizar la base, eliminar clientes de menor ingreso, atender clientes «high-end»; HYROX en 6 clubes. Directora general: Gabriela Vieira do Prado. No reporta nutrición, wellness ni alianzas.
+- **William Blair, 18-may-2026** (Sharon Zackfia; encuesta 2026 a 300 usuarios de GLP-1, EE. UU.): la membresía de gimnasio entre usuarios subió a 34.5% tras iniciar tratamiento; 72% reporta ejercitarse más (60% en 2024); mayor alza en 18–24 años y hogares de menos de 100,000 USD. Permanencia en el medicamento: 46% a 6 meses, 32% a 12 meses. Conclusión: el uso de GLP-1 podría aumentar, no reducir, la demanda de fitness. Cautela: no se sabe si el ejercicio persiste al dejar el tratamiento.
+  https://www.williamblair.com/Insights/GLP1s-and-Fitness-Clubs-The-Structural-Case-for-a-Larger-Market
+- **ClubIntel para IHRSA Foundation y ABC Fitness, «The Next Fitness Consumer»** (11-ago-2021): metas del consumidor: estar activo 46%, bienestar mental 35%, **bajar de peso 32%** (tercera). Muestra y países no indicados en la nota; no es dato de México ni de Sports World.
+- **AMAI/INEGI** (presentación INEGI 2026): hogares A/B 8.5% y C+ 13.1% en 2024 (7.3% y 12.0% en 2022). CDMX 2022: A/B 11%, C+ 16%. Estado de México: A/B 6%, C+ 10%. Querétaro: A/B 11%, C+ 15%.
+- **Gallup/KFF 2026 (EE. UU.):** ~11–13% de adultos toma actualmente un GLP-1 (extractos de búsqueda; no leídos completos).
+
+## Bloque 10 · Modelo de exposición y cierre (18-nov-2026)
+
+- Cálculo en el scratchpad (`modelo.js`): bajas brutas/año 66,379–71,038 (punto medio 68,709); ingreso de membresía por cliente/mes $1,557; deportivos $342; permanencia 16.4 meses; ingreso por alta $25,520; baja interanual implícita 7,417.
+- Escenarios (w, a, s): bajo 20/5/10 → 69 altas/año y 157 acumuladas 2027–29 ($4.0 M); base 32/10/25 → 550 y 1,256 ($32.1 M); alto 45/20/50 → 3,092 y 7,067 ($180.4 M). Un punto de altas = 687 clientes = $17.5 M.
+- Penetración derivada entre adultos A/B y C+ con sobrepeso u obesidad: 3.2–3.8% en 2026; 8.3–9.7% en 2029.
+- Hospitales: 42 válidos; 36 clubes con alguno a ≤3 km; 40 a ≤5 km; marca Angeles a ≤3 km de 20 clubes.
+- Búsqueda de programas GLP-1 en cadenas de gimnasios de México: sin resultados. Smart Fit México anuncia «Smart Fit Coach» (entrenamiento + nutrición).
+- Documento final: `propuestas/glp1/propuesta-glp1-implementacion.es.md`.
