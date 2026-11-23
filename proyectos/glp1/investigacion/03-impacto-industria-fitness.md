@@ -8,7 +8,7 @@ Convención de etiquetas:
 - **SNIPPET-ONLY**: cifra vista solo en un fragmento de resultado de búsqueda; requiere confirmación.
 - **NOT FOUND**: no localizada; se listan los lugares consultados.
 
-Estado: en curso (se escribe punto por punto).
+Estado: primera pasada completa (23 de noviembre de 2026). Los huecos están listados al final del documento. «VERIFIED como cita de terceros» significa que se leyó la página que cita la cifra, no la fuente primaria. Las secciones se escribieron en el orden de la investigación; la 1.13 (PDF de PwC UK) se agregó después de la 2.3.
 
 ---
 
@@ -313,3 +313,63 @@ Fuente: Athletech News, 22 de enero de 2026: https://athletechnews.com/how-orang
 - Universidad de Guadalajara: «En México existen más de 20 mil gimnasios, con más de 7 millones de usuarios que generan cerca de 60 mil millones de pesos anuales» (https://www.udg.mx/index.php/noticia/crece-exponencialmente-sector-fitness-en-mexico). — SNIPPET-ONLY
 - **NOT FOUND:** encuesta mexicana a consumidores que relacione uso de GLP-1 con afiliación, uso o cancelación de gimnasio. Búsquedas: «encuesta México Ozempic semaglutida usuarios gimnasio ejercicio porcentaje 2025 2026»; INEGI MOPRADEF (https://www.inegi.org.mx/programas/mopradef/) no incluye la variable.
 
+---
+
+## 5. Referencias para escenarios (retención, cancelación, objetivo de pérdida de peso)
+
+### 5.1 Retención y cancelación de la industria
+
+| Indicador | Valor | Fuente | Etiqueta |
+|---|---|---|---|
+| Retención anual promedio de socios (datos 2024; 175 empresas, 17,000+ instalaciones, 27 países) | 66.4% | HFA, 2025 Fitness Industry Benchmarking Report: https://www.healthandfitness.org/hfa-releases-2025-fitness-industry-benchmarking-report/ («Member retention averaged 66.4% for the year.») | VERIFIED |
+| Crecimiento neto de membresía (mismo informe) | 5.5% | Ídem | VERIFIED |
+| Retención anual anterior (datos 2015) / clubes de mejor desempeño | 71.4% / 77.8% | IHRSA Profiles of Success, vía https://therunrate.co/studio-growth/gym-member-retention-benchmarks/ | VERIFIED como cita de terceros |
+| Activos a 24 meses: contrato de 12 meses vs. mes a mes | ~75% vs. ~35% | IHRSA One Million Strong (más de 1 millón de registros), vía The Run Rate | VERIFIED como cita de terceros |
+| Retención de estudios de entrenamiento personal vs. ejercicio grupal | 80% vs. 73% | Association of Fitness Studios, vía The Run Rate (que advierte: «the most flattering numbers here and the least documented») | VERIFIED como cita de terceros; débil |
+| Cancelación mensual tras los primeros 90 días | 2% a 3.5% | Gymdesk Benchmark 2026 (4,594 gimnasios): https://gymdesk.com/blog/gym-retention-rate-benchmarks | SNIPPET-ONLY |
+| Cancelación a 24 meses según frecuencia de uso: <1 vez cada dos semanas / ~1 por semana / ~2 por semana / 3+ por semana | 44.2% / 34.1% / 26.5% / 23.2% | Gymdesk (801,000 membresías) | SNIPPET-ONLY |
+| Retención tras la quinta visita (estudios boutique) | más de 90% | Xplor Mariana Tek, vía Gymdesk | SNIPPET-ONLY |
+| Pérdida mensual de socios, primeros nueve meses de 2026 | 8.4% (8.0% en 2025) | Churned.io: https://www.churned.io/reports/gym-retention-benchmark-report-2026 | SNIPPET-ONLY; metodología no verificada, cifra muy superior al resto |
+| Cancelación mensual histórica de Planet Fitness | «historically between 3% and 4%» | Llamada 1T 2026, citada por https://membership.quest/gym-membership-retention-rate | SNIPPET-ONLY |
+| Tasa de reinscripción de Planet Fitness | «mid-30% of our joins as rejoins» (34.8% en 4T 2025 según Regulr) | Llamada 4T 2025 | SNIPPET-ONLY |
+| Mayor cancelación en los primeros 45 días | «the highest rate of churn is in the first 45 days of membership, before a habit has formed» | The Gym Group, informe anual 2024, citado por membership.quest | SNIPPET-ONLY |
+| Socios que no usaron su membresía en todo el año (EE. UU., 2025) | 4.6% (antes ~10%) | HFA 2026 US Consumer Report (ver 1.4) | VERIFIED |
+
+### 5.2 Efecto de programas estructurados y entrenamiento personal sobre la retención
+
+- Onboarding completo: «lifts six-month retention from 60% to 87%» — https://getperspective.ai/blog/gym-member-retention-2026-why-members-quit-hear-it-first — SNIPPET-ONLY; atribuido a un investigador sin cita primaria verificable. Usar solo como referencia direccional.
+- Clases grupales: «Those who engage in group fitness classes at the gym are 56% less likely to cancel» (IHRSA 2018, vía https://runrepeat.com/gym-membership-statistics) — SNIPPET-ONLY; fuente secundaria antigua.
+- Orangetheory: participantes del reto de transformación promediaron −8.6% de grasa corporal y +2.6% de masa muscular (ver 3.5) — VERIFIED; no es dato de retención.
+- **NOT FOUND:** un estudio primario y público que cuantifique el aumento de retención por contratar entrenamiento personal en clubes multiservicio (la cifra de 80% de la AFS corresponde a estudios de entrenamiento personal, no a socios de un club que contratan entrenador). Consultados: Gymdesk, The Run Rate, Regulr, membership.quest, búsqueda web.
+
+### 5.3 Proporción de quienes se inscriben con pérdida de peso como objetivo principal
+
+| Indicador | Valor | Fuente | Etiqueta |
+|---|---|---|---|
+| Objetivos de acondicionamiento en EE. UU. (enero de 2024; respuesta múltiple): bajar cierta cantidad de peso / aumentar fuerza / movilidad / ganar músculo / composición corporal / mantener peso | 43% / 43% / 35% / 32% / 26% / 18% | Statista: https://www.statista.com/statistics/246960/personal-goals-for-using-a-health-club/ | VERIFIED |
+| Enfoque principal para 2023 (Life Time, más de 1,000 respuestas): ganar músculo vs. bajar de peso | 32% vs. 30% | Life Time, 28 de diciembre de 2022: https://ir.lifetime.life/news-events/press-releases/detail/967/fitness-survey-building-muscle-tops-weight-loss-as-primary-focus-for-2023 | VERIFIED |
+| Smart Fit (Brasil): quienes se inscriben con objetivo de ganar músculo | «mais de 75%» | Brazil Journal, 19 de diciembre de 2025 (ver 2.7) | VERIFIED |
+| Se inscriben para bajar de peso (EE. UU.) | 33% | Statista «Sports and fitness in the US», citado por https://www.brpsystems.com/blog/fitness-industry-statistics | SNIPPET-ONLY |
+| Pérdida de peso como motivación principal | 52% (2023) | https://gitnux.org/gym-goers-statistics/ (agregador sin fuente primaria verificable) | SNIPPET-ONLY; no usar |
+| Usuarios de GLP-1 con pérdida de peso como razón principal | 61.8% (Consumer Collective, EE. UU.); 37% de usuarios actuales «for weight loss alone» (PwC US) | Ver 1.3 y 1.11 | VERIFIED |
+| México: tendencia número uno 2026 según profesionales del fitness | «programas de ejercicio para control del peso corporal» | Encuesta Mexicana de Tendencias 2026 (ver 4.4) | VERIFIED |
+
+- **NOT FOUND:** proporción de nuevos socios de un club premium en México que declaran la pérdida de peso como objetivo principal. La cifra debe salir del CRM de Sports World (campo de objetivo en el alta o del cuestionario dinámico, Q3/Q4).
+
+---
+
+## 6. Síntesis para construir escenarios (lectura del analista; no es una cifra de fuente)
+
+1. **No existe evidencia pública de cancelaciones masivas de gimnasio atribuibles a GLP-1.** Ningún operador cotizado (Planet Fitness, Life Time, The Gym Group, Smart Fit) reporta sustitución; los tres que comentan el tema lo llaman viento a favor. La única sustitución documentada ocurrió en programas conductuales de pérdida de peso (WeightWatchers: −25.4% de suscriptores conductuales en un año; Noom: caída del programa original).
+2. **Cotas cuantitativas disponibles para un escenario adverso:**
+   - 5% de usuarios de GLP-1 reduce su gasto en fitness (PwC UK, VERIFIED).
+   - 14% reduce su frecuencia de clases grupales y 17% su entrenamiento de fuerza (PwC US, VERIFIED).
+   - −11% en pasos diarios y −21% en actividad moderada-vigorosa medidos con wearables (ENDO 2026, VERIFIED).
+   - Penetración de GLP-1 en hogares de EE. UU.: 21% (PwC US); en el resto del mundo, ~2% de la población obesa o diabética tratada en 2025 (Morgan Stanley). México está, según Smart Fit, en una fase anterior de la «ola» (diciembre de 2025).
+3. **Cotas para un escenario favorable:** +22 pp de intención neta de gasto en fitness (PwC UK); +3 pp de afiliación al iniciar el fármaco (William Blair); 20% de quienes aumentan gasto suben a un club premium, 33% en el tramo de ingreso de 75-100k GBP (PwC UK); hogares de ingreso alto se inclinan hacia cadenas de gama alta (Morgan Stanley, sin magnitud).
+4. **Variable que separa ambos escenarios:** si la membresía se vende como «bajar de peso» (producto sustituible, como WW) o como plan de fuerza, composición corporal y acompañamiento (producto complementario, como Life Time, Equinox y Core+ de WW). Sports World ya incluye en toda membresía el Body Test by SECA mensual, el instrumento central de los programas extranjeros para usuarios de GLP-1.
+5. **Huecos que solo cubre la información interna:** proporción de altas con objetivo de pérdida de peso; cancelación mensual base por club y por antigüedad; uso (visitas) de quienes cancelan; motivo de cancelación con opción explícita «tratamiento médico para bajar de peso».
+
+---
+
+Estado de la investigación (23 de noviembre de 2026): los cinco apartados solicitados tienen al menos una búsqueda documentada. Huecos marcados como NOT FOUND: encuesta HFA propia sobre usuarios de GLP-1; cifras de la encuesta AlphaWise de Morgan Stanley sobre frecuencia de ejercicio; encuesta propia de Les Mills; Deloitte y McKinsey (no consultados con búsqueda dedicada; solo cita indirecta de McKinsey vía Les Mills); Basic-Fit; David Lloyd; Third Space; Fitness Park; precios de los programas de Equinox (protocolo GLP-1), F45, Orangetheory, Anytime, Crunch; resultados (inscritos, retención, ingresos) de cualquier programa GLP-1 de un operador; programas GLP-1 en México; encuesta mexicana a consumidores sobre GLP-1 y gimnasio; estudio primario del efecto del entrenamiento personal en la retención.

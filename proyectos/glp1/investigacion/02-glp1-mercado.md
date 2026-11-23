@@ -225,3 +225,34 @@ VERIFIED (hoja informativa de la Casa Blanca, 6 nov. 2025: https://www.whitehous
 Reuters (6 nov. 2025, SNIPPET-ONLY): «It reduces the prices to between $149 and $350, down from its current $500 to $1,000» — https://www.reuters.com/business/healthcare-pharmaceuticals/novo-lilly-shares-rise-trump-obesity-drug-deal-nears-2025-11-06/
 
 **Comparación de precio con México (inferencia):** Wegovy 2.4 mg en México a precio de lista ($8,167–$9,061 MXN ≈ USD 450–500 al tipo de cambio de ~$18/USD, no verificado en esta sesión) ya es comparable o superior al precio TrumpRx de USD 350; con descuento de cadena ($4,900 MXN ≈ USD 270) queda por debajo. El efecto de la política MFN sobre precios en América Latina es un riesgo señalado por la prensa, sin cifra (El Economista vía Yahoo, nota relacionada).
+
+---
+
+## 5. Persistencia, abandono y recuperación de peso
+
+### 5.1 Abandono del tratamiento (datos de vida real, EE. UU.)
+
+| Fuente | Cifra | Cita | URL | Etiqueta |
+|---|---|---|---|---|
+| **Rodriguez et al., JAMA Netw Open 2025;8:e2457349** (datos Truveta, 125,474 pacientes con sobrepeso u obesidad) | Abandono a 1 año: **64.8% sin diabetes tipo 2**, 46.5% con diabetes; a 2 años: **84.4%** sin diabetes, 64.1% con diabetes; reinicio en 1 año: 36.3% sin diabetes | «46.5% of patients with and 64.8% without type 2 diabetes discontinued within 1 year; 47.3% of patients with and 36.3% without type 2 diabetes subsequently reinitiated»; «Weight loss, income, and adverse events were significantly associated with discontinuation, while weight regain was significantly associated with reinitiation» | https://pmc.ncbi.nlm.nih.gov/articles/PMC11786232/ | VERIFIED (Key Points); cifras a 2 años: SNIPPET-ONLY (sección de resultados en el buscador) |
+| **Prime Therapeutics** (25 jun. 2025), afiliados sin diabetes que inician GLP-1 para obesidad | Persistencia a 3 años: **8%** (1 de cada 12); 14% con productos de alta potencia (p. ej., Wegovy); persistencia a 1 año: **33% (iniciadores 2021) → 63% (1T 2024)** | «Only 8% of individuals (or 1 in 12) initiating a glucagon-like peptide-1 (GLP-1) agonist drug for obesity without diabetes continued to do so at three years»; «For those initiating GLP-1 therapy in 2021, 33% were persistent, while in the first quarter of 2024, 63% of new initiators were persistent» | https://www.primetherapeutics.com/w/prime-therapeutics-leading-research-shows-only-1-in-12-remain-on-a-glp-1-drug-for-obesity-at-three-years | VERIFIED |
+| Prime/MRx año 1 (JMCP 2024) | Persistencia 46.3% a 180 días y **32.3% a 1 año** | «Overall, GLP-1 persistence was 46.3% at 180 days and 32.3% at 1 year» | https://www.jmcp.org/doi/10.18553/jmcp.2024.23332 | SNIPPET-ONLY |
+| Prime/MRx año 2 (10 jul. 2024) | ~**15%** (1 de cada 7) persistente a 2 años | «only 1 in 7 members remaining on therapy and 17% adherent» | https://www.primetherapeutics.com/documents/d/primetherapeutics/prime-mrx-glp-1-year-two-study-abstract-final-7-10 | SNIPPET-ONLY |
+| Tendencia de persistencia a 1 año (semaglutida) | 33.2% (2021), 34.1%, 39.8%, 58.6% (1S 2024) | «Semaglutide 1-year persistence rates from 2021 to 1H 2024 were 33.2%, 34.1%, 39.8%, and 58.6%» | https://pmc.ncbi.nlm.nih.gov/articles/PMC12948759/ | SNIPPET-ONLY |
+| KFF (oct.–nov. 2025) | 6 de cada 18 personas que lo usaron ya no lo usan; 14% de usuarios dejó por costo, 13% por efectos secundarios | Ver §4.1 | KFF | VERIFIED |
+| Worldpanel México | 36% de quienes dejaron el tratamiento probablemente volvería | Ver §2.1 | El Economista, 3 sep. 2026 | VERIFIED |
+| Blue Health Intelligence | — | No se buscó a fondo | — | NOT FOUND (sesión) |
+| Persistencia en México | — | Buscado en prensa y NIQ | — | **NOT FOUND** |
+
+### 5.2 Recuperación de peso al suspender
+
+| Fuente | Cifra | Cita | URL | Etiqueta |
+|---|---|---|---|---|
+| **STEP 1 extensión, Wilding et al., Diabetes Obes Metab 2022;24:1553–1564** | Un año después de suspender semaglutida 2.4 mg se recuperaron **dos tercios** de la pérdida: pérdida de 17.3% a la semana 68; recuperación de 11.6 puntos porcentuales; pérdida neta 5.6% a la semana 120 | «One year after withdrawal of once-weekly subcutaneous semaglutide 2.4 mg and lifestyle intervention, participants regained two-thirds of their prior weight loss» | https://pubmed.ncbi.nlm.nih.gov/35441470/ ; texto completo (CC BY) visto en https://www.researchgate.net/publication/360069304 | VERIFIED (resumen y conclusiones del texto completo devueltos por el buscador) |
+| **SURMOUNT-4, Aronne et al., JAMA 2024;331:38–48** | Tras 36 semanas de tirzepatida, quienes pasaron a placebo recuperaron **14%** en 52 semanas; quienes continuaron perdieron 5.5% adicional | «those switched to placebo experienced a 14% weight regain and those continuing tirzepatide experienced an additional 5.5% weight reduction» | https://jamanetwork.com/journals/jama/fullarticle/2812936 | SNIPPET-ONLY |
+| SURMOUNT-4, análisis post hoc (JAMA Intern Med 2025) | 82.5% recuperó ≥25% del peso perdido en el año posterior a la suspensión | Fragmento | https://www.acc.org/latest-in-cardiology/journal-scans/2025/12/09/16/51/surmount-4 | SNIPPET-ONLY |
+| **West et al., BMJ 2026;392:e085304** (publicado 7 ene. 2026; metaanálisis, 37 estudios, 9,341 participantes) | Recuperación media **0.4 kg/mes**; marcadores cardiometabólicos vuelven a la línea basal en **1.4 años**; recuperación más rápida que tras programas conductuales (0.3 kg/mes más) | «The average monthly rate of weight regain was 0.4 kg (95% confidence interval (CI) 0.3 to 0.5)»; «Weight regain was faster after WMM than after BWMP (by 0.3 kg (0.22 to 0.34) monthly), independent of initial weight loss»; «no evidence of benefit 1.7 years after the cessation of treatment» | https://www.bmj.com/content/392/bmj-2025-085304 | VERIFIED |
+| West et al., cifras para incretinas | Regreso al peso basal ~1.7 años (todas las drogas); semaglutida/tirzepatida ~0.8 kg/mes y ~1.5 años (proyección lineal más allá de 12 meses de seguimiento) | Respuestas rápidas en BMJ | https://www.bmj.com/content/392/bmj-2025-085304/rapid-responses | SNIPPET-ONLY |
+| Budini et al., eClinicalMedicine 2026 | «At 1 year post-cessation, 60% of the weight lost during treatment was regained» | Fragmento | https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(26)00043-X/fulltext | SNIPPET-ONLY |
+
+**Lectura para el riesgo de sustitución:** la mayoría de quienes inician un GLP-1 para obesidad sin diabetes lo abandona en un año (64.8% en Truveta; 37–67% según cohorte y año de inicio) y recupera la mayor parte del peso en 12–20 meses. Esto convierte al usuario de GLP-1 en un flujo rotativo, no en un acervo estable, y genera una población creciente de exusuarios con recuperación de peso: un segmento que el club puede captar con una oferta de mantenimiento y de composición corporal (inferencia, no dato).

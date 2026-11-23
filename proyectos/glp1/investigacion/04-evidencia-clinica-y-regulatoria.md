@@ -215,3 +215,63 @@ Estado: en curso (se escribe punto por punto).
   - No menciona agonistas GLP-1 (búsqueda de «liraglutida» y «semaglutida» en el PDF: 0 resultados). Es anterior a su uso en obesidad en México.
 - **NOM-008-SSA3-2017, *Para el tratamiento integral del sobrepeso y la obesidad*** — ver §6.6 (marco operativo y profesional).
 - **Colegio Mexicano de Obesidad:** documento de recomendaciones de actividad física o proteína para personas con GLP-1 — NOT FOUND (búsqueda web y PubMed, 23-nov-2026).
+
+---
+
+## 5. Efectos adversos relevantes para el entrenamiento
+
+### 5.1 Efectos gastrointestinales · STEP 1 (semaglutida 2.4 mg) — VERIFIED
+
+- Resumen NEJM (PMID 33567185), textual: «Nausea and diarrhea were the most common adverse events with semaglutide; they were typically transient and mild-to-moderate in severity and subsided with time. More participants in the semaglutide group than in the placebo group discontinued treatment owing to gastrointestinal events (59 [4.5%] vs. 5 [0.8%]).»
+- Eventos adversos no graves registrados en ClinicalTrials.gov (NCT03548935; semaglutida n = 1306, placebo n = 655). Porcentajes = cálculo propio a partir de los conteos publicados:
+
+| Evento | Semaglutida | Placebo |
+|---|---|---|
+| Náusea | 576 (44.1 %) | 114 (17.4 %) |
+| Diarrea | 411 (31.5 %) | 104 (15.9 %) |
+| Vómito | 321 (24.6 %) | 43 (6.6 %) |
+| Estreñimiento | 305 (23.4 %) | 62 (9.5 %) |
+| Dispepsia | 135 (10.3 %) | 23 (3.5 %) |
+| Fatiga | 104 (8.0 %) | 28 (4.3 %) |
+| Mareo | 98 (7.5 %) | 23 (3.5 %) |
+
+- Eventos graves de vesícula (mismo registro): colelitiasis 12/1306 (0.9 %) vs 1/655 (0.2 %); colecistitis 4 vs 0; colecistitis aguda 3 vs 0. Pancreatitis aguda grave: 2 vs 0.
+
+### 5.2 Efectos gastrointestinales · SURMOUNT-1 (tirzepatida) — VERIFIED
+
+- Resumen NEJM (PMID 35658024), textual: «The most common adverse events with tirzepatide were gastrointestinal, and most were mild to moderate in severity». Pérdida de peso a 72 semanas (textual): «-15.0% [...] with 5-mg weekly doses of tirzepatide, -19.5% [...] with 10-mg doses, and -20.9% [...] with 15-mg doses and -3.1% [...] with placebo».
+- Eventos adversos no graves registrados en ClinicalTrials.gov (NCT04184622; consultado vía API v2). Porcentajes = cálculo propio:
+
+| Evento | Placebo (n = 643) | 5 mg (n = 630) | 10 mg (n = 636) | 15 mg (n = 630) |
+|---|---|---|---|---|
+| Náusea | 63 (9.8 %) | 160 (25.4 %) | 217 (34.1 %) | 201 (31.9 %) |
+| Diarrea | 51 (7.9 %) | 128 (20.3 %) | 143 (22.5 %) | 149 (23.7 %) |
+| Vómito | 12 (1.9 %) | 58 (9.2 %) | 74 (11.6 %) | 81 (12.9 %) |
+| Estreñimiento | 38 (5.9 %) | 113 (17.9 %) | 117 (18.4 %) | 80 (12.7 %) |
+| Mareo | 16 | 31 | 37 | 27 |
+
+- Colelitiasis grave: 3 (placebo), 3, 6 y 7 (5, 10, 15 mg). Lesión renal aguda grave: 1, 2, 1, 0.
+- Nota: las cifras del artículo publicado pueden diferir ligeramente de las del registro por diferencias de población de análisis.
+
+### 5.3 Hipoglucemia, deshidratación y vesícula · etiquetas de la FDA — VERIFIED (openFDA)
+
+- **Wegovy (semaglutida)**, etiqueta vigente en openFDA con fecha efectiva 2024-04-23 (set id f5e548d0-cc79-4c34-a3f5-e20a5b8b6564), textual:
+  - «Hypoglycemia: Concomitant use with insulin or an insulin secretagogue may increase the risk of hypoglycemia, including severe hypoglycemia. Reducing the dose of insulin or insulin secretagogue may be necessary.»
+  - «Acute Kidney Injury: Has occurred. Monitor renal function when initiating or escalating doses of WEGOVY in patients reporting severe adverse gastrointestinal reactions».
+  - «Acute Gallbladder Disease: Has occurred in clinical trials. If cholelithiasis is suspected, gallbladder studies and clinical follow-up are indicated».
+- **Zepbound (tirzepatida)**, fecha efectiva 2026-08-28 (set id 487cd7e7-434c-4925-99fa-aa80b1cc776b), textual:
+  - «Acute Kidney Injury Due to Volume Depletion: Monitor renal function in patients reporting adverse reactions that could lead to volume depletion.»
+  - «Acute Gallbladder Disease: Has been reported in clinical trials.»
+  - Hipoglucemia: misma redacción que Wegovy.
+- Fuente: https://api.fda.gov/drug/label.json (consultado 23-nov-2026). Las etiquetas de COFEPRIS (IPP-A) para México no se consultaron — NOT FOUND en esta ronda.
+- Implicación operativa: la deshidratación por vómito o diarrea y la hipoglucemia en personas con insulina o sulfonilureas son los dos riesgos que un protocolo de entrenamiento debe filtrar en la evaluación inicial.
+
+### 5.4 Seguridad del ejercicio · Consenso ACSM sobre diabetes tipo 2 (2022) — VERIFIED
+
+- Kanaley JA, Colberg SR, Corcoran MH, Malin SK, Rodriguez NR, Crespo CJ, Kirwan JP, Zierath JR. *Exercise/Physical Activity in Individuals with Type 2 Diabetes: A Consensus Statement from the American College of Sports Medicine.* Med Sci Sports Exerc. 2022;54(2):353-368. PMID 35029593. DOI 10.1249/MSS.0000000000002800. PMCID PMC8802999.
+  - Textual: ciertos fármacos «may increase the risk of exercise-related hypoglycemia, including insulin and insulin secretagogues».
+  - Textual: quienes usan insulina o secretagogos «are advised to supplement with carbohydrate (or reduce insulin, if possible) as needed to prevent hypoglycemia»; «carry rapid-acting carbohydrate sources during PA to treat hypoglycemia and have glucagon available» (Tabla 4).
+  - Textual: los inyectables no insulínicos «such as GLP-1 agonists» no requieren cambios de dosis ni carbohidrato adicional para el ejercicio; «More research is needed on the interaction of all these medications and exercise».
+  - Dosis en DT2 (Tabla 2, textual): «Minimum of 150 to 300 min/wk of moderate activity or 75 to 150 min of vigorous activity»; fuerza «2-3 d/wk, but never on consecutive days».
+  - Lectura del texto completo: 37 % (100 000 de 267 407 caracteres).
+- Guía de seguridad de ejercicio específica para personas con GLP-1 (sin diabetes) emitida por una sociedad: NOT FOUND.

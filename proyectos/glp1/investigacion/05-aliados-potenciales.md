@@ -224,3 +224,21 @@ Nota: los clubes Cumbres y Nave 01 Apodaca no tienen ninguno de estos hospitales
 - Un perfil profesional público menciona a una nutricionista de la empresa «Mindful Nutrition» trabajando dentro de **Sports World Paseo Interlomas** en 2021 (SNIPPET-ONLY, LinkedIn). Indica que ya hubo concesión o alianza de nutrición dentro de algún club; conviene confirmarlo internamente antes de buscar un socio nuevo.
 
 ---
+
+## Parte C · Aplicaciones y plataformas digitales de nutrición y obesidad con operación en México
+
+#### Clivi · clínica digital de obesidad y diabetes (México) — VERIFIED
+- **Qué ofrece:** evaluación en línea, laboratorios con proveedores nacionales, consulta con endocrinólogos e internistas, «GLP-1 y otros medicamentos bajo supervisión especializada» entregados a domicilio (Wegovy, Mounjaro, Ozempic; anuncia Wegovy en tabletas), plan de alimentación de nutriólogos, registro de alimentos con escáner, «evolución corporal» con escaneo del cuerpo en la app, soporte 24/7. Declara regulación COFEPRIS y verificación LegitScript. Fuente: https://www.clivi.com.mx/
+- **Presencia en México:** nacional, 100 % en línea.
+- **Precio:** **MXN 4,299 el primer mes** (precio publicado en la portada; no se localizó tabla completa de planes).
+- **Usuarios:** «más de 20 mil pacientes atendidos» y «+15,000 pacientes activos» (portada).
+- **Programa B2B:** sí. «Tu tratamiento con GLP-1 a precio empresarial … Hasta 30% dscto. · +200 empresas»; la empresa no ve información clínica. Lista de empresas con convenio que incluye, entre otras, 7-Eleven, AB InBev, Accenture, Alsea, Amazon, Arca Continental, BBVA, Banamex, Bayer, Coca-Cola, CFE y Ciudad de México. Fuente: https://www.clivi.com.mx/empresas
+- **Alianza con gimnasios:** NOT FOUND.
+- **Lectura:** es el socio de referencia médica digital más directo: ya prescribe y acompaña GLP-1 a escala nacional y ya vende a empresas. Su app mide composición/evolución corporal, terreno donde Sports World aporta la medición presencial y el entrenamiento de fuerza que Clivi no tiene. Riesgo: Clivi también podría ver a Sports World como canal y no como socio en igualdad.
+
+#### Fitia · app de nutrición y planes de comida con IA — VERIFIED
+- **Qué ofrece:** conteo de calorías, planes de comidas personalizados, listas de compras, coach de IA; orientada a «pérdida de peso, ganancia muscular y recomposición corporal». Fundada en 2019, respaldada por Y Combinator. Fuente: https://fitia.app/es/nosotros/
+- **Usuarios:** «10M+ usuarios en todo el mundo», «150+ países» (misma fuente). Cifra específica de México: NOT FOUND.
+- **Precio en México:** Premium **MXN 219 al mes / MXN 679 al año** (tabla de referencia 2025 publicada por Fitia: https://fitia.app/es/aprende/articulo/mejores-apps-de-nutricion-personalizada/). Un comparador externo reporta en 2026 precios mensuales de 115, 149 o 219 MXN, 3 meses 359, 6 meses 539, 12 meses 609-679 y familiar anual 1,029 MXN (SNIPPET-ONLY, https://calorix.ai/es/comparativas/precio-fitia/).
+- **Programa B2B o para gimnasios:** NOT FOUND en las páginas leídas.
+- **Lectura:** la mejor candidata de app de consumo en español (origen latinoamericano, precio local bajo, foco en recomposición corporal). No es una plataforma médica: no sirve para referencia clínica.
