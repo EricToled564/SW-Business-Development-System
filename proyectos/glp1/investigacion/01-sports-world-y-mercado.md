@@ -185,3 +185,72 @@ RA-2024, «Panorama general de la industria formal del fitness», citando el *IH
 
 Participación implícita de Sports World (cálculo propio): 97,046 / 4,264,000 ≈ **2.3%** de los usuarios de clubes en México (denominadores de años distintos; solo orden de magnitud).
 
+### 7.b Actividad física y motivaciones en México · INEGI MOPRADEF 2025 (VERIFIED)
+
+Fuente: **[MOPRADEF-2025]** INEGI, «Módulo de Práctica Deportiva y Ejercicio Físico (MOPRADEF) 2025. Reporte de resultados», 27 de enero de 2026, 20 págs. Levantamiento del 2 al 27 de junio de 2025; muestra de 4,818 viviendas. https://inegi.org.mx/contenidos/saladeprensa/boletines/2026/mopradef/mopradef2025_RR.pdf
+
+- Población de 18 años y más activa físicamente en tiempo libre (32 ciudades de 100 mil y más): **44.5%** en 2025 («el segundo más alto de la serie histórica»); 41.1% en 2024; 39.8% en 2023. Mujeres 40.7%, hombres 49.1%.
+- Nacional, 12 años y más, activa en tiempo libre: **41.7%** (mujeres 37.4%, hombres 46.7%).
+- **Motivo principal** de la práctica (población de 12 años y más activa en tiempo libre, gráfica 10):
+
+| Motivo | Mujeres | Hombres |
+|---|---|---|
+| Por salud | 60.2% | 47.5% |
+| Por diversión | 16.8% | 31.0% |
+| Para relajarse o disminuir el estrés | 16.3% | 13.3% |
+| **Para verse mejor** | **6.3%** | **6.9%** |
+| Otro | 0.5% | 1.3% |
+
+  Advertencia metodológica: MOPRADEF **no ofrece la opción «bajar de peso»**; el control de peso queda repartido entre «por salud» y «para verse mejor». La pregunta abarca toda actividad física en tiempo libre (incluye espacios públicos), no solo gimnasios. Edición anterior (2018): «63.1% de la población que realiza práctica físico-deportiva tiene como motivo principal la salud» (SNIPPET-ONLY, https://www.inegi.org.mx/contenidos/programas/mopradef/doc/resultados_mopradef_nov_2018.pdf).
+- Principal influencia para hacer ejercicio: «Doctor(a) o personal médico» **14.3%** (nadie: 58.1%). Relevante para GLP-1: el médico es el primer influenciador externo.
+- Suficiencia: entre quienes se ejercitan en «instalaciones o lugares de uso restringido» (privadas, estudio, trabajo, domicilio), 70.3% alcanza el nivel suficiente, frente a 50.2% en lugares públicos.
+- Razón principal de inactividad: «Cansancio o falta de tiempo por trabajo o estudio» 32.2%; «Problemas de salud o por la edad» 18.4%.
+
+### 7.c Motivaciones de usuarios de gimnasio · encuestas de industria
+
+**(i) México, usuarios de gimnasio · Mercado Fitness, «¿Qué quiere el cliente?» (2025)** — VERIFIED como nota de prensa de la editorial; el informe completo no se leyó (descarga con registro: https://comunidad.mercadofitness.com/informe-mexico-2025).
+Fuente: https://mercadofitness.com/mercado-fitness-lanza-informe-que-quiere-el-cliente-mexico/ (16 de mayo de 2025). «Basado en más de 19.000 respuestas recopiladas en todo el país».
+- Cita: «las principales motivaciones para asistir al gimnasio son la salud (67%), la apariencia física (42%), la búsqueda de resultados visibles (36%) y el deseo de **bajar de peso (32%)**». Respuesta múltiple (suma > 100%).
+- «solo el 13% de los encuestados en México afirma haber alcanzado su objetivo entrenando. El resto dice estar en camino (66%) o sentirse estancado (21%).»
+- «los usuarios que pagan cuotas más altas no siempre se sienten más satisfechos».
+- Advertencia: muestra autoseleccionada en línea (lectores/usuarios contactados por la editorial); no probabilística.
+
+**(ii) América Latina (incluye México metropolitano, n=900) · HFA y ABC Fitness, «2024 Latin America Fitness Consumer Survey», resumen ejecutivo, diciembre de 2024** — VERIFIED.
+Fuente: https://hub.healthandfitness.org/hubfs/LatAm%20Survey%202024%20-%20Final%20Exec%20Sum%20with%20Cover%20(ENG).pdf (J. Wallin Opinion Research; n=3,699; núcleo activo n=2,984; en línea, 18-24 de septiembre de 2024; margen ±1.8%).
+- «Top reasons for physical activity» (hasta tres respuestas, toda la región): «To get or to stay healthy» 43.7%; «To improve my mental or emotional well-being» 41.8%; «To feel better about myself» 36.1%; «To build confidence and self-esteem» 22.7%; **«To lose weight» 20.9%**; **«To look better» 20.6%**; «To live a longer life» 19.0%; «To build muscle» 15.4%.
+- Membresía entre activos de zonas metropolitanas: México **67.1%** (región 68.7%).
+- El resumen no desglosa motivaciones por país; el desglose de México está en el informe completo (exclusivo para miembros de HFA): **NOT FOUND** para México por separado.
+
+**(iii) Población general México · INEGI MOPRADEF 2025** (ver 7.b): «Para verse mejor» 6.3% (mujeres) / 6.9% (hombres) como motivo **principal único**; sin opción de peso.
+
+Lectura combinada (síntesis propia, no cifra de fuente): según la forma de preguntar, la proporción de usuarios que cita bajar de peso o la estética va de **~7%** (motivo principal único, población activa general, INEGI) a **~21%** (una de tres razones, activos urbanos LatAm, HFA) y **32%-42%** (respuesta múltiple, usuarios de gimnasio en México, Mercado Fitness).
+
+**(iv) Abandono del gimnasio en México** — SNIPPET-ONLY: «Entre las causas por las que se deja de ir al gimnasio, 28.5 por ciento mencionó que ya no podía pagar la mensualidad, **19.2 porque cumplió su meta u objetivo**» (https://www.clikisalud.net/por-que-los-mexicanos-ya-no-asisten-al-gimnasio/; fuente original y año no verificados).
+
+### 7.d Tamaño del mercado mexicano · dato vigente (HFA 2026 Global Report)
+
+Fuente: **[HFA-2026-MX]** Health & Fitness Association, *2026 HFA Global Report*, perfil «Latin America: Mexico» (datos 2024, fuente de origen: Mercado Fitness). https://www.healthandfitnessbusiness.org/2026-global-report/latin-america-mexico — VERIFIED (texto de la página).
+- Cita: «In 2024, the industry recorded a consumer penetration rate of **5.6%**, attracting **7.2 million consumers** at more than **20,000 facilities**.»
+- El *2025 HFA Global Report* reporta para México **20,642** instalaciones y **7,200,000** usuarios (5.6%) — SNIPPET-ONLY (copia en Scribd, https://www.scribd.com/document/1029934391/2025-HFA-Global-Report; el informe oficial requiere membresía HFA).
+- Comparativo regional del mismo snippet (SNIPPET-ONLY): Brasil 13.65 millones (7%); Colombia 3.6 millones (6.9%); Argentina 3.6 millones (7.8%); Chile 1.05 millones (5.3%); Estados Unidos 76.95 millones (24.9%).
+- Ingresos de la industria en México: **NOT FOUND** en la edición 2026 (el perfil no publica cifra de ingresos). Último dato disponible: USD 1,872 millones (IHRSA 2019, citado en RA-2024).
+
+Perfil de Sports World en el mismo informe (HFA 2026, «Company Profiles Latin America», VERIFIED): https://www.healthandfitnessbusiness.org/2026-global-report/company-profiles-latin-america
+- «Number of Facilities: 2025: 48 (owned)»; «Number of Members: 2025: 102,255»; «Revenue: 2025: US$114,000,000».
+- Otros operadores mexicanos con dato de socios 2025 en el mismo listado: Sportium 11 clubes / 36,869 socios / USD 31.2 millones; Gimnasios Americanos (Vivo 47) 8 clubes / 21,088 socios / USD 13.5 millones; Club C+ deportivo 5 clubes / 6,920 socios; Sport City 25 clubes (sin socios); Station 24 ~75 clubes; Empire Fitness 25 clubes. Smart Fit (regional): 2,084 unidades y 5.21 millones de socios.
+
+Participación implícita (cálculo propio): 102,255 / 7,200,000 ≈ **1.4%** de los usuarios de instalaciones de fitness en México (años 2025 vs 2024).
+
+### 7.e Referencias de deserción (churn) en la industria
+
+| Referencia | Cifra | Etiqueta | Fuente |
+|---|---|---|---|
+| HFA, *2025 Fitness Industry Benchmarking Report* (datos 2024; 175 empresas, >17,000 instalaciones, 27 países) | «member retention rate of **66.4%**» (≈ 33.6% de bajas anuales); crecimiento neto de membresía 5.5%; crecimiento de ingresos mediano 9.9% | VERIFIED (página oficial del informe) | https://www.healthandfitness.org/2025-fitness-industry-benchmarking-report/ |
+| HFA, *2026 Fitness Industry Benchmarking Report* (datos 2025; 244 operadores, ~27,000 instalaciones, 40 países) | Tasa de retención: **NOT FOUND** (la página pública no la publica; informe exclusivo para miembros) | — | https://www.healthandfitness.org/2026-fitness-industry-benchmarking-report/ |
+| Sperandei, Vieira y Reis (2016), *Journal of Science and Medicine in Sport* 19(11), doi:10.1016/j.jsams.2015.12.522. 5,240 socios de un gimnasio de Río de Janeiro, 2005-2014 | «**63%** of new members will abandon activities before the third month, and **less than 4%** will remain for more than 12 months of continuous activity». **Relevante para GLP-1:** «motivations related to weight loss, hypertrophy, health, and aesthetics are related to risk of abandonment» | VERIFIED (resumen en PubMed) | https://pubmed.ncbi.nlm.nih.gov/26874647/ |
+| Gymdesk Benchmark (4,594 gimnasios, mayoría escuelas de artes marciales) | Bajas mensuales de 2% a 3.5% en socios con más de 90 días | SNIPPET-ONLY | https://gymdesk.com/blog/gym-retention-rate-benchmarks |
+| ABC Fitness, *Wellness Watch* mitad de 2026 (EE. UU.) | Cancelaciones de gimnasios enero-mayo 2026 vs 2025: **+8%**; altas: −9% | SNIPPET-ONLY (vía regulr.ai y justgains.com) | https://insider.fitt.co/press-release/consistency-is-becoming-fitness-new-growth-engine-according-to-abc-fitness-mid-year-wellness-watch-report/ |
+| Les Mills, informe «Most Valuable Participants» | Los participantes de mayor valor tienen «88% more likely to still be active after 12 months» | SNIPPET-ONLY (publicación en LinkedIn) | https://www.linkedin.com/posts/catmcdermott_landmark-les-mills-report-reveals-how-mvps-activity-7361111490512187393-SCNk |
+
+Contraste con Sports World (cálculo propio, interpretando su deserción como mensual): deserción bruta 9M26 de 6.1% mensual ≈ 73% de rotación bruta anual (suma simple), muy por encima del 33.6% anual implícito en el benchmark HFA; la deserción neta 9M26 de 4.1% mensual equivaldría a ≈ 49% anual. La diferencia es consistente con una base que incluye invitados promocionales y con la depuración deliberada de clientes de bajo ingreso en 2026. Sin la definición oficial de la métrica, la comparación es indicativa.
+

@@ -100,3 +100,93 @@ Estado: en curso (se escribe punto por punto).
 - **SLIMM-2** (protocolo de ECA: sedentarismo, fuerza y semaglutida) — VERIFIED (ficha). Contemp Clin Trials. 2025 Feb. PMID 39608749.
 - **Metaanálisis de masa magra con incretinas vs intervención de estilo de vida** — Diabetes Obes Metab. 2026 Jun. PMID 41877354 (solo ficha; resumen no leído).
 - **ECA con semaglutida + entrenamiento de fuerza con resultados publicados:** NOT FOUND en PubMed al 23-nov-2026 (búsqueda: semaglutide AND resistance training/exercise AND randomized).
+
+---
+
+## 3. Recuperación de peso al suspender el fármaco
+
+### 3.1 Extensión de STEP 1 (Wilding 2022) · «dos tercios» — VERIFIED
+
+- Wilding JPH, Batterham RL, Davies M, et al.; STEP 1 Study Group. *Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension.* Diabetes Obes Metab. 2022;24(8):1553-1564. PMID 35441470. DOI 10.1111/dom.14725. PMCID PMC9542252. https://pubmed.ncbi.nlm.nih.gov/35441470/
+  - n = 327 en la extensión (análisis exploratorios). En la semana 68 se suspendieron semaglutida **y la intervención de estilo de vida**.
+  - Cita textual: «From week 0 to week 68, mean weight loss was 17.3% (SD: 9.3%) with semaglutide and 2.0% (SD: 6.1%) with placebo. Following treatment withdrawal, semaglutide and placebo participants regained 11.6 (SD: 7.7) and 1.9 (SD: 4.8) percentage points of lost weight, respectively, by week 120, resulting in net losses of 5.6% (SD: 8.9%) and 0.1% [...]».
+  - Cita textual (conclusión): «One year after withdrawal of once-weekly subcutaneous semaglutide 2.4 mg and lifestyle intervention, participants regained two-thirds of their prior weight loss, with similar changes in cardiometabolic variables.»
+  - Matiz útil para el documento: la extensión retiró también el acompañamiento de estilo de vida; no prueba qué ocurre si el ejercicio continúa (ver §2.2, Jensen 2024).
+
+### 3.2 SURMOUNT-4 (Aronne 2024, JAMA) — VERIFIED
+
+- Aronne LJ, Sattar N, Horn DB, et al.; SURMOUNT-4 Investigators. *Continued Treatment With Tirzepatide for Maintenance of Weight Reduction in Adults With Obesity: The SURMOUNT-4 Randomized Clinical Trial.* JAMA. 2024;331(1):38-48. PMID 38078870. DOI 10.1001/jama.2023.24945. PMCID PMC10714284. https://pubmed.ncbi.nlm.nih.gov/38078870/
+  - Diseño: 783 en fase abierta de 36 semanas (10 o 15 mg); 670 aleatorizados 1:1 a continuar o pasar a placebo por 52 semanas.
+  - Cita textual: «Participants [...] who completed the 36-week lead-in period experienced a mean weight reduction of 20.9%. The mean percent weight change from week 36 to week 88 was -5.5% with tirzepatide vs 14.0% with placebo (difference, -19.4% [95% CI, -21.2% to -17.7%]; P < .001).»
+  - Cita textual: «300 participants (89.5%) receiving tirzepatide at 88 weeks maintained at least 80% of the weight loss during the lead-in period compared with 16.6% receiving placebo».
+  - Cita textual: «The overall mean weight reduction from week 0 to 88 was 25.3% for tirzepatide and 9.9% for placebo.»
+
+### 3.3 Metaanálisis BMJ (West et al., publicado en enero de 2026) — VERIFIED (resumen) / cifras por fármaco SNIPPET-ONLY
+
+- West S, Scragg J, Aveyard P, Oke JL, Willis L, Haffner SJP, Knight H, Wang D, Morrow S, Heath L, Jebb SA, Koutoukidis DA. *Weight regain after cessation of medication for weight management: systematic review and meta-analysis.* BMJ. 2026;392:e085304. PMID 41500720. DOI 10.1136/bmj-2025-085304. PROSPERO CRD42024532069. https://pubmed.ncbi.nlm.nih.gov/41500720/
+  - Nota: la solicitud lo ubicaba en 2025; la búsqueda cubre hasta febrero de 2025, pero la publicación es del **7 de enero de 2026**.
+  - 37 estudios, 63 brazos, 9341 participantes; tratamiento medio 39 semanas; seguimiento medio 32 semanas.
+  - Cita textual: «The average monthly rate of weight regain was 0.4 kg (95% confidence interval (CI) 0.3 to 0.5) (mixed model 0.3 kg (0.2 to 0.4) monthly v control in RCTs). All cardiometabolic markers were projected to return to baseline within 1.4 years after the cessation of WMM.»
+  - Cita textual: «Weight regain was faster after WMM than after BWMP [programas conductuales de control de peso] (by 0.3 kg (0.22 to 0.34) monthly), independent of initial weight loss.»
+  - Cita textual (conclusión): «These findings suggest caution in short term use of these drugs without a more comprehensive approach to weight management.»
+  - **SNIPPET-ONLY / comunicados de prensa (no leídos en el artículo completo; bmj.com devolvió 403):**
+    - Oxford BRC (https://oxfordbrc.nihr.ac.uk/stopping-weight-loss-drugs-linked-to-faster-regain-than-ending-diet-programmes-review-finds): «For newer medicines such as semaglutide and tirzepatide, regain averaged 0.8 kg (~1.8 pounds) per month», con «projections indicating return to baseline by approximately 1.5 years».
+    - EurekAlert (https://www.eurekalert.org/news-releases/1111469): «projected to return to their pre-treatment weight by 1.7 years»; «only eight studies assessed treatment with the newer GLP-1 drugs».
+    - Las dos notas difieren (1.5 vs 1.7 años). Antes de publicar, verificar en el texto completo del BMJ cuál corresponde a semaglutida/tirzepatida.
+
+---
+
+## 4. Guías y posicionamientos
+
+### 4.1 Asesoría conjunta ACLM · ASN · OMA · TOS (2025) — VERIFIED
+
+- Mozaffarian D, Agarwal M, Aggarwal M, et al. *Nutritional priorities to support GLP-1 therapy for obesity: a joint Advisory from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society.* Am J Clin Nutr. 2025;122(1):344-367. PMID 40450457. DOI 10.1016/j.ajcnut.2025.04.023. PMCID PMC12612741. https://pmc.ncbi.nlm.nih.gov/articles/PMC12612741/
+  - Publicación simultánea en: Obesity (Silver Spring) 2025 Aug, PMID 40445127, DOI 10.1002/oby.24336; Obes Pillars 2025 Sep, PMID 40673264, DOI 10.1016/j.obpill.2025.100181; Am J Lifestyle Med 2025 May 30, PMID 40452753, DOI 10.1177/15598276251344827. Tiene fe de erratas (2026; p. ej. Am J Clin Nutr PMID 41962912) — contenido de la errata no revisado.
+  - Resumen (textual): «GLP-1s reduce body weight by 5% to 18% in trials, with modestly lower effects in real-world analyses».
+  - Resumen (textual), evaluación inicial: «comprehensive exam including muscle strength, function, and body composition assessment» y «lifestyle assessment including aerobic activity, strength training, sleep, mental stress, substance use, and social connections».
+  - Resumen (textual), durante el tratamiento: «preserving muscle and bone mass through resistance training and appropriate diet». Estrategias de apoyo: «group-based visits, registered dietitian nutritionist counseling, telehealth and digital platforms, and Food is Medicine interventions».
+  - **Proteína** (texto completo, PMC):
+    - «For the general adult population, the recommended daily allowance for protein is 0.8 g/kg/d».
+    - «Higher targets, such as 1.2–1.6 g/kg/d, have also been proposed during active weight reduction».
+    - «Alternatively, setting an absolute protein target of 80–120 g/d».
+    - «Protein-rich foods can be consumed first in a meal to increase the likelihood of sufficient consumption.»
+  - **Actividad física** (texto completo, PMC): «at least 150 min of moderate-intensity aerobic exercise weekly» y «aiming for regular strength training at least 3 times weekly».
+  - **Composición corporal** (texto completo, Tabla 5 y texto): «Consider measurement of muscle mass» (ejemplos: BIA, pletismografía por desplazamiento de aire, DXA); «Bioelectrical impedance analysis (BIA) is pragmatic, easily implemented at point-of-care»; «For monitoring of individuals taking GLP-1s, DXA could be considered yearly or every 2 y».
+  - **Hidratación:** «Ensure adequate fluids» (Tabla 6). Sin volumen específico.
+  - Nota de lectura: el texto completo se leyó en su primer 28 % (100 000 de 360 722 caracteres); las citas anteriores provienen de esa porción.
+
+### 4.2 Consenso Delphi internacional (Sievenpiper et al., Obes Pillars 2025/2026) — VERIFIED (resumen)
+
+- Sievenpiper JL, Ard J, Blüher M, et al. *Nutritional and lifestyle supportive care recommendations for management of obesity with GLP-1 - based therapies: An expert consensus statement using a modified Delphi approach.* Obes Pillars. 2025;17:100228 (eCollection marzo 2026). PMID 41502845. DOI 10.1016/j.obpill.2025.100228. PMCID PMC12768930.
+  - Cita textual: «A total of 52 consensus statements were developed [...] with a focus on nutritional factors in relation to obesity, body composition, physical activity, and the management of common gastrointestinal symptoms».
+  - Cita textual: «The statements were primarily derived from indirect evidence».
+  - Cifras específicas de proteína y actividad: no leídas (texto completo no consultado).
+
+### 4.3 Ciencias del ejercicio · ACSM y declaraciones conjuntas
+
+- **ACSM (revista oficial) — VERIFIED.** Jakicic JM, Rogers RJ. *The Role of Exercise in the Contemporary Era of Obesity Management Medications.* Curr Sports Med Rep. 2025;24(8):240-245. PMID 40758789. DOI 10.1249/JSR.0000000000001272. Copyright del American College of Sports Medicine.
+  - Cita textual: «Physical activity and structured exercise have been suggested as potential strategies for attenuating these reductions, yet there is a paucity of research to support that these benefits will be realized.»
+  - Cita textual: «the inclusion of exercise in the treatment of patients with obesity who are prescribed an obesity management medication should be primarily focused on the health benefits beyond weight loss, with programming focused on the individual health needs of the patient.»
+  - Nota: posición prudente; obliga a no prometer «evitar la pérdida muscular». El ECA de Green 2026 (§2.3) es posterior y aporta la primera prueba aleatorizada a favor.
+  - Antecedente: Jakicic JM, Rogers RJ, et al. *Physical activity in the new era of antiobesity medications.* Obesity (Silver Spring). 2024 Feb. PMID 37849057. DOI 10.1002/oby.23930 (solo ficha).
+  - **Declaración formal de ACSM específica de GLP-1 con frecuencias prescritas:** NOT FOUND (acsm.org devolvió 403; PubMed sin resultados).
+- **Declaración conjunta internacional de 12 organizaciones de ciencias del ejercicio (agosto de 2026) — VERIFIED (nota oficial de CSEP; PDF no leído).** https://csep.ca/2026/08/05/joint-statement-on-exercise-in-obesity-care/ (5-ago-2026). Firmantes incluyen ESSA, CSEP, ECSS, CEPA, CASES, entre otros; sin revista ni DOI.
+  - Cita textual: «evidence suggests that 20–40% of the total weight lost during treatment may be due to lean tissue, including skeletal muscle».
+  - Cita textual: «Effective exercise must be individually assessed, prescribed and progressed by a clinical exercise physiologist (CEP).»
+  - Frecuencia de entrenamiento de fuerza: no especificada en la nota.
+- **World Obesity Federation + industria del fitness — VERIFIED (página oficial; fecha no indicada en la página).** *New joint position statement: physical activity and nutrition must be central to obesity care.* https://www.worldobesity.org/news/new-position-statement-physical-activity-and-nutrition-must-be-central-to-obesity-care/
+  - Socios: Health & Fitness Association, AUSactive, Exercise New Zealand, Fitness Industry Council of Canada, ukactive, World Federation of the Sporting Goods Industry.
+  - Cita textual: «Integration of obesity medications within care models that include funded access to physical activity and nutrition support;».
+  - Relevancia: respaldo institucional directo a que la industria del fitness participe en el modelo de atención.
+
+### 4.4 Europa · EASO
+
+- **Marco farmacológico EASO (2025) y actualización 2026 — VERIFIED (ficha; sin resumen en PubMed).**
+  - McGowan B, Ciudin A, Baker JL, et al. *Framework for the pharmacological treatment of obesity and its complications from the European Association for the Study of Obesity (EASO).* Nat Med. 2025;31(10):3229-3232. PMID 41039115. DOI 10.1038/s41591-025-03765-w.
+  - Ciudin A, Baker JL, Belančić A, et al. *[...] (EASO): 2026 update.* Nat Med. 2026;32(6):1962-1966. PMID 42120724. DOI 10.1038/s41591-026-04397-4.
+  - Recomendaciones de actividad física o proteína en estos marcos: NOT FOUND (no hay resumen; texto completo no leído). Son marcos de elección de fármaco, no de estilo de vida.
+- **Consenso EASO · EFAD · ECPO (Lancet Diabetes Endocrinol, 2026) — VERIFIED (resumen).** Dobbie LJ, Tolvanen L, Alves D, et al. *Nutritional, functional, and psychological considerations for incretin-based therapies in adults—an EASO, EFAD, and ECPO Consensus Statement.* Lancet Diabetes Endocrinol. 2026;14(9):754-777. Epub 8-jul-2026. PMID 42419343. DOI 10.1016/S2213-8587(26)00122-1.
+  - Cita textual: «We discuss pragmatic approaches that could help support preservation of fat-free mass and physical function during weight loss, including adequate protein intake and progressive resistance exercise.»
+  - Cita textual: «We propose pragmatic monitoring during weight loss, including diet quality, micronutrient risk, and functional measures, with body-composition assessment where indicated.»
+  - Metas numéricas de proteína y de entrenamiento: no leídas (texto completo tras muro de pago).
+  - Nota: esta es la referencia europea de 2026 más útil para el documento; la «EASO 2025» de la solicitud corresponde al marco farmacológico de Nat Med.
