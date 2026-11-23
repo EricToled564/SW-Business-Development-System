@@ -396,3 +396,22 @@ Nota: los clubes Cumbres y Nave 01 Apodaca no tienen ninguno de estos hospitales
 | Precedente internacional | Modelo de referencia (Planet Fitness + Ro; Crunch + Thrive) y marca compartida (F45 + Dr. B) | Compatibles con que el club no prescriba; Life Time MIORA muestra el techo del modelo con clínica propia | inspire360.com; athletechnews.com |
 
 Estado: completo al 23 de noviembre de 2026. Pendientes declarados: programas hospitalarios en Puebla, Querétaro y ciudades medianas (NOT FOUND o SNIPPET-ONLY); precios de Fitpack, Habeats y Privee; contenido de los programas empresariales de Manzana Verde y No Sugar; confirmación interna del antecedente «Mindful Nutrition» en Paseo Interlomas.
+
+---
+
+## Addendum (23 nov. 2026) · Selección por red y por modelo integrado, a petición de Eric
+
+### Hospitales: una o dos redes, no hospitales sueltos
+- **Grupo Ángeles** — directorio de hospitalangeles.com (VERIFIED, 28 unidades): Acoxpa, Andares, Centro Sur, Ciudad Juárez, Clínica Londres, Culiacán, Del Carmen, León, Lindavista, Lomas, Metropolitano, México, Mocel, Morelia, Pedregal, Puebla, Querétaro, Roma, San Luis Potosí, Santa Mónica, Tampico, Tijuana, Torreón, Universidad, Valle Oriente, Villahermosa, Xalapa.
+  - Cruce con las 14 zonas de Sports World (ESTIMADO por nombre de la unidad): Valle de México (31 clubes), Monterrey (3; Valle Oriente), Guadalajara (1; Del Carmen y Andares), Querétaro (3), Puebla (2), León (1), Torreón (1), Culiacán (1) → **8 zonas, 43 de 49 clubes**.
+  - Programas de obesidad propios (VERIFIED, Parte B): Instituto de Obesidad y Síndrome Metabólico en Ángeles México, Roma y Del Carmen; cirugía de obesidad en Roma, Santa Mónica y Valle Oriente.
+- **Christus Muguerza** — hospitales en Monterrey, Chihuahua, Saltillo, Reynosa, León, Mérida y Puebla (SNIPPET-ONLY, fuente de terceros: residenciaurgenciascm.com). Hospital Sur, Monterrey: centro de excelencia en enfermedades metabólicas y cirugía bariátrica acreditado por la SRC (VERIFIED, Parte B). Añadiría Saltillo y Mérida → **45 de 49 clubes**.
+- **Médica Sur** — «hospital de alta especialidad en Ciudad de México» (VERIFIED, meta descripción del sitio): una sola sede; no sirve como red.
+- Zonas sin red hospitalaria aliada: Toluca-Metepec, Aguascalientes, Hermosillo y Veracruz-Boca del Río (4 clubes) → Clivi (digital, nacional).
+
+### Nutrición: empresas con nutrióloga + menú personalizado + comida preparada a domicilio
+- **Jenny Light** (Valle de México) — VERIFIED: «menús clínicos personalizados»; programa con comida a domicilio ≈ $380 al día con consulta nutricional; valoración inicial $850 reembolsable; plan mensual con composición corporal; sucursales Del Valle, San Jerónimo, Arboledas, Interlomas y Satélite.
+- **Fitpack** (Monterrey, Querétaro, Nuevo Laredo) — VERIFIED en fitpack.com.mx: «nuestro menú semanal se adapta 100% a ti», entregas miércoles y domingo. Nutrióloga: SNIPPET-ONLY («Tu nutrióloga cocina por ti», Instagram). Saltillo: SNIPPET-ONLY (Facebook).
+- **In-Joy** (Guadalajara) — SNIPPET-ONLY: «Atención nutricional + dieta personalizada» con entrega.
+- **Manyar** (Valle de México) — VERIFIED: «Un nutriólogo especializado armará tu dieta»; consulta inicial; desde $380 al día. Descartado como primera opción: anuncia «hasta 5 kilos menos en 10 días», incompatible con el estándar de afirmaciones comprobables.
+- **Manzana Verde** (CDMX, Guadalajara, Monterrey) — VERIFIED: comida con ~32 g de proteína y «calorías calculadas por nutricionistas»; sin consulta personal publicada → solo comida, no servicio de nutrición.

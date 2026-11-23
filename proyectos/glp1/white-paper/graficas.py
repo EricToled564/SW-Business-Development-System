@@ -216,23 +216,29 @@ for k, (lab, n, col) in enumerate(papeles):
     x += w
 svg("clases-por-papel", 640, 72, c, "Las 51 clases del catálogo por papel en el programa")
 
-# 16. Hospitales aliados: distancia al club más cercano
-hosp = [("Ángeles Roma → Roma", 0.5), ("Hospital Español → Antara", 0.7), ("Ángeles México → Xola", 0.7), ("ABC Santa Fe → Santa Fe", 0.8),
-        ("Médica Sur → Patio Tlalpan", 2.2), ("Puerta de Hierro Sur → La Rioja", 2.5), ("TecSalud → San Pedro", 2.9)]
+# 16. Cobertura de los clubes por red hospitalaria aliada
+zonas = [("Valle de México", 31, "A"), ("Monterrey", 3, "A"), ("Querétaro", 3, "A"), ("Puebla", 2, "A"), ("Guadalajara", 1, "A"),
+         ("León", 1, "A"), ("Torreón", 1, "A"), ("Culiacán", 1, "A"), ("Saltillo", 1, "C"), ("Mérida", 1, "C"),
+         ("Toluca-Metepec", 1, "D"), ("Aguascalientes", 1, "D"), ("Hermosillo", 1, "D"), ("Veracruz-Boca del Río", 1, "D")]
+COLRED = {"A": ROJO, "C": OSCURO, "D": GRIS}
 c = []
-for i, (lab, d) in enumerate(hosp):
-    y = 4 + i * 30
-    c += [t(0, y + 16, lab, 12), f'<rect x="250" y="{y+3}" width="{d/3*300:.1f}" height="18" fill="{ROJO if d < 1 else OSCURO}"/>', t(256 + d/3*300, y + 17, f"{d} km", 12, TINTA, "700")]
-svg("hospitales", 640, 216, c, "Distancia entre hospital con programa de obesidad y club")
+for i, (z, n, r) in enumerate(zonas):
+    y = 4 + i * 21
+    w = max(n / 31 * 330, 10)
+    c += [t(0, y + 13, z, 11), f'<rect x="150" y="{y+2}" width="{w:.1f}" height="14" fill="{COLRED[r]}"/>', t(156 + w, y + 13, f"{n} club" + ("es" if n > 1 else ""), 11, TINTA, "700")]
+ly = 4 + len(zonas) * 21 + 8
+for k, (lab, col) in enumerate([("Grupo Ángeles: 43 clubes", ROJO), ("Christus Muguerza: 2 clubes", OSCURO), ("Clivi, referencia digital: 4 clubes", GRIS)]):
+    c += [f'<rect x="{k*200}" y="{ly}" width="12" height="12" fill="{col}"/>', t(k*200 + 17, ly + 11, lab, 11)]
+svg("cobertura-hospitalaria", 640, ly + 20, c, "Clubes de Sports World por zona y red hospitalaria aliada")
 
 # 17. Los tres círculos de aliados
 c = [f'<circle cx="160" cy="120" r="115" fill="{CLARO}"/>', f'<circle cx="160" cy="120" r="78" fill="#f6c9cb"/>', f'<circle cx="160" cy="120" r="40" fill="{ROJO}"/>',
      t(160, 116, "Sports World", 11, "#fff", "700", "middle"), t(160, 130, "entrena y mide", 10, "#fff", "400", "middle"),
-     t(160, 62, "Médico", 11, OSCURO, "700", "middle"), t(160, 24, "Nutrición y comida", 11, TINTA, "700", "middle"),
-     t(320, 60, "Círculo 1 · Médico que trata", 12, OSCURO, "700"), t(320, 77, "8 hospitales con programa de obesidad y Clivi", 11),
-     t(320, 115, "Círculo 2 · Nutriólogo que alimenta", 12, OSCURO, "700"), t(320, 132, "Nutriólogos con cédula, Nutrimind y Fitia", 11),
-     t(320, 170, "Círculo 3 · Cocina que entrega", 12, OSCURO, "700"), t(320, 187, "Manzana Verde y proveedores locales", 11)]
-svg("circulos-aliados", 640, 240, c, "Los tres círculos de aliados")
+     t(160, 62, "Red médica", 11, OSCURO, "700", "middle"), t(160, 24, "Nutrición y comida", 11, TINTA, "700", "middle"),
+     t(320, 60, "Red médica · el médico que trata", 12, OSCURO, "700"), t(320, 77, "Grupo Ángeles y Christus Muguerza; Clivi donde no hay hospital", 11),
+     t(320, 125, "Nutrición y comida · el plan que se come", 12, OSCURO, "700"), t(320, 142, "Jenny Light (Valle de México) y Fitpack (Monterrey y Querétaro):", 11),
+     t(320, 158, "nutrióloga, menú personalizado y comida preparada a domicilio", 11)]
+svg("circulos-aliados", 640, 240, c, "Los círculos de aliados")
 
 # 18. Hoja de ruta (diagrama de Gantt)
 meses = ["dic 26", "mar 27", "jun 27", "sep 27", "dic 27", "mar 28", "jun 28", "sep 28", "dic 28", "mar 29", "jun 29"]
