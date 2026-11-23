@@ -5,753 +5,590 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fuerza y Peso · White paper Sports World GLP-1</title>
 <style>
-:root{
-  --rojo:#d71920; --rojo-oscuro:#5b0a0d; --tinta:#1d232a; --gris:#5f6b76; --linea:#dfe3e8;
-  --fondo:#ffffff; --suave:#f5f6f8; --verde:#e8f3ee; --verde-borde:#9cc9b2; --rosa:#fbeced; --rosa-borde:#efb3b6;
-}
-@page{ size: Letter; margin: 20mm 18mm 18mm 18mm; }
+:root{ --rojo:#d71920; --oscuro:#5b0a0d; --tinta:#1d232a; --gris:#5f6b76; --linea:#dfe3e8; --fondo:#ffffff; --suave:#f4f5f7; --verde:#2f7d57; --verde-claro:#e8f3ee; --rosa:#fbeced; }
+@page{ size: Letter; margin: 18mm 17mm 17mm 17mm; }
 *{ box-sizing:border-box; }
 html,body{ background:var(--fondo); color:var(--tinta); }
-body{ font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:10.2pt; line-height:1.48; margin:0; }
-h1,h2,h3,h4{ line-height:1.2; margin:0; }
-h2{ font-size:19pt; margin:2mm 0 4mm; }
-h3{ font-size:12.5pt; margin:6mm 0 2mm; }
-h4{ font-size:10.5pt; margin:4mm 0 1.5mm; }
-h2,h3,h4,.anexo-titulo{ break-after:avoid; page-break-after:avoid; }
-p{ margin:0 0 2.6mm; }
-ul,ol{ margin:0 0 3mm; padding-left:5mm; }
-li{ margin:0 0 1.2mm; }
-.etiqueta{ color:var(--rojo); font-weight:700; letter-spacing:.06em; font-size:8.5pt; text-transform:uppercase; }
+body{ font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:10.4pt; line-height:1.45; margin:0; }
+h2{ font-size:20pt; line-height:1.15; margin:1mm 0 2mm; }
+h3{ font-size:12.5pt; margin:5mm 0 2mm; }
+h2,h3,.titulo-graf{ break-after:avoid; page-break-after:avoid; }
+p{ margin:0 0 2.4mm; }
+ul,ol{ margin:0 0 3mm; padding-left:5mm; } li{ margin:0 0 1.3mm; }
+.etiqueta{ color:var(--rojo); font-weight:700; letter-spacing:.07em; font-size:8.5pt; text-transform:uppercase; }
+.idea{ font-size:12pt; color:var(--gris); margin:0 0 4mm; }
 .seccion{ break-before:page; }
-.nobr{ break-inside:avoid; }
-table{ width:100%; border-collapse:collapse; margin:2mm 0 1.5mm; font-size:8.8pt; break-inside:auto; }
-th{ background:var(--tinta); color:#fff; text-align:left; padding:1.8mm 2mm; font-weight:700; vertical-align:bottom; }
-td{ border-bottom:1px solid var(--linea); padding:1.6mm 2mm; vertical-align:top; }
-tr{ break-inside:avoid; }
-td.num, th.num{ text-align:right; white-space:nowrap; }
+table{ width:100%; border-collapse:collapse; margin:2mm 0 1.5mm; font-size:9pt; }
+th{ background:var(--tinta); color:#fff; text-align:left; padding:1.8mm 2.2mm; font-weight:700; }
+td{ border-bottom:1px solid var(--linea); padding:1.7mm 2.2mm; vertical-align:top; }
+tr{ break-inside:avoid; } td.num,th.num{ text-align:right; white-space:nowrap; }
 tr.destacado td{ background:var(--rosa); font-weight:700; }
-.anexo-titulo{ font-weight:700; font-size:9.5pt; margin:5mm 0 1mm; }
-.fuente{ color:var(--gris); font-size:7.8pt; margin:0 0 4mm; }
-.caja{ border-left:4px solid var(--rojo); background:var(--suave); padding:3mm 4mm; margin:3mm 0 4mm; break-inside:avoid; }
-.caja.verde{ border-left-color:#2f7d57; background:var(--verde); }
-.caja.rosa{ border-left-color:var(--rojo); background:var(--rosa); }
-.caja h4{ margin-top:0; }
-.cifras{ display:grid; grid-template-columns:repeat(3,1fr); gap:3mm; margin:3mm 0 4mm; break-inside:avoid; }
-.cifra{ border-top:3px solid var(--rojo); background:var(--suave); padding:3mm; }
-.cifra b{ display:block; font-size:18pt; line-height:1.1; color:var(--rojo-oscuro); }
-.cifra span{ font-size:8.6pt; color:var(--tinta); }
-.tesis{ font-size:13pt; font-weight:700; line-height:1.35; margin:4mm 0; }
-.mini{ font-size:8.4pt; color:var(--gris); }
-svg{ width:100%; height:auto; display:block; }
-/* Portada */
-.portada{ height:239mm; display:flex; flex-direction:column; justify-content:space-between; background:#1d232a; color:#fff; margin:-20mm -18mm 0; padding:24mm 20mm 16mm; break-after:page; }
-.portada h1{ font-size:34pt; margin:5mm 0 5mm; }
-.portada .sub{ font-size:14pt; color:#d6dbe0; max-width:150mm; }
+.titulo-graf{ font-weight:700; font-size:9.6pt; margin:4mm 0 1.5mm; }
+.fuente{ color:var(--gris); font-size:7.8pt; margin:1mm 0 3.5mm; }
+.caja{ border-left:4px solid var(--rojo); background:var(--suave); padding:3mm 4mm; margin:3mm 0; break-inside:avoid; }
+.caja.verde{ border-left-color:var(--verde); background:var(--verde-claro); }
+.caja b.t{ display:block; margin-bottom:1mm; }
+.kpis{ display:grid; grid-template-columns:repeat(3,1fr); gap:3mm; margin:2mm 0 4mm; break-inside:avoid; }
+.kpi{ border-top:4px solid var(--rojo); background:var(--suave); padding:3mm; }
+.kpi b{ display:block; font-size:21pt; line-height:1.05; color:var(--oscuro); }
+.kpi span{ font-size:8.8pt; }
+.dos{ display:grid; grid-template-columns:1fr 1fr; gap:5mm; break-inside:avoid; }
+.si,.no{ padding:3mm 4mm; border-radius:2mm; }
+.si{ background:var(--verde-claro); } .no{ background:var(--rosa); }
+.si b,.no b{ display:block; margin-bottom:1.5mm; }
+.paso{ display:grid; grid-template-columns:12mm 1fr; gap:3mm; margin:0 0 3mm; break-inside:avoid; }
+.paso .n{ background:var(--rojo); color:#fff; font-weight:700; font-size:15pt; text-align:center; border-radius:2mm; padding:2mm 0; height:12mm; }
+svg{ width:100%; height:auto; display:block; break-inside:avoid; }
+.portada{ height:243mm; display:flex; flex-direction:column; justify-content:space-between; background:#1d232a; color:#fff; margin:-18mm -17mm 0; padding:24mm 20mm 16mm; break-after:page; }
+.portada h1{ font-size:40pt; margin:4mm 0; }
+.portada .sub{ font-size:14.5pt; color:#d6dbe0; max-width:155mm; }
+.portada .tesis{ background:#262d36; border-left:5px solid var(--rojo); padding:6mm; font-size:13pt; line-height:1.4; }
 .portada .pie{ font-size:9pt; color:#aab3bc; border-top:1px solid #3a434d; padding-top:4mm; }
-.portada .tesis-caja{ background:#262d36; border-left:5px solid var(--rojo); padding:6mm; font-size:12.5pt; line-height:1.4; }
-.indice td{ border-bottom:1px dotted var(--linea); padding:1.4mm 1mm; font-size:9.6pt; }
-.indice td.num{ color:var(--gris); }
-.decisiones li{ margin-bottom:2mm; }
-.dos{ display:grid; grid-template-columns:1fr 1fr; gap:5mm; }
+.indice td{ border-bottom:1px dotted var(--linea); padding:1.6mm 1mm; font-size:10pt; } .indice td.num{ color:var(--gris); }
+.mini{ font-size:8.4pt; color:var(--gris); }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --fondo:#ffffff; } }
 :root[data-theme="dark"]{ --fondo:#ffffff; }
 @media screen{ body{ max-width:190mm; margin:0 auto; padding:10mm 16px; } .portada{ margin:0 0 10mm; height:auto; min-height:240mm; } .seccion{ margin-top:12mm; } }
-@media screen and (max-width:640px){ .cifras,.dos{ grid-template-columns:1fr; } table{ font-size:8pt; } }
+@media screen and (max-width:640px){ .kpis,.dos{ grid-template-columns:1fr; } table{ font-size:8pt; } }
 </style>
 </head>
 <body>
 
-<!-- PORTADA -->
 <section class="portada">
   <div>
-    <div class="etiqueta">White paper estratégico · Sports World</div>
+    <div class="etiqueta">White paper · Recomendación para el equipo de marketing de Sports World</div>
     <h1>Fuerza y Peso</h1>
-    <p class="sub">Qué pierde Sports World si no actúa ante los medicamentos para bajar de peso, y cómo convertir ese cambio en una fuente de socios, permanencia e ingreso.</p>
+    <p class="sub">La mayor demanda del fitness en México es bajar de peso. Sports World no la atiende hoy, y los medicamentos GLP-1 están llegando primero. Qué cuesta no actuar y cómo convertirlo en socios.</p>
   </div>
-  <div class="tesis-caja">El medicamento ayuda a bajar de peso. No conserva el músculo ni sostiene el resultado cuando se suspende. Ése es el trabajo de Sports World, y ya tiene con qué hacerlo: 51 clases, el Body Test mensual incluido en cada membresía y 49 clubes.</div>
-  <div class="pie">Noviembre de 2026 · Cifras con corte al 23 de noviembre de 2026 · Documento para discusión del comité de dirección. La información clínica se presenta como contexto de negocio y no sustituye la valoración médica.</div>
+  <div class="tesis">El medicamento ayuda a bajar de peso. No conserva el músculo ni sostiene el resultado cuando se suspende. Ése es el terreno de Sports World, y ya tiene con qué ocuparlo: 51 clases, el Body Test mensual incluido en cada membresía y 49 clubes.</div>
+  <div class="pie">Noviembre de 2026 · Cifras con corte al 23 de noviembre de 2026 · Documento de recomendación para consideración del equipo de marketing. La información clínica se presenta como contexto de negocio y no sustituye la valoración médica.</div>
 </section>
 
-<!-- ÍNDICE -->
 <section>
   <div class="etiqueta">Contenido</div>
   <h2>Índice</h2>
   <table class="indice">
-    <tr><td>Resumen ejecutivo</td><td class="num">3</td></tr>
-    <tr><td>1. El mercado ya cambió: qué está pasando con los GLP-1 en México</td><td class="num">5</td></tr>
-    <tr><td>2. El riesgo de no hacer nada: membresías canceladas y ventas no realizadas</td><td class="num">6</td></tr>
-    <tr><td>3. Por qué el riesgo no es mayor y dónde está la oportunidad</td><td class="num">9</td></tr>
-    <tr><td>4. Lo que dice la evidencia clínica</td><td class="num">10</td></tr>
-    <tr><td>5. La propuesta: Programa Fuerza y Peso, construido con las clases que ya existen</td><td class="num">11</td></tr>
-    <tr><td>6. Alianzas: hospitales, plataformas de nutrición y comida a domicilio</td><td class="num">13</td></tr>
-    <tr><td>7. Hoja de ruta, metas y criterios para avanzar</td><td class="num">15</td></tr>
-    <tr><td>8. Gobierno, señales de alerta y límites legales</td><td class="num">16</td></tr>
-    <tr><td>9. Decisiones que se piden al comité</td><td class="num">17</td></tr>
-    <tr><td>Anexo A. Método y supuestos del modelo de riesgo</td><td class="num">18</td></tr>
-    <tr><td>Anexo B. Las 51 clases del catálogo y su papel en el programa</td><td class="num">19</td></tr>
-    <tr><td>Anexo C. Fuentes</td><td class="num">21</td></tr>
+    <tr><td>Resumen ejecutivo: el documento en una página</td><td class="num">3</td></tr>
+    <tr><td>1. La demanda que Sports World no atiende</td><td class="num">4</td></tr>
+    <tr><td>2. El mercado de GLP-1 en México</td><td class="num">5</td></tr>
+    <tr><td>3. El riesgo de no hacer nada, en números</td><td class="num">6</td></tr>
+    <tr><td>4. Lo que muestra la industria</td><td class="num">8</td></tr>
+    <tr><td>5. Lo que dice la evidencia clínica</td><td class="num">9</td></tr>
+    <tr><td>6. La propuesta: Programa Fuerza y Peso</td><td class="num">10</td></tr>
+    <tr><td>7. Cómo comunicarlo</td><td class="num">12</td></tr>
+    <tr><td>8. Alianzas</td><td class="num">13</td></tr>
+    <tr><td>9. Hoja de ruta y metas</td><td class="num">15</td></tr>
+    <tr><td>10. Señales de alerta y límites legales</td><td class="num">16</td></tr>
+    <tr><td>11. Nuestra recomendación</td><td class="num">17</td></tr>
+    <tr><td>Anexo A. Método y supuestos del modelo</td><td class="num">18</td></tr>
+    <tr><td>Anexo B. Las 51 clases y su papel en el programa</td><td class="num">19</td></tr>
+    <tr><td>Anexo C. Fuentes</td><td class="num">20</td></tr>
   </table>
-  <div class="caja">
-    <h4>Cómo leer este documento</h4>
-    <p>Cada cifra lleva su fuente en la tabla o en el Anexo C. Las cifras se distinguen en tres clases: <b>dato</b> (publicado por la fuente citada), <b>cálculo</b> (operación aritmética sobre datos publicados, con la fórmula a la vista) y <b>supuesto</b> (valor elegido por el autor y justificado con una referencia). Los supuestos se concentran en el Anexo A para que el comité pueda cambiarlos y ver el efecto. El modelo de riesgo es un programa reproducible (<span class="mini">proyectos/glp1/modelo/riesgo.py</span>).</p>
+  <div class="caja"><b class="t">Cómo leer las cifras</b>
+    <ul>
+      <li><b>Dato:</b> lo publica la fuente citada.</li>
+      <li><b>Cálculo:</b> operación sobre datos publicados, con la fórmula a la vista.</li>
+      <li><b>Inferencia:</b> valor estimado donde no hay dato público, con su razonamiento. Se marca como tal.</li>
+    </ul>
+    <p class="mini">El modelo de riesgo es un programa que cualquiera puede volver a correr: proyectos/glp1/modelo/riesgo.py.</p>
   </div>
 </section>
 
 <!-- RESUMEN EJECUTIVO -->
 <section class="seccion">
   <div class="etiqueta">Resumen ejecutivo</div>
-  <h2>Sports World no pierde por la existencia del medicamento: pierde si sigue vendiendo solo «bajar de peso»</h2>
-
-  <p class="tesis">Si Sports World no hace nada, entre 2027 y 2029 dejará de contar con alrededor de 2,000 membresías y 29 millones de pesos de ingreso en el escenario base. En el escenario acelerado la cifra sube a 5,230 membresías y 73 millones, y en 2029 equivaldría a 9.3% del EBITDA anual.</p>
-
-  <div class="cifras">
-    <div class="cifra"><b>2,039</b><span>membresías perdidas 2027-2029, escenario base: 828 ventas no realizadas y 1,211 cancelaciones adicionales</span></div>
-    <div class="cifra"><b>$29.4 mdp</b><span>ingreso acumulado perdido 2027-2029, escenario base; $15.9 mdp solo en 2029</span></div>
-    <div class="cifra"><b>3.6% a 9.3%</b><span>del EBITDA de 2025 (sin el efecto contable de arrendamientos, IFRS 16) que se perdería en 2029, escenarios base y acelerado</span></div>
+  <h2>Si Sports World no actúa, perderá 3,059 membresías y $44.3 millones de 2027 a 2029</h2>
+  <p class="idea">Escenario base. En el escenario acelerado la pérdida llega a 9,806 membresías, y en 2029 equivale a 17.5% del EBITDA anual.</p>
+  <div class="kpis">
+    <div class="kpi"><b>3,059</b><span>membresías perdidas, escenario base: 1,243 ventas no realizadas y 1,816 cancelaciones</span></div>
+    <div class="kpi"><b>$44.3 mdp</b><span>ingreso perdido 2027-2029, escenario base; $23.9 mdp solo en 2029</span></div>
+    <div class="kpi"><b>5.4% a 17.5%</b><span>del EBITDA de 2025 que se perdería en 2029, escenarios base y acelerado</span></div>
   </div>
-
-  <h3>La situación</h3>
-  <p>Los medicamentos de la familia GLP-1 (semaglutida, tirzepatida) ya están en las farmacias mexicanas y su uso crece rápido: las unidades vendidas aumentaron 130% y 3.8% de los hogares tiene al menos un usuario, con el consumo concentrado en los niveles de ingreso alto, que son el mercado de Sports World. Desde el 11 de noviembre de 2026 se vende la versión en pastilla. Las versiones genéricas de semaglutida no podrán llegar antes de 2029, y ésa es la fecha en que el precio puede bajar de forma importante.</p>
-
-  <h3>El problema</h3>
-  <p>Una parte de quienes se inscriben a un gimnasio lo hacen para bajar de peso: 32% de los usuarios de gimnasio en México lo citan como motivo. Para esa persona, un medicamento eficaz compite con la razón por la que paga la membresía. La evidencia internacional muestra dónde golpea esa competencia: WeightWatchers, que vendía solo cambio de hábitos, perdió 25.4% de esos suscriptores en un año y se declaró en quiebra en 2025. En Estados Unidos, la afiliación a clubes de los hogares de ingreso más alto bajó de 53.5% a 45.0% después de iniciar el medicamento.</p>
-
-  <h3>La oportunidad</h3>
-  <p>El medicamento deja tres problemas sin resolver, y los tres son el territorio de Sports World:</p>
-  <ul>
-    <li><b>Se pierde músculo.</b> Entre 25% y 38% del peso que se pierde con estos medicamentos es masa magra, según el estudio.</li>
-    <li><b>El tratamiento se abandona.</b> 64.8% de quienes lo usan sin diabetes lo deja antes de un año.</li>
-    <li><b>El peso regresa.</b> Al suspenderlo se recuperan dos terceras partes del peso perdido en un año.</li>
-  </ul>
-  <p>La primera prueba aleatorizada con tirzepatida, publicada el 9 de noviembre de 2026, demostró que entrenar fuerza tres veces por semana reduce en 23% la masa magra perdida y aumenta la fuerza, sin reducir la pérdida de peso.</p>
-
-  <h3>La respuesta</h3>
-  <p>Proponemos el <b>Programa Fuerza y Peso</b>: un recorrido de cuatro fases para personas en tratamiento médico para bajar de peso o que acaban de suspenderlo. No requiere crear producto nuevo, porque se arma con lo que ya existe:</p>
-  <ul>
-    <li>17 clases de fuerza del catálogo actual, como Body Pump, Kinetic Pump, Funtrac, Tone, Reformer Pilates y CX Worx;</li>
-    <li>el Body Test mensual que ya incluye cada membresía;</li>
-    <li>el entrenamiento personal y la nutrición.</li>
-  </ul>
-  <p>Se apoya en tres círculos de aliados:</p>
-  <ul>
-    <li>ocho programas hospitalarios de obesidad que quedan a menos de 3 km de un club;</li>
-    <li>la principal clínica digital mexicana de tratamiento con GLP-1;</li>
-    <li>proveedores de comida alta en proteína con cobertura en las ciudades donde hay clubes.</li>
-  </ul>
-  <p>Sports World no diagnostica, no prescribe y no modifica tratamientos: entrena, mide y acompaña.</p>
-
-  <div class="caja verde">
-    <h4>La meta que hace rentable la decisión</h4>
-    <p>Para compensar el riesgo del escenario base en 2029 (941 membresías al año), el programa debe conservar o ganar <b>1.6 membresías por club al mes</b> en los 49 clubes. Cada membresía vale en promedio $27,300 de ingreso: 17.5 meses de permanencia por $1,508 de cuota mensual, más la inscripción. El piloto se diseña para comprobar si esa meta se alcanza antes de comprometer la red completa.</p>
-  </div>
-
-  <h3>Lo que se pide al comité</h3>
-  <ol class="decisiones">
-    <li><b>Aprobar la fase de preparación</b> (diciembre de 2026 a febrero de 2027) y un <b>piloto de 24 semanas en seis clubes</b> (Antara, Santa Fe, Roma, Xola, Patio Tlalpan y San Pedro), de marzo a agosto de 2027.</li>
-    <li><b>Autorizar la negociación de convenios de referencia</b> con Hospital Español, Centro Médico ABC, Hospital Ángeles México y Roma, Médica Sur, TecSalud y Clivi, y de un convenio de beneficio para socios con un proveedor de comida de alcance nacional.</li>
-    <li><b>Ordenar que desde enero de 2027 cada alta y cada baja registren su motivo</b> en el CRM, incluido «bajar de peso» y «tratamiento médico para bajar de peso». Si la persona da su consentimiento expreso, se registra también el uso de un tratamiento. Sin este dato, ni el riesgo ni el programa se pueden medir.</li>
-  </ol>
-</section>
-
-<!-- 1. MERCADO -->
-<section class="seccion">
-  <div class="etiqueta">1 · Situación</div>
-  <h2>El mercado ya cambió: el uso de GLP-1 en México crece y se concentra en el segmento de Sports World</h2>
-
-  <p>Los GLP-1 son medicamentos que imitan una hormona del intestino: reducen el apetito y la ingesta. En el estudio STEP 1, la semaglutida redujo en promedio 14.9% del peso corporal [26]. En México se venden con receta médica. Las cifras públicas disponibles a noviembre de 2026 son las siguientes:</p>
-
-  <div class="anexo-titulo">Tabla 1. Indicadores del mercado de GLP-1 en México</div>
   <table>
-    <tr><th>Indicador</th><th>Cifra</th><th>Tipo</th><th>Fuente</th></tr>
-    <tr><td>Hogares con al menos un usuario de GLP-1</td><td class="num">3.8%</td><td>Dato</td><td>Worldpanel by Numerator, panel de 4,300 hogares, sep. 2026 [1]</td></tr>
-    <tr><td>Hogares que consideran usarlos</td><td class="num">5.7%</td><td>Dato</td><td>Worldpanel by Numerator [1]</td></tr>
-    <tr><td>Personas que los usan o los han usado (encuesta a hogares)</td><td class="num">1.1%</td><td>Dato</td><td>NielsenIQ México, nov. 2026; «se concentra en los niveles económicos altos» [2]</td></tr>
-    <tr><td>Crecimiento de unidades vendidas</td><td class="num">+130%</td><td>Dato</td><td>NielsenIQ; 98% se vende en farmacias [3]</td></tr>
-    <tr><td>Pacientes potenciales tratados (Novo Nordisk)</td><td class="num">&lt;1% de 7.5 millones</td><td>Dato</td><td>Declaración de la empresa [4]</td></tr>
-    <tr><td>Personas en tratamiento en un momento dado, 2026</td><td class="num">125,000 a 380,000</td><td>Cálculo</td><td>Estimación cruzada con ventas, precios y prevalencia [Anexo C, nota 02]</td></tr>
-    <tr><td>Precio mensual Wegovy 2.4 mg (lista / oferta)</td><td class="num">$8,167 / $4,900</td><td>Dato</td><td>Farmacias del Ahorro, nov. 2026 [5]</td></tr>
-    <tr><td>Precio mensual Mounjaro 2.5 mg</td><td class="num">$6,310</td><td>Dato</td><td>Farmacias del Ahorro, nov. 2026 [5]</td></tr>
-    <tr><td>Wegovy en pastilla a la venta</td><td class="num">11 nov. 2026</td><td>Dato</td><td>Prensa especializada, ~10,000 puntos de venta [6]</td></tr>
-    <tr><td>Llegada posible de semaglutida genérica</td><td class="num">2029</td><td>Dato</td><td>Asociación de fabricantes de genéricos; protección de datos de 10 años desde 2019 [7]</td></tr>
-    <tr><td>Adultos con obesidad / con sobrepeso u obesidad</td><td class="num">38.9% / 76.2%</td><td>Dato</td><td>ENSANUT Continua 2023 [8]</td></tr>
+    <tr><th style="width:22%">Pregunta</th><th>Respuesta corta</th></tr>
+    <tr><td><b>¿Qué pasa?</b></td><td>Bajar de peso es la mayor demanda del fitness en México: 932,300 búsquedas al mes, y el objetivo más frecuente de quien llega a Sports World. Los medicamentos GLP-1 ya ofrecen una respuesta a esa necesidad, y su uso crece.</td></tr>
+    <tr><td><b>¿Por qué afecta a Sports World?</b></td><td>Sports World no comunica bajar de peso: aparece en el 0.02% de esas búsquedas. El medicamento llega primero a la persona, y los socios que se inscribieron para bajar de peso tienen ahora una alternativa.</td></tr>
+    <tr><td><b>¿Cuánto cuesta no actuar?</b></td><td>De 627 a 9,806 membresías y de $9.5 a $136.8 millones de pesos en tres años, según el escenario. El escenario base: 3,059 membresías y $44.3 millones.</td></tr>
+    <tr><td><b>¿Dónde está la oportunidad?</b></td><td>El medicamento hace perder músculo (25% a 38% del peso perdido) y 64.8% lo deja antes de un año. Al dejarlo, se recuperan dos terceras partes del peso. Entrenar fuerza reduce 23% la pérdida de músculo (ensayo aleatorizado, noviembre de 2026).</td></tr>
+    <tr><td><b>¿Qué recomendamos?</b></td><td>Programa Fuerza y Peso: cuatro fases con 17 clases de fuerza del catálogo, el Body Test mensual y alianzas con hospitales, nutrición y comida. Sports World entrena y mide; nunca prescribe.</td></tr>
+    <tr><td><b>¿Qué meta lo paga?</b></td><td>Conservar o ganar <b>2.4 membresías por club al mes</b> compensa el escenario base de 2029. Cada membresía vale en promedio $27,300.</td></tr>
   </table>
-  <p class="fuente">Fuente: elaboración propia con las fuentes indicadas. Detalle y etiquetas de verificación en las notas de investigación 02.</p>
-
-  <div class="caja rosa">
-    <h4>Una corrección necesaria sobre el tamaño del mercado</h4>
-    <p>El documento anterior partía de «710,000 usuarios activos en 2026 y 1.82 millones en 2029». Esa cifra no aparece en ninguna fuente pública. Las ventas formales sostienen entre 125,000 y 380,000 personas en tratamiento en un momento dado, o entre 250,000 y 750,000 que lo usan en algún momento del año. La cifra de 2029 supone un crecimiento de 36.9% anual, cerca de 50% por encima de la trayectoria compatible con la proyección de Morgan Stanley (alrededor de 1.2 millones). Este documento usa los rangos con fuente y trata la cifra alta solo como escenario acelerado.</p>
-  </div>
-
-  <h3>Tres rasgos del mercado que importan a Sports World</h3>
+  <h3>Tres recomendaciones para el equipo de marketing</h3>
   <ol>
-    <li><b>Está concentrado en ingreso alto.</b> Al precio de $4,900 a $8,167 al mes, el tratamiento cuesta entre 3.2 y 5.4 veces la cuota de mantenimiento promedio de un cliente de Sports World ($1,508 al mes, cálculo sobre el reporte del tercer trimestre de 2026). Quien lo paga es, en buena medida, el mismo cliente que paga un club premium.</li>
-    <li><b>Es un flujo de personas, no un grupo fijo.</b> 64.8% de quienes lo usan sin diabetes lo deja antes de un año y 84.4% antes de dos años [9]. Al suspenderlo se recuperan dos terceras partes del peso perdido en un año [10]. Cada año habrá más exusuarios que necesitan sostener su resultado.</li>
-    <li><b>Va a crecer por precio y presentación.</b> La pastilla elimina la inyección. Los genéricos, posibles desde 2029, pueden bajar el precio. En Estados Unidos, donde el precio ya bajó, 12% de los adultos usa uno hoy [11]. Ésa es la referencia del escenario acelerado.</li>
+    <li><b>Ocupar el territorio de bajar de peso con fuerza y composición corporal,</b> no con la promesa genérica de bajar kilos.</li>
+    <li><b>Probarlo en seis clubes durante 24 semanas</b> (marzo a agosto de 2027), cada uno cerca de un hospital con programa de obesidad.</li>
+    <li><b>Registrar desde enero de 2027 el motivo de cada alta y de cada baja,</b> para medir el riesgo con datos propios.</li>
   </ol>
-
-  <h3>Lo que ya hace la competencia</h3>
-  <p>Al menos 17 operadores de gimnasios en el mundo tienen algún programa para usuarios de GLP-1 [12]. Los modelos son tres:</p>
-  <ul>
-    <li><b>Entrenamiento adaptado,</b> sin parte médica.</li>
-    <li><b>Referencia a una clínica externa,</b> como Planet Fitness con Ro o Crunch con Thrive.</li>
-    <li><b>Clínica dentro del club,</b> como Life Time con MIORA, que cobra USD 599 la evaluación inicial.</li>
-  </ul>
-  <p>En México, Smart Fit vende la medición de composición corporal como servicio adicional de $69.90 al mes. Su director de operaciones declaró en diciembre de 2025 que el efecto de los GLP-1 «ainda não é sentido» (todavía no se siente) en México [13]. Ningún operador en México tiene hoy un programa para esta población: el primero en hacerlo bien fijará la referencia.</p>
 </section>
 
-<!-- 2. RIESGO -->
+<!-- 1. DEMANDA -->
 <section class="seccion">
-  <div class="etiqueta">2 · El riesgo de no hacer nada</div>
-  <h2>Sin respuesta, Sports World perdería entre 409 y 5,230 membresías de 2027 a 2029</h2>
+  <div class="etiqueta">1 · La demanda</div>
+  <h2>Bajar de peso es la mayor demanda del fitness, y Sports World no la atiende</h2>
+  <p class="idea">El problema no es que Sports World venda bajar de peso y el medicamento se lo quite. Es que nunca lo ha comunicado, y el medicamento está ocupando ese lugar primero.</p>
 
-  <p>El riesgo tiene dos componentes, que el modelo calcula por separado:</p>
+  <div class="titulo-graf">Gráfica 1. Quién llega a Sports World</div>
+  {{g:pictograma-cambio-fisico}}
+  <p class="fuente">Fuente: entrevistas de campo con la fuerza de ventas de Sports World: «ochenta o noventa por ciento busca un cambio físico» [1]. Es testimonio de campo, no encuesta.</p>
+
+  <div class="titulo-graf">Gráfica 2. La demanda que existe y la presencia de Sports World</div>
+  {{g:demanda-bajar-de-peso}}
+  <p class="fuente">Fuente: diagnóstico de posicionamiento orgánico de Sports World con datos de Semrush, México, febrero y marzo de 2026 [2].</p>
+
+  <h3>Lo que dicen las fuentes externas</h3>
+  <table>
+    <tr><th>Fuente</th><th>Hallazgo</th></tr>
+    <tr><td>Fogel y Ustoyev, <i>Journal of Consumer Marketing</i>, 2021 [3]</td><td>«El motivo más común para inscribirse a un gimnasio es bajar de peso»</td></tr>
+    <tr><td>Eguchi et al., <i>JMIR</i>, 2023 [4]</td><td>De 28,840 socios de una cadena de gimnasios que fijaron una meta de peso, 92.2% quería bajar</td></tr>
+    <tr><td>Alfawaz et al., 2018 [5]</td><td>Motivos principales en gimnasios: bajar de peso 35% y ganar músculo 35%</td></tr>
+    <tr><td>Mercado Fitness, México [6]</td><td>32% de los usuarios de gimnasio cita bajar de peso (con respuesta múltiple, después de salud)</td></tr>
+  </table>
+  <div class="caja"><b class="t">Una precisión</b>No encontramos una encuesta representativa que diga que más de la mitad de quienes se inscriben lo hacen para bajar de peso. Lo que sí se sostiene es que es el objetivo concreto más frecuente y la mayor demanda de búsqueda. Para el modelo usamos una inferencia (45% en el escenario base) que debe sustituirse por el dato del CRM.</div>
+</section>
+
+<!-- 2. MERCADO -->
+<section class="seccion">
+  <div class="etiqueta">2 · El mercado</div>
+  <h2>El uso de GLP-1 en México crece y se concentra en el cliente de Sports World</h2>
+  <p class="idea">El tratamiento cuesta de 3.2 a 5.4 veces la cuota mensual de Sports World: lo paga, sobre todo, el mismo cliente.</p>
+
+  <div class="titulo-graf">Gráfica 3. Los hitos del mercado</div>
+  {{g:linea-tiempo-mercado}}
+  <p class="fuente">Fuentes: Lilly; Worldpanel by Numerator; prensa especializada; asociación de fabricantes de genéricos [7][8][9][10].</p>
+
+  <div class="titulo-graf">Gráfica 4. Precio mensual del tratamiento frente a la cuota de Sports World (pesos)</div>
+  {{g:precios}}
+  <p class="fuente">Fuentes: Farmacias del Ahorro, noviembre de 2026 [11]; cuota promedio = cálculo sobre el reporte del tercer trimestre de 2026 de Sports World [12].</p>
+
+  <h3>Las cifras clave</h3>
   <ul>
-    <li><b>Ventas no realizadas.</b> Prospectos que buscan bajar de peso, inician un tratamiento con GLP-1 y ya no se inscriben, o se inscriben con un competidor que sí les ofrece un programa.</li>
-    <li><b>Cancelaciones adicionales.</b> Socios que se inscribieron para bajar de peso, inician el tratamiento y cancelan porque el medicamento «ya hace el trabajo».</li>
+    <li><b>3.8% de los hogares</b> tiene al menos un usuario, y otro 5.7% considera usarlos [8].</li>
+    <li>El consumo <b>se concentra en los niveles de ingreso alto</b> (NielsenIQ) [13].</li>
+    <li>Las unidades vendidas crecieron <b>130%</b>, y 98% se vende en farmacias [13].</li>
+    <li>Entre <b>125,000 y 380,000 personas</b> están en tratamiento en un momento dado (estimación cruzada con ventas y precios) [14].</li>
+    <li>En Estados Unidos, donde el precio ya bajó, <b>12% de los adultos</b> usa uno hoy (KFF) [15]. Es la referencia del escenario acelerado.</li>
   </ul>
+  <div class="titulo-graf">Gráfica 5. El tratamiento se abandona y el peso regresa</div>
+  {{g:pictograma-abandono}}
+  <p class="fuente">Fuentes: Rodriguez et al., JAMA Network Open 2025 [16]; extensión de STEP 1, 2022 [17].</p>
+  <div class="caja"><b class="t">Corrección al documento anterior</b>«710,000 usuarios activos en 2026» no aparece en ninguna fuente pública. Usamos los rangos con fuente que aparecen arriba.</div>
+</section>
 
-  <h3>La base: los números de Sports World</h3>
-  <div class="anexo-titulo">Tabla 2. Datos de operación usados en el modelo</div>
+<!-- 3. RIESGO -->
+<section class="seccion">
+  <div class="etiqueta">3 · El riesgo cuantificado</div>
+  <h2>Sin respuesta, Sports World pierde entre 627 y 9,806 membresías de 2027 a 2029</h2>
+  <p class="idea">Dos fuentes de pérdida: personas que ya no se inscriben y socios que cancelan porque el medicamento «ya hace el trabajo».</p>
+
+  <div class="titulo-graf">Gráfica 6. Cómo se calcula</div>
+  {{g:flujo-modelo}}
+  <p class="fuente">Fuente: modelo de riesgo (Anexo A). Los tres valores de cada caja corresponden a los escenarios conservador, base y acelerado.</p>
+
   <table>
-    <tr><th>Concepto</th><th class="num">Valor</th><th>Tipo</th><th>Fuente</th></tr>
-    <tr><td>Clientes activos al 3T26</td><td class="num">97,046</td><td>Dato</td><td>Reporte 3T26; incluye virtuales, planes corporativos e invitados promocionales [14]</td></tr>
-    <tr><td>Clubes</td><td class="num">49</td><td>Dato</td><td>Reporte 3T26 [14]</td></tr>
-    <tr><td>Deserción bruta promedio, 3T26</td><td class="num">5.7%</td><td>Dato</td><td>Reporte 3T26; se interpreta como tasa mensual (el reporte no define el periodo) [14]</td></tr>
-    <tr><td>Cuota de mantenimiento promedio por cliente</td><td class="num">$1,508 / mes</td><td>Cálculo</td><td>$439.2 mdp de mantenimiento 3T26 ÷ 3 meses ÷ 97,046 clientes</td></tr>
-    <tr><td>Altas anuales implícitas</td><td class="num">66,379</td><td>Cálculo</td><td>Base estable entre 2T26 y 3T26: altas ≈ bajas = 97,046 × 5.7% × 12</td></tr>
-    <tr><td>Inscripción promedio por alta</td><td class="num">$894</td><td>Cálculo</td><td>$59.4 mdp de inscripciones (12 meses a 3T26) ÷ 66,379 altas</td></tr>
-    <tr><td>Permanencia promedio de una membresía</td><td class="num">17.5 meses</td><td>Cálculo</td><td>1 ÷ 5.7% mensual</td></tr>
-    <tr><td>Ingreso de los últimos 12 meses</td><td class="num">$2,322.7 mdp</td><td>Dato</td><td>Reportes 4T25 y 3T26 [14]</td></tr>
-    <tr><td>EBITDA sin IFRS 16, 2025</td><td class="num">$354.8 mdp (16.2%)</td><td>Dato</td><td>Reporte 4T25 [14]</td></tr>
+    <tr><th>Supuesto</th><th class="num">Conservador</th><th class="num">Base</th><th class="num">Acelerado</th><th>Sustento</th></tr>
+    <tr><td>Altas y socios que buscan bajar de peso</td><td class="num">32%</td><td class="num">45%</td><td class="num">60%</td><td>Encuesta en México (32%) [6]; fuerza de ventas de SW, «el objetivo más frecuente» [1]; base y acelerado son inferencia</td></tr>
+    <tr><td>Uso de GLP-1 en ese grupo, 2027 / 2028 / 2029</td><td class="num">4 / 5 / 6%</td><td class="num">6 / 8 / 12%</td><td class="num">8 / 12 / 20%</td><td>3.8% de hogares en 2026 [8]; concentración en ingreso alto [13]; 12% en EE. UU. [15]</td></tr>
+    <tr><td>Usuarios que ya no se inscriben o cancelan</td><td class="num">8%</td><td class="num">16%</td><td class="num">25%</td><td>Afiliación de hogares de más de USD 150 mil: 53.5% → 45.0% [18]; WeightWatchers sin medicamento: −25.4% [19]</td></tr>
   </table>
-  <p class="fuente">Fuente: reportes trimestrales de Grupo Sports World a la Bolsa Mexicana de Valores; cálculos propios. «mdp» = millones de pesos.</p>
 
-  <h3>Los supuestos, escenario por escenario</h3>
-  <p>El modelo multiplica tres factores:</p>
-  <ul>
-    <li><b>Peso como motivo:</b> qué parte de las altas y de los socios busca bajar de peso.</li>
-    <li><b>Uso del medicamento:</b> qué parte de ellos usa GLP-1 cada año.</li>
-    <li><b>Sustitución:</b> qué parte de esos usuarios deja de inscribirse o cancela.</li>
-  </ul>
-  <div class="anexo-titulo">Tabla 3. Supuestos por escenario</div>
+  <div class="titulo-graf">Gráfica 7. Membresías perdidas por año (ventas no realizadas + cancelaciones)</div>
+  {{g:membresias-perdidas}}
+  <p class="fuente">Fuente: modelo de riesgo con datos de los reportes de Sports World a la BMV [12].</p>
+</section>
+
+<section class="seccion">
+  <div class="etiqueta">3 · El riesgo cuantificado</div>
+  <h2>En el escenario base, el ingreso perdido en 2029 es cuatro veces el de 2027</h2>
+  <p class="idea">Las membresías que faltan se acumulan, y el uso del medicamento sube cada año.</p>
+
   <table>
-    <tr><th>Factor</th><th class="num">Conservador</th><th class="num">Base</th><th class="num">Acelerado</th><th>De dónde sale</th></tr>
-    <tr><td>Socios y prospectos cuyo motivo es bajar de peso</td><td class="num">20.9%</td><td class="num">30%</td><td class="num">32%</td><td>HFA 2024, Latinoamérica (20.9%); Life Time, motivo principal (30%); Mercado Fitness, México (32%) [15][16][17]</td></tr>
-    <tr><td>Uso de GLP-1 en ese grupo, 2027 / 2028 / 2029</td><td class="num">4 / 5 / 6%</td><td class="num">6 / 8 / 12%</td><td class="num">8 / 12 / 20%</td><td>Ancla: 3.8% de hogares en 2026 [1]; concentración en ingreso alto [2]; 12% de adultos en EE. UU. como referencia acelerada [11]</td></tr>
-    <tr><td>Sustitución: de esos usuarios, cuántos no se inscriben o cancelan</td><td class="num">8%</td><td class="num">16%</td><td class="num">25%</td><td>Afiliación en hogares de más de USD 150 mil: 53.5% → 45.0%, −16% (William Blair) [18]; suscriptores sin medicamento de WeightWatchers, −25.4% [19]</td></tr>
+    <tr><th>Escenario</th><th class="num">Ventas no realizadas</th><th class="num">Cancelaciones</th><th class="num">Membresías perdidas</th><th class="num">Ingreso perdido 2027-2029</th><th class="num">% del EBITDA en 2029</th></tr>
+    <tr><td>Conservador</td><td class="num">255</td><td class="num">372</td><td class="num">627</td><td class="num">$9.5 mdp</td><td class="num">1.1%</td></tr>
+    <tr class="destacado"><td>Base</td><td class="num">1,243</td><td class="num">1,816</td><td class="num">3,059</td><td class="num">$44.3 mdp</td><td class="num">5.4%</td></tr>
+    <tr><td>Acelerado</td><td class="num">3,983</td><td class="num">5,823</td><td class="num">9,806</td><td class="num">$136.8 mdp</td><td class="num">17.5%</td></tr>
   </table>
-  <p class="fuente">Fuente: elaboración propia. Supuestos elegidos por el autor con la referencia indicada; el Anexo A explica el método.</p>
+  <p class="fuente">Fuente: modelo de riesgo. EBITDA de 2025 sin IFRS 16: $354.8 mdp [12]; se supone que 80% del ingreso perdido cae a EBITDA porque el costo de un club es mayormente fijo (inferencia).</p>
 
-  <h3>El resultado</h3>
-  <div class="nobr"><div class="anexo-titulo">Gráfica 1. Membresías perdidas por año (ventas no realizadas + cancelaciones adicionales)</div>
-  {{GRAFICA_1}}</div>
-  <p class="fuente">Fuente: modelo de riesgo (Anexo A), con datos de los reportes de Sports World y los supuestos de la Tabla 3.</p>
+  <div class="titulo-graf">Gráfica 8. Ingreso perdido acumulado por escenario</div>
+  {{g:ingreso-perdido}}
 
-  <div class="anexo-titulo">Tabla 4. Riesgo de no hacer nada, 2027-2029</div>
-  <table>
-    <tr><th>Escenario</th><th class="num">Ventas no realizadas</th><th class="num">Cancelaciones adicionales</th><th class="num">Membresías perdidas</th><th class="num">Ingreso perdido</th><th class="num">Ingreso perdido 2029</th><th class="num">% del EBITDA 2025 en 2029</th></tr>
-    <tr><td>Conservador</td><td class="num">166</td><td class="num">243</td><td class="num">409</td><td class="num">$6.3 mdp</td><td class="num">$3.2 mdp</td><td class="num">0.7%</td></tr>
-    <tr class="destacado"><td>Base</td><td class="num">828</td><td class="num">1,211</td><td class="num">2,039</td><td class="num">$29.4 mdp</td><td class="num">$15.9 mdp</td><td class="num">3.6%</td></tr>
-    <tr><td>Acelerado</td><td class="num">2,124</td><td class="num">3,106</td><td class="num">5,230</td><td class="num">$73.1 mdp</td><td class="num">$41.4 mdp</td><td class="num">9.3%</td></tr>
-  </table>
-  <p class="fuente">Fuente: modelo de riesgo. El efecto en EBITDA supone que 80% del ingreso perdido cae a EBITDA, porque el costo de un club es mayormente fijo (supuesto). En diciembre de 2029, la base de clientes sería menor en 191, 1,010 y 2,695 clientes en cada escenario frente a la que habría sin GLP-1.</p>
+  <div class="titulo-graf">Gráfica 9. Qué tanto cambia el ingreso perdido en 2029 si los supuestos fallan (escenario base, 45% de motivo)</div>
+  {{g:sensibilidad}}
+  <p class="fuente">Fuente: modelo de riesgo. El recuadro marcado es el escenario base.</p>
 
   <h3>Cómo se lee</h3>
   <ul>
-    <li><b>En 2027 el riesgo es pequeño y en 2029 ya no lo es.</b> En el escenario base, la pérdida anual se cuadruplica de 2027 a 2029, de $3.9 a $15.9 mdp, porque las membresías que faltan se acumulan y el uso del medicamento sube.</li>
-    <li><b>Seis de cada diez membresías perdidas son cancelaciones</b> de socios actuales, no ventas que no llegan. El riesgo está tanto en retener como en vender.</li>
-    <li><b>El escenario acelerado depende de una fecha.</b> Se activa con la llegada de genéricos, posible desde 2029. Si el precio baja antes, el riesgo de 2029 se adelanta a 2028.</li>
+    <li><b>Seis de cada diez membresías perdidas son cancelaciones</b> de socios actuales: el riesgo está tanto en retener como en vender.</li>
+    <li><b>El escenario acelerado depende de una fecha:</b> la llegada de genéricos, posible desde 2029.</li>
+    <li><b>No incluye el costo de oportunidad:</b> los usuarios que sí buscan un club premium y se van con otro operador (sección 4).</li>
   </ul>
+</section>
 
-  <h3>Qué tanto cambia el resultado si los supuestos fallan</h3>
-  <p>Los tres factores pesan igual porque se multiplican: si cualquiera baja a la mitad, el riesgo baja a la mitad. Lo que más incertidumbre tiene es el uso del medicamento en 2029 y la tasa de sustitución, así que la tabla siguiente cruza esos dos factores:</p>
-  <div class="anexo-titulo">Tabla 5. Ingreso perdido en 2029 (mdp) según uso del medicamento y sustitución, con 30% de motivo «bajar de peso»</div>
+<!-- 4. INDUSTRIA -->
+<section class="seccion">
+  <div class="etiqueta">4 · La industria</div>
+  <h2>Pierde quien solo promete bajar de peso; gana quien acompaña el tratamiento</h2>
+  <p class="idea">El medicamento no vacía los gimnasios. Separa a los que venden kilos de los que venden fuerza, medición y acompañamiento.</p>
+
+  <div class="titulo-graf">Gráfica 10. Tres indicadores antes y después del medicamento</div>
+  {{g:industria-antes-despues}}
+  <p class="fuente">Fuentes: William Blair, mayo de 2026 [18]; WW International, 2025 [19]; ENDO 2026 [20].</p>
+
+  <div class="titulo-graf">Gráfica 11. Pero una parte de los usuarios gasta más en ejercicio</div>
+  {{g:pwc}}
+  <p class="fuente">Fuente: PwC Reino Unido, julio de 2026 [21].</p>
+
   <table>
-    <tr><th>Uso de GLP-1 en 2029</th><th class="num">Sustitución 8%</th><th class="num">Sustitución 16%</th><th class="num">Sustitución 25%</th></tr>
-    <tr><td>6%</td><td class="num">4.0</td><td class="num">8.0</td><td class="num">12.5</td></tr>
-    <tr class="destacado"><td>12%</td><td class="num">8.0</td><td class="num">15.9</td><td class="num">24.9</td></tr>
-    <tr><td>20%</td><td class="num">13.3</td><td class="num">26.6</td><td class="num">41.5</td></tr>
+    <tr><th>Operador</th><th>Qué hizo</th><th>Lección para Sports World</th></tr>
+    <tr><td>Life Time (EE. UU.)</td><td>Clínica MIORA dentro del club; USD 599 la evaluación inicial</td><td>El modelo más ambicioso; no ha publicado resultados</td></tr>
+    <tr><td>Planet Fitness, Crunch (EE. UU.)</td><td>Referencia a clínicas externas (Ro, Thrive)</td><td>El modelo de mayor escala, y el único compatible con no prescribir</td></tr>
+    <tr><td>Smart Fit México</td><td>Medición de composición corporal a $69.90 al mes</td><td>Sports World ya la incluye en la membresía, gratis</td></tr>
+    <tr><td>WeightWatchers</td><td>Sin medicamento: −25.4% de suscriptores. Con medicamento: +45.9%</td><td>La promesa de hábitos sola no compite con el fármaco</td></tr>
   </table>
-  <p class="fuente">Fuente: modelo de riesgo, función de rejilla. La celda resaltada al centro corresponde al escenario base.</p>
+  <p class="fuente">Fuentes: Inspire360, 2026 [22]; sitios de cada operador; WW International [19].</p>
+  <div class="caja verde"><b class="t">La ventaja de Sports World</b>Toda membresía incluye un Body Test by SECA gratuito cada mes [23]. Es el instrumento central de los programas extranjeros para esta población, y Smart Fit lo cobra aparte.</div>
+</section>
 
-  <div class="caja">
-    <h4>Lo que el modelo no incluye</h4>
+<!-- 5. EVIDENCIA -->
+<section class="seccion">
+  <div class="etiqueta">5 · La evidencia</div>
+  <h2>El medicamento quita músculo; el entrenamiento de fuerza lo protege</h2>
+  <p class="idea">Ésta es la razón clínica de que el club sea necesario, y la base del mensaje.</p>
+
+  <div class="titulo-graf">Gráfica 12. De qué está hecho el peso que se pierde</div>
+  {{g:composicion-perdida}}
+  <p class="fuente">Fuentes: STEP 1, cálculo sobre datos del registro [24]; SURMOUNT-1 [25].</p>
+
+  <div class="titulo-graf">Gráfica 13. Masa magra perdida en 40 semanas de tirzepatida, con y sin fuerza</div>
+  {{g:green-2026}}
+  <p class="fuente">Fuente: Green et al., Nature Medicine, 9 de noviembre de 2026; ensayo aleatorizado con 120 adultos [26].</p>
+
+  <table>
+    <tr><th>Recomendación de las sociedades médicas</th><th>Cifra</th></tr>
+    <tr><td>Entrenamiento de fuerza</td><td>Al menos 3 veces por semana (asesoría conjunta ACLM, ASN, OMA y TOS, 2025) [27]; al menos 2 (guía mexicana SMNE, 2024) [28]</td></tr>
+    <tr><td>Actividad aeróbica</td><td>150 a 300 minutos a la semana [27][28]</td></tr>
+    <tr><td>Proteína durante la pérdida activa</td><td>Se han propuesto 1.2 a 1.6 g por kg al día [27]</td></tr>
+    <tr><td>Medición</td><td>Composición corporal, no solo peso [27]</td></tr>
+    <tr><td>Después de suspender</td><td>Con ejercicio supervisado se recuperan 6.0 kg menos en un año (Jensen, 2024) [29]</td></tr>
+  </table>
+  <div class="caja"><b class="t">Cuidados para entrenar</b>
     <ul>
-      <li><b>El costo de oportunidad.</b> En Reino Unido, 27% de los usuarios aumentó su gasto en ejercicio. De ellos, 20% se cambió a un club más premium y 16% contrató entrenador personal [20]. Si otro operador captura a esas personas, la pérdida de Sports World es mayor que la calculada.</li>
-      <li><b>La menor actividad de quienes no cancelan.</b> Con un medicamento, los pasos diarios bajaron de 5,047 a 4,487 [21]. Un socio que asiste menos cancela más: 44% de quienes van menos de una vez cada dos semanas cancela en 24 meses, contra 23% de quienes van tres o más veces por semana, según una fuente secundaria [22].</li>
-      <li><b>La depuración voluntaria de clientes de bajo ingreso</b> que la empresa reporta en 2026. No tiene relación con los GLP-1.</li>
+      <li>Náusea: 44.1% con semaglutida y 25% a 34% con tirzepatida [24][25].</li>
+      <li>Baja de azúcar en sangre si se combina con ciertos medicamentos para la diabetes [30].</li>
+      <li>Riesgo de deshidratación [30].</li>
     </ul>
   </div>
-  <div class="caja rosa">
-    <h4>Las dos cifras que solo Sports World puede dar</h4>
-    <p>El modelo usa supuestos públicos donde faltan datos propios. Tres cifras internas los sustituirían:</p>
-    <ul>
-      <li>qué parte de las altas reales llega para bajar de peso;</li>
-      <li>la deserción por club y por antigüedad;</li>
-      <li>el motivo de cada baja.</li>
-    </ul>
-    <p>La tercera decisión que se pide al comité existe para obtenerlas. Con tres meses de registro, el escenario base se puede recalcular con datos propios.</p>
-  </div>
 </section>
 
-<!-- 3. POR QUÉ NO ES MAYOR -->
+<!-- 6. PROPUESTA -->
 <section class="seccion">
-  <div class="etiqueta">3 · Complicación y matiz</div>
-  <h2>El medicamento no vacía los gimnasios: separa a quien vende «bajar de peso» de quien vende «bajar bien»</h2>
+  <div class="etiqueta">6 · La propuesta</div>
+  <h2>Programa Fuerza y Peso: cuatro fases con las clases que ya existen</h2>
+  <p class="idea">No requiere producto nuevo: clases del catálogo, el Body Test mensual, entrenamiento personal y nutrición.</p>
 
-  <p>La evidencia disponible no muestra una caída general de la industria. Planet Fitness, Life Time y The Gym Group reportan crecimiento y describen a los GLP-1 como un viento a favor. El director general de Life Time lo resumió así: «Es una apuesta equivocada pensar que el GLP-1 va a dañar el negocio de los clubes» [23].</p>
+  <div class="titulo-graf">Gráfica 14. Las cuatro fases</div>
+  {{g:fases}}
 
-  <div class="anexo-titulo">Tabla 6. Lo que muestran las encuestas a usuarios de GLP-1</div>
   <table>
-    <tr><th>Estudio</th><th>Hallazgo</th><th>Lectura para Sports World</th></tr>
-    <tr><td>PwC Reino Unido, 2026, más de 2,300 usuarios [20]</td><td>27% aumentó su gasto en ejercicio y 5% lo redujo. De quienes aumentaron, 41% se inscribió a un gimnasio o a clases, 20% se cambió a un club más premium y 16% contrató entrenador</td><td>Hay demanda nueva para el club premium que la sepa atender</td></tr>
-    <tr><td>William Blair, EE. UU., 300 usuarios, mayo de 2026 [18]</td><td>La afiliación promedio subió 3 puntos, pero en hogares de más de USD 150 mil bajó de 53.5% a 45.0%</td><td>El segmento de ingreso alto, el de Sports World, es el más expuesto</td></tr>
-    <tr><td>Morgan Stanley [24]</td><td>Los pacientes de ingreso alto «se inclinan hacia cadenas de gama alta»; no da magnitud</td><td>Contradice a William Blair; la diferencia depende de la oferta</td></tr>
-    <tr><td>ENDO 2026, 753 personas medidas con dispositivos [21]</td><td>Pasos diarios: 5,047 → 4,487. Actividad moderada o vigorosa: 28 → 22 minutos al día</td><td>Sin acompañamiento, el usuario se mueve menos, no más</td></tr>
-    <tr><td>WeightWatchers, 2025 [19]</td><td>Suscriptores del programa sin medicamento: −25.4% en un año. Programa con medicamento: +45.9%</td><td>Pierde quien solo promete bajar de peso; gana quien se integra al tratamiento</td></tr>
+    <tr><th>Fase</th><th>Clases del catálogo</th></tr>
+    <tr><td><b>1 · Adaptación</b><br><span class="mini">inicio del medicamento</span></td><td>Tone, Reformer Pilates, Mat Pilates, Total Barre, Core · Cycling suave, Race Walker, Aqua Zumba · Stretch, Body Balance</td></tr>
+    <tr><td><b>2 · Conservar</b><br><span class="mini">pérdida activa</span></td><td>Body Pump, Kinetic Pump, Funtrac, CX Worx · RPM, Power Cycling, INDBIKE · Hatha Yoga</td></tr>
+    <tr><td><b>3 · Recomponer</b><br><span class="mini">cerca del peso meta</span></td><td>Body Pump con más carga, Alpha Trainer, Kinetic Chain, Strong Nation · GRIT, Body Combat, Body Attack</td></tr>
+    <tr><td><b>4 · Sostener</b><br><span class="mini">al reducir o suspender</span></td><td>Cualquier clase de fuerza · Zumba, Body Jam, Sh'Bam y demás clases de baile para mantener el hábito</td></tr>
   </table>
-  <p class="fuente">Fuente: estudios citados. Las encuestas declaran conducta; ENDO 2026 la mide.</p>
+  <p class="fuente">Fuente: catálogo público de Sports World, consultado el 23 de noviembre de 2026. La disponibilidad varía por club.</p>
 
-  <div class="caja verde">
-    <h4>La variable que decide en qué escenario cae Sports World</h4>
-    <p>Las fuentes no se contradicen si se lee lo que cada operador vende. Donde la membresía se ofrece como «bajar de peso», el medicamento la sustituye. Donde se ofrece como fuerza, composición corporal y acompañamiento, el medicamento la complementa: es lo que hacen Life Time, Equinox y el programa con medicamento de WeightWatchers. Sports World tiene una ventaja que casi ningún competidor tiene: toda membresía ya incluye un Body Test by SECA gratuito cada mes [25], el instrumento central de los programas extranjeros para esta población.</p>
-  </div>
+  <div class="titulo-graf">Gráfica 15. Las 51 clases del catálogo, por papel en el programa</div>
+  {{g:clases-por-papel}}
+  <p class="fuente">Fuente: sportsworld.com.mx/clases; detalle clase por clase en el Anexo B.</p>
 </section>
 
-<!-- 4. EVIDENCIA CLÍNICA -->
 <section class="seccion">
-  <div class="etiqueta">4 · Evidencia</div>
-  <h2>La ciencia respalda el papel del club: el entrenamiento de fuerza conserva músculo sin frenar la pérdida de peso</h2>
-
-  <div class="anexo-titulo">Tabla 7. Lo que se pierde con el medicamento y lo que el ejercicio cambia</div>
+  <div class="etiqueta">6 · La propuesta</div>
+  <h2>Se mide lo que importa: músculo y fuerza, no solo kilos</h2>
+  <p class="idea">El participante ve que pierde grasa y conserva fuerza. Eso es lo que lo hace quedarse.</p>
   <table>
-    <tr><th>Pregunta</th><th>Evidencia</th><th>Fuente</th></tr>
-    <tr><td>¿Cuánto del peso perdido es músculo y otra masa magra?</td><td>Semaglutida: −5.8 kg de masa magra y −9.3 kg de grasa, cerca de 38% magra (cálculo sobre datos del registro). Tirzepatida: «aproximadamente 75% grasa y 25% masa magra»</td><td>STEP 1 [26]; SURMOUNT-1 [27]; metaanálisis de Karakasis, 2025 [28]</td></tr>
-    <tr><td>¿Ayuda el entrenamiento de fuerza?</td><td>Ensayo aleatorizado, 120 adultos, 40 semanas, fuerza 3 veces por semana con 91% de asistencia. Pérdida de peso igual (−22.61 y −22.28 kg). Masa magra: −4.67 kg sin fuerza y −3.57 kg con fuerza. La fuerza bajó sin entrenamiento y subió con él (press de pecho −4.09 kg frente a +4.68 kg)</td><td>Green et al., Nature Medicine, 9 nov. 2026 [29]</td></tr>
-    <tr><td>¿Qué pasa al suspender el medicamento?</td><td>Se recuperan dos terceras partes del peso perdido en un año. La recuperación es de 0.4 kg al mes en promedio, más rápida que tras un programa de hábitos</td><td>Extensión de STEP 1 [10]; SURMOUNT-4 [30]; metaanálisis BMJ, 2026 [31]</td></tr>
-    <tr><td>¿El ejercicio ayuda a sostener el resultado?</td><td>Un año después de suspender el tratamiento, quienes solo tomaron el medicamento recuperaron 6.0 kg más que quienes hicieron ejercicio supervisado</td><td>Jensen et al., eClinicalMedicine, 2024 [32]</td></tr>
-    <tr><td>¿Qué recomiendan las sociedades médicas?</td><td>Fuerza al menos 3 veces por semana; al menos 150 minutos de actividad aeróbica a la semana; medición de composición corporal; y se han propuesto metas de proteína de 1.2 a 1.6 g por kg al día durante la pérdida activa. La guía mexicana pide de 150 a 300 minutos y fuerza al menos 2 veces por semana</td><td>Asesoría conjunta ACLM, ASN, OMA y TOS, 2025 [33]; Guía SMNE, 2024 [34]</td></tr>
-    <tr><td>¿Qué cuidados necesita el entrenamiento?</td><td>Náusea en 44.1% con semaglutida (17.4% con placebo) y en 25% a 34% con tirzepatida. Riesgo de baja de azúcar en sangre (hipoglucemia) si se combina con insulina o con ciertos medicamentos para la diabetes. Riesgo de deshidratación</td><td>Registros de STEP 1 y SURMOUNT-1; etiquetas de la FDA [35]</td></tr>
+    <tr><th>Medición</th><th>Cada cuándo</th><th>¿Existe hoy?</th></tr>
+    <tr><td>Body Test by SECA: grasa, masa magra, agua</td><td>Cada 4 semanas</td><td>Sí, incluido en la membresía</td></tr>
+    <tr><td>Fuerza de la mano con dinamómetro (aparato sencillo que mide cuánto se aprieta)</td><td>Cada 8 semanas</td><td>No: un dinamómetro por club</td></tr>
+    <tr><td>Sentarse y pararse de una silla en 30 segundos</td><td>Cada 8 semanas</td><td>Sí</td></tr>
+    <tr><td>Perímetro de cintura</td><td>Cada 4 semanas</td><td>Sí</td></tr>
+    <tr><td>Asistencia semanal</td><td>Continua</td><td>Sí, control de acceso</td></tr>
   </table>
-  <p class="fuente">Fuente: estudios citados. Detalle textual y etiquetas de verificación en las notas de investigación 04.</p>
-
-  <div class="nobr"><div class="anexo-titulo">Gráfica 2. Masa magra perdida en 40 semanas de tirzepatida, con y sin entrenamiento de fuerza</div>
-  {{GRAFICA_2}}</div>
-  <p class="fuente">Fuente: Green et al., Nature Medicine, 2026 (PMID 43003902). Varios autores declaran honorarios de Eli Lilly, fabricante de la tirzepatida.</p>
-
-  <div class="caja">
-    <h4>Lo que el club puede afirmar y lo que no</h4>
-    <p>Sí puede afirmar que el entrenamiento de fuerza reduce la pérdida de masa magra y mejora la fuerza durante el tratamiento: lo demuestra un ensayo aleatorizado. No puede prometer «cero pérdida de músculo» ni un resultado garantizado. La masa magra que mide el Body Test incluye agua y órganos, no solo músculo [36]. Por eso el programa mide también la fuerza, que es lo que la persona percibe.</p>
-  </div>
-</section>
-
-<!-- 5. PROPUESTA -->
-<section class="seccion">
-  <div class="etiqueta">5 · La propuesta</div>
-  <h2>Programa Fuerza y Peso: cuatro fases construidas con las 51 clases del catálogo actual</h2>
-
-  <p>El programa traduce la evidencia de la sección 4 en un plan semanal que usa clases que hoy existen en el catálogo de Sports World. Cada clase conserva su categoría oficial (Strength, Intensity, Wellness, Dance y Especializados). El Anexo B asigna las 51 clases del sitio público a uno de cinco papeles en el programa:</p>
-  <ul>
-    <li>fuerza: 17 clases;</li>
-    <li>cardio de bajo impacto: 9;</li>
-    <li>alta intensidad: 6;</li>
-    <li>movilidad y recuperación: 7;</li>
-    <li>baile y comunidad: 12.</li>
-  </ul>
-
-  <h3>Por qué esta opción y no otra</h3>
-  <div class="anexo-titulo">Tabla 8. Alternativas evaluadas</div>
-  <table>
-    <tr><th>Alternativa</th><th>Qué implica</th><th>Por qué sí o por qué no</th></tr>
-    <tr><td>No hacer nada</td><td>Seguir vendiendo la membresía como hoy</td><td>No: pérdida de 2,039 membresías y $29.4 mdp de 2027 a 2029 en el escenario base (sección 2)</td></tr>
-    <tr><td>Campaña de comunicación sobre bajar de peso</td><td>Publicidad dirigida a usuarios de GLP-1, sin programa detrás</td><td>No: es fácil de copiar, no cambia la permanencia y tiene riesgo legal si menciona medicamentos (sección 8)</td></tr>
-    <tr><td>Clínica propia dentro del club</td><td>Médicos que prescriben en el club, como Life Time con MIORA</td><td>No por ahora: exige licencias sanitarias, expediente clínico y personal médico. Life Time no ha publicado resultados de MIORA [12]</td></tr>
-    <tr class="destacado"><td>Programa de entrenamiento con aliados médicos (recomendada)</td><td>Clases y medición que ya existen, más referencia recíproca con hospitales y una clínica digital</td><td>Sí: usa activos existentes, respeta el rol del club, es el modelo de los operadores de mayor escala [12] y se puede probar en seis clubes antes de extenderlo</td></tr>
-  </table>
-  <p class="fuente">Fuente: elaboración propia con los datos de las secciones 1 a 4.</p>
-
-  <h3>Para quién es</h3>
-  <ul>
-    <li>Personas en tratamiento médico para bajar de peso, con o sin diabetes, que lo declaran por voluntad propia.</li>
-    <li>Personas que suspendieron el tratamiento en los últimos 12 meses, que son el grupo con mayor riesgo de recuperar peso.</li>
-    <li>Personas que buscan bajar de peso sin medicamento. El programa les sirve igual, porque la meta es la misma: perder grasa y conservar músculo.</li>
-  </ul>
-
-  <h3>Medición: qué se mide y cuándo</h3>
-  <div class="anexo-titulo">Tabla 9. Medición del programa</div>
-  <table>
-    <tr><th>Medición</th><th>Cuándo</th><th>Para qué</th><th>¿Existe hoy?</th></tr>
-    <tr><td>Body Test by SECA: grasa, masa magra, agua</td><td>Al inicio y cada 4 semanas</td><td>Ver la calidad de la pérdida, no solo los kilos</td><td>Sí, incluido en la membresía [25]</td></tr>
-    <tr><td>Fuerza de la mano, medida con un dinamómetro (aparato sencillo que mide cuánta fuerza se hace al apretar)</td><td>Al inicio y cada 8 semanas</td><td>Indicador simple de fuerza muscular</td><td>No: requiere un dinamómetro por club</td></tr>
-    <tr><td>Sentarse y pararse de una silla en 30 segundos</td><td>Al inicio y cada 8 semanas</td><td>Fuerza funcional de piernas</td><td>Sí; solo requiere silla y cronómetro</td></tr>
-    <tr><td>Perímetro de cintura</td><td>Al inicio y cada 4 semanas</td><td>Grasa abdominal</td><td>Sí</td></tr>
-    <tr><td>Asistencia semanal (control de acceso)</td><td>Continua</td><td>La asistencia predice la cancelación mejor que la satisfacción declarada</td><td>Sí</td></tr>
-  </table>
-
-  <h3>Las cuatro fases</h3>
-  <div class="anexo-titulo">Tabla 10. Plan semanal por fase, con clases del catálogo</div>
-  <table>
-    <tr><th>Fase</th><th>Momento del tratamiento</th><th>Semana tipo</th><th>Clases del catálogo</th></tr>
-    <tr><td><b>1. Adaptación</b><br>semanas 1 a 6</td><td>Inicio del medicamento y aumento de dosis. Es cuando más náusea hay</td><td>2 sesiones de fuerza ligera a moderada · 2 de cardio de bajo impacto de 30 a 40 min · 1 de movilidad</td><td>Fuerza: Tone, Reformer Pilates, Mat Pilates, Ball Pilates, Total Barre, Core. Cardio: Cycling a ritmo moderado, Race Walker, Aqua Zumba, Swim Trainers. Movilidad: Stretch, Body Balance, Yoga restaurativa</td></tr>
-    <tr><td><b>2. Conservar</b><br>semanas 7 a 16</td><td>Pérdida de peso activa</td><td>3 sesiones de fuerza con carga progresiva · 150 min de cardio a la semana · 1 de movilidad · 1 sesión de entrenamiento personal cada 2 semanas (opcional)</td><td>Fuerza: Body Pump, Kinetic Pump, Funtrac, CX Worx, Core, Natural Motion. Cardio: RPM, Power Cycling, INDBIKE, Body Step. Movilidad: Hatha Yoga, Stretch</td></tr>
-    <tr><td><b>3. Recomponer</b><br>semanas 17 a 24</td><td>Cerca del peso meta</td><td>3 a 4 sesiones de fuerza · 1 a 2 de alta intensidad si hay buena tolerancia · 1 de movilidad</td><td>Fuerza: Body Pump con más carga, Alpha Trainer, Kinetic Chain, Strong Nation, Traint Boost. Intensidad: GRIT, Body Combat, Body Attack, Kick Boxing. Movilidad: Vinyasa Yoga</td></tr>
-    <tr><td><b>4. Sostener</b><br>12 meses</td><td>Al bajar la dosis o suspender el medicamento</td><td>3 sesiones de fuerza · 150 a 300 min de actividad · clases de baile para mantener el hábito</td><td>Cualquier clase de fuerza; Zumba Fitness, Body Jam, Sh'Bam, Fit Dance, Ritmos Latinos y demás clases de baile</td></tr>
-  </table>
-  <p class="fuente">Fuente: elaboración propia sobre el catálogo público de Sports World (consultado el 23 de noviembre de 2026) y las recomendaciones de la Tabla 7. La disponibilidad de cada clase varía por club. Las clases acuáticas requieren club con alberca.</p>
 
   <h3>Reglas de operación</h3>
   <ul>
-    <li><b>Entrada con carta médica.</b> La persona entrega una carta de su médico que confirma que puede hacer ejercicio. El club no pregunta dosis ni medicamento específico.</li>
-    <li><b>Fuerza antes que volumen de cardio.</b> Es la recomendación de la evidencia [29][33] y la diferencia con un programa tradicional de bajar de peso.</li>
-    <li><b>Ajuste por tolerancia.</b> Si hay náusea, mareo o fatiga, se baja la intensidad; no se suspende la fuerza. El entrenador pregunta por hidratación y por la última comida antes de cada sesión.</li>
-    <li><b>Nutrición con profesional titulado.</b> La meta de proteína y el plan de alimentación los da un nutriólogo con cédula profesional, nunca el entrenador [37].</li>
-    <li><b>Continuidad al suspender el medicamento.</b> La fase 4 empieza de forma automática cuando la persona informa que redujo o dejó el tratamiento, porque ése es el momento de mayor riesgo de recuperar peso y de cancelar.</li>
+    <li><b>Entrada con carta de su médico</b> que confirme que puede hacer ejercicio. El club no pregunta dosis.</li>
+    <li><b>Fuerza primero:</b> es la recomendación clínica y la diferencia con un programa común de bajar de peso.</li>
+    <li><b>Ajuste por tolerancia:</b> si hay náusea o mareo, baja la intensidad, no se suspende la fuerza.</li>
+    <li><b>Nutrición solo con nutriólogo titulado,</b> nunca con el entrenador.</li>
+    <li><b>La fase 4 se activa sola</b> cuando la persona informa que redujo o dejó el tratamiento: es el momento de mayor riesgo de cancelar.</li>
   </ul>
 
   <h3>Cómo se cobra</h3>
-  <p>El programa base se incluye en la membresía: el plan por fases, las clases, el Body Test mensual y las pruebas de fuerza. Su función es proteger la membresía, que es donde está el riesgo, porque las cuotas representan 77% del ingreso de Sports World [14]. Lo que se cobra aparte, a las tarifas vigentes de cada club, es el entrenamiento personal y la consulta de nutrición. El piloto comprobará dos cosas: si la inscripción al programa aumenta la contratación de entrenamiento personal y si eleva la permanencia frente a socios comparables.</p>
-
-  <h3>Qué necesita la operación</h3>
   <ul>
-    <li><b>Capacitación de entrenadores:</b> un protocolo interno de 12 horas sobre fuerza durante el tratamiento, señales de alarma, hidratación y los límites del rol.</li>
-    <li><b>Equipo nuevo:</b> un dinamómetro de mano por club del piloto. Todo lo demás ya existe.</li>
-    <li><b>Registro en el CRM:</b> la fase de cada participante y sus mediciones, con consentimiento expreso y por escrito para los datos de salud [38].</li>
-    <li><b>Responsable:</b> un coordinador del programa por club, elegido entre los entrenadores actuales.</li>
+    <li><b>Incluido en la membresía:</b> el plan por fases, las clases, el Body Test y las pruebas de fuerza. Su trabajo es proteger la membresía, que aporta 77% del ingreso [12].</li>
+    <li><b>Se cobra aparte:</b> entrenamiento personal y nutrición, a la tarifa vigente de cada club.</li>
   </ul>
+
+  <h3>Por qué esta opción</h3>
+  <table>
+    <tr><th>Alternativa</th><th>Veredicto</th></tr>
+    <tr><td>No hacer nada</td><td>No: pierde 3,059 membresías en el escenario base</td></tr>
+    <tr><td>Campaña de «bajar de peso» sin programa</td><td>No: fácil de copiar, no mejora la permanencia y es un riesgo legal si menciona medicamentos</td></tr>
+    <tr><td>Clínica propia en el club (como Life Time)</td><td>No por ahora: exige licencias sanitarias y personal médico</td></tr>
+    <tr class="destacado"><td>Programa de fuerza con aliados médicos</td><td>Sí: usa lo que ya existe y se prueba en seis clubes</td></tr>
+  </table>
 </section>
 
-<!-- 6. ALIANZAS -->
+<!-- 7. COMUNICACIÓN -->
 <section class="seccion">
-  <div class="etiqueta">6 · Alianzas</div>
+  <div class="etiqueta">7 · Cómo comunicarlo</div>
+  <h2>Un mensaje: bajar de peso, sí, pero conservando el músculo y el resultado</h2>
+  <p class="idea">Sports World entra al territorio de bajar de peso por la puerta que nadie ocupa: la calidad de lo que se pierde y lo que pasa después.</p>
+
+  <div class="caja verde"><b class="t">Mensaje central propuesto</b>«Baja de peso sin perder músculo. Te medimos cada mes para que veas que lo que pierdes es grasa, y te acompañamos para que el resultado se quede.»</div>
+
+  <table>
+    <tr><th>Público</th><th>Qué necesita oír</th><th>Dónde se le encuentra</th></tr>
+    <tr><td>Quien busca bajar de peso sin medicamento</td><td>Un plan con medición mensual, no una promesa de kilos</td><td>Búsquedas de bajar de peso; asesores en club</td></tr>
+    <tr><td>Quien está en tratamiento médico</td><td>Que conservar músculo depende del entrenamiento de fuerza</td><td>Referencia de su médico; hospitales aliados; clínica digital</td></tr>
+    <tr><td>Quien dejó el tratamiento</td><td>Que el peso regresa si no se sostiene con ejercicio</td><td>Socios actuales; aliados médicos</td></tr>
+    <tr><td>Socios actuales con objetivo de bajar de peso</td><td>Que su membresía ya incluye lo que el medicamento no da</td><td>CRM, Body Test mensual, entrenadores</td></tr>
+    <tr><td>Médicos y nutriólogos</td><td>Que Sports World mide y reporta avance con consentimiento</td><td>Sesiones en hospitales; convenios</td></tr>
+  </table>
+
+  <div class="dos">
+    <div class="si"><b>Sí se puede decir</b>
+      <ul>
+        <li>«El entrenamiento de fuerza reduce la pérdida de músculo», con la cita del estudio</li>
+        <li>«Para personas en tratamiento médico para bajar de peso»</li>
+        <li>«Te medimos cada mes»</li>
+        <li>Nombre y cédula del nutriólogo en el anuncio de nutrición</li>
+      </ul>
+    </div>
+    <div class="no"><b>No se debe decir</b>
+      <ul>
+        <li>Ozempic®, Wegovy®, Mounjaro® o cualquier marca de medicamento</li>
+        <li>«Conserva todo tu músculo» o resultados garantizados</li>
+        <li>«Tratamiento de la obesidad»</li>
+        <li>Kilos por semana</li>
+      </ul>
+    </div>
+  </div>
+  <p class="fuente">Fuentes: Ley General de Salud, arts. 300 y 306 [31]; aviso de COFEPRIS sobre Ozempic® [32]; Reglamento de Publicidad, art. 19 [33]; Ley Federal de Protección al Consumidor, art. 32 [34]. Interpretación de la consultoría, sujeta a revisión jurídica.</p>
+</section>
+
+<!-- 8. ALIANZAS -->
+<section class="seccion">
+  <div class="etiqueta">8 · Alianzas</div>
   <h2>Tres círculos de aliados: el médico que trata, el nutriólogo que alimenta y la cocina que entrega</h2>
+  <p class="idea">Modelo de referencia en los dos sentidos: el médico refiere al club para entrenar y el club refiere al médico a quien pide tratamiento.</p>
+  {{g:circulos-aliados}}
 
-  <p>El modelo de alianza que se propone es el de referencia, el mismo que usan los operadores de mayor escala, como Planet Fitness con Ro y Crunch con Thrive [12]. Es el único compatible con la regla de que Sports World nunca prescribe: el médico refiere al club para el entrenamiento y el club refiere al médico a quien pide tratamiento.</p>
+  <div class="titulo-graf">Gráfica 16. Hospitales con programa de obesidad y su club más cercano</div>
+  {{g:hospitales}}
+  <p class="fuente">Fuente: páginas oficiales de cada hospital, 23 de noviembre de 2026 [35]. Distancia en línea recta (estimación); en auto, de 20% a 50% más. En rojo, menos de 1 km.</p>
 
-  <h3>Círculo 1. Programas hospitalarios de obesidad cerca de los clubes</h3>
-  <div class="anexo-titulo">Tabla 11. Hospitales con programa institucional de obesidad y club más cercano</div>
   <table>
-    <tr><th>Hospital y programa</th><th>Lo que publica</th><th>Club más cercano</th><th class="num">Distancia</th></tr>
-    <tr><td>Hospital Español · Clínica de Obesidad y Sobrepeso (Polanco)</td><td>Endocrinología, nutrición, cirugía bariátrica y «Entrenamiento Físico» dentro del equipo clínico</td><td>Antara</td><td class="num">0.7 km</td></tr>
-    <tr><td>Centro Médico ABC · Centro de Nutrición y Obesidad (Santa Fe y Observatorio)</td><td>«Cambiar tu composición corporal» y «mejorar tu rendimiento físico y deportivo»; medicina del deporte</td><td>Santa Fe</td><td class="num">0.8 km</td></tr>
-    <tr><td>Hospital Ángeles Roma · Instituto de Obesidad y Síndrome Metabólico</td><td>«Programas de ejercicio físico supervisado»; cirugía de obesidad</td><td>Roma; Condesa</td><td class="num">0.5 km; 0.8 km</td></tr>
-    <tr><td>Hospital Ángeles México · Instituto de Obesidad y Síndrome Metabólico</td><td>«Actividad física supervisada» y «programas de ejercicio físico»</td><td>Xola; Patriotismo</td><td class="num">0.7 km; 1.0 km</td></tr>
-    <tr><td>Médica Sur · Centro Integral de Endocrinología y Control de Peso (Tlalpan)</td><td>Atención multidisciplinaria de obesidad; acreditación de la Joint Commission International</td><td>Patio Tlalpan</td><td class="num">2.2 km</td></tr>
-    <tr><td>Hospital San Ángel Inn · Clínica de Salud Integral</td><td>Composición corporal para valorar «obesidad sarcopénica»; rehabilitación para «fortalecer tus músculos»</td><td>Patio Universidad; Amores</td><td class="num">0.7 km; 0.8 km*</td></tr>
-    <tr><td>TecSalud · Hospital Zambrano Hellion (San Pedro Garza García)</td><td>Única que publica «tratamiento farmacológico» de la obesidad como línea propia</td><td>San Pedro</td><td class="num">2.9 km</td></tr>
-    <tr><td>Hospitales Puerta de Hierro Sur (Tlajomulco)</td><td>Cirugía bariátrica institucional</td><td>La Rioja</td><td class="num">2.5 km</td></tr>
+    <tr><th>Hospital</th><th>Lo que publica su programa</th></tr>
+    <tr><td>Hospital Español</td><td>«Entrenamiento Físico» dentro del equipo clínico de obesidad</td></tr>
+    <tr><td>Centro Médico ABC</td><td>«Cambiar tu composición corporal» y medicina del deporte</td></tr>
+    <tr><td>Ángeles México y Roma</td><td>«Programas de ejercicio físico supervisado»</td></tr>
+    <tr><td>Médica Sur</td><td>Centro de endocrinología y control de peso; acreditación internacional</td></tr>
+    <tr><td>TecSalud (Monterrey)</td><td>Única que publica tratamiento con medicamento como línea propia</td></tr>
+    <tr><td>San Ángel Inn</td><td>Mide obesidad sarcopénica (con pérdida de músculo) y fortalece músculo</td></tr>
   </table>
-  <p class="fuente">Fuente: páginas oficiales de cada hospital, consultadas el 23 de noviembre de 2026 [39]. Distancia en línea recta entre coordenadas (estimación); la distancia en auto suele ser de 20% a 50% mayor. *Distancia a la sede Universidad; el programa opera en la sede Sur. Los hospitales Ángeles Pedregal, Lomas, Metropolitano, Mocel y Acoxpa no publican un programa propio de obesidad; ahí el acuerdo tendría que hacerse con grupos médicos independientes.</p>
+</section>
 
-  <h4>Qué se acuerda con cada hospital</h4>
+<section class="seccion">
+  <div class="etiqueta">8 · Alianzas</div>
+  <h2>Nutrición y comida: los aliados que completan el plan</h2>
+  <p class="idea">Quien usa estos medicamentos come menos, así que cada comida necesita más proteína. El club no puede resolverlo solo.</p>
+  <table>
+    <tr><th>Aliado</th><th>Qué aporta</th><th>Dato publicado</th><th>Acuerdo propuesto</th></tr>
+    <tr><td><b>Clivi</b> (clínica digital)</td><td>Tratamiento con GLP-1 supervisado en todo el país</td><td>15,000 pacientes activos; 200 empresas con convenio; $4,299 el primer mes</td><td>Referencia recíproca en ciudades sin hospital aliado</td></tr>
+    <tr><td><b>Nutrimind</b></td><td>Software común para los nutriólogos del programa</td><td>70,000 profesionales</td><td>Plan estándar «Fuerza y Peso»</td></tr>
+    <tr><td><b>Fitia</b></td><td>App para registrar comidas, enfocada en recomposición corporal</td><td>Más de 10 millones de usuarios; $219 al mes</td><td>Descuento para participantes</td></tr>
+    <tr><td><b>Manzana Verde</b></td><td>Comida con ~32 g de proteína; CDMX, Monterrey y Guadalajara</td><td>Planes de $1,910 y $2,448</td><td>Convenio nacional con código de descuento</td></tr>
+    <tr><td><b>Jenny Light / Manyar</b></td><td>Nutrióloga más comida diaria en el Valle de México</td><td>≈$360 a $419 al día</td><td>Convenio local</td></tr>
+    <tr><td><b>No Sugar · Gains Meals · True Dose · Habeats</b></td><td>Comida alta en proteína en Monterrey, Guadalajara, Puebla y Querétaro</td><td>$117 a $220 por comida</td><td>Convenios locales</td></tr>
+  </table>
+  <p class="fuente">Fuente: sitios oficiales, 23 de noviembre de 2026 [36]. Ninguno tiene hoy alianza con un gimnasio. Precedente: Planet Fitness con Trifecta, con 50% de descuento en el primer pedido [37].</p>
+
+  <h3>Reglas para cualquier alianza</h3>
   <ul>
-    <li><b>Referencia en los dos sentidos y sin pago por paciente.</b> El médico conserva su criterio y la persona elige libremente. Se ofrecen al menos dos opciones médicas por zona para evitar exclusividades y conflictos de interés [40].</li>
-    <li><b>Carta de aptitud para el ejercicio.</b> El hospital la emite con un formato común y Sports World la exige al entrar.</li>
-    <li><b>Reporte de avance al médico tratante:</b> Body Test, fuerza y asistencia, solo con autorización escrita de la persona.</li>
-    <li><b>Sesiones informativas en el club,</b> impartidas por especialistas del hospital, sin mencionar marcas de medicamentos.</li>
-    <li><b>Beneficio de membresía para el personal del hospital,</b> que convierte a sus médicos y enfermeras en usuarios del club.</li>
+    <li>Programa o servicio publicado y verificable.</li>
+    <li>A menos de 3 km de un club o con cobertura en su ciudad.</li>
+    <li>Referencia en los dos sentidos y sin pago por paciente.</li>
+    <li>Sin exclusividad: al menos dos opciones médicas por zona.</li>
+    <li>Revisión cada trimestre: personas referidas, inscritas y satisfechas.</li>
   </ul>
-
-  <h3>Círculo 1 bis. La clínica digital de alcance nacional</h3>
-  <p><b>Clivi</b> es la plataforma mexicana de tratamiento de obesidad y diabetes con mayor escala publicada. Declara más de 15,000 pacientes activos, supervisa tratamientos con GLP-1 y cobra $4,299 el primer mes. Tiene convenios con más de 200 empresas, con descuentos de hasta 30% [41]. Su app registra la evolución corporal, pero no ofrece lo que Sports World sí tiene: medición presencial y entrenamiento de fuerza en 49 clubes. Es el aliado que cubre las ciudades donde no hay un hospital con programa propio: Puebla, Querétaro y las ciudades medianas. El riesgo es que Clivi trate a Sports World como un canal de venta y no como socio; el convenio debe establecer referencia recíproca y medición compartida.</p>
-
-  <h3>Círculo 2. Nutrición</h3>
-  <div class="anexo-titulo">Tabla 12. Aliados de nutrición</div>
-  <table>
-    <tr><th>Aliado</th><th>Qué aporta</th><th>Datos publicados</th><th>Modelo de acuerdo</th></tr>
-    <tr><td>Nutriólogos titulados (propios o de los hospitales aliados)</td><td>Plan de alimentación y meta de proteína</td><td>La ley exige cédula profesional y que la publicidad la muestre [37]</td><td>Consulta en el club, cobrada a tarifa vigente</td></tr>
-    <tr><td>Nutrimind (México)</td><td>Software para nutriólogos: dietas por tipo de paciente («Deportista», «Control de Peso») y app de seguimiento</td><td>Más de 70,000 profesionales; 1 millón de pacientes desde 2009 [42]</td><td>Herramienta común para estandarizar el plan de todos los nutriólogos del programa</td></tr>
-    <tr><td>Fitia</td><td>App de consumo para registrar comidas, enfocada en recomposición corporal</td><td>Más de 10 millones de usuarios; $219 al mes o $679 al año [43]</td><td>Descuento para socios del programa; reparto de ingreso por suscripción</td></tr>
-  </table>
-  <p class="fuente">Fuente: sitios oficiales consultados el 23 de noviembre de 2026. MyFitnessPal se descartó: su función para usuarios de GLP-1 opera solo en Estados Unidos y Canadá, en inglés.</p>
-
-  <h3>Círculo 3. Comida saludable a domicilio</h3>
-  <p>Los usuarios de GLP-1 comen menos, por lo que cada comida necesita más proteína por bocado. La comida preparada con proteína declarada resuelve un problema práctico que el club no puede resolver solo.</p>
-  <div class="anexo-titulo">Tabla 13. Proveedores de comida por ciudad</div>
-  <table>
-    <tr><th>Ciudad</th><th>Proveedor</th><th>Qué ofrece</th><th>Precio publicado</th></tr>
-    <tr><td>Valle de México, Monterrey y Guadalajara</td><td>Manzana Verde</td><td>Platillos con ~32 g de proteína en promedio, calorías calculadas por nutricionistas</td><td>Planes de $1,910 (≈20 comidas) y $2,448 (≈27 comidas)</td></tr>
-    <tr><td>Valle de México</td><td>Jenny Light</td><td>Nutrióloga, medición de composición corporal y comida; sucursales en Del Valle, San Jerónimo, Interlomas y Satélite</td><td>≈$380 al día; valoración inicial de $850</td></tr>
-    <tr><td>Valle de México</td><td>Manyar</td><td>Plan diario completo con nutrióloga; cobertura en las zonas de unos 25 de los 31 clubes del Valle de México</td><td>$360 a $419 al día</td></tr>
-    <tr><td>Monterrey</td><td>No Sugar Healthy Kitchen</td><td>Plan «Stronger», platillos de 49 a 59 g de proteína; ya vende a empresas</td><td>Desde $150 por platillo</td></tr>
-    <tr><td>Guadalajara</td><td>Gains Meals</td><td>Platillos altos en proteína con información nutrimental</td><td>$136 a $220 por comida</td></tr>
-    <tr><td>Puebla</td><td>True Dose</td><td>Diseñado por nutriólogos; platillos altos en proteína</td><td>$117 a $139 por comida</td></tr>
-    <tr><td>Querétaro</td><td>Habeats</td><td>Planes de nutrición deportiva y de control de peso; cocina la dieta del nutriólogo</td><td>No publicado</td></tr>
-  </table>
-  <p class="fuente">Fuente: sitios oficiales de cada proveedor, consultados el 23 de noviembre de 2026 [44]. Ninguno tiene hoy una alianza con un gimnasio.</p>
-  <p><b>Modelo de acuerdo con la comida.</b> El precedente más cercano es el de Planet Fitness con Trifecta: un código de descuento dentro de la app del gimnasio (50% en el primer pedido y 25% en el segundo), sin integración operativa [45]. Para Sports World se propone:</p>
-  <ul>
-    <li>un convenio nacional con Manzana Verde, el único proveedor con cobertura en las tres zonas metropolitanas principales;</li>
-    <li>convenios locales donde no llega;</li>
-    <li>descuento para participantes del programa;</li>
-    <li>comisión por pedido referido;</li>
-    <li>un menú «Fuerza y Peso» con meta mínima de proteína por platillo, validada por los nutriólogos del programa.</li>
-  </ul>
-
-  <h3>Cómo se elige y se evalúa a un aliado</h3>
-  <ol>
-    <li>Tiene un programa o servicio publicado y verificable, no solo un médico conocido.</li>
-    <li>Está a menos de 3 km de un club o tiene cobertura en la ciudad del club.</li>
-    <li>Acepta la referencia en los dos sentidos y la medición compartida con consentimiento.</li>
-    <li>No exige exclusividad.</li>
-    <li>Se revisa cada trimestre con tres datos: personas referidas, personas que se inscribieron y satisfacción de los participantes.</li>
-  </ol>
 </section>
 
-<!-- 7. HOJA DE RUTA -->
+<!-- 9. HOJA DE RUTA -->
 <section class="seccion">
-  <div class="etiqueta">7 · Hoja de ruta</div>
-  <h2>De la preparación a la red completa en 30 meses, con criterios numéricos para avanzar o detenerse</h2>
+  <div class="etiqueta">9 · Hoja de ruta</div>
+  <h2>De seis clubes a los 49 en 30 meses, antes de que lleguen los genéricos</h2>
+  <p class="idea">Cada paso se gana con números, no con calendario.</p>
+  <div class="titulo-graf">Gráfica 17. Hoja de ruta</div>
+  {{g:gantt}}
+  <p class="fuente">Clubes piloto: Antara, Santa Fe, Roma, Xola, Patio Tlalpan y San Pedro, cada uno cerca de un hospital aliado.</p>
 
-  <div class="anexo-titulo">Tabla 14. Fases de implementación</div>
+  <h3>Metas del piloto</h3>
   <table>
-    <tr><th>Fase</th><th>Periodo</th><th>Qué se hace</th><th>Se pasa a la siguiente si…</th></tr>
-    <tr><td><b>0. Preparación</b></td><td>dic. 2026 – feb. 2027 (12 semanas)</td><td>Dictamen jurídico. Protocolo y capacitación de 12 horas. Firma de convenios de intención con al menos 3 hospitales, Clivi y un proveedor de comida. Registro del motivo de alta y baja en el CRM. Consentimiento para datos de salud. Línea base de los seis clubes piloto</td><td>Dictamen favorable; 100% de los entrenadores de los clubes piloto capacitados; registro de motivos en operación</td></tr>
-    <tr><td><b>1. Piloto</b></td><td>mar. – ago. 2027 (24 semanas)</td><td>Programa en Antara, Santa Fe, Roma, Xola, Patio Tlalpan y San Pedro, con sus hospitales aliados más cercanos</td><td>Se cumplen los criterios de la Tabla 15</td></tr>
-    <tr><td><b>2. Decisión</b></td><td>sep. 2027</td><td>El comité revisa los resultados contra las metas y recalcula el riesgo con datos propios</td><td>Aprobación del comité</td></tr>
-    <tr><td><b>3. Primera expansión</b></td><td>oct. 2027 – jun. 2028</td><td>20 clubes en el Valle de México, Monterrey, Guadalajara, Querétaro y Puebla. Convenio nacional de comida. Clivi en ciudades sin hospital aliado</td><td>Se mantienen las metas en los 20 clubes</td></tr>
-    <tr><td><b>4. Red completa</b></td><td>jul. 2028 – jun. 2029</td><td>Los 49 clubes, antes de la llegada posible de los genéricos</td><td>—</td></tr>
+    <tr><th>Indicador</th><th class="num">Meta</th><th>Por qué</th></tr>
+    <tr><td>Participantes nuevos por club al mes</td><td class="num">≥ 8</td><td>Volumen suficiente para medir en 24 semanas</td></tr>
+    <tr><td>Participantes que son altas nuevas</td><td class="num">≥ 30%</td><td>8 × 30% = 2.4 altas por club al mes: lo que compensa el escenario base</td></tr>
+    <tr><td>Permanencia a 6 meses frente a socios comparables</td><td class="num">+10 puntos</td><td>Mismo club y misma antigüedad</td></tr>
+    <tr><td>Participantes con fuerza igual o mayor a las 16 semanas</td><td class="num">≥ 70%</td><td>En el ensayo de referencia, la fuerza subió con entrenamiento</td></tr>
+    <tr><td>Masa magra como parte del peso perdido</td><td class="num">≤ 25%</td><td>Mejor que el 38% de semaglutida sin entrenar</td></tr>
+    <tr><td>Asistencia promedio</td><td class="num">≥ 3 por semana</td><td>Quien asiste 3 veces cancela la mitad que quien va poco</td></tr>
+    <tr><td>Participantes que llegan por un aliado médico</td><td class="num">≥ 25%</td><td>Prueba que la referencia funciona</td></tr>
   </table>
-  <p class="fuente">Fuente: elaboración propia. Los seis clubes piloto representan 12% de la red y combinan zonas con hospital aliado a menos de 3 km.</p>
+  <p class="fuente">Metas propuestas por la consultoría; se ajustan con la línea base de la fase de preparación.</p>
+</section>
 
-  <div class="anexo-titulo">Tabla 15. Metas del piloto (criterios para pasar a la expansión)</div>
+<!-- 10. ALERTAS Y LEGAL -->
+<section class="seccion">
+  <div class="etiqueta">10 · Señales y límites</div>
+  <h2>Cinco señales para acelerar y seis reglas legales que no se negocian</h2>
   <table>
-    <tr><th>Indicador</th><th>Meta del piloto</th><th>Por qué ese número</th></tr>
-    <tr><td>Participantes nuevos por club al mes</td><td class="num">≥ 6</td><td>Volumen mínimo para medir resultados con confianza en 24 semanas</td></tr>
-    <tr><td>Participantes que son altas nuevas (no socios actuales)</td><td class="num">≥ 30%</td><td>6 × 30% = 1.8 altas por club al mes, por encima de las 1.6 que compensan el escenario base</td></tr>
-    <tr><td>Permanencia a 6 meses frente a socios comparables</td><td class="num">+10 puntos</td><td>Mismo club y misma antigüedad. Cada punto de permanencia vale ≈$27,300 por membresía</td></tr>
-    <tr><td>Participantes con fuerza de prensión igual o mayor a la inicial a las 16 semanas</td><td class="num">≥ 70%</td><td>En el ensayo de referencia, la fuerza subió con entrenamiento y bajó sin él [29]</td></tr>
-    <tr><td>Masa magra como parte del peso perdido (Body Test)</td><td class="num">≤ 25%</td><td>Igual o mejor que el 25% de tirzepatida y que el ~38% de semaglutida sin entrenamiento [26][27]</td></tr>
-    <tr><td>Asistencia promedio</td><td class="num">≥ 3 por semana</td><td>Quien asiste 3 o más veces por semana cancela la mitad que quien asiste poco [22]</td></tr>
-    <tr><td>Participantes que llegan por un aliado médico</td><td class="num">≥ 25%</td><td>Comprueba que la referencia funciona</td></tr>
-    <tr><td>Consentimientos firmados e incidentes regulatorios</td><td class="num">100% y 0</td><td>Condición para seguir</td></tr>
+    <tr><th>Señal</th><th>Umbral</th><th>Qué hacer</th></tr>
+    <tr><td>COFEPRIS aprueba una semaglutida genérica</td><td>Primera aprobación</td><td>Adelantar los 49 clubes</td></tr>
+    <tr><td>Tratamiento mensual más barato</td><td>Menos de $2,500</td><td>Campaña para usuarios y exusuarios</td></tr>
+    <tr><td>Hogares con al menos un usuario</td><td>Más de 6%</td><td>Pasar al escenario acelerado</td></tr>
+    <tr><td>Bajas por tratamiento médico para bajar de peso</td><td>Más de 5% de las bajas</td><td>Ofrecer la fase 4 a todo socio que lo declare</td></tr>
+    <tr><td>Deserción bruta</td><td>Más de 6.5% dos trimestres</td><td>Revisión de retención por club</td></tr>
   </table>
-  <p class="fuente">Fuente: elaboración propia. Metas propuestas para validación del comité; se recalibran con la línea base de la fase 0.</p>
 
-  <div class="caja">
-    <h4>Indicadores permanentes del tablero (después del piloto)</h4>
-    <ol>
-      <li>Altas con motivo «bajar de peso» (% del total).</li>
-      <li>Bajas con motivo «tratamiento médico para bajar de peso» (% del total).</li>
-      <li>Participantes activos por club.</li>
-      <li>Permanencia a 6 y 12 meses de participantes frente a no participantes.</li>
-      <li>Contratación de entrenamiento personal y nutrición entre participantes.</li>
-      <li>Fuerza y composición corporal promedio por fase.</li>
-      <li>Referencias recibidas y enviadas por aliado.</li>
-      <li>Participantes en fase 4 que siguen activos a 12 meses.</li>
-      <li>Ingreso protegido: membresías conservadas o ganadas × $27,300.</li>
-    </ol>
+  <h3>Reglas legales</h3>
+  <table>
+    <tr><th>Regla</th><th>Fundamento</th></tr>
+    <tr><td>Ninguna marca de medicamento en publicidad</td><td>Ley General de Salud, arts. 300 y 306 [31]; COFEPRIS: Ozempic® «no» está autorizado «para la pérdida de peso» [32]</td></tr>
+    <tr><td>Sports World no prescribe ni ajusta dosis</td><td>NOM-008-SSA3-2017: solo el médico prescribe [38]</td></tr>
+    <tr><td>Consentimiento expreso y por escrito para datos de salud</td><td>Ley de protección de datos de 2025, art. 8 [39]</td></tr>
+    <tr><td>Nutrición solo con cédula profesional, visible en el anuncio</td><td>Reglamento de Publicidad, art. 19 [33]</td></tr>
+    <tr><td>Afirmaciones veraces y comprobables</td><td>Ley Federal de Protección al Consumidor, art. 32 [34]</td></tr>
+    <tr><td>Expediente clínico si un aliado atiende en el club</td><td>NOM-004-SSA3-2012, conservación por 5 años [40]</td></tr>
+  </table>
+  <p class="fuente">Interpretación de la consultoría; debe confirmarla un abogado especialista en salud antes de cualquier publicación.</p>
+</section>
+
+<!-- 11. RECOMENDACIÓN -->
+<section class="seccion">
+  <div class="etiqueta">11 · Nuestra recomendación</div>
+  <h2>Tres pasos para el equipo de marketing</h2>
+  <p class="idea">El riesgo crece cada año y el territorio sigue libre: ningún operador en México tiene hoy un programa para esta población.</p>
+
+  <div class="paso"><div class="n">1</div><div><b>Ocupar el territorio de bajar de peso con fuerza y composición corporal</b><br>Mensaje central de la sección 7, un público por mensaje y las reglas legales de la sección 10.</div></div>
+  <div class="paso"><div class="n">2</div><div><b>Probar el Programa Fuerza y Peso en seis clubes</b><br>De marzo a agosto de 2027, con los hospitales cercanos, Clivi y un proveedor de comida. Pasar a 20 clubes solo si se cumplen las metas de la sección 9.</div></div>
+  <div class="paso"><div class="n">3</div><div><b>Registrar el motivo de cada alta y de cada baja desde enero de 2027</b><br>Así se sustituyen las inferencias de este documento por datos propios, en tres meses.</div></div>
+
+  <div class="kpis">
+    <div class="kpi"><b>$5.9 mdp</b><span>riesgo en 2027, escenario base: el momento barato para aprender</span></div>
+    <div class="kpi"><b>$23.9 mdp</b><span>riesgo en 2029, escenario base: cuatro veces más</span></div>
+    <div class="kpi"><b>2.4</b><span>membresías por club al mes que pagan el programa</span></div>
   </div>
-</section>
-
-<!-- 8. GOBIERNO Y LEGAL -->
-<section class="seccion">
-  <div class="etiqueta">8 · Gobierno y límites</div>
-  <h2>Un comité, cinco señales de alerta y siete reglas legales que no se negocian</h2>
-
-  <h3>Gobierno</h3>
-  <p>El programa lo dirige un comité que sesiona cada mes durante el piloto y cada trimestre después. Lo integran la Dirección Comercial, responsable del programa; Operaciones de clubes; Jurídico, y un médico asesor externo sin relación comercial con los hospitales aliados. El comité es dueño de las metas de la Tabla 15 y de la decisión de avanzar, ajustar o detener.</p>
-
-  <div class="anexo-titulo">Tabla 16. Señales que obligan a pasar del plan base al plan acelerado</div>
-  <table>
-    <tr><th>Señal</th><th>Umbral</th><th>Respuesta</th></tr>
-    <tr><td>COFEPRIS aprueba una semaglutida genérica</td><td>Primera aprobación</td><td>Adelantar la red completa; recalcular el riesgo con el escenario acelerado</td></tr>
-    <tr><td>Precio al público del tratamiento mensual más barato</td><td>Menos de $2,500</td><td>Campaña de captación para exusuarios y usuarios</td></tr>
-    <tr><td>Hogares con al menos un usuario (Worldpanel)</td><td>Más de 6%</td><td>Pasar al escenario acelerado</td></tr>
-    <tr><td>Bajas con motivo «tratamiento médico para bajar de peso»</td><td>Más de 5% de las bajas en un trimestre</td><td>Ofrecer la fase 4 a todo socio que lo declare</td></tr>
-    <tr><td>Deserción bruta promedio</td><td>Más de 6.5% dos trimestres seguidos</td><td>Revisión de retención por club</td></tr>
-  </table>
-  <p class="fuente">Fuente: elaboración propia. Umbrales propuestos para validación del comité.</p>
-
-  <h3>Límites legales</h3>
-  <p>El programa toca datos de salud y publicidad de salud, dos de las materias más reguladas en México. Estas reglas se aplican desde el primer día:</p>
-  <ol>
-    <li><b>Ninguna marca de medicamento en la publicidad.</b> La Ley General de Salud prohíbe anunciar al público medicamentos de receta [46]. COFEPRIS ha advertido que Ozempic® está autorizado solo para diabetes tipo 2 y «no para la pérdida de peso» [47]. Toda comunicación dice «tratamiento médico para bajar de peso», nunca un nombre comercial.</li>
-    <li><b>Sports World no prescribe, no recomienda dosis y no modifica tratamientos.</b> Solo un médico prescribe. El programa no se anuncia como «tratamiento de la obesidad», para no quedar bajo las reglas de un consultorio [48].</li>
-    <li><b>Consentimiento expreso y por escrito para datos de salud.</b> La ley de protección de datos de 2025 exige firma o mecanismo de autenticación para datos sensibles, y las multas se duplican en estos casos [38].</li>
-    <li><b>Nutrición solo con cédula profesional,</b> y la publicidad de ese servicio muestra la institución y el número de cédula [37].</li>
-    <li><b>Afirmaciones veraces y comprobables.</b> La ley del consumidor lo exige [49]. Se dice «el entrenamiento de fuerza reduce la pérdida de masa magra», con la cita del estudio; nunca «conserva todo tu músculo» ni resultados garantizados.</li>
-    <li><b>Expediente clínico.</b> Si un profesional aliado atiende dentro del club, su expediente sigue la NOM-004 y se conserva al menos cinco años [50].</li>
-    <li><b>Revisión jurídica antes de publicar.</b> Las lecturas legales de este documento son interpretación del autor; un abogado especialista en salud debe confirmarlas en la fase 0.</li>
-  </ol>
-
-  <h3>Riesgos del propio plan</h3>
-  <div class="anexo-titulo">Tabla 17. Riesgos de la ejecución y cómo se mitigan</div>
-  <table>
-    <tr><th>Riesgo</th><th>Mitigación</th></tr>
-    <tr><td>Poca inscripción porque las personas no quieren declarar su tratamiento</td><td>El programa está abierto a cualquiera que busque bajar de peso; declarar el tratamiento es voluntario</td></tr>
-    <tr><td>El Body Test confunde masa magra con agua, sobre todo en días de poca hidratación</td><td>Medir a la misma hora y en condiciones similares; decidir con la tendencia de varias mediciones y con la fuerza</td></tr>
-    <tr><td>Entrenadores sin preparación para esta población</td><td>Capacitación obligatoria y coordinador por club; la fase 1 usa clases de entrada como Tone y Pilates</td></tr>
-    <tr><td>Un aliado usa a Sports World como canal de venta</td><td>Convenio con referencia recíproca, sin exclusividad y con revisión trimestral</td></tr>
-    <tr><td>Un evento médico en el club (mareo, hipoglucemia)</td><td>Carta de aptitud, preguntas previas a la sesión y protocolo de primeros auxilios vigente en el club</td></tr>
-    <tr><td>Que el programa se perciba como moda pasajera</td><td>Se comunica como método de fuerza y composición corporal con medición, no como campaña sobre un medicamento</td></tr>
-  </table>
-</section>
-
-<!-- 9. DECISIONES -->
-<section class="seccion">
-  <div class="etiqueta">9 · Llamado a la acción</div>
-  <h2>Tres decisiones para el comité, con fecha</h2>
-
-  <div class="anexo-titulo">Tabla 18. Decisiones solicitadas</div>
-  <table>
-    <tr><th>Decisión</th><th>Fecha</th><th>Responsable propuesto</th><th>Qué se obtiene</th></tr>
-    <tr><td>1. Aprobar la fase de preparación y el piloto de 24 semanas en seis clubes</td><td>Diciembre de 2026</td><td>Dirección Comercial</td><td>Datos propios de demanda, permanencia y resultados antes de comprometer la red</td></tr>
-    <tr><td>2. Autorizar la negociación de convenios de referencia con 6 hospitales y Clivi, y de un convenio de comida de alcance nacional</td><td>Diciembre de 2026</td><td>Dirección Comercial con Jurídico</td><td>Un flujo de personas referidas por médicos desde el primer día del piloto</td></tr>
-    <tr><td>3. Registrar en el CRM el motivo de cada alta y cada baja, incluido el tratamiento médico para bajar de peso, con consentimiento</td><td>Enero de 2027</td><td>Sistemas y Operaciones</td><td>La medición real del riesgo, que hoy solo puede estimarse con datos públicos</td></tr>
-  </table>
-
-  <div class="caja verde">
-    <h4>Por qué ahora</h4>
-    <ul>
-      <li><b>En 2027 el riesgo es pequeño:</b> $3.9 mdp en el escenario base. Es el momento barato para aprender.</li>
-      <li><b>En 2029 el riesgo crece cuatro veces</b> y puede llegar a 9.3% del EBITDA si se adelantan los genéricos.</li>
-      <li><b>Ningún operador en México tiene hoy un programa para esta población.</b> Sports World tiene lo que los demás tendrían que construir: un catálogo de 51 clases, la medición mensual de composición corporal ya incluida y 49 clubes, varios a menos de un kilómetro de los mejores programas hospitalarios de obesidad del país.</li>
-    </ul>
-  </div>
-  <p class="tesis">El medicamento ayuda a bajar de peso. Sports World ayuda a que lo que se pierda sea grasa, a que el cuerpo sea más fuerte y a que el resultado se quede.</p>
+  <div class="caja verde"><b class="t">En una frase</b>El medicamento ayuda a bajar de peso. Sports World ayuda a que lo que se pierda sea grasa, a que el cuerpo sea más fuerte y a que el resultado se quede.</div>
 </section>
 
 <!-- ANEXO A -->
 <section class="seccion">
   <div class="etiqueta">Anexo A</div>
   <h2>Método y supuestos del modelo de riesgo</h2>
-  <p>El modelo simula mes por mes de enero de 2027 a diciembre de 2029. Cada mes calcula dos cantidades:</p>
   <ul>
-    <li><b>Ventas no realizadas</b> = altas mensuales (5,532) × motivo «bajar de peso» × uso de GLP-1 del año × sustitución.</li>
-    <li><b>Cancelaciones adicionales</b> = clientes activos (97,046) × motivo «bajar de peso» × uso de GLP-1 del año × sustitución ÷ 12.</li>
+    <li><b>Ventas no realizadas al mes</b> = 5,532 altas × motivo «bajar de peso» × uso de GLP-1 del año × sustitución.</li>
+    <li><b>Cancelaciones adicionales al mes</b> = 97,046 clientes × los mismos tres factores ÷ 12.</li>
+    <li><b>Las membresías que faltan se acumulan,</b> pero cada mes se reducen 5.7%, porque esas personas también habrían cancelado a la tasa normal.</li>
+    <li><b>Ingreso perdido</b> = membresías que faltan × $1,508 al mes, más las ventas no realizadas × $894 de inscripción.</li>
   </ul>
-  <p>Las membresías que faltan se acumulan, pero cada mes se reducen en 5.7%, porque esas personas también habrían cancelado a la tasa normal. El ingreso perdido del mes es igual a las membresías que faltan por $1,508, más las ventas no realizadas por $894 de inscripción. El efecto en EBITDA aplica 80% al ingreso perdido.</p>
-  <div class="anexo-titulo">Tabla A1. Supuestos y su estado</div>
   <table>
-    <tr><th>Supuesto</th><th>Valor</th><th>Riesgo de que esté mal</th><th>Cómo se corrige</th></tr>
-    <tr><td>La deserción bruta reportada es mensual</td><td>5.7%</td><td>Medio: el reporte no define el periodo</td><td>Confirmar con Finanzas</td></tr>
-    <tr><td>Altas iguales a bajas</td><td>66,379 al año</td><td>Medio: la base bajó 7.1% en 2026 por depuración voluntaria</td><td>Usar las altas reales del CRM</td></tr>
-    <tr><td>Clientes con invitados y virtuales en la base</td><td>97,046</td><td>Bajo: la cuota se calculó con la misma base, así que el producto es consistente</td><td>Separar clientes de pago</td></tr>
-    <tr><td>Motivo «bajar de peso»</td><td>20.9% a 32%</td><td>Medio: viene de encuestas con respuesta múltiple</td><td>Registro del motivo en cada alta (decisión 3)</td></tr>
-    <tr><td>Uso de GLP-1 en ese grupo</td><td>4% a 20% según año y escenario</td><td>Alto: no hay medición en socios</td><td>Pregunta voluntaria con consentimiento</td></tr>
-    <tr><td>Sustitución</td><td>8% a 25%</td><td>Alto: la referencia es de EE. UU.</td><td>Motivo de baja en el CRM</td></tr>
-    <tr><td>Traspaso a EBITDA</td><td>80%</td><td>Bajo a medio</td><td>Costos variables por socio de Finanzas</td></tr>
+    <tr><th>Dato de Sports World</th><th class="num">Valor</th><th>Tipo</th></tr>
+    <tr><td>Clientes activos, tercer trimestre de 2026</td><td class="num">97,046</td><td>Dato [12]</td></tr>
+    <tr><td>Deserción bruta (se interpreta mensual)</td><td class="num">5.7%</td><td>Dato [12]</td></tr>
+    <tr><td>Cuota promedio por cliente</td><td class="num">$1,508</td><td>Cálculo: $439.2 mdp ÷ 3 ÷ 97,046</td></tr>
+    <tr><td>Altas al año (base estable)</td><td class="num">66,379</td><td>Cálculo: 97,046 × 5.7% × 12</td></tr>
+    <tr><td>Permanencia promedio</td><td class="num">17.5 meses</td><td>Cálculo: 1 ÷ 5.7%</td></tr>
+    <tr><td>Valor de una membresía</td><td class="num">$27,300</td><td>Cálculo: 17.5 × $1,508 + $894</td></tr>
+    <tr><td>EBITDA 2025 sin IFRS 16</td><td class="num">$354.8 mdp</td><td>Dato [12]</td></tr>
   </table>
-  <p class="fuente">Fuente: modelo reproducible en proyectos/glp1/modelo/riesgo.py; resultados en resultado.json.</p>
+  <table>
+    <tr><th>Supuesto</th><th>Riesgo de error</th><th>Cómo se corrige</th></tr>
+    <tr><td>Motivo «bajar de peso»: 32% / 45% / 60%</td><td>Medio: base y acelerado son inferencia</td><td>Motivo en cada alta del CRM</td></tr>
+    <tr><td>Uso de GLP-1: 4% a 20%</td><td>Alto: no hay medición en socios</td><td>Pregunta voluntaria con consentimiento</td></tr>
+    <tr><td>Sustitución: 8% / 16% / 25%</td><td>Alto: referencia de EE. UU.</td><td>Motivo en cada baja del CRM</td></tr>
+    <tr><td>Deserción mensual</td><td>Medio: el reporte no define el periodo</td><td>Confirmar con Finanzas</td></tr>
+    <tr><td>80% del ingreso perdido cae a EBITDA</td><td>Bajo a medio</td><td>Costo variable por socio</td></tr>
+  </table>
 </section>
 
 <!-- ANEXO B -->
 <section class="seccion">
   <div class="etiqueta">Anexo B</div>
   <h2>Las 51 clases del catálogo y su papel en el programa</h2>
-  <p class="mini">Clases y categoría oficial según el sitio público de Sports World (sportsworld.com.mx/clases, consultado el 23 de noviembre de 2026). La descripción entre comillas es la oficial de cada clase. La fase indica cuándo entra la clase al programa.</p>
   <table>
-    <tr><th>Papel</th><th>Clase (categoría oficial)</th><th>Descripción oficial (resumen)</th><th>Fases</th></tr>
-    <tr><td rowspan="17"><b>Fuerza (17)</b></td><td>Body Pump (Strength)</td><td>«Fuerza y resistencia»</td><td>2, 3, 4</td></tr>
-    <tr><td>Kinetic Pump (Strength)</td><td>«Entrenamiento funcional, cardiovascular y de fuerza»</td><td>2, 3, 4</td></tr>
-    <tr><td>Funtrac (Strength)</td><td>«Entrenamiento funcional en circuitos … con implementos»</td><td>2, 3, 4</td></tr>
-    <tr><td>Tone (Strength)</td><td>«Ideales para iniciarse en las actividades de fitness en grupo»</td><td>1, 2</td></tr>
-    <tr><td>Total Barre (Strength)</td><td>«Entrenamiento completo que trabaja todo el cuerpo»</td><td>1, 2</td></tr>
-    <tr><td>Core (Strength)</td><td>«30 minutos de trabajo exclusivo para los músculos que conforman el core»</td><td>1, 2, 3</td></tr>
-    <tr><td>CX Worx (Strength)</td><td>«30 minutos … abdominales, glúteos, espalda y oblicuos»</td><td>2, 3</td></tr>
-    <tr><td>Kinetic Chain (Strength)</td><td>«Estabilidad del core, ejercicio balístico y explosivo»</td><td>3, 4</td></tr>
-    <tr><td>Strong Nation (Intensity)</td><td>«Movimientos con el propio peso corporal y ejercicios pliométricos»</td><td>3, 4</td></tr>
-    <tr><td>Alpha Trainer (Especializados)</td><td>«Necesidades más exigentes del entrenamiento personalizado»</td><td>3, 4</td></tr>
-    <tr><td>Traint Boost (Especializados)</td><td>«Pilares de movimiento y capacidades físicas»</td><td>3, 4</td></tr>
-    <tr><td>Reformer Pilates (Wellness)</td><td>«Método adaptado a las condiciones y posibilidades del practicante»</td><td>1, 2, 3, 4</td></tr>
-    <tr><td>Mat Pilates (Wellness)</td><td>«Ganarás autoconciencia y serás más capaz de controlar tu cuerpo»</td><td>1, 2</td></tr>
-    <tr><td>Ball Pilates (Wellness)</td><td>«Pelota gigante adaptando al nivel de acondicionamiento»</td><td>1, 2</td></tr>
-    <tr><td>Natural Motion (Wellness)</td><td>«No utiliza ninguna herramienta extra más que … tu propio cuerpo»</td><td>1, 2</td></tr>
-    <tr><td>Kinetic Ball (Wellness)</td><td>«Mejorar las capacidades coordinativas»</td><td>1, 2</td></tr>
-    <tr><td>Race Walker (Intensity)</td><td>«Fuerza y resistencia moviendo una banda … con tus piernas»</td><td>1, 2</td></tr>
-    <tr><td rowspan="9"><b>Cardio de bajo impacto (9)</b></td><td>Cycling (Intensity)</td><td>«Spinning sobre una bicicleta estática»</td><td>1 a 4</td></tr>
-    <tr><td>INDBIKE (Intensity)</td><td>«Ciclismo de interior» virtual</td><td>1 a 4</td></tr>
-    <tr><td>RPM (Intensity)</td><td>«Programa de ciclismo»</td><td>2, 3, 4</td></tr>
-    <tr><td>Power Cycling (Intensity)</td><td>«Entrenamiento indoor medible y preciso»</td><td>2, 3, 4</td></tr>
-    <tr><td>Aqua Zumba (Dance)</td><td>«Ejercicio acuático de mucha energía»</td><td>1, 2</td></tr>
-    <tr><td>Swim Trainers (Especializados)</td><td>«Entrenamientos de natación personalizados y grupales»</td><td>1 a 4</td></tr>
-    <tr><td>Body Step (Intensity)</td><td>«Rutina integral con intensidad, agilidad»</td><td>2, 3</td></tr>
-    <tr><td>Step (Intensity)</td><td>«Coreografías aeróbicas … subir y bajar de una plataforma»</td><td>2, 3</td></tr>
-    <tr><td>Zumba Step (Intensity)</td><td>«Fortaleciendo y tonificando glúteos y piernas»</td><td>2, 3</td></tr>
-    <tr><td rowspan="6"><b>Alta intensidad (6)</b></td><td>GRIT (Especializados)</td><td>«Entrenamiento HIIT (intervalos de alta intensidad)»</td><td>3, 4</td></tr>
-    <tr><td>Body Attack (Intensity)</td><td>«Cardiovasculares con trabajos de fuerza y estabilización»</td><td>3, 4</td></tr>
-    <tr><td>Body Combat (Intensity)</td><td>«El más explosivo … programa»</td><td>3, 4</td></tr>
-    <tr><td>Kick Boxing (Contact)</td><td>«Más ágil, fuerte y con mejor condición física»</td><td>3, 4</td></tr>
-    <tr><td>Power Jump (Intensity)</td><td>«Saltando sobre un mini trampolín»</td><td>3, 4</td></tr>
-    <tr><td>Pound (Dance)</td><td>«Cardio, isométricos, pliométricos»</td><td>3, 4</td></tr>
-    <tr><td rowspan="7"><b>Movilidad y recuperación (7)</b></td><td>Stretch (Wellness)</td><td>«Flexibilidad, movilidad a las articulaciones»</td><td>1 a 4</td></tr>
-    <tr><td>Body Balance (Wellness)</td><td>«Yoga, Tai-Chi … Pilates, Feldenkrais»</td><td>1 a 4</td></tr>
-    <tr><td>Hatha Yoga (Wellness)</td><td>«Posturas de manera lenta»</td><td>1 a 4</td></tr>
-    <tr><td>Yoga restaurativa (Wellness)</td><td>«Práctica suave y terapéutica»</td><td>1, 4</td></tr>
-    <tr><td>Vinyasa Yoga (Wellness)</td><td>«Modalidad de yoga más dinámica»</td><td>2, 3, 4</td></tr>
-    <tr><td>Ashtanga Yoga (Wellness)</td><td>«Estilo de yoga fuerte y dinámico»</td><td>3, 4</td></tr>
-    <tr><td>Aeroyoga (Wellness)</td><td>«Entrenamiento en suspensión»</td><td>3, 4</td></tr>
-    <tr><td rowspan="12"><b>Baile y comunidad (12)</b></td><td>Zumba Fitness (Dance)</td><td>«Baila al ritmo de la mejor música»</td><td>2, 3, 4</td></tr>
-    <tr><td>Zumba Toning (Dance)</td><td>«Tonificar, moldear y definir sus músculos»</td><td>2, 3, 4</td></tr>
-    <tr><td>Fit Dance (Dance)</td><td>«Rutina enfocada a tonificación»</td><td>2, 3, 4</td></tr>
-    <tr><td>Body Jam (Dance)</td><td>«Danzar ritmos variados»</td><td>3, 4</td></tr>
-    <tr><td>Sh'Bam (Dance)</td><td>«Clase de baile cardio sencilla»</td><td>2, 3, 4</td></tr>
-    <tr><td>Ritmos Latinos (Dance)</td><td>«Estructurada de manera sencilla y divertida»</td><td>2, 3, 4</td></tr>
-    <tr><td>Belly Dance (Dance)</td><td>«Corrige malas posturas»</td><td>4</td></tr>
-    <tr><td>Urban Dance (Dance)</td><td>«Forma de expresión dinámica»</td><td>4</td></tr>
-    <tr><td>Jazz (Dance)</td><td>Estilo de baile</td><td>4</td></tr>
-    <tr><td>Baile de Salón (Dance)</td><td>«Bailar distintos ritmos en pareja»</td><td>4</td></tr>
-    <tr><td>Sensual Dance (Dance)</td><td>«Acondicionamiento físico con base en movimientos rítmicos»</td><td>4</td></tr>
-    <tr><td>Aero Dance (Dance)</td><td>«Técnicas circenses y danza contemporánea … en suspensión»</td><td>4</td></tr>
+    <tr><th style="width:18%">Papel</th><th>Clases (categoría oficial del sitio)</th><th style="width:14%">Fases</th></tr>
+    <tr><td><b>Fuerza (17)</b></td><td>Body Pump, Kinetic Pump, Funtrac, Core, CX Worx, Kinetic Chain, Tone, Total Barre (Strength) · Strong Nation, Race Walker (Intensity) · Alpha Trainer, Traint Boost (Especializados) · Reformer Pilates, Mat Pilates, Ball Pilates, Natural Motion, Kinetic Ball (Wellness)</td><td>1 a 4, según clase</td></tr>
+    <tr><td><b>Cardio de bajo impacto (9)</b></td><td>Cycling, INDBIKE, RPM, Power Cycling, Body Step, Step, Zumba Step (Intensity) · Aqua Zumba (Dance) · Swim Trainers (Especializados)</td><td>1 a 4</td></tr>
+    <tr><td><b>Alta intensidad (6)</b></td><td>GRIT (Especializados) · Body Attack, Body Combat, Power Jump (Intensity) · Kick Boxing (Contact) · Pound (Dance)</td><td>3 y 4</td></tr>
+    <tr><td><b>Movilidad (7)</b></td><td>Stretch, Body Balance, Hatha Yoga, Yoga restaurativa, Vinyasa Yoga, Ashtanga Yoga, Aeroyoga (Wellness)</td><td>1 a 4</td></tr>
+    <tr><td><b>Baile y comunidad (12)</b></td><td>Zumba Fitness, Zumba Toning, Fit Dance, Body Jam, Sh'Bam, Ritmos Latinos, Belly Dance, Urban Dance, Jazz, Baile de Salón, Sensual Dance, Aero Dance (Dance)</td><td>2 a 4</td></tr>
   </table>
-  <p class="fuente">Fuente: sportsworld.com.mx/clases y la página de cada clase. Se clasificaron 51 clases: 17 + 9 + 6 + 7 + 12. Además existen el entrenamiento individual de pesas, el cardio individual y el acuático individual, que se usan en todas las fases con el entrenador personal.</p>
+  <p class="fuente">Fuente: sportsworld.com.mx/clases y la página de cada clase, 23 de noviembre de 2026. Además: entrenamiento individual de pesas, cardio y acuático con entrenador personal, en todas las fases.</p>
+  <h3>Ejemplo de semana tipo, fase 2 (Conservar)</h3>
+  <table>
+    <tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th><th>Sábado</th></tr>
+    <tr><td>Body Pump</td><td>RPM 45 min</td><td>Kinetic Pump</td><td>Power Cycling 45 min</td><td>Funtrac o CX Worx</td><td>Hatha Yoga + INDBIKE 60 min</td></tr>
+  </table>
+  <p class="fuente">Tres sesiones de fuerza y 150 minutos de cardio, como recomiendan las sociedades médicas [27].</p>
 </section>
 
 <!-- ANEXO C -->
 <section class="seccion">
   <div class="etiqueta">Anexo C</div>
   <h2>Fuentes</h2>
-  <p class="mini">Consultadas entre el 22 y el 23 de noviembre de 2026. El detalle de cada cifra, con cita textual y etiqueta de verificación, está en las notas de investigación del proyecto (proyectos/glp1/investigacion/01 a 06).</p>
-  <ol style="font-size:8.2pt">
-    <li>Worldpanel by Numerator, «The Health Effect 2026», en El Economista, 3 sep. 2026. eleconomista.com.mx</li>
-    <li>NielsenIQ México, encuesta a hogares, en El Economista, 9 nov. 2026. eleconomista.com.mx</li>
-    <li>NielsenIQ, en Saludiario, 11 nov. 2026, y El Economista, 29 jun. 2026.</li>
-    <li>Novo Nordisk México, declaración pública (nota de investigación 02).</li>
-    <li>Farmacias del Ahorro, fichas de producto Wegovy y Mounjaro, nov. 2026. fahorro.com</li>
-    <li>Saludiario, «Wegovy en pastillas llega a México», 11 nov. 2026. saludiario.com</li>
-    <li>El Economista, protección de datos de semaglutida y llegada de genéricos, 6 oct. 2026.</li>
-    <li>Instituto Nacional de Salud Pública, ENSANUT 2022 y ENSANUT Continua 2023.</li>
-    <li>Rodriguez PJ et al., JAMA Network Open 2025;8:e2457349 (Truveta).</li>
-    <li>Wilding JPH et al., extensión de STEP 1, Diabetes Obes Metab 2022. PMID 35441470.</li>
-    <li>KFF Health Tracking Poll, marzo de 2026. kff.org</li>
-    <li>Inspire360, «The GLP-1 Club Intelligence Report», 2026, y Athletech News, mar. 2026.</li>
-    <li>Brazil Journal, entrevista al director de operaciones de Smart Fit, 19 dic. 2025; body.smartfit.com/mx.</li>
-    <li>Grupo Sports World, reportes trimestrales 2T26, 3T26, 4T25 y 4T24, y reporte anual 2024. Bolsa Mexicana de Valores.</li>
-    <li>Health &amp; Fitness Association, encuesta de consumidores de Latinoamérica, 2024.</li>
-    <li>Life Time, encuesta de enfoque principal para 2023, más de 1,000 respuestas: ganar músculo 32%, bajar de peso 30%; 28 dic. 2022. ir.lifetime.life</li>
-    <li>Mercado Fitness, encuesta a usuarios de gimnasio en México (19,000 respuestas).</li>
+  <p class="mini">Consultadas el 22 y 23 de noviembre de 2026. Detalle textual y etiqueta de verificación en proyectos/glp1/investigacion/01 a 08.</p>
+  <ol style="font-size:8.1pt">
+    <li>Sports World, entrevistas de campo con la fuerza de ventas (registro del proyecto, entrevistas-campo.es.md).</li>
+    <li>Diagnóstico de posicionamiento orgánico del sitio de Sports World, con datos de Semrush, feb.-mar. 2026 (auditoria.es.md).</li>
+    <li>Fogel J., Ustoyev S., Journal of Consumer Marketing 2021;38(1):27-38. doi 10.1108/JCM-02-2020-3621. Frase vista en fragmento de búsqueda.</li>
+    <li>Eguchi A. et al., JMIR mHealth uHealth 2023. PMID 37938885.</li>
+    <li>Alfawaz H.A. et al., Int J Sport Nutr Exerc Metab 2018;28(5):509-514. PMID 29140146.</li>
+    <li>Mercado Fitness, «¿Qué quiere el cliente?», México.</li>
+    <li>Eli Lilly, aprobación de tirzepatida en México, nov. 2024.</li>
+    <li>Worldpanel by Numerator, «The Health Effect 2026», en El Economista, 3 sep. 2026.</li>
+    <li>Saludiario, «Wegovy en pastillas llega a México», 11 nov. 2026.</li>
+    <li>El Economista, protección de datos de semaglutida y genéricos, 6 oct. 2026.</li>
+    <li>Farmacias del Ahorro, fichas de Wegovy y Mounjaro, nov. 2026.</li>
+    <li>Grupo Sports World, reportes trimestrales 2T26, 3T26, 4T25 y 4T24. Bolsa Mexicana de Valores.</li>
+    <li>NielsenIQ México, en El Economista, 9 nov. 2026, y en Saludiario, 11 nov. 2026.</li>
+    <li>Estimación cruzada de la consultoría (nota de investigación 02).</li>
+    <li>KFF Health Tracking Poll, marzo de 2026.</li>
+    <li>Rodriguez P.J. et al., JAMA Network Open 2025;8:e2457349.</li>
+    <li>Wilding J.P.H. et al., extensión de STEP 1, Diabetes Obes Metab 2022. PMID 35441470.</li>
     <li>William Blair Equity Research, «Fitness Clubs and GLP-1s», 18 may. 2026.</li>
-    <li>WW International, información financiera y proceso de reestructura, 2025.</li>
+    <li>WW International, información financiera y reestructura, 2025.</li>
+    <li>Endocrine Society, ENDO 2026, actividad medida en 753 personas (vía prensa, 16 jun. 2026).</li>
     <li>PwC UK, «Appetite for Disruption: What GLP-1 means for consumer markets», jul. 2026.</li>
-    <li>Endocrine Society, ENDO 2026, estudio de actividad medida en 753 personas (vía prensa, 16 jun. 2026).</li>
-    <li>Referencia secundaria de cancelación por frecuencia de asistencia (nota de investigación 03). Consultada solo como fragmento de búsqueda; dato orientativo.</li>
-    <li>Life Time Group Holdings, declaraciones del director general (nota de investigación 03).</li>
-    <li>Morgan Stanley Research, «GLP-1 Market Expected to More Than Double to $190B by 2035». morganstanley.com. Texto consultado mediante buscador.</li>
-    <li>Sports World, blog oficial: «Conoce tu cuerpo en profundidad: el poder del Body Test by SECA», 28 oct. 2025.</li>
-    <li>Wilding JPH et al., STEP 1, NEJM 2021. PMID 33567185; registro con resultados DXA en ClinicalTrials.gov.</li>
-    <li>Look M et al., SURMOUNT-1, composición corporal, 2025. PMID 39996356.</li>
-    <li>Karakasis P et al., Metabolism 2025. PMID 39719170.</li>
-    <li>Green DJ et al., «Resistance exercise to attenuate lean mass loss during tirzepatide therapy for obesity», Nature Medicine, 9 nov. 2026. PMID 43003902.</li>
-    <li>Aronne LJ et al., SURMOUNT-4, JAMA 2024;331(1):38-48. PMID 38078870.</li>
-    <li>West S et al., BMJ 2026;392:e085304. PMID 41500720.</li>
-    <li>Jensen SBK et al., eClinicalMedicine 2024. PMID 38544798.</li>
-    <li>Asesoría conjunta ACLM, ASN, OMA y TOS sobre prioridades nutricionales con GLP-1, 2025. PMID 40450457.</li>
-    <li>Chávez-Manzanera EA et al., Guía mexicana de práctica clínica para sobrepeso y obesidad (SMNE), Curr Obes Rep 2024. PMID 39356455.</li>
-    <li>Registros de STEP 1 y SURMOUNT-1 en ClinicalTrials.gov; etiquetas de la FDA de Wegovy y Zepbound.</li>
-    <li>Neeland IJ et al., revisión sobre masa magra y GLP-1, 2024. PMID 38937282.</li>
-    <li>Reglamento de la Ley General de Salud en Materia de Publicidad, art. 19; Ley Reglamentaria del Artículo 5.º Constitucional (profesiones).</li>
-    <li>Ley Federal de Protección de Datos Personales en Posesión de los Particulares, DOF 20 mar. 2025, art. 8.</li>
-    <li>Páginas oficiales: hespanol.com, centromedicoabc.com, hospitalangeles.com, medicasur.com.mx, hospitalsanangelinn.mx, content.tecsalud.mx, hospitalespuertadehierro.com.</li>
-    <li>Deloitte México, «El rol de las farmacias», sep. 2025 (conflicto de interés en la prescripción).</li>
-    <li>Clivi, clivi.com.mx y clivi.com.mx/empresas.</li>
-    <li>Nutrimind, nutrimind.net.</li>
-    <li>Fitia, fitia.app.</li>
-    <li>Manzana Verde, Jenny Light, Manyar, No Sugar, Gains Meals, True Dose y Habeats, sitios oficiales.</li>
-    <li>Planet Fitness, comunicado de PerksFest, 3 ago. 2026. Consultado solo como fragmento (el sitio bloqueó la lectura directa).</li>
-    <li>Ley General de Salud, artículos 226, 300, 306, 310 y 311.</li>
+    <li>Inspire360, «The GLP-1 Club Intelligence Report», 2026.</li>
+    <li>Sports World, blog: «Conoce tu cuerpo en profundidad: el poder del Body Test by SECA», 28 oct. 2025.</li>
+    <li>Wilding J.P.H. et al., STEP 1, NEJM 2021. PMID 33567185.</li>
+    <li>Look M. et al., SURMOUNT-1, composición corporal, 2025. PMID 39996356.</li>
+    <li>Green D.J. et al., Nature Medicine, 9 nov. 2026. PMID 43003902.</li>
+    <li>Asesoría conjunta ACLM, ASN, OMA y TOS, 2025. PMID 40450457.</li>
+    <li>Chávez-Manzanera E.A. et al., Guía mexicana (SMNE), Curr Obes Rep 2024. PMID 39356455.</li>
+    <li>Jensen S.B.K. et al., eClinicalMedicine 2024. PMID 38544798.</li>
+    <li>Etiquetas de la FDA de Wegovy y Zepbound.</li>
+    <li>Ley General de Salud, arts. 226, 300, 306, 310 y 311.</li>
     <li>COFEPRIS, aviso de riesgo sobre Ozempic®, 25 ago. 2023.</li>
-    <li>NOM-008-SSA3-2017, para el tratamiento integral del sobrepeso y la obesidad.</li>
+    <li>Reglamento de la Ley General de Salud en Materia de Publicidad, art. 19.</li>
     <li>Ley Federal de Protección al Consumidor, art. 32.</li>
+    <li>Páginas oficiales: hespanol.com, centromedicoabc.com, hospitalangeles.com, medicasur.com.mx, hospitalsanangelinn.mx, content.tecsalud.mx, hospitalespuertadehierro.com.</li>
+    <li>Clivi, Nutrimind, Fitia, Manzana Verde, Jenny Light, Manyar, No Sugar, Gains Meals, True Dose y Habeats: sitios oficiales.</li>
+    <li>Planet Fitness, comunicado de PerksFest, 3 ago. 2026 (fragmento).</li>
+    <li>NOM-008-SSA3-2017, tratamiento integral del sobrepeso y la obesidad.</li>
+    <li>Ley Federal de Protección de Datos Personales en Posesión de los Particulares, DOF 20 mar. 2025, art. 8.</li>
     <li>NOM-004-SSA3-2012, del expediente clínico.</li>
   </ol>
 </section>

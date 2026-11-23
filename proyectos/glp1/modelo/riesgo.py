@@ -22,17 +22,17 @@ TRASPASO_EBITDA = 0.80         # supuesto: 80% del ingreso perdido cae a EBITDA 
 # --- Supuestos por escenario (fuente en el comentario) ---
 ESCENARIOS = {
     "Conservador": dict(
-        motivo_peso=0.209,   # HFA 2024, latinoamericanos activos urbanos que citan bajar de peso
+        motivo_peso=0.32,    # Mercado Fitness México: 32% de usuarios de gimnasio cita bajar de peso (respuesta múltiple)
         uso=[0.04, 0.05, 0.06],   # uso de GLP-1 en el segmento; ancla Worldpanel 3.8% de hogares (2026)
         sustitucion=0.08,    # mitad de la caída de afiliación de William Blair en ingreso alto
     ),
     "Base": dict(
-        motivo_peso=0.30,    # Life Time (30% lo pone primero); Mercado Fitness MX 32% (respuesta múltiple)
+        motivo_peso=0.45,    # Inferencia: fuerza de ventas de SW (bajar de peso, el objetivo más frecuente; 80-90% busca un cambio físico) acotada por Alfawaz 2018 (35%) y Eguchi 2023 (92.2% de quienes fijan meta de peso)
         uso=[0.06, 0.08, 0.12],   # concentración en NSE alto (NielsenIQ) + 5.7% de hogares que lo considera
         sustitucion=0.16,    # William Blair: afiliación en hogares >150k USD bajó de 53.5% a 45.0% (-16% relativo)
     ),
     "Acelerado": dict(
-        motivo_peso=0.32,    # Mercado Fitness México
+        motivo_peso=0.60,    # Cota alta: testimonio de campo de SW (80-90% busca un cambio físico) menos estética y masa muscular
         uso=[0.08, 0.12, 0.20],   # genéricos de semaglutida hacia 2029, pastillas; EE. UU. ya en 12% de adultos (KFF)
         sustitucion=0.25,    # WeightWatchers: suscriptores sin fármaco -25.4% en un año
     ),
