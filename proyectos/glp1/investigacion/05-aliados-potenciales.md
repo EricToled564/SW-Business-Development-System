@@ -242,3 +242,57 @@ Nota: los clubes Cumbres y Nave 01 Apodaca no tienen ninguno de estos hospitales
 - **Precio en México:** Premium **MXN 219 al mes / MXN 679 al año** (tabla de referencia 2025 publicada por Fitia: https://fitia.app/es/aprende/articulo/mejores-apps-de-nutricion-personalizada/). Un comparador externo reporta en 2026 precios mensuales de 115, 149 o 219 MXN, 3 meses 359, 6 meses 539, 12 meses 609-679 y familiar anual 1,029 MXN (SNIPPET-ONLY, https://calorix.ai/es/comparativas/precio-fitia/).
 - **Programa B2B o para gimnasios:** NOT FOUND en las páginas leídas.
 - **Lectura:** la mejor candidata de app de consumo en español (origen latinoamericano, precio local bajo, foco en recomposición corporal). No es una plataforma médica: no sirve para referencia clínica.
+
+#### MyFitnessPal · app de registro de alimentos (Estados Unidos) — VERIFIED (función GLP-1) / SNIPPET-ONLY (precio en México)
+- **Qué ofrece:** registro de alimentos y macros; desde 2026, «GLP-1 Support» (dosis, sitio de inyección, recordatorios, efectos secundarios). Fuente: https://blog.myfitnesspal.com/glp-1-support-medication-tracking/
+- **Limitación para México:** la página de soporte indica «GLP-1 tracking is available only to users in the United States (iOS and Android) and in Canada (iOS), with the app set to English» (SNIPPET-ONLY: el extracto se vio en el buscador; la página devolvió 403 a la lectura directa; https://support.myfitnesspal.com/hc/en-us/articles/40936733058445-GLP-1-Support).
+- **Precio:** EE. UU. USD 19.99 al mes / USD 79.99 al año (https://www.myfitnesspal.com/premium, SNIPPET-ONLY). México: Premium anual 899 y 1,599 MXN según un comparador de terceros (SNIPPET-ONLY, https://www.mycallie.app/es/blog/best-calorie-tracker-app-in-spanish).
+- **Usuarios en México / B2B con gimnasios:** NOT FOUND. Un medio especializado reporta una alianza MyFitnessPal-Calm (SNIPPET-ONLY, mercadofitness.com).
+- **Lectura:** marca conocida, pero su componente GLP-1 no opera en México ni en español: candidato débil.
+
+#### Noom / Noom Med (GLP-1) — NOT FOUND en México
+- Noom Med es una plataforma de telemedicina GLP-1 que opera bajo regulación de EE. UU. (página https://www.noom.com/med/ leída: texto legal de FDA y farmacias estadounidenses). No se localizó oferta de Noom Med ni de su programa acompañante GLP-1 para México.
+
+#### Lifesum y Yazio — SNIPPET-ONLY
+- Apps europeas con versión en español. Precio anual en México: Yazio 299-699 MXN (12 meses) según comparador de terceros (SNIPPET-ONLY, mycallie.app). Lifesum: precio en MXN NOT FOUND (solo precios en USD de App Store EE. UU., SNIPPET-ONLY). Programa GLP-1, B2B o con gimnasios en México: NOT FOUND.
+
+#### Senda Health — no opera en México
+- Clínica digital de obesidad que conecta con endocrinos, nutricionistas, psicólogos y expertos en actividad física **colegiados en España**; precios en euros (0 €, 79 €, 99 €). Fuente: https://www.sendahealth.com/ (VERIFIED). Existe ficha en la App Store de México (SNIPPET-ONLY), pero el servicio clínico es español. Útil solo como modelo de referencia (incluye «expertos en actividad física» dentro del equipo clínico).
+
+#### Nutrimind · software y app para nutriólogos (México) — VERIFIED
+- **Qué ofrece:** software de consulta para nutriólogos con dietas automáticas (por gramaje y por equivalentes), tipos de paciente «Deportista / Control de Peso / Clínico / Pediátrico», catálogo de rutinas de entrenamiento y app gratuita de seguimiento para pacientes. «Somos una empresa de México», operación 2007-2026. Fuente: https://nutrimind.net/
+- **Escala:** «Usado por más de 70,000 profesionales y 1 millón de pacientes desde 2009»; app de seguimiento con «1 M+ descargas» y 4.9 en Play Store (17.4 mil opiniones) (misma fuente).
+- **Precio:** «Pago único y de por vida» (monto no publicado en la portada). Sección «Para empresas» enlazada (contenido no leído).
+- **Lectura:** no es un servicio al consumidor sino la herramienta de una red de nutriólogos. Puede servir para estandarizar el plan nutricional que entreguen nutriólogos en club o aliados, con el paciente en una sola app.
+
+#### Otras plataformas mexicanas de nutrición en línea
+- Clínica Digital (nutriólogos en línea; https://www.clinicadigital.mx/nutriologos-en-linea) y FitForMe (nutrióloga en línea por videollamada; https://fitforme.fit/nutriologa-en-linea): SNIPPET-ONLY, operación individual o pequeña; sin datos de escala ni B2B.
+- Búsquedas «clínica digital obesidad México» y «GLP-1 telemedicina México»: Clivi fue la única plataforma mexicana con GLP-1, escala publicada y programa empresarial localizada en esta investigación.
+
+---
+
+## Parte D · Comida saludable a domicilio y planes de alimentación preparados
+
+#### Manzana Verde · comida saludable con delivery (multiciudad) — VERIFIED
+- **Sitio:** https://manzanaverde.la/mexico
+- **Cobertura:** CDMX y Estado de México (18 zonas, 11 con pedido inmediato), Guadalajara (8 zonas) y Monterrey (7 zonas; menciona San Pedro Garza García, Valle Oriente y Cumbres). Opera también en Perú y Colombia (locales alternos del sitio). «6 ciudades», «+5 millones de pedidos entregados», «+200 mil clientes» (portada; cifras del grupo, no solo México).
+- **Planes (MXN):** platos «desde $99»; plan «Ahorro» **$1,910** por $1,980 de saldo, 60 días, ≈20 comidas, entrega gratis; plan «Flexible» **$2,448** por $2,673 de saldo, 90 días, ≈27 comidas. Recarga sin cobro automático. Los mismos dos planes se publican para Monterrey (https://manzanaverde.la/mexico/monterrey/planes).
+- **Alto en proteína / nutricionista:** «Alto en proteína (~32g promedio)», platos de 400-800 kcal con calorías y proteína visibles antes de pedir; la descripción del sitio dice «Calorías calculadas por nutricionistas».
+- **Programa empresarial:** enlace «Empresa» en el sitio (contenido no leído). **Alianza con gimnasios:** NOT FOUND.
+- **Lectura:** el único proveedor localizado con cobertura simultánea en las tres plazas grandes de Sports World (Valle de México, Monterrey, Guadalajara), con proteína declarada por plato. Encaja con el patrón de comida pequeña y alta en proteína que suelen necesitar los usuarios de GLP-1.
+
+#### Manyar · comida saludable a domicilio con nutrióloga (CDMX y área metropolitana) — VERIFIED
+- **Sitio:** https://www.manyar.com.mx/plan-original/ (modificada el 17 de abril de 2026).
+- **Cobertura:** Santa Fe, Bosques de las Lomas, Interlomas, Bosque Real, Lomas de Chapultepec, Polanco, Reforma, Condesa/Roma, Del Valle/Narvarte, Mixcoac, San Ángel, Copilco, El Pedregal, Vallejo, Lindavista, Ciudad Satélite, Lomas Verdes, Zona Esmeralda. Coincide con la zona de influencia de unos 25 de los 31 clubes del Valle de México (cruce por colonia; ESTIMADO).
+- **Planes (MXN, desayuno + comida + cena + 2 snacks):** 20 días $380/día; 40 días $370/día; 60 días $360/día; Personalizado $419/día. Inscripción única $600 «incluye el diagnóstico inicial de la nutrióloga»; compra única de tuppers y loncheras.
+- **Nutricionista:** «Plan 100% personalizado con nutrióloga incluida». Alto en proteína: no se publica un plan específico.
+- **Alianza con gimnasios o empresas:** NOT FOUND.
+- **Lectura:** cobertura casi idéntica al mapa de clubes de Sports World en el Valle de México; modelo de plan diario completo (≈ MXN 10,800-12,570 al mes a precio de lista; ESTIMADO = precio diario × 30).
+
+#### Jenny Light · nutriólogas + comida a domicilio (CDMX y área metropolitana) — VERIFIED
+- **Sitio:** https://jennylight.com.mx/comida-saludable-a-domicilio-cdmx-planes/ (actualizada el 11 de noviembre de 2026).
+- **Cobertura y sucursales:** sucursales en Colonia del Valle, San Jerónimo, Arboledas, Interlomas y Satélite; entrega según zona.
+- **Planes (MXN):** programa con comida a domicilio (desayuno, comida y cena 7 días + consulta) «aprox. $380 MXN al día (referencial)»; valoración inicial $850, reembolsable al contratar; consulta individual, plan mensual (4 consultas semanales, **composición corporal**, acceso a platillos) y trimestral (12 consultas, composición corporal mensual): cotización por WhatsApp. Carta de más de 120 platillos.
+- **Nutricionista / proteína:** menús diseñados y supervisados por nutriólogas tituladas, balanceados «para asegurar que pierdas grasa, no músculo».
+- **Alianza con gimnasios o empresas:** NOT FOUND.
+- **Lectura:** combina consulta con nutrióloga, medición de composición corporal y comida, con sucursales en zonas donde hay clubes (Del Valle → Félix Cuevas, Amores, Xola; San Jerónimo → San Jerónimo; Interlomas → Espacio y Paseo Interlomas; Satélite → Satélite). Es la candidata más completa para un esquema «nutrióloga + comida» en el Valle de México.

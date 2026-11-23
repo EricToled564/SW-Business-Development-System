@@ -275,3 +275,31 @@ Estado: en curso (se escribe punto por punto).
   - Dosis en DT2 (Tabla 2, textual): «Minimum of 150 to 300 min/wk of moderate activity or 75 to 150 min of vigorous activity»; fuerza «2-3 d/wk, but never on consecutive days».
   - Lectura del texto completo: 37 % (100 000 de 267 407 caracteres).
 - Guía de seguridad de ejercicio específica para personas con GLP-1 (sin diabetes) emitida por una sociedad: NOT FOUND.
+
+---
+
+## 6. Regulación mexicana que acota la comunicación y la operación del club
+
+### 6.1 Ley General de Salud (LGS) · publicidad de medicamentos — VERIFIED
+
+Fuente: texto vigente publicado por la Cámara de Diputados, «Últimas reformas publicadas DOF 15-01-2026». https://www.diputados.gob.mx/LeyesBiblio/pdf/LGS.pdf
+
+- **Art. 226** clasifica los medicamentos para su venta; las fracciones I a IV requieren receta médica; V y VI son de venta sin receta. (Nota: la clasificación específica de semaglutida y tirzepatida en México no se verificó en un documento de COFEPRIS en esta ronda — NOT FOUND; en el mercado se dispensan con receta.)
+- **Art. 300** (textual): «es competencia de la Secretaría de Salud la autorización de la publicidad que se refiera a la salud, al tratamiento de las enfermedades, [...] al ejercicio de las disciplinas para la salud y a los productos y servicios a que se refiere esta Ley.»
+- **Art. 306** (textual), requisitos de toda publicidad de salud: «I. La información contenida en el mensaje sobre calidad, origen, pureza, conservación, propiedades nutritivas y beneficios de empleo deberá ser comprobable; II. El mensaje deberá tener contenido orientador y educativo; [...] V. El mensaje no deberá desvirtuar ni contravenir los principios, disposiciones y ordenamientos que en materia de prevención, tratamiento de enfermedades o rehabilitación, establezca la Secretaría de Salud».
+- **Art. 310** (textual): la publicidad de medicamentos se clasifica en «I. Publicidad dirigida a profesionales de la salud, y II. Publicidad dirigida a la población en general.» y «La publicidad dirigida a la población en general sólo se efectuará sobre medicamentos de libre venta y remedios herbolarios, y deberá incluirse en ella [...] el texto: Consulte a su médico».
+- **Art. 311** (textual): «Sólo se autorizará la publicidad de medicamentos con base en los fines con que estos estén registrados ante la Secretaría de Salud.»
+- **Lectura para el club (interpretación, no dictamen jurídico):** un medicamento de receta no puede publicitarse a la población. Un anuncio del club que nombre una marca («Ozempic», «Wegovy», «Mounjaro», «Zepbound») o el principio activo con fines de promoción podría interpretarse como publicidad indirecta de un medicamento de receta (el art. 301 somete a autorización la publicidad que promueva «en forma directa o indirecta» el uso de insumos para la salud). Además, las marcas son propiedad de sus titulares. Recomendación prudente: hablar de «personas en tratamiento médico para el control de peso» o «personas que usan medicamentos para la obesidad indicados por su médico», sin marcas, y validar con un abogado sanitario.
+
+### 6.2 Reglamento de la LGS en Materia de Publicidad — VERIFIED
+
+Fuente: Reglamento publicado en el DOF el 4 de mayo de 2000; «Última reforma publicada DOF 08-09-2022». https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGS_MP.pdf
+
+- **Art. 6** (textual): la publicidad no deberá «I. Atribuirles cualidades preventivas, terapéuticas, rehabilitatorias, nutritivas, estimulantes o de otra índole, que no correspondan a su función o uso [...]; II. Indicar o sugerir que el uso o consumo de un producto o la prestación de un servicio, es un factor determinante para modificar la conducta de las personas».
+- **Art. 7** (textual): «La publicidad será orientadora y educativa respecto del producto o servicio de que se trate».
+- **Art. 16** (textual): «La publicidad de la prestación de servicios de salud informará al público sobre el tipo, características y finalidades de los servicios de que se trate y las modalidades generales de acceso a los mismos.»
+- **Art. 18** (textual): «No se autorizará la publicidad de la prestación de servicios de salud cuando: [...] II. Ofrezca tratamientos preventivos, curativos o rehabilitatorios de naturaleza médica o paramédica cuya eficacia no haya sido comprobada científicamente, o III. No se acredite que el establecimiento o persona que preste el servicio cuente con el personal capacitado, los recursos técnicos y materiales adecuados».
+- **Art. 19** (textual): quienes ejerzan actividades profesionales, técnicas y auxiliares de la salud «deberán expresar en la publicidad que realicen [...] la institución educativa que les expidió el título, diploma o certificado correspondiente y, en su caso, el número de cédula profesional.» → Si el club anuncia el servicio de nutrición, cada nutriólogo debe aparecer con institución y número de cédula.
+- **Art. 40, fracc. II** (textual): la publicidad dirigida a la población en general comprende «a. La difusión que se realice de los medicamentos que para adquirirse no requieren receta médica».
+- **Art. 79, fracc. I** (textual): «Requiere permiso de la Secretaría la publicidad relativa a: I. Prestación de servicios de salud, salvo cuando se trate de servicios otorgados en forma individual».
+- **Lectura para el club (interpretación):** si el programa se comunica como servicio de salud (nutrición clínica, tratamiento de la obesidad), la publicidad podría requerir permiso de COFEPRIS; si se comunica como servicio de acondicionamiento físico y orientación, con el componente nutricional prestado por profesionales con cédula, el riesgo baja. Validar con abogado sanitario.

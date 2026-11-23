@@ -8,7 +8,7 @@ Convención de etiquetas:
 - **SNIPPET-ONLY**: cifra vista solo en un fragmento de resultado de búsqueda; requiere confirmación.
 - **NOT FOUND**: no localizada; se listan los lugares consultados.
 
-Estado: en curso (se escribe punto por punto).
+Estado: completo (secciones 1 a 6). Ver pendientes al final.
 
 ---
 
@@ -258,3 +258,63 @@ Reuters (6 nov. 2025, SNIPPET-ONLY): «It reduces the prices to between $149 and
 | Budini et al., eClinicalMedicine 2026 | «At 1 year post-cessation, 60% of the weight lost during treatment was regained» | Fragmento | https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(26)00043-X/fulltext | SNIPPET-ONLY |
 
 **Lectura para el riesgo de sustitución:** la mayoría de quienes inician un GLP-1 para obesidad sin diabetes lo abandona en un año (64.8% en Truveta; 37–67% según cohorte y año de inicio) y recupera la mayor parte del peso en 12–20 meses. Esto convierte al usuario de GLP-1 en un flujo rotativo, no en un acervo estable, y genera una población creciente de exusuarios con recuperación de peso: un segmento que el club puede captar con una oferta de mantenimiento y de composición corporal (inferencia, no dato).
+
+---
+
+## 6. Evaluación crítica de la cifra «710,000 usuarios activos de GLP-1 en México en 2026 y 1.82 millones en 2029»
+
+### 6.1 ¿Existe una fuente pública?
+
+**NOT FOUND.** Búsquedas exactas de «710,000» / «710 mil» y «1.82 millones» / «1.82 million» junto con GLP-1 y México no devolvieron ninguna fuente pertinente (los resultados se refieren a gas LP, inversión energética y otros temas). Tampoco aparece en IQVIA, NielsenIQ, Worldpanel, Ipsos, Novo Nordisk, Eli Lilly, El Economista, El Financiero ni Expansión, en lo consultado. **La cifra debe tratarse como una estimación interna sin fuente trazable.** Lo que sigue la contrasta con tres métodos independientes.
+
+### 6.2 Triangulación (todas las cifras de este apartado son **estimaciones propias**, salvo que se indique «dato»)
+
+Supuestos explícitos:
+- Adultos en México: 83.26 millones (dato, ENSANUT Continua 2023). Adultos con obesidad: 38.9% → **32.4 millones** (dato: cuadro 9.1.1, N = 32,426 miles).
+- Costo anual por paciente a precio de farmacia: **USD 2,650–5,400** (de ~$4,000 a ~$8,100 MXN al mes, §1.3, con tipo de cambio supuesto de $18 MXN/USD; el FIX del 20 mar. 2026 fue $17.8998, según Subjetivo).
+- Tamaño del mercado 2025 (estimaciones de consultoras, SNIPPET-ONLY): USD 293.5 millones (Grand View), USD 355 millones (Whitepaper.mx), USD 434.69 millones (IMARC). Incluyen diabetes.
+- Crecimiento 2026: unidades +130% (dato NIQ, periodo no indicado; se aplica como si fuera anual).
+
+**Método A · ventas (lado de la oferta).**
+| Paso | Bajo | Alto |
+|---|---|---|
+| Mercado 2025 (USD) | 293.5 M | 434.7 M |
+| ÷ costo anual por paciente (USD) | 5,400 | 2,650 |
+| = pacientes-año equivalentes 2025 | **~54,000** | **~164,000** |
+| × 2.3 (unidades +130%) = pacientes-año 2026 (≈ usuarios activos promedio en cualquier momento) | **~125,000** | **~377,000** |
+| × ~2 por baja persistencia (usuarios únicos en el año ≈ el doble de pacientes-año si la duración media es ~6 meses; supuesto basado en §5.1) | ~250,000 | ~750,000 |
+
+Si el valor de mercado de las consultoras está a precio de fabricante (más bajo que el de farmacia), los pacientes-año suben ~1.4× (supuesto de 30% de margen de canal): 2026 ≈ 175,000–530,000 activos. Para que hubiera 710,000 usuarios **activos** a precio de farmacia, el gasto anual tendría que ser de **USD 1.9–3.8 mil millones**, es decir, 4 a 13 veces las estimaciones de mercado de 2025.
+
+**Método B · declaración del fabricante.** Novo Nordisk México (dato, 11 nov. 2026): mercado potencial de 7.5 millones de pacientes, «menos de 1 por ciento recibe tratamiento» → **menos de ~75,000** personas en tratamiento contra la obesidad bajo la definición de Novo. 710,000 equivaldría a 9.5% de esa base, diez veces lo que declara el fabricante. Advertencia: no se sabe si el «<1%» incluye a quienes usan Ozempic o Mounjaro fuera de indicación, ni si cuenta tirzepatida.
+
+**Método C · encuestas (lado de la demanda).**
+| Encuesta | Dato | Proyección a la población | Lectura |
+|---|---|---|---|
+| NIQ hogares (1.1% «ha utilizado o utiliza») | dato | 1.1% × 83.26 M = **~0.92 M que alguna vez lo usaron** | techo para usuarios actuales; los actuales serían una fracción |
+| Worldpanel (3.8% de hogares con ≥1 usuario, universo implícito ~25 M hogares) | dato | **~0.95 M hogares con al menos una persona usuaria** | ≥0.95 M usuarios si «utiliza» es uso actual; incluye diabetes |
+| NIQ Consumer Outlook (14% «actualmente») | dato | 14% × 83.26 M = 11.7 M | **inverosímil**: exigiría >USD 30 mil millones al año; refleja un panel en línea de NSE alto |
+
+**Síntesis.**
+- La oferta (ventas) sostiene **~125,000–380,000 usuarios activos** promedio en 2026 (hasta ~530,000 si el valor de mercado está a precio de fabricante) y **~250,000–750,000 usuarios únicos en el año**.
+- El fabricante sugiere **<75,000** en tratamiento para obesidad (definición estrecha).
+- Las encuestas de hogares sugieren **~0.9–1.0 millones** de personas o de hogares con uso reciente, lo que incluiría diabetes, mercado gris (§1.4) y uso esporádico.
+- **710,000 «activos» no es contradicho por las encuestas de hogares, pero sí excede lo que sostienen las ventas formales (2–6×) y lo que declara Novo (~10×).** Es defendible solo como «personas que usaron un GLP-1 en algún momento de 2026, incluyendo diabetes y mercado informal», no como usuarios activos simultáneos para bajar de peso.
+
+### 6.3 La proyección a 2029 (1.82 millones)
+
+- Implica un crecimiento compuesto de **36.9% anual** 2026–2029 (cálculo: (1.82/0.71)^(1/3) − 1).
+- Las consultoras proyectan crecimientos **en valor** mucho menores (cálculo sobre sus cifras, SNIPPET-ONLY): IMARC 8.1% anual (2025–2034), Whitepaper.mx 13.8% (2025–2033), Grand View 19.3% (2025–2033). El volumen puede crecer más que el valor si bajan los precios.
+- Referencia Morgan Stanley (dato): caso base de 10% de la población con obesidad o diabetes tratada fuera de EE. UU. en **2035**. Aplicado solo a los 32.4 M de adultos con obesidad → ~3.2 M en 2035; una trayectoria geométrica desde 0.71 M en 2026 daría **~1.2 M en 2029** (desde 0.3 M daría ~0.66 M). 1.82 M en 2029 queda **~50% por encima** de esa trayectoria (inferencia).
+- Dos catalizadores podrían acercar la cifra: (a) genéricos de semaglutida, que según Dilameg llegarían «hasta 2029» y abaratarían 50–70% (dato, §1.2); (b) la incorporación de semaglutida al Compendio Nacional (DOF, 10 nov. 2026) si el IMSS/ISSSTE la compran (§1.5). Ninguno está confirmado para 2027–2028.
+- 1.82 M equivaldría a 2.2% de los adultos y 5.6% de los adultos con obesidad (cálculo).
+
+### 6.4 Recomendación para el documento interno
+
+1. No presentar «710,000» ni «1.82 millones» como datos: no tienen fuente pública. Si se conservan, etiquetarlos como **escenario alto** y explicar el método.
+2. Usar un **rango con fuente**: 2026, **~0.13–0.38 M usuarios activos** (ventas formales) a **~0.9–1.0 M personas con uso reciente** (encuestas de hogares). 2029: **~0.7–1.3 M** como escenario central (trayectoria compatible con Morgan Stanley), con 1.8 M como escenario alto condicionado a genéricos o compra pública.
+3. Para el riesgo de un club premium, lo relevante no es el total nacional sino el segmento: el uso «se concentra, principalmente, en los de niveles económicos altos» (dato, NIQ). Una penetración de 3–5% en NSE alto urbano (supuesto coherente con Worldpanel 3.8% de hogares) es el orden de magnitud a modelar en la base de socios, junto con un abandono de ~65% al año (§5.1) que vuelve al usuario un flujo y no un acervo.
+
+---
+
+Estado: completo al 23 nov. 2026. Pendiente de verificación en fuente primaria: DOF del 10 nov. 2026 (Compendio Nacional), autorización COFEPRIS de tirzepatida para obesidad, informe regional de NIQ con el 14%, tamaño de muestra de la encuesta de hogares de NIQ y cifras de IQVIA México.
