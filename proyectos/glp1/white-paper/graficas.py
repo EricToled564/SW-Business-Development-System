@@ -206,7 +206,7 @@ for i, (a, b, d, col) in enumerate(fases):
 svg("fases", 640, 142, c, "Las cuatro fases del programa")
 
 # 15. Las 51 clases por papel en el programa (barra apilada)
-papeles = [("Fuerza", 17, ROJO), ("Cardio de bajo impacto", 9, OSCURO), ("Alta intensidad", 6, "#a3131a"), ("Movilidad", 7, GRIS), ("Baile y comunidad", 12, "#c9ced3")]
+papeles = [("Conserva músculo", 5, ROJO), ("Complementa la fuerza", 12, OSCURO), ("Actividad aeróbica", 9, "#a3131a"), ("Alta intensidad", 6, GRIS), ("Sin efecto directo", 19, "#c9ced3")]
 c = []; x = 0
 for k, (lab, n, col) in enumerate(papeles):
     w = n / 51 * 620
