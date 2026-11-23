@@ -21,7 +21,7 @@ Leído completo: 8 de 8 páginas.
 10. **Fuentes escasas** (seis) y sin fecha de consulta.
 
 ## Correcciones de la versión 2 (23 de noviembre de 2026, por observación de Eric)
-1. **Tesis invertida en la v1.** La v1 decía que Sports World «pierde si sigue vendiendo solo bajar de peso». Sports World no comunica bajar de peso (0.02% de presencia en 932,300 búsquedas al mes; «el objetivo que no se atiende»). La v2 parte de ahí: el medicamento ocupa primero la mayor demanda del fitness, la que Sports World no atiende.
+1. **Tesis invertida en la v1.** La v1 decía que Sports World «pierde si sigue vendiendo solo bajar de peso». Sports World no comunica bajar de peso (0.02% de presencia en 932,300 búsquedas al mes; «el objetivo que no se atiende»). La v2 parte de ahí: Sports World atiende a quien quiere bajar de peso (su cliente más frecuente) pero no lo publicita, y el medicamento sí está en esa conversación. Corrección posterior: la v2 decía «no la atiende»; lo correcto es «no lo comunica».
 2. **Destinatario.** La v1 pedía aprobaciones a un comité. La v2 es una recomendación de la consultoría para consideración del equipo de marketing, con sección de comunicación.
 3. **Supuesto de motivo recalibrado** de 20.9-32% a 32/45/60% con el testimonio de la fuerza de ventas (nota 08). Base: 3,059 membresías y $44.3 mdp 2027-2029.
 4. **Formato.** Menos texto, una idea por página, 17 gráficas y pictogramas generados desde el modelo (`white-paper/graficas.py`).
