@@ -43,13 +43,21 @@ c.append(t(10, 90, "8 a 9 de cada 10 prospectos llegan buscando un cambio físic
 c.append(t(10, 108, "Bajar de peso es el objetivo más frecuente", 12, SUAVE))
 svg("pictograma-cambio-fisico", 480, 116, c, "Ocho a nueve de cada diez prospectos buscan un cambio físico")
 
-# 2. Demanda «bajar de peso» frente a presencia de Sports World
-c = [t(0, 16, "Búsquedas al mes sobre bajar de peso en México", 12, SUAVE),
-     f'<rect x="0" y="26" width="600" height="34" fill="{OSCURO}"/>', t(10, 49, "932,300 búsquedas al mes · la intención de mayor volumen del fitness en México", 13, "#fff", "700"),
-     t(0, 90, "Palabras clave de ese universo en las que aparece Sports World", 12, SUAVE),
-     f'<rect x="0" y="100" width="600" height="34" fill="{CLARO}"/>', f'<rect x="0" y="100" width="3" height="34" fill="{ROJO}"/>',
-     t(12, 123, "2 de 10,000 = 0.02%", 13, ROJO, "700")]
-svg("demanda-bajar-de-peso", 600, 140, c, "Demanda de bajar de peso frente a presencia de Sports World")
+# 2. Embudo del riesgo, escenario base 2029: socios y altas
+EMB = R["embudo"]["Base"][-1]
+def embudo_svg(x0, titulo, pasos):
+    anchos = [270, 210, 150, 96]
+    cols = [GRIS, OSCURO, ROJO, ROJO]
+    out = [t(x0 + 135, 16, titulo, 13, TINTA, "700", "middle")]
+    for k, ((lab, v), w) in enumerate(zip(pasos, anchos)):
+        y = 28 + k * 52
+        x = x0 + (270 - w) / 2
+        out += [f'<rect x="{x:.1f}" y="{y}" width="{w}" height="42" rx="4" fill="{cols[k]}"/>',
+                t(x0 + 135, y + 19, fmt(v), 15, "#fff", "700", "middle"), t(x0 + 135, y + 35, lab, 10.5, "#fff", "400", "middle")]
+    return out
+c = embudo_svg(0, "Socios actuales", [("socios activos", 97046), ("buscan bajar de peso", EMB["socios_buscan_peso"]), ("usan GLP-1: en riesgo", EMB["socios_en_riesgo"]), ("cancelan", EMB["socios_cancelan"])])
+c += embudo_svg(330, "Altas del año", [("altas al año", 66379), ("buscan bajar de peso", EMB["altas_buscan_peso"]), ("usan GLP-1: en riesgo", EMB["altas_en_riesgo"]), ("no se inscriben", EMB["altas_no_ocurren"])])
+svg("embudo-riesgo", 600, 240, c, "Socios y altas que buscan bajar de peso, en riesgo y perdidos, escenario base 2029")
 
 # 3. Precio mensual del tratamiento frente a la cuota de Sports World
 filas = [("Wegovy 2.4 mg, precio de lista", 8167, OSCURO), ("Mounjaro 2.5 mg", 6310, OSCURO), ("Wegovy 2.4 mg, en oferta", 4900, ROJO), ("Cuota promedio de Sports World", 1508, GRIS)]

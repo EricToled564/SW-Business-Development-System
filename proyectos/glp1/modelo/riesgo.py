@@ -65,6 +65,23 @@ def simular(p):
     return out
 
 
+def embudo(p):
+    """Cuántas personas buscan bajar de peso, cuántas están en riesgo (usan GLP-1) y cuántas se pierden, por año."""
+    filas = []
+    for i, anio in enumerate(ANIOS):
+        u = p["uso"][i]
+        filas.append(dict(
+            anio=anio,
+            socios_buscan_peso=round(CLIENTES * p["motivo_peso"]),
+            socios_en_riesgo=round(CLIENTES * p["motivo_peso"] * u),
+            socios_cancelan=round(CLIENTES * p["motivo_peso"] * u * p["sustitucion"]),
+            altas_buscan_peso=round(ALTAS_ANUALES * p["motivo_peso"]),
+            altas_en_riesgo=round(ALTAS_ANUALES * p["motivo_peso"] * u),
+            altas_no_ocurren=round(ALTAS_ANUALES * p["motivo_peso"] * u * p["sustitucion"]),
+        ))
+    return filas
+
+
 def sensibilidad():
     """Rejilla 2029: ingreso perdido (mdp) según uso de GLP-1 en 2029 y tasa de sustitución.
     El modelo es multiplicativo: las tres palancas pesan lo mismo; por eso se muestra una rejilla y no un tornado."""
@@ -87,6 +104,7 @@ if __name__ == "__main__":
                            TRASPASO_EBITDA=TRASPASO_EBITDA),
         "escenarios": {n: simular(p) for n, p in ESCENARIOS.items()},
         "rejilla_2029_base": sensibilidad(),
+        "embudo": {n: embudo(p) for n, p in ESCENARIOS.items()},
     }
     for n, filas in resultado["escenarios"].items():
         acum = sum(f["ventas_no_realizadas"] + f["cancelaciones_adicionales"] for f in filas)
@@ -94,6 +112,8 @@ if __name__ == "__main__":
         print(f"\n{n}: membresías perdidas 2027-2029 = {acum:,}; ingreso perdido acumulado = {ing:,.1f} mdp")
         for f in filas:
             print("  ", f)
+    for n, filas in resultado["embudo"].items():
+        print("Embudo", n, filas[-1])
     print("\nParámetros:", resultado["parametros"])
     print("Rejilla 2029 (ingreso perdido, mdp):", resultado["rejilla_2029_base"])
     json.dump(resultado, open("resultado.json", "w"), ensure_ascii=False, indent=1)

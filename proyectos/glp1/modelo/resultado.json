@@ -121,5 +121,94 @@
    "sust_16%": 39.8,
    "sust_25%": 62.3
   }
+ },
+ "embudo": {
+  "Conservador": [
+   {
+    "anio": 2027,
+    "socios_buscan_peso": 31055,
+    "socios_en_riesgo": 1242,
+    "socios_cancelan": 99,
+    "altas_buscan_peso": 21241,
+    "altas_en_riesgo": 850,
+    "altas_no_ocurren": 68
+   },
+   {
+    "anio": 2028,
+    "socios_buscan_peso": 31055,
+    "socios_en_riesgo": 1553,
+    "socios_cancelan": 124,
+    "altas_buscan_peso": 21241,
+    "altas_en_riesgo": 1062,
+    "altas_no_ocurren": 85
+   },
+   {
+    "anio": 2029,
+    "socios_buscan_peso": 31055,
+    "socios_en_riesgo": 1863,
+    "socios_cancelan": 149,
+    "altas_buscan_peso": 21241,
+    "altas_en_riesgo": 1274,
+    "altas_no_ocurren": 102
+   }
+  ],
+  "Base": [
+   {
+    "anio": 2027,
+    "socios_buscan_peso": 43671,
+    "socios_en_riesgo": 2620,
+    "socios_cancelan": 419,
+    "altas_buscan_peso": 29871,
+    "altas_en_riesgo": 1792,
+    "altas_no_ocurren": 287
+   },
+   {
+    "anio": 2028,
+    "socios_buscan_peso": 43671,
+    "socios_en_riesgo": 3494,
+    "socios_cancelan": 559,
+    "altas_buscan_peso": 29871,
+    "altas_en_riesgo": 2390,
+    "altas_no_ocurren": 382
+   },
+   {
+    "anio": 2029,
+    "socios_buscan_peso": 43671,
+    "socios_en_riesgo": 5240,
+    "socios_cancelan": 838,
+    "altas_buscan_peso": 29871,
+    "altas_en_riesgo": 3584,
+    "altas_no_ocurren": 574
+   }
+  ],
+  "Acelerado": [
+   {
+    "anio": 2027,
+    "socios_buscan_peso": 58228,
+    "socios_en_riesgo": 4658,
+    "socios_cancelan": 1165,
+    "altas_buscan_peso": 39827,
+    "altas_en_riesgo": 3186,
+    "altas_no_ocurren": 797
+   },
+   {
+    "anio": 2028,
+    "socios_buscan_peso": 58228,
+    "socios_en_riesgo": 6987,
+    "socios_cancelan": 1747,
+    "altas_buscan_peso": 39827,
+    "altas_en_riesgo": 4779,
+    "altas_no_ocurren": 1195
+   },
+   {
+    "anio": 2029,
+    "socios_buscan_peso": 58228,
+    "socios_en_riesgo": 11646,
+    "socios_cancelan": 2911,
+    "altas_buscan_peso": 39827,
+    "altas_en_riesgo": 7965,
+    "altas_no_ocurren": 1991
+   }
+  ]
  }
 }
