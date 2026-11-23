@@ -415,3 +415,6 @@ Estado: completo al 23 de noviembre de 2026. Pendientes declarados: programas ho
 - **In-Joy** (Guadalajara) — SNIPPET-ONLY: «Atención nutricional + dieta personalizada» con entrega.
 - **Manyar** (Valle de México) — VERIFIED: «Un nutriólogo especializado armará tu dieta»; consulta inicial; desde $380 al día. Descartado como primera opción: anuncia «hasta 5 kilos menos en 10 días», incompatible con el estándar de afirmaciones comprobables.
 - **Manzana Verde** (CDMX, Guadalajara, Monterrey) — VERIFIED: comida con ~32 g de proteína y «calorías calculadas por nutricionistas»; sin consulta personal publicada → solo comida, no servicio de nutrición.
+
+### Decisión de Eric (23 nov. 2026)
+Grupo Ángeles es suficiente como red médica. Christus Muguerza se retira del documento; Clivi queda solo para los 6 clubes fuera de las zonas de Grupo Ángeles (Saltillo, Mérida, Toluca-Metepec, Aguascalientes, Hermosillo y Veracruz).
