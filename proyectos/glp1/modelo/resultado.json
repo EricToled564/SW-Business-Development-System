@@ -1,0 +1,125 @@
+{
+ "parametros": {
+  "CLIENTES": 97046,
+  "DESERCION_BRUTA": 0.057,
+  "ARPU": 1508,
+  "ALTAS_ANUALES": 66379,
+  "INSCRIPCION_POR_ALTA": 894,
+  "TRASPASO_EBITDA": 0.8
+ },
+ "escenarios": {
+  "Conservador": [
+   {
+    "anio": 2027,
+    "ventas_no_realizadas": 44,
+    "cancelaciones_adicionales": 65,
+    "socios_faltantes_dic": 81,
+    "ingreso_perdido_mdp": 0.9,
+    "pct_ingreso": 0.04,
+    "ebitda_perdido_mdp": 0.7,
+    "pct_ebitda": 0.2
+   },
+   {
+    "anio": 2028,
+    "ventas_no_realizadas": 55,
+    "cancelaciones_adicionales": 81,
+    "socios_faltantes_dic": 141,
+    "ingreso_perdido_mdp": 2.2,
+    "pct_ingreso": 0.09,
+    "ebitda_perdido_mdp": 1.7,
+    "pct_ebitda": 0.5
+   },
+   {
+    "anio": 2029,
+    "ventas_no_realizadas": 67,
+    "cancelaciones_adicionales": 97,
+    "socios_faltantes_dic": 191,
+    "ingreso_perdido_mdp": 3.2,
+    "pct_ingreso": 0.14,
+    "ebitda_perdido_mdp": 2.5,
+    "pct_ebitda": 0.7
+   }
+  ],
+  "Base": [
+   {
+    "anio": 2027,
+    "ventas_no_realizadas": 191,
+    "cancelaciones_adicionales": 279,
+    "socios_faltantes_dic": 348,
+    "ingreso_perdido_mdp": 3.9,
+    "pct_ingreso": 0.17,
+    "ebitda_perdido_mdp": 3.2,
+    "pct_ebitda": 0.9
+   },
+   {
+    "anio": 2028,
+    "ventas_no_realizadas": 255,
+    "cancelaciones_adicionales": 373,
+    "socios_faltantes_dic": 636,
+    "ingreso_perdido_mdp": 9.6,
+    "pct_ingreso": 0.42,
+    "ebitda_perdido_mdp": 7.7,
+    "pct_ebitda": 2.2
+   },
+   {
+    "anio": 2029,
+    "ventas_no_realizadas": 382,
+    "cancelaciones_adicionales": 559,
+    "socios_faltantes_dic": 1010,
+    "ingreso_perdido_mdp": 15.9,
+    "pct_ingreso": 0.68,
+    "ebitda_perdido_mdp": 12.7,
+    "pct_ebitda": 3.6
+   }
+  ],
+  "Acelerado": [
+   {
+    "anio": 2027,
+    "ventas_no_realizadas": 425,
+    "cancelaciones_adicionales": 621,
+    "socios_faltantes_dic": 773,
+    "ingreso_perdido_mdp": 8.8,
+    "pct_ingreso": 0.38,
+    "ebitda_perdido_mdp": 7.0,
+    "pct_ebitda": 2.0
+   },
+   {
+    "anio": 2028,
+    "ventas_no_realizadas": 637,
+    "cancelaciones_adicionales": 932,
+    "socios_faltantes_dic": 1542,
+    "ingreso_perdido_mdp": 22.9,
+    "pct_ingreso": 0.99,
+    "ebitda_perdido_mdp": 18.3,
+    "pct_ebitda": 5.2
+   },
+   {
+    "anio": 2029,
+    "ventas_no_realizadas": 1062,
+    "cancelaciones_adicionales": 1553,
+    "socios_faltantes_dic": 2695,
+    "ingreso_perdido_mdp": 41.4,
+    "pct_ingreso": 1.78,
+    "ebitda_perdido_mdp": 33.1,
+    "pct_ebitda": 9.3
+   }
+  ]
+ },
+ "rejilla_2029_base": {
+  "uso_6%": {
+   "sust_8%": 4.0,
+   "sust_16%": 8.0,
+   "sust_25%": 12.5
+  },
+  "uso_12%": {
+   "sust_8%": 8.0,
+   "sust_16%": 15.9,
+   "sust_25%": 24.9
+  },
+  "uso_20%": {
+   "sust_8%": 13.3,
+   "sust_16%": 26.6,
+   "sust_25%": 41.5
+  }
+ }
+}
