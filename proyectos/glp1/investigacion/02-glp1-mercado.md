@@ -186,3 +186,42 @@ Datos adicionales (oct.–nov. 2025, VERIFIED): entre personas diagnosticadas co
 | 7 jul. 2026, revisado 8 sep. 2026 | Uso actual para bajar de peso **11% (2026)** vs. 3% (2024); uso alguna vez 15% vs. 6%; obesidad **36.8%** en 2026 | «adults who currently take GLP-1 medications for weight loss purposes has risen to 11% in 2026, up significantly from 3% in 2024»; «In 2026, the obesity rate is 36.8%, down from 39.9% in 2022»; n = 5,065 (28 may.–5 jun. 2026) | https://news.gallup.com/poll/712157/glp-usage-reaches-new-high.aspx | VERIFIED |
 
 Nota: la revisión de ponderación de sep. 2026 hace que la serie de 2026 (11%) no sea comparable con el 12.4% publicado en 2025 (VERIFIED: «updated Sept. 8, 2026, to reflect revised estimates after updating the weighting criteria»).
+
+### 4.3 RAND
+
+| Cifra | Cita | Fuente | Etiqueta |
+|---|---|---|---|
+| 11.8% de adultos de EE. UU. ha usado GLP-1 para bajar de peso (2025); 14% interesado; mujeres 50–64: 20.0% | «Surveying a nationally representative sample of 8,793 Americans, researchers found that 11.8 percent have used GLP-1 agonists and 14 percent say they are interested in using the drugs» (6 ago. 2025) | https://www.rand.org/news/press/2025/08/nearly-12-percent-of-americans-have-used-glp-1-weight.html ; informe: https://www.rand.org/pubs/research_reports/RRA4153-1.html | SNIPPET-ONLY |
+
+### 4.4 Gasto global y pronósticos de usuarios
+
+| Fuente | Cifra | Cita | URL | Etiqueta |
+|---|---|---|---|---|
+| IQVIA (abr. 2026) | Mercado global de medicamentos contra la obesidad: **USD 66 mil millones** (2025, precio de lista) → **USD 92 mil millones** (2026) → USD 105–200 mil millones «by 2027 and beyond» | «The global Obesity Medicines market reached $66 billion in list price sales value in 2025, according to IQVIA's ForecastLink, and is forecast to rise to $92 billion in 2026» | https://www.iqvia.com/locations/emea/blogs/2026/04/the-outlook-for-obesity-from-2026-to-2030 | VERIFIED |
+| IQVIA (abr. 2026) | Wegovy oral en EE. UU.: en 8 semanas ~1/3 de las nuevas recetas de marca, mayoría en pago de bolsillo; ~2/3 del volumen, **pacientes nuevos en GLP-1** | «around two-thirds of volume are users new to any GLP-1 therapy, suggesting that convenience, and lower prices expand the market rather than simply driving switching from injectables» | Ídem | VERIFIED |
+| Morgan Stanley (22 abr. 2026) | Mercado de GLP-1 (diabetes y obesidad) **USD 190 mil millones en 2035** (escenarios 170–240); caso base: **~30% de la población con obesidad o diabetes en EE. UU. y 10% en el resto del mundo** tratada con GLP-1 en 2035, frente a ~6% en EE. UU. hoy | «nearly 30% of the obese or diabetic population in the U.S. and 10% in the rest of the world are likely to be treated with GLP-1 therapies by 2035» | https://www.morganstanley.com/insights/articles/glp1-weight-loss-market-may-double-190-billion-2035 | VERIFIED |
+| J.P. Morgan (2026) | ~25 millones de estadounidenses en GLP-1 en 2030 (vs. ~10 millones en 2025); en otro pasaje «upwards of 30 million» | Fragmento | https://www.jpmorgan.com/insights/global-research/current-events/obesity-drugs | SNIPPET-ONLY |
+| Goldman Sachs (informe anterior) | ~15 millones de adultos en EE. UU. tratados con antiobesidad en 2030 (~13–14% de penetración) | «They estimate that about 15 million adults in the US alone may be treated with AOMs by 2030» | https://www.goldmansachs.com/insights/articles/anti-obesity-drug-market | SNIPPET-ONLY (fecha no verificada; probablemente 2023–2024) |
+| Novo Nordisk (ene. 2026, vía Su Médico) | Las pastillas podrían ser **más de un tercio** del mercado mundial de GLP-1 para obesidad hacia 2030 | «Novo Nordisk anticipó en enero de 2026 que las pastillas podrían representar más de un tercio del mercado mundial» | https://www.sumedico.com/opinion/2026/10/21/glp-1-por-obesidad-y-diabetes-sacuden-al-mercado-farmaceutico-mexicano-53824.html | VERIFIED como cita secundaria |
+| NielsenIQ (global) | 11% de consumidores encuestados en 31 países toma GLP-1 (autodeclarado) | Ver §1.1 | PDF NIQ | VERIFIED |
+
+### 4.5 Pastillas orales
+
+| Producto | Hecho | Cita | Fuente | Etiqueta |
+|---|---|---|---|---|
+| Wegovy oral (semaglutida 25 mg) | FDA lo aprobó el 22 dic. 2025; lanzamiento en EE. UU. en enero de 2026 | «On December 22, 2025, the FDA approved the once-daily Wegovy pill, the first oral GLP-1 medicine for obesity in the US» (Mordor); «January 2026 saw the launch of Wegovy pill in the US» (IQVIA) | https://www.mordorintelligence.com/industry-reports/semaglutide-market ; IQVIA (arriba) | Aprobación: SNIPPET-ONLY; lanzamiento: VERIFIED |
+| Foundayo (orforglipron, Lilly) | FDA lo aprobó el **1 abr. 2026**; pérdida media 12.4% (dosis máxima, quienes siguieron el tratamiento) vs. 0.9% placebo; **desde USD 149/mes** en autopago (dosis más baja) | «Individuals opting for self-pay can access Foundayo starting at $149 per month for the lowest dose» | https://lilly.gcs-web.com/news-releases/news-release-details/fda-approves-lillys-foundayotm-orforglipron-only-glp-1-pill | VERIFIED |
+| Foundayo | Dosis altas USD 349 (USD 299 con resurtido en 45 días) | Fragmento NYT | https://www.nytimes.com/2026/04/01/well/fda-obesity-pill-orfoglipron.html | SNIPPET-ONLY |
+| Foundayo en México | Aprobación COFEPRIS | — | Búsquedas | **NOT FOUND** |
+
+### 4.6 Precios en EE. UU. · acuerdo de «nación más favorecida» (6 nov. 2025)
+
+VERIFIED (hoja informativa de la Casa Blanca, 6 nov. 2025: https://www.whitehouse.gov/fact-sheets/2025/11/fact-sheet-president-donald-j-trump-announces-major-developments-in-bringing-most-favored-nation-pricing-to-american-patients/):
+- «The prices of Ozempic and Wegovy will fall from $1,000 and $1,350 per month, respectively, to $350 when purchased through» TrumpRx.
+- «The price of Zepbound and Orforglipron, if approved, will fall from $1,086 per month to an average of $346».
+- Dosis inicial de las pastillas: «$150 per month».
+- «The Medicare prices of Ozempic, Wegovy, Mounjaro, and Zepbound will be $245»; copago Medicare de USD 50/mes.
+
+Reuters (6 nov. 2025, SNIPPET-ONLY): «It reduces the prices to between $149 and $350, down from its current $500 to $1,000» — https://www.reuters.com/business/healthcare-pharmaceuticals/novo-lilly-shares-rise-trump-obesity-drug-deal-nears-2025-11-06/
+
+**Comparación de precio con México (inferencia):** Wegovy 2.4 mg en México a precio de lista ($8,167–$9,061 MXN ≈ USD 450–500 al tipo de cambio de ~$18/USD, no verificado en esta sesión) ya es comparable o superior al precio TrumpRx de USD 350; con descuento de cadena ($4,900 MXN ≈ USD 270) queda por debajo. El efecto de la política MFN sobre precios en América Latina es un riesgo señalado por la prensa, sin cifra (El Economista vía Yahoo, nota relacionada).

@@ -190,3 +190,28 @@ Estado: en curso (se escribe punto por punto).
   - Cita textual: «We propose pragmatic monitoring during weight loss, including diet quality, micronutrient risk, and functional measures, with body-composition assessment where indicated.»
   - Metas numéricas de proteína y de entrenamiento: no leídas (texto completo tras muro de pago).
   - Nota: esta es la referencia europea de 2026 más útil para el documento; la «EASO 2025» de la solicitud corresponde al marco farmacológico de Nat Med.
+
+### 4.5 Organización Mundial de la Salud · primera guía sobre GLP-1 (1-dic-2025) — VERIFIED (comunicado oficial)
+
+- WHO. *WHO issues global guideline on the use of GLP-1 medicines in treating obesity.* 1 de diciembre de 2025. https://www.who.int/news/item/01-12-2025-who-issues-global-guideline-on-the-use-of-glp-1-medicines-in-treating-obesity
+  - Recomendación 1 (textual): «GLP-1 therapies may be used by adults, but excluding pregnant women, for the long-term treatment of obesity.» Condicional, por «limited data on their long-term efficacy and safety».
+  - Recomendación 2 (textual): «Intensive behavioural interventions, including structured interventions involving healthy diet and physical activity, may be offered to adults living with obesity prescribed GLP-1 therapies.» Basada en «low-certainty evidence suggesting it may enhance treatment outcomes».
+  - Acceso (textual): los tratamientos llegarían a «fewer than 10% of those who could benefit by 2030».
+  - Relevancia: la OMS reconoce formalmente el acompañamiento estructurado de dieta y actividad física como complemento del fármaco.
+
+### 4.6 México
+
+- **Guía de Práctica Clínica Mexicana para el manejo del sobrepeso y la obesidad en el adulto (SMNE, 2024) — VERIFIED (resumen PubMed y texto PMC parcial).** Chávez-Manzanera EA, Vera-Zertuche JM, Kaufer-Horwitz M, et al. *Mexican Clinical Practice Guidelines for Adult Overweight and Obesity Management.* Curr Obes Rep. 2024;13(4):643-666. PMID 39356455. DOI 10.1007/s13679-024-00585-w. PMCID PMC11522083. https://pmc.ncbi.nlm.nih.gov/articles/PMC11522083
+  - Elaborada por la Sociedad Mexicana de Nutrición y Endocrinología (SMNE); 20 recomendaciones nuevas y 20 declaraciones de buena práctica (GRADE). Resumen (textual): «To develop Mexico's first methodologically rigorous clinical practice guideline for the management of adult overweight and obesity».
+  - Actividad aeróbica (Declaración XII, comentario; textual): «performing at least 150–300 min of moderate-intensity aerobic physical activity per week» (equivalente vigoroso: 75-150 min).
+  - Fuerza (Declaración XIII; textual): «prescribe strength training at least two times per week». Comentario: «Strength training can be performed up to six times per week.»
+  - Fármacos (Declaración XVI): la farmacoterapia «should never be prescribed as a stand-alone treatment»; Declaración XVIII: considerar medicamentos «approved by the Mexican national regulatory agency (COFEPRIS)». En el texto se mencionan semaglutida y liraglutida; tirzepatida no aparece en el texto legible.
+  - Proteína y composición corporal: no localizadas en el texto legible (las tablas de recomendaciones son imágenes). Lectura del texto completo: 53 % (100 000 de 188 046 caracteres).
+  - Versión en español reportada en Rev Mex Endocrinol Metab Nutr (2025) — SNIPPET-ONLY, no consultada.
+- **IMSS · GPC-IMSS-046-18, *Diagnóstico y tratamiento del sobrepeso y obesidad exógena* (actualización 2018) — VERIFIED (PDF oficial).** https://www.imss.gob.mx/sites/all/statics/guiasclinicas/046GER.pdf
+  - Recomendación (textual, grado D NICE): «Se recomienda la realización de actividad física al menos 5 a 7 días por semana durante 30 minutos para prevenir la ganancia de peso y mejorar la salud cardiovascular.»
+  - Recomendación (textual, grado A NICE): «Se recomienda hacer ejercicio de forma regular para mantener una adecuada condición física y así disminuir la mortalidad general y los factores de riesgo cardiovascular. Se recomienda combinar el ejercicio aeróbico con entrenamiento de resistencia.»
+  - Recomendación (textual, grado A NICE): «Se recomienda una dieta alta en proteínas en pacientes adultos con sobrepeso y obesidad para estimular la sensación de saciedad y la termogénesis.» Sin meta en g/kg.
+  - No menciona agonistas GLP-1 (búsqueda de «liraglutida» y «semaglutida» en el PDF: 0 resultados). Es anterior a su uso en obesidad en México.
+- **NOM-008-SSA3-2017, *Para el tratamiento integral del sobrepeso y la obesidad*** — ver §6.6 (marco operativo y profesional).
+- **Colegio Mexicano de Obesidad:** documento de recomendaciones de actividad física o proteína para personas con GLP-1 — NOT FOUND (búsqueda web y PubMed, 23-nov-2026).

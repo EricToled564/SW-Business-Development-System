@@ -8,7 +8,7 @@ Convención de etiquetas:
 - **SNIPPET-ONLY**: cifra vista solo en un fragmento de resultado de búsqueda; requiere confirmación.
 - **NOT FOUND**: no localizada; se listan los lugares consultados.
 
-Estado: en curso (se escribe punto por punto).
+Estado: completo (escrito punto por punto; ver resumen al final).
 
 ---
 
@@ -17,7 +17,7 @@ Estado: en curso (se escribe punto por punto).
 - **[R-3T26]** Grupo Sports World, «Reporte 3T26», 26 de octubre de 2026, 19 págs. https://www.sportsworld.com.mx/uploads/es/documents/reports_quarterly/gsw_reporte_3T26.pdf
 - **[R-2T26]** Grupo Sports World, «Reporte 2T26», 27 de julio de 2026, 19 págs. https://www.sportsworld.com.mx/uploads/es/documents/reports_quarterly/gsw_reporte_2T26.pdf
 
-Notas de método: cifras en miles de pesos (MXN) salvo indicación. Ticker real en BMV/BIVA: **SPORT** (Bloomberg: sports.mm); el sufijo «SPORTS» corresponde al serie/Yahoo (SPORTS.MX).
+Notas de método: cifras en miles de pesos (MXN) salvo indicación. Ticker real en BMV/BIVA: **SPORT** (Bloomberg: sports.mm); «SPORTS» es la clave con que la cotiza Yahoo Finanzas (SPORTS.MX) y la serie «S» (BMV: SPORT S).
 
 ---
 
@@ -254,3 +254,50 @@ Participación implícita (cálculo propio): 102,255 / 7,200,000 ≈ **1.4%** de
 
 Contraste con Sports World (cálculo propio, interpretando su deserción como mensual): deserción bruta 9M26 de 6.1% mensual ≈ 73% de rotación bruta anual (suma simple), muy por encima del 33.6% anual implícito en el benchmark HFA; la deserción neta 9M26 de 4.1% mensual equivaldría a ≈ 49% anual. La diferencia es consistente con una base que incluye invitados promocionales y con la depuración deliberada de clientes de bajo ingreso en 2026. Sin la definición oficial de la métrica, la comparación es indicativa.
 
+---
+
+## 8. Precios de membresía publicados en el sitio de Sports World
+
+**Lista de precios de cuotas de mantenimiento vigente (2026): NOT FOUND en el sitio público.** El sitio no publica la lista de precios: las páginas de promoción y «Solicita informes» terminan en un formulario de contacto, y la tienda en línea exige elegir club antes de mostrar membresías.
+
+Lugares consultados (23 de noviembre de 2026):
+- https://www.sportsworld.com.mx/ (página principal): ofrece «UniClub» y «Multiclub» sin precio; promociones vigentes sin precio en texto: «PRECIO ESPECIAL +2 MESES GRATIS», «20% OFF DURANTE 5 MESES EN PLAN UNICLUB», «RECIBE EL 50% DEL VALOR DE TU MEMBRESÍA DURANTE 4 MESES», «ADQUIERE TU MEMBRESÍA ORO», referidos «30% OFF». Muestra «49 Clubes».
+- https://www.sportsworld.com.mx/promociones/precio-especial-noviembre y https://www.sportsworld.com.mx/promociones/20-off-uniclub: solo formulario, sin precio.
+- https://www.sportsworld.com.mx/membresias: 404.
+- https://hibrido.sportsworld.com.mx/mtto (tienda en línea): «Selecciona un club para ver las membresías disponibles»; los precios se cargan por club desde servicios internos (no se consultaron).
+- Búsqueda de documentos de términos 2026 en `/uploads/documentos_generales/descargas/` (patrón mantenimiento/promociones/anualidades, enero-noviembre de 2026): sin resultado.
+
+Datos de precio públicos localizados:
+
+| Concepto | Cifra | Etiqueta | Fuente |
+|---|---|---|---|
+| Plan Híbrido (tienda en línea) | **$629 MXN mensual** o **$6,290 MXN anual** | VERIFIED en el código de la página de compra (valor declarado en el evento de comercio electrónico «Plan hibrido»; no visible como texto sin seleccionar club) | https://hibrido.sportsworld.com.mx/ (archivo `chunk-NSXMPHUS.js`) |
+| Costo de la membresía (inscripción) individual, planes UniClub, AllClub, BiClub, Part Time, Juvenil, Infantil y Flash | «**$5,000** (cinco mil pesos 00/100 MN.) como máximo»; mantenimiento «correspondiente a la lista de precios vigente» (no publicada) | VERIFIED, documento de **noviembre de 2024** (no vigente necesariamente) | https://www.sportsworld.com.mx/uploads/documentos_generales/descargas/mantenimiento-noviembre-2024-01.pdf |
+| Tipos de cuota de mantenimiento (nov. 2024) | UniClub, AllClub, BiClub, Part Time UniClub y AllClub (lunes a jueves de 10:00 a 18:00), Juvenil Vespertino y Juvenil AllClub (14 a 22 años), Infantil AllClub (37 clubes con Fit Kidz), Flash UniClub (un acceso por día) | VERIFIED | misma fuente |
+| Anualidades | «El titular obtiene trece cuotas de mantenimiento del plan elegido a un precio preferencial» | SNIPPET-ONLY | https://www.sportsworld.com.mx/uploads/documentos_generales/descargas/anualidades-febrero-2025-02.pdf |
+
+Referencia indirecta (cálculo propio, sección 4): ingreso por mantenimiento ≈ **1,508 MXN por cliente activo al mes** en 3T26 (≈ 1,885 si se descuenta un 20% de invitados no pagadores, supuesto no verificado).
+
+---
+
+## Resumen ejecutivo de cifras clave (para el modelo GLP-1)
+
+| Variable | Valor | Etiqueta | Fuente |
+|---|---|---|---|
+| Clubes | 49 (3T26); 48 (cierre 2025); 49 (cierre 2024) | VERIFIED | R-3T26 |
+| Clientes activos totales | 97,046 (3T26, −7.1%); 102,255 (4T25); 103,421 (4T24) | VERIFIED | R-3T26, R-4T25, R-4T24 |
+| Base de pago sin invitados (último desglose) | 82,555 (4T24); invitados 20,866 | VERIFIED | R-4T24 |
+| Ingresos totales | 3T26: 580.9 mdp; 9M26: 1,745.8 mdp; UDM: 2,322.7 mdp; FY2025: 2,185.2 mdp; FY2024: 2,072.7 mdp | VERIFIED (UDM derivado) | R-3T26, R-4T25, R-4T24 |
+| Cuotas de mantenimiento y membresías | 3T26: 453.2 mdp; UDM: 1,798.4 mdp (77.4% del total); FY2025: 1,708.7 mdp | VERIFIED (UDM derivado) | idem |
+| Ingreso por mantenimiento por cliente al mes | ≈ 1,508 MXN (3T26) | Derivado | sección 4 |
+| Deserción bruta promedio | 5.7% (3T26); 6.1% (9M26); 6.0% (FY2025); 6.8% (FY2024) | VERIFIED (periodicidad no definida; se interpreta mensual) | R-3T26, R-4T25, R-4T24 |
+| Deserción neta promedio | 3.3% (3T26); 4.1% (9M26); 3.9% (FY2025) | VERIFIED | idem |
+| Bajas brutas implícitas | ≈ 5,500-5,900 clientes/mes | Derivado | sección 5 |
+| Altas/ventas absolutas | NOT FOUND | — | sección 5 |
+| Margen EBITDA | 3T26: 17.0% sin IFRS 16 / 38.5% con IFRS 16; FY2025: 16.2% / 38.1% | VERIFIED | R-3T26, R-4T25 |
+| Mercado México | 7.2 millones de usuarios, >20,000 instalaciones, 5.6% de penetración (2024) | VERIFIED | HFA-2026-MX |
+| Motivo «bajar de peso» | 32% (usuarios de gimnasio MX, respuesta múltiple); 20.9% (activos urbanos LatAm, hasta 3 respuestas); «verse mejor» 6.3%-6.9% (motivo principal único, INEGI) | VERIFIED (con advertencias de método) | 7.b, 7.c |
+| Retención anual de referencia | 66.4% (HFA, datos 2024) | VERIFIED | 7.e |
+| Precio de lista vigente | NOT FOUND en sitio; Plan Híbrido $629/mes; inscripción máx. $5,000 (nov. 2024) | parcial | sección 8 |
+
+Estado: **completo** al 23 de noviembre de 2026. Pendientes que requieren acceso no público: definición oficial de «deserción», altas absolutas, desglose de invitados 2025-2026, lista de precios por club, informe completo HFA (motivaciones por país) y Mercado Fitness.
