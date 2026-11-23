@@ -280,3 +280,36 @@ Fuente: Athletech News, 22 de enero de 2026: https://athletechnews.com/how-orang
 - Crunch Fitness (550+ sedes) + Thrive (1T 2026): referencia a telesalud con receta, monitoreo clínico y programación. 24 Hour Fitness (300+): programación de preservación muscular y recuperación. Gold's Gym (DC/VA) + Idexa360. UFC GYM + NexGen MD: clínicas de longevidad dentro del club desde mayo de 2026. Fuente: Inspire360 1T y 2T 2026 — VERIFIED como reporte de terceros. Precios y resultados: **NOT FOUND**.
 - **Fitness Park:** NOT FOUND (no aparece en trackers ni en búsquedas).
 
+---
+
+## 4. México y Latinoamérica
+
+### 4.1 Smart Fit México · composición corporal como producto — VERIFIED
+
+- «Smart Fit Body — Sigue la evolución de tu cuerpo. ¡Conoce de qué estás hecho! Realiza tu análisis de composición corporal y revisa tus resultados a través de tu Smart Fit App.» Fuente: https://www.smartfit.com.mx/ — VERIFIED
+- Precio: «Monitoreo de la composición corporal. La bioimpedancia permite medir la grasa corporal, masa muscular, y agua corporal. $69.90 pesos al mes». Fuente: https://body.smartfit.com/mx — VERIFIED. **Es un complemento de pago, no incluido en la membresía.**
+- Contexto: el COO declaró en diciembre de 2025 que Smart Fit coloca básculas de bioimpedancia «em todas as unidades» y que el efecto GLP-1 «ainda não é sentido» en México (ver 2.7). — VERIFIED
+- Programa GLP-1 de Smart Fit en México: **NOT FOUND**.
+
+### 4.2 Sports World · Body Test by SECA — VERIFIED
+
+- Blog oficial, 28 de octubre de 2025: https://www.sportsworld.com.mx/blog/articulo/conoce-tu-cuerpo-en-profundidad-el-poder-del-body-test-by-seca/categoria/belleza
+  - «en Sports World incorporamos Body Test by SECA, una herramienta de análisis corporal de alta precisión basada en el método científico de impedancia bioeléctrica (BIA)». — VERIFIED
+  - Mide: «Masa muscular total y segmentada (brazos, piernas, tronco). Porcentaje de grasa corporal y distribución. Nivel de agua corporal total e intracelular. Tasa metabólica basal [...]. Equilibrio corporal y nivel de rendimiento físico.» — VERIFIED
+  - **«todas las membresías Sports World incluyen un análisis SECA gratuito cada mes»**. — VERIFIED
+- Antecedente: publicaciones de Sports World en Facebook promovían InBody (https://www.facebook.com/sportsworldoficial/posts/alcanza-tus-objetivos-con-inbody-y-eval%C3%BAa-tu-estado-actual-f%C3%ADsicoaccede-a-este-a/989417303227940/) — SNIPPET-ONLY.
+- Lectura: Sports World ya tiene incluido en la membresía el instrumento que los operadores extranjeros usan como base de sus programas para usuarios de GLP-1 (medición de masa muscular segmentada) y que Smart Fit cobra aparte a 69.90 MXN al mes. Programa o mensaje específico para usuarios de GLP-1: **NOT FOUND** en sportsworld.com.mx (búsqueda «Sports World gimnasio InBody análisis composición corporal»).
+
+### 4.3 Otros operadores en México
+
+- **Energy Fitness, Sport City, Spa & Fitness, Anytime Fitness México:** programa GLP-1 o de composición corporal **NOT FOUND**. Búsquedas: «gimnasio México programa GLP-1 Ozempic composición corporal Smart Fit Sports World Energy Fitness Sport City» y «Sports World México InBody composición corporal programa nutrición OR "Sport City" InBody OR "Energy Fitness" composición corporal» (esta última sin resultados).
+
+### 4.4 Encuestas mexicanas
+
+- **Encuesta Mexicana de Tendencias de Acondicionamiento Físico, Nutrición y Salud 2026** (Universidad de Guadalajara, revista Retos, vol. 84, DOI 10.47197/retos.v84.118781): https://revistaretos.org/index.php/retos/article/view/118781 — VERIFIED
+  - n = 995 profesionales del fitness en México (muestra no probabilística, metodología ACSM, 52 tendencias).
+  - «Las principales tendencias fitness en México para 2026 son programas de ejercicio para control del peso corporal, gimnasios comerciales multiusos, entrenamiento tradicional de fuerza, entrenamiento funcional y tecnología portátil.» «ejercicio para control del peso corporal» figura además entre las tendencias más estables. — VERIFIED
+  - El resumen no menciona GLP-1. Es una encuesta a profesionales, no a consumidores.
+- Universidad de Guadalajara: «En México existen más de 20 mil gimnasios, con más de 7 millones de usuarios que generan cerca de 60 mil millones de pesos anuales» (https://www.udg.mx/index.php/noticia/crece-exponencialmente-sector-fitness-en-mexico). — SNIPPET-ONLY
+- **NOT FOUND:** encuesta mexicana a consumidores que relacione uso de GLP-1 con afiliación, uso o cancelación de gimnasio. Búsquedas: «encuesta México Ozempic semaglutida usuarios gimnasio ejercicio porcentaje 2025 2026»; INEGI MOPRADEF (https://www.inegi.org.mx/programas/mopradef/) no incluye la variable.
+

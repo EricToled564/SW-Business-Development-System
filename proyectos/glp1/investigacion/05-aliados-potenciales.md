@@ -104,3 +104,123 @@ Resumen por zona: Valle de México 31 (CDMX 24, Estado de México conurbado 7), 
 | Cabo Norte | cabo-norte | Av. #24 Tablaje Catastral, Mérida, Yucatán. | 21.0592, -89.5954 |
 
 ---
+
+## Parte B · Hospitales privados con clínica de obesidad, metabolismo o bariatría cerca de los clubes
+
+**Método de distancias (ESTIMADO).** Distancia en línea recta (fórmula de Haversine) entre las coordenadas del club (Parte A) y las del hospital obtenidas de OpenStreetMap/Nominatim el 23 de noviembre de 2026 (salvo Hospital Ángeles Roma, cuya coordenada se fijó a mano a partir de la dirección Querétaro 58, Roma Norte). La distancia por calle suele ser 20 % a 50 % mayor. Se listan los clubes a 5 km o menos; si no hay ninguno, los dos más cercanos.
+
+**Hallazgo transversal (VERIFIED).** En Grupo Ángeles la clínica de obesidad no está en todas las unidades. El índice de servicios de cada hospital en hospitalangeles.com publica «Instituto de Obesidad y Síndrome Metabólico» solo en Ángeles México, Roma y Del Carmen, y «Cirugía de obesidad» en Roma, Valle Oriente, Santa Mónica, Tampico y Ciudad Juárez (https://hospitalangeles.com/servicio/instituto-de-obesidad-y-sindrome-metabolico y https://hospitalangeles.com/servicio/cirugia-de-obesidad). Las páginas de Ángeles **Pedregal, Lomas, Metropolitano, Mocel y Acoxpa** no listan ningún servicio de obesidad, nutrición o endocrinología; solo «check-up» y, en Pedregal y Lomas, medicina hiperbárica (revisión de los enlaces de servicio de cada página, 23 de noviembre de 2026). En esas unidades la bariatría existe como consultorios de grupos médicos independientes, no como programa del hospital.
+
+### B.1 · Ciudad de México y área conurbada
+
+#### Hospital Español de México · Clínica de Obesidad y Sobrepeso — VERIFIED
+- **Dirección:** Ejército Nacional 613, Granada, Miguel Hidalgo, CDMX, C.P. 11520; 4.º piso del Complejo Médico Antonino Fernández, consultorio 403.
+- **Programa:** «Clínica de obesidad y sobrepeso». Cada tratamiento lo vigila un endocrinólogo; atención individual de nutrición, psicología de la alimentación y terapia física; cirujanos bariatras para quien lo requiera. Equipo publicado: «Endocrinología, Nutrición, Cirugía Bariátrica, Psicología, Psiquiatría, **Entrenamiento Físico**, Cardiología, Neumología, Ortopedia». Tel. 55 5255 9600 ext. 9845, 9843, 9844. Fuente: https://www.hespanol.com/Servicios/clinica-de-obesidad
+- **Alianzas de bienestar o corporativas:** NOT FOUND (búsqueda «Hospital Español alianza gimnasio/corporativo»).
+- **Clubes cercanos (ESTIMADO):** Antara 0.7 km · Palmas 2.0 km · Anzures 2.1 km · Reforma Rhin 3.5 km.
+- **Lectura:** es el único hospital de la lista que publica «Entrenamiento Físico» como disciplina de su clínica; Antara está prácticamente enfrente.
+
+#### Centro Médico ABC · Centro de Nutrición & Obesidad (Observatorio y Santa Fe) — VERIFIED
+- **Sedes:** campus Observatorio (Av. Observatorio, Las Palmas, Álvaro Obregón) y campus Santa Fe (Prolongación Vasco de Quiroga, Cuajimalpa). La página del centro no indica en cuál de los dos campus opera; el sitio del ABC presenta sus centros de especialidad para ambas sedes.
+- **Programa:** «atención integral … para ayudarte a … controlar tu peso, **cambiar tu composición corporal**, prevenir y manejar enfermedades asociadas, así como **mejorar tu rendimiento físico y deportivo**». Equipo multidisciplinario «con 16 años de experiencia» en nutrición, **medicina del deporte**, endocrinología, cirugía bariátrica, psicología y medicina interna. Ofrece además «Reemplazo de alimentos ABC» (producto propio de sustitución de comidas). Fuente: https://centromedicoabc.com/centro-de-nutricion-obesidad/ (modificada el 7 de septiembre de 2026).
+- **Alianzas:** publicación de Facebook del ABC sobre una «alianza entre el deporte y el bienestar con la Clínica de la Amistad» (SNIPPET-ONLY; no se leyó el contenido). Programa corporativo con gimnasios: NOT FOUND.
+- **Clubes cercanos (ESTIMADO):** campus Santa Fe → Santa Fe 0.8 km · Pabellón Bosques 3.3 km · Espacio Interlomas 4.4 km · Paseo Interlomas 4.7 km. Campus Observatorio → Patriotismo 2.6 km · Palmas 3.3 km · Xola, Condesa 4.1 km · Anzures 4.2 km · Antara 4.3 km.
+- **Lectura:** el lenguaje del centro (composición corporal, rendimiento deportivo, medicina del deporte) coincide casi palabra por palabra con el programa GLP-1 de Sports World.
+
+#### Médica Sur · Centro Integral de Endocrinología y Control de Peso — VERIFIED
+- **Dirección:** Puente de Piedra 150, Toriello Guerra, Tlalpan, CDMX (dirección conocida del hospital; coordenada OSM).
+- **Programa:** «Centro Integral de Endocrinología y Control de Peso», dentro del hospital; padecimientos: prediabetes, resistencia a la insulina, **obesidad**, lipedema, hígado graso, SOMP, menopausia, hipogonadismo, osteoporosis, tiroides. «Atención multidisciplinaria coordinada», certificación del Consejo de Salubridad General y de la Joint Commission International. Fuente: https://www.medicasur.com.mx/especialidades/endocrinologia/ . Publicaciones de Médica Sur en Instagram y X anuncian el «nuevo» centro en 2026 (SNIPPET-ONLY). Además, «Centro de Cirugía Bariátrica de Médica Sur» (página de Medicina Internacional; solo se leyó el título): https://www.medicasur.com.mx/ms-intl/centro-integral-de-cirugia-bariatrica.html
+- **Alianzas:** NOT FOUND.
+- **Clubes cercanos (ESTIMADO):** Patio Tlalpan 2.2 km · Coapa 3.2 km · Pedregal-Acora 4.4 km.
+
+#### Hospital Ángeles México · Instituto de Obesidad y Síndrome Metabólico + Clínica de Obesidad y Enfermedades Gastrointestinales — VERIFIED
+- **Dirección:** Agrarismo 208, Escandón II Secc., Miguel Hidalgo, CDMX, C.P. 11800. Tel. 55 5516 9900 ext. 1450 y 1451 (Instituto); ext. 1439 (Clínica).
+- **Programa:** equipo de «endocrinología, nutrición clínica, cirugía bariátrica, medicina interna, psicología y rehabilitación física»; estrategias que combinan «cambios en la alimentación, **actividad física supervisada**, apoyo psicológico» y, cuando procede, cirugía; servicios incluyen «**programas de ejercicio físico**». Fuentes: https://hospitalangeles.com/mexico/servicios/instituto-de-obesidad-y-sindrome-metabolico ; https://hospitalangeles.com/mexico/servicios/clinica-de-obesidad-y-enfermedades-gastrointestinales
+- **Alianzas:** NOT FOUND.
+- **Clubes cercanos (ESTIMADO):** Xola 0.7 km · Patriotismo 1.0 km · Obrero Mundial 1.4 km · Condesa 1.6 km · Roma 2.0 km · Félix Cuevas 3.0 km.
+
+#### Hospital Ángeles Roma · Instituto de Obesidad y Síndrome Metabólico + Cirugía de obesidad — VERIFIED
+- **Dirección:** Calle Querétaro 58, Roma Norte, Cuauhtémoc, CDMX, C.P. 06700. Ext. 7400.
+- **Programa:** «evaluación médica completa, asesoramiento nutricional, **programas de ejercicio físico supervisado** y seguimiento continuo» (extracto del índice; página leída para dirección); cirugía de obesidad: bypass y manga gástrica. Fuentes: https://hospitalangeles.com/roma/servicios/instituto-de-obesidad-y-sindrome-metabolico ; https://hospitalangeles.com/roma/servicios/cirugia-de-obesidad
+- **Alianzas:** NOT FOUND.
+- **Clubes cercanos (ESTIMADO, coordenada manual):** Roma 0.5 km · Condesa 0.8 km · Obrero Mundial 1.5 km · Reforma Rhin 1.7 km · Xola 2.1 km.
+
+#### Hospital Ángeles Lindavista · Nutrición (y unidad bariátrica anunciada) — VERIFIED / SNIPPET-ONLY
+- **Dirección:** C. Río Bamba 639, Magdalena de las Salinas, Gustavo A. Madero, CDMX, C.P. 07760. Ext. 2511.
+- **Programa:** servicio de «Nutrición» publicado en el sitio del hospital (VERIFIED: https://hospitalangeles.com/lindavista/servicios/nutricion). Una publicación de Instagram anuncia una «nueva Unidad de Cirugía Bariátrica y Metabólica en Hospital Ángeles Lindavista» (SNIPPET-ONLY; https://www.instagram.com/p/DUbww34D5rw/; no consta en el índice de servicios del hospital).
+- **Clubes cercanos (ESTIMADO):** Lindavista 0.5 km (único club de la zona norte de CDMX).
+
+#### Hospital San Ángel Inn · Clínica de Salud Integral (control de peso) — VERIFIED
+- **Sede del programa:** Hospital San Ángel Inn **Sur** (dirección no publicada en la página; tel. 55 5550 5050 ext. 267). La red tiene además sedes Chapultepec, Universidad, Patriotismo, Del Valle, Coyoacán y Satélite.
+- **Programa:** grupo multidisciplinario (nutriólogos clínicos, psicólogos de conducta alimentaria, médicos especialistas, rehabilitadores físicos). Incluye **valoración antropométrica con estudio de composición corporal** «para medir el porcentaje de masa grasa y magra y valorar la posible **obesidad sarcopénica**/osteosarcopénica», plan de alimentación, terapia cognitivo-conductual y **rehabilitación física «para ayudar a fortalecer tus músculos»**; la revisión médica incluye «laboratorios, fármacos». Fuente: https://www.hospitalsanangelinn.mx/clinica-de-salud-integral
+- **Alianzas:** NOT FOUND.
+- **Clubes cercanos (ESTIMADO, por sede; no se pudo ubicar la sede Sur):** San Ángel Inn Universidad → Patio Universidad 0.7 km · Amores 0.8 km · Félix Cuevas 1.6 km · Torre Manacar 1.7 km. Patriotismo → Torre Manacar 1.0 km · Félix Cuevas 1.4 km · Portal San Ángel 1.7 km. Chapultepec → Anzures 1.0 km · Condesa, Roma 1.1 km · Reforma Rhin 1.3 km.
+- **Lectura:** es el programa hospitalario cuyo texto más se acerca a la tesis GLP-1 (pérdida de músculo, composición corporal, fortalecimiento).
+
+#### Hospitales Ángeles Pedregal, Lomas, Metropolitano, Mocel y Acoxpa — sin programa institucional de obesidad (VERIFIED como ausencia en su índice de servicios)
+- **Pedregal** (Camino a Santa Teresa 1055): grupo bariátrico independiente con resultados publicados en *Acta Médica Grupo Ángeles* 2024 (SNIPPET-ONLY, SciELO). Clubes (ESTIMADO): Pedregal-Cráter 1.1 km · San Jerónimo 1.4 km · Pedregal-Acora 2.1 km.
+- **Lomas** (Vialidad de la Barranca, Huixquilucan): grupo «Bariatric-E» de cirugía metabólica y bariátrica que opera ahí (SNIPPET-ONLY, https://bariatric-e.com/). Clubes (ESTIMADO): Paseo Interlomas 0.4 km · Espacio Interlomas 0.8 km · Pabellón Bosques 2.1 km.
+- **Metropolitano** (Tlaxcala, Roma Sur): consultorio privado de «Nutrición, Metabolismo, Cirugía bariátrica» con 20 % de descuento (SNIPPET-ONLY, Facebook). Clubes (ESTIMADO): Condesa 0.8 km · Obrero Mundial 0.9 km · Roma, Xola 1.1 km.
+- **Mocel** (San Miguel Chapultepec): NOT FOUND programa. Clubes (ESTIMADO): Patriotismo 1.7 km · Condesa 1.8 km.
+- **Acoxpa** (Calzada Acoxpa/de Guadalupe, Tlalpan): NOT FOUND programa. Clubes (ESTIMADO): Coapa 0.7 km.
+- **Lectura:** cercanía alta pero sin interlocutor institucional de obesidad; el acuerdo tendría que hacerse con grupos médicos, no con el hospital.
+
+#### Star Médica (CDMX)
+- NOT FOUND programa institucional de obesidad en CDMX. Las menciones localizadas son de cirujanos que operan en Star Médica Veracruz, Querétaro y Mérida (SNIPPET-ONLY).
+
+### B.2 · Monterrey (Nuevo León)
+
+#### TecSalud · Programa de manejo integral de la obesidad, Hospital Zambrano Hellion — VERIFIED
+- **Dirección:** Av. Batallón de San Patricio 112, Real San Agustín, San Pedro Garza García, N.L., C.P. 66278.
+- **Programa:** «atención completa y coordinada para el tratamiento de la obesidad, con valoraciones multidisciplinarias y diversas alternativas terapéuticas —médicas, endoscópicas y quirúrgicas—». Incluye explícitamente **«Tratamiento farmacológico: manejo médico de la obesidad mediante fármacos especializados … con supervisión continua por expertos»**, valoración de nutrición, psicología/psiquiatría y medicina interna, balón intragástrico, manga, bypass y cirugía de revisión. Fuente: https://content.tecsalud.mx/cirugia-bariatrica . TecSalud mantiene además un directorio de protocolos de investigación activos en metabolismo y obesidad: https://www.tecsalud.mx/investigacion/directorio-de-protocolos/metabolismo-obesidad (SNIPPET-ONLY).
+- **Alianzas:** NOT FOUND.
+- **Clubes cercanos (ESTIMADO):** San Pedro 2.9 km.
+- **Lectura:** es el único programa hospitalario localizado que publica el manejo farmacológico de la obesidad como línea propia: el socio natural de referencia médica para usuarios de GLP-1 en Monterrey.
+
+#### Hospital San José (TecSalud), Monterrey
+- **Ubicación:** zona Los Doctores/Sertoma, Monterrey (coordenada OSM). Programa propio de obesidad publicado: NOT FOUND (la página del programa TecSalud lista solo Zambrano Hellion como sede). **Clubes (ESTIMADO):** San Pedro 1.8 km.
+
+#### Christus Muguerza Hospital Sur · Centro de excelencia en enfermedades metabólicas y cirugía bariátrica — VERIFIED
+- **Ubicación:** Av. Eugenio Garza Sada (sur de Monterrey; coordenada OSM).
+- **Programa:** acreditado como «centro de excelencia en enfermedades metabólicas y de cirugía bariátrica» por la Surgical Review Corporation (SRC); «21 médicos especialistas en enfermedades metabólicas y cirugías bariátricas», seis con reconocimiento «Surgeon of Excellence». Comunicado del 22 de febrero de 2022: https://christusmuguerza.com.mx/sala-de-prensa/hospital-sur-es-acreditado-como-un-centro-de-excelencia-para-el-tratamiento-de-enfermedades-metabolicas-y-cirugia-bariatrica/ . Página de servicio: https://christusmuguerza.com.mx/producto/bariatria/ (SNIPPET-ONLY).
+- **Alianzas corporativas:** membresía «Socio CHRISTUS» con beneficios en estudios (SNIPPET-ONLY, https://christusmuguerza.com.mx/socio-christus/); convenio con CANACO Puebla para tarjetas de beneficios médicos (SNIPPET-ONLY, Facebook).
+- **Clubes cercanos (ESTIMADO):** San Pedro 12.7 km · Nave 01 Apodaca 19.2 km. Lejano a los tres clubes.
+- **Christus Muguerza Alta Especialidad (Obispado):** San Pedro 2.3 km (ESTIMADO); programa de obesidad propio NOT FOUND.
+
+#### Hospital Ángeles Valle Oriente · Cirugía de obesidad — VERIFIED
+- **Dirección:** Av. Cto. Frida Kahlo 180, Valle Oriente, San Pedro Garza García, N.L. Tel. 81 8368 7777 ext. 7500.
+- **Programa:** cirugía de obesidad con «asesoramiento nutricional y apoyo psicológico» complementarios. Fuente: https://hospitalangeles.com/valleoriente/servicios/cirugia-de-obesidad
+- **Clubes cercanos (ESTIMADO):** San Pedro 4.2 km.
+
+Nota: los clubes Cumbres y Nave 01 Apodaca no tienen ninguno de estos hospitales a menos de 5 km (ESTIMADO).
+
+### B.3 · Guadalajara (Jalisco)
+
+#### Hospitales Puerta de Hierro · Sur (Tlajomulco) y Andares (Zapopan) — VERIFIED (servicio) 
+- **Direcciones:** Sur: Av. López Mateos Sur 1401, Las Amapas, Tlajomulco de Zúñiga, C.P. 45640. Andares: Blvd. Puerta de Hierro 5150, Zapopan, C.P. 45116. Fuente: https://hospitalespuertadehierro.com/
+- **Programa:** página institucional de «Cirugía bariátrica» para ambas sedes; describe candidatos (IMC 35-39.9 o >40) y seguimiento «con evaluaciones médicas, nutricionales y de comportamiento». No publica un programa médico no quirúrgico. Fuente: https://hospitalespuertadehierro.com/cirugia-bariatrica/
+- **Clubes cercanos (ESTIMADO):** Puerta de Hierro Sur → La Rioja 2.5 km (ambos sobre Av. López Mateos Sur).
+
+#### Hospital Ángeles Del Carmen · Instituto de Obesidad y Síndrome Metabólico — VERIFIED
+- **Dirección:** Calle Tarascos 3435, Monraz, Guadalajara, C.P. 44670; ext. 3620; lunes a viernes 07:00-17:00. Fuente: https://hospitalangeles.com/delcarmen/servicios/instituto-de-obesidad-y-sindrome-metabolico
+- **Clubes cercanos (ESTIMADO):** La Rioja 13.7 km.
+
+### B.4 · Querétaro
+
+- **Star Médica Querétaro** (Blvd. Bernardo Quintana 4060): sin programa institucional publicado; operan ahí consultorios privados de bariatría y una «Clínica de Salud Metabólica» (SNIPPET-ONLY: https://www.center-om.com/ , https://clinicadesaludmetabolica.com/). Clubes (ESTIMADO): Bernardo Quintana 2.6 km · Esfera 4.8 km.
+- **Hospital H+ Querétaro:** «Clínica de Obesidad y Metabolismo», Torre II, consultorio 406 (SNIPPET-ONLY, Facebook del hospital). Ubicación no geocodificada.
+- **Hospital Ángeles Querétaro:** no figura en el índice de servicios de obesidad de Grupo Ángeles (VERIFIED como ausencia). Clubes (ESTIMADO): Esfera 1.3 km.
+
+### B.5 · Puebla
+
+- **Hospital Ángeles Puebla** (Av. Kepler 2143, Reserva Territorial Atlixcáyotl): no figura en el índice de servicios de obesidad de Grupo Ángeles. Clubes (ESTIMADO): Las Ánimas 2.5 km.
+- **Christus Muguerza UPAEP** (Av. 5 Poniente 715, Centro): programa de obesidad NOT FOUND. Clubes (ESTIMADO): Las Ánimas 3.1 km.
+- Programa hospitalario de obesidad en Puebla: NOT FOUND.
+
+### B.6 · Otras ciudades con club (Aguascalientes, Torreón, Saltillo, León, Culiacán, Hermosillo, Veracruz-Boca del Río, Mérida, Metepec)
+- Grupo Ángeles no publica clínica de obesidad en ninguna de estas ciudades (índices citados arriba). Christus Muguerza tiene hospitales en Saltillo (no verificado en esta investigación). NOT FOUND para programas institucionales; queda pendiente.
+
+### B.7 · Antecedente interno
+- Un perfil profesional público menciona a una nutricionista de la empresa «Mindful Nutrition» trabajando dentro de **Sports World Paseo Interlomas** en 2021 (SNIPPET-ONLY, LinkedIn). Indica que ya hubo concesión o alianza de nutrición dentro de algún club; conviene confirmarlo internamente antes de buscar un socio nuevo.
+
+---
