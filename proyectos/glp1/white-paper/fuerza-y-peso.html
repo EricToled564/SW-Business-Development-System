@@ -9,14 +9,14 @@
 @page{ size: Letter; margin: 18mm 17mm 17mm 17mm; }
 *{ box-sizing:border-box; }
 html,body{ background:var(--fondo); color:var(--tinta); }
-body{ font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:10.4pt; line-height:1.45; margin:0; }
-h2{ font-size:20pt; line-height:1.15; margin:1mm 0 2mm; }
-h3{ font-size:12.5pt; margin:5mm 0 2mm; }
+body{ font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:10.3pt; line-height:1.47; margin:0; }
+h2{ font-size:18pt; line-height:1.18; margin:1mm 0 2.5mm; }
+h3{ font-size:12pt; margin:5mm 0 2mm; }
 h2,h3,.titulo-graf{ break-after:avoid; page-break-after:avoid; }
-p{ margin:0 0 2.4mm; }
+p{ margin:0 0 2.6mm; }
 ul,ol{ margin:0 0 3mm; padding-left:5mm; } li{ margin:0 0 1.3mm; }
 .etiqueta{ color:var(--rojo); font-weight:700; letter-spacing:.07em; font-size:8.5pt; text-transform:uppercase; }
-.idea{ font-size:12pt; color:var(--gris); margin:0 0 4mm; }
+.idea{ font-size:11.3pt; color:var(--gris); margin:0 0 4mm; }
 .seccion{ break-before:page; }
 table{ width:100%; border-collapse:collapse; margin:2mm 0 1.5mm; font-size:9pt; }
 th{ background:var(--tinta); color:#fff; text-align:left; padding:1.8mm 2.2mm; font-weight:700; }
@@ -30,21 +30,25 @@ tr.destacado td{ background:var(--rosa); font-weight:700; }
 .caja b.t{ display:block; margin-bottom:1mm; }
 .kpis{ display:grid; grid-template-columns:repeat(3,1fr); gap:3mm; margin:2mm 0 4mm; break-inside:avoid; }
 .kpi{ border-top:4px solid var(--rojo); background:var(--suave); padding:3mm; }
-.kpi b{ display:block; font-size:21pt; line-height:1.05; color:var(--oscuro); }
-.kpi span{ font-size:8.8pt; }
+.kpi b{ display:block; font-size:20pt; line-height:1.05; color:var(--oscuro); }
+.kpi span{ font-size:8.7pt; }
+.mensaje{ margin:0 0 3.2mm; break-inside:avoid; }
+.mensaje > b{ display:block; font-size:10.8pt; margin-bottom:1mm; }
+.mensaje ul{ margin-bottom:0; }
 .dos{ display:grid; grid-template-columns:1fr 1fr; gap:5mm; break-inside:avoid; }
 .si,.no{ padding:3mm 4mm; border-radius:2mm; }
 .si{ background:var(--verde-claro); } .no{ background:var(--rosa); }
 .si b,.no b{ display:block; margin-bottom:1.5mm; }
 .paso{ display:grid; grid-template-columns:12mm 1fr; gap:3mm; margin:0 0 3mm; break-inside:avoid; }
 .paso .n{ background:var(--rojo); color:#fff; font-weight:700; font-size:15pt; text-align:center; border-radius:2mm; padding:2mm 0; height:12mm; }
+.declaracion{ border:1px solid var(--linea); border-left:5px solid var(--oscuro); padding:4mm 5mm; font-size:11pt; line-height:1.5; margin:3mm 0 4mm; break-inside:avoid; }
 svg{ width:100%; height:auto; display:block; break-inside:avoid; }
 .portada{ height:243mm; display:flex; flex-direction:column; justify-content:space-between; background:#1d232a; color:#fff; margin:-18mm -17mm 0; padding:24mm 20mm 16mm; break-after:page; }
 .portada h1{ font-size:40pt; margin:4mm 0; }
-.portada .sub{ font-size:14.5pt; color:#d6dbe0; max-width:155mm; }
-.portada .tesis{ background:#262d36; border-left:5px solid var(--rojo); padding:6mm; font-size:13pt; line-height:1.4; }
+.portada .sub{ font-size:14pt; color:#d6dbe0; max-width:158mm; line-height:1.4; }
+.portada .tesis{ background:#262d36; border-left:5px solid var(--rojo); padding:6mm; font-size:12.5pt; line-height:1.45; }
 .portada .pie{ font-size:9pt; color:#aab3bc; border-top:1px solid #3a434d; padding-top:4mm; }
-.indice td{ border-bottom:1px dotted var(--linea); padding:1.6mm 1mm; font-size:10pt; } .indice td.num{ color:var(--gris); }
+.indice td{ border-bottom:1px dotted var(--linea); padding:1.6mm 1mm; font-size:9.8pt; } .indice td.num{ color:var(--gris); }
 .mini{ font-size:8.4pt; color:var(--gris); }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --fondo:#ffffff; } }
 :root[data-theme="dark"]{ --fondo:#ffffff; }
@@ -56,330 +60,374 @@ svg{ width:100%; height:auto; display:block; break-inside:avoid; }
 
 <section class="portada">
   <div>
-    <div class="etiqueta">White paper · Recomendación para el equipo de marketing de Sports World</div>
+    <div class="etiqueta">White paper estratégico · Sports World · Equipo de marketing</div>
     <h1>Fuerza y Peso</h1>
-    <p class="sub">Bajar de peso es lo que más busca quien llega a Sports World. Cuántos socios y prospectos tienen ese objetivo, cuántos están en riesgo por los medicamentos GLP-1, cuánta demanda podría no ocurrir y cómo convertirlo en socios.</p>
+    <p class="sub">Cómo proteger y hacer crecer el segmento de bajar de peso —el núcleo de la demanda de Sports World— ante la adopción de los medicamentos GLP-1.</p>
   </div>
-  <div class="tesis">El medicamento ayuda a bajar de peso. No conserva el músculo ni sostiene el resultado cuando se suspende. Ése es el terreno de Sports World, y ya tiene con qué ocuparlo: 51 clases, el Body Test mensual incluido en cada membresía y 49 clubes.</div>
-  <div class="pie">Noviembre de 2026 · Cifras con corte al 23 de noviembre de 2026 · Documento de recomendación para consideración del equipo de marketing. La información clínica se presenta como contexto de negocio y no sustituye la valoración médica.</div>
+  <div class="tesis">Los GLP-1 exponen 3,059 membresías y $44.3 millones de pesos de Sports World entre 2027 y 2029. El medicamento reduce el peso, pero no conserva el músculo ni sostiene el resultado al suspenderse. Sports World puede ocupar ese espacio con lo que ya tiene: 51 clases, la medición mensual de composición corporal incluida en la membresía y 49 clubes.</div>
+  <div class="pie">Noviembre de 2026 · Cifras con corte al 23 de noviembre de 2026 · Documento de recomendación para consideración del equipo de marketing de Sports World. La información clínica se presenta como contexto de negocio y no sustituye la valoración médica.</div>
 </section>
 
 <section>
   <div class="etiqueta">Contenido</div>
   <h2>Índice</h2>
   <table class="indice">
-    <tr><td>Resumen ejecutivo: el documento en una página</td><td class="num">3</td></tr>
-    <tr><td>1. Cuántas personas buscan bajar de peso y cuántas están en riesgo</td><td class="num">4</td></tr>
-    <tr><td>2. El mercado de GLP-1 en México</td><td class="num">6</td></tr>
-    <tr><td>3. El riesgo de no hacer nada, en números</td><td class="num">7</td></tr>
-    <tr><td>4. Lo que muestra la industria</td><td class="num">9</td></tr>
-    <tr><td>5. Lo que dice la evidencia clínica</td><td class="num">10</td></tr>
-    <tr><td>6. La propuesta: Programa Fuerza y Peso</td><td class="num">11</td></tr>
-    <tr><td>7. Cómo comunicarlo</td><td class="num">13</td></tr>
-    <tr><td>8. Alianzas</td><td class="num">14</td></tr>
-    <tr><td>9. Hoja de ruta y metas</td><td class="num">16</td></tr>
-    <tr><td>10. Señales de alerta y límites legales</td><td class="num">17</td></tr>
-    <tr><td>11. Nuestra recomendación</td><td class="num">18</td></tr>
-    <tr><td>Anexo A. Método y supuestos del modelo</td><td class="num">19</td></tr>
-    <tr><td>Anexo B. Las 51 clases y su papel en el programa</td><td class="num">20</td></tr>
-    <tr><td>Anexo C. Fuentes</td><td class="num">21</td></tr>
+    <tr><td>Resumen ejecutivo</td><td class="num">3</td></tr>
+    <tr><td>1. El segmento de bajar de peso es el núcleo de la demanda</td><td class="num">5</td></tr>
+    <tr><td>2. Los GLP-1 ya compiten por ese segmento</td><td class="num">7</td></tr>
+    <tr><td>3. La exposición de Sports World, cuantificada</td><td class="num">8</td></tr>
+    <tr><td>4. El patrón de la industria</td><td class="num">10</td></tr>
+    <tr><td>5. El espacio que el medicamento deja abierto</td><td class="num">11</td></tr>
+    <tr><td>6. Posicionamiento</td><td class="num">12</td></tr>
+    <tr><td>7. La oferta: Programa Fuerza y Peso</td><td class="num">13</td></tr>
+    <tr><td>8. Activación por segmento y canal</td><td class="num">15</td></tr>
+    <tr><td>9. Red de aliados</td><td class="num">16</td></tr>
+    <tr><td>10. Hoja de ruta y metas de validación</td><td class="num">18</td></tr>
+    <tr><td>11. Señales de alerta y marco regulatorio</td><td class="num">19</td></tr>
+    <tr><td>12. Recomendación y próximos pasos</td><td class="num">20</td></tr>
+    <tr><td>Anexo A. Metodología del modelo de exposición</td><td class="num">21</td></tr>
+    <tr><td>Anexo B. Catálogo de clases y su función en el programa</td><td class="num">22</td></tr>
+    <tr><td>Anexo C. Fuentes</td><td class="num">23</td></tr>
   </table>
-  <div class="caja"><b class="t">Cómo leer las cifras</b>
-    <ul>
-      <li><b>Dato:</b> lo publica la fuente citada.</li>
-      <li><b>Cálculo:</b> operación sobre datos publicados, con la fórmula a la vista.</li>
-      <li><b>Inferencia:</b> valor estimado donde no hay dato público, con su razonamiento. Se marca como tal.</li>
-    </ul>
-    <p class="mini">El modelo de riesgo es un programa que cualquiera puede volver a correr: proyectos/glp1/modelo/riesgo.py.</p>
-  </div>
+  <div class="caja"><b class="t">Nota metodológica</b>Cada cifra se clasifica como <b>dato</b> (publicado por la fuente citada), <b>cálculo</b> (operación sobre datos publicados, con su fórmula) o <b>estimación</b> (valor construido donde no existe dato público, con su razonamiento). La exposición se calculó con un modelo de simulación mensual 2027-2029 sobre los reportes de Sports World a la Bolsa Mexicana de Valores; su método y supuestos están en el Anexo A.</div>
 </section>
 
 <!-- RESUMEN EJECUTIVO -->
 <section class="seccion">
   <div class="etiqueta">Resumen ejecutivo</div>
-  <h2>Si Sports World no actúa, perderá 3,059 membresías y $44.3 millones de 2027 a 2029</h2>
-  <p class="idea">Escenario base. En el escenario acelerado la pérdida llega a 9,806 membresías, y en 2029 equivale a 17.5% del EBITDA anual.</p>
+  <h2>Los GLP-1 exponen 3,059 membresías y $44.3 millones de Sports World entre 2027 y 2029; la respuesta es convertir la membresía en el complemento del tratamiento</h2>
   <div class="kpis">
-    <div class="kpi"><b>3,059</b><span>membresías perdidas, escenario base: 1,243 ventas no realizadas y 1,816 cancelaciones</span></div>
-    <div class="kpi"><b>$44.3 mdp</b><span>ingreso perdido 2027-2029, escenario base; $23.9 mdp solo en 2029</span></div>
-    <div class="kpi"><b>5.4% a 17.5%</b><span>del EBITDA de 2025 que se perdería en 2029, escenarios base y acelerado</span></div>
+    <div class="kpi"><b>8,824</b><span>socios y prospectos con objetivo de bajar de peso que estarán usando un GLP-1 en 2029 (escenario base)</span></div>
+    <div class="kpi"><b>3,059</b><span>membresías perdidas 2027-2029: 1,816 cancelaciones y 1,243 altas que no ocurren</span></div>
+    <div class="kpi"><b>$44.3 mdp</b><span>ingreso perdido 2027-2029; en 2029 equivale a 5.4% del EBITDA (17.5% en el escenario acelerado)</span></div>
   </div>
-  <table>
-    <tr><th style="width:22%">Pregunta</th><th>Respuesta corta</th></tr>
-    <tr><td><b>¿Qué pasa?</b></td><td>Bajar de peso es la mayor demanda del fitness en México: 932,300 búsquedas al mes, y el objetivo más frecuente de quien llega a Sports World. Los medicamentos GLP-1 ya ofrecen una respuesta a esa necesidad, y su uso crece.</td></tr>
-    <tr><td><b>¿Cuántas personas?</b></td><td>En el escenario base, <b>43,671 socios</b> y <b>29,871 altas al año</b> buscan bajar de peso. En 2029, <b>5,240 socios y 3,584 prospectos</b> estarían usando un GLP-1: ése es el grupo en riesgo. De ellos, 838 socios cancelarían y 574 prospectos no se inscribirían ese año.</td></tr>
-    <tr><td><b>¿Cuánto cuesta no actuar?</b></td><td>De 627 a 9,806 membresías y de $9.5 a $136.8 millones de pesos en tres años, según el escenario. El escenario base: 3,059 membresías y $44.3 millones.</td></tr>
-    <tr><td><b>¿Dónde está la oportunidad?</b></td><td>El medicamento hace perder músculo (25% a 38% del peso perdido) y 64.8% lo deja antes de un año. Al dejarlo, se recuperan dos terceras partes del peso. Entrenar fuerza reduce 23% la pérdida de músculo (ensayo aleatorizado, noviembre de 2026).</td></tr>
-    <tr><td><b>¿Qué recomendamos?</b></td><td>Programa Fuerza y Peso: cuatro fases con 17 clases de fuerza del catálogo, el Body Test mensual y alianzas con hospitales, nutrición y comida. Sports World entrena y mide; nunca prescribe.</td></tr>
-    <tr><td><b>¿Qué meta lo paga?</b></td><td>Conservar o ganar <b>2.4 membresías por club al mes</b> compensa el escenario base de 2029. Cada membresía vale en promedio $27,300.</td></tr>
-  </table>
-  <h3>Tres recomendaciones para el equipo de marketing</h3>
-  <ol>
-    <li><b>Comunicar bajar de peso desde la fuerza y la composición corporal,</b> no con la promesa genérica de bajar kilos.</li>
-    <li><b>Probarlo en seis clubes durante 24 semanas</b> (marzo a agosto de 2027), cada uno cerca de un hospital con programa de obesidad.</li>
-    <li><b>Registrar desde enero de 2027 el motivo de cada alta y de cada baja,</b> para medir el riesgo con datos propios.</li>
-  </ol>
+
+  <div class="mensaje"><b>Bajar de peso es el núcleo de la demanda de Sports World.</b>
+    <ul>
+      <li>La fuerza de ventas reporta que ocho a nueve de cada diez prospectos llegan buscando un cambio físico, con bajar de peso como el objetivo más frecuente.</li>
+      <li>Estimamos que 43,671 socios y 29,871 altas al año tienen ese objetivo. Es también la intención de búsqueda de mayor volumen del fitness en México: 932,300 búsquedas al mes.</li>
+    </ul>
+  </div>
+  <div class="mensaje"><b>Los GLP-1 ya compiten por ese segmento, y su adopción se concentra en el perfil socioeconómico de Sports World.</b>
+    <ul>
+      <li>3.8% de los hogares mexicanos tiene al menos un usuario. El tratamiento cuesta de 3.2 a 5.4 veces la cuota promedio de Sports World, por lo que su consumo se concentra en ingreso alto.</li>
+      <li>La versión en pastilla se vende desde el 11 de noviembre de 2026 y la semaglutida genérica puede llegar en 2029.</li>
+    </ul>
+  </div>
+  <div class="mensaje"><b>Sin respuesta, la exposición crece cuatro veces entre 2027 y 2029.</b>
+    <ul>
+      <li>En el escenario base, el ingreso perdido pasa de $5.9 millones en 2027 a $23.9 millones en 2029. El rango de 2027 a 2029 va de 627 a 9,806 membresías según el escenario.</li>
+      <li>Seis de cada diez membresías perdidas son cancelaciones de socios actuales: el riesgo está tanto en retener como en vender.</li>
+    </ul>
+  </div>
+  <div class="mensaje"><b>La industria muestra que el medicamento sustituye a la oferta que solo promete bajar de peso, y complementa a la que construye fuerza y acompañamiento.</b>
+    <ul>
+      <li>WeightWatchers perdió 25.4% de sus suscriptores sin medicamento en un año. En Estados Unidos, la afiliación a clubes en hogares de más de USD 150 mil bajó de 53.5% a 45.0% tras iniciar el tratamiento.</li>
+      <li>En contraste, 27% de los usuarios en Reino Unido aumentó su gasto en ejercicio, y uno de cada cinco de ellos se cambió a un club más premium.</li>
+    </ul>
+  </div>
+  <div class="mensaje"><b>El medicamento deja sin resolver tres problemas que son, precisamente, las capacidades de Sports World.</b>
+    <ul>
+      <li>Entre 25% y 38% del peso perdido es masa magra. 64.8% de los usuarios sin diabetes abandona el tratamiento antes de un año, y al hacerlo recupera dos terceras partes del peso.</li>
+      <li>El primer ensayo aleatorizado con tirzepatida (noviembre de 2026) demostró que entrenar fuerza tres veces por semana reduce 23% la pérdida de masa magra.</li>
+    </ul>
+  </div>
+  <div class="mensaje"><b>Recomendamos el Programa Fuerza y Peso, validado en seis clubes antes de escalar a la red.</b>
+    <ul>
+      <li>Cuatro fases construidas con 17 clases de fuerza del catálogo y el Body Test mensual, más una red de referencia con hospitales, una clínica digital y proveedores de nutrición y alimentación.</li>
+      <li>El programa se paga si conserva o gana 2.4 membresías por club al mes, con un valor promedio de $27,300 por membresía.</li>
+    </ul>
+  </div>
+  <div class="caja verde"><b class="t">Decisiones que proponemos al equipo de marketing</b>
+    <ol style="margin-bottom:0">
+      <li>Adoptar el posicionamiento «bajar de peso conservando el músculo, con medición mensual».</li>
+      <li>Lanzar un piloto de 24 semanas en Antara, Santa Fe, Roma, Xola, Patio Tlalpan y San Pedro, de marzo a agosto de 2027.</li>
+      <li>Registrar desde enero de 2027 el motivo de cada alta y de cada baja, para sustituir las estimaciones de exposición por datos propios.</li>
+    </ol>
+  </div>
 </section>
 
-<!-- 1. DEMANDA -->
+<!-- 1. SEGMENTO -->
 <section class="seccion">
-  <div class="etiqueta">1 · La demanda</div>
-  <h2>43,671 socios y 29,871 prospectos al año buscan bajar de peso; en 2029, 8,824 de ellos estarán en riesgo</h2>
-  <p class="idea">Escenario base. En riesgo = buscan bajar de peso y usan un medicamento GLP-1. Una parte de ese grupo cancela o ya no se inscribe.</p>
+  <div class="etiqueta">1 · El segmento</div>
+  <h2>Bajar de peso es el núcleo de la demanda: 43,671 socios y 29,871 altas al año tienen ese objetivo</h2>
+  <p class="idea">En 2029, 8,824 de esas personas estarán usando un medicamento GLP-1 (escenario base). Ése es el grupo expuesto; una parte de él cancela o deja de inscribirse.</p>
 
-  <div class="titulo-graf">Gráfica 1. Del total a la pérdida, escenario base, 2029</div>
+  <div class="titulo-graf">Figura 1. Del total de socios y altas a la pérdida, escenario base, 2029</div>
   <div style="max-width:82%;margin:0 auto"><svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Socios y altas que buscan bajar de peso, en riesgo y perdidos, escenario base 2029" font-family="Helvetica, Arial, sans-serif" font-size="12"><text x="135.0" y="16.0" font-size="13" fill="#1d232a" font-weight="700" text-anchor="middle">Socios actuales</text><rect x="0.0" y="28" width="270" height="42" rx="4" fill="#9aa3ad"/><text x="135.0" y="47.0" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">97,046</text><text x="135.0" y="63.0" font-size="10.5" fill="#fff" font-weight="400" text-anchor="middle">socios activos</text><rect x="30.0" y="80" width="210" height="42" rx="4" fill="#5b0a0d"/><text x="135.0" y="99.0" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">43,671</text><text x="135.0" y="115.0" font-size="10.5" fill="#fff" font-weight="400" text-anchor="middle">buscan bajar de peso</text><rect x="60.0" y="132" width="150" height="42" rx="4" fill="#d71920"/><text x="135.0" y="151.0" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">5,240</text><text x="135.0" y="167.0" font-size="10.5" fill="#fff" font-weight="400" text-anchor="middle">usan GLP-1: en riesgo</text><rect x="87.0" y="184" width="96" height="42" rx="4" fill="#d71920"/><text x="135.0" y="203.0" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">838</text><text x="135.0" y="219.0" font-size="10.5" fill="#fff" font-weight="400" text-anchor="middle">cancelan</text><text x="465.0" y="16.0" font-size="13" fill="#1d232a" font-weight="700" text-anchor="middle">Altas del año</text><rect x="330.0" y="28" width="270" height="42" rx="4" fill="#9aa3ad"/><text x="465.0" y="47.0" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">66,379</text><text x="465.0" y="63.0" font-size="10.5" fill="#fff" font-weight="400" text-anchor="middle">altas al año</text><rect x="360.0" y="80" width="210" height="42" rx="4" fill="#5b0a0d"/><text x="465.0" y="99.0" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">29,871</text><text x="465.0" y="115.0" font-size="10.5" fill="#fff" font-weight="400" text-anchor="middle">buscan bajar de peso</text><rect x="390.0" y="132" width="150" height="42" rx="4" fill="#d71920"/><text x="465.0" y="151.0" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">3,584</text><text x="465.0" y="167.0" font-size="10.5" fill="#fff" font-weight="400" text-anchor="middle">usan GLP-1: en riesgo</text><rect x="417.0" y="184" width="96" height="42" rx="4" fill="#d71920"/><text x="465.0" y="203.0" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">574</text><text x="465.0" y="219.0" font-size="10.5" fill="#fff" font-weight="400" text-anchor="middle">no se inscriben</text></svg></div>
-  <p class="fuente">Fuente: modelo de riesgo (Anexo A), con 97,046 clientes y 66,379 altas al año de los reportes de Sports World [12]. Las barras no están a escala.</p>
+  <p class="fuente">Fuente: modelo de exposición (Anexo A), sobre 97,046 clientes activos y 66,379 altas al año derivadas de los reportes de Sports World [12]. Las barras no están a escala.</p>
 
-  <div class="titulo-graf">Tabla 1. Las mismas cifras en los tres escenarios, 2029</div>
+  <div class="titulo-graf">Tabla 1. Personas con objetivo de bajar de peso, expuestas y perdidas, 2029</div>
   <table>
     <tr><th></th><th class="num">Conservador</th><th class="num">Base</th><th class="num">Acelerado</th></tr>
-    <tr><td><b>Socios que buscan bajar de peso</b></td><td class="num">31,055</td><td class="num">43,671</td><td class="num">58,228</td></tr>
-    <tr><td>Socios en riesgo (usan GLP-1)</td><td class="num">1,863</td><td class="num">5,240</td><td class="num">11,646</td></tr>
+    <tr><td><b>Socios con objetivo de bajar de peso</b></td><td class="num">31,055</td><td class="num">43,671</td><td class="num">58,228</td></tr>
+    <tr><td>Socios expuestos (usan GLP-1)</td><td class="num">1,863</td><td class="num">5,240</td><td class="num">11,646</td></tr>
     <tr class="destacado"><td>Socios que cancelan en el año</td><td class="num">149</td><td class="num">838</td><td class="num">2,911</td></tr>
-    <tr><td><b>Altas del año que buscan bajar de peso</b></td><td class="num">21,241</td><td class="num">29,871</td><td class="num">39,827</td></tr>
-    <tr><td>Prospectos en riesgo (usan GLP-1)</td><td class="num">1,274</td><td class="num">3,584</td><td class="num">7,965</td></tr>
-    <tr class="destacado"><td>Demanda que no ocurre: altas que no se dan en el año</td><td class="num">102</td><td class="num">574</td><td class="num">1,991</td></tr>
+    <tr><td><b>Altas del año con objetivo de bajar de peso</b></td><td class="num">21,241</td><td class="num">29,871</td><td class="num">39,827</td></tr>
+    <tr><td>Prospectos expuestos (usan GLP-1)</td><td class="num">1,274</td><td class="num">3,584</td><td class="num">7,965</td></tr>
+    <tr class="destacado"><td>Altas que no ocurren en el año</td><td class="num">102</td><td class="num">574</td><td class="num">1,991</td></tr>
   </table>
-  <p class="fuente">Fuente: modelo de riesgo. Supuestos de cada escenario en la sección 3 y el Anexo A.</p>
+  <p class="fuente">Fuente: modelo de exposición. Supuestos por escenario en la sección 3.</p>
 
-  <div class="titulo-graf">Gráfica 2. Por qué casi la mitad: lo que reporta la fuerza de ventas</div>
+  <div class="titulo-graf">Figura 2. Ocho a nueve de cada diez prospectos llegan buscando un cambio físico</div>
   <div style="max-width:58%"><svg viewBox="0 0 480 116" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ocho a nueve de cada diez prospectos buscan un cambio físico" font-family="Helvetica, Arial, sans-serif" font-size="12"><defs><linearGradient id="mitad"><stop offset="50%" stop-color="#d71920"/><stop offset="50%" stop-color="#9aa3ad"/></linearGradient></defs><circle cx="25.0" cy="20.5" r="9.0" fill="#d71920"/><rect x="13.0" y="32.5" width="24.0" height="33.0" rx="10.5" fill="#d71920"/><circle cx="71.0" cy="20.5" r="9.0" fill="#d71920"/><rect x="59.0" y="32.5" width="24.0" height="33.0" rx="10.5" fill="#d71920"/><circle cx="117.0" cy="20.5" r="9.0" fill="#d71920"/><rect x="105.0" y="32.5" width="24.0" height="33.0" rx="10.5" fill="#d71920"/><circle cx="163.0" cy="20.5" r="9.0" fill="#d71920"/><rect x="151.0" y="32.5" width="24.0" height="33.0" rx="10.5" fill="#d71920"/><circle cx="209.0" cy="20.5" r="9.0" fill="#d71920"/><rect x="197.0" y="32.5" width="24.0" height="33.0" rx="10.5" fill="#d71920"/><circle cx="255.0" cy="20.5" r="9.0" fill="#d71920"/><rect x="243.0" y="32.5" width="24.0" height="33.0" rx="10.5" fill="#d71920"/><circle cx="301.0" cy="20.5" r="9.0" fill="#d71920"/><rect x="289.0" y="32.5" width="24.0" height="33.0" rx="10.5" fill="#d71920"/><circle cx="347.0" cy="20.5" r="9.0" fill="#d71920"/><rect x="335.0" y="32.5" width="24.0" height="33.0" rx="10.5" fill="#d71920"/><circle cx="393.0" cy="20.5" r="9.0" fill="url(#mitad)"/><rect x="381.0" y="32.5" width="24.0" height="33.0" rx="10.5" fill="url(#mitad)"/><circle cx="439.0" cy="20.5" r="9.0" fill="#9aa3ad"/><rect x="427.0" y="32.5" width="24.0" height="33.0" rx="10.5" fill="#9aa3ad"/><text x="10.0" y="90.0" font-size="13" fill="#1d232a" font-weight="700" text-anchor="start">8 a 9 de cada 10 prospectos llegan buscando un cambio físico</text><text x="10.0" y="108.0" font-size="12" fill="#5f6b76" font-weight="400" text-anchor="start">Bajar de peso es el objetivo más frecuente</text></svg></div>
-  <p class="fuente">Fuente: entrevistas de campo con la fuerza de ventas de Sports World: «ochenta o noventa por ciento busca un cambio físico» [1]. Bajar de peso es la intención de búsqueda de mayor volumen del fitness en México: 932,300 búsquedas al mes [2].</p>
+  <p class="fuente">Fuente: entrevistas con la fuerza de ventas de Sports World, 2026 [1]. Testimonio de campo. Las fuentes externas coinciden en que bajar de peso es el motivo concreto más frecuente para inscribirse: Fogel y Ustoyev, 2021 [3]; en una cadena de 28,840 socios con meta de peso, 92.2% buscaba bajar (Eguchi et al., 2023) [4]. Con respuesta múltiple, 32% de los usuarios de gimnasio en México lo cita (Mercado Fitness) [6]. El escenario base estima 45%, porque el testimonio de campo incluye también estética y masa muscular; el registro del motivo en cada alta lo convierte en dato.</p>
+</section>
 
-  <h3>Lo que dicen las fuentes externas</h3>
+<section class="seccion">
+  <div class="etiqueta">1 · El segmento</div>
+  <h2>El segmento se divide en tres grupos según su situación frente al tratamiento, y cada uno exige un mensaje distinto</h2>
+  <p class="idea">La segmentación es mutuamente excluyente: toda persona con objetivo de bajar de peso está en tratamiento, lo suspendió o no lo usa. El médico tratante actúa como influenciador de los dos primeros grupos.</p>
   <table>
-    <tr><th>Fuente</th><th>Hallazgo</th></tr>
-    <tr><td>Fogel y Ustoyev, <i>Journal of Consumer Marketing</i>, 2021 [3]</td><td>«El motivo más común para inscribirse a un gimnasio es bajar de peso»</td></tr>
-    <tr><td>Eguchi et al., <i>JMIR</i>, 2023 [4]</td><td>De 28,840 socios de una cadena de gimnasios que fijaron una meta de peso, 92.2% quería bajar</td></tr>
-    <tr><td>Alfawaz et al., 2018 [5]</td><td>Motivos principales en gimnasios: bajar de peso 35% y ganar músculo 35%</td></tr>
-    <tr><td>Mercado Fitness, México [6]</td><td>32% de los usuarios de gimnasio cita bajar de peso (con respuesta múltiple, después de salud)</td></tr>
+    <tr><th style="width:17%">Segmento</th><th>Lo que necesita lograr</th><th>Detonante</th><th>Objeción principal</th><th>Promesa de Sports World</th></tr>
+    <tr><td><b>En tratamiento</b></td><td>Bajar de peso sin perder fuerza ni verse demacrado</td><td>Inicio del tratamiento o indicación médica</td><td>«El medicamento ya hace el trabajo»; náusea y cansancio</td><td>Conservar el músculo, con medición mensual que lo demuestra</td></tr>
+    <tr><td><b>Después del tratamiento</b></td><td>No recuperar el peso perdido</td><td>Suspensión: 64.8% en el primer año</td><td>Frustración por el rebote</td><td>Sostener el resultado con fuerza y hábito</td></tr>
+    <tr><td><b>Sin tratamiento</b></td><td>Bajar de peso con un plan que funcione</td><td>Una fecha, una revisión médica, una prenda</td><td>«¿Y si mejor tomo el medicamento?»</td><td>Un plan medible, compatible con cualquier decisión médica futura</td></tr>
+    <tr><td><b>Médico tratante</b> (influenciador)</td><td>Que su paciente conserve masa magra y no rebote</td><td>Prescripción o suspensión</td><td>Desconfianza de la calidad del gimnasio</td><td>Protocolo, medición y reporte de avance con consentimiento del paciente</td></tr>
   </table>
-  <div class="caja"><b class="t">De dónde sale el 45%</b>Es una inferencia: la fuerza de ventas reporta que 8 o 9 de cada 10 prospectos buscan un cambio físico, que incluye también estética y músculo, y las encuestas externas ubican bajar de peso como el motivo concreto más frecuente. El registro del motivo en cada alta del CRM la convierte en dato.</div>
+  <p class="fuente">Fuente: elaboración propia con la evidencia de las secciones 2 a 5.</p>
+  <h3>Implicaciones para marketing</h3>
+  <ul>
+    <li><b>Socios y prospectos están en los tres grupos.</b> La retención de socios actuales es tan relevante como la captación: concentra seis de cada diez membresías en riesgo.</li>
+    <li><b>El grupo «después del tratamiento» crece cada año</b> por la tasa de abandono, y es el de mayor necesidad de un club: sin ejercicio, el peso regresa.</li>
+    <li><b>El médico es un canal, no solo un influenciador:</b> llega a los dos grupos con mayor exposición antes que cualquier anuncio.</li>
+  </ul>
 </section>
 
 <!-- 2. MERCADO -->
 <section class="seccion">
-  <div class="etiqueta">2 · El mercado</div>
-  <h2>El uso de GLP-1 en México crece y se concentra en el cliente de Sports World</h2>
-  <p class="idea">El tratamiento cuesta de 3.2 a 5.4 veces la cuota mensual de Sports World: lo paga, sobre todo, el mismo cliente.</p>
+  <div class="etiqueta">2 · La amenaza</div>
+  <h2>Los GLP-1 ya compiten por ese segmento, y su adopción se concentra en el perfil socioeconómico de Sports World</h2>
+  <p class="idea">El tratamiento cuesta de 3.2 a 5.4 veces la cuota mensual de Sports World: lo paga, en buena medida, el mismo cliente.</p>
 
-  <div class="titulo-graf">Gráfica 3. Los hitos del mercado</div>
+  <div class="titulo-graf">Figura 3. La oferta de tratamiento se amplía entre 2024 y 2029</div>
   <svg viewBox="0 0 640 95" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Línea de tiempo del mercado de GLP-1 en México" font-family="Helvetica, Arial, sans-serif" font-size="12"><line x1="40" y1="40" x2="600" y2="40" stroke="#9aa3ad" stroke-width="3"/><circle cx="80" cy="40" r="9" fill="#5b0a0d"/><text x="80.0" y="20.0" font-size="12" fill="#5b0a0d" font-weight="700" text-anchor="middle">nov. 2024</text><text x="80.0" y="68.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="middle">Tirzepatida aprobada en</text><text x="80.0" y="83.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="middle">México (diabetes)</text><circle cx="240" cy="40" r="9" fill="#5b0a0d"/><text x="240.0" y="20.0" font-size="12" fill="#5b0a0d" font-weight="700" text-anchor="middle">2026</text><text x="240.0" y="68.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="middle">3.8% de los hogares con</text><text x="240.0" y="83.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="middle">al menos un usuario</text><circle cx="400" cy="40" r="9" fill="#d71920"/><text x="400.0" y="20.0" font-size="12" fill="#d71920" font-weight="700" text-anchor="middle">11 nov. 2026</text><text x="400.0" y="68.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="middle">Wegovy en pastilla</text><text x="400.0" y="83.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="middle">a la venta</text><circle cx="560" cy="40" r="9" fill="#d71920"/><text x="560.0" y="20.0" font-size="12" fill="#d71920" font-weight="700" text-anchor="middle">2029</text><text x="560.0" y="68.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="middle">Posible llegada de</text><text x="560.0" y="83.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="middle">semaglutida genérica</text></svg>
-  <p class="fuente">Fuentes: Lilly; Worldpanel by Numerator; prensa especializada; asociación de fabricantes de genéricos [7][8][9][10].</p>
+  <p class="fuente">Fuentes: Eli Lilly [7]; Worldpanel by Numerator [8]; Saludiario [9]; El Economista [10].</p>
 
-  <div class="titulo-graf">Gráfica 4. Precio mensual del tratamiento frente a la cuota de Sports World (pesos)</div>
+  <div class="titulo-graf">Figura 4. El tratamiento cuesta de 3.2 a 5.4 veces la cuota promedio de Sports World (pesos al mes)</div>
   <svg viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Precio mensual del tratamiento y cuota de Sports World" font-family="Helvetica, Arial, sans-serif" font-size="12"><text x="0.0" y="25.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Wegovy 2.4 mg, precio de lista</text><rect x="215" y="8" width="360.0" height="26" fill="#5b0a0d"/><text x="580.0" y="26.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">$8,167</text><text x="0.0" y="65.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Mounjaro 2.5 mg</text><rect x="215" y="48" width="278.1" height="26" fill="#5b0a0d"/><text x="498.1" y="66.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">$6,310</text><text x="0.0" y="105.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Wegovy 2.4 mg, en oferta</text><rect x="215" y="88" width="216.0" height="26" fill="#d71920"/><text x="436.0" y="106.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">$4,900</text><text x="0.0" y="145.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Cuota promedio de Sports World</text><rect x="215" y="128" width="66.5" height="26" fill="#9aa3ad"/><text x="286.5" y="146.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">$1,508</text></svg>
-  <p class="fuente">Fuentes: Farmacias del Ahorro, noviembre de 2026 [11]; cuota promedio = cálculo sobre el reporte del tercer trimestre de 2026 de Sports World [12].</p>
+  <p class="fuente">Fuentes: Farmacias del Ahorro, noviembre de 2026 [11]; cuota promedio calculada sobre el reporte del tercer trimestre de 2026 de Sports World [12].</p>
 
-  <h3>Las cifras clave</h3>
   <ul>
-    <li><b>3.8% de los hogares</b> tiene al menos un usuario, y otro 5.7% considera usarlos [8].</li>
-    <li>El consumo <b>se concentra en los niveles de ingreso alto</b> (NielsenIQ) [13].</li>
-    <li>Las unidades vendidas crecieron <b>130%</b>, y 98% se vende en farmacias [13].</li>
-    <li>Entre <b>125,000 y 380,000 personas</b> están en tratamiento en un momento dado (estimación cruzada con ventas y precios) [14].</li>
-    <li>En Estados Unidos, donde el precio ya bajó, <b>12% de los adultos</b> usa uno hoy (KFF) [15]. Es la referencia del escenario acelerado.</li>
+    <li><b>Adopción:</b> 3.8% de los hogares tiene al menos un usuario y otro 5.7% considera usarlos [8]. Las unidades vendidas crecieron 130%, y 98% se vende en farmacias [13].</li>
+    <li><b>Concentración:</b> el consumo se concentra en los niveles económicos altos (NielsenIQ) [13]. Entre 125,000 y 380,000 personas están en tratamiento en un momento dado (estimación cruzada con ventas y precios) [14].</li>
+    <li><b>Trayectoria:</b> en Estados Unidos, donde el precio ya bajó, 12% de los adultos usa uno hoy (KFF) [15]. Es la referencia del escenario acelerado.</li>
   </ul>
-  <div class="titulo-graf">Gráfica 5. El tratamiento se abandona y el peso regresa</div>
+
+  <div class="titulo-graf">Figura 5. El tratamiento se abandona y el peso regresa</div>
   <svg viewBox="0 0 630 92" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abandono del tratamiento en un año" font-family="Helvetica, Arial, sans-serif" font-size="12"><circle cx="17.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="8.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="48.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="39.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="79.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="70.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="110.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="101.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="141.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="132.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="172.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="163.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="203.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="194.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="234.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="225.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="265.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="256.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="296.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="287.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="327.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="318.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="358.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="349.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="389.5" cy="14.0" r="6.9" fill="#d71920"/><rect x="380.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#d71920"/><circle cx="420.5" cy="14.0" r="6.9" fill="#5b0a0d"/><rect x="411.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#5b0a0d"/><circle cx="451.5" cy="14.0" r="6.9" fill="#5b0a0d"/><rect x="442.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#5b0a0d"/><circle cx="482.5" cy="14.0" r="6.9" fill="#5b0a0d"/><rect x="473.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#5b0a0d"/><circle cx="513.5" cy="14.0" r="6.9" fill="#5b0a0d"/><rect x="504.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#5b0a0d"/><circle cx="544.5" cy="14.0" r="6.9" fill="#5b0a0d"/><rect x="535.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#5b0a0d"/><circle cx="575.5" cy="14.0" r="6.9" fill="#5b0a0d"/><rect x="566.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#5b0a0d"/><circle cx="606.5" cy="14.0" r="6.9" fill="#5b0a0d"/><rect x="597.3" y="23.2" width="18.4" height="25.3" rx="8.0" fill="#5b0a0d"/><text x="6.0" y="66.0" font-size="12" fill="#d71920" font-weight="700" text-anchor="start">13 de cada 20 (64.8%) dejan el tratamiento antes de un año</text><text x="6.0" y="84.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Al suspenderlo, recuperan dos terceras partes del peso perdido en un año</text></svg>
-  <p class="fuente">Fuentes: Rodriguez et al., JAMA Network Open 2025 [16]; extensión de STEP 1, 2022 [17].</p>
-  <div class="caja"><b class="t">Corrección al documento anterior</b>«710,000 usuarios activos en 2026» no aparece en ninguna fuente pública. Usamos los rangos con fuente que aparecen arriba.</div>
+  <p class="fuente">Fuentes: Rodriguez et al., JAMA Network Open, 2025 [16]; extensión de STEP 1, 2022 [17].</p>
 </section>
 
-<!-- 3. RIESGO -->
+<!-- 3. EXPOSICIÓN -->
 <section class="seccion">
-  <div class="etiqueta">3 · El riesgo cuantificado</div>
-  <h2>Sin respuesta, Sports World pierde entre 627 y 9,806 membresías de 2027 a 2029</h2>
-  <p class="idea">Dos fuentes de pérdida: personas que ya no se inscriben y socios que cancelan porque el medicamento «ya hace el trabajo».</p>
+  <div class="etiqueta">3 · La exposición</div>
+  <h2>Sin respuesta, Sports World pierde entre 627 y 9,806 membresías de 2027 a 2029; el escenario base es de 3,059</h2>
+  <p class="idea">La exposición combina dos efectos: socios que cancelan al iniciar el tratamiento y prospectos que ya no se inscriben.</p>
 
-  <div class="titulo-graf">Gráfica 6. Cómo se calcula</div>
+  <div class="titulo-graf">Figura 6. Mecánica del cálculo</div>
   <svg viewBox="0 0 640 106" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cómo se calcula el riesgo" font-family="Helvetica, Arial, sans-serif" font-size="12"><rect x="0" y="10" width="138" height="62" rx="6" fill="#5b0a0d"/><text x="69.0" y="34.0" font-size="12" fill="#fff" font-weight="700" text-anchor="middle">Altas al año</text><text x="69.0" y="56.0" font-size="12" fill="#fff" font-weight="400" text-anchor="middle">66,379</text><text x="149.0" y="47.0" font-size="18" fill="#1d232a" font-weight="700" text-anchor="middle">×</text><rect x="160" y="10" width="138" height="62" rx="6" fill="#5b0a0d"/><text x="229.0" y="34.0" font-size="12" fill="#fff" font-weight="700" text-anchor="middle">Buscan bajar de peso</text><text x="229.0" y="56.0" font-size="12" fill="#fff" font-weight="400" text-anchor="middle">32% · 45% · 60%</text><text x="309.0" y="47.0" font-size="18" fill="#1d232a" font-weight="700" text-anchor="middle">×</text><rect x="320" y="10" width="138" height="62" rx="6" fill="#d71920"/><text x="389.0" y="34.0" font-size="12" fill="#fff" font-weight="700" text-anchor="middle">Usan GLP-1</text><text x="389.0" y="56.0" font-size="12" fill="#fff" font-weight="400" text-anchor="middle">4% a 20%</text><text x="469.0" y="47.0" font-size="18" fill="#1d232a" font-weight="700" text-anchor="middle">×</text><rect x="480" y="10" width="138" height="62" rx="6" fill="#d71920"/><text x="549.0" y="34.0" font-size="12" fill="#fff" font-weight="700" text-anchor="middle">Ya no se inscriben</text><text x="549.0" y="56.0" font-size="12" fill="#fff" font-weight="400" text-anchor="middle">8% · 16% · 25%</text><text x="0.0" y="98.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">= ventas no realizadas.  Igual con los 97,046 socios activos = cancelaciones adicionales.</text></svg>
-  <p class="fuente">Fuente: modelo de riesgo (Anexo A). Los tres valores de cada caja corresponden a los escenarios conservador, base y acelerado.</p>
+  <p class="fuente">Fuente: modelo de exposición (Anexo A). Cada caja muestra los valores de los escenarios conservador, base y acelerado.</p>
 
+  <div class="titulo-graf">Tabla 2. Supuestos por escenario</div>
   <table>
     <tr><th>Supuesto</th><th class="num">Conservador</th><th class="num">Base</th><th class="num">Acelerado</th><th>Sustento</th></tr>
-    <tr><td>Altas y socios que buscan bajar de peso</td><td class="num">32%</td><td class="num">45%</td><td class="num">60%</td><td>Encuesta en México (32%) [6]; fuerza de ventas de SW, «el objetivo más frecuente» [1]; base y acelerado son inferencia</td></tr>
+    <tr><td>Socios y altas con objetivo de bajar de peso</td><td class="num">32%</td><td class="num">45%</td><td class="num">60%</td><td>Encuesta en México (32%) [6]; fuerza de ventas [1]. Base y acelerado son estimación</td></tr>
     <tr><td>Uso de GLP-1 en ese grupo, 2027 / 2028 / 2029</td><td class="num">4 / 5 / 6%</td><td class="num">6 / 8 / 12%</td><td class="num">8 / 12 / 20%</td><td>3.8% de hogares en 2026 [8]; concentración en ingreso alto [13]; 12% en EE. UU. [15]</td></tr>
-    <tr><td>Usuarios que ya no se inscriben o cancelan</td><td class="num">8%</td><td class="num">16%</td><td class="num">25%</td><td>Afiliación de hogares de más de USD 150 mil: 53.5% → 45.0% [18]; WeightWatchers sin medicamento: −25.4% [19]</td></tr>
+    <tr><td>Usuarios que cancelan o no se inscriben</td><td class="num">8%</td><td class="num">16%</td><td class="num">25%</td><td>Afiliación de hogares de más de USD 150 mil: 53.5% → 45.0% [18]; WeightWatchers sin medicamento: −25.4% [19]</td></tr>
   </table>
 
-  <div class="titulo-graf">Gráfica 7. Membresías perdidas por año (ventas no realizadas + cancelaciones)</div>
+  <div class="titulo-graf">Figura 7. Membresías perdidas por año y escenario</div>
   <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Membresías perdidas por año y escenario" font-family="Helvetica, Arial, sans-serif" font-size="12"><line x1="60" x2="630" y1="250.0" y2="250.0" stroke="#e9ecef"/><text x="52.0" y="254.0" font-size="11" fill="#5f6b76" font-weight="400" text-anchor="end">0</text><line x1="60" x2="630" y1="206.0" y2="206.0" stroke="#e9ecef"/><text x="52.0" y="210.0" font-size="11" fill="#5f6b76" font-weight="400" text-anchor="end">1,000</text><line x1="60" x2="630" y1="162.0" y2="162.0" stroke="#e9ecef"/><text x="52.0" y="166.0" font-size="11" fill="#5f6b76" font-weight="400" text-anchor="end">2,000</text><line x1="60" x2="630" y1="118.0" y2="118.0" stroke="#e9ecef"/><text x="52.0" y="122.0" font-size="11" fill="#5f6b76" font-weight="400" text-anchor="end">3,000</text><line x1="60" x2="630" y1="74.0" y2="74.0" stroke="#e9ecef"/><text x="52.0" y="78.0" font-size="11" fill="#5f6b76" font-weight="400" text-anchor="end">4,000</text><line x1="60" x2="630" y1="30.0" y2="30.0" stroke="#e9ecef"/><text x="52.0" y="34.0" font-size="11" fill="#5f6b76" font-weight="400" text-anchor="end">5,000</text><rect x="75.0" y="242.7" width="44" height="7.3" fill="#9aa3ad"/><text x="97.0" y="237.7" font-size="11" fill="#1d232a" font-weight="700" text-anchor="middle">167</text><rect x="131.0" y="218.9" width="44" height="31.1" fill="#d71920"/><text x="153.0" y="213.9" font-size="11" fill="#1d232a" font-weight="700" text-anchor="middle">706</text><rect x="187.0" y="163.7" width="44" height="86.3" fill="#5b0a0d"/><text x="209.0" y="158.7" font-size="11" fill="#1d232a" font-weight="700" text-anchor="middle">1,962</text><text x="153.0" y="270.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="middle">2027</text><rect x="258.3" y="240.8" width="44" height="9.2" fill="#9aa3ad"/><text x="280.3" y="235.8" font-size="11" fill="#1d232a" font-weight="700" text-anchor="middle">209</text><rect x="314.3" y="208.6" width="44" height="41.4" fill="#d71920"/><text x="336.3" y="203.6" font-size="11" fill="#1d232a" font-weight="700" text-anchor="middle">941</text><rect x="370.3" y="120.6" width="44" height="129.4" fill="#5b0a0d"/><text x="392.3" y="115.6" font-size="11" fill="#1d232a" font-weight="700" text-anchor="middle">2,942</text><text x="336.3" y="270.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="middle">2028</text><rect x="441.7" y="239.0" width="44" height="11.0" fill="#9aa3ad"/><text x="463.7" y="234.0" font-size="11" fill="#1d232a" font-weight="700" text-anchor="middle">251</text><rect x="497.7" y="187.9" width="44" height="62.1" fill="#d71920"/><text x="519.7" y="182.9" font-size="11" fill="#1d232a" font-weight="700" text-anchor="middle">1,412</text><rect x="553.7" y="34.3" width="44" height="215.7" fill="#5b0a0d"/><text x="575.7" y="29.3" font-size="11" fill="#1d232a" font-weight="700" text-anchor="middle">4,902</text><text x="519.7" y="270.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="middle">2029</text><rect x="75" y="278" width="12" height="12" fill="#9aa3ad"/><text x="93.0" y="288.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Conservador</text><rect x="205" y="278" width="12" height="12" fill="#d71920"/><text x="223.0" y="288.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Base</text><rect x="335" y="278" width="12" height="12" fill="#5b0a0d"/><text x="353.0" y="288.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Acelerado</text></svg>
-  <p class="fuente">Fuente: modelo de riesgo con datos de los reportes de Sports World a la BMV [12].</p>
+  <p class="fuente">Fuente: modelo de exposición, con datos de los reportes de Sports World a la BMV [12].</p>
 </section>
 
 <section class="seccion">
-  <div class="etiqueta">3 · El riesgo cuantificado</div>
-  <h2>En el escenario base, el ingreso perdido en 2029 es cuatro veces el de 2027</h2>
-  <p class="idea">Las membresías que faltan se acumulan, y el uso del medicamento sube cada año.</p>
-
+  <div class="etiqueta">3 · La exposición</div>
+  <h2>En el escenario base, el ingreso perdido se multiplica por cuatro entre 2027 y 2029 y alcanza 5.4% del EBITDA</h2>
+  <p class="idea">Las membresías perdidas se acumulan año con año mientras el uso del medicamento aumenta.</p>
+  <div class="titulo-graf">Tabla 3. Exposición acumulada 2027-2029</div>
   <table>
-    <tr><th>Escenario</th><th class="num">Ventas no realizadas</th><th class="num">Cancelaciones</th><th class="num">Membresías perdidas</th><th class="num">Ingreso perdido 2027-2029</th><th class="num">% del EBITDA en 2029</th></tr>
+    <tr><th>Escenario</th><th class="num">Altas que no ocurren</th><th class="num">Cancelaciones</th><th class="num">Membresías perdidas</th><th class="num">Ingreso perdido</th><th class="num">% del EBITDA en 2029</th></tr>
     <tr><td>Conservador</td><td class="num">255</td><td class="num">372</td><td class="num">627</td><td class="num">$9.5 mdp</td><td class="num">1.1%</td></tr>
     <tr class="destacado"><td>Base</td><td class="num">1,243</td><td class="num">1,816</td><td class="num">3,059</td><td class="num">$44.3 mdp</td><td class="num">5.4%</td></tr>
     <tr><td>Acelerado</td><td class="num">3,983</td><td class="num">5,823</td><td class="num">9,806</td><td class="num">$136.8 mdp</td><td class="num">17.5%</td></tr>
   </table>
-  <p class="fuente">Fuente: modelo de riesgo. EBITDA de 2025 sin IFRS 16: $354.8 mdp [12]; se supone que 80% del ingreso perdido cae a EBITDA porque el costo de un club es mayormente fijo (inferencia).</p>
+  <p class="fuente">Fuente: modelo de exposición. EBITDA de 2025 sin IFRS 16: $354.8 mdp [12]. Se estima que 80% del ingreso perdido impacta el EBITDA, dado que el costo de un club es mayormente fijo.</p>
 
-  <div class="titulo-graf">Gráfica 8. Ingreso perdido acumulado por escenario</div>
+  <div class="titulo-graf">Figura 8. Ingreso perdido acumulado por escenario</div>
   <svg viewBox="0 0 640 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ingreso perdido acumulado 2027 a 2029" font-family="Helvetica, Arial, sans-serif" font-size="12"><text x="0.0" y="30.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Conservador</text><rect x="110.0" y="10" width="4.4" height="30" fill="#9aa3ad" fill-opacity="0.45"/><rect x="114.4" y="10" width="10.4" height="30" fill="#9aa3ad" fill-opacity="0.7"/><rect x="124.8" y="10" width="15.1" height="30" fill="#9aa3ad" fill-opacity="1.0"/><text x="147.9" y="30.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">$9.5 mdp</text><text x="0.0" y="82.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Base</text><rect x="110.0" y="62" width="18.5" height="30" fill="#d71920" fill-opacity="0.45"/><rect x="128.5" y="62" width="45.6" height="30" fill="#d71920" fill-opacity="0.7"/><rect x="174.1" y="62" width="75.1" height="30" fill="#d71920" fill-opacity="1.0"/><text x="257.2" y="82.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">$44.3 mdp</text><text x="0.0" y="134.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Acelerado</text><rect x="110.0" y="114" width="51.5" height="30" fill="#5b0a0d" fill-opacity="0.45"/><rect x="161.5" y="114" width="134.8" height="30" fill="#5b0a0d" fill-opacity="0.7"/><rect x="296.4" y="114" width="243.6" height="30" fill="#5b0a0d" fill-opacity="1.0"/><text x="547.9" y="134.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">$136.8 mdp</text><text x="110.0" y="172.0" font-size="11" fill="#5f6b76" font-weight="400" text-anchor="start">Tono claro a oscuro: 2027, 2028 y 2029</text></svg>
 
-  <div class="titulo-graf">Gráfica 9. Qué tanto cambia el ingreso perdido en 2029 si los supuestos fallan (escenario base, 45% de motivo)</div>
+  <div class="titulo-graf">Figura 9. Sensibilidad del ingreso perdido en 2029 al uso del medicamento y a la tasa de sustitución (escenario base)</div>
   <svg viewBox="0 0 560 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ingreso perdido en 2029 según uso del medicamento y sustitución" font-family="Helvetica, Arial, sans-serif" font-size="12"><text x="150.0" y="16.0" font-size="11" fill="#5f6b76" font-weight="400" text-anchor="start">Sustitución: cuántos usuarios ya no se inscriben o cancelan</text><text x="195.0" y="36.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="middle">8%</text><text x="335.0" y="36.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="middle">16%</text><text x="475.0" y="36.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="middle">25%</text><text x="0.0" y="73.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Uso de GLP-1 en 2029: 6%</text><rect x="130" y="46" width="132" height="40" fill="#d71920" fill-opacity="0.15"/><text x="196.0" y="72.0" font-size="13" fill="#1d232a" font-weight="700" text-anchor="middle">$6.0 mdp</text><rect x="270" y="46" width="132" height="40" fill="#d71920" fill-opacity="0.24"/><text x="336.0" y="72.0" font-size="13" fill="#1d232a" font-weight="700" text-anchor="middle">$12.0 mdp</text><rect x="410" y="46" width="132" height="40" fill="#d71920" fill-opacity="0.34"/><text x="476.0" y="72.0" font-size="13" fill="#1d232a" font-weight="700" text-anchor="middle">$18.7 mdp</text><text x="0.0" y="119.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Uso de GLP-1 en 2029: 12%</text><rect x="130" y="92" width="132" height="40" fill="#d71920" fill-opacity="0.24"/><text x="196.0" y="118.0" font-size="13" fill="#1d232a" font-weight="700" text-anchor="middle">$12.0 mdp</text><rect x="270" y="92" width="132" height="40" fill="#d71920" fill-opacity="0.42" stroke="#1d232a" stroke-width="3"/><text x="336.0" y="118.0" font-size="13" fill="#1d232a" font-weight="700" text-anchor="middle">$23.9 mdp</text><rect x="410" y="92" width="132" height="40" fill="#d71920" fill-opacity="0.62"/><text x="476.0" y="118.0" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">$37.4 mdp</text><text x="0.0" y="165.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Uso de GLP-1 en 2029: 20%</text><rect x="130" y="138" width="132" height="40" fill="#d71920" fill-opacity="0.36"/><text x="196.0" y="164.0" font-size="13" fill="#1d232a" font-weight="700" text-anchor="middle">$19.9 mdp</text><rect x="270" y="138" width="132" height="40" fill="#d71920" fill-opacity="0.66"/><text x="336.0" y="164.0" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">$39.8 mdp</text><rect x="410" y="138" width="132" height="40" fill="#d71920" fill-opacity="1.00"/><text x="476.0" y="164.0" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">$62.3 mdp</text></svg>
-  <p class="fuente">Fuente: modelo de riesgo. El recuadro marcado es el escenario base.</p>
-
-  <h3>Cómo se lee</h3>
+  <p class="fuente">Fuente: modelo de exposición. El recuadro marcado corresponde al escenario base.</p>
   <ul>
-    <li><b>Seis de cada diez membresías perdidas son cancelaciones</b> de socios actuales: el riesgo está tanto en retener como en vender.</li>
-    <li><b>El escenario acelerado depende de una fecha:</b> la llegada de genéricos, posible desde 2029.</li>
-    <li><b>No incluye el costo de oportunidad:</b> los usuarios que sí buscan un club premium y se van con otro operador (sección 4).</li>
+    <li><b>Seis de cada diez membresías perdidas son cancelaciones</b> de socios actuales.</li>
+    <li><b>El escenario acelerado está ligado a un hito identificable:</b> la llegada de genéricos, posible desde 2029.</li>
+    <li><b>El cálculo excluye el costo de oportunidad</b> de los usuarios que buscan activamente un club premium y lo encuentran en otro operador (sección 4).</li>
   </ul>
 </section>
 
 <!-- 4. INDUSTRIA -->
 <section class="seccion">
-  <div class="etiqueta">4 · La industria</div>
-  <h2>Pierde quien solo promete bajar de peso; gana quien acompaña el tratamiento</h2>
-  <p class="idea">El medicamento no vacía los gimnasios. Separa a los que venden kilos de los que venden fuerza, medición y acompañamiento.</p>
+  <div class="etiqueta">4 · El patrón de la industria</div>
+  <h2>El medicamento sustituye a la oferta que solo promete bajar de peso y complementa a la que construye fuerza y acompañamiento</h2>
+  <p class="idea">La variable que separa a ganadores de perdedores no es la exposición al medicamento, sino lo que cada operador vende.</p>
 
-  <div class="titulo-graf">Gráfica 10. Tres indicadores antes y después del medicamento</div>
+  <div class="titulo-graf">Figura 10. Donde la oferta es solo bajar de peso, la demanda cae</div>
   <svg viewBox="0 0 640 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Antes y después del medicamento en tres indicadores" font-family="Helvetica, Arial, sans-serif" font-size="12"><text x="0.0" y="22.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Afiliación a clubes, hogares de más de USD 150 mil (William Blair)</text><rect x="0" y="30" width="400.0" height="14" fill="#9aa3ad"/><text x="406.0" y="42.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="start">Antes: 53.5%</text><rect x="0" y="47" width="336.4" height="14" fill="#d71920"/><text x="342.4" y="59.0" font-size="11" fill="#d71920" font-weight="700" text-anchor="start">Después: 45.0%</text><text x="0.0" y="84.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Suscriptores sin medicamento de WeightWatchers (índice 100 = año anterior)</text><rect x="0" y="92" width="400.0" height="14" fill="#9aa3ad"/><text x="406.0" y="104.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="start">Antes: 100</text><rect x="0" y="109" width="298.4" height="14" fill="#d71920"/><text x="304.4" y="121.0" font-size="11" fill="#d71920" font-weight="700" text-anchor="start">Después: 74.6</text><text x="0.0" y="146.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Pasos diarios de usuarios de GLP-1 (ENDO 2026)</text><rect x="0" y="154" width="400.0" height="14" fill="#9aa3ad"/><text x="406.0" y="166.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="start">Antes: 5,047</text><rect x="0" y="171" width="355.6" height="14" fill="#d71920"/><text x="361.6" y="183.0" font-size="11" fill="#d71920" font-weight="700" text-anchor="start">Después: 4,487</text></svg>
   <p class="fuente">Fuentes: William Blair, mayo de 2026 [18]; WW International, 2025 [19]; ENDO 2026 [20].</p>
 
-  <div class="titulo-graf">Gráfica 11. Pero una parte de los usuarios gasta más en ejercicio</div>
+  <div class="titulo-graf">Figura 11. Donde la oferta acompaña el tratamiento, el gasto en ejercicio aumenta</div>
   <svg viewBox="0 0 640 104" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cambio en gasto en ejercicio de usuarios de GLP-1" font-family="Helvetica, Arial, sans-serif" font-size="12"><text x="0.0" y="14.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Usuarios de GLP-1 que cambiaron su gasto en ejercicio (PwC Reino Unido, más de 2,300 usuarios)</text><rect x="0" y="26" width="432" height="30" fill="#2f7d57"/><text x="8.0" y="46.0" font-size="12" fill="#fff" font-weight="700" text-anchor="start">27% gasta más</text><rect x="436" y="26" width="80" height="30" fill="#d71920"/><text x="442.0" y="46.0" font-size="11" fill="#fff" font-weight="700" text-anchor="start">5% menos</text><text x="0.0" y="80.0" font-size="11" fill="#1d232a" font-weight="700" text-anchor="start">De quienes gastan más:</text><text x="0.0" y="96.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="start">41% se inscribió a un gimnasio o a clases  ·  20% se cambió a un club más premium  ·  16% contrató entrenador</text></svg>
   <p class="fuente">Fuente: PwC Reino Unido, julio de 2026 [21].</p>
 
+  <div class="titulo-graf">Tabla 4. Cómo han respondido los operadores</div>
   <table>
-    <tr><th>Operador</th><th>Qué hizo</th><th>Lección para Sports World</th></tr>
-    <tr><td>Life Time (EE. UU.)</td><td>Clínica MIORA dentro del club; USD 599 la evaluación inicial</td><td>El modelo más ambicioso; no ha publicado resultados</td></tr>
-    <tr><td>Planet Fitness, Crunch (EE. UU.)</td><td>Referencia a clínicas externas (Ro, Thrive)</td><td>El modelo de mayor escala, y el único compatible con no prescribir</td></tr>
-    <tr><td>Smart Fit México</td><td>Medición de composición corporal a $69.90 al mes</td><td>Sports World ya la incluye en la membresía, gratis</td></tr>
-    <tr><td>WeightWatchers</td><td>Sin medicamento: −25.4% de suscriptores. Con medicamento: +45.9%</td><td>La promesa de hábitos sola no compite con el fármaco</td></tr>
+    <tr><th>Operador</th><th>Respuesta</th><th>Implicación para Sports World</th></tr>
+    <tr><td>Life Time (EE. UU.)</td><td>Clínica MIORA dentro del club; USD 599 la evaluación inicial</td><td>Modelo de mayor alcance; exige licencia sanitaria y no ha publicado resultados</td></tr>
+    <tr><td>Planet Fitness y Crunch (EE. UU.)</td><td>Referencia a clínicas externas (Ro, Thrive)</td><td>Modelo de mayor escala y compatible con no prescribir</td></tr>
+    <tr><td>Smart Fit México</td><td>Medición de composición corporal a $69.90 al mes</td><td>Sports World la ofrece incluida en la membresía</td></tr>
+    <tr><td>WeightWatchers</td><td>Programa sin medicamento: −25.4%; con medicamento: +45.9%</td><td>La promesa de hábitos sin acompañamiento clínico no compite</td></tr>
   </table>
-  <p class="fuente">Fuentes: Inspire360, 2026 [22]; sitios de cada operador; WW International [19].</p>
-  <div class="caja verde"><b class="t">La ventaja de Sports World</b>Toda membresía incluye un Body Test by SECA gratuito cada mes [23]. Es el instrumento central de los programas extranjeros para esta población, y Smart Fit lo cobra aparte.</div>
+  <p class="fuente">Fuentes: Inspire360, 2026 [22]; sitios oficiales de cada operador; WW International [19]. En México, ningún operador tiene hoy un programa para esta población.</p>
 </section>
 
 <!-- 5. EVIDENCIA -->
 <section class="seccion">
-  <div class="etiqueta">5 · La evidencia</div>
-  <h2>El medicamento quita músculo; el entrenamiento de fuerza lo protege</h2>
-  <p class="idea">Ésta es la razón clínica de que el club sea necesario, y la base del mensaje.</p>
+  <div class="etiqueta">5 · El espacio abierto</div>
+  <h2>El medicamento deja tres problemas sin resolver —pérdida de masa magra, abandono y rebote—, y los tres son capacidades de Sports World</h2>
+  <p class="idea">Ésta es la razón clínica que sostiene la posición y el mensaje.</p>
 
-  <div class="titulo-graf">Gráfica 12. De qué está hecho el peso que se pierde</div>
+  <div class="titulo-graf">Figura 12. Entre 25% y 38% del peso perdido con medicamento es masa magra</div>
   <svg viewBox="0 0 600 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Composición del peso perdido con medicamento" font-family="Helvetica, Arial, sans-serif" font-size="12"><text x="0.0" y="30.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Semaglutida (STEP 1)</text><rect x="190" y="10" width="248" height="30" fill="#9aa3ad"/><text x="198.0" y="30.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Grasa 62%</text><rect x="438" y="10" width="152" height="30" fill="#d71920"/><text x="444.0" y="30.0" font-size="12" fill="#fff" font-weight="700" text-anchor="start">Masa magra 38%</text><text x="0.0" y="80.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Tirzepatida (SURMOUNT-1)</text><rect x="190" y="60" width="300" height="30" fill="#9aa3ad"/><text x="198.0" y="80.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Grasa 75%</text><rect x="490" y="60" width="100" height="30" fill="#d71920"/><text x="496.0" y="80.0" font-size="12" fill="#fff" font-weight="700" text-anchor="start">Masa magra 25%</text></svg>
   <p class="fuente">Fuentes: STEP 1, cálculo sobre datos del registro [24]; SURMOUNT-1 [25].</p>
 
-  <div class="titulo-graf">Gráfica 13. Masa magra perdida en 40 semanas de tirzepatida, con y sin fuerza</div>
+  <div class="titulo-graf">Figura 13. Con entrenamiento de fuerza, la pérdida de masa magra se reduce 23% sin afectar la pérdida de peso</div>
   <svg viewBox="0 0 640 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Masa magra perdida con y sin entrenamiento de fuerza" font-family="Helvetica, Arial, sans-serif" font-size="12"><text x="0.0" y="18.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Tirzepatida sola</text><rect x="0" y="26" width="354.9" height="28" fill="#9aa3ad"/><text x="362.9" y="45.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">−4.67 kg de masa magra</text><text x="0.0" y="80.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">Tirzepatida + fuerza 3 veces por semana</text><rect x="0" y="88" width="271.3" height="28" fill="#d71920"/><text x="279.3" y="107.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">−3.57 kg de masa magra</text><text x="0.0" y="160.0" font-size="11" fill="#5f6b76" font-weight="400" text-anchor="start">Pérdida de peso igual en ambos grupos: −22.61 y −22.28 kg. Con fuerza, 23% menos masa magra perdida.</text></svg>
-  <p class="fuente">Fuente: Green et al., Nature Medicine, 9 de noviembre de 2026; ensayo aleatorizado con 120 adultos [26].</p>
+  <p class="fuente">Fuente: Green et al., Nature Medicine, 9 de noviembre de 2026; ensayo aleatorizado con 120 adultos durante 40 semanas [26].</p>
 
+  <div class="titulo-graf">Tabla 5. Lo que recomiendan las sociedades médicas</div>
   <table>
-    <tr><th>Recomendación de las sociedades médicas</th><th>Cifra</th></tr>
-    <tr><td>Entrenamiento de fuerza</td><td>Al menos 3 veces por semana (asesoría conjunta ACLM, ASN, OMA y TOS, 2025) [27]; al menos 2 (guía mexicana SMNE, 2024) [28]</td></tr>
-    <tr><td>Actividad aeróbica</td><td>150 a 300 minutos a la semana [27][28]</td></tr>
-    <tr><td>Proteína durante la pérdida activa</td><td>Se han propuesto 1.2 a 1.6 g por kg al día [27]</td></tr>
+    <tr><th>Componente</th><th>Recomendación</th></tr>
+    <tr><td>Entrenamiento de fuerza</td><td>Al menos 3 veces por semana (asesoría conjunta ACLM, ASN, OMA y TOS, 2025) [27]; al menos 2 (Guía mexicana SMNE, 2024) [28]</td></tr>
+    <tr><td>Actividad aeróbica</td><td>De 150 a 300 minutos a la semana [27][28]</td></tr>
+    <tr><td>Proteína en la pérdida activa</td><td>Se han propuesto de 1.2 a 1.6 g por kg de peso al día [27]</td></tr>
     <tr><td>Medición</td><td>Composición corporal, no solo peso [27]</td></tr>
-    <tr><td>Después de suspender</td><td>Con ejercicio supervisado se recuperan 6.0 kg menos en un año (Jensen, 2024) [29]</td></tr>
+    <tr><td>Después de suspender</td><td>Con ejercicio supervisado se recuperan 6.0 kg menos en un año (Jensen et al., 2024) [29]</td></tr>
   </table>
-  <div class="caja"><b class="t">Cuidados para entrenar</b>
-    <ul>
-      <li>Náusea: 44.1% con semaglutida y 25% a 34% con tirzepatida [24][25].</li>
-      <li>Baja de azúcar en sangre si se combina con ciertos medicamentos para la diabetes [30].</li>
-      <li>Riesgo de deshidratación [30].</li>
-    </ul>
-  </div>
+  <p class="mini">Consideraciones para el entrenamiento: náusea en 44.1% de los usuarios de semaglutida y en 25% a 34% de tirzepatida [24][25]; riesgo de baja de azúcar en sangre combinado con ciertos medicamentos para la diabetes, y de deshidratación [30].</p>
 </section>
 
-<!-- 6. PROPUESTA -->
+<!-- 6. POSICIONAMIENTO -->
 <section class="seccion">
-  <div class="etiqueta">6 · La propuesta</div>
-  <h2>Programa Fuerza y Peso: cuatro fases con las clases que ya existen</h2>
-  <p class="idea">No requiere producto nuevo: clases del catálogo, el Body Test mensual, entrenamiento personal y nutrición.</p>
+  <div class="etiqueta">6 · Posicionamiento</div>
+  <h2>Sports World debe ocupar la posición de complemento del tratamiento, sostenida en un atributo que solo él tiene: la medición mensual incluida</h2>
+  <p class="idea">El espacio está libre: los gimnasios venden acceso, los programas de dieta venden kilos y las clínicas venden el medicamento. Nadie vende la calidad de la pérdida.</p>
 
-  <div class="titulo-graf">Gráfica 14. Las cuatro fases</div>
+  <div class="declaracion">Para las personas que buscan bajar de peso —con o sin tratamiento médico— y que no quieren perder fuerza ni recuperar lo perdido, <b>Sports World es el club que convierte la pérdida de peso en composición corporal medible</b>. A diferencia de los gimnasios que solo ofrecen acceso y de los programas que solo prometen kilos, Sports World combina entrenamiento de fuerza programado, medición mensual incluida en la membresía y una red de referencia médica en 49 clubes.</div>
+
+  <div class="titulo-graf">Tabla 6. Ventaja frente a las alternativas</div>
+  <table>
+    <tr><th>Atributo</th><th>Sports World</th><th>Alternativas</th><th>Nivel de ventaja</th></tr>
+    <tr><td>Medición de composición corporal</td><td>Body Test by SECA mensual, incluido [23]</td><td>Smart Fit la cobra a $69.90 al mes; los programas de dieta no la ofrecen</td><td><b>Único</b></td></tr>
+    <tr><td>Entrenamiento de fuerza programado</td><td>17 clases de fuerza en el catálogo, más entrenamiento personal</td><td>Gimnasios de bajo costo: acceso a equipo sin programación</td><td><b>Superior</b></td></tr>
+    <tr><td>Cercanía a programas hospitalarios de obesidad</td><td>Cuatro clubes a menos de 1 km de un programa institucional</td><td>Sin vínculo publicado de ningún operador en México</td><td><b>Único</b></td></tr>
+    <tr><td>Alcance</td><td>49 clubes en 14 zonas metropolitanas</td><td>Clínicas y estudios con una o pocas sedes</td><td><b>Superior</b></td></tr>
+  </table>
+  <p class="fuente">Fuentes: Sports World [23]; Smart Fit [22]; páginas oficiales de los hospitales [35]. Número de clubes al tercer trimestre de 2026 [12].</p>
+
+  <div class="caja verde"><b class="t">Mensaje central</b>«Baja de peso sin perder músculo. Te medimos cada mes para que veas que lo que pierdes es grasa, y te acompañamos para que el resultado se quede.»</div>
+</section>
+
+<!-- 7. OFERTA -->
+<section class="seccion">
+  <div class="etiqueta">7 · La oferta</div>
+  <h2>El Programa Fuerza y Peso traduce la posición en cuatro fases construidas con el catálogo actual, sin inversión en producto</h2>
+  <p class="idea">Cada fase corresponde a un momento del tratamiento y a uno de los segmentos de la sección 1.</p>
+
+  <div class="titulo-graf">Figura 14. Las cuatro fases del programa</div>
   <svg viewBox="0 0 640 142" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Las cuatro fases del programa" font-family="Helvetica, Arial, sans-serif" font-size="12"><path d="M0 0 H148 L158 40 L148 80 H0 L10 40 Z" fill="#9aa3ad"/><text x="79.0" y="30.0" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">1 · Adaptación</text><text x="79.0" y="52.0" font-size="11" fill="#fff" font-weight="400" text-anchor="middle">Semanas 1 a 6</text><text x="79.0" y="100.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="middle">2 fuerza</text><text x="79.0" y="115.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="middle">2 cardio suave</text><text x="79.0" y="130.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="middle">1 movilidad</text><path d="M160 0 H308 L318 40 L308 80 H160 L170 40 Z" fill="#d71920"/><text x="239.0" y="30.0" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">2 · Conservar</text><text x="239.0" y="52.0" font-size="11" fill="#fff" font-weight="400" text-anchor="middle">Semanas 7 a 16</text><text x="239.0" y="100.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="middle">3 fuerza</text><text x="239.0" y="115.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="middle">150 min cardio</text><text x="239.0" y="130.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="middle">1 movilidad</text><path d="M320 0 H468 L478 40 L468 80 H320 L330 40 Z" fill="#5b0a0d"/><text x="399.0" y="30.0" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">3 · Recomponer</text><text x="399.0" y="52.0" font-size="11" fill="#fff" font-weight="400" text-anchor="middle">Semanas 17 a 24</text><text x="399.0" y="100.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="middle">3 a 4 fuerza</text><text x="399.0" y="115.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="middle">1 a 2 intensidad</text><path d="M480 0 H628 L638 40 L628 80 H480 L490 40 Z" fill="#1d232a"/><text x="559.0" y="30.0" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">4 · Sostener</text><text x="559.0" y="52.0" font-size="11" fill="#fff" font-weight="400" text-anchor="middle">12 meses</text><text x="559.0" y="100.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="middle">3 fuerza</text><text x="559.0" y="115.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="middle">baile para el hábito</text></svg>
 
+  <div class="titulo-graf">Tabla 7. Clases del catálogo por fase</div>
   <table>
-    <tr><th>Fase</th><th>Clases del catálogo</th></tr>
-    <tr><td><b>1 · Adaptación</b><br><span class="mini">inicio del medicamento</span></td><td>Tone, Reformer Pilates, Mat Pilates, Total Barre, Core · Cycling suave, Race Walker, Aqua Zumba · Stretch, Body Balance</td></tr>
-    <tr><td><b>2 · Conservar</b><br><span class="mini">pérdida activa</span></td><td>Body Pump, Kinetic Pump, Funtrac, CX Worx · RPM, Power Cycling, INDBIKE · Hatha Yoga</td></tr>
-    <tr><td><b>3 · Recomponer</b><br><span class="mini">cerca del peso meta</span></td><td>Body Pump con más carga, Alpha Trainer, Kinetic Chain, Strong Nation · GRIT, Body Combat, Body Attack</td></tr>
-    <tr><td><b>4 · Sostener</b><br><span class="mini">al reducir o suspender</span></td><td>Cualquier clase de fuerza · Zumba, Body Jam, Sh'Bam y demás clases de baile para mantener el hábito</td></tr>
+    <tr><th>Fase</th><th>Segmento</th><th>Clases del catálogo</th></tr>
+    <tr><td><b>1 · Adaptación</b></td><td>En tratamiento: inicio</td><td>Tone, Reformer Pilates, Mat Pilates, Total Barre, Core · Cycling a ritmo moderado, Race Walker, Aqua Zumba · Stretch, Body Balance</td></tr>
+    <tr><td><b>2 · Conservar</b></td><td>En tratamiento: pérdida activa</td><td>Body Pump, Kinetic Pump, Funtrac, CX Worx · RPM, Power Cycling, INDBIKE · Hatha Yoga</td></tr>
+    <tr><td><b>3 · Recomponer</b></td><td>En tratamiento: cerca del peso meta · Sin tratamiento</td><td>Body Pump con mayor carga, Alpha Trainer, Kinetic Chain, Strong Nation · GRIT, Body Combat, Body Attack</td></tr>
+    <tr><td><b>4 · Sostener</b></td><td>Después del tratamiento</td><td>Cualquier clase de fuerza · Zumba, Body Jam, Sh'Bam y clases de baile para consolidar el hábito</td></tr>
   </table>
   <p class="fuente">Fuente: catálogo público de Sports World, consultado el 23 de noviembre de 2026. La disponibilidad varía por club.</p>
 
-  <div class="titulo-graf">Gráfica 15. Las 51 clases del catálogo, por papel en el programa</div>
+  <div class="titulo-graf">Figura 15. Las 51 clases del catálogo, por función en el programa</div>
   <svg viewBox="0 0 640 72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Las 51 clases del catálogo por papel en el programa" font-family="Helvetica, Arial, sans-serif" font-size="12"><rect x="0.0" y="0" width="206.7" height="40" fill="#d71920"/><text x="103.3" y="25.0" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">17</text><rect x="0" y="54" width="11" height="11" fill="#d71920"/><text x="15.0" y="64.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="start">Fuerza</text><rect x="206.7" y="0" width="109.4" height="40" fill="#5b0a0d"/><text x="261.4" y="25.0" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">9</text><rect x="128" y="54" width="11" height="11" fill="#5b0a0d"/><text x="143.0" y="64.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="start">Cardio de bajo impacto</text><rect x="316.1" y="0" width="72.9" height="40" fill="#a3131a"/><text x="352.5" y="25.0" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">6</text><rect x="256" y="54" width="11" height="11" fill="#a3131a"/><text x="271.0" y="64.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="start">Alta intensidad</text><rect x="389.0" y="0" width="85.1" height="40" fill="#9aa3ad"/><text x="431.6" y="25.0" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">7</text><rect x="384" y="54" width="11" height="11" fill="#9aa3ad"/><text x="399.0" y="64.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="start">Movilidad</text><rect x="474.1" y="0" width="145.9" height="40" fill="#c9ced3"/><text x="547.1" y="25.0" font-size="14" fill="#1d232a" font-weight="700" text-anchor="middle">12</text><rect x="512" y="54" width="11" height="11" fill="#c9ced3"/><text x="527.0" y="64.0" font-size="10.5" fill="#1d232a" font-weight="400" text-anchor="start">Baile y comunidad</text></svg>
-  <p class="fuente">Fuente: sportsworld.com.mx/clases; detalle clase por clase en el Anexo B.</p>
+  <p class="fuente">Fuente: sportsworld.com.mx/clases; detalle en el Anexo B.</p>
 </section>
 
 <section class="seccion">
-  <div class="etiqueta">6 · La propuesta</div>
-  <h2>Se mide lo que importa: músculo y fuerza, no solo kilos</h2>
-  <p class="idea">El participante ve que pierde grasa y conserva fuerza. Eso es lo que lo hace quedarse.</p>
+  <div class="etiqueta">7 · La oferta</div>
+  <h2>El programa mide músculo y fuerza, no solo kilos, y se cobra a través de los servicios que ya existen</h2>
+  <p class="idea">La medición convierte la promesa en evidencia visible para el socio; esa evidencia sostiene la permanencia.</p>
+  <div class="titulo-graf">Tabla 8. Protocolo de medición</div>
   <table>
-    <tr><th>Medición</th><th>Cada cuándo</th><th>¿Existe hoy?</th></tr>
-    <tr><td>Body Test by SECA: grasa, masa magra, agua</td><td>Cada 4 semanas</td><td>Sí, incluido en la membresía</td></tr>
-    <tr><td>Fuerza de la mano con dinamómetro (aparato sencillo que mide cuánto se aprieta)</td><td>Cada 8 semanas</td><td>No: un dinamómetro por club</td></tr>
-    <tr><td>Sentarse y pararse de una silla en 30 segundos</td><td>Cada 8 semanas</td><td>Sí</td></tr>
-    <tr><td>Perímetro de cintura</td><td>Cada 4 semanas</td><td>Sí</td></tr>
-    <tr><td>Asistencia semanal</td><td>Continua</td><td>Sí, control de acceso</td></tr>
+    <tr><th>Medición</th><th>Frecuencia</th><th>Disponibilidad</th></tr>
+    <tr><td>Body Test by SECA: grasa, masa magra y agua</td><td>Cada 4 semanas</td><td>Incluido en la membresía</td></tr>
+    <tr><td>Fuerza de prensión con dinamómetro de mano</td><td>Cada 8 semanas</td><td>Requiere un dinamómetro por club</td></tr>
+    <tr><td>Prueba de sentarse y pararse en 30 segundos</td><td>Cada 8 semanas</td><td>Disponible</td></tr>
+    <tr><td>Perímetro de cintura</td><td>Cada 4 semanas</td><td>Disponible</td></tr>
+    <tr><td>Asistencia semanal</td><td>Continua</td><td>Control de acceso</td></tr>
   </table>
 
   <h3>Reglas de operación</h3>
   <ul>
-    <li><b>Entrada con carta de su médico</b> que confirme que puede hacer ejercicio. El club no pregunta dosis.</li>
-    <li><b>Fuerza primero:</b> es la recomendación clínica y la diferencia con un programa común de bajar de peso.</li>
-    <li><b>Ajuste por tolerancia:</b> si hay náusea o mareo, baja la intensidad, no se suspende la fuerza.</li>
-    <li><b>Nutrición solo con nutriólogo titulado,</b> nunca con el entrenador.</li>
-    <li><b>La fase 4 se activa sola</b> cuando la persona informa que redujo o dejó el tratamiento: es el momento de mayor riesgo de cancelar.</li>
+    <li><b>Ingreso con carta médica</b> que confirme la aptitud para el ejercicio; el club no solicita dosis ni medicamento.</li>
+    <li><b>Prioridad a la fuerza</b> sobre el volumen de cardio, conforme a la evidencia clínica.</li>
+    <li><b>Ajuste por tolerancia:</b> ante náusea o mareo se reduce la intensidad sin suspender la fuerza.</li>
+    <li><b>Nutrición a cargo de nutriólogos titulados,</b> nunca del entrenador.</li>
+    <li><b>Transición automática a la fase 4</b> cuando el participante reduce o suspende el tratamiento, el momento de mayor riesgo de cancelación.</li>
   </ul>
 
-  <h3>Cómo se cobra</h3>
+  <h3>Modelo de ingreso</h3>
   <ul>
-    <li><b>Incluido en la membresía:</b> el plan por fases, las clases, el Body Test y las pruebas de fuerza. Su trabajo es proteger la membresía, que aporta 77% del ingreso [12].</li>
-    <li><b>Se cobra aparte:</b> entrenamiento personal y nutrición, a la tarifa vigente de cada club.</li>
+    <li><b>Incluido en la membresía:</b> plan por fases, clases, Body Test y pruebas de fuerza. Su función es proteger la cuota de mantenimiento, que representa 77% del ingreso de Sports World [12].</li>
+    <li><b>Ingreso adicional:</b> entrenamiento personal y consulta de nutrición, a la tarifa vigente de cada club.</li>
   </ul>
 
-  <h3>Por qué esta opción</h3>
+  <div class="titulo-graf">Tabla 9. Alternativas evaluadas</div>
   <table>
-    <tr><th>Alternativa</th><th>Veredicto</th></tr>
-    <tr><td>No hacer nada</td><td>No: pierde 3,059 membresías en el escenario base</td></tr>
-    <tr><td>Campaña de «bajar de peso» sin programa</td><td>No: fácil de copiar, no mejora la permanencia y es un riesgo legal si menciona medicamentos</td></tr>
-    <tr><td>Clínica propia en el club (como Life Time)</td><td>No por ahora: exige licencias sanitarias y personal médico</td></tr>
-    <tr class="destacado"><td>Programa de fuerza con aliados médicos</td><td>Sí: usa lo que ya existe y se prueba en seis clubes</td></tr>
+    <tr><th>Alternativa</th><th>Evaluación</th></tr>
+    <tr><td>Mantener la oferta actual</td><td>Descartada: expone 3,059 membresías en el escenario base</td></tr>
+    <tr><td>Campaña de bajar de peso sin programa</td><td>Descartada: replicable, sin efecto en permanencia y con riesgo regulatorio si menciona medicamentos</td></tr>
+    <tr><td>Clínica propia en el club</td><td>Diferida: requiere licencia sanitaria y personal médico</td></tr>
+    <tr class="destacado"><td>Programa de fuerza con red de referencia</td><td>Recomendada: usa activos existentes y se valida en seis clubes</td></tr>
   </table>
 </section>
 
-<!-- 7. COMUNICACIÓN -->
+<!-- 8. ACTIVACIÓN -->
 <section class="seccion">
-  <div class="etiqueta">7 · Cómo comunicarlo</div>
-  <h2>Un mensaje: bajar de peso, sí, pero conservando el músculo y el resultado</h2>
-  <p class="idea">Bajar de peso, sí, desde el ángulo que nadie ocupa: la calidad de lo que se pierde y lo que pasa después.</p>
-
-  <div class="caja verde"><b class="t">Mensaje central propuesto</b>«Baja de peso sin perder músculo. Te medimos cada mes para que veas que lo que pierdes es grasa, y te acompañamos para que el resultado se quede.»</div>
-
+  <div class="etiqueta">8 · Activación</div>
+  <h2>El mensaje se activa por segmento y canal, dentro de los límites de la regulación sanitaria</h2>
+  <p class="idea">Cada segmento recibe una promesa propia por el canal donde ya toma la decisión.</p>
+  <div class="titulo-graf">Tabla 10. Matriz de activación</div>
   <table>
-    <tr><th>Público</th><th>Qué necesita oír</th><th>Dónde se le encuentra</th></tr>
-    <tr><td>Quien busca bajar de peso sin medicamento</td><td>Un plan con medición mensual, no una promesa de kilos</td><td>Búsquedas de bajar de peso; asesores en club</td></tr>
-    <tr><td>Quien está en tratamiento médico</td><td>Que conservar músculo depende del entrenamiento de fuerza</td><td>Referencia de su médico; hospitales aliados; clínica digital</td></tr>
-    <tr><td>Quien dejó el tratamiento</td><td>Que el peso regresa si no se sostiene con ejercicio</td><td>Socios actuales; aliados médicos</td></tr>
-    <tr><td>Socios actuales con objetivo de bajar de peso</td><td>Que su membresía ya incluye lo que el medicamento no da</td><td>CRM, Body Test mensual, entrenadores</td></tr>
-    <tr><td>Médicos y nutriólogos</td><td>Que Sports World mide y reporta avance con consentimiento</td><td>Sesiones en hospitales; convenios</td></tr>
+    <tr><th>Segmento</th><th>Mensaje</th><th>Canal principal</th><th>Indicador</th></tr>
+    <tr><td>En tratamiento</td><td>«Conserva tu músculo mientras bajas de peso»</td><td>Referencia médica; hospitales aliados; clínica digital</td><td>Inscripciones referidas</td></tr>
+    <tr><td>Después del tratamiento</td><td>«Que el resultado se quede»</td><td>CRM de socios; aliados médicos</td><td>Socios en fase 4 activos a 12 meses</td></tr>
+    <tr><td>Sin tratamiento</td><td>«Un plan medible, mes a mes»</td><td>Búsquedas sobre bajar de peso; asesores en club</td><td>Altas con objetivo de bajar de peso</td></tr>
+    <tr><td>Socios actuales con el objetivo</td><td>«Tu membresía ya incluye lo que el medicamento no da»</td><td>Body Test mensual; entrenadores; CRM</td><td>Cancelaciones por tratamiento médico</td></tr>
+    <tr><td>Médicos y nutriólogos</td><td>«Medimos y reportamos el avance de su paciente»</td><td>Sesiones en hospitales; convenios</td><td>Médicos que refieren</td></tr>
   </table>
 
   <div class="dos">
-    <div class="si"><b>Sí se puede decir</b>
+    <div class="si"><b>Afirmaciones permitidas</b>
       <ul>
-        <li>«El entrenamiento de fuerza reduce la pérdida de músculo», con la cita del estudio</li>
+        <li>«El entrenamiento de fuerza reduce la pérdida de músculo», con la referencia del estudio</li>
         <li>«Para personas en tratamiento médico para bajar de peso»</li>
-        <li>«Te medimos cada mes»</li>
-        <li>Nombre y cédula del nutriólogo en el anuncio de nutrición</li>
+        <li>«Medición mensual de tu composición corporal»</li>
+        <li>Nombre y cédula profesional del nutriólogo en la publicidad de nutrición</li>
       </ul>
     </div>
-    <div class="no"><b>No se debe decir</b>
+    <div class="no"><b>Afirmaciones excluidas</b>
       <ul>
         <li>Ozempic®, Wegovy®, Mounjaro® o cualquier marca de medicamento</li>
         <li>«Conserva todo tu músculo» o resultados garantizados</li>
@@ -388,219 +436,224 @@ svg{ width:100%; height:auto; display:block; break-inside:avoid; }
       </ul>
     </div>
   </div>
-  <p class="fuente">Fuentes: Ley General de Salud, arts. 300 y 306 [31]; aviso de COFEPRIS sobre Ozempic® [32]; Reglamento de Publicidad, art. 19 [33]; Ley Federal de Protección al Consumidor, art. 32 [34]. Interpretación de la consultoría, sujeta a revisión jurídica.</p>
+  <p class="fuente">Fuentes: Ley General de Salud, arts. 300 y 306 [31]; COFEPRIS [32]; Reglamento en Materia de Publicidad, art. 19 [33]; Ley Federal de Protección al Consumidor, art. 32 [34]. Lectura de la consultoría, sujeta a validación jurídica.</p>
 </section>
 
-<!-- 8. ALIANZAS -->
+<!-- 9. ALIANZAS -->
 <section class="seccion">
-  <div class="etiqueta">8 · Alianzas</div>
-  <h2>Tres círculos de aliados: el médico que trata, el nutriólogo que alimenta y la cocina que entrega</h2>
-  <p class="idea">Modelo de referencia en los dos sentidos: el médico refiere al club para entrenar y el club refiere al médico a quien pide tratamiento.</p>
+  <div class="etiqueta">9 · Red de aliados</div>
+  <h2>La red de aliados es a la vez canal de captación y prueba de credibilidad</h2>
+  <p class="idea">Opera por referencia recíproca: el médico refiere al club para entrenar y el club refiere al médico a quien busca tratamiento. Sports World nunca prescribe.</p>
   <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Los tres círculos de aliados" font-family="Helvetica, Arial, sans-serif" font-size="12"><circle cx="160" cy="120" r="115" fill="#e9ecef"/><circle cx="160" cy="120" r="78" fill="#f6c9cb"/><circle cx="160" cy="120" r="40" fill="#d71920"/><text x="160.0" y="116.0" font-size="11" fill="#fff" font-weight="700" text-anchor="middle">Sports World</text><text x="160.0" y="130.0" font-size="10" fill="#fff" font-weight="400" text-anchor="middle">entrena y mide</text><text x="160.0" y="62.0" font-size="11" fill="#5b0a0d" font-weight="700" text-anchor="middle">Médico</text><text x="160.0" y="24.0" font-size="11" fill="#1d232a" font-weight="700" text-anchor="middle">Nutrición y comida</text><text x="320.0" y="60.0" font-size="12" fill="#5b0a0d" font-weight="700" text-anchor="start">Círculo 1 · Médico que trata</text><text x="320.0" y="77.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="start">8 hospitales con programa de obesidad y Clivi</text><text x="320.0" y="115.0" font-size="12" fill="#5b0a0d" font-weight="700" text-anchor="start">Círculo 2 · Nutriólogo que alimenta</text><text x="320.0" y="132.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="start">Nutriólogos con cédula, Nutrimind y Fitia</text><text x="320.0" y="170.0" font-size="12" fill="#5b0a0d" font-weight="700" text-anchor="start">Círculo 3 · Cocina que entrega</text><text x="320.0" y="187.0" font-size="11" fill="#1d232a" font-weight="400" text-anchor="start">Manzana Verde y proveedores locales</text></svg>
 
-  <div class="titulo-graf">Gráfica 16. Hospitales con programa de obesidad y su club más cercano</div>
+  <div class="titulo-graf">Figura 16. Siete programas hospitalarios de obesidad están a menos de 3 km de un club</div>
   <svg viewBox="0 0 640 216" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Distancia entre hospital con programa de obesidad y club" font-family="Helvetica, Arial, sans-serif" font-size="12"><text x="0.0" y="20.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Ángeles Roma → Roma</text><rect x="250" y="7" width="50.0" height="18" fill="#d71920"/><text x="306.0" y="21.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">0.5 km</text><text x="0.0" y="50.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Hospital Español → Antara</text><rect x="250" y="37" width="70.0" height="18" fill="#d71920"/><text x="326.0" y="51.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">0.7 km</text><text x="0.0" y="80.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Ángeles México → Xola</text><rect x="250" y="67" width="70.0" height="18" fill="#d71920"/><text x="326.0" y="81.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">0.7 km</text><text x="0.0" y="110.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">ABC Santa Fe → Santa Fe</text><rect x="250" y="97" width="80.0" height="18" fill="#d71920"/><text x="336.0" y="111.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">0.8 km</text><text x="0.0" y="140.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Médica Sur → Patio Tlalpan</text><rect x="250" y="127" width="220.0" height="18" fill="#5b0a0d"/><text x="476.0" y="141.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">2.2 km</text><text x="0.0" y="170.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">Puerta de Hierro Sur → La Rioja</text><rect x="250" y="157" width="250.0" height="18" fill="#5b0a0d"/><text x="506.0" y="171.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">2.5 km</text><text x="0.0" y="200.0" font-size="12" fill="#1d232a" font-weight="400" text-anchor="start">TecSalud → San Pedro</text><rect x="250" y="187" width="290.0" height="18" fill="#5b0a0d"/><text x="546.0" y="201.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">2.9 km</text></svg>
-  <p class="fuente">Fuente: páginas oficiales de cada hospital, 23 de noviembre de 2026 [35]. Distancia en línea recta (estimación); en auto, de 20% a 50% más. En rojo, menos de 1 km.</p>
+  <p class="fuente">Fuente: páginas oficiales de cada hospital, 23 de noviembre de 2026 [35]. Distancia en línea recta (estimación); por vialidad, de 20% a 50% mayor.</p>
 
+  <div class="titulo-graf">Tabla 11. Programas hospitalarios con mayor afinidad</div>
   <table>
     <tr><th>Hospital</th><th>Lo que publica su programa</th></tr>
     <tr><td>Hospital Español</td><td>«Entrenamiento Físico» dentro del equipo clínico de obesidad</td></tr>
     <tr><td>Centro Médico ABC</td><td>«Cambiar tu composición corporal» y medicina del deporte</td></tr>
-    <tr><td>Ángeles México y Roma</td><td>«Programas de ejercicio físico supervisado»</td></tr>
-    <tr><td>Médica Sur</td><td>Centro de endocrinología y control de peso; acreditación internacional</td></tr>
-    <tr><td>TecSalud (Monterrey)</td><td>Única que publica tratamiento con medicamento como línea propia</td></tr>
-    <tr><td>San Ángel Inn</td><td>Mide obesidad sarcopénica (con pérdida de músculo) y fortalece músculo</td></tr>
+    <tr><td>Hospital Ángeles México y Roma</td><td>«Programas de ejercicio físico supervisado»</td></tr>
+    <tr><td>Médica Sur</td><td>Centro de endocrinología y control de peso, con acreditación internacional</td></tr>
+    <tr><td>TecSalud, Monterrey</td><td>Tratamiento farmacológico de la obesidad como línea propia</td></tr>
+    <tr><td>Hospital San Ángel Inn</td><td>Valoración de obesidad sarcopénica y rehabilitación para fortalecer el músculo</td></tr>
   </table>
 </section>
 
 <section class="seccion">
-  <div class="etiqueta">8 · Alianzas</div>
-  <h2>Nutrición y comida: los aliados que completan el plan</h2>
-  <p class="idea">Quien usa estos medicamentos come menos, así que cada comida necesita más proteína. El club no puede resolverlo solo.</p>
+  <div class="etiqueta">9 · Red de aliados</div>
+  <h2>La nutrición y la alimentación completan el plan donde el club no llega solo</h2>
+  <p class="idea">Quien usa estos medicamentos come menos, por lo que cada comida debe aportar más proteína.</p>
+  <div class="titulo-graf">Tabla 12. Aliados de nutrición, alimentación y referencia digital</div>
   <table>
-    <tr><th>Aliado</th><th>Qué aporta</th><th>Dato publicado</th><th>Acuerdo propuesto</th></tr>
-    <tr><td><b>Clivi</b> (clínica digital)</td><td>Tratamiento con GLP-1 supervisado en todo el país</td><td>15,000 pacientes activos; 200 empresas con convenio; $4,299 el primer mes</td><td>Referencia recíproca en ciudades sin hospital aliado</td></tr>
-    <tr><td><b>Nutrimind</b></td><td>Software común para los nutriólogos del programa</td><td>70,000 profesionales</td><td>Plan estándar «Fuerza y Peso»</td></tr>
-    <tr><td><b>Fitia</b></td><td>App para registrar comidas, enfocada en recomposición corporal</td><td>Más de 10 millones de usuarios; $219 al mes</td><td>Descuento para participantes</td></tr>
-    <tr><td><b>Manzana Verde</b></td><td>Comida con ~32 g de proteína; CDMX, Monterrey y Guadalajara</td><td>Planes de $1,910 y $2,448</td><td>Convenio nacional con código de descuento</td></tr>
-    <tr><td><b>Jenny Light / Manyar</b></td><td>Nutrióloga más comida diaria en el Valle de México</td><td>≈$360 a $419 al día</td><td>Convenio local</td></tr>
-    <tr><td><b>No Sugar · Gains Meals · True Dose · Habeats</b></td><td>Comida alta en proteína en Monterrey, Guadalajara, Puebla y Querétaro</td><td>$117 a $220 por comida</td><td>Convenios locales</td></tr>
+    <tr><th>Aliado</th><th>Aporte</th><th>Dato publicado</th><th>Acuerdo propuesto</th></tr>
+    <tr><td><b>Clivi</b></td><td>Clínica digital con tratamiento GLP-1 supervisado en todo el país</td><td>15,000 pacientes activos; más de 200 empresas con convenio; $4,299 el primer mes</td><td>Referencia recíproca en ciudades sin hospital aliado</td></tr>
+    <tr><td><b>Nutrimind</b></td><td>Plataforma común para los nutriólogos del programa</td><td>70,000 profesionales usuarios</td><td>Plan estándar Fuerza y Peso</td></tr>
+    <tr><td><b>Fitia</b></td><td>Registro de alimentación orientado a recomposición corporal</td><td>Más de 10 millones de usuarios; $219 al mes</td><td>Beneficio para participantes</td></tr>
+    <tr><td><b>Manzana Verde</b></td><td>Comida con ~32 g de proteína; CDMX, Monterrey y Guadalajara</td><td>Planes de $1,910 y $2,448</td><td>Convenio nacional con código de beneficio</td></tr>
+    <tr><td><b>Jenny Light y Manyar</b></td><td>Nutrióloga y alimentación diaria en el Valle de México</td><td>De $360 a $419 al día</td><td>Convenio local</td></tr>
+    <tr><td><b>No Sugar, Gains Meals, True Dose y Habeats</b></td><td>Alimentación alta en proteína en Monterrey, Guadalajara, Puebla y Querétaro</td><td>De $117 a $220 por comida</td><td>Convenios locales</td></tr>
   </table>
-  <p class="fuente">Fuente: sitios oficiales, 23 de noviembre de 2026 [36]. Ninguno tiene hoy alianza con un gimnasio. Precedente: Planet Fitness con Trifecta, con 50% de descuento en el primer pedido [37].</p>
+  <p class="fuente">Fuente: sitios oficiales, 23 de noviembre de 2026 [36]. Ninguno tiene hoy una alianza con un gimnasio. Precedente: Planet Fitness y Trifecta, con 50% de descuento en el primer pedido [37].</p>
 
-  <h3>Reglas para cualquier alianza</h3>
+  <h3>Criterios de selección y gobierno de la red</h3>
   <ul>
     <li>Programa o servicio publicado y verificable.</li>
-    <li>A menos de 3 km de un club o con cobertura en su ciudad.</li>
-    <li>Referencia en los dos sentidos y sin pago por paciente.</li>
+    <li>Ubicación a menos de 3 km de un club o cobertura en su ciudad.</li>
+    <li>Referencia recíproca, sin pago por paciente.</li>
     <li>Sin exclusividad: al menos dos opciones médicas por zona.</li>
-    <li>Revisión cada trimestre: personas referidas, inscritas y satisfechas.</li>
+    <li>Revisión trimestral con tres indicadores: personas referidas, inscritas y satisfacción.</li>
   </ul>
 </section>
 
-<!-- 9. HOJA DE RUTA -->
+<!-- 10. HOJA DE RUTA -->
 <section class="seccion">
-  <div class="etiqueta">9 · Hoja de ruta</div>
-  <h2>De seis clubes a los 49 en 30 meses, antes de que lleguen los genéricos</h2>
-  <p class="idea">Cada paso se gana con números, no con calendario.</p>
-  <div class="titulo-graf">Gráfica 17. Hoja de ruta</div>
+  <div class="etiqueta">10 · Hoja de ruta</div>
+  <h2>Un piloto de 24 semanas en seis clubes valida la economía; la red completa queda lista antes de los genéricos</h2>
+  <p class="idea">Cada fase se habilita por resultados, no por calendario.</p>
+  <div class="titulo-graf">Figura 17. Hoja de ruta 2026-2029</div>
   <svg viewBox="0 0 640 222" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hoja de ruta" font-family="Helvetica, Arial, sans-serif" font-size="12"><line x1="170" y1="22" x2="170" y2="200" stroke="#e9ecef"/><text x="170.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">dic 26</text><line x1="212" y1="22" x2="212" y2="200" stroke="#e9ecef"/><text x="212.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">mar 27</text><line x1="254" y1="22" x2="254" y2="200" stroke="#e9ecef"/><text x="254.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">jun 27</text><line x1="296" y1="22" x2="296" y2="200" stroke="#e9ecef"/><text x="296.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">sep 27</text><line x1="338" y1="22" x2="338" y2="200" stroke="#e9ecef"/><text x="338.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">dic 27</text><line x1="380" y1="22" x2="380" y2="200" stroke="#e9ecef"/><text x="380.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">mar 28</text><line x1="422" y1="22" x2="422" y2="200" stroke="#e9ecef"/><text x="422.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">jun 28</text><line x1="464" y1="22" x2="464" y2="200" stroke="#e9ecef"/><text x="464.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">sep 28</text><line x1="506" y1="22" x2="506" y2="200" stroke="#e9ecef"/><text x="506.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">dic 28</text><line x1="548" y1="22" x2="548" y2="200" stroke="#e9ecef"/><text x="548.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">mar 29</text><line x1="590" y1="22" x2="590" y2="200" stroke="#e9ecef"/><text x="590.0" y="14.0" font-size="10" fill="#5f6b76" font-weight="400" text-anchor="middle">jun 29</text><text x="0.0" y="48.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">0 · Preparación</text><rect x="170.0" y="32" width="42.0" height="22" rx="4" fill="#9aa3ad"/><text x="0.0" y="82.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">1 · Piloto en 6 clubes</text><rect x="212.0" y="66" width="84.0" height="22" rx="4" fill="#d71920"/><text x="0.0" y="116.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">2 · Lectura de resultados</text><rect x="296.0" y="100" width="13.9" height="22" rx="4" fill="#5b0a0d"/><text x="0.0" y="150.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">3 · 20 clubes</text><rect x="309.9" y="134" width="112.1" height="22" rx="4" fill="#d71920"/><text x="0.0" y="184.0" font-size="12" fill="#1d232a" font-weight="700" text-anchor="start">4 · Los 49 clubes</text><rect x="422.0" y="168" width="168.0" height="22" rx="4" fill="#5b0a0d"/><line x1="552.2" y1="22" x2="552.2" y2="200" stroke="#d71920" stroke-dasharray="4 3"/><text x="548.2" y="214.0" font-size="10" fill="#d71920" font-weight="700" text-anchor="end">Posibles genéricos</text></svg>
-  <p class="fuente">Clubes piloto: Antara, Santa Fe, Roma, Xola, Patio Tlalpan y San Pedro, cada uno cerca de un hospital aliado.</p>
+  <p class="fuente">Clubes piloto: Antara, Santa Fe, Roma, Xola, Patio Tlalpan y San Pedro, cada uno próximo a un hospital aliado.</p>
 
-  <h3>Metas del piloto</h3>
+  <div class="titulo-graf">Tabla 13. Metas de validación del piloto</div>
   <table>
-    <tr><th>Indicador</th><th class="num">Meta</th><th>Por qué</th></tr>
+    <tr><th>Indicador</th><th class="num">Meta</th><th>Fundamento</th></tr>
     <tr><td>Participantes nuevos por club al mes</td><td class="num">≥ 8</td><td>Volumen suficiente para medir en 24 semanas</td></tr>
-    <tr><td>Participantes que son altas nuevas</td><td class="num">≥ 30%</td><td>8 × 30% = 2.4 altas por club al mes: lo que compensa el escenario base</td></tr>
+    <tr><td>Participantes que son altas nuevas</td><td class="num">≥ 30%</td><td>8 × 30% = 2.4 altas por club al mes, el umbral que compensa el escenario base</td></tr>
     <tr><td>Permanencia a 6 meses frente a socios comparables</td><td class="num">+10 puntos</td><td>Mismo club y misma antigüedad</td></tr>
-    <tr><td>Participantes con fuerza igual o mayor a las 16 semanas</td><td class="num">≥ 70%</td><td>En el ensayo de referencia, la fuerza subió con entrenamiento</td></tr>
-    <tr><td>Masa magra como parte del peso perdido</td><td class="num">≤ 25%</td><td>Mejor que el 38% de semaglutida sin entrenar</td></tr>
-    <tr><td>Asistencia promedio</td><td class="num">≥ 3 por semana</td><td>Quien asiste 3 veces cancela la mitad que quien va poco</td></tr>
-    <tr><td>Participantes que llegan por un aliado médico</td><td class="num">≥ 25%</td><td>Prueba que la referencia funciona</td></tr>
+    <tr><td>Participantes con fuerza igual o mayor a las 16 semanas</td><td class="num">≥ 70%</td><td>Resultado del ensayo de referencia con entrenamiento</td></tr>
+    <tr><td>Masa magra como proporción del peso perdido</td><td class="num">≤ 25%</td><td>Mejor que el 38% observado con semaglutida sin entrenamiento</td></tr>
+    <tr><td>Asistencia promedio</td><td class="num">≥ 3 por semana</td><td>Quien asiste tres veces por semana cancela la mitad que quien asiste poco</td></tr>
+    <tr><td>Participantes referidos por un aliado médico</td><td class="num">≥ 25%</td><td>Validación del canal de referencia</td></tr>
   </table>
-  <p class="fuente">Metas propuestas por la consultoría; se ajustan con la línea base de la fase de preparación.</p>
+  <p class="fuente">Metas propuestas por la consultoría, a calibrar con la línea base de la fase de preparación.</p>
 </section>
 
-<!-- 10. ALERTAS Y LEGAL -->
+<!-- 11. SEÑALES Y MARCO -->
 <section class="seccion">
-  <div class="etiqueta">10 · Señales y límites</div>
-  <h2>Cinco señales para acelerar y seis reglas legales que no se negocian</h2>
+  <div class="etiqueta">11 · Control</div>
+  <h2>Cinco señales adelantadas indican cuándo acelerar, y seis reglas acotan la ejecución</h2>
+  <div class="titulo-graf">Tabla 14. Señales de aceleración</div>
   <table>
-    <tr><th>Señal</th><th>Umbral</th><th>Qué hacer</th></tr>
-    <tr><td>COFEPRIS aprueba una semaglutida genérica</td><td>Primera aprobación</td><td>Adelantar los 49 clubes</td></tr>
-    <tr><td>Tratamiento mensual más barato</td><td>Menos de $2,500</td><td>Campaña para usuarios y exusuarios</td></tr>
-    <tr><td>Hogares con al menos un usuario</td><td>Más de 6%</td><td>Pasar al escenario acelerado</td></tr>
+    <tr><th>Señal</th><th>Umbral</th><th>Respuesta</th></tr>
+    <tr><td>Aprobación de semaglutida genérica por COFEPRIS</td><td>Primera aprobación</td><td>Adelantar la cobertura de los 49 clubes</td></tr>
+    <tr><td>Precio del tratamiento mensual más accesible</td><td>Menos de $2,500</td><td>Campaña dirigida a usuarios y exusuarios</td></tr>
+    <tr><td>Hogares con al menos un usuario</td><td>Más de 6%</td><td>Planear con el escenario acelerado</td></tr>
     <tr><td>Bajas por tratamiento médico para bajar de peso</td><td>Más de 5% de las bajas</td><td>Ofrecer la fase 4 a todo socio que lo declare</td></tr>
-    <tr><td>Deserción bruta</td><td>Más de 6.5% dos trimestres</td><td>Revisión de retención por club</td></tr>
+    <tr><td>Deserción bruta</td><td>Más de 6.5% dos trimestres seguidos</td><td>Revisión de retención por club</td></tr>
   </table>
 
-  <h3>Reglas legales</h3>
+  <div class="titulo-graf">Tabla 15. Marco regulatorio</div>
   <table>
     <tr><th>Regla</th><th>Fundamento</th></tr>
-    <tr><td>Ninguna marca de medicamento en publicidad</td><td>Ley General de Salud, arts. 300 y 306 [31]; COFEPRIS: Ozempic® «no» está autorizado «para la pérdida de peso» [32]</td></tr>
-    <tr><td>Sports World no prescribe ni ajusta dosis</td><td>NOM-008-SSA3-2017: solo el médico prescribe [38]</td></tr>
-    <tr><td>Consentimiento expreso y por escrito para datos de salud</td><td>Ley de protección de datos de 2025, art. 8 [39]</td></tr>
-    <tr><td>Nutrición solo con cédula profesional, visible en el anuncio</td><td>Reglamento de Publicidad, art. 19 [33]</td></tr>
+    <tr><td>Ninguna marca de medicamento en la publicidad</td><td>Ley General de Salud, arts. 300 y 306 [31]; COFEPRIS señala que Ozempic® no está autorizado para la pérdida de peso [32]</td></tr>
+    <tr><td>Sports World no prescribe ni ajusta dosis</td><td>NOM-008-SSA3-2017 [38]</td></tr>
+    <tr><td>Consentimiento expreso y por escrito para datos de salud</td><td>Ley Federal de Protección de Datos Personales, 2025, art. 8 [39]</td></tr>
+    <tr><td>Nutrición solo con cédula profesional, visible en la publicidad</td><td>Reglamento en Materia de Publicidad, art. 19 [33]</td></tr>
     <tr><td>Afirmaciones veraces y comprobables</td><td>Ley Federal de Protección al Consumidor, art. 32 [34]</td></tr>
-    <tr><td>Expediente clínico si un aliado atiende en el club</td><td>NOM-004-SSA3-2012, conservación por 5 años [40]</td></tr>
+    <tr><td>Expediente clínico cuando un aliado atienda en el club</td><td>NOM-004-SSA3-2012, conservación mínima de 5 años [40]</td></tr>
   </table>
-  <p class="fuente">Interpretación de la consultoría; debe confirmarla un abogado especialista en salud antes de cualquier publicación.</p>
+  <p class="fuente">Lectura de la consultoría; debe validarla un especialista en derecho sanitario antes de cualquier publicación.</p>
 </section>
 
-<!-- 11. RECOMENDACIÓN -->
+<!-- 12. RECOMENDACIÓN -->
 <section class="seccion">
-  <div class="etiqueta">11 · Nuestra recomendación</div>
-  <h2>Tres pasos para el equipo de marketing</h2>
-  <p class="idea">El riesgo crece cada año y el territorio sigue libre: ningún operador en México tiene hoy un programa para esta población.</p>
+  <div class="etiqueta">12 · Recomendación</div>
+  <h2>Recomendamos tres decisiones antes de marzo de 2027</h2>
+  <p class="idea">La exposición de 2027 es la menor del periodo; es la ventana de menor costo para validar el programa y llegar a 2029 con la red completa.</p>
 
-  <div class="paso"><div class="n">1</div><div><b>Comunicar bajar de peso desde la fuerza y la composición corporal</b><br>Mensaje central de la sección 7, un público por mensaje y las reglas legales de la sección 10.</div></div>
-  <div class="paso"><div class="n">2</div><div><b>Probar el Programa Fuerza y Peso en seis clubes</b><br>De marzo a agosto de 2027, con los hospitales cercanos, Clivi y un proveedor de comida. Pasar a 20 clubes solo si se cumplen las metas de la sección 9.</div></div>
-  <div class="paso"><div class="n">3</div><div><b>Registrar el motivo de cada alta y de cada baja desde enero de 2027</b><br>Así se sustituyen las inferencias de este documento por datos propios, en tres meses.</div></div>
+  <div class="paso"><div class="n">1</div><div><b>Adoptar el posicionamiento «bajar de peso conservando el músculo, con medición mensual»</b><br>Con la matriz de activación de la sección 8 y el marco regulatorio de la sección 11. Responsable propuesto: Dirección de Marketing.</div></div>
+  <div class="paso"><div class="n">2</div><div><b>Lanzar el piloto en seis clubes de marzo a agosto de 2027</b><br>Con los hospitales cercanos, Clivi y un proveedor de alimentación. La expansión a 20 clubes procede solo si se cumplen las metas de la Tabla 13. Responsables propuestos: Marketing y Operación de clubes.</div></div>
+  <div class="paso"><div class="n">3</div><div><b>Registrar el motivo de cada alta y de cada baja desde enero de 2027</b><br>Con tres meses de registro, la exposición se recalcula con datos propios. Responsables propuestos: Sistemas y Operación comercial.</div></div>
 
   <div class="kpis">
-    <div class="kpi"><b>$5.9 mdp</b><span>riesgo en 2027, escenario base: el momento barato para aprender</span></div>
-    <div class="kpi"><b>$23.9 mdp</b><span>riesgo en 2029, escenario base: cuatro veces más</span></div>
-    <div class="kpi"><b>2.4</b><span>membresías por club al mes que pagan el programa</span></div>
+    <div class="kpi"><b>$5.9 mdp</b><span>exposición en 2027, escenario base: la ventana de menor costo</span></div>
+    <div class="kpi"><b>$23.9 mdp</b><span>exposición en 2029, escenario base</span></div>
+    <div class="kpi"><b>2.4</b><span>membresías por club al mes que compensan el escenario base</span></div>
   </div>
-  <div class="caja verde"><b class="t">En una frase</b>El medicamento ayuda a bajar de peso. Sports World ayuda a que lo que se pierda sea grasa, a que el cuerpo sea más fuerte y a que el resultado se quede.</div>
+  <div class="caja verde"><b class="t">Tesis</b>El medicamento reduce el peso. Sports World asegura que lo que se pierda sea grasa, que el cuerpo gane fuerza y que el resultado permanezca.</div>
 </section>
 
 <!-- ANEXO A -->
 <section class="seccion">
   <div class="etiqueta">Anexo A</div>
-  <h2>Método y supuestos del modelo de riesgo</h2>
+  <h2>Metodología del modelo de exposición</h2>
   <ul>
-    <li><b>Ventas no realizadas al mes</b> = 5,532 altas × motivo «bajar de peso» × uso de GLP-1 del año × sustitución.</li>
+    <li><b>Altas que no ocurren al mes</b> = 5,532 altas × proporción con objetivo de bajar de peso × uso de GLP-1 del año × tasa de sustitución.</li>
     <li><b>Cancelaciones adicionales al mes</b> = 97,046 clientes × los mismos tres factores ÷ 12.</li>
-    <li><b>Las membresías que faltan se acumulan,</b> pero cada mes se reducen 5.7%, porque esas personas también habrían cancelado a la tasa normal.</li>
-    <li><b>Ingreso perdido</b> = membresías que faltan × $1,508 al mes, más las ventas no realizadas × $894 de inscripción.</li>
+    <li><b>Acumulación:</b> las membresías perdidas se suman mes a mes y se reducen 5.7% mensual, porque esas personas también habrían cancelado a la tasa histórica.</li>
+    <li><b>Ingreso perdido</b> = membresías perdidas × $1,508 de cuota mensual, más altas que no ocurren × $894 de inscripción.</li>
   </ul>
+  <div class="titulo-graf">Tabla A1. Datos de Sports World</div>
   <table>
-    <tr><th>Dato de Sports World</th><th class="num">Valor</th><th>Tipo</th></tr>
+    <tr><th>Concepto</th><th class="num">Valor</th><th>Tipo</th></tr>
     <tr><td>Clientes activos, tercer trimestre de 2026</td><td class="num">97,046</td><td>Dato [12]</td></tr>
-    <tr><td>Deserción bruta (se interpreta mensual)</td><td class="num">5.7%</td><td>Dato [12]</td></tr>
+    <tr><td>Deserción bruta (interpretada como mensual)</td><td class="num">5.7%</td><td>Dato [12]</td></tr>
     <tr><td>Cuota promedio por cliente</td><td class="num">$1,508</td><td>Cálculo: $439.2 mdp ÷ 3 ÷ 97,046</td></tr>
-    <tr><td>Altas al año (base estable)</td><td class="num">66,379</td><td>Cálculo: 97,046 × 5.7% × 12</td></tr>
+    <tr><td>Altas al año</td><td class="num">66,379</td><td>Cálculo: 97,046 × 5.7% × 12 (base estable)</td></tr>
     <tr><td>Permanencia promedio</td><td class="num">17.5 meses</td><td>Cálculo: 1 ÷ 5.7%</td></tr>
-    <tr><td>Valor de una membresía</td><td class="num">$27,300</td><td>Cálculo: 17.5 × $1,508 + $894</td></tr>
+    <tr><td>Valor promedio de una membresía</td><td class="num">$27,300</td><td>Cálculo: 17.5 × $1,508 + $894</td></tr>
     <tr><td>EBITDA 2025 sin IFRS 16</td><td class="num">$354.8 mdp</td><td>Dato [12]</td></tr>
   </table>
+  <div class="titulo-graf">Tabla A2. Supuestos y su validación</div>
   <table>
-    <tr><th>Supuesto</th><th>Riesgo de error</th><th>Cómo se corrige</th></tr>
-    <tr><td>Motivo «bajar de peso»: 32% / 45% / 60%</td><td>Medio: base y acelerado son inferencia</td><td>Motivo en cada alta del CRM</td></tr>
-    <tr><td>Uso de GLP-1: 4% a 20%</td><td>Alto: no hay medición en socios</td><td>Pregunta voluntaria con consentimiento</td></tr>
-    <tr><td>Sustitución: 8% / 16% / 25%</td><td>Alto: referencia de EE. UU.</td><td>Motivo en cada baja del CRM</td></tr>
-    <tr><td>Deserción mensual</td><td>Medio: el reporte no define el periodo</td><td>Confirmar con Finanzas</td></tr>
-    <tr><td>80% del ingreso perdido cae a EBITDA</td><td>Bajo a medio</td><td>Costo variable por socio</td></tr>
+    <tr><th>Supuesto</th><th>Incertidumbre</th><th>Cómo se valida</th></tr>
+    <tr><td>Objetivo de bajar de peso: 32% / 45% / 60%</td><td>Media</td><td>Motivo registrado en cada alta</td></tr>
+    <tr><td>Uso de GLP-1: de 4% a 20%</td><td>Alta</td><td>Pregunta voluntaria con consentimiento</td></tr>
+    <tr><td>Sustitución: 8% / 16% / 25%</td><td>Alta</td><td>Motivo registrado en cada baja</td></tr>
+    <tr><td>Periodicidad mensual de la deserción</td><td>Media</td><td>Confirmación con Finanzas</td></tr>
+    <tr><td>80% del ingreso perdido impacta el EBITDA</td><td>Baja a media</td><td>Costo variable por socio</td></tr>
   </table>
 </section>
 
 <!-- ANEXO B -->
 <section class="seccion">
   <div class="etiqueta">Anexo B</div>
-  <h2>Las 51 clases del catálogo y su papel en el programa</h2>
+  <h2>Catálogo de clases y su función en el programa</h2>
   <table>
-    <tr><th style="width:18%">Papel</th><th>Clases (categoría oficial del sitio)</th><th style="width:14%">Fases</th></tr>
+    <tr><th style="width:18%">Función</th><th>Clases (categoría oficial)</th><th style="width:14%">Fases</th></tr>
     <tr><td><b>Fuerza (17)</b></td><td>Body Pump, Kinetic Pump, Funtrac, Core, CX Worx, Kinetic Chain, Tone, Total Barre (Strength) · Strong Nation, Race Walker (Intensity) · Alpha Trainer, Traint Boost (Especializados) · Reformer Pilates, Mat Pilates, Ball Pilates, Natural Motion, Kinetic Ball (Wellness)</td><td>1 a 4, según clase</td></tr>
     <tr><td><b>Cardio de bajo impacto (9)</b></td><td>Cycling, INDBIKE, RPM, Power Cycling, Body Step, Step, Zumba Step (Intensity) · Aqua Zumba (Dance) · Swim Trainers (Especializados)</td><td>1 a 4</td></tr>
     <tr><td><b>Alta intensidad (6)</b></td><td>GRIT (Especializados) · Body Attack, Body Combat, Power Jump (Intensity) · Kick Boxing (Contact) · Pound (Dance)</td><td>3 y 4</td></tr>
     <tr><td><b>Movilidad (7)</b></td><td>Stretch, Body Balance, Hatha Yoga, Yoga restaurativa, Vinyasa Yoga, Ashtanga Yoga, Aeroyoga (Wellness)</td><td>1 a 4</td></tr>
     <tr><td><b>Baile y comunidad (12)</b></td><td>Zumba Fitness, Zumba Toning, Fit Dance, Body Jam, Sh'Bam, Ritmos Latinos, Belly Dance, Urban Dance, Jazz, Baile de Salón, Sensual Dance, Aero Dance (Dance)</td><td>2 a 4</td></tr>
   </table>
-  <p class="fuente">Fuente: sportsworld.com.mx/clases y la página de cada clase, 23 de noviembre de 2026. Además: entrenamiento individual de pesas, cardio y acuático con entrenador personal, en todas las fases.</p>
-  <h3>Ejemplo de semana tipo, fase 2 (Conservar)</h3>
+  <p class="fuente">Fuente: sportsworld.com.mx/clases, 23 de noviembre de 2026. El entrenamiento individual de pesas, cardio y acuático con entrenador personal se integra en todas las fases.</p>
+  <div class="titulo-graf">Tabla B1. Semana tipo, fase 2 (Conservar)</div>
   <table>
     <tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th><th>Sábado</th></tr>
-    <tr><td>Body Pump</td><td>RPM 45 min</td><td>Kinetic Pump</td><td>Power Cycling 45 min</td><td>Funtrac o CX Worx</td><td>Hatha Yoga + INDBIKE 60 min</td></tr>
+    <tr><td>Body Pump</td><td>RPM, 45 min</td><td>Kinetic Pump</td><td>Power Cycling, 45 min</td><td>Funtrac o CX Worx</td><td>Hatha Yoga + INDBIKE, 60 min</td></tr>
   </table>
-  <p class="fuente">Tres sesiones de fuerza y 150 minutos de cardio, como recomiendan las sociedades médicas [27].</p>
+  <p class="fuente">Tres sesiones de fuerza y 150 minutos de actividad aeróbica, conforme a la recomendación de las sociedades médicas [27].</p>
 </section>
 
 <!-- ANEXO C -->
 <section class="seccion">
   <div class="etiqueta">Anexo C</div>
   <h2>Fuentes</h2>
-  <p class="mini">Consultadas el 22 y 23 de noviembre de 2026. Detalle textual y etiqueta de verificación en proyectos/glp1/investigacion/01 a 08.</p>
+  <p class="mini">Consultadas el 22 y 23 de noviembre de 2026.</p>
   <ol style="font-size:8.1pt">
-    <li>Sports World, entrevistas de campo con la fuerza de ventas (registro del proyecto, entrevistas-campo.es.md).</li>
-    <li>Diagnóstico de posicionamiento orgánico del sitio de Sports World, con datos de Semrush, feb.-mar. 2026 (auditoria.es.md).</li>
-    <li>Fogel J., Ustoyev S., Journal of Consumer Marketing 2021;38(1):27-38. doi 10.1108/JCM-02-2020-3621. Frase vista en fragmento de búsqueda.</li>
-    <li>Eguchi A. et al., JMIR mHealth uHealth 2023. PMID 37938885.</li>
-    <li>Alfawaz H.A. et al., Int J Sport Nutr Exerc Metab 2018;28(5):509-514. PMID 29140146.</li>
+    <li>Sports World, entrevistas con la fuerza de ventas, 2026.</li>
+    <li>Diagnóstico de búsqueda orgánica de Sports World con datos de Semrush, México, febrero y marzo de 2026.</li>
+    <li>Fogel J., Ustoyev S., Journal of Consumer Marketing 2021;38(1):27-38. doi 10.1108/JCM-02-2020-3621.</li>
+    <li>Eguchi A. et al., JMIR mHealth and uHealth 2023. PMID 37938885.</li>
+    <li>Alfawaz H.A. et al., International Journal of Sport Nutrition and Exercise Metabolism 2018;28(5):509-514. PMID 29140146.</li>
     <li>Mercado Fitness, «¿Qué quiere el cliente?», México.</li>
-    <li>Eli Lilly, aprobación de tirzepatida en México, nov. 2024.</li>
-    <li>Worldpanel by Numerator, «The Health Effect 2026», en El Economista, 3 sep. 2026.</li>
-    <li>Saludiario, «Wegovy en pastillas llega a México», 11 nov. 2026.</li>
-    <li>El Economista, protección de datos de semaglutida y genéricos, 6 oct. 2026.</li>
-    <li>Farmacias del Ahorro, fichas de Wegovy y Mounjaro, nov. 2026.</li>
+    <li>Eli Lilly, aprobación de tirzepatida en México, noviembre de 2024.</li>
+    <li>Worldpanel by Numerator, «The Health Effect 2026», en El Economista, 3 de septiembre de 2026.</li>
+    <li>Saludiario, «Wegovy en pastillas llega a México», 11 de noviembre de 2026.</li>
+    <li>El Economista, protección de datos de semaglutida y llegada de genéricos, 6 de octubre de 2026.</li>
+    <li>Farmacias del Ahorro, fichas de producto de Wegovy y Mounjaro, noviembre de 2026.</li>
     <li>Grupo Sports World, reportes trimestrales 2T26, 3T26, 4T25 y 4T24. Bolsa Mexicana de Valores.</li>
-    <li>NielsenIQ México, en El Economista, 9 nov. 2026, y en Saludiario, 11 nov. 2026.</li>
-    <li>Estimación cruzada de la consultoría (nota de investigación 02).</li>
+    <li>NielsenIQ México, en El Economista, 9 de noviembre de 2026, y en Saludiario, 11 de noviembre de 2026.</li>
+    <li>Estimación cruzada de la consultoría con datos de ventas, precios y prevalencia.</li>
     <li>KFF Health Tracking Poll, marzo de 2026.</li>
     <li>Rodriguez P.J. et al., JAMA Network Open 2025;8:e2457349.</li>
-    <li>Wilding J.P.H. et al., extensión de STEP 1, Diabetes Obes Metab 2022. PMID 35441470.</li>
-    <li>William Blair Equity Research, «Fitness Clubs and GLP-1s», 18 may. 2026.</li>
-    <li>WW International, información financiera y reestructura, 2025.</li>
-    <li>Endocrine Society, ENDO 2026, actividad medida en 753 personas (vía prensa, 16 jun. 2026).</li>
-    <li>PwC UK, «Appetite for Disruption: What GLP-1 means for consumer markets», jul. 2026.</li>
-    <li>Inspire360, «The GLP-1 Club Intelligence Report», 2026.</li>
-    <li>Sports World, blog: «Conoce tu cuerpo en profundidad: el poder del Body Test by SECA», 28 oct. 2025.</li>
-    <li>Wilding J.P.H. et al., STEP 1, NEJM 2021. PMID 33567185.</li>
+    <li>Wilding J.P.H. et al., extensión de STEP 1, Diabetes, Obesity and Metabolism 2022. PMID 35441470.</li>
+    <li>William Blair Equity Research, «Fitness Clubs and GLP-1s», 18 de mayo de 2026.</li>
+    <li>WW International, información financiera y proceso de reestructura, 2025.</li>
+    <li>Endocrine Society, ENDO 2026: actividad física medida en 753 personas, 16 de junio de 2026.</li>
+    <li>PwC UK, «Appetite for Disruption: What GLP-1 means for consumer markets», julio de 2026.</li>
+    <li>Inspire360, «The GLP-1 Club Intelligence Report», 2026; Smart Fit México, body.smartfit.com/mx.</li>
+    <li>Sports World, «Conoce tu cuerpo en profundidad: el poder del Body Test by SECA», 28 de octubre de 2025.</li>
+    <li>Wilding J.P.H. et al., STEP 1, New England Journal of Medicine 2021. PMID 33567185.</li>
     <li>Look M. et al., SURMOUNT-1, composición corporal, 2025. PMID 39996356.</li>
-    <li>Green D.J. et al., Nature Medicine, 9 nov. 2026. PMID 43003902.</li>
-    <li>Asesoría conjunta ACLM, ASN, OMA y TOS, 2025. PMID 40450457.</li>
-    <li>Chávez-Manzanera E.A. et al., Guía mexicana (SMNE), Curr Obes Rep 2024. PMID 39356455.</li>
+    <li>Green D.J. et al., Nature Medicine, 9 de noviembre de 2026. PMID 43003902.</li>
+    <li>Asesoría conjunta ACLM, ASN, OMA y TOS sobre prioridades nutricionales con GLP-1, 2025. PMID 40450457.</li>
+    <li>Chávez-Manzanera E.A. et al., Guía mexicana de práctica clínica para sobrepeso y obesidad (SMNE), Current Obesity Reports 2024. PMID 39356455.</li>
     <li>Jensen S.B.K. et al., eClinicalMedicine 2024. PMID 38544798.</li>
-    <li>Etiquetas de la FDA de Wegovy y Zepbound.</li>
-    <li>Ley General de Salud, arts. 226, 300, 306, 310 y 311.</li>
-    <li>COFEPRIS, aviso de riesgo sobre Ozempic®, 25 ago. 2023.</li>
-    <li>Reglamento de la Ley General de Salud en Materia de Publicidad, art. 19.</li>
-    <li>Ley Federal de Protección al Consumidor, art. 32.</li>
+    <li>FDA, información para prescribir de Wegovy y Zepbound.</li>
+    <li>Ley General de Salud, artículos 226, 300, 306, 310 y 311.</li>
+    <li>COFEPRIS, aviso de riesgo sobre Ozempic®, 25 de agosto de 2023.</li>
+    <li>Reglamento de la Ley General de Salud en Materia de Publicidad, artículo 19.</li>
+    <li>Ley Federal de Protección al Consumidor, artículo 32.</li>
     <li>Páginas oficiales: hespanol.com, centromedicoabc.com, hospitalangeles.com, medicasur.com.mx, hospitalsanangelinn.mx, content.tecsalud.mx, hospitalespuertadehierro.com.</li>
-    <li>Clivi, Nutrimind, Fitia, Manzana Verde, Jenny Light, Manyar, No Sugar, Gains Meals, True Dose y Habeats: sitios oficiales.</li>
-    <li>Planet Fitness, comunicado de PerksFest, 3 ago. 2026 (fragmento).</li>
-    <li>NOM-008-SSA3-2017, tratamiento integral del sobrepeso y la obesidad.</li>
-    <li>Ley Federal de Protección de Datos Personales en Posesión de los Particulares, DOF 20 mar. 2025, art. 8.</li>
+    <li>Sitios oficiales de Clivi, Nutrimind, Fitia, Manzana Verde, Jenny Light, Manyar, No Sugar, Gains Meals, True Dose y Habeats.</li>
+    <li>Planet Fitness, comunicado de PerksFest, 3 de agosto de 2026.</li>
+    <li>NOM-008-SSA3-2017, para el tratamiento integral del sobrepeso y la obesidad.</li>
+    <li>Ley Federal de Protección de Datos Personales en Posesión de los Particulares, DOF 20 de marzo de 2025, artículo 8.</li>
     <li>NOM-004-SSA3-2012, del expediente clínico.</li>
   </ol>
 </section>
