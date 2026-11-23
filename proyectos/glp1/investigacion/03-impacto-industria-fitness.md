@@ -88,3 +88,34 @@ Fuentes: https://journals.sagepub.com/doi/10.1177/00222437251412834 ; https://ne
 - Hogares con al menos un usuario: de ~11% (fines de 2023) a más de 16% (mediados de 2024). — SNIPPET-ONLY
 - **El estudio no mide gasto en gimnasios ni en fitness.** NOT FOUND para gasto en gimnasio en este estudio.
 
+### 1.9 Precisión sobre William Blair (complemento de 1.1) — VERIFIED
+
+Fuente: https://athletechnews.com/glp-1-use-boosts-gym-memberships-william-blair-survey/ (19 de mayo de 2026).
+
+- «finding a three-percentage point increase in gym memberships (up to 35%) after starting the medication, up from a two-percentage point uptick to 24% during the 2024 survey.» — VERIFIED. Es decir, la afiliación pasó de ~32% a ~35% tras iniciar el fármaco (2026) y de ~22% a 24% (2024). **El efecto neto de iniciar GLP-1 sobre la afiliación es +2 a +3 puntos porcentuales, no un desplome ni un auge.**
+- «fitness club memberships among those under 45 jumping to 62% after beginning treatment, versus 43% from the 2024 survey». — VERIFIED
+- Life Time: su director general calificó los GLP-1 como «a home run» para la industria (enlace en la misma nota). — VERIFIED como cita de terceros.
+
+### 1.10 Les Mills · «GLP-1 medication: friend or foe for operators?» (16 de junio de 2025) — VERIFIED
+
+Fuente: https://www.lesmills.com/us/articles/glp-1-medication-friend-or-foe-for-operators
+
+- «It is estimated that up to 50% of patients abandon treatment during the first three months.» — VERIFIED (sin cita primaria en la página)
+- Universidad de Oxford (11 estudios, Congreso Europeo de Obesidad 2025): la mayoría de quienes dejan el fármaco recupera todo el peso perdido en un año. — VERIFIED como cita de terceros
+- «Harrison Co anticipates the total addressable market for fitness clubs will increase by $6.8bn in the US alone, as a result of more people taking GLP-1s.» — VERIFIED como cita de terceros
+- McKinsey 2025 Future of Wellness: «an 11 percentage point increase since 2023 in those using weight loss medications». — VERIFIED como cita de terceros
+- **NOT FOUND**: encuesta propia de Les Mills con porcentajes de afiliación o cancelación de usuarios de GLP-1. Consultados: lesmills.com (artículo anterior y sección research-insights), búsqueda web.
+
+### 1.11 PwC US · «The end of more: How GLP-1 users shop, eat, and seek support» (22 de junio de 2026) — VERIFIED
+
+Fuente: https://www.pwc.com/us/en/industries/consumer-markets/library/glp-1-consumer-trends.html (PDF: https://www.pwc.com/us/en/industries/consumer-markets/library/assets/pwc-glp-1-survey.pdf, no leído). Encuesta del 4 al 9 de mayo de 2026, 3,089 consumidores (1,063 usuarios actuales, 1,010 exusuarios, 1,016 considerando), realizada por Numerator; panel transaccional de ~110,000 hogares.
+
+- «Twenty-one percent of U.S. households now include a current GLP-1 user (up from 9% in January 2025)». — VERIFIED
+- «54% of users surveyed have been on the drugs for more than a year (up from 38% in 2024).» — VERIFIED
+- **Cardio:** «36% have increased their frequency of walking, running, cycling, and swimming, versus 16% who reduced it». — VERIFIED
+- **Clases grupales (la cifra más relevante para un club con 54 clases):** «Group fitness, by contrast, is a category under pressure: 14% of current users have decreased their frequency of classes, while only 11% have increased it.» — VERIFIED. Saldo neto: −3 puntos.
+- **Fuerza:** «21% of current users have increased it, 17% have decreased it, and 41% have never done it at all.» — VERIFIED. Saldo neto: +4 puntos; 41% nunca la ha hecho (oportunidad de producto).
+- «only 23% feel well-supported by today's wellness platforms»; «Roughly 85% of current users say companies are falling short». — VERIFIED
+- «Per-household grocery spend is down 5.5%»; QSR −8.7% a los 6-8 meses. — VERIFIED
+- Lectura para escenarios: el efecto neto sobre frecuencia de uso es mixto por tipo de actividad. Para un club cuyo valor percibido descansa en clases grupales, la señal es ligeramente negativa (−3 pp); para piso de fuerza, ligeramente positiva (+4 pp). No hay cifra de cancelación de membresía en la página.
+

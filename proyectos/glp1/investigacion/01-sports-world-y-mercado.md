@@ -159,3 +159,29 @@ EBITDA (VERIFIED):
 
 Contribución marginal de clubes 3T26 (sin IFRS 16): 23.6% (R-3T26). Efectivo 3T26: 272.1 millones de MXN. Analistas que cubren la emisora (R-3T26): Actinver, Signum Research, Apalache.
 
+
+### 5.b Datos cualitativos del Reporte Anual 2024 (VERIFIED)
+
+Fuente: **[RA-2024]** Grupo Sports World, Reporte Anual BMV 2024 (230 págs.; se leyeron las primeras 80). https://www.sportsworld.com.mx/uploads/es/documents/reports_annual_bmv/gsw_reporte_anual_bmv_2024.pdf
+
+- No define la fórmula ni la periodicidad de la «deserción»; la lista como KPI interno junto con «Clientes», «Crecimiento Neto» y «Reactivaciones».
+- Estacionalidad: «la adquisición de Membresías suele incrementar al inicio de cada año» y el aforo disminuye al cierre del año.
+- Tipos de membresía: Individual y Familiar («puede incluir hasta 8 personas»), ambas «permanente y transmisible»; convenios corporativos «Plan Salud» («se destaca por tener un menor nivel de deserción»); planes Streaming y Dual Fit; programa de **anualidades** (pago anticipado de 12 cuotas), que según la empresa «permite una mayor permanencia (menor deserción)».
+- Segmento objetivo: «Full Service (enfocado en el segmento A, B, C+)».
+- Modelo económico: «Una vez logrado este punto de equilibrio, cada Cliente adicional se refleja en un incremento en el margen de utilidad» (implica alto apalancamiento operativo: la pérdida de un cliente cae casi íntegra al margen).
+
+---
+
+## 7. Mercado mexicano de gimnasios
+
+### 7.a Tamaño y penetración (cifras citadas por la propia empresa)
+
+RA-2024, «Panorama general de la industria formal del fitness», citando el *IHRSA Global Report 2019* y el *Informe sobre el Estado de la Industria de la Salud y el Fitness en México 2019* (VERIFIED como cita en RA-2024; dato de origen 2019, antiguo):
+- «existen aproximadamente **12,871 clubes** privados [...] los cuales prestan servicios a **4.3 millones de Clientes**, quienes representan aproximadamente el **3.3%** del total de la población en México» (tabla: 4,264,000 usuarios).
+- «aproximadamente 10 clubes privados por cada 100,000 habitantes» (10.2).
+- «La industria formal del fitness en México genera aproximadamente **$1,872 millones de dólares** anuales».
+- «Se espera que para el 2030 el número de personas que realicen alguna actividad física en instalaciones deportivas alcance **7.6 millones** de personas en México».
+- Comparativo de penetración (misma fuente): Estados Unidos 20.8%, Brasil 4.6%, Argentina 6.4%, Chile 5.0%, Colombia 3.7%, México 3.3%.
+
+Participación implícita de Sports World (cálculo propio): 97,046 / 4,264,000 ≈ **2.3%** de los usuarios de clubes en México (denominadores de años distintos; solo orden de magnitud).
+

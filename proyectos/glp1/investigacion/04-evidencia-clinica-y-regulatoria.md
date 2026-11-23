@@ -59,3 +59,44 @@ Estado: en curso (se escribe punto por punto).
   - Resumen PubMed (textual): «This Viewpoint explores the effects of weight loss achieved through GLP-1–based antiobesity medications on weight regain, fat-free mass, and skeletal muscle mass in people with obesity.»
   - El texto completo está tras muro de pago; sus cifras internas no se leyeron. No citar cifras atribuidas a este artículo sin leer el texto completo.
   - Nota: la solicitud lo atribuía a «Lancet Diabetes Endocrinol»; la publicación correcta es **JAMA**.
+
+---
+
+## 2. Ejercicio combinado con fármacos GLP-1
+
+### 2.1 Lundgren et al., NEJM 2021 · liraglutida + ejercicio (S-LiTE) — VERIFIED
+
+- Lundgren JR, Janus C, Jensen SBK, et al. *Healthy Weight Loss Maintenance with Exercise, Liraglutide, or Both Combined.* N Engl J Med. 2021;384(18):1719-1730. PMID 33951361. DOI 10.1056/NEJMoa2028198. https://pubmed.ncbi.nlm.nih.gov/33951361/
+  - Diseño: 195 adultos con obesidad (IMC 32-43) sin diabetes; dieta baja en calorías de 8 semanas (-13.1 kg) y luego 1 año de mantenimiento en cuatro brazos: ejercicio + placebo, liraglutida 3.0 mg/día, combinación, placebo.
+  - Cita textual: «At 1 year, all the active-treatment strategies led to greater weight loss than placebo: difference in the exercise group, -4.1 kg [...]; in the liraglutide group, -6.8 kg [...]; and in the combination group, -9.5 kg (95% CI, -13.1 to -5.9; P<0.001).»
+  - Cita textual: «The combination strategy decreased body-fat percentage by 3.9 percentage points, which was approximately twice the decrease in the exercise group (-1.7 percentage points [...]) and the liraglutide group (-1.9 percentage points [...]).»
+  - Cita textual: «Only the combination strategy was associated with improvements in the glycated hemoglobin level, insulin sensitivity, and cardiorespiratory fitness.»
+  - Nota: el ejercicio fue de intensidad moderada a vigorosa (predominantemente aeróbico), no un protocolo de fuerza.
+
+### 2.2 Jensen et al., eClinicalMedicine 2024 · un año después de suspender — VERIFIED
+
+- Jensen SBK, Blond MB, Sandsdal RM, et al. *Healthy weight loss maintenance with exercise, GLP-1 receptor agonist, or both combined followed by one year without treatment: a post-treatment analysis of a randomised placebo-controlled trial.* EClinicalMedicine. 2024;69:102475. PMID 38544798. DOI 10.1016/j.eclinm.2024.102475. PMCID PMC10965408. https://pubmed.ncbi.nlm.nih.gov/38544798/
+  - 109 participantes asistieron a la evaluación de la semana 104.
+  - Cita textual: «During the year after termination of treatment (week 52-104), weight regain was 6.0 kg [2.1; 10.0] larger after termination of liraglutide compared with after termination of supervised exercise».
+  - Cita textual: «More participants who had previously received combination treatment maintained a weight loss of at least 10% of initial body weight one year after treatment termination [...] compared with participants who had previously received placebo (odds ratio [OR] 7.2 [2.4; 21.3]) and liraglutide (OR 4.2 [1.6; 10.8]).»
+  - Cita textual (interpretación): «Body weight and body composition were maintained one year after termination of supervised exercise, in contrast to weight regain after termination of treatment with obesity pharmacotherapy alone.»
+  - Relevancia: es el argumento más directo para el club. El hábito de ejercicio supervisado persiste cuando el fármaco se suspende.
+
+### 2.3 Green et al., Nature Medicine 2026 · ECA de entrenamiento de fuerza + tirzepatida — VERIFIED
+
+- Green DJ, Haynes A, Underwood DR, Winterton ER, Green AA, Daly RM, George ES, Lester L, Naylor LH, Hillis GS, Fegan PG, Yeap BB. *Resistance exercise to attenuate lean mass loss during tirzepatide therapy for obesity: a randomized controlled trial.* Nat Med. Publicado en línea el 9-nov-2026. PMID 43003902. DOI 10.1038/s41591-026-04752-5. Registro ACTRN12623001236684. https://pubmed.ncbi.nlm.nih.gov/43003902/
+  - Diseño: 120 adultos con sobrepeso u obesidad, todos con tirzepatida; aleatorizados a entrenamiento de fuerza **tres veces por semana** o actividad habitual, **40 semanas**. Adherencia al entrenamiento: **91 %**.
+  - Cita textual: «Weight loss achieved was similar (T = -22.61 kg, T+REx = -22.28 kg, P = 0.694).»
+  - Cita textual: «resistance exercise reduced loss of total lean soft tissue mass (T = -4.67 kg, T+REx = -3.57 kg, P < 0.001; between-group difference = 1.09 kg, 95% CI: 0.43-1.75 kg).»
+  - Cita textual: «Upper and lower body muscle strength decreased with tirzepatide (bench press -4.09 kg, lat pulldown -4.42 kg, knee extension -4.42 kg) but increased with T+REx (+4.68 kg, +8.58 kg, +5.88 kg, respectively, all P < 0.001 versus tirzepatide).»
+  - **Cálculo propio:** la pérdida de masa magra se redujo en ≈ 23 % (1.09 / 4.67).
+  - Conflictos declarados: honorarios de Eli Lilly a varios autores (pagados a la universidad en un caso).
+  - Relevancia: primera evidencia aleatorizada publicada de que el entrenamiento de fuerza con tirzepatida conserva masa magra y aumenta la fuerza sin reducir la pérdida de peso.
+
+### 2.4 Otros estudios 2024-2026 localizados
+
+- **SEMALEAN** (observacional prospectivo, no aleatorizado) — VERIFIED. Alissou M, et al. *Impact of Semaglutide on fat mass, lean mass and muscle function in patients with obesity: The SEMALEAN study.* Diabetes Obes Metab. 2026;28(1):112-121. PMID 41068996. DOI 10.1111/dom.70141. n = 106 completaron; «lean mass initially declined (-3 kg at M7) but stabilised thereafter. Handgrip strength improved significantly (+4.5 kg at M12), and the prevalence of sarcopenic obesity decreased from 49% at baseline to 33% at M12.»
+- **LEAN-PREP** (protocolo de ECA, sin resultados) — VERIFIED (ficha). Alawadhi AA, et al. *LEAN mass Preservation with Resistance Exercise and Protein during semaglutide and tirzepatide therapy (LEAN-PREP study): a protocol for a randomised controlled trial.* BMJ Open. 2026. PMID 42020128. DOI 10.1136/bmjopen-2026-116911.
+- **SLIMM-2** (protocolo de ECA: sedentarismo, fuerza y semaglutida) — VERIFIED (ficha). Contemp Clin Trials. 2025 Feb. PMID 39608749.
+- **Metaanálisis de masa magra con incretinas vs intervención de estilo de vida** — Diabetes Obes Metab. 2026 Jun. PMID 41877354 (solo ficha; resumen no leído).
+- **ECA con semaglutida + entrenamiento de fuerza con resultados publicados:** NOT FOUND en PubMed al 23-nov-2026 (búsqueda: semaglutide AND resistance training/exercise AND randomized).
