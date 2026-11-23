@@ -9,7 +9,7 @@ Convención de etiquetas:
 - **NOT FOUND**: no localizado; se indica dónde se buscó.
 - **ESTIMADO**: distancia aproximada calculada a partir de direcciones; no es una medición.
 
-Estado: en curso (se escribe entidad por entidad).
+Estado: completo (ver pendientes al final).
 
 ---
 
@@ -128,7 +128,7 @@ Resumen por zona: Valle de México 31 (CDMX 24, Estado de México conurbado 7), 
 - **Lectura:** el lenguaje del centro (composición corporal, rendimiento deportivo, medicina del deporte) coincide casi palabra por palabra con el programa GLP-1 de Sports World.
 
 #### Médica Sur · Centro Integral de Endocrinología y Control de Peso — VERIFIED
-- **Dirección:** Puente de Piedra 150, Toriello Guerra, Tlalpan, CDMX (dirección conocida del hospital; coordenada OSM).
+- **Ubicación:** Colonia Toriello Guerra, Tlalpan, CDMX (según OpenStreetMap; la página del centro no publica dirección, por lo que el número de calle queda sin verificar).
 - **Programa:** «Centro Integral de Endocrinología y Control de Peso», dentro del hospital; padecimientos: prediabetes, resistencia a la insulina, **obesidad**, lipedema, hígado graso, SOMP, menopausia, hipogonadismo, osteoporosis, tiroides. «Atención multidisciplinaria coordinada», certificación del Consejo de Salubridad General y de la Joint Commission International. Fuente: https://www.medicasur.com.mx/especialidades/endocrinologia/ . Publicaciones de Médica Sur en Instagram y X anuncian el «nuevo» centro en 2026 (SNIPPET-ONLY). Además, «Centro de Cirugía Bariátrica de Médica Sur» (página de Medicina Internacional; solo se leyó el título): https://www.medicasur.com.mx/ms-intl/centro-integral-de-cirugia-bariatrica.html
 - **Alianzas:** NOT FOUND.
 - **Clubes cercanos (ESTIMADO):** Patio Tlalpan 2.2 km · Coapa 3.2 km · Pedregal-Acora 4.4 km.
@@ -296,3 +296,103 @@ Nota: los clubes Cumbres y Nave 01 Apodaca no tienen ninguno de estos hospitales
 - **Nutricionista / proteína:** menús diseñados y supervisados por nutriólogas tituladas, balanceados «para asegurar que pierdas grasa, no músculo».
 - **Alianza con gimnasios o empresas:** NOT FOUND.
 - **Lectura:** combina consulta con nutrióloga, medición de composición corporal y comida, con sucursales en zonas donde hay clubes (Del Valle → Félix Cuevas, Amores, Xola; San Jerónimo → San Jerónimo; Interlomas → Espacio y Paseo Interlomas; Satélite → Satélite). Es la candidata más completa para un esquema «nutrióloga + comida» en el Valle de México.
+
+#### No Sugar Healthy Kitchen · meal prep (Monterrey) — VERIFIED
+- **Sitio:** https://www.nosugar.mx/ («Cocinada en Monterrey»; «Hecho en Monterrey»).
+- **Planes:** «4 planes: Slim, Healthy, Stronger, Keto», «Desde $150 por platillo»; mínimo 5 platillos por pedido; entrega en frío; el sitio muestra platillos con su aporte, por ejemplo «Pollo en Crema de Espinaca 519 kcal, 49 g prot.» y «Pollo Teriyaki 597 kcal, 59 g prot.». Texto «en Monterrey en pedidos desde $600» (condición de envío; contexto no legible en la extracción). La página de envíos no publicó la lista de zonas en la lectura.
+- **Programa empresarial:** sí, «Comedor virtual para empresas» y «Portal de colaboradores» (https://www.nosugar.mx/pages/empresas; detalle comercial no publicado).
+- **Nutricionista:** NOT FOUND en lo leído. **Alianza con gimnasios:** NOT FOUND.
+- **Lectura:** plan «Stronger» y platillos de 49-59 g de proteína; ya opera un canal empresarial que podría replicarse con Sports World San Pedro y Cumbres.
+
+#### Privee Food · comida semanal preparada (Monterrey y zona metropolitana) — VERIFIED
+- **Sitio:** https://priveefood.com/
+- **Cobertura:** Monterrey, San Pedro Garza García, San Nicolás, Guadalupe, **Apodaca**, Santa Catarina, Escobedo, Juárez, García y Santiago, sujeto a código postal. Entrega los domingos; envío +$99 MXN por ruta.
+- **Planes:** 5 platillos («Plan Oficinista») o 10 platillos por semana; precio del plan no extraído de la portada. Alto en proteína / nutricionista: NOT FOUND. Alianza con gimnasios: NOT FOUND.
+- **Lectura:** única opción localizada que declara cobertura en Apodaca (club Nave 01).
+
+#### Fitpack · alimentación saludable a domicilio (Querétaro, San Miguel de Allende, Monterrey, Saltillo) — SNIPPET-ONLY
+- Perfil de Instagram: «Sucursales en QRO | SMA | MTY | SALT»; publicación: «Planes desde $140 al día. Opciones estándar, altas en proteína y personalizadas. Tu nutrióloga cocina por ti» (https://www.instagram.com/fitpack_qro/ ; https://www.instagram.com/p/DYaKkwNm6BB/). Sitio propio no localizado. Interesa porque cubre tres plazas con club (Querétaro, Monterrey, Saltillo).
+
+#### Habeats · planes de alimentación (Querétaro) — VERIFIED
+- **Sitio:** https://habeats.com.mx/ («Estamos en la hermosa Ciudad de Querétaro»).
+- **Planes:** líneas «Planes de Comida Saludable», «Planes de **Nutrición Deportiva**» y «Planes de Nutrición y **Control de Peso**» (primera vez y recurrentes); entregas nocturnas 3 veces por semana para lunes a viernes; menú diario cambiante; cocina la dieta que entregue la nutrióloga del cliente («¿Ya fuiste con la nutrióloga? ¡Mándanos tu dieta para cocinártela!»). Precios: no extraídos (tienda). Alianza con gimnasios: NOT FOUND.
+
+#### Gains Meals · meal prep alto en proteína (Guadalajara y Zapopan) — VERIFIED
+- **Sitio:** https://www.gainsmeals.com/
+- **Cobertura:** «Guadalajara y Zapopan» (validación por código postal). Tlajomulco, donde está el club La Rioja, no se menciona.
+- **Precios (MXN):** Pollo $170, Res $180, Salmón $220 por comida; descuentos desde 6 comidas («desde $136 / $144.50 / $153»); paquetes publicados de $918, $1,445 y $1,904; envío gratis desde 4 comidas, $79 con menos. Sin suscripción. Publica proteína, carbohidratos, grasa y calorías de cada platillo.
+- **Nutricionista:** NOT FOUND. **Alianza con gimnasios:** NOT FOUND.
+
+#### True Dose · suscripción de comidas (Puebla y Cholula) — VERIFIED
+- **Sitio:** https://truedose.mx/
+- **Cobertura:** «Actualmente, realizamos entregas en las zonas de Puebla y Cholula» (cubre los clubes Las Ánimas y Sonata).
+- **Precios (MXN):** planes de 4, 6, 8 o 10 comidas por semana, para una o dos personas; «comienzan en $139 MXN por comida … y pueden bajar hasta $117 MXN por comida»; plan personalizado según necesidad calórica. Varios platillos etiquetados «Alto en Proteína».
+- **Nutricionista:** «Diseñado por nutriólogos». **Alianza con gimnasios:** NOT FOUND.
+
+#### Otros proveedores vistos solo en buscador (SNIPPET-ONLY)
+- CDMX: Hola Dieta (https://holadieta.mx/, planes «Balance», sin precios extraíbles), NextMeals (https://nextmeals.mx/), eat&fit (https://www.eat-fit.com.mx/), My Fitness Chef (https://myfitnesschef.mx/, «proteínas de 300 gr»), MODA Profile Nutrition (5 comidas semanales $900, Facebook).
+- Monterrey: Healthy Dream MTY («Tu semana saludable lista desde $569», Instagram), Plan Uno (https://www.elplanuno.com/).
+- Guadalajara: In-Joy (https://injoynow.mx/), Salud2Go (planes altos en proteína, vía directorio de terceros).
+- Querétaro: Delta Meals (desayunos $90 individual / $450 semanal, Facebook).
+- Programas de comida específicos para usuarios de GLP-1 en México: NOT FOUND (búsqueda «dieta personalizada a domicilio … GLP-1/Ozempic porciones»).
+
+---
+
+## Parte E · Precedentes internacionales
+
+#### Panorama: 17 operadores con algún programa GLP-1 (Inspire360, 2026) — VERIFIED
+- Inspire360, «The GLP-1 Club Intelligence Report» (https://www.inspire360.com/glp-1-report-2026) y su cobertura en Athletech News (https://athletechnews.com/gyms-clubs-starting-to-offer-glp-1s-inspire360-report/, marzo de 2026): «17 different fitness operators now have some type of GLP-1 program». Tres modelos:
+  1. **Programación adaptada** (rediseño de entrenamiento y coaching para usuarios de GLP-1, sin parte médica).
+  2. **Clínica en el club** o integración clínica directa: «Life Time, UFC GYM, Monarch, and Love.Life have moved into direct clinical integration»; NexGen MD opera las clínicas de UFC GYM.
+  3. **Referencia** («referral loop», el gimnasio refiere a la clínica y la clínica refiere al gimnasio) o **marca blanca** (telemedicina que presta el servicio bajo la marca del gimnasio). «Budget gyms are firmly in the referral lane»: Planet Fitness + Ro, Gold's Gym + Idexa360, Crunch + Thrive; franquiciatarios de Anytime Fitness «forming local clinic partnerships».
+- **Relevancia para Sports World:** el modelo de referencia es el único compatible con la regla de que el club nunca prescribe. Es el que usan los operadores de mayor escala.
+
+#### Life Time · MIORA (clínica dentro del club, EE. UU.) — VERIFIED / SNIPPET-ONLY
+- **Qué es:** clínicas MIORA «located inside Life Time»; experiencia inicial **USD 599** con panel de «70+ biomarkers» y una hora con el proveedor médico para armar un protocolo personalizado; opera solo en estados donde MIORA tiene licencia. Fuente: https://miora.lifetime.life/ (VERIFIED).
+- **GLP-1:** tratamientos de pérdida de peso «starting at $249 a month» según material entregado a socios, y cuota adicional MIORA promedio de USD 299 al mes más servicios; el director ejecutivo de MIORA subraya el valor de combinar entrenamiento de fuerza y nutrición por la pérdida muscular asociada (SNIPPET-ONLY, artículo de Anne Marie Chaker en Substack).
+- **Resultados:** Life Time no reporta los ingresos de MIORA por separado (NOT FOUND en los comunicados trimestrales de 2026). A nivel de empresa, 3T26: ingresos de USD 893.5 millones, +14 % anual; ≈859,000 membresías de centro, +2.2 % (SNIPPET-ONLY, resumen de la llamada de resultados en Yahoo Finance). No es atribuible a MIORA.
+
+#### Equinox × Function Health (análisis clínicos para socios) — VERIFIED
+- **Qué se acordó:** socios de Equinox nuevos en Function obtenían la membresía de Function (160+ análisis de laboratorio, interpretación revisada por médicos y plan personalizado) a **USD 249 al año** en lugar de USD 365; «Offer powered by Equinox … Offer expired May 31, 2026». Fuente: https://www.functionhealth.com/campaign/equinox-function-health
+- **Versión de lujo:** en mayo de 2024 Equinox lanzó la membresía «Optimize by Equinox» con Function Health: pruebas de unos 100 biomarcadores dos veces al año y unas 16 horas al mes de coaching y entrenamiento, por USD 3,000 al mes con mínimo de seis meses, sin incluir la membresía del club (≈ USD 40,000 al año) (SNIPPET-ONLY, CNBC 6 de mayo de 2024).
+- **Resultados publicados:** NOT FOUND.
+
+#### F45 Training × Dr. B (marca compartida GLP-1 + app de entrenamiento y nutrición) — VERIFIED
+- **Qué se acordó:** programa desde **USD 249 al mes** que incluye consulta mensual con proveedor médico con licencia, check-ins ilimitados, GLP-1 compuestos a domicilio, acceso a la app de F45, descuento para pasar a membresía presencial y análisis anuales en Quest Diagnostics. El director general de F45 lo justifica porque asegura «access to resistance training and nutrition programs essential for successful outcomes». Fuente: https://athletechnews.com/f45-training-expands-wellness-focus-with-glp-1-medications/ (enero de 2025). Inspire360 lo clasifica como paquete de marca compartida con reparto de ingresos (VERIFIED en la nota de Athletech News citada arriba).
+- **Resultados:** NOT FOUND.
+
+#### Planet Fitness × Ro (referencia) y × Trifecta (comida) — SNIPPET-ONLY / VERIFIED
+- **Ro:** referencia con descuento desde el programa PF Perks para GLP-1 de marca (Wegovy); despliegue completo a 24 meses; según Inspire360, el director general calificó la alianza como el «most successful Perks program in history» (SNIPPET-ONLY, extracto de https://www.inspire360.com/glp-1-report-2026).
+- **Trifecta (comida preparada):** en PerksFest (3 de agosto de 2026), «Trifecta: 50% off your first order and 25% off your second». PF Perks «helped members save approximately $13 million over the past 18 months» (SNIPPET-ONLY: extracto del comunicado https://www.planetfitness.com/newsroom/press-releases/get-shopping-and-get-saving-with-planet-fitness-perksfest; lectura directa bloqueada con 403).
+- **Lectura:** es el precedente más cercano a un acuerdo «gimnasio + comida a domicilio»: descuento por código dentro de la app del gimnasio, sin integración operativa.
+
+#### Crunch Fitness × Thrive; In-Shape × KORB Health; Arena Club × Prime Meridian — SNIPPET-ONLY
+- Crunch (550+ ubicaciones) se asoció con Thrive para dar acceso a medicamento GLP-1 y programación de apoyo; In-Shape Family Fitness (63 ubicaciones en California) con KORB Health en integración clínica de marca blanca; Arena Club con Prime Meridian Health (Utah) en un programa de 12 meses de semaglutida con coaching. Fuente: extracto de https://www.inspire360.com/glp-1-report-2026.
+
+#### Virgin Active y Third Space (Reino Unido)
+- Inspire360 lista a Virgin Active (UK) en su tabla de operadores junto a Equinox y Crunch; el extracto no permite precisar el modelo (SNIPPET-ONLY). Third Space declara «Medical Centre» y nutrición entre sus servicios (SNIPPET-ONLY, perfil de LinkedIn). Acuerdos específicos con hospitales o apps y sus resultados: NOT FOUND.
+
+#### Gimnasio + app de nutrición
+- Acuerdo específico de una cadena de gimnasios con una app de nutrición para usuarios de GLP-1: NOT FOUND. La alianza MyFitnessPal-Calm (nutrición + bienestar mental) es entre apps, no con gimnasios (SNIPPET-ONLY, mercadofitness.com). La NASM recomienda a los entrenadores acompañar a clientes con GLP-1 mediante entrenamiento de fuerza y nutrición centrada en proteína (junio de 2026; SNIPPET-ONLY, vía fusehealth.com).
+
+---
+
+## Lista corta por categoría (síntesis)
+
+| Categoría | Candidato | Por qué | Fuente principal |
+|---|---|---|---|
+| Referencia médica, Monterrey | TecSalud (Zambrano Hellion) | Único programa hospitalario que publica «tratamiento farmacológico» de la obesidad; a 2.9 km de SW San Pedro (ESTIMADO) | content.tecsalud.mx/cirugia-bariatrica |
+| Referencia médica, CDMX poniente | Centro Médico ABC, Centro de Nutrición & Obesidad | Lenguaje idéntico al programa (composición corporal, rendimiento deportivo, medicina del deporte); campus Santa Fe a 0.8 km de SW Santa Fe (ESTIMADO) | centromedicoabc.com/centro-de-nutricion-obesidad/ |
+| Referencia médica, CDMX Polanco | Hospital Español, Clínica de Obesidad | Incluye «Entrenamiento Físico» en el equipo clínico; a 0.7 km de SW Antara (ESTIMADO) | hespanol.com/Servicios/clinica-de-obesidad |
+| Referencia médica, CDMX centro | Hospital Ángeles México y Roma (Instituto de Obesidad) | «Programas de ejercicio físico supervisado»; cubren Xola, Patriotismo, Roma y Condesa a menos de 2 km (ESTIMADO) | hospitalangeles.com |
+| Referencia médica, CDMX sur | Médica Sur (Endocrinología y Control de Peso) y San Ángel Inn (Salud Integral) | Médica Sur: centro nuevo con JCI; San Ángel Inn: mide obesidad sarcopénica y fortalece músculo | medicasur.com.mx; hospitalsanangelinn.mx |
+| Referencia médica, Guadalajara | Puerta de Hierro Sur | Bariatría institucional a 2.5 km de SW La Rioja (ESTIMADO) | hospitalespuertadehierro.com |
+| Plataforma médica digital | Clivi | GLP-1 supervisado, más de 15,000 pacientes activos, más de 200 empresas con convenio, MXN 4,299 el primer mes | clivi.com.mx; clivi.com.mx/empresas |
+| App de nutrición de consumo | Fitia | Más de 10 M de usuarios, español, MXN 219 al mes / 679 al año, foco en recomposición corporal | fitia.app |
+| Herramienta para nutriólogos | Nutrimind | Mexicana; 70,000 profesionales; dietas por tipo «Deportista / Control de Peso» y rutinas | nutrimind.net |
+| Comida, multiciudad | Manzana Verde | CDMX-Edomex, Monterrey y Guadalajara; ~32 g de proteína por plato; planes de MXN 1,910 y 2,448 | manzanaverde.la/mexico |
+| Comida + nutrióloga, Valle de México | Jenny Light; Manyar | Jenny Light: nutrióloga + composición corporal + comida, sucursales en zonas con club; Manyar: cobertura casi idéntica al mapa de clubes | jennylight.com.mx; manyar.com.mx |
+| Comida, Monterrey / Puebla / Guadalajara / Querétaro | No Sugar (plan Stronger, canal empresarial); True Dose (Puebla-Cholula); Gains Meals (GDL-Zapopan); Habeats (Querétaro) | Cobertura local con proteína declarada o nutrición deportiva | sitios citados en la Parte D |
+| Precedente internacional | Modelo de referencia (Planet Fitness + Ro; Crunch + Thrive) y marca compartida (F45 + Dr. B) | Compatibles con que el club no prescriba; Life Time MIORA muestra el techo del modelo con clínica propia | inspire360.com; athletechnews.com |
+
+Estado: completo al 23 de noviembre de 2026. Pendientes declarados: programas hospitalarios en Puebla, Querétaro y ciudades medianas (NOT FOUND o SNIPPET-ONLY); precios de Fitpack, Habeats y Privee; contenido de los programas empresariales de Manzana Verde y No Sugar; confirmación interna del antecedente «Mindful Nutrition» en Paseo Interlomas.

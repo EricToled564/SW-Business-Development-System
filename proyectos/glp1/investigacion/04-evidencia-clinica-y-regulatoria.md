@@ -8,7 +8,9 @@ Convención de etiquetas:
 - **SNIPPET-ONLY**: cifra vista solo en un fragmento de resultado de búsqueda; requiere confirmación.
 - **NOT FOUND**: no localizada; se listan los lugares consultados.
 
-Estado: en curso (se escribe punto por punto).
+Estado: completo al 23-nov-2026 (seis bloques). Pendientes de verificación señalados en §7.
+
+Nota: las lecturas «para el club» de §6 son interpretaciones de investigación, no dictamen jurídico; deben validarse con un abogado sanitario antes de publicar el documento.
 
 ---
 
@@ -53,7 +55,7 @@ Estado: en curso (se escribe punto por punto).
   - Cita textual: «skeletal muscle changes with GLP-1RA treatments appear to be adaptive [...] Nevertheless, factors such as older age and severity of disease may influence the selection of appropriate candidates for these therapies due to risk of sarcopenia.»
   - Nota para el documento: es el contrapeso honesto; la pérdida de masa magra no equivale automáticamente a pérdida funcional.
 
-### 1.5 Conte, Hall, Klein · JAMA 2024 (Viewpoint) — VERIFIED (ficha) / contenido SNIPPET-ONLY
+### 1.5 Conte, Hall, Klein · JAMA 2024 (Viewpoint) — VERIFIED (ficha) / cifras internas NOT FOUND
 
 - Conte C, Hall KD, Klein S. *Is Weight Loss-Induced Muscle Mass Loss Clinically Relevant?* JAMA. 2024;332(1):9-10. PMID 38829659. DOI 10.1001/jama.2024.6586. https://pubmed.ncbi.nlm.nih.gov/38829659/
   - Resumen PubMed (textual): «This Viewpoint explores the effects of weight loss achieved through GLP-1–based antiobesity medications on weight regain, fat-free mass, and skeletal muscle mass in people with obesity.»
@@ -303,3 +305,98 @@ Fuente: Reglamento publicado en el DOF el 4 de mayo de 2000; «Última reforma p
 - **Art. 40, fracc. II** (textual): la publicidad dirigida a la población en general comprende «a. La difusión que se realice de los medicamentos que para adquirirse no requieren receta médica».
 - **Art. 79, fracc. I** (textual): «Requiere permiso de la Secretaría la publicidad relativa a: I. Prestación de servicios de salud, salvo cuando se trate de servicios otorgados en forma individual».
 - **Lectura para el club (interpretación):** si el programa se comunica como servicio de salud (nutrición clínica, tratamiento de la obesidad), la publicidad podría requerir permiso de COFEPRIS; si se comunica como servicio de acondicionamiento físico y orientación, con el componente nutricional prestado por profesionales con cédula, el riesgo baja. Validar con abogado sanitario.
+
+### 6.3 COFEPRIS · postura sobre GLP-1 de venta ilegal, indicación y «productos milagro»
+
+- **Aviso de riesgo, Ozempic, 25-ago-2023 — VERIFIED (PDF oficial).** COFEPRIS. *Falsificación del medicamento OZEMPIC® (Semaglutida) y comercialización ilegal en plataformas de venta, redes sociales y en otras aplicaciones web.* https://www.gob.mx/cms/uploads/attachment/file/859652/Aviso_de_Riesgo_Ozempic_25082023.pdf
+  - Textual: «El producto OZEMPIC® cuenta con autorización sanitaria vigente sólo para ser indicado en adultos con diabetes mellitus tipo 2 con ciertas características, por lo que es indispensable la valoración médica antes de iniciar tratamiento; es importante mencionar que cualquier otra indicación terapéutica no se encuentra autorizada por esta Autoridad Sanitaria, entre ellas para la pérdida de peso.»
+  - Textual: «este producto está clasificado como medicamento de fracción IV, que de conformidad con el artículo 226 la Ley General de Salud para poder adquirirlo se requiere de receta médica.»
+  - Implicación: asociar «Ozempic» con bajar de peso en un anuncio del club contradice la indicación autorizada en México (art. 311 LGS; art. 6 del Reglamento de Publicidad).
+- **Alerta sanitaria, tirzepatida, 9-feb-2026 — VERIFIED (PDF oficial).** COFEPRIS. Alerta sanitaria de medicamentos: comercialización ilegal de productos de las marcas Rapha, Dr. Pen y Peptide Xperts que contienen tirzepatida y carecen de registro sanitario. https://www.gob.mx/cms/uploads/attachment/file/1055652/Alerta_Sanitaria_Tirzepatida_09022026.pdf
+  - Textual: «El uso indiscriminado y sin supervisión de un médico especialista, puede ocasionar un estrés o sobreactividad en los órganos tales como el hígado o el páncreas, entre otros, lo que puede generar un fallo en los mismos.»
+  - Textual (recomendación a la población): no adquirirlos en plataformas de venta y otros sitios de internet, ya que «Requieren valoración, receta y supervisión médica».
+  - Uno de los cartuchos rotulados como tirzepatida contenía semaglutida y «crecimiento bacteriano».
+  - Retransmitida por PROFECO el 11-mar-2026 — VERIFIED: https://www.gob.mx/profeco/prensa/profeco-y-cofepris-alertan-por-comercializacion-ilegal-de-productos-con-tirzepatida («La Cofepris subraya que la adquisición y uso de Tirzepatida debe realizarse bajo prescripción, de conformidad con el artículo 226 de la Ley General de Salud»).
+  - Implicación operativa: el club no debe vender, aplicar, almacenar, recomendar proveedores ni permitir la reventa de estos productos en sus instalaciones o canales; conviene una política escrita.
+- **«Productos milagro» / «productos engaño» — SNIPPET-ONLY.** Alertas oficiales encontradas: KETOPIA (2016, https://www.gob.mx/cms/uploads/attachment/file/130719/21_Alerta_sanitaria_KETOPIA_03022016.pdf) y Chupapanza (2023, «PUBLICIDAD ENGAÑOSA», https://www.gob.mx/cms/uploads/attachment/file/831210/Alerta_Sanitaria_Act_Chupapanza_09062023.pdf) — no leídas en su texto completo. Que COFEPRIS haya renombrado la categoría como «productos engaño» y liste las promesas de bajar de peso o ganar músculo como señales de alerta proviene de prensa (El Imparcial, 2-sep-2026) — no verificado en gob.mx. Un documento rector vigente de COFEPRIS sobre afirmaciones de pérdida de peso: NOT FOUND.
+- **Autorizaciones en México para obesidad (contexto) — SNIPPET-ONLY (prensa).** Wegovy oral (semaglutida 25 mg) aprobado por COFEPRIS en agosto de 2026 (Expansión, 17-ago-2026); dosis de 7.2 mg de semaglutida (Excélsior, fecha no confirmada); Mounjaro figura aprobado para diabetes, sin confirmación de indicación en obesidad (Medigraphic 2026). Verificar en la base de registros sanitarios de COFEPRIS antes de citar.
+
+### 6.4 PROFECO · Ley Federal de Protección al Consumidor (LFPC) — VERIFIED
+
+Fuente: texto vigente, «Última reforma publicada DOF 12-12-2025». https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf
+
+- **Art. 32, párr. 1** (textual): «La información o publicidad relativa a bienes, productos o servicios que se difundan por cualquier medio o forma, deberán ser veraces, comprobables, claros y exentos de textos, diálogos, sonidos, imágenes, marcas, denominaciones de origen y otras descripciones que induzcan o puedan inducir a error o confusión por engañosas o abusivas.»
+- **Art. 32, párr. 2** (textual): es engañosa o abusiva la información que, «pudiendo o no ser verdaderas, inducen a error o confusión al consumidor por la forma inexacta, falsa, exagerada, parcial, artificiosa o tendenciosa en que se presenta.»
+- **Art. 32, párr. 4** (textual): prohíbe indicar que un producto o servicio ha sido «avalados, aprobados, recomendados o certificados por sociedades o asociaciones profesionales, cuando éstas carezcan de la documentación apropiada que soporte con evidencia científica, objetiva y fehaciente» sus cualidades.
+- **Art. 32, último párrafo** (textual): «Previo a su difusión, los proveedores de manera voluntaria, podrán someter su publicidad a revisión de la Procuraduría, a fin de que la misma emita una opinión no vinculante.»
+- Implicación: afirmaciones como «conserva tu músculo mientras usas GLP-1» deben poder comprobarse (p. ej., con Green 2026, §2.3, y con mediciones propias); evitar cifras de resultado garantizadas y no sugerir respaldo de sociedades médicas sin documento que lo acredite.
+
+### 6.5 Ley Federal de Protección de Datos Personales en Posesión de los Particulares (2025) — VERIFIED
+
+Fuente: «Nueva Ley publicada en el Diario Oficial de la Federación el 20 de marzo de 2025»; «Última reforma publicada DOF 14-11-2025». https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf
+
+- **Art. 3, fracc. VI** (textual): «Datos personales sensibles: Aquellos datos personales que afecten a la esfera más íntima de la persona titular, o cuya utilización indebida pueda dar origen a discriminación o conlleve un riesgo grave para esta. De manera enunciativa más no limitativa se consideran sensibles los datos personales que puedan revelar aspectos como origen racial o étnico, estado de salud presente o futuro, información genética [...]». → Que una persona usa un GLP-1, su peso, su composición corporal y sus condiciones de salud son datos sensibles.
+- **Art. 7** (textual): «Por regla general será válido el consentimiento tácito, salvo que las disposiciones jurídicas aplicables exijan que la voluntad de la persona titular se manifieste expresamente.»
+- **Art. 8** (textual): «Tratándose de datos personales sensibles, el responsable deberá obtener el consentimiento expreso y por escrito de la persona titular para su tratamiento, a través de su firma autógrafa, firma electrónica, o cualquier mecanismo de autenticación que al efecto se establezca. No podrán crearse bases de datos que contengan datos personales sensibles, sin que se justifique la creación de las mismas para finalidades legítimas, concretas y acordes con las actividades o fines explícitos que persigue el sujeto regulado.»
+- **Art. 9, fracc. VI**: la excepción al consentimiento para atención médica aplica solo «mientras la persona titular no esté en condiciones de otorgar el consentimiento» y si el tratamiento lo realiza «una persona sujeta al secreto profesional u obligación equivalente». No cubre la operación ordinaria de un club.
+- **Art. 11**: usar los datos para una finalidad distinta a la del aviso de privacidad exige nuevo consentimiento. → El dato «usa GLP-1» recabado para el programa no puede reutilizarse en mercadotecnia sin consentimiento nuevo.
+- **Art. 12** (textual): «para los datos personales sensibles, el responsable deberá realizar esfuerzos razonables para limitar el periodo de tratamiento de los mismos a efecto de que sea el mínimo indispensable.»
+- **Art. 15, fracc. II**: el aviso de privacidad debe identificar cuáles de los datos tratados «son sensibles».
+- **Sanciones:** el art. 59 permite incrementar las multas «hasta por dos veces» cuando la infracción se comete en el tratamiento de datos sensibles (fracc. III: «Multa de 200 a 320,000 veces la Unidad de Medida y Actualización»); el art. 64 duplica las penas de los delitos cuando se trata de datos sensibles.
+- Autoridad: la ley define «Secretaría: Secretaría Anticorrupción y Buen Gobierno» (art. 3, fracc. XV), que asume la función del extinto INAI.
+- Implicación operativa: formulario de consentimiento expreso y firmado (autógrafo o electrónico) antes del cuestionario de salud y de la medición de composición corporal; aviso de privacidad que señale los datos sensibles; acceso restringido; plazo de conservación definido.
+
+### 6.6 NOM-008-SSA3-2017 (tratamiento integral del sobrepeso y la obesidad) y cédula profesional — VERIFIED
+
+- **NOM-008-SSA3-2017**, publicada en el DOF; texto consultado en https://dof.gob.mx/nota_detalle_popup.php?codigo=5523105 (fecha de publicación 18-may-2018 según el informe de revisión de la Secretaría de Economía, https://platiica.economia.gob.mx/wp-content/uploads/sites/2/InformedeRevision/RS_NOM-008-SSA3-2017.pdf — SNIPPET-ONLY). Entró en vigor a los 60 días naturales de su publicación y dejó sin efectos la NOM-008-SSA3-2010.
+  - **1.2** (textual): «Esta Norma es de observancia obligatoria para los profesionales de las disciplinas de la salud y los establecimientos para la atención médica ambulatoria y hospitalaria de los sectores público, social y privado que proporcionen servicios para el tratamiento del sobrepeso y la obesidad.»
+  - **3.7** (textual): establecimiento para el tratamiento integral es «todo aquel establecimiento [...] que oferte o realice entre sus servicios, tratamiento del sobrepeso y la obesidad [...]. Todos los establecimientos que no realicen tratamiento quirúrgico o endoscópico serán considerados consultorios.» → **Riesgo clave:** si el club oferta «tratamiento de la obesidad», puede quedar dentro del ámbito de la NOM como consultorio. Comunicar el servicio como entrenamiento y orientación, y prestar el componente nutricional mediante profesionales con cédula, reduce ese riesgo; validar con abogado sanitario.
+  - **5.2.3** (textual): «El médico será el responsable del tratamiento integral del paciente con sobrepeso u obesidad, los profesionales en rehabilitación, nutrición y psicología serán responsables del tratamiento, en sus respectivas áreas de formación profesional».
+  - **5.3** (textual): las notas de atención «médica, nutriológica o psicológica, deben realizarse de conformidad con» la NOM del expediente clínico (NOM-004-SSA3-2012).
+  - **5.5** (textual): los establecimientos «deben orientar la publicidad de los servicios para el tratamiento del sobrepeso y la obesidad, de conformidad con las disposiciones aplicables en la materia.»
+  - **6.2.1** (textual): el nutriólogo «Debe contar con título y cédula profesional de nutriólogo legalmente expedida por la autoridad educativa competente [...] y conocer el tratamiento integral de pacientes con obesidad.»
+  - **6.5.2** (textual): el personal técnico participa «exclusivamente en apoyo a los profesionales de las áreas de medicina, nutrición y psicología, por lo que no podrá actuar de manera independiente, ni prescribir, realizar o proporcionar, por sí, tratamiento alguno.» → Un entrenador no puede indicar planes de alimentación para obesidad por cuenta propia.
+  - **7.2.1** (textual): el médico «Será el único profesional de la salud facultado para prescribir medicamentos».
+  - **8.1.1** (textual): el nutriólogo debe «Indicar el plan de nutrición que incluye: plan de alimentación individualizado, orientación alimentaria, recomendaciones para la actividad física y cambios en los hábitos alimentarios».
+  - Vigencia: un informe de revisión quinquenal recomendó mantenerla vigente mientras se elabora un reemplazo (SNIPPET-ONLY). Si se publicó una norma sustituta después de 2023: NOT FOUND.
+- **Ley General de Salud, art. 79** (textual; texto vigente DOF 15-01-2026): «Para el ejercicio de actividades profesionales en el campo de la medicina, [...] terapia física, [...] nutrición, dietología, [...] se requiere que los títulos profesionales o certificados de especialización hayan sido legalmente expedidos y registrados por las autoridades educativas competentes.» El segundo párrafo exige diploma registrado para actividades técnicas y auxiliares en nutrición.
+- **Ley Reglamentaria del Artículo 5o. Constitucional (profesiones en la Ciudad de México)**, última reforma DOF 19-01-2018. https://www.diputados.gob.mx/LeyesBiblio/pdf/208_190118.pdf
+  - **Art. 24** (textual): ejercicio profesional es «la realización habitual a título oneroso o gratuito de todo acto o la prestación de cualquier servicio propio de cada profesión, aunque sólo se trate de simple consulta o la ostentación del carácter del profesionista por medio de tarjetas, anuncios, placas, insignias o de cualquier otro modo.»
+  - **Art. 25** (textual): se requiere «II.- Poseer título legalmente expedido y debidamente registrado, y III.- Obtener de la Dirección General de Profesiones patente de ejercicio.»
+  - **Art. 29** (textual): «Las personas que sin tener título profesional legalmente expedido actúen habitualmente como profesionistas, incurrirán en las sanciones que establece esta Ley».
+  - Nota: rige en la Ciudad de México; cada estado tiene su propia ley de profesiones.
+- **Reglamento de Publicidad, art. 19** (ver §6.2): la publicidad de servicios profesionales de salud debe mostrar institución que expidió el título y número de cédula.
+
+### 6.7 NOM-004-SSA3-2012, Del expediente clínico — VERIFIED
+
+- Texto en el DOF: https://dof.gob.mx/nota_detalle_popup.php?codigo=5272787
+  - **4.3** (textual): establecimiento para la atención médica es «todo aquél, fijo o móvil, público, social o privado, donde se presten servicios de atención médica, [...] cualquiera que sea su denominación, incluidos los consultorios.»
+  - **5.1** (textual): los prestadores «estarán obligados a integrar y conservar el expediente clínico los establecimientos serán solidariamente responsables respecto del cumplimiento de esta obligación, por parte del personal que preste sus servicios en los mismos, independientemente de la forma en que fuere contratado dicho personal.» → Si el club aloja a un nutriólogo o médico aliado, el club puede ser **solidariamente responsable** del expediente.
+  - **5.4**: los expedientes «deberán ser conservados por un periodo mínimo de 5 años, contados a partir de la fecha del último acto médico.»
+  - **5.5.1** (textual): los datos del paciente «son motivo de confidencialidad, en términos del secreto médico profesional [...]. Unicamente podrán ser proporcionados a terceros cuando medie la solicitud escrita del paciente».
+  - **5.16** (textual): «Para el caso de los expedientes de atención psicológica, de nutriología o similares, que se integren en un establecimiento para la atención médica ambulatoria independiente o no ligado a un establecimiento hospitalario, tanto la historia clínica como las notas de evolución, se ajustarán a la naturaleza de los servicios prestados».
+  - Implicación operativa: separar el expediente nutricional (del profesional aliado, bajo NOM-004) de la ficha de entrenamiento del club; el entrenador recibe solo lo necesario con autorización escrita de la persona.
+
+---
+
+## 7. Pendientes de verificación y correcciones a la solicitud original
+
+**Correcciones a referencias de la solicitud:**
+- «Conte et al. 2024» es un Viewpoint de **JAMA** (PMID 38829659), no un comentario de Lancet Diabetes Endocrinol.
+- El metaanálisis del BMJ sobre recuperación de peso (West et al.) se publicó el **7-ene-2026** (BMJ 2026;392:e085304), no en 2025.
+- «EASO 2025» corresponde al marco farmacológico de Nat Med (oct-2025; actualización jun-2026). La referencia europea con proteína y ejercicio es el consenso EASO-EFAD-ECPO (Lancet Diabetes Endocrinol, sep-2026).
+- La proporción de masa magra en STEP 1 que circula como «≈ 39-40 %» no se encontró textualmente en una fuente primaria abierta; con los kg de ClinicalTrials.gov resulta ≈ 38 % (cálculo propio).
+
+**Pendientes (requieren texto completo o fuente oficial adicional):**
+1. Cifras internas de Conte, Hall, Klein (JAMA 2024): texto tras muro de pago.
+2. BMJ 2026: tiempo proyectado de regreso al peso inicial para semaglutida/tirzepatida (comunicados: 1.5 vs 1.7 años) y la tasa de 0.8 kg/mes.
+3. Consenso EASO-EFAD-ECPO 2026 y consenso Delphi de Sievenpiper: metas numéricas de proteína y frecuencia de entrenamiento.
+4. Guía SMNE 2024: recomendación de proteína y de composición corporal (tablas en imagen).
+5. Asesoría ACLM-ASN-OMA-TOS: se leyó el 28 % del texto completo; revisar la fe de erratas de 2026.
+6. Registro sanitario e indicación vigente en México de Wegovy (inyectable y oral), Ozempic, Mounjaro/Zepbound: consultar la base de COFEPRIS.
+7. Etiquetas mexicanas (IPP) de semaglutida y tirzepatida: no consultadas.
+8. Declaración formal de ACSM específica de GLP-1: no localizada.
+9. Fecha de publicación en el DOF de NOM-004-SSA3-2012 (el texto consultado muestra firma del 29-jun-2012) y de NOM-008-SSA3-2017 (18-may-2018 según informe de Economía; firma del 3-abr-2018).
+10. Dictamen jurídico sobre si un club que ofrece el programa queda bajo NOM-008 como «consultorio» y si su publicidad requiere permiso (art. 79 del Reglamento de Publicidad).
+
+**Cobertura de la solicitud:** 6 de 6 bloques investigados. Elementos con cifra textual verificada en fuente primaria: STEP 1, subestudio DXA de STEP 1, SURMOUNT-1 DXA, Karakasis 2025, Neeland 2024, Lundgren 2021, Jensen 2024, Green 2026, extensión STEP 1, SURMOUNT-4, BMJ 2026 (resumen), asesoría conjunta 2025, guía SMNE 2024 (parcial), GPC IMSS 2018, OMS 2025, etiquetas FDA, consenso ACSM DT2 2022, LGS, Reglamento de Publicidad, LFPC, LFPDPPP 2025, NOM-008, NOM-004, Ley de Profesiones, avisos de COFEPRIS 2023 y 2026.
