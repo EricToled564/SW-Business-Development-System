@@ -236,8 +236,8 @@ c = [f'<circle cx="160" cy="120" r="115" fill="{CLARO}"/>', f'<circle cx="160" c
      t(160, 116, "Sports World", 11, "#fff", "700", "middle"), t(160, 130, "entrena y mide", 10, "#fff", "400", "middle"),
      t(160, 62, "Red médica", 11, OSCURO, "700", "middle"), t(160, 24, "Nutrición y comida", 11, TINTA, "700", "middle"),
      t(320, 60, "Red médica · el médico que trata", 12, OSCURO, "700"), t(320, 77, "Grupo Ángeles; Clivi donde la red no tiene hospital", 11),
-     t(320, 125, "Nutrición y comida · el plan que se come", 12, OSCURO, "700"), t(320, 142, "Jenny Light (Valle de México) y Fitpack (Monterrey y Querétaro):", 11),
-     t(320, 158, "nutrióloga, menú personalizado y comida preparada a domicilio", 11)]
+     t(320, 125, "Nutrición y comida · el plan que se come", 12, OSCURO, "700"), t(320, 142, "Jenny Light: nutrióloga en línea en los 49 clubes", 11),
+     t(320, 158, "Comida a domicilio: Jenny Light (Valle de México) y Fitpack (Monterrey y Querétaro)", 11)]
 svg("circulos-aliados", 640, 240, c, "Los círculos de aliados")
 
 # 18. Hoja de ruta (diagrama de Gantt)

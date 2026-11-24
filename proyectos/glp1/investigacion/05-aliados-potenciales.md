@@ -418,3 +418,8 @@ Estado: completo al 23 de noviembre de 2026. Pendientes declarados: programas ho
 
 ### Decisión de Eric (23 nov. 2026)
 Grupo Ángeles es suficiente como red médica. Christus Muguerza se retira del documento; Clivi queda solo para los 6 clubes fuera de las zonas de Grupo Ángeles (Saltillo, Mérida, Toluca-Metepec, Aguascalientes, Hermosillo y Veracruz).
+
+### Nutrición nacional (24 nov. 2026, a petición de Eric)
+- **Jenny Light** atiende «presencial u online» (VERIFIED, jennylight.com.mx): 7 nutriólogas con licenciatura y maestría; seguimiento semanal. Se propone como aliado nacional de nutrición en línea, con comida a domicilio solo en el Valle de México. Riesgo: capacidad de 7 nutriólogas (piloto: hasta 288 participantes ≈ 41 consultas semanales adicionales por nutrióloga, cálculo).
+- **Nutrest** (VERIFIED, nutrest.com.mx/nutriologo-online): consulta en línea «desde cualquier lugar», app de seguimiento, primera consulta $450, paquetes desde $325. Respaldo de capacidad.
+- **Clivi** (VERIFIED, clivi.com.mx): la nutrición va dentro del tratamiento médico («Si eres candidato, un médico especialista diseña tu tratamiento»); no ofrece plan solo de nutrición.
